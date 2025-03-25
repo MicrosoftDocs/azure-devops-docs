@@ -47,23 +47,5 @@ ms.date: 03/15/2024
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps server, and then go to your project.
-
-1. Select **Artifacts**, and then select **New feed**.
-
-1. For **Name**, enter a descriptive name for your feed.
-
-   For **Visibility**, select an option to indicate who can view packages within the feed.
-
-   If you want to include packages from public sources, select the **Use packages from public sources through this feed** option.
-
-1. Select **Create** when you're done.
-
-    :::image type="content" source="../media/create-new-feed-server-2019.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps 2019.":::
-
-::: moniker-end
-
 > [!NOTE]
 > By default, newly created feeds have their project's **Build Service** value set to **Feed and Upstream Reader (Collaborator)**.

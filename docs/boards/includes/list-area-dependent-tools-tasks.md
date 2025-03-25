@@ -8,9 +8,7 @@ ms.topic: include
 ms.date: 05/24/2021
 ---
 
-
 To perform the following tasks, you must define area paths: 
-
 
 - [Query and chart work items based on Area Path](../queries/query-by-area-iteration-path.md)
 - [Assign work to more than one team](../../organizations/settings/add-teams.md) 
@@ -33,11 +31,3 @@ To use the following tools, teams must subscribe to area paths:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-
-- [Boards> all tools](../boards/kanban-overview.md)    
-- [Backlogs> all tools](../backlogs/backlogs-overview.md)    
-- [Sprints> all tools](../sprints/scrum-overview.md)    
-- [Delivery plans](../plans/review-team-plans.md)
-
-::: moniker-end

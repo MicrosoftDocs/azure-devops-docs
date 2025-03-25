@@ -25,12 +25,6 @@ Each service offers multiple pages with numerous features and functional tasks. 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-The Azure DevOps Server web portal is organized into several services, including **Overview**, **Boards**, **Repos**, **Pipelines**, **Test Plans**, and **Artifacts**. It also includes administrative pages and task-specific features like the search box. Each service offers multiple pages with various features and functional tasks. Within each page, you can choose options to select or add specific artifacts.
-
-::: moniker-end
-
 ## Key features and navigation
 
 Here's what you need to know to start using the web portal effectively.  
@@ -69,14 +63,6 @@ Limited access is available to an unlimited number of stakeholders for free. For
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-You connect to the web portal through a supported web browser&mdash;such as the latest versions of Microsoft Edge, Chrome, Safari, or Firefox. Only users who [added to a project](../../organizations/security/add-users-team-project.md) can connect, which is typically done by a member of the Project Administrators group.
-
-Limited access is available to an unlimited number of stakeholders for free. For details, see [Work as a Stakeholder](../../organizations/security/get-started-stakeholder.md). Most regular contributors must have a TFS client access license (CAL). All Visual Studio subscriptions include a TFS CAL.
-
-::: moniker-end
-
 <a id="refresh-web-portal">  </a>
 
 ## Refresh the web portal
@@ -84,7 +70,6 @@ Limited access is available to an unlimited number of stakeholders for free. For
 If data doesn't appear as expected, the first thing to try is to refresh your web browser. Refreshing your client updates the local cache with changes that were made in another client or the server. To refresh the page or object you're currently viewing, refresh the page or choose the ![Refresh icon](../../media/icons/refresh.png) **Refresh** icon if available.  
 
 [!INCLUDE [temp](../../includes/when-to-refresh-client.md)]
-
 
 ## Differences between the web portal and Visual Studio  
 

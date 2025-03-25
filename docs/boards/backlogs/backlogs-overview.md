@@ -41,17 +41,7 @@ Use backlogs to do the following tasks:
 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2020"  
-
-- [Define user stories, product backlog items, or requirements](create-your-backlog.md)
-- [Reorder your backlog](create-your-backlog.md#reorder-your-backlog)
-- [Add details and estimates to your backlog items](create-your-backlog.md#add-details-and-estimates-to-backlog-items)
-- [Bulk update](bulk-modify-work-items.md)
-- [Drag items to a sprint](../sprints/assign-work-sprint.md)
-- [Map backlog items within a hierarchy](organize-backlog.md)  
-- [Review the hierarchy or portfolio of work assigned to multiple teams](#multi-team)
-- [Forecast work](../sprints/forecast.md)
-::: moniker-end 
+ 
 
 [!INCLUDE [note setup backlog](../includes/setup-backlogs-boards.md)]
 
@@ -139,11 +129,7 @@ For example, here the Customer Service team organized several backlog items unde
 
 ::: moniker-end 
 
-::: moniker range="=azure-devops-2019"
-
-:::image type="content" source="media/overview/customer-service-backlog-parents-on.png" alt-text="Screenshot of Backlog that shows parents and multi-team ownership in Azure DevOps Server 2019 and earlier versions.":::  
-
-::: moniker-end 
+ 
 
 [!INCLUDE [velocity](../includes/velocity-section.md)]
 
@@ -170,16 +156,7 @@ Other team-owned items appear with an information icon :::image type="icon" sour
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019"
-
-Other team-owned items appear with an information icon :::image type="icon" source="../../media/icons/info.png" border="false":::.  
-
-:::image type="content" source="media/multi-ownership/customer-service-backlog-parents-on.png" alt-text="Screenshot of backlog items and parent items owned by other teams, Azure DevOps Server 2019 version.":::
-
-> [!TIP]
-> Add the **Node Name** field as a column to identify the area path and team associated with the work items.
-
-::: moniker-end 
+ 
 
 For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md).
 
@@ -193,11 +170,7 @@ Here's another example that shows the **Epics** backlog for the **Management** t
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019"
-
-:::image type="content" source="media/multi-ownership/management-team-backlog-epics.png" alt-text="Screenshot of view Epics and child items owned by other teams in Azure DevOps Server 2019 version.":::
-
-::: moniker-end 
+ 
 
 From these views, you can reparent items that you own and items other teams own. You can't reorder items that another team owns.  
 
@@ -233,7 +206,7 @@ You can use the following controls to change or filter your product backlog view
 > [!IMPORTANT]  
 > If you turn the **In Progress** control off, items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category workflow state don't appear in the backlog. For more information about category workflow states, see [About workflow states in backlogs and boards](../work-items/workflow-and-state-categories.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 For more information about using each of these controls, see [Configure your backlog view](configure-your-backlog-view.md).
 ::: moniker-end
 
@@ -301,23 +274,7 @@ For more information about using each of these controls, see [Configure your bac
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="azure-devops-2019"
-:::row:::
-   :::column span="":::
-      :::image type="icon" source="../../media/icons/view-options-icon.png" border="false":::
-   :::column-end:::
-   :::column span="":::
-      View options
-   :::column-end:::
-   :::column span="2":::
-      - [Turn Parents on/off](organize-backlog.md) (Not available for top-level portfolio backlog)
-      - [Turn Forecasting on/off](../sprints/forecast.md) (Only available on product backlog)  
-      - [Turn In Progress items on/off](create-your-backlog.md#show-hide-in-progress)
-      - [Show Mapping](organize-backlog.md) (Not available for top-level portfolio backlog)
-      - [Show Planning](../sprints/assign-work-sprint.md)  
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 :::row:::
    :::column span="":::
       :::image type="icon" source="../media/icons/filter-icon.png":::  

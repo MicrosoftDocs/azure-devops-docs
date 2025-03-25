@@ -8,14 +8,13 @@ ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
 ---
 
 # Define basic queries using OData Analytics
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
-
 
 Using Analytics for Azure DevOps, you can construct basic and filtered queries to return data of interest. You can run these queries directly in your browser or within Power BI. 
 
@@ -44,7 +43,6 @@ In this article you'll learn how to define queries that return the following dat
 
 > [!NOTE]  
 > In this article, the OData query URL is defined for Azure DevOps Services. To construct a similar query for an on-premises server, see the guidance provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md). We encourage you to adjust the queries provided for your organization and project to get familiar with querying OData using your browser. 
-
 
 <a id="return-count-items"></a>
 
@@ -94,7 +92,6 @@ To learn about the number of items or entities defined in an organization or pro
 >      Count	    70
 > ```
 
-
 ### User count
 
 > [!div class="tabbedCodeSnippets"]
@@ -105,7 +102,6 @@ To learn about the number of items or entities defined in an organization or pro
 >      @odata.id	null
 >      Count	    16
 > ```
-
 
 <a id="return-count-items-with-data"></a>
 
@@ -224,7 +220,6 @@ Analytics returns the following data.
 
 ## Filter your data 
 
-
 To filter an entity set to return select items, specify a `$filter` clause that specifies the criteria the items must meet. Building on the last query, here we add a filter clause to only return *Feature* work item types that are in the  *In Progress* state.
 
 `/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=State eq 'In Progress'`
@@ -235,7 +230,6 @@ To filter an entity set to return select items, specify a `$filter` clause that 
 > ```
 
 Analytics returns the following data. 
-
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -264,7 +258,6 @@ Analytics returns the following data.
 >       State	"In Progress"
 > ```
 
-
 ## Specify several filter clauses
 
 You can use `AND` and `OR` to specify several filter clauses. 
@@ -272,7 +265,6 @@ You can use `AND` and `OR` to specify several filter clauses.
 For example, the following query specifies to return work items of type *User Story*, *Bug*, and *Backlog Work* (a custom work item type) that are in the *New*, *Committed*, or *Active* states. Use parenthesis to group filter clauses as needed. 
 
 Additionally, you can apply various functions such as `contains`, `startswith`, `endswith` and more. See the [Supported OData features and clauses, Supported functions](odata-supported-features.md#supported-functions). 
-
 
 <a id="filter-navigation-field"></a>
 
@@ -294,8 +286,6 @@ The following table provides examples of how to expand several of these properti
 To specify several properties that need to be expanded, you specify them in a single expand clause within a comma-delimited list. 
 
 `$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)`
-
-
 
 <a id="filter-navigation"></a>
 
@@ -352,7 +342,6 @@ Here's another example that requests the top five work items under the *Fabrikam
 >```
 
 <a id="return-related"></a>
-
 
 > [!TIP]  
 > You can't use the navigation property directly in a `$select` statement. Instead, you need to use `$expand`.  
@@ -429,8 +418,6 @@ It then returns the following data.
 > }
 > ```
 
-
-
 <a id="date-range-queries"></a> 
 
 ## Query a date range
@@ -441,7 +428,6 @@ The following example returns work items whose **Changed Date** is greater than 
 > ```JSON
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-01-01Z
 > ```
-
 
 The following example returns work items whose **Changed Date** occurs during the week of April 26 through April 30, 2021.  
 
@@ -568,10 +554,6 @@ Specify the `$orderby` option to sort your results or specify the sequence in wh
 - [OData v4.0 specification](https://www.odata.org/documentation/)  
 - [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)
 
-
-
-
-
 <!--- 
 <a id="basic-query"></a>
 
@@ -582,16 +564,6 @@ Specify the `$orderby` option to sort your results or specify the sequence in wh
 You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, make the following replacements:
-- `analytics.dev.azure.com` with `{ServerName}:{Port}/tfs/`
-- `{OrganizationName}` with your project collection name (default is DefaultCollection) 
-- `{ProjectName}` with the name of the project that you want to query. 
-
-::: moniker-end
-
 
 <a id="single-entity"></a>
 

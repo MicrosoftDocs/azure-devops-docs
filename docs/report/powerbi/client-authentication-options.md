@@ -7,10 +7,9 @@ ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 07/14/2020
 ---
-
 
 # Enter client credentials in Power BI or Excel 
 
@@ -22,7 +21,7 @@ When connecting from Power BI or Excel to Analytics using the OData feed, choose
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 When connecting from Power BI or Excel to Analytics using the OData feed, choose Windows credentials as the most secure option. It is also possible to authenticate with Personal Access Tokens (**PATs**), but this is less recommended.
 
@@ -55,7 +54,7 @@ To change an existing URL to use Microsoft Entra ID instead of a PAT, see [Chang
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 ## Windows authentication
 
@@ -70,7 +69,6 @@ You can use Windows authentication in [Power BI](https://powerbi.microsoft.com) 
 To change an existing URL to use Windows instead of a PAT, see [Change authentication credentials](#update-credentials) later in this article.
 
 ::: moniker-end
-
 
 ## Create a Personal Access Token  
 
@@ -104,7 +102,7 @@ authentication screens, are identical. This walkthrough is done using Power BI D
 	
 	::: moniker-end  
 
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 
     :::image type="content" source="media/authentication-6-onprem.png" alt-text="OData Feed URL":::
 
@@ -118,7 +116,7 @@ authentication screens, are identical. This walkthrough is done using Power BI D
 
      ::: moniker-end
 
-     ::: moniker range=">= azure-devops-2019 < azure-devops"
+     ::: moniker range="<azure-devops"
 
      :::image type="content" source="media/authentication-7-onprem.png" alt-text="Authentication information":::
 
@@ -142,7 +140,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 
     :::image type="content" source="media/authentication-8-onprem.png" alt-text="Data source settings":::
 
@@ -156,7 +154,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 
     :::image type="content" source="media/authentication-9-onprem.png" alt-text="Data source settings, 2nd dialog":::
 
@@ -180,7 +178,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 
     :::image type="content" source="media/authentication-8-onprem.png" alt-text="Select the correct URL to the OData Feed and select Edit, on-premises version.":::
 
@@ -194,14 +192,13 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 
     :::image type="content" source="media/authentication-9-onprem.png" alt-text="Data source settings, next dialog.":::
 
 	::: moniker-end
 
 5. Edit the credentials as noted above, select **Save**, then **Done**, then **Close**.
-
 
 ## Publish to Power BI
 
@@ -214,7 +211,6 @@ the **oAuth2** option.
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  
 - [Publish a Power BI Desktop file to Power BI](publish-power-bi-desktop-to-power-bi.md)  
-
 
 <!---
 From the Personal access tokens page, choose **Add**:  

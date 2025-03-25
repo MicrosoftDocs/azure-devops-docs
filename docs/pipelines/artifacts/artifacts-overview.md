@@ -60,7 +60,7 @@ Azure Artifacts allow developers to publish and consume various types of package
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020 || azure-devops-2022"
+::: moniker range="<=azure-devops-2022"
 
 ## Supported artifacts
 
@@ -98,8 +98,6 @@ Azure Artifacts allow developers to publish and consume various types of package
 * * *
 
 ::: moniker-end
-
-
 
 > [!TIP]
 > If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 

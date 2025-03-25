@@ -4,7 +4,7 @@ description: Learn about how you can use expressions in Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.date: 11/18/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Expressions
@@ -17,7 +17,7 @@ Expressions can be used in many places where you need to specify a string, boole
 
 The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 # Expressions are used to define conditions for a step, job, or stage
 steps:
@@ -138,7 +138,7 @@ The following built-in functions can be used in expressions.
 * Short-circuits after first `False`
 * Example: `and(eq(variables.letters, 'ABC'), eq(variables.numbers, 123))`
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### coalesce
 * Evaluates the parameters in order (left to right), and returns the first value that doesn't equal null or empty-string.
@@ -190,7 +190,7 @@ jobs:
       - script: echo "Matching branch found"
 ```
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### convertToJson
 * Take a complex object and outputs it as JSON.
@@ -260,7 +260,6 @@ Here's another example of setting a variable to act as a counter that starts at 
 >  formats `system.pipelineStartTime` into a date and time object so that it is available to work with expressions.
 > The default time zone for `pipeline.startTime` is UTC. You can [change the time zone](../../organizations/accounts/change-time-zone.md) for your organization.
 
-
 ```yaml
 jobs:
 - job:
@@ -295,7 +294,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Ordinal ignore-case comparison for Strings
 * Example: `eq(variables.letters, 'ABC')`
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### format
 * Evaluates the trailing parameters and inserts them into the leading parameter string
@@ -337,7 +336,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Example: `iif(eq(variables['Build.Reason'], 'PullRequest'), 'ManagedDevOpsPool', 'Azure Pipelines')` returns 'ManagedDevOpsPool' when the pipeline runs in response to a PR.
 ::: moniker-end
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### join
 * Concatenates all elements in the right parameter array, separated by the left parameter string.
@@ -377,7 +376,7 @@ steps:
 * Min parameters: 1. Max parameters 1
 * Example: `length('fabrikam')` returns 8
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 ### lower
 * Converts a string or variable value to all lowercase characters
 * Min parameters: 1. Max parameters 1
@@ -420,7 +419,7 @@ steps:
 * Short-circuits after first `True`
 * Example: `or(eq(1, 1), eq(2, 3))` (returns True, short-circuits)
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 ### replace
 * Returns a new string in which all instances of a string in the current instance are replaced with another string
 * Min parameters: 3. Max parameters: 3
@@ -484,7 +483,7 @@ steps:
 * Example: `trim('  variable  ') ` returns 'variable'
 ::: moniker-end
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 ### upper
 * Converts a string or variable value to all uppercase characters
 * Min parameters: 1. Max parameters 1
@@ -492,13 +491,11 @@ steps:
 * Example: `upper('bah')` returns `BAH`
 ::: moniker-end
 
-
 ### xor
 * Evaluates `True` if exactly one parameter is `True`
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to Boolean for evaluation
 * Example: `xor(True, False)` (returns True)
-
 
 <h2 id="job-status-functions">Job status check functions</h2>
 
@@ -721,7 +718,6 @@ The syntax of referencing output variables with dependencies varies depending on
 
 There are also different syntaxes for output variables in deployment jobs depending on the deployment strategy. For more information, see [Deployment jobs](deployment-jobs.md#support-for-output-variables).
 
-
 ### Stage to stage dependencies
 Structurally, the `dependencies` object is a map of job and stage names to `results` and `outputs`.
 Expressed as JSON, it would look like:
@@ -765,7 +761,6 @@ stages:
 
 Stages can also use output variables from another stage.
 In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs.
-
 
 ```yaml
 stages:
@@ -1078,7 +1073,6 @@ steps:
 
 In this next example, the values `variables.emptyString` and the empty string both evaluate as empty strings.
 The function `coalesce()` evaluates the parameters in order, and returns the first value that doesn't equal null or empty-string.
-
 
 ```yaml
 variables:

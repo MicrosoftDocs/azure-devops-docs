@@ -13,7 +13,6 @@ ms.date: 10/15/2024
 #customer intent: As a team member, I want to learn how to query work items in Azure Boards so I can find items based on when they were created, which iteration they belong to, or other factors.
 ---
 
-
 # Query by date or current iteration
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -22,11 +21,11 @@ In this article, learn how to list work items based on when they were created, c
 
 For example, find work items that were modified in the last three days with the following query.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/example-work-item-queries/query-changed-date-last-3-days.png" alt-text="Screenshot that shows Query Editor showing the Changed Date field set to >= 3.":::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 Also, you can use  the `CurrentIteration +/- _n_` macro to create queries based on a sliding window of team iterations.
 ::: moniker-end
 
@@ -48,7 +47,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** field 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       DateTime   
@@ -182,19 +181,14 @@ Not all fields are valid for all work item types. Jump to [date fields](#date_fi
 :::row-end:::
 ---
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Create start of day, week, month, or year date-based queries
 
 The following examples show how to use the `StartOf...` macros to filter for work items with various offsets. For more information, see [Work Item Query Language (WIQL) syntax](wiql-syntax.md#start-of).
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-> [!NOTE]
-> Requires Azure DevOps Server 2019 Update 1 or later version.
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::row:::
    :::column span="1":::
@@ -250,7 +244,7 @@ The query finds any item assigned to a sprint that corresponds to the current it
 >
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) earlier in this article.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Azure Boards adds a team parameter when you select the **@CurrentIteration** or **@CurrentIteration +/- _n_** macros. The team parameter derives from your current [team context](#team_view).
 
@@ -265,7 +259,7 @@ To change the team parameter that the system automatically sets, choose it by en
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 <a id="current-iteration-plus-minus-n">  </a>
 

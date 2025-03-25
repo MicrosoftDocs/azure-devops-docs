@@ -34,7 +34,7 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 ## Feed settings
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -140,7 +140,6 @@ If your pipeline is unable to access your feed, you might need to add the corres
 
     ::: moniker-end
 
-
 #### Examples
 
 ::: moniker range="azure-devops"
@@ -199,7 +198,7 @@ If your pipeline is unable to access your feed, you might need to add the corres
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 
 ### [NuGet](#tab/nugetserver)
 

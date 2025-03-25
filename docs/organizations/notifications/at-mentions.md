@@ -58,15 +58,6 @@ Use the **@mention** control to start or continue a discussion in the following 
 
 ::: moniker-end
 
-::: moniker range=" < azure-devops-2020"
-
-- Work item discussions
-- Pull request discussions
-- Commit comments
-- Changeset or shelveset comments
-
-::: moniker-end
-
 <a id="mention-person-id">  </a>
 
 ::: moniker range=" < azure-devops"

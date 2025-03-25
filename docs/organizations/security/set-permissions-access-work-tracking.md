@@ -96,13 +96,7 @@ The following table summarizes the different permissions you can set at the obje
       - [Add teams and team administrators](../settings/add-team-administrator.md))
       - [Edit project-level permissions](change-project-level-permissions.md)  
       ::: moniker-end
-      ::: moniker range="< azure-devops-2020"
-      - [Create work item tags](../../boards/queries/add-tags-to-work-items.md) 
-      - [Permanently delete work items](#move-delete-permissions) 
-      - [Edit shared work item queries](../../boards/queries/set-query-permissions.md)
-      - [Add teams and team administrators](../settings/add-team-administrator.md))
-      - [Edit project-level permissions](change-project-level-permissions.md)
-      ::: moniker-end
+      
    :::column-end:::
 :::row-end:::
 ---
@@ -112,7 +106,7 @@ The following table summarizes the different permissions you can set at the obje
       Includes all permissions you can set at the collection-level.
    :::column-end:::
    :::column span="2":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - [Create, delete, or edit a process (Inheritance process model)](#process-permissions)  
       - [Delete field from account (Inheritance process model)](change-organization-collection-level-permissions.md) 
       - [Manage process permissions (Inheritance process model)](change-organization-collection-level-permissions.md) 
@@ -253,7 +247,6 @@ For more information, see [Create managed queries to list, update, or chart work
 
 By default, all users of the Contributors group can create and add tags to work items. To set permissions for a group or user to restrict this ability, you can set the **Create tag definition** to **Deny** at the project-level. To learn how, see [Change the permission level for a project-level group](change-project-level-permissions.md). 
 
-
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
 
@@ -313,7 +306,7 @@ To edit the permissions for a Delivery Plan, be the creator of the plan, a membe
 
 <a id="move-delete-permissions"></a>
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 ## Move or permanently delete work items 
 
@@ -368,7 +361,7 @@ The **Manage test plans** permission enables users to do the following tasks:
 
 <a id="process-permissions"></a>
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 ## Customize an inherited process 
 
@@ -383,7 +376,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 > Users added to the **Project-Scoped Users** group can't access Process settings if the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization. For more information including important security-related callouts, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 1. Open the &hellip; context menu for the inherited process and choose **Security**.  To open this page, see [Customize a project using an inherited process](../settings/work/customize-process.md).   
 

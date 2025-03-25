@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: tutorial 
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019' 
+monikerRange: "<=azure-devops"
 ms.date: 02/02/2022
 ---
 
@@ -60,16 +60,6 @@ Test Results Trend charts require that you set up continuous testing in your bui
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-| Category | Requirements |
-|-------------|-------------|
-| **Access** | [Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
-| **Permissions** |- To add a widget to a team dashboard, you need to be a member of the team. Have at least **Basic** access, [dashboard permissions](./dashboard-permissions.md), or [team admin](../../organizations/settings/add-team-administrator.md) or project admin. Default settings provide all team members with permissions.|
-|**Services** |- **Azure Pipelines** enabled. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).<br>- [Analytics Marketplace extension](../dashboards/analytics-extension.md). A member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) can add extensions.<br>- **Continuous testing** set up for your build pipeline. For more information, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests). |
-
-::: moniker-end
-
 <a id="configure-widget"></a>
 
 ## Configure the Test Results Trend (Advanced) widget    
@@ -92,8 +82,6 @@ You can configure your Test Results Trend (Advanced) widget to show results for 
 	The following image shows a chart with pass rate and test results for last seven days. 
    
 	![Screenshot of Test Results Trend Advanced widget.](media/test-results-trend-widget/passed-bypriority-pass.png)
-
-
 
 ## Next steps
 

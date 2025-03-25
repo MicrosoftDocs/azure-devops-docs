@@ -42,7 +42,7 @@ Squash merging keeps your default branch histories clean and easy to follow with
 
 Squash merging condenses the history of changes in your default branch, so it's important to work with your team to decide when to squash merge versus keeping the full commit history of a topic branch. When squash merging, it's a good practice to delete the source branch. Deleting the source branch prevents confusion as the topic branch itself doesn't have a commit merging it into the default branch.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ### Complete pull requests with squash merge
 
 You can choose to squash merge when completing a pull request in Azure Repos.
@@ -52,8 +52,6 @@ Choose **Squash commit** under **Merge type** in the **Complete pull request** d
 ![Screenshot of closing a pull request with a squash merge in Azure Repos.](media/merging-with-squash/squash-merge.png)
 
 ::: moniker-end
-
-
 
 ## Multiple merge bases
 
@@ -96,7 +94,6 @@ The following example scenarios get detected by Azure DevOps as multiple bases, 
 ```
 - Active reuse of feature branches
 - Other nonintuitive and convoluted manipulations with reverts, cherry picks, and merges
-
 
 Multiple merge base detection is part of security awareness. If there are multiple merge bases, the file-diff algorithm for the user interface might not properly detect file changes, depending on which merge base it chooses. If the files in the pull request have different versions between the merge bases, a multiple merge base warning occurs.
 

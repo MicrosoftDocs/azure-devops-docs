@@ -41,7 +41,6 @@ To add other work tracking artifacts, see one of the following articles:
 - [Add a managed work item query](../../boards/queries/using-queries.md) 
 - [Add work items](../../boards/work-items/view-add-work-items.md).
 
-
 ## Add a pull request or Git repository 
 
 You can quickly add a pull request, Git repository, or work item using the **Add** menu when working from **Code**. 
@@ -90,10 +89,6 @@ To view the set of defined teams, open **Project settings**, and choose **Overvi
 
 ::: moniker range=">= azure-devops-2020"
 Dashboards are associated with a team or a project. Each team can create and configure a number of dashboards. And, any team member can create one or more project dashboards. To learn how, see [Add a dashboard](../../report/dashboards/dashboards.md).
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-Dashboards are associated with a team. Each team can create and configure a number of dashboards. To learn how, see [Add a dashboard](../../report/dashboards/dashboards.md).
 ::: moniker-end
 
 ## Add a wiki 

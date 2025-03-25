@@ -251,22 +251,6 @@ The following steps guide you through setting up the first configuration file. S
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **Connect to feed**.
- 
-    :::image type="content" source="../media/server-2019-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2019.1.":::
-
-1. A new window will appear. From the left-hand navigation pane, select **npm**.
-
-1. Follow the provided instructions to configure your **project** and **user** .npmrc files.
-
-   :::image type="content" source="../media/npm-project-setup-server-2019-1.png" alt-text="A screenshot showing how to set up your project-level and user-level npmrc files in Azure DevOps Server 2019.1.":::
-
-::: moniker-end
-
 > [!TIP]
 > Using multiple registries in .npmrc files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
 

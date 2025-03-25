@@ -27,8 +27,6 @@ This can be done easily by employing the additional capacity offered by the clou
 This article discusses how you can configure the
 [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to run tests in parallel by using multiple agents.
 
-
-
 ## Pre-requisite
 
 Familiarize yourself with the concepts of [agents](../agents/agents.md) and [jobs](../process/phases.md).
@@ -122,7 +120,7 @@ use the following steps.
 
    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Setting up jobs for parallel testing in YAML pipelines
 
@@ -182,7 +180,6 @@ to validate the app functionality.
      > If the test machines do not have Visual Studio installed, you can use the
      > [Visual Studio Test Platform Installer task](/azure/devops/pipelines/tasks/reference/visual-studio-test-platform-installer-v1) to
      > acquire the required version of the test platform.
-
 
 ## Massively parallel testing by combining parallel pipeline jobs with parallel test execution
 

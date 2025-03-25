@@ -7,7 +7,7 @@ ms.custom: analytics-views
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 05/12/2022
 ---
 
@@ -51,7 +51,6 @@ You can select all work tracking fields in an Analytics view, except for the fol
 
 For a description of each work item tracking fields, see [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md).
 
-
 ### Analytics data store fields 
 
 You can select the following Analytics-based fields in an Analytics view:
@@ -80,8 +79,6 @@ To access any other fields available through [Analytics](../extend-analytics/ana
 * Dates (DateSK)
 * Process (AreaSK - generate mapping Table based on *Process* Navigational Property)
 * WorkItemLinks (Work Item ID)
-
-
 
 ### Data relationships
 
@@ -122,7 +119,6 @@ not allowed. To handle this scenario, you could expand the Project column in the
     ![Expand Project options](media/pbi-relationships-3.png) 
 
 Now you can list Areas by Project and get a count of Areas in each project.
-
 
 ## Related articles
 

@@ -7,7 +7,7 @@ ms.custom: powerbisample, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/16/2022
 ---
 
@@ -20,7 +20,6 @@ Rollup provides support to show a count of work items or sum of Story Points, Re
 :::image type="content" source="media/reports-boards/feature-rollup-report.png" alt-text="Screenshot of Feature rollup matrix report.":::
 
 For more information about rollup and options to show rollup, see [Display rollup progress or totals in Azure Boards](../../boards/backlogs/display-rollup.md).
-
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -83,9 +82,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
 
-
 ### Query breakdown
-
 
 The following table describes each part of the query.
 
@@ -363,10 +360,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand columns in Power BI
 

@@ -28,8 +28,6 @@ For an overview of all team tools, see [Manage teams and configure team tools](.
 
 <a id="plans">  </a>
 
-
-
 ## Delivery Plans support a view of team backlogs on a calendar timeline
 
 With a Delivery Plan, you gain a tailor-made view across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.
@@ -76,7 +74,7 @@ With the multi-team portfolio backlog view, you can:
 
 Management teams can drill down from their portfolio backlog to see how **Epics** are progressing. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
 
 > [!div class="mx-imgBorder"]  
@@ -87,15 +85,13 @@ Items that are owned by other teams appear with an information icon,  :::image t
 
 ::: moniker-end 
 
-
  
-
 
 ### View backlog items and parent items owned by other teams
 
 Feature teams can turn **Show parents** on their backlogs to see context and those items owned by other teams. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
 
@@ -104,15 +100,12 @@ Items that are owned by other teams appear with an information icon,  :::image t
 
 ::: moniker-end 
 
-
  
-
 
 > [!TIP]
 > When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/team-velocity.md) of a seasoned team is higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.
 
 For more information about this configuration, see [Portfolio management](portfolio-management.md), [Add teams](../../organizations/settings/add-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
-
 
 <a id="dashboards">  </a>
 
@@ -125,7 +118,6 @@ The two areas of most interest to management teams are project health and bug de
 For example, here we've added three query-based charts, one for each team, to a dashboard that shows the active and resolved bugs over the previous four weeks.
 
 <img src="media/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" />  <img src="media/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" />  <img src="media/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" />
-
 
 When you define multi-team dashboards, consider the following questions:
 - What are you wanting to learn and how will it drive your organization's actions?
@@ -154,14 +146,13 @@ Another measure of project health and the health of the teams is to monitor bug 
 
 For tips on creating queries based on counts or numeric fields, see [Query by numeric field](../queries/query-numeric.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Use the Analytics Service to gain visibility across teams   
 
 You can add [Widgets based on the Analytics Service](../../report/dashboards/analytics-widgets.md) to a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
 
 ::: moniker-end
-
 
 ## Track capacity when working on more than one team 
 

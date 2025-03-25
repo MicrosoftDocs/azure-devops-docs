@@ -18,7 +18,7 @@ You can automatically deploy your database updates to Azure SQL database after e
 The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes and data. You can create a DACPAC using the **SQL database project** in Visual Studio.
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 To deploy a DACPAC to an Azure SQL database, add the following snippet to your azure-pipelines.yml file.
 
@@ -35,8 +35,6 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your a
 ```
 
 ::: moniker-end
-
-
 
 #### [Classic](#tab/classic/)
 When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
@@ -147,7 +145,7 @@ if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $F
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Add the following to your azure-pipelines.yml file to run a SQL script.
 
@@ -247,7 +245,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 You may choose to deploy only certain builds to your Azure database.
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 To do this in YAML, you can use one of these techniques:
 
@@ -272,15 +270,12 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 In your release pipeline, you can implement various checks and conditions to control the deployment.
 
 > [!NOTE]
 > In some setups, you might need to allowlist the range of IP addresses for the specific region that is updated in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519). Learn about [networking Microsoft-hosted agents](../agents/hosted.md#networking).
-
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
 * Set **pre-deployment approvals** as a pre-condition for deployment to a stage.

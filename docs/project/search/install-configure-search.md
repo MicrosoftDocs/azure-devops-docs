@@ -211,7 +211,7 @@ There might be cases where you no longer want to use Search or you want to do a 
 1. Uninstall the Search extension for each collection.
    Go to the **Manage Extensions** page of each collection in your Azure DevOps Server instance:
 
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    ![Screenshot of checking that the extension is installed.](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
@@ -242,7 +242,7 @@ Do the following steps to unconfigure Search, like for Code, Work item, or Wiki,
 
 1. Go to the **Manage Extensions** page for each collection in your Azure DevOps Server instance.
 
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    ![Screenshot Checking that the extension is installed.](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 

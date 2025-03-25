@@ -149,7 +149,7 @@ Code Search can index different branches in a Git repository. It only indexes fi
 > [!NOTE]
 > By default, code search looks for the specified string in the main or default branch of a repository. But, you can narrow down the search by specifying a filter for a specific branch.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ![Screenshot showing Git branches for configuration.](media/advanced-work-item-search-syntax/configure-branches.png)
 ::: moniker-end
 

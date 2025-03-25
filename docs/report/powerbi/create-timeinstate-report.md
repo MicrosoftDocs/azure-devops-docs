@@ -7,7 +7,7 @@ ms.custom: analytics-views, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms date: 09/16/2024
 ---
 
@@ -238,7 +238,6 @@ The second chart illustrates the trend of average days the active work items are
 
 :::image type="content" source="media/measure/stacked-column-chart-average-time-in-days.png" alt-text="Screenshot of Power BI stacked column chart and Visualization tab that illustrates the average days in state for work items by date.":::
 
-
 ### Add State Time in Days - Latest (Is Last Day In State)
 
 When evaluating time-in-state for each work item in a table or when filtered by a field like *Area Path*, don't use the *State Time in Days* column in an aggregation. The aggregation uses the value for every day the work item was in the state. For example, if a work item was *In Progress* on Monday and moved to *Completed* on Thursday, the time-in-state is three days, but the sum of *State Time in Days* column is six days, `1+2+3`, which is incorrect.
@@ -274,7 +273,6 @@ The following image shows the effect of considering all time-in-state for every 
 
 :::image type="content" source="media/TimeInStateActive.png" alt-text="Trend Comparison of the Average Time in State":::
 
-
 ### State Time in Days trend of multiple states
 
 Analyzing performance across multiple states is also possible using the "Continuous" pattern. However, this approach only works with a trend chart.
@@ -294,7 +292,6 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > 
 > [!NOTE]
 > You may need to revise the definition based on the workflow states used by your project. For example, if your project uses 'Active' in place of 'Committed' or 'Proposed'. 
-
 
 The chart of the left shows combined average while the right-hand side shows each individual state.
 
@@ -360,7 +357,6 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > ```
 
 The calculated column is a boolean value that identifies whether the row is a state transition. By using the `Not Equal To` operator, you correctly catch rows where the previous state doesn't match the current state, which means the comparison returns True as expected.  
-
 
 <a id="state-flow"></a>
 

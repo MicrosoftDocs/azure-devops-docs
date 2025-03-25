@@ -20,10 +20,6 @@ ms.date: 07/07/2022
 Share progress and status with your team using configurable team or project dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
-::: moniker-end
-
  
 When a project is first created, a default team and default team dashboard is created labeled *Overview*. You can customize this dashboard by adding widgets. Each widget provides access to one or more features or functions. For more information about each widget, see [Widget catalog](widget-catalog.md). 
 
@@ -48,13 +44,8 @@ When you add a dashboard, you can choose to make it a project dashboard or one s
 
 All dashboards are associated with either a team or a project. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to, or if they are project dashboard.  
 ::: moniker-end
-::: moniker range="=azure-devops-2019"
 
-All dashboards are associated with a team. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to.  
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 Open a web browser, connect to your project, and select **Overview>Dashboards**. The dashboard directory page opens. 
 
@@ -76,16 +67,11 @@ If you need to switch to a different project, select the :::image type="icon" so
 
 ::: moniker-end  
 
-
-
-
-
-
 <a id="choose-dashboard"></a>
 
 ## Select a dashboard 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Select a dashboard from the directory list, or from the selector. To return to the dashboard directory, select the **Browse all dashboards** option. 
  
@@ -101,14 +87,11 @@ If you need to switch to a different project, select the :::image type="icon" so
 
 ::: moniker-end
 
-
   
-
 
 ## Add a dashboard 
 
 Add a new dashboard as needed to support your team's needs. You can also edit and rename any existing dashboards associated with your team.
-
 
 > [!NOTE]
 > There is a limit of 500 dashboards per project. You'll receive an error message if you try to create a dashboard beyond that limit. Delete unused dashboards to resolve the error. 
@@ -138,32 +121,6 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. From the Dashboards directory, select **New Dashboard**. Or, when viewing a dashboard, open the selector and select the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard** option. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open the create a dashboard dialog](media/dashboards/open-new-dashboard-dialog.png)  
-
-	If you don't see the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
-
-2. Enter the name of the dashboard and other information you want to capture. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Create a dashboard dialog](media/dashboards/create-dashboard-bug-status.png)  
-
-1.	Select **Save**. 
-
-3.  The widget catalog opens. You can add one or more widgets to the dashboard. You can then configure and resize each widget as needed. 
-
-4.	You can move the widgets around the dashboard to place them where you want them. 
-
-5.  When you're done making changes, select **Done Editing**. 
-
-::: moniker-end
-
-
-
 <a id="manage">  </a> 
 
 ## Rename, delete, and enable auto-refresh  
@@ -175,8 +132,7 @@ You can rename or delete a dashboard. When you enable auto-refresh, the dashboar
 > To delete a project dashboard, be a member of the[**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md).  
 ::: moniker-end
 
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 - To rename a dashboard, modify its description, or change its automatic refresh setting, open the dashboard, select the ![gear icon](media/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes. 
 
@@ -188,15 +144,12 @@ You can rename or delete a dashboard. When you enable auto-refresh, the dashboar
 - To set permissions for a dashboard, select the **Security** option. For details, see [Set dashboard permissions](dashboard-permissions.md).
 ::: moniker-end
 
-
-
-
 ## Move or delete a widget
 
 > [!TIP]   
 > When you're in dashboard edit mode, you can remove, rearrange, and configure widgets, as well as add new widgets. Once you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 Select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** to modify your dashboard. 
 
 You can now add widgets or drag tiles to reorder their sequence on the dashboard. 
@@ -209,12 +162,9 @@ To remove a widget, select ![actions icon](../../media/icons/actions-icon.png) *
 When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
 ::: moniker-end
 
-
-
 ## Extensibility 
 
 Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). For more information about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).
-
 
 ## Try this next 
 
@@ -229,5 +179,4 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 - [Add a team](../../organizations/settings/add-teams.md)
 - [Widget catalog](widget-catalog.md)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
-
 

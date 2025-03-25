@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/22/2024
 ---
 
@@ -126,7 +126,7 @@ When you realize that a work item is assigned to the wrong project within your o
 	::: moniker range="azure-devops"
 	:::image type="content" source="media/move-change-delete/move-work-item-change-type-dialog.png" alt-text="Move work item type and change type dialog.":::
 	::: moniker-end
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 	![Move work item type dialog, on-premises.](media/move-change-delete/move-work-item-dialog.png)
 	::: moniker-end
 

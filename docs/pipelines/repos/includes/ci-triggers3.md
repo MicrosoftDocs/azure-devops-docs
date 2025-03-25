@@ -7,7 +7,7 @@ author: vijayma
 ms.date: 07/07/2022
 ---
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### Opting out of CI
 

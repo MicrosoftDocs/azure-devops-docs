@@ -41,7 +41,6 @@ Use an Azure Pipeline to automatically build, test, and deploy your .NET Core pr
 > [!NOTE]
 > For help with .NET Framework projects, see [Build ASP.NET apps with .NET Framework](../apps/aspnet/build-aspnet-4.md).
 
-
 ## Prerequisites
 
 ::: moniker range=">=azure-devops"
@@ -177,20 +176,6 @@ You can customize the YAML file for your requirements.  For example, you can add
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Select **Save**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing the Save and run button in a new YAML pipeline.](media/save-and-run-button-new-yaml-pipeline.png)
-
-1. To commit the pipeline YAML file to your repository, edit the commit message as needed and select **Save**.
-1. Select **Run** to run your pipeline.
-
-To see the build logs as your pipeline runs, select the build number at the top of the page.
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2020 <= azure-devops-2022"
 
 1. Select **Save and run**.
@@ -236,7 +221,6 @@ Use these steps to create your pipeline using the classic editor.
 
 ::: moniker-end
 
-
 ##### Configure your pipeline
 
 1. From **Select a template**, find and select **ASP.NET Core**.
@@ -280,7 +264,6 @@ You can see your pipeline in action by selecting the job from the **Jobs** secti
 ---
 
 You now have a working pipeline that's ready for you to customize! Read further to learn some of the common ways to customize your pipeline.
-
 
 ## Build environment
 
@@ -355,8 +338,6 @@ steps:
 > [!TIP]
 > To save the cost of running the tool installer, you can set up a [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), or [Windows](../agents/windows-agent.md) [self-hosted agent](../agents/agents.md#install).
 > You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds. A self-hosted agent can also help you in using the preview or private SDKs that aren't officially supported by Azure DevOps or are only available on your corporate or on-premises environments. 
-
-
 
 ::: moniker-end
 
@@ -891,7 +872,6 @@ For example, to publish symbols to a file share, add the following snippet to yo
     SymbolServerType: 'FileShare' 
     SymbolsPath: '\\server\shareName'
 ```
-
 
 When using the classic editor, select **Index sources publish symbols** from the task catalog to add to your pipeline.
 

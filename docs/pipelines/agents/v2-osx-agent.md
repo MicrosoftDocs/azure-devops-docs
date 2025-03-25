@@ -18,8 +18,6 @@ monikerRange: '<= azure-devops'
 
 :::moniker-end
 
-
-
 To build and deploy Xcode apps, you need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 > Before you begin:
@@ -96,7 +94,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 ### Azure DevOps Server 2019 and Azure DevOps Server 2020
 
@@ -119,8 +117,6 @@ After you get a feel for how agents work, or if you want to automate setting up 
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
-
-
 
 ### Server URL
 
@@ -200,7 +196,6 @@ For example, if you installed in the `myagent` subfolder of your home directory:
 cd ~/myagent$
 ```
 
-
 #### Install
 
 Command:
@@ -210,7 +205,6 @@ Command:
 ```
 
 This command creates a launchd plist that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agent's host.
-
 
 #### Start
 

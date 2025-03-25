@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
 
-
 # Run a semantic work item search
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -75,10 +74,6 @@ Free text search easily searches across all work item fields, including custom f
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../includes/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ### Fine-tune semantic search results 
 
 1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
@@ -108,7 +103,6 @@ Free text search easily searches across all work item fields, including custom f
 4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 
-
 ::: moniker-end
 
 <a id="start-an-improvised-search-and-use-shortcut-filters"></a>
@@ -119,13 +113,6 @@ Free text search easily searches across all work item fields, including custom f
 Improvised search isn't available from Azure DevOps Services. Only [semantic search](#start-search). 
 
 ::: moniker-end
-::: moniker range="=azure-devops-2019"
-
-> [!div class="mx-imgBorder"]  
-> ![Search box shortcut menu (web portal)](media/example-search-box-queries/IC588318.png)   
-
-::: moniker-end
-
 
 ### From Visual Studio Team Explorer
 
@@ -133,7 +120,6 @@ Open the ![Context Menu Icon](media/example-search-box-queries/IC533396.png) con
 
 > [!div class="mx-imgBorder"]  
 > ![Search box menu (Team Explorer)](media/example-search-box-queries/IC588319.png) 
-
 
 Finding work items using the search box (Team Explorer)
 
@@ -185,8 +171,6 @@ To find work items based on a keyword or phrase contained within other text stri
 ## Use @Me or @Today macros
 
 The **@Me** macro expands to the full name of the current user in any work item search. The **@Me** macro is especially useful for creating a search that you can share with other users, and it can simplify your work by reducing the number of characters you must type to specify your own user name. For a description of all macros, see [Query fields, operators, and macros, Query macros or variables](query-operators-variables.md#macros). 
-
-
 
 ---
 :::row:::
@@ -261,7 +245,6 @@ The following examples show how to use operators when you create a search string
 |Resolved by Peter.|`"Resolved By":Peter`|
 |Contain the keyword `triage` in the title or description, aren't assigned to you, and aren't closed.|`triage -A=@me -S=Closed`|
 |Active bugs that are assigned to you that don't contain the keyword `bugbash` in the title.|`S=Active T=bug A=@Me -Title:bugbash`
-
 
 ## Related articles
 

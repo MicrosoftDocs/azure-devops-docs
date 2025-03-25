@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 11/15/2023
 ---
 
-
 # Reference guide for link types
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -33,7 +32,7 @@ A specific field maintains a count of links for the first four link types, such 
 
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"  
+::: moniker range="<azure-devops"
 
 - [**Work link type**](#work-link-type): links work items including select test case management work items
 - [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
@@ -531,7 +530,7 @@ The following table describes the external link types you can choose when adding
    :::column-end:::
 :::row-end:::
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## GitHub link type
 
@@ -546,14 +545,7 @@ GitHub link types are system-defined and support linking work items to GitHub ob
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-> [!div class="mx-imgBorder"]  
-> ![Conceptual image of GitHub link type.](media/link-type-reference/linkscontrol-github-link-types-onprem.png) 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!IMPORTANT]  
 > You can only link to GitHub artifacts with repositories connected to Azure Boards.
@@ -597,7 +589,7 @@ The following table describes the GitHub link types you can choose when adding a
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       GitHub Pull Request

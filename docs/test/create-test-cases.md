@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 11/04/2021
 ---
 
-
 # Create manual test cases
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
@@ -94,38 +93,6 @@ Add existing test cases to a test suite with the following actions.
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-1. If you haven't already, [create a test plan and requirement-based test suites](create-a-test-plan.md).
-
-1. Select a requirement-based test suite. In the right-hand pane, choose **+** (New)
-   and then choose **New test case**.
-
-   ![Screenshot showing the test suite for a backlog item and adding a new test case.](media/create-test-cases/CreateTest_1.png)
-
-   > The [test suite](create-a-test-plan.md) shown here was created from a User Story work item in the team's backlog board. 
-   > When you add a test case to this kind of suite, the test case is automatically linked to the backlog item.
-   > To create test cases this way, open the shortcut menu for the work item and choose **Add test**.    
-
-2. Choose the **Click or type here to add a step** link and add test steps
-   with a description of the action required to carry out the test and the
-   expected results so that any team member can run the test.
-   You can add attachments to a step if you want. Repeat until you add
-   all the steps for the test.
-   ![Screenshot showing creating the steps for a new manual test case.](media/create-test-cases/CreateTest_3.png)
-
-   You can share steps between test cases. For more information, see [Share steps](share-steps-between-test-cases.md).
-
-   [How can I find an existing test case within a test plan?](create-a-test-plan.md#findplan)
-
-You can reorder manual test cases in static suites, requirement-based suites, and query-based suites.
-Choose **Order tests** on the tool bar, then drag and drop one or more tests.
-Or open the shortcut menu for a test to move it to the top or to another position.
-After reordering the tests, you can sort them by the **Order** field and then run them in that order with the web runner.
-
-![Screenshot showing ordered test cases.](media/create-test-cases/OrderTestCases.png)
-
-::: moniker-end
-
 > [!TIP]
 > You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the board. For more information, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md).
 
@@ -156,31 +123,6 @@ Do the following steps to copy and paste test cases into the **Grid** view.
    View and edit these fields when you switch to the **Grid** view.
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-Switch between **Grid** and **List** views using the **View** menu at the right of the window.
-
-![Screenshot showing the View menu to switch between List and Grid views.](media/create-test-cases/GridViewSwitch.png)
-
-On the grid shortcut menu, you can add, delete, or clear rows.
-
-![Screenshot showing the grid's shortcut menu to insert, delete, or clear rows.](media/create-test-cases/GridContextMenu.png)
-
-You can use the **Grid View** when you add multiple test cases to the test suite:
-
-![Screenshot showing creating new test cases using the grid.](media/create-test-cases/NewTestCasesUsingGrid.png)
-> [!NOTE]
-> Do not use the Teams plugin for Excel to add or update test case work items.
-> Excel cannot parse the format used to store test steps, and in some cases 
-> this might affect the formatting of the test case work items. 
-
-You can edit other fields in the **Grid** view.
-In the **List** view, use the column options to select the fields in the test case work item.
-
-![Screenshot showing column options to select fields to edit.](media/create-test-cases/UseColumnOptions.png)
-
-You can then view and edit these fields when you switch to the Grid view.
-::: moniker-end
-
 ### Use Excel to copy information into a Grid view
 ::: moniker range=">=azure-devops-2020"
 You can copy test cases and test steps from an existing Excel worksheet.
@@ -197,19 +139,6 @@ Copying doesn't copy test step formatting, other than multiline, into the worksh
 > Don't use the Teams plugin for Excel to add or update test case work items.
 > Excel can't parse the format used to store test steps, and in some cases this may affect the formatting of the test case work items.
 
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-You can copy test cases and test steps from an existing Excel worksheet, which is supported only with Internet Explorer and Chrome browsers.
-
-Copy the columns from Excel that you want to use for the title, action, and expected results fields.
-Copying doesn't copy column formatting, other than multiline, from the worksheet.
-Paste these columns into the **Grid** view, edit if necessary, and save them.
-
-![Screenshot showing copied test cases in grid view.](media/create-test-cases/SaveTestCasesInGrid.png)
-
-You can copy the data from the **Grid** view and paste it into your Excel worksheet.
-Copying doesn't copy test step formatting, other than multiline, into the worksheet.
 ::: moniker-end
 
 <a name="assigncase"></a>
@@ -242,30 +171,6 @@ You can assign an individual test case to a tester.
    ![Screenshot showing the context menu for a test case with the Assign tester option selected.](media/create-test-cases/assign-tester-test-case.png)
 
 1. Select **Assign tester**. Search for and select a tester.
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-1. You can reassign test cases so that another tester can 
-   run them. Select the tests that you want to reassign. Then 
-   open the shortcut menu (choose the "..." ellipses or right-click) 
-   and select the tester you want to run the tests.
-
-   ![Screenshot showing reassigned tests to a different tester.](media/create-test-cases/AssignTester.png)
-
-   Or, you can assign all the test cases in a test suite to multiple testers, which is useful for acceptance testing. Open the shortcut menu for the test plan
-   and choose **Assign testers to run all tests**. 
-   
-   ![Screenshot showing assigning testers to run all tests.](media/create-test-cases/AssignMultipleTesters.png)
-
-2. Add or remove testers from the list. After you select the testers, tick the **Send email**
-   checkbox and edit the message as required so they know that tests are ready for them to run.
-
-   ![Screenshot showing send emails to testers.](media/create-test-cases/AssignMultipleTestersEmail.png)
-
-   The email contains a link that testers can open to see the list of assigned tests.
-   Testers need [Basic access](../organizations/security/access-levels.md)
-   to run tests from Azure Test Plans.
 
 ::: moniker-end
 
@@ -322,36 +227,6 @@ Or you can remove the test case from the test suite. From the context menu for t
 ![Screenshot showing removed test case.](media/create-test-cases/remove-test-case.png)
 
 To permanently delete test plans and test suites, be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-You can tag test cases and view test cases only with specific tags.
-For example, tag all the tests related to signing in so that you can rerun these tests if a bug is fixed for that page.
-Then you can filter on that tag from the **Test Plans** web portal.
-
-To add new tags to add to work items, have at least **Basic** access and have the project-level **Create new tag definition permissions** set to **Allow**. for more information, see [Add work item tags](../boards/queries/add-tags-to-work-items.md).
-
-You can add and edit tags when you edit a test case, or bulk edit tags in the grid view.
-You can also create suites based on queries when you use tags.
-
-![Screenshot showing in the **Test Plans** web portal, on the Test Plans page, choose or add tags from the test case pane.](media/create-test-cases/TestHubTags.png)
-
-You can rename or delete test cases. Open the test case from its shortcut menu.
-
-![Screenshot showing opened test case for editing.](media/create-test-cases/open-test-case.png)
-
-Here you can rename the test case.
-
-![Screenshot showing renamed test case.](media/create-test-cases/rename-test-case.png)
-
-Or you can permanently delete the test case.
-
-![Screenshot showing deleted test case.](media/create-test-cases/delete-test-case.png)
-
-To delete test plans and test suites, be a member of the Project Administrators group or have the Area Path node-level Manage test plans or Manage test suites permission set to *Allow*.
-To manage or delete test artifacts, you must also have your access level set to Basic + Test Plans or Visual Studio Enterprise.
-
-To delete test plans and test suites, be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
 ::: moniker-end
 
 ## Next steps

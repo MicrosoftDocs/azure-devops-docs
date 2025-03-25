@@ -88,7 +88,6 @@ Create a project-level group when you want to manage permissions at the project-
 
    ![Screenshot showing creating a security group at the organization-level.](media/project-collection/organization-permissions-add-group.png)  
 
-
 ### Define the new group  
 
 1. In the dialog that opens, enter a **Name** for the group. Optionally, add members and a description for the group. 
@@ -135,7 +134,7 @@ Create a project-level group when you want to manage permissions at the project-
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Open the web portal and select the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -177,8 +176,6 @@ Create a project-level group when you want to manage permissions at the project-
    > Users with limited access, such as Stakeholders, can't access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
 
 ::: moniker-end
-
-
 
 <a id="project-level"></a>
 
@@ -240,8 +237,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 
 ::: moniker-end 
 
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Open the **Permissions** page for either the project-level or organization-level as described in the previous section, [Create a custom security group](#create-custom-group). 
 
@@ -261,8 +257,6 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 2. Choose **Save changes**. Choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see the additions.  
 
 ::: moniker-end 
-
-
 
 ## Change permissions for a user or group 
 
@@ -387,8 +381,6 @@ For on-premises deployments, see these other articles:
 If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end 
-
-
 
 ## Next steps
 

@@ -7,7 +7,7 @@ ms.subservice: azure-devops-analytics
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 09/25/2024
 #customer intent: As a team member, I want to create burndown and burnup charts that show team progress and add them as widgets to a dashboard.
 ---
@@ -40,14 +40,6 @@ Use the following procedure to add a burndown or burnup widget to your dashboard
 1. Select a widget, and then **Add**.
 
    :::image type="content" source="media/burndown-widget/add-widget.png" alt-text="Screenshot showing widget selection pane and blue Add button.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. [Enable or install Analytics](analytics-extension.md).
-1. [Add the widget to your dashboard](./add-widget-to-dashboard.md).  
-1. Select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** and **Configure**.
 
 ::: moniker-end
 

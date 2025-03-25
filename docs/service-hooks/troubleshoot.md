@@ -24,7 +24,7 @@ for each subscription, and whether a subscription is enabled, disabled, or restr
 
 You can access detailed history about a subscription including detailed request/response data, which is useful for debugging a problematic service or subscription.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. To view the activity and status of your subscriptions, go to the **Service Hooks** page. 
 
@@ -35,8 +35,6 @@ You can access detailed history about a subscription including detailed request/
    :::image type="content" source="media/troubleshoot/detailed-activity.png" alt-text="Screenshot showing detailed view of activity for a subscription.":::
 
 ::: moniker-end
-
-
 
 ## Subscription failures and probation (restricted)
 
@@ -108,7 +106,6 @@ After seven retries, the subscription status gets set to _DisabledBySystem_ if n
 
 **A:** The payload limit is 2 MB. Larger payloads cause degradation in performance and reliability. As a best practice, service-hooks should limit the payload to 2 MB or less. 
 
-
 ### Q: What does the status Enabled (restricted) mean? 
 
 **A:** A subscription becomes restricted if too many failures occur. Enabled (restricted) is the same as being on probation.
@@ -123,7 +120,6 @@ A: A subscription is automatically disabled after a series of consecutive failur
 ### Q: What does the status Disabled (user left project) mean?
 
 **A:** The user who created the subscription is no longer a member of the team.
-
 
 ### Q: What should I try if a service hook isn't working? 
 

@@ -39,8 +39,8 @@ Widgets listed in the following table are provided out-of-box. They're organized
 
 | **Category** | **Widgets** |
 |--------------|-------------|
-| **Boards** (Azure DevOps 2020 and later) | - [Assigned to Me](#assigned-to-me-widget) (User) <br> - [Burndown](#burndown-analytics-widget) (Analytics, Project, Teams) <br> - [Burnup](#burnup-analytics-widget) (Analytics, Project, Teams) <br> - [Chart for Work Items](#chart-wit-widget) <br> - [Cumulative Flow Diagram](#cfd-widget) (Team) <br> - [Cycle Time (Analytics)](#cycle-time-widget) (Analytics, Team) <br> - [Lead Time (Analytics)](#lead-time-widget) (Analytics, Team) <br> - [New Work Item](#new-work-item-widget) <br> - [Query Results](#query-results-widget) <br> - [Query Tile](#query-tile-widget) <br> - [Sprint Burndown](#sprint-burndown-analytics-widget) (Analytics, Team) <br> - [Sprint Burndown (Legacy)](#sprint-burndown-widget) (Team) <br> - [Sprint Capacity](#sprint-capacity-widget) (Team) <br> - [Sprint Overview](#sprint-overview-widget) (Team) <br> - [Velocity](#velocity-widget) (Analytics, Team) <br> - [Work Links](#work-links-widget) |
-| **Boards** (Azure DevOps 2019) | - [Assigned to Me](#assigned-to-me-widget) (User) <br> - [Burndown](#burndown-analytics-widget) (Analytics, Teams) <br> - [Burnup](#burnup-analytics-widget) (Analytics, Teams) <br> - [Chart for Work Items](#chart-wit-widget) <br> - [Cumulative Flow Diagram](#cfd-widget) (Team) <br> - [Cycle Time (Analytics)](#cycle-time-widget) (Analytics, Team) <br> - [Lead Time (Analytics)](#lead-time-widget) (Analytics, Team) <br> - [New Work Item](#new-work-item-widget) <br> - [Query Results](#query-results-widget) <br> - [Query Tile](#query-tile-widget) <br> - [Sprint Burndown](#sprint-burndown-widget) (Team) <br> - [Sprint Capacity](#sprint-capacity-widget) (Team) <br> - [Sprint Overview](#sprint-overview-widget) (Team) <br> - [Velocity](#velocity-widget) (Analytics, Team) <br> - [Work Links](#work-links-widget) |
+| **Boards** (Azure DevOps 2020 and later) | - [Assigned to Me](#assigned-to-me-widget) (User) <br> - [Burndown](#burndown-analytics-widget) (Analytics, Project, Teams) <br> - [Burnup](#burnup-analytics-widget) (Analytics, Project, Teams) <br> - [Chart for Work Items](#chart-wit-widget) <br> - [Cumulative Flow Diagram](#cfd-widget) (Team) <br> - [Cycle Time (Analytics)](#cycle-time-widget) (Analytics, Team) <br> - [Lead Time (Analytics)](#lead-time-widget) (Analytics, Team) <br> - [New Work Item](#new-work-item-widget) <br> - [Query Results](#query-results-widget) <br> - [Query Tile](#query-tile-widget) <br> - [Sprint Burndown](#sprint-burndown-analytics-widget) (Analytics, Team) <br> - [Sprint Burndown (Legacy)](#burndown-widget) (Team) <br> - [Sprint Capacity](#sprint-capacity-widget) (Team) <br> - [Sprint Overview](#sprint-overview-widget) (Team) <br> - [Velocity](#velocity-widget) (Analytics, Team) <br> - [Work Links](#work-links-widget) |
+| **Boards** (Azure DevOps 2019) | - [Assigned to Me](#assigned-to-me-widget) (User) <br> - [Burndown](#burndown-analytics-widget) (Analytics, Teams) <br> - [Burnup](#burnup-analytics-widget) (Analytics, Teams) <br> - [Chart for Work Items](#chart-wit-widget) <br> - [Cumulative Flow Diagram](#cfd-widget) (Team) <br> - [Cycle Time (Analytics)](#cycle-time-widget) (Analytics, Team) <br> - [Lead Time (Analytics)](#lead-time-widget) (Analytics, Team) <br> - [New Work Item](#new-work-item-widget) <br> - [Query Results](#query-results-widget) <br> - [Query Tile](#query-tile-widget) <br> - [Sprint Burndown](#burndown-widget) (Team) <br> - [Sprint Capacity](#sprint-capacity-widget) (Team) <br> - [Sprint Overview](#sprint-overview-widget) (Team) <br> - [Velocity](#velocity-widget) (Analytics, Team) <br> - [Work Links](#work-links-widget) |
 | **Repos** | - [Code Tile](#code-tile-widget) (Repository, Branch, Folder) <br> - [Pull Request](#pull-request-widget) (Team) |
 | **Pipelines** | - [Build History](#build-history-widget) (Build) <br> - [Deployment status](#deployment-status-widget) (Build) <br> - [Release Pipeline Overview](#release-definition-widget) (Release) <br> - [Requirements quality](#requirements-quality-widget) (Query, Build, Release) |
 | **Test Plans** | - [Chart for Test Plans](#chart-test-plan-widget) <br> - [Test Results Trend](#test-trend-results) (Build, Release) <br> - [Test Results Trend (Advanced)](#test-trend-results-advanced) (Analytics, Build, Release) |
@@ -237,21 +237,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column-end:::
 :::row-end::: 
 ::: moniker-end
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      ### Sprint Burndown
-     :::image type="icon" source="media/widget-sprint-burndown.png":::  
-   :::column-end:::
-   :::column span="1":::
-      <br/>
-      <a id="sprint-burndown-widget"></a>
-      The team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
 
-      Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
 :::row:::
    :::column span="1":::
       ### Sprint Capacity

@@ -6,13 +6,11 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019 <= azure-devops-2020'
+monikerRange: "=azure-devops-2020"
 ms.date: 05/26/2022
 ---
 
-
 # Migrate to Analytics from SQL Reporting Services for Azure DevOps 
-
 
 [!INCLUDE [version-gt-eq-2019-lt-azure-devops](../../includes/version-gt-eq-2019-lt-azure-devops.md)]
 
@@ -36,7 +34,6 @@ As you migrate from using SQL Server Reporting Services to Analytics, note the f
 - Analytics views provide a quick and easy way to generate status and trend reports for work items and test cases. 
 - Identify the insights you need to make data-driven decisions. Then, use a combination of queries, dashboards, built-in reports, or Power BI and OData queries to generate the needed reports.  
 
-
 ## New feature support 
 
 Several new features have been introduced to support data insights that weren't available with SQL Server Reporting services.   
@@ -48,7 +45,6 @@ Several new features have been introduced to support data insights that weren't 
 - **Traceability**: Increased support for tracking work from requirements to deployment. End-to-end traceability is supported by linking various objects such as work items, branches, commits, pull requests, builds, and releases. Built-in reports based on the Analytics service support the ability to monitor traceability in real time. For more information, see [End-to-end traceability](../../cross-service/end-to-end-traceability.md).
 - **Release pipelines**: Release pipelines were introduced with TFS 2018. Dashboard widgets that provide insights into release pipelines include [Release pipeline overview](../dashboards/widget-catalog.md#release-definition-widget) and [Requirements quality](../dashboards/widget-catalog.md#requirements-quality-widget).  
   
-
 
 ## Key concepts about the Analytics service
 
@@ -66,7 +62,6 @@ The following tools support interaction with the Analytics service:
 ### Query guidelines, query performance and latency 
 
 Analytics is not a real-time time store. It is a curated copy of data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and reduces the effect reporting scenarios have on Azure DevOps. Copying the data introduces up to a 30-second delay before the data associated with any one change shows up in Analytics. For more information, see [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
-
 
 ### Analytics permissions
 

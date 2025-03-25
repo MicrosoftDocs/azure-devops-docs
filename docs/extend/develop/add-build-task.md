@@ -305,7 +305,6 @@ Do unit tests to quickly test the task script, and not the external tools that i
 
    The success test validates that with the appropriate inputs, it succeeds with no errors or warnings and returns the correct output.
 
-
 4. To run the task mock runner, add the following example success test to your `_suite.ts` file.
 
    ```typescript
@@ -488,7 +487,7 @@ To maintain the custom task on the Marketplace, create a build and release pipel
 
 ### Prerequisites
 
-:::moniker range=">= azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 :::row:::
    :::column span="1":::
@@ -654,8 +653,6 @@ Use the following example to create a new pipeline with YAML. For more informati
 :::row-end:::
 
 :::moniker-end
-
-
 
 For more information, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
 
