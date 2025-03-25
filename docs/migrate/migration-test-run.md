@@ -445,7 +445,7 @@ Although Azure DevOps Services is available in multiple geographical locations i
 
 [Create a blob container](/azure/storage/common/storage-create-storage-account) from the Azure portal. After you create the container, upload the Collection DACPAC file. 
 
-After the migration finishes, delete the blob container and accompanying storage account with tools such as [AzCopy](/azure/storage/common/storage-use-azcopy-v10) or any other Azure storage explorer tool, like [Azure Storage Explorer](https://storageexplorer.com/). 
+After the migration finishes, delete the blob container and accompanying storage account with tools such as [AzCopy](/azure/storage/common/storage-use-azcopy-v10) or any other Azure storage explorer tool. 
 
 > [!NOTE] 
 > If your DACPAC file is larger than 10 GB, we recommend that you use [AzCopy](/azure/storage/common/storage-use-azcopy-v10), as it has multithreaded upload support for faster uploads.
