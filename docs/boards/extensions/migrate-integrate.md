@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/10/2025
+ms.date: 02/11/2025
 ---
 
 # About migrating and integrating work tracking data 
@@ -32,12 +32,24 @@ You can search for extensions in the [Visual Studio Marketplace](https://marketp
 - Split one project into many projects
 - Assist changing process templates
 - Edit work items in bulk
-- Migrate test suites and test plans 
+- Migrate test suites and test plans
+
+### Migrate data between projects without downtime  
+
+There are non-Microsoft tools available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) that enable seamless migration without downtime or disruption, even when the target environment isn't empty or when templates differ. These tools generally support:
+
+- Version control information and history, including original dates and users added to comments.
+- Work items, both standard and custom, along with their history, retaining the original dates and users.
+- Test plans, test suites, test cases, and test results.
+- Iteration, area path, group, team, and user data.
+- Dashboards, queries, widgets, and pipelines.
+- Compatibility with Azure DevOps Server versions 2010 and later.
+- Support for Azure DevOps Services.
 
 ## Migrate process models between Azure DevOps organizations
 
 For constraints on process template definitions that you can import, see [Resolve validation errors for process import](../../organizations/settings/work/import-process/resolve-errors.md).
-
+  
 ## Export and import work tracking data
 
 The main tool you can use to import work tracking data you exported from elsewhere is Microsoft Excel. Excel supports publishing a flat list of work items or a hierarchical tree of parent-child linked work items. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
