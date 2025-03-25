@@ -69,27 +69,6 @@ In summary, **copy** a work item to adjust prepopulated values, and **clone** a 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
-
-   :::image type="content" source="media/copy/choose-copy-work-item-s171.png" alt-text="Screenshot of web portal, user story work item form, open context menu, select Create copy of work item.":::
-
-2. Choose the project and work item type if different from the copied work item.
-
-    :::image type="content" source="media/copy/copy-work-item-2020.png" alt-text="Screenshot shows copy work item dialog.":::
-
-	Optionally, check one or more of the boxes:
-
-	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
-	- **Include existing attachments**: To include attachments in the copied work item.
-
-3. Select **OK**.
-
-4. In the work item form that opens, update other fields as needed. All work items start in the New state.
-
-::: moniker-end
-
 > [!TIP]
 > Copied or cloned work items always have a higher ID than the original work items.
 
@@ -100,11 +79,6 @@ If you have a large number of work items whose type you want to change, use [Cha
 ## Copy a list of work items
 
 You can copy an HTML formatted table of selected items from either a backlog page or query results list. Then, you can send an email of this list using your choice of email client, or paste the list into a Word document, Excel spreadsheet, or other application. 
-
-::: moniker range="=azure-devops-2019"
-> [!NOTE]  
-> The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts).
-::: moniker-end
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 

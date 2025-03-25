@@ -19,11 +19,3 @@ ms.date: 08/07/2020
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [agent-queues-tab](agent-queues-tab/agent-queues-tab-server-2019.md)]
-
-::: moniker-end
-
-
-

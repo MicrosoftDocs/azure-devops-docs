@@ -38,7 +38,7 @@ For example, when code is pushed, or a build occurs.
 
 Create a Trello card or list from an Azure DevOps Services event.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Go to your project Service Hooks page: 
 
@@ -57,7 +57,6 @@ we're going to have the subscription respond when a work item is created.
 
    ![Trigger configuration page](./media/trello/trigger.png)
 
-
 1. Set up the action that Trello will take in response to the trigger -
 either create a card or a list.
 
@@ -74,8 +73,6 @@ either create a card or a list.
    ![Test notification](./media/trello/test.png) 
 
 ::: moniker-end
-
-
 
 Now it's set up. Go to Trello and see the cards appear.
 

@@ -16,9 +16,7 @@ To use a PAT with Azure DevOps Server, your server must be configured with HTTPS
 
 ## Create a personal access token for agent registration
 
-
-
-::: moniker range=" >= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Sign in with the user account you plan to use in your Azure DevOps Server web portal (`https://{your-server}/DefaultCollection/`).
 
@@ -43,7 +41,6 @@ To use a PAT with Azure DevOps Server, your server must be configured with HTTPS
    > [!NOTE]
    > If you are configuring a deployment group agent, or if you see an error when registering a VM environment resource, you must set the PAT scope to **All accessible organizations**. 
    > :::image type="content" source="media/prepare-permissions-pat-scope.png" alt-text="Screenshot of setting PAT scope to all accessible organizations.":::
-
 
 ::: moniker-end
 

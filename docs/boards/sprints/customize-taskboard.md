@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
 
-
 # Customize cards on a sprint Taskboard in Azure Boards 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
@@ -20,12 +19,6 @@ ms.date: 04/01/2022
 ::: moniker range=">= azure-devops-2020"
 
 Sprint Taskboards are similar to boards because they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-Taskboards). Similar to boards, you can customize cards and add columns.  
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-Sprint Taskboards are similar to boards in that they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-Taskboards). Similar to the boards, you can customize cards. To change column names or add columns, you need to customize the workflow.   
 
 ::: moniker-end
 
@@ -83,16 +76,7 @@ To add or remove columns, choose **Column Options**. You customize all other opt
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      **[Fields](#choose-fields)** 
-   :::column-end:::
-   :::column span="3":::
-      Add or remove fields from cards. 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 :::row:::
    :::column span="1":::
       **[Styles](#style-rule)**
@@ -106,7 +90,6 @@ To add or remove columns, choose **Column Options**. You customize all other opt
 > [!NOTE]   
 > Each team can customize their Taskboard columns and cards. Taskboard settings are not inherited from other teams that they may share portions of area paths. 
 
-
 ## Understand the Taskboard customization sequence 
 
 Before you configure your Taskboard, you'll want to make sure the following tasks are as complete as possible. Otherwise, you'll find yourself revisiting your configuration.  
@@ -116,15 +99,12 @@ Before you configure your Taskboard, you'll want to make sure the following task
 2. Customize your iteration backlog to ensure all of your wanted work item types appear on the Taskboards. For more information, see [Customize backlogs & boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 3. Customize each work item type to have any custom fields you want to show. For more information, see [Customize a workflow](../../organizations/settings/work/add-custom-field.md).
 
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!NOTE]  
 > You can customize a work item type which is different than customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
-
-
 
 **Team Administrator**:
 1. Meet with your team and determine how the team wants to manage bugs, similar to requirements or tasks.  
@@ -136,7 +116,6 @@ Before you configure your Taskboard, you'll want to make sure the following task
 ## Show bugs on your taskboard 
 
 If you want bugs to appear on your taskboard, change your team settings for [show bugs on the backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
-
 
 <a id="add-columns" > </a>
 
@@ -177,7 +156,6 @@ The changes made apply to all sprint Taskboards for the selected team.
 	> [!div class="mx-imgBorder"]
 	> ![Delete column](media/customize/choose-column-delete.png)
 
-
 ::: moniker-end
 
 <a id="choose-fields" > </a>
@@ -211,7 +189,7 @@ Your best bet is to show fields on cards based on what your team frequently refe
 
 You change the way cards appear on the Taskboard in the same way you change the appearance of cards on boards. Only here, you start from the Taskboard.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. [Open the taskboard](task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.
 
@@ -236,7 +214,6 @@ You change the way cards appear on the Taskboard in the same way you change the 
 6. When you're done with your changes, choose **Save**.
 
 ::: moniker-end  
-
 
   
  
@@ -274,7 +251,6 @@ To add tags, double-click the work item to open it. And, just a reminder, you ca
 
 With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight Priority 1 tasks by having the cards display as green. 
 
-
 ![Styling rule applied to tasks with Priority=1](media/customize/task-style-green.png)
 
 ### Example styling rules 
@@ -298,7 +274,7 @@ What rules should you apply to highlight work items? Here are a few examples and
 
 You can apply style rules to change the color of Taskboard cards based on specified field criteria.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. [Open the Taskboard](task-board.md) that you want to customize.  
 
@@ -331,9 +307,6 @@ You can apply style rules to change the color of Taskboard cards based on specif
 
 ::: moniker-end  
 
-
-
-
 ::: moniker range=">= azure-devops-2020"
 
 ## Changes cause automatic taskboard updates 
@@ -341,7 +314,6 @@ You can apply style rules to change the color of Taskboard cards based on specif
 Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the background.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
 
 ::: moniker-end
-
 
 ## Related articles
 

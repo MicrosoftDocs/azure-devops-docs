@@ -3,7 +3,7 @@ ms.topic: include
 ---
 
 <a id="powerbi-reports"></a>
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### Analytics widgets and Power BI reports 
 

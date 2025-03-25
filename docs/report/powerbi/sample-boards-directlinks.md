@@ -7,7 +7,7 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 10/08/2021
 ---
 
@@ -21,7 +21,6 @@ This article shows you how to create a report that lists work items linked to ot
 
 For more information about link types and linking work items, see [Link user stories, issues, bugs, and other work items](../../boards/backlogs/add-link.md).
 
-
 Other sample queries include listing bugs with a Duplicate link to another bug, and listing bugs that don't contain a Duplicate link to another bug.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -33,7 +32,6 @@ Other sample queries include listing bugs with a Duplicate link to another bug, 
 Several queries are provided which show how to filter linked work items. All of these queries specify the `WorkItems` entity set as they return current data.  
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
-
 
 ### Return Features and their child User Stories 
 
@@ -60,7 +58,6 @@ let
 in
     Source
 ```
-
 
 #### [OData query](#tab/odata/)
 
@@ -90,7 +87,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
-
 
 ### Query breakdown
 
@@ -196,7 +192,6 @@ The following table describes each part of the query.
 ### Return User Stories linked with the Related link type 
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
-
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -372,10 +367,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Transform data in Power Query Editor
 
@@ -400,7 +392,6 @@ In this example, the following fields have been renamed:
 | LinksLinkTypeName       | Link Type |
 | Links.TargetWorkItem.State | Target State |
 | Links.TargetWorkItem.Title | Target Title | 
-
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

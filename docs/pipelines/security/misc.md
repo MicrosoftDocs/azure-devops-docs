@@ -96,7 +96,7 @@ By default, your pipelines are configured to build forks, but secrets and protec
 
 :::moniker-end
 
-:::moniker range="<= azure-devops-2020"
+:::moniker range="=azure-devops-2020"
 
 :::image type="content" source="media/fork-build-protection-2020.png" alt-text="Screenshot of fork build protection UI in Azure DevOps Server 2020 and lower.":::
 

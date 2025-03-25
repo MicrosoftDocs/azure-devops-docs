@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
 ms.date: 12/10/2018
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.subservice: azure-devops-repos-git
 ---
 

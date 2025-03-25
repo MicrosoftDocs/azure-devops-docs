@@ -57,7 +57,6 @@ From the web portal or Microsoft Test Manager, you can view which test cases are
 and which test suites are defined for a test plan. 
 However, these objects aren't connected to each other through link types. For definitions of each field used in these work item types, see [Query based on build and test integration fields](../queries/build-test-integration.md).
 
-
 ## Delete a test case, test suite, or test plan 
 
 1. To delete a test case, test suite, or test plan, open it from the web portal and choose the **Permanently delete** option from the actions menu. Bulk deletion isn't supported from a query results page.    
@@ -75,12 +74,6 @@ However, these objects aren't connected to each other through link types. For de
 3. You can also delete a test plan directly from **Test Plans**. To delete a test plan, open **Test Plans** and choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More Actions** for the plan you want to delete, and choose **Delete**. 
 
 	:::image type="content" source="media/move-change-delete/delete-test-suite-test-plans.png" alt-text="Screenshot of Test Plans page, delete a test plan.":::  
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-3. You can also delete a test plan directly from **Test** or **Test Plans**. 
-
-	![Delete test plans and artifacts from Test pages.](media/move-change-delete/delete-test-plans.png)  
 ::: moniker-end
 
 4.	To delete shared steps and shared parameters, first manually remove all references to them before you can delete them. 

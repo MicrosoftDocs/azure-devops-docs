@@ -48,7 +48,6 @@ In this article, we'll go from having one project and one team, both named "Fabr
 > [!NOTE]   
 > Azure Boards doesn't support a hierarchy of teams. However, by configuring the Area Paths as indicated in this article, you effectively create a type of team hierarchy. The hierarchy is defined through the structure of Area Paths.  
 
-
 We'll then configure the area path to the following hierarchy and configuring each team's area path. This configuration supports each team's backlog view and rollup of views within the hierarchy.  
 
 > [!div class="mx-imgBorder"]  
@@ -61,7 +60,6 @@ All teams can manage their own workload and priorities while clearly understandi
 
 While the above may sound complicated, it actually takes little configuration to set up the teams and get started.
 To go from one project with one default team, first define each team while automatically creating a default area path for that team. Then reconfigure the flat set of area paths to a hierarchical structure. Next, define the iteration paths to support the release structure you want and the program and Agile teams to use. Lastly, configure each team and populate the membership of teams.  
-
 
 <a id="define-teams"></a>
 
@@ -106,7 +104,6 @@ Add each team, one by one.
 
 To support your team hierarchy, you'll now configure the area paths created in the first step of defining teams into a hierarchy. 
 
-
 1. From the **Project Settings** page, choose **Project configuration** and then **Areas**. You should see a flat list of Area Paths. 
 
 	> [!div class="mx-imgBorder"]
@@ -132,7 +129,6 @@ To support your team hierarchy, you'll now configure the area paths created in t
 
 	> [!div class="mx-imgBorder"]
 	> ![Hierarchical area path](media/safe-configure/team-area-path-mapping.png)
-
 
 ## Define Iteration Paths  
 
@@ -282,10 +278,8 @@ The following table lists the recommended settings to make based on the team lev
 
 ***
 
-
 > [!NOTE]
 > By setting the Default Iteration to **\@CurrentIteration**, all work items created from the team's backlog or board are assigned to the current iteration based on the current date. By setting the Backlog Iteration to the root, **Fabrikam**, indicates that only the Area Path acts as a filter for work items to appear on the team backlogs and boards. 
-
 
 1. From the **Project Settings** page, choose **Team configuration**.  
 
@@ -345,7 +339,6 @@ The following table lists the recommended settings to make based on the team lev
 	> [!div class="mx-imgBorder"]
 	> ![Project configuration, Areas](media/safe-configure/area-path-structure-corrected.png) 
 
-
 ## Configure teams to support Shared Services 
 
 For teams that support several other teams, such as a UX Design team, configure your teams as described in the following steps. 
@@ -377,7 +370,6 @@ For teams that support several other teams, such as a UX Design team, configure 
 
     Work items that appear on shared area paths appear on the backlogs and boards of the associated teams. 
 
-
 <a id="programmatic-tools"></a> 
 <a id="command-line-and-programmatic-tools"></a> 
 
@@ -393,13 +385,7 @@ You can use Azure DevOps command-line tools to add or update the following artif
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-## Use programmatic tools
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can use Azure DevOps REST APIs to add or update the following artifacts:
 
@@ -414,7 +400,6 @@ You can use Azure DevOps REST APIs to add or update the following artifacts:
 > [!div class="nextstepaction"]
 > [Customize Azure Boards to support SAFe®](safe-customize.md)  
 
-
 ## Related articles
 
 - [Add teams](../../organizations/settings/add-teams.md)
@@ -425,5 +410,4 @@ You can use Azure DevOps REST APIs to add or update the following artifacts:
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)  
 
  
-
 

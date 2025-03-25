@@ -7,7 +7,7 @@ ms.subservice: azure-devops-analytics
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-monikerRange: '>=azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 03/12/2025
 #customer intent: As a team leader or member, I want to understand how to pull data from analytics to use in Power BI reports.
 ---
@@ -95,12 +95,6 @@ To get started using OData queries in Power BI reports, see [Overview of sample 
 |**Azure Boards**|[!INCLUDE [boards samples](includes/sample-fulllist.md)]|
 |**Azure Test Plans**  | [!INCLUDE [test plans samples](includes/sample-full-list-test-plans.md)] |
 |**Azure Pipelines** |[!INCLUDE [pipeline samples](includes/sample-full-list-pipelines.md)]|
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [boards samples](includes/sample-fulllist.md)]
 
 ::: moniker-end
 

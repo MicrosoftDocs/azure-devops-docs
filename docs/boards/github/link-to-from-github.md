@@ -7,7 +7,7 @@ ms.custom: work-items, github, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 10/02/2024
 ---
 
@@ -26,7 +26,6 @@ In this article, learn how to link work items to GitHub commits, pull requests, 
 | **Permissions** | **Contributor** to both the Azure Boards project and the GitHub repository. |
 | **Project connection** | Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to or from exist. For more information, see [Azure Boards-GitHub integration](index.md). |
 
-
 ::: moniker range="azure-devops"
 > [!NOTE]   
 > Projects that use the Hosted XML process model require updates to the work item types to view the Development section and GitHub link types. For more information, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
@@ -35,11 +34,6 @@ In this article, learn how to link work items to GitHub commits, pull requests, 
 ## Use `AB#` to link from GitHub to Azure Boards work items
 
 From a GitHub commit, pull request or issue, use the following syntax to create a link to your Azure Boards work item. Enter the `AB#ID` within the text of a commit message. Or, for a pull request or issue, enter the `AB#ID` within the title or description. Using `AB#ID` in a comment doesn't create a link on the work item.
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]   
-> Linking to GitHub issues requires Azure DevOps Server 2019 Update 1 or later version. 
-::: moniker-end
 
 ```
 AB#{ID}
@@ -89,11 +83,6 @@ To create a GitHub branch directly from a work item, do these steps:
 <a id="link-work-item-to-branch-commit-pr">  </a>
 
 ## Add work item link to GitHub branch, commit, or pull request
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]   
-> Linking to a GitHub issue requires Azure DevOps Server 2019 Update 1 or later version. 
-::: moniker-end
 
 1. Open the work item and go to the **Links** tab.
 

@@ -42,15 +42,13 @@ You can manage subscriptions and delivery settings at the team-level or organiza
 
 ### Organization-level settings
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. In **Organization settings**, select **Global notifications** > **Subscribers** > your **Team** > **Delivery settings**.
 
    ![Screenshot showing Team Delivery settings.](media/team-delivery-settings-new-ui.png)
 
 ::: moniker-end
-
-
 
 2. Select from the following settings:
 
@@ -69,7 +67,7 @@ If you don't explicitly choose delivery settings for a team or group, it gets de
 
 The recipients for a custom team or group subscription get determined by the subscription. But, with certain delivery options, the team's default delivery setting is used to determine the set of recipients.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ![email-team-delivery-options](media/email-team-delivery-options-new.png)
 
@@ -85,7 +83,6 @@ The following delivery options are available for a group or team subscription:
 > The default delivery setting of each member is honored, including groups that are members of the team or group.
 
 ::: moniker-end
-
 
 ### Member of team by role
 

@@ -60,8 +60,6 @@ steps:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-
-
 You can configure the default scope for `System.AccessToken` using [build job authorization scope](../process/access-tokens.md#job-authorization-scope). 
 
 # [Classic](#tab/classic)
@@ -80,7 +78,6 @@ pushes and pulls in your scripts.
 ## System.Debug
 
 For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`. 
-
 
 1. Edit your pipeline. 
 1. Select **Variables**. 
@@ -110,7 +107,6 @@ When `System.Debug` is set to `true`, an extra variable named `Agent.Diagnostic`
 
 For more information, see [Review logs to diagnose pipeline issues](../troubleshooting/review-logs.md).
 
-
 ::: moniker range=">=azure-devops"
 
 [!INCLUDE [include](includes/variables-hosted.md)]
@@ -128,14 +124,6 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 [!INCLUDE [include](includes/variables-server-2020.md)]
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [include](includes/variables-server2019.md)]
-
-::: moniker-end
-
-
 
 <a name="identity_values"></a>
 ### How are the identity variables set?

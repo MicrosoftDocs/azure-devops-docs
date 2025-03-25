@@ -22,7 +22,7 @@ ms.date: 03/04/2024
 You can get a list of users and groups that have access to your organization in Azure DevOps by exporting users. The downloaded list also indicates access levels.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 You can get a list of users and groups that have access to your Azure DevOps Server instance by exporting the audit log. The audit log also indicates access levels.
 ::: moniker-end
 
@@ -70,7 +70,7 @@ From your web portal, get a list of the users in your organization and view thei
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 You can get a list of users and groups that accessed your instance by exporting the audit log. The audit log also indicates access levels.  
 
@@ -92,8 +92,6 @@ You can get a list of users and groups that accessed your instance by exporting 
 	To determine the access level assigned to each user or group, open the file in Excel.
 
 ::: moniker-end
-
-
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 

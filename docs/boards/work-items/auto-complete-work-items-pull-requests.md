@@ -10,7 +10,6 @@ monikerRange: '<= azure-devops'
 ms.date: 09/09/2024
 ---
 
-
 # Autocomplete work items with pull requests 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -19,9 +18,7 @@ ms.date: 09/09/2024
 When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR. Or, you can specify the workflow state to transition the work item to upon merging the PR. 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2020"
-When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR.  
-::: moniker-end 
+ 
 
 For more information, see [Create, view, and manage pull requests](../../repos/git/pull-requests.md).
 
@@ -40,9 +37,7 @@ As shown in the following image, check the box to **Complete linked work items a
 ::: moniker range=">= azure-devops-2020"
 :::image type="content" source="media/automate-state-transition/complete-pull-request-dialog.png" alt-text="Complete pull request dialog, Complete linked work items after merging":::
 ::: moniker-end 
-::: moniker range="< azure-devops-2020"
-![Complete pull request dialog, Autocomplete work items with completion of PR option](media/workflow-states-complete-pr.png)
-::: moniker-end 
+ 
 
 In the following circumstances, the system doesn't automatically update the work item state to **Done**, **Closed**, or **Completed** categories for the work item type (WIT): 
 - The work item, whose WIT is managed with the Inheritance process model, is already in the **Resolved** state. In this instance, the system doesn't update the State. For example, if a bug derived from the Agile process is in a **Resolved** state, the system doesn't transition it to **Closed**.   

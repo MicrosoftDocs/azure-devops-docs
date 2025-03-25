@@ -29,7 +29,7 @@ In Azure Artifacts, packages are immutable, meaning their version numbers cannot
 
 There are two ways to remove a NuGet package from a feed: [Unlist](#qa) and [Delete](#qa). Unlisting a package version hides it from search results in Azure Artifacts feeds and on *NuGet.org*. Deleting a package version moves it to the recycle bin and makes it unavailable for installation.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -62,7 +62,7 @@ There are two ways to remove a NuGet package from a feed: [Unlist](#qa) and [Del
 
 There are two ways to remove an npm package from a feed: [Deprecate](#qa) or [Delete](#qa) them. Deprecating a package adds a warning message to its metadata, which will be displayed whenever the package is viewed or installed. Deleting a package version, on the other hand, moves it to the recycle bin and makes it unavailable for installation.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, then navigate to your project.
 
@@ -102,7 +102,7 @@ There are two ways to remove an npm package from a feed: [Deprecate](#qa) or [De
 
 #### [Maven](#tab/maven/)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -167,7 +167,7 @@ If you need to keep a package indefinitely, promote it to a [view](../concepts/v
 > [!NOTE]
 > Azure Artifacts does not support package demotion. Once a package is promoted to a view, it cannot be reverted back to *@local*.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -194,7 +194,7 @@ If you need to keep a package indefinitely, promote it to a [view](../concepts/v
 
 Deleted packages remain in the recycle bin for 30 days. After this period, they are permanently deleted. To restore a package from the recycle bin, follow these steps:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -233,7 +233,6 @@ A: To delete all versions of a package, select the package from your feed, selec
 A: Old or existing packages will be soft-deleted and moved to the recycle bin. The deletion job runs once a day, but there might be an initial delay after the policy is turned on for the first time due to an influx of packages. 
 
 Packages remain in the recycle bin for 30 days before they're permanently deleted. To remove the packages from your billable storage, you can manually delete them using the web UI or the REST API before the 30-day period ends.
-
 
 ##### Q: What if I don't want to enable retention policies?
 

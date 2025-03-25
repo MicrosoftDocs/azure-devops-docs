@@ -195,7 +195,7 @@ See [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/maven/upda
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 
 ### [NuGet](#tab/nugetserver)
 

@@ -44,17 +44,6 @@ Work item links are associations between two work items or a work item and anoth
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-
-| Category | Requirements |
-|:-------------|:------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | - Member of the **Contributors** or **Project Administrators** security group.<br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).|
-| **Access levels** | - To add or modify work items: At least [**Stakeholder** access](../../organizations/security/stakeholder-access.md). |
-| **Defined iterations** | To use the **Planning** pane, your team administrator must [define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
-
-::: moniker-end
-
 ## Types of links
 
 The following types of links help you manage the various relationships between work items and other objects.
@@ -223,10 +212,6 @@ For more information, see [Link to work items from pull requests, commits, and c
 When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Branch**, **GitHub Commit**, **GitHub Issue**, and **GitHub Pull Request**. You can use GitHub for software development while you use Azure Boards to plan and track your work.
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Commit** and **GitHub Pull Request**. You can use GitHub for software development while you use Azure Boards to plan and track your work.
-::: moniker-end
-
 > [!IMPORTANT]  
 > You can only link work items to GitHub objects that have repositories connected to Azure Boards. For more information, see [Connect Azure Boards to GitHub](../github/connect-to-github.md), and [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
 
@@ -270,32 +255,6 @@ Do the following steps to link work items to existing builds. These builds can b
 5. Select **Add link** to complete the operation.
 
    :::image type="content" source="media/add-link/add-link-build-filled-in.png" alt-text="Screenshot of Add link dialog with Build number entered.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-You can link work items to existing builds from the **Add link** dialog.
-
-1. From the **Links** tab of a work item, choose **Add link** > **Existing item**.
-
-2. From the **Add link** dialog, choose one of the build link types: **Build**, **Found in build**, **Integrated in build**. Specify the build number.
-
-   The build number is a combination of the pipeline and build name. If you don't know the build number, search for it by choosing the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: icon.
-
-   :::image type="content" source="../../media/add-links/add-link-build.png" alt-text="Screenshot of Add link dialog with Build link type selected.":::
-
-3. From the **Link builds** dialog, choose the parameters to filter your search of builds.
-
-   For example, you can specify a build number, select a build pipeline, or a build result, such as, **All**, **succeeded**, **partially succeeded**, **failed**, or **canceled**. Or, with **All** selected for **Result**, choose **Find** to list the available builds to link to.
-
-   :::image type="content" source="media/add-link/find-builds-dialog-2020-and-previous-versions.png" alt-text="Screenshot of Find builds dialog, link to a build within your project.":::  
-
-4. Choose the build from the list you want to link to and then select **OK**.
-
-5. From the **Add link** dialog, choose **OK** to complete the operation.
-
-   :::image type="content" source="../../media/add-links/add-link-build-filled-in.png" alt-text="Screenshot of Add link dialog with Build number entered.":::
 
 ::: moniker-end
 

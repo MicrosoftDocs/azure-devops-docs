@@ -19,7 +19,7 @@ Test reports provide an effective and consistent way to view the tests results e
 in order to measure pipeline quality, review traceability, troubleshoot failures, and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can also perform deeper analysis of test results by using the
 [Analytics Service](../../report/powerbi/what-is-analytics.md).
@@ -28,10 +28,6 @@ For an example of using this with your build and deploy pipelines, see [Analyze 
 ::: moniker-end
 
 Read the [glossary](./test-glossary.md) to understand test report terminology.
-
-
-
-
 
 Published test results can be viewed in the **Tests** tab in a build or release summary.
 

@@ -7,12 +7,11 @@ ms.reviewer: desalg
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 09/30/2020
 ---
 
 # OData batch support
-
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
@@ -36,7 +35,7 @@ The $batch endpoint is located at:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData

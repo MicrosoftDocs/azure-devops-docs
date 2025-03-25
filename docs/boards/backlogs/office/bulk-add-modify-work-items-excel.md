@@ -13,7 +13,6 @@ monikerRange: '<= azure-devops'
 ms.date: 08/19/2024
 ---
 
-
 # Add or modify work items in bulk with Microsoft Excel 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
@@ -156,7 +155,6 @@ To maintain a specific order of work items, consider adding a custom field to ma
 
 ### Tasks you can and can't do with Excel
 
-
 You can and can't do the following tasks from an Excel worksheet: 
 
 **Can do:**
@@ -186,12 +184,7 @@ You can and can't do the following tasks from an Excel worksheet:
 - Add to a work item discussion thread. 
 ::: moniker-end  
 
-::: moniker range="=azure-devops-2019"
-- Delete work items 
-- Import or update test case steps or other test artifacts 
-- Add work items in any other State than the new State 
-- Add to a work item discussion thread 
-::: moniker-end  
+  
 
 <a id="add-work-items"> </a>  
 
@@ -605,12 +598,4 @@ To resolve publishing errors that might arise when you're working in Excel, see 
 
 ::: moniker-end  
 
-::: moniker range=" azure-devops-2019"
-
-- [Modify work items in bulk (web portal)](../bulk-modify-work-items.md)  
-- [Troubleshoot Azure DevOps Office integration issues](tfs-office-integration-issues.md)
-- [View FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
-- [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)
-- [Learn basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
-
-::: moniker-end  
+  

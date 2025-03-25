@@ -141,32 +141,6 @@ With Azure Artifacts, you can publish and install various package types from fee
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-# [NuGet](#tab/nugetserver19)
-
-- **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
-
-# [Npm](#tab/npmserver19)
-
-- **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
-
-# [Maven](#tab/mavenserver19)
-
-- **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
-
-# [Gradle](#tab/gradleserver19)
-
-- **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
-
-# [Python](#tab/pythonserver19)
-
-- **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
-
----
-
-::: moniker-end
-
 ## Feature availability
 
 |      Packages      |                        Azure DevOps Services                                  |                              Azure DevOps Server 2022                              |      Azure DevOps Server 2020      |      Azure DevOps Server 2019      |

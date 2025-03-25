@@ -35,14 +35,11 @@ when events occur.
 
 ::: moniker-end
 
-
 ## Available services
 
 The following services are available as the target of service hooks. For more information about other apps and services that integrate with Azure DevOps, go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#AzureDevOpsServices).
 
-
 ::: moniker range="= azure-devops"
-
 
 |Service  |Supported events  | Supported actions |
 |---------|---------|-------|
@@ -93,7 +90,7 @@ The following services are available as the target of service hooks. For more in
 
 When you integrate one of these services with Azure DevOps, you must create a new subscription. In many cases, you need to do some configuration in the other service, too. For specific details, check out the information for the service that you're interested in.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1.	Open the admin page for a project in web access.
     
@@ -125,8 +122,6 @@ When you integrate one of these services with Azure DevOps, you must create a ne
     :::image type="content" source="./media/test2.png" alt-text="Screenshot showing test notification 2.":::  
  
 ::: moniker-end
-
-
 
 ## FAQs
 

@@ -28,7 +28,6 @@ Use this index to quickly access concepts and tasks related to work items and in
 > - [Change the color of a swimlane on a board](../boards/expedite-work.md#add-or-remove-a-swimlane)
 ::: moniker-end
 
-
 <a id="concepts"></a>
 
 ## Key concepts
@@ -83,14 +82,7 @@ Use this index to quickly access concepts and tasks related to work items and in
       - [Scrum process](guidance/scrum-process.md)  
       - [State categories](workflow-and-state-categories.md)  
       ::: moniker-end
-      ::: moniker range="< azure-devops-2020"
-      - [Queries](../queries/about-managed-queries.md)  
-      - [Recycle bin](../backlogs/remove-delete-work-items.md#restore)  
-      - [Requirements](../../cross-service/manage-requirements.md)    
-      - [Rollup](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
-      - [Scrum process](guidance/scrum-process.md)  
-      - [State categories](workflow-and-state-categories.md)  
-      ::: moniker-end
+      
    :::column-end:::
    :::column span="1":::
       - [Tags](../queries/add-tags-to-work-items.md)  
@@ -148,12 +140,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Delete work items](../backlogs/remove-delete-work-items.md)  
       - [Display rollup](../backlogs/display-rollup.md)  
       ::: moniker-end
-      ::: moniker range="< azure-devops-2020"
-      - [Define a work item template](../backlogs/work-item-template.md)    
-      - [Delete work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
-      - [Delete work items](../backlogs/remove-delete-work-items.md)  
-      ::: moniker-end
-
+      
 
       - [Send email of work item list](email-work-items.md)  
       - [Export a work item list](email-work-items.md#export)  
@@ -214,11 +201,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [View work recently created](view-add-work-items.md)  
       - [View work where I'm mentioned](view-add-work-items.md)  
       ::: moniker-end
-      ::: moniker range="< azure-devops-2020"
-      - [View history](../queries/history-and-auditing.md#view-history)  
-      - [View work items (mobile)](../../project/navigation/mobile-work.md)  
-      - [View work items (web)](../backlogs/add-work-items.md)  
-      ::: moniker-end
+      
    :::column-end:::
 :::row-end:::
 ---
@@ -235,7 +218,7 @@ You customize work item types using the Inheritance process model.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 You customize work item types using either the Inheritance process model or On-premises XML process model. The model in effect for the project depends on the [selection made for the project collection](/azure/devops/server/admin/manage-project-collections) where the project is defined.
 
@@ -287,48 +270,7 @@ You customize work item types using either the Inheritance process model or On-p
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
----
-:::row:::
-   :::column span="2":::
-      - [Add a custom field](../../organizations/settings/work/customize-process-field.md)  
-      - [Add a custom work item type (WIT)](../../organizations/settings/work/customize-process-work-item-type.md#add-wit)  
-      - [Add/remove custom fields from a WIT](../../organizations/settings/work/customize-process-field.md)  
-      - [Add/remove custom groups on a WIT form](../../organizations/settings/work/customize-process-form.md#groups)  
-      - [Add/remove custom pages on a WIT form](../../organizations/settings/work/customize-process-form.md#pages)  
-      - [Add/remove a custom control on a WIT form](../../organizations/settings/work/custom-controls-process.md)  
-      - [Add/remove custom rules to a field](../../organizations/settings/work/custom-rules.md)  
-      - [Add a person-name/Identity](../../organizations/settings/work/customize-process-field.md#identity)  
-      - [Add a picklist (drop-down menu)](../../organizations/settings/work/customize-process-field.md#pick-list)  
-      - [Add a rich-text (HTML) field](../../organizations/settings/work/customize-process-field.md#html)  
-      - [Add, edit, or remove a WIT workflow state](../../organizations/settings/work/customize-process-workflow.md#states)  
-      <br/>
-      - [Change a field label](../../organizations/settings/work/customize-process-field.md#rename-field)  
-      - [Change the WIT color or description](../../organizations/settings/work/customize-process-work-item-type.md#overview)  
-      - [Create a project](../../organizations/projects/create-project.md)   
-   :::column-end:::
-   :::column span="1":::
-      - [Define Area Paths](../../organizations/settings/set-area-paths.md)  
-      - [Define Iteration Paths](../../organizations/settings/set-iteration-paths-sprints.md)  
-      - [Delete field](../../organizations/settings/work/customize-process-field.md#delete-field)  
-      - [Delete a WIT](../../organizations/settings/work/customize-process-work-item-type.md#destroy)  
-      <br/>
-      - [Enable/disable a WIT](../../organizations/settings/work/customize-process-work-item-type.md#enable-disable)  
-      - [Modify a default pick list](../../organizations/settings/work/customize-process-field.md#add-a-picklist)  
-      - [Move the field within the layout](../../organizations/settings/work/customize-process-form.md#move-field)  
-      <br/>
-      - [Remove a field from a form](../../organizations/settings/work/customize-process-field.md#remove-field)  
-      - [Restrict modification](../../organizations/security/restrict-access.md#restrict-modifications-wits)  
-      - [Set required/default options](../../organizations/settings/work/customize-process-field.md#options)  
-      - [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md)
-   :::column-end:::
-:::row-end:::
----
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 ### On-premises XML process model
 
@@ -364,7 +306,6 @@ You customize work item types using the On-premises XML process model. For more 
 ---
 
 ::: moniker-end
-
 
 ## Related articles
 

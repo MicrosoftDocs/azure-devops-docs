@@ -17,7 +17,7 @@ ms.date: 04/04/2022
 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md). 
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="<=azure-devops"
 
 Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards. 
 
@@ -180,7 +180,6 @@ Scope changes apply to fixed period CFDs only. The top line of the chart indicat
 
 The one scenario where you can't track scope changes with a CFD occurs when the same number of work items are added as removed on the same day. The line would continue to be flat. Compare several charts with one another. Monitor the specific issues. Use [View/configure sprint burndown](configure-sprint-burndown.md) to monitor scope changes. 
 
-
 ### Too much WIP?  
 
 You can easily monitor [whether WIP limits have been exceed from the board](../../boards/boards/wip-limits.md). You can also monitor it from the CFD.  
@@ -191,8 +190,7 @@ Here's a good rule of thumb for works in progress. There should be no more than 
 
 Sometimes it takes time to get information from a stakeholder, or it takes more time to acquire necessary software. There are any number of reasons why work might be halted. Having a second work item to pivot to provides some leeway. If both items are blocked, it's time to raise a red flag to get something unblocked&mdash;not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items will have difficulty context switching. It's more likely they'll forget what they were doing, and mistakes may occur.
 
-
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="<=azure-devops"
 
 ## Lead time versus cycle time   
 
@@ -220,7 +218,6 @@ In the following chart, the average cycle time is eight days. The standard devia
 
 <img src="media/cycle-time-planning.png" alt="Cycle Time widget" />
 
-
 ## Identify process issues 
 
 Review your team's control chart for outliers. Outliers often represent an underlying process issue. For example, waiting too long to complete PR reviews or not resolving an external dependency quickly.
@@ -237,11 +234,9 @@ You can also see how process changes affect your lead and cycle time. For exampl
 
 ## Next steps
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="<=azure-devops"
 > [!div class="nextstepaction"]
 > [Configure your cumulative flow charts](cumulative-flow.md) or 
 > [Configure a lead time or cycle time chart](cycle-time-and-lead-time.md)
 ::: moniker-end
-
-
 

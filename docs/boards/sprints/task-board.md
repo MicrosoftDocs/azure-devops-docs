@@ -83,27 +83,6 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. From your project, open the sprint backlog for your team. (1) Check that you selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows how to Open the sprint Taskboard for a team, Azure DevOps 2019.](media/taskboard/open-taskboard-agile.png)
-
-	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows the sprint backlog team selector options, Azure DevOps 2019.](media/add-tasks/team-selector-sprints-agile.png)
-
-2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want.
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows how to Choose another sprint, Azure DevOps 2019.](media/add-tasks/select-specific-sprint-agile.png)
-
-	The system lists only those sprints selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md).
-
-::: moniker-end
-
 ## Customize the Taskboard
 
 Each team can customize their **Taskboard** in the following ways: 
@@ -116,32 +95,9 @@ Each team can customize their **Taskboard** in the following ways:
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-- [Customize cards](../../boards/boards/customize-cards.md) that appear on the **Taskboard** to show other fields.
-- [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md). Your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they show up on your sprint backlogs and **Taskboards** at the same level as tasks.
-
-Unlike the board for a product backlog, you can't add another columns to the **Taskboard** via a team configuration setting. Instead, you need to modify the workflow definitions for the task work item type used by the project. Workflow customizations update the columns for the **Taskboard** for all teams within the project.
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2020"
 
 An administrator can customize the **Taskboard** for all teams in the following ways:  
-- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
-- [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-An administrator can customize the **Taskboard** for all teams in the following ways based on the process model selected for the project:
-
-**Inherited process model:**
-- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
-- [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
-
-**On-prem XML process model:** 
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
 - [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
 
@@ -276,7 +232,6 @@ You can reduce the number of items on the Taskboard by moving them to the backlo
 - From the sprint backlog, multi-select the items to move and then select the context menu for an item. Then, select the iteration to move them to.
 
 ![Screenshot that shows multi-select items from the sprint backlog. ](media/sprint-backlog-multi-select-non-sequential-items.png)
-
 
 ::: moniker range="< azure-devops"
 Or, if your project uses an On-premises XML process, you can [increase the maximum number of allowed items](../../reference/customize-work.md#limits).

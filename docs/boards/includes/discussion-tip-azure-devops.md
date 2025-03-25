@@ -37,11 +37,6 @@ To edit or delete any of your discussion comments, choose :::image type="icon" s
 
 :::image type="content" source="../media/discussion-edit-delete.png" alt-text="Screenshot of Discussion section where you can choose Edit or Delete actions.":::
 
-::: moniker range="azure-devops-2019"  
-> [!NOTE]
-> Editing and deleting comments requires Azure DevOps Server 2019 Update 1 or later version.
-::: moniker-end
-
 After you update the comment, select **Update**. To delete the comment, confirm that you want to delete it. The **History** tab on the work item form maintains a full audit trail of all edited and deleted comments.
 
 ::: moniker range="< azure-devops"

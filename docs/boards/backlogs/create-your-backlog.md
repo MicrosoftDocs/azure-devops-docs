@@ -35,7 +35,7 @@ Each team's set of backlogs is associated with one or more work item types. The 
 
 The backlogs defined for each default process are:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 - [**Agile**](../work-items/guidance/agile-process.md): **Stories**, **Features**, and **Epics**
 - [**Basic**](../get-started/plan-track-work.md): **Issues** and **Epics**
@@ -43,7 +43,7 @@ The backlogs defined for each default process are:
 - [**CMMI**](../work-items/guidance/cmmi-process.md): **Requirements**, **Features**, and **Epics**
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 To customize your backlogs with custom work item types, add portfolio backlogs, or other supported options, see [Inherited process model](../../organizations/settings/work/inheritance-process-model.md) or [On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 ::: moniker-end
@@ -76,30 +76,7 @@ From your web browser, do the following steps to open your product backlog.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu.
-
-   :::image type="content" source="../sprints/media/assign-items-sprint/open-work-backlogs-agile.png" alt-text="Screenshot of selecting Open Boards, then Backlogs, for a team.":::
-
-   To select another backlog, open the selector and choose a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
-
-   :::image type="content" source="../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png" alt-text="Screenshot shows the Select another team option.":::
-
-   > [!TIP]
-   > Select the  :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false":::  star icon to make a team backlog a favorite. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
-
-1. Select **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level.
-
-   :::image type="content" source="../sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot of Select product backlog level, Backlog items, Stories, or Requirements.":::
-
-1. (Optional) To select which columns display and in what order, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md).
-
-   :::image type="content" source="../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png" alt-text="Screenshot shows the Open Column options.":::
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 [!INCLUDE [tip backlog view](../includes/tip-configure-backlog-view.md)]
 ::: moniker-end
 
@@ -115,7 +92,7 @@ Your backlog shows work that you plan to do or that's in progress. As soon as th
 
 If you already defined a long list of items, you don't have to reenter them one at a time. Instead, use [bulk work items with CSV files](../queries/import-work-items-from-csv.md) or [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to import them to your backlog.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Before you add work items, select :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **View options** and turn the slider for **Parents** and **Forecasting** to **Off**. Optionally, turn **In Progress Items** on or off.
 
@@ -272,7 +249,7 @@ To plan a sprint, at a minimum, estimate the effort involved to implement each b
 
 ## Show or hide In Progress Items
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 From the **View options** selector, you can turn on **In Progress Items**. If you turn it off, items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the [In Progress category state](../work-items/workflow-and-state-categories.md) don't appear in the backlog.
 
@@ -281,12 +258,6 @@ From the **View options** selector, you can turn on **In Progress Items**. If yo
 ::: moniker range=">= azure-devops-2020"
 
 :::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="Screenshot shows the  View options selector with In progress selected.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-:::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="Screenshot shows the View options selector with In progress selected.":::
 
 ::: moniker-end
 

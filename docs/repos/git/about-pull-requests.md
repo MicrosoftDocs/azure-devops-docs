@@ -47,14 +47,12 @@ This article describes pull request guidelines and management considerations. Fo
 > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
 - To view or review PRs, be a member of an Azure DevOps project with at least **Basic** access. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, be a member of the **Readers** security group or have the corresponding permissions.
 - To create and complete a PR, be a member of the **Contributors** security group or have the corresponding permissions.
 ::: moniker-end
-
-
 
 For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
@@ -134,7 +132,6 @@ The following table summarizes the policies you can define to customize a branch
       Encourage traceability by checking for linked work items on pull requests
    :::column-end:::
 :::row-end:::
-
 
 :::row:::
    :::column span="2":::
