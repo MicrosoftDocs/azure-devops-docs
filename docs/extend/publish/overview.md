@@ -9,7 +9,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/21/2025
+ms.date: 03/25/2025
 ---
 
 # Package and publish extensions
@@ -256,6 +256,85 @@ Certain criteria must be met for an extension to be unpublished or removed:
 To offer your extension again in the Marketplace, select **Publish** from the menu.
 
 If your extension has zero installs, you can choose to remove it completely from the Marketplace. To do so, select **Remove** from the menu. You can't reverse this action.
+
+<a id="extension-report">  </a>
+
+## Extension reporting hub
+
+Once your extension is available in the Visual Studio Marketplace, you can use the **Reports** feature. With this feature, you can track and analyze how the extension is performing and take required actions. 
+To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or select the **Reports** link on the extension details page.
+
+### Acquisition 
+
+You can view acquisition-related data in this tab for the selected period. 
+* Aggregated acquisition in the selected period for overall acquisition
+* Aggregated acquisition split by extension downloads Azure DevOps connected install for free extension
+* Aggregated acquisition split by trials Azure DevOps connected buy for paid extension
+* Daily trend of extension page views with acquisition for Azure DevOps and connected server
+* Conversion percentage from page views to acquisition
+
+For paid extensions, all transactional details for buy and trials are available with date, organization name, trial end date, and quantity. You can use the **Contact** action to communicate with your users. For more information, see the [Contact](#contact) section provided later in this article. 
+
+### Uninstall
+
+You can view the following statistics:
+- How many organizations uninstalled your extension
+- Daily trend of uninstall extensions
+- Detailed feedback shared during uninstalls
+- Top uninstall reasons
+
+You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
+
+For paid extensions, you can use the **Contact** action to communicate with your users. [Contact](#contact) section provided later in this article for more details.
+
+### Ratings and review
+
+This tab gives you the following information:
+- Average rating for the selected period versus overall rating
+- Average rating by number of reviewers
+- Daily trend of average rating
+
+The details section provides all the reviews and your responses in transactional view. 
+
+You can **Reply** to a review or **Edit** a previous response and better manage engagement with your extension users. You can also **Appeal** to void a rating if the issue reported is because of the Marketplace or underlying platform. If the issue is valid, we void the rating. 
+
+### Manage engagement
+
+The Q & A tab provides a snapshot of all questions from your extension users, with nonresponded queries at the top. You can reply to or edit previous responses to better manage engagement with your extension users.
+
+### Export to Excel
+
+All data elements available in the reports page are also available for download in XLS format to aid creating your own custom reports. 
+
+### Contact
+
+For paid extensions, you can use the **Contact** action to communicate with your users. This feature is available only for publishers with Contributor+ access on the extension.
+
+Marketplace brokers the first communication with the user as our privacy policy doesn't allow direct sharing of customer email addresses. Only users who opted in for communication receive the email. The last contacted date for an organization is updated after sending a communication.
+
+> [!IMPORTANT]
+> Follow the guidance on transactional and promotional communication. Publishers found to be sending promotional communication or spamming users get added to a blocklist and lose access to the **Contact** feature for all their extensions.
+
+**Transactional communication**: Emails conveying critical information necessary for the continued use of the extension or service, such as:
+- Critical security notices
+- Transaction confirmations
+- Product recall notices
+- Specific feedback requests
+- Service discontinuation notices
+
+**Promotional emails**: Emails used to market your extension, product, service, website, or event, such as:
+- Invitations to events or webcasts
+- Information about new marketing or partner programs
+- Offers to obtain value-added content
+- Newsletters containing promotional content
+
+For more information, see  the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement).
+
+| Terminology | Description |
+|-------------|-------------|
+| **Page views** | Total number of extension detail page views. Repeated views are counted. |
+| **Azure DevOps Services installs** | Total number of organizations the extension is installed in. Repeated installs on the same organization get counted. |
+| **Azure DevOps Server installs** | Total number of collections the extension is installed in. Repeated installs on the same collection get counted. Disconnected server data isn't available. |
 
 ## Related articles
 

@@ -589,6 +589,10 @@
     {
       "source_path": "docs/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh.md",
       "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues#Resolve-data-conflicts-when-you-publish-or-refresh-Excel-data"
+    },
+    {
+      "source_path": "docs/extend/extension-report.md",
+      "redirect_url": "/azure/devops/extend/overview#extension-report"
     }
   ]
 }
