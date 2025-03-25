@@ -1,7 +1,7 @@
 ---
 title: Managed DevOps Pools Overview
 description: Learn about Managed DevOps Pools.
-ms.date: 03/04/2025
+ms.date: 03/25/2025
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the benefits of using Managed DevOps Pools.
 ---
@@ -63,6 +63,10 @@ Managed DevOps Pools provide the following benefits to creating, configuring, an
 ## Roadmap
 
 The following section describes new features in development for Managed DevOps Pools.
+
+* **Trusted root certificates**: Managed DevOps Pools added support so you can configure your pool to add certificates from your Key Vault as a trusted root certificate to your agents, so you don’t have to add a task for it to all the pipelines that use the pool. For more information, see [Key Vault configuration](./configure-security.md#key-vault-configuration). **Planned for April 2025.**
+
+* **Shorter time for agent allocation**: The Managed DevOps Pools team made updates to shorten the startup time for [stateless agents](./configure-scaling.md#stateless-pools) (**Fresh agent every time** setting). **Planned for April 2025.**
 
 * **Log analytics**: Managed DevOps Pools is adding support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode). **Planned for April 2025.**
 
