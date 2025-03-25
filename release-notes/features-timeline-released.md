@@ -104,7 +104,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New release version for Test and Feedback Extensions (TFE)</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
-    <td rowspan="14"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
+    <td rowspan="16"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
     <td>Copy code block to clipboard </td><td>General</td><td>Future</td></tr>
     <td>Entra Profile information </td><td>General</td><td>Future</td></tr>
     <td>Pull request annotations for dependency and code scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
