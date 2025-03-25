@@ -99,7 +99,7 @@ To configure this setting, navigate to [Preview features](../../project/navigati
 
 :::image type="content" source="../get-started/media/task-insights-setting.png" alt-text="Screenshot of task insights for failed pipeline runs setting.":::
 
-## Notifications for failed runs
+### Notifications for failed runs
 
 Azure DevOps includes build-in notifications for failed pipeline runs. To enable notifications:
 
