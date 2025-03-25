@@ -7,7 +7,7 @@ ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: ">= azure-devops-2019" 
+monikerRange: "<=azure-devops"
 ms.date: 10/08/2024
 ---
 

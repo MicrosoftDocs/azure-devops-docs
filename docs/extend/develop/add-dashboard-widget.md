@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 08/05/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Add a dashboard widget
@@ -239,7 +239,6 @@ Each contribution entry defines [properties](./manifest.md#contributions).
 - The array of **targets** to which the contribution is contributing. For all widgets, the target should be `[ms.vss-dashboards-web.widget-catalog]`.
 - The **properties** are objects that include properties for the contribution type. For widgets, the following properties are mandatory.
 
-
 | Property           | Description    |
 |--------------------|----------------|
 | name               | Name of the widget to display in the widget catalog.               |  
@@ -249,7 +248,6 @@ Each contribution entry defines [properties](./manifest.md#contributions).
 | uri                | Relative path of the HTML file that you added in [Step 1](#step-1-files). If you used a different folder structure or a different file name, then specify the appropriate relative path here. |  
 | supportedSizes | Array of sizes supported by your widget. When a widget supports multiple sizes, the first size in the array is the default size of the widget. The `widget size` is specified for the rows and columns occupied by the widget in the dashboard grid. One row/column corresponds to 160 px. Any dimension larger than 1x1 gets an extra 10 px that represent the gutter between widgets. For example, a 3x2 widget is `160*3+10*2` wide and `160*2+10*1` tall. The maximum supported size is `4x4`.  |  
 | supportedScopes | Currently, only team dashboards are supported. The value has to be `project_team`. Future updates might include more options for dashboard scopes. |  
-
 
 #### Files
 
@@ -360,7 +358,6 @@ Copy the file `hello-world.html` from the previous example, and rename the copy 
 |--- hello-world2.html              // renamed copy of hello-world.html
 |--- vss-extension.json             // extension's manifest
 
-
 To hold the query information, add a new `div` element under the `h2`.
 Update the name of the widget from `HelloWorldWidget` to `HelloWorldWidget2` in the line where you call `VSS.register`.
 This action allows the framework to uniquely identify the widget within the extension.
@@ -400,7 +397,6 @@ This action allows the framework to uniquely identify the widget within the exte
     </body>
 </html>
 ```
-
 
 ### Step 2: Access Azure DevOps resources
 
@@ -773,7 +769,6 @@ Revised: Ensure that the framework is notified of the configuration change at le
 
 At the end, your `configuration.html` looks like the following example:
 
-
 ```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -861,7 +856,6 @@ return {
 }
 ```
 
-
 The hard-coded query path in `getQueryInfo` should be replaced with the configured query path, which can be extracted from the parameter `widgetSettings` that is passed to the method.
 Add the following code in the very beginning of the `getQueryInfo` method and replace the hard-coded query path with `settings.queryPath`.
 
@@ -948,7 +942,6 @@ Update the array in the `files` property to include the two new HTML files we ad
 }
 ```
 
-
 The contribution for widget configuration follows a slightly different model than the widget itself.
 A contribution entry for widget configuration has:
 
@@ -985,7 +978,6 @@ Either opens the configuration experience on the right side, and a preview of yo
 Go ahead and choose a query from the dropdown.
 The live preview shows the updated results.
 Select **Save** and your widget displays the updated results.
-
 
 ### Step 8: Configure more (optional)
 You can add as many HTML form elements as you need in the `configuration.html` for more configuration.

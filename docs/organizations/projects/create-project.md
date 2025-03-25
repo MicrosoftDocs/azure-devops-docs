@@ -8,10 +8,9 @@ ms.subservice: azure-devops-projects
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 03/11/2025
 ---
-
 
 # Create a project in Azure DevOps
 
@@ -217,25 +216,6 @@ View a list of projects from your web browser.
 
 ::: moniker-end
  
-::: moniker range=" azure-devops-2019"
-
-1. To view the projects defined for a collection, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
-
-2. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the upper screen. Choose any project to connect to that project.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of projects list.](media/create-project/list-projects-2019.png)  
-
-Or
-
-- Select **Admin settings** and then choose **Projects** to list all projects.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of selected Admin settings and Projects.](media/create-project/list-projects-admin-settings-2019.png)  
-
-	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
-
-::: moniker-end
 
 #### [Team Explorer](#tab/team-explorer)
 
@@ -298,7 +278,6 @@ aba0ed07-3174-4793-9f2c-d2c5fa6b44d7  MyPublicProject     Public
 
 ```
 
-
 <a id="show-project"></a>
 
 ### Show project information in the web portal
@@ -335,7 +314,6 @@ ID                                    Name            Visibility    Process     
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
-
 
 ## Add a repository to your project
 

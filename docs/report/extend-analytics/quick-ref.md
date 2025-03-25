@@ -7,7 +7,7 @@ ms.reviewer: desalg
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 08/12/2022
 ---
 
@@ -27,7 +27,6 @@ If you're new to Analytics, we recommend that you review the following articles.
 - [Supported tools to use with Analytics](../analytics/analytics-query-tools.md)
 - [Summary of best practices to use when querying Analytics](../analytics/analytics-best-practices.md)  
 - [Permissions and prerequisites for working with Analytics](../analytics/analytics-permissions-prerequisites.md) 
-
 
 [!INCLUDE [temp](../../includes/version-selector.md)]
 
@@ -79,7 +78,6 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Test duration](../powerbi/sample-test-analytics-test-duration.md)  
       - [Test duration trend](../powerbi/sample-test-analyics-test-duration-trend.md)  
       - [Pass rate trend of a test](../powerbi/sample-test-analytics-pass-rate-trend-test.md)  
-
 
 ## Azure Test Plans sample widgets and reports 
 
@@ -160,7 +158,6 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
    :::column-end:::
 :::row-end:::
 
-
 ## Tasks
 
 :::row:::
@@ -214,7 +211,6 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
    :::column-end:::
 :::row-end:::
 
-
 ## Metadata reference
 
 ::: moniker range=">= azure-devops-2020"
@@ -223,14 +219,6 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 - [Azure Boards](../analytics/entity-reference-boards.md) 
 - [Azure Pipelines](../analytics/entity-reference-pipelines.md) 
 - [Test Plans](../analytics/entity-reference-test-plans.md) 
-::: moniker-end
-
-
-::: moniker range="azure-devops-2019"
-
-- [Calendar date, Project, and User](../analytics/entity-reference-general.md) 
-- [Azure Boards](../analytics/entity-reference-boards.md) 
-
 ::: moniker-end
 
 ## Data model reference and troubleshooting
@@ -246,11 +234,9 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 - [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)
 - [OData for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata)  
 
-
 ## Related articles
 
 - [Power BI](../powerbi/overview.md)  
 - [Dashboards, charts, reports, & widgets](../dashboards/overview.md)  
 - [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
-
 

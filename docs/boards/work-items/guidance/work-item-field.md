@@ -24,7 +24,7 @@ To support other tracking needs, [define your own custom work item fields](../..
 
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2019 < azure-devops"  
+::: moniker range="<azure-devops"
 
 To support other tracking needs, define your own custom work item fields using the Inheritance process model. If your project collection uses the On-premises XML process model, see [Modify or add a custom field](../../../reference/add-modify-field.md).
 ::: moniker-end  

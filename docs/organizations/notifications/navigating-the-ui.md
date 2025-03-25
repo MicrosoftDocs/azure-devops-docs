@@ -51,12 +51,8 @@ Open your :::image type="icon" source="../../media/icons/user-settings-gear.png"
 ::: moniker range="< azure-devops"
 Open your profile menu and choose **Notification settings**. 
 ::: moniker-end
-::: moniker range="> azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 :::image type="content" source="media/personal/open-profile-menu-notifications-2020.png" alt-text="Select your profile menu, and Notification settings":::
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-:::image type="content" source="media/personal/user-notifications.png" alt-text="View personal notifications page":::
 ::: moniker-end
 
 For more information, see [Manage your notifications](manage-your-personal-notifications.md)

@@ -32,7 +32,6 @@ Work items can live forever in your work tracking data store. You never have to 
 
 To move a work item from one project to another, or to change the work item type, see [Move work items and change work item type](move-change-type.md).
 
-
 ## Prerequisites
 
 | Category | Requirements |
@@ -115,7 +114,7 @@ By changing the **State** of a work item to *Removed*, you effectively remove it
 
 To cause removed items to not show up in queries, you must add a clause that filters on the **State** field.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!NOTE]  
 > The *Removed* state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available when you add a project to Azure DevOps Services or [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609).  
@@ -128,7 +127,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 ### Delete work items
 
 Deleted work items don't appear in your backlogs, boards, or queries. When you delete an item, it goes to the **Recycle Bin**. You can restore it from there if you change your mind. To delete a test case, test plan, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can delete work items in one of the following ways:
 
@@ -164,7 +163,7 @@ You can delete work items in one of the following ways:
 
 You can't open work items from the **Recycle Bin**. You only see the **Permanently delete option** if your [Permanently delete work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) project-level permission is set to **Allow**.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Restore deleted work items or permanently delete them from the web portal **Recycle Bin**.
 

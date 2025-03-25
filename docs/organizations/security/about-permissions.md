@@ -254,7 +254,7 @@ When you add accounts of users directly to a security group, they automatically 
 - **Project Collection Valid Users:** All members added to an organization-level group.
 - **Project Valid Users:** All members added to a project-level group.
 ::: moniker-end
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 - *Server*\\Azure DevOps Valid Users: All members added to server-level groups.
 - *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
 - *ProjectName*\\Project Valid Users: All members added to project-level groups.

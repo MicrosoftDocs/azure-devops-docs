@@ -14,9 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 > [!IMPORTANT]
 > Starting with Azure DevOps Server 2019, you don't have to pay for self-hosted concurrent jobs in releases. You're only limited by the number of agents that you have.
@@ -58,7 +56,6 @@ For **private projects**, you can get one free job that can run for up to 60 min
 
 To request the free grant for public or private projects, submit [a request](https://aka.ms/azpipelines-parallelism-request).
 
-
 > [!NOTE] 
 > It can take several business days to process your free tier request. During certain time periods, processing times might be longer.
 
@@ -88,12 +85,10 @@ For self-hosted parallel jobs, you can register any number of [self-hosted agent
 
 For public projects that are self-hosted, you can have unlimited parallel jobs running. For private projects, you can have one job plus one job for each active Visual Studio Enterprise subscriber who is a member of your organization. 
 
-
 |           |  Number of parallel jobs |  Time limit |
 |:----------|--------------------------| ------------|
 | **Public project** | Unlimited | None|
 | **Private project** | One self-hosted job plus one parallel job for each active Visual Studio Enterprise subscriber who is a member of your organization.  |   None |
-
 
 When the free tier is no longer sufficient for your self-hosted private project, you can purchase more capacity per parallel job. For pricing cost per parallel job, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
@@ -102,7 +97,6 @@ When the free tier is no longer sufficient for your self-hosted private project,
 ---
 
 ::: moniker-end
-
 
 ::: moniker range="azure-devops"
 
@@ -205,10 +199,9 @@ When you run a [server job](../process/phases.md#server-jobs) or deploy to a [de
 1. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release that's waiting for approvals doesn't consume a parallel job.
 1. Release 11 is approved. It resumes only after Fabrikam CI Build 101 is completed.
 
-
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019 || =azure-devops"
+::: moniker range="=azure-devops"
 
 ## FAQ
 
@@ -233,7 +226,6 @@ Currently, there isn't a way to partition or dedicate parallel job capacity to a
 * You start two runs in the first project, and both the parallel jobs are consumed.
 * You start a run in the second project. That run doesn't start until one of the runs in your first project is completed.
 
-
 ### Are there limits on who can use Azure Pipelines?
 
 You can have as many users as you want when you're using Azure Pipelines. There's no per-user charge for using Azure Pipelines. Users with both [basic and stakeholder access](../../organizations/security/access-levels.md) can author as many builds and releases as they want.
@@ -256,9 +248,6 @@ Your organization gets at least one free self-hosted parallel job, so you can re
 For each additional XAML build controller, you need an additional self-hosted parallel job.
 
 ::: moniker-end
-
-
-
 
 ## Related articles
 - [Set up billing](../../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing)

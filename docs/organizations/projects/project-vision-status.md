@@ -7,7 +7,7 @@ ms.subservice: azure-devops-projects
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/11/2024
 ---
 

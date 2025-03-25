@@ -68,14 +68,3 @@ Each default workflow for each WIT defines between two and four states and speci
 
 ::: moniker-end
 
-::: moniker range=" < azure-devops-2020"
-
-- Hide inherited states if you don't want them visible (you can't change their name, color, or category).
-- Ensure only one state exists in the *Completed* state category; the system disallows adding any custom state to this category.
-- Keep the name of custom states as is; you can't change them.
-- Accept the natural sequence of states in the dropdown list on the work item form; you can't change their order.
-- Use default reasons for state transitions, such as *Moved to state Triaged* and *Moved out of state Triaged*; you can't specify custom reasons.
-- Accept the default location of the State and Reason fields on the form; you can't change their placement.
-- Allow transitions from any state to another; you can't restrict transitions.  
-
-::: moniker-end

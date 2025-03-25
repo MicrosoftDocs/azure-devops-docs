@@ -13,7 +13,6 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 > [!NOTE]   
 > Even if Stakeholders are explicitly granted permissions to some features, they are disallowed access to the feature due to their access level. Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have permissions to complete the task.
 
-
 ::: moniker range="azure-devops"
 
 #### For Private projects:
@@ -34,7 +33,6 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 ::: moniker-end
 
-
 ::: moniker range="azure-devops-2020"
 
 - Change the priority of an item within a backlog or board 
@@ -47,22 +45,4 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Access the full set of features under **Pipelines**, **Repos**, or **Test Plans**.     
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-- Drag-and-drop work items from one column to another on a board or Taskboard to change the work item state
-- Change the priority of an item within a backlog or board 
-- Delete work items or move work items to another project 
-- Change fields on cards on a board or Taskboard 
-- Drag-and-drop work items from a Backlog to the Mapping pane (parent a work item) or Planning pane (to assign to a sprint)   
-- Add new work item tags  
-- Create shared queries, view query charts, and modify the home page  
-- View Delivery Plans  (a Marketplace extension)         
-- Access the full set of features under **Pipelines**, **Repos**, or **Test Plans**.   
-
-::: moniker-end
-
-
-
-
 

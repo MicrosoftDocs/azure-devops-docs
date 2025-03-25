@@ -77,18 +77,6 @@ Azure Artifacts enables developers to publish and download NuGet packages from v
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps server, and then navigate to your project.
-
-1. Select **Artifacts**, and then select your feed.
-
-1. Select **Connect to Feed**, and then select **NuGet** from the left navigation pane.
-
-1. Follow the provided instructions to add your package source URL to your *nuget.config* file.
-
-::: moniker-end
-
 > [!IMPORTANT]
 > The [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider) requires NuGet `4.8.0.5385` or higher.
 > 

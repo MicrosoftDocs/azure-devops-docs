@@ -6,7 +6,7 @@ ms.author: moala
 ms.custom: engagement-fy23
 author: raiyanalam
 ms.date: 02/28/2025
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Deploy pull request Artifacts with classic release pipelines

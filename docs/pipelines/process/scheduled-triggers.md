@@ -25,7 +25,7 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=">azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!IMPORTANT]
 > Scheduled triggers defined using the pipeline settings UI take precedence over YAML scheduled triggers.
@@ -43,7 +43,7 @@ Scheduled triggers configure a pipeline to run on a schedule defined using [cron
 
 ::: moniker-end
 
-::: moniker range=">azure-devops-2019 < azure-devops-2022"
+::: moniker range="<azure-devops-2022"
 
 ```yaml
 schedules:
@@ -73,7 +73,7 @@ schedules:
 
 ::: moniker-end
 
-::: moniker range=">azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Scheduled pipelines in YAML have the following constraints.
 
@@ -203,29 +203,17 @@ For more examples, see [schedules.cron examples](/azure/devops/pipelines/yaml-sc
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-Scheduled builds aren't supported in YAML syntax in Azure DevOps Server 2019.
-After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
-
-::: moniker-end
-
-
-
 #### [Classic](#tab/classic/)
 
 Select the days and times when you want to run the build using the classic editor.
 
 If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
 ::: moniker-end
-
-
 
 * * *
 
@@ -233,7 +221,7 @@ If your repository is Azure Repos Git, GitHub, or Other Git, then you can also s
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=">azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 The following example defines two schedules: 
 
@@ -266,20 +254,11 @@ For more examples, see [Migrating from the classic editor](#migrating-from-the-c
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-Scheduled builds aren't supported in YAML syntax in Azure DevOps Server 2019.
-After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
-
-::: moniker-end
-
-
-
 #### [Classic](#tab/classic/)
 
 #### Example: Nightly build of Git repo in multiple time zones
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 In this example, the classic editor scheduled trigger has two entries, which produce the following builds.
 
@@ -293,12 +272,9 @@ In this example, the classic editor scheduled trigger has two entries, which pro
 
 ::: moniker-end
 
-
-
-
 #### Example: Nightly build with different frequencies
 
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 **Azure Pipelines and Azure DevOps 2019 Server**
 
@@ -314,16 +290,13 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker-end
 
-
-
-
 * * *
 
 ## Cron syntax
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=">azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Each Azure Pipelines scheduled trigger cron expression is a space-delimited expression with five entries in the following order. The expression is enclosed in single quotes `'`.
 
@@ -398,15 +371,6 @@ Build a UTC cron expression for Monday through Friday at 12:30 AM Central Europe
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-Scheduled builds aren't supported in YAML syntax in Azure DevOps Server 2019.
-After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
-
-::: moniker-end
-
-
-
 #### [Classic](#tab/classic/)
 
 Classic schedules are defined using a graphical editor instead of cron syntax. For information on defining classic schedules, see [Examples](#examples).
@@ -417,7 +381,7 @@ Classic schedules are defined using a graphical editor instead of cron syntax. F
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=">azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline.
 
@@ -448,15 +412,6 @@ The **Scheduled runs** windows displays the times converted to the local time zo
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-Scheduled builds aren't supported in YAML syntax in Azure DevOps Server 2019.
-After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
-
-::: moniker-end
-
-
-
 #### [Classic](#tab/classic/)
 ::: moniker range=">= azure-devops-2020"
 
@@ -470,27 +425,10 @@ After you create or update your scheduled triggers, you can verify them using th
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-
-Classic scheduled pipelines don't have a **Scheduled runs** view, but you can view the schedule for a pipeline in the classic schedule editor for your pipeline.
-
-::: moniker-end
-
-::: moniker range="= azure-devops-2019"
-
-![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
-
-::: moniker-end
-
-
-
-
 * * *
 
 <a name="always"></a>
 ## Running even when there are no code changes
-
-
 
 ::: moniker range="<=azure-devops"
 
@@ -500,7 +438,7 @@ By default, your pipeline doesn't run as scheduled if there have been no code ch
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=">azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
 
@@ -513,20 +451,7 @@ schedules:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-Scheduled builds aren't supported in YAML syntax in this version of Azure DevOps Server.
-After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
-
-::: moniker-end
-
-
-
 #### [Classic](#tab/classic/)
-
-
-
-
 
 ::: moniker range="<=azure-devops"
 
@@ -545,7 +470,7 @@ There are certain limits on how often you can schedule a pipeline to run. These 
 - around 1000 runs per pipeline per week
 - 10 runs per pipeline per 15 minutes
 
-::: moniker range=">azure-devops-2019"
+::: moniker range="<=azure-devops"
 ## Migrating from the classic editor
 
 The following examples show you how to migrate your schedules from the classic editor to YAML.

@@ -34,7 +34,7 @@ You can list PRs by using the Azure DevOps project website, Visual Studio, or th
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. To list PRs in a specific repository in a project, [go to that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
 
@@ -57,7 +57,6 @@ You can list PRs by using the Azure DevOps project website, Visual Studio, or th
 ::: moniker-end
 
  
-
 
  
 
@@ -125,7 +124,6 @@ az repos pr list [--creator]
 
 The following command lists all PRs in the repository, regardless of status, and shows the output in a table. The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
-
 ```azurecli
 az repos pr list --status all --output table
 
@@ -158,7 +156,7 @@ Filtering the PR list helps you find and organize PRs to prioritize the most imp
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 To filter the PR list, on the **Pull requests** page, select the **Filter** icon at upper right. Then select **Target branch** or other column header, and select the branch or other value you want to filter on.
 
@@ -228,7 +226,6 @@ az repos pr list --creator "My Name" --status all --top 1
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-
 ***
 
 <a id="open-pr"></a>
@@ -257,9 +254,7 @@ In Visual Studio 2019, you can check out a PR's source branch directly from the 
 
 ![Screenshot that shows Checkout source branch.](./media/view-pull-requests/checkout-pr-source-branch.png)
 
-
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -330,9 +325,6 @@ az repos pr checkout --id 21
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
-
-
-
 
 To review changes, make comments or suggestions, or approve or vote on the PR, see [Review pull requests](review-pull-requests.md).
 

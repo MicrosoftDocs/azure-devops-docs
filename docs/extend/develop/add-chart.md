@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 12/31/2019
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Add a chart

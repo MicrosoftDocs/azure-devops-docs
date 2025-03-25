@@ -5,7 +5,7 @@ ms.custom: pipelinesresourcesrefresh
 ms.reviewer: vijayma
 ms.date: 09/15/2022
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Protect a repository resource

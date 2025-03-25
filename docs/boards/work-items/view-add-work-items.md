@@ -11,7 +11,7 @@ ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 10/02/2024
 ---
 
@@ -64,13 +64,6 @@ If you don't see the **Work Items** option, you're not connected to a project. F
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Connect to a Project dialog, connect to a Project and Git repository.](media/view-add/connect-to-a-project-and-github.png)
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]   
-> The new **Work Items** experience is available when you connect to a Azure Repos Git repository. If you connect to a TFVC repository, you'll continue to see the legacy query-focused experience.  
-
-::: moniker-end
-
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
 There's no [**az boards**](/cli/azure//boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services only.
@@ -92,8 +85,6 @@ You can also view work items usings the Azure DevOps CLI.
 
 ::: moniker-end
 
-
-
 # [Web portal](#tab/browser)
 
 Use the drop-down menu to focus on relevant items within a project using one of seven pivots. Additionally, [filter](#filter-to-create-personal-views) each pivot view.  
@@ -103,9 +94,7 @@ Use the drop-down menu to focus on relevant items within a project using one of 
       ::: moniker range=">= azure-devops-2020"
       ![Screenshot of web portal, Boards, Work Items, Menu options.](media/view-add/view-menu-cloud-version.png)  
       ::: moniker-end
-      ::: moniker range="< azure-devops-2020"
-      ![Screenshot of web portal, Boards, Work Items, Menu options, Azure DevOps Server 2019 version.](media/view-add/view-menu.png)  
-      ::: moniker-end
+      
    :::column-end:::
    :::column span="2":::
       ::: moniker range=">= azure-devops-2022" 
@@ -122,12 +111,7 @@ Use the drop-down menu to focus on relevant items within a project using one of 
       - **My activity**: Lists work items that you recently viewed or updated.  
       - **My team(s)**: Lists work items that your team members recently viewed or updated.  
       ::: moniker-end
-      ::: moniker range="< azure-devops-2020" 
-      - **Assigned to me**: Lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, select its title.  
-      - **Following**: Lists work items that you&#39;re [following](follow-work-items.md).  
-      - **Mentioned**: Lists work items in which you're mentioned in the last 30 days.  
-      - **My activity**: Lists work items that you recently viewed or updated.   
-      ::: moniker-end
+      
       ---
       - **Recently updated**: Lists work items recently updated in the project.  
       - **Recently completed**: Lists work items completed or closed in the project.  
@@ -152,7 +136,6 @@ To view a work item, double-select the title or open the context menu (right-sel
       - **Relate to changes**: Links the work item to the current commit of recent changes.  
    :::column-end:::
 :::row-end:::
-
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -189,7 +172,6 @@ ID    Type    Title      Assigned To          State
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ---
-
 
 ## Filter to create personal views
 

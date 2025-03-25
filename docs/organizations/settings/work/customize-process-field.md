@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: how-to
 ms.date: 01/11/2022
 ---
@@ -32,11 +32,9 @@ Once you've added a custom field, you can create [queries](../../../boards/queri
  
 [!INCLUDE [temp](../includes/automatic-update-project.md)] 
 
-
 <a id="open-process-wit">  </a>
 <a id="add-field">  </a>
 <a id="add-custom-field">  </a>
-
 
 ## Custom field names
 
@@ -96,12 +94,10 @@ You can add fields and specify the group and page where they should appear. Also
  	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Customer Ticket field added to Customer focus group](media/process/cpfield-bug-form-customized-customer-ticket.png) 
 
-
 <a id="pick-list">  </a>
 <a id="edit-picklist-inherited"></a>
 
 ### Add a picklist  
-
 
 [Work tracking, process, and project limits](object-limits.md)
 
@@ -138,7 +134,6 @@ You can add a new field and define a pick list or customize the pick list of an 
 2. Add the items in the order you want them to appear in the list.
 	![Add a custom picklist](media/process/customize-field-reorder-list.png)
 -->
-
 
 <a id="identity">  </a>
 
@@ -201,7 +196,6 @@ Here we add the Customer Ticket field to the User Story WIT.
 
 Optionally, specify the [Required/Default values](#options) and [placement within the form](#layout) for the field.  
 
-
 <a id="rename-field">  </a>
 
 ## Relabel a field   
@@ -211,7 +205,6 @@ Renaming a field or changing the field type aren't supported actions. However, f
 Here, we relabel the Customer Ticket field to Ticket Number.   
  
 ![Layout tab, Relabel a field](media/process/cpfield-relabel-customer-ticket.png) 
-
 
 <a id="modify-description"></a>
 
@@ -223,16 +216,9 @@ Description help text displays when users hover over a field in the work item fo
 - **For inherited fields**: Description help text can be defined differently for each work item type and process.   
 - **For custom fields**: Description help text appears the same for the field across all work item types and all processes. 
 
-
 ::: moniker-end
 
 [!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
-
-::: moniker range="azure-devops-2019"
-
-Description help text displays when users hover over a field in the work item form. You can only modify the description help text on a custom field. That help text propagates to all work item types and all processes. You can't customize the help text by process or work item type.
-
-::: moniker-end
 
 To modify the **Description** help text, choose the work item type you want to modify, choose **Edit** for the field and choose the **Definition** tab. The modified value only affects that field in the process and for that work item type. 
 
@@ -245,18 +231,6 @@ Here we modify the Story Points field for User Story.
 
 ::: moniker-end
 
-
-::: moniker range="azure-devops-2019"
-
-Here we modify the custom Published field for User Story. 
-
-> [!div class="mx-imgBorder"]  
-> ![Edit field dialog, User Story, Published custom field.](media/custom-field/edit-field-dialog-definition-description-help-text-custom-field.png)
-
-
-::: moniker-end
-
-
 <a id="show-hide-remove-field">  </a>
 
 ## Show, hide, or remove a field   
@@ -267,29 +241,19 @@ You can choose to show or hide any field or custom control from appearing on a f
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-You can choose to show or hide an inherited field or a custom control from appearing on a form. For custom fields, you can remove it from the form. If you want to reinstate it by choosing **Show on layout**. These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
-
-::: moniker-end
-
 > [!NOTE]      
 > Data defined for an inherited field, even if you hide it, is maintained in the data store and work item history. You can view a record of it by viewing the history tab for a work item. 
 >
 > When you remove a custom field from the layout, it is maintained in the data store but stripped from the history. You can view it from the query results. If you add the field back to the form, then the history for it is restored.To delete a custom field from a project collection, see [Delete a field](#delete-field).
   
 
-
 <a id="show-hide-field">  </a>
-
 
 ::: moniker range=">= azure-devops-2020"
 ### Hide a field or custom control
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019"
-### Hide an inherited field or custom control
-::: moniker-end 
+ 
 
 1. Open the context menu for the field or control and choose **Hide from layout**.
 
@@ -311,7 +275,6 @@ You can choose to show or hide an inherited field or a custom control from appea
 
 1. To add a custom field that's been removed, choose **New field** and select **Use an existing field**.  
 
-
 <a id="revert">  </a>
 
 ## Revert field to preset defaults 
@@ -320,7 +283,6 @@ You may discard changes you made to an inherited field. From the **Layout** page
 
 > [!div class="mx-imgBorder"]  
 > ![Layout page, Field context menu, choose Revert option](media/process/cpfield-revert.png)
-
 
 <a id="delete-field">  </a>
 
@@ -337,7 +299,6 @@ Deleting a field deletes all data associated with that field, including historic
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/WorkItemTypeFields?$filter=FieldReferenceName eq {CustomFieldReferenceName}&$select=WorkItemType
 > ``` 
-
 
 1. You delete the field from the **All processes>Fields** page.  
 
@@ -362,12 +323,10 @@ Deleting a field deletes all data associated with that field, including historic
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)  
 - [Work tracking, process, and project limits](object-limits.md)
 
-
 If you're working with test plans or test cases, see these articles: 
 
 - [Create a test plan](../../../test/create-a-test-plan.md)  
 - [Create manual test cases](../../../test/create-test-cases.md)   
-
 
 <!--- 
 Commenting this out as it is in the process of changing 

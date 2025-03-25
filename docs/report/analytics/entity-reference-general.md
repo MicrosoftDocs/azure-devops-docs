@@ -6,10 +6,9 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/07/2022
 ---
-
 
 # Calendar date, Project, and User metadata reference for Azure DevOps Analytics
 
@@ -17,21 +16,17 @@ ms.date: 11/07/2022
 
 The entity types and entity sets listed in the following table can be used to filter and build reports based on Analytics data. 
 
-
 |EntitySet|  EntityType | Description |  
 |----------------------|-------------|-------------|  
 | [**Dates**](#dates) |**CalendarDate** | The dates used to filter and group other entities using relationships.  |  
 |[**Projects**](#projects)|  **Project** |Projects defined for an organization (cloud) or project collection (on-premises). |  
 |[**Users**](#users)|  **User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. |  
 
-
 [!INCLUDE [note-analytics-early-draft](../includes/note-analytics-data-model.md)]
-
 
 ## Dates 
 
 The following properties are valid for the **CalendarDate** entity type. The surrogate key associated with **CalendarDate** is `DateSK`. You can specify calendar date properties to filter and structure reports.  
-
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
@@ -67,7 +62,6 @@ When you aggregate data for a snapshot entity, you should include the `DateSK` o
 
 The following members are defined for the `Period` enumerated type that you can use with other filter expressions to remove days that don't finish a given week or month.  Reference one of these members to specify a weekly or monthly period for trend queries that span a long time period. The `Period` enumerated type has a single attribute, `IsFlags`, which is set to `True`.  
 
-
 | Member name            | Value        | Display name          |  
 |------------------------|--------------|-----------------------|  
 |`None`                  | 0            | None                  |  
@@ -83,7 +77,6 @@ The following members are defined for the `Period` enumerated type that you can 
 |`Quarter           `    | 512          | Quarter                  |     
 |`Year`                  | 1024         | Year                    |      
 |`All`                   | 2047         | All                     |      
-
 
 ## Projects
 
@@ -114,7 +107,6 @@ The following members are defined for the `ProjectVisibility` enumerated type.  
 |`Organization`        | 1            | Organization           |   
 |`Public`              | 2            | Public                 |     
 
-
 ## Users
 
 The following properties are valid for the **Users** entity set and **User** entity type with surrogate key `UserSK`.
@@ -128,7 +120,6 @@ The following properties are valid for the **Users** entity set and **User** ent
 |**GitHub User Id** | `GitHubUserId` | String | GitHub user ID associated with the user account.    | 
 |**User Type** | `UserType` | Custom | The type of user. Valid values are listed below for [UserType](#usertype-enumerated-type-members). | 
 
-
 ### UserType enumerated type members 
 
 The following members are defined for the `UserType` enumerated type.  
@@ -140,7 +131,6 @@ The following members are defined for the `UserType` enumerated type.
 |`User`                | 2            | User                   |     
 |`Organization`        | 3            | Organization           |     
 |`Bot`                 | 4            | Bot                    |  
-
 
 ## Related articles
 

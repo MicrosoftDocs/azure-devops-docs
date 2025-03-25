@@ -7,7 +7,7 @@ ms.custom: analytics-views, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 03/12/2025
 #customer intent: As a team member using Azure Boards, I want to understand how to visualize work items from Azure DevOps by using Power BI.
 ---
@@ -60,7 +60,7 @@ When you use the Power BI Data Connector, these same default views appear in the
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Select **Azure DevOps Server** as your data connector.
 

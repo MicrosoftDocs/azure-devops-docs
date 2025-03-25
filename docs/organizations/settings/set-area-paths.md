@@ -93,7 +93,6 @@ az boards area project list [--depth]
 - **path**: Optional. Absolute path of an area. `\Area\` must follow after the `\ProjectName`, which distinguishes this path from an iteration path. For example, `--path \ProjectName\Area\AreaName`. If spaces are used within a node, then enclose in double-quotes, for example, `--path "\Fabrikam Fiber\Area\Service Delivery\Performance"`. When not specified, lists area paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`. 
 
-
 #### Example
 
 For example, the following command lists the area paths to a depth of 3 for the Fabrikam Fiber project. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
@@ -328,30 +327,7 @@ You can select existing area paths or create new or child area paths from the te
 
 ::: moniker-end  
 
-::: moniker range=" azure-devops-2019"  
-
-1. Open **Areas** for the team context.  
-
-   Here, we show the Areas for the Fabrikam Fiber team.  
-
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot shows Area page for team, on-premises versions.](media/team-defaults/open-areas-fabrikam-team.png)
-
-1. Choose one or more area paths to be active for each team.  
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot shows Work, Iterations page for team, on-premises versions.](media/team-defaults/stdefaults-add-area-paths.png)  
-
-    In this instance, we choose to activate all three subarea paths for the project. The management team can now track progress across all three teams.  
-
-    ![Screenshot shows multiple area paths assigned to team, on-premises versions.](media/team-defaults/stdefaults-set-team-area-paths-management-team-team-services-list.png)  
-
-1. When you finish, refresh the product backlog page for the team, and you see those work items assigned to the team. Add area path to the columns shown to see the assignments made to work items.  
-
-   > [!div class="mx-imgBorder"]  
-   > ![Screenshot shows backlog view of default team, on-premises versions.](media/add-team/product-backlog-default-team-horz.png)  
-
-::: moniker-end  
+  
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -464,7 +440,6 @@ az boards area team remove --path
 - **team**: Required. Name or ID of the team.
 - **project**: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`. 
 
-
 #### Example
 
 For example, the following command removes the \Service Delivery\Voice area path from the Voice team of the Fabrikam Fiber project. 
@@ -515,7 +490,6 @@ As you can see, area paths play a major role in supporting Agile tools, teams, a
 - [Use Agile tools that rely on areas or iterations](about-teams-and-settings.md)
 - [Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)
 - [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
-
 
 ### Programmatic resources
 

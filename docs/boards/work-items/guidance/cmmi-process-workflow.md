@@ -12,9 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 01/04/2023
 ---
 
-
 # CMMI process work item types and workflow in Azure Boards
-
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
@@ -35,21 +33,15 @@ Create requirements from the quick add panel on the [product backlog page](../..
 
 :::image type="content" source="../media/about-work-items/work-item-form-requirement.png" alt-text="Screenshot of Requirement work item form.":::
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 Or, you can bulk add requirements using a [cvs file](../../queries/import-work-items-from-csv.md). 
 ::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-Or, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).
-::: moniker-end
-
 
 [!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 Requirements specify the functions and product elements that teams need to create. Product owners typically define and stack rank requirements on the product backlog page. The team then scopes the size of the effort to deliver the highest priority items.
 
 Use the following guidance and that provided for [fields used in common across work item types](#definitions-in-common) when filling out the form. For more information, see [Plan a project](cmmi/guidance-plan-a-project-cmmi.md).
-
 
   :::row:::
    :::column span="1":::
@@ -311,7 +303,6 @@ Using portfolio backlogs, you can [drill down from one backlog to another](../..
 
 The feature work item contains similar fields provided for requirements and includes other fields, as the following table describes.
 
-
 ## Define tasks
 
 When your team manages their work in sprints, they can use the [sprint backlog page](../../sprints/assign-work-sprint.md) to break down the work to be accomplished into distinct tasks.  
@@ -410,7 +401,6 @@ When teams estimate work, they define tasks and estimate the hours or days to co
    :::column-end:::
 :::row-end:::
 
-
 ## Track test progress 
 
 ### Test requirements
@@ -429,7 +419,6 @@ The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" bor
 
 You can [create bugs from the web portal web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
 
-
 ## Track change requests, risks, issues, and notes captured in review meetings
 
 Along with the requirement, feature, task, and bug WITs, you can track information recommended by the CMMI process with the following WITS.
@@ -445,7 +434,6 @@ You can add an issue from the  [New work item widget](../../../report/dashboards
 
 Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json).  
 
-
 [!INCLUDE [temp](../../includes/common-work-item-fields.md)]   
 
 ## Customize work item types
@@ -455,7 +443,6 @@ Work items you add from the widget are automatically scoped to your team's defau
 ## Related articles 
 
 [!INCLUDE [temp](../../includes/create-team-project-links.md)]  
-
 
 ### Backlog list order
 

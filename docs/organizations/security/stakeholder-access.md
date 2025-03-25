@@ -7,7 +7,7 @@ toc: show
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 04/12/2024
 --- 
 
@@ -39,7 +39,6 @@ In general, use the following guidance when assigning **Stakeholder** access use
 ## Public versus private feature access
 
 Users with **Stakeholder** access privileges can access features based on whether the project is private or public. For private projects, Stakeholders have limited access to specific work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../projects/about-projects.md).  
-
 
 > [!div class="mx-tdBreakAll"]  
 > | Service, application, or setting | Private project | Public project|
@@ -137,26 +136,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="< azure-devops-2020" 
-:::row:::
-   :::column span="1":::
-      **Boards** 
-   :::column-end:::
-   :::column span="2":::
-      - View boards, open and edit work items
-      - Add work items to a board; update status through drag-and-drop
-      - Add child items to a checklist
-      - Assign to a sprint (from card field)
-      - Configure team boards<sup>2</sup> 
-   :::column-end:::
-   :::column span="2":::
-      - Add work items to a board
-      - Update status through drag-and-drop
-      - Change the priority of an item within a board
-      - Change fields on cards on a board, except for State field
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 :::row:::
    :::column span="1":::
       **Backlogs** 
@@ -252,7 +232,6 @@ The following table summarizes the features **Stakeholder** access users have to
 > Public project **Stakeholder** access users have full access to all dashboard and Wiki features. 
 ::: moniker-end
 
-
 :::row:::
    :::column span="1":::
       **Feature area** 
@@ -278,19 +257,7 @@ The following table summarizes the features **Stakeholder** access users have to
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="< azure-devops-2020" 
-:::row:::
-   :::column span="1":::
-      Dashboards
-   :::column-end:::
-   :::column span="2":::
-      - View dashboards   
-   :::column-end:::
-   :::column span="2":::
-      - Add and configure team dashboards  	 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 :::row:::
    :::column span="1":::
       Notifications

@@ -17,7 +17,7 @@ ms.date: 01/13/2025
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 |Category  | Requirements |
 |-------------|-------------|

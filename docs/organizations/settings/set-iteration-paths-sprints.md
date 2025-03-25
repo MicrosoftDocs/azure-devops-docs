@@ -80,17 +80,6 @@ To list project iterations, do the following steps:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your project `https://dev.azure.com/{Your_Organization/Your_Project}`. 
-
-2. Select **Project settings**(1) > **Project configuration**(2) > **Iterations**(3).   
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Project Settings, Project Configuration for Azure DevOps Server 2019.](media/iterations/open-work-project-config-iterations-vert.png)   
-
-::: moniker-end
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"
@@ -111,7 +100,6 @@ az boards iteration project list [--depth]
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3.
 - **path**: Optional. Absolute path of an iteration. `\Iteration\` must follow after the `\ProjectName`, which distinguishes it from an area path. Example: --path \ProjectName\Iteration\IterationName. If spaces are used within a node, then enclose in double-quotes, for example,`--path "\Fabrikam Fiber\Iteration\Sprint 1"`. When not specified, lists iteration paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`.  
-
 
 #### Example
 
@@ -169,30 +157,6 @@ ID     Identifier                            Name            Path               
    :::image type="content" source="media/areas/modify-areas-its-iterations-preview.png" alt-text="Screenshot of Iterations page, scheduled set of sprints.":::
 
    Your next step is to [choose the sprints each team uses](#select-team-sprints-and-set-the-default-iteration-path). 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-From **Iterations**,  add iterations that teams can then select for their use.
-
-1. Add and modify area paths from the **Work** > **Iterations** page from the project admin or settings context.   
-
-   For Scrum-based projects, you see the following set of sprints. 
-
-   :::image type="content" source="media/areas/modify-areas-its-iterations-ts.png" alt-text="Screenshot of Project Settings Context, Work, Iterations page.":::
-
-1. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or,  select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.
-	
-   To select new dates, choose the calendar icon. 
-
-   :::image type="content" source="media/iterations/schedule-sprints-calendar.png" alt-text="Screenshot of Work, Iterations page, and calendar icon to choose for new dates for Azure DevOps Server 2019.":::
-
-1. When you finish, you have a set of sprints scheduled - like this: 
-
-   :::image type="content" source="media/areas/modify-areas-its-iterations-ts.png" alt-text="Screenshot of Work, Iterations page, scheduled set of sprints for Azure DevOps Server 2019.":::
-
-   Your next step is to [choose the sprints each team uses](#select-team-sprints-and-set-the-default-iteration-path).
 
 ::: moniker-end
 
@@ -539,7 +503,6 @@ You can use the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/cla
 ::: moniker range="< azure-devops"
  You can use the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) to list the iterations defined in one project. Once you add the iterations to another project, use the [Teams (REST API)](/rest/api/azure/devops/core/teams) to add them to a team and set the default and backlog iteration path for the team. 
 ::: moniker-end
-
 
 ## Archive iteration paths 
 

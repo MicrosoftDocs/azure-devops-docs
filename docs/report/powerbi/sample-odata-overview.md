@@ -7,7 +7,7 @@ ms.custom: powerbisample
 ms.author: chcomley
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/12/2022
 ---
 
@@ -41,12 +41,6 @@ In this article, we provide samples for the most popular reports:
 [!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
 
 --- 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](includes/sample-fulllist.md)] 
-
 ::: moniker-end
 
 All sample report articles provide the following sections and information: 

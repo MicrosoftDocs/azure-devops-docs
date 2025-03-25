@@ -4,7 +4,7 @@ description: Learn how to create reusable YAML pipeline templates to streamline 
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
 ms.date: 02/26/2025
-monikerRange: ">=azure-devops-2019"
+monikerRange: "<=azure-devops"
 zone_pivot_groups: template-type
 ai-usage: ai-assisted
 ---
@@ -36,12 +36,6 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 100 separate YAML files may be included (directly or indirectly)
 - No more than 100 levels of template nesting (templates including other templates)
 - No more than 20 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600 KB - 2 MB of on-disk YAML, depending on the specific features used)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-Use templates to define your logic once and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline. You can pass parameters into a template from your parent pipeline. 
 
 ::: moniker-end
 
@@ -145,8 +139,6 @@ You can copy content from one YAML and reuse it in a different YAML. Copying con
 > [!NOTE]
 > Template files need to exist on your filesystem at the start of a pipeline run. You can't reference templates in an artifact. 
 
-
-
 ```yaml
 # File: templates/include-npm-steps.yml
 
@@ -171,7 +163,6 @@ jobs:
   steps:
   - template: templates/include-npm-steps.yml  # Template reference
 ```
-
 
 #### Reuse steps across multiple jobs
 
@@ -308,7 +299,6 @@ stages:
 - template: templates/stages2.yml # Template reference
 ```
 
-
 #### Add parameters to job, stage, and step templates
 
 In the following templates:
@@ -362,7 +352,6 @@ jobs:
 In the following templates:
 - The `stage-template.yml` template defines four parameters: `stageName`, `jobName`, `vmImage`, and `scriptPath`, all of type string. The template creates a stage using the `stageName` parameter to set the stage name, defines a job with `jobName`, and includes a step to run a script. 
 - The pipeline, `azure-pipeline.yml`, then dynamically define stages and jobs using parameters and runs a job that executes a script, `build-script.sh`.
-
 
 ```yaml
 # stage-template.yml
@@ -456,7 +445,6 @@ jobs:
     pool:   # this parameter is called `pool`
       vmImage: ubuntu-latest  # and it's a mapping rather than a string
 
-
 # process.yml
 parameters:
 - name: 'pool'
@@ -467,7 +455,6 @@ jobs:
 - job: build
   pool: ${{ parameters.pool }}
 ```
-
 
 ## Variable reuse
 
@@ -800,7 +787,6 @@ jobs:
   steps: []
 ```
 
-
 ## FAQ
 
 ### How can I use variables inside of templates?
@@ -808,7 +794,6 @@ jobs:
 There are times when it's useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables are available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
 
 In this example, the predefined variables `Build.SourceBranch` and `Build.Reason` are used in conditions in template.yml.
-
 
 ```yaml
 # File: azure-pipelines.yml

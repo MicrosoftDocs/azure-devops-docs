@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.author: sdanie
 author: steved0x 
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/11/2024
 ---
 

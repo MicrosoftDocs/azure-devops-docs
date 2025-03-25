@@ -11,7 +11,6 @@ monikerRange: '<= azure-devops'
 ms.date: 02/10/2025
 ---
 
-
 # About access levels
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -38,7 +37,7 @@ Assign users or groups of users to one of the following access levels:
 
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 - **Stakeholder**: Provides partial access, can assign to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
@@ -173,24 +172,7 @@ The following table indicates those features available for each supported access
 :::row-end:::
 ---
 ::: moniker-end  
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="3":::
-      **Agile boards**  
-      Stakeholders get limited access to [boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders can't add work items, drag-and-drop cards to update status, update fields displayed on cards, nor [view or set capacity](../../boards/sprints/set-capacity.md).
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
+ 
 :::row:::
    :::column span="3":::
       **Agile Portfolio Management**  
@@ -480,7 +462,6 @@ The following table indicates those features available for each supported access
 :::row-end:::
 ---
 
-
 <a id="basic"></a>
 
 ::: moniker range="azure-devops"
@@ -531,7 +512,7 @@ You can manage access levels programmatically using the [`az devops user add` (A
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops" 
+::: moniker range="<azure-devops"
 
 You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType`, `licensingSource`, and `msdnLicenseType` parameters.
 
@@ -542,7 +523,6 @@ You can manage access levels programmatically using the [User Entitlement - Add 
 | Visual Studio Subscriber                              | none               | msdn           | eligible         | 
 | Stakeholder                                           | stakeholder        | account        | none             | 
 | VS Enterprise                                         | none               | msdn           | enterprise       | 
-
 
 ::: moniker-end
 

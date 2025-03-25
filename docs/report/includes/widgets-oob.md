@@ -8,7 +8,7 @@ ms.date: 04/04/2022
 
 Widgets are annotated as follows: 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 - **Analytics**: Widget derives data from [Analytics data](../powerbi/what-is-analytics.md).
 - **Build**: Widget derives data for a selected build pipeline.
 - **Project**: Widget indicates you can select the project and team when you configure the widget.
@@ -34,31 +34,14 @@ Widgets are annotated as follows:
       - [Query Results](../dashboards/widget-catalog.md#query-results-widget)
       - [Query Tile](../dashboards/widget-catalog.md#query-tile-widget)
       - [Sprint Burndown](../dashboards/widget-catalog.md#sprint-burndown-analytics-widget) (Analytics, Team)
-      - [Sprint Burndown - Legacy](../dashboards/widget-catalog.md#sprint-burndown-widget) (Team)
+      - [Sprint Burndown - Legacy](../dashboards/widget-catalog.md#burndown-widget) (Team)
       - [Sprint Capacity](../dashboards/widget-catalog.md#sprint-capacity-widget) (Team)
       - [Sprint Overview](../dashboards/widget-catalog.md#sprint-overview-widget) (Team)
       - [Velocity](../dashboards/widget-catalog.md#velocity-widget) (Analytics, Team)
       - [Work Links](../dashboards/widget-catalog.md#work-links-widget)
       ::: moniker-end
-      ::: moniker range="azure-devops-2019"
-      **Boards**
-      - [Assigned to Me](../dashboards/widget-catalog.md#assigned-to-me-widget) (User)
-      - [Burndown](../dashboards/widget-catalog.md#burndown-analytics-widget) (Analytics)
-      - [Burnup](../dashboards/widget-catalog.md#burnup-analytics-widget) (Analytics)
-      - [Chart for Work Items](../dashboards/widget-catalog.md#chart-wit-widget)
-      - [Cumulative Flow diagram](../dashboards/widget-catalog.md#cfd-widget)
-      - [Cycle Time (Analytics)](../dashboards/widget-catalog.md#cycle-time-widget) (Analytics)
-      - [Lead Time (Analytics)](../dashboards/widget-catalog.md#lead-time-widget) (Analytics)
-      - [New Work Item](../dashboards/widget-catalog.md#new-work-item-widget)
-      - [Query Results](../dashboards/widget-catalog.md#query-results-widget)
-      - [Query Tile](../dashboards/widget-catalog.md#query-tile-widget)
-      - [Sprint Burndown](../dashboards/widget-catalog.md#sprint-burndown-widget)
-      - [Sprint Capacity](../dashboards/widget-catalog.md#sprint-capacity-widget)
-      - [Sprint Overview](../dashboards/widget-catalog.md#sprint-overview-widget)
-      - [Velocity](../dashboards/widget-catalog.md#velocity-widget) (Analytics)
-      - [Work Links](../dashboards/widget-catalog.md#work-links-widget)
-      ::: moniker-end
-      ::: moniker range=">= azure-devops-2019"
+      
+      ::: moniker range="<=azure-devops"
       ---
       **Code**
       - [Code Tile](../dashboards/widget-catalog.md#code-tile-widget) (Repository, Branch, Folder)
@@ -66,7 +49,7 @@ Widgets are annotated as follows:
       ::: moniker-end
    :::column-end:::
    :::column span="1":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       **Pipelines**
       - [Build History](../dashboards/widget-catalog.md#build-history-widget) (Build pipeline)
       - [Deployment status](../dashboards/widget-catalog.md#deployment-status-widget) (Build pipeline)

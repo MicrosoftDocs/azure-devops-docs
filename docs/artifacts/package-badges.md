@@ -19,7 +19,7 @@ With Azure Artifacts, you can share your packages anywhere you can share an imag
 > [!NOTE]
 > You must be a feed administrator to enable package sharing.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the gear icon ![gear icon](../media/icons/gear-icon.png) to access the **Feed settings**.
 
@@ -31,13 +31,11 @@ With Azure Artifacts, you can share your packages anywhere you can share an imag
 
 ::: moniker-end
 
-
-
 ## Create a package badge
 
 With package-sharing enabled, you can create a badge for any package in your feed. But you can only create a badge for the latest version of each package.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. From within your feed, select your package and then select **Create badge**.
 
@@ -50,8 +48,6 @@ With package-sharing enabled, you can create a badge for any package in your fee
 1. You can now share your package by using the Markdown snippet or the direct image link.
 
 ::: moniker-end
-
-
 
 ## Related articles
 

@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 03/01/2024
 ---
 
@@ -145,18 +145,6 @@ If you encounter a problem with a connection, we recommend that you remove the c
 
    :::image type="content" source="media/github/remove-connection-confirmation.png" alt-text="Screenshot of confirmation removal of GitHub connection.":::  
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. To add or remove repositories, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the connection and choose **Add** repositories or **Remove repositories** from the menu. 
-
-   :::image type="content" source="media/github/repo-actions-menu.png" alt-text="Screenshot of add or remove GitHub repos.":::
-	
-2. To remove all repositories and the connection, choose the **Remove connection** option. Then, choose **Remove** to confirm.
-
-   :::image type="content" source="media/github/remove-connection-confirmation.png" alt-text="Screenshot of confirmation of GitHub connection removal dialog.":::
-  
 ::: moniker-end
 
 ## Change repository access
