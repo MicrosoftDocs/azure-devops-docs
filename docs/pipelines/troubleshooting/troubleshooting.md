@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot pipeline runs
-description: Learn how to troubleshoot pipeline runs in Azure Pipelines and Team Foundation Server.
+description: Learn how to troubleshoot pipeline runs in Azure Pipelines using logs, error analysis tools, and common techniques to resolve issues.
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: how-to
-ms.date: 04/02/2024
+ms.date: 03/25/2025
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -14,19 +14,19 @@ author: steved0x
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If your pipeline run fails to complete, you can use the diagnostic information and logs provided by the pipeline run summary page to help troubleshoot the issue.
+If your pipeline run fails to complete, use the diagnostic information and logs on the pipeline run summary page to troubleshoot the issue. This guide provides instructions for diagnosing pipeline failures using logs, error analysis tools, and common troubleshooting techniques. Learn how to identify root causes and implement solutions to keep your pipelines running smoothly.
 
-:::image type="content" source="./media/pipeline-run-summary-troubleshooting.png" lightbox="./media/pipeline-run-summary-troubleshooting.png" alt-text="Screenshot of pipeline run summary page.":::
+:::image type="content" source="./media/pipeline-run-summary-troubleshooting.png" lightbox="./media/pipeline-run-summary-troubleshooting.png" alt-text="Screenshot of pipeline run summary page with diagnostic information.":::
 
 <a id="get-logs-to-diagnose-problems"></a>
 
 ## View logs
 
-Select the error message to view the logs for the task that failed to complete.
+Select the error message to view logs for the task that didn't complete.
 
-:::image type="content" source="./media/error-message.png" alt-text="Screenshot of task error message on pipeline run summary page.":::
+:::image type="content" source="./media/error-message.png" alt-text="Screenshot of a task error message on pipeline run summary page.":::
 
-The logs page is displayed, with the error selected. In this example, there's an error in the `cmd-line` task, where the `echo` command is entered as `ech`.
+The logs page shows the selected error. In this example, there's an error in the `cmd-line` task, where the `echo` command is entered as `ech`.
 
 :::image type="content" source="./media/task-error-log.png" lightbox="./media/task-error-log.png" alt-text="Screenshot of diagnostics log for the pipeline run.":::
 
@@ -70,7 +70,7 @@ In this example, you can see that there's an error in the `Value` of the `Script
 
 :::moniker-end
 
-If the issue isn't apparent from the pipeline run summary page or browsing the logs, check the following [Common issues](#common-issues) section, and see [Review logs to diagnose pipeline issues](./review-logs.md) for information on downloading complete logs which include additional diagnostic information.
+If the issue isn't apparent from the pipeline run summary page or browsing the logs, check the following [Common issues](#common-issues) section, and see [Review logs to diagnose pipeline issues](./review-logs.md) for information on downloading complete logs which include more diagnostic information.
 
 <a name="my-pipeline-starts-but-fails-to-complete-successfully"></a>
 
@@ -99,20 +99,30 @@ To configure this setting, navigate to [Preview features](../../project/navigati
 
 :::image type="content" source="../get-started/media/task-insights-setting.png" alt-text="Screenshot of task insights for failed pipeline runs setting.":::
 
+## Notifications for failed runs
+
+Azure DevOps includes build-in notifications for failed pipeline runs. To enable notifications:
+
+1. Go to **Project settings** > **Notifications** for your project. 
+1. Choose what type of notification you want to receive. To be notified each time a pipeline run fails, select **A build fails**.
+
+:::image type="content" source="media/notification-settings.png" alt-text="Screenshot of notifications in project settings.":::
+
 :::moniker-end
 
 ### Job time-out
 
 A pipeline can run for a long time and then fail due to job time-out. 
 Job timeout closely depends on the agent being used. Free Microsoft hosted agents have a max timeout of 60 minutes per job for a private repository and 360 minutes for a public repository.
+
 To increase the max timeout for a job, you can opt for any of the following.
-* Buy a Microsoft hosted agent which will give you 360 minutes for all jobs, irrespective of the repository used
+* Buy a Microsoft hosted agent which gives you 360 minutes for all jobs, irrespective of the repository used
 * Use a self-hosted agent to rule out any timeout issues due to the agent
 
 Learn more about job [timeout](../process/phases.md#timeouts).
 
 > [!NOTE]
-> If your Microsoft-hosted agent jobs are timing out, ensure that you haven't specified a pipeline timeout that is less than the max timeout for a job. To check, see [Timeouts](../process/phases.md#timeouts).
+> If your Microsoft-hosted agent jobs are timing out, verify that your pipeline timeout is set to a larger value than the max timeout for a job. To check, see [Timeouts](../process/phases.md#timeouts).
 
 ### Issues downloading code
 
@@ -123,7 +133,7 @@ Learn more about job [timeout](../process/phases.md#timeouts).
 
 If you're using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](../build/options.md) to ensure that your pipeline has access to the repository.
 
-When your pipeline can't access the repository due to limited job authorization scope, you will receive the error `Git fetch failed with exit code 128` and your logs will contain an entry similar to `Remote: TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting.`
+When your pipeline can't access the repository due to limited job authorization scope, you'll receive the error `Git fetch failed with exit code 128` and your logs contain an entry similar to `Remote: TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting.`
 
 If your pipeline is failing immediately with `Could not find a project that corresponds with the repository`, ensure that your project and repository name are correct in the `checkout` step or the repository resource declaration.
 
@@ -134,7 +144,7 @@ If your pipeline is failing immediately with `Could not find a project that corr
 
 ##### Get sources not downloading some files
 
-This might be characterized by a message in the log "All files up to date" from the `tf get` command. Verify the built-in service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build pipeline. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
+You might see a message in the log "All files up to date" from the `tf get` command. Verify the built-in service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* need permission to download the sources, depending on the selected authorization scope on General tab of the build pipeline. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
 
 ##### Get sources through Team Foundation Proxy
 
@@ -153,7 +163,7 @@ macOS/Linux:
 
 ### My pipeline is failing on a command-line step such as MSBUILD
 
-It is helpful to narrow whether a build or release failure is the result of an Azure Pipelines/TFS product issue (agent or tasks). Build and release failures might also result from external commands.
+It's helpful to narrow whether a build or release failure is the result of an Azure Pipelines product issue (agent or tasks). Build and release failures might also result from external commands.
 
 Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line might reproduce the issue. It can be helpful to run the command locally from your own machine, and/or sign in to the machine and run the command as the service account.
 
@@ -168,7 +178,7 @@ The location of tools, libraries, headers, and other things needed for a build m
 If a build fails because it can't find one of these files, you can use the below scripts to inspect the layout on the agent.
 This might help you track down the missing file.
 
-Create a new YAML pipeline in a temporary location (e.g. a new repo created for the purpose of troubleshooting).
+Create a new YAML pipeline in a temporary location (for example, a new repo created for the purpose of troubleshooting).
 As written, the script searches directories on your path.
 You can optionally edit the `SEARCH_PATH=` line to search other places.
 
@@ -217,13 +227,13 @@ steps:
 
 #### Differences between local command prompt and agent
 
-Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
+Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it isn't running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
 
 
 
 ### File or folder in use errors
 
-`File or folder in use` errors are often indicated by error messages such as: 
+`File or folder in use` errors are indicated by error messages such as: 
 
 * `Access to the path [...] is denied.`
 * `The process cannot access the file [...] because it is being used by another process.`
@@ -247,9 +257,9 @@ Anti-virus software scanning your files can cause file or folder in use errors d
 
 #### MSBuild and /nodeReuse:false
 
-If you invoke MSBuild during your build, make sure to pass the argument `/nodeReuse:false` (short form `/nr:false`). Otherwise MSBuild processes will remain running after the build completes. The processes remain for some time in anticipation of a potential subsequent build.
+If you invoke MSBuild during your build, make sure to pass the argument `/nodeReuse:false` (short form `/nr:false`). Otherwise MSBuild processes continue running after the build completes. The processes remain for some time in anticipation of a potential subsequent build.
 
-This feature of MSBuild can interfere with attempts to delete or move a directory - due to a conflict with the working directory of the MSBuild process(es).
+This feature of MSBuild can interfere with attempts to delete or move a directory - due to a conflict with the working directory of the MSBuild processes.
 
 The MSBuild and Visual Studio Build tasks already add `/nr:false` to the arguments passed to MSBuild. However, if you invoke MSBuild from your own script, then you would need to specify the argument.
 
@@ -260,7 +270,7 @@ By default the build tasks such as [MSBuild](/azure/devops/pipelines/tasks/refer
 
 Try adding the `/m:1` argument to your build tasks to force MSBuild to run only one process at a time.
 
-File-in-use issues might result when leveraging the concurrent-process feature of MSBuild. Not specifying the argument `/maxcpucount:[n]` (short form `/m:[n]`) instructs MSBuild to use a single process only. If you are using the MSBuild or Visual Studio Build tasks, you might need to specify "/m:1" to override the "/m" argument that is added by default.
+File-in-use issues might result when leveraging the concurrent-process feature of MSBuild. Not specifying the argument `/maxcpucount:[n]` (short form `/m:[n]`) instructs MSBuild to use a single process only. If you're using the MSBuild or Visual Studio Build tasks, you might need to specify "/m:1" to override the "/m" argument that is added by default.
 
 ### Intermittent or inconsistent MSBuild failures
 
@@ -288,7 +298,7 @@ Analyzing a dump of the process can help to identify what a deadlocked process i
 
 #### WiX project
 
-Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will work around the issue.
+Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` works around the issue.
 
 ### Line endings for multiple platforms
 
@@ -307,7 +317,7 @@ In that file, add the following line:
 
 ### Variables having ' (single quote) appended
 
-If your pipeline includes a Bash script that sets variables using the `##vso` command, you might see an additional `'` appended to the value of the variable you set.
+If your pipeline includes a Bash script that sets variables using the `##vso` command, you might see an another `'` appended to the value of the variable you set.
 This occurs because of an interaction with `set -x`.
 The solution is to disable `set -x` temporarily before setting a variable.
 The Bash syntax for doing that is `set +x`.
@@ -321,8 +331,8 @@ set -x
 #### Why does this happen?
 
 Many Bash scripts include the `set -x` command to assist with debugging.
-Bash will trace exactly what command was executed and echo it to stdout.
-This will cause the agent to see the `##vso` command twice, and the second time, Bash will have added the `'` character to the end.
+Bash traces exactly what command was executed and echo it to stdout.
+This causes the agent to see the `##vso` command twice, and the second time, Bash will have added the `'` character to the end.
 
 For instance, consider this pipeline:
 
@@ -333,15 +343,15 @@ steps:
     echo ##vso[task.setvariable variable=MY_VAR]my_value
 ```
 
-On stdout, the agent will see two lines:
+On stdout, the agent sees two lines:
 ```bash
 ##vso[task.setvariable variable=MY_VAR]my_value
 + echo '##vso[task.setvariable variable=MY_VAR]my_value'
 ```
 
 When the agent sees the first line, `MY_VAR` will be set to the correct value, "my_value".
-However, when it sees the second line, the agent will process everything to the end of the line.
-`MY_VAR` will be set to "my_value'".
+However, when it sees the second line, the agent processes everything to the end of the line.
+`MY_VAR` is set to "my_value'".
 
 ### Libraries aren't installed for Python application when script executes 
 
@@ -356,7 +366,7 @@ D:\home\python364x64\python.exe -m pip install -r requirements.txt
 
 ### Service Connection related issues
 
-To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
+To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md). To specifically troubleshoot service connections using workload identity for authentication, see [Troubleshoot workload identity service connections](../release/troubleshoot-workload-identity.md).
 
 ### Pipeline stopped hearing from agent
 
@@ -377,4 +387,4 @@ In this scenario, you can use the [Azure File Copy task](/azure/devops/pipelines
 
 ## Next steps
 
-* [Review logs](./review-logs.md)
+* [Review logs](./review-logs.md) to uncover additional diagnostic tools.  
