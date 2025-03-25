@@ -30,26 +30,6 @@ For an overview of the integration that the Azure Boards app for GitHub supports
 >
 > You can connect an Azure DevOps organization to multiple GitHub repositories if you're an administrator for those repositories. However, you shouldn't connect a GitHub repository to more than one Azure DevOps organization.
 
-## Give Azure Boards organization access 
-
-To grant GitHub access to your Azure DevOps organization, do the following steps. 
-
-1. From the GitHub web portal, open **Settings** from your profile menu.  
-
-   :::image type="content" source="media/troubleshoot/choose-settings.png" alt-text="Screenshot of open profile, choose Settings.":::       
-	
-2. Select **Applications** under **Integrations**.  
-
-3. Select **Authorized GitHub Apps** > **Azure Boards**. 
-
-   :::image type="content" source="media/troubleshoot/open-azure-boards.png" alt-text="Screenshot of Authorized OAuth Apps tab, choose Azure Boards.":::   
-
-4. Under **Organization access**, resolve any issues that might appear. Select **Grant** to grant access to any organizations that show as having an **Access request pending**. 
-
-   :::image type="content" source="media/troubleshoot/organization-access-issues.png" alt-text="Screenshot of Organization access with organizations without access.":::	
-
-<a id="install"></a>
-
 ## Install and configure the Azure Boards app 
 
 1. Go to the Azure Boards app in the [GitHub Marketplace](https://github.com/marketplace/azure-boards). 
@@ -83,6 +63,26 @@ To grant GitHub access to your Azure DevOps organization, do the following steps
    :::image type="content" source="media/github-app/confirm-github-repos.png" alt-text="Screenshot of Confirm your GitHub repositories dialog.":::
 
 <a id="get-started"></a>
+
+## Give Azure Boards organization access 
+
+To grant GitHub access to your Azure DevOps organization, do the following steps. 
+
+1. From the GitHub web portal, open **Settings** from your profile menu.  
+
+   :::image type="content" source="media/troubleshoot/choose-settings.png" alt-text="Screenshot of open profile, choose Settings.":::       
+	
+2. Select **Applications** under **Integrations**.  
+
+3. Select **Authorized GitHub Apps** > **Azure Boards**. 
+
+   :::image type="content" source="media/troubleshoot/open-azure-boards.png" alt-text="Screenshot of Authorized OAuth Apps tab, choose Azure Boards.":::   
+
+4. Under **Organization access**, resolve any issues that might appear. Select **Grant** to grant access to any organizations that show as having an **Access request pending**. 
+
+   :::image type="content" source="media/troubleshoot/organization-access-issues.png" alt-text="Screenshot of Organization access with organizations without access.":::	
+
+<a id="install"></a>
 
 ## Use the connection 
 

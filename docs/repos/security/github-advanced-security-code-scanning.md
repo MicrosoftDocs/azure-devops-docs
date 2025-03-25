@@ -165,7 +165,7 @@ To dismiss an alert:
 
 [![Screenshot of how to dismiss a code scanning alert.](./media/code-scanning-dismiss-alert.png)](./media/code-scanning-dismiss-alert.png#lightbox)
 
-This action only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert previously dismissed can be manually reopened. 
+This action dismisses the alert across all branches. Other branches that contain the same vulnerability will also be dismissed. Any alert previously dismissed can be manually reopened. 
 
 ### Managing code scanning alerts on pull requests 
 
