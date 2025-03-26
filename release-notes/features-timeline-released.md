@@ -38,9 +38,10 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="13"><a href="2025/sprint-253-update.md" data-raw-source="[20 March  2025](2025/sprint-253-update.md)"> 20 March  2025</a></td>
+    <td rowspan="14"><a href="2025/sprint-253-update.md" data-raw-source="[20 March  2025](2025/sprint-253-update.md)"> 20 March  2025</a></td>
     <td>Overlapping secrets for Azure DevOps OAuth </td><td>General</td><td>Future</td></tr>
     <td>Deprecation of Languages statistics tags from the Project Summary Page </td><td>General</td><td>Future</td></tr>
+    <td>Delivery Plans permission added </td><td>General</td><td>Future</td></tr>
     <td>Security overview risk page enhanced with new columns and filtering options</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Multi-repository publishing scenarios supported for GitHub Advanced Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Service hooks for GitHub Advanced Security alerts for Azure DevOps (preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
