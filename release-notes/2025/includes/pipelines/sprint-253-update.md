@@ -79,7 +79,7 @@ Just over a year ago, we made [Workload identity federation generally available]
 
 We're now changing the format of the federated credential for new Azure and Docker service connections. Existing service connections will work as before.
 
-|         | Azure DevOps issuer                                                 | Entra issuer (new service connections)                                            |
+|    &nbsp;     | Azure DevOps issuer                                                 | Entra issuer (new service connections)                        |
 |---------|---------------------------------------------------------------------|---------------------------------------------------------------|
 | Issuer  | `https://vstoken.dev.azure.com/<organization id>`                   | `https://login.microsoftonline.com/<Entra tenant id>/v2.0`    |
 | Subject | `sc://<organization name>/<project name>/<service connection name>` | `<entra prefix>/sc/<organization id>/<service connection id>` |
@@ -106,7 +106,7 @@ Likewise, when creating a service connection with the Terraform azuredevops prov
 
 #### More information
 
-- [Connect to Azure with an Azure Resource Manager service connection](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azures)
+- [Connect to Azure with an Azure Resource Manager service connection](/azure/devops/pipelines/library/connect-to-azure)
 - [Troubleshoot an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/troubleshoot-workload-identity)
 
 ###  Gradle@4 task
