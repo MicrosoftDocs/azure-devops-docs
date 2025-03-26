@@ -36,7 +36,7 @@ sections:
       - question: What are all the query filter functions? 
         answer: |
           From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. In addition to the query filters, you can [interactively apply filters to query results](../backlogs/filter-backlogs-boards-plans.md).  
-          ::: moniker range=">= azure-devops-2019"
+          ::: moniker range="<=azure-devops"
           > [!NOTE] 
           > Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Advanced work items search](../../project/search/advanced-work-item-search-syntax.md).
           ::: moniker-end
@@ -53,7 +53,7 @@ sections:
           ---
           :::row:::
              :::column span="1":::
-                ::: moniker range=">= azure-devops-2019"
+                ::: moniker range="<=azure-devops"
                 - [Compare fields](./query-field-value.md) 
                 - [Key words](./titles-ids-descriptions.md)  
                 - [Linked work items](./linking-attachments.md)  
@@ -66,7 +66,7 @@ sections:
                 
              :::column-end::: 
              :::column span="1":::
-               ::: moniker range=">= azure-devops-2019"
+               ::: moniker range="<=azure-devops"
                 - [Blank or empty fields](./titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
                 - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
                 - [History and Discussion](./history-and-auditing.md) 
@@ -77,7 +77,7 @@ sections:
                 
              :::column-end:::
              :::column span="2":::
-                ::: moniker range=">= azure-devops-2019"
+                ::: moniker range="<=azure-devops"
                 - [[Any]](titles-ids-descriptions.md)
                 - [@Me](query-by-workflow-changes.md)
                 - [@Today](query-by-date-or-current-iteration.md) 
@@ -136,7 +136,6 @@ sections:
 
           - You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries. These queries can filter for work items assigned to you, that you're following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
 
-
       - question: How do I sort on the Parent field?  
         answer: | 
           You can't. Sorting a query on the **Parent** field isn't a supported feature. 
@@ -165,7 +164,7 @@ sections:
     questions: 
       - question: Can I export a cross-project query to Excel? 
         answer: |
-          ::: moniker range=">= azure-devops-2019"
+          ::: moniker range="<=azure-devops"
           **No**. Cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards. For more information, see [Bulk import or update work items using CSV files](import-work-items-from-csv.md). 
           ::: moniker-end
           
