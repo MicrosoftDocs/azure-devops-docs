@@ -21,3 +21,10 @@ The update will occur automatically, with no action required on your part.
 > [!div class="mx-imgBorder"]
 > [![Screenshot of tags being removed.](../../media/253-general-01.png "Screenshot of tags being removed")](../../media/253-general-01.png#lightbox)
 
+### Delivery Plans permission added
+
+As part of our ongoing security enhancements, we’ve introduced a new “Manage Delivery Plans” project-level permission. This change was implemented to prevent unintentional read/write access for users in the Readers group.
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of manage delivery plans.](../../media/253-general-01.png "Screenshot of manage delivery plans")](../../media/253-general-02.png#lightbox)
+

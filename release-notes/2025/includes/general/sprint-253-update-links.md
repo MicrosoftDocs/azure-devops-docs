@@ -8,3 +8,4 @@ ms.topic: include
 
 - [Overlapping secrets for Azure DevOps OAuth](#overlapping-secrets-for-azure-devops-oauth)
 - [Deprecation of Languages statistics tags from the Project Summary Page](#deprecation-of-languages-statistics-tags-from-the-project-summary-page)
+- [Delivery Plans permission added](#delivery-plans-permission-added)
