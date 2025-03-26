@@ -222,7 +222,7 @@ Applications can have two secrets at any time. Continue to create and use access
 
 1. Create a secondary secret by selecting **"Generate Secret"** for "Secret 2".
 
-:::image type="content" source="media/app-page-new-secret.png" alt-text="Generate a new secret to rotate in for your soon-to-expire secret":::
+:::image type="content" source="media/app-page-new-secret.png" alt-text="Screenshot of app page with secondary secret already generated.":::
    
 2. Next, confirm in the modal that you want to complete this action.
 
