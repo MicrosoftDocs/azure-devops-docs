@@ -1,6 +1,6 @@
 ---
 title: Securely use variables and parameters in a pipeline
-description: Find out how to safely accept input from pipeline users.
+description: Find out how to safely accept input from pipeline users in Azure Pipelines.
 ms.assetid: ada3e166-c606-48b3-8e5e-7d83b1c1c962
 ms.reviewer: vijayma
 ms.date: 06/10/2024
@@ -11,15 +11,8 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Learn how to securely utilize variables and parameters to collect input from pipeline users. For more information, see the following articles:
+In Azure Pipelines, you can use variables and parameters to collect input from users. This capability is useful when you want to allow users to customize the pipeline execution. However, accepting user input can also introduce security risks if not handled properly. In this article, you learn how to securely use variables and parameters in your pipeline. 
 
-* [Define variables](../process/variables.md)
-* [Set secret variables](../process/set-secret-variables.md)
-* [Use predefined variables](../build/variables.md)
-* [Use runtime parameters](../process/runtime-parameters.md)
-* [Use template types](../process/templates.md)
-
-Exercise caution with secret variables. The recommended methods for setting secret variables include using UI, creating a variable group, or utilizing a variable group sourced from Azure Key Vault. For more information, see [set secret variables](../process/set-secret-variables.md).
 
 [!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
@@ -47,6 +40,9 @@ variables:
   value: myValue
   readonly: true
 ```
+
+Use caution with secret variables. The recommended methods for setting secret variables include using UI, creating a variable group, or utilizing a variable group sourced from Azure Key Vault. For more information, see [set secret variables](../process/set-secret-variables.md).
+
 
 ### Queue-time variables
 
@@ -136,7 +132,10 @@ To resolve this issue, adjust the arguments by escaping special characters as in
 - AzureFileCopy
 - WindowsMachineFileCopy
 
-## Next steps
+## Related articles
 
-> [!div class="nextstepaction"]
-> Secure your [shared infrastructure](misc.md#protect-shared-infrastructure)
+* [Define variables](../process/variables.md)
+* [Set secret variables](../process/set-secret-variables.md)
+* [Use predefined variables](../build/variables.md)
+* [Use runtime parameters](../process/runtime-parameters.md)
+* [Use template types](../process/templates.md)
