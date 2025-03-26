@@ -13,7 +13,7 @@ ms.date: 10/21/2024
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]
-> Azure DevOps OAuth is slated for deprecation in 2026. This information is for existing Azure DevOps OAuth apps only. To create new apps, use [Microsoft Entra ID OAuth](entra-oauth.md) to integrate with Azure DevOps. Starting April 2025, we will stop accepting new Azure DevOps OAuth apps. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
+> Azure DevOps OAuth is slated for deprecation in 2026. This information is for existing Azure DevOps OAuth apps only. To create new apps, use [Microsoft Entra ID OAuth](entra-oauth.md) to integrate with Azure DevOps. Starting April 2025, we stop accepting new Azure DevOps OAuth apps. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
 Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of OAuth 2.0 lets developers authorize their app for users and get access tokens for Azure DevOps resources.
 
@@ -216,9 +216,9 @@ You can find a C# sample that implements OAuth to call Azure DevOps Services RES
 
 ## Regenerate client secret
 
-Your application secret will regularly expire. Starting March 2025, the default secret lifespan of new application secrets is 60 days. 
+Your application secret regularly expires. Starting March 2025, the default secret lifespan of new application secrets is 60 days. 
 
-Applications can have two secrets at any time. Rotate your soon-to-expire app secret with a new application secret in order to continue to create and use access tokens and refresh tokens. 
+Applications can have two secrets at any time. Continue to create and use access tokens and refresh tokens by rotating your soon-to-expire app secret with a new application secret. 
 
 1. Create a secondary secret by selecting **"Generate Secret"** for "Secret 2".
 
@@ -228,13 +228,13 @@ Applications can have two secrets at any time. Rotate your soon-to-expire app se
 
 :::image type="content" source="media/secret-regeneration-modal.png" alt-text="Screenshot confirming secret regeneration.":::
 
-3. Now, you can update your app to use the new Secret #2 before Secret #1 expires. This ensures there is no downtime for your users as a result of expiring secrets.
+3. Update your app to use the new Secret #2 before Secret #1 expires. By managing two secrets at once, there is no downtime for your users as a result of expiring secrets.
 
-4. Secret #1 will naturally expire and all previous tokens will cease to work.
+4. Secret #1 naturally expires and all previous tokens cease to work.
    
-5. When it is time to rotate a soon-to-expire Secret #2, you can repeat this process by regenerating Secret #1 and using this in place of Secret #2.
+5. When it's time to rotate a soon-to-expire Secret #2, you can repeat this process by regenerating Secret #1 and using the regenerated Secret #1 in place of Secret #2.
 
-In the case of leaked secrets, you can quickly revoke the secret by clicking "Regenerate Secret". Once you confirm that you want to regenerate, the previous app secret no longer works and all previous tokens minted with this secret also stop working. Use the dual secrets rotation method to minimize downtime while revoking the leaked secret through regeneration.
+If secrets are leaked, you can quickly revoke the secret by clicking "Regenerate Secret". Once you confirm that you want to regenerate, the previous app secret no longer works and all previous tokens minted with this secret also stop working. Use the dual secrets rotation method to minimize downtime while revoking the leaked secret through regeneration.
 
 ## Delete your app
 
