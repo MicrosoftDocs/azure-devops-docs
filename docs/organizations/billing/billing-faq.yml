@@ -292,7 +292,7 @@ sections:
       - question: |
           Q: Why don't I see a resource representing my Azure DevOps organization? 
         answer: |
-          A: If you [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing), but don't see your organization represented as an Azure resource, you might have an Azure policy that requires tags on new Resource Groups. Azure DevOps creates a new resource group without tags for the organization resource. Azure DevOps billing works with or without the organization resource. To enable Azure DevOps to create the organization resource, temporarily disable the Azure tag policy before you set up billing. Once the resource gets created, reenable the policy. For more information, see [Assign policy definitions for tag compliance](https://learn.microsoft.com/azure/azure-resource-manager/management/tag-policies).
+          A: If you [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing), but don't see your organization represented as an Azure resource, you might have an Azure policy that requires tags on new Resource Groups. Azure DevOps creates a new resource group without tags for the organization resource. Azure DevOps billing works with or without the organization resource. To enable Azure DevOps to create the organization resource, temporarily disable the Azure tag policy before you set up billing. Once the resource gets created, reenable the policy. For more information, see [Assign policy definitions for tag compliance](/azure/azure-resource-manager/management/tag-policies).
       
       - question: |
           Q: Can I move between resource groups? 
