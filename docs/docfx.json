@@ -917,7 +917,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-devops || >= azure-devops-2019 <= azure-devops-2022"
+        "moniker_range": "azure-devops || >= azure-devops-2020 <= azure-devops-2022"
       }
     },
     "dest": "team-services"
