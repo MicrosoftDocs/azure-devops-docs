@@ -7161,6 +7161,10 @@
     {
       "source_path": "docs/extend/extension-report.md",
       "redirect_url": "/azure/devops/extend/overview#extension-report"
+    },
+    {
+      "source_path": "docs/extend/high-risk-extensions.md",
+      "redirect_url": "/azure/devops/extend/overview"
     }
   ]
 }
