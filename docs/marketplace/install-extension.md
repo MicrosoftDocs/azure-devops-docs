@@ -196,10 +196,6 @@ Once an extension is installed, you can find it under the value of the `$AZURE_E
 
 * * *
 
-### High-risk extensions
-
-Some extensions are flagged as high-risk. For more information and to understand the reasons behind this classification, see [High risk extensions](../marketplace/high-risk-extensions.md).
-
 <a id="uninstall-disable-extension">  </a>
 
 ## Uninstall or disable an extension
