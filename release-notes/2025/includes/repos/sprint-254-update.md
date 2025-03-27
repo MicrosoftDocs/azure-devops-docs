@@ -5,6 +5,38 @@ ms.date: 4/2/2025
 ms.topic: include
 ---
 
+### BinaryFormatter replacement in ExtendedClient
+
+## New version (19.254) of Microsoft.TeamFoundationServer.ExtendedClient NuGet package
+NuGet `Microsoft.TeamFoundationServer.ExtendedClient` package was updated with new TFVC policy classes and methods.
+
+
+## TFVC check-in policies changes
+
+We are changing the way TFVC policies are stored on Azure DevOps side, which also means we are updating how NuGet Microsoft.TeamFoundationServer.ExtendedClient communicates with the service. 
+
+
+
+TFVC projects using check-in policies need to perform migration of the policies to the new format. There are two ways how to approach the migration:
+
+1.    Using Visual Studio.
+
+     Warning: Please ensure you updated Visual Studio to the latest version before proceeding (VS 2022, VS 2019 and VS 2017 with minimal versions `17.14 Preview 3`, `17.13.6`, `17.12.7`, `17.10.13`, `17.8.20`, `16.11.46`, `15.9.72` are supporting the new policies).
+
+To create new policies using Visual Studio project administrator should open Settings -> Team Project -> Source Control -> Check-in Policy and add new policy (without “Obsolete” mark) with the same parameters as old one:
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of before fix](../../media/254-repos-01.png "Screenshot of before fix")](../../media/254-repos-01.png#lightbox)
+
+2.     If you are using custom implementation of `Microsoft.TeamFoundationServer.ExtendedClient` to communicate with server, please follow the [migration guide]().
+
+
+
+The migration is required for keeping TFVC check-in compatible with the future Azure DevOps versions. For the time being, both old (Obsolete) as well as new policies remain valid and functionable.
+For information on the Future Plans, please see our [devblog]().
+
+
+
 ### Enhancement to GetRepository API
 
 We have added `creationDate` property to the response of Repositories - Get Repository API returning repository creation date. The property is available on the API versions `7.2-preview` and higher.
