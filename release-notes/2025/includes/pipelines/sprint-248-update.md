@@ -70,6 +70,6 @@ In the `approvers` property, you can use the following values (comma separated) 
 * Email address,
 * Permission-Group,
 * Project-Team,
-* [ProjectName]\[Permission Group],
-* [Org]\[Permission Group],
-* [ProjectName]\[Project Team]
+* [ProjectName]\\[Permission Group],
+* [Org]\\[Permission Group],
+* [ProjectName]\\[Project Team]
