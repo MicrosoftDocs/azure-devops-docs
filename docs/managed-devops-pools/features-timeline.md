@@ -12,9 +12,9 @@ ms.topic: overview
 
 The following section describes new features in development for Managed DevOps Pools.
 
-* **Trusted root certificates**: Managed DevOps Pools added support so you can configure your pool to add certificates from your Key Vault as a trusted root certificate to your agents, so you don’t have to add a task for it to all the pipelines that use the pool. For more information, see [Key Vault configuration](./configure-security.md#key-vault-configuration). **Planned for April 2025.**
+* **Trusted root certificates**: Managed DevOps Pools is adding support so you can configure your pool to add certificates from your Key Vault as a trusted root certificate to your agents, so you don’t have to add a task for it to all the pipelines that use the pool. For more information, see [Key Vault configuration](./configure-security.md#key-vault-configuration). **Planned for April 2025.**
 
-* **Shorter time for agent allocation**: The Managed DevOps Pools team made updates to shorten the startup time for [stateless agents](./configure-scaling.md#stateless-pools) (**Fresh agent every time** setting). **Planned for April 2025.**
+* **Shorter time for agent allocation**: The Managed DevOps Pools team is making updates to shorten the startup time for [stateless agents](./configure-scaling.md#stateless-pools) (**Fresh agent every time** setting). **Planned for April 2025.**
 
 * **Log analytics**: Managed DevOps Pools is adding support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode). **Planned for April 2025.**
 
@@ -30,9 +30,13 @@ The following section describes new features in development for Managed DevOps P
 
 ## March 2025
 
+The following features were released in Managed DevOps Pools in March 2025.
+
 * **Ubuntu 24.04 Azure Pipelines Image**: Ubuntu 24.04 is supported for [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images), and it's now supported for [Azure Pipelines images](./configure-images.md#azure-pipelines-images).
 
 ## November 2024
+
+The following features were released in Managed DevOps Pools in November 2024.
 
 * **Managed DevOps Pools supported in more Azure regions**: Managed DevOps Pools is now available in Sweden Central, Brazil South, Japan East, UAE North, Korea Central, and Norway East, allowing you to leverage regional resources for optimized performance and compliance. To see the Azure regions that support Managed DevOps Pools in your subscription, [register the Microsoft.DevOpsInfrastructure provider in your subscription and view the supported locations](prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
 
