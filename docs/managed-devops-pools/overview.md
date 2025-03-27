@@ -26,7 +26,7 @@ Manage DevOps Pools:
 * Can create agents that have the same software as Azure Pipelines Microsoft-hosted agents
 * Can view all active agents and the status of agent provisioning and reimaging
 * Can attach a data disk, so you don't have to use a larger SKU just to get more disk space
-* See [Roadmap](#roadmap) for features coming up.
+* See [Roadmap and features timeline](./features-timeline.md#roadmap) for features coming up.
 
 ## What's new for Managed DevOps Pools GA
 
