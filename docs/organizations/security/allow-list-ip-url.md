@@ -318,7 +318,7 @@ Also allow all IP addresses in the "name": "Storage.{region}" section of the fol
 Ensure the following domain URLs are allowed for NuGet connections:
 
 ``` NuGetDomainURLs
-https://azurewebsites.net
+https://*azurewebsites.net
 https://*.nuget.org
 ```
 
