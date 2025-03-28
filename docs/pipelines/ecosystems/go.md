@@ -185,7 +185,7 @@ Use `go build` to build your Go project. Add the following snippet to your `azur
 
 ## Test
 
-Use `go test` to test your go module and its subdirectories (`./...`). Add the following snippet to your `azure-pipelines.yml` file:
+Use `go test` to test your Go module and its subdirectories (`./...`). Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - task: Go@0
@@ -195,7 +195,7 @@ Use `go test` to test your go module and its subdirectories (`./...`). Add the f
     workingDirectory: '$(System.DefaultWorkingDirectory)'
 ```
 
-When you're ready, Commit a new _azure-pipelines.yml_ file to your repository and update the commit message. Select **Save and run**.
+When you're ready, commit a new _azure-pipelines.yml_ file to your repository and update the commit message. Select **Save and run**.
 
    > [!div class="mx-imgBorder"]
    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
@@ -219,4 +219,4 @@ For your Go app, you can also [build an image](containers/build-image.md) and [p
 
 ## Related extensions
 
-[Go extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go) (Microsoft)  
+[Go extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go) 
