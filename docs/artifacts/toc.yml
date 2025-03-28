@@ -125,9 +125,9 @@
     - name: Project setup
       displayName: cargo, crate
       href: cargo/project-setup-cargo.md
-    - name: Cargo quickstart
-      displayName: cargo, crate
-      href: get-started-cargo.md
+    - name: Publish Cargo packages
+      displayName: cargo, crate, publish
+      href: cargo/cargo-publish.md
 - name: Restore
   items:
   - name: NuGet
