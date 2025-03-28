@@ -39,3 +39,8 @@ github-boards-integration-improvements-1.mp4
 ### Delivery Plans Limit Increased
 
 We increased the maximum Delivery Plan limit per project from 1,000 to 1,500.
+
+<video width="320" height="240" controls>
+  <source src="github-boards-integration-improvements-1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
