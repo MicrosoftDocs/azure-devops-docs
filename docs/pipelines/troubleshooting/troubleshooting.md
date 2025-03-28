@@ -317,7 +317,7 @@ In that file, add the following line:
 
 ### Variables having ' (single quote) appended
 
-If your pipeline includes a Bash script that sets variables using the `##vso` command, you might see an another `'` appended to the value of the variable you set.
+If your pipeline includes a Bash script that sets variables using the `##vso` command, you might see another `'` appended to the value of the variable you set.
 This occurs because of an interaction with `set -x`.
 The solution is to disable `set -x` temporarily before setting a variable.
 The Bash syntax for doing that is `set +x`.
