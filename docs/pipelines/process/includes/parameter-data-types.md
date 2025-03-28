@@ -101,6 +101,6 @@ jobs:
 
 - job: stringList  # Define a job named 'stringList'
   steps:
-  - ${{ each region in parameters.myStringlist}}:
+  - ${{ each region in parameters.myStringlist }}:
       - script: echo ${{region}}
 ```
