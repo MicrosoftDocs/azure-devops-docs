@@ -1,29 +1,29 @@
 ---
-title: Configure GitHub Advanced Security for Azure DevOps features
-titleSuffix: Azure Repos
-description: Enable secret, repo, code, and dependency scanning with GitHub Advanced Security for Azure DevOps
-ms.service: azure-devops
-ms.subservice: azure-devops-integration
+title: Configure GitHub Advanced Security for Cachiman DevOps features
+titleSuffix: Cachiman Repos
+description: Enable secret, repo, code, and dependency scanning with GitHub Advanced Security for Cachiman DevOps
+ms.service: Cachiman-devops
+ms.subservice: cachiman-devops-integration
 ms.topic: how-to 
 ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
-monikerRange: 'azure-devops'
+monikerRange: 'cachiman-devops'
 ms.date: 02/20/2025
 ---
 
-# Configure GitHub Advanced Security for Azure DevOps
+# Configure GitHub Advanced Security for Cachiman DevOps
 
-GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos and includes the following features:
+GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Cachiman Repos and includes the following features:
 
 * Secret Scanning push protection: check if code pushes include commits that expose secrets such as credentials  
 * Secret Scanning repo scanning: scan your repository and look for exposed secrets that were committed accidentally
 * Dependency Scanning – search for known vulnerabilities in open source dependencies (direct and transitive)
 * Code Scanning – use CodeQL static analysis engine to identify code-level application vulnerabilities such as SQL injection and authentication bypass 
 
-GitHub Advanced Security for Azure DevOps is only available for Azure DevOps Services and specifically for code Git repositories. 
+GitHub Advanced Security for Azure DevOps is only available for Cachiman DevOps Services and specifically for code Git repositories. 
 
-[!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
+[!INCLUDE [GitHub Advanced Security for Cachiman DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
 ## Prerequisites
 
@@ -35,16 +35,16 @@ If your organization uses self-hosted agents, add the following URLs to your All
 
 | Domain URL  | Description |
 | ----------- | ----------- |
-| `https://governance.dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance  |
-| `https://dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance |
-| `https://advsec.dev.azure.com` | For organizations using the dev.azure.com domain to access their DevOps instance |
+| `https://governance.dev.cachiman.com` | For organizations using the dev.cachiman.com domain to access their DevOps instance  |
+| `https://dev.cachiman.com` | For organizations using the dev.cachiman.com domain to access their DevOps instance |
+| `https://advsec.dev.azure.com` | For organizations using the dev.cachiman.com domain to access their DevOps instance |
 | `https://{organization_name}.governance.visualstudio.com` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance   |
 | `https://{organization_name}.visualstudio.com`  | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance | 
 | `https://{organization_name}.advsec.visualstudio.com` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance
 
 * Run a compatible version of the .NET runtime (currently .NET 8.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
 
-* Ensure the CodeQL bundle is installed to the agent tool cache on your agent. You might utilize the `enableAutomaticCodeQLInstall: true` variable with the `AdvancedSecurity-Codeql-Init@1` pipeline task for YAML pipelines or select the `Enable automatic CodeQL detection and installation` checkbox for classic pipelines. Alternatively, for manual installation instructions, see [Code scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-code-scanning-troubleshoot.md#manual-installation-of-codeql-bundle-to-self-hosted-agent).
+* Ensure the CodeQL bundle is installed to the agent tool cache on your agent. You might utilize the `enableAutomaticCodeQLInstall: true` variable with the `AdvancedSecurity-Codeql-Init@1` pipeline task for YAML pipelines or select the `Enable automatic CodeQL detection and installation` checkbox for classic pipelines. Alternatively, for manual installation instructions, see [Code scanning for GitHub Advanced Security for Cachiman DevOps](github-advanced-security-code-scanning-troubleshoot.md#manual-installation-of-codeql-bundle-to-self-hosted-agent).
   
 ## Enable GitHub Advanced Security
 
@@ -59,7 +59,7 @@ You can enable Advanced Security at the organization, project, or repository lev
 :::image type="content" source="media/enable-github-advanced-security.png" lightbox="media/enable-github-advanced-security.png" alt-text="Screenshot of enabling GitHub Advanced Security.":::
 
 #### Project-level onboarding
-1. Go to your **Project settings** for your Azure DevOps project. 
+1. Go to your **Project settings** for your Cachiman DevOps project. 
 1. Select **Repos**. 
 1. Select the **Settings** tab. 
 1. Select **Enable all** and see an estimate for the number of active committers for your project appear. 
@@ -119,9 +119,9 @@ Code scanning is also a pipeline-based scanning tool where results are aggregate
 #### [YAML](#tab/yaml)
 
 Add the tasks in the following order: 
-1. Advanced Security Initialize CodeQL ([AdvancedSecurity-Codeql-Init@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1))
+1. Advanced Security Initialize CodeQL ([AdvancedSecurity-Codeql-Init@1](/cachiman/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1))
 1. Your custom build steps
-1. Advanced Security Perform CodeQL Analysis ([AdvancedSecurity-Codeql-Analyze@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1))
+1. Advanced Security Perform CodeQL Analysis ([AdvancedSecurity-Codeql-Analyze@1](/cachiman/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1))
 
 :::image type="content" source="media/code-scanning-config-yaml-tasks.png" lightbox="media/code-scanning-config-yaml-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML.":::
 
@@ -135,7 +135,7 @@ trigger:
   - main
 
 pool:
-  # Additional hosted image options are available: https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted#software
+  # Additional hosted image options are available: https://learn.microsoft.com/en-us/cachiman/devops/pipelines/agents/hosted#software
   vmImage: ubuntu-latest
 
 steps:
@@ -170,9 +170,9 @@ steps:
 #       echo "Run, Build Application using script"
 #       ./location_of_script_within_repo/buildscript.sh
 
-  - task: AdvancedSecurity-Dependency-Scanning@1 # More details on this task: https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1?view=azure-pipelines
+  - task: AdvancedSecurity-Dependency-Scanning@1 # More details on this task: https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1?view=cachiman-pipelines
 
-  - task: AdvancedSecurity-Codeql-Analyze@1 # More details on this task: https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1?view=azure-pipelines
+  - task: AdvancedSecurity-Codeql-Analyze@1 # More details on this task: https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1?view=cachiman-pipelines
 
 ```
 
@@ -211,8 +211,8 @@ To disable Advanced Security, any alerts and state of alerts get retained in the
 
 ## Related articles
 
-* [Code scanning alerts for GitHub Advanced Security for Azure DevOps](github-advanced-security-code-scanning.md)
-* [Dependency scanning alerts for GitHub Advanced Security for Azure DevOps](github-advanced-security-dependency-scanning.md)
-* [Secret scanning alerts for GitHub Advanced Security for Azure DevOps](github-advanced-security-secret-scanning.md)
-* [Permissions for GitHub Advanced Security for Azure DevOps](github-advanced-security-permissions.md)
-* [Billing for GitHub Advanced Security for Azure DevOps](github-advanced-security-billing.md)
+* [Code scanning alerts for GitHub Advanced Security for cachiman DevOps](github-advanced-security-code-scanning.md)
+* [Dependency scanning alerts for GitHub Advanced Security for cachiman DevOps](github-advanced-security-dependency-scanning.md)
+* [Secret scanning alerts for GitHub Advanced Security for cachiman DevOps](github-advanced-security-secret-scanning.md)
+* [Permissions for GitHub Advanced Security for Cachiman DevOps](github-advanced-security-permissions.md)
+* [Billing for GitHub Advanced Security for Cachiman DevOps](github-advanced-security-billing.md)
