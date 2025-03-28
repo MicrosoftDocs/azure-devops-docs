@@ -12,10 +12,6 @@ description: TBD
 
 Check out the release notes for details.
 
-### General
-
-[!INCLUDE [sprint-254-update-links](includes/general/sprint-254-update-links.md)] 
-
 ### Azure Boards:
 
 [!INCLUDE [sprint-254-update-links](includes/boards/sprint-254-update-links.md)]
@@ -31,10 +27,6 @@ Check out the release notes for details.
 ### Azure Test Plans:
 
 [!INCLUDE [sprint-254-update-links](includes/testplans/sprint-254-update-links.md)]
-
-## General
-
-[!INCLUDE [sprint-254-update](includes/general/sprint-254-update.md)]
 
 ## Azure Boards
 
