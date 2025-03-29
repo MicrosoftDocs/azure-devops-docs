@@ -46,7 +46,7 @@ extends:
 
 ## Use templateContext to pass properties to templates
 
-You can use `templateContext` to pass more properties to stages, steps, and jobs that are used as parameters in a template. Specifically, you can specify `templateContext` within the `jobList`, `deploymentList`, or `stageList` parameter data type. 
+You can use `templateContext` to pass more properties to [stages](/azure/devops/pipelines/yaml-schema/stages-stage), steps, and [jobs](/azure/devops/pipelines/yaml-schema/jobs-job) that are used as parameters in a template. Specifically, you can specify `templateContext` within the `jobList`, `deploymentList`, or `stageList` parameter data type. 
   
 You can use `templateContext` to make it easier to set up environments when processing each job. By bundling a job and its environment properties object together, `templateContext` can help you have more maintainable and easier to understand YAML. 
 
@@ -188,7 +188,7 @@ jobs:
 
 ### Required parameters
 
-Pipelines will automatically report an error if a parameter is missing. You can add a validation step at the beginning of your template to check for the parameters you require and take appropriate action.
+Pipelines automatically reports an error if a parameter is missing. You can add a validation step at the beginning of your template to check for the parameters you require and take appropriate action.
 
 Here's an example that checks for the `solution` parameter using Bash:
 
