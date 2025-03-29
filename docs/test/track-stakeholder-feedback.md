@@ -24,7 +24,7 @@ All feedback gets captured in a *Feedback Response* work item. You can track fee
 <a name="track"></a>
 
 ## Track feedback requests
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. To view feedback, use the **Feedback** shared query.
 2. Select your project and open **Boards** > **Queries**.
@@ -58,8 +58,6 @@ To create a feedback query, do the following steps.
 1. Select a response work item to see the details of the feedback.
 
 ::: moniker-end
-
-
 
 ## Related articles
 

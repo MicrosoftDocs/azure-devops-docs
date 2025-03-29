@@ -7,7 +7,7 @@ ms.subservice: azure-devops-analytics
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 01/02/2024
 ---
 

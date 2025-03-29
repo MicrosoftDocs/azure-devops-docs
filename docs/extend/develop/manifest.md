@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 01/06/2023
+ms.date: 03/21/2025
 ---
 
 # Extension manifest reference
@@ -151,7 +151,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 
 > [!NOTE]
 > If you want to target Azure DevOps, but don't wish to surface a **Download** option for your extension, then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
-> If you're moving an extension from the previously-offered billing & licensing from Microsoft to the BYOL model, then contact us for suitable steps.
+> If you're moving an extension from the previously offered billing & licensing from Microsoft to the BYOL model, then contact us for suitable steps.
 
 ### Example of more properties
 
@@ -173,13 +173,13 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 
 ### Marketplace Q & A - CustomerQnASupport property
 
-All extensions on the Visual Studio Marketplace have a Questions and Answers (Q & A) section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Questions and Answers (Q&A), GitHub issues, or a custom Q&A URL. You can disable Q&A in the Marketplace using the CustomerQnASupport property in the manifest. 
+All extensions on the Visual Studio Marketplace have a Questions and Answers (Q & A) section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q & A, GitHub issues, or a custom Q & A URL. You can disable Q & A in the Marketplace using the `CustomerQnASupport` property in the manifest. 
 
 **Default experience** (No changes to manifest are required)
 - For extensions with a GitHub repository, Marketplace redirects users in the Q&A section to the associated GitHub issues. 
 - For extensions without a GitHub repository, Marketplace Q&A is enabled. 
 
-For a different experience than one of the default options, use the **CustomerQnASupport** property in the manifest.  
+For a different experience than one of the default options, use the `CustomerQnASupport` property in the manifest.  
 
 
 ```json
@@ -425,7 +425,7 @@ is equivalent to:
 
 ### Using installation targets and demands
 
-Installation targets and demands are used together to present users with a correct view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps. 
+Installation targets and demands are used together to present users with a correct view of the products and services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps. 
 
 > [!TIP]
 > For more information on REST APIs, see the [REST API Reference](/rest/api/azure/devops).
@@ -501,8 +501,8 @@ In this example, the extension demands version 3.0 of the APIs, which means it c
 | `contributionType/{id}`     | Requires a specific contribution type be available   | No                  | Yes                 |
 
 > [!NOTE]
-> * Use `environment/cloud` and `environment/onprem` only when your extension has topology-related requirements that require running in that particular environment.
-> * `extension`, `contribution`, and `contributionType` demands are evaluated at install time, and requires that the specified extension is already installed and enabled in the organization/collection.
+> - Use `environment/cloud` and `environment/onprem` only when your extension has topology-related requirements that require running in that particular environment.
+> - `extension`, `contribution`, and `contributionType` demands are evaluated at install time and require that the specified extension is already installed and enabled in the organization or collection.
 
 ## Files
 
@@ -573,9 +573,9 @@ For more information, see the [contribution model overview](contributions-overvi
 Use unique identifiers to reference contributions and contribution types. Reference *types* with the `type` property, and reference other contributions with the `targets` property.
 
 - A *full* contribution reference includes the publisher identifier, extension identifier, and contribution/type identifier, separated by
-a dot (.). For example, `ms.vss-web.hub` is the full identifier for the contribution with identifier of "hub" in the "vss-web" extension published by the "ms" (Microsoft) publisher.
-- *Relative* contribution references might get used within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (.) followed
-by the contribution identifier. For example, ".hub" might be used within the "vss-web" extension mentioned previously as a shortcut for "ms.vss-web.hub."
+a dot (.). For example, `ms.vss-web.hub` is the full identifier for the contribution with identifier of `hub` in the `vss-web` extension published by the "ms" (Microsoft) publisher.
+- *Relative* contribution references might get used within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (`.`) followed
+by the contribution identifier. For example, `.hub` might be used within the `vss-web` extension mentioned previously as a shortcut for `ms.vss-web.hub`.
 
 <a name="contributionTargets"></a>
 
@@ -621,7 +621,7 @@ The Marketplace only supports badges from the following trusted services:
 * opencollective.co/
 
 > [!NOTE]
-> Replace "vsmarketplacebadge.apphb.com" with "vsmarketplacebadges.dev".
+> Replace `vsmarketplacebadge.apphb.com` with `vsmarketplacebadges.dev`.
 
 To show a badge from another service, contact [Customer Support at the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps).
 

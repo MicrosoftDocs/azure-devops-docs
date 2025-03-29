@@ -7,7 +7,7 @@ ms.custom: analytics-views, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 02/07/2023
 ---
 
@@ -125,7 +125,7 @@ Choose **Save** to move to the next tab in the panel. If you need to revisit a t
 	:::image type="content" source="media/create-report/specify-account.png" alt-text="Dialog to enter Azure DevOps Organization and project name.":::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"  
+::: moniker range="<azure-devops"
 2. Choose (1) **Get Data** and select **More...**, (2) **Online Services**, (3) **Azure DevOps Server (Boards only)**, and then (4) **Connect**.  
 
     > [!div class="mx-imgBorder"]
@@ -140,9 +140,7 @@ Choose **Save** to move to the next tab in the panel. If you need to revisit a t
 
 	:::image type="content" source="media/active-bugs-report/choose-view.png" alt-text="Screenshot of Power BI, Dialog of Navigator to choose Analytics view. ":::
 
-
 *Need help with connecting?* See [Connect with Power BI Data Connector](data-connector-connect.md).
-
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

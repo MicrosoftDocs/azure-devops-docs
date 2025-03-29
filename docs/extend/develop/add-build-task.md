@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-date: 10/10/2024
+date: 03/20/2025
 ---
 
 # Add a custom pipelines task extension
@@ -23,8 +23,6 @@ Learn how to install extensions to your organization for custom build or release
 
 ## Prerequisites
 
-To create extensions for Azure DevOps, you need the following software and tools.
-
 |Software/tool |Information |
 |---------|---------|
 |Azure DevOps organization    | [Create an organization](../../organizations/accounts/create-organization.md).       |
@@ -33,7 +31,8 @@ To create extensions for Azure DevOps, you need the following software and tools
 |npmjs.com 4.0.2 or newer    |TypeScript Compiler. [Download the latest version](https://www.npmjs.com/package/typescript).         |
 |tfx-cli   | Package your extension with [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli). using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.|
 |Azure DevOps extension SDK    | [Install the azure-devops-extension-sdk package](https://github.com/Microsoft/azure-devops-extension-sdk).|
-| A `home` directory for your project| The `home` directory of a build or release task extension should look like the following example after you complete the steps in this article.
+| A `home` directory for your project| The `home` directory of a build or release task extension should look like the following example after you complete the steps in this article.|
+
   ```
   |--- README.md    
   |--- images                        
@@ -72,7 +71,7 @@ Do every part of this procedure within the `buildandreleasetask` folder.
    `npm init` creates the `package.json` file. We added the `--yes` parameter to accept all of the default `npm init` options.
 
    > [!TIP]
-   > The agent doesn't automatically install the required modules because it's expecting your task folder to include the node modules. To mitigate this, copy the `node_modules` to `buildandreleasetask`. As your task gets bigger, it's easy to exceed the size limit (50MB) of a VSIX file. Before you copy the node folder, you may want to run `npm install --production` or `npm prune --production`, or you can write a script to build and pack everything.
+   > The agent doesn't automatically install the required modules because it's expecting your task folder to include the node modules. To mitigate, copy the `node_modules` to `buildandreleasetask`. As your task gets bigger, it's easy to exceed the size limit (50 MB) of a VSIX file. Before you copy the node folder, you might want to run `npm install --production` or `npm prune --production`, or you can write a script to build and pack everything.
 
 3. Add `azure-pipelines-task-lib` to your library.
 
@@ -180,7 +179,7 @@ Now that the scaffolding is complete, we can create our custom task.
     run();
    ```
 
-4. To compile an `index.js` file from `index.ts`, enter "tsc" from the `buildandreleasetask` folder.
+4. To compile an `index.js` file from `index.ts`, enter `tsc` from the `buildandreleasetask` folder.
 
 #### task.json components
 
@@ -306,7 +305,6 @@ Do unit tests to quickly test the task script, and not the external tools that i
 
    The success test validates that with the appropriate inputs, it succeeds with no errors or warnings and returns the correct output.
 
-
 4. To run the task mock runner, add the following example success test to your `_suite.ts` file.
 
    ```typescript
@@ -412,8 +410,7 @@ Copy the following .json code and save it as your `vss-extension.json` file in y
 | -------- | ----------------------------------------------------------- |
 | `path`   | Path of the file or folder relative to the `home` directory. |
 
->[!NOTE]
-> For more information about the extension manifest file, such as its properties and what they do, see the [extension manifest reference](./manifest.md).
+For more information about the extension manifest file, such as its properties and what they do, see the [extension manifest reference](./manifest.md).
 
 <a name="packageext"></a>
 
@@ -490,7 +487,7 @@ To maintain the custom task on the Marketplace, create a build and release pipel
 
 ### Prerequisites
 
-:::moniker range=">= azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 :::row:::
    :::column span="1":::
@@ -657,8 +654,6 @@ Use the following example to create a new pipeline with YAML. For more informati
 
 :::moniker-end
 
-
-
 For more information, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
 
 > [!NOTE]
@@ -731,14 +726,14 @@ To run unit tests, add a custom script to the package.json file like the followi
 
 #### Stage 3: Download build artifacts and publish the extension
 
-1. Add "Use Node CLI for Azure DevOps (tfx-cli)" to install the tfx-cli onto your build agent.
+1. To istall the tfx-cli onto your build agent, add "Use Node CLI for Azure DevOps (tfx-cli)".
 
-1. To download the artifacts onto a new job, add the "Download build artifacts" task using the following inputs:
+2. To download the artifacts onto a new job, add the "Download build artifacts" task using the following inputs:
     - Download artifacts produced by: If you're downloading the artifact on a new job from the same pipeline, select "Current build." If you're downloading on a new pipeline, select "Specific build."
     - Download type: Choose "Specific artifact" to download all files that were published.
     - Artifact name: The published artifact's name.
     - Destination directory: The folder where the files should be downloaded.
-1. The last task that you need is the "Publish Extension" task. Use the following inputs:
+3. To get the "Publish Extension" task, use the following inputs:
     - Connect to: Visual Studio Marketplace
     - Visual Studio Marketplace connection: ServiceConnection
     - Input file type: VSIX file
@@ -854,7 +849,7 @@ To upgrade your tasks:
    ```
    
 > [!IMPORTANT]
-> Not adding support for the Node 20 runner on your custom tasks will cause tasks to fail on agents installed from the `pipelines-agent-*` [release feed](../../pipelines/agents/agents.md#node-runner-versions).
+> If you don't add support for the Node 20 runner to your custom tasks, they fail on agents installed from the `pipelines-agent-*` [release feed](../../pipelines/agents/agents.md#node-runner-versions).
 
 ## Related articles
 

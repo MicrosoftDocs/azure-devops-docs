@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: ">= azure-devops-2019"
+monikerRange: "<=azure-devops"
 ms.date: 11/26/2024
 #customer intent: As a team member, I want to import and export work items in CSV format to create or update them in bulk by using Excel.
 ---
@@ -17,13 +17,9 @@ ms.date: 11/26/2024
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 Import and export work items in bulk using CSV-formatted files in Azure Boards. While you can continue to use Excel for bulk imports and updates, the native import/export feature allows you to manage work items without requiring Excel. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 ::: moniker-end 
-
-::: moniker range="azure-devops-2019"
-Export work items in bulk using CSV-formatted files. Although Excel can still be used for bulk imports and updates, the native export feature from Queries enables you to manage work items without relying on Excel. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
-::: moniker-end
 
 ## Prerequisites
 
@@ -152,11 +148,6 @@ Do the following steps to import new work items.
 ## Export list as a CSV file
 
 From any query, you can export a list of work items as a comma-delimited list. [Open the query](view-run-query.md), select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then select **Export to CSV**.
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]
-> Requires Azure DevOps Server 2019 Update 1 or later version.
-::: moniker-end
 
 :::image type="content" source="../work-items/media/email/export.png" alt-text="Screenshot showing Export a query as CSV.":::
 

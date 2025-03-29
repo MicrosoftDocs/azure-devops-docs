@@ -35,10 +35,6 @@ The **Development** control tracks all Git development activities that contribut
 :::image type="content" source="media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"  
-:::image type="content" source="media/git/development-control-2019.png" alt-text="Screenshot of work item form, Development control, Azure DevOps Server 2019.":::
-::: moniker-end
-
 From the **Development** control, you can quickly access branches, pull requests, and commits linked to the work item. Additionally, you can initiate a pull request for a branch you created or linked directly from the work item.
 
 > [!NOTE]
@@ -186,11 +182,6 @@ Hovering over any entry listed under the Development section activates the hyper
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
 ![Screenshot shows Artifact-to-artifact link types.](../queries/media/link-tracking-artifact-to-artifact-link-types.png)
-
-::: moniker range="=azure-devops-2019"
-For more information about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control). 
- 
-::: moniker-end
 
 ## Related articles
 

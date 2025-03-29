@@ -6,12 +6,11 @@ ms.topic: include
 ms.date: 03/05/2021
 ---
 
-
 ### Query filters
 
 The following table summarizes the query filter functions supported by each Azure DevOps version.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 > [!NOTE] 
 > Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Functional work items search](../../project/search/functional-work-item-search.md).
 ::: moniker-end

@@ -6,14 +6,13 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 06/15/2022
 ---
 
 # View the OData query behind an Analytics report or widget 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
-
 
 Several built-in Analytics reports and widgets are supported. You can view the OData query used to generate these reports by following the steps outlined in this article. You can then adapt that OData query as needed to generate other reports using Power BI. 
 
@@ -34,7 +33,6 @@ Open the report of interest. For details, choose one of the links provided below
 |- [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md#configure-built-in-cfd)<br/>- [Sprint burndown](../dashboards/configure-sprint-burndown.md)<br/>- [Velocity chart](../dashboards/team-velocity.md) |- [Build test results](../../pipelines/test/review-continuous-test-results-after-build.md)<br/>- [Code coverage](../../pipelines/test/review-code-coverage-results.md)<br/>- [Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)<br/>- [Trace test requirements](../../pipelines/test/requirements-traceability.md)<br/>- [Test analytics](../../pipelines/test/test-analytics.md)<br/>- [Test failures](../../pipelines/test/test-analytics.md)<br/>- [Test impact analysis](../../pipelines/test/test-impact-analysis.md)|
  
 
-
 ## Open Developer Tools for your browser 
 
 Press the **F12** key to open the Developer Tools for your browser. Open the **Network** tab and scroll down to find the entry with the OData query. The following table lists the  beginning text of entries for select reports. Double-click the entry to open the OData query. 
@@ -47,8 +45,6 @@ Press the **F12** key to open the Developer Tools for your browser. Open the **N
 | Cumulative Flow Diagram | `BoardLocations?%24apply=filter` |
 | Sprint Burndown | `BoardLocations?%24apply=filter` |
 | Velocity | `Iterations?%24filter=Teams` | 
-
-
 
 ## Sample OData query, Velocity chart 
 

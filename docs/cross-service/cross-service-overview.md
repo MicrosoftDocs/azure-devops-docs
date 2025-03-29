@@ -77,9 +77,7 @@ The following table summarizes the integration points between Azure Boards and A
       ::: moniker range=">= azure-devops-2020"
       Link work items to builds in the same or other project within the organization or collection.
       ::: moniker-end
-      ::: moniker range="< azure-devops-2020"
-      Link work items to builds in the same project within the organization or collection.
-      ::: moniker-end
+      
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -197,7 +195,6 @@ The following table summarizes the integration points between Azure Boards and A
 :::row-end:::
 --- 
 ::: moniker-end
-
 
 ## Azure Repos and Azure Pipelines integration
 

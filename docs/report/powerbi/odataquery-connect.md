@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 09/19/2024
 #customer intent: As a team member, I want to learn how to use OData queries to get data into Power BI in a way that does as much work as possible server-side.
 ---

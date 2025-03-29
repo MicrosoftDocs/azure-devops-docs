@@ -37,27 +37,24 @@
   - name: Manage extension permissions
     displayName: grant, publish, update, settings, admin
     href: ./marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: High-risk extensions
-    displayName: risk, scope, extensions
-    href: ./marketplace/high-risk-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Authenticate
   items:
   - name: Guide to authentication
     href: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Authenticate to Azure DevOps with Microsoft Entra
+  - name: Use Microsoft Entra
     href: ./integrate/get-started/authentication/entra.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Authenticate with service principals or managed identities
+  - name: Use service principals or managed identities
     href: ./integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Authenticate with PATs
+  - name: Use PATs
     href: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Authenticate with OAuth 2.0
+  - name: Use OAuth 2.0
     href: ./integrate/get-started/authentication/oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Use Microsoft Entra OAuth with Azure DevOps Services
     href: ./integrate/get-started/authentication/entra-oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Use Azure DevOps OAuth 2.0 to create a web app
     href: ./integrate/get-started/authentication/azure-devops-oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json'
   - name: Authenticate extensions and security
-    href: ./extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json    
+    href: ./extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Cross-platform CLI for Azure DevOps using PATs
     href: ./integrate/get-started/auth/tfs-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Develop extensions

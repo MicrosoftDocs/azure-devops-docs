@@ -6,7 +6,6 @@ ms.topic: include
 ms.date: 04/04/2022
 ---
 
-
 <a id="customize"></a>
 
 ### Customize work-tracking processes
@@ -18,13 +17,12 @@ You and your team can start using all work-tracking tools immediately after you 
 
 For more information, see these articles: 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 - [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md)  
 - [Customize a project](../../organizations/settings/work/customize-process.md)  
 - [Add and manage processes](../../organizations/settings/work/manage-process.md)  
 
 ::: moniker-end
-
 
  

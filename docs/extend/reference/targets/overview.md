@@ -34,7 +34,7 @@ Hubs and hub groups are the primary navigation elements in Azure DevOps. **Files
 
 The following table describes the most common hub groups in Azure DevOps that you can contribute hubs to.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 | Name                | ID                                         | Level                    | Preview image| 
 | --------------------|--------------------------------------------|--------------------------|----------------------------- |          
@@ -45,8 +45,6 @@ The following table describes the most common hub groups in Azure DevOps that yo
 | Project settings    | `ms.vss-web.project-admin-hub-group`       | Project                  | ![Custom project admin hub.](media/test/project-settings.png)| 
 | Organization settings  | `ms.vss-web.collection-admin-hub-group` | Organization or collection  | ![Custom organization admin hub.](media/test/organization-settings.png) | 
 ::: moniker-end
-
-
 
 ### Example
 
@@ -102,7 +100,6 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
         }
 ```
 
-
 ## Settings for menus and toolbars
 
 | Name                              | Target ID                                           |  
@@ -114,7 +111,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 <a name="menus_work"></a> 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Azure Boards menu and toolbar
 
@@ -137,9 +134,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ::: moniker-end
 
-
-
-::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 
 ## Azure Pipelines menu and toolbar
 
@@ -179,7 +174,7 @@ Tasks perform work in a build or release. For more information, learn how to [co
 
 <a name="menus_code"></a>
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Azure Repos menu and toolbar
 
@@ -200,7 +195,7 @@ Tasks perform work in a build or release. For more information, learn how to [co
 
 <a name="menus_test"></a>
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Azure Test Plans menu and toolbar
 
@@ -211,8 +206,6 @@ Tasks perform work in a build or release. For more information, learn how to [co
 | Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![Test hub pivot tab](media/test/test-plan-hub-pivot-tab-preview.png) |
 
 ::: moniker-end
-
-
 
 <a name="dashboard"></a>
 

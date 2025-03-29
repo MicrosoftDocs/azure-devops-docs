@@ -58,15 +58,9 @@ Gradle is a popular build tool for Java applications and the primary build tool 
 
 ::: moniker-end
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 2. Select **Pipelines**, and then select your pipeline definition. 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
 
 ::: moniker-end
 

@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/08/2022
 ---
 
@@ -19,7 +19,6 @@ Understanding the metadata associated with the entity model for Analytics is a p
 > [!NOTE]
 > *"The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP and commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools can be used to consume OData services."* - [OData Organization Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/).
 
-
 In this article you'll learn how to:
 > [!div class="checklist"]
 > * Query the metadata on a specific project
@@ -28,7 +27,6 @@ In this article you'll learn how to:
 > * Identify the capabilities of the Analytics OData endpoint
 
 For detailed descriptions for all OData elements, see [OData model](/odata/concepts/data-model). For information on querying the metadata, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
-
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
@@ -39,7 +37,6 @@ For detailed descriptions for all OData elements, see [OData model](/odata/conce
 ## Entity sets and entity types
 
 Entities are the core identity types in a data model. Entity sets are named collections of entities. For example, `Projects` is an entity set containing `Project` entities. An entity can be a member of at most one entity set.
-
 
 `EntitySets` and `EntityTypes` define each of the entities in the Analytics model including properties and relationships. Entity types define the named properties and relationships of an entity. Entity types may derive by single inheritance from other entity types. The key of an entity type is formed from a subset of its primitive properties. 
 
@@ -225,13 +222,11 @@ Aggregation annotations define the set of [transformations](./odata-supported-fe
 > </Annotation>
 > ```
 
-
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Data model for Analytics](data-model-analytics-service.md)
  
-
 
 ## Related articles
 
@@ -240,7 +235,6 @@ Aggregation annotations define the set of [transformations](./odata-supported-fe
 - [Data available from Analytics](../powerbi/data-available-in-analytics.md) 
 - [Query work tracking data using Analytics](analytics-recipes.md)
 - [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md)
-
 
 ## Related resources 
 

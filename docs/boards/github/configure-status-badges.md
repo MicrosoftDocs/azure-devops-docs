@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 07/12/2023
 ---
 
@@ -15,11 +15,6 @@ ms.date: 07/12/2023
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
  
 You can add Markdown syntax to a GitHub repo `README.md` file to display your board status in that repo. Show the status by adding the syntax you choose from your board settings.  
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]   
-> Requires Azure DevOps Server 2019 Update 1 or later version. 
-::: moniker-end
 
 The syntax shown works whether you [connected your project to a GitHub.com or your GitHub Enterprise Server repository](connect-to-github.md). For GitHub Enterprise Server, your server must be network accessible to Azure DevOps Services. 
 
@@ -45,9 +40,7 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
    ::: moniker range=">= azure-devops-2020"
    :::image type="content" source="media/badges/status-badge-s188.png" alt-text="Screenshot of board Settings dialog, Status badge tab.":::
    ::: moniker-end
-   ::: moniker range="azure-devops-2019"
-   :::image type="content" source="media/badges/status-badge.png" alt-text="Screenshot of board Settings dialog, Status badge tab, Azure DevOps Server 2019.":::
-   ::: moniker-end
+   
 
 4. Choose the badge type you want and choose the :::image type="icon" source="../../media/icons/copy.png" border="false"::: copy icon to copy the Markdown syntax for the badge. 
 

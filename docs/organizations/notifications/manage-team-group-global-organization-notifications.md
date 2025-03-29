@@ -159,12 +159,6 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 
 ::: moniker-end
 
-::: moniker range=" azure-devops-2019"
-> [!TIP]
-> You can send an email to all collections in an application tier. See [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). 
-
-::: moniker-end
-
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
 
 ## Related articles

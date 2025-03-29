@@ -60,7 +60,7 @@ This article helps you understand how to grant and manage permissions for users 
 
 ::: moniker-end
 
-::: moniker range=" <= azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 

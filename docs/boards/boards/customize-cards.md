@@ -49,17 +49,6 @@ Within the [Settings dialog for a board](#open-your-board-settings), you have th
 |**[Card reordering](#reorder-cards)**    | Choose expected behavior when reordering cards on the board.        |
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-|Setting |Customization action  |
-|---------|---------|
-|**[Fields](#fields)**  | Add or remove fields from cards.      |
-|**[Styles](#style-rule)**   | Add styling rules to change card color and title style based on field criteria.        |
-|**[Tag colors](#assign-tag-colors)**      | Specify a tag color and enable or disable a tag color.        |
-|**[Annotations](#enable-or-disable-annotations)**   | Enable or disable annotations to appear on cards.        |
-|**[Tests](#configure-inline-tests)**    |Configure how you want tests to appear and behave on the cards.         |
-|**[Card reordering](#reorder-cards)**    | Choose expected behavior when reordering cards on the board.        |
-::: moniker-end
-
 > [!NOTE]   
 > Each team can customize the cards for their board. Board settings are not inherited from other teams that they may share portions of area paths. 
 
@@ -102,7 +91,7 @@ You can customize cards that appear on the board for your product backlog or por
  
 You can edit a card field from the board, except for read-only fields like the *Change By* and  *Changed Date*. This quick update feature is useful when you need to update many work items at once.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 Do the following steps to update fields. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
 ::: moniker-end  
 
@@ -158,7 +147,7 @@ Which rules should you apply to highlight work items? Here are a few examples an
 
 You can apply style rules to change the color of cards on boards and Taskboards.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. From the board settings page, select **Styles** to specify a style rule. 
 2. Select + **Add styling rule**. Select the color to apply to the card and define the criteria for the style rule. 
@@ -205,7 +194,7 @@ When you disable an annotation, you also disable the feature to add the associat
 
 Complete the following steps to manage annotations.
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 1. From your board settings page, select **Annotations**.
 2. Check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
@@ -227,11 +216,6 @@ As shown in the following examples, the **Task** and **Test** annotations indica
 > |![Task annotations enabled.](media/annotate-task.png) | ![Test annotations enabled.](media/annotate-test.png) | ![Annotations disabled.](media/annotate-none.png) | 
 
 For more information, see [Add tasks or child items as checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]  
-> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product board. For more information, see [Set up your backlogs and boards, Customize your board checklist items](../backlogs/set-up-your-backlog.md#customize-checklist-2019). 
-::: moniker-end
 
 ## Configure inline tests 
 

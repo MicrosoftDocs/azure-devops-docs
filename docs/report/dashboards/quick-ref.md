@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 09/28/2022 
 ---
 
-
 # Dashboards, charts, and quick reference 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
@@ -49,7 +48,7 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Set dashboard permissions](dashboard-permissions.md)  
       - [View a dashboard](dashboards.md)  
       ::: moniker-end
-      ::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+      ::: moniker range="<azure-devops-2022"
       - [Add a dashboard](dashboards.md)  
       - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
       - [Add a widget to a dashboard](add-widget-to-dashboard.md)  
@@ -78,7 +77,7 @@ Use this index to quickly access information on tasks for configuring or accessi
       **Charts** 
       - [Work-tracking query chart](charts.md) 
       - [Test status or progress chart](../../test/track-test-status.md) 
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       **Analytics**  
       - [Analytics views](../powerbi/what-are-analytics-views.md)  
       - [Analytics widgets](analytics-widgets.md)  
@@ -87,13 +86,9 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Power BI reports](../powerbi/overview.md#sample-reports)  
       - [OData](../extend-analytics/quick-ref.md)  
       ::: moniker-end
-      ::: moniker range="=azure-devops-2019"
-      **SQL Reports** 
-      - [SQL Server reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)  
-      - [Excel work tracking reports](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)  
-      ::: moniker-end
+      
       **Widgets** 
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - [Configure a widget](add-widget-to-dashboard.md#configure)  
       - [Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md)  
       - [Configure Sprint Burndown widget](configure-sprint-burndown.md)   
@@ -117,14 +112,6 @@ Use this index to quickly access information on tasks for configuring or accessi
 In context reports appear on the **Analytics** tab of these specific service pages: **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**, and **Pipelines>Builds**. 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-In-context reports appear on specific service pages, such as **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**,and **Pipelines>Builds>Analytics**. These reports derive data from the Analytics service. 
-::: moniker-end
-
-
-
-
 ---
 :::row:::
    :::column span="2":::
@@ -134,7 +121,7 @@ In-context reports appear on specific service pages, such as **Boards>Boards**, 
       - [Velocity chart](team-velocity.md) 
    :::column-end:::
    :::column span="2":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       **Pipelines** 
       - [Build test results](../../pipelines/test/review-continuous-test-results-after-build.md) 
       - [Code coverage](../../pipelines/test/review-code-coverage-results.md) 

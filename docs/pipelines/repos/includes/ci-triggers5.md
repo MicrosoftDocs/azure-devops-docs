@@ -13,7 +13,7 @@ It is a common scenario to run different steps, jobs, or stages in your pipeline
 
 `condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))`
 
-### Behavior of triggers when new branches are created
+### Behavior of triggers when new branches are pushed
 
 It is common to configure multiple pipelines for the same repository. For instance, you may have one pipeline to build the docs for your app and another to build the source code. You may configure CI triggers with appropriate branch filters and path filters in each of these pipelines. For instance, you may want one pipeline to trigger when you push an update to the `docs` folder, and another one to trigger when you push an update to your application code. In these cases, you need to understand how the pipelines are triggered when a new branch is created.
 

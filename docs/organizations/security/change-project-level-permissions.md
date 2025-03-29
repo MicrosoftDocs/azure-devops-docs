@@ -11,7 +11,6 @@ monikerRange: '<= azure-devops'
 ms.date: 05/21/2024
 --- 
 
-
 # Change project-level permissions 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -98,7 +97,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 

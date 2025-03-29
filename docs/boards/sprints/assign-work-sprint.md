@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
 
-
 # 1. Assign backlog items to a sprint in Azure Boards
  
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
@@ -26,13 +25,11 @@ The first step in planning your sprint is to assign work from your backlog to a 
 
 Here's an example of a sprint plan that consists of backlog items and the tasks required to complete each item. By setting team capacity and estimating tasks, the team can see when the team or a team member is at, under, or over capacity.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Sprint planning.](media/assign-items-sprint/assign-intro.png)
 ::: moniker-end
-
-
 
 	
 In this article you'll learn how to:  
@@ -47,7 +44,6 @@ backlog items that the team feels it can commit to completing in the sprint, bas
 These items get added to the sprint backlog. In the second part, your team determines how it develops and tests each item. 
 They then define and estimate the tasks required to complete each item. Finally, your team commits to implementing 
 some or all of the items based on these estimates. 
-
 
 > [!NOTE]    
 > Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](/devops/plan/what-is-scrum).
@@ -94,34 +90,9 @@ From your web browser, open your product backlog.
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019"  
-
-1. From your web browser, open your product backlog. (1) Check that you've selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
-
-	![Open Work, Backlogs, for a team](media/assign-items-sprint/open-work-backlogs-agile.png)
-
-	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot for Choose another team, Azure DevOps 2019.](media/assign-items-sprint/team-selector-backlogs-agile.png) 
-
-	> [!TIP]    
-	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
-
-1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot, Choose product backlog level, Backlog items, Stories, or Requirements, Azure DevOps 2019.](media/assign-items-sprint/select-product-backlog-agile.png) 
-
-2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. For more information, see [Change column options](../backlogs/set-column-options.md). 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot for Open Column Options, Azure DevOps 2019.](media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
-
-::: moniker-end  
-
   
 
+  
 
 <a id="drag-drop"></a>
 
@@ -133,7 +104,7 @@ Also, you'll want to have [set the start and end dates for your sprint](define-s
 
 You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint. 
 
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. The next step is to open the Planning pane. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Planning**. While you're at it, make sure **Parents** and **Forecasting** are Off. You can choose to set **In Progress items** to On or Off. 
 
@@ -161,10 +132,6 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 ::: moniker-end
 
-
-
-
-
 <a id="bulk-modify">  </a>
 
 ## Use the multi-select feature to modify items in bulk
@@ -179,7 +146,6 @@ With multi-select, you can complete several actions on several work items at onc
 - Change one or more field values
 - Add links
 - [Map items or change the parent an item is linked to](../backlogs/organize-backlog.md#mapping)
-
 
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../media/icons/context_menu.png)) or action (  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: ) menu of one of the items. 
 

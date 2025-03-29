@@ -4,7 +4,7 @@ description: Learn how to install Python packages from the command-line interfac
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 01/15/2025
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Install Python packages (CLI)

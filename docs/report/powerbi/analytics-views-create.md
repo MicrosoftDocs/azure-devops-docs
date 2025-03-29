@@ -7,7 +7,7 @@ ms.custom: analytics-views, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 03/12/2025
 #customer intent: As a team member, I want to use Power BI to generate reports from Analytics views in Azure DevOps.
 ---

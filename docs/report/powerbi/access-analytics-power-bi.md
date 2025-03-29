@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 09/06/2024
 ---
 
@@ -30,12 +30,7 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
 
 ## Access the Analytics OData feed
 
-::: moniker range="azure-devops-2019"
-
-> [!IMPORTANT]  
-> Make sure that you [enabled or installed the Analytics extension](../dashboards/analytics-extension.md).  
-
-::: moniker-end  
+  
 
 1. [Configure the permissions required to access Analytics](analytics-security.md).
 

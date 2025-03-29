@@ -106,9 +106,7 @@ Do the following steps to capture screen recordings from your apps.
    ::: moniker range=">=azure-devops-2020"
    ![Screenshot showing selection of the screen or app to share.](media/collect-diagnostic-data/choose-test-feedback-share.png)
    ::: moniker-end
-   ::: moniker range="=azure-devops-2019"
-   ![Screenshot showing choosing the screen or app to record.](media/collect-diagnostic-data/collect-diagnostic-data-12.png) 
-   ::: moniker-end
+   
 
    If you create a bug while recording your screen, the 
    recording automatically stops and is added to the bug. 

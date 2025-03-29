@@ -51,20 +51,15 @@ Most work item type customizations are made to the work item type XML definition
 - [Rename a work item type](#rename-wit) 
 - [Delete a work item type](#delete-wit) 
 
-
 ## Prerequisites
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 - To list work item types, have your **View project-level information** permission for the project in the collection set to **Allow**.  
 - To add or customize a work item type by customizing a process template, be a member of the Project Collection Administrators group or have your **Edit process** permission set to **Allow**.    
 ::: moniker-end
 
-
-
 To get added as an administrator, see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).
-
-
 
 ## How do modifications to work item types affect existing work items?
 
@@ -118,7 +113,6 @@ To add a custom work item type or modify an existing work item type, you define 
 ![Summary of work item type elements](media/IC729919.png)
 
 The easiest way to add a new work item type is to copy an existing work item type and then modify the definition file. 
-
 
 <a id="modify-field">  </a>
 
@@ -195,7 +189,6 @@ The following illustrations highlight the most common elements on work item form
 
 ![Screenshot of header element within work item web form.](xml/media/weblayout-system-controls-details-page.png)
 
-
 You can customize the form to accomplish the following objectives:  
 
 - [Add or modify a field](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
@@ -208,7 +201,6 @@ You can customize the form to accomplish the following objectives:
 - [Embed HTML text or display dynamic reports](xml/provide-help-text-hyperlinks-web-content-form.md)
 - [Add a links-control page](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements) 
 
-
 <a id="change-wit-backlog-board">  </a>
 
 ## Add or remove a work item type from the backlog or task board
@@ -219,7 +211,6 @@ For example, you can add bugs from the product backlog page.
 
 To learn how to add or remove work item types from the backlog or task board, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md). To add a new work item type to support a portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).
 
-
 <a id="change-wit-color">  </a>
 
 ## Change the color, icon, or workflow state color of a work item type
@@ -228,7 +219,6 @@ In the web portal, work items appear in query results and on the backlog and boa
 
  
 <img src="media/add-modiy-wit-color-icon-state-color.png" alt="Screenshot of Query results showing work item type color, icon, and state color." />  
-
 
 ## Change the type of an existing work item  
 
@@ -242,7 +232,6 @@ If you want to restrict creation of a specific work item type to a group of user
 
 > [!NOTE]   
 > You can't add field rules to restrict the workflow as you can't apply rules to system fields. 
-
 
 <a id="delete-wit">  </a>
 
@@ -269,9 +258,6 @@ witadmin renamewitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection
 When you rename a work item type that belongs to a category, you have to update the categories definition for the project to reflect the new name. In particular, the [backlogs and boards](../boards/backlogs/backlogs-boards-plans.md) will not work until you update the categories definition.
 
 For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories).  
-
-
-
 
 ## Related articles
 

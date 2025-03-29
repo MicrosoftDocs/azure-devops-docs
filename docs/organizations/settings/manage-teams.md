@@ -7,7 +7,7 @@ ms.custom: teams
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/12/2024
 ---
 
@@ -108,7 +108,7 @@ Most of these team settings can be easily configured from the common configurati
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+::: moniker range="<azure-devops-2022"
 
 1. Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu.
 
@@ -144,18 +144,11 @@ For detailed information on each configuration option, see the following article
 |Chart    | - [Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md)        |
 |Boards     | - [Add columns](../../boards/boards/add-columns.md)<br>- [Split columns](../../boards/boards/split-columns.md)<br>- [WIP limits](../../boards/boards/wip-limits.md)<br>- [Definition of Done](../../boards/boards/add-columns.md#definition-of-done)<br>- [Add swimlanes](../../boards/boards/expedite-work.md)<br>- [Card reordering](../../boards/boards/customize-cards.md#reorder-cards)<br>- [Configure status badges](../../boards/github/configure-status-badges.md)        |
 
-
 ## Configure sprint taskboards 
 
 ::: moniker range=">= azure-devops-2020" 
 
 Similar to boards, you can customize each sprint Taskboard to support information-rich color-coded cards and columns. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2020" 
-
-Similar to boards, each sprint Taskboard can be customized to support information-rich, color-coded cards. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
 
 ::: moniker-end
 
@@ -177,14 +170,7 @@ By default, all team members can add and edit team dashboards. In addition, team
 
 Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB and 2560 x 1,024 px, and then we resize to 200 x 200.
 
-
 ![Screenshot to Update team profile picture.](media/team-defaults/update-team-profile-pic-preview.png)
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-Team settings also include the team name, description, and team profile image. To add a team picture. Open the Team Profile and choose the picture icon. The maximum file size is 4 MB.
 
 ::: moniker-end
 

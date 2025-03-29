@@ -6,7 +6,7 @@ ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: tutorial
 ms.date: 02/21/2025
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 

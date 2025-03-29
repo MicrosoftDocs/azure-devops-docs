@@ -1,25 +1,25 @@
 ---
 ms.subservice: azure-devops-ecosystem
 title: Extensions overview
-description: Overview of extensions for Azure DevOps.
+description: Learn about extensions for Azure DevOps, including how to develop, package, publish, and manage them.
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.topic: conceptual
 ms.custom: engagement-fy23
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/27/2023
+ms.date: 03/21/2025
 ---
 
 # Extensions overview
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Extensions are add-ons, which you can use to customize and extend your experience with Azure DevOps. They're written with standard technologies - HTML, JavaScript, CSS - and developed using your preferred development tools.
+Extensions are add-ons that you can use to customize and extend your experience with Azure DevOps. They're written using standard technologies such as HTML, JavaScript, and CSS, and can be developed using your preferred development tools.
 
-Extensions get published at the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), where they can be kept private for you and your team or [shared publicly](publish/publicize.md) with the millions of developers currently using Azure DevOps.
+Extensions are published on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), where they can be kept private for you and your team or [shared publicly](publish/publicize.md) with millions of developers currently using Azure DevOps.
 
-Extensions use our [RESTful API Library](/rest/api/azure/devops/) to easily interact with Azure DevOps and applications/services.
+Extensions use our [RESTful API Library](/rest/api/azure/devops/) to easily interact with Azure DevOps and other applications/services.
 
 ## Understand parts of an extension
 
@@ -74,7 +74,7 @@ To evaluate a Marketplace extension, review the information and resources descri
       **Q & A**
    :::column-end:::
    :::column span="2":::
-      The Q & A section of published extensions might answer questions you have. Also, they're a good mechanism to engage with the extension’s publisher(s) to have a meaningful dialogue to make yourself comfortable. Use the Q & A information to understand the development, testing, and security practices the publisher follows. It also gives you a sense of the publisher's responsiveness. 
+      The Q & A section of published extensions might answer questions you have. Also, they're a good mechanism to engage with the extension’s publishers to have a meaningful dialogue to make yourself comfortable. Use the Q & A information to understand the development, testing, and security practices the publisher follows. It also gives you a sense of the publisher's responsiveness. 
    :::column-end:::
 :::row-end:::
 ---
@@ -99,15 +99,17 @@ To evaluate a Marketplace extension, review the information and resources descri
 
 ### Safety information
 
-- **Malware scan**: The Marketplace runs a virus scan on each new and updated extension package that publishes to ensure its safety. Until the scan is all clear, we don't publish the extension for public usage. If a concern surfaces, the Marketplace team has the means to disable an extension immediately and notify its existing customers. 
-- **Content scan**: The Marketplace scans content for every new and updated extension to avoid surfacing inappropriate or offensive content on the Marketplace pages.
-- **Access to approved scopes only**: An extension can only operate within the granted scopes. For example, an extension that has only read permissions on work items can't modify your features and bugs. Azure DevOps web extensions run in a sandboxed browser IFrame. They're only able to access Azure DevOps data and APIs approved for the extension. During installation, admins are  prompted to approve permissions and scopes. One way to protect yourself is to carefully review the scopes the extension requests.  
+The Marketplace ensures the safety and integrity of extensions through the following measures:
+
+- **Malware scan**: The Marketplace runs a virus scan on each new and updated extension package to ensure its safety. Until the scan is clear, the extension isn't published for public usage. If a concern surfaces, the Marketplace team can disable the extension immediately and notify its existing customers.
+- **Content scan**: The Marketplace scans the content of every new and updated extension to avoid surfacing inappropriate or offensive content on the Marketplace pages.
+- **Access to approved scopes only**: An extension can only operate within the granted scopes. For example, an extension with read-only permissions on work items can't modify your features and bugs. Azure DevOps web extensions run in a sandboxed browser iframe and can only access Azure DevOps data and APIs approved for the extension. During installation, admins are prompted to approve permissions and scopes. To protect yourself, carefully review the scopes the extension requests.
 
     > [!NOTE]  
-	> If the scopes change for an extension, the you must approve the update before it can become applicable on your organization or collection.  
+    > If the scopes change for an extension, you must approve the update before it can be applied to your organization or collection.
 
-- **Third-party build and release tasks**: Tasks are implemented as code that executes on an agent machine. Tasks are only able to access secrets explicitly provided to them (see [variable secrets](../pipelines/process/variables.md?tabs=yaml%252cbatch#secret-variables)), but tasks generally have full access to the agent machine itself. To reduce risk, run builds on Microsoft-hosted agents, which are VMs isolated from other jobs and recycled after each job. Or, limit file and network access on private hosted agent machines. Learn more about [build and release agents](../pipelines/agents/agents.md?view=azure-devops&preserve-view=true#microsoft-hosted-agents).  
-- **Third-party code execution on the server**: There's no way for an extension to install or execute any code on Azure DevOps Server.
+- **Third-party build and release tasks**: Tasks are implemented as code that executes on an agent machine. Tasks can only access secrets explicitly provided to them (see [variable secrets](../pipelines/process/variables.md?tabs=yaml%252cbatch#secret-variables)), but generally have full access to the agent machine itself. To reduce risk, run builds on Microsoft-hosted agents, which are VMs isolated from other jobs and recycled after each job. Alternatively, limit file and network access on private hosted agent machines. Learn more about [build and release agents](../pipelines/agents/agents.md?view=azure-devops&preserve-view=true#microsoft-hosted-agents).
+- **Third-party code execution on the server**: Extensions can't install or execute any code on Azure DevOps Server.
 
 ## Build an extension 
 

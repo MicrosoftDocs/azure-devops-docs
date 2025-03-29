@@ -19,10 +19,6 @@ ms.date: 10/28/2024
 This article explains how to add query-based charts and in-context reports to a dashboard from their respective functional pages. For example, you can add the Team Velocity in-context Analytics report to a dashboard. After adding the report, you can modify the corresponding widget configuration parameters to suit your needs.
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-This article explains how to add charts to a dashboard from their respective functional pages. For example, you can add charts from the Builds, Releases, or Queries pages. After adding the charts, you can customize the widget configuration parameters to meet your specific needs.
-::: moniker-end
-
 ## Prerequisites  
 
 ::: moniker range="azure-devops"
@@ -85,17 +81,6 @@ You can add each of the in-context **Analytics** reports to a dashboard.
    :::image type="content" source="media/add-charts/select-in-context-work-tracking-dashboard.png" alt-text="Screenshot of select the dashboard dialog."::: 
 
 3. (Optional) Open the dashboard and select :::image type="icon" source="media/icons/actions-icon.png" border="false"::: **More actions** for the widget to configure the size or change other chart properties. 
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-
-There are many in-context reports that you can access from the web portal, but can't add to a dashboard. However, you might find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data. If you find a widget that works, add it to the dashboard: 
-
-- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
-- [Learn about team velocity](./team-velocity.md)
-- [View and configure sprint burndown](configure-sprint-burndown.md). See [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
-- [Learn about cumulative flow](./cumulative-flow.md), see [CFD widget](widget-catalog.md)
 
 ::: moniker-end
 

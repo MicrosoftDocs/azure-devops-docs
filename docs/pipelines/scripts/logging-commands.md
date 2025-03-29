@@ -32,7 +32,6 @@ They cover actions like creating new [variables](../process/variables.md), marki
 |Build commands     |  [AddBuildTag](#addbuildtag-add-a-tag-to-the-build), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [UploadLog](#uploadlog-upload-a-log) |
 |Release commands     |    [UpdateReleaseName](#updatereleasename-rename-current-release)     |
 
-
 ## Logging command format 
 
 The general format for a logging command is:
@@ -261,7 +260,6 @@ Set a task as failed. As an alternative, you can also use `exit 1`.
     fi
 ```
 
-
 ### LogDetail: Create or update a timeline record for a task
 
 `##vso[task.logdetail]current operation`
@@ -326,7 +324,7 @@ For more information about output variables, see [set variables in scripts](../p
 
 #### Properties
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 * `variable` = variable name (Required)
 * `isSecret` = boolean (Optional, defaults to false)
 * `isOutput` = boolean (Optional, defaults to false)
@@ -340,7 +338,7 @@ For more information about output variables, see [set variables in scripts](../p
 
 Set the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - bash: |
     echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
@@ -352,7 +350,7 @@ Set the variables:
 
 Read the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - bash: |
     echo "Non-secrets automatically mapped in, sauce is $SAUCE"
@@ -361,12 +359,11 @@ Read the variables:
 ```
 ::: moniker-end
 
-
 # [PowerShell](#tab/powershell)
 
 Set the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - pwsh: |
     Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
@@ -376,10 +373,9 @@ Set the variables:
 ```
 ::: moniker-end
 
-
 Read the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - pwsh: |
     Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
@@ -390,12 +386,11 @@ Read the variables:
 ```
 ::: moniker-end
 
-
 ---
 
 Console output:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```
 Non-secrets automatically mapped in, sauce is crushed tomatoes
 Secrets are not automatically mapped in, secretSauce is 
@@ -404,7 +399,6 @@ Future jobs can also see canned goods
 Future jobs can also see canned goods
 ```
 ::: moniker-end
-
 
 ### SetSecret: Register a value as a secret
 
@@ -519,7 +513,6 @@ Upload and attach attachment to current timeline record. These files aren't avai
 #### Usage
 
 Upload and attach summary Markdown from an .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary appears on the **Extensions** tab of your pipeline run. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering. For more information on Markdown syntax, see the [Markdown Guide](https://www.markdownguide.org/basic-syntax/). 
-
 
 #### Examples
 
@@ -667,11 +660,9 @@ You can automatically generate a build number from tokens you specify in the [pi
 
 `##vso[build.addbuildtag]build tag`
 
-
 #### Usage
 
 Add a tag for current build. You can expand the tag with a predefined or user-defined variable. For example, here a new tag gets added in a Bash task with the value `last_scanned-$(currentDate)`. You can't use a colon with AddBuildTag. 
-
 
 #### Example
 
@@ -684,7 +675,6 @@ Add a tag for current build. You can expand the tag with a predefined or user-de
         echo "##vso[build.addbuildtag]$last_scanned"
     displayName: 'Apply last scanned tag'
 ```
-
 
 ## Release commands
 

@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: how-to
 ms.date: 04/22/2019
 ---
@@ -43,7 +43,6 @@ You can add custom work item types (WITs) or modify existing WITs to add fields,
 
 	<img src="media/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" /> 
 
-
 3. From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. For details, see [Add and manage fields](customize-process-field.md) or [Customize the web layout for a process](customize-process-form.md).    
 
    > [!div class="mx-imgBorder"]  
@@ -69,7 +68,6 @@ You can add custom work item types (WITs) or modify existing WITs to add fields,
 
    > [!div class="mx-imgBorder"]  
    > ![Ticket form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-ticket-form.png) 
-
 
 <a id="overview">  </a>
 
@@ -117,13 +115,11 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 
 To work with WITs programmatically, see [Work Item Types REST API](/rest/api/azure/devops/wit/work%20item%20types). 
 
-
 ## Q & A
 
 [!INCLUDE [temp](includes/qa-custom-work-item-on-backlog.md)] 
 
 ## Related articles  
-
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
