@@ -29,7 +29,13 @@ https://github.com/MicrosoftDocs/pipelines-go
 
 [!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](includes/create-project.md)]
+
+1. In a browser, go to [dev.azure.com](https://dev.azure.com) and sign in.
+1. Select your organization.
+1. Create a new project by selecting **New project** or **Create project** if creating the first project in the organization.
+1. Enter a **Project name**.
+1. Select the **Visibility** for your project.
+1. Select **Create**.
 
 ## Create the pipeline
 
@@ -179,7 +185,7 @@ Use `go build` to build your Go project. Add the following snippet to your `azur
 
 ## Test
 
-Use `go test` to test your go module and its subdirectories (`./...`). Add the following snippet to your `azure-pipelines.yml` file:
+Use `go test` to test your Go module and its subdirectories (`./...`). Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - task: Go@0
@@ -189,7 +195,7 @@ Use `go test` to test your go module and its subdirectories (`./...`). Add the f
     workingDirectory: '$(System.DefaultWorkingDirectory)'
 ```
 
-When you're ready, Commit a new _azure-pipelines.yml_ file to your repository and update the commit message. Select **Save and run**.
+When you're ready, commit a new _azure-pipelines.yml_ file to your repository and update the commit message. Select **Save and run**.
 
    > [!div class="mx-imgBorder"]
    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
@@ -213,4 +219,4 @@ For your Go app, you can also [build an image](containers/build-image.md) and [p
 
 ## Related extensions
 
-[Go extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go) (Microsoft)  
+[Go extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go) 
