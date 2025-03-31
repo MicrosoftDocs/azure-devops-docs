@@ -33,8 +33,8 @@ When you delete test artifacts, the following actions occur:
     - A background job initiates the deletion of all child items from both the TCM data store and the underlying work items.
     - This process might take a few minutes, depending on the number of artifacts being deleted.
 
-3. **Soft-deletion**
-    - All information in both the work item tracking data store and the TCM data store is place into soft-delete status, and can be restored within 14 days.
+3. **Soft-deletion:**
+    - All information in both the work item tracking data store and the TCM data store is placed into soft-delete status, and can be restored within 14 days.
 
 3. **Permanent deletion:**
     - After 14 days, all information in both the work item tracking data store and the TCM data store is permanently deleted.
