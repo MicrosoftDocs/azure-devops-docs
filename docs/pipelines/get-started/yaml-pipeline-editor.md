@@ -2,7 +2,7 @@
 title: YAML pipeline editor guide
 description: Learn how to author and edit pipelines with the YAML pipeline editor.
 ms.topic: reference
-ms.date: 08/17/2023
+ms.date: 03/31/2025
 author: steved0x
 ms.author: sdanie
 monikerRange: "<=azure-devops"
@@ -30,6 +30,9 @@ To access the YAML pipeline editor, do the following steps.
 3. Choose **Edit**.
 
     :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit.png" alt-text="Azure Pipelines YAML edit button.":::
+
+   > [!IMPORTANT]
+   > The YAML pipeline editor is only available for YAML pipelines. If you are presented with a graphical user interface when you choose **Edit**, your pipeline was created using the classic pipeline designer. For information on converting your classic pipelines to YAML, see [Migrate your Classic pipeline to YAML](../release/from-classic-pipelines.md).
 
 4. Make edits to your pipeline using [Intellisense](#use-keyboard-shortcuts) and the [task assistant](#use-task-assistant) for guidance.
 
