@@ -33,11 +33,13 @@ To build and deploy Xcode apps, you need at least one macOS agent. This agent ca
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
+    * macOS 15.0 "Sequoia (preview)"
   * ARM64
     * macOS 11.0 "Big Sur"
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
+    * macOS 15.0 "Sequoia (preview)"
 
 - **Git** - Git 2.9.0 or higher (latest version recommended - you can easily install with [Homebrew](https://brew.sh/))
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
