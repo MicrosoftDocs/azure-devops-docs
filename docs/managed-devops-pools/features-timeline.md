@@ -1,7 +1,7 @@
 ---
 title: Features timeline and roadmap
 description: Learn about new features in Managed DevOps Pools.
-ms.date: 03/25/2025
+ms.date: 03/31/2025
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the new features in Managed DevOps Pools.
 ---
@@ -21,6 +21,8 @@ The following section describes new features in development for Managed DevOps P
 * **Pool creation at the Azure DevOps project level using project level permissions**: To create a Managed DevOps Pool, you must currently be an [Organization-level Agent pools administrator or a Project Collection Administrator in Azure DevOps](./prerequisites.md#verify-azure-devops-permissions). We're enabling a new mode of Managed DevOps Pools creation, requiring only Project-level Agent pools administrator. Managed DevOps Pools created using Project-level Agent pools administrator will be created and enabled only for use in the designated Azure DevOps Project. **Planned for April 2025.**
 
 * **Open access for all pipelines to use a Managed DevOps Pool**: By default, each pipeline must be explicitly authorized to use a newly created Managed DevOps Pool. We're adding an option to enable [Open access for all pipelines](/azure/devops/pipelines/agents/pools-queues#pipeline-permissions) so that administrators don't need to explicitly authorize each pipeline. **Planned for April 2025.**
+
+* **Public Static IP**: We're adding support for public static IP addresses in Managed DevOps Pool to more easily enable access to external resources once [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). **Planned for June 2025.**
 
 * **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for end of 2025.**
 
