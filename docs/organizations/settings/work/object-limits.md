@@ -83,7 +83,7 @@ When you work with teams, work item tags, backlogs, and boards, the following op
 | Team Dashboards | 500 per team. Specific to the team and used to track team-specific metrics and data. |
 | Teams | 5,000 per project |
 | Work item tags | 150,000 tag definitions per organization or collection |
-| Delivery plans per project | 1,000 |
+| Delivery plans per project | 1,500 |
 | Templates per work item type | 100 |
 
 Each backlog can display up to 10,000 work items. This limit applies to what the backlog can display, not to the number of work items you can define, as there's no specific limit. If your backlog exceeds this limit, consider adding a team and moving some work items to the new team's backlog.
