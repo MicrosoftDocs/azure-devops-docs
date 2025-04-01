@@ -35,8 +35,10 @@ These improvements make it easier to track your development progress and maintai
 
 > [!VIDEO ](../../media/github-boards-integration-improvements-1.mp4)
 
+> [!VIDEO (../../media/github-boards-integration-improvements-1.mp4)]
+
 Add video in post or GIF
-> [!VIDEO ] github-boards-integration-improvements-1.mp4
+> [!VIDEO ](github-boards-integration-improvements-1.mp4)
 
 ### Delivery Plans Limit Increased
 
