@@ -21,8 +21,7 @@ Test artifacts such as test plans, test suites, and test cases are all considere
 
 :::moniker range="=azure-devops"
 
-Azure DevOps Services supports a soft-deletion model, where Test Plans amd Test Suites are in a soft-delete state for 14 days after the are deleted. While they are in the soft-delete state, they can be restored.
-
+Azure DevOps Services supports a soft-deletion model, where Test Plans and Test Suites are in a soft-delete state for 14 days after they are deleted. While they are in the soft-delete state, they can be restored.
 When you delete test artifacts, the following actions occur:
 
 1. **Remove from TCM data store:**
