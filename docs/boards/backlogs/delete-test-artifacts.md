@@ -35,8 +35,7 @@ When you delete test artifacts, the following actions occur:
 3. **Soft-deletion:**
     - All information in both the work item tracking data store and the TCM data store is placed into soft-delete status, and can be restored within 14 days.
 
-3. **Permanent deletion:**
-    - After 14 days, all information in both the work item tracking data store and the TCM data store is permanently deleted.
+4. **Permanent deletion:**
     - Deleted data can't be reactivated or restored under any circumstances.
 
 To restore a deleted Test Plan or Test Suite during the 14 day soft-delete phase:
