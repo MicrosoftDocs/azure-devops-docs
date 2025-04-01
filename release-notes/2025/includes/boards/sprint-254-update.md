@@ -40,6 +40,12 @@ These improvements make it easier to track your development progress and maintai
 Add video in post or GIF
 > [!VIDEO ](github-boards-integration-improvements-1.mp4)
 
+
+<video width="640" height="360" controls>
+  <source src="../../media/github-boards-integration-improvements-1.mp4" type="video/mp4">
+  </video>
+
+
 ### Delivery Plans Limit Increased
 
 We increased the maximum Delivery Plan limit per project from 1,000 to 1,500.
