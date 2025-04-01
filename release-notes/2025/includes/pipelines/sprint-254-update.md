@@ -5,6 +5,8 @@ ms.date: 4/2/2025
 ms.topic: include
 ---
 
+### Migrate Agent CDN URL from Edgio endpoint to a custom URL
+
 ### Highlight stage dependencies
 
 YAML pipelines are powerful and, as a consequence, they can get complex.
@@ -21,3 +23,29 @@ Starting with this sprint, were highlighting stage dependencies when you expand 
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of stage dependencies when you expand them.](../../media/254-pipelines-01.png "Screenshot of stage dependencies when you expand them")](../../media/254-pipelines-01.png#lightbox)
+
+
+### Node 16 will be removed from pipelines-* Pipeline agent packages
+
+Agent tasks can be implemented in PowerShell or Node. The agent ships with multiple versions of Node that tasks can target.
+
+As new Node versions are released, [tasks](https://github.com/microsoft/azure-pipelines-tasks) are updated to use new Node versions. The runtimes are included with the agent.
+
+As Node versions exit out of the upstream maintenance window, some Pipelines tasks still depend on it. Azure DevOps updates supported tasks to a supported Node version. Third party tasks may still need older Node versions to run.
+
+To accommodate this, we have 2 flavors of Pipeline agent [packages](https://github.com/microsoft/azure-pipelines-agent/releases):
+
+| Packages             | Node versions | Description                |
+|----------------------|---------------|----------------------------|
+| `vsts-agent-*`       | 6, 10, 16, 20 | Includes all Node versions that can be used as task execution handler |
+| `pipelines-agents-*` | 20            | Includes only recent Node versions. The goal for these packages is to not include any end-of-life version of Node. |
+
+If you want to run a task that requires the Node 16 execution handler on an agent that does not have Node 16 bundled, you can install the execution handler by inserting the [NodeTaskRunnerInstaller@0](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0?view=azure-pipelines) task in your pipeline:
+
+```yaml
+  steps:
+  - task: NodeTaskRunnerInstaller@0
+    inputs:
+      runnerVersion: 16
+```
+

@@ -5,21 +5,26 @@ ms.date: 4/2/2025
 ms.topic: include
 ---
 
-### Publish code coverage results v2 task improvements
+### Switch to Screen Recording as Action Logging is Being Retired
 
-Introducing the ability to associate automated tests written in Java/JUnit (Maven and Gradle), JS (Jest) and Python (PyTest) with manual test cases. 
+Our desktop Azure Test Runner client relies on Problem Steps Recorder (PSR), a tool introduced in Windows 7 that is now being deprecated in newer Windows versions. As a result, the action log functionality in our desktop test runner may no longer work in future updates. 
 
-> [!div class="mx-imgBorder"]
-> [![Screenshot of code coverage.](../../media/254-testplans-01.png "Screenshot of code coverage")](../../media/254-testplans-01.png#lightbox)
-
-Upon completion of the association, you can run your tests within your pipelines using the new [Azure Test Plan](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/azure-test-plan-v0?view=azure-pipelines) task. Additionally, you have the option to run your tests on an ad-hoc basis through the [Test Plans](https://learn.microsoft.com/azure/devops/test/run-automated-tests-from-test-hub?view=azure-devops) experience.
-
-### Default resume for paused test case (Private Preview)
-
-Quickly resume your paused test cases with a single click. We've made "Resume" the default action for paused test cases, allowing you to pick up right where you left off without extra navigation. This update makes it faster and easier to continue your work without interruption. To further protect your progress, we're introducing a confirmation prompt to prevent accidental overwrites of paused test progress. This safeguard ensures your partially saved work stays intact, giving you peace of mind while managing your test runs. Give it a try and let us know via [email](mailto:adocustomerfeedback@service.microsoft.com) what you think!
+To ensure uninterrupted test tracking, we recommend switching to screen recording in our web runner, Test & Feedback Extension, which provides a modern, reliable way to capture and manage test steps. If you need assistance transitioning to the Test & Feedback Extension, please feel free to reach out to our support team.
 
 ### Quick Access to Test Results in Test Case 
 
-Quickly access recent test case results directly from the test case work item. We’ve introduced a new "Recent test results" section that provides direct visibility into the latest test results, eliminating the need to navigate through test plans or suites.  
+You can now quickly access recent test case results directly from the test case work item, making it easier to track progress and stay on top of your testing efforts without navigating through test plans or suites.
 
-With this update, you can review key test details at a glance and track recent test results more efficiently. For deeper insights, we’ve also added a direct link to view the complete result history of the test case, giving you quick access to all past runs in one place. These enhancements aim to streamline your workflow, making it easier to track progress and explore test history without interruptions. Give it a try and let us know via [email](mailto:adocustomerfeedback@service.microsoft.com) what you think!
+We’ve added a new “Recent Test Results” section that displays the top 4 most recent test runs. Each entry includes key information at a glance:
+
+* **Test outcome** (e.g., Passed, Failed) 
+* **Run by** (the user who executed the test) 
+* **Configuration** of the associated test point 
+* **Completed** date of the result 
+
+For deeper analysis, a direct link to the full execution history is also available, allowing you to access all past results for the test case in one place. 
+
+These enhancements are designed to streamline your workflow, improve traceability, and help you quickly find the insights you need. Give it a try and let us know via [email](mailto:adocustomerfeedback@service.microsoft.com) what you think!
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of code coverage.](../../media/254-testplans-02.png "Screenshot of code coverage")](../../media/254-testplans-02.png#lightbox)
