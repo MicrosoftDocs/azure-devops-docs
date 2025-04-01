@@ -33,14 +33,6 @@ These improvements make it easier to track your development progress and maintai
 These improvements make it easier to track your development progress and maintain clean, up-to-date work item associations.
 
 
-> [!VIDEO ](../../media/github-boards-integration-improvements-1.mp4)
-
-> [!VIDEO (../../media/github-boards-integration-improvements-1.mp4)]
-
-Add video in post or GIF
-> [!VIDEO ](github-boards-integration-improvements-1.mp4)
-
-
 <video width="640" height="360" controls>
   <source src="../../media/github-boards-integration-improvements-1.mp4" type="video/mp4">
   </video>
