@@ -3,7 +3,7 @@ title: Deploy a build and release agent on macOS
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.date: 05/06/2024
+ms.date: 04/01/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -33,13 +33,13 @@ To build and deploy Xcode apps, you need at least one macOS agent. This agent ca
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
-    * macOS 15.0 "Sequoia (preview)"
+    * macOS 15.0 "Sequoia"
   * ARM64
     * macOS 11.0 "Big Sur"
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
-    * macOS 15.0 "Sequoia (preview)"
+    * macOS 15.0 "Sequoia"
 
 - **Git** - Git 2.9.0 or higher (latest version recommended - you can easily install with [Homebrew](https://brew.sh/))
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
