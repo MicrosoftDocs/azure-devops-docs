@@ -351,7 +351,7 @@ For more information about hosted Windows, Linux, and macOS agents, see [Microso
 If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/linux-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/osx-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
 
 > [!IMPORTANT]
-> [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/), which requires a new domain URL to be allow-listed in firewall rules for agent softare download.
+> [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/), which requires a new domain URL to be allow-listed in firewall rules for agent software download.
 > The new domain to allow-list for agent download is `https://*.dev.azure.com`. If your firewall rules don't allow wildcards, use `https://download.agent.dev.azure.com`.
 > 
 > The Azure DevOps team recommends to make this change between May 1, 2025 and May 15,2025, at which time you can remove `https://vstsagentpackage.azureedge.net` from your allow-lists.
