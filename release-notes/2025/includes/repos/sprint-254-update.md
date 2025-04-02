@@ -13,15 +13,15 @@ NuGet `Microsoft.TeamFoundationServer.ExtendedClient` package was updated with n
 
 #### TFVC check-in policies changes
 
-We're changing the way TFVC policies are stored on Azure DevOps side, which also means we're updating how NuGet Microsoft.TeamFoundationServer.ExtendedClient communicates with the service. 
+We're making changes to how TFVC check-in policies are stored in Azure DevOps, which also means updates to how the NuGet Microsoft.TeamFoundationServer.ExtendedClient communicates with the service. 
 
 
 
-TFVC projects using check-in policies need to perform migration of the policies to the new format. There are two ways how to approach the migration:
+If your TFVC project uses check-in policies, you’ll need to migrate those policies to the new format. There are two ways to do this:
 
 1. Using Visual Studio.
 
-     Warning: Please ensure you updated Visual Studio to the latest version before proceeding (VS 2022, VS 2019 and VS 2017 with minimal versions `17.14 Preview 3`, `17.13.6`, `17.12.7`, `17.10.13`, `17.8.20`, `16.11.46`, `15.9.72` are supporting the new policies).
+     **Warning**: Please ensure you updated Visual Studio to the latest version before proceeding (VS 2022, VS 2019 and VS 2017 with minimal versions `17.14 Preview 3`, `17.13.6`, `17.12.7`, `17.10.13`, `17.8.20`, `16.11.46`, `15.9.72` are supporting the new policies).
 
 To create new policies using Visual Studio project administrator should open Settings -> Team Project -> Source Control -> Check-in Policy and add new policy (without "Obsolete" mark) with the same parameters as old one:
 
