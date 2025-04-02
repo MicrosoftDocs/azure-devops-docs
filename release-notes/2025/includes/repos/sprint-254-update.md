@@ -19,7 +19,7 @@ We are changing the way TFVC policies are stored on Azure DevOps side, which als
 
 TFVC projects using check-in policies need to perform migration of the policies to the new format. There are two ways how to approach the migration:
 
-1.    Using Visual Studio.
+1. Using Visual Studio.
 
      Warning: Please ensure you updated Visual Studio to the latest version before proceeding (VS 2022, VS 2019 and VS 2017 with minimal versions `17.14 Preview 3`, `17.13.6`, `17.12.7`, `17.10.13`, `17.8.20`, `16.11.46`, `15.9.72` are supporting the new policies).
 
@@ -28,7 +28,7 @@ To create new policies using Visual Studio project administrator should open Set
 > [!div class="mx-imgBorder"]
 > [![Screenshot of before fix](../../media/254-repos-01.png "Screenshot of before fix")](../../media/254-repos-01.png#lightbox)
 
-2.     If you are using custom implementation of `Microsoft.TeamFoundationServer.ExtendedClient` to communicate with server, please follow the [migration guide]().
+2. If you are using custom implementation of `Microsoft.TeamFoundationServer.ExtendedClient` to communicate with server, please follow the [migration guide]().
 
 
 
