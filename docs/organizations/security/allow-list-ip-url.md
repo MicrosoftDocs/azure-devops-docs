@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/19/2025
+ms.date: 04/02/2025
 ---
 
 # Allowed IP addresses and domain URLs
@@ -246,13 +246,16 @@ https://microsoftonline.com
 https://static2.sharepointonline.com
 https://visualstudio.com
 https://vsrm.dev.azure.com
-https://vstsagentpackage.azureedge.net
 https://*.windows.net
 https://{organization_name}.visualstudio.com
 https://{organization_name}.vsrm.visualstudio.com
 https://{organization_name}.vstmr.visualstudio.com
 https://{organization_name}.pkgs.visualstudio.com
 https://{organization_name}.vssps.visualstudio.com
+
+Azure DevOps uses the following URLs to provide the agent software for download for self-hosted agents.
+https://vstsagentpackage.azureedge.net
+https://download.agent.dev.azure.com
 
 Azure DevOps uses content delivery network (CDN) to serve static content. The following URLs are part of that. 
 https://cdn.vsassets.io
@@ -297,7 +300,7 @@ We recommend you open port `443` to all traffic on the following IP addresses an
 |https://cdn.vsassets.io    | Hosts Azure DevOps Content Delivery Networks (CDNs) content        |
 |https://static2.sharepointonline.com    | Hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on        |
 |https://vsrm.dev.azure.com   | Hosts releases        |
-|https://vstsagentpackage.azureedge.net      |  Required to set up self-hosted agent in machines within your network              |
+|https://vstsagentpackage.azureedge.net<br>https://download.agent.dev.azure.com      |  Required to set up self-hosted agent in machines within your network              |
 |https://amp.azure.net   | Needed for deploying to Azure app service           |
 |https://go.microsoft.com  | Accesses go links        |
 

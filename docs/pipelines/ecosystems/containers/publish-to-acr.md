@@ -145,7 +145,7 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
 
     ```PowerShell
     Invoke-WebRequest -URI <YOUR_AGENT_DOWNLOAD_LINK> -UseBasicParsing  -OutFile <FILE_PATH> 
-    ##Example: Invoke-WebRequest -URI https://vstsagentpackage.azureedge.net/agent/2.213.2/vsts-agent-win-x64-2.213.2.zip -OutFile C:\vsts-agent-win-x64-2.213.2.zip
+    ##Example: Invoke-WebRequest -URI https://download.agent.dev.azure.com/agent/4.255.0/vsts-agent-win-x64-4.255.0.zip -OutFile C:\vsts-agent-win-x64-4.255.0.zip
     ```
 
 1. Run the following command to extract and create your agent.
