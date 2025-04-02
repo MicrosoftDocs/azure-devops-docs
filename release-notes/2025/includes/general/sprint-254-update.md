@@ -8,7 +8,7 @@ ms.topic: include
 
 ### No new Azure DevOps OAuth apps beginning April 2025
 
-As of April 2025, we will no longer accept new registrations of Azure DevOps OAuth apps. This is the first step we’ll be taking towards our longer-term vision of sunsetting the Azure DevOps OAuth platform. Moving forward, we’ll be publicly advocating all developers that are building applications on top of Azure DevOps REST APIs to [explore the Microsoft Identity platform](https://learn.microsoft.com/entra/identity-platform/v2-overview) and [registering a new Entra application](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app?tabs=certificate%2Cexpose-a-web-api) instead.
+As of April 2025, we will no longer accept new registrations of Azure DevOps OAuth apps. This is the first step we’re taking towards our longer-term vision of sunsetting the Azure DevOps OAuth platform. Moving forward, we recommend that all developers that  building applications on Azure DevOps REST APIs use the  [explore the Microsoft Identity platform](https://learn.microsoft.com/entra/identity-platform/v2-overview) and [register a new Entra application](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app?tabs=certificate%2Cexpose-a-web-api) instead.
 
 All existing Azure DevOps OAuth apps will continue working until the official end-of-life date in 2026. Learn more in [our blog post here](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
@@ -32,4 +32,4 @@ SNI issues usually manifest by connection errors, such as:
 *   javax.net.ssl.SSLHandshakeException, javax.net.ssl.SSLException
 *   Could not establish trust relationship for the SSL/TLS secure channel
 
-You can validate the SNI-compatibility of your system by calling the status endpoint of Azure DevOps, which we have configured to require SNI. If this call is successful, it indicates that the host, including its operating system and networking environment, is SNI-compatible. For more detailed instructions on how to test, please visit Important Update: Server Name Indication (SNI) Now Mandatory for Azure DevOps Services - Azure DevOps Blog.
+You can validate the SNI-compatibility of your system by calling the status endpoint of Azure DevOps, which we have configured to require SNI. If this call is successful, it indicates that the host, including its operating system and networking environment, is SNI-compatible. For more detailed instructions on how to test, visit our [blog post](https://devblogs.microsoft.com/devops/sni-mandatory-for-azdo-services/).

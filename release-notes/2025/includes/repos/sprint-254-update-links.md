@@ -5,6 +5,6 @@ ms.date: 4/2/2025
 ms.topic: include
 ---
 
-- [BinaryFormatter replacement in ExtendedClient](#binaryformatter-replacement-in-extendedclient)
+- [TFVC check-in policies changes](#tfvc-check-in-policies-changes)
 - [Enhancement to GetRepository API](#enhancement-to-getrepository-api)
 - [Enhancement to Pull Requests Query API](#enhancement-to-pull-requests-query-api)

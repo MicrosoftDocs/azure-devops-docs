@@ -5,7 +5,7 @@ ms.date: 4/2/2025
 ms.topic: include
 ---
 
-### BinaryFormatter replacement in ExtendedClient
+### TFVC check-in policies changes
 
 ## New version (19.254) of Microsoft.TeamFoundationServer.ExtendedClient NuGet package
 NuGet `Microsoft.TeamFoundationServer.ExtendedClient` package was updated with new TFVC policy classes and methods.
@@ -33,8 +33,7 @@ To create new policies using Visual Studio project administrator should open Set
 
 
 The migration is required for keeping TFVC check-in compatible with the future Azure DevOps versions. For the time being, both old (Obsolete) as well as new policies remain valid and functionable.
-For information on the Future Plans, please see our [devblog]().
-
+For information on the Future Plans, please see our [blog post](https://devblogs.microsoft.com/devops/?p=70556&preview=true).
 
 
 ### Enhancement to GetRepository API

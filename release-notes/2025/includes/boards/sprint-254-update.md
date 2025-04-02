@@ -19,7 +19,7 @@ Once the build is complete, the corresponding link will automatically appear on 
 
 ### Boards + GitHub integration improvements
 
-We're continuously improving the Boards + GitHub integration to close usability gaps and bring it in line with the experience you're familiar with in Azure Repos.
+We're continuously improving the Boards + GitHub integration to close usability gaps and align with the experience you're familiar with in Azure Repos.
 
 With this update, we've introduced several improvements to streamline how branches, pull requests, and commits are linked to work items:
 
