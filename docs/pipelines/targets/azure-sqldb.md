@@ -253,19 +253,20 @@ For Classic release pipelines, select **Start with an empty pipeline**, link the
 
 * * *
 
-## Deploying conditionally
+## Deploy database conditionally
 
-You may choose to deploy only certain builds to your Azure database.
+You can choose to deploy only specific builds to your Azure database, giving you more control over which changes are applied based on criteria like the source branch or build status.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="<=azure-devops"
 
 To do this in YAML, you can use one of these techniques:
 
-* Isolate the deployment steps into a separate job, and add a condition to that job.
-* Add a condition to the step.
+* Isolate the deployment steps into a separate job and apply a condition to that job.
 
-The following example shows how to use step conditions to deploy only those builds that originate from main branch.
+* Add a condition directly to the step.
+
+The example below shows how to deploy only builds from the main branch using [conditions](../process/conditions.md):
 
 ```yaml
 - task: SqlAzureDacpacDeployment@1
@@ -279,31 +280,28 @@ The following example shows how to use step conditions to deploy only those buil
     DacpacFile: '<Location of Dacpac file in $(Build.SourcesDirectory) after compilation>'
 ```
 
-To learn more about conditions, see [Specify conditions](../process/conditions.md).
-
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
 
-In your release pipeline, you can implement various checks and conditions to control the deployment.
+With Classic release pipelines, you can implement various checks and conditions to control when and which deployments are triggered. Here are some strategies you can use:
+
+* Use branch filters to set up your [continuous deployment triggers](../release/triggers.md#predeployment-approvals) to trigger a release whenever a new build from a specific branch becomes available.
+
+* Use [pre-deployment approvals](../release/approvals/approvals.md#predeployment-approvals) to designate approvers who can either approve or reject deployment to a specific stage.
+
+* Define a set of [gates](../release/deploy-using-approvals.md#set-up-gates) to ensure that the release pipeline meets specific criteria before deployment without requiring user intervention.
 
 > [!NOTE]
-> In some setups, you might need to allowlist the range of IP addresses for the specific region that is updated in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519). Learn about [networking Microsoft-hosted agents](../agents/hosted.md#networking).
-
-* Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
-* Set **pre-deployment approvals** as a pre-condition for deployment to a stage.
-* Configure **gates** as a pre-condition for deployment to a stage.
-* Specify conditions for a task to run.
-
-For more information, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
+> In some scenarios, you might need allowlist the IP address range for the specific region, which is updated in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519). See [networking Microsoft-hosted agents](../agents/hosted.md#networking) for more details.
 
 * * *
+
 ## More SQL actions
 
-**SQL Azure Dacpac Deployment** may not support all SQL server actions
-that you want to perform. In these cases, you can simply use PowerShell or command-line scripts to run the commands you need.
-This section shows some of the common use cases for invoking the [SqlPackage.exe tool](/sql/tools/sqlpackage-download).
-As a prerequisite to running this tool, you must use a self-hosted agent and have the tool installed on your agent.
+The SQL Azure Dacpac Deployment task might not cover all the SQL server actions you need to perform. In such cases, you can use PowerShell or command-line scripts to execute the required commands.
+
+This section covers common use cases for invoking the [SqlPackage.exe tool](/sql/tools/sqlpackage-download). Before running this tool, make sure you're using a self-hosted agent with the tool installed.
 
 > [!NOTE]
 > If you execute **SQLPackage** from the folder where it is installed, you must prefix the path with `&` and wrap it in double-quotes.
@@ -312,9 +310,9 @@ As a prerequisite to running this tool, you must use a self-hosted agent and hav
 
 `<Path of SQLPackage.exe> <Arguments to SQLPackage.exe>`
 
-You can use any of the following SQL scripts depending on the action that you want to perform
+You can use any of the following SQL scripts based on the action you wish to perform:
 
-### Extract
+#### [Extract](#tab/extract/)
 
 Creates a database snapshot (.dacpac) file from a live SQL server or Microsoft Azure SQL Database.
 
@@ -346,7 +344,7 @@ SqlPackage.exe /TargetFile:"C:\temp\test.dacpac" /Action:Extract /SourceServerNa
 sqlpackage.exe /Action:Extract /?
 ```
 
-### Publish
+#### [Publish](#tab/publish/)
 
 Incrementally updates a database schema to match the schema of a source .dacpac file. If the database doesn’t exist on the server, the publish operation will create it. Otherwise, an existing database will be updated.
 
@@ -370,7 +368,7 @@ SqlPackage.exe /SourceFile:"E:\dacpac\ajyadb.dacpac" /Action:Publish /TargetServ
 sqlpackage.exe /Action:Publish /?
 ```
 
-### Export
+#### [Export](#tab/export/)
 
 Exports a live database, including database schema and user data, from SQL Server or Microsoft Azure SQL Database to a BACPAC package (.bacpac file).
 
@@ -394,7 +392,7 @@ SqlPackage.exe /TargetFile:"C:\temp\test.bacpac" /Action:Export /SourceServerNam
 sqlpackage.exe /Action:Export /?
 ```
 
-### Import
+#### [Import](#tab/import/)
 
 Imports the schema and table data from a BACPAC package into a new user database in an instance of SQL Server or Microsoft Azure SQL Database.
 
@@ -418,7 +416,7 @@ SqlPackage.exe /SourceFile:"C:\temp\test.bacpac" /Action:Import /TargetServerNam
 sqlpackage.exe /Action:Import /?
 ```
 
-### DeployReport
+#### [DeployReport](#tab/deployreport/)
 
 Creates an XML report of the changes that would be made by a publish action.
 
@@ -442,7 +440,7 @@ SqlPackage.exe /SourceFile:"E: \dacpac\ajyadb.dacpac" /Action:DeployReport /Targ
 sqlpackage.exe /Action:DeployReport /?
 ```
 
-### DriftReport
+#### [DriftReport](#tab/driftreport/)
 
 Creates an XML report of the changes that have been made to a registered database since it was last registered.
 
@@ -466,7 +464,7 @@ SqlPackage.exe /Action:DriftReport /TargetServerName:"DemoSqlServer.database.win
 sqlpackage.exe /Action:DriftReport /?
 ```
 
-### Script
+#### [Script](#tab/script/)
 
 Creates a Transact-SQL incremental update script that updates the schema of a target to match the schema of a source.
 
@@ -490,3 +488,13 @@ SqlPackage.exe /Action:Script /SourceFile:"E:\dacpac\ajyadb.dacpac" /TargetServe
 ```command
 sqlpackage.exe /Action:Script /?
 ```
+
+***
+
+## Related content
+
+- [Azure Resource Manager service connections](../library/connect-to-azure.md)
+
+- [Troubleshoot pipeline runs](../troubleshooting/troubleshooting.md)
+
+- [Troubleshoot ARM service connections](../release/azure-rm-endpoint.md)
