@@ -24,18 +24,18 @@ Test artifacts such as test plans, test suites, and test cases are all considere
 Azure DevOps Services supports a soft-deletion model, where Test Plans and Test Suites are in a soft-delete state for 14 days after they are deleted. While they are in the soft-delete state, they can be restored.
 When you delete test artifacts, the following actions occur:
 
-1. **Remove from TCM data store:**
+1. **Remove from TCM data store**
     - The deleted test artifact is removed from the Test Case Management (TCM) data store.
     - The underlying work item associated with the test artifact is deleted.
 
-2. **Delete child items:**
+2. **Delete child items**
     - A background job initiates the deletion of all child items from both the TCM data store and the underlying work items.
     - This process might take a few minutes, depending on the number of artifacts being deleted.
 
-3. **Soft-deletion:**
+3. **Soft-deletion**
     - All information in both the work item tracking data store and the TCM data store is placed into soft-delete status, and can be restored within 14 days.
 
-4. **Permanent deletion:**
+4. **Permanent deletion**
     - Deleted data can't be reactivated or restored under any circumstances.
 
 To restore a deleted Test Plan or Test Suite during the 14 day soft-delete phase:
