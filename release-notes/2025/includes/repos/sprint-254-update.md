@@ -7,11 +7,11 @@ ms.topic: include
 
 ### TFVC check-in policies changes
 
-## New version (19.254) of Microsoft.TeamFoundationServer.ExtendedClient NuGet package
+#### New version (19.254) of Microsoft.TeamFoundationServer.ExtendedClient NuGet package
 NuGet `Microsoft.TeamFoundationServer.ExtendedClient` package was updated with new TFVC policy classes and methods.
 
 
-## TFVC check-in policies changes
+#### TFVC check-in policies changes
 
 We're changing the way TFVC policies are stored on Azure DevOps side, which also means we're updating how NuGet Microsoft.TeamFoundationServer.ExtendedClient communicates with the service. 
 
@@ -40,7 +40,7 @@ For information on the Future Plans, see our [blog post](https://devblogs.micros
 
 We have added `creationDate` property to the response of Repositories - Get Repository API returning repository creation date. The property is available on the API versions `7.2-preview` and higher.
 
-## Enhancement to Pull Requests Query API
+### Enhancement to Pull Requests Query API
 
 We have introduced a new `Label` property in the response of Pull Request Query - Get API. You can now specify whether to include labels (tags) for related pull requests in every query.
 A new `Include` property is available - if set to Labels, the response includes labels for the specified PRs.
