@@ -1,8 +1,8 @@
 ---
 title: Deploy to Azure SQL Database
-description: Deploy to an Azure SQL database from Azure Pipelines
+description: Learr how to deploy an Azure SQL database from Azure Pipelines.
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/19/2025
 monikerRange: '<= azure-devops'
 ---
@@ -13,14 +13,35 @@ monikerRange: '<= azure-devops'
 
 You can automatically deploy your database updates to Azure SQL database after every successful build.
 
+## Prerequisites
+
+| **Product**        |    **Requirements**            |
+|--------------------|--------------------------------|
+| **Azure DevOps**   | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - **Permissions:**<br>    &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections, you must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md). |
+
 ## DACPAC
 
-The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes and data. You can create a DACPAC using the **SQL database project** in Visual Studio.
+The simplest way to deploy a database is by using a [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs allow you to package and deploy schema changes and data. You can create a DACPAC using the **SQL Database Project** in Visual Studio.
+
+The [Azure SQL Database deployment](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1) task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure.
+
+::: moniker range="azure-devops"
+
+The easiest way to get started with this task is to be signed in as a user that owns both the Azure DevOps organization and the Azure subscription.
+In this case, you won't have to manually create the service connection. Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+To learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
+
+::: moniker-end
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="<=azure-devops"
 
-To deploy a DACPAC to an Azure SQL database, add the following snippet to your azure-pipelines.yml file.
+To deploy a DACPAC to an Azure SQL database, use the [Azure SQL Database deployment task](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1). Add the following snippet to your YAML file:
 
 ```yaml
 - task: SqlAzureDacpacDeployment@1
@@ -37,16 +58,20 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your a
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
 
-When setting up a release pipeline, choose **Start with an empty pipeline**, link the artifacts from build, and then add an [Azure SQL Database Deployment](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1) task.
+When setting up a build pipeline, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
+
+:::image type="content" source="media/classic-pipeline-templates.png" alt-text="A screenshot displaying Classic pipeline templates.":::
+
+For Classic release pipelines, select **Start with an empty pipeline**, link the artifacts from your build pipeline, and then add the [Azure SQL Database Deployment](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1) task.
+
+:::image type="content" source="media/release-pipeline-sql-database-task.png" alt-text="A screenshot displaying how to set up a Classic release pipeline for database deployment.":::
 
 * * *
-See also [authentication information when using the Azure SQL Database Deployment task](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1).
 
 ## SQL scripts
 
-Instead of using a DACPAC, you can also use SQL scripts to deploy your database. Here’s a simple example of a SQL script that creates an empty database.
+Alternatively, you can use SQL scripts instead of DACPAC to deploy your database. Below is a simple SQL script that creates an empty database:
 
 ```sql
   USE [main]
@@ -56,9 +81,11 @@ Instead of using a DACPAC, you can also use SQL scripts to deploy your database.
   GO
 ```
 
-To run SQL scripts as part of a pipeline, you’ll need Azure PowerShell scripts to create and remove firewall rules in Azure. Without the firewall rules, the Azure Pipelines agent can’t communicate with Azure SQL Database.
+To run SQL scripts from your pipeline, you'll need to add and remove firewall rules in Azure. Without these rules, the Azure Pipelines agent cannot communicate with Azure SQL Database.
 
-The following PowerShell script creates firewall rules. You can check in this script as `SetAzureFirewallRule.ps1` into your repository.
+#### Set Azure firewall rules
+
+The following PowerShell script creates firewall rules. Save it as `SetAzureFirewallRule.ps1` and add it to your repository:
 
 #### [ARM](#tab/arm/)
 
@@ -108,7 +135,9 @@ else
 ```
 * * *
 
-The following PowerShell script removes firewall rules. You can check in this script as `RemoveAzureFirewallRule.ps1` into your repository.
+#### Remove Azure firewall rules
+
+The following PowerShell script removes firewall rules. Save it as `RemoveAzureFirewallRule.ps1` and add it to your repository:
 
 #### [ARM](#tab/arm/)
 
@@ -143,11 +172,13 @@ if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $F
 ```
 * * *
 
+#### Deploy database with SQL scripts
+
+The following example outlines the steps to add firewall rules, deploy your database using SQL scripts, and then remove the firewall rules:
+
 #### [YAML](#tab/yaml/)
 
 ::: moniker range="<=azure-devops"
-
-Add the following to your azure-pipelines.yml file to run a SQL script.
 
 ```yaml
 variables:
@@ -162,7 +193,7 @@ variables:
 
 steps:
 - task: AzurePowerShell@5
-  displayName: 'Azure PowerShell script'
+  displayName: 'Set Azure firewall rules'
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptType: filePath
@@ -172,22 +203,22 @@ steps:
 
 - task: PowerShell@2
   inputs:
+  displayName: 'Install SqlServer module if not present'
     targetType: 'inline'
     script: |
       if (-not (Get-Module -ListAvailable -Name SqlServer)) {
           Install-Module -Name SqlServer -Force -AllowClobber
       }
-  displayName: 'Install SqlServer module if not present'
 
 - task: PowerShell@2
+  displayName: 'Deploy database'
   inputs:
     targetType: 'inline'
     script: |
       Invoke-Sqlcmd -InputFile $(SQLFile) -ServerInstance $(ServerFqdn) -Database $(DatabaseName) -Username $(AdminUser) -Password $(AdminPassword)
-  displayName: 'Run SQL script'
 
 - task: AzurePowerShell@5
-  displayName: 'Azure PowerShell script'
+  displayName: 'Remove Azure firewall rules'
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptType: filePath
@@ -200,13 +231,13 @@ steps:
 
 #### [Classic](#tab/classic/)
 
-When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure PowerShell scripts to configure firewall rules are part of the build artifact.
+For Classic pipelines, ensure that both the SQL script for deploying the database and the Azure PowerShell scripts for configuring firewall rules are included as part of the build artifact.
 
-When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
+For Classic release pipelines, select **Start with an empty pipeline**, link the artifacts from your build pipeline, and then add the following tasks:
 
-1. Use the [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
+1. Use the [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to add a firewall rule in Azure, allowing the Azure Pipelines agent to connect to the Azure SQL Database. The script requires one argument - the name of the SQL server you created.
 
-1. Use the [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task to invoke SQLCMD and execute your scripts. Add the following inline script to your task:
+1. Use the [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task to invoke SQLCMD and execute your scripts. Use the following inline script:
 
     ```PowerShell
     if (-not (Get-Module -ListAvailable -Name SqlServer)) {
@@ -221,24 +252,6 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
     :::image type="content" source="media/sql-add-firewall-rules.png" alt-text="A screenshot displaying a classic pipeline to add firewall rules and run SQL scripts.":::
 
 * * *
-
-## Azure service connection
-
-The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure.
-
-::: moniker range="azure-devops"
-
-The easiest way to get started with this task is to be signed in as a user that owns both the Azure DevOps organization and the Azure subscription.
-In this case, you won't have to manually create the service connection.
-Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-To learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
-
-::: moniker-end
 
 ## Deploying conditionally
 
