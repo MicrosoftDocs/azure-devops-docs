@@ -38,7 +38,9 @@ These improvements make it easier to track your development progress and maintai
   </video>
 
 
+> [!div class="mx-imgBorder"]
+> ![Gif to github boards integration improvements.](../../media/254-boards-01.gif "gif to github boards integration improvements")
+
 ### Delivery Plans Limit Increased
 
 We increased the maximum Delivery Plan limit per project from 1,000 to 1,500.
-

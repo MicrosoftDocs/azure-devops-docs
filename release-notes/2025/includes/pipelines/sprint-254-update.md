@@ -5,24 +5,9 @@ ms.date: 4/2/2025
 ms.topic: include
 ---
 
-### Migrate Agent CDN URL from Edgio endpoint to a custom URL
+### New Agent CDN
 
-### Highlight stage dependencies
-
-YAML pipelines are powerful and, as a consequence, they can get complex.
-
-Imagine you have a pipeline that deploys to multiple Azure regions like in the following example.
-
-> [!div class="mx-imgBorder"]
-> [![Screenshot of pipeline that deploys to multiple Azure region.](../../media/254-pipelines-01.png "Screenshot of pipeline that deploys to multiple Azure region")](../../media/254-pipelines-01.png#lightbox)
-
-
-It's not easy to tell the dependencies between stages. For example, CUS3 depends on WUS2 and WUS3, but does it depend on WUS1? You cant tell just by looking at the stage map.
-
-Starting with this sprint, were highlighting stage dependencies when you expand them. So, if you expand the CUS3 stage, you'll see it depends on WUS1, WUS2, and WUS3.
-
-> [!div class="mx-imgBorder"]
-> [![Screenshot of stage dependencies when you expand them.](../../media/254-pipelines-01.png "Screenshot of stage dependencies when you expand them")](../../media/254-pipelines-01.png#lightbox)
+As Edgio CDN is being retired, the domain URL owned by Edgio `https://vstsagentpackage.azureedge.net`&nbsp;will also be retired. We are adding a new domain URL `https://download.agent.dev.azure.com`&nbsp; supported by the new CDN. Customers need to add this new domain URL to their firewall allow list. Agent package downloads for self-hosted agents will fail once the old domain URL is removed. Please refer to the [post](https://devblogs.microsoft.com/devops/?p=70526&amp;preview=1&amp;_ppp=5a164c9044) for more details.
 
 
 ### Node 16 will be removed from pipelines-* Pipeline agent packages
@@ -48,4 +33,24 @@ If you want to run a task that requires the Node 16 execution handler on an agen
     inputs:
       runnerVersion: 16
 ```
+
+### Highlight stage dependencies
+
+YAML pipelines are powerful and, as a consequence, they can get complex.
+
+Imagine you have a pipeline that deploys to multiple Azure regions like in the following example.
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of pipeline that deploys to multiple Azure region.](../../media/254-pipelines-01.png "Screenshot of pipeline that deploys to multiple Azure region")](../../media/254-pipelines-01.png#lightbox)
+
+
+It's not easy to tell the dependencies between stages. For example, CUS3 depends on WUS2 and WUS3, but does it depend on WUS1? You cant tell just by looking at the stage map.
+
+Starting with this sprint, were highlighting stage dependencies when you expand them. So, if you expand the CUS3 stage, you'll see it depends on WUS1, WUS2, and WUS3.
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of stage dependencies when you expand them.](../../media/254-pipelines-01.png "Screenshot of stage dependencies when you expand them")](../../media/254-pipelines-01.png#lightbox)
+
+
+
 

@@ -7,24 +7,13 @@ ms.topic: include
 
 ### Switch to Screen Recording as Action Logging is Being Retired
 
-Our desktop Azure Test Runner client relies on Problem Steps Recorder (PSR), a tool introduced in Windows 7 that is now being deprecated in newer Windows versions. As a result, the action log functionality in our desktop test runner may no longer work in future updates. 
+Our desktop Azure Test Runner client relies on [Problem Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47) (PSR), a tool introduced in Windows 7 that is now [being deprecated](https://support.microsoft.com/windows/steps-recorder-deprecation-a64888d7-8482-4965-8ce3-25fb004e975f) in newer Windows versions. As a result, the action log functionality in our desktop test runner may no longer work in future updates. 
 
-To ensure uninterrupted test tracking, we recommend switching to screen recording in our web runner, Test & Feedback Extension, which provides a modern, reliable way to capture and manage test steps. If you need assistance transitioning to the Test & Feedback Extension, please feel free to reach out to our support team.
+To ensure uninterrupted test tracking, we recommend switching to screen recording in our web runner, [Test & Feedback Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web), which provides a modern, reliable way to capture and manage test steps. If you need assistance transitioning to the Test & Feedback Extension, please feel free to reach out to our support team.
 
-### Quick Access to Test Results in Test Case 
+### Auto-pause manual test run 
 
-You can now quickly access recent test case results directly from the test case work item, making it easier to track progress and stay on top of your testing efforts without navigating through test plans or suites.
-
-We’ve added a new “Recent Test Results” section that displays the top 4 most recent test runs. Each entry includes key information at a glance:
-
-* **Test outcome** (e.g., Passed, Failed) 
-* **Run by** (the user who executed the test) 
-* **Configuration** of the associated test point 
-* **Completed** date of the result 
-
-For deeper analysis, a direct link to the full execution history is also available, allowing you to access all past results for the test case in one place. 
-
-These enhancements are designed to streamline your workflow, improve traceability, and help you quickly find the insights you need. Give it a try and let us know via [email](mailto:adocustomerfeedback@service.microsoft.com) what you think!
+Never lose progress on your test runs with auto-pause test case run. This new feature automatically pauses your test case run if your work is interrupted, ensuring that partial progress is saved without needing a manual pause. Whether you step away or close the session, you can easily resume your test case right where you left off, reducing the risk of data loss and improving your workflow. By simplifying the pause and resume process, auto-pause helps you stay focused on testing without worrying about losing your progress. Give it a try and let us know via [email](mailto:adocustomerfeedback@service.microsoft.com) what you think!
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of code coverage.](../../media/254-testplans-02.png "Screenshot of code coverage")](../../media/254-testplans-02.png#lightbox)
+> ![Gif to demo Undo test step in web and desktop runner.](../../media/254-testplans-01.gif "gif to demo Undo test step in web and desktop runner")
