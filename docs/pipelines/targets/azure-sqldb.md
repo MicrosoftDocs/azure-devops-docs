@@ -3,7 +3,7 @@ title: Deploy to Azure SQL Database
 description: Learr how to deploy an Azure SQL database from Azure Pipelines.
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: how-to
-ms.date: 03/19/2025
+ms.date: 04/02/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -286,7 +286,7 @@ The example below shows how to deploy only builds from the main branch using [co
 
 With Classic release pipelines, you can implement various checks and conditions to control when and which deployments are triggered. Here are some strategies you can use:
 
-* Use branch filters to set up your [continuous deployment triggers](../release/triggers.md#predeployment-approvals) to trigger a release whenever a new build from a specific branch becomes available.
+* Use branch filters to set up your [continuous deployment triggers](../release/triggers.md#continuous-deployment-triggers) to trigger a release whenever a new build from a specific branch becomes available.
 
 * Use [pre-deployment approvals](../release/approvals/approvals.md#predeployment-approvals) to designate approvers who can either approve or reject deployment to a specific stage.
 
