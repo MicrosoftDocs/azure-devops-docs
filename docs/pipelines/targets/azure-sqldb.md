@@ -1,6 +1,6 @@
 ---
 title: Deploy to Azure SQL Database
-description: Learr how to deploy an Azure SQL database from Azure Pipelines.
+description: Learn how to deploy an Azure SQL database with Azure Pipelines.
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: how-to
 ms.date: 04/02/2025
@@ -293,7 +293,7 @@ With Classic release pipelines, you can implement various checks and conditions 
 * Define a set of [gates](../release/deploy-using-approvals.md#set-up-gates) to ensure that the release pipeline meets specific criteria before deployment without requiring user intervention.
 
 > [!NOTE]
-> In some scenarios, you might need allowlist the IP address range for the specific region, which is updated in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519). See [networking Microsoft-hosted agents](../agents/hosted.md#networking) for more details.
+> In some scenarios, you might need to allowlist IP address ranges for a specific region. These ranges are updated weekly and can be downloaded as a [JSON file](https://www.microsoft.com/download/details.aspx?id=56519). See [networking Microsoft-hosted agents](../agents/hosted.md#networking) for more details.
 
 * * *
 
