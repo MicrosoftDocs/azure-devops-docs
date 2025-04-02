@@ -66,6 +66,51 @@ To use this variable, add `DependencyScanning.Timeout` as a pipeline variable:
     DependencyScanning.Timeout: 600
 ```
 
+## Dependency scanning publishing results to the incorrect repository 
+
+If you have a pipeline definition housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results may be processed and submitted to the incorrect repository, publishing to the repository containing the pipeline definition rather than the source code repository.
+
+To enable proper result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+
+Alternatively, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
+
+>[!div class="tabbedCodeSnippets"]
+```yaml
+trigger:
+  - main
+
+resources:
+  repositories:
+    - repository: BicepGoat
+      type: git
+      name: BicepGoat
+      ref: refs/heads/main
+      trigger:
+        - main
+
+jobs:
+  # Explicit - `advancedsecurity.publish.repository` explicitly defines the repository to submit SARIF to.
+  - job: "AdvancedSecurityDependencyScanningExplicit"
+    displayName: "🛡 Dependency scanning (Explicit)"
+    variables:
+      advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['BicepGoat']) ]
+    steps:
+      - checkout: BicepGoat
+      - task: AdvancedSecurity-Dependency-Scanning@1
+        displayName: Dependency Scanning
+
+  # Infer - `advancedsecurity.publish.repository.infer` specifies that the `AdvancedSecurity-Publish` must
+  # infer repository to submit SARIF to from the working directory on the build agent.
+  - job: "AdvancedSecurityDependencyScanningInfer"
+    displayName: "🛡 Dependency scanning (Infer)"
+    variables:
+      advancedsecurity.publish.repository.infer: true
+    steps:
+      - checkout: BicepGoat
+      - task: AdvancedSecurity-Dependency-Scanning@1
+        displayName: Dependency Scanning
+```
+
 ## Break-glass scenario for build task
 
 If the dependency scanning build task is blocking a successful execution of your pipeline and you need to urgently skip the build task, you can set a pipeline variable `DependencyScanning.Skip: true`.
