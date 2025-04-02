@@ -7,7 +7,7 @@ ms.topic: include
 
 ### New Agent CDN
 
-As Edgio CDN is being retired, the domain URL owned by Edgio `https://vstsagentpackage.azureedge.net`&nbsp;will also be retired. We are adding a new domain URL `https://download.agent.dev.azure.com`&nbsp; supported by the new CDN. Customers need to add this new domain URL to their firewall allow list. Agent package downloads for self-hosted agents will fail once the old domain URL is removed. Please refer to the [post](https://devblogs.microsoft.com/devops/?p=70526&amp;preview=1&amp;_ppp=5a164c9044) for more details.
+As Edgio CDN is being retired, the domain URL owned by Edgio `https://vstsagentpackage.azureedge.net`&nbsp;will also be retired. We're adding a new domain URL `https://download.agent.dev.azure.com`&nbsp; supported by the new CDN. Customers need to add this new domain URL to their firewall allowlist. Agent package downloads for self-hosted agents will fail once the old domain URL is removed. Refer to the [post](https://devblogs.microsoft.com/devops/?p=70526&amp;preview=1&amp;_ppp=5a164c9044) for more details.
 
 
 ### Node 16 will be removed from pipelines-* Pipeline agent packages
