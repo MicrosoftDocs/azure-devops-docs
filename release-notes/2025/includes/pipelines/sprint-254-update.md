@@ -5,6 +5,21 @@ ms.date: 4/3/2025
 ms.topic: include
 ---
 
+### Improved visibility into YAML Pipeline stage dependencies
+
+YAML pipelines provide flexibility for managing complex workflows, but visualizing stage dependencies has been a challenge—especially in multi-region deployments.
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of pipeline that deploys to multiple Azure region.](../../media/254-pipelines-01.png "Screenshot of pipeline that deploys to multiple Azure region")](../../media/254-pipelines-01.png#lightbox)
+
+
+In scenarios where stages depend on multiple others, the stage map alone doesn’t offer sufficient clarity. For example, determining whether CUS3 depends on WUS1 in addition to WUS2 and WUS3 has required reviewing the YAML directly.
+
+With this sprint, stage dependencies are now displayed when a stage is expanded, providing immediate insight into execution order and upstream requirements.
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of stage dependencies when you expand them.](../../media/254-pipelines-01.png "Screenshot of stage dependencies when you expand them")](../../media/254-pipelines-01.png#lightbox)
+
 ### New Agent CDN
 
 As Edgio CDN is being retired, the domain URL owned by Edgio `https://vstsagentpackage.azureedge.net`&nbsp;will also be retired. We're adding a new domain URL `https://download.agent.dev.azure.com`&nbsp; supported by the new CDN. Be sure to add this new domain URL to your firewall allowlist. Agent package downloads for self-hosted agents will fail once the old domain URL is removed. Refer to the [post](https://devblogs.microsoft.com/devops/?p=70526&amp;preview=1&amp;_ppp=5a164c9044) for more details.
@@ -33,20 +48,3 @@ If you want to run a task that requires the Node 16 execution handler on an agen
     inputs:
       runnerVersion: 16
 ```
-
-### Improved visibility into YAML Pipeline stage dependencies
-
-YAML pipelines provide flexibility for managing complex workflows, but visualizing stage dependencies has been a challenge—especially in multi-region deployments.
-
-> [!div class="mx-imgBorder"]
-> [![Screenshot of pipeline that deploys to multiple Azure region.](../../media/254-pipelines-01.png "Screenshot of pipeline that deploys to multiple Azure region")](../../media/254-pipelines-01.png#lightbox)
-
-
-In scenarios where stages depend on multiple others, the stage map alone doesn’t offer sufficient clarity. For example, determining whether CUS3 depends on WUS1 in addition to WUS2 and WUS3 has required reviewing the YAML directly.
-
-With this sprint, stage dependencies are now displayed when a stage is expanded, providing immediate insight into execution order and upstream requirements.
-
-> [!div class="mx-imgBorder"]
-> [![Screenshot of stage dependencies when you expand them.](../../media/254-pipelines-01.png "Screenshot of stage dependencies when you expand them")](../../media/254-pipelines-01.png#lightbox)
-
-

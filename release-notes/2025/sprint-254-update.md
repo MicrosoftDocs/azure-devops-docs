@@ -9,7 +9,7 @@ description: Azure DevOps service updates and integration improvements
 
 With this update, we’re making key service updates to help ensure your Azure DevOps environment remains secure. This includes ending support for new OAuth app registrations starting in April 2025, though existing apps will continue working until full retirement in 2026. Additionally, Server Name Indication (SNI) will be required for all HTTPS connections beginning April 23, along with updates to TFVC check-in policies in Azure Repos.
 
-We’re excited to announce the latest improvement in our Azure Boards + GitHub integration, making it easier to link branches, pull requests, and commits to work items. In addition, Pipelines now provides greater visibility into YAML stage dependencies, helping teams manage more complex workflows with improved efficiency.
+Alongside these updates, we’re excited to announce the latest improvements in our Azure Boards + GitHub integration, making it easier to link branches, pull requests, and commits to work items. In addition, Pipelines now provides greater visibility into YAML stage dependencies, helping teams manage more complex workflows with improved efficiency.
 
 Check out the release notes for details.
 
