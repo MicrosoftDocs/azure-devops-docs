@@ -147,7 +147,7 @@ All of them are HTTPS, unless otherwise stated.
 * Highly secure endpoints that our service depends on:
   *  `*.prod.manageddevops.microsoft.com` - Managed DevOps Pools endpoint
   *  `rmprodbuilds.azureedge.net` - Worker binaries
-  *  `vstsagentpackage.azureedge.net` - Azure DevOps agent CDN location
+  *  `vstsagentpackage.azureedge.net` and `https://download.agent.dev.azure.com` - Azure DevOps agent CDN location
   *  `*.queue.core.windows.net` - Worker queue for communicating with Managed DevOps Pools service
   *  `server.pipe.aria.microsoft.com` - Common client side telemetry solution (and used by the Agent Pool Validation extension among others)
   *  `azure.archive.ubuntu.com` - Provisioning Linux machines - this is HTTP, not HTTPS
