@@ -3,7 +3,7 @@ title: Azure DevOps release notes - Azure DevOps Sprint 254 Update
 description: See the Sprint 254 feature updates for Azure DevOps, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 4/2/2025
+ms.date: 4/3/2025
 ---
 
 # Azure DevOps - Sprint 254 Update

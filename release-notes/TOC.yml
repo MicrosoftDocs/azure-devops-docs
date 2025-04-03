@@ -10,7 +10,7 @@
       items:
         - name: "2025"
           items:
-          - name: April 2
+          - name: April 3
             href: 2025/sprint-254-update.md
           - name: March 20
             href: 2025/sprint-253-update.md
@@ -284,7 +284,7 @@
         items:
         - name: "2025"
           items:
-          - name: April 2
+          - name: April 3
             href: 2025/boards/sprint-254-update.md
           - name: February 24
             href: 2025/boards/sprint-252-update.md
@@ -444,7 +444,7 @@
         items:
         - name: "2025"
           items:
-          - name: April 2
+          - name: April 3
             href: 2025/repos/sprint-254-update.md
           - name: January 17
             href: 2025/repos/sprint-248-update.md
@@ -534,7 +534,7 @@
         items:
         - name: "2025"
           items:
-          - name: April 2
+          - name: April 3
             href: 2025/pipelines/sprint-254-update.md
           - name: March 20
             href: 2025/pipelines/sprint-253-update.md
@@ -760,7 +760,7 @@
         items:
         - name: "2025"
           items:
-          - name: April 2
+          - name: April 3
             href: 2025/testplans/sprint-254-update.md
           - name: March 20
             href: 2025/testplans/sprint-253-update.md
@@ -927,7 +927,7 @@
         items:
         - name: "2025"
           items:
-          - name: April 2
+          - name: April 3
             href: 2025/general/sprint-254-update.md 
           - name: March 20
             href: 2025/general/sprint-253-update.md 

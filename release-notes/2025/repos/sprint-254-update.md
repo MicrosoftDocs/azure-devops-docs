@@ -3,7 +3,7 @@ title: Azure DevOps Release Notes - Azure Repos Sprint 254 Update
 description: See the Sprint 254 feature updates for Azure Repos, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 4/2/2025
+ms.date: 4/3/2025
 ---
 
 # Azure Repos - Sprint 254 Update
