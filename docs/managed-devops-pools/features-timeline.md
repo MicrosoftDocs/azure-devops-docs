@@ -36,7 +36,7 @@ The following section describes new features in development for Managed DevOps P
 
 The following features were released in Managed DevOps Pools in March 2025.
 
-* **Managed DevOps Pools supported in more Azure regions**: Managed DevOps Pools is now available in Central India and West India, allowing you to leverage regional resources for optimized performance and compliance. To see the Azure regions that support Managed DevOps Pools in your subscription, [register the Microsoft.DevOpsInfrastructure provider in your subscription and view the supported locations](prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
+* **Managed DevOps Pools supported in more Azure regions**: Managed DevOps Pools is now available in **(Central Asia) Jio Central India** and **(Central Asia) Jio West India**, allowing you to leverage regional resources for optimized performance and compliance. To see the Azure regions that support Managed DevOps Pools in your subscription, [register the Microsoft.DevOpsInfrastructure provider in your subscription and view the supported locations](prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
 
 * **Ubuntu 24.04 Azure Pipelines Image**: Ubuntu 24.04 is supported for [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images), and it's now supported for [Azure Pipelines images](./configure-images.md#azure-pipelines-images).
 
