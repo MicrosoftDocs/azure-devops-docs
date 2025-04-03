@@ -36,7 +36,9 @@ If you're running an agent in a secure network behind a firewall, make sure the 
 > [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/), which requires a new domain URL to be allow-listed in firewall rules for agent software download.
 > The new domain to allow-list for agent download is `https://*.dev.azure.com`. If your firewall rules don't allow wildcards, use `https://download.agent.dev.azure.com`.
 > 
-> The Azure DevOps team recommends to make this change between May 1, 2025 and May 15,2025, at which time you can remove `https://vstsagentpackage.azureedge.net` from your allow-lists.
+> The Azure DevOps team recommends to make this change by the following date:
+> - May 1, 2025 for Azure DevOps Services
+> - May 15, 2025 for Azure DevOps Server
 >
 > For more information, see [CDN Domain URL change for Agents in Pipelines](https://devblogs.microsoft.com/devops/?p=70526).
 
