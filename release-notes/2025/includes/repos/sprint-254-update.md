@@ -17,18 +17,18 @@ We're making changes to how TFVC check-in policies are stored in Azure DevOps, w
 
 
 
-If your TFVC project uses check-in policies, you’ll need to migrate those policies to the new format. There are two ways to do this:
+If your TFVC project uses check-in policies, migrate those policies to the new format. There are two ways to do this:
 
 1. Using Visual Studio.
 
-     **Warning**: Please ensure you updated Visual Studio to the latest version before proceeding (VS 2022, VS 2019 and VS 2017 with minimal versions `17.14 Preview 3`, `17.13.6`, `17.12.7`, `17.10.13`, `17.8.20`, `16.11.46`, `15.9.72` are supporting the new policies).
+     **Warning**: Ensure you updated Visual Studio to the latest version before proceeding (VS 2022, VS 2019, and VS 2017 with minimal versions `17.14 Preview 3`, `17.13.6`, `17.12.7`, `17.10.13`, `17.8.20`, `16.11.46`, `15.9.72` are supporting the new policies).
 
 To create new policies using Visual Studio project administrator should open Settings -> Team Project -> Source Control -> Check-in Policy and add new policy (without "Obsolete" mark) with the same parameters as old one:
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of before fix](../../media/254-repos-01.png "Screenshot of before fix")](../../media/254-repos-01.png#lightbox)
 
-2. If you are using custom implementation of `Microsoft.TeamFoundationServer.ExtendedClient` to communicate with server, please follow the [migration guide]().
+2. If you're using custom implementation of `Microsoft.TeamFoundationServer.ExtendedClient` to communicate with server, please follow the [migration guide]().
 
 
 
