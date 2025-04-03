@@ -35,6 +35,6 @@ Once the build is complete, the corresponding link will automatically appear on 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of integrated in build.](../../media/254-boards-02.png "Screenshot of integrated in build")](../../media/254-boards-02.png#lightbox)
 
-### Delivery Plans Limit Increased
+### Delivery Plans limit increased
 
 Previously, we limited the Delivery Plans per project to 1,000. With this update, we have increased the maximum Delivery Plans per project to 1,500. You can learn more about adding and editing Delivery Plans in the documentation [here](https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops).

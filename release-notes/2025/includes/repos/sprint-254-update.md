@@ -20,7 +20,7 @@ If your TFVC project uses check-in policies, migrate those policies to the new f
 
 1. Using Visual Studio.
 
-     > [!WARNING]
+> [!WARNING]
 > Dangerous certain consequences of an action.: Ensure you updated Visual Studio to the latest version before proceeding (VS 2022, VS 2019, and VS 2017 with minimal versions `17.14 Preview 3`, `17.13.6`, `17.12.7`, `17.10.13`, `17.8.20`, `16.11.46`, `15.9.72` are supporting the new policies).
 
 To create new policies using Visual Studio project administrator should open **Settings** -> Team Project -> Source Control -> Check-in Policy and add new policy (without "Obsolete" mark) with the same parameters as old one:
