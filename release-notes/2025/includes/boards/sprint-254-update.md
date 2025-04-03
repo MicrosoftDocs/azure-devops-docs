@@ -5,18 +5,6 @@ ms.date: 4/3/2025
 ms.topic: include
 ---
 
-### GitHub Integration: Build Links for YAML Pipelines
-
-We're committed to achieving feature parity between YAML and Classic Pipelines. One key missing feature was the ability to provide an "Integrated in build" link when your repository is hosted in GitHub. With our latest release, we've addressed this gap by adding an option in YAML pipeline settings for you to check:
-
-> [!div class="mx-imgBorder"]
-> [![Screenshot of automatically link work items.](../../media/252-boards-01.png "Screenshot of automatically link work items")](../../media/252-boards-01.png#lightbox)
-
-Once the build is complete, the corresponding link will automatically appear on the associated work items, improving the overall traceability story.
-
-> [!div class="mx-imgBorder"]
-> [![Screenshot of integrated in build.](../../media/252-boards-02.png "Screenshot of integrated in build")](../../media/252-boards-02.png#lightbox)
-
 ### Boards + GitHub integration improvements
 
 We're continuously improving the Boards + GitHub integration to close usability gaps and align with the experience you're familiar with in Azure Repos.
@@ -35,6 +23,18 @@ These improvements make it easier to track your development progress and maintai
 
 > [!div class="mx-imgBorder"]
 > ![Gif to github boards integration improvements.](../../media/254-boards-01.gif "gif to github boards integration improvements")
+
+### GitHub Integration: Build Links for YAML Pipelines
+
+We're committed to achieving feature parity between YAML and Classic Pipelines. One key missing feature was the ability to provide an "Integrated in build" link when your repository is hosted in GitHub. With our latest release, we've addressed this gap by adding an option in YAML pipeline settings for you to check:
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of automatically link work items.](../../media/252-boards-01.png "Screenshot of automatically link work items")](../../media/252-boards-01.png#lightbox)
+
+Once the build is complete, the corresponding link will automatically appear on the associated work items, improving the overall traceability story.
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of integrated in build.](../../media/252-boards-02.png "Screenshot of integrated in build")](../../media/252-boards-02.png#lightbox)
 
 ### Delivery Plans Limit Increased
 
