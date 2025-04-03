@@ -22,7 +22,7 @@ The following section describes new features in development for Managed DevOps P
 
 * **Open access for all pipelines to use a Managed DevOps Pool**: By default, each pipeline must be explicitly authorized to use a newly created Managed DevOps Pool. We're adding an option to enable [Open access for all pipelines](/azure/devops/pipelines/agents/pools-queues#pipeline-permissions) so that administrators don't need to explicitly authorize each pipeline. **Planned for April 2025.**
 
-* **Windows 2025 Azure Pipelines Image**: Windows 2025 is supported for [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images), and we're adding it to [Azure Pipelines images](./configure-images.md#azure-pipelines-images).
+* **Windows 2025 Azure Pipelines Image**: We're adding the [Windows Server 2025 image](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) to [Azure Pipelines images](./configure-images.md#azure-pipelines-images).
 
 * **Public Static IP**: We're adding support for public static IP addresses in Managed DevOps Pool to more easily enable access to external resources once [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). **Planned for June 2025.**
 
