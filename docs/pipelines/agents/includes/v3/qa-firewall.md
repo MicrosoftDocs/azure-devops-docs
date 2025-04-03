@@ -40,7 +40,7 @@ If you're running an agent in a secure network behind a firewall, make sure the 
 > - May 1, 2025 for Azure DevOps Services
 > - May 15, 2025 for Azure DevOps Server
 >
-> For more information, see [CDN Domain URL change for Agents in Pipelines](https://devblogs.microsoft.com/devops/?p=70526).
+> For more information, see [CDN Domain URL change for Agents in Pipelines](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/).
 
 To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*dev.azure.com` are open and update your allow-listed IPs to include the following IP addresses, based on your IP version. If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
 

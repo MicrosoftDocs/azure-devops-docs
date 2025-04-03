@@ -356,7 +356,7 @@ If you're running a firewall and your code is in Azure Repos, see [Self-hosted L
 > 
 > The Azure DevOps team recommends to make this change between May 1, 2025 and May 15,2025, at which time you can remove `https://vstsagentpackage.azureedge.net` from your allow-lists.
 >
-> For more information, see [CDN Domain URL change for Agents in Pipelines](https://devblogs.microsoft.com/devops/?p=70526).
+> For more information, see [CDN Domain URL change for Agents in Pipelines](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/).
 
 ## Azure DevOps import service
 
