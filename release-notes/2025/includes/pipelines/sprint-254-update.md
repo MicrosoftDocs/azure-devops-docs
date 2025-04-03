@@ -22,7 +22,7 @@ With this sprint, stage dependencies are now displayed when a stage is expanded,
 
 ### New Agent CDN
 
-As Edgio CDN is being retired, the domain URL owned by Edgio `https://vstsagentpackage.azureedge.net`&nbsp;will also be retired. We're adding a new domain URL `https://download.agent.dev.azure.com`&nbsp; supported by the new CDN. Be sure to add this new domain URL to your firewall allowlist. Agent package downloads for self-hosted agents will fail once the old domain URL is removed. Refer to the [post](https://devblogs.microsoft.com/devops/?p=70526&amp;preview=1&amp;_ppp=5a164c9044) for more details.
+As Edgio CDN is being retired, the domain URL owned by Edgio `https://vstsagentpackage.azureedge.net`&nbsp;will also be retired. We're adding a new domain URL `https://download.agent.dev.azure.com`&nbsp; supported by the new CDN. Be sure to add this new domain URL to your firewall allowlist. Agent package downloads for self-hosted agents will fail once the old domain URL is removed. Refer to the [post](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/) for more details.
 
 
 ### Node 16 will be removed from pipelines-* Pipeline agent packages
