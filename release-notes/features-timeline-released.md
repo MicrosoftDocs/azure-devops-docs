@@ -38,21 +38,6 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="13"><a href="2025/sprint-254-update.md" data-raw-source="[3 April  2025](2025/sprint-253-update.md)"> 3 April  2025</a></td>
-    <td>No new Azure DevOps OAuth apps beginning April 2025 </td><td>General</td><td>Future</td></tr>
-    <td>Server Name Indication (SNI) now mandatory for Azure DevOps Services </td><td>General</td><td>Future</td></tr>
-    <td>GitHub Integration: Improvements linking to commits, branches and pull requests</td><td>Boards</td><td>Future</td></tr>
-    <td>GitHub Integration: Show build status for YAML pipelines</td><td>Boards</td><td>Future</td></tr>
-    <td>Delivery Plans limit increased</td><td>Boards</td><td>Future</td></tr>
-    <td>TFVC check-in policies changes </td><td>Repos</td><td>Future</td></tr>
-    <td>Enhancement to GetRepository API</td><td>Repos</td><td>Future</td></tr>
-    <td>Enhancement to Pull Requests Query API</td><td>Repos</td><td>Future</td></tr>
-    <td>Improved visibility into YAML pipeline stage dependencies</td><td>Pipelines</td><td>Future</td></tr>
-    <td>New Agent CDN</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Node 16 will be removed from pipelines-* Pipeline agent packages</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Retirement of action logging and switch to screen recording</td><td>Test Plans</td><td>Future</td></tr>
-    <td>Auto-pause manual test run</td><td>Test Plans</td><td>Future</td></tr>
-<tr>
     <td rowspan="13"><a href="2025/sprint-253-update.md" data-raw-source="[20 March  2025](2025/sprint-253-update.md)"> 20 March  2025</a></td>
     <td>Overlapping secrets for Azure DevOps OAuth </td><td>General</td><td>Future</td></tr>
     <td>Deprecation of Languages statistics tags from the Project Summary Page </td><td>General</td><td>Future</td></tr>
