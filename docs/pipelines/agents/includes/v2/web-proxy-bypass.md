@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 02/12/2020
+ms.date: 04/02/2025
 ---
 
 ### How do I configure the agent to bypass a web proxy and connect to Azure Pipelines?
@@ -31,6 +31,7 @@ https://*.dev.azure.com
 https://login.microsoftonline.com
 https://management.core.windows.net
 https://vstsagentpackage.azureedge.net
+https://download.agent.dev.azure.com
 https://vssps.dev.azure.com
 ```
 
