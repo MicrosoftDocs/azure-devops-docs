@@ -5,7 +5,7 @@ ms.date: 4/3/2025
 ms.topic: include
 ---
 
-### Improved visibility into YAML Pipeline stage dependencies
+### Improved visibility into YAML pipeline stage dependencies
 
 YAML pipelines provide flexibility for managing complex workflows, but visualizing stage dependencies has been a challenge—especially in multi-region deployments.
 
@@ -13,7 +13,7 @@ YAML pipelines provide flexibility for managing complex workflows, but visualizi
 > [![Screenshot of pipeline that deploys to multiple Azure region.](../../media/254-pipelines-01.png "Screenshot of pipeline that deploys to multiple Azure region")](../../media/254-pipelines-01.png#lightbox)
 
 
-In scenarios where stages depend on multiple others, the stage map alone doesn’t offer sufficient clarity. For example, determining whether CUS3 depends on WUS1 in addition to WUS2 and WUS3 has required reviewing the YAML directly.
+It hasn't always been clear how stages are connected. For example, determining whether CUS3 depends on WUS1 in addition to WUS2 and WUS3 has required reviewing the YAML directly.
 
 With this sprint, stage dependencies are now displayed when a stage is expanded, providing immediate insight into execution order and upstream requirements.
 

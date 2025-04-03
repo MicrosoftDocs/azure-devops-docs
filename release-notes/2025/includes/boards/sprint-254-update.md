@@ -16,7 +16,6 @@ With this update, we've introduced several improvements to streamline how branch
 * Once a pull request is merged, the merge commit will be automatically linked to the work item.
 
 * If the branch is deleted after the pull request is merged, the branch link will be automatically removed from the work item.
-These improvements make it easier to track your development progress and maintain clean, up-to-date work item associations.
 
 These improvements make it easier to track your development progress and maintain clean, up-to-date work item associations.
 
@@ -38,4 +37,4 @@ Once the build is complete, the corresponding link will automatically appear on 
 
 ### Delivery Plans Limit Increased
 
-We increased the maximum Delivery Plan limit per project from 1,000 to 1,500.
+Previously, we limited the Delivery Plans per project to 1,000. With this update, we have increased the maximum Delivery Plans per project to 1,500. You can learn more about adding and editing Delivery Plans in the documentation [here](https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops).

@@ -5,7 +5,7 @@ ms.date: 4/3/2025
 ms.topic: include
 ---
 
-### Switch to Screen Recording as Action Logging is Being Retired
+### Retirement of action logging and switch to screen recording
 
 Our desktop Azure Test Runner client relies on [Problem Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47) (PSR), a tool introduced in Windows 7 that is now [being deprecated](https://support.microsoft.com/windows/steps-recorder-deprecation-a64888d7-8482-4965-8ce3-25fb004e975f) in newer Windows versions. As a result, the action log functionality in our desktop test runner may no longer work in future updates. 
 

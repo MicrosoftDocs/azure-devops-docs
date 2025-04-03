@@ -5,5 +5,5 @@ ms.date: 4/3/2025
 ms.topic: include
 ---
  
-- [Switch to Screen Recording as Action Logging is Being Retired](#switch-to-screen-recording-as-action-logging-is-being-retired)
+- [Retirement of action logging and switch to screen recording](#retirement-of-action-logging-and-switch-to-screen-recording)
 - [Auto-pause manual test run ](#auto-pause-manual-test-run)
