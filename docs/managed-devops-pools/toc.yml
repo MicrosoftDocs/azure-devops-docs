@@ -2,6 +2,8 @@
   href: index.yml
 - name: Overview
   href: overview.md
+- name: Roadmap and features timeline
+  href: features-timeline.md
 - name: Architecture overview
   href: architecture-overview.md
 - name: Prerequisites
