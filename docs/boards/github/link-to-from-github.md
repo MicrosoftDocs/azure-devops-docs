@@ -103,11 +103,11 @@ To create a GitHub branch directly from a work item, do these steps:
 
 ::: moniker-end
 
-## Link automatic updates
+## Automatic link updates
 
 Several events automatically update the links on the work item form, so you don’t need to create them manually. These include:
 
-| GitHub Event       | Action |
+| GitHub event       | Action |
 | :----------------- | :----------------------------------------------------------- |
 | **Link to branch** | When a pull request is created from a branch, it is automatically linked to the work item. |
 | **Merge commit**   | After the pull request is merged, the resulting merge commit is automatically linked to the work item. |
