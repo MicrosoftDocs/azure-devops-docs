@@ -103,6 +103,16 @@ To create a GitHub branch directly from a work item, do these steps:
 
 ::: moniker-end
 
+## Automatic link updates
+
+Several events automatically update the links on the work item form, so you don’t need to create them manually. These include:
+
+| GitHub event       | Action |
+| :----------------- | :----------------------------------------------------------- |
+| **Link to branch** | When a pull request is created from a branch, it is automatically linked to the work item. |
+| **Merge commit**   | After the pull request is merged, the resulting merge commit is automatically linked to the work item. |
+| **Delete branch**  | If the branch is deleted (typically after merging), its link is automatically removed from the work item. |
+
 ## View or open links from the Development section
 
 The Development section within the work item form lists the links created to GitHub commits and pull requests with the :::image type="icon" source="../../media/icons/github.png" border="false"::: GitHub icon. 
