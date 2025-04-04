@@ -8,7 +8,7 @@ ms.custom:
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/20/2025
+ms.date: 04/04/2025
 ---
 
 # Get started with the REST APIs
@@ -40,11 +40,14 @@ The following example shows how to get a list of projects in an organization:
 curl -u {username}:{personalaccesstoken} https://dev.azure.com/{organization}/_apis/projects?api-version=2.0
 ```
 
-If you want to provide the personal access token (PAT) through an HTTP header, first convert it to a Base64 string. The following example shows how to convert to Base64 using C#. The resulting string can then be provided as an HTTP header in the format:
+If you want to provide the personal access token (PAT) through an HTTP header, first prepend a colon to the PAT. Then, convert the concatenation of the colon and the PAT to a Base64 string. The following example shows how to convert to Base64 using C#. The resulting string can then be provided as an HTTP header in the format:
 
 ```
-Authorization: Basic BASE64PATSTRING
+Authorization: Basic BASE64COLONANDPATSTRING
 ```
+
+> [!NOTE]
+> Include the colon before the PAT to avoid authentication errors.
 
 The following example shows C# using the [HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118)):
 
