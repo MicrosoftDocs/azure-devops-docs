@@ -5,6 +5,7 @@ description: How to do a test run, migrating from on-premises to the cloud in Az
 ms.topic: how-to
 ms.subservice: azure-devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
