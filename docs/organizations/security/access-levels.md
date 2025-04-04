@@ -29,12 +29,7 @@ Assign users or groups of users to one of the following access levels:
 
 - **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
 - **Basic + Test Plans**: Provides access to all features included in **Basic** and Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
-- **Stakeholder**: Provides limited access to private projects and nearly full access to public projects. Assign to an unlimited number of users without requiring a license or subscription, ideal for those needing access to a restricted set of features. Stakeholders can perform various, including:
-  - Viewing work items
-  - Participating in discussions
-  - Accessing dashboards
-
-  **Wikis**: Stakeholders get restricted access to certain features, such as wikis. While they can view wiki pages, access might be limited based on specific project or organization permissions. For full functionality, including unrestricted access to all wiki features, we recommend assigning a **Basic** license.
+- **Stakeholder**: Provides limited access to private projects and nearly full access to public projects. Assign to an unlimited number of users without requiring a license or subscription, ideal for those needing access to a restricted set of features. Stakeholders can perform various, including viewing work items, participating in discussion, and accessing dashboards. 
 - **Visual Studio subscriber**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features included in their subscription level. If you assign **Basic** or **Stakeholder**, they also receive their Visual Studio subscription benefits upon sign-in.
    > [!TIP]
    > As a best practice when adding new users, we recommend assigning the **Visual Studio Subscriber** level when appropriate (as opposed to Basic) to prevent being charged the **Basic** rate before the user signs in for the first time.
@@ -357,7 +352,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Standard Features**  
-      Includes [working across projects](../../project/navigation/work-across-projects.md), [View dashboards](../../report/dashboards/dashboards.md), [View wikis](../../project/wiki/filter-print-wiki.md), and [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md). Stakeholders can't view Markdown README files defined for repositories and can only view wiki pages. Access might be restricted based on specific project or organization permissions. For full functionality, including the ability to view all wiki features, a Basic license is recommended.  
+      Includes [working across projects](../../project/navigation/work-across-projects.md), [View dashboards](../../report/dashboards/dashboards.md), [View wikis](../../project/wiki/filter-print-wiki.md), and [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md). Stakeholders can't view Markdown README files defined for repositories and can only view wiki pages. Access might be restricted based on specific project or organization permissions. For full functionality, including the ability to view all wiki features, a **Basic** license is recommended.  
    :::column-end:::
    :::column span="1":::
       ✔️
