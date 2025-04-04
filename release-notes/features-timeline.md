@@ -203,28 +203,28 @@ These investments include:
             <a href="/azure/devops/release-notes/2025/sprint-252-update#github-integration-linking-the-merge-commit" data-raw-source="[Auto link the merge commit](/azure/devops/release-notes/2025/sprint-252-update#github-integration-linking-the-merge-commit)">Auto link the merge commit</a>
          </td>
          <td>Boards</td>
-         <td>2025 Q1</td>   
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q1</td>   
       </tr>  
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-auto-link-github-branch" data-raw-source="[Automatically link pull requests when linked to a GitHub branch](/azure/devops/release-notes/roadmap/2024/boards-auto-link-github-branch)">Automatically link pull requests when linked to a GitHub branch</a>
+            <a href="/azure/devops/release-notes/2025/sprint-254-update#github-integration-improvements-linking-to-commits-branches-and-pull-requests" data-raw-source="[Automatically link pull requests when linked to a GitHub branch](/azure/devops/release-notes/2025/sprint-254-update#github-integration-improvements-linking-to-commits-branches-and-pull-requests)">Automatically link pull requests when linked to a GitHub branch</a>
          </td>
          <td>Boards</td>
-         <td>2025 Q1</td>   
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q1</td>   
       </tr>       
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-delete-branch-link" data-raw-source="[Automatically remove branch links from work items when their corresponding GitHub branches are deleted](/azure/devops/release-notes/roadmap/2024/boards-delete-branch-link)">Automatically remove branch links when their corresponding<br/>GitHub branches are deleted</a>
+            <a href="/azure/devops/release-notes/2025/sprint-254-update#github-integration-improvements-linking-to-commits-branches-and-pull-requests" data-raw-source="[Automatically remove branch links from work items when their corresponding GitHub branches are deleted](/azure/devops/release-notes/2025/sprint-254-update#github-integration-improvements-linking-to-commits-branches-and-pull-requests)">Automatically remove branch links when their corresponding<br/>GitHub branches are deleted</a>
          </td>
          <td>Boards</td>
-         <td>2025 Q1</td>   
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q1</td>   
       </tr>    
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/roadmap/2024/boards-yaml-pipeline-show-build-status)">Show build status when using a YAML build pipeline with<br />GitHub repository</a>
+            <a href="/azure/devops/release-notes/2025/sprint-254-update#github-integration-show-build-status-for-yaml-pipelines" data-raw-source="[Show build status when using a YAML build pipeline with GitHub repository](/azure/devops/release-notes/2025/sprint-254-update#github-integration-show-build-status-for-yaml-pipelines)">Show build status when using a YAML build pipeline with<br />GitHub repository</a>
          </td>
          <td>Boards</td>
-         <td>2025 Q1</td>   
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q1</td>   
       </tr>    
       <tr>
          <td>
