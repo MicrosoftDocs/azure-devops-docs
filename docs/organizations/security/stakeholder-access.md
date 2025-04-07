@@ -8,18 +8,18 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
-ms.date: 04/12/2024
+ms.date: 04/07/2025
 --- 
 
 # Stakeholder access quick reference
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-**Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  In general, **Stakeholder** access users gain limited access to Azure Boards and collaboration tools. They have no access to code repositories. 
+**Stakeholder** access provides free access to a limited set of features for an unlimited number of users. Generally, **Stakeholder** access users get restricted access to Azure Boards and collaboration tools, while they don't have access to code repositories.
 
-**Stakeholder** access users  can create and modify work items and create and save queries. They can also view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. If they need to contribute to the code base, then assign them at least **Basic** access.
+**Stakeholder** access users can create and modify work items, as well as create and save queries. They can view and approve release pipelines and perform administrative tasks if granted administrative permissions or added to an administrative group. However, if they need to contribute to the code base, assign them at least **Basic** access.
 
-If you're assigned **Stakeholder** access and want to start using Azure Boards to track work, see [Get started as a Stakeholder](get-started-stakeholder.md). If you're tasked to support administrative tasks, see [Manage your project](../../user-guide/project-admin-tutorial.md).
+If you have **Stakeholder** access and want to start using Azure Boards to track work, see [Get started as a Stakeholder](get-started-stakeholder.md). If you're responsible for administrative tasks, see [Manage your project](../../user-guide/project-admin-tutorial.md) for guidance.
  
 ## Assign Stakeholder access users to a security group
 
@@ -38,7 +38,7 @@ In general, use the following guidance when assigning **Stakeholder** access use
 
 ## Public versus private feature access
 
-Users with **Stakeholder** access privileges can access features based on whether the project is private or public. For private projects, Stakeholders have limited access to specific work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../projects/about-projects.md).  
+Users with **Stakeholder** access privileges can access features based on whether the project is private or public. For private projects, Stakeholders receive limited access to specific work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. For more information about public projects, see [What is a public project?](../projects/about-projects.md).  
 
 > [!div class="mx-tdBreakAll"]  
 > | Service, application, or setting | Private project | Public project|
@@ -64,9 +64,9 @@ The following table summarizes the features Stakeholders have access to from Azu
 
 For an overview of work tracking features, see [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md) 
 
-::: moniker range="azure-devops" 
+::: moniker range="azure-devops"
 > [!NOTE]   
-> Public project **Stakeholder** access users have full access to all features. 
+> Users with **Stakeholder** access in public projects can view Delivery Plans, but can't add or edit them.
 ::: moniker-end
 
 :::row:::
@@ -218,7 +218,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
 
 ## Azure Test Plans 
 
-Users granted **Stakeholder** access can perform the following tasks related to testing. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml).  
+Users with **Stakeholder** access can perform the following tasks related to testing. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml).  
 
 - Provide feedback using the Test & Feedback extension
 - Apply a work item template to a test case  
@@ -227,9 +227,9 @@ Users granted **Stakeholder** access can perform the following tasks related to 
 
 The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../organizations/notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wiki.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wiki.md).
 
-::: moniker range="azure-devops" 
+::: moniker range="azure-devops"
 > [!NOTE]   
-> Public project **Stakeholder** access users have full access to all dashboard and Wiki features. 
+> Users with **Stakeholder** access in public projects have full access to all dashboard and Wiki features. 
 ::: moniker-end
 
 :::row:::
