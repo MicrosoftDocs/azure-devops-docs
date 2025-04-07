@@ -15,7 +15,7 @@ ms.date: 04/07/2025
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-**Stakeholder** access provides free access to a limited set of features for an unlimited number of users. Generally, **Stakeholder** access users have restricted access to Azure Boards and collaboration tools, while they don't have access to code repositories.
+**Stakeholder** access provides free access to a limited set of features for an unlimited number of users. Generally, **Stakeholder** access users get restricted access to Azure Boards and collaboration tools, while they don't have access to code repositories.
 
 **Stakeholder** access users can create and modify work items, as well as create and save queries. They can view and approve release pipelines and perform administrative tasks if granted administrative permissions or added to an administrative group. However, if they need to contribute to the code base, assign them at least **Basic** access.
 
@@ -66,7 +66,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> **Stakeholders** in public projects can view Delivery Plans, but can't add or edit them.
+> Users with **Stakeholder** access in public projects can view Delivery Plans, but can't add or edit them.
 ::: moniker-end
 
 :::row:::
@@ -229,7 +229,7 @@ The following table summarizes the features **Stakeholder** access users have to
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> **Stakeholders** in public projects have full access to all dashboard and Wiki features. 
+> Users with **Stakeholder** access in public projects have full access to all dashboard and Wiki features. 
 ::: moniker-end
 
 :::row:::
