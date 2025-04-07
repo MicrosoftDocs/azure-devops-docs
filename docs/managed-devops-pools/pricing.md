@@ -1,6 +1,7 @@
 ---
 title: Managed DevOps Pools pricing
 description: Learn how pricing is calculated for your Managed DevOps Pools.
+ms.custom: peer-review
 ms.date: 11/13/2024
 ms.topic: concept-article
 #Customer intent: As a platform engineer, I want to understand how Managed DevOps Pools pricing is determined so that I can estimate my projected cost.

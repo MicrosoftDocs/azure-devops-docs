@@ -1,6 +1,7 @@
 ---
 title: Build a YAML pipeline with stages
 description: Create and run a complex YAML pipeline with multiple stages, conditions, validations, triggers, and rollback options.
+ms.custom: peer-review
 ms.topic: how-to 
 ms.date: 02/21/2025
 monikerRange: 'azure-devops'
