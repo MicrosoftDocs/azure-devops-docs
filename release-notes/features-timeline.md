@@ -155,7 +155,17 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td>Pipelines</td>
          <td>2025 Q2</td>
       </tr>
-   </tbody>
+        <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/continuous-access-evaluation" data-raw-source="[Continuous access evaluation](/azure/devops/release-notes/roadmap/2025/continuous-access-evaluation)">Continuous access evaluation</a></td>
+         <td>General</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/proof-of-possession" data-raw-source="[Using device bound Entra tokens in Azure DevOps web client](/azure/devops/release-notes/roadmap/2025/proof-of-possession)">Using device bound Entra tokens in Azure DevOps web client</a></td>
+         <td>General</td>
+         <td>Future</td>
+      </tr>
+    </tbody>
 </table>
 
 ### Improved Boards + GitHub Integration
