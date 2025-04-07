@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps
 description: Guide to providing product and content feedback, and accessing support resources in Azure DevOps.
 ms.subservice: azure-devops-new-user
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E
+ms.custom: peer-review-program
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
