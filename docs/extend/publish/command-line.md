@@ -55,6 +55,9 @@ $accessToken = (Get-AzAccessToken -ResourceUrl $resource).Token
 $response = Invoke-RestMethod -Uri $url -Headers @{Authorization = "Bearer $accessToken"}
 $response
 ```
+
+---
+
 Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
 
 2. Publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using a service principal. Execute the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use its access token:
