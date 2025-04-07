@@ -18,7 +18,7 @@ It hasn't always been clear how stages are connected. For example, determining w
 With this sprint, stage dependencies are now displayed when a stage is expanded, providing immediate insight into execution order and upstream requirements.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of stage dependencies when you expand them.](../../media/254-pipelines-01.png "Screenshot of stage dependencies when you expand them")](../../media/254-pipelines-01.png#lightbox)
+> [![Screenshot of stage dependencies when you expand them.](../../media/254-pipelines-02.png "Screenshot of stage dependencies when you expand them")](../../media/254-pipelines-02.png#lightbox)
 
 ### New Agent CDN
 
