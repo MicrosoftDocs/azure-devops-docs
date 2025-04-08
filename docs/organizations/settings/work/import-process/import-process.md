@@ -19,10 +19,10 @@ ms.date: 04/08/2025
 > [!IMPORTANT]  
 > The import process supports the Hosted XML process model, which allows you to manage customizations by updating the WIT (Work Item Type) definition of a process template. This feature is only available for organizations migrated to Azure DevOps Services using the [Database Import Service](../../../../migrate/migration-overview.md).  
 
-> If you use the Inheritance process model, you can customize your work tracking directly through the user interface by [creating an inherited process](../manage-process.md). For organizations using the on-premises XML process model, you can customize a process template. For more information, see the following articles:
-> - [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md)
-> - [Customize a process template](../../../../reference/process-templates/customize-process.md)
-> - [Customize work tracking](../../../../reference/customize-work.md)
+If you use the Inheritance process model, you can customize your work tracking directly through the user interface by [creating an inherited process](../manage-process.md). For organizations using the on-premises XML process model, you can customize a process template. For more information, see the following articles:
+- [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md)
+- [Customize a process template](../../../../reference/process-templates/customize-process.md)
+- [Customize work tracking](../../../../reference/customize-work.md)
 
 In Azure DevOps Services, you can customize work tracking objects using processes. Hosted XML processes allow you to import and export processes through a web-based administration interface, enabling flexibility and control over your organization's workflows.
 
