@@ -28,8 +28,6 @@ You can get a list of users and groups that have access to your organization in 
 
 From your web portal or the Azure DevOps CLI command, get a list of the users in your organization and view their access level information.
 
-::: moniker-end
-
 #### [Browser](#tab/browser)
 
 1. Select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
