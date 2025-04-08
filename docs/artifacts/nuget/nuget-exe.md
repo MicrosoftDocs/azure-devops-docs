@@ -3,7 +3,7 @@ title: Connect to an Azure Artifacts feeds with NuGet CLI
 description: Learn how to connect to Azure Artifacts feeds with NuGet CLI.
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/08/2025
 monikerRange: '<= azure-devops'
 "recommendations": "true"
