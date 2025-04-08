@@ -9,10 +9,10 @@ ms.date: 04/08/2025
 #customer intent: As an Azure DevOps administrator, I want to identify and manage high privilege, pipeline decorators, and unpublished extensions so that I can protect my organization from potential security vulnerabilities and other unexpected behaviour.
 ---
 
+# Manage high privilege scopes, pipeline decorators, and unpublished extensions
+
 > [!IMPORTANT]
 > This feature is in **public preview**. Features in public preview could undergo changes before becoming generally available.
-
-# Manage high privilege scopes, pipeline decorators, and unpublished extensions
 
 Extensions in Azure DevOps enhance functionality and streamline workflows, but some extensions might pose security vulnerabilities due to their high privilege scopes or unpublished status. This article explains how to identify and manage high privilege, pipeline decorators, and unpublished extensions to protect your Azure DevOps organization from potential security vulnerabilities or unexpected behavior.
 
@@ -24,7 +24,7 @@ Few of your already installed extensions might be flagged for high privilege sco
 
 We recommend that you only install, upgrade, or use extensions if you trust their code and their publishers.
 
-This feature only surfaces to the user interface the fact that a specific extension makes use of certain high privilege scopes. If you're looking for virus scans check the [publication process](../extend/publish/overview?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&view=azure-devops#publish-your-extension) too.
+This feature only surfaces to the user interface the fact that a specific extension makes use of certain high privilege scopes. If you're looking for virus scans check the [publication process](../extend/publish/overview) too.
 
 ![Screenshot showing high-risk extensions in Organization settings.](media/high-risk-extensions/High-Risk-Extensions-General-List.png)  
   
