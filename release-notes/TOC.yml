@@ -1065,8 +1065,6 @@
         items:
         - name: "2025"
           items:
-        - name: April 21
-          href: 2025/reporting/sprint-255-update.md
           expanded: true 
         - name: "2024"
           items:
