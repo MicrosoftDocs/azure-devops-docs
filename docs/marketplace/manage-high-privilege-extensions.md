@@ -18,6 +18,22 @@ Extensions in Azure DevOps enhance functionality and streamline workflows, but s
 
 By following these practices, you can ensure your organization remains secure while benefiting from the capabilities of Azure DevOps extensions.
 
+## What are high privilege scopes and high privilege extensions?
+
+**High privilege scopes** are permissions that grant extensive access to your Azure DevOps organization's resources. These scopes allow extensions to perform actions such as modifying repositories, accessing sensitive data, or altering pipeline configurations. While these scopes are necessary for certain functionalities, they should be used with caution and only granted to extensions with trusted code and reputable publishers.
+
+Examples of high privilege scopes include:
+- Full access to repositories
+- Write access to pipelines
+- Access to sensitive organizational data
+
+**High privilege extensions** are extensions that make use of one or more high privilege scopes. These extensions have the potential to introduce security vulnerabilities or risks if they are not properly vetted or maintained. It is essential to evaluate these extensions carefully to ensure they align with your organization's security and operational standards.
+
+When managing high privilege extensions, consider the following:
+- **Trust the publisher**: Only install extensions from reputable publishers with a history of maintaining their code.
+- **Review the requested scopes**: Ensure the requested scopes are necessary for the extension's functionality.
+- **Limit usage**: Avoid installing high privilege extensions unless they are critical to your workflows.
+
 ## Evaluate the usage of high privilege scopes in Azure DevOps extensions
 
 Few of your already installed extensions might be flagged for high privilege scope usage. You can check their state in the **Extensions** section of **Organization settings**. This designation is due to several potential reasons, explained in this article.
@@ -29,6 +45,9 @@ This feature only surfaces to the user interface the fact that a specific extens
 ![Screenshot showing high-risk extensions in Organization settings.](media/high-risk-extensions/High-Risk-Extensions-General-List.png)  
   
 For more information about extensions, see the [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) overviews.
+
+
+By understanding and managing high privilege scopes and extensions, you can safeguard your Azure DevOps environment while still leveraging the capabilities of trusted extensions.
 
 ## Manage extensions with high privilege scopes
 
@@ -52,7 +71,7 @@ When selecting an extension with high privilege scopes, think critically about w
 
 ## Discontinue use of unpublished extensions
 
-You can also visually indicate which extensions are unpublished by their publishers. 
+In the Marketplace, extensions are visually marked to show whether they are unpublished by their publishers.
 
 When an extension is unpublished from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) by its publisher, it typically signifies that the extension is no longer maintained.
 
