@@ -114,8 +114,6 @@ stages:
 
 In the following pipeline, `stage2` depends on `stage1` by default. Job `B` in `stage2` has a `condition` set. If you queue a build on the `main` branch and cancel it while `stage1` is running, `stage2` doesn't run, even though it contains a job whose condition evaluates to `true`.
 
-The reason is because `stage2` has the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
-
 ```yaml
 stages:
 - stage: stage1
