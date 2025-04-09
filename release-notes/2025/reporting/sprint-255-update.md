@@ -5,4 +5,4 @@ ms.date: 4/21/2025
 ms.topic: include
 ---
 
-
+### Reduce Rollup Column
