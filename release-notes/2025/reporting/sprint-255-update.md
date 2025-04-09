@@ -6,3 +6,5 @@ ms.topic: include
 ---
 
 ### Reduce Rollup Column
+
+Test
