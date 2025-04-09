@@ -8,7 +8,7 @@ ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 03/03/2025
+ms.date: 04/09/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -195,6 +195,10 @@ Once an extension is installed, you can find it under the value of the `$AZURE_E
 ::: moniker-end
 
 * * *
+
+### High priviledge, pipeline decorators, and unpublished extensions
+
+Extensions with high privilege scopes, pipeline decorators, or unpublished status can pose potential security risks if not properly vetted. High privilege scopes grant extensive access to your organization's resources, while pipeline decorators can modify all pipelines in your organization. Unpublished extensions might no longer be maintained by their publishers. For more information on managing these types of extensions, see [Manage high privilege scopes, pipeline decorators, and unpublished extensions](manage-high-privilege-extensions.md).
 
 <a id="uninstall-disable-extension">  </a>
 
