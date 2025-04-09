@@ -18,13 +18,13 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-255-update-links](includes/boards/sprint-255-update-links.md)]
 
-### Azure Repos
-
-[!INCLUDE [sprint-255-update-links](includes/repos/sprint-255-update-links.md)]
-
 ### Azure Pipelines
 
 [!INCLUDE [sprint-255-update-links](includes/pipelines/sprint-255-update-links.md)]
+
+### Reporting
+
+[!INCLUDE [sprint-255-update-links](includes/reporting/sprint-255-update-links.md)]
 
 ### Azure Test Plans:
 
@@ -38,13 +38,13 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-255-update](includes/boards/sprint-255-update.md)]
 
-## Azure Repos
-
-[!INCLUDE [sprint-255-update](includes/repos/sprint-255-update.md)]
-
 ## Azure Pipelines
 
 [!INCLUDE [sprint-255-update](includes/pipelines/sprint-255-update.md)]
+
+## Reporting
+
+[!INCLUDE [sprint-255-update](includes/reporting/sprint-255-update.md)]
 
 ## Azure Test Plans
 
