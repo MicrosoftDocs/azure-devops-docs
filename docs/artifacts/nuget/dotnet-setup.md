@@ -71,6 +71,45 @@ Azure Artifacts enables developers to seamlessly publish packages to feeds and s
 
 ::: moniker-end
 
+## Authenticate using Service Principals
+
+You can use a service principal to authenticate with your Azure Artifacts feed. To do this, set the [ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS](https://github.com/microsoft/artifacts-credprovider/blob/master/README.md#environment-variables) environment variable as shown below. 
+
+This variable should define the feed URL, the service principal’s application (client) ID, and either the certificate subject name or the path to the certificate file (only one of these two is required).
+
+#### [Windows](#tab/windows/)
+
+```powershell
+$env:ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS = @'{
+    "endpointCredentials": [
+        {
+            "endpoint": "<FEED_URL>",
+            "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
+            "clientCertificateSubjectName": "<SERVICE_PRINCIPAL_CERTIFICATE_NAME>",
+            "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
+        }
+    ]
+}
+'@
+```
+
+#### [Linux/macOS](#tab/linuxmac/)
+
+```bash
+export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
+    "endpointCredentials": [
+        {
+            "endpoint": "<FEED_URL>",
+            "clientId": "<SERVICE_PRINCIPAL_APPLICATION_(CLIENT)_ID>",
+            "clientCertificateSubjectName": "<SERVICE_PRINCIPAL_CERTIFICATE_NAME>",
+            "clientCertificateFilePath": "<SERVICE_PRINCIPAL_CERTIFICATE_PATH>"
+        }
+    ]
+}'
+```
+
+* * *
+
 ## Related content
 
 - [Publish NuGet packages (dotnet)](dotnet-exe.md)
