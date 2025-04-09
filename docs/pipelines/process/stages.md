@@ -3,15 +3,15 @@ title: Stages in Azure Pipelines
 description: Learn how to organize your jobs into stages, define dependencies, and set conditions. Understand how to implement deployment strategies and use YAML or a Classic pipeline to define stages.
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
 ms.topic: conceptual
-ms.date: 02/16/2024
+ms.date: 03/28/2025
 monikerRange: '<= azure-devops'
 ---
 
-# Add stages, dependencies, & conditions  
+# Add stages, dependencies, and conditions  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-A stage is a logical boundary in an Azure DevOps pipeline. Stages can be used to group actions in your software development process (for example, build the app, run tests, deploy to preproduction). Each stage contains one or more jobs. 
+A stage is a logical boundary in an Azure DevOps pipeline. Stages group actions in your software development process, like building the app, running tests, and deploying to preproduction. Each stage contains one or more jobs. 
 
 When you define multiple stages in a pipeline, by default, they run one after the other. Stages can also depend on each other. You can use the `dependsOn` keyword to define [dependencies](#specify-dependencies). Stages also can run based on the result of a previous stage with [conditions](#conditions). 
 
@@ -26,13 +26,13 @@ You can also learn more about how stages relate to parts of a pipeline in the [Y
 
 You can organize pipeline jobs into stages. Stages are the major divisions in a pipeline: build this app, run these tests, and deploy to preproduction are good examples of stages. They're logical boundaries in your pipeline where you can pause the pipeline and perform various checks.
 
-Every pipeline has at least one stage even if you don't explicitly define it. You can also arrange stages into a dependency graph so that one stage runs before another one. There's a limit of 256 jobs for a stage. 
+Every pipeline has at least one stage, even if you don't explicitly define it. You can also arrange stages into a dependency graph so that one stage runs before another one. A stage can have up to 256 jobs. 
 
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
 Organize the deployment jobs in your release pipeline into stages.
-Stages are the major divisions in your release pipeline: run functional tests, deploy to preproduction, and deploy to production are good examples of release stages.
+Stages are the major divisions in your release pipeline. Examples include running functional tests, deploying to preproduction, and deploying to production.
 
 <a name="approvals"></a><a name="conditions"></a>
 A stage in a release pipeline consists of [jobs](../process/phases.md) and [tasks](../process/tasks.md).
@@ -50,18 +50,22 @@ and [queuing policies](#queuing-policies) control when a release gets deployed t
 
 ::: moniker range="<=azure-devops"
 
-In the simplest case, you don't need any logical boundaries in your pipeline. In that case, you don't have to explicitly use the `stage` keyword. You can directly specify the jobs in your YAML file.
+In the simplest case, you don't need logical boundaries in your pipeline. For those scenarios, you can directly specify the jobs in your YAML file without the `stages` keyword. For example, if you have a simple pipeline that builds and tests a small application without requiring separate environments or deployment steps, you can define all the jobs directly without using stages.
 
 ```yaml
-# this has one implicit stage and one implicit job
 pool:
   vmImage: 'ubuntu-latest'
-steps:
-- bash: echo "Hello world"
+
+jobs:
+- job: BuildAndTest
+  steps:
+  - script: echo "Building the application"
+  - script: echo "Running tests"
 ```
 
+This pipeline has one implicit stage and two jobs. The `stages` keyword is not used because there is only one stage. 
+
 ```yaml
-# this pipeline has one implicit stage
 jobs:
 - job: A
   steps:
@@ -72,26 +76,44 @@ jobs:
   - bash: echo "B"
 ```
 
-If you organize your pipeline into multiple stages, you use the `stages` keyword.
+To organize your pipeline into multiple stages, use the `stages` keyword. This YAML defines a pipeline with two stages where each stage contains multiple jobs, and each job has specific steps to execute.
 
 ```yaml
 stages:
 - stage: A
+  displayName: "Stage A - Build and Test"
   jobs:
   - job: A1
+    displayName: "Job A1 - Build"
+    steps:
+    - script: echo "Building the application in Job A1"
+      displayName: "Build Step"
   - job: A2
+    displayName: "Job A2 - Test"
+    steps:
+    - script: echo "Running tests in Job A2"
+      displayName: "Test Step"
 
 - stage: B
+  displayName: "Stage B - Deploy"
   jobs:
   - job: B1
+    displayName: "Job B1 - Deploy to Staging"
+    steps:
+    - script: echo "Deploying to staging in Job B1"
+      displayName: "Staging Deployment Step"
   - job: B2
+    displayName: "Job B2 - Deploy to Production"
+    steps:
+    - script: echo "Deploying to production in Job B2"
+      displayName: "Production Deployment Step"
 ```
-
-If you choose to specify a `pool` at the stage level, then all jobs defined in that stage use that pool unless specified at the job-level.
 
 ::: moniker-end
 
 ::: moniker range="<=azure-devops"
+
+If you choose to specify a `pool` at the stage level, then all jobs defined in that stage use that pool unless specified at the job-level. 
 
 ```yaml
 stages:
@@ -103,24 +125,12 @@ stages:
     pool: JobPool
 ```
 
-The full syntax to specify a stage is:
-
-```yaml
-stages:
-- stage: string  # name of the stage, A-Z, a-z, 0-9, and underscore
-  displayName: string  # friendly name to display in the UI
-  dependsOn: string | [ string ]
-  condition: string
-  pool: string | pool
-  variables: { string: string } | [ variable | variableReference ] 
-  jobs: [ job | templateReference]
-```
 
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
 
-To add a stage to your release pipeline, select the release pipeline in **Releases** page, select the action to **Edit** it, and then select the **Pipeline** tab.
+To add a stage to your release pipeline, select the release pipeline on the **Releases** page, select **Edit**, and then select the **Pipeline** tab.
 While the most important part of defining a stage is the
 automation tasks, you can also configure several properties and options
 for a stage in a release pipeline. You can:
@@ -129,7 +139,7 @@ for a stage in a release pipeline. You can:
 * Designate one user or a 
   group to be the stage owner. Stage owners get
   notified whenever a deployment to that
-  stage fails. Being a stage owner doesn't automatically come with any permissions. 
+  stage fails. Stage ownership doesn't automatically include permissions. 
 * Delete the stage from the pipeline.
 * Change the order of stages.
 * Save a copy of the stage as a [stage template](../release/env-templates.md).
@@ -145,11 +155,11 @@ for a stage in a release pipeline. You can:
 
 ::: moniker range="<=azure-devops"
 
-When you define multiple stages in a pipeline, by default, they run sequentially in the order in which you define them in the YAML file. The exception to this is when you add dependencies. With dependencies, stages run in the order of the `dependsOn` requirements. 
+When you define multiple stages in a pipeline, they run sequentially by default in the order you define them in the YAML file. The exception to this is when you add dependencies. With dependencies, stages run in the order of the `dependsOn` requirements. 
 
 Pipelines must contain at least one stage with no dependencies.
 
-The syntax for defining multiple stages and their dependencies is:
+Use the following syntax to define multiple stages and their dependencies:
 
 ```yaml
 stages:
@@ -158,20 +168,26 @@ stages:
   condition: string
 ```
 
-Example stages that run sequentially:
+Example stages that run sequentially. If you don't use a `dependsOn` keyword, stages run in the order they are defined. 
+
 
 ```yaml
-# if you do not use a dependsOn keyword, stages run in the order they are defined
 stages:
-- stage: QA
+- stage: Build
+  displayName: "Build Stage"
   jobs:
-  - job:
-    ...
+  - job: BuildJob
+    steps:
+    - script: echo "Building the application"
+      displayName: "Build Step"
 
-- stage: Prod
+- stage: Test
+  displayName: "Test Stage"
   jobs:
-  - job:
-    ...
+  - job: TestJob
+    steps:
+    - script: echo "Running tests"
+      displayName: "Test Step"
 ```
 
 Example stages that run in parallel:
@@ -179,18 +195,24 @@ Example stages that run in parallel:
 ```yaml
 stages:
 - stage: FunctionalTest
+  displayName: "Functional Test Stage"
   jobs:
-  - job:
-    ...
+  - job: FunctionalTestJob
+    steps:
+    - script: echo "Running functional tests"
+      displayName: "Run Functional Tests"
 
 - stage: AcceptanceTest
-  dependsOn: []    # this removes the implicit dependency on previous stage and causes this to run in parallel
+  displayName: "Acceptance Test Stage"
+  dependsOn: [] # Runs in parallel with FunctionalTest
   jobs:
-  - job:
-    ...
+  - job: AcceptanceTestJob
+    steps:
+    - script: echo "Running acceptance tests"
+      displayName: "Run Acceptance Tests"
 ```
 
-Example of fan-out and fan-in:
+Example of fan-out and fan-in behavior:
 
 ```yaml
 stages:
@@ -211,11 +233,11 @@ stages:
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-You control the dependencies by setting the triggers on each stage of the release pipeline:
+Control dependencies by setting triggers on each stage of the release pipeline:
 
-* Stages run with a trigger or by being manually started. 
-* With an **After release** trigger, a stage starts as soon as the release starts, in parallel with other stages that have **After release** trigger.
-* With an **After stage** trigger, a stage will start after all the dependent stages complete. Using this, you can model fan-out and fan-in behavior for stages.
+* Stages run with a trigger or are manually started. 
+* With an **After release** trigger, a stage starts as soon as the release begins, running in parallel with other stages that have the same trigger.
+* With an **After stage** trigger, a stage starts after all dependent stages complete. Using this, you can model fan-out and fan-in behavior for stages.
 
 * * *
 
