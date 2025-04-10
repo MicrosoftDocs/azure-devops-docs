@@ -208,6 +208,8 @@ The CSV import doesn't support the following work item types:
 - Test Suite
 - Shared Parameter
 
+- Shared Step
+
 For more information, see [Bulk import or export test cases](../../test/copy-clone-test-items.md).
 
 ::: moniker-end
