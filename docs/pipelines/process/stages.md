@@ -219,13 +219,13 @@ stages:
 - stage: Test
 
 - stage: DeployUS1
-  dependsOn: Test    # this stage runs after Test
+  dependsOn: Test    #  stage runs after Test
 
 - stage: DeployUS2
-  dependsOn: Test    # this stage runs in parallel with DeployUS1, after Test
+  dependsOn: Test    # stage runs in parallel with DeployUS1, after Test
 
 - stage: DeployEurope
-  dependsOn:         # this stage runs after DeployUS1 and DeployUS2
+  dependsOn:         # stage runs after DeployUS1 and DeployUS2
   - DeployUS1
   - DeployUS2
 ```
