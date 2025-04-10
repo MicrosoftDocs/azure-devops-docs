@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/03/2025
+ms.date: 04/09/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -26,13 +26,17 @@ Learn how to turn on the Microsoft Entra tenant policy, which restricts users fr
 
 ## Turn on the policy
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+To turn on the policy that restricts users from creating new organizations, do the following steps:
+
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
     ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Microsoft Entra ID**, and then switch the toggle to turn on the policy, restricting organization creation.
+
+   :::image type="content" source="media/azure-ad-tenant-policy/restrict-organization-creation-toggle.png" alt-text="Screenshot shows highlighted toggle for Restrict organization creation.":::
 
 ## Optional
 
@@ -55,11 +59,11 @@ To customize the error message, do the following steps:
 
 2. Enter your customized message, and then select **Save**.
 
-   ![Screenshot show Customize error message dialog.](media/azure-ad-tenant-policy/display-error-message-dialog.png)
+   ![Screenshot shows Customize error message dialog.](media/azure-ad-tenant-policy/display-error-message-dialog.png)
 
 The error message is customized.
 
-![Customized error message](media/azure-ad-tenant-policy/error-message-example-ui.png)
+![Screenshot shows customized error message.](media/azure-ad-tenant-policy/error-message-example-ui.png)
 
 ## Related articles
 
