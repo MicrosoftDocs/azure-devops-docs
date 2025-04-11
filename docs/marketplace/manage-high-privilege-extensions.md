@@ -41,9 +41,9 @@ Examples of high privilege extensions include:
 - Extensions that create or delete projects
 
 When you manage high privilege extensions, consider the following actions:
-- **Trust the publisher**: Install and use extensions only if you trust their code and publisher.
-- **Review the requested scopes**: Ensure the requested scopes are necessary for the extension's functionality.
-- **Limit usage**: Install high privilege extensions only if they're critical to your workflows.
+- **Trust the publisher**: Install and use extensions only if you trust their code and publisher
+- **Review the requested scopes**: Ensure the requested scopes are necessary for the extension's functionality
+- **Limit usage**: Install high privilege extensions only if they're critical to your workflows
 
 ## Evaluate the usage of high privilege scopes in Azure DevOps extensions
 
@@ -63,9 +63,9 @@ By understanding and managing high privilege scopes and extensions, you can safe
 Extensions that use high privilege scopes can potentially expose your Azure DevOps organization to security vulnerabilities or other risks. High privilege scopes grant extensive access to your organization's resources, making it essential to evaluate their necessity carefully. To better understand which scopes fall into the high privilege category, see the Supported scopes section of the [Extension manifest reference](../extend/develop/manifest.md).
 
 If you identify an extension with high privilege scopes, take the following actions:
-- **Evaluate necessity**: Assess whether the requested scopes are essential for your use case.
-- **Contact the publisher**: Reach out to the extension publisher for more information or to request a reduction in the required scopes.
-- **Avoid unnecessary risks**: If the extension's functionality doesn't justify the high privilege scopes, we recommend not installing or using the extension to safeguard your Azure DevOps environment.
+- **Evaluate necessity**: Assess whether the requested scopes are essential for your use case
+- **Contact the publisher**: Reach out to the extension publisher for more information or to request a reduction in the required scopes
+- **Avoid unnecessary risks**: If the extension's functionality doesn't justify the high privilege scopes, we recommend not installing or using the extension to safeguard your Azure DevOps environment
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing high privilege scope details for the extension.](media/high-privilege-extensions/details-scopes.png)
