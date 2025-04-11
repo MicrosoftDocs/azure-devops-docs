@@ -183,7 +183,9 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 
 ## Restore packages
 
-Now that you enabled upstream sources and set up your configuration file, we can run the package restore command to query the upstream source and retrieve the upstream packages.
+Now that you enabled upstream sources and set up your configuration file, you can now run the package restore command to query the upstream source and retrieve the upstream packages.
+
+To restore packages using Azure Pipelines instead, see [Restore Maven packages with Azure Pipelines (YAML/Classic)](../../pipelines/packages/maven-restore.md) for detailed steps. 
 
 ::: moniker range="azure-devops"
 
