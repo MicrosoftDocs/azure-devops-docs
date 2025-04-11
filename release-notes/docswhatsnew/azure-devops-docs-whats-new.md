@@ -65,16 +65,11 @@ Welcome to what's new in the Azure DevOps docs for March 2025. This article list
 
 ## Marketplace
 
-### New articles
-
-- [ZZZ - Title not found in: #7775#7372](/azure/devops/marketplace/high-risk-extensions.md)
-
 ### Updated articles
 
 - [Install extensions](/azure/devops/marketplace/install-extension)
 - [Manage extension permissions](/azure/devops/marketplace/grant-permissions)
 - [Request and approve extensions](/azure/devops/marketplace/request-extensions)
-- [ZZZ - Title not found in: #7775#7372](/azure/devops/marketplace/high-risk-extensions.md)
 
 ## Administration
 
