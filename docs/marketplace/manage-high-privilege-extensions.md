@@ -22,7 +22,7 @@ By following these practices, you can ensure your organization remains secure wh
 
 ### High privilege scopes
 
-In your extension, you can define one or more scopes. These scopes determine which resources your extension can access and the operations permitted to perform on those resources. The scopes you specify in your extension manifest are the scopes set on access tokens issued to your extension. For more information, see [Authenticate and secure web extensions](/azure/devops/extend/develop/auth?view=azure-devops&branch=main).
+In your extension, you can define one or more scopes. These scopes determine which resources your extension can access and the operations permitted to perform on those resources. The scopes you specify in your extension manifest are the scopes set on access tokens issued to your extension. For more information, see [Authenticate and secure web extensions](../extend/develop/auth.md).
 
 If no scopes are specified, extensions only gain access to user profile and extension data.
 
@@ -51,11 +51,9 @@ Few of your already installed extensions might be flagged for high privilege sco
 
 We recommend that you only install, upgrade, or use extensions if you trust their code and their publishers.
 
-This feature highlights in the user interface whether a specific extension uses high privilege scopes. For more security, review the [publication process](../extend/publish/overview) to check for potential issues such as viruses.
+This feature highlights in the user interface whether a specific extension uses high privilege scopes. To enhance security, review the [publication process](../extend/publish/overview.md) to identify potential issues such as viruses, and refer to the [developing overview](../extend/overview.md) for additional guidance.
 
-![Screenshot showing list of high privilege extensions in Organization settings.](media/high-privilege-extensions/extension-list.png)  
-  
-For more information about extensions, see the [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) overviews.
+![Screenshot showing list of high privilege extensions in Organization settings.](media/high-privilege-extensions/extension-list.png)
 
 By understanding and managing high privilege scopes and extensions, you can safeguard your Azure DevOps organization while still using the capabilities of trusted extensions.
 
