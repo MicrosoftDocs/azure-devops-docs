@@ -53,7 +53,8 @@ We recommend that you only install, upgrade, or use extensions if you trust thei
 
 This feature highlights in the user interface whether a specific extension uses high privilege scopes. To enhance security, review the [publication process](../extend/publish/overview.md) to identify potential issues such as viruses, and refer to the [developing overview](../extend/overview.md) for additional guidance.
 
-![Screenshot showing list of high privilege extensions in Organization settings.](media/high-privilege-extensions/extension-list.png)
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing list of high privilege extensions in Organization settings.](media/high-privilege-extensions/extension-list.png)
 
 By understanding and managing high privilege scopes and extensions, you can safeguard your Azure DevOps organization while still using the capabilities of trusted extensions.
 
@@ -66,13 +67,15 @@ If you identify an extension with high privilege scopes, take the following acti
 - **Contact the publisher**: Reach out to the extension publisher for more information or to request a reduction in the required scopes.
 - **Avoid unnecessary risks**: If the extension's functionality doesn't justify the high privilege scopes, we recommend not installing or using the extension to safeguard your Azure DevOps environment.
 
-![Screenshot showing high privilege scope details for the extension.](media/high-privilege-extensions/details-scopes.png)
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing high privilege scope details for the extension.](media/high-privilege-extensions/details-scopes.png)
 
 You can also identify high privilege scopes flagged in the [Azure DevOps Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). The Marketplace provides similar indications to those extensions shown in the admin page for high privilege scopes. 
 
 When you select an extension with high privilege scopes, think critically about whether the extension's functionality justifies the use of these scopes. Only proceed with installation if you trust the publisher and the extension's code.
 
-![Screenshot showing Azure DevOps' Visual Studio Marketplace acquisition screen for a high privilege extension.](media/high-privilege-extensions/acquisition-pipeline.png)
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing Azure DevOps' Visual Studio Marketplace acquisition screen for a high privilege extension.](media/high-privilege-extensions/acquisition-pipeline.png)
 
 > [!NOTE]
 > This feature is being released gradually. If you don't see the high privilege scope insights in your [Azure DevOps Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) user interface, wait a few more days until it becomes available for you too.
@@ -85,13 +88,15 @@ When an extension is unpublished from the [Visual Studio Marketplace](https://ma
 
 Discontinue the use of unpublished extensions by uninstalling them from your Azure DevOps organization.
 
-![Screenshot showing high privilege extension details with unpublished status.](media/high-privilege-extensions/details-scopes.png)
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing high privilege extension details with unpublished status.](media/high-privilege-extensions/details-scopes.png)
 
 ## Use pipeline decorators safely
 
 [Pipeline decorators](../extend/develop/add-pipeline-decorator.md) are private extensions that modify and enhance all pipelines within your organization, which can significantly change your build and release processes. Therefore, use pipeline decorator extensions cautiously and only if you trust their publishers and code.
 
-![Screenshot showing authorization screen for newly added scopes with pipeline decorator included.](media/high-privilege-extensions/auth-scopes.png)
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing authorization screen for newly added scopes with pipeline decorator included.](media/high-privilege-extensions/auth-scopes.png)
 
 ## Use the unpublished state field in the Azure DevOps Services REST API
 
