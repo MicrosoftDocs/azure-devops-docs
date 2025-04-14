@@ -25,8 +25,9 @@ monikerRange: '<= azure-devops'
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | - Member of the [**Project Collection Administrators** security group](../../organizations/security/look-up-project-collection-administrators.md). |
+| **Permissions** | Member of the [**Project Collection Administrators** security group](../../organizations/security/look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. |
+| **Billing** | Billing must be [set up for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md). |
+| **Directory services** | [Security groups defined in Microsoft Entra ID or Active Directory](../../organizations/security/add-ad-aad-built-in-security-groups.md) before adding them to Azure DevOps. |
 
 ::: moniker range="azure-devops"
 
