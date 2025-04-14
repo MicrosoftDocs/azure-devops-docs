@@ -1,5 +1,5 @@
 ---
-title: Secure Azure Pipelines
+title: Make your Azure Pipelines secure
 description: Guidelines and recommendations for securing pipelines.
 ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
 ms.custom: peer-review-program
@@ -8,7 +8,7 @@ ms.date: 04/09/2025
 monikerRange: "<=azure-devops"
 ---
 
-# Secure Azure Pipelines
+# Make your Azure Pipelines secure
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
@@ -38,9 +38,9 @@ To enhance security, consider separating your projects, using branch policies, a
 
 ### Secure service connections
 
-- **Minimize the scope of service connections**: Service connections should only have access to necessary resources. When you create a new Azure Resource Manager service connection, always choose a specific resource group. Make sure that the resource group contains only the necessary VMs or resources required for the build. For instructions on how to set up service connections, see [Use an Azure Resource Manager service connection](../library/connect-to-azure.md). 
+- **Minimize the scope of service connections**: Service connections should only have access to necessary resources. When you create a new Azure Resource Manager service connection, always choose a specific resource group the service connection should have access to. Make sure that the resource group contains only the necessary VMs or resources required for the build. For instructions on how to set up service connections, see [Use an Azure Resource Manager service connection](../library/connect-to-azure.md). 
 - **Use workload identity federation for authentication**: Whenever possible, use workload identity federation instead of a service principal for your Azure service connection. Workload identity federation uses Open ID Connect (OIDC), an industry-standard technology, to facilitate authentication between Azure and Azure DevOps without relying on secrets. For instructions on how to do this, see [Create a service connection with workload identity federation (automatic)](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation).
-- **Minimize GitHub App access**: Similarly, when you configure the GitHub app to Azure DevOps, grant access only to the repositories you intend to build using pipelines.
+- **Minimize GitHub App access**: When you configure the GitHub app to Azure DevOps, grant access only to the repositories you intend to build using pipelines.
 
 ## Use YAML pipelines instead of Classic pipelines
 
