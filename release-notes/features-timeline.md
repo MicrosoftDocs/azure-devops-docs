@@ -671,7 +671,7 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>Boards</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item</a></td>
+        <td><a href="/azure/devops/release-notes/2024/boards/sprint-237-update" data-raw-source="[Add link to GitHub commit or pull request from work item](/azure/devops/release-notes/2024/boards/sprint-237-update)">Add link to GitHub commit or pull request from work item</a></td>
         <td>Boards</td>         
       </tr> 
       <tr>
