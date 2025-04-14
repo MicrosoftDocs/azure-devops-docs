@@ -21,6 +21,16 @@ monikerRange: '<= azure-devops'
 
 ::: moniker-end
 
+
+::: moniker range="azure-devops"
+
+Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
+
+> [!NOTE]
+> The free grant of parallel jobs for public projects and for certain private projects in new organizations is temporarily disabled. However, you can request this grant by submitting [a request](https://aka.ms/azpipelines-parallelism-request). Existing organizations and projects aren't affected. It can take several business days to process your free tier requests. During certain time periods, processing times might be longer.
+
+::: moniker-end
+
 ## Prerequisites
 
 | Category | Requirements |
@@ -29,12 +39,8 @@ monikerRange: '<= azure-devops'
 | **Billing** | Billing must be [set up for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md). |
 | **Directory services** | [Security groups defined in Microsoft Entra ID or Active Directory](../../organizations/security/add-ad-aad-built-in-security-groups.md) before adding them to Azure DevOps. |
 
+
 ::: moniker range="azure-devops"
-
-Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
-
-> [!NOTE]
-> The free grant of parallel jobs for public projects and for certain private projects in new organizations is temporarily disabled. However, you can request this grant by submitting [a request](https://aka.ms/azpipelines-parallelism-request). Existing organizations and projects aren't affected. It can take several business days to process your free tier requests. During certain time periods, processing times might be longer.
 
 ## What is a parallel job? 
 
