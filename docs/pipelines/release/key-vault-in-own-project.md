@@ -199,17 +199,17 @@ In this step, you'll create a new [service principal](/cli/azure/azure-cli-sp-tu
 
 ## Create a federated credential in Azure
 
-1. Navigate to [Azure portal](https://portal.azure.com/), then enter your service principal's *ClientID* in the search bar, and then select your *Application*.
+1. Navigate to [Azure portal](https://portal.azure.com/), then use the search bar to find your service principal by entering its **ClientID**. Select the matching *Application*  from the results.
 
 1. Under **Manage**, select **Certificates & secrets** > **Federated credentials**.
 
-1. Select **Add credential**, and then for **Federated credential scenario**, select **Other issuer**.
+1. Select **Add credential**, then for **Federated credential scenario**, select **Other issuer**.
 
-1. For **Issuer**, paste the *Issuer* you copied from your service connection earlier.
+1. In the **Issuer** field, paste the *Issuer* value you copied from your service connection earlier.
 
-1. For **Subject identifier**, paste the *Subject identifier* you copied from your service connection earlier.
+1. In the **Subject identifier** field, paste the *Subject identifier* you copied earlier.
 
-1. Provide a **Name** for your federated credential, and then select **Add** when you're done.
+1. Enter a **Name** for your federated credential, and then select **Add** when you're done.
 
     :::image type="content" border="false" source="media/service-principal-federated-credential-in-azure.png" alt-text="A screenshot displaying how to create a federated credential for a service principal in Azure." lightbox="media/service-principal-federated-credential-in-azure.png":::
 
@@ -219,35 +219,35 @@ Before you can verify the connection, you need to grant the service principal **
 
 1. Navigate to [Azure portal](https://portal.azure.com/)
 
-1. Under **Azure service**, select **Subscriptions**, and then find and select your subscription.
+1. Under **Azure services**, select **Subscriptions**, and then find and select your subscription.
 
 1. Select **Access control (IAM)**, and then select **Add** > **Add role assignment**.
 
-1. Select **Reader** under the **Role** tab, and then select **Next**.
+1. Under the **Role** tab, select **Reader**, and then select **Next**.
 
 1. Select **User, group, or service principal**, and then select **Select members**. 
 
-1. In the search bar, paste your service principal's *Object ID*, select it, then click on the **Select** button.
+1. In the search bar, paste your service principal's *Object ID*, select it, then click **Select**.
  
-1. Select **Review + assign**, review your settings, and then select **Review + assign** once more to confirm your choices and add the role assignment.
+1. Select **Review + assign**, review your settings, and then select **Review + assign** again to confirm.
 
-1. Once the role assignment is added. go back to your service connection (in Azure DevOps) to finally select **Verify and Save** to save your service connection.
+1. Once the role assignment is added. go back to your service connection in Azure DevOps and select **Verify and Save** to save your service connection.
 
 ## Configure Key Vault access policies
 
-1. Navigate to [Azure portal](https://portal.azure.com/), find the key vault you created earlier, and then select **Access policies**.
+1. Navigate to the [Azure portal](https://portal.azure.com/), find the key vault you created earlier, and then select **Access policies**.
 
-1. Select **Create**, and then under **Secret permissions** add the **Get** and **List** permissions, and then select **Next**.
+1. Select **Create**, then under **Secret permissions** add both the **Get** and **List** permissions, and then select **Next**.
 
-1. Under **Principal**, paste your service principal's *Object ID*, select it and then select **Next**.
+1. Under **Principal**, paste your service principal's *Object ID*, select it, and then select **Next**.
 
-1. Select **Next** once more, review your settings, and then select **Save** when you're done.
+1. Select **Next** again, review your settings, and then select **Save** to apply the new policy.
 
 ---
 
 ## Query and use secrets in your pipeline
 
-Using the [Azure Key Vault task](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) we can fetch the value of our secret and use it in subsequent tasks in our pipeline. One thing to keep in mind is that secrets must be explicitly mapped to env variable as shown in the example below.
+Using the [Azure Key Vault task](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2), you can now query and fetch secrets from Azure Key Vault and use them in subsequent tasks in your pipeline. Note that secrets must be explicitly mapped to environment variables, as shown in the following example:
 
 ```YAML
 pool:
@@ -266,17 +266,19 @@ steps:
     MY_MAPPED_ENV_VAR: $(SECRET_NAME)
 ```
 
-The output from the last bash command should look like this:
+The output from the last bash step should look like this:
 
 ```
 Secret Found! ***
 ```
 
 > [!NOTE]
-> If you want to query for multiple secrets from your Azure Key Vault, use the `SecretsFilter` argument to pass a comma-separated list of secret names: *'secret1, secret2'*.
+> To query multiple secrets from your Azure Key Vault, use the `SecretsFilter` input and provide a comma-separated list of secret names, like: *'secret1, secret2'*.
 
 ## Related content
 
-- [Manage service connections](../library/service-endpoints.md)
-- [Define variables](../process/variables.md)
-- [Publish Pipeline Artifacts](../publish-pipeline-artifact.md)
+- [Protect secrets in Azure Pipelines](../security/secrets.md)
+
+- [Access a private key vault from your pipeline](key-vault-access.md)
+
+- [Manage security in Azure Pipelines](../policies/permissions.md)
