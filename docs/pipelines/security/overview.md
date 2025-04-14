@@ -4,7 +4,7 @@ description: Guidelines and recommendations for securing pipelines.
 ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
 ms.custom: peer-review-program
 ms.reviewer: vijayma
-ms.date: 04/09/2025
+ms.date: 03/04/2025
 monikerRange: "<=azure-devops"
 ---
 
@@ -12,9 +12,9 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-This article provides an overview of necessary security-related configurations to protect your pipelines against threats and vulnerabilities.
+Pipelines offer powerful capabilities for executing scripts and deploying code to production environments, but it's crucial to balance this power with security. You never want a pipeline to become a conduit for malicious code. Balancing security with the flexibility and power needed by development teams is essential.
 
-Pipelines must be configured to prevent the execution of malicious code. It's essential to implement security measures to protect resources while enabling development teams to work efficiently.
+This article provides an overview of necessary security-related configurations to protect your pipelines against threats and vulnerabilities.
 
 ## Prerequisites
 
@@ -28,18 +28,18 @@ Pipelines must be configured to prevent the execution of malicious code. It's es
 To enhance security, consider separating your projects, using branch policies, and adding more security measures for forks. Minimize the scope of service connections and use the most secure authentication methods.
 
 - **Separate projects**: Manage each product and team in separate projects. This prevents pipelines from one product from inadvertently accessing open resources from another product, minimizing lateral exposure. 
-- **Use project-level identities**: Use a project-based build identity for pipelines instead of a collection-level identity. Project-level identities can only access resources within their associated project, minimizing the risk of unauthorized access by malicious actors. For instructions on how to do this, see [scoped build identities](../process/access-tokens.md#scoped-build-identities) and [job authorization scope](../process/access-tokens.md#job-authorization-scope).
+- **Use project-level identities**: Use a project-based build identity for pipelines instead of a collection-level identity. Project-level identities can only access resources within their associated project, minimizing the risk of unauthorized access by malicious actors. For more information, see [scoped build identities](../process/access-tokens.md#scoped-build-identities) and [job authorization scope](../process/access-tokens.md#job-authorization-scope).
 - **Use branch policies**: To ensure safe changes to code and pipeline, apply permissions and branch policies. Additionally, consider [adding pipeline permissions and checks to repositories](../process/repository-resource.md).
 - **Add additional security for forks**: When you work with public repositories from GitHub, carefully consider your approach to fork builds. Forks originating from outside your organization pose particular risks.    
-    - **Don't provide secrets to fork builds**: By default, pipelines are configured to build forks, but secrets and protected resources aren't automatically exposed to the jobs in those pipelines. Don't disable this protection.
-    - **Consider manually triggering fork builds**: Turn off automatic fork builds and use pull request comments to manually build these contributions. This setting gives you an opportunity to review the code before triggering a build. For instructions on how to do this, see [Turn off automatic fork builds](../repos/github.md#contributions-from-forks).
+    - **Don't provide secrets to fork builds**: By default, pipelines are configured to build forks, but secrets and protected resources aren't automatically exposed to the jobs in those pipelines. It's essential not to disable this protection to maintain security.
+    - **Consider manually triggering fork builds**: Turn off automatic fork builds and use pull request comments to manually build these contributions. This setting gives you an opportunity to review the code before triggering a build. For more information, see [Turn off automatic fork builds](../repos/github.md#contributions-from-forks).
     - **Use Microsoft-hosted agents for fork builds**: Avoid running builds from forks on self-hosted agents. Doing so could allow external organizations to execute external code on machines within your corporate network. Whenever possible, use Microsoft-hosted agents.
     - **Use the Azure Pipelines GitHub app for token scope limitation**: When you build a GitHub forked pull request, Azure Pipelines ensures the pipeline can't change any GitHub repository content. This restriction applies _only_ if you use the [Azure Pipelines GitHub app](https://github.com/marketplace/azure-pipelines) to integrate with GitHub.
 
 ### Secure service connections
 
-- **Minimize the scope of service connections**: Service connections should only have access to necessary resources. When you create a new Azure Resource Manager service connection, always choose a specific resource group. Make sure that the resource group contains only the necessary VMs or resources required for the build. For instructions on how to set up service connections, see [Use an Azure Resource Manager service connection](../library/connect-to-azure.md). 
-- **Use workload identity federation for authentication**: Whenever possible, use workload identity federation instead of a service principal for your Azure service connection. Workload identity federation uses Open ID Connect (OIDC), an industry-standard technology, to facilitate authentication between Azure and Azure DevOps without relying on secrets. For instructions on how to do this, see [Create a service connection with workload identity federation (automatic)](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation).
+- **Minimize the scope of service connections**: Service connections should only have access to necessary resources. When you create a new Azure Resource Manager service connection, always choose a specific resource group. Make sure that the resource group contains only the necessary VMs or resources required for the build. For more information, see [Use an Azure Resource Manager service connection](../library/connect-to-azure.md). 
+- **Use workload identity federation for authentication**: Whenever possible, use workload identity federation instead of a service principal for your Azure service connection. Workload identity federation uses Open ID Connect (OIDC), an industry-standard technology, to facilitate authentication between Azure and Azure DevOps without relying on secrets. For more information, see [ Create a service connection with workload identity federation (automatic)](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation).
 - **Minimize GitHub App access**: Similarly, when you configure the GitHub app to Azure DevOps, grant access only to the repositories you intend to build using pipelines.
 
 ## Use YAML pipelines instead of Classic pipelines
@@ -52,13 +52,13 @@ For added security and to reduce the risk of accidental misconfigurations, use Y
     - **Protected branch check**: If you have manual code review processes for specific branches, you can extend this protection to pipelines. A protected branch check for a resource prevents pipelines from automatically running on unauthorized branches.
     - **Manual approval check**: Use a manual approval check to block pipeline requests from using a protected resource until manually approved by specified users or groups.
     - **Business hours check**: Use this check to ensure that a pipeline deployment starts within a specified day and time window.
-- **Disable creating Classic pipelines**: Independently disable the creation of classic build pipelines and classic release pipelines. When both are disabled, no classic build pipeline, classic release pipeline, task groups, or deployment groups can be created via the user interface or the REST API. For instructions on how to do this, see [Disable creation of Classic pipelines](approach.md#disable-creation-of-classic-pipelines). 
+- **Disable creating Classic pipelines**: Independently disable the creation of classic build pipelines and classic release pipelines. When both are disabled, no classic build pipeline, classic release pipeline, task groups, or deployment groups can be created via the user interface or the REST API. For more information, see [Disable creation of Classic pipelines](approach.md#disable-creation-of-classic-pipelines). 
 
 ## Secure agents
 
-Secure agents by using Microsoft-hosted agents, isolating agent pools, minimizing privileges, and maintaining up-to-date configurations.
+To secure containers, mark volumes as read-only, set resource limits, use trusted images, scan for vulnerabilities, and enforce security policies.
 
-- **Use Microsoft-hosted instead of self-hosted agents**: Microsoft-hosted agents offer isolation and a clean virtual machine for each run of a pipeline. Use Microsoft-hosted agents instead of self-hosted agents. For instructions on how to do this, see [Microsoft-hosted agents](../agents/hosted.md). 
+- **Use Microsoft-hosted instead of self-hosted agents**: Microsoft-hosted agents offer isolation and a clean virtual machine for each run of a pipeline. Use Microsoft-hosted agents instead of self-hosted agents. For more information, see [Microsoft-hosted agents](../agents/hosted.md). 
 - **Separate agents for each project**: To mitigate lateral movement and prevent cross-contamination between projects, maintain separate agent pools, each dedicated to a specific project. 
 - **Use low-privileged accounts to run agents**: To enhance system security, use the lowest-privileged account for running self-hosted agents. For example, consider using your machine account or a managed service identity. Don't run an agent under an identity with direct access to Azure DevOps resources.
 - **Isolate production artifacts and sensitive agent pools**: Use different agent pools to prevent security issues.  
@@ -76,12 +76,12 @@ Securely use variables and parameters in your pipelines by following best practi
 - **Limit variables that can be set at queue time**: Prevent users from defining new variables at queue time by enabling the setting *limit variables that can be set at queue time* at **Organization settings** > **Pipelines** > **Settings**. 
 - **Use parameters instead of variables**: Unlike variables, a running pipeline can't modify pipeline parameters. Parameters have data types such as `number` and `string`, and they can be restricted to specific value subsets. This restriction is valuable when a user-configurable aspect of the pipeline should only accept values from a predefined list, ensuring that the pipeline doesn't accept arbitrary data.
 - **Reference secrets from templates**: Instead of including inline scripts with secret parameters directly in your pipeline YAML, use templates to abstract sensitive information away from the main pipeline. To implement this approach, create a separate YAML file for your script and then store that script in a separate, secure repository. You can then reference the template and pass a secret variable in your YAML as a parameter. The secure variable should come from Azure Key Vault, a variable group, or the pipeline UI. For more see, [Use templates](templates.md). 
-- **Limit secrets with branch policies and variable group permissions**: You can use a combination of variable group permissions, conditional job insertion, and branch policies to make sure that secrets are tied to the `main` branch. For instructions on how to do this, see [Protect secrets](secrets.md#limit-secrets-with-branch-policies-and-variable-group-permissions). 
-- **Use setvariable to limit setting variables**: Use the `settableVariables` attribute to configure what variables pipeline authors are allowed to set in a pipeline. Without this setting, pipeline authors can declare unlimited new variables with the `setvariable` logging command. When you specify an empty list `with settableVariables`, all variable setting is disallowed. For instructions on how to do this, see the [`settableVariables` attribute](/azure/devops/pipelines/yaml-schema/target-settable-variables) in the YAML Schema. 
+- **Limit secrets with branch policies and variable group permissions**: You can use a combination of variable group permissions, conditional job insertion, and branch policies to make sure that secrets are tied to the `main` branch. For more information, see [Protect secrets](secrets.md#limit-secrets-with-branch-policies-and-variable-group-permissions). 
+- **Use setvariable to limit setting variables**: Use the `settableVariables` attribute to configure what variables pipeline authors are allowed to set in a pipeline. Without this setting, pipeline authors can declare unlimited new variables with the `setvariable` logging command. When you specify an empty list `with settableVariables`, all variable setting is disallowed. For more information, see the [`settableVariables` attribute](/azure/devops/pipelines/yaml-schema/target-settable-variables) in the YAML Schema. 
 
 The best method to protect a secret is to not have a secret in the first place. Avoid using secrets when possible, never store them in YAML files, and ensure they are not logged or printed to maintain security.
 
-- **Avoid using secrets when possible**:  Check to see if your pipeline can use a different method than using a secret to perform a task such as a service connection with workload identity federation or a managed identity. Managed identities allow your applications and services to authenticate with Azure without requiring explicit credentials. For instructions on how to do this, see [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).
+- **Avoid using secrets when possible**:  Check to see if your pipeline can use a different method than using a secret to perform a task such as a service connection with workload identity federation or a managed identity. Managed identities allow your applications and services to authenticate with Azure without requiring explicit credentials. For more information, see [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 **Don't put secrets in YAML**: Never store sensitive values as plaintext in an Azure Pipelines **.yml** file. 
 - **Don't log or print secrets**: Avoid echoing secrets to the console, using them in command line parameters, or logging them to files. Azure Pipelines attempts to scrub secrets from logs wherever possible but can't catch every way that secrets can be leaked.
 - **Don't use structured data like JSON as secrets**: Create individual secrets for each sensitive value. This approach ensures better redaction accuracy and minimizes the risk of exposing sensitive data inadvertently.
@@ -102,7 +102,7 @@ To ensure that only tested and sanitized code runs through your pipeline, regula
 - **Validate inputs and use parameters**: Validate input parameters and arguments to prevent unintended behavior. Use parameterized queries in scripts to prevent SQL injection. [Runtime parameters](../process/runtime-parameters.md) help avoid security issues related to variables, such as [Argument Injection](https://devblogs.microsoft.com/devops/pipeline-argument-injection/).
 - **Don't use PATH in scripts**: Relying on the agent's `PATH` setting is dangerous because it can be altered by a previous script or tool. Always use a fully qualified path instead.
 - **Control available tasks**: Disable the ability to install and run tasks from the Marketplace, which gives you greater control over the code that executes in a pipeline. 
- 
+- 
 ## Secure containers
 
 Learn how to secure containers through configuration changes, scanning, and policies. 
