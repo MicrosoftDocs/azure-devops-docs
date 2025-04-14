@@ -679,7 +679,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Boards</td>      
       </tr>       
       <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments</a></td>
+        <td><a href="/azure/devops/release-notes/2023/boards/sprint-231-update" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/boards/sprint-231-update)">Markdown editor for work item comments</a></td>
         <td>Boards</td>
       </tr>        
       </tr>
