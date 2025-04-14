@@ -23,7 +23,7 @@ This article explains how to use extensions to customize how the work item form 
 * [Listen for events on the form](#listenforevents)
 * [Configure contributions in work item form](#showcontributions)
 
-See the **UI** example in the [Azure DevOps extension samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source code.
+For the full source code, see the **UI** example in the [Azure DevOps extension samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub.
 
 <a name="addagroup"></a>
 
@@ -173,7 +173,7 @@ In Azure DevOps Services, by default, the group extensions appear in the end of 
 
 :::image type="content" source="media/add-workitem-extension-toolbar.png" alt-text="Screenshot that shows how to add an item to the work item toolbar.":::
 
-To add an item to the work item toolbar, add this contribution to your extension manifest. Select the vertical ellipsis in the top corner of the work item form.
+To add an item to the work item toolbar, add this contribution to your extension manifest. Select the vertical ellipsis in the work item form to see the dropdown menu.
 
  ```json
 "contributions": [
