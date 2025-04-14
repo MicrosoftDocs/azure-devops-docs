@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
 author: juliakm
-ms.date: 04/05/2024
+ms.date: 04/14/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -20,6 +20,13 @@ monikerRange: '<= azure-devops'
 > Starting with Azure DevOps Server 2019, you don't have to pay for self-hosted concurrent jobs in releases. You're only limited by the number of agents that you have.
 
 ::: moniker-end
+
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Permissions** | - Member of the [**Project Collection Administrators** security group](../../organizations/security/look-up-project-collection-administrators.md). |
 
 ::: moniker range="azure-devops"
 
