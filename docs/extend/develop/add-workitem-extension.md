@@ -173,7 +173,7 @@ In Azure DevOps Services, by default, the group extensions appear in the end of 
 
 :::image type="content" source="media/add-workitem-extension-toolbar.png" alt-text="Screenshot that shows how to add an item to the work item toolbar.":::
 
-To add an item to the work item toolbar, add this contribution to your extension manifest. The item appears in the **...** dropdown in the top right of the work item form.
+To add an item to the work item toolbar, add this contribution to your extension manifest. Select the vertical ellipsis in the top corner of the work item form.
 
  ```json
 "contributions": [
@@ -211,7 +211,7 @@ To add an item to the work item toolbar, add this contribution to your extension
 
 ## Listen for events
 
-To add an observer to the work item, which listens to the work item events, add this contribution to your extension manifest. There's no visualization for observers on the work item form. This is the best way to listen to work item form onSaved event since the observer lives outside of the form and doesn't get destroyed when form closes, which might happen right after save.
+To add an observer to the work item, which listens to the work item events, add this contribution to your extension manifest. There's no visualization for observers on the work item form. This is the best way to listen to work item form *onSaved* event since the observer lives outside of the form and doesn't get destroyed when form closes, which might happen right after save.
 
  ```json
 "contributions": [
@@ -233,7 +233,7 @@ To add an observer to the work item, which listens to the work item events, add 
 
 | Property     | Description           |
 |--------------|-----------------------|
-| uri          | URI to a page that hosts the scripts listening to events. |
+| `uri`        | URI to a page that hosts the scripts listening to events. |
 
 [!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
@@ -312,6 +312,6 @@ When using the new SDK, you should also be using the [azure-devops-extension-api
 
 Use `ms.vss-web.action-provider` when dynamically loading menu items using `getMenuItems` on the menu handler. Avoid using `ms.vss-web.action-provider` when your menu items are static and defined in your manifest. Instead `ms.vss-web.action` should be used.
 
-### Package require("VSS/Events/Document") is no longer supported
+### Package `require("VSS/Events/Document")` is no longer supported
 
 `require("VSS/Events/Document")` import is no longer supported with the New Boards Hub.
