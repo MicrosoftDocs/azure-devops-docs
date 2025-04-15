@@ -1035,7 +1035,7 @@ By default, no users or groups have explicit roles for all pools at the organiza
 
 To manage security roles for all agent pools in the organization, do the following steps:
 
-1. [Add the principal as a user](#add-the-principal-as-a-user).
+1. [Add the user or group as a user](#add-the-principal-as-a-user).
 2. Go to **Organization settings** ::::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
 3. Select **Security**. 
 
