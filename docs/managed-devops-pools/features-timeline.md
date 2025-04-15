@@ -1,7 +1,7 @@
 ---
 title: Features timeline and roadmap
 description: Learn about new features in Managed DevOps Pools.
-ms.date: 03/31/2025
+ms.date: 04/15/2025
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the new features in Managed DevOps Pools.
 ---
@@ -11,8 +11,6 @@ ms.topic: overview
 ## Roadmap
 
 The following section describes new features in development for Managed DevOps Pools.
-
-* **Trusted root certificates**: Managed DevOps Pools is adding support so you can configure your pool to add certificates from your Key Vault as a trusted root certificate to your agents, so you don’t have to add a task for it to all the pipelines that use the pool. For more information, see [Key Vault configuration](./configure-security.md#key-vault-configuration). **Planned for April 2025.**
 
 * **Shorter time for agent allocation**: The Managed DevOps Pools team is making updates to shorten the startup time for [standby agents](./configure-scaling.md#standby-agent-mode) (**Fresh agent every time** setting). **Planned for April 2025.**
 
@@ -31,6 +29,10 @@ The following section describes new features in development for Managed DevOps P
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for end 2025.**
 
 * **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for end of 2025.**
+
+## April 2025
+
+* **Trusted root certificates**: Managed DevOps Pools added support so you can configure your pool to add certificates from your Key Vault as a trusted root certificate to your agents, so you don’t have to add a task for it to all the pipelines that use the pool. For more information, see [Key Vault configuration](./configure-security.md#key-vault-configuration).
 
 ## March 2025
 
