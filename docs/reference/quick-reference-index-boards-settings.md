@@ -21,7 +21,7 @@ Use this index to quickly access concepts and tasks related to configuring and c
 
 ## Get started  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can start using Azure Boards without configuring or customizing anything. However, as your organization grows, you'll find it beneficial to add teams, define area paths and iteration paths. If you use GitHub for your source code repository, you may want to connect Azure Boards to GitHub. If you are tasked with administrating a project for several teams, we recommend you review the following articles. 
 
@@ -67,23 +67,19 @@ Each team administrator can configure the following elements for their team, bac
 
 You customize your work tracking experience to support your business and reporting needs. The most common customizations include adding a custom field, modifying a work item form, or adding a custom work item type. Process customization tasks must be performed by an administrator who has the necessary organization-level permissions, as they affect all users and teams within a project.  
 
-
 ::: moniker range="azure-devops"
 
 You customize Azure Boards work tracking using the Inheritance process model which uses a WYSIWYG user interface to customize work tracking objects and tools. For select organizations who migrated to Azure DevOps Services using the data migration tool for Azure DevOps, the Hosted XML process model is used. This model relies on modifying and importing process templates to customize work tracking objects and tools. 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 You customize Azure Boards work tracking using either the Inheritance process model or On-premises XML process model, depending on the selection made when [creating the project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020&preserve-view=true) on which the project is defined.
 
 ::: moniker-end
 
-
-
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Inheritance process model 
 
@@ -98,16 +94,10 @@ With the Inheritance process, you apply a process to a project.
 - [Change the reference process from Scrum to Agile](../organizations/settings/work/change-process-scrum-to-agile.md)  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-- [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
-- [Customize a project using an inherited process](../organizations/settings/work/customize-process.md) 
-::: moniker-end
-
  
 ::: moniker range="azure-devops"
 
 The Inheritance process model supports the following customization tasks. 
-
 
 ---
 :::row:::
@@ -155,8 +145,7 @@ The Inheritance process model supports the following customization tasks.
  
 ::: moniker-end
 
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 The Inheritance process model supports the following customization tasks. 
 
@@ -303,7 +292,6 @@ With the On-premises XML process model, you modify the XML definition of work it
  
 ::: moniker-end
  
-
 
 ## Related articles
  

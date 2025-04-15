@@ -1,7 +1,7 @@
 ---
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.date: 11/13/2024
+ms.date: 02/21/2025
 ---
 
 # Demands
@@ -50,6 +50,9 @@ For the case of a single pipeline with multiple jobs:
 
 If you have multiple images in your pool, you can configure your pipelines to use a specific image by using the `ImageOverride` demand and providing the [alias](configure-images.md#use-multiple-images-per-pool-with-aliases) of the image to use. If you're using an Azure Pipelines image, you can use its [predefined alias](configure-images.md#azure-pipelines-image-predefined-aliases). For all other images, you must [configure your own aliases](configure-images.md#configure-image-aliases).
 
+> [!IMPORTANT]
+> If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?&tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
+
 In the following example, a pipeline is configured to run using an image that is configured with an `ubuntu-20.04-gen2` alias.
 
 ```yml
@@ -64,7 +67,7 @@ pool:
 
 ## ImageVersionOverride
 
-If you're using a Shared Image Gallery or Azure Marketplace [image](configure-images.md#choose-your-pools-image) and want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image. The following examples specify an `ImageVersionOverride` of `2.0.0`.
+If you're using an Azure Compute Gallery or Azure Marketplace [image](configure-images.md#choose-your-pools-image) and want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image. The following examples specify an `ImageVersionOverride` of `2.0.0`.
 
 Configure the `ImageVersionOverride` demand in the `demands` section of your pipeline.
 

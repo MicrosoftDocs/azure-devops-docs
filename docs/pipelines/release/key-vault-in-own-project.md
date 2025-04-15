@@ -3,7 +3,7 @@ title: Query and use Azure Key Vault secrets in your Pipeline
 description: How to set up Azure Key vaults with your own project and use it in your Azure Pipelines
 ms.topic: tutorial
 ms.date: 08/28/2023
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.custom: arm2024
 "recommendations": "true"
 ---

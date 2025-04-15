@@ -47,7 +47,6 @@ In this article you learn how to:
 
 ::: moniker-end
 
-
 ## Prerequisites
 
 ::: moniker range="azure-devops"
@@ -65,15 +64,13 @@ In this article you learn how to:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 - **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Repos**.
 
 - To review PRs, be a member of the Azure DevOps project with at least **Basic** access. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
-
-
 
 - For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
@@ -82,7 +79,6 @@ In this article you learn how to:
 You can manage PRs in Azure DevOps Services by using the [Azure DevOps command line interface (CLI)](../../cli/index.md). The Azure DevOps CLI is available when you install the [Azure CLI](/cli/azure/) and the Azure DevOps extension. For a list of CLI commands to manage PRs, see the [`az repos pr`](/cli/azure/repos/pr) commands.
 
 ::: moniker-end
-
 
 ## Review changes
 
@@ -189,8 +185,6 @@ Browse a list of changes from the author on the **Updates** tab.
 View and select changes made in commits to the branch on the **Commits** tab.
 
 :::image type="content" source="media/review-pull-requests/2020/pull-request-commits.png" alt-text="Screenshot showing a list of commits in the Commits tab of an Azure Repos PR.":::
-
-
 
 ## Use comments
 
@@ -317,13 +311,6 @@ To like your own or someone else's comment, hover over the comment and select th
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-### Like a comment
-
-To like a comment that you or someone else made, select the heart icon. Hover over the icon in comments to see the list of people who liked the comment.
-
-::: moniker-end
  
 
 ### Filter comments
@@ -345,7 +332,7 @@ To filter comments and updates, select the **Show everything (n)** button above 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 
 ### Address comments
 
@@ -382,7 +369,7 @@ More options are available in the comment resolution dropdown list:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+::: moniker range="<azure-devops-2022"
 
 To keep track of files that have already been reviewed, select **More options** next to a file in your PR, and then select **Mark as reviewed**.
 
@@ -417,7 +404,6 @@ PR reviewers can keep track of reviewed files by choosing **Mark as reviewed** f
 :::image type="content" source="media/review-pull-requests/2022/files-tab-mark-reviewed.png" border="true" alt-text="Screenshot of the mark-as-reviewed option in the file options menu in the Files tab of a P R." lightbox="media/review-pull-requests/2022/files-tab-mark-reviewed-lrg.png":::
 
 ::: moniker-end
-
 
 <a id="set-vote"></a>
 
@@ -517,9 +503,7 @@ Jamal Hartnett  jamalh@fabrikam.com  00000000-0000-0000-0000-000000000000       
 
 ::: moniker-end
 
-
 ***
-
 
 ::: moniker range=">= azure-devops-2022"
 
@@ -540,7 +524,6 @@ PR authors can select a PR resolution option:
 For more information on completing a PR, see [Complete the pull request](complete-pull-requests.md).
 
 ::: moniker-end
-
 
 ## Next steps
 

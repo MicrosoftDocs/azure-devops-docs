@@ -44,7 +44,7 @@ If your organization uses self-hosted agents, add the following URLs to your All
 
 * Run a compatible version of the .NET runtime (currently .NET 8.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
 
-* Ensure the CodeQL bundle is installed to the agent tool cache on your agent. You might utilize the `enableAutomaticCodeQLInstall: true` variable with the `Advanced-Security-CodeQL@1` pipeline task for YAML pipelines or select the `Enable automatic CodeQL detection and installation` checkbox for classic pipelines. Alternatively, for manual installation instructions, see [Code scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-code-scanning-troubleshoot.md#manual-installation-of-codeql-bundle-to-self-hosted-agent).
+* Ensure the CodeQL bundle is installed to the agent tool cache on your agent. You might utilize the `enableAutomaticCodeQLInstall: true` variable with the `AdvancedSecurity-Codeql-Init@1` pipeline task for YAML pipelines or select the `Enable automatic CodeQL detection and installation` checkbox for classic pipelines. Alternatively, for manual installation instructions, see [Code scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-code-scanning-troubleshoot.md#manual-installation-of-codeql-bundle-to-self-hosted-agent).
   
 ## Enable GitHub Advanced Security
 

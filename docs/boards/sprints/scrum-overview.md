@@ -58,7 +58,7 @@ Quickly assign work items to a sprint by dragging and dropping them from the pro
 
 Sprint backlogs and Taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Web portal, Open Boards, Sprints, Backlog.](../work-items/media/view-add/view-sprint-backlogs.png)    
 
@@ -113,7 +113,6 @@ With capacity bars, you can quickly see who is over, at, or under capacity. Capa
 Here's how to interpret the capacity colors:
 
 ![Screenshot of capacity board that help distinguish capacity.](media/capacity-planning-tool-color-chart.png)
-
 
 ## Update tasks and monitor burndown 
 
@@ -229,7 +228,6 @@ For more information, see [Query fields, operators, and macros in Azure Boards](
 	The updated query should look similar to the following image. 
 
 	:::image type="content" source="media/overview/query-for-work-items-moved-out-of-sprint.png" alt-text="Screenshot of Query Editor, Work Items moved out of a sprint":::
-
 
 For other options to determine changes to the sprint scope, see [Query by date or current iteration, List work items moved out of a sprint](../queries/query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
 

@@ -8,7 +8,7 @@ ms.subservice: azure-devops-projects
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 03/11/2025
 ---
 
@@ -73,7 +73,7 @@ For more information, see our [Data Protection Overview](../../organizations/sec
 
 Use your web browser to perform a soft-delete. After 28 days, projects are  permanently deleted if not restored within that time.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -190,7 +190,7 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
 
 ::: moniker-end
 
-::: moniker range=" > azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Sign in to your instance (```http://{ServerName:8080/tfs/}/{CollectionName}```).
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Admin settings**.
@@ -201,13 +201,6 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
 4. Highlight the project you want to restore, and then select **Restore**.
 
    ![Screenshot showing how to Highlight the project, and then select Restore for Azure DevOps Server. ](media/restore-project/recently-deleted-projects.png)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> The UI doesn't support restoring a team project for Azure DevOps Server 2019. Use the following REST API or PowerShell methods to restore a deleted team project. For more information, see [Projects-Update REST API](/rest/api/azure/devops/core/projects/update).
 
 ::: moniker-end
 

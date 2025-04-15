@@ -79,6 +79,56 @@ Troubleshooting steps:
 
 * Grant `Advanced Security: View alerts` and `Advanced Security: Manage and dismiss alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
 
+## Code scanning publishing results to the incorrect repository 
+
+If you have a pipeline definition housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results may be processed and submitted to the incorrect repository, publishing to the repository containing the pipeline definition rather than the source code repository.
+
+To enable proper result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+
+Alternatively, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
+
+>[!div class="tabbedCodeSnippets"]
+```yaml
+trigger:
+  - main
+
+resources:
+  repositories:
+    - repository: BicepGoat
+      type: git
+      name: BicepGoat
+      ref: refs/heads/main
+      trigger:
+        - main
+
+jobs:
+  # Explicit - `advancedsecurity.publish.repository` explicitly defines the repository to submit SARIF to.
+  - job: "AdvancedSecurityCodeScanningExplicit"
+    displayName: "🛡 Infrastructure-as-Code Scanning (Explicit)"
+    variables:
+      advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['BicepGoat']) ]
+    steps:
+      - checkout: BicepGoat
+      - task: TemplateAnalyzerSarif@1
+        displayName: Scan with Template Analyzer
+      - task: AdvancedSecurity-Publish@1
+        displayName: Publish to IaC Scanning Results to Advanced Security
+
+
+  # Infer - `advancedsecurity.publish.repository.infer` specifies that the `AdvancedSecurity-Publish` must
+  # infer repository to submit SARIF to from the working directory on the build agent.
+  - job: "AdvancedSecurityCodeScanningInfer"
+    displayName: "🛡 Infrastructure-as-Code Scanning (Infer)"
+    variables:
+      advancedsecurity.publish.repository.infer: true
+    steps:
+      - checkout: BicepGoat
+      - task: TemplateAnalyzerSarif@1
+        displayName: Scan with Template Analyzer
+      - task: AdvancedSecurity-Publish@1
+        displayName: Publish to IaC Scanning Results to Advanced Security
+```
+
 ## Manual installation of CodeQL bundle to self-hosted agent 
 Install the CodeQL bundle to the agent tool cache by utilizing the setup script for your architecture, available on [GitHub](https://github.com/microsoft/GHAzDO-Resources/tree/main/src/agent-setup). These scripts require the
 `$AGENT_TOOLSDIRECTORY` environment variable to be set to the location of the agent tools directory on the agent, for example, `C:/agent/_work/_tool`. Alternatively, you might manually implement the following steps: 

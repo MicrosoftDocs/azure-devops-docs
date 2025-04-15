@@ -11,7 +11,6 @@ monikerRange: '<= azure-devops'
 ms.date: 12/16/2022
 ---
 
-
 # Tools and clients that connect to Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
@@ -31,7 +30,6 @@ Developers have access to many tools through these versions of Visual Studio and
 - **[Android Studio with the Azure DevOps Services Plug-in for Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)**: Free plug in to support Android developers and connect to Git repositories on Azure DevOps.
 - **[IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)**: Free plug in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps.
 
-
 To get started with client libraries, see [Client library samples](../integrate/get-started/client-libraries/samples.md).
 
 **Team Explorer plug-in**
@@ -43,13 +41,11 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 > |-------------|----------|
 > |<img src="../organizations/projects/media/te-home-page-git-repo.png" title="Team Explorer home page with GiZit as source control" alt="Team Explorer home page with Git as source control" /> | <img src="../organizations/projects/media/te-home-page-tfvc-repo.png" title="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" alt="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" /> |
 
-
 **Visual Studio Git experience**  
 
 Visual Studio 2019 and later versions provide a new Git experience through the **Git** menu as shown in the following image. For more information, see [Git experience in Visual Studio](/visualstudio/version-control/git-with-visual-studio) and [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison).  
 
 :::image type="content" source="media/tools/visual-studio-git-menu.png" alt-text="Screenshot of Visual Studio 2019 Git menu.":::
-
 
 ## Office integration tools
 
@@ -63,19 +59,6 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 > Starting with Visual Studio 2019, the Azure DevOps Office Integration 2019 add-in for Office deprecated support for Microsoft Project. Project integration and the TFSFieldMapping command aren't supported for Azure DevOps Server 2019 nor for Azure DevOps Services. However, you can continue to use Microsoft Excel.
 
 ::: moniker-end
-
-::: moniker range="= azure-devops-2019"
-
-- [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
-
-
-> [!TIP]
-> Check to make sure the Azure DevOps Office Integration component is selected in the Visual Studio Installer, per the following example.
-> ![Check Azure DevOps Office Integration](media/check-azure-devops-office-integration-code-tools.png)
-
-::: moniker-end
-
-
 
 ### Task-specific clients
 
@@ -139,7 +122,6 @@ You can do many code development and administrative tasks by using the following
 - [TFSDeleteProject](/azure/devops/server/command-line/tfsdeleteproject-cmd)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
 - [TFSServiceControl](/azure/devops/server/command-line/tfsservicecontrol-cmd)
-
 
 ::: moniker-end
 

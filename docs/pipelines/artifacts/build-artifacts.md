@@ -25,7 +25,7 @@ Azure Artifacts enables teams to use feeds and upstream sources to manage their 
 Artifacts can be published at any stage of your pipeline. You can use YAML or the classic Azure DevOps editor to publish your packages.
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -48,8 +48,6 @@ Artifacts can be published at any stage of your pipeline. You can use YAML or th
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 Add the **Publish Build Artifacts** task to your pipeline and fill out the required fields. Make sure your file is at the root of your repository.
@@ -61,7 +59,7 @@ Add the **Publish Build Artifacts** task to your pipeline and fill out the requi
 ### Example: Use multiple tasks
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -85,8 +83,6 @@ Add the **Publish Build Artifacts** task to your pipeline and fill out the requi
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make sure your file is at the root of your repository.
@@ -98,7 +94,7 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 ### Example: Copy and publish binaries
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -123,8 +119,6 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 :::image type="icon" source="../tasks/utility/media/copy-files.png" border="false"::: **Utility: Copy Files**
@@ -143,14 +137,13 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 
 * * *
 
-
 > [!NOTE]
 > `Build.ArtifactStagingDirectory` path is cleaned up after each build. If you're using this path to publish your artifact, make sure you copy the content you wish to publish into this directory before the publishing step.
 
 ## Download artifacts
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -167,8 +160,6 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 * **downloadPath**: path on the agent machine where the artifacts will be downloaded.
 
 ::: moniker-end
-
-
 
 #### [Classic](#tab/classic/)
 
@@ -187,7 +178,7 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 > [!NOTE]
 > If you're using a deployment task, you can reference your build artifacts using **$(Agent.BuildDirectory)**. See [Agent variables](../build/variables.md#agent-variables) for more details.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 When your pipeline run is completed, navigate to **Summary** to explore or download your artifact.
 

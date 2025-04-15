@@ -7,7 +7,7 @@ ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 02/12/2025
 ---
 
@@ -61,7 +61,6 @@ The query to create a bug trend report looks like the following example:
 > ```
 
 It returns a result similar to the following example:
-
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON

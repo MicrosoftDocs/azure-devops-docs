@@ -284,15 +284,6 @@ The Analytics service is the reporting platform for Azure DevOps. As described i
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-The Analytics service is the reporting platform for Azure DevOps. As described in [What is the Analytics service?](../powerbi/what-is-analytics.md), it replaces the previous platform based on SQL Server Reporting Services. The Analytics service supports Analytics widgets and [Analytics views for Power BI reporting](../powerbi/what-are-analytics-views.md).
-
-> [!NOTE]
-> Analytics is generally available for Azure DevOps Server 2020 and later versions.
-
-::: moniker-end
-
 #### Sample Lead time widget
 
 :::image type="content" source="media/lead-time-control-chart.png" alt-text="Screenshot that shows a Lead time widget.":::
@@ -327,44 +318,12 @@ Use the interactive controls to choose the start and end of the sprint and count
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-Azure Boards provides several in-context reports that derive from the work-tracking data store. From your backlog or board, you can view the Cumulative Flow Diagram and team Velocity reports by choosing the miniature charts that appear on each page. From a Sprint backlog, you can view the sprint burndown.
-
-### Cumulative Flow Diagram
-
-The CFD report shows the count of work items in the backlog based on their state over time.
-
-:::image type="content" source="media/cfd/data-store-cumulative-flow-opened.png" alt-text="Screenshot that shows an opened CFD chart.":::
-
-### Velocity
-
-Velocity is based on the values entered for **Effort**, **Story Points**, or **Size** fields for work items that belong to the **Requirement** category.
-
-:::image type="content" source="media/team-velocity-chart-web-7-iterations.png" alt-text="Screenshot that shows a web portal Velocity chart showing seven sprints of in-progress and completed work.":::
-
-### Sprint burndown
-
-Each sprint provides access to two charts. The first [tracks capacity](../../boards/sprints/define-sprints.md) for the team, team activities, such as Development, Test, or Design, and individual team members. The second tracks the [sprint burndown](configure-sprint-burndown.md) for remaining work.
-
-| Capacity bars | Burndown  |
-|-------| ----- |
-|:::image type="content" source="../../boards/sprints/media/ALM_DS_CapacityBars_S.png" alt-text="Screenshot that shows Capacity bars."::: | :::image type="content" source="../../boards/sprints/media/ALM_DS_SprntBD_Chrt_S.png" alt-text="Screenshot that shows a Burndown chart."::: |
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2020"
 
 You can add the in-context reports to a dashboard by using the copy to dashboard option from the report's context menu.
 
 :::image type="content" source="media/add-charts/add-analytics-chart-abbreviated.png" alt-text="Screenshot that shows an Analytics in-context report with the Copy to dashboard action.":::
 
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-> [!NOTE]
-> You can't add the in-context reports to a dashboard. However, you might find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data, which you can add to the dashboard.
 ::: moniker-end
 
 For more information about these reports, see:
@@ -436,16 +395,6 @@ The **Pipeline duration** report provides the duration trend of a pipeline. It a
 :::image type="content" source="../../pipelines/reports/media/pipelines-reports/duration-trend.png" alt-text="Screenshot that shows a pipeline duration trend.":::
 
 For more information, see [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report).
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-## In-context reports: Pipeline test failures
-
-Azure Pipelines provides an in-context **Test failures** report, derived from Analytics data. Open a release summary to view the report and select the **Analytics** tab. Select the summarized card for a detailed report. For more information, see [Test failures report](../../pipelines/reports/pipelinereport.md#test-failures-report).
-
-:::image type="content" source="../../pipelines/reports/media/pipelines-reports/analyticstab-server-2019.png" alt-text="Screenshot that shows the Analytics tab in Azure DevOps Server 2019.":::
 
 ::: moniker-end
 

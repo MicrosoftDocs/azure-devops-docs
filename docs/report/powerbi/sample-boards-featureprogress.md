@@ -7,7 +7,7 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/08/2022
 ---
 
@@ -24,7 +24,6 @@ You can view similar progress bar charts from your backlog by adding a rollup co
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
-
 
 ## Sample queries
 
@@ -83,12 +82,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{project}` - Your team project name, or omit `/{project}` entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project/Level1/Level2`.
 
-
 ### Query breakdown
 
-
 The following table describes each part of the query.
-
 
 :::row:::
    :::column span="1":::
@@ -261,7 +257,6 @@ To learn how, see the following sections in [Transform Analytics data to generat
  
 > [!NOTE]   
 > In this example, the **State** values for **User Story** include **Proposed**, **In Progress**, and **Completed**. 
-
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

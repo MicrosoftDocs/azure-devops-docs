@@ -4,7 +4,7 @@ description: Learn about configuring and running pipeline jobs inside containers
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
 ms.date: 07/08/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Container jobs in YAML pipelines
@@ -21,7 +21,7 @@ Linux and Windows [agents](../agents/agents.md) can run pipeline jobs directly o
 
 For a container job, the agent first fetches and starts the container. Then each step of the job runs inside the container.
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 If you need fine-grained control at the individual build step level, [step targets](tasks.md#step-target) let you choose a container or host for each step.
 ::: moniker-end
 

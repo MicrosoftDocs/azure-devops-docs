@@ -1,20 +1,20 @@
 ---
-title: Extend the work item form | Extensions for Azure DevOps
-description: Describes how to extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps.
+title: Extend the Work Item Form | Azure DevOps Extensions
+description: Learn how to extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 05/08/2024
+ms.date: 04/11/2025
 ---
 
 # Extend the work item form
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
+This article explains how to use extensions to customize how the work item form gets presented to users. You can extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps.
 
 * [Add a group to the main page](#addagroup)
 * [Add a page (tab)](#addapage) 
@@ -23,13 +23,13 @@ Learn how to customize how the work item form gets presented to users via contri
 * [Listen for events on the form](#listenforevents)
 * [Configure contributions in work item form](#showcontributions)
 
-See the **UI** example in the [Azure DevOps Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
+For the full source code, see the **UI** example in the [Azure DevOps extension samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub.
 
 <a name="addagroup"></a>
 
 ## Add a group
 
-![Toolbar item in work item form.](./media/add-workitem-extension-group.png)
+:::image type="content" source="media/add-workitem-extension-group.png" alt-text="Screenshot that shows the toolbar item in work item form.":::
 
 To add a group to the main page, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-group` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -50,19 +50,20 @@ To add a group to the main page, add a contribution to your extension manifest. 
     }
 ]
 ```
+
 ### Properties
 
 | Property     | Description           |
 |--------------|-----------------------|
-| ```name```         | Text that appears on the group.   |
-| ```uri```         | URI to a page that hosts the html that shows on the work item form and its scripts.
-| ```height```       | (Optional) Defines the height of the group. When omitted, it's 100%.
+| `name`       | Text that appears on the group.   |
+| `uri`        | URI to a page that hosts the html that shows on the work item form and its scripts. |
+| `height`     | (Optional) Defines the height of the group. When omitted, it's 100%. |
 
-###  JavaScript sample
+### JavaScript sample
 
-This example shows how to register an object that's called when events occur on the work item form that may impact your contributed group.
+This example shows how to register an object that's called when events occur on the work item form that might affect your contributed group.
 
-```js   
+```js
 import { IWorkItemFormService, WorkItemTrackingServiceIds } from "azure-devops-extension-api/WorkItemTracking";
 import * as SDK from "azure-devops-extension-sdk";
 
@@ -116,7 +117,7 @@ SDK.register(SDK.getContributionId(), function () {
         }
     }
 });
-```     
+```
 
 [!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
@@ -124,9 +125,9 @@ SDK.register(SDK.getContributionId(), function () {
 
 ## Add a page
 
-A new page is rendered as a tab on the work item form. New pages appear next to the Details tab.
+A new page is rendered as a tab on the work item form. New pages appear next to the **Details** tab.
 
-![New page as a tab on the work item form.](./media/add-workitem-extension-page.png)
+:::image type="content" source="media/add-workitem-extension-page.png" alt-text="Screenshot that shows the new page as a tab on the work item form.":::
 
 To add a page to the work item form, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-page` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -154,7 +155,7 @@ To add a page to the work item form, add a contribution to your extension manife
 | name         | Text that appears on the tab page.   |
 | uri          | URI to a page that hosts the html that shows on the work item form and its scripts. |
 
-###  JavaScript sample
+### JavaScript sample
 
 See the JavaScript sample in the form group section. The name of the registered object should match the `id` of the contribution.
 
@@ -164,15 +165,15 @@ See the JavaScript sample in the form group section. The name of the registered 
 
 ## Configure contributions in work item form
 
-In Azure DevOps Services, by default the group extensions appear in the end of the second column of the form and page contributions appear after all the work item form pages as a tab. Control contributions are not shown in the form by default so users have to manually add them to the form. In Azure DevOps Server, to show/hide or move the control, group and page contributions in work item form, see  [Configure work item form extensions](./configure-workitemform-extensions.md).
+In Azure DevOps Services, by default, the group extensions appear in the end of the second column of the form, and page contributions appear after all the work item form pages as a tab. Control contributions aren't shown in the form by default, so users have to manually add them to the form. In Azure DevOps Server, to show/hide or move the control, group and page contributions in work item form, see [Configure work item form extensions](./configure-workitemform-extensions.md).
 
 <a name="addmenuaction"></a>
 
 ## Add menu action
 
-![Add an item to the work item toolbar.](./media/add-workitem-extension-toolbar.png)
+:::image type="content" source="media/add-workitem-extension-toolbar.png" alt-text="Screenshot that shows how to add an item to the work item toolbar.":::
 
-To add an item to the work item toolbar, add this contribution to your extension manifest. The item appears in the ... dropdown in the top right of the work item form.
+To add an item to the work item toolbar, add this contribution to your extension manifest. Select the vertical ellipsis in the work item form to see the dropdown menu.
 
  ```json
 "contributions": [
@@ -194,23 +195,23 @@ To add an item to the work item toolbar, add this contribution to your extension
 ]
 ```
 
-
 ### Properties
+
 | Property     | Description           |
 |--------------|-----------------------|
-| text         | Text that appears on the toolbar item. |
-| title        | Tooltip text that appears on the menu item. |
-| toolbarText  | Text that appears when the item is being hovered over. |
-| uri          | URI to a page that registers the toolbar action handler. |
-| icon         | URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri. |
-| group        | Determines where the menu item appears, related to others. Toolbar items with the same group name are grouped and divided by a separator from the rest of the items.
-| registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contribution ID.
+| `text`         | Text that appears on the toolbar item. |
+| `title`        | Tooltip text that appears on the menu item. |
+| `toolbarText`  | Text that appears when the item is being hovered over. |
+| `uri`          | URI to a page that registers the toolbar action handler. |
+| `icon`         | URL to an icon that appears on the menu item. Relative URLs are resolved using `baseUri`. |
+| `group`        | Determines where the menu item appears, related to others. Toolbar items with the same group name are grouped and divided by a separator from the rest of the items. |
+| `registeredObjectId` | (Optional) Name of the registered menu action handler. Defaults to the contribution ID. |
 
 <a name="listenforevents"></a>  
- 
+
 ## Listen for events
 
-To add an observer to the work item, which listens to the work item events, add this contribution to your extension manifest. There's no visualization for observers on the work item form. This is the best way to listen to work item form onSaved event since the observer lives outside of the form and doesn't get destroyed when form closes, which might happen right after save.
+To add an observer to the work item, which listens to the work item events, add this contribution to your extension manifest. There's no visualization for observers on the work item form. This is the best way to listen to work item form *onSaved* event since the observer lives outside of the form and doesn't get destroyed when form closes, which might happen right after save.
 
  ```json
 "contributions": [
@@ -232,7 +233,7 @@ To add an observer to the work item, which listens to the work item events, add 
 
 | Property     | Description           |
 |--------------|-----------------------|
-| uri          | URI to a page that hosts the scripts listening to events. |
+| `uri`        | URI to a page that hosts the scripts listening to events. |
 
 [!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
@@ -309,8 +310,8 @@ When using the new SDK, you should also be using the [azure-devops-extension-api
 
 ### When to use action or action-provider
 
-Use `ms.vss-web.action-provider` when dynamically loading menu items using ``getMenuItems`` on the menu handler. Avoid using `ms.vss-web.action-provider` when your menu items are static and defined in your manifest. Instead `ms.vss-web.action` should be used.
+Use `ms.vss-web.action-provider` when dynamically loading menu items using `getMenuItems` on the menu handler. Avoid using `ms.vss-web.action-provider` when your menu items are static and defined in your manifest. Instead `ms.vss-web.action` should be used.
 
-### Package require("VSS/Events/Document") is no longer supported
+### Package `require("VSS/Events/Document")` is no longer supported
 
-``require("VSS/Events/Document")`` import is no longer supported with the New Boards Hub.
+`require("VSS/Events/Document")` import is no longer supported with the New Boards Hub.

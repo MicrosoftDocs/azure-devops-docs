@@ -4,7 +4,7 @@ description: Learn about how you can use expressions in Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.date: 11/18/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Expressions
@@ -17,7 +17,7 @@ Expressions can be used in many places where you need to specify a string, boole
 
 The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 # Expressions are used to define conditions for a step, job, or stage
 steps:
@@ -138,7 +138,7 @@ The following built-in functions can be used in expressions.
 * Short-circuits after first `False`
 * Example: `and(eq(variables.letters, 'ABC'), eq(variables.numbers, 123))`
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### coalesce
 * Evaluates the parameters in order (left to right), and returns the first value that doesn't equal null or empty-string.
@@ -190,7 +190,7 @@ jobs:
       - script: echo "Matching branch found"
 ```
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### convertToJson
 * Take a complex object and outputs it as JSON.
@@ -260,7 +260,6 @@ Here's another example of setting a variable to act as a counter that starts at 
 >  formats `system.pipelineStartTime` into a date and time object so that it is available to work with expressions.
 > The default time zone for `pipeline.startTime` is UTC. You can [change the time zone](../../organizations/accounts/change-time-zone.md) for your organization.
 
-
 ```yaml
 jobs:
 - job:
@@ -295,7 +294,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Ordinal ignore-case comparison for Strings
 * Example: `eq(variables.letters, 'ABC')`
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### format
 * Evaluates the trailing parameters and inserts them into the leading parameter string
@@ -331,13 +330,13 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 
 ::: moniker range=">= azure-devops"
 ### iif
-* Returns the second parameter if the first parameter evaluates to `True`, and the third parameter otherwize
+* Returns the second parameter if the first parameter evaluates to `True`, and the third parameter otherwise
 * Min parameters: 1. Max parameters: 3
 * The first parameter must be a condition
 * Example: `iif(eq(variables['Build.Reason'], 'PullRequest'), 'ManagedDevOpsPool', 'Azure Pipelines')` returns 'ManagedDevOpsPool' when the pipeline runs in response to a PR.
 ::: moniker-end
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### join
 * Concatenates all elements in the right parameter array, separated by the left parameter string.
@@ -377,7 +376,7 @@ steps:
 * Min parameters: 1. Max parameters 1
 * Example: `length('fabrikam')` returns 8
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 ### lower
 * Converts a string or variable value to all lowercase characters
 * Min parameters: 1. Max parameters 1
@@ -420,7 +419,7 @@ steps:
 * Short-circuits after first `True`
 * Example: `or(eq(1, 1), eq(2, 3))` (returns True, short-circuits)
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 ### replace
 * Returns a new string in which all instances of a string in the current instance are replaced with another string
 * Min parameters: 3. Max parameters: 3
@@ -436,12 +435,12 @@ steps:
 * The first parameter is the string to split
 * The second parameter is the delimiting characters
 * Returns an array of substrings. The array includes empty strings when the delimiting characters appear consecutively or at the end of the string
-* Example: 
+* Example:
   ```yml
   variables:
   - name: environments
-    value: prod1,prod2 
-  steps:  
+    value: prod1,prod2
+  steps:
     - ${{ each env in split(variables.environments, ',')}}:
       - script: ./deploy.sh --environment ${{ env }}
   ```
@@ -455,13 +454,13 @@ steps:
     - /subscriptions/mysubscription02/resourceGroups/myResourceGroup02/providers/Microsoft.Network/loadBalancers/kubernetes
   - name: environments
     type: object
-    default: 
+    default:
     - prod1
     - prod2
 
   trigger:
   - main
-    
+
   steps:
   - ${{ each env in parameters.environments }}:
     - ${{ each resourceId in parameters.resourceIds }}:
@@ -484,7 +483,7 @@ steps:
 * Example: `trim('  variable  ') ` returns 'variable'
 ::: moniker-end
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 ### upper
 * Converts a string or variable value to all uppercase characters
 * Min parameters: 1. Max parameters 1
@@ -492,13 +491,11 @@ steps:
 * Example: `upper('bah')` returns `BAH`
 ::: moniker-end
 
-
 ### xor
 * Evaluates `True` if exactly one parameter is `True`
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to Boolean for evaluation
 * Example: `xor(True, False)` (returns True)
-
 
 <h2 id="job-status-functions">Job status check functions</h2>
 
@@ -519,7 +516,7 @@ You can use the following status check functions as expressions in conditions, b
 
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
-* Use with `dependsOn` when working with jobs and you want to evaluate whether a previous job was successful. Jobs are designed to run in parallel while stages run sequentially. 
+* Use with `dependsOn` when working with jobs and you want to evaluate whether a previous job was successful. Jobs are designed to run in parallel while stages run sequentially.
 * For a job:
   * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
@@ -537,17 +534,17 @@ You can use the following status check functions as expressions in conditions, b
 ## Conditional insertion
 
 ::: moniker range=">=azure-devops-2022"
-You can use `if`, `elseif`, and `else` clauses to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
+You can use `if`, `elseif`, and `else` clauses to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met.
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2022"
-You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
+You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met.
 
 The `elseif` and `else` clauses are available starting with Azure DevOps 2022 and aren't available for Azure DevOps Server 2020 and earlier versions of Azure DevOps.
 
 ::: moniker-end
 
-Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax). 
+Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax).
 
 For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md).
 
@@ -584,7 +581,7 @@ steps:
 
 ### Conditionally run a step
 
-If there's no variable set, or the value of `foo` doesn't match the `if` conditions, the `else` statement runs. Here the value of `foo` returns true in the `elseif` condition. 
+If there's no variable set, or the value of `foo` doesn't match the `if` conditions, the `else` statement runs. Here the value of `foo` returns true in the `elseif` condition.
 
 ```yaml
 variables:
@@ -599,7 +596,7 @@ steps:
 - ${{ if eq(variables.foo, 'adaptum') }}:
   - script: echo "this is adaptum"
 - ${{ elseif eq(variables.foo, 'contoso') }}: # true
-  - script: echo "this is contoso" 
+  - script: echo "this is contoso"
 - ${{ else }}:
   - script: echo "the value is not adaptum or contoso"
 ```
@@ -609,7 +606,7 @@ steps:
 
 ## Each keyword
 
-You can use the `each` keyword to loop through parameters with the object type. 
+You can use the `each` keyword to loop through parameters with the object type.
 
 ```yaml
 parameters:
@@ -639,7 +636,7 @@ steps:
 - ${{ each fruit in parameters.listOfFruits }} :
   - ${{ each fruitColor in fruit.colors}} :
     - script: echo ${{ fruit.fruitName}} ${{ fruitColor }}
-``` 
+```
 
 ## Dependencies
 
@@ -658,7 +655,7 @@ If you experience issues with output variables having quote characters (`'` or `
 
 ### Dependency syntax overview
 
-The syntax of referencing output variables with dependencies varies depending on the circumstances. Here's an overview of the most common scenarios. There might be times when alternate syntax also works. 
+The syntax of referencing output variables with dependencies varies depending on the circumstances. Here's an overview of the most common scenarios. There might be times when alternate syntax also works.
 
 :::row:::
    :::column span="1":::
@@ -673,28 +670,28 @@ The syntax of referencing output variables with dependencies varies depending on
     [stage to stage dependency](#stage-to-stage-dependencies) (different stages)
    :::column-end:::
    :::column span="2":::
-    Reference an output variable from a previous stage in a job in a different stage in a condition in `stages`. 
-    - Syntax: `and(succeeded(), eq(stageDependencies.<stage-name>.outputs['<job-name>.<step-name>.<variable-name>'], 'true'))` 
+    Reference an output variable from a previous stage in a job in a different stage in a condition in `stages`.
+    - Syntax: `and(succeeded(), eq(stageDependencies.<stage-name>.outputs['<job-name>.<step-name>.<variable-name>'], 'true'))`
     - Example: `and(succeeded(), eq(stageDependencies.A.outputs['A1.printvar.shouldrun'], 'true'))`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-    [job to job dependency](#job-to-job-dependencies-within-one-stage) (same stage) 
+    [job to job dependency](#job-to-job-dependencies-within-one-stage) (same stage)
    :::column-end:::
    :::column span="2":::
-    Reference an output variable in a different job in the same stage in `stages`. 
+    Reference an output variable in a different job in the same stage in `stages`.
     - Syntax: `and(succeeded(), eq(dependencies.<job-name>.outputs['<step-name>.<variable-name>'], 'true'))`
-    - Example: `and(succeeded(), eq(dependencies.A.outputs['printvar.shouldrun'], 'true'))` 
+    - Example: `and(succeeded(), eq(dependencies.A.outputs['printvar.shouldrun'], 'true'))`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-    [Job to stage dependency](#job-to-job-dependencies-across-stages) (different stages) 
+    [Job to stage dependency](#job-to-job-dependencies-across-stages) (different stages)
    :::column-end:::
    :::column span="2":::
     Reference an output variable in a different stage in a `job`.
-    - Syntax: `eq(stageDependencies.<stage-name>.<job-name>.outputs['<step-name>.<variable-name>'], 'true')` 
+    - Syntax: `eq(stageDependencies.<stage-name>.<job-name>.outputs['<step-name>.<variable-name>'], 'true')`
     - Example: `eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')`
    :::column-end:::
 :::row-end:::
@@ -713,14 +710,13 @@ The syntax of referencing output variables with dependencies varies depending on
     [Stage to stage dependency](#deployment-job-output-variables) (deployment job with resource)
    :::column-end:::
    :::column span="2":::
-    Reference an output variable in a deployment job that includes a resource in different stage in `stages`. 
+    Reference an output variable in a deployment job that includes a resource in different stage in `stages`.
     - Syntax: `eq(dependencies.<stage-name>.outputs['<deployment-job-name>.<Deploy_resource-name>.<step-name>.<variable-name>'], 'true')`
-    - Example: `eq(dependencies.build.outputs['build_job.Deploy_winVM.setRunTests.runTests'], 'true')`   
+    - Example: `eq(dependencies.build.outputs['build_job.Deploy_winVM.setRunTests.runTests'], 'true')`
     :::column-end:::
 :::row-end:::
 
-There are also different syntaxes for output variables in deployment jobs depending on the deployment strategy. For more information, see [Deployment jobs](deployment-jobs.md#support-for-output-variables). 
-
+There are also different syntaxes for output variables in deployment jobs depending on the deployment strategy. For more information, see [Deployment jobs](deployment-jobs.md#support-for-output-variables).
 
 ### Stage to stage dependencies
 Structurally, the `dependencies` object is a map of job and stage names to `results` and `outputs`.
@@ -745,7 +741,7 @@ Expressed as JSON, it would look like:
 
 Use this form of `dependencies` to map in variables or check conditions at a stage level.
 
-In this example, there are two stages, A and B. Stage A has the condition `false` and won't ever run as a result. Stage B runs if the result of Stage A is `Succeeded`, `SucceededWithIssues`, or `Skipped`. Stage B runs because Stage A was skipped. 
+In this example, there are two stages, A and B. Stage A has the condition `false` and won't ever run as a result. Stage B runs if the result of Stage A is `Succeeded`, `SucceededWithIssues`, or `Skipped`. Stage B runs because Stage A was skipped.
 
 ```yaml
 stages:
@@ -765,7 +761,6 @@ stages:
 
 Stages can also use output variables from another stage.
 In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs.
-
 
 ```yaml
 stages:
@@ -809,8 +804,8 @@ At the job level within a single stage, the `dependencies` data doesn't contain 
 }
 ```
 
-In this example, there are three jobs (a, b, and c). Job a will always be skipped because of `condition: false`. 
-Job b runs because there are no associated conditions. 
+In this example, there are three jobs (a, b, and c). Job a will always be skipped because of `condition: false`.
+Job b runs because there are no associated conditions.
 Job c runs because all of its dependencies either succeed (job b) or are skipped (job a).
 
 ```yaml
@@ -937,7 +932,7 @@ stages:
 - stage: test
   dependsOn:
   - 'build'
-  jobs:  
+  jobs:
     - job: run_tests
       condition: eq(stageDependencies.build.build_job.outputs['build_job.setRunTests.runTests'], 'true')
       steps:
@@ -983,7 +978,7 @@ stages:
         - script: echo Hello from job A
 ```
 
-In the example above, the condition references an environment and not an environment resource. To reference an environment resource, you'll need to add the environment resource name to the dependencies condition. In the following example, condition references an environment virtual machine resource named `vmtest`. 
+In the example above, the condition references an environment and not an environment resource. To reference an environment resource, you'll need to add the environment resource name to the dependencies condition. In the following example, condition references an environment virtual machine resource named `vmtest`.
 
 ```yml
 stages:
@@ -1078,7 +1073,6 @@ steps:
 
 In this next example, the values `variables.emptyString` and the empty string both evaluate as empty strings.
 The function `coalesce()` evaluates the parameters in order, and returns the first value that doesn't equal null or empty-string.
-
 
 ```yaml
 variables:

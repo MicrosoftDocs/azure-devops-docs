@@ -7,7 +7,7 @@ ms.custom: continuous-test, cross-service
 ms.author: jeom
 author: raviLiftr
 ms.date: 12/07/2018
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Run tests in parallel for any test runner
@@ -31,7 +31,6 @@ This article discusses how you can parallelize tests by using multiple agents to
 Familiarize yourself with the concepts of [agents](../agents/agents.md) and [jobs](../process/phases.md).
 Each agent can run only one job at a time. To run multiple jobs in parallel, you must configure multiple agents.
 You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
-
 
 ## Setting up parallel jobs
 

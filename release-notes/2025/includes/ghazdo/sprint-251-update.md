@@ -19,7 +19,7 @@ If you have a network proxy configured and used the `enableAutomaticCodeQLInstal
 
 The branch picker in GitHub Advanced Security has been updated to display all branches with a successful scan, even if no vulnerabilities are detected. Previously, only branches with alerts were shown, making it difficult to confirm whether a scan completed successfully.
 
-Both the repository-level alerts UX and the [Analysis - List API](https://learn.microsoft.com/rest/api/azure/devops/advancedsecurity/analysis/list?view=azure-devops-rest-7.2) now return branches with a successful SARIF submission for dependency and code scanning, improving scan visibility.
+Both the repository-level alerts UX and the [Analysis - List API](/rest/api/azure/devops/advancedsecurity/analysis/list?view=azure-devops-rest-7.2&preserve-view=true) now return branches with a successful SARIF submission for dependency and code scanning, improving scan visibility.
 
 ### Enhanced pull request annotations in GitHub Advanced Security
 

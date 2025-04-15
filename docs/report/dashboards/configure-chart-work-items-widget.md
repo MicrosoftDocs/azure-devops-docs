@@ -41,15 +41,6 @@ The only task you can accomplish from the **Chart for Work Items** widget that y
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-
-| Category | Requirements |
-|-------------|-------------|
-| **Access** | [Project member](../../organizations/accounts/add-organization-users.md) with at least **Basic** access. Users with **Stakeholder** access can't view or create charts from the **Queries** page. They can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
-| **Permissions** |- By default, users with at least **Basic** access can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).<br>- To save a query to a **Shared Queries** folder: Permissions to save queries under a folder. For more information, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).<br>- To add a widget to a team dashboard: Member of the team or member of the **Project Administrators** security group.<br>- To add a widget to a project dashboard: Dashboard creator or **Edit** permissions for the dashboard, or member of the **Project Administrators** security group.<br>- To view a query-based widget added to a dashboard: **Read** permissions to the underlying query. If that permission is denied, the widget displays a *Widget failed to load* message. |
-| **Queries** | - Only [flat-list queries](charts.md#create-a-flat-list-query) support charts.<br>- To add a chart to a dashboard: Save the query to a **Shared Queries** folder. To do so, [get permissions to save queries under a folder](../../boards/queries/set-query-permissions.md). |
-
-::: moniker-end
  
 For more information about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md). 
 
@@ -67,7 +58,7 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 
 ## Add the Chart for Work Items widget to a dashboard   
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. From the web portal, open the dashboard you want to add the chart to.  
 
@@ -104,49 +95,6 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 
 8. When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. From the web portal, open the dashboard you want to add the chart to.  
-
-2. To add widgets to the dashboard, select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** to open the widget catalog.  
-
-	> [!NOTE]   
-	> If you don't see the :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** option, then you need to [get permissions to edit the dashboard](dashboard-permissions.md). 
-
-3. Select the **Chart for Work Items** widget and then select **Add** or drag it onto the dashboard.    
-
-	![Web portal, Dashboards page, Widget catalog, Chart for work items widget](media/widget-chart-work-query.png) 
-
-4. To configure the widget, select the widget's :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** and choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: **Configure** option.  
-
-	:::image type="content" source="media/chart-work-items/widget-more-actions-menu.png" alt-text="Screenshot of dashboard widget More actions menu options.":::
-
-	The Configuration dialog opens. 
-
-5. Enter a **Title**, select the **Size**, and then select the flat-list **Query** on which the chart is based. Next, choose the **Chart type**.   
-
-	:::image type="content" source="media/chart-work-items/configure-chart-widget.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2019.":::
-
-	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown. For additional guidance on choosing and configuring specific chart types, see [Track progress with status and trend query-based charts](charts.md).
-
-6. After you save your changes, you'll see the new chart has been added to the dashboard. 
-
-	![Chart of work items widget, configure dialog](media/charts/pivot-chart-from-query.png)  
-
-	> [!TIP]  
-	> If the chart doesn't display all the rows or columns you want, try changing the chart **Size**. Pivot tables and other chart types will display more data based on the area provided on the dashboard.  
-
-7. Drag the tile anywhere on the dashboard to put it where you want it. 
-
-8. When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
-::: moniker-end
-
-
-
-
-
-
 
 ::: moniker range=">= azure-devops-2022"
 

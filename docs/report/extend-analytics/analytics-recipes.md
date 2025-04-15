@@ -7,7 +7,7 @@ ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/04/2022
 ---
 
@@ -18,7 +18,6 @@ ms.date: 11/04/2022
 You can query your Azure DevOps work tracking data using the basic queries provided in this article. These queries address everyday needs while demonstrating various capabilities of Analytics. You can adapt most of these queries to meet your needs.
 
 This article builds off information provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md).  
-
 
 [!INCLUDE [temp](../includes/analytics-preview.md)] 
  
@@ -34,8 +33,6 @@ All examples are scoped to a project on Azure DevOps. For examples of organizati
 ::: moniker-end
 
 <a id="changed-date"></a> 
-
-
 
 ## Filter work items based on a Changed Date    
 
@@ -53,7 +50,6 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v1.0/Wor
     AND ChangedOn/Date ge 2021-12-16T23:44:15.619Z)
   &$orderby=WorkItemType desc 
 ```
-
 
 <a id="area"></a>
 
@@ -130,7 +126,6 @@ And the response returns data for the following five projects.
 }
 ```
 
-
 <a id="iteration"></a>
 
 ## Filter work items based on Iteration 
@@ -200,7 +195,6 @@ And the response returns data for the following four work items.
 }
 ```
 
-
 ### Retrieve items for an iteration
 
 You can retrieve all work items for a given iteration that fall between the first day of the iteration and the last day of the iteration. Here, your query is constrained by data contained within the work tracking data.
@@ -215,10 +209,6 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 ```
 
 <a id="tag"></a>
-
-
-
-
 
 ## Filter work items containing specific tags 
 
@@ -351,11 +341,9 @@ The response returns three area paths and the names of several teams assigned to
 >           TeamName     "Fabrikam Team"
 ```
 
-
 <a id="history"></a>
 
 ## Return the history of a specific work item
-
 
 You query the `WorkItemRevisions` entity set to list work item history.  The following query returns the value of the **Title**, **State**, and **Iteration Path** for each revision for a specified work item. 
 

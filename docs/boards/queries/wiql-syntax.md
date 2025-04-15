@@ -30,7 +30,6 @@ The WIQL syntax supports all functions available through the web portal Query Ed
 |--------------|-------------|
 | **Permissions** | **View work items** or **View work items in this node** permission set to **Allow**. Typically, these permissions get granted to members of the **Readers** and **Contributors** groups for each team project. For more information, see [Permissions and groups](../../organizations/security/permissions.md). |
 
-
 ## Query language overview
 
 The work item query language has five parts shown in the following syntax snippet and described in the following table. WIQL syntax isn't case-sensitive.
@@ -51,7 +50,6 @@ WHERE
 ORDER BY [System.ChangedDate] DESC
 ASOF '02-11-2020'
 ```
-
 
 > [!TIP] 
 > By installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiql-editor), you can construct your queries using the Query Editor and then view the WIQL syntax. You can then copy and modify the WIQL syntax and run the query using the **Wiql Playground** hub added to **Boards**.
@@ -113,7 +111,6 @@ ASOF '02-11-2020'
 > [!NOTE] 
 > The WIQL length of queries made against Azure Boards must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
 
-
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
  
 Quote (single or double quotes are supported) DateTime literals used in comparisons. They must be in the .NET DateTime format of the local client computer running the query. Unless a time zone is specified, DateTime literals are in the time zone of the local computer.
@@ -136,10 +133,9 @@ WHERE
    OR [Resolved Date] >= '2019-01-18T00:00:00.0000000')  
 ```
 
-
 ### Custom fields
  
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 You can add a custom field to a query clause. With WIQL, you must specify the reference name for the custom field. For projects that use an Inherited process model, custom fields are typically labeled with **_Custom._** prepended to their name, and spaces removed. For example: 
 
@@ -185,7 +181,6 @@ WHERE
     )
 ```
 
-
 ### Filter conditions
 
 Each filter condition is composed of three parts, each of which must conform to the following rules: 
@@ -201,7 +196,6 @@ Each filter condition is composed of three parts, each of which must conform to 
 	- The name of another *field*. For example, you can use `[Assigned to] = [Changed by]` to find work items that are assigned to the person who changed the work item most recently.
 
 For a description and reference names of all system-defined fields, see [Work item field index](../work-items/guidance/work-item-field.md).
-
 
 <a id="operators"></a>
 
@@ -228,7 +222,6 @@ Beyond these basic operators, there are some behaviors and operators specific to
 
 > [!NOTE]   
 > The operators available to you depend on your platform and version. For more information, see [Query quick reference](query-index-quick-ref.md).
-
 
 :::row:::
    :::column span="1":::
@@ -301,8 +294,6 @@ Beyond these basic operators, there are some behaviors and operators specific to
    :::column-end:::
 :::row-end:::
 
-
-
 ### Logical groupings 
 
 You can use the terms `AND` and `OR` in the typical Boolean sense to evaluate two clauses. You can use the terms `AND EVER` and `OR EVER` when specifying a `WAS EVER` operator. You can group logical expressions and further conjoin them, as needed. Examples are shown below.  
@@ -356,15 +347,13 @@ WHERE
     AND EVER [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
 ```
 
-
 <a id="macros"></a>
 
 ## Macros or variables
 
 The following table lists the macros or variables you can use within a WIQL query. 
 
-::: moniker range=">= azure-devops-2019"
-
+::: moniker range="<=azure-devops"
 
 |  Macro       |       Usage        |
 |---------|-----|
@@ -376,8 +365,6 @@ The following table lists the macros or variables you can use within a WIQL quer
 | **[Any]** |  Use this variable to search for work items that relate to any value that is defined for a particular field.|
 
 ::: moniker-end
-
-
 
  
 ### @me macro
@@ -421,11 +408,9 @@ WHERE
    [System.CreatedDate] > '01-01-2019'
 ```
 
-
 <a id="start-of"></a>
 
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### @StartOfDay, @StartOfWeek, @StartOfMonth, @StartOfYear macros 
 
@@ -433,14 +418,7 @@ You can use the `@StartOf...` macros with any <strong>DateTime</strong> field. T
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]   
-> Requires Azure DevOps Server 2019 Update 1 or later version. 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 These macros accept a modifier string that has a format of `(+/-)nn(y|M|w|d|h|m)`. Similar to the `@Today` macro, you can specify plus or minus integer offsets. If the time unit qualifier is omitted, it defaults to the natural period of the function. For example, `@StartOfWeek("+1")` is the same as `@StartOfWeek("+1w")`. If the plus/minus (+/-) sign is omitted, plus is assumed.
 
@@ -450,7 +428,6 @@ This syntax allows you to nest modifiers and offset your query twice. For exampl
 WHERE 
    [Microsoft.VSTS.Common.ClosedDate] >=@StartOfYear('+3M') - 1
 ```
-
 
 The following examples assume that today is 4/5/19. 
 
@@ -520,7 +497,6 @@ WHERE
 > [!NOTE]  
 > If no time is specified, WIQL uses midnight. If no time zone is specified, WIQL uses the time zone of the local client computer.
 
-
 ## Set the sort order (`ORDER BY`) 
 
 You can use the `ORDER BY` clause to sort the results of a query by one or more fields in ascending or descending order. 
@@ -546,14 +522,11 @@ ORDER BY [Microsoft.VSTS.Common.Priority],
     [System.CreatedDate] DESC
 ```
 
-
-
 <a id="linked-work-items"></a>
 
 ## Query for links between work items
 
 To return links between work items, you specify `FROM WorkItemLinks`. Filter conditions in the `WHERE` clause may apply to the links or to any work item that is the source or the target of a link. For example, the following query returns the links between Product Backlog Items and their active child items.
-
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
@@ -697,7 +670,6 @@ WHERE
     )
 MODE (Recursive)
 
-
 ```
 
 ### Direct-link query example
@@ -706,7 +678,6 @@ The following query returns all work item types define in the current project. T
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Query Editor, direct-link query, all work items and states.](media/wiql/direct-link-query.png)   
-
 
 The equivalent WIQL syntax is as shown. 
 
@@ -739,7 +710,6 @@ ORDER BY [System.Id]
 MODE (MustContain)
 ```
 
-
 ## More query examples
 
 The following typical WIQL query example uses reference names for the fields. The query selects work items (no work item type specified) with a **Priority=1**. The query returns the **ID** and **Title** of the return set as columns. The results are sorted by **ID** in ascending order.
@@ -765,7 +735,6 @@ You specify the date-time pattern according to one of two patterns:
 - The pattern specified by UTC, which follows this pattern (with Z appended to the date-time).  
 
 `AND [System.ChangedDate] >= '1/1/2019 00:00:00Z'`
-
 
 ### Example clauses
 
@@ -883,7 +852,6 @@ The following example statements show specific qualifying clauses.
    :::column-end:::
 :::row-end:::
 
-
 ### String and PlainText
 
 Quote string literals (single or double quotes are supported) in a comparison with a string or plain text field. String literals support all Unicode characters.
@@ -941,7 +909,6 @@ WHERE
     )
 ```
 
-
 ## Related articles 
 
 - [Query fields, operators, values, and variables](query-operators-variables.md)  
@@ -949,12 +916,9 @@ WHERE
 - [About managed queries](about-managed-queries.md)  
 - [Define a query](using-queries.md)      
 
-
-
 <!---
 https://msdn.microsoft.com/library/bb130306.aspx
 -->
-
 
 <!---
 

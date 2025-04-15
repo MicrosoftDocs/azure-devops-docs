@@ -206,7 +206,6 @@ When you create an organization or project collection in Azure DevOps, the syste
 > To enable the **Organizations Permissions Settings Page v2** preview page,see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page doesn't.
 ::: moniker-end  
 
-
 #### [Preview page](#tab/preview-page)
 
 ::: moniker range="< azure-devops"
@@ -675,7 +674,6 @@ Manage organization-level permissions through the [web portal admin context](../
 
 #### [Preview page](#tab/preview-page)
 
-
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
 
@@ -1067,7 +1065,6 @@ Manage project-level permissions through the [web portal admin context](change-p
 Manage project-level permissions through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
 
 ::: moniker-end
-
 
 #### [Preview page](#tab/preview-page)
 
@@ -1604,7 +1601,6 @@ Manage project-level permissions through the [web portal admin context](change-p
 :::row-end:::
 
 ---
-
 
 ## Analytics views (object-level)  
 
@@ -2895,7 +2891,6 @@ The following permissions are defined in Release Management. The scope column ex
    :::column-end:::
 :::row-end:::
 
-
 Default values for all of these permissions are set for team project collections and project groups. For example,
 **Project Collection Administrators**, **Project Administrators**, and
 **Release Administrators** are given all of the above permissions by
@@ -2922,7 +2917,7 @@ Use task groups to encapsulate a sequence of tasks already defined in a build or
 
 ## Notifications or alerts 
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, you can manage them using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tool.
 ::: moniker-end
 

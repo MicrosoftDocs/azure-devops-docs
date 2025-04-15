@@ -7,7 +7,7 @@ ms.custom: analytics-views
 ms.author: chcomley
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms date: 10/04/2021
 ---
 
@@ -101,7 +101,6 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 	> ![Power BI Desktop, Home, Close & Apply](media/transform-data/powerbi-close-apply.png)  
 
 16. Next, choose **Refresh** to add *AreaSK* to the view.  
-
 
 ## Create the Power BI relationship mappings
 

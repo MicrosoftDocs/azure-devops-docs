@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 ai-usage: ai-assisted
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 03/12/2025
 #customer intent: As a report creator who works in Power BI, I want to add last refresh information to my reports to let users know that the data is current.
 ---

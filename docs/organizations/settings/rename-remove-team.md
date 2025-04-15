@@ -225,7 +225,7 @@ You can delete any team except the default team. At least one team must be defin
 
 #### [Current page](#tab/current-page) 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. From your project in the web portal, select **Project settings** > **Teams** > **&hellip;** for the team you want to delete, and then select **Delete**.   
 
@@ -240,7 +240,6 @@ You can delete any team except the default team. At least one team must be defin
 	![Screenshot of Delete team confirmation dialog.](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
 
 ::: moniker-end
-
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 

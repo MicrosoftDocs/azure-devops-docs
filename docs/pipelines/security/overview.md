@@ -2,9 +2,10 @@
 title: Secure Azure Pipelines
 description: Guidelines and recommendations for securing pipelines.
 ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
+ms.custom: peer-review-program
 ms.reviewer: vijayma
 ms.date: 03/04/2025
-monikerRange: '> azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Secure Azure Pipelines
@@ -21,7 +22,6 @@ This article provides an overview of necessary security-related configurations t
 |---|---|
 | **Azure DevOps** | - Implement recommendations in [Secure your Azure DevOps](../../organizations/security/security-overview.md).  <br>  - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). |
 | **Permissions** | - To modify pipelines permissions: Member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md). <br> - To modify organization permissions: Member of the [Project Collection Administrators group](../../organizations/security/change-project-level-permissions.md). |
-
 
 ## Restrict project, repository, and service connection access
 
@@ -67,7 +67,6 @@ To secure containers, mark volumes as read-only, set resource limits, use truste
 - **Configure restrictive firewalls for self-hosted agents**: Set up firewalls to be as restrictive as possible while still allowing agents to function, balancing security and usability.
 - **Regularly update self-hosted agent pools**: Keep your self-hosted agents up to date with regular updates to ensure vulnerable code isn't running, reducing the risk of exploitation.
 
-
 ## Securely use variables and parameters
 
 Securely use variables and parameters in your pipelines by following best practices for setting secrets. Best practices include restricting secret use, using queue-time variables, and enabling shell task argument validation to protect your pipeline from threats and vulnerabilities.
@@ -86,7 +85,6 @@ The best method to protect a secret is to not have a secret in the first place. 
 **Don't put secrets in YAML**: Never store sensitive values as plaintext in an Azure Pipelines **.yml** file. 
 - **Don't log or print secrets**: Avoid echoing secrets to the console, using them in command line parameters, or logging them to files. Azure Pipelines attempts to scrub secrets from logs wherever possible but can't catch every way that secrets can be leaked.
 - **Don't use structured data like JSON as secrets**: Create individual secrets for each sensitive value. This approach ensures better redaction accuracy and minimizes the risk of exposing sensitive data inadvertently.
-
 
 ### Audit and rotate secrets
 
@@ -122,7 +120,6 @@ Begin with a minimal template and gradually enforce extensions. This approach en
 
 - **Use extends templates**: Extends templates define the outer structure and offer specific points for targeted customizations. [Using extends templates](../process/templates.md#extend-from-a-template) can prevent malicious code from infiltrating a pipeline.
 - **Restrict access with steps**: Limit network access by having steps such as downloading packages run on a container rather than on the host. When steps run in a container, you prevent a bad actor from modifying agent configuration or leaving malicious code for later execution.
-
 
 ## Related Articles
 

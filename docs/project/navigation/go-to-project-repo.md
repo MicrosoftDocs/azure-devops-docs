@@ -36,7 +36,7 @@ Also, when you add a work item, the system references the default area and itera
 
 From the **Projects** page you can quickly navigate to a project that you have permissions to view. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.  
 
@@ -62,12 +62,9 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 ::: moniker-end
 
-
-
-
 ## View and open a repository 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Choose **Repos>Files**.
 
@@ -80,16 +77,14 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 ::: moniker-end
 
-
   
-
 
 <a id="switch-to-a-different-team">  </a>
 <a id="switch-team-context">  </a>
 
 ## Switch to a different team 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 From a user page, one under&mdash;**Boards**, **Repos**, **Pipelines**, or **Test Plans**&mdash;you can't switch to a different team, you can [only select team artifacts](use-breadcrumbs-selectors.md). 
 
@@ -99,9 +94,6 @@ From a **Project Settings>Work>Team configuration** page, you select a team from
 > ![Screenshot showing selected team from the breadcrumb.](media/breadcrumbs/choose-team-selector.png)
 
 ::: moniker-end
-
-
-
 
 ## Related articles
 - [Work across projects](work-across-projects.md)

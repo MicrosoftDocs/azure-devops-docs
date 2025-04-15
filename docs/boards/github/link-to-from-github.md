@@ -7,7 +7,7 @@ ms.custom: work-items, github, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 10/02/2024
 ---
 
@@ -26,7 +26,6 @@ In this article, learn how to link work items to GitHub commits, pull requests, 
 | **Permissions** | **Contributor** to both the Azure Boards project and the GitHub repository. |
 | **Project connection** | Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to or from exist. For more information, see [Azure Boards-GitHub integration](index.md). |
 
-
 ::: moniker range="azure-devops"
 > [!NOTE]   
 > Projects that use the Hosted XML process model require updates to the work item types to view the Development section and GitHub link types. For more information, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
@@ -35,11 +34,6 @@ In this article, learn how to link work items to GitHub commits, pull requests, 
 ## Use `AB#` to link from GitHub to Azure Boards work items
 
 From a GitHub commit, pull request or issue, use the following syntax to create a link to your Azure Boards work item. Enter the `AB#ID` within the text of a commit message. Or, for a pull request or issue, enter the `AB#ID` within the title or description. Using `AB#ID` in a comment doesn't create a link on the work item.
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]   
-> Linking to GitHub issues requires Azure DevOps Server 2019 Update 1 or later version. 
-::: moniker-end
 
 ```
 AB#{ID}
@@ -90,11 +84,6 @@ To create a GitHub branch directly from a work item, do these steps:
 
 ## Add work item link to GitHub branch, commit, or pull request
 
-::: moniker range="azure-devops-2019"
-> [!NOTE]   
-> Linking to a GitHub issue requires Azure DevOps Server 2019 Update 1 or later version. 
-::: moniker-end
-
 1. Open the work item and go to the **Links** tab.
 
    :::image type="content" source="media/link/add-link-from-links-tab.png" alt-text="Screenshot of work item form, Links tab, Add link to issue.":::
@@ -113,6 +102,16 @@ To create a GitHub branch directly from a work item, do these steps:
 > There's a delay when completing the AB# links if you are using Azure DevOps Server and GitHub Enterprise Server. We have a 'push-and-pull' design to pull from the GitHub events every hour on the incremental changes on Commit, PR, and Issue.
 
 ::: moniker-end
+
+## Automatic link updates
+
+Several events automatically update the links on the work item form, so you don’t need to create them manually. These include:
+
+| GitHub event       | Action |
+| :----------------- | :----------------------------------------------------------- |
+| **Link to branch** | When a pull request is created from a branch, it is automatically linked to the work item. |
+| **Merge commit**   | After the pull request is merged, the resulting merge commit is automatically linked to the work item. |
+| **Delete branch**  | If the branch is deleted (typically after merging), its link is automatically removed from the work item. |
 
 ## View or open links from the Development section
 

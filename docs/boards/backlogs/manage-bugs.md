@@ -48,10 +48,6 @@ The following image shows the Bug work item type for the Scrum process. The Bug 
 :::image type="content" source="media/manage-bugs/bug-work-item-type.png" alt-text="Screenshot shows a Bug work item type form for Scrum process in Azure DevOps Server 2020 and cloud service." lightbox="media/manage-bugs/bug-work-item-type.png":::
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-:::image type="content" source="media/manage-bugs-scrum-bug-from-ts.png" alt-text="Screenshot shows a Bug work item type form for Scrum process in Azure DevOps Server 2019.":::
-::: moniker-end
-
 ## Fields specific to bugs
 
 The Bug work item type uses some bug-specific fields. To capture both the initial issue and ongoing discoveries, use the fields described in the following table. For information about fields specific to the Bug defined for the Capability Maturity Model Integration (CMMI) process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md).
@@ -133,7 +129,7 @@ The Bug work item type uses some bug-specific fields. To capture both the initia
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       [Deployment](#deployment-control)
@@ -189,7 +185,7 @@ Before you customize your process, we recommend that you review [About configuri
 To customize your particular process, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 To customize your particular process, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md) or [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 ::: moniker-end
 
@@ -389,13 +385,6 @@ You can add intermediate columns to track your bug status on the board. You can 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-
-- [Add columns to your board](../boards/add-columns.md)
-- [Query changes to a board](../queries/query-by-workflow-changes.md#kanban-query-fields)
-
-::: moniker-end
-
 ### Automate bug reassignment based on workflow state
 
 To automate select actions, add custom rules to your Bug work item type. For example, add a rule as shown in the following image. This rule specifies to reassign a bug to the person who opened the bug when a team member resolves it. Typically, that person verifies that the bug is fixed and closes the bug. For more information, see [Apply rules to workflow states (Inheritance process)](../../organizations/settings/work/apply-rules-to-workflow-states.md).
@@ -463,7 +452,7 @@ You can track the bug status, assignments, and trends using queries that you can
 
 For more information about queries, charts, and dashboards see [managed queries](../queries/about-managed-queries.md), [charts](../../report/dashboards/charts.md), and [dashboards](../../report/dashboards/dashboards.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### Use Analytics views and the Analytics service to create bug reports
 

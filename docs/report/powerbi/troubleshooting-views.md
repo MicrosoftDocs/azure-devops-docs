@@ -6,10 +6,9 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 10/13/2021
 ---
-
 
 # Resolve errors associated with an Analytics view
 

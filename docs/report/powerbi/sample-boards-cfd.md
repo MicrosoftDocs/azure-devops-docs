@@ -7,7 +7,7 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/08/2022
 ---
 
@@ -31,9 +31,7 @@ For more information about cumulative flow, see [Cumulative flow, lead time, and
 
 Queries in this section support returning cumulative flow data for User Stories. These queries specify the `WorkItemBoardSnapshot` entity set as they return data calculated for the board over time.  
 
-
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
-
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -82,7 +80,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 * `{teamname}` - The name of the team to display CFD data
 - `{startdate}` - Start your report for items completed on or after a given date with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
-
 
 ### Query breakdown
 
@@ -170,25 +167,18 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand columns in Power Query Editor
 
 From the Power Query Editor, choose the query with the data you want to transform. For a CFD chart, you'll need to 
 expand the `Area`, `Iteration`, and `AssignedTo` columns. To learn how, see the following sections in [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
 
-
 ## (Optional) Rename fields
 
 Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
-
 [!INCLUDE [temp](includes/close-apply.md)]
-
-
 
 ## Create the stacked area chart  
 
@@ -207,7 +197,6 @@ In the following example, the query was renamed to *CFD*, but no columns were re
 1. In the **Filters** pane, expand `ColumnName`, and select only the values you want to appear on the chart. For example, you may want to unselect *New*, *Proposed*, *Done*, or *Closed*. 
 
 	:::image type="content" source="media/reports-boards/cfd-columnname-filters.png" alt-text="Screenshot of Power BI Filters for ColumnName. ":::
-
 
 The example report displays the columns in alphabetic order. However, the preferred order is to sort the data according to the column order, or progressive order. 
 
@@ -269,10 +258,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 
 	:::image type="content" source="media/reports-boards/cfd-stacked-area-chart-sorted.png" alt-text="Screenshot of Sample Power BI Cumulative Flow stacked area chart report, columns sorted in board column order."::: 
 
-
 > [!NOTE]
 > If any work items were in a column that has since been deleted, they will appear as "Blank" in the above report. 
-
 
 ## Related articles
 

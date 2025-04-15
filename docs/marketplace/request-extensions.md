@@ -48,7 +48,7 @@ If you don't have permissions to install extensions, you can request extensions 
 
 ::: moniker-end
 
-::: moniker range="= azure-devops-2019 || azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 

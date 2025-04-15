@@ -6,7 +6,7 @@ description: Use Datadog with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/03/2020
 ---
 # Create a service hook for Azure DevOps with Datadog 

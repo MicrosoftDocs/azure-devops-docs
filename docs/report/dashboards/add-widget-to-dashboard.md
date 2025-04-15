@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 10/25/2024
 ---
 
-
 # Add widgets to a dashboard
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
@@ -96,16 +95,6 @@ For more information about configuring widgets, see the following articles:
 - [Lead time or cycle time](cycle-time-and-lead-time.md)
 - [Velocity widget](team-velocity.md)
 - [Test trend results](configure-test-results-trend.md)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-For more information about configuring widgets, see the following articles: 
-- [Burndown/burnup](configure-burndown-burnup-widgets.md)
-- [Cumulative flow](cumulative-flow.md)
-- [Lead time or cycle time](cycle-time-and-lead-time.md)
-- [Velocity widget](team-velocity.md)
 
 ::: moniker-end
 

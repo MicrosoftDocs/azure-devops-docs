@@ -30,9 +30,6 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 
 ::: moniker-end
 
-
-
-
 In this article you'll learn: 
 
 ::: moniker range="azure-devops"
@@ -64,23 +61,16 @@ You use issues or impediments to track items that may block work from getting do
 
 Define tasks when you want to create a [checklist of tasks](../boards/add-task-checklists.md). You can also define tasks if you use Scrum methods and track work using the [Remaining Work](../sprints/task-board.md) field. By linking requirement work item types to tasks using the Parent-Child link type, the tasks appear on the taskboard for each linked user story.
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 > [!NOTE]  
 > If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product board. To learn how, see [Set up your backlogs and boards, Customize your board checklist items](set-up-your-backlog.md#customize-checklist-2019). 
 
 ::: moniker-end
 
-
-::: moniker range="azure-devops-2019"  
-
-If you want to add these work item types to a backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
-
-::: moniker-end
-
 ## Add an issue or impediment 
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 Open **Boards>Work Items**, and choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon, and then select from the **New work item** menu of options. 
 
@@ -91,15 +81,11 @@ Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="fa
 
 ::: moniker-end   
 
-
-
-
 <a id="customize"> </a>
 
 ## Customize issue tracking
 
 [!INCLUDE [temp](../includes/customize-work-tracking.md)] 
-
 
 ::: moniker range="azure-devops"
 
@@ -107,12 +93,11 @@ Issues and impediments don't appear on your backlog by default. Instead, you tra
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). They only appear on your backlog if your project is customized using the On-premises XML process model. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 
 ::: moniker-end
-
 
  
 <a id="add-to-backlog"></a> 
@@ -124,14 +109,11 @@ If you want to track issues or impediments along with your requirements or a por
 
 ::: moniker-end
 
-::: moniker range=">= Azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by customizing your project's process. For more information, see the following: 
 - **For the Inherited process**: [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
 - **For the On-premise XML process**: [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
 ::: moniker-end
-
-
-
 
 ## Related articles 
 
