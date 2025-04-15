@@ -1039,7 +1039,7 @@ To manage security roles for all agent pools in the organization, do the followi
 2. Go to **Organization settings** ::::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
 3. Select **Security**. 
 
-   :::image type="content" source="media\agent-pools-organization-security-selection.png" alt-text="Screenshot of organization-level security selection for all agent pools.":::
+   :::image type="content" source="media/agent-pools-organization-security-selection.png" alt-text="Screenshot of organization-level security selection for all agent pools.":::
 
 4. To add users and groups:
     1. Select **Add**
