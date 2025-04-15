@@ -18,7 +18,7 @@ This quickstart shows how to build a container image for app deployment using Az
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project access** | [Member of a project](../../organizations/security/add-users-team-project.md). |
+| **Project access** | [Member of a project](../../../organizations/security/add-users-team-project.md). |
 | **Permissions** | - To create a pipeline, users need to be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Build Administrators and Project Administrators groups](../../../organizations/security/permissions.md#pipeline-or-build-object-level) can also manage pipelines. <br> - **Administrator** or **owner** of the GitHub repository to connect to when you fork the sample repository. You can connect to multiple GitHub repositories as long as you're an administrator for those repositories. |
 
 ## Fork the sample repository
