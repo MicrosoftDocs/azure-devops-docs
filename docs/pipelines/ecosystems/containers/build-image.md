@@ -16,20 +16,10 @@ This quickstart shows how to build a container image for app deployment using Az
 
 ## Prerequisites
 
-::: moniker range="< azure-devops"
-
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- A GitHub account. If you don't have one, [sign up for free](https://github.com/join). 
-- An Azure pipeline Windows or Linux agent with Docker installed.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops"
-
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- A GitHub account. If you don't have one, [sign up for free](https://github.com/join). 
-
-::: moniker-end
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Member of a project](../../organizations/security/add-users-team-project.md). |
+| **Permissions** | - To create a pipeline, users need to be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Build Administrators and Project Administrators groups](../../../organizations/security/permissions.md#pipeline-or-build-object-level) can also manage pipelines. <br> - **Administrator** or **owner** of the GitHub repository to connect to when you fork the sample repository. You can connect to multiple GitHub repositories as long as you're an administrator for those repositories. |
 
 ## Fork the sample repository
 
