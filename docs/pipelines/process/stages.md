@@ -355,9 +355,10 @@ You can add manual approvals at the start or end of each stage in the pipeline. 
 
 * * *
 
-## Add a manual trigger
+::: moniker range="azure-devops"
 
-::: moniker range="> azure-devops-2020"
+
+## Add a manual trigger
 
 Manually triggered YAML pipeline stages enable you to have a unified pipeline without always running it to completion. 
 
