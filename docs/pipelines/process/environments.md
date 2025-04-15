@@ -39,10 +39,11 @@ If a YAML pipeline refers to an environment that doesn't exist:
 
 ## Prerequisites
 
-To create an environment, ensure you have:
 
-- An Azure DevOps organization and project.
-- The [Creator role for environments](../library/add-resource-protection.md#environments) in your project.
+| Category | Requirements |
+|--------------|-------------|
+| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; To add environments, the [Creator role for environments](../library/add-resource-protection.md#environments) in your project.  By default, members of the **Build Administrators**, **Release Administrators**, and **Project Administrators** groups can also create environments. |
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/). |
 
 ## Create an environment
 
