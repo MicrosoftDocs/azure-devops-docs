@@ -166,7 +166,7 @@
     - name: Manifest reference
       displayName: JSON, extend, enhance, required, attributes, targets, demands, contributions, example
       href: ./extend/develop/manifest.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Integrate a Pipelines task into an extension
+    - name: Integrate a pipeline task into an extension
       displayName: JSON, build, release, custom
       href: ./extend/develop/integrate-build-task.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Pipeline decorator context
