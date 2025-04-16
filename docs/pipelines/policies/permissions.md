@@ -1019,11 +1019,11 @@ The following table shows default project and object security roles for agent po
 
 ### Add the principal as a user
 
-Before you can add a principal, such as a service principal, in the **Security** settings of an agent pool, add it as a user in your organization.
+Before you can add a user or service principal in the **Security** settings of an agent pool, you must add it as a user in your organization.
 
 1. Go to **Organization settings**.
 2. Select **Users**. 
-3. Add the service principal with at least Basic access.
+3. Add the user or service principal with at least Basic access.
 
 ### Set organization security for agent pools
 
@@ -1035,17 +1035,20 @@ By default, no users or groups have explicit roles for all pools at the organiza
 
 To manage security roles for all agent pools in the organization, do the following steps:
 
-1. [Add the principal as a user](#add-the-principal-as-a-user).
+1. [Add the user or group as a user in the organization](#add-the-principal-as-a-user).
 2. Go to **Organization settings** ::::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
 3. Select **Security**. 
 
-   :::image type="content" source="media\agent-pools-organization-security-selection.png" alt-text="Screenshot of organization-level security selection for all agent pools.":::
+   :::image type="content" source="media/agent-pools-organization-security-selection.png" alt-text="Screenshot of organization-level security selection for all agent pools.":::
 
 4. To add users and groups:
     1. Select **Add**
     2. Enter a user or group and select it from the search results.
-    3. Repeat the previous step to add more users and groups.
-    4. Select a role and select **Add** 
+    1. Select a role and choose **Add**.
+    1. Repeat the previous step to add more users and groups.
+    1. Choose **Save** to save your changes.
+    1. Verify that your new users are saved in the list. If they did not save, verify that the users are members of your organization with at least Basic access and try again.
+    1. Choose **Close** to close the **User permissions** window.
 
 1: To create a new pipeline, you need **Create build pipeline** permissions. To add permission, open the security settings for all pipelines and verify that **Create build pipeline** is set to **Allow** for your security group. 
 
