@@ -27,22 +27,7 @@ In this article, you learn how to:
 
 ## Prerequisites
 
-::: moniker range=">=azure-devops"
-
-* An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-* A GitHub account. If you don't have one, [create one for free](https://github.com).
-* An Azure DevOps Services organization. [Create one for free](../get-started/pipelines-sign-up.md).
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-* An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-* A GitHub account. If you don't have one, [create one for free](https://github.com).
-* An Azure DevOps Server.
-* A self-hosted agent. If you need to create a self-hosted agent, see [Self-hosted agents](../agents/agents.md#self-hosted-agents). 
-
-::: moniker-end
+[!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
 
 ## Create a repository for your app code
 
