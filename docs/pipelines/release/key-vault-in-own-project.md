@@ -134,7 +134,7 @@ Azure Key Vaults enable developers to securely store and manage sensitive inform
 
     - **Description**: (Optional) Add a description.
 
-1. under **Security**, check the **Grant access permission to all pipelines** box to allow all pipelines to use this service connection. If you leave this unchecked, you’ll need to manually grant access for each pipeline.
+1. Under **Security**, check the **Grant access permission to all pipelines** box to allow all pipelines to use this service connection. If you leave this unchecked, you’ll need to manually grant access for each pipeline.
 
 1. Select **Save** to validate and create the service connection.
 
@@ -177,7 +177,7 @@ In this step, you'll create a new [service principal](/cli/azure/azure-cli-sp-tu
 
 1. Select **Service principal (manual)**, and then select **Next**.
 
-1. Unders **Identity Type**, select **App registration or managed identity (manual)**.
+1. Under **Identity Type**, select **App registration or managed identity (manual)**.
 
 1. Under **Credential**, select **Workload identity federation**.
 
