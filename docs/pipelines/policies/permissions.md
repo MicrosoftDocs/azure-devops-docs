@@ -1019,11 +1019,11 @@ The following table shows default project and object security roles for agent po
 
 ### Add the principal as a user
 
-Before you can add a principal, such as a service principal, in the **Security** settings of an agent pool, add it as a user in your organization.
+Before you can add a user or service principal in the **Security** settings of an agent pool, you must add it as a user in your organization.
 
 1. Go to **Organization settings**.
 2. Select **Users**. 
-3. Add the service principal with at least Basic access.
+3. Add the user or service principal with at least Basic access.
 
 ### Set organization security for agent pools
 
@@ -1035,7 +1035,7 @@ By default, no users or groups have explicit roles for all pools at the organiza
 
 To manage security roles for all agent pools in the organization, do the following steps:
 
-1. [Add the user or group as a user](#add-the-principal-as-a-user).
+1. [Add the user or group as a user in the organization](#add-the-principal-as-a-user).
 2. Go to **Organization settings** ::::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent pools**.
 3. Select **Security**. 
 
