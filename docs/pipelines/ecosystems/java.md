@@ -23,24 +23,7 @@ If you're working on an Android project, see [Build, test, and deploy Android ap
 
 ## Prerequisites
 
-To run the following example, you must have:
-
-::: moniker range=">= azure-devops"
-
-* A GitHub account where you can create a repository. [Create one for free](https://github.com).
-* An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md).
-* An Azure DevOps project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now. 
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-* A GitHub account where you can create a repository. [Create one for free](https://github.com).
-* Access to an Azure DevOps Server collection.
-* The ability to run Azure Pipelines on Azure DevOps self-hosted agents. 
-* An Azure DevOps project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
-
-::: moniker-end
+[!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
 
 ## Create a GitHub repository
 
