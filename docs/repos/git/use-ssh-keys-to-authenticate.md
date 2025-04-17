@@ -6,8 +6,7 @@ ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 08/20/2024
-ms.author: v-catherbund
-author: cebundy
+ms.author: chcomley
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
