@@ -53,7 +53,7 @@ For information about inputs, see [...](custom-control.md)
 
 #### Mark an extension public
 
-By default, all extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops/) are private. They're only visible to the publisher and accounts shared to by the publisher. If your publisher is verified, you can make your extension public by setting the `Public` flag in your extension manifest:
+By default, all extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops/) are private. They are hidden from public view, and are only visible to the publisher and specific accounts shared to by the publisher. If your publisher is verified, you can make your extension public by setting the `Public` flag in your extension manifest:
 
 ```json
 {

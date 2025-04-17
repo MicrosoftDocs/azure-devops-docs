@@ -17,7 +17,7 @@ ms.date: 03/21/2025
 
 Extensions are add-ons that you can use to customize and extend your experience with Azure DevOps. They're written using standard technologies such as HTML, JavaScript, and CSS, and can be developed using your preferred development tools.
 
-Extensions are published on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), where they can be kept private for you and your team or [shared publicly](publish/publicize.md) with millions of developers currently using Azure DevOps.
+Extensions are published on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), where they can be kept private for you and your team or [shared publicly](./publish/overview.md) with millions of developers currently using Azure DevOps.
 
 Extensions use our [RESTful API Library](/rest/api/azure/devops/) to easily interact with Azure DevOps and other applications/services.
 
@@ -123,7 +123,7 @@ For more information about building extensions, see the following articles:
 - [Service Hooks](../service-hooks/overview.md)
 - [Package, publish, and install your extension](./publish/overview.md)
 - [Package and publish your integration with an external app or service](./publish/integration.md)
-- [Share your work publicly with the entire community](./publish/publicize.md)
+- [Share your work publicly with the entire community](./develop/manifest.md#mark-an-extension-public)
  
 ## Next steps
 
