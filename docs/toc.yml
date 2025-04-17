@@ -69,7 +69,7 @@
     - name: Contribution model
       displayName: plug, hub, action, build, task, type, target
       href: ./extend/develop/contributions-overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Create a custom pipelines task
+    - name: Add a custom pipeline task extension
       displayName: extension, manifest, package, publish, install, Marketplace
       href: ./extend/develop/add-build-task.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Author a pipeline decorator
