@@ -1,5 +1,5 @@
 ---
-title: Secure Azure Pipelines
+title: Make your Azure Pipelines secure
 description: Guidelines and recommendations for securing pipelines.
 ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
 ms.custom: peer-review-program
@@ -8,7 +8,7 @@ ms.date: 03/04/2025
 monikerRange: "<=azure-devops"
 ---
 
-# Secure Azure Pipelines
+# Make your Azure Pipelines secure
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
@@ -33,14 +33,16 @@ To enhance security, consider separating your projects, using branch policies, a
 - **Add additional security for forks**: When you work with public repositories from GitHub, carefully consider your approach to fork builds. Forks originating from outside your organization pose particular risks.    
     - **Don't provide secrets to fork builds**: By default, pipelines are configured to build forks, but secrets and protected resources aren't automatically exposed to the jobs in those pipelines. It's essential not to disable this protection to maintain security.
     - **Consider manually triggering fork builds**: Turn off automatic fork builds and use pull request comments to manually build these contributions. This setting gives you an opportunity to review the code before triggering a build. For more information, see [Turn off automatic fork builds](../repos/github.md#contributions-from-forks).
+    - **Don't provide secrets to fork builds**: By default, secrets associated with your pipeline aren’t made available to pull request validations of forks. Do not enable the option to **Make secrets available to builds of forks**. For instructions on how to find and verify this setting, see [Contributions from forks](../repos/github.md#contributions-from-forks). 
+    - **Consider manually triggering fork builds**: Turn off automatic fork builds and use pull request comments to manually build these contributions. This setting gives you an opportunity to review the code before triggering a build. For instructions on how to do this, see [Turn off automatic fork builds](../repos/github.md#contributions-from-forks).
     - **Use Microsoft-hosted agents for fork builds**: Avoid running builds from forks on self-hosted agents. Doing so could allow external organizations to execute external code on machines within your corporate network. Whenever possible, use Microsoft-hosted agents.
     - **Use the Azure Pipelines GitHub app for token scope limitation**: When you build a GitHub forked pull request, Azure Pipelines ensures the pipeline can't change any GitHub repository content. This restriction applies _only_ if you use the [Azure Pipelines GitHub app](https://github.com/marketplace/azure-pipelines) to integrate with GitHub.
 
 ### Secure service connections
 
-- **Minimize the scope of service connections**: Service connections should only have access to necessary resources. When you create a new Azure Resource Manager service connection, always choose a specific resource group. Make sure that the resource group contains only the necessary VMs or resources required for the build. For more information, see [Use an Azure Resource Manager service connection](../library/connect-to-azure.md). 
-- **Use workload identity federation for authentication**: Whenever possible, use workload identity federation instead of a service principal for your Azure service connection. Workload identity federation uses Open ID Connect (OIDC), an industry-standard technology, to facilitate authentication between Azure and Azure DevOps without relying on secrets. For more information, see [ Create a service connection with workload identity federation (automatic)](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation).
-- **Minimize GitHub App access**: Similarly, when you configure the GitHub app to Azure DevOps, grant access only to the repositories you intend to build using pipelines.
+- **Minimize the scope of service connections**: Service connections should only have access to necessary resources. When you create a new Azure Resource Manager service connection, always choose a specific resource group. Make sure that the resource group contains only the necessary VMs or resources required for the build. For instructions on how to set up service connections, see [Use an Azure Resource Manager service connection](../library/connect-to-azure.md). 
+- **Use workload identity federation for authentication**: Whenever possible, use workload identity federation instead of a service principal for your Azure service connection. Workload identity federation uses Open ID Connect (OIDC), an industry-standard technology, to facilitate authentication between Azure and Azure DevOps without relying on secrets. For instructions on how to do this, see [Create a service connection with workload identity federation (automatic)](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation).
+- **Minimize GitHub App access**: When you configure the GitHub app to Azure DevOps, grant access only to the repositories you intend to build using pipelines.
 
 ## Use YAML pipelines instead of Classic pipelines
 
