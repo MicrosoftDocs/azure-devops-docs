@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for Managed DevOps Pools
 description: Learn how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools.
-ms.date: 11/18/2024
+ms.date: 04/14/2025
 ---
 
 # Prerequisites for Managed DevOps Pools
@@ -209,19 +209,18 @@ To create a Managed DevOps Pool in your Azure DevOps organization, your Azure De
 * The tenant of the Azure subscription that contains your Managed DevOps Pool
 * The tenant your Azure DevOps organization is connected to
 
-If the tenants are different, your account must be a member of both tenants. To view your tenants:
-
 1. [View your current directory (Azure tenant) in the Azure portal](/azure/azure-portal/set-preferences#directories--subscriptions).
 1. [View the tenant for your Azure DevOps organization](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id). You can go directly to this page in the Azure DevOps portal here: `https://dev.azure.com/<your-organization>/_settings/organizationAad`.
 1. If your Azure DevOps organization isn't connected to Microsoft Entra ID, follow the steps in [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md#connect-your-organization-to-microsoft-entra-id) and connect to the desired tenant, such as the same tenant as your Azure subscription.
-2. If your Azure DevOps organization and Managed DevOps Pools Azure subscription are in different tenants, verify that you are a member of both tenants.
 
 ## Verify Azure DevOps permissions
 
 When you create a Managed DevOps Pool, the account you use to sign in to the Azure subscription that contains your Managed DevOps Pool is used to create a corresponding agent pool in your Azure DevOps organization. To successfully create a Managed DevOps Pool, your account must have one of the following permissions in your Azure DevOps organization. These permissions are listed in order from least privileged to most privileged.
 
-* **Organization-level Agent pools administrator** - Administrators of agent pools at the organization level can [create new agent pools as well as perform all operations on them](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level). For instructions on adding users to this group, see [Configure organization security for agent pools - Set organization security for all agent pools](../pipelines/policies/agent-pool-permissions.md#set-organization-security-for-all-agent-pools).
-* **Project Collection Administrator** - The Project Collection Administrators group is the main administrative security group defined for an organization and can perform all operations in an Azure DevOps organization, including creating new pools. For information about this group and how to see its members, see [Look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).
+| Permission | Description | Granted by |
+|------------|-------------|------------|
+| **Organization-level Agent pools administrator** | Administrators of agent pools at the organization level can [create new agent pools as well as perform all operations on them](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level). | A [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or another **Organization-level Agent pools administrator** can add users to this group and grant them the administrator role. For more information, see [Set organization security for all agent pools](../pipelines/policies/permissions.md#set-organization-security-for-all-agent-pools). |
+| **Project Collection Administrator** | The Project Collection Administrators group is the main administrative security group defined for an organization and can perform all operations in an Azure DevOps organization, including creating new pools. | Other project collection administrators can add users to this group. For information about this group and how to see its members, see [Look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md). |
 
 ## Next steps
 
