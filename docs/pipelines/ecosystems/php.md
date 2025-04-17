@@ -6,7 +6,7 @@ ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.author: jukullam
 ms.custom: freshness-fy22q2
 ms.date: 05/20/2024
-monikerRange: azure-devops
+monikerRange: "<=azure-devops"
 ---
 
 # Build and test PHP apps
