@@ -17,19 +17,7 @@ In this quickstart, you use a pipeline to create a Node.js package with Node Pac
 
 ## Prerequisites
 
-::: moniker range=">=azure-devops"
-- A GitHub account where you can create a repository. [Create a GitHub account for free](https://github.com).
-- An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
-- An Azure DevOps project. [Create one using the Azure DevOps Project Creation Wizard](../../organizations/projects/create-project.md).
-- The ability to run pipelines on Microsoft-hosted agents. You need to [request the free grant of parallel jobs](https://aka.ms/azpipelines-parallelism-request) or purchase a [parallel job](../licensing/concurrent-jobs.md).
-::: moniker-end
-
-::: moniker range="< azure-devops"
-- A GitHub account where you can create a repository. [Create a GitHub account for free](https://github.com).
-- An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
-- An Azure DevOps project. [Create one using the Azure DevOps Project Creation Wizard](../../organizations/projects/create-project.md).
-- A self-hosted agent. To create one, see [Self-hosted agents](../agents/agents.md#self-hosted-agents).
-::: moniker-end
+[!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
 
 ## Fork the sample code
 

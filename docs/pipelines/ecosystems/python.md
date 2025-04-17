@@ -6,8 +6,7 @@ ms.date: 07/08/2024
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 monikerRange: "<=azure-devops"
 ms.custom: devx-track-python, freshness-fy22q2
-ms.author: v-catherbund
-author: cebundy
+ms.author: jukullam
 ---
 
 # Build and publish a Python app
@@ -18,21 +17,13 @@ In this quickstart, you create a pipeline that builds and tests a Python app. Yo
 
 ## Prerequisites
 
+
+[!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
+
 ::: moniker range=">=azure-devops"
-- A GitHub account where you can create a repository. [Create a GitHub account for free](https://github.com).
-- An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
-- An Azure DevOps project. [Create one using the Azure DevOps Project Creation Wizard](../../organizations/projects/create-project.md).
-- The ability to run pipelines on Microsoft-hosted agents. You need to [request the free grant of parallel jobs](https://aka.ms/azpipelines-parallelism-request) or purchase a [parallel job](../licensing/concurrent-jobs.md).
 
 Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Linux, macOS, and Windows. You don't have to set up anything more to build Python projects. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software).
-::: moniker-end
 
-::: moniker range="< azure-devops"
-- A GitHub account where you can create a repository. [Create a GitHub account for free](https://github.com).
-- An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
-- An Azure DevOps project. [Create one using the Azure DevOps Project Creation Wizard](../../organizations/projects/create-project.md).
-- A self-hosted agent. To create one, see [Self-hosted agents](../agents/agents.md#self-hosted-agents).
-- Python installed on your self-hosted agent. To install Python on your agent, see [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task).
 ::: moniker-end
 
 ## Fork the sample code

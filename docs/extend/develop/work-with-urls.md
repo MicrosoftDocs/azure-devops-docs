@@ -1,36 +1,36 @@
 ---
 ms.subservice: azure-devops-ecosystem
-title: Working with URLs in extensions | Azure DevOps
+title: Work with URLs in Extensions | Azure DevOps
 description: Learn about best practices for working with URLs in Azure DevOps extensions and integrations.
 ms.assetid: 1f27f05e-2c55-4873-ab4a-8c9c0947a7fe
-ms.topic: conceptual
+ms.topic: concept-article
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 06/02/2020
+ms.date: 04/15/2025
 ---
 
 # Work with URLs in extensions and integrations
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-With the introduction of Azure DevOps, organizational resources and APIs are now accessible via either of the following URLs:
+With Azure DevOps, organizational resources and APIs are accessible through either of the following URLs:
 
 * `https://dev.azure.com/{organization}` (new)
 * `https://{organization}.visualstudio.com` (legacy)
 
-Regardless of when the organization was created, users, tools, and integrations can interact with organization-level REST APIs using either URL. As the developer of an extension, integration, or tool that interacts with Azure DevOps, learn how to best work with URLs made available to your code and form URLs when you call REST APIs.
+Users, tools, and integrations can interact with organization-level REST APIs using either URL, regardless of when the organization was created.
 
-For more information, see the [REST API Reference](/rest/api/azure/devops).
-    
-## Organization primary URL
+This article explains how you can best work with URLs in extensions, integrations, or tools. For more information, see the [Azure DevOps Services REST API Reference](/rest/api/azure/devops).
 
-Each organization has a designated **primary** URL that is either the new form or the legacy form. The primary URL is used by Azure DevOps for constructing URLs in certain scenarios (more details follow). The default primary URL for an organization is determined by when the organization was created, but can be changed by an administrator:
+## Primary URL
+
+Each organization has a designated *primary* URL that's in either the new form or the legacy form. The primary URL is used by Azure DevOps to construct URLs in certain scenarios. The default primary URL for an organization is determined by when the organization was created, but can be changed by an administrator:
 
 | When the organization was created | Default primary URL |
 |--------------------------|---------------------|
-| On or after 9/10/2018     | New                 |        
-| Before 9/10/2018        | Legacy              |
+| On or after 9/10/2018    | New                 |
+| Before 9/10/2018         | Legacy              |
 
 ### How the primary URL is used
 
@@ -47,13 +47,13 @@ $orgUrl = $env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI
 Write-Host $orgUrl
 ```
 
-If this task is executed on an organization where the primary URL is the new URL form, the output is `https://dev.azure.com/{organization}`. The same task executed on an organization where the primary URL is the legacy URL form outputs `https://{organization}.visualstudio.com`.
+If this task is executed on an organization where the primary URL is in the new URL form, the output is `https://dev.azure.com/{organization}`. The same task executed on an organization where the primary URL is the legacy URL form outputs `https://{organization}.visualstudio.com`.
 
-It's therefore important that Azure Pipelines tasks and services that receive events from service hooks handle both URL forms.
+Therefore, it's important that Azure Pipelines tasks and services that receive events from service hooks handle both URL forms.
 
 ## URLs returned in REST APIs
 
-Regardless of an organization's primary URL, URLs returned in the response to a REST API call use the same base URL as the requesting URL. This function ensures clients calling a REST API using a legacy URL continues to get back URLs in the same (legacy) form. For example, when the Projects REST API is called using a legacy URL, URLs in the response use the legacy form:
+Regardless of an organization's primary URL, URLs returned in the response to a REST API call use the same base URL as the requesting URL. This function ensures that clients calling a REST API using a legacy URL continue to get back URLs in the same (legacy) form. For example, when the Projects REST API is called using a legacy URL, URLs in the response use the legacy form:
 
 ### Request
 
@@ -65,7 +65,7 @@ GET https://Fabrikam.visualstudio.com/_apis/projects/MyProject
 
 ```javascript
 {
-  "id": "ef4de40d-3d96-4b80-a320-cfafe038ae57",
+  "id": "e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5",
   "name": "MyProject",
   "url": "https://Fabrikam.visualstudio.com/_apis/projects/MyProject"
 }
@@ -77,32 +77,32 @@ Calling the same API using the new URL (`https://dev.azure.com/Fabrikam/_apis/pr
 
 To ensure your extension, tool, or integration is resilient to changing organization URL forms and to possible future changes to the location (domain) of a REST API:
 
-1. Assume the form of the organization URL can change over time.
-2. Avoid parsing a URL to construct another URL.
-3. Don't assume a particular REST API always resides on the same domain.
-4. Avoid storing URLs in your service.
-5. When possible, use Microsoft-provided [.NET](../../integrate/concepts/dotnet-client-libraries.md), TypeScript (web), [Node.js](https://github.com/Microsoft/vsts-node-api), and [Python](https://github.com/Microsoft/vsts-python-api) client libraries with Azure DevOps.
+* Assume the form of the organization URL can change over time.
+* Avoid parsing a URL to construct another URL.
+* Don't assume a particular REST API always resides on the same domain.
+* Avoid storing URLs in your service.
+* When possible, use Microsoft-provided [.NET](../../integrate/concepts/dotnet-client-libraries.md), TypeScript (web), [Node.js](https://github.com/Microsoft/vsts-node-api), and [Python](https://github.com/Microsoft/vsts-python-api) client libraries with Azure DevOps.
 
 ## How to get an organization's URL
 
-With just the organization's name or ID, you can get its base URL using the global Resource Areas REST API (`https://dev.azure.com/_apis/resourceAreas`). This API doesn't require authentication. It also provides information about the location (URL) of the organization and the base URL for REST APIs, which can live on different domains.
+With just the organization's name or ID, you can get its base URL by using the global Resource Areas REST API (`https://dev.azure.com/_apis/resourceAreas`). This API doesn't require authentication. It also provides information about the location (URL) of the organization and the base URL for REST APIs, which can live on different domains.
 
-A resource area is a group of related REST API resources and endpoints. Each resource area has a well-known identifier (see the following table). Each resource area has an organization-specific base URL that can be used to form URLs for APIs in that resource area. For example, the base URL for "build" REST APIs for the Fabrikam might be `https://dev.azure.com/Fabrikam`, but the base URL for "release management" REST APIs might be `https://vsrm.dev.azure.com/Fabrikam`.
+A resource area is a group of related REST API resources and endpoints. Each resource area has a well-known identifier. Each resource area has an organization-specific base URL that can be used to form URLs for APIs in that resource area. For example, the base URL for *build* REST APIs for the Fabrikam might be `https://dev.azure.com/Fabrikam`, but the base URL for *release management* REST APIs might be `https://vsrm.dev.azure.com/Fabrikam`.
 
 > [!NOTE]
 > The Resource Areas REST API returns URLs for the organization based on that organization's designated primary URL.
 
-### With the organization's name
+### Using the organization's name
 
-There are a few ways to get the base URL for an organization using its name.
+There are a few ways to get the base URL for an organization by using its name.
 
 # [HTTP](#tab/http)
 
 #### Request
 
-Replace `{organizationName}` with organization's name, for example "Fabrikam". `79134C72-4A58-4B42-976C-04E7115F32BF` is the ID for the "core" resource area, which is where important resources like "projects" are.
+Replace `{organizationName}` with organization's name, for example *Fabrikam*. `79134C72-4A58-4B42-976C-04E7115F32BF` is the ID for the *core* resource area, which is where important resources like *projects* are.
 
-```
+```http
 GET https://dev.azure.com/_apis/resourceAreas/79134C72-4A58-4B42-976C-04E7115F32BF
       ?accountName={organizationName}&api-version=5.0-preview.1
 ```
@@ -121,10 +121,10 @@ The `locationUrl` reflects the organization's base URL.
 
 # [C# (client library)](#tab/csharpclient)
 
-The Microsoft-provided .NET client library ([Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/16.139.0-preview)) provides a helper class that calls the Resource Areas REST API for you and returns the base URL for an organization.
+The Microsoft-provided [.NET client library](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/16.139.0-preview) provides a helper class that calls the Resource Areas REST API for you and returns the base URL for an organization.
 
 > [!NOTE]
-> The `VssConnectionHelper` class is available in version `16.139.0-preview` and later version of the client library.
+> The `VssConnectionHelper` class is available in `16.139.0-preview` and later versions of the client library.
 
 ```cs
 using System;
@@ -208,37 +208,38 @@ getOrgUrl('fabrikam', (err, url) => {
 
 ---
 
-### With the organization's ID
+### Using the organization's ID
 
-To get the URL for an organization using its GUID identifier, use the `hostId` query parameter in the previous examples (instead of `accountName`). For example:
+To get the URL for an organization by using its GUID identifier, use the `hostId` query parameter in the previous examples (instead of `accountName`). For example:
 
-```
+```http
 GET https://dev.azure.com/_apis/resourceAreas/79134C72-4A58-4B42-976C-04E7115F32BF?hostId={organizationId}&api-version=5.0-preview.1
 ```
 
 ## How to get the base URL for a REST API
 
-Starting from an organization's URL, you can use the Resource Areas REST API to look up the correct base URL for any REST API you need to call. This process ensures your code is resilient to the location (domain) of a REST API changing in the future and avoids potentially brittle logic.
+Starting from an organization's URL, you can use the Resource Areas REST API to look up the correct base URL for any REST API you need to call. This process ensures that your code is resilient to the location (domain) of a REST API changing in the future and avoids potentially brittle logic.
 
 > [!NOTE]
-> If you are using the Microsoft-provided .NET, TypeScript (web), Node.js, or Python client library, URL lookup is handled for you. For example, in .NET when you construct a `VssConnection` and call `GetClient<T>`, the returned client is properly bound to the correct base URL for the REST APIs called by this client.
+> If you're using the Microsoft-provided .NET, TypeScript (web), Node.js, or Python client library, URL lookup is handled for you. For example, when you construct a `VssConnection` and call `GetClient<T>` in .NET, the returned client is properly bound to the correct base URL for the REST APIs called by this client.
 
 If you aren't using a Microsoft-provided client library:
 
-1. Use the following table to find the resource area ID for the REST API you need to call. The resource area name usually appears after `/_apis/` in the REST API route. For example, the `/_apis/release/definitions` REST API belongs to the `release` resource area, which has an ID of `efc2f575-36ef-48e9-b672-0c6fb4a48ac5`.
+1. Use the [following table](#reference-resource-area-ids) to find the resource area ID for the REST API you need to call. The resource area name usually appears after `/_apis/` in the REST API route. For example, the `/_apis/release/definitions` REST API belongs to the `release` resource area, which has an ID of `efc2f575-36ef-48e9-b672-0c6fb4a48ac5`.
 
-2. Call the organization-level Resource Areas REST API (`{organizationUrl}/_apis/resourceAreas/{resourceAreaId}?api-version=5.0-preview.1`) and pass the resource area ID. For example:
-   ```
-   GET https://dev.azure.com/Fabrikam/_apis/resourceAreas/efc2f575-36ef-48e9-b672-0c6fb4a48ac5?api-version=5.0-preview.1
-   ```
-    
-3. Use the `locationUrl` field from the JSON response as the base URL for calling other REST APIs for this area. In this example, the base URL for Release Management REST APIs is `https://vsrm.dev.azure.com/Fabrikam`.
+1. Call the organization-level Resource Areas REST API (`{organizationUrl}/_apis/resourceAreas/{resourceAreaId}?api-version=5.0-preview.1`) and pass the resource area ID. For example:
+
+    ```http
+    GET https://dev.azure.com/Fabrikam/_apis/resourceAreas/efc2f575-36ef-48e9-b672-0c6fb4a48ac5?api-version=5.0-preview.1
+    ```
+
+1. Use the `locationUrl` field from the JSON response as the base URL for calling other REST APIs for this area. In this example, the base URL for Release Management REST APIs is `https://vsrm.dev.azure.com/Fabrikam`.
 
 Like the global Resource Areas REST API described earlier, no credentials are required to call the organization-level Resource Areas REST API.
 
 ### Example: Pipelines task calling an Azure Pipelines releases REST API
 
-In this example, a build task needs to call the Azure Pipelines releases REST API. It forms the correct base URL for this REST API call by using the organization URL (provided in an environment variable) and the Resource Areas REST API. 
+In this example, a build task needs to call the Azure Pipelines releases REST API. The task forms the correct base URL for this REST API call by using the organization URL (provided in an environment variable) and the Resource Areas REST API.
 
 > [!NOTE]
 > Resource area IDs are fixed and can be safely embedded in tasks and other logic.
@@ -260,14 +261,14 @@ $rmUrl = $results.locationUrl
 $releaseDefinitionsUrl = [string]::Format("{0}/_apis/release/definitions?api-preview=5.0-preview.1", $rmUrl)
 ```
 
-## Resource area IDs (reference)
+## Reference: Resource area IDs
 
 This table shows the IDs for common resource areas. See the previous section for details on how to use this table. 
 
 > [!NOTE]
 > Resource area IDs are fixed and are consistent across all organizations in Azure DevOps Services.
 
-| Resource Area ID | Name |
+| Resource area ID | Name |
 |---|---|
 |0d55247a-1c47-4462-9b1f-5e2125590ee6|account|
 |5d6898bb-45ec-463f-95f9-54d49c71752e|build|
@@ -301,7 +302,7 @@ This table shows the IDs for common resource areas. See the previous section for
 |1d4f49f9-02b9-4e26-b826-2cdb6195f2a9|work|
 |85f8c7b6-92fe-4ba6-8b6d-fbb67c809341|worktracking|
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
-> [Make your extension or integration public](https://azdevinternal.azureedge.net/)
+> [Make your extension or integration public](../publish/overview.md)

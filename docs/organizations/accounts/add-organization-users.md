@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/20/2025
+ms.date: 04/10/2025
 ---
 
 # Add organization users and manage access
@@ -35,14 +35,14 @@ The following types of users can join your organization for free:
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. Or, if [invitation restrictions are enabled](../security/restrict-invitations.md), the Project Administrator can add users. The Project Collection Administrator role can't select the license for new users or remove users from the organization.|
 |**Organization** | An [organization](create-organization.md).|
 
 For an overview of the methods supported for adding users to an organization, see [Add and manage user access](organization-management.md#add-users).
 
 ## Add users to your organization
 
-Administrators can efficiently manage user access by adding users to an organization, granting them access to the appropriate tooling extensions and service access levels, and assigning them to relevant groups—all from a single view. This streamlined process ensures that new users have the necessary permissions and resources to start contributing immediately.
+Administrators can efficiently manage user access by adding users to an organization. Provide access to the appropriate tooling extensions and service access levels, and assign users to relevant groups—all from a single view. This streamlined process ensures that new users have the necessary permissions and resources to start contributing immediately.
 
 > [!NOTE]
 > If you have a Microsoft Entra ID-backed organization and need to add users who are external to Microsoft Entra ID, first [add external users](add-external-user.md). On the **Tell us about this user** page, under **Type of user**, choose **User with an existing Microsoft account**. After completing those steps, follow these instructions to add the Microsoft Entra ID user to Azure DevOps.
