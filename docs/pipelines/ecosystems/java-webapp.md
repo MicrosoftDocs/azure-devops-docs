@@ -5,7 +5,7 @@ ms.topic: tutorial
 ms.custom: devx-track-extended-java, linux-related-content
 ms.assetid: 49253EA0-9CD6-4082-A303-95F78C7599C2
 ms.date: 12/22/2021
-monikerRange: 'azure-devops'
+monikerRange: "<=azure-devops"
 ---
 
 # Build & deploy to Java web app
