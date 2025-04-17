@@ -7,7 +7,7 @@ ms.topic: concept-article
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/14/2025
+ms.date: 04/15/2025
 ---
 
 # Work with URLs in extensions and integrations
@@ -23,7 +23,7 @@ Users, tools, and integrations can interact with organization-level REST APIs us
 
 This article explains how you can best work with URLs in extensions, integrations, or tools. For more information, see the [Azure DevOps Services REST API Reference](/rest/api/azure/devops).
 
-## Organization primary URL
+## Primary URL
 
 Each organization has a designated *primary* URL that's in either the new form or the legacy form. The primary URL is used by Azure DevOps to construct URLs in certain scenarios. The default primary URL for an organization is determined by when the organization was created, but can be changed by an administrator:
 
@@ -65,7 +65,7 @@ GET https://Fabrikam.visualstudio.com/_apis/projects/MyProject
 
 ```javascript
 {
-  "id": "ef4de40d-3d96-4b80-a320-cfafe038ae57",
+  "id": "e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5",
   "name": "MyProject",
   "url": "https://Fabrikam.visualstudio.com/_apis/projects/MyProject"
 }
@@ -77,11 +77,11 @@ Calling the same API using the new URL (`https://dev.azure.com/Fabrikam/_apis/pr
 
 To ensure your extension, tool, or integration is resilient to changing organization URL forms and to possible future changes to the location (domain) of a REST API:
 
-1. Assume the form of the organization URL can change over time.
-1. Avoid parsing a URL to construct another URL.
-1. Don't assume a particular REST API always resides on the same domain.
-1. Avoid storing URLs in your service.
-1. When possible, use Microsoft-provided [.NET](../../integrate/concepts/dotnet-client-libraries.md), TypeScript (web), [Node.js](https://github.com/Microsoft/vsts-node-api), and [Python](https://github.com/Microsoft/vsts-python-api) client libraries with Azure DevOps.
+* Assume the form of the organization URL can change over time.
+* Avoid parsing a URL to construct another URL.
+* Don't assume a particular REST API always resides on the same domain.
+* Avoid storing URLs in your service.
+* When possible, use Microsoft-provided [.NET](../../integrate/concepts/dotnet-client-libraries.md), TypeScript (web), [Node.js](https://github.com/Microsoft/vsts-node-api), and [Python](https://github.com/Microsoft/vsts-python-api) client libraries with Azure DevOps.
 
 ## How to get an organization's URL
 

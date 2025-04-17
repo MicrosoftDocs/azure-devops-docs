@@ -16,30 +16,29 @@ date: 04/16/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. For more information, see [What is Azure Pipelines?](../../pipelines/get-started/what-is-azure-pipelines.md)
+This article explains how to install extensions to your organization for custom build or release tasks in Azure DevOps. For more information, see [What is Azure Pipelines?](../../pipelines/get-started/what-is-azure-pipelines.md)
 
 > [!NOTE]
-> This article covers agent tasks in agent-based extensions. For more information on server tasks and server-based extensions, see the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
+> This article covers agent tasks in agent-based extensions. For more information on server tasks and server-based extensions, see the [Server Task Authoring](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
 
 ## Prerequisites
 
-|Software/tool |Information |
-|--------------|------------|
-|Azure DevOps organization    | [Create an organization](../../organizations/accounts/create-organization.md).       |
-|A text editor  | For many procedures, we use Visual Studio Code, which provides intellisense and debugging support. [Download the latest version](https://code.visualstudio.com/).        |
-|Node.js    |[Download the latest version](https://nodejs.org/en/download/).          |
-|npmjs.com 4.0.2 or newer    |TypeScript Compiler. [Download the latest version](https://www.npmjs.com/package/typescript).         |
-|tfx-cli   | Package your extension with [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli). using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.|
-|Azure DevOps extension SDK    | [Install the azure-devops-extension-sdk package](https://github.com/Microsoft/azure-devops-extension-sdk).|
-| A `home` directory for your project| The `home` directory of a build or release task extension should look like the following example after you complete the steps in this article.|
+- An organization in Azure DevOps. [Create an organization](../../organizations/accounts/create-organization.md).
+- A text editor. For many tutorials, we use [Visual Studio Code](https://code.visualstudio.com), which provides intellisense and debugging support.
+- The latest version of [Node.js](https://nodejs.org/en/download/).
+- npmjs.com 4.0.2 or newer. Install the [latest version](https://www.npmjs.com/package/typescript) of this TypeScript compiler.
+- [Cross-platform CLI for Azure DevOps (tfx-cli)](https://github.com/microsoft/tfs-cli) to package your extensions.
+    - tfx-cli can be installed using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
+- Azure DevOps extension SDK. Install the [azure-devops-extension-sdk](https://github.com/Microsoft/azure-devops-extension-sdk) package.
+- A `home` directory for your project. The `home` directory of a build or release task extension should have the following structure after you complete the steps in this article:
 
-  ```
-  |--- README.md    
-  |--- images                        
-      |--- extension-icon.png  
-  |--- buildandreleasetask            // where your task scripts are placed
-  |--- vss-extension.json             // extension's manifest
-  ```
+    ```
+    |--- README.md    
+    |--- images                        
+        |--- extension-icon.png  
+    |--- buildandreleasetask            // where your task scripts are placed
+    |--- vss-extension.json             // extension's manifest
+    ```
 
 > [!IMPORTANT]
 > The dev machine must run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of `azure-pipelines-task-lib`. Update your `task.json` file as per the following command:
@@ -55,10 +54,10 @@ Learn how to install extensions to your organization for custom build or release
 
 ## 1. Create a custom task
 
-Do every part of this procedure within the `buildandreleasetask` folder.
+Do every part of this procedure within the `buildandreleasetask` folder inside your `home` directory.
 
 > [!NOTE]
-> This example walkthrough uses Windows with PowerShell. We made it generic for all platforms, but the syntax for getting environment variables is different. If you're using a Mac or Linux, replace any instances of `$env:<var>=<val>` with `export <var>=<val>`.
+> This example walkthrough uses Windows with PowerShell. The steps are generic for all platforms, but the syntax for getting environment variables is different. If you're using a Mac or Linux, replace any instances of `$env:<var>=<val>` with `export <var>=<val>`.
 
 ### Create task scaffolding
 
@@ -102,14 +101,14 @@ Do every part of this procedure within the `buildandreleasetask` folder.
    npm install @types/mocha --save-dev
    ```
 
-1. Choose TypeScript version 2.3.4 or 4.6.3. 
+1. Choose TypeScript version 2.3.4 or 4.6.3.
 
    ```powershell
    npm install typescript@4.6.3 -g --save-dev
    ```
 
    > [!NOTE]
-   > Make sure that TypeScript is installed globally with npm in your development environment, so the `tsc` command is available. If you skip this step, TypeScript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
+   > Make sure that TypeScript is installed globally with `npm` in your development environment, so the `tsc` command is available. If you skip this step, TypeScript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
 
 1. Create `tsconfig.json` compiler options. This file ensures that your TypeScript files are compiled to JavaScript files.
 
@@ -198,18 +197,18 @@ See the following descriptions of some of the components of the `task.json` file
 | `groups`             | Describes the logical grouping of task properties in the UI.     |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.  |
 | `execution`          | There are multiple execution options for this task, including scripts, like `Node`, `PowerShell`, `PowerShell3`, or `Process`.  |
-| `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
+| `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) that the task can call, and variables that the task can set. We recommend that you specify restriction mode for new tasks.|
 
 > [!NOTE]
 > Create an `id` with the following command in PowerShell:
 > ```powershell
 > (New-Guid).Guid
 > ```
-> For more information, see the **[Build/release task reference](./integrate-build-task.md)**.
+> For more information, see the [Build/release task reference](./integrate-build-task.md).
 
 ### Run the task 
 
-Run the task with `node index.js` from PowerShell.
+Run the task by using `node index.js` from PowerShell.
 
 In the following example, the task fails because inputs weren't supplied (`samplestring` is a required input).
 
@@ -223,7 +222,7 @@ In the following example, the task fails because inputs weren't supplied (`sampl
  ##vso[task.complete result=Failed;]Input required: samplestring
 ```
 
-As a fix, we can set the `samplestring` input and run the task again.
+As a fix, set the `samplestring` input and run the task again.
 
 ```output
 $env:INPUT_SAMPLESTRING="Human"
@@ -240,10 +239,10 @@ node index.js
 Hello Human
 ```
 
-This time, the task succeeded because `samplestring` was supplied and it correctly outputted *Hello Human!*
+This time, the task succeeds because `samplestring` was supplied, and it correctly outputs *Hello Human!*
 
 > [!TIP]
-> For information about various task runners and how to include the latest node version in the task.json, see [Node runner update guidance for Azure Pipelines task authors](https://devblogs.microsoft.com/devops/node-runner-update-guidance-for-azure-pipelines-task-authors/#upcoming-changes).
+> For information about various task runners and how to include the latest node version in the `task.json`, see [Node runner update guidance for Azure Pipelines task authors](https://devblogs.microsoft.com/devops/node-runner-update-guidance-for-azure-pipelines-task-authors/#upcoming-changes).
 
 <a name="testscripts"></a>
 
@@ -437,7 +436,7 @@ Once your packaged extension is in a .vsix file, you're ready to publish your ex
 
 ## 5. Publish your extension
 
-To publish your extension, you first [create your publisher](#create-your-publisher), then [upload your extension](#upload-your-extension), and finally [share it](#share-your-extension).
+To publish your extension, first [create your publisher](#create-your-publisher), then [upload your extension](#upload-your-extension), and finally [share it](#share-your-extension).
 <a name="createpublisher"></a>
 
 ### Create your publisher
@@ -488,124 +487,126 @@ After your extension is shared in the Marketplace, anyone who wants to use it mu
 
 To maintain the custom task on the Marketplace, create a build and release pipeline on Azure DevOps.
 
-### Prerequisites
+### Prerequisites to publish
 
-|Software/tool |Information |
-|--------------|------------|
-| Azure DevOps project | [Create a project](). |
-| Azure DevOps Extension Tasks extension | Install for free, [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) in your organization. |
-| Pipeline library variable group | Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-variable-groups-in-pipelines) within this group in your pipeline. Also, declare the following variables in the variable group:</br> `publisherId`: ID of your marketplace publisher</br> `extensionId`: ID of your extension, as declared in the vss-extension.json file</br> `extensionName`: Name of your extension, as declared in the vss-extension.json file</br> `artifactName`: Name of the artifact being created for the VSIX file |
-| Service connection | Create a new Marketplace service connection and grant access permissions for all pipelines. |
-| YAML pipeline | Use the following example to create a new pipeline with YAML. For more information, see [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/). |
+- An Azure DevOps project. [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
+- Azure DevOps Extension Tasks extension. [Install it for free](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) in your organization.
+- Pipeline library variable group. Create a pipeline library variable group to hold the variables used by the pipeline. For more information, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). You can make variable groups from the Azure DevOps Library tab or through the CLI. [Use the variables](../../pipelines/library/variable-groups.md?tabs=yaml#use-variable-groups-in-pipelines) within this group in your pipeline. Also, declare the following variables in the variable group:
+    - `publisherId`: ID of your marketplace publisher
+    - `extensionId`: ID of your extension, as declared in the vss-extension.json file
+    - `extensionName`: Name of your extension, as declared in the vss-extension.json file
+    - `artifactName`: Name of the artifact being created for the VSIX file
+- Service connection. Create a new Marketplace service connection and grant access permissions for all pipelines.
+- YAML pipeline. Use the following example to create a new pipeline with YAML. For more information, see [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/).
 
-```yaml
-    trigger: 
-    - main
-    pool:
-      vmImage: "ubuntu-latest"
-    variables:
-      - group: variable-group # Rename to whatever you named your variable group in the prerequisite stage of step 6
-    stages:
-      - stage: Run_and_publish_unit_tests
-        jobs:
-          - job:
-            steps:
-              - task: TfxInstaller@4
-                inputs:
-                  version: "v0.x"
-              - task: Npm@1
-                inputs:
-                  command: 'install'
-                  workingDir: '/TaskDirectory' # Update to the name of the directory of your task
-              - task: Bash@3
-                displayName: Compile Javascript
-                inputs:
-                  targetType: "inline"
-                  script: |
-                    cd TaskDirectory # Update to the name of the directory of your task
-                    tsc
-              - task: Npm@1
-                inputs:
-                  command: 'custom'
-                  workingDir: '/TestsDirectory' # Update to the name of the directory of your task's tests
-                  customCommand: 'testScript' # See the definition in the explanation section below - it may be called test
-              - task: PublishTestResults@2
-                inputs:
-                  testResultsFormat: 'JUnit'
-                  testResultsFiles: '**/ResultsFile.xml'
-      - stage: Package_extension_and_publish_build_artifacts
-        jobs:
-          - job:
-            steps:
-              - task: TfxInstaller@4
-                inputs:
-                  version: "0.x"
-              - task: Npm@1
-                inputs:
-                  command: 'install'
-                  workingDir: '/TaskDirectory' # Update to the name of the directory of your task
-              - task: Bash@3
-                displayName: Compile Javascript
-                inputs:
-                  targetType: "inline"
-                  script: |
-                    cd TaskDirectory # Update to the name of the directory of your task
-                    tsc
-              - task: QueryAzureDevOpsExtensionVersion@4
-                name: QueryVersion
-                inputs:
-                  connectTo: 'VsTeam'
-                  connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
-                  publisherId: '$(PublisherID)'
-                  extensionId: '$(ExtensionID)'
-                  versionAction: 'Patch'
-              - task: PackageAzureDevOpsExtension@4
-                inputs:
-                  rootFolder: '$(System.DefaultWorkingDirectory)'
-                  publisherId: '$(PublisherID)'
-                  extensionId: '$(ExtensionID)'
-                  extensionName: '$(ExtensionName)'
-                  extensionVersion: '$(QueryVersion.Extension.Version)'
-                  updateTasksVersion: true
-                  updateTasksVersionType: 'patch'
-                  extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
-                  extensionPricing: 'free'
-              - task: CopyFiles@2
-                displayName: "Copy Files to: $(Build.ArtifactStagingDirectory)"
-                inputs:
-                  Contents: "**/*.vsix"
-                  TargetFolder: "$(Build.ArtifactStagingDirectory)"
-              - task: PublishBuildArtifacts@1
-                inputs:
-                  PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-                  ArtifactName: '$(ArtifactName)'
-                  publishLocation: 'Container'
-      - stage: Download_build_artifacts_and_publish_the_extension
-        jobs:
-          - job:
-            steps:
-              - task: TfxInstaller@4
-                inputs:
-                  version: "v0.x"
-              - task: DownloadBuildArtifacts@0
-                inputs:
-                  buildType: "current"
-                  downloadType: "single"
-                  artifactName: "$(ArtifactName)"
-                  downloadPath: "$(System.DefaultWorkingDirectory)"
-              - task: PublishAzureDevOpsExtension@4
-                inputs:
-                  connectTo: 'VsTeam'
-                  connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
-                  fileType: 'vsix'
-                  vsixFile: '$(PublisherID).$(ExtensionName)/$(PublisherID)..vsix'
-                  publisherId: '$(PublisherID)'
-                  extensionId: '$(ExtensionID)'
-                  extensionName: '$(ExtensionName)'
-                  updateTasksVersion: false
-                  extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
-                  extensionPricing: 'free'
-```
+    ```yaml
+        trigger: 
+        - main
+        pool:
+          vmImage: "ubuntu-latest"
+        variables:
+          - group: variable-group # Rename to whatever you named your variable group in the prerequisite stage of step 6
+        stages:
+          - stage: Run_and_publish_unit_tests
+            jobs:
+              - job:
+                steps:
+                  - task: TfxInstaller@4
+                    inputs:
+                      version: "v0.x"
+                  - task: Npm@1
+                    inputs:
+                      command: 'install'
+                      workingDir: '/TaskDirectory' # Update to the name of the directory of your task
+                  - task: Bash@3
+                    displayName: Compile Javascript
+                    inputs:
+                      targetType: "inline"
+                      script: |
+                        cd TaskDirectory # Update to the name of the directory of your task
+                        tsc
+                  - task: Npm@1
+                    inputs:
+                      command: 'custom'
+                      workingDir: '/TestsDirectory' # Update to the name of the directory of your task's tests
+                      customCommand: 'testScript' # See the definition in the explanation section below - it may be called test
+                  - task: PublishTestResults@2
+                    inputs:
+                      testResultsFormat: 'JUnit'
+                      testResultsFiles: '**/ResultsFile.xml'
+          - stage: Package_extension_and_publish_build_artifacts
+            jobs:
+              - job:
+                steps:
+                  - task: TfxInstaller@4
+                    inputs:
+                      version: "0.x"
+                  - task: Npm@1
+                    inputs:
+                      command: 'install'
+                      workingDir: '/TaskDirectory' # Update to the name of the directory of your task
+                  - task: Bash@3
+                    displayName: Compile Javascript
+                    inputs:
+                      targetType: "inline"
+                      script: |
+                        cd TaskDirectory # Update to the name of the directory of your task
+                        tsc
+                  - task: QueryAzureDevOpsExtensionVersion@4
+                    name: QueryVersion
+                    inputs:
+                      connectTo: 'VsTeam'
+                      connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
+                      publisherId: '$(PublisherID)'
+                      extensionId: '$(ExtensionID)'
+                      versionAction: 'Patch'
+                  - task: PackageAzureDevOpsExtension@4
+                    inputs:
+                      rootFolder: '$(System.DefaultWorkingDirectory)'
+                      publisherId: '$(PublisherID)'
+                      extensionId: '$(ExtensionID)'
+                      extensionName: '$(ExtensionName)'
+                      extensionVersion: '$(QueryVersion.Extension.Version)'
+                      updateTasksVersion: true
+                      updateTasksVersionType: 'patch'
+                      extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
+                      extensionPricing: 'free'
+                  - task: CopyFiles@2
+                    displayName: "Copy Files to: $(Build.ArtifactStagingDirectory)"
+                    inputs:
+                      Contents: "**/*.vsix"
+                      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+                  - task: PublishBuildArtifacts@1
+                    inputs:
+                      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+                      ArtifactName: '$(ArtifactName)'
+                      publishLocation: 'Container'
+          - stage: Download_build_artifacts_and_publish_the_extension
+            jobs:
+              - job:
+                steps:
+                  - task: TfxInstaller@4
+                    inputs:
+                      version: "v0.x"
+                  - task: DownloadBuildArtifacts@0
+                    inputs:
+                      buildType: "current"
+                      downloadType: "single"
+                      artifactName: "$(ArtifactName)"
+                      downloadPath: "$(System.DefaultWorkingDirectory)"
+                  - task: PublishAzureDevOpsExtension@4
+                    inputs:
+                      connectTo: 'VsTeam'
+                      connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
+                      fileType: 'vsix'
+                      vsixFile: '$(PublisherID).$(ExtensionName)/$(PublisherID)..vsix'
+                      publisherId: '$(PublisherID)'
+                      extensionId: '$(ExtensionID)'
+                      extensionName: '$(ExtensionName)'
+                      updateTasksVersion: false
+                      extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
+                      extensionPricing: 'free'
+    ```
 
 For more information, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
 
@@ -620,7 +621,7 @@ The following section helps you understand how the pipeline stages work.
 
 This stage runs unit tests and publishes test results to Azure DevOps.
 
-To run unit tests, add a custom script to the package.json file like the following example.
+To run unit tests, add a custom script to the `package.json` file like the following example.
 
 ```json
 "scripts": {
@@ -648,7 +649,7 @@ To run unit tests, add a custom script to the package.json file like the followi
 #### Stage 2: Package the extension and publish build artifacts
 
 1. Add **Use Node CLI for Azure DevOps (tfx-cli)** to install the tfx-cli onto your build agent.
-1. Add the `npm` task with the `install` command and target the folder with the package.json file.
+1. Add the `npm` task with the `install` command and target the folder with the `package.json` file.
 1. Add the `Bash` task to compile the TypeScript into JavaScript.
 1. To query the existing version, add the **Query Extension Version** task using the following inputs:
     - Connect to: Visual Studio Marketplace
@@ -702,7 +703,7 @@ To run unit tests, add a custom script to the package.json file like the followi
 
 ## Optional: Install and test your extension
 
-Install an extension that is shared with you in just a few steps:
+Install an extension that's shared with you in just a few steps:
 
 1. From your organization control panel (`https://dev.azure.com/{organization}/_admin`), go to the project collection administration page.
 1. In the **Extensions** tab, find your extension in the **Extensions Shared With Me** group and select the extension link.
