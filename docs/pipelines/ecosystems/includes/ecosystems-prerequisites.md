@@ -5,10 +5,9 @@ ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 04/16/2025
-monikerRange: "<=azure-devops"
 ---
 
-::: moniker range=">=azure-devops"
+::: moniker range="azure-devops"
 
 | **Product** | **Requirements**   |
 |---|---|
