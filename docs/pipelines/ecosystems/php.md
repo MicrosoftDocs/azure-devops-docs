@@ -6,7 +6,7 @@ ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.author: jukullam
 ms.custom: freshness-fy22q2
 ms.date: 05/20/2024
-monikerRange: azure-devops
+monikerRange: "<=azure-devops"
 ---
 
 # Build and test PHP apps
@@ -21,10 +21,9 @@ To learn more about Azure App Service, see [Create a PHP web app in Azure App Se
 
 ## Prerequisites
 
-[!INCLUDE [include](../includes/prerequisites.md)]
-[!INCLUDE [include](../includes/azure-prerequisites.md)]
+[!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
 
-* If you're going to deploy to Azure App Service, you need to have a webapp created.
+If you're going to deploy to Azure App Service, you need to have a webapp created.
 
 ## Get the code
 
