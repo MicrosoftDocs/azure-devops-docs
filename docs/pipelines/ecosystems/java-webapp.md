@@ -21,8 +21,7 @@ For more information, see [Java for Azure App Service](/azure/app-service/config
 
 ## Prerequisites
 
-[!INCLUDE [include](../includes/prerequisites.md)]
-[!INCLUDE [include](../includes/azure-prerequisites.md)]
+[!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
 
 ## Get the code
 
