@@ -339,7 +339,7 @@ Managed DevOps Pools offers the ability to fetch certificates from an Azure Key 
 
 To use this feature, you must:
 1. Configure an [identity on your pool](configure-identity.md), and this identity must have **Key Vault Secrets User** permissions to fetch the secret from your Key Vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to Key Vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
-1. The principal configuring the Key Vault integration settings (if you are configuring them, then your accout) must have the **Key Vault Certificate User** role assignment on the Key Vault where the certificates are stored.
+1. The principal configuring the Key Vault integration settings (if you are configuring the Key Vault settings, then your account) must have the **Key Vault Certificate User** role assignment on the Key Vault where the certificates are stored.
 
 > [!NOTE]
 > As of `api-version 2024-10-19`, if you use this feature you can only use a single identity on the pool. Support for multiple identities will be added soon.
