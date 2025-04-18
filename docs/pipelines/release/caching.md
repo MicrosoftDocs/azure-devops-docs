@@ -375,7 +375,7 @@ steps:
 - **restoreKeys**: The fallback keys if the primary key fails (Optional)
 
 > [!NOTE]
-> Caches are immutable, once a cache with a particular key is created for a specific scope (branch), the cache cannot be updated. This means that if the key is a fixed value, all subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. If you want to use a fixed key value, you must use the `restoreKeys` argument as a fallback option.
+> Caches are immutable, once a cache with a particular key is created for a specific scope (branch), the cache can't be updated. This means that if the key is a fixed value, all subsequent builds for the same branch won't be able to update the cache even if the cache's contents have changed. If you want to use a fixed key value, you must use the `restoreKeys` argument as a fallback option.
 
 ## Maven
 
