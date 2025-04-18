@@ -420,7 +420,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>2025 Q2</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-pytest" data-raw-source="[Support for JavaScript (Jest) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-pytest)">Support for JavaScript (Jest) in Azure Test Plans</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-jest" data-raw-source="[Support for JavaScript (Jest) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-jest)">Support for JavaScript (Jest) in Azure Test Plans</a></td>
          <td>Test Plans</td>
          <td>2025 Q2</td>
       </tr>
@@ -441,6 +441,21 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>      
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/advanced-test-result" data-raw-source="[Advanced Test Case result history](/azure/devops/release-notes/roadmap/2025/testplans/advanced-test-result)">Advanced Test Case result history</a></td>
+         <td>Test Plans</td>
+         <td>2025 Q2</td>
+      </tr>
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result" data-raw-source="[Latest Test Outcome in Requirements](/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result)">Latest Test Outcome in Requirements</a></td>
+         <td>Test Plans</td>
+         <td>2025 Q2</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/view-state-execute-tab" data-raw-source="[View Test Case State in Execute Tab](/azure/devops/release-notes/roadmap/2025/testplans/view-state-execute-tab)">View Test Case State in Execute Tab</a></td>
+         <td>Test Plans</td>
+         <td>2025 Q2</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-plans-directory" data-raw-source="[New Test Plans directory](/azure/devops/release-notes/roadmap/2025/testplans/new-test-plans-directory)">New Test Plans directory</a></td>
          <td>Test Plans</td>
          <td>2025 Q2</td>
       </tr>
