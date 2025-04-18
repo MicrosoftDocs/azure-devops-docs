@@ -295,28 +295,28 @@ steps:
 
 - **Example using docker buildx**:
 
-```yaml
-steps:
-  - task: Cache@2
-    displayName: Cache Docker
-    inputs:
-      key: 'docker | "$(Agent.OS)" | mydockerimage | ./Dockerfile'
-      path: $(Pipeline.Workspace)/docker_image_cache
-      restoreKeys: |
-        docker | "$(Agent.OS)" | mydockerimage
-
-  - script: |
-      docker buildx create --name builder --driver docker-container --use
-      docker buildx build \
-        --cache-from=type=local,src=$(Pipeline.Workspace)/docker_image_cache \
-        --cache-to=type=local,dest=$(Pipeline.Workspace)/docker_image_cache,mode=max \
-        --file ./Dockerfile \
-        --output=type=docker,name=mydockerimage \
-        .
-    displayName: docker buildx
-    env:
-      DOCKER_BUILDKIT: 1
-```
+    ```yaml
+    steps:
+      - task: Cache@2
+        displayName: Cache Docker
+        inputs:
+          key: 'docker | "$(Agent.OS)" | mydockerimage | ./Dockerfile'
+          path: $(Pipeline.Workspace)/docker_image_cache
+          restoreKeys: |
+            docker | "$(Agent.OS)" | mydockerimage
+    
+      - script: |
+          docker buildx create --name builder --driver docker-container --use
+          docker buildx build \
+            --cache-from=type=local,src=$(Pipeline.Workspace)/docker_image_cache \
+            --cache-to=type=local,dest=$(Pipeline.Workspace)/docker_image_cache,mode=max \
+            --file ./Dockerfile \
+            --output=type=docker,name=mydockerimage \
+            .
+        displayName: docker buildx
+        env:
+          DOCKER_BUILDKIT: 1
+    ```
 
 ## Golang
 
