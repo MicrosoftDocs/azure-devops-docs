@@ -268,9 +268,9 @@ steps:
   - task: Cache@2
     displayName: Cache task
     inputs:
-      key: 'docker | "$(Agent.OS)" | cache'
-      path: $(Pipeline.Workspace)/docker
-      cacheHitVar: CACHE_RESTORED                #Variable to set to 'true' when the cache is restored
+      key: 'docker | "$(Agent.OS)" | cache'        ## A unique identifier for the cache
+      path: $(Pipeline.Workspace)/docker           ## Path of the folder or file that you want to cache
+      cacheHitVar: CACHE_RESTORED                  ## Variable to set to 'true' when the cache is restored
     
   - script: |
       docker load -i $(Pipeline.Workspace)/docker/cache.tar
@@ -293,8 +293,30 @@ steps:
     condition: and(not(canceled()), not(failed()), ne(variables.CACHE_RESTORED, 'true'))
 ```
 
-- **key**: (required) - a unique identifier for the cache.
-- **path**: (required) - path of the folder or file that you want to cache.
+- **Example using docker buildx**:
+
+```yaml
+steps:
+  - task: Cache@2
+    displayName: Cache Docker
+    inputs:
+      key: 'docker | "$(Agent.OS)" | mydockerimage | ./Dockerfile'
+      path: $(Pipeline.Workspace)/docker_image_cache
+      restoreKeys: |
+        docker | "$(Agent.OS)" | mydockerimage
+
+  - script: |
+      docker buildx create --name builder --driver docker-container --use
+      docker buildx build \
+        --cache-from=type=local,src=$(Pipeline.Workspace)/docker_image_cache \
+        --cache-to=type=local,dest=$(Pipeline.Workspace)/docker_image_cache,mode=max \
+        --file ./Dockerfile \
+        --output=type=docker,name=mydockerimage \
+        .
+    displayName: docker buildx
+    env:
+      DOCKER_BUILDKIT: 1
+```
 
 ## Golang
 
