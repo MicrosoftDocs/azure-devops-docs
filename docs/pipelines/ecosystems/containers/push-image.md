@@ -3,8 +3,7 @@ title: Use Azure Pipelines to build and push container images to registries
 description: Use Azure Pipelines to build and push container images to Docker Hub and Azure Container Registry.
 ms.topic: tutorial
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
-ms.author: v-catherbund
-author: cebundy
+ms.author: jukullam
 ms.date: 12/20/2024
 monikerRange: 'azure-devops'
 zone_pivot_groups: pipelines-docker-acr
