@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 04/15/2025
+ms.date: 04/18/2025
 ---
 
 # Configure Managed DevOps Pools security settings
@@ -335,7 +335,11 @@ The `permissionProfile` property can be set during pool creation only. Allowed v
 
 ## Key Vault configuration
 
-Managed DevOps Pools offers the ability to fetch certificates from an Azure Key Vault during provisioning, which means the certificates will already exist on the machine by the time it runs your Azure DevOps pipelines. To use this feature, you must configure an [identity on your pool](configure-identity.md), and this identity must have **Key Vault Secrets User** permissions to fetch the secret from your Key Vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to Key Vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
+Managed DevOps Pools offers the ability to fetch certificates from an Azure Key Vault during provisioning, which means the certificates will already exist on the machine by the time it runs your Azure DevOps pipelines. 
+
+To use this feature, you must:
+1. Configure an [identity on your pool](configure-identity.md), and this identity must have **Key Vault Secrets User** permissions to fetch the secret from your Key Vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to Key Vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
+1. The principal configuring the Key Vault integration settings (if you are configuring them, then your accout) must have the **Key Vault Certificate User** role assignment on the Key Vault where the certificates are stored.
 
 > [!NOTE]
 > As of `api-version 2024-10-19`, if you use this feature you can only use a single identity on the pool. Support for multiple identities will be added soon.
