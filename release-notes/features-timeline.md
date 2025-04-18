@@ -870,7 +870,11 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/auto-pause-manual-test" data-raw-source="[Auto-pause manual test case run](/azure/devops/release-notes/roadmap/2025/testplans/auto-pause-manual-test)">Auto-pause manual test case run</a></td>
          <td>Test Plans</td>
       </tr>
-            <tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/resume-paused-test-cases" data-raw-source="[Resume paused test cases on by default](/azure/devops/release-notes/roadmap/2025/testplans/resume-paused-test-cases)">Resume paused test cases on by default</a></td>
+         <td>Test Plans</td>
+      </tr>      
+      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/undo-test-step" data-raw-source="[Undo test step in web and desktop runner](/azure/devops/release-notes/roadmap/2025/testplans/undo-test-step)">Undo test step in web and desktop runner</a></td>
          <td>Test Plans</td>
       </tr>
@@ -892,6 +896,10 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience" data-raw-source="[New Test Run experience](/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience)">New Test Run experience</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point" data-raw-source="[Enhanced Test Point Result Panel](/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point)">Enhanced Test Point Result Panel</a></td>
          <td>Test Plans</td>
       </tr>
       <tr>
