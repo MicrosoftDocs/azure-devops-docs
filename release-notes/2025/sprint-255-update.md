@@ -14,13 +14,13 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-255-update-links](includes/general/sprint-255-update-links.md)] 
 
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-255-update-links](includes/ghazdo/sprint-255-update-links.md)] 
+
 ### Azure Boards:
 
 [!INCLUDE [sprint-255-update-links](includes/boards/sprint-255-update-links.md)]
-
-### Azure Pipelines
-
-[!INCLUDE [sprint-255-update-links](includes/pipelines/sprint-255-update-links.md)]
 
 ### Azure Test Plans:
 
@@ -30,13 +30,13 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-255-update](includes/general/sprint-255-update.md)]
 
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-255-update](includes/ghazdo/sprint-255-update.md)]
+
 ## Azure Boards
 
 [!INCLUDE [sprint-255-update](includes/boards/sprint-255-update.md)]
-
-## Azure Pipelines
-
-[!INCLUDE [sprint-255-update](includes/pipelines/sprint-255-update.md)]
 
 ## Azure Test Plans
 
