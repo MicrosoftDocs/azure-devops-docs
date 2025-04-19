@@ -59,7 +59,6 @@ Extensions that use high privilege scopes can potentially expose your Azure DevO
 
 If you identify an extension with high privilege scopes, take the following actions:
 - **Evaluate necessity**: Assess whether the requested scopes are essential for your use case
-- **Contact the publisher**: Reach out to the extension publisher for more information or to request a reduction in the required scopes
 - **Avoid unnecessary risks**: If the extension's functionality doesn't justify the high privilege scopes, we recommend not installing or using the extension to safeguard your Azure DevOps environment
 
 > [!div class="mx-imgBorder"]  
