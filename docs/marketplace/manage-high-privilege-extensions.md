@@ -35,11 +35,6 @@ Examples of high privilege scopes include:
 
 High privilege extensions make use of one or more high privilege scopes. These extensions have the potential to introduce security vulnerabilities or risks if they're not properly vetted or maintained. High privilege extensions can access sensitive resources and perform critical operations, making it essential to evaluate them carefully to ensure they align with your organization's security and operational standards.
 
-Examples of high privilege extensions include:
-- Extensions that modify or delete source code
-- Extensions that manage user identities and permissions
-- Extensions that create or delete projects
-
 When you manage high privilege extensions, consider the following actions:
 - **Trust the publisher**: Install and use extensions only if you trust their code and publisher
 - **Review the requested scopes**: Ensure the requested scopes are necessary for the extension's functionality
