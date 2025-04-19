@@ -46,7 +46,7 @@ Few of your already installed extensions might be flagged for high privilege sco
 
 We recommend that you only install, update, or use extensions if you trust their code and their publishers.
 
-This feature highlights in the user interface whether a specific extension uses high privilege scopes. To enhance security, review the [publication process](../extend/publish/overview.md) to identify potential issues such as viruses, and refer to the [developing overview](../extend/overview.md) for additional guidance.
+This feature only highlights in the user interface whether a specific extension uses high privilege scopes. Microsoft runs a virus scan on each new and updated extension package that gets published. For more information, see [Publish your extension](../extend/publish/overview.md#publish-your-extension).
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing list of high privilege extensions in Organization settings.](media/high-privilege-extensions/extension-list.png)
