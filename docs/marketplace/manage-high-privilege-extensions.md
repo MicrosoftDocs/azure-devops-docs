@@ -87,7 +87,7 @@ Discontinue the use of unpublished extensions by uninstalling them from your Azu
 
 ## Use pipeline decorators safely
 
-[Pipeline decorators](../extend/develop/add-pipeline-decorator.md) are private extensions that modify and enhance all pipelines within your organization, which can significantly change your build and release processes. Therefore, use pipeline decorator extensions cautiously and only if you trust their publishers and code.
+[Pipeline decorators](../extend/develop/add-pipeline-decorator.md) are private extensions that modify and enhance all pipelines within your organization. Use pipeline decorator extensions cautiously and only if you trust their publishers and code.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing authorization screen for newly added scopes with pipeline decorator included.](media/high-privilege-extensions/auth-scopes.png)
