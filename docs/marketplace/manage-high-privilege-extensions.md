@@ -22,7 +22,7 @@ By following these practices, you can ensure your organization remains secure wh
 
 ### High privilege scopes
 
-In your extension, you can define one or more scopes. These scopes determine which resources your extension can access and the operations permitted to perform on those resources. The scopes you specify in your extension manifest are the scopes set on access tokens issued to your extension. For more information, see [Authenticate and secure web extensions](../extend/develop/auth.md).
+In your extension, you can define one or more scopes. These scopes determine which resources your extension can access and the operations permitted to perform on those resources.
 
 If no scopes are specified, extensions only gain access to user profile and extension data.
 
