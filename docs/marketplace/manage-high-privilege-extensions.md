@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.subservice: azure-devops-marketplace
 ms.author: pliaros
 author: chcomley
-ms.date: 04/11/2025
+ms.date: 04/21/2025
 #customer intent: As an Azure DevOps administrator, I want to identify and manage high privilege, pipeline decorators, and unpublished extensions so that I can protect my organization from potential security vulnerabilities and other unexpected behaviour.
 ---
 
@@ -102,7 +102,7 @@ Discontinue the use of unpublished extensions by uninstalling them from your Azu
 
 With the Azure DevOps Services REST API [version 7.2](/rest/api/azure/devops/extensionmanagement/installed-extensions/list?view=azure-devops-rest-7.2&tabs=HTTP#extensionstateflags&preserve-view=true), the string field `unpublished` is now available. This field allows you to programmatically identify extensions that are unpublished from the Visual Studio Marketplace. 
 
-By using this field, you can build your own process of detecting and managing unpublished extensions within your Azure DevOps organization. This action helps ensure that you're aware of any extensions that are no longer maintained and can take appropriate action to safeguard your organization.
+By using this field, you can build your own process of detecting and managing unpublished extensions within your Azure DevOps organization.
 
 ## Related articles
 
