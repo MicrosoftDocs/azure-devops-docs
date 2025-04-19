@@ -44,7 +44,7 @@ When you manage high privilege extensions, consider the following actions:
 
 Few of your already installed extensions might be flagged for high privilege scope usage. You can check their state in the **Extensions** section of **Organization settings**. This designation is due to several potential reasons, explained in this article.
 
-We recommend that you only install, upgrade, or use extensions if you trust their code and their publishers.
+We recommend that you only install, update, or use extensions if you trust their code and their publishers.
 
 This feature highlights in the user interface whether a specific extension uses high privilege scopes. To enhance security, review the [publication process](../extend/publish/overview.md) to identify potential issues such as viruses, and refer to the [developing overview](../extend/overview.md) for additional guidance.
 
