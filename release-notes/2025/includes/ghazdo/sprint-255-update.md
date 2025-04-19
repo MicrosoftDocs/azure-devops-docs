@@ -16,6 +16,7 @@ trigger: none
 variables:
   advancedsecurity.publish.allowmissingpartialfingerprints: true
 
+```
 jobs:
   - job: "AdvancedSecurityPublish"
     displayName: "🛡 Publish ZAP SARIF"
@@ -24,3 +25,4 @@ jobs:
         displayName: Publish to ZAP SARIF to Advanced Security
         inputs:
           SarifsInputDirectory: $(Build.SourcesDirectory)/sarifs/
+```
