@@ -25,7 +25,7 @@ By following these practices, you can ensure your organization remains secure wh
 In your extension, you can define one or more scopes. These scopes determine which resources your extension can access and the operations permitted to perform on those resources.
 
 If no scopes are specified, extensions only gain access to user profile and extension data.
-
+High privilege scopes are dedined as overly permissive scopes. For a list of scopes, including high privilege scopes, see the [Manifest reference](../extend/develop/manifest.md#scopes).
 Examples of high privilege scopes include:
 - Read, update, and delete source code
 - Read, write, and manage identities and groups
