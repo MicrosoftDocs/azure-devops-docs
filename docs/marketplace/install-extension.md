@@ -196,7 +196,7 @@ Once an extension is installed, you can find it under the value of the `$AZURE_E
 
 * * *
 
-### High priviledge, pipeline decorators, and unpublished extensions
+### High privilege, pipeline decorators, and unpublished extensions
 
 Extensions with high privilege scopes, pipeline decorators, or unpublished status can pose potential security risks if not properly vetted. High privilege scopes grant extensive access to your organization's resources, while pipeline decorators can modify all pipelines in your organization. Unpublished extensions might no longer be maintained by their publishers. For more information on managing these types of extensions, see [Manage high privilege scopes, pipeline decorators, and unpublished extensions](manage-high-privilege-extensions.md).
 
