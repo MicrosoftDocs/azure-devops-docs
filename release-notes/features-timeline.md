@@ -587,7 +587,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Test Plans</td>
       </tr>
        <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/secret-protection" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2025/ghazdo/secret-protection)">Secret Validity Checking</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/secret-protection" data-raw-source="[Secret Protection and Code Security plans for Advanced Security](/azure/devops/release-notes/roadmap/2025/ghazdo/secret-protection)">Secret Protection and Code Security plans for Advanced Security </a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
