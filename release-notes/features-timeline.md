@@ -279,12 +279,12 @@ Below, you will find several investments we plan to deliver as part of this init
          <td>2025 Q2</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/container-agents" data-raw-source="[Spot Virtual Machines instance](/azure/devops/release-notes/roadmap/2025/mdp/container-agents)">Spot Virtual Machines instance</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/spot-vms" data-raw-source="[Spot Virtual Machines instance](/azure/devops/release-notes/roadmap/2025/mdp/spot-vms)">Spot Virtual Machines instance</a></td>
          <td>Pipelines</td>
          <td>2025 Q2</td>
       </tr>
             <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/container-agents" data-raw-source="[Add trusted root certificates](/azure/devops/release-notes/roadmap/2025/mdp/container-agents)">Add trusted root certificates</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/trusted-certificates" data-raw-source="[Add trusted root certificates](/azure/devops/release-notes/roadmap/2025/mdp/trusted-certificates)">Add trusted root certificates</a></td>
          <td>Pipelines</td>
          <td>2025 Q2</td>
       </tr>
