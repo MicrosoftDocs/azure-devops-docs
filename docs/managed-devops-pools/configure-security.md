@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 04/18/2025
+ms.date: 04/21/2025
 ---
 
 # Configure Managed DevOps Pools security settings
@@ -359,10 +359,8 @@ The following settings configure the certificates fetched from your Key Vault.
   Specify the location to install the certificates on your agent.
 
   - **Windows agents**: Specify `LocalMachine` or `CurrentUser`.
-  - **Linux agents**: Specify the disk path to store the certificates, for example `/var/lib/waagent/Microsoft.Azure.KeyVault/app1`.
+  - **Linux agents**: **Certificate store location** is only support on Ubuntu distributions. Specify the disk path to store the certificates, for example `/var/lib/waagent/Microsoft.Azure.KeyVault/app1`.
      For Ubuntu distributions, if you specify the trusted store location, for example `/usr/local/share/ca-certificates`, the vertificate is added to that certificate store as root. For more information, see [Install a root CA certificate in the trust store](https://documentation.ubuntu.com/server/how-to/security/install-a-root-ca-certificate-in-the-trust-store/index.html).
-     > [!NOTE]
-     > **Certificate store location** is only support on Ubuntu distributions.
 
 - **Certificate store name** (`certificateStoreName`)
 
@@ -387,7 +385,7 @@ Key Vault integration is configured in **Settings > Security**.
 Azure Key Vault is configured in the `osProfile` section of the `fabricProfile` property. Set the `secretManagementSettings` to be able to access the desired certificate.
 
 > [!NOTE]
-> The `osProfile.certificateStoreName` property in only available in `apiVersion 2025-01-21` and later.
+> The `osProfile.certificateStoreName` property is only available in `apiVersion 2025-01-21` and later.
 
 ```json
 {
