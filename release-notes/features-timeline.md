@@ -274,22 +274,22 @@ Below, you will find several investments we plan to deliver as part of this init
     </thead>
     <tbody>
       <tr>
-         <td>Spot VM agents</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/pool-creation" data-raw-source="[Pool creation at the Azure DevOps project level using project level permissions](/azure/devops/release-notes/roadmap/2025/mdp/pool-creation)">Pool creation at the Azure DevOps project level using project level permissions</a></td>
          <td>Pipelines</td>
          <td>2025 Q2</td>
       </tr>
       <tr>
-         <td>Preemptive agent download</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/container-agents" data-raw-source="[Spot Virtual Machines instance](/azure/devops/release-notes/roadmap/2025/mdp/container-agents)">Spot Virtual Machines instance</a></td>
+         <td>Pipelines</td>
+         <td>2025 Q2</td>
+      </tr>
+            <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/container-agents" data-raw-source="[Add trusted root certificates](/azure/devops/release-notes/roadmap/2025/mdp/container-agents)">Add trusted root certificates</a></td>
          <td>Pipelines</td>
          <td>2025 Q2</td>
       </tr>
       <tr>
-         <td>Add trusted root certificates</td>
-         <td>Pipelines</td>
-         <td>2025 Q2</td>
-      </tr>
-      <tr>
-         <td>Container based agents</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/container-agents" data-raw-source="[Container based agents](/azure/devops/release-notes/roadmap/2025/mdp/container-agents)">Container based agents</a></td>
          <td>Pipelines</td>
          <td>2025 Q4</td>
       </tr>
