@@ -1,4 +1,4 @@
-| Category | Scope | Name | High-risk | Description | Inherits From |
+| Category | Scope | Name | High-privilege | Description | Inherits From |
 | -------- | ----- | ---- | --------- | ----------- | ------------- |
 | **Advanced Security** | `vso.advsec` | AdvancedSecurity (read) | Yes | Grants the ability to read alerts, result instances, analysis result instances. ||
 | | `vso.advsec_write` | AdvancedSecurity (read and write) | Yes |Grants the ability to upload analyses in sarif | `vso.advsec` |
