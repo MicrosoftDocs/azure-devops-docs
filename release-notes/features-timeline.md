@@ -58,7 +58,7 @@ Upcoming capabilities we expect to deliver include:
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking" data-raw-source="[Link Boards items to Advanced Security Alerts](/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking)">Link Boards items to Advanced Security Alerts</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
-        <td>2025 Q2</td>
+        <td>2025 Q3</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[Automatically fix detected dependency scanning vulnerabilities with Dependabot security updates](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Automatically fix detected dependency scanning vulnerabilities with Dependabot security updates</a></td>
@@ -146,16 +146,16 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td>2025 Q2</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/new-service-connection" data-raw-source="[New service connection type for pipelines to authenticate with Azure DevOps](/azure/devops/release-notes/roadmap/2025/new-service-connection)">New service connection type for pipelines to authenticate with Azure DevOps</a></td>
-         <td>Pipelines</td>
-         <td>2025 Q2</td>
-      </tr>
-      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/workload-identity-federation" data-raw-source="[Workload identity federation using Entra-issued tokens](/azure/devops/release-notes/roadmap/2025/workload-identity-federation)">Workload identity federation using Entra-issued tokens</a></td>
          <td>Pipelines</td>
          <td>2025 Q2</td>
       </tr>
         <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/new-service-connection" data-raw-source="[PAT-less authentication from pipeline tasks to Azure DevOps APIs](/azure/devops/release-notes/roadmap/2025/new-service-connection)">PAT-less authentication from pipeline tasks to Azure DevOps APIs</a></td>
+         <td>Pipelines</td>
+         <td>2025 Q3</td>
+      </tr>
+      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/continuous-access-evaluation" data-raw-source="[Continuous access evaluation](/azure/devops/release-notes/roadmap/2025/continuous-access-evaluation)">Continuous access evaluation</a></td>
          <td>General</td>
          <td>Future</td>
@@ -485,7 +485,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="29"><strong>2025 Q2</strong></td>
+      <td rowspan="27"><strong>2025 Q2</strong></td>
           <td><a href="/azure/devops/release-notes/roadmap/2024/boards-state-transitions-with-github-repos" data-raw-source="[Support state transitions when merging a GitHub pull request](/azure/devops/release-notes/roadmap/2024/boards-state-transitions-with-github-repos)">Support state transitions when merging a GitHub pull request</a>
          </td>
          <td>Boards</td>      
@@ -586,31 +586,23 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-plans-directory" data-raw-source="[New Test Plans directory](/azure/devops/release-notes/roadmap/2025/testplans/new-test-plans-directory)">New Test Plans directory</a></td>
          <td>Test Plans</td>
       </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
+       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/secret-protection" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2025/ghazdo/secret-protection)">Secret Validity Checking</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/multi-repo" data-raw-source="[Support for multi-repository result publishing](/azure/devops/release-notes/roadmap/2025/ghazdo/multi-repo)">Support for multi-repository result publishing</a></td>
-         <td>GitHub Advanced Security for Azure DevOps</td>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity" data-raw-source="[Secret Validity Checking](/azure/devops/release-notes/roadmap/2024/ghazdo/secret-validity)">Secret Validity Checking</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/service-hooks" data-raw-source="[Advanced Security alert events added to Azure DevOps service hooks framework](/azure/devops/release-notes/roadmap/2025/ghazdo/service-hooks)">Advanced Security alert events added to Azure DevOps service hooks framework</a></td>
          <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/security-overview-v2" data-raw-source="[New security overview alert details and reporting capabilities](/azure/devops/release-notes/roadmap/2025/ghazdo/security-overview-v2)">New security overview alert details and reporting capabilities</a></td>
-         <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking" data-raw-source="[Link Boards items to Advanced Security Alerts](/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking)">Link Boards items to Advanced Security Alerts</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata" data-raw-source="[Adding additional metadata for dependency alerts to improve remediation](/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata)">Adding additional metadata for dependency alerts to improve remediation</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="2"><strong>2025 Q3</strong></td>
+      <td rowspan="4"><strong>2025 Q3</strong></td>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience" data-raw-source="[New Test Run experience - Public Preview](/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience)">New Test Run experience - Public Preview</a></td>
          <td>Test Plans</td>
       </tr>
@@ -618,7 +610,15 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point" data-raw-source="[Enhanced Test Point Result Panel](/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point)">Enhanced Test Point Result Panel</a></td>
          <td>Test Plans</td>
       </tr>
-      <td rowspan="19"><strong>Future</strong></td>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/audit-logging" data-raw-source="[Advanced Security events streamed to Azure DevOps audit log](/azure/devops/release-notes/roadmap/2025/ghazdo/audit-logging)">Advanced Security events streamed to Azure DevOps audit log</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking" data-raw-source="[Link Boards items to Advanced Security Alerts](/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking)">Link Boards items to Advanced Security Alerts</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <td rowspan="18"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>
@@ -688,10 +688,6 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/audit-logging" data-raw-source="[Advanced Security events streamed to Azure DevOps audit log](/azure/devops/release-notes/roadmap/2025/ghazdo/audit-logging)">Advanced Security events streamed to Azure DevOps audit log</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
    </tbody>
