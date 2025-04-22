@@ -1,12 +1,15 @@
 ---
-title: TBD
+title: Expanded security scanning and GitHub pull request integration with Azure Boards
 author: ckanyika
 ms.author: ckanyika
-ms.date: 4/21/2025
-description: TBD
+ms.date: 4/23/2025
+description: Expanded security scanning and GitHub pull request integration with Azure Boards
 ---
-# TBD
+# Expanded security scanning and enhanced GitHub pull request integration with Azure Boards
 
+We’re expanding support in GitHub Advanced Security to include results with URI locations, providing broader coverage from container and dynamic scanning tools.
+
+We’ve also improved how GitHub pull requests connect to Azure Boards work items, making it easier to keep work item states up to date when pull requests are merged.
 
 Check out the release notes for details.
 
@@ -63,4 +66,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Silviu Andrica
+Dan Hellem

@@ -10,7 +10,7 @@
       items:
         - name: "2025"
           items:
-          - name: April 21
+          - name: April 23
             href: 2025/sprint-255-update.md
           - name: April 3
             href: 2025/sprint-254-update.md
@@ -286,7 +286,7 @@
         items:
         - name: "2025"
           items:
-          - name: April 21
+          - name: April 23
             href: 2025/boards/sprint-255-update.md
           - name: April 3
             href: 2025/boards/sprint-254-update.md
@@ -764,7 +764,7 @@
         items:
         - name: "2025"
           items:
-          - name: April 21
+          - name: April 23
             href: 2025/testplans/sprint-255-update.md
           - name: April 3
             href: 2025/testplans/sprint-254-update.md
@@ -884,7 +884,7 @@
         items:
         - name: "2025"
           items:
-          - name: April 21
+          - name: April 23
             href: 2025/ghazdo/sprint-255-update.md   
           - name: March 20
             href: 2025/ghazdo/sprint-253-update.md
