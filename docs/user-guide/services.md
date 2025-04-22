@@ -42,7 +42,7 @@ Azure DevOps offers a spectrum of service models to accommodate the unique needs
    [**Dashboards**](../report/dashboards/overview.md): Create a personalized view of project data and workflows. <br><br>
    [**Wiki**](../project/wiki/about-readme-wiki.md): Document projects in a centralized and accessible team location. <br><br>
    [**Boards**](../boards/get-started/what-is-azure-boards.md): Access Agile tools for streamline planning and tracking projects. <br><br>
-   [**Repos**](..//repos/get-started/what-is-repos.md): Apply source control for project collaboration and maintenance. <br><br>
+   [**Repos**](../repos/get-started/what-is-repos.md): Apply source control for project collaboration and maintenance. <br><br>
    [**Pipelines**](../pipelines/get-started/pipelines-get-started.md): Automate project build and test, and the release processes. <br><br>
    [**Test Plans**](../test/overview.md): Create, manage, and run manual and automated project testing. <br><br>
    [**Artifacts**](../artifacts/start-using-azure-artifacts.md): Share packages and integrate package sharing into pipelines.
@@ -86,7 +86,7 @@ Azure Boards supports various work item types, where each is associated with a s
 
 Project managers and developers can share information and track progress by using the comprehensive backlogs and boards. Azure Boards provides a complete picture of your project status, which enables teams to monitor trends and make informed decisions.
 
-For an in-depth understanding of how backlogs, boards, and plans can transform your project management experience, see [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md).
+For an in-depth understanding of how backlogs, boards, and plans can transform your project management experience, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md)
 
 :::image type="content" source="media/boards-backlogs.png" alt-text="Screenshot of the Azure Boards backlogs page showing many cards, including New Items, Active Items, and Items to Analyze." lightbox="media/boards-backlogs.png":::
 
@@ -141,7 +141,7 @@ Azure Pipelines includes the following features:
 - **Approval workflows**: Integrate approval workflows to validate successful deployments, adding a layer of verification before promoting builds.
 - **Release tracking**: Monitor your releases as they progress through different environments, gaining visibility into the deployment pipeline.
 
-For a detailed guide on implementing continuous integration and delivery with Azure Pipelines, see [Continuous integration on any platform](../pipelines/get-started/what-is-azure-pipelines.md).
+For a detailed guide on implementing continuous integration and delivery with Azure Pipelines, see [What is Azure Pipelines?](../pipelines/get-started/what-is-azure-pipelines.md)
 
 :::image type="content" source="media/pipelines-landing-page.png" alt-text="Screenshot of the Azure Pipelines landing page showing the list of recently run pipelines." lightbox="media/pipelines-landing-page.png":::
 
@@ -168,13 +168,13 @@ For a detailed exploration of how Azure Test Plans can streamline your testing p
 
 Azure DevOps enhances team collaboration through the following services designed to streamline communication and project tracking:
 
-- **[Team dashboards](../report/dashboards/dashboards.md)**: Create and customize dashboards to provide your team with real-time visibility into project metrics and progress.
-- **[Project wiki](../project/wiki/manage-wikis.md)**: Document your project details, guidelines, and knowledge base in a centralized, easily accessible wiki.
-- **[Work item discussions](../boards/work-items/work-item-fields.md)**: Facilitate conversations directly within work item forms and enable contextual and timely communication.
+- [**Team dashboards**](../report/dashboards/dashboards.md): Create and customize dashboards to provide your team with real-time visibility into project metrics and progress.
+- [**Project wiki**](../project/wiki/manage-wikis.md): Document your project details, guidelines, and knowledge base in a centralized, easily accessible wiki.
+- [**Work item discussions**](../boards/work-items/work-item-fields.md): Facilitate conversations directly within work item forms and enable contextual and timely communication.
 - **Traceability links**: Establish links between [work items](../boards/backlogs/add-link.md), [commits](../repos/git/commits.md), [pull requests](../repos/git/pull-requests.md), and more, and help ensure comprehensive traceability across your project.
-- **[Alerts and notifications](../organizations/notifications/about-notifications.md)**: Set up personalized alerts and change notifications to keep team members informed about project updates and changes.
+- [**Alerts and notifications**](../organizations/notifications/about-notifications.md): Set up personalized alerts and change notifications to keep team members informed about project updates and changes.
 - **Feedback management**: Streamline the process of [requesting](../test/request-stakeholder-feedback.md), [providing](provide-feedback.md), and managing feedback to continuously improve project outcomes.
-- **[Analytics](../report/powerbi/analytics-security.md)** and **[Reporting](../report/powerbi/access-analytics-power-bi.md)**: Use the analytics service and Power BI reporting for insights into project performance and make data-driven decisions.
+- [**Analytics**](../report/powerbi/analytics-security.md) and [**Reporting**](../report/powerbi/access-analytics-power-bi.md): Use the analytics service and Power BI reporting for insights into project performance and make data-driven decisions.
 
 These collaboration services are integral to maintaining a cohesive and informed team capable of responding swiftly to project demands and opportunities.
 
@@ -198,7 +198,7 @@ Key benefits of Azure cloud-hosted services include:
 - **Comprehensive support**: Azure services provide the infrastructure and platform support necessary for the entire application lifecycle.
 - **Integration with Azure DevOps**: You can combine these services with Azure DevOps for an integrated experience that covers source control, CI/CD, and more.
 
-To explore the full range of services, features, and suites that integrate seamlessly with your development process, see the [Azure products](https://azure.microsoft.com/services/) directory. 
+To explore the full range of services, features, and suites that integrate seamlessly with your development process, see the [Azure products](https://azure.microsoft.com/products/) directory. 
 
 ## Administrative services
 
