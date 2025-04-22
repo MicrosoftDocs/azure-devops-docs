@@ -1,5 +1,5 @@
 ---
-title: Overview of services
+title: Overview of Services
 titleSuffix: Azure DevOps
 ms.custom: engagement-fy23
 description: Understand the services provided in Azure DevOps, including Dashboards, Wiki, Boards, Repos, Pipelines, Test Plans, and Artifacts.
