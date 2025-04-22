@@ -88,7 +88,7 @@ For more information, see [End-to-end traceability](../../cross-service/end-to-e
 
 A team in Azure Boards is a group of project members who work in a specific product area represented by hierarchical paths called **Area Paths**. Define teams by their name, members, and area paths and are essential for configuring Boards, Backlogs, Sprints, and Delivery Plans in Azure Boards. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
 
-:::image type="content" source="../../organizations/settings/media/agile-tools/agile-tools-team-assets.png" border="false" alt-text="Conceptual image of team tools that shows Team options for planning, tracking, collaboration, monitoring, and learning.":::   
+:::image type="content" source="../../organizations/settings/media/agile-tools/agile-tools-team-assets.png" border="false" alt-text="Conceptual diagram of team tools that shows Team options for planning, tracking, collaboration, monitoring, and learning.":::   
 
 Azure Boards integrates with popular chat tools such as [Microsoft Teams](../integrations/boards-teams.md) and [Slack](../integrations/boards-slack.md) through ChatOps. It also offers extensions that add new capabilities to your projects and can be found in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). These extensions can help with planning and tracking work items, sprints, scrums, and other project management tasks, as well as collaboration among team members. 
 
