@@ -1,5 +1,5 @@
 ---
-title: Secure your Azure DevOps
+title: Make your Azure DevOps secure
 titleSuffix: Azure DevOps 
 description: An overview of actions to ensure the security of your Azure DevOps environment, data, and users.
 ms.topic: overview
@@ -7,10 +7,10 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/24/2025
+ms.date: 04/23/2025
 --- 
 
-# Secure your Azure DevOps
+# Make your Azure DevOps secure
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -20,7 +20,7 @@ When you're handling information and data, especially in a cloud-based solution 
 
 Securing your network is crucial when you're working with Azure DevOps to protect your data and resources from unauthorized access and potential threats. Implement network security measures to help ensure that only trusted sources can access your Azure DevOps environment. To secure your network when you're working with Azure DevOps, do the following actions:
 
-- **Set up IP allowlisting:** Restrict access to specific IP addresses to allow traffic only from trusted sources, reducing the attack surface. For more information, see [Set up IP allowlisting](allow-list-ip-url.md). 
+- **Set up IP allowlisting:** Restrict access to specific IP addresses to allow traffic only from trusted sources, reducing the attack surface. For instructions, see [Set up IP allowlisting](allow-list-ip-url.md). 
 - **Use data encryption:** Always encrypt data in transit and at rest. Secure communication channels using protocols like HTTPS. For more information, see [Use data encryption](/azure/security/fundamentals/encryption-overview).
 - **Validate certificates:** Ensure certificates are valid and issued by trusted authorities when establishing connections. For more information, see [Validate certificates](/azure/security/fundamentals/azure-ca-details?tabs=root-and-subordinate-cas-list).
 - **Implement Web Application Firewalls (WAFs):** Filter, monitor, and block malicious web-based traffic with WAFs for an extra layer of protection against common attacks. For more information, see [Implement Web Application Firewalls (WAFs)](/azure/web-application-firewall/).
