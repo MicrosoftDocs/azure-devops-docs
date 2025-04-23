@@ -45,7 +45,7 @@ You can also enter a commit or pull request message to transition the work item.
 
 When a pull request description includes a valid state name, for example, ``Closed AB#1234``, the system updates the referenced work item to that specific state. If the state name isn’t recognized directly, Azure Boards tries to match it to a workflow category like ``Resolved`` or ``Completed``. If a match is found, the work item transitions to the first available state defined under that category.
 
-By default, work items referenced with "fix", "fixes", or "fixed" transitions to the first state associated with the Resolved category. If no such state exists in the current process, the system instead transitions the work item to the first state in the Completed category.
+By default, work items referenced with ``fix``, ``fixes``, or ``fixed`` transitions to the first state associated with the Resolved category. If no such state exists in the current process, the system instead transitions the work item to the first state in the Completed category.
 
 For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
 
