@@ -181,15 +181,12 @@ By default, each pipeline definition must be explictly authorized to run in a se
 
 Azure DevOps provides a [Pipeline permissions](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) project level agent pool setting to authorize specific pipelines from that project to run in that pool, or to configure the pool for **Open access** to be available for all pipelines in that project.
 
-Managed DevOps Pools can configure the **Open access** setting on your behalf when creating the Managed DevOps Pool if you enable **Allow all pipelines to run on the pool without an approval (open access)** during pool creation.
+Enable **Allow all pipelines to run on the pool without an approval (open access)** to have Managed DevOps Pools configure the **Open access** setting in Azure DevOps for when when creating the pool.
 
 > [!NOTE]
 > The **Allow all pipelines to run on the pool without an approval (open access)** setting can be configured by Managed DevOps Pools only when the pool is created. After the Managed DevOps Pool is created, you can view and configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
 
 #### [Azure portal](#tab/azure-portal/)
-
-> [!NOTE]
-> The [Open access](/azure/templates/microsoft.devopsinfrastructure/pools#organizationprofile-objects-1) setting is present in `api-version 2025-01-21` and higher.
 
 Enable **Allow all pipelines to run on the pool without an approval (open access)** to configure access to the Managed DevOps Pool from all pipelines in the designated projects.
 
@@ -203,6 +200,9 @@ If you enable **Use pool in multiple organizations**, you can specify **Open acc
 :::image type="content" source="./media/configure-security/open-access-multiple-organizations.png" alt-text="Screenshot of configuring open access for multiple organizations.":::
 
 #### [ARM template](#tab/arm/)
+
+> [!NOTE]
+> The [Open access](/azure/templates/microsoft.devopsinfrastructure/pools#organizationprofile-objects-1) setting is present when using `api-version 2025-01-21` and higher.
 
 Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource. The following example has two organizations configured.
 
@@ -237,7 +237,41 @@ Organizations are configured in the `organizationProfile` property of the Manage
 
 #### [Azure CLI](#tab/azure-cli/)
 
-TODO
+The `openAccess` setting is configured in the `organization-profile` parameter when [creating](/cli/azure/mdp/pool#az-mdp-pool-create) a pool.
+
+```azurecli
+az mdp pool create \
+   --organization-profile organization-profile.json
+   # other parameters omitted for space
+```
+
+The following `orgaization-profile` example has two organizations configured. 
+
+* The `fabrikam-tailspin` organization is configured with **Open access** on all projects.
+* The `fabrikam-prime` organization is configured for availibility with two projects, with **Open access** enabled, only on these two projects.
+
+```json
+{
+  "AzureDevOps":
+  {
+      "organizations": [
+        {
+            "url": "https://dev.azure.com/fabrikam-tailspin",
+            "projects": [],
+            "parallelism": 2
+        },
+        {
+            "url": "https://dev.azure.com/fabrikam-prime",
+            "projects": [ "fabrikam-dev", "fabrikam-test" ],
+            "parallelism": 2
+        }
+    ]
+  }
+}
+```
+
+> [!IMPORTANT]
+> **Open access** is configured only during Managed DevOps Pool creation. To change the Open access setting after pool creation (including adding or removing projects from your Managed DevOps Pool configuration), you must manually configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
 
 * * *
 
