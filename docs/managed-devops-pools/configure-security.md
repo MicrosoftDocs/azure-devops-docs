@@ -37,7 +37,7 @@ Organizations are configured in the `organizationProfile` property of the Manage
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
             ...
@@ -99,7 +99,7 @@ The `organizationProfile` section has the following properties.
 | Property | Description |
 |------|-------------|
 | `AzureDevOps` | This value is the name of the object defined in `organization-profile` and must be set to `Azure DevOps`. |
-| `organizations` | A list of the organizations that can use your pool. `url` specifies the URL of the organization, `projects` is a list of project names that can use the pool (an empty list supports all projects in the organization), and `parallelism` specifies the number of agents that can be used by this organization. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
+| `organizations` | A list of the organizations that can use your pool. `openAccess` specifies whether Managed DevOps Pools configures [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) for the pool during pool creation, `url` specifies the URL of the organization, `projects` is a list of project names that can use the pool (an empty list supports all projects in the organization), and `parallelism` specifies the number of agents that can be used by this organization. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
 | `permissionProfile` | Specify the permission granted to the Azure DevOps pool when it is created. This value can be set during pool creation only. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If `specificAccounts` is specified, provide a single email address or a list of email addresses for the `users` property; otherwise omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
 
 * * *
@@ -184,15 +184,56 @@ Azure DevOps provides a [Pipeline permissions](../pipelines/policies/permissions
 Managed DevOps Pools can configure the **Open access** setting on your behalf when creating the Managed DevOps Pool if you enable **Allow all pipelines to run on the pool without an approval (open access)** during pool creation.
 
 > [!NOTE]
-> The **Allow all pipelines to run on the pool without an approval (open access)** setting can be configured by Managed DevOps Pools only when the pool is created. After the Managed DevOps Pool is created, you can view and configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps.
+> The **Allow all pipelines to run on the pool without an approval (open access)** setting can be configured by Managed DevOps Pools only when the pool is created. After the Managed DevOps Pool is created, you can view and configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
 
 #### [Azure portal](#tab/azure-portal/)
 
+> [!NOTE]
+> The [Open access](/azure/templates/microsoft.devopsinfrastructure/pools#organizationprofile-objects-1) setting is present in `api-version 2025-01-21` and higher.
+
+Enable **Allow all pipelines to run on the pool without an approval (open access)** to configure access to the Managed DevOps Pool from all pipelines in the designated projects.
+
 :::image type="content" source="./media/configure-security/open-access.png" alt-text="Screenshot of configuring open access.":::
+
+* If **Add pool to all projects** is set to **Yes**, Managed DevOps Pools configures Open access for all pipelines in all projects.
+* If **Add pool to all projects** is set to **No**, Managed DevOps Pools configures Open access for all pipelines only in the listed projects.
+
+If you enable **Use pool in multiple organizations**, you can specify **Open access** individually for each organization.
+
+:::image type="content" source="./media/configure-security/open-access-multiple-organizations.png" alt-text="Screenshot of configuring open access for multiple organizations.":::
 
 #### [ARM template](#tab/arm/)
 
-TODO
+Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource. The following example has two organizations configured.
+
+* The `fabrikam-tailspin` organization is configured with **Open access** on all projects.
+* The `fabrikam-prime` organization is configured for availibility with two projects, with **Open access** enabled, only on these two projects.
+
+```json
+"organizationProfile": {
+    "organizations": [
+        {
+            "url": "https://dev.azure.com/fabrikam-tailspin",
+            "projects": [],
+            "openAccess": true,
+            "parallelism": 2
+        },
+        {
+            "url": "https://dev.azure.com/fabrikam-prime",
+            "projects": [ "fabrikam-dev", "fabrikam-test" ],
+            "openAccess": true,
+            "parallelism": 2
+        }
+    ],
+    "permissionProfile": {
+        "kind": "CreatorOnly"
+    },
+    "kind": "AzureDevOps"
+}
+```
+
+> [!IMPORTANT]
+> **Open access** is configured only during Managed DevOps Pool creation. To change the Open access setting after pool creation (including adding or removing projects from your Managed DevOps Pool configuration), you must manually configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
 
 #### [Azure CLI](#tab/azure-cli/)
 
@@ -225,7 +266,7 @@ Interactive mode is configured in the `osProfile` section of the `fabricProfile`
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
             ...
@@ -368,7 +409,7 @@ The `permissionProfile` property can be set during pool creation only. Allowed v
 Managed DevOps Pools offers the ability to fetch certificates from an Azure Key Vault during provisioning, which means the certificates will already exist on the machine by the time it runs your Azure DevOps pipelines. To use this feature, you must configure an [identity on your pool](configure-identity.md), and this identity must have **Key Vault Secrets User** permissions to fetch the secret from your Key Vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to Key Vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
 
 > [!NOTE]
-> As of `api-version 2024-10-19`, if you use this feature you can only use a single identity on the pool. Support for multiple identities will be added soon.
+> As of `api-version 2025-01-21`, if you use this feature you can only use a single identity on the pool. Support for multiple identities will be added soon.
 > 
 > Only one identity can be used to fetch secrets from the Key Vault.
 
@@ -393,7 +434,7 @@ Azure Key Vault is configured in the `osProfile` section of the `fabricProfile` 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
             ...
