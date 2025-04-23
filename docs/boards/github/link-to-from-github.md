@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: "<=azure-devops"
-ms.date: 10/02/2024
+ms.date: 04/23/2025
 ---
 
 # Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards
@@ -43,9 +43,9 @@ For example, `AB#125` links to work item ID 125.
 
 You can also enter a commit or pull request message to transition the work item. The system recognizes `{state}` or `{state category}`, along with `fix`, `fixes`, `fixed`, and applies it to the #-mention item that follows. 
 
-When a pull request description includes a valid state name (e.g., ``Validate AB#1234``), the system will update the referenced work item to that specific state. If the state name isn’t recognized directly, Azure Boards will try to match it to a workflow category like ``Resolved``. If a match is found, the work item transitions to the first available state defined under that category.
+When a pull request description includes a valid state name, for example, ``Validate AB#1234``, the system updates the referenced work item to that specific state. If the state name isn’t recognized directly, Azure Boards tries to match it to a workflow category like ``Resolved``. If a match is found, the work item transitions to the first available state defined under that category.
 
-By default, work items referenced with fix, fixes, or fixed will transition to the first state associated with the Resolved category. If no such state exists in the current process, the system will instead transition the work item to the first state in the Completed category.
+By default, work items referenced with "fix", "fixes", or "fixed" transitions to the first state associated with the Resolved category. If no such state exists in the current process, the system instead transitions the work item to the first state in the Completed category.
 
 For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
 
