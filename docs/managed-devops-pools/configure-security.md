@@ -175,15 +175,15 @@ Add additional organizations to the organizations list to configure your pool fo
 
 * * *
 
-## Allow all pipelines to run on the pool without an approval (open access)
+## Configure open access for pipelines to your pool
 
-By default, each pipeline definition must be explictly authorized to run in a self-hosted agent pool (like a Managed DevOps Pool) before it is run for the first time in that pool. 
+By default, every pipeline definition must be explictly authorized to run in a self-hosted agent pool (like a Managed DevOps Pool) before it is run for the first time in that pool. 
 
-Azure DevOps provides a [Pipeline permissions](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) project level agent pool setting  with the following two modes for authorizing pipelines.
+Azure DevOps provides a [Pipeline permissions](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) project level agent pool setting  with the following modes for authorizing pipelines.
 * **Authorize specific pipelines** - Individually authorize specific pipelines from an Azure DevOps project to run in the pool.
-* **Open access** - configure an agent pool at project level to be available for all pipelines in that project.
+* **Open access** - Configure an agent pool at project level to be available for all pipelines in that project.
 
-Enable **Allow all pipelines to run on the pool without an approval (open access)** to have Managed DevOps Pools configure the **Open access** agent pool setting in Azure DevOps when when creating the pool.
+Enable **Allow all pipelines to run on the pool without an approval (open access)** to configure the **Open access** agent pool setting in Azure DevOps when when creating the pool.
 
 > [!NOTE]
 > The **Allow all pipelines to run on the pool without an approval (open access)** setting can be configured by Managed DevOps Pools only when the pool is created. After the Managed DevOps Pool is created, you can view and configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
@@ -194,8 +194,8 @@ Enable **Allow all pipelines to run on the pool without an approval (open access
 
 :::image type="content" source="./media/configure-security/open-access.png" alt-text="Screenshot of configuring open access.":::
 
-* If **Add pool to all projects** is set to **Yes**, Managed DevOps Pools configures Open access for all pipelines in all projects.
-* If **Add pool to all projects** is set to **No**, Managed DevOps Pools configures Open access for all pipelines only in the listed projects.
+* If **Add pool to all projects** is set to **Yes**, Managed DevOps Pools configures [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) for all pipelines in all projects.
+* If **Add pool to all projects** is set to **No**, Managed DevOps Pools configures [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) for all pipelines only in the listed projects.
 
 If you enable **Use pool in multiple organizations**, you can specify **Open access** individually for each organization.
 
