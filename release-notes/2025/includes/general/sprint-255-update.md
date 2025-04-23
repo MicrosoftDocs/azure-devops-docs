@@ -10,7 +10,7 @@ ms.topic: include
 
 Azure DevOps extensions improve product functionality and workflows, but those with high privilege scopes may pose various risks.
 
-A new feature flags these scopes on each organization's admin page and the Visual Studio Marketplace installation page, helping administrators make informed decisions. Unpublished extensions and pipeline decorators are also flagged for administrator awareness and appropriate actions.
+We've added a new feature that flags these scopes on each organization's admin page and the Visual Studio Marketplace installation page, helping administrators make informed decisions. Unpublished extensions and pipeline decorators are also flagged for administrator awareness and appropriate actions.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of feedback box.](../../media/255-general-01.png "Screenshot of feedback box")](../../media/255-general-01.png#lightbox)
