@@ -19,7 +19,7 @@ The **About** page for Azure DevOps Services or Azure DevOps Server shows the pl
 
 ## Azure DevOps Services
 
-Look up the version number for Azure DevOps Server by following these steps:
+Look up the version number for Azure DevOps Services by following these steps:
 
 1. Open a browser window.
 
@@ -139,4 +139,4 @@ Removed 3/6/2024
 ## Related content
 
 * [Azure DevOps features timeline](/azure/devops/release-notes/features-timeline)
-* [Report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)
