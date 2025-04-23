@@ -25,10 +25,6 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-255-update-links](includes/boards/sprint-255-update-links.md)]
 
-### Azure Test Plans:
-
-[!INCLUDE [sprint-255-update-links](includes/testplans/sprint-255-update-links.md)]
-
 ## General
 
 [!INCLUDE [sprint-255-update](includes/general/sprint-255-update.md)]
@@ -40,10 +36,6 @@ Check out the release notes for details.
 ## Azure Boards
 
 [!INCLUDE [sprint-255-update](includes/boards/sprint-255-update.md)]
-
-## Azure Test Plans
-
-[!INCLUDE [sprint-255-update](includes/testplans/sprint-255-update.md)]
 
 ## Next steps
 

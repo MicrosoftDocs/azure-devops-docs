@@ -764,8 +764,6 @@
         items:
         - name: "2025"
           items:
-          - name: April 23
-            href: 2025/testplans/sprint-255-update.md
           - name: April 3
             href: 2025/testplans/sprint-254-update.md
           - name: March 20
