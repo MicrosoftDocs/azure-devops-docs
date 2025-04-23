@@ -39,7 +39,7 @@ To turn on the policy that restricts users from creating new organizations, do t
    :::image type="content" source="media/azure-ad-tenant-policy/restrict-organization-creation-toggle.png" alt-text="Screenshot shows highlighted toggle for Restrict organization creation.":::
 
    > [!IMPORTANT]
-   > If you don't see the **Restric organization creation** policy toggle, check your role in the Azure Portal. For more information, see the [Prerequisites](#prerequisites).
+   > If you don't see the **Restric organization creation** policy toggle, check your role in the Azure portal. For more information, see the [Prerequisites](#prerequisites).
 
 ## Optional
 
