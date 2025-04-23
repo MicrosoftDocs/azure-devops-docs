@@ -76,6 +76,7 @@ If the issue isn't apparent from the pipeline run summary page or browsing the l
 
 ## Common issues
 
+* [This pipeline needs permission to access a resource before this run can continue](#this-pipeline-needs-permission-to-access-a-resource-before-this-run-can-continue)
 * [Job time-out](#job-time-out)
 * [Issues downloading code](#issues-downloading-code)
 * [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
@@ -109,6 +110,21 @@ Azure DevOps includes build-in notifications for failed pipeline runs. To enable
 :::image type="content" source="media/notification-settings.png" alt-text="Screenshot of notifications in project settings.":::
 
 :::moniker-end
+
+### This pipeline needs permission to access a resource before this run can continue
+
+If your pipeline doesn't seem to start, or you receive an error message like `This pipeline needs permission to access a resource before this run can continue`, check to see if the pipeline is waiting for an authrization to run by a resource, like a service connection or agent pool.
+
+1. [Go to the pipeline](../create-first-pipeline.md#view-and-manage-your-pipelines) and manually start a run.
+1. The message **This pipeline needs permission to access a resource before this run can continue** appears. Select **View** next to the message.
+1. On the **Waiting for review** screen, select **Permit**, and on the confirmation screen, select **Permit** again.
+
+This action explictly adds the pipeline as an authorized user of the resource.
+
+Some resources allow you to configure **Open access** so that each new pipeline definition doesn't require explicit authorization.
+
+* To configure **Open access** for agent pools, see [Set pipeline permissions for an individual agent pool](../policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) and [Pipeline permissions](../agents/pools-queues.md#pipeline-permissions).
+* To review whether **Open access** is available for other [resource types](../process/resources.md#resource-authorization-in-yaml-pipelines), see [Manage security in Azure Pipelines](../policies/permissions.md) and search for **Open access**.
 
 ### Job time-out
 
