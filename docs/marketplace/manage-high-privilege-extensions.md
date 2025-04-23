@@ -77,7 +77,7 @@ When you select any extension and especially an extension with high privilege sc
 
 ## Discontinue use of unpublished extensions
 
-Further than the high privilege extensions, in the extension's administration page, extensions are visually marked to show whether they're unpublished by their publishers.
+Beyond high privilege extensions, the extension's administration page visually indicates whether an extension has been unpublished by its publisher.
 
 When an extension is unpublished from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) by its publisher, it typically signifies that the extension is no longer maintained.
 
