@@ -7152,11 +7152,11 @@
     },
     {
       "source_path": "docs/boards/backlogs/office/resolve-excel-data-validation-errors.md",
-      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues.md#resolve-data-validation-errors-that-occur-when-you-publish-from-Excel"
+      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues#resolve-data-validation-errors-that-occur-when-you-publish-from-Excel"
     },
     {
       "source_path": "docs/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh.md",
-      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues#Resolve-data-conflicts-when-you-publish-or-refresh-Excel-data"
+      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues#resolve-data-conflicts-when-you-publish-or-refresh-Excel-data"
     },
     {
       "source_path": "docs/extend/extension-report.md",
