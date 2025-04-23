@@ -147,7 +147,9 @@ After you change the manifest, deploy and install this debugging extension only 
 
 ## Make your extension public
 
-While you develop your extension or integration for the Marketplace, keep it private. To make your extension available publicly, set the [public flag](../develop/manifest.md#public-flag) to `true` in your manifest.
+While you develop your extension or integration for the Marketplace, keep it private. This limits the visibility of the extension to specific accounts that you have shared it with.
+
+To make your extension available publicly, set the [public flag](../develop/manifest.md#public-flag) to `true` in your manifest.
 
 ### Qualifications
 
