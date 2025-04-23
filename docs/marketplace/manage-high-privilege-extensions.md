@@ -100,7 +100,7 @@ By using this field, you can build your own process of detecting and managing un
 
 ## Related articles
 
-- [Secure your Azure DevOps environment](../organizations/security/security-overview.md)
+- [Make your Azure DevOps secure](../organizations/security/security-overview.md)
 - [Publish extensions to the Visual Studio Marketplace](../extend/publish/overview.md)
 - [Add pipeline decorators](../extend/develop/add-pipeline-decorator.md)
 - [Reference the extension manifest](../extend/develop/manifest.md)
