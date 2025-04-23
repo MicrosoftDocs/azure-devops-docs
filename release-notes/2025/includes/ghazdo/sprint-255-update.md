@@ -11,12 +11,13 @@ Previously, Advanced Security rejected SARIF files that contained results with U
 
 To enable this feature, set the pipeline variable `advancedsecurity.publish.allowmissingpartialfingerprints`.  
 
+```
 trigger: none
 
 variables:
   advancedsecurity.publish.allowmissingpartialfingerprints: true
 
-```
+
 jobs:
   - job: "AdvancedSecurityPublish"
     displayName: "🛡 Publish ZAP SARIF"
