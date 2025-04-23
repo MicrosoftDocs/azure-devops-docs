@@ -166,7 +166,7 @@ These tools offer robust capabilities for monitoring, analyzing, and reporting o
 
 ## Pricing models
 
-The **cloud offering**, Azure DevOps Services, and the **on-premises offering** Azure DevOps Server, are available in different pricing models. For more information, review the following articles:
+The **cloud offering**, Azure DevOps Services, and the **on-premises offering**, Azure DevOps Server, are available in different pricing models. For more information, review the following articles:
 
 - [Pricing for Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/)
