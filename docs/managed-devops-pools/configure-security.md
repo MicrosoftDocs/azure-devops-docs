@@ -179,9 +179,11 @@ Add additional organizations to the organizations list to configure your pool fo
 
 By default, each pipeline definition must be explictly authorized to run in a self-hosted agent pool (like a Managed DevOps Pool) before it is run for the first time in that pool. 
 
-Azure DevOps provides a [Pipeline permissions](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) project level agent pool setting to authorize specific pipelines from that project to run in that pool, or to configure the pool for **Open access** to be available for all pipelines in that project.
+Azure DevOps provides a [Pipeline permissions](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) project level agent pool setting  with the following two modes for authorizing pipelines.
+* **Authorize specific pipelines** - Individually authorize specific pipelines from an Azure DevOps project to run in the pool.
+* **Open access** - configure an agent pool at project level to be available for all pipelines in that project.
 
-Enable **Allow all pipelines to run on the pool without an approval (open access)** to have Managed DevOps Pools configure the **Open access** setting in Azure DevOps for when when creating the pool.
+Enable **Allow all pipelines to run on the pool without an approval (open access)** to have Managed DevOps Pools configure the **Open access** agent pool setting in Azure DevOps when when creating the pool.
 
 > [!NOTE]
 > The **Allow all pipelines to run on the pool without an approval (open access)** setting can be configured by Managed DevOps Pools only when the pool is created. After the Managed DevOps Pool is created, you can view and configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
@@ -207,7 +209,7 @@ If you enable **Use pool in multiple organizations**, you can specify **Open acc
 Organizations are configured in the `organizationProfile` property of the Managed DevOps Pools resource. The following example has two organizations configured.
 
 * The `fabrikam-tailspin` organization is configured with **Open access** on all projects.
-* The `fabrikam-prime` organization is configured for availibility with two projects, with **Open access** enabled, only on these two projects.
+* The `fabrikam-prime` organization is configured for availibility with two projects, with **Open access** enabled only on these two projects.
 
 ```json
 "organizationProfile": {
@@ -233,7 +235,7 @@ Organizations are configured in the `organizationProfile` property of the Manage
 ```
 
 > [!IMPORTANT]
-> **Open access** is configured only during Managed DevOps Pool creation. To change the Open access setting after pool creation (including adding or removing projects from your Managed DevOps Pool configuration), you must manually configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
+> **Open access** is configured only during Managed DevOps Pool creation. To change the [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) setting after pool creation (including adding or removing projects from your Managed DevOps Pool configuration), you must manually configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
 
 #### [Azure CLI](#tab/azure-cli/)
 
@@ -248,7 +250,7 @@ az mdp pool create \
 The following `orgaization-profile` example has two organizations configured. 
 
 * The `fabrikam-tailspin` organization is configured with **Open access** on all projects.
-* The `fabrikam-prime` organization is configured for availibility with two projects, with **Open access** enabled, only on these two projects.
+* The `fabrikam-prime` organization is configured for availibility with two projects, with **Open access** enabled only on these two projects.
 
 ```json
 {
@@ -275,7 +277,7 @@ The following `orgaization-profile` example has two organizations configured.
 
 * * *
 
-If you try to run a pipeline that is not authorized to access your agent pool, you'll receive an error similar to `This pipeline needs permission to access a resource before this run can continue`. There are two ways to explictly authorize a pipeline to run in a pool (in addition to confguring **Open access**).
+If you try to run a pipeline that is not authorized to access your agent pool, you'll receive an error similar to `This pipeline needs permission to access a resource before this run can continue`. There are two ways to explictly authorize a pipeline to run in a pool (in addition to configuring **Open access**).
 
 * You can go to the **Security** settings for the agent pool in your Azure DevOps organization and add the pipeline in [Pipeline permissions](../pipelines/agents/pools-queues.md#pipeline-permissions).
 * If you don't add the pipeline, you will be [prompted in Azure DevOps the first time you run the pipeline](../pipelines/troubleshooting/troubleshooting.md#this-pipeline-needs-permission-to-access-a-resource-before-this-run-can-continue). When you authorize the pipeline, it will be added to the **Pipeline permissions** list.
