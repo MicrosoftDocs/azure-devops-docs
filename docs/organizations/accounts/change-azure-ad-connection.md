@@ -78,6 +78,7 @@ If you [add any new custom domains](/azure/active-directory/fundamentals/add-cus
 
 ## Related articles
 
+- [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
 - [Rename a project](../projects/rename-project.md)
 - [Rename an organization](rename-organization.md)
 - [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
