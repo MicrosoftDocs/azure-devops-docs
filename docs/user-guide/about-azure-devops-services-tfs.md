@@ -134,12 +134,13 @@ Azure DevOps Services uses the **Inheritance** process model, which supports WYS
 
 With Azure DevOps Server, you can choose between the **Inheritance** process model and the **On-premises XML** process model.
 
-- The **Inheritance process model** supports WYSIWYG customization, which allows you to easily customize work item types, states, and fields directly through the user interface. This approach simplifies the customization process and ensures that changes are immediately reflected in your projects.
+The **Inheritance process model** supports WYSIWYG customization, which allows you to easily customize work item types, states, and fields directly through the user interface. This approach simplifies the customization process and ensures that changes are immediately reflected in your projects.
 
-- The **On-premises XML process model** supports customization through the import or export of XML definition files for work-tracking objects. It provides a powerful and flexible way to define and manage your processes. However, it can cause various issues, such as:
-   - Processes for existing projects aren't automatically updated, requiring manual intervention to apply changes.
-   - The complexity of managing XML files can lead to errors and inconsistencies.
-   - It might be challenging to maintain and troubleshoot customizations, especially in large or complex environments.
+The **On-premises XML process model** supports customization through the import or export of XML definition files for work-tracking objects. It provides a powerful and flexible way to define and manage your processes. However, it can cause various issues, such as:
+
+- Processes for existing projects aren't automatically updated, requiring manual intervention to apply changes.
+- The complexity of managing XML files can lead to errors and inconsistencies.
+- It might be challenging to maintain and troubleshoot customizations, especially in large or complex environments.
 
 To help you avoid issues, custom process templates and the _witadmin.exe_ tool are always disabled. This approach ensures that all projects are automatically updated with each Azure DevOps Services upgrade.
 
@@ -165,7 +166,7 @@ These tools offer robust capabilities for monitoring, analyzing, and reporting o
 
 ## Pricing models
 
-The **cloud offering**, Azure DevOps Services, and the **on-premises offering**Azure DevOps Server, are available in different pricing models. For more information, review the following articles:
+The **cloud offering**, Azure DevOps Services, and the **on-premises offering** Azure DevOps Server, are available in different pricing models. For more information, review the following articles:
 
 - [Pricing for Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/)
