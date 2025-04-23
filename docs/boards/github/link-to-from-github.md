@@ -41,13 +41,20 @@ AB#{ID}
 
 For example, `AB#125` links to work item ID 125.
 
-You can also enter a commit or pull request message to transition the work item. The system recognizes `fix`, `fixes`, and `fixed`, and applies it to the #-mention item that follows. Mentioned work items transition to the first **State** associated with the *Resolved* workflow category state. If no **State** is associated with *Resolved*, the work item transitions to the **State** associated with the *Completed* workflow category state. For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
+You can also enter a commit or pull request message to transition the work item. The system recognizes `{state}` or `{state category}`, along with `fix`, `fixes`, `fixed`, and applies it to the #-mention item that follows. 
+
+When a pull request description includes a valid state name (e.g., ``Validate AB#1234``), the system will update the referenced work item to that specific state. If the state name isn’t recognized directly, Azure Boards will try to match it to a workflow category like ``Resolved``. If a match is found, the work item transitions to the first available state defined under that category.
+
+By default, work items referenced with fix, fixes, or fixed will transition to the first state associated with the Resolved category. If no such state exists in the current process, the system will instead transition the work item to the first state in the Completed category.
+
+For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
 
 Review the following table of examples:
 
 | Commit or pull request message              | Action |
 | :------------------------------------------ | :----------------------------------------------- |
 | `Fixed AB#123`                              | Links and transitions the work item to the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
+| `Closed AB#123`                             | Links and transitions the work item to the *Closed* workflow state. If none is defined, no transitions are made. 
 | `Adds a new feature, fixes AB#123.`         | Links and transitions the work item to  the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
 | `Fixes AB#123, AB#124, and AB#126`          | Links to Azure Boards work items 123, 124, and 126. Transitions only the first item, 123 to the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category.|
 | `Fixes AB#123, Fixes AB#124, Fixes AB#125` | Links to Azure Boards work items 123, 124, and 126. Transitions all items to   either the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
