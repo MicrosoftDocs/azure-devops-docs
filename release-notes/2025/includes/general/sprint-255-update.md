@@ -15,4 +15,4 @@ A new feature flags these scopes on each organization's admin page and the Visua
 > [!div class="mx-imgBorder"]
 > [![Screenshot of feedback box.](../../media/255-general-01.png "Screenshot of feedback box")](../../media/255-general-01.png#lightbox)
 
-For more information  vsit the [documentation](https://learn.microsoft.com/azure/devops/marketplace/manage-high-privilege-extensions?view=azure-devops) page.
+For more information  visit the [documentation](https://learn.microsoft.com/azure/devops/marketplace/manage-high-privilege-extensions?view=azure-devops) page.
