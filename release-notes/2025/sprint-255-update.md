@@ -5,7 +5,7 @@ ms.author: ckanyika
 ms.date: 4/23/2025
 description: Expanded security scanning and GitHub pull request integration with Azure Boards
 ---
-# Expanded security scanning and enhanced GitHub pull request integration with Azure Boards
+# Expanded security scanning and state transition support for GitHub pull requests
 
 We’re expanding support in GitHub Advanced Security to include results with URI locations, providing broader coverage from container and dynamic scanning tools.
 
