@@ -19,7 +19,7 @@ Follow these steps to connect to an Analytics view:
 
 1. Select **Connect**.
 
-   :::image type="content" source="../powerbi/media/powerbi-successful-organizational-signin.png" alt-text="Screenshot that shows the Power BI Connection dialog, with the You are currently signed in message and the Connect button highlighted.":::
+   :::image type="content" source="../powerbi/media/powerbi-successful-organizational-signin.png" alt-text="Screenshot that shows the Power BI Connection dialog, with a message about being signed in and the Connect button highlighted.":::
 
 1. Select **Get Data** > **Online Services**, and then select **Azure DevOps (Boards only)** for cloud services or **Azure DevOps Server (Boards only)** for an on-premises server. Select **Connect**. Analytics views support queries only against work items and test cases.
 
