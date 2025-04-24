@@ -38,9 +38,22 @@ To get started with client libraries, see [Client library samples](../integrate/
 
 Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio to projects defined in Azure DevOps. You can manage source code, work items, and builds. Team Explorer supports using Git and Team Foundation Version Control (TFVC) for source control. For more information, see [Work in Team Explorer](work-team-explorer.md).
 
-|Home page with Git |Home page with TFVC |
-|-------------------|--------------------|
-|:::image type="content" source="../organizations/projects/media/te-home-page-git-repo.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control." lightbox="../organizations/projects/media/te-home-page-git-repo.png"::: | :::image type="content" source="../organizations/projects/media/te-home-page-tfvc-repo.png" border="false" alt-text="Screenshot of the Team Explorer home page showing TFVC as the form of source control." lightbox="../organizations/projects/media/te-home-page-tfvc-repo.png"::: |
+:::row:::
+:::column span="":::
+
+**Home page with Git**
+
+:::image type="content" source="../organizations/projects/media/te-home-page-git-repo.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control." lightbox="../organizations/projects/media/te-home-page-git-repo.png":::
+
+:::column-end:::
+:::column span="":::
+
+**Home page with TFVC**
+
+:::image type="content" source="../organizations/projects/media/te-home-page-tfvc-repo.png" border="false" alt-text="Screenshot of the Team Explorer home page showing TFVC as the form of source control." lightbox="../organizations/projects/media/te-home-page-tfvc-repo.png":::
+
+:::column-end:::
+:::row-end:::
 
 ### Visual Studio Git experience 
 
@@ -93,7 +106,7 @@ For more information, see [Web portal navigation](../project/navigation/index.md
 The Azure DevOps Services product team maintains the following built-in extensions:
 
 - [**Code search**](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing. Enable developers to quickly locate relevant information within the code base of all projects hosted within an organization or collection. Discover implementation examples, browsing definitions, and error text.
-- [**Work item search]**(https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items and search across all work item fields over all projects in an organization. Run full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, and quickly narrow down a list of work items.  
+- [**Work item search**](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items and search across all work item fields over all projects in an organization. Run full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, and quickly narrow down a list of work items.  
   
 You can find more extensions in Azure DevOps under **Organization settings** > **Extensions** > **Browse marketplace**. For more information, see [About migrating and integrating work tracking data](../boards/extensions/migrate-integrate.md).
 
