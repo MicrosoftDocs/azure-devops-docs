@@ -129,6 +129,9 @@ For a list of error codes, see the following [Error codes](#error-codes) section
 | `SkuNotAvailable` | The requested VM size for resource 'Following SKUs failed for Capacity Restrictions:' is currently not available in location. Try another size or deploy to a different location or different zone. See `https://aka.ms/azureskunotavailable` for details. |
 | `TaskCanceled` | The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing. |
 | `VirtualNetworkIsNotFound` | The Virtual Network might be deleted. |
+| `WorkerSetupFailed`, `UnableToDownloadWorkerCheckNetwork`, `UnableToDownloadWorkerCheckNetwork[<endpoint>]`  | The Network infrastructure is blocking access to one of the prerequiste endpoints. `https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-networking#restricting-outbound-connectivity`. |
+| `UnableToDownloadWorkerCheckNetwork_TLSIssue` | TLS Handshake failed when contacting prerequisite endpoints. `https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-networking#restricting-outbound-connectivity`. |
+
 
 ## See also
 
