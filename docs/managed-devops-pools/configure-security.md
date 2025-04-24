@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 04/23/2025
+ms.date: 04/24/2025
 ---
 
 # Configure Managed DevOps Pools security settings
@@ -179,8 +179,9 @@ Add additional organizations to the organizations list to configure your pool fo
 
 By default, every pipeline definition must be explictly authorized to run in a self-hosted agent pool (like a Managed DevOps Pool) before it is run for the first time in that pool. 
 
-Azure DevOps provides a [Pipeline permissions](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) project level agent pool setting  with the following modes for authorizing pipelines.
-* **Authorize specific pipelines** - Individually authorize specific pipelines from an Azure DevOps project to run in the pool.
+Azure DevOps provides the following modes for authorizing pipelines to run in an agent pool.
+
+* **Authorize specific pipelines** - Individually authorize specific pipelines from an Azure DevOps project to run in the pool. This method is the default.
 * **Open access** - Configure an agent pool at project level to be available for all pipelines in that project.
 
 Enable **Allow all pipelines to run on the pool without an approval (open access)** to configure the **Open access** agent pool setting in Azure DevOps when when creating the pool.
@@ -277,10 +278,7 @@ The following `orgaization-profile` example has two organizations configured.
 
 * * *
 
-If you try to run a pipeline that is not authorized to access your agent pool, you'll receive an error similar to `This pipeline needs permission to access a resource before this run can continue`. There are two ways to explictly authorize a pipeline to run in a pool (in addition to configuring **Open access**).
-
-* You can go to the **Security** settings for the agent pool in your Azure DevOps organization and add the pipeline in [Pipeline permissions](../pipelines/agents/pools-queues.md#pipeline-permissions).
-* If you don't add the pipeline, you will be [prompted in Azure DevOps the first time you run the pipeline](../pipelines/troubleshooting/troubleshooting.md#this-pipeline-needs-permission-to-access-a-resource-before-this-run-can-continue). When you authorize the pipeline, it will be added to the **Pipeline permissions** list.
+If you try to run a pipeline that is not authorized to access your agent pool, you'll receive an error similar to `This pipeline needs permission to access a resource before this run can continue`. You can resolve this issue either by configuring open access, as described in the previous section, or by [explictly authorizing the pipeline to run in the agent pool](../pipelines/troubleshooting/troubleshooting.md#this-pipeline-needs-permission-to-access-a-resource-before-this-run-can-continue).
 
 ## Configure interactive mode
 
