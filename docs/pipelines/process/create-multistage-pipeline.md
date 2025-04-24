@@ -131,7 +131,7 @@ Your build pipeline:
       - job: 'Build'
         displayName: 'Build job'
         pool:
-          vmImage: 'ubuntu-20.04'
+          vmImage: 'ubuntu-22.04'
           demands:
           - npm
     
@@ -239,7 +239,7 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
       - job: 'Build'
         displayName: 'Build job'
         pool:
-          vmImage: 'ubuntu-20.04'
+          vmImage: 'ubuntu-22.04'
           demands:
           - npm
     
@@ -300,7 +300,7 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
       jobs:
       - deployment: Deploy
         pool:
-          vmImage: 'ubuntu-20.04'
+          vmImage: 'ubuntu-22.04'
         environment: dev
         variables:
         - group: Release
@@ -381,7 +381,7 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
       - job: 'Build'
         displayName: 'Build job'
         pool:
-          vmImage: 'ubuntu-20.04'
+          vmImage: 'ubuntu-22.04'
           demands:
           - npm
     
@@ -442,7 +442,7 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
       jobs:
       - deployment: Deploy
         pool:
-          vmImage: 'ubuntu-20.04'
+          vmImage: 'ubuntu-22.04'
         environment: dev
         variables:
         - group: Release
@@ -466,7 +466,7 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
       jobs:
       - deployment: Deploy
         pool:
-          vmImage: 'ubuntu-20.04'
+          vmImage: 'ubuntu-22.04'
         environment: staging
         variables:
         - group: 'Release'
