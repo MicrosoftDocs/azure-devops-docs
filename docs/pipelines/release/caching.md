@@ -31,6 +31,16 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 > [!NOTE]
 > Pipeline caching and pipeline artifacts are available at no cost for all tiers (free and paid). See [Artifacts storage consumption](../../artifacts/artifact-storage.md) for more details.
 
+## self-hosted agent requirements
+
+The following executables must be located in a folder listed in the `PATH` environment variable. Note that these requirements apply only to self-hosted agents, as hosted agents come pre-installed with the necessary software.
+
+| Archive software / Platform | Windows     | Linux    | Mac      |
+|-----------------------------|------------ |--------- |----------|
+|GNU Tar                      | Required    | Required | No       |
+|BSD Tar                      | No          | No       | Required |
+|7-Zip                        | Recommended | No       | No       |
+
 ## Cache task: How it works
 
 Caching is added to a pipeline by adding the the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) to the `steps` section of a job.
