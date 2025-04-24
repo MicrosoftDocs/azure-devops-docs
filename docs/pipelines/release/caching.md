@@ -31,9 +31,9 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 > [!NOTE]
 > Pipeline caching and pipeline artifacts are available at no cost for all tiers (free and paid). See [Artifacts storage consumption](../../artifacts/artifact-storage.md) for more details.
 
-## self-hosted agent requirements
+## Self-hosted agent requirements
 
-The following executables must be located in a folder listed in the `PATH` environment variable. Note that these requirements apply only to self-hosted agents, as hosted agents come pre-installed with the necessary software.
+The following executables must be located in a folder listed in the `PATH` environment variable. Note that these requirements apply only to self-hosted agents, as hosted agents come preinstalled with the necessary software.
 
 | Archive software / Platform | Windows     | Linux    | Mac      |
 |-----------------------------|------------ |--------- |----------|
@@ -43,7 +43,7 @@ The following executables must be located in a folder listed in the `PATH` envir
 
 ## Cache task: How it works
 
-Caching is added to a pipeline by adding the the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) to the `steps` section of a job.
+Caching is added to a pipeline by adding the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) to the `steps` section of a job.
 
 During pipeline execution, when a cache step is encountered, the task attempts to restore the cache based on the provided inputs. If no cache is found, the step completes, and the next step in the job is executed.
 
@@ -67,7 +67,7 @@ The [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) has two requi
     A fixed value (such as the cache name or a tool name), or taken from an environment variable (like the current OS or job name).
     
     - **File paths**: <br>
-    The path to a specific file whose contents will be hashed. The file must exist at the time the task is run. Any segment that resembles a file path will be treated as such, so be cautious, especially when using segments containing `.`, as this may lead to "file doesn't exist" failures. 
+    The path to a specific file whose contents will be hashed. The file must exist at the time the task is run. Any segment that resembles a file path is treated as such, so be cautious, especially when using segments containing `.`, as this may lead to "file doesn't exist" failures. 
 
       > [!TIP]
       > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
@@ -113,7 +113,7 @@ If you're not using `checkout: self`, ensure you update the `YARN_CACHE_FOLDER` 
 
 ### Use restore keys
 
-`restoreKeys` allows you to query multiple exact keys or key prefixes. It is used as a fallback when the specified `key` doesn't yield a hit. A restore key searches for a key by prefix and returns the most recently created cache entry. This is helpful when the pipeline cannot find an exact match but still wants to use a partial cache hit.
+`restoreKeys` allows you to query multiple exact keys or key prefixes. It's used as a fallback when the specified `key` doesn't yield a hit. A restore key searches for a key by prefix and returns the most recently created cache entry. This is helpful when the pipeline cannot find an exact match but still wants to use a partial cache hit.
 
 To specify multiple restore keys, list them on separate lines. The order in which the restore keys are tried is from top to bottom.
 
@@ -142,10 +142,10 @@ In this example, the cache task first attempts to restore the specified key. If 
 
 A prefix match can occur if the hash of the `yarn.lock` file has changed. For example, if the cache contains the key `yarn | $(Agent.OS) | old-yarn.lock` (where `old-yarn.lock` has a different hash than the current `yarn.lock`), this restore key would result in a partial cache hit.
 
-If the first restore key doesn't yield a match, the next restore key (`yarn`) This will search for any cache key that starts with `yarn`. For prefix matches, the restore process will return the most recently created cache entry.
+If the first restore key doesn't yield a match, the next restore key (`yarn`) This will search for any cache key that starts with `yarn`. For prefix matches, the restore process returns the most recently created cache entry.
 
 > [!NOTE]
-> A pipeline can include multiple caching tasks, and there is no storage limit for caching. Jobs and tasks within the same pipeline can access and share the same cache.
+> A pipeline can include multiple caching tasks, and there's no storage limit for caching. Jobs and tasks within the same pipeline can access and share the same cache.
 
 ## Use restore condition
 
@@ -231,7 +231,7 @@ steps:
       gems   
 ```
 
-### [Ccache (C/C++)](#tab/ccache)
+### [Ccache](#tab/ccache)
 
 [Ccache](https://ccache.dev/) is a compiler cache for C/C++. To use Ccache in your pipeline make sure `Ccache` is installed, and optionally added to your `PATH` (see [Ccache run modes](https://ccache.dev/manual/3.7.1.html#_run_modes)). Set the `CCACHE_DIR` environment variable to a path under `$(Pipeline.Workspace)` and cache this directory.
 
@@ -324,7 +324,7 @@ steps:
           DOCKER_BUILDKIT: 1
     ```
 
-### [Golang](#tab/golang)
+### [Go](#tab/golang)
 
 For Golang projects, you can specify the packages to be downloaded in the *go.mod* file. If your `GOCACHE` variable isn't already set, set it to where you want the cache to be downloaded.
 
