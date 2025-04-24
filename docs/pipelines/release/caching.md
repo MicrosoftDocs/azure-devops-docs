@@ -200,9 +200,9 @@ When a cache step is encountered during a run, the cache identified by the key i
 > [!TIP]
 > Because caches are already scoped to a project, pipeline, and branch, there's no need to include any project, pipeline, or branch identifiers in the cache key.
 
-## Bundler
+### [Bundler](#tab/bundler)
 
-For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v2.3/man/bundle-config.1.html) looks for Gems in.
+For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable to set the [path](https://bundler.io/v2.3/man/bundle-config.1.html) where Bundler looks for Gems.
 
 **Example**:
 
@@ -221,7 +221,7 @@ steps:
       gems   
 ```
 
-## Ccache (C/C++)
+### [Ccache (C/C++)](#tab/ccache)
 
 [Ccache](https://ccache.dev/) is a compiler cache for C/C++. To use Ccache in your pipeline make sure `Ccache` is installed, and optionally added to your `PATH` (see [Ccache run modes](https://ccache.dev/manual/3.7.1.html#_run_modes)). Set the `CCACHE_DIR` environment variable to a path under `$(Pipeline.Workspace)` and cache this directory.
 
@@ -248,9 +248,9 @@ steps:
 
 See [Ccache configuration settings](https://ccache.dev/manual/latest.html#_configuration_settings) for more details.
 
-## Docker images
+### [Docker](#tab/docker)
 
-Caching Docker images dramatically reduces the time it takes to run your pipeline.
+Caching Docker images can significantly reduce the time it takes to run your pipeline.
 
 ```yaml
 variables:
@@ -314,7 +314,7 @@ steps:
           DOCKER_BUILDKIT: 1
     ```
 
-## Golang
+### [Golang](#tab/golang)
 
 For Golang projects, you can specify the packages to be downloaded in the *go.mod* file. If your `GOCACHE` variable isn't already set, set it to where you want the cache to be downloaded.
 
@@ -335,7 +335,7 @@ steps:
 
 ```
 
-## Gradle
+### [Gradle](#tab/gradle)
 
 Using Gradle's [built-in caching support](https://docs.gradle.org/current/userguide/build_cache.html) can have a significant impact on build time. To enable the build cache, set the `GRADLE_USER_HOME` environment variable to a path under `$(Pipeline.Workspace)` and either run your build with `--build-cache` or add `org.gradle.caching=true` to your `gradle.properties` file.
 
@@ -349,7 +349,7 @@ steps:
 - task: Cache@2
   inputs:
     key: 'gradle | "$(Agent.OS)" | **/build.gradle.kts' # Swap build.gradle.kts for build.gradle when using Groovy
-    restoreKeys: |
+    restoreKeys: |                                      # The fallback keys if the primary key fails (Optional)
       gradle | "$(Agent.OS)"
       gradle
     path: $(GRADLE_USER_HOME)
@@ -368,14 +368,12 @@ steps:
   displayName: Gradlew stop
 ```
 
-- **restoreKeys**: The fallback keys if the primary key fails (Optional)
-
 > [!NOTE]
-> Caches are immutable, once a cache with a particular key is created for a specific scope (branch), the cache can't be updated. This means that if the key is a fixed value, all subsequent builds for the same branch won't be able to update the cache even if the cache's contents have changed. If you want to use a fixed key value, you must use the `restoreKeys` argument as a fallback option.
+> Caches are immutable. Once a cache with a particular key is created for a specific scope (such as a branch), it can't be updated. This means that if you use a fixed key value, all subsequent builds for the same branch won't be able to update the cache—even if the cache contents have changed. If you use a fixed key, be sure to specify the `restoreKeys` input as a fallback option.
 
-## Maven
+### [Maven](#tab/maven)
 
-Maven has a local repository where it stores downloads and built artifacts. To enable, set the `maven.repo.local` option to a path under `$(Pipeline.Workspace)` and cache this folder.
+Maven uses a local repository to store downloaded dependencies and built artifacts. To enable caching, set the `maven.repo.local` option to a path under `$(Pipeline.Workspace)` and cache this folder.
 
 **Example**:
 
@@ -406,10 +404,11 @@ If you're using a [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3)
     mavenOptions: '-Xmx3072m $(MAVEN_OPTS)'
 ```
 
-## .NET/NuGet
+### [.NET/NuGet](#tab/nuget)
 
 If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have a `packages.lock.json` file, you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory. See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to lock dependencies.
-If you want to use multiple packages.lock.json, you can still use the following example without making any changes. The content of all the packages.lock.json files will be hashed and if one of the files is changed, a new cache key is generated.
+
+If you want to use multiple *packages.lock.json*, you can still use the following example without making any changes. The content of all the *packages.lock.json* files will be hashed and if one of the files is changed, a new cache key is generated.
 
 **Example**:
 
@@ -430,11 +429,11 @@ steps:
 
 This approach is also valid for .NET Core projects if your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your *Csproj* file, or by using the following command: `dotnet restore --use-lock-file`.
 
-## Node.js/npm
+### [Npm](#tab/npm)
 
-There are different ways to enable caching in a Node.js project, but the recommended way is to cache npm's [shared cache directory](https://docs.npmjs.com/misc/config#cache). This directory is managed by npm and contains a cached version of all downloaded modules. During install, npm checks this directory first (by default) for modules that can reduce or eliminate network calls to the public npm registry or to a private registry.
+There are different ways to enable caching in a Node.js project, but the recommended approach is to cache npm's [shared cache directory](https://docs.npmjs.com/misc/config#cache). This directory is managed by npm and contains a cached version of all downloaded modules. During installation, npm checks this directory first (by default), which can reduce or eliminate network calls to the public npm registry or a private registry.
 
-Because the default path to npm's shared cache directory is [not the same across all platforms](https://docs.npmjs.com/misc/config#cache), it's recommended to override the `npm_config_cache` environment variable to a path under `$(Pipeline.Workspace)`. This also ensures the cache is accessible from container and noncontainer jobs.
+Because the default path to npm's shared cache directory [varies across platforms](https://docs.npmjs.com/misc/config#cache), it's recommended to override the `npm_config_cache` environment variable and set it to a path under `$(Pipeline.Workspace)`. This also ensures the cache is accessible from both container and noncontainer jobs.
 
 **Example**:
 
@@ -457,11 +456,11 @@ steps:
 If your project doesn't have a `package-lock.json` file, reference the `package.json` file in the cache key input instead.
 
 > [!TIP]
-> Because `npm ci` deletes the `node_modules` folder to ensure that a consistent, repeatable set of modules is used, you should avoid caching `node_modules` when calling `npm ci`.
+> Since `npm ci` deletes the `node_modules` folder to ensure a consistent and repeatable set of modules, avoid caching `node_modules` when using `npm ci`.
 
-## Node.js/Yarn
+### [Yarn](#tab/yarn)
 
-Like with npm, there are different ways to cache packages installed with Yarn. The recommended way is to cache Yarn's [shared cache folder](https://yarnpkg.com/lang/en/docs/cli/cache/). This directory is managed by Yarn and contains a cached version of all downloaded packages. During install, Yarn checks this directory first (by default) for modules, which can reduce or eliminate network calls to public or private registries.
+Like npm, Yarn offers several ways to cache installed packages.  The recommended approach is to cache Yarn's [shared cache folder](https://yarnpkg.com/lang/en/docs/cli/cache/). This directory is managed by Yarn and stores cached versions of all downloaded packages. During installation, Yarn checks this directory first (by default), which can reduce or even eliminate network calls to public or private registries.
 
 **Example**:
 
@@ -482,7 +481,7 @@ steps:
 - script: yarn --frozen-lockfile
 ```
 
-## Python/Anaconda
+### [Python/Anaconda](#tab/python)
 
 Set up your pipeline caching with Anaconda environments:
 
@@ -534,7 +533,7 @@ steps:
       condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
     ```
 
-## PHP/Composer
+### [PHP/Composer](#tab/php)
 
 For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
 
@@ -557,15 +556,17 @@ steps:
 - script: composer install
 ```
 
+---
+
 ## Known issues and feedback
 
-If you're experiencing issues setting up caching for your pipeline, check the list of [open issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the :::no-loc text="microsoft/azure-pipelines-tasks"::: repo. If you don't see your issue listed, [create](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching) a new one and provide the necessary information about your scenario.
+If you're having trouble setting up caching in your pipeline, check the list of [open issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the :::no-loc text="microsoft/azure-pipelines-tasks"::: repo. If you don't see your issue listed, [create](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching) a new one and provide the necessary information about your scenario.
 
 ## Q&A
 
-### Q: Can I clear a cache?
+#### Q: Can I clear a cache?
 
-A: Clearing a cache is currently not supported. However you can add a string literal (such as `version2`) to your existing cache key to change the key in a way that avoids any hits on existing caches. For example, change the following cache key from this:
+A: Clearing a cache is not supported. However, you can avoid hits on existing caches by adding a string literal (such as `version2`) to your cache key. For example, change the following cache key from this:
 
 ```yaml
 key: 'yarn | "$(Agent.OS)" | yarn.lock'
@@ -577,14 +578,22 @@ To this:
 key: 'version2 | yarn | "$(Agent.OS)" | yarn.lock'
 ```
 
-### Q: When does a cache expire?
+#### Q: When does a cache expire?
 
 A: Caches expire after seven days of no activity.
 
-### Q: When does the cache get uploaded?
+#### Q: When does the cache get uploaded?
 
-A: After the last step of your pipeline a cache will be created from your cache `path` and uploaded. See the [example](#configure-the-cache-task) for more details.
+A:  A cache is created from your specified `path` and uploaded after the last step of the job. See the [example](#configure-the-cache-task) for more details.
 
-### Q: Is there a limit on the size of a cache?
+#### Q: Is there a limit on the size of a cache?
 
-A: There's no enforced limit on the size of individual caches or the total size of all caches in an organization.
+A: There's no enforced limit on the size of individual caches or the total cache size within an organization.
+
+## Related content
+
+- [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md)
+
+- [Secure your Azure Pipelines](../security/overview.md)
+
+- [Manage permissions](../policies/permissions.md)
