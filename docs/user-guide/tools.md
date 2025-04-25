@@ -7,7 +7,7 @@ ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
-monikerRange: 'azure-devops || >= azure-devops-2020'
+monikerRange: 'azure-devops-2020 || azure-devops-2022'
 ms.date: 04/25/2025
 #customer intent: As a developer, I want to understand the tools and clients that support connecting to Azure DevOps, so I can use the appropriate tools for my development.
 ---
@@ -38,7 +38,7 @@ To get started with client libraries, see [Client library samples](../integrate/
 
 Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio to projects defined in Azure DevOps. You can manage source code, work items, and builds. Team Explorer supports using Git and Team Foundation Version Control (TFVC) for source control. For more information, see [Work in Team Explorer](work-team-explorer.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops-2022"
 
 :::row:::
 :::column span="":::
@@ -58,7 +58,7 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 :::row-end:::
 
 ::: moniker-end
-::: moniker range="azure-devops"
+::: moniker range="azure-devops-2020"
 
 :::row:::
 :::column span="":::
@@ -103,14 +103,15 @@ Browser-based web tools are available for connecting with Azure DevOps. You can 
 
 ### Web portal support
 
-Collaboration tools supported through the web portal are summarized under [Essential services](services.md). New features are deployed every three weeks for Azure DevOps Services, and quarterly for Azure DevOps Server. Microsoft Edge, Firefox, and Chrome automatically update themselves, so Azure DevOps supports the most recent version. For release notes, see [Azure DevOps Services features timeline](/azure/devops/release-notes/features-timeline). 
- 
-You can use the following browsers to access the web portal:
+Collaboration tools supported through the web portal are summarized under [Essential services](services.md). New features are deployed every three weeks for Azure DevOps Services, and quarterly for Azure DevOps Server. 
 
-|Version |Edge |Internet Explorer |Safari (Mac) |Firefox |Chrome |
-|--------|-----|------------------|-------------|--------|-------|
-|Azure DevOps Services <br/> Azure DevOps Server 2022 <br/> Azure DevOps Server 2020.1 | Most recent | Not supported | 14.1 and later | Most recent | Most recent |
-|Azure DevOps Server 2020 <br/> Azure DevOps Server 2019 | Most recent | 11 and later | 14.1 and later | Most recent | Most recent |
+The following table lists the supported browsers and applicable Azure DevOps versions:
+
+|Browser |Version |Azure DevOps support |
+|--------|--------|---------------------|
+| **Microsoft Edge, Firefox, Chrome** | Most recent | All Azure DevOps versions |
+| **Safari (Mac)** | 14.1 and later | All Azure DevOps versions |
+| **Internet Explorer** | 11 and later | Azure DevOps Server 2019 and 2020 only |
 
 For more information, see [Web portal navigation](../project/navigation/index.md).
 
