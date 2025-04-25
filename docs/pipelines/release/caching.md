@@ -210,6 +210,8 @@ When a cache step is encountered during a run, the cache identified by the key i
 > [!TIP]
 > Because caches are already scoped to a project, pipeline, and branch, there's no need to include any project, pipeline, or branch identifiers in the cache key.
 
+## Examples
+
 ### [Bundler](#tab/bundler)
 
 For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable to set the [path](https://bundler.io/v2.3/man/bundle-config.1.html) where Bundler looks for Gems.
@@ -459,8 +461,6 @@ steps:
        npm | "$(Agent.OS)"
     path: $(npm_config_cache)
   displayName: Cache npm
-
-- script: npm ci
 ```
 
 If your project doesn't have a `package-lock.json` file, reference the `package.json` file in the cache key input instead.
