@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 04/21/2025
+ms.date: 04/25/2025
 ---
 
 # Configure Managed DevOps Pools security settings
