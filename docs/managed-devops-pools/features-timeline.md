@@ -20,8 +20,6 @@ The following section describes new features in development for Managed DevOps P
 
 * **Pool creation at the Azure DevOps project level using project level permissions**: To create a Managed DevOps Pool, you must currently be an [Organization-level Agent pools administrator or a Project Collection Administrator in Azure DevOps](./prerequisites.md#verify-azure-devops-permissions). We're enabling a new mode of Managed DevOps Pools creation, requiring only Project-level Agent pools administrator. Managed DevOps Pools created using Project-level Agent pools administrator will be created and enabled only for use in the designated Azure DevOps Project. **Planned for April 2025.**
 
-* **Open access for all pipelines to use a Managed DevOps Pool**: By default, each pipeline must be explicitly authorized to use a newly created Managed DevOps Pool. We're adding an option to enable [Open access for all pipelines](/azure/devops/pipelines/agents/pools-queues#pipeline-permissions) so that administrators don't need to explicitly authorize each pipeline. **Planned for April 2025.**
-
 * **Windows 2025 Azure Pipelines Image**: We're adding the [Windows Server 2025 image](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) to [Azure Pipelines images](./configure-images.md#azure-pipelines-images).
 
 * **Public Static IP**: We're adding support for public static IP addresses in Managed DevOps Pool to more easily enable access to external resources once [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). **Planned for June 2025.**
@@ -31,6 +29,10 @@ The following section describes new features in development for Managed DevOps P
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for end 2025.**
 
 * **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for end of 2025.**
+
+## April 2025
+
+* **Open access for all pipelines to use a Managed DevOps Pool**: By default, each pipeline must be explicitly authorized to use a newly created Managed DevOps Pool. We're adding an option to enable [Open access for all pipelines](../pipelines/agents/pools-queues.md#pipeline-permissions) so that administrators don't need to explicitly authorize each pipeline. For more information, see [Configure open access for pipelines to your pool](./configure-security.md#configure-open-access-for-pipelines-to-your-pool).
 
 ## March 2025
 
