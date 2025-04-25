@@ -109,9 +109,9 @@ The following table lists the supported browsers and applicable Azure DevOps ver
 
 |Browser |Version |Azure DevOps support |
 |--------|--------|---------------------|
-| **Microsoft Edge, Firefox, Chrome** | Most recent | All Azure DevOps versions |
-| **Safari (Mac)** | 14.1 and later | All Azure DevOps versions |
-| **Internet Explorer** | 11 and later | Azure DevOps Server 2019 and 2020 only |
+| **Microsoft Edge, Firefox, Chrome** | Most recent | Azure DevOps Services, Azure DevOps Server 2019 and later  |
+| **Safari (Mac)** | 14.1 and later | Azure DevOps Services, Azure DevOps Server 2019 and later |
+| **Internet Explorer** | 11 and later | Azure DevOps Server 2019 and 2020 only <br> _No support in Azure DevOps Server 2020.1 and later_ |
 
 For more information, see [Web portal navigation](../project/navigation/index.md).
 
