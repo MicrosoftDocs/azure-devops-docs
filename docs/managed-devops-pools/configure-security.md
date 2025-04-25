@@ -177,7 +177,10 @@ Add additional organizations to the organizations list to configure your pool fo
 
 ## Configure open access for pipelines to your pool
 
-To configure open access for pipelines, you must have the following permissions in addition to the permissions described in [Prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions):
+To configure open access for pipelines, you must have the following permissions in addition to the permissions described in [Prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions).
+
+* If you are a Project collection administrator, you don't need any additional permissions to configure open access.
+* If you are an organization level pools administrator, you must also be a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group) for each project that will be granted access to the Managed DevOps Pool.
 
 | Prerequisite Azure DevOps Permission | Additional required permission to configure open access |
 |--|--|
