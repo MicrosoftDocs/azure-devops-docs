@@ -85,7 +85,7 @@ Visual Studio 2019 and later provides the **Git** menu with quick access to sour
 
 ::: moniker range="azure-devops-2022"
 
-:::image type="content" source="media/tools/visual-studio-git-menu-2022.png" border="false" alt-text="Screenshot of the Git menu in Visual Studio 2022." lightbox="media/tools/visual-studio-git-menu.png":::
+:::image type="content" source="media/tools/visual-studio-git-menu-2022.png" border="false" alt-text="Screenshot of the Git menu in Visual Studio 2022." lightbox="media/tools/visual-studio-git-menu-2022.png":::
 
 Visual Studio 2022 also provides the **Git Changes** and **Git Repository** windows:
 
