@@ -81,9 +81,24 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 
 ### Visual Studio Git experience 
 
-Visual Studio 2019 and later provides a new Git experience through the **Git** menu as shown in the following image. For more information, see [Git experience in Visual Studio](/visualstudio/version-control/git-with-visual-studio) and [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison).  
+Visual Studio 2019 and later provides the **Git** menu with quick access to source control and repository tasks.
+
+::: moniker range="azure-devops-2022"
+
+:::image type="content" source="media/tools/visual-studio-git-menu-2022.png" border="false" alt-text="Screenshot of the Git menu in Visual Studio 2022." lightbox="media/tools/visual-studio-git-menu.png":::
+
+Visual Studio 2022 also provides the **Git Changes** and **Git Repository** windows:
+
+:::image type="content" source="media/tools/visual-studio-git-changes-repository-2022.png" border="false" alt-text="Screenshot of the Git Changes and Git Repository windows in Visual Studio 2022." lightbox="media/tools/visual-studio-git-changes-repository-2022.png":::
+
+::: moniker-end
+::: moniker range="azure-devops-2020"
 
 :::image type="content" source="media/tools/visual-studio-git-menu.png" border="false" alt-text="Screenshot of the Git menu in Visual Studio." lightbox="media/tools/visual-studio-git-menu.png":::
+
+::: moniker-end
+
+For more information, see [Git experience in Visual Studio](/visualstudio/version-control/git-with-visual-studio) and [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison).  
 
 ## Office integration tools
 
