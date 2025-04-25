@@ -7,8 +7,8 @@ ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
-monikerRange: '<= azure-devops'
-ms.date: 04/24/2025
+monikerRange: 'azure-devops || >= azure-devops-2020'
+ms.date: 04/25/2025
 #customer intent: As a developer, I want to understand the tools and clients that support connecting to Azure DevOps, so I can use the appropriate tools for my development.
 ---
 
@@ -38,22 +38,46 @@ To get started with client libraries, see [Client library samples](../integrate/
 
 Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio to projects defined in Azure DevOps. You can manage source code, work items, and builds. Team Explorer supports using Git and Team Foundation Version Control (TFVC) for source control. For more information, see [Work in Team Explorer](work-team-explorer.md).
 
+::: moniker range=">= azure-devops-2020"
+
 :::row:::
 :::column span="":::
 
-**Home page with Git**
+**Home page with Git in Visual Studio 2022**
+
+:::image type="content" source="../organizations/projects/media/te-home-page-git-repo-visual-studio-2022.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control in Visual Studio 2022." lightbox="../organizations/projects/media/te-home-page-git-repo-visual-studio-2022.png":::
+
+:::column-end:::
+:::column span="":::
+
+**Home page with TFVC in Visual Studio 2022**
+
+:::image type="content" source="../organizations/projects/media/te-home-page-tfvc-repo-visual-studio-2022.png" border="false" alt-text="Screenshot of the Team Explorer home page showing TFVC as the form of source control in Visual Studio 2022." lightbox="../organizations/projects/media/te-home-page-tfvc-repo-visual-studio-2022.png":::
+
+:::column-end:::
+:::row-end:::
+
+::: moniker-end
+::: moniker range="azure-devops"
+
+:::row:::
+:::column span="":::
+
+**Home page with Git in Visual Studio 2019**
 
 :::image type="content" source="../organizations/projects/media/te-home-page-git-repo.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control." lightbox="../organizations/projects/media/te-home-page-git-repo.png":::
 
 :::column-end:::
 :::column span="":::
 
-**Home page with TFVC**
+**Home page with TFVC in Visual Studio 2019**
 
 :::image type="content" source="../organizations/projects/media/te-home-page-tfvc-repo.png" border="false" alt-text="Screenshot of the Team Explorer home page showing TFVC as the form of source control." lightbox="../organizations/projects/media/te-home-page-tfvc-repo.png":::
 
 :::column-end:::
 :::row-end:::
+
+::: moniker-end
 
 ### Visual Studio Git experience 
 
@@ -64,9 +88,6 @@ Visual Studio 2019 and later provides a new Git experience through the **Git** m
 ## Office integration tools
 
 If you want to add and bulk-modify work items with Azure DevOps, you can integrate [Microsoft Office Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). To support the integration, you need to install the [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family) add-in. 
-
-> [!IMPORTANT]
-> In Visual Studio 2019 and later, the Azure DevOps Office Integration 2019 add-in for Office deprecates support for Microsoft Project. Project integration and the `TFSFieldMapping` command aren't supported for Azure DevOps Server 2019 or Azure DevOps Services. You can continue to use Microsoft Excel.
 
 ### Task-specific clients
 
@@ -82,22 +103,14 @@ Browser-based web tools are available for connecting with Azure DevOps. You can 
 
 ### Web portal support
 
-Collaboration tools supported through the web portal are summarized under [Essential services](services.md). New features are deployed every three weeks for Azure DevOps Services, and quarterly for Azure DevOps Server. For release notes, see [Azure DevOps Services features timeline](/azure/devops/release-notes/features-timeline). 
-
-> [!NOTE]
-> - TFS refers to Visual Studio Team Foundation Server (TFS). Starting in 2019, TFS is rebranded as Azure DevOps Server.
-> - Microsoft Edge, Firefox, and Chrome automatically update themselves, so Azure DevOps supports the most recent version.
+Collaboration tools supported through the web portal are summarized under [Essential services](services.md). New features are deployed every three weeks for Azure DevOps Services, and quarterly for Azure DevOps Server. Microsoft Edge, Firefox, and Chrome automatically update themselves, so Azure DevOps supports the most recent version. For release notes, see [Azure DevOps Services features timeline](/azure/devops/release-notes/features-timeline). 
  
 You can use the following browsers to access the web portal:
 
-<!-- Reviewer: Add 2022 version support info to table - 2022, 2022.1, 2022.2, as appropriate -->
-
 |Version |Edge |Internet Explorer |Safari (Mac) |Firefox |Chrome |
 |--------|-----|------------------|-------------|--------|-------|
-|Azure DevOps Services <br/> Azure DevOps Server 2020.1 through 2022.2 | Most recent | Not supported | 14.1 and later | Most recent | Most recent |
-|Azure DevOps Server 2020 <br/> Azure DevOps Server 2019 <br/> TFS 2018 <br/> TFS 2017  | Most recent | 11 and later | 14.1 and later | Most recent | Most recent |
-|TFS 2015 | Most recent | 9 and later | 5 and later | Most recent | Most recent |
-|TFS 2013 |             | 9 and later | 5 and later | Most recent | Most recent |
+|Azure DevOps Services <br/> Azure DevOps Server 2022 <br/> Azure DevOps Server 2020.1 | Most recent | Not supported | 14.1 and later | Most recent | Most recent |
+|Azure DevOps Server 2020 <br/> Azure DevOps Server 2019 | Most recent | 11 and later | 14.1 and later | Most recent | Most recent |
 
 For more information, see [Web portal navigation](../project/navigation/index.md).
 
@@ -114,28 +127,12 @@ You can find more extensions in Azure DevOps under **Organization settings** > *
 
 You can complete many code development and administrative tasks by using the following command-line tools:
 
-::: moniker range="azure-devops"
-
 - [Azure DevOps CLI commands (az devops)](../cli/quick-reference.md)
 - [Git commands](../repos/git/command-prompt.md)
 - [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
 - [Test Case Management (TCM) commands](../test/copy-clone-test-items.md)
 - [Manage permissions with command line tool (az devops security)](../organizations/security/manage-tokens-namespaces.md) 
 - [witAdmin (work item tracking)](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
-
-::: moniker-end
-::: moniker range="< azure-devops"
-
-- [Git commands](../repos/git/command-prompt.md)
-- [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
-- [Test Case Management (TCM) commands](../test/copy-clone-test-items.md)
-- [witAdmin (work item tracking)](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
-- [TFSConfig command](/azure/devops/server/command-line/tfsconfig-cmd)
-- [TFSDeleteProject command](/azure/devops/server/command-line/tfsdeleteproject-cmd)
-- [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd)
-- [TFSServiceControl command](/azure/devops/server/command-line/tfsservicecontrol-cmd)
-
-::: moniker-end
 
 ## Integrated tool support for third-party applications
 
