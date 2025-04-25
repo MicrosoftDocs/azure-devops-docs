@@ -5,7 +5,7 @@ ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: how-to
-ms.date: 03/25/2025
+ms.date: 04/25/2025
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -76,6 +76,7 @@ If the issue isn't apparent from the pipeline run summary page or browsing the l
 
 ## Common issues
 
+* [This pipeline needs permission to access a resource before this run can continue](#this-pipeline-needs-permission-to-access-a-resource-before-this-run-can-continue)
 * [Job time-out](#job-time-out)
 * [Issues downloading code](#issues-downloading-code)
 * [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
@@ -109,6 +110,47 @@ Azure DevOps includes build-in notifications for failed pipeline runs. To enable
 :::image type="content" source="media/notification-settings.png" alt-text="Screenshot of notifications in project settings.":::
 
 :::moniker-end
+
+### This pipeline needs permission to access a resource before this run can continue
+
+If your pipeline doesn't seem to start, or you receive an error message like `This pipeline needs permission to access a resource before this run can continue`, check to see if the pipeline is waiting for an authorization to run by a resource, like a service connection or agent pool.
+
+1. [Go to the pipeline](../create-first-pipeline.md#view-and-manage-your-pipelines) and manually start a run.
+1. The message **This pipeline needs permission to access a resource before this run can continue** appears. Select **View** next to the message.
+1. On the **Waiting for review** screen, select **Permit**, and on the confirmation screen, select **Permit** again.
+
+This action explicitly adds the pipeline as an authorized user of the resource.
+
+There are two ways to authorize pipelines to access your agent pool.
+
+* [Authorize specific pipelines](#authorize-specific-pipelines) - Individually authorize specific pipelines from an Azure DevOps project to run in the pool.
+* [Configure open access](#configure-open-access) - Configure an agent pool at project level to be available for all pipelines in that project.
+
+#### Authorize specific pipelines
+
+You can individually authorize specific pipelines to run in an agent pool by following the procedure in the previous section when you receive a message like `This pipeline needs permission to access a resource before this run can continue`.
+
+You can also manually add and remove pipelines from the authorized list by performing the following procedure. This procedure is performed at the project level in your Azure DevOps organization.
+
+1.  In Azure DevOps, go to **Project settings**, **Agent pools**, choose your self-hosted pool, and choose **Security**.
+1. Choose **+** to add a pipeline to the authorized list.
+1. Choose **X** **(Revoke access)** to remove a pipeline from the authorized list.
+
+#### Configure open access
+
+Some resources allow you to configure **Open access** so that each new pipeline definition doesn't require explicit authorization.
+
+Configuring **Open access** requires [Project administrator](../../organizations/security/permissions.md#project-level-groups) permissions.
+
+To configure **Open access** for agent pools:
+
+1.  In Azure DevOps, go to **Project settings**, **Agent pools**, choose your self-hosted pool, and choose **Security**.
+1. Choose **More actions**, **Open access**, to enable open access, and choose **Open access** again to confirm.
+1. To revoke open access, choose **Restrict permission**. 
+
+To review whether **Open access** is available for other [resource types](../process/resources.md#resource-authorization-in-yaml-pipelines), see [Manage security in Azure Pipelines](../policies/permissions.md) and search for **Open access**.
+
+For more information on **Open access** for agent pools, see [Set pipeline permissions for an individual agent pool](../policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) and [Pipeline permissions](../agents/pools-queues.md#pipeline-permissions).
 
 ### Job time-out
 
