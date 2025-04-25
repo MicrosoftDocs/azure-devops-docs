@@ -235,7 +235,14 @@ These investments include:
          </td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q1</td>   
-      </tr>    
+      </tr>  
+      <tr>
+         <td>
+            <a href="/azure/devops/release-notes/2025/sprint-255-update#github-integration-state-transition-support" data-raw-source="[Support state transitions when merging a GitHub pull request](/azure/devops/release-notes/2025/sprint-255-update#github-integration-state-transition-support)">Support state transitions when merging a GitHub pull request</a>
+         </td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q2</td>   
+      </tr>
       <tr>
          <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a>
@@ -243,13 +250,7 @@ These investments include:
          <td>Boards</td>
          <td>2025 Q2</td>
       </tr>       
-      <tr>
-         <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-state-transitions-with-github-repos" data-raw-source="[Support state transitions when merging a GitHub pull request](/azure/devops/release-notes/roadmap/2024/boards-state-transitions-with-github-repos)">Support state transitions when merging a GitHub pull request</a>
-         </td>
-         <td>Boards</td>
-         <td>2025 Q2</td>   
-      </tr>
+      
       <tr>
          <td><a href="/azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
