@@ -5,7 +5,7 @@ ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: how-to
-ms.date: 04/24/2025
+ms.date: 04/25/2025
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -119,7 +119,7 @@ If your pipeline doesn't seem to start, or you receive an error message like `Th
 1. The message **This pipeline needs permission to access a resource before this run can continue** appears. Select **View** next to the message.
 1. On the **Waiting for review** screen, select **Permit**, and on the confirmation screen, select **Permit** again.
 
-This action explictly adds the pipeline as an authorized user of the resource.
+This action explicitly adds the pipeline as an authorized user of the resource.
 
 There are two ways to authorize pipelines to access your agent pool.
 
