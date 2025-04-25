@@ -40,22 +40,7 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 
 ::: moniker range="azure-devops-2022"
 
-:::row:::
-:::column span="":::
-
-**Home page with Git in Visual Studio 2022**
-
 :::image type="content" source="../organizations/projects/media/te-home-page-git-repo-visual-studio-2022.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control in Visual Studio 2022." lightbox="../organizations/projects/media/te-home-page-git-repo-visual-studio-2022.png":::
-
-:::column-end:::
-:::column span="":::
-
-**Home page with TFVC in Visual Studio 2022**
-
-:::image type="content" source="../organizations/projects/media/te-home-page-tfvc-repo-visual-studio-2022.png" border="false" alt-text="Screenshot of the Team Explorer home page showing TFVC as the form of source control in Visual Studio 2022." lightbox="../organizations/projects/media/te-home-page-tfvc-repo-visual-studio-2022.png":::
-
-:::column-end:::
-:::row-end:::
 
 ::: moniker-end
 ::: moniker range="azure-devops-2020"
