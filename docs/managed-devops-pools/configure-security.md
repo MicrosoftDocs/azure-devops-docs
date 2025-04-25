@@ -360,7 +360,7 @@ The following settings configure the certificates fetched from your Key Vault.
 
   - **Windows agents**: Specify `LocalMachine` or `CurrentUser`.
   - **Linux agents**: **Certificate store location** is only support on Ubuntu distributions. Specify the disk path to store the certificates, for example `/var/lib/waagent/Microsoft.Azure.KeyVault/app1`.
-     For Ubuntu distributions, if you specify the trusted store location, for example `/usr/local/share/ca-certificates`, the vertificate is added to that certificate store as root. For more information, see [Install a root CA certificate in the trust store](https://documentation.ubuntu.com/server/how-to/security/install-a-root-ca-certificate-in-the-trust-store/index.html).
+     For Ubuntu distributions, if you specify the trusted store location, for example `/usr/local/share/ca-certificates`, the certificate is added to that certificate store as root. For more information, see [Install a root CA certificate in the trust store](https://documentation.ubuntu.com/server/how-to/security/install-a-root-ca-certificate-in-the-trust-store/index.html).
 
 - **Certificate store name** (`certificateStoreName`)
 
@@ -456,18 +456,18 @@ The following example shows the `osProfile` section of the **fabric-profile.json
 
 ### Configuring SecretManagementSettings
 
-Certificates retrieved using the `SecretManagementSettings` on your pool will automatically sync with the most recent versions published within the Key Vault. These secrets will be on the machine by the time it runs any Azure DevOps pipeline, meaning you can save time and remove tasks for fetching certificates.
+Certificates retrieved using the `SecretManagementSettings` on your pool will automatically sync with the most recent versions published within the Key Vault. These secrets will be on the machine by the time it runs its first pipeline, meaning you can save time and remove tasks for fetching certificates.
 
 > [!IMPORTANT]
 > Provisioning of your agent virtual machines will fail if the secret cannot be fetched from the Key Vault due to a permissions or network issue.
 
 #### [Windows](#tab/windows/)
 
-For Windows, the Certificate Store Location is allowed to either be set to `LocalMachine` or `CurrentUser`. This setting will ensure that the secret is installed at that location on the machine. For specific behavior of how secret retrieval works, see [the documentation for the Azure VMSS Key Vault extension for Windows](/azure/virtual-machines/extensions/key-vault-windows).
+For Windows, the Certificate Store Location is allowed to either be set to `LocalMachine` or `CurrentUser`. This setting will ensure that the secret is installed at that location on the machine. For specific behavior of how secret retrieval works, see [Azure Key Vault extension for Windows](/azure/virtual-machines/extensions/key-vault-windows).
 
 #### [Linux](#tab/linux/)
 
-For Linux, the Certificate Store Location can be any directory on the machine, and the certificates will be downloaded and synced to that location. For specifics on default settings and secret behavior, see [the documentation for the Azure VMSS Key Vault extension for Linux](/azure/virtual-machines/extensions/key-vault-linux).
+For Linux, the Certificate Store Location can be any directory on the machine, and the certificates will be downloaded and synced to that location. For specifics on default settings and secret behavior, see [Key Vault virtual machine extension for Linux](/azure/virtual-machines/extensions/key-vault-linux).
 
 * * *
 
