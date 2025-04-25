@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/09/2025
+ms.date: 04/23/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -37,6 +37,9 @@ To turn on the policy that restricts users from creating new organizations, do t
 3. Select **Microsoft Entra ID**, and then switch the toggle to turn on the policy, restricting organization creation.
 
    :::image type="content" source="media/azure-ad-tenant-policy/restrict-organization-creation-toggle.png" alt-text="Screenshot shows highlighted toggle for Restrict organization creation.":::
+
+   > [!IMPORTANT]
+   > If you don't see the **Restric organization creation** policy toggle, check your role in the Azure portal. For more information, see the [Prerequisites](#prerequisites).
 
 ## Optional
 

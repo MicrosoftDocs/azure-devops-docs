@@ -37,6 +37,9 @@
   - name: Manage extension permissions
     displayName: grant, publish, update, settings, admin
     href: ./marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Manage high privilege extensions
+    displayName: permission, Marketplace, scope, privilege, decorator, unpublished
+    href: ./marketplace/manage-high-privilege-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Authenticate
   items:
   - name: Guide to authentication
@@ -69,7 +72,7 @@
     - name: Contribution model
       displayName: plug, hub, action, build, task, type, target
       href: ./extend/develop/contributions-overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Create a custom pipelines task
+    - name: Add a custom pipeline task extension
       displayName: extension, manifest, package, publish, install, Marketplace
       href: ./extend/develop/add-build-task.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Author a pipeline decorator

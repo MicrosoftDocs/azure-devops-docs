@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 02/20/2025
+ms.date: 04/16/2025
 ---
 
 # Troubleshoot dependency scanning 
@@ -66,6 +66,17 @@ To use this variable, add `DependencyScanning.Timeout` as a pipeline variable:
     DependencyScanning.Timeout: 600
 ```
 
+## Adjusting your scanning directory
+
+By default, the dependency scanning task will process the `Agent.BuildDirectory` directory. If you want to scope your scan to a specific folder, you can set a pipeline variable `DependencyScanning.SourcePath` to any directory file path in the build agent that you want to analyze. Multiple dependency scanning task executions in the same pipeline job are not supported. If the scan path is scoped to subdirectory, you cannot re-add the task to scan a different directory.
+
+ >[!div class="tabbedCodeSnippets"]
+```yaml
+- task: AdvancedSecurity-Dependency-Scanning@1
+  env:
+    DependencyScanning.SourcePath: scan/code/path
+```
+
 ## Dependency scanning publishing results to the incorrect repository 
 
 If you have a pipeline definition housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results may be processed and submitted to the incorrect repository, publishing to the repository containing the pipeline definition rather than the source code repository.
@@ -109,6 +120,17 @@ jobs:
       - checkout: BicepGoat
       - task: AdvancedSecurity-Dependency-Scanning@1
         displayName: Dependency Scanning
+```
+
+## Missing dependency scanning pull request annotations when adjusting where results are published 
+
+If you are using either the `advancedsecurity.publish.repository.infer` or defining an alternative `advancedsecurity.publish.repository`, you may need to set `DependencyScanning.SourcePath: $(System.DefaultWorkingDirectory)` so that file paths are determined accurately for the pull request annotation to appear as expected. 
+
+ >[!div class="tabbedCodeSnippets"]
+```yaml
+- task: AdvancedSecurity-Dependency-Scanning@1
+  env:
+    DependencyScanning.SourcePath: $(System.DefaultWorkingDirectory)
 ```
 
 ## Break-glass scenario for build task

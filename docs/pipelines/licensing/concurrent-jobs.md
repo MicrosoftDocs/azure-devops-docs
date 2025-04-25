@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
 author: juliakm
-ms.date: 04/05/2024
+ms.date: 04/14/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -21,12 +21,25 @@ monikerRange: '<= azure-devops'
 
 ::: moniker-end
 
+
 ::: moniker range="azure-devops"
 
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
 > [!NOTE]
 > The free grant of parallel jobs for public projects and for certain private projects in new organizations is temporarily disabled. However, you can request this grant by submitting [a request](https://aka.ms/azpipelines-parallelism-request). Existing organizations and projects aren't affected. It can take several business days to process your free tier requests. During certain time periods, processing times might be longer.
+
+::: moniker-end
+
+## Prerequisites
+
+
+| Category | Requirements |
+|--------------|-------------|
+| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md). <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; Member of the [**Project Collection Administrators** security group](../../organizations/security/look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. <br> - **Billing:** <br>  &nbsp;&nbsp;&nbsp;&nbsp; Billing must be [set up for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md).|
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/). |
+
+::: moniker range="azure-devops"
 
 ## What is a parallel job? 
 
