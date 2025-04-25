@@ -80,11 +80,11 @@ After you write the query in Visual Studio Code, you should see syntax highlight
 
    - The OData query result set is in JSON format. To view the results, install a JSON formatter extension for your browser. Several options are available for both Chrome and Microsoft Edge.
 
-     :::image type="content" source="media/odataquery-jsonoutput.png" alt-text="Screenshot of a browser that shows the JSON output of the OData query displayed in a readable format.":::
+     :::image type="content" source="media/odataquery-jsonoutput.png" alt-text="Screenshot of a browser that shows the JSON output of the OData query displayed in a readable format." lightbox="media/odataquery-jsonoutput.png":::
 
    - If the query has an error, the Analytics service returns an error in JSON format. For example, the following error states that the query selects a field that doesn't exist.
 
-     :::image type="content" source="media/odataquery-jsonerror.png" alt-text="Screenshot of a browser that shows JSON output in a readable format. A message in the output indicates an error in an OData query.":::
+     :::image type="content" source="media/odataquery-jsonerror.png" alt-text="Screenshot of a browser that shows JSON output in a readable format. A message in the output indicates an error in an OData query." lightbox="media/odataquery-jsonerror.png":::
 
 After you verify that the query works correctly, you can run it from Power BI.
 
@@ -144,7 +144,7 @@ Before you use the query in Power BI, you must convert the multiline OData query
 
    This change helps prevent throttling errors. The new values have the following effect:
 
-   - They instruct Power BI to reference OData v4.
+   - They instruct Power BI to reference OData version 4.
    - They instruct the Analytics service to omit any values that are null, which improves query performance.
 
    Power Query attempts to resolve null values as errors by generating another query for every null value it encounters. This action can result in thousands of queries. These queries can quickly exceed your usage threshold, beyond which your user account gets throttled.
@@ -167,4 +167,4 @@ Select **Close & Apply** to save your settings and pull the data into Power BI. 
 
 - [Data available from Analytics](data-available-in-analytics.md)
 - [Set permissions to access Analytics and Analytics views](./analytics-security.md)
-- [Power BI integration](overview.md)
+- [About Power BI integration](overview.md)
