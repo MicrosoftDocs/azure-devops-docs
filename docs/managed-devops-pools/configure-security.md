@@ -182,11 +182,6 @@ To configure open access for pipelines, you must have the following permissions 
 * If you are a [Project collection administrator](../organizations/security/look-up-project-collection-administrators.md), you don't need any additional permissions to configure open access.
 * If you are an [organization level pools administrator](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level), you must also be a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group) for each project that will be granted access to the Managed DevOps Pool.
 
-| Prerequisite Azure DevOps Permission | Additional required permission to configure open access |
-|--|--|
-| Project collection administrator | No additional permission required to configure open access. |
-| Organization level pools administrator | You must be [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group) for each project that will be granted access to the Managed DevOps Pool. |
-
 By default, every pipeline definition must be explicitly authorized to run in a self-hosted agent pool (like a Managed DevOps Pool) before it is run for the first time in that pool.
 
 Azure DevOps provides the following modes for authorizing pipelines to run in an agent pool.
