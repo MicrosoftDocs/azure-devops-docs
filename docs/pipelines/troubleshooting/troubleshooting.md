@@ -140,6 +140,8 @@ You can also manually add and remove pipelines from the authorized list by perfo
 
 Some resources allow you to configure **Open access** so that each new pipeline definition doesn't require explicit authorization.
 
+Configuring **Open access** requires [Project administrator](../../organizations/security/permissions.md#project-level-groups) permissions.
+
 To configure **Open access** for agent pools:
 
 1.  In Azure DevOps, go to **Project settings**, **Agent pools**, choose your self-hosted pool, and choose **Security**.

@@ -177,7 +177,14 @@ Add additional organizations to the organizations list to configure your pool fo
 
 ## Configure open access for pipelines to your pool
 
-By default, every pipeline definition must be explictly authorized to run in a self-hosted agent pool (like a Managed DevOps Pool) before it is run for the first time in that pool. 
+To configure open access for pipelines, you must have the following permissions in addition to the permissions described in [Prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions):
+
+| Prerequisite Azure DevOps Permission | Additional required permission to configure open access |
+|--|--|
+| Project collection administrator | No additional permission required to configure open access |
+| Organization level pools administrator | You must be [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group) for each project that will be granted access to the Managed DevOps Pool. |
+
+By default, every pipeline definition must be explictly authorized to run in a self-hosted agent pool (like a Managed DevOps Pool) before it is run for the first time in that pool.
 
 Azure DevOps provides the following modes for authorizing pipelines to run in an agent pool.
 
