@@ -40,7 +40,7 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 
 ::: moniker range="azure-devops-2022"
 
-:::image type="content" source="../organizations/projects/media/te-home-page-git-repo-visual-studio-2022.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control in Visual Studio 2022." lightbox="../organizations/projects/media/te-home-page-git-repo-visual-studio-2022.png":::
+:::image type="content" source="../organizations/projects/media/te-home-page-git-repo-visual-studio-2022.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control in Visual Studio 2022.":::
 
 ::: moniker-end
 ::: moniker range="azure-devops-2020"
@@ -70,7 +70,7 @@ Visual Studio 2019 and later provides the **Git** menu with quick access to sour
 
 ::: moniker range="azure-devops-2022"
 
-:::image type="content" source="media/tools/visual-studio-git-menu-2022.png" border="false" alt-text="Screenshot of the Git menu in Visual Studio 2022." lightbox="media/tools/visual-studio-git-menu-2022.png":::
+:::image type="content" source="media/tools/visual-studio-git-menu-2022.png" border="false" alt-text="Screenshot of the Git menu in Visual Studio 2022.":::
 
 Visual Studio 2022 also provides the **Git Changes** and **Git Repository** windows:
 
