@@ -3,12 +3,13 @@ title: Feature Progress rollup sample Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to generate feature progress rollup by Story Points Power BI report.
 ms.subservice: azure-devops-analytics
+ai-usage: ai-assisted
 ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 12/08/2022
+ms.date: 04/25/2025
 ---
 
 # Feature progress rollup sample report
@@ -21,7 +22,12 @@ This article shows you how to create a stacked bar report to display progress of
 
 You can view similar progress bar charts from your backlog by adding a rollup column. To learn how, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
 
+> [!TIP]
+> When you create rollup reports using Power BI, you might encounter issues related to nested data in your datasets. Specifically, attempting to pivot a table that contains columns with nested data can result in an error message. For more information, see the section about Handling nested data.
+
 [!INCLUDE [temp](includes/sample-required-reading.md)]
+
+## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
@@ -194,7 +200,7 @@ The following table describes each part of the query.
 
 ### Review feature progress for a team  
 
-The following query is the same as the one used above, except it filters by **Team Name** rather than **Area Path**. 
+The following query is the same as the one previously used, except it filters by **Team Name** rather than **Area Path**. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -240,21 +246,24 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Transform the data in Power Query Editor
 
-The query returns several columns that you need to expand before you can use them to create a report. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. Expand the record to flatten the entity into its fields.  
+The query returns several columns that you need to expand before you can use them to create a report. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. Expand the record to flatten the entity into its fields.
 
-For the Feature Progress report, you'll need to carry out the following transforms: 
+For the Feature Progress report, you need to carry out the following transforms: 
 
 - Expand the `Descendants` column into two columns: `Descendants.StateCategory` and `Descendants.TotalStoryPoints`
 - Apply **Pivot Column** transform on `Descendants.StateCategory` column to separate out individual **State** categories  
 - Replace null values in all pivoted columns.  
-- Add a custom column to represent percentage complete. The custom column will display errors if there are any null columns in the pivoted **State** columns.
- 
-To learn how, see the following sections in [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md):
-- [Expand Descendants column](transform-analytics-data-report-generation.md#expand-descendants). 
-- [Pivot Descendants.StateCategory column](transform-analytics-data-report-generation.md#pivot-statecategory).
-- [Replace null values](transform-analytics-data-report-generation.md#replace-null-values). 
-- [Create a percentage complete computed column](transform-analytics-data-report-generation.md#create-percent-complete)
- 
+- Add a custom column to represent percentage complete. The custom column displays errors if there are any null columns in the pivoted **State** columns.
+
+To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md).
+
+### Handling nested data
+
+Before you perform a pivot operation, ensure that your dataset doesn't contain any columns with nested data. Follow these steps:
+1. **Identify nested columns**: Check your dataset for any columns that might contain lists, records, or tables within a single cell.
+2. **Flatten or remove nested data**: You can either remove the nested columns or flatten them by expanding into separate columns using the "Expand" feature in Power Query.
+3. **Perform the pivot operation**: Once you address the nested data, you can proceed with the pivot operation without encountering errors.
+
 > [!NOTE]   
 > In this example, the **State** values for **User Story** include **Proposed**, **In Progress**, and **Completed**. 
 
@@ -268,7 +277,7 @@ To learn how, see the following sections in [Transform Analytics data to generat
 
 1. Add `Title` to **Y-Axis**.
 
-1. Add `PercentComplete` to **X-Axis**, right-click and select **Sum**.
+1. Add `PercentComplete` to **X-Axis**, right-click, and select **Sum**.
 
 The example report displays.
 
