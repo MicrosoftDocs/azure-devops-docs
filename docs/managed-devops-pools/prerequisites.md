@@ -215,11 +215,29 @@ To create a Managed DevOps Pool in your Azure DevOps organization, your Azure De
 
 ## Verify Azure DevOps permissions
 
-When you create a Managed DevOps Pool, the account you use to sign in to the Azure subscription that contains your Managed DevOps Pool is used to create a corresponding agent pool in your Azure DevOps organization. To successfully create a Managed DevOps Pool, your account must have one of the following permissions in your Azure DevOps organization. These permissions are listed in order from least privileged to most privileged.
+When you create a Managed DevOps Pool, the account you use to sign in to the Azure subscription that contains your Managed DevOps Pool is used to create a corresponding agent pool in your Azure DevOps organization. To successfully create a Managed DevOps Pool, your account must have the following permissions in your Azure DevOps organization.
+
+* **Organization-level agent pools administrator** for each organization where you want to create Managed DevOps Pools
+  * You can be directly assigned to this role by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or another **Organization-level Agent pools administrator**
+  * You are granted this role automatically if you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md)
+* **Project-level agent pools administrator** for each project in which you want to make your Managed DevOps Pools available
+  * You can be directly assigned this role by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md), a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), or another **Project-level agent pools administrator**
+  * You are granted this role automatically if you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group)
+
+| Permission | Description |
+|---|---|
+| [Organization-level Agent pools administrator](#organization-level-agent-pools-administrator) | Administrators of agent pools at the organization level can [create new agent pools as well as perform all operations on them](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level). |
+| [Project Collection Administrator](#project-collection-administrator) | The Project Collection Administrators group is the main administrative security group defined for an organization and can perform all operations in an Azure DevOps organization, including creating new pools. |
+
+### Organization-level Agent pools administrator
+
+Administrators of agent pools at the organization level can [create new agent pools as well as perform all operations on them](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level).
+
+### Project Collection Administrator
 
 | Permission | Description | Granted by |
 |------------|-------------|------------|
-| **Organization-level Agent pools administrator** | Administrators of agent pools at the organization level can [create new agent pools as well as perform all operations on them at the organization level](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level). | A [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or another **Organization-level Agent pools administrator** can add users to this group and grant them the administrator role. For more information, see [Set organization security for all agent pools](../pipelines/policies/permissions.md#set-organization-security-for-all-agent-pools). |
+| **Organization-level Agent pools administrator** and **Project-level agents pools administrator** for each project in your organization you wish to make the pool available to | Administrators of agent pools at the organization level can [create new agent pools as well as perform all operations on them](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level). | A [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or another **Organization-level Agent pools administrator** can add users to this group and grant them the administrator role. For more information, see [Set organization security for all agent pools](../pipelines/policies/permissions.md#set-organization-security-for-all-agent-pools). |
 | **Project Collection Administrator** | The Project Collection Administrators group is the main administrative security group defined for an organization and can perform all operations in an Azure DevOps organization, including creating new pools. | Other project collection administrators can add users to this group. For information about this group and how to see its members, see [Look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md). |
 
 ## Next steps
