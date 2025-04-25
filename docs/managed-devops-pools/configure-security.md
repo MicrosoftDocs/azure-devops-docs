@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 11/18/2024
+ms.date: 04/25/2025
 ---
 
 # Configure Managed DevOps Pools security settings
@@ -335,12 +335,42 @@ The `permissionProfile` property can be set during pool creation only. Allowed v
 
 ## Key Vault configuration
 
-Managed DevOps Pools offers the ability to fetch certificates from an Azure Key Vault during provisioning, which means the certificates will already exist on the machine by the time it runs your Azure DevOps pipelines. To use this feature, you must configure an [identity on your pool](configure-identity.md), and this identity must have **Key Vault Secrets User** permissions to fetch the secret from your Key Vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to Key Vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
+Managed DevOps Pools offers the ability to fetch certificates from an Azure Key Vault during provisioning, which means the certificates will already exist on the machine by the time it runs your pipelines. 
+
+To use this feature, you must:
+- Configure an [identity on your pool](configure-identity.md), and this identity must have **Key Vault Secrets User** permissions to fetch the secret from your Key Vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to Key Vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
+
+- The principal configuring the Key Vault integration settings (if you are configuring the Key Vault settings, then your account) must have the **Key Vault Certificate User** role assignment on the Key Vault where the certificates are stored.
 
 > [!NOTE]
 > As of `api-version 2024-10-19`, if you use this feature you can only use a single identity on the pool. Support for multiple identities will be added soon.
 > 
 > Only one identity can be used to fetch secrets from the Key Vault.
+>
+> Managed DevOps Pools certificate settings are set at the pool level, and some of the settings are specific for Windows or Linux. If your workflow requires both Linux and Windows images, you may have to divide them into multiple pools if you can't find a common set of certificate settings that work for both Windows and Linux.
+
+The following settings configure the certificates fetched from your Key Vault.
+
+- **Certificates** (`observedCertificates`)
+
+  Specify the certificates to be fetched from your Key Vault and installed on all machines in your pool.
+
+- **Certificate store location** (`certificateStoreLocation`)
+
+  Specify the location to install the certificates on your agent.
+
+  - **Windows agents**: Specify `LocalMachine` or `CurrentUser`.
+  - **Linux agents**: **Certificate store location** is only support on Ubuntu distributions. Specify the disk path to store the certificates, for example `/var/lib/waagent/Microsoft.Azure.KeyVault/app1`.
+     For Ubuntu distributions, if you specify the trusted store location, for example `/usr/local/share/ca-certificates`, the certificate is added to that certificate store as root. For more information, see [Install a root CA certificate in the trust store](https://documentation.ubuntu.com/server/how-to/security/install-a-root-ca-certificate-in-the-trust-store/index.html).
+
+- **Certificate store name** (`certificateStoreName`)
+
+  - **Windows agents**: Specify the name of the certificate store, either `My` (local certificate store - default if no name is specified) or `Root` (trusted root location).
+  - **Linux agents**: This setting isn't used on Linux agents.
+
+- **Exportable private keys** (`keyExportable`)
+
+  Whether the key of the certificates is exportable. The default is `false`.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -355,6 +385,9 @@ Key Vault integration is configured in **Settings > Security**.
 
 Azure Key Vault is configured in the `osProfile` section of the `fabricProfile` property. Set the `secretManagementSettings` to be able to access the desired certificate.
 
+> [!NOTE]
+> The `osProfile.certificateStoreName` property is only available in `apiVersion 2025-01-21` and later.
+
 ```json
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -363,7 +396,7 @@ Azure Key Vault is configured in the `osProfile` section of the `fabricProfile` 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
             ...
@@ -373,6 +406,7 @@ Azure Key Vault is configured in the `osProfile` section of the `fabricProfile` 
                 "osProfile": {
                     "secretsManagementSettings": {
                         "certificateStoreLocation": "LocalMachine",
+                        "certificateStoreName": "Root",
                         "observedCertificates": [
                             "https://<keyvault-uri>/secrets/<certificate-name>"
                         ],
@@ -423,18 +457,18 @@ The following example shows the `osProfile` section of the **fabric-profile.json
 
 ### Configuring SecretManagementSettings
 
-Certificates retrieved using the `SecretManagementSettings` on your pool will automatically sync with the most recent versions published within the Key Vault. These secrets will be on the machine by the time it runs any Azure DevOps pipeline, meaning you can save time and remove tasks for fetching certificates.
+Certificates retrieved using the `SecretManagementSettings` on your pool will automatically sync with the most recent versions published within the Key Vault. These secrets will be on the machine by the time it runs its first pipeline, meaning you can save time and remove tasks for fetching certificates.
 
 > [!IMPORTANT]
 > Provisioning of your agent virtual machines will fail if the secret cannot be fetched from the Key Vault due to a permissions or network issue.
 
 #### [Windows](#tab/windows/)
 
-For Windows, the Certificate Store Location is allowed to either be set to `LocalMachine` or `CurrentUser`. This setting will ensure that the secret is installed at that location on the machine. For specific behavior of how secret retrieval works, see [the documentation for the Azure VMSS Key Vault extension for Windows](/azure/virtual-machines/extensions/key-vault-windows).
+For Windows, the Certificate Store Location is allowed to either be set to `LocalMachine` or `CurrentUser`. This setting will ensure that the secret is installed at that location on the machine. For specific behavior of how secret retrieval works, see [Azure Key Vault extension for Windows](/azure/virtual-machines/extensions/key-vault-windows).
 
 #### [Linux](#tab/linux/)
 
-For Linux, the Certificate Store Location can be any directory on the machine, and the certificates will be downloaded and synced to that location. For specifics on default settings and secret behavior, see [the documentation for the Azure VMSS Key Vault extension for Linux](/azure/virtual-machines/extensions/key-vault-linux).
+For Linux, the Certificate Store Location can be any directory on the machine, and the certificates will be downloaded and synced to that location. For specifics on default settings and secret behavior, see [Key Vault virtual machine extension for Linux](/azure/virtual-machines/extensions/key-vault-linux).
 
 * * *
 
