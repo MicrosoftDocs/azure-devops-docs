@@ -9,27 +9,22 @@ ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 04/25/2025
+ms.date: 04/28/2025
 ---
 
 # Feature progress rollup sample report
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  
-This article shows you how to create a stacked bar report to display progress of Features based on completed child User Stories. The report displays the percentage complete by rollup of Story Points for a given set of active Features. An example is shown in the following image. 
+This article shows you how to create a stacked bar report to display progress of Features based on completed child User Stories. The report displays the percentage complete by rollup of Story Points for a given set of active Features. You can view similar progress bar charts from your backlog by adding a rollup column. To learn how, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
 
-:::image type="content" source="media/reports-boards/feature-progress-stacked-bar-chart.png" alt-text="Screenshot of Feature Progress stacked bar chart report.":::
-
-You can view similar progress bar charts from your backlog by adding a rollup column. To learn how, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
-
-> [!TIP]
-> When you create rollup reports using Power BI, you might encounter issues related to nested data in your datasets. Specifically, attempting to pivot a table that contains columns with nested data can result in an error message. For more information, see the section about Handling nested data.
-
-[!INCLUDE [temp](includes/sample-required-reading.md)]
+When you create rollup reports using Power BI, you might encounter issues related to nested data in your datasets. Specifically, attempting to pivot a table that contains columns with nested data can result in an error message. For more information, see the section about Handling nested data.
 
 ## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 ## Sample queries
 
@@ -253,7 +248,7 @@ For the Feature Progress report, you need to carry out the following transforms:
 - Expand the `Descendants` column into two columns: `Descendants.StateCategory` and `Descendants.TotalStoryPoints`
 - Apply **Pivot Column** transform on `Descendants.StateCategory` column to separate out individual **State** categories  
 - Replace null values in all pivoted columns.  
-- Add a custom column to represent percentage complete. The custom column displays errors if there are any null columns in the pivoted **State** columns.
+- Add a custom column that represents percentage complete. The custom column displays errors if there are any null columns in the pivoted **State** columns.
 
 To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md).
 
