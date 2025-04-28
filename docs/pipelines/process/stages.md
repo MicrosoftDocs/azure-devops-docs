@@ -67,13 +67,13 @@ This pipeline has one implicit stage and two jobs. The `stages` keyword is not u
 
 ```yaml
 jobs:
-- job: A
+- job: Build
   steps:
-  - bash: echo "A"
+  - bash: echo "Building"
 
-- job: B
+- job: Test
   steps:
-  - bash: echo "B"
+  - bash: echo "Testing"
 ```
 
 To organize your pipeline into multiple stages, use the `stages` keyword. This YAML defines a pipeline with two stages where each stage contains multiple jobs, and each job has specific steps to execute.
@@ -159,16 +159,9 @@ When you define multiple stages in a pipeline, they run sequentially by default 
 
 Pipelines must contain at least one stage with no dependencies.
 
-Use the following syntax to define multiple stages and their dependencies:
+For more information on how to define stages, see [stages in the YAML schema](/azure/devops/pipelines/yaml-schema/stages). 
 
-```yaml
-stages:
-- stage: string
-  dependsOn: string
-  condition: string
-```
-
-Example stages that run sequentially. If you don't use a `dependsOn` keyword, stages run in the order they are defined. 
+The following example stages run sequentially. If you don't use a `dependsOn` keyword, stages run in the order they are defined. 
 
 
 ```yaml
@@ -391,14 +384,14 @@ In the following example, the development stage runs automatically, while the pr
 
 ```yaml
 stages:
-- stage: development
+- stage: Development
   displayName: Deploy to development
   jobs:
   - job: DeployJob
     steps:
     - script: echo 'hello, world'
       displayName: 'Run script'
-- stage: production
+- stage: Production
   displayName: Deploy to production
   trigger: manual
   jobs:
