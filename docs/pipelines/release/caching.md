@@ -174,9 +174,9 @@ steps:
 
 To ensure isolation between caches from different pipelines and different branches, every cache is stored within a logical container called a *scope*. Scopes act as a security boundary that guarantees:
 
-1. Jobs from one pipeline can’t access caches from a different pipeline.
+- Jobs from one pipeline can’t access caches from a different pipeline.
 
-1. Jobs building pull requests can read caches from the target branch (for the same pipeline), but can't write (create) caches in the target branch's scope.
+- Jobs building pull requests can read caches from the target branch (for the same pipeline), but can't write (create) caches in the target branch's scope.
 
 When a cache step is encountered during a run, the cache identified by the key is requested from the server. The server then looks for a cache with this key from the scopes visible to the job, and returns the cache (if available). On cache save (at the end of the job), a cache is written to the scope representing the pipeline and branch. 
 
