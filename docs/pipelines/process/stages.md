@@ -63,7 +63,7 @@ jobs:
   - script: echo "Running tests"
 ```
 
-This pipeline has one implicit stage and two jobs. The `stages` keyword is not used because there is only one stage. 
+This pipeline has one implicit stage and two jobs. The `stages` keyword isn't used because there's only one stage. 
 
 ```yaml
 jobs:
@@ -84,15 +84,15 @@ stages:
   displayName: "Stage A - Build and Test"
   jobs:
   - job: A1
-    displayName: "Job A1 - Build"
+    displayName: "Job A1 - build"
     steps:
     - script: echo "Building the application in Job A1"
-      displayName: "Build Step"
+      displayName: "Build step"
   - job: A2
     displayName: "Job A2 - Test"
     steps:
     - script: echo "Running tests in Job A2"
-      displayName: "Test Step"
+      displayName: "Test step"
 
 - stage: B
   displayName: "Stage B - Deploy"
@@ -101,19 +101,20 @@ stages:
     displayName: "Job B1 - Deploy to Staging"
     steps:
     - script: echo "Deploying to staging in Job B1"
-      displayName: "Staging Deployment Step"
+      displayName: "Staging deployment step"
   - job: B2
     displayName: "Job B2 - Deploy to Production"
     steps:
     - script: echo "Deploying to production in Job B2"
-      displayName: "Production Deployment Step"
+      displayName: "Production deployment step"
 ```
 
 ::: moniker-end
 
 ::: moniker range="<=azure-devops"
 
-If you choose to specify a `pool` at the stage level, then all jobs defined in that stage use that pool unless specified at the job-level. 
+If you specify a `pool` at the stage level, all jobs in that stage use that pool unless the stage is specified at the job level.
+
 
 ```yaml
 stages:
@@ -161,7 +162,7 @@ Pipelines must contain at least one stage with no dependencies.
 
 For more information on how to define stages, see [stages in the YAML schema](/azure/devops/pipelines/yaml-schema/stages). 
 
-The following example stages run sequentially. If you don't use a `dependsOn` keyword, stages run in the order they are defined. 
+The following example stages run sequentially. If you don't use a `dependsOn` keyword, stages run in the order they're defined. 
 
 
 ```yaml
@@ -290,12 +291,12 @@ When you specify **After release** or **After stage** triggers, you can also spe
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="<=azure-devops"
-YAML pipelines don't support queuing policies. Each run of a pipeline is independent from and unaware of other runs. In other words, your two successive commits may trigger two pipelines, and both of them will execute the same sequence of stages without waiting for each other. While we work to bring queuing policies to YAML pipelines, we recommend that you use [manual approvals](approvals.md) in order to manually sequence and control the order the execution if this is of importance.
+YAML pipelines don't support queuing policies. Each run of a pipeline is independent from and unaware of other runs. In other words, your two successive commits might trigger two pipelines, and both of them will execute the same sequence of stages without waiting for each other. While we work to bring queuing policies to YAML pipelines, we recommend that you use [manual approvals](approvals.md) in order to manually sequence and control the order the execution if this is of importance.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-In some cases, you may be able to generate builds faster than
-they can be deployed. Alternatively, you may configure multiple
+In some cases, you might be able to generate builds faster than
+they can be deployed. Alternatively, you might configure multiple
 [agents](../agents/agents.md) and, for example, be creating releases from the same release pipeline
 for deployment of different artifacts. In such cases, it's useful to
 be able to control how multiple releases are queued into a
@@ -403,9 +404,9 @@ stages:
 
 ## Mark a stage as unskippable
 
-Mark a stage as `isSkippable: false` to prevent pipeline users from skipping stages. For example, you may have a YAML template that injects a stage that performs malware detection in all pipelines. If you set `isSkippable: false` for this stage, Pipeline won't be able to skip malware detection.
+Mark a stage as `isSkippable: false` to prevent pipeline users from skipping stages. For example, you might have a YAML template that injects a stage that performs malware detection in all pipelines. If you set `isSkippable: false` for this stage, your pipeline won't be able to skip malware detection.
 
-In the following example, the Malware detection stage is marked as non-skippable, meaning it must be executed as part of the pipeline run. 
+In the following example, the Malware detection stage is marked as nonskippable, meaning it must be executed as part of the pipeline run. 
 
 ```yaml
 - stage: malware_detection
@@ -416,7 +417,7 @@ In the following example, the Malware detection stage is marked as non-skippable
     ...
 ```
 
-When a stage is non-skippable, it will show with a disabled checkbox in the **Stages to run** configuration panel.
+When a stage is nonskippable, it shows with a disabled checkbox in the **Stages to run** configuration panel.
 
 :::image type="content" source="media/stages/stages-run-skip-stage.png" alt-text="Screenshot of stages to run with disabled stage. ":::
 
