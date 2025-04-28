@@ -786,6 +786,18 @@ stages:
 > By default, each stage in a pipeline depends on the one just before it in the YAML file.
 > If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
+::: moniker-end
+
+::: moniker range=">=azure-devops"
+
+Stage dependencies are displayed for pipeline runs. When a stage is expanded, you can see the execution order and upstream requirements. Stage CUS3 is dependent on WUS1, WUS2, and WUS3. 
+
+:::image type="content" source="media/stage-dependency-visualization.png" alt-text="Screenshot of stages showing dependencies. ":::
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
+
 ### Job to job dependencies within one stage
 
 At the job level within a single stage, the `dependencies` data doesn't contain stage-level information.
