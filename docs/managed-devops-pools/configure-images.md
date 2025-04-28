@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 03/25/2025
+ms.date: 04/28/2025
 ---
 
 # Configure Managed DevOps Pools images
@@ -9,6 +9,9 @@ ms.date: 03/25/2025
 Managed DevOps Pools provides you with several options for virtual machine images for running pipelines in your pool. You can create your pool using selected Azure Marketplace VM images, use your own custom Azure Compute Gallery images, or use the same images as Azure Pipelines Microsoft-hosted agents.
 
 Managed DevOps Pools can be configured with a single image or multiple images. When your pool has multiple images, your pipelines should specify the image they want to run on using [aliases](#use-multiple-images-per-pool-with-aliases).
+
+> [!IMPORTANT]
+> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
 
 ## Choose your pool's image
 
@@ -224,6 +227,9 @@ Each image includes the following installed software.
 | Azure Pipelines - Ubuntu 22.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md) |
 | Azure Pipelines - Ubuntu 20.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2004-Readme.md) |
 
+> [!IMPORTANT]
+> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
+
 ## Selected marketplace images
 
 Managed DevOps Pools provides a set of curated Microsoft published Azure Marketplace VM images for use in your pools.
@@ -259,6 +265,9 @@ To specify selected marketplace image, provide the resource ID of the image usin
 ```
 
 * * *
+
+> [!IMPORTANT]
+> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
 
 ## Azure Compute Gallery images
 
