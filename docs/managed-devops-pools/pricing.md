@@ -1,45 +1,45 @@
 ---
 title: Managed DevOps Pools pricing
 description: Learn how pricing is calculated for your Managed DevOps Pools.
-ms.date: 11/13/2024
+ms.date: 04/28/2025
 ms.topic: concept-article
+ms.custom: peer-review-program
 #Customer intent: As a platform engineer, I want to understand how Managed DevOps Pools pricing is determined so that I can estimate my projected cost.
 ---
 
-# Pricing
+# Managed DevOps Pools pricing
 
-Managed DevOps Pools pricing is determined by the cost of the Azure services your pool uses, like compute, storage, and data egress, combined with the standard Azure DevOps Services pricing for self-hosted agents. This article describes how to estimate and project the costs for your Managed DevOps Pools.
-
-## Azure DevOps Services parallel job pricing
-
-Azure DevOps refers to the capability to run pipeline jobs concurrently as **parallel jobs**. If you have five parallel jobs, you can run five pipelines at the same time. If more than five pipelines are queued, the first five start, and the remaining pipelines remain in the queue until one of the previous pipelines completes.
-
-Managed DevOps Pools agents are considered to be self-hosted agents by Azure DevOps Services. Azure DevOps Services provides self-hosted agents one free parallel job, and charges $15.00 per month for each additional parallel job. If you want the capacity to run five jobs in parallel, you must pay for four additional parallel jobs at $15.00 each, for an additional $60.00 per month.
-
-Managed DevOps Pools uses the [Maximum agents](./configure-pool-settings.md#maximum-agents) to configure the maximum number of agents that it makes available to run pipelines. If you set **Maximum agents** to **5**, ensure that you have five parallel jobs available in your organization for best performance. Parallel jobs are paid and configured at the Azure DevOps organization level and are shared with all pipelines running in any project in the organization. If you set **Maximum agents** to **5** but only have the default free parallel job, you can only run a single pipeline at a time.
-
-For more information, see [Configure and pay for parallel jobs](../pipelines/licensing/concurrent-jobs.md?tabs=self-hosted).
+Managed DevOps Pools pricing is a combination of the cost of the Azure services your pool uses, like compute, storage, and data egress, and the standard Azure DevOps Services parallel jobs pricing for self-hosted agents. This article describes how to estimate and project the costs for your Managed DevOps Pools.
 
 ## Azure services pricing
 
-The Azure services your pool uses, like compute, storage, and data egress, are billed at the standard Azure pricing rates. For more details, see:
+The primary cost for Managed DevOps Pools is the cost of the Azure services that your pool uses, like compute, storage, and data egress, which are billed at the standard Azure pricing rates. For more details, see:
 
 * [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/)
-* [View and download your Azure usage and charges](/azure/cost-management-billing/understand/download-azure-daily-usage).
+* [View and download your Azure usage and charges](/azure/cost-management-billing/understand/download-azure-daily-usage)
 
 For additional details about the Azure Services used by Managed DevOps Pools and strategies for reducing cost, see [Manage cost and performance](./manage-costs.md).
 
+## Azure DevOps Services parallel job pricing
+
+The secondary cost for Managed DevOps Pools is the Azure DevOps parallel jobs cost. In Azure DevOps, a parallel job refers to the compute capacity to run a [pipeline job](../pipelines/process/phases.md). Managed DevOps Pools agents are considered to be self-hosted agents, and run using self-hosted parallel jobs. Azure DevOps Services provides organizations one free self-hosted parallel job with unlimited minutes, and charges $15.00 per month for each additional self-hosted parallel job with unlimited minutes. If you want the capacity to run five concurrent pipeline jobs on Managed DevOps Pools agents, you must pay for four additional self-hosted parallel jobs at $15.00 each, for a total of $60.00 per month. The Azure DevOps parallel jobs cost is a fixed monthly cost, and does not increase or decrease based on the time your agents are provisioned or the duration of your pipeline jobs.
+
+For more information, see [Configure and pay for parallel jobs](../pipelines/licensing/concurrent-jobs.md?tabs=self-hosted).
+
+> [!NOTE]
+> The Azure DevOps self-hosted parallel jobs count for your organization determines how many self-hosted agents can run jobs concurrently in your Azure DevOps organization, including your pipelines running on Managed DevOps Pools agents. The parallel jobs count is different than the Managed DevOps Pools [Maximum agents](./configure-pool-settings.md#maximum-agents) setting, which configures the maximum number of agents that your pool makes available to run pipelines. If you set **Maximum agents** to **5**, ensure that you have at least five self-hosted parallel jobs available in your organization. Parallel jobs are paid and configured at the Azure DevOps organization level and are shared with all pipelines running in any project in the organization. If you set **Maximum agents** to **5** but only have the default free self-hosted parallel job, you can only run a single pipeline at a time.
+
 ## Estimating cost
 
-A basic formula for estimating the cost for Managed DevOps Pools is to determine how many hours of jobs are run per month multiplied by the cost per hour.
+A basic formula for estimating monthly Managed DevOps Pools cost is to combine fixed costs like [Azure DevOps Services parallel job pricing](#azure-devops-services-parallel-job-pricing), non-hourly Azure services costs like [Azure Storage pricing](https://azure.microsoft.com/pricing/details/storage/blobs/), [Managed Disks pricing](https://azure.microsoft.com/pricing/details/managed-disks/), and [standard data egress charges](https://azure.microsoft.com/pricing/details/bandwidth/), and hourly Azure services cost, primarily [Virtual Machines pricing](https://azure.microsoft.com/pricing/details/virtual-machines/linux/), which is typically the largest portion of your monthly Managed DevOps Pools cost.
 
-To estimate the number of hours, multiply the number of projected jobs by the projected run time of the jobs. For example, if your typical job takes two hours to run, runs 100 times per day, five days per week, your estimated hours would be 1000 hours per week, or approximately 4000 hours per month. If your jobs transfer data that is subject to [standard data egress charges](https://azure.microsoft.com/pricing/details/bandwidth/), factor this pricing into your estimates.
+To estimate the number of hours used when projecting the hourly Azure services cost, multiply the number of projected jobs by the projected run time of the jobs. For example, if your typical job takes two hours to run, runs 100 times per day, five days per week, your estimated hours would be 1000 hours per week, or approximately 4000 hours per month.
 
 If you are using [standby agents](./configure-scaling.md#standby-agent-mode), factor in the hours that the agents are online for standby but not actively running jobs and add that to the estimated hours. To use standby agents, you configure a provisioning schedule to keep agents online to reduce the startup time to run jobs. If you provisioned five agents to be on standby during a 40 hour work week, you would be paying for 200 hours of machine time per week, even during times when no jobs were running.
 
-To find the cost per hour, [review the pricing](https://azure.microsoft.com/pricing/details/virtual-machines/linux/) for the [Azure VM size you're using](/azure/virtual-machines/sizes) for your pool. If you're using a data disk, see [Managed Disks pricing](https://azure.microsoft.com/pricing/details/managed-disks/).
+To find the Virtual machine cost per hour, [review the pricing](https://azure.microsoft.com/pricing/details/virtual-machines/linux/) for the [Azure VM size you're using](/azure/virtual-machines/sizes) for your pool.
 
-If your selected Azure VM size is 12 cents an hour, and you are projected to run 4000 hours of jobs, your projected monthly cost would be $480.
+If your selected Azure VM size is 12 cents an hour, and you are projected to run 4000 hours of jobs, your projected monthly cost for hourly services would be $480.
 
 To view your previous Azure resource usage, see [View and download your Azure usage and charges](/azure/cost-management-billing/understand/download-azure-daily-usage).
 
