@@ -1,7 +1,5 @@
 - name: Hosted XML process overview
   href: ../hosted-xml-process-model.md
-- name: Differences between Server and Service
-  href: ../import-process/differences.md
 - name: Differences between Hosted XML and Inherited
   href: ../inheritance-versus-hosted-xml.md
 - name: Customize a Hosted XML process
