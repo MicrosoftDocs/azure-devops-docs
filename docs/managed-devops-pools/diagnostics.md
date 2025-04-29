@@ -38,7 +38,7 @@ Diagnostic settings in Azure are used to collect resource logs. An Azure resourc
         "properties": {
             "RequestId": "RequestId_Placeholder",
             "AgentName": "7ec0d355c",
-            "Image": "/canonical/0001-com-ubuntu-server-focal/20_04-lts-gen2/20.04.202407040",
+            "Image": "/canonical/0001-com-ubuntu-server-focal/24_04-lts-gen2/24.04.202407040",
             "Sku": "Standard_D2ads_v5",
             "Status": "Completed"
         }
