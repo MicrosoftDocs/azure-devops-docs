@@ -247,7 +247,7 @@ To specify a selected marketplace image, provide the resource ID of the image us
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/Publishers/canonical/ArtifactTypes/VMImage/Offers/ubuntu-24_04-lts/Skus/server/versions/latest"
     }
 ]
 ```
@@ -259,7 +259,7 @@ To specify selected marketplace image, provide the resource ID of the image usin
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/Publishers/canonical/ArtifactTypes/VMImage/Offers/ubuntu-24_04-lts/Skus/server/versions/latest"
     }
 ]
 ```
@@ -299,19 +299,19 @@ To specify an Azure Compute Gallery image, provide the resource ID of the image 
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/resourceGroups/resource_group_placeholder/providers/Microsoft.Compute/galleries/my_images/images/Ubuntu2404"
     }
 ]
 ```
 
 #### [Azure CLI](#tab/azure-cli/)
 
-To specify selected marketplace image, provide the resource ID of the image using the `resourceId` property.
+To specify an Azure Compute Gallery image, provide the resource ID of the image using the `resourceId` property.
 
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/resourceGroups/resource_group_placeholder/providers/Microsoft.Compute/galleries/my_images/images/Ubuntu2404"
     }
 ]
 ```
