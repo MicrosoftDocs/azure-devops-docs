@@ -19,7 +19,7 @@ Azure Artifacts provides developers with a streamlined way to manage all their d
 Azure Artifacts supports multiple package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
 > [!NOTE]
-> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](#increase-azure-artifacts-storage-limit) to ensure you have the appropriate resources.
+> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](#increase-artifacts-storage-limit) to ensure you have the appropriate resources.
 
 ## Prerequisites
 
@@ -168,7 +168,7 @@ The artifact storage UI, accessible through your organization or project setting
 
 ## Increase Artifacts storage limit 
 
-[!INCLUDE [](includes/increasestorage-limit.md)]
+[!INCLUDE [](includes/increase-storage-limit.md)]
 
 ## FAQs
 
@@ -183,7 +183,7 @@ A: You are charged for all package types (npm, NuGet, Python, Maven, Cargo, and 
 
 #### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: Removing your Azure Subscription from your Azure DevOps organization limits your access to the free tier. If your storage usage exceeds 2 GiB, you will have read-only access to packages. To publish new packages, you must reduce your storage usage below 2 GiB. Alternatively, you can reconnect an Azure subscription to your organization and set up billing to [upgrade your storage tier](#increase-azure-artifacts-storage-limit).
+A: Removing your Azure Subscription from your Azure DevOps organization limits your access to the free tier. If your storage usage exceeds 2 GiB, you will have read-only access to packages. To publish new packages, you must reduce your storage usage below 2 GiB. Alternatively, you can reconnect an Azure subscription to your organization and set up billing to [upgrade your storage tier](#increase-artifacts-storage-limit).
 
 #### Q: Why does my storage consumption show as 0 GiB even though I'm storing Artifacts?
 
