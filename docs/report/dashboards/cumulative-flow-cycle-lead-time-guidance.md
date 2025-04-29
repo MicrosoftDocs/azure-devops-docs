@@ -15,11 +15,11 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md). 
+You can use cumulative flow diagrams (CFDs) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md). 
 
 ::: moniker range="<=azure-devops"
 
-Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards. 
+Alternatively, you can add [lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards.
 
 ::: moniker-end
 
@@ -27,9 +27,9 @@ Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lea
 
 :::row:::
    :::column span="2":::
-      The Continuous flow CFD provides the chart most favored by teams that follow a lean process.  
+      The continuous flow CFD provides the chart that's most favored by teams that follow a lean process.  
       
-      However, many teams have begun combining lean practices with Scrum or other methodologies which means they practice lean within the span of an iteration or sprint. In this situation the diagram takes on a slightly different look and provides two additional, and very valuable, pieces of information as shown in the next chart.
+      However, many teams combine lean practices with Scrum or other methodologies. As a result, they use lean practices within the span of an iteration or sprint. In this situation, the diagram takes on a slightly different look. It provides two extra, and very valuable, pieces of information, as shown in the next chart, the fixed period CFD.
    :::column-end:::
    :::column span="3":::
       **Continuous flow**  
@@ -38,9 +38,9 @@ Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lea
 :::row-end:::
 :::row:::
    :::column span="2":::
-      The Fixed period CFD shown here is for a completed sprint.  
+      The fixed period CFD shown here is for a completed sprint.  
       
-      The top line represents the scope set for the sprint. And, because the work must be completed by the last day of the sprint, the slope of the Closed state indicates whether or not a team is on track to complete the sprint. The easiest way to think of this view is as a burnup chart.  
+      The top line represents the scope set for the sprint. Because the work must be completed by the last day of the sprint, the slope of the Closed state indicates whether a team is on track to complete the sprint. The easiest way to think of this view is as a burnup chart.
       
       The data is always depicted with the first step in the process as the upper left and the last step in the process as the bottom right.  
    :::column-end:::
@@ -49,11 +49,10 @@ Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lea
       ![CFD metrics, fixed period.](media/cfd-scope-change.png) 
    :::column-end:::
 :::row-end:::
- 
 
 ## Chart metrics  
 
-CFD charts display the count of work items grouped by state/column over time. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
+CFD charts display the count of work items grouped by state or column over time. The two primary metrics that are used for tracking are the cycle time and lead time. You can extract these metrics from the chart.  
 
 ---
 :::row:::
@@ -67,28 +66,28 @@ CFD charts display the count of work items grouped by state/column over time. Th
 ---
 :::row:::
    :::column span="1":::
-      **Cycle Time** <sup>1</sup>
+      **Cycle time** <sup>1</sup>
    :::column-end:::
    :::column span="3":::
-      Measures the time it takes to move work through a single process or workflow state. Calculation is from the start of one process to the start of the next process. 
+      The time it takes to move work through a single process or workflow state. The calculation is from the start of one process to the start of the next process. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **Lead Time** <sup>1</sup>
+      **Lead time** <sup>1</sup>
    :::column-end:::
    :::column span="3":::
-      *For a continuous flow process*: Measures the amount of time it takes from when a request is made (such as adding a proposed user story) until that request is completed (closed).  
+      *For a continuous flow process*: The time from when a request is made (such as adding a proposed user story) until that request is completed (closed).  
       
-      *For a sprint or fixed period process*: Measures the time from when work on a request begins until the work is completed  (i.e. the time from Active to Closed).
+      *For a sprint or fixed period process*: The time from when work on a request begins until the work is completed (for example, the time from the Active to the Closed state).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **Work in Progress**
+      **Work in progress**
    :::column-end:::
    :::column span="3":::
-      Measures the amount of work or number of work items that are actively being worked.
+      The amount of work or number of work items that are actively being worked on.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -96,21 +95,21 @@ CFD charts display the count of work items grouped by state/column over time. Th
       **Scope**
    :::column-end:::
    :::column span="3":::
-      Represents the amount of work committed for the given period of time. Only applies to fixed period processes.
+      The amount of work committed for the given period of time. This metric only applies to fixed period processes.
    :::column-end:::
 :::row-end:::
 --- 
 <sup>1</sup> The CFD widget (Analytics) and built-in CFD chart (work tracking data store) don't provide discrete numbers on Lead Time and Cycle Time. However, the [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md) do provide these numbers.  
 
-There's a well-defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more WIP, the longer the cycle time, which also leads to longer lead times. The opposite is also true&mdash;the less WIP, the shorter the cycle and lead time. When the development team focuses on fewer items, they reduce the cycle and lead times. This correlation is a key reason why you can and should set [Work In Progress limits on the board](../../boards/boards/wip-limits.md).  
+There's a well-defined correlation between lead time or cycle time and work in progress (WIP). The more WIP there is, the longer the cycle time is. This correlation also leads to longer lead times. The opposite is also true&mdash;the less WIP there is, the shorter the cycle and lead time are. When the development team focuses on fewer items, they reduce the cycle and lead times. This correlation is a key reason why you can and should set [work in progress limits on the board](../../boards/boards/wip-limits.md).  
 
-The count of work items indicates the total amount of work on a given day. In a fixed period CFD, a change in this count indicates scope change for a given period. In a continuous flow CFD, it indicates the total amount of work in the queue and completed for a given day.  
+The count of work items indicates the total amount of work on a given day. In a fixed period CFD, a change in this count indicates scope change for a given period. In a continuous flow CFD, it indicates the total amount of work that's in the queue and completed for a given day.  
 
-Decomposing work into specific board columns provides a view where work is in process. This view provides insights on where work is moving smoothly, where there are blockages and where no work is being done at all. It's difficult to decipher a tabular view of the data, however, the visual CFD chart provides evidence that something is happening in a given way. 
+Decomposing work into specific board columns provides a view where work is in process. This view provides insights on where work is moving smoothly, where there are blockages, and where no work is being done at all. It's difficult to decipher a tabular view of the data. However, the visual CFD chart provides evidence when something is happening in a given way. 
 
-## Identify issues, take appropriate actions 
+## Identify issues and take appropriate actions 
  
-The CFD answers several specific questions and based on the answer, actions can be taken to adjust the process to move work through the system. Let's look at each of those questions here.
+The CFD answers several specific questions. Based on the answers, you can take actions to adjust the process to move work through the system. Let's look at each of those questions here.
 
 ### Will the team complete work on time? 
  
