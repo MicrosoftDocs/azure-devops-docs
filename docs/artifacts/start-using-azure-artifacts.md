@@ -164,19 +164,11 @@ The artifact storage UI, accessible through your organization or project setting
 
 - [Organization-level storage](./artifact-storage.md#organization-level-storage): Provides an overview of total storage usage including consumption by project and artifact type.
 
-## Increase Azure Artifacts storage limit 
-
-Azure Artifacts provides 2 GiB of free storage for each organization. When your organization reaches the maximum storage limit, publishing new artifacts will no longer be possible. To continue, you can either delete some of your existing artifacts or follow these steps to increase your storage limit:
-
-1. [Set up billing for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing-for-your-organization).
-
-1. Sign in to your Azure DevOps organization, select **Organization settings** > **Billing**, and adjust your Artifacts usage limit by selecting **No limit, pay for what you use** from the dropdown menu.
-
-1. Select **Save** when you're done.
-
-   :::image type="content" source="media/adjust-artifacts-usage-limit.png" alt-text="Screenshot showing adjusted usage limit for Artifacts on Billing page.":::
-
 ::: moniker-end
+
+## Increase Artifacts storage limit 
+
+[!INCLUDE [](includes/increasestorage-limit.md)]
 
 ## FAQs
 
