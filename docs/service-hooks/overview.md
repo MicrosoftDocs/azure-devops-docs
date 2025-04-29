@@ -46,7 +46,7 @@ The following services are available as the target of service hooks. For more in
 |[App Center](/appcenter/dashboard/bugtracker/)   | Work item updated | Send notification. Subscriptions are managed through App Center. |
 |[AppVeyor](https://www.appveyor.com/docs/)     | Code pushed        |Trigger an AppVeyor build. Subscriptions are managed through AppVeyor. |
 |[Azuqua](https://go.microsoft.com/fwlink/?LinkID=521778)   | All | Post event to FLO. Subscriptions are managed through Azuqua. |
-|[Azure App Service](https://go.microsoft.com/fwlink/?LinkId=613645)  | Code pushed | Deploy web app. Subscriptions are managed through Azure App Service. |
+|[Azure App Service](https://azure.microsoft.com/products/app-service)  | Code pushed | Deploy web app. Subscriptions are managed through Azure App Service. |
 |[Azure Service Bus](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)    | All | Send a message to a Notification Hub, Service Bus Queue, or Service Bus Topic. Subscription is managed through Azure App Service.  |
 |[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)   |  All | Insert a message in a Storage Queue. |
 |[Bamboo](https://confluence.atlassian.com/bamboo/using-webhooks-1018270680.html)    | Build completed, Code pushed | Queue a build. |
