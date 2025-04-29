@@ -1,7 +1,7 @@
 ---
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.date: 02/21/2025
+ms.date: 04/29/2025
 ---
 
 # Demands
@@ -53,13 +53,13 @@ If you have multiple images in your pool, you can configure your pipelines to us
 > [!IMPORTANT]
 > If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?&tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
 
-In the following example, a pipeline is configured to run using an image that is configured with an `ubuntu-20.04-gen2` alias.
+In the following example, a pipeline is configured to run using an image that is configured with an `ubuntu-24.04-gen2` alias.
 
 ```yml
 pool: 
   name: fabrikam-dev-pool # Name of Managed DevOps Pool
   demands:
-  - ImageOverride -equals ubuntu-20.04-gen2
+  - ImageOverride -equals ubuntu-24.04-gen2
 ```
 
 > [!IMPORTANT]
