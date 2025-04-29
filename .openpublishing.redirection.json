@@ -7165,6 +7165,10 @@
     {
       "source_path": "docs/extend/high-risk-extensions.md",
       "redirect_url": "/azure/devops/extend/overview"
+    },
+    {
+      "source_path": "docs/organizations/settings/work/import-process/differences.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/work/import-process/customize-process#differences"
     }
   ]
 }
