@@ -45,6 +45,10 @@ Azure Artifacts is a highly scalable package management solution that enables de
 
 ::: moniker-end
 
+## Increase Artifacts storage limit 
+
+[!INCLUDE [](../includes/increase-storage-limit.md)]
+
 ## Related articles
 
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)
