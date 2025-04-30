@@ -8,7 +8,7 @@ ms.topic: concept-article
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2025
+ms.date: 04/30/2025
 ---
 
 # C# client library samples
@@ -16,12 +16,6 @@ ms.date: 04/10/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 The following samples show you how to extend and integrate with Azure DevOps using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
-
-## Samples in GitHub
-
-On the [.NET samples page](https://github.com/microsoft/azure-devops-dotnet-samples) in GitHub, you can find many samples with instructions on how to run them.
-
-## Other samples
 
 The REST examples in this article require the following NuGet packages:
 
