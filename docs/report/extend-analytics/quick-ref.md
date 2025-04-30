@@ -166,8 +166,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Aggregate data, OData aggregation extension](aggregated-data-analytics.md#aggregation-extension)  
       - [Aggregate data, simple count](wit-analytics.md#return-count-items)  
       - [Collection-scoped queries](account-scoped-queries.md#org-scope)  
-      - [Construct a basic query](../analytics/analytics-query-parts.md#construct-basic-query)  
-      - [Create an Analytics widget](example-analytics-widget.md)  
+      - [Construct a basic query](../analytics/analytics-query-parts.md#construct-basic-query)
       <br/>
       - [Enforce server-side paging](../analytics/analytics-query-parts.md#server-force-paging)  
       - [Filter aggregated results](aggregated-data-analytics.md#filter-aggregate)  

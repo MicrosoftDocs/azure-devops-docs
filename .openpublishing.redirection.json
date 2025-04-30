@@ -7169,6 +7169,14 @@
     {
       "source_path": "docs/organizations/settings/work/import-process/differences.md",
       "redirect_url": "/previous-versions/azure/devops/organizations/settings/work/import-process/customize-process#differences"
+    },
+    {
+      "source_path": "docs/report/extend-analytics/example-analytics-widget.md",
+      "redirect_url": "/azure/devops/extend/develop/add-dashboard-widget"
+    },
+    {
+      "source_path": "docs/report/extend-analytics/add-chart.md",
+      "redirect_url": "/azure/devops/extend/develop/add-dashboard-widget"
     }
   ]
 }

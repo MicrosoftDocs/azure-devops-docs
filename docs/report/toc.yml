@@ -97,14 +97,6 @@
     href: ../project/wiki/markdown-guidance.md?toc=/azure/devops/report/toc.json
   - name: Configure or add a project portal
     href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/report/toc.json
-- name: Extension samples
-  items:
-  - name: Add a dashboard widget
-    href: ../extend/develop/add-dashboard-widget.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Add a chart widget
-    href: ../extend/develop/add-chart.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Add an Analytics widget
-    href: extend-analytics/example-analytics-widget.md
 - name: REST API Reference
   items:
   - name: Dashboards
