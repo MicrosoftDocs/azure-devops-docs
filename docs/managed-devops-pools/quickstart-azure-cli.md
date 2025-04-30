@@ -27,7 +27,7 @@ This article shows you how to create a Managed DevOps Pool using Azure CLI, and 
 
 Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and run the following commands. If you're using [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) you don't need to run `az login` unless you want to use a different account.
 
-1. Sign in the to Azure CLI.
+1. Sign in to the Azure CLI.
  
    ```azurecli
    az login
