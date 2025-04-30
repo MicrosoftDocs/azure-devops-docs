@@ -4249,14 +4249,6 @@
       ]
     },
     {
-      "source_path": "docs/report/extend-analytics/example-analytics-widget.md",
-      "redirect_url": "/previous-versions/azure/devops/report/extend-analytics/example-analytics-widget",
-      "redirect_document_id": false,
-      "monikers": [
-        "azure-devops-2019"
-      ]
-    },
-    {
       "source_path": "docs/report/extend-analytics/odata-api-version.md",
       "redirect_url": "/previous-versions/azure/devops/report/extend-analytics/odata-api-version",
       "redirect_document_id": false,
