@@ -18,7 +18,7 @@ This article shows you how to create a Managed DevOps Pool using Azure CLI, and 
 
 * Azure CLI prerequisites
 
-  * If you want to run the Azure CLI commands on your local machine, see the [Azure CLI installation instructions](/cli/azure/install-azure-cli). If you already have Azure CLI installed, run `az version` to check your version. The Azure CLI extensions for Managed DevOps Pools requires Azure CLI version 2.57.0 or higher. If your Azure CLI is lower than 2.57.0, run `az upgrade`. For more information, see [How to update the Azure CLI](/cli/azure/update-azure-cli).
+  * If you want to run the Azure CLI commands on your local machine, see the [Azure CLI installation instructions](/cli/azure/install-azure-cli). If you already have Azure CLI installed, run `az version` to check your version. The Azure CLI extension for Managed DevOps Pools requires Azure CLI version 2.57.0 or higher. If your Azure CLI is lower than 2.57.0, run `az upgrade`. For more information, see [How to update the Azure CLI](/cli/azure/update-azure-cli).
   * If you want to use [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) through your browser, follow the instructions in [Get started with Azure Cloud Shell ephemeral sessions](/azure/cloud-shell/get-started/ephemeral) to register the **Microsoft.CloudShell** namespace. You only need to register the namespace once per subscription.
 
    The following examples use bash, so if you are using Azure Cloud Shell, choose **Bash** when starting Azure Cloud Shell.
@@ -59,11 +59,8 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
     export POOL_NAME="mdpPool$RANDOM_ID"
     export DEV_CENTER_NAME="mdpDevCenter$RANDOM_ID"
     export DEV_CENTER_PROJECT_NAME="mdpDevCenterProject$RANDOM_ID"
-    ```
 
-2. Run the following commands to review your resource names.
-
-    ```bash
+    # Echo the generated resource names
     echo $RESOURCE_GROUP_NAME
     echo $POOL_NAME
     echo $DEV_CENTER_NAME
@@ -227,7 +224,7 @@ Create the following three files and save them to the folder where you plan to r
 
 ## Create the Managed DevOps Pool
 
-1. un the following command, which installs the Azure CLI `mdp` extension if it's not installed, and updates it to the latest version if it's already installed.
+1. Run the following command, which installs the Azure CLI `mdp` extension if it's not installed, and updates it to the latest version if it's already installed.
 
    ```azurecli
     az extension add --name mdp --upgrade
