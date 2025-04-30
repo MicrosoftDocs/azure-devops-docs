@@ -1,24 +1,27 @@
 ---
-title: Use OData queries to generate Power BI reports  
+title: Use OData Queries to Generate Power BI Reports  
 titleSuffix: Azure DevOps
-description: Learn how to use OData queries to create several sample Power BI reports.
+description: See where to find sample OData queries you can use to generate popular Power BI reports for Azure DevOps services. Find out how to get started with the queries.
 ms.subservice: azure-devops-analytics
 ms.custom: powerbisample
 ms.author: chcomley
 author: chcomley
-ms.topic: sample
+ms.topic: overview
 monikerRange: "<=azure-devops"
-ms.date: 12/12/2022
+ms.date: 04/29/2025
+# customer intent: As a team member, I want to become familiar with the sample queries that are available so that I can generate popular Power BI reports for services in Azure DevOps.
 ---
 
 # Overview of sample reports using OData queries
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-In this article, we provide samples for the most popular reports:
+You can use Open Data Protocol (OData) queries to generate Power BI reports. For various services in Azure DevOps, sample queries are available for generating numerous popular reports. This article provides an overview of the sample reports and shows you how to get started with them.
 
-::: moniker range=">= azure-devops-2020"
----
+## Sample reports
+
+The following articles provide queries and steps for generating the sample reports.
+
 :::row:::
    :::column span="1":::
       **Azure Boards**
@@ -30,78 +33,69 @@ In this article, we provide samples for the most popular reports:
 ---
 :::row:::
    :::column span="1":::
-      [!INCLUDE [temp](includes/sample-fulllist.md)]
+      [!INCLUDE [Azure Boards sample reports](includes/sample-fulllist.md)]
    :::column-end:::
    :::column span="1":::
-      [!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
+      [!INCLUDE [Azure Test Plans sample reports](includes/sample-full-list-test-plans.md)]
    :::column-end:::
 :::row-end:::
 ---
 
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
-
---- 
-::: moniker-end
+[!INCLUDE [Azure Pipelines sample reports](includes/sample-full-list-pipelines.md)]
 
 All sample report articles provide the following sections and information: 
 
-* **Sample queries** - The Power BI Query and raw OData query used to pull data into Power BI along with other sample queries.
-* **Transform data in Power BI** - Steps to transform the data into a reportable format
-* **Create the report** - Steps to create a simple report from the data.
+- **Sample queries** - The Power BI query and raw OData query used to pull data into Power BI along with other sample queries
+- A section about transforming data in Power BI - Steps to transform the data into a reportable format by expanding columns or changing column data types
+- **Create the report** - Steps to create a basic report from the data
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
-## A Power BI query
+## Run a Power BI query
     
-Get started quickly with the following steps that embed the OData query in the Power BI query. The query can be pasted directly into Power BI's Advanced Query editor as follows:
+To get started embedding an OData query in a Power BI query, take the following steps. You can paste queries directly into the Advanced Editor in Power BI.
 
-1. Select **Get Data**, and then **Blank Query**.
+1. In Power BI, select **Get data**, and then select **Blank query**.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI, Blank Query.](media/BlankQuery.png)
+   :::image type="content" source="media/blank-query.png" alt-text="Screenshot of a blank report in Power BI Desktop. On the ribbon, Get data is expanded. Get data and Blank query are highlighted.":::
 
-2. From the Power BI Query editor, select **Advanced Editor**.
+1. In the Power BI Power Query Editor, select **Advanced Editor**.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI, Select Advanced Editor.](media/AdvancedEditor.png)
+   :::image type="content" source="media/advanced-editor.png" alt-text="Screenshot of the Power BI Power Query Editor. On the ribbon, in the Query group, Advanced Editor is highlighted.":::
 
-3. The Advanced Editor window opens.
+   The Advanced Editor window opens.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI, Advanced Editor.](media/odatapowerbi-advancededitor.png)
+   :::image type="content" source="media/odata-power-bi-advanced-editor.png" alt-text="Screenshot of the Advanced Editor window in Power BI. A sparsely populated field is available for editing a query.":::
 
-4. Replace the contents with one of the sample queries provided in the linked articles listed earlier in this article.  
+1. Replace the contents with a sample query. For sample queries, see the linked articles listed earlier in this article.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI, Advanced Editor, Pasted Query.](media/odatapowerbi-advancededitor-pasted.png)
+   :::image type="content" source="media/odata-power-bi-advanced-editor-pasted.png" alt-text="Screenshot of the Advanced Editor window in Power BI. The query field contains a query for bugs. The query syntax includes placeholders." lightbox="media/odata-power-bi-advanced-editor-pasted.png":::
 
-5. The sample queries have strings that must be substituted with your values, such as {organization} and {project}.
+1. Replace any placeholder strings in the query with your values:
 
-    * `{organization}` - Your organization name 
-    * `{project}` - Your team project name. Or omit "/{project}" entirely, for a cross-project query.
+   - `{organization}` - Your organization name.
+   - `{project}` - Your team project name. For a query that spans multiple projects, omit `/{project}` entirely.
 
-    Depending on the sample query, there may be one or more other strings to replace, like:
+   Some sample queries contain other placeholders that you also need to replace, such as the following strings:
 
-    * `{areapath}` - Your Area path. Format: `Project\Level1\Level2`
-    * `{iterationpath}` - Your Iteration path. Format: `Project\Level1\Level2`
-    * `{startdate}` - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
+   - `{areapath}` - Your area path, in the following format: `Project\Level1\Level2`.
+   - `{iterationpath}` - Your iteration path, in the following format: `Project\Level1\Level2`.
+   - `{startdate}` - The date to start your trend report on, in the following format: `YYYY-MM-DDZ`. For example, `2025-04-01Z` represents April 1, 2025. Don't enclose the date in quotation marks.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI, Advanced Editor, Replace strings in query.](media/odatapowerbi-advancededitor-replaced.png)
+   :::image type="content" source="media/odata-power-bi-advanced-editor-replaced.png" alt-text="Screenshot of the Advanced Editor window. The organization, project, area path, and start date use actual values and are highlighted." lightbox="media/odata-power-bi-advanced-editor-replaced.png":::
 
-6. To execute the query, select **Done**. 
+1. To run the query, select **Done**. 
 
-    If you've never connected to your account, Power BI may require you to authenticate. For details, see [Client authentication options](client-authentication-options.md).
+   When you connect to your account for the first time, Power BI requires you to authenticate. For detailed information, see [Enter client credentials in Power BI or Excel](client-authentication-options.md).
 
-## Raw OData query
+## Run a raw OData query
 
-Most sample reports provide an OData query in case you want to modify and test the OData query separately before using it in Power BI. This method provides more flexibility, but involves other steps before using the OData Query in Power BI as described in [Connect using Power BI and OData queries](odataquery-connect.md)
+Besides a Power BI query, most sample reports also provide an OData query. You can modify and test the OData query separately before you use it in Power BI. This method provides more flexibility, but it involves extra steps. For more information, see [Connect with data by using Power BI and OData queries](odataquery-connect.md).
 
-For more information on how to write OData queries against Analytics, see [OData Query Quick Reference](../extend-analytics/quick-ref.md) 
+For more information on how to write OData queries against Analytics data, see [Sample reports and quick reference index](../extend-analytics/quick-ref.md).
 
-## Related articles
+## Related content
 
-- [Data available from Analytics](data-available-in-analytics.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [Analytics views dataset design](data-connector-dataset.md)
 - [OData API versioning](../extend-analytics/odata-api-version.md)

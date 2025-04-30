@@ -628,7 +628,7 @@
       href: reports/pipelinereport.md
     - name: Monitor your pipelines with dashboard widgets
       href: reports/pipeline-widgets.md
-- name: Security
+- name: Security & permissions
   items:
   - name: Set retention policies
     displayName: service endpoints, artifact retention, test retention, copy files
@@ -683,9 +683,9 @@
       href: policies/permissions.md#service-connection-permissions
     - name: Task group permissions
       href: policies/permissions.md#task-group-permissions
-  - name: Security best practices
+  - name: Security
     items:
-    - name: Overview
+    - name: Secure Azure Pipelines
       displayName: security, repo protection, malicious code, assume breach
       href: security/overview.md
     - name: Approach to securing YAML pipelines

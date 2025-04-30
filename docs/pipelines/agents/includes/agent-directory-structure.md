@@ -2,8 +2,7 @@
 ms.topic: include
 ms.service: azure-devops-pipelines
 ms.manager: mijacobs
-ms.author: v-catherbund
-author: cebundy
+ms.author: sdanie
 ms.date: 01/28/2025
 ---
 

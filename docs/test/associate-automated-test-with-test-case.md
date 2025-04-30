@@ -115,9 +115,9 @@ Tests that use the .NET core framework **can** be associated with a test case
 
 <a name="xaml-build"></a>
 
-### Q: Can I associate my tests from my GitHub repo?
+### Q: Can I use tests from my GitHub repositories for association in Azure DevOps?
 
-**A**: As long as you run your automated tests in Azure Pipelines with the VSTest task, or you report the test results with the PublishTestResults task, the automated tests will be available for association to test cases. 
+**A**: As long as you run your automated tests in Azure Pipelines with the VSTest task, or you report the test results with the PublishTestResults task, the automated tests will be available for association to test cases, via the user experience in Azure DevOps. 
 Please keep in mind that the test must run at least once before it becomes available for association.
 
 <a name="xaml-build"></a>

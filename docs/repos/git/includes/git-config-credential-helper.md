@@ -17,6 +17,6 @@ The **Credential helper** setting corresponds to the `git config credential.help
 
 Valid values are:
 
-- `GCM for Windows`: use [Git Credential Manager for Windows](https://github.com/microsoft/Git-Credential-Manager-for-Windows) as the helper.
+- `GCM for Windows`: use [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager/) as the helper.
 - `GCM Core`: use [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core) as the helper.
 - `Unset` (default): if this setting is unset, the credential helper set in the system config is used. As of Git for Windows 2.29, the default credential helper is `GCM Core`.

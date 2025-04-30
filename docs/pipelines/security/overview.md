@@ -1,5 +1,5 @@
 ---
-title: Make your Azure Pipelines secure
+title: Secure your Azure Pipelines
 description: Guidelines and recommendations for securing pipelines.
 ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
 ms.custom: peer-review-program
@@ -8,7 +8,7 @@ ms.date: 03/04/2025
 monikerRange: "<=azure-devops"
 ---
 
-# Make your Azure Pipelines secure
+# Secure your Azure Pipelines
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
@@ -20,7 +20,7 @@ This article provides an overview of necessary security-related configurations t
 
 | **Category** | **Requirements**   |
 |---|---|
-| **Azure DevOps** | - Implement recommendations in [Secure your Azure DevOps](../../organizations/security/security-overview.md).  <br>  - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). |
+| **Azure DevOps** | - Implement recommendations in [Make your Azure DevOps secure](../../organizations/security/security-overview.md).  <br>  - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). |
 | **Permissions** | - To modify pipelines permissions: Member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md). <br> - To modify organization permissions: Member of the [Project Collection Administrators group](../../organizations/security/change-project-level-permissions.md). |
 
 ## Restrict project, repository, and service connection access

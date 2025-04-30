@@ -38,6 +38,11 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="3"><a href="2025/sprint-255-update.md" data-raw-source="[23 April 2025](2025/sprint-255-update.md)"> 23 April 2025</a></td>
+    <td>Manage high privilege scopes, pipeline decorators, and unpublished extensions</td><td>General</td><td>Future</td></tr>
+    <td>Advanced Security now accepts results with URI locations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>GitHub Integration: State Transition Support</td><td>Boards</td><td>Future</td></tr>
+<tr>
     <td rowspan="13"><a href="2025/sprint-254-update.md" data-raw-source="[3 April  2025](2025/sprint-253-update.md)"> 3 April  2025</a></td>
     <td>No new Azure DevOps OAuth apps beginning April 2025 </td><td>General</td><td>Future</td></tr>
     <td>Server Name Indication (SNI) now mandatory for Azure DevOps Services </td><td>General</td><td>Future</td></tr>

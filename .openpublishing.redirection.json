@@ -4249,14 +4249,6 @@
       ]
     },
     {
-      "source_path": "docs/report/extend-analytics/example-analytics-widget.md",
-      "redirect_url": "/previous-versions/azure/devops/report/extend-analytics/example-analytics-widget",
-      "redirect_document_id": false,
-      "monikers": [
-        "azure-devops-2019"
-      ]
-    },
-    {
       "source_path": "docs/report/extend-analytics/odata-api-version.md",
       "redirect_url": "/previous-versions/azure/devops/report/extend-analytics/odata-api-version",
       "redirect_document_id": false,
@@ -7152,11 +7144,11 @@
     },
     {
       "source_path": "docs/boards/backlogs/office/resolve-excel-data-validation-errors.md",
-      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues.md#resolve-data-validation-errors-that-occur-when-you-publish-from-Excel"
+      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues#resolve-data-validation-errors-that-occur-when-you-publish-from-Excel"
     },
     {
       "source_path": "docs/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh.md",
-      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues#Resolve-data-conflicts-when-you-publish-or-refresh-Excel-data"
+      "redirect_url": "/azure/devops/boards/backlogs/office/tfs-office-integration-issues#resolve-data-conflicts-when-you-publish-or-refresh-Excel-data"
     },
     {
       "source_path": "docs/extend/extension-report.md",
@@ -7165,6 +7157,22 @@
     {
       "source_path": "docs/extend/high-risk-extensions.md",
       "redirect_url": "/azure/devops/extend/overview"
+    },
+    {
+      "source_path": "docs/organizations/settings/work/import-process/differences.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/work/import-process/customize-process#differences"
+    },
+    {
+      "source_path": "docs/organizations/settings/work/upgrade-support-hosted-to-inherited.md",
+      "redirect_url": "/azure/devops/organizations/work/change-process-from-hosted-to-inherited#supported-operations-for-moving-from-hosted-xml-to-an-inherited-process"
+    },
+    {
+      "source_path": "docs/report/extend-analytics/example-analytics-widget.md",
+      "redirect_url": "/azure/devops/extend/develop/add-dashboard-widget"
+    },
+    {
+      "source_path": "docs/extend/develop/add-chart.md",
+      "redirect_url": "/azure/devops/extend/develop/add-dashboard-widget"
     }
   ]
 }

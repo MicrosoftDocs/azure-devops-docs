@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 03/25/2025
+ms.date: 04/28/2025
 ---
 
 # Configure Managed DevOps Pools images
@@ -9,6 +9,9 @@ ms.date: 03/25/2025
 Managed DevOps Pools provides you with several options for virtual machine images for running pipelines in your pool. You can create your pool using selected Azure Marketplace VM images, use your own custom Azure Compute Gallery images, or use the same images as Azure Pipelines Microsoft-hosted agents.
 
 Managed DevOps Pools can be configured with a single image or multiple images. When your pool has multiple images, your pipelines should specify the image they want to run on using [aliases](#use-multiple-images-per-pool-with-aliases).
+
+> [!IMPORTANT]
+> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
 
 ## Choose your pool's image
 
@@ -40,9 +43,9 @@ The following example specifies three images. For more information on the schema
                     ...
                     "images": [
                         {
-                            "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+                            "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/ubuntu-24_04-lts/skus/server/versions/latest",
                             "aliases": [
-                                "ubuntu-20.04-gen2"
+                                "ubuntu-24.04-gen2"
                             ]
                         },
                         {
@@ -73,9 +76,9 @@ The following example defines three images. Standby agents are enabled, with 100
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/ubuntu-24_04-lts/skus/server/versions/latest",
         "aliases": [
-            "ubuntu-20.04-gen2"
+            "ubuntu-24.04-gen2"
         ],
         "buffer": "0"
     },
@@ -108,9 +111,9 @@ The following example shows the `images` section of the **fabric-profile.json** 
     "sku": {...},
     "images": [
         {
-            "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+            "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/ubuntu-24_04-lts/skus/server/versions/latest",
             "aliases": [
-                "ubuntu-20.04-gen2"
+                "ubuntu-24.04-gen2"
             ],
             "buffer": "0"
         },
@@ -146,9 +149,9 @@ The following example defines three images. Standby agents are enabled, with 100
     "sku": {...},
     "images": [
         {
-            "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+            "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/ubuntu-24_04-lts/skus/server/versions/latest",
             "aliases": [
-                "ubuntu-20.04-gen2"
+                "ubuntu-24.04-gen2"
             ],
             "buffer": "0"
         },
@@ -224,6 +227,9 @@ Each image includes the following installed software.
 | Azure Pipelines - Ubuntu 22.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md) |
 | Azure Pipelines - Ubuntu 20.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2004-Readme.md) |
 
+> [!IMPORTANT]
+> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
+
 ## Selected marketplace images
 
 Managed DevOps Pools provides a set of curated Microsoft published Azure Marketplace VM images for use in your pools.
@@ -241,7 +247,7 @@ To specify a selected marketplace image, provide the resource ID of the image us
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/Publishers/canonical/ArtifactTypes/VMImage/Offers/ubuntu-24_04-lts/Skus/server/versions/latest"
     }
 ]
 ```
@@ -253,12 +259,15 @@ To specify selected marketplace image, provide the resource ID of the image usin
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/Publishers/canonical/ArtifactTypes/VMImage/Offers/ubuntu-24_04-lts/Skus/server/versions/latest"
     }
 ]
 ```
 
 * * *
+
+> [!IMPORTANT]
+> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
 
 ## Azure Compute Gallery images
 
@@ -290,19 +299,19 @@ To specify an Azure Compute Gallery image, provide the resource ID of the image 
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/resourceGroups/resource_group_placeholder/providers/Microsoft.Compute/galleries/my_images/images/Ubuntu2404"
     }
 ]
 ```
 
 #### [Azure CLI](#tab/azure-cli/)
 
-To specify selected marketplace image, provide the resource ID of the image using the `resourceId` property.
+To specify an Azure Compute Gallery image, provide the resource ID of the image using the `resourceId` property.
 
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest"
+        "resourceId": "/subscriptions/subscription_id_placeholder/resourceGroups/resource_group_placeholder/providers/Microsoft.Compute/galleries/my_images/images/Ubuntu2404"
     }
 ]
 ```
@@ -348,20 +357,20 @@ Add any desired aliases to the **Alias** list, and choose **Save**.
 
 :::image type="content" source="./media/configure-images/add-alias-pane.png" alt-text="Screenshot of the alias pane."
 
-The following example shows a pool with two Azure Pipelines images and one selected marketplace image. The Azure Pipeline images have their default aliases displayed, and the selected marketplace image has a single configured alias named **ubuntu-20.04-gen2**.
+The following example shows a pool with two Azure Pipelines images and one selected marketplace image. The Azure Pipeline images have their default aliases displayed, and the selected marketplace image has a single configured alias named **ubuntu-24.04-gen2**.
 
 :::image type="content" source="./media/configure-images/multiple-images-with-aliases.png" alt-text="Screenshot of a pool with multiple images with aliases."
 
 #### [ARM template](#tab/arm/)
 
-To configure aliases, specify them in the `aliases` list. The following example defines one image with a single alias named `ubuntu-20.04-gen2`.
+To configure aliases, specify them in the `aliases` list. The following example defines one image with a single alias named `ubuntu-24.04-gen2`.
 
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/ubuntu-24_04-lts/skus/server/versions/latest",
         "aliases": [
-            "ubuntu-20.04-gen2"
+            "ubuntu-24.04-gen2"
         ]
     }
 ]
@@ -369,14 +378,14 @@ To configure aliases, specify them in the `aliases` list. The following example 
 
 #### [Azure CLI](#tab/azure-cli/)
 
-To configure aliases, specify them in the `aliases` list. The following example defines one image with a single alias named `ubuntu-20.04-gen2`.
+To configure aliases, specify them in the `aliases` list. The following example defines one image with a single alias named `ubuntu-24.04-gen2`.
 
 ```json
 "images": [
     {
-        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/0001-com-ubuntu-server-focal/skus/20_04-lts-gen2/versions/latest",
+        "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/ubuntu-24_04-lts/skus/server/versions/latest",
         "aliases": [
-            "ubuntu-20.04-gen2"
+            "ubuntu-24.04-gen2"
         ]
     }
 ]
@@ -400,13 +409,13 @@ In addition to any aliases that you configure, Azure Pipelines images have the f
 
 If you have multiple images in your pool, you can configure a pipeline to run on a specific image by using a [demand](/azure/devops/pipelines/yaml-schema/pool-demands) named `ImageOverride`. When you specify the `ImageOverride` demand in your pipeline, Managed DevOps Pools sends the job only to agents using that image.
 
-To run a pipeline on the Ubuntu 20.04 image from the previous example that had an `ubuntu-20.04-gen2` alias, specify the following demand in the `pool` section of your pipeline.
+To run a pipeline on the Ubuntu 24.04 image from the previous example that had an `ubuntu-24.04-gen2` alias, specify the following demand in the `pool` section of your pipeline.
 
 ```yml
 pool: 
   name: fabrikam-dev-pool # Name of Managed DevOps Pool
   demands:
-  - ImageOverride -equals ubuntu-20.04-gen2
+  - ImageOverride -equals ubuntu-24.04-gen2
 ```
 
 > [!IMPORTANT]
