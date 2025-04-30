@@ -3,6 +3,7 @@ title: Create a Managed DevOps Pool using Azure CLI
 description: Learn how to create a Managed DevOps Pool using Azure CLI.
 ms.date: 04/30/2025
 ms.topic: quickstart
+ms.custom: peer-review-program
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using Azure CLI and run a pipeline in the new pool.
 ---
 
