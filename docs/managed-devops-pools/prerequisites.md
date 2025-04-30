@@ -218,7 +218,7 @@ To create a Managed DevOps Pool in your Azure DevOps organization, your Azure De
 When you create a Managed DevOps Pool, the account you use to sign in to the Azure subscription that contains your Managed DevOps Pool is used to create a corresponding agent pool in your Azure DevOps organization. To successfully create a Managed DevOps Pool, your account must have the following permissions in your Azure DevOps organization.
 
 * [Organization level agent pools administrator](#organization-level-agent-pools-administrator) for each organization where you want to create Managed DevOps Pools
-* [Project level agent pools administrator](#project-level-agent-pools-administrator) for each project in which you want to make your Managed DevOps Pools available to pipelines
+* [Project level agent pools administrator](#project-level-agent-pools-administrator) for each project in which you want to make your Managed DevOps Pool available to pipelines
 
 ### Organization level agent pools administrator
 
