@@ -4249,14 +4249,6 @@
       ]
     },
     {
-      "source_path": "docs/report/extend-analytics/example-analytics-widget.md",
-      "redirect_url": "/previous-versions/azure/devops/report/extend-analytics/example-analytics-widget",
-      "redirect_document_id": false,
-      "monikers": [
-        "azure-devops-2019"
-      ]
-    },
-    {
       "source_path": "docs/report/extend-analytics/odata-api-version.md",
       "redirect_url": "/previous-versions/azure/devops/report/extend-analytics/odata-api-version",
       "redirect_document_id": false,
@@ -7169,6 +7161,14 @@
     {
       "source_path": "docs/organizations/settings/work/import-process/differences.md",
       "redirect_url": "/previous-versions/azure/devops/organizations/settings/work/import-process/customize-process#differences"
+    },
+    {
+      "source_path": "docs/report/extend-analytics/example-analytics-widget.md",
+      "redirect_url": "/azure/devops/extend/develop/add-dashboard-widget"
+    },
+    {
+      "source_path": "docs/extend/develop/add-chart.md",
+      "redirect_url": "/azure/devops/extend/develop/add-dashboard-widget"
     }
   ]
 }

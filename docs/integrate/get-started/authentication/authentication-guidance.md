@@ -40,7 +40,7 @@ The following table outlines suggested authentication concepts to consider for d
 ## Frequently asked questions (FAQs)
 
 ### Q: Why can't my service account access the Azure DevOps REST API?
-A: Your service account might not have "materialized." Service accounts without interactive sign-in permissions can't sign in. For more information, see [this work-around](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Quickstarts/dotnet/MaterializeUserQuickStarts/Program.cs) for a solution.
+A: Your service account might not have "materialized." Service accounts without interactive sign-in permissions can't sign in.
 
 ### Q: Should I use [Azure DevOps Services Client Libraries](../../concepts/dotnet-client-libraries.md) or [Azure DevOps Services REST APIs](/rest/api/azure/devops) for my interactive client-side application?
 A: We recommend using Azure DevOps Services Client Libraries over REST APIs for accessing Azure DevOps Services resources. They're simpler and easier to maintain when REST endpoint versions change. If the client libraries lack certain functionality, use [MSAL](/azure/active-directory/develop/msal-overview) for authentication with our REST APIs.
