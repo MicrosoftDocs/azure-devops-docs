@@ -118,40 +118,6 @@ A new [Gradle@4](/azure/devops/pipelines/tasks/reference/gradle-v4) task has bee
 
 Configuration of the SonarQube analysis was moved to the [SonarQube](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube) or [SonarCloud](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud) extensions in the task `Prepare Analysis Configuration`.
 
-
-### stringList parameter type
-
-One of the top requested YAML pipelines features is to [define parameters that contain a list of items](https://developercommunity.visualstudio.com/t/parameters-that-support-multiselect/1224839).
-
-With this sprint, we've added a new parameter type, named `stringList`, that provides this capability.
-
-Say you want to allow those who queue pipeline runs to choose which regions they want to deploy a payload to. Now you can do this as shown in the example below.
-
-```yaml
-parameters:
-- name: regions
-  type: stringList
-  displayName: Regions
-  values:
-    - WUS
-    - CUS
-    - EUS
-
-stages:
-- ${{ each stage in parameters.regions}}:
-  - stage: ${{stage}}
-    displayName: Deploy to ${{stage}}
-    jobs:
-    - job:
-      steps:
-      - script: ./deploy ${{stage}}
-```
-
-When queuing this pipeline, you'll now have the option of choosing multiple regions to deploy to, as shown in the following screenshot:
-
-> [!div class="mx-imgBorder"]
-> [![Screenshot of choosing multiple regions.](../../media/253-pipelines-02.png "Screenshot of choosing multiple regions")](../../media/253-pipelines-02.png#lightbox)
-
 ### Identity of user who requested a stage to run
 
 To improve security of your YAML pipelines, you may wish to know who requested a stage to run. To address this need, were adding two new predefined variables, `Build.StageRequestedBy` and `Build.StageRequestedById`. These variables are similar to the `Build.RequestedFor` and `Build.RequestedForId` variables, but for a stage, not a run.
