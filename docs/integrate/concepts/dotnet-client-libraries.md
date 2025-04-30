@@ -159,7 +159,7 @@ For more information and for up-to-date reference documentation, see the [.NET A
 
 ## Samples
 
-Check out samples on our [.NET Samples Page](../get-started/client-libraries/samples.md) or directly on our [.NET GitHub Repo](https://github.com/microsoft/azure-devops-dotnet-samples).
+Check out samples on our [.NET Samples Page](../get-started/client-libraries/samples.md).
 
 For more information on NuGet packages, see [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/).
 

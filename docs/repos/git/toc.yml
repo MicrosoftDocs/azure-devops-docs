@@ -180,7 +180,7 @@
 - name: Samples
   items:
   - name: Azure DevOps Samples for .NET
-    href: https://github.com/Microsoft/azure-devops-dotnet-samples
+    href: ../../integrate/get-started/client-libraries/samples.md?toc=/azure/devops/repos/toc.json
 - name: Command reference
   items:
   - name: Git commands
