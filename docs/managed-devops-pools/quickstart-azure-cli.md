@@ -53,19 +53,19 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 1. Run the following commands to generate the names for the resources in this quickstart. This example uses the `EastUS2` region. Replace `EastUS2` with your desired region.
 
     ```bash
+    export REGION=EastUS2
     export RANDOM_ID="$(openssl rand -hex 3)"
     export RESOURCE_GROUP_NAME="myManagedDevOpsPoolGroup$RANDOM_ID"
-    export REGION=EastUS2
     export POOL_NAME="mdpPool$RANDOM_ID"
     export DEV_CENTER_NAME="mdpDevCenter$RANDOM_ID"
     export DEV_CENTER_PROJECT_NAME="mdpDevCenterProject$RANDOM_ID"
 
     # Echo the generated resource names
+    echo $REGION
     echo $RESOURCE_GROUP_NAME
     echo $POOL_NAME
     echo $DEV_CENTER_NAME
     echo $DEV_CENTER_PROJECT_NAME
-    echo $REGION
     ```
 
 ## Create a resource group
@@ -177,10 +177,10 @@ Create the following three files and save them to the folder where you plan to r
         "images": [
           {
             "aliases": [
-              "ubuntu-22.04"
+              "ubuntu-24.04"
             ],
             "buffer": "*",
-            "wellKnownImageName": "ubuntu-22.04/latest"
+            "wellKnownImageName": "ubuntu-24.04/latest"
           }
         ],
         "osProfile": {
@@ -198,7 +198,7 @@ Create the following three files and save them to the folder where you plan to r
     }
     ```
 
-   This configuration specifies a pool using the **Standard_D2as_v5** image, the **ubuntu-22.04** [Azure Pipelines image](./configure-images.md?tabs=azure-cli#azure-pipelines-images), and a **Standard** [OS Disk type](./configure-pool-settings.md?tabs=azure-cli#os-disk-type) with no [attached data disk](./configure-storage.md?tabs=azure-cli).
+   This configuration specifies a pool using the **Standard_D2as_v5** image, the **ubuntu-24.04** [Azure Pipelines image](./configure-images.md?tabs=azure-cli#azure-pipelines-images), and a **Standard** [OS Disk type](./configure-pool-settings.md?tabs=azure-cli#os-disk-type) with no [attached data disk](./configure-storage.md?tabs=azure-cli).
 
 1. Create a file named **organization-profile.json** with the following contents. Replace `<organization-name>` with the name for your Azure DevOps organization.
 
