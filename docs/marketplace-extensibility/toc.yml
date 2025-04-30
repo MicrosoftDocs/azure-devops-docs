@@ -106,9 +106,6 @@
       - name: Add a dashboard widget
         displayName: create, contribution, REST, API, configure
         href: ../extend/develop/add-dashboard-widget.md?toc=/azure/devops/marketplace-extensibility/toc.json
-      - name: Add a chart
-        displayName: create, configure, HTML, extension, manifest
-        href: ../extend/develop/add-chart.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Call a REST API
       displayName: client, service, API
       href: ../extend/develop/call-rest-api.md?toc=/azure/devops/marketplace-extensibility/toc.json
