@@ -1,7 +1,7 @@
 ---
 title: Create a Managed DevOps Pool using an ARM template
 description: Learn how to create a Managed DevOps Pool using an Azure Resource Manager template (ARM template).
-ms.date: 11/13/2024
+ms.date: 04/30/2025
 ms.topic: quickstart
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using an ARM template and run a pipeline in the new pool.
 ---
@@ -262,7 +262,7 @@ In this step, we'll create a simple pipeline in the default repository of an Azu
 
    ![Screenshot of save and run button.](./media/get-started/save-and-run.png)
 
-1. If this is the first pipeline run in this pool, you may be asked to grant permissions before the pipeline runs.
+1. If this is the first pipeline run in this pool, you may be asked to grant permissions before the pipeline runs. For more information see [This pipeline needs permission to access a resource before this run can continue](../pipelines/troubleshooting/troubleshooting.md#this-pipeline-needs-permission-to-access-a-resource-before-this-run-can-continue).
 
 1. Watch the [pipeline run](../pipelines/create-first-pipeline.md#view-pipeline-run-details) in Azure DevOps, and you can switch over to the Azure portal and see the running agent in the [Agents](./view-agents.md) view.
 
