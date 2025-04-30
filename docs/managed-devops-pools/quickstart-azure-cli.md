@@ -21,7 +21,7 @@ This article shows you how to create a Managed DevOps Pool using Azure CLI, and 
   * If you want to run the Azure CLI commands on your local machine, see the [Azure CLI installation instructions](/cli/azure/install-azure-cli). If you already have Azure CLI installed, run `az version` to check your version. The Azure CLI extension for Managed DevOps Pools requires Azure CLI version 2.57.0 or higher. If your Azure CLI is lower than 2.57.0, run `az upgrade`. For more information, see [How to update the Azure CLI](/cli/azure/update-azure-cli).
   * If you want to use [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) through your browser, follow the instructions in [Get started with Azure Cloud Shell ephemeral sessions](/azure/cloud-shell/get-started/ephemeral) to register the **Microsoft.CloudShell** namespace. You only need to register the namespace once per subscription.
 
-   The following examples use bash, so if you are using Azure Cloud Shell, choose **Bash** when starting Azure Cloud Shell.
+    The following examples use bash, so if you are using Azure Cloud Shell, choose **Bash** when starting Azure Cloud Shell.
 
 ## Sign in to the Azure CLI
 
