@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for Managed DevOps Pools
 description: Learn how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools.
-ms.date: 04/28/2025
+ms.date: 04/30/2025
 ---
 
 # Prerequisites for Managed DevOps Pools
@@ -101,7 +101,7 @@ Managed DevOps Pools uses [Azure Quotas](/azure/quotas/quotas-overview) to manag
 * `standardLSv3Family`
 
 > [!NOTE]
-> In some cases, for example if there isn't enough capacity in a region, or your subscription has hit the core limit for a specific virtual machine size (outside of Managed DevOps Pool usage), your subscription may not be granted the default quota. See [View your quotas](#view-your-quotas) to view the quotas for your subscription, and [request a quota adjustment](#request-a-quota-adjustment) for instructions on how to request quota for your desired virtual machine size.
+> Certain Azure regions require customers to go through a request process in order to gain access to some virtual machine sizes, and your subscription may not be granted the default quota. See [View your quotas](#view-your-quotas) to view the quotas for your subscription, and [request a quota adjustment](#request-a-quota-adjustment) for instructions on how to request quota for your desired virtual machine size.
 
 The default agent size for new Managed DevOps Pools resources is **Standard D2ads v5**, which is part of the **standardDADSv5Family**. **Standard D2ads v5** uses two cores, so you can create a pool with up to two agents, for a total of four cores, without requesting additional quota. To create more, you must [request a quota adjustment](#request-a-quota-adjustment).
 
