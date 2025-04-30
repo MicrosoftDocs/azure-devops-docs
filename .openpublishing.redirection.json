@@ -7163,6 +7163,10 @@
       "redirect_url": "/previous-versions/azure/devops/organizations/settings/work/import-process/customize-process#differences"
     },
     {
+      "source_path": "docs/organizations/settings/work/upgrade-support-hosted-to-inherited.md",
+      "redirect_url": "/azure/devops/organizations/work/change-process-from-hosted-to-inherited#supported-operations-for-moving-from-hosted-xml-to-an-inherited-process"
+    },
+    {
       "source_path": "docs/report/extend-analytics/example-analytics-widget.md",
       "redirect_url": "/azure/devops/extend/develop/add-dashboard-widget"
     },

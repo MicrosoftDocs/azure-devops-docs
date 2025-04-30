@@ -357,4 +357,3 @@ A `Control` element can't specify a custom control. Custom controls aren't suppo
 - [Evaluate rules and rule behavior](../rule-reference.md)  
 - [Change projects from Hosted XML to inherited processes](../change-process-from-hosted-to-inherited.md)  
 - [Clone Hosted XML processes to inherited processes](../upgrade-hosted-to-inherited.md)  
-- [Review supported operations for moving from Hosted XML to inherited processes](../upgrade-support-hosted-to-inherited.md)
