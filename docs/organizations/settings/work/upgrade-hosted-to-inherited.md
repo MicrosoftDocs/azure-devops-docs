@@ -26,7 +26,7 @@ Before you clone a Hosted XML process, review the [supported operations when mov
 ## Clone a Hosted XML process to an Inheritance process 
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
   
    	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing highlighted Organization settings button.](../../../media/settings/open-admin-settings-vert.png)

@@ -7169,6 +7169,10 @@
     {
       "source_path": "docs/organizations/settings/work/import-process/differences.md",
       "redirect_url": "/previous-versions/azure/devops/organizations/settings/work/import-process/customize-process#differences"
+    },
+    {
+      "source_path": "docs/organizations/settings/work/upgrade-support-hosted-to-inherited.md",
+      "redirect_url": "/azure/devops/organizations/work/change-process-from-hosted-to-inherited#supported-operations-for-moving-from-hosted-xml-to-an-inherited-process"
     }
   ]
 }

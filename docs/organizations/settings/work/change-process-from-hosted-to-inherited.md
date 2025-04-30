@@ -71,10 +71,10 @@ When you clone a Hosted XML process to an inherited process, the customizations 
 After you verify your customizations, you can apply the inherited process to your existing project. Do the following steps: 
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
   
    	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+	> ![Screenshot showing highlighted Organization settings button.](../../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Process** and choose the original Hosted XML process.
 4. Select the **Projects** page. 
