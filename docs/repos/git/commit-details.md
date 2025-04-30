@@ -11,9 +11,7 @@ monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
 
-
 # Commit details
-
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
@@ -23,10 +21,6 @@ The commit details view provides information regarding all the changes made as p
 ::: moniker range=">= azure-devops-2020"
 :::image type="content" source="media/commit-details/git-repo-file-history.png" alt-text="Files, Commits page example":::
 ::: moniker-end
-::: moniker range="=azure-devops-2019"
-![Commit details page](media/commit-details/1Commitdetails.png)
-::: moniker-end
-
 
 ## What information do you see on the commit details page?
 
@@ -86,5 +80,4 @@ The source explorer allows you to select a file or a folder to view changes asso
 		
     ![Diff view](media/commit-details/11SidebySide.png)
  	
-
 

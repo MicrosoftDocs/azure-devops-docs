@@ -7,7 +7,7 @@ ms.topic: tutorial
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 10/26/2022
 ---
 
@@ -27,7 +27,11 @@ In this article you'll learn:
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+::: moniker range=" < azure-devops"
 
 > [!NOTE]
 > The examples shown in this article are based on an Azure DevOps Services URL. For Azure DevOps Server, you need to substitute the URL for the on-premises server.
@@ -38,8 +42,6 @@ In this article you'll learn:
 > ```
 
 ::: moniker-end
-
- 
 
 ## Parent-child hierarchy
 
@@ -100,7 +102,6 @@ The following query requests to return the parent of work item ID 1048 from the 
 > ```OData
 > https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,WorkItemType, State)&$filter=WorkItemId eq 1048
 > ```
-
 
 The response returns feature 480, which is the parent to product backlog item 1048.  
 
@@ -171,7 +172,6 @@ To retrieve the links associated with an item, you can ```$expand``` the **Links
 >     }]
 > }
 > ```
-
 
 ### Example: Request details of linked items
 
@@ -271,7 +271,6 @@ You may also be interested in a particular type of link between items. Specify t
 >     }]
 > }
 > ```
-
 
 ## Next steps
 

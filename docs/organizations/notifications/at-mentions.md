@@ -10,9 +10,9 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/03/2024
---- 
-
+ms.date: 01/06/2025
+---
+ 
 # Use @mentions in work items and pull requests
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -21,18 +21,20 @@ ms.date: 10/03/2024
 
 The **@mention** control allows you to quickly add a user or group to a work item or pull request discussion. Using the people picker within the **@mention** control, you can select a project member or group from the search list. The mentioned user or group receives an email notification about your comment.
 
-For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups within Microsoft Entra ID. You can search for users and groups beyond those users added to your project. For more information, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).
+For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups within Microsoft Entra ID. You can search for users and groups beyond those users added to your project. For more information, see [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more).
 
 > [!NOTE]
-> You can post an @mention via API. To get the Azure DevOps User ID, see [Get the Azure DevOps User Id](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0).
+
+> You can post an @mention via API. To get the Azure DevOps User ID, see [Get the Azure DevOps User ID](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0).
+
 >
 > - If your organization is using the existing HTML editor, add the following HTML code:
 >   ```html
->   <div><a href="#" data-vss-mention="version:2.0,{user id}">@John Doe</a> Testing mentioning</div>
+>   <div><a href="#" data-vss-mention="version:2.0,{userID}">@John Doe</a> Testing mentioning</div>
 >   ```
 > - If your organization is using the new Markdown editor for comments, use the following code:
 >   ```markdown
->   @<UserID>
+>   @<userID>
 >   ```
 
 ::: moniker-end
@@ -56,15 +58,6 @@ Use the **@mention** control to start or continue a discussion in the following 
 
 ::: moniker-end
 
-::: moniker range=" < azure-devops-2020"
-
-- Work item discussions
-- Pull request discussions
-- Commit comments
-- Changeset or shelveset comments
-
-::: moniker-end
-
 <a id="mention-person-id">  </a>
 
 ::: moniker range=" < azure-devops"
@@ -72,6 +65,10 @@ Use the **@mention** control to start or continue a discussion in the following 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 ::: moniker-end
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 ## Identity search selection
 
@@ -103,8 +100,7 @@ You can also use group mentions. Enter the name of a team or a security group, c
 > ![Screenshot of discussion section with at mention made.](media/at-mention/at-mention-discussion.png)
 
 > [!NOTE]
-> - Don't copy and paste **@mention** users from a previous comment. Although the formatting may look identical to a properly entered mention, it doesn't register as a true mention and doesn't send an email notification.
-> - If you **@mention** a group that has no members, no email gets sent, even if the group is a member of other groups.
+> Don't copy and paste **@mention** users from a previous comment. Although the formatting may look identical to a properly entered mention, it doesn't register as a true mention and doesn't send an email notification.
 
 Upon completion of your selection and text entry, your **@mention** user receives an email alerting them about the mention.
 
@@ -123,8 +119,6 @@ Use the **@mention** control in pull request discussions, commit comments, chang
 People pickers generally search and select any user or group added to an organization's Microsoft Entra ID.
 
 For organizations using Microsoft Entra ID to manage users and groups, people pickers support searching all users and groups within the directory. To limit the search and selection to only those users and groups added to a specific project, enable the **Limit user visibility and collaboration to specific projects** preview feature for your organization.
-
-[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 
 When the **Limit user visibility and collaboration to specific projects** preview feature is enabled for an organization, the list of identities you can select from a people picker is limited in the following ways:
 

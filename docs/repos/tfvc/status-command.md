@@ -22,10 +22,13 @@ The Team Foundation Version Control (TFVC) `status` command, or its alias `stat`
 > [!NOTE]
 > A pending change candidate is a file in the workspace's folder or subfolder that isn't added to version control. To view all pending changes candidates in Visual Studio, go to **Team Explorer** > **Pending Changes** > **Excluded Changes**, and then select **Detected**.
 
-
 ## Prerequisites
 
-To use the `status` command, you must have the **Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. |
+
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

@@ -22,12 +22,13 @@ Once you've [cloned your Hosted XML process to an inherited process](upgrade-hos
 
 ## Prerequisites 
 
-- You must be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
+[!INCLUDE [prerequisites-change-process](../includes/prerequisites-change-process.md)]
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
 
 
 <a id="change-inherited-process"></a>
+
 ## Change the project process to an inherited process 
 
 After you've verified your customizations, you can now apply the inherited process to your existing project. 

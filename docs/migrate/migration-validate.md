@@ -195,7 +195,6 @@ In each iteration, address errors and conduct validation checks to resolve them,
 ## Related articles 
 
 - [`witadmin`: Customize and manage objects for tracking work](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
-- [Differences between Azure DevOps Services and Azure DevOps Server process template customizations](../organizations/settings/work/import-process/differences.md)
 - [Configure features after Azure DevOps Server upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
 - [Resolve validation errors](../organizations/settings/work/import-process/resolve-errors.md)
 - [Define global lists in Azure DevOps Server](/previous-versions/azure/devops/reference/xml/define-global-lists)

@@ -27,26 +27,23 @@ Work items can live forever in your work tracking data store. You never have to 
 | [Destroy](#restore-or-destroy-work-items) | Permanently delete work items, including all data from the work tracking data store. |
 
 > [!NOTE]  
->
 > - You can't archive work items or projects at this time.
 > - For information about the Azure Artifacts Recycle Bin, see [Delete and recover packages](../../artifacts/how-to/delete-and-recover-packages.md).
 
-::: moniker range=">= azure-devops-2019"
 To move a work item from one project to another, or to change the work item type, see [Move work items and change work item type](move-change-type.md).
-::: moniker-end
 
 ## Prerequisites
 
-- Members of the **Contributors** group can remove, delete, and restore work items.
-- To permanently delete work items, you must be a member of the **Project Administrators** group, or be granted the required permission.
-- Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin regardless of the permissions they're granted.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - To remove, delete, and restore work items: Member of the **Contributors** group.<br>- To permanently delete work items: Member of the **Project Administrators** group or granted the required permission.<br>- Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin regardless of the permissions they're granted.|
 
 :::row:::
    :::column span="1":::
       **Task** 
    :::column-end:::
    :::column span="2":::
-       **Required permission(s)**
+       **Required permissions**
    :::column-end:::
 :::row-end:::
 ---
@@ -55,7 +52,7 @@ To move a work item from one project to another, or to change the work item type
       [Change state to **Remove** or **Cut**](#remove)
    :::column-end:::
    :::column span="2":::
-       - Have the **Area Path** permission set to **Allow**: **Edit work items in this node**
+       - **Area Path** permission set to **Allow**: **Edit work items in this node**
        - By default, members of the **Contributors** group have this permission.
    :::column-end:::
 :::row-end:::
@@ -65,34 +62,29 @@ To move a work item from one project to another, or to change the work item type
       [Restore work items](#restore)  
    :::column-end:::
    :::column span="2":::
-       - Have the project-level permission set to **Allow**: **Delete and restore work items**
-       - Have **Basic** access or higher.
+       - Project-level permission set to **Allow**: **Delete and restore work items**
+       - At least [**Basic** access](../../organizations/security/access-levels.md).
        - By default, members of the **Contributors** group have this permission.
    :::column-end:::
 :::row-end:::
-
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
       [Permanently delete or destroy work items](#restore-or-destroy-work-items)  
    :::column-end:::
    :::column span="2":::
-       - Have the project-level permission set to **Allow**: **Permanently delete work items**
+       - Project-level permission set to **Allow**: **Permanently delete work items**
        - By default, members of the **Project Administrators** group have this permission.
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= azure-devops"
 :::row:::
    :::column span="1":::
       [Delete or destroy work items from the command line](#az-boards-cli)
    :::column-end:::
    :::column span="2":::
-       - Have the project-level permission set to **Allow**: **Permanently delete work items**
+       - Project-level permission set to **Allow**: **Permanently delete work items**
        - By default, members of the **Project Administrators** group have this permission.
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ---
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../get-started/permissions-access-boards.md).  
@@ -122,7 +114,7 @@ By changing the **State** of a work item to *Removed*, you effectively remove it
 
 To cause removed items to not show up in queries, you must add a clause that filters on the **State** field.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!NOTE]  
 > The *Removed* state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available when you add a project to Azure DevOps Services or [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609).  
@@ -135,7 +127,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 ### Delete work items
 
 Deleted work items don't appear in your backlogs, boards, or queries. When you delete an item, it goes to the **Recycle Bin**. You can restore it from there if you change your mind. To delete a test case, test plan, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can delete work items in one of the following ways:
 
@@ -171,7 +163,7 @@ You can delete work items in one of the following ways:
 
 You can't open work items from the **Recycle Bin**. You only see the **Permanently delete option** if your [Permanently delete work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) project-level permission is set to **Allow**.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Restore deleted work items or permanently delete them from the web portal **Recycle Bin**.
 

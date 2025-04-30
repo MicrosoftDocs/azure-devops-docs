@@ -35,15 +35,6 @@ Analytics is generally available for Azure DevOps Services and Azure DevOps Serv
 
 ::: moniker-end
 
-
-::: moniker range="=azure-devops-2019"
-
-Analytics is in Public Preview for Azure DevOps Server 2019 and later versions. You gain access to it by [enabling or installing Analytics](../dashboards/analytics-extension.md). Analytics provides several [advanced widgets](../dashboards/analytics-widgets.md), [Power BI integration](overview.md), and access to the [OData feed](../extend-analytics/quick-ref.md).
-
-Team Foundation Server (TFS) 2018 and earlier versions don't support Analytics. 
-
-::: moniker-end
-
 For more information, see [What is Analytics](what-is-analytics.md). It currently contains partial data. We're working to add all reportable data to Analytics. For more information, see [Data Available in Analytics](data-available-in-analytics.md).
 
 ## Azure DevOps Server, TFS, and SQL Server Reporting

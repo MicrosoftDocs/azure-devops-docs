@@ -27,8 +27,10 @@ For more information, see [Get started with permissions, access, and security gr
 
 ## Prerequisites
 
-* **Project connection:** Be connected to a project. If you don't have a project, [create one](../projects/create-project.md).
-* **Permissions:** Be a member of the Project Valid Users Group or Project Collection Valid Users Group.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](add-users-team-project.md). |
+| **Permissions**| Member of the **Project Valid Users** group or **Project Collection Valid Users** group.|
 
 ## View project-level permissions
 

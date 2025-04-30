@@ -107,23 +107,6 @@ From the web portal, copy the URL from the web browser address or hover over the
 
 :::image type="content" source="../backlogs/media/add-work-item-copy-URL.png" alt-text="Screenshot of copy hyperlink for a work item from web portal.":::
 
-::: moniker range="=azure-devops-2019"
-
-<a id="start-storyboarding">  </a>
-
-### Use the Start storyboarding menu option  
-
-> [!IMPORTANT]
-> Starting with Visual Studio 2019, the Azure DevOps Office Integration plug-in no longer supports Storyboarding with PowerPoint and Microsoft Project. Additionally, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.
- 
-The **Start storyboarding** menu option is only available from the new web form. However, from the old web form, you can choose the **Start Storyboarding** link from the **Storyboard** tab of a backlog item or open PowerPoint. See [Storyboard your ideas using PowerPoint](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint) for requirements and usage.
-
-Use PowerPoint to storyboard your ideas, bringing them to life with storyboard shapes, text, animation, and other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the **Start storyboarding** menu option. 
-
-:::image type="content" source="../backlogs/media/add-work-item-start-storyboarding.png" alt-text="Screenshot of Work item form, Start storyboarding menu option.":::
-
-::: moniker-end
-
 <a id="assign-to-sprint"></a>
 <a id="common-fields"></a>
 

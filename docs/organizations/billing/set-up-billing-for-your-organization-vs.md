@@ -8,7 +8,7 @@ ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 09/18/2024
+ms.date: 04/07/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -20,16 +20,22 @@ Setting up billing in Azure DevOps is essential for managing costs associated wi
 
 *All services are billed via Azure*. You're not required to use any other Azure services.
 
-[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
+> [!IMPORTANT]
+> - When you remove the billing subscription from your organization, any paid quantities for the following types of users go back to the [free tier](billing-faq.yml) of service immediately:
+>    - Basic
+>    - Azure Artifacts
+>    - Azure Test Plans
+>    - Microsoft-hosted CI/CD
+>    - Self-hosted CI/CD
+> - Before you delete your organization resource in the Azure portal, ensure you changed the billing subscription. Deleting the resource before this change might result in reverting to the free tier of service for your organization. For more information, see [Billing FAQs](billing-faq.yml#azure-portal-integration).
+> - When billing gets canceled or changed, a resource group gets left behind in the old Azure subscription. Despite Azure's warning that "Dependent resources will be deleted," it's safe to delete these resource groups. The Azure DevOps organization won't be deleted or harmed. These resource groups take the naming format, `VisualStudioOnline-<DEVOPS-ORG-HOSTID-WITHOUT-DASHES>`.
 
 ## Prerequisites
 
-* **Subscription:** Have an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/).
-- * [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
-  * To give another user access to manage billing, be the [Azure Account Administrator](/azure/cost-management-billing/manage/add-change-subscription-administrator) to give another user access to manage billing.
-  * To change your organization's billing subscription, have the following permissions:
-    - [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-    - [Owner or Contributor permission for the Azure subscription](set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing), which you can use to purchase.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br> - To give another user access to manage billing: [Azure Account Administrator](/azure/cost-management-billing/manage/add-change-subscription-administrator).<br>- To change your organization's billing subscription:<br>- [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- [Owner or Contributor permission for the Azure subscription](set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing), which you can use to purchase.  |
+|**Subscription**| An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/).|
 
 > [!NOTE]
 > Azure DevOps doesn't support the [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/).
@@ -38,33 +44,32 @@ Setting up billing in Azure DevOps is essential for managing costs associated wi
 
 ## Set up billing for your organization
 
-Set up billing in Azure DevOps before making purchases. You only need to do this once per organization. After selecting an Azure subscription for billing, you can add users and assign licenses.
+Set up billing in Azure DevOps before making any purchases. This is a one-time setup per organization. Once you select an Azure subscription for billing, you can add users and assign licenses.
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
-1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
    
-1. Select **Billing**.
+3. Select **Billing**.
 
    ![Screenshot showing highlighted Billing selection in Organization settings.](media/shared/select-billing-organization-settings.png)
    
-1. Select **Set up billing**.
+4. Select **Set up billing**.
 
    ![Select Set up billing](media/shared/set-up-billing.png)
    
-1. Select your Azure subscription, and then select **Save**.
+5. Select your Azure subscription, and then select **Save**.
 
    ![Select your Azure subscription](media/shared/select-azure-subscription.png)
    
 > [!TIP]
-> If you can't see your desired Azure Subscription, it’s likely due to the Azure subscription you’re trying to use being tied to a different Microsoft Entra ID tenant than the one you use to access your Azure 
-> DevOps organization. Here's how you can ensure this Azure Subscription shows when you're configuring billing:
+> If your desired Azure Subscription doesn't display, it’s likely because the Azure subscription you’re trying to use is tied to a different Microsoft Entra ID tenant than the one you use to access your Azure DevOps organization. Do the following steps to ensure this Azure Subscription shows when you're configuring billing:
 > 1. Go directly to your profile (`https://aex.dev.azure.com/`).
-> 2. From the dropdown menu, select the Microsoft Entra ID tenant that is tied to the Azure Subscription you want to use for billing.
-> 3. Go back to your Azure DevOps organization.
-> 4. Go to the **Billing** page under Organization Settings and click the **Set up billing** button. You should now see the subscription.
+> 2. From the dropdown menu, select the Microsoft Entra ID tenant tied to the Azure Subscription you want to use for billing.
+> 3. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`).
+> 4. Select **Organization settings** > **Billing**> **Set up billing**. The subscription should display.
 
 Billing is set up for your Azure DevOps organization. You can [review your individual Azure subscription bill](/azure/cost-management-billing/understand/review-individual-bill) at any time.
 
@@ -73,10 +78,6 @@ Billing is set up for your Azure DevOps organization. You can [review your indiv
 ## Change your billing subscription
 
 You might need to change the Azure subscription for your Azure DevOps organization's billing if the subscription is linked to a former user. Consider switching to a shared subscription or removing the billing arrangement. You can [remove your billing subscription](#remove-your-billing-subscription) anytime. [Migrating between resource groups isn't supported](billing-faq.yml).
-
-Before you change your billing subscription, keep the following considerations in mind:
-- **Reverting to Free Tier:** When you remove the billing subscription, any paid quantities of services like Basic, Azure Artifacts users, Azure Test Plans users, Microsoft-hosted CI/CD, and self-hosted CI/CD revert to the free tier immediately.
-- **Resource groups:** When billing is canceled or changed, a resource group might be left behind in the old Azure subscription. These resource groups can be safely deleted if they're empty.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -96,14 +97,9 @@ Azure DevOps bills the newly saved subscription for your organization.
 
 ## Remove your billing subscription 
 
-> [!IMPORTANT]
-> - When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Azure Test Plans users, Microsoft-hosted CI/CD, and self-hosted CI/CD go back to the [free tier](billing-faq.yml) of service immediately.
-> - If you delete your organization resource in the Azure Portal, do so *after* you change the billing subscription in Azure DevOps and not before, to avoid your organization reverting to the free tier of service. For more information, see [Billing FAQs](billing-faq.yml#azure-portal-integration).
-> - When billing gets canceled or changed, a resource group gets left behind in the old Azure subscription. It's safe to delete these resource groups if empty. These resource groups take the naming format, `VisualStudioOnline-<DEVOPS-ORG-HOSTID-WITHOUT-DASHES>`.
+1. Sign in to your organization, choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Billing** > **Change billing**, and do steps 1 through 4 of the [Change the subscription](#change-subscription) section.
 
-1. Sign in to your organization, choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Billing**, and then **Change billing**, following steps 1 through 4 of the [Change the subscription](#change-subscription) section.
-
-2. Choose **Remove billing**, and then choose **Save**. 
+2. Select **Remove billing** > **Save**. 
 
 Azure DevOps removes your billing subscription from your organization.
 
@@ -112,7 +108,7 @@ Azure DevOps removes your billing subscription from your organization.
 ## Give a user access to manage billing
 
 > [!IMPORTANT]
-> Classic admins retired August 31, 2024. Starting on February 26, you can't add a new co-administrator using the Access control blade. Remove co-administrators and use Azure RBAC for fine-grained access control. For more information, see [Azure classic subscription administrators](/azure/role-based-access-control/classic-administrators).
+> Classic admins retired August 31, 2024. You can't add a new coadministrator using the Access control. Remove coadministrators and use Azure role-based access control (RBAC) for fine-grained access control. For more information, see [Azure classic subscription administrators](/azure/role-based-access-control/classic-administrators).
 
 Assign any of the following roles to a user under the subscription your organization uses for billing: [Owner](/azure/role-based-access-control/built-in-roles#owner), [Contributor](/azure/role-based-access-control/built-in-roles#contributor), or [Service admin](/azure/billing/billing-add-change-azure-subscription-administrator). For more information, see [Azure roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
@@ -124,7 +120,7 @@ Assign any of the following roles to a user under the subscription your organiza
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of sequence of buttons to add role.](media/add-backup-billing-manager/add-role-to-subscription.png)
 
-5. Choose **+ Select members**, search for a user by name or email address, highlight the user, and then choose **Select**.
+5. Select **+ Select members**, search for a user by name or email address, highlight the user, and then choose **Select**.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Add role assignment pop-out pane.](media/add-backup-billing-manager/add-role-assignment.png)

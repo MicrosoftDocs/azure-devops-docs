@@ -8,7 +8,7 @@ ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 08/03/2022
 ---
 
@@ -27,10 +27,10 @@ For example, you may want to capture customer issues in a custom WIT labeled Tic
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
-
 > [!TIP]    
 > To customize a single project, always start by [creating an inherited process and migrating project(s) to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
+## Prerequisites
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
@@ -103,10 +103,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/add-custom-field/choose-new-team-project.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
-	::: moniker-end
+	
 
 1. The Create new project page opens. Fill out the form. 
 
@@ -118,10 +115,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/add-custom-field/create-new-project-2020.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Create new project form](media/process/create-test-project.png) 
-	::: moniker-end
+	
 
 2. Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
@@ -140,14 +134,11 @@ We recommend that you create a test project and apply your customized  inherited
    > [!div class="mx-imgBorder"]  
    > ![Ticket form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-ticket-form.png)  
 
-
 [!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
-
 
 ## Q & A
 
 [!INCLUDE [temp](includes/qa-custom-work-item-on-backlog.md)] 
-
 
 ## Try this next
 > [!div class="nextstepaction"]
@@ -157,9 +148,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 ## Related articles 
 
-
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
-
 
 - [Customize a project using an inherited process](customize-process.md)
 - [Create and manage inherited processes](manage-process.md)
@@ -169,8 +158,4 @@ We recommend that you create a test project and apply your customized  inherited
  
 
   
-
-
-
-
 

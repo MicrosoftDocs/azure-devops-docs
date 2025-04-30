@@ -16,27 +16,17 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="<=azure-devops"
 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts: the in-context report you can view from a team backlog or board and the CFD widget you can add to a dashboard. 
 
 ::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2020" 
 
 CFDs help teams monitor the count of work items as they progressively move through various workflow states. These diagrams can show the flow of epics, features, user stories, issues, product backlog items, or requirements, depending on the process selected for your project:
 - [Agile](../../boards/work-items/guidance/agile-process.md)
 - [Basic](../../boards/get-started/plan-track-work.md)
-- [Scrum](../../boards/work-items/guidance/scrum-process.md)
-- [Capability Maturity Model Integration (CMMI)](../../boards/work-items/guidance/cmmi-process.md)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019" 
-
-CFDs help teams monitor the count of work items as they progressively move through various workflow states. These diagrams can show the flow of epics, features, user stories, product backlog items, or requirements, depending on the process selected for your project:
-- [Agile](../../boards/work-items/guidance/agile-process.md) 
 - [Scrum](../../boards/work-items/guidance/scrum-process.md)
 - [Capability Maturity Model Integration (CMMI)](../../boards/work-items/guidance/cmmi-process.md)
 
@@ -52,20 +42,7 @@ Use this article to learn how to:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019" 
-
-Use this article to learn how to: 
-
-> [!div class="checklist"] 
-> * Configure the Cumulative Flow Diagram widget (Analytics)  
-> * View and configure the CFD in-context report (work tracking data store) 
-
-::: moniker-end
-
-
-
 The CFD shows the count of items in each column for the selected time period. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement once work has started. 
-
 
 ::: moniker range=">= azure-devops-2020" 
 
@@ -74,14 +51,7 @@ The CFD shows the count of items in each column for the selected time period. Fr
 
 ::: moniker-end
 
-
-::: moniker range="< azure-devops-2020" 
-
-![Cumulative Flow Diagram](../../boards/boards/media/ALM_KB_CumulativeFlow.png) 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="<=azure-devops"
 > [!NOTE]  
 > The in-context report always uses the blue-green color theme. However, the [Analytics-based Cumulative flow diagram widget](#cfd-widget) provides support for choosing different color themes. 
 
@@ -91,18 +61,11 @@ For the CFD to provide useful information, you'll want to update the status of w
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
-
-::: moniker range=">= azure-devops-2019"
-
-## Prerequisites  
-
-::: moniker-end
+## Prerequisites
 
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
-
 ## Open your backlog from the web portal
-
 
 ::: moniker range=">= azure-devops-2020" 
 
@@ -122,27 +85,6 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
     > ![Select product backlog level, Backlog items, Stories, or Requirements.](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile-s155.png) 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
-
-	![Open Boards > Backlogs, for a team](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
-
-    To select another backlog, open the selector and then select a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false":::  **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Select another team](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
-
-1. To view the in-context reports for the product backlog, check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. Or
-
-    > [!div class="mx-imgBorder"]  
-    > ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
-
-::: moniker-end
-
-
-
 
 ## View the CFD in-context report   
 
@@ -186,54 +128,13 @@ CFD reports are available for each backlog level, both product and portfolio bac
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"  
-
-To open the CFD in-context report for your product or portfolio backlog, select the image in the upper-right corner of your **Boards>Boards** page. 
-
-> [!div class="mx-imgBorder"]  
-> ![Open CFD, new nav](media/open-cfd-new-nav.png)
-
-The image opens to display a larger view of the CFD. 
-
-> [!div class="mx-imgBorder"]  
-> ![Opened CFD chart](media/cfd/data-store-cumulative-flow-opened.png)
-
-::: moniker-end  
-
-
-
-
-
+  
 
 <a id="configure-built-in-cfd"></a>
 
-::: moniker range="=azure-devops-2019"
+  
 
-## Configure the CFD in-context report    
-
-Each team can set their preferences for the in-context cumulative flow charts. 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019" 
-
-1. Open the [backlog level for which you want to configure](../../boards/boards/kanban-quickstart.md) and then open the common configuration dialog. Select the :::image type="icon" source="../../boards/media/icons/team-settings-gear-icon.png" border="false"::: gear icon.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Board settings](media/cfd/open-cfd-settings-new-nav.png)
-
-	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the boards and CFD charts.  
-
-2. Select **Cumulative flow** and specify the team's preferences.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Board, Common configuration dialog, Cumulative flow](media/cfd/settings-cumulative-flow-dialog.png)	
-
-::: moniker-end  
-
-
-
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="<=azure-devops"
 
 <a id="cfd-widget"></a>
 
@@ -258,27 +159,10 @@ Each team can set their preferences for the in-context cumulative flow charts.
     :::image type="content" source="media/cfd-configure.png" alt-text="Configure CFD chart":::
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-1. If you haven't yet [enabled or installed Analytics](analytics-extension.md), do that now.  
-1. If you haven't yet configured your board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
-1. If you want fixed scope CFD charts, make sure that you've [defined the sprint iterations](../../boards/sprints/define-sprints.md) for those sprints of interest.  
-1. To add a CFD chart to your team dashboard, see [Add a widget to a dashboard](./add-widget-to-dashboard.md). Add the Cumulative Flow Diagram widget.  
-
-	![Cumulative flow diagram widget](media/cfd-choose-widget.png)  
-
-1. Select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option to open the configuration dialog. Modify the title, and then select the values you want to monitor:
-   - Team
-   - Backlog level
-   - Swimlanes
-   - Time period
-
-    :::image type="content" source="media/cfd-configure.png" alt-text="Configure CFD chart":::
-::: moniker-end
-
 <a id="configure-widget"></a> 
 <a id="configure"></a> 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Configure the CFD widget    
 
@@ -294,7 +178,6 @@ Each team can set their preferences for the in-context cumulative flow charts.
    
     :::image type="content" source="media/cfd-exampe-rolling-30-days.png" alt-text="Example CFD chart, rolling 30 days":::
 ::: moniker-end
-
 
 ## Next steps
 

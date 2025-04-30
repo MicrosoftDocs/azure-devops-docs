@@ -43,6 +43,10 @@ better choice, then that branch is chosen instead.
 For more pull request guidelines and management considerations, see
 [About pull requests](about-pull-requests.md).
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## When is this configuration used?
 
 There are multiple entry points to using a dynamic target branch.

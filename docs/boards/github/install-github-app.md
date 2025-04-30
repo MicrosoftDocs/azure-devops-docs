@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 03/01/2024
 ---
 
@@ -20,35 +20,15 @@ For an overview of the integration that the Azure Boards app for GitHub supports
 
 ## Prerequisites 
 
-**Permissions:**
-- You must be an **administrator** or **owner** of the GitHub organization to install the Azure Boards app.
-- You must have **Read** permissions for the GitHub repository.
-- You must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). If you created the project, you already have these permissions.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). If you created the project, you have permissions.<br> - **Administrator** or **owner** of the GitHub organization for installing the Azure Boards app. <br> - **Read** permissions for the GitHub repository. |
+| **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
 
 > [!IMPORTANT]  
 > If your repository is already connected via another authentication type such as OAuth, you must remove that repository from your existing connection before you re-connect it via the GitHub App. Follow the steps provided in [Add or remove GitHub repositories](#add-remove-repos) later in this article before you configure the GitHub App.
 >
 > You can connect an Azure DevOps organization to multiple GitHub repositories if you're an administrator for those repositories. However, you shouldn't connect a GitHub repository to more than one Azure DevOps organization.
-
-## Give Azure Boards organization access 
-
-To grant GitHub access to your Azure DevOps organization, do the following steps. 
-
-1. From the GitHub web portal, open **Settings** from your profile menu.  
-
-   :::image type="content" source="media/troubleshoot/choose-settings.png" alt-text="Screenshot of open profile, choose Settings.":::       
-	
-2. Select **Applications** under **Integrations**.  
-
-3. Select **Authorized GitHub Apps** > **Azure Boards**. 
-
-   :::image type="content" source="media/troubleshoot/open-azure-boards.png" alt-text="Screenshot of Authorized OAuth Apps tab, choose Azure Boards.":::   
-
-4. Under **Organization access**, resolve any issues that might appear. Select **Grant** to grant access to any organizations that show as having an **Access request pending**. 
-
-   :::image type="content" source="media/troubleshoot/organization-access-issues.png" alt-text="Screenshot of Organization access with organizations without access.":::	
-
-<a id="install"></a>
 
 ## Install and configure the Azure Boards app 
 
@@ -83,6 +63,26 @@ To grant GitHub access to your Azure DevOps organization, do the following steps
    :::image type="content" source="media/github-app/confirm-github-repos.png" alt-text="Screenshot of Confirm your GitHub repositories dialog.":::
 
 <a id="get-started"></a>
+
+## Give Azure Boards organization access 
+
+To grant GitHub access to your Azure DevOps organization, do the following steps. 
+
+1. From the GitHub web portal, open **Settings** from your profile menu.  
+
+   :::image type="content" source="media/troubleshoot/choose-settings.png" alt-text="Screenshot of open profile, choose Settings.":::       
+	
+2. Select **Applications** under **Integrations**.  
+
+3. Select **Authorized GitHub Apps** > **Azure Boards**. 
+
+   :::image type="content" source="media/troubleshoot/open-azure-boards.png" alt-text="Screenshot of Authorized OAuth Apps tab, choose Azure Boards.":::   
+
+4. Under **Organization access**, resolve any issues that might appear. Select **Grant** to grant access to any organizations that show as having an **Access request pending**. 
+
+   :::image type="content" source="media/troubleshoot/organization-access-issues.png" alt-text="Screenshot of Organization access with organizations without access.":::	
+
+<a id="install"></a>
 
 ## Use the connection 
 
@@ -145,18 +145,6 @@ If you encounter a problem with a connection, we recommend that you remove the c
 
    :::image type="content" source="media/github/remove-connection-confirmation.png" alt-text="Screenshot of confirmation removal of GitHub connection.":::  
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. To add or remove repositories, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the connection and choose **Add** repositories or **Remove repositories** from the menu. 
-
-   :::image type="content" source="media/github/repo-actions-menu.png" alt-text="Screenshot of add or remove GitHub repos.":::
-	
-2. To remove all repositories and the connection, choose the **Remove connection** option. Then, choose **Remove** to confirm.
-
-   :::image type="content" source="media/github/remove-connection-confirmation.png" alt-text="Screenshot of confirmation of GitHub connection removal dialog.":::
-  
 ::: moniker-end
 
 ## Change repository access

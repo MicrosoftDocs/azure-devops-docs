@@ -192,14 +192,9 @@ Triggers a build configured to use a Git repository using the [Jenkins Git Plugi
     * The base URL that hosts the Jenkins server
     * Data type: **uri**
     * Required: **Yes**
-  * **username**
-    * User name
-    * The Jenkins user name of a user who is allowed to trigger the build
-    * Data type: **string**
-    * Required: **Yes**
-  * **password**
-    * User API token (or password)
-    * The user's API token, which is available in the Jenkins user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins, the real user password must be specified.
+  * **basicAuthCredentials** [We recommend using service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md).
+    * Basic authentication credentials
+    * Enter standard HTTP authentication credentials. Basic HTTP authentication send credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via secure transport layer (SSL)
     * Data type: **string**
     * Required: **Yes**
 
@@ -216,16 +211,11 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
     * The base URL that hosts the Jenkins server
     * Data type: **uri**
     * Required: **Yes**
-  * **username**
-    * User name
-    * The Jenkins user name of a user who is allowed to trigger the build
+  * **basicAuthCredentials** [We recommend using service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md).
+    * Basic authentication credentials
+    * Enter credentials for standard HTTP authentication. Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via secure transport layer (SSL).
     * Data type: **string**
-    * Required: **Yes**
-  * **password**
-    * User API token (or password)
-    * The user's API token, which is available in the Jenkins user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins, the real user password must be specified.
-    * Data type: **string**
-    * Required: **Yes**
+    * Required: **No**
   * **buildName**
     * Build
     * The build name to trigger
@@ -328,19 +318,14 @@ This action posts a JSON object representation of the event to the specified URL
     * Required: **Yes**
   * **httpHeaders**
     * HTTP headers
-    * HTTP header keys and values separated by a colon(for example "Key1:value1") with each key-value-pair appearing on its own line of text.
+    * HTTP header keys and values separated by a colon (for example "Key1:value1") with each key-value-pair appearing on its own line of text.
     * Data type: **string**
     * Required: **No**
-  * **basicAuthUsername**
-    * Basic authentication username
-    * Enter a username for standard HTTP authentication. Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via secure transport layer (SSL).
+  * **basicAuthCredentials** [We recommend using service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md).
+    * Basic authentication credentials
+    * Enter credentials for standard HTTP authentication. Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via secure transport layer (SSL).
     * Data type: **string**
-    * Required: **No**
-  * **basicAuthPassword**
-    * Basic authentication password
-    * Enter a password for standard HTTP authentication. Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via SSL.
-    * Data type: **string**
-    * Required: **No**
+    * Required: **Yes**
   * **resourceDetailsToSend**
     * Resource details to send
     * Control the resource fields to send
@@ -356,7 +341,6 @@ This action posts a JSON object representation of the event to the specified URL
     * Control the detailed messages to send
     * Data type: **string**
     * Required: **No**
-
 ## Zendesk
 
 Zendesk is a SaaS suite that offers help desk ticketing, issue tracking, and customer service support.

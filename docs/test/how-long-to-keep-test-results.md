@@ -23,9 +23,10 @@ You can keep manual test results while you're still reviewing them,
 for example, up to a year. 
 
 ## Prerequisites
-  
-- To manage project-level test-related policies, you must be a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md). 
-- To manage build pipeline object-level test retention policies, you must have the **Edit build pipeline** permissions set to **Allow**. 
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** |- To manage project-level test-related policies: Member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md).<br>- To manage build pipeline object-level test retention policies: **Edit build pipeline** permissions set to **Allow**. |
   
 <a name="manual-test-results-limits"></a> 
 

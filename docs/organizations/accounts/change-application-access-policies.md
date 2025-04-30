@@ -19,7 +19,9 @@ This article shows how to manage your organization's security policies that dete
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
 
 [!INCLUDE [manage-policies](../../includes/manage-policies.md)]
 
@@ -39,7 +41,7 @@ To allow seamless access to your organization without repeatedly prompting for u
 By default, your organization allows access for all authentication methods.
 
 You can limit access for OAuth and SSH keys by disabling these application connection policies:
-- **Non-Microsoft application via OAuth**: Enable non-Microsoft applications to access resources in your organization through OAuth. This policy is defaulted to *off* for all new organizations. If you want access to non-Microsoft applications, enable this policy to ensure these apps can access resources in your organization.
+- **Third-party application access via OAuth**: Enable Azure DevOps OAuth apps to access resources in your organization through OAuth. This policy is defaulted to *off* for all new organizations. If you want access to [Azure DevOps OAuth apps](../../integrate/get-started/authentication/azure-devops-oauth.md), enable this policy to ensure these apps can access resources in your organization. This policy doesn't impact [Microsoft Entra ID OAuth app access](../../integrate/get-started/authentication/entra-oauth.md).
 - **SSH Authentication**: Enable applications to connect to your organization's Git repos through SSH.
 
 When you deny access to an authentication method, no application can access your organization through that method. Any application that previously had access encounter authentication errors and lose access.

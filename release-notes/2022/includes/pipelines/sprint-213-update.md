@@ -21,9 +21,6 @@ When you restrict pipeline permissions of a protected resource, such as a servic
 > [!div class="mx-imgBorder"]
 > ![Pipeline Permissions for Changes to Approvals](../../media/213-pipelines-01.png)
 
-> [!div class="mx-imgBorder"]
-> ![Successfully Authorized for Changes to Approvals](../../media/213-pipelines-02.png)
-
 ### Ensure your organization only uses YAML pipelines
 
 Azure DevOps now lets you ensure your organization only uses YAML pipelines, by disabling the creation of classic build pipelines, classic release pipelines, task groups, and deployment groups. Your existing classic pipelines will continue to run, and you'll be able to edit them, but you won't be able to create new ones.
@@ -78,7 +75,7 @@ To prevent PRs from forked GitHub repositories from making undesired changes to 
 The macos-12 Monterey image is ready to be the default version for the “macos-latest" label in Azure Pipelines Microsoft-hosted agents. Until now, this label pointed to macos-11 Big Sur agents. 
 
 
-For a full list of differences between macos-12 and macos-11, visit the [GitHub issue](https://github.com/actions/runner-images/issues/6384). For a full list of software installed on the image, check [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md).
+For a full list of differences between macos-12 and macos-11, visit the [GitHub issue](https://github.com/actions/runner-images/issues/6384). For a full list of software installed on the image, check [here](https://github.com/actions/runner-images/blob/main/images/macos/).
 
 ### Ubuntu-latest label will point to ubuntu-22.04 image
 

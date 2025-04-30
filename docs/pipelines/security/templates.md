@@ -16,6 +16,8 @@ This article describes how templates can streamline security for Azure Pipelines
 
 [Checks on protected resources](resources.md) form the fundamental security framework for Azure Pipelines. These checks apply regardless of pipeline structure, stages, and jobs. You can use templates to help enforce these checks. 
 
+[!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
+
 ## Includes and extends templates
 
 Azure Pipelines provides *includes* and *extends* templates.

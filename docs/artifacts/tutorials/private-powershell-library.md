@@ -33,6 +33,8 @@ In this article, you'll learn how to:
 
 - Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
 
+- Install [PowerShell](/powershell/scripting/install/installing-powershell) 6.0 or later to ensure you have the required *PowerShellGet* version needed for installing *PSResourceGet*.
+
 - Install [PSResourceGet](/powershell/gallery/powershellget/install-powershellget).
 
 - Install the [SecretManagement and SecretStore](/powershell/utility-modules/secretmanagement/get-started/using-secretstore) modules.
@@ -158,16 +160,16 @@ If you don't have your own module, follow the instructions in this section to cr
 
 ## Publish a package
 
-Run the following command to publish the package to your feed:
+Run the following command to publish the package to your feed. Replace the placeholders with your package path, repository name, the credential object you created earlier, and provide any string for the ApiKey.
 
 ```powershell
-Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -ApiKey (Get-Secret <SECRET_NAME>) 
+Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -Credential $credentials -ApiKey <ANY_STRING>
 ```
 
 **Example**:
 
 ```powershell
-PS C:\AzureDevOps\Demos\PowerShellDemo> Publish-PSResource -Path .\scripts\ -Repository FabrikamFiberFeed -ApiKey (Get-Secret MyNewCredential) -verbose
+PS C:\AzureDevOps\Demos\PowerShellDemo> Publish-PSResource -Path .\scripts\ -Repository FabrikamFiberFeed -Credential $credentials -ApiKey az -verbose
 VERBOSE: Performing the operation "Publish-PSResource" on target "Publish resource
 'C:\AzureDevOps\Demos\PowerShellDemo\scripts\' from the machine".
 VERBOSE: The newly created nuspec is:
@@ -220,7 +222,16 @@ In this article, you'll learn how to:
 
 - Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
 
-- Install [NuGet](https://www.nuget.org/downloads).
+- Install Windows MSBuild using one of the following options:
+    - [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/preview/)
+    - [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools#build-tools-for-visual-studio-2022).
+    - [.NET Core SDK](https://dotnet.microsoft.com/download).
+
+- Install the [NuGet(.exe)](https://www.nuget.org/downloads) version *4.8.0.5385* or later.
+
+- Install the [dotnet runtime](https://dotnet.microsoft.com/en-us/download) version *8.0.x* or later.
+
+- Install [PowerShell](/powershell/scripting/install/installing-powershell) 6.0 or later to ensure you have the appropriate *PowerShellGet* and *PackageManagement* versions.
 
 ## Create a personal access token
 

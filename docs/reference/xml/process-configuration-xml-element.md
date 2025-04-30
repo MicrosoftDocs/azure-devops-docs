@@ -877,9 +877,9 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
       - **Off** &mdash; Bugs don't appear on backlogs or boards  <br/>
    - **HiddenBacklogs** specifies the [backlog that's inactive by  default](../../organizations/settings/select-backlog-navigation-levels.md).
    - **StateColors** sets the color values for workflow states. (Requires TFS 2017 or later version)  
-    <a id="state-colors">  </a>The value for the property is a comma-separated list of state names and hex colors. Prefix the six-digit Hex color code with FF which denotes that the color should be fully visible.  
-   `<Property name="StateColors" value="stateName1=color1,  
-   stateName2=color2,..." />`<br/><br/>   
+    <a id="state-colors">  </a>The value for the property is a comma-separated list of state names and hex colors. Prefix the six-digit Hex color code (include the #) with FF which denotes that the color should be fully visible.  
+   `<Property name="StateColors" value="stateName1=#FFFCEECF,  
+   stateName2=#FFFCEECF,..." />`<br/><br/>   
    > [!NOTE]   
    > **Feature availability:** You can specify workflow state colors if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2015.2 or later version.     
    For additional details, see the next section, [Specify workflow state colors](#workflow-colors). 

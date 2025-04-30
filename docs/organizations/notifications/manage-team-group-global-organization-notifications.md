@@ -68,15 +68,15 @@ A subscription lets you control what your team is notified of and how the team r
    > [!TIP]
    > For **Team members by role**, each role is fairly self-explanatory. However, the following two roles may need some further explanation. 
    > 
-   > **Changed reviewers** applies to any reviewer that's added or deleted, as a result of policies defined for the set of files. For example, a push to a pull request (PR) could introduce a change to File1.cs. If there’s a policy which says that Person A needs to review changes to File1.cs, they’d be in the Changed reviewers role for that iteration of the PR. 
+   > **Changed reviewers** applies to any reviewer added or deleted, as a result of policies defined for the set of files. For example, a push to a pull request (PR) could introduce a change to File1.cs. If there’s a policy which says that Person A needs to review changes to File1.cs, they’d be in the Changed reviewers role for that iteration of the PR. 
    > 
-   > The **Reset reviewers** role is related to the “reset votes” policy. For example, the repo has configured the policy, “Reset votes on new pushes”. Person B, who was required on the PR, has already approved this PR. Because of the reset votes policy, their vote has been reset. Thus, she’s in the Reset reviewers role for that iteration.
+   > The **Reset reviewers** role is related to the “reset votes” policy. For example, the repo configured the policy, “Reset votes on new pushes”. Person B, who was required on the PR, already approved this PR. Because of the reset votes policy, their vote is reset. Thus, they're in the Reset reviewers role for that iteration.
 
 2. Choose whether you want to receive notifications about activity in all projects or only a specific project.
 
     ![Screenshot of selected scope.](media/new-sub-scope.png)
 
-3. Optionally, configure more filter criteria.
+3. Optionally, configure more filter criteria. For fields, such as Created By, that require a user as a value, enter the username or email address of the user.
 
     ![Screenshot of configuring additional filter criteria.](media/new-sub-filter-conditions.png)
 
@@ -120,8 +120,8 @@ A subscription lets you control what your team is notified of and how the team r
 
    > [!TIP]
    > For **Team members by role**, each role is fairly self-explanatory. However, the following two roles may need some further explanation. 
-   > **Changed reviewers** applies to any reviewer that's added or deleted, as a result of policies defined for the set of files. For example, a push to a pull request (PR) could introduce a change to File1.cs. If there’s a policy which says that Person A needs to review changes to File1.cs, they’d be in the Changed reviewers role for that iteration of the PR. 
-   > The **Reset reviewers** role is related to the “reset votes” policy. For example, the repo has configured the policy, “Reset votes on new pushes”. Person B, who was required on the PR, has already approved this PR. Because of the reset votes policy, their vote has been reset. Thus, she’s in the Reset reviewers role for that iteration.
+   > **Changed reviewers** applies to any reviewer added or deleted, as a result of policies defined for the set of files. For example, a push to a pull request (PR) could introduce a change to File1.cs. If there’s a policy which says that Person A needs to review changes to File1.cs, they’d be in the Changed reviewers role for that iteration of the PR. 
+   > The **Reset reviewers** role is related to the “reset votes” policy. For example, the repo configured the policy, “Reset votes on new pushes”. Person B, who was required on the PR, already approved this PR. Because of the reset votes policy, their vote is reset. Thus, they're in the Reset reviewers role for that iteration.
 
 7. Choose whether you want to receive notifications about activity in all projects or only a specific project.
 
@@ -155,13 +155,7 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 ::: moniker range="azure-devops-2020"
 
 > [!TIP]
-> You can send an email to all collections in an application tier. See [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). Also, you can generate a banner to communication with users without sending out mass emails.  For more information, see [Add and manage information banners in Azure DevOps](../../organizations/settings/manage-banners.md).
-
-::: moniker-end
-
-::: moniker range=" azure-devops-2019"
-> [!TIP]
-> You can send an email to all collections in an application tier. See [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). 
+> You can send an email to all collections in an application tier. See [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). Also, you can generate a banner to communication with users without sending out mass emails. For more information, see [Add and manage information banners in Azure DevOps](../../organizations/settings/manage-banners.md).
 
 ::: moniker-end
 

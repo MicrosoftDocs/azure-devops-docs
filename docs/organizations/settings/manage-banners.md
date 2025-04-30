@@ -7,7 +7,7 @@ ms.custom: devx-track-azurecli
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 09/11/2024
 ---
 
@@ -28,18 +28,21 @@ We limit banners to 30 words prioritize by level. So, if you post a warning mess
 ## Prerequisites 
 
 ::: moniker range="azure-devops"
-- **Permissions:** Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group.
-- **Access levels:** 
-  - Install the [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub) marketplace extension. For more information, see [Install extensions](../../marketplace/install-extension.md).
-  - [Install the Azure DevOps CLI extension](../../cli/index.md).  
-  	- Sign into Azure DevOps using `az login`.  
-  	- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** | Member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group.|
+|**Extensions** |- [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub). For more information, see [Install extensions](../../marketplace/install-extension.md).<br>- [Azure DevOps CLI](../../cli/index.md).<br>- Sign into Azure DevOps using `az login`.<br>- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.|
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- **Permissions:** Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group.
-- **Access levels:** 
-  - Install the [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub) marketplace extension on the project collection where you want to manage banners. For more information, see [Install extensions for on-premises servers](../../marketplace/get-tfs-extensions.md).
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** | Member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group.|
+|**Extensions** |- [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub). For more information, see [Install extensions for on-premises servers](../../marketplace/get-tfs-extensions.md).|
+
 ::: moniker-end
 
 ## Manage banners using the Banner Settings extension 

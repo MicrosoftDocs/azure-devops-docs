@@ -45,12 +45,13 @@ Azure DevOps uses security groups for the following purposes:
  
 ## Prerequisites
 
-* To manage permissions or groups at the project level, you must be a member of the **Project Administrators** Group. If you created the project, you're automatically added as a member of this group. 
-* To manage permissions or groups at the collection or instance level, you must be a member of the **Project Collection Administrators** Group. If you created the organization or collection, you're automatically added as a member of this group. 
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - To manage permissions or groups at the project level: Member of the **Project Administrators** security group.<br>- To manage permissions or groups at the collection level: Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.  |
 
 ::: moniker range="azure-devops"
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including Permissions. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group can't access most **Organization settings** pages, including permissions. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 ::: moniker-end
 
 <a id="create-custom-group"></a> 
@@ -86,7 +87,6 @@ Create a project-level group when you want to manage permissions at the project-
 2. Under **Security**, select **Permissions**, and then choose **New group** to open the dialog for adding a group. 
 
    ![Screenshot showing creating a security group at the organization-level.](media/project-collection/organization-permissions-add-group.png)  
-
 
 ### Define the new group  
 
@@ -134,7 +134,7 @@ Create a project-level group when you want to manage permissions at the project-
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Open the web portal and select the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -176,8 +176,6 @@ Create a project-level group when you want to manage permissions at the project-
    > Users with limited access, such as Stakeholders, can't access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
 
 ::: moniker-end
-
-
 
 <a id="project-level"></a>
 
@@ -239,8 +237,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 
 ::: moniker-end 
 
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Open the **Permissions** page for either the project-level or organization-level as described in the previous section, [Create a custom security group](#create-custom-group). 
 
@@ -260,8 +257,6 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 2. Choose **Save changes**. Choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see the additions.  
 
 ::: moniker-end 
-
-
 
 ## Change permissions for a user or group 
 
@@ -386,8 +381,6 @@ For on-premises deployments, see these other articles:
 If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end 
-
-
 
 ## Next steps
 

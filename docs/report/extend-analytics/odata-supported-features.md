@@ -8,10 +8,9 @@ ms.reviewer: desalg
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 09/30/2020
 ---
-
 
 # Supported OData functions and clauses
 
@@ -35,14 +34,12 @@ This article covers how Analytics supports several OData functions. Unsupported 
 - ```$skip```  
 - ```$top```  
 
-
 When multiple clauses are used in a query, they're applied in the order specified above. The order of clauses in the query string is ignored. For example, in the following query, work items are first  grouped and aggregated. Next, the groups are filtered. After that, the filtered groups are sorted. Finally, the first five records are returned. The query returns the top five work item types used at least 100 times.
 
 ``` 
 WorkItems?$filter=Count ge 100&$apply=groupby((WorkItemType), aggregate($count as Count))&$orderby=Count&top=5
 
 ```
-
 
 <a id="aggregation-extensions"></a>
 
@@ -95,7 +92,6 @@ For more information, see [Aggregate work tracking data](aggregated-data-analyti
 | [```maxdatetime```](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868709) | Returns the latest possible point in time as a DateTimeOffset value. |  
 | [```mindatetime```](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341795) |  Returns the earliest possible point in time as a DateTimeOffset value. |  
 
-
 OData functions are used in a ```$filter``` clause, but not in a ```$select``` clause the way they would be uses in a SQL statement.  
 
 For example, you can specify:  
@@ -125,7 +121,6 @@ However, you can't enter the following string:
 - ```topcount```  
 - ```topsum```  
 - ```toppercent```  
-
 
 ## Related articles  
 

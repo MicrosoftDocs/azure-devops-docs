@@ -23,8 +23,11 @@ A board presents work items in the form of cards, where each card represents a w
 
 ## Prerequisites
 
-[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
-- See the section, [Card customization sequence](#card-customization-sequence)
+| Category | Requirements |
+|--------------|-------------|
+|**Access levels** | At least [**Basic**](../../organizations/security/access-levels.md) access.|
+|**Permissions** | To configure team settings: Member of the **Project Administrators** security group or [**Team Administrator** role](../../organizations/settings/add-team-administrator.md). For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).|
+|**Tasks (optional)**| See the section, [Card customization sequence](#card-customization-sequence)|
 
 ## Card customization options  
 
@@ -46,23 +49,12 @@ Within the [Settings dialog for a board](#open-your-board-settings), you have th
 |**[Card reordering](#reorder-cards)**    | Choose expected behavior when reordering cards on the board.        |
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-|Setting |Customization action  |
-|---------|---------|
-|**[Fields](#fields)**  | Add or remove fields from cards.      |
-|**[Styles](#style-rule)**   | Add styling rules to change card color and title style based on field criteria.        |
-|**[Tag colors](#assign-tag-colors)**      | Specify a tag color and enable or disable a tag color.        |
-|**[Annotations](#enable-or-disable-annotations)**   | Enable or disable annotations to appear on cards.        |
-|**[Tests](#configure-inline-tests)**    |Configure how you want tests to appear and behave on the cards.         |
-|**[Card reordering](#reorder-cards)**    | Choose expected behavior when reordering cards on the board.        |
-::: moniker-end
-
 > [!NOTE]   
 > Each team can customize the cards for their board. Board settings are not inherited from other teams that they may share portions of area paths. 
 
 ## Card customization sequence 
 
-Before you configure the cards, make sure the following tasks are complete, or you might need to revisit your configuration.  
+Before you configure the cards, ensure the following tasks are complete, or you might need to revisit your configuration.  
 
 **Process Administrator**: 
 1. Add custom work item types that you want to appear on your backlog or board. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
@@ -99,7 +91,7 @@ You can customize cards that appear on the board for your product backlog or por
  
 You can edit a card field from the board, except for read-only fields like the *Change By* and  *Changed Date*. This quick update feature is useful when you need to update many work items at once.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 Do the following steps to update fields. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
 ::: moniker-end  
 
@@ -155,7 +147,7 @@ Which rules should you apply to highlight work items? Here are a few examples an
 
 You can apply style rules to change the color of cards on boards and Taskboards.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. From the board settings page, select **Styles** to specify a style rule. 
 2. Select + **Add styling rule**. Select the color to apply to the card and define the criteria for the style rule. 
@@ -164,13 +156,13 @@ You can apply style rules to change the color of cards on boards and Taskboards.
 
    :::image type="content" source="../sprints/media/customize/taskboard-styles-priority.png" alt-text="Screenshot of the Settings, Styles dialog.":::
 
-> [!TIP]
-> Note the following information about style rules:
-   - The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md). 
-   - All clauses are considered AND clauses, grouping clauses isn't supported. 
-   - Card rules apply to all work items that meet the rule criteria. 
-   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied. 
-   - You can quickly enable and disable a style rule.
+   > [!TIP]
+   > Note the following information about style rules:
+   >- The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md). 
+   >- All clauses are considered AND clauses, grouping clauses isn't supported. 
+   >- Card rules apply to all work items that meet the rule criteria. 
+   >- Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied. 
+   >- You can quickly enable and disable a style rule.
 
    In the following example, we add a *Stale tasks* rule, which highlights tasks that haven't changed in the last five days.
 
@@ -202,9 +194,9 @@ When you disable an annotation, you also disable the feature to add the associat
 
 Complete the following steps to manage annotations.
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
-1. From your board settings page, select **Annotations** .
+1. From your board settings page, select **Annotations**.
 2. Check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
 
    :::image type="content" source="media/customize-cards/annotate-settings-154.png" alt-text="Screenshot showing a board, Settings dialog, Annotations tab.":::
@@ -224,11 +216,6 @@ As shown in the following examples, the **Task** and **Test** annotations indica
 > |![Task annotations enabled.](media/annotate-task.png) | ![Test annotations enabled.](media/annotate-test.png) | ![Annotations disabled.](media/annotate-none.png) | 
 
 For more information, see [Add tasks or child items as checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]  
-> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product board. For more information, see [Set up your backlogs and boards, Customize your board checklist items](../backlogs/set-up-your-backlog.md#customize-checklist-2019). 
-::: moniker-end
 
 ## Configure inline tests 
 
@@ -272,7 +259,7 @@ In addition to the dynamic card reordering, you can also move a card to a specif
 You can reorder the work items within a board column by choosing &hellip;**Work items action menu**, selecting **Move to position**, and then specifying a value in the dialog.  
 
 > [!NOTE]   
-> The **Move to column position** feature requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+> The **Move to column position** feature requires the **New Boards Hub** feature, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
  
 Specify a value within the range listed, which corresponds to the number of items currently in the column. 
 

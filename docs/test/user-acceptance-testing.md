@@ -21,10 +21,14 @@ on business requirements, and the high quality software demanded by customers. T
 Typically you create a Test Suite using a formal requirement work item type. However, today's 
 agile teams often prefer to work from User Stories or Product Backlog items as their requirements.
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)]
-- You must have work items and a test plan. If you don't, do the steps in the following articles: 
-   - [Create your backlog](../boards/backlogs/create-your-backlog.md)
-   - [Create a test plan](create-a-test-plan.md)
+## Prerequisites
+
+| Category | Requirement |
+|--------------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
+| **Access levels** | To request or provide feedback: At least **Stakeholder** access. |
+| **Permissions** | - To add or modify bugs or other work item types: **Edit work items in this node** permission set to **Allow** under the corresponding **Area Path**. <br> - To add new tags: **Create tag definition** permission set to **Allow**. <br> For more information, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md). |
+|**Configuration**  |Work items and a test plan. If you don't have these, [create your backlog](../boards/backlogs/create-your-backlog.md) and [create a test plan](create-a-test-plan.md).|
 
 <a name="search-assign"></a>
 
@@ -52,7 +56,7 @@ For user acceptance testing, you can assign multiple testers to a set of tests. 
 ::: moniker range="< azure-devops"
 
    > [!NOTE]
-   > For on-premises Azure DevOps, you must have an SMTP server configured for your deployment.
+   > For on-premises Azure DevOps, have an SMTP server configured for your deployment.
    > For more information, see [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)
 ::: moniker-end
 

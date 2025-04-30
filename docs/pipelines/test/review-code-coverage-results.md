@@ -25,8 +25,6 @@ Reviewing the code coverage result helps to identify code path(s) that are not
 covered by the tests. This information is important to improve the test collateral
 over time by reducing the test debt.
 
-
-
 ## Example
 
 To view an example of publishing code coverage results for your choice of language,
@@ -35,9 +33,7 @@ code coverage for [JavaScript](../ecosystems/customize-javascript.md) using Ista
 
 ## View results 
 
-
-
-:::moniker range=">= azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 The code coverage summary can be viewed on the **Summary** tab on the pipeline run summary.
 
@@ -52,7 +48,6 @@ The results can be viewed and downloaded on the **Code coverage** tab.
 > This means that you may have to separate the build stage into a pipeline of its own if you want to review the 
 > code coverage results prior to deploying to production.
 
-
 > [!NOTE]
 > Merging code coverage results from multiple [test runs](test-glossary.md) is
 > limited to .NET and .NET Core at present. This will be supported for other formats in a future release.
@@ -61,9 +56,7 @@ The results can be viewed and downloaded on the **Code coverage** tab.
 
 ## Artifacts
 
-
-
-:::moniker range=">= azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 The code coverage artifacts published during the build can be viewed under the **Summary** tab on the pipeline run summary.
 

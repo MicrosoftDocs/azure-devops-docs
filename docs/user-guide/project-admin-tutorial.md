@@ -18,6 +18,10 @@ With most Azure DevOps Services, you can start using the service and configure r
 
 If you created a project or you're added to the **Project Administrators** group, get familiar with the administrative tasks you're charged with. There are a few tasks you might want to do to ensure a smooth operational experience. 
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-administrator-only](../includes/prerequisites-project-administrator-only.md)]
+
 > [!NOTE]   
 > This article provides an overview of tasks a member of the **Project Administrators** group should review and attend to. For information on tasks to be performed by members of the **Project Collection Administrators** group, see [Manage your organization or project collection](manage-organization-collection.md).
 

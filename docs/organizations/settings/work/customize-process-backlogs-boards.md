@@ -33,11 +33,7 @@ In the following example, we added a third level portfolio backlog labeled *Init
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Changes made to the backlog levels.](media/process/portfolio-backlogs-modified.png) 
 
-::: moniker range="azure-devops-2019"
-> [!NOTE]    
-> You can't add an inherited work item type to any backlog level. For example, you can't add the Issue or Impediment work item type to the product backlog. 
  
-::: moniker-end 
 
 ## Supported customizations
 
@@ -124,6 +120,8 @@ When you add a WIT to a backlog level, certain fields are automatically added to
 | Requirement backlog |- Stack Rank, Story Points (Agile)<br/>- Stack Rank, Size (CMMI)<br/>- Backlog Priority, Effort (Scrum) |The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).|
 | Iteration backlog |- Activity, Remaining Work, Stack Rank (Agile)<br/>- Discipline, Remaining Work, Stack Rank (CMMI)<br/>- Activity, Remaining Work, Backlog Priority (Scrum) |Remaining Work is used in [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md).|
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)]
  
 [!INCLUDE [temp](../includes/automatic-update-project.md)] 
@@ -175,10 +173,7 @@ You can add a portfolio backlog and custom work item type following these steps.
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Web portal, Add a portfolio backlog dialog, Add new work item type.](media/backlogs/add-portfolio-backlog-initiative-s173.png) 
 	::: moniker-end 
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Web portal, Add a portfolio backlog dialog, Add new work item type.](media/process/process-add-portfolio-backlog-dialog.png) 
-	::: moniker-end 
+	 
 
 6. If you're associating only one work item type with the backlog, then choose **Save** to save your changes. Otherwise, you can add more work item types as needed. 
 
@@ -186,10 +181,7 @@ You can add a portfolio backlog and custom work item type following these steps.
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Web portal, Add a portfolio backlog dialog, Save changes.](media/backlogs/add-portfolio-backlog-initiative-save.png)
 	::: moniker-end 
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Web portal, Add a portfolio backlog dialog, Save changes.](media/process/process-add-portfolio-backlog-dialog-save.png) 
-	::: moniker-end 
+	 
 
 <a id="edit-portfolio-backlog">  </a>
 
@@ -222,12 +214,7 @@ In the following example, we renamed the backlog, added **Customer Ticket** and 
  
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019"
-
-In the following example, we renamed the backlog, added *Customer Ticket*, and changed the default type to *Customer Ticket*. 
-
-![Example of renaming the backlog, adding Customer Ticket, and changing the default type to Customer Ticket.](media/process/process-edit-backlog-dialog-modified.png)  
-::: moniker-end  
+  
  
 > [!NOTE]    
 > You can't remove the default, inherited work item type from the Requirements backlog. However, you can disable the work item type and that effectively removes it from the user interface.  

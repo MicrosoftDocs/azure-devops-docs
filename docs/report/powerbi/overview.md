@@ -7,8 +7,8 @@ ms.subservice: azure-devops-analytics
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-monikerRange: '>=azure-devops-2019'
-ms.date: 09/23/2024
+monikerRange: "<=azure-devops"
+ms.date: 03/12/2025
 #customer intent: As a team leader or member, I want to understand how to pull data from analytics to use in Power BI reports.
 ---
 
@@ -27,51 +27,11 @@ You can pull data from Analytics into Power BI in three ways, described in the f
 > [!NOTE]  
 > Open Data Protocol (OData) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. For more information, see [OData documentation](/odata/).
 
-:::row:::
-   :::column span="1":::
-   **Connection Option**
-   :::column-end:::
-   :::column span="1":::
-   **Description**
-   :::column-end:::
-   :::column span="2":::
-   **Considerations**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-   [Connect using the OData queries](odataquery-connect.md)
-   :::column-end:::
-   :::column span="1":::
-   Power BI can execute OData queries. OData queries are powerful and can filter and aggregate data before returning it to Power BI.
-   :::column-end:::
-   :::column span="2":::
-   **We recommend this method**, except for simpler reports on Boards data. It requires you to write OData queries, which is similar to writing SQL queries. You can review several [sample reports](sample-odata-overview.md) to help you get started.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Connect using the Azure DevOps Data Connector](data-connector-connect.md)
-   :::column-end:::
-   :::column span="1":::
-   The Azure DevOps Data connector works with [Analytics views](what-are-analytics-views.md). To access **Analytics views**, you must enable the feature as described in [Enable preview features](../../project/navigation/preview-features.md).
-   :::column-end:::
-   :::column span="2":::
-   **This connector only works with Boards data (work items)**. It doesn't support other data types, such as Pipelines. It provides a flat-list of work items, and doesn't support work item hierarchies. There are no plans to update the connector to support other types of data. We recommend using OData queries unless you have a simpler report on Boards data.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Connect using the Power BI's OData Feed connector](access-analytics-power-bi.md)
-   :::column-end:::
-   :::column span="1":::
-   Power BI provides an OData Feed connector that allows you to connect to and browse the Analytic's OData endpoint. It's the typical way Power BI interacts with OData feeds. You can browse and select the entities and use its Query Editor to filter the dataset.
-   :::column-end:::
-   :::column span="2":::
-   **Only use this method if you have a small account.** This method doesn't support server-side query folding. All filters are applied client-side. All the data is pulled into Power BI before applying the filters. If you have a small account, it might work well for you. If you have a large account, you might have long refresh times and timeouts.
-   :::column-end:::
-:::row-end:::
+| **Connection Option** | **Description** | **Considerations** |
+|-----------------------|-----------------|--------------------|
+| [Connect using the OData queries](odataquery-connect.md) | Power BI can execute OData queries. OData queries are powerful and can filter and aggregate data before returning it to Power BI. | **We recommend this method**, except for simpler reports on Boards data. It requires you to write OData queries, which is similar to writing SQL queries. You can review several [sample reports](sample-odata-overview.md) to help you get started. |
+| [Connect using the Azure DevOps Data Connector](data-connector-connect.md) | The Azure DevOps Data connector works with [Analytics views](what-are-analytics-views.md). To access **Analytics views**, you must enable the feature as described in [Enable preview features](../../project/navigation/preview-features.md). | **This connector only works with Boards data (work items)**. It doesn't support other data types, such as Pipelines. It provides a flat-list of work items, and doesn't support work item hierarchies. There are no plans to update the connector to support other types of data. We recommend using OData queries unless you have a simpler report on Boards data. |
+| [Connect using the Power BI's OData Feed connector](access-analytics-power-bi.md) | Power BI provides an OData Feed connector that allows you to connect to and browse the Analytic's OData endpoint. It's the typical way Power BI interacts with OData feeds. You can browse and select the entities and use its Query Editor to filter the dataset. | **Only use this method if you have a small account.** This method doesn't support server-side query folding. All filters are applied client-side. All the data is pulled into Power BI before applying the filters. If you have a small account, it might work well for you. If you have a large account, you might have long refresh times and time-outs. |
 
 ## Query Editor
 
@@ -126,36 +86,15 @@ Several sample reports show how to generate reports from either an Analytics vie
 
 ### Sample reports using OData queries
 
-To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md). For specific examples, see one of the following articles:
+To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md). For specific examples, see the following articles:
 
 ::: moniker range=">= azure-devops-2020"
----
-:::row:::
-   :::column span="1":::
-      **Azure Boards**
-   :::column-end:::
-   :::column span="1":::
-      **Azure Test Plans**  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      [!INCLUDE [boards samples](includes/sample-fulllist.md)]
-   :::column-end:::
-   :::column span="1":::
-      [!INCLUDE [test plans samples](includes/sample-full-list-test-plans.md)]
-   :::column-end:::
-:::row-end:::
----
 
-[!INCLUDE [pipeline samples](includes/sample-full-list-pipelines.md)]
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [boards samples](includes/sample-fulllist.md)]
+|Service  |Sample reports  |
+|------------------|---------------------|
+|**Azure Boards**|[!INCLUDE [boards samples](includes/sample-fulllist.md)]|
+|**Azure Test Plans**  | [!INCLUDE [test plans samples](includes/sample-full-list-test-plans.md)] |
+|**Azure Pipelines** |[!INCLUDE [pipeline samples](includes/sample-full-list-pipelines.md)]|
 
 ::: moniker-end
 
@@ -169,7 +108,7 @@ All sample report articles provide the following sections and information:
 
 The following Marketplace extensions are available to support Power BI integration with Analytics.
 
-- [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) translates an Azure DevOps work item query into an OData query for use with Azure DevOps Analytics OData endpoints, which can be useful to as a simple OData query.
+- [(WIQL to OData)](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) translates an Azure DevOps work item query into an OData query for use with Azure DevOps Analytics OData endpoints, which can be useful to as a simple OData query.
 - [vscode-odata](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata) extension adds rich language support to Visual Studio Code for the OData query language.
 
 ## Related articles

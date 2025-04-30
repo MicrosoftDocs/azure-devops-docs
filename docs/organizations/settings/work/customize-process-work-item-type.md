@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: how-to
 ms.date: 04/22/2019
 ---
@@ -22,6 +22,8 @@ You can add custom work item types (WITs) or modify existing WITs to add fields,
 > ![Custom Ticket work item form](media/process/custom-wit-new-ticket-form.png) 
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
+
+## Prerequisites
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
@@ -40,7 +42,6 @@ You can add custom work item types (WITs) or modify existing WITs to add fields,
 2. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Choose <strong>Create</strong> to save. 
 
 	<img src="media/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" /> 
-
 
 3. From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. For details, see [Add and manage fields](customize-process-field.md) or [Customize the web layout for a process](customize-process-form.md).    
 
@@ -67,7 +68,6 @@ You can add custom work item types (WITs) or modify existing WITs to add fields,
 
    > [!div class="mx-imgBorder"]  
    > ![Ticket form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-ticket-form.png) 
-
 
 <a id="overview">  </a>
 
@@ -105,7 +105,7 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 
 1. To completely remove a custom WIT and all work items based on that WIT, choose **Destroy** from the WIT context menu.
 
-	To destroy a WIT, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
+	To destroy a WIT, be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
 
 2. To complete the delete operation, you must type the name of the WIT as shown. 
 
@@ -115,13 +115,11 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 
 To work with WITs programmatically, see [Work Item Types REST API](/rest/api/azure/devops/wit/work%20item%20types). 
 
-
 ## Q & A
 
 [!INCLUDE [temp](includes/qa-custom-work-item-on-backlog.md)] 
 
 ## Related articles  
-
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 

@@ -50,9 +50,9 @@ If you checked the *upstream sources* checkbox when creating your feed, Google M
 
 ## Save packages from Google Maven Repository
 
-Before saving packages from Google Maven Repository, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](pom-and-settings.md) to set up your Maven project and connect to your feed.
+Before saving packages from Google Maven Repository, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](pom-and-settings.md) to set up your Maven project and connect to your feed. The following example illustrates how to save the Zipflinger Library from Google Maven Repository.
 
-In this example, we will save the Zipflinger Library from Google Maven Repository.
+If you want to save/restore your packages using Azure Pipelines instead, follow the steps in the [Restore Maven packages with Azure Pipelines (YAML/Classic)](../../pipelines/packages/maven-restore.md) tutorial. 
 
 1. Navigate to Google Maven Repository at `https://mvnrepository.com/`.
 

@@ -18,6 +18,14 @@ monikerRange: '<= azure-devops'
 All teams can use the Test & Feedback extension in **Standalone** mode. 
 Users don't need an Azure DevOps subscription to use this mode.
 
+## Prerequisites
+
+| Category | Requirement |
+|--------------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
+| **Access levels** | To request or provide feedback: At least **Stakeholder** access. |
+| **Extensions** |[Test & Feedback extension](perform-exploratory-tests.md).|
+
 <a name="testmode"></a>
 
 ## Start testing in Standalone mode

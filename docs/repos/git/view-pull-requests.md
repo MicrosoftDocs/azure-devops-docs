@@ -26,29 +26,7 @@ There are several ways to list, filter, view, and open PRs for a project.
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
- 
-- To view PRs, you must be a member of the Azure DevOps project the PR is in, with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
-
-  > [!NOTE]
-  > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To view PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-::: moniker-end
-
-
-
-- For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
-
-::: moniker range="azure-devops"
-
-- In Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
-
-::: moniker-end
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## List pull requests
 
@@ -56,7 +34,7 @@ You can list PRs by using the Azure DevOps project website, Visual Studio, or th
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. To list PRs in a specific repository in a project, [go to that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
 
@@ -79,7 +57,6 @@ You can list PRs by using the Azure DevOps project website, Visual Studio, or th
 ::: moniker-end
 
  
-
 
  
 
@@ -147,7 +124,6 @@ az repos pr list [--creator]
 
 The following command lists all PRs in the repository, regardless of status, and shows the output in a table. The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
-
 ```azurecli
 az repos pr list --status all --output table
 
@@ -180,7 +156,7 @@ Filtering the PR list helps you find and organize PRs to prioritize the most imp
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 To filter the PR list, on the **Pull requests** page, select the **Filter** icon at upper right. Then select **Target branch** or other column header, and select the branch or other value you want to filter on.
 
@@ -250,7 +226,6 @@ az repos pr list --creator "My Name" --status all --top 1
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-
 ***
 
 <a id="open-pr"></a>
@@ -279,9 +254,7 @@ In Visual Studio 2019, you can check out a PR's source branch directly from the 
 
 ![Screenshot that shows Checkout source branch.](./media/view-pull-requests/checkout-pr-source-branch.png)
 
-
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -352,9 +325,6 @@ az repos pr checkout --id 21
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
-
-
-
 
 To review changes, make comments or suggestions, or approve or vote on the PR, see [Review pull requests](review-pull-requests.md).
 

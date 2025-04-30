@@ -7,7 +7,7 @@ ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: ">= azure-devops-2019" 
+monikerRange: "<=azure-devops"
 ms.date: 10/08/2024
 ---
 
@@ -16,6 +16,10 @@ ms.date: 10/08/2024
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 You can access data through Excel, generate reports, and then publish the charts to Power BI or use the Excel file as a basis for Power BI reports. At this time, you need alternate credentials enabled to access data Analytics via Excel.
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 

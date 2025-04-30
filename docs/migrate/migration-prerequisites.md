@@ -57,7 +57,7 @@ The bulk of the work throughout the migration to Azure DevOps Services gets hand
 1. Generate the files used to customize the migration. 
 1. Queue migration of an Azure DevOps Server database to Azure DevOps Services. 
 
-You must have the following items: 
+Have the following items: 
 
 - TFSEXECROLE role in SQL Server. 
 - Permissions to connect to both the Azure DevOps Server configuration and collection databases. 

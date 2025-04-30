@@ -8,9 +8,8 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/23/2024  
+ms.date: 04/04/2025
 ---
-
 
 # About access levels
 
@@ -30,15 +29,15 @@ Assign users or groups of users to one of the following access levels:
 
 - **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
 - **Basic + Test Plans**: Provides access to all features included in **Basic** and Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
-- **Stakeholder**: Can assign to unlimited users for free. Provides partial access to private projects and mostly full access to public projects. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Visual Studio Subscriber**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features included in their subscription level. If you assign **Basic** or **Stakeholder**, they also receive their Visual Studio subscription benefits upon sign-in.
-
-> [!TIP]
-> As a best practice when adding new users, we recommend assigning the **Visual Studio Subscriber** level when appropriate (as opposed to Basic) to prevent being charged the **Basic** rate before the user signs in for the first time.
+- **Stakeholder**: Provides limited access to private projects and nearly full access to public projects. Assign to an unlimited number of users without requiring a license or subscription, ideal for those needing access to a restricted set of features. Stakeholders can perform various, including viewing work items, participating in discussion, and accessing dashboards. 
+- **Visual Studio subscriber**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features included in their subscription level. If you assign **Basic** or **Stakeholder**, they also receive their Visual Studio subscription benefits upon sign-in.
+   > [!TIP]
+   > As a best practice when adding new users, we recommend assigning the **Visual Studio Subscriber** level when appropriate (as opposed to Basic) to prevent being charged the **Basic** rate before the user signs in for the first time.
+- **GitHub Enterprise**: The system automatically recognizes users with a GitHub Enterprise license the next time they sign in to Azure DevOps. Regardless of a user's assigned access level (for example, they could be assigned **Stakeholder** access), they receive **Basic** access when they're associated with a GitHub Enterprise license.
 
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 - **Stakeholder**: Provides partial access, can assign to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
@@ -62,7 +61,7 @@ The following table indicates those features available for each supported access
       **Stakeholder**
    :::column-end:::
    :::column span="1":::
-      **Basic** &<br/>**Visual Studio Professional**
+      **Basic**, **GitHub Enterprise**, &<br/>**Visual Studio Professional**
    :::column-end:::
    :::column span="1":::
       **Basic + Test Plans &**<br/>**Visual Studio Enterprise**
@@ -71,7 +70,7 @@ The following table indicates those features available for each supported access
 ---
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
 :::row:::
    :::column span="3":::
@@ -173,24 +172,7 @@ The following table indicates those features available for each supported access
 :::row-end:::
 ---
 ::: moniker-end  
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="3":::
-      **Agile boards**  
-      Stakeholders get limited access to [boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders can't add work items, drag-and-drop cards to update status, update fields displayed on cards, nor [view or set capacity](../../boards/sprints/set-capacity.md).
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
+ 
 :::row:::
    :::column span="3":::
       **Agile Portfolio Management**  
@@ -370,7 +352,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Standard Features**  
-      Includes [working across projects](../../project/navigation/work-across-projects.md), [View dashboards](../../report/dashboards/dashboards.md), [View wikis](../../project/wiki/filter-print-wiki.md), and [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md). Stakeholders can't view Markdown README files defined for repositories and can only read wiki pages.  
+      Includes [working across projects](../../project/navigation/work-across-projects.md), [View dashboards](../../report/dashboards/dashboards.md), [View wikis](../../project/wiki/filter-print-wiki.md), and [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md). Stakeholders can't view Markdown README files defined for repositories and can only view wiki pages. Access might be restricted based on specific project or organization permissions. For full functionality, including the ability to view all wiki features, a **Basic** license is recommended.  
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -480,7 +462,6 @@ The following table indicates those features available for each supported access
 :::row-end:::
 ---
 
-
 <a id="basic"></a>
 
 ::: moniker range="azure-devops"
@@ -523,15 +504,15 @@ You can manage access levels programmatically using the [`az devops user add` (A
 | Basic + Test Plans                                    | advanced           | account        | none             | 
 | Visual Studio Subscriber                              | none               | msdn           | eligible         | 
 | Stakeholder                                           | stakeholder        | account        | none             | 
-| Visual Studio Enterprise subscription                 | none               | msdn           | enterprise       | 
-
+| Visual Studio Enterprise subscription                 | none               | msdn           | enterprise|
+| GitHub Enterprise                                     | express   | account                  |enterprise       | 
 
  > [!NOTE]   
  > The `earlyAdopter` accountLicenseType is an internal value used solely by Microsoft.  
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops" 
+::: moniker range="<azure-devops"
 
 You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType`, `licensingSource`, and `msdnLicenseType` parameters.
 
@@ -542,7 +523,6 @@ You can manage access levels programmatically using the [User Entitlement - Add 
 | Visual Studio Subscriber                              | none               | msdn           | eligible         | 
 | Stakeholder                                           | stakeholder        | account        | none             | 
 | VS Enterprise                                         | none               | msdn           | enterprise       | 
-
 
 ::: moniker-end
 

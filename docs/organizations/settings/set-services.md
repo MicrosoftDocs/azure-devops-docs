@@ -6,7 +6,7 @@ ms.subservice: azure-devops-settings
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/12/2024
 ---
 
@@ -18,16 +18,7 @@ Manage the availability of Azure DevOps services through the web portal by enabl
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-
-- **Organization**: [Have an organization](../accounts/create-organization.md) in Azure DevOps.
-- **Permissions**: Be a member of the [Project Administrators](../security/change-project-level-permissions.md) group or be an organization owner.
-::: moniker-end
-
-::: moniker range=" < azure-devops"
-- **Project**: [Have a project](../projects/create-project.md) in Azure DevOps.
-- **Permissions**: Be a member of the [Project Administrators](../security/change-project-level-permissions.md) group.
-::: moniker-end
+[!INCLUDE [prerequisites-project-administrator-only](../../includes/prerequisites-project-administrator-only.md)]
 
 ## Change the visibility for a service
 

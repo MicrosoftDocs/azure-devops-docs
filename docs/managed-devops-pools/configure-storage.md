@@ -145,4 +145,5 @@ For more information about configuring the agent work directory, see [Demands - 
 ## See also
 
 * [Configure pool settings](./configure-pool-settings.md)
+* [Allowlisting Azure Storage](./configure-networking.md)
 

@@ -15,14 +15,13 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-
 Several features depend on the project, repository, or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the project and team you select.
 
 Also, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
 ## Prerequisites 
  
-* You must be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+[!INCLUDE [prerequisites-contributor-only](../../includes/prerequisites-contributor-only.md)]
  
 ::: moniker range="azure-devops"  
 
@@ -37,7 +36,7 @@ Also, when you add a work item, the system references the default area and itera
 
 From the **Projects** page you can quickly navigate to a project that you have permissions to view. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.  
 
@@ -56,19 +55,16 @@ From the **Projects** page you can quickly navigate to a project that you have p
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Projects page, filter on Fabrikam.](media/projects-page/filter-projects-vert.png) 
 
-1. Choose **Create Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
+1. Choose **Create Project** to add a project. Be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing selection of account home, Projects page, New project.](../../organizations/projects/media/create-project/projects-hub-vert-create-project.png) 
 
 ::: moniker-end
 
-
-
-
 ## View and open a repository 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Choose **Repos>Files**.
 
@@ -81,16 +77,14 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 ::: moniker-end
 
-
   
-
 
 <a id="switch-to-a-different-team">  </a>
 <a id="switch-team-context">  </a>
 
 ## Switch to a different team 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 From a user page, one under&mdash;**Boards**, **Repos**, **Pipelines**, or **Test Plans**&mdash;you can't switch to a different team, you can [only select team artifacts](use-breadcrumbs-selectors.md). 
 
@@ -100,9 +94,6 @@ From a **Project Settings>Work>Team configuration** page, you select a team from
 > ![Screenshot showing selected team from the breadcrumb.](media/breadcrumbs/choose-team-selector.png)
 
 ::: moniker-end
-
-
-
 
 ## Related articles
 - [Work across projects](work-across-projects.md)

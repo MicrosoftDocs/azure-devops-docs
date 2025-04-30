@@ -6,10 +6,9 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 09/27/2021
 ---
-
 
 # Widgets based on Analytics data
 
@@ -19,22 +18,28 @@ ms.date: 09/27/2021
 Analytics supports several dashboard widgets that take advantage of the power of the service. Using these widgets, you and your team can gain valuable insights into the health and status of your work. 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-Analytics supports several dashboard widgets that take advantage of the power of the service. Once you [enable or install Analytics](../dashboards/analytics-extension.md) on a project collection, you can add these widgets to your dashboard. To add extensions or enable the service, you must be an organization owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). Using these widgets, you and your team can gain valuable insights into the health and status of your work.
-::: moniker-end
-
 You add an Analytics widget to a dashboard the same way you add any other type of widget. For details, see [Add a widget to your dashboard](add-widget-to-dashboard.md). 
 
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-- Analytics widget data is calculated from the Analytics service. The Analytics service is enabled for all Azure DevOps organizations.  
-- To view Analytics data, you must have the **View analytics** project-level permission set to **Allow**. By default, this permission is set for all project members in all security groups. Users granted **Stakeholder** access or greater can view Analytics widgets.  
+
+The Analytics service is enabled for all Azure DevOps organizations.
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Permissions**   |- To view Analytics data: **View analytics** project-level permission set to **Allow**. By default, all project members in all security groups have this permission.    |
+|**Access levels**  | At least  **Stakeholder** access.    |
+
 ::: moniker-end
 ::: moniker range="< azure-devops"
-- Analytics widget data is calculated from the Analytics service.
-- For Analytics widgets to display correctly, the Analytics service must be enabled on your on-premises Azure DevOps Server. For more information, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).
-- To view Analytics data, you must have the **View analytics** project-level permission set to **Allow**. By default, this permission is set for all project members in all security groups. Users granted **Stakeholder** access or greater can view Analytics widgets.  
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Permissions**   |- To view Analytics data: **View analytics** project-level permission set to **Allow**. By default, all project members in all security groups have this permission.    |
+|**Access levels**  | At least  **Stakeholder** access.    |
+|**Services**   | [Analytics service enabled](../../report/dashboards/analytics-extension.md).   |
+ 
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/boards-disabled.md)]
@@ -63,7 +68,6 @@ The Burnup widget lets you display a trend of completed work across multiple tea
 
 For more information, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).  
 
-
 ## Sprint Burndown widget 
 
 The Analytics-based Sprint Burndown widget adds a team's burndown chart for a sprint to the dashboard. This widget supports several configuration options, including selecting a team, iteration, and time period. Teams use the burndown chart to mitigate risk and check for scope creep throughout the sprint cycle. 
@@ -74,7 +78,6 @@ The Analytics-based Sprint Burndown widget adds a team's burndown chart for a sp
 > ![Sprint Burndown Widget - Sprint Burndown Example](media/sprint-burndown/sprint-burndown-widget.png)
 
 For more information, see [Configure and monitor sprint burndown](configure-sprint-burndown.md).  
-
 
 ## Cumulative Flow Diagram (CFD) widget
 
@@ -106,7 +109,6 @@ The Lead Time widget will help you analyze the time it takes to deliver work fro
 * How long does it take for work requested by a customer to be delivered?
 * Did work items take longer than usual to complete?
 
-
 **Lead Time widget showing 60 days of data**
 
 ![Lead Time widget](media/lead-time-control-chart.png) 
@@ -119,7 +121,6 @@ The Velocity widget will help you learn how much work your team can complete dur
 * On average, what is the velocity of my team?
 * Is my team consistently delivering what we planned?
 * How much work can we commit to deliver in upcoming sprints? 
-
 
 **Velocity widget showing 8 sprints of data based on Story Points**
 

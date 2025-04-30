@@ -10,7 +10,6 @@ monikerRange: '<= azure-devops'
 ms.date: 01/22/2024
 --- 
 
-
 # Add users or groups to a team or project
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -32,7 +31,7 @@ In this article, learn how to add users to a team or project. For organizations 
 
 [!INCLUDE [temp](../../includes/prerequisites-add-users-server.md)]
 
-If you're new to Azure DevOps, familiarize yourself with the information in the following articles: 
+**Recommended**: If you're new to Azure DevOps, familiarize yourself with the information in the following articles: 
 
 - [Get started with permissions, access levels, and security groups](about-permissions.md)  
 - [About projects and scaling your organization](../projects/about-projects.md)  
@@ -262,7 +261,7 @@ Select the **Current page** tab for information on adding a user to a team. The 
 
 #### [Current page](#tab/current-page)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
@@ -290,8 +289,6 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 5. To add an account as a Team administrator, select **Add** on the Team Profile page. For more information, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
 
 ::: moniker-end
-
-
 
 ---
 > [!TIP]
@@ -326,7 +323,7 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 
 #### [Current UI](#tab/current-page)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. To remove members, open the team's **Members** page, choose **direct** membership, return to this page, highlight the user name and choose **Remove**.
 
@@ -338,8 +335,6 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 
 ::: moniker-end
 
-
-
 ---
 
 <a name="add-users-team-project"></a>
@@ -348,7 +343,6 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 ## Add users or groups to a project
 
 As a member of the **Project Administrators** group, you can add users or groups to a project from the **Project settings> Permissions** page by adding them to a security group. To add a custom security group, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).   
-
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
@@ -414,7 +408,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 #### [Current UI](#tab/current-page) 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
 
@@ -457,8 +451,6 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ::: moniker-end
 
-
-
 ---
 
 <a name="summary-page"></a>
@@ -473,15 +465,13 @@ As a member of the Project Administrators group, you can add members to a projec
 > For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts).  
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Open your **Project** > **Summary** page, and select **Invite**.  
 
 	:::image type="content" source="media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
 
 ::: moniker-end
-
-
 
 2. For new users, enter their email address. For existing users, enter their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
 

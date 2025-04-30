@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 10/24/2021 
 ---
 
-
 # Query by area or iteration path 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -21,9 +20,11 @@ The Area Path and Iteration Path are two fields that appear on the work tracking
 
 To better understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-queries](../includes/prerequisites-queries.md)]
 
 [!INCLUDE [temp](../includes/note-macro-web-portal.md)] 
-
 
 ## Supported operators and macros 
 
@@ -38,7 +39,6 @@ When creating queries and specifying the Area Path and Iteration Path fields, yo
 > | `Not In`      | Exclude items that are assigned to a set of area or iteration paths. |
 > | `Under`       | Specify all paths under a select area or iteration path. |
 > | `Not Under`   | Exclude items assigned under a specific area or iteration path.  |
-
 
 Along with these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
@@ -60,7 +60,6 @@ You can specify to filter for work items assigned to several area paths by using
 > [!div class="mx-imgBorder"]
 > ![Query on Area Path for several areas](media/query-area-iteration/query-with-in-operator.png)
 
-
 ## Node Name and keyword-based queries  
 
 Use the **Node Name** field to filter on work items assigned to area paths based on a keyword using the **Contains** operator. The **Node Name** specifies the last node of an **Area Path**, which corresponds to the last node in the tree hierarchy.  
@@ -80,9 +79,7 @@ Here's another example that uses the **Node Name** and the **In** operator.
 > [!div class="mx-imgBorder"]
 > ![Query on Node Name for several areas](media/query-area-iteration/query-with-in-operator-node-name.png)
 
-
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 <a id="team-area-path"></a> 
 
 ## Team area path queries  
@@ -122,14 +119,12 @@ The following fields don't appear on work item forms but are tracked for each wo
 
 The default reportable type is none. Area ID and Iteration ID are indexed, Node Name isn't. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
-
 ## Related articles 
 
 - [Query quick reference](query-index-quick-ref.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
-
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 

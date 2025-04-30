@@ -21,8 +21,7 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
 
 ## Prerequisites
 
-* An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
-* A service that posts status to PRs. See [Create a pull request status server](./create-pr-status-server.md).
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## Configure the branch policy 
 

@@ -24,14 +24,6 @@ Use bulk modify when you need to quickly make the same change to many work items
 
 With bulk modify, you can edit fields and add or remove tags. You can also reassign work or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions assigned to you.
 
-In this article, learn how to do the following tasks:
-
-> [!div class="checklist"]
-> - Multi-select work items from a list and open the context menu
-> - Edit one or more fields of several work items
-> - Assign work from a backlog to a sprint using drag-and-drop
-> - Add or remove tags from several work items
-
 ## Prerequisites
 
 [!INCLUDE [prerequisites](../includes/prerequisites-work-items.md)]
@@ -40,7 +32,7 @@ In this article, learn how to do the following tasks:
 
 Team members who belong to the Contributors group can complete the following tasks. Members provided with Stakeholder access can run multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For more information, see [Get started as a Stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::row:::
    :::column span="1":::
@@ -101,7 +93,7 @@ Team members who belong to the Contributors group can complete the following tas
 > [!NOTE]  
 > - You can't perform certain functions on work items whose [work item types](../work-items/about-work-items.md) belong to the [hidden types category](../work-items/agile-glossary.md#hidden-types). This category includes all work items that track tests (such as test cases, shared steps, and shared parameters), code review requests and responses, and feedback requests and responses.
 > - You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type.
-> - You must be a member of the Project Administrators group or be granted explicit permissions to [**Move work items**](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).  
+> - Be a member of the Project Administrators group or be granted explicit permissions to [**Move work items**](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).  
 
 ::: moniker-end
 
@@ -139,7 +131,7 @@ To open the context menu, select (:::image type="icon" source="../media/icons/ac
 
 This example uses the context menu to move several nonsequential items to the current sprint.
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/bulk-modify/move-iteration.png" alt-text="Screenshot of Product backlog context menu, where you can move several backlog items to a different iteration.":::
 
@@ -165,7 +157,7 @@ For more information about the *Assign To* and *Iteration Path* fields, see [Wor
 
 To assign or modify several fields, choose **Edit** from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. For audit purposes, you can add a description for your bulk update task. For more information about each field, see the [Work item field index](../work-items/guidance/work-item-field.md).
 

@@ -40,14 +40,14 @@ Then you can:
 
 ## Prerequisites
 
-- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/user-guide/sign-up-invite-teammates).
-- You must be added to a project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-- To view or add test configurations, you must have **Basic** access or higher.
-- To add test configurations, you must have the project-level **Manage test configurations** permission set to **Allow**. By default, this permission is granted to members of the Contributors and Project Administrator groups.
+| Category | Requirement |
+|--------------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
+| **Access levels** | To add test configurations: Project-level **Manage test configurations** permission set to **Allow**. By default, this permission is granted to members of the Contributors and Project Administrator groups.|
 
-For more information, see [Manual test access and permissions](/azure/devops/test/manual-test-permissions).
+For more information, see [Manual test access and permissions](manual-test-permissions.md).
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)]
+[!INCLUDE [prerequisites-tcm](includes/prerequisites-tcm.md)]
 
 <a name="view-configs"></a>
 
@@ -137,49 +137,6 @@ Then combine multiple variable values to create a configuration.
 1. Save your new test configuration.
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-A test configuration is a combination of configuration variable 
-values. Your configuration variables could be, for example, 
-operating system, browser, CPU type, database. A configuration 
-might be "Windows 8 + 32-bit CPU" or "Windows 10 + 64-bit CPU."
-
-You must create the configuration variables first. Then combine 
-multiple variable values to create a configuration.
- 
-1. Open the **Configurations** page in the **Test Plans** web portal, choose 
-   the ![new](media/plus-and-arrow-icon.png) icon, and select 
-   **New configuration variable**.
-
-   ![Adding a new configuration variable](media/testing-configurations/testing-configurations-01.png)
- 
-2. Type a name for the variable, such as **Browser**, and type a value.
-   Add as many values as you wish to the configuration variable, and then save it.
- 
-   ![Setting the values for a new configuration variable](media/testing-configurations/testing-configurations-01b.png)
-
-3. Repeat the steps to create any other configuration variables
-   you need. For example, create a configuration variable named **Operating system**
-   with the names of each operating system on which you want to test.
-
-   ![Setting the values for an Operating Systems configuration variable](media/testing-configurations/testing-configurations-01c.png)
-
-4. Choose the ![new](media/plus-and-arrow-icon.png) icon and select 
-   **New test configuration**. 
-
-   ![Adding a new test configuration](media/testing-configurations/testing-configurations-01a.png)
-
-5. Type a name for the test configuration and add the configuration 
-   variables you created. Choose a value for each variable for this configuration.  
-
-   ![Adding variables to the new test configuration](media/testing-configurations/testing-configurations-02.png)
-
-   Ensure **Assign to new test plans** is checked to make this the default 
-   configuration for all the new test plans you create.
- 
-6. Save your new test configuration. 
-::: moniker-end
-
 <a name="assign-configs"></a>
 
 ## Assign configurations to test plans and suites
@@ -206,38 +163,6 @@ Configurations assigned to a test suite apply to all tests or suites within it.
 
    ![Screenshot shows setting configurations for a test case.](media/testing-configurations/select-configuration-test-case.png)
 ::: moniker-end
-::: moniker range="=azure-devops-2019"
-
-You can assign configurations to a test plan, a test suite,
-or an individual test case. Configurations assigned to a test plan 
-or test suite apply to all tests or suites within it.
-
-1. To assign a configuration to a test plan, in the **Test plans** page, open the shortcut
-   menu for the plan and choose **Assign configuration to test plan**. 
-
-   ![Assigning a configuration to a test plan](media/testing-configurations/testing-configurations-03.png)
-
-1. To assign a configuration to a test suite, open the shortcut
-   menu for the suite and choose **Assign configuration to test suite**. 
-
-   ![Assigning a configuration to a test suite](media/testing-configurations/testing-configurations-04.png)
-
-   If you add multiple configurations to a test plan or suite, 
-   the tests cases are repeated in the plan or suite with
-   each of the configurations you have assigned.
- 
-   ![Multiple configuration assignment to a test suite](media/testing-configurations/testing-configurations-05.png)
- 
-1. If necessary, override the default configuration assigned to a test case
-   and assign the configuration you need. Select one or more
-   test cases, open the shortcut menu, and choose **Assign configurations**. 
-
-   ![Overriding the default configuration assigned to a test case](media/testing-configurations/testing-configurations-06.png)
-
-1. Search for and select the configurations to assign to these test case(s).
-
-   ![Setting the required configurations for a test case](media/testing-configurations/testing-configurations-07.png)
-::: moniker-end
 
 <a name="run-configs"></a>
 
@@ -253,21 +178,6 @@ Set up a testing platform for a particular configuration, such as testing the ap
    As you run the test, a reminder of the configuration appears in the status bar.
 
    ![Screenshot shows the configuration for this test in the status bar.](media/testing-configurations/configuration-status-bar.png)
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-1. Set up a testing platform for a particular configuration, such
-   as testing the app using Google Chrome on Windows 10.
-
-1. Select and run a test that has this configuration assigned.
-
-   ![Running the test with the configuration assigned](media/testing-configurations/testing-configurations-07a.png)
-
-   As you run the test, a reminder of the required configuration 
-   in shown in the status bar of the Test Runner window.
-
-   ![The required configuration appears in the Test Runner window](media/testing-configurations/testing-configurations-08.png)
 ::: moniker-end
 
 <a name="track-configs"></a>
@@ -289,27 +199,6 @@ Set up a testing platform for a particular configuration, such as testing the ap
    ![Screenshot shows a bar chart with values for Not run, Passed, and Failed.](media/testing-configurations/configuration-result-chart.png)
 
 If you have a test case that appears in several test suites, you can set the different configurations for each suite.
-The same test case can have different configuration settings in different test suites and test plans.
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-1. Open the **Charts** page for your test plan or test suite, choose 
-   **New**, and select **New test result chart**.
- 
-   ![Creating a new test result chart](media/testing-configurations/testing-configurations-09.png)
-
-1. Choose the type of chart you require, select **Configuration**
-   in the **Group by** list, and choose **OK**.
- 
-   ![Choosing the type of chart you require](media/testing-configurations/testing-configurations-10.png)
-
-   A chart is created that can help you track your tests based on configurations. 
-   You can pin this chart to your dashboard.
-
-   ![The configuration test result chart](media/testing-configurations/testing-configurations-11.png)
-
-> If you have a test case that appears in several test plans and test suites, you can set the different configurations for each of these. 
 The same test case can have different configuration settings in different test suites and test plans.
 ::: moniker-end
 

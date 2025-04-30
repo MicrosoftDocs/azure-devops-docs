@@ -7,7 +7,7 @@ ms.custom: powerbisample, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/08/2022
 ---
 
@@ -24,7 +24,6 @@ Burndown charts only make sense if you plan your work for the time period of the
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 For more information about burndown and burnup, see [Configure a burndown or burnup widget](../dashboards/configure-burndown-burnup-widgets.md) and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
-
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -98,11 +97,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{startdate}` - The date to start the burndown report with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes. 
 - `{enddate}` - The date to end the burndown report.
 
-
 ### Query breakdown
 
 The following table describes each part of the query.
-
 
 :::row:::
    :::column span="1":::
@@ -200,7 +197,6 @@ The following table describes each part of the query.
    Close `groupby()` clause.
    :::column-end:::
 :::row-end:::
-
 
 ### Burndown of User Stories for a team  
 
@@ -300,7 +296,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-
 ### Burndown User Stories based on an area and iteration path  
 
 Some organizations use **Iteration Paths** to mark Stories for a release. For example, they may have an **Iteration Path** of *MyProject\Release1*. The following query shows how to select User Stories by Iteration Path.
@@ -399,10 +394,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 * * *
 
-
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand columns in Power Query Editor
 
@@ -416,7 +408,6 @@ Prior to creating the report, you'll need to expand columns that return records 
 To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
-
 
 ## Create the clustered column chart  
 
@@ -439,7 +430,6 @@ The example report displays burndown on both the count of Stories and sum or **S
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]
-
 
 <!-- 
 To pivot burndown by Area Path, do the following steps:

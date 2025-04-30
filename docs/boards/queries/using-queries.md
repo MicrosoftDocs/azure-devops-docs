@@ -26,8 +26,7 @@ You can create queries from the web portal or from a supported client, such as V
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]
-> The browser images used in this article are from the New Boards Hubs feature, which is enabled by default. If this feature isn't enabled, you might be using the previous boards experience. To display the images for the previous experience, select the Azure DevOps Server 2022 version of this article.
+[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
 
 ::: moniker-end
 
@@ -57,7 +56,7 @@ Along with the query filters, you can [interactively apply filters to query resu
 ---
 :::row:::
    :::column span="1":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - [Compare fields](./query-field-value.md) 
       - [Key words](./titles-ids-descriptions.md)  
       - [Linked work items](./linking-attachments.md)  
@@ -71,7 +70,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       
    :::column-end::: 
    :::column span="1":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - [Blank or empty fields](./titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
       - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
       - [Identity searches](./query-by-workflow-changes.md#me) 
@@ -83,7 +82,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       
    :::column-end:::
    :::column span="2":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - [[Any]](titles-ids-descriptions.md)
       - [@Me](query-by-workflow-changes.md)
       - [@Today](query-by-date-or-current-iteration.md) 
@@ -292,7 +291,7 @@ Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of W
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/view-run-queries/tree-query-new-exp.png" alt-text="Screenshot of Query Results List showing a Tree Query.":::
 
@@ -387,7 +386,6 @@ You can also group several grouped clauses. Check the boxes of each clause. Then
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Web portal, Query Editor, Group multiple query clauses.](media/using-queries/multiple-clauses.png)
-
 
 If your query results don't return expected results, do the following steps: 
 

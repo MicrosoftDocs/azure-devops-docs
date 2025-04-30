@@ -5,10 +5,11 @@ description: How to do a test run, migrating from on-premises to the cloud in Az
 ms.topic: how-to
 ms.subservice: azure-devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2024
+ms.date: 04/04/2025
 ---
 
 # Do test run migration
@@ -20,6 +21,18 @@ Your team is now ready to begin the process of starting a test run of your migra
 ## Prerequisites 
 
 Complete the [Prepare test run phase](migration-prepare-test-run.md) before you begin a test run migration. 
+
+> [!IMPORTANT]
+> To ensure a smooth migration process, perform one or more test run imports. A test run import lasts for 45 days for testing and validation. After 45 days, the test run times out and gets removed, requiring you to start over if needed.
+> The more time that passes between the test run and production run, the more the service might change, potentially introducing errors that a fresh test run would catch. You can rerun the test run import as many times as needed. Each import begins from the initial state of the imported database, as it's not possible for changes from one import to persist to another.
+> Note the following points:
+> - You can't extend a test run indefinitely
+> - You can't promote a test run to a production run
+> - A test run gets deleted if any of the following occur:
+>   - The test run times out
+>   - A new test run with the same name is run
+>   - A production run starts
+>   - The organization is manually deleted via organization settings
 
 ## Validate a collection 
 
@@ -218,11 +231,11 @@ You and your Microsoft Entra admin must investigate users marked as *No Match Fo
 As you read through the file, notice whether the value in the **Expected Import Status** column is *Active* or *Historical*. *Active* indicates that the identity on this row maps correctly on migration becomes active. *Historical* means that the identities become historical on migration. It's important to review the generated mapping file for completeness and correctness.
 
 > [!IMPORTANT]  
-> The migration fails if major changes occur to your Microsoft Entra Connect security ID sync between migration attempts. You can add new users between test runs, and you can make corrections to ensure that previously imported historical identities become active. But, you can't change an existing user that was previously imported as active. Doing so causes your migration to fail. An example of a change might be completing a test run migration, deleting an identity from your Microsoft Entra ID that was imported actively, re-creating a new user in Microsoft Entra ID for that same identity, and then attempting another migration. In this case, an active identity migration attempts between the Active Directory and newly created Microsoft Entra identity, but causes a migration failure. 
+> The migration fails if major changes occur to your Microsoft Entra Connect security ID sync between migration attempts. You can add new users between test runs, and you can make corrections to ensure that previously imported historical identities become active. But, you can't change an existing user that was previously imported as active. Doing so causes your migration to fail. An example of a change is completing a test run migration, deleting an actively imported identity from Microsoft Entra ID, re-creating the user in Microsoft Entra ID, and then attempting another migration. In this case, an active identity migration attempts between the Active Directory and newly created Microsoft Entra identity, but causes a migration failure. 
 
 1. Review the correctly matched identities. Are all the expected identities present? Are the users mapped to the correct Microsoft Entra identity? 
 
-   If any values must be changed, contact your Microsoft Entra administrator to verify that the on-premises Active Directory identity is part of the sync to Microsoft Entra ID and set up correctly. For more information, see [Integrate your on-premises identities with Microsoft Entra ID](/azure/active-directory/hybrid/whatis-hybrid-identity). 
+   If any values need to be updated, contact your Microsoft Entra administrator to ensure the on-premises Active Directory identity is synced with Microsoft Entra ID and configured correctly. For more information, see [Integrate your on-premises identities with Microsoft Entra ID](/azure/active-directory/hybrid/whatis-hybrid-identity). 
 
 2. Next, review the identities that are labeled as *historical*. This labeling implies that a matching Microsoft Entra identity couldn't be found, for any of the following reasons:
 
@@ -238,7 +251,7 @@ You can ignore the fourth reason, because employees who are no longer at the com
 #### Historical identities (small teams) 
 
 > [!NOTE]
-> The identity migration strategy proposed in this section should be considered by small teams only. 
+> Only small teams should consider the identity migration strategy proposed in this section. 
 
 If Microsoft Entra Connect isn't configured, all users in the identity map log file are marked as *historical*. Running a migration this way results in all users being imported as [*historical*](#historical-identities). We strongly recommended that you configure [Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration) to ensure that your users are imported as *active*. 
 
@@ -264,15 +277,15 @@ Step 3: [Upload the DACPAC file and migration files to an Azure storage account]
 Step 4: [Generate an SAS token to access the storage account](#step-4-generate-an-sas-token).  
 Step 5: [Complete the migration specification](#step-5-complete-the-migration-specification). 
 
-> [!NOTE] 
-> Before you perform a production migration, we *strongly* recommend that you complete a test run migration. With a test run, you can validate that the migration process works for your collection and that there are no unique data shapes present that might cause a production migration failure. 
+> [!NOTE]  
+> Before performing a production migration, we *strongly* recommend completing a test run migration. A test run allows you to validate that the migration process works for your collection and ensures there are no unique data shapes or issues that could cause a production migration to fail.
 
 ### Step 1: Detach your collection
 
-[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the migration process. Identity data for the collection resides in the Azure DevOps Server instance's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance, it takes a copy of that identity data and packages it with the collection for transport. Without this data, the identity portion of the migration *can't* be executed. 
+[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the migration process. Identity data for the collection resides in the Azure DevOps Server instance's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance, it takes a copy of that identity data and packages it with the collection for transport. Without this data, the identity portion of the migration *can't* be executed.
 
 > [!TIP]
-> We recommend that you keep the collection detached until the migration completes, because there isn't a way to migration the changes that occurred during the migration. Reattach your collection after you back it up for migration, so you aren't concerned about having the latest data for this type of migration. To avoid offline time altogether, you can also choose to employ an [offline detach](/azure/devops/server/command-line/tfsconfig-cmd#offlinedetach) for test runs. 
+> Keep the collection detached until the migration completes to avoid losing any changes made during the migration, as these changes can't get migrated afterward. After backing up your collection for migration, you can reattach it. However, any changes made after the backup aren't included in the migration, which might raise concerns about having the most current data. You can use an offline detach for test runs, but this process might not align with recommended migration practices. Review the documentation on [offline detach](/azure/devops/server/command-line/tfsconfig-cmd#offlinedetach) to fully understand its implications and how it fits into your migration strategy.
 
 It's important to weigh the cost of choosing to incur zero downtime for a test run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the end.
 
@@ -289,8 +302,8 @@ DACPACs offer a fast and relatively easy method for moving collections into Azur
 [DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications) is a feature of SQL Server that allows databases to be packaged into a single file and deployed to other instances of SQL Server. A DACPAC file can also be restored directly to Azure DevOps Services, so you can use it as the packaging method for getting your collection's data in the cloud.
 
 > [!IMPORTANT]
-> - When you use SqlPackage.exe, you must use the .NET Framework version of SqlPackage.exe to prepare the DACPAC. The MSI Installer must be used to install the .NET Framework version of SqlPackage.exe. Do not use the dotnet CLI or .zip (Windows .NET 6) versions of SqlPackage.exe because those versions may generate DACPACs that are incompatible with Azure DevOps Services.
-> - Version 161 of SqlPackage encrypts database connections by default and might not connect. If you receive a login process error, add `;Encrypt=False;TrustServerCertificate=True` to the connection string of the SqlPackage statement.
+> - When you use SqlPackage.exe, you must use the .NET Framework version of SqlPackage.exe to prepare the DACPAC. The MSI Installer must be used to install the .NET Framework version of SqlPackage.exe. Don't use the dotnet CLI or .zip (Windows .NET 6) versions of SqlPackage.exe because those versions might generate DACPACs that are incompatible with Azure DevOps Services.
+> - Version 161 of SqlPackage encrypts database connections by default and might not connect. If you receive a sign-in process error, add `;Encrypt=False;TrustServerCertificate=True` to the connection string of the SqlPackage statement.
 
 Download and install SqlPackage.exe using the latest MSI Installer from the [SqlPackage release notes](/sql/tools/sqlpackage/release-notes-sqlpackage).
 
@@ -433,10 +446,10 @@ Although Azure DevOps Services is available in multiple geographical locations i
 
 [Create a blob container](/azure/storage/common/storage-create-storage-account) from the Azure portal. After you create the container, upload the Collection DACPAC file. 
 
-After the migration finishes, delete the blob container and accompanying storage account with tools such as [AzCopy](/azure/storage/common/storage-use-azcopy-v10) or any other Azure storage explorer tool, like [Azure Storage Explorer](https://storageexplorer.com/). 
+After the migration finishes, delete the blob container and accompanying storage account with tools such as [AzCopy](/azure/storage/common/storage-use-azcopy-v10) or any other Azure storage explorer tool. 
 
 > [!NOTE] 
-> If your DACPAC file is larger than 10 GB, we recommend that you use AzCopy. AzCopy has multithreaded upload support for faster uploads.
+> If your DACPAC file is larger than 10 GB, we recommend that you use [AzCopy](/azure/storage/common/storage-use-azcopy-v10), as it has multithreaded upload support for faster uploads.
 
 ### Step 4: Generate an SAS token
 
@@ -447,7 +460,7 @@ You can generate SAS tokens [using the Azure portal](/azure/storage/blobs/blob-c
 1. Select only **Read** and **List** as permissions for your SAS token. No other permissions are required.
 2. Set an expiry time no further than seven days into the future.
 3. [Restrict access to Azure DevOps Services IPs only](migration-prepare-test-run.md#restrict-access-to-azure-devops-services-ips-only).
-4. Treat the SAS key as a secret. Do not leave the key in an insecure location as it grants read and list access to any data that you have stored in the container.
+4. Treat the SAS key as a secret. Don't leave the key in an insecure location as it grants read and list access to any data stored in the container.
 
 ### Step 5: Complete the migration specification
 
@@ -464,9 +477,9 @@ The final migration specification file should look like the following example.
 
 ### Determine the migration type
 
-Imports can be queued as either a test run or a production run. The **ImportType** parameter determines the migration type: 
+Imports can be queued as either a test run (`DryRun`) or a production run (`ProductionRun`). The **ImportType** parameter determines the migration type: 
 
-- **TestRun**: Use a test run for test purposes. The system deletes test runs after 45 days. 
+- **DryRun**: Also referred to as a test run. Use for test and validation purposes. The system deletes test runs after 45 days. 
 - **ProductionRun**: Use a production run when you want to keep the resulting migration and use the organization full time in Azure DevOps Services after the migration finishes. 
 
 > [!TIP] 
@@ -498,7 +511,7 @@ If you encounter any migration problems, see [Troubleshoot migration and migrati
 Your team is now ready to begin the process of running a migration. We recommend that you start with a successful test run migration before you attempt a production-run migration. With test run imports, you can see in advance how a migration looks, identify potential issues, and gain experience before you head into your production run. 
 
 > [!NOTE]
-> - If you need to repeat a completed production-run migration for a collection, as in the event of a rollback, contact Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before you queue another migration.
+> - If you need to repeat a completed production-run migration for a collection, such as due to a rollback, contact Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before you queue another migration.
 - Azure administrators can prevent users from creating new Azure DevOps organizations. If the Microsoft Entra tenant policy is turned on, your migration fails to finish. Before you begin, verify that the policy isn't set or that there's an exception for the user that is performing the migration. For more information, see [Restrict organization creation via Microsoft Entra tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md).
 - Azure DevOps Services doesn't support per-pipeline retention policies, and they aren't carried over to the hosted version.
 
@@ -508,22 +521,22 @@ A common concern for teams doing a final production run is their rollback plan, 
 
 Rollback for the final production run is fairly simple. Before you queue the migration, detach the team project collection from Azure DevOps Server, which makes it unavailable to your team members. If for any reason you need to roll back the production run and bring the on-premises server back online for your team members, you can do so. Attach the team project collection on-premises again and inform your team that they continue to work normally while your team regroups to understand any potential failures.
 
-You can then contact Azure DevOps Services customer support for help with understanding the failure's cause if you can't determine the cause. For more information, see the [Troubleshooting article](migration-troubleshooting.md). Customer support tickets can be opened from the following page https://aka.ms/AzureDevOpsImportSupport. It’s important to note that if the issue requires product group engineers to engage those cases will be handled during regular business hours. 
+You can then contact Azure DevOps Services customer support for help with understanding the failure's cause if you can't determine the cause. For more information, see the [Troubleshooting article](migration-troubleshooting.md). Customer support tickets can be opened from the following page https://aka.ms/AzureDevOpsImportSupport. If the issue requires product group engineers to engage, those cases get handled during regular business hours.
 
 #### Detach your team project collection from Azure DevOps Server to prepare it for migration. 
 
-Before generating a backup of your SQL database, the Data Migration Tool requires the collection to be completely detached from Azure DevOps Server (not SQL). The detach process in Azure DevOps Server transfers user identity information that is stored outside of the collection database and makes it portable to move to a new server or in this case, to Azure DevOps Services. 
+Before you generate a backup of your SQL database, you must completely detach the collection from Azure DevOps Server (not SQL) using the Data Migration Tool. The detach process in Azure DevOps Server transfers user identity information stored outside of the collection database, making it portable for moving to a new server or, in this case, to Azure DevOps Services.
 
-Detaching a collection is easily done from the Azure DevOps Server Administration Console on your Azure DevOps Server instance. For more information, see [Move project collection, Detach the collection](/azure/devops/server/admin/move-project-collection). 
+Detaching a collection is easily done from the Azure DevOps Server Administration Console on your Azure DevOps Server instance. For more information, see [Move project collection, Detach the collection](/azure/devops/server/admin/move-project-collection).
 
 ### Queue the migration
 
 > [!IMPORTANT] 
-> Before you proceed, ensure that your collection was [detached](#step-1-detach-your-collection) prior to generating a DACPAC file or uploading the collection database to a SQL Azure VM. If you don't complete this step, the migration fails. In the event that your migration fails, see [Resolve migration errors](migration-troubleshooting.md). 
+> Before you proceed, ensure that your collection was [detached](#step-1-detach-your-collection) before you generate a DACPAC file or upload the collection database to a SQL Azure VM. If you don't complete this step, the migration fails. If your migration fails, see [Resolve migration errors](migration-troubleshooting.md). 
 
-Start a migration by using the Data Migration Tool's **import** command. The migration command takes a migration specification file as input. It parses the file to ensure that the provided values are valid and, if successful, it queues a migration to Azure DevOps Services. The migration command requires an internet connection, but doesn't* require a connection to your Azure DevOps Server instance. 
+Start a migration by using the Data Migration Tool's **import** command. The import command takes a migration specification file as input. It parses the file to ensure that the provided values are valid and, if successful, it queues a migration to Azure DevOps Services. The import command requires an internet connection, but doesn't* require a connection to your Azure DevOps Server instance. 
 
-To get started, open a Command Prompt window, and change directories to the path to the Data Migration Tool. We recommended that you review the help text provided with the tool. Run the following command to see the guidance and help for the migration command:
+To get started, open a Command Prompt window, and change directories to the path to the Data Migration Tool. We recommended that you review the help text provided with the tool. Run the following command to see the guidance and help for the import command:
 
 ```cmdline
 Migrator import /help
@@ -535,7 +548,7 @@ The command to queue a migration has the following structure:
 Migrator import /importFile:{location of migration specification file}
 ```
 
-The following example shows a completed migration command:
+The following example shows a completed import command:
 
 ```cmdline
 Migrator import /importFile:C:\DataMigrationToolFiles\migration.json

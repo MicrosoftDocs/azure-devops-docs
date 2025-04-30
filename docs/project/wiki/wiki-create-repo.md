@@ -18,34 +18,13 @@ ms.date: 01/05/2024
 
 In this article, learn how to open a wiki and create a Git repo for your wiki. Every team project has a wiki. Use the wiki to share information with your team to understand and contribute to your project.
 
-::: moniker range=">= azure-devops-2019"
-
 Each team project wiki is powered by a Git repository in the back-end. When you create a team project, a wiki Git repo isn't created by default. Create a Git repository to store your wiki Markdown files, or [publish existing Markdown files from a Git repository](publish-repo-to-wiki.md) to a wiki.
-
-::: moniker-end
-
-
 
 <a id="prereq">  </a>
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-
-* You must have a team project. If you don't have a team project yet, create one in [Azure DevOps](../../organizations/accounts/set-up-vs.md).
-* You must have at least Basic access to create and modify a wiki.
-* You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
-* Anyone who is a member of the Contributors security group can add or edit wiki pages. Any user with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
-
-::: moniker-end
-
-::: moniker range=" < azure-devops"
-
-* You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
-* You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
-* Anyone who is a member of the Contributors security group can add or edit wiki pages. Any user with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
-
-::: moniker-end
+[!INCLUDE [wiki-prereqs-create-repository](includes/wiki-prereqs-create-repository.md)]
 
 [!INCLUDE [temp](includes/open-wiki-hub.md)]
 
@@ -55,13 +34,11 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 Create a new Git repository that stores all your wiki pages and related artifacts. From the wiki landing page, select **Create Project wiki**. Even if you use TFVC for source control, you can create a wiki with a Git repository.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Create wiki, Git repo for your wiki or publish existing repo Markdown files.](media/wiki/create-wiki-or-publish-create-option.png)
 ::: moniker-end
-
-
 
 If you don't have access to create a wiki Git repository or if you don't have access to any of the existing wikis, the following message appears.
 

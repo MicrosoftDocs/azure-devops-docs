@@ -36,9 +36,11 @@ The process for adding an Active Directory group to a built-in security group is
 
 ## Prerequisites
 
-- **Organization connection:** Have your Azure DevOps organization [connected to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md).
-- **Permissions:** Be a member of the **Project Collection Administrators** group in Azure DevOps.
-- **Access:** Ensure you have at least **Basic** access in Azure DevOps.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Access levels**| At least **Basic** access.|
+|**Organization connection**| Organization [connected to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md).|
 
 ::: moniker-end
 

@@ -64,7 +64,7 @@ The following example shows an Azure Resource Manager connection to an Azure sub
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 To create a service connection for Azure Pipelines:
 
@@ -229,7 +229,6 @@ For enhanced security, use the [Publish To Azure Service Bus v2 task](/azure/dev
 
 ### Bitbucket Cloud service connection
 
-
 Use OAuth with **Grant authorization** or a username and password with **Basic Authentication** to define a connection to Bitbucket Cloud. For pipelines to keep working, your repository access must remain active.
 
 | Parameter | Description  |
@@ -243,7 +242,6 @@ Use OAuth with **Grant authorization** or a username and password with **Basic A
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
 Select **Verify** or **Authorize** to validate your connection information.
-
 
 ### Cargo service connection
 
@@ -323,7 +321,6 @@ Enter the following parameters to define a connection to a **Docker Hub** regist
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
 You can select **Verify** to verify your credentials before entering the rest of the parameters.
-
 
 #### Azure Container Registry
 
@@ -474,7 +471,6 @@ You can select **Verify** to verify your credentials before entering the rest of
 
 For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources - Jenkins](../release/artifacts.md#jenkins).
 
-
 ### Jira service connection
 
 Use the following parameters to define a connection to the Jira service.
@@ -505,6 +501,10 @@ Use the following parameters when you define a connection to a Kubernetes cluste
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
+> [!NOTE]
+> User certificates issued by Azure Kubernetes Service are valid for two years. If you choose to use kubeconfig, you will need to reconfigure service connections after two years.
+> To get user certificate issued by Azure Kubernetes Service from current context, use the command: `kubectl config view --raw -o jsonpath="{.users[?(@.name contains clusterUser_.*_$(kubectl config current-context))].user.client-certificate-data}" | base64 -d`
+> To check when user certificate will expire, use the command: `cat <cert_file> | openssl x509 -enddate -noout -in -`
 
 #### Service account option
 
@@ -606,12 +606,10 @@ Use the following parameters when you define and secure a connection to a NuGet 
 
 To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, see [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1).
 
-
 ### Other Git service connection
 
 Use the following parameters to define and secure a connection to an external Git repository server.
 There's a specific service connection for [GitHub](#github-service-connection) and [GitHub Enterprise Server](#github-enterprise-server-service-connection).
-
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -781,9 +779,9 @@ Other service connection types and tasks can be installed as extensions. See the
 
 You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
-<!--  ## FAQs and Troubleshoot service connections -->
+## FAQs and Troubleshoot service connections
 
-<!-- ### Q: -->
-<!-- **A:**  -->
+### Q: How does Azure DevOps ensure efficient usage of Entra ID resources?
+Azure DevOps may internally cache Entra ID access tokens issued for target identities in service connections that use Entra ID authentication, such as [Azure Resource Manager](#azure-resource-manager-service-connection) and [Docker Registry](#docker-registry-service-connection). This helps prevent Entra ID throttling, which can occur due to a high number of server task executions and other actions that require Azure DevOps to authenticate with Entra ID to serve the request. Caching applies only to internal flows where the token is never exposed to the user. If you receive an Entra ID token - for example in your pipeline script - it will always be freshly issued. Modifying the service connection invalidates its token cache and temporarily disables caching for this service endpoint. If you're experiencing any issue due to the staleness of the token following changes made in Entra ID, wait for an hour or try updating the corresponding service endpoint.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

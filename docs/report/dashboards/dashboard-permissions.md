@@ -27,16 +27,6 @@ By configuring these permissions, you ensure that only authorized users can make
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-As a member of the Project Administrators group, you can set the default dashboard permissions for all teams within the project. This allows you to establish a consistent set of permissions across the entire project, ensuring that all teams adhere to the same standards.
-
-As a team or project administrator, you have the flexibility to set individual dashboard permissions for team members. This enables you to tailor permissions based on the specific needs and roles of each team member. These permissions only impact the team members and their respective team dashboards, allowing for granular control over who can edit, delete, or manage dashboards.
-
-By configuring these permissions, you ensure that only authorized users can make changes to dashboards, maintaining the integrity and organization of your project data.
-
-::: moniker-end
-
 For more information about adding and viewing dashboards, see [Add, rename, and delete dashboards](dashboards.md).   
 
 > [!TIP]
@@ -48,21 +38,11 @@ For more information about adding and viewing dashboards, see [Add, rename, and 
 
 ::: moniker range=">= azure-devops-2020"
 
-- **Access:** 
-  - All members of the Project Valid Users group can view dashboards.
-  - To add, edit, or manage a team or project dashboard, be a [member of the team](../../organizations/security/add-users-team-project.md) with at least **Basic** access. 
-- **Permissions:**
-  - **Team dashboards**: To add, edit, or manage a team dashboard, be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have **Edit dashboard** permissions.
-  - **Project dashboards**: To add, edit, or manage project dashboards, be a project administrator, or have [Edit dashboard](./dashboard-permissions.md) permissions granted to you.
+| Category | Requirements |
+|-------------|-------------|
+|**Access levels** |- All members of the Project Valid Users group can view dashboards.<br>- To add, edit, or manage a team or project dashboard: [Team member](../../organizations/security/add-users-team-project.md)<br>- At least **Basic** access. |
+|**Permissions** |- **Team dashboards**: To add, edit, or manage a team dashboard: [Team administrator](../../organizations/settings/add-team-administrator.md), project administrator, or **Edit dashboard** permissions set to **Allow**.<br>- **Project dashboards**: To add, edit, or manage project dashboards: Project administrator, or [Edit dashboard](./dashboard-permissions.md) permissions set to **Allow**.|
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-- **Access:** 
-  - All members of the Project Valid Users group can view dashboards.
-  - To edit dashboards, be a [member of the team](../../organizations/security/add-users-team-project.md) with at least **Basic** access.
-- **Permissions:** To add, edit, or manage a team dashboard, be a [team administrator](../../organizations/settings/add-team-administrator.md), a project administrator, or have specific [dashboard permissions](./dashboard-permissions.md) granted to you.
 ::: moniker-end
 
 ## Set default team dashboard permissions
@@ -98,24 +78,6 @@ By default, all team members have permissions to create and edit dashboards for 
 	> ![Dialog for Analytics dashboard Permissions.](media/set-permissions/team-analytics-dashboard-permissions.png)
 
 2. Close the dialog. 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Open the [Dashboards directory](dashboards.md), select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and then select the **Security** menu option. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Dashboards directory, open Security for a dashboard, Azure DevOps Server 2019.](media/set-permissions/open-dashboard-security.png)
-
-1. Change **Allow** or **Deny** to grant or restrict a permission. 
- 
-	Here we restrict team members from editing the Analytics dashboard. Only Fabrikam team administrators can edit the Analytics dashboard. 
-
- 	> [!div class="mx-imgBorder"]  
-	> ![Permissions for Analytics dashboard dialog, Azure DevOps Server 2019.](media/set-permissions/dashboard-permission-dialog.png)
-
-2. Select **Save changes** and then **Close**. 
 
 ::: moniker-end
 

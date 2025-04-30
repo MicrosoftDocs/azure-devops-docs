@@ -5,7 +5,7 @@ ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
 ms.topic: conceptual
 ms.custom: continuous-test
 ms.date: 08/21/2019
-monikerRange: '>=azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Pipeline reports
@@ -14,23 +14,9 @@ monikerRange: '>=azure-devops-2019'
 
 Teams track their pipeline health and efficiency to ensure continuous delivery to their customers. You can gain visibility into your team's pipeline(s) using Pipeline analytics. The source of information for pipeline analytics is the set of runs for your pipeline. These analytics are accrued over a period of time, and form the basis of the rich insights offered. Pipelines reports show you metrics, trends, and can help you identify insights to improve the efficiency of your pipeline.  
 
-::: moniker range="azure-devops-2019"
-
-## Prerequisites
-
-Ensure that you have installed the [Analytics Marketplace extension](../../report/dashboards/analytics-extension.md) for Azure DevOps Server.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019 || azure-devops"
+::: moniker range="=azure-devops"
 
 ## View pipeline reports
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-A summary of the pass rate can be viewed in the **Analytics** tab of a pipeline. To drill into the trend and insights, click on the card to view the full report.
 
 ::: moniker-end
 
@@ -42,13 +28,6 @@ A summary of the pass rate and duration can be viewed in the **Analytics** tab o
 
 > [!div class="mx-imgBorder"]
 > ![View pipeline reports](media/pipelines-reports/analyticstab.png)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!div class="mx-imgBorder"]
-> ![View pipeline reports](media/pipelines-reports/analyticstab-server-2019.png)
 
 ::: moniker-end
 
@@ -106,6 +85,5 @@ Pipelines reports can be further filtered by date range or branch.
   
     > [!div class="mx-imgBorder"]
     > ![View branch filter](media/pipelines-reports/branch-filter.png)
-
 
 [!INCLUDE [help-and-support-footer](../test/includes/help-and-support-footer.md)] 

@@ -43,7 +43,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!NOTE]  
 > To add or edit pages to a wiki that you've published from a Git repository, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md). This article addresses how to add and edit pages of a wiki that you've provisioned for a team project.
@@ -54,9 +54,12 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 ## Prerequisites
 
-* Have a [provisioned wiki](wiki-create-repo.md).
-* Be a member of the team project as a **Contributor** to add or update wiki pages.
-* Have **Basic** access level to edit the project wiki.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of the project where the wiki's located. If you don't have access, request it from your project administrator. |
+| **Permissions** | Member of the **Contributors** group. |
+| **Access levels** | At least **Basic** access. |
+| **Tasks**  | Complete [provisioned wiki](wiki-create-repo.md).|
 
 <a id="open-wiki">  </a>
 
@@ -105,7 +108,6 @@ az devops wiki page create --path
 accepted values: `ascii`, `utf-16be`, `utf-16le`, `utf-8`
 -  **--file-path**: Optional. Path of the file input if the content is specified in the file.    
 -  **--project -p**: Required if not configured as default or picked up via git config. Name or ID of the project. You can configure the default project using the az devops configure `-d project=NAME_OR_ID`. 
-
 
 ### Examples
 
@@ -187,7 +189,6 @@ az devops wiki page update --path
 - **--project -p**: Optional. Name or ID of the project.
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 
-
 ### Examples
 
 Update content of the page with path 'my page' in a wiki named 'myprojectwiki' with inline content.
@@ -240,7 +241,6 @@ az devops wiki page delete --path 'my wiki' --wiki 'myprojectwiki'
 ::: moniker-end
 
 [!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
-
 
 * * *
 

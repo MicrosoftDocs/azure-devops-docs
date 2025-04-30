@@ -27,10 +27,18 @@ To manage work tracking effectively, assign specific permissions to users or gro
 
 ## Prerequisites  
 ::: moniker range="azure-devops"
-To set work tracking permissions, you must be a member of the [**Project Administrators** group](change-project-level-permissions.md) or have explicit permissions to manage the work tracking area as described in this article. 
+
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions**| Member of the [**Project Administrators** group](change-project-level-permissions.md) or explicit permission to manage the work tracking area as described in this article.  | 
+ 
 ::: moniker-end
 ::: moniker range="< azure-devops"
-To set process permissions, you must be a member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md) or have explicit permissions to edit a collection process.  
+
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions**| Member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md) or have explicit permissions to edit a collection process.  | 
+
 ::: moniker-end
 
 <a id="business-workflows"></a> 
@@ -88,13 +96,7 @@ The following table summarizes the different permissions you can set at the obje
       - [Add teams and team administrators](../settings/add-team-administrator.md))
       - [Edit project-level permissions](change-project-level-permissions.md)  
       ::: moniker-end
-      ::: moniker range="< azure-devops-2020"
-      - [Create work item tags](../../boards/queries/add-tags-to-work-items.md) 
-      - [Permanently delete work items](#move-delete-permissions) 
-      - [Edit shared work item queries](../../boards/queries/set-query-permissions.md)
-      - [Add teams and team administrators](../settings/add-team-administrator.md))
-      - [Edit project-level permissions](change-project-level-permissions.md)
-      ::: moniker-end
+      
    :::column-end:::
 :::row-end:::
 ---
@@ -104,7 +106,7 @@ The following table summarizes the different permissions you can set at the obje
       Includes all permissions you can set at the collection-level.
    :::column-end:::
    :::column span="2":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - [Create, delete, or edit a process (Inheritance process model)](#process-permissions)  
       - [Delete field from account (Inheritance process model)](change-organization-collection-level-permissions.md) 
       - [Manage process permissions (Inheritance process model)](change-organization-collection-level-permissions.md) 
@@ -136,7 +138,7 @@ The following table summarizes the different permissions you can set at the obje
 Area path permissions let you manage access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
 
 > [!NOTE]
-> Project members with permissions to create or edit **Area Paths** or **Iteration Paths** can't set team **Area Paths** and **Iteration Paths**. To configure team settings, you must be added to the [team administrator role](../settings/add-team-administrator.md) or be a member of the [**Project Administrators** group](change-project-level-permissions.md).
+> Project members with permissions to create or edit **Area Paths** or **Iteration Paths** can't set team **Area Paths** and **Iteration Paths**. To configure team settings, be added to the [team administrator role](../settings/add-team-administrator.md) or be a member of the [**Project Administrators** group](change-project-level-permissions.md).
  
 ::: moniker range="azure-devops" 
 
@@ -214,7 +216,7 @@ There are some restrictions for applying custom rules to system fields. For exam
 ## Set permissions on queries or query folders
 
 You can specify who can add or edit query folders or queries at the object-level. 
-To manage permissions for a query or query folder, you must be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group or granted explicit access through the object's **Security** dialog. 
+To manage permissions for a query or query folder, be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group or granted explicit access through the object's **Security** dialog. 
 
 **Query folder permissions dialog**
 
@@ -245,7 +247,6 @@ For more information, see [Create managed queries to list, update, or chart work
 
 By default, all users of the Contributors group can create and add tags to work items. To set permissions for a group or user to restrict this ability, you can set the **Create tag definition** to **Deny** at the project-level. To learn how, see [Change the permission level for a project-level group](change-project-level-permissions.md). 
 
-
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
 
@@ -255,7 +256,7 @@ Delivery Plans are an object within a project. You can manage permissions for ea
 
 Users granted **Stakeholder** access for private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access. For a comparison chart of Stakeholder versus basic access, see the [Feature Matrix](https://azure.microsoft.com/services/devops/compare-features/).
 
-To edit the permissions for a Delivery Plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's **Security** dialog.
+To edit the permissions for a Delivery Plan, be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's **Security** dialog.
 
 ::: moniker range=">= azure-devops-2022"
 
@@ -305,7 +306,7 @@ To edit the permissions for a Delivery Plan, you must be the creator of the plan
 
 <a id="move-delete-permissions"></a>
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 ## Move or permanently delete work items 
 
@@ -360,7 +361,7 @@ The **Manage test plans** permission enables users to do the following tasks:
 
 <a id="process-permissions"></a>
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 ## Customize an inherited process 
 
@@ -375,7 +376,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 > Users added to the **Project-Scoped Users** group can't access Process settings if the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization. For more information including important security-related callouts, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 1. Open the &hellip; context menu for the inherited process and choose **Security**.  To open this page, see [Customize a project using an inherited process](../settings/work/customize-process.md).   
 

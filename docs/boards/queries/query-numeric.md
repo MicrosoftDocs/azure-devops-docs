@@ -20,6 +20,10 @@ Learn how to query by numeric fields based on effort, schedule, story points, or
 
 The most common numeric fields track effort for items in the **Requirements** category or estimated, remaining, and completed work for items in the **Task** category. With queries you can list the work items of interest, and then define a chart that shows either a count of work items or a sum of a numeric field. 
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-queries](../includes/prerequisites-queries.md)]
+
 ## Use operators and macros 
 
 Supported query clauses that specify a numeric field can use the following operators.

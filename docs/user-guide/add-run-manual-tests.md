@@ -22,7 +22,7 @@ Tests you create from the board are automatically linked to the user story or ba
 
 ## Open your board
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](../organizations/projects/create-project.md). If you haven't been added as a team member, [get invited now](../organizations/security/add-users-team-project.md).
 
@@ -36,11 +36,9 @@ Tests you create from the board are automatically linked to the user story or ba
 
 ::: moniker-end
 
-
-
 ## Add tests
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. To add tests, open the menu for a work item.
 
@@ -66,13 +64,11 @@ Before you run the test, you must add details.
 
 ::: moniker-end
 
-
-
 ---
 
 ## Run a test
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Run the test by selecting ![Run icon](../boards/media/icons/run_query.png) **Run test** from the ![Actions icon](../boards/media/icons/actions-icon.png) actions menu for the inline test.
 
@@ -81,11 +77,9 @@ Run the test by selecting ![Run icon](../boards/media/icons/run_query.png) **Run
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
 ::: moniker-end
 
-
-
 ## Update the status of a test
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can update the status of the test from the ![Actions icon](../boards/media/icons/actions-icon.png) actions menu.
 
@@ -95,11 +89,9 @@ When you update the status of tests, you can [track test results](../test/track-
 
 ::: moniker-end
 
-
-
 ## Expand or collapse inline tests
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 When you first open the board, you'll see an unexpanded view of checklists and tests.
 

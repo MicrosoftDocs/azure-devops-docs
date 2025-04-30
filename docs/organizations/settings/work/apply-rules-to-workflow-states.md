@@ -6,11 +6,10 @@ ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: tutorial
 ms.date: 09/11/2024 
 ---
-
 
 # Apply rules to workflow states (Inheritance process)   
 
@@ -36,24 +35,14 @@ After you add or modify your workflow states for a work item type, define rules 
 - Automate closure of parent work items 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-- Support an approval process 
-- Make a field required or read-only or another value based on State changes
-- Automate closure of parent work items
-::: moniker-end
-
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 ## Prerequisites
 
-To apply rules to workflow states in Azure DevOps, you need specific permissions and access levels:
-
-- **Permissions:**
-  - Be a **Project Administrator** to manage security groups and permissions at the project level, which includes setting rules for workflow states.
-  - Have **Work Item Tracking permission**, which allows you to manage the work tracking area, which can be granted to members of the Project Administrators group or through specific permissions.
-
-- **Access levels:**
-  - Have **Basic** access, which is typically sufficient for most users who need to manage work items and apply rules to workflow states.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - To manage security groups and permissions at the project level, which includes setting rules for workflow states: **Project Administrator**.<br>- To manage the work tracking area: **Project Administrator** or specifically assigned the **Work Item Tracking** permission. |
+| **Access levels** | **Basic** access, which is typically sufficient for most users who need to manage work items and apply rules to workflow states. |
 
 ## Understand workflow rules 
 
@@ -88,10 +77,6 @@ The following table outlines the two groups of workflow rules you can define:
 ::: moniker-end
 
 [!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
-
-::: moniker range="azure-devops-2019"
-Workflow conditions and actions you can set are illustrated in the following images. You can apply standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions set the value of a field or make a field read-only or required. For this set of rules, you can specify one or two conditions and several actions. 
-::: moniker-end
 
 ---
 :::row:::
@@ -317,7 +302,6 @@ Without any restrictions, users can move from one State to any other State, both
 #### Rule requirements 
 
 To support a more controlled workflow, the business group decided to institute rules that support the following forward and reverse state transitions on the User Story work item type.
-
 
 |State |Transition rule |
 |---------|---------|

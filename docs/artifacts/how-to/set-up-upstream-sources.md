@@ -4,7 +4,7 @@ description: How to set up external feeds and public registries as upstream sour
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 03/21/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Set up upstream sources

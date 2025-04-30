@@ -16,17 +16,21 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In most cases, you can start using your product and portfolio backlogs once your project is created. A default team is created along with associated backlogs and boards. You can start adding work items to your product backlog using the [Backlog](create-your-backlog.md) or [Board](../boards/kanban-quickstart.md). 
+In most cases, you can start using your product and portfolio backlogs once your project is created. A default team gets created along with associated backlogs and boards. You can start adding work items to your product backlog using the [Backlog](create-your-backlog.md) or [Board](../boards/kanban-quickstart.md). 
 
-However, you may need to ensure you've configured your backlogs and boards correctly. Ensure the configuration if you've added a team and want to start using the team backlogs and boards. Changes may be made to a project or team configuration over time. These changes can influence the work items that appear on your backlog and boards. 
+However, you might need to ensure you've configured your backlogs and boards correctly. Ensure the configuration if you've added a team and want to start using the team backlogs and boards. Changes may be made to a project or team configuration over time. These changes can influence the work items that appear on your backlog and boards. 
 
 For an overview of the tools associated with your team, see [Manage and configure team tools](../../organizations/settings/manage-teams.md).
+
+## Prerequisites
+
+[!INCLUDE [temp](../includes/prerequisites.md)]
 
 ## Default backlog and board work items
 
 The first thing you need to understand is that your product **Backlog** and **Board** display work items that meet the following criteria:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 - Work item type belongs to the Requirements category. The types differ depending on the process selected for your project:  
 	- [Basic](../get-started/plan-track-work.md) : Issue, Backlog name=<strong>Issues</strong>  
@@ -40,18 +44,14 @@ The first thing you need to understand is that your product **Backlog** and **Bo
 
 [!INCLUDE [temp](../includes/basic-process-note.md)] 
 
-
-
 You can determine the work item types that belong to your Requirements category. Determine the items by [opening your product Backlog](create-your-backlog.md) and checking the product backlog name. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!div class="mx-imgBorder"]
 > ![Product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png)
 
 ::: moniker-end
-
-
 
 Look up your team's Area Path(s) and Iteration Paths. For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and 
 [Define sprint paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations). 
@@ -65,7 +65,6 @@ Your sprint backlog and Taskboard apply the filters associated with your team's 
 You can only select Iteration Paths that have been [preselected by your team](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations). 
 
 Your sprint backlog displays only those work items assigned to the selected sprint. Child tasks assigned to other sprints aren't displayed.  
-
 
 ## Review checklist for work items, backlogs, and boards
 
@@ -90,15 +89,13 @@ If you don't see the work items you expect on your [product Backlog](create-your
 
 ## Add bugs to your backlogs and boards
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 For all processes except the Basic process, each team manages the way bugs are tracked. Track bugs in the Requirements category because they show up on the Backlog and board or the Tasks category. They can also show up on the Taskboard or the Bugs category where they don't appear on either backlogs or boards. 
 
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/basic-process-bug-note.md)]
-
-
 
 If you want bugs to show up on your Backlog and Board, choose <strong>Bugs are managed with requirements</strong>.
 
@@ -116,12 +113,11 @@ If you see the following error when you open your board, you need to correct the
 
 Choose **Correct this now** to open the Settings dialog. To map the workflow states, refer to [Add columns to your board, Update column-to-State mappings](../boards/add-columns.md#state-mappings). 
 
-
 ## Customize your board checklist items
 
 Checklists are a great way to create work items that are automatically linked with a parent-child link to another work item on a board. You can customize the work item types that you can add as a checklist by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For more information, see [Customize cards](../boards/customize-cards.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 For example, here we've chosen to track bugs along with tasks, and  enable Task, Bug, GitHub objects, and Tests to appear within checklists. 
 
@@ -130,13 +126,7 @@ For example, here we've chosen to track bugs along with tasks, and  enable Task,
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-> [!NOTE]   
-> The GitHub annotations require Azure DevOps Server 2019 update 1 or later version. 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 For more information about checklists, see the following articles: 
 - [Add tasks or child items as checklists](../boards/add-task-checklists.md)  
@@ -145,13 +135,7 @@ For more information about checklists, see the following articles:
 
 ::: moniker-end
 
-
-
-
-
 <a id="customize-checklist-2019"></a>
-
-::: moniker range=">= azure-devops-2019"
 
 ## Add other work item types to your board checklist
 
@@ -161,9 +145,6 @@ For example, here  we've chosen to track bugs along with tasks, and we enable Is
 
 > [!div class="mx-imgBorder"]
 > ![On the settings page, the Annotations tab is selected and five Annotation types (Task, Bug, Tests, Issue, Ticket) are listed. All but Tests are enabled.](media/setup-backlog/annotations-on-prem.png)
-
-::: moniker-end
-
 
 ## Hide or show backlog levels 
 
@@ -197,7 +178,7 @@ For more information, see the following resources:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 **Inheritance process model:**  
 - [Add and manage work item types (Inherited process)](../../organizations/settings/work/customize-process-work-item-type.md)
@@ -211,21 +192,19 @@ For more information, see the following resources:
 
 ::: moniker-end
 
-
-
 <a id="taskboard-types"></a> 
 
 ## Add custom work item types to your Taskboard
 
 To add custom work item types to appear on your sprint Taskboard, follow the steps outlined next based on the process model your project uses. 
 
-::: moniker range=">= azure-devops-2019 "
+::: moniker range="<=azure-devops"
 > [!NOTE]
 > You can enable work item types that you add to your Iteration backlog to appear as a checklist on your product board. To learn how, see [Customize your board checklist items](#customize-checklist-2019) provided earlier in this article. 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### Track custom work items with the Inherited process model 
 
@@ -235,9 +214,7 @@ For example, if you want to track a custom work item type, Tickets, along with T
 
 2. Add the Ticket work item types to the Iteration backlog. For more information, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md).  
 
-
 ::: moniker-end
-
 
 ::: moniker range="< azure-devops"
 
@@ -296,10 +273,7 @@ The following settings can influence the type and number of work items that appe
 	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress-s155.png)  
 	::: moniker-end
 
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress.png)  
-	::: moniker-end
+	
 
 	
 
@@ -312,7 +286,6 @@ The following settings can influence the type and number of work items that appe
 - Inheritance process model: If an administrator [disables or deletes a work item type](../../organizations/settings/work/customize-process-work-item-type.md#enable-disable), it doesn't appear on backlogs and boards. 
 
 - On-premises XML process model: If an administrator [deletes or destroys a work item type](../../reference/witadmin/witadmin-import-export-manage-wits.md), it doesn't appear on backlogs and boards.
-
 
 ## Related articles
 

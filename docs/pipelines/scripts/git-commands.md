@@ -11,12 +11,9 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-
 For some workflows, you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to main.
 
 Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
-
 
 <a name="enable"></a>
 
@@ -57,48 +54,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
       * **Read:**  Allow
       * **Create tag:**  Allow
 
-
 ::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-Go to the Version Control control panel tab
-
-
-- Azure Repos: `https:&#x2F;&#x2F;dev.azure.com/{your-organization}/{your-project}/_admin/_versioncontrol`
-
-- On-premises: `https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-project}/_admin/_versioncontrol`
-
-![manage project](media/manage-project.png)
-
-
-If you see this page, select the repo, and then select the link:
-
-
-
-![control panel top to project](media/control-panel-top-to-team-project.png)
-
-
-
-![control panel project version control tab](media/control-panel-team-project-version-control-tab.png)
-
-
-
-On the **Version Control** tab, select the repository in which you want to run Git commands, and then select **Project Collection Build Service**. By default, this identity can read from the repo but can’t push any changes back to it.
-
-![permissions](media/control-panel-version-control-project-collection-build-service.png)
-
-Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
-
-* **Create branch:**  Allow
-* **Contribute:**  Allow
-* **Read:**  Allow
-* **Create tag:**  Allow
-
-When you're done granting the permissions, make sure to select **Save changes**.
-
-::: moniker-end
-
 
 ### Allow scripts to access the system token
 
@@ -121,12 +77,6 @@ Learn more about [`checkout`](/azure/devops/pipelines/yaml-schema/steps-checkout
 On the [options tab](../build/options.md), select **Allow scripts to access OAuth token**.
 
 ---
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-
-On the [options tab](../build/options.md), select **Allow scripts to access OAuth token**.
 
 ::: moniker-end
 
@@ -168,7 +118,6 @@ steps:
 ::: moniker-end
 
 ## Examples
-
 
 ### List the files in your repo
 
@@ -232,18 +181,9 @@ Yes
 
 [Shell Script](/azure/devops/pipelines/tasks/reference/shell-script-v2)
 
-
 ### How do I avoid triggering a CI build when the script pushes?
 
-::: moniker range="=azure-devops-2019"
-
-Add ```***NO_CI***``` to your commit message. Here are examples:
-* ```git commit -m "This is a commit message ***NO_CI***"```
-* ```git merge origin/features/hello-world -m "Merge to main ***NO_CI***"```
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Add `[skip ci]` to your commit message or description. Here are examples:
 * ```git commit -m "This is a commit message [skip ci]"```

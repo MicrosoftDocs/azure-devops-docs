@@ -22,7 +22,7 @@
   items:
   - name: Connect to a project or repo
     href: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json
-  - name: Authentication
+  - name: Git Authentication Overview
     href: auth-overview.md
   - name: Authenticate with SSH
     href: use-ssh-keys-to-authenticate.md
@@ -189,8 +189,8 @@
     href: ../tfvc/git-permission-command.md
   - name: tf git view
     href: ../tfvc/git-view-command.md
-  - name: Go get using Azure Repos
-    href: go-get.md
+  - name: Go install using Azure Repos
+    href: go-install.md
 - name: Reference
   items:
   - name: Default Git permissions (Security)

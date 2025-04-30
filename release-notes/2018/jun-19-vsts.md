@@ -271,9 +271,6 @@ See all dashboards in the project.
 
 When a Personal Access Token (PAT) is nearing expiration, you’ll get an email notification giving you the ability to immediately take action and extend the lifetime of the PAT so that your tools and processes will go on uninterrupted.
 
-> [!div class="mx-imgBorder"]
-> ![PAT expiration](media/136_08.png)
-
 ## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.

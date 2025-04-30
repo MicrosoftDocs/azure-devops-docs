@@ -539,6 +539,26 @@
       "redirect_url": "/azure/devops/pipelines/agents/scale-set-agents#orchestration-modes"
     },
     {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2024-12.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2024-11.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2024-10.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2024-09.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2024-08.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
       "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2024-07.md",
       "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
     }, 

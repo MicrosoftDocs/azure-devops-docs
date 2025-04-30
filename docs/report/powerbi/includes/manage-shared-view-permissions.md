@@ -6,7 +6,6 @@ ms.topic: include
 ms.date: 06/18/2021
 ---
 
-
 ## Manage permissions for a shared view
 
 All members of the Contributors group for your project can use **Shared** views in Power BI. For shared views that you create, you can manage the permissions of users and groups to create, delete, or view a specific shared view.
@@ -24,7 +23,7 @@ All members of the Contributors group for your project can use **Shared** views 
 
 	Close the dialog when done. Your changes are automatically saved.
 	::: moniker-end
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 	:::image type="content" source="../media/editable-views/view-permissions.png" alt-text="Manage Shared Analytics view security dialog, change permissions for a user, Azure DevOps Server.":::
 
 	Choose **Save changes** when done. 

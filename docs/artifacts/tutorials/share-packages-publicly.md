@@ -39,12 +39,12 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [NuGet](#tab/nuget)
 
-- [Publish NuGet packages - (NuGet.exe)](../nuget/publish.md#publish-packages)
-- [Publish NuGet packages - (dotnet)](../nuget/dotnet-exe.md#publish-packages)
+- [Publish NuGet packages - (NuGet.exe)](../nuget/publish.md#publish-packages-to-a-feed-in-the-same-organization)
+- [Publish NuGet packages - (dotnet)](../nuget/dotnet-exe.md#publish-packages-to-a-feed-in-the-same-organization)
 
 #### [Npm](#tab/npm)
 
-- [Publish Npm packages](../npm/publish.md)
+- [Publish npm packages](../npm/publish.md)
 
 #### [Maven](#tab/maven)
 
@@ -56,7 +56,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Python](#tab/python)
 
-- [Publish Python packages](../quickstarts/python-cli.md#publish-python-packages)
+- [Publish Python packages](../quickstarts/python-cli.md#publish-packages)
 
 #### [Cargo](#tab/cargo)
 
@@ -76,7 +76,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Npm](#tab/npm)
 
-- [Publish Npm packages](../../pipelines/artifacts/npm.md#publish-to-azure-artifacts-feeds)
+- [Publish npm packages](../../pipelines/artifacts/npm.md#publish-packages-to-a-feed-in-the-same-organization)
 
 #### [Maven](#tab/maven)
 
@@ -84,11 +84,11 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 #### [Gradle](#tab/gradle)
 
-- [Publish Artifacts with Gradle](../../pipelines/artifacts/pull-package-gradle.md)
+- [Publish Artifacts with Gradle](../../pipelines/artifacts/build-publish-artifacts-gradle.md)
 
 #### [Python](#tab/python)
 
-- [Publish Python packages](../../pipelines/artifacts/pypi.md#publish-python-packages-to-an-azure-artifacts-feed)
+- [Publish Python packages](../../pipelines/artifacts/pypi.md#publish-python-packages-to-a-feed)
 
 #### [Cargo](#tab/cargo)
 

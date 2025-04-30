@@ -19,10 +19,9 @@ The Team Foundation Version Control (TFVC) `unshelve` command restores shelved f
 
 ## Prerequisites
 
-- To use the `unshelve` command:
-  - You must have the **Read** permission set to **Allow**.
-  - You must have the **Check out** permission for the items in the shelveset set to **Allow**.
-- To delete a shelveset, you must be its owner or have the **Administer shelved changes** global permission set to **Allow**.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To use the `unshelve` command: **Read** permission set to **Allow** and **Check out** permission for the items in the shelveset set to **Allow**.<br>- To delete a shelveset: Owner or **Administer shelved changes** permission set to **Allow**.|
 
 For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
  

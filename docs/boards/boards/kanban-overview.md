@@ -29,7 +29,7 @@ Each [product and portfolio backlog](../backlogs/backlogs-overview.md) correspon
 
 To enhance consistent delivery of high-quality software, Kanban emphasizes two key practices. First, [**visualize the flow of work**](kanban-quickstart.md#map-the-flow-of-how-your-team-works) by mapping your team's workflow stages and configuring the board appropriately. Second, **constrain work in progress**, by [setting work-in-progress (WIP) limits](kanban-quickstart.md#set-wip-limits). With these practices in place, you can track progress and monitor metrics to reduce lead or cycle time. Get started by exploring how to [use your board](../boards/kanban-quickstart.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::image type="content" source="../work-items/media/about-agile/view-boards-agile.png" alt-text="Screenshot showing board, Agile template.":::
 ::: moniker-end
 

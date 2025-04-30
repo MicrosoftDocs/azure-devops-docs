@@ -7,7 +7,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/04/2022
 ---
 
@@ -30,6 +30,8 @@ You can query Analytics from any [supported web browser](/azure/devops/server/co
 
 > [!NOTE]   
 > OData, an application-level protocol for interacting with data via RESTful (where REST=Representational State Transfer) interfaces), supports the description of data models as well as editing and querying of data according to those models. The Entity Data Model (EDM) or metadata describes the information available from Analytics, including the entities, entity types, properties, relationships, and enumerations you use to query the data to build reports. For an overview of OData, see [Welcome to OData](/odata/overview). 
+
+## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
@@ -64,7 +66,6 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/version/
     Analytics service root URL         Organization/Project        OData version  return metadata
 ```
 
-
 > [!NOTE] 
 > The latest Analytics OData version is **v4.0-preview**. You can use this version for all queries against the hosted service. For more information on Analytics versions and available data, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
 
@@ -90,7 +91,6 @@ https://{ServerName}/{CollectionName}/{ProjectName}/_odata/version/$metadata
 > [!NOTE] 
 > The latest Analytics OData version is **v4.0-preview**. You can use this version for all queries against the hosted service. For more information on Analytics versions and available data, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
 
-
 Here's an example for the server named `fabrikam-devops` and the `DefaultCollection` hosted on Azure DevOps Server 2022:
 
 > [!div class="tabbedCodeSnippets"]
@@ -105,7 +105,6 @@ https://fabrikam-devops/DefaultCollection/_odata/v4.0-preview/$metadata
 ### Interpret the metadata response
 
 Analytics returns an XML file of the data model. Use your browser search function to find information specific to the entity of interest. 
-
 
 > [!TIP] 
 > Depending on the browser you're using, this file may or may not be formatted in a readable manner. If it isn't formatted, you can find a free online XML formatter through a web browser search. 
@@ -261,7 +260,6 @@ For entity metadata property and relationship information, see the following art
 - [Metadata reference for Azure Pipelines](entity-reference-pipelines.md)
 - [Metadata reference for Test Plans](entity-reference-test-plans.md)
 
-
 <a id="query-entity-set"></a>
 
 ### Example: Query a specific entity set
@@ -333,8 +331,6 @@ The example return three project names.
 > ```
 ***
 
-
-
 ## Query options
 
 A query option is a set of query string parameters applied to a resource that can help control the amount of data being returned for the resource in the URL. 
@@ -355,13 +351,11 @@ Query options should be specified in the order listed in the following table.
 > [!TIP]    
 > Avoid mixing `$apply` and `$filter` clauses in a single query. To filter your query, you have two options: (1) use a `$filter` clause or (2) use a `$apply=filter()` combination clause. Each one of these options works great on its own, but combining them together might lead to some unexpected results.
 
-
 <a id="server-force-paging"></a>
 
 ## Enforce server-side paging
 
 Analytics forces paging when query results exceed 10000 records. In that case, you'll get first page of data and link to follow to get next page. Link (`@odata.nextLink`) can be found at the end of the JSON output. It will look like an original query followed by `$skip` or `$skiptoken`. For example:
-
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -402,12 +396,10 @@ Mention WIQL to Odata extension
 
 Query work item data 
 
-
 Record count query 
 
 https://analytics.dev.azure.com/content-learn/Content/_odata/v4.0-preview/WorkItems?
     $count=true&$select=WorkItemId,Title,WorkItemType,State,CreatedDate
-
 
 Construct a basic query 
 Query parts (Apply, filter, select, …) 
@@ -423,6 +415,5 @@ Expand
 Count
 Return data from related entities
 Enforce server-side paging
-
 
  --> 

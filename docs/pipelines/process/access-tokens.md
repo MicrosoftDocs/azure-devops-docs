@@ -12,8 +12,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-
 At run-time, each job in a pipeline may access other resources in Azure DevOps. For example, a job may:
 - Check out source code from a Git repository
 - Add a tag to the repository
@@ -78,14 +76,6 @@ Enable one or more of the following settings. Enabling these settings are recomm
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-If you use Azure DevOps Server 2019, then all YAML jobs run with the job authorization scope set to **collection**. In other words, these jobs have access to all repositories in your project collection. You cannot change this in Azure DevOps Server 2019.
-
-YAML pipelines are not available in TFS.
-
-::: moniker-end
-
 # [Classic](#tab/classic/)
 
 ::: moniker range=">=azure-devops-2020"
@@ -142,17 +132,6 @@ To set job authorization scope for a specific pipeline:
 
 >[!IMPORTANT]
 >If the scopes are not restricted at either the organization level or project level, then you are allowing the pipeline authors to determine the access they need to repositories. If an adversary is able to create or edit a pipeline in one project, they will be able to gain access to any repository in your organization. This is why, it is recommended that you restrict the scope at the highest level (organization settings) in order to contain the attack to a single project.
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-Job authorization scope can be set for each pipeline. To set this scope:
-
-- Navigate to the pipeline in the **Pipelines** page.
-- Select **Edit** to edit the pipeline.
-- In the **Options** tab, select **Project collection** or **Current project** for **Build job authorization scope**.
-- Save the build pipeline.
 
 ::: moniker-end
 
@@ -241,7 +220,7 @@ To update the permissions of the job access token:
   - Make any changes to the non-pipelines-related permissions for this account.
   - Since **Your-project-name Build Service (your-collection-name)** is a user in your organization or collection, you can add this account explicitly to any resource - for e.g., to a feed in Azure Artifacts.
 
-:::moniker range=">=azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 <a id="configure-external-project"></a>
 
@@ -278,7 +257,7 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 :::moniker-end
 
-:::moniker range=">=azure-devops-2019 <= azure-devops-2020"
+:::moniker range="=azure-devops-2020"
 3.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
     ![Add user for repository access.](media/access-tokens/add-build-service-user.png)
@@ -290,7 +269,7 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
     ![Screenshot of how to add a user for repository access.](media/access-tokens/search-for-user.png)
 :::moniker-end
 
-:::moniker range=">=azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 4. Grant *Read* permissions for that user.
 
@@ -311,22 +290,15 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 <a name="q-a"></a>
 ## FAQ
 
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### How do I determine the job authorization scope of my YAML pipeline?
 
 :::moniker-end
 
-
 :::moniker range="azure-devops"
 
 - If your project is a public project, the job authorization scope is always **project** regardless of any other settings.
-
-:::moniker-end
-
-:::moniker range="azure-devops-2019"
-
-All YAML pipelines in Azure DevOps Server 2019 run under **collection** job authorization scope.
 
 :::moniker-end
 
@@ -358,14 +330,6 @@ All YAML pipelines in Azure DevOps Server 2019 run under **collection** job auth
 
 :::moniker-end
 
-:::moniker range="<azure-devops-2020"
-
-* Open the editor for the pipeline and navigate to the **Options** tab.
-  * If the **Build job authorization scope** is **Current project**, then scope is **project**.
-  * Otherwise, scope is **collection**.
-
-:::moniker-end
-
 :::moniker range="azure-devops-2020"
 
 * Check the Pipeline settings under your Azure DevOps **Organization settings**:
@@ -375,7 +339,6 @@ All YAML pipelines in Azure DevOps Server 2019 run under **collection** job auth
     * If **Limit job authorization scope to current project** is not enabled, open the editor for the pipeline, and navigate to the **Options** tab.
       * If the **Build job authorization scope** is **Current project**, then scope is **project**.
       * Otherwise, scope is **collection**.
-
 
 :::moniker-end
 
@@ -399,7 +362,7 @@ When creating a new classic pipeline, the *job authorization scope* is set to **
 
 ### How do I determine the job authorization scope of my classic release pipeline?
 
-:::moniker range="<=azure-devops-2020"
+:::moniker range="=azure-devops-2020"
 
 Classic release pipelines in Azure DevOps Server 2020 and below run with **collection** scope.
 

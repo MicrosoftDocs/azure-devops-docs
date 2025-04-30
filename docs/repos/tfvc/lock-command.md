@@ -20,7 +20,11 @@ The Team Foundation Version Control (TFVC) `lock` command locks or unlocks a fil
 
 ## Prerequisites
 
-To use the `lock` command, you must have the **Lock** permission set to **Allow**. You need the **Unlock other user's changes** permission set to **Allow** to remove a lock held by another user if you don't have **Write** permission for that user's workspace. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- **Lock** permission set to **Allow**.<br>- **Unlock other user's changes** permission set to **Allow** if you don't have **Write** permission for a user's workspace that's locked. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

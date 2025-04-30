@@ -10,7 +10,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2024
+ms.date: 01/27/2025
 ---
 
 # Manage preview features 
@@ -31,6 +31,14 @@ As some new features get introduced, you can turn them on or off. You can try th
 As some new features get introduced, you can turn them on or off. You can try them out, provide feedback, and work with the ones that meet your requirements. Some preview features provide access to new functionality, while others reflect a change to the user interface, but little or no change in functionality. 
 
 ::: moniker-end
+
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of the [project](../../organizations/projects/create-project.md) where you want to enable or disable preview features. |
+| **Permissions** | To enable or disable preview features for your organization: Member of the **Project Administrators** group. |
+| **Access levels** |At least **Basic** access.  |
 
 ## Turn on or off preview features
 
@@ -77,11 +85,12 @@ When you turn on a feature at the project or collection-level, you turn it on fo
 
 ::: moniker range="azure-devops"
 
-The following table shows the preview features you can turn on or off based on your role: user or team member, or for the organization. Only Project Collection Administrators can manage organization-level features. 
+The following table lists the preview features that you can turn on or off based on your role: user, team member, or organization. Only Project Collection Administrators can manage organization-level features.
 
 |**Preview features**|**Per user**|**Per organization**|
 |--------------------|--------------|-----------------|
 |[Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files)  | ✔️ |   |   
+|Microsoft Entra profile information    | ✔️  |    |
 |[Experimental themes](#experimental-themes) | ✔️ | ✔️ | 
 |[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)|   | ✔️ |    
 |New Artifacts (Feeds) Experience (accessibility updates) | ✔️ | ✔️ |   
@@ -93,8 +102,7 @@ The following table shows the preview features you can turn on or off based on y
 |New Wiki experience| ✔️ | ✔️ |     
 |[Organization Permissions Settings Page v2](../../organizations/security/change-organization-collection-level-permissions.md)| ✔️ | ✔️ |     
 |[Project Permissions Settings page](../../organizations/security/change-project-level-permissions.md)| ✔️ | ✔️ |     
-|[Task Insights for Failed Pipeline Runs](../../pipelines/troubleshooting/troubleshooting.md#task-insights-for-failed-pipeline-runs)| ✔️ | ✔️ | 
-|[Workload Identity federation for Azure Resource Manager service connections](../../pipelines/library/connect-to-azure.md)|    | ✔️  |     
+|[Task Insights for Failed Pipeline Runs](../../pipelines/troubleshooting/troubleshooting.md#task-insights-for-failed-pipeline-runs)| ✔️ | ✔️ |  
 |[YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)| ✔️ | ✔️ |   
 
 ::: moniker-end
@@ -113,12 +121,6 @@ The following table shows the features you can turn on or off based on your role
 ::: moniker range="azure-devops-2022"
 
 You can turn on or off the [Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files) feature on a per-user basis.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-You can turn on or off the [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download) feature on a per project or collection basis.
 
 ::: moniker-end
 
@@ -156,7 +158,7 @@ The following features are generally available for Azure DevOps.
 - [New experience in Code, Work Item, & Wiki search](/previous-versions/azure/devops/2017/oct-06-vsts#code)  
 - [Out of the box notifications](../../organizations/notifications/manage-your-personal-notifications.md)   
 - [Team expansion for notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
-- [Streamlined User Management](../../organizations/accounts/add-organization-users.md)   
+- [Streamlined user management](../../organizations/accounts/add-organization-users.md)  
 
 ### Azure Artifacts 
 
@@ -195,6 +197,7 @@ The following features are generally available for Azure DevOps.
 - [Approval gates in releases](../../pipelines/release/approvals/index.md) - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md)  
 - [Symbol server](../../pipelines/artifacts/symbols.md)  
 - [Task tool installers](../../pipelines/process/tasks.md#tool-installers)  
+- [Workload Identity federation for Azure Resource Manager service connections](../../pipelines/library/connect-to-azure.md) 
 
 ### Azure Test Plans
 
@@ -205,7 +208,7 @@ The following features are generally available for Azure DevOps.
 
 ## Transition of Preview Features to General Availability
 
-While there's no fixed timeline for when a preview feature will move to general availability (GA), there are several indicators and resources you can use to stay informed about the status of preview features:
+While there's no fixed timeline for when a preview feature moves to general availability (GA), there are several indicators and resources you can use to stay informed about the status of preview features:
 
 - **Azure DevOps roadmap and release notes:** The Azure DevOps roadmap provides insights into upcoming features and enhancements. It includes information about features currently in preview and their expected release timelines. Azure DevOps release notes provide detailed information about new features, improvements, and bug fixes. For more information, see the Relevant Links section at [Azure DevOps Blog](https://devblogs.microsoft.com/devops/). 
 - **Azure DevOps blog:** The Azure DevOps blog often features posts about new releases, including when preview features transition to GA. Subscribing to the blog or regularly checking it can help you stay updated. For more information, see [Azure DevOps Blog](https://devblogs.microsoft.com/devops/).

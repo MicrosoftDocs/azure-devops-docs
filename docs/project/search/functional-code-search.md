@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 08/08/2024
+ms.date: 01/27/2025
 ---
 
 # Functional code search  
@@ -21,29 +21,21 @@ Find the code you need faster with functional code search. This article explains
 
 ::: moniker range=" azure-devops"
 
-- **Access levels:**
-  - **Basic access:**
-    - To use code search, you must have at least Basic access.
-    - To access code in a private project, you must have at least Basic access.
-  - **Stakeholder access:**
-    - Users with Stakeholder access don’t have access to code, so they can’t search for code.
-    - Users with Stakeholder access for a public project have full access to code, so they can search for code.
-- **Search results:**
-  - **Access-based results:** When you're searching across the organization or collection, only results for which a project member has access are listed.
+| Category | Prerequisite |
+|--------------|-------------|
+| **Access levels** | - To use code search: At least **Basic** access. <br> - To access code in a private project: At least **Basic** access. Stakeholder access doesn't include code. <br> - To access code in a public project: At least  **Stakeholder** access. |
+| **Search results** | **Access-based results**: When you're searching across the organization or collection, only results for which a project member has access are listed. |
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-- **Access levels:**
-  - **Basic access:**
-    - To use code search, you must have at least Basic access.
-    - To access code in a private project, you must have at least Basic access.
-  - **Stakeholder access:**
-    - Users with Stakeholder access don’t have access to code, so they can’t search for code.
-- **Search results:**
-  - **Access-based results:** When you're searching across the organization or collection, only results for which a project member has access are listed.
-- **Tools:**
-  - Install [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
+| Category | Requirements |
+|--------------|-------------|
+| **Access levels** | - To use code search: At least **Basic** access. <br> - To access code in a private project: At least **Basic** access. Stakeholder access doesn't include code. |
+| **Search results** | **Access-based results**: When you're searching across the organization or collection, only results for which a project member has access are listed. |
+| **Tools** | [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)   |
+
 ::: moniker-end
 
 ## Code search best practices
@@ -157,16 +149,16 @@ Code Search can index different branches in a Git repository. It only indexes fi
 > [!NOTE]
 > By default, code search looks for the specified string in the main or default branch of a repository. But, you can narrow down the search by specifying a filter for a specific branch.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ![Screenshot showing Git branches for configuration.](media/advanced-work-item-search-syntax/configure-branches.png)
 ::: moniker-end
 
 ## Search TFVC projects
 
-TFVC projects display only the folders that you can read. You can't see any other projects or folders. To filter your search, choose folders from the tree.
+Team Foundation Version Control (TFVC) projects display only the folders that you can read. You can't see any other projects or folders. To filter your search, choose folders from the tree.
 
 > [!TIP]
-> Code Search saves your last settings, such as the project and repository or path that you searched in. When you want to search in a different scope, select **Clear all links** to clear the checkboxes and search across all projects. The first 100 hits or matches in the target files are highlighted by Code Search in the results pane. 
+> Code Search saves your last settings, such as the project and repository or path that you searched in. When you want to search in a different scope, select **Clear all links** to clear the checkboxes and search across all projects. The first 100 hits or matches in the target files get highlighted by Code Search in the results pane. 
 
 ## Search code with REST API
 

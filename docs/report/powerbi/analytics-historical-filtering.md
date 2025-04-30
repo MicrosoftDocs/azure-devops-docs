@@ -6,17 +6,15 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/08/2022
 ---
-
 
 # Historical data representation in Analytics
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]  
 
 You specify specific entity sets to report on historical data or create trend reports. Understanding how Analytics records historical data is important to ensure you can track and report the data of interest.  
-
 
 ## Entity sets that support historical reporting
 
@@ -34,7 +32,6 @@ The following table describes the entity sets that you can use to create histori
 |[**TestResultsDaily**](../analytics/entity-reference-test-plans.md#testresultsdaily) | A daily snapshot aggregate of **TestResult** executions, grouped by Test.|[Test summary trend sample report](../powerbi/sample-test-summary-trend.md)| 
 
 A snapshot provides a record of the values defined for the entity type each day. The record is written to Analytics once a day at the same time each day. You use snapshots when you want to generate a trend report.  By default, all the snapshot tables are modeled as daily snapshot fact tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots.
-
 
 ## Periodic snapshot fact tables
 
@@ -63,7 +60,6 @@ You use the `WorkItemRevisions` entity set to load all the revisions for a given
 
 > [!TIP]  
 > To create a work tracking trend report, create or modify a default **Analytics view** and specify the time frame of interest in the **History** tab. For more information, see [Create an Analytics view](../powerbi/analytics-views-create.md).
-
 
 Both [Analytics views](./what-are-analytics-views.md) and the [Burndown and Burnup widgets](../dashboards/configure-burndown-burnup-widgets.md) let you configure filters that scope the data set to your needs. You apply filters to scope the data to specific teams, work item types, or backlogs. Filters may also apply to specific properties or fields and their corresponding values. For example, you can apply filters on work items to return only bugs defined for the *Fabrikam Voice* team and that are tagged with *Customer*.  
 
@@ -147,15 +143,11 @@ For more information, see [Install or enable the Analytics service](../dashboard
 
 To restate, when reporting on historical data, all filters are applied to the work item's version as-of the historical point in time. Work items will appear in your trend when they meet the filter criteria. They'll disappear from your trend when they no longer meet the filter criteria.  
 
-
 ## Related articles
 
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
-
-
-
 
 <!---
 Snapshot entity types

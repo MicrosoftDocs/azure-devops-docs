@@ -5,7 +5,7 @@ description: Learn how to create a trend report using an Analytics view.
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: quickstart
 ms.date: 11/08/2022
 ---
@@ -33,20 +33,31 @@ Follow these steps to create two reports in Power BI desktop that shows a **dail
 	c. Apply filters to your trend report    
 	d. Create a card and apply the **Is Current=True** filter to show current count.    
  
+## Prerequisites  
 
-[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+::: moniker range="azure-devops"
 
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | **View Analytics** permission set to **Allow**. For more information, see [Grant permissions for Analytics access](./analytics-security.md) |
+|**Tools** | - [Azure Boards enabled](../../organizations/settings/set-services.md)<br>- [Power BI Desktop](https://powerbi.microsoft.com/desktop)    |
+|**Tasks**| Monitor work items over a specified period to generate a trend report. |
 
-### Power BI prerequisites  
+::: moniker-end
 
-To create a Power BI report that references an Analytics view, you must meet the following criteria:  
+::: moniker range=" < azure-devops"
 
-- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
-- Have tracked work items for some period of time on which to generate a trend report. 
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | **View Analytics** permission set to **Allow**. For more information, see [Grant permissions for Analytics access](./analytics-security.md) |
+|**Tools** | - [Analytics extension](../dashboards/analytics-extension.md). [**Project Collection Administrators**](../../organizations/security/change-organization-collection-level-permissions.md) can add and enable the service.<br>- [Power BI Desktop](https://powerbi.microsoft.com/desktop).<br>- [Azure Boards turned on](../../organizations/settings/set-services.md)  |
+|**Tasks**| Monitor work items over a specified period to generate a trend report. |
 
+::: moniker-end
 
 [!INCLUDE [temp](../includes/analytics-open.md)]
-
 
 ## Verify the default Analytics view for your data 
 
@@ -95,7 +106,6 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
     > [!NOTE]
     > To view trends over time, you want to use the **Date** format and not **Date Hierarchy**. The **Date Hierarchy** in Power BI rolls ups everything into a simple number for the period. The day level in the hierarchy rolls all days to a number between 1-31. For example, April 3 and May 3 both roll up into number 3. This is not the same as counting items per actual date.
 
-
 ## Group and filter the trend by State
 
 - To group your user stories by State, drag the **State** field into the Legend area. Optionally, filter the set of States to show in the chart. 
@@ -143,7 +153,6 @@ The reports shown in this quickstart illustrate how easy it is to generate repor
 
 > [!div class="nextstepaction"]
 > [Create an Active bugs report](active-bugs-sample-report.md)
-
 
 ## Related articles 
 

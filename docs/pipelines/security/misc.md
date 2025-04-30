@@ -1,5 +1,5 @@
 ---
-title: Other security considerations for Azure Pipelines
+title: Secure agents, projects, and containers
 description: Other tips for securing your pipelines, including protecting shared infrastructure, repositories, and projects.
 ms.assetid: 95fe319a-60bd-4b1b-9111-5fd8852f7839
 ms.reviewer: vijayma
@@ -7,11 +7,13 @@ ms.date: 06/11/2024
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Other security considerations for Azure Pipelines
+# Secure agents, projects, and containers
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 When it comes to securing Azure Pipelines, there are several other considerations to keep in mind, like protecting [shared infrastructure](#protect-shared-infrastructure), [repositories](#protect-repositories), [projects](#protect-projects), and [more](#other-security-considerations).
+
+[!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
 ## Protect shared infrastructure
 
@@ -94,7 +96,7 @@ By default, your pipelines are configured to build forks, but secrets and protec
 
 :::moniker-end
 
-:::moniker range="<= azure-devops-2020"
+:::moniker range="=azure-devops-2020"
 
 :::image type="content" source="media/fork-build-protection-2020.png" alt-text="Screenshot of fork build protection UI in Azure DevOps Server 2020 and lower.":::
 

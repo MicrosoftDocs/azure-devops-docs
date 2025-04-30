@@ -55,12 +55,6 @@
       items:
       - name: Office integration issues
         href: backlogs/office/tfs-office-integration-issues.md
-      - name: Resolve Excel data conflicts
-        displayName: conflicts, Excel, conflicting work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
-        href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md
-      - name: Resolve Excel data validation errors
-        displayName: error checking in Excel, error checking, invalid links
-        href: backlogs/office/resolve-excel-data-validation-errors.md
     - name: Project portal & process guidance (Deprecated)
       items:
       - name: Configure or add a project portal

@@ -5,7 +5,7 @@ ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
 ms.custom: freshness-fy22q2, devdivchpfy22, devx-track-extended-java
 ms.topic: quickstart
 ms.date: 02/08/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Build Java apps
@@ -23,24 +23,7 @@ If you're working on an Android project, see [Build, test, and deploy Android ap
 
 ## Prerequisites
 
-To run the following example, you must have:
-
-::: moniker range=">= azure-devops"
-
-* A GitHub account where you can create a repository. [Create one for free](https://github.com).
-* An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md).
-* An Azure DevOps project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now. 
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-* A GitHub account where you can create a repository. [Create one for free](https://github.com).
-* Access to an Azure DevOps Server collection.
-* The ability to run Azure Pipelines on Azure DevOps self-hosted agents. 
-* An Azure DevOps project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
-
-::: moniker-end
+[!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
 
 ## Create a GitHub repository
 
@@ -102,9 +85,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
   You can select **Job** to watch your pipeline in action.
 
-
 ::: moniker-end
-
 
 You now have a working YAML pipeline (`azure-pipelines.yml`) in your repo that's ready for you to customize! To make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
@@ -142,7 +123,6 @@ pool:
 ```
 
 ::: moniker-end
-
 
 ## Build your code
 
@@ -261,7 +241,6 @@ steps:
 ## Next steps
 
 You can publish your build output to your pipeline. You can package and publish your app in a Maven package or a _.war/jar_ file to be deployed to a web application.
-
 
 ::: moniker range=">=azure-devops-2020"
 

@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 07/21/2023
 ---
 
@@ -63,7 +63,6 @@ Queries that violate an OData error rule results in a failed response with a 400
 
 ## Restrictions 
 
-
 ### Do's
 
 - [✔️ DO limit the query to the project(s) you have access to](#restrict-query-project)
@@ -94,7 +93,6 @@ Queries that violate an OData error rule results in a failed response with a 400
 
 - [❌ AVOID aggregations that can result in arithmetic overflow](#restrict-avoid-aggregations)
 - [❌ AVOID creating long queries](#question-41401)
-
 
 <a id="restrict-query-project"> </a>
 
@@ -306,7 +304,6 @@ If you care about the full history for all the work items that match certain cri
 >   &$select=WorkItemId, Title
 > ```
 
-
 <a name="odata_query_distinct_columns_in_last_groupby"></a>
 
 ### ❌ [BLOCKED] DON'T group on distinct columns
@@ -439,7 +436,6 @@ An alternative approach is to use date surrogate key properties as they don't ke
 - [✔️ DO use server-driven paging](#perf-paging) 
 - [✔️ DO use `$top` query option to limit the number of records](#perf-top)
 
-
 ### Don't's
 
 - [❌ DON'T use `tolower` and `toupper` functions to do case-insensitive comparison](#perf-case-sensitive) 
@@ -453,7 +449,6 @@ An alternative approach is to use date surrogate key properties as they don't ke
 - [✔️ CONSIDER filtering on date surrogate key properties (`DateSK` suffix)](#perf-filter-date) 
 - [✔️ CONSIDER filtering on surrogate key columns](#perf-filter-surrogate)
 - [✔️ CONSIDER passing `vsts.analytics.maxsize` preference in the header](#perf-max-size)
-
 
 ### Avoid
 
@@ -584,7 +579,6 @@ For example, the following query returns a count of work items that were defined
 >     )
 > ```
 
-
 <a name="question-18172"></a>
 <a id="perf-tags"> </a>
 
@@ -637,7 +631,6 @@ For example, the following query gets all the work items that were tagged with a
 > [!IMPORTANT]
 > Property `TagNames` has a length limit of 1024 characters. It contains a set of tags that fit within that limit. If a work item has many tags or the tags are very long, then `TagNames` don't contain the full set and `Tag` navigation property should be used instead.
 
-
 <a id="perf-case-sensitive"> </a>
 
 ### ❌ DON'T use `tolower` and `toupper` functions to do case-insensitive comparison
@@ -688,13 +681,11 @@ The link to the next page is included in the `@odata.nextLink` property.
 
 With other REST APIs, you might have implemented client-driven paging with `$top` and `$skip` query options. Don't use them with Analytics. There are several problems with this approach and performance is one of them. Instead, adopt the server-driven paging strategy described in the previous section.
 
-
 <a id="perf-top"> </a>
 
 ### ✔️ DO use `$top` query option to limit the number of records
 
 Query option `$top` is only discouraged when used together with `$skip`. If in your reporting scenario you need only a subset of records (for example, sample), it's fine to use `$top` query option. Additionally, if you need to rank records according to some criteria, you should always use `$top` in combination with `$orderby` to get stable result with top ranked records.
-
 
 <a id="perf-small-number"> </a>
 
@@ -748,7 +739,6 @@ Work items are the most expensive entities in the whole data model. They have se
 
 For example, instead of expanding `Parent`, you can fetch more work items and use `ParentWorkItemId` property to reconstruct the full hierarchy client-side. Carry out such optimization on a case-by-case basis.
 
-
 <a id="perf-max-size"> </a>
 
 ### ✔️ CONSIDER passing `VSTS.Analytics.MaxSize` preference in the header
@@ -783,7 +773,6 @@ For information about setting the max page size, see [ODataPreferenceHeader.MaxP
 - [✔️ CONSIDER using parameter aliases to separate volatile parts of the query](#style-aliases)
 - [✔️ CONSIDER structuring your query to match the OData evaluation order](#style-match-order)
 - [✔️ CONSIDER reviewing OData capabilities described in the metadata annotations](#style-metadata)
-
 
 <a id="style-count"> </a>
 
@@ -870,7 +859,6 @@ Because mixing `$apply` and `filter` clauses in a single query can lead to poten
 6. `$skip`
 7. `$top`
 
-
 <a id="style-metadata"> </a>
 
 ### ✔️ CONSIDER reviewing OData capabilities described in the metadata annotations
@@ -908,8 +896,6 @@ Another useful annotation is `Org.OData.Capabilities.V1.ExpandRestrictions`, whi
 >   </Annotation>
 > </EntitySet>
 > ```
-
-
 
 ## Related articles
 

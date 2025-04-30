@@ -7,10 +7,9 @@ ms.service: azure-devops-boards
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 06/19/2023
 ---
-
 
 # About Azure Boards-GitHub integration 
 
@@ -23,7 +22,7 @@ Stay aligned and coordinated with Azure Boards and link your code activity and i
 :::moniker range="> azure-devops-2022"
 Azure Boards and Azure DevOps support integration with GitHub.com and GitHub Enterprise Server repositories.
 
-You can start from either Azure Boards or GitHub to integrate and connect up to 500 GitHub repositories to an Azure Boards project. 
+You can start from either Azure Boards or GitHub to integrate and connect up to 1,000 GitHub repositories to an Azure Boards project. 
 
 - [Install and configure the Azure Boards app for GitHub](install-github-app.md)
 - [Connect an Azure Boards project to one or more GitHub repositories](connect-to-github.md)

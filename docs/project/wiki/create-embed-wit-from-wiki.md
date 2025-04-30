@@ -19,6 +19,10 @@ ms.date: 01/05/2024
 
 Create and embed work items in your wiki page content. This feature gives you an easy way to promote text to a link to a feature, task, or user story.
 
+## Prerequisites
+
+[!INCLUDE [wiki-prerequisites](includes/wiki-prerequisites.md)]
+
 ## Create and embed work item 
 
 1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).

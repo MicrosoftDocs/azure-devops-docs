@@ -33,8 +33,7 @@ If you don't need Visual Studio, but want to connect to a project in Azure DevOp
 
 ## Prerequisites 
 
-- You must have a project in Azure DevOps. If you need to add a project, see [Create a project](../organizations/projects/create-project.md).
-- You must be a member of the project you connect to. To get added, see [Add users to a project or team](../organizations/security/add-users-team-project.md).
+[!INCLUDE [prerequisites-project-member-only](../includes/prerequisites-project-member-only.md)]
 
 ## Connect to a project or repository
 

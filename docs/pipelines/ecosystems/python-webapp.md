@@ -3,10 +3,9 @@ title: Build and deploy Python web apps with Azure Pipelines
 description: Use CI/CD with Azure Pipelines to automatically build, test, and deploy Python web apps to Azure App Service on Linux.
 ms.topic: how-to
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
-ms.author: v-catherbund
-author: cebundy
+ms.author: jukullam
 ms.date: 04/01/2024
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.custom: devx-track-python, freshness-fy22q2, arm2024, linux-related-content
 ---
 
@@ -27,22 +26,7 @@ In this article, you learn how to:
 
 ## Prerequisites
 
-::: moniker range=">=azure-devops"
-
-* An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-* A GitHub account. If you don't have one, [create one for free](https://github.com).
-* An Azure DevOps Services organization. [Create one for free](../get-started/pipelines-sign-up.md).
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-* An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-* A GitHub account. If you don't have one, [create one for free](https://github.com).
-* An Azure DevOps Server.
-* A self-hosted agent. If you need to create a self-hosted agent, see [Self-hosted agents](../agents/agents.md#self-hosted-agents). 
-
-::: moniker-end
+[!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
 
 ## Create a repository for your app code
 
@@ -350,7 +334,7 @@ If you already have the Python version you want to use on the machine hosting yo
 
 Create a pipeline to build and deploy your Python web app to Azure App Service. To understand pipeline concepts, watch:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMlMo]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=20e737aa-cadc-4603-9685-3816085087e9]  
 
 ::: moniker range=">=azure-devops"
 

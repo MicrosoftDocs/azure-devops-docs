@@ -20,7 +20,11 @@ The Team Foundation Version Control (TFVC) `difference` command compares, and if
 
 ## Prerequisites
 
-To use the `difference` command, you must have the **Read** permission for all specified items set to **Allow**.  For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission for all specified items set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

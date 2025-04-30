@@ -73,20 +73,6 @@ In this quickstart, you learn how to:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps server, and then go to your project.
-
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
-
-1. Select **Connect to Feed**, and then select **NuGet** from the left pane.
-
-1. Follow the instructions to add your package source URL to *nuget.config*.
-
-    :::image type="content" source="./media/connect-to-feed-nuget-server-2019.png" alt-text="Screenshot that shows onscreen instructions for setting up a NuGet project in Azure DevOps Server 2019.":::
-
-::: moniker-end
-
 ## Download packages
 
 [!INCLUDE [](includes/nuget/consume.md)]

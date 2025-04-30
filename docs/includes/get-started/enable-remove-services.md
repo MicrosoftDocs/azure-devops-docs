@@ -6,8 +6,7 @@ ms.topic: include
 ms.date: 02/25/2022
 ---
 
-
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 ## Remove unused services 
 

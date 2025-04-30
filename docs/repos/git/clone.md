@@ -29,7 +29,7 @@ This article provides procedures for the following tasks:
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
-## Prerequisites for access to Azure Repos
+## Prerequisites
 
 [!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
@@ -70,6 +70,9 @@ Typically, you need to know the clone URL of the remote repo that you want to cl
 1. On the **GitHub** repository page, choose **Code** to launch the **Clone** popup. Copy the clone URL from the **Clone** popup.
 
    :::image type="content" source="media/clone/visual-studio-2019/common/github-clone-repo.png" border="true" alt-text="Screenshot of the Clone popup on the  page on the GitHub site." lightbox="media/clone/visual-studio-2019/common/github-clone-repo-lrg.png":::
+
+> [!IMPORTANT]
+> The "Generate Git Credentials" button will be removed in January 2025, to reduce creation of unnecessary and underutilized personal access tokens. Review the Git Authentication docs for all authentication methods available to you for git clone operations.
 
 ## Clone an Azure Repos Git repo
 

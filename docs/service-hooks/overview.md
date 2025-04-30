@@ -35,21 +35,18 @@ when events occur.
 
 ::: moniker-end
 
-
 ## Available services
 
 The following services are available as the target of service hooks. For more information about other apps and services that integrate with Azure DevOps, go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#AzureDevOpsServices).
 
-
 ::: moniker range="= azure-devops"
-
 
 |Service  |Supported events  | Supported actions |
 |---------|---------|-------|
 |[App Center](/appcenter/dashboard/bugtracker/)   | Work item updated | Send notification. Subscriptions are managed through App Center. |
 |[AppVeyor](https://www.appveyor.com/docs/)     | Code pushed        |Trigger an AppVeyor build. Subscriptions are managed through AppVeyor. |
 |[Azuqua](https://go.microsoft.com/fwlink/?LinkID=521778)   | All | Post event to FLO. Subscriptions are managed through Azuqua. |
-|[Azure App Service](https://go.microsoft.com/fwlink/?LinkId=613645)  | Code pushed | Deploy web app. Subscriptions are managed through Azure App Service. |
+|[Azure App Service](https://azure.microsoft.com/products/app-service)  | Code pushed | Deploy web app. Subscriptions are managed through Azure App Service. |
 |[Azure Service Bus](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)    | All | Send a message to a Notification Hub, Service Bus Queue, or Service Bus Topic. Subscription is managed through Azure App Service.  |
 |[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)   |  All | Insert a message in a Storage Queue. |
 |[Bamboo](https://confluence.atlassian.com/bamboo/using-webhooks-1018270680.html)    | Build completed, Code pushed | Queue a build. |
@@ -93,7 +90,7 @@ The following services are available as the target of service hooks. For more in
 
 When you integrate one of these services with Azure DevOps, you must create a new subscription. In many cases, you need to do some configuration in the other service, too. For specific details, check out the information for the service that you're interested in.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1.	Open the admin page for a project in web access.
     
@@ -125,8 +122,6 @@ When you integrate one of these services with Azure DevOps, you must create a ne
     :::image type="content" source="./media/test2.png" alt-text="Screenshot showing test notification 2.":::  
  
 ::: moniker-end
-
-
 
 ## FAQs
 

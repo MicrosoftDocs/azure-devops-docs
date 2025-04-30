@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 09/19/2023
 ---
 
-
 # Send an email with work items
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -23,7 +22,6 @@ Using work items to track your work provides a host of benefits, including the a
 ## Supported tasks 
 
 Emailing lists of work items is a common way to share work tracking information. The following table indicates which tasks or features are supported from the web portal and Visual Studio.   
-
 
 > [!NOTE]   
 > The tasks/features listed in the following table aren't available when you're connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio under the following conditions:   
@@ -90,7 +88,7 @@ Emailing lists of work items is a common way to share work tracking information.
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       [Export query result as CSV](#export)
@@ -115,16 +113,9 @@ Emailing lists of work items is a common way to share work tracking information.
 
 ## Prerequisites
 
-[!INCLUDE [temp](../includes/prerequisites-work-items.md)]
-
-> [!NOTE]   
-> Make sure you provide members of your organization [Stakeholder access](../../organizations/security/access-levels.md) who want to contribute to the discussion and review progress. These are typically members who don't contribute to code, but want to view work items, backlogs, boards, and dashboards.  
-
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 <a id="email-print-send-links"></a>
-
-
-
 <a id="email-item"></a>
 
 ## Email a single item  
@@ -143,7 +134,6 @@ You can quickly email a summary of one or more work items. Summaries include the
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of work item form, context menu, Email work items option.](media/email/email-work-item.png)   
 
-
 #### [Visual Studio](#tab/visual-studio/)
 
 <a id="team-explorer-email"></a>
@@ -157,7 +147,6 @@ From Visual Studio or Team Explorer, choose ![Send work item to Microsoft Outloo
 
 * * *
 
-
 ::: moniker range="< azure-devops"  
 
 > [!NOTE]  
@@ -165,11 +154,9 @@ From Visual Studio or Team Explorer, choose ![Send work item to Microsoft Outloo
 
 ::: moniker-end  
 
-
 <a id="email-summary-lists"></a>
 <a id="team-services-email-list"></a> 
 <a id="email-list-web-portal" >  </a> 
-
 
 ## Email summary lists with links to items  
 
@@ -177,11 +164,9 @@ Another way to share items is by emailing summary lists, such as a sprint summar
 
 Depending on the option and client you choose, summary lists may or may not include a hyperlink to the work item ID.  
 
-
 #### [Web portal](#tab/browser/)
 
 **To email items from the web portal**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.   
-
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of backlog, context menu, Email... options.](media/email/bulk-email-backlog-items.png)   
@@ -202,9 +187,7 @@ If you want to mail a list of all items in the backlog or query, choose the  :::
 
 ![Screenshot of Email selected items from Visual Studio query result list.](../queries/media/share-plans-email-work-item-list.png)   
 
-
 * * *
-
 
 <a id="copy-formatted-list"></a>
 
@@ -233,7 +216,6 @@ Open a query in Visual Studio that contains a work item that you want to print, 
 
 ![Print work items from Team Explorer](../queries/media/share-plans-print-work-item-details.png)   
 
-
 <a id="print-cards"></a>
 
 ## Print work items as cards
@@ -256,7 +238,6 @@ Some teams want to work with physical cards when planning or updating their phys
 
 ![Screenshot for Copy hyperlink for a work item from web portal.](../backlogs/media/add-work-item-copy-URL.png)
 
-
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
@@ -268,10 +249,9 @@ Some teams want to work with physical cards when planning or updating their phys
 
 * * *
 
-
 <a id="export"></a> 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Export list as CSV 
 
@@ -279,27 +259,16 @@ From any query, you can export a list of work items as a comma-delimited list. O
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]   
-> Requires Azure DevOps Server 2019 Update 1 or later version. 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot that shows how to export a query as CSV.](media/email/export.png)   
 
 ::: moniker-end  
 
-
-
 ## Marketplace extensions  
 
 You may find other ways to share information by exporting work items to other applications such as Microsoft Word. For more information, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
-
-
 
 ## Related articles  
 

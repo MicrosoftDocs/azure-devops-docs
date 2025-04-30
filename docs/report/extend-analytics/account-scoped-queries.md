@@ -6,25 +6,26 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2019'
-ms.date: 12/13/2022
+monikerRange: "<=azure-devops"
+ms.date: 02/12/2025
 ---
 
 # Project and organization-scoped queries
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Using Analytics for Azure DevOps, you can construct queries that are scoped to a project or an organization or collection.  You can run these queries directly in your browser or within Power BI. 
+Using Analytics for Azure DevOps, you can construct queries that are scoped to a project or an organization or collection. You can run these queries directly in your browser or within Power BI. 
 
 Project-scope queries help answer questions about a single project whereas organization and collection scoped queries allow you to answer questions that cross project boundaries. Organization and collection scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn't blocked due to a lack of permissions.
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 > [!IMPORTANT]
-> If you don't have access to all projects in an organization, it is recommended that you apply a project filter to all of your queries. When pulling data into client tools such as Power BI or Excel, using the project path syntax is the best way to ensure that all your data is constrained by the given project. We recommend you use organization-scoped or collection-scoped queries only when you need to report on two or more projects.
-
+> If you don't have access to all projects in an organization, apply a project filter to all of your queries. When pulling data into client tools such as Power BI or Excel, use the project path syntax to ensure that all your data is constrained by the given project. Use organization-scoped or collection-scoped queries only when you need to report on two or more projects.
 
 <a id="project-scope"></a>
 
@@ -33,7 +34,6 @@ Project-scope queries help answer questions about a single project whereas organ
 You construct a query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers).  
 
 The base URL for a project-level OData query is as shown in the following syntax. 
-
 
 # [**Cloud** (Azure DevOps Services](#tab/cloud)
 
@@ -55,10 +55,8 @@ In the examples provided, make the following replacements:
 
 ***
 
-
 > [!NOTE]
-> The remaining examples provided in this article are based on an Azure DevOps Services URL. You will need to substitute in your Azure DevOps Server URL to exercise the examples.  
-
+> The remaining examples in this article are based on an Azure DevOps Services URL. Substitute your Azure DevOps Server URL to use the examples.
 
 <a id="work-item-count"></a>
 
@@ -70,7 +68,7 @@ For example, the following project-scoped query returns the count of work items 
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v1.0/WorkItems/$count
 ```
 
-For example, a query of the Fabrikam Fiber project returns a count of 7126 work items. Deleted work items aren't included in the count.   
+For example, a query of the Fabrikam Fiber project returns a count of 7,126 work items. Deleted work items aren't included in the count.   
 ```OData
 https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v1.0/WorkItems/$count
 
@@ -80,7 +78,7 @@ https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v1.0/WorkItems/$c
 
 ### Return project Area Paths
 
-Likewise, the following query string will return the areas for a specific project:
+Likewise, the following query string returns the areas for a specific project:
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v1.0/Areas
@@ -92,7 +90,6 @@ It's equivalent to the following filter on an organization-scoped query:
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
   $filter=Project/ProjectName eq '{ProjectName}'
 ```
-
 
 For example, a query of the Fabrikam Fiber project returns all properties defined for an Area Path as no `$select` operator is applied in the query. 
 ```OData
@@ -138,7 +135,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v1.0/Wor
   $expand=Parent
 ```
 
-is filtered automatically to enforce security:
+Is filtered automatically to enforce security:
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
@@ -204,7 +201,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   &$expand=Parent($filter=Project/ProjectName eq '{ProjectName}')
 ```
 
-Without the other filter, the request will fail if the parent of any work item references work items in a project that you don't have read access to.
+Without the additional filter, the request fails if the parent of any work item references work items in a project to which you don't have **Read** access.
 
 <a id="project-level-security"></a>
 
@@ -212,7 +209,7 @@ Without the other filter, the request will fail if the parent of any work item r
 
 Analytics has a few more restrictions on query syntax related to project level security.
 
-The `any` or `all` filters apply to the base entity on an `$expand`.  For filters based on a project, we explicitly ignore the filter when using an `$expand`:
+The `any` or `all` filters apply to the base entity on an `$expand`. For filters based on a project, we explicitly ignore the filter when using an `$expand`:
 
 For example, the following query:
 
@@ -230,7 +227,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   &$expand=Children
 ```
 
-and will fail if you don't have access to all projects.
+And fails if you don't have access to all projects.
 
 To work around the restriction, you need to add an extra expression in the `$filter`:
 

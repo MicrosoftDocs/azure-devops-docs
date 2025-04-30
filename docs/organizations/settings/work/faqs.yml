@@ -31,7 +31,6 @@ sections:
         answer: | 
           There are a number of limits Azure DevOps imposes such as the number of Area Paths and Iteration Paths you can define for a project, the number of processes you can define, and more. For a full list, see [Work tracking, process, and project limits](object-limits.md). 
 
-
   - name: Configuration
     questions: 
 
@@ -62,17 +61,15 @@ sections:
           - [Default and selected Iteration Paths](../set-iteration-paths-sprints.md#list-team-iterations)
           - [Define work item templates](../../../boards/backlogs/work-item-template.md) 
 
-
   - name: Customization
      
     questions: 
 
-
       - question: Who has permissions to customize Azure Boards?  
         answer: | 
 
-          ::: moniker range=">= azure-devops-2019"
-          In general, you need to be a member of the Project Collection Administrators group to customize an Inherited process. Or, you must have the following explicit collection-level permissions set to **Allow**:  
+          ::: moniker range="<=azure-devops"
+          In general, you need to be a member of the Project Collection Administrators group to customize an Inherited process. Or, have the following explicit collection-level permissions set to **Allow**:  
           - [Create process](manage-process.md)  
           - [Delete field from organization](customize-process-field.md)  
           - [Delete process](manage-process.md)  
@@ -81,16 +78,15 @@ sections:
           To grant a project member permissions, see [Change project-level permissions](../../security/change-project-level-permissions.md).  
           ::: moniker-end
           ::: moniker range="< azure-devops"
-          To modify an On-premises XML process, you need to be a member of the **Project Collection Administrators** group to manage process templates or the **Project Administrators** group to exercise a [**witadmin** command](../../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). Or, you must have the following explicit collection-level permissions set to **Allow**: 
+          To modify an On-premises XML process, you need to be a member of the **Project Collection Administrators** group to manage process templates or the **Project Administrators** group to exercise a [**witadmin** command](../../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). Or, have the following explicit collection-level permissions set to **Allow**: 
           - [Delete field](../../../reference/add-modify-field.md)
           - [Manage process template](../../../boards/work-items/guidance/manage-process-templates.md)
           To grant a project member permissions, see [Change project collection-level permissions](../../security/change-organization-collection-level-permissions.md).  
           ::: moniker-end  
 
-
       - question: Is there a way to determine who changed what within a process?  
         answer: | 
-          ::: moniker range=">= azure-devops-2019"
+          ::: moniker range="<=azure-devops"
           Auditing of process changes is available for Azure DevOps Services (cloud) only. For more information, see [Access, export, and filter audit logs](../../audit/azure-devops-auditing.md).
           ::: moniker-end
           A best practice is to maintain process templates under source control. In that way, changes made to a process is available through standard source control versioning.  
@@ -119,7 +115,6 @@ sections:
         answer: | 
 
           **Yes**. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Rules and rule evaluation](rule-reference.md).    
-
 
       - question: Can I upload my own custom work item type icons for an Inherited process?  
         answer: | 

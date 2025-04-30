@@ -10,7 +10,6 @@ monikerRange: '<= azure-devops'
 ms.date: 09/09/2024
 ---
 
-
 # Autocomplete work items with pull requests 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -19,12 +18,17 @@ ms.date: 09/09/2024
 When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR. Or, you can specify the workflow state to transition the work item to upon merging the PR. 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2020"
-When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR.  
-::: moniker-end 
+ 
 
 For more information, see [Create, view, and manage pull requests](../../repos/git/pull-requests.md).
 
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including those in the **Readers** group, can send emails containing work items. |
+|**GitHub permissions**| **Contributor** to the GitHub repository.|
 
 ## Autocomplete work items  
 
@@ -33,9 +37,7 @@ As shown in the following image, check the box to **Complete linked work items a
 ::: moniker range=">= azure-devops-2020"
 :::image type="content" source="media/automate-state-transition/complete-pull-request-dialog.png" alt-text="Complete pull request dialog, Complete linked work items after merging":::
 ::: moniker-end 
-::: moniker range="< azure-devops-2020"
-![Complete pull request dialog, Autocomplete work items with completion of PR option](media/workflow-states-complete-pr.png)
-::: moniker-end 
+ 
 
 In the following circumstances, the system doesn't automatically update the work item state to **Done**, **Closed**, or **Completed** categories for the work item type (WIT): 
 - The work item, whose WIT is managed with the Inheritance process model, is already in the **Resolved** state. In this instance, the system doesn't update the State. For example, if a bug derived from the Agile process is in a **Resolved** state, the system doesn't transition it to **Closed**.   

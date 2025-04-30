@@ -6,10 +6,9 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/07/2022
 ---
-
 
 # Metadata reference for Azure Boards Analytics 
 
@@ -20,7 +19,6 @@ The Analytics service collects all work tracking activity defined and updated th
 This article describes the majority of properties that you can use to generate an Analytics report for work tracking. You use a combination of properties to filter a query, aggregate data, or build a report. You can run these queries directly in your browser. For more information, see [Define basic queries using OData Analytics](../extend-analytics/wit-analytics.md). If you're new to work tracking and Azure Boards, we recommend you review the following articles: 
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 - [Track user stories, issues, bugs, and other work items in Azure Boards](../../boards/work-items/about-work-items.md)   
-
 
 [!INCLUDE [note-analytics-early-draft](../includes/note-analytics-data-model.md)]
 
@@ -60,7 +58,6 @@ There are two work tracking snapshot entity sets: `WorkItemSnapshot` and `WorkIt
 A snapshot provides a record of the values defined for a work item each day. The record is written to Analytics once a day at the same time each day. You use snapshots when you want to generate a trend report.  By default, all the snapshot tables are modeled as daily snapshot fact tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots.
 
 For more information, see [OData query guidelines, Do use weekly or monthly snapshots for trend queries that span a long time period](../extend-analytics/odata-query-guidelines.md#-do-use-weekly-or-monthly-snapshots-for-trend-queries-that-span-a-long-time-period). 
-
 
 ### About work item revisions
 
@@ -213,7 +210,6 @@ Navigation properties in OData are the reference attributes of an entity that po
 | **Descendants** |            |   `WorkItem`  |  
 | **WorkItem**    | `WorkItemId`     |  `WorkItemRevision`   |  
 
-
 ### Predict functions
 
 The following two functions are supported for the **WorkItem** entity. These functions are used in supporting predictive trends on select Analytics built-in reports and widgets.  
@@ -222,7 +218,6 @@ The following two functions are supported for the **WorkItem** entity. These fun
  
 
 <a id="kanban-board-properties-fields"></a> 
-
 
 ## BoardLocation and WorkItemBoardSnapshot    
 
@@ -262,7 +257,6 @@ The following table lists the member names for the `BoardColumnSplit` enumerated
 |`Doing`                | 0            | Doing                 |        
 |`Done`                 | 1            | Done                  |       
 |`Unknown`              | 2            | Unknown (not split)   |   
-
 
 For more information about board columns for a team, see the following articles:  
 - [Add columns to your board to manage your workflow](../../boards/boards/add-columns.md)
@@ -350,7 +344,6 @@ Data for custom work item types are automatically added to the Analytics service
 
 A custom category is created when a custom work item type and backlog level are defined. `Custom_` is prepended to the category GUID. For example, for the **Portfolio** custom work item type with a Portfolios backlog, a GUID is assigned to the custom category, such as `Custom.49b81c4e-9c4f-4c04-94fd-d660cbf3a000`. 
 
-
 ## Tags
 
 The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`. For more information about using tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
@@ -362,7 +355,6 @@ You can use these properties to filter or report on work tracking data.
 |**Tag Id** | `TagId` | GUID | The unique ID assigned to the tag when it's created.    |  
 |**Tag Name** | `TagName` | String | The tag name.  |   
 
-
 ## Teams
 
 The following properties are valid for the **Team** entity type and **Teams** entity set.  Surrogate keys associated with **Team** include `TeamSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on team assignments. For information on using and adding teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [Create or add a team](../../organizations/settings/add-teams.md).
@@ -372,7 +364,6 @@ The following properties are valid for the **Team** entity type and **Teams** en
 |    | `AnalyticsUpdatedDate` | DateTime | Watermark that indicates the last time the Analytics data was updated. |   
 |**Team Id** | `TeamId` | GUID | The unique ID assigned to the team when it's created.    |  
 |**Team Name** | `TeamName` | String | The team name.  |   
-
 
 Navigation properties for the **Teams** entity set include `Projects`, `Areas`, and `Iterations`.
 
@@ -396,7 +387,6 @@ Query **WorkItemLinks** to report on parent/child, related, predecessor/successo
 |**Source Work Item Id** | `SourceWorkItemId` | Int32 | The ID assigned to the source work item linked to.    | 
 |**Target Work Item Id** | `TargetWorkItemId` | Int32 | The ID assigned to the target work item linked to.    |    
 
-
 Navigation properties for the **WorkItemLink** entity type include `Projects`, `SourceWorkItem`, and `TargetWorkItem`.
 
 For more information about links and link types, see the following articles:  
@@ -415,7 +405,6 @@ The following properties are valid for the **WorkItemTypeFields** entity set. Th
 |**Field Reference Name** | `FieldReferenceName` | String | Reference name assigned to a field by the system or when a custom field is created.    | 
 |**Field Type** | `FieldType` | String | Data type assigned to a field.  | 
 |**Work Item Type** | `WorkItemType` | String | Name of work item types that a field is defined for.    | 
-
 
 Navigation properties include `Project`.
 

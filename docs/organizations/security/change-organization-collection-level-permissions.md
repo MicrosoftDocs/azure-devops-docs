@@ -46,13 +46,14 @@ You might find the following articles helpful:
 
 ## Prerequisites
 
-**Security groups:**
-- You must be a member of the **Project Collection Administrators** security group to manage permissions or groups at the organization or collection level. If you created the organization or collection, you're automatically a member of this group. To be added to this group, request permissions from a [member of the **Project Collection Administrators** group](look-up-project-collection-administrators.md).
-- Ensure security groups in Microsoft Entra ID or Active Directory are defined before adding them. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
+|Category  | Requirements |
+|-------------|-------------|
+| **Permissions** | Member of the [**Project Collection Administrators** group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. |
+| **Directory services** | [Security groups defined in Microsoft Entra ID or Active Directory](add-ad-aad-built-in-security-groups.md) before adding them to Azure DevOps. |
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
->- Users in the **Project-Scoped Users** group can't access most **Organization settings** pages, including **Permissions**. For more information, see [Manage your organization, limit user visibility for projects, and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+>- Users in the **Project-scoped Users** group can't access most organization settings, including permissions. For more information, see [Manage your organization, limit user visibility for projects, and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
 >- Users with **Stakeholder** access can't access specific features even if they have permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
 ::: moniker-end  

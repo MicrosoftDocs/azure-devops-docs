@@ -89,7 +89,6 @@ The following table summarizes the settings you can enable and configure for all
 
 The following table summarizes the settings you can enable or configure for each individual Git repository. 
 
-
 :::row:::
    :::column span="2":::
       **Setting**
@@ -205,7 +204,7 @@ The following table summarizes the settings you can enable or configure for each
 :::row-end:::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### Repository policies or options
 
@@ -213,7 +212,7 @@ The following table summarizes the policies or options you can set for either al
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       **Policy** or **Option**
@@ -251,7 +250,7 @@ The following table summarizes the policies or options you can set for either al
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       [Case enforcement](#case-enforcement)
@@ -365,7 +364,7 @@ The following table summarizes the policies you can define to customize a branch
       Control branch history by limiting the available types of merge when pull requests are completed.
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       [Build Validation](branch-policies.md#build-validation)
@@ -402,20 +401,9 @@ The following table summarizes the policies you can define to customize a branch
 :::row-end:::
 ::: moniker-end
 
-## Prerequisites 
+## Prerequisites
 
-
-::: moniker range=">= azure-devops-2020"
-- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
-::: moniker-end
-::: moniker range="azure-devops"
-- If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
-::: moniker-end
- 
-::: moniker range="< azure-devops-2020"
-- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
-::: moniker-end
-
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 <a name="view-and-edit-repository-settings"></a>
 
@@ -428,7 +416,7 @@ You can configure *settings* for all repositories across an organization or proj
 
 #### [Browser](#tab/browser)
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 To configure repository settings and policies through the web portal, open **Project settings**> **Repositories** from your web browser.
 
@@ -450,28 +438,6 @@ To configure repository settings and policies through the web portal, open **Pro
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. From your web browser, open the project and choose **Project settings**, **Repositories**, and select your repository.
-
-   ![Screenshot of the 'Project Settings' for your repository.](media/repository-settings/project-repository-settings.png)
-
-2. To view and configure repository settings, select **Options** or **Policies**.
-
-   The following screenshot shows **Options** for all repositories:
-
-   ![Screenshot of the Options for all repositories.](media/repository-settings/options-all-repos.png)
-
-   The following screenshot shows **Options** for the Fabrikam repositories:
-
-   ![Screenshot of Options for the Fabrikam repository.](media/repository-settings/options-fabrikam.png)
-
-::: moniker-end
-
-
-
-
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range="azure-devops" 
@@ -480,7 +446,6 @@ You can use Azure DevOps CLI to list repositories or show or update a repository
 
 [List repositories](#repos-list) &#124; [List repository details](#repos-show) &#124; [Update or rename a repository](#repos-update)  
 [List repository policies](#repos-policy-list) &#124; [List policy details](#show-policy) &#124; [Update repository policy](#update-policy)
-
 
 You can use Azure CLI to list, show, and update policies for a branch or repository, or for all repositories in a project.
 
@@ -506,11 +471,9 @@ az repos list [--detect {false, true}]
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
-
 **Example**
 
 The following command returns all Git repositories for the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
-
 
 ```azurecli
 az repos list --output table
@@ -521,7 +484,6 @@ ac228555-ea89-4881-9ace-dfa065baf7d3  Test 1-2-3      main              Fabrikam
 0d58f562-4a10-495d-94d7-7ac61a22d7cc  Testing 1 2 3   main              Fabrikam Fiber
 30954ce5-417b-4930-b8d2-8b6cac934a34  contosoREPO     main              Fabrikam Fiber
 ```
-
 
 <a name="repos-show"></a>
 
@@ -548,7 +510,6 @@ az repos show --repository
 |`org`, `organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
-
 
 **Example**
 
@@ -688,7 +649,6 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 <a id="update-policy"></a>
 
-
 ### Update policies
 
 You can use Azure CLI [az repos policy update](/cli/azure/repos/policy#az-repos-policy-update) with a policy configuration file to update policies. A policy configuration file can apply a policy across more than one scope at a time. For more information, see [Configure Git repository policies by using a configuration file](../../cli/policy-configuration-file.md). For examples of policy configuration files, see [Configurations - Create](/rest/api/azure/devops/policy/configurations/create#examples).
@@ -748,15 +708,11 @@ ID    Name                         Is Blocking    Is Enabled    Branch
 7     Minimum number of reviewers  False          True          refs/heads/main
 ```
 
-
 ::: moniker-end
-
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-
 ***
-
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -836,18 +792,9 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 1. On the **Settings** tab of the **All Repositories** page, set **Gravatar images** to **On** or **Off**.
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-**Gravatar images** is a project-level setting for **All Repositories**.
-
-1. On your Azure DevOps project page, select **Project settings** at lower left, and then select **Repositories** in the left navigation.
-1. On the **Settings** tab of the **All Repositories** page, set **Gravatar images** to **On** or **Off**.
-::: moniker-end
-
-
-
 <!--- REPOSITORY SETTINGS  --> 
  
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops"
 <a id="forks"></a>
 <a id="forks-setting"></a>
 
@@ -883,12 +830,6 @@ When enabled, commit messages containing `#` followed by a valid work item ID au
 
 Enable this setting to automatically complete work items when linked pull requests complete. This setting also allows specifying other work item transition states in pull request commit messages. For more information, see [Auto-complete work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
 
-::: moniker-end
-::: moniker range="=azure-devops-2019"
-
-### Commit mention work item resolution
-
-Enable this setting to automatically complete those work items when you successfully complete the PR. For more information, see [Auto-complete work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
 ::: moniker-end
 
 ### Work item transition preferences
@@ -988,7 +929,6 @@ You can set a policy that prevents commits to a repository from file paths that 
    You can specify exact paths and wildcards. Exact paths begin with `/`. You can also specify multiple paths by using `;` as a separator. Paths prefixed with `!` are excluded. Order is important.
 
 :::image type="content" source="media/repository-settings/add-policy-to-block-files-patterns.png" alt-text="Screenshot that shows the File path validation policy setting.":::
-
 
 <a id="case-enforcement"></a>
 
@@ -1138,7 +1078,6 @@ To set the maximum path length policy:
 1. If you turned on the setting, enter a maximum path length.
 
 :::image type="content" source="media/repository-settings/maximum-path-length.png" alt-text="Screenshot that shows the Maximum path length policy setting.":::
-
 
 <a id="maximum-file-size"></a>
 
