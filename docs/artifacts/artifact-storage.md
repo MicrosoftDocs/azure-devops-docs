@@ -61,6 +61,10 @@ The project-level view provides an overview of your total storage usage as well 
 > [!NOTE]
 > Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, we recommend [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing) to ensure you have the appropriate resources.
 
+## Increase Artifacts storage limit 
+
+[!INCLUDE [](includes/increase-storage-limit.md)]
+
 ## Related articles
 
 - [Get started with NuGet packages in Azure Artifacts](get-started-nuget.md)

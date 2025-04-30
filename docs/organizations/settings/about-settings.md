@@ -779,7 +779,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Artifacts storage consumption](../../artifacts/artifact-storage.md)
    :::column-end:::
    :::column span="2":::
-     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Start using Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-azure-artifacts-storage-limit).
+     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Start using Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-artifacts-storage-limit).
    :::column-end:::
 :::row-end:::
 ---
