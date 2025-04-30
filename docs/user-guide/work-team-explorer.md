@@ -101,15 +101,15 @@ Project users can access specific content in the **Work Items** and **Builds** s
 
 - **Builds**: Project members can work with builds for your project based on their access-level permissions. For more information, see the following resources:
 
-   - [Create build pipelines](../pipelines/tasks/reference/index.md#build-tasks)
+   - [Create build pipelines](/azure/devops/pipelines/tasks/reference/index#build-tasks)
    - [View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md)
    - [Manage the build queue](../pipelines/agents/pools-queues.md#manage-pools-and-queues)
 
-- **Work Items**: Project members can track features, requirements, known issues or bugs, and more by using work items. In Visual Studio 2019 and later, you can switch between the **Default** and **Legacy** views of the Team Explorer **Work Items** page. The default view aligns with the web portal **Boards** > **Work Items** page. The legacy view retains the familiar layout from earlier versions of Visual Studio. For more information, see the following resources:
+- **Work Items**: Project members can track features, requirements, known issues or bugs, and more by using work items. In Visual Studio 2019 and later, you can switch between the **Default** and **Legacy** views of the Team Explorer Work Items page. The default view aligns with the web portal **Boards** > **Work Items** page. The legacy view retains the familiar layout from earlier versions of Visual Studio. For more information, see the following resources:
 
    ::: moniker range="azure-devops-2022"
 
-   **Visual Studio 2019 and later (Default)**:
+   For Visual Studio 2019 and later (Default), see the following resources:
    
    - [View and add work items](../boards/work-items/view-add-work-items.md)
    - [Set the Work Items experience in Visual Studio](../boards/work-items/set-work-item-experience-vs.md).
@@ -117,7 +117,7 @@ Project users can access specific content in the **Work Items** and **Builds** s
    ::: moniker-end
    ::: moniker range=">= azure-devops-2020"
 
-   **All Visual Studio versions (Legacy)**: 
+   For all Visual Studio versions (Legacy), the following resources are available:
    
    - [Add and manage work items](../boards/backlogs/manage-work-items.md)
    - [Define a work item query](../boards/queries/using-queries.md)
@@ -135,7 +135,7 @@ Project users can access specific content in the **Work Items** and **Builds** s
 
 In Visual Studio 2022, the Git features are located on separate panes from Team Explorer. You can open the **Git Changes** and **Git Repository** panes from Team Explorer:
 
-:::image type="content" source="media/vs-2022-te/git-changes-repository.png" border="false" alt-text="Screenshot of Visual Studio 2022 showing the Team explorer pane, the Git Changes pane, and the Git Repository pane." lightbox="media/vs-2022-te/git-changes-repository.png":::
+:::image type="content" source="media/vs-2022-te/git-changes-no-open-repository.png" border="false" alt-text="Screenshot of Visual Studio 2022 showing the Team explorer pane, the Git Changes pane, and the Git Repository pane." lightbox="media/vs-2022-te/git-changes-no-open-repository.png":::
 
 You can also open the panes from the **View** menu or by using the keyboard shortcuts: **Git Changes** (**Ctrl**+**O**, **Ctrl**+**G**) and **Git Repository** (**Ctrl**+**O**, **Ctrl**+**R**).
 
@@ -153,13 +153,9 @@ In Visual Studio 2019 and earlier, the Git features are available on the Team Ex
 Visual Studio supports the following Git actions for use with Team Explorer:
 
 - **Git Changes**: [Save work with commits](../repos/git/commits.md)
-
 - **Git Branches**: [Create work in branches](../repos/git/create-branch.md)
-
 - **Pull Requests**: [Review code with pull requests](../repos/git/pull-requests.md)
-
 - **Sync**: [Update code with fetch and pull](../repos/git/pulling.md)
-
 - **Tags**: [Work with Git tags](../repos/git/git-tags.md)
 
 To learn more about working with Git for version control, see the following articles:
@@ -177,9 +173,7 @@ If you prefer to use TFVC for centralized control of your project, you can acces
 Visual Studio supports the following features when you connect to a TFVC repository:
 
 - **My Work**: [Configure your workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace), [Suspend, or resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md), [Conduct a code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)  
-
 - **Pending Changes**: [Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md), [Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md), [Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md) 
-
 - **Source Control Explorer**: [Add/View files and folders](../repos/tfvc/add-files-server.md), [Add check-in policies](../repos/tfvc/add-check-policies.md), 
 
 To learn more about working with TFVC for version control, see the following articles:
