@@ -202,8 +202,8 @@ steps:
     azurePowerShellVersion: LatestVersion
 
 - task: PowerShell@2
-  inputs:
   displayName: 'Install SqlServer module if not present'
+  inputs:
     targetType: 'inline'
     script: |
       if (-not (Get-Module -ListAvailable -Name SqlServer)) {
