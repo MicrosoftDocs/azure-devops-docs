@@ -86,25 +86,23 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ## Create a daily trend report 
 
-1. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**.   
+1. In your report, under **Visualizations**, select the Line chart visual. Under **Data**, enter **work item id** in the search field, and then select **Work Item Id**.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Select work item field](media/create-report/select-line-chart-work-id.png)  
+   :::image type="content" source="media/create-report/select-line-chart-work-id.png" alt-text="Screenshot of a blank report in Power BI Desktop. The Line chart icon, the search field, and Work Item ID are highlighted." lightbox="media/create-report/select-line-chart-work-id.png":::
 
-	It will change your chart to a single dot.  
+   Your data appears in the line chart as a single dot.  
 
-	> [!TIP]    
-	> To change the chart size, choose the **View** tab, **Page View**, and then select the **Adjust Size** option as shown. You can then resize the chart to your desired dimensions.  
-	> 
-	> ![Adjust chart size](media/active-bugs-report/adjust-view-size.png)  
+   > [!TIP]    
+   > To change the chart size, go to the **View** tab, select **Page view**, and then select **Actual size**. You can then resize the chart to your desired dimensions.  
+   > 
+   > :::image type="content" source="media/active-bugs-report/adjust-view-size.png" alt-text="Screenshot of a Power BI Desktop report with a line chart. The View menu, Page view, and Actual size on the Page view menu are highlighted." lightbox="media/active-bugs-report/adjust-view-size.png":::
 	
-1. Next, (1) select the **Date** field in the fields list as your axis. By default, Power BI creates a date hierarchy from any date field. To see a daily trend, (2) select the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
+1. Under **Data**, select the **Date** field as your axis. By default, Power BI creates a date hierarchy from any date field. To see a daily trend, go to the **Visualizations** pane. Under **X-axis**, expand the shortcut menu of the **Date** field, and then select **Date**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Select Date, and change date hierarchy to date](media/create-report/select-date.png)
+   :::image type="content" source="media/create-report/select-date.png" alt-text="Screenshot of a line chart. The Date data and field are highlighted. In the Date field shortcut menu, Date is selected and highlighted." lightbox="media/create-report/select-date.png":::
 
-    > [!NOTE]
-    > To view trends over time, you want to use the **Date** format and not **Date Hierarchy**. The **Date Hierarchy** in Power BI rolls ups everything into a simple number for the period. The day level in the hierarchy rolls all days to a number between 1-31. For example, April 3 and May 3 both roll up into number 3. This is not the same as counting items per actual date.
+   > [!NOTE]
+   > To view trends over time, use the **Date** format and not **Date Hierarchy**. The **Date Hierarchy** in Power BI rolls ups everything into one number for the period. The day level in the hierarchy rolls all days to a number between 1 and 31. For example, April 3 and May 3 both roll up into number 3. The result isn't the same as counting items per actual date.
 
 ## Group and filter the trend by State
 
