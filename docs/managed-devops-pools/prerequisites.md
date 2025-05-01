@@ -238,13 +238,13 @@ To check your agent pools permissions at the organization level:
 
    :::image type="content" source="./media/prerequisites/organization-agent-pools.png" alt-text="Screenshot of Organization level agent pools list.":::
 
-   You can also go directly to organization level agents pools by going to `https://dev.azure.com/{organization name}/_settings/agentpools`, and choose **Security**.
+   You can also go directly to organization level agent pools security settings by going to `https://dev.azure.com/{organization name}/_settings/agentpools`, and choosing **Security**.
 
 1. View the list of user permissions for the organization level agent pools scope. In this example no specific users have been added, so only Project collection administrators have permission to create pools or assign users to this role.
 
    :::image type="content" source="./media/prerequisites/organization-agent-pools-security.png" alt-text="Screenshot of Organization level agent pools security page.":::
 
-1. If you need to create a Managed DevOps Pools in this organization, ask a Project collection administrator, or an administrator listed here to choose **Add**, add you as an administrator, and choose **Save**. For more information, see [Set agent pool security in Azure Pipelines](../pipelines/policies/permissions.md#set-agent-pool-security-in-azure-pipelines).
+1. If you need to create a Managed DevOps Pools in this organization, ask a Project collection administrator, or an administrator listed here, to choose **Add**, add you as an administrator, and choose **Save**. For more information, see [Set agent pool security in Azure Pipelines](../pipelines/policies/permissions.md#set-agent-pool-security-in-azure-pipelines).
 
    > [!TIP]
    > If the **Add** button is disabled for you, you don't have permission to create Managed DevOps Pools in this organization.
@@ -265,9 +265,9 @@ To check your agent pools permissions at the project level:
 
    :::image type="content" source="./media/prerequisites/project-agent-pools.png" alt-text="Screenshot of Project level agent pools list.":::
 
-   You can also go directly to project level agents pools by going to `https://dev.azure.com/{organization name}/{project name}/_settings/agentqueues`, and choose **Security**.
+   You can also go directly to project level agent pools security settings by going to `https://dev.azure.com/{organization name}/{project name}/_settings/agentqueues`, and choosing **Security**.
 
-1. View the list of user permissions for the project level agent pools scope. In this example no specific users have been added, so only the default groups (and Project collection administrators) have permission to create pools at the project level, or assign users to this role.
+1. View the list of user permissions for the project level agent pools scope. In this example no specific users have been added, so only the default project level groups (and Project collection administrators) have permission to create pools at the project level, or assign users to this role.
 
    :::image type="content" source="./media/prerequisites/project-agent-pools-security.png" alt-text="Screenshot of Project level agent pools security page.":::
 
