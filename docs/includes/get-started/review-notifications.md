@@ -15,4 +15,4 @@ Several notifications are predefined for each project you add. Notifications are
 
 If users report receiving too many notifications, you can direct them to [opt out of a subscription](../../organizations/notifications/manage-your-personal-notifications.md).
 
-:::image type="content" source="../../user-guide/media/services/personal-notifications.png" border="false" alt-text="Screenshot that shows how users can opt out of various types of notifications.":::
+:::image type="content" source="../../user-guide/media/services/personal-notifications.png" alt-text="Screenshot that shows how users can opt out of various types of notifications.":::
