@@ -10,7 +10,7 @@ ms.date: 05/05/2025
 
 As your organization grows, it's a good practice to add teams to scale your project. Each team gets [access to their own set of customizable Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
-:::image type="content" source="../../organizations/settings/media/agile-tools/agile-tools-team-assets-post-2018.png" border="false" alt-text="Diagram of Agile tools and team assets organized to support planning - tracking, monitoring - learning, and collaboration.":::
+:::image type="content" source="../../organizations/settings/media/agile-tools/agile-tools-team-assets-post-2018.png" border="false" alt-text="Diagram of Agile tools and team assets organized to support planning - tracking, monitoring - learning, and collaboration." lightbox="../../organizations/settings/media/agile-tools/agile-tools-team-assets-post-2018.png":::
 
 For more information, see the following articles:
 
