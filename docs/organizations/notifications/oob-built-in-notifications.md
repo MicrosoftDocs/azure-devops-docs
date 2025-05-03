@@ -53,7 +53,7 @@ The following OOB event types are supported by default for the **Code (TFVC)** c
 
 |Event type |Trigger |Description |
 |-----------|--------|------------| 
-| **Code review** | Changes to code review that you're workin | Notifies you when a change is made to a code review you're assigned to. |
+| **Code review** | Changes to code review that you're working on | Notifies you when a change is made to a code review you're assigned to. |
 
 ### Extension management events
 
