@@ -18,7 +18,7 @@ Configure the `WorkFolder` demand in the `demands` section of your pipeline to s
 
 The default work folder for Windows agents is typically on the **D:\\** drive and can be referenced in your pipeline by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables).
 
-In the following example, `WorkFolder` is set to an [attached data disk](./configure-storage.md#use-the-data-disk-for-your-agent-working-directory?tabs=windows) that is assigned the letter `F`.
+In the following example, `WorkFolder` is set to an [attached data disk](./configure-storage.md?tabs=windows#use-the-data-disk-for-your-agent-working-directory) that is assigned the letter `F`.
 
 ```yml
 pool: 
@@ -31,7 +31,7 @@ pool:
 
 The default work folder for agents is typically **/mnt** for Linux, and can be referenced in your pipeline by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables).
 
-In the following example, `WorkFolder` is set to an [attached data disk](./configure-storage.md#use-the-data-disk-for-your-agent-working-directory?tabs=linux).
+In the following example, `WorkFolder` is set to an [attached data disk](./configure-storage.md?tabs=linux#use-the-data-disk-for-your-agent-working-directory).
 
 ```yml
 pool: 
