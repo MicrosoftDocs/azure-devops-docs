@@ -1,7 +1,7 @@
 ---
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.date: 04/29/2025
+ms.date: 05/05/2025
 ---
 
 # Demands
@@ -14,13 +14,30 @@ The default work folder for agents is typically on the **D:\\** drive for Window
 
 Configure the `WorkFolder` demand in the `demands` section of your pipeline to set your agent work folder. If you're using an [attached data disk](configure-storage.md) and want your agent work folder on that disk, use `WorkFolder` and [specify a folder on the data disk as your agent working directory](configure-storage.md#use-the-data-disk-for-your-agent-working-directory).
 
+#### [Windows](#tab/windows/)
+
+The default work folder for Windows agents is typically on the **D:\\** drive and can be referenced in your pipeline by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables).
+
+In the following example, `WorkFolder` is set to an [attached data disk](./configure-storage.md#use-the-data-disk-for-your-agent-working-directory?tabs=windows) that is assigned the letter `F`.
+
 ```yml
 pool: 
   name: fabrikam-managed-pool # Name of Managed DevOps Pool
   demands:
-  - WorkFolder -equals c:\custom-work-folder # Windows agent example
-  # Use a folder like /user/local/custom-work-folder for Linux
-  # or /mnt/storage/sdc/custom-work-folder if you're using a data disk.
+  - WorkFolder -equals f:\custom-work-folder
+```
+
+#### [Linux](#tab/linux/)
+
+The default work folder for agents is typically **/mnt** for Linux, and can be referenced in your pipeline by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables).
+
+In the following example, `WorkFolder` is set to an [attached data disk](./configure-storage.md#use-the-data-disk-for-your-agent-working-directory?tabs=linux).
+
+```yml
+pool: 
+  name: fabrikam-managed-pool # Name of Managed DevOps Pool
+  demands:
+  - WorkFolder -equals /mnt/storage/sdc/custom-work-folder
 ```
 
 ## Priority
