@@ -40,6 +40,8 @@ pool:
   - WorkFolder -equals /mnt/storage/sdc/custom-work-folder
 ```
 
+* * *
+
 ## Priority
 
 `Priority` specifies the priority of the job. Jobs with higher priority are executed first. Valid values are: `High`, `Medium`, `Low`. The default value is `Medium`.
