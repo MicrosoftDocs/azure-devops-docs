@@ -3,7 +3,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 04/24/2025
+ms.date: 05/06/2025
 ---
 
 ## Connect to an Analytics view
@@ -63,8 +63,8 @@ Follow these steps to select the Analytics view:
    > - The preview shown for any selected view in the navigator can be truncated depending on the number of fields selected and the size of the dataset. The data gets truncated only for the preview and doesn't affect the full data refresh.
    > - [Analytics views](../powerbi/what-are-analytics-views.md) don't apply filters defined by using Power BI on the server. Any filters applied in Power BI limit the data shown to end users but don't reduce the amount of data retrieved from Analytics. If the filter is intended to reduce the size of the dataset, apply it by [customizing the view](../powerbi/analytics-views-create.md).
 
-1. Select the **Work Items - Today** view, which represents the current state of all work items in the project. Select the checkbox next to the view, and then select **Load**. Wait for the data to load. Monitor its progress through the status messages displayed under the table name. If any errors occur, refer to the [FAQs](../powerbi/data-connector-connect.md#q-a) section for solutions to common issues.
+1. Select the checkbox next to the **Stories - Last 30 days** view, and then select **Load**. Wait for the data to load. Monitor its progress through the status messages displayed under the table name. If any errors occur, refer to the [FAQs](../powerbi/data-connector-connect.md#q-a) section for solutions to common issues.
 
-   :::image type="content" source="../powerbi/media/power-bi-data-loading-onprem.png" alt-text="Screenshot of the Load window for the Work Items - Today view. A partial progress ring and an Evaluating message are visible.":::
+   :::image type="content" source="../powerbi/media/power-bi-data-loading-on-premises.png" alt-text="Screenshot of the Load window for the Stories - Last 30 Days view. A partial progress ring and an Evaluating message are visible.":::
 
 1. Review the data model. While the model loads, review the [dataset design for the Power BI Data Connector](../powerbi/data-connector-dataset.md).
