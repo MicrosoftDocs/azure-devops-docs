@@ -31,7 +31,7 @@ This article describes how to navigate the **Notifications** user interface in A
 
 ## Open your personal notifications 
 
-To your personal notifications, select the **User settings** icon in Azure DevOps, and then select **Notifications** or **Notification settings**:
+To open your personal notifications, select the **User settings** icon :::image type="icon" source="../../media/icons/user-settings-gear.png"::: in Azure DevOps, and then select **Notifications** or **Notification settings**:
 
 :::image type="content" source="media/personal/open-user-notifications.png" alt-text="Screenshot that shows how to open your personal notifications page in Azure DevOps.":::
 
@@ -73,7 +73,7 @@ https://dev.azure.com/<organization>/_settings/notifications
 
 On the **Organization Settings** page, select **Global notifications**:
 
-:::image type="content" source="../../media/nav-ui/organization-settings-2025.png" alt-text="Screenshot that shows how to open the Global notifications page in Azure DevOps by using a URL for your organization.":::
+:::image type="content" source="../../media/nav-ui/organization-notifications-2025.png" alt-text="Screenshot that shows how to open the Global notifications page in Azure DevOps by using a URL for your organization.":::
 
 For more information, see [Manage team and Global notifications](manage-team-group-global-organization-notifications.md)
 
