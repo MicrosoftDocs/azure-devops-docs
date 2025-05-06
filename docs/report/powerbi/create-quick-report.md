@@ -33,7 +33,7 @@ This quickstart shows you how to create two reports in Power BI Desktop that are
 |Category  | Requirements |
 |-------------|-------------|
 | **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
-| **Permissions** | The **View Analytics** permission set to **Allow**. For more information, see [Grant permissions for Analytics access](analytics-security.md). |
+| **Permissions** | The **View Analytics** permission set to **Allow**. For more information, see [Set permissions to access Analytics and Analytics views](analytics-security.md). |
 |**Tools** | - [Azure Boards turned on](../../organizations/settings/set-services.md).<br>- [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop). |
 |**Tasks**| Monitor work items over a specified period to generate a trend report. |
 
@@ -44,7 +44,7 @@ This quickstart shows you how to create two reports in Power BI Desktop that are
 |Category  | Requirements |
 |-------------|-------------|
 | **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
-| **Permissions** | The **View Analytics** permission set to **Allow**. For more information, see [Grant permissions for Analytics access](analytics-security.md). |
+| **Permissions** | The **View Analytics** permission set to **Allow**. For more information, see [Set permissions to access Analytics and Analytics views](analytics-security.md). |
 |**Tools** | - The [Analytics extension](../dashboards/analytics-extension.md). Members of the [Project Collection Administrators](../../organizations/security/change-organization-collection-level-permissions.md) group can add and enable the service.<br>- [Azure Boards turned on](../../organizations/settings/set-services.md).<br>- [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop).  |
 |**Tasks**| Monitor work items over a specified period to generate a trend report. |
 
