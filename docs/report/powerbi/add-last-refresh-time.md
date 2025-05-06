@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: how-to
 ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
-ms.date: 03/12/2025
+ms.date: 05/06/2025
 #customer intent: As a report creator who works in Power BI, I want to add last refresh information to my reports to let users know that the data is current.
 ---
 
@@ -32,12 +32,16 @@ The steps to add a last refresh date vary based on the source of your Power BI r
 
 To add a column with the last refresh date of the dataset, do the following steps:  
 
-1. Load the Power BI *.pbix* file associated with your view in Power BI Desktop.  
-2. In the **Queries** section of the ribbon, select **Transform data** > **Transform data**.
+1. Open **Power BI Desktop** on your computer.
+2. Select **File** from the top menu, then choose **Open**.
+3. Go to the location where your *.pbix* file is stored, select the file, and select **Open**.  
+
+   The *.pbix* file contains the data model and report layout associated with your view. Once loaded, you can begin making modifications, such as adding a last refresh date or customizing the report further. 
+4. In the **Queries** section of the ribbon, select **Transform data** > **Transform data**.
 
    :::image type="content" source="media/edit-queries.png" alt-text="Screenshot of Power BI Desktop, Home tab, highlighted Transform Data button in Queries section." lightbox="media/edit-queries.png":::
 
-3. Select **Advanced Editor**.  
+5. Select **Advanced Editor**.  
 
    :::image type="content" source="media/advanced-editor.png" alt-text="Screenshot of highlighted Advanced Editor button." lightbox="media/advanced-editor.png":::
 
@@ -67,7 +71,7 @@ To add a column with the last refresh date of the dataset, do the following step
 
    ***
 
-4. Modify the query according to the following syntax.  
+6. Modify the query according to the following syntax.  
 
    ### [Private view](#tab/private/)
 
@@ -97,8 +101,8 @@ To add a column with the last refresh date of the dataset, do the following step
    > [!NOTE]  
    > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](/powerquery-m/datetimezone-functions).
 
-5. Select **Done**.
-6. Select **Close & Apply** to immediately refresh the dataset.
+7. Select **Done**.
+8. Select **Close & Apply** to immediately refresh the dataset.
 
    :::image type="content" source="media/transform-data/powerbi-close-apply.png" alt-text="Screenshot of Power BI Desktop, Home, highlighted Close & Apply button.":::
 
