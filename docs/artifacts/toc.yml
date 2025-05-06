@@ -100,7 +100,7 @@
     items:
     - name: Project setup
       displayName: maven pom, maven artifacts, maven packages, maven authentication
-      href: maven/pom-and-settings.md
+      href: maven/project-setup-maven.md
     - name: Publish artifacts with Gradle
       displayName: gradle, publish
       href: maven/publish-with-gradle.md
@@ -165,7 +165,7 @@
     items:
     - name: Project setup
       displayName: maven pom, maven artifacts, maven packages, maven authentication
-      href: maven/pom-and-settings.md
+      href: maven/project-setup-maven.md
     - name: Restore Maven packages
       displayName: maven, restore, install
       href: maven/install.md
