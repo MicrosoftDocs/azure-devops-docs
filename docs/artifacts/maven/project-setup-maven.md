@@ -31,7 +31,7 @@ Azure Artifacts enables developers to publish and restore Maven packages from fe
 
 1. In the left navigation pane, select **Maven**. Make sure you've installed the prerequisites, if not, select **Get the tools** in the top-right corner to download and install them.
 
-1. In the **Project setup** section, copy the `repository` snippet and add it to your *pom.xml* file withi the `<repositories>` and `distributionManagement>` sections. Your file should resemble the following:
+1. In the **Project setup** section, copy the `repository` snippet and add it to your *pom.xml* file within the `<repositories>` and `distributionManagement>` sections. Your file should resemble the following:
 
     ```xml
     <repositories>
@@ -84,7 +84,7 @@ Azure Artifacts enables developers to publish and restore Maven packages from fe
 
 1. In the left navigation pane, select **Maven**. Make sure you've installed the prerequisites, if not, select **Get the tools** in the top-right corner to download and install them.
 
-1. In the **Project setup** section, copy the `repository` snippet and add it to your *pom.xml* file withi the `<repositories>` and `distributionManagement>` sections. Your file should resemble the following:
+1. In the **Project setup** section, copy the `repository` snippet and add it to your *pom.xml* file within the `<repositories>` and `distributionManagement>` sections. Your file should resemble the following:
         
     ```xml
       <repositories>
