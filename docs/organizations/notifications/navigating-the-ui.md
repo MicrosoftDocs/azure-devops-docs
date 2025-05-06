@@ -73,7 +73,7 @@ https://dev.azure.com/<organization>/_settings/notifications
 
 On the **Organization Settings** page, select **Global notifications**:
 
-:::image type="content" source="../../media/nav-ui/open-organization-settings-2025.png" alt-text="Screenshot that shows how to open the Global notifications page in Azure DevOps by using a URL for your organization.":::
+:::image type="content" source="../../media/nav-ui/organization-settings-2025.png" alt-text="Screenshot that shows how to open the Global notifications page in Azure DevOps by using a URL for your organization.":::
 
 For more information, see [Manage team and Global notifications](manage-team-group-global-organization-notifications.md)
 
