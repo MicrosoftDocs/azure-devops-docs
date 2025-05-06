@@ -21,8 +21,8 @@ You can create status and trend reports of your work-tracking data by using one 
  
 This quickstart shows you how to create two reports in Power BI Desktop that are based on a default Analytics view:
 
-- A daily trend of backlog items
-- A count of active user stories
+- A daily trend chart for backlog items
+- A card that displays the count of active user stories
 
 [!INCLUDE [Warning about Analytics views only supporting Azure Boards data](includes/analytics-views-warning.md)]
  
