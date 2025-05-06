@@ -216,7 +216,7 @@ You can find a C# sample that implements OAuth to call Azure DevOps Services RES
 
 ## Regenerate client secret
 
-Application secrets regularly expire every 60 days (as of March 2025). You may have two secrets at any time. Continue to create and use access tokens and refresh tokens by rotating your soon-to-expire app secret with a new application secret. This can be done on the app's registration page on the [Visual Studio profile](https://aex.dev.azure.com/me) or through the [Registration Secret APIs](https://learn.microsoft.com/rest/api/azure/devops/delegatedauth/registration-secret).
+Application secrets regularly expire every 60 days (as of March 2025). You may have two secrets at any time. Continue to create and use access tokens and refresh tokens by rotating your soon-to-expire app secret with a new application secret. This can be done on the app's registration page on the [Visual Studio profile](https://aex.dev.azure.com/me) or through the [Registration Secret APIs](https://learn.microsoft.com/rest/api/azure/devops/delegatedauth/registration-secret). To use the APIs, you must use an [Entra access token](entra-oauth.md) with the `vso.tokens` [scope](oauth.md#scopes).
 
 1. Create a secondary secret by selecting **"Generate Secret"** for "Secret 2". (Use the [Create Registration Secret API](https://learn.microsoft.com/rest/api/azure/devops/delegatedauth/registration-secret/create).)
 
