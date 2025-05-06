@@ -98,8 +98,8 @@ To add a column with the last refresh date of the dataset, do the following step
 
    ***
 
-    > [!NOTE]  
-    > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](/powerquery-m/datetimezone-functions).
+   > [!NOTE]  
+   > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](/powerquery-m/datetimezone-functions).
 
 7. Select **Done**.
 8. Select **Close & Apply** to immediately refresh the dataset.
