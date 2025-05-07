@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 05/07/2025
-# customer intent: As a team member, I want to see how to create, edit, and delete Azure DevOps dashboards so that I can view and share information about progress and status updates for my projects and teams.
+# customer intent: As a team member, I want to see how to create, edit, and delete Azure DevOps dashboards so that I can view and share information about my projects and teams, such as progress and status updates.
 ---
 
 # Quickstart: Add, rename, and delete dashboards in Azure DevOps
@@ -19,7 +19,7 @@ ms.date: 05/07/2025
 
 In this quickstart, you create, edit, and delete dashboards in Azure DevOps.
 
-You can use dashboards to provide guidance and keep your team in sync. Configurable team or project dashboards provide a way to share progress and status updates. Dashboard data provides visibility across your organization about progress, trends, and the status of work. 
+You can use dashboards to offer guidance and keep your team in sync. Configurable team or project dashboards provide visibility across your organization about progress, trends, and the status of work.
 
 Dashboards also offer easy-to-read, real-time information that's easy to access. At a glance, you can use a dashboard to make informed decisions without having to drill down into other parts of your project.
 
@@ -35,7 +35,11 @@ All dashboards are associated with either a team or a project. When you add a da
 - Use team dashboards to focus on information that's specific to a team.
 
 > [!NOTE]  
-> A project dashboard is owned by the person that creates the dashboard. The owner can set permissions to specify who can edit the dashboard. A team dashboard is owned by the team administrator and can be edited by any member of the team. All dashboards can be viewed by members of the project. All widgets that are available to team dashboards are available for project dashboards. For team-specific widgets, if you can't select a team through the widget, the default project team is used in the widget.
+> The person who creates a project dashboard owns that dashboard. The owner can set permissions to specify who can edit the dashboard. Members of a project can view all dashboards.
+> 
+> A team dashboard is owned by the team administrator. Any member of the team can edit a team dashboard.
+> 
+> All widgets that are available to team dashboards are available for project dashboards. For team-specific widgets, if you can't select a team through the widget, the default project team is used in the widget.
 
 When a project is created, a default team and default team dashboard are created. The dashboard is labeled *Overview*. You can customize this dashboard by adding widgets. For more information, see [Add, move, or delete a widget](#add-move-or-delete-a-widget), later in this article.
 
@@ -92,13 +96,13 @@ If you mark a dashboard as a favorite, it appears toward the top of the dashboar
 You can add a new dashboard as needed to support your team's needs. You can also edit and rename any existing dashboards associated with your team.
 
 > [!NOTE]
-> There's a limit of 500 dashboards per project. You receive an error message if you try to create a dashboard beyond that limit. Delete unused dashboards to resolve the error. 
+> There's a limit of 500 dashboards per project. You receive an error message if you try to create a dashboard beyond that limit. To resolve the error, delete unused dashboards.
 
-1. In the dashboard directory, select **New Dashboard**. Or, when viewing a dashboard, open the dashboard selector, and then select :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard**.
+1. In the dashboard directory, select :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard**. Or, when viewing a dashboard, open the dashboard selector, and then select :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New dashboard**.
 
    :::image type="content" source="media/dashboards/open-new-dashboard-dialog.png" alt-text="Screenshot of a dashboard. Next to its name, the down arrow is highlighted. In the expanded selector, New dashboard is highlighted.":::
 
-   If you don't see the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard** option, you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request to be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json).
+   If you don't see the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New dashboard** option, you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request to be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json).
 
 1. Enter the name of the dashboard and a description.
 
@@ -106,7 +110,7 @@ You can add a new dashboard as needed to support your team's needs. You can also
 
    :::image type="content" source="media/dashboards/create-dashboard-project-dialog.png" alt-text="Screenshot of the Create a dashboard dialog. The Name and Description fields are populated. For the type, Project Dashboard is highlighted.":::
 
-1. Select **Create**. Your dashboard is created. If you return to the dashboard directory, you can see the new dashboard in the list.
+1. Select **Create** to create your dashboard. If you return to the dashboard directory, you see the new dashboard in the list.
 
 For information about adding widgets to a dashboard, see [Add, move, or delete a widget](#add-move-or-delete-a-widget), later in this article.
 
@@ -114,7 +118,7 @@ For information about adding widgets to a dashboard, see [Add, move, or delete a
 
 ## Rename and delete dashboards and enable automatic refreshing  
 
-You can rename or delete a dashboard. When you turn on the automatic refresh setting, the dashboard is automatically refreshed every five minutes.  
+You can rename or delete a dashboard. And when you turn on the automatic refresh setting, the dashboard is automatically refreshed every five minutes.  
 
 > [!NOTE]  
 > To delete a project dashboard, you must be a member of the [Project Collection Administrators](../../organizations/security/change-organization-collection-level-permissions.md) group.  
@@ -149,7 +153,7 @@ To add, move, or delete a widget, open the dashboard, and then select :::image t
 When you finish making changes, select **Done Editing** to exit dashboard edit mode.
 
 > [!TIP]   
-> When you're in dashboard edit mode, you can add, remove, rearrange, and configure widgets. When you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.
+> When you're in dashboard edit mode, you can add, remove, rearrange, and configure widgets. When you leave edit mode, the widget tiles remain locked, reducing the chance of accidentally moving a widget.
 
 ## Extensibility 
 
