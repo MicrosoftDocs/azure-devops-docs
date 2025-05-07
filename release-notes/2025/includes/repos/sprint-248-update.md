@@ -16,14 +16,14 @@ If both properties are set, the agent initializes cone mode with directory match
 
 YAML example for sparse checkout cone mode:
 ```yaml
-    checkout: repo
+  - checkout: repo
     sparseCheckoutDirectories: src
 ```
 
 YAML example for sparse checkout non-cone mode:
 ```yaml
 
-   checkout: repo
+ - checkout: repo
    sparseCheckoutPatterns: /* !/img 
 
 ```
