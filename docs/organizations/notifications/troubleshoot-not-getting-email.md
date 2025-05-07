@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting-general
 ms.date: 05/07/2025
-#customer intent: As a developer, I want to troubleshoot why I'm not receiving emails from my notification subscriptions so I can fix the problem.
+#customer intent: As a developer, I want to troubleshoot why I'm not receiving emails from my notifications or subscriptions so I can fix the problem.
 ---
 
 # Not getting emails from subscriptions or notifications
@@ -26,7 +26,7 @@ If you're not receiving an expected notification email, here are some possible c
 * The event doesn't match the specified subscription filter conditions.
 * The subscription is defined to not send emails to the initiator of an event.
 * The organization level **Do not deliver** setting is impacting email delivery.
-* The team or group level [**Do not deliver**](#check-do-not-deliver-team-or-group-setting) setting is impacting email delivery.
+* The team or group level **Do not deliver** setting is impacting email delivery.
 * You're not a member of the group or team receiving the email.
 * You're a member of a Windows Server Active Directory (Windows AD) group and the subscription contains an `@Me` mention clause.
 * You don't have permission to view the event details, which are included in the email.
