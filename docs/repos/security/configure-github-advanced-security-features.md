@@ -10,6 +10,7 @@ ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 02/20/2025
+zone_pivot_groups: configure-ghazdo-bundled-individual-products
 ---
 
 # Configure GitHub Advanced Security for Azure DevOps
@@ -50,6 +51,7 @@ If your organization uses self-hosted agents, add the following URLs to your All
 
 You can enable Advanced Security at the organization, project, or repository level. To access each of the scanning tools and results, you need to first enable Advanced Security. Once you enable Advanced Security, any future pushes containing secrets to a repository with this policy enabled are blocked, and repository secret scanning happens in the background.
 
+:::zone pivot="bundled-ghazdo"
 #### Repository-level onboarding
 1. Go to your **Project settings** for your Azure DevOps project. 
 1. Select **Repos** > **Repositories**. 
@@ -84,6 +86,7 @@ Secret scanning push protection and repository scanning are automatically enable
 :::image type="content" source="media/secret-scanning-push-protection.png" lightbox="media/secret-scanning-push-protection.png" alt-text="Screenshot of enabling push protection.":::
 
 As mentioned, secret scanning repository scanning is automatically kicked off upon enabling Advanced Security for a selected repository.
+:::zone-end
 
 ## Set up dependency scanning
 
