@@ -60,7 +60,7 @@ This page lists dashboards in the following order:
 
 Select the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter the list by keyword or team. Keywords apply to dashboard titles, descriptions, and team names.
 
-:::image type="content" source="media/dashboards/filter-directory.png" alt-text="Screenshot of the dashboard directory. The filter icon is highlighted.":::
+:::image type="content" source="media/dashboards/filter-directory.png" alt-text="Screenshot of the dashboard directory. The filter icon is highlighted." lightbox="media/dashboards/filter-directory.png":::
 
 If you need to switch to a different project, select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
@@ -130,7 +130,7 @@ You can rename or delete a dashboard. And when you turn on the automatic refresh
 
 - To delete a dashboard, open the dashboard directory, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** for the dashboard, and then select **Delete**.  
 
-  :::image type="content" source="media/dashboards/delete-dashboard.png" alt-text="Screenshot of the dashboard directory. The More options icon for a dashboard is highlighted. In its shortcut menu, Delete is highlighted.":::
+  :::image type="content" source="media/dashboards/delete-dashboard.png" alt-text="Screenshot of the dashboard directory. The More options icon for a dashboard is highlighted. In its shortcut menu, Delete is highlighted." lightbox="media/dashboards/delete-dashboard.png":::
 
 - To set permissions for a dashboard, open the dashboard directory, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** for the dashboard, and then select **Security**. For more information, see [Set dashboard permissions](dashboard-permissions.md).
 
