@@ -58,9 +58,6 @@ This guide walks you through configuring your project and restoring your NuGet p
 
 ::: moniker range="azure-devops-2020 || azure-devops-2022"
 
-> [!NOTE]
-> dotnet isn't supported in Azure DevOps Server 2019.
-
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed.
