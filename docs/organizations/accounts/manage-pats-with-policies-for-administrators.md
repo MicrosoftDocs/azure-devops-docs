@@ -24,8 +24,9 @@ This article provides guidance on how to use Microsoft Entra policies to manage 
 
 | Category | Requirements |
 |--------------|-------------|
-|**Organization connection**| Your organization's [linked to Microsoft Entra ID](connect-organization-to-azure-ad.md).|
-|**Permissions** | [Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and go to **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, you can't see the policies. Contact your administrator, if necessary.|
+|**Entra Tenant**| Your organization's [linked to Microsoft Entra ID](connect-organization-to-azure-ad.md).|
+|**Permissions** | For tenant policies, you need the [Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and go to **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, you can't see the policies. Contact your administrator, if necessary.
+For organization policies, you must be a [Project Collection Administrator](../security/look-up-project-collection-administrators.md). |
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
