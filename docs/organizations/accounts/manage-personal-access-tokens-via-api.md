@@ -14,6 +14,8 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
+In general, we have been recommending Microsoft Entra tokens in place of personal access tokens. Most tokens related to 
+
 When you own a large set of [personal access tokens (PATs)](use-personal-access-tokens-to-authenticate.md), it might become complex to manage the maintenance of these tokens using the UI alone.
 
 With the PAT Lifecycle Management API, you can easily manage the PATs associated with your organizations using automated processes. This [rich set of APIs](/rest/api/azure/devops/tokens) lets you manage your PATs, allowing you to create new PATs and renew or expire existing PATs.
@@ -27,6 +29,7 @@ In this article, we show you how to configure an application that [authenticates
 | Authentication | In general, a stronger "step-up authentication" is recommended when minting new tokens, which is why [Microsoft Entra access tokens](../../integrate/get-started/authentication/entra.md) are required to access this API. PATs cannot be used to create or regenerate PATs. |
 | User Identity | Only users or apps using an "on-behalf-of user" flow can generate PATs. Apps using "on-behalf-of application" flows (e.g. “client credential” flow) or authentication flows that do not issue Microsoft Entra access tokens are not valid for use with this API. As such, [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) cannot create or manage PATs. |
 | Entra Tenant | Have a [Microsoft Entra tenant with an active Azure subscription](/azure/active-directory/develop/quickstart-create-new-tenant). |
+| Token Scope | Previously the PAT Lifecycle Management APIs only supported the `user_impersonation` scope, but now the `vso.tokens` are the recommended scope to use with these APIS. |
 
 ## Call the API Directly
 
@@ -50,3 +53,6 @@ To rotate your PAT, do the following steps:
 
 ### Q: I see a "Need admin approval" pop-up when I try to use this app.
 Your tenant's security policies require admin consent before applications can access organization resources in the organization. You msut reach out to your tenant admin.
+
+### Q: Can I use a service principal to create or manage PATs?
+No, personal access tokens belong to a user identity. Entra [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) can generate stronger authentication in the form of Entra tokens that can be used in most places where a PAT is accepted. Learn more about [our efforts to reduce PAT usage across Azure DevOps](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) and explore replacing PATs with Entra tokens.
