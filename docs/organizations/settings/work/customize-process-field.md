@@ -51,16 +51,16 @@ You can add fields and specify the group and page where they should appear. Also
 
 	Here we choose the Bug WIT. Note the breadcrumb links that allow you to move back to <strong>All Processes</strong> and <strong>MyAgile</strong> process page.
 
-> [!div class="mx-imgBorder"]  
-   > ![All Processes-Process-WIT breadcrumb links](media/field/breadcrumbs-bug-wit.png) 
-   
-   	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+	> [!div class="mx-imgBorder"]  
+	> ![All Processes-Process-WIT breadcrumb links](media/field/breadcrumbs-bug-wit.png) 
+
+	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 1. With the WIT selected, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: <strong>New field</strong>.  
 
-> [!div class="mx-imgBorder"]  
-   > ![Process Work Item Types page, Add a field to a WIT](media/field/bug-new-field.png) 
-   
+	> [!div class="mx-imgBorder"]  
+	> ![Process Work Item Types page, Add a field to a WIT](media/field/bug-new-field.png) 
+
 1. Name the field and select the field type from one of the supported data types. Optionally, add a description.  
 
 	> [!NOTE]    
@@ -87,13 +87,13 @@ You can add fields and specify the group and page where they should appear. Also
 
 1.	Choose <strong>Add field</strong> to complete adding the field. If you don't specify its layout location, the system adds it to the first group of fields on the form.  
 
-1. When you've completed making all your changes, open a work item of the type you've customized. 
+1.	When you've completed making all your changes, open a work item of the type you've customized. 
 
 	Here, we show the Customer Ticket field has been added to the Status group. You may need to refresh your browser to see the changes. 
 
-> [!div class="mx-imgBorder"]  
-   > ![Bug form, Customer Ticket field added to Customer focus group](media/process/cpfield-bug-form-customized-customer-ticket.png) 
-   
+ 	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Customer Ticket field added to Customer focus group](media/process/cpfield-bug-form-customized-customer-ticket.png) 
+
 <a id="pick-list">  </a>
 <a id="edit-picklist-inherited"></a>
 
@@ -112,21 +112,22 @@ You can add a new field and define a pick list or customize the pick list of an 
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can add an item and then press **Enter** to add another item. 
 
-    ![Add a field to Bug dialog, Add a custom picklist.](media/process/add-a-field-pick-list-up1.png)  
-   
-   	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.  
+	![Add a field to Bug dialog, Add a custom picklist.](media/process/add-a-field-pick-list-up1.png)  
 
-   	::: moniker range=">= azure-devops-2020"
+	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.  
+
+	::: moniker range=">= azure-devops-2020"
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Edit field Priority in User STory dialog, Definition tab.](media/field/edit-priority-picklist.png)   
-   	::: moniker-end
+	> [!div class="mx-imgBorder"]  
+	> ![Edit field Priority in User STory dialog, Definition tab.](media/field/edit-priority-picklist.png)   
+	
+	::: moniker-end
 
-1. (Optional) Choose the **Options** tab to define the field as required, specify a default, or allow users to enter their own values. 
+2. (Optional) Choose the **Options** tab to define the field as required, specify a default, or allow users to enter their own values. 
 
-    ![Allow values in a custom picklist](media/process/add-a-field-pick-list-options.png)  
-   
+	![Allow values in a custom picklist](media/process/add-a-field-pick-list-options.png)  
+
 3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (**Layout** tab). 
  
 <!---
@@ -142,8 +143,8 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then the field name, Identity type, and optionally a description. 
 
-    ![Add a field to Bug dialog, Definition tab, Add an Identity field.](media/process/cpfield-identity.png)  
-   
+	![Add a field to Bug dialog, Definition tab, Add an Identity field.](media/process/cpfield-identity.png)  
+
 1. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (Layout tab). 
  
 
@@ -156,10 +157,12 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 1. Choose Text (multiple lines) as the type. Here we label the field as Customer request to capture customer comments for product feature requests.   
 
     ![Process Work Item Types page, Add a rich-text field to the Bug form](media/process/cpfield-add-html-field-to-bug.png)
-   
+
 1. The field is added to the first column under all system-defined rich-text fields, but before the Discussion control.   
 
-> [!div class="mx-imgBorder"]  
+ 	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Customer request field added to first column in form](media/process/customize-process-field-show-custom-html-field-up1.png)
+
 <a id="boolean-field">  </a>
 
 ### Add a checkbox field  
@@ -170,10 +173,10 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 
 	<img src="media/process/cpfield-add-boolean-field-to-bug.png" alt="Add a boolean field" />   
 
-1. (Optional) Open the <strong>Options</strong> tab and specify if the field should be required. 
+3. (Optional) Open the <strong>Options</strong> tab and specify if the field should be required. 
 
-    ![Set options for boolean field](media/process/cpfield-edit-boolean-field-options-up1.png)
-   
+	![Set options for boolean field](media/process/cpfield-edit-boolean-field-options-up1.png)
+
 4. By default, the field is added to the last group defined in the second column. Open the <strong>Layout</strong> tab to drag and drop the field to another group on the form.  
 
 	> [!NOTE]    
@@ -254,8 +257,8 @@ You can choose to show or hide any field or custom control from appearing on a f
 
 1. Open the context menu for the field or control and choose **Hide from layout**.
 
-    ![Bug layout, inherited field, open context menu, choose Hide from layout](media/process/cpfield-hide-inherited-field.png) 
-   
+	![Bug layout, inherited field, open context menu, choose Hide from layout](media/process/cpfield-hide-inherited-field.png) 
+
 1. To add a hidden field or control to the form, choose **Show on layout**.  
 
 <a id="remove-field">  </a>
@@ -264,8 +267,8 @@ You can choose to show or hide any field or custom control from appearing on a f
 
 1. Choose **Remove** from the context menu of the field you want to remove. 
 
-    ![Remove field from bug work item type](media/process/cpfield-remove-customer-ticket.png)  
-   
+	![Remove field from bug work item type](media/process/cpfield-remove-customer-ticket.png)  
+
 2. Confirm that you want to remove the field.  
 
 	<img src="media/process/customize-process-remove-field-confirm.png" alt="Confirm to remove field from the bug work item form" />   
@@ -287,7 +290,7 @@ You may discard changes you made to an inherited field. From the **Layout** page
 
 With the Inheritance process model, you can only delete custom fields. You can't delete fields defined for system default processes. 
 
-Deleting a field deletes all data associated with that field, including historical values. Once deleted, there can be a short period of time before the jobs that purge the data begin.  In this interval, you can attempt to restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update"https://learn.microsoft.com/en-us/rest/api/azure/devops/wit/fields/update").  This update may recover all data, partial data, or no data depending on what data remains to restore.  Recovery is not always possible or complete, please use caution when deleting fields.
+Deleting a field deletes all data associated with that field, including historical values. Once deleted, there can be a short period of time before the jobs that purge the data begin.  In this interval, you can attempt to restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update).  This update may recover all data, partial data, or no data depending on what data remains to restore.  Recovery is not always possible or complete, please use caution when deleting fields.
 
 > [!NOTE]   
 > We recommend that you only delete fields that are not in use. You can determine fields that aren't in use by exercising the **witadmin listfields** command. To learn how, see [Manage work item fields (witadmin)](../../../reference/witadmin/manage-work-item-fields.md).  
@@ -299,15 +302,15 @@ Deleting a field deletes all data associated with that field, including historic
 
 1. You delete the field from the **All processes>Fields** page.  
 
-    ![Delete field](media/process/cpfield-delete-field.png) 
-   
-   	To delete fields, be a member of the Project Collection Administrators group or be [granted explicit permissions to Delete field from account](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
+	![Delete field](media/process/cpfield-delete-field.png) 
 
-1. To complete the delete operation, you must type the name of the field as shown. 
+	To delete fields, be a member of the Project Collection Administrators group or be [granted explicit permissions to Delete field from account](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
 
-    ![Delete field, confirmation dialog](media/process/cpfield-delete-confirmation.png) 
-   
-   
+2. To complete the delete operation, you must type the name of the field as shown. 
+
+	![Delete field, confirmation dialog](media/process/cpfield-delete-confirmation.png) 
+ 
+
 ## Related articles  
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
