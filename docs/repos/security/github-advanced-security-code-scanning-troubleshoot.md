@@ -140,7 +140,7 @@ Install the CodeQL bundle to the agent tool cache by utilizing the setup script 
 -   Use the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
 -   As another option, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` 
 
-For more information, check the [release notes](https://learn.microsoft.com/azure/devops/release-notes/2025/ghazdo/sprint-253-update#multi-repository-publishing-scenarios-supported-for-github-advanced-security-for-azure-devops).
+For more information, check the [release notes](/azure/devops/release-notes/2025/ghazdo/sprint-253-update#multi-repository-publishing-scenarios-supported-for-github-advanced-security-for-azure-devops).
 
 
 ## Related articles
