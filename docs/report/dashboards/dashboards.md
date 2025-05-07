@@ -1,7 +1,7 @@
 ---
 title: Add, Rename, Delete, and Manage Team Dashboards
 titleSuffix: Azure DevOps  
-description: See how to create, edit, and delete Azure DevOps dashboards. Find out how to set dashboard permissions and add widgets to dashboards to view progress and trends.
+description: Learn how to create, edit, and delete Azure DevOps dashboards. Find out how to set dashboard permissions and add widgets to dashboards to view progress and trends.
 ms.custom: "dashboards" 
 ms.subservice: azure-devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
@@ -10,14 +10,14 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 05/07/2025
-# customer intent: As a team member, I want to see how to create, edit, and delete Azure DevOps dashboards so that I can view and share information about my projects and teams, such as progress and status updates.
+# customer intent: As a team member, I want to learn how to create, edit, and delete Azure DevOps dashboards so that I can view and share information about my projects and teams, such as progress and status updates.
 ---
 
 # Quickstart: Add, rename, and delete dashboards in Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In this quickstart, you create, edit, and delete dashboards in Azure DevOps.
+In this quickstart, learn how to create, edit, and delete dashboards in Azure DevOps.
 
 You can use dashboards to offer guidance and keep your team in sync. Configurable team or project dashboards provide visibility across your organization about progress, trends, and the status of work.
 
@@ -35,13 +35,13 @@ All dashboards are associated with either a team or a project. When you add a da
 - Use team dashboards to focus on information that's specific to a team.
 
 > [!NOTE]  
-> The person who creates a project dashboard owns that dashboard. The owner can set permissions to specify who can edit the dashboard. Members of a project can view all dashboards.
+> The user who creates a project dashboard owns that dashboard. The owner can set permissions to specify who can edit the dashboard. Members of a project can view all dashboards.
 > 
 > A team dashboard is owned by the team administrator. Any member of the team can edit a team dashboard.
 > 
 > All widgets that are available to team dashboards are available for project dashboards. For team-specific widgets, if you can't select a team through the widget, the default project team is used in the widget.
 
-When a project is created, a default team and default team dashboard are created. The dashboard is labeled *Overview*. You can customize this dashboard by adding widgets. For more information, see [Add, move, or delete a widget](#add-move-or-delete-a-widget), later in this article.
+When a project gets created, a default team and default team dashboard are created. The dashboard is labeled *Overview*. You can customize this dashboard by adding widgets. For more information, see [Add, move, or delete a widget](#add-move-or-delete-a-widget), later in this article.
 
 ## Open the dashboard directory 
 
@@ -89,7 +89,7 @@ To mark a dashboard as a favorite, take one of the following steps:
 
   :::image type="content" source="media/dashboards/favorite-dashboard.png" alt-text="Screenshot of the dashboard selector. Next to the name of a dashboard, a star is visible and is highlighted.":::
 
-If you mark a dashboard as a favorite, it appears toward the top of the dashboard directory. It also appears under **Favorites** in the dashboard selector and in your [personal favorites list](../../project/navigation/set-favorites.md).
+If you mark a dashboard as a favorite, it displays toward the top of the dashboard directory. It also appears under **Favorites** in the dashboard selector and in your [personal favorites list](../../project/navigation/set-favorites.md).
 
 ## Add a dashboard 
 
