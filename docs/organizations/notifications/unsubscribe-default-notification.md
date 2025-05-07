@@ -45,7 +45,7 @@ You can't modify an OOB subscription, but you can view its definition from its *
 
 To unsubscribe from a notification, slide the **State** toggle to the _Off_ position. The toggle color changes to white and the entire subscription row is grayed:
 
-:::image type="content" source="media/personal/notifications-turned-off.png" alt-text="Screenshot that shows a disabled notification where the State is set to Off and the toggle is colored white. The entire subscription row is grayed.":::
+:::image type="content" source="media/notification-turned-off.png" alt-text="Screenshot that shows a disabled notification where the State is set to Off and the toggle is colored white. The entire subscription row is grayed.":::
 
 ## Related content
 
