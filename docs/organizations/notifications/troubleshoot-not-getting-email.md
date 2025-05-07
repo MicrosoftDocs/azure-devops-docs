@@ -7,7 +7,7 @@ ms.custom: quarterly-update
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
-ms.topic: concept-article
+ms.topic: troubleshooting-general
 ms.date: 05/07/2025
 #customer intent: As a developer, I want to troubleshoot why I'm not receiving emails from my notification subscriptions so I can fix the problem.
 ---
@@ -26,7 +26,7 @@ If you're not receiving an expected notification email, here are some possible c
 * The event doesn't match the specified subscription filter conditions.
 * The subscription is defined to not send emails to the initiator of an event.
 * The organization level **Do not deliver** setting is impacting email delivery.
-* The team or group level [**Do not deliver**](#check-do-not-deliver-setting-for-your-team-or-group) setting is impacting email delivery.
+* The team or group level [**Do not deliver**](#check-do-not-deliver-team-or-group-setting) setting is impacting email delivery.
 * You're not a member of the group or team receiving the email.
 * You're a member of a Windows Server Active Directory (Windows AD) group and the subscription contains an `@Me` mention clause.
 * You don't have permission to view the event details, which are included in the email.
@@ -49,7 +49,7 @@ Different **Notification** settings and configuration scenarios can disable a su
 
 Azure DevOps displays a disabled subscription as grayed (not available) in the **Notification** settings user interface. The following screenshot shows an example with two subscriptions, where the first subscription is enabled and the second is disabled:
 
-:::image type="content" source="media/subscription-disabled.png" border="false" alt-text="Screenshot that shows the visual difference for an enabled and a disabled subscription in Azure DevOps.":::
+:::image type="content" source="media/subscription-disabled.png" alt-text="Screenshot that shows the visual difference for an enabled and a disabled subscription in Azure DevOps.":::
 
 Here are some scenarios where a subscription might not be available:
 
@@ -72,7 +72,7 @@ Consider a subscription for a _work item changed_ event. You might set the **Ski
 
 Similar to the **Skip initiator** option, the **Do not deliver** setting can also interfere with message delivery. On the organization-level notifications page, select **Settings**, and check the **Do not deliver** setting. For more information, see [Manage notifications for a team, project, or organization](manage-team-group-global-organization-notifications.md).
 
-When the [delivery setting](#check-do-not-deliver-setting-for-your-team-or-group) is **Do not deliver**, all teams or groups that don't explicitly specify the delivery option inherit the **Do not deliver** setting. This setting alone doesn't necessarily indicate an email isn't delivered, but it can contribute to the problem.
+When the [delivery setting](#check-do-not-deliver-team-or-group-setting) is **Do not deliver**, all teams or groups that don't explicitly specify the delivery option inherit the **Do not deliver** setting. This setting alone doesn't necessarily indicate an email isn't delivered, but it can contribute to the problem.
 
 After you check the delivery setting at the organizational, see if a group or team delivery setting inherits the value and blocks delivery to your group or team.
 
