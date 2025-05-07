@@ -13,7 +13,7 @@ Now, Advanced Security detects changes to your default branch and updates both t
 
 ### CodeQL installation for self-hosted agents supports proxy configurations
 
-If you have a network proxy configured and used the `enableAutomaticCodeQLInstall ` variable in the `AdvancedSecurity-CodeQL-Init` task, the task may have previously encountered the error message `[warning] Maximum number of redirects exceeded`  when downloading the CodeQL tool cache to your self-hosted agent. With this update, we introduce handling for network proxies so that automatic installation runs successfully.
+If you have a network proxy configured and used the `enableAutomaticCodeQLInstall` variable in the `AdvancedSecurity-CodeQL-Init` task, the task may have previously encountered the error message `[warning] Maximum number of redirects exceeded`  when downloading the CodeQL tool cache to your self-hosted agent. With this update, we introduce handling for network proxies so that automatic installation runs successfully.
 
 ### Alerts branch picker now displays all branches with a successful scan  
 
