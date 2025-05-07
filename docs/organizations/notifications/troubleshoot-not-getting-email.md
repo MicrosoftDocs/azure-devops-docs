@@ -25,8 +25,7 @@ If you're not receiving an expected notification email, here are some possible c
 * The subscription is disabled or opted-out.
 * The event doesn't match the specified subscription filter conditions.
 * The subscription is defined to not send emails to the initiator of an event.
-* The organization level **Do not deliver** setting is impacting email delivery.
-* The team or group level **Do not deliver** setting is impacting email delivery.
+* The **Do not deliver** setting at the organization, team, or group level is impacting email delivery.
 * You're not a member of the group or team receiving the email.
 * You're a member of a Windows Server Active Directory (Windows AD) group and the subscription contains an `@Me` mention clause.
 * You don't have permission to view the event details, which are included in the email.
@@ -62,21 +61,21 @@ Filter conditions can prevent the system from generating the email, or cause you
 
 You can view the filter conditions by selecting the subscription link in the subscription user interface. You can view the filter conditions even if you don't have permission to change them. Closely inspect _all_ filter conditions to see if they match the Azure DevOps Services event.
 
-### Check "Skip initiator" option
+### Check 'Skip initiator' option
 
 When the **Skip initiator** option is set on a subscription, the system excludes the initiator of the Azure DevOps Services event from the email recipient list, while all others receive the event.
 
 Consider a subscription for a _work item changed_ event. You might set the **Skip initiator** option to avoid receiving email for changes you make to the work item. For more information, see [Exclude yourself from notification emails of events you started](exclude-self-from-email.md).
 
-### Check "Do not deliver" organization setting
+### Check 'Do not deliver' setting for organization
 
 Similar to the **Skip initiator** option, the **Do not deliver** setting can also interfere with message delivery. On the organization-level notifications page, select **Settings**, and check the **Do not deliver** setting. For more information, see [Manage notifications for a team, project, or organization](manage-team-group-global-organization-notifications.md).
 
-When the [delivery setting](#check-do-not-deliver-team-or-group-setting) is **Do not deliver**, all teams or groups that don't explicitly specify the delivery option inherit the **Do not deliver** setting. This setting alone doesn't necessarily indicate an email isn't delivered, but it can contribute to the problem.
+When the [delivery setting](#check-do-not-deliver-setting-for-team-or-group) is **Do not deliver**, all teams or groups that don't explicitly specify the delivery option inherit the **Do not deliver** setting. This setting alone doesn't necessarily indicate an email isn't delivered, but it can contribute to the problem.
 
 After you check the delivery setting at the organizational, see if a group or team delivery setting inherits the value and blocks delivery to your group or team.
 
-### Check "Do not deliver" team or group setting
+### Check 'Do not deliver' setting for team or group
 
 When a team or group specifies the **Deliver to individual members** setting, other groups within the same team or group might specify different delivery settings. Conflicts can arise when the system encounters different values for the setting at various levels within the membership hierarchy. For more information about membership inheritance, and how to send email only to specific members, see [Determine recipients of notification emails](concepts-email-recipients.md).
 
@@ -88,9 +87,9 @@ To see your contact email address, hover over the **User settings** icon :::imag
 
 ### Verify @Me filter expansion for teams or groups
 
-When the notification email configuration uses the `@Me` filter clause, the system expands the filter to locate matches in the recipient list. However, Windows AD groups aren't expanded for filter matching. If you specify team or group members by using Windows AD groups, these members don't receive the notification emails.
+When the subscription or notifications configuration uses an `@Me` filter clause, the system expands the filter to locate matches in the recipient address list. However, Windows AD groups aren't expanded for filter matching. If you specify email addresses for team or group members by using Windows AD groups, these members don't receive the notification emails.
 
-Specify the full email address for each member of any Windows AD group.
+Specify the full email address for each team member of any Windows AD group.
 
 ### Ensure recipient permissions for event artifacts
 
