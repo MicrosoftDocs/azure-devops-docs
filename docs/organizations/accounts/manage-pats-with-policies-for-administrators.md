@@ -133,7 +133,7 @@ The policy is disabled and any PATs checked into public GitHub repositories rema
 > [Change application access policies](change-application-access-policies.md)
 
 ## Related articles
-
 - [Restrict organization creation with Microsoft Entra tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Use personal access tokens to authenticate](use-personal-access-tokens-to-authenticate.md)
-- [Get list of organizations connected to Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
+- [Revoke personal access tokens for organization users (for admins)](admin-revoke-user-pats.md)
+- [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md)
