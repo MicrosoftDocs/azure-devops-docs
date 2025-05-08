@@ -172,6 +172,22 @@ To view the information for the linked work items, enter one of the URLs listed 
 
 ---
 
+::: moniker range=">= azure-devops-2020"
+
+## Link work items to pull requests
+
+1. In the description of your pull request, enter `#` to trigger the `#ID` work item picker. A list displays 50 work items that you recently modified or are assigned to you.
+
+   :::image type="content" source="media/add-link/link-pr-to-work-item.png" alt-text="Screenshot of work item list produced when entering the symbol # in PR description.":::
+
+1. To narrow the list of suggested work items, enter up to five keywords that match the work item type, ID, or title.
+
+   :::image type="content" source="media/add-link/keyword-pr-link.png" alt-text="Screenshot of entering keyword after the symbol # and resulting work item in search.":::
+
+::: moniker-end
+
+For more information, see [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
+
 ## Link several work items
 
 1. From the web portal, open a [backlog](create-your-backlog.md) or [query results page](../queries/view-run-query.md).
@@ -247,22 +263,6 @@ Do the following steps to link work items to objects defined in other Azure DevO
 
    :::image type="content" source="media/add-link/links-tab-remote-links.png" alt-text="Screenshot of User Story form, Link tab, showing two external links.":::
 ::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
-
-## Link work items to pull requests
-
-1. In the description of your pull request, enter `#` to trigger the `#ID` work item picker. A list displays 50 work items that you recently modified or are assigned to you.
-
-   :::image type="content" source="media/add-link/link-pr-to-work-item.png" alt-text="Screenshot of work item list produced when entering the symbol # in PR description.":::
-
-1. To narrow the list of suggested work items, enter up to five keywords that match the work item type, ID, or title.
-
-   :::image type="content" source="media/add-link/keyword-pr-link.png" alt-text="Screenshot of entering keyword after the symbol # and resulting work item in search.":::
-
-::: moniker-end
-
-For more information, see [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
 
 <a id="link-github"></a>
 
@@ -396,7 +396,7 @@ Team Foundation Version Control (TFVC) allows you to link work items to version 
 
 Test-related link types link test case management work items to one another or to other work items. From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite and which test suites are defined for a test plan. These objects aren't linked to each other through link types.
 
-You can link work items to test cases using the **Tested/Tested By** link types. Use the same link controls you use to link work items to other work items. See [Link work items](#link-work-items).
+You can link work items to test cases using the **Tested/Tested By** link types. Use the same link controls you use to link work items to other work items.
 
 The following image shows the full set of link types that you can use with test management work item types. Most links between test management objects occur by running a task from the **Test** pages or Microsoft Test Manager.
 
@@ -414,7 +414,7 @@ From the **Test** section, you can add test plans, test suites, and test cases, 
 
 ## Link work items to a Web site, network share, storyboard, or document
 
-You can use a hyperlink or storyboard link type to link a work item to a website, network share, or document on a network share. Both link types are one-way links. To add these link types, use the same controls described earlier. See [Link work items](#link-work-items).
+You can use a hyperlink or storyboard link type to link a work item to a website, network share, or document on a network share. Both link types are one-way links. To add these link types, use the same controls described earlier.
 
 When using the storyboard link type, specify a storyboard or document that provides work item specifications. This link type allows your team to access the shared file and add their comments.
 
