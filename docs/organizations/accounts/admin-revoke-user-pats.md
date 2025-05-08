@@ -14,7 +14,9 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If a Personal Access Token (PAT) is compromised, it's crucial to act swiftly. Administrators can revoke a user's PAT to safeguard the organization. Disabling a user's account also revokes their PAT.
+If a Personal Access Token (PAT) is compromised, it's crucial to act swiftly. Administrators can revoke a user's PAT to safeguard the organization. Disabling a user's account also revokes their PAT. 
+
+Users can revoke their own PATs on their [Personal access token page](use-personal-access-tokens-to-authenticate.md#revoke-a-pat).
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
