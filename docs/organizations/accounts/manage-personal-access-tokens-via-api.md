@@ -14,20 +14,16 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-In general, we have been recommending Microsoft Entra tokens in place of personal access tokens. Most tokens related to 
+In general, we have been recommending more secure, short-lived [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md)_in place of the easily leakable [personal access tokens (PATs)](use-personal-access-tokens-to-authenticate.md) are used, Entra tokens are generally accepted, with increasing frequency.
 
-When you own a large set of [personal access tokens (PATs)](use-personal-access-tokens-to-authenticate.md), it might become complex to manage the maintenance of these tokens using the UI alone.
-
-With the PAT Lifecycle Management API, you can easily manage the PATs associated with your organizations using automated processes. This [rich set of APIs](/rest/api/azure/devops/tokens) lets you manage your PATs, allowing you to create new PATs and renew or expire existing PATs.
-
-In this article, we show you how to configure an application that [authenticates with a Microsoft Entra token](../../integrate/get-started/authentication/entra-oauth.md) and makes calls with the PAT Lifecycle API.
+There do remain scenarios where PATs may be needed and for those, we offer a [rich set of PAT Lifecycle Management APIs](/rest/api/azure/devops/tokens) that let you create, renew, or revoke PATs. This may be useful when maintaining these tokens through UI alone is not sustainable. This also opens the opportunity to programmatically rotate PATs regularly and in shorter durations.
 
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
-| Authentication | In general, a stronger "step-up authentication" is recommended when minting new tokens, which is why [Microsoft Entra access tokens](../../integrate/get-started/authentication/entra.md) are required to access this API. PATs cannot be used to create or regenerate PATs. |
-| User Identity | Only users or apps using an "on-behalf-of user" flow can generate PATs. Apps using "on-behalf-of application" flows (e.g. “client credential” flow) or authentication flows that do not issue Microsoft Entra access tokens are not valid for use with this API. As such, [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) cannot create or manage PATs. |
+| Authentication | In general, a stronger "step-up authentication" is recommended when minting new tokens, which is why [Microsoft Entra access tokens](../../integrate/get-started/authentication/entra.md) are required to access this API. PATs can't be used to create or regenerate PATs. |
+| User Identity | Only users or apps using an "on-behalf-of user" flow can generate PATs. Apps using "on-behalf-of application" flows or authentication flows that don't issue Microsoft Entra access tokens aren't valid for use with this API. As such, [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) can't create or manage PATs. |
 | Entra Tenant | Have a [Microsoft Entra tenant with an active Azure subscription](/azure/active-directory/develop/quickstart-create-new-tenant). |
 | Token Scope | Previously the PAT Lifecycle Management APIs only supported the `user_impersonation` scope, but now the `vso.tokens` are the recommended scope to use with these APIS. |
 
@@ -37,9 +33,7 @@ To call the API directly, provide a [Microsoft Entra access token](../../integra
 
 ## Clone our sample PAT rotation app
 
-We created a [sample Python Flask web app](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) that can be configured with your Microsoft Entra tenant and Azure DevOps organization. The sample app uses the [MSAL authorization code flow](/entra/identity-platform/msal-authentication-flows#authorization-code) to acquire a Microsoft Entra access token. If multi-factor authentication is enabled in your tenant, the [authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) must be used. 
-
-The sample app README explains how to register an app in your Microsoft Entra tenant, configure the app to use your Microsoft Entra tenant, and run your cloned app.
+We created a [sample Python Flask web app](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) that can be configured with your Microsoft Entra tenant and Azure DevOps organization. The sample app uses the [authorization code flow](/entra/identity-platform/msal-authentication-flows#authorization-code) to acquire a Microsoft Entra access token. If multifactor authentication is enabled in your tenant, the [authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) must be used. The README explains how to register an app in your Microsoft Entra tenant, configure it to use your tenant, and run the cloned app.
 
 ##  Frequently asked questions (FAQs)
 
@@ -52,7 +46,7 @@ To rotate your PAT, do the following steps:
 3. Revoke the old PAT using a **DELETE** call.
 
 ### Q: I see a "Need admin approval" pop-up when I try to use this app.
-Your tenant's security policies require admin consent before applications can access organization resources in the organization. You msut reach out to your tenant admin.
+Your tenant's security policies require admin consent before applications can access organization resources in the organization. Reach out to your tenant admin(s).
 
 ### Q: Can I use a service principal to create or manage PATs?
 No, personal access tokens belong to a user identity. Entra [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) can generate stronger authentication in the form of Entra tokens that can be used in most places where a PAT is accepted. Learn more about [our efforts to reduce PAT usage across Azure DevOps](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) and explore replacing PATs with Entra tokens.
