@@ -50,3 +50,11 @@ Your tenant's security policies require admin consent before applications can ac
 
 ### Q: Can I use a service principal to create or manage PATs?
 No, personal access tokens belong to a user identity. Entra [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) are able to generate short-lived Entra tokens that can be used in most places where a PAT is accepted. Learn more about [our efforts to reduce PAT usage across Azure DevOps](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) and explore replacing PATs with Entra tokens.
+
+
+## Related articles
+
+- [Use personal access tokens to authenticate](use-personal-access-tokens-to-authenticate.md)
+- [Manage personal access tokens with policies (for admins)](manage-pats-with-policies-for-administrators.md)
+- [Revoke personal access tokens for organization users (for admins)](admin-revoke-user-pats.md)
+- [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md)
