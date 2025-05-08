@@ -114,7 +114,7 @@ landingContent:
             url: ./github/link-to-from-github.md
       - linkListType: concept
         links:
-          - text: Link work items to other objects
+          - text: Link work items to objects
             url: ./backlogs/add-link.md
       - linkListType: tutorial
         links:
