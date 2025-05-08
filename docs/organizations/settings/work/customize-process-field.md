@@ -48,7 +48,7 @@ Each process can define up to 1,024 fields, including system and inherited field
 
 1. From the **Process** page of the selected inherited process, select the work item type (WIT) where you want to add the custom field.
 
-   Here, we select the Bug WIT. Notice the breadcrumb links that allow you to navigate back to **All Processes** and the **MyAgile** process page.
+   In the following example, we select the Bug WIT. Notice the breadcrumb links that allow you to navigate back to **All Processes** and the **MyAgile** process page.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot shows breadcrumb links for All Processes, Process, and WIT.](media/field/breadcrumbs-bug-wit.png)
@@ -121,7 +121,7 @@ Each organization or collection can define up to 2,048 picklists. Each picklist 
 	
 	::: moniker-end
 
-2. (Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#options).
+2. (Optional) Specify [required or default values](#required-default) and [choose where the field appears on the form](#options).
 
 	![Screenshot shows Allow values in a custom picklist.](media/process/add-a-field-pick-list-options.png)
 
@@ -135,7 +135,7 @@ Select ![add new field icon](media/process/new-field-icon.png) **New field**, th
 
    ![Screenshot shows Add a field to Bug dialog, Definition tab, Add an Identity field.](media/process/cpfield-identity.png)
  
-(Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#options). 
+(Optional) Specify [required or default values](#required-default) and [choose where the field appears on the form](#options). 
 
 <a id="html">  </a>
 
@@ -152,7 +152,7 @@ Select ![add new field icon](media/process/new-field-icon.png) **New field**, th
    > [!div class="mx-imgBorder"]  
    > ![Screenshot shows Bug form, Customer request field added to first column in form.](media/process/customize-process-field-show-custom-html-field-up1.png)
 
-4. (Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#options).
+4. (Optional) Specify [required or default values](#required-default) and [choose where the field appears on the form](#options).
 
 <a id="boolean-field">  </a>
 
@@ -185,7 +185,7 @@ In the following example, we add the *Customer Ticket* field to the User Story W
 
 ![Screenshot shows adding existing field to a User Story.](media/process/cpfield-add-existing-field.png)
 
-(Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#options). 
+(Optional) Specify [required or default values](#required-default) and [choose where the field appears on the form](#options). 
 
 <a id="rename-field">  </a>
 
@@ -291,7 +291,7 @@ Deleting a field removes all associated data, including historical values. There
 
 To delete a custom field, do the following steps:
 
-1. Select **Organization settings** > **Process** > **Fields** > :::image type="icon" source="docs/media/icons/more-actions.png" border="false"::: > **Delete**.  
+1. Select **Organization settings** > **Process** > **Fields** > :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: **More actions** > **Delete**.  
 
 	![Delete field](media/process/cpfield-delete-field.png) 
 
