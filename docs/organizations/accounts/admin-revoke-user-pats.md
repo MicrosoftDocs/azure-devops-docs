@@ -77,4 +77,6 @@ A: If you have JWTs that you believe should be revoked, we recommend doing so pr
 ## Related articles
 
 - [Learn how Microsoft protects your projects and data in Azure DevOps](../../organizations/security/data-protection.md)
-- [Create or revoke PATs](use-personal-access-tokens-to-authenticate.md)
+- [Use personal access tokens to authenticate](use-personal-access-tokens-to-authenticate.md)
+- [Manage personal access tokens with policies (for admins)](manage-pats-with-policies-for-administrators.md)
+- [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md)
