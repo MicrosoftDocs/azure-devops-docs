@@ -1,5 +1,5 @@
 ---
-title: Query for linked work items 
+title: Query for Linked Work Items 
 titleSuffix: Azure DevOps 
 description: Learn how to create a query for linked work items using Analytics for Azure DevOps.
 ms.subservice: azure-devops-analytics
@@ -8,22 +8,22 @@ ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 10/26/2022
+ms.date: 05/09/2025
 ---
 
-# Query for linked work items 
+# Tutorial: Query for linked work items 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there's some extra complexity.
 
-There are two ways to query for linked work items. The first is the Parent/Child hierarchy, and the second is the Links navigation property.  
+There are two ways to query for linked work items. The first is the Parent/Child hierarchy, and the second is the Links navigation property.
 
-In this article you'll learn: 
+In this tutorial you:
 
 > [!div class="checklist"]
-> * How to construct a query to return hierarchically (parent-child) linked work items
-> * How to construct a query to return non-hierarchically (related, direct) linked work items 
+> * Construct a query to return hierarchically (parent-child) linked work items
+> * Construct a query to return non-hierarchically (related, direct) linked work items 
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
@@ -34,12 +34,13 @@ In this article you'll learn:
 ::: moniker range=" < azure-devops"
 
 > [!NOTE]
-> The examples shown in this article are based on an Azure DevOps Services URL. For Azure DevOps Server, you need to substitute the URL for the on-premises server.
+> The examples in this article use an Azure DevOps Services URL in the following format:
 > 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
-> ```
+> `https://analytics.dev.azure.com/{organization-name}/{project-name}/_odata/{version}`
+>
+> For Azure DevOps Server, instead use the following format, which includes the on-premises server:
+> 
+> `https://{server-name}:{port}/tfs/{organization-name}/{project-name}/_odata/{version}`
 
 ::: moniker-end
 
@@ -54,10 +55,9 @@ The following code snippet requests to return the children of work item ID 359 f
 
 **Request**
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId eq 359&$select=WorkItemId, Title, WorkItemType, State&$expand=Children($select=WorkItemId,Title, WorkItemType, State)
-> ```
+```odata
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId eq 359&$select=WorkItemId, Title, WorkItemType, State&$expand=Children($select=WorkItemId,Title, WorkItemType, State)
+```
 
 The response returns features 479 and 480, which are children of the epic 359.  
 
@@ -65,30 +65,33 @@ The response returns features 479 and 480, which are children of the epic 359.
 
 **Response**
 
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> @odata.context	"https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Children(WorkItemId,Title,WorkItemType,State))"
-> vsts.warnings@odata.type	"#Collection(String)"
-> @vsts.warnings	
-> 0	"VS403508: Using the Parent, Children, Descendants or Revision properties in a filter or expand is not recommended. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."
-> value	
->  0	
->    WorkItemId	359
->    Title	"Phase 1 - Customer access and engagement 5"
->    WorkItemType	"Epic"
->    State	"In Progress"
->    Children	
->       0	
->         WorkItemId	480
->         Title	"Customer Phone - Phase 1"
->         WorkItemType	"Feature"
->         State	"In Progress"
->       1	
->         WorkItemId	479
->         Title	"Customer Web - Phase 1"
->         WorkItemType	"Feature"
->         State	"In Progress"
-> ```
+```json
+{
+    "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Children(WorkItemId,Title,WorkItemType,State))",
+    "vsts.warnings@odata.type": "#Collection(String)",
+    "@vsts.warnings": [
+        "VS403508: Using the Parent, Children, Descendants or Revision properties in a filter or expand is not recommended. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."
+    ],
+    "value": [{
+        "WorkItemId": 359,
+        "Title": "Phase 1 - Customer access and engagement 5",
+        "WorkItemType": "Epic",
+        "State": "In Progress",
+        "Children": [{
+            "WorkItemId": 480,
+            "Title": "Customer Phone - Phase 1",
+            "WorkItemType": "Feature",
+            "State": "In Progress"
+        },
+        {
+            "WorkItemId": 479,
+            "Title": "Customer Web - Phase 1",
+            "WorkItemType": "Feature",
+            "State": "In Progress"
+        }]
+    }]
+}
+```
 
 ### Example: Child to parent query
 
@@ -98,33 +101,35 @@ The following query requests to return the parent of work item ID 1048 from the 
 
 **Request**
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,WorkItemType, State)&$filter=WorkItemId eq 1048
-> ```
+```odata
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$expand=Parent($select=WorkItemId,Title,WorkItemType, State)&$filter=WorkItemId eq 1048
+```
 
 The response returns feature 480, which is the parent to product backlog item 1048.  
 
 **Response**
 
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> @odata.context	"https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Parent(WorkItemId,Title,WorkItemType,State))"
-> vsts.warnings@odata.type	"#Collection(String)"
-> @vsts.warnings	
-> 0	"VS403508: Using the Parent, Children, Descendants or Revision properties in a filter or expand is not recommended. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."
-> value	
->   0	
->      WorkItemId	1048
->      Title	"Support reset"
->      WorkItemType	"Product Backlog Item"
->      State	"New"
->      Parent	
->         WorkItemId	480
->         Title	"Customer Phone - Phase 1"
->         WorkItemType	"Feature"
->         State	"In Progress"
-> ```
+```json
+{
+    "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Parent(WorkItemId,Title,WorkItemType,State))",
+    "vsts.warnings@odata.type": "#Collection(String)",
+    "@vsts.warnings": [
+        "VS403508: Using the Parent, Children, Descendants or Revision properties in a filter or expand is not recommended. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."
+    ],
+    "value": [{
+        "WorkItemId": 1048,
+        "Title": "Support reset",
+        "WorkItemType": "Product Backlog Item",
+        "State": "New",
+        "Parent": {
+                "WorkItemId": 480,
+                "Title": "Customer Phone - Phase 1",
+                "WorkItemType": "Feature",
+                "State": "In Progress"
+        }
+    }]
+}
+```
  
 ## Query for non-hierarchical links
 
@@ -136,42 +141,43 @@ To retrieve the links associated with an item, you can ```$expand``` the **Links
 
 **Request**
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20363&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName)
-> ```
+```odata
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20363&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName)
+```
 
 **Response**
 
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> {
->     "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName))",
->     "value": [{
->         "WorkItemId": 363,
->         "Title": "Welcome back page",
->         "WorkItemType": "Product Backlog Item",
->         "State": "Done",
->         "Links": [{
->             "SourceWorkItemId": 363,
->             "TargetWorkItemId": 400,
->             "LinkTypeName": "Related"
->         }, {
->             "SourceWorkItemId": 363,
->             "TargetWorkItemId": 470,
->             "LinkTypeName": "Tested By"
->         }, {
->             "SourceWorkItemId": 363,
->             "TargetWorkItemId": 501,
->             "LinkTypeName": "Related"
->         }, {
->             "SourceWorkItemId": 363,
->             "TargetWorkItemId": 1079,
->             "LinkTypeName": "Tested By"
->         }
->     }]
-> }
-> ```
+```json
+{
+    "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName))",
+    "value": [{
+        "WorkItemId": 363,
+        "Title": "Welcome back page",
+        "WorkItemType": "Product Backlog Item",
+        "State": "Done",
+        "Links": [{
+            "SourceWorkItemId": 363,
+            "TargetWorkItemId": 400,
+            "LinkTypeName": "Related"
+        },
+        {
+            "SourceWorkItemId": 363,
+            "TargetWorkItemId": 470,
+            "LinkTypeName": "Tested By"
+        },
+        {
+            "SourceWorkItemId": 363,
+            "TargetWorkItemId": 501,
+            "LinkTypeName": "Related"
+        },
+        {
+            "SourceWorkItemId": 363,
+            "TargetWorkItemId": 1079,
+            "LinkTypeName": "Tested By"
+        }]
+    }]
+}
+```
 
 ### Example: Request details of linked items
 
@@ -179,62 +185,60 @@ You can include the details of your linked work items by using ```$expand``` on 
 
 **Request**
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$expand=TargetWorkItem($select=WorkItemId,Title,State))
-> ```
+```odata
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$expand=TargetWorkItem($select=WorkItemId,Title,State))
+```
 
 **Response**
 
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> {
->     "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
->     "value": [{
->         "WorkItemId": 103,
->         "Title": "Feature Y",
->         "WorkItemType": "Feature",
->         "State": "New",
->         "Links": [{
->             "SourceWorkItemId": 103,
->             "TargetWorkItemId": 48,
->             "LinkTypeName": "Child",
->             "TargetWorkItem": {
->                 "WorkItemId": 48,
->                 "Title": "Story 15",
->                 "State": "Resolved"
->             }
->         }, {
->             "SourceWorkItemId": 103,
->             "TargetWorkItemId": 50,
->             "LinkTypeName": "Child",
->             "TargetWorkItem": {
->                 "WorkItemId": 50,
->                 "Title": "Story 17",
->                 "State": "Active"
->             }
->         }, {
->             "SourceWorkItemId": 103,
->             "TargetWorkItemId": 55,
->             "LinkTypeName": "Child",
->             "TargetWorkItem": {
->                 "WorkItemId": 55,
->                 "Title": "Story 22",
->                 "State": "New"
->             }
->         }, {
->             "SourceWorkItemId": 103,
->             "TargetWorkItemId": 112,
->             "LinkTypeName": "Related",
->             "TargetWorkItem": {
->                 "WorkItemId": 112,
->                 "Title": "Some issue",
->                 "State": "Active"
->             }
->         }]
->     }]
-> }
-> ```
+```json
+{
+    "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
+    "value": [{
+        "WorkItemId": 103,
+        "Title": "Feature Y",
+        "WorkItemType": "Feature",
+        "State": "New",
+        "Links": [{
+            "SourceWorkItemId": 103,
+            "TargetWorkItemId": 48,
+            "LinkTypeName": "Child",
+            "TargetWorkItem": {
+                "WorkItemId": 48,
+                "Title": "Story 15",
+                "State": "Resolved"
+            }
+        }, {
+            "SourceWorkItemId": 103,
+            "TargetWorkItemId": 50,
+            "LinkTypeName": "Child",
+            "TargetWorkItem": {
+                "WorkItemId": 50,
+                "Title": "Story 17",
+                "State": "Active"
+            }
+        }, {
+            "SourceWorkItemId": 103,
+            "TargetWorkItemId": 55,
+            "LinkTypeName": "Child",
+            "TargetWorkItem": {
+                "WorkItemId": 55,
+                "Title": "Story 22",
+                "State": "New"
+            }
+        }, {
+            "SourceWorkItemId": 103,
+            "TargetWorkItemId": 112,
+            "LinkTypeName": "Related",
+            "TargetWorkItem": {
+                "WorkItemId": 112,
+                "Title": "Some issue",
+                "State": "Active"
+            }
+        }]
+    }]
+}
+```
 
 ### Example: Links of a specific type
 
@@ -242,35 +246,33 @@ You may also be interested in a particular type of link between items. Specify t
 
 **Request**
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId eq 103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
-> ```
+```odata
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId eq 103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
+```
 
 **Response**
 
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> {
->     "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
->     "value": [{
->         "WorkItemId": 103,
->         "Title": "Feature Y",
->         "WorkItemType": "Feature",
->         "State": "New",
->         "Links": [{
->             "SourceWorkItemId": 103,
->             "TargetWorkItemId": 112,
->             "LinkTypeName": "Related",
->             "TargetWorkItem": {
->                 "WorkItemId": 112,
->                 "Title": "Some issue",
->                 "State": "Active"
->             }
->         }]
->     }]
-> }
-> ```
+```json
+{
+    "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
+    "value": [{
+        "WorkItemId": 103,
+        "Title": "Feature Y1",
+        "WorkItemType": "Feature",
+        "State": "Active",
+        "Links": [{
+            "SourceWorkItemId": 103,
+            "TargetWorkItemId": 112,
+            "LinkTypeName": "Related",
+            "TargetWorkItem": {
+                "WorkItemId": 112,
+                "Title": "Feature Y2",
+                "State": "New"
+            }
+        }]
+    }]
+}
+```
 
 ## Next steps
 
