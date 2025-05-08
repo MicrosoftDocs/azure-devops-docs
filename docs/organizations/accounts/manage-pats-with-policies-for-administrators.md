@@ -102,7 +102,7 @@ The policy also blocks global PAT usage in the organization. Global PAT users mu
 
 4. If your organization members regularly make use of packaging PATs, select the *Allow creation of PAT with packaging scope only* checkbox. Common packaging scenarios have not fully moved to Entra-based authentication, and may still rely on PATs.
 
-5. If any Microsoft Entra users or groups require continued access to PATs, add them to the allowlist by selecting *Manage* and searching for the user or group in the dropdown. Select the checkbox next to *Allow creation of PAT of any scope for selected Microsoft Entra users and groups* once the allowlist updates are complete.
+5. If any Microsoft Entra users or groups require continued access to PATs, add them to the allowlist by selecting *Manage* and searching for the user or group in the dropdown. Once allowlist updates are complete, select the checkbox next to *Allow creation of PAT of any scope for selected Microsoft Entra users and groups*.
 
 7. Move the toggle to *on* in order for the restriction policy to apply. Selected subpolicies won't apply until the toggle is on.
 
