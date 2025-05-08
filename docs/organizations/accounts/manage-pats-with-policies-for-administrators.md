@@ -11,7 +11,7 @@ ms.date: 10/24/2024
 monikerRange: 'azure-devops'
 ---
 
-# Use policies to manage personal access tokens for users
+# Manage personal access tokens using policies (for admins)
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -135,5 +135,5 @@ The policy is disabled and any PATs checked into public GitHub repositories rema
 ## Related articles
 - [Restrict organization creation with Microsoft Entra tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Use personal access tokens to authenticate](use-personal-access-tokens-to-authenticate.md)
-- [Revoke personal access tokens for organization users (for admins)](admin-revoke-user-pats.md)
+- [Revoke organization users' personal access tokens (for admins)](admin-revoke-user-pats.md)
 - [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md)
