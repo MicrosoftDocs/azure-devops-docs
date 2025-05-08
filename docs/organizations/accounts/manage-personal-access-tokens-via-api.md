@@ -14,9 +14,9 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-In general, we have been recommending more secure, short-lived [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md)_in place of the easily leakable [personal access tokens (PATs)](use-personal-access-tokens-to-authenticate.md) are used, Entra tokens are generally accepted, with increasing frequency.
+We have been recommending more secure, short-lived [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md)_in place of the easily leakable [personal access tokens (PATs)](use-personal-access-tokens-to-authenticate.md). Wherever PATs are used, Entra tokens are accepted with increasing frequency.
 
-There do remain scenarios where PATs may be needed and for those, we offer a [rich set of PAT Lifecycle Management APIs](/rest/api/azure/devops/tokens) that let you create, renew, or revoke PATs. This may be useful when maintaining these tokens through UI alone is not sustainable. This also opens the opportunity to programmatically rotate PATs regularly and in shorter durations.
+Scenarios remain where PATs are still needed. For those, we offer a [rich set of PAT Lifecycle Management APIs](/rest/api/azure/devops/tokens) that let you create, renew, or revoke PATs. These APIs may be useful when maintaining large volumes of tokens through UI is unsustainable. They also opens the opportunity to programmatically rotate PATs regularly, offering them shorter lifespans.
 
 ## Prerequisites
 
