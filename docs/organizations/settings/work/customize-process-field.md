@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
 ms.topic: how-to
-ms.date: 05/07/2025
+ms.date: 05/08/2025
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -72,7 +72,7 @@ Each process can define up to 1,024 fields, including system and inherited field
 4. (Optional) On the **Options** tab, indicate whether the field is required and specify a default value. If left blank, the field remains optional. When you make a field **Required**, users must specify a value to save the work item. The default value is set when a work item is created or opened, and the field is empty.
 
    ![Screenshot shows setting options for the Customer Ticket field.](media/process/cpfield-bug-customer-ticket-options.png)
-<a id="optional">  </a>
+<a id="options">  </a>
 
 5. (Optional) On the **Layout** tab, you can specify a different form label than the field name. You can also choose the page and group where the field appears on the form.
 
@@ -121,7 +121,7 @@ Each organization or collection can define up to 2,048 picklists. Each picklist 
 	
 	::: moniker-end
 
-2. (Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#optional).
+2. (Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#options).
 
 	![Screenshot shows Allow values in a custom picklist.](media/process/add-a-field-pick-list-options.png)
 
@@ -135,7 +135,7 @@ Select ![add new field icon](media/process/new-field-icon.png) **New field**, th
 
    ![Screenshot shows Add a field to Bug dialog, Definition tab, Add an Identity field.](media/process/cpfield-identity.png)
  
-(Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#optional). 
+(Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#options). 
 
 <a id="html">  </a>
 
@@ -152,7 +152,7 @@ Select ![add new field icon](media/process/new-field-icon.png) **New field**, th
    > [!div class="mx-imgBorder"]  
    > ![Screenshot shows Bug form, Customer request field added to first column in form.](media/process/customize-process-field-show-custom-html-field-up1.png)
 
-4. (Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#optional).
+4. (Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#options).
 
 <a id="boolean-field">  </a>
 
@@ -185,7 +185,7 @@ In the following example, we add the *Customer Ticket* field to the User Story W
 
 ![Screenshot shows adding existing field to a User Story.](media/process/cpfield-add-existing-field.png)
 
-(Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#optional). 
+(Optional) Specify [required or default values](required-default) and [choose where the field appears on the form](#options). 
 
 <a id="rename-field">  </a>
 
