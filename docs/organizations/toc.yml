@@ -25,7 +25,8 @@
   - name: Set personal favorites
     displayName: project, team, backlog, dashboard, view, query, repository, pipeline, test plan
     href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json
-- name: Integrations
+- name: User integrations
+  items:
   - name: Authenticate with personal access tokens
     displayName: alternate, password, create, modify, revoke
     href: ./accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json
