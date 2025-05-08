@@ -2,7 +2,7 @@
 title: Link work items to objects
 titleSuffix: Azure Boards
 description: Learn how to link work items to user stories, bugs, remote work items, a git branch, and other elements in Azure Boards.
-ms.custom: cross-project, devx-track-azurecli, engagement-fy24
+ms.custom: cross-project, devx-track-azurecli, engagement-fy24, peer-review
 ms.service: azure-devops-boards
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ai-usage: ai-assisted
@@ -61,7 +61,7 @@ The following types of links help you manage the relationships between work item
 
 For more information about work link types, including remote link types, hyperlinks, attached files, parent/child, related, and predecessor-successor, see [Work link types](../queries/link-type-reference.md#work-link-type). For a list of all link types that you can specify using the Azure DevOps SLI, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command.
 
-### Ways to manage parent/child links
+### Manage parent/child links
 
 You can use various features to link or modify links that use the **Parent/Child** link type. Some features depend on the version of Azure DevOps you are using. Refer to the following options for managing these links:
 
