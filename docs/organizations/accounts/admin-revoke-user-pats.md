@@ -10,7 +10,7 @@ ms.date: 10/22/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Revoke personal access tokens for organization users
+# Revoke organization user's personal access tokens (for admins)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
