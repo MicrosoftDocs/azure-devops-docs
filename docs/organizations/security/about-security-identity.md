@@ -1,5 +1,5 @@
 ---
-title: About security, authentication, authorization, and security policies 
+title: About authentication, authorization, and security policies 
 titleSuffix: Azure DevOps
 description: Learn how Azure DevOps manages security through authentication, authorization, and policies 
 ms.subservice: azure-devops-security
@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 ms.date: 07/11/2024
 ---
 
-# About security, authentication, and authorization 
+# About authentication, authorization, and security policies
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -152,7 +152,9 @@ For on-premises deployments, AD is recommended for managing a large group of use
 Other applications and services can integrate with Azure DevOps. To access your account without repeatedly asking for user credentials, apps can use the following authentication methods:
 
 - [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens on users' behalf for accessing [REST APIs](/rest/api/azure/devops/).
-  - There are two OAuth app models available: **Azure DevOps OAuth is planned for deprecation in 2026. Use [Microsoft Entra OAuth](../../integrate/get-started/authentication/entra-oauth.md) to build on-behalf-of user apps.**
+  - There are two OAuth app models available:
+    - [Azure DevOps OAuth](../../integrate/get-started/authentication/azure-devops-oauth.md) is planned for deprecation in 2026.
+    - Use [Microsoft Entra OAuth](../../integrate/get-started/authentication/entra-oauth.md) to build on-behalf-of user apps.
   - You can also generate Microsoft Entra tokens for ad-hoc operations on your own behalf, for accessing resources like builds or work items or accessing [Azure DevOps REST APIs](/rest/api/azure/devops/).
 
 - [Service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) to generate Microsoft Entra tokens on behalf of an application or service, typically automating workflows that need to access Azure DevOps resources. Most actions traditionally performed by a service account and a PAT can be done using a service principal or managed identity.
