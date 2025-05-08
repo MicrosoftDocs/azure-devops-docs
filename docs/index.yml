@@ -223,6 +223,8 @@ additionalContent:
               url: ./organizations/security/access-levels.md
             - text: Billing overview
               url: ./organizations/billing/overview.md
+            - text: About authentication, authorization, and security policies
+              url: ./organizations/security/about-security-identity.md
             - text: Add or remove users or groups 
               url: ./organizations/security/add-remove-manage-user-group-security-group.md
             - text: Change project-level permissions
