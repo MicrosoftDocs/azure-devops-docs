@@ -78,7 +78,7 @@ During the lifespan of a PAT, users receive two notifications: at time of creati
 
 After you create a PAT, you may receive a notification similar to below. This notification serves as confirmation that your PAT was successfully added to your organization.
 
-   :::image type="content" source="../media/use-personal-access-tokens-to-authenticate/pat-creation.png" alt-text="Screenshot showing PAT created notification.":::
+   :::image type="content" source="media/use-personal-access-tokens-to-authenticate/pat-creation.png" alt-text="Screenshot showing PAT created notification.":::
 
 An expiration notification email will be sent three days prior to expiration. If your admin has [removed your ability to create PATs in the organization](manage-pats-with-policies-for-administrators.md), the email will indicate that it is no longer possible for you to regenerate PATs. Reach out to your [Project Collection Administrator](../security/look-up-project-collection-administrators.md) to be included in an allowlist for continued PAT creation permissions in that organization.
 
@@ -108,7 +108,7 @@ Your PAT serves as your digital identity, much like a password. You can use PATs
 
 > [!IMPORTANT]
 > Once your app code is working, switch to [Microsoft Entra OAuth to acquire tokens on-behalf-of your app's users](../../integrate/get-started/authentication/entra-oauth.md) or a [service principal or managed identity to acquire tokens as an application](../../integrate/get-started/authentication/service-principal-managed-identity.md). It is not recommended to keep running apps or scripts with PATs long-term. Microsoft Entra tokens can be used anywhere a PAT is used.
-> Consider [acquiring a Microsoft Entra token via the Azure CLI](/integrate/get-started/authentication/entra.md#ad-hoc-requests-to-azure-devops-rest-apis) for ad-hoc requests.
+> Consider [acquiring a Microsoft Entra token via the Azure CLI](../../integrate/get-started/authentication/entra.md#ad-hoc-requests-to-azure-devops-rest-apis) for ad-hoc requests.
 
 #### [Windows](#tab/Windows/)
 
@@ -127,16 +127,6 @@ The following sample gets a list of builds using curl.
 
 curl -u :{PAT} https://dev.azure.com/{organization}/_apis/build-release/builds
 ```
-
-***
-
-Some more examples of how to use PATs can be found in the following articles:
-
-- [Authenticate with your Git repos](../../git/repos/auth-overview.md)
-- [Set up Git credential managers (GCM) to connect with Git repositories](../../git/repos/set-up-credential-managers.md)
-- [Use NuGet on a Mac](../../artifacts/nuget/consume.md)
-- [Authenticate reporting clients](../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
-- [Get started with Azure DevOps CLI](../../cli/index.md)
 
 ## Modify a PAT
 
