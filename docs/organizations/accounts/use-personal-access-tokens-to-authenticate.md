@@ -146,11 +146,9 @@ Do the following steps to:
 - Extend a PAT to increase its validity period.
 - Alter the [scope](../../integrate/get-started/authentication/oauth.md#scopes) of a PAT to change its permissions.
 
-1. From your home page, open your user settings, and then select **Profile**.
+1. From your home page, open user settings :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
-   :::image type="content" source="media/my-profile-team-services-preview.png" alt-text="Screenshot showing sequence of buttons to select to modify a PAT.":::
-
-2. Under Security, select **Personal access tokens**. Select the token you want to modify, and then  **Edit**.
+2. Select the token you want to modify, and then  **Edit**.
 
    :::image type="content" source="media/pats/select-edit-pat-current-view.png" alt-text="Screenshot showing highlighted Edit button to modify PAT.":::
 
@@ -166,9 +164,7 @@ You can revoke a PAT at any time for these and other reasons:
 - Revoke a PAT when it's no longer needed.
 - Revoke a PAT to enforce security policies or compliance requirements.
 
-1. From your home page, open your user settings, and then select **Profile**.
-
-   :::image type="content" source="media/my-profile-team-services-preview.png" alt-text="Screenshot showing sequence of buttons to select, Team Services, Preview page, and revoke a PAT.":::
+1. From your home page, open user settings :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
 2. Under Security, select **Personal access tokens**. Select the token for which you want to revoke access, and then select **Revoke**.
 
