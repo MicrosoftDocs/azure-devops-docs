@@ -304,6 +304,8 @@ additionalContent:
           links:
             - text: Authentication overview
               url: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
+            - text: Building Azure DevOps applications
+              url: ../integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Discover extensions
               url: ./extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Develop extensions
@@ -313,7 +315,7 @@ additionalContent:
             - text: See more >
               url: ./marketplace-extensibility/index.yml
         # Card
-        - title: Developer resources
+        - title: Developing on Azure DevOps
           links:
             - text: Azure DevOps CLI 
               url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json
@@ -325,7 +327,7 @@ additionalContent:
               url: ./repos/tfvc/use-team-foundation-version-control-commands.md
             - text: Azure DevOps Services Demo Generator
               url: ./demo-gen/index.md?toc=/azure/devops/dev-resources/toc.json
-            - text: REST APIs
+            - text: REST API Reference
               url: /rest/api/vsts/
             - text: DevOps resource center
               url: /devops
