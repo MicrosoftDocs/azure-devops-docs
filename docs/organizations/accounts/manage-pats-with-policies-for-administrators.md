@@ -100,11 +100,11 @@ The policy also blocks global PAT usage in the organization. Global PAT users mu
 
 3. Select **Policies**, find the *Restrict personal access token (PAT) creation* policy.
 
-   :::image type="content" source="media/policies/disable-pat-policy.png" alt-text="Screenshot of toggle moved to on position and subpolicies checked for Restrict personal access token creation policy.":::
+   :::image type="content" source="media/disable-pat-policy/disable-pat-policy.png" alt-text="Screenshot of toggle moved to on position and subpolicies checked for Restrict personal access token creation policy.":::
 
 4. If your organization members regularly make use of packaging PATs, select the *Allow creation of PAT with packaging scope only* checkbox. Common packaging scenarios have not fully moved to Entra-based authentication, and may still rely on PATs. If this policy is enabled, users not on the allowlist will see only packaging scopes available to them on their "Personal access tokens" page.
 
-   :::image type="content" source="media/policies/disable-pat-packaging-only.png" alt-text="Screenshot of packaging scopes available only on the user's Create a new personal access token modal.":::
+   :::image type="content" source="media/disable-pat-policy/disable-pat-packaging-only.png" alt-text="Screenshot of packaging scopes available only on the user's Create a new personal access token modal.":::
 
 6. If any Microsoft Entra users or groups require continued access to PATs, add them to the allowlist by selecting *Manage* and searching for the user or group in the dropdown. Once allowlist updates are complete, select the checkbox next to *Allow creation of PAT of any scope for selected Microsoft Entra users and groups*.
 
