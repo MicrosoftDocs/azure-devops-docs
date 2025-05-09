@@ -108,8 +108,8 @@ If you receive an unexpected PAT notification, it might mean that an administrat
 Your PAT serves as your digital identity, much like a password. You can use PATs as a quick way to do one-off requests or prototype an application locally. Use a PAT in your code to authenticate [REST APIs](/rest/api/azure/devops) requests and automate workflows by including the PAT in the authorization header of your request.
 
 > [!IMPORTANT]
-> For ad-hoc requests, consider [acquiring a Microsoft Entra token via the Azure CLI](/integrate/get-started/authentication/entra.md#ad-hoc-requests-to-azure-devops-rest-apis).
-> For apps, once your code is working, switch to [Microsoft Entra OAuth to acquire tokens on-behalf-of your app's users](/integrate/get-started/authentication/entra-oauth.md) or a [service principal or managed identity to acquire tokens as an application](/integrate/get-started/authentication/service-principal-managed-identity.md). It is not recommended to keep running apps or scripts with PATs long-term. Microsoft Entra tokens can be used anywhere a PAT is.
+> Once your app code is working, switch to [Microsoft Entra OAuth to acquire tokens on-behalf-of your app's users](/integrate/get-started/authentication/entra-oauth.md) or a [service principal or managed identity to acquire tokens as an application](/integrate/get-started/authentication/service-principal-managed-identity.md). It is not recommended to keep running apps or scripts with PATs long-term. Microsoft Entra tokens can be used anywhere a PAT is used.
+> Consider [acquiring a Microsoft Entra token via the Azure CLI](/integrate/get-started/authentication/entra.md#ad-hoc-requests-to-azure-devops-rest-apis) for ad-hoc requests.
 
 #### [Windows](#tab/Windows/)
 
