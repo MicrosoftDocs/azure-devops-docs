@@ -92,7 +92,7 @@ landingContent:
             url: ../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/cross-service/toc.json
       - linkListType: how-to-guide
         links:
-          - text: Link work items to other objects
+          - text: Link work items to objects
             url: ../boards/backlogs/add-link.md?toc=/azure/devops/cross-service/toc.json
           - text: Link objects to work items
             url: ../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/cross-service/toc.json
