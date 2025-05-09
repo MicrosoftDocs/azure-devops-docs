@@ -33,10 +33,10 @@ landingContent:
             url: ../integrate/get-started/authentication/entra.md
           - text: Authenticate with personal access tokens (PATs)
             url: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
-          - name: Authenticate with OAuth 2.0
-            href: ../integrate/get-started/authentication/oauth.md
-          - name: Authenticate with service principals
-            href: ../integrate/get-started/authentication/service-principal-managed-identity.md
+          - text: Authenticate with OAuth 2.0
+            url: ../integrate/get-started/authentication/oauth.md
+          - text: Authenticate with service principals
+            url: ../integrate/get-started/authentication/service-principal-managed-identity.md
       - linkListType: reference
         links:
           - text: Azure DevOps REST API Reference
