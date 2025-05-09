@@ -186,15 +186,15 @@ For more information, see [Security namespaces and permission reference](namespa
 ::: moniker range="azure-devops"
 
 To secure your organization and code, you can enable or disable various policies if you are a organization-level ([Project Collection Administrator](look-up-project-collection-administrators.md) or tenant-level ([Azure DevOps Administrator](/entra/identity/role-based-access-control/permissions-reference#azure-devops-administrator)) admin, depending on the policy. Some notable ones to consider include:
-- [Specify a privacy policy URL](../accounts/add-privacy-policy-url.md) that links to your custom document that describes how you handle both internal and external guest data privacy.
+- [Specify a privacy policy URL](../accounts/add-privacy-policy-url.md) that describes how you handle both internal and external guest data privacy.
 - Determine if organization users should be [allowed to create public projects](../projects/make-project-public.md).
-- Track [auditing events and streams](../audit/azure-devops-auditing.md) in your organization.
 
 If the organization is connected to Microsoft Entra ID, even more security features are available to your organization.
-- [Enable Conditional Access policy (CAP) validation](../accounts/change-application-access-policies.md#cap-support-on-azure-devops).
+- [Restrict organization creation to specific users](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
 - [Invite external guests to the organization](../accounts/add-external-user.md)
 - [Allow team and project administrators to invite new users](restrict-invitations.md)
-- [Restrict organization creation to specific users](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+- [Enable Conditional Access policy (CAP) validation](../accounts/change-application-access-policies.md#cap-support-on-azure-devops).
+- Track [auditing events and streams](../audit/azure-devops-auditing.md) in your organization.
 
 <a id="project-scoped-user-group"></a> 
 
