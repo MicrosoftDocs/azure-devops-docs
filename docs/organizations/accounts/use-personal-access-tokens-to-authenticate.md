@@ -40,24 +40,24 @@ You can manage PATs through the following methods:
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
   
-2. From your home page, open user settings :::image type="icon" source="/media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
+2. From your home page, open user settings :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
-   :::image type="content" source="/media/select-personal-access-tokens.png" alt-text="Screenshot showing selection, Personal Access Tokens.":::
+   :::image type="content" source="/media/pats/select-personal-access-tokens.png" alt-text="Screenshot showing selection, Personal Access Tokens.":::
 
 3. Select **+ New Token**.
 
-   :::image type="content" source="/media/select-new-token.png" alt-text="Screenshot showing selection, New Token.":::
+   :::image type="content" source="/media/pats/select-new-token.png" alt-text="Screenshot showing selection, New Token.":::
 
 4. Name your token, select the organization where you want to use the token, and then set your token to automatically expire after a set number of days.
 
-   :::image type="content" source="/media/create-new-pat.png" alt-text="Screenshot showing entry of basic token information.":::
+   :::image type="content" source="/media/pats/create-new-pat.png" alt-text="Screenshot showing entry of basic token information.":::
 
-5. Select the [scopes](/integrate/get-started/authentication/oauth.md#scopes)
+5. Select the [scopes](../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-      For example, to create a token for a [build and release agent](/pipelines/agents/agents) to authenticate to Azure DevOps, set the token's scope to **Agent Pools (Read & manage)**. To read audit log events and manage or delete streams, select **Read Audit Log**, and then select **Create**.
+      For example, to create a token for a [build and release agent](../../pipelines/agents/agents) to authenticate to Azure DevOps, set the token's scope to **Agent Pools (Read & manage)**. To read audit log events and manage or delete streams, select **Read Audit Log**, and then select **Create**.
 
-   :::image type="content" source="/media/select-pat-scopes-preview.png" alt-text="Screenshot showing selected scopes for a PAT.":::
+   :::image type="content" source="/media/pats/select-pat-scopes-preview.png" alt-text="Screenshot showing selected scopes for a PAT.":::
 
    > [!NOTE]
    > Your admin(s) may [restrict you from creating full-scoped PATs or limit you to packaging-scope PATs only](manage-pats-with-policies-for-administrators.md). Reach out to your admin to get on the allowlist if you need access to additional scopes.
@@ -65,7 +65,7 @@ You can manage PATs through the following methods:
 
 6. When you're done, copy the token and store it in a secure location. For your security, it doesn't display again.
 
-   :::image type="content" source="/media/copy-token-to-clipboard.png" alt-text="Screenshot showing how to copy the token to your clipboard.":::
+   :::image type="content" source="/media/pats/copy-token-to-clipboard.png" alt-text="Screenshot showing how to copy the token to your clipboard.":::
 
 Use your PAT anywhere your user credentials are required for authentication in Azure DevOps.
 
@@ -79,7 +79,7 @@ During the lifespan of a PAT, users receive two notifications: at time of creati
 
 After you create a PAT, you may receive a notification similar to below. This notification serves as confirmation that your PAT was successfully added to your organization.
 
-   :::image type="content" source="/azure/devops/organizations/accounts/media/use-personal-access-tokens-to-authenticate/pat-creation.png" alt-text="Screenshot showing PAT created notification.":::
+   :::image type="content" source="../media/use-personal-access-tokens-to-authenticate/pat-creation.png" alt-text="Screenshot showing PAT created notification.":::
 
 An expiration notification email will be sent three days prior to expiration. If your admin has [removed your ability to create PATs in the organization](manage-pats-with-policies-for-administrators.md), the email will indicate that it is no longer possible for you to regenerate PATs. Reach out to your [Project Collection Administrator](../security/look-up-project-collection-administrators.md) to be included in an allowlist for continued PAT creation permissions in that organization.
 
@@ -153,11 +153,11 @@ Do the following steps to:
 
 2. Under Security, select **Personal access tokens**. Select the token you want to modify, and then  **Edit**.
 
-   :::image type="content" source="/media/select-edit-pat-current-view.png" alt-text="Screenshot showing highlighted Edit button to modify PAT.":::
+   :::image type="content" source="/media/pats/select-edit-pat-current-view.png" alt-text="Screenshot showing highlighted Edit button to modify PAT.":::
 
 3. Edit the token name, token expiration, or the scope of access associated with the token, and then select **Save**.
 
-   :::image type="content" source="/media/modify-pat.png" alt-text="Screenshot showing modified PAT.":::
+   :::image type="content" source="/media/pats/modify-pat.png" alt-text="Screenshot showing modified PAT.":::
 
 ## Revoke a PAT
 
@@ -173,11 +173,11 @@ You can revoke a PAT at any time for these and other reasons:
 
 2. Under Security, select **Personal access tokens**. Select the token for which you want to revoke access, and then select **Revoke**.
 
-   :::image type="content" source="/media/revoke-personal-access-tokens-preview.png" alt-text="Screenshot showing selection to revoke a single token or all tokens.":::
+   :::image type="content" source="/media/pats/revoke-personal-access-tokens-preview.png" alt-text="Screenshot showing selection to revoke a single token or all tokens.":::
 
 3. Select **Revoke** in the confirmation dialog.
 
-   :::image type="content" source="/media/revoke-token-confirmation-dialog-preview.png" alt-text="Screenshot showing confirmation screen to revoke PAT.":::
+   :::image type="content" source="/media/pats/revoke-token-confirmation-dialog-preview.png" alt-text="Screenshot showing confirmation screen to revoke PAT.":::
 
 
 ## Changes to format
