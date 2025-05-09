@@ -191,7 +191,7 @@
   - name: Troubleshoot and FAQs
     displayName: issue, activity, debug, subscription, terminal, transient, failure
     href: ../service-hooks/troubleshoot.md?toc=/azure/devops/marketplace-extensibility/toc.json
-- name: Microsoft Teams & Slack integrations
+- name: Microsoft Teams & Slack extensions
   items:
   - name: Azure Boards with Slack
     href: ../boards/integrations/boards-slack.md?toc=/azure/devops/marketplace-extensibility/toc.json
