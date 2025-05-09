@@ -209,10 +209,7 @@
     href: ../../repos/tfvc/set-tfvc-repository-permissions.md?toc=/azure/devops/organizations/security/toc.json
   - name: Download repository permissions report
     displayName: json
-    href: download-permissions-report.md
-  - name: Authenticate with Git Credential Manager
-    displayName: authenticate, access, security
-    href: ../../repos/git/set-up-credential-managers.md?toc=/azure/devops/organizations/security/toc.json    
+    href: download-permissions-report.md 
 - name: Secure Azure Test Plans
   items:
   - name: Set permissions & access for testing
