@@ -26,7 +26,7 @@ ms.topic: include
    :::image type="content" source="../media/select-pat-scopes-preview.png" alt-text="Screenshot showing selected scopes for a PAT.":::
 
    > [!NOTE]
-   > You might be restricted from creating full-scoped PATs. If so, your Azure DevOps Administrator in Microsoft Entra ID enabled a policy that limits you to a specific custom-defined set of scopes. For more information, see [Manage PATs with policies/Restrict creation of full-scoped PATs](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats).
+   > You might be restricted from creating full-scoped PATs. If so, your Azure DevOps Administrator in Microsoft Entra ID enabled a policy that limits you to a specific custom-defined set of scopes. For more information, see [Manage PATs with policies/Restrict creation of full-scoped PATs](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats-tenant-policy).
    > For a custom-defined PAT, the required scope for accessing the Component Governance API, `vso.governance`, isn't selectable in the UI.
 
 6. When you're done, copy the token and store it in a secure location. For your security, it doesn't display again.
