@@ -94,9 +94,9 @@
   - name: Set permissions to manage extensions
     displayName: Marketplace, access, settings, users
     href: ../../marketplace/grant-permissions.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Manage access policies (cloud)
+  - name: Manage security policies (cloud)
     items:
-    - name: Manage access policies
+    - name: Manage security policies
       displayName: application, settings, add, update, remove
       href: ../accounts/change-application-access-policies.md
     - name: Manage PAT policies
@@ -123,7 +123,6 @@
       href: data-protection.md
     - name: Data location (cloud)
       href: data-location.md
-      displayname: Personal access tokens, PATs, basic auth, Oauth, SSH
     - name: Data Subject Requests for the GDPR & CCPA
       href: /microsoft-365/compliance/gdpr-dsr-vsts?toc=/azure/devops/organizations/security/toc.json
     - name: Revoke user PATs (for admins)
