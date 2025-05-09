@@ -1,7 +1,7 @@
 ---
 title: Query for Linked Work Items 
 titleSuffix: Azure DevOps 
-description: Learn how to create a query for linked work items using Analytics for Azure DevOps.
+description: Find out how to create OData queries against Analytics for Azure DevOps to retrieve information about linked work items.
 ms.subservice: azure-devops-analytics
 ms.topic: tutorial
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
@@ -9,27 +9,31 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
 ms.date: 05/09/2025
+# customer intent: As a developer, I want to find out how to create OData queries against Analytics for Azure DevOps so that I can retrieve information about linked work items.
 ---
 
 # Tutorial: Query for linked work items 
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there's some extra complexity.
+When you run Open Data Protocol (OData) queries against Analytics for Azure DevOps, you can retrieve information about work items. You can also query linked work items. Work items can be linked hierarchically, such as in parent or child relationships. Work items can also be linked nonhierarchically, such as when work items are related or are duplicates.
 
-There are two ways to query for linked work items. The first is the Parent/Child hierarchy, and the second is the Links navigation property.
+The way you query linked work items is similar to the way you use navigation properties to filter queries of entity sets. But links are entities, so there's some extra complexity. There are two ways to query linked work items:
+
+- By using the `Parent` or `Children` navigation properties
+- By using the `Links` navigation property
 
 In this tutorial you:
 
 > [!div class="checklist"]
-> * Construct a query to return hierarchically (parent-child) linked work items
-> * Construct a query to return non-hierarchically (related, direct) linked work items 
+> * Construct queries to return hierarchically linked work items.
+> * Construct queries to return nonhierarchically linked work items.
 
-[!INCLUDE [temp](../includes/analytics-preview.md)]
+[!INCLUDE [Analytics preview](../includes/analytics-preview.md)]
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+[!INCLUDE [Basic prerequisites](../includes/analytics-prerequisites-simple.md)]
 
 ::: moniker range=" < azure-devops"
 
@@ -38,20 +42,19 @@ In this tutorial you:
 > 
 > `https://analytics.dev.azure.com/{organization-name}/{project-name}/_odata/{version}`
 >
-> For Azure DevOps Server, instead use the following format, which includes the on-premises server:
+> For Azure DevOps Server, use the following format instead, which includes the on-premises server:
 > 
 > `https://{server-name}:{port}/tfs/{organization-name}/{project-name}/_odata/{version}`
 
 ::: moniker-end
 
-## Parent-child hierarchy
+## Query for parent or children work items
 
-You can include items related through Parent/Child links by using ```$expand``` on the Parent and Children properties.
+You can query items related through parent-child links by using the `$expand` option on the `Parent` and `Children` navigation properties.
 
-### Example: Parent to child query
+### Example: Request an item's children
 
-To return information about an item's children, use ```$expand``` on the **Children** navigation property. 
-The following code snippet requests to return the children of work item ID 359 from the Fabrikam Fiber project. 
+To return information about an item's children, use `$expand` on the `Children` navigation property. The following OData code queries the Fabrikam Fiber project in the fabrikam organization. It returns the children of the work item with ID 359.
 
 **Request**
 
@@ -59,9 +62,9 @@ The following code snippet requests to return the children of work item ID 359 f
 https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId eq 359&$select=WorkItemId, Title, WorkItemType, State&$expand=Children($select=WorkItemId,Title, WorkItemType, State)
 ```
 
-The response returns features 479 and 480, which are children of the epic 359.  
+The response lists information about the feature work items with IDs 479 and 480. These features are children of the epic work item with ID 359.
 
-[!INCLUDE [temp](../includes/note-work-item-link-warning.md)]
+[!INCLUDE [Note about the work item link warning](../includes/note-work-item-link-warning.md)]
 
 **Response**
 
@@ -93,11 +96,11 @@ The response returns features 479 and 480, which are children of the epic 359.
 }
 ```
 
-### Example: Child to parent query
+### Example: Request an item's parent
 
-By replacing **Children** with **Parent** in the ```$expand``` option, you can retrieve an item's ancestry.  
+By replacing `Children` with `Parent` in the `$expand` option, you can retrieve an item's ancestry.  
 
-The following query requests to return the parent of work item ID 1048 from the Fabrikam Fiber project. 
+The following code queries the parent of the work item with ID 1048 in the Fabrikam Fiber project and the fabrikam organization. 
 
 **Request**
 
@@ -105,7 +108,7 @@ The following query requests to return the parent of work item ID 1048 from the 
 https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$expand=Parent($select=WorkItemId,Title,WorkItemType, State)&$filter=WorkItemId eq 1048
 ```
 
-The response returns feature 480, which is the parent to product backlog item 1048.  
+The response lists information about the feature with ID 480, which is the parent of the product backlog item with ID 1048.  
 
 **Response**
 
@@ -131,13 +134,13 @@ The response returns feature 480, which is the parent to product backlog item 10
 }
 ```
  
-## Query for non-hierarchical links
+## Query for nonhierarchical links
 
-In addition to the Parent/Child hierarchy, items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows you to request these relationships.
+Besides parent-child links, other types like `Related` or `Duplicate` can also link work items. You can use the `Links` navigation property to request information about work items linked through nonhierarchical relationships.
 
 ### Example: Request an item's links
 
-To retrieve the links associated with an item, you can ```$expand``` the **Links** navigation property. In this example the **SourceWorkItemId**, **TargetWorkItemId**, and **LinkTypeName** are retrieved for all links associated with the work item 363.
+To retrieve the links associated with an item, you use the `$expand` option on the `Links` navigation property. The following query retrieves the `SourceWorkItemId`, `TargetWorkItemId`, and `LinkTypeName` values for all links associated with work item 363.
 
 **Request**
 
@@ -179,9 +182,11 @@ https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Wo
 }
 ```
 
-### Example: Request details of linked items
+### Example: Request detailed information about linked items
 
-You can include the details of your linked work items by using ```$expand``` on the **TargetWorkItem** or **SourceWorkItem** navigation properties. In this example, we retrieve the **WorkItemId**, **Title**, and **State** of the target work item for each link.
+You can query detailed information about linked work items by using the `$expand` option on the `TargetWorkItem` or `SourceWorkItem` navigation properties.
+
+Like the previous query, the following query retrieves the `SourceWorkItemId`, `TargetWorkItemId`, and `LinkTypeName` values for all links associated with a work item. But this query also retrieves the `WorkItemId`, `Title`, and `State` values of each link's target work item.
 
 **Request**
 
@@ -232,7 +237,7 @@ https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Wo
             "LinkTypeName": "Related",
             "TargetWorkItem": {
                 "WorkItemId": 112,
-                "Title": "Some issue",
+                "Title": "Issue 10",
                 "State": "Active"
             }
         }]
@@ -240,9 +245,9 @@ https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Wo
 }
 ```
 
-### Example: Links of a specific type
+### Example: Request links of a specific type
 
-You may also be interested in a particular type of link between items. Specify the **LinkTypeName** property in a `$filter` clause. The following query example expands all **Related** links and filters out all other link types for work item 103.
+If you're interested in a particular type of link between items, you can use the `LinkTypeName` property in a `$filter` clause. The following query expands all `Related` links and filters out all other link types for work item 103.
 
 **Request**
 
@@ -257,31 +262,25 @@ https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Wo
     "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
     "value": [{
         "WorkItemId": 103,
-        "Title": "Feature Y1",
+        "Title": "Feature Y",
         "WorkItemType": "Feature",
-        "State": "Active",
+        "State": "New",
         "Links": [{
             "SourceWorkItemId": 103,
             "TargetWorkItemId": 112,
             "LinkTypeName": "Related",
             "TargetWorkItem": {
                 "WorkItemId": 112,
-                "Title": "Feature Y2",
-                "State": "New"
+                "Title": "Issue 10",
+                "State": "Active"
             }
         }]
     }]
 }
 ```
 
-## Next steps
+## Related content
 
-> [!div class="nextstepaction"]
-> [Explore Analytics metadata](analytics-metadata.md) 
-
-## Related articles
-
-- [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)  
-- [Construct basic queries using OData Analytics](wit-analytics.md)
-- [Work items with direct links sample reports](../powerbi/sample-boards-directlinks.md)
-- [Requirements tracking sample report](../powerbi/sample-stories-overview.md)
+- [Analytics OData metadata](analytics-metadata.md)
+- [Construct OData queries for Analytics in Azure DevOps](../analytics/analytics-query-parts.md)  
+- [List linked work items sample queries and reports](../powerbi/sample-boards-directlinks.md)
