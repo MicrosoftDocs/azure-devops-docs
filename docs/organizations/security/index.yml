@@ -27,7 +27,7 @@ landingContent:
             url: about-permissions.md
           - text: About authentication, authorization, & security policies
             url: about-security-identity.md              
-          - text: Security overview
+          - text: Security checklist
             url: security-overview.md
       - linkListType: quickstart
         links:
