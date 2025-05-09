@@ -26,7 +26,6 @@ When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID
 You can manage PATs through the following methods:
 * **User interface (UI):** Through user settings, as detailed in this article.
 * [**PAT Lifecycle Management APIs**](manage-personal-access-tokens-via-api.md)
-* [Git credential managers](../../repos/git/set-up-credential-managers.md) for Git operations. Credential managers facilitate token management. Without one, users must input their credentials each time.
 
 ## Prerequisites
 
@@ -55,7 +54,7 @@ You can manage PATs through the following methods:
 5. Select the [scopes](../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-      For example, to create a token for a [build and release agent](../../pipelines/agents/agents) to authenticate to Azure DevOps, set the token's scope to **Agent Pools (Read & manage)**. To read audit log events and manage or delete streams, select **Read Audit Log**, and then select **Create**.
+      For example, to create a token for a [build and release agent](../../pipelines/agents/agents.md) to authenticate to Azure DevOps, set the token's scope to **Agent Pools (Read & manage)**. To read audit log events and manage or delete streams, select **Read Audit Log**, and then select **Create**.
 
    :::image type="content" source="/media/pats/select-pat-scopes-preview.png" alt-text="Screenshot showing selected scopes for a PAT.":::
 
@@ -108,7 +107,7 @@ If you receive an unexpected PAT notification, it might mean that an administrat
 Your PAT serves as your digital identity, much like a password. You can use PATs as a quick way to do one-off requests or prototype an application locally. Use a PAT in your code to authenticate [REST APIs](/rest/api/azure/devops) requests and automate workflows by including the PAT in the authorization header of your request.
 
 > [!IMPORTANT]
-> Once your app code is working, switch to [Microsoft Entra OAuth to acquire tokens on-behalf-of your app's users](/integrate/get-started/authentication/entra-oauth.md) or a [service principal or managed identity to acquire tokens as an application](/integrate/get-started/authentication/service-principal-managed-identity.md). It is not recommended to keep running apps or scripts with PATs long-term. Microsoft Entra tokens can be used anywhere a PAT is used.
+> Once your app code is working, switch to [Microsoft Entra OAuth to acquire tokens on-behalf-of your app's users](../../integrate/get-started/authentication/entra-oauth.md) or a [service principal or managed identity to acquire tokens as an application](../../integrate/get-started/authentication/service-principal-managed-identity.md). It is not recommended to keep running apps or scripts with PATs long-term. Microsoft Entra tokens can be used anywhere a PAT is used.
 > Consider [acquiring a Microsoft Entra token via the Azure CLI](/integrate/get-started/authentication/entra.md#ad-hoc-requests-to-azure-devops-rest-apis) for ad-hoc requests.
 
 #### [Windows](#tab/Windows/)
@@ -133,11 +132,11 @@ curl -u :{PAT} https://dev.azure.com/{organization}/_apis/build-release/builds
 
 Some more examples of how to use PATs can be found in the following articles:
 
-- [Authenticate with your Git repos](/git/repos/auth-overview.md)
-- [Set up Git credential managers (GCM) to connect with Git repositories](/git/repos/set-up-credential-managers.md)
-- [Use NuGet on a Mac](/artifacts/nuget/consume.md)
-- [Authenticate reporting clients](/report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
-- [Get started with Azure DevOps CLI](/cli/index.md)
+- [Authenticate with your Git repos](../../git/repos/auth-overview.md)
+- [Set up Git credential managers (GCM) to connect with Git repositories](../../git/repos/set-up-credential-managers.md)
+- [Use NuGet on a Mac](../../artifacts/nuget/consume.md)
+- [Authenticate reporting clients](../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
+- [Get started with Azure DevOps CLI](../../cli/index.md)
 
 ## Modify a PAT
 
@@ -145,7 +144,7 @@ Do the following steps to:
 
 - Regenerate a PAT to create a new token, which invalidates the previous one.
 - Extend a PAT to increase its validity period.
-- Alter the [scope](/integrate/get-started/authentication/oauth.md#scopes) of a PAT to change its permissions.
+- Alter the [scope](../../integrate/get-started/authentication/oauth.md#scopes) of a PAT to change its permissions.
 
 1. From your home page, open your user settings, and then select **Profile**.
 
@@ -235,7 +234,7 @@ A: Yes, you can renew, manage, and create PATs using our [PAT Lifecycle Manageme
 
 #### Q: Can I use PATs with all Azure DevOps REST APIs?
 
-A: No. You can use PATs with most Azure DevOps REST APIs, but [organizations and profiles](/rest/api/azure/devops/) and the [PAT Management Lifecycle APIs](manage-personal-access-tokens-via-api.md) only support [Microsoft Entra tokens](../../integrate/get-started/authentication/entra-oauth.md). For an example on how to set up a Microsoft Entra app to call such APIs, see [Manage PATs using the REST API](manage-personal-access-tokens-via-api.md).
+A: No. You can use PATs with most Azure DevOps REST APIs, but [organizations and profiles](/rest/api/azure/devops/) and the [PAT Management Lifecycle APIs](manage-personal-access-tokens-via-api.md) only support [Microsoft Entra tokens](../../integrate/get-started/authentication/entra-oauth.md).
 
 #### Q: What happens if I accidentally check my PAT into a public repository on GitHub?
 
@@ -251,7 +250,7 @@ A: No. Azure Artifacts doesn't support passing a PAT as an ApiKey. When using a 
 
 A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Signing in once every 30 days is sufficient for many users, but you might need to sign in more frequently depending on your Microsoft Entra configuration. If your PAT stops working, first try signing into your organization and complete the full authentication prompt. If your PAT still doesn't work, check if it expired.
 
-Enabling IIS Basic Authentication invalidates using PATs for Azure DevOps Server. We recommend that you keep [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) turned **off** always. 
+Enabling IIS Basic Authentication invalidates using PATs for Azure DevOps Server. We recommend that you keep [IIS Basic Authentication](/iis/configuration/system.webserver/security/authentication/basicauthentication) turned **off** always. 
 
 > [!WARNING]
 > If you use Git with IIS Basic Authentication, Git breaks because it requires PATs for user authentication. You can adding an extra header to Git requests to use it with IIS Basic Authentication, but this is not recommended. The extra header must be used for all Azure DevOps Server installations, as Windows Auth also prevents using PATs. The extra header must also include a base 64 encoding of "user:PAT."
