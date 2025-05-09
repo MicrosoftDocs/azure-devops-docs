@@ -1,8 +1,34 @@
 - name: Marketplace & extensibility
   href: index.yml
+- name: Authentication overview
+  href: ../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Extensions overview
   href: ../extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
-- name: Get started
+- name: Authenticate
+  items:
+  - name: Authenticate extensions and security
+    href: ../extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Authenticate with Entra tokens
+    displayName: authenticate, security, Entra
+    href: ../../integrate/get-started/authentication/entra.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Authenticate with personal access tokens (PATs)
+    displayName: authenticate, security, PATs
+    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Manage PATs via API
+    displayName: lifecycle, authenticate
+    href: ../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Authenticate with OAuth 2.0
+    displayName: authenticate, access, token, app, security
+    href: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Authenticate with service principals
+    displayName: authenticate, access, security, service, principal, managed, identity
+    href: ../../integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Authenticate with SSH
+    displayName: authenticate, access, security, ssh
+    href: ../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Cross-platform CLI for Azure DevOps using PATs
+    href: ../integrate/get-started/auth/tfs-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+- name: Get started with extensions
   items:
   - name: Install an extension
     displayName: Marketplace, publish, get, download, purchase, uninstall, disable
@@ -16,18 +42,6 @@
   - name: Manage high privilege extensions
     displayName: permission, administrator, privilege, extension, scope, Marketplace
     href: ../marketplace/manage-high-privilege-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
-- name: Authenticate
-  items:
-  - name: Guide to authentication
-    href: ../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Authenticate extensions and security
-    href: ../extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Authenticate with PATs
-    href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Authenticate with OAuth 2.0
-    href: ../integrate/get-started/authentication/oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Cross-platform CLI for Azure DevOps using PATs
-    href: ../integrate/get-started/auth/tfs-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Develop extensions
   items:
   - name: Get started
