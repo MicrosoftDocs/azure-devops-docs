@@ -71,6 +71,9 @@
   expanded: true
 - name: Git commands
   href: ../repos/git/command-prompt.md
+- name: Authenticate with Git Credential Manager
+  displayName: authenticate, access, security
+  href: ../../repos/git/set-up-credential-managers.md?toc=/azure/devops/organizations/security/toc.json   
 - name: TFVC repository commands
   href: ../repos/tfvc/use-team-foundation-version-control-commands.md
 - name: Test case management commands
