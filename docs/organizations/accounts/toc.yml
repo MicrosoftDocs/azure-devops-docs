@@ -46,6 +46,9 @@
   - name: Resolve orphaned organization
     displayName: find, owner, collection, administrator, Azure Active Directory, claim ownership,
     href: resolve-orphaned-organization.md
+  - name: Set up security policies
+    displayName: find, owner, collection, administrator, Azure Active Directory, claim ownership,
+    href: change-application-access-policies.md?toc=/azure/devops/organizations/security/toc.json
 - name: Services status
   displayName: service, health, portal, geography, region, core, other, event, log, availability, RSS, REST APIs
   href: ../../user-guide/service-status-info.md?toc=/azure/devops/organizations/toc.json
