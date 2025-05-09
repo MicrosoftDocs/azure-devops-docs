@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 11/13/2024
+ms.date: 05/09/2025
 ---
 
 # Configure Managed DevOps Pools networking
@@ -176,11 +176,11 @@ All of them are HTTPS, unless otherwise stated.
 
        * `md-*.blob.storage.azure.net` - Required to [configure a data disk](./configure-storage.md)
 * Akamai CDN Delivery IPs
-   From May 1st 2025, Azure DevOps CDN assets are transitioning to a solution served by Akamai and Azure Front Door. Ensure your network has outbound access to Akamai IP ranges.
-   Reference
-   1) https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/
-   2) https://learn.microsoft.com/en-us/previous-versions/azure/cdn/edgio-retirement-faq
-   3) https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server
+   Starting May 1st 2025, Azure DevOps CDN assets are transitioning to a solution served by Akamai and Azure Front Door. Ensure your network has outbound access to Akamai IP ranges. For more information, see:
+   * [CDN Domain URL change for Agents in Pipelines](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/)
+   * [Azure CDN from Edgio retirement FAQ](/previous-versions/azure/cdn/edgio-retirement-faq)
+   * [Akamai techdocs - Origin IP Access Control List](https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server)
+
 If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image (Docker or ACR).
 
 ## Configure the Azure DevOps Agent to run behind a Proxy
