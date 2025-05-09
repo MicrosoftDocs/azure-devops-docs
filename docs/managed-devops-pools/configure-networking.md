@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 11/13/2024
+ms.date: 05/09/2025
 ---
 
 # Configure Managed DevOps Pools networking
@@ -149,8 +149,8 @@ All of them are HTTPS, unless otherwise stated.
   *  `rmprodbuilds.azureedge.net` - Worker binaries
   *  `vstsagentpackage.azureedge.net` and `https://download.agent.dev.azure.com` - Azure DevOps agent CDN location
   *  `*.queue.core.windows.net` - Worker queue for communicating with Managed DevOps Pools service
-  *  `server.pipe.aria.microsoft.com` - Common client side telemetry solution (and used by the Agent Pool Validation extension among others)
-  *  `azure.archive.ubuntu.com` - Provisioning Linux machines - this is HTTP, not HTTPS
+  *  `server.pipe.aria.microsoft.com` - Common client side telemetry solution
+  *  `azure.archive.ubuntu.com` - Provisioning Linux machines - this is HTTP (port 80), not HTTPS (port 443)
   *  `www.microsoft.com` - Provisioning Linux machines
   *  `security.ubuntu.com` - Provisioning Linux machines
 * Less secure, more open endpoints that our service depends on:
@@ -175,6 +175,10 @@ All of them are HTTPS, unless otherwise stated.
     2. If you want to avoid routing traffic through Service Endpoints, these are the domains to allowlist for specific features.
 
        * `md-*.blob.storage.azure.net` - Required to [configure a data disk](./configure-storage.md)
+* Akamai CDN Delivery IPs: Starting May 1st 2025, Azure DevOps CDN assets are transitioning to a solution served by Akamai and Azure Front Door. Ensure your network has outbound access to Akamai IP ranges. For more information, see:
+   * [CDN Domain URL change for Agents in Pipelines](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/)
+   * [Azure CDN from Edgio retirement FAQ](/previous-versions/azure/cdn/edgio-retirement-faq)
+   * [Akamai TechDocs - Origin IP Access Control List](https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server)
 
 If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image (Docker or ACR).
 
