@@ -219,14 +219,14 @@
     href: /dotnet/api/index?view=azure-devops-dotnet&preserve-view=true
   - name: Azure DevOps Services REST API Reference >>
     href: /rest/api/azure/devops/
-- name: Reference (Archived)
-  items:
-  - name: Client reference >>
-    href: /previous-versions/azure/devops/extend/reference/client/client-services?view=tfs-2017&preserve-view=true
-  - name: REST APIs for TFS 2015, 2017, and 2018 >>
-    href: /previous-versions/azure/devops/integrate/previous-apis/overview
-  - name: Extension Debugging in a Browser >>
-    href: /previous-versions/azure/devops/extend/test/debug-in-browser
+  - name: Reference (Archived)
+    items:
+    - name: Client reference >>
+      href: /previous-versions/azure/devops/extend/reference/client/client-services?view=tfs-2017&preserve-view=true
+    - name: REST APIs for TFS 2015, 2017, and 2018 >>
+      href: /previous-versions/azure/devops/integrate/previous-apis/overview
+    - name: Extension Debugging in a Browser >>
+      href: /previous-versions/azure/devops/extend/test/debug-in-browser
 - name: Resources
   items:
   - name: How to buy Azure DevOps CALs >>
