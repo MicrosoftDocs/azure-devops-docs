@@ -175,8 +175,7 @@ All of them are HTTPS, unless otherwise stated.
     2. If you want to avoid routing traffic through Service Endpoints, these are the domains to allowlist for specific features.
 
        * `md-*.blob.storage.azure.net` - Required to [configure a data disk](./configure-storage.md)
-* Akamai CDN Delivery IPs
-   Starting May 1st 2025, Azure DevOps CDN assets are transitioning to a solution served by Akamai and Azure Front Door. Ensure your network has outbound access to Akamai IP ranges. For more information, see:
+* Akamai CDN Delivery IPs: Starting May 1st 2025, Azure DevOps CDN assets are transitioning to a solution served by Akamai and Azure Front Door. Ensure your network has outbound access to Akamai IP ranges. For more information, see:
    * [CDN Domain URL change for Agents in Pipelines](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/)
    * [Azure CDN from Edgio retirement FAQ](/previous-versions/azure/cdn/edgio-retirement-faq)
    * [Akamai techdocs - Origin IP Access Control List](https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server)
