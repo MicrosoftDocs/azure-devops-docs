@@ -316,7 +316,7 @@ additionalContent:
             - text: Authentication guidance
               url: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/dev-resources/toc.json
             - text: Building Azure DevOps applications
-              url: ../integrate/index.md?toc=/azure/devops/dev-resources/toc.json
+              url: ./integrate/index.md?toc=/azure/devops/dev-resources/toc.json
             - text: Azure DevOps CLI 
               url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json
             - text: Azure DevOps CLI quick reference
