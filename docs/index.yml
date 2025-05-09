@@ -302,10 +302,6 @@ additionalContent:
         # Card
         - title: Marketplace & Extensibility
           links:
-            - text: Authentication overview
-              url: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
-            - text: Building Azure DevOps applications
-              url: ../integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Discover extensions
               url: ./extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Develop extensions
@@ -317,6 +313,10 @@ additionalContent:
         # Card
         - title: Developing on Azure DevOps
           links:
+            - text: Authentication guidance
+              url: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/dev-resources/toc.json
+            - text: Building Azure DevOps applications
+              url: ../integrate/index.md?toc=/azure/devops/dev-resources/toc.json
             - text: Azure DevOps CLI 
               url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json
             - text: Azure DevOps CLI quick reference
