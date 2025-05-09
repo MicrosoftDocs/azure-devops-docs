@@ -92,5 +92,5 @@ For more information, see our [C# sample on GitHub](https://github.com/sferg-msf
 
 - [.NET client libraries](dotnet-client-libraries.md)
 - [Migration guide](migration-guide.md)
-- [Service hooks in Azure DevOps Services REST APIs](/service-hooks/overview.md)
+- [Service hooks in Azure DevOps Services REST APIs](../../service-hooks/overview.md)
 - [REST API versioning](rest-api-versioning.md)
