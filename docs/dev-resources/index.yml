@@ -1,12 +1,12 @@
 ### YamlMime:Landing
 
 title: Developer resources documentation
-summary: Use command line tools, REST APIS, and more to interface with Azure DevOps programmatically.  
+summary: Use command line tools, REST APIS, and more to interface with Azure DevOps programmatically and build applications.  
 
 metadata:
   title: Azure DevOps Developer resources documentation 
   titleSuffix: Azure DevOps 
-  description: Use command line interface, REST APIs, typescript tools and more to interface with Azure DevOps .
+  description: Use command line interface, REST APIs, typescript tools and more to interface with and build on Azure DevOps .
   ms.subservice: azure-devops-reference
   ms.topic: landing-page 
   ms.author: rabououn
@@ -19,6 +19,30 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
+  - title: Build applications on Azure DevOps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Learn about building applications
+            url: ../integrate/index.md
+          - text: Authentication types overview
+            url: ../integrate/get-started/authentication/authentication-guidance.md
+      - linkListType: get-started
+        links:
+          - text: Authenticate with Entra tokens
+            url: ../integrate/get-started/authentication/entra.md
+          - text: Authenticate with personal access tokens (PATs)
+            url: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
+          - name: Authenticate with OAuth 2.0
+            href: ../integrate/get-started/authentication/oauth.md
+          - name: Authenticate with service principals
+            href: ../integrate/get-started/authentication/service-principal-managed-identity.md
+      - linkListType: reference
+        links:
+          - text: Azure DevOps REST API Reference
+            url: /rest/api/azure/devops/
+          - text: .NET client libraries
+            url: ../integrate/concepts/dotnet-client-libraries.md
   - title: Azure DevOps Command Line Interface (CLI)
     linkLists:
       - linkListType: get-started
@@ -47,27 +71,13 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text:  Cross-platform CLI for Azure DevOps (tfx-cli)
+          - text: Cross-platform CLI for Azure DevOps (tfx-cli)
             url: ../extend/publish/command-line.md?toc=/azure/devops/dev-resources/toc.json
-  - title: Azure DevOps REST API Reference
+  - title: Azure DevOps Demo Generator
     linkLists:
       - linkListType: get-started
         links:
-          - text: Get started
-            url: /rest/api/azure/devops/index
-          - text: Build
-            url: /rest/api/azure/devops/build/index
-          - text: Core
-            url: /rest/api/azure/devops/core/index
-          - text: Git
-            url: /rest/api/azure/devops/git/index
-          - text: Work item tracking
-            url: /rest/api/azure/devops/wit/index
-  - title: Azure DevOps Demo generator
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: About the Demo generator
+          - text: About the Demo Generator
             url: ../demo-gen/index.md
-          - text: Get started
+          - text: Get Started
             url: ../demo-gen/use-demo-generator-v2.md
