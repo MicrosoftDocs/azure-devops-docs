@@ -7,6 +7,9 @@
   - name: About permissions, access, & security groups
     displayName: security, group, membership, inheritance, roles
     href: about-permissions.md
+  - name: About authentication, authorization, & security policies
+    displayName: concepts, understand, credentials, accounts, authorization, policies
+    href: about-security-identity.md
   - name: Add users to a team or project
     displayName: create, new, account, default, custom, access, permission
     href: add-users-team-project.md
@@ -76,11 +79,8 @@
   - name: Remove user accounts from Active Directory
     displayName: delete, revoke, organization, members
     href: /azure/active-directory/add-users-azure-active-directory#delete-a-user?toc=/azure/devops/organizations/security/toc.json
-- name: Authentication
+- name: Authenticate
   items:
-  - name: About authentication & authorization
-    displayName: concepts, understand, credentials, accounts, authorization, policies
-    href: about-security-identity.md
   - name: Authentication methods guidance
     displayName: permission, security, mechanism, type, application
     href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json
