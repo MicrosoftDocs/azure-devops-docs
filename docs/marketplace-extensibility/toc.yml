@@ -26,8 +26,50 @@
   - name: Authenticate with SSH
     displayName: authenticate, access, security, ssh
     href: ../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Cross-platform CLI for Azure DevOps using PATs
-    href: ../integrate/get-started/auth/tfs-basic-auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+- name: Build applications
+  items:
+  - name: Building Azure DevOps applications
+    href: ../integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Get started
+    items:
+    - name: Call REST APIs
+      displayName: integrate, instance, collection
+      href: ../integrate/how-to/call-rest-api.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: REST API versioning
+      displayName: applications, services, usage
+      href: ../integrate/concepts/rest-api-versioning.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: .NET client libraries
+      displayName: integrate, developer, package, rest, api
+      href: ../integrate/concepts/dotnet-client-libraries.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Best practices for building apps
+      displayName: integrate, procedure, correct, effective
+      href: ../integrate/concepts/integration-bestpractices.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Samples
+    items:
+    - name: REST API Samples
+      displayName: PATs, personal, access, token, client, libraries
+      href: ../integrate/get-started/rest/samples.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Create a bug
+      displayName: client, library, code, project, PAT
+      href: ../integrate/quickstarts/create-bug-quickstart.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Query work items
+      displayName: get, fetch, queries, rest, api
+      href: ../integrate/quickstarts/work-item-quickstart.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Create a service hooks subscription
+      displayName: rest, api, build, complete, code
+      href: ../service-hooks/create-subscription.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: .NET Sample Apps
+      displayName: sample, c#, library, REST, authenticate
+      href: ../integrate/get-started/client-libraries/samples.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: .NET (Legacy) Sample Apps
+      displayName: SOAP, authenticate, PAT, Azure, Visual, Studio
+      href: ../integrate/get-started/client-libraries/soapSamples.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Create a PR status server
+      displayName: pull, request, web, configure, service, hook
+      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Use Azure Functions to create custom branch policies
+      displayName: pull, request, PR, Repos, event, service, hook
+      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Get started with extensions
   items:
   - name: Install an extension
@@ -215,57 +257,7 @@
   - name: Troubleshoot and FAQs
     displayName: issue, activity, debug, subscription, terminal, transient, failure
     href: ../service-hooks/troubleshoot.md?toc=/azure/devops/marketplace-extensibility/toc.json
-- name: Integrate applications
-  items:
-  - name: Integrate applications overview
-    href: ../integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Get started
-    items:
-    - name: Create a bug
-      displayName: client, library, code, project, PAT
-      href: ../integrate/quickstarts/create-bug-quickstart.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Query work items
-      displayName: get, fetch, queries, rest, api
-      href: ../integrate/quickstarts/work-item-quickstart.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Best practices
-      displayName: integrate, procedure, correct, effective
-      href: ../integrate/concepts/integration-bestpractices.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Service hooks
-      displayName: information, what, are
-      href: ../integrate/concepts/service-hooks.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Create service hooks subscriptions programmatically
-      displayName: rest, api, build, complete, code
-      href: ../service-hooks/create-subscription.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Call REST API
-      displayName: integrate, instance, collection
-      href: ../integrate/how-to/call-rest-api.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: REST API versioning
-      displayName: applications, services, usage
-      href: ../integrate/concepts/rest-api-versioning.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: .NET client libraries
-      displayName: integrate, developer, package, rest, api
-      href: ../integrate/concepts/dotnet-client-libraries.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Cross-origin resource sharing
-      displayName: CORS, JavaScript, code, Oauth, PATs
-      href: ../integrate/concepts/cross-origin-resource-sharing.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Samples
-    items:
-    - name: .NET
-      displayName: sample, c#, library, REST, authenticate
-      href: ../integrate/get-started/client-libraries/samples.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: .NET (Legacy)
-      displayName: SOAP, authenticate, PAT, Azure, Visual, Studio
-      href: ../integrate/get-started/client-libraries/soapSamples.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: REST API Samples
-      displayName: PATs, personal, access, token, client, libraries
-      href: ../integrate/get-started/rest/samples.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Create a PR status server
-      displayName: pull, request, web, configure, service, hook
-      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Use Azure Functions to create custom branch policies
-      displayName: pull, request, PR, Repos, event, service, hook
-      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json
-- name: Microsoft Teams & Slack
+- name: Microsoft Teams & Slack integrations
   items:
   - name: Azure Boards with Slack
     href: ../boards/integrations/boards-slack.md?toc=/azure/devops/marketplace-extensibility/toc.json
@@ -281,8 +273,6 @@
     href: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Reference
   items:
-  - name: REST API overview
-    href: /rest/api/azure/devops/?view=azure-devops-rest-7.2&preserve-view=true
   - name: Rate limits
     href: ../integrate/concepts/rate-limits.md
   - name: Deprecation of WIT & Test client OM
@@ -291,7 +281,7 @@
     href: ../integrate/concepts/migration-guide.md
   - name: .NET client libraries reference
     href: /dotnet/api/index?view=azure-devops-dotnet&preserve-view=true
-  - name: Azure DevOps Services REST API >>
+  - name: Azure DevOps Services REST API Reference >>
     href: /rest/api/azure/devops/
 - name: Reference (Archived)
   items:
