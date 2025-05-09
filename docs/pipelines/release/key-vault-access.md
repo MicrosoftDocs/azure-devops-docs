@@ -211,6 +211,9 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 1. [Find your geography IP V4 ranges](../../organizations/security/allow-list-ip-url.md#inbound-connections).
 
+    > [!IMPORTANT]
+    > For United States inbound connections, make sure to add the IP ranges for **all** US regions.
+
 1. [Configure your key vault](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips) to allow access from static IP ranges.
 
 ## 3 - Query a private key vault with a variable group
