@@ -1,8 +1,8 @@
 ---
-title: Link work items to other objects
+title: Link work items to objects
 titleSuffix: Azure Boards
 description: Learn how to link work items to user stories, bugs, remote work items, a git branch, and other elements in Azure Boards.
-ms.custom: cross-project, devx-track-azurecli, engagement-fy24
+ms.custom: cross-project, devx-track-azurecli, engagement-fy24, peer-review
 ms.service: azure-devops-boards
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/07/2025
+ms.date: 01/08/2025
 #customer intent: As a team member, I want to understand how links between work items and other elements operate and help project planning and development.
 ---
 
@@ -46,7 +46,7 @@ Work item links are associations between two work items or a work item and anoth
 
 ## Types of links
 
-The following types of links help you manage the various relationships between work items and other objects.
+The following types of links help you manage the relationships between work items and other objects.
 
 | Link type category | Description |
 |:----------|:------------|
@@ -57,36 +57,24 @@ The following types of links help you manage the various relationships between w
 | **Requirement** | Connects a work item to a storyboard via URL. |
 | **Test** | Connects a work item to a test attachment or result. |
 | **Wiki** | Connects a work item to a wiki page. |
-| **Work** | Connects a work item to various aspects of your work, including: <br> - Affected by <br> - Affects <br> - Child <br> - Duplicate <br> - Duplicate of <br> - Hyperlink <br> - Integrated in release stage <br> - Parent <br> - Predecessor <br> - Referenced by <br> - References <br> - Related <br> - Shared steps <br> - Successor <br> - Test case <br> - Tested by <br> - Tests |
+| **Work item** | Connects a work item to aspects of your work, including: <br> - Affected by <br> - Affects <br> - Child <br> - Duplicate <br> - Duplicate of <br> - Hyperlink <br> - Integrated in release stage <br> - Parent <br> - Predecessor <br> - Referenced by <br> - References <br> - Related <br> - Shared steps <br> - Successor <br> - Test case <br> - Tested by <br> - Tests |
 
-For more information about work link types, including parent/child, related, and predecessor-successor, see [Work link types](../queries/link-type-reference.md#work-link-type).
+For more information about work link types, including remote link types, hyperlinks, attached files, parent/child, related, and predecessor-successor, see [Work link types](../queries/link-type-reference.md#work-link-type). For a list of all link types that you can specify using the Azure DevOps SLI, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command.
 
-## Link work items to various objects
+### Manage parent/child links
 
-To link work items to various objects, follow these general steps:
+You can use various features to link or modify links that use the **Parent/Child** link type. Some features depend on the version of Azure DevOps you are using. Refer to the following options for managing these links:
 
-1. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`).
-2. Open the existing work item that you want to link from, or create a new one.
-3. Select **Links** > **Add link**, and then select **Existing item** or **New item**.
+- **Organize your backlog**: [Use the mapping pane](../backlogs/organize-backlog.md) to link backlog items to portfolio backlog items or change the link structure. You can also choose **Show Parents** and [drag-and-drop items within the tree hierarchy](organize-backlog.md).
+- **Sprint backlog**: [Create and link tasks to backlog items](../sprints/assign-work-sprint.md) using the sprint backlog page. You can also drag-and-drop items to adjust the link structure directly in the web portal.
+- **Reparent and reorder items**: [Indent, outdent, and change the link structure](../backlogs/organize-backlog.md) of a tree hierarchy in the web portal or use a [tree query in Team Explorer](../queries/using-queries.md).
+- **Excel integration**: [Add, delete, or modify work items](../backlogs/office/bulk-add-modify-work-items-excel.md) and adjust the link structure using Excel.
 
-   :::image type="content" source="media/add-link/add-link-new-item.png" alt-text="Screenshot sequence to add new or existing item link to work item.":::
-
-4. In the **Link type** dropdown list, select the [link type](#types-of-links) that you want to create.
-5. In the field that follows, enter or select the object that you want to link to.
-6. (Optional) Enter a comment to describe the link.
-7. Select **Add link** to create the link.
-
-For more specific instructions on linking different types of work items, refer to the sections that follow.
-
-> [!TIP]
-> You can use other features to link or change links that use the **Parent/Child** link type. Some features are version-dependent. For more information, see the following articles:
->
-> - To link backlog items to portfolio backlog items or change the link structure, [use the mapping pane to organize your backlog](../backlogs/organize-backlog.md). You can also choose to **Show Parents** and [drag-and-drop items within the tree hierarchy](organize-backlog.md).
-> - To create and link tasks to backlog items, [use the sprint backlog page](../sprints/assign-work-sprint.md). You can also drag-and-drop items to change the link structure from the web portal.
-> - To indent, outdent, and change the link structure of a tree hierarchy, [reparent and reorder items from a backlog in the web portal](../backlogs/organize-backlog.md) or use a [tree query in Team Explorer](../queries/using-queries.md).
-> - To add or delete work items or change the link structure, use Excel. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+These tools provide flexibility for managing Parent/Child links based on your workflow and preferences.
 
 ## Link a work item to another work item
+
+#### [Browser](#tab/browser/)
 
 To add a link to another work item in the web portal, do the following steps:
 
@@ -112,10 +100,98 @@ To add a link to another work item in the web portal, do the following steps:
    To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or \to link to an item in a different project, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**.
    ::: moniker-end
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
+
+To link one or more work items to a single work item, enter the [az boards work-item relation add](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-add) command.
+
+Required parameters include the ID of the work item to link to and the link type. Supported link types include *Parent*, *Child*, *Related*, and *Remote Related*. For a list of all link types, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command.
+
+For work items defined within the same organization, you must specify the work item ID or target URL. For work items defined in a remote organization, specify the target URL. You can specify multiple values by separating IDs or URLs with a comma.
+
+```azurecli
+az boards work-item relation add --id
+                                 --relation-type
+                                 [--detect {false, true}]
+                                 [--org]
+                                 [--target-id]
+                                 [--target-url]
+```
+
+The following command links work item *ID=2807* to work item *ID=2794* with the *Child* link type. The command returns a list of all links currently defined for the work item.
+
+```azurecli
+az boards work-item relation add --id 2794 --relation-type Child --target-id 2856 --output table
+Are you sure you want to remove this relation(s)? (y/n): y
+Relation Type    Url
+---------------  -------------------------------------------------------------------------------------------------
+Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2850
+Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2808
+Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2820
+Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2856
+Parent           https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2811
+Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2876
+Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2801
+Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2877
+Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2805
+Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2807
+```
+
+To view the information for the linked work items, enter one of the URLs listed in your browser.
+
+### Show details of links made for a single work item
+
+To view the work items linked to a single work item, enter the [az boards work-item relation show](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-show) command. For a list of all link types that can be returned, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command.
+
+```azurecli
+az boards work-item relation show --id
+                                  [--detect {false, true}]
+                                  [--org]
+```
+
+The following command lists the details of links defined for work item *ID=2931* in the *fabrikam* organization in table format.
+
+```azurecli
+az boards work-item relation show --id 2931 --output table
+Relation Type    Url
+---------------  -----------------------------------------------------------------------------------------------------------------------------------
+Related          https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2932
+Successor        https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2932
+Remote Related   https://dev.azure.com/fabrikam-fiber5/bbbbbbbb-1111-2222-3333-cccccccccccc/_apis/wit/workItems/1777
+Parent           https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2930
+Predecessor      https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2933
+Attached File    https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/attachments/1cc6c026-b4ed-420c-bfe6-065be726cba7
+```
+
+To view the information for the linked work items, enter one of the URLs listed in your browser. Choose the URL for an attached file to download the attachment.
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
+---
+
+::: moniker range=">= azure-devops-2020"
+
+## Link work items to pull requests
+
+1. In the description of your pull request, enter `#` to trigger the `#ID` work item picker. A list displays 50 work items that you recently modified or are assigned to you.
+
+   :::image type="content" source="media/add-link/link-pr-to-work-item.png" alt-text="Screenshot of work item list produced when entering the symbol # in PR description.":::
+
+1. To narrow the list of suggested work items, enter up to five keywords that match the work item type, ID, or title.
+
+   :::image type="content" source="media/add-link/keyword-pr-link.png" alt-text="Screenshot of entering keyword after the symbol # and resulting work item in search.":::
+
+::: moniker-end
+
+For more information, see [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
+
 ## Link several work items
 
 1. From the web portal, open a [backlog](create-your-backlog.md) or [query results page](../queries/view-run-query.md).
-2. [Multi-select (highlight) the work items](bulk-modify-work-items.md#multi-select) to add a link to.
+2. To add a link, [multi-select (highlight) the work items](bulk-modify-work-items.md#multi-select).
 3. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** for the selected work items, select **Add link**, and then choose **Link to an existing item...** or **Link to a new work item...**.
 
    In the following example, we multi-select from the product backlog and choose **Link to an existing item...**.
@@ -188,22 +264,6 @@ Do the following steps to link work items to objects defined in other Azure DevO
    :::image type="content" source="media/add-link/links-tab-remote-links.png" alt-text="Screenshot of User Story form, Link tab, showing two external links.":::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
-
-## Link work items to pull requests
-
-1. In the description of your pull request, enter `#` to trigger the `#ID` work item picker. A list displays 50 work items that you recently modified or are assigned to you.
-
-   :::image type="content" source="media/add-link/link-pr-to-work-item.png" alt-text="Screenshot of work item list produced when entering the symbol # in PR description.":::
-
-1. To narrow the list of suggested work items, enter up to five keywords that match the work item type, ID, or title.
-
-   :::image type="content" source="media/add-link/keyword-pr-link.png" alt-text="Screenshot of entering keyword after the symbol # and resulting work item in search.":::
-
-::: moniker-end
-
-For more information, see [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
-
 <a id="link-github"></a>
 
 ## Link work items to GitHub objects
@@ -239,7 +299,7 @@ Do the following steps to link work items to existing builds. These builds can b
 
 2. From the **Add link** dialog, choose one of the build link types: **Build**, **Found in build**, **Integrated in build**. Specify the build number.
 
-   The build number is a combination of the pipeline and build name. If you don't know the build number, select **Find builds**.
+   The build number is a combination of the pipeline name and build name. If you don't know the build number, select **Find builds**.
 
    :::image type="content" source="media/add-link/add-link-find-builds.png" alt-text="Screenshot shows highlighted button, Find builds.":::
 
@@ -336,7 +396,7 @@ Team Foundation Version Control (TFVC) allows you to link work items to version 
 
 Test-related link types link test case management work items to one another or to other work items. From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite and which test suites are defined for a test plan. These objects aren't linked to each other through link types.
 
-You can link work items to test cases using the **Tested/Tested By** link types. Use the same link controls you use to link work items to other work items. See [Link work items](#link-work-items).
+You can link work items to test cases using the **Tested/Tested By** link types. Use the same link controls you use to link work items to other work items.
 
 The following image shows the full set of link types that you can use with test management work item types. Most links between test management objects occur by running a task from the **Test** pages or Microsoft Test Manager.
 
@@ -354,7 +414,7 @@ From the **Test** section, you can add test plans, test suites, and test cases, 
 
 ## Link work items to a Web site, network share, storyboard, or document
 
-You can use a hyperlink or storyboard link type to link a work item to a website, network share, or document on a network share. Both link types are one-way links. To add these link types, use the same controls described earlier. See [Link work items](#link-work-items).
+You can use a hyperlink or storyboard link type to link a work item to a website, network share, or document on a network share. Both link types are one-way links. To add these link types, use the same controls described earlier.
 
 When using the storyboard link type, specify a storyboard or document that provides work item specifications. This link type allows your team to access the shared file and add their comments.
 
@@ -390,69 +450,26 @@ To find work items linked to other work items with specific link types, use a qu
 - The primary set meets the field criteria.
 - The secondary set is linked to the primary set.
 
-You can’t query for work items in releases, but you can query for work items with external links. Add more query filters to refine your search.
+You can’t query for work items in releases, but you can query for work items with external links. To refine your search, add more query filters.
 
 For more information, see [Query work items by link or attachment count](../queries/linking-attachments.md).
 
 You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using Parent/Child or any other link type. You can only view the hierarchy through the **Test** > **Test Plans** page. For more information, see [Create test plans and test suites](../../test/create-a-test-plan.md).
 
-<a id="azure-cli"></a>
+## Remove work item links
+
+Do the following steps to delete a work item link.
+
+#### [Browser](#tab/browser/)
+
+1. Open the work item.
+2. Select the **Links** tab to see the list of links.
+3. Select the link that you want to delete, and then select **Remove link**.
+4. Confirm that you want to delete the link.
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"
-
-## Use Azure CLI to add, remove, or show links
-
-You can add, remove, and show details of links to a work item with the [az boards work-item relation](/cli/azure/boards/work-item/relation) command. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-Link types include work link types, remote link types, hyperlinks, and attached files. For a list of all link types that you can specify, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command.
-
-```azurecli
-az boards work-item relation add
-az boards work-item relation remove
-az boards work-item relation show
-```
-
-In the following examples, the organization is *fabrikam* and the project ID corresponds to *aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb*. The table format is used to show the output. For other formats, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).  
-
-### Link work items
-
-To link one or more work items to a single work item, enter the [az boards work-item relation add](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-add) command.
-
-Required parameters include the ID of the work item to link to and the link type. Supported link types include *Parent*, *Child*, *Related*, and *Remote Related*. For a list of all link types, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command.
-
-For work items defined within the same organization, you must specify the work item ID or target URL. For work items defined in a remote organization, specify the target URL. You can specify multiple values by separating IDs or URLs with a comma.
-
-```azurecli
-az boards work-item relation add --id
-                                 --relation-type
-                                 [--detect {false, true}]
-                                 [--org]
-                                 [--target-id]
-                                 [--target-url]
-```
-
-The following command links work item *ID=2807* to work item *ID=2794* with the *Child* link type. The command returns a list of all links currently defined for the work item.
-
-```azurecli
-az boards work-item relation add --id 2794 --relation-type Child --target-id 2856 --output table
-Are you sure you want to remove this relation(s)? (y/n): y
-Relation Type    Url
----------------  -------------------------------------------------------------------------------------------------
-Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2850
-Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2808
-Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2820
-Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2856
-Parent           https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2811
-Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2876
-Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2801
-Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2877
-Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2805
-Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2807
-```
-
-To view the information for the linked work items, enter one of the URLs listed in your browser.
-
-### Remove work item links
 
 To remove one or more linked work items from a single work item, enter the [az boards work-item relation remove](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-remove) command.
 
@@ -489,47 +506,17 @@ Child            https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbb
 
 To view the information for the linked work items, enter one of the URLs listed in your browser.
 
-### Show details of links made for a single work item
-
-To view the work items linked to a single work item, enter the [az boards work-item relation show](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-show) command. For a list of all link types that can be returned, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command.
-
-```azurecli
-az boards work-item relation show --id
-                                  [--detect {false, true}]
-                                  [--org]
-```
-
-The following command lists the details of links defined for work item *ID=2931* in the *fabrikam* organization in table format.
-
-```azurecli
-az boards work-item relation show --id 2931 --output table
-Relation Type    Url
----------------  -----------------------------------------------------------------------------------------------------------------------------------
-Related          https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2932
-Successor        https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2932
-Remote Related   https://dev.azure.com/fabrikam-fiber5/bbbbbbbb-1111-2222-3333-cccccccccccc/_apis/wit/workItems/1777
-Parent           https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2930
-Predecessor      https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/workItems/2933
-Attached File    https://dev.azure.com/fabrikam/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/_apis/wit/attachments/1cc6c026-b4ed-420c-bfe6-065be726cba7
-```
-
-To view the information for the linked work items, enter one of the URLs listed in your browser. Choose the URL for an attached file to download the attachment.
 ::: moniker-end
 
-## Delete work item links
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-Do the following steps to delete a work item link.
-
-1. Open the work item.
-2. Select the **Links** tab to see the list of links.
-3. Select the link that you want to delete, and then select **Remove link**.
-4. Confirm that you want to delete the link.
+---
 
 After a work item gets linked to a commit or pull request, it continues to appear as part of the release stages. For example, if you have a work item that didn't pass testing criteria, you might want to remove it from the builds and releases.
 
 To remove the work item from participating in future builds and releases, delete the link to the most recent commit and pull request.
 
-## Related articles
+## Related content
 
 - [Review the reference guide for link types](../queries/link-type-reference.md)
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
