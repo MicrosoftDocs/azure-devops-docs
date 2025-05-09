@@ -100,7 +100,7 @@
       displayName: application, settings, add, update, remove
       href: ../accounts/change-application-access-policies.md
     - name: Manage PAT policies
-      href: manage-pats-with-policies-for-administrators.md
+      href: ../accounts/manage-pats-with-policies-for-administrators.md
     - name: Add external users
       displayName: create, outside, new, access, B2B
       href: ../accounts/add-external-user.md
@@ -112,7 +112,7 @@
       href: restrict-invitations.md
     - name: Restrict organization creation
       displayName: administrators, creating, organization
-      href: azure-ad-tenant-policy-restrict-org-creation.md
+      href: ../accounts/azure-ad-tenant-policy-restrict-org-creation.md
   - name: Secure data and networks
     items:
     - name: Allowed address lists & network connections
@@ -126,7 +126,7 @@
     - name: Data Subject Requests for the GDPR & CCPA
       href: /microsoft-365/compliance/gdpr-dsr-vsts?toc=/azure/devops/organizations/security/toc.json
     - name: Revoke user PATs (for admins)
-      href: admin-revoke-user-pats.md
+      href: ../accounts/admin-revoke-user-pats.md
 - name: Secure projects
   items:
   - name: Look up a project administrator
