@@ -20,42 +20,34 @@ When you're handling information and data, especially in a cloud-based solution 
 
 Securing your network is crucial when you're working with Azure DevOps to protect your data and resources from unauthorized access and potential threats. Implement network security measures to help ensure that only trusted sources can access your Azure DevOps environment. To secure your network when you're working with Azure DevOps, do the following actions:
 
-- **Set up IP allowlisting:** Restrict access to specific IP addresses to allow traffic only from trusted sources, reducing the attack surface. For instructions, see [Set up IP allowlisting](allow-list-ip-url.md). 
-- **Use data encryption:** Always encrypt data in transit and at rest. Secure communication channels using protocols like HTTPS. For more information, see [Use data encryption](/azure/security/fundamentals/encryption-overview).
-- **Validate certificates:** Ensure certificates are valid and issued by trusted authorities when establishing connections. For more information, see [Validate certificates](/azure/security/fundamentals/azure-ca-details?tabs=root-and-subordinate-cas-list).
-- **Implement Web Application Firewalls (WAFs):** Filter, monitor, and block malicious web-based traffic with WAFs for an extra layer of protection against common attacks. For more information, see [Implement Web Application Firewalls (WAFs)](/azure/web-application-firewall/).
-- **Enable network security groups (NSGs):** Use NSGs to control inbound and outbound traffic to Azure resources, ensuring only authorized traffic is allowed. For more information, see the [Network security groups (NSGs) overview](/azure/virtual-network/network-security-groups-overview).
-- **Use Azure Firewall:** Deploy Azure Firewall to provide a centralized network security policy across multiple Azure subscriptions and virtual networks. For more information, see the [Azure Firewall overview](/azure/firewall/overview).
-- **Monitor network traffic:** Use Azure Network Watcher to monitor and diagnose network issues, ensuring the security and performance of your network. For more information, see the [Azure Network Watcher overview](/azure/network-watcher/network-watcher-monitoring-overview).
-- **Implement DDoS protection:** Enable Azure DDoS Protection to safeguard your applications from distributed denial-of-service (DDoS) attacks. For more information, see [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview).
+- **[Set up IP allowlisting](allow-list-ip-url.md):** Restrict access to specific IP addresses to allow traffic only from trusted sources, reducing the attack surface.
+- **[Use data encryption](/azure/security/fundamentals/encryption-overview):** Always encrypt data in transit and at rest. Secure communication channels using protocols like HTTPS.
+- **[Validate certificates](/azure/security/fundamentals/azure-ca-details?tabs=root-and-subordinate-cas-list):** Ensure certificates are valid and issued by trusted authorities when establishing connections.
+- **[Implement Web Application Firewalls (WAFs)](/azure/web-application-firewall/):** Filter, monitor, and block malicious web-based traffic with WAFs for an extra layer of protection against common attacks.
+- **[Network security groups (NSGs) overview](/azure/virtual-network/network-security-groups-overview):** Use NSGs to control inbound and outbound traffic to Azure resources, ensuring only authorized traffic is allowed.
+- **[Use Azure Firewall](/azure/firewall/overview):** Deploy Azure Firewall to provide a centralized network security policy across multiple Azure subscriptions and virtual networks.
+- **[Monitor network traffic with Azure Network Watcher](/azure/network-watcher/network-watcher-monitoring-overview):** Use Azure Network Watcher to monitor and diagnose network issues, ensuring the security and performance of your network.
+- **[Implement DDoS protection with Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview):** Enable Azure DDoS Protection to safeguard your applications from distributed denial-of-service (DDoS) attacks.
 
 For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals).
 
-## Secure your Azure DevOps environment
+## Comply with industry standards
 
-To ensure that your Azure DevOps environment complies with industry standards and regulations, implement security measures and policies. Compliance with standards such as ISO/IEC 27001, SOC 1/2/3, and General Data Protection Regulation (GDPR) helps protect your environment and maintain trust with your users.
+Ensure your Azure DevOps environment complies with industry standards and regulations that protect your environment and maintain trust with your users.
 
 - **Ensure compliance with industry standards:** Azure DevOps complies with various industry standards and regulations, such as ISO/IEC 27001, SOC 1/2/3, and GDPR. Ensure your environment adheres to these standards.
-- **Enforce policies:** Implement policies to enforce security best practices across your organization. This action includes requiring code reviews and enforcing [branch policies](../../repos/git/branch-policies.md), [compliance policies for pipelines](/azure/governance/policy/tutorials/policy-devops-pipelines), and [security policies](../accounts/change-application-access-policies.md).
-- **Onboard to Component Governance for CI/CD for the following reasons:**
+- **Enforce compliance policies:** Implement [branch policies](../../repos/git/branch-policies.md) and [compliance policies for your pipelines](/azure/governance/policy/tutorials/policy-devops-pipelines).
+- **Onboard to Component Governance for CI/CDs**, which offers the following benefits:
   - Security vulnerability detection: Alerts you to known vulnerabilities in open-source components.
   - License compliance: Ensures components comply with your organization's licensing policies.
   - Policy enforcement: Ensures only approved versions are used.
   - Visibility with tracking: Provides visibility into components across repositories for easier management. 
 
-### Manage project and organization-level permissions
+## Automate security scanning
 
-- **Limit access to projects and repos:** Reduce the risk of leaking sensitive information and deploying insecure code by limiting access to projects and repositories. Use built-in or custom security groups manage permissions. For more information, see [Limit access to projects and repositories](restrict-access.md).
-- **Disable *“Allow public projects”*:** In your organization’s policy settings, disable the option to create public projects. Switch project visibility from public to private as needed. Users who never signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes. For more information, see [Change application connection and security policies for your organization](../accounts/change-application-access-policies.md).
-- **Restrict organization creation:** Prevent users from creating new projects to maintain control over your environment. For more information, see [Restrict organization creation via Microsoft Entra tenant policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+Monitor for code and secret vulnerabilities with the following automated security tools built by our partner teams:
 
-## Use security features and tools
-
-The following security features and tools can help you monitor, manage, and enhance the security of your projects:
-
-- **Use OAuth instead of personal access tokens (PATs):** Use OAuth flow instead of PATs and don't use personal GitHub accounts as service connections. For more information, see the [OAuth overview](../../integrate/get-started/authentication/oauth.md).
 - **Use code scanning and analysis:** Utilize tools like [Microsoft Defender](https://apps.microsoft.com/detail/9p6pmztm93lr?hl=en-US&gl=US) to scan your code for vulnerabilities, secrets, and misconfigurations. This action helps identify and remediate security issues early in the development process.
-- **Use Git Credential Manager:** Support [two-factor authentication with GitHub repositories](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication) and authenticate to Azure Repos. For more information, see [Set up Git Credential Manager](../../repos/git/set-up-credential-managers.md).
 - **Use Azure DevOps Credential Scanner (CredScan) for GitHub:** When using a managed identity isn't an option, ensure that credentials get stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files. Implement Azure DevOps Credential Scanner to identify credentials within the code. For more information, see [Getting started with CredScan](https://secdevtools.azurewebsites.net/helpcredscan.html).
 - **Use native secret scanning for GitHub:** When using a managed identity isn't an option, ensure that secrets get stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files. Use the native secret scanning feature to identify secrets within the code. For more information, see [About secret scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning).
 
@@ -108,16 +100,20 @@ To scope permissions effectively, do the following actions:
 - **Segment environments:** Use separate Azure accounts for different environments, such as Development, Testing, and Production, to enhance security and prevent conflicts. This approach minimizes the risk of resource conflicts and data contamination between environments and allows for better management and isolation of resources. For more information, see [Azure Landing Zone](/azure/cloud-adoption-framework/ready/landing-zone/).
 - **Control access and ensure compliance:** Use Azure Policy to restrict access to unused Azure regions and services, ensuring compliance with organizational standards. This action helps enforce best practices and maintain a secure environment by preventing unauthorized access and usage. For more information, see the [Azure Policy overview](/azure/governance/policy/overview).
 - **Implement Azure role-based control (ABAC):** Use ABAC with properly tagged resources, limiting unauthorized access. This action ensures that access permissions get granted based on specific attributes, enhancing security by preventing unauthorized resource creation and access. For more information, see [Implement Azure role-based control (ABAC)](/azure/role-based-access-control/conditions-overview).
-- **Use security groups:** Use security groups to efficiently manage permissions for multiple users. This method simplifies granting and revoking access compared to assigning permissions individually and ensures consistency and easier management across your organization.
-  - Use Microsoft Entra ID, Active Directory, or Windows security groups when you're managing lots of users.
+- **Use security groups:** Use [security groups](add-manage-security-groups.md) to efficiently manage permissions for multiple users. This method simplifies granting and revoking access compared to assigning permissions individually and ensures consistency and easier management across your organization.
+  - Use [Microsoft Entra ID](../accounts/access-with-azure-ad.md), Active Directory, or Windows security groups when you're managing lots of users.
   - Take advantage of built-in roles and default to Contributor for developers. Admins get assigned to the Project Administrator security group for elevated permissions, allowing them to configure security permissions.
   - Keep groups as small as possible, restricting access.
-  - For more information, see [Manage security groups](add-manage-security-groups.md).
-- **Choose the right authentication method:** Set up secure authentication methods and manage authorization policies. For more information, see the [Choose the right authentication method](#choose-the-right-authentication-method) section in this article and [Authentication methods](about-security-identity.md).
-- **Integrate with Microsoft Entra ID:** Use Microsoft Entra ID for unified identity management. For more information, see [Connect your organization to Microsoft Entra ID](../accounts/connect-organization-to-azure-ad.md).
-  - To enhance security for built-in administrator groups, consider implementing just-in-time access using a Microsoft Entra [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups). This approach allows you to grant elevated permissions only when needed, reducing the risk associated with permanent access. For more information, see [Configure just-in-time-access for admin groups](../accounts/manage-azure-active-directory-groups.md#configure-just-in-time-access-for-admin-groups).
-- **Enable Microsoft Entra multifactor authentication (MFA):** Add an extra layer of security with MFA. For more information, see [Enable Microsoft Entra multifactor authentication](/entra/identity/authentication/tutorial-enable-azure-mfa).
-- **Change security policies:** Manage security policies, including conditional access. for more information, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md).
+  - Consider implementing [just-in-time access](../accounts/manage-azure-active-directory-groups.md#configure-just-in-time-access-for-admin-groups) using a Microsoft Entra [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups). Grant elevated permissions only when needed, reducing the risk associated with permanent access.
+- **Limit access to projects and repos:** Reduce the risk of leaking sensitive information and deploying insecure code by limiting access to projects and repositories. Use built-in or custom security groups manage permissions. For more information, see [Limit access to projects and repositories](restrict-access.md).
+
+
+### Enforce security policies
+- **Implement security policies:** Review over security policies to limit who has access to the organization through allowed authentication methods and conditional access policies. For more information, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md).
+- **Enable Microsoft Entra multifactor authentication (MFA):** Add an extra layer of security with MFA. For more information, see [Enable Microsoft Entra multifactor authentication](/entra/identity/authentication/tutorial-enable-azure-mfa). 
+- **Disable *“Allow public projects”*:** Disable the option to create public projects. Switch project visibility from public to private as needed. Users who never signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes. For more information, see [Make project public](../projects/make-project-public.md)
+- **Restrict organization creation:** Prevent users from creating new projects to maintain control over your environment. For more information, see [Restrict organization creation via Microsoft Entra tenant policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+
 
 For more information about permissions, see the following articles:
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
