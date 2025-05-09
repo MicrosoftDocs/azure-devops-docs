@@ -25,6 +25,8 @@ landingContent:
         links:
           - text: About permissions, access, and security groups
             url: about-permissions.md
+          - text: About authentication, authorization, & security policies
+            url: about-security-identity.md              
           - text: Security overview
             url: security-overview.md
       - linkListType: quickstart
@@ -83,8 +85,6 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: About security, authentication, & authorization
-            url: about-security-identity.md  
           - text: Authentication guidance 
             url: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json   
       - linkListType: how-to-guide
