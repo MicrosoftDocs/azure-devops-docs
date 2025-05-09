@@ -7,9 +7,6 @@
   - name: About permissions, access, & security groups
     displayName: security, group, membership, inheritance, roles
     href: about-permissions.md
-  - name: About authentication, authorization, & security policies
-    displayName: concepts, understand, credentials, accounts, authorization, policies
-    href: about-security-identity.md
   - name: Add users to a team or project
     displayName: create, new, account, default, custom, access, permission
     href: add-users-team-project.md
@@ -21,6 +18,12 @@
     href: request-changes-permissions.md
   - name: Manage users or groups
     href: add-remove-manage-user-group-security-group.md
+  - name: About authentication, authorization, & security policies
+    displayName: concepts, understand, credentials, accounts, authorization, policies
+    href: about-security-identity.md
+  - name: Authentication types
+    displayName: permission, security, mechanism, type, application
+    href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json
   expanded: true
 - name: Access levels and Stakeholder access
   items:
@@ -79,29 +82,6 @@
   - name: Remove user accounts from Active Directory
     displayName: delete, revoke, organization, members
     href: /azure/active-directory/add-users-azure-active-directory#delete-a-user?toc=/azure/devops/organizations/security/toc.json
-- name: Authenticate
-  items:
-  - name: Authentication methods guidance
-    displayName: permission, security, mechanism, type, application
-    href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Authenticate with Entra tokens
-    displayName: authenticate, security, Entra
-    href: ../../integrate/get-started/authentication/entra.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Authenticate with personal access tokens (PATs)
-    displayName: authenticate, security, PATs
-    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Manage PATs via API
-    displayName: lifecycle, authenticate
-    href: ../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Authenticate with OAuth 2.0
-    displayName: authenticate, access, token, app, security
-    href: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Authenticate with service principals
-    displayName: authenticate, access, security, service, principal, managed, identity
-    href: ../../integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Authenticate with SSH
-    displayName: authenticate, access, security, ssh
-    href: ../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json
 - name: Secure organizations/collections
   items:
   - name: Look up the organization owner
