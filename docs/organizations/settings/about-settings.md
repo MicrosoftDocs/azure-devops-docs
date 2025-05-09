@@ -89,7 +89,7 @@ Individual contributors can customize their experience in Azure DevOps by settin
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
    :::column-end:::
    :::column span="2":::
-      For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
+      For an overview of supported authentication methods, see [Authentication overview](../../integrate/get-started/authentication/authentication-guidance.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -102,6 +102,7 @@ Individual contributors can customize their experience in Azure DevOps by settin
    :::column span="2":::
       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
+      - [Manage OAuth app authorizations](manage-authorizations.md)
    :::column-end:::
    :::column span="2":::
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
@@ -117,7 +118,6 @@ Individual contributors can customize their experience in Azure DevOps by settin
       - [Set personal or team favorites](../../project/navigation/set-favorites.md)
    :::column-end:::
    :::column span="2":::
-      For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
 ---
