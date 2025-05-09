@@ -57,7 +57,7 @@ You can manage PATs through the following methods:
 
       For example, to create a token for a [build and release agent](/pipelines/agents/agents) to authenticate to Azure DevOps, set the token's scope to **Agent Pools (Read & manage)**. To read audit log events and manage or delete streams, select **Read Audit Log**, and then select **Create**.
 
-   :::image type="content" source="../media/select-pat-scopes-preview.png" alt-text="Screenshot showing selected scopes for a PAT.":::
+   :::image type="content" source="/media/select-pat-scopes-preview.png" alt-text="Screenshot showing selected scopes for a PAT.":::
 
    > [!NOTE]
    > Your admin(s) may [restrict you from creating full-scoped PATs or limit you to packaging-scope PATs only](manage-pats-with-policies-for-administrators.md). Reach out to your admin to get on the allowlist if you need access to additional scopes.
@@ -65,7 +65,7 @@ You can manage PATs through the following methods:
 
 6. When you're done, copy the token and store it in a secure location. For your security, it doesn't display again.
 
-   :::image type="content" source="../media/copy-token-to-clipboard.png" alt-text="Screenshot showing how to copy the token to your clipboard.":::
+   :::image type="content" source="/media/copy-token-to-clipboard.png" alt-text="Screenshot showing how to copy the token to your clipboard.":::
 
 Use your PAT anywhere your user credentials are required for authentication in Azure DevOps.
 
