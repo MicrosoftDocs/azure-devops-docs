@@ -1,6 +1,6 @@
 - name: Security, Permissions, & Access
   href: index.yml
-- name: Security checklist
+- name: Security Best Practices
   href: security-overview.md
 - name: Get started
   items:
