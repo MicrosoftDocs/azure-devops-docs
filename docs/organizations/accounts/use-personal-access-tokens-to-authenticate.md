@@ -108,7 +108,7 @@ Your PAT serves as your digital identity, much like a password. You can use PATs
 
 > [!IMPORTANT]
 > Once your app code is working, switch to [Microsoft Entra OAuth to acquire tokens on-behalf-of your app's users](../../integrate/get-started/authentication/entra-oauth.md) or a [service principal or managed identity to acquire tokens as an application](../../integrate/get-started/authentication/service-principal-managed-identity.md). It is not recommended to keep running apps or scripts with PATs long-term. Microsoft Entra tokens can be used anywhere a PAT is used.
-> Consider [acquiring a Microsoft Entra token via the Azure CLI](../../integrate/get-started/authentication/entra.md#ad-hoc-requests-to-azure-devops-rest-apis) for ad-hoc requests.
+> Consider [acquiring a Microsoft Entra token via the Azure CLI](../../cli/entra-tokens.md) for ad-hoc requests.
 
 #### [Windows](#tab/Windows/)
 
@@ -181,7 +181,7 @@ As of July 2024, we updated the format of PAT strings to improve secret detectio
 * New tokens are now **84** characters long, with 52 characters being randomized data. This improves overall entropy, making tokens more resistant to brute force attacks.
 * Tokens issued by our service include a fixed `AZDO` signature at positions 76-80.
 
-If you are using a PAT issued prior to that data, regenerate your PAT. If you integrate with PATs and have PAT validation built-in, update your validate code to accommodate both new and existing token lengths. Additionally, explore integrating with [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) in lieu of PATs.
+If you are using a PAT issued prior to that data, regenerate your PAT. If you integrate with PATs and have PAT validation built-in, update your validate code to accommodate both new and existing token lengths.
 
 > [!WARNING]
 > Both formats will remain valid for the foreseeable future. As adoption of the new format increases, we may retire older 52-character PATs.
