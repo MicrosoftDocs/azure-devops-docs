@@ -186,8 +186,8 @@ If you are using a PAT issued prior to that data, regenerate your PAT. If you in
 
 ### Consider alternatives
 
-* Acquire a Microsoft Entra token via the [Azure CLI](../../integrate/get-started/authentication/entra.md#ad-hoc-requests-to-azure-devops-rest-apis) for ad-hoc requests instead of minting a longer-lived PAT.
-* Use credential managers like [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager) or [Azure Artifacts Credential Manager](https://github.com/microsoft/artifacts-credprovider) to simplify credential management. These tools offer the ability to [use Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) as the default authentication instead of PATs.
+* Acquire a Microsoft Entra token via the [Azure CLI](../../cli/entra-tokens.md) for ad-hoc requests instead of minting a longer-lived PAT.
+* Use credential managers like [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager) or [Azure Artifacts Credential Manager](https://github.com/microsoft/artifacts-credprovider) to simplify credential management, with authentication set to `oauth` or Microsoft Entra tokens.
 
 ### Creating PATs
 
