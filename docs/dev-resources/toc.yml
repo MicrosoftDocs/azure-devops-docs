@@ -70,7 +70,7 @@
   href: ../cli/toc.yml
   expanded: true
 - name: Develop Marketplace Extensions
-  href: ../marketplace-extensibility/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  href: ../marketplace-extensibility/?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Git Credential Manager
   href: ../repos/git/set-up-credential-managers.md
 - name: Git commands
