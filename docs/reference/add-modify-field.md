@@ -25,9 +25,9 @@ You can modify existing fields or add custom fields to track more data. For exam
 
 Pick lists get defined in different ways, such as through the user interface, WIT workflows, or by adding user accounts to a project, as shown in the following table.   
 
-> |WIT definition  |Command line change (On-premises XML process) |
-> |-------------|----------|  
-> |- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](../boards/work-items/work-item-fields.md#list-fields)<br/>- [Change a field attribute](#change-attribute) <br/>- [Delete a field](#delete-field)<br/>- [Index a field](#index-field)  | 
+|WIT definition  |Command line change (On-premises XML process) |
+|-------------|----------|  
+|- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](../boards/work-items/work-item-fields.md#list-fields)<br/>- [Change a field attribute](#change-attribute) <br/>- [Delete a field](#delete-field)<br/>- [Index a field](#index-field)  | 
 
 ## Prerequisites
  
@@ -65,7 +65,7 @@ To change a field attribute or rename a field, use the **witadmin** command line
 
 <a id="edit">  </a>
 
-## To edit a WIT definition file 
+## Edit a WIT definition file 
 
 To add rules or add a custom field, export, edit, and then import the WIT definition file.
 
@@ -100,27 +100,23 @@ The field appears as a checkbox on the form.
 
 Pick lists are enumerated values displayed in drop-down menus on work item forms and in the **Value** column of the query editor. To customize a pick list for most string or integer fields, edit the WIT definition. For example, use the following XML to add a custom Resolution field with a pick list.
 
-:::row:::
-   :::column span="1":::
-   Custom field and pick list   
-   ![Custom pick list](media/custom-pick-list.png)
-   :::column-end:::
-   :::column span="2":::
-   ```
-   <FIELD name="Resolution" refname="MyCompany.Resolution" type="String">    
-   <ALLOWEDVALUES>
-      <LISTITEM value="By Design" />
-      <LISTITEM value="Duplicate" />
-      <LISTITEM value="External" />
-      <LISTITEM value="Fixed" />
-      <LISTITEM value="Not Repro" />
-      <LISTITEM value="Postponed" />
-      <LISTITEM value="Won't Fix" />
-   </ALLOWEDVALUES>
-   </FIELD>
-   ```
-   :::column-end:::
-:::row-end:::
+Custom field and pick list   
+![Screenshot shows a Custom pick list.](media/custom-pick-list.png)
+
+
+```XML
+<FIELD name="Resolution" refname="MyCompany.Resolution" type="String">    
+<ALLOWEDVALUES>
+   <LISTITEM value="By Design" />
+   <LISTITEM value="Duplicate" />
+   <LISTITEM value="External" />
+   <LISTITEM value="Fixed" />
+   <LISTITEM value="Not Repro" />
+   <LISTITEM value="Postponed" />
+   <LISTITEM value="Won't Fix" />
+</ALLOWEDVALUES>
+</FIELD>
+```
 
 Rules allow you to combine lists, restrict who can access a list, and set conditions for when a list appears on the work item form. You can use the **expanditems** and **filteritems** attributes to control whether a distribution list shows individual members or filters specific items.
 
@@ -143,14 +139,14 @@ For example, the following code snippet enforces a rule that only members of the
 
 You can apply rules to fields to achieve the following actions:
 
-> | Action | XML Element |
-> |---|---|  
-> | Add a tool-tip to a field. | **HELPTEXT** |  
-> | Define or restrict the values a field can have. | **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, **REQUIRED** |  
-> | Copy a value or set a default value for a field. | **COPY**, **DEFAULT**, **SERVERDEFAULT** |  
-> | Restrict who can modify a field. | **VALIDUSER**, **for**, **not** |  
-> | Enforce pattern matching for string fields. | **MATCH** |  
-> | Apply rules conditionally based on other field values. | **WHEN**, **WHENNOT**, **WHENCHANGED**, **WHENNOTCHANGED** |  
+| Action | XML Element |
+|---|---|  
+| Add a tool-tip to a field. | **HELPTEXT** |  
+| Define or restrict the values a field can have. | **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, **REQUIRED** |  
+| Copy a value or set a default value for a field. | **COPY**, **DEFAULT**, **SERVERDEFAULT** |  
+| Restrict who can modify a field. | **VALIDUSER**, **for**, **not** |  
+| Enforce pattern matching for string fields. | **MATCH** |  
+| Apply rules conditionally based on other field values. | **WHEN**, **WHENNOT**, **WHENCHANGED**, **WHENNOTCHANGED** |  
 
 System fields, identified by the "System" prefix, for example, System.ID, allow limited rule customization. For instance, you can't copy or clear fields that track who created, changed, or closed a work item, or system-managed date-time fields.
 
@@ -158,7 +154,7 @@ For details on field rules and restrictions, see [Rules and rule evaluation](../
 
 <a id="add-custom-field">  </a>
 
-## To add a custom field
+## Add a custom field
 
 To add a custom field, edit the WIT definition to add a **FIELD** element within the **FIELDS** section and a **Control** element within the **FORM** section. 
 
@@ -218,7 +214,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
 
 <a id="change-label">  </a>
 
-## To change the field label on a work item form
+## Change the field label on a work item form
 
 To modify the field label, change the value assigned to the ```Control``` element ```Label``` attribute. To remove a field from the work item form, delete the ```Control``` element associated with the field. 
 
@@ -262,10 +258,10 @@ To add a custom control to the new web form, see [WebLayout and Control elements
 
 ## Change an attribute of an existing field 
 
-You use **witadmin changefield** to change the attributes of an existing field. For example, the following command changes the friendly name defined for MyCompany.Type to Evaluation Method.  
+You use **witadmin changefield** to change the attributes of an existing field. For example, the following command changes the friendly name defined for `MyCompany.Type` to Evaluation Method.
 
 ```
-witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.Type /name:"Evaluation Method"
+witadmin changefield /collection:http://AdventureWorksServer:8080/ DefaultCollection/n:MyCompany.Type /name:"Evaluation Method"
 ```  
 
 The following table summarizes the attributes you can change using [witadmin changefield](witadmin/manage-work-item-fields.md).
