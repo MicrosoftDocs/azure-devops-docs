@@ -27,3 +27,4 @@ To get started, check out the following resources:
 * See if our [client libraries](/concepts/dotnet-client-libraries.md) might be a more suitable alternative to making direct API calls.
 * [Integrate with a webhook](../service-hooks/overview.md) to receive and action on events.
 * [Develop and publish extensions](/extend/overview/) on the Visual Studio Marketplace to customize or extend the Azure DevOps platform for your team or customers.
+* Review [app development best practices](/integrate/concepts/integration-bestpractices.md)
