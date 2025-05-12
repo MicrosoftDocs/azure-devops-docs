@@ -23,10 +23,6 @@ When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
-You can manage PATs through the following methods:
-* **User interface (UI):** Through user settings, as detailed in this article.
-* [**PAT Lifecycle Management APIs**](manage-personal-access-tokens-via-api.md)
-
 ## Prerequisites
 
 | Category | Requirements |
@@ -204,7 +200,7 @@ If you are using a PAT issued prior to that data, regenerate your PAT. If you in
 ### Managing PATs
 * **Don't share your PATs!**
 * **Store your PATs in a secure key management solution**, like [Azure KeyVault](/azure/key-vault/general/overview).
-* Regularly rotate or regenerate your PATs via UI or [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md).
+* Regularly rotate or regenerate your PATs via UI or PAT Lifecycle Management APIs.
 * Revoke PATs when no longer needed. 
 * Rotate your PATs to use the [new PAT format](#changes-to-format) for better leaked secret detection and revocation by our first-party tools.
 
@@ -229,7 +225,7 @@ A: Yes, you can renew, manage, and create PATs using our [PAT Lifecycle Manageme
 
 #### Q: Can I use PATs with all Azure DevOps REST APIs?
 
-A: No. You can use PATs with most Azure DevOps REST APIs, but [organizations and profiles](/rest/api/azure/devops/) and the [PAT Management Lifecycle APIs](manage-personal-access-tokens-via-api.md) only support [Microsoft Entra tokens](../../integrate/get-started/authentication/entra-oauth.md).
+A: No. You can use PATs with most Azure DevOps REST APIs, but [organizations and profiles](/rest/api/azure/devops/) and the PAT Management Lifecycle APIs only support [Microsoft Entra tokens](../../integrate/get-started/authentication/entra-oauth.md).
 
 #### Q: What happens if I accidentally check my PAT into a public repository on GitHub?
 
@@ -278,5 +274,4 @@ No, personal access tokens belong to a user identity. Entra [service principals 
 
 * [Use policies to manage personal access tokens for users](manage-pats-with-policies-for-administrators.md)
 * [Revoke user PATs (for admins)](admin-revoke-user-pats.md)
-* [Manage personal access tokens (PATs) using REST API](manage-personal-access-tokens-via-api.md)
 * [Authenticate with Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md)
