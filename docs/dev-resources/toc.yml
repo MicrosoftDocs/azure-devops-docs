@@ -1,24 +1,24 @@
 - name: Developer resources
   href: index.yml
-- name: Authentication overview
-  href: ../integrate/get-started/authentication/authentication-guidance.md
 - name: Authenticate
   items:
+  - name: Authentication overview
+    href: ../integrate/get-started/authentication/authentication-guidance.md
   - name: Authenticate with Entra tokens
     displayName: authenticate, security, Entra
     href: ../integrate/get-started/authentication/entra.md
-  - name: Authenticate with personal access tokens (PATs)
-    displayName: authenticate, security, PATs
-    href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
-  - name: Manage PATs via API
-    displayName: lifecycle, authenticate
-    href: ../organizations/accounts/manage-personal-access-tokens-via-api.md
   - name: Authenticate with OAuth 2.0
     displayName: authenticate, access, token, app, security
     href: ../integrate/get-started/authentication/oauth.md
   - name: Authenticate with service principals
     displayName: authenticate, access, security, service, principal, managed, identity
     href: ../integrate/get-started/authentication/service-principal-managed-identity.md
+  - name: Authenticate with personal access tokens (PATs)
+    displayName: authenticate, security, PATs
+    href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
+  - name: Manage PATs via API
+    displayName: lifecycle, authenticate
+    href: ../organizations/accounts/manage-personal-access-tokens-via-api.md
 - name: Build with Azure DevOps
   items:
   - name: Building applications
@@ -37,10 +37,10 @@
     - name: Best practices for building apps
       displayName: integrate, procedure, correct, effective
       href: ../integrate/concepts/integration-bestpractices.md
+    - name: Integrate with service hooks
+      href: ../service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json      
     - name: Develop Marketplace extensions
       href: ../marketplace-extensibility/?toc=/azure/devops/marketplace-extensibility/toc.json      
-    - name: Integrate with service hooks
-      href: ../service-hooks/?toc=/azure/devops/marketplace-extensibility/toc.json      
   - name: Samples
     items:
     - name: REST API Samples
