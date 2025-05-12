@@ -12,10 +12,10 @@ ms.date: 01/31/2025
 
 # Authenticate to Azure DevOps with Microsoft Entra
 
-[Microsoft Entra ID](/entra/fundamentals/whatis) is an identity and access management (IAM) platform that allows companies to manage organization membership and safeguard company resources. Many Azure DevOps enterprise customers choose to [connect their Azure DevOps organization to a Microsoft Entra ID tenant](../../../organizations/accounts/connect-organization-to-azure-ad.md) to support managing the large volume of users in their compa and take advantage of other [security features that Microsoft Entra offers](../../../organizations/accounts/access-with-azure-ad.md).
+[Microsoft Entra ID](/entra/fundamentals/whatis) is an identity and access management (IAM) platform that allows companies to manage organization membership and safeguard company resources. Many Azure DevOps enterprise customers choose to [connect their Azure DevOps organization to a Microsoft Entra ID tenant](../../../organizations/accounts/connect-organization-to-azure-ad.md) to support managing the large volume of users in their company and take advantage of other [security features that Microsoft Entra offers](../../../organizations/accounts/access-with-azure-ad.md).
 
 > [!NOTE]
-> Microsoft Entra was once called [Azure Active Directory (Azure AD)](/entra/fundamentals/new-name), so you may still see references to Azure AD across Microsoft products. Active Directory may also be referenced as the on-prem equivalent of Microsoft Entra.
+> Microsoft Entra was once called [Azure Active Directory (Azure AD)](/entra/fundamentals/new-name), so you may still see references to Azure AD across Microsoft products. Active Directory may also be referenced as the on-premises equivalent of Microsoft Entra.
 
 Once connected, the [Microsoft Identity application platform](/entra/identity-platform/) that sits on top of Microsoft Entra ID can be used to register an application to access Azure tenants and define the permissions needed from Azure resources, including Azure DevOps.
 
@@ -27,7 +27,7 @@ We support app development for:
 
 Many native Azure DevOps-based authentication (for example, [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or Azure DevOps OAuth apps) were created before Microsoft Entra. Microsoft Entra tokens offer a secure alternative, lasting only one hour before requiring a refresh. The authentication protocols for generating Entra tokens are more robust and secure. Security measures like [Conditional Access policies](../../../organizations/accounts/change-application-access-policies.md#cap-support-on-azure-devops) protect against token theft and replay attacks. Meanwhile, our native tokens sit outside Azure and don't have native support for concepts, like tenants or Conditional Access.
 
-Tokens issued by each platform are also distinct. Microsoft Entra OAuth apps issue Microsoft Entra tokens, not Azure DevOps access tokens. These tokens can't be used interchangbly on each platform. If you are exploring migrating from Azure DevOps OAuth to Microsoft Entra OAuth, users must reauthorize for the new app.
+Tokens issued by each platform are also distinct. Microsoft Entra OAuth apps issue Microsoft Entra tokens, not Azure DevOps access tokens. These tokens can't be used interchangeably on each platform. If you are exploring migrating from Azure DevOps OAuth to Microsoft Entra OAuth, users must reauthorize for the new app.
 
 ## Replace PATs with Microsoft Entra tokens
 
