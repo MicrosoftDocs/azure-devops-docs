@@ -73,7 +73,7 @@ To audit and rotate secrets, follow these best practices:
 
 - **Review registered secrets:** Periodically assess the secrets registered in your pipelines. Confirm that they're still necessary, and remove any that are no longer needed, which helps reduce clutter and potential security risks.
 - **Rotate secrets:** Regularly rotate secrets to minimize the window of time during which a compromised secret could be exploited. By changing secrets periodically, you enhance security.
-- [**Choose the right authentication method**](../../organizations/security/security-overview.md#choose-the-right-authentication-method)
+- [**Choose the right authentication method**](../../integrate/get-started/authentication/authentication-guidance.md)
   - **Types of secrets used:**
     - **[Personal access tokens (PATs)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md):** These tokens are used for authentication. Follow security best practices when choosing the right authentication method. You can [manage PATs using the REST API](../../organizations/accounts/manage-personal-access-tokens-via-api.md).
     - **[Secret variables](../process/set-secret-variables.md):** Use secret variables to securely store sensitive information like API keys, passwords, or other credentials within your pipeline.
