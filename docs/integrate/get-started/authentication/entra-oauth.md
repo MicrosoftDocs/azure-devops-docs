@@ -16,7 +16,7 @@ ms.date: 01/08/2025
 
 The Microsoft identity platform offers many ways to authenticate users via [the OAuth 2.0 protocol](/entra/identity-platform/v2-protocols). In these docs, we use OAuth tokens to colloquially refer to [on-behalf-of user flows](/entra/identity-platform/v2-oauth2-on-behalf-of-flow), also known as [delegated flows](/entra/identity-platform/delegated-access-primer), for apps that request tokens to perform actions for their users. 
 
-This differs from apps that perform actions on-behalf-of themselves. For that, you would use service principals and managed identities](service-principal-managed-identity.md).
+This differs from apps that perform actions on-behalf-of themselves. For that, you would use [service principals and managed identities](service-principal-managed-identity.md).
  
 ## Resources for developers
 
