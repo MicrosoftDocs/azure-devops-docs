@@ -16,9 +16,6 @@
   - name: Authenticate with personal access tokens (PATs)
     displayName: authenticate, security, PATs
     href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
-  - name: Manage PATs via API
-    displayName: lifecycle, authenticate
-    href: ../organizations/accounts/manage-personal-access-tokens-via-api.md
 - name: Build with Azure DevOps
   items:
   - name: Building applications
