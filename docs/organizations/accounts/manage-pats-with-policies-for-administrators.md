@@ -28,7 +28,7 @@ Existing PATs, created through both the UI and APIs, remain valid for the rest o
 | Category | Requirements |
 |--------------|-------------|
 |**Entra Tenant**| Your organization is [linked to a Microsoft Entra tenant](connect-organization-to-azure-ad.md).|
-|**Permissions** | <ul><li>For tenant policies, you need the [Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and go to **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, you can't see the policies. Contact your administrator, if necessary.</li><li>For organization policies, you must be a [Project Collection Administrator](../security/look-up-project-collection-administrators.md).</li></ul> |
+|**Permissions**| <ul><li>Org-level policies: [Project Collection Administrator](../security/look-up-project-collection-administrators.md)</li><li>Tenant-level policies: [Azure DevOps Administrator](../security/look-up-azure-devops-administrator.md)</li></ul>|
 
 
 ### Add Microsoft Entra users or groups to policy allowlists
@@ -42,7 +42,7 @@ Each policy has its own unique allowlist. To exempt a user from all policies, th
 
 ## Restrict creation of global PATs (tenant policy)
 
-The Azure DevOps Administrator in Microsoft Entra can restrict users from creating global PATs, which can be used in all accessible organizations rather than a single organization. When this policy is enabled, new PATs must be associated with specific Azure DevOps organizations. By default, this policy is set to *off*.
+Azure DevOps Administrators can restrict users from creating global PATs, which can be used in all accessible organizations rather than a single organization. When this policy is enabled, new PATs must be associated with specific Azure DevOps organizations. By default, this policy is set to *off*.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -56,7 +56,7 @@ The Azure DevOps Administrator in Microsoft Entra can restrict users from creati
 
 ## Restrict creation of full-scoped PATs (tenant policy)
 
-The Azure DevOps Administrator in Microsoft Entra can restrict users from creating full-scoped PATs. Enabling this policy requires new PATs to be limited to a specific, custom-defined set of scopes. By default, this policy is set to *off*.
+Azure DevOps Administrators can restrict users from creating full-scoped PATs. Enabling this policy requires new PATs to be limited to a specific, custom-defined set of scopes. By default, this policy is set to *off*.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -68,7 +68,7 @@ The Azure DevOps Administrator in Microsoft Entra can restrict users from creati
 
 ## Set maximum lifespan for new PATs (tenant policy)
 
-The Azure DevOps Administrator in Microsoft Entra ID can define the maximum lifespan of a PAT, specifying it in days. By default, this policy is set to *off*.
+Azure DevOps Administrators can define the maximum lifespan of a PAT, specifying it in days. By default, this policy is set to *off*.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -112,7 +112,7 @@ The policy also blocks global PAT usage in the organization. Global PAT users mu
 
 ## Revoke leaked PATs automatically (tenant policy)
 
-The [Azure DevOps Administrator in Microsoft Entra ID](azure-ad-tenant-policy-restrict-org-creation.md#prerequisites) can manage the policy that automatically revokes leaked PATs. This policy applies to all PATs within organizations linked to your Microsoft Entra tenant. By default, this policy is set to *on*. If Azure DevOps PATs are checked into public GitHub repositories, they're automatically revoked.
+Azure DevOps Administrators can manage the policy that automatically revokes leaked PATs. This policy applies to all PATs within organizations linked to your Microsoft Entra tenant. By default, this policy is set to *on*. If Azure DevOps PATs are checked into public GitHub repositories, they're automatically revoked.
 
 > [!WARNING]
 > Disabling this policy means any PATs checked into public GitHub repositories remain active, potentially compromising your Azure DevOps organization and data, and putting your applications and services at significant risk. Even with the policy disabled, you still receive an email notification if a PAT is leaked, but it isn't revoked automatically.
