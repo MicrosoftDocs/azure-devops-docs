@@ -73,12 +73,10 @@ To audit and rotate secrets, follow these best practices:
 
 - **Review registered secrets:** Periodically assess the secrets registered in your pipelines. Confirm that they're still necessary, and remove any that are no longer needed, which helps reduce clutter and potential security risks.
 - **Rotate secrets:** Regularly rotate secrets to minimize the window of time during which a compromised secret could be exploited. By changing secrets periodically, you enhance security.
-- [**Choose the right authentication method**](../../integrate/get-started/authentication/authentication-guidance.md)
-  - **Types of secrets used:**
-    - **[Personal access tokens (PATs)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md):** These tokens are used for authentication. Follow security best practices when choosing the right authentication method. You can [manage PATs using the REST API](../../organizations/accounts/manage-personal-access-tokens-via-api.md).
-    - **[Secret variables](../process/set-secret-variables.md):** Use secret variables to securely store sensitive information like API keys, passwords, or other credentials within your pipeline.
-    - **[Azure Key Vault secrets](/azure/key-vault/general/overview):** Use Azure Key Vault to store and manage secrets securely.
-    - **[Service connections](../library/service-endpoints.md):** These service connections allow your pipeline to connect to external services (for example, Azure, GitHub, Docker Hub). Ensure proper configuration and secure handling of service connection secrets.
+- **[Secret variables](../process/set-secret-variables.md):** Use secret variables to securely store sensitive information like API keys, passwords, or other credentials within your pipeline.
+- **[Azure Key Vault](/azure/key-vault/general/overview):** Use Azure Key Vault to store and manage secrets securely.
+- **[Service connections](../library/service-endpoints.md):** These service connections allow your pipeline to connect to external services (for example, Azure, GitHub, Docker Hub). Ensure proper configuration and secure handling of service connection secrets.
+- **[Personal access tokens (PATs)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)**: Keep PAT duration short and choose the minimal permissions needed during creation.
 
 ## Use YAML templates 
 
