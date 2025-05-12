@@ -149,7 +149,7 @@ For on-premises deployments, AD is recommended for managing a large group of use
 
 ### Authentication
 
-To access your account without repeatedly asking for your username and password, you may use any of the available [authentication methods](../../integrate/get-started/authentication/authentication-guidance.md). This is helpful to access your account programmatically instead of through the website, or if you are an [app developer building](../../integrate/) on top of Azure DevOps REST APIs. Some of the most popular authentication mechanisms include:
+To access your account without repeatedly asking for your username and password, you may use any of the available [authentication methods](../../integrate/get-started/authentication/authentication-guidance.md). This is helpful to access your account programmatically instead of through the website, or if you are an [app developer building](../../integrate/index.md) on top of Azure DevOps REST APIs. Some of the most popular authentication mechanisms include:
 
 - [OAuth](../../integrate/get-started/authentication/oauth.md) to build applications that perform actions on-behalf-of the app users. Users must provide consent to the app. [Microsoft Entra OAuth](../../integrate/get-started/authentication/entra-oauth.md) is recommended for new apps.
 - [Service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md) can be used to build apps or tools that automate workflows that regularly access organization resources. Use this app identity to issue Microsoft Entra tokens on-behalf-of the application itself.
@@ -158,7 +158,7 @@ To access your account without repeatedly asking for your username and password,
 > [!TIP]  
 > Remember to always [safely store credentials](credential-storage.md)!
 
-By default, your organization allows access for all authentication methods. Organization admins can [restrict access to these authentication methods by disabling security policies](../accounts/change-application-access-policies.md). Tenant admins can further [reduce PAT risk by restricting the ways in which they can be created](..accounts/manage-pats-with-policies-for-administrators.md). 
+By default, your organization allows access for all authentication methods. Organization admins can [restrict access to these authentication methods by disabling security policies](../accounts/change-application-access-policies.md). Tenant admins can further [reduce PAT risk by restricting the ways in which they can be created](../accounts/manage-pats-with-policies-for-administrators.md). 
 <a id="authorization"></a> 
 
 ## Authorization
