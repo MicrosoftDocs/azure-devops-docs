@@ -22,6 +22,8 @@
   - name: Authenticate with SSH
     displayName: authenticate, access, security, ssh
     href: ../repos/git/use-ssh-keys-to-authenticate.md
+  - name: Git Credential Manager
+    href: ../repos/git/set-up-credential-managers.md
 - name: Build applications
   items:
   - name: Building Azure DevOps applications
@@ -40,6 +42,10 @@
     - name: Best practices for building apps
       displayName: integrate, procedure, correct, effective
       href: ../integrate/concepts/integration-bestpractices.md
+    - name: Develop Marketplace extensions
+      href: ../marketplace-extensibility/?toc=/azure/devops/marketplace-extensibility/toc.json      
+    - name: Integrate with service hooks
+      href: ../service-hooks/?toc=/azure/devops/marketplace-extensibility/toc.json      
   - name: Samples
     items:
     - name: REST API Samples
@@ -68,22 +74,20 @@
       href: ../repos/git/create-pr-status-server-with-azure-functions.md
 - name: Azure DevOps CLI
   href: ../cli/toc.yml
-  expanded: true
-- name: Develop Marketplace Extensions
-  href: ../marketplace-extensibility/?toc=/azure/devops/marketplace-extensibility/toc.json
-- name: Git Credential Manager
-  href: ../repos/git/set-up-credential-managers.md
-- name: Git commands
-  href: ../repos/git/command-prompt.md
-- name: TFVC repository commands
-  href: ../repos/tfvc/use-team-foundation-version-control-commands.md
-- name: Test case management commands
-  href: ../test/test-case-managment-reference.md
-- name: Work tracking administration commands
-  href: ../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md
 - name: Cross-platform CLI for Azure DevOps
-  href: ../extend/publish/command-line.md
-- name: Azure DevOps REST API Reference
-  href: /rest/api/azure/devops/
+  href: ../extend/publish/command-line.md  
+- name: Reference
+  items:
+  - name: Azure DevOps REST API Reference
+    href: /rest/api/azure/devops/  
+  - name: Git commands
+    href: ../repos/git/command-prompt.md
+  - name: TFVC repository commands
+    href: ../repos/tfvc/use-team-foundation-version-control-commands.md
+  - name: Test case management commands
+    href: ../test/test-case-managment-reference.md
+  - name: Work tracking administration commands
+    href: ../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md
+
 - name: Azure DevOps Demo Generator
   href: ../demo-gen/toc.yml
