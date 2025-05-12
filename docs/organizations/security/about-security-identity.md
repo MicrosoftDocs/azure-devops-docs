@@ -14,7 +14,7 @@ ms.date: 07/11/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure DevOps employs various security concepts to ensure that only authorized users can access features, functions, and data. Users gain access to Azure DevOps through the authentication of their security credentials and the authorization of their account entitlements. The combination of both determine the user's access to specific features or functions. 
+Azure DevOps employs various security concepts to ensure that only authorized users can access features, functions, and data. Users gain access to Azure DevOps through the authentication of their security credentials and the authorization of their account entitlements. The combination of both determines the user's access to specific features or functions. 
 
 This article builds on the information provided in [Get started with permissions, access, and security groups](../security/about-permissions.md). Administrators can benefit from understanding the account types, authentication methods, authorization methods, and policies used to secure Azure DevOps.  
 
@@ -185,7 +185,7 @@ For more information, see [Security namespaces and permission reference](namespa
 
 ::: moniker range="azure-devops"
 
-To secure your organization and code, you can enable or disable various policies if you are a organization-level ([Project Collection Administrator](look-up-project-collection-administrators.md) or tenant-level ([Azure DevOps Administrator](/entra/identity/role-based-access-control/permissions-reference#azure-devops-administrator)) admin, depending on the policy. Some notable ones to consider include:
+To secure your organization and code, you can enable or disable various policies if you are an organization-level ([Project Collection Administrator](look-up-project-collection-administrators.md) or tenant-level ([Azure DevOps Administrator](/entra/identity/role-based-access-control/permissions-reference#azure-devops-administrator)) admin, depending on the policy. Some notable ones to consider include:
 - [Specify a privacy policy URL](../accounts/add-privacy-policy-url.md) that describes how you handle both internal and external guest data privacy.
 - Determine if organization users should be [allowed to create public projects](../projects/make-project-public.md).
 
