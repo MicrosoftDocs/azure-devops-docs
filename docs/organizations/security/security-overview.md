@@ -60,7 +60,7 @@ Review through all the security policies available to administrators to restrict
 
 - **Disable *“Allow public projects”*:** Disable the option to [create public projects](../projects/make-project-public.md). Switch project visibility from public to private as needed. Users who never signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes.
 - **[Restrict unnecessary authentication mechanisms**](../accounts/change-application-access-policies.md) and limit who has access to allowed authentication.
-- **Limit access with Conditional Access Policies**: Protect your organization by [defining Conditional Access policies (CAPs)](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) on Microsoft Entra that react to sign-in events and request additional actions before a user is granted access.
+- **Limit access with Conditional Access Policies**: Protect your organization by [defining Conditional Access policies (CAPs)](/entra/identity/conditional-access/overview) on Microsoft Entra that react to sign-in events and request additional actions before a user is granted access.
   - Turn on the organization policy to [enable IP CAP validation on non-interactive flows](../accounts/change-application-access-policies.md#cap-support-on-azure-devops).
   - Add an extra layer of security by [enabling Microsoft Entra multifactor authentication](/entra/identity/authentication/tutorial-enable-azure-mfa) after sign-in. 
 
@@ -90,7 +90,7 @@ For more information, see [B2B guests in the Microsoft Entra ID](/azure/active-d
 
 Provide the minimum necessary [permissions](about-permissions.md) and [access levels](access-levels.md) to ensure that only authorized individuals and services can access sensitive information and perform critical actions. This practice helps to minimize the risk of unauthorized access and potential data breaches. 
 
-Regularly review and update these settings to adapt to changes in your organization, such as role changes, new hires, or departures. Implementing a periodic [audit](#enable-and-review-auditing-events) of permissions and access levels can help identify and rectify any discrepancies, ensuring that your security posture remains robust and aligned with best practices.
+Regularly review and update these settings to adapt to changes in your organization, such as role changes, new hires, or departures. Implementing a periodic [audit](#review-auditing-events) of permissions and access levels can help identify and rectify any discrepancies, ensuring that your security posture remains robust and aligned with best practices.
 
 Learn more about permissions:
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
