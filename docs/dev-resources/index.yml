@@ -72,7 +72,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Cross-platform CLI for Azure DevOps (tfx-cli)
-            url: ../extend/publish/command-line.md?toc=/azure/devops/dev-resources/toc.json
+            url: ../extend/publish/command-line.md
   - title: Azure DevOps Demo Generator
     linkLists:
       - linkListType: get-started
