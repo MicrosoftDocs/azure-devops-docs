@@ -79,12 +79,6 @@
     href: work-items/guidance/guidance-code-review-feedback-field-reference.md
   - name: Bugs, issues, & risks fields
     href: work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md
-  - name: Change request fields
-    href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi
-  - name: Requirements fields
-    href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi
-  - name: Review meeting fields
-    href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi
   - name: CMMI process-specific fields (archived)
     items:
     - name: Change request fields
