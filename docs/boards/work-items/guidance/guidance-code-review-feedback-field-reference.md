@@ -31,18 +31,18 @@ The following fields are used to track code review requests and responses. You c
 
 |**Field name**|**Description**|**Data type**|  
 |--------------|---------------|-------------|  
-|**Accepted By**|The name of the code reviewer.<br/>Reference name=Microsoft.VSTS.CodeReview.AcceptedBy|String|  
-|**Accepted Date**|The date and time when the code-reviewer responded.<br/>Reference name=Microsoft.VSTS.CodeReview.AcceptedDate|DateTime|  
-|**Associated Context**|The name assigned to the code work requested for review.<br/>Reference name=Microsoft.VSTS.CodeReview.Context|String|  
-|**Associated Context Code**|An integer value that captures whether the code review is for **1** (shelveset) or **2** (changeset).<br/>Reference name=Microsoft.VSTS.CodeReview.ContextCode|Integer|  
-|**Associated Context Owner**|The GUID assigned to the shelveset owner who requested the code review.<br/>Reference name=Microsoft.VSTS.CodeReview.ContextOwner|String|  
-|**Associated Context Type**|The type of code work requested for review: **Shelveset** or **Changeset**.<br/>Reference name=Microsoft.VSTS.CodeReview.ContextType|String|  
-|**Closed Status**|The status selected by the reviewer when closing the code review request. The number is stored in the system and written to the data warehouse as follows:<br/><br/>-   **0—Not Reviewed**<br />-   **1 - Looks Good**<br />-   **2 - With Comments**<br/>-   **3- Needs Work**<br />-   **4 - Declined**<br/>-   **5 - Removed**<br/>Reference name=Microsoft.VSTS.CodeReview.ClosedStatus|String|  
-|**Closed Status Code**|A value ranging from 0 to 5 that corresponds to the status selected by the reviewer when closing the code review request.<br/>Reference name=Microsoft.VSTS.CodeReview.ClosedStatusCode|Integer|  
-|**Closing Comments**|The comment entered by the reviewer when closing the review request.<br/>Reference name=Microsoft.VSTS.CodeReview.ClosingComment|String|  
-|**Reviewed By**|The name of the team member who reviewed the code. The State transitions to Reviewed when the code reviewer responds. (Code Review Response)<br/>Reference name=Microsoft.VSTS.Common.ReviewedBy|String|  
-|**Reviewed Date**|The date-time stamp when the reviewer closed the request. (Code Review Response)<br/>Reference name=Microsoft.VSTS.Common.ReviewedDate|Date-Time|  
-|**State Code**|Mirror field used to track the current state in code.<br/>Reference name=Microsoft.VSTS.Common.StateCode|Integer|  
+|**Accepted By**|The name of the code reviewer.<br/>Reference name=Microsoft.CodeReview.AcceptedBy|String|  
+|**Accepted Date**|The date and time when the code-reviewer responded.<br/>Reference name=Microsoft.CodeReview.AcceptedDate|DateTime|  
+|**Associated Context**|The name assigned to the code work requested for review.<br/>Reference name=Microsoft.CodeReview.Context|String|  
+|**Associated Context Code**|An integer value that captures whether the code review is for **1** (shelveset) or **2** (changeset).<br/>Reference name=Microsoft.CodeReview.ContextCode|Integer|  
+|**Associated Context Owner**|The GUID assigned to the shelveset owner who requested the code review.<br/>Reference name=Microsoft.CodeReview.ContextOwner|String|  
+|**Associated Context Type**|The type of code work requested for review: **Shelveset** or **Changeset**.<br/>Reference name=Microsoft.CodeReview.ContextType|String|  
+|**Closed Status**|The status selected by the reviewer when closing the code review request. The number is stored in the system and written to the data warehouse as follows:<br/><br/>-   **0—Not Reviewed**<br />-   **1 - Looks Good**<br />-   **2 - With Comments**<br/>-   **3- Needs Work**<br />-   **4 - Declined**<br/>-   **5 - Removed**<br/>Reference name=Microsoft.CodeReview.ClosedStatus|String|  
+|**Closed Status Code**|A value ranging from 0 to 5 that corresponds to the status selected by the reviewer when closing the code review request.<br/>Reference name=Microsoft.CodeReview.ClosedStatusCode|Integer|  
+|**Closing Comments**|The comment entered by the reviewer when closing the review request.<br/>Reference name=Microsoft.CodeReview.ClosingComment|String|  
+|**Reviewed By**|The name of the team member who reviewed the code. The State transitions to Reviewed when the code reviewer responds. (Code Review Response)<br/>Reference name=Microsoft.Common.ReviewedBy|String|  
+|**Reviewed Date**|The date-time stamp when the reviewer closed the request. (Code Review Response)<br/>Reference name=Microsoft.Common.ReviewedDate|Date-Time|  
+|**State Code**|Mirror field used to track the current state in code.<br/>Reference name=Microsoft.Common.StateCode|Integer|  
 
 <a name="feedback"></a> 
 
@@ -52,10 +52,10 @@ The following fields track feedback requests and responses. You complete the fir
   
 |**Field name**|**Description**|**Data type**|  
 |--------------------|---------------------|-------------------|  
-|**Application Launch Instructions**|Instructions to stakeholders on how to start the application.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationLaunchInstructions|HTML|  
-|**Application Start Information**|Guidelines to direct stakeholder feedback.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationStartInformation|PlainText|  
-|**Application Type**|The type of application that stakeholders provide feedback on. The valid types are specified in the process configuration file, ProcessConfiguration. The default values are **Web Application**, **Remote Machine**, and **Client Application**.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationType|String|  
-|**Rating**|The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response)<br /> The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0—Not Rated**<br />-   **1 - Poor**<br />-   **2 - Fair**<br />-   **3- Good**<br />-   **4- Very Good**<br />-   **5 - Excellent**<br/>Reference name=Microsoft.VSTS.Common.Rating|String|  
+|**Application Launch Instructions**|Instructions to stakeholders on how to start the application.<br/>Reference name=Microsoft.Feedback.ApplicationLaunchInstructions|HTML|  
+|**Application Start Information**|Guidelines to direct stakeholder feedback.<br/>Reference name=Microsoft.Feedback.ApplicationStartInformation|PlainText|  
+|**Application Type**|The type of application that stakeholders provide feedback on. The valid types are specified in the process configuration file, ProcessConfiguration. The default values are **Web Application**, **Remote Machine**, and **Client Application**.<br/>Reference name=Microsoft.Feedback.ApplicationType|String|  
+|**Rating**|The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response)<br /> The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0—Not Rated**<br />-   **1 - Poor**<br />-   **2 - Fair**<br />-   **3- Good**<br />-   **4- Very Good**<br />-   **5 - Excellent**<br/>Reference name=Microsoft.Common.Rating|String|  
   
 ## Related articles
 
