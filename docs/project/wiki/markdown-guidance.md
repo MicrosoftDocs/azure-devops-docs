@@ -4,13 +4,14 @@ titleSuffix: Azure DevOps
 ms.custom: wiki, devdivchpfy22
 description: Discover how to utilize Markdown to incorporate tables, mathematical symbols, and share information effectively in pull requests, README files, dashboards, and wikis in Azure DevOps.  
 ms.subservice: azure-devops-wiki
-ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
+ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5 
+ai-usage: ai-assisted 
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 09/06/2024
+ms.date: 05/12/2025
 ---
 
 # Use Markdown in Azure DevOps
@@ -23,7 +24,7 @@ In this article, find basic syntax guidance for using Markdown in Azure DevOps f
 
 Use Markdown to add formatting, tables, images, and more to your project pages, README files, dashboards, pull requests, [wikis](#use-markdown-in-wikis), and so on.
 
-Not all Markdown syntax is supported across all features in Azure DevOps. The following table links to each basic syntax section in this article and highlights which features support it.
+Not all Markdown syntax is supported across all features in Azure DevOps. The following table links to each basic syntax section in this article and highlights which features support it. Markdown in Azure DevOps doesn't support JavaScript or iframes, which means that you can't embed interactive elements such as countdown timers directly, for example.
 
 |Markdown type |Supported features  |
 |---------|---------|
@@ -160,7 +161,7 @@ Combine these elements to apply emphasis to the text.
 ::: moniker range="<=azure-devops"
 
 > [!NOTE]  
-> There is no Markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
+> There's no Markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
 
 ::: moniker-end
 
@@ -930,7 +931,7 @@ See the following example of how the TOC renders when you add bold and italics t
 Consistency is maintained in the formatting of the TOC.
 
 > [!NOTE]
-> The tag \[[\_TOC\_]] is case-sensitive. For example, \[[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
+> The tag \[[\_TOC\_]] is case-sensitive. For example, \[[\_toc\_]] might not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
 
 ::: moniker-end
 
