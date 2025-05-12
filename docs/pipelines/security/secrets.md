@@ -88,7 +88,7 @@ To implement this approach, create a separate YAML file for your script and then
 
 To make sure that secrets are tied to the `main` branch and not accessible to random branches, you can use a combination of variable group permissions, conditional job insertion, and branch policies.
 
-With branch policies, you can enforce [build validation policies](../../repos/git/branch-policies.md#build-validation) that only allow builds from the main branch. Then, you can use [variable group permissions](../library/variable-groups.md) to make sure that only authorized pipelines have access the secrets stored in your variable group. Last, you can use a condition in your pipeline to make sure that the variable group can only be referenced by a push to the `main` branch. 
+With branch policies, you can enforce [build validation policies](../../repos/git/branch-policies.md#build-validation) that only allow builds from the main branch. Then, you can use [variable group permissions](../library/variable-groups.md) to make sure that only authorized pipelines have access to the secrets stored in your variable group. Last, you can use a condition in your pipeline to make sure that the variable group can only be referenced by a push to the `main` branch. 
 
 ```yaml
 jobs:
