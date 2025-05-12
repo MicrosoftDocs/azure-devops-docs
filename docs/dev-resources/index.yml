@@ -31,12 +31,12 @@ landingContent:
         links:
           - text: Authenticate with Entra tokens
             url: ../integrate/get-started/authentication/entra.md
-          - text: Authenticate with personal access tokens (PATs)
-            url: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
           - text: Authenticate with OAuth 2.0
             url: ../integrate/get-started/authentication/oauth.md
           - text: Authenticate with service principals
             url: ../integrate/get-started/authentication/service-principal-managed-identity.md
+          - text: Authenticate with personal access tokens (PATs)
+            url: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
       - linkListType: reference
         links:
           - text: Azure DevOps REST API Reference
@@ -71,7 +71,7 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Cross-platform CLI for Azure DevOps (tfx-cli)
+          - text: Node CLI for Azure DevOps (tfx-cli)
             url: ../extend/publish/command-line.md
   - title: Azure DevOps Demo Generator
     linkLists:
