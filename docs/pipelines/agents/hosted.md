@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 04/11/2025
+ms.date: 05/12/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -31,7 +31,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | --- | --- | --- | --- |
 | Windows Server 2025 with Visual Studio 2022 (preview) | *windows-2025* | `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
-| Windows Server 2019 with Visual Studio 2019<sup>2</sup> | *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
+| Windows Server 2019 with Visual Studio 2019 - See [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)| *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
 | Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-latest`<sup>1</sup> OR `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme)
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://aka.ms/ubuntu-20.04-readme)
@@ -45,11 +45,13 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 <sup>1</sup> The `ubuntu-latest` label is in the process of transitioning from `ubuntu-22.04` to `ubuntu-24.04`. Until the transition is complete, your pipelines using `ubuntu-latest` might still use `ubuntu-22.04`.
 
-<sup>2</sup> The Windows Server 2019 image is scheduled to be deprecated:
+#### Windows Server 2019 hosted image deprecation schedule
+
+The Windows Server 2019 image is scheduled to be deprecated:
 * Deprecation start date: June 1, 2025
 * Brownout period: June 3, 2025 to June 24, 2025
 * Scheduled removal date for Windows Server 2019 hosted image: June 30, 2025
-   For more informartion, see [Upcoming Updates for Azure Pipelines Agents Images - Windows](https://aka.ms/azdo-windows)
+   For more information, see [Upcoming Updates for Azure Pipelines Agents Images - Windows](https://aka.ms/azdo-windows)
 
 ### Recent updates
 
