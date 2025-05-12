@@ -160,7 +160,7 @@ You can revoke a PAT at any time for these and other reasons:
 
    :::image type="content" source="media/pats/revoke-token-confirmation-dialog-preview.png" alt-text="Screenshot showing confirmation screen to revoke PAT.":::
 
-## Manage personal access tokens (PATs) using REST API
+## PAT Lifecycle Management APIs
 
 The [PAT Lifecycle Management APIs](/rest/api/azure/devops/tokens) may be useful when maintaining large volumes of tokens through UI is unsustainable. Managing PAT rotation programmatically also opens the opportunity to rotate PATs regularly and shorten their default lifespans. Our [sample Python app](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) can be configured with your Microsoft Entra tenant and Azure DevOps organization. 
 
