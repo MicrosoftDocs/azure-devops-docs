@@ -35,7 +35,7 @@ Personal access tokens (PATs) are a popular form of Azure DevOps authentication 
 
 ### Common PAT alternatives
 
-Due to their increasing risk, admins are increasingly requesting [security policies that restrict PAT creation](../../organizations/accounts/manage-pats-with-policies-for-administrators.md). As a result, PATs are becoming a less viable alternative for accessing Azure DevOps programmatically. Outside of migrating any existing app development to the Microsoft Identity platform, we share some common use cases across Azure DevOps that historically rely on PATs and their recommended Microsoft Entra alternative.
+Due to their increasing risk, admins are increasingly requesting [security policies that restrict PAT creation](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md). As a result, PATs are becoming a less viable alternative for accessing Azure DevOps programmatically. Outside of migrating any existing app development to the Microsoft Identity platform, we share some common use cases across Azure DevOps that historically rely on PATs and their recommended Microsoft Entra alternative.
 
 | PAT scenario | Entra alternative |
 |------------|------------|
