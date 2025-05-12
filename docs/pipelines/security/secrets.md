@@ -76,7 +76,7 @@ To audit and rotate secrets, follow these best practices:
 - **[Secret variables](../process/set-secret-variables.md):** Use secret variables to securely store sensitive information like API keys, passwords, or other credentials within your pipeline.
 - **[Azure Key Vault](/azure/key-vault/general/overview):** Use Azure Key Vault to store and manage secrets securely.
 - **[Service connections](../library/service-endpoints.md):** These service connections allow your pipeline to connect to external services (for example, Azure, GitHub, Docker Hub). Ensure proper configuration and secure handling of service connection secrets.
-- **[Personal access tokens (PATs)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)**: Keep PAT duration short and choose the minimal permissions needed during creation.
+- [**Personal access tokens (PATs)**](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md): Keep PAT duration short and choose the minimal permissions needed during creation.
 
 ## Use YAML templates 
 
