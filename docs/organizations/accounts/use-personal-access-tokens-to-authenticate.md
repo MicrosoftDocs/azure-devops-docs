@@ -164,6 +164,15 @@ You can revoke a PAT at any time for these and other reasons:
 
    :::image type="content" source="media/pats/revoke-token-confirmation-dialog-preview.png" alt-text="Screenshot showing confirmation screen to revoke PAT.":::
 
+## Manage personal access tokens (PATs) using REST API
+
+The [PAT Lifecycle Management APIs](/rest/api/azure/devops/tokens) may be useful when maintaining large volumes of tokens through UI is unsustainable. Managing PAT rotation programmatically also opens the opportunity to rotate PATs regularly and shorten their default lifespans. Our [sample Python app](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) can be configured with your Microsoft Entra tenant and Azure DevOps organization. 
+
+Some things to note about these APIs:
+
+* [Microsoft Entra access tokens](../../integrate/get-started/authentication/entra.md) are required to access this API as generally a stronger form of authentication is recommended when minting new tokens.
+* Only users or apps using an "on-behalf-of user" flow can generate PATs. Apps using "on-behalf-of application" flows or authentication flows that don't issue Microsoft Entra access tokens aren't valid for use with this API. As such, [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) can't create or manage PATs.
+* Previously the PAT Lifecycle Management APIs only supported the `user_impersonation` scope, but now the `vso.tokens` are available and the recommended scope to use with these APIS. Downscope all apps that previously relied on `user_impersonation` to call these APIs.
 
 ## Changes to format
 
@@ -249,6 +258,21 @@ Enabling IIS Basic Authentication invalidates using PATs for Azure DevOps Server
 A: All PATs are associated with the user identity that created it. Applications can't create PATs.
 
 In Azure DevOps, you can create access tokens that aren't tied to a specific person by using Microsoft Entra tokens minted by an [application service principal or managed identity](../../integrate/get-started/authentication/service-principal-managed-identity.md). Within a pipeline, use [service connections](../../pipelines/library/service-endpoints.md).
+
+### Q: How can I regenerate/rotate PATs through the API? I saw that option in the UI, but I don’t see a similar method in the API.
+The 'Regenerate' functionality available in the UI actually accomplishes a few actions, which can be replicated through API. 
+
+To rotate your PAT, do the following steps:
+1. See PAT metadata with a **GET** call, 
+2. Create a new PAT with the old PAT id using a **POST** call, 
+3. Revoke the old PAT using a **DELETE** call.
+
+### Q: I see a "Need admin approval" pop-up when I try to use an Entra app to call the PAT Lifecycle Management APIs.
+Your tenant's security policies require admin consent before applications can access organization resources in the organization. Reach out to your tenant admin(s).
+
+### Q: Can I use a service principal to create or manage PATs?
+No, personal access tokens belong to a user identity. Entra [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) are able to generate short-lived Entra tokens that can be used in most places where a PAT is accepted. Learn more about [our efforts to reduce PAT usage across Azure DevOps](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) and explore replacing PATs with Entra tokens.
+
 
 ## Related articles
 
