@@ -46,5 +46,5 @@ Due to their increasing risk, admins are increasingly requesting additional [sec
 | Ad-hoc requests to Azure DevOps REST APIs | Issue a one-off Microsoft Entra token using Azure CLI (see below).  |
 
 > [!TIP]
-> **Have an Azure DevOps PAT scenario with no clear Microsoft Entra alternative?** We can dig in deeper if you share your scenario in the [Developer Community](https://developercommunity.visualstudio.com/AzureDevOps). 
+> **Have an Azure DevOps PAT scenario with no clear Microsoft Entra token alternative?** Share your scenario in the [Developer Community](https://developercommunity.visualstudio.com/AzureDevOps)!
 
