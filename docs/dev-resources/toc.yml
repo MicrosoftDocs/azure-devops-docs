@@ -19,14 +19,9 @@
   - name: Authenticate with service principals
     displayName: authenticate, access, security, service, principal, managed, identity
     href: ../integrate/get-started/authentication/service-principal-managed-identity.md
-  - name: Authenticate with SSH
-    displayName: authenticate, access, security, ssh
-    href: ../repos/git/use-ssh-keys-to-authenticate.md
-  - name: Git Credential Manager
-    href: ../repos/git/set-up-credential-managers.md
-- name: Build applications
+- name: Build with Azure DevOps
   items:
-  - name: Building Azure DevOps applications
+  - name: Building applications
     href: ../integrate/index.md
   - name: Get started
     items:
@@ -88,6 +83,5 @@
     href: ../test/test-case-managment-reference.md
   - name: Work tracking administration commands
     href: ../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md
-
 - name: Azure DevOps Demo Generator
   href: ../demo-gen/toc.yml
