@@ -300,17 +300,6 @@ additionalContent:
             - text: See more >
               url: ./project/index.yml
         # Card
-        - title: Marketplace & Extensibility
-          links:
-            - text: Discover extensions
-              url: ./extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
-            - text: Develop extensions
-              url: ./extend/get-started/node.md?toc=/azure/devops/marketplace-extensibility/toc.json
-            - text: Service hooks
-              url: ./service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
-            - text: See more >
-              url: ./marketplace-extensibility/index.yml
-        # Card
         - title: Developer resources
           links:
             - text: Authentication overview
@@ -325,6 +314,17 @@ additionalContent:
               url: /rest/api/azure/devops/
             - text: See more >
               url: ./dev-resources/index.yml
+        # Card
+        - title: Marketplace & Extensibility
+          links:
+            - text: Discover extensions
+              url: ./extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+            - text: Develop extensions
+              url: ./extend/get-started/node.md?toc=/azure/devops/marketplace-extensibility/toc.json
+            - text: Service hooks
+              url: ./service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+            - text: See more >
+              url: ./marketplace-extensibility/index.yml
 
   # footer (optional)
   footer: "[Blogs](https://devblogs.microsoft.com/devops/) - [Twitter](https://twitter.com/AzureDevOps) - [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops) - [Issue Reporting](https://azure.microsoft.com/support/devops/) - [Developer Community](https://azure.microsoft.com/support/devops/) - [Service Status](https://status.dev.azure.com/)"
