@@ -21,7 +21,7 @@ This can be helpful for writing a script to automate a regular to-do item for yo
 * [Tracking your team's open work items](./quickstarts/work-item-quickstart.md) on a dashboard
 
 To get started, check out the following resources:
-* Learn about the different [authentication mechanisms](./get-started/authentication-guidance.md) available to you.
+* Learn about the different [authentication mechanisms](./get-started/authentication/authentication-guidance.md) available to you.
 * [Explore the Microsoft Entra Identity platform](./get-started/authentication/entra.md) when integrating with Azure DevOps to build more secure, enterprise-level applications.
 * Read up on the basics to use the [Azure DevOps REST API](./how-to/call-rest-api.md), or
 * See if our [client libraries](./concepts/dotnet-client-libraries.md) might be a more suitable alternative to making direct API calls.
