@@ -88,6 +88,8 @@
     href: look-up-organization-owner.md
   - name: Look up a project collection administrator
     href: look-up-project-collection-administrators.md
+  - name: Look up Azure DevOps administrator
+    href: look-up-azure-devops-administrator.md
   - name: Change permissions at the organization or collection-level
     displayName: Project Collection Administrators, project collection build service, add, remove, administrators, collection
     href: change-organization-collection-level-permissions.md
