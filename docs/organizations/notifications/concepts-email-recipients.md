@@ -137,41 +137,29 @@ This section explores several example scenarios. The following examples use symb
 - `T`: Nested team or group
 - `E`: Email-enabled Microsoft Entra group
 
-:::row:::
-   :::column span="":::
-   **Scenario**
-   :::column-end:::
+#### Team member enables "Do not deliver" setting
 
+:::row:::
    :::column span="":::
    **Example team members**
-   :::column-end:::
 
-   :::column span="":::
-   **Notification process**
-   :::column-end:::
-:::row-end:::
-
-:::row:::
-   :::column span="":::
-   _Team member enables "Do not deliver" setting_ 
-   :::column-end:::
-
-   :::column span="":::
    - The primary team has three members: users `I1` and `I2`, and nested team `T1`.
    - Team `T1` has the **Do not deliver** setting enabled. 
    :::column-end:::
 
    :::column span="":::
+   **Notification process**
+
    Only users `I1` and `I2` receive the notification messages at their preferred contact email address. Members of the nested team `T1` aren't notified.
    :::column-end:::
 :::row-end:::
 
+#### Team member enables "Deliver to individual members" setting
+
 :::row:::
    :::column span="":::
-   _Team member enables "Deliver to individual members" setting_ 
-   :::column-end:::
+   **Example team members**
 
-   :::column span="":::
    - The primary team has three members: users `I1` and `I2`, and nested team `T1`.
    - Team `T1` has two member users, `I2` and `I3`.
    - User `I2` is a member of both the primary team and team `T1`.
@@ -179,37 +167,45 @@ This section explores several example scenarios. The following examples use symb
    :::column-end:::
 
    :::column span="":::
+   **Notification process**
+
    Team `T1` is expanded to identify its members. `I1`, `I2`, and `I3` all receive the notification messages at their preferred contact email address.
    :::column-end:::
 :::row-end:::
 
+#### Team contains nested group
+
 :::row:::
    :::column span="":::
-   _Team contains nested group_
-   :::column-end:::
+   **Example team members**
 
-   :::column span="":::
    - The primary team has three members: users `I1` and `I2`, and nested team `T1`.
    - Team `T1` has three members: users `I2` and `I3`, and nested team `T2`.
-   - Team `T2` has two member users, `I4` and `I5`. <br> - User `I2` is a member of both the primary team and team `T1`.
-   - Team `T1` has the **Do not deliver** setting enabled. <br> - Team `T2` has the **Deliver to individual members** setting enabled. 
+   - Team `T2` has two member users, `I4` and `I5`.
+   - User `I2` is a member of both the primary team and team `T1`.
+   - Team `T1` has the **Do not deliver** setting enabled.
+   - Team `T2` has the **Deliver to individual members** setting enabled. 
    :::column-end:::
 
    :::column span="":::
+   **Notification process**
+
    Because team `T1` has the **Do not deliver** setting enabled, the team **isn't** expanded to identify its members. Although team `T2` has the **Deliver to individual members** setting enabled, team `T2` is nested within team `T1`. The **Do not deliver** delivery preferences for `T1` takes precedence over settings made by its members. Only users `I1` and `I2` receive the notification messages at their preferred contact email address.
    :::column-end:::
 :::row-end:::
 
+#### Team member is Microsoft Entra group
+
 :::row:::
    :::column span="":::
-   _Team member is Microsoft Entra group_
-   :::column-end:::
+   **Example team members**
 
-   :::column span="":::
    - The primary team has three members: users `I1` and `I2`, and nested Microsoft Entra group `E1`.
    :::column-end:::
 
    :::column span="":::
+   **Notification process**
+
    Azure DevOps doesn't expand Windows Server Active Directory (Windows AD) groups when delivering notifications. Only users `I1` and `I2` receive the notification messages at their preferred contact email address.
    :::column-end:::
 :::row-end:::
