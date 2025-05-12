@@ -219,10 +219,6 @@ A: Sign into the organization where your PAT is scoped. You can view all your PA
 
 A: When a user is removed from Azure DevOps, the PAT invalidates within 1 hour. If your organization is connected to Microsoft Entra ID, the PAT also invalidates in Microsoft Entra ID, as it belongs to the user. We recommend rotating the PAT to another user or service account to keep services running.
 
-#### Q: Is there a way to renew a PAT via REST API?
-
-A: Yes, you can renew, manage, and create PATs using our [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md#q-how-can-i-regeneraterotate-pats-through-the-api-i-saw-that-option-in-the-ui-but-i-dont-see-a-similar-method-in-the-api).
-
 #### Q: Can I use PATs with all Azure DevOps REST APIs?
 
 A: No. You can use PATs with most Azure DevOps REST APIs, but [organizations and profiles](/rest/api/azure/devops/) and the PAT Management Lifecycle APIs only support [Microsoft Entra tokens](../../integrate/get-started/authentication/entra-oauth.md).
