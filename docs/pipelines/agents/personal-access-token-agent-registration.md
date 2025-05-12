@@ -52,7 +52,7 @@ To use a PAT with Azure DevOps Server, your server must be configured with HTTPS
 
 3. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-   ![Screenshot of creating a personal access token.](../../repos/git/media/select-new-token.png)
+   ![Screenshot of creating a personal access token.](../../organizations/accounts/media/pats/select-new-token.png)
 
 ::: moniker-end
 
