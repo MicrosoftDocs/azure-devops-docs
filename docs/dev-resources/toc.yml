@@ -69,7 +69,7 @@
       href: ../repos/git/create-pr-status-server-with-azure-functions.md
 - name: Azure DevOps CLI
   href: ../cli/toc.yml
-- name: Cross-platform CLI for Azure DevOps
+- name: Node CLI for Azure DevOps (tfx-cli)
   href: ../extend/publish/command-line.md  
 - name: Reference
   items:
