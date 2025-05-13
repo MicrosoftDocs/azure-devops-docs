@@ -52,7 +52,7 @@ groups:
   title: Configure GitHub Advanced Security for Azure DevOps
   prompt: Choose your product experience
   pivots:
-  - id: bundled-ghazdo
-    title: Bundled
   - id: standalone-ghazdo
     title: Standalone
+  - id: bundled-ghazdo
+    title: Bundled
