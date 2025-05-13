@@ -72,7 +72,7 @@ Follow these steps to view your personal notifications:
 
    Your personal **Notifications** page opens:
 
-   :::image type="content" source="media/unsubscribe-personal-notifications.png" alt-text="Screenshot showing personal notification subscriptions in earlier versions of Azure DevOps." lightbox="media/unsubscribe-personal-notifications.png":::
+   :::image type="content" source="media/unsubscribe-personal-notifications.png" border="false" alt-text="Screenshot showing personal notification subscriptions in earlier versions of Azure DevOps." lightbox="media/unsubscribe-personal-notifications.png":::
 
 ::: moniker-end
 
@@ -95,7 +95,7 @@ Keep in mind that custom notification subscriptions aren't the same as default n
    ::: moniker-end  
    ::: moniker range="<azure-devops"
 
-   :::image type="content" source="media/manage-personal-notifications-new-subscription-newnav.png" border="false" alt-text="Screenshot that shows how to select the New subscription option in earlier versions of Azure DevOps."
+   :::image type="content" source="media/manage-personal-notifications-new-subscription-newnav.png" alt-text="Screenshot that shows how to select the New subscription option in earlier versions of Azure DevOps."
 
    ::: moniker-end  
 
