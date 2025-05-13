@@ -1,7 +1,7 @@
 ---
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.date: 05/05/2025
+ms.date: 05/13/2025
 ---
 
 # Demands
@@ -86,7 +86,7 @@ pool:
 
 ## ImageVersionOverride
 
-If you're using an Azure Compute Gallery or Azure Marketplace [image](configure-images.md#choose-your-pools-image) and want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image. The following examples specify an `ImageVersionOverride` of `2.0.0`.
+If you want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image. The following examples specify an `ImageVersionOverride` of `2.0.0`.
 
 Configure the `ImageVersionOverride` demand in the `demands` section of your pipeline.
 
@@ -96,6 +96,14 @@ pool:
   demands:
   - ImageVersionOverride -equals 2.0.0
 ```
+
+If your pipelines begin to fail after an image update, you can temporarily configure your pipelines to use the previous version.
+
+1. [Go to your pipeline](../pipelines/create-first-pipeline.md#view-and-manage-your-pipelines), review the [pipeline run history](../pipelines/create-first-pipeline.md#view-pipeline-details), and [view the run details](../pipelines/create-first-pipeline.md#view-pipeline-run-details) for the most recent successful pipeline run.
+1. Choose the pipeline job to view diagnostic information abut that job. If your pipeline has multiple jobs, choose the job that runs using your Managed DevOps Pool.
+1. Choose **Initialize job**, and retrieve the image version from the **Current image version** section.
+1. Add an ImageVersionOverride demand to your pipeline and specify the version from the most recent successful run.
+    If your Managed DevOps Pool uses a [Selected marketplace image]() or an [Azure Compute Gallery image]() with the version set to **latest**, you can update the version in your pool settings.
 
 ## CustomCapabilities
 
