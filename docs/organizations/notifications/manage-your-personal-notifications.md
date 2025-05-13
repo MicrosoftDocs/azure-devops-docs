@@ -41,11 +41,13 @@ The following table lists examples of events for which you might receive persona
 
 | Category | Notification triggers |
 |----------|-----------------------|
-| **Work item** | - You're assigned a work item - <br> - You're unassigned from a work item <br> - Comments are added/changed on a work item to which you're assigned |
+| **Work item** | - You're assigned a work item <br> - You're unassigned from a work item <br> - Comments are added/changed on a work item to which you're assigned |
 | **Code reviews** | - A code review to which you're assigned changes <br> - A code review to which you're assigned completes |
 | **Pull request** | - You're added or removed as a reviewer on a pull request <br> - A pull request to which you're assigned fails to build <br> - Comments are added/changed on a pull request to which you're assigned |
 | **Code under source control** | - A code file is added to a project under version or source control <br> - A commit is pushed to a code file under version or source control |
 | **Build** | - A build succeeds <br> - A build fails |
+
+Follow these steps to view your personal notifications:
 
 ::: moniker range="azure-devops"
 
@@ -88,7 +90,7 @@ Keep in mind that custom notification subscriptions aren't the same as default n
 
    ::: moniker range=" azure-devops"
 
-   :::image type="content" source="media/manage-personal-notifications-new-subscription-preview.png" border="false" alt-text="Screenshot that shows how to select the New subscription option selected in Azure DevOps.":::
+   :::image type="content" source="media/manage-personal-notifications-new-subscription-preview.png" alt-text="Screenshot that shows how to select the New subscription option selected in Azure DevOps.":::
 
    ::: moniker-end  
    ::: moniker range="<azure-devops"
