@@ -207,6 +207,10 @@ The following steps guide you through setting up the first configuration file. S
                         
     always-auth=true
     ```
+
+> [!NOTE]
+> For Debian, Ubuntu, and other community or entreprise distributions such as Fedora or Redhat make sure you've installed the prerequisites from the [NodeSource distributions repository](https://github.com/nodesource/distributions).
+
 ### Setup credentials
 
 1. Copy the following snippet and paste it into your user-level *.npmrc* file:
