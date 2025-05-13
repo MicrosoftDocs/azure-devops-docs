@@ -48,10 +48,9 @@ If your organization uses self-hosted agents, add the following URLs to your All
 * Ensure the CodeQL bundle is installed to the agent tool cache on your agent. You might utilize the `enableAutomaticCodeQLInstall: true` variable with the `AdvancedSecurity-Codeql-Init@1` pipeline task for YAML pipelines or select the `Enable automatic CodeQL detection and installation` checkbox for classic pipelines. Alternatively, for manual installation instructions, see [Code scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-code-scanning-troubleshoot.md#manual-installation-of-codeql-bundle-to-self-hosted-agent).
   
 ## Enable GitHub Advanced Security
-
+:::zone pivot="bundled-ghazdo"
 You can enable Advanced Security at the organization, project, or repository level. To access each of the scanning tools and results, you need to first enable Advanced Security. Once you enable Advanced Security, any future pushes containing secrets to a repository with this policy enabled are blocked, and repository secret scanning happens in the background.
 
-:::zone pivot="bundled-ghazdo"
 #### Repository-level onboarding
 1. Go to your **Project settings** for your Azure DevOps project. 
 1. Select **Repos** > **Repositories**. 
@@ -85,10 +84,57 @@ Secret scanning push protection and repository scanning are automatically enable
 
 :::image type="content" source="media/secret-scanning-push-protection.png" lightbox="media/secret-scanning-push-protection.png" alt-text="Screenshot of enabling push protection.":::
 
-As mentioned, secret scanning repository scanning is automatically kicked off upon enabling Advanced Security for a selected repository.
-:::zone-end
+As mentioned, secret scanning repository scanning is automatically kicked off upon enabling Advanced Security for a selected repository. 
 
 ## Set up dependency scanning
+:::zone-end
+
+:::zone pivot="standalone-ghazdo"
+You can enable Secret Protection or Code Security at the organization, project, or repository level.
+
+#### Repository-level onboarding
+1. Go to your **Project settings** for your Azure DevOps project. 
+1. Select **Repos** > **Repositories**. 
+1. Select the repository you want to enable Advanced Security for. 
+1. Toggle either **Secret Protection** or **Code Security**.
+1. Select **Begin billing**. A shield icon now appears in the repository view for any repository with either product enabled.
+1. To optionally enable **dependency scanning default setup**, select **Options** and enable the Dependency scanning default setup checkbox. 
+
+:::image type="content" source="media/enable-github-advanced-security.png" lightbox="media/advsec-repository-settings-plans-disabled.png" alt-text="Screenshot of enabling GitHub Advanced Security.":::
+
+#### Project-level onboarding
+1. Go to your **Project settings** for your Azure DevOps project. 
+1. Select **Repos**. 
+1. Select the **Settings** tab. 
+1. Select **Enable all** and see an estimate for the number of active committers per product for your project appear.
+1. Toggle your desired products of **Secret Protection** or **Code Security**.
+1. Select **Begin billing** to activate Secret Protection and/or Code Security for every existing repository in your project. 
+1. Optionally, toggle **Automatically enable Advanced Security for new repositories** so that any newly created repositories have **Secret Protection** or **Code Security** enabled upon creation. 
+
+:::image type="content" source="media/enable-github-advanced-security-project.png" lightbox="media/advsec-project-settings-plans-enabled.png" alt-text="Screenshot of project-level enablement for Advanced Security.":::
+
+#### Organization-level onboarding
+1. Go to your **Organization settings** for your Azure DevOps organization. 
+1. Select **Repositories**. 
+1. Select **Enable all** and see an estimate for the number of active committers per product for your organization appear.
+1. Toggle your desired products of **Secret Protection** or **Code Security**.
+1. Select **Begin billing** to activate Advanced Security for every existing repository in each project in your organization. 
+1. Optionally, toggle **Automatically enable Advanced Security for new repositories** so that any newly created projects have **Secret Protection** or **Code Security** enabled upon creation. 
+
+:::image type="content" source="media/enable-github-advanced-security-organization.png" lightbox="media/advsec-organization-settings-plans-enabled.png" alt-text="Screenshot of org-level enablement for Advanced Security.":::
+
+## Set up secret scanning
+
+Secret scanning push protection and repository scanning are automatically enabled when you turn on Secret Protection. You can enable or disable secret push protection from the repository settings page. 
+
+:::image type="content" source="media/secret-scanning-push-protection.png" lightbox="media/advsec-repository-settings-secret-protection-options.png" alt-text="Screenshot of enabling push protection.":::
+
+As mentioned, secret scanning repository scanning is automatically kicked off upon enabling Secret Protection for a selected repository. 
+
+## Set up dependency scanning
+
+To gain access to dependency scanning features, you need the **Code Security** product enabled for your repository.
+:::zone-end
 
 Dependency scanning is a pipeline-based scanning tool. Results are aggregated per repository. We recommend that you add the dependency scanning task to all the pipelines that you want scanned. 
 
@@ -113,6 +159,10 @@ To generate alerts, run your first scan with a pipeline with the dependency scan
 --- 
 
 ## Set up code scanning
+
+:::zone pivot="standalone-ghazdo"
+To gain access to code scanning features, you need the **Code Security** product enabled for your repository.
+:::zone-end
 
 Code scanning is also a pipeline-based scanning tool where results are aggregated per repository. 
 
