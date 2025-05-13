@@ -105,7 +105,7 @@ Output:
 
 To automatically add a build tag to a future build in a YAML pipeline, use the [`addbuildtag` logging command](../scripts/logging-commands.md#addbuildtag-add-a-tag-to-the-build). 
 
-In the following example a new tag is added in a script task with a variable that includes the current date.
+In the following example, a new tag is added in a script task with a variable that includes the current date.
 
 ```yaml
 steps:
@@ -118,7 +118,7 @@ steps:
 
 ## Filter with a build tag
 
-Once you have added build tags to your builds, you can use them to filter and search for specific builds. To use build tags in Azure DevOps, follow these steps:
+Once you've added build tags to your builds, you can use them to filter and search for specific builds. To use build tags in Azure DevOps, follow these steps:
 
 1. Open your Azure DevOps project and go to **Pipelines**.
 1. Select **Runs** tab.
