@@ -98,10 +98,13 @@
       href: npm/npm-audit.md
   - name: Maven
     items:
-    - name: Project setup
-      displayName: maven pom, maven artifacts, maven packages, maven authentication
+    - name: Project setup - Maven
+      displayName: maven, pom, artifacts, package
       href: maven/project-setup-maven.md
-    - name: Publish packages - Gradle
+    - name: Project setup - Gradle
+      displayName: Maven, Gradle
+      href: maven/project-setup-gradle.md
+    - name: Publish artifacts with Gradle
       displayName: gradle, publish
       href: maven/publish-with-gradle.md
   - name: Python
@@ -163,9 +166,12 @@
       href: npm/npm-audit.md
   - name: Maven
     items:
-    - name: Project setup
+    - name: Project setup - Maven
       displayName: maven pom, maven artifacts, maven packages, maven authentication
       href: maven/project-setup-maven.md
+    - name: Project setup - Gradle
+      displayName: Maven, Gradle
+      href: maven/project-setup-gradle.md
     - name: Restore Maven packages
       displayName: maven, restore, install
       href: maven/install.md
