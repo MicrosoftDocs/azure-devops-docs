@@ -103,24 +103,23 @@ When you integrate one of these services with Azure DevOps, you must create a su
 1. Select the service that you want to integrate with.
 
    :::image type="content" source="media/select-service.png" alt-text="Screenshot of the Service dialog. Numerous services are listed, Trello is selected, and a description of Trello is visible.":::
-  
+
+1. Select the event to trigger on and any applicable filters.
+
+   :::image type="content" source="./media/trello-wizard-event.png" alt-text="Screenshot of the Trigger dialog. The Code pushed event is selected. Filters are set on a repository and a group.":::
  
-1.	Select the event to trigger on and any applicable filters.
+1. Select an action to run on the target service. 
 
-    :::image type="content" source="./media/trello-wizard-event.png" alt-text="Select the event to trigger on and any filters":::  
- 
-1.	Select an action to run on the target service. 
+   > [!NOTE]
+   > The list of available actions may be limited based on the event type that you selected. 
 
-	> [!NOTE]
-    > The list of available actions may be limited based on the event type that you selected. 
-
-    :::image type="content" source="./media/trello-wizard-action.png" alt-text="Screenshot showing selection of an action for the target service.":::  
+   :::image type="content" source="./media/trello-wizard-action.png" alt-text="Screenshot of the Action dialog. Create a card is selected. Fields are available for specifying a token, a board, and other settings.":::
 
 1.	To confirm the settings are correct, test the subscription and then finish the wizard.
 
-    :::image type="content" source="./media/test1.png" alt-text="Screenshot showing test notification 1.":::  
+    :::image type="content" source="./media/test1.png" alt-text="Screenshot of the Test Notification window. In the Summary tab, a message about a push shows a status of Succeeded.":::
 	
-    :::image type="content" source="./media/test2.png" alt-text="Screenshot showing test notification 2.":::  
+    :::image type="content" source="./media/test2.png" alt-text="Screenshot of the Test Notification window. The Request tab shows a POST request to Trello with information about a commit that was pushed.":::
  
 ::: moniker-end
 
