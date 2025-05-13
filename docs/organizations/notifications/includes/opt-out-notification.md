@@ -15,8 +15,6 @@ You can unsubscribe or opt out of receiving notifications for specific team noti
 
 1. Select **User settings** :::image type="icon" source="../../../media/icons/user-settings-gear.png":::, and then select **Notifications**.
 
-   :::image type="content" source="../media/personal-notifications-preview.png" alt-text="Screenshot that shows how to select the User settings, Notifications option in Azure DevOps.":::
-
 1. In your list of **Notification** subscriptions, locate the notification you want to disable.
 
 1. To unsubscribe from the notification, move the **State** toggle to the _Off_ position, which changes the toggle color from blue to gray. 
