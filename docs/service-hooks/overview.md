@@ -88,21 +88,22 @@ The following services are available as the target of service hooks. For more in
 
 ## Create a subscription
 
-When you integrate one of these services with Azure DevOps, you must create a new subscription. In many cases, you need to do some configuration in the other service, too. For specific details, check out the information for the service that you're interested in.
+When you integrate one of these services with Azure DevOps, you must create a subscription. In many cases, you need to do some configuration in the other service, too. For specific details, check out the information for the service that you're interested in.
 
 ::: moniker range="<=azure-devops"
 
-1.	Open the admin page for a project in web access.
-    
-    <img alt="Screenshot of highlighted Project settings button." src="./media/devops-service-hooks.png" />
+1. Go to your project, select **Project settings**, and then select **Service hooks**.
 
-1. 	Run the wizard to create the subscription.
+   :::image type="content" source="media/devops-service-hooks.png" alt-text="Screenshot that shows an Azure DevOps project. On the side, Project settings and Service hooks are highlighted.":::
 
-    ![Screenshot of highlighted button, Create subscription.](./media/devops-create-subscription.png)
+1. Select **Create subscription**.
+
+   :::image type="content" source="media/devops-create-subscription.png" alt-text="Screenshot of the Service Hooks page of an Azure DevOps project. The Create subscription button is highlighted.":::
  
-1.	Select the service that you want to integrate with.
+1. Select the service that you want to integrate with.
 
-    :::image type="content" source="./media/select-service.png" alt-text="Select the service to integrate":::   
+   :::image type="content" source="media/select-service.png" alt-text="Screenshot of the Service dialog. Numerous services are listed, Trello is selected, and a description of Trello is visible.":::
+  
  
 1.	Select the event to trigger on and any applicable filters.
 
