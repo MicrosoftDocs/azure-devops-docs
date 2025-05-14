@@ -7176,11 +7176,11 @@
     },
     {
       "source_path": "docs/integrate/concepts/service-hooks.md",
-      "redirect_url": "/docs/service-hooks/overview"
+      "redirect_url": "/azure/devops/service-hooks/overview"
     },
     {
       "source_path": "docs/organizations/accounts/manage-personal-access-tokens-via-api.md",
-      "redirect_url": "/docs/organizations/accounts/use-personal-access-tokens-to-authenticate#pat-lifecycle-management-apis"
+      "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#pat-lifecycle-management-apis"
     }
   ]
 }
