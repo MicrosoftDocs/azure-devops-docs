@@ -15,12 +15,29 @@ zone_pivot_groups: configure-ghazdo-bundled-individual-products
 
 # Configure GitHub Advanced Security for Azure DevOps
 
+:::zone pivot="bundled-ghazdo"
 GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos and includes the following features:
 
 * Secret Scanning push protection: check if code pushes include commits that expose secrets such as credentials  
 * Secret Scanning repo scanning: scan your repository and look for exposed secrets that were committed accidentally
 * Dependency Scanning – search for known vulnerabilities in open source dependencies (direct and transitive)
-* Code Scanning – use CodeQL static analysis engine to identify code-level application vulnerabilities such as SQL injection and authentication bypass 
+* Code Scanning – use CodeQL static analysis engine to identify code-level application vulnerabilities such as SQL injection and authentication bypass
+:::zone-end
+
+:::zone pivot="standalone-ghazdo"
+You can bring the protection of Advanced Security to your enterprise with the flexibility to enable the right level of protection for your repositories. GitHub Advanced Security for Azure DevOps is available as GitHub Secret Protection for Azure DevOps and GitHub Code Security for Azure DevOps. 
+
+Secret Protection includes the following features: 
+*   Push protection, to prevent secret leaks before they happen 
+*   Secret scanning alerts with notifications, to catch existing exposures before they become a problem
+*   Security overview, which provides insight into your organization's level of risk and security protection
+
+Code Security includes the following features:
+*   Dependency alerts, to find vulnerabilities in open-source dependencies 
+*   CodeQL scanning, to detect vulnerabilities directly in your code 
+*   Security findings for third-party tools 
+*   Security overview, which provides insight into your organization's level of risk and security protection 
+:::zone-end
 
 GitHub Advanced Security for Azure DevOps is only available for Azure DevOps Services and specifically for code Git repositories. 
 
