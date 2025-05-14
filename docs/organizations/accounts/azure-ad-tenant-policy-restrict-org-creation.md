@@ -22,7 +22,7 @@ Learn how to turn on the Microsoft Entra tenant policy, which restricts users fr
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**|[Azure DevOps Administrator](../security/look-up-azure-devops-adminstrator.md). |
+|**Permissions**|[Azure DevOps Administrator](../security/look-up-azure-devops-administrator.md). |
 
 ## Turn on the policy
 
