@@ -12,80 +12,37 @@ ms.date: 01/31/2025
 
 # Authenticate to Azure DevOps with Microsoft Entra
 
-Microsoft Entra ID is a separate Microsoft product with its own platform. As a leading identity and access management (IAM) provider, [Microsoft Entra ID](/entra/fundamentals/whatis) focuses on managing team members and safeguarding company resources. You can [connect your Azure DevOps organization to a Microsoft Entra ID tenant](../../../organizations/accounts/connect-organization-to-azure-ad.md), which offers [many benefits to your company](../../../organizations/accounts/access-with-azure-ad.md).
+[Microsoft Entra ID](/entra/fundamentals/whatis) is an identity and access management (IAM) platform that allows companies to manage organization membership and safeguard company resources. Many Azure DevOps enterprise customers choose to [connect their Azure DevOps organization to a Microsoft Entra ID tenant](../../../organizations/accounts/connect-organization-to-azure-ad.md) to support managing the large volume of users in their company and take advantage of other [security features that Microsoft Entra offers](../../../organizations/accounts/access-with-azure-ad.md).
 
-Once connected, the Microsoft Identity application platform on top of Microsoft Entra ID provides several advantages for app developers and org admins. You can register an application to access Azure tenants and define permissions needed from Azure resources, including Azure DevOps, which exists outside of the Azure tenant construct.
+> [!NOTE]
+> Microsoft Entra was once called [Azure Active Directory (Azure AD)](/entra/fundamentals/new-name), so you may still see references to Azure AD across Microsoft products. Active Directory may also be referenced as the on-premises equivalent of Microsoft Entra.
 
-Microsoft Entra apps and Azure DevOps apps are separate entities with no knowledge of each other. The authentication methods differ: Microsoft Entra uses OAuth, while Azure DevOps uses its own OAuth. [Microsoft Entra ID OAuth apps](/entra/identity-platform/v2-protocols) issue Microsoft Entra tokens, not Azure DevOps access tokens. These tokens have a standard one-hour duration before expiration.
+Once connected, the [Microsoft Identity application platform](/entra/identity-platform/) that sits on top of Microsoft Entra ID can be used to register an application to access Azure tenants and define the permissions needed from Azure resources, including Azure DevOps.
 
-## Develop Azure DevOps apps on Microsoft Entra
+We support app development for:
+* [Microsoft Entra OAuth apps (on-behalf-of users)](entra-oauth.md)
+* [Microsoft Entra service principals and managed identities (on-behalf-of itself apps)](service-principal-managed-identity.md)
 
-Read the Microsoft Entra documentation thoroughly to understand the new functionality and [different expectations](/entra/identity-platform/application-model) during setup.
+## Azure DevOps-based auth vs. Entra-based auth
 
-We support your app development with guidance for:
-* [Microsoft Entra OAuth apps (on-behalf-of user apps)](entra-oauth.md) for apps that perform actions on behalf of consenting users.
-* [Microsoft Entra service principals and managed identities (on-behalf-of itself apps)](service-principal-managed-identity.md) for apps that perform automated tooling within a team.
+Many native Azure DevOps-based authentication (for example, [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or Azure DevOps OAuth apps) were created before Microsoft Entra. Microsoft Entra tokens offer a secure alternative, lasting only one hour before requiring a refresh. The authentication protocols for generating Entra tokens are more robust and secure. Security measures like [Conditional Access policies](../../../organizations/accounts/change-application-access-policies.md#cap-support-on-azure-devops) protect against token theft and replay attacks. Meanwhile, our native tokens sit outside Azure and don't have native support for concepts, like tenants or Conditional Access.
+
+Tokens issued by each platform are also distinct. Microsoft Entra OAuth apps issue Microsoft Entra tokens, not Azure DevOps access tokens. These tokens can't be used interchangeably on each platform. If you are exploring migrating from Azure DevOps OAuth to Microsoft Entra OAuth, users must reauthorize for the new app.
 
 ## Replace PATs with Microsoft Entra tokens
 
-[Personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) are popular for Azure DevOps authentication due to their ease of creation and use. However, poor PAT management and storage can lead to unauthorized access to your Azure DevOps organizations. Long-lived or over-scoped PATs increase the risk of damage from a leaked PAT.
+Personal access tokens (PATs) are a popular form of Azure DevOps authentication due to their ease of creation and use. However, poor PAT management and storage can result in leaks and unauthorized access to your Azure DevOps organizations. Long-lived or over-scoped PATs increase the risk of damage from a leaked PAT. We encourage users to explore using Microsoft Entra tokens instead of PATs whenever possible.
 
-Microsoft Entra tokens offer a secure alternative, lasting only one hour before requiring a refresh. The authentication protocols for generating Entra tokens are more robust and secure. Security measures like [conditional access policies](../../../organizations/accounts/change-application-access-policies.md#cap-support-on-azure-devops) protect against token theft and replay attacks. We encourage users to explore using Microsoft Entra tokens instead of PATs. We share popular PAT use cases and ways to replace PATs with Entra tokens in this workflow.
+### Common PAT alternatives
 
-### Ad-hoc requests to Azure DevOps REST APIs
+Due to their increasing risk, admins are increasingly requesting [security policies that restrict PAT creation](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md). As a result, PATs are becoming a less viable alternative for accessing Azure DevOps programmatically. Outside of migrating any existing app development to the Microsoft Identity platform, we share some common use cases across Azure DevOps that historically rely on PATs and their recommended Microsoft Entra alternative.
 
-You can also use the [**Azure CLI**](/cli/azure/install-azure-cli) to get Microsoft Entra ID access tokens for users to call [Azure DevOps REST APIs](/rest/api/azure/devops/). Since Entra access tokens only last for one hour, they're ideal for quick one-off operations, like API calls that don't need a persistent token.
+| PAT scenario | Entra alternative |
+|------------|------------|
+| Authenticate with Git Credential Manager (GCM) | GCM defaults to authenticating with PATs. Set the default credential type to `oauth`. Learn more on our [Git Credential Manager (GCM) page](../../../repos/git/set-up-credential-managers.md) . |
+| Authenticate in a build or release pipeline | Use a [service connection with Workload Identity Federation](../../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation). |
+| Ad-hoc requests to Azure DevOps REST APIs | Issue a [one-off Microsoft Entra token using Azure CLI](../../../cli/entra-tokens.md).  |
 
----
+> [!TIP]
+> **Have an Azure DevOps PAT scenario with no clear Microsoft Entra token alternative?** Share your scenario in the [Developer Community](https://developercommunity.visualstudio.com/AzureDevOps)!
 
-#### Acquire user tokens
-
-# [Azure CLI](#tab/azure-cli)
-
-1. Sign in to the Azure CLI using the `az login` command and follow the on-screen instructions.
-1. Set the correct subscription for the signed-in user with these bash commands. Make sure the Azure subscription ID is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
-  
-   ```bash
-   az account set -s <subscription-id>
-   ```
-
-1. Generate a Microsoft Entra ID access token with the `az account get-access-token` command using the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
-
-   ```bash
-   az account get-access-token \
-   --resource 499b84ac-1321-427f-aa17-267ca6975798 \
-   --query "accessToken" \
-   -o tsv
-   ```
-
-# [Azure PowerShell](#tab/azure-powershell)
-
-1. Sign in to Azure PowerShell using the `Connect-AzAccount` command and follow the on-screen instructions.
-1. Set the correct subscription for the signed-in user with these PowerShell commands. Make sure the Azure subscription ID is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
-  
-   ```azurepowershell-interactive
-   Set-AzContext -Subscription <subscriptionID>
-   ```
-
-1. Generate a Microsoft Entra ID access token with the `Get-AzAccessToken` command using the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
-
-   ```azurepowershell-interactive
-   Get-AzAccessToken -ResourceUrl '499b84ac-1321-427f-aa17-267ca6975798'
-   ```
-
----
-
-For more information, see the [Databricks docs](/azure/databricks/dev-tools/user-aad-token).
-
-#### Acquire service principal tokens in Azure CLI
-
-Service principals can also use ad-hoc Microsoft Entra ID access tokens for ad-hoc operations. For more information, see [Service principals and managed identities/Get a Microsoft Entra ID token with the Azure CLI](service-principal-managed-identity.md#b-acquire-a-microsoft-entra-id-token-with-the-azure-cli).
-
-### Git operations with Git Credential Manager
-
-You can also use Microsoft Entra tokens to perform Git operations. If you regularly push to git repositories, [use the Git Credential Manager](../../../repos/git/set-up-credential-managers.md) to easily request and manage your Microsoft Entra OAuth token credentials, as long as `oauth` is set as the default `credential.azReposCredentialType`.
-
-## Related articles
-
-- [Build Azure DevOps integration with Microsoft Entra OAuth apps](entra-oauth.md)
-- [Use service principals & managed identities in Azure DevOps](service-principal-managed-identity.md)

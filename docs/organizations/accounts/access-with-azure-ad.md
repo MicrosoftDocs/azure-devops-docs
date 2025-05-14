@@ -17,9 +17,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
-
-This article discusses controlling access to your organization using Microsoft Entra ID. Connecting your organization to Microsoft Entra ID enhances security and simplifies user management.
+This article discusses controlling access to your organization using Microsoft Entra ID. [Connecting your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md) enhances security and simplifies user management.
 
 ## Benefits of using Microsoft Entra ID
 
@@ -53,10 +51,12 @@ Without Microsoft Entra ID, you're solely responsible for controlling organizati
 
 For more information, see [Frequently asked questions about Azure access](faq-azure-access.yml)
 
+> [!div class="nextstepaction"]
+> [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md)
+
 ## Related articles
 
 * [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory)
-* [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md)
 * [Disconnect your organization from Microsoft Entra ID](/azure/active-directory/add-users-azure-active-directory#delete-a-user)
 * [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
