@@ -73,12 +73,14 @@ A subscription lets you control the activity events that trigger notifications a
 
    1. Expand the **Deliver to** dropdown list and select the delivery option for the notification:
 
-      The following delivery options are available:
-
       - **Members of \<Name> Team by role**: Only certain team members associated with the event are notified. For example, for work item changes, you might want only the _Current Assignee_ of the work item to receive a notification.
+
       - **Team preference**: Use the team's default delivery preference. For more information, see [Manage delivery settings](#manage-global-delivery-settings).
+
       - **Custom email address**: Send email to a specified email address.
-      - **Members of \<Name> Team** | Send individual email to each member of the team.
+
+      - **Members of \<Name> Team**: Send individual email to each member of the team.
+      
       ::: moniker range="azure-devops"
       - **SOAP**: Send email notifications to subscribers of the SOAP service.
       ::: moniker-end
