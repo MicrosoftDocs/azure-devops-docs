@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Pipelines, you can build, test, and automatically deploy your web app to an Azure App Service Web App container on Linux. In this article, you will learn how to use YAML or Classic pipelines to:
+Using Azure Pipelines, you can build, test, and automatically deploy your web app to an Azure App Service Web App container on Linux. In this article, you'll learn how to use YAML or Classic pipelines to:
 
 > [!div class="checklist"]
 >
@@ -199,31 +199,31 @@ stages:
 
 1. Select the **Azure App Service deployment** template
 
-    :::image type="content" source="media/app-service-template.png" alt-text="Azure App Service template":::
+    :::image type="content" source="media/app-service-template.png" alt-text="Screenshot of Azure App Service template.":::
 
 1. Select **Tasks**, then **Unlink all** in **stage 1** to unlink all the pipeline parameters. 
 
-    :::image type="content" source="media/unlink-parameters.png" alt-text="Unlink pipeline parameters":::
+    :::image type="content" source="media/unlink-parameters.png" alt-text="Screenshot of unlink pipeline parameters.":::
 
-1. Select the **Deploy Azure App Service** task, and fill out the required fields. Select **Save** when you are done.
+1. Select the **Deploy Azure App Service** task, and fill out the required fields. Select **Save** when you're done.
 
-    :::image type="content" source="media/deploy-task.png" alt-text="Deploy Azure App Service task":::
+    :::image type="content" source="media/deploy-task.png" alt-text="Screenshot of deploy Azure App Service task.":::
 
-1. Select **Create release**, and then choose **Stage 1** from the dropdown menu. Select **Create** when you are done.
+1. Select **Create release**, and then choose **Stage 1** from the dropdown menu. Select **Create** when you're done.
 
-    :::image type="content" source="media/create-release.png" alt-text="Create a release pipeline":::
+    :::image type="content" source="media/create-release.png" alt-text="Screenshot of create a release pipeline.":::
 
 1. Hover over **Stage 1** in your pipeline, and then select **Deploy** to queue and start the deployment.
 
-    :::image type="content" source="media/deploy-docker-image.png" alt-text="Queue and deploy Docker image":::
+    :::image type="content" source="media/deploy-docker-image.png" alt-text="Screenshot of queue and deploy Docker image.":::
 
-1. Your pipeline logs should look similar to the screenshot below. 
+1. Your pipeline logs should look similar to this screenshot. 
 
-    :::image type="content" source="media/pipeline-logs.png" lightbox="media/pipeline-logs.png" alt-text="Pipeline logs":::
+    :::image type="content" source="media/pipeline-logs.png" lightbox="media/pipeline-logs.png" alt-text="Screenshot of pipeline logs.":::
 
 1. Navigate to your newly deployed web app to verify your deployment.
 
-    :::image type="content" source="media/deployed-web-app.png" alt-text="Web app deployed. Hello World message":::
+    :::image type="content" source="media/deployed-web-app.png" alt-text="Screenshot of web app deployed. Hello World message.":::
 ---
 
 ## Deploy to a deployment slot
