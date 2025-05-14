@@ -1,7 +1,7 @@
 ---
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.date: 05/13/2025
+ms.date: 05/14/2025
 ---
 
 # Demands
@@ -86,7 +86,14 @@ pool:
 
 ## ImageVersionOverride
 
-If you want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image. The following examples specify an `ImageVersionOverride` of `2.0.0`.
+If you want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image.
+
+> [!IMPORTANT]
+> When you use `ImageVersionOverride` to specify a different image version than what's configured in your [pool settings](./configure-images.md), each agent is started on demand using the specified image version.
+>
+> [Standby agents](./configure-scaling.md#standby-agent-mode) are provisioned using the image versions specified in your [pool's configuration](./configure-images.md), so if you use `ImageVersionOverride`, any standby agents won't match that version and a fresh agent is started.
+
+The following examples specify an `ImageVersionOverride` of `2.0.0`.
 
 Configure the `ImageVersionOverride` demand in the `demands` section of your pipeline.
 
