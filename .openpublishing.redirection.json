@@ -7173,6 +7173,14 @@
     {
       "source_path": "docs/extend/develop/add-chart.md",
       "redirect_url": "/azure/devops/extend/develop/add-dashboard-widget"
+    },
+    {
+      "source_path": "docs/integrate/concepts/service-hooks.md",
+      "redirect_url": "/docs/service-hooks/overview"
+    },
+    {
+      "source_path": "docs/organizations/accounts/manage-personal-access-tokens-via-api.md",
+      "redirect_url": "/docs/organizations/accounts/use-personal-access-tokens-to-authenticate.md#pat-lifecycle-management-apis"
     }
   ]
 }
