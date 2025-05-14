@@ -25,7 +25,9 @@ landingContent:
         links:
           - text: About permissions, access, and security groups
             url: about-permissions.md
-          - text: Security overview
+          - text: About authentication, authorization, & security policies
+            url: about-security-identity.md              
+          - text: Security checklist
             url: security-overview.md
       - linkListType: quickstart
         links:
@@ -79,25 +81,7 @@ landingContent:
             url: ../billing/set-up-billing-for-your-organization-vs.md#set-up-billing
           - text: Try Azure Test Plans for free
             url: ../billing/try-additional-features-vs.md
-  - title: Authenticate, use PATs, & secure applications 
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: About security, authentication, & authorization
-            url: about-security-identity.md  
-          - text: Authentication guidance 
-            url: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json   
-      - linkListType: how-to-guide
-        links:
-          - text: Use personal access tokens (PATs)
-            url: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json   
-          - text: Manage PATs via API
-            url: ../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/security/toc.json   
-          - text: Revoke user PATs 
-            url: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/security/toc.json   
-          - text: Authorize access to REST APIs with OAuth 2.0
-            url: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/security/toc.json  
-  - title: Secure projects  
+  - title: Secure organizations and projects  
     linkLists:
       - linkListType: overview
         links:
@@ -105,6 +89,10 @@ landingContent:
             url: restrict-access.md 
       - linkListType: quickstart
         links:
+          - text: Look up a project collection administrator
+            url: look-up-project-collection-administrators.md
+          - text: Change permissions at the organization or collection-level
+            url: change-organization-collection-level-permissions.md 
           - text: Look up a project administrator 
             url: look-up-project-administrators.md
           - text: Change project-level permissions 

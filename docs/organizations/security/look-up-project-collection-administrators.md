@@ -34,7 +34,7 @@ The **Project Collection Administrators** group is a pivotal security group with
 - **Manage permissions** across all levels
 ::: moniker-end
 
-To add members to the **Project Collection Administrators** group or change a project collection-level permission see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
+Organization owners are automatically members of this group. To add members to the **Project Collection Administrators** group or change a project collection-level permission see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
 For more information, see [Get started with permissions and security groups](about-permissions.md).
 
@@ -42,7 +42,6 @@ For more information, see [Get started with permissions and security groups](abo
 
 [!INCLUDE [prerequisites-project-collection-valid-users-group](../../includes/prerequisites-project-collection-valid-users-group.md)]
 
- 
 ## Show members of the Project Collection Administrators group
 
 ::: moniker range="azure-devops"

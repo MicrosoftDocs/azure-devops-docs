@@ -93,56 +93,13 @@ Management of service principals differs from user accounts in the following key
 
 ### 5. Get a Microsoft Entra ID token
 
-#### (a) Acquire a Microsoft Entra ID token programmatically
+#### Acquire a Microsoft Entra ID token programmatically
 
 Acquiring an access token for a managed identity can be done by following along with the Microsoft Entra ID documentation. See the examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token).
 
 The returned access token is a JSON web token (JWT) with the defined roles, which can be used to access organization resources using the token as *Bearer*.
 
-#### (b) Acquire a Microsoft Entra ID token with the Azure CLI
-For ad-hoc operations, it might be easier to acquire a one-off Microsoft Entra ID token through the Azure CLI. This approach is preferred for operations that don't need a persistent token to be regularly rotated, like API calls or git clone operations.
-
-**Prerequisites**
-* **Azure tenant id and subscription id**: Make sure the subscription is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your tenant or subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
-* **Azure app client ID and client secret**
-* [**Azure CLI**](/cli/azure/install-azure-cli)
-
-These instructions are provided by the Databricks docs and more details can be found on [their page](/azure/databricks/dev-tools/service-prin-aad-token).
-
-  1. Sign in to the Azure CLI as the service principal using the `az devops login` command.
-  2. Follow the on-screen instructions and finish signing in.
-  ``` powershell
-  # To authenticate a service principal with a password or cert:
-  az login --service-principal -u <app-id> -p <password-or-cert> --tenant <tenant>
-
-  # To authenticate a managed identity:
-  az login --identity
-  ```
-
-  3. Set the right correct subscription for the signed-in service principal by entering the command:
-  ``` powershell
-  az account set -s <subscription-id>
-  ```
-
-  4. Generate a Microsoft Entra ID access token with the `az account get-access-token` the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
-  ``` powershell
-  $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
-  ```
-
-  5. Now, you can use `az cli` commands per usual. Let's try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
-  ```powershell
-  $apiVersion = "7.1-preview.1"
-  $uri = "https://dev.azure.com/${yourOrgname}/_apis/projects?api-version=${apiVersion}"
-  $headers = @{
-      Accept = "application/json"
-      Authorization = "Bearer $accessToken"
-  }
-  Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -ExpandProperty value ` | Select-Object id, name
-  ```
-
-
-> [!NOTE]
-> Use the Azure DevOps application ID, not our resource URI, for generating tokens.
+For ad-hoc operations, it might be easier to [acquire a one-off Microsoft Entra ID token through the Azure CLI](../../../cli/entra-tokens.md#acquiring-a-token-for-a-service-principal). This approach is preferred for operations that don't need a persistent token to be regularly rotated, like API calls or git clone operations.
 
 ### 6. Use the Microsoft Entra ID token to authenticate to Azure DevOps resources
 

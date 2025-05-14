@@ -223,6 +223,8 @@ additionalContent:
               url: ./organizations/security/access-levels.md
             - text: Billing overview
               url: ./organizations/billing/overview.md
+            - text: About authentication, authorization, and security policies
+              url: ./organizations/security/about-security-identity.md
             - text: Add or remove users or groups 
               url: ./organizations/security/add-remove-manage-user-group-security-group.md
             - text: Change project-level permissions
@@ -298,10 +300,23 @@ additionalContent:
             - text: See more >
               url: ./project/index.yml
         # Card
-        - title: Marketplace & Extensibility
+        - title: Developer resources
           links:
             - text: Authentication overview
-              url: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
+              url: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/dev-resources/toc.json
+            - text: Build with Azure DevOps
+              url: ./integrate/index.md?toc=/azure/devops/dev-resources/toc.json
+            - text: Azure DevOps CLI 
+              url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json
+            - text: Get started with REST APIs
+              url: ./integrate/how-to/call-rest-api.md?toc=/azure/devops/dev-resources/toc.json
+            - text: REST API Reference
+              url: /rest/api/azure/devops/
+            - text: See more >
+              url: ./dev-resources/index.yml
+        # Card
+        - title: Marketplace & Extensibility
+          links:
             - text: Discover extensions
               url: ./extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Develop extensions
@@ -310,25 +325,6 @@ additionalContent:
               url: ./service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: See more >
               url: ./marketplace-extensibility/index.yml
-        # Card
-        - title: Developer resources
-          links:
-            - text: Azure DevOps CLI 
-              url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json
-            - text: Azure DevOps CLI quick reference
-              url: ./cli/quick-reference.md?toc=/azure/devops/dev-resources/toc.json
-            - text: Git command reference
-              url: ./repos/git/command-prompt.md 
-            - text: Team Foundation version control commands
-              url: ./repos/tfvc/use-team-foundation-version-control-commands.md
-            - text: Azure DevOps Services Demo Generator
-              url: ./demo-gen/index.md?toc=/azure/devops/dev-resources/toc.json
-            - text: REST APIs
-              url: /rest/api/vsts/
-            - text: DevOps resource center
-              url: /devops
-            - text: See more >
-              url: ./dev-resources/index.yml
 
   # footer (optional)
   footer: "[Blogs](https://devblogs.microsoft.com/devops/) - [Twitter](https://twitter.com/AzureDevOps) - [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops) - [Issue Reporting](https://azure.microsoft.com/support/devops/) - [Developer Community](https://azure.microsoft.com/support/devops/) - [Service Status](https://status.dev.azure.com/)"
