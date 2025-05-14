@@ -104,6 +104,9 @@
     - name: Project setup - Gradle
       displayName: Maven, Gradle
       href: maven/project-setup-gradle.md
+    - name: Publish packages - Maven
+      displayName: maven, publish
+      href: maven/publish-packages-maven.md
     - name: Publish artifacts with Gradle
       displayName: gradle, publish
       href: maven/publish-with-gradle.md
