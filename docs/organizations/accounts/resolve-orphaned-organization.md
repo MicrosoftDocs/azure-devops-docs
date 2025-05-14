@@ -36,8 +36,8 @@ But, organizations connected to Microsoft Entra ID can transfer ownership to an 
 
 The Azure DevOps Administrator can [change the Azure DevOps owner](change-organization-ownership.md) to claim ownership of the target Azure DevOps organization. 
 
-    > [!NOTE]
-    > Any changes to role membership might take up to an hour to propagate to Azure DevOps.  
+> [!NOTE]
+> Any changes to role membership might take up to an hour to propagate to Azure DevOps.  
 
 ## When your Azure DevOps Administrator is a member of the target organization
 
