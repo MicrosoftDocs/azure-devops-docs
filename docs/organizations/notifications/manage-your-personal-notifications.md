@@ -90,7 +90,7 @@ Keep in mind that custom notification subscriptions aren't the same as default n
 
    ::: moniker range=" azure-devops"
 
-   :::image type="content" source="media/manage-personal-notifications-new-subscription-preview.png" alt-text="Screenshot that shows how to select the New subscription option selected in Azure DevOps.":::
+   :::image type="content" source="media/manage-personal-notifications-new-subscription-preview.png" alt-text="Screenshot that shows how to select the New subscription option in Azure DevOps.":::
 
    ::: moniker-end  
    ::: moniker range="<azure-devops"
