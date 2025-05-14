@@ -216,11 +216,9 @@ You can find a C# sample that implements OAuth to call Azure DevOps Services RES
 
 ## Regenerate client secret
 
-Your application secret regularly expires. Starting March 2025, the default secret lifespan of new application secrets is 60 days. 
+Application secrets regularly expire every 60 days (as of March 2025). You may have two secrets at any time. Continue to create and use access tokens and refresh tokens by rotating your soon-to-expire app secret with a new application secret. This can be done on the app's registration page on the [Visual Studio profile](https://aex.dev.azure.com/me) or through the [Registration Secret APIs](/rest/api/azure/devops/delegatedauth/registration-secret). To use the APIs, you must use an [Entra access token](entra-oauth.md) with the `vso.tokens` [scope](oauth.md#scopes).
 
-Applications can have two secrets at any time. Continue to create and use access tokens and refresh tokens by rotating your soon-to-expire app secret with a new application secret. 
-
-1. Create a secondary secret by selecting **"Generate Secret"** for "Secret 2".
+1. Create a secondary secret by selecting **"Generate Secret"** for "Secret 2". (Use the [Create Registration Secret API](/rest/api/azure/devops/delegatedauth/registration-secret/create).)
 
 :::image type="content" source="media/app-page-new-secret.png" alt-text="Screenshot of app page with secondary secret already generated.":::
    
@@ -228,11 +226,11 @@ Applications can have two secrets at any time. Continue to create and use access
 
 :::image type="content" source="media/secret-regeneration-modal.png" alt-text="Screenshot confirming secret regeneration.":::
 
-3. Update your app to use the new Secret #2 before Secret #1 expires. By managing two secrets at once, there is no downtime for your users as a result of expiring secrets.
+3. Update your app to use the new Secret #2 before Secret #1 expires. By managing two secrets at once, there is no downtime for your users as a result of expiring secrets. 
 
 4. Secret #1 naturally expires and all previous tokens cease to work.
    
-5. When it's time to rotate a soon-to-expire Secret #2, you can repeat this process by regenerating Secret #1 and using the regenerated Secret #1 in place of Secret #2.
+5. When it's time to rotate a soon-to-expire Secret #2, you can repeat this process by regenerating Secret #1 and using the regenerated Secret #1 in place of Secret #2. (Use the [Rotate Registration Secret API](/rest/api/azure/devops/delegatedauth/registration-secret/rotate-secret).)
 
 If secrets are leaked, you can quickly revoke the secret by clicking "Regenerate Secret". Once you confirm that you want to regenerate, the previous app secret no longer works and all previous tokens minted with this secret also stop working. Use the dual secrets rotation method to minimize downtime while revoking the leaked secret through regeneration.
 
