@@ -99,7 +99,7 @@ If your agent assignment times out, you can check the error code on the [Error c
 
 If your pipelines begin to fail after an image update, you can temporarily configure your pipelines to use the previous image version. You can configure your failing pipelines to use the previous image version on a per-pipeline basis, or you can configure the previous image version for all pipelines in your Managed DevOps Pool.
 
-To see whether your pipelines are failing due to an image version change, compare the image version on a failed pipeline run with the image version from the last successful pipeline run. To view the image version used by a pipeline run:
+To see whether your pipelines are failing due to an image version change, compare the image version on a failed pipeline run with the image version from the last successful pipeline run.
 
 1. [Go to your pipeline](../pipelines/create-first-pipeline.md#view-and-manage-your-pipelines) and review the [pipeline run history](../pipelines/create-first-pipeline.md#view-pipeline-details) for your pipeline.
 
@@ -113,11 +113,11 @@ To see whether your pipelines are failing due to an image version change, compar
 
    :::image type="content" source="./media/troubleshooting/view-pipeline-run-image-version.png" alt-text="Screenshot of pipeline run image version.":::
 
-1. If the image versions are different between the recent failed pipeline run and the previous successful run, the failure may be caused by an image update. You have two choices to temporarily revert to the previous image version while you troubleshoot to root cause.
-   * To run only the failing pipeline using the previous image version, add an `ImageVersionOverride` demand to your pipeline to specify the previous version. For more information, see [ImageVersionOverride](./demands.md#imageversionoverride).
-   * To update the pool settings so that all pipelines using the image run using the previous version, update your [Image settings](./configure-images.md) and explictly specify the desired version.
-      * If you're using [Azure Pipelines images](./configure-images.md#azure-pipelines-images), you must use [ARM templates](./configure-images.md?tabs=arm#azure-pipelines-images) or [Azure CLI](./configure-images.md?tabs=azure-cli#azure-pipelines-images) to specify the version, since the version for Azure Pipelines images can't be specified using the [Azure portal](./configure-images.md?tabs=azure-portal#azure-pipelines-images).
-      * If you're using [Selected marketplace images](./configure-images.md#selected-marketplace-images) or [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images), you can specify the version using the Azure portal as well as ARM templates and Azure CLI.
+If the image versions are different between the recent failed pipeline run and the previous successful run, the failure may be caused by an image update. You have two choices to temporarily revert to the previous image version while you troubleshoot the root cause.
+* To run only the failing pipeline using the previous image version, add an `ImageVersionOverride` demand to your pipeline to specify the previous version. For more information, see [ImageVersionOverride](./demands.md#imageversionoverride).
+* To update the pool settings so that all pipelines using the image run using the previous version, update your [Image settings](./configure-images.md) and explictly specify the desired version.
+   * If you're using [Azure Pipelines images](./configure-images.md#azure-pipelines-images), you must use [ARM templates](./configure-images.md?tabs=arm#azure-pipelines-images) or [Azure CLI](./configure-images.md?tabs=azure-cli#azure-pipelines-images) to specify the version, since the version for Azure Pipelines images can't be specified using the [Azure portal](./configure-images.md?tabs=azure-portal#azure-pipelines-images).
+   * If you're using [Selected marketplace images](./configure-images.md#selected-marketplace-images) or [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images), you can specify the version using the Azure portal as well as ARM templates and Azure CLI.
 
 Managed DevOps Pools keeps the past 20 images available for Selected marketplace images and the past 10 images available for Azure Pipelines images. Past versions of Azure Compute Gallery images are maintained by the owners of those Azure Compute Galleries.
 

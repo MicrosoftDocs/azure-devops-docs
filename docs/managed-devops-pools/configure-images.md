@@ -187,9 +187,9 @@ You can choose from the following types of images.
 
 Managed DevOps Pools provides several preconfigured images that have the same software as selected Microsoft-hosted agents for Azure Pipelines.
 
-If you're cofiguring your images using ARM templates or Azure CLI, you can specify a version in your `wellKnownImageName` setting, for example `"wellKnownImageName": "windows-2022/latest"` or `"wellKnownImageName": "windows-2022/20250427.1.0"`. If you don't specify a version, `latest` is used. If you're configuring your Azure Pipelines image using the Azure portal, `latest` is used.
-
 #### [Azure portal](#tab/azure-portal/)
+
+When you specify an Azure Pipelines image using the Azure portal, the latest version of the image is always used.
 
 :::image type="content" source="./media/configure-images/image-library-azure-pipelines-images.png" alt-text="Screenshot of Azure Pipelines images.":::
 
@@ -205,6 +205,8 @@ To specify an Azure Pipelines image, provide the alias of the image using the `w
 ]
 ```
 
+You can optionally specify a version in your `wellKnownImageName` setting, for example `"wellKnownImageName": "windows-2022/latest"` or `"wellKnownImageName": "windows-2022/20250427.1.0"`. If you don't specify a version, `latest` is used.
+
 #### [Azure CLI](#tab/azure-cli/)
 
 To specify an Azure Pipelines image, provide the alias of the image using the `wellKnownImageName` property. See a [list of Azure Pipelines image predefined aliases.](#azure-pipelines-image-predefined-aliases)
@@ -216,6 +218,8 @@ To specify an Azure Pipelines image, provide the alias of the image using the `w
     }
 ]
 ```
+
+You can optionally specify a version in your `wellKnownImageName` setting, for example `"wellKnownImageName": "windows-2022/latest"` or `"wellKnownImageName": "windows-2022/20250427.1.0"`. If you don't specify a version, `latest` is used.
 
 * * *
 
