@@ -7,7 +7,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
-ms.date: 05/08/2025
+ms.date: 05/15/2025
 monikerRange: '<= azure-devops'
 #customer intent: As an Azure DevOps developer, I want to understand how email recipients are determined for notifications and events, so I can ensure users receive the correct messages.
 ---
@@ -172,9 +172,13 @@ Because team `T1` has the **Do not deliver** setting enabled, the team **isn't**
 
 #### Team member is Microsoft Entra group
 
+#### Team member is Microsoft Entra group
+
 In this example, the primary team has three members: users `I1` and `I2`, and nested Microsoft Entra group `E1`.
 
-Azure DevOps doesn't expand Windows Server Active Directory (Windows AD) groups when delivering notifications. Only users `I1` and `I2` receive the notification messages at their preferred contact email address.
+Only users `I1` and `I2` receive the notification messages at their preferred contact email address unless `E1` is configured as an email-enabled security group. If `E1` is email-enabled, all members of `E1` will also receive the notifications.
+
+Azure DevOps notifications don't expand to Microsoft Entra groups for delivering notifications to individual users. However, if you're using an Active Directory (AD) group that is categorized as an Email-enabled Security group in the Azure Portal, notifications can be delivered to all members within that group. This means that if your Entra Group is configured as an email-enabled security group, all members receive notifications as intended.
 
 ## Related content
 
