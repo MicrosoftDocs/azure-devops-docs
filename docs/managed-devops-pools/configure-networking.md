@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 05/09/2025
+ms.date: 05/15/2025
 ---
 
 # Configure Managed DevOps Pools networking
@@ -92,7 +92,7 @@ Once the network update completes, newly created resource in the pool will use t
 
 #### [ARM template](#tab/arm/)
 
-If you are using ARM templates, add a `networkProfile` property if it doesn't already exist, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet. 
+If you are using ARM templates, add a `networkProfile` property in the `fabricProfile` section if it doesn't already exist, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet. 
 
 ```json
 {
@@ -102,10 +102,11 @@ If you are using ARM templates, add a `networkProfile` property if it doesn't al
     "location": "eastus",
     "properties": {
         ...
-        "networkProfile": {
-          "subnetId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet",
+        "fabricProfile": {
+            "networkProfile": {
+              "subnetId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet",
+            }
         }
-        ...
     }
 }
 ```
