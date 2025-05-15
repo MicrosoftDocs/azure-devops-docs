@@ -209,7 +209,7 @@ You can optionally specify a version in your `wellKnownImageName` setting, for e
 
 #### [Azure CLI](#tab/azure-cli/)
 
-To specify an Azure Pipelines image, provide the alias of the image using the `wellKnownImageName` property. See a [list of Azure Pipelines image predefined aliases.](#azure-pipelines-image-predefined-aliases)
+To specify an Azure Pipelines image, provide the predefined alias of the image using the `wellKnownImageName` property. See a [list of Azure Pipelines image predefined aliases.](#azure-pipelines-image-predefined-aliases)
 
 ```json
 "images": [
