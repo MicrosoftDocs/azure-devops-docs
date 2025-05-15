@@ -93,7 +93,7 @@ If you want to use a specific version of the image instead of the version specif
 >
 > [Standby agents](./configure-scaling.md#standby-agent-mode) are provisioned using the image versions specified in your [pool's configuration](./configure-images.md), so if you use `ImageVersionOverride`, any standby agents won't match that version and a fresh agent is started.
 
-The following examples specify an `ImageVersionOverride` of `2.0.0`.
+The following examples specify an `ImageVersionOverride` of `20250427.1.0`.
 
 Configure the `ImageVersionOverride` demand in the `demands` section of your pipeline.
 
@@ -101,7 +101,7 @@ Configure the `ImageVersionOverride` demand in the `demands` section of your pip
 pool: 
   name: fabrikam-dev-pool # Name of Managed DevOps Pool
   demands:
-  - ImageVersionOverride -equals 2.0.0
+  - ImageVersionOverride -equals 20250427.1.0
 ```
 
 > [!TIP]
