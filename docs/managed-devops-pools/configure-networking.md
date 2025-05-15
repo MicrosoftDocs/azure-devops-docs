@@ -92,7 +92,7 @@ Once the network update completes, newly created resource in the pool will use t
 
 #### [ARM template](#tab/arm/)
 
-If you are using ARM templates, add a `networkProfile` property in the `fabricProfile` section if it doesn't already exist, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet. 
+If you are using ARM templates, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet. 
 
 ```json
 {
