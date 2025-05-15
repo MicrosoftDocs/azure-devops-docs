@@ -6842,9 +6842,10 @@
       "source_path": "docs/boards/work-items/best-tool-add-update-link-work-items.md",
       "redirect_url": "/azure/devops/boards/work-items/about-work-items"
     },
-    {
+        {
       "source_path": "docs/organizations/settings/work/troubleshoot-work-item-form-caching-issues.md",
-      "redirect_url": "/azure/devops/boards/faqs"
+      "redirect_url": "/azure/devops/boards/faqs#caching",
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/boards/extensions/index.md",
