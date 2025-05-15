@@ -104,13 +104,8 @@ pool:
   - ImageVersionOverride -equals 2.0.0
 ```
 
-If your pipelines begin to fail after an image update, you can temporarily configure your pipelines to use the previous version.
-
-1. [Go to your pipeline](../pipelines/create-first-pipeline.md#view-and-manage-your-pipelines), review the [pipeline run history](../pipelines/create-first-pipeline.md#view-pipeline-details), and [view the run details](../pipelines/create-first-pipeline.md#view-pipeline-run-details) for the most recent successful pipeline run.
-1. Choose the pipeline job to view diagnostic information abut that job. If your pipeline has multiple jobs, choose the job that runs using your Managed DevOps Pool.
-1. Choose **Initialize job**, and retrieve the image version from the **Current image version** section.
-1. Add an ImageVersionOverride demand to your pipeline and specify the version from the most recent successful run.
-    If your Managed DevOps Pool uses a [Selected marketplace image]() or an [Azure Compute Gallery image]() with the version set to **latest**, you can update the version in your pool settings.
+> [!TIP]
+> If you think a pipeline is failing due to an image update, follow the procedure in [Troubleshooting - Check to see if there has been an image update](./troubleshooting.md#check-to-see-if-there-has-been-an-image-update).
 
 ## CustomCapabilities
 

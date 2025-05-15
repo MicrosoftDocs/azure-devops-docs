@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 04/28/2025
+ms.date: 05/15/2025
 ---
 
 # Configure Managed DevOps Pools images
@@ -186,6 +186,8 @@ You can choose from the following types of images.
 ## Azure Pipelines images
 
 Managed DevOps Pools provides several preconfigured images that have the same software as selected Microsoft-hosted agents for Azure Pipelines.
+
+If you're cofiguring your images using ARM templates or Azure CLI, you can specify a version in your `wellKnownImageName` setting, for example `"wellKnownImageName": "windows-2022/latest"` or `"wellKnownImageName": "windows-2022/20250427.1.0"`. If you don't specify a version, `latest` is used. If you're configuring your Azure Pipelines image using the Azure portal, `latest` is used.
 
 #### [Azure portal](#tab/azure-portal/)
 
