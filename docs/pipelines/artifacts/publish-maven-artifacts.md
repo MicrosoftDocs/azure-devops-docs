@@ -30,11 +30,7 @@ Using Azure Pipelines, you can publish your Maven artifacts to Azure Artifacts f
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 2. Select **Pipelines**, and then select your pipeline definition. 
 ::: moniker-end
 
@@ -61,11 +57,7 @@ steps:
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 2. Select **Pipelines**, and then select your pipeline definition. 
 ::: moniker-end
 
@@ -83,6 +75,9 @@ steps:
 4. Select **Save & queue** when you're done.   
 
 ---
+
+> [!NOTE]
+> To publish packages to a feed using Azure Pipelines, make sure that both the *Project Collection Build Service* and your project's *Build Service* identities have the **Feed Publisher (Contributor)** role in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
 
 ## Publish packages to a feed in another organization
 
@@ -140,13 +135,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 2. Select **Pipelines**, and then select your pipeline definition. 
 

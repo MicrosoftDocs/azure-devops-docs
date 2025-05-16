@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 08/13/2024
+ms.date: 02/10/2025
 ---
 
 # About permissions and security groups
@@ -21,13 +21,16 @@ In this article, learn about access levels and permissions via inheritance, secu
 
 For an overview of default permissions, see [Default permissions quick reference](permissions-access.md).
 
-For more information, see [Security best practices](security-best-practices.md).
+For more information, see [Security overview](security-overview.md).
 
 ## Access levels 
 
 All Azure DevOps users have an *access level*, which grants or restricts access to specific web portal features.  
 
-There are three main access levels: **Stakeholder**, **Basic**, and **Basic + Test Plans**. Stakeholder access provides free access to an unlimited number of users to a limited set of features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
+There are three main access levels: **Stakeholder**, **Basic**, and **Basic + Test Plans**. 
+
+Stakeholder access provides free access to an unlimited number of users with a limited set of features. Use this access level for users who don’t need paid access.
+Don't use Stakeholder access instead of more limited permissions. Users with a Visual Studio subscription or a GitHub Enterprise license automatically get upgraded from Stakeholder to Basic access when they sign in. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
 To give a user access to Agile portfolio management or test case management features, [change access levels](change-access-levels.md), not permissions. For more information, see [About access levels](access-levels.md).
  
@@ -40,8 +43,6 @@ All users in Azure DevOps belong to one or more default *security groups*. Secur
 - Some permissions get managed through *role-based assignments* (for example, team administrator, extension management, or pipeline resource roles).
 - Administrators can define custom security groups to manage permissions for different functional areas.
 
-For more information, see [Security best practices, Security and user groups](security-best-practices.md#security-and-user-groups).
-
 Managing permissions in Azure DevOps involves two key groups: Project Collection Administrators and Project Administrators.
 
 **Project Collection Administrators:**
@@ -53,7 +54,7 @@ Managing permissions in Azure DevOps involves two key groups: Project Collection
 **Project Administrators:**
 - Operate at the project level.
 - Manage security groups and permissions from the Project settings in the web portal.
-- Contributors handle permissions for specific objects they create within the project.
+- Handle permissions for specific objects contributors create within the project.
 
 ### Permission states 
 
@@ -99,12 +100,12 @@ Permissions follow a hierarchy, allowing inheritance from a parent node or overr
 
 **Object-level inheritance:** 
 
-Object-level permissions, assigned to nodes like areas, iterations, version control folders, and work item query folders, are inherited down the hierarchy.
+Object-level permissions, assigned to nodes like areas, iterations, version control folders, and work item query folders, get inherited down the hierarchy.
 
 **Permission inheritance and specificity rules:**
 
 - Explicit permissions always take precedence over inherited ones.
-- Permissions set at a higher-level node are inherited by all subnodes unless explicitly overridden.
+- Permissions set at a higher-level node get inherited by all subnodes unless explicitly overridden.
 - If a permission isn't explicitly allowed or denied for a subnode, it inherits the permission from its parent.
 - If a permission is explicitly set for a subnode, the parent’s permission isn't inherited, regardless of whether allowed or denied.
 
@@ -171,10 +172,10 @@ Most Azure DevOps users get added to the **Contributors** security group and gra
 ::: moniker range="azure-devops"
 The following security groups are defined by default for each project and organization. You typically add users or groups to the **Readers**, **Contributors**, or **Project Administrators** groups.  
 
-> [!div class="mx-tdBreakAll"]  
-> | Project | Organization or Collection| 
-> |-------------|----------| 
-> |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Project-scoped Users<br/>- Security Service Group | 
+ 
+| Project | Organization or Collection| 
+|-------------|----------| 
+|- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Project-scoped Users<br/>- Security Service Group | 
 
 For a description of each of these groups, see [Security groups, service accounts, and permissions](permissions.md). For default permission assignments made to the most common default security groups, see [Default permissions and access](permissions-access.md). 
 ::: moniker-end
@@ -183,11 +184,11 @@ For a description of each of these groups, see [Security groups, service account
 The following security groups are defined by default for each project and project collection. You typically add users or groups to the **Readers**, **Contributors**, or **Project Administrators** groups.  
 
 Only add service accounts to [Azure DevOps service account groups](/azure/devops/server/admin/service-accounts-dependencies). To understand valid user groups, see [Valid user groups](#valid-user-groups) later in this article.  
+ 
+| Project level | Collection level|
+|-------------|----------| 
+|- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Security Service Group | 
 
-> [!div class="mx-tdBreakAll"]  
-> | Project level | Collection level| 
-> |-------------|----------| 
-> |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Security Service Group | 
 ::: moniker-end
 
 For users tasked with managing project-level features—such as, teams, area and iteration paths, repositories, service hooks, and service end points&mdash;add them to the **Project Administrators** group.
@@ -253,7 +254,7 @@ When you add accounts of users directly to a security group, they automatically 
 - **Project Collection Valid Users:** All members added to an organization-level group.
 - **Project Valid Users:** All members added to a project-level group.
 ::: moniker-end
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 - *Server*\\Azure DevOps Valid Users: All members added to server-level groups.
 - *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
 - *ProjectName*\\Project Valid Users: All members added to project-level groups.
@@ -272,8 +273,6 @@ no members of the group are able to access the project, collection, or deploymen
 ### Project-scoped users group 
 
 By default, users added to an organization can view all organization and project information and settings. These settings include the list of users, the list of projects, billing details, usage data, and more, which you can access through **Organization settings**. 
-
-[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
 
 To restrict specific users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once enabled, any user or group added to the **Project-scoped Users** group is restricted from accessing the **Organization settings** pages, except for **Overview** and **Projects**. Also, they only have access to the projects to which they're added. 
 

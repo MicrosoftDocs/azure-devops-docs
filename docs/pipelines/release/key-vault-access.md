@@ -6,7 +6,7 @@ author: ramiMSFT
 ms.date: 05/02/2024
 ms.service: azure-devops-pipelines
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 zone_pivot_groups: key-vault-access-path
 ---
 
@@ -94,13 +94,13 @@ Start by creating a new service principal, this will enable you to access Azure 
 1. For **Issuer**, paste the following URL replacing the placeholder with your organization GUID. You can find your organization ID by navigating to **Organization settings** > **Microsoft Entra** > Download the list of Azure DevOps organizations connected to your directory.
 
     ```
-    https://vstoken.dev.azure.com/<ORGANIZATION_ID>
+    https://login.microsoftonline.com/<TENANT_ID>/v2.0
     ```
 
 1. For **Subject identifier**, paste the following URL replacing the placeholder with your organization name, project name, and service connection name.
 
     ```
-    sc://ORGANIZATION_NAME/PROJECT_NAME/SERVICE_CONNECTION_NAME
+    ENTRA_PREFIX/sc/ORGANIZATION_NAME/PROJECT_NAME/SERVICE_CONNECTION_NAME
     ```
 
 1. Provide a **Name** for your federated credential, and then select **Add** when you're done.
@@ -128,35 +128,7 @@ Start by creating a new service principal, this will enable you to access Azure 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-## Create a service connection
-
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
-
-1. Select **Project settings** > **Service connections** > **New service connection**.
-
-1. Select **Azure Resource Manager**, name your service connection, and then select **Azure Cloud** for **Environment** and **Subscription** for the **Scope Level**.
-
-1. Enter your **Subscription Id** and your **Subscription Name**.
-
-1. Enter your service principal information, and then select **Verify connection**.
-
-1. Check the **Allow all pipelines to use this connection** checkbox, and then select **Ok** when you're done.
-
-> [!TIP]
-> If you're unable to verify your service principal connection, grant the service principal **Reader** access to your subscription.  
-
-::: moniker-end
-
-
-
-
-
-
 ::: zone pivot="access-from-azure-devops"
-
-
 
 ## Access a private key vault from Azure Devops
 
@@ -239,6 +211,9 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 1. [Find your geography IP V4 ranges](../../organizations/security/allow-list-ip-url.md#inbound-connections).
 
+    > [!IMPORTANT]
+    > For United States inbound connections, make sure to add the IP ranges for **all** US regions.
+
 1. [Configure your key vault](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips) to allow access from static IP ranges.
 
 ## 3 - Query a private key vault with a variable group
@@ -307,13 +282,9 @@ In this second approach, we'll start by querying the IP of the Microsoft-hosted 
 > [!IMPORTANT]
 > Ensure that the service principal you're using to access your key vault from your pipeline holds the **Key vault contributor** role within your key vault's Access control (IAM).
 
-
 ::: zone-end
 
-
-
 ::: zone pivot="access-from-self-hosted-agent"
-
 
 ## Access a private key vault from a self-hosted agent
 
@@ -418,10 +389,7 @@ steps:
     publishLocation: 'Container'
 ```
 
-
 ::: zone-end
-
-
 
 ## Troubleshoot
 

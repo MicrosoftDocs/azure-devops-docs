@@ -17,7 +17,7 @@ Feed views enable developers to share a subset of package-versions with their co
 
 ## Default view
 
-All Artifacts feeds come with three views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. `@local` is the default view that's commonly used in upstream sources.
+All Artifacts feeds come with three views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. `@local` is the default view that's commonly used in upstream sources. You can change the default view in your **Feed Settings** > **Views**, but doing so does not enable direct publishing to that view. Packages can only be published to the base feed, where they will be available in the *@Local* view.
 
 The `@local` view contains all packages published directly to the feed and all packages [saved from upstream sources](upstream-sources.md#save-packages-from-upstream-sources).
 

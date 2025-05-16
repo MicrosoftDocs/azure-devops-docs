@@ -19,9 +19,13 @@ ms.date: 08/05/2024
 
 Learn how to add comments to wiki pages to enhance collaboration among team members.
 
+## Prerequisites
+
+[!INCLUDE [wiki-prerequisites](includes/wiki-prerequisites.md)]
+
 ## Add a comment
 
-You can add a comment at the bottom of any wiki page. Comments get posted on a per-branch basis. For example, if you make a comment on a wiki page on the main branch, it doesn't appear in another published branch of a file of the same name. Comments are stored on the internal database. For more information, see [Data locations for Azure DevOps](../../organizations/security/data-location.md).
+You can add a comment at the bottom of any wiki page. Comments get posted on a per-branch basis. For example, if you make a comment on a wiki page on the main branch, it doesn't appear in another published branch of a file of the same name. Comments get stored on the internal database. For more information, see [Data locations for Azure DevOps](../../organizations/security/data-location.md).
 
 ![Screenshot of Created comment on wiki page.](media/wiki/add-wiki-comment.png)
 

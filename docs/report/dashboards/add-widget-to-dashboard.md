@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 10/25/2024
 ---
 
-
 # Add widgets to a dashboard
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
@@ -22,11 +21,13 @@ Widgets smartly format data to provide access to easily consumable data. You add
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
 You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
 ## Open a dashboard 
 
-All dashboards are associated with a team. You must be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
+All dashboards are associated with a team. Be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
 
 > [!NOTE]  
 > Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all work tracking Analytics widgets are disabled and don't appear in the [widget catalog](widget-catalog.md). If Analytics is disabled or not installed, then all Analytics widgets are disabled. 
@@ -94,16 +95,6 @@ For more information about configuring widgets, see the following articles:
 - [Lead time or cycle time](cycle-time-and-lead-time.md)
 - [Velocity widget](team-velocity.md)
 - [Test trend results](configure-test-results-trend.md)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-For more information about configuring widgets, see the following articles: 
-- [Burndown/burnup](configure-burndown-burnup-widgets.md)
-- [Cumulative flow](cumulative-flow.md)
-- [Lead time or cycle time](cycle-time-and-lead-time.md)
-- [Velocity widget](team-velocity.md)
 
 ::: moniker-end
 

@@ -8,7 +8,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/20/2023
+ms.date: 03/20/2025
 ---
 
 # Develop a web extension
@@ -22,11 +22,10 @@ Use extensions to enhance Azure DevOps with new web experiences, dashboard widge
 
 ## Prerequisites
 
-You must have the following permission and installations.
-
-* You must be an organization owner. If you don't have an organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
-* Install [Node.js](https://nodejs.org).
-* Install the extension packaging tool (TFX). Run `npm install -g tfx-cli` from a command prompt, which you use to [package your extension](../publish/overview.md) later on.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Owner of the organization.|
+|**Tools** |- [Node.js](https://nodejs.org)<br/>- Extension packaging tool: Run `npm install -g tfx-cli` from a command prompt, which you use to [package your extension](../publish/overview.md) later on.|
 
 ## Create a directory and manifest
 
@@ -38,7 +37,7 @@ An extension is composed of a set of files that includes a required manifest fil
    mkdir my-first-extension
    ```
 
-2. From this directory, initialize a new npm package manifest:
+2. Initialize a new npm package manifest from this directory:
    
    ```
    npm init -y
@@ -46,13 +45,13 @@ An extension is composed of a set of files that includes a required manifest fil
 
    This file describes the libraries required by your extension.
 
-3. Install the Microsoft VSS Web Extension SDK package and save it to your npm package manifest:
-   
+3. Install the Azure DevOps Extension SDK package and save it to your npm package manifest:
+
    ```
    npm install azure-devops-extension-sdk --save
    ```
 
-   This SDK includes a JavaScript library that provides APIs required for communicating with the page your extension is embedded in.
+This SDK includes a JavaScript library that provides APIs required for communicating with the page your extension is embedded in.
 
 4. Create an extension manifest file named `vss-extension.json` at the root of your extension directory with the following content:
 
@@ -98,8 +97,8 @@ An extension is composed of a set of files that includes a required manifest fil
     }
     ```
 
-    > [!NOTE]
-    > The `public` property controls whether the extension is visible to everyone on the Visual Studio Marketplace. Keep your extensions private during development.
+   > [!IMPORTANT]
+   > The `public` property controls whether the extension is visible to everyone on the Visual Studio Marketplace. Keep your extensions private during development.
 
 5. Create a file named `my-hub.html` at the root of your extension directory with the following content, which is for the view (also known as a hub) contributed into the web experience.
 
@@ -154,7 +153,8 @@ An extension is composed of a set of files that includes a required manifest fil
     |-- vss-extension.json
     ```
 
-[!INCLUDE [preview](../_data/get-help.md)]
+   [!INCLUDE [preview](../_data/get-help.md)]
+
 ## Next steps
 
 > [!div class="nextstepaction"]

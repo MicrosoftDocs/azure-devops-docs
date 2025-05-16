@@ -22,7 +22,7 @@ They cover actions like creating new [variables](../process/variables.md), marki
 > 
 > We never mask substrings of secrets. If, for example, "abc123" is set as a secret, "abc" isn't masked from the logs.
 > This is to avoid masking secrets at too granular of a level, making the logs unreadable.
-> For this reason, secrets should not contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
+> For this reason, secrets shouldn't contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
 > "bar" isn't masked from the logs.
 
 |Type  |Commands  |
@@ -31,7 +31,6 @@ They cover actions like creating new [variables](../process/variables.md), marki
 |Artifact commands     |   [Associate](#associate-initialize-an-artifact), [Upload](#upload-upload-an-artifact)      |
 |Build commands     |  [AddBuildTag](#addbuildtag-add-a-tag-to-the-build), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [UploadLog](#uploadlog-upload-a-log) |
 |Release commands     |    [UpdateReleaseName](#updatereleasename-rename-current-release)     |
-
 
 ## Logging command format 
 
@@ -67,7 +66,7 @@ Write-Host "##vso[task.setvariable variable=testvar;]testvalue"
 File paths should be given as absolute paths: rooted to a drive on Windows, or beginning with `/` on Linux and macOS.
 
 > [!NOTE]
-> Please note that you can't use the `set -x` command before a logging command when you are using Linux or macOS. See [troubleshooting](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended), to learn how to disable `set -x` temporarily for Bash.
+> Note that you can't use the `set -x` command before a logging command when you're using Linux or macOS. See [troubleshooting](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended), to learn how to disable `set -x` temporarily for Bash.
 
 ## Formatting commands
 
@@ -119,7 +118,7 @@ steps:
 ```
 ---
 
-Those commands will render in the logs like this:
+Those commands render in the logs like this:
 
 ![Screenshot of logs with custom formatting options](media/log-formatting.png)
  
@@ -261,7 +260,6 @@ Set a task as failed. As an alternative, you can also use `exit 1`.
     fi
 ```
 
-
 ### LogDetail: Create or update a timeline record for a task
 
 `##vso[task.logdetail]current operation`
@@ -275,7 +273,7 @@ While customers can add entries to the timeline, they won't typically be shown i
 The first time we see `##vso[task.detail]` during a step, we create a "detail timeline" record for the step. We can create and update nested timeline records base on `id` and `parentid`.
 
 Task authors must remember which GUID they used for each timeline record.
-The logging system will keep track of the GUID for each timeline record, so any new GUID will result a new timeline record.
+The logging system keeps track of the GUID for each timeline record, so any new GUID results a new timeline record.
 
 #### Properties
 
@@ -320,13 +318,13 @@ Sets a variable in the variable service of taskcontext. The first task can set a
 
 When `isSecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables aren't passed into tasks as environment variables and must instead be passed as inputs.
 
-When `isOutput` is set to `true` the syntax to reference the set variable varies based on whether you are accessing that variable in the same job, a future job, or a future stage. Additionally, if `isOutput` is set to `false` the syntax for using that variable within the same job is distinct. See [levels of output variables](../process/set-variables-scripts.md#levels-of-output-variables) to determine the appropriate syntax for each use case.
+When `isOutput` is set to `true` the syntax to reference the set variable varies based on whether you're accessing that variable in the same job, a future job, or a future stage. Additionally, if `isOutput` is set to `false` the syntax for using that variable within the same job is distinct. See [levels of output variables](../process/set-variables-scripts.md#levels-of-output-variables) to determine the appropriate syntax for each use case.
 
-See [set variables in scripts](../process/set-variables-scripts.md) and [define variables](../process/variables.md#set-variables-in-scripts) for more details.
+For more information about output variables, see [set variables in scripts](../process/set-variables-scripts.md) and [define variables](../process/variables.md#set-variables-in-scripts).
 
 #### Properties
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 * `variable` = variable name (Required)
 * `isSecret` = boolean (Optional, defaults to false)
 * `isOutput` = boolean (Optional, defaults to false)
@@ -340,7 +338,7 @@ See [set variables in scripts](../process/set-variables-scripts.md) and [define 
 
 Set the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - bash: |
     echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
@@ -352,7 +350,7 @@ Set the variables:
 
 Read the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - bash: |
     echo "Non-secrets automatically mapped in, sauce is $SAUCE"
@@ -361,12 +359,11 @@ Read the variables:
 ```
 ::: moniker-end
 
-
 # [PowerShell](#tab/powershell)
 
 Set the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - pwsh: |
     Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
@@ -376,10 +373,9 @@ Set the variables:
 ```
 ::: moniker-end
 
-
 Read the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - pwsh: |
     Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
@@ -390,12 +386,11 @@ Read the variables:
 ```
 ::: moniker-end
 
-
 ---
 
 Console output:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```
 Non-secrets automatically mapped in, sauce is crushed tomatoes
 Secrets are not automatically mapped in, secretSauce is 
@@ -405,16 +400,15 @@ Future jobs can also see canned goods
 ```
 ::: moniker-end
 
-
 ### SetSecret: Register a value as a secret
 
 `##vso[task.setsecret]value`
 
 #### Usage
 
-The value is registered as a secret for the duration of the job. The value will be masked out from the logs from this point forward. This command is useful when a secret is transformed (e.g. base64 encoded) or derived.
+The value is registered as a secret for the duration of the job. The value will be masked out from the logs from this point forward. This command is useful when a secret is transformed (for example, base64 encoded) or derived.
 
-Note: Previous occurrences of the secret value will not be masked. 
+Note: Previous occurrences of the secret value won't be masked. 
 
 #### Examples
 
@@ -518,8 +512,7 @@ Upload and attach attachment to current timeline record. These files aren't avai
 
 #### Usage
 
-Upload and attach summary Markdown from a .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary will appear on the **Extensions** tab of your pipeline run. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering. For more information on Markdown syntax, see the [Markdown Guide](https://www.markdownguide.org/basic-syntax/). 
-
+Upload and attach summary Markdown from an .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary appears on the **Extensions** tab of your pipeline run. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering. For more information on Markdown syntax, see the [Markdown Guide](https://www.markdownguide.org/basic-syntax/). 
 
 #### Examples
 
@@ -563,6 +556,8 @@ The updated environment variable will be reflected in subsequent tasks.
 ```
 
 ## Artifact commands
+
+Artifact publishing is not supported in Classic release pipelines.
 
 ### Associate: Initialize an artifact
 
@@ -665,11 +660,9 @@ You can automatically generate a build number from tokens you specify in the [pi
 
 `##vso[build.addbuildtag]build tag`
 
-
 #### Usage
 
 Add a tag for current build. You can expand the tag with a predefined or user-defined variable. For example, here a new tag gets added in a Bash task with the value `last_scanned-$(currentDate)`. You can't use a colon with AddBuildTag. 
-
 
 #### Example
 
@@ -682,7 +675,6 @@ Add a tag for current build. You can expand the tag with a predefined or user-de
         echo "##vso[build.addbuildtag]$last_scanned"
     displayName: 'Apply last scanned tag'
 ```
-
 
 ## Release commands
 

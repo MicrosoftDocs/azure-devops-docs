@@ -2,19 +2,22 @@
 ms.topic: include
 ---
 
-1.  Sign in to your organization (```http://[youraccount].visualstudio.com```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```)
 
-2. From your home page, open your profile. Go to your security details.
+2. From your home page, select :::image type="icon" source="../../../media/icons/user-settings-gear.png" border="false"::: **User settings** > **Profile**.
 
-	**Azure DevOps Services**
+:::moniker range=" azure-devops"
+   
+   :::image type="content" source="../media/my-profile-team-services-preview.png" alt-text="Screenshot shows highlighted Profile button in User settings.":::
 
-	<img alt="TFS home page, open your profile, go to Security" src="/azure/devops/repos/git/media/my-profile-team-services.png" />
+:::moniker-end
 
-    **Azure DevOps Server and TFS (TFS 2017 and later versions)**
+:::moniker range=" < azure-devops"
 
-	<img alt="Go to organization home, open your profile, go to Security" src="/azure/devops/repos/git/media/my-profile-tfs.png" />
+   :::image type="content" source="../media/my-profile-team-services.png" alt-text="Screenshot shows highlighted profile button, User settings.":::
 
-3. Enable alternate authentication credentials for this account. Then provide a secondary username and password.
+:::moniker-end
 
-   ![Enable alternate authentication credentials link on the user profile page](/azure/devops/repos/git/media/enable-alternate-credentials.png)
+3. Enable alternate authentication credentials and then provide secondary credentials.
+
 

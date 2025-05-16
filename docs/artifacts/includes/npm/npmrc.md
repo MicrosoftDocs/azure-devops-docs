@@ -6,7 +6,7 @@ author: ramiMSFT
 ms.date: 09/11/2023
 ---
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 

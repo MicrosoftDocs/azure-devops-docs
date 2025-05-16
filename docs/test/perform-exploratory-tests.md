@@ -18,7 +18,9 @@ ms.date: 09/16/2024
 The **Test & Feedback extension** helps teams perform exploratory testing and provide feedback. 
 Everyone on your team can use the Test & Feedback extension to submit bugs or provide feedback and contribute to the quality of your product.
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
+## Prerequisites
+
+[!INCLUDE [prerequisites-run](includes/prerequisites-run.md)] 
 
 <a name="browser-support"></a>
 
@@ -83,7 +85,7 @@ For more information, see [Visual Studio Marketplace](https://marketplace.visual
    **[Connected mode](connected-mode-exploratory-testing.md)**  
    Available to all users of Azure DevOps:
 
-   - Users with **Basic** access or higher: Full capture and create capabilities
+   - Users with at least **Basic** access: Full capture and create capabilities
      to submit bugs, tasks, and test cases. Includes collaboration capabilities, such as end-to-end traceability, rich insights across completed exploratory sessions, simplified tracking, and triage for bugs and tasks, and more.
    - Users with **Stakeholder** access: Full capture and create capabilities, except for test cases, to submit feedback and respond to feedback requests from the team. 
    - Feedback experience is available only in Azure DevOps.<p />

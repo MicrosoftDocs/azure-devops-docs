@@ -8,16 +8,16 @@ ms.custom:
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2021
+ms.date: 04/04/2025
 ---
 
 # Get started with the REST APIs
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Integrate your app with Azure DevOps using the REST APIs provided in this article.
+Integrate your application with Azure DevOps using the REST APIs provided in this article. These APIs allow you to interact with the services programmatically, enabling you to automate workflows, integrate with other systems, and extend the capabilities of Azure DevOps.
 
-The APIs follow a common pattern, like the following example.
+The APIs follow a common pattern, as shown in the following example:
 
 ```no-highlight
 VERB https://{instance}/{collection}/{team-project}/_apis/{area}/{resource}?api-version={version}
@@ -28,61 +28,64 @@ VERB https://{instance}/{collection}/{team-project}/_apis/{area}/{resource}?api-
 
 ## Azure DevOps Services
 
-For Azure DevOps Services, `instance` is `dev.azure.com/{organization}` and `collection` is `DefaultCollection`, so the pattern looks like the following example.
+For Azure DevOps Services, `instance` is `dev.azure.com/{organization}` and `collection` is `DefaultCollection`, so the pattern looks like the following example:
 
 ```no-highlight
 VERB https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version={version}
 ```
 
-The following example shows how to get a list of projects in an organization.
+The following example shows how to get a list of projects in an organization:
 
 ```dos
 curl -u {username}:{personalaccesstoken} https://dev.azure.com/{organization}/_apis/projects?api-version=2.0
 ```
 
-If you want to provide the personal access token (PAT) through an HTTP header, you must first convert it to a Base64 string. The following example shows how to convert to Base64 using C#.  The resulting string can then be provided as an HTTP header in the format.
+If you want to provide the personal access token (PAT) through an HTTP header, first prepend a colon to the PAT. Then, convert the concatenation of the colon and the PAT to a Base64 string. The following example shows how to convert to Base64 using C#. The resulting string can then be provided as an HTTP header in the format:
 
 ```
-Authorization: Basic BASE64PATSTRING
+Authorization: Basic BASE64COLONANDPATSTRING
 ```
 
-The following example shows C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
+> [!NOTE]
+> Include the colon before the PAT to avoid authentication errors.
+
+The following example shows C# using the [HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118)):
 
 ```cs
 public static async void GetProjects()
 {
-	try
-	{
-		var personalaccesstoken = "PAT_FROM_WEBSITE";
+    try
+    {
+        var personalaccesstoken = "PAT_FROM_WEBSITE";
 
-		using (HttpClient client = new HttpClient())
-		{
-			client.DefaultRequestHeaders.Accept.Add(
-				new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+        using (HttpClient client = new HttpClient())
+        {
+            client.DefaultRequestHeaders.Accept.Add(
+                new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
-			client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
-				Convert.ToBase64String(
-					System.Text.ASCIIEncoding.ASCII.GetBytes(
-						string.Format("{0}:{1}", "", personalaccesstoken))));
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
+                Convert.ToBase64String(
+                    System.Text.ASCIIEncoding.ASCII.GetBytes(
+                        string.Format("{0}:{1}", "", personalaccesstoken))));
 
-			using (HttpResponseMessage response = client.GetAsync(
-						"https://dev.azure.com/{organization}/_apis/projects").Result)
-			{
-				response.EnsureSuccessStatusCode();
-				string responseBody = await response.Content.ReadAsStringAsync();
-				Console.WriteLine(responseBody);
-			}
-		}
-	}
-	catch (Exception ex)
-	{
-		Console.WriteLine(ex.ToString());
-	}
+            using (HttpResponseMessage response = client.GetAsync(
+                        "https://dev.azure.com/{organization}/_apis/projects").Result)
+            {
+                response.EnsureSuccessStatusCode();
+                string responseBody = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(responseBody);
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.ToString());
+    }
 }
 ```
-<br />
 
-Most of our samples use PATs, as they're a compact example for authenticating with the service.  However, there are various authentication mechanisms available for Azure DevOps Services including Microsoft Authentication Library (MSAL), OAuth, and Session Tokens.  For more information, see [Authentication guidance](../get-started/authentication/authentication-guidance.md), to help you determine which one is best suited for your scenario.
+> [!IMPORTANT]
+> While we use personal access tokens (PATs) in many examples for simplicity, we don't recomment using them for production applications. Instead, consider using more secure authentication mechanisms. For more information, see [Authentication guidance](../get-started/authentication/authentication-guidance.md).
 
 ## Azure DevOps Server
 
@@ -106,43 +109,43 @@ These examples use PATs, which require that you [create a PAT](../../organizatio
 
 ## Responses
 
-You should get a response like this.
+You should get a response like the following example:
 
 ```json
 {
     "value": [
         {
-            "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+            "id": "00000000-0000-0000-0000-000000000000",
             "name": "Fabrikam-Fiber-TFVC",
-            "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+            "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/00000000-0000-0000-0000-000000000000",
             "description": "TeamFoundationVersionControlprojects",
             "collection": {
-                "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "id": "00000000-0000-0000-0000-000000000000",
                 "name": "DefaultCollection",
-                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projectCollections/00000000-0000-0000-0000-000000000000",
                 "collectionUrl": "https: //dev.azure.com/fabrikam-fiber-inc"
             },
             "defaultTeam": {
-                "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
+                "id": "00000000-0000-0000-0000-000000000000",
                 "name": "Fabrikam-Fiber-TFVCTeam",
-                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/00000000-0000-0000-0000-000000000000/teams/00000000-0000-0000-0000-000000000000"
             }
         },
         {
-            "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+            "id": "00000000-0000-0000-0000-000000000000",
             "name": "Fabrikam-Fiber-Git",
-            "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+            "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/00000000-0000-0000-0000-000000000000",
             "description": "Gitprojects",
             "collection": {
-                "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "id": "00000000-0000-0000-0000-000000000000",
                 "name": "DefaultCollection",
-                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projectCollections/00000000-0000-0000-0000-000000000000",
                 "collectionUrl": "https: //dev.azure.com/fabrikam-fiber-inc"
             },
             "defaultTeam": {
-                "id": "8bd35c5e-30bb-4834-a0c4-d576ce1b8df7",
+                "id": "00000000-0000-0000-0000-000000000000",
                 "name": "Fabrikam-Fiber-GitTeam",
-                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/00000000-0000-0000-0000-000000000000/teams/00000000-0000-0000-0000-000000000000"
             }
         }
     ],
@@ -218,7 +221,7 @@ Response | Notes
 201      | Success, when creating resources. Some APIs return 200 when successfully creating a resource. Look at the docs for the API you're using to be sure.
 204      | Success, and there's no response body. For example, you get this response when you delete a resource.
 400      | The parameters in the URL or in the request body aren't valid.
-401      | Authentication failed.  Often, this response is because of a missing or malformed Authorization header.
+401      | Authentication failed. Often, this response is because of a missing or malformed Authorization header.
 403      | The authenticated user doesn't have permission to do the operation.
 404      | The resource doesn't exist, or the authenticated user doesn't have permission to see that it exists.
 409      | There's a conflict between the request and the state of the data on the server. For example, if you attempt to submit a pull request and there's already a pull request for the commits, the response code is 409.
@@ -241,7 +244,7 @@ Azure DevOps Services supports CORS, which enables JavaScript code served from a
     });
 ```
 
-(replace `myPatToken` with a personal access token) 
+Replace `myPatToken` with a PAT. 
 
 <a name="versions"></a>
 

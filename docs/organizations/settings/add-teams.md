@@ -24,24 +24,28 @@ Each new project includes a default team named after the project that you can re
 
 To maintain Agile practices while scaling teams, review [Scale Agile to Large Teams](/devops/plan/scaling-agile). For more information on team-configurable tools, see [About teams and Agile tools](about-teams-and-settings.md).
 
-
 > [!NOTE]
 > This article explains how to add teams or team members to an Azure DevOps project. For information on Microsoft Teams or integrating it with Azure Boards, see [Welcome to Microsoft Teams](/microsoftteams/teams-overview) or [Use the Azure Boards app in Microsoft Teams](../../boards/integrations/boards-teams.md).
 >
 > To move work items between teams, see [Move work items from one team to another](../../boards/work-items/move-work-items.md).
 
-## Prerequisites 
+## Prerequisites
 
 ::: moniker range="azure-devops"
-- **Permissions**: 
-  - To create a team or set the default team, you must be a member of the [Project Administrators](../security/change-project-level-permissions.md) group. Only members of the Project Administrators group can add and delete teams.   
-  - To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group.
-- **Azure CLI**: To use Azure CLI commands, install Azure CLI as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
+
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the **Project Administrators** security group.<br>- To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group. |
+|**Tools**| To use Azure CLI commands: [Azure DevOps CLI](../../cli/index.md).|  
+
 ::: moniker-end
+
 ::: moniker range="< azure-devops"
-**Permissions**: 
-- To create a team or set the default team, you must be a member of the [Project Administrators](../security/change-project-level-permissions.md) group. Only members of the Project Administrators group can add and delete teams.   
-- To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group.
+
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the **Project Administrators** security group.<br>- To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group. |
+
 ::: moniker-end 
 
 <a id="add-team"> </a>  
@@ -119,13 +123,13 @@ Select the **Current UI** tab. The New Teams Page UI is only available for Azure
 
 5. Select the team to add team administrators, team members, configure iterations and areas. The Team Profile opens.   
 	
-  From the team profile, you can do the following tasks:  
+  From the team profile, you can do the following tasks:
 	- [Add and remove team administrators](add-team-administrator.md)
 	- [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
 	- [Set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
-	- [Define area paths and assign to a team](set-area-paths.md)  
-	- [Define iteration paths, also known as sprints, and configure team iterations](set-iteration-paths-sprints.md).  
- 
+	- [Define area paths and assign to a team](set-area-paths.md)
+	- [Define iteration paths, also known as sprints, and configure team iterations](set-iteration-paths-sprints.md)
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="add-team-cli"></a> 
@@ -258,7 +262,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 
 #### [Current UI](#tab/current-page) 
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="<=azure-devops"
 1. Open **Project settings > Teams** as indicated in the previous section. 
 ::: moniker-end
  
@@ -271,7 +275,6 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 ::: moniker range="azure-devops" 
 There isn't an Azure CLI command to set the default team project. 
 ::: moniker-end 
-
 
 [!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 

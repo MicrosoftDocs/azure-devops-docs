@@ -13,16 +13,13 @@ ms.date: 10/21/2024
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]
-> Azure DevOps OAuth is slated for deprecation in 2026. This information is for existing Azure DevOps OAuth apps only. To create new apps, use [Microsoft Entra ID OAuth](entra-oauth.md) to integrate with Azure DevOps. Starting February 2025, we will stop accepting new Azure DevOps OAuth apps. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
+> Azure DevOps OAuth is slated for deprecation in 2026. This information is for existing Azure DevOps OAuth apps only. To create new apps, use [Microsoft Entra ID OAuth](entra-oauth.md) to integrate with Azure DevOps. Starting April 2025, we stop accepting new Azure DevOps OAuth apps. [Learn more in our blog post](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
 Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of OAuth 2.0 lets developers authorize their app for users and get access tokens for Azure DevOps resources.
 
 ## Get started with Azure DevOps OAuth
 
 ### 1. Register your app
-
-> [!IMPORTANT]
-> New app creation will be blocked starting February 2025.
 
 1. Go to `https://app.vsaex.visualstudio.com/app/register` to register your app.
 
@@ -32,7 +29,7 @@ Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of O
 
    The application settings page displays.
 
-   :::image type="content" source="media/app-settings-new.png" alt-text="Screenshot showing Applications settings for your app.":::
+   :::image type="content" source="media/app-page.png" alt-text="Screenshot showing Applications settings for your app.":::
 
    - When Azure DevOps Services presents the authorization approval page to your user, it uses your company name, app name, and descriptions. It also uses the URLs for your company web site, app website, and terms of service and privacy statements.
 
@@ -219,11 +216,23 @@ You can find a C# sample that implements OAuth to call Azure DevOps Services RES
 
 ## Regenerate client secret
 
-Every five years, your application secret expires. Regenerate your app secret to continue to create and use access tokens and refresh tokens. To do so, select "Regenerate secret," which then confirms that you want to complete this action.
+Application secrets regularly expire every 60 days (as of March 2025). You may have two secrets at any time. Continue to create and use access tokens and refresh tokens by rotating your soon-to-expire app secret with a new application secret. This can be done on the app's registration page on the [Visual Studio profile](https://aex.dev.azure.com/me) or through the [Registration Secret APIs](/rest/api/azure/devops/delegatedauth/registration-secret). To use the APIs, you must use an [Entra access token](entra-oauth.md) with the `vso.tokens` [scope](oauth.md#scopes).
+
+1. Create a secondary secret by selecting **"Generate Secret"** for "Secret 2". (Use the [Create Registration Secret API](/rest/api/azure/devops/delegatedauth/registration-secret/create).)
+
+:::image type="content" source="media/app-page-new-secret.png" alt-text="Screenshot of app page with secondary secret already generated.":::
+   
+2. Next, confirm in the modal that you want to complete this action.
 
 :::image type="content" source="media/secret-regeneration-modal.png" alt-text="Screenshot confirming secret regeneration.":::
 
-When you confirm that you want to regenerate, the previous app secret no longer works and all previous tokens minted with this secret also stop working. Make sure to time this client secret rotation well to minimize any customer downtime.
+3. Update your app to use the new Secret #2 before Secret #1 expires. By managing two secrets at once, there is no downtime for your users as a result of expiring secrets. 
+
+4. Secret #1 naturally expires and all previous tokens cease to work.
+   
+5. When it's time to rotate a soon-to-expire Secret #2, you can repeat this process by regenerating Secret #1 and using the regenerated Secret #1 in place of Secret #2. (Use the [Rotate Registration Secret API](/rest/api/azure/devops/delegatedauth/registration-secret/rotate-secret).)
+
+If secrets are leaked, you can quickly revoke the secret by clicking "Regenerate Secret". Once you confirm that you want to regenerate, the previous app secret no longer works and all previous tokens minted with this secret also stop working. Use the dual secrets rotation method to minimize downtime while revoking the leaked secret through regeneration.
 
 ## Delete your app
 

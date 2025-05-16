@@ -7,8 +7,8 @@ ms.custom: work-items, github, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2019'
-ms.date: 10/02/2024
+monikerRange: "<=azure-devops"
+ms.date: 04/23/2025
 ---
 
 # Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards
@@ -21,9 +21,10 @@ In this article, learn how to link work items to GitHub commits, pull requests, 
 
 ## Prerequisites 
 
-- **Project connection:** Ensure your Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to/from exist. For more information, see [Azure Boards-GitHub integration](index.md).
-
-- **Permissions:** Be a **Contributor** to both the Azure Boards project and the GitHub repository.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | **Contributor** to both the Azure Boards project and the GitHub repository. |
+| **Project connection** | Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to or from exist. For more information, see [Azure Boards-GitHub integration](index.md). |
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
@@ -34,24 +35,26 @@ In this article, learn how to link work items to GitHub commits, pull requests, 
 
 From a GitHub commit, pull request or issue, use the following syntax to create a link to your Azure Boards work item. Enter the `AB#ID` within the text of a commit message. Or, for a pull request or issue, enter the `AB#ID` within the title or description. Using `AB#ID` in a comment doesn't create a link on the work item.
 
-::: moniker range="azure-devops-2019"
-> [!NOTE]   
-> Linking to GitHub issues requires Azure DevOps Server 2019 Update 1 or later version. 
-::: moniker-end
-
 ```
 AB#{ID}
 ```
 
 For example, `AB#125` links to work item ID 125.
 
-You can also enter a commit or pull request message to transition the work item. The system recognizes `fix`, `fixes`, and `fixed`, and applies it to the #-mention item that follows. Mentioned work items transition to the first **State** associated with the *Resolved* workflow category state. If no **State** is associated with *Resolved*, the work item transitions to the **State** associated with the *Completed* workflow category state. For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
+You can also enter a commit or pull request message to transition the work item. The system recognizes `{state}` or `{state category}`, along with `fix`, `fixes`, `fixed`, and applies it to the #-mention item that follows. 
+
+When a pull request description includes a valid state name, for example, ``Closed AB#1234``, the system updates the referenced work item to that specific state. If the state name isn’t recognized directly, Azure Boards tries to match it to a workflow category like ``Resolved`` or ``Completed``. If a match is found, the work item transitions to the first available state defined under that category.
+
+By default, work items referenced with ``fix``, ``fixes``, or ``fixed`` transitions to the first state associated with the **Resolved** category. If no such state exists in the current process, the system instead transitions the work item to the first state in the **Completed** category.
+
+For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
 
 Review the following table of examples:
 
 | Commit or pull request message              | Action |
 | :------------------------------------------ | :----------------------------------------------- |
 | `Fixed AB#123`                              | Links and transitions the work item to the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
+| `Closed AB#123`                             | Links and transitions the work item to the *Closed* workflow state. If none is defined, no transitions are made. 
 | `Adds a new feature, fixes AB#123.`         | Links and transitions the work item to  the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
 | `Fixes AB#123, AB#124, and AB#126`          | Links to Azure Boards work items 123, 124, and 126. Transitions only the first item, 123 to the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category.|
 | `Fixes AB#123, Fixes AB#124, Fixes AB#125` | Links to Azure Boards work items 123, 124, and 126. Transitions all items to   either the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
@@ -88,11 +91,6 @@ To create a GitHub branch directly from a work item, do these steps:
 
 ## Add work item link to GitHub branch, commit, or pull request
 
-::: moniker range="azure-devops-2019"
-> [!NOTE]   
-> Linking to a GitHub issue requires Azure DevOps Server 2019 Update 1 or later version. 
-::: moniker-end
-
 1. Open the work item and go to the **Links** tab.
 
    :::image type="content" source="media/link/add-link-from-links-tab.png" alt-text="Screenshot of work item form, Links tab, Add link to issue.":::
@@ -111,6 +109,16 @@ To create a GitHub branch directly from a work item, do these steps:
 > There's a delay when completing the AB# links if you are using Azure DevOps Server and GitHub Enterprise Server. We have a 'push-and-pull' design to pull from the GitHub events every hour on the incremental changes on Commit, PR, and Issue.
 
 ::: moniker-end
+
+## Automatic link updates
+
+Several events automatically update the links on the work item form, so you don’t need to create them manually. These include:
+
+| GitHub event       | Action |
+| :----------------- | :----------------------------------------------------------- |
+| **Link to branch** | When a pull request is created from a branch, it is automatically linked to the work item. |
+| **Merge commit**   | After the pull request is merged, the resulting merge commit is automatically linked to the work item. |
+| **Delete branch**  | If the branch is deleted (typically after merging), its link is automatically removed from the work item. |
 
 ## View or open links from the Development section
 

@@ -8,7 +8,7 @@ ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
 author: chcomley
 ms.date: 10/23/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Remove users from Azure DevOps  
@@ -56,33 +56,6 @@ If users no longer require access to a team, project, or organization, you can r
 6. If you deleted paid users with Basic or higher features, [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-with-no-access) to avoid charges in your next Azure billing cycle.
 
 To reduce or cancel users for the next month, make updates before the last day of the current month. Your bill reflects these changes in the following month, as paid users get billed monthly.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
-
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-
-    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Users**.
-
-    ![Screenshot showing selected Users button in organization settings.](../../media/settings/open-organization-settings-users-vert.png)
-
-4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**. If this option isn't available, see the [prerequisites](#prerequisites).
-
-   ![Screenshot showing removal of user from organization.](media/delete-user/remove-user-from-organization-new.png)
-
-5. Choose **Remove** in the confirmation dialog.
-
-6. To confirm that you removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
-
-7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-with-no-access). Then you're not charged in your next Azure billing cycle.
-
-To reduce or cancel users for the next month, make updates before the last day of the current month.
-Your bill doesn't reflect the changes until the next month because paid users are monthly purchases.
 
 ::: moniker-end
 

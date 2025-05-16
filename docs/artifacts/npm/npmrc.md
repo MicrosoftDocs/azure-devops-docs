@@ -5,7 +5,7 @@ ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: conceptual
-ms.date: 05/20/2024
+ms.date: 03/13/2025
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to manage their packages from various sources, including both public registries like npmjs.com and private feeds. To authenticate with Azure Artifacts, you'll need to configure your npm config file. This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The *.npmrc* file is typically located in the user's home directory but can also be created at the project level to override default settings.
+Azure Artifacts enables developers to manage their packages from various sources, including both public registries like npmjs.com and private feeds. To authenticate with Azure Artifacts, you'll need to configure your npm config file. This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The *npmrc* file is typically located in the user's home directory but can also be created at the project level to override default settings.
 
 ## Prerequisites
 
@@ -30,9 +30,9 @@ Azure Artifacts enables developers to manage their packages from various sources
 
 Azure Artifacts recommends using two separate configuration files. The first is dedicated to authenticating with Azure Artifacts, while the second should be kept locally to store your credentials. This approach allows you to share your configuration file while keeping your credentials secure.
 
-To set up the second file, simply place it in your home directory on your development machine and include all your registry credentials. This enables the npm client to easily access your credentials for authentication.
+To set up the second file, place it in your home directory on your development machine and include all your registry credentials. This enables the npm client to easily access your credentials for authentication.
 
-The following steps will guide you through setting up the first configuration file:
+The following steps guide you through setting up the first configuration file. Select the tab that corresponds to your development environment:
 
 ::: moniker range="< azure-devops"
 
@@ -57,7 +57,7 @@ The following steps will guide you through setting up the first configuration fi
 
     :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot showing how to set up your npm project.":::
 
-### [Other](#tab/other/)
+### [Linux/macOS](#tab/Linuxmac/)
 
 1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the following snippet into it. 
 
@@ -131,7 +131,7 @@ The following steps will guide you through setting up the first configuration fi
 
    :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1.":::
 
-### [Other](#tab/other/)
+### [Linux/macOS](#tab/Linuxmac/)
 
 1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the following snippet into it. 
 
@@ -198,7 +198,7 @@ The following steps will guide you through setting up the first configuration fi
 
    :::image type="content" source="../media/npm-project-setup-server-2020-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2020.1.":::
 
-### [Other](#tab/other/)
+### [Linux/macOS](#tab/Linuxmac/)
 
 1. Add a *.npmrc* file in your project's directory, in the same directory as your package.json file, and paste the following snippet into it:
 
@@ -207,6 +207,10 @@ The following steps will guide you through setting up the first configuration fi
                         
     always-auth=true
     ```
+
+> [!NOTE]
+> For Debian, Ubuntu, and other community or entreprise distributions such as Fedora or Redhat make sure you've installed the prerequisites from the [NodeSource distributions repository](https://github.com/nodesource/distributions).
+
 ### Setup credentials
 
 1. Copy the following snippet and paste it into your user-level *.npmrc* file:
@@ -251,87 +255,8 @@ The following steps will guide you through setting up the first configuration fi
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **Connect to feed**.
- 
-    :::image type="content" source="../media/server-2019-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2019.1.":::
-
-1. A new window will appear. From the left-hand navigation pane, select **npm**.
-
-1. Follow the provided instructions to configure your **project** and **user** .npmrc files.
-
-   :::image type="content" source="../media/npm-project-setup-server-2019-1.png" alt-text="A screenshot showing how to set up your project-level and user-level npmrc files in Azure DevOps Server 2019.1.":::
-
-::: moniker-end
-
 > [!TIP]
 > Using multiple registries in .npmrc files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
-
-## Pipeline authentication
-
-To authenticate with your pipeline, Azure Artifacts recommends using the [npm authenticate task](/azure/devops/pipelines/tasks/reference/npm-authenticate-v0). 
-
-When using task runners such as gulp or Grunt, it's to prioritize setting your *npm authenticate task* at the beginning of your pipeline. This step guarantees that your credentials are injected into your project's .npmrc file and retained throughout the pipeline run, enabling subsequent steps to access the credentials in the configuration file.
-
-### [Classic](#tab/classic)
-
-::: moniker range="azure-devops-2020 || azure-devops-2022 || azure-devops"
-
-1. Navigate to your project, select **Pipelines**, and then select your pipeline definition.
-
-2. Select **Edit** to modify your pipeline.
-
-3. Select `+` to add a new task to your pipeline.
-
-    :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png" alt-text="Screenshot showing how to add the npm authenticate task to your pipeline.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Navigate to your project, select **Pipelines** > **Builds**, and then select your build definition.
-
-2. Select **Edit** to modify your build pipeline.
-
-3. Select `+` to add a new task to your build pipeline.
-
-    :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png" alt-text="Screenshot showing how to add the npm authenticate task to your pipeline.":::
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
-4. Search for the **npm Authenticate** task, and then select **Add**.
-
-    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-phase-newnav.png" alt-text="Screenshot showing the npm authenticate task added to the pipeline.":::
-
-5. Select your *.npmrc* file, and then select **Save & queue** when you're done.
-
-    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to add your *.npmrc* file.":::
-
-::: moniker-end
-
-### [YAML](#tab/yaml)
-
-```yaml
-- task: npmAuthenticate@0
-  inputs:
-    workingFile: .npmrc                ## Path to the npmrc file
-    customEndpoint: #Optional          ## Comma-separated list of npm service connection names for registries from external organizations. For registries in your org, leave this blank
-```
-
-* * *
-
-> [!NOTE]
-> To access your feed from your pipeline, make sure that the build service role is set to **Feed And Upstream Reader (Contributor)** in your **Feed settings** > **Permissions**.
-
-:::image type="content" source="../media/project-collection-contributor.png" alt-text="A screenshot showing the build service roles in feed settings.":::
-
-> [!NOTE]
-> If your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. See [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md) for details.
 
 ::: moniker range="azure-devops"   
 
@@ -375,14 +300,16 @@ Follow these steps to reset your vsts-npm-auth credentials:
     npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
     ```
 
-::: moniker-end
-
 #### Unable to publish
 
-If you encounter a 403 error, it may indicate a name conflict. In Azure Artifacts, packages are immutable, meaning that once you publish a package to your feed, its version number is permanently reserved. Even if you delete it, you cannot publish a new package with the same version number. To address this issue, update the package version in your *package.json* file, and then try again.
+If you encounter a 403 error, it may indicate a name conflict. In Azure Artifacts, packages are immutable, meaning that once you publish a package to your feed, its version number is permanently reserved. Even if you delete it, you can't publish a new package with the same version number. To address this issue, update the package version in your *package.json* file, and then try again.
 
-## Related articles
+::: moniker-end
 
-- [Publish and restore npm packages (CLI)](./publish.md)
+## Related content
+
+- [Publish npm packages (CLI)](./publish.md)
+
 - [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md)
+
 - [Use packages from npmjs.com](./upstream-sources.md)

@@ -28,19 +28,31 @@ For more information, see the [Stakeholder access quick reference](stakeholder-a
 
 ## Prerequisites
 
-**Private project:** 
-- **Access levels**: Have **Stakeholder** access.
-  ::: moniker range="azure-devops"
-   To get access as a Stakeholder, ask your organization owner or Project Collection Administrator to add you to a project with Stakeholder access. For more information, see [Add organization users and manage access](../accounts/add-organization-users.md).
-   ::: moniker-end
-   ::: moniker range="< azure-devops"
-   To get access as a Stakeholder, ask your server administrator to add you to a security group that has Stakeholder access. For more information, see [Change access levels](change-access-levels.md).
-   ::: moniker-end    
-- **Permissions**: Be a member of the **Contributors** or **Project Administrators** group. You can view boards, open and modify work items, and add child tasks to a checklist. You can't reorder or reparent a backlog item by using the drag-and-drop method. You can't update a field on a card.
+::: moniker range="azure-devops"
 
-**Public project:** 
-- **Access levels**: Have **Stakeholder** access.
-- **Permissions**: Be a member of the **Contributors** or **Project Administrators** group to have full access to all Azure Boards features. For more information, see [Default permissions quick reference](../security/permissions-access.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Private project:** | |
+| **Access levels** | **Stakeholder** access. To get access as a Stakeholder, ask your organization owner or Project Collection Administrator to add you to a project with Stakeholder access. For more information, see [Add organization users and manage access](../accounts/add-organization-users.md). |
+| **Permissions** | Member of the **Contributors** or **Project Administrators** group. You can view boards, open and modify work items, and add child tasks to a checklist. You can't reorder or reparent a backlog item by using the drag-and-drop method. You can't update a field on a card. |
+| **Public project:** | |
+| **Access levels** | **Stakeholder** access. |
+| **Permissions** | Member of the **Contributors** or **Project Administrators** group for full access. For more information, see [Default permissions quick reference](../security/permissions-access.md). |
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+| Category | Requirements |
+|--------------|-------------|
+| **Private project:** | |
+| **Access levels** | **Stakeholder** access. To get access as a Stakeholder, ask your server administrator to add you to a security group that has Stakeholder access. For more information, see [Change access levels](change-access-levels.md). |
+| **Permissions** | Member of the **Contributors** or **Project Administrators** group. You can view boards, open and modify work items, and add child tasks to a checklist. You can't reorder or reparent a backlog item by using the drag-and-drop method. You can't update a field on a card. |
+| **Public project:** | |
+| **Access levels** | **Stakeholder** access. |
+| **Permissions** | Member of the **Contributors** or **Project Administrators** group for full access. For more information, see [Default permissions quick reference](../security/permissions-access.md). |
+
+::: moniker-end
 
 ## Sign in to a project
 
@@ -91,7 +103,7 @@ After you connect to a project, you can view work items.
    :::image type="content" source="../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot that shows the menu to select the product backlog level option of Backlog items, Stories, Issues, or Requirements.":::
 
 ::: moniker-end
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. In your project, select **Boards** > **Boards**. From the dropdown menu, select a team board.
 
@@ -208,7 +220,7 @@ The list of backlog items appears in priority order. You can add a backlog item,
 
 ## Find work items
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Select **Boards** > **Work Items**. Then select an option from the dropdown menu. For example, select **Assigned to me**.
 

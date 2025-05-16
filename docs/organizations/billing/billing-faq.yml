@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/14/2024
+  ms.date: 03/05/2025
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -82,7 +82,7 @@ sections:
       - question: |
           Q: How did paid extensions change in the Azure DevOps Marketplace in July 2019?
         answer: |
-          A: Microsoft ended support for purchasing third party paid Azure DevOps extensions through your Azure bill on July 1, 2019. We're encouraging our publishers to offer paid access to their services directly.
+          A: Microsoft ended support for purchasing non-Microsoft paid Azure DevOps extensions through your Azure bill on July 1, 2019. We're encouraging our publishers to offer paid access to their services directly.
 
       - question: |
           Q: How do I pay for Azure DevOps Server through Azure?
@@ -102,14 +102,14 @@ sections:
           **Buy Azure DevOps Basic or Basic + Test Plans for anyone else**
           1. [Create an Azure DevOps organization](/azure/devops/organizations/accounts/create-organization) or select one you already use.
           2. [Set up billing](/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for the organization.
-          3. [Add users who need access](/azure/devops/organizations/billing/buy-basic-access-add-users) to Azure DevOps server, assigning them Basic or Basic + Test Plans.
+          3. [Add users who need access](/azure/devops/organizations/billing/buy-basic-access-add-users) to Azure DevOps Server, assigning them Basic or Basic + Test Plans.
           
-          Each organization includes five free Basic users, which doesn't include a CAL. Add five users who won’t use the server to ensure you’re paying for everyone who needs a server CAL.
+          Each organization includes five free Basic users and doesn't include a CAL. Add five non-users to the server to ensure you’re paying for everyone who needs a server CAL.
           
       - question: |
           Q: How do I pay for Azure DevOps support?
         answer: |
-          A: If you're already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/). Also, you don't need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). Report a service outage from our [service status page](https://status.dev.azure.com/). 
+          A: If you're already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/). Also, you don't need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
            
           If you need technical support with Azure DevOps and don't have an [Azure support plan](https://azure.microsoft.com/support/plans/) already, complete the following steps:
            
@@ -141,7 +141,7 @@ sections:
         answer: |
           A: You can buy Azure DevOps with most Azure subscriptions. We support Azure subscriptions connected to your
           [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/), Azure subscriptions set up by
-          Cloud Solution Providers (CSPs), through Microsoft Open License resellers, and Pay-As-You-Go.
+          Cloud Solution Providers (CSPs), through Microsoft Open License resellers, and pay-as-you-go.
           
           The only notable exclusion is that you can't use the [Azure free trial](https://azure.microsoft.com/pricing/free-trial/), Government, or National cloud subscriptions.
 
@@ -175,7 +175,7 @@ sections:
       - question: |
           Q: Does multi-organization billing make sense for all customers?
         answer: |
-          A: No. For example, with the default assignment-based billing, each organization gets five free Basic users. When you change to multi-organization billing the Azure subscription gets five free Basic users, to be shared amongst all the organizations linked to it. When most users access only one organization, then five free users are most cost effective. If many users access multiple organizations, then multi-organization billing might be the best option. 
+          A: No. For example, with the default assignment-based billing, each organization gets five free Basic users. When you change to multi-organization billing the Azure subscription gets five free Basic users, to be shared among all the organizations linked to it. When most users access only one organization, then five free users are most cost effective. If many users access multiple organizations, then multi-organization billing might be the best option. 
           
       - question: |
           Q: Do I have to turn on multi-organization billing for each of my organizations?
@@ -202,9 +202,9 @@ sections:
           - If there are any charges for an organization, then there's a separate line item for that organization on the detailed Azure bill. 
            
       - question: |
-          Q: Can I tell what access level a user's assigned to in a different organization?
+          Q: Can I tell what access level a user has in a different organization?
         answer: |
-          A: No. User assignments apply to each organization independently. Administrators can't tell whether a user they're adding already has an access level that's assigned in another organization.  
+          A: No. User assignments apply to each organization independently. Administrators can't tell whether a user they're adding already has an access level assigned in another organization.  
            
       - question: |
           Q: What if a user is assigned Basic in one organization and Basic + Test Plans in another?
@@ -290,6 +290,11 @@ sections:
           A: No, you can't move the organization resource that appears in the Azure portal between Azure subscriptions via the Azure portal. But you can move it between subscriptions by [changing the subscription](change-azure-subscription.md) your organization uses for billing. When you change the subscription, a new resource group gets created for your organization. You can then safely delete the old resource group.
           
       - question: |
+          Q: Why don't I see a resource representing my Azure DevOps organization? 
+        answer: |
+          A: If you [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing), but don't see your organization represented as an Azure resource, you might have an Azure policy that requires tags on new Resource Groups. Azure DevOps creates a new resource group without tags for the organization resource. Azure DevOps billing works with or without the organization resource. To enable Azure DevOps to create the organization resource, temporarily disable the Azure tag policy before you set up billing. Once the resource gets created, reenable the policy. For more information, see [Assign policy definitions for tag compliance](/azure/azure-resource-manager/management/tag-policies).
+      
+      - question: |
           Q: Can I move between resource groups? 
         answer: |
           A: No, the organization resource is created in its own resource group with a predefined naming convention. If you need to know what Azure DevOps organization is in the resource group, create an organization name tag and make it a column in the Resource Groups view. 
@@ -338,7 +343,7 @@ sections:
       - question: |
           Q: How are user charges and CI/CD concurrent job charges processed?
         answer: |
-          A: Charges are metered daily to the Azure subscription you selected when you set up billing. Charges accumulate and are included on the next Azure bill you receive.
+          A: Charges get calculated daily to the Azure subscription you selected when you set up billing. Charges accumulate and are included on the next Azure bill you receive.
           
       - question: |
           Q: How do reductions or cancellations work?
@@ -367,12 +372,12 @@ sections:
       - question: |
           Q: Can I use an Enterprise Agreement to buy Azure DevOps?
         answer: |
-          A: Yes, you can. You need to be an owner or contributor for an Azure subscription that's created for your EA.
+          A: Yes, you can. You need to be an owner or contributor for an Azure subscription created for your EA.
        
       - question: |
           Q: How can I tell whether I have the necessary privileges to buy services through my organization's Enterprise Agreement?
         answer: |
-          A: The easiest approach to determine if you have the right privileges is to [set up billing](/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for your organization. Select an Azure subscription, which is a billing account, from a presented list of Azure subscriptions linked to your sign-in credentials. Since the name of your Azure subscription defaults to the type of billing account, it's often clear whether the Azure subscription is part of your Enterprise Agreement. For example, you can name subscriptions, "Pay-As-You-Go" or "Enterprise Agreement."
+          A: The easiest approach to determine if you have the right privileges is to [set up billing](/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs) for your organization. Select an Azure subscription, which is a billing account, from a presented list of Azure subscriptions linked to your sign-in credentials. Since the name of your Azure subscription defaults to the type of billing account, it's often clear whether the Azure subscription is part of your Enterprise Agreement. For example, you can name subscriptions, "pay-as-you-go" or "Enterprise Agreement."
           
           Another approach is to try to visit the [Azure Enterprise Portal](https://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization owner role. Only organization owners can set up new Azure billing in an Enterprise Agreement. 
           

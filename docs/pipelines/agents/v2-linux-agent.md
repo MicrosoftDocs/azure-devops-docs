@@ -19,8 +19,6 @@ monikerRange: '<= azure-devops'
 
 :::moniker-end
 
-
-
 To run your jobs, you need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu and Red Hat.
 
 > Before you begin:
@@ -80,10 +78,7 @@ You can install those dependencies on supported Linux platforms by running `./bi
 > 
 > For issues with dependencies installation (like 'dependency was not found in repository' or 'problem retrieving the repository index file') - you can reach out to distribution owner for further support.
 
-
 ::: moniker-end
-
-
 
 ### Subversion
 
@@ -143,7 +138,7 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 ### Azure DevOps Server 2019 and Azure DevOps Server 2020
 
@@ -167,9 +162,6 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-
-
-
 ### Server URL
 
 ::: moniker range="azure-devops"
@@ -177,15 +169,6 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-Azure DevOps Server 2019: `https://{your_server}/DefaultCollection`
-
-::: moniker-end
-
-
-
 
 ### Authentication type
 

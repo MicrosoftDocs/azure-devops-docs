@@ -6,15 +6,18 @@ ms.topic: troubleshooting
 ms.subservice: azure-devops-migrate
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2024
+ms.date: 12/26/2024
 ---
 
 # Resolve migration errors
 
-The Data Migration Tool flags errors that you need to correct before you migrate to Azure DevOps Services. This article describes the most common warnings and errors that you might receive when you're preparing to migrate. After you correct each error, run the **migrator validate** command again to verify resolution.
+The Data Migration Tool flags errors that you need to correct before you import to Azure DevOps Services. This article describes the most common warnings and errors that you might receive when you're preparing to import. After you correct each error, run the **migrator validate** command again to verify resolution.
+
+For more help, refer to the [FAQs section](#faqs) at the end of this article.
 
 ## Resolve size warnings
 
@@ -100,7 +103,7 @@ In order to continue, you need to [change your collection's collation](/sql/rela
     
 ## Resolve identity errors
 
-Fix identity errors before migration to prevent problems. They're rare and happen when old TFS operations are invalid on a new Azure DevOps Server. For instance, some users can’t be in valid users group anymore.
+Fix identity errors before migration to prevent problems. These errors are rare and occur when old operations are invalid on a new Azure DevOps Server. For instance, some users might no longer be part of the valid users group.
 
 The following sections provide guidance for resolving the most common identity errors.
 
@@ -278,7 +281,7 @@ Field name conflicts sometimes occur between your local collection and an Azure 
 
 `In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.`
 
-To resolve this error, change the name of your collection field. Use the **witadmin changefield** command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).  
+To resolve this error, change the name of your collection field. Use the **`witadmin changefield`** command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).  
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
@@ -291,7 +294,7 @@ The following error indicates a field name conflict exists between your local co
 
 `In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*`
 
-To resolve this error, use the **witadmin changefield** command. For details, see [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
+To resolve this error, use the **`witadmin changefield`** command. For details, see [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName /name:VSTSfieldName
@@ -483,6 +486,17 @@ Verify the collection against which you're running the Data Migration Tool has p
 Migration failures mean that the migration queued, but didn't complete. The individual who queued the migration receives a failure email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your migration. 
 
 If the error is more complex, then the email you receive provides instructions on how to file a [customer support case](https://aka.ms/AzureDevOpsImportSupport). After you submit a customer support case, your team must roll back by bringing your Azure DevOps Server instance back online and reattach your collection. Your team members can then continue working. We recommended that you don't try the migration again until the failure causing the issue gets resolved.
+
+## FAQs
+
+#### Q: What should I do if my migration was queued but failed and I didn't receive an email with next steps?
+
+A: If your migration was queued but failed and you didn't receive an email notification, follow these steps:
+
+- **Check migration logs**: Review the migration logs for any error messages that might indicate the cause of the failure. The logs can provide insights into what went wrong during the migration process.
+- **Follow troubleshooting steps**: Refer to the troubleshooting steps outlined in this migration troubleshooting guide. These steps can help you identify and resolve common issues that perhaps caused the failure.
+- **Contact Customer Support**: If the error is complex or you can't resolve the issue using the logs and troubleshooting steps, consider [filing a customer support case](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS) for further assistance.
+- **Rollback and retry**: If necessary, roll back your Azure DevOps Server instance and reattach the collection before attempting the migration again.
  
 ## Related articles
 

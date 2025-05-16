@@ -22,11 +22,11 @@ You can change your organization name (URL) at any time in Azure DevOps. This ac
 
 ## Prerequisites
 
-- **Permissions:** Be an owner of your organization. For more information, see [Change the organization owner](change-organization-ownership.md).
-- **Access levels:** Have at least Basic access.
-- **Preparation:**
-  - Save your work.
-  - Ensure other members aren't using the service.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** |[Organization owner](change-organization-ownership.md).|
+|**Access levels**| At least **Basic** access.|
+|**Tasks**|- Save your work.<br>- Ensure other members aren't using the service.|
 
 > [!NOTE]
 > Wait at least one hour after the most recent rename operation before renaming an organization again.

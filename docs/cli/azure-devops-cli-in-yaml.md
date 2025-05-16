@@ -174,18 +174,18 @@ trigger:
 # Run on multiple Microsoft-hosted agent images
 strategy:
   matrix:
+    linux24:
+      imageName: "ubuntu-24.04"
     linux22:
       imageName: "ubuntu-22.04"
-    linux20:
-      imageName: "ubuntu-20.04"
+    mac15:
+      imageName: "macos-15"
+    mac14:
+      imageName: "macos-14"
     mac13:
       imageName: "macos-13"
-    mac12:
-      imageName: "macos-12"
-    mac11:
-      imageName: "macos-11"
-    windows2019:
-      imageName: "windows-2019"
+    windows2025:
+      imageName: "windows-2025"
     windows2022:
       imageName: "windows-2022"
   maxParallel: 3
@@ -226,18 +226,18 @@ trigger:
 # Run on multiple Microsoft-hosted agent images
 strategy:
   matrix:
+    linux24:
+      imageName: "ubuntu-24.04"
     linux22:
       imageName: "ubuntu-22.04"
-    linux20:
-      imageName: "ubuntu-20.04"
+    mac15:
+      imageName: "macos-15"
+    mac14:
+      imageName: "macos-14"
     mac13:
       imageName: "macos-13"
-    mac12:
-      imageName: "macos-12"
-    mac11:
-      imageName: "macos-11"
-    windows2019:
-      imageName: "windows-2019"
+    windows2025:
+      imageName: "windows-2025"
     windows2022:
       imageName: "windows-2022"
   maxParallel: 3

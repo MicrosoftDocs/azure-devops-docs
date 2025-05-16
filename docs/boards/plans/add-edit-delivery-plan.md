@@ -8,7 +8,7 @@ author: chcomley
 ms.custom: cross-project  
 ms.topic: how-to
 monikerRange: '>= azure-devops-2022'
-ms.date: 05/30/2024
+ms.date: 03/24/2025
 ---
 
 # Add or edit a Delivery Plan 
@@ -22,20 +22,10 @@ Delivery Plans provide a highly interactive calendar view of multiple team backl
 
 ## Prerequisites
 
-- **Permissions:**
-  - To add or edit a Delivery Plan, be a member of the **Contributors** group for the project where you add the plan. 
-  - To add team backlogs to a plan, have **View** permissions to those projects. 
-  - To view a Delivery Plan, be a member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.
-  - To manage permissions, edit, or delete a plan, be the creator of the plan, or a member of the **Project Administrators**, **Project Collection Administrators** group, or be granted explicit permission through the plan's Security dialog. For more information, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md).
-
-- **Configuration:**:
-  - Set up [teams and team backlogs](../../organizations/settings/add-teams.md).
-  - Enable [team product or portfolio backlogs](../../organizations/settings/select-backlog-navigation-levels.md). 
-  - Assign [area paths and team area paths](../../organizations/settings/set-area-paths.md).
-  - Assign [iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
-  	- Assign **Iteration Paths** **Start** and **End Dates** or they don't appear on the plan. 
-  	- Select **Iteration Paths** for the team whose backlogs you select, or work items associated with those iteration paths don't appear on the plan.   
-  - Define [product backlog items](../backlogs/create-your-backlog.md) or [portfolio backlogs](../backlogs/define-features-epics.md) and assign those items to either a **Start Date** and **End Date** or an **Iteration Path**.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - To add or edit a Delivery Plan: Member of the **Contributors** group for the project where you add the plan. <br> - **Manage delivery plans** permission set to **Allow** for the **Contributors** group in **Project settings** > **Permissions**. <br> - To add team backlogs to a plan: **View** permission for those projects. <br> - To view a Delivery Plan: Member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. <br> - To manage permissions, edit, or delete a plan: Creator of the plan, or member of the **Project Administrators**, **Project Collection Administrators** group, or explicit permission granted through the plan's Security dialog. For more information, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md). |
+| **Configuration** | - [Teams and team backlogs](../../organizations/settings/add-teams.md) set up. <br> - [Team product or portfolio backlogs](../../organizations/settings/select-backlog-navigation-levels.md) enabled. <br> - [Area paths and team area paths](../../organizations/settings/set-area-paths.md) assigned. <br> - [Iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md) assigned. <br> - **Iteration Paths**, **Start**, and **End Dates** assigned, otherwise they don't appear on the plan. <br> - **Iteration Paths** selected for the team whose backlogs you select, otherwise work items associated with those iteration paths don't appear on the plan. <br> - [Product backlog items](../backlogs/create-your-backlog.md) or [portfolio backlogs](../backlogs/define-features-epics.md) defined and assigned to either a **Start Date**, **End Date**, or an **Iteration Path**. |
 
 <a id="teams"></a>
 

@@ -4,7 +4,7 @@ description: Learn about defining and consuming YAML resources that you can use 
 ms.topic: conceptual
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.date: 07/01/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Resources in YAML pipelines
@@ -136,6 +136,7 @@ If the pipeline run is manually triggered or scheduled, the values of the `versi
 | `branch`      | The artifacts from the latest build done on the specified branch |
 | `tags` list   | The artifacts from the latest build that has all the specified tags    |
 | `branch` and `tags` list   | The artifacts from the latest build done on the specified branch that has all the specified tags |
+| `version` and `branch` | The artifacts from the build with the specified run number and the specified branch. |
 | None    | The artifacts from the latest build across all the branches |
 
 The following `pipeline` resource definition uses the `branch` and `tags` properties to evaluate the default version when the pipeline is triggered manually or scheduled. When you manually trigger the pipeline to run, the `MyCIAlias` pipeline artifacts version is the latest build done on the `main` branch that has the `Production` and `PrepProduction` tags.
@@ -204,7 +205,6 @@ Regular job artifacts aren't automatically downloaded. Use `download` explicitly
 Artifacts from the `pipeline` resource are downloaded to the *$(PIPELINE.WORKSPACE)/\<pipeline-identifier>/\<artifact-identifier>* folder. For more information, see [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md).
 
 The optional `artifact` property specifies artifact names. If not specified, all available artifacts are downloaded. The optional `patterns` property defines patterns that represent files to include. For full schema information, see the [steps.download definition](/azure/devops/pipelines/yaml-schema/steps-download).
-
 
 ```yaml
 - job: deploy_windows_x86_agent
@@ -292,7 +292,7 @@ For complete schema information, see the [steps.downloadBuild definition](/azure
 <a name="define-a-repositories-resource"></a>
 ## Repository resource definition
 
-The `repository` keyword lets you specify an external repository. You can use this resource if your pipeline has [templates in another repository](../process/templates.md#use-other-repositories) or you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection. You must let the system know about these repositories.
+The `repository` keyword lets you specify an external repository. You can use this resource if your pipeline has [templates in another repository](templates.md#store-templates-in-other-repositories) or you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection. You must let the system know about these repositories.
 
 For example:
 

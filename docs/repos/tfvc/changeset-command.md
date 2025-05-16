@@ -21,7 +21,9 @@ Displays information about and lets you change the attributes, such as comments 
 
 ## Prerequisites
 
-To use the `changeset` command, you must have the **Read** permission set to **Allow** for any files or folders in the changeset for which you wish to display full information. The only users who can modify the notes and comments that are associated with a changeset are the users who created the changeset or a user who has the **Revise other user's changes** global permission. 
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission set to **Allow** for any files or folders in the changeset for which you wish to display full information. The only users who can modify the notes and comments that are associated with a changeset are the users who created the changeset or a user who has the **Revise other user's changes** global permission set to **Allow**. |
 
 For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 

@@ -13,6 +13,8 @@ This article provides best practices on protecting secrets in Azure Pipelines. A
 
 Azure Pipelines doesn't generate secret values. However, you might need to add a secret to a pipeline to store sensitive data like an API key. To learn more about setting secret variables, see [Set secret variables](../process/set-secret-variables.md).
 
+[!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
+
 ## Don't use secrets if another method is available
 
 The best method to protect a secret isn't to have a secret in the first place. Check to see if your pipeline can use a different method than using a secret to perform a task. 
@@ -24,7 +26,7 @@ The best method to protect a secret isn't to have a secret in the first place. C
 
 - **Use managed identities:**
   - Consider using managed identities instead of handling secrets directly.
-  - Managed identities allow your applications and services to authenticate security with Azure services without requiring explicit credentials.
+  - Managed identities allow your applications and services to authenticate with Azure services without requiring explicit credentials.
   - You can [use managed identities to access other Azure services](/entra/identity/managed-identities-azure-resources/managed-identities-status). 
 
 - **Azure CLI task:**
@@ -47,7 +49,7 @@ When you create a secret, follow [variable naming guidelines](../process/variabl
 To limit access to secrets in Azure DevOps, follow these best practices:
  
  - Store your secrets in [Azure Key Vault](/azure/key-vault/). With Azure Key Vault, you can then use Azure's role-based access control model to limit access to a secret or group of secrets. 
- - Set secret variables in the UI for a pipeline. Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they're set. So, you can have secrets that only visible to users with access to that pipeline. 
+ - Set secret variables in the UI for a pipeline. Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they're set. So, you can have secrets that are only visible to users with access to that pipeline. 
  - Set secrets in a variable group. Variable groups follow the [library security model](../library/index.md#library-security). You can control who can define new items in a library, and who can use an existing item.
 
 ## Don't write secrets to logs
@@ -71,12 +73,10 @@ To audit and rotate secrets, follow these best practices:
 
 - **Review registered secrets:** Periodically assess the secrets registered in your pipelines. Confirm that they're still necessary, and remove any that are no longer needed, which helps reduce clutter and potential security risks.
 - **Rotate secrets:** Regularly rotate secrets to minimize the window of time during which a compromised secret could be exploited. By changing secrets periodically, you enhance security.
-- [**Choose the right authentication method**](../../organizations/security/security-best-practices.md#choose-the-right-authentication-method)
-  - **Types of secrets used:**
-    - **[Personal access tokens (PATs)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md):** These tokens are used for authentication. Follow security best practices when choosing the right authentication method. You can [manage PATs using the REST API](../../organizations/accounts/manage-personal-access-tokens-via-api.md).
-    - **[Secret variables](../process/set-secret-variables.md):** Use secret variables to securely store sensitive information like API keys, passwords, or other credentials within your pipeline.
-    - **[Azure Key Vault secrets](/azure/key-vault/general/overview):** Use Azure Key Vault to store and manage secrets securely.
-    - **[Service connections](../library/service-endpoints.md):** These service connections allow your pipeline to connect to external services (for example, Azure, GitHub, Docker Hub). Ensure proper configuration and secure handling of service connection secrets.
+- **[Secret variables](../process/set-secret-variables.md):** Use secret variables to securely store sensitive information like API keys, passwords, or other credentials within your pipeline.
+- **[Azure Key Vault](/azure/key-vault/general/overview):** Use Azure Key Vault to store and manage secrets securely.
+- **[Service connections](../library/service-endpoints.md):** These service connections allow your pipeline to connect to external services (for example, Azure, GitHub, Docker Hub). Ensure proper configuration and secure handling of service connection secrets.
+- [**Personal access tokens (PATs)**](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md): Keep PAT duration short and choose the minimal permissions needed during creation.
 
 ## Use YAML templates 
 
@@ -88,7 +88,7 @@ To implement this approach, create a separate YAML file for your script and then
 
 To make sure that secrets are tied to the `main` branch and not accessible to random branches, you can use a combination of variable group permissions, conditional job insertion, and branch policies.
 
-With branch policies, you can enforce [build validation policies](../../repos/git/branch-policies.md#build-validation) that only allow builds from the main branch. Then, you can use [variable group permissions](../library/variable-groups.md) to make sure that only authorized pipelines have access the secrets stored in your variable group. Last, you can use a condition in your pipeline to make sure that the variable group can only be referenced by a push to the `main` branch. 
+With branch policies, you can enforce [build validation policies](../../repos/git/branch-policies.md#build-validation) that only allow builds from the main branch. Then, you can use [variable group permissions](../library/variable-groups.md) to make sure that only authorized pipelines have access to the secrets stored in your variable group. Last, you can use a condition in your pipeline to make sure that the variable group can only be referenced by a push to the `main` branch. 
 
 ```yaml
 jobs:
@@ -111,4 +111,4 @@ jobs:
 ## Related articles
 
 - [Key and secret management considerations in Azure](/azure/well-architected/security/design-storage-keys)
-- [Azure DevOps security best practices](../../organizations/security/security-best-practices.md)
+- [Azure DevOps security overview](../../organizations/security/security-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Restrict new organization creation, Microsoft Entra tenant policy
+title: Restrict new organization creation
 titleSuffix: Azure DevOps Services
 ms.custom: 
 description: Learn how Azure DevOps Administrators can prevent users from creating new organizations via the Microsoft Entra tenant policy.
@@ -8,11 +8,11 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2024
+ms.date: 04/23/2025
 monikerRange: 'azure-devops'
 ---
 
-# Restrict organization creation via Microsoft Entra tenant policy
+# Restrict organization creation
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -20,15 +20,15 @@ Learn how to turn on the Microsoft Entra tenant policy, which restricts users fr
 
 ## Prerequisites
 
-**Permissions:** To manage this policy, be an Azure DevOps Administrator in Microsoft Entra ID. Being a Project Collection Administrator isn't required.
-
-If you don't see the policy section in Azure DevOps, it means you aren't an administrator. To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then go to **Microsoft Entra ID** > **Roles and administrators**. If you aren't an Azure DevOps Administrator, contact your administrator for assistance.
-
-![Screenshot shows Azure Portal Microsoft Entra roles and administrators.](media/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|[Azure DevOps Administrator](../security/look-up-azure-devops-administrator.md). |
 
 ## Turn on the policy
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+To turn on the policy that restricts users from creating new organizations, do the following steps:
+
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
@@ -36,37 +36,34 @@ If you don't see the policy section in Azure DevOps, it means you aren't an admi
 
 3. Select **Microsoft Entra ID**, and then switch the toggle to turn on the policy, restricting organization creation.
 
+   :::image type="content" source="media/azure-ad-tenant-policy/restrict-organization-creation-toggle.png" alt-text="Screenshot shows highlighted toggle for Restrict organization creation.":::
+
 ## Optional
 
 ### Create allowlist
 
 > [!WARNING]
-> We recommend using groups with your tenant policy allow list. If you use a named user, be aware that a reference to the named user's identity will reside in the United States, Europe (EU), and Southeast Asia (Singapore).
+> We recommend using groups with your tenant policy allowlist. If you use a named user, a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
-When the policy is enabled, all users are restricted from creating new organizations. To grant exceptions, add users to an allowlist. Users on the allowlist can create new organizations but can't manage the policy.
+When the policy is enabled, only users in the allowlist and users assigned to the Azure DevOps **Administrator** role can create new organizations. To grant exceptions, add users to an allowlist. Users on the allowlist can create new organizations but can't manage the policy.
 
 Select **Add Microsoft Entra user or group**.
 
+For more information, see [Add organization users and manage access](add-organization-users.md).
+
 ### Create error message
 
-When administrators, who aren't on the allowlist, try to create an organization they get an error. 
-
-To customize this error message, do the following steps:
+To customize the error message, do the following steps:
 
 1. In the policy settings in Azure DevOps, select **Edit display message**.
 
 2. Enter your customized message, and then select **Save**.
 
-   ![Screenshot show Customize error message dialog.](media/azure-ad-tenant-policy/display-error-message-dialog.png)
+   ![Screenshot shows Customize error message dialog.](media/azure-ad-tenant-policy/display-error-message-dialog.png)
 
 The error message is customized.
 
-![Customized error message](media/azure-ad-tenant-policy/error-message-example-ui.png)
-
-> [!NOTE]
-> Administrators, who aren't on the allow list, can't connect their organization to the Microsoft Entra tenant where the policy is turned on.
->
-> ![Connection failed error](media/azure-ad-tenant-policy/connection-failed-notification.png)
+![Screenshot shows customized error message.](media/azure-ad-tenant-policy/error-message-example-ui.png)
 
 ## Related articles
 

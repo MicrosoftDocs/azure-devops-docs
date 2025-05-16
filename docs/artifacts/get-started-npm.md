@@ -72,18 +72,6 @@ Azure Artifacts recommends using two .npmrc files. The first one should be place
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **Connect to feed**.
-
-1. A new window will appear. From the left navigation pane, select **npm** and follow the instructions to set up your **project** and **user** *.npmrc* files.
-
-   :::image type="content" source="media/npm-project-setup-server-2019-1.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2019.":::
-
-::: moniker-end
-
 > [!IMPORTANT]
 > npm supports a single `registry` in your .npmrc file. Multiple registries are possible with [scopes](npm/scopes.md) and [upstream sources](npm/upstream-sources.md).
 

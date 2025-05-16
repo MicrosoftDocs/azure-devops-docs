@@ -34,7 +34,7 @@ Use the Visual Studio **History** window to get detailed historical data about a
 
 ## Prerequisites
 
-You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+[!INCLUDE [contributor-only-prerequisites](includes/contributor-only-prerequisites.md)]
 
 ## Open the History window
 

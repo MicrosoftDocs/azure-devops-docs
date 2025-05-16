@@ -17,9 +17,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
-
-This article discusses controlling access to your organization using Microsoft Entra ID. Connecting your organization to Microsoft Entra ID enhances security and simplifies user management.
+This article discusses controlling access to your organization using Microsoft Entra ID. [Connecting your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md) enhances security and simplifies user management.
 
 ## Benefits of using Microsoft Entra ID
 
@@ -38,7 +36,7 @@ For more information on setting up and managing Microsoft Entra ID, see the [Mic
 ## High-level steps to connect your organization to Microsoft Entra ID
 
 1. **Connect to Microsoft Entra ID**: If your organization was created with a Microsoft account, connect it to your [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis). This integration allows you to manage access and enforce security policies centrally.
-2. **Sign in**: Use the same username and password that you use with your Microsoft services to sign in to Azure DevOps. The single sign-on (SSO) capability streamlines the sign-in process and improves security.
+2. **Sign in**: Use the same credentials that you use with your Microsoft services to sign in to Azure DevOps. The single sign-on (SSO) capability streamlines the sign-in process and improves security.
 3. **Enforce policies**: Implement and enforce policies to control access to your team's critical resources and key assets. Microsoft Entra ID provides robust policy management features, including multifactor authentication (MFA), conditional access, and role-based access control.
 
 <a name='how-azure-ad-controls-access-to-azure-devops'></a>
@@ -53,10 +51,12 @@ Without Microsoft Entra ID, you're solely responsible for controlling organizati
 
 For more information, see [Frequently asked questions about Azure access](faq-azure-access.yml)
 
+> [!div class="nextstepaction"]
+> [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md)
+
 ## Related articles
 
 * [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory)
-* [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md)
 * [Disconnect your organization from Microsoft Entra ID](/azure/active-directory/add-users-azure-active-directory#delete-a-user)
 * [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)

@@ -35,6 +35,8 @@ For more information, see [About processes and process templates](../../../board
 
 <!--- QUESTION: What happens to Analytics data when you do this change?  -->
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
 [!INCLUDE [image-differences](../../../includes/image-differences.md)]
@@ -105,8 +107,6 @@ For more information, see [About processes and process templates](../../../board
 You can customize boards to display intermediate columns. For each column added, you must choose a valid workflow state for the work item types displayed on the board. For more information, see [Workflow states & state categories](../../../boards/work-items/workflow-and-state-categories.md).
 
 1. For each team, [open your board](../../../boards/get-started/plan-track-work.md), and then select **Correct this now** or select the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
-
-   :::image type="content" source="media/change-process/open-kanban-board.png" alt-text="Screenshot of opened board.":::
 
    The Settings dialog opens. Those tabs that display a :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: required icon need correction.
 

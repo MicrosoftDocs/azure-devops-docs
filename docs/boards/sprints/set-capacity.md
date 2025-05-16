@@ -38,9 +38,11 @@ To set up sprints yet for your team, see [Manage sprint timelines](define-sprint
 
 ## Prerequisites
 
-- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md).
-- **Permissions**: Be a member of the **Contributors** or **Project Administrators** security group in your project. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
-- **Access levels**: To view or set capacity, have at least **Basic** access. Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+| Category | Requirements |
+|----------------------|----------------------|
+| **Project access**   | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Permissions**      | - To view capacity: Be a member of the [**Contributors**](../../organizations/security/add-users-team-project.md) security group in your project. <br/> - To edit capacity: Be a member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) security group or a [**Team Administrator**](../../organizations/settings/add-team-administrator.md) of the team. |
+| **Access levels**    | To view or set capacity: At least **[Basic](../../organizations/security/access-levels.md)**[ access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
 
 <a id="customize-activity-list">  </a> 
 
@@ -68,7 +70,7 @@ Most teams specify capacity in hours. You can also specify it in days or any oth
 
 ## Open a sprint backlog for a team
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. From your web browser, open your product backlog. Check that you selected the right project. Select **Boards** > **Sprints**, select the correct team from the team selector menu, and choose **Capacity**.
 
@@ -92,7 +94,7 @@ Most teams specify capacity in hours. You can also specify it in days or any oth
 
 From the **Capacity** page, you can add team members, enter the team time off, and set capacity and days off for each team member.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. If you don't see your team members listed, add them. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon and select **Add all team members**. For this feature to work, users must be added to the team.  
 
@@ -127,7 +129,7 @@ By copying the capacity from the previous sprint, you save time. With the basics
 
 Only the capacity-per-day value and activity value are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you made changes to the previous sprint that you want to copy to the latest sprint.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/capacity/copy-capacity-from-previous-sprint-vert.png" alt-text="Screenshot of Copy capacity.":::
 
@@ -139,7 +141,7 @@ Only the capacity-per-day value and activity value are copied over. Individual a
 
 To remove a user, choose the option from the users :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action menu. This action doesn't remove the user from the team.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/capacity/remove-user-agile.png" alt-text="Screenshot of Copy capacity Remove user from capacity list.":::
 
@@ -151,7 +153,7 @@ As you define tasks and estimate the work, capacity charts start to fill in for 
 
 You also see a roll-up of the remaining work required to complete each requirement or bug.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/capacity/work-details.png" alt-text="Screenshot of work details.":::
 
@@ -159,7 +161,7 @@ You also see a roll-up of the remaining work required to complete each requireme
 
 From this view, you can see which individuals are at or near capacity. Teams can determine if work needs to be moved out of the sprint or to reassign tasks.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.

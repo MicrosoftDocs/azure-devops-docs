@@ -3,7 +3,7 @@ title: Parameters and templateContext
 description: How to use parameters in templates
 ms.topic: conceptual
 ms.date: 10/25/2024
-monikerRange: '>=azure-devops-2019'
+monikerRange: "<=azure-devops"
 ai-usage: ai-assisted
 ---
 
@@ -46,7 +46,7 @@ extends:
 
 ## Use templateContext to pass properties to templates
 
-You can use `templateContext` to pass more properties to stages, steps, and jobs that are used as parameters in a template. Specifically, you can specify `templateContext` within the `jobList`, `deploymentList`, or `stageList` parameter data type. 
+You can use `templateContext` to pass more properties to [stages](/azure/devops/pipelines/yaml-schema/stages-stage), steps, and [jobs](/azure/devops/pipelines/yaml-schema/jobs-job) that are used as parameters in a template. Specifically, you can specify `templateContext` within the `jobList`, `deploymentList`, or `stageList` parameter data type. 
   
 You can use `templateContext` to make it easier to set up environments when processing each job. By bundling a job and its environment properties object together, `templateContext` can help you have more maintainable and easier to understand YAML. 
 
@@ -185,10 +185,9 @@ jobs:
     displayName: 'Display object keys and values'
 ```
 
-
 ### Required parameters
 
-You can add a validation step at the beginning of your template to check for the parameters you require.
+Pipelines automatically reports an error if a parameter is missing. You can add a validation step at the beginning of your template to check for the parameters you require and take appropriate action.
 
 Here's an example that checks for the `solution` parameter using Bash:
 
@@ -231,111 +230,3 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-You can pass parameters to templates.
-The `parameters` section defines what parameters are available in the template and their default values. 
-Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline. As a result, only [predefined variables](../build/variables.md) can be used in parameters. 
-
-To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
-
-### Job, stage, and step templates with parameters
-
-```yaml
-# File: templates/npm-with-params.yml
-
-parameters:
-  name: ''  # defaults for any parameters that aren't specified
-  vmImage: ''
-
-jobs:
-- job: ${{ parameters.name }}
-  pool: 
-    vmImage: ${{ parameters.vmImage }}
-  steps:
-  - script: npm install
-  - script: npm test
-```
-
-When you consume the template in your pipeline, specify values for
-the template parameters.
-
-```yaml
-# File: azure-pipelines.yml
-
-jobs:
-- template: templates/npm-with-params.yml  # Template reference
-  parameters:
-    name: Linux
-    vmImage: 'ubuntu-latest'
-
-- template: templates/npm-with-params.yml  # Template reference
-  parameters:
-    name: macOS
-    vmImage: 'macOS-10.13'
-
-- template: templates/npm-with-params.yml  # Template reference
-  parameters:
-    name: Windows
-    vmImage: 'windows-latest'
-```
-
-You can also use parameters with step or stage templates.
-For example, steps with parameters:
-
-```yaml
-# File: templates/steps-with-params.yml
-
-parameters:
-  runExtendedTests: 'false'  # defaults for any parameters that aren't specified
-
-steps:
-- script: npm test
-- ${{ if eq(parameters.runExtendedTests, 'true') }}:
-  - script: npm test --extended
-```
-
-When you consume the template in your pipeline, specify values for
-the template parameters.
-
-```yaml
-# File: azure-pipelines.yml
-
-steps:
-- script: npm install
-  
-- template: templates/steps-with-params.yml  # Template reference
-  parameters:
-    runExtendedTests: 'true'
-```
-
-> [!Note]
-> Scalar parameters are always treated as strings.
-> For example, `eq(parameters['myparam'], true)` will almost always return `true`, even if the `myparam` parameter is the word `false`.
-> Non-empty strings are cast to `true` in a Boolean context.
-> That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
-
-Parameters aren't limited to scalar strings.
-As long as the place where the parameter expands expects a mapping, the parameter can be a mapping.
-Likewise, sequences can be passed where sequences are expected.
-For example:
-
-```yaml
-# azure-pipelines.yml
-jobs:
-- template: process.yml
-  parameters:
-    pool:   # this parameter is called `pool`
-      vmImage: ubuntu-latest  # and it's a mapping rather than a string
-
-
-# process.yml
-parameters:
-  pool: {}
-
-jobs:
-- job: build
-  pool: ${{ parameters.pool }}
-```
-
-::: moniker-end

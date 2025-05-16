@@ -35,7 +35,9 @@ For a description of each field defined with a system process, see [Work item fi
 
 ## Prerequisites 
 
-**Permissions**: To view the fields defined for an organization or collection, be a member of the **Project Collection Valid Users** application group or have the **View instance-level information** permission set to **Allow** for the organization or collection.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | To view the fields defined for an organization or collection: Member of the **Project Collection Valid Users** application group or **View instance-level information** permission set to **Allow** for the organization or collection. |
 
 <a id="list-fields"></a> 
 

@@ -19,17 +19,17 @@ Remove unused Git repos from your project when they are no longer needed. The st
 > [!IMPORTANT]
 > You cannot remove a repo if it is the only Git repo in the Azure DevOps project. If you need to delete the only Git repo in a project, [create a new Git repo](create-new-repo.md) first, then delete the repo.
 
-
 ## Prerequisites 
 
-- You must have [Delete Repository permissions](set-git-repository-permissions.md) to delete a repo from a project. 
+| Category | Requirements |
+|-------------|-------------|
+| **Permissions** | [**Delete Repository** permission](set-git-repository-permissions.md). |
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> If you want to use the Azure DevOps CLI **az repos delete** command, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+> To use the Azure DevOps CLI **az repos delete** command, see [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
-
 
 ## Delete a Git repo from the web 
 
@@ -39,7 +39,7 @@ Remove unused Git repos from your project when they are no longer needed. The st
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Select **Repos**, **Files**.
 
@@ -59,14 +59,11 @@ Remove unused Git repos from your project when they are no longer needed. The st
 
 ::: moniker-end
 
-
-
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops" 
 
 You can use Azure DevOps CLI to delete an Azure DevOps Git repository.  
-
 
 ```azurecli
 az repos delete --id
@@ -88,11 +85,9 @@ az repos delete --id
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 |`yes`|Don't prompt for confirmation.|
 
-
 **Example**
 
 The following command deletes the Fabrikam repository, ID `0d58f562-4a10-495d-94d7-7ac61a22d7cc`. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
-
 
 ```azurecli
 az repos delete --id  0d58f562-4a10-495d-94d7-7ac61a22d7cc
@@ -105,6 +100,5 @@ Are you sure you want to delete this repository? (y/n): y
 ::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 ::: moniker-end
-
 
 ***

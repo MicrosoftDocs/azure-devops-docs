@@ -20,13 +20,13 @@ In Team Foundation Version Control (TFVC), you can use annotate in Visual Studio
 
 ## Prerequisites
 
-- Install [Visual Studio](https://visualstudio.microsoft.com/downloads).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission set to **Allow** for the repository.     |
+|**Project** |An Azure DevOps [project with a TFVC repository](./share-your-code-in-tfvc-vs.md#connect-to-your-project).   |  
+| **Tools** |[Visual Studio](https://visualstudio.microsoft.com/downloads).|
 
-- An Azure DevOps project with a TFVC repository. If you don't have a project, create one. For more information, see [Create a project](../../organizations/projects/create-project.md).
-
-- You must have the **Read** permission set to **Allow** for the repository. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
-
-- You must connect to the team project. For more information, see [Connect to a your project](./share-your-code-in-tfvc-vs.md#connect-to-your-project).
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ### To annotate a file
 

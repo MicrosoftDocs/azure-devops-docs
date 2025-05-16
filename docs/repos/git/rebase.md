@@ -26,6 +26,10 @@ This article discusses when to use a rebase instead of a no-fast-forward merge, 
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## Rebase your local branch
 
 Git [rebase](https://git-scm.com/docs/git-rebase) integrates commits from a source branch into your current local branch (target branch). The source branch remains unchanged. For comparison, Git rebase and other merge types are shown in the following diagram.

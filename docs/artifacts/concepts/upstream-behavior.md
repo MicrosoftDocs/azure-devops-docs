@@ -13,24 +13,22 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts upstream sources, developers gain the convenience of using a unified feed to both publish and consume packages from Artifact feeds and popular public registries like NuGet.org or npmjs.com. Previously, Artifact feeds combined a list of available package versions from both the feed itself and all the configured upstream sources.
+With Azure Artifacts upstream sources, developers gain the convenience of using a unified feed to both publish and consume packages from Artifact feeds and popular public registries like NuGet.org or npmjs.com.
 
-:::image type="content" source="media/previous-behavior.svg" alt-text="An illustration showing the content of a feed.":::
+## Allow externally sourced versions
 
-The **Allow externally-sourced versions** is a feature that enables developers to choose if they want to consume externally sourced package versions. It governs which packages are accessible from the public registries for specific packages.
+This feature enables developers to control whether they want to consume package versions from public registries such as NuGet.org or npmjs.com. 
 
-When you disable the **Allow External Versions** toggle, versions from the public registry are blocked and become unavailable for download. This adds an extra layer of security by preventing exposure to potentially malicious packages from public registries.
-
-However, if users prefer, they can enable the **Allow External Versions** toggle to allow access to and consume packages from public registries.
+Once the **Allow External Versions** toggle is enabled for a specific package, versions from the public registry become available for download. By default, this option is disabled, adding an extra layer of security by preventing exposure to potentially malicious packages from public registries. You must be a **Feed Owner** to enable the *allow externally sourced versions* feature.
 
 > [!NOTE]
-> This setting will not make changes to any package versions that are already saved to the feed. Access to these package versions will not change as a result of changing this setting.
+> Changing this setting does not affect package versions already saved to the feed. Those versions will remain accessible regardless of this setting.
 
 ## Applicable scenarios
 
-The following section illustrates various common scenarios where the external version setting blocks externally sourced package versions, and other scenarios where there's no need to block access to public packages.
+The following section outlines common scenarios where external versions (packages from public registries) are either blocked or allowed from being saved to the feed. In the rest of this article, we refer to packages from public registries as public packages and packages in an Azure Artifacts feed as private packages.
 
-### Public versions are blocked
+### Scenario 1: public versions are blocked
 
 * [Private package version made public](#private-package-version-made-public)
 * [Having both private and public packages](#having-both-private-and-public-packages)
@@ -47,7 +45,7 @@ In this scenario, if a team uses a combination of private and public packages, d
 
 :::image type="content" source="media\private-and-public-packages.svg" alt-text="An illustration showing available private and public packages.":::
 
-### Public versions won't be blocked
+### Scenario 2: public versions won't be blocked
 
 * [All packages are private](#all-packages-are-private)
 * [All packages are public](#all-packages-are-public)
@@ -168,7 +166,7 @@ Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -Content
 ```
 
 > [!NOTE]
-> In some cases, setting up the upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
+> Changes to upstream behavior may take time to propagate across the service. If your package is not available after updating the settings, allow up to 3 hours for the changes to take effect.
 
 #### [Clear upstreaming behavior](#tab/clear/)
 

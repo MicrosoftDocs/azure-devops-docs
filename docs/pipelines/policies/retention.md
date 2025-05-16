@@ -14,8 +14,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-
 Retention policies let you set how long to keep runs, releases, and tests stored in the system. To save storage space, you want to delete older runs, tests, and releases.   
 
 The following retention policies are available in Azure DevOps in your **Project settings**:
@@ -41,23 +39,7 @@ To manage retention policies, you must have one of the following subscriptions:
 
 You can also buy monthly access to Azure Test Plans and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
 
-::: moniker range="azure-devops-2019"
-
-## Configure retention policies
-
-1. Sign in to your project. 
-
-2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
-
-3. Select **Release retention** under **Pipelines** or **Retention** under **Test**.
-    * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
-    * Select **Retention** to set up how long to keep manual and automated test runs.     
-
-    :::image type="content" source="media/devops-2019-retention-menu.png" alt-text="Screenshot of retention settings in Project settings for DevOps 2019.":::
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Configure retention policies
 
@@ -85,8 +67,6 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 In most cases, you don't need to retain completed runs longer than a certain number of days. 
 Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
 
-
-
 ::: moniker range=">= azure-devops-2020"
 
 1. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
@@ -107,7 +87,7 @@ Using retention policies, you can control **how many days** you want to keep eac
 >
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 The setting for number of recent runs to keep for each pipeline requires a little more explanation. The interpretation of this setting varies based on the type of repository you build in your pipeline.
 
@@ -137,8 +117,6 @@ The setting for number of recent runs to keep for each pipeline requires a littl
 ::: moniker-end
 
 ### What parts of the run get deleted
-
-
 
 ::: moniker range="<=azure-devops"
 
@@ -171,8 +149,6 @@ A run is deleted if all of the following conditions are true:
 
 ::: moniker-end
 
-
-
 ::: moniker range="azure-devops"
 
 ### Automatically set retention lease on pipeline runs
@@ -198,6 +174,8 @@ You can delete runs using the [More actions menu](../create-first-pipeline.md#pi
 > [!NOTE]
 > If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../create-first-pipeline.md#pipeline-run-more-actions-menu).
 
+> The product team is actively working on improving data deletion times. You might see a processing delay of multiple days when deleting data if there are multiple test points associated with your host. 
+
   > [!div class="mx-imgBorder"]
   > ![delete a run](media/delete-a-run.png)
 
@@ -219,8 +197,6 @@ The retention policy for YAML and build pipelines is the same. You can see your 
 
 ::: moniker-end
 
-
-
 ### Global release retention policy
 
 If you are using an on-premises Team Foundation Server or Azure DevOps Server, you can specify release retention policy defaults and maximums for a project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
@@ -241,8 +217,7 @@ The **default retention policy** sets the default retention values for all the r
 
 The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release pipelines.
 
-
-::: moniker range="<= azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 
 ## Set collection-level retention policies
 
@@ -252,14 +227,7 @@ For on-premises servers, you can also set the collection-level retention policie
 
 ::: moniker-end
 
-
-
-
-
-
-
 ::: moniker range=">=azure-devops-2020"
-
 
 ## Use the Copy Files task to save data longer
 
@@ -291,11 +259,6 @@ You can use the [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-f
 * * *
 
 ::: moniker-end
-
-
-
-
-
 
 ## FAQ
 
@@ -340,7 +303,6 @@ You can also explore the possibility of using the REST APIs in order to download
 
 If you believe that you have lost runs due to a bug in the service, create a support ticket immediately to recover the lost information. If a build definition was manually deleted more than a week earlier, it will not be possible to recover it. If the runs were deleted as expected due to a retention policy, it will not be possible to recover the lost runs. 
 
-
 ### How do I use the `Build.Cleanup` capability of agents?
 
 Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup jobs to be directed to just those agents, leaving the rest free to do regular work. When a pipeline run is deleted, artifacts stored outside of Azure DevOps are cleaned up through a job run on the agents. When the agent pool gets saturated with cleanup jobs, this can cause a problem. The solution to that is to designate a subset of agents in the pool that are the cleanup agents. If any agents have `Build.Cleanup` set, only those agents will run the cleanup jobs, leaving the rest of the agents free to continue running pipeline jobs. The Cleanup functionality can be enabled by navigating to  **Agent** > **Capabilities** and setting `Build.Cleanup` equal to `1`.
@@ -362,7 +324,7 @@ Test results published within a stage of a release are retained as specified by 
 
 No. Manual test results are not deleted. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### How do I preserve my version control labels or tags? 
 
@@ -394,3 +356,4 @@ Classic releases retain pipelines that they consume automatically. If you are us
 
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md)
 - [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md)
+- [Using Tasks to Retain Runs in Azure Pipelines](../../pipelines/build/run-retention.md)

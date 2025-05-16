@@ -32,6 +32,10 @@ Here are some great readmes that use this format and speak to all three audience
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## Create an intro
 
 Start off your readme with a short explanation describing your project. Add a screenshot or animated GIF in your intro if your project has a user interface. 

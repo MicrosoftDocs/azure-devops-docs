@@ -19,7 +19,7 @@ You can subscribe to email alerts to be notified of changes in pull requests (PR
 
 To view or set your personal notifications, see [Manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 - To view project notification settings, [go to the project](../../project/navigation/go-to-project-repo.md) and select **Project settings** > **Notifications**.
 
@@ -38,6 +38,4 @@ To view or set your personal notifications, see [Manage your personal notificati
   ![Screenshot that shows Opt out of emails.](media/pull-request-notifications/opt-out-notifications.png)
 
 ::: moniker-end
-
-
 

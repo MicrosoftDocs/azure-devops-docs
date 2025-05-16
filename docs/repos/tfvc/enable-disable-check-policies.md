@@ -22,7 +22,11 @@ Prior to enabling or disabling check-in policies, you must first create the chec
 
 ## Prerequisites
 
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Edit project-level information** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 
 ## Enable or disable a check-in policy

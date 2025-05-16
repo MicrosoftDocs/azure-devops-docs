@@ -29,10 +29,11 @@ exports.submitRequests = function() {
         "type": "chef",
         "url": "https://fabrikam-chef:9090",
         "authorization": {
-            "scheme": "UsernamePassword",
+            "scheme": "ServicePrincipal",
             "parameters": {
-                "username": "someUsername",
-                "password": "somePassword"
+               "serviceprincipalid": "your-service-principal-id",
+               "serviceprincipalkey": "your-service-principal-key",
+               "tenantid": "your-tenant-id"
             }
         },
         //"data": {}
@@ -48,10 +49,11 @@ exports.submitRequests = function() {
         "type": "chef",
         "url": "https://fabrikam-chef-updated:9090",
         "authorization": {
-            "scheme": "UsernamePassword",
+            "scheme": "ServicePrincipal",
             "parameters": {
-                "username": "someUsername",
-                "password": "somePassword"
+               "serviceprincipalid": "your-service-principal-id",
+               "serviceprincipalkey": "your-service-principal-key",
+               "tenantid": "your-tenant-id"
             }
         }
     });

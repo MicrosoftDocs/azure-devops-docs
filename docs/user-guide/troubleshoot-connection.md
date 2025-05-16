@@ -14,7 +14,13 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="azure-devops"
+If you're experiencing issues connecting to a project in Azure DevOps, follow these troubleshooting steps to resolve common connectivity problems.
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../includes/prerequisites-project-member-only.md)]
+
+::: moniker range=" azure-devops"
 
 ## Troubleshoot connectivity
 

@@ -6,12 +6,12 @@ brand: azure
 
 metadata:
   title: Azure DevOps documentation
-  description: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
+  description:  Collaborate on software development with source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
   ms.topic: hub-page 
   ms.subservice: azure-devops-projects
   ms.author: chcomley
   author: chcomley
-  ms.date: 09/17/2022
+  ms.date: 03/11/2025
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -47,9 +47,9 @@ highlightedContent:
       itemType: how-to-guide
       url: ./organizations/projects/connect-to-projects.md
     # Card
-    - title: Authenticate access with personal access tokens
+    - title: Secure access to Azure DevOps
       itemType: how-to-guide
-      url: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md
+      url: ./integrate/get-started/authentication/authentication-guidance.md
 # productDirectory section (optional)
 productDirectory:
 #  title: Azure DevOps Products
@@ -221,16 +221,16 @@ additionalContent:
               url: ./organizations/security/about-permissions.md
             - text: About access levels
               url: ./organizations/security/access-levels.md
-            - text: Use personal access tokens
-              url: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md
             - text: Billing overview
               url: ./organizations/billing/overview.md
+            - text: About authentication, authorization, and security policies
+              url: ./organizations/security/about-security-identity.md
             - text: Add or remove users or groups 
               url: ./organizations/security/add-remove-manage-user-group-security-group.md
             - text: Change project-level permissions
               url: ./organizations/accounts/organization-management.md
             - text: Change project collection-level permissions
-              url: ./organizations/accounts/organization-management.md
+              url: ./organizations/accounts/organization-management.md       
             - text: See more >
               url: ./organizations/security/index.yml 
       # Card
@@ -300,37 +300,31 @@ additionalContent:
             - text: See more >
               url: ./project/index.yml
         # Card
+        - title: Developer resources
+          links:
+            - text: Authentication overview
+              url: ./integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/dev-resources/toc.json
+            - text: Build with Azure DevOps
+              url: ./integrate/index.md?toc=/azure/devops/dev-resources/toc.json
+            - text: Azure DevOps CLI 
+              url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json
+            - text: Get started with REST APIs
+              url: ./integrate/how-to/call-rest-api.md?toc=/azure/devops/dev-resources/toc.json
+            - text: REST API Reference
+              url: /rest/api/azure/devops/
+            - text: See more >
+              url: ./dev-resources/index.yml
+        # Card
         - title: Marketplace & Extensibility
           links:
             - text: Discover extensions
               url: ./extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Develop extensions
               url: ./extend/get-started/node.md?toc=/azure/devops/marketplace-extensibility/toc.json
-            - text: Integrate applications
-              url: ./integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: Service hooks
               url: ./service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: See more >
               url: ./marketplace-extensibility/index.yml
-        # Card
-        - title: Developer resources
-          links:
-            - text: Azure DevOps CLI 
-              url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json
-            - text: Azure DevOps CLI quick reference
-              url: ./cli/quick-reference.md?toc=/azure/devops/dev-resources/toc.json
-            - text: Git command reference
-              url: ./repos/git/command-prompt.md 
-            - text: Team Foundation version control commands
-              url: ./repos/tfvc/use-team-foundation-version-control-commands.md
-            - text: Azure DevOps Services Demo Generator
-              url: ./demo-gen/index.md?toc=/azure/devops/dev-resources/toc.json
-            - text: REST APIs
-              url: /rest/api/vsts/
-            - text: DevOps resource center
-              url: /devops
-            - text: See more >
-              url: ./dev-resources/index.yml
 
   # footer (optional)
   footer: "[Blogs](https://devblogs.microsoft.com/devops/) - [Twitter](https://twitter.com/AzureDevOps) - [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops) - [Issue Reporting](https://azure.microsoft.com/support/devops/) - [Developer Community](https://azure.microsoft.com/support/devops/) - [Service Status](https://status.dev.azure.com/)"

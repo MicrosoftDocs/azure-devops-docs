@@ -46,9 +46,10 @@ You might find the following articles helpful:
 
 ## Prerequisites
 
-**Permissions:**
-- To manage permissions or groups at the organization or collection level, be a member of the [**Project Collection Administrators** security group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group.
-- **Directory services**: Ensure security groups in Microsoft Entra ID or Active Directory are defined before adding them. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
+|Category  | Requirements |
+|-------------|-------------|
+| **Permissions** | Member of the [**Project Collection Administrators** group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. |
+| **Directory services** | [Security groups defined in Microsoft Entra ID or Active Directory](add-ad-aad-built-in-security-groups.md) before adding them to Azure DevOps. |
 
 ::: moniker range="azure-devops"
 > [!NOTE]   

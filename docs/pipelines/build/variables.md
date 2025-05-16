@@ -5,7 +5,8 @@ ms.topic: reference
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
-ms.date: 08/07/2024
+ms.date: 12/12/2024
+ms.custom:  copilot-scenario-highlight 
 monikerRange: '<= azure-devops'
 ---
 
@@ -27,6 +28,13 @@ For classic pipelines, you can use [release variables](../release/variables.md) 
 ::: moniker-end
 
 Learn more about [working with variables](../process/variables.md).
+
+::: moniker range="azure-devops"
+
+> [!TIP]
+> You can ask [Copilot](/copilot/) for help with variables. To learn more, see [Ask Copilot to generate a stage with a condition based on variable values](#ask-copilot-to-generate-a-stage-with-a-condition-based-on-variable-values).
+
+::: moniker-end
 
 ## Build.Clean 
 
@@ -52,8 +60,6 @@ steps:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-
-
 You can configure the default scope for `System.AccessToken` using [build job authorization scope](../process/access-tokens.md#job-authorization-scope). 
 
 # [Classic](#tab/classic)
@@ -72,7 +78,6 @@ pushes and pulls in your scripts.
 ## System.Debug
 
 For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`. 
-
 
 1. Edit your pipeline. 
 1. Select **Variables**. 
@@ -102,7 +107,6 @@ When `System.Debug` is set to `true`, an extra variable named `Agent.Diagnostic`
 
 For more information, see [Review logs to diagnose pipeline issues](../troubleshooting/review-logs.md).
 
-
 ::: moniker range=">=azure-devops"
 
 [!INCLUDE [include](includes/variables-hosted.md)]
@@ -121,15 +125,6 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [include](includes/variables-server2019.md)]
-
-::: moniker-end
-
-
-
-
 <a name="identity_values"></a>
 ### How are the identity variables set?
 
@@ -142,3 +137,20 @@ The value depends on what caused the build and are specific to Azure Repos repos
 | In TFVC by a [gated check-in trigger](triggers.md) | The person who checked in the changes. | The person who checked in the changes. |
 | In Git or TFVC by the [Scheduled triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` |
 | Because you clicked the **Queue build** button | You | You |
+
+::: moniker range="azure-devops"
+
+## Ask Copilot to generate a stage with a condition based on variable values
+
+Use [Copilot](/copilot/) to generate a stage with a condition determined by the value of a variable.  
+
+This example prompt defines a stage that runs when `Agent.JobStatus` indicates that the previous stage ran successfully:
+
+> Create a new Azure DevOps stage that only runs when `Agent.JobStatus` is `Succeeded` or `SucceededWithIssues`.
+
+You can customize the prompt to use values that meet your requirements. For example, you can ask for help creating a stage that only runs when a pipeline fails. 
+
+> [!NOTE]
+> GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
+
+::: moniker-end

@@ -1,13 +1,14 @@
 var apiwriter = require('apiwriter');
 
-/* When running with OnPrem, ensure that Basic Auth is set up in the virtual directory itself.
+/* When running with OnPrem, ensure that Service Principal authentication is set up.
  * Set these environment variables when running writer tool for plans.js 
  * set cfgApisUrl=http://localhost:8080/tfs/DefaultCollection/agile/_apis
- * set cfgUserName=<Domain\UserName>
- * set cfgPassword=<PasswordInPlainText>
+ * set cfgServicePrincipalId=<ServicePrincipalId>
+ * set cfgServicePrincipalKey=<ServicePrincipalKey>
+ * set cfgTenantId=<TenantId>
  * set cfgApiVersion=3.0-preview.1
  * set cfgScript=plans.js
- * set cfgScriptPath =../../Content.VS/vscom/integrate/api/_scripts/3.0
+ * set cfgScriptPath=../../Content.VS/vscom/integrate/api/_scripts/3.0
  */
 
 exports.getContext = function () {

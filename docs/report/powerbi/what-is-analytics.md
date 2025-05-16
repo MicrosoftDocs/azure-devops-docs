@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/07/2022
 ---
 
@@ -34,17 +34,6 @@ Specifically, Analytics provides you with insights about your Azure DevOps proje
 
 ::: moniker-end
 
-
-::: moniker range="azure-devops-2019"
-
-
-> [!div class="checklist"]  
-> - Analytics widgets that you can add to your dashboards
-> - Custom reports you can create using Power BI 
-> - Custom reports you can create using OData queries 
-> - Support to develop and add your custom Analytics widgets you can add to dashboards  
-
-::: moniker-end
  
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
@@ -53,7 +42,6 @@ Specifically, Analytics provides you with insights about your Azure DevOps proje
 Analytics is generally available for Azure DevOps Service and Azure DevOps Server 2020 and later versions. It is in preview for Azure DevOps Server 2019. The service provides a concise data model over Azure DevOps. 
 
 Data available via the Analytics service depends on your version and platform.   For specifics, read [Data available in Analytics](./data-available-in-analytics.md) and [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
-
 
 ::: moniker range="azure-devops"
 
@@ -67,12 +55,6 @@ Analytics is enabled for all projects on new project collections and automatical
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-Once you've [enabled or installed Analytics](../dashboards/analytics-extension.md), the service populates itself with all available Azure DevOps data. Once populated, it updates itself as data changes occur. For more information, read [Data available in Analytics](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
-
-::: moniker-end
-
 ## Dashboard widgets
 
 You can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). We provide several [widgets based on Analytics](../dashboards/analytics-widgets.md). These widgets take advantage of the power of Analytics. Widgets provide the easiest way to get insights from your data. 
@@ -83,13 +65,11 @@ For example, the Velocity widget shown in the following image provides insights 
 
 Here, the Velocity widget shows that this team has a history of closing stories late. It also shows a discrepancy between planned and completed work across all the sprints displayed. The team can drill into the data to determine the root causes. After implementing new practices, the team can use the Velocity widget to track their effectiveness.
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 Check out [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget) for a step-by-step guide to get started with the Velocity widget.
 
 ::: moniker-end
-
-If you want to develop your own widget based on Analytics, see [Create an Analytics widget](../extend-analytics/example-analytics-widget.md).
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -104,7 +84,6 @@ Work tracking in-context reports are now based on Analytics data. These reports 
 - [Test failures report](../../pipelines/test/test-analytics.md#test-failures)
 
 Also, you can add rollup columns to product and portfolio backlogs that provide progress bars, counts of work items, or sums of selected fields. For details, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md). 
-
 
 ::: moniker-end
 
@@ -144,7 +123,6 @@ Custom fields and custom work item types are automatically added to the Analytic
 
 > [!div class="nextstepaction"]
 > [Data available in Analytics](./data-available-in-analytics.md) 
-
 
 ## Related articles 
 

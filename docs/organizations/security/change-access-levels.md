@@ -27,9 +27,11 @@ For a simplified overview of the permissions that are assigned to the most commo
 
 ## Prerequisites
 
-- **Permissions**: Be a member of the [**Project Administrators** group](change-project-level-permissions.md). 
-* **Group membership**: To manage access for a large group of users, create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add users to those groups.
-* **Project access**: Ensure users are [added to the project](add-users-team-project.md).
+| Category | Requirements |
+|-------------|-------------|
+| **Permissions** | Member of the [**Project Administrators** group](change-project-level-permissions.md). |
+| **Group membership** | To manage access for a large group of users: Create either a [Windows, Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add users to those groups. |
+| **Project access** | Ensure users are [members of the project](add-users-team-project.md). |
 
 ## Open access levels
 
@@ -45,7 +47,7 @@ You can manage access levels for the collections defined on the application tier
 
 Changes you make to the access level settings take effect immediately.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Select the access level you want to manage.
 
@@ -60,8 +62,6 @@ Changes you make to the access level settings take effect immediately.
 2. Choose **Save changes**. 
 
 ::: moniker-end
-
-
 
 ## Change the access level for a user or group 
 
@@ -81,12 +81,10 @@ Make sure the default access level is the same as the access you're licensed for
 
 You can set an access level from its page. Choose **Set as default access level** as shown.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ![Screenshot of Stakeholder access level, set as default.](media/change-access-levels/set-stakeholder-as-default-2019.png)
 ::: moniker-end
-
-
 
 > [!IMPORTANT]  
 > Service accounts get added to the default access level. If you set Stakeholder as the default access level, you must add the Azure DevOps service accounts to the Basic or an advanced access level group.

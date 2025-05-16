@@ -3,9 +3,10 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 11/25/2024
+ms.date: 01/13/2025
 ---
 
-- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
-- **Permissions**: 
-  - Be a member of the **Project Administrators** security group.
+| Category | Requirements |
+|--------------|-------------|
+|**Project access**| [Project member](../../organizations/security/add-users-team-project.md).|
+|**Permissions**| Member of the **Project Administrators** security group.|

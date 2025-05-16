@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 09/05/2024
+ms.date: 09/10/2024
 ---
 
 # Work tracking, process, and project limits
@@ -83,7 +83,7 @@ When you work with teams, work item tags, backlogs, and boards, the following op
 | Team Dashboards | 500 per team. Specific to the team and used to track team-specific metrics and data. |
 | Teams | 5,000 per project |
 | Work item tags | 150,000 tag definitions per organization or collection |
-| Delivery plans per project | 1,000 |
+| Delivery plans per project | 1,500 |
 | Templates per work item type | 100 |
 
 Each backlog can display up to 10,000 work items. This limit applies to what the backlog can display, not to the number of work items you can define, as there's no specific limit. If your backlog exceeds this limit, consider adding a team and moving some work items to the new team's backlog.
@@ -94,7 +94,6 @@ Each backlog can display up to 10,000 work items. This limit applies to what the
 > - **Consolidate dashboards:** Combine similar dashboards to reduce the total number. This can be done by adding multiple widgets to a single dashboard.
 > - **Archive old dashboards:** If certain dashboards are no longer needed but you want to keep the data, consider exporting the data and archiving the dashboards.
 > - **Use the Object Limit Tracker feature:** Provides real-time visibility into resource usage, including dashboards. This feature can help you [proactively manage your limits and avoid potential issues](https://devblogs.microsoft.com/devops/introducing-object-limit-tracker-in-azure-devops/).
-
 
 #### Other notes:
 
@@ -128,6 +127,15 @@ Each backlog can display up to 999 work items. If your backlog exceeds this limi
 For the On-premises XML process model, you can modify the backlog and Taskboard limits by editing the `ProcessConfiguration.xml` file. For details, see [Process configuration XML element reference](../../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end
+
+## GitHub integration
+
+If you [integrate your project with GitHub](../../../cross-service/github-integration.md), the following limits apply.
+
+| Integration |  Limit |
+|--------|-------|
+| Azure Boards: Connected GitHub repositories (UX) | 1,000 repositories per connection. |
+| Azure Boards: Connected GitHub repositories (API) | 2,000 repositories per connection. [Learn more](/rest/api/azure/devops/wit/github-connections/get-github-connections?view=azure-devops-rest-7.2&tabs=HTTP&preserve-view=true). |
 
 ## Projects
 
@@ -172,7 +180,7 @@ For other restrictions and conformance requirements of the Hosted XML process mo
 > For the Hosted XML process model, you can define approximately 10,000 items across all global lists specified in all WITs.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 The following table lists the maximum number of objects you can define for the Inheritance and On-premises XML process models. While these limits are hard limits, practical limits might also apply.
 

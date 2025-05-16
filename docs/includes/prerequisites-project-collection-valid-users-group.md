@@ -2,7 +2,9 @@
 ms.topic: include
 ---
 
-**Permissions**: Be a member of the **Project Collection Valid Users** group. Project members are automatically members of this group.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the **Project Collection Valid Users** group. Project members are automatically members of this group.|
 
 ::: moniker range="azure-devops"  
 > [!NOTE]  

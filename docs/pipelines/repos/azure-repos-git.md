@@ -11,15 +11,13 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-
 Azure Pipelines can automatically build and validate every pull request and commit to your Azure Repos Git repository.
 
 ## Choose a repository to build
 
 # [YAML](#tab/yaml/)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You create a new pipeline by first selecting a repository and then a YAML file in that repository. The repository in which the YAML file is present is called `self` repository. By default, this is the repository that your pipeline builds. 
 
@@ -30,8 +28,6 @@ You create a new pipeline by first selecting a repository and then a YAML file i
 You can later configure your pipeline to check out a different repository or multiple repositories. To learn how to do this, see [multi-repo checkout](multi-repo-checkout.md).
 
 ::: moniker-end
-
-
 
 # [Classic](#tab/classic/)
 
@@ -68,8 +64,6 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 
 [!INCLUDE [ci-triggers](includes/ci-triggers3.md)]
 
-
-
 # [Classic](#tab/classic/)
 
 [!INCLUDE [ci-triggers](includes/ci-triggers4.md)]
@@ -80,13 +74,7 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 
 ### Skipping CI for individual pushes
 
-::: moniker range="=azure-devops-2019"
-
-You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `***NO_CI***` in the message of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push.
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `[skip ci]` in the message or description of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push. You can also use any of the following variations.
 
@@ -163,7 +151,7 @@ If your Azure Repos Git repository is in a different project than your pipeline,
 
 ::: moniker-end
 
-:::moniker range=">azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 For more information on **Limit job authorization scope**, see [Understand job access tokens](../process/access-tokens.md).
 

@@ -41,19 +41,11 @@ To effectively manage an organization, ensure the following tasks are complete:
 
 Once you create your organization, you can [connect to your projects](../../organizations/projects/connect-to-projects.md) with tools like Xcode, Eclipse, or Visual Studio, and then add code to your project.
 
-Some clients, like Xcode, Git, and NuGet, require basic credentials (a username and password) to access Azure DevOps. To connect these clients to Azure DevOps, you can use one of the following methods:
-
-- **Personal Access Tokens (PATs)**: To authenticate your identity, create PATs. You can use a credential manager to create, store, and secure your tokens, so you don't have to reenter them every time you make updates. If you prefer not to use a credential manager, you can [create PATs manually](use-personal-access-tokens-to-authenticate.md).
-
-- **OAuth**: Use OAuth to generate tokens for accessing Azure DevOps. OAuth tokens provide a more secure and flexible way to authenticate, especially for applications that require access to multiple resources.
-
-- **SSH Keys**: For Git operations, you can use SSH keys to authenticate. SSH keys provide a secure way to connect to your repositories without needing to enter a username and password.
-
-Choose the method that best fits your security and workflow requirements.
+Some clients, like Xcode, Git, and NuGet, require basic credentials to access Azure DevOps. To connect these clients to Azure DevOps, look into the [available authentication methods](../../integrate/get-started/authentication/authentication-guidance.md) and choose the method that best fits your security and workflow requirements.
 
 <a id="add-users"></a>
 
-##  Manage access to your organization
+## Manage access to your organization
 
 Manage access to your organization by adding users. Manage use of features and tasks with access levels and permissions for each user.
 
@@ -82,7 +74,7 @@ If you don't manage your user base with Microsoft Entra ID, as described in the 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot shows Web portal, Project Overview page, Invite new users dialog box.](media/org-manage/invite-members-dialog.png)
   
-   Unless users are granted an access level directly or through a group rule, they get assigned the best available access level. If there are no more free Basic slots available, the user gets added as a Stakeholder. You can change the access level later via the **Organization settings** > **Users** page.
+   Unless users are granted an access level directly or through a group rule, they get assigned the best available access level. If there are no more free Basic slots available, the user gets added with Stakeholder access. You can change the access level later via the **Organization settings** > **Users** page.
 
 > [!TIP]
 > If you need more than the free users and services included with your organization,

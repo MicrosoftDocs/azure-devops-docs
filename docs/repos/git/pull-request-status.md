@@ -10,7 +10,6 @@ monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
 
-
 # Customize and extend pull request workflows with pull request status
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -19,7 +18,9 @@ ms.subservice: azure-devops-repos-git
 [Branch policies](branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
 These policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. Optionally, pull requests can be blocked until the external service approves the change.
 
-[!INCLUDE [note-tfs-2018.2-update](includes/note-tfs-2018.2-update.md)]  
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 Integrating into the PR workflow involves a few different concepts:
 
@@ -86,7 +87,7 @@ When the source branch in a PR changes, a new "iteration" is created to track th
 Services that evaluate code changes will want to post new status on each iteration of a PR. 
 Posting status to a specific iteration of a PR guarantees that status applies only to the code that was evaluated and none of the future updates. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 > [!NOTE]
 > If the PR being created contains more than 100,000 modified files, then, for performance and stability reasons, that PR won't support iterations. This means any additional change to such PR will be included but no new iteration will be created for that change. In addition any attempt to create a status for a non-existent iteration will return an error.
 ::: moniker-end

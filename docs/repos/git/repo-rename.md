@@ -10,7 +10,6 @@ ms.date: 02/23/2022
 ms.subservice: azure-devops-repos-git
 ---
 
-
 #  Rename a Git repository in your project
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -20,17 +19,13 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ## Prerequisites
 
-- To rename a repository, you must have [Rename Repository permissions](set-git-repository-permissions.md#git-repository) on your Git repo.
-::: moniker range=">= azure-devops"
-- If you want to use **az repos update** command to rename a repository, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
-::: moniker-end
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## Rename the repository
 
-
 #### [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. From the web portal, select **Repos**, **Files**.
 
@@ -50,16 +45,12 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ::: moniker-end
 
-
-
-
 <a name="repos-rename"></a>
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range="azure-devops" 
 [!INCLUDE [az-repos-update](./includes/azure-repos-update.md)]
-
 
 ::: moniker-end
 
@@ -77,7 +68,7 @@ Each member of your team must update their local Git repos to continue connectin
 
 ### Get the new URL for the repo
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Select **Repos**, **Files**.
 
@@ -88,9 +79,6 @@ Each member of your team must update their local Git repos to continue connectin
    ![Retrieve the clone URL](./media/clone-repo/clone-repo.png)
 
 ::: moniker-end
-
-
-
 
 ### Update your remote in Visual Studio
 
@@ -135,7 +123,6 @@ To update your remote from Visual Studio Team Explorer:
 A: Yes
 
 <!-- ENDSECTION -->
-
 
 ## Related articles
 

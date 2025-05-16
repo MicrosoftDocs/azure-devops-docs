@@ -9,7 +9,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 11/11/2024
+ms.date: 02/26/2025
 ---
 
 # Access, export, and filter audit logs
@@ -36,7 +36,7 @@ These logs provide a comprehensive record of activities, helping you monitor and
 Audit events are stored for 90 days before they're deleted. To retain the data for longer, you can back up audit events to an external location.
 
 > [!NOTE]
-> Auditing isn't available for on-premises deployments of Azure DevOps Server. However, you can connect an [Auditing stream](auditing-streaming.md) from an Azure DevOps Services instance to an on-premises or cloud-based instance of Splunk. Ensure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
+> Auditing isn't available for on-premises deployments of Azure DevOps. However, you can connect an [Auditing stream](auditing-streaming.md) from an Azure DevOps Services instance to an on-premises or cloud-based instance of Splunk. Ensure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
 ### Prerequisites
 
@@ -87,7 +87,7 @@ Audit events are stored for 90 days before they're deleted. To retain the data f
 
    ![Screenshot of highlighted Permissions tab.](media/azure-devops-auditing/select-permissions-preview.png)  
 
-5. Set **View audit log** to **allow**, and then select **Save changes**.
+5. Set **View audit log** to **Allow**, and then select **Save changes**.
 
    ![Screenshot of Auditing access permission preview.](media/azure-devops-auditing/audit-log-permission-red-box-preview.png)
 
@@ -151,7 +151,7 @@ As you review the audit events, the *Category* and *Area* columns can help you f
 
 #### List of events
 
-We strive to add new auditing events on a monthly basis. If there's an event you would like to see tracked that isn't currently available, share your suggestion with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21).
+We strive to add new auditing events on a monthly basis. If there's an event you'd like to see tracked that isn't currently available, share your suggestion with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21).
 
 For a comprehensive list of all events that can be emitted through the Auditing feature, see the [Auditing Events List](/azure/devops/organizations/audit/auditing-events).
 

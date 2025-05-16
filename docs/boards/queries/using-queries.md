@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/17/2024
+ms.date: 05/06/2025
 ---
 
 # Define a work item query
@@ -30,7 +30,7 @@ You can create queries from the web portal or from a supported client, such as V
 
 ::: moniker-end
 
-Check out our recommended [best practices](#best-practices), later in this article.
+Check out our recommended [best practices](#best-practices) later in this article.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ From the Query Editor, select the filter to jump to an article with sample queri
 Along with the query filters, you can [interactively apply filters to query results](../backlogs/filter-backlogs-boards-plans.md).
 
 > [!NOTE] 
-> Managed queries don't support proximity searches, however semantic searches do. Semantic searches also support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Functional work item search](../../project/search/functional-work-item-search.md).
+> Managed queries don't support proximity searches but semantic searches do. Semantic searches also support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Functional work item search](../../project/search/functional-work-item-search.md).
 
 ---
 :::row:::
@@ -56,7 +56,7 @@ Along with the query filters, you can [interactively apply filters to query resu
 ---
 :::row:::
    :::column span="1":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - [Compare fields](./query-field-value.md) 
       - [Key words](./titles-ids-descriptions.md)  
       - [Linked work items](./linking-attachments.md)  
@@ -70,7 +70,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       
    :::column-end::: 
    :::column span="1":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - [Blank or empty fields](./titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
       - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
       - [Identity searches](./query-by-workflow-changes.md#me) 
@@ -82,7 +82,7 @@ Along with the query filters, you can [interactively apply filters to query resu
       
    :::column-end:::
    :::column span="2":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - [[Any]](titles-ids-descriptions.md)
       - [@Me](query-by-workflow-changes.md)
       - [@Today](query-by-date-or-current-iteration.md) 
@@ -165,25 +165,30 @@ New queries scope to the current project by default. But, you can create queries
 
 To list work items defined in two or more projects, checkmark **Query across projects**. For example, the following query finds all features created in all projects within the last 30 days.
 
-::: moniker range="< azure-devops"
-
-:::image type="content" source="media/using-queries/portal-query-across-projects.png" alt-text="Screenshot of Query Editor with Query across projects checked.":::
-
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 :::image type="content" source="media/using-queries/query-across-projects-new-boards-hubs.png" alt-text="Screenshot of Query across project selections.":::
 
 ::: moniker-end
 
-With the **Query across projects** checked, you can add the **Team Project** field to filter to a select number of projects.   
-
 ::: moniker range="< azure-devops"
 
-:::image type="content" source="media/using-queries/portal-query-across-two-projects.png" alt-text="Screenshot of Query Editor with Team Project and other fields added to filter.":::
+:::image type="content" source="media/using-queries/portal-query-across-projects.png" alt-text="Screenshot of Query Editor with Query across projects checked.":::
 
 ::: moniker-end
+
+> [!NOTE]  
+> - Separate multiple project names using the list separator defined by the regional settings of your client computer, such as a comma `,`.  
+> - When you use the 'State' field in a query across multiple projects, the displayed values are limited to items defined in the default project. If you're querying across projects, you might not see all possible state values from each project, but only values from the default project.
+> For example, if you have three projects—Project A, Project B, and Project C—and only Project A has a state that is called 'In Review,' while Projects B and C have different states, the query only displays the states defined in Project A.
+
+When you create queries across multiple projects, the availability of fields in the **Field** drop-down menu depends on whether the **Query across projects** option is enabled. Keep the following key behaviors in mind:
+
+- The **Team Project** field becomes available only after you check **Query across projects**.
+- When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.
+- When **Query across projects** is unchecked, only fields from work item types defined in the current project appear in the **Field** drop-down menu.
+
+With the **Query across projects** checked, you can add the **Team Project** field to filter to a select number of projects.
 
 ::: moniker range="azure-devops"
 
@@ -191,18 +196,16 @@ With the **Query across projects** checked, you can add the **Team Project** fie
 
 ::: moniker-end
 
-> [!NOTE]
-> - Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma `,`. 
-> - When you use the 'State' field in a query across multiple projects, the displayed values are limited to those defined in the default project. This means that if you're querying across projects, you might not see all possible state values from each project, but only those from the project that is set as the default. For example, if you have three projects—Project A, Project B, and Project C—and only Project A has a state called 'In Review,' while Projects B and C have different states, querying across these projects only shows the states defined in Project A.
+::: moniker range="< azure-devops"
 
-- The **Team Project** field is available only after you check  **Query across projects**. 
-- When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.
-- When **Query across projects** is unchecked, only those fields from those work item types, as defined in the current project, appear in the **Field** drop-down menu.   
+:::image type="content" source="media/using-queries/portal-query-across-two-projects.png" alt-text="Screenshot of Query Editor with Team Project and other fields added to filter.":::
+
+::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#view-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#view-work-items) instead of this legacy view, which is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 To list work items defined in two or more projects, change the clause for the **Team Project** using the **In** operator, and enter the names of the projects to search in. For example, the following query finds work items defined in the *Fabrikam Fiber* and *Design Agile* projects.  
 
@@ -247,7 +250,7 @@ For example, search for all work items assigned to you by specifying the **Assig
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#view-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#view-work-items) instead of this legacy view, which is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 Select **Click here to add a clause** to add another clause at the end of the query, and then select the **Field**, **Operator**, and **Value** for that clause.  
 
@@ -291,13 +294,11 @@ Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of W
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/view-run-queries/tree-query-new-exp.png" alt-text="Screenshot of Query Results List showing a Tree Query.":::
 
 ::: moniker-end  
-
-  
 
 Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
 
@@ -306,13 +307,13 @@ Define the filter criteria for both parent and child work items. To find linked 
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#view-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#view-work-items) instead of this legacy view, which is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
 
 :::image type="content" source="media/using-queries/tree-backlog-te.png" alt-text="Screenshot, Query Editor, Tree Query, Team Explorer. ":::
 
-* * *
+---
 
 ## Use direct links to view dependencies
 
@@ -335,7 +336,7 @@ Filter your first-tier list of work items by choosing one of these options:
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#view-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#view-work-items) instead of this legacy view, which is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
 
 :::image type="content" source="media/using-queries/direct-links-te.png" alt-text="Screenshot, Query Editor, Direct Links Query, Team Explorer.":::
 
@@ -387,7 +388,6 @@ You can also group several grouped clauses. Check the boxes of each clause. Then
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Web portal, Query Editor, Group multiple query clauses.](media/using-queries/multiple-clauses.png)
 
-
 If your query results don't return expected results, do the following steps: 
 
 - Make sure that each clause is defined as you intended.  
@@ -401,7 +401,7 @@ If your query results don't return expected results, do the following steps:
 
 ### Ungroup a clause
 
-To ungroup a clause, select the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
+To ungroup a clause, select the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungrouped clauses icon for the grouped clause. 
 
 ## Set default column width in query results
 
@@ -426,11 +426,11 @@ For more information, see [Add widgets to a dashboard](../../report/dashboards/a
 
 ### View query results widget with Parent titles
 
-You can view the results of a query with the **Parent** title displayed. To do so, perform these steps: 
-1. Create the query that filters the work items of interest. The query can be a flat-list, tree, or direct-links query. 
-1.  Add the **Parent** field as a column. 
-1. Save the query as a Shared query or Team favorite. 
-1. Add the **Query results widget** to your dashboard and configure the query. Make sure the Parent field is set to display. 
+To view the results of a query with the **Parent** title displayed, do the following steps: 
+1. Create a query that filters the work items of interest. The query can be a flat-list, tree, or direct-links query. 
+2. Add the **Parent** field as a column. While the **Parent** field can be included, the default behavior might only show the ID of the parent work item. To ensure that the name displays alongside the ID, combine the **Work Item Type** and **Parent** fields with the **Title** field in the query structure. 
+3. Save the query as a Shared query or Team favorite. 
+4. Add the **Query results widget** to your dashboard and configure the query. Make sure the Parent field is set to display. 
 
 The following image illustrates a query results widget that displays the **Parent** field. 
 
@@ -442,7 +442,7 @@ The following image illustrates a query results widget that displays the **Paren
 
 A query hyperlink uses the Work Item Query Language (WIQL), which resembles Transact-SQL. For more information, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
 > [!NOTE]    
-> Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.   
+> Most browsers enforce a limit of between 2,000 and 2,083 characters for a URL string.   
 ::: moniker range="azure-devops"  
 
 ### Query hyperlink syntax
@@ -470,7 +470,7 @@ SELECT [System.ID], [System.Title]
 ``` 
 
 > [!NOTE]  
-> The WIQL length must not exceed 32K characters for Azure Boards queries.
+> The WIQL length must not exceed 32-K characters for Azure Boards queries.
  
 ::: moniker-end  
 

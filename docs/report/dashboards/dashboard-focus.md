@@ -12,7 +12,6 @@ ai-usage: ai-assisted
 ms.date: 08/19/2024
 ---
 
-
 # Design effective dashboards in Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -38,20 +37,11 @@ The focus of your dashboard determines whether you create a team or project dash
 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2020"
+ 
 
-The following table lists several types of dashboards you might want to create.  
+## Prerequisites
 
-| **Focus** | **Description** | 
-|-----------|-----------------|
-|[**Stakeholder**](#stakeholder-dashboard)|Share team and organizational goals, information, links to work item templates to create bugs or new feature requests, and more. |
-|[**Personal**](#personal-dashboard)|Help each team member to focus on their backlog and current work.| 
-|[**Team**](#team-dashboard)|Provide information for a team to monitor status, track progress, identify bottlenecks, and ensure backlog items are well defined. |
-|[**Sprint**](#sprint-dashboard)|Review in daily stand ups to ensure the team is on track to meet sprint goals and address any issues that affect those goals.|
-|[**Release**](#release-dashboard)|Monitor status and track progress toward a major release, which might involve contributions from several teams. |
-|[**Test and deploy**](#test-deploy-dashboard)| Monitor continuous integration, builds, deployments, and releases. | 
-
-::: moniker-end 
+[!INCLUDE [analytics-prerequisites](../includes/analytics-prerequisites.md)]
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -72,13 +62,7 @@ Once you choose your dashboard type, [create a dashboard](dashboards.md). You ca
 Once you choose your dashboard type, [create a dashboard](dashboards.md).
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2020"
-
-## Configure widgets 
-
-When a team gets created, a default dashboard named *Overview* also gets created without any widgets. This default dashboard is always a **Team** dashboard that you can edit and rename. Review the [Out Of Box widget catalog](widget-catalog.md) to determine which widgets are configurable for a single team or multiple teams.
-
-::: moniker-end 
+ 
 
 ## Share the dashboard with your team and stakeholders
 

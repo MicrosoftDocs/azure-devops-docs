@@ -24,34 +24,12 @@ To address reviewers' changes, and respond to and resolve review comments, see [
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
- 
-- To complete your PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project the PR is in.
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
-- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-
-- To view or review PRs, you must have **Basic** or higher access to the Azure DevOps project.
-
-- If you aren't a member of the project you want to contribute to, [get added](../../organizations/accounts/add-organization-users.md).
-
-  > [!NOTE]
-  > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To complete a PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
-- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-::: moniker-end
-
-
-
-- For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
+For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker range="azure-devops"
-- In Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+In Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 ::: moniker-end
 
 ## Check merge changes
@@ -139,9 +117,7 @@ a6e4380e-9f38-4aa5-863c-0fc496027362  Work item linking                         
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-
 ***
-
 
 <a name="complete-the-pull-request"></a>
 
@@ -185,7 +161,7 @@ After you resolve any merge conflicts, and the PR meets all branch policies and 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 
 1. Select **Complete** at upper right to complete the PR. Or, select the dropdown arrow next to the **Complete** button, and select one of the following options:
 
@@ -213,14 +189,12 @@ After you resolve any merge conflicts, and the PR meets all branch policies and 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 When you complete the merge, any [linked work items](pull-requests.md#link-work-items) automatically update to show the PR completion.
 
 ![Screenshot of linked work items showing completed P Rs.](./media/complete-pull-requests/pr-workitem-complete.png)
 
 ::: moniker-end
-
-
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -319,8 +293,7 @@ az repos pr update --id 21 --status completed --delete-source-branch true --tran
 
 ***
 
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### Rebase during PR completion
 
@@ -338,23 +311,17 @@ In all these cases, you can still rebase your branch locally and then push upstr
 
 In some cases, a PR has more than one true merge base, and this situation can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge bases](about-pull-requests.md#multiple-merge-bases). 
 
-
-
-
 ## Resolve merge conflicts
 
 File changes in your branch can conflict with changes in another branch. When it isn't clear how to merge changes, Git shows the files that conflict on the PR's **Overview** page. You must resolve any *merge conflicts* between the PR branch and the target branch before you can merge a PR or set the PR to autocomplete. For instructions on resolving merge conflicts, see [Resolve merge conflicts](merging.md).
 
 ![Screenshot that shows merge conflicts on the Overview tab of a P R.](./media/complete-pull-requests/merge-conflict.png)
 
-
-
 <a name="complete-automatically"></a>
 
 ## Set a pull request to autocomplete
 
 # [Browser](#tab/browser)
-
 
 Select **Set auto-complete** from the **Complete** dropdown list to complete and merge the PR changes as soon as conditions satisfy all [branch policies](branch-policies.md). When the PR is completed, you receive an email notification. If a conflict or error prevents PR completion, email notifies you of the issue.
 
@@ -410,9 +377,7 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-
 ***
-
 
 <a name="abandon-the-pr"></a>
 <a name="abandon-a-pr"></a>
@@ -465,7 +430,6 @@ To undo the changes from a PR, follow these steps. For more information, see [Un
 
 > [!NOTE]
 > The branch created during this revert has a single commit that reverts all the file changes from the original PR. The branch doesn't contain a reverted commit for each of the commits in the original PR.
-
 
 ## Next steps
 

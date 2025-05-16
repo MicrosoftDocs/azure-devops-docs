@@ -27,7 +27,7 @@ In Azure Pipelines, pools are scoped to the entire organization; so you can shar
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 In Azure DevOps Server, agent pools are scoped to the entire server; so you can share the agent machines across projects and collections. 
 
@@ -40,7 +40,7 @@ In Azure DevOps Server, agent pools are scoped to the entire server; so you can 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 
@@ -48,7 +48,7 @@ If you are an organization administrator, you create and manage agent pools from
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 If you are a project team member, you create and manage agent pools from the agent pools tab in project settings.
 
@@ -77,7 +77,7 @@ By default, all contributors in a project are members of the **User** role on ho
 
 # [YAML](#tab/yaml)
 
-:::moniker range=">=azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 To choose a Microsoft-hosted agent from the Azure Pipelines pool in your Azure DevOps Services YAML pipeline, specify the name of the image, using the **YAML VM Image Label** from [this](hosted.md#use-a-microsoft-hosted-agent) table.
 
@@ -108,13 +108,13 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 
 #### [Azure Pipelines UI](#tab/browser)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 If you are a project team member, you create and manage agent pools from the agent pools tab in project settings.
 ::: moniker-end
 
@@ -323,21 +323,13 @@ Here are some typical situations when you might want to create self-hosted agent
 * You want to share a set of agent machines with multiple projects, but not all of them. First, navigate to the settings for one of the projects, add an agent pool, and select the option to create a **new** pool at the organization level. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing agent pool from the organization**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
 ::: moniker-end
 
-::: moniker range=">azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 * You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you've got the permissions to create pools in your project by selecting **Security** on the agent pools page in your **Project settings**. You must have **Administrator** role to be able to create new pools. Next, select **Add pool** and select the option to create a **new** pool. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
 * You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First, make sure you've got the permissions to create pools in your project by selecting **Security** on the agent pools page in your **Project collection settings**. Next create a **New agent pool** and select the option to **Auto-provision this agent pool in all projects** while creating the pool. This setting ensures all projects have access to this agent pool. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
 * You want to share a set of agent machines with multiple projects, but not all of them. First, navigate to the settings for one of the projects, add an agent pool, and select the option to create a **new** pool at the organization level. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing agent pool from the organization**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-* You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New project agent pool** in your project settings and select the option to **Create a new organization agent pool**. As a result, both an organization and project-level agent pool will be created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
-
-* You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New organization agent pool** in your admin settings and select the option to **Auto-provision corresponding project agent pools in all projects** while creating the pool. This setting ensures all projects have a pool pointing to the organization agent pool. The system creates a pool for existing projects, and in the future it will do so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
-
-* You want to share a set of agent machines with multiple projects, but not all of them. First create a project agent pool in one of the projects and select the option to **Create a new organization agent pool** while creating that pool. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing organization agent pool**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
 ::: moniker-end
 
 <h2 id="security">Security of agent pools</h2>
@@ -381,12 +373,6 @@ You can choose from the following options:
 :::image type="content" source="media/agent-pools-pipeline-permissions.png" alt-text="Screenshot of the pipeline permissions user experience for an agent pool.":::
 
 Pipeline permissions for the *Azure Pipelines* agent pool cannot be configured, as the pool is accessible, by default, to all pipelines.
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-The **All agent pools** node in the Agent pools tab is used to control the security of _all_ project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from those of the 'All agent pools' node. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
 
 ::: moniker-end
 

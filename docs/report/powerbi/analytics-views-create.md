@@ -7,8 +7,8 @@ ms.custom: analytics-views, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
-ms.date: 09/24/2024
+monikerRange: "<=azure-devops"
+ms.date: 03/12/2025
 #customer intent: As a team member, I want to use Power BI to generate reports from Analytics views in Azure DevOps.
 ---
 
@@ -23,6 +23,8 @@ You can create a custom Analytics view to define the filtered set of data and ot
 You can create custom views in the web portal for Azure DevOps. Then load the view using the [Power BI Data Connector](data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team.
 
 [!INCLUDE [disabled board note](../includes/boards-disabled.md)]
+
+## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
@@ -42,20 +44,19 @@ To make a view into a favorite, hover over the view and choose the star icon: ::
 
 To open a dialog to create a custom view, select :::image type="icon" source="../media/icons/blue-plus.png"::: **New view**. Complete the forms provided in each tab to fully define the filter criteria for shaping the data you want to view in Power BI.
 
-Complete the following steps to create a custom view.
-
+To create a custom view, do the following steps:
 1. [Name the view and choose a sharing option](#name-the-view-and-choose-a-sharing-option)
-1. [Specify work item filters](#specify-wi-filters)
-1. [Select the view's fields](#select-fields)
-1. [Choose the amount of historical data contained within the view](#select-trend-data)
-1. [Verify and save the view](#verify-and-save)
+2. [Specify work item filters](#specify-wi-filters)
+3. [Select the view's fields](#select-fields)
+4. [Choose the amount of historical data contained within the view](#select-trend-data)
+5. [Verify and save the view](#verify-and-save)
 
 > [!NOTE]
 > The board fields aren't available to add as filters or selection to view at this time. These fields include **Board Column**, **Board Column Done**, and **Board Lane**. A feature request is defined to add them, [Analytics view - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html).
 
 <a id="name-the-view-and-choose-a-sharing-option"></a>
 
-### Name the view and choose a sharing option
+### 1. Name the view and choose a sharing option
 
 Enter a name for the view and provide a description. To allow others to view and use the Analytics view, choose the **Shared** option. With shared views, you can set permissions as to who can view, edit, and delete the view as described in [Manage Analytics views](analytics-views-manage.md).
 
@@ -63,21 +64,21 @@ Enter a name for the view and provide a description. To allow others to view and
 
 <a id="specify-wi-filters"></a>
 
-### Specify work item filters
+### 2. Specify work item filters
 
 Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data. For a description of each available field, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md).
 
 :::image type="content" source="media/editable-views/work-items-default.png" alt-text="Screenshot shows the New View Work items tab where you can specify Work items filters." lightbox="media/editable-views/work-items-default.png":::
 
 > [!TIP]
-> Scope your data to generate reports that quickly refresh. For large datasets, refreshing non-filtered views can fail. To narrow your results, add the right set of filters. The more filters you add, the faster the view loads and refreshes in Power BI.
+> Scope your data to generate reports that quickly refresh. For large datasets, refreshing nonfiltered views can fail. To narrow your results, add the right set of filters. The more filters you add, the faster the view loads and refreshes in Power BI.
 
 - **Add Teams or Area Path filters**
 
   By default, a view includes all the teams defined in the current project. You can specifically select teams in the current project or add other projects defined in the organization to the filter.
 
   > [!IMPORTANT]
-  > We recommend a limit of 500 projects per Analytics view. If you need more than 500 projects, you can create additional Analytics views and distribute the projects between the views.
+  > We recommend a limit of 500 projects per Analytics view. If you need more than 500 projects, you can create more Analytics views and distribute the projects between the views.
 
   You can change the selected teams for the current project or add other projects to the filter. You can also change from filtering on teams to area paths. Here's a view filtered by two Fabrikam area paths.
 
@@ -102,7 +103,7 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
 <a id="select-fields"></a>
 
-### Select the fields that appear in the report
+### 3. Select the fields that appear in the report
 
 In the next tab, **Fields**, you can add and remove fields that you use in your report. Choose :::image type="icon" source="../media/icons/blue-plus.png"::: **Add** to add a field. To start with a fresh list, choose **Remove All**.
 
@@ -115,7 +116,7 @@ You can add any custom fields that you add through an inherited process.
 
 <a id="select-trend-data"></a>
 
-### Select trend data options
+### 4. Select trend data options
 
 In the next tab, **History**, choose the options that determine how much history data is available from the view.
 
@@ -152,12 +153,12 @@ You can choose to get a snapshot of every work item for each day, week, or month
 
 > [!NOTE]
 >
-> - Preview rows is a calculated value based on history and granularity and might not match with Power BI.
-> - It is important to understand how filters are applied to historical data. For more information, see [Historical data representation in Analytics](analytics-historical-filtering.md).
+> - Preview rows are a calculated value based on history and granularity and might not match with Power BI.
+> - It's important to understand how filters are applied to historical data. For more information, see [Historical data representation in Analytics](analytics-historical-filtering.md).
 
 <a id="verify-and-save"></a>
 
-### Verify and save the view
+### 5. Verify and save the view
 
 The last step verifies your view by running a test query against the view and validating the filter criteria. Verification time can vary according to the amount of data defined in your view. For example, a view that includes all work item types and specifies **All history** takes more time to verify than a view that includes only bugs and specifies a rolling period of 30 days.
 
@@ -182,10 +183,12 @@ In **Analytics views**, choose any view from the **Favorites** or **All** page t
 
 <a id="q-a">  </a>
 
-## Related articles
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create an active bugs Power BI report with a custom Analytics view](active-bugs-sample-report.md)
+
+## Related articles
 
 - [Manage Analytics views](analytics-views-manage.md) 
 - [Learn about data available from Analytics](data-available-in-analytics.md)

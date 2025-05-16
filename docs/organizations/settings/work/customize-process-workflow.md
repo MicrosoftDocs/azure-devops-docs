@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: how-to
 ms.date: 10/21/2024
 #customer intent: As a team lead or administrator, I want to learn how to customize states in a work item type to optimize our team's workflow.
@@ -58,6 +58,8 @@ Teams should update their board configuration when making the following customiz
 - Add states to the task WIT, which adds columns to the Taskboard.
 - [Track bugs along with tasks](../show-bugs-on-backlog.md), adding states to the bug WIT, which also adds columns to the Taskboard.
 - Add the same states to both task and bug work item types, which updates the status consistently and minimize the number of columns added.
+
+## Prerequisites
 
 [!INCLUDE [prerequisites](../includes/process-prerequisites.md)] 
 
@@ -130,7 +132,7 @@ When you hide or remove a state:
 
 ## Hide or unhide an inherited state
 
-You can hide an inherited state that your team doesn't use in its workflow process. However, you must have at least one state defined for each category.
+You can hide an inherited state that your team doesn't use in its workflow process. However, have at least one state defined for each category.
 
 1. Open the &hellip; context menu for the state you want to hide and choose the **Hide** option.
 

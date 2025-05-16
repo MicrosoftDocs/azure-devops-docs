@@ -1,28 +1,35 @@
 ---
-title: Cache NuGet packages to reduce build time
-description: How to cache NuGet packages in Azure Pipelines
-ms.topic: conceptual
+title: Cache NuGet packages
+description: Learn how to cache NuGet packages in Azure Pipelines
+ms.topic: how-to
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 06/06/2023
-monikerRange: 'azure-devops'
+ms.date: 03/10/2025
+monikerRange: ">= azure-devops-2020"
 "recommendations": "true"
 ---
 
 # Cache NuGet packages
 
-**Azure DevOps Services**
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-With pipeline caching, you can reduce your build time by caching your dependencies to be reused in later runs. In this article, you'll learn how to use the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) to cache and restore your NuGet packages.
+Pipeline caching helps reduce build time by storing dependencies for reuse in future runs. In this article, you learn how to use the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) to cache and restore your NuGet packages.
 
 > [!NOTE]
-> Pipeline caching is supported in agent pool jobs for both YAML and Classic pipelines. However, it is not supported in Classic release pipelines.
+> Pipeline caching is not supported in Classic release pipelines.
+
+## Prerequisites
+
+| **Product**       | **Requirements** |
+|-------------------|------------------|
+| **Azure DevOps**  | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project, you must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).  |
+
 
 ## Lock dependencies
 
-To set up the cache task, we must first lock our project's dependencies and create a **package.lock.json** file. We'll use the hash of the content of this file to generate a unique key for our cache.
+Before setting up the cache task, you need to lock your project's dependencies and generate a **package.lock.json** file. The unique cache key is derived from the hash of the content of this lock file to ensure consistency across builds.
 
-To lock your project's dependencies, set the **RestorePackagesWithLockFile** property in your *csproj* file to **true**. NuGet restore generates a lock file **packages.lock.json** at the root directory of your project. Make sure you check your **packages.lock.json** file into your source code.
+To lock your project's dependencies, add the **RestorePackagesWithLockFile** property to your *csproj* file and set it to **true**. When you run `nuget restore`, it generates a **packages.lock.json** file in your project's root directory. Make sure you check your **packages.lock.json** file into your source code.
 
 ```XML
 <PropertyGroup>
@@ -32,18 +39,18 @@ To lock your project's dependencies, set the **RestorePackagesWithLockFile** pro
 
 ## Cache NuGet packages
 
-We'll need to create a pipeline variable to point to the location of our packages on the agent running the pipeline.
+To cache NuGet packages, define a pipeline variable that points to the location of the packages on the agent running the pipeline.
 
-In this example, the content of the **packages.lock.json** will be hashed to produce a dynamic cache key. This ensures that every time the file is modified, a new cache key is generated.
+In the example below, the content of the **packages.lock.json** is hashed to generate a dynamic cache key. This ensures that whenever the file changes, a new cache key is created.
 
-:::image type="content" source="media/cache-key-hash.png" alt-text="A screenshot showing how the cache key is generated in Azure Pipelines.":::
+:::image type="content" source="media/cache-key-hash.png" alt-text="A screenshot displaying how the cache key is generated in Azure Pipelines." lightbox="media/cache-key-hash.png":::
 
 ```YAML
 variables:
   NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
 
 - task: Cache@2
-  displayName: Cache
+  displayName: Cache v2 task 
   inputs:
     key: 'nuget | "$(Agent.OS)" | **/packages.lock.json,!**/bin/**,!**/obj/**'
     restoreKeys: |
@@ -58,7 +65,7 @@ variables:
 
 ## Restore cache
 
-This task will only run if the `CACHE_RESTORED` variable is false.
+The following task will only run if the `CACHE_RESTORED` variable is **false**. This means that if a cache hit occurs (the packages are already available in the cache), the restore step is skipped to save time and resources. If no cache is found, the restore command runs to download the necessary dependencies.
 
 ```YAML
 - task: NuGetCommand@2
@@ -68,16 +75,25 @@ This task will only run if the `CACHE_RESTORED` variable is false.
     restoreSolution: '**/*.sln'
 ```
 
-If you encounter the error message "project.assets.json not found" during your build task, you can resolve it by removing the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. By doing so, the restore command will be executed, generating your project.assets.json file. The restore task will not download packages that are already present in your corresponding folder.
+> [!NOTE]
+> If you're using Ubuntu 24.04 or later, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the `NuGetCommand@2` task. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
+
+#### Handle "project.assets.json not found" errors
+
+If you encounter the error *"project.assets.json not found"* during your build task, remove the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. This ensures the restore command runs and generates the *project.assets.json* file. The restore task won't redownload packages that are already present in the corresponding folder.
 
 > [!NOTE]
-> A pipeline can contain one or more caching tasks, and jobs and tasks within the same pipeline can access and share the same cache.
+> A pipeline can include multiple caching tasks, and jobs and tasks within the same pipeline can access and share the same cache.
 
 ## Performance comparison
 
-Pipeline caching is a great way to speed up your pipeline execution. Here's a side-by-side performance comparison for two different pipelines. Before adding the caching task (right), the restore task took approximately 41 seconds. We added the caching task to a second pipeline (left) and configured the restore task to run when a cache miss is encountered. The restore task in this case took 8 seconds to complete.
+Pipeline caching significantly reduces the time required to restore dependencies, leading to faster builds. The following comparison illustrates the impact of caching on pipeline execution time for two different pipelines:
 
-:::image type="content" source="media/caching-performance.png" alt-text="A screenshot showing the pipeline performance with and without caching.":::
+- **Without caching (right)**: The restore task took approximately 41 seconds. 
+
+- **With caching (left)**: We added the caching task to a second pipeline and configured the restore task to run only when a cache miss occurs. The restore task in this case completed in just 8 seconds.
+
+:::image type="content" source="media/caching-performance.png" alt-text="A screenshot displaying the pipeline performance with and without caching.":::
 
 Below is the full YAML pipeline for reference:
 
@@ -120,8 +136,12 @@ steps:
     configuration: '$(buildConfiguration)'
 ```
 
-## Related articles
+This approach also applies to .NET Core projects, provided your project uses *packages.lock.json* to lock package versions. You can enable this by setting `RestorePackagesWithLockFile` to `True` in your * Csproj* file, or by running the following command: `dotnet restore --use-lock-file`.
+
+## Related content
 
 - [Pipeline caching](../release/caching.md)
-- [Deploy from multiple branches](../release/deploy-multiple-branches.md)
-- [Deploy pull request Artifacts](../release/deploy-pull-request-builds.md)
+
+- [Deploy pull request Artifacts (Classic)](../release/deploy-pull-request-builds.md)
+
+- [Deploy to different stages (Classic)](../release/deploy-multiple-branches.md)

@@ -7,18 +7,17 @@ ms.assetid: 868DC7E6-540C-4F9F-B4A3-7680F1C49FC9
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 10/01/2021
 ---
-
 
 # Set permissions to access Analytics and Analytics views
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-To use [Power BI for Azure DevOps](overview.md) or to exercise an OData query for Analytics, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all Contributors with Basic access. Users granted Stakeholder access don't have permissions to view or edit Analytics views.  
+To use [Power BI for Azure DevOps](overview.md) or to exercise an OData query for Analytics, have the **View analytics** permission. By default, the **View analytics** permission is set for all Contributors with Basic access. Users granted Stakeholder access don't have permissions to view or edit Analytics views.  
 
-To edit an Analytics view or connect to an Analytics view in Power BI, you must have permissions for that view. 
+To edit an Analytics view or connect to an Analytics view in Power BI, have permissions for that view. 
 
 If you're just adding an Analytics widget to a dashboard or viewing an Analytics widget added to a dashboard, then no special permissions are required. 
 
@@ -27,15 +26,15 @@ If you're just adding an Analytics widget to a dashboard or viewing an Analytics
 
 ## Prerequisites 
 
-- To change permissions at the project level, you need to be a member of the Project Administrators or Project Collection Administrators groups. 
+|Category  | Requirements |
+|-------------|-------------|
+|**Permissions** |To change permissions at the project level: Member of the **Project Administrators** or **Project Collection Administrators** groups.|
   
 For more information about working with permissions, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
-
 
 ## Set permissions 
 
 You grant or restrict permissions to a user by setting one or more permissions for Analytics to **Allow** or **Deny** through the project **Permissions** page. By default, all members of the Contributors group are granted access to edit and delete shared Analytics views, and view Analytics data. 
-
 
 ::: moniker range="= azure-devops"
 
@@ -70,7 +69,6 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ::: moniker-end
 
-
 ### [Current page](#tab/current-page) 
   
 1. Open **Project Settings > Permissions**. For details, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). 
@@ -87,10 +85,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 1. Choose **Save changes** when done. 
 --- 
 
-
-
 [!INCLUDE [temp](includes/manage-shared-view-permissions.md)]
-
 
 <a name="access-denied"></a>
 

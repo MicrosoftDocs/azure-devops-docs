@@ -2,7 +2,7 @@
 title: Add users to organizations and manage access
 titleSuffix: Azure DevOps
 ms.custom: devx-track-azurecli
-description: Learn how to add users to an organization and manage users' access levels (like Stakeholder), direct assignments, invitations, and more.
+description: Learn how to add users to an organization and manage users' access levels, direct assignments, invitations, and more.
 ms.topic: how-to
 ms.subservice: azure-devops-organizations
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 10/22/2024
+ms.date: 04/10/2025
 ---
 
 # Add organization users and manage access
@@ -19,11 +19,12 @@ ms.date: 10/22/2024
 
 Learn how to add users to your organization and manage user access through direct assignment. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md). Users can include human users, service accounts, and [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
-The following types of users can join your Azure DevOps Services organization for free:
+The following types of users can join your organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
-* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic or Basic + Test Plan features, depending on their subscription level. 
+* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries. Don't use Stakeholder access as a substitute for more limited permissions, as users with a Visual Studio subscription or a GitHub Enterprise license automatically get upgraded from Stakeholder when they sign in. For more information, see [Stakeholder access quick reference](../security/stakeholder-access.md).
+* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic or Basic + Test Plan features, depending on their subscription level.
+* Unlimited [GitHub Enterprise users](https://github.com/enterprise) who also get Basic features when they sign in with their GitHub Enterprise account.
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
 
@@ -32,14 +33,16 @@ The following types of users can join your Azure DevOps Services organization fo
 
 ## Prerequisites
 
-* [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
-* **Organization:** Have an organization. If you don't have an organization, [create one](create-organization.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. Or, if [invitation restrictions are enabled](../security/restrict-invitations.md), the Project Administrator can add users. The Project Collection Administrator role can't select the license for new users or remove users from the organization.|
+|**Organization** | An [organization](create-organization.md).|
 
 For an overview of the methods supported for adding users to an organization, see [Add and manage user access](organization-management.md#add-users).
 
 ## Add users to your organization
 
-Administrators can efficiently manage user access by adding users to an organization, granting them access to the appropriate tooling extensions and service access levels, and assigning them to relevant groups—all from a single view. This streamlined process ensures that new users have the necessary permissions and resources to start contributing immediately.
+Administrators can efficiently manage user access by adding users to an organization. Provide access to the appropriate tooling extensions and service access levels, and assign users to relevant groups—all from a single view. This streamlined process ensures that new users have the necessary permissions and resources to start contributing immediately.
 
 > [!NOTE]
 > If you have a Microsoft Entra ID-backed organization and need to add users who are external to Microsoft Entra ID, first [add external users](add-external-user.md). On the **Tell us about this user** page, under **Type of user**, choose **User with an existing Microsoft account**. After completing those steps, follow these instructions to add the Microsoft Entra ID user to Azure DevOps.
@@ -137,7 +140,7 @@ You can see all security groups in a project using the [az devops security group
 For more information about user access, read [about access levels](../security/access-levels.md).
 
 > [!NOTE]
-> You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if your organization has seats available, or [Stakeholder features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if not. Learn how to [add members to projects](../security/add-users-team-project.md#add-users-to-a-project).
+> You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if your organization has available access, or [Stakeholder features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if not. For more information, see [Add users to projects](../security/add-users-team-project.md#add-users-to-a-project).
 >
 > When a user no longer needs access to your organization, [delete them](delete-organization-users.md) from your organization.
 
@@ -244,16 +247,16 @@ ID                                    Display Name         Email                
 
 * * *
 
-## Restrict users' view to organization projects
+## Restrict user visibility to organization and project information
 
 To restrict certain users' access to organizational information, enable the **Limit user visibility and collaboration to specific projects** preview feature and add the users to the **Project-Scoped Users** group. Once added, users in that group can't access projects that they aren't explicitly added to.
 
 > [!NOTE]
-> Users and groups added to the **Project-Scoped Users** group have limited access to project and organization information. They also have restricted access to specific identities through the people picker. For more information, see [Limit user visibility for projects, and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+> Users and groups added to the **Project-Scoped Users** group get limited access to project and organization information. They also get restricted access to specific identities through the people picker. For more information, see [Limit user visibility for projects, and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
 
 To add users to the new **Project-Scoped Users** group, do the following steps:
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Turn on the **Limit user visibility and collaboration to specific projects** preview feature for the organization. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
 
@@ -270,15 +273,21 @@ To add users to the new **Project-Scoped Users** group, do the following steps:
 6. Choose the **Members** tab. 
 7. Add all users and groups that you want to scope to the project you added them to.
 
-[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
-
 For more information, see [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md).
 
 [!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
-## FAQ
+## FAQs
 
-#### Q: Which email addresses can I add?
+### Q: Why does the permissions level show as 'Custom' when I add a user to a project in the Users Hub?
+
+**A:** By design, the permissions settings accessible via the Users Hub are intended to provide a quick way to set user permissions after they get added. However, these settings don't override custom permissions that might be assigned through group membership or direct assignments in other areas.
+
+For example, if a user is designated as a standard contributor in a project but is also granted a specific permission, such as "Allow force push" for a repository within that project, the Users Hub  displays their permission level as 'Custom.' So, any changes made in the Users Hub don't revert the permission display back to 'Contributor' or any other standard role.
+
+So, if you see 'Custom' in the Users Hub, it indicates that there are other permissions assigned to the user that don't reflect in the standard role settings. To modify these permissions, go to the specific project settings or group memberships where these custom permissions got assigned.
+
+### Q: Which email addresses can I add?
 
 **A:**
 
@@ -290,7 +299,7 @@ For more information, see [Add or remove users or groups, manage security groups
 
 After you add members to your project, each member receives an invitation email with a link to your organization. They can use this link to sign in and access your project. First-time members might get asked for more details when they sign in to personalize their experience.
 
-#### Q: What if users don't get or lose the invitation email?
+### Q: What if users don't get or lose the invitation email?
 
 **A:**
 
@@ -302,7 +311,7 @@ After you add members to your project, each member receives an invitation email 
 
 **A:** See [Q: Why can't I add any more members to my project?](faq-user-and-permissions-management.yml#q--why-can-t-i-add-any-more-members-to-my-project-).
 
-#### Q: How is *access* different from *permissions*?
+### Q: How is *access* different from *permissions*?
 
 **A:** Access levels determine a user's access to specific web portal features based on their subscription. Permissions control a user's ability to perform specific operations, which get governed by security group membership or specific Access Control Level (ACL) assignments made to a user or group.
 

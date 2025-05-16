@@ -18,7 +18,9 @@ ms.date: 12/06/2021
 Collect diagnostic data while you test your apps. This data is included in the bugs you file 
 during the test. You can collect diagnostic data from web apps and from desktop apps, and view it in Azure Test Plans.
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
+## Prerequisites
+
+[!INCLUDE [prerequisites-stakeholder](includes/prerequisites-stakeholder.md)] 
 
 <a name="collect-web"></a>
 
@@ -104,9 +106,7 @@ Do the following steps to capture screen recordings from your apps.
    ::: moniker range=">=azure-devops-2020"
    ![Screenshot showing selection of the screen or app to share.](media/collect-diagnostic-data/choose-test-feedback-share.png)
    ::: moniker-end
-   ::: moniker range="=azure-devops-2019"
-   ![Screenshot showing choosing the screen or app to record.](media/collect-diagnostic-data/collect-diagnostic-data-12.png) 
-   ::: moniker-end
+   
 
    If you create a bug while recording your screen, the 
    recording automatically stops and is added to the bug. 

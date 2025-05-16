@@ -17,6 +17,10 @@ ms.date: 08/25/2023
 
 Azure Test Plans provides the functionality to customize the failure types of any test case beyond the default values. A **failure type** is an artifact that helps to mark test case failures into defined categories such as **regression issue** or **known issue**. While this categorization of failure types is helpful, users might want to add their own custom failure type beyond the default values, which creates a more customized experience for specific user needs in the Azure DevOps project. This article walks through the steps of defining a custom failure type using the new REST API provided. 
 
+## Prerequisites
+
+[!INCLUDE [prerequisites](includes/prerequisites.md)] 
+
 ## How to view the default failure types
 
 Failure type categorization is part of the post-test run experience in Azure Test Plans. This feature is only applicable to test cases marked as **Failed**. To mark a test failure using the default failure type, follow the below steps:

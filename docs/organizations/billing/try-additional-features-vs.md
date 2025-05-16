@@ -8,7 +8,7 @@ ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 09/25/2023
+ms.date: 04/23/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -43,7 +43,8 @@ Start a Test Plans trial and assign any of your users Basic + Test Plans for 30 
 
 6. Assign users **Basic + Test Plans**, so they can access Test Plans during the trial. 
 
-   During the trial, Test Plans users have full access to Test Plans and Basic users can execute tests only. After trial expiration, you need to buy a Basic + Test Plans license and assign it to specific users, so they can continue to use it.
+   > [!IMPORTANT]
+   > During the trial, users assigned **Basic + Test Plans** have full access. After trial expiration, you start getting charged for users assigned **Basic + Test Plans**, or if you haven't [set up billing](set-up-billing-for-your-organization-vs.md), those users receive **Stakeholder** access.
 
 ## Next steps
 
@@ -53,7 +54,7 @@ Start a Test Plans trial and assign any of your users Basic + Test Plans for 30 
 ## Related articles
 
 - [Navigate Test Plans](../../test/navigate-test-plans.md)
-- [Billing FAQs](billing-faq.yml)
+- [Find answers in Billing FAQs](billing-faq.yml)
 - [Manage paid access for users](buy-basic-access-add-users.md)
 - [Buy parallel jobs for Azure DevOps](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
-- [Azure DevOps billing overview](overview.md)
+- [Understand Azure DevOps billing](overview.md)

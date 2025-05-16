@@ -26,14 +26,9 @@ To understand how the system uses area paths, see [About area and iteration path
 
 ## Prerequisites
 
-**Permissions**: 
-- To set team area paths, be a [team administrator](add-team-administrator.md) or a member of the [Project Administrators](../security/change-project-level-permissions.md) group. By default, the user who created the project has these permissions.
-- To add an area path under the root node or edit or delete any child node, be a member of the [Project Administrators](../security/change-project-level-permissions.md) group.
-- To add, edit, and manage area paths under a node, have one or more of the following permissions set to **Allow**:   
-   - **Create child nodes**
-   - **Delete this node**
-   - **Edit this node**
-   - **View permissions in this node**
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To set team area or iteration paths: [Team administrator](add-team-administrator.md) or a member of the [Project Administrators](../security/change-project-level-permissions.md) group. By default, the user who created the project has these permissions.<br>- To add an area path under the root node or edit or delete any child node: Member of the [Project Administrators](../security/change-project-level-permissions.md) group.<br>- To add, edit, and manage area paths under a node: One or more of the following permissions set to **Allow**:<br>- **Create child nodes**<br>- **Delete this node**<br>- **Edit this node**<br>- **View permissions in this node**|
 
 For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
@@ -97,7 +92,6 @@ az boards area project list [--depth]
 - **depth**: Optional. Depth of child nodes to be listed. Example: `--depth 3`. When not specified, only the top-level area paths are returned.
 - **path**: Optional. Absolute path of an area. `\Area\` must follow after the `\ProjectName`, which distinguishes this path from an iteration path. For example, `--path \ProjectName\Area\AreaName`. If spaces are used within a node, then enclose in double-quotes, for example, `--path "\Fabrikam Fiber\Area\Service Delivery\Performance"`. When not specified, lists area paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`. 
-
 
 #### Example
 
@@ -333,30 +327,7 @@ You can select existing area paths or create new or child area paths from the te
 
 ::: moniker-end  
 
-::: moniker range=" azure-devops-2019"  
-
-1. Open **Areas** for the team context.  
-
-   Here, we show the Areas for the Fabrikam Fiber team.  
-
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot shows Area page for team, on-premises versions.](media/team-defaults/open-areas-fabrikam-team.png)
-
-1. Choose one or more area paths to be active for each team.  
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot shows Work, Iterations page for team, on-premises versions.](media/team-defaults/stdefaults-add-area-paths.png)  
-
-    In this instance, we choose to activate all three subarea paths for the project. The management team can now track progress across all three teams.  
-
-    ![Screenshot shows multiple area paths assigned to team, on-premises versions.](media/team-defaults/stdefaults-set-team-area-paths-management-team-team-services-list.png)  
-
-1. When you finish, refresh the product backlog page for the team, and you see those work items assigned to the team. Add area path to the columns shown to see the assignments made to work items.  
-
-   > [!div class="mx-imgBorder"]  
-   > ![Screenshot shows backlog view of default team, on-premises versions.](media/add-team/product-backlog-default-team-horz.png)  
-
-::: moniker-end  
+  
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -469,7 +440,6 @@ az boards area team remove --path
 - **team**: Required. Name or ID of the team.
 - **project**: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`. 
 
-
 #### Example
 
 For example, the following command removes the \Service Delivery\Voice area path from the Voice team of the Fabrikam Fiber project. 
@@ -520,7 +490,6 @@ As you can see, area paths play a major role in supporting Agile tools, teams, a
 - [Use Agile tools that rely on areas or iterations](about-teams-and-settings.md)
 - [Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)
 - [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
-
 
 ### Programmatic resources
 

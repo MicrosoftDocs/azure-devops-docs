@@ -159,6 +159,13 @@ Grace period enables the most cost effective way of running stateful pools for p
 
 When you create a pool, **Standby agent mode** is off by default, and there are no standby agents to immediately assign to your pipelines, which might have to wait a few moments, up to 15 minutes, for an agent to be provisioned on demand. For better performance, enable **Standby agent mode** and configure a standby agent schedule that provides capacity for your workload. 
 
+When a standby agent schedule is configured, Managed DevOps Pools periodically compares the count of provisioned agents with the standby agent count specified by the current provisioning scheme, and starts new agents as required to maintain the standby agent count. You can view the current status and count of the agents in your pool using the [Agents](./view-agents.md) pane.
+
+> [!IMPORTANT]
+> The provisioning count in a scheme can't be greater than the **Maximum agents** configured in [Pool settings](configure-pool-settings.md#maximum-agents).
+
+Standby agent mode is configured using the following settings:
+
 * **Off** - Standby agent mode is off and agents are provisioned on-demand when jobs are queued.
 * [Manual](#manual) - Configure a manual standby schedule.
 * [Automatic](#automatic) - Use an automatic standby schedule based on agent usage history and configurable for cost and performance.
@@ -227,11 +234,6 @@ The following example shows the contents of the **agent-profile.json** file.
 Manual mode is best suited for teams that have knowledge of their CI/CD pipelines usage patterns. If you select the manual option, you need to define your pre-provisioning scheme based on your understanding of when agents in the pool are most likely to get used and how many agents are likely to be used, and specify a provisioning count of agents that meet the projected demand.
 
 You can create your own provisioning schedule or choose from one of the predefined schedules, and you can configure the time zone to use for specifying the schedules. The default value for **Pre-provisioning TimeZone** is **(UTC) Coordinated Universal Time**.
-
-> [!TIP]
-> The provisioning count in a scheme can't be greater than the **Maximum agents** configured in [Pool settings](configure-pool-settings.md#maximum-agents).
-
-Every few minutes, Managed DevOps Pools checks the count of active agents running jobs and standby agents waiting for jobs, to ensure that the provisioning count of agents specified by the current provisioning scheme are available. If the current provisioning count is 10, and there are five agents running jobs and two agents on standby, Managed DevOps Pools will start three additional standby agents to bring the total agent count up to 10.
 
 Manual standby agent configuration can be configured in one of the following three ways.
 

@@ -18,7 +18,9 @@ ms.date: 09/14/2021
 To help avoid duplication, the Test &amp; Feedback extension automatically 
 searches for and displays existing bugs, based on the keywords in the title as you file a new bug. You can choose to continue creating a new bug or add your findings to an existing bug.
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
+## Prerequisites
+
+[!INCLUDE [prerequisites](includes/prerequisites.md)] 
 
 ## Add your findings to a bug
 

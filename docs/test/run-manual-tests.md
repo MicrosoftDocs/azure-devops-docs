@@ -65,9 +65,11 @@ The Test Center in the Microsoft Test Manager client is a desktop-based manual t
 Testers can use it for manual testing needs. For more information, see [Guidance on Microsoft Test Manager usage](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage).
 To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/).
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)] 
+[!INCLUDE [prerequisites-tcm](includes/prerequisites-tcm.md)] 
 
 <a name="run-web"></a>
 
@@ -107,29 +109,7 @@ Follow these steps to run tests for web applications.
    You can also [Create or add to a bug](#create-or-add-to-a-bug).
 
 ::: moniker-end
-::: moniker range="=azure-devops-2019"
-1. If you haven't already, [create your manual tests](create-test-cases.md#test-cases).
 
-1. Select a test from a test suite and run it.
-      
-   ![Select and run a specific test](media/run-manual-tests/RunTest_2.png)
-
-   Microsoft Test Runner opens and runs in a new browser.
-
-1. Start the app that you want to test. Your app doesn't have to run on 
-   the same computer as Test Runner. You just use Test Runner to record which 
-   test steps pass or fail while you manually run a test. For example, you 
-   might run Test Runner on a desktop computer and run your Windows 8 store 
-   app that you are testing on a Windows 8 tablet.
-
-   ![Use Microsoft Test Runner to record your test results](media/run-manual-tests/RunTestsStartApp.png)
-
-1. Mark each test step as either passed or failed based on the expected results. If a test step fails, you can enter a comment on why it failed  or
-   [collect diagnostic data for the test](collect-diagnostic-data.md). You can also [Create or add to a bug](#create-or-add-to-a-bug).
-
-   ![Mark test steps](media/run-manual-tests/RunTest_3.png)
-
-::: moniker-end
    > [!IMPORTANT]
    > Any test step that has expected result is called a *validation test step*. Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
 
@@ -176,26 +156,6 @@ Instead of creating a bug, you can update an existing bug with information about
 ![Screenshot shows Test Runner with Add to existing bug selected](media/run-manual-tests/find-existing-bug.png)
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-1. In the Test Runner window, select **Create bug**.
-
-   ![Submit a bug.](media/run-manual-tests/RunTest_4.png)
-
-   The steps and your comments are automatically added to the bug.
-   If Test Runner is running in a web browser window, you can copy a screenshot from the clipboard directly into the bug.
-
-1. You can assign the bug, enter comments, or link to other issues. Select **Save & Close** when done.
-   The test case is linked to the bug you created.
-
-You can see any bugs that you reported during your test session.
-
-![Bugs logged](media/run-manual-tests/RunTest_5.png)
-
-Instead of creating a bug, you can update an existing bug with information about this step.
-Select the **+** icon for **Create bug**, then **Add to existing bug**.
-Find and update an existing bug.
-::: moniker-end
-
 ## Save results, close the session, and review results
 
 After you complete testing, save your results, close the session, and review test results.
@@ -209,9 +169,7 @@ After you complete testing, save your results, close the session, and review tes
    ::: moniker range=">=azure-devops-2020"
    ![Screenshot shows the result of running test cases, with outcomes of Active, Failed, and Passed displayed.](media/run-manual-tests/test-case-outcome.png)
    ::: moniker-end
-   ::: moniker range="=azure-devops-2019"
-   ![Screenshot shows View test results.](media/run-manual-tests/RunTest_8.png)
-   ::: moniker-end
+   
 
    If you haven't run a test yet, its state is active.
    Reset the state of a test to active if you want to rerun it.  
@@ -222,9 +180,7 @@ After you complete testing, save your results, close the session, and review tes
    ::: moniker range=">=azure-devops-2020"
    ![Screenshot shows the Related Work section of a work item to view bugs filed for that test.](media/run-manual-tests/related-work-shows-bugs.png)  
    ::: moniker-end
-   ::: moniker range="=azure-devops-2019"
-   ![View bugs filed](media/run-manual-tests/view-bugs.png)
-   ::: moniker-end  
+     
 
 You can run tests offline and then import the results. For more information, see the [Offline Test Execution extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution).
 
@@ -257,25 +213,6 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-If you want to collect more diagnostic data for your desktop application, run your tests using Test Runner client:
-
-1. Launch the test runner client from Azure Test Plans by choosing **Run for desktop application** from the **Run** menu. 
-
-   ![Launching the test runner client](media/shared/collect-diagnostic-data-16.png)
-
-1. **Download** and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) if you haven't already set it up:
-
-   ![Download and launch Test runner](media/run-manual-tests/tr-atp-launch.png)
-
-   > [!NOTE]
-   > Check that the Test Runner client is available for your platform. Currently, the Test Runner client is available only for x64.
-
-1. Choose **Launch** and start testing the same way as [described above](#run-web) for web apps. For more information about data collection, see [Collect diagnostic data while testing](collect-diagnostic-data.md).
-
-::: moniker-end
-
 ## Run all tests
 
 You can run all the tests in a test suite at once.
@@ -284,11 +221,6 @@ You can run all the tests in a test suite at once.
 Select a test suite and select **Run for web application** or **Run for desktop application** to run all the active tests.
 
 ![Screenshot shows how to select and run all active tests in a test suite.](media/run-manual-tests/run-test-test-suite.png)
-::: moniker-end
-::: moniker range="=azure-devops-2019"
-Select a test suite and select **Run** to run all the active tests.
-
-![Screenshot shows how to run all active tests in a test suite.](media/run-manual-tests/RunTestsRunSuite.png) 
 ::: moniker-end
 
 ## Run tests for a build
@@ -303,15 +235,6 @@ Choose a build to run tests against.
 1. In the **Run with options** dialog box, select the build you want.
 
    ![Screenshot shows the Run with options dialog box with a build selected.](media/run-manual-tests/run-test-select-build.png)
-::: moniker-end
-::: moniker range="=azure-devops-2019"
-1. Choose **Run** and then select **Run with options**.
-
-   ![Screenshot shows Run selected and Run with options available.](media/shared/collect-diagnostic-data-16.png)
-
-1. Select the build you want.
-
-   ![Screenshot shows the Run with options dialog box with a build.](media/run-manual-tests/select-build-for-webrunner.png)
 ::: moniker-end
 
    > [!NOTE]
@@ -337,18 +260,12 @@ Select the **Edit test step** icon.
 ::: moniker range=">=azure-devops-2020"
 ![Screenshot shows how to select the edit icon to edit test steps.](media/run-manual-tests/edit-icon-test-run.png)
 ::: moniker-end
-::: moniker range="=azure-devops-2019"
-![Screenshot shows how to select the edit icon to modify test steps.](media/run-manual-tests/RunTest_11.png)
-::: moniker-end
 
 You can insert, reorder, or delete steps.
 You can also edit the text itself.
 
 ::: moniker range=">=azure-devops-2020"
 ![Screenshot shows the tool to edit test steps when you run a test.](media/run-manual-tests/edit-test-step.png)
-::: moniker-end
-::: moniker range="=azure-devops-2019"
-![Screenshot shows the tool to modify test steps when you run a test.](media/run-manual-tests/RunTest_9.png)
 ::: moniker-end
 
 ## Capture rich diagnostic data
@@ -365,9 +282,6 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 ::: moniker range=">=azure-devops-2020"
 ![Screenshot shows the button for capturing a screenshot during a test.](media/run-manual-tests/test-capture-screen.png)
 ::: moniker-end
-::: moniker range="=azure-devops-2019"
-![Screenshot shows the button for capturing a screenshot.](media/shared/collect-diagnostic-data-01.png)
-::: moniker-end
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
 
@@ -381,9 +295,6 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 ::: moniker range=">=azure-devops-2020"
 ![Screenshot shows the button for capturing an image action log from the app.](media/run-manual-tests/test-capture-action.png)
 ::: moniker-end
-::: moniker range="=azure-devops-2019"
-![Screenshot shows the button to capture an image action log from the app.](media/shared/collect-diagnostic-data-06.png)
-::: moniker-end
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
 
@@ -396,9 +307,6 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 
 ::: moniker range=">=azure-devops-2020"
 ![Screenshot show the button for capturing a screen recording from the app.](media/run-manual-tests/test-capture-screen-recording.png)
-::: moniker-end
-::: moniker range="=azure-devops-2019"
-![Screenshot show the button to capture a screen recording from the app.](media/shared/collect-diagnostic-data-11.png)
 ::: moniker-end
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
@@ -415,7 +323,6 @@ You can run tests that are part of a test plan using the TCM command-line tool. 
 
 Use `tcm run /list` to list the runs available in a test plan and to show their **ID**.  The **ID** corresponds to the work item ID defined when the run was created.
 
-
 ```tcm 
 tcm run /list /collection:teamprojectcollectionurl /teamproject:project 
            [/planid:id  |  /querytext:query] [/login:username,[password]]
@@ -426,10 +333,7 @@ tcm run /list /collection:teamprojectcollectionurl /teamproject:project
 |**/planid**:`id`| Optional. Indicates that only those test runs associated with the specified test plan are returned in the list.    |
 |**/querytext**:`query`| Optional. Specifies the query to use to list a subset of test runs.    |
 
-
 [!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
-
-
 
 **Example**
 
@@ -537,7 +441,6 @@ tcm run /abort /id:id /collection:teamprojectcollectionurl /teamproject:project 
 | Parameter | Description |  
 |----------|------------| 
 |**/id**:`id`| Specifies the **ID** for the test run that you want to cancel.    |
-
 
 [!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
 

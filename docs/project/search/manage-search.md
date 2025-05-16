@@ -23,8 +23,10 @@ You can manage your search extension and indexing status, which include the foll
 
 ## Prerequisites
 
-- [Install and configure Search](install-configure-search.md).
-- Be assigned to the [Project Collection Administrator (PCA)](../../user-guide/project-admin-tutorial.md) role for the organization to manage Search and indexing.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | Member of the [Project Collection Administrators](../../user-guide/project-admin-tutorial.md) group. |
+| **Tasks** | Complete [Install and configure Search](install-configure-search.md). |
 
 ## Manage indexing
 
@@ -33,14 +35,6 @@ Search gets managed by running PowerShell and SQL scripts. All of these scripts 
 The PowerShell scripts require the SQL script files, so ensure the **SqlScripts** folder and its contents are present, along with the PowerShell scripts.
 
 ![Screenshot showing download script files for administration.](media/administration/script-filesv2.png)
-
-> [!NOTE]
-> When you execute scripts, ensure that you run the appropriate script for your version:
-> 
-> * [TFS 2018 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018RTW)
-> * [TFS 2018 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018Update1)
-> * [TFS 2018 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018Update2)
-> * [Azure DevOps Server and TFS 2018 Update 3](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018Update3)
 
 ### Check indexing status
 

@@ -3,7 +3,7 @@ title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
 ms.date: 01/25/2023
-monikerRange: "> azure-devops-2019"
+monikerRange: "<=azure-devops"
 ---
 
 # Check out multiple repositories in your pipeline
@@ -164,7 +164,6 @@ steps:
 
 If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitbucketRepo  MyGitHubRepo`. In this example, the names of the repositories (as specified by the `name` property in the repository resource) are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
 
-
 ## Inline syntax checkout
 
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
@@ -198,6 +197,22 @@ If a `path` is specified for a `checkout` step, that path is used, relative to `
 
 > [!NOTE]
 > If you are using default paths, adding a second repository `checkout` step changes the default path of the code for the first repository. For example, the code for a repository named `tools` would be checked out to `C:\agent\_work\1\s` when `tools` is the only repository, but if a second repository is added, `tools` would then be checked out to `C:\agent\_work\1\s\tools`. If you have any steps that depend on the source code being in the original location, those steps must be updated.
+
+## Workspace repository
+
+When multiple `checkout` steps (and different paths for each) are used in your pipeline, you may want to use the root directory of one the repositories as the default working directory. If so, you can set the `workspaceRepo` input to `true` for the related `checkout` step.
+
+```yaml
+- checkout: git://project/first
+  path: repo/first-repo
+
+- checkout: git://project/second
+  path: repo/second-repo
+  workspaceRepo: true
+
+- pwsh: pwd
+# Expected output: $(Pipeline.Workspace)/repo/second-repo
+```
 
 ## Checking out a specific ref
 

@@ -1,7 +1,7 @@
 ---
 title: Configure pool settings
 description: Learn how to configure Managed DevOps Pools settings.
-ms.date: 11/13/2024
+ms.date: 04/28/2025
 ---
 
 # Configure pool settings
@@ -153,7 +153,9 @@ By default, your Managed DevOps Pool is available to all projects in your specif
 
 ## Maximum agents
 
-Specify the maximum count of agents that are available for use in your pool. For example, if you specify a **Maximum agents** value of **2**, you can run a maximum of two agents at the same time. If more than two jobs are queued, only two agents at a time will run jobs while the other jobs wait.
+Specify the maximum count of agents that can be provisioned at a given time in your pool. For example, if you specify a **Maximum agents** value of **2**, you can run a maximum of two agents at the same time. If more than two jobs are queued, only two agents at a time will run jobs while the other jobs wait.
+
+You can view the current status and count of the provisioned agents in your pool using the [Agents](./view-agents.md) pane. All of the agents in the **Agents** view (with the exception of agents with a **Returned** status) are running on a virtual machine resource, and count towards the **Maximum agents** count.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -342,9 +344,15 @@ The following example shows the `storageProfile` section of the **fabric-profile
 
 Managed DevOps Pools provides you with several options for virtual machine images for running pipelines in your pool. You can create your pool using selected Azure Marketplace VM images, use your own custom images in an Azure Compute Gallery, or use the same Windows and Linux images used by Azure Pipelines Microsoft-hosted agents.
 
+> [!IMPORTANT]
+> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
+
 :::image type="content" source="./media/configure-images/configure-pool-image.png" alt-text="Screenshot of configure image.":::
 
 You can configure your pool to use a single image or multiple images, and use aliases to configure your pipelines to use a specific image. For more information, see [Configure Managed DevOps Pools images](./configure-images.md).
+
+> [!IMPORTANT]
+> If you have multiple images in your pool, and don't use [demands in your pipelines to designate an image](./configure-images.md#use-multiple-images-per-pool-with-aliases), the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?tabs=arm#choose-your-pools-image)), or by ordering the images in the images list in the Azure portal using drag and drop.
 
 ## See also
 

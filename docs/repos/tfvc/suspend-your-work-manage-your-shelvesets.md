@@ -28,7 +28,7 @@ In these scenarios and others, you can move your [pending changes](develop-code-
 
 ## Prerequisites
 
-You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+[!INCLUDE [contributor-only-prerequisites](includes/contributor-only-prerequisites.md)]
 
 [!INCLUDE [Visual Studio versions with My Work and Code Review features](includes/note-my-work-code-review-support.md)]
  

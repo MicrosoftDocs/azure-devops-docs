@@ -1,28 +1,29 @@
 ---
-title: Create and target environments
-description: Learn how to create, target, secure, and view deployment history for environments, which are collections of deployment targets for pipelines.
+title: Create and target Azure DevOps environments for pipelines
+description: Learn how to create, target, secure, and view deployment history for Azure DevOps environments. Manage Kubernetes and virtual machine resources for CI/CD pipelines.
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 07/01/2024
+ms.date: 04/09/2025
 monikerRange: '>= azure-devops-2020'
+keywords: Azure DevOps environments, CI/CD pipelines, Kubernetes, virtual machines, deployment history, secure environments
 ---
 
-# Create and target environments
+# Create and target Azure DevOps environments
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-This article explains how to create and target Azure Pipelines environments. An environment is a collection of [resources](about-resources.md) that you can target with deployments from a pipeline.
+This article explains how to create and target Azure Pipelines environments. An environment is a group of [resources](about-resources.md) that you can target with deployments from a pipeline.
 
-An environment represents a logical target where your pipeline deploys software. Typical environment names are Dev, Test, QA, Staging, and Production.
+An environment represents a logical target where your pipeline deploys software. Common environment names include Dev, Test, QA, Staging, and Production.
 
 >[!NOTE]
->Azure DevOps environments aren't available in Classic pipelines. For Classic pipelines, [deployment groups](../release/deployment-groups/index.md) offer similar functionality.
+> Azure DevOps environments aren't available in Classic pipelines. For Classic pipelines, [deployment groups](../release/deployment-groups/index.md) provide similar functionality.
 
 Environments provide the following benefits:
 
-- **Deployment history**. Pipeline name and run details are recorded for deployments to an environment and its resources. In the context of multiple pipelines targeting the same environment or resource, you can use [deployment history](#deployment-history) of an environment to identify the source of changes.
+- **Deployment history**. Pipeline name and run details are recorded for deployments to an environment and its resources. In the context of multiple pipelines targeting the same environment or resource, you can use [deployment history](#view-deployment-history) of an environment to identify the source of changes.
 
-- **Traceability of commits and work items**. You can view jobs within the pipeline run that target an environment. You can also view the [commits and work items](#deployment-history) that were newly deployed to the environment. Traceability also lets you track whether a code change commit or feature/bug-fix work item reached an environment.
+- **Traceability of commits and work items**. You can view jobs within the pipeline run that target an environment. You can also view the [commits and work items](#view-deployment-history) that were newly deployed to the environment. Traceability also lets you track whether a code change commit or feature/bug-fix work item reached an environment.
 
 - **Diagnostic resource health**. You can validate whether the application is functioning at its desired state.
 
@@ -38,12 +39,12 @@ If a YAML pipeline refers to an environment that doesn't exist:
 
 ## Prerequisites
 
-To add an environment, you need the following prerequisites:
 
-- An Azure DevOps organization and project.
-- The [Creator role for environments](../library/add-resource-protection.md#environments) in your project.
+| Category | Requirements |
+|--------------|-------------|
+| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; To add environments, the [Creator role for environments](../library/add-resource-protection.md#environments) in your project.  By default, members of the **Build Administrators**, **Release Administrators**, and **Project Administrators** groups can also create environments. |
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/). |
 
-<a name="creation"></a>
 ## Create an environment
 
 To create your first environment:
@@ -59,14 +60,15 @@ To create your first environment:
    :::image type="content" source="media/create-new-environment.png" alt-text="Screenshot of creating a new environment.":::
 
 > [!TIP]
-> You can create an empty environment and reference it from deployment jobs so you can record deployment history against the environment.
+> Create an empty environment and reference it from deployment jobs to record deployment history against the environment.
+
+To programmatically create and manage environments, use the [Azure DevOps Environments REST API](/rest/api/azure/devops/environments/environments).
 
 You can use Azure Pipelines to deploy to environments. For more information, see [Build and deploy to Azure Kubernetes Service with Azure Pipelines](../ecosystems/kubernetes/aks-template.md).
 
-<a name="target-from-deployment-job"></a>
 ## Target an environment from a deployment job
 
-A [deployment job](deployment-jobs.md) is a collection of steps that run sequentially. You can use a deployment job to target an entire environment group of resources, as shown in the following example YAML snippet. The pipeline runs on the `myVM` machine because that resource name is specified.
+A [deployment job](deployment-jobs.md) contains steps that run sequentially. You can use a deployment job to target an entire environment group of resources, as shown in the following example YAML snippet. The pipeline runs on the `myVM` machine because that resource name is specified.
 
 ```YAML
 - stage: deploy
@@ -87,13 +89,11 @@ A [deployment job](deployment-jobs.md) is a collection of steps that run sequent
           - script: echo Hello world
 ```
 
-<a name="target-resource-from-deployment-job"></a>
 ## Target a specific environment resource from a deployment job
 
 You can scope the deployment target to a particular resource within the environment, so you can record deployment history on the specific resource. The steps of the deployment job automatically inherit the service connection details from the resource the deployment job targets.
 
 In the following example, the value for the `kubernetesServiceConnection` automatically passes down to the task from the `environment.resource` input.
-
 
 ```YAML
 environment: 
@@ -113,17 +113,16 @@ strategy:
 ```
 
 > [!NOTE]
-> If you're using a private AKS cluster, make sure you're connected to the cluster's virtual network as the the API server endpoint is not exposed through a public IP address.
+> If you're using a private AKS cluster, make sure you're connected to the cluster's virtual network as the API server endpoint isn't exposed through a public IP address.
 > 
 > Azure Pipelines recommends setting up a self-hosted agent within a VNET that has access to the cluster's virtual network. See [Options for connecting to the private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster) for details.
 
 ## Use manual approval checks
 
-To control deployments to production environments, Azure Pipelines supports manual approval checks on environments. Approval checks are available to resource owners to control when a stage in a pipeline consumes the resource. Resource owners can define approvals and checks that must be satisfied before a stage consuming that resource can begin.
+To control deployments to production environments, Azure Pipelines supports manual approval checks. These checks allow resource owners to control when a stage in a pipeline consumes the resource. Resource owners can define approvals and checks that must be satisfied before a stage consuming that resource can begin.
 
 The environment **Creator**, **Administrator**, and **User** roles, but not the **Reader** role, can manage approvals and checks. As an environment owner, you can manually control when a stage should run by using approval checks. For more information, see [Define approvals and checks](approvals.md).
 
-<a name="in-run-details"></a>
 ## See environments in run details
 
 Under the **Environments** tab of the pipeline run details, you can see all environments that were targeted by deployment jobs of a pipeline run.
@@ -133,7 +132,6 @@ Under the **Environments** tab of the pipeline run details, you can see all envi
 >[!NOTE]
 >If you're using an Azure Kubernetes Service (AKS) private cluster, the **Environments** tab isn't available.
 
-<a name="deployment-history"></a>
 ## View deployment history
 
 You can select the **Deployments** tab in the Azure Pipelines **Environments** section to view deployment history.
@@ -190,14 +188,12 @@ If you see the message **Job XXXX: Environment XXXX could not be found. The envi
 
 - [Runtime parameters](runtime-parameters.md) don't work when creating environments, because the parameters are expanded only at run time. You can use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create an environment or use [templateContext to pass properties to templates](template-parameters.md#use-templatecontext-to-pass-properties-to-templates). 
 
-- Azure Pipelines might not have information about the user creating the environment.
-
   When you refer to an environment that doesn't exist in a YAML pipeline file, Azure Pipelines automatically creates the environment in the following cases:
 
   - You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that isn't created yet.
   - You update the YAML file by using the Azure Pipelines web editor and save the pipeline after adding the reference to the environment.
 
-  In the following cases, Azure Pipelines doesn't have information about the user creating the environment, so the pipeline fails.
+  In the following cases, Azure Pipelines doesn't have information about the user creating the environment, so the pipeline fails:
 
   - You update the YAML file by using another external code editor.
   - You add a reference to an environment that doesn't exist, and then cause a manual or continuous integration pipeline to be triggered.

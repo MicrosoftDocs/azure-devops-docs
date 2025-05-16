@@ -2,10 +2,10 @@
 title: YAML pipeline editor guide
 description: Learn how to author and edit pipelines with the YAML pipeline editor.
 ms.topic: reference
-ms.date: 08/17/2023
+ms.date: 03/31/2025
 author: steved0x
 ms.author: sdanie
-monikerRange: '>=azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # YAML pipeline editor
@@ -16,33 +16,7 @@ Azure Pipelines provides a YAML pipeline editor that you can use to author and e
 
 This article shows you how to edit your pipelines using the YAML Pipeline editor, but you can also edit pipelines by modifying the **azure-pipelines.yml** file directly in your pipeline's repository using a text editor of your choice, or by using a tool like Visual Studio Code and the [Azure Pipelines for VS Code](https://github.com/Microsoft/azure-pipelines-vscode) extension.
 
-:::moniker range="azure-devops-2019"
-
-> [!IMPORTANT]
-> The YAML pipeline editor was introduced in Azure DevOps Server 2019 Update 1. If you're using Azure DevOps Server 2019 RTW, the YAML pipeline editor described in this article isn't available, but you can edit your YAML using the text editor of your choice and check it into your pipeline's repository.
-
-:::moniker-end
-
 ## Edit a YAML pipeline
-
-:::moniker range="= azure-devops-2019"
-
-To access the YAML pipeline editor, do the following steps.
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select your project, choose **Pipelines** > **Pipelines**, and then select the pipeline you want to edit.
-
-    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-builds-2019-1.png" alt-text="Azure Pipelines builds in Azure DevOps Server 2019 Update 1.":::
-
-3. Choose **Edit**.
-
-    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit-2019-1.png" alt-text="Azure Pipelines YAML edit button in Azure DevOps Server 2019 Update 1.":::
-
-4. Make edits to your pipeline using [Intellisense](#use-keyboard-shortcuts) keyboard shortcuts and the [task assistant](#use-task-assistant) for guidance.
-
-   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019-1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1.":::
-
-:::moniker-end
 
 :::moniker range=">= azure-devops-2020"
 
@@ -56,6 +30,9 @@ To access the YAML pipeline editor, do the following steps.
 3. Choose **Edit**.
 
     :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit.png" alt-text="Azure Pipelines YAML edit button.":::
+
+   > [!IMPORTANT]
+   > The YAML pipeline editor is only available for YAML pipelines. If you are presented with a graphical user interface when you choose **Edit**, your pipeline was created using the classic pipeline designer. For information on converting your classic pipelines to YAML, see [Migrate your Classic pipeline to YAML](../release/from-classic-pipelines.md).
 
 4. Make edits to your pipeline using [Intellisense](#use-keyboard-shortcuts) and the [task assistant](#use-task-assistant) for guidance.
 
@@ -113,14 +90,6 @@ The task assistant provides a method for adding tasks to your YAML pipeline.
 
 - Choose **Add** to insert the task YAML into your pipeline.
 
-:::moniker range="= azure-devops-2019"
-
-   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added-2019-1.png" alt-text="Task assistant added in Azure DevOps Server 2019.":::
-
-- Edit the inserted YAML to make more configuration changes to the task.
-
-:::moniker-end
-
 :::moniker range=">= azure-devops-2020"
 
    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added.png" alt-text="Task assistant added.":::
@@ -168,12 +137,6 @@ You can [preview the fully parsed YAML document](/azure/devops/release-notes/202
 ## Manage pipeline variables
 
 You can manage pipeline variables both from within your YAML pipeline and from the pipeline settings UI.
-
-:::moniker range="= azure-devops-2019"
-
-With Azure DevOps 2019 Update 1, you can manage your pipeline variables using the pipeline settings UI.
-
-:::moniker-end
 
 To manage pipeline variables, do the following steps.
 

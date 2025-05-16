@@ -66,32 +66,22 @@ In each work item form, describe work, assign contributors, track status, and co
 
 ::: moniker range="azure-devops"
 
-* **Access levels:**
-  * To add work items to a board and use all other board features, have at least **Basic** access.
-  * Private project: To view boards, open and modify work items, and add child tasks to a checklist, have at least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card.
-  * Public project: For full access to all Boards features, have at least **Stakeholder** access.
-* **Permissions:** Be a member of the **Contributors** or **Project Administrators** group.
+| Category | Requirements |
+|--------------|-------------|
+| **Access levels** | - To add work items to a board and use all other board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - Private project: To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. <br> - Public project: For full access to all Boards features: At least **Stakeholder** access. |
+| **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
-* **Access levels:**
-  * To add work items to a board and use all other board features, have at least **Basic** access.
-  * To view boards, open and modify work items, and add child tasks to a checklist, have at least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card.
-* **Permissions:** Be a member of the **Contributors** or **Project Administrators** group.
+
+| Category | Requirements |
+|--------------|-------------|
+| **Access levels** | - To add work items to a board and use all other board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. |
+| **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
 
 > [!NOTE]
 > To drag-and-drop cards to different columns, have [Azure DevOps Server 2020 Update 1](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).  
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-
-* **Access levels:**
-  * To add work items to a board and use all other board features, have at least **Basic** access.
-  * Private project: To view boards, open and modify work items, and add child tasks to a checklist, have at least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card.
-  * Public project: For full access to all Boards features, have at least **Stakeholder** access.
-* **Permissions:** Be a member of the **Contributors** or **Project Administrators** group.
 
 ::: moniker-end
 
