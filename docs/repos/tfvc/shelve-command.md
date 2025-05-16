@@ -21,7 +21,11 @@ The Team Foundation Version Control (TFVC) `shelve` command stores a set of pend
 
 ## Prerequisites
 
-If you want to use the `shelve` command to delete a shelveset, you must be a shelveset owner, or your **Administer shelved changes** permission must be set to **Allow**.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|Owner of the shelveset or **Administer shelved changes** permission set to **Allow**. |
+
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

@@ -20,6 +20,10 @@ You can share your work on a local Git repo [branch](create-branch.md) by upload
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 <a name="push-your-code"></a>
 
 ## Push your code

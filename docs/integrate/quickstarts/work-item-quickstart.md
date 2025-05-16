@@ -8,7 +8,7 @@ monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 10/03/2024
+ms.date: 05/05/2025
 ---
 
 # Fetch work items with queries programmatically 
@@ -19,11 +19,13 @@ Fetching work items using queries is a common scenario in Azure DevOps Services.
 
 ## Prerequisites
 
-- **Azure DevOps setup:**
-  - Have [an organization](https://go.microsoft.com/fwlink/?LinkId=307137) in Azure DevOps Services.
-  - Have a [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Azure DevOps** | - [An organization](https://go.microsoft.com/fwlink/?LinkId=307137).<\br>- A [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).|
+|**Development environment**| A C# development environment. You can use [Visual Studio](https://visualstudio.microsoft.com/vs/).|
 
-- **Development environment:** Have a C# development environment. You can use [Visual Studio](https://visualstudio.microsoft.com/vs/).
+> [!IMPORTANT]
+> We use Personal Access Tokens (PATs) as an example in this article, but we don't recommend using PATs. For more secure authentication mechanisms, see [Authentication guidance](../get-started/authentication/authentication-guidance.md).
 
 ## Create a C# project in Visual Studio
 
@@ -138,6 +140,75 @@ public class QueryExecutor
     }
 }
 ```
+
+## Troubleshoot
+
+When you're working with Azure DevOps programmatically, you might encounter issues related to query execution, parameter usage, or method overloads. This section provides guidance on common problems, their causes, and how to resolve them effectively. By understanding these troubleshooting steps, you can ensure smoother integration and avoid runtime errors.
+
+### Common issues
+
+- **Improper instantiation of the `Wiql` object**: Ensure the `Wiql` object is properly instantiated and contains a valid query.
+- **Incorrect usage of optional parameters**: Verify that optional parameters are being passed correctly, especially if they're null.
+- **Invalid query syntax**: Ensure the query in the `Wiql` object is valid and matches the expected format.
+
+### RuntimeBinderException
+
+When you work with the `QueryByWiqlAsync` method in Azure DevOps, you might encounter a `RuntimeBinderException`. This exception typically occurs when the arguments passed to the method don't match any of its overloads. Understanding the method's signature and ensuring proper parameter usage can help resolve this issue.
+
+**Error**:  
+`RuntimeBinderException`: This exception occurs when the arguments passed to the `QueryByWiqlAsync` method don't match any of the method's overloads.
+
+**Resolution**:  
+Ensure that the parameters being passed to the method are of the correct types and in the correct order. The method signature is as follows:
+
+```csharp
+public virtual Task<WorkItemQueryResult> QueryByWiqlAsync(
+    Wiql wiql,
+    bool? continueOnError = null,
+    int? top = null,
+    object userState = null,
+    CancellationToken cancellationToken = default(CancellationToken));
+
+```
+
+**Sample code with correct usage**
+
+The following code snippet demonstrates the correct usage of the `QueryByWiqlAsync` method, ensuring that the parameters are properly defined:
+
+```csharp
+using Microsoft.TeamFoundation.WorkItemTracking.WebApi;
+using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
+using System;
+using System.Threading.Tasks;
+public async Task QueryWorkItemsAsync(WorkItemTrackingHttpClient client)
+{
+    var wiql = new Wiql()
+    {
+        Query = "SELECT [System.Id] FROM WorkItems WHERE [System.TeamProject] = 'YourProjectName'"
+    };
+
+    try
+    {
+        var result = await client.QueryByWiqlAsync(wiql);
+        foreach (var workItem in result.WorkItems)
+        {
+            Console.WriteLine($"Work Item ID: {workItem.Id}");
+        }
+    }
+    catch (Microsoft.CSharp.RuntimeBinder.RuntimeBinderException ex)
+    {
+        Console.WriteLine($"Error: {ex.Message}");
+    }
+}
+```
+
+**Explanation of the code**
+
+- **Create a `Wiql` object**: The `Wiql` object contains the query to fetch work items.
+- **Call `QueryByWiqlAsync`**: Pass the `Wiql` object to the method.
+- **Handle exceptions**: Catch the `RuntimeBinderException` and log the error message for debugging.
+
+By following this approach, you can ensure proper usage of the `QueryByWiqlAsync` method and avoid common issues like `RuntimeBinderException`.
 
 ## Related articles
 

@@ -3,7 +3,7 @@ title: Set secret variables
 description: Learn how to set secret variables.
 ms.topic: conceptual
 ms.date: 11/19/2024
-monikerRange: 'azure-devops || >= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Set secret variables
@@ -63,7 +63,6 @@ For a more detailed example, see [Define variables](variables.md#secret-variable
 
 #### [Classic](#tab/classic/)
 
-
 Unlike a normal variable, secret aren't automatically decrypted into environment variables for scripts. You need to explicitly map secret variables.
 
 In this example, the variable `mySecret` is set on the Variables tab. The value of `mySecret` is `foo`.
@@ -105,7 +104,6 @@ Variable groups follow the [library security model](../library/index.md#library-
 ### Link secrets from an Azure key vault
  
 You can create variable groups and link them to an existing Azure key vault, allowing you to map to secrets stored in the key vault. Only the secret names are mapped to the variable group, not the secret values. Pipeline runs that link to the variable group fetch the latest secret values from the vault. For more information, see [Link a variable group to secrets in Azure Key Vault](../library/link-variable-groups-to-key-vaults.md).
-
 
 ## Use the Azure Key Vault task
 

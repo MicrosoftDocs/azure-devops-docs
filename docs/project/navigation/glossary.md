@@ -22,7 +22,7 @@ An interactive list of work items that corresponds to a team's project plan or r
 
 Teams can customize each backlog. For more information, see [Create your backlog](../../boards/backlogs/create-your-backlog.md).   
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ## Analytics views
 Analytics views provide a simplified way to specify the filter criteria for a Power BI report based on the Analytics service. The Analytics service is the reporting platform for Azure DevOps Services. 
 ::: moniker-end
@@ -100,7 +100,6 @@ The person who created the organization or was later assigned as the organizatio
 ## Personal Access Token (PAT)
 
 Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. To learn how to create and revoke PATs, see [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). 
-
 
 ## Permission
 

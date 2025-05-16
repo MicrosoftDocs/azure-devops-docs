@@ -8,7 +8,7 @@ ms.subservice: azure-devops-analytics
 ms.topic: sample
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms date: 12/13/2022
 ---
 
@@ -25,6 +25,8 @@ Before generating these reports, you must first [connect to Analytics using the 
 
 > [!TIP]  
 > Use the search box if you are working with tables that contain many columns.
+
+## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 

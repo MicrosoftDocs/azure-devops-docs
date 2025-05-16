@@ -19,8 +19,10 @@ Finding the right package for your project can be challenging, especially when t
 
 ## Prerequisites
 
-- **Azure DevOps organization and project:** Ensure you have an organization and a project. If you don't have one, create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project).
-- **Azure Artifacts feed:** Make sure you have an Azure Artifacts feed. If you don't have one, [create a feed](../../artifacts/get-started-nuget.md#create-feed).
+| Category | Requirements |
+|--------------|-------------|
+| **Azure DevOps organization and project** | An [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project). |
+| **Azure Artifacts feed** | An [Azure Artifacts feed](../../artifacts/get-started-nuget.md#create-feed). |
 
 ## Search packages
 

@@ -91,7 +91,7 @@ For more information on canary deployments with pipelines, see [Use a canary dep
 
 Kubernetes runs the same way on all cloud providers. Azure Pipelines can be used for deploying to Azure Kubernetes Service (AKS), Google Kubernetes Engine (GKE), Amazon Elastic Kubernetes Service (EKS), or clusters from any other cloud providers.
 
-To set up multicloud deployment, [create an environment](../../process/environments.md#creation) and then add your Kubernetes resources associated with namespaces of Kubernetes clusters. 
+To set up multicloud deployment, [create an environment](../../process/environments.md#create-an-environment) and then add your Kubernetes resources associated with namespaces of Kubernetes clusters. 
 
 * [Azure Kubernetes Service](../../process/environments-kubernetes.md#use-azure-kubernetes-service)
 * [Generic provider using existing service account](../../process/environments-kubernetes.md#use-an-existing-service-account)

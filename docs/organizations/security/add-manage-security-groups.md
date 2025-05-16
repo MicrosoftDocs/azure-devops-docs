@@ -29,8 +29,10 @@ Azure DevOps is pre-configured with default security groups. You can add and man
 
 ## Prerequisites 
 
-- **Permissions**: Be a member of the **Project Collection Administrators** security group. For more information on tokens, see [Security namespace and permission reference](namespace-reference.md).  
-- **Tools**: Install the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md). Sign in to Azure DevOps using `az login`.  
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. For more information on tokens, see [Security namespace and permission reference](namespace-reference.md).  |
+|**Tools**| [Azure DevOps CLI extension](../../cli/index.md). Sign in using `az login`. |
 
 ## Security group commands
 

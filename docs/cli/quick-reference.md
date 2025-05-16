@@ -26,7 +26,7 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 
 ## Azure Artifacts
 
-- [Universal Packages - download specific files](../artifacts/quickstarts/universal-packages.md#download-specific-files)
+- [Universal Packages - download specific files](../artifacts/quickstarts/download-universal-packages.md#download-specific-files)
 - [Create a feed](../artifacts/quickstarts/universal-packages.md) 
 - [Download a universal package](../artifacts/quickstarts/universal-packages.md) 
 - [Publish a universal package](../artifacts/quickstarts/universal-packages.md) 
@@ -55,12 +55,12 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Permanently delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
       #### Work items
       - [Add work items](../boards/work-items/view-add-work-items.md) 
-      - [Add or remove work item links](../boards/backlogs/add-link.md#azure-cli) 
+      - [Add or remove work item links](../boards/backlogs/add-link.md#link-a-work-item-to-another-work-item) 
       - [Delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
       - [List supported link types](../boards/queries/link-type-reference.md#list-link-types)
       - [Move work items](../boards/work-items/move-work-items.md#move-work-items) 
       - [Show work item details](../boards/backlogs/add-work-items.md#show-work-item) 
-      - [Show work item link details](../boards/backlogs/add-link.md#azure-cli)
+      - [Show work item link details](../boards/backlogs/add-link.md#link-a-work-item-to-another-work-item)
       - [Update work items](../boards/backlogs/add-work-items.md#update-work-item) 
    :::column-end:::
 :::row-end:::

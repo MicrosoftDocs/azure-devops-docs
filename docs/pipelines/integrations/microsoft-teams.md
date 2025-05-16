@@ -9,7 +9,6 @@ ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 07/12/2024
-monikerRange: 'azure-devops'
 ---
  
 # Integrate Azure Pipelines with Microsoft Teams
@@ -29,9 +28,13 @@ This article shows you how to use the Azure Pipelines app for Microsoft Teams to
 
 ## Prerequisites
 
-- Access to a Team in Microsoft Teams where you can add an app.
-- Project Administrator or Build Administrator [permissions](../policies/permissions.md) in an Azure DevOps project. For more information, see [Create a project](../../organizations/projects/create-project.md) and [Pipeline security resources](../security/resources.md).
-- **Third party application access via OAuth** enabled in Azure DevOps organizational settings.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Member of a project](../../organizations/security/add-users-team-project.md). |
+| **Microsoft Teams** | Access to a Team in Microsoft Teams and permission to add an app. By default, both Team owners and members can add or remove apps in a Team. Use of apps can also be [configured in the Team admin center](/microsoftteams/manage-apps) by users with the **Team Administrator** role. |
+| **Permissions** | Project Administrator or Build Administrator [permissions](../policies/permissions.md) in an Azure DevOps project. For more information, see [Create a project](../../organizations/projects/create-project.md) and [Pipeline security resources](../security/resources.md). |
+| **Policies** | [**Third party application access via OAuth** policy enabled for the organization](../../organizations/accounts/change-application-access-policies.md). |
+
 
 ## Set up the Azure Pipelines app
 

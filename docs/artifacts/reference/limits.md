@@ -39,10 +39,15 @@ Azure Artifacts is a highly scalable package management solution that enables de
 - **Cargo packages**: limited to 500 MiB per file.
 
 - **Universal Packages**: up to 4 TiB per file (Recommended for large binary files).
-::: moniker-end
 
 > [!NOTE]
-> Universal Packages are only available in Azure DevOps Services.
+> Universal Packages containing an exceptionally large number of files (100K+) may fail to publish. In this case, we recommend bundling the files into a *ZIP* or *TAR* archive to reduce the file count.
+
+::: moniker-end
+
+## Increase Artifacts storage limit 
+
+[!INCLUDE [](../includes/increase-storage-limit.md)]
 
 ## Related articles
 

@@ -5,8 +5,8 @@ ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: bjanousek
-author: bjanousek
+ms.author: vijayma
+author: vijayma
 ms.date: 06/26/2024
 monikerRange: '= azure-devops'
 ---
@@ -18,6 +18,10 @@ monikerRange: '= azure-devops'
 Using the custom fields allows [storing the custom data](#store-custom-data) against the test run and/or test result.
 There can be up to 100 custom fields defined for a single Azure DevOps project.
 Project administrator can [manage (add/delete) the set of the custom fields](#managing-custom-fields).
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 <a name="managing-custom-fields"></a>
 

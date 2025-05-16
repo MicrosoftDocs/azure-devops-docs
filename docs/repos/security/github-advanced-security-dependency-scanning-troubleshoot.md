@@ -9,17 +9,21 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 10/24/2024
+ms.date: 04/16/2025
 ---
 
-# Troubleshooting dependency scanning 
+# Troubleshoot dependency scanning 
 
 Learn how to troubleshoot dependency scanning issues in GitHub Advanced Security for Azure DevOps.
 
-### Dependency scanning not identifying any components
-If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step prior to the `AdvancedSecurity-Dependency-Scanning@1` task. 
+## Prerequisites
 
-For example, for a C# (.NET Core) project, here is a sample YAML snippet: 
+[!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
+
+## Dependency scanning not identifying any components
+If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step before the `AdvancedSecurity-Dependency-Scanning@1` task. 
+
+For example, for a C# (.NET Core) project, here's a sample YAML snippet: 
 
 >[!div class="tabbedCodeSnippets"]
 ```yaml
@@ -37,7 +41,7 @@ For example, for a C# (.NET Core) project, here is a sample YAML snippet:
 - task: AdvancedSecurity-Dependency-Scanning@1
 ```
 
-For a JavaScript project, here is a sample YAML snippet:
+For a JavaScript project, here's a sample YAML snippet:
 >[!div class="tabbedCodeSnippets"]
 ```yaml
 - task: Npm@1
@@ -49,25 +53,99 @@ For a JavaScript project, here is a sample YAML snippet:
 - task: AdvancedSecurity-Dependency-Scanning@1
 ```
 
-### Dependency scanning task timeout 
+## Dependency scanning task time-out 
 
-The default time that the dependency scanning task runs before timing out is 300 seconds, or 5 minutes. If the task is timing out prior to completion, you can set a pipeline variable `DependencyScanning.Timeout`, which expects an integer representing seconds, such as `DependencyScanning.Timeout: 600`. Anything under the default timeout of 300 seconds has no effect. 
+The default time that the dependency scanning task runs before timing out is 300 seconds, or 5 minutes. If the task is timing out before completion, you can set a pipeline variable `DependencyScanning.Timeout`, which expects an integer representing seconds, such as `DependencyScanning.Timeout: 600`. Anything under the default time-out of 300 seconds has no effect. 
 
 To use this variable, add `DependencyScanning.Timeout` as a pipeline variable: 
 
 >[!div class="tabbedCodeSnippets"]
 ```yaml
 - task: AdvancedSecurity-Dependency-Scanning@1
-- env:
+  env:
     DependencyScanning.Timeout: 600
 ```
 
-### Break-glass scenario for build task
+## Adjusting your scanning directory
+
+By default, the dependency scanning task will process the `Agent.BuildDirectory` directory. If you want to scope your scan to a specific folder, you can set a pipeline variable `DependencyScanning.SourcePath` to any directory file path in the build agent that you want to analyze. Multiple dependency scanning task executions in the same pipeline job are not supported. If the scan path is scoped to subdirectory, you cannot re-add the task to scan a different directory.
+
+ >[!div class="tabbedCodeSnippets"]
+```yaml
+- task: AdvancedSecurity-Dependency-Scanning@1
+  env:
+    DependencyScanning.SourcePath: scan/code/path
+```
+
+## Dependency scanning publishing results to the incorrect repository 
+
+If you have a pipeline definition housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results may be processed and submitted to the incorrect repository, publishing to the repository containing the pipeline definition rather than the source code repository.
+
+To enable proper result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+
+Alternatively, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
+
+>[!div class="tabbedCodeSnippets"]
+```yaml
+trigger:
+  - main
+
+resources:
+  repositories:
+    - repository: BicepGoat
+      type: git
+      name: BicepGoat
+      ref: refs/heads/main
+      trigger:
+        - main
+
+jobs:
+  # Explicit - `advancedsecurity.publish.repository` explicitly defines the repository to submit SARIF to.
+  - job: "AdvancedSecurityDependencyScanningExplicit"
+    displayName: "🛡 Dependency scanning (Explicit)"
+    variables:
+      advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['BicepGoat']) ]
+    steps:
+      - checkout: BicepGoat
+      - task: AdvancedSecurity-Dependency-Scanning@1
+        displayName: Dependency Scanning
+
+  # Infer - `advancedsecurity.publish.repository.infer` specifies that the `AdvancedSecurity-Publish` must
+  # infer repository to submit SARIF to from the working directory on the build agent.
+  - job: "AdvancedSecurityDependencyScanningInfer"
+    displayName: "🛡 Dependency scanning (Infer)"
+    variables:
+      advancedsecurity.publish.repository.infer: true
+    steps:
+      - checkout: BicepGoat
+      - task: AdvancedSecurity-Dependency-Scanning@1
+        displayName: Dependency Scanning
+```
+
+## Missing dependency scanning pull request annotations when adjusting where results are published 
+
+If you are using either the `advancedsecurity.publish.repository.infer` or defining an alternative `advancedsecurity.publish.repository`, you may need to set `DependencyScanning.SourcePath: $(System.DefaultWorkingDirectory)` so that file paths are determined accurately for the pull request annotation to appear as expected. 
+
+ >[!div class="tabbedCodeSnippets"]
+```yaml
+- task: AdvancedSecurity-Dependency-Scanning@1
+  env:
+    DependencyScanning.SourcePath: $(System.DefaultWorkingDirectory)
+```
+
+## Break-glass scenario for build task
 
 If the dependency scanning build task is blocking a successful execution of your pipeline and you need to urgently skip the build task, you can set a pipeline variable `DependencyScanning.Skip: true`.
 
-### Dependency scanning task permissions
+## Dependency scanning task permissions
 
-The dependency scanning build task uses the pipeline identity to call the Advanced Security REST APIs. By default, pipelines in the same project have access to fetch alerts. If you remove those permissions from the build service account or if you have a custom setup (for example, a pipeline hosted in a different project than the repository), you must grant these permissions manually.
+The dependency scanning build task uses the pipeline identity to call the Advanced Security REST APIs. By default, pipelines in the same project have access to fetch alerts. If you remove those permissions from the build service account or if you have a custom setup, for example, a pipeline hosted in a different project than the repository, grant these permissions manually.
 
 Grant `Advanced Security: View Alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
+
+## Related articles
+
+- [Set up code scanning](github-advanced-security-code-scanning.md)
+- [Set up dependency scanning](github-advanced-security-dependency-scanning.md)
+- [Set up secret scanning](github-advanced-security-secret-scanning.md)
+- [Learn about GitHub Advanced Security for Azure DevOps](github-advanced-security-security-overview.md)

@@ -25,6 +25,8 @@ For more information, see [About process customization and inherited processes](
 > [!TIP]    
 > To customize a single project, always start by [creating an inherited process and updating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
@@ -99,10 +101,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/add-custom-field/choose-new-team-project.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
-	::: moniker-end
+	
 
 2. The Create new project page opens. Fill out the form. 
 
@@ -114,10 +113,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/add-custom-field/create-new-project-2020.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Create new project form](media/process/create-test-project.png) 
-	::: moniker-end
+	
 
 3.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 

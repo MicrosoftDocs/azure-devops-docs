@@ -5,7 +5,7 @@ ms.custom: linux-related-content
 description: Instructions for running your Azure Pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.date: 04/05/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Run a self-hosted agent in Docker
@@ -16,14 +16,6 @@ This article provides instructions for running your Azure Pipelines agent in Doc
 
 Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. Windows containers should run on a Windows `vmImage`.
 To run your agent in Docker, you'll pass a few [environment variables](#environment-variables) to `docker run`, which configures the agent to connect to Azure Pipelines or Azure DevOps Server. Finally, you [customize the container](#add-tools-and-customize-the-container) to suit your needs. Tasks and scripts might depend on specific tools being available on the container's `PATH`, and it's your responsibility to ensure that these tools are available.
-
-::: moniker range="azure-devops-2019"
-
-This feature requires agent version 2.149 or later.
-Azure DevOps 2019 didn't ship with a compatible agent version.
-However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Docker agents.
-
-::: moniker-end
 
 ## Windows
 
@@ -218,18 +210,22 @@ Next, create the Dockerfile.
 
 4. Save the following content to `~/azp-agent-in-docker/azp-agent-linux.dockerfile`:
 
-    * For Alpine:
+    * For Alpine, using the technique described in [this issue](https://github.com/Azure/azure-cli/issues/19591):
       ```dockerfile
-      FROM alpine
+      FROM python:3-alpine
       ENV TARGETARCH="linux-musl-x64"
 
       # Another option:
       # FROM arm64v8/alpine
       # ENV TARGETARCH="linux-musl-arm64"
 
-      RUN apk update
-      RUN apk upgrade
-      RUN apk add bash curl git icu-libs jq
+      RUN apk update && \
+        apk upgrade && \
+        apk add bash curl gcc git icu-libs jq musl-dev python3-dev libffi-dev openssl-dev cargo make
+
+      # Install Azure CLI
+      RUN pip install --upgrade pip
+      RUN pip install azure-cli
 
       WORKDIR /azp/
 
@@ -251,9 +247,12 @@ Next, create the Dockerfile.
       ENV TARGETARCH="linux-x64"
       # Also can be "linux-arm", "linux-arm64".
 
-      RUN apt update
-      RUN apt upgrade -y
-      RUN apt install -y curl git jq libicu70
+      RUN apt update && \
+        apt upgrade -y && \
+        apt install -y curl git jq libicu70
+
+      # Install Azure CLI
+      RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
       WORKDIR /azp/
 
@@ -293,6 +292,14 @@ Next, create the Dockerfile.
       exit 1
     fi
 
+    if [ -n "$AZP_CLIENTID" ]; then
+      echo "Using service principal credentials to get token"
+      az login --allow-no-subscriptions --service-principal --username "$AZP_CLIENTID" --password "$AZP_CLIENTSECRET" --tenant "$AZP_TENANTID"
+      # adapted from https://learn.microsoft.com/en-us/azure/databricks/dev-tools/user-aad-token
+      AZP_TOKEN=$(az account get-access-token --query accessToken --output tsv)
+      echo "Token retrieved"
+    fi
+
     if [ -z "${AZP_TOKEN_FILE}" ]; then
       if [ -z "${AZP_TOKEN}" ]; then
         echo 1>&2 "error: missing AZP_TOKEN environment variable"
@@ -303,6 +310,7 @@ Next, create the Dockerfile.
       echo -n "${AZP_TOKEN}" > "${AZP_TOKEN_FILE}"
     fi
 
+    unset AZP_CLIENTSECRET
     unset AZP_TOKEN
 
     if [ -n "${AZP_WORK}" ]; then
@@ -362,6 +370,7 @@ Next, create the Dockerfile.
 
     print_header "3. Configuring Azure Pipelines agent..."
 
+    # Despite it saying "PAT", it can be the token through the service principal
     ./config.sh --unattended \
       --agent "${AZP_AGENT_NAME:-$(hostname)}" \
       --url "${AZP_URL}" \
@@ -421,10 +430,24 @@ You can control the agent name, the agent pool, and the agent work directory by 
 | Environment variable | Description                                                  |
 |----------------------|--------------------------------------------------------------|
 | AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance. |
-| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user who has permission to [configure agents](pools-queues.md#create-agent-pools), at `AZP_URL`. |
+| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) |
+| AZP_CLIENTID         | [Service principal](../../pipelines/agents/service-principal-agent-registration.md) client ID |
+| AZP_CLIENTSECRET     | Service principal client secret                              |
+| AZP_TENANTID         | Service principal tenant ID                                  |
 | AZP_AGENT_NAME       | Agent name (default value: the container hostname).          |
 | AZP_POOL             | Agent pool name (default value: `Default`).                  |
 | AZP_WORK             | Work directory (default value: `_work`).                     |
+
+### Authentication
+
+One of the following is required:
+
+- If using a PAT: `AZP_TOKEN`
+- If using a service principal: `AZP_CLIENTID`, `AZP_CLIENTSECRET`, and `AZP_TENANTID`
+
+### Authorization
+
+The token or service principal must have the **Agent Pools (read, manage)** scope at the Organization level of `AZP_URL`. If using a PAT, the token must be created by a user who has permission to [configure agents](pools-queues.md#create-agent-pools).
 
 ## Add tools and customize the container
 
@@ -478,7 +501,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 3. Configure Container Registry integration for existing AKS clusters.
 
     > [!NOTE]
-    > If you have multiple subscriptions on the Azure Portal, please, use this command first to select a subscription
+    > If you have multiple subscriptions on the Azure portal, please, use this command first to select a subscription
     >```azurecli
     >az account set --subscription "<subscription id or subscription name>"
     >```

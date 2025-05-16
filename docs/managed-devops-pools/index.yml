@@ -8,7 +8,7 @@ metadata:
   titleSuffix: Azure DevOps 
   description: Managed DevOps Pool is a fully managed service where VMs or containers powering the agents will live in a Microsoft Azure subscription and not in your own Azure subscription.
   ms.topic: landing-page 
-  ms.date: 11/13/2024
+  ms.date: 02/03/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -22,6 +22,10 @@ landingContent:
         links:
           - text: What is Managed DevOps Pools?
             url: overview.md
+          - text: Compare with Azure Virtual Machine Scale Set agents
+            url: migrate-from-scale-set-agents.md
+          - text: Roadmap and features timeline
+            url: features-timeline.md
       - linkListType: quickstart
         links:
           - text: Azure portal
@@ -68,6 +72,8 @@ landingContent:
             url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template
           - text: Azure CLI
             url: /cli/azure/service-page/managed%20devops%20pools
+          - text: Azure PowerShell
+            url: /powershell/module/az.mdp
           - text: Bicep
             url: /azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep
           - text: Java

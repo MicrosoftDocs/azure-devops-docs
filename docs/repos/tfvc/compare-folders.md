@@ -20,7 +20,11 @@ You can compare the differences between two server folders, two local folders, o
 
 ## Prerequisites  
 
-To do these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| **Read** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 > [!NOTE]
 > To compare two local folders, you don't need any Azure DevOps permissions.

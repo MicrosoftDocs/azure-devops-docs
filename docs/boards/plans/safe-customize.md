@@ -11,7 +11,6 @@ monikerRange: '<= azure-devops'
 ms.date: 03/01/2023
 ---
 
-
 # Customize Azure Boards to support SAFe&reg; practices
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -27,7 +26,6 @@ Learn how Azure Boards supports SAFe® practices through the following operation
 > - Add custom rules to a work item type   
 > - Add custom controls or custom extensions  
 > - Customize your backlogs or add a custom portfolio backlog   
-
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
@@ -53,7 +51,6 @@ Each work item type defines the fields that capture and store information. You c
 - [Change the workflow](#custom-workflow) to reflect your team's workflow process  
 - [Add a custom control or extension](#custom-control) to support custom functions such as a calculated field 
 
-
 For more information on customizing a work item type, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 
 <a id="add-custom-field"></a> 
@@ -61,7 +58,6 @@ For more information on customizing a work item type, see [Add and manage work i
 ## Add a custom field 
 
 You can add a custom field to support tracking data requirements that aren't met with the existing set of fields. Some fields to consider adding to one or more work item types include those items listed in the following table. 
-
 
 :::row:::
    :::column span="":::
@@ -170,15 +166,6 @@ The following images show the supported conditions and actions you can select fr
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
 > |![Screenshot showing list of conditions, 2020](../../organizations/settings/work/media/rules/when-condition-2020.png) | ![Screenshot showing list of actions, 2020](../../organizations/settings/work/media/rules/rule-actions-2020.png)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!div class="mx-tdBreakAll"]  
-> |Supported conditions |Supported actions |
-> |-------------|----------|  
-> |![Screenshot showing list of conditions, 2019](../../organizations/settings/work/media/rules/when-condition-1.png) | ![Screenshot showing list of actions, 2019](../../organizations/settings/work/media/rules/rule-actions-2019.png)
 
 ::: moniker-end
 

@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 11/13/2023
 ---
 
-
 # witAdmin: Customize and manage objects for tracking work 
 
 [!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
@@ -27,7 +26,7 @@ As the following illustration shows, you manage categories and types of and work
   
 ![Conceptual image of Work Item Tracking Objects.](media/pnt_wit_objects.png)
 
-For most commands, you must be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md). 
+For most commands, be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md). 
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
 
@@ -195,7 +194,6 @@ For the Inherited process model, you can view and delete fields from the web por
 ---
  
 
-
 ## [Categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories)
 
 Categories associate one or more work item types as belonging to the same category. Azure Boards relies on default category definitions, many of which specify a single work item type per category. For more information, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
@@ -237,7 +235,6 @@ Categories associate one or more work item types as belonging to the same catego
    :::column-end:::
 :::row-end:::
 ---
-
 
 ## [Link types](/previous-versions/azure/devops/reference/witadmin/manage-link-types)
 
@@ -456,8 +453,6 @@ For the Inherited process model, you can customize backlogs from the web portal.
 :::row-end:::
 ---
 
-
-
 ::: moniker range="< azure-devops"
 
 ## [Client cache](/previous-versions/azure/devops/reference/witadmin/rebuild-client-cache)
@@ -481,7 +476,6 @@ To customize the resolution types, bug work item type, and failure types used wh
 
 ::: moniker-end
 
-
 ## Related articles
 
 ::: moniker range="azure-devops"
@@ -492,11 +486,10 @@ To customize the resolution types, bug work item type, and failure types used wh
  
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 - [Customize your work tracking experience](../customize-work.md)    
 - [On-premises XML process model](../on-premises-xml-process-model.md)
  
 ::: moniker-end
-
 

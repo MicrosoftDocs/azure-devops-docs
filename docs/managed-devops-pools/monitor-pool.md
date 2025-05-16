@@ -1,7 +1,7 @@
 ---
 title: Monitor
 description: Learn how to view the health of your Managed DevOps Pools.
-ms.date: 11/13/2024
+ms.date: 04/25/2025
 ---
 
 # Monitor Managed DevOps Pools
@@ -128,7 +128,10 @@ For a list of error codes, see the following [Error codes](#error-codes) section
 | `ServiceUnavailable` | The service is unavailable now. Retry the request later. |
 | `SkuNotAvailable` | The requested VM size for resource 'Following SKUs failed for Capacity Restrictions:' is currently not available in location. Try another size or deploy to a different location or different zone. See `https://aka.ms/azureskunotavailable` for details. |
 | `TaskCanceled` | The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing. |
-| VirtualNetworkIsNotFound | The Virtual Network might be deleted. |
+| `VirtualNetworkIsNotFound` | The Virtual Network might be deleted. |
+| `WorkerSetupFailed`, `UnableToDownloadWorkerCheckNetwork`, `UnableToDownloadWorkerCheckNetwork[<endpoint>]`  | [The Network infrastructure is blocking access to one of the prerequisite endpoints.](./configure-networking.md#restricting-outbound-connectivity) |
+| `UnableToDownloadWorkerCheckNetwork_TLSIssue` | [TLS Handshake failed when contacting prerequisite endpoints.](./configure-networking.md#restricting-outbound-connectivity) |
+
 
 ## See also
 

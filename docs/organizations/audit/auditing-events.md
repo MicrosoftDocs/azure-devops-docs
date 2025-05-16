@@ -33,6 +33,7 @@ The following tables describe the type of events (or actions) that are available
 
 | Area                       | Description |
 |----------------------------|-------------|
+| [Artifacts events](#artifacts-events)    | Create, modify permissions, and delete feed views and both organization-scoped and project-scoped feeds. |
 | [AuditLog events](#auditlog-events)      | View and download audit logs. Access, create, modify, enable, disable, and delete audit streams. |
 | [Billing events](#billing-events)        | Add, change, or remove Azure Subscriptions. Modify billing quantities for Pipelines, Artifacts, and Cloud Load Test usage.  |
 | [Extension events](#extension-events)    | Install, modify, enable, disable, and uninstall extensions for Extensions Marketplace.           |
@@ -65,6 +66,29 @@ The following tables describe the type of events (or actions) that are available
 
 > [!NOTE]
 > Want to find out what actions your organization logs? Be sure to check out the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events your organization could emit.
+
+### Artifacts events
+
+|                             Action                                 |                             Description                                                         |
+|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| `Artifacts.Feed.Project.Create`                                    | Created feed {FeedName} in project {ProjectId}.                                                 |
+| `Artifacts.Feed.Org.Create`                                        | Created organization feed {FeedName}.                                                           |
+| `Artifacts.Feed.Project.Modify`                                    | Modified feed {FeedName} in project {ProjectId}- {FeedChanges}.                                 |
+| `Artifacts.Feed.Org.Modify`                                        | Modified organization feed {FeedName}- {FeedChanges}.                                           |
+| `Artifacts.Feed.Project.SoftDelete`                                | Moved feed {FeedName} to the Feed Recycle Bin in project {ProjectId}.                           |
+| `Artifacts.Feed.Org.SoftDelete`                                    | Moved organization feed {FeedName} to the Feed Recycle Bin.                                     |
+| `Artifacts.Feed.Project.HardDelete`                                | Permanently deleted feed {FeedName} in project {ProjectId}.                                     |
+| `Artifacts.Feed.Org.HardDelete`                                    | Permanently deleted organization feed {FeedName}.                                               |
+| `Artifacts.Feed.Project.Modify.Permissions`                        | Permissions for {DisplayName} were set to {Role} for feed {FeedName} in project {ProjectId}.    |    
+| `Artifacts.Feed.Org.Modify.Permissions`                            | Permissions for {DisplayName} were set to {Role} for organization feed {FeedName}.              |
+| `Artifacts.Feed.Project.Modify.Permissions.Deletion`               | Permissions for feed {FeedName} in project {ProjectId} were removed for {DisplayName}.          |
+| `Artifacts.Feed.Org.Modify.Permissions.Deletion`                   | Permissions for organization feed {FeedName} were removed for {DisplayName}.                    |
+| `Artifacts.Feed.Project.FeedView.Create`                           | Created feed view {FeedViewName} in feed {FeedName} in project {ProjectId}.                     |
+| `Artifacts.Feed.Org.FeedView.Create`                               | Created feed view {FeedViewName} in organization feed {FeedName}.                               |
+| `Artifacts.Feed.Project.FeedView.Modify`                           | Modified feed view {FeedViewName} in feed {FeedName} in project {ProjectId}- {FeedViewChanges}. |
+| `Artifacts.Feed.Org.FeedView.Modify`                               | Modified feed view {FeedViewName} in organization feed {FeedName}- {FeedViewChanges}.           |
+| `Artifacts.Feed.Project.FeedView.HardDelete`                       | Permanently deleted feed view {FeedViewName} in feed {FeedName} in project {ProjectId}.         |
+| `Artifacts.Feed.Org.FeedView.HardDelete`                           | Permanently deleted feed view {FeedViewName} in organization feed {FeedName}.                   |
 
 ### AuditLog events
 
@@ -229,7 +253,6 @@ The following tables describe the type of events (or actions) that are available
 | `Process.Control.CreateWithoutLabel` | Control created for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Control.Delete` | A control was deleted for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Control.Update` | Control "{ControlLabel}" updated for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
-| `Process.Control.UpdateWithoutLabel` | Control updated for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Field.Add` | Field "{FieldReferenceName}" created on work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Field.Create` | Field "{FieldName}" created for process "{ProcessName}". |
 | `Process.Field.Delete` | Field "{FieldReferenceName}" deleted. |
@@ -247,7 +270,6 @@ The following tables describe the type of events (or actions) that are available
 | `Process.Page.Delete` | Page "{PageName}" deleted from work item type "{WorkItemTypeReferenceName}". |
 | `Process.Page.Update` | Page "{PageName}" updated for work item type "{WorkItemTypeReferenceName}". |
 | `Process.Process.CloneXmlToInherited` | The process "{ParentProcessName}" was cloned to an inherited process called "{TargetProcessName}". |
-| `Process.Process.Create` | Created inherited process "{ProcessName}". |
 | `Process.Process.Delete` | Process "{ProcessName}" was set as deleted. |
 | `Process.Process.Edit` | Process with the name "{OldProcessName}" was modified, and has the following name {NewProcessInformation}. |
 | `Process.Process.EditWithoutNewInformation` | Process with the name "{OldProcessName}" was modified. |
@@ -259,7 +281,6 @@ The following tables describe the type of events (or actions) that are available
 | `Process.State.Create` | State "{StateName}" added to "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.State.Delete` | State "{StateName}" deleted from "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.State.Update` | State "{StateName}" updated in "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
-| `Process.SystemControl.Delete` | SystemControl "{ControlId}" deleted in "{WorkItemTypeReferenceName}" for process "{ProcessName}". |
 | `Process.SystemControl.Update` | SystemControl "{ControlId}" updated in "{WorkItemTypeReferenceName}" for process "{ProcessName}". |
 | `Process.WorkItemType.Create` | New work item type "{WorkItemTypeName}" created for process "{ProcessName}". |
 | `Process.WorkItemType.Delete` | Work item type "{WorkItemTypeReferenceName}" deleted from process "{ProcessName}". |
@@ -272,7 +293,6 @@ The following tables describe the type of events (or actions) that are available
 | `Project.AreaPath.Create` | Area path "{Path}" was created. |
 | `Project.AreaPath.Delete` | Area path "{Path}" was deleted. |
 | `Project.AreaPath.Update` | Area path "{Path}" was updated. |
-| `Project.Create` | Project {ProjectName} was created successfully. |
 | `Project.CreateCompleted` | Project {ProjectName} was created successfully. |
 | `Project.CreateFailed` | Project {ProjectName} failed to be created. |
 | `Project.CreateQueued` | Project {ProjectName} creation was started. |
@@ -291,6 +311,11 @@ The following tables describe the type of events (or actions) that are available
 | `Project.UpdateRenameQueued` | Rename for project {PreviousProjectName} to {ProjectName} was started. |
 | `Project.UpdateVisibilityCompleted` | Project {ResolveProjectId:ProjectId} visibility change from {PreviousProjectVisibility} to {ProjectVisibility} was successful. |
 | `Project.UpdateVisibilityQueued` | Project {ResolveProjectId:ProjectId} visibility change from {PreviousProjectVisibility} to {ProjectVisibility} was started. |
+| `Project.IterationPath.Create` | IterationPath {Path} has been created. |
+| `Project.IterationPath.Update` | IterationPath {Path} has been updated. |
+| `Project.IterationPath.Delete` | IterationPath {Path} has been deleted. |
+| `Project.Process.Modify` | Process for project {ResolveProjectId:ProjectId} was changed from {OldProcessName} to {ProcessName}. |
+| `Project.Process.ModifyWithoutOldProcess` | Process for project {ResolveProjectId:ProjectId} was changed to {ProcessName}. |
 
 ### Release events
 

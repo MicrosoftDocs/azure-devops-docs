@@ -3,7 +3,7 @@ title: Deploy to different stages from multiple branches
 description: Learn how to use Classic release pipelines to deploy to different stages from multiple branches.
 ms.topic: tutorial
 ms.date: 08/06/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 

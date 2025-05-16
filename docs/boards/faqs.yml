@@ -11,7 +11,6 @@ metadata:
   "recommendations": "true"
   ms.date: 01/05/2024
 
-
 title: Azure Boards FAQs  
 
  
@@ -21,7 +20,6 @@ summary: |
   Find answers to frequently asked questions about using Azure Boards. For FAQs specific to queries or Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [Query FAQs](queries/query-faqs.yml) and [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.yml). 
 
   You can view a list of features that are on our roadmap for Azure Boards from the [Features Timeline](/azure/devops/release-notes/features-timeline). To request a feature or up-vote a feature, go to our [Developer Community page](https://developercommunity.visualstudio.com/spaces/21/visual-studio-team-services.html?type=idea). 
-
 
 sections:
   - name: Access and permissions 
@@ -48,10 +46,10 @@ sections:
           You can restrict access by setting permissions for an area path. For more information, see the following articles: 
           - [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json)
           - [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json) 
-
+          
       - question: Can caching affect rules applied to work items?  
         answer: | 
-
+          <a id="caching"></a>
           **Yes**. Conditional rules based on user or group membership get cached for your web browser. If you find yourself restricted to update a work item, you probably encountered one of these rules. For more information about conditional rules, see [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).
           If your cache stores outdated rules, you can wait for the client cache to expire within three days, or you can clear the cache.    
           To clear the cache, run the following command in the browser command window and then refresh the browser: window.indexedDB.deleteDatabase("wit")
@@ -123,16 +121,7 @@ sections:
           With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For more information, see [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).  
           ::: moniker-end
 
-          ::: moniker range="< azure-devops-2020"
-          This feature isn't supported at this time for Azure DevOps 2019 and earlier versions. Copying a work item doesn't copy any parent-child linked work items. However, is available for Azure DevOps Server 2020.1 update and Azure Boards (cloud service).  
-
-          The easiest way to accomplish the task of copying many work items with child items is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-as-a-tree-list).
-
-          Other solutions include employing one of the following Marketplace extensions:  
-          - [Work item form one-click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
-          - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
-          - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
-          ::: moniker-end
+          
 
       - question: How do I bulk modify a rich-text field? 
 
@@ -185,7 +174,6 @@ sections:
         answer: | 
           See [Azure Boards migration and integration](extensions/migrate-integrate.md).
 
-
       - question: How do the three types of backlogs--product, portfolio, and sprint backlogs--differ?
         answer: | 
           Each backlog lists a filtered set of work items based on the team's selected area path, iteration paths, and work item types.  
@@ -211,7 +199,6 @@ sections:
 
           For more context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).
 
-
   - name: Rollup
 
     questions: 
@@ -221,16 +208,13 @@ sections:
           ::: moniker range=">= azure-devops-2020"
           Rollup columns allow you to view progress bars or totals of numeric fields or descendant items within a hierarchy. Descendant items correspond to all child items within the hierarchy. You can add one or more rollup columns to a product or portfolio backlog. You can add rollup columns to a product or portfolio backlog. See {Display rollup progress or totals](backlogs/display-rollup.md). 
           ::: moniker-end
-          ::: moniker range="< azure-devops-2020"
-          Rollup provides summed values of select fields for all child work items of a parent. For more information, see  [Rollup of work and other fields](../reference/xml/support-rollup-of-work-and-other-fields.md). 
-          ::: moniker-end
+          
   
       - question: Can I get a rollup of team capacity?
 
         answer: | 
           **No**. The data entered for team capacity isn't stored in the regular data stores.
  
-
 
   - name: Boards
 
@@ -304,7 +288,7 @@ sections:
           - [Add, run, and update inline tests](boards/add-run-update-tests.md) 
           - [Add features and epics](boards/kanban-epics-features-stories.md)  
 
-          ::: moniker range=">= azure-devops-2019"
+          ::: moniker range="<=azure-devops"
           Alternatively, you might find a solution for creating child work items by installing one of the following Marketplace extensions:  
           - [Work item form one-click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
           - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
@@ -331,7 +315,6 @@ sections:
         answer: | 
           **No**. This feature isn't supported at this time. 
 
-
   - name: Configuration and customizations 
     questions: 
       - question: What is configurable or customizable? 
@@ -339,7 +322,6 @@ sections:
           Configuration and customization of Azure Boards occurs at the project and team level. For an overview of what you can configure and customize to support your business needs, see [Configuration and customization of Azure Boards](configure-customize.md).  
           
           For FAQs on configuration and customization, see [Azure Boards Configuration and Customization FAQs](../organizations/settings/work/faqs.yml).
-
 
 additionalContent: | 
   ## Related articles

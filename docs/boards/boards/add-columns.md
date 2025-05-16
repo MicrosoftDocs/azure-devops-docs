@@ -27,25 +27,13 @@ Managing columns on your board is essential for visualizing your team's workflow
 > - To view frequently asked questions about Azure Boards, see [FAQs](../faqs.yml).   
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-> [!NOTE]    
-> - To add columns to a Taskboard, customize the workflow. For more information, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
-> - To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
-> - To see an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
-> - To view frequently asked questions about Azure Boards, see [FAQs](../faqs.yml).
-
-::: moniker-end
-
 ## Prerequisites
 
-[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
-- **Tasks (optional):** To avoid revisiting your configuration, we recommend doing the following tasks before you begin to manage your board columns:
-   - [Add custom work item types](../../organizations/settings/work/customize-process-work-item-type.md)
-   - [Customize your product and portfolio backlogs](../../organizations/settings/work/customize-process-backlogs-boards.md)
-   - [Customize workflow states](../../organizations/settings/work/customize-process-workflow.md)
-   - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
-   - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+| Category | Requirements |
+|--------------|-------------|
+|**Access levels** | At least [**Basic**](../../organizations/security/access-levels.md) access.|
+|**Permissions** | To configure team settings: Member of the **Project Administrators** security group or [**Team Administrator** role](../../organizations/settings/add-team-administrator.md). For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).|
+| **Tasks (optional)**| To avoid revisiting your configuration, we recommend doing the following tasks before you begin to manage your board columns: <br>- [Add custom work item types](../../organizations/settings/work/customize-process-work-item-type.md)<br> - [Customize your product and portfolio backlogs](../../organizations/settings/work/customize-process-backlogs-boards.md)<br> - [Customize workflow states](../../organizations/settings/work/customize-process-workflow.md)<br> - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)<br> - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)|
 
 <a id="state-mappings" >   </a>
 <a id="when-to-update-the-kanban-column-to-state-mappings"></a>
@@ -169,7 +157,7 @@ Choose a column tab to configure the Definition of Done for that column.
 
 :::image type="content" source="media/columns/definition-of-done-defined.png" alt-text="Screenshot showing the columns management screen, entering plain text for Definition of Done.":::
 
-Users can quickly double-check the criteria by choosing the Information tooltip :::image type="icon" source="media/ALM_DD_InfoIcon.png" border="false"::: info icon.  
+Users can quickly double-check the criteria by choosing the Information tooltip :::image type="icon" source="../../media/icons/info.png" border="false"::: info icon.  
 
 :::image type="content" source="media/columns/definition-of-done-information-tooltip.png" alt-text="Screenshot showing information tooltip of Definition of Done.":::
 

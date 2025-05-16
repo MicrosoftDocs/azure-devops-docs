@@ -59,7 +59,6 @@ ms.date: 09/18/2024
   * [Code pushed](#git.push)
   * [Pull request created](#git.pullrequest.created)
   * [Pull request merge attempted](#git.pullrequest.merge.attempted)
-  * [Pull request approved](#git.pullrequest.approved)
   * [Pull request updated](#git.pullrequest.updated)
   * [Pull request commented on](#git.pullrequest.commented-on)
   * [Repository created](#repository-created)
@@ -2150,114 +2149,6 @@ Event: A pull request merge is attempted in a Git repository.
 }
 ```
 
-<a name="git.pullrequest.approved"></a>
-
-### Pull request approved
-
-Event: A merge commit is approved on a pull request.
-
-* Publisher ID: `azure-devops`
-* Event ID: `git.pullrequest.approved`
-* Resource Name: `pullrequest`
-
-#### Settings
-
- * `repository`: The repository that code is pushed to
-   * Data type: `guid`
- * `pullrequestCreatedBy`: A group that has the requester as a member
- * `pullrequestReviewersContains`: A group included in the reviewers list
- * `branch`: The target branch of the pull request
-
-#### Sample payload
-
-```json
-{
-  "id": "00000000-0000-0000-0000-000000000000",
-  "eventType": "git.pullrequest.merged",
-  "publisherId": "azure-devops",
-  "scope": "all",
-  "message": {
-    "text": "Jamal Hartnett has created a pull request merge approved",
-    "html": "Jamal Hartnett has created a pull request merge approved",
-    "markdown": "Jamal Hartnett has created a pull request merge approved"
-  },
-  "detailedMessage": {
-    "text": "Jamal Hartnett has created a pull request merge approved\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000)\r\n",
-    "html": "Jamal Hartnett has created a pull request merge approved\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000\">eef717</a></br>\r\n</ul>",
-    "markdown": "Jamal Hartnett has created a pull request merge approved\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000)\r\n"
-  },
-  "resource": {
-    "repository": {
-      "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
-      "name": "Fabrikam",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000",
-      "project": {
-        "id": "00000000-0000-0000-0000-000000000000abcd-1234-efgh-5678",
-        "name": "Fabrikam",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/abcd-1234-efgh-5678",
-        "state": "wellFormed"
-      },
-      "defaultBranch": "refs/heads/main",
-      "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
-    },
-    "pullRequestId": 1,
-    "status": "completed",
-    "createdBy": {
-      "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
-      "displayName": "Jamal Hartnett",
-      "uniqueName": "fabrikamfiber4@hotmail.com",
-      "url": "https://dev.azure.com/fabrikam/_apis/Identities/00000000-0000-0000-0000-000000000000",
-      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=00000000-0000-0000-0000-000000000000"
-    },
-    "creationDate": "2024-06-17T11:22:33.456789Z",
-    "closedDate": "2024-06-30T18:59:12.3660573Z",
-    "title": "my first pull request",
-    "description": " - test2\r\n",
-    "sourceRefName": "refs/heads/mytopic",
-    "targetRefName": "refs/heads/main",
-    "mergeStatus": "succeeded",
-    "mergeId": "a1234567-abcde-1234-abc",
-    "lastMergeSourceCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
-    },
-    "lastMergeTargetCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
-    },
-    "lastMergeCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
-    },
-    "reviewers": [
-      {
-        "reviewerUrl": null,
-        "vote": 0,
-        "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
-        "displayName": "[Mobile]\\Mobile Team",
-        "uniqueName": "azure-devops:///Classification/TeamProject/00000000-0000-0000-0000-000000000000\\Mobile Team",
-        "url": "https://dev.azure.com/fabrikam/_apis/Identities/00000000-0000-0000-0000-000000000000",
-        "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=00000000-0000-0000-0000-000000000000",
-        "isContainer": true
-      }
-    ],
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/pullRequests/1"
-  },
-  "resourceVersion": "1.0",
-  "resourceContainers": {
-    "collection": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    },
-    "account": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    },
-    "project": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    }
-  },
-  "createdDate": "2024-09-19T13:03:27.3156388Z"
-}
-```
 
 <a name="git.pullrequest.updated"></a>
 
@@ -3243,3 +3134,9 @@ Event: A work item is commented on.
 The event payload contains a `resourceContainers` dictionary that includes the IDs of the project, collection/account, or server that the event initiated from. 
 
 Some products/environments also include a `baseUrl` field with each entry that provides the full URL to the container. You can use this URL to create a connection to the container to make REST API calls.
+
+## Related articles
+
+- [Integrate with service hooks](overview.md)
+- [Create a service hook subscription programmatically](create-subscription.md)
+- [Service hook consumers](consumers.md)

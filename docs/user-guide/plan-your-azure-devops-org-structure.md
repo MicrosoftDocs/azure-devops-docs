@@ -22,7 +22,7 @@ Consider the following structures for your business and collaborative work in Az
 * [Number of organizations](#how-many-organizations-do-you-need)
 * [Number of projects under an organization](#how-many-projects-do-you-need)
 
-You also may want to plan for the following scenarios:
+Also, plan for the following scenarios:
 
 * [Map your organizations and projects](#mapping-guidance-table) in Azure DevOps to your enterprise, business unit, and team structure
 * [Structure your repositories (repos)](#structure-repos-and-version-control-within-a-project)
@@ -31,7 +31,7 @@ You also may want to plan for the following scenarios:
 * [Reporting needs](#mapping-guidance-table)
 * Promote common practices - [use foundational elements to create an agile mindset and culture](../boards/plans/agile-culture.md)
 
-Have at least one organization, which may represent your company, your larger collection of code projects, or even multiple related business units.
+Have at least one organization, which might represent your company, your larger collection of code projects, or even multiple related business units.
 
 ## What's an organization?
 

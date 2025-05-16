@@ -35,11 +35,10 @@ For more information, see [Organize queries](organize-queries.md).
 
 ## Prerequisites
 
-- **Access levels**: Have at least **Basic** access.
-- **Permissions**: 
-  - To manage permissions, be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md).
-  - To create or edit a shared query, have your **Contribute** permission set to **Allow** for the shared query folder.  
-  - To change permissions of a query or query folder, have the **Manage Permissions** permission set to **Allow** for the query folder.
+| Category | Requirements |
+|--------------|-------------|
+|**Access levels**| At least [**Basic** access](../../organizations/security/access-levels.md).|
+|**Permissions**| - To manage permissions, be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md).<br>- To create or edit a shared query, have your **Contribute** permission set to **Allow** for the shared query folder.<br>- To change permissions of a query or query folder, have the **Manage Permissions** permission set to **Allow** for the query folder.|
 
 Users with [Stakeholder access](../../organizations/security/stakeholder-access.md) can't create or save queries in a shared folder.
 
@@ -130,36 +129,6 @@ To set permissions on a new query folder, do the following steps:
     :::image type="content" source="media/permissions/permissions-folder-dialog-s166.png" alt-text="Screenshot of Permissions dialog for a query folder, verify permission settings.":::
   
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Choose **All**. Expand **Shared Queries**. 
- 
-1. To add a folder, choose the **More actions** icon :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: for an existing folder or the top container folder, and choose **New folder**. 
-
-    :::image type="content" source="media/organize-queries/select-new-folder.png" alt-text="Screenshot that shows Open actions menu, choose New folder.":::
-
-1. Enter the name for the folder. If you want to change the location of the folder, select it from the Folder drop down menu.  
-
-	Here we name the folder *Service Delivery* with the intention that it gets used by the Service Delivery team.
-
-    :::image type="content" source="media/permissions/new-folder-dialog.png" alt-text="Screenshot of New folder dialog, Azure DevOps Server 2019.":::
-
-1. To set permissions for the folder you just added, choose the **More actions** icon :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: and select **Security**.
-
-1. Change the permissions so that the team member or group can contribute and manage permissions for the folder. Choose the **Add...** menu to add a user identity or group. 
-
-   Here we add the Service Delivery team and grant them permissions to create and manage permissions to all queries and folders under the Service Delivery folder.  
-
-    :::image type="content" source="media/permissions/permissions-dialog-query-folder-service-delivery.png" alt-text="Screenshot of Permissions dialog for a query folder, Azure DevOps Server 2019.":::
-
-
-   **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
-
-1. (Optional) Turn off inheritance. Default is **On**. By turning off inheritance for a folder, you disallow inheritance of permissions that exist up the chain of query folders. For more information, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#permission-inheritance).  
-  
-::: moniker-end
-
 
 ## Set permissions on a shared query 
 

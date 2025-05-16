@@ -5,8 +5,7 @@ description: Learn how to create, update, link, follow, and delete work items, a
 ms.custom: devx-track-azurecli
 ms.service: azure-devops-boards
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
-ms.author: v-catherbund
-author: cebundy
+ms.author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: concept-article
 ms.date: 11/11/2024
@@ -131,7 +130,7 @@ For more information, see [Copy or clone work items](copy-clone-work-items.md).
 
 ## Move work items between team
 
-You can move work items from one team to another team within the same project. To move work items, you must have the **Edit work items in this node** permission for the target team.
+You can move work items from one team to another team within the same project. To move work items, have the **Edit work items in this node** permission for the target team.
 
 For more information, see [Move work items from one team to another](../work-items/move-work-items.md).
 

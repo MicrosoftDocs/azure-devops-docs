@@ -7,7 +7,7 @@ ms.subservice: azure-devops-projects
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/11/2024
 ---
 
@@ -60,14 +60,9 @@ Use the project summary page to also perform more specific tasks:
 
 ## Prerequisites
 
-- **Permissions**: Be a member of the [Project Administrators](../security/change-project-level-permissions.md) group or have your **Edit project-level information** permission set to *Allow* to do the following tasks:
-  - Edit information on the project page
-  - Change the repository that you use to share project information
-  - Manage project membership
-- **Specific tasks:**
-  - To edit a project page, be a contributor to the repository or branch or have the **Contribute** permissions set to *Allow*.  
-  - To view the project summary, be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../security/about-permissions.md#valid-user-groups).
-  - To add or edit project tags, have the project-level **Manage properties** permission set to *Allow*. This permission controls the project properties REST API.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|Member of the [Project Administrators](../security/change-project-level-permissions.md) group or **Edit project-level information** permission set to **Allow** to do the following tasks:<br>- Edit information on the project page.<br>- Change the repository that you use to share project information.<br>- Manage project membership.<br>**Specific tasks:**<br>- To edit a project page: **Contributor** to the repository or branch or **Contribute** permissions set to **Allow**.<br>- To view the project summary: [Valid member of the project](../security/about-permissions.md#valid-user-groups).<br>- To add or edit project tags: Project-level **Manage properties** permission set to **Allow**. This permission controls the project properties REST API.|
 
 > [!TIP]    
 > If you don't have the necessary permissions to edit a page or use a feature, the corresponding icons and links aren't visible to you.

@@ -36,6 +36,8 @@ Reasons you might want to change your process from Agile to Scrum:
 
 [!INCLUDE [temp](../includes/change-process-manual-steps.md)]
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts-plus-2020.md)]
@@ -98,9 +100,6 @@ Steps to manually update your work items and board settings:
 You can customize boards to display intermediate columns. For each column added, you must choose a valid workflow state for the work item types displayed on the board. For more information, see [Workflow states & state categories](../../../boards/work-items/workflow-and-state-categories.md).
 
 1. For each team, [open your board](../../../boards/get-started/plan-track-work.md).
-
-   > [!div class="mx-imgBorder"]  
-   > ![Open team board](media/agile-to-scrum/open-kanban-board.png)
 
 2. Choose the **Correct this now** link or the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
 

@@ -73,7 +73,7 @@ If you've checked the upstream sources checkbox when making your feed, NuGet Gal
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 
@@ -136,18 +136,6 @@ If you've checked the upstream sources checkbox when making your feed, NuGet Gal
 1. Select **Connect to Feed**, and then select **NuGet.exe** from the left navigation pane.
 
 1. Follow the instructions in the **Project setup** section to connect to your feed.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps server, and then navigate to your project.
-
-1. Select **Artifacts**, and then select your feed.
-
-1. Select **Connect to Feed**, and then select **NuGet** from the left navigation pane.
-
-1. Follow the provided instructions to add your package source URL to your *nuget.config* file.
 
 ::: moniker-end
 

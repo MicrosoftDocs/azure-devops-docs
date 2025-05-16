@@ -4,11 +4,12 @@ title: Package, publish extensions
 description: An overview of how to package, publish, unpublish, publicize, and share an extension for Azure DevOps.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ms.custom: engagement-fy23
+ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/27/2023
+ms.date: 03/25/2025
 ---
 
 # Package and publish extensions
@@ -32,7 +33,7 @@ Once you [develop your extension](../get-started/node.md), you can package and p
 
 ## Package your extension
 
-To upload your extension, you need to package it as a VSIX 2.0-compatible .vsix file.
+To upload your extension, package it as a VSIX 2.0-compatible .vsix file.
 Microsoft provides a cross-platform command-line interface (CLI) to package and publish your extension. 
 
 1. Open your extension manifest file (`vss-extension.json`) and set the value of the `publisher` field to the ID of your publisher. For example:
@@ -63,15 +64,15 @@ Microsoft provides a cross-platform command-line interface (CLI) to package and 
    ```
 
 > [!NOTE]
-> An extension/integration's version must be incremented on every update. <br>
-> If you haven't incremented your extension/integration in the manifest, you should pass the `--rev-version` command line switch. This increments the *patch* version number of your extension and saves the new version to your manifest.
+> Increment the version of your extension or integration in the manifest with every update. <br>
+> Use the `--rev-version` command line switch. This switch increments the *patch* version number of your extension and saves the new version to your manifest.
 
 #### Check package size
 
 Check the size of the vsix after it gets packaged. If it's greater than 50 MB, you need to optimize it. To do so, see the following considerations:
-* Deduplicate the common dependencies, if any, by stating them once in the extension package.
-* Fetch things at runtime or during install time rather than providing it within the package. Consider using the tool installer lib to pull tool dependencies at runtime. Using the lib offers benefits where the tool gets cached by version so for private agents, it doesn't download every build. We made it a lib so it can be used outside of tool installer tasks. But, the task doesn't work in disconnected scenarios (no internet), which should be in the description / docs for the task.
-* Some users have success with WebPack to tree shake their dependencies in their tasks.
+- Deduplicate common dependencies by stating them once in the extension package.
+- Fetch dependencies at runtime or during install time rather than including them in the package. Consider using the tool installer library to pull tool dependencies at runtime. This approach caches the tool by version for private agents, preventing downloads for every build. The tool installer library doesn't work in disconnected scenarios (no internet), which should be mentioned in the task description or documentation.
+- Use WebPack to tree shake dependencies in tasks.
 
 ## Publish your extension
 
@@ -79,7 +80,7 @@ Check the size of the vsix after it gets packaged. If it's greater than 50 MB, y
 
 ## Share your extension
 
-You must share your extension with an organization before you can install it in Azure DevOps. To share an extension, do the following tasks:
+Share your extension with an organization before you can install it in Azure DevOps. To share an extension, do the following tasks:
 
 1. From the [Marketplace management portal](https://aka.ms/vsmarketplace-manage), select your extension from the list, right-click, and then choose **Share/Unshare** or **Publish/Unpublish**, depending on the extension.
 
@@ -102,7 +103,7 @@ To install your shared extension, do the following steps.
    :::image type="content" source="../get-started/media/details-page2.png" alt-text="Screenshot of the Overview page.":::
 
    > [!NOTE]
-   > Because your extension is private, only you and any member of the organization it's shared with can see this page.
+   > Since your extension is private, only you and members of the organization it's shared with can see this page.
 
 2. Select **Get it free** to start the installation process. Select the organization you shared the extension with from the dropdown menu.
 
@@ -146,7 +147,9 @@ After you change the manifest, deploy and install this debugging extension only 
 
 ## Make your extension public
 
-While you develop your extension or integration for the Marketplace, keep it private. To make your extension available publicly, set the [public flag](../develop/manifest.md#public-flag) to `true` in your manifest.
+While you develop your extension or integration for the Marketplace, keep it private. This limits the visibility of the extension to specific accounts that you have shared it with.
+
+To make your extension available publicly, set the [public flag](../develop/manifest.md#public-flag) to `true` in your manifest.
 
 ### Qualifications
 
@@ -177,10 +180,10 @@ Marketplace assigns the badge to a publisher after carefully reviewing the publi
 - Support policy
 - Documentation
 - Q & A responsiveness
-- Ratings & review for their offerings
-- Active uptake and the install count for their offerings
-- Manage at least one public Azure DevOps extension from the publisher.
-- The public extension should have more than 5000 installs, with an active install count exceeding 1000.
+- Ratings and reviews for their offerings
+- Active uptake and install count for their offerings
+- Management of at least one public extension for Azure DevOps
+- Public extension with more than 5,000 installs and an active install count exceeding 1000
 
 You can expect timely support and a good overall experience when you get an extension from a Top Publisher. Check out the offerings from the Top Publishers.
 
@@ -194,22 +197,20 @@ For more information on adding policies to your offering, see the [extension man
     
     b. Select the publisher and complete the **About you** section in the **Details** tab.
      :::image type="content" source="media/microsoft-about-you-section.png" alt-text="Screenshot of the section about you for Microsoft publishers.":::
-    c. Save your changes and select **View profile** to see how it appears to consumers. You can use this profile page to evangelize your offering(s).
+    c. Save your changes and select **View profile** to see how it appears to consumers. You can use this profile page to evangelize your offerings.
 
 > [!NOTE]
-> Through this program, it is the publisher that is being certified. This doesn't cover the software or security of their extensions and integrations. We recommend you be aware of the [safety information](../overview.md#safety-information) when you're evaluating the offerings from a publisher.
-
-If you got an extension from a Top Publisher and aren't satisfied with your experience, consider engaging with the publisher first.
+> This program certifies the publisher, not the software, or security of their extensions and integrations. We recommend reviewing the [safety information](../overview.md#safety-information) when evaluating offerings from a publisher. If you got an extension from a Top Publisher and aren't satisfied with your experience, consider engaging with the publisher first.
 
 ## Apply to be a Top Publisher
 
-1. Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
-2. Select the publisher and navigate to its **Top Publisher** tab. Note: you need to have one or more global Azure DevOps (Server/Service) extension or integration for the tab to appear.  
-3. If you meet part of the previously listed requirements and are the publisher's owner, you see an option to apply for the program. On application, an email is sent to the Marketplace team to review your case. They respond in under 10 business days with next steps, clarifying questions or with the grant of the badge.
+1. Sign in to [Marketplace management portal](https://marketplace.visualstudio.com/manage/publishers) using the account with which you publish and manage your offerings in Marketplace.
+2. Select the publisher and go to its **Top Publisher** tab. Have one or more global Azure DevOps (Server/Service) extensions or integrations for the tab to appear.
+3. If you meet the previously listed requirements and are the publisher's owner, you can apply for the program. Upon application, an email gets sent to the Marketplace team to review your case. They respond within 10 business days with next steps, clarifying questions, or the grant of the badge.
 
-The team likely looks at other parameters, such as active uptake of your offerings, install/get started counts and ratings & reviews across your offerings before granting the badge. Microsoft reserves the right to grant, reject or revoke the Top Publisher badge at any time.
+The team likely considers other parameters, such as active uptake of your offerings, install/get started counts, and ratings & reviews across your offerings before granting the badge. Microsoft reserves the right to grant, reject, or revoke the Top Publisher badge at any time.
 
-Once a publisher is a Top Publisher, then all its future updates and offerings must meet the previously listed requirements.
+Once a publisher is a Top Publisher, all its future updates and offerings must meet the previously listed requirements.
 
 ## Respond to Marketplace extension reviews
 
@@ -219,17 +220,13 @@ You can leave only one response. Avoid using reviews as a support forum. If you 
 
 ### Guidelines for publisher responses
 
-Keep the Visual Studio Marketplace an open, inviting, respectful, and helpful place for customers to find, try, install, and review extensions. Communication plays an important role in keeping a healthy community. To help create this environment, here are guidelines for 
-publishers responding to customer reviews. Think deeply about your customer interactions and reflect on the spirit of the customer experience 
-that the Marketplace is trying to create.
+Keep the Visual Studio Marketplace an open, inviting, respectful, and helpful place for customers to find, try, install, and review extensions. Communication plays an important role in keeping a healthy community. To help create this environment, here are guidelines for publishers responding to customer reviews. Think deeply about your customer interactions and reflect on the spirit of the customer experience that the Marketplace is trying to create.
 
-* Reviews are reserved for customer comments. Use *Reply* only to respond to a review. 
-* Reviews are for sharing customer opinions, so *all opinions are valid*. Customers are entitled to their opinions, so treat comments respectfully
-as feedback without debate, criticism, or argument.
-* Make sure that your responses add value and are relevant to your customers' comments.
-* Focus on precisely addressing questions or problems. If you need more details, ask the customer to contact you over email, rather discuss in reviews. When you 
-resolve the problem, update your reply with the resolution. You can edit your reply, just like customers can edit their reviews.
-* If you come across any inappropriate reviews, like spam, abusive, or offensive content, for any extension, flag it for our review.
+- Reserve reviews for customer comments. Use *Reply* only to respond to a review.
+- Respect all customer opinions. Treat comments as feedback without debate, criticism, or argument.
+- Ensure your responses add value and are relevant to your customers' comments.
+- Focus on precisely addressing questions or problems. If you need more details, ask the customer to contact you over email rather than discussing in reviews. When you resolve the problem, update your reply with the resolution. You can edit your reply like customers can edit their reviews.
+- Flag any inappropriate reviews, such as spam, abusive, or offensive content, for our review.
 
 ## Request to void a review
 
@@ -237,12 +234,12 @@ As a publisher, you can appeal to void a review if the issue reported is because
 
 ## Unpublish an extension
 
-You can unpublish free extensions, if you no longer want to offer them in the Marketplace.
+You can unpublish free extensions if you no longer want to offer them in the Marketplace.
 
-The following scenarios cover when you might want to remove your extension from the Marketplace:
-  * You developed another extension and no longer want to offer the current one.
-  * Your extension has a problem, so you want to remove your extension from the Marketplace until you resolve the problem.
-  * You published your extension as public by mistake.
+Consider removing your extension from the Marketplace in the following scenarios:
+- You developed a new extension and no longer want to offer the current one.
+- Your extension has a problem, and you want to remove it from the Marketplace until you resolve the issue.
+- You published your extension as public by mistake.
 
 Certain criteria must be met for an extension to be unpublished or removed:
 
@@ -258,12 +255,91 @@ Certain criteria must be met for an extension to be unpublished or removed:
 
    Your extension is unpublished immediately from the Marketplace, and new users can't install it. Ratings and reviews for your extension stay intact. 
 
-To offer your extension again in the Marketplace, choose **Publish** on the menu.
+To offer your extension again in the Marketplace, select **Publish** from the menu.
 
-You can also choose to remove your extension completely from the Marketplace if your extension has zero (0) installs. To do so, choose **Remove** on the menu. This action can't be undone. 
+If your extension has zero installs, you can choose to remove it completely from the Marketplace. To do so, select **Remove** from the menu. You can't reverse this action.
+
+<a id="extension-report">  </a>
+
+## Extension reporting hub
+
+Once your extension is available in the Visual Studio Marketplace, you can use the **Reports** feature. With this feature, you can track and analyze how the extension is performing and take required actions. 
+To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or select the **Reports** link on the extension details page.
+
+### Acquisition 
+
+You can view acquisition-related data in this tab for the selected period. 
+* Aggregated acquisition in the selected period for overall acquisition
+* Aggregated acquisition split by extension downloads Azure DevOps connected install for free extension
+* Aggregated acquisition split by trials Azure DevOps connected buy for paid extension
+* Daily trend of extension page views with acquisition for Azure DevOps and connected server
+* Conversion percentage from page views to acquisition
+
+For paid extensions, all transactional details for buy and trials are available with date, organization name, trial end date, and quantity. You can use the **Contact** action to communicate with your users. For more information, see the [Contact](#contact) section provided later in this article. 
+
+### Uninstall
+
+You can view the following statistics:
+- How many organizations uninstalled your extension
+- Daily trend of uninstall extensions
+- Detailed feedback shared during uninstalls
+- Top uninstall reasons
+
+You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
+
+For paid extensions, you can use the **Contact** action to communicate with your users. [Contact](#contact) section provided later in this article for more details.
+
+### Ratings and review
+
+This tab gives you the following information:
+- Average rating for the selected period versus overall rating
+- Average rating by number of reviewers
+- Daily trend of average rating
+
+The details section provides all the reviews and your responses in transactional view. 
+
+You can **Reply** to a review or **Edit** a previous response and better manage engagement with your extension users. You can also **Appeal** to void a rating if the issue reported is because of the Marketplace or underlying platform. If the issue is valid, we void the rating. 
+
+### Manage engagement
+
+The Q & A tab provides a snapshot of all questions from your extension users, with nonresponded queries at the top. You can reply to or edit previous responses to better manage engagement with your extension users.
+
+### Export to Excel
+
+All data elements available in the reports page are also available for download in XLS format to aid creating your own custom reports. 
+
+### Contact
+
+For paid extensions, you can use the **Contact** action to communicate with your users. This feature is available only for publishers with Contributor+ access on the extension.
+
+Marketplace brokers the first communication with the user as our privacy policy doesn't allow direct sharing of customer email addresses. Only users who opted in for communication receive the email. The last contacted date for an organization is updated after sending a communication.
+
+> [!IMPORTANT]
+> Follow the guidance on transactional and promotional communication. Publishers found to be sending promotional communication or spamming users get added to a blocklist and lose access to the **Contact** feature for all their extensions.
+
+**Transactional communication**: Emails conveying critical information necessary for the continued use of the extension or service, such as:
+- Critical security notices
+- Transaction confirmations
+- Product recall notices
+- Specific feedback requests
+- Service discontinuation notices
+
+**Promotional emails**: Emails used to market your extension, product, service, website, or event, such as:
+- Invitations to events or webcasts
+- Information about new marketing or partner programs
+- Offers to obtain value-added content
+- Newsletters containing promotional content
+
+For more information, see  the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement).
+
+| Terminology | Description |
+|-------------|-------------|
+| **Page views** | Total number of extension detail page views. Repeated views are counted. |
+| **Azure DevOps Services installs** | Total number of organizations the extension is installed in. Repeated installs on the same organization get counted. |
+| **Azure DevOps Server installs** | Total number of collections the extension is installed in. Repeated installs on the same collection get counted. Disconnected server data isn't available. |
 
 ## Related articles
 
 - [Develop a web extension](../get-started/node.md)
-- [Extensibility points](../reference/targets/overview.md)
+- [Explore extensibility points](../reference/targets/overview.md)
 

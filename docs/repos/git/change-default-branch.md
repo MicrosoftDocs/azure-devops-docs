@@ -20,6 +20,10 @@ We'll walk through the process of changing the default branch.
 We'll also cover other things you must consider and update when making this change.
 Finally, we'll look at a tool for easing the transition.
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## Set a new default branch
 
 [!INCLUDE [](includes/change-default-branch-instructions.md)]

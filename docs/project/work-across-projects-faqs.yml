@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Work across projects FAQs 
-  description: Get answers to frequent questions about working across projects in Azure DevOps.  
+  description: Get answers to frequently asked questions about working across projects in Azure DevOps.  
   titleSuffix: Azure DevOps
   ms.subservice: azure-devops-projects 
   ms.custom: cross-project
@@ -9,19 +9,19 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 01/08/2024
+  ms.date: 03/11/2025
 
-title: Work across projects FAQs 
+title: FAQs about working across projects
 
 summary: | 
-  Many enterprise organizations add multiple projects to support their business needs. While we recommend that you maintain a single project to keep things simple, there are instances where you might need multiple projects. In that event, several questions arise as to what tasks are supported when working with two or more projects. 
+    Many enterprise organizations create multiple projects to meet their business needs. Although we recommend maintaining a single project for simplicity, there are situations where multiple projects are necessary. Working with two or more projects raises several questions about the tasks that are supported.
 
-  This article addresses these questions. For more information about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
+    This article answers those questions. For more information about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
 
-  ::: moniker range="azure-devops"  
-  > [!NOTE]  
-  > Users added to the **Project-Scoped Users** group can only access projects they're added to. For more information, see [About projects and scaling your organization, Project-scoped User group](../organizations/projects/about-projects.md#project-scoped-user-group). 
-  ::: moniker-end  
+    ::: moniker range="azure-devops"  
+    > [!NOTE]  
+    > Users added to the **Project-Scoped Users** group can only access projects they're added to. For more information, see [About projects and scaling your organization, Project-scoped User group](../organizations/projects/about-projects.md#project-scoped-user-group). 
+    ::: moniker-end  
 
 sections:
   - name: Projects
@@ -51,14 +51,12 @@ sections:
           ::: moniker range=">= azure-devops-2020"
           There's limited support for widgets that you add to a dashboard from different projects. Specifically, you can add [Burndown and Burnup charts](../report/dashboards/configure-burndown-burnup-widgets.md) from different projects to a dashboard. Query-based widgets reference queries that you define, which can [reference other projects](../boards/queries/using-queries.md). You can also use an [Embedded Webpage widget](../report/dashboards/widget-catalog.md#embedded-webpage-widget) to display data from a URL, such as a backlog, board, or an **Analytics** chart from for a team. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
           ::: moniker-end
-          ::: moniker range="< azure-devops-2020"
-          The only way to view data from different projects is to use [Query-based widgets](../report/dashboards/widget-catalog.md) or [Embedded Webpage widgets](../report/dashboards/widget-catalog.md#embedded-webpage-widget). Query-based widgets reference queries that you define, which can [reference other projects](../boards/queries/using-queries.md). Embedded Webpage widgets display data from a URL, such as a backlog, board, or chart for a team in different projects. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
-          ::: moniker-end
+          
           > [!NOTE]  
           > There's a [suggested feature, Single Dashboard for Multiple Projects](https://developercommunity.visualstudio.com/t/single-dashboard-for-multiple-projects/365500) that you can review and up vote.  
       - question: Can I create a report that spans two or more projects? 
         answer: | 
-          ::: moniker range=">= azure-devops-2019"
+          ::: moniker range="<=azure-devops"
           **Yes**. The Analytics service and Power BI reports support the creation of reports that span two or more projects. For more information, see [Create a Power BI report with an OData Query](../report/powerbi/create-quick-report-odataq.md). 
           ::: moniker-end
           
@@ -85,11 +83,10 @@ sections:
 
       - question: Can I export a cross-project query to Excel? 
         answer: |
-          ::: moniker range=">= azure-devops-2019"
+          ::: moniker range="<=azure-devops"
           **No**. Cross-project queries don't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards. For more information, see [Bulk import or update work items using CSV files](../boards/queries/import-work-items-from-csv.md). 
           ::: moniker-end
           
-
 
       - question: Can I link work items across organizations or collections?
         answer: |
@@ -111,7 +108,6 @@ sections:
       - question: Can I query for work items linked across projects?
         answer: |
           **No**. There's a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
-
 
   - name: Azure Boards customization
     questions:

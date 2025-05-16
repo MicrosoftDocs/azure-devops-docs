@@ -21,7 +21,11 @@ The Team Foundation Version Control (TFVC) `shelvesets` command displays informa
 
 ## Prerequisites
 
-To use the `shelvesets` command, you must have the **Read** permission and the **Check out** permission set to **Allow** for the items in the shelvesets.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission and the **Check out** permission set to **Allow** for the items in the shelvesets.|
+
+  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

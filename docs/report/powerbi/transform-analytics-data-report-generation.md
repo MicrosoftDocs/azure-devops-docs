@@ -7,7 +7,7 @@ ms.custom: powerbi
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/09/2022
 ---
 
@@ -25,6 +25,10 @@ Once you've imported your Analytics data into Power BI, you may need to transfor
 - Create a custom field 
 - Rename fields. 
  
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
 ## Expand columns 
 
 The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. You need to expand the record to flatten the entity into its fields. Examples of such entities are: **AssignedTo**, **Iteration**, and **Area**. 
@@ -46,11 +50,9 @@ After closing the **Advanced Editor** and while remaining in the **Power Query E
 
 1. Repeat steps 1 through 3 for all fields representing entities that need expanding. These appear with *Record* listed in the table column when unexpanded. 
 
-
 <a id="expand-descendants"></a>
 
 ### Expand Descendants column
-
 
 The **Descendants** column contains a table with two fields: **State** and **TotalStoryPoints**. Expand it. 
 
@@ -66,8 +68,6 @@ The **Descendants** column contains a table with two fields: **State** and **Tot
 
 	:::image type="content" source="media/transform-data/descendents-expanded-columns.png" alt-text="Screenshot of Power BI expanded Descendants column. ":::
 
-
-
 <a id="pivot-statecategory"></a>
 
 #### Pivot Descendants.StateCategory column
@@ -81,7 +81,6 @@ The **Descendants** column contains a table with two fields: **State** and **Tot
 	Power BI creates a column for every StateCategory value.
 
 	:::image type="content" source="media/transform-data/descendants-pivot-column-dialog.png" alt-text="Dialog of Pivot Column for  Descendants.TotalStoryPoints column. ":::  
-
 
 <a id="expand-links-column"></a>
 
@@ -99,7 +98,6 @@ The **Descendants** column contains a table with two fields: **State** and **Tot
 
 	:::image type="content" source="media/transform-data/links-target-work-item-column-expand.png" alt-text="Screenshot of Power BI Links.TargetWorkItem column, expand options. ":::
 
-
 > [!NOTE]
 > If the link represents a one-to-many or many-to-many relationship, then multiple links will
 > expand to multiple rows, one for each link. 
@@ -107,7 +105,6 @@ The **Descendants** column contains a table with two fields: **State** and **Tot
 > For example, if Work Item #1 is linked to Work Item's #2 and #3, then when you expand the Links record, 
 > you will have 2 rows for Work Item #1. One that represents its link to Work Item #2, and another that
 > represents its link to Work Item #3.
-
 
 <a id="transform-data-type"></a>
 
@@ -167,7 +164,6 @@ For easier reporting, replace nulls with zero by following these steps.
 
 <a id="create-percent-complete"></a>
 
-
 ### Create a percentage complete computed column
 
 Prior to adding the percentage complete column, make sure that you replace all null values in the pivoted state columns.
@@ -202,8 +198,6 @@ When finished with your expansion, you may choose to rename one or more columns.
  
 
 [!INCLUDE [temp](includes/close-apply.md)]
-
-
 
 ## Related articles 
 

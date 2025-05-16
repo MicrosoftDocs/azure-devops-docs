@@ -2,7 +2,7 @@
 title: 'Tutorial: Create a multistage pipeline with Azure DevOps'
 description: Build an app pipeline for development and staging.
 ms.topic: tutorial 
-ms.date: 07/12/2023
+ms.date: 05/14/2025
 ms.custom: template-how-to-pattern
 ---
 
@@ -10,14 +10,14 @@ ms.custom: template-how-to-pattern
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can use an Azure DevOps multistage pipeline to divide your CI/CD process into stages that represent different parts of your development cycle. Using a multistage pipeline gives you more visibility into your deployment process and makes it easier to integrate [approvals and checks](approvals.md). 
+Use an Azure DevOps multistage pipeline to divide your CI/CD process into stages that represent different parts of your development cycle. A multistage pipeline gives more visibility into your deployment process and makes it easier to integrate [approvals and checks](approvals.md). 
 
 In this article, you'll create two App Service instances and build a YAML pipeline with three stages: 
 
 > [!div class="checklist"]
-> * [Build: build the source code and produce a package](#add-the-build-stage)
-> * [Dev: deploy your package to a development site for testing](#add-the-dev-stage)
-> * [Staging: deploy to a staging Azure App Service instance with a manual approval check](#add-the-staging-stage)
+> * [Build: Build the source code and produce a package](#add-the-build-stage)
+> * [Dev: Deploy your package to a development site for testing](#add-the-dev-stage)
+> * [Staging: Deploy to a staging Azure App Service instance with a manual approval check](#add-the-staging-stage)
 
 In a real-world scenario, you may have another stage for deploying to production depending on your DevOps process. 
 
@@ -26,15 +26,14 @@ The example code in this exercise is for a .NET web application for a pretend sp
 
 ## Prerequisites
 
-* A GitHub account where you can create a repository. [Create one for free](https://github.com).
-* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
-* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
-* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
-
+| **Product** | **Requirements**   |
+|---|---|
+| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  |
+| **GitHub** | - A [GitHub](https://github.com) account.|
 
 ## Fork the project
 
-Fork the following sample repository at GitHub. 
+Fork the following sample repository on GitHub.
 
 ```
 https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy
@@ -77,13 +76,13 @@ Before you can deploy your pipeline, you need to first create an App Service ins
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNET|8.0"
     
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNET|8.0"
     ```
 
 1. With the command prompt, list both App Service instances to verify that they're running with the `az webapp list` command. 
@@ -116,7 +115,76 @@ Your build pipeline:
 
 8. Replace the contents of *azure-pipelines.yml* with this code. 
 
-      :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-67":::
+    ```yml
+    trigger:
+    - '*'
+    
+    variables:
+      buildConfiguration: 'Release'
+      releaseBranchName: 'release'
+    
+    stages:
+    - stage: 'Build'
+      displayName: 'Build the web application'
+      jobs: 
+      - job: 'Build'
+        displayName: 'Build job'
+        pool:
+          vmImage: 'ubuntu-22.04'
+          demands:
+          - npm
+    
+        variables:
+          wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+          dotnetSdkVersion: '8.x'
+    
+        steps:
+        - task: UseDotNet@2
+          displayName: 'Use .NET SDK $(dotnetSdkVersion)'
+          inputs:
+            version: '$(dotnetSdkVersion)'
+    
+        - task: Npm@1
+          displayName: 'Run npm install'
+          inputs:
+            verbose: false
+    
+        - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
+          displayName: 'Compile Sass assets'
+    
+        - task: gulp@1
+          displayName: 'Run gulp tasks'
+    
+        - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+          displayName: 'Write build info'
+          workingDirectory: $(wwwrootDir)
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Restore project dependencies'
+          inputs:
+            command: 'restore'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Build the project - $(buildConfiguration)'
+          inputs:
+            command: 'build'
+            arguments: '--no-restore --configuration $(buildConfiguration)'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Publish the project - $(buildConfiguration)'
+          inputs:
+            command: 'publish'
+            projects: '**/*.csproj'
+            publishWebProjects: false
+            arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
+            zipAfterPublish: true
+    
+        - publish: '$(Build.ArtifactStagingDirectory)'
+          artifact: drop
+    ```
+
 
 9. When you're ready, select **Save and run**.
 
@@ -155,8 +223,101 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
     * Download an artifact from `drop`
     * Deploy to Azure App Service with an [Azure Resource Manager service connection](../library/service-endpoints.md)
 
-        :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-92" highlight="69-92":::
-
+    ```yml
+    trigger:
+    - '*'
+    
+    variables:
+      buildConfiguration: 'Release'
+      releaseBranchName: 'release'
+    
+    stages:
+    - stage: 'Build'
+      displayName: 'Build the web application'
+      jobs: 
+      - job: 'Build'
+        displayName: 'Build job'
+        pool:
+          vmImage: 'ubuntu-22.04'
+          demands:
+          - npm
+    
+        variables:
+          wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+          dotnetSdkVersion: '8.x'
+    
+        steps:
+        - task: UseDotNet@2
+          displayName: 'Use .NET SDK $(dotnetSdkVersion)'
+          inputs:
+            version: '$(dotnetSdkVersion)'
+    
+        - task: Npm@1
+          displayName: 'Run npm install'
+          inputs:
+            verbose: false
+    
+        - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
+          displayName: 'Compile Sass assets'
+    
+        - task: gulp@1
+          displayName: 'Run gulp tasks'
+    
+        - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+          displayName: 'Write build info'
+          workingDirectory: $(wwwrootDir)
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Restore project dependencies'
+          inputs:
+            command: 'restore'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Build the project - $(buildConfiguration)'
+          inputs:
+            command: 'build'
+            arguments: '--no-restore --configuration $(buildConfiguration)'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Publish the project - $(buildConfiguration)'
+          inputs:
+            command: 'publish'
+            projects: '**/*.csproj'
+            publishWebProjects: false
+            arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
+            zipAfterPublish: true
+    
+        - publish: '$(Build.ArtifactStagingDirectory)'
+          artifact: drop
+    
+    - stage: 'Dev'
+      displayName: 'Deploy to the dev environment'
+      dependsOn: Build
+      condition:  succeeded()
+      jobs:
+      - deployment: Deploy
+        pool:
+          vmImage: 'ubuntu-22.04'
+        environment: dev
+        variables:
+        - group: Release
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - download: current
+                artifact: drop
+              - task: AzureWebApp@1
+                displayName: 'Azure App Service Deploy: dev website'
+                inputs:
+                  azureSubscription: 'your-subscription'
+                  appType: 'webAppLinux'
+                  appName: '$(WebAppNameDev)'
+                  package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+    ```
+    
 1. Change the `AzureWebApp@1` task to use your subscription. 
 
     1. Select **Settings** for the task. 
@@ -204,7 +365,124 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
 
 1. Edit your pipeline file and add the `Staging` section.  
 
-    :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-116" highlight="94-116":::
+    ```yml
+    trigger:
+    - '*'
+    
+    variables:
+      buildConfiguration: 'Release'
+      releaseBranchName: 'release'
+    
+    stages:
+    - stage: 'Build'
+      displayName: 'Build the web application'
+      jobs: 
+      - job: 'Build'
+        displayName: 'Build job'
+        pool:
+          vmImage: 'ubuntu-22.04'
+          demands:
+          - npm
+    
+        variables:
+          wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+          dotnetSdkVersion: '8.x'
+    
+        steps:
+        - task: UseDotNet@2
+          displayName: 'Use .NET SDK $(dotnetSdkVersion)'
+          inputs:
+            version: '$(dotnetSdkVersion)'
+    
+        - task: Npm@1
+          displayName: 'Run npm install'
+          inputs:
+            verbose: false
+    
+        - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
+          displayName: 'Compile Sass assets'
+    
+        - task: gulp@1
+          displayName: 'Run gulp tasks'
+    
+        - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+          displayName: 'Write build info'
+          workingDirectory: $(wwwrootDir)
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Restore project dependencies'
+          inputs:
+            command: 'restore'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Build the project - $(buildConfiguration)'
+          inputs:
+            command: 'build'
+            arguments: '--no-restore --configuration $(buildConfiguration)'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Publish the project - $(buildConfiguration)'
+          inputs:
+            command: 'publish'
+            projects: '**/*.csproj'
+            publishWebProjects: false
+            arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
+            zipAfterPublish: true
+    
+        - publish: '$(Build.ArtifactStagingDirectory)'
+          artifact: drop
+    
+    - stage: 'Dev'
+      displayName: 'Deploy to the dev environment'
+      dependsOn: Build
+      condition:  succeeded()
+      jobs:
+      - deployment: Deploy
+        pool:
+          vmImage: 'ubuntu-22.04'
+        environment: dev
+        variables:
+        - group: Release
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - download: current
+                artifact: drop
+              - task: AzureWebApp@1
+                displayName: 'Azure App Service Deploy: dev website'
+                inputs:
+                  azureSubscription: 'your-subscription'
+                  appType: 'webAppLinux'
+                  appName: '$(WebAppNameDev)'
+                  package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+    
+    - stage: 'Staging'
+      displayName: 'Deploy to the staging environment'
+      dependsOn: Dev
+      jobs:
+      - deployment: Deploy
+        pool:
+          vmImage: 'ubuntu-22.04'
+        environment: staging
+        variables:
+        - group: 'Release'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - download: current
+                artifact: drop
+              - task: AzureWebApp@1
+                displayName: 'Azure App Service Deploy: staging website'
+                inputs:
+                  azureSubscription: 'your-subscription'
+                  appType: 'webAppLinux'
+                  appName: '$(WebAppNameStaging)'
+                  package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+    ```
 
 1. Change the `AzureWebApp@1` task in the Staging stage to use your subscription. 
 

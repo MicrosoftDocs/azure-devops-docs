@@ -62,19 +62,3 @@ ms.date: 02/22/2024
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. Go to your Azure DevOps collection, select your project.
-
-1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
-
-1. Enter the following information for your feed:
-
-    1. Enter a descriptive **Name** for your feed.
-    1. Define its **Visibility** (indicating who can view packages within the feed).
-    1. Choose whether to use packages from public sources such as pypi.org.
-
-1. Select **Create**.
-
-::: moniker-end
-

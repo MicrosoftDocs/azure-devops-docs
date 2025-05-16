@@ -20,7 +20,7 @@ You can also use the [Permissions Report REST API](/rest/api/azure/devops/permis
 
 ## Prerequisites
 
-**Permissions**: To download the permissions report, be a member of the [**Project Collection Administrators** group](look-up-project-collection-administrators.md). The user interface option isn't available for users who aren't a member of this group.
+[!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
 
 ## Open the security dialog for the release
 

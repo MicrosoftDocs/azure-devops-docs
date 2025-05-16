@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: how-to
 ms.date: 04/22/2019
 ---
@@ -28,13 +28,13 @@ For example, the following form shows that two custom pages have been added, **I
 
 Once you've added a custom page or group, you can add [custom fields to those pages or groups](customize-process-field.md). To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
+## Prerequisites
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
  
 [!INCLUDE [temp](../includes/automatic-update-project.md)] 
-
 
 <a id="groups"></a>
 <a id="add-group"></a>
@@ -136,10 +136,8 @@ Before you delete a page, you'll want to move any fields that your team still us
 
 Choose the ![Delete icon](../../../media/icons/delete_icon.png) Delete option from the custom page &hellip; context menu.   
 
-
 > [!NOTE]    
 > Deleting a page doesn't delete any data. Once data has been defined for a field, it's maintained in the data store and work item history, even if you remove it from the form. You can always choose to re-add the field by choosing **New field** and selecting **Use an existing field**.    
-
 
 ## Related articles  
 
@@ -150,7 +148,4 @@ Choose the ![Delete icon](../../../media/icons/delete_icon.png) Delete option fr
 - [Add extensions and custom controls to a work item type](custom-controls-process.md) 
 - [Customize a project using an inherited process](customize-process.md)  
 - [Customize cards on boards](../../../boards/boards/customize-cards.md)  
-
-
-
 

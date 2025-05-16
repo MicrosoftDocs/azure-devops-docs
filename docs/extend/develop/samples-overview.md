@@ -8,7 +8,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/09/2024
+ms.date: 03/21/2025
 ---
 
 # Extension samples

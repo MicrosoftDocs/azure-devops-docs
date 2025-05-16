@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/21/2024
 ---
 
@@ -20,12 +20,14 @@ Visual Studio 2019 allows you to switch between the default and legacy views of 
 
 ## Prerequisites
 
-Before switching between work item views in Visual Studio 2019, ensure you meet the following requirements:
+Before you switch between work item views in Visual Studio 2019, ensure you meet the following requirements:
 
 [!INCLUDE [prerequisites-work-items](../includes/prerequisites-work-items.md)]
 
-- **Tools**: Have Visual Studio 2019 installed with the latest updates.
-- **Extensions**: Verify that the Team Explorer extension is installed and enabled in Visual Studio 2019.
+| Category | Requirements |
+|--------------|-------------|
+|**Tools**| Visual Studio 2019 and latest updates.|
+|**Extensions**| Enabled Team Explorer extension in Visual Studio 2019.|
 
 ## Work item views
 

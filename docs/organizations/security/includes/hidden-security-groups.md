@@ -20,9 +20,3 @@ ms.date: 10/20/2023
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-
-> [!NOTE]  
-> Security groups are managed at the collection level, even if they are used for specific projects. Depending on user permissions, some groups might be hidden in the web portal. To view all group names in a collection, you can use the REST APIs. For more information, see [Add and manage security groups](/rest/api/azure/devops/security/?view=azure-devops-rest-6.0&preserve-view=true).
-
-::: moniker-end

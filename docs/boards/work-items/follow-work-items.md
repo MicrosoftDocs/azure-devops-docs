@@ -27,7 +27,6 @@ If you want to subscribe to receive notifications automatically based on changes
 >
 > ![Work item notification templates](media/follow-work/work-item-notifications.png) 
 
-
 This article shows you how to:
 
 >[!div class="checklist"]  
@@ -35,11 +34,7 @@ This article shows you how to:
 > * Follow a pull request 
 > * Manage work items that you're following
 
-::: moniker range="=azure-devops-2019"
-
-[Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to receive notifications.   
-::: moniker-end  
-
+  
 
 ## Prerequisites
 
@@ -60,13 +55,6 @@ If you want to specify conditions on when you'll get notified of changes, choose
 > ![Work item form, Notification settings dialog for follow](media/follow-work/notification-settings-for-follow.png) 
 
 By default, you're **Subscribed** to receive a notification when any change is made to the work item. Choose **Not Subscribed** to receive notification only when you're @mentioned. Or choose **Custom** to receive notifications when one of the checked fields changes, **State**, **Assigned To**, or **Iteration Path**. 
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-> [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](media/follow-work/follow-work-item.png) 
 
 ::: moniker-end
 
@@ -94,7 +82,7 @@ To stop following changes, open the PR context menu and choose the  :::image typ
 
 You can review and manage all the work items you've selected to follow.
 
-::: moniker range=">= azure-devops-2019"   
+::: moniker range="<=azure-devops"
 
 Open **Boards>Queries**, choose **All**, and under **My Queries**, choose **Followed work items**.   
 
@@ -109,7 +97,6 @@ From this view, you can view all items you're following across all projects. Als
 - Set work item pane
 - Enter full screen mode. 
 
-
 You can also view and manage work that you're following from **Boards>Work Items** and pivot to **Following**. 
 
 > [!div class="mx-imgBorder"]  
@@ -119,28 +106,23 @@ You can also view and manage work that you're following from **Boards>Work Items
 
  
 
-
 ## Query work items that you're following
 
 You can use the **\@Follows** macro in a work item query to filter a list based on work items you're following along with other query filters. 
 
 For example, the following query shows how to query across all projects for active work items that you're following. You use the **ID** field and the **In** operator with the **\@Follows** macro.  
 
-
 :::image type="content" source="media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
-
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Add, update, and follow a work item](../backlogs/add-work-items.md) 
 
-
 ## Related articles  
 
 - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  
 - [View and update work items via the mobile work item form](../../project/navigation/mobile-work.md)  
-
 
 ### Q: Can I add someone else to follow a work item or PR?
 

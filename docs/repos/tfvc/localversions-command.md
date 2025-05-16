@@ -20,7 +20,11 @@ The Team Foundation Version Control (TFVC) `localversions` command displays the 
 
 ## Prerequisites
 
-To use the `localversions` command, you must have the **Use** permission to the workspace. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Use** permission for the workspace set to **Allow**.|
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

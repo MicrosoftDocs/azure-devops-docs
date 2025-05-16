@@ -23,7 +23,7 @@ This article covers how to create new branches, add links to commits, and manage
 
 > [!TIP]
 > You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. For more information, see the following resources:   
-> - [Cross-service overview](../../cross-service/cross-service-overview.md#azure-boards---azure-repos) 
+> - [Cross-service overview](../../cross-service/cross-service-overview.md#azure-boards-and-azure-repos-integration)
 > - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 > - [Link work items to builds and deployments](add-link.md#link-work-items-to-deployments).
 
@@ -35,10 +35,6 @@ The **Development** control tracks all Git development activities that contribut
 :::image type="content" source="media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"  
-:::image type="content" source="media/git/development-control-2019.png" alt-text="Screenshot of work item form, Development control, Azure DevOps Server 2019.":::
-::: moniker-end
-
 From the **Development** control, you can quickly access branches, pull requests, and commits linked to the work item. Additionally, you can initiate a pull request for a branch you created or linked directly from the work item.
 
 > [!NOTE]
@@ -48,20 +44,22 @@ From the **Development** control, you can quickly access branches, pull requests
 
 ::: moniker range="azure-devops"
 
-- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
-- **Permissions**: 
-  - Be a member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md) group.
-  - To view or modify work items, have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).
-- **Access levels**: To reorder a backlog or use the Forecast tool, have at least **Basic** access. Users with **Stakeholder** access can't reorder backlog items or use the Forecast tool. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Permissions** | Member of the **Contributors** or [**Project Administrators**](../../organizations/security/add-users-team-project.md) group. |
+| **Access levels** | - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
+|**Access levels**   |To reorder a backlog or use the Forecast tool: At least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't reorder backlog items or use the Forecast tool. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).    |
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
-- **Permissions**: 
-  - Be a member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md) group.
-  - To view or modify work items, have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Permissions** | Member of the **Contributors** or [**Project Administrators**](../../organizations/security/add-users-team-project.md) group. |
+| **Access levels** | - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
 
 ::: moniker-end
 
@@ -164,15 +162,6 @@ If you want to remove a link, you can do so from the **Development** section by 
 
 Or, you can select it from the **Links** :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: tab and choose **Actions** :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: for the link and then choose the **Remove link** :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: option.
 
-## Related articles
-
-- [Learn about Azure DevOps cross-service](../../cross-service/cross-service-overview.md)
-- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)
-- [Add work items](add-work-items.md)  
-- [Learn about Git](../../repos/git/index.yml) 
-- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)  
-- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
-
 ### Associated work items in build 
 
 With Git commits, any work items that were linked to a commit are listed under the Associated work items in the build summary page.  
@@ -194,12 +183,14 @@ The link types you can add within the development section are Branch, Build, Cha
 
 ![Screenshot shows Artifact-to-artifact link types.](../queries/media/link-tracking-artifact-to-artifact-link-types.png)
 
-::: moniker-end
+## Related articles
 
-::: moniker range="=azure-devops-2019"
-For more information about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control). 
- 
-::: moniker-end
+- [Learn about Azure DevOps cross-service](../../cross-service/cross-service-overview.md)
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)
+- [Add work items](add-work-items.md)  
+- [Learn about Git](../../repos/git/index.yml) 
+- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)  
+- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 
 <!---
 and only work with the current build processes (not XAML builds)

@@ -1,7 +1,7 @@
 - name: Security, Permissions, & Access
   href: index.yml
-- name: Security best practices
-  href: security-best-practices.md
+- name: Security Best Practices
+  href: security-overview.md
 - name: Get started
   items:
   - name: About permissions, access, & security groups
@@ -18,6 +18,12 @@
     href: request-changes-permissions.md
   - name: Manage users or groups
     href: add-remove-manage-user-group-security-group.md
+  - name: About authentication, authorization, & security policies
+    displayName: concepts, understand, credentials, accounts, authorization, policies
+    href: about-security-identity.md
+  - name: Authentication types
+    displayName: permission, security, mechanism, type, application
+    href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json
   expanded: true
 - name: Access levels and Stakeholder access
   items:
@@ -41,6 +47,9 @@
     href: ../accounts/delete-organization-users.md
   - name: Manage access with Microsoft Entra ID
     items:
+    - name: About managing access with Microsoft Entra ID
+      displayName: access, entra, id
+      href: ../accounts/access-with-azure-ad.md
     - name: Connect organization to Entra ID
       displayName: link, attach, security
       href: ../accounts/connect-organization-to-azure-ad.md
@@ -73,35 +82,53 @@
   - name: Remove user accounts from Active Directory
     displayName: delete, revoke, organization, members
     href: /azure/active-directory/add-users-azure-active-directory#delete-a-user?toc=/azure/devops/organizations/security/toc.json
-- name: Authenticate, use PATs, & secure applications
+- name: Secure organizations/collections
   items:
-  - name: About security, authentication, & authorization
-    displayName: concepts, understand, credentials, accounts, authorization, policies
-    href: about-security-identity.md
-  - name: Authentication guidance
-    displayName: permission, security, mechanism, type, application
-    href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
-  - name: Use personal access tokens (PATs)
-    displayName: permission, security, credential, sign, in
-    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Manage PATs via API
-    displayName: lifecycle, authenticate
-    href: ../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Revoke user PATs (for admins)
-    displayName: delete, remove, token, administrator
-    href: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Authorize access to REST APIs with OAuth 2.0
-    displayName: authenticate, access, token, app, security
-    href: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Authorize access with service principals and managed identities
-    displayName: authenticate, access, security, service, principal, managed, identity
-    href: ../../integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Use SSH key authentication
-    displayName: access, security
-    href: ../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Use Git Credential Manager
-    displayName: authenticate, access, security
-    href: ../../repos/git/set-up-credential-managers.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Look up the organization owner
+    href: look-up-organization-owner.md
+  - name: Look up a project collection administrator
+    href: look-up-project-collection-administrators.md
+  - name: Look up Azure DevOps administrator
+    href: look-up-azure-devops-administrator.md
+  - name: Change permissions at the organization or collection-level
+    displayName: Project Collection Administrators, project collection build service, add, remove, administrators, collection
+    href: change-organization-collection-level-permissions.md
+  - name: Set permissions to manage extensions
+    displayName: Marketplace, access, settings, users
+    href: ../../marketplace/grant-permissions.md?toc=/azure/devops/organizations/security/toc.json
+  - name: Manage security policies (cloud)
+    items:
+    - name: Manage security policies
+      displayName: application, settings, add, update, remove
+      href: ../accounts/change-application-access-policies.md
+    - name: Manage PAT policies
+      href: ../accounts/manage-pats-with-policies-for-administrators.md
+    - name: Add external users
+      displayName: create, outside, new, access, B2B
+      href: ../accounts/add-external-user.md
+    - name: Disable Request Access policy
+      displayName: administrator, stop, settings, policies
+      href: ../accounts/disable-request-access-policy.md
+    - name: Restrict admins from inviting new users
+      displayName: administrators, add, adding, creating, member
+      href: restrict-invitations.md
+    - name: Restrict organization creation
+      displayName: administrators, creating, organization
+      href: ../accounts/azure-ad-tenant-policy-restrict-org-creation.md
+  - name: Secure data and networks
+    items:
+    - name: Allowed address lists & network connections
+      displayName: IP, URL, accepted
+      href: allow-list-ip-url.md
+    - name: Data protection overview (cloud)
+      displayName: about, information, security
+      href: data-protection.md
+    - name: Data location (cloud)
+      href: data-location.md
+    - name: Data Subject Requests for the GDPR & CCPA
+      href: /microsoft-365/compliance/gdpr-dsr-vsts?toc=/azure/devops/organizations/security/toc.json
+    - name: Revoke user PATs (for admins)
+      href: ../accounts/admin-revoke-user-pats.md
 - name: Secure projects
   items:
   - name: Look up a project administrator
@@ -121,48 +148,6 @@
   - name: Set Wiki permissions
     displayName: project, access, settings, users
     href: ../../project/wiki/manage-readme-wiki-permissions.md??toc=/azure/devops/organizations/security/toc.json
-  - name: Set feedback permissions
-    displayName: users, access, settings, response
-    href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/security/toc.json
-- name: Secure organizations/collections
-  items:
-  - name: Look up the organization owner
-    href: look-up-organization-owner.md
-  - name: Look up a project collection administrator
-    href: look-up-project-collection-administrators.md
-  - name: Change permissions at the organization or collection-level
-    displayName: Project Collection Administrators, project collection build service, add, remove, administrators, collection
-    href: change-organization-collection-level-permissions.md
-  - name: Set permissions to manage extensions
-    displayName: Marketplace, access, settings, users
-    href: ../../marketplace/grant-permissions.md?toc=/azure/devops/organizations/security/toc.json
-  - name: Manage access policies (cloud)
-    items:
-    - name: Manage security & app access policies
-      displayName: application, settings, add, update, remove
-      href: ../accounts/change-application-access-policies.md
-    - name: Add external users
-      displayName: create, outside, new, access, B2B
-      href: ../accounts/add-external-user.md
-    - name: Disable Request Access policy
-      displayName: administrator, stop, settings, policies
-      href: ../accounts/disable-request-access-policy.md
-    - name: Restrict admins from inviting new users
-      displayName: administrators, add, adding, creating, member
-      href: restrict-invitations.md
-  - name: Secure data and networks
-    items:
-    - name: Allowed address lists & network connections
-      displayName: IP, URL, accepted
-      href: allow-list-ip-url.md
-    - name: Data protection overview (cloud)
-      displayName: about, information, security
-      href: data-protection.md
-    - name: Data location (cloud)
-      href: data-location.md
-      displayname: Personal access tokens, PATs, basic auth, Oauth, SSH
-    - name: Data Subject Requests for the GDPR & CCPA
-      href: /microsoft-365/compliance/gdpr-dsr-vsts?toc=/azure/devops/organizations/security/toc.json
 - name: Secure Azure Artifacts
   items:
   - name: Set feed permissions
@@ -226,7 +211,7 @@
     href: ../../repos/tfvc/set-tfvc-repository-permissions.md?toc=/azure/devops/organizations/security/toc.json
   - name: Download repository permissions report
     displayName: json
-    href: download-permissions-report.md
+    href: download-permissions-report.md 
 - name: Secure Azure Test Plans
   items:
   - name: Set permissions & access for testing

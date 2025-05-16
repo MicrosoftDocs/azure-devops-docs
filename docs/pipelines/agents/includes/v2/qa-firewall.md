@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 02/12/2020
+ms.date: 04/02/2025
 ---
 
 ### I'm running a firewall and my code is in Azure Repos. What URLs does the agent need to communicate with?
@@ -29,8 +29,8 @@ If you're running an agent in a secure network behind a firewall, make sure the 
 | `https://app.vssps.visualstudio.com`                 | For organizations using the `{organization_name}.visualstudio.com` domain              |
 | `https://dev.azure.com`                              | For organizations using the `dev.azure.com` domain                                     |
 | `https://login.microsoftonline.com`                  | Microsoft Entra sign-in                                                         |
-| `https://management.core.windows.net`                | Azure Management API's                                                                 |
-| `https://vstsagentpackage.azureedge.net`             | Agent package                                                                          |
+| `https://management.core.windows.net`                | Azure Management APIs                                                                 |
+| `https://vstsagentpackage.azureedge.net`<br>`https://download.agent.dev.azure.com`             | Agent package                                                                          |
 
 
 To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*dev.azure.com` are open and update your allow-listed IPs to include the following IP addresses, based on your IP version. If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.

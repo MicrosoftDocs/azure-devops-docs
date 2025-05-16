@@ -11,8 +11,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-
 While editing a pipeline that uses a Git repo&mdash;in an Azure DevOps project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo&mdash;you have the following options.
 
 | Feature | Azure Pipelines | Azure DevOps Server 2019 and higher | TFS 2018 |
@@ -27,10 +25,8 @@ While editing a pipeline that uses a Git repo&mdash;in an Azure DevOps project, 
 | Don't sync sources | Yes | Yes | Yes |
 | Shallow fetch | Yes | Yes | Yes |
 
-
 > [!NOTE]
 > Click **Advanced settings** in the **Get Sources** task to see some of the above options.
-
 
 ## Branch
 
@@ -55,7 +51,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 #### [YAML](#tab/yaml/)
 
-:::moniker range=">=azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 ### Azure Pipelines, Azure DevOps Server 2019 and newer
 
@@ -99,8 +95,6 @@ By default, `clean` is set to `true` but can be overridden when manually running
 
 :::moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 ### Azure Pipelines, TFS 2018, TFS 2017.2, TFS 2017.3
@@ -135,7 +129,6 @@ After the sources are tagged by your build pipeline, an artifact with the Git re
 
 [//]: # (TODO: confirm I got this next section right; e.g. GitHub not in TFS 2018 Update 1)
 
-
 ## Report build status (Azure Pipelines, TFS 2018 and newer)
 
 You've got the option to give your team a view of the build status from your remote source repository.
@@ -159,7 +152,7 @@ If your sources are in GitHub, then this option publishes the status of your bui
 
 If your source is in any other type of remote repository, then you cannot use Azure Pipelines or TFS to automatically publish the build status to that repository. However, you can use a [build badge](../build/options.md) as a way to integrate and show build status within your version control experiences.
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Checkout path
 
@@ -183,7 +176,7 @@ Select if you want to download files from [submodules](https://git-scm.com/book/
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
 If you want to use LFS with submodules, be sure to see the [note about using LFS with submodules](#using-git-lfs-with-submodules).
 
-:::moniker range=">=azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 > [!NOTE]
 > For more information about the YAML syntax for checking out submodules, see [Checkout in the YAML schema](/azure/devops/pipelines/yaml-schema/steps-checkout).
@@ -199,7 +192,6 @@ The build pipeline will check out your Git submodules as long as they are:
   - Contained in the same project, GitHub organization, or Bitbucket Cloud account as the Git repo specified above.
 
   - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
-
 
 ### Authenticated submodules
 
@@ -262,7 +254,7 @@ If a submodule contains LFS files, Git LFS must be configured prior to checking 
 The Microsoft-hosted macOS and Linux agents come preconfigured this way.
 Windows agents and self-hosted macOS / Linux agents may not.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 As a workaround, if you're using YAML, you can add the following step before your `checkout`:
 
@@ -298,18 +290,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Azure Repos
 
-:::moniker range="=azure-devops-2019"
-
-Your pipeline will already have access to other repos in its project, and you can clone them in your pipeline using a script command, as shown in the following example.
-
-```
-- script: | 
-    git clone -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" https://organization@dev.azure.com/project/FabrikamFiber/_git/reponame
-```
-
-:::moniker-end
-
-:::moniker range="> azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 You can clone multiple repositories in the same project as your pipeline by using [multi-repo checkout](multi-repo-checkout.md).
 
@@ -345,7 +326,6 @@ If you want to disable downloading sources:
 
 * **Azure Pipelines, TFS 2018, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
 
-
 > [!NOTE]
 > When you use this option, the agent also skips running Git commands that clean the repo.
 
@@ -361,7 +341,6 @@ In these cases this option can help you conserve network and storage resources. 
 > is resolved to a commit ID and when the agent performs the checkout. If the branch updates rapidly
 > and you set a very small value for shallow fetch, the commit may not exist when the agent attempts
 > to check it out. If that happens, increase the shallow fetch depth setting.
-
 
 After you select the check box to enable this option, in the **Depth** box specify the number of commits.
 

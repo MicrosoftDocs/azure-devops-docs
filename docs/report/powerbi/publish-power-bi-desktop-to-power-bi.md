@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.topic: how-to
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.author: chcomley
-monikerRange: '>=azure-devops-2019'
+monikerRange: "<=azure-devops"
 author: chcomley
 ms.date: 10/05/2021
 ---
@@ -16,6 +16,10 @@ ms.date: 10/05/2021
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures, and charts, you can share them with others by creating a dashboard on Power BI. This article shows you how.   
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Publish to Power BI
 
@@ -51,7 +55,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 1. Select the appropriate authentication option. 
 
-	* Use **oAuth2**  for Microsoft Entra ID or Windows credentials.
+	* Use **oAuth2**  for Microsoft Entra ID or Windows credentials. This is the recommended approach.
 
       ![Configure Areas dialog](media/aad-auth-power-bi.png)
  
@@ -69,10 +73,8 @@ At this point, the data will update on your scheduled basis using the credential
 > [!IMPORTANT]   
 > Any data included in the Analytics view and published Power BI will be accessible to all users with access to the report, regardless of the project permissions configured in Azure DevOps.    
 
-
 ## Related articles
 
 - [About Power BI integration](overview.md)  
-- [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  

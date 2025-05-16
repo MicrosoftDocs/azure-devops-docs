@@ -5,13 +5,17 @@ ms.topic: include
 ## Prerequisites
 
 ::: moniker range="azure-devops" 
- 
-* You must be the **organization Owner** or a member of the **Project Collection Administrators** group. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** | Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops"  
+::: moniker range="< azure-devops"
 
-* You must be a member of the Azure DevOps Server Administrators group. If you aren't a member, get added now. For more information, see [Add server-level administrators](/azure/devops/server/admin/add-administrator).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** | Member of the [Azure DevOps Server Administrators group](/azure/devops/server/admin/add-administrator) |
 
-::: moniker-end  	
+::: moniker-end

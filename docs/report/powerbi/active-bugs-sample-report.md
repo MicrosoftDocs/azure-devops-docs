@@ -7,7 +7,7 @@ ms.custom: analytics-views, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 02/07/2023
 ---
 
@@ -27,13 +27,13 @@ In this article, you learn how to:
 
 For an overview of Analytics views, see [About Analytics views](what-are-analytics-views.md).
 
-[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+## Prerequisites
 
-### Power BI prerequisites  
-
-- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-- For more information about using Power BI, see [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started).
-
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | By default, project members have permission to query Analytics and create views. For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+|**Tools** | [Power BI Desktop](https://powerbi.microsoft.com/desktop)    |
 
 [!INCLUDE [temp](../includes/analytics-open.md)] 
 
@@ -125,7 +125,7 @@ Choose **Save** to move to the next tab in the panel. If you need to revisit a t
 	:::image type="content" source="media/create-report/specify-account.png" alt-text="Dialog to enter Azure DevOps Organization and project name.":::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"  
+::: moniker range="<azure-devops"
 2. Choose (1) **Get Data** and select **More...**, (2) **Online Services**, (3) **Azure DevOps Server (Boards only)**, and then (4) **Connect**.  
 
     > [!div class="mx-imgBorder"]
@@ -140,9 +140,7 @@ Choose **Save** to move to the next tab in the panel. If you need to revisit a t
 
 	:::image type="content" source="media/active-bugs-report/choose-view.png" alt-text="Screenshot of Power BI, Dialog of Navigator to choose Analytics view. ":::
 
-
 *Need help with connecting?* See [Connect with Power BI Data Connector](data-connector-connect.md).
-
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

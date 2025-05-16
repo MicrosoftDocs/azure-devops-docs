@@ -35,7 +35,7 @@ In this article you learn how to:
 >* Create and complete a PR
 >* Sync your fork
 
-## Prerequisites for access to Azure Repos
+## Prerequisites
 
 [!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
@@ -70,7 +70,7 @@ The forking workflow consists of five steps that are described in the following 
 The following steps describe how to fork an Azure Repos Git repo. 
 
 >[!NOTE]
->To fork a repo in an Azure DevOps project, you must have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission for that project. Repo owners should consider creating a dedicated project for forks and assigning the Create Repository permission to all contributors. For more information about setting permissions, see [Set Git repository permissions](set-git-repository-permissions.md).
+>To fork a repo in an Azure DevOps project, have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission for that project. Repo owners should consider creating a dedicated project for forks and assigning the Create Repository permission to all contributors. For more information about setting permissions, see [Set Git repository permissions](set-git-repository-permissions.md).
 
 1. From your web browser, navigate to the Azure Repos Git repo that you want to fork. Select **Repo > Files** and then choose **Fork** from the ellipsis menu to open the **Fork** dialog.
 

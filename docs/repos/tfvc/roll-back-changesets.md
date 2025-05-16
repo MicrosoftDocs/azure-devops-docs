@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Understand how to roll back changesets by using Visual Studio with Team Foundation Version Control (TFVC).
 ms.assetid: 11864092-7a1d-4810-ae01-148afbaa7852
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/23/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -23,7 +23,7 @@ You can also use the `tf` command-line utility to roll back changes. For more in
 
 ## Prerequisites
 
-You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+[!INCLUDE [contributor-only-prerequisites](includes/contributor-only-prerequisites.md)]
 
 ## Roll back changes from a single changeset
 

@@ -23,7 +23,7 @@ As your organization grows, you want your tools to scale to support your growing
 
 ## Video: Agile at Scale 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3wM7v]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=40ca5566-4875-4611-ba66-3ec22fa0c343]
 
 ## Portfolio management
 

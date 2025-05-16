@@ -31,6 +31,7 @@ You can also use azure cli commands to get details, list, delete, and update a s
 
 To use the web portal to create and edit service connections, see [Manage service connections](../pipelines/library/service-endpoints.md). 
  
+[!INCLUDE [use-service-principals-tip](../includes/use-service-principals-tip.md)]
 
 ## Create service endpoint using a configuration file 
 
@@ -45,14 +46,13 @@ The following syntax shows the `json` format for the configuration file.
 {
   "data": {},
   "name": "MyNewServiceEndpoint",
-  "type": "Generic",
-  "url": "https://myserver",
+  "type": "AzureRM",
+  "url": "https://management.azure.com/",
   "authorization": {
     "parameters": {
-      "username": "myusername",
-      "password": "mysecretpassword"
+      "tenantid": "your-tenant-id"
     },
-    "scheme": "UsernamePassword"
+    "scheme": "ManagedServiceIdentity"
   },
   "isShared": false,
   "isReady": true,
@@ -123,10 +123,11 @@ Upon successful creation, an `Id` is assigned to the service endpoint and a resp
   "administratorsGroup": null,
   "authorization": {
     "parameters": {
-      "password": null,
-      "username": "myusername"
+      "serviceprincipalid": "your-service-principal-id",
+      "serviceprincipalkey": "your-service-principal-key",
+      "tenantid": "your-tenant-id"
     },
-    "scheme": "UsernamePassword"
+    "scheme": "ServicePrincipal"
   },
   "createdBy": {
     "descriptor": "aad.OGYxZTFlODEtMGJiNC03N2ZkLThkYzUtYjE3MTNiNTQ2MjQ4",
@@ -198,9 +199,9 @@ az devops service-endpoint azurerm create --azure-rm-service-principal-id
                                           [--project]
 ```
 
-### Use a client secret/password
+### Use a client secret
 
-In interactive mode, the the `az devops service-endpoint azurerm create` command asks for a service principal password/secret using a prompt message. For automation purposes, set the service principal password/secret using the `AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY` environment variable.
+In interactive mode, the `az devops service-endpoint azurerm create` command asks for a service principal secret using a prompt message. For automation purposes, set the service principal secret using the `AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY` environment variable.
 
 ```bash
 export AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
@@ -214,79 +215,15 @@ $env:AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
 
 If the Microsoft Entra application uses [certificate for authentication](/azure/active-directory/develop/active-directory-certificate-credentials), then create a .pem file for the certificate and pass the path to the .pem file using the `--azure-rm-service-principal-certificate-path` argument.
 
-You can create a.pem file using openssl:
+You can create a .pem file using openssl:
 
 ```bash
-openssl pkcs12 -in file.pfx -out file.pem -nodes -password pass:<password_here>
+openssl pkcs12 -in file.pfx -out file.pem -nodes -secret pass:<secret_here>
 ```
- 
 
 ## Related articles
 
 - [Manage service connections](../pipelines/library/service-endpoints.md)
 - [Create an Azure Resource Manager service connection using automated security](../pipelines/library/connect-to-azure.md)
 - [`az devops service-endpoint`](/cli/azure/devops/service-endpoint)
-- [Endpoints REST API](/rest/api/azure/devops/serviceendpoint/endpoints) 
-
-
-<!---
-
-
-
-
-The Azure DevOps CLI extension supports creation of any type of service endpoint. 
-
-```azurecli
-az devops service-endpoint create
-```
-
-In order to use this command, you must understand the request format for creating a particular kind of service endpoint.
-
-You can achieve it using the following steps:
-
-1. Create endpoint of same type from the user interface and capture its network trace (using tool of your preference like Fiddler, Chrome Developer tool). 
-
-	![Screenshot of Create Service Connection for Docker dialog.](media/DockerServiceEndpointCreateUI.png)
-
-	Captured request is a POST call to uri ending 
-`apis/serviceendpoint/endpoints`
-
-	and body will look like 
-
-
-
-	```json
-	{
-	  "id": "980cf1c0-ba7c-4731-bd7f-1df785b89ab3",
-	  "description": "",
-	  "administratorsGroup": null,
-	  "authorization": {
-	    "parameters": {
-	      "username": "Docker_ID_Sample",
-	      "password": "Docker_ID_Sample",
-	      "email": "Docker_ID_Email",
-	      "registry": "https://index.docker.io/v1/"
-	    },
-	    "scheme": "UsernamePassword"
-	  },
-	  "createdBy": null,
-	  "data": {
-	    "registrytype": "Others"
-	  },
-	  "name": "Docker_Registry_Sample",
-	  "type": "dockerregistry",
-	  "url": "https://index.docker.io/v1/",
-	  "readersGroup": null,
-	  "groupScopeId": null,
-	  "serviceEndpointProjectReferences": null,
-	  "operationStatus": null
-	}
-	```
-
-Save the request body in a file and that file can act as a template for creation of service endpoints of type "Docker Registry Service Connection".
-
-Path to this file (after updating appropriate values like Name, ID or password) can be passed to `--service-endpoint-configuration` parameter.
-Note that the path is provided using '\\' backslash. 
-
-
--->
+- [Endpoints REST API](/rest/api/azure/devops/serviceendpoint/endpoints)

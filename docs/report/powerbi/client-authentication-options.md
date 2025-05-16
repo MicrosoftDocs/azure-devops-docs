@@ -7,10 +7,9 @@ ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 07/14/2020
 ---
-
 
 # Enter client credentials in Power BI or Excel 
 
@@ -18,26 +17,25 @@ ms.date: 07/14/2020
 
 ::: moniker range="azure-devops"
 
-When connecting from Power BI or Excel to Analytics using the OData feed, choose Microsoft Entra ID (**Microsoft Entra ID**) for the most secure option. The next secure option is the use of Personal Access Tokens (**PATs**).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Microsoft Entra ID (**Microsoft Entra ID**) for the most secure option. It is also possible to authenticate with Personal Access Tokens (**PATs**), but this is less recommended.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
-When connecting from Power BI or Excel to Analytics using the OData feed, choose Windows credentials as the most secure option. The next secure option is the use of Personal Access Tokens (**PATs**).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Windows credentials as the most secure option. It is also possible to authenticate with Personal Access Tokens (**PATs**), but this is less recommended.
 
 ::: moniker-end
+
+## Prerequisites
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** | By default, project members have permission to query Analytics and create views. For more information about other prerequisites regarding service and feature enablement and general data tracking activities, see [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md). |
+|**Tools** | [Power BI Desktop](https://powerbi.microsoft.com/desktop)    |
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
-
-Why should you use a Personal Access Token over an Alternate Access Credential?
-
-For these three reasons:
-
-- As part of good password management, these tokens automatically expire so you don't have to remember to change your password.
-- Since PATs are a generated password, you won't use a common password as part of your AAC, which means a more limited surface area for attack.
-- If you need to provide a diagnostic trace and forget to replace the value, you can revoke the credential. Doing so maintains secure access to Azure DevOps.
-
 ::: moniker range="azure-devops"
 
 <a name='azure-active-directory-azure-ad'></a>
@@ -52,11 +50,11 @@ Microsoft Entra ID is also known as "Organizational Credential" in Power BI Desk
 
 2. Choose <strong>Sign in</strong> and enter your Microsoft Entra credentials. After that, you're done.
 
-To change an existing URL to use Microsoft Entra ID instead of a PAT or AAC, see [Change authentication credentials](#update-credentials) later in this article.
+To change an existing URL to use Microsoft Entra ID instead of a PAT, see [Change authentication credentials](#update-credentials) later in this article.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 ## Windows authentication
 
@@ -72,33 +70,19 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
 
 ::: moniker-end
 
-
 ## Create a Personal Access Token  
 
-1. Sign in to Azure DevOps Services, open your user profile menu, and select **Security**.  
+> [!NOTE]
+> PATs are a less desirable option compared to connecting Power BI with Microsoft Entra ID or Windows Authentication.
+> Consider them an extension of your identity. When used, the token is acting as you. Keep your tokens secret.
+> To help keep your token more secure, consider using credential managers. If you use a credential manager, you won't have to enter your credentials every time you push.
 
-	![User Profile, My Security menu option](../../media/open-security.png)  
-
-1. Enter the required information: 
-   - Add a description  
-   - Set the expiration period  
-   - Select the organization 
-   - Choose Selected scopes
-   - Check the **Analytics (read)**
+1. Follow the steps on the [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with scope: **Analytics (read)** (`vso.analytics`).
 	
-     And, then choose **Create Token**.  
-
-     > [!div class="mx-imgBorder"]  
-     > ![Create personal access token](media/client-authentication/personal-access-tokens-scoped-analytics-s139.png)  
-
 2. Copy the token that displays. If you navigate away from the page, you can't retrieve it later.  
-
-	![Copy Personal Access Token dialog](media/client-authentication/copy-personal-access-token.png)  
 
 3. If you need to revoke a token, navigate to this page and choose the **Revoke** link. That token will immediately be denied access to Azure DevOps Services.
 	
-	These tokens are your identity. When used, the token is acting as you. Keep your tokens secret and treat them like your password. To help keep your token more secure, consider using credential managers. If you use credential managers, you won't have to enter your credentials every time you push.  
-
 ## Enter credentials within a client
 
 Both Power BI and Excel work using Power Query when accessing OData. The authentication mechanism, including the various
@@ -118,15 +102,13 @@ authentication screens, are identical. This walkthrough is done using Power BI D
 	
 	::: moniker-end  
 
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 
     :::image type="content" source="media/authentication-6-onprem.png" alt-text="OData Feed URL":::
 
 	::: moniker-end
 
-5. In the authentication dialog, choose <strong>Basic</strong>, enter your credentials, and then choose <strong>Connect</strong>:  
-   - If you're using an AAC, enter your username and password  
-   - If you're using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.  
+5. In the authentication dialog, choose **Basic**, enter your credentials, and then choose **Connect**.  
 
      ::: moniker range="azure-devops"
 
@@ -134,7 +116,7 @@ authentication screens, are identical. This walkthrough is done using Power BI D
 
      ::: moniker-end
 
-     ::: moniker range=">= azure-devops-2019 < azure-devops"
+     ::: moniker range="<azure-devops"
 
      :::image type="content" source="media/authentication-7-onprem.png" alt-text="Authentication information":::
 
@@ -158,7 +140,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 
     :::image type="content" source="media/authentication-8-onprem.png" alt-text="Data source settings":::
 
@@ -172,7 +154,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 
     :::image type="content" source="media/authentication-9-onprem.png" alt-text="Data source settings, 2nd dialog":::
 
@@ -196,7 +178,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 
     :::image type="content" source="media/authentication-8-onprem.png" alt-text="Select the correct URL to the OData Feed and select Edit, on-premises version.":::
 
@@ -210,14 +192,13 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 
     :::image type="content" source="media/authentication-9-onprem.png" alt-text="Data source settings, next dialog.":::
 
 	::: moniker-end
 
 5. Edit the credentials as noted above, select **Save**, then **Done**, then **Close**.
-
 
 ## Publish to Power BI
 
@@ -230,7 +211,6 @@ the **oAuth2** option.
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  
 - [Publish a Power BI Desktop file to Power BI](publish-power-bi-desktop-to-power-bi.md)  
-
 
 <!---
 From the Personal access tokens page, choose **Add**:  

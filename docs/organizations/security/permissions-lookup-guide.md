@@ -43,8 +43,6 @@ Values in parenthesis indicate what level the permission is managed:
 - **Team**: Permissions are managed via the team administrator role.
 ::: moniker-end
 
-
-
 :::row:::
    :::column span="1":::
    ### A
@@ -70,7 +68,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Audit log](permissions.md#manage-audit-streams-permission)
    - [Audit streams](permissions.md#view-audit-log-permission)
    ::: moniker-end
-   ::: moniker range=">= azure-devops-2019 < azure-devops"
+   ::: moniker range="<azure-devops"
    - [Administer build permissions (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Administer build resource permissions (Collection)](change-organization-collection-level-permissions.md)
    - [Administer release permissions (Object)](../../pipelines/policies/permissions.md#release-pipeline-permissions)
@@ -91,7 +89,7 @@ Values in parenthesis indicate what level the permission is managed:
    
    
    ### B
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    - [Branches, Git (Object)](../../repos/git/branch-permissions.md)
    - [Branches, Team Foundation Version Control (TFVC) (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    - [Build pipelines (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
@@ -106,7 +104,7 @@ Values in parenthesis indicate what level the permission is managed:
    ::: moniker-end
    
    ### C
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    - [Change process of team project (Project)](change-project-level-permissions.md)
    - [Change work item type (Project)](change-project-level-permissions.md)
    - [Check-ins, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
@@ -127,7 +125,7 @@ Values in parenthesis indicate what level the permission is managed:
    ::: moniker-end
    
    ### D
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    - [Dashboards, manage (Team)](../../report/dashboards/dashboard-permissions.md)
    - [Delete audit streams (Collection)](permissions.md#delete-audit-streams-permission)
    - [Delete (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
@@ -153,7 +151,7 @@ Values in parenthesis indicate what level the permission is managed:
    
    
    ### E
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    - [Edit build definition (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Edit build quality (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Edit collection-level information (Collection)](change-organization-collection-level-permissions.md)
@@ -177,7 +175,7 @@ Values in parenthesis indicate what level the permission is managed:
    
    
    ### F-L
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    - [Feeds](../../artifacts/feeds/feed-permissions.md)
    - [Field, delete (Collection)](change-organization-collection-level-permissions.md)
    - [Force push (rewrite history, delete branches, and tags) (Git branch, Object)](../../repos/git/branch-permissions.md)
@@ -242,7 +240,7 @@ Values in parenthesis indicate what level the permission is managed:
    ::: moniker-end
 
    ### O-P
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    - [Override check-in validation by build (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Permanently delete work items (Project)](change-project-level-permissions.md)
    - [Policies, Git branch (Object)](../../repos/git/branch-permissions.md)
@@ -293,7 +291,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Trigger events (Collection)](change-organization-collection-level-permissions.md)
    
    ### U
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    - [Update build information (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Update build queue (Object)](../../pipelines/policies/permissions.md#pipeline-permissions)
    - [Update project visibility (Project)](change-project-level-permissions.md)
@@ -303,7 +301,7 @@ Values in parenthesis indicate what level the permission is managed:
    
 
    ### V
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    - [Variable groups (Object, Role)](../../pipelines/policies/permissions.md#library-permissions)
    - [View analytics (Project)](permissions.md#view-analytics-permission)
    - [View audit log (Collection)](permissions.md#view-audit-log-permission)

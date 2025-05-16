@@ -66,18 +66,13 @@ All teams across organizations can participate in tracking dependencies.
 
 ## Prerequisites
 
-- **Tools**: Install the [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) for the organization for which you want to track dependencies.
-- **Permissions**: 
-  - To view dependencies, be a member of the **Project Valid Users** group for the project.  
-  - To create a dependency, be a member of the **Contributors** group for both projects that participate in the dependency linking.
-  - To modify configuration, be a member of the  **Project Collection Administrators** Group.
-- **Authentication**: To support cross-organization participation, all organizations must authenticate users through the same [Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
-- **Services**: [Enable Azure Boards as a service](../../organizations/settings/set-services.md). 
-- **Configuration and customization tasks**:
-  - Set up the area paths and teams to participate in dependency tracking. 
-  - Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking. This task is essential for the Timeline view to yield meaningful data.
-  - Customize your process as needed to support any other work items or fields. 
-  - [Configure the Dependency Tracker](#configuration) to support your business needs and address any customizations.
+| Category | Requirements |
+|--------------|-------------|
+| **Tools** | [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) installed for the organization for which you want to track dependencies. |
+| **Permissions** | - To view dependencies: Member of the **Project Valid Users** group for the project. <br> - To create a dependency: Member of the **Contributors** group for both projects that participate in the dependency linking. <br> - To modify configuration: Member of the **Project Collection Administrators** group. |
+| **Authentication** | All organizations authenticate users through the same [Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). |
+| **Services** | [Azure Boards as a service](../../organizations/settings/set-services.md) enabled. |
+| **Configuration and customization tasks** | - Area paths and teams set up to participate in dependency tracking. <br> - Iteration paths/sprints configured for the project and assigned to work items participating in dependency tracking. This requirement is essential for the Timeline view to yield meaningful data. <br> - Customize your process as needed to support any other work items or fields. <br> - [Dependency Tracker](#configuration) configured to support your business needs and address any customizations. |
 
 > [!IMPORTANT]  
 > The default configuration for Dependency Tracker supports the Agile process. If your project(s) are based on a different process or you have customized your process, you may need to modify the configuration. See [Configure the Dependency Tracker](#configuration) later in this article.
@@ -249,7 +244,7 @@ Within the table, you can complete the same actions as in the Consuming Dependen
 The **Timeline** tab provides a calendar view of dependencies. The Timeline view is in Beta.
 
 > [!IMPORTANT]   
-> For the Timeline to show meaningful data, you must have assigned the dependent work items to Iteration Paths, and the Iteration Paths must have start and end dates assigned.  
+> For the Timeline to show meaningful data, have assigned the dependent work items to Iteration Paths, and the Iteration Paths must have start and end dates assigned.  
 
 There are two versions of the Timeline view: **Correct Flow** and **Incorrect Flow**. Each version shows the color-coded workflow state. You can customize color codes within the [Dependency Tracker configuration](#configuration).
 
@@ -302,7 +297,7 @@ You can drill down into specifics by choosing one of the dependencies.
 
 ## Configure the Dependency Tracker
 
-You must be a member of the  Project Collection Administrator Group to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
+Be a member of the  Project Collection Administrator Group to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
 
 To change the configuration, choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon  and modify the syntax listed. Choose **Save** when you're done. 
 
@@ -582,7 +577,7 @@ The following table describes each of the property items specified in the config
 :::row-end:::
 :::row:::
    :::column span="1":::
-   riskAssessementValues
+   riskAssessmentValues
    
    > Specifies the [Risk](../queries/planning-ranking-priorities.md#risk) field values. The Risk field specifies a subjective rating of the relative uncertainty around the successful completion of a user story. It is defined for the Agile process, but can be added to work item types used in other processes. 
 

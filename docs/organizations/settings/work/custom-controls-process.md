@@ -8,7 +8,7 @@ ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/19/2018
 ---
 
@@ -31,14 +31,15 @@ For example, you can add the [**Who recently viewed a work item?** extension](ht
 
 ![Work item form, group extension example, Who viewed this](media/process/custom-controls-group-extension-example-who-recently-viewed.png)
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-To add extensions or edit a process, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions).
+To add extensions or edit a process, be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions).
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
 [!INCLUDE [temp](../includes/automatic-update-project.md)] 
-
 
 ## Review installed Marketplace extensions   
 
@@ -73,7 +74,6 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 	> [!div class="mx-imgBorder"]  
 	> ![Group extension on Bug work item form](media/process/cpfield-add-checklist-extension.png) 
-
 
 <a id="add-field-control"></a>
 
@@ -139,7 +139,6 @@ When you add group-level and page-level contributions, they are automatically ad
 
 If you've installed a group or page contribution, refresh your browser, and then open a work item to view the placement of the contribution on the form. To move or hide the contribution, [follow the guidance provided for the Layout tab](customize-process-form.md).  
 
-
 ## Action-level contributions
 
 Action-level contributions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level contributions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../../marketplace/install-extension.md#uninstall-disable-extension).  
@@ -153,7 +152,6 @@ For example, the following image shows nine action-level contributions have been
 You can use these REST APIs to work with extensions:   
 - [Extend the work item form](../../../extend/develop/add-workitem-extension.md)  
 - [Add a custom control to the work item form](../../../extend/develop/custom-control.md)  
-
 
 ## Related articles 
 

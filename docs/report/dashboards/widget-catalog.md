@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/12/2024
+ms.date: 03/12/2025
 #customer intent: As an administrator or team member, I want to understand the widgets I can use on a team or project dashboard in Azure DevOps.
 ---
 
@@ -17,13 +17,13 @@ ms.date: 09/12/2024
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another. For more information, see [Add a widget to a dashboard](add-widget-to-dashboard.md).
+Widgets display information and charts on dashboards. Many widgets are configurable or scoped to a team or the logged-in user account. They display information from one or more data stores or charts maintained within the system. You can add a widget to a dashboard or copy a widget from one dashboard to another. For more information, see [Add a widget to a dashboard](add-widget-to-dashboard.md).
 
 For example, you can add the **Build History** widget from the dashboard's **Add Widget** dialog.
 
 :::image type="content" source="media/widget-build-history-chart.png" alt-text="Screenshot shows the Build History Widget which includes an icon and description.":::
 
-This article provides a quick reference of all out of box (OOB) widgets that you can add to your dashboard. In addition to these widgets, you might find more widgets in the [Marketplace](#marketplace) or create your own.
+This article provides a quick reference of all out-of-box (OOB) widgets that you can add to your dashboard. In addition to these widgets, you might find more widgets in the [Marketplace](#marketplace) or create your own.
 
 ## Supported OOB widgets
 
@@ -37,86 +37,33 @@ Widgets listed in the following table are provided out-of-box. They're organized
 - **Teams**: Widget is scoped to one or more teams
 - **User**: Widget is scoped to the logged in user account
 
----
-:::row:::
-   :::column span="1":::
-      ::: moniker range=">= azure-devops-2020"
-      **Boards**
-      - [Assigned to Me](#assigned-to-me-widget) (User)
-      - [Burndown](#burndown-analytics-widget) (Analytics, Project, Teams)
-      - [Burnup](#burnup-analytics-widget) (Analytics, Project, Teams)
-      - [Chart for Work Items](#chart-wit-widget)  
-      - [Cumulative Flow Diagram](#cfd-widget) (Team)
-      - [Cycle Time (Analytics)](#cycle-time-widget) (Analytics, Team)  
-      - [Lead Time (Analytics)](#lead-time-widget) (Analytics, Team)
-      - [New Work Item](#new-work-item-widget)  
-      - [Query Results](#query-results-widget)  
-      - [Query Tile](#query-tile-widget)  
-      - [Sprint Burndown](#sprint-burndown-analytics-widget) (Analytics, Team)  
-      - [Sprint Burndown (Legacy)](#sprint-burndown-widget) (Team)
-      - [Sprint Capacity](#sprint-capacity-widget) (Team)
-      - [Sprint Overview](#sprint-overview-widget) (Team)
-      - [Velocity](#velocity-widget) (Analytics, Team)  
-      - [Work Links](#work-links-widget)  
-      ::: moniker-end
-      ::: moniker range="azure-devops-2019"
-      **Boards**
-      - [Assigned to Me](#assigned-to-me-widget) (User)
-      - [Burndown](#burndown-analytics-widget)  (Analytics, Teams)
-      - [Burnup](#burnup-analytics-widget) (Analytics, Teams)
-      - [Chart for Work Items](#chart-wit-widget)  
-      - [Cumulative Flow Diagram](#cfd-widget) (Team)  
-      - [Cycle Time (Analytics)](#cycle-time-widget)  (Analytics, Team)
-      - [Lead Time (Analytics)](#lead-time-widget)  (Analytics, Team)
-      - [New Work Item](#new-work-item-widget)  
-      - [Query Results](#query-results-widget)  
-      - [Query Tile](#query-tile-widget)  
-      - [Sprint Burndown](#sprint-burndown-widget) (Team)
-      - [Sprint Capacity](#sprint-capacity-widget) (Team)
-      - [Sprint Overview](#sprint-overview-widget) (Team)
-      - [Velocity](#velocity-widget) (Analytics) (Team)
-      - [Work Links](#work-links-widget)  
-      ::: moniker-end
-      ---
-      **Repos**
-      - [Code Tile](#code-tile-widget) (Repository, Branch, Folder)
-      - [Pull Request](#pull-request-widget) (Team)
-   :::column-end:::
-   :::column span="1":::
-      **Pipelines**
-      - [Build History](#build-history-widget) (Build)
-      - [Deployment status](#deployment-status-widget) (Build)
-      - [Release Pipeline Overview](#release-definition-widget) (Release)
-      - [Requirements quality](#requirements-quality-widget) (Query, Build, Release)
-      ---
-      **Test Plans**
-      - [Chart for Test Plans](#chart-test-plan-widget)
-      - [Test Results Trend](#test-trend-results) (Build, Release)  
-      - [Test Results Trend (Advanced)](#test-trend-results-advanced) (Analytics, Build, Release)
-      ---
-      **Information and links**
-      - [Embedded Webpage](#embedded-webpage-widget)  
-      - [Markdown](#markdown-widget)  
-      - [Other Links](#other-links-widget)  (Team)  
-      - [Team Members](#team-members-widget) (Team)
-      - [Visual Studio Shortcuts](#visual-studio-widget)
-      - [Welcome](#how-to-widget)
-   :::column-end:::
-:::row-end:::
----
+| **Category** | **Widgets** |
+|--------------|-------------|
+| **Boards** (Azure DevOps 2020 and later) | - [Assigned to Me](#assigned-to-me-widget) (User) <br> - [Burndown](#burndown-analytics-widget) (Analytics, Project, Teams) <br> - [Burnup](#burnup-analytics-widget) (Analytics, Project, Teams) <br> - [Chart for Work Items](#chart-wit-widget) <br> - [Cumulative Flow Diagram](#cfd-widget) (Team) <br> - [Cycle Time (Analytics)](#cycle-time-widget) (Analytics, Team) <br> - [Lead Time (Analytics)](#lead-time-widget) (Analytics, Team) <br> - [New Work Item](#new-work-item-widget) <br> - [Query Results](#query-results-widget) <br> - [Query Tile](#query-tile-widget) <br> - [Sprint Burndown](#sprint-burndown-analytics-widget) (Analytics, Team) <br> - [Sprint Burndown (Legacy)](#burndown-widget) (Team) <br> - [Sprint Capacity](#sprint-capacity-widget) (Team) <br> - [Sprint Overview](#sprint-overview-widget) (Team) <br> - [Velocity](#velocity-widget) (Analytics, Team) <br> - [Work Links](#work-links-widget) |
+| **Boards** (Azure DevOps 2019) | - [Assigned to Me](#assigned-to-me-widget) (User) <br> - [Burndown](#burndown-analytics-widget) (Analytics, Teams) <br> - [Burnup](#burnup-analytics-widget) (Analytics, Teams) <br> - [Chart for Work Items](#chart-wit-widget) <br> - [Cumulative Flow Diagram](#cfd-widget) (Team) <br> - [Cycle Time (Analytics)](#cycle-time-widget) (Analytics, Team) <br> - [Lead Time (Analytics)](#lead-time-widget) (Analytics, Team) <br> - [New Work Item](#new-work-item-widget) <br> - [Query Results](#query-results-widget) <br> - [Query Tile](#query-tile-widget) <br> - [Sprint Burndown](#burndown-widget) (Team) <br> - [Sprint Capacity](#sprint-capacity-widget) (Team) <br> - [Sprint Overview](#sprint-overview-widget) (Team) <br> - [Velocity](#velocity-widget) (Analytics, Team) <br> - [Work Links](#work-links-widget) |
+| **Repos** | - [Code Tile](#code-tile-widget) (Repository, Branch, Folder) <br> - [Pull Request](#pull-request-widget) (Team) |
+| **Pipelines** | - [Build History](#build-history-widget) (Build) <br> - [Deployment status](#deployment-status-widget) (Build) <br> - [Release Pipeline Overview](#release-definition-widget) (Release) <br> - [Requirements quality](#requirements-quality-widget) (Query, Build, Release) |
+| **Test Plans** | - [Chart for Test Plans](#chart-test-plan-widget) <br> - [Test Results Trend](#test-trend-results) (Build, Release) <br> - [Test Results Trend (Advanced)](#test-trend-results-advanced) (Analytics, Build, Release) |
+| **Information and links** | - [Embedded Webpage](#embedded-webpage-widget) <br> - [Markdown](#markdown-widget) <br> - [Other Links](#other-links-widget) (Team) <br> - [Team Members](#team-members-widget) (Team) <br> - [Visual Studio Shortcuts](#visual-studio-widget) <br> - [Welcome](#how-to-widget) |
 
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-- To add widgets to a dashboard, you must be a member of a project. If you aren't a project member, [get added now](../../organizations/accounts/add-organization-users.md).
-- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
-- To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
+| **Permissions** |To add widgets from the marketplace: Member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). |
+ 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- To add widgets to a dashboard, you must be a member of a project. If you aren't a project member, [get added now](../../organizations/accounts/add-organization-users.md).
-- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
-- To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
+
+|Category  | Requirements |
+|-------------|-------------|
+| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Stakeholder** access. |
+| **Permissions** |To add widgets from the marketplace: Member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). |
+
 ::: moniker-end
 
 > [!NOTE]
@@ -186,7 +133,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="cfd-widget"></a>
-      Displays the cumulative flow of backlog items based on the time frame, team, backlog level, and swimlane that you select. To see the count of items for a particular board column, hover over each color in the chart.  
+      Displays the cumulative flow of backlog items based on the time frame, team, backlog level, and swimlane that you select. To display the count of items for a particular board column, hover over each color in the chart.  
 
       From the configuration dialog, [specify the team, backlog level, and other parameters you want](cumulative-flow.md#configure-widget). 
    :::column-end:::
@@ -290,21 +237,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column-end:::
 :::row-end::: 
 ::: moniker-end
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      ### Sprint Burndown
-     :::image type="icon" source="media/widget-sprint-burndown.png":::  
-   :::column-end:::
-   :::column span="1":::
-      <br/>
-      <a id="sprint-burndown-widget"></a>
-      The team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
 
-      Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
 :::row:::
    :::column span="1":::
       ### Sprint Capacity
@@ -316,7 +249,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       The team's capacity bar chart for the current sprint.
       To plan and monitor their sprint resources, team set capacity and update Remaining Work throughout the sprint.
 
-      See [Set capacity](../../boards/sprints/set-capacity.md).
+      For more information, see [Set capacity](../../boards/sprints/set-capacity.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -437,7 +370,7 @@ Add build and release pipeline widgets to track the health of your builds and re
       Configurable widget that shows a combined view of the deployment status and test pass rate across multiple environments for a recent set of builds. Configure the widget by specifying a build pipeline, branch, and linked release pipelines.  
       To view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate.
 
-      You can choose any cell to see a more [detailed view](../../pipelines/test/review-continuous-test-results-after-build.md) for the selected environment.  
+      You can choose any cell to get a more [detailed view](../../pipelines/test/review-continuous-test-results-after-build.md) for the selected environment.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -604,7 +537,7 @@ To support adding, add one or more of the following widgets:
    :::column span="1":::
       <br/>
       <a id="how-to-widget"></a>    
-      Provides links to the major Azure DevOps Services, including work tracking boards, code, and builds, and reference documentation on how to add charts.
+      Provides links to the major services, including work tracking boards, code, and builds, and reference documentation on how to add charts.
 
       :::image type="content" source="media/catalog/welcome-tile.png" alt-text="Screenshot shows the Welcome widget tile.":::  
    :::column-end:::
@@ -616,7 +549,7 @@ To support adding, add one or more of the following widgets:
 
 You might find more widgets of interest in the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
 
-If your organization owner or project collection administrator disables a marketplace widget, you see the following image:
+If your organization owner or project collection administrator disables a marketplace widget, an image similar to the following image displays:
 
 :::image type="content" source="media/widget-catalog-disabled-widget.png" alt-text="Screenshot of Disabled widget extension notification.":::
 

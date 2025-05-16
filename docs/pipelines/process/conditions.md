@@ -32,16 +32,17 @@ By default, stages, jobs, and steps run if all direct and indirect dependencies 
 
 When you specify a `condition` property for a stage, job, or step, you overwrite the default `condition: succeeded()`. Specifying your own conditions can cause your stage, job, or step to run even if the build is canceled. Make sure the conditions you write take into account the state of the parent stage or job.
 
-The following YAML example shows the `always()` and `failed()` conditions. The step in the first job runs even if dependencies fail or the build is canceled. The second job runs only if the first job fails.
+The following YAML example shows the `always()` and `failed()` conditions. The step in the first job runs even if dependencies fail or the build is canceled. In the second script task, `exit 1` forces the `Foo` job to fail. The second job runs only if the first job fails.
 
 ```yaml
 jobs:
 - job: Foo
-
   steps:
   - script: echo Hello!
     condition: always() # this step runs, even if the build is canceled
-
+  - script: |
+      echo "This task will fail."
+      exit 1 
 - job: Bar
   dependsOn: Foo
   condition: failed() # this job runs only if Foo fails
@@ -113,8 +114,6 @@ stages:
 
 In the following pipeline, `stage2` depends on `stage1` by default. Job `B` in `stage2` has a `condition` set. If you queue a build on the `main` branch and cancel it while `stage1` is running, `stage2` doesn't run, even though it contains a job whose condition evaluates to `true`.
 
-The reason is because `stage2` has the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
-
 ```yaml
 stages:
 - stage: stage1
@@ -173,7 +172,7 @@ If you want job `B` to run only when job `A` succeeds and the build source is th
 
 In the following pipeline, job `B` depends on job `A` by default. If you queue a build on the `main` branch and cancel it while job `A` is running, job `B` doesn't run, even though its step has a `condition` that evaluates to `true`.
 
-The reason is because job `B` has the default `condition: succeeded()`, which evaluates to `false` when job `A` is canceled. Therefore, job `B` is skipped, and none of its steps run.
+The reason is because job `B` evaluates to `false` when job `A` is canceled. Therefore, job `B` is skipped, and none of its steps run.
 
 ```yaml
 jobs:
@@ -184,8 +183,7 @@ jobs:
   dependsOn: A 
   steps:
     - script: echo step 2.1
-      condition: eq(variables['Build.SourceBranch'], 'refs/heads/main', succeeded())
-      
+  condition: and(eq(variables['Build.SourceBranch'], 'refs/heads/main'), succeeded())
 ```
 
 ### Step example
@@ -345,7 +343,7 @@ steps:
 
 ### How can I trigger a job if a previous job succeeded with issues? 
 
-You can use the result of the previous job in a condition. For example, in the following YAML, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows job `B` to run because job `A` succeeded with issues. 
+You can use the result of the previous job in a condition. For example, in the following YAML, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows job `B` to run after job `A` succeeds with issues. 
 
 ```yaml
 jobs:

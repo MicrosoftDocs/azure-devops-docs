@@ -23,13 +23,13 @@ A branch with required policies configured can't be deleted, and requires pull r
 
 ::: moniker range="azure-devops"
 
-- To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
+- To set branch policies, be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 
 - If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy) commands to manage branch policies, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
+- To set branch policies, be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 ::: moniker-end
 
 ## Configure branch policies
@@ -54,29 +54,9 @@ Select the **More options** icon next to the branch, and then select **Branch po
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-
-Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
-
-![Screenshot that shows the Branches page.](media/branch-policies/branches-page.png)
-
-Select the **...** button. Select **Branch policies** from the context menu.
-
-![Screenshot that shows Open the branch policies from the context menu.](media/branch-policies/branches-context-menu-policy.png)
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2020"
 
 Configure policies on the branch's settings page. See the following sections for descriptions and instructions for each policy type.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-
-Configure your policies in the **Policies** page. See the following sections for descriptions of each policy type. Select **Save changes** to apply your new policy configuration.
-
-![Screenshot that shows the Policies tab.](media/branch-policies/save-policy-changes.png)  
 
 ::: moniker-end
 
@@ -157,9 +137,7 @@ az repos policy show --id
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-
 ***
-
 
 <a name="require_reviewers"></a>
 
@@ -199,16 +177,6 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
   - Select **Require at least one approval on the last iteration** to require at least one approval vote for the last source branch change.
   - Select **Reset all approval votes (does not reset votes to reject or wait)** to remove all approval votes, but keep votes to reject or wait, whenever the source branch changes.
   - Select **Reset all code reviewer votes** to remove all reviewer votes whenever the source branch changes, including votes to approve, reject, or wait.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-
-![Check the Require Code Reviews box](media/branch-policies/require-minimum-number-of-pr-reviews-2018.png)  
-
-- If **Requestors can approve their own changes** isn't selected, the creator of the pull request can still vote **Approve** on their pull request, but their vote doesn't count toward the **Minimum number of reviewers**.
-- If any reviewer rejects the changes, the pull request can't complete unless you select **Allow completion even if some reviewers vote to wait or reject**.
-- You can reset code reviewer votes when new changes are pushed to the source branch. Select **Reset code reviewer votes when there are new changes**.
 
 ::: moniker-end
 
@@ -317,9 +285,7 @@ az repos policy approver-count update --id
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-
 ***
-
 
 <a id="check-linked-wi"></a>
 
@@ -337,11 +303,6 @@ To set the policy, under **Branch Policies**, set **Check for linked work items*
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-
-![Require linked work items in your pull requests](media/branch-policies/work-item-linking-2018.png)
-
-::: moniker-end
  
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -424,7 +385,6 @@ The following example updates the policy ID `3` for the `main` branch of the Fab
 ```azurecli
 >az repos policy work-item-linking update --id 3 --blocking false --branch main --enabled true --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --output table
 
-
 ID    Name               Is Blocking    Is Enabled    Repository Id                         Branch
 ----  -----------------  -------------  ------------  ------------------------------------  ---------------
 3     Work item linking  False          True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main
@@ -434,10 +394,7 @@ ID    Name               Is Blocking    Is Enabled    Repository Id             
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-
 ***
-
-
 
 <a id="check-comment-resolution"></a>
 
@@ -452,16 +409,6 @@ The **Check for comment resolution** policy checks whether all PR comments are r
 Configure a comment resolution policy for your branch by setting **Check for comment resolution** to **On**. Then select whether to make the policy **Required** or **Optional**.
 
 :::image type="content" source="media/branch-policies/check-comment-resolution-2020.png" alt-text="Screenshot of Check for comment resolution.":::
-
-For more information on working with pull request comments, see [Review pull requests](review-pull-requests.md).
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-
-Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
-
-![Check for comment resolution](media/branch-policies/comment-resolution-2018.png)
 
 For more information on working with pull request comments, see [Review pull requests](review-pull-requests.md).
 
@@ -549,13 +496,9 @@ ID    Name                  Is Blocking    Is Enabled    Repository Id          
 
 ::: moniker-end
 
-
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-
 ***
-
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -581,13 +524,8 @@ Set **Limit merge types** to **On** to limit which merge types to allow in your 
 - **Rebase with merge commit** replays the source commits onto the target and also creates a merge commit.
 
 ::: moniker-end
-::: moniker range="< azure-devops-2020"
-> [!NOTE]   
-> This feature is available for Azure DevOps Server 2020 and later versions. 
-::: moniker-end
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
-
 
 ::: moniker range="azure-devops"
 
@@ -689,27 +627,13 @@ az repos policy merge-strategy update --id
 
 ::: moniker-end 
 
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
  
 
  
-::: moniker range="< azure-devops-2020"
-
-## Enforce a merge strategy
-
-Maintain a consistent branch history by enforcing a merge strategy when a pull request completes.
-Select **Enforce a merge strategy** and pick an option to require that pull requests merge using that strategy.
-
-![Set merge requirements](media/branch-policies/merge-requirements-2018.png)
-
-- **No fast-forward merge** - This option merges the commit history of the source branch when the pull request closes and creates a merge commit in the target branch.
-- **Squash merge** - Complete all pull requests with a squash merge, creating a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects your branch history.
-
-::: moniker-end 
-
+ 
 
 <a name="build"></a>
 <a name="require-the-pull-request-to-build"></a>
@@ -725,7 +649,7 @@ Build policies reduce breaks and keep your test results passing. Build policies 
 A build validation policy queues a new build when a new PR is created or changes are pushed to an existing PR that targets the branch. The build policy evaluates the build results to determine whether the PR can be completed.
 
 > [!IMPORTANT]
-> Before specifying a build validation policy, you must have a build pipeline. If you don't have a pipeline, see [Create a build pipeline](../../pipelines/create-first-pipeline.md). Choose the type of build that matches your project type.
+> Before specifying a build validation policy, have a build pipeline. If you don't have a pipeline, see [Create a build pipeline](../../pipelines/create-first-pipeline.md). Choose the type of build that matches your project type.
 
 ::: moniker-end 
 
@@ -769,11 +693,6 @@ When the PR owner pushes changes that build successfully, the policy status upda
 
 If you have an **Immediately when \<branch name> is updated** or **After \<n> hours if \<branch name> has been updated** build policy, the policy status updates when the protected branch updates, if the previous build is no longer valid.
 
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-> [!NOTE]   
-> This feature is available for Azure DevOps Server 2020 and later versions. 
 ::: moniker-end
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -836,7 +755,6 @@ ID    Name          Is Blocking    Is Enabled    Repository Id                  
 31    build-policy  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main
 ```
 
-
 ### Update a build validation policy
 
 Use [az repos policy build update](/cli/azure/repos/policy/build#az-repos-policy-build-update) to update a build validation policy.
@@ -883,43 +801,9 @@ az repos policy build update --id
 
 ::: moniker-end 
 
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
-
-::: moniker range="< azure-devops-2020" 
-
-Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
-Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/devops/develop/what-is-continuous-integration) (CI) on your development branches to catch problems early.
-
-
-If a build validation policy is enabled, a new build is queued when a new pull request is created or when changes are pushed to an existing pull request that targets the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
-
-> [!IMPORTANT]
-> Before specifying a build validation policy, you must have a build definition. If you don't have one, see [Create a build definition](/previous-versions/azure/devops/pipelines/apps/) and choose the type of build that matches your project type.
-
-![Add build policy](media/branch-policies/add-build-policy-2018.png)
-
-Choose **Add build policy** and configure your options in **Add build policy**.
-
-![Build policy settings](media/branch-policies/build-policy-settings-2018.png)
-
-1. Select the **Build definition**.
-1. Choose the type of **Trigger**. Select **Automatic (whenever the source branch is updated)** or **Manual**.
-1. Select the **Policy requirement**. If you choose **Required**, builds must complete successfully to complete pull requests. Choose **Optional** to provide a notification of the build failure but still allow pull requests to complete.
-1. Set a build expiration to make sure that updates to your protected branch don't break changes for open pull requests.
-
-   - **Immediately when `branch name` is updated**: This option sets the build policy status in a pull request to *failed* when the protected branch is updated. Requeue a build to refresh the build status. This setting ensures that the changes in pull requests build successfully even as the protected branch changes. This option is best for teams that have important branches with a lower volume of changes. Teams working in busy development branches might find it disruptive to wait for a build to complete every time the protected branch is updated.
-   - **After `n` hours if `branch name` has been updated**: This option expires the current policy status when the protected branch updates if the passing build is older than the threshold entered. This option is a compromise between always requiring a build when the protected branch updates and never requiring one. This choice is excellent for reducing the number of builds when your protected branch has frequent updates.
-   - **Never**: Updates to the protected branch don't change the policy status. This value reduces the number of builds for your branch. It can cause problems when closing pull requests that weren't updated recently.
-  
-1. Enter an optional **Display name** for this build policy. This name identifies the policy on the **Branch policies** page. If you don't specify a display name, the policy uses the build definition name.
-1. Select **Save**.
-
-When the owner pushes changes that build successfully, the policy status is updated. If you have an **Immediately when `branch name` is updated** or **After `n` hours if `branch name` has been updated** build policy chosen, the policy status updates when the protected branch is updated if the most recent build is no longer valid.
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -935,27 +819,13 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 ::: moniker-end 
 
-::: moniker range="<azure-devops-2020"
-
-<a name="require-approval-from-external-services"></a>
-
-## Require approval from external services
-
-External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for additional services brings the ability for those external services to participate in the PR workflow and establish policy requirements.
-
-![Require external services to approve](media/branch-policies/require-approval-from-additional-services-2018.png)
-
-For instructions on configuring this policy, see [Configure a branch policy for an external service](pr-status-policy.md).
-
-::: moniker-end 
+ 
 
 <a id="include-code-reviewers"></a>
-
 
 ::: moniker range=">=azure-devops-2020"
 
 ## Automatically include code reviewers
-
 
 You can automatically add reviewers to pull requests that change files in specific directories and files, or to all pull requests in a repo.
 
@@ -988,11 +858,6 @@ You can automatically add reviewers to pull requests that change files in specif
    - You can specify an **Activity feed message** that appears in the pull request.
 
 1. Select **Save**.
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-> [!NOTE]   
-> This feature is available for Azure DevOps Server 2020 and later versions. 
 ::: moniker-end
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -1090,47 +955,17 @@ az repos policy required-reviewer update --id
 
 ::: moniker-end 
 
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
 
  
 
-::: moniker range="=azure-devops-2019"
-
-Select reviewers for specific directories and files in your repo.
-
-![Enter the path and required reviewers](media/branch-policies/require-specific-reviewers-2018.png)
-
-These reviewers are automatically added to pull requests that change files along those paths. You can also specify an **Activity feed message**.
-
-![Add automatic reviewers](media/branch-policies/automatically-include-reviewers-for-pull-requests-2018.png)
-
-If you select **Required**, then the pull request can't be completed until:
-
-- Every user added as a reviewer for the path approves the changes.
-- At least one person in every group added to the path approves the changes.
-- The number of reviewers specified for every group added to the path approves the changes.
-
-![Required reviewers are automatically added](media/branch-policies/required-reviewer-added.png)
-
-Select **Optional** if you want to add reviewers automatically, but not require their approval to complete the pull request.
-
-You can select **Requestors can approve their own changes**.
-
-When all required reviewers approve the code, you can complete the pull request.
-
-![Pull request status shows that reviewers have approved](media/branch-policies/required-reviewer-approved.png)
-
-
-::: moniker-end
-
 ## Bypass branch policies
 
 In some cases, you might need to bypass policy requirements. Bypass permissions let you push changes to a branch directly, or complete pull requests that don't satisfy branch policies. You can grant bypass permissions to a user or group. You can scope bypass permissions to an entire project, a repo, or a single branch.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 Two permissions allow users to bypass branch policy in different ways:
 
 - **Bypass policies when completing pull requests** applies only to pull request completion. Users with this permission can complete pull requests even if the pull requests don't satisfy policies.
@@ -1143,19 +978,10 @@ For more information about managing these permissions, see [Git permissions](../
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** permission allows users with this permission to perform the following actions:
-
-- Opt-in to override policies and complete a pull request even if the current set of branch policies isn't satisfied.
-- Push directly to a branch even if that branch has branch policies set. When a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
-
-::: moniker-end
-
 > [!IMPORTANT]
 > Use caution when granting the ability to bypass policies, especially at the repo and project levels. Policies are a cornerstone of secure and compliant source code management.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Path filters
 
@@ -1193,7 +1019,6 @@ The order of filters is significant. Filters are applied left-to-right.
 - [I have bypass policy permissions. Why do I still see policy failures in the pull request status?](#i-have-bypass-policy-permissions-why-do-i-still-see-policy-failures-in-the-pull-request-status)
 - [Why can't I complete my own pull requests when "Allow requestors to approve their own changes" is set?](#why-cant-i-complete-my-own-pull-requests-when-allow-requestors-to-approve-their-own-changes-is-set)
 - [What happens when path in path filters doesn't start with `/` or with a wildcard?](#what-happens-when-path-in-path-filters-doesnt-start-with--or-with-a-wildcard)
-
 
 #### Can I push changes directly to branches that have branch policies?
 
@@ -1253,9 +1078,7 @@ There might also be other policies, such as **Prohibit the most recent pusher fr
 
 #### What happens when path in path filters doesn't start with `/` or with a wildcard?
 
-
 The path in path filters that doesn't start with `/` or with a wildcard has no effect, and the path filter evaluates as if that path wasn't specified. Such a path can't match the `/` the absolute file path starts with.
-
 
 ## Related articles
 

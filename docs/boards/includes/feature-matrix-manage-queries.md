@@ -14,7 +14,7 @@ The following features provide support for working with query results, saving an
 ---
 :::row:::  
    :::column span="1":::  
-      - [Add a query chart to a dashboard](../../report/dashboards/charts.md#add-chart-to-a-dashboard)  
+      - [Add a query chart to a dashboard](../../report/dashboards/charts.md#add-a-chart-to-a-dashboard)  
       - [Apply interactive filters](../backlogs/filter-backlogs-boards-plans.md)  
       - [Choose column sort](../backlogs/set-column-options.md)  
       - [Choose query column options](../backlogs/set-column-options.md)  
@@ -36,7 +36,7 @@ The following features provide support for working with query results, saving an
       - [Open and run a query](../queries/view-run-query.md)  
       - [Publish/refresh a query (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md)  
       - [Run REST API queries](/rest/api/azure/devops/wit/queries)  
-      - [Save queries](../queries/organize-queries.md#run-edit-and-save-a-query)  
+      - [Copy and save queries](../queries/organize-queries.md#copy-edit-and-save-a-query)  
       - [Set query permissions](../queries/set-query-permissions.md)  
    :::column-end:::  
 :::row-end:::

@@ -1,7 +1,7 @@
 ---
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.date: 11/13/2024
+ms.date: 05/05/2025
 ---
 
 # Demands
@@ -14,14 +14,33 @@ The default work folder for agents is typically on the **D:\\** drive for Window
 
 Configure the `WorkFolder` demand in the `demands` section of your pipeline to set your agent work folder. If you're using an [attached data disk](configure-storage.md) and want your agent work folder on that disk, use `WorkFolder` and [specify a folder on the data disk as your agent working directory](configure-storage.md#use-the-data-disk-for-your-agent-working-directory).
 
+#### [Windows](#tab/windows/)
+
+The default work folder for Windows agents is typically on the **D:\\** drive and can be referenced in your pipeline by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables).
+
+In the following example, `WorkFolder` is set to an [attached data disk](./configure-storage.md?tabs=windows#use-the-data-disk-for-your-agent-working-directory) that is assigned the letter `F`.
+
 ```yml
 pool: 
   name: fabrikam-managed-pool # Name of Managed DevOps Pool
   demands:
-  - WorkFolder -equals c:\custom-work-folder # Windows agent example
-  # Use a folder like /user/local/custom-work-folder for Linux
-  # or /mnt/storage/sdc/custom-work-folder if you're using a data disk.
+  - WorkFolder -equals f:\custom-work-folder
 ```
+
+#### [Linux](#tab/linux/)
+
+The default work folder for agents is typically **/mnt** for Linux, and can be referenced in your pipeline by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables).
+
+In the following example, `WorkFolder` is set to an [attached data disk](./configure-storage.md?tabs=linux#use-the-data-disk-for-your-agent-working-directory).
+
+```yml
+pool: 
+  name: fabrikam-managed-pool # Name of Managed DevOps Pool
+  demands:
+  - WorkFolder -equals /mnt/storage/sdc/custom-work-folder
+```
+
+* * *
 
 ## Priority
 
@@ -50,13 +69,16 @@ For the case of a single pipeline with multiple jobs:
 
 If you have multiple images in your pool, you can configure your pipelines to use a specific image by using the `ImageOverride` demand and providing the [alias](configure-images.md#use-multiple-images-per-pool-with-aliases) of the image to use. If you're using an Azure Pipelines image, you can use its [predefined alias](configure-images.md#azure-pipelines-image-predefined-aliases). For all other images, you must [configure your own aliases](configure-images.md#configure-image-aliases).
 
-In the following example, a pipeline is configured to run using an image that is configured with an `ubuntu-20.04-gen2` alias.
+> [!IMPORTANT]
+> If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?&tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
+
+In the following example, a pipeline is configured to run using an image that is configured with an `ubuntu-24.04-gen2` alias.
 
 ```yml
 pool: 
   name: fabrikam-dev-pool # Name of Managed DevOps Pool
   demands:
-  - ImageOverride -equals ubuntu-20.04-gen2
+  - ImageOverride -equals ubuntu-24.04-gen2
 ```
 
 > [!IMPORTANT]
@@ -64,7 +86,7 @@ pool:
 
 ## ImageVersionOverride
 
-If you're using a Shared Image Gallery or Azure Marketplace [image](configure-images.md#choose-your-pools-image) and want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image. The following examples specify an `ImageVersionOverride` of `2.0.0`.
+If you're using an Azure Compute Gallery or Azure Marketplace [image](configure-images.md#choose-your-pools-image) and want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image. The following examples specify an `ImageVersionOverride` of `2.0.0`.
 
 Configure the `ImageVersionOverride` demand in the `demands` section of your pipeline.
 

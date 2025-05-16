@@ -19,6 +19,10 @@ The first commit in a new Git repo is the start of the `main` branch. As you wor
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## Create a new branch
 
 > [!NOTE]
@@ -59,26 +63,6 @@ The main page of your repo now shows the files in your new branch.
 :::image type="content" source="media/create-branch/browser/github/created-branch.png" border="true" alt-text="Screenshot of your new branch files on the main page of a GitHub repo.":::
 
 ::: moniker-end
-
-::: moniker range="< azure-devops-2020 >= azure-devops-2019"
-
-1. View your repo's branches by selecting **Repos** > **Branches** while viewing your repo on the web.
-
-   ![View your branches](media/repos-navigation/repos-branches.png)
-
-1. Select **New branch** in the upper-right corner of the page.
-
-   ![Create branch button](media/branches/create-branch.png)
-
-1. In the **Create a branch** dialog box, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
-
-   :::image type="content" source="media/branches/create-branch-web-2020.png" alt-text="Screenshot that shows the creation of a branch with the new branch dialog.":::
-
-1. Select **Create branch**.
-
-::: moniker-end
-
-
 
 > [!TIP]
 > After you've created a remote branch, you can [fetch](pulling.md) it into your local Git repo. At the command prompt, run:<br>

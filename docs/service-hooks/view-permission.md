@@ -22,26 +22,12 @@ By default, only Project Administrators have _View_ or _Edit_ permissions. To gr
 The `ServiceHooks` security namespace ID is defined under [List Security Namespaces](../organizations/security/manage-tokens-namespaces.md#list-security-namespaces) as `cb594ebe-87dd-4fc9-ac2c-6a10a4c92046`
 
 ## Prerequisites
-1. Install Azure CLI to run `az devops` command. [How to install the Azure CLI](/cli/azure/install-azure-cli)
-2. [Create a personal access token (PAT)](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for your Azure DevOps profile. Ensure you're a member of **Project Collection Administrator (PCA)** group. 
-    - Identity (Read)
-    - Graph (Read)
-    - Security (Manage) 
-3. Sign in to Azure DevOps with `az devops login`. If you don't have the `az devops` extension, install it.
-    ```
-    > az devops login
-    The command requires the extension azure-devops. Do you want to install it now? The command will continue to run after the extension is installed. (Y/n): Y
-    ```
 
-4. You can define your organization as default organization. Otherwise, define `--org "https://dev.azure.com/{organization}"` for each command.
-    ```
-    az devops configure --defaults organization="https://dev.azure.com/{organization}"
-    ```
-
-5. Check if you can see list of permissions for your organization.
-    ```
-    az devops security permission namespace list --org "https://dev.azure.com/{organization}"
-    ```
+| Category | Requirements |
+|--------------|-------------|
+|**Project access**| [Project member](../organizations/security/add-users-team-project.md). |
+|**Permissions**| - Member of the [Project Collection Administrators group](../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- [Personal access token (PAT)](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for your Azure DevOps profile.   |
+|**Tools**|[Azure CLI](/cli/azure/install-azure-cli).<br>1. Sign in with `az devops login`.<br>2. You can define your organization as default organization. Otherwise, define `--org "https://dev.azure.com/{organization}"` for each command. ```az devops configure --defaults organization="https://dev.azure.com/{organization}"```<br>3. Check if you can see list of permissions for your organization: ```az devops security permission namespace list --org "https://dev.azure.com/{organization}"```.   |
 
 ## Read group identity and permission token
 

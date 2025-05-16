@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 09/30/2022
 ---
 
@@ -34,17 +34,11 @@ For Azure DevOps Services, Analytics is always on. You can't disable it or pause
 For Azure DevOps Server 2020 and later on-premises versions, Analytics is automatically installed with each project collection you create. 
 ::: moniker-end
 
-
-::: moniker range="azure-devops-2019" 
-For Azure DevOps Server 2019, you must first install Analytics on each project collection you create. 
-::: moniker-end
-
 ::: moniker range="< azure-devops" 
 You can pause and restart the service. When paused, no new data is added to Analytics. 
 
 For more information, see [Install or enable the Analytics service](../dashboards/analytics-extension.md).
 ::: moniker-end
-
 
 ### Azure DevOps services 
 
@@ -52,22 +46,19 @@ To exercise any Azure DevOps service, it must be enabled. No data can be capture
 
 To verify that all services are enabled, see [Turn a service on or off](../../organizations/settings/set-services.md).
 
-
 ### Analytics views 
 
 **Analytics views**, a hub in your web portal, provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics data.  For more information, see [What is the Analytics Service?](../powerbi/what-are-analytics-views.md) 
 
-To access **Analytics views**, you must have it enabled. The organization owner or member of the Project Collection Administrators group can enable it for everyone in the organization. Or, each project member can enable it for themselves. 
+To access **Analytics views**, have it enabled. The organization owner or member of the Project Collection Administrators group can enable it for everyone in the organization. Or, each project member can enable it for themselves. 
 
 To learn how, see [Manage or enable features](../../project/navigation/preview-features.md).
-
 
 ## Permissions
 
 You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared **Analytics views** at the object level. 
 
 The following table summarizes the permissions available to be set and the default assignments made to the project security groups. 
-
 
 |Permission|  Readers |  Contributors    |Project Administrators| 
 |----------|----------|------------------|-------------------|  
@@ -136,13 +127,10 @@ If you're just getting started, consider reviewing this Learn module,
 
 ::: moniker-end
 
-
 ## Related articles
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
 - [Default permissions quick reference for Azure DevOps](../../organizations/security/permissions-access.md)
 - [Best practices to use when querying the Analytics service](analytics-best-practices.md) 
-
-
 
  

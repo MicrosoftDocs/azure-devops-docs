@@ -20,9 +20,11 @@ Team Foundation Version Control (TFVC) labels provide a way for you to take a sn
 
 ## Prerequisites
 
-- To apply a label, you must have the **Label** permission set to **Allow**.
-- To find, list, or view labels, you must have the **Read** permission set to **Allow**.
-- To modify or delete a label, you must own the label or have the **Administer Labels** permission set to **Allow**.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To apply a label: **Label** permission set to **Allow**.<br>- To find, list, or view labels: **Read** permission set to **Allow**.<br>- To modify or delete a label: Owner of the label or **Administer Labels** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Use labels
 
