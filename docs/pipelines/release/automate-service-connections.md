@@ -75,64 +75,44 @@ az role assignment create --role Contributor --scope /subscriptions/3f56da7f-595
 
 ## Create a service connection
 
-Use the REST API to create a service connection. 
+The below is using a configuration file to create the service connection, see [Azure DevOps CLI service endpoint](../../cli/service-endpoint.md).
 
-```azurecli
-    az rest --method 'POST' `
-            --uri $apiUri `
-            --body "@$serviceEndpointRequestBodyFile" `
-            --resource <resource-id> `
-            --output json `
-            | ConvertFrom-Json -Depth 4 `
-            | Set-Variable serviceEndpoint
+> [!div class="tabbedCodeSnippets"]
+```json	
+{
+  "data": {
+    "subscriptionId": "11111111-1111-1111-1111-111111111111",
+    "subscriptionName": "My Azure Subscription",
+    "environment": "AzureCloud",
+    "scopeLevel": "Subscription",
+    "creationMode": "Manual"
+  },
+  "name": "MyNewServiceEndpoint",
+  "type": "AzureRM",
+  "url": "https://management.azure.com/",
+  "authorization": {
+    "parameters": {
+      "tenantid": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
+      "serviceprincipalid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+    },
+    "scheme": "WorkloadIdentityFederation"
+  },
+  "isShared": false,
+  "isReady": true,
+  "serviceEndpointProjectReferences": [
+    {
+      "projectReference": {
+        "id": "c7e5f0b3-71fa-4429-9fb3-3321963a7c06",
+        "name": "TestProject"
+      },
+      "name": "MyNewServiceEndpoint"
+    }
+  ]
+}
 ```
 
-Here's a full sample request with curl. 
-
-```json
-curl --request POST \
-  --url '<org url>/_apis/serviceendpoint/endpoints?api-version=7.2-preview' \
-  --header 'Authorization: Basic <redacted>' \
-  --header 'Content-Type: application/json' \
-  --header 'User-Agent: insomnia/9.2.0' \
-  --data '{
-    "data": {
-        "azureSpnPermissions": "[{\"roleAssignmentId\":\"<role-assignment-id>\",\"resourceProvider\":\"Microsoft.RoleAssignment\",\"provisioned\":true}]",
-        "azureSpnRoleAssignmentId": "<role-assignment-id>",
-        "registryId": "/subscriptions/<subscription-id>/resourceGroups/<resource-group>/providers/Microsoft.ContainerRegistry/registries/<registry-name>",
-        "registrytype": "ACR",
-        "subscriptionId": "<subscription-id>",
-        "subscriptionName": "<subscription-name>",
-        "creationMode": "Manual"
-    },
-    "name": "manualwif-new",
-    "type": "dockerregistry",
-    "url": "https://management.azure.com/",
-    "description": "",
-    "authorization": {
-        "parameters": {
-            "loginServer": "<login-server>",
-            "role": "<role-id>",
-            "scope": "/subscriptions/<subscription-id>/resourceGroups/<resource-group>/providers/Microsoft.ContainerRegistry/registries/<registry-name>",
-            "servicePrincipalId": "<app-id>",
-            "tenantId": "<tenant-id>"
-        },
-        "scheme": "WorkloadIdentityFederation"
-    },
-    "isShared": false,
-    "isReady": true,
-    "owner": "Library",
-    "serviceEndpointProjectReferences": [
-        {
-            "projectReference": {
-                "id": "<project-id>",
-                "name": "<project-name>"
-            },
-            "name": "manualwif-new",
-            "description": ""
-        }
-    ]
-}'
+```sh
+az devops service-endpoint create -service-endpoint-configuration ./ServiceConnectionGeneric.json
 ```
 
 ## Create federated identity credential
