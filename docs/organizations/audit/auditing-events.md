@@ -213,10 +213,18 @@ The following tables describe the type of events (or actions) that are available
 | Action | Description |
 |--------|-------------|
 | `Pipelines.DeploymentJobCompleted` | Deployment for run "{RunName}" on pipeline "{PipelineName}" to environment "{EnvironmentName}" {DeploymentResult}. |
+| `Pipelines.HostedParallelismPaid` | Organization's hosted pipeline capacity set to paid tier only.|
+| `Pipelines.HostedParallelismPrivate` | Organization's hosted pipeline capacity set to free tier limit for private projects. |
+| `Pipelines.HostedParallelismPublic` | Organization's hosted pipeline capacity set to free tier limit for public projects. |
+| `Pipelines.OAuthConfigurationCreated` | Created OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OAuthConfigurationDeleted` | Updated OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OAuthConfigurationUpdated` | Deleted OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OrganizationSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
 | `Pipelines.PipelineCreated` | Created pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
 | `Pipelines.PipelineDeleted` | Deleted pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
 | `Pipelines.PipelineModified` | Modified pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
 | `Pipelines.PipelineRetentionSettingChanged` | Pipelines retention "{SettingName}" changed from {OldValue} to {NewValue} in {ProjectName} project. |
+| `Pipelines.ProjectSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
 | `Pipelines.ResourceAuthorizedForPipeline` | Successfully authorized {ResourceType} resource {ResourceId} for pipeline ID {PipelineId}. |
 | `Pipelines.ResourceAuthorizedForProject` | Successfully authorized {ResourceType} resource {ResourceId} for the project. |
 | `Pipelines.ResourceNotAuthorizedForPipeline` | Didn't authorize {ResourceType} resource {ResourceId} for pipeline ID {PipelineId}. The resource doesn't exist or the user doesn't have permission. |
@@ -225,11 +233,7 @@ The following tables describe the type of events (or actions) that are available
 | `Pipelines.ResourceUnauthorizedForProject` | Successfully unauthorized {ResourceType} resource {ResourceId} for the project. |
 | `Pipelines.RunRetained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease ID {RetentionLeaseId} to {RetentionOwnerId}. |
 | `Pipelines.RunUnretained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained. |
-| `Pipelines.ProjectSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
-| `Pipelines.OAuthConfigurationCreated` | Created OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OAuthConfigurationDeleted` | Updated OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OAuthConfigurationUpdated` | Deleted OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OrganizationSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
+| `Pipelines.VariablesSetAtRuntime` | A run of pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}, has defined variable(s) that are not marked as "Settable at queue time".|
 
 ### Policy events
 
