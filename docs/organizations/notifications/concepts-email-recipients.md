@@ -172,8 +172,6 @@ Because team `T1` has the **Do not deliver** setting enabled, the team **isn't**
 
 #### Team member is Microsoft Entra group
 
-#### Team member is Microsoft Entra group
-
 In this example, the primary team has three members: users `I1` and `I2`, and nested Microsoft Entra group `E1`.
 
 Only users `I1` and `I2` receive the notification messages at their preferred contact email address unless `E1` is configured as an email-enabled security group. If `E1` is email-enabled, all members of `E1` will also receive the notifications.
