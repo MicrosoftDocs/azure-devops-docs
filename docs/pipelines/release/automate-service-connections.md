@@ -18,10 +18,21 @@ Use automation to create Azure Resource Manager service connections with workloa
 
 Automation also helps enforce security policies and compliance requirements by making sure that service connections are created with the necessary permissions and configurations, while also serving as documentation for the setup process.
 
-## Constraints
+## Process
+
+### Constraints
 
 - In automation, `"creationMode": "Manual"` should be used when creating service connections that need an Entra identity. Significant Entra privileges would be required to have Azure DevOps create all objects on behalf of the caller. Instead end-to-end automation should create each object (identity, service connection, credential, role assignment) individually
 - Workload identity federation defines a bi-directional relationship between identity and service connection. Therefore, objects need to be created in a certain order where the federated credential can only be created after the service connection has been created. 
+
+### Overview
+
+| Step                        | Input                  | Output                  |
+|-----------------------------|------------------------|-------------------------|
+| Create identity             | `tenantId`             | `appId`, `principalId`  |
+| Create role assignment      | `principalId`          |                         |
+| Create service connection   | `appId`                | `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` |
+| Create federated credential | `appId`, `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | |
 
 ## Create identity
 You need either an app registration or a managed identity.
@@ -64,7 +75,7 @@ See [az ad sp create-for-rbac](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-c
 
 Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its id, als called `principalId`. The `principalId` is in the output of the command that created the identity above.
 
-```azurecli
+```
 az role assignment create --role Contributor --scope /subscriptions/11111111-1111-1111-1111-111111111111 --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
 {
   ...
