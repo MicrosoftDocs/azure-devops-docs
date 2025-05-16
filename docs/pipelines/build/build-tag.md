@@ -85,7 +85,7 @@ To remove a build tag, use the [az pipelines build tag delete](/cli/azure/pipeli
 
 For example, the following command removes a build tag named `prod` in the `contoso` organization and `webapp` project for the build `1234`.
 
-```azurecli
+```azurecli-interactive
 az pipelines build tag delete --build-id 1234
                            --tag prod
                            --org https://dev.azure.com/Contoso/
