@@ -61,7 +61,7 @@ The above command creates an app and service principal in Entra. The object id o
 Add a role assignment to your managed identity or app registration with `az role assignment create`. This needs toe objectId of the principal 
 
 ```sh
-az role assignment create --role Contributor --scope /subscriptions/3f56da7f-5953-4018-8ca8-e20dbfa0a7e2/resourceGroups/ericvan-scratch --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
+az role assignment create --role Contributor --scope /subscriptions/11111111-1111-1111-1111-111111111111 --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
 {
   ...
   "principalId": "00000000-0000-0000-0000-000000000000",
@@ -113,6 +113,19 @@ The below is using a configuration file to create the service connection, see [A
 
 ```sh
 az devops service-endpoint create -service-endpoint-configuration ./ServiceConnectionGeneric.json
+{
+  "administratorsGroup": null,
+  "authorization": {
+    "parameters": {
+      "serviceprincipalid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+      "tenantid": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
+      "workloadIdentityFederationIssuer": "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0",
+      "workloadIdentityFederationSubject": "<federation-subject>"
+    },
+    "scheme": "WorkloadIdentityFederation"
+  },
+  ...
+}
 ```
 
 ## Create federated identity credential
@@ -120,16 +133,27 @@ az devops service-endpoint create -service-endpoint-configuration ./ServiceConne
 #### [Managed identity](#tab/managed-identity)
 
 ```azurecli
-az identity federated-credential create --name $IdentityName `
-                                        --identity-name $IdentityName  `
-                                        --resource-group $IdentityResourceGroupName `
-                                        --issuer  $serviceEndpoint.authorization.parameters.workloadIdentityFederationIssuer `
-                                        --subject $serviceEndpoint.authorization.parameters.workloadIdentityFederationSubject `
-                                        --subscription $IdentitySubscriptionId
+az identity federated-credential create --name fic-for-sc `
+                                        --identity-name msi-for-sc  `
+                                        --resource-group rg-for-sc `
+                                        --issuer "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0" `
+                                        --subject "<federation-subject>" `
+                                        --subscription <msi-subscription-id>
 ```
 
 #### [App registration](#tab/app-registration)
 
-NEED EXAMPLE
+```sh
+az ad app federated-credential create --id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --parameters credential.json
+("credential.json" contains the following content)
+{
+    "name": "fic-for-sc",
+    "issuer": "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0",
+    "subject": "<federation-subject>",
+    "audiences": [
+        "api://AzureADTokenExchange"
+    ]
+}
+```
 
 ---
