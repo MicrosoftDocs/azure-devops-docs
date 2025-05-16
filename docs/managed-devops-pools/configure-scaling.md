@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 11/15/2024
+ms.date: 05/16/2025
 ---
 
 # Configure scaling
@@ -24,7 +24,7 @@ The default setting for a Managed DevOps pool is stateless (**Fresh agent every 
 
 When a stateless agent is configured, a new agent is procured for each job, and is discarded after the job completes.
 
-For the lifecycle of stateless agents and an explanation on how they are used in Azure DevOps pipelines (including potential delays in allocation), please see [below](#lifecycle-of-agents-and-potential-delays-in-allocation)
+For the lifecycle of stateless agents and an explanation on how they are used in Azure DevOps pipelines (including potential delays in allocation), see the following [Lifecycle of agents and potential delays in allocation](#lifecycle-of-agents-and-potential-delays-in-allocation) section.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -886,11 +886,9 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
 
 * * *
 
-* * *
+## Lifecycle of agents and potential delays in allocation
 
-## Lifecycle of Agents and potential delays in allocation
-
-When using a Stateless scheme, ready agents require the Azure DevOps Task Agent to both be installed and set up in order to run an Azure DevOps pipeline. When provisioning new agents, our service will attempt to download the latest Azure DevOps VSTS Task agent offered [to the public](https://github.com/microsoft/azure-pipelines-agent/releases) in order to have it already downloaded on buffered agents. Startup, connection, and beginning the job can take anywhere from 10 seconds to a minute depending on the pool's SKU speed, image used, and networking load. Additionally, certain settings in an Azure DevOps's job can cause a redownload and running of a different agent, and regressions + rollbacks of the Task Agent can also cause a redownload of the agent. Ready agents will always have a potential delay, as Managed DevOps Pools uses this agent in an "ephemeral" manner, meaning we startup and run the task agent one time per job.
+When using a Stateless scheme, ready agents require the Azure DevOps Task Agent to both be installed and set up in order to run an Azure DevOps pipeline. When provisioning new agents, Managed DevOps Pools attempts to download the latest [Azure DevOps agent](https://github.com/microsoft/azure-pipelines-agent/releases) in order to have it already downloaded on buffered agents. Startup, connection, and beginning the job can take anywhere from 10 seconds to a minute depending on the pool's SKU speed, image used, and networking load. Additionally, certain settings in a pipeline job can cause a redownload and running of a different agent, and regressions and rollbacks of the agent can also cause a redownload of the agent. Ready agents will always have a potential delay, as Managed DevOps Pools uses this agent in an "ephemeral" manner, meaning we startup and run the task agent one time per job.
 
 If you are seeing delays in ready agents picking up jobs from Azure DevOps, the following are important to consider:
 
@@ -898,8 +896,6 @@ If you are seeing delays in ready agents picking up jobs from Azure DevOps, the 
 * Are you using the buffer with multiple images properly? - If you are not specifying which image to use in your pipeline using the ImageOverride demand, jobs will be targeting the first image. This means, depending on your Scaling settings, you might not have as many agents available as you'd expect as some are allocated to other images.
 * Are Proxy/VNet/Firewall settings slowing down your pool? - Potential slowness from any network setting will result in agents taking longer to start the agent and connect it to Azure DevOps.
 * Are you overriding the agent version? - By default, Managed DevOps pools will run on the most recent Azure DevOps task agent version. Settings in the Pipeline yaml (such as the "Agent.Version" demand) and Azure DevOps org can force pipelines to use older versions of the task agent, requiring a redownload once a machine has been allocated.
-
-* * *
 
 ## See also
 
