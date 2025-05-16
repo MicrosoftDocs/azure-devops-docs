@@ -93,12 +93,11 @@ Do the following steps to import or export a process:
 
 You can apply the following customizations to your process: 
 
-* [Add, remove, or modify a WIT](../../../../reference/add-modify-wit.md).
-* [Add or modify a field](../../../../reference/add-modify-wit.md).
-* [Add up to five portfolio backlogs](../../../../reference/add-portfolio-backlogs.md).
-* [Add categories](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types) that you use in your process configuration.
-* [Modify process configuration](../../../../reference/xml/process-configuration-xml-element.md).
-* [Add global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).
+* [Add, remove, or modify a WIT](../../../../reference/add-modify-wit.md)
+* [Add or modify a field](../../../../reference/add-modify-wit.md)
+* [Add up to five portfolio backlogs](../../../../reference/add-portfolio-backlogs.md)
+* [Add categories](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types) that you use in your process configuration
+* [Modify process configuration](../../../../reference/xml/process-configuration-xml-element.md)
 
 ## Differences
 
