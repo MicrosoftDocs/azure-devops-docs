@@ -30,7 +30,7 @@ You need either an app registration or a managed identity.
 
 Create a managed identity with `az identity create`. 
 
-```sh
+```azurecli
 az identity create -n msi-for-sc -g rg-for-sc -o json --query '{appId:clientId,principalId:principalId}'
 {
   "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
@@ -46,7 +46,7 @@ See [az identity create](/cli/azure/identity?view=azure-cli-latest#az-identity-c
 
 Create an app registration with `az ad sp create-for-rbac`. 
 
-```sh
+```azurecli
 az ad sp show --id $(az ad sp create-for-rbac -n appreg-for-rbac --create-password false -o tsv --query appId) --query '{appId:appId,principalId:id}'
 {
   "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
@@ -64,7 +64,7 @@ See [az ad sp create-for-rbac](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-c
 
 Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its id, als called `principalId`. The `principalId` is in the output of the command that created the identity above.
 
-```sh
+```azurecli
 az role assignment create --role Contributor --scope /subscriptions/11111111-1111-1111-1111-111111111111 --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
 {
   ...
@@ -117,7 +117,7 @@ The below is using a configuration file to create the service connection. This c
 }
 ```
 
-```sh
+```azurecli
 az devops service-endpoint create -service-endpoint-configuration ./ServiceConnectionGeneric.json
 {
   "administratorsGroup": null,
@@ -140,7 +140,7 @@ See [Azure DevOps CLI service endpoint](../../cli/service-endpoint.md) for more 
 
 #### [Managed identity](#tab/managed-identity)
 
-```sh
+```azurecli
 az identity federated-credential create --name fic-for-sc 
                                         --identity-name msi-for-sc  
                                         --resource-group rg-for-sc 
@@ -153,7 +153,7 @@ See [az identity federated-credential create](/cli/azure/identity/federated-cred
 
 #### [App registration](#tab/app-registration)
 
-```sh
+```azurecli
 az ad app federated-credential create --id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --parameters credential.json
 ("credential.json" contains the following content)
 {
