@@ -18,7 +18,7 @@ Use automation to create Azure Resource Manager service connections with workloa
 
 Automation also helps enforce security policies and compliance requirements by making sure that service connections are created with the necessary permissions and configurations, while also serving as documentation for the setup process.
 
-To automate the creation of a service connection that uses workload identity federation, you need to create objects in a specific order. 
+To automate the creation of a service connection that uses workload identity federation, you need to create objects in a specific order. Specifically, the federated credential can only be created after the service connection has been created. 
 
 ## Create identity
 
@@ -29,23 +29,49 @@ You need either an app registration or a managed service identity.
 
 Create a managed identity with `az identity create`. 
 
-SAMPLE
+```sh
+az identity create -n msi-for-sc -g rg-for-sc -o json --query '{appId:clientId,principalId:principalId}'
+{
+  "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+  "principalId": "00000000-0000-0000-0000-000000000000"
+}
+```
+
+A managed identity creates a service principal in Entra under the good. The object id of the service principal is also called `principalId`. This is needed later when assigned RBAC roles.
 
 #### [App registration](#tab/app-registration)
 
-Create an app registration with `az ad app create`. 
+Create an app registration with `az ad sp create-for-rbac`. 
 
-SAMPLE
+```sh
+az ad sp show --id $(az ad sp create-for-rbac -n appreg-for-rbac --create-password false -o tsv --query appId) --query '{appId:appId,principalId:id}'
+{
+  "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+  "principalId": "00000000-0000-0000-0000-000000000000"
+}
+```
+
+The above command creates an app and service principal in Entra. The object id of the service principal is also called `principalId`. This is needed later when assigned RBAC roles.
+
 
 ---
 
 ## Create role assignment
 
-Add a role assignment to your managed identity or app registration with `az role assignment create`. 
+Add a role assignment to your managed identity or app registration with `az role assignment create`. This needs toe objectId of the principal 
 
-WHAT ROLE TO ASSIGN?
-
-SAMPLE
+```sh
+az role assignment create --role Contributor --scope /subscriptions/3f56da7f-5953-4018-8ca8-e20dbfa0a7e2/resourceGroups/ericvan-scratch --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
+{
+  ...
+  "principalId": "00000000-0000-0000-0000-000000000000",
+  "principalType": "ServicePrincipal",
+  ...
+  "scope": "/subscriptions/11111111-1111-1111-1111-111111111111",
+  "type": "Microsoft.Authorization/roleAssignments",
+  ...
+}
+```
 
 ## Create a service connection
 
