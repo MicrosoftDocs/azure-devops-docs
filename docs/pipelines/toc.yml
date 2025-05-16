@@ -709,9 +709,6 @@
       href: security/inputs.md
 - name: Integration
   items:
-  - name: Microsoft Teams
-    displayName: integrations, teams
-    href: integrations/microsoft-teams.md
   - name: Slack
     displayName: integrations, slack
     href: integrations/slack.md
