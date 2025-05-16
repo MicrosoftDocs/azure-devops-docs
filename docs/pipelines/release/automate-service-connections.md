@@ -38,7 +38,7 @@ az identity create -n msi-for-sc -g rg-for-sc -o json --query '{appId:clientId,p
 }
 ```
 
-A managed identity creates a service principal in Entra under the hood. The object id of the service principal is also called `principalId`. This is needed later when assigned RBAC roles. The `appId` is used when creating the service connection in Azure DevOps.
+A managed identity creates a service principal in Entra under the hood. The object id of the service principal is also called `principalId`. This is needed later when assigning RBAC roles. The `appId` is used when creating the service connection in Azure DevOps.
 
 See [az identity create](/cli/azure/identity?view=azure-cli-latest#az-identity-create) for more information on this command.
 
@@ -54,7 +54,7 @@ az ad sp show --id $(az ad sp create-for-rbac -n appreg-for-rbac --create-passwo
 }
 ```
 
-The above command creates an app and service principal in Entra. The object id of the service principal is also called `principalId`. This is needed later when assigned RBAC roles. The `appId` is used when creating the service connection in Azure DevOps.
+The above command creates an app and service principal in Entra. The object id of the service principal is also called `principalId`. This is needed later when assigning RBAC roles. The `appId` is used when creating the service connection in Azure DevOps.
 
 See [az ad sp create-for-rbac](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-create-for-rbac) for more information on this command.
 
@@ -140,12 +140,12 @@ See [Azure DevOps CLI service endpoint](../../cli/service-endpoint.md) for more 
 
 #### [Managed identity](#tab/managed-identity)
 
-```sh
-az identity federated-credential create --name fic-for-sc `
-                                        --identity-name msi-for-sc  `
-                                        --resource-group rg-for-sc `
-                                        --issuer "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0" `
-                                        --subject "<federation-subject>" `
+```powershell
+az identity federated-credential create --name fic-for-sc 
+                                        --identity-name msi-for-sc  
+                                        --resource-group rg-for-sc 
+                                        --issuer "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0" 
+                                        --subject "<federation-subject>" 
                                         --subscription <msi-subscription-id>
 ```
 
