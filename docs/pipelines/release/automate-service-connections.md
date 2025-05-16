@@ -4,7 +4,7 @@ description: Learn how to use automation to create a service connection in Azure
 ms.topic: conceptual
 ms.author: jukullam
 author: juliakm
-ms.date: 12/06/2024
+ms.date: 05/16/2025
 monikerRange: '>= azure-devops'
 "recommendations": "true"
 ai-usage: ai-assisted
@@ -14,20 +14,20 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use automation to create Azure Resource Manager service connections with workload identity for consistency, efficiency, repeatability, and scalability in your Azure DevOps projects. By using scripts, you can guarantee that service connections are configured the same way every time, reducing the risk of human error and saving valuable time, especially when setting up multiple connections or deploying to different environments. Automation also allows for easy scaling, making it simpler to manage large-scale deployments.
+Use automation to create Azure Resource Manager service connections with workload identity for consistency, efficiency, repeatability, and scalability in your Azure DevOps projects. Scripts guarantee that service connections are configured the same way every time, reduce the risk of human error, and save time, especially when you set up multiple connections or deploy to different environments. Automation also lets you scale so you can better manage large deployments.
 
-Automation also helps enforce security policies and compliance requirements by making sure that service connections are created with the necessary permissions and configurations, while also serving as documentation for the setup process.
+Automation also helps enforce security policies and compliance requirements by making sure service connections use the right permissions and configurations. It also serves as documentation for the setup process.
 
 ## Process
 
 ### Constraints
 
-- In automation, `"creationMode": "Manual"` should be used when creating service connections that need an Entra identity. Significant Entra privileges would be required to have Azure DevOps create all objects on behalf of the caller. Instead end-to-end automation should create each object (identity, service connection, credential, role assignment) individually
-- Workload identity federation defines a bi-directional relationship between identity and service connection. Therefore, objects need to be created in a certain order where the federated credential can only be created after the service connection has been created. 
+- In automation, `"creationMode": "Manual"` should be used when creating service connections that need an Microsoft Entra identity. Significant Microsoft Entra privileges are required to have Azure DevOps create all objects on behalf of the caller. Instead, end-to-end automation should create each object (identity, service connection, credential, role assignment) individually.
+- Workload identity federation defines a bi-directional relationship between the identity and service connection. As a result, objects need to be created in a certain order and the federated credential can only be created after the service connection is created. 
 
 ### Overview
 
-The below table provides an overview of the key properties exchanged between the creation commands.
+This table provides an overview of the key properties exchanged between the creation commands.
 
 | Step                        | Input                  | Output                  |
 |-----------------------------|------------------------|-------------------------|
@@ -51,9 +51,9 @@ az identity create -n msi-for-sc -g rg-for-sc -o json --query '{appId:clientId,p
 }
 ```
 
-A managed identity creates a service principal in Entra under the hood. The object id of the service principal is also called `principalId`. This is needed later when assigning RBAC roles. The `appId` is used when creating the service connection in Azure DevOps.
+A managed identity creates a service principal in Microsoft Entra. The object id of the service principal is also called `principalId`. This is needed later when assigning RBAC roles. The `appId` is used when creating the service connection in Azure DevOps.
 
-See [az identity create](/cli/azure/identity?view=azure-cli-latest#az-identity-create) for more information on this command.
+For more information, see [az identity create](/cli/azure/identity?view=azure-cli-latest#az-identity-create).
 
 #### [App registration](#tab/app-registration)
 
@@ -67,15 +67,15 @@ az ad sp show --id $(az ad sp create-for-rbac -n appreg-for-rbac --create-passwo
 }
 ```
 
-The above command creates an app and service principal in Entra. The object id of the service principal is also called `principalId`. This is needed later when assigning RBAC roles. The `appId` is used when creating the service connection in Azure DevOps.
+This command creates an app and service principal in Microsoft Entra. The object ID of the service principal is also called `principalId`. This is needed later when assigning RBAC roles. The `appId` is used when creating the service connection in Azure DevOps.
 
-See [az ad sp create-for-rbac](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-create-for-rbac) for more information on this command.
+For more information, see [az ad sp create-for-rbac](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-create-for-rbac).
 
 ---
 
 ## Create a service connection
 
-The below is using a configuration file to create the service connection. This configures the identity created in a new Azure Service Connection. The `servicePrincipalId` authorization parameter is populated with the `appId` of the identity.
+This example uses a configuration file to create the service connection. This configures the identity created in a new Azure service connection. The `servicePrincipalId` authorization parameter is populated with the `appId` of the identity.
 
 > [!div class="tabbedCodeSnippets"]
 ```json	
@@ -128,9 +128,9 @@ az devops service-endpoint create -service-endpoint-configuration ./ServiceConne
 }
 ```
 
-See [Azure DevOps CLI service endpoint](../../cli/service-endpoint.md) for more information on this command.
+For more information about this command, see [Azure DevOps CLI service endpoint](../../cli/service-endpoint.md).
 
-## Create federated identity credential
+## Create a federated identity credential
 
 #### [Managed identity](#tab/managed-identity)
 
@@ -143,7 +143,7 @@ az identity federated-credential create --name fic-for-sc
                                         --subscription <msi-subscription-id>
 ```
 
-See [az identity federated-credential create](/cli/azure/identity/federated-credential?view=azure-cli-latest#az-identity-federated-credential-create) for more information on this command.
+For more information about this command, see [az identity federated-credential create](/cli/azure/identity/federated-credential?view=azure-cli-latest#az-identity-federated-credential-create).
 
 #### [App registration](#tab/app-registration)
 
@@ -160,13 +160,13 @@ az ad app federated-credential create --id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 
 }
 ```
 
-See [az ad app federated-credential create](/cli/azure/ad/app/federated-credential?view=azure-cli-latest#az-ad-app-federated-credential-create) for more information on this command.
+For more information about this command, see [az ad app federated-credential create](/cli/azure/ad/app/federated-credential?view=azure-cli-latest#az-ad-app-federated-credential-create).
 
 ---
 
 ## Create role assignment
 
-Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its id, als called `principalId`. The `principalId` is in the output of the command that created the identity above.
+Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its ID, also called `principalId`. The `principalId` is in the output of the command that created the identity above.
 
 ```azurecli
 az role assignment create --role Contributor --scope /subscriptions/11111111-1111-1111-1111-111111111111 --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
@@ -181,4 +181,4 @@ az role assignment create --role Contributor --scope /subscriptions/11111111-111
 }
 ```
 
-See [az role assignment create](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create) for more information on this command.
+For more information on this command, see [az role assignment create](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create).
