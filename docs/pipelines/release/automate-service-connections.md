@@ -53,7 +53,7 @@ az identity create -n msi-for-sc -g rg-for-sc -o json --query '{appId:clientId,p
 
 A managed identity creates a service principal in Microsoft Entra. The object id of the service principal is also called `principalId`. This is needed later when assigning RBAC roles. The `appId` is used when creating the service connection in Azure DevOps.
 
-For more information, see [az identity create](/cli/azure/identity?view=azure-cli-latest#az-identity-create).
+For more information, see [az identity create](/cli/azure/identity#az-identity-create).
 
 #### [App registration](#tab/app-registration)
 
@@ -69,7 +69,7 @@ az ad sp show --id $(az ad sp create-for-rbac -n appreg-for-rbac --create-passwo
 
 This command creates an app and service principal in Microsoft Entra. The object ID of the service principal is also called `principalId`. This is needed later when assigning RBAC roles. The `appId` is used when creating the service connection in Azure DevOps.
 
-For more information, see [az ad sp create-for-rbac](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-create-for-rbac).
+For more information, see [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac).
 
 ---
 
@@ -143,7 +143,7 @@ az identity federated-credential create --name fic-for-sc
                                         --subscription <msi-subscription-id>
 ```
 
-For more information about this command, see [az identity federated-credential create](/cli/azure/identity/federated-credential?view=azure-cli-latest#az-identity-federated-credential-create).
+For more information about this command, see [az identity federated-credential create](/cli/azure/identity/federated-credential#az-identity-federated-credential-create).
 
 #### [App registration](#tab/app-registration)
 
@@ -160,7 +160,7 @@ az ad app federated-credential create --id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 
 }
 ```
 
-For more information about this command, see [az ad app federated-credential create](/cli/azure/ad/app/federated-credential?view=azure-cli-latest#az-ad-app-federated-credential-create).
+For more information about this command, see [az ad app federated-credential create](/cli/azure/ad/app/federated-credential#az-ad-app-federated-credential-create).
 
 ---
 
@@ -181,4 +181,4 @@ az role assignment create --role Contributor --scope /subscriptions/11111111-111
 }
 ```
 
-For more information on this command, see [az role assignment create](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create).
+For more information on this command, see [az role assignment create](/cli/azure/role/assignment#az-role-assignment-create).
