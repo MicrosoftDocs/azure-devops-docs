@@ -140,7 +140,7 @@ See [Azure DevOps CLI service endpoint](../../cli/service-endpoint.md) for more 
 
 #### [Managed identity](#tab/managed-identity)
 
-```powershell
+```sh
 az identity federated-credential create --name fic-for-sc 
                                         --identity-name msi-for-sc  
                                         --resource-group rg-for-sc 
