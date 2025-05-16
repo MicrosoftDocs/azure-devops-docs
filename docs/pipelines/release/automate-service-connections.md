@@ -63,7 +63,7 @@ See [az ad sp create-for-rbac](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-c
 
 ## Create role assignment
 
-Add a role assignment to your managed identity or app registration with `az role assignment create`. This needs toe objectId of the principal 
+Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its id, als called `principalId`. 
 
 ```sh
 az role assignment create --role Contributor --scope /subscriptions/11111111-1111-1111-1111-111111111111 --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
@@ -117,6 +117,8 @@ The below is using a configuration file to create the service connection:
   ]
 }
 ```
+
+Note that the `servicePrincipalId` is populated with the `appId` of the identity.
 
 ```sh
 az devops service-endpoint create -service-endpoint-configuration ./ServiceConnectionGeneric.json
