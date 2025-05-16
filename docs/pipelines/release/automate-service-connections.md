@@ -18,12 +18,14 @@ Use automation to create Azure Resource Manager service connections with workloa
 
 Automation also helps enforce security policies and compliance requirements by making sure that service connections are created with the necessary permissions and configurations, while also serving as documentation for the setup process.
 
-To automate the creation of a service connection that uses workload identity federation, you need to create objects in a specific order. Specifically, the federated credential can only be created after the service connection has been created. 
+## Constrains
+
+- In automation, `"creationMode": "Manual"` should be used when creating service connections that need an Entra identity. Significant Entra privileges would be required to have Azure DevOps create all objects on behalf of the caller. Instead end-to-end automation should create each object (identity, service connection, credential, role assignment) individually
+- Workload identity federation defines a bi-directional relationship between identity and service connection. Therefore, objects need to be created in a certain order where the federated credential can only be created after the service connection has been created. 
 
 ## Create identity
 
 You need either an app registration or a managed service identity.
-
 
 #### [Managed identity](#tab/managed-identity)
 
@@ -39,6 +41,8 @@ az identity create -n msi-for-sc -g rg-for-sc -o json --query '{appId:clientId,p
 
 A managed identity creates a service principal in Entra under the good. The object id of the service principal is also called `principalId`. This is needed later when assigned RBAC roles.
 
+See [az identity create](/cli/azure/identity?view=azure-cli-latest#az-identity-create) for more information on this command.
+
 #### [App registration](#tab/app-registration)
 
 Create an app registration with `az ad sp create-for-rbac`. 
@@ -53,6 +57,7 @@ az ad sp show --id $(az ad sp create-for-rbac -n appreg-for-rbac --create-passwo
 
 The above command creates an app and service principal in Entra. The object id of the service principal is also called `principalId`. This is needed later when assigned RBAC roles.
 
+See [az ad sp create-for-rbac](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-create-for-rbac) for more information on this command.
 
 ---
 
@@ -73,9 +78,11 @@ az role assignment create --role Contributor --scope /subscriptions/11111111-111
 }
 ```
 
+See [az role assignment create](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create) for more information on this command.
+
 ## Create a service connection
 
-The below is using a configuration file to create the service connection, see [Azure DevOps CLI service endpoint](../../cli/service-endpoint.md).
+The below is using a configuration file to create the service connection:
 
 > [!div class="tabbedCodeSnippets"]
 ```json	
@@ -128,11 +135,13 @@ az devops service-endpoint create -service-endpoint-configuration ./ServiceConne
 }
 ```
 
+See [Azure DevOps CLI service endpoint](../../cli/service-endpoint.md) for more information on this command.
+
 ## Create federated identity credential
 
 #### [Managed identity](#tab/managed-identity)
 
-```azurecli
+```sh
 az identity federated-credential create --name fic-for-sc `
                                         --identity-name msi-for-sc  `
                                         --resource-group rg-for-sc `
@@ -140,6 +149,8 @@ az identity federated-credential create --name fic-for-sc `
                                         --subject "<federation-subject>" `
                                         --subscription <msi-subscription-id>
 ```
+
+See [az identity federated-credential create](/cli/azure/identity/federated-credential?view=azure-cli-latest#az-identity-federated-credential-create) for more information on this command.
 
 #### [App registration](#tab/app-registration)
 
@@ -155,5 +166,7 @@ az ad app federated-credential create --id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 
     ]
 }
 ```
+
+See [az ad app federated-credential create](/cli/azure/ad/app/federated-credential?view=azure-cli-latest#az-ad-app-federated-credential-create) for more information on this command.
 
 ---
