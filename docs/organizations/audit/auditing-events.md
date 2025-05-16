@@ -234,6 +234,13 @@ The following tables describe the type of events (or actions) that are available
 | `Pipelines.RunRetained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease ID {RetentionLeaseId} to {RetentionOwnerId}. |
 | `Pipelines.RunUnretained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained. |
 | `Pipelines.VariablesSetAtRuntime` | A run of pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}, has defined variable(s) that are not marked as "Settable at queue time".|
+| `CheckConfiguration.ApprovalCheckOrderChanged`| >A check with id {CheckId} for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" has been changed from {OriginalApprovalType} to {FinalApprovalType} |
+| `CheckConfiguration.Created`| A check of type {Type} has been added to {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Deleted`| A check of type {Type} has been removed from {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Disabled` | A check of type {Type} has been disabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Enabled`| A check of type {Type} has been enabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Updated`| A check of type {Type} has been updated for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+
 
 ### Policy events
 
