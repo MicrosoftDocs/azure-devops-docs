@@ -9,7 +9,6 @@ ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 07/12/2024
-monikerRange: 'azure-devops'
 ---
  
 # Integrate Azure Pipelines with Microsoft Teams
