@@ -27,12 +27,14 @@ Automation also helps enforce security policies and compliance requirements by m
 
 ### Overview
 
+The below table provides an overview of the key properties exchanged between the creation commands.
+
 | Step                        | Input                  | Output                  |
 |-----------------------------|------------------------|-------------------------|
 | Create identity             | `tenantId`             | `appId`, `principalId`  |
-| Create role assignment      | `principalId`          |                         |
 | Create service connection   | `appId`                | `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` |
 | Create federated credential | `appId`, `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | |
+| Create role assignment      | `principalId`          |                         |
 
 ## Create identity
 You need either an app registration or a managed identity.
@@ -70,25 +72,6 @@ The above command creates an app and service principal in Entra. The object id o
 See [az ad sp create-for-rbac](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-create-for-rbac) for more information on this command.
 
 ---
-
-## Create role assignment
-
-Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its id, als called `principalId`. The `principalId` is in the output of the command that created the identity above.
-
-```azurecli
-az role assignment create --role Contributor --scope /subscriptions/11111111-1111-1111-1111-111111111111 --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
-{
-  ...
-  "principalId": "00000000-0000-0000-0000-000000000000",
-  "principalType": "ServicePrincipal",
-  ...
-  "scope": "/subscriptions/11111111-1111-1111-1111-111111111111",
-  "type": "Microsoft.Authorization/roleAssignments",
-  ...
-}
-```
-
-See [az role assignment create](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create) for more information on this command.
 
 ## Create a service connection
 
@@ -180,3 +163,22 @@ az ad app federated-credential create --id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 
 See [az ad app federated-credential create](/cli/azure/ad/app/federated-credential?view=azure-cli-latest#az-ad-app-federated-credential-create) for more information on this command.
 
 ---
+
+## Create role assignment
+
+Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its id, als called `principalId`. The `principalId` is in the output of the command that created the identity above.
+
+```azurecli
+az role assignment create --role Contributor --scope /subscriptions/11111111-1111-1111-1111-111111111111 --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
+{
+  ...
+  "principalId": "00000000-0000-0000-0000-000000000000",
+  "principalType": "ServicePrincipal",
+  ...
+  "scope": "/subscriptions/11111111-1111-1111-1111-111111111111",
+  "type": "Microsoft.Authorization/roleAssignments",
+  ...
+}
+```
+
+See [az role assignment create](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create) for more information on this command.
