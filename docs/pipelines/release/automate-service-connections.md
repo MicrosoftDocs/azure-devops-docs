@@ -22,19 +22,19 @@ Automation also helps enforce security policies and compliance requirements by m
 
 ### Constraints
 
-- In automation, `"creationMode": "Manual"` should be used when creating service connections that need an Microsoft Entra identity. Significant Microsoft Entra privileges are required to have Azure DevOps create all objects on behalf of the caller. Instead, end-to-end automation should create each object (identity, service connection, credential, role assignment) individually.
+- In automation, `"creationMode": "Manual"` should be used when creating service connections that need an Microsoft Entra identity. Significant Microsoft Entra privileges would be required to have Azure DevOps create all objects on behalf of the caller, therefore Azure DevOps does not support the use of `"creationMode": "Automatic"` for non-user principals. Instead, end-to-end automation should create each object (identity, service connection, credential, role assignment) individually.
 - Workload identity federation defines a bi-directional relationship between the identity and service connection. As a result, objects need to be created in a certain order and the federated credential can only be created after the service connection is created. 
 
-### Overview
+### Command sequence
 
-This table provides an overview of the key properties exchanged between the creation commands.
+This table provides an overview of the key properties exchanged between the creation commands of each object.
 
-| Step                        | Input                  | Output                  |
-|-----------------------------|------------------------|-------------------------|
-| Create identity             | `tenantId`             | `appId`, `principalId`  |
-| Create service connection   | `appId`                | `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` |
-| Create federated credential | `appId`, `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | |
-| Create role assignment      | `principalId`          |                         |
+| Step                        | Input                  | Output                  | Object resided in |
+|-----------------------------|------------------------|-------------------------|-------------------|
+| Create identity             | `tenantId`             | `appId`, `principalId`  | Entra (and Azure in the case of managed identity) |
+| Create service connection   | `appId`                | `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | Azure DevOps |
+| Create federated credential | `appId`, `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | | Entra (and Azure in the case of managed identity) |
+| Create role assignment      | `principalId`          |                         | Azure |
 
 ## Login with Azure CLI
 
@@ -170,7 +170,9 @@ az identity federated-credential create --name fic-for-sc
                                         --subscription <msi-subscription-id>
 ```
 
-The managed identity does not have to be created in the same subscription that it will be granted access to in the __Create role assignment__ step. For more information about this command, see [az identity federated-credential create](/cli/azure/identity/federated-credential#az-identity-federated-credential-create).
+The managed identity does not have to be created in the same subscription that it will be granted access to in the __Create role assignment__ step. 
+
+For more information about this command, see [az identity federated-credential create](/cli/azure/identity/federated-credential#az-identity-federated-credential-create).
 
 #### [App registration](#tab/app-registration)
 
@@ -186,7 +188,7 @@ The managed identity does not have to be created in the same subscription that i
 ```
 
 ```azurecli
-az ad app federated-credential create --id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --parameters credential.json
+az ad app federated-credential create --id aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa --parameters credential.json
 ```
 
 For more information about this command, see [az ad app federated-credential create](/cli/azure/ad/app/federated-credential#az-ad-app-federated-credential-create).
