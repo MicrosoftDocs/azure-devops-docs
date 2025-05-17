@@ -36,6 +36,16 @@ This table provides an overview of the key properties exchanged between the crea
 | Create federated credential | `appId`, `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | |
 | Create role assignment      | `principalId`          |                         |
 
+## Login with Azure CLI
+
+The commands below all make use of the Azure CLI. You can log into the intended using the following command:
+
+```azurecli
+az logon -t eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee
+```
+
+See [Authenticate to Azure using Azure CLI](/cli/azure/authenticate-azure-cli).
+
 ## Create identity
 You need either an app registration or a managed identity.
 
@@ -75,7 +85,7 @@ For more information, see [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-c
 
 ## Create a service connection
 
-This example uses a configuration file to create the service connection. This configures the identity created in a new Azure service connection. The `servicePrincipalId` authorization parameter is populated with the `appId` of the identity.
+This example uses the [Azure DevOps Azure CLI extension](/azure/devops/cli) and a configuration file to create the service connection. This configures the identity created in a new Azure service connection. The `servicePrincipalId` authorization parameter is populated with the `appId` of the identity.
 
 > [!div class="tabbedCodeSnippets"]
 ```json	
@@ -132,6 +142,7 @@ For more information about this command, see [Azure DevOps CLI service endpoint]
 
 ## Create a federated identity credential
 
+
 #### [Managed identity](#tab/managed-identity)
 
 ```azurecli
@@ -147,9 +158,7 @@ For more information about this command, see [az identity federated-credential c
 
 #### [App registration](#tab/app-registration)
 
-```azurecli
-az ad app federated-credential create --id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --parameters credential.json
-("credential.json" contains the following content)
+```json	
 {
     "name": "fic-for-sc",
     "issuer": "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0",
@@ -158,6 +167,10 @@ az ad app federated-credential create --id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 
         "api://AzureADTokenExchange"
     ]
 }
+```
+
+```azurecli
+az ad app federated-credential create --id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --parameters credential.json
 ```
 
 For more information about this command, see [az ad app federated-credential create](/cli/azure/ad/app/federated-credential#az-ad-app-federated-credential-create).
