@@ -38,7 +38,7 @@ This table provides an overview of the key properties exchanged between the crea
 
 ## Login with Azure CLI
 
-The commands below all make use of the Azure CLI. You can log into the intended using the following command:
+The commands below all make use of the Azure CLI. You can log into the intended tenant using the following command:
 
 ```azurecli
 az logon -t eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee
@@ -55,6 +55,11 @@ Create a managed identity with `az identity create`.
 
 ```azurecli
 az identity create -n msi-for-sc -g rg-for-sc -o json --query '{appId:clientId,principalId:principalId}'
+```
+
+Example output:
+
+```json
 {
   "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
   "principalId": "00000000-0000-0000-0000-000000000000"
@@ -71,6 +76,11 @@ Create an app registration with `az ad sp create-for-rbac`.
 
 ```azurecli
 az ad sp show --id $(az ad sp create-for-rbac -n appreg-for-rbac --create-password false -o tsv --query appId) --query '{appId:appId,principalId:id}'
+```
+
+Example output:
+
+```json
 {
   "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
   "principalId": "00000000-0000-0000-0000-000000000000"
@@ -123,6 +133,11 @@ This example uses the [Azure DevOps Azure CLI extension](/azure/devops/cli) and 
 
 ```azurecli
 az devops service-endpoint create -service-endpoint-configuration ./ServiceConnectionGeneric.json
+```
+
+Example output:
+
+```json
 {
   "administratorsGroup": null,
   "authorization": {
@@ -155,7 +170,7 @@ az identity federated-credential create --name fic-for-sc
                                         --subscription <msi-subscription-id>
 ```
 
-For more information about this command, see [az identity federated-credential create](/cli/azure/identity/federated-credential#az-identity-federated-credential-create).
+The managed identity does not have to be created in the same subscription that it will be granted access to in the __Create role assignment__ step. For more information about this command, see [az identity federated-credential create](/cli/azure/identity/federated-credential#az-identity-federated-credential-create).
 
 #### [App registration](#tab/app-registration)
 
@@ -184,6 +199,11 @@ Add a role assignment to your managed identity or app registration with `az role
 
 ```azurecli
 az role assignment create --role Contributor --scope /subscriptions/11111111-1111-1111-1111-111111111111 --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
+```
+
+Example output:
+
+```json
 {
   ...
   "principalId": "00000000-0000-0000-0000-000000000000",
