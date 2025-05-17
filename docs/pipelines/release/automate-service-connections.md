@@ -29,12 +29,12 @@ Automation also helps enforce security policies and compliance requirements by m
 
 This table provides an overview of the key properties exchanged between the creation commands of each object.
 
-| Step                        | Input                  | Output                  | Object resided in |
-|-----------------------------|------------------------|-------------------------|-------------------|
-| Create identity             | `tenantId`             | `appId`, `principalId`  | Entra (and Azure in the case of managed identity) |
-| Create service connection   | `appId`                | `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | Azure DevOps |
-| Create federated credential | `appId`, `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | | Entra (and Azure in the case of managed identity) |
-| Create role assignment      | `principalId`          |                         | Azure |
+| Step                                          | Input                  | Output                  |
+|-----------------------------------------------|------------------------|-------------------------|
+| Create identity in Entra or Azure             | `tenantId`             | `appId`, `principalId`  |
+| Create service connection in Azure DevOps     | `appId`                | `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` |
+| Create federated credential in Entra or Azure | `appId`, `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | |
+| Create role assignment in Azure               | `principalId`          |                         |
 
 ## Login with Azure CLI
 
