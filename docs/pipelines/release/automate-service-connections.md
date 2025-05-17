@@ -41,7 +41,7 @@ This table provides an overview of the key properties exchanged between the crea
 The commands below all make use of the Azure CLI. You can log into the intended tenant using the following command:
 
 ```azurecli
-az logon -t eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee
+az login -t eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee
 ```
 
 See [Authenticate to Azure using Azure CLI](/cli/azure/authenticate-azure-cli).
@@ -54,7 +54,7 @@ You need either an app registration or a managed identity.
 Create a managed identity with `az identity create`. 
 
 ```azurecli
-az identity create -n msi-for-sc -g rg-for-sc -o json --query '{appId:clientId,principalId:principalId}'
+az identity create -n msi-for-sc -g rg-for-sc --query '{appId:clientId,principalId:principalId}'
 ```
 
 Example output:
@@ -132,24 +132,18 @@ This example uses the [Azure DevOps Azure CLI extension](/azure/devops/cli) and 
 ```
 
 ```azurecli
-az devops service-endpoint create -service-endpoint-configuration ./ServiceConnectionGeneric.json
+az devops service-endpoint create -service-endpoint-configuration ./ServiceConnectionGeneric.json --query authorization.parameters
 ```
 
 Example output:
 
 ```json
 {
-  "administratorsGroup": null,
-  "authorization": {
-    "parameters": {
-      "serviceprincipalid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
-      "tenantid": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
-      "workloadIdentityFederationIssuer": "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0",
-      "workloadIdentityFederationSubject": "<federation-subject>"
-    },
-    "scheme": "WorkloadIdentityFederation"
-  },
-  ...
+  "serviceprincipalid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+  "tenantid": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
+  "workloadIdentityFederationIssuer": "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0",
+  "workloadIdentityFederationIssuerType": "EntraID",
+  "workloadIdentityFederationSubject": "<federation-subject>"
 }
 ```
 
