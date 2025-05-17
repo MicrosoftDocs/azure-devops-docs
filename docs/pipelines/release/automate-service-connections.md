@@ -142,6 +142,7 @@ For more information about this command, see [Azure DevOps CLI service endpoint]
 
 ## Create a federated identity credential
 
+This creates a federated credential with the `workloadIdentityFederationIssuer` and `workloadIdentityFederationSubject` output from the __Create a service connection__ step
 
 #### [Managed identity](#tab/managed-identity)
 
