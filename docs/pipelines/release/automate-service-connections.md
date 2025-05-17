@@ -25,9 +25,9 @@ Automation also helps enforce security policies and compliance requirements by m
 - In automation, `"creationMode": "Manual"` should be used when creating service connections that need an Microsoft Entra identity. Significant Microsoft Entra privileges would be required to have Azure DevOps create all objects on behalf of the caller, therefore Azure DevOps does not support the use of `"creationMode": "Automatic"` for non-user principals. Instead, end-to-end automation should create each object (identity, service connection, credential, role assignment) individually.
 - Workload identity federation defines a bi-directional relationship between the identity and service connection. As a result, objects need to be created in a certain order and the federated credential can only be created after the service connection is created. 
 
-### Command sequence
+### Command execution order
 
-This table provides an overview of the key properties exchanged between the creation commands of each object.
+This table provides an overview of the key properties exchanged between the creation commands of each object. Dependencies on output determine the order of execution.
 
 | Step                                          | Input                  | Output                  |
 |-----------------------------------------------|------------------------|-------------------------|
@@ -38,7 +38,7 @@ This table provides an overview of the key properties exchanged between the crea
 
 ## Login with Azure CLI
 
-The commands below all make use of the Azure CLI. You can log into the intended tenant using the following command:
+The creation commands below all make use of the Azure CLI. You can log into the intended tenant using the following command:
 
 ```azurecli
 az login -t eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee
@@ -47,6 +47,7 @@ az login -t eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee
 See [Authenticate to Azure using Azure CLI](/cli/azure/authenticate-azure-cli).
 
 ## Create identity
+
 You need either an app registration or a managed identity.
 
 #### [Managed identity](#tab/managed-identity)
@@ -147,7 +148,7 @@ Example output:
 }
 ```
 
-For more information about this command, see [Azure DevOps CLI service endpoint](../../cli/service-endpoint.md).
+For more information about this command, see [Azure DevOps CLI service endpoint](/azure/devops/cli/service-endpoint.md).
 
 ## Create a federated identity credential
 
@@ -164,6 +165,8 @@ az identity federated-credential create --name fic-for-sc
                                         --subscription <msi-subscription-id>
 ```
 
+Note: add a line continuation character (Bash: backslash, PowerShell: backquote) at the end of a line that does not complete the command.
+
 The managed identity does not have to be created in the same subscription that it will be granted access to in the __Create role assignment__ step. 
 
 For more information about this command, see [az identity federated-credential create](/cli/azure/identity/federated-credential#az-identity-federated-credential-create).
@@ -172,12 +175,12 @@ For more information about this command, see [az identity federated-credential c
 
 ```json	
 {
-    "name": "fic-for-sc",
-    "issuer": "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0",
-    "subject": "<federation-subject>",
-    "audiences": [
-        "api://AzureADTokenExchange"
-    ]
+  "name": "fic-for-sc",
+  "issuer": "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0",
+  "subject": "<federation-subject>",
+  "audiences": [
+    "api://AzureADTokenExchange"
+  ]
 }
 ```
 
@@ -191,24 +194,10 @@ For more information about this command, see [az ad app federated-credential cre
 
 ## Create role assignment
 
-Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its ID, also called `principalId`. The `principalId` is in the output of the command that created the identity above.
+Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its ID, also called `principalId`. The `principalId` is in the output of the __Create identity__ command above.
 
 ```azurecli
 az role assignment create --role Contributor --scope /subscriptions/11111111-1111-1111-1111-111111111111 --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
-```
-
-Example output:
-
-```json
-{
-  ...
-  "principalId": "00000000-0000-0000-0000-000000000000",
-  "principalType": "ServicePrincipal",
-  ...
-  "scope": "/subscriptions/11111111-1111-1111-1111-111111111111",
-  "type": "Microsoft.Authorization/roleAssignments",
-  ...
-}
 ```
 
 For more information on this command, see [az role assignment create](/cli/azure/role/assignment#az-role-assignment-create).
