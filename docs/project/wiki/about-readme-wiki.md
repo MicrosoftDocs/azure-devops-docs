@@ -30,7 +30,7 @@ The following links describe the supported features for a team project wiki.
    :::column span="":::
    **Create new wiki**
 
-   - [Create wiki for project](wiki-create-repo.md)
+   - [Create new project wiki](wiki-create-repo.md)
    - [Publish code as wiki](publish-repo-to-wiki.md)
    :::column-end:::
 
@@ -38,7 +38,7 @@ The following links describe the supported features for a team project wiki.
    **Work with wiki content**
 
    - [Add and edit pages](add-edit-wiki.md)
-   - [View page history and revert](wiki-view-history.md)
+   - [View page history or revert](wiki-view-history.md)
    - [Clone and update offline](wiki-update-offline.md)
    - [Use keyboard shortcuts](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts)
    - [Filter or print content](filter-print-wiki.md) <br> (_Print feature might not be available in Firefox browser_)
@@ -47,13 +47,13 @@ The following links describe the supported features for a team project wiki.
    :::column span="":::
    **Format wiki content**
 
-   - [Markdown format](markdown-guidance.md)
-   - [HTML tags](markdown-guidance.md#html)
+   - [Use Markdown format](markdown-guidance.md)
+   - [Define HTML tags](markdown-guidance.md#html)
    - [Insert and resize images](markdown-guidance.md#images)
-   - [Link to items with hash (#)](markdown-guidance.md#link-work-items)
+   - [Link with hash tag (#)](markdown-guidance.md#link-work-items)
    - [Attach files](markdown-guidance.md#attach)
-   - [Mathematical notation](markdown-guidance.md#math-notation)
-   - [Table of contents (TOC)](markdown-guidance.md#toc-wiki)
+   - [Use mathematical notation](markdown-guidance.md#math-notation)
+   - [Add Table of contents (TOC)](markdown-guidance.md#toc-wiki)
    :::column-end:::
 
 :::row-end:::
