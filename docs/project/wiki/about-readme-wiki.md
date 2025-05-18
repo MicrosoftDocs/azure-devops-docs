@@ -30,30 +30,30 @@ The following table provides links to resources about the supported features for
    :::column span="":::
    **Create a new wiki**
 
-   [Create a wiki for your team project](wiki-create-repo.md) <br><br>
-   [Publish code as wiki](publish-repo-to-wiki.md)
+   - [Create a wiki for your team project](wiki-create-repo.md)
+   - [Publish code as wiki](publish-repo-to-wiki.md)
    :::column-end:::
 
    :::column span="":::
    **Work with wiki content**
 
-   [Add and edit wiki pages](add-edit-wiki.md) <br><br>
-   [View wiki page history and revert](wiki-view-history.md) <br><br>
-   [Clone and update wiki content offline](wiki-update-offline.md) <br><br>
-   [Use wiki keyboard shortcuts](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts) <br><br>
-   [Filter or print wiki content](filter-print-wiki.md) (Print feature might not be available in Firefox browser.)
+   - [Add and edit wiki pages](add-edit-wiki.md) <!-- br -->
+   - [View wiki page history and revert](wiki-view-history.md) <!-- br -->
+   - [Clone and update wiki content offline](wiki-update-offline.md) <!-- br -->
+   - [Use wiki keyboard shortcuts](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts) <!-- br -->
+   - [Filter or print wiki content](filter-print-wiki.md) <br> (_The Print feature might not be available in the Firefox browser._)
    :::column-end:::
 
    :::column span="":::
    **Format wiki content**
 
-   [Markdown format](markdown-guidance.md) <br><br>
-   [HTML tags](markdown-guidance.md#html) <br><br>
-   [Insert and resize images](markdown-guidance.md#images) <br><br>
-   [Link to work items using #](markdown-guidance.md#link-work-items) <br><br>
-   [Attach files](markdown-guidance.md#attach) <br><br>
-   [Mathematical notation and characters](markdown-guidance.md#math-notation) <br><br>
-   [Table of contents (TOC) for wiki pages](markdown-guidance.md#toc-wiki)
+   - [Markdown format](markdown-guidance.md) <!-- br -->
+   - [HTML tags](markdown-guidance.md#html) <!-- br -->
+   - [Insert and resize images](markdown-guidance.md#images) <!-- br -->
+   - [Link to work items using #](markdown-guidance.md#link-work-items) <!-- br -->
+   - [Attach files](markdown-guidance.md#attach) <!-- br -->
+   - [Mathematical notation and characters](markdown-guidance.md#math-notation) <!-- br -->
+   - [Table of contents (TOC) for wiki pages](markdown-guidance.md#toc-wiki)
    :::column-end:::
 
 :::row-end:::
