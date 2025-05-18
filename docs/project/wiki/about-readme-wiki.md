@@ -31,7 +31,7 @@ The following links describe the supported features for a team project wiki.
    **Create new wiki**
 
    - [Create new project wiki](wiki-create-repo.md)
-   - [Publish code as wiki](publish-repo-to-wiki.md)
+   - [Publish project code as wiki](publish-repo-to-wiki.md)
    :::column-end:::
 
    :::column span="":::
@@ -50,8 +50,8 @@ The following links describe the supported features for a team project wiki.
    - [Use Markdown format](markdown-guidance.md)
    - [Define HTML tags](markdown-guidance.md#html)
    - [Insert and resize images](markdown-guidance.md#images)
-   - [Link with hash tag (#)](markdown-guidance.md#link-work-items)
-   - [Attach files](markdown-guidance.md#attach)
+   - [Link with hash tags (#)](markdown-guidance.md#link-work-items)
+   - [Attach files or artifacts](markdown-guidance.md#attach)
    - [Use mathematical notation](markdown-guidance.md#math-notation)
    - [Add Table of contents (TOC)](markdown-guidance.md#toc-wiki)
    :::column-end:::
