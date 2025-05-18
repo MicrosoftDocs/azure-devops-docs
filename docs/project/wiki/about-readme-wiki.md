@@ -23,36 +23,36 @@ You can support your team and project contributors by using [Markdown](https://e
 
 A team project wiki lets you share information about your project with other team members. When you set up a wiki from scratch, a new Git repository stores your Markdown (_.md_) files, images, attachments, and sequence of pages. The wiki supports collaborative editing of its content and structure.
 
-The following table provides links to resources about the supported features for a team project wiki.
+The following links describe the supported features for a team project wiki.
 
 :::row:::
 
    :::column span="":::
-   **Create a new wiki**
+   **Create new wiki**
 
-   - [Create a wiki for your team project](wiki-create-repo.md)
+   - [Create wiki for team project](wiki-create-repo.md)
    - [Publish code as wiki](publish-repo-to-wiki.md)
    :::column-end:::
 
    :::column span="":::
    **Work with wiki content**
 
-   - [Add and edit wiki pages](add-edit-wiki.md) <!-- br -->
-   - [View wiki page history and revert](wiki-view-history.md) <!-- br -->
-   - [Clone and update wiki content offline](wiki-update-offline.md) <!-- br -->
-   - [Use wiki keyboard shortcuts](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts) <!-- br -->
-   - [Filter or print wiki content](filter-print-wiki.md) <br> (_The Print feature might not be available in the Firefox browser._)
+   - [Add and edit wiki pages](add-edit-wiki.md)
+   - [View wiki page history and revert](wiki-view-history.md)
+   - [Clone and update wiki content offline](wiki-update-offline.md)
+   - [Use wiki keyboard shortcuts](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts)
+   - [Filter or print wiki content](filter-print-wiki.md) <br> (_Print feature might not be available in Firefox browser_)
    :::column-end:::
 
    :::column span="":::
    **Format wiki content**
 
-   - [Markdown format](markdown-guidance.md) <!-- br -->
-   - [HTML tags](markdown-guidance.md#html) <!-- br -->
-   - [Insert and resize images](markdown-guidance.md#images) <!-- br -->
-   - [Link to work items using #](markdown-guidance.md#link-work-items) <!-- br -->
-   - [Attach files](markdown-guidance.md#attach) <!-- br -->
-   - [Mathematical notation and characters](markdown-guidance.md#math-notation) <!-- br -->
+   - [Markdown format](markdown-guidance.md)
+   - [HTML tags](markdown-guidance.md#html)
+   - [Insert and resize images](markdown-guidance.md#images)
+   - [Link to work items with hash (#)](markdown-guidance.md#link-work-items)
+   - [Attach files](markdown-guidance.md#attach)
+   - [Mathematical notation and characters](markdown-guidance.md#math-notation)
    - [Table of contents (TOC) for wiki pages](markdown-guidance.md#toc-wiki)
    :::column-end:::
 
