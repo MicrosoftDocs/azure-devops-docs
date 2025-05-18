@@ -30,18 +30,18 @@ The following links describe the supported features for a team project wiki.
    :::column span="":::
    **Create new wiki**
 
-   - [Create wiki for team project](wiki-create-repo.md)
+   - [Create wiki for project](wiki-create-repo.md)
    - [Publish code as wiki](publish-repo-to-wiki.md)
    :::column-end:::
 
    :::column span="":::
    **Work with wiki content**
 
-   - [Add and edit wiki pages](add-edit-wiki.md)
-   - [View wiki page history and revert](wiki-view-history.md)
-   - [Clone and update wiki content offline](wiki-update-offline.md)
-   - [Use wiki keyboard shortcuts](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts)
-   - [Filter or print wiki content](filter-print-wiki.md) <br> (_Print feature might not be available in Firefox browser_)
+   - [Add and edit pages](add-edit-wiki.md)
+   - [View page history and revert](wiki-view-history.md)
+   - [Clone and update offline](wiki-update-offline.md)
+   - [Use keyboard shortcuts](../navigation/keyboard-shortcuts.md#wiki-keyboard-shortcuts)
+   - [Filter or print content](filter-print-wiki.md) <br> (_Print feature might not be available in Firefox browser_)
    :::column-end:::
 
    :::column span="":::
@@ -50,10 +50,10 @@ The following links describe the supported features for a team project wiki.
    - [Markdown format](markdown-guidance.md)
    - [HTML tags](markdown-guidance.md#html)
    - [Insert and resize images](markdown-guidance.md#images)
-   - [Link to work items with hash (#)](markdown-guidance.md#link-work-items)
+   - [Link to items with hash (#)](markdown-guidance.md#link-work-items)
    - [Attach files](markdown-guidance.md#attach)
-   - [Mathematical notation and characters](markdown-guidance.md#math-notation)
-   - [Table of contents (TOC) for wiki pages](markdown-guidance.md#toc-wiki)
+   - [Mathematical notation](markdown-guidance.md#math-notation)
+   - [Table of contents (TOC)](markdown-guidance.md#toc-wiki)
    :::column-end:::
 
 :::row-end:::
