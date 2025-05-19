@@ -36,12 +36,27 @@ In this example, all files will be ignored except for those located in the *src/
 !src/MyApp/bin/Release/**.*
 ```
 
+To include multiple files or folders when everything else is excluded, start with a blanket exclude pattern `(**/*)`, then add one `!` prefixed rule for each file or directory you want to keep. In the example below, the `dist` folder and all its contents along with `package.json` and `.npmrc` are included:
+
+```artifactignore
+# Exclude everything
+**/*
+
+# Re-include the top-level dist folder, its contents, and the specific files
+!dist/
+!dist/**
+!package.json
+!.npmrc
+```
+
 > [!IMPORTANT]
 > The *.artifactignore* file must be placed in the directory specified in the `targetPath` argument in your [Publish Pipeline Artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
 
 ## Related content
 
 - [Publish and download pipeline artifacts](../../pipelines/artifacts/pipeline-artifacts.md)
+
 - [Publish and download Universal Packages](../../pipelines/artifacts/universal-packages.md)
+
 - [Artifact sources](../../pipelines/release/artifacts.md)
 
