@@ -18,6 +18,13 @@ Use automation to create Azure Resource Manager service connections with workloa
 
 Automation also helps enforce security policies and compliance requirements by making sure service connections use the right permissions and configurations. It also serves as documentation for the setup process.
 
+## Prerequisites
+
+| **Product** | **Requirements**   |
+|---|---|
+| **Azure DevOps** | - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/). **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: To create an identity in Azure or Entra: you must have *User Access Administrator* or *Role Based Access Control Administrator* permissions, or higher. These roles allow you to manage access and assign roles necessary for creating identities. For more details, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles).|
+
 ## Process
 
 ### Constraints
@@ -41,21 +48,21 @@ This table provides an overview of the key properties exchanged between the crea
 The creation commands below all make use of the Azure CLI. You can log into the intended tenant using the following command:
 
 ```azurecli
-az login -t eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee
+az login --tenant TENANT_ID
 ```
 
 See [Authenticate to Azure using Azure CLI](/cli/azure/authenticate-azure-cli).
 
 ## Create identity
 
-You need either an app registration or a managed identity.
+Create an identity with either an app registration or a managed identity.
 
 #### [Managed identity](#tab/managed-identity)
 
 Create a managed identity with `az identity create`. 
 
 ```azurecli
-az identity create -n msi-for-sc -g rg-for-sc --query '{appId:clientId,principalId:principalId}'
+az identity create --name MyIdentity --resource-group MyResourceGroup --query '{appId:clientId,principalId:principalId}'
 ```
 
 Example output:
@@ -102,7 +109,7 @@ This example uses the [Azure DevOps Azure CLI extension](/azure/devops/cli) and 
 ```json	
 {
   "data": {
-    "subscriptionId": "11111111-1111-1111-1111-111111111111",
+    "subscriptionId": "SUBSCRIPTION_ID",
     "subscriptionName": "My Azure Subscription",
     "environment": "AzureCloud",
     "scopeLevel": "Subscription",
@@ -113,8 +120,8 @@ This example uses the [Azure DevOps Azure CLI extension](/azure/devops/cli) and 
   "url": "https://management.azure.com/",
   "authorization": {
     "parameters": {
-      "tenantid": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
-      "serviceprincipalid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+      "tenantid": "TENANT_ID",
+      "serviceprincipalid": "<Service Principal ID>"
     },
     "scheme": "WorkloadIdentityFederation"
   },
@@ -140,9 +147,9 @@ Example output:
 
 ```json
 {
-  "serviceprincipalid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
-  "tenantid": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
-  "workloadIdentityFederationIssuer": "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0",
+  "serviceprincipalid": "<Service Principal ID>",
+  "tenantid": "TENANT_ID",
+  "workloadIdentityFederationIssuer": "https://login.microsoftonline.com/TENANT_ID/v2.0",
   "workloadIdentityFederationIssuerType": "EntraID",
   "workloadIdentityFederationSubject": "<federation-subject>"
 }
@@ -158,11 +165,11 @@ This creates a federated credential with the `workloadIdentityFederationIssuer` 
 
 ```azurecli
 az identity federated-credential create --name fic-for-sc 
-                                        --identity-name msi-for-sc  
-                                        --resource-group rg-for-sc 
-                                        --issuer "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0" 
+                                        --identity-name MyIdentity  
+                                        --resource-group MyResourceGroup 
+                                        --issuer "https://login.microsoftonline.com/TENANT_ID/v2.0" 
                                         --subject "<federation-subject>" 
-                                        --subscription <msi-subscription-id>
+                                        --subscription MSI_SUBSCRIPTION_ID
 ```
 
 Note: add a line continuation character (Bash: backslash, PowerShell: backquote) at the end of a line that does not complete the command.
@@ -176,7 +183,7 @@ For more information about this command, see [az identity federated-credential c
 ```json	
 {
   "name": "fic-for-sc",
-  "issuer": "https://login.microsoftonline.com/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee/v2.0",
+  "issuer": "https://login.microsoftonline.com/TENANT_ID/v2.0",
   "subject": "<federation-subject>",
   "audiences": [
     "api://AzureADTokenExchange"
@@ -197,7 +204,7 @@ For more information about this command, see [az ad app federated-credential cre
 Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its ID, also called `principalId`. The `principalId` is in the output of the __Create identity__ command above.
 
 ```azurecli
-az role assignment create --role Contributor --scope /subscriptions/11111111-1111-1111-1111-111111111111 --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
+az role assignment create --role Contributor --scope /subscriptions/SUBSCRIPTION_ID --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
 ```
 
 For more information on this command, see [az role assignment create](/cli/azure/role/assignment#az-role-assignment-create).
