@@ -98,6 +98,7 @@ You can apply the following customizations to your process:
 * [Add up to five portfolio backlogs](../../../../reference/add-portfolio-backlogs.md)
 * [Add categories](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types) that you use in your process configuration
 * [Modify process configuration](../../../../reference/xml/process-configuration-xml-element.md)
+* Add global lists
 
 ## Differences
 
