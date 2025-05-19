@@ -2,7 +2,7 @@
 title: Link work items to objects
 titleSuffix: Azure Boards
 description: Learn how to link work items to user stories, bugs, remote work items, a git branch, and other elements in Azure Boards.
-ms.custom: cross-project, devx-track-azurecli, engagement-fy24, peer-review
+ms.custom: cross-project, devx-track-azurecli, engagement-fy24, peer-review-program
 ms.service: azure-devops-boards
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/08/2025
+ms.date: 05/08/2025
 #customer intent: As a team member, I want to understand how links between work items and other elements operate and help project planning and development.
 ---
 
