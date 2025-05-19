@@ -148,7 +148,7 @@ Example output:
 }
 ```
 
-For more information about this command, see [Azure DevOps CLI service endpoint](/azure/devops/cli/service-endpoint.md).
+For more information about this command, see [Azure DevOps CLI service endpoint](/azure/devops/cli/service-endpoint).
 
 ## Create a federated identity credential
 
