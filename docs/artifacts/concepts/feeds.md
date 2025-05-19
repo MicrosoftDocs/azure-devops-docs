@@ -2,6 +2,7 @@
 title: What are Azure Artifacts feeds?
 description: Understand the differences between project-scoped and organization-scoped Azure Artifacts feeds. Learn the steps to create, delete, and restore feeds. 
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
+ms.custom: peer-review-program
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 06/03/2024
