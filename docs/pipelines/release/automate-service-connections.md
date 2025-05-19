@@ -23,7 +23,7 @@ Automation also helps enforce security policies and compliance requirements by m
 | **Product** | **Requirements**   |
 |---|---|
 | **Azure DevOps** | - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
-| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/).<br> **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: To create an identity in Azure or Microsoft Entra: you must have *User Access Administrator* or *Role Based Access Control Administrator* permissions, or higher. These roles allow you to manage access and assign roles necessary for creating identities. For more information, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles).|
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/).<br> **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create an identity in Azure or Microsoft Entra: you must have *User Access Administrator* or *Role Based Access Control Administrator* permissions, or higher. These roles allow you to manage access and assign roles necessary for creating identities. For more information, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles).|
 
 ## Process
 
