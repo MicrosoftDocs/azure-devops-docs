@@ -7,17 +7,18 @@ ms.topic: include
 
 ### Support for YAML pipelines in Test Plans
 
-In addition to Classic pipelines, utilize also your YAML pipelines when configuring your Test Plans or executing automated tests from Test Plans.
+In addition to Classic pipelines, you can now use your YAML pipelines when configuring your Test Plans or executing automated tests from Test Plans.
 
-Dev community requests:
-https://dev.azure.com/mseng/AzureDevOps/_workitems/edit/2106005
-https://dev.azure.com/mseng/AzureDevOps/_workitems/edit/1935585
+This request was prioritized based on the following Developer Community suggestion tickets. 
+* [Allow YAML pipeline to use in test plan settings](https://developercommunity.visualstudio.com/t/Allow-YAML-pipeline-to-use-in-test-plan-/10469981)
+* [Run automated tests from Azure Test Plans using YAML pipeline](https://developercommunity.visualstudio.com/t/Run-automated-tests-from-Azure-Test-Plan/10002983)
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of code coverage.](../../media/256-testplans-01.png "Screenshot of code coverage")](../../media/256-testplans-01.png)
-### View Recent Test Results in Test Case
 
-We’ve added a new “Recent Test Results” section to the test case work item, making it easier to monitor test progress without switching views or navigating through test plans. 
+### View recent test results in Test Case
+
+We’ve added a new **Recent test results** section to the test case work item, making it easier to monitor test progress without switching views or navigating through test plans. 
 
 With this update, you can: 
 

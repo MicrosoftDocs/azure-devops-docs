@@ -5,7 +5,7 @@ ms.date: 5/19/2025
 ms.topic: include
 ---
 
-### Available Data for Rollup Columns in Backlog
+### Rollup columns data available in backlog
 
 We’ve updated rollup columns to show the most recent available data. Previously, these columns could appear blank for frequently updated work items, causing confusion. You’ll also see a timestamp indicating when the data was last refreshed.
 

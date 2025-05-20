@@ -5,4 +5,4 @@ ms.date: 5/19/2025
 ms.topic: include
 ---
 
-- [Available Data for Rollup Columns in Backlog](#available-data-for-rollup-columns-in-backlog)
+- [Rollup columns data available in backlog](#rollup-columns-data-available-in-backlog)

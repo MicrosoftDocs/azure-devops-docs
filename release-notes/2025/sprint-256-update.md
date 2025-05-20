@@ -1,12 +1,15 @@
 ---
-title: TBD
+title: Addressed multiple requests from the Developer Community 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 5/19/2025
-description: TBD
+description: Addressed multiple requests from the Developer Community
 ---
-# TBD
+# Addressed multiple requests from the Developer Community
 
+In response to your feedback, we have prioritized multiple features in Test Plans and Repos. In Test Plans, you can now use your YAML pipelines while configuring or executing automated Test Plans. In addition, we've added a new recent test results section to the test case work item to make it easier to monitor test progress without switching or navigating through test plans. 
+
+In Repos, we've added support for diffing .ipynb files in PRs to the Jupyter Notebook extension. 
 
 Check out the release notes for details.
 
