@@ -669,7 +669,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Test Plans</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-unittest-robot" data-raw-source="[Support for Python (UnitTest & Robot) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-unittest-robot)">Support for Python (UnitTest & Robot) in Azure Test Plans</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-unittest-robot" data-raw-source="[Support for Python (UnitTest & Robot) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-unittest-robot)">Support for Python (UnitTest & Robot) in Azure Test Plans</a></td>
          <td>Test Plans</td>
       </tr>
       <tr>
@@ -913,7 +913,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Test Plans</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-unittest-robot" data-raw-source="[Support for Python (UnitTest & Robot) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-unittest-robot)">Support for Python (UnitTest & Robot) in Azure Test Plans</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-unittest-robot" data-raw-source="[Support for Python (UnitTest & Robot) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-unittest-robot)">Support for Python (UnitTest & Robot) in Azure Test Plans</a></td>
          <td>Test Plans</td>
       </tr>
       <tr>

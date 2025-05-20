@@ -1,6 +1,6 @@
 ---
 title: Support for Java (Playwright) in Azure Test Plans
-author: alexpysanets
+author: battle-born
 ms.author: alexpysanets
 ms.date: 04/22/2025
 ms.topic: article

@@ -14,7 +14,7 @@ https://dev.azure.com/mseng/AzureDevOps/_workitems/edit/2106005
 https://dev.azure.com/mseng/AzureDevOps/_workitems/edit/1935585
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of code coverage.](../../media/256-testplans-01.png "Screenshot of code coverage")](../../media/256-testplans-01.png#lightbox)
+> [![Screenshot of code coverage.](../../media/256-testplans-01.png "Screenshot of code coverage")](../../media/256-testplans-01.png)
 ### View Recent Test Results in Test Case
 
 We’ve added a new “Recent Test Results” section to the test case work item, making it easier to monitor test progress without switching views or navigating through test plans. 
@@ -26,5 +26,5 @@ With this update, you can:
 * Access the full execution history in one click for deeper analysis 
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of view recent test results.](../../media/256-testplans-02.png "Screenshot of view recent test results")](../../media/256-testplans-02.png#lightbox)
+> [![Screenshot of view recent test results.](../../media/256-testplans-02.png "Screenshot of view recent test results")](../../media/256-testplans-02.png)
 These enhancements streamline test review and support requirement-based traceability by keeping execution insights close to where your test cases live. This feature will roll out gradually and become available in the coming weeks. Give it a try, and let us know via [email](mailto:adocustomerfeedback@service.microsoft.com) what you think!

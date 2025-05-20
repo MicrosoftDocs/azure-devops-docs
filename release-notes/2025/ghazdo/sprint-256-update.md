@@ -2,7 +2,7 @@
 title: Azure DevOps release notes - GitHub Advanced Security for Azure DevOps 256 Update
 description: See the Sprint 256 feature updates for GitHub Advanced Security for Azure DevOps, including next steps.
 author: gloridelmorales
-ms.author: glmorales
+ms.author: glmorale
 ms.date: 5/19/2025
 ---
 
