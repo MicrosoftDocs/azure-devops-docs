@@ -63,14 +63,14 @@ Create an identity using an app registration or a managed identity.
 Create a managed identity with `az identity create`. 
 
 ```azurecli
-az identity create --name MyIdentity --resource-group MyResourceGroup --query '{appId:clientId,principalId:principalId}'
+az identity create --name MyIdentity --resource-group MyResourceGroup --query '{clientId:clientId,principalId:principalId}'
 ```
 
 Example output:
 
 ```json
 {
-  "appId": "APP_ID",
+  "clientId": "APP_ID",
   "principalId": "PRINCIPAL_ID"
 }
 ```
