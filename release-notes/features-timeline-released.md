@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 9/4/2024
+ms.date: 5/19/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,15 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="7"><a href="2025/sprint-256-update.md" data-raw-source="[19 May 2025](2025/sprint-256-update.md)"> May 19 2025</a></td>
+    <td>Advanced Security now accepts results with URI locations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>GitHub Integration: Pull Request Mentions</td><td>Boards</td><td>Future</td></tr>
+    <td>Windows Server 2019 hosted image deprecation schedule</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Support for Jupyter Notebook Diffing in PR</td><td>Repos</td><td>Future</td></tr>
+    <td>Support for YAML pipelines in Test Plans</td><td>Test Plans</td><td>Future</td></tr>
+    <td>View Recent Test Results in Test Case</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Available Data for Rollup Columns in backlog</td><td>Reporting</td><td>Future</td></tr>
 <tr>
     <td rowspan="3"><a href="2025/sprint-255-update.md" data-raw-source="[23 April 2025](2025/sprint-255-update.md)"> 23 April 2025</a></td>
     <td>Manage high privilege scopes, pipeline decorators, and unpublished extensions</td><td>General</td><td>Future</td></tr>

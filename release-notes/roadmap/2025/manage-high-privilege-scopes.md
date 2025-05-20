@@ -1,6 +1,6 @@
 ---
 title: Manage high privilege scopes, pipeline decorators, and unpublished extensions
-author: alexpysanets
+author: battle-born
 ms.author: alexpysanets
 ms.date: 04/22/2025
 ms.topic: article
