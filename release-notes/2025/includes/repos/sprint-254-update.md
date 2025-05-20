@@ -28,7 +28,7 @@ To create new policies using Visual Studio project administrator should open **S
 > [!div class="mx-imgBorder"]
 > [![Screenshot of before fix](../../media/254-repos-01.png "Screenshot of before fix")](../../media/254-repos-01.png#lightbox)
 
-2. If you're using custom implementation of `Microsoft.TeamFoundationServer.ExtendedClient` to communicate with server, please follow the [migration guide](https://learn.microsoft.com/azure/devops/repos/tfvc/tfvc-check-in-policy-migrate-guide?view=azure-devops).
+2. If you're using custom implementation of `Microsoft.TeamFoundationServer.ExtendedClient` to communicate with server, please follow the [migration guide](/azure/devops/repos/tfvc/tfvc-check-in-policy-migrate-guide).
 
 
 
