@@ -42,7 +42,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Advanced Security now accepts results with URI locations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>GitHub Integration: Pull Request Mentions</td><td>Boards</td><td>Future</td></tr>
     <td>Windows Server 2019 hosted image deprecation schedule</td><td>Pipelines</td><td>N/A</td></tr>
-    <td>Support for Jupyter Notebook Diffing in PR</td><td>Boards</td><td>Future</td></tr>
+    <td>Support for Jupyter Notebook Diffing in PR</td><td>Repos</td><td>Future</td></tr>
     <td>Support for YAML pipelines in Test Plans</td><td>Test Plans</td><td>Future</td></tr>
     <td>View Recent Test Results in Test Case</td><td>Test Plans</td><td>Future</td></tr>
     <td>Available Data for Rollup Columns in backlog</td><td>Reporting</td><td>Future</td></tr>
