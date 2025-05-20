@@ -7,7 +7,7 @@ ms.custom: UpdateFrequency3
 ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
-ms.date: 12/07/2018
+ms.date: 01/28/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,16 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../includes/version-vs-gt-2015.md)]
 
-Consider using Visual Studio to associate automated tests with a test case when:
-
-* You created a manual test case that you later decide is a good test
-  to automate, but you still want to be able to run that test as part of a test plan.
-  Tests can be run in the CI/CD pipeline by choosing the test plan or test suite
-  in the settings of the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task. Automated tests can also be run from the **Test Plans** web portal.
-  If you're using XAML builds, you can also [run these automated tests by using Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager).
-* You want to enable end-to-end traceability of requirements.
-  If your test cases are linked to requirements or user stories,
-  the results of the test execution can be used to establish the quality of those requirements. 
+Associating automated tests with test cases can enhance your testing process by providing better traceability and integration with your CI/CD pipeline. This article guides you through the scenarios where associating automated tests with test cases is beneficial and how to do it effectively.
 
 ## Prerequisites
 
@@ -35,14 +26,21 @@ Consider using Visual Studio to associate automated tests with a test case when:
 
 Do the following steps to create a test project and build pipeline.
 
-1. Create a test project containing your automated test. [What types of tests are supported?](#test-types)
+1. Create a test project containing your automated test. For more information, see [what types of tests are supported](#test-types).
 1. Check your test project into an Azure DevOps.
-1. Create a build pipeline for your project and ensure that it contains the automated test.
-   [What are the differences if I'm still using a XAML build?](#xaml-build)
+2. Create a build pipeline for your project and ensure that it contains the automated test. For more information, see [what the differences are if you're still using a XAML build](#xaml-build).
 
 <a name="add-test"></a>
 
-## Associate your test  
+## Associate your automated test in Visual Studio  
+
+Consider using Visual Studio to associate automated tests with a test case in the following scenarios:
+
+- **Automating manual test cases**: If you created a manual test case that you later decide is a good candidate for automation, but you still want to run it as part of a test plan. You can run these tests in the CI/CD pipeline by selecting the test plan or test suite in the settings of the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task. You can also run automated tests from the **Test Plans** web portal. If you're using XAML builds, you can [run these automated tests using Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager).
+
+- **Enabling end-to-end traceability**: If your test cases are linked to requirements or user stories, you can use the results of the test execution to establish the quality of those requirements.
+
+Do the following steps to associate your automated test with a test case in Visual Studio.
 
 1. Open your solution in Visual Studio Enterprise or Professional 2017 or a later version.
 2. If you don't know the identifier of the work item for the test case,
@@ -55,16 +53,16 @@ Do the following steps to create a test project and build pipeline.
    - If your tests aren't displayed in **Test Explorer**, build the solution.
    - In **Test Explorer**, select the test method you want to associate and choose **Associate to Test Case**.
    - In the dialog that opens, type the test case identifier and choose **Add Association**, then choose **Save**.
-
-    ![Screenshot showing associating automation with test case.](media/associate-automated-test-with-test-case/test-explorer-associate.png)
-
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot showing associating automation with test case.](media/associate-automated-test-with-test-case/test-explorer-associate.png)
+    
    The dialog shows a list of test cases currently associated with the selected test method.
    You can't associate more than one test method with a test case, but you can associate a
    test method with more than one test case. 
 
-   If you're using the build and release services in Azure DevOps, not a [XAML build](#xaml-build), you can run associated tests in the build and release pipelines by using the[Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task. You _can't_ run tests on-demand using Microsoft Test Manager unless you're using a XAML build. 
+   If you're using the build and release services in Azure DevOps, not a [XAML build](#xaml-build), you can run associated tests in the build and release pipelines by using the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task. You _can't_ run tests on-demand using Microsoft Test Manager unless you're using a XAML build. 
 
-  The parameters in a test case aren't used by any automated test that you associate with a test case. Iterations of a test case that use these parameters are for manual tests only.
+   The parameters in a test case aren't used by any automated test that you associate with a test case. Iterations of a test case that use these parameters are for manual tests only.
 
 For more information, see the following articles:
 - [Add files to the server](../repos/tfvc/add-files-server.md)
@@ -74,7 +72,21 @@ For more information, see the following articles:
 
 <a name="test-plan"></a>
 
-## FAQs
+## Associate your automated test in Azure DevOps  
+### Associate your test from a build pipeline 
+
+1. Navigate to **Pipelines** and choose a pipeline where the automated tests ran. 
+2. Choose the build in which your tests were executed.
+3. In the **Tests** tab, look for the automated test you wish to link with a manual test case.
+4. Select the test and then click on **Associate Test Case**. 
+5. Locate the manual test case you want to associate to the automated test and click **Associate**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the process of associating an automated test to a test case within a CI/CD pipeline interface.](media/associate-automated-test-with-test-case/associate-automated-test-to-test-case-pipelines.png)
+
+After you associate your automated tests with their corresponding test cases, you can utilize the [Azure Test Plan task](/azure/devops/pipelines/tasks/reference/azure-test-plan-v0) to execute them as part of a pipeline.
+
+## FAQs about associating automated tests
 
 See the following frequently asked questions (FAQs).
 
@@ -84,18 +96,29 @@ See the following frequently asked questions (FAQs).
 
 **A**: The following capabilities and limitations exist for each test type:
 
-* Coded UI test, Selenium tests, and unit tests written using Version 1 of the MSTest framework **can** be associated with a test case.
-* Tests that use MSTest v2, NUnit, and xUnit frameworks **can** be associated
-  with a test case work item when using Visual Studio 15.9 Preview 2 or later.
-  However, these tests can't be run using Microsoft Test Manager and XAML builds.
-* Tests that use the .NET core framework **can** be associated with a test case
+|Framework   |*Association in Visual Studio|Association in Azure DevOps|
+|----------|-----------|------------|
+|Coded UI tests|Supported       |Supported|
+|Selenium|Supported   |Supported|
+|MSTest v1/v2|Supported   |Supported|
+|NUnit|Supported|Supported|
+|xUnit|Supported|Supported|
+|Python (PyTest)|Not Supported|Supported|
+|Java (Maven and Gradle)|Not Supported|Supported|
+
+\* Supported in Visual Studio 15.9 Preview 2 or later.
+
+Tests that use the .NET core framework **can** be associated with a test case
   work item when using Visual Studio 15.9 Preview 2 or later.
   Run the .NET core tests. The appropriate target framework must be specified
   in a [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?).
-  However, these tests can't be run using Microsoft Test Manager and XAML builds.
-* Tests that use other test frameworks such as Chutzpah (for JavaScript tests
-  such as Mocha or QUnit), or Jest **cannot** be associated with a test case.
-* Generic tests are not available in Visual Studio 2022.  
+
+<a name="xaml-build"></a>
+
+### Q: Can I use tests from my GitHub repositories for association in Azure DevOps?
+
+**A**: As long as you run your automated tests in Azure Pipelines with the VSTest task, or you report the test results with the PublishTestResults task, the automated tests will be available for association to test cases, via the user experience in Azure DevOps. 
+Please keep in mind that the test must run at least once before it becomes available for association.
 
 <a name="xaml-build"></a>
 

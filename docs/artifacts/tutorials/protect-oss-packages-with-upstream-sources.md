@@ -25,7 +25,7 @@ In this tutorial, you will:
 
 ## Create a feed and enable upstream sources
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -51,7 +51,7 @@ Now that we created our feed, we need to update the config file to point to our 
 
 #### [npm](#tab/npm/)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
@@ -64,8 +64,6 @@ Now that we created our feed, we need to update the config file to point to our 
     :::image type="content" source="../media/connect-to-feed-npm-registry-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project.":::
 
 ::: moniker-end
-
-
 
 If you don't have a *.npmrc* file already, create a new one in the root of your project (in the same folder as your *package.json*). Open your new *.npmrc* file and paste the snippet you just copied in the previous step.
 
@@ -185,7 +183,9 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 
 ## Restore packages
 
-Now that you enabled upstream sources and set up your configuration file, we can run the package restore command to query the upstream source and retrieve the upstream packages.
+Now that you enabled upstream sources and set up your configuration file, you can now run the package restore command to query the upstream source and retrieve the upstream packages.
+
+To restore packages using Azure Pipelines instead, see [Restore Maven packages with Azure Pipelines (YAML/Classic)](../../pipelines/packages/maven-restore.md) for detailed steps. 
 
 ::: moniker range="azure-devops"
 
@@ -334,71 +334,6 @@ mvn install
 Your feed now should have a saved copy of any packages you installed from upstream.
 
 # [Gradle](#tab/gradleserver)
-
-Run the following command in your project directory:
-
-```Command
-gradle build
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-- - -
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-# [npm](#tab/npmserver19)
-
-Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
-
-```Command
-npm install --force
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-> [!NOTE]
-> The `--force` argument will force pull remotes even if a local copy exists. 
-
-# [NuGet](#tab/nugetserver19)
-
-1. Clear your local cache:
-
-    ```Command
-    nuget locals -clear all
-    ```
-
-1. Restore your NuGet packages:
-
-    ```Command
-    nuget.exe restore
-    ```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-# [Python](#tab/pythonserver19)
-
-Run the following command in your project directory:
-
-```Command
-pip install
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-# [Maven](#tab/mavenserver19)
-
-Run the following command in your project directory:
-
-```Command
-mvn install
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-# [Gradle](#tab/gradleserver19)
 
 Run the following command in your project directory:
 

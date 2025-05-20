@@ -61,8 +61,6 @@ Code scanning supports two build modes when setting up a pipeline for scanning:
 
 For more information on the different build modes including a comparison on the benefits of each build mode, see [CodeQL code scanning for compiled languages](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages#about-the-codeql-analysis-workflow-and-compiled-languages). 
 
-For running code scanning analysis through GitHub Advanced Security for Azure DevOps, the `autobuild` build mode is instead a separate build task, [`AdvancedSecurity-CodeQL-Autobuild@1`](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-autobuild-v1).
-
 > [!TIP]
 > Build mode `none` is useable with other interpreted languages, for example, JavaScript, Python, Ruby.
 > If build mode `none` is specified for C# or Java with other compiled languages that don't support build mode `none`, the pipeline task fails.
@@ -167,7 +165,7 @@ To dismiss an alert:
 
 [![Screenshot of how to dismiss a code scanning alert.](./media/code-scanning-dismiss-alert.png)](./media/code-scanning-dismiss-alert.png#lightbox)
 
-This action only dismisses the alert for your selected branch. Other branches that contain the same vulnerability stay active until dismissed. Any alert previously dismissed can be manually reopened. 
+This action dismisses the alert across all branches. Other branches that contain the same vulnerability will also be dismissed. Any alert previously dismissed can be manually reopened. 
 
 ### Managing code scanning alerts on pull requests 
 

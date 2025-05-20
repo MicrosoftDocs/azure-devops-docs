@@ -103,7 +103,7 @@ After you connect to a project, you can view work items.
    :::image type="content" source="../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot that shows the menu to select the product backlog level option of Backlog items, Stories, Issues, or Requirements.":::
 
 ::: moniker-end
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. In your project, select **Boards** > **Boards**. From the dropdown menu, select a team board.
 
@@ -220,7 +220,7 @@ The list of backlog items appears in priority order. You can add a backlog item,
 
 ## Find work items
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Select **Boards** > **Work Items**. Then select an option from the dropdown menu. For example, select **Assigned to me**.
 

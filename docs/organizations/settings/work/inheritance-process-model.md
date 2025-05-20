@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: overview 
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 07/08/2022
 ---
 
@@ -33,19 +33,12 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 
 [!INCLUDE [temp](../../../boards/includes/note-configure-customize.md)]
 
-
-
 ## System versus inherited processes 
 
 You'll see two types of processes:
 
 - ![locked icon](media/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
 - ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes and their child inherited processes. Updates to processes are documented in the [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]   
-> The Basic process is available with Azure DevOps Server 2019 Update 1 and later versions.  
-::: moniker-end
 
 In addition, all processes are shared. That is, one or more projects can use a single process. Instead of customizing a single project, you customize a process. Changes made to the process automatically update all projects that use that process. 
 Once you've created an inherited process, you can customize it, create projects based on it, make a copy of it, and change existing projects to use it. 
@@ -87,7 +80,6 @@ Making changes to an inherited process is straight forward and safe. However, it
 
 Each inherited process you create inherits the WITs defined in the system process&mdash;Basic, Agile, Scrum, or CMMI. For example, the Agile process provides bug, task, user story, feature, epic, issue and test-related WITs. 
 
-
 #### [Agile process](#tab/agile-process) 
 
 ![Conceptual image of Agile process work item hierarchy.](../../../boards/work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)
@@ -110,7 +102,6 @@ Each inherited process you create inherits the WITs defined in the system proces
 * * * 
 
 You can add fields and modify the workflow and work item form for all inherited WITs that display on the **Work Item Types** page. If you don't want users to create a WIT, you can disable it. In addition, you can add custom WITs. 
-
 
 <a id="field-customizations"></a>
 
@@ -199,21 +190,6 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-- You can't change the field name or data type once you've defined it
-- You can't modify the gray area on the form where the State, Reason, Area Path, and iteration path fields are located  
-- With regards to picklists, you currently can't perform these operations:
-    - Change the picklist of an inherited field, such as the Activity or Discipline field  
-    - Change the picklist order, picklists display in alphabetic order
-- You can't modify the Description help text of inherited fields
-- Import or define a global list as supported by the Hosted XML and On-premises XML process models. For more information, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).  
-
-> [!NOTE]    
-> With the inherited process, you can't modify the picklists of predefined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
-
-::: moniker-end
-
 ### Configurable picklists 
 
 The following picklists are configured for each project and not customizable through an inherited process.   
@@ -221,7 +197,6 @@ The following picklists are configured for each project and not customizable thr
 - [Iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md)
 
 Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you [add to a project or team](../../security/add-users-team-project.md).   
-
 
 <a id="rename-field">  </a>
 
@@ -240,7 +215,6 @@ Instead of deleting a field, you may want to instead hide or remove the field fr
 [!INCLUDE [temp](../includes/field-reference.md)] 
 
 [!INCLUDE [temp](../includes/fields-become-invalid-after-customization.md)] 
-
 
 <a id="system-rules">  </a>
 
@@ -281,7 +255,6 @@ Using one of the following two conditions, you can make select fields required f
 For example, you can make the Title or the State field Read-only for select users or groups. 
 
 ::: moniker-end
-
 
 ### Restrict modification of work items based on Area Path 
 
@@ -334,14 +307,12 @@ Here are your customization options for inherited and custom WITs.
 :::row-end:::
 ---
 
-
 #### What you can't customize  
 
 - You can't add or remove an inherited WIT to or from a backlog
 - You can't change the position of an inherited field within the form layout (however, you can hide the field in one area of the form and add it elsewhere in the form) 
 - You can't remove the inherited portfolio level from the product (but you can rename them)
 - You can't change the name of a custom WIT. 
-
 
 ### Work item form customizations 
 
@@ -402,7 +373,6 @@ You can make the following customizations to a WIT form.
 :::row-end:::
 ---
 
-
 <a id="resizing">  </a>  
 
 ### Layout and resizing 
@@ -440,6 +410,4 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 ## Object limits
 
 For a list of limits placed on the number of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md). 
-
-
 

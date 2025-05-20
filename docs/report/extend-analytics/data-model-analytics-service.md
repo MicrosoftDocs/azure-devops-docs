@@ -7,7 +7,7 @@ ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 09/19/2022
 ---
 
@@ -18,7 +18,6 @@ ms.date: 09/19/2022
 The Analytics data model for Azure DevOps consists of entity sets, whose members (entities) contain properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](https://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to other properties for selecting, filtering, and grouping.
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
-
 
 ## Schema namespaces 
 
@@ -35,9 +34,6 @@ Entity types are named structured types with a key. They define the named proper
 Entity sets are named collections of entities. For example, `WorkItems` is an entity set containing `WorkItem` entities. An entity's key uniquely identifies the entity within an entity set. If multiple entity sets use the same entity type, the same combination of key values can appear in more than one entity set and identifies different entities, one per entity set where this key combination appears. Each of these entities has a different entity-id. Entity sets provide entry points into the data model.
 
 Entity sets are described in OData metadata, and vary by project. You can explore the complete list of entity sets, entity types, and properties by requesting the OData metadata for your project. To learn how, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
-
-
-
 
 ### Composite entities
 
@@ -58,8 +54,6 @@ Some navigation properties result in a single entity, while others result in a c
 ### Relationship keys
 
  Entity relationships are also represented as foreign keys so that external tools can join entities. These properties have the suffix "SK", and are either integer or GUID data types. Date properties have corresponding integer date key properties with the following format: **YYYYMMDD**.
-
-
 
 ## Work tracking entity types and entity sets
 
@@ -84,7 +78,6 @@ The following entity types and entity sets are supported with the indicated API 
 > |**WorkItem**/<br/>**WorkItems** |The current state of work items. Used to support status reports. For a sample report, see [Rollup child work item values to parent sample report](../powerbi/sample-boards-rollup.md). | ✔️|✔️|✔️ | ✔️ | 
 > |**WorkItemTypeField**/<br/>**WorkItemTypeFields** |The work item properties for each work item type and process. Used to support building reports. | ✔️|✔️|✔️ | ✔️ |  
 
-
 ::: moniker range=">= azure-devops-2020"
 
 ## Pipelines entity types and entity sets
@@ -107,13 +100,11 @@ The following entity types and entity sets are supported with the **v3.0-preview
  
 ::: moniker-end
 
-
 ::: moniker range=">= azure-devops-2020"
 
 ## Test entity types and entity sets
 
 The following entity types and entity sets are supported with the **v3.0-preview** or **v4.0-preview** Analytics version. For a complete reference, see [Test metadata reference](../analytics/entity-reference-test-plans.md).  
-
 
 > [!div class="mx-tdCol2BreakAll"]  
 > |`EntityType/EntitySet` | Description | v3.0-preview | v4.0-preview |
@@ -129,7 +120,6 @@ The following entity types and entity sets are supported with the **v3.0-preview
 
  
 ::: moniker-end
-
 
 ## Related articles 
 

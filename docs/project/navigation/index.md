@@ -8,69 +8,44 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 01/08/2024
+ms.date: 03/11/2025
 ---
 
-# Navigate the web portal in Azure DevOps  
+# Navigate the Azure DevOps web portal
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 ::: moniker range="azure-devops"
 
-The web portal for Azure DevOps is organized around a set of services and administrative pages and several task specific features, such as the search box. The service labels differ depending on whether you work from Azure DevOps Services or Azure DevOps on premises and its version. 
+The Azure DevOps web portal is organized into various services, administrative pages, and task-specific features like the search box. Service labels vary depending on whether you’re using Azure DevOps Services or an on-premises version.
 
 [!INCLUDE [temp](../../includes/version-selector.md)] 
 
-Each service provides you with one or more pages, which support many features and functional tasks. Within a page, you might then have a choice of options to select a specific artifact or add an artifact.
+Each service offers multiple pages with numerous features and functional tasks. Within each page, you can choose options to select or add specific artifacts.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+## Key features and navigation
 
-The web portal for Azure DevOps Server is organized around a set of services&mdash;such as, **Overview**, **Boards**, **Repos**, **Pipelines**, **Test Plans**, and **Artifacts—as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages that support many features and functional tasks. Within a page, you might then have a choice of options to select a specific artifact or add an artifact. 
+Here's what you need to know to start using the web portal effectively.  
 
-Each service provides you with one or more pages that support many features and functional tasks. Within a page, you might then have a choice of options to select a specific artifact or add an artifact.
+- [**Open a service, page, or settings**](go-to-service-page.md): Use to switch to a different [service or functional area](../../user-guide/services.md) 
+- [**Add an artifact or team**](add-artifact-team.md): Use to quickly add a work item, Git repo, build or release pipelines, or a new team
+- [**Open another project or repo**](work-across-projects.md): Use to switch to a different project or access work items and pull requests defined in different projects, or your favorite items
+- [**Open team artifacts, use breadcrumbs, selectors and directories**](use-breadcrumbs-selectors.md): Use to navigate within a service, open other artifacts, or return to a root function
+- [**Work with favorites**](set-favorites.md): Mark your favorite artifacts for quick navigation  
+- [**Search box**](../search/get-started-search.md): Use to find code, work items, or wiki content  
+- [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): Use to set personal preferences, notifications, and enable preview features  
+- [**Settings**](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects): Use to add teams, manage security, and configure other project and organization level resources.  
 
-::: moniker-end
-
-
-
-
-Here's what you need to know to get up and running using the web portal.  
-
-::: moniker range=">= azure-devops-2019"
-- [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different [service or functional area](../../user-guide/services.md) 
-- [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
-- [**Open another project or repo**](work-across-projects.md): use to switch to a different project or access work items and pull requests defined in different projects, or your favorite items
-- [**Open team artifacts, use breadcrumbs, selectors and directories**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts, or return to a root function
-- [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation  
-- [**Search box**](../search/get-started-search.md): use to find code, work items, or wiki content  
-- [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
-- [**Settings**](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects): use to add teams, manage security, and configure other project and organization level resources.  
-
-::: moniker-end
-
-
-
-
-::: moniker range=">= azure-devops-2019" 
 > [!NOTE]  
-> Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-::: moniker-end
+> Only enabled services are visible in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service don't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 
+Select services—such as **Boards**, **Repos**, and **Pipelines**—from the sidebar and pages within those services. 
 
-::: moniker range=">= azure-devops-2019"  
-You select services—such as **Boards**, **Repos**, and **Pipelines**—from the sidebar and pages within those services. 
+![Screenshot shows vertical sidebar.](media/gif-images/vertical-nav.gif)
 
-![Vertical sidebar](media/gif-images/vertical-nav.gif)
-
-::: moniker-end
-
-
-
-
-
-Now that you have an understanding of how the user interface is structured, it's time to get started using it. As you can see, there are numerous features and functionality.  
+Now that you understand the user interface structure, it’s time to start using it. You can find a wide range of features and functionalities to explore.
 
 If all you need is a code repository and bug tracking solution, then start with [Get started with Git](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
 
@@ -88,14 +63,6 @@ Limited access is available to an unlimited number of stakeholders for free. For
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-You connect to the web portal through a supported web browser&mdash;such as the latest versions of Microsoft Edge, Chrome, Safari, or Firefox. Only users who [added to a project](../../organizations/security/add-users-team-project.md) can connect, which is typically done by a member of the Project Administrators group.
-
-Limited access is available to an unlimited number of stakeholders for free. For details, see [Work as a Stakeholder](../../organizations/security/get-started-stakeholder.md). Most regular contributors must have a TFS client access license (CAL). All Visual Studio subscriptions include a TFS CAL.
-
-::: moniker-end
-
 <a id="refresh-web-portal">  </a>
 
 ## Refresh the web portal
@@ -103,7 +70,6 @@ Limited access is available to an unlimited number of stakeholders for free. For
 If data doesn't appear as expected, the first thing to try is to refresh your web browser. Refreshing your client updates the local cache with changes that were made in another client or the server. To refresh the page or object you're currently viewing, refresh the page or choose the ![Refresh icon](../../media/icons/refresh.png) **Refresh** icon if available.  
 
 [!INCLUDE [temp](../../includes/when-to-refresh-client.md)]
-
 
 ## Differences between the web portal and Visual Studio  
 
@@ -138,8 +104,8 @@ Although you can access source code, work items, and builds from both clients, s
  
 [!INCLUDE [temp](../../repos/git/includes/note-new-git-tool.md)]
 
-## Resources  
+## Related articles
 
 - [Manage projects](../../organizations/projects/about-projects.md) 
-- [Project & organization settings](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects) 
+- [Manage settings for projects and organizations](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects) 
 

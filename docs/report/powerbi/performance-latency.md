@@ -6,10 +6,9 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 10/05/2021
 ---
-
 
 # Performance and latency of Analytics
 
@@ -18,14 +17,6 @@ ms.date: 10/05/2021
  When you use Analytics for reporting, you should understand data latency and query performance. To get started using Analytics, see what is the [Analytics](./what-is-analytics.md).
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
-
-::: moniker range="azure-devops-2019"
-
-## Install or enable Analytics 
-
-When you [enable or install Analytics](../dashboards/analytics-extension.md) for a project collection, expect the initial setup to take between 5 and 30 minutes. After 24 hours, if you aren't able to access your data, contact [Microsoft Support](../../user-guide/provide-feedback.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json).
-
-::: moniker-end
 
 ## Data latency
 

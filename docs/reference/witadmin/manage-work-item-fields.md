@@ -18,7 +18,7 @@ ms.date: 12/01/2022
 
 You can manage the fields defined for work item types that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](/previous-versions/azure/devops/reference/xml/global-workflow-xml-element-reference) and [importing it to the collection](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow).  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 -   `changefield`: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:   
     -   **Data type** for `PlainText` or `HTML` fields.    
@@ -37,14 +37,11 @@ You can manage the fields defined for work item types that are defined for a pro
 
   
 
-
-
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)] 
   
 For an overview of the fields defined within a default process template, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
   
 [!INCLUDE [temp](../../includes/process-editor.md)]
-
 
 ## Prerequisites  
   
@@ -58,8 +55,7 @@ For more information, see [Change project collection-level permissions](../../or
   
 ## Syntax  
 
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
   
 ```  
 witadmin changefield /collection:CollectionURL /n:RefName   [/name:NewName]    [/syncnamechanges:true | false]   [/reportingname:ReportingName]    [/reportingrefname:ReportingRefName]   [/reportingtype:Type]   [/reportingformula:Formula]   [/type:PlainText | HTML]   [/noprompt]  
@@ -70,7 +66,6 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 ```  
 
 ::: moniker-end
-
 
   
 ### Parameters  
@@ -90,9 +85,6 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 |`/unused`|Lists all fields that are not used by any project defined in the project collection.|  
 |`/noprompt`|Disables prompt for confirmation.|  
 |`/?` or `help`|Displays help about the command in the Command Prompt window.|  
-
-
-
 
   
 ### Synchronizing person names with Active Directory  
@@ -343,8 +335,6 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 ```  
 
 Enter **y** at the confirmation prompt to complete this step.  
-
-
 
   
 ## Related articles 

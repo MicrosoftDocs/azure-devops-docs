@@ -19,7 +19,7 @@ Azure Artifacts provides developers with a streamlined way to manage all their d
 Azure Artifacts supports multiple package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
 > [!NOTE]
-> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](#increase-azure-artifacts-storage-limit) to ensure you have the appropriate resources.
+> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](#increase-artifacts-storage-limit) to ensure you have the appropriate resources.
 
 ## Prerequisites
 
@@ -141,44 +141,19 @@ With Azure Artifacts, you can publish and install various package types from fee
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-# [NuGet](#tab/nugetserver19)
-
-- **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
-
-# [Npm](#tab/npmserver19)
-
-- **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
-
-# [Maven](#tab/mavenserver19)
-
-- **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
-
-# [Gradle](#tab/gradleserver19)
-
-- **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
-
-# [Python](#tab/pythonserver19)
-
-- **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
-
----
-
-::: moniker-end
-
 ## Feature availability
 
-|      Packages      |                        Azure DevOps Services                                  |                              Azure DevOps Server 2022                              |      Azure DevOps Server 2020      |      Azure DevOps Server 2019      |
-|------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------|------------------------------------|
-| **NuGet**     | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false"::: |
-| **dotnet**      | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false"::: |
-| **npm**       | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false"::: |
-| **Maven**     | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false"::: |
-| **Gradle**    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false"::: |
-| **Python**    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false"::: |
-| **Cargo**     | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::   | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::|:::image type="icon" source="../media/icons/delete-icon.png" border="false":::|
-| **Universal Packages** | :::image type="icon" source="../media/icons/checkmark.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false"::: | :::image type="icon" source="../media/icons/delete-icon.png" border="false"::: | :::image type="icon" source="../media/icons/delete-icon.png" border="false"::: |
+|      Packages          | Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020 |
+|------------------------|-----------------------|--------------------------|--------------------------|
+| **NuGet**              | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::     |
+| **dotnet**             | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::     |
+| **npm**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::     |
+| **Maven**              | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::     |
+| **Gradle**             | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::     |
+| **Python**             | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::     |
+| **Cargo**              | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::   |
+| **Universal Packages** | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::   |
+
 
 ::: moniker range="azure-devops"
 
@@ -190,19 +165,11 @@ The artifact storage UI, accessible through your organization or project setting
 
 - [Organization-level storage](./artifact-storage.md#organization-level-storage): Provides an overview of total storage usage including consumption by project and artifact type.
 
-## Increase Azure Artifacts storage limit 
-
-Azure Artifacts provides 2 GiB of free storage for each organization. When your organization reaches the maximum storage limit, publishing new artifacts will no longer be possible. To continue, you can either delete some of your existing artifacts or follow these steps to increase your storage limit:
-
-1. [Set up billing for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing-for-your-organization).
-
-1. Sign in to your Azure DevOps organization, select **Organization settings** > **Billing**, and adjust your Artifacts usage limit by selecting **No limit, pay for what you use** from the dropdown menu.
-
-1. Select **Save** when you're done.
-
-   :::image type="content" source="media/adjust-artifacts-usage-limit.png" alt-text="Screenshot showing adjusted usage limit for Artifacts on Billing page.":::
-
 ::: moniker-end
+
+## Increase Artifacts storage limit 
+
+[!INCLUDE [](includes/increase-storage-limit.md)]
 
 ## FAQs
 
@@ -217,7 +184,7 @@ A: You are charged for all package types (npm, NuGet, Python, Maven, Cargo, and 
 
 #### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: Removing your Azure Subscription from your Azure DevOps organization limits your access to the free tier. If your storage usage exceeds 2 GiB, you will have read-only access to packages. To publish new packages, you must reduce your storage usage below 2 GiB. Alternatively, you can reconnect an Azure subscription to your organization and set up billing to [upgrade your storage tier](#increase-azure-artifacts-storage-limit).
+A: Removing your Azure Subscription from your Azure DevOps organization limits your access to the free tier. If your storage usage exceeds 2 GiB, you will have read-only access to packages. To publish new packages, you must reduce your storage usage below 2 GiB. Alternatively, you can reconnect an Azure subscription to your organization and set up billing to [upgrade your storage tier](#increase-artifacts-storage-limit).
 
 #### Q: Why does my storage consumption show as 0 GiB even though I'm storing Artifacts?
 

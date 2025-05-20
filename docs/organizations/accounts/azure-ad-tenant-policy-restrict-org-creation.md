@@ -1,5 +1,5 @@
 ---
-title: Restrict new organization creation, Microsoft Entra tenant policy
+title: Restrict new organization creation
 titleSuffix: Azure DevOps Services
 ms.custom: 
 description: Learn how Azure DevOps Administrators can prevent users from creating new organizations via the Microsoft Entra tenant policy.
@@ -8,11 +8,11 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/03/2025
+ms.date: 04/23/2025
 monikerRange: 'azure-devops'
 ---
 
-# Restrict organization creation via Microsoft Entra tenant policy
+# Restrict organization creation
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -22,17 +22,21 @@ Learn how to turn on the Microsoft Entra tenant policy, which restricts users fr
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**|[Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and go to **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, you can't see the policies. Contact your administrator, if necessary. The Project Collection Administrator role isn't required. |
+|**Permissions**|[Azure DevOps Administrator](../security/look-up-azure-devops-administrator.md). |
 
 ## Turn on the policy
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+To turn on the policy that restricts users from creating new organizations, do the following steps:
+
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
     ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Microsoft Entra ID**, and then switch the toggle to turn on the policy, restricting organization creation.
+
+   :::image type="content" source="media/azure-ad-tenant-policy/restrict-organization-creation-toggle.png" alt-text="Screenshot shows highlighted toggle for Restrict organization creation.":::
 
 ## Optional
 
@@ -55,11 +59,11 @@ To customize the error message, do the following steps:
 
 2. Enter your customized message, and then select **Save**.
 
-   ![Screenshot show Customize error message dialog.](media/azure-ad-tenant-policy/display-error-message-dialog.png)
+   ![Screenshot shows Customize error message dialog.](media/azure-ad-tenant-policy/display-error-message-dialog.png)
 
 The error message is customized.
 
-![Customized error message](media/azure-ad-tenant-policy/error-message-example-ui.png)
+![Screenshot shows customized error message.](media/azure-ad-tenant-policy/error-message-example-ui.png)
 
 ## Related articles
 

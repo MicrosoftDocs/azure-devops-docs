@@ -112,10 +112,7 @@ Query clauses that specify an identity or workflow-associated field can use the 
 
 Use the `In` and `Not In` operators to filter for or exclude two or more pick list entries or a delimited set of items. Use the `In Group` or `Not In Group` operators to filter for items that belong or don't belong within a category group or security group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
 
-
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
-
-
 
 <a id="me"></a>
 
@@ -299,7 +296,6 @@ To list work items that changed state within a specific date range, you can use 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Query Editor, filter State Change Date and State fields.](media/workflow/query-state-change-date.png)
 
-
 <a id="query-changes-to-a-kanban-board"></a>
 <a id="kanban-query-fields"></a>
 <a id="kanban_query_fields"></a>
@@ -361,7 +357,6 @@ You can filter items by team area path, specific custom columns, and swimlanes. 
 :::row-end:::
 ::: moniker-end
 ---
-
 
 <a id="kanban-query-results">  </a>
 
@@ -676,7 +671,7 @@ For more information about field attributes, see [Work item fields and attribute
       ::: moniker range="azure-devops"
       To modify the workflow states, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). 
       ::: moniker-end 
-      ::: moniker range=">= azure-devops-2019 < azure-devops"
+      ::: moniker range="<azure-devops"
       To modify the workflow states, see the following articles:  
       - For Inherited process model: see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md) 
       - For On-premises XML process models: see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
@@ -717,7 +712,6 @@ For more information about field attributes, see [Work item fields and attribute
 
 ::: moniker-end
 
-
 ::: moniker range="< azure-devops"
 
 1. See [Date and Identity fields](#date-identity).
@@ -734,7 +728,6 @@ For more information about field attributes, see [Work item fields and attribute
 
 ::: moniker-end
 
-
 ### People picker 
 
 The **Assigned To** field is supported by the people picker feature. For example, when you choose the **Assigned To** field from within a work item form, the people picker is activated. As shown in the following image, you simply start entering the name of the user you want to select, and search until you find a match. Users that you've previously selected appear in the list automatically. To select users that you didn't previously select, enter their entire name or search against the full directory.  
@@ -750,7 +743,6 @@ To limit the scope of identities available for selection to just those users add
  
 
 ::: moniker-end
-
 
 <a id="date-identity"></a>
 
@@ -880,9 +872,7 @@ Then the Activated By and Activated Date fields are set to `READONLY`.
 
 ::: moniker-end
 
-
 [!INCLUDE [activated-resolved-by-fields](../includes/activated-resolved-by-fields.md)]
-
 
 ## Related articles
 
@@ -891,6 +881,5 @@ Then the Activated By and Activated Date fields are set to `READONLY`.
 - [Query quick reference](query-index-quick-ref.md) 
 - [Work item fields and attributes](../work-items/work-item-fields.md)
 - [Query permissions](set-query-permissions.md)
-
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]

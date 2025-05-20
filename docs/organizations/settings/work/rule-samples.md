@@ -9,7 +9,6 @@ monikerRange: "<= azure-devops"
 ms.topic: sample
 ms.date: 06/30/2021
 
-
 #Customer intent: As a process designer, I need examples that illustrate how to define rules, so I can add the right rules to support my business processes.
 ---
 
@@ -55,7 +54,6 @@ You specify a `WHEN` rule statement for the field definition within the `FIELDS`
 
 ---
 
-
 <a name="clear-field"></a>
 
 ## Clear the value of a dependent field  
@@ -63,7 +61,6 @@ You specify a `WHEN` rule statement for the field definition within the `FIELDS`
 The following example illustrates defining a custom rule to clear the value for **Story Points** when a change is made to the **Start Date**. 
 
 # [Inheritance process](#tab/inheritance)
-
 
 :::image type="content" source="media/sample-rules/clear-story-points-start-date-change.png" alt-text="Screenshot of custom rule to clear the value of Story Points when Start Date changes.":::
 
@@ -88,7 +85,6 @@ You specify a `WHENCHANGED` rule statement for the field definition within the `
 ---
  
 
-
 <a name="copy-field"></a>  
 
 ## Set a dependent field value  
@@ -99,11 +95,9 @@ The following examples illustrate how to map the values of the **Size** field de
 
  The **Tee-Shirt Size** pick-list consists of four values *Small*, *Medium*, *Large*, and *X-Large*. Four custom rules are defined to assign the **Size** field when the **Tee-Shirt Size** field is changed to a specific value. To simplify usage, the default value of the **Tee-Shirt Size** is *Small*. 
 
-
 **Edit field dialog for Tee-Shirt Size field**
 
 :::image type="content" source="media/sample-rules/tee-shirt-size-edit-field-dialog.png" alt-text="Screenshot of Edit field dialog for Tee-Shirt Size field.":::
-
 
 **Custom rule**
 
@@ -152,8 +146,6 @@ You specify the value of the **Size** field in the `FIELDS` section of the work 
 
 ---
 
-
-
 <a name="require-field-state-change"></a>  
 
 ## Require a field value upon State changes 
@@ -195,9 +187,7 @@ To automate clearing the **Remaining Work** field upon closing a task, define a 
 
 :::image type="content" source="media/sample-rules/clear-remaining-work-closed-state.png" alt-text="Screenshot of custom rule to zero out Remaining Work required when State is changed to Closed.":::
 
-
 # [On-premises XML process](#tab/on-premises)
-
 
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
@@ -215,8 +205,6 @@ To automate clearing the **Remaining Work** field upon closing a task, define a 
 > ```  
 
 ---
-
-
 
 ## Restrict creation of work items by a group 
 
@@ -246,7 +234,6 @@ The following custom rule restricts the Fabrikam Review Team (*for* attribute) f
 > ```  
  
 ---
-
 
 ## Restrict modification of work items by a group  
 
@@ -286,7 +273,6 @@ The following custom rule restricts the Fabrikam Review Team (*for* attribute) f
 
 ---
 
-
 ## Restrict state transitions 
 
 For inherited processes, any-to-any state transitions are automatically defined. This allows users to advanced the workflow state from new to completed, but also to move backwards in case that is needed. When defining custom rules to restrict a transition, keep in mind that if a user makes a mistake in updating the workflow, they may not be able to correct it. For example, they could update the status by moving a work item card to a later stage on the board, but not move it back. 
@@ -306,7 +292,6 @@ Depending on your business processes, you may want to prevent users from continu
 # [Inheritance process](#tab/inheritance)
 
 For the Inherited process, you can add a rule that restricts state transition. For example, the following rule restricts transitioning from closed to the other two States, New and Active. 
-
 
 > [!NOTE]  
 > The `A work item state moved from ...`  condition is available for Azure DevOps Server 2020 and later versions. 
@@ -340,7 +325,6 @@ For on-premises deployments, you can add rules to a work item type to prevent re
 > ```  
  
 
-
 ---
 
 ::: moniker range=">= azure-devops-2020"
@@ -353,24 +337,15 @@ For example, the following condition indicates that the Justification field is h
 
 :::image type="content" source="media/rules/rule-hide-justification-field.png" alt-text="Custom rule, Current user is not a member of a group, Hide Justification field":::
 
-
 [!INCLUDE [temp](../../../boards/includes/note-work-item-caching-rules-simple.md)]
 
 ::: moniker-end
-
 
 <a id="restrict-modifications-wits"></a> 
 
 ## Restrict modification of select fields based on a user or group 
 
 You can customize work item types to restrict who can modify a specific field for a work item type. 
-
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]
-> For Azure DevOps Server 2019 and earlier versions, you can only restrict modification of work items based on a user or group with the On-premises XML process model. 
-::: moniker-end
-
 
 # [Inheritance process](#tab/inheritance)
 
@@ -403,8 +378,6 @@ You restrict access to work tracking objects in one of two ways:
 - By [adding WITs to the Hidden Categories group](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
 
 ---
-
-
 
 ## Related articles
 

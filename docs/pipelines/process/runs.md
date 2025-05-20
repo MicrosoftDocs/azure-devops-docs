@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.custom: devx-track-azurecli
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
 ms.date: 07/12/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Pipeline runs

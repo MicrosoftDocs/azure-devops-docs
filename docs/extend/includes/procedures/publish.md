@@ -14,7 +14,7 @@ Once your extension is packaged, you can upload it to the Marketplace under a pu
 
     :::image type="content" source="../../get-started/media/published-extension.png" alt-text="Screenshot showing extension in the list of published extensions."::: 
 
-At this point, your extension isn't visible to any accounts and can't be installed until you share it.
+At this point, your extension isn't visible to any accounts. To make it visible to others, you need to share the extension.
 
 > [!NOTE]
 > Microsoft runs a virus scan on each new and updated extension package published. Until the scan is all clear, we don't publish the extension in the Marketplace for public usage. This way we also avoid surfacing inappropriate or offensive content on the Marketplace pages.

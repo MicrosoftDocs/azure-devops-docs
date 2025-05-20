@@ -79,12 +79,69 @@ Troubleshooting steps:
 
 * Grant `Advanced Security: View alerts` and `Advanced Security: Manage and dismiss alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
 
+## Code scanning publishing results to the incorrect repository 
+
+If you have a pipeline definition housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results may be processed and submitted to the incorrect repository, publishing to the repository containing the pipeline definition rather than the source code repository.
+
+To enable proper result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+
+Alternatively, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
+
+>[!div class="tabbedCodeSnippets"]
+```yaml
+trigger:
+  - main
+
+resources:
+  repositories:
+    - repository: BicepGoat
+      type: git
+      name: BicepGoat
+      ref: refs/heads/main
+      trigger:
+        - main
+
+jobs:
+  # Explicit - `advancedsecurity.publish.repository` explicitly defines the repository to submit SARIF to.
+  - job: "AdvancedSecurityCodeScanningExplicit"
+    displayName: "🛡 Infrastructure-as-Code Scanning (Explicit)"
+    variables:
+      advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['BicepGoat']) ]
+    steps:
+      - checkout: BicepGoat
+      - task: TemplateAnalyzerSarif@1
+        displayName: Scan with Template Analyzer
+      - task: AdvancedSecurity-Publish@1
+        displayName: Publish to IaC Scanning Results to Advanced Security
+
+
+  # Infer - `advancedsecurity.publish.repository.infer` specifies that the `AdvancedSecurity-Publish` must
+  # infer repository to submit SARIF to from the working directory on the build agent.
+  - job: "AdvancedSecurityCodeScanningInfer"
+    displayName: "🛡 Infrastructure-as-Code Scanning (Infer)"
+    variables:
+      advancedsecurity.publish.repository.infer: true
+    steps:
+      - checkout: BicepGoat
+      - task: TemplateAnalyzerSarif@1
+        displayName: Scan with Template Analyzer
+      - task: AdvancedSecurity-Publish@1
+        displayName: Publish to IaC Scanning Results to Advanced Security
+```
+
 ## Manual installation of CodeQL bundle to self-hosted agent 
 Install the CodeQL bundle to the agent tool cache by utilizing the setup script for your architecture, available on [GitHub](https://github.com/microsoft/GHAzDO-Resources/tree/main/src/agent-setup). These scripts require the
 `$AGENT_TOOLSDIRECTORY` environment variable to be set to the location of the agent tools directory on the agent, for example, `C:/agent/_work/_tool`. Alternatively, you might manually implement the following steps: 
 1.	Pick the latest CodeQL release bundle from [GitHub](https://github.com/github/codeql-action/releases). 
 1.	Download and unzip the bundle to the following directory inside the agent tool directory, typically located under `_work/_tool`: `./CodeQL/0.0.0-[codeql-release-bundle-tag]/x64/`. Using the current release of `v2.16.0`, the folder name would be titled `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64/`. Learn more about the [agent tool directory](https://github.com/microsoft/azure-pipelines-tool-lib/blob/master/docs/overview.md#tool-cache). 
 1.	Create an empty file titled `x64.complete` within the `./CodeQL/0.0.0-[codeql-release-bundle-tag]` folder. Using the previous example, the end file path to your `x64.complete` file should be `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64.complete`.
+
+## How can I explicitly define the repository to publish code scanning alerts to?
+-   Use the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+-   As another option, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` 
+
+For more information, check the [release notes](/azure/devops/release-notes/2025/ghazdo/sprint-253-update#multi-repository-publishing-scenarios-supported-for-github-advanced-security-for-azure-devops).
+
 
 ## Related articles
 

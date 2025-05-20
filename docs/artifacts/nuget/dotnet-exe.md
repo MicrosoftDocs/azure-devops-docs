@@ -70,9 +70,6 @@ This guide walks you through configuring your project to publish NuGet packages 
 
     :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022." lightbox="../media/connect-to-feed-dotnet-server-2020-and-2022.png":::
 
-> [!NOTE]
-> dotnet is not supported in Azure DevOps Server 2019.
-
 ::: moniker-end
 
 ## Publish packages to a feed in the same organization

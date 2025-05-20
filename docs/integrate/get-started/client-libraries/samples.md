@@ -1,37 +1,31 @@
 ---
 title: .NET Client Library Samples for Azure DevOps
-description: C# samples showing how to integrate with Azure DevOps from apps and services on Windows.
+description: Learn how to extend and integrate with Azure DevOps by using C# samples from apps and services on Windows.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.subservice: azure-devops-ecosystem
 ms.custom: devx-track-dotnet
-ms.topic: conceptual
+ms.topic: concept-article
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/02/2024
+ms.date: 04/30/2025
 ---
 
-# C# client library samples 
+# C# client library samples
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 The following samples show you how to extend and integrate with Azure DevOps using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
 
-## Samples in GitHub
+The REST examples in this article require the following NuGet packages:
 
-On the [.NET Sample GitHub page](https://github.com/microsoft/azure-devops-dotnet-samples), you can find many samples with instructions on how to run them. 
-
-## Other samples
-
-REST examples on this page require the following NuGet packages:
 * [Microsoft.TeamFoundationServer.Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
 * [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 * [Microsoft.VisualStudio.Services.InteractiveClient](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/)
 
+### Example: Use a REST-based HTTP client
 
-#### Example: Using a REST-based HTTP client
-
-```cs
+```csharp
 // https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi;
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
@@ -123,13 +117,13 @@ public static void SampleREST()
 
 ## Authentication
 
-To change the method of authentication for Azure DevOps, change the VssCredential type passed to VssConnection when you create it.
+To change the authentication method for Azure DevOps, change the `VssCredential` type passed to `VssConnection` when you create it.
 
 <a name='azure-active-directory-authentication-for-rest-services'></a>
 
-##### Microsoft Entra authentication for REST services
+#### Microsoft Entra authentication for REST services
 
-```cs
+```csharp
 public static void AADRestSample()
 {
     // Create instance of VssConnection using Azure AD Credentials for Azure AD backed account
@@ -139,11 +133,11 @@ public static void AADRestSample()
 
 <a name='visual-studio-sign-in-prompt-microsoft-account-or-azure-active-directory-backed-for-rest-services-net-framework-only'></a>
 
-##### Visual Studio sign-in prompt (Microsoft Account or Microsoft Entra backend) for REST services (.NET Framework only)
+#### Visual Studio sign-in prompt (Microsoft Account or Microsoft Entra backend) for REST services (.NET Framework only)
 
 Since the .NET Core version doesn't support interactive dialogs, this sample applies only to the .NET Framework version of the clients.
 
-```cs
+```csharp
 public static void MicrosoftAccountRestSample()
 {
     // Create instance of VssConnection using Visual Studio sign-in prompt
@@ -151,11 +145,11 @@ public static void MicrosoftAccountRestSample()
 }
 ```
 
-##### OAuth Authentication for REST services
+#### OAuth authentication for REST services
 
 For more information, see [Azure DevOps auth samples](https://github.com/microsoft/azure-devops-auth-samples) and [Microsoft identity platform and OAuth 2.0 authorization code flow](/entra/identity-platform/v2-oauth2-auth-code-flow).
 
-```cs
+```csharp
 public static void OAuthSample()
 {
     // Create instance of VssConnection using OAuth Access token
@@ -163,9 +157,9 @@ public static void OAuthSample()
 }
 ```
 
-##### Personal access token authentication for REST services
+#### Personal access token authentication for REST services
 
-```cs
+```csharp
 public static void PersonalAccessTokenRestSample()
 {
     // Create instance of VssConnection using Personal Access Token

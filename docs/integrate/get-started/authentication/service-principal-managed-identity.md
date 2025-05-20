@@ -19,7 +19,7 @@ monikerRange: 'azure-devops'
 > [!NOTE]
 > Azure Active Directory (Azure AD) is now Microsoft Entra ID. For more information, see [New name for Azure AD](/entra/fundamentals/new-name).
 
-Add [Microsoft Entra](entra.md) service principals and managed identities as application identities into your Azure DevOps Services organizations to grant them access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when you authenticate applications that power automation workflows in your company. 
+Add [Microsoft Entra](entra.md) service principals and managed identities as application identities into your Azure DevOps Services organizations, which grant them access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when you authenticate applications that power automation workflows in your company. 
 
 ## About service principals and managed identities
 
@@ -41,9 +41,9 @@ Create an [application service principal](#option-1-create-an-application-servic
 
 When you create a new application registration, an application object is created in Microsoft Entra ID. The **application service principal** is a representation of this application object for a given tenant. When you register an application as a multitenant application, there's a unique service principal object that represents the application object for every tenant the application is added to.
 
-Further information:
+For more information, see the following articles:
 * [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals)
-* [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
+* [Secure your service principals](/azure/active-directory/fundamentals/service-accounts-principal)
 * [Use the portal to create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 #### Option 2: Create a managed identity
@@ -54,9 +54,9 @@ Creating managed identities in the Azure portal differs significantly from setti
 * **User-assigned managed identity** You might also create a managed identity as a standalone Azure resource by creating a user-assigned managed identity and assign it to one or more instances of an Azure service. For user-assigned managed identities, the identity is managed separately from the resources that use it.
 
 For more information, see the following articles and video:
-* [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
+* [Learn about managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview)
 * [Manage user-assigned managed identities](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities)
-* [Configure managed identities for Azure resources on a VM using the Azure portal](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
+* [Configure managed identities for Azure resources on a virtual machine using the Azure portal](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b9cf4e49-db98-4247-8770-b8707b043f17]
 
@@ -93,56 +93,13 @@ Management of service principals differs from user accounts in the following key
 
 ### 5. Get a Microsoft Entra ID token
 
-#### (a) Acquire a Microsoft Entra ID token programmatically
+#### Acquire a Microsoft Entra ID token programmatically
 
 Acquiring an access token for a managed identity can be done by following along with the Microsoft Entra ID documentation. See the examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token).
 
 The returned access token is a JSON web token (JWT) with the defined roles, which can be used to access organization resources using the token as *Bearer*.
 
-#### (b) Acquire a Microsoft Entra ID token with the Azure CLI
-For ad-hoc operations, it might be easier to acquire a one-off Microsoft Entra ID token through the Azure CLI. This approach is preferred for operations that don't need a persistent token to be regularly rotated, like API calls or git clone operations.
-
-**Prerequisites**
-* **Azure tenant id and subscription id**: Make sure the subscription is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your tenant or subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
-* **Azure app client ID and client secret**
-* [**Azure CLI**](/cli/azure/install-azure-cli)
-
-These instructions are provided by the Databricks docs and more details can be found on [their page](/azure/databricks/dev-tools/service-prin-aad-token).
-
-  1. Sign in to the Azure CLI as the service principal using the `az devops login` command.
-  2. Follow the on-screen instructions and finish signing in.
-  ``` powershell
-  # To authenticate a service principal with a password or cert:
-  az login --service-principal -u <app-id> -p <password-or-cert> --tenant <tenant>
-
-  # To authenticate a managed identity:
-  az login --identity
-  ```
-
-  3. Set the right correct subscription for the signed-in service principal by entering the command:
-  ``` powershell
-  az account set -s <subscription-id>
-  ```
-
-  4. Generate a Microsoft Entra ID access token with the `az account get-access-token` the Azure DevOps resource ID: `499b84ac-1321-427f-aa17-267ca6975798`.
-  ``` powershell
-  $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
-  ```
-
-  5. Now, you can use `az cli` commands per usual. Let's try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
-  ```powershell
-  $apiVersion = "7.1-preview.1"
-  $uri = "https://dev.azure.com/${yourOrgname}/_apis/projects?api-version=${apiVersion}"
-  $headers = @{
-      Accept = "application/json"
-      Authorization = "Bearer $accessToken"
-  }
-  Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -ExpandProperty value ` | Select-Object id, name
-  ```
-
-
-> [!NOTE]
-> Use the Azure DevOps application ID, not our resource URI, for generating tokens.
+For ad-hoc operations, it might be easier to [acquire a one-off Microsoft Entra ID token through the Azure CLI](../../../cli/entra-tokens.md#acquiring-a-token-for-a-service-principal). This approach is preferred for operations that don't need a persistent token to be regularly rotated, like API calls or git clone operations.
 
 ### 6. Use the Microsoft Entra ID token to authenticate to Azure DevOps resources
 
@@ -160,7 +117,7 @@ Some common scenarios for authenticating with service principals besides making 
 * Connect your service principal to a NuGet feed with [Nuget.exe](../../../artifacts/nuget/nuget-exe.md) or [dotnet](../../../artifacts/nuget/dotnet-setup.md).
 * [Publish extensions to the Visual Studio Marketplace via command line](../../../extend/publish/command-line.md) with your service principal.
 * Create [secret-free service connections in Azure Pipelines](../../../pipelines/library/connect-to-azure.md) backed by service principals or managed identities.
-* [Clone repos using a service principal with Git Credential Manager](../../../repos/git/set-up-credential-managers.md)
+* [Make clones of repos using a service principal with Git Credential Manager](../../../repos/git/set-up-credential-managers.md)
 
 ## How service principals differ from users
 
@@ -192,9 +149,9 @@ A: You can only add a managed identity from the same tenant that your organizati
 
 1. Create a [user-assigned managed identity](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities) in Azure portal for your resource tenant. 
 2. Connect it to a [virtual machine and assign this managed identity](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) to it. 
-3. Create a [key vault](/azure/key-vault/general/quick-create-portal) and generate a [certificate](/azure/key-vault/certificates/quick-create-portal) (can't be of type "PEM"). When you generate this certificate, a secret with the same name is also generated, which we use later. 
-4. Grant access to the managed identity so that it can read the private key from the key vault. Create an access policy in the key vault with the "Get/List" permissions (under "Secret permissions" and search for the managed identity under "Select principal."
-5. Download the created certificate in "CER" format, which ensures that it doesn't contain the private part of your certificate.
+3. Create a [key vault](/azure/key-vault/general/quick-create-portal) and generate a [certificate](/azure/key-vault/certificates/quick-create-portal) (can't be of type `PEM`). When you generate this certificate, a secret with the same name is also generated, which we use later. 
+4. Grant access to the managed identity so that it can read the private key from the key vault. Create an access policy in the key vault with the "Get/List" permissions, under "Secret permissions" and search for the managed identity under "Select principal."
+5. Download the created certificate in `CER` format, which ensures that it doesn't contain the private part of your certificate.
 6. Create a new application registration in the target tenant.
 7. Upload the downloaded certificate to this new application in the "Certificates & secrets" tab.
 8. Add this application's service principal to the Azure DevOps organization we want it to access and remember to set up the service principal with any required permissions.

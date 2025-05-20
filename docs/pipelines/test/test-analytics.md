@@ -7,7 +7,7 @@ ms.custom: continuous-test, cross-service
 ms.author: jeom
 author: raviLiftr
 ms.date: 06/28/2019
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Test Analytics

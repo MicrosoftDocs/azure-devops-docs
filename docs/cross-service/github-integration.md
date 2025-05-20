@@ -8,7 +8,7 @@ ms.topic: overview
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 03/05/2025
 ---
  
@@ -36,14 +36,6 @@ Azure Boards and Azure Pipelines offer multiple integration points with GitHub a
 | **Feature** | **Description** |
 |-------------|-----------------|
 | **Invite GitHub collaborators into Azure DevOps** | Provides support for inviting GitHub account users to collaborate within an Azure DevOps project. For more information, see [Invite GitHub collaborators into Azure DevOps (Release Notes)](/azure/devops/release-notes/2019/sprint-155-update#invite-github-collaborators-into-azure-devops). |
-| **Connect to a GitHub repository from Visual Studio** | Provides a user interface to support cloning GitHub repositories, pushing and pulling commits, and more. For more information, see [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison?view=vs-2019&&preserve-view=true). |
-
-::: moniker-end
-
-::: moniker range="= azure-devops-2019"
-
-| **Feature** | **Description** |
-|-------------|-----------------|
 | **Connect to a GitHub repository from Visual Studio** | Provides a user interface to support cloning GitHub repositories, pushing and pulling commits, and more. For more information, see [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison?view=vs-2019&&preserve-view=true). |
 
 ::: moniker-end

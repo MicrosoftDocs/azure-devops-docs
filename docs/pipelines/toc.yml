@@ -29,15 +29,15 @@
   - name: Pipeline default branch
     href: process/pipeline-default-branch.md
   - name: Clone or import a pipeline
-    href: ./get-started/clone-import-pipeline.md
     displayName: export, copy
+    href: ./get-started/clone-import-pipeline.md
   - name: Manage pipelines with Azure CLI
     href: get-started/manage-pipelines-with-azure-cli.md
   - name: Configure pipelines to support work tracking
     href: integrations/configure-pipelines-work-tracking.md
   - name: Informational runs
-    href: process/information-run.md
     displayName: information run
+    href: process/information-run.md
   - name: View pipeline history (Classic)
     href: release/history.md
 - name: Pipeline structure & logic
@@ -105,8 +105,8 @@
     - name: Task index
       href: /azure/devops/pipelines/tasks/reference/
     - name: Task types & usage
-      href: process/tasks.md
       displayName: custom tasks, task versions, task control options, conditions, task tool installers, build tool installers
+      href: process/tasks.md
     - name: Task groups (Classic)
       href: release/task-groups.md
     - name: Add a custom task extension
@@ -114,33 +114,35 @@
     - name: Upload tasks to project collection
       href: ../extend/develop/upload-tasks.md?toc=/azure/devops/pipelines/toc.json
     - name: Use tasks to increase run retention
-      href: build/run-retention.md
       displayName: retention, pipelines, runs
+      href: build/run-retention.md
     - name: Run a PowerShell script
-      href: scripts/powershell.md
       displayName: powershell, scripts
+      href: scripts/powershell.md
     - name: Run Git commands
-      href: scripts/git-commands.md
       displayName: scripts, git, cmd, commands
+      href: scripts/git-commands.md
     - name: Cross-platform scripts
-      href: scripts/cross-platform-scripting.md
       displayName: cross platform, scripts
+      href: scripts/cross-platform-scripting.md
     - name: Logging commands
       href: scripts/logging-commands.md
     - name: File matching patterns
       href: tasks/file-matching-patterns.md
+    - name: Cache NuGet packages
+      href: artifacts/caching-nuget.md
   - name: Templates, parameters, & expressions
     items:
     - name: Templates
-      href: process/templates.md
       displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
+      href: process/templates.md
     - name: Template parameters
       href: process/template-parameters.md
     - name: Template expressions
       href: process/template-expressions.md
     - name: Use runtime parameters
-      href: process/runtime-parameters.md
       displayName: parameters in pipelines, conditionals, loop, data types
+      href: process/runtime-parameters.md
     - name: Process parameters (Classic)
       href: release/parameters.md
   - name: Variables
@@ -192,7 +194,7 @@
     - name: Virtual machine resource
       href: process/environments-virtual-machines.md
     - name: Use secure files
-      href: library/secure-files.md   
+      href: library/secure-files.md
   - name: Triggers
     items:
     - name: Types of triggers
@@ -208,8 +210,8 @@
       displayName: build completion, completion trigger
       href: release/pipeline-triggers-classic.md
     - name: Release triggers (Classic)
-      href: release/triggers.md
       displayName: release trigger, stage trigger, deploy PR, scheduled trigger
+      href: release/triggers.md
   - name: Approvals, checks, & gates
     items:
     - name: Release approval and gates overview
@@ -243,8 +245,8 @@
     displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
     href: agents/agents.md
   - name: Managed DevOps pools
-    href: /azure/devops/managed-devops-pools/overview
     displayName: pools, agents
+    href: /azure/devops/managed-devops-pools/overview
   - name: Agent version 4.x
     href: agents/v4-agent.md
   - name: Agent version 3.x
@@ -301,17 +303,17 @@
       displayName: caching, cache
       href: artifacts/caching-nuget.md
     - name: View pipeline history (Classic)
-      href: release/history.md
       displayName: history
+      href: release/history.md
     - name: Classic pipelines configuration
-      href: release/options.md
       displayName: classic, build options
+      href: release/options.md
     - name: Publish & download pipeline artifacts
-      href: artifacts/pipeline-artifacts.md
       displayName: publish, download, artifacts
+      href: artifacts/pipeline-artifacts.md
     - name: Publish & download build artifacts
-      href: artifacts/build-artifacts.md
       displayName: build, download, publish, artifacts
+      href: artifacts/build-artifacts.md
   - name: Deploy
     items:
     - name: Deploy to Azure
@@ -323,7 +325,7 @@
         - name: Azure Resource Manager service connection
           displayName: resource manager, service connection, service principal
           href: library/connect-to-azure.md
-        - name: Azure Resource Manager special cases 
+        - name: Azure Resource Manager special cases
           displayName: agent-assigned identity, publish profile
           href: library/azure-resource-manager-alternate-approaches.md
         - name: Manually configure workload identity service connections
@@ -331,8 +333,8 @@
         - name: Troubleshoot workload identity service connections
           href: release/troubleshoot-workload-identity.md
         - name: Troubleshoot Azure Resource Manager service connections
-          href: release/azure-rm-endpoint.md
           displayName: service connection, service principal, Azure resource manager, azure
+          href: release/azure-rm-endpoint.md
       - name: Azure App Service (Web Apps)
         items:
         - name: Deploy to App Service using Azure Pipelines
@@ -422,8 +424,8 @@
         displayName: release, deploy, variables
         href: release/variables.md
       - name: Release triggers (Classic)
-        href: release/triggers.md
         displayName: release trigger, stage trigger, deploy PR, scheduled trigger
+        href: release/triggers.md
       - name: Deploy pull request Artifacts
         displayName: pr release, deployment
         href: release/deploy-pull-request-builds.md
@@ -464,8 +466,8 @@
       displayName: artifacts, source, release artifacts
       href: release/artifacts.md
     - name: Use the .artifactignore file
-      href: ../artifacts/reference/artifactignore.md?toc=/azure/devops/pipelines/toc.json
       displayName: artifactignore, gitignore
+      href: ../artifacts/reference/artifactignore.md?toc=/azure/devops/pipelines/toc.json
     - name: NuGet
       items:
       - name: Publish packages to internal and external feeds
@@ -483,11 +485,11 @@
     - name: Maven
       items:
       - name: Publish Maven packages to internal and external feeds
-        href: artifacts/publish-maven-artifacts.md
         displayName: Maven, publish
+        href: artifacts/publish-maven-artifacts.md
       - name: Restore packages
-        href: packages/maven-restore.md
         displayName: Maven, restore
+        href: packages/maven-restore.md
     - name: Gradle
       displayName: Gradle, package
       href: artifacts/build-publish-artifacts-gradle.md
@@ -626,7 +628,7 @@
       href: reports/pipelinereport.md
     - name: Monitor your pipelines with dashboard widgets
       href: reports/pipeline-widgets.md
-- name: Security
+- name: Security & permissions
   items:
   - name: Set retention policies
     displayName: service endpoints, artifact retention, test retention, copy files
@@ -681,9 +683,9 @@
       href: policies/permissions.md#service-connection-permissions
     - name: Task group permissions
       href: policies/permissions.md#task-group-permissions
-  - name: Security best practices
+  - name: Security
     items:
-    - name: Overview
+    - name: Secure Azure Pipelines
       displayName: security, repo protection, malicious code, assume breach
       href: security/overview.md
     - name: Approach to securing YAML pipelines
@@ -707,9 +709,6 @@
       href: security/inputs.md
 - name: Integration
   items:
-  - name: Microsoft Teams
-    displayName: integrations, teams
-    href: integrations/microsoft-teams.md
   - name: Slack
     displayName: integrations, slack
     href: integrations/slack.md

@@ -28,7 +28,7 @@ Build your app with any of the following languages.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::row:::
     :::column:::
@@ -106,8 +106,6 @@ Build your app with any of the following languages.
 
 ::: moniker-end
 
-
-
 ::: moniker range="<=azure-devops"
 
 ## Deploy your app
@@ -116,7 +114,7 @@ Deploy your app to any of the following platforms.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::row:::
     :::column:::
@@ -174,5 +172,4 @@ Deploy your app to any of the following platforms.
 :::row-end:::
 
 ::: moniker-end
-
 

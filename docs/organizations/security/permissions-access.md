@@ -37,15 +37,13 @@ To assign or change an access level, see [Add users and assign licenses](../acco
 
 <a id="agile-tools-and-work-tracking"></a>
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Azure Boards
 
 You can plan and track work from the web portal **Boards** hub, and using Visual Studio, Excel, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). To change permissions, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md). In addition to the permissions set at the [project level via the built-in groups](change-project-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](set-permissions-access-work-tracking.md) and individual [queries and query folders](../../boards/queries/set-query-permissions.md).  
 
 ::: moniker-end
-
-
 
 > [!NOTE]
 > Team administrators can configure settings for their team's tools. Organization owners and members of the **Project Administrators** group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Change project-level permissions](change-project-level-permissions.md).
@@ -90,7 +88,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 [!INCLUDE [temp](includes/boards-plans.md)]
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Azure Repos
 
@@ -136,7 +134,7 @@ You can use [Git repositories](../../repos/git/index.yml) to host and collaborat
 
 <a id="pipelines"></a>
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Azure Pipelines
 
@@ -150,7 +148,7 @@ You can define and manage your builds and releases from the web portal **Pipelin
 
 ::: moniker-end  
   
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 ### Build  
 
@@ -168,9 +166,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 ::: moniker-end
 
-
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Azure Test Plans
 
@@ -178,11 +174,9 @@ Users granted **Basic + Test Plans** or **Visual Studio Enterprise** access leve
 
 ::: moniker-end
 
-
-
 [!INCLUDE [temp](includes/test.md)]
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Azure Artifacts
 
@@ -194,13 +188,11 @@ You can manage feeds from the web portal, **Artifacts**. Users with at least Sta
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 You can manage feeds from the web portal, **Artifacts**. Users with at least Basic access can access Azure Artifacts features. Users with Stakeholder access can't. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 ::: moniker-end
-
-
 
 [!INCLUDE [temp](includes/package-feeds.md)]
 
@@ -231,7 +223,7 @@ You can define and manage team dashboards from the web portal, **Dashboards**. F
 
 [!INCLUDE [temp](includes/report.md)]
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Power BI Integration and Analytics views
 

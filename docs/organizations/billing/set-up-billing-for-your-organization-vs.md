@@ -8,7 +8,7 @@ ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2025
+ms.date: 04/07/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -28,7 +28,7 @@ Setting up billing in Azure DevOps is essential for managing costs associated wi
 >    - Microsoft-hosted CI/CD
 >    - Self-hosted CI/CD
 > - Before you delete your organization resource in the Azure portal, ensure you changed the billing subscription. Deleting the resource before this change might result in reverting to the free tier of service for your organization. For more information, see [Billing FAQs](billing-faq.yml#azure-portal-integration).
-> - When billing gets canceled or changed, a resource group gets left behind in the old Azure subscription. It's safe to delete these resource groups if empty. These resource groups take the naming format, `VisualStudioOnline-<DEVOPS-ORG-HOSTID-WITHOUT-DASHES>`.
+> - When billing gets canceled or changed, a resource group gets left behind in the old Azure subscription. Despite Azure's warning that "Dependent resources will be deleted," it's safe to delete these resource groups. The Azure DevOps organization won't be deleted or harmed. These resource groups take the naming format, `VisualStudioOnline-<DEVOPS-ORG-HOSTID-WITHOUT-DASHES>`.
 
 ## Prerequisites
 
@@ -137,6 +137,6 @@ Assign any of the following roles to a user under the subscription your organiza
 
 ## Related articles
 
-* [Increase Azure Artifacts storage limit](../../artifacts/start-using-azure-artifacts.md#increase-azure-artifacts-storage-limit)
+* [Increase Azure Artifacts storage limit](../../artifacts/start-using-azure-artifacts.md#increase-artifacts-storage-limit)
 * [Buy Azure Test Plans](buy-basic-access-add-users.md)
 * [Learn about cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)

@@ -64,20 +64,7 @@ Individual contributors can customize their experience in Azure DevOps by settin
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      **General**
-   :::column-end:::
-   :::column span="2":::
-      - [Set your preferences](set-your-preferences.md)
-   :::column-end:::
-   :::column span="2":::
-      For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md)
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
+
 :::row:::
    :::column span="1":::
       **Security**
@@ -102,7 +89,7 @@ Individual contributors can customize their experience in Azure DevOps by settin
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
    :::column-end:::
    :::column span="2":::
-      For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
+      For an overview of supported authentication methods, see [Authentication overview](../../integrate/get-started/authentication/authentication-guidance.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -115,6 +102,7 @@ Individual contributors can customize their experience in Azure DevOps by settin
    :::column span="2":::
       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
+      - [Manage OAuth app authorizations](manage-authorizations.md)
    :::column-end:::
    :::column span="2":::
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
@@ -130,7 +118,6 @@ Individual contributors can customize their experience in Azure DevOps by settin
       - [Set personal or team favorites](../../project/navigation/set-favorites.md)
    :::column-end:::
    :::column span="2":::
-      For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -224,7 +211,6 @@ The following table provides an overview of the Agile tools and resources that t
 :::row-end:::
 ---
 
-
 <a id="project"></a>
 
 ## Project Administrator role and managing projects
@@ -247,14 +233,12 @@ From the administrative **Project settings** page, you can configure settings av
 ![Screenshot of Project settings page, Azure DevOps Server 2022.](media/about/project-settings-server-2022.png)  
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+::: moniker range="<azure-devops-2022"
 **Project-level settings**  
 From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
 
 ![Screenshot of Project settings page, Azure DevOps Server versions.](media/about/project-settings-server-2020.png)  
 ::: moniker-end
-
-
 
 :::row:::
    :::column span="1":::
@@ -297,7 +281,7 @@ From the administrative **Project settings** page, you can configure settings av
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **Services**
@@ -522,7 +506,6 @@ From the administrative **Organization settings** page, you can configure settin
 > [!NOTE]  
 > If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** and **Projects** pages. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
-
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization settings options, cloud.](media/about/organization-settings-options-cloud.png) 
 
@@ -536,7 +519,7 @@ From the administrative page for a collection, you can configure the settings sh
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+::: moniker range="<azure-devops-2022"
 **Collection-level settings**  
 
 From the administrative page for a collection, you can configure the settings shown in the following image. 
@@ -544,8 +527,6 @@ From the administrative page for a collection, you can configure the settings sh
 ![Screenshot of Collection settings options, Azure DevOps Server 2019-2020 versions.](media/about/collection-settings-options-server-versions.png) 
 
 ::: moniker-end
-
-
 
 ::: moniker range="azure-devops"
 
@@ -758,7 +739,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **Boards: Process**
@@ -798,7 +779,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Artifacts storage consumption](../../artifacts/artifact-storage.md)
    :::column-end:::
    :::column span="2":::
-     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Start using Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-azure-artifacts-storage-limit).
+     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Start using Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-artifacts-storage-limit).
    :::column-end:::
 :::row-end:::
 ---

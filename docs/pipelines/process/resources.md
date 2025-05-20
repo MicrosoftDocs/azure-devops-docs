@@ -4,7 +4,7 @@ description: Learn about defining and consuming YAML resources that you can use 
 ms.topic: conceptual
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.date: 07/01/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Resources in YAML pipelines
@@ -205,7 +205,6 @@ Regular job artifacts aren't automatically downloaded. Use `download` explicitly
 Artifacts from the `pipeline` resource are downloaded to the *$(PIPELINE.WORKSPACE)/\<pipeline-identifier>/\<artifact-identifier>* folder. For more information, see [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md).
 
 The optional `artifact` property specifies artifact names. If not specified, all available artifacts are downloaded. The optional `patterns` property defines patterns that represent files to include. For full schema information, see the [steps.download definition](/azure/devops/pipelines/yaml-schema/steps-download).
-
 
 ```yaml
 - job: deploy_windows_x86_agent

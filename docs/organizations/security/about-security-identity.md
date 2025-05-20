@@ -1,5 +1,5 @@
 ---
-title: About security, authentication, authorization, and security policies 
+title: About authentication, authorization, and security policies 
 titleSuffix: Azure DevOps
 description: Learn how Azure DevOps manages security through authentication, authorization, and policies 
 ms.subservice: azure-devops-security
@@ -10,11 +10,11 @@ monikerRange: '<= azure-devops'
 ms.date: 07/11/2024
 ---
 
-# About security, authentication, and authorization 
+# About authentication, authorization, and security policies
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure DevOps employs various security concepts to ensure that only authorized users can access features, functions, and data. Users gain access to Azure DevOps through the authentication of their security credentials and the authorization of their account entitlements. The combination of both determine the user's access to specific features or functions. 
+Azure DevOps employs various security concepts to ensure that only authorized users can access features, functions, and data. Users gain access to Azure DevOps through the authentication of their security credentials and the authorization of their account entitlements. The combination of both determines the user's access to specific features or functions. 
 
 This article builds on the information provided in [Get started with permissions, access, and security groups](../security/about-permissions.md). Administrators can benefit from understanding the account types, authentication methods, authorization methods, and policies used to secure Azure DevOps.  
 
@@ -147,27 +147,18 @@ Microsoft Entra ID and MSA support cloud authentication. We recommend using Micr
 
 For on-premises deployments, AD is recommended for managing a large group of users. For more information, see [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups).
 
-### Authentication methods, integrating with other services and apps
+### Authentication
 
-Other applications and services can integrate with Azure DevOps. To access your account without repeatedly asking for user credentials, apps can use the following authentication methods:
+To access your account without repeatedly asking for your username and password, you may use any of the available [authentication methods](../../integrate/get-started/authentication/authentication-guidance.md). This is helpful to access your account programmatically instead of through the website, or if you are an [app developer building](../../integrate/index.md) on top of Azure DevOps REST APIs. Some of the most popular authentication mechanisms include:
 
-- [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens on users' behalf for accessing [REST APIs](/rest/api/azure/devops/).
-  - There are two OAuth app models available: **Azure DevOps OAuth is planned for deprecation in 2026. Use [Microsoft Entra OAuth](../../integrate/get-started/authentication/entra-oauth.md) to build on-behalf-of user apps.**
-  - You can also generate Microsoft Entra tokens for ad-hoc operations on your own behalf, for accessing resources like builds or work items or accessing [Azure DevOps REST APIs](/rest/api/azure/devops/).
+- [OAuth](../../integrate/get-started/authentication/oauth.md) to build applications that perform actions on-behalf-of the app users. Users must provide consent to the app. [Microsoft Entra OAuth](../../integrate/get-started/authentication/entra-oauth.md) is recommended for new apps.
+- [Service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md) can be used to build apps or tools that automate workflows that regularly access organization resources. Use this app identity to issue Microsoft Entra tokens on-behalf-of the application itself.
+- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) (PATs) can be used for ad-hoc requests or early prototyping. It is not recommended for long-term app development as they can be easily leaked and used maliciously when leaked. Some clients are still reliant on PATs and have now
 
-- [Service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) to generate Microsoft Entra tokens on behalf of an application or service, typically automating workflows that need to access Azure DevOps resources. Most actions traditionally performed by a service account and a PAT can be done using a service principal or managed identity.
+> [!TIP]  
+> Remember to always [safely store credentials](credential-storage.md)!
 
-- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) (PATs) to generate tokens on your behalf. PATs might be helpful for clients like Xcode and NuGet that don't support Microsoft accounts or features, like multifactor authentication (MFA).
-
-- [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys for yourself when you use Linux, macOS, or Windows running [Git for Windows](https://www.git-scm.com/download/win) and can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [PATs](../accounts/use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
-
-By default, your account or collection allows access for all authentication methods. 
-You can limit access by specifically restricting each method. When you deny access to an authentication method, no app can use that method to access your account. Any app that previously had access receives an authentication error and can't access your account.
-
-For more information, see the following articles:
-- [Credential storage for Azure DevOps](credential-storage.md).
-- [Guidance for authentication](../../integrate/get-started/authentication/authentication-guidance.md).
-
+By default, your organization allows access for all authentication methods. Organization admins can [restrict access to these authentication methods by disabling security policies](../accounts/change-application-access-policies.md). Tenant admins can further [reduce PAT risk by restricting the ways in which they can be created](../accounts/manage-pats-with-policies-for-administrators.md). 
 <a id="authorization"></a> 
 
 ## Authorization
@@ -194,28 +185,16 @@ For more information, see [Security namespaces and permission reference](namespa
 
 ::: moniker range="azure-devops"
 
-To secure your organization and code, you can set various policies. Specifically, you can enable or disable the following policies: 
+To secure your organization and code, you can enable or disable various policies if you are an organization-level ([Project Collection Administrator](look-up-project-collection-administrators.md) or tenant-level ([Azure DevOps Administrator](/entra/identity/role-based-access-control/permissions-reference#azure-devops-administrator)) admin, depending on the policy. Some notable ones to consider include:
+- [Specify a privacy policy URL](../accounts/add-privacy-policy-url.md) that describes how you handle both internal and external guest data privacy.
+- Determine if organization users should be [allowed to create public projects](../projects/make-project-public.md).
 
-### General 
-
-- **Privacy policy URL**: Specifies a URL that links to your custom document that describes how you handle both internal and external guest data privacy. For more information, see [Add a privacy policy URL for your organization](../accounts/add-privacy-policy-url.md).  
-
-### Application connection and security policies
-
-Use the Microsoft Entra tenant policy to restrict creating new organizations to desired users only. This policy is turned off by default and only valid when the organization is connected to Microsoft Entra ID. For more information, see [Restrict organization creation](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
-
-The following policies determine the access granted to users and applications within your organizations:
-- [Non-Microsoft application access via OAuth](../accounts/change-application-access-policies.md#change-application-connection-policies).
-- [SSH authentication access](../accounts/change-application-access-policies.md#change-application-connection-policies).
-- **Allow public projects**: When enabled, users can create public projects that allow nonmembers of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. For more information, see [Make your project public](../projects/make-project-public.md). 
-- **Log Audit events** - Turn on the ability to track [Auditing events and streams](../audit/azure-devops-auditing.md) for your organization.
-- [Enable Microsoft Entra Conditional Access Policy (CAP) validation](../accounts/change-application-access-policies.md#cap-support-on-azure-devops).
-
-### User policies 
-- **External guest access** (*Only valid when the organization is connected to Microsoft Entra ID.*):  When enabled, invitations can be sent to email accounts of users who aren't members of the tenant's Microsoft Entra ID via the **Users** page. For more information, see [Add external users to your organization](../accounts/add-external-user.md).  
-- **Allow team and project administrators to invite new users**: Only valid when the organization is connected to Microsoft Entra ID. When enabled, team and project administrators can add users via the **Users** page. For more information, see [Restrict new user invitations from Project and Team Administrators](restrict-invitations.md).   
-- **Request access**: Only valid when the organization is connected to Microsoft Entra ID. When enabled, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed. For more information, see [Add external users to your organization](../accounts/add-external-user.md).  
-- **Invite GitHub users**: Only valid when the organization isn't connected to Microsoft Entra ID. When enabled, administrators can add users based on their GitHub user accounts from the **Users** page. For more information, see [Connect to GitHub/FAQs](../../boards/github/connect-to-github.md#faqs). 
+If the organization is connected to Microsoft Entra ID, even more security features are available to your organization.
+- [Restrict organization creation to specific users](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+- [Invite external guests to the organization](../accounts/add-external-user.md)
+- [Allow team and project administrators to invite new users](restrict-invitations.md)
+- [Enable Conditional Access policy (CAP) validation](../accounts/change-application-access-policies.md#cap-support-on-azure-devops).
+- Track [auditing events and streams](../audit/azure-devops-auditing.md) in your organization.
 
 <a id="project-scoped-user-group"></a> 
 

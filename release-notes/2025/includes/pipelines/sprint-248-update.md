@@ -14,7 +14,7 @@ Pipeline expression functions allow you to write powerful YAML pipelines. In thi
 * `trim(string)` that returns a new string in which whitespaces at the beginning and end of the string are removed
 
 For example, you can use the `iif` function to dynamically select a pool for running your pipeline. If you want to build pull requests using the Azure Pipelines pool, but all other runs should use a Managed DevOps pool, you can write the following pipeline.
-```
+```yaml
 variables:
   poolToUse: ${{ iif(eq(variables['Build.Reason'], 'PullRequest'), 'Azure Pipelines', 'ManagedDevOpsPool')}}
 
@@ -23,7 +23,7 @@ stages:
   pool: ${{variables.poolToUse}}
   jobs:
   - job:
-    steps:   
+    steps:
     - task: DotNetCoreCLI@2
       inputs:
         command: 'build'
@@ -48,9 +48,7 @@ stages:
 
 ### Enhancements to ManualValidation task
 
-
-
-The [ManualValidation](/azure/devops/pipelines/tasks/reference/manual-validation-v1) task enables you to pause a pipeline run and wait for manual intervention. One scenario for using this task is manual testing. 
+The [ManualValidation](/azure/devops/pipelines/tasks/reference/manual-validation-v1) task enables you to pause a pipeline run and wait for manual intervention. One scenario for using this task is manual testing.
 
 To increase security of your pipeline, you may wish to restrict who can complete the task and resume the pipeline run. To this end, we're introducing a new version of the task that provides two additional parameters:
 
@@ -72,7 +70,6 @@ In the `approvers` property, you can use the following values (comma separated) 
 * Email address,
 * Permission-Group,
 * Project-Team,
-* [ProjectName]\[Permission Group],
-* [Org]\[Permission Group],
-* [ProjectName]\[Project Team]
-
+* [ProjectName]\\[Permission Group],
+* [Org]\\[Permission Group],
+* [ProjectName]\\[Project Team]

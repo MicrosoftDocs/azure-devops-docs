@@ -17,13 +17,11 @@ ms.date: 10/05/2022
 
 Use this index to quickly access example queries and information on opening, defining, and working with queries. To learn how to use the Query Editor, see [Define a query](using-queries.md). If you find that your queries take too long to return results, see [Define a query/Best practices](using-queries.md#best-practices).  
 
-
 <a id="examples"></a>  
 
 ## Example queries   
 
 You can list work items based on the following criteria...  
-
 
 ---
 :::row:::
@@ -105,7 +103,7 @@ You can list work items based on the following criteria...
       - [Items you've been associated with](history-and-auditing.md)  
 
       **Team focus queries**
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - [Assigned to a member of a team](query-by-workflow-changes.md#group)  
       - [Assigned to a team's area path](query-by-area-iteration-path.md#team-area-path)  
       - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  
@@ -128,16 +126,14 @@ You can list work items based on the following criteria...
 
 <a id="tasks"></a>
 
-
 ## Query tasks 
-
 
 ---
 :::row:::
    :::column span="1":::
       - [Add a query](using-queries.md) 
       - [Add a query chart](../../report/dashboards/charts.md) 
-      - [Add a query chart to a dashboard](../../report/dashboards/charts.md#add-chart-to-a-dashboard) 
+      - [Add a query chart to a dashboard](../../report/dashboards/charts.md#add-a-chart-to-a-dashboard) 
       - [Add a query tile to a dashboard](organize-queries.md#add-a-query-tile-to-a-dashboard))
       - [Add query results to a dashboard](using-queries.md#view-query-results-in-a-dashboard)
       - [Add a query folder](organize-queries.md) 
@@ -201,8 +197,6 @@ You can list work items based on the following criteria...
 The following table indicates the operators and macros available for the different field data types. Each field is associated with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the [Work item field index](../work-items/guidance/work-item-field.md). Operators available for defining a query clause depend on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see [Query fields, operators, and macros](query-operators-variables.md).
 
 [!INCLUDE [temp](../includes/note-macro-web-portal.md)]
-
-
 
 :::row:::
    :::column span="1":::
@@ -373,7 +367,6 @@ The following table indicates the operators and macros available for the differe
 > 3. The `@TeamAreas` macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions. 
 > 4. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
 
-
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 <a id="samples"></a>
@@ -472,8 +465,6 @@ The following table lists common query fields and their data type for which samp
    - [Work Item Type](titles-ids-descriptions.md) (String)  
    :::column-end:::
 :::row-end:::
-
-
 
 ## Related articles
 

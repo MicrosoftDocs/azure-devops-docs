@@ -70,10 +70,6 @@ To add a work item, select the :::image type="icon" source="../media/icons/add_i
 :::image type="content" source="media/quickstart/add-new-item-agile-s155.png" alt-text="Screenshot showing adding a new item on a board, new nav.":::
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-:::image type="content" source="media/quickstart/add-new-item-agile.png" alt-text="Screenshot showing adding a new item on a board, new nav.":::
-::: moniker-end
-
 The system automatically saves the work item with the title you entered. You can add as many work items you want by using this method. 
 
 To add details to any work item, select the title. Or, you can directly modify any field that displays. For example, you can reassign a work item by selecting **Assigned To**. For a description of each field, see [Create your backlog, Add details, and estimates](../backlogs/create-your-backlog.md#estimates). You can also [add tasks or child items as checklists on your cards](add-task-checklists.md).
@@ -105,16 +101,9 @@ You can quickly update a field or reassign ownership directly from the board. If
 
 You can apply filters interactively to focus on a subset of work. For example, you can filter the board to focus on work assigned to at team member for a specific sprint. To start filtering, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. For more information, see [Filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
-::: moniker range="=azure-devops-2019"
-:::image type="content" source="../backlogs/media/filter-boards/filter-kb-choose-filter.png" alt-text="Screenshot showing enabled field-based filtering, earlier versions.":::
-::: moniker-end
-
 In the following example image, we filtered all items assigned to Jamal and Raisa.
 ::: moniker range=">= azure-devops-2020"
 :::image type="content" source="../backlogs/media/filter-boards/filter-kb-filters-chosen-services.png" alt-text="Screenshot showing filtering on assignment field.":::
-::: moniker-end
-::: moniker range="azure-devops-2019"
-:::image type="content" source="../backlogs/media/filter-boards/filter-kb-filters-chosen.png" alt-text="Screenshot showing filtering on assignment field, earlier versions.":::
 ::: moniker-end
 
 ## Invite others to work on your board 
@@ -123,10 +112,6 @@ All members of a project can view and contribute to your board. To invite users 
 
 ::: moniker range=">= azure-devops-2020"
 :::image type="content" source="media/quickstart/kanban-board-url-s155.png" alt-text="Screenshot showing red square surrounding the URL for the board.":::
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-:::image type="content" source="media/quickstart/kanban-board-url.png" alt-text="Screenshot showing red square surrounding the board URL.":::
 ::: moniker-end
 
 To add users to your project, see [Add users to a project](../../organizations/security/add-users-team-project.md).
@@ -150,16 +135,6 @@ The following example image shows that on July 3, 101 items were in a *Researchi
 
 > [!TIP]
 > The selections you make only get set for you, and persist across sessions until you change them. 
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-Choose the chart as shown in the following image. 
-
-:::image type="content" source="media/kanban-basics-open-cfd.png" alt-text="Screenshot showing the cumulative flow diagram square, surrounded by red box.":::
-
-The CFD shows the count of items in each column for the past 30 weeks or less. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
-
-:::image type="content" source="media/ALM_KB_CumulativeFlow.png" alt-text="Screenshot showing a board, cumulative flow diagram.":::
 ::: moniker-end
 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For more information, see [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md). 

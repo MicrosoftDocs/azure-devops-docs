@@ -85,15 +85,6 @@ In each work item form, describe work, assign contributors, track status, and co
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-
-| Category | Requirements |
-|--------------|-------------|
-| **Access levels** | - To add work items to a board and use all other board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view boards, open and modify work items, and add child tasks to a checklist: At least **Stakeholder** access. You can't reorder or reparent a backlog item using drag-and-drop. You can't update a field on a card. |
-| **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
-
-::: moniker-end
-
 For more information, see [Default permissions and access for Azure Boards](permissions-access-boards.md).
 
 <a id="define-new-work">  </a>

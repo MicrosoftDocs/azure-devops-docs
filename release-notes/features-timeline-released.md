@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 9/4/2024
+ms.date: 5/19/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,63 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="7"><a href="2025/sprint-256-update.md" data-raw-source="[19 May 2025](2025/sprint-256-update.md)"> May 19 2025</a></td>
+    <td>Advanced Security now accepts results with URI locations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>GitHub Integration: Pull Request Mentions</td><td>Boards</td><td>Future</td></tr>
+    <td>Windows Server 2019 hosted image deprecation schedule</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Support for Jupyter Notebook Diffing in PR</td><td>Repos</td><td>Future</td></tr>
+    <td>Support for YAML pipelines in Test Plans</td><td>Test Plans</td><td>Future</td></tr>
+    <td>View Recent Test Results in Test Case</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Available Data for Rollup Columns in backlog</td><td>Reporting</td><td>Future</td></tr>
+<tr>
+    <td rowspan="3"><a href="2025/sprint-255-update.md" data-raw-source="[23 April 2025](2025/sprint-255-update.md)"> 23 April 2025</a></td>
+    <td>Manage high privilege scopes, pipeline decorators, and unpublished extensions</td><td>General</td><td>Future</td></tr>
+    <td>Advanced Security now accepts results with URI locations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>GitHub Integration: State Transition Support</td><td>Boards</td><td>Future</td></tr>
+<tr>
+    <td rowspan="13"><a href="2025/sprint-254-update.md" data-raw-source="[3 April  2025](2025/sprint-253-update.md)"> 3 April  2025</a></td>
+    <td>No new Azure DevOps OAuth apps beginning April 2025 </td><td>General</td><td>Future</td></tr>
+    <td>Server Name Indication (SNI) now mandatory for Azure DevOps Services </td><td>General</td><td>Future</td></tr>
+    <td>GitHub Integration: Improvements linking to commits, branches and pull requests</td><td>Boards</td><td>Future</td></tr>
+    <td>GitHub Integration: Show build status for YAML pipelines</td><td>Boards</td><td>Future</td></tr>
+    <td>Delivery Plans limit increased</td><td>Boards</td><td>Future</td></tr>
+    <td>TFVC check-in policies changes </td><td>Repos</td><td>Future</td></tr>
+    <td>Enhancement to GetRepository API</td><td>Repos</td><td>Future</td></tr>
+    <td>Enhancement to Pull Requests Query API</td><td>Repos</td><td>Future</td></tr>
+    <td>Improved visibility into YAML pipeline stage dependencies</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New Agent CDN</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Node 16 will be removed from pipelines-* Pipeline agent packages</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Retirement of action logging and switch to screen recording</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Auto-pause manual test run</td><td>Test Plans</td><td>Future</td></tr>
+ <tr>
+    <td rowspan="13"><a href="2025/sprint-253-update.md" data-raw-source="[20 March  2025](2025/sprint-253-update.md)"> 20 March  2025</a></td>
+    <td>Overlapping secrets for Azure DevOps OAuth </td><td>General</td><td>Future</td></tr>
+    <td>Deprecation of Languages statistics tags from the Project Summary Page </td><td>General</td><td>Future</td></tr>
+    <td>Delivery Plans permission added </td><td>General</td><td>Future</td></tr>
+    <td>Security overview risk page enhanced with new columns and filtering options</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Multi-repository publishing scenarios supported for GitHub Advanced Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Service hooks for GitHub Advanced Security alerts for Azure DevOps (preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>pnpm 9 support comes to GitHub Advanced Security for Azure DevOps dependency scanning </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Hosted image updates</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload identity federation uses Entra issuer</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Gradle@4 task</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Identity of user who requested a stage to run</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improvements on the Publish code coverage results v2 task</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Export test cases with custom columns in XLSX</td><td>Test Plans</td><td>Future</td></tr>
+  <tr>
+    <td rowspan="11"><a href="2025/sprint-252-update.md" data-raw-source="[24 February  2025](2025/sprint-253-update.md)"> 24 February  2025</a></td>
+    <td>Microsoft Entra profile information (preview) </td><td>General</td><td>Future</td></tr>
+    <td>Basic access included with GitHub Enterprise </td><td>General</td><td>Future</td></tr>
+    <td>Azure DevOps Allowed IP addresses</td><td>General</td><td>Future</td></tr>
+    <td>One click enablement for dependency scanning preview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Deleted branches removed from Advanced Security branch picker</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>GitHub Integration: Linking the Merge Commit </td><td>Boards</td><td>Future</td></tr>
+    <td>Increase Limit of Connected GitHub Repositories</td><td>Boards</td><td>Future</td></tr>
+    <td>Update on New Boards Hub Rollout</td><td>Boards</td><td>Future</td></tr>
+    <td>Pipelines using Ubuntu 24.04 will show warnings for certain tasks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Informational runs</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Undo test step in web and desktop runner</td><td>Test Plans</td><td>Future</td></tr>    
 <tr>
     <td rowspan="14"><a href="2025/sprint-251-update.md" data-raw-source="[12 February  2025](2025/sprint-251-update.md)"> 12 February  2025</a></td>
     <td>Removal of Generate Git Credentials Button in Repos and Wiki </td><td>General</td><td>Future</td></tr>
@@ -76,7 +133,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New release version for Test and Feedback Extensions (TFE)</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
-    <td rowspan="14"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
+    <td rowspan="16"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
     <td>Copy code block to clipboard </td><td>General</td><td>Future</td></tr>
     <td>Entra Profile information </td><td>General</td><td>Future</td></tr>
     <td>Pull request annotations for dependency and code scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>

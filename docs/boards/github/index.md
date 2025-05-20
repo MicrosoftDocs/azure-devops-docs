@@ -7,10 +7,9 @@ ms.service: azure-devops-boards
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 06/19/2023
 ---
-
 
 # About Azure Boards-GitHub integration 
 

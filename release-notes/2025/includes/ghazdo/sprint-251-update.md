@@ -13,13 +13,13 @@ Now, Advanced Security detects changes to your default branch and updates both t
 
 ### CodeQL installation for self-hosted agents supports proxy configurations
 
-If you have a network proxy configured and used the `enableAutomaticCodeQLInstall ` variable in the `AdvancedSecurity-CodeQL-Init` task, the task may have previously encountered the error message `[warning] Maximum number of redirects exceeded`  when downloading the CodeQL tool cache to your self-hosted agent. With this update, we introduce handling for network proxies so that automatic installation runs successfully.
+If you have a network proxy configured and used the `enableAutomaticCodeQLInstall` variable in the `AdvancedSecurity-CodeQL-Init` task, the task may have previously encountered the error message `[warning] Maximum number of redirects exceeded`  when downloading the CodeQL tool cache to your self-hosted agent. With this update, we introduce handling for network proxies so that automatic installation runs successfully.
 
 ### Alerts branch picker now displays all branches with a successful scan  
 
 The branch picker in GitHub Advanced Security has been updated to display all branches with a successful scan, even if no vulnerabilities are detected. Previously, only branches with alerts were shown, making it difficult to confirm whether a scan completed successfully.
 
-Both the repository-level alerts UX and the [Analysis - List API](https://learn.microsoft.com/rest/api/azure/devops/advancedsecurity/analysis/list?view=azure-devops-rest-7.2) now return branches with a successful SARIF submission for dependency and code scanning, improving scan visibility.
+Both the repository-level alerts UX and the [Analysis - List API](/rest/api/azure/devops/advancedsecurity/analysis/list?view=azure-devops-rest-7.2&preserve-view=true) now return branches with a successful SARIF submission for dependency and code scanning, improving scan visibility.
 
 ### Enhanced pull request annotations in GitHub Advanced Security
 

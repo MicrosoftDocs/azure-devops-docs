@@ -11,7 +11,6 @@ monikerRange: '< azure-devops'
 ms.date: 01/17/2023 
 ---
 
-
 # On-premises XML process customization
 
 [!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
@@ -22,7 +21,7 @@ You customize your work tracking experience to support your business and reporti
 
 [!INCLUDE [temp](../boards/includes/note-configure-customize.md)]
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 For Azure DevOps Server 2019 and later versions, you have a choice of process models. When you create a project collection, you'll need to choose between On-premises XML process model and Inheritance process model. For more information, see [Customize work tracking, Choose the process model for your project collection](./customize-work.md?view=azure-devops-2019&preserve-view=true#choose-process-model).  
 
@@ -40,7 +39,6 @@ For Azure DevOps Server 2019 and later versions, you have a choice of process mo
 You can perform the following tasks when you work with the On-premises XML process model. 
 
 <a id="on-prem-xml-process-model"></a>
-
 
 :::row:::
    :::column span="1":::
@@ -150,7 +148,6 @@ In addition, you can use the **witadmin** tool to list objects, rename WITs, per
 
 [!INCLUDE [temp](../includes/process-editor.md)]  
 
-
 <a id="before-you-customize"></a>
 
 ## Maintenance and upgrade implications
@@ -160,7 +157,6 @@ Before you customize, you should understand how your customizations may impact y
 Upgrades to an on-premises deployment can introduce new features that require updates to the objects used to track work. These objects include work item types, categories, and process configuration. Minimizing changes to the workflow for a WIT or the process configuration can help minimize the work you must do when you upgrade your deployment. 
 
 To minimize the amount of manual work you'll need to do after an upgrade, understand which customizations support an easy update path and which do not. 
-
 
 ### Compatible for quick updating  
 
@@ -173,7 +169,6 @@ With the following customizations, you can use the Configure Features Wizard to 
 - Office integration: Add or change how Project fields map to TFS fields    
 
 To learn more about the Configure Features Wizard, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
-
 
 ### Compatible, but may require manual updates
 
@@ -204,7 +199,6 @@ To learn more about reporting attributes, see [Add or modify work item fields to
 *	Put processes and all XML definition files under version control. Do not deploy objects that you define but have not stored in a repository.  
 *	Test your customized objects just as you would test your software.  
 *	Minimize the number of custom fields that you introduce. Minimize the number of fields that you make reportable.  
-
 
 ## Replace team area path with a team field  
 The default configuration for projects associates each team with an area path. If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.

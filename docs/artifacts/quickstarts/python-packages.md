@@ -4,7 +4,7 @@ description: Learn how to set up your project and manage your Python packages in
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 12/03/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 "recommendations": "true"
 ---
@@ -99,7 +99,6 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
     ```
 
 - - - 
-
 
 ## Publish packages
 

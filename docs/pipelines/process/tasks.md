@@ -15,9 +15,7 @@ ai-usage: ai-assisted
 A **task** performs an action in a pipeline and is a packaged script or procedure that's
 abstracted with a set of inputs. Tasks are the building blocks for defining automation in a pipeline. 
 
-
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 When you run a [job](phases.md), all the tasks are run in sequence, one after the other.
 To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
@@ -27,12 +25,6 @@ By default, all tasks run in the same context, whether that's on the [host](phas
 You might optionally use [step targets](#step-target) to control context for an individual task.
 
 Learn more about how to specify properties for a task with the [built-in tasks](../tasks/index.md). 
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-When you run a [job](phases.md), all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
-
 ::: moniker-end
 
 To learn more about the general attributes supported by tasks, see the [YAML Reference for *steps.task*](/azure/devops/pipelines/yaml-schema/steps-task).
@@ -48,7 +40,7 @@ subscription or collection, extends the task catalog with one or more tasks.
 You can also write your own [custom extensions](../../integrate/index.md)
 to add tasks to Azure Pipelines.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
 and a custom task, the in-box task takes precedence. You can use the task GUID or a fully qualified
@@ -80,9 +72,8 @@ The log will include an alert that a new major version is available.
 
 You can set which minor version gets used by specifying the full version number of a task after the `@` sign (example: `GoTool@0.3.1`). You can only use task versions that exist for your [organization](../../organizations/accounts/organization-management.md). 
 
-
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 In YAML, you specify the major version using `@` in the task name.
 For example, to pin to version 2 of the `PublishTestResults` task:
@@ -91,12 +82,6 @@ For example, to pin to version 2 of the `PublishTestResults` task:
 steps:
 - task: PublishTestResults@2
 ```
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
@@ -120,26 +105,6 @@ Consider cloning the pipeline and testing the cloned pipeline with the new major
 Each task offers you some **Control Options**.
 
 #### [YAML](#tab/yaml/)
-
-::: moniker range="azure-devops-2019"
-
-Control options are available as keys on the `task` section.
-
-```yaml
-- task: string # Required as first property. Name of the task to run.
-  inputs: # Inputs for the task.
-    string: string # Name/value pairs
-  condition: string # Evaluate this condition expression to determine whether to run this task.
-  continueOnError: boolean # Continue running even on failure?
-  displayName: string # Human-readable name for the task.
-  enabled: boolean # Run this task when the job runs?
-  env: # Variables to map into the process's environment.
-    string: string # Name/value pairs
-  name: string # ID of the step.
-  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
-```
-
-::: moniker-end
 
 ::: moniker range=" azure-devops-2020"
 
@@ -184,7 +149,7 @@ Control options are available as keys on the `task` section.
 
 ::: moniker-end
 
-:::moniker range=">= azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 > [!NOTE]
 > A given task or job can't unilaterally decide whether the job/stage continues. What it can do is offer a status of **succeeded** or **failed**, and downstream tasks/jobs each have a condition computation that lets them decide whether to run or not. The default condition which is effectively "run if we're in a successful state".
@@ -210,7 +175,6 @@ steps:
     testResultsFiles: "**/TEST-*.xml"
   condition: succeededOrFailed()
 ```
-
 
 ### Conditions
 
@@ -268,12 +232,6 @@ Use `retryCountOnTaskFailure` to specify the number of retries if the task fails
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-YAML pipelines aren't available in TFS.
-
-::: moniker-end
-
 #### [Classic](#tab/classic/)
 
 ### Enabled
@@ -328,13 +286,9 @@ Select this check box if you want the task to run even if the build or deploymen
 
 * * *
 
-
-
 ## Environment variables
 
 #### [YAML](#tab/yaml/)
-
-
 
 Each task has an `env` property that is a list of string pairs that represent environment variables mapped into the task process.
 
@@ -403,16 +357,13 @@ The following example runs the `script` step, which is a shortcut for the [Bash@
 
 ::: moniker-end
 
-
 #### [Classic](#tab/classic/)
 
 You can work with environment variables using the **Environment Variables** section of the task editor.
 
 :::image type="content" source="media/tasks/task-environment-variables.png" alt-text="Task environment variables.":::
 
-
 * * *
-
 
 <h2 id="tool-installers">Build tool installers (Azure Pipelines)</h2>
 
@@ -427,7 +378,7 @@ For example, you can set up your build pipeline to run and validate your app for
 ### Example: Test and validate your app on multiple versions of Node.js
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Create an azure-pipelines.yml file in your project's base directory with the following contents.
 
@@ -447,12 +398,6 @@ steps:
 
 [Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.
 The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script logs the location of the Node.js version on disk.
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 

@@ -283,5 +283,5 @@ jobs:
     runOnce:            
       pre-deploy: 
         steps:       
-        - reviewApp: MasterNamespace
+        - reviewApp: MainNamespace
 ```

@@ -25,7 +25,7 @@
 - name: Manage issues
   href: ../backlogs/manage-issues-impediments.md
   displayname: impediment
-- name: Link work items
+- name: Link work items to objects
   href: ../backlogs/add-link.md
   displayname: remote work, bulk modify links, pull request, build
 - name: Copy or clone work items

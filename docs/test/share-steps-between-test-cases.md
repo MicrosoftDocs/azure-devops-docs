@@ -49,17 +49,6 @@ If you reopen the work item, you can select the shared step to open a new shared
    ![Screenshot shows the new work item with the shared steps.](media/shared-steps/shared-steps-work-item.png)  
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-While you edit a test case, select a sequence of steps that you want to share:  
-  
-![Screenshot shows creating shared steps.](media/shared-steps/create-shared-steps.png)  
-  
-The steps you selected are replaced with a link to the new shared steps work item:  
-  
-![Screenshot shows resulting test case with a shared step.](media/shared-steps/create-shared-result.png)  
-::: moniker-end
-
 You can edit shared steps at any time. Any changes you make appear in every test case where you use the shared steps.
 
 You can use parameters in shared steps. For more information about parameters, see [parameters](repeat-test-with-different-data.md).
@@ -84,31 +73,12 @@ You can add shared steps to other test cases.
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-Now you can use the shared steps in another test case:  
-  
-![Screenshot shows shared steps in test cases.](media/shared-steps/use-shared-steps.png)  
-  
-A query opens. Run it to find the steps you want to insert:  
-  
-![Screenshot shows the query to find shared steps.](media/shared-steps/shared-step-query.png)  
-::: moniker-end
-
 ## Mark shared steps when you run a test
 ::: moniker range=">=azure-devops-2020"
 
 When you [run a test](run-manual-tests.md), you can either mark the whole shared sequence as passed or failed, or mark each step separately:  
   
 ![Screenshot shows Test Runner with shared steps that you can mark as a unit or individually.](media/shared-steps/test-runner-shared-steps.png)
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-When you [run a test](run-manual-tests.md), you can either mark the whole shared sequence as passed or failed, or mark each step separately:  
-  
-![Screenshot shows shared steps in Test Runner.](media/shared-steps/run-shared-steps.png)
 
 ::: moniker-end
 

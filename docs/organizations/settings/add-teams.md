@@ -24,7 +24,6 @@ Each new project includes a default team named after the project that you can re
 
 To maintain Agile practices while scaling teams, review [Scale Agile to Large Teams](/devops/plan/scaling-agile). For more information on team-configurable tools, see [About teams and Agile tools](about-teams-and-settings.md).
 
-
 > [!NOTE]
 > This article explains how to add teams or team members to an Azure DevOps project. For information on Microsoft Teams or integrating it with Azure Boards, see [Welcome to Microsoft Teams](/microsoftteams/teams-overview) or [Use the Azure Boards app in Microsoft Teams](../../boards/integrations/boards-teams.md).
 >
@@ -130,7 +129,6 @@ Select the **Current UI** tab. The New Teams Page UI is only available for Azure
 	- [Set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 	- [Define area paths and assign to a team](set-area-paths.md)
 	- [Define iteration paths, also known as sprints, and configure team iterations](set-iteration-paths-sprints.md)
-
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -264,7 +262,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 
 #### [Current UI](#tab/current-page) 
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="<=azure-devops"
 1. Open **Project settings > Teams** as indicated in the previous section. 
 ::: moniker-end
  
@@ -277,7 +275,6 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 ::: moniker range="azure-devops" 
 There isn't an Azure CLI command to set the default team project. 
 ::: moniker-end 
-
 
 [!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 

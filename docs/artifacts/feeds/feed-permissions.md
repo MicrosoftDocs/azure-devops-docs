@@ -34,7 +34,7 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 ## Feed settings
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -46,11 +46,9 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
     :::image type="content" source="media/feed-permissions.png" alt-text="A screenshot showing how to access feed permissions.":::
 
-1. Add new user(s)/group(s) and choose the appropriate **Role** for them.
-
-    :::image type="content" source="media/add-users-groups-dialogue.png" alt-text="Screenshot showing how to add new users or groups.":::
-
-1. Select **Save** when you're done.
+1. Add new user(s) or group(s), choose the appropriate **Role**, and then select **Save** when you're done.
+   
+     :::image type="content" source="media/add-users-or-groups-feed-settings.png" alt-text="A screenshot displaying how to add new users or groups and assign a role.":::
 
 ::: moniker-end
 
@@ -61,7 +59,7 @@ Azure Artifacts enables you to publish, consume, and store various types of pack
 
 ::: moniker-end
 
-:::moniker range=">= azure-devops-2022"
+:::moniker range="<= azure-devops-2022"
 
 > [!NOTE]
 > By default, the *Project Collection Build Service* is automatically assigned the **Feed and Upstream Reader (Collaborator)** role for newly created collection-scoped feeds.
@@ -140,7 +138,6 @@ If your pipeline is unable to access your feed, you might need to add the corres
 
     ::: moniker-end
 
-
 #### Examples
 
 ::: moniker range="azure-devops"
@@ -199,7 +196,7 @@ If your pipeline is unable to access your feed, you might need to add the corres
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="=azure-devops-2020"
 
 ### [NuGet](#tab/nugetserver)
 

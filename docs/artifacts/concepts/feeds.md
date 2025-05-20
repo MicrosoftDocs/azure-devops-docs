@@ -2,6 +2,7 @@
 title: What are Azure Artifacts feeds?
 description: Understand the differences between project-scoped and organization-scoped Azure Artifacts feeds. Learn the steps to create, delete, and restore feeds. 
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
+ms.custom: peer-review-program
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 06/03/2024
@@ -54,20 +55,6 @@ Follow the instructions below and choose the appropriate scope to create a new p
 1. Select **Create** when you're done.
 
     :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="A screenshot that shows how to create a new feed in Azure DevOps Server 2022 and Server 2020.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps server, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **New feed**.
-
-1. Enter a descriptive **Name** for your feed and define its **Visibility** (who can use your feed). If you wish to include packages from public sources, select the **Use packages from public sources through this feed** option.
-
-1. Select **Create** when you're done.
-
-    :::image type="content" source="../media/create-new-feed-server-2019.png" alt-text="A screenshot that shows how to create a new feed in Azure DevOps Server 2019.":::
 
 ::: moniker-end
 

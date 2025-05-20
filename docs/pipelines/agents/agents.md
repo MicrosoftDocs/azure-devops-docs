@@ -26,8 +26,7 @@ Azure Pipelines provides several different types of agents.
 | [Managed DevOps Pools agents](#managed-devops-pools-agents) | Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription and not in your own Azure subscription | Azure DevOps Services |
 | [Azure Virtual Machine Scale Set agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be autoscaled to meet demands. <br><br>If you're considering using auto-scalable self-hosted agent pools, we recommend looking at Managed DevOps Pools. For more information, see [Compare Managed DevOps Pools with Azure Virtual Machine Scale Set agents](../../managed-devops-pools/migrate-from-scale-set-agents.md) and [Managed DevOps Pools overview](../../managed-devops-pools/overview.md). | Azure DevOps Services |
 
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
 ::: moniker-end
 
@@ -147,7 +146,7 @@ You might need more parallel jobs to use multiple agents at the same time:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 > [!IMPORTANT]
 > Starting with Azure DevOps Server 2019, you don't have to pay for self-hosted concurrent jobs in releases. You're only limited by the number of agents that you have.
@@ -176,7 +175,7 @@ When you author a pipeline, you specify certain **demands** of the agent. The sy
 
 # [YAML](#tab/yaml)
 
-:::moniker range=">=azure-devops-2019"
+:::moniker range="<=azure-devops"
 
 To add a demand to your YAML build pipeline, add the `demands:` line to the `pool` section.
 
@@ -189,8 +188,6 @@ pool:
 You can check for the existence of a capability, or make a comparison with the value of a capability. For more information, see [YAML schema - Demands](/azure/devops/pipelines/yaml-schema/pool-demands).
 
 :::moniker-end
-
-
 
 # [Classic](#tab/classic)
 
@@ -300,7 +297,6 @@ The payload of the messages exchanged between the agent and Azure Pipelines are 
 
 ```json
 
-
   <Some properties omitted for space>
 
   "status": "offline",
@@ -318,8 +314,6 @@ The payload of the messages exchanged between the agent and Azure Pipelines are 
     "svn": "",
     "To run tasks using Windows authentication to access an external service, the agent must run under an account with access to that service.
 ```
-
-
 
 However, if you're running UI tests such as Selenium or Coded UI tests that require a browser, the browser is launched in the context of the agent account.
 
@@ -350,7 +344,6 @@ These credentials are different from the credentials that you use when you regis
 ### Communication with Azure DevOps Server
 
 ::: moniker-end
-
 
 The agent communicates with Azure Pipelines or Azure DevOps Server to determine which job it needs to run, and to report the logs and job status. The agent always initiates this communication. All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown by the following examples.
 
@@ -418,7 +411,6 @@ Additionally, Windows agents have the following two authentication options on Az
 
 The authentication method used for registering the agent is used only during agent registration. To learn more about how agents communicate with Azure Pipelines after registration, see [Communication with Azure Pipelines or Azure DevOps Server](#communication).
 
-
 <h2 id="interactive-or-service">Interactive vs. service</h2>
 
 You can run your self-hosted agent as either a service or an interactive process.
@@ -456,7 +448,6 @@ ensure that the agent starts automatically if the machine is restarted.
 
 Whether you run an agent as a service or interactively, you can choose
 which computer account you use to run the agent. The choice of agent account depends solely on the needs of the tasks running in your build and deployment jobs.
-
 
 For example, to run tasks using Windows authentication to access an external service, the agent must run using an account with access to that service. However, if you're running UI tests such as Selenium or Coded UI tests that require a browser, the browser is launched in the context of the agent account.
 
@@ -549,7 +540,7 @@ You might find that in other cases you don't gain much efficiency by running mul
 
 You might also run into problems if parallel build jobs are using the same singleton tool deployment, such as npm packages. For example, one build might update a dependency while another build is in the middle of using it, which could cause unreliable results and errors.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### What’s the behavior of agents when the pipeline jobs are canceled?
 
@@ -596,7 +587,7 @@ POST https://{server url}/tfs/{collection}/_apis/distributedtask/pools/{poolId}/
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 #### URI Parameters
 
@@ -606,8 +597,6 @@ POST https://{server url}/tfs/{collection}/_apis/distributedtask/pools/{poolId}/
 | `organization` | path  | True     | string        | The name of the Azure DevOps organization.                                             |
 | `poolId`       | path  | True     | integer int32 | The agent pool to use                                                                  |
 | `api-version`  | query | False    | string        | Version of the API to use. The value should be set to '6.0' to use this version of the API. |
-
-
 
 To trigger agent update - request body should be empty.
 

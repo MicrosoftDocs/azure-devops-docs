@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.custom: engagement-fy23, devx-track-python
 ms.date: 01/15/2025
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 

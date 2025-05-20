@@ -28,7 +28,6 @@ Each family of resources, such as work items or Git repositories, is secured thr
 > [!NOTE]   
 > Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. For more information, see [Security namespaces query](/rest/api/azure/devops/security/security-namespaces/query)
 
-
 ## Permission management tools 
 
 The recommended method for managing permissions is through the web portal. However, to set permissions that are unavailable through the portal or to manage granular permissions, use command line tools or the REST API:
@@ -50,7 +49,6 @@ Many security namespaces correspond to permissions you set through a **Security*
 - Server-level (on-premises only) 
 - Role-based 
 - Internal only 
-
 
 ### Hierarchy and tokens 
 
@@ -78,7 +76,7 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       <a id="analytic-views-namespace"></a>  AnalyticsViews
@@ -342,7 +340,6 @@ The following table describes the namespaces that manage object-level permission
 :::row-end:::
 ---
 
-
 ## Project-level namespaces and permissions
 
 The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions, while other project-level groups have specific permission assignments.
@@ -467,7 +464,6 @@ The following table describes the namespaces that manage organization-level perm
 
 ## Collection-level namespaces and permissions 
 
-
 The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Collection settings** context. Members of the **Project Collection Administrators** group are granted most of these permissions.   For more information, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
 ::: moniker-end
@@ -549,7 +545,7 @@ The following table describes the namespaces that manage organization-level perm
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       Process 
@@ -680,9 +676,7 @@ The following table describes those security namespaces and permissions defined 
  
 ::: moniker-end
 
-
 ## Role-based namespaces and permissions
-
 
 The following table describes the security namespaces and permissions used to manage role-based security. You can manage role assignments through the web portal for pipeline resources as described [Pipeline permissions and security roles](../../pipelines/policies/permissions.md).  
  
@@ -839,7 +833,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       Analytics
@@ -1218,7 +1212,6 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
-
 
 <a id="deprecated-namespaces"></a> 
 

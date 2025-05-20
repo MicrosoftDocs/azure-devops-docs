@@ -231,23 +231,7 @@ The following table summarizes the differences between the three supported proce
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="3":::
-      Update Microsoft field mappings using the [**`TFSFieldMapping`**](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file) command-line tool (see note 4)
-   :::column-end:::
-   :::column span="1":::
-         
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
+
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="3":::
@@ -345,7 +329,6 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 
-
 **Notes:**
 
 1. A process determines the building blocks used to track work. A process template specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas.     
@@ -401,7 +384,6 @@ Several work item types support the test experience within the web portal **Test
 The following example shows the supported link relationships.  
 
   ![Screenshot showing Test management work item types.](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
-
 
 ::: moniker range="< azure-devops"
 For more information, see the following articles:

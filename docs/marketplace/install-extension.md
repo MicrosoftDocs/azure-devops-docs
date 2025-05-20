@@ -8,7 +8,7 @@ ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 03/03/2025
+ms.date: 04/21/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -196,41 +196,9 @@ Once an extension is installed, you can find it under the value of the `$AZURE_E
 
 * * *
 
-::: moniker range="< azure-devops-2020"
+### High privilege, pipeline decorators, and unpublished extensions
 
-1. Go to [Marketplace.visualstudio.com](https://marketplace.visualstudio.com/azuredevops).
-2.	Sign in using your Azure DevOps credentials.
-3. Find the extension that you want to install. Use the search box to filter the list of extensions.
-
-   :::image type="content" source="media/get-devops-extensions/install-devops-extension-02.png" alt-text="Screenshot of Selecting an extension.":::
-
-4. Select the extension and select **Get** or **Get it free**.
-   Or, for some non-Microsoft extensions, select **Get Started** to show pricing information and extension-specific installation instructions.
-
-   :::image type="content" source="media/get-devops-extensions/install-devops-extension-04.png" alt-text="Screenshot of getting the extensions.":::
-
-   If you don't have permission to install the extension, you can request an administrator
-   to install it for you. Your request gets stored in Azure DevOps Server and is ready for attention from an administrator.
-
-5. Select **Download** to download the vsix file.
-6. Upload the vsix to your on premises local Marketplace. Open your Azure DevOps Server home page (`https://{server}:DefaultCollection`).
-7. Go to **Collection settings** > **Browse local extensions**.
-
-   :::image type="content" source="media/get-tfs-extensions/standalone/browse-local-extensions.png" alt-text="Screenshot of selection, Browse local extensions button.":::
-
-8. Select **Manage extensions** and then **Upload** the vsix file.
-
-   :::image type="content" source="media/manage-extensions-on-premises.png" alt-text="Screenshot of selection, Manage extensions.":::
-
-9.  Install the extension in your project collection on the **Manage extensions** page. Select the project collection where you want to install the extension and choose **Install**.
-
-   :::image type="content" source="media/get-devops-extensions/install-devops-extension-06.png" alt-text="Screenshot of Select project collection and choose Install.":::
-
-10. After installation is complete, go to the project collection or return to the Marketplace to find other extensions. 
-
-   :::image type="content" source="media/get-devops-extensions/install-devops-extension-07.png" alt-text="Screenshot showing completed installation of extension.":::
-
-::: moniker-end
+Extensions with high privilege scopes, pipeline decorators, or unpublished status can pose potential security risks if not properly vetted. High privilege scopes grant extensive access to your organization's resources, while pipeline decorators can modify all pipelines in your organization. Unpublished extensions might no longer be maintained by their publishers. For more information on managing these types of extensions, see [Manage high privilege scopes, pipeline decorators, and unpublished extensions](manage-high-privilege-extensions.md).
 
 <a id="uninstall-disable-extension">  </a>
 

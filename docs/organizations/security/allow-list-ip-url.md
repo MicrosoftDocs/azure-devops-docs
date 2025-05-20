@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/19/2025
+ms.date: 04/02/2025
 ---
 
 # Allowed IP addresses and domain URLs
@@ -114,7 +114,7 @@ Ensure the following IP addresses are allowed for inbound connections, so your o
 Azure Service Tags are supported only for *inbound* connections. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 
 > [!NOTE]
-> The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted agents. Customers are still required to allow the [entire geography for the Microsoft Hosted agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md). The Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands.  
+> The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted agents. Customers are still required to allow the [entire geography for the Microsoft Hosted agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Microsoft Managed DevOps Pools](../../managed-devops-pools/overview.md). Alternatively, you can also use [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md). Managed DevOps Pools and Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands.  
 Hosted macOS agents are hosted in GitHub's macOS cloud. IP ranges can be retrieved using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) using the instructions provided [here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#ip-addresses).
 
 ### Other IP addresses
@@ -228,7 +228,7 @@ https://dev.azure.com
 https://*.dev.azure.com
 https://aex.dev.azure.com
 https://aexprodea1.vsaex.visualstudio.com
-https://*vstmrblob.vsassets.io
+https://*.vstmrblob.vsassets.io
 https://amp.azure.net
 https://app.vssps.dev.azure.com
 https://app.vssps.visualstudio.com
@@ -246,7 +246,6 @@ https://microsoftonline.com
 https://static2.sharepointonline.com
 https://visualstudio.com
 https://vsrm.dev.azure.com
-https://vstsagentpackage.azureedge.net
 https://*.windows.net
 https://{organization_name}.visualstudio.com
 https://{organization_name}.vsrm.visualstudio.com
@@ -254,10 +253,14 @@ https://{organization_name}.vstmr.visualstudio.com
 https://{organization_name}.pkgs.visualstudio.com
 https://{organization_name}.vssps.visualstudio.com
 
+Azure DevOps uses the following URLs to provide the agent software for download for self-hosted agents.
+https://vstsagentpackage.azureedge.net
+https://download.agent.dev.azure.com
+
 Azure DevOps uses content delivery network (CDN) to serve static content. The following URLs are part of that. 
 https://cdn.vsassets.io
 https://*.vsassets.io
-https://*gallerycdn.vsassets.io
+https://*.gallerycdn.vsassets.io
 https://aadcdn.msauth.net
 https://aadcdn.msftauth.net
 https://amcdn.msftauth.net
@@ -292,12 +295,12 @@ We recommend you open port `443` to all traffic on the following IP addresses an
 |---------|---------|
 |https://login.microsoftonline.com |Authentication and sign-in related     |
 |https://*.vssps.visualstudio.com   |Authentication and sign-in related          |
-|https://*gallerycdn.vsassets.io   |Hosts Azure DevOps extensions         |
-|https://*vstmrblob.vsassets.io | Hosts Azure DevOps TCM log data        |
+|https://*.gallerycdn.vsassets.io   |Hosts Azure DevOps extensions         |
+|https://*.vstmrblob.vsassets.io | Hosts Azure DevOps TCM log data        |
 |https://cdn.vsassets.io    | Hosts Azure DevOps Content Delivery Networks (CDNs) content        |
 |https://static2.sharepointonline.com    | Hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on        |
 |https://vsrm.dev.azure.com   | Hosts releases        |
-|https://vstsagentpackage.azureedge.net      |  Required to set up self-hosted agent in machines within your network              |
+|https://vstsagentpackage.azureedge.net<br>https://download.agent.dev.azure.com      |  Required to set up self-hosted agent in machines within your network              |
 |https://amp.azure.net   | Needed for deploying to Azure app service           |
 |https://go.microsoft.com  | Accesses go links        |
 
@@ -318,7 +321,7 @@ Also allow all IP addresses in the "name": "Storage.{region}" section of the fol
 Ensure the following domain URLs are allowed for NuGet connections:
 
 ``` NuGetDomainURLs
-https://azurewebsites.net
+https://*.azurewebsites.net
 https://*.nuget.org
 ```
 
@@ -339,12 +342,23 @@ Also allow IP addresses in the "name": "AzureDevOps" section of [this downloadab
 
 ### Azure Pipelines Microsoft-hosted agents
 
-If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges). See all [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md?preserve-view=true&view=azure-devops).
+If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges). See all [Microsoft Managed DevOps Pools](../../managed-devops-pools/overview.md) and [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md?preserve-view=true&view=azure-devops).
 
 For more information about hosted Windows, Linux, and macOS agents, see [Microsoft-hosted agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
 
-### Azure Pipelines Self-hosted agents
+### Azure Pipelines self-hosted agents
+
 If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/linux-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/osx-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
+
+> [!IMPORTANT]
+> [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/), which requires a new domain URL to be allow-listed in firewall rules for agent software download.
+> The new domain to allow-list for agent download is `https://*.dev.azure.com`. If your firewall rules don't allow wildcards, use `https://download.agent.dev.azure.com`.
+> 
+> The Azure DevOps team recommends to make this change by the following date:
+> - May 1, 2025 for Azure DevOps Services
+> - May 15, 2025 for Azure DevOps Server
+>
+> For more information, see [CDN Domain URL change for Agents in Pipelines](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/).
 
 ## Azure DevOps import service
 

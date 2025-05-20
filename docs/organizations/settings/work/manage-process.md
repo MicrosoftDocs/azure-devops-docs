@@ -127,10 +127,7 @@ We provide detailed steps for the second method, covering the following common s
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Create a project from the selected process.](media/process/new-team-project-from-inherited-process-menu.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Create a project from selected process, Azure DevOps Server 2019.](media/process/add-new-team-project.png) 
-	::: moniker-end
+	
 
 2. Enter your project information, and then select **Create**. For more information, see [Create a project](../../projects/create-project.md).
 
@@ -138,10 +135,7 @@ We provide detailed steps for the second method, covering the following common s
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Create new project dialog.](media/process/create-test-project-sprint166.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Create new project form dialog, Azure DevOps Server 2019.](media/process/create-test-project.png) 
-	::: moniker-end
+	
 
 <a id="copy-process">  </a>
 

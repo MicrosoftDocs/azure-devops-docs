@@ -8,8 +8,7 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 08/12/2024
-
+  ms.date: 03/14/2025
 
 title: FAQs about working in Excel connected to Azure Boards  
 
@@ -54,8 +53,7 @@ sections:
           **Yes**. To open Excel from the web portal, install the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) and then open a query that you created in the web portal or from Team Explorer. 
 
           > [!div class="mx-imgBorder"]  
-          > [Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
-
+          > ![Screenshot of Azure DevOps Open in Excel extension.](media/excel/open-in-excel.png)
 
       - question: Can I import or update work items without using Excel?  
         answer: | 
@@ -63,9 +61,7 @@ sections:
           **Yes**. You can do a bulk import of new work items or update existing work items without using Excel. See [Import work items](../../queries/import-work-items-from-csv.md).
           ::: moniker-end  
 
-          ::: moniker range="azure-devops-2019" 
-          **No**. For Azure DevOps Server 2019, Excel is the only supported method.
-          ::: moniker-end  
+            
 
       - question: How do I connect an existing Excel workbook to Azure DevOps?  
         answer: |
@@ -95,7 +91,6 @@ sections:
         answer: |
           **No**. You receive an error message with error code TF208015. You can only view work items defined in the team project that you connect to from Excel. To view work items from other team projects, create a query and open it in a separate Excel workbook. Each Excel workbook can only connect to one team project at a time.   
 
-
   - name: Work with linked work items
      
     questions: 
@@ -115,10 +110,7 @@ sections:
           - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
           - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
           ::: moniker-end
-          ::: moniker range "azure-devops"
           - Use the [az boards work-item relation add](/cli/azure/boards/work-item/relation) command.
-          ::: moniker-end 
-
 
   - name: Work with test work items 
      
@@ -140,7 +132,6 @@ sections:
           If you start your worksheet with a **New List**, you see only a set of default field columns. You can add columns using the **Choose Columns** on the Team menu. 
 
           If you start your worksheet from an existing query, you see all the column fields defined for the query. From there, you can add columns using the **Choose Columns** on the Team menu. However, your additions don't modify the underlying query.  
-
 
           > [!div class="mx-imgBorder"]  
           > ![Screenshot showing the choose columns dialog.](media/excel/choose-columns.png)
@@ -276,6 +267,17 @@ sections:
         answer: |
           See [Show the Developer Tab on the Ribbon](/visualstudio/vsto/how-to-show-the-developer-tab-on-the-ribbon). 
 
+  - name: Resolve data conflicts and validation errors
+     
+    questions: 
+      
+      - question: How can I resolve data validation errors that occur when I publish from Excel? 
+        answer: |
+          For more information, see [Troubleshoot Office integration issues](tfs-office-integration-issues.md#resolve-data-validation-errors).
+
+      - question: How can I resolve data conflicts when I publish or refresh Excel data? 
+        answer: |
+          For more information, see [Troubleshoot Office integration issues](tfs-office-integration-issues.md#resolve-data-conflicts).
 
 additionalContent: | 
   ## Related articles
