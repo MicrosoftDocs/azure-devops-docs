@@ -15,4 +15,4 @@ We've added a new feature that flags these scopes on each organization's admin p
 > [!div class="mx-imgBorder"]
 > [![Screenshot of feedback box.](../../media/255-general-01.png "Screenshot of feedback box")](../../media/255-general-01.png#lightbox)
 
-For more information, visit  [documentation](/azure/devops/marketplace/manage-high-privilege-extensions?view=azure-devops) page.
+For more information, visit  [documentation](/azure/devops/marketplace/manage-high-privilege-extensions) page.
