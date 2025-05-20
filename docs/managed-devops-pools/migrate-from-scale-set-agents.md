@@ -9,7 +9,7 @@ ms.custom: peer-review-program
 
 # Compare Managed DevOps Pools with Azure Virtual Machine Scale Set agents
 
-Managed DevOps Pools is a new service that is an evolution of Azure DevOps Virtual Machine Scale Set agent pools, simplifying custom pool creation even further, by improving scalability and reliability of custom pools. Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription and not in your own Azure subscription, like when using Azure DevOps Virtual Machine Scale Set agent pools.
+Managed DevOps Pools is a new service that is an evolution of Azure DevOps Virtual Machine Scale Set agent pools, simplifying custom pool creation even further by improving scalability and reliability of custom pools. Managed DevOps Pools is a fully managed service where the virtual machines that run the agents live in a Microsoft Azure subscription and not in your own Azure subscription, like when using Azure DevOps Virtual Machine Scale Set agent pools.
 
 If you're considering using auto-scalable self-hosted agent pools, we recommend looking at Managed DevOps Pools.
 
