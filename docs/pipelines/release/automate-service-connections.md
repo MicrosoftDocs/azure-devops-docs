@@ -23,7 +23,8 @@ Automation also helps enforce security policies and compliance requirements by m
 | **Product** | **Requirements**   |
 |---|---|
 | **Azure DevOps** | - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
-| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/).<br> **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create an identity in Azure or Microsoft Entra: you must have *User Access Administrator* or *Role Based Access Control Administrator* permissions, or higher. These roles allow you to manage access and assign roles necessary for creating identities. For more information, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles).|
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/).<br> **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a role assignment in Azure: you must have *User Access Administrator* or *Role Based Access Control Administrator* permissions, or higher. These roles allow you to manage access and assign roles necessary for creating identities. For more information, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles).|
+| **Entra** | **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create an app registration in Microsoft Entra: [App registration delegation](/entra/identity/role-based-access-control/delegate-app-roles#restrict-who-can-create-applications) should be enabled or you should have the *Application Developer* role. For more information, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference#application-developer).<br/>Instead of creating an app registration in Entra, you can also create a managed identity in Azure.|
 
 ## Process
 
@@ -38,7 +39,7 @@ This table provides an overview of the key properties exchanged between the crea
 
 | Step                                          | Input                  | Output                  |
 |-----------------------------------------------|------------------------|-------------------------|
-| Create identity in Microsoft Entra or Azure             | `tenantId`             | `appId`, `principalId`  |
+| Create identity in Microsoft Entra or Azure   | `tenantId`             | `appId`, `principalId`  |
 | Create service connection in Azure DevOps     | `appId`                | `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` |
 | Create federated credential in Microsoft Entra or Azure | `appId`, `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | |
 | Create role assignment in Azure               | `principalId`          |                         |
@@ -69,8 +70,8 @@ Example output:
 
 ```json
 {
-  "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
-  "principalId": "00000000-0000-0000-0000-000000000000"
+  "appId": "APP_ID",
+  "principalId": "PRINCIPAL_ID"
 }
 ```
 
@@ -90,8 +91,8 @@ Example output:
 
 ```json
 {
-  "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
-  "principalId": "00000000-0000-0000-0000-000000000000"
+  "appId": "APP_ID",
+  "principalId": "PRINCIPAL_ID"
 }
 ```
 
@@ -125,7 +126,7 @@ The first code snippet is a configuration file, `ServiceConnectionGeneric.json`.
   "authorization": {
     "parameters": {
       "tenantid": "TENANT_ID",
-      "serviceprincipalid": "<Service Principal ID>"
+      "serviceprincipalid": "APP_ID"
     },
     "scheme": "WorkloadIdentityFederation"
   },
@@ -153,7 +154,7 @@ Example output:
 
 ```json
 {
-  "serviceprincipalid": "<Service Principal ID>",
+  "serviceprincipalid": "APP_ID",
   "tenantid": "TENANT_ID",
   "workloadIdentityFederationIssuer": "https://login.microsoftonline.com/TENANT_ID/v2.0",
   "workloadIdentityFederationIssuerType": "EntraID",
@@ -201,7 +202,7 @@ For more information about this command, see [az identity federated-credential c
 ```
 
 ```azurecli
-az ad app federated-credential create --id aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa --parameters credential.json
+az ad app federated-credential create --id APP_ID --parameters credential.json
 ```
 
 `az ad app federated-credential create` links a federated identity credential to an app registration, enabling the application to authenticate with the specified identity provider using the details in the `credential.json` file. 
@@ -215,7 +216,7 @@ For more information about this command, see [az ad app federated-credential cre
 Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its ID, also called `principalId`. The `principalId` is in the output of the __Create identity__ command.
 
 ```azurecli
-az role assignment create --role Contributor --scope /subscriptions/SUBSCRIPTION_ID --assignee-object-id 00000000-0000-0000-0000-000000000000 --assignee-principal-type ServicePrincipal
+az role assignment create --role Contributor --scope /subscriptions/SUBSCRIPTION_ID --assignee-object-id PRINCIPAL_ID --assignee-principal-type ServicePrincipal
 ```
 
 `az role assignment create --role Contributor` command assigns the Contributor role to a service principal at the subscription level. This allows the service principal to manage resources within the specified subscription. 
