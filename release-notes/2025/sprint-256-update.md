@@ -18,6 +18,10 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-256-update-links](includes/boards/sprint-256-update-links.md)]
 
+### Azure Pipelines
+
+[!INCLUDE [sprint-256-update-links](includes/pipelines/sprint-256-update-links.md)]
+
 ### Azure Repos
 
 [!INCLUDE [sprint-256-update-links](includes/repos/sprint-256-update-links.md)]
@@ -37,6 +41,10 @@ Check out the release notes for details.
 ## Azure Boards
 
 [!INCLUDE [sprint-256-update](includes/boards/sprint-256-update.md)]
+
+## Azure Pipelines
+
+[!INCLUDE [sprint-256-update](includes/pipelines/sprint-256-update.md)]
 
 ## Azure Repos
 
