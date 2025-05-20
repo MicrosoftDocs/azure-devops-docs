@@ -72,7 +72,7 @@ Automate test cases in your test plans and run them directly from **Azure Test P
 
    ![Screenshot shows checking the task version number setting.](media/run-automated-tests-from-test-hub/vstest-configuration.png) 
 
-     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/vstest-v3?view=azure-pipelines).
+     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v3).
 
 7. Choose the **Agent job** item and verify that the deployment queue is set to the one containing the machines where you want to run the tests. If your tests require special machines from the agent pool, you can add demands that select at runtime.
 
