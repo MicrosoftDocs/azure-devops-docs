@@ -68,16 +68,19 @@ Docker Content Trust (DCT) lets you use digital signatures for data sent to and 
          $(tag)
        arguments: '--disable-content-trust=false'
     
-   - task: Docker@2
-     inputs: 
-       command: push
-       containerRegistry: $(containerRegistryServiceConnection)
-       repository: $(imageRepository)
-       tags: |
-         $(tag)
-       arguments: '--disable-content-trust=false'
-     env:
-       DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE: $(DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE)
+    - task: Docker@2
+      inputs:
+        command: push
+        containerRegistry: $(containerRegistryServiceConnection)
+        repository: $(imageRepository)
+        tags: |
+          $(tag)
+        arguments: '--disable-content-trust=false'
+      env:
+        DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE: $(DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE)
+        DOCKER_CONTENT_TRUST_ROOT_PASSPHRASE: $(rootPassphrase)
    ```
 
-   In the previous example, the `DOCKER_CONFIG` variable is set by the `login` command in the Docker task. We recommend that you set up `DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE` as a [secret variable](../../process/variables.md#secret-variables) for your pipeline. The alternative approach of using a pipeline variable in YAML exposes the passphrase in plain text. `DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE` in this example refers to the private key's passphrase (not the repository passphrase). We only need the private key's passphrase in this example because the repository has been initiated already (prerequisites).
+   In the previous example, the `DOCKER_CONFIG` variable is set by the `login` command in the Docker task. We recommend that you set up `DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE` and `DOCKER_CONTENT_TRUST_ROOT_PASSPHRASE` as [secret variables](../../process/variables.md#secret-variables) for your pipeline. 
+
+    `DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE` in this example refers to the private key's passphrase (not the repository passphrase). We only need the private key's passphrase in this example because the repository has been initiated already (prerequisites).
