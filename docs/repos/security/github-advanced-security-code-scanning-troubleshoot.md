@@ -83,7 +83,7 @@ Troubleshooting steps:
 
 If you have a pipeline definition housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results may be processed and submitted to the incorrect repository, publishing to the repository containing the pipeline definition rather than the source code repository.
 
-To enable intented result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+To enable intended result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
 
 
 >[!div class="tabbedCodeSnippets"]
