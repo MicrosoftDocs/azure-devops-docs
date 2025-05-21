@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 04/28/2025
+ms.date: 05/21/2025
 ---
 
 # Configure Managed DevOps Pools images
@@ -189,6 +189,8 @@ Managed DevOps Pools provides several preconfigured images that have the same so
 
 #### [Azure portal](#tab/azure-portal/)
 
+When you specify an Azure Pipelines image using the Azure portal, the latest version of the image is always used.
+
 :::image type="content" source="./media/configure-images/image-library-azure-pipelines-images.png" alt-text="Screenshot of Azure Pipelines images.":::
 
 #### [ARM template](#tab/arm/)
@@ -203,9 +205,11 @@ To specify an Azure Pipelines image, provide the alias of the image using the `w
 ]
 ```
 
+You can optionally specify a version in your `wellKnownImageName` setting, for example `"wellKnownImageName": "windows-2022/latest"` or `"wellKnownImageName": "windows-2022/20250427.1.0"`. If you don't specify a version, `latest` is used.
+
 #### [Azure CLI](#tab/azure-cli/)
 
-To specify an Azure Pipelines image, provide the alias of the image using the `wellKnownImageName` property. See a [list of Azure Pipelines image predefined aliases.](#azure-pipelines-image-predefined-aliases)
+To specify an Azure Pipelines image, provide the predefined alias of the image using the `wellKnownImageName` property. See a [list of Azure Pipelines image predefined aliases.](#azure-pipelines-image-predefined-aliases)
 
 ```json
 "images": [
@@ -214,6 +218,8 @@ To specify an Azure Pipelines image, provide the alias of the image using the `w
     }
 ]
 ```
+
+You can optionally specify a version in your `wellKnownImageName` setting, for example `"wellKnownImageName": "windows-2022/latest"` or `"wellKnownImageName": "windows-2022/20250427.1.0"`. If you don't specify a version, `latest` is used.
 
 * * *
 
