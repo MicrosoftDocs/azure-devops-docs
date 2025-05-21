@@ -76,7 +76,7 @@ You can find the exact number of consumed licenses per product (active committer
 > [!div class="mx-imgBorder"]  
 > [![Screenshot of organization billing settings showing active committer count.](./media/advsec-organization-settings-billing.png)](./media/advsec-organization-settings-billing.png#lightbox)
 
-If you disable Secret Protection or Code Security for all repositories in your organization, the active committer estimate disappears but you can watch your billing on your Azure subscription in the Azure portal.
+If you disable Secret Protection or Code Security for all repositories in your organization, the active committer estimate disappears. You can see your billing on your Azure subscription in the Azure portal.
 
 ### Understanding active committer count 
 Use the following table for an example of how active committers and your potential bill might change over time.
