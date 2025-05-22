@@ -182,7 +182,7 @@ az identity federated-credential create --name fic-for-sc
 `az identity federated-credential create` links a federated identity credential to a managed identity, enabling the managed identity to authenticate with  Microsoft Entra ID using the provided subject claim.
 
 > [!TIP]
-> Add a line continuation character (Bash: backslash, PowerShell: backquote) at the end of any lines that don't't complete the command.
+> Add a line continuation character (Bash: backslash, PowerShell: backquote) at the end of any lines that don't complete the command.
 
 The managed identity doesn't have to be created in the same subscription that it's  granted to access in the [Create role assignment step](#create-role-assignment). 
 
