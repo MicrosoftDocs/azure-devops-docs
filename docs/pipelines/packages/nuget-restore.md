@@ -48,6 +48,13 @@ With NuGet Package Restore you can install all your project's dependency without
         checkLatest: true
     
     - script: nuget restore <SOLUTION_PATH>
+
+    # For Ubuntu 24.04 or higher without mono installed (use this task instead of `script` line above)
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: restore
+        projects: <PROJECT_PATH>
+        feedsToUse: select
     ```
 
 ### [Classic](#tab/classic/)
