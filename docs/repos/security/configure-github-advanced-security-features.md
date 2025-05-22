@@ -101,7 +101,7 @@ Secret scanning push protection and repository scanning are automatically enable
 
 :::image type="content" source="media/secret-scanning-push-protection.png" lightbox="media/secret-scanning-push-protection.png" alt-text="Screenshot of enabling push protection.":::
 
-As mentioned, secret scanning repository scanning is automatically kicked off upon enabling Advanced Security for a selected repository. 
+Secret scanning repository scanning is automatically kicked off upon enabling Advanced Security for a selected repository. 
 
 ## Set up dependency scanning
 :::zone-end
