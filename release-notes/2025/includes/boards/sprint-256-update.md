@@ -10,4 +10,4 @@ ms.topic: include
  You can now use ``!`` mentions to reference and discuss GitHub pull requests directly from any large text field or comment.  
 
 > [!div class="mx-imgBorder"]
-> ![Gif to github pull request mentions.](../../media/254-boards-01b.gif "gif to github pull request mentions.")
+> ![Gif to github pull request mentions.](../../media/256-boards-02.gif "gif to github pull request mentions.")
