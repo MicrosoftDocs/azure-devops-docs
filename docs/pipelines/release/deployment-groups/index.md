@@ -77,51 +77,52 @@ To upgrade deployment agents to the latest version without redeploying, go to th
 
 ## Deployment pools
 
-A deployment pool is a set of target servers that are available to the entire Azure DevOps organization. To create and update deployment pools, you need Project Collection Administrator permissions in the Azure DevOps organization.
+A deployment pool is a collection of target servers available across your entire Azure DevOps organization. To create or manage deployment pools, you must have Project Collection Administrator permissions.
 
-When you create a new deployment pool for an organization, you can automatically provision corresponding deployment groups for selected projects or all projects in the organization. These deployment groups have the same target servers as the deployment pool.
+When you create a new deployment pool, you can automatically provision corresponding deployment groups in selected projects or across all projects in the organization. These deployment groups share the same target servers as the deployment pool.
 
-You can manually trigger an agent version upgrade for all servers in the pool by selecting the **More actions** ellipsis next to the deployment pool in **Deployment pools** and selecting **Update targets**.
+To upgrade the agent version on all servers in a deployment pool, go to **Deployment pools**, select the **More actions** ellipsis next to the pool, and choose **Update targets**.
 
-:::image type="content" source="media/update-targets-pools.png" alt-text="A screenshot showing how to update targets in deployment pools.":::
+:::image type="content" source="media/update-targets-pools.png" alt-text="A screenshot displaying how to update targets in deployment pools.":::
 
-## Monitor release status
+## Share deployment groups
 
-While a release pipeline is running, you can view the live logs for each target server in your deployment group. When the deployment finishes, you can download the log files for each server to examine the deployments and debug any issues.
+You can share deployment groups with other projects in your Azure DevOps organization. To make a deployment group available to other projects:
 
-:::image type="content" source="media/deployment-groups-release-summary.png" alt-text="A screenshot showing deployment groups release logs.":::
+1. Sign in to your Azure DevOps organization, and navigate to your project.
 
-## Share a deployment group
+1. Select **Pipelines** > **Deployment groups**. Select your deployment group and then select **Manage**.
 
-You can share deployment groups with other projects in the organization. To provision your deployment group for other projects:
+   :::image type="content" source="media/manage-deployment-group.png" alt-text="A screenshot displaying the details page of a deployment group.":::
 
-1. From your Azure DevOps project, select **Pipelines** > **Deployment groups**.
+1. In the list of projects, select the ones you want to share the deployment group with, and then select **Save**.
+ 
+   :::image type="content" source="media/deployment-group-share-with-project.png" alt-text="A screenshot displaying how to share with other projects.":::
 
-1. Select your deployment group and then select **Manage**.
+1. After saving,  the selected projects will see the shared deployment group listed under **Deployment groups**.
 
-   :::image type="content" source="media/manage-deployment-group.png" alt-text="A screenshot showing Manage in the deployment group.":::
-
-1. Select projects from the list to share to, and then select **Save**.
-
-   :::image type="content" source="media/deployment-group-share-with-project.png" alt-text="A screenshot showing sharing a deployment group with a project.":::
-
-The included projects now have the shared deployment group listed in **Deployment groups**.
-
-:::image type="content" source="media/shared-deployment-group.png" alt-text="A screenshot showing a shared new deployment group.":::
+    :::image type="content" source="media/shared-deployment-group.png" alt-text="A screenshot showing a shared new deployment group.":::
 
 ## Automatically deploy to new target servers
 
-When new target servers are added to a deployment group, you can configure the environment to automatically deploy the last successful release to the new targets.
+You can configure your environment to automatically deploy the last successful release when new target servers are added to a deployment group:
 
-1. From your release pipeline definition, select the post deployment icon.
-1. On the **Post-deployment conditions** screen, enable the **Auto redeploy trigger**.
+1. Sign in to your Azure DevOps organization, and navigate to your project.
+
+1. Select **Pipelines** > **Releases**, then select your release pipeline.
+
+1. Select the post deployment icon to open the **Post-deployment conditions** screen, and enable the **Auto redeploy trigger**.
+
 1. Under **Select events**, select **New target with required tags becomes available**.
+
 1. Under **Select action**, select **Redeploy the last successful deployment on this environment**.
 
-   :::image type="content" source="../media/deployment-group-add-targets.png" alt-text="A screenshot showing the Auto redeploy trigger settings.":::
+   :::image type="content" source="../media/deployment-group-add-targets.png" alt-text="A screenshot displaying how to enable the Auto redeploy trigger.":::
 
-## Related articles
+## Related content
 
-- [Deployment group jobs](../../process/deployment-group-phases.md)
-- [Deploy to Azure VMs using deployment groups](./deploying-azure-vms-deployment-groups.md)
-- [Provision agents for deployment groups](./howto-provision-deployment-group-agents.md)
+- [Release triggers](../triggers.md)
+
+- [Manage permissions](../../policies/permissions.md)
+
+- [Deploy to Azure VMs using deployment groups](deploying-azure-vms-deployment-groups.md)
