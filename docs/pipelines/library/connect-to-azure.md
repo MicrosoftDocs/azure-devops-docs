@@ -145,7 +145,7 @@ Use this option to automatically create a workload identity credential for an ex
         | **Service Management Reference** | Optional. Context information from an ITSM database. |
         | **Description** | Optional. Enter a description of the service connection.|
     
-    1. Selecting **Grant access permission to all pipelines** allows all pipelines to use this connection. Instead of selecting this option, you can later explicitly [authorize each pipeline individually to use the service connection](#authorize-pipelines).
+    1. In the **Security** section, select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
     
     1. Select **Save** to validate and create the service connection.
 
@@ -355,7 +355,7 @@ To create a service connection that uses an existing service principal:
     | --------- | ----------- |
     | **Connection Name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
     | **Description** | Optional. Enter a description of the service connection.|
-    | **Security** | Selecting **Grant access permission to all pipelines** allows all pipelines to use this connection. Instead of selecting this option, you can later explicitly [authorize each pipeline individually to use the service connection](#authorize-pipelines). |
+    | **Security** | Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection. |
 
 1. Select **Verify and save** to validate and create the service connection.
 
