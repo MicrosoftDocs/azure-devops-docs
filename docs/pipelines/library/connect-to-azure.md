@@ -23,13 +23,9 @@ An Azure Resource Manager service connection allows you to connect to Azure reso
 You have multiple authentication options for connecting to Azure with an Azure Resource Manager service connection. We recommend using [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity. Workload identity federation eliminates the need for secrets and secret management. 
 
 Recommended options:
-- [Connect to Azure with an Azure Resource Manager service connection](#connect-to-azure-with-an-azure-resource-manager-service-connection)
-  - [Create an app registration with workload identity federation (automatic)](#create-an-app-registration-with-workload-identity-federation-automatic)
-  - [Create a service connection for an existing user-assigned managed identity](#create-a-service-connection-for-an-existing-user-assigned-managed-identity)
-  - [Convert an existing service connection to use workload identity federation](#convert-an-existing-service-connection-to-use-workload-identity-federation)
-      - [Convert multiple service connections with a script](#convert-multiple-service-connections-with-a-script)
-    - [Revert an existing service connection that uses a secret](#revert-an-existing-service-connection-that-uses-a-secret)
-  - [Create a service connection that uses an existing service principal](#create-a-service-connection-that-uses-an-existing-service-principal)
+* [App registration (automatic) with workload identity federation](#create-an-app-registration-with-workload-identity-federation-automatic) 
+* Managed identity that creates a workload identity federation credential and connects to an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity). Use this option when you [don't have permission to create an app registration](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
+* [App registration or managed identity (manual) with workload identity federation or a secret](../release/configure-workload-identity.md). Manual configuration is more time consuming than the automatic configuration and should only be used if you've already tried to automatic option. 
 
 > [!NOTE]
 > There are other Azure Resource Manager service connection authentication options that don't use workload identity federation. These options are available for backwards compatibility and edge cases and not recommended. If you're setting up a service connection for the first time, use workload identity federation. If you have an existing service connection, try [converting your service connection to use workload identity federation](#convert-an-existing-service-connection-to-use-workload-identity-federation) first. 
