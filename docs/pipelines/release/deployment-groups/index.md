@@ -51,8 +51,6 @@ To register each target server in the deployment group:
 
 1. Sign in to the machine using an account with administrator permissions, and run the copied script. For Windows machines, use an elevated PowerShell command prompt.
 
-   :::image type="content" source="media/register-servers.png" alt-text="A screenshot that shows registering deployment groups servers.":::
-
 1. When prompted to add tags (can be used to target deployments to specific servers in a [deployment group job](../../process/deployment-group-phases.md)), enter Y, then provide one or more tags. Tags are case insensitive, limited to 256 characters each, and there's no limit to the number of tags you can use.
 
 1. Once setup is complete, the script should return the following message:
