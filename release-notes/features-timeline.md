@@ -245,12 +245,11 @@ These investments include:
       </tr>
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a>
+            <a href="/azure/devops/release-notes/2025/sprint-256-update#github-integration-pull-request-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/2025/sprint-256-update#github-integration-pull-request-mentions)">! mentions support for GitHub pull requests</a>
          </td>
          <td>Boards</td>
-         <td>2025 Q2</td>
-      </tr>       
-      
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q2</td>
+      </tr>      
       <tr>
          <td><a href="/azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
@@ -523,7 +522,7 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>      
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
+            <a href="/azure/devops/release-notes/2025/sprint-256-update#github-integration-pull-request-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/2025/sprint-256-update#github-integration-pull-request-mentions)">! mentions support for GitHub pull requests</a></td>
          <td>Boards</td>
       </tr>    
       <tr>          
