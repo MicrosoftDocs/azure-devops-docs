@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 02/10/2025
+  ms.date: 05/23/2025
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
@@ -117,7 +117,7 @@ sections:
       - question: |
           Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?
         answer: |
-          A: Users of GitHub Enterprise Server are detected if they also have a matching license in the cloud. For more information, see [Syncing license usage between GitHub Enterprise Server and GitHub Enterprise Cloud](https://docs.github.com/enterprise-server@3.15/billing/managing-your-license-for-github-enterprise/syncing-license-usage-between-github-enterprise-server-and-github-enterprise-cloud).
+          A: No, only GitHub Enterprise cloud users are detected in Azure DevOps. Customers using GitHub Server can [sync license usage between GitHub Enterprise Server and GitHub Enterprise Cloud](https://docs.github.com/enterprise-server@3.15/billing/managing-your-license-for-github-enterprise/syncing-license-usage-between-github-enterprise-server-and-github-enterprise-cloud).
 
       - question: |
           Q: What kind of access do GitHub Enterprise users get in Azure DevOps?
