@@ -1,15 +1,15 @@
 {
   "redirections": [
     {
-      "source_path_from_root": "docs/pipelines/agents/v2-osx-agent.md",
+      "source_path": "docs/pipelines/agents/v2-osx-agent.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/agents/v2-osx-agent"
     },
     {
-      "source_path_from_root": "docs/pipelines/agents/v2-linux-agent.md",
+      "source_path": "docs/pipelines/agents/v2-linux-agent.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/agents/v2-linux-agent"
     },
     {
-      "source_path_from_root": "docs/pipelines/agents/v2-windows-agent.md",
+      "source_path": "docs/pipelines/agents/v2-windows-agent.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/agents/v2-windows-agent"
     },
     {
