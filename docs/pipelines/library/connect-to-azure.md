@@ -23,9 +23,13 @@ An Azure Resource Manager service connection allows you to connect to Azure reso
 You have multiple authentication options for connecting to Azure with an Azure Resource Manager service connection. We recommend using [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity. Workload identity federation eliminates the need for secrets and secret management. 
 
 Recommended options:
-* [App registration (automatic) with workload identity federation](#create-an-app-registration-with-workload-identity-federation-automatic) 
-* Managed identity that creates a workload identity federation credential and connects to an [existing user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity). Use this option when you [don't have permission to create an app registration](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications).
-* [App registration or managed identity (manual) with workload identity federation or a secret](../release/configure-workload-identity.md). Manual configuration is more time consuming than the automatic configuration and should only be used if you've already tried to automatic option. 
+- [Connect to Azure with an Azure Resource Manager service connection](#connect-to-azure-with-an-azure-resource-manager-service-connection)
+  - [Create an app registration with workload identity federation (automatic)](#create-an-app-registration-with-workload-identity-federation-automatic)
+  - [Create a service connection for an existing user-assigned managed identity](#create-a-service-connection-for-an-existing-user-assigned-managed-identity)
+  - [Convert an existing service connection to use workload identity federation](#convert-an-existing-service-connection-to-use-workload-identity-federation)
+      - [Convert multiple service connections with a script](#convert-multiple-service-connections-with-a-script)
+    - [Revert an existing service connection that uses a secret](#revert-an-existing-service-connection-that-uses-a-secret)
+  - [Create a service connection that uses an existing service principal](#create-a-service-connection-that-uses-an-existing-service-principal)
 
 > [!NOTE]
 > There are other Azure Resource Manager service connection authentication options that don't use workload identity federation. These options are available for backwards compatibility and edge cases and not recommended. If you're setting up a service connection for the first time, use workload identity federation. If you have an existing service connection, try [converting your service connection to use workload identity federation](#convert-an-existing-service-connection-to-use-workload-identity-federation) first. 
@@ -84,7 +88,7 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
 
 1. Enter a **Service connection name**.
 1. Optionally, enter a description for the service connection.
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+1. Selecting **Grant access permission to all pipelines** allows all pipelines to use this connection. Instead of selecting this option, you can later explicitly [authorize each pipeline individually to use the service connection](#authorize-pipelines).
 1. Select **Save**.
 
 ## Create a service connection for an existing user-assigned managed identity
@@ -141,7 +145,7 @@ Use this option to automatically create a workload identity credential for an ex
         | **Service Management Reference** | Optional. Context information from an ITSM database. |
         | **Description** | Optional. Enter a description of the service connection.|
     
-    1. In the **Security** section, select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+    1. Selecting **Grant access permission to all pipelines** allows all pipelines to use this connection. Instead of selecting this option, you can later explicitly [authorize each pipeline individually to use the service connection](#authorize-pipelines).
     
     1. Select **Save** to validate and create the service connection.
 
@@ -351,7 +355,7 @@ To create a service connection that uses an existing service principal:
     | --------- | ----------- |
     | **Connection Name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
     | **Description** | Optional. Enter a description of the service connection.|
-    | **Security** | Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection. |
+    | **Security** | Selecting **Grant access permission to all pipelines** allows all pipelines to use this connection. Instead of selecting this option, you can later explicitly [authorize each pipeline individually to use the service connection](#authorize-pipelines). |
 
 1. Select **Verify and save** to validate and create the service connection.
 

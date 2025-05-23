@@ -51,9 +51,9 @@ To create a service connection for Azure Pipelines:
 
 1. Optionally, enter a **Description**.
 
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection.
+1. Selecting **Grant access permission to all pipelines** allows all pipelines to use this connection.
 
-   If you don't select this option, you must later explicitly [authorize each pipeline to use the service connection](#authorize-pipelines).
+   Instead of selecting this option, you can later explicitly [authorize each pipeline individually to use the service connection](#authorize-pipelines).
    
 1. Select **Save** or **Verify and save**.
 

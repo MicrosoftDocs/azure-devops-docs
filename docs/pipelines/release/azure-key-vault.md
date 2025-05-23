@@ -149,7 +149,7 @@ If you already have your own repository, proceed to the next step. Otherwise, im
     
     - **Description**: (Optional) Add a description.
 
-1. In **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+1. In **Security**, selecting **Grant access permission to all pipelines** allows all pipelines to use this connection. Instead of selecting this option, you can later explicitly [authorize each pipeline individually to use the service connection](#authorize-pipelines).
 
 1. Select **Save** to validate and create the service connection.
 
@@ -213,7 +213,7 @@ The following steps outline how to grant *Read* access at the subscription level
 
 1. For **Authentication**, paste your service principal's **Application (client) ID** and **Directory (tenant) ID**
 
-1. Under **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+1. Under **Security**, selecting **Grant access permission to all pipelines** allows all pipelines to use this connection. Instead of selecting this option, you can later explicitly [authorize each pipeline individually to use the service connection](#authorize-pipelines).
 
 1. Leave this window open, you'll return to verify and save your service connection once you've created the federated credential in Azure.
 
