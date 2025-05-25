@@ -1,0 +1,137 @@
+https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FsiteSkip to main content
+
+ Azure
+
+Sign in
+Chat with sales
+Azure Pipelines
+Continuously build, test, and deploy to any platform and cloud.
+
+Start free Start free with GitHub
+Overview
+Free account
+Get cloud-hosted pipelines for Linux, macOS, and Windows. Build web, desktop and mobile applications. Deploy to any cloud or on‑premises.
+Automate your builds and deployments with Pipelines so you spend less time with the nuts and bolts and more time being creative.
+
+
+
+Any language, any platform
+Build, test, and deploy Node.js, Python, Java, PHP, Ruby, C/C++, .NET, Android, and iOS apps. Run in parallel on Linux, macOS, and Windows.
+
+
+Containers and Kubernetes
+Easily build and push images to container registries like Docker Hub and Azure Container Registry. Deploy containers to individual hosts or Kubernetes.
+
+
+Extensible
+Explore and implement a wide range of community-built build, test, and deployment tasks, along with hundreds of extensions from Slack to SonarCloud.
+
+
+Deploy to any cloud
+Implement continuous delivery (CD) of your software to any cloud, including Azure, AWS, and GCP. Visualize deployment to any number of interdependent stages.
+
+
+Free for open source
+Ensure fast continuous integration/continuous delivery (CI/CD) pipelines for every open source project. Get 10 free parallel jobs with unlimited build minutes for all open source projects.
+
+
+Advanced workflows and features
+Take advantage of easy build chaining and multi-phased builds. Support for YAML, test integration, release gates, reporting—and more.
+
+GitHub user? You’re covered.
+Build, test, and deploy everything you create on GitHub. Get fast, reliable builds on all platforms through deep integration with GitHub pull requests, checks, and statuses.
+
+GitHub Marketplace
+
+Build and deploy faster with Pipelines
+Linux, macOS, and Windows agents—hosted by Microsoft
+Simplify managing hardware and VMs by using Microsoft cloud-hosted agents. Get full CI/CD pipeline support for every major platform and tool.
+
+
+
+Powerful workflows with native container support
+Get lightning fast builds with parallel jobs and test execution. Use container jobs to create consistent and reliable builds with the exact tools you need. Create new containers with ease and push them to any registry.
+
+Flexible deployments to Kubernetes, serverless, or VMs
+Deploy to Kubernetes, VMs, Azure Functions, Azure Web Apps, or any cloud. Use stages, gates, and approvals to create a deployment strategy that’s right for you and ensures quality at every step. Even deploy from other CI systems, like Jenkins.
+
+
+Comprehensive security and compliance, built in
+Microsoft invests more than $1 billion annually on cybersecurity research and development.
+
+We employ more than 3,500 security experts who are dedicated to data security and privacy.
+
+Learn more about security on Azure
+Open source projects
+10 Free
+10 Free
+
+Parallel jobs with unlimited minutes per month
+
+Start free
+Microsoft-hosted CI/CD
+1 Free
+1 Free
+
+Parallel job with up to 1,800 minutes per month
+
+$40 per each parallel job with unlimited minutes
+
+Start free
+Self-hosted CI/CD
+1 Free
+1 Free
+
+Parallel job with unlimited minutes per month
+
+Then $15 per extra parallel job
+
+Start free
+Learn more about pricing
+Get started with an Azure free account
+1
+
+
+Start free. Get $200 credit to use within 30 days. While you have your credit, get free amounts of many of our most popular services, plus free amounts of 55+ other services that are always free.
+2
+
+
+After your credit, move to pay as you go to keep building with the same free services. Pay only if you use more than your free monthly amounts.
+
+3
+
+
+After 12 months, you'll keep getting 55+ always-free services—and still pay only for what you use beyond your free monthly amounts.
+
+"Pandas is a community-maintained project, and Azure Pipelines lets me be more efficient at reviewing pull requests and contributions. It automatically tests the pandas code on Windows, Linux and Mac, and I can see results in one place. If the tests fail for a pull request, I can just tell the contributor to "ping me on green"."
+Jeff Reback, maintainer of the Pandas project
+How we use Azure Pipelines
+See how the .NET infrastructure team at Microsoft relies on Azure Pipelines to run millions of automated tests a day for the .NET framework open source project. Learn how the team streamlined collaboration with the open source community through shared tooling and moving to a single CI system that powers all their builds for Windows, Linux, and Mac.
+
+Read the story
+
+Ready when you are—let's set up your Azure free account
+Try Azure for free
+Additional Navigation
+Get the Azure mobile app
+Explore Azure
+Products and pricing
+Solutions and support
+Partners
+Resources
+Cloud computing
+Change language
+
+English (US)
+Your Privacy Choices
+Diversity and Inclusion
+Accessibility
+Privacy & Cookies
+Data Protection Notice
+Trademarks
+Terms of use
+Privacy Data Management
+Contact us
+Feedback
+Sitemap
+© Microsoft 2023 az ad sp create-for-rbac --name "myML" --role contributor --scopes /subscriptions/<subscription-id>/resourceGroups/<group-rizqshopd@googlegroups.com> --sdk-auth
