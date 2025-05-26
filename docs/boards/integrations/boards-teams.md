@@ -60,7 +60,7 @@ After the app installs, you see a welcome message in the Teams conversation pane
 
 :::image type="content" source="media/integrations-teams/welcome-message.png" alt-text="Screenshot of the Welcome message in the conversation pane.":::
 
-### Azure Pipelines app commands
+### Azure Boards app commands
 
 You can use the following `@azure boards` commands to interact with the Azure Boards app in your Teams channel.
 
