@@ -1,7 +1,7 @@
 ---
-title: Automate Azure Resource Manager with workload identity service connections
+title: Use scripts to automate Azure Resource Manager with workload identity service connections
 description: Learn how to use automation to create a service connection in Azure Pipelines with workload identity.
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jukullam
 author: juliakm
 ms.date: 05/16/2025
@@ -10,13 +10,13 @@ monikerRange: '>= azure-devops'
 ai-usage: ai-assisted
 ---
 
-# Automate Azure Resource Manager with workload identity service connections
+# Use scripts to automate Azure Resource Manager with workload identity service connections
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use automation to create Azure Resource Manager service connections with workload identity for consistency, efficiency, repeatability, and scalability in your DevOps projects. Scripts guarantee that service connections are configured the same way every time, reduce the risk of human error, and save time, especially when you set up multiple connections or deploy to different environments. Automation also lets you scale so you can better manage large deployments.
+Learn how to use scripts to create Azure Resource Manager service connections with workload identity in Azure Pipelines. Scripts ensure consistency, efficiency, and repeatability when setting up service connections, reducing the risk of human error. They save time, especially when creating multiple connections or deploying to different environments. These scripts can also be integrated into an automation process to scale and better manage large deployments.
 
-Automation also helps enforce security policies and compliance requirements by making sure service connections use the right permissions and configurations. It also serves as documentation for the setup process.
+Using scripts as part of an automation process helps enforce security policies and compliance requirements by ensuring service connections use the correct permissions and configurations. It also serves as documentation for the setup process.
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ This table provides an overview of the key properties exchanged between the crea
 | Create federated credential in Microsoft Entra or Azure | `appId`, `workloadIdentityFederationIssuer`, `workloadIdentityFederationSubject` | |
 | Create role assignment in Azure               | `principalId`          |                         |
 
-## Sign in with Azure CLI
+## 1. Sign in with Azure CLI
 
 The following commands use the Azure CLI. Sign in to the intended tenant:
 
@@ -54,9 +54,9 @@ az login --tenant TENANT_ID
 
 Learn more in [Authenticate to Azure using Azure CLI](/cli/azure/authenticate-azure-cli).
 
-## Create identity
+## 2. Create identity
 
-Create an identity using an app registration or a managed identity.
+Create an identity using managed identity or an app registration.
 
 #### [Managed identity](#tab/managed-identity)
 
@@ -70,8 +70,8 @@ Example output:
 
 ```json
 {
-  "clientId": "APP_ID",
-  "principalId": "PRINCIPAL_ID"
+  "clientId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "principalId": "aaaaaaaa-bbbb-cccc-1111-222222222222"
 }
 ```
 
@@ -91,8 +91,8 @@ Example output:
 
 ```json
 {
-  "appId": "APP_ID",
-  "principalId": "PRINCIPAL_ID"
+  "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "principalId": "aaaaaaaa-bbbb-cccc-1111-222222222222"
 }
 ```
 
@@ -102,7 +102,7 @@ For more information, see [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-c
 
 ---
 
-## Create a service connection
+## 3. Create a service connection
 
 This example uses the [Azure DevOps Azure CLI extension](/azure/devops/cli) and a configuration file to create the service connection. This configures the identity created in a new Azure service connection. The `servicePrincipalId` authorization parameter is populated with the `appId` of the identity.
 
@@ -154,9 +154,9 @@ Example output:
 
 ```json
 {
-  "serviceprincipalid": "APP_ID",
-  "tenantid": "TENANT_ID",
-  "workloadIdentityFederationIssuer": "https://login.microsoftonline.com/TENANT_ID/v2.0",
+  "serviceprincipalid": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "tenantid": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
+  "workloadIdentityFederationIssuer": "https://login.microsoftonline.com/aaaabbbb-0000-cccc-1111-dddd2222eeee/v2.0",
   "workloadIdentityFederationIssuerType": "EntraID",
   "workloadIdentityFederationSubject": "<federation-subject>"
 }
@@ -164,7 +164,7 @@ Example output:
 
 For more information about this command, see [Azure DevOps CLI service endpoint](/azure/devops/cli/service-endpoint).
 
-## Create a federated identity credential
+## 4. Create a federated identity credential
 
 Create a federated credential using the `workloadIdentityFederationIssuer` and `workloadIdentityFederationSubject` output from the __Create a service connection__ step. 
 
@@ -211,7 +211,7 @@ For more information about this command, see [az ad app federated-credential cre
 
 ---
 
-## Create role assignment
+## 5. Create role assignment
 
 Add a role assignment to your managed identity or app registration with `az role assignment create`. For available roles, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles). The assignee of the role is the service principal associated with the app registration or managed identity. A service principal is identified by its ID, also called `principalId`. The `principalId` is in the output of the __Create identity__ command.
 
