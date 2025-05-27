@@ -48,12 +48,12 @@ The default setting for all projects is to use flaky tests for troubleshooting.
 
 Flaky test management supports system and custom detection.
 
-- **System detection**: The in-product flaky detection uses test rerun data. The detection is via **VSTest task** rerunning of failed tests capability or retry of stage in the pipeline. You can select specific pipelines in the project for which you would like to detect flaky tests. 
+- **System detection**: Azure DevOps has a built-in mechanism for detecting flaky tests. This involves rerunning failed tests within the same pipeline execution. If a test case fails initially but passes on a rerun, it is marked as flaky. This detection is tightly coupled with the **VSTest** task, which reruns failed tests within the same task execution. Another method involves rerunning failed jobs in the pipeline (manually by clicking on "rerun failed jobs" in any pipeline run). If a test passes in the rerun, it is marked as flaky.
 
    > [!Note]
    > Once a test is marked as flaky, the data is available for all pipelines for that branch to assist with troubleshooting in every pipeline. 
 
-- **Custom detection**: You can integrate your own flaky detection mechanism with Azure Pipelines and use the reporting capability. With custom detection, you need to update the test results metadata for flaky tests. For details, see [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result-meta-data/update). 
+- **Custom detection**: This approach allows external systems to integrate their own logic for detecting flaky tests and communicate this to ADO via an API, for consistent tracking and management. The API expects a test result ID and a test ID, along with a flag indicating whether the test is flaky. This information is sent to ADO, which then stores and propagates the flakiness information for that test case in subsequent pipeline runs. Once a test is marked as flaky, ADO will continue to recognize it as such until it is manually unmarked. For details, see [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result-meta-data/update). 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Test Management, Flaky test detection enabled, Custom detection.](media/flaky-test-management/custom-detection.png) 
