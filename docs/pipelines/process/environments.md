@@ -102,7 +102,7 @@ strategy:
  runOnce:
    deploy:
      steps:
-     - task: KubernetesManifest@0
+     - task: KubernetesManifest@1
        displayName: Deploy to Kubernetes cluster
        inputs:
          action: deploy
