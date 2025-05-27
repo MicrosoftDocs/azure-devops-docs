@@ -62,7 +62,7 @@ The following steps show how to use the developer tools in Microsoft Edge. For m
 
 11. Select **Export HAR (with sensitive data)**.	 
 
-    :::image type="content" source="media/capture-browser-trace/microsoft-edge-export-har-with-sensitive-data.png" alt-text="Screenshot shows highlighted selection Export HAR with sensitive data in Microsoft Edge.":::
+   :::image type="content" source="media/capture-browser-trace/microsoft-edge-export-har-with-sensitive-data.png" alt-text="Screenshot shows highlighted selection Export HAR with sensitive data in Microsoft Edge.":::
 
 12. (Optional) Uncheck the "Allow to generate HAR with sensitive data" box when you're done.
 
@@ -93,7 +93,7 @@ The following steps show how to use the developer tools in Google Chrome. For mo
 9. When you're done recording, long press the export button so that it shows a menu. If you only do a short press, a sanitized version of the HAR gets exported, which is missing information needed for troubleshooting.
 10.  Select **Export HAR (with sensitive data)**.	 
 
-    :::image type="content" source="media/capture-browser-trace/google-chrome-export-har-with-sensitive-data.png" alt-text="Screenshot shows highlighted selection, Export HAR (with sensitive data), in Google Chrome.":::
+   :::image type="content" source="media/capture-browser-trace/google-chrome-export-har-with-sensitive-data.png" alt-text="Screenshot shows highlighted selection, Export HAR with sensitive data, in Google Chrome.":::
 
 11. (Optional) Uncheck the "Allow to generate HAR with sensitive data" box when you're done.
 
