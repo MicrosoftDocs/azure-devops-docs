@@ -53,7 +53,7 @@ steps:
     namespace: default
     manifests: $(bake.manifestsBundle)
     containers: |
-      nginx: 1.7.9
+      nginx:  1.24.0
 ```
 ## Kubectl task
 
