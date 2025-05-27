@@ -129,7 +129,7 @@ You can also use the REST API for this process.
         | **Directory (tenant) ID** | Required. Enter the Tenant ID from your managed identity. |
     
     
-    1. In the **Security** section, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](service-endpoints.md#authorize-pipelines).
+    1. In the **Security** section, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
 
 1. In Azure DevOps, copy the generated values for **Issuer** and **Subject identifier**.
 
@@ -271,7 +271,7 @@ You can also use the REST API for this process.
         | **Directory (tenant) ID** | Required. Enter the Directory (tenant) ID for your app registration. |
     
     
-    1. In the **Security** section, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](service-endpoints.md#authorize-pipelines).
+    1. In the **Security** section, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
 
 1. In Azure DevOps, copy the generated values for **Issuer** and **Subject identifier**.
 
