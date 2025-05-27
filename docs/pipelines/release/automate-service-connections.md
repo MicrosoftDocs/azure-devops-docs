@@ -184,7 +184,7 @@ az identity federated-credential create --name fic-for-sc
 > [!TIP]
 > Add a line continuation character (Bash: backslash, PowerShell: backquote) at the end of any lines that don't complete the command.
 
-The managed identity doesn't have to be created in the same subscription that it's  granted to access in the [Create role assignment step](#create-role-assignment). 
+The managed identity doesn't have to be created in the same subscription that it's  granted to access in the [Create role assignment step](#5-create-role-assignment). 
 
 For more information about this command, see [az identity federated-credential create](/cli/azure/identity/federated-credential#az-identity-federated-credential-create).
 
