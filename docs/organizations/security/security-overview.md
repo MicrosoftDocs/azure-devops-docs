@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/23/2025
+ms.date: 05/28/2025
 --- 
 
 # Make your Azure DevOps secure
@@ -28,7 +28,6 @@ Securing your network is crucial when you're working with Azure DevOps to protec
 - **[Use Azure Firewall](/azure/firewall/overview):** Deploy Azure Firewall to provide a centralized network security policy across multiple Azure subscriptions and virtual networks.
 - **[Monitor network traffic with Azure Network Watcher](/azure/network-watcher/network-watcher-monitoring-overview):** Use Azure Network Watcher to monitor and diagnose network issues, ensuring the security and performance of your network.
 - **[Implement DDoS protection with Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview):** Enable Azure DDoS Protection to safeguard your applications from distributed denial-of-service (DDoS) attacks.
-- **[Protect your data]:** Protect your data by using encryption, backup, and recovery strategies.
   
 For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals).
 
