@@ -5,12 +5,12 @@ ms.assetid: C8C003EA-79C8-49EF-BEBD-35548505F0CF
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 09/26/2023
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Debug with WinDbg
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts provides a dedicated symbols server for publishing symbols. This server allows you to connect a debugger that can automatically fetch the correct symbol files, enabling you to debug your application efficiently. With tools like WinDbg, you can load an executable, attach the debugger to a running process, consume your symbols, set up breakpoints, and systematically analyze your code.
 

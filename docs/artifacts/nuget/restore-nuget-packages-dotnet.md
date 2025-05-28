@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Restore NuGet packages from the command line (dotnet)
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 This guide walks you through configuring your project and restoring your NuGet packages using the dotnet command-line interface.
 

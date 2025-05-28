@@ -4,13 +4,13 @@ description: Learn how to build and publish your pipeline artifact with Gradle a
 ms.reviewer: dastahel
 ms.topic: how-to
 ms.date: 02/10/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Build and publish pipeline artifacts with Gradle and Azure Pipelines
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Gradle is a popular build tool for Java applications and the primary build tool for Android. Using Azure Pipelines, you can build and publish your pipeline artifacts using both YAML and Classic pipelines.
 
