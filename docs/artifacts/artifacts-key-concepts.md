@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Azure Artifacts key concepts 
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enable developers to host and share various types of packages to streamline collaboration and package distribution. This article covers the key concepts when working with Azure Artifacts.
 

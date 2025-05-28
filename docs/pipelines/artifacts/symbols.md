@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 
 # Publish symbols with Azure Pipelines
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 With Azure Pipelines, you can publish your symbols to Azure Artifacts symbol server using the *Index sources and publish symbols* task. You can use the debugger to connect and automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. Using Azure Pipelines, you can also publish your symbols to files shares and portable PDBs.
 

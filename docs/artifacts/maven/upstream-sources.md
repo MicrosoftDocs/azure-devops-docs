@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Use packages from Maven Central
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Using Azure Artifacts upstream sources allows you to use a single feed for hosting both the packages you produce and packages from public registries such as Maven Central. When you add upstream sources to your feed, Azure Artifacts saves a copy of any package installed from upstream. This ensures continued accessibility for your development, even if a public registry suffers an outage. Additionally, Azure Artifacts supports various other Maven upstream sources, including the Google Maven Repository, Gradle Plugins, and JitPack.
 

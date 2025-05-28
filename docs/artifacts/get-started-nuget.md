@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # Quickstart: Get started with NuGet packages in Azure Artifacts
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]]
 
 Azure Artifacts enables developers to publish and download NuGet packages from sources such as feeds and public registries. With Azure Artifacts, you can create feeds that are either:
 

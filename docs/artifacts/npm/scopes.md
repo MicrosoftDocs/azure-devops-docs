@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Use Npm scopes in Azure Artifacts
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Npm scopes serve as a means to categorize related packages into groups. These scopes enable you to create packages with identical names to those created by different users without encountering conflicts. By using scopes, you have the ability to segregate public and private packages by adding the scope prefix *@scopeName* and configuring the .npmrc file to exclusively use a feed with that particular scope.
 

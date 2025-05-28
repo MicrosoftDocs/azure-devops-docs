@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Migrate from file shares to Azure Artifacts
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Using Azure Artifacts, you can streamline package management to enhance collaboration, ensure package integrity, and leverage various capabilities such as versioning, access control, and feed management.
 

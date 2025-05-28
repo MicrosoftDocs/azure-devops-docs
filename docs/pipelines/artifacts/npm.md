@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Publish npm packages with Azure Pipelines (YAML/Classic)
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 With Azure Pipelines, you can publish your npm packages to Azure Artifacts feeds within your organization and in other organizations. This article will guide you through publishing your npm packages to internal and external feeds using YAML and Classic pipelines.
 

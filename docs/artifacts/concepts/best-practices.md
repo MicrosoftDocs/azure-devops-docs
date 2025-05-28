@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Azure Artifacts best practices
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Managing software packages can be a complex and time-consuming process, particularly when working with large-scale projects. Azure Artifacts provides a reliable package management solution that streamlines workflows and enhances team collaboration. 
 

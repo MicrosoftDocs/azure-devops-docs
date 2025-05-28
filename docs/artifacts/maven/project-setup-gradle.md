@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Connect to an Azure Artifacts feed - Gradle
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enables developers to manage project dependencies from a single feed while controlling who can view, publish, or install packages. This article walks you through setting up your project and connecting to an Azure Artifacts feed using Gradle.
 

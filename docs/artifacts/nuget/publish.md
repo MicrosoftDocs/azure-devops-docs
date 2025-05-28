@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Publish NuGet packages from the command line (NuGet.exe)
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 This article guides you through setting up your project and publishing your NuGet packages using the NuGet command-line interface.
 

@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Safeguard against malicious public packages
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 With Azure Artifacts upstream sources, developers gain the convenience of using a unified feed to both publish and consume packages from Artifact feeds and popular public registries like NuGet.org or npmjs.com.
 

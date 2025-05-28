@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Manage permissions
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enables you to publish, consume, and store various types of packages in your feed. By configuring permissions for your feed, you can manage access to your packages and control who can interact with them.
 

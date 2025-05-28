@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Get started with npm packages in Azure Artifacts
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
 Using Azure Artifacts, you can publish and download your npm packages from feeds and public registries such as npmjs.com. This quickstart will guide you through creating your feed, configuring your project, and managing npm packages with your Azure Artifacts feed.
 

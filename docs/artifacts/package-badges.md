@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Share your Artifacts with package badges
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
 With Azure Artifacts, you can share your packages anywhere you can share an image by using package badges. You can embed package badges directly into your project's home page or in any Markdown file for your customers to easily find and download your packages.
 

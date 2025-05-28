@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Feed scopes: Project vs organization feeds
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enables developers to manage their dependencies from a single feed. A feed acts as an organizational space to host various types of packages, giving you control over who can access it, whether it's team members within your organization or even public users.
 

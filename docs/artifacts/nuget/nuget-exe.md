@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Connect to an Azure Artifacts feed (NuGet.exe)
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enables developers to download NuGet packages from various sources such as private feeds and public registries. You can publish packages to private feeds and control access, or create public feeds to share them openly. This article guides you through authenticating with to your Azure Artifacts feed.
 

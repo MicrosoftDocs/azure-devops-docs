@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # What are upstream sources?
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts upstream sources enable developers to conveniently store packages from various sources in a single feed, including those you publish and those installed from external feeds or public registries like NuGet.org, npmjs.com. Once upstream sources are enabled, any package installed from an upstream source is automatically saved to your feed.
 
