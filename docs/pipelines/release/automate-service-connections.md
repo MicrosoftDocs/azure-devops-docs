@@ -125,8 +125,8 @@ The first code snippet is a configuration file, `ServiceConnectionGeneric.json`.
   "url": "https://management.azure.com/",
   "authorization": {
     "parameters": {
-      "tenantid": "TENANT_ID",
-      "serviceprincipalid": "APP_ID"
+      "tenantid": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
+      "serviceprincipalid": "00001111-aaaa-2222-bbbb-3333cccc4444"
     },
     "scheme": "WorkloadIdentityFederation"
   },
@@ -193,7 +193,7 @@ For more information about this command, see [az identity federated-credential c
 ```json	
 {
   "name": "fic-for-sc",
-  "issuer": "https://login.microsoftonline.com/TENANT_ID/v2.0",
+  "issuer": "https://login.microsoftonline.com/aaaabbbb-0000-cccc-1111-dddd2222eeee/v2.0",
   "subject": "<federation-subject>",
   "audiences": [
     "api://AzureADTokenExchange"
