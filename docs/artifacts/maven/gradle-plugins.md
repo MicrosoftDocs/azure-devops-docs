@@ -4,13 +4,13 @@ description: How to add Gradle Plugins upstream source
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 03/11/2022
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Gradle Plugins upstream source
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 With Azure Artifacts feeds, you can enable upstream sources to include packages from different public registries such as Gradle Plugins. Once upstream sources are enabled on your feed, Azure Artifacts will save a copy of any package you install from upstream. Azure Artifacts also support other Maven upstream sources such as Maven Central, Google Maven Repository, and JitPack.
 

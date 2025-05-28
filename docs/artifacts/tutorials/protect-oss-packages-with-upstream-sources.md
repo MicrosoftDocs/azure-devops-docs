@@ -3,13 +3,13 @@ title: How to use upstream sources in your Azure Artifacts feed
 description: Use upstream sources in Azure Artifacts to consume packages from public registries
 ms.service: azure-devops-artifacts
 ms.date: 06/03/2022
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Tutorial: How to use upstream sources
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Using upstream sources in your feed enables you to manage your application dependencies from a single feed. Using upstream sources makes it easy to consume packages from public registries while having protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
 

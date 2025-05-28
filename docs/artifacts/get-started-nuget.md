@@ -7,13 +7,13 @@ ms.author: rabououn
 author: ramiMSFT
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.date: 05/14/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Quickstart: Get started with NuGet packages in Azure Artifacts
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]]
 
 Azure Artifacts enables developers to publish and download NuGet packages from sources such as feeds and public registries. With Azure Artifacts, you can create feeds that are either:
 

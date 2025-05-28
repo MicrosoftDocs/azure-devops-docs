@@ -6,13 +6,13 @@ ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.custom: peer-review-program
 ms.topic: how-to
 ms.date: 03/13/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Delete and recover packages
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts securely stores various package types in a feed, whether published directly or saved from upstream sources. As older package versions become less relevant, you can remove them manually or by using retention policies to free up space and reduce costs.
 
