@@ -351,13 +351,13 @@ sections:
           - [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md)
           - [Disconnect your organization from your directory](./disconnect-organization-from-azure-ad.md)
           - [Change the directory connected to Azure DevOps](change-azure-ad-connection.md)
-          - [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
+          - [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md)
           - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
       - question: |
           How can I manage multiple organizations that are connected to Microsoft Entra ID?
         answer: |
-          You can download a complete list of organizations backed by a Microsoft Entra tenant. For more information, see [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md).
+          You can download a complete list of organizations backed by a Microsoft Entra tenant. For more information, see [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md).
           
           <a name="connect-o365-azure-ad"></a>
           
