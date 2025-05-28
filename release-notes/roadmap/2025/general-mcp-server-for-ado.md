@@ -13,6 +13,3 @@ hide_comments: true
 # MCP Server for Azure DevOps
 
 Enable a local MCP Server for Azure DevOps to bring contextual information from Azure DevOps into VS Code using GitHub Copilot. The MCP Server should include tools for work items, builds, search, repos, and wiki.
-
-> [!div class="mx-imgBorder"]
-> ![Demo to create iterations](media/mcp-demo-create-iterations.mp4)
