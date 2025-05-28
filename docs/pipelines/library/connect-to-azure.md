@@ -84,7 +84,7 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
 
 1. Enter a **Service connection name**.
 1. Optionally, enter a description for the service connection.
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+1. Selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](service-endpoints.md#authorize-pipelines).
 1. Select **Save**.
 
 ## Create a service connection for an existing user-assigned managed identity
