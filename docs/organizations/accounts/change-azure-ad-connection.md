@@ -81,6 +81,6 @@ If you [add any new custom domains](/azure/active-directory/fundamentals/add-cus
 - [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
 - [Rename a project](../projects/rename-project.md)
 - [Rename an organization](rename-organization.md)
-- [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
+- [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md)
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Disconnect your organization from Microsoft Entra ID](disconnect-organization-from-azure-ad.md)
