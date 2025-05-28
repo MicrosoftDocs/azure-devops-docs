@@ -29,7 +29,7 @@ By accessing this information, you can efficiently manage and oversee the organi
 
 | Category | Requirements |
 |--------------|-------------|
-|**Organization connection** |Member of an Azure DevOps organization [connected to Microsoft Entra ID](connect-organization-to-azure-ad.md).|
+|Organization connection |Member of an Azure DevOps organization [connected to Microsoft Entra ID](connect-organization-to-azure-ad.md).|
 |Azure DevOps CLI | Have a Microsoft Entra token. For more information, see [Issue Microsoft Entra tokens with Azure CLI](../../cli/entra-tokens.md).|
 
 ## Get list of organizations
