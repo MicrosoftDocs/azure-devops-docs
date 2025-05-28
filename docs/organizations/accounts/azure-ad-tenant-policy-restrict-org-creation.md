@@ -69,5 +69,5 @@ The error message is customized.
 
 * [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
 * [Learn about access with Microsoft Entra ID](access-with-azure-ad.md)
-* [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
+* [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md)
 * [Resolve orphaned organization](resolve-orphaned-organization.md)
