@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 10/08/2024
+ms.date: 05/28/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -29,7 +29,8 @@ By accessing this information, you can efficiently manage and oversee the organi
 
 | Category | Requirements |
 |--------------|-------------|
-|**Organization connection** |Member of an Azure DevOps organization [connected to Microsoft Entra ID](connect-organization-to-azure-ad.md).|
+|Organization connection |Member of an Azure DevOps organization [connected to Microsoft Entra ID](connect-organization-to-azure-ad.md).|
+|Azure DevOps CLI | Have a Microsoft Entra token. For more information, see [Issue Microsoft Entra tokens with Azure CLI](../../cli/entra-tokens.md).|
 
 ## Get list of organizations
 
@@ -67,13 +68,13 @@ You can get a list of organizations backed by Microsoft Entra ID by using the [a
       az devops configure --defaults organization=https://dev.azure.com/{My_Organization}/
       ```
 
-   2. Use the REST API to list organizations. Ensure you have a personal access token (PAT). You can [generate a PAT from Azure DevOps](use-personal-access-tokens-to-authenticate.md). Use the following command to list projects with an organization:
+   2. Use the REST API to list organizations. Ensure you have a Microsoft Entra token. You can [issue Microsoft Entra tokens with the Azure CLI](../../cli/entra-tokens.md). Use the following command to list the projects in an organization:
 
       ```azurerestapi
-      az rest --method get --uri https://dev.azure.com/{My_Organization}/_apis/projects?api-version=6.0 --headers "Authorization=Bearer {PAT}"
+      az rest --method get --uri https://dev.azure.com/{My_Organization}/_apis/projects?api-version=6.0 --headers "Authorization=Bearer {12346918273649182376491823764}"
       ```
 
-   This process should correctly authenticate and retrieve the list or organizations connected to your Microsoft Entra ID.
+   This process should correctly authenticate and retrieve the list of organizations connected to your Microsoft Entra ID.
 
 * * *
 
