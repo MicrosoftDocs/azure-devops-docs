@@ -6,12 +6,12 @@ ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: how-to
 ms.date: 03/04/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Install NuGet packages with Visual Studio
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 This article guides you through setting up your Visual Studio to install NuGet packages from Azure Artifacts feeds and NuGet.org.
 

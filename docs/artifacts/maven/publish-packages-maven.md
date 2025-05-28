@@ -6,13 +6,13 @@ ms.topic: how-to
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 05/14/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Publish Maven packages to an Azure Artifacts feed
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts provides a centralized way to host and manage your packages in a single feed. This article guides you through connecting to an Azure Artifacts feed and publishing your Maven packages.
 
