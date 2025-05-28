@@ -5,7 +5,7 @@ ms.assetid: 3f273ac7-3c2e-47d0-b333-3ca44c19bbf4
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.reviewer: amullans
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ms.date: 07/21/2023
 ---
 

@@ -4,7 +4,7 @@ description: Learn how to connect to your feed and restore NuGet packages using 
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 01/14/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Restore NuGet packages from the command line (NuGet.exe)

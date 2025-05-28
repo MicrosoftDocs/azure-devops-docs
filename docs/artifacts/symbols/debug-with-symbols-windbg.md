@@ -5,7 +5,7 @@ ms.assetid: C8C003EA-79C8-49EF-BEBD-35548505F0CF
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 09/26/2023
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Debug with WinDbg

@@ -4,7 +4,7 @@ description: How to use packages from Maven Central upstream source
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 11/10/2023
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

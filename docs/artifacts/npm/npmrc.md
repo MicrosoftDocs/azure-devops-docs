@@ -6,7 +6,7 @@ ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: conceptual
 ms.date: 03/13/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

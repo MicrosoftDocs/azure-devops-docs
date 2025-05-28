@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.date: 07/01/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Get started with Maven packages in Azure Artifacts

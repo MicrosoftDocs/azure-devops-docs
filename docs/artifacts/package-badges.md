@@ -5,7 +5,7 @@ ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 06/21/2022
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Share your Artifacts with package badges

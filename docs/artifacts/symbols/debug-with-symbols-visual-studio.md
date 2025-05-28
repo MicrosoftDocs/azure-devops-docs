@@ -5,7 +5,7 @@ ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 07/20/2021
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

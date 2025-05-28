@@ -4,7 +4,7 @@ description: Learn the differences between project-scoped and organization-scope
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 10/24/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

@@ -4,7 +4,7 @@ description: Package count and size limits in Azure Artifacts
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/25/2022
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Package sizes and count limits

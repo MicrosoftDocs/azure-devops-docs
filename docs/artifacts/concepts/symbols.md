@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.assetid: 6D0F0D86-2ADC-4902-AFA7-98F7EF78EE07
 ms.date: 07/15/2021
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

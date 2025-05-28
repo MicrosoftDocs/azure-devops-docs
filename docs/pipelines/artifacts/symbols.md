@@ -3,7 +3,7 @@ title: Publish symbols for debugging
 description: How to publish symbols to Azure Artifacts symbol server and file shares using Azure Pipelines
 ms.assetid: 8794A5F8-B646-4E2F-A426-47CC62ABFF5D
 ms.date: 09/22/2023
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

@@ -4,7 +4,7 @@ description: How to follow a package and get notified every time a new version i
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 06/14/2022
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Package notification

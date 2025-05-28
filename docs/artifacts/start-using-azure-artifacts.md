@@ -7,7 +7,7 @@ ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 01/09/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # What is Azure Artifacts?

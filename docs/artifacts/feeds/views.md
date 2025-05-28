@@ -5,7 +5,7 @@ ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 02/19/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
  
 # Promote packages and manage feed views

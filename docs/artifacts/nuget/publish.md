@@ -5,7 +5,7 @@ ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 01/14/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Publish NuGet packages from the command line (NuGet.exe)

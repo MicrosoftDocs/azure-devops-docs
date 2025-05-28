@@ -5,7 +5,7 @@ ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 11/29/2023
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

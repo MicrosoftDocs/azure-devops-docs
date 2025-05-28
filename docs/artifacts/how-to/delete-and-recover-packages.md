@@ -6,7 +6,7 @@ ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.custom: peer-review-program
 ms.topic: how-to
 ms.date: 03/13/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

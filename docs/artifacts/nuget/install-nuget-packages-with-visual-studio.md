@@ -6,7 +6,7 @@ ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: how-to
 ms.date: 03/04/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Install NuGet packages with Visual Studio

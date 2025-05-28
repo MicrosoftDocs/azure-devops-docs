@@ -6,7 +6,7 @@ ms.custom: peer-review-program
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 06/03/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # What are Azure Artifacts feeds?

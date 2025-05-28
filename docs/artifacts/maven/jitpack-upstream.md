@@ -4,7 +4,7 @@ description: How to add JitPack upstream source
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 03/22/2022
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

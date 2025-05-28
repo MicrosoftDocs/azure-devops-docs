@@ -5,7 +5,7 @@ description: Learn how to publish npm packages to internal and external feed usi
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.topic: conceptual
 ms.date: 11/14/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

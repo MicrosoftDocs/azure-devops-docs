@@ -5,7 +5,7 @@ ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 04/07/2022
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 

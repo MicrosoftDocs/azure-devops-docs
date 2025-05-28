@@ -4,7 +4,7 @@ description: Learn how to build and publish your pipeline artifact with Gradle a
 ms.reviewer: dastahel
 ms.topic: how-to
 ms.date: 02/10/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
