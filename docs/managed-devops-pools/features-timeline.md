@@ -1,7 +1,7 @@
 ---
 title: Features timeline and roadmap
 description: Learn about new features in Managed DevOps Pools.
-ms.date: 05/05/2025
+ms.date: 05/28/2025
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the new features in Managed DevOps Pools.
 ---
@@ -11,8 +11,6 @@ ms.topic: overview
 ## Roadmap
 
 The following section describes new features in development for Managed DevOps Pools.
-
-* **Shorter time for agent allocation**: The Managed DevOps Pools team is making updates to shorten the startup time for [standby agents](./configure-scaling.md#standby-agent-mode) (**Fresh agent every time** setting). **Planned for May 2025.**
 
 * **Log analytics**: Managed DevOps Pools is adding support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode). **Planned for June 2025.**
 
@@ -29,6 +27,10 @@ The following section describes new features in development for Managed DevOps P
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for end 2025.**
 
 * **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for end of 2025.**
+
+## May 2025
+
+* **Shorter time for agent allocation**: The Managed DevOps Pools made updates to shorten the startup time for [standby agents](./configure-scaling.md#standby-agent-mode) (**Fresh agent every time** setting). For more information, see [Lifecycle of agents and potential delays in allocation](./configure-scaling.md#lifecycle-of-agents-and-potential-delays-in-allocation).
 
 ## April 2025
 
