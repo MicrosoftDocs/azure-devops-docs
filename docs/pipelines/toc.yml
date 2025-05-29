@@ -335,6 +335,9 @@
         - name: Troubleshoot Azure Resource Manager service connections
           displayName: service connection, service principal, Azure resource manager, azure
           href: release/azure-rm-endpoint.md
+        - name: Use scripts to automate Azure Resource Manager service connections
+          displayName: service connection, service principal, Azure resource manager, azure
+          href: release/automate-service-connections.md
       - name: Azure App Service (Web Apps)
         items:
         - name: Deploy to App Service using Azure Pipelines
