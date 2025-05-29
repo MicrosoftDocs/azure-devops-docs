@@ -12,11 +12,11 @@ ms.date: 05/30/2025
 #customer intent: As a project team member, I want to set up Azure DevOps CLI and understand how to access pipelines, boards, repos, and artifacts. 
 ---
 
-# Get started with Azure DevOps CLI
+# Quickstart: Get started with Azure DevOps CLI
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-With the Azure DevOps extension for Azure Command Line Interface (CLI), you can manage many Azure DevOps Services from the command line. Azure CLI commands enable you to streamline your tasks with faster and flexible interactive canvas, bypassing user interface workflows.
+In this quickstart, you set up and start using the Azure DevOps extension for Azure Command Line Interface (CLI). With Azure CLI, you can manage many Azure DevOps Services from the command line. Azure CLI commands enable you to streamline your tasks with faster and flexible interactive canvas, bypassing user interface workflows.
 
 > [!NOTE]  
 > The Azure DevOps CLI is only available for use with Azure DevOps Services. The Azure DevOps extension for the Azure CLI doesn't support any version of Azure DevOps Server.
@@ -35,8 +35,8 @@ To start using the Azure DevOps extension for Azure CLI:
 
 1. To sign in, run the `az login` command. Azure CLI supports only interactive sign-in using user name and password with `az login`. To sign in using a Personal Access Token (PAT), see [Sign in via Azure DevOps PAT](log-in-via-pat.md).
 
-> [!NOTE]  
-> The Azure DevOps extension doesn't currently support authenticating by using [Managed Identities](../integrate/get-started/authentication/service-principal-managed-identity.md).
+   > [!NOTE]  
+   > The Azure DevOps extension doesn't currently support authenticating by using [Managed Identities](../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 1. We recommend that you set the default configuration for your organization and project. Otherwise, you can specify the values in the individual commands themselves.  
 
