@@ -27,21 +27,7 @@ Microsoft-hosted agents are only available with Azure DevOps Services, which is 
 
 The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software.
 
-* [Windows images](#windows-images)
-  * Windows Server 2025 with Visual Studio 2022 (preview)
-  * Windows Server 2022 with Visual Studio 2022
-  * Windows Server 2019 with Visual Studio 2019
-* [Linux images](#linux-images)
-  * Ubuntu 24.04
-  * Ubuntu 22.04
-* [macOS images](#macos-images)
-  * macOS 15 Sequoia (preview)
-  * macOS 14 Sonoma
-
-> [!IMPORTANT]
-> To request additional software to be installed on Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/runner-images), where we manage the scripts to generate various images.
-
-### Windows images
+#### [Windows images](#tab/windows-images/)
 
 You can see the installed software for each Windows hosted agent image by choosing the **Included Software** link in the table.
 
@@ -68,7 +54,7 @@ The Windows Server 2019 image is scheduled to be deprecated:
 
 For more information, see [Upcoming Updates for Azure Pipelines Agents Images - Windows](https://aka.ms/azdo-windows)
 
-### Linux images
+#### [Linux images](#tab/linux-images/)
 
 You can see the installed software for each Linux hosted agent image by choosing the **Included Software** link in the table.
 
@@ -85,7 +71,7 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 * The `ubuntu-latest` label is in the process of transitioning from `ubuntu-22.04` to `ubuntu-24.04`. Until the transition is complete, your pipelines using `ubuntu-latest` might still use `ubuntu-22.04`.
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
-### macOS images
+#### [macOS images](#tab/macos-images/)
 
 You can see the installed software for each macOS hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
 
@@ -101,6 +87,12 @@ You can see the installed software for each macOS hosted agent by choosing the *
 * [The macOS-15 Sequoia image is available in preview](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os)
 * Apple silicon (ARM64) support for mac-OS image - for more information on joining the private preview, see [Apple silicon (ARM64) support for mac-OS image](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
 * The macOS-12 Monterey image has been retired
+
+* * *
+
+> [!IMPORTANT]
+> To request additional software to be installed on Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/runner-images), where we manage the scripts to generate various images.
+
 
 ### How to identify pipelines using a deprecated hosted image
 
