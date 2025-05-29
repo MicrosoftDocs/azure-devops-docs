@@ -27,6 +27,17 @@ Microsoft-hosted agents are only available with Azure DevOps Services, which is 
 
 The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software.
 
+* [Windows images](#windows-images)
+  * Windows Server 2025 with Visual Studio 2022 (preview)
+  * Windows Server 2022 with Visual Studio 2022
+  * Windows Server 2019 with Visual Studio 2019
+* [Linux images](#linux-images)
+  * Ubuntu 24.04
+  * Ubuntu 22.04
+* [macOS images](#macos-images)
+  * macOS 15 Sequoia (preview)
+  * macOS 14 Sonoma
+
 > [!IMPORTANT]
 > To request additional software to be installed on Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/runner-images), where we manage the scripts to generate various images.
 
