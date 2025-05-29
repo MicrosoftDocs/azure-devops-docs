@@ -21,7 +21,7 @@ After you delete an organization, it's disabled but available for 28 days. If yo
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| [Organization owner](../security/look-up-organization-owner.md). For more information about specific scenarios, see the following instructions:<br>- [When you don't have an Azure DevOps Administrator](resolve-orphaned-organization.md#when-you-dont-have-an-azure-devops-administrator)<br>- [Resolve orphaned organization when your Azure DevOps Administrator *is* a member of the target organization](resolve-orphaned-organization.md#when-your-azure-devops-administrator-is-a-member-of-the-target-organization)<br>- [Resolve orphaned organization when your Azure DevOps Administrator *isn't* a member of the target organization](resolve-orphaned-organization.md#when-your-azure-devops-administrator-isnt-a-member-of-the-target-organization)|
+|**Permissions**| [Organization owner](../security/look-up-organization-owner.md).|
 |**Deletion time frame**| An organization deleted within the last 28 days.|
 
 > [!NOTE]
@@ -57,3 +57,4 @@ After you delete an organization, it's disabled but available for 28 days. If yo
 * [Change organization owner](change-organization-ownership.md)
 * [Change organization data region](change-organization-location.md)
 * [Learn about FAQs for configuring and customizing your organization](faq-configure-customize-organization.yml)
+* [Assign an owner to an orphaned organization](resolve-orphaned-organization.md)

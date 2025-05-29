@@ -6842,9 +6842,10 @@
       "source_path": "docs/boards/work-items/best-tool-add-update-link-work-items.md",
       "redirect_url": "/azure/devops/boards/work-items/about-work-items"
     },
-    {
+        {
       "source_path": "docs/organizations/settings/work/troubleshoot-work-item-form-caching-issues.md",
-      "redirect_url": "/azure/devops/boards/faqs"
+      "redirect_url": "/azure/devops/boards/faqs#caching",
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/boards/extensions/index.md",
@@ -7173,6 +7174,18 @@
     {
       "source_path": "docs/extend/develop/add-chart.md",
       "redirect_url": "/azure/devops/extend/develop/add-dashboard-widget"
+    },
+    {
+      "source_path": "docs/integrate/concepts/service-hooks.md",
+      "redirect_url": "/azure/devops/service-hooks/overview"
+    },
+    {
+      "source_path": "docs/organizations/accounts/manage-personal-access-tokens-via-api.md",
+      "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#pat-lifecycle-management-apis"
+    },
+    {
+      "source_path": "docs/organizations/accounts/get-list-of-organizations-connected-to-azure-active-directory.md",
+      "redirect_url": "/azure/devops/organizations/accounts/get-list-of-organizations-connected-to-microsoft-entra-id"
     }
   ]
 }

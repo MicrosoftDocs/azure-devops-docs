@@ -9,7 +9,7 @@ monikerRange: 'azure-devops'
 
 # Download Universal Packages from Azure Artifacts feeds
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 This article guides you through downloading Universal Packages from your Azure Artifacts feed using the command line interface.
 

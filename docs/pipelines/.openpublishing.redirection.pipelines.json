@@ -1,6 +1,18 @@
 {
   "redirections": [
     {
+      "source_path": "docs/pipelines/agents/v2-osx-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/v2-osx-agent"
+    },
+    {
+      "source_path": "docs/pipelines/agents/v2-linux-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/v2-linux-agent"
+    },
+    {
+      "source_path": "docs/pipelines/agents/v2-windows-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/v2-windows-agent"
+    },
+    {
       "source_path_from_root": "/docs/pipelines/get-started/multi-stage-pipelines-experience.md",
       "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
       "redirect_document_id": false
@@ -244,6 +256,10 @@
     {
       "source_path_from_root": "/docs/pipelines/build/history.md",
       "redirect_url": "/azure/devops/pipelines/release/history"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/integrations/microsoft-teams.md",
+      "redirect_url": "/microsoftteams/m365-custom-connectors#update-connectors-url"
     }
   ]
 }

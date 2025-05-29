@@ -180,14 +180,14 @@ stages:
       runOnce:
         deploy:
           steps:
-          - task: KubernetesManifest@0
+          - task: KubernetesManifest@1
             displayName: Create imagePullSecret
             inputs:
               action: createSecret
               secretName: $(imagePullSecret)
               dockerRegistryEndpoint: $(dockerRegistryServiceConnection)
 
-          - task: KubernetesManifest@0
+          - task: KubernetesManifest@1
             displayName: Deploy to Kubernetes cluster
             inputs:
               action: deploy
@@ -221,7 +221,7 @@ stages:
               useConfigurationFile: true
               inline: '{ "kind": "Namespace", "apiVersion": "v1", "metadata": { "name": "$(k8sNamespaceForPR)" }}'
 
-          - task: KubernetesManifest@0
+          - task: KubernetesManifest@1
             displayName: Create imagePullSecret
             inputs:
               action: createSecret
@@ -229,7 +229,7 @@ stages:
               namespace: $(k8sNamespaceForPR)
               dockerRegistryEndpoint: $(dockerRegistryServiceConnection)
 
-          - task: KubernetesManifest@0
+          - task: KubernetesManifest@1
             displayName: Deploy to the new namespace in the Kubernetes cluster
             inputs:
               action: deploy

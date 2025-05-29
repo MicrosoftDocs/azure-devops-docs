@@ -10,11 +10,14 @@ ms.date: 10/22/2024
 monikerRange: '<= azure-devops'
 ---
 
-# Revoke personal access tokens for organization users
+# Revoke organization user's personal access tokens (for admins)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If a Personal Access Token (PAT) is compromised, it's crucial to act swiftly. Administrators can revoke a user's PAT to safeguard the organization. Disabling a user's account also revokes their PAT.
+If a Personal Access Token (PAT) is compromised, it's crucial to act swiftly. Administrators can revoke a user's PAT to safeguard the organization. Disabling a user's account also revokes their PAT. 
+
+> [!TIP]
+> Create or revoke your own PAT on your [Personal access token page](use-personal-access-tokens-to-authenticate.md#revoke-a-pat).
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
@@ -30,9 +33,6 @@ Revoking user PATs is essential for the following reasons:
 ## Prerequisites
 
 [!INCLUDE [prerequisites-pca-only](../../includes/prerequisites-pca-only.md)]
-
-> [!TIP]
-> To create or revoke your own PATs, see [Create or revoke PATs](use-personal-access-tokens-to-authenticate.md).
 
 ## Revoke PATs
 
@@ -77,4 +77,6 @@ A: If you have JWTs that you believe should be revoked, we recommend doing so pr
 ## Related articles
 
 - [Learn how Microsoft protects your projects and data in Azure DevOps](../../organizations/security/data-protection.md)
-- [Create or revoke PATs](use-personal-access-tokens-to-authenticate.md)
+- [Use personal access tokens to authenticate](use-personal-access-tokens-to-authenticate.md)
+- [Manage personal access tokens with policies (for admins)](manage-pats-with-policies-for-administrators.md)
+- [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md)

@@ -228,7 +228,7 @@ https://dev.azure.com
 https://*.dev.azure.com
 https://aex.dev.azure.com
 https://aexprodea1.vsaex.visualstudio.com
-https://*vstmrblob.vsassets.io
+https://*.vstmrblob.vsassets.io
 https://amp.azure.net
 https://app.vssps.dev.azure.com
 https://app.vssps.visualstudio.com
@@ -260,7 +260,7 @@ https://download.agent.dev.azure.com
 Azure DevOps uses content delivery network (CDN) to serve static content. The following URLs are part of that. 
 https://cdn.vsassets.io
 https://*.vsassets.io
-https://*gallerycdn.vsassets.io
+https://*.gallerycdn.vsassets.io
 https://aadcdn.msauth.net
 https://aadcdn.msftauth.net
 https://amcdn.msftauth.net
@@ -295,8 +295,8 @@ We recommend you open port `443` to all traffic on the following IP addresses an
 |---------|---------|
 |https://login.microsoftonline.com |Authentication and sign-in related     |
 |https://*.vssps.visualstudio.com   |Authentication and sign-in related          |
-|https://*gallerycdn.vsassets.io   |Hosts Azure DevOps extensions         |
-|https://*vstmrblob.vsassets.io | Hosts Azure DevOps TCM log data        |
+|https://*.gallerycdn.vsassets.io   |Hosts Azure DevOps extensions         |
+|https://*.vstmrblob.vsassets.io | Hosts Azure DevOps TCM log data        |
 |https://cdn.vsassets.io    | Hosts Azure DevOps Content Delivery Networks (CDNs) content        |
 |https://static2.sharepointonline.com    | Hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on        |
 |https://vsrm.dev.azure.com   | Hosts releases        |
