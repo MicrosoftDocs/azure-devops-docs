@@ -8,6 +8,7 @@ ms.date: 05/28/2025
 monikerRange: '= azure-devops'
 "recommendations": "true"
 ai-usage: ai-assisted
+ms.custom: peer-review-program
 ---
 
 # Use scripts to automate Azure Resource Manager with workload identity service connections
