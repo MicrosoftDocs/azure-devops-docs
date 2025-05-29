@@ -93,7 +93,7 @@ az pipelines build show --id 1 --open
 
 This command shows the details of the build with `id 1` in the Command Prompt window and also opens it in the default browser.
 
-## Related articles
+## Related content
 
 - [Sign in via Azure DevOps personal access token](log-in-via-pat.md)
 - [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
