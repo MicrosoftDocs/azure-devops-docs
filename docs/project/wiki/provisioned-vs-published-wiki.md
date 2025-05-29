@@ -82,7 +82,7 @@ To structure the list of pages in the navigation pane for a *published as code w
 
 Both types of wikis follow the same file structure, it's just that the published as code wiki requires you to maintain the page sequence manually.
 
-For more information about working with *`.order`* files, see [Wiki Git repository files and file structure](wiki-file-structure.md#order-file).
+For more information about working with *`.order`* files, see [Wiki Git repository files and file structure](wiki-file-structure.md#page-sequence-and-the-order-file).
 
 <a id="revisions"></a>
 

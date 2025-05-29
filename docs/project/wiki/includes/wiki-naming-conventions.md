@@ -20,7 +20,7 @@ Each wiki page corresponds to a file in the wiki Git repository. The following r
 Several special characters are allowed in a page file name, such as the colon `:` and hyphen `-`. For example, you might name a Markdown file as _FAQ:0525_ or _Setup-Guide_. 
 
 > [!IMPORTANT]
-> To avoid errors in page syntax and browser navigation, don't use the space character (` `) in page file names. If you're naming your page files based on the page title, replace any spaces in the page title with a hyphen (`-`) in the file name.
+> To avoid errors in page syntax and browser navigation, don't use the space character (` `) in page file names. If you name your page files based on the page title, replace any spaces in the page title with a hyphen (`-`) in the file name.
 
 The following table lists the special characters allowed in wiki page file names and the corresponding URI encoded string:
 
