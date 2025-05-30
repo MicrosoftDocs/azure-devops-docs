@@ -18,7 +18,7 @@ A user owns the publisher, typically the user who created it. You can also share
     * Specify an identifier for your publisher, for example: `mycompany-myteam`. This identifier is used as the value for the `publisher` attribute in your extension manifest file.
     * Specify a display name for your publisher, for example: `My Team`
 
-4. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement), and then select **Create**.
+3. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement), and then select **Create**.
 
    :::image type="content" source="../../media/create-publisher.png" alt-text="Create publisher for extension":::
 
