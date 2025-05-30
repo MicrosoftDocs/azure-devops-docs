@@ -97,7 +97,7 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [List team members](../organizations/security/add-users-team-project.md#list-team-members)
       - [List teams](../organizations/settings/add-teams.md#list-teams)
       - [Show team details](../organizations/security/add-users-team-project.md#show-details)
-      - [Rename a team](../organizations/settings/rename-remove-team.md##rename-a-team)
+      - [Rename a team](../organizations/settings/rename-remove-team.md#rename-a-team)
       #### User accounts
       - [Add a user](../organizations/accounts/add-organization-users.md#add-users-to-your-organization)
       - [List users](../organizations/security/export-users-audit-log.md?tabs=azure-devops-cli#list-users)
