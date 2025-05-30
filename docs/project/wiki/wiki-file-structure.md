@@ -1,71 +1,92 @@
 ---
-title: Wiki files, structure, and conventions
+title: Wiki Files, Folder Structure, Git Repo Conventions
 titleSuffix: Azure DevOps 
-description: Learn about the file conventions of the Git repository and project wikis in Azure DevOps.
+description: Explore the file and folder structure for provisioned wikis or wikis published as code in Azure DevOps, including naming and location conventions for the Git repository.
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: "<=azure-devops"
-ms.date: 01/05/2024  
+ms.date: 05/29/2025
+#customer intent: As an Azure DevOps developer, I want to understand the wiki file and folder structure in the Git repository, so I can follow the naming and location conventions.
 ---
 
-# Wiki files and file structure
+# Wiki file and folder structure in Git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Learn about the files and file structure for project wikis and code wikis. The following guidance might specify code wikis, but it applies to both types of wiki.
+This article describes the files and folder structure for provisioned wikis and wikis published as code. For both types of wiki, the files are stored in a Git repository. Files can include Markdown pages, code, images, attachments, or other artifacts. To establish the presentation sequence of the files, Git adds a special file (_.order_) in each repo folder. 
 
-When you create a team project, a wiki isn't created by default. For more information, see [Create a wiki](wiki-create-repo.md), [Create a README](../../repos/git/create-a-readme.md), or [Provisioned wikis vs. published code as a wiki](provisioned-vs-published-wiki.md).
+When you create a project, a wiki isn't created by default. You can [provision a wiki](wiki-create-repo.md), [create a README](../../repos/git/create-a-readme.md), or [publish project code as a wiki](../../project/wiki/publish-repo-to-wiki.md).
 
-Each code wiki is powered by a Git repository in the back-end. This repository stores the Markdown pages, images, attachments, and the sequence of pages and subpages. You create your wiki via the Azure DevOps user interface, and then you can edit the wiki via your [Git repository URL path](wiki-create-repo.md#how-can-i-go-to-the-git-repository). For more information about publishing code wikis, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md).
+You create your wiki by using the Azure DevOps user interface. Then you can edit the wiki from your [Git repository URL path](wiki-create-repo.md#how-can-i-go-to-the-git-repository).
 
-## Wiki file and folder structure
+## Repository files and folder structure
 
-The team project wiki Git repositories are assigned the following labels.
+The Git repository for a wiki has two naming conventions:
 
-- Wiki repo for a team project: `ProjectName.wiki`
-- Main branch: `wikiMain`
+- The wiki repo name is `<ProjectName>.wiki` where `<ProjectName>` is the name of your project.
+- The name of the root branch for the wiki repo is `wikiMain`.
 
-Manage your wiki repo in the same way you manage any other Git repo, by defining branch policies on the wikiMain branch. But, you can make changes to your local wikiMain branch and push them directly to the remote branch without defining any policies.
+You manage a wiki repo in the same way you manage other Git repos by defining branch policies on the `wikiMain` branch. You can also make changes to your local `wikiMain` branch and push them directly to the remote branch without defining any policies.
 
-The wiki repository has the following files and folders:
-- File for each Markdown page entered at the root level
-- File labeled `.order` at the root and under each folder  
-- Folder for each page that has subpages  
-- `.attachments` folder, storing all the attachments of the wiki  
+A wiki repo consists of the following files and folders:
+
+- A file for each Markdown page located at the root level
+- A file named _.order_ located at the root level and also within each subfolder
+- A subfolder for each wiki page that has subpages
+- A folder named _.attachments_ to store all attachments used in the wiki
 
 ## File naming conventions
 
-Each file requires using hyphens instead of spaces in the page title. For example, the *How to contribute* page title corresponds to the `How-to-contribute.md` file name. The page name gets added to the URL, ensuring that links you share remain intact as the wiki changes over time.
+The file name for each wiki page corresponds to the wiki page title. In the file name, a hyphen (`-`) represents a space in the page title. For example, the page title "How to contribute" corresponds to the file name _How-to-contribute.md_. The URL path to the wiki page includes the file name. For example, `https://github.com/ExampleWiki/How-To/How-to-contribute.md`. This approach helps ensure bookmark links to the page remain intact as the wiki changes over time.
 
 [!INCLUDE [temp](./includes/wiki-naming-conventions.md)]
 
-## *.order* file
+## Page sequence and the .order file
 
-The *.order* file defines the sequence of pages within the wiki. The following visual shows an example of a wiki TOC and it's corresponding .order file.
+The _.order_ file defines the wiki page sequence. Git looks for this file in each folder to identify the sequence to present files at that location. The default page sequence is alphabetical order (A to Z) by file name.
 
-| **Wiki TOC**     | ***.order* file**                               |
-|--------------|--------------------------------------------|
-| :::image type="content" source="media/wiki/wiki-toc-example.png" alt-text="Screenshot of wiki TOC example."::: | :::image type="content" source="media/wiki/wiki-repo-order-file-example.png" alt-text="Screenshot of Wiki example order file."::: |
+### Define custom page sequence
 
-The default hierarchy is in alphabetical sequence, however you can change this hierarchy in the *.order* file. For more information about how to reorder wiki pages, see [Add and edit wiki pages, Reorder a wiki page](add-edit-wiki.md#reorder-a-wiki-page).
+When a folder doesn't have an _.order_ file, Git uses the default alphabetical sequence.
 
-### Delete the *.order* file to revert to alphabetical sorting
+You can define a custom sequence for any folder by updating the _.order_ file in the folder, including at the root level.
 
-When there's no *.order* file the pages get sorted alphabetically. To revert to alphabetical sorting, do the following steps:
+The following visual shows an example of a wiki table of contents (TOC) and the corresponding _.order_ file that creates the TOC.
 
-1. Copy the clone URL for the wiki and open it in a browser.
-   Doing so opens the Git repository (files hub), which backs the wiki.
-2. Go to the *.order* file and delete it.
-   The file gets automatically (re)created after deletion, for example, in a drag and drop action on an article.
+:::row:::
+:::column span="":::
 
-## Related articles
+**Wiki TOC displays in the web browser**
+
+:::image type="content" source="media/wiki/wiki-toc-example.png" border="false" alt-text="Screenshot of the TOC for a wiki with several folders expanded to show subfolders.":::
+
+:::column-end:::
+:::column span="":::
+
+**.order file defines the TOC page sequence**
+
+:::image type="content" source="media/wiki/wiki-repo-order-file-example.png" border="false" alt-text="Screenshot of a wiki folder and file list in a Git repository. The .order file is open and shows the definition for the TOC page sequence."::: 
+
+:::column-end:::
+:::row-end:::
+
+The _.order_ file changes the sequence from alphabetical to "Marketing" followed by "Fabrikam Fiber."
+
+For more information about how to reorder wiki pages, see [Add, edit, and reorder wiki pages](add-edit-wiki.md#reorder-a-wiki-page).
+
+### Restore alphabetical sequence
+
+If a folder has a custom sequence, you can revert the sort method to alphabetical by following these steps:
+
+1. Copy the clone URL for the wiki and open it in a browser. The Git repository for the wiki opens.
+
+1. Go to the _.order_ file that you want to revert and delete the file. After the file is deleted, Git automatically creates a new _.order_ file for that location. The new file uses the default sequence.
+
+## Related content
 
 - [Set up wiki vs. publish code as wiki](provisioned-vs-published-wiki.md)
 - [Create a wiki for your team project](wiki-create-repo.md)
 - [Publish a Git repository to a wiki](publish-repo-to-wiki.md)
-- [Update wiki pages offline](wiki-update-offline.md)
-- [Manage README and wiki permissions](manage-readme-wiki-permissions.md)

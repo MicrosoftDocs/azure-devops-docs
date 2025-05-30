@@ -48,7 +48,7 @@ Both types of wiki apply the same folder and file structure within the Git repo.
 
 For a *provisioned wiki*, GitHub manages the page sequence and page list automatically as you add or move pages within the navigation pane.
 
-For a _published as code wiki_, you need to maintain the page sequence **manually**. To structure the list of pages in the navigation pane, you define an _*.order*_ file at the root and for each subfolder or parent page that contains subpages. For more information, see [Wiki Git repository files and file structure](wiki-file-structure.md#order-file).
+For a _published as code wiki_, you need to maintain the page sequence **manually**. To structure the list of pages in the navigation pane, you define an _*.order*_ file at the root and for each subfolder or parent page that contains subpages. For more information, see [Wiki Git repository files and file structure](wiki-file-structure.md#page-sequence-and-the-order-file).
 
 <a id="revisions"></a>
 
