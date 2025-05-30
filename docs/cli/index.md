@@ -91,7 +91,7 @@ You can use `--open` parameter to open any artifact in Azure DevOps portal in yo
 az pipelines build show --id 1 --open
 ```
 
-This command shows the details of the build with `id 1` in the Command Prompt window and also opens it in the default browser.
+This command shows the details of the build with `--id 1` in the Command Prompt window and also opens it in the default browser.
 
 ## Related content
 
