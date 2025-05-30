@@ -48,7 +48,12 @@ Use the following table for an example of how active committers and your potenti
 | March 1 | A project collection administrator (PCA) enables Advanced Security for the Fabrikam repository. Fabrikam has 30 active committers over the past 90 days. | **30** |
 | March 19 | A PCA disables Advanced Security for the Fabrikam repository. The active committers from Fabrikam don't get counted.| 30 - 30 = **0** |
 | July 15 | A PCA re-enables Advanced Security for Fabrikam. Fabrikam has 20 active committers over the past 90 days. | **20** |
-| August 1 | A PCA enables Advanced Security for a second repository, AdventureWorks. In the last 90 days, 30 developers committed to that repository. 10 of those developers also committed to Fabrikam and don't consume more licenses. | 20 + 20 = **40** |
+| August 1 | A PCA enables Advanced Security for a second repository, AdventureWorks. In the last 90 days, 30 developers committed to that repository. 10 of those developers also committed to Fabrikam and don't consume more licenses. | 20 + 20 = **40** | 
+
+### Migrating to standalone experiences 
+For existing customers, there is no disruption to your current Advanced Security experience. If you're interested in moving to the Secret Protection and Code Security products, contact Azure DevOps support via the **Azure Portal**. File a support ticket for the GitHub Advanced Security for Azure DevOps service and select "Billing migration from bundled to standalone products" as the problem type. 
+
+In your support request, include all Azure subscriptions that may be linked to your Azure DevOps organizations to be migrate.
 :::zone-end 
 
 :::zone pivot="standalone-ghazdo"
