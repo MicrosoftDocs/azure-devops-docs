@@ -7,7 +7,10 @@ A user owns the publisher, typically the user who created it. You can also share
    Enter a name in the publisher name field. The ID field should automatically get set based on the name you entered.
 
     :::image type="content" source="../../media/create-publisher.png" alt-text="Screenshot showing highlighted button, Create publisher.":::
-
+   
+    > [!NOTE]
+    > Publisher name must be within 16 characters for multibyte characters.
+    
     > [!NOTE]
     > Make note of the ID, as you need to set it in the manifest file of your extension.
 
@@ -15,7 +18,7 @@ A user owns the publisher, typically the user who created it. You can also share
     * Specify an identifier for your publisher, for example: `mycompany-myteam`. This identifier is used as the value for the `publisher` attribute in your extension manifest file.
     * Specify a display name for your publisher, for example: `My Team`
 
-3. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement), and then select **Create**.
+4. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement), and then select **Create**.
 
    :::image type="content" source="../../media/create-publisher.png" alt-text="Create publisher for extension":::
 
