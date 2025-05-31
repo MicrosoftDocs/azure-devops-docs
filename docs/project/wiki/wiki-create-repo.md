@@ -17,7 +17,7 @@ ms.date: 06/02/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-In Azue DevOps, every team project has a wiki. You can use the wiki to share information with your team and support project contribution. The wiki is powered by a Git repository in the backend. This article describes how to open the project wiki and create the Git repo. 
+In Azure DevOps, every team project has a wiki. You can use the wiki to share information with your team and support project contribution. The wiki is powered by a Git repository in the backend. This article describes how to open the project wiki and create the Git repo. 
 
 When you create a team project, a wiki Git repo isn't created by default. You can create the repo to store your wiki Markdown files, or [publish existing Markdown files from a Git repository](publish-repo-to-wiki.md) to a wiki.
 
@@ -76,7 +76,7 @@ The Git repository for your wiki (`ProjectName.wiki`) isn't included in the drop
 
 1. In the popup, select **HTTP** and then select the **Copy** icon (double page):
 
-   :::image type="content" source="media/wiki/clone-wiki-repo-files.png" border="false" alt-text="Screenshot that shows how to access the wiki repo URL by selecting the HTTP option and the Copy icon.":::
+   :::image type="content" source="media/wiki/clone-wiki-repo-files.png" alt-text="Screenshot that shows how to access the wiki repo URL by selecting the HTTP option and the Copy icon.":::
 
    The URL is copied to your clipboard.
 
@@ -107,17 +107,17 @@ For more information, see [Get started with Azure DevOps CLI](../../cli/index.md
 
 #### Parameters
 
-The following parameters are available for the `wiki create` command. The `type` parameter specifies the type of wiki to create: Project wiki (**projectwiki**) or Publish code as wiki (**codewiki**). 
+The following parameters are available for the `wiki create` command. The `type` parameter specifies the type of wiki to create: Project wiki (`projectwiki`) or Publish code as wiki (`codewiki`). 
 
 | Parameter     | Required | Description |
 |---------------|----------|-------------|
-| `mapped-path` | Yes (codewiki) | The mapped path for the wiki. You can specify backslash (`/`) to publish from the root of the wiki repo. |
-| `name`        | Yes (codewiki) | The name for the wiki. For the **projectwiki** type, when no name is specified, the wiki name is `TeamProjectName.wiki`. |
+| `mapped-path` | Yes (`codewiki`) | The mapped path for the wiki. You can specify backslash (`/`) to publish from the root of the wiki repo. |
+| `name`        | Yes (`codewiki`) | The name for the wiki. For the `projectwiki` type, when no name is specified, the wiki name is `TeamProjectName.wiki`. |
 | `org`         | Maybe          | The Azure DevOps organization URL. You can configure the default organization with the `az devops configure -d organization=ORG_URL` command. <br> **Note**: When the organization isn't configured by default or picked up by using the `git config` command, the parameter is **Required**. Example: `--org https://dev.azure.com/<OrganizationName>/`. |
 | `project`     | Maybe          | The name or ID of the project. You can configure the default project by using the `az devops configure -d project=NAME_OR_ID`. command. <br> **Note**: When the project isn't configured by default or picked up by using the `git config` command, the parameter is **Required**. |
-| `repository`  | Yes (codewiki) | The name or ID of the Git repository to publish the wiki from. |
-| `type`        | No             | The type of wiki to create: Project wiki (**projectwiki**) or Publish code as wiki (**codewiki**). The default is **projectwiki**. |
-| `version`     | Yes (codewiki) | The Git repo branch name to publish the code wiki from. |
+| `repository`  | Yes (`codewiki`) | The name or ID of the Git repository to publish the wiki from. |
+| `type`        | No             | The type of wiki to create: Project wiki (`projectwiki`) or Publish code as wiki (`codewiki`). The default is `projectwiki`. |
+| `version`     | Yes (`codewiki`) | The Git repo branch name to publish the code wiki from. |
 
 #### Example: Create a project wiki
 
