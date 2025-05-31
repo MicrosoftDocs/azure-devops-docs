@@ -47,7 +47,7 @@ For more information, see [Provisioned vs. published code as wiki](provisioned-v
 1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```) and select **Overview** > **Wiki**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot showing selection of wiki tab.](media/open-wiki-vert-brn.png)
+   > ![Screenshot showing selection of wiki tab.](media/open-wiki-overview-page.png)
 
 If you need to switch projects, select :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to [browse all projects](../navigation/work-across-projects.md).  
 
