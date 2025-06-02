@@ -117,7 +117,7 @@ You can enable Secret Protection or Code Security at the organization, project, 
 1. Select **Begin billing**. A shield icon now appears in the repository view for any repository with either product enabled.
 1. To optionally enable **dependency scanning default setup**, select **Options** and enable the Dependency scanning default setup checkbox. 
 
-:::image type="content" source="media/advsec-repository-settings-plans-disabled.png" lightbox="media/advsec-repository-settings-plans-disabled.png" alt-text="Screenshot of enabling GitHub Advanced Security.":::
+:::image type="content" source="media/adv-sec-repository-settings-plans-disabled.png" lightbox="media/adv-sec-repository-settings-plans-disabled.png" alt-text="Screenshot of enabling GitHub Advanced Security.":::
 
 #### Project-level onboarding
 1. Go to your **Project settings** for your Azure DevOps project. 
@@ -128,7 +128,7 @@ You can enable Secret Protection or Code Security at the organization, project, 
 1. Select **Begin billing** to activate Secret Protection and/or Code Security for every existing repository in your project. 
 1. Optionally, toggle **Automatically enable Advanced Security for new repositories** so that any newly created repositories have **Secret Protection** or **Code Security** enabled upon creation. 
 
-:::image type="content" source="media/advsec-project-settings-plans-enabled.png" lightbox="media/advsec-project-settings-plans-enabled.png" alt-text="Screenshot of project-level enablement for Advanced Security.":::
+:::image type="content" source="media/adv-sec-project-settings-plans-enabled.png" lightbox="media/adv-sec-project-settings-plans-enabled.png" alt-text="Screenshot of project-level enablement for Advanced Security.":::
 
 #### Organization-level onboarding
 1. Go to your **Organization settings** for your Azure DevOps organization. 
@@ -138,13 +138,13 @@ You can enable Secret Protection or Code Security at the organization, project, 
 1. Select **Begin billing** to activate Advanced Security for every existing repository in each project in your organization. 
 1. Optionally, toggle **Automatically enable Advanced Security for new repositories** so that any newly created projects have **Secret Protection** or **Code Security** enabled upon creation. 
 
-:::image type="content" source="media/advsec-organization-settings-plans-enabled.png" lightbox="media/advsec-organization-settings-plans-enabled.png" alt-text="Screenshot of org-level enablement for Advanced Security.":::
+:::image type="content" source="media/adv-sec-organization-settings-plans-enabled.png" lightbox="media/adv-sec-organization-settings-plans-enabled.png" alt-text="Screenshot of org-level enablement for Advanced Security.":::
 
 ## Set up secret scanning
 
 Secret scanning push protection and repository scanning are automatically enabled when you turn on Secret Protection. You can enable or disable secret push protection from the repository settings page. 
 
-:::image type="content" source="media/advsec-repository-settings-secret-protection-options.png" lightbox="media/advsec-repository-settings-secret-protection-options.png" alt-text="Screenshot of enabling push protection.":::
+:::image type="content" source="media/adv-sec-repository-settings-secret-protection-options.png" lightbox="media/adv-sec-repository-settings-secret-protection-options.png" alt-text="Screenshot of enabling push protection.":::
 
 As mentioned, secret scanning repository scanning is automatically kicked off upon enabling Secret Protection for a selected repository. 
 
