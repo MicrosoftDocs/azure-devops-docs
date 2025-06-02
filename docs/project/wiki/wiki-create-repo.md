@@ -72,15 +72,15 @@ The Git repository for your wiki (`ProjectName.wiki`) isn't included in the drop
 
    :::image type="content" source="media/wiki/wiki-repo-files-select-clone.png" border="false" alt-text="Screenshot that shows how to open the Repos Files page for your wiki repo and then select the Clone option." lightbox="media/wiki/wiki-repo-files-select-clone.png"::: 
 
-   The **Clone** option opens a popup that includes the URL for your wiki repo.
+   The **Clone** option opens a dialog that includes the URL for your wiki repo.
 
-1. In the popup, select **HTTP** and then select the **Copy** icon (double page):
+1. In the dialog, select **HTTP** and then select the **Copy** icon (double page):
 
    :::image type="content" source="media/wiki/clone-wiki-repo-files.png" alt-text="Screenshot that shows how to access the wiki repo URL by selecting the HTTP option and the Copy icon.":::
 
    The URL is copied to your clipboard.
 
-   Close the popup.
+   Close the dialog.
 
 1. To access the wiki repo, paste the copied URL into the browser.
 
