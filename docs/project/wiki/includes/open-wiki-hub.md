@@ -74,7 +74,7 @@ The following table lists [more parameters](#basic-parameters) for the `wiki sho
 
 | Parameter           | Required | Description |
 |---------------------|:--------:|-------------|
-| `--path`            | Yes      | The fully qualified path or to the wiki page. |
+| `--path`            | Yes      | The fully qualified path for the wiki page. |
 | `--include-content` | No       | Include content of the page. |
 | `--version -v`      | No       | The version of the wiki page, which corresponds to the `ETag` entity tag value. |
 
