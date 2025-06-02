@@ -16,7 +16,7 @@ zone_pivot_groups: configure-ghazdo-bundled-individual-products
 #  Advanced Security billing
 
 :::zone pivot="bundled-ghazdo"
-To access results and use [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) features, you need a license. Each active committer to at least one repository with Advanced Security enabled consumes one license and [costs $49 per month per active committer](https://azure.microsoft.com/products/devops/github-advanced-security#pricing). A committer is considered active if they're present in a push made within the last 90 days, regardless of when they originally committed. 
+To access results and use [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) features, you need a license. Each active committer to at least one repository with Advanced Security enabled consumes one license. For more information on pricing, see [GitHub Advanced Security pricing](https://azure.microsoft.com/products/devops/github-advanced-security#pricing). A committer is considered active if they're present in a push made within the last 90 days, regardless of when they originally committed. 
 
 Advanced Security gets billed monthly and directly to the Azure subscription associated with your Azure DevOps organization. Daily charges emit to your Azure subscription based off of the total number of active committers per day across your organizations.
 
@@ -57,9 +57,7 @@ In your support request, include all Azure subscriptions that may be linked to y
 :::zone-end 
 
 :::zone pivot="standalone-ghazdo"
-To access results and use [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) features, you need a license. Costs differ depending on which product you have enabled. 
-
-Each active committer to at least one repository with Secret Protection enabled consumes one license and [costs $19 per month per active committer](https://azure.microsoft.com/products/devops/github-advanced-security#pricing). Each active committer to at least one repository with Code Security enabled consumes one license and [costs $30 per month per active committer](https://azure.microsoft.com/products/devops/github-advanced-security#pricing). For a committer to a repository with both products enabled, the total cost will be $49 per month. A committer is considered active if they're present in a push made within the last 90 days, regardless of when they originally committed. 
+To access results and use [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) features, you need a license. Costs differ depending on which product you have enabled. For more information on pricing, see [GitHub Advanced Security pricing](https://azure.microsoft.com/products/devops/github-advanced-security#pricing). A committer is considered active if they're present in a push made within the last 90 days, regardless of when they originally committed. 
 
 Secret Protection and Code Security are billed monthly and directly to the Azure subscription associated with your Azure DevOps organization. Daily charges emit to your Azure subscription based off of the total number of active committers per product per day across your organizations.
 
