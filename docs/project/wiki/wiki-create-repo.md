@@ -114,7 +114,7 @@ The following parameters are available for the `wiki create` command. The `type`
 | `mapped-path` | Yes (`codewiki`) | The mapped path for the wiki. You can specify backslash (`/`) to publish from the root of the wiki repo. |
 | `name`        | Yes (`codewiki`) | The name for the wiki. For the `projectwiki` type, when no name is specified, the wiki name is `TeamProjectName.wiki`. |
 | `org`         | Maybe          | The Azure DevOps organization URL. You can configure the default organization with the `az devops configure -d organization=ORG_URL` command. <br> **Note**: When the organization isn't configured by default or picked up by using the `git config` command, the parameter is **Required**. Example: `--org https://dev.azure.com/<OrganizationName>/`. |
-| `project`     | Maybe          | The name or ID of the project. You can configure the default project by using the `az devops configure -d project=NAME_OR_ID`. command. <br> **Note**: When the project isn't configured by default or picked up by using the `git config` command, the parameter is **Required**. |
+| `project`     | Maybe          | The name or ID of the project. You can configure the default project by using the `az devops configure -d project=NAME_OR_ID` command. <br> **Note**: When the project isn't configured by default or picked up by using the `git config` command, the parameter is **Required**. |
 | `repository`  | Yes (`codewiki`) | The name or ID of the Git repository to publish the wiki from. |
 | `type`        | No             | The type of wiki to create: Project wiki (`projectwiki`) or Publish code as wiki (`codewiki`). The default is `projectwiki`. |
 | `version`     | Yes (`codewiki`) | The Git repo branch name to publish the code wiki from. |
