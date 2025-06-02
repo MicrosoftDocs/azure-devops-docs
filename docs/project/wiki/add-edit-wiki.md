@@ -43,7 +43,7 @@ You can use Azure DevOps CLI commands to manage your wiki content. The following
 | [az devops wiki show](#open-wiki) | Open the wiki and show the wiki home page. |
 | [az devops wiki page show](/cli/azure/devops/wiki/page#az-devops-wiki-page-show) | Show a specific page in the wiki. |
 | [az devops wiki page create](#add-a-wiki-page)  | Add a new page to the wiki. |
-| [az devops wiki page update](#edit-wiki-page)   | Edit an existing page in the wiki. |
+| [az devops wiki page update](#edit-and-delete-wiki-pages)   | Edit an existing page in the wiki. |
 | [az devops wiki page delete](#delete-wiki-page) | Delete a page in the wiki. |
 
 ::: moniker-end
@@ -105,7 +105,7 @@ az devops wiki page create --path
                            [--subscription]
 ```
 
-For more information, see [Get started with the Azure DevOps CLI](../../../cli/index.md).
+For more information, see [Get started with the Azure DevOps CLI](../../cli/index.md).
 
 #### Parameters: Create page
 
@@ -156,6 +156,8 @@ az devops wiki page update --path 'Get Started' --wiki MyProjectwiki --file-path
 ## Set the wiki home page
 
 By default, the first page you add when you create a wiki is set as the wiki home page. You can change your wiki homepage if another page becomes more relevant. For more information, see [Reorder or move wiki pages](#reorder-or-move-wiki-pages).
+
+<a id="edit-wiki-page"></a>
 
 ## Edit and delete wiki pages
 
@@ -210,7 +212,7 @@ az devops wiki page update --path
                            [--subscription]
 ```
 
-For more information, see [Get started with the Azure DevOps CLI](../../../cli/index.md).
+For more information, see [Get started with the Azure DevOps CLI](../../cli/index.md).
 
 #### Parameters: Update page
 
@@ -261,7 +263,7 @@ az devops wiki page delete --path
                           
 ```
 
-For more information, see [Get started with the Azure DevOps CLI](../../../cli/index.md).
+For more information, see [Get started with the Azure DevOps CLI](../../cli/index.md).
 
 #### Parameters: Delete page
 
@@ -299,7 +301,7 @@ In the browser, you can reorder pages in the wiki tree view so the pages display
 
 You can use the drag-and-drop action on page titles in the tree view to complete the following tasks:
 
-- **Move**: Change the page/sub-page relationship of a page. If you move a page within the wiki sequence, links to the page from other wiki pages might break. You can manually [fix these links](#fix-broken-links-after-moving-a-page) after moving the page.
+- **Move**: Change the page/sub-page relationship of a page. If you move a page within the wiki sequence, links to the page from other wiki pages might break. You can manually [fix these links](#fix-broken-links-after-page-moves) after moving the page.
 
 - **Reorder**: Change the order of a page within the wiki sequence. Reordering pages within the wiki sequence doesn't affect page links.
 

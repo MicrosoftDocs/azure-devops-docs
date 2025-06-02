@@ -75,7 +75,7 @@ The following visual shows an example of a wiki table of contents (TOC) and the 
 
 The _.order_ file changes the sequence from alphabetical to "Marketing" followed by "Fabrikam Fiber."
 
-For more information about how to reorder wiki pages, see [Add, edit, and reorder wiki pages](add-edit-wiki.md#reorder-a-wiki-page).
+For more information about how to reorder wiki pages, see [Add, edit, and reorder wiki pages](add-edit-wiki.md#reorder-or-move-wiki-pages).
 
 ### Restore alphabetical sequence
 
