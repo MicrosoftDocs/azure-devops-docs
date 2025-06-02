@@ -64,13 +64,16 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
    :::column-end:::
 :::row-end:::
 
-
 ## Organizations, projects, and collections
 
 :::row:::
    :::column span="1":::
       #### Banners
-      - [Add and manage banners](../organizations/settings/manage-banners.md#add-and-manage-banners)
+      - [Add a new banner](../organizations/settings/manage-banners.md?tabs=AzureCLI#add-a-banner)
+      - [List banners](../organizations/settings/manage-banners.md?tabs=AzureCLI#list-banners)
+      - [Remove a banner](../organizations/settings/manage-banners.md?tabs=AzureCLI#remove-a-banner)
+      - [Show banner details](../organizations/settings/manage-banners.md?tabs=AzureCLI#list-banner-details)
+      - [Update a banner](../organizations/settings/manage-banners.md?tabs=AzureCLI#update-a-banner)
       #### Extensions
       - [Install an extension](../marketplace/install-extension.md)
       - [List extensions](../marketplace/install-extension.md#list-extensions)
