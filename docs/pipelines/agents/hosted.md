@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 05/29/2025
+ms.date: 06/02/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -81,11 +81,11 @@ You can see the installed software for each macOS hosted agent by choosing the *
 | macOS 14 Sonoma | *macOS-14* | `macOS-latest` OR `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 | macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
 
-#### macOs images updates
+#### macOS images updates
 
 * [[macOS] Xcode 15.4 will be removed from macOS15 images on May 29th, 2025](https://github.com/actions/runner-images/issues/12195)
 * [The macOS-15 Sequoia image is available in preview](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os)
-* Apple silicon (ARM64) support for mac-OS image - for more information on joining the private preview, see [Apple silicon (ARM64) support for mac-OS image](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
+* Apple silicon (ARM64) support for macOS image - for more information on joining the preview, see [Apple silicon (ARM64) support for macOS image](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
 * The macOS-12 Monterey image has been retired
 
 * * *
