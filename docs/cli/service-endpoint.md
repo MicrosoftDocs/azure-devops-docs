@@ -14,34 +14,35 @@ ms.date: 06/13/2022
 
 # Azure DevOps CLI service endpoint
 
-[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-With the `az devops service-endpoint` command, you can create and manage different types of service connections. A service connection allows Azure DevOps to communicate with an external service, such as Azure, Bitbucket, Kubernetes, Maven, GitHub, and more. With `az devops service-endpoint`, you can perform the following tasks:   
+With the `az devops service-endpoint` command, you can create and manage different types of service connections. A service connection allows Azure DevOps to communicate with an external service, such as Azure, Bitbucket, Kubernetes, Maven, GitHub, and more. With `az devops service-endpoint`, you can perform the following tasks:
 
 - Create a service endpoint using a configuration file
 - Update a service endpoint
-- Manage GitHub service endpoints/connections
-- Manage Azure Resource Manager service endpoints/connections
-- List service endpoints defined for a project 
-- Get the details of a service endpoint.  
+- Manage GitHub service endpoints and connections
+- Manage Azure Resource Manager service endpoints and connections
+- List service endpoints defined for a project
+- Get the details of a service endpoint.
 
 For detail command syntax, see [`az devops service-endpoint`](/cli/azure/devops/service-endpoint). For syntax on the REST API for service endpoints, see [Endpoints](/rest/api/azure/devops/serviceendpoint/endpoints).
 
-You can also use azure cli commands to get details, list, delete, and update a service endpoint. See [Index to Azure DevOps CLI examples, Service endpoints or service connections](quick-reference.md#service-endpoints-or-service-connections).
+You can also use Azure CLI commands to get details, list, delete, and update a service endpoint. See [Index to Azure DevOps CLI examples, Service endpoints or service connections](quick-reference.md#service-endpoints-or-service-connections).
 
-To use the web portal to create and edit service connections, see [Manage service connections](../pipelines/library/service-endpoints.md). 
- 
+To use the web portal to create and edit service connections, see [Manage service connections](../pipelines/library/service-endpoints.md).
+
 [!INCLUDE [use-service-principals-tip](../includes/use-service-principals-tip.md)]
 
 ## Create service endpoint using a configuration file 
 
 To create a service endpoint using a configuration file, you must first define the configuration file. The contents of the configuration file differ depending on the type of connection, such as Azure Classic, Azure Data Explorer, Bitbucket Cloud, Chef, and more.  
 
-### Configuration file format 
+### Configuration file format
 
-The following syntax shows the `json` format for the configuration file. 
+The following syntax shows the `json` format for the configuration file.
 
 > [!div class="tabbedCodeSnippets"]
+
 ```json	
 {
   "data": {},
@@ -68,57 +69,59 @@ The following syntax shows the `json` format for the configuration file.
 }
 ```
 
-The following table describes each parameter. The `type` parameter supports creation of any type of service endpoint. 
-
+The following table describes each parameter. The `type` parameter supports creation of any type of service endpoint.
 
 | Parameter           | Type                  |  Description  |  
 |---------------------|-----------------------|---------------|
-| `name`	| string| Sets the friendly name of the endpoint.| 
-| `type`	| string| Sets the type of the endpoint. | 
-| `url`	| string| Sets the url of the endpoint. | 
-| `authorization`   | EndpointAuthorization | Sets the authorization data for talking to the endpoint. | 
-| `isShared`	| boolean| Indicates whether the service endpoint is shared with other projects or not. | 
-| `isReady`	| boolean| EndPoint state indicator.  | 
-| `serviceEndpointProjectReferences` | Project Reference | Sets project reference of the service endpoint. | 
+| `name`              | string | Sets the friendly name of the endpoint. |
+| `type`              | string | Sets the type of the endpoint. |
+| `url`               | string | Sets the url of the endpoint. |
+| `authorization`     | EndpointAuthorization | Sets the authorization data for talking to the endpoint. |
+| `isShared`          | boolean| Indicates whether the service endpoint is shared with other projects or not. |
+| `isReady`           | boolean| EndPoint state indicator.  |
+| `serviceEndpointProjectReferences` | Project Reference | Sets project reference of the service endpoint. |
 
+For a list of supported types and their required input parameters, you can exercise the following REST API entry:
 
-For a list of supported types and their required input parameters, you can exercise the following REST API entry: 
+`https://dev.azure.com/{organization}/_apis/serviceendpoint/types?api-version=6.0-preview.1`
 
-```https://dev.azure.com/{organization}/_apis/serviceendpoint/types?api-version=6.0-preview.1```
+Also, for a description of service connection types and other parameters that they might require, see [Manage service connections, Common service connection types](../pipelines/library/service-endpoints.md#common-service-connection-types).
 
-Also, for a description of service connection types and other parameters that they may require, see [Manage service connections, Common service connection types](../pipelines/library/service-endpoints.md#common-service-connection-types). 
- 
 ### Run the `create` command
 
-You create a service endpoint with the [`az devops service-endpoint create`](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-create) command. 
+You create a service endpoint with the [`az devops service-endpoint create`](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-create) command.
 
 > [!div class="tabbedCodeSnippets"]
-```Azure CLI
+
+```azurecli
 az devops service-endpoint create --service-endpoint-configuration 
                                   [--encoding {ascii, utf-16be, utf-16le, utf-8}]
                                   [--org]
                                   [--project]
 ```
 
-
 ### Parameters
 
-- **service-endpoint-configuration**: Required. Name of the `json` configuration file with service endpoint configuration.  
+- **service-endpoint-configuration**: Required. Name of the `json` configuration file with service endpoint configuration.
 - **encoding**: Optional. Encoding of the input file. Default is `utf-8`. Accepted values: `ascii`, `utf-16be`, `utf-16le`, `utf-8`.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default.
 
 ### Example
+
 The following command creates a service connection referencing the `ServiceConnectionGeneric.json` file.
- 
+
 > [!div class="tabbedCodeSnippets"]
+
 ```Azure CLI
 az devops service-endpoint create --service-endpoint-configuration ./ServiceConnectionGeneric.json
 ```
+
 Upon successful creation, an `Id` is assigned to the service endpoint and a response similar to the following syntax is returned.
 
 > [!div class="tabbedCodeSnippets"]
-```Azure CLI
+
+```azurecli
 {
   "administratorsGroup": null,
   "authorization": {
@@ -172,7 +175,7 @@ Upon successful creation, an `Id` is assigned to the service endpoint and a resp
 To create a GitHub service endpoint, use the [`az devops service-endpoint github create`](/cli/azure/devops/service-endpoint/github)  command:
 
 > [!div class="tabbedCodeSnippets"]
-```Azure CLI
+```azurecli
 az devops service-endpoint github create --github-url
                                          --name 
                                          [--org]
@@ -181,14 +184,13 @@ az devops service-endpoint github create --github-url
 
 In interactive mode, the `az devops service-endpoint github create` command asks for a [GitHub PAT token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) using a prompt message, for automation purpose set the GitHub PAT token using the `AZURE_DEVOPS_EXT_GITHUB_PAT` environment variable. For more information, see [Sign in with a personal access token (PAT)](log-in-via-pat.md).
 
-
-
 ## Create an Azure Resource Manager service endpoint
 
 To create an Azure Resource Manager service endpoint, use the [`az devops service-endpoint azurerm create`](/cli/azure/devops/service-endpoint/azurerm) command.  
 
 > [!div class="tabbedCodeSnippets"]
-```Azure CLI
+
+```azurecli
 az devops service-endpoint azurerm create --azure-rm-service-principal-id
                                           --azure-rm-subscription-id
                                           --azure-rm-subscription-name
