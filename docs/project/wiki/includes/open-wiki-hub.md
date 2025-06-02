@@ -75,17 +75,12 @@ The following table lists [more parameters](#basic-parameters) for the `wiki sho
 | Parameter           | Required | Description |
 |---------------------|:--------:|-------------|
 | `--path`            | Yes      | The fully qualified path for the wiki page. |
-| `--include-content` | No       | Include content of the page. |
+| `--include-content` | No       | Show the full page content along with the page metadata. |
 | `--version -v`      | No       | The version of the wiki page, which corresponds to the `ETag` entity tag value. |
-
 
 For more information, see the Azure DevOps CLI [command reference](/cli/azure/devops/wiki#az-devops-wiki-show).
 
 ### Example: View a specific page
-
-<!-- Reviewer: Please clarify what the "include-content" parameter does. The reference page doesn't provide any more info. 
-     The example doesn't make sense. If I run the command to view an existing page, why include something like "Hello World"
-     in the command? Is this option meant to target existing content on the page that matches the value? So, in this case, the opened page would jump to show the existing text "Hello World"? -->
 
 The following example shows how to get content for the "Get Started" page of the "MyProjectwiki" wiki:
 
