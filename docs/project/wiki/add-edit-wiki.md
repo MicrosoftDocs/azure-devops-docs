@@ -11,6 +11,7 @@ ms.reviewer: gopinach
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 06/03/2025
+#customer intent: As an Azure DevOps developer, I want to understand how to add, update, delete, and arrange pages for my team project wiki, so I can manage the wiki as needed.  
 ---
 
 # Add and edit wiki pages
