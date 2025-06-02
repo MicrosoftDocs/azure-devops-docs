@@ -24,7 +24,7 @@ A *service connection* allows Azure DevOps to communicate with an external servi
 - Manage GitHub service endpoints and connections
 - Manage Azure Resource Manager service endpoints and connections
 - List service endpoints defined for a project
-- Get the details of a service endpoint.
+- Get the details of a service endpoint
 
 For detailed command syntax, see [az devops service-endpoint](/cli/azure/devops/service-endpoint). For syntax on the REST API for service endpoints, see [Endpoints](/rest/api/azure/devops/serviceendpoint/endpoints).
 
