@@ -31,7 +31,7 @@ Total active committers are the number of committers who contributed to at least
 Before you enable Advanced Security for your organization, project, or repository, you can see an estimate of the number of active committers you may be charged for. 
 
 > [!div class="mx-imgBorder"]  
-> [![Screenshot of Advanced Security pop up with an estimated committee count.](media/enable-github-advanced-security-project-committers.png)](media/enable-github-advanced-security-project-committers.png#lightbox)
+> [![Screenshot of Advanced Security pop up with an estimated committer count.](media/enable-github-advanced-security-project-committers.png)](media/enable-github-advanced-security-project-committers.png#lightbox)
 
 You can find the exact number of consumed licenses (active committer count in Advanced Security-enabled repositories) for Advanced Security under **Organization settings > Billing**. This number represents active committers as measured for the previous day.
 
