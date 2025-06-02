@@ -20,7 +20,7 @@ This article describes the files and folder structure for provisioned wikis and 
 
 When you create a project, a wiki isn't created by default. You can [provision a wiki](wiki-create-repo.md), [create a README](../../repos/git/create-a-readme.md), or [publish project code as a wiki](../../project/wiki/publish-repo-to-wiki.md).
 
-You create your wiki by using the Azure DevOps user interface. Then you can edit the wiki from your [Git repository URL path](wiki-create-repo.md#how-can-i-go-to-the-git-repository).
+You create your wiki by using the Azure DevOps user interface. Then you can edit the wiki from your [Git repository URL path](wiki-create-repo.md#access-your-wiki-repo).
 
 ## Repository files and folder structure
 
