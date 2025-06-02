@@ -53,7 +53,7 @@ Use the following table for an example of how active committers and your potenti
 ### Migrating to standalone experiences 
 For existing customers, there is no disruption to your current Advanced Security experience. If you're interested in moving to the Secret Protection and Code Security products, contact Azure DevOps support via the **Azure Portal**. File a support ticket for the GitHub Advanced Security for Azure DevOps service and select "Billing migration from bundled to standalone products" as the problem type. 
 
-In your support request, include all Azure subscriptions that may be linked to your Azure DevOps organizations to be migrate.
+In your support request, include all Azure subscriptions that may be linked to your Azure DevOps organizations to be migrated.
 :::zone-end 
 
 :::zone pivot="standalone-ghazdo"
