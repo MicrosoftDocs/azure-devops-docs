@@ -37,9 +37,9 @@ Before you can start using package badges, you must first enable them in your fe
 
 1. Under **Feed Details**, find the **Package sharing** section and check the **Enable package badges** checkbox.
 
-   :::image type="content" source="media\enable-package-badges.png" alt-text="A screenshot displaying how to enable package badges in Azure Artifacts.":::
-
 1. Select **Save** when you're done.
+
+   :::image type="content" source="media\enable-package-badges.png" alt-text="A screenshot displaying how to enable package badges in Azure Artifacts.":::
 
 ## Create a package badge
 
