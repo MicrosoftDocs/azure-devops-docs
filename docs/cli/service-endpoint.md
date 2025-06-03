@@ -40,7 +40,7 @@ To create a service endpoint by using a configuration file, first define the con
 
 ### Configuration file format
 
-The following syntax shows the `json` format for the configuration file.
+The following syntax shows the JSON format for the configuration file.
 
 > [!div class="tabbedCodeSnippets"]
 
@@ -92,7 +92,7 @@ For a description of service connection types and parameters, see [Common servic
 
 ### Run the `create` command
 
-You create a service endpoint with the [`az devops service-endpoint create`](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-create) command.
+You create a service endpoint with the [az devops service-endpoint create](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-create) command.
 
 > [!div class="tabbedCodeSnippets"]
 
@@ -112,7 +112,7 @@ az devops service-endpoint create --service-endpoint-configuration
 
 ### Example
 
-The following command creates a service connection referencing the `ServiceConnectionGeneric.json` file.
+The following command creates a service connection referencing the *ServiceConnectionGeneric.json* file.
 
 > [!div class="tabbedCodeSnippets"]
 
@@ -175,7 +175,7 @@ After creation, the command assigns an `Id` to the service endpoint. This exampl
 
 ## Create a GitHub service endpoint
 
-To create a GitHub service endpoint, use the [`az devops service-endpoint github create`](/cli/azure/devops/service-endpoint/github)  command:
+To create a GitHub service endpoint, use the [az devops service-endpoint github create](/cli/azure/devops/service-endpoint/github) command:
 
 > [!div class="tabbedCodeSnippets"]
 
@@ -190,7 +190,7 @@ In interactive mode, the `az devops service-endpoint github create` command prom
 
 ## Create an Azure Resource Manager service endpoint
 
-To create an Azure Resource Manager service endpoint, use the [`az devops service-endpoint azurerm create`](/cli/azure/devops/service-endpoint/azurerm) command.  
+To create an Azure Resource Manager service endpoint, use the [az devops service-endpoint azurerm create](/cli/azure/devops/service-endpoint/azurerm) command.  
 
 > [!div class="tabbedCodeSnippets"]
 
