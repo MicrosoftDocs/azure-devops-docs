@@ -1,18 +1,26 @@
 ---
-title: Share your Artifacts with package badges
-description: How to share your packages with package badges
+title: Share packages using package badges in Azure Artifacts
+description: Learn how to share your packages using package badges in Azure Artifacts.
 ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
-ms.date: 06/21/2022
+ms.topic: how-to
+ms.date: 06/03/2025
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Share your Artifacts with package badges
+# Share packages using package badges in Azure Artifacts
 
 [!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
-With Azure Artifacts, you can share your packages anywhere you can share an image by using package badges. You can embed package badges directly into your project's home page or in any Markdown file for your customers to easily find and download your packages.
+Azure Artifacts enables developers to host various types of packages in a single feed and share them based on visibility settings, within a team, across an organization, or with external users.
+
+One way to make your packages more discoverable is by using package badges; small embedded images that display key details like package type and version. You can add these badges to your project’s homepage or any Markdown file, making it easy for others to find and download your packages.
+
+## Prerequisites
+
+|    **Product**     |   **Requirements**   |
+|--------------------|----------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - An [Azure Artifacts feed](start-using-azure-artifacts.md#create-a-new-feed). |
 
 ## Enable package sharing  
 
