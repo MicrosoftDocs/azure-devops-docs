@@ -14,14 +14,14 @@ ms.date: 07/19/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Service Hooks let you run tasks on other services when events happen in your project in Azure DevOps.
+You can use service hooks to run tasks on other services when events happen in your Azure DevOps project.
 
-For example, you can create a card in Trello when a work item gets created or send a push notification to your team's mobile devices when a build fails. You can also use service hooks in custom apps and services as a more efficient way to drive activities when events happen in your projects.
+For example, you can create a card in Trello when a work item gets created. Or you can send a push notification to your team's mobile devices when a build fails. You can also use service hooks in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
 ## How do service hooks work?
 
 Service hook **publishers** define a set of *events* that you can subscribe to. 
-**Subscriptions** listen for these *events* and define **actions** to take based on the event. 
+**Subscriptions** listen for these events and define **actions** to take based on events. 
 
 Subscriptions also target **consumers**, which are external services that can run their own actions 
 when events occur.
@@ -31,7 +31,7 @@ when events occur.
 ::: moniker range=" azure-devops"
 
 > [!NOTE]
-> Service hooks require allowing IP ranges for inbound connection to service endpoints. The service endpoint is the set of properties provided to a service hook. For more information, see [Allowed address lists and network connections, IP addresses and range restrictions](../organizations/security/allow-list-ip-url.md#range-restrictions).
+> To use service hooks, you must allow specific IP address ranges for inbound connections to service endpoints. A service endpoint is a set of properties provided to a service hook. For more information, see [IP addresses and range restrictions](../organizations/security/allow-list-ip-url.md#range-restrictions).
 
 ::: moniker-end
 
@@ -88,7 +88,13 @@ The following services are available as the target of service hooks. For more in
 
 ## Create a subscription
 
-When you integrate one of these services with Azure DevOps, you must create a subscription. In many cases, you need to do some configuration in the other service, too. For specific details, check out the information for the service that you're interested in.
+To integrate one of these services with Azure DevOps, you create a service hooks subscription. In that subscription, you specify:
+
+- The target service to integrate.
+- The event to trigger on.
+- An action to run on the target service.
+
+To create a subscription, take the following steps. In many cases, you also need to configure the target service. For detailed information, see the documentation for the service that you want to integrate.
 
 ::: moniker range="<=azure-devops"
 
@@ -165,7 +171,7 @@ A: Yes. You can revoke authorizations from your profile.
 	
 ### Q: Why can't we set up service hooks for HipChat anymore?
 
-A: Atlassian officially dropped support for HipChat. For more information, see [the announcement](https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b).
+A: Atlassian officially dropped support for HipChat. For more information, see [Atlassian Frequently Asked Questions](https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b).
 
 ## Related articles
 
