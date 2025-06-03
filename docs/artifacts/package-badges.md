@@ -25,7 +25,7 @@ One way to make your packages more discoverable is by using package badges; smal
 ## Enable package badges  
 
 > [!NOTE]
-> You must be a **Feed Administrator** to enable package badges. See [Manage permissions](/feeds/feed-permissions.md) for more details.
+> You must be a **Feed Administrator** to enable package badges. See [Manage permissions](feeds/feed-permissions.md) for more details.
 
 Before you can start using package badges, you must first enable them in your feed settings:
 
