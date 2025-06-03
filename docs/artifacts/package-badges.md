@@ -29,8 +29,6 @@ One way to make your packages more discoverable is by using package badges; smal
 
 Before you can start using package badges, you must first enable them in your feed settings:
 
-::: moniker range="<=azure-devops"
-
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, select your feed from the dropdown menu, and then select the gear icon ![gear icon](../media/icons/gear-icon.png) to access **Feed settings**.
@@ -43,13 +41,9 @@ Before you can start using package badges, you must first enable them in your fe
 
 1. Select **Save** when you're done.
 
-::: moniker-end
-
 ## Create a package badge
 
 With package sharing enabled, you can now create a badge for any package in your feed. However, keep in mind that you can only create a badge for the latest version of each package.
-
-::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -64,8 +58,6 @@ With package sharing enabled, you can now create a badge for any package in your
     :::image type="content" source="media/package-badge-setup.png" alt-text="A screenshot showing the create a package badge panel.":::
 
 1. You can now share your package by copying the Markdown snippet or the direct image link, and pasting it into your project home page or any markdowm file.
-
-::: moniker-end
 
 ## Related content
 
