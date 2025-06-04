@@ -145,7 +145,7 @@ For example, suppose you create a subscription to send a notification when a wor
 
 ### Q: Can I create service hook subscriptions for a project programmatically?
 
-A: Yes. For more information, see [Create a service hooks subscription](create-subscription.md).
+A: Yes. For more information, see [Create a service hooks subscription programmatically](create-subscription.md).
 
 ### Q: Can I remove an app's access to my organization after I authorize it?
 
