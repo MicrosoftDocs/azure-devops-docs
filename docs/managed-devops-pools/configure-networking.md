@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 05/15/2025
+ms.date: 06/04/2025
 ---
 
 # Configure Managed DevOps Pools networking
@@ -146,8 +146,8 @@ If you have systems in place on your network (NSG, Firewall etc.) which restrict
 All of them are HTTPS, unless otherwise stated.
 
 * Highly secure endpoints that our service depends on:
-  *  `*.prod.manageddevops.microsoft.com` - Managed DevOps Pools endpoint
-  *  `rmprodbuilds.azureedge.net` - Worker binaries
+  *  `*.prod.manageddevops.microsoft.com` - Managed DevOps Pools endpoint.
+  *  `rmprodbuilds.azureedge.net` - Worker binaries. The agent portion of the worker binaries is downloaded from `rm-agent.prod.manageddevops.microsoft.com` (formerly downloaded from `agent.prod.manageddevops.microsoft.com`) which is covered by the previous required `*.prod.manageddevops.microsoft.com` entry.
   *  `vstsagentpackage.azureedge.net` and `https://download.agent.dev.azure.com` - Azure DevOps agent CDN location
   *  `*.queue.core.windows.net` - Worker queue for communicating with Managed DevOps Pools service
   *  `server.pipe.aria.microsoft.com` - Common client side telemetry solution
