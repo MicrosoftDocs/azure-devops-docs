@@ -48,7 +48,7 @@ Connect to your Azure DevOps project by using a [supported web browser](/azure/d
 
 :::image type="content" source="./media/open-wiki-overview-page.png" border="false" alt-text="Screenshot of a wiki open in the browser and showing the wiki overview page." lightbox="./media/open-wiki-overview-page.png":::
 
-If you need to switch your team project, select :::image type="icon" source="../../../media/icons/project-icon.png"::: **Azure DevOps** to [browse all team projects and teams](../navigation/work-across-projects.md).
+If you need to switch your team project, select :::image type="icon" source="../../media/icons/project-icon.png"::: **Azure DevOps** to [browse all team projects and teams](../navigation/work-across-projects.md).
 
 ## Publish a Git repository to a wiki
 
@@ -129,8 +129,8 @@ The following parameters are available for the `wiki page create` command:
 | `--type`         | Yes      | Specifies the type of wiki to create. To publish code as a wiki, use the `codewiki` type. | |
 | `--org`          | Maybe    | The Azure DevOps organization URL. You can configure the default organization with the `az devops configure -d organization=ORG_URL` command. | When the organization isn't configured by default or picked up by using the `git config` command, the parameter is **Required**. Example: `--org https://dev.azure.com/<OrganizationName>/`. |
 | `--project`      | Maybe    | The name or ID of the project. You can configure the default project by using the `az devops configure -d project=NAME_OR_ID` command. | When the project isn't configured by default or picked up by using the `git config` command, the parameter is **Required**. |
-| `--repository`   | Yes      | The name or ID of the Git repository to publish the wiki from. |
-| `--version`      | Yes      | The Git repo branch name to publish the code wiki from. |
+| `--repository`   | Yes      | The name or ID of the Git repository to publish the wiki from. | |
+| `--version`      | Yes      | The Git repo branch name to publish the code wiki from. | |
 
 #### Example: Publish code as wiki
 
