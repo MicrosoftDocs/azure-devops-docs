@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.date: 05/29/2025
+ms.date: 06/03/2025
 ---
 
 Each wiki page corresponds to a file in the wiki Git repository. The following restrictions apply to page file names and the file size:
@@ -31,7 +31,7 @@ The following table lists the special characters allowed in wiki page file names
 | **Right angle bracket**   | `>`  | %3E |
 | **Asterisk** (_wildcard_) | `*`  | %2A |
 | **Question mark**         | `?`  | %3F |
-| **Pipe**                  | `\|` | %7C |
+| **Pipe**                  | `|`  | %7C |
 | **Hyphen** (_dash_)       | `-`  | %2D |
 | **Double quote**          | `"`  | %22 |
 
