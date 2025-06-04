@@ -28,9 +28,9 @@ By default, all project Contributors have "read" and "edit" access to the Git re
 
 1. In the left navigation, select **Wiki** > **More options** :::image type="icon" source="../../media/icons/more-actions.png"::: > **Wiki security**:
 
-   :::image type="content" source="media/wiki/wiki-open-security.png" border="false" alt-text="Screenshot that shows how to select the Wiki security action for a Wiki in the Azure DevOps web portal.":::
+   :::image type="content" source="media/wiki/wiki-open-security.png" alt-text="Screenshot that shows how to select the Wiki security action for a Wiki in the Azure DevOps web portal.":::
 
-1. In the ***Security for Wiki** dialog, adjust the settings for the various security options.
+1. In the **Security for Wiki** dialog, adjust the settings for the various security options.
 
    :::image type="content" source="media/wiki/security-dialog.png" alt-text="Screenshot of the Wiki security dialog that shows various security options and their current settings." lightbox="media/wiki/security-dialog.png":::
 
