@@ -86,7 +86,7 @@ To publish the Markdown files in your Git repo to a wiki, follow these steps:
 
    The following image shows the TOC content for the azure-docs-sdk-node repo:
 
-   :::image type="content" source="media/wiki/publish-wiki-sample-code-repo.png" alt-text="Screenshot of the TOC for the published code wiki." lightbox="media/wiki/publish-wiki-sample-code-repo.png":::
+   :::image type="content" source="media/wiki/publish-wiki-sample-code-repo.png" alt-text="Screenshot of the TOC for the published code wiki.":::
 
 #### Git repo branch mapped to wiki
 
@@ -124,7 +124,7 @@ The following parameters are available for the `wiki page create` command:
 
 | Parameter        | Required | Description | Note |
 |------------------|:--------:|-------------|------|
-| `--mapped-path`  | Yes      | The mapped path for the wiki. | Specify backslash (`/`) to publish from the root of the wiki repo. | |
+| `--mapped-path`  | Yes      | The mapped path for the wiki. | Specify backslash (`/`) to publish from the root of the wiki repo. |
 | `--name`         | Yes      | The name for the wiki. | |
 | `--type`         | Yes      | Specifies the type of wiki to create. To publish code as a wiki, use the `codewiki` type. | |
 | `--org`          | Maybe    | The Azure DevOps organization URL. You can configure the default organization with the `az devops configure -d organization=ORG_URL` command. | When the organization isn't configured by default or picked up by using the `git config` command, the parameter is **Required**. Example: `--org https://dev.azure.com/<OrganizationName>/`. |
@@ -160,7 +160,7 @@ In the Azure DevOps web portal, you can edit, rename, or delete a wiki page:
 
 1. Select **More options** :::image type="icon" source="../../media/icons/actions-icon.png"::: for the file, and then select the action:
 
-   :::image type="content" source="media/wiki/publish-code-edit-rename-file.png" alt-text="Screenshot that shows the More options menu for a wiki file that includes the edit, rename, and delete actions." lightbox="media/wiki/publish-code-edit-rename-file.png":::
+   :::image type="content" source="media/wiki/publish-code-edit-rename-file.png" alt-text="Screenshot that shows the More options menu for a wiki file that includes the edit, rename, and delete actions.":::
 
 > [!NOTE]  
 > You can manage your wiki repo in the same way you manage other Git repo by defining branch policies on the branch that you selected to publish to the wiki. If you don't define branch policies, you can also make changes and push them directly to the branch from your web portal or from a client.
@@ -246,7 +246,7 @@ You can also upload files to a folder in the published wiki. This option is usef
 
 1. In the **Commit** dialog, select the folder and files you want to upload:
 
-   :::image type="content" source="media/wiki/publish-wiki-upload-files-dialog.png" alt-text="Screenshot that shows how to select the folder and files you want to upload in the Commit dialog." lightbox="media/wiki/publish-wiki-upload-files-dialog.png":::
+   :::image type="content" source="media/wiki/publish-wiki-upload-files-dialog.png" alt-text="Screenshot that shows how to select the folder and files you want to upload in the Commit dialog.":::
 
 1. When you're done, upload the files to your published repo by selecting **Commit**.
 
