@@ -165,7 +165,7 @@ A: Yes. You can revoke authorizations from your profile.
 	
 ### Q: Why can't I set up service hooks for HipChat anymore?
 
-A: Atlassian officially dropped support for HipChat. For more information, see [Atlassian Frequently Asked Questions](https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b).
+A: Atlassian no longer supports HipChat. For more information, see [Atlassian Frequently Asked Questions](https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b).
 
 ## Related content
 
