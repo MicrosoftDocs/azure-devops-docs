@@ -187,7 +187,7 @@ You can choose from the following types of images.
 
 Managed DevOps Pools provides several preconfigured images that have the same software as selected Microsoft-hosted agents for Azure Pipelines.
 
-The lifecycle of Azure Pipelines images offered in Managed DevOps Pools follows the lifecycle of the Microsoft-hosted agent iages. If an image in Microsoft-hosted agents is deprecated, the corresponding Managed DevOps Pools is also deprecated. The version of images available in Microsoft-hosted agents might be slightly different from the version of images available in Managed DevOps Pools for the same image type.
+The lifecycle of Azure Pipelines images offered in Managed DevOps Pools follows the lifecycle of the [Microsoft-hosted agent images](../pipelines/agents/hosted.md#software). If an image in Microsoft-hosted agents is deprecated, the corresponding Managed DevOps Pools is also deprecated. The version of images available in Microsoft-hosted agents might be slightly different from the version of images available in Managed DevOps Pools for the same image type.
 
 For more information on Managed DevOps Pools images lifecycle, see [Image lifecycle](#image-lifecycle).
 
@@ -442,11 +442,9 @@ pool:
 
 ## Image lifecycle
 
-Managed DevOps Pools provides preconfigured images that have the same software as selected Microsoft-hosted agents ([Azure Pipelines images](#azure-pipelines-images)) as well as plain vanilla images that contain only the operating system and included utilities ([Selected marketplace images](#selected-marketplace-images)).
+Managed DevOps Pools agent images are retired when the image's operating system reaches the end of its support lifecycle, and images based on older versions of operating systems can be retired when images based on new versions of the operating systems are released.
 
-Images are retired when the image's operating system reaches the end of its support lifecycle, and images based on older versions of operating systems can be retired when images based on new versions of the operating systems are released.
-
-* [Azure Pipelines images](#azure-pipelines-images) offers the same images and follows the same deprecation schedule for [Microsoft-hosted agents](../pipelines/agents/hosted.md#software).
+* [Azure Pipelines images](#azure-pipelines-images) offers the same images and follows the same deprecation schedule as [Microsoft-hosted agents](../pipelines/agents/hosted.md#software).
 * [Selected marketplace images](#selected-marketplace-images) are typically retired when the image's operating system reaches the end of its support lifecycle.
 
 ### Image deprecation schedule
