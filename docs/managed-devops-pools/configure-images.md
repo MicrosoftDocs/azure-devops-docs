@@ -449,10 +449,10 @@ Managed DevOps Pools agent images are retired when the image's operating system 
 
 ### Image deprecation schedule
 
-* [Windows Server 2019 image deprecation schedule](#windows-server-2019-image-deprecation-schedule)
+* [Azure Pipelines - Windows Server 2019 image deprecation schedule](#azure-pipelines---windows-server-2019-image-deprecation-schedule)
 * [Ubuntu 20.04 image deprecation schedule](#ubuntu-2004-image-deprecation-schedule)
 
-#### Windows Server 2019 image deprecation schedule
+#### Azure Pipelines - Windows Server 2019 image deprecation schedule
 
 Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019** image.
 
