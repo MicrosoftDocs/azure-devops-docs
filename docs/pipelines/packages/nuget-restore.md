@@ -118,9 +118,7 @@ To restore NuGet packages from a feed in a different Azure DevOps organization, 
       inputs:
         nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
         
-    - script: |                                        ## If you're using Ubuntu 24.04 or later, use the following command instead: dotnet restore <SOLUTION_PATH>
-          nuget.exe restore <SOLUTION_PATH>                    
-      displayName: Restore       
+    - script: nuget.exe restore <SOLUTION_PATH>      ## If you're using Ubuntu 24.04 or later, use the following command instead: dotnet restore <SOLUTION_PATH>   
     ```
 
 ### [Classic](#tab/classic/)
