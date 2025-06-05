@@ -18,7 +18,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes how to set and manage permissions for your team project wiki and project README files. By default, all members of the Contributors group has permission to edit wiki pages.
+This article describes how to set and manage permissions for your team project wiki and project README files. By default, all members of the Contributors group have permission to edit wiki pages.
 
 ## Manage permissions for wikis
 
