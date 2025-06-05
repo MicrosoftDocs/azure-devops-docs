@@ -1,43 +1,55 @@
 ---
-title: Share your Artifacts with package badges
-description: How to share your packages with package badges
+title: Share packages using package badges in Azure Artifacts
+description: Learn how to share your packages using package badges in Azure Artifacts.
 ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
-ms.date: 06/21/2022
+ms.topic: how-to
+ms.date: 06/03/2025
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Share your Artifacts with package badges
+# Share packages using package badges in Azure Artifacts
 
 [!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
-With Azure Artifacts, you can share your packages anywhere you can share an image by using package badges. You can embed package badges directly into your project's home page or in any Markdown file for your customers to easily find and download your packages.
+Azure Artifacts enables developers to host various types of packages in a single feed and share them based on visibility settings, within a team, across an organization, or with external users.
 
-## Enable package sharing  
+One way to make your packages more discoverable is by using package badges; small embedded images that display key details like package type and version. You can add these badges to your project’s homepage or any Markdown file, making it easy for others to find and download your packages.
+
+## Prerequisites
+
+|    **Product**     |   **Requirements**   |
+|--------------------|----------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - An [Azure Artifacts feed](start-using-azure-artifacts.md#create-a-new-feed). |
+
+## Enable package badges  
 
 > [!NOTE]
-> You must be a feed administrator to enable package sharing.
+> You must be a **Feed Administrator** to enable package badges. See [Manage permissions](feeds/feed-permissions.md) for more details.
 
-::: moniker range="<=azure-devops"
+Before you can start using package badges, you must first enable them in your feed settings:
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the gear icon ![gear icon](../media/icons/gear-icon.png) to access the **Feed settings**.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-   :::image type="content" source="media/feed-settings.png" alt-text="A screenshot showing how to navigate to the feed settings":::
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select the gear icon ![gear icon](../media/icons/gear-icon.png) to access **Feed settings**.
 
-1. Find the **Package sharing** section and select the checkbox to **Enable package badges**.
+   :::image type="content" source="media/feed-settings.png" alt-text="A screenshot displaying how to navigate to feed settings.":::
 
-   :::image type="content" source="media\enable-package-badges.png" alt-text="A screenshot showing how to enable package badges":::
+1. Under **Feed Details**, find the **Package sharing** section and check the **Enable package badges** checkbox.
 
-::: moniker-end
+1. Select **Save** when you're done.
+
+   :::image type="content" source="media\enable-package-badges.png" alt-text="A screenshot displaying how to enable package badges in Azure Artifacts.":::
 
 ## Create a package badge
 
-With package-sharing enabled, you can create a badge for any package in your feed. But you can only create a badge for the latest version of each package.
+With package sharing enabled, you can now create a badge for any package in your feed. However, keep in mind that you can only create a badge for the latest version of each package.
 
-::: moniker range="<=azure-devops"
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. From within your feed, select your package and then select **Create badge**.
+1. Select **Artifacts**, select your feed from the dropdown menu, then select the package you want to create a badge for.
+
+1. Under **Overview**, select the ellipsis button, and then select **Create badge**.
 
     :::image type="content" source="media/create-badge-new-ui.png" alt-text="A screenshot showing how to create a new package badge.":::
 
@@ -45,12 +57,12 @@ With package-sharing enabled, you can create a badge for any package in your fee
 
     :::image type="content" source="media/package-badge-setup.png" alt-text="A screenshot showing the create a package badge panel.":::
 
-1. You can now share your package by using the Markdown snippet or the direct image link.
+1. You can now share your package by copying the Markdown snippet or the direct image link, and pasting it into your project home page or any markdowm file.
 
-::: moniker-end
+## Related content
 
-## Related articles
+- [Follow a package for publish alerts](how-to/follow-package-notifications.md)
 
-- [Limits of package sizes and counts](./reference/limits.md)
-- [Package notifications](./how-to/follow-package-notifications.md)
-- [Delete and recover packages](./how-to/delete-and-recover-packages.md)
+- [Limits on package sizes and counts](reference/limits.md)
+
+- [Delete and recover packages](how-to/delete-and-recover-packages.md)
