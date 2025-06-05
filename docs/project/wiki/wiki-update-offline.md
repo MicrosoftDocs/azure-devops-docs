@@ -53,7 +53,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
    :::image type="content" source="media/wiki/copy-clone-url-to-clipboard.png" alt-text="Screenshot that shows the wiki repository to clone in the Clone repository dialog.":::
 
-   Paste the URL into your browser. The Git repository page opens where you can view the files defined under the wikiMain branch. The following example shows the files in the Git repo for the CanaryBuilds project:
+1. Paste the URL into your browser. The Git repository page opens where you can view the files defined under the wikiMain branch. The following example shows the files in the Git repo for the CanaryBuilds project:
 
    :::image type="content" source="media/wiki/work-offline-wikiMain-files.png" alt-text="Screenshot that shows the Git repository page with the files defined under the wikiMain branch.":::
 
@@ -82,8 +82,6 @@ You can add pages at the top of the wiki structure in the root (`\`) folder and 
 
 1. Update the _.order_ file in the same folder where you placed the new page file. The entry text for the page is the file name without the Markdown extension (_.md_). The CanaryBuilds project example adds the new page "How to contribute," which corresponds to the entry text _How-to-contribute_:
 
-   For example:  
-
    ```
    Welcome
    Roadmap  
@@ -104,9 +102,7 @@ You can also create subpages for a page in your wiki:
 
    :::image type="content" source="media/wiki/add-sub-pages.png" alt-text="Screenshot that shows the How-to-contribute folder in the CanaryBuilds project with new subpages.":::
 
-1. Create a _.order_ file in the parent page folder to define the sequence for the subpages as they should display in the wiki.
-	 
-   For example, the file has the following subpages:
+1. Create a _.order_ file in the parent page folder to define the sequence for the subpages as they should display in the wiki. The example shows a possible order of subpages:
 
    ```
    Request-extensions  
@@ -123,9 +119,9 @@ The added pages and subpages appear immediately in your wiki. The following exam
 
 :::image type="content" source="media/wiki/wiki-tree-updated-offline.png" alt-text="Screenshot that shows the updated wiki structure for the CanaryBuilds project.":::
 
-If there are any errors in the process, the pages appear in your wiki with a warning symbol:
+If there are any errors in the process, the page appears in your wiki file list with a **Warning** symbol:
 
-:::image type="content" source="media/wiki/wiki-offline-order-warning.png" alt-text="Screenshot that shows a page with an error indicated by the Warning symbol.":::
+:::image type="content" source="media/wiki/wiki-offline-order-warning.png" alt-text="Screenshot that shows a page with an error as indicated by the Warning symbol.":::
 
 ## Related content
 
