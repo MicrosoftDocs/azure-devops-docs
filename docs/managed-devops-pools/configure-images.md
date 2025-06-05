@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 05/21/2025
+ms.date: 06/05/2025
 ---
 
 # Configure Managed DevOps Pools images
@@ -11,7 +11,7 @@ Managed DevOps Pools provides you with several options for virtual machine image
 Managed DevOps Pools can be configured with a single image or multiple images. When your pool has multiple images, your pipelines should specify the image they want to run on using [aliases](#use-multiple-images-per-pool-with-aliases).
 
 > [!IMPORTANT]
-> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
+> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)] 
 
 ## Choose your pool's image
 
@@ -175,7 +175,7 @@ The following example defines three images. Standby agents are enabled, with 100
 If you choose a single image, all pipelines run in your pool using that image. If you choose multiple images, you can specify the image to use on a per-pipeline basis. For more information, see [Use multiple images per pool](#use-multiple-images-per-pool-with-aliases).
 
 > [!IMPORTANT]
-> If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?&tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
+> If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
 
 You can choose from the following types of images.
 
@@ -234,7 +234,7 @@ Each image includes the following installed software.
 | Azure Pipelines - Ubuntu 20.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2004-Readme.md) |
 
 > [!IMPORTANT]
-> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
+> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)] 
 
 ## Selected marketplace images
 
@@ -273,7 +273,7 @@ To specify selected marketplace image, provide the resource ID of the image usin
 * * *
 
 > [!IMPORTANT]
-> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
+> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)] 
 
 ## Azure Compute Gallery images
 
