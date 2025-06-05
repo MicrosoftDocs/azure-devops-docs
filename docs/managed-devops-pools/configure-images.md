@@ -442,14 +442,19 @@ pool:
 
 ## Image lifecycle
 
-Managed DevOps Pools provides preconfigured images that have the same software as selected Microsoft-hosted agents ([Azure Pipelines images](#azure-pipelines-images)) and [Selected marketplace images](#selected-marketplace-images). Images are retired when the image's operating system reaches the end of its support lifecycle, and images based on older versions of operating systems can be retired when images based on new versions of the operating systems are released.
+Managed DevOps Pools provides preconfigured images that have the same software as selected Microsoft-hosted agents ([Azure Pipelines images](#azure-pipelines-images)) as well as plain vanilla images that contain only the operating system and included utilities ([Selected marketplace images](#selected-marketplace-images)). Images are retired when the image's operating system reaches the end of its support lifecycle, and images based on older versions of operating systems can be retired when images based on new versions of the operating systems are released.
 
 * [Azure Pipelines images](#azure-pipelines-images) offers the same images and follows the same deprecation schedule for [Microsoft-hosted agents](../pipelines/agents/hosted.md#software).
 * [Selected marketplace images](#selected-marketplace-images) are typically retired when the image's operating system reaches the end of its support lifecycle.
 
 [Azure Pipelines Windows 2019 hosted agents are scheduled to be deprecated by June 30, 2025](../../pipelines/agents/hosted.md?tabs=windows#windows-server-2019-hosted-image-deprecation-schedule), and Managed DevOps Pools is **removing the Azure Pipelines – Windows Server 2019** image from [Azure Pipelines images](../configure-images.md#azure-pipelines-images).
 
-### Windows Server 2019 image deprecation schedule
+### Image deprecation schedule
+
+* [Windows Server 2019 image deprecation schedule](#windows-server-2019-image-deprecation-schedule)
+* [Ubuntu 20.04 image deprecation schedule](#ubuntu-2004-image-deprecation-schedule)
+
+#### Windows Server 2019 image deprecation schedule
 
 Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019** image.
 
@@ -458,7 +463,7 @@ Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019**
 
 To keep your Managed DevOps Pools that currently use the **Azure Pipelines – Windows Server 2019** image running, update your image to the **Azure Pipelines - Windows Server 2022** image. You can also switch to the Windows 2019 image from [Selected marketplace images](../configure-images.md#selected-marketplace-images) or bring your own [Azure Compute Gallery](../configure-images.md#azure-compute-gallery-images) Windows 2019 image. Note that the Windows 2019 image from [Selected marketplace images](../configure-images.md#selected-marketplace-images) is a plain vanilla image and does not have pre-installed software like the **Azure Pipelines – Windows Server 2019** image.
 
-### Ubuntu 20.04 image deprecation schedule
+#### Ubuntu 20.04 image deprecation schedule
 
 [Ubuntu 20.04 LTS Standard Support is coming to an end May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare), and Managed DevOps Pools is removing the Ubuntu 20.04 images from [Selected marketplace images](../configure-images.md#selected-marketplace-images) and [Azure Pipelines images](../configure-images.md#azure-pipelines-images).
 
