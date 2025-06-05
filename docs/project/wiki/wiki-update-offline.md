@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: "<=azure-devops"
-ms.date: 06/05/2025
+ms.date: 06/06/2025
 #customer intent: As an Azure DevOps developer, I want to author pages offline for my team project wiki, so I can work in my local branch before pushing changes to the main repo.
 ---
 
@@ -55,7 +55,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
 1. Paste the URL into your browser. The Git repository page opens where you can view the files defined under the wikiMain branch. The following example shows the files in the Git repo for the CanaryBuilds project:
 
-   :::image type="content" source="media/wiki/work-offline-wikiMain-files.png" alt-text="Screenshot that shows the Git repository page with the files defined under the wikiMain branch.":::
+   :::image type="content" source="media/wiki/work-offline-wiki-main-branch-files.png" alt-text="Screenshot that shows the Git repository page with the files defined under the wikiMain branch.":::
 
    > [!IMPORTANT]
    > The **Generate Git Credentials** feature is planned for removal. Review the Git Authentication documentation for all authentication methods available to you for git clone operations.
