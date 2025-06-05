@@ -33,7 +33,7 @@ Before you can start using package badges, you must first enable them in your fe
 
 1. Select **Artifacts**, select your feed from the dropdown menu, and then select the gear icon ![gear icon](../media/icons/gear-icon.png) to access **Feed settings**.
 
-   :::image type="content" source="media/feed-settings.png" alt-text="A screenshot displaying how to navigate to feed settings":::
+   :::image type="content" source="media/feed-settings.png" alt-text="A screenshot displaying how to navigate to feed settings.":::
 
 1. Under **Feed Details**, find the **Package sharing** section and check the **Enable package badges** checkbox.
 
