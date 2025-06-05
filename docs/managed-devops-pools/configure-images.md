@@ -457,9 +457,9 @@ Managed DevOps Pools agent images are retired when the image's operating system 
 Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019** image.
 
 * Creation of new pools using **Azure Pipelines – Windows Server 2019** will be disabled starting July 2025, but existing pools on these images will continue to run until August 30, 2025. 
-* On September 1, 2025, use of **Azure Pipelines – Windows Server 2019 image** will be disabled. Agents using this image won't provision and pipelines won't run.  
+* On September 1, 2025, use of **Azure Pipelines – Windows Server 2019** image will be disabled. Agents using this image won't provision and pipelines won't run.  
 
-To keep your Managed DevOps Pools that currently use the **Azure Pipelines – Windows Server 2019** image running, update your image to the **Azure Pipelines - Windows Server 2022** image. You can also switch to the Windows 2019 image from [Selected marketplace images](./configure-images.md#selected-marketplace-images) or bring your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. Note that the Windows 2019 image from [Selected marketplace images](./configure-images.md#selected-marketplace-images) is a plain vanilla image and does not have pre-installed software like the **Azure Pipelines – Windows Server 2019** image.
+To keep your Managed DevOps Pools that currently use the **Azure Pipelines – Windows Server 2019** image running, update your image to the **Azure Pipelines - Windows Server 2022** image. You can also switch to the Windows 2019 image from [Selected marketplace images](./configure-images.md#selected-marketplace-images) or bring your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. Note that the Windows 2019 image from [Selected marketplace images](./configure-images.md#selected-marketplace-images) does not have pre-installed software like the **Azure Pipelines – Windows Server 2019** image.
 
 #### Ubuntu 20.04 image deprecation schedule
 
