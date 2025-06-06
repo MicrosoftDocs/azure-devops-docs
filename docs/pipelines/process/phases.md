@@ -723,22 +723,22 @@ When you run a pipeline on a self-hosted agent, by default, none of the subdirec
 
 ## Artifact download
 
-This example YAML file publishes the artifact `WebSite` and then downloads the artifact to `$(Pipeline.Workspace)`. The Deploy job only runs if the Build job is successful. 
+This example YAML file publishes the artifact `Website` and then downloads the artifact to `$(Pipeline.Workspace)`. The Deploy job only runs if the Build job is successful. 
 
 #### [YAML](#tab/yaml/)
 
 ```yaml
-# test and upload my code as an artifact named WebSite
+# test and upload my code as an artifact named Website
 jobs:
 - job: Build
   pool:
     vmImage: 'ubuntu-latest'
   steps:
   - script: npm test
-  - task: PublishBuildArtifacts@1
+  - task: PublishPipelineArtifact@1
     inputs:
-      pathtoPublish: '$(System.DefaultWorkingDirectory)'
-      artifactName: WebSite
+      artifactName: Website
+      targetPath: '$(System.DefaultWorkingDirectory)'
 
 # download the artifact and deploy it only if the build job succeeded
 - job: Deploy
@@ -746,12 +746,11 @@ jobs:
     vmImage: 'ubuntu-latest'
   steps:
   - checkout: none #skip checking out the default repository resource
-  - task: DownloadBuildArtifacts@0
-    displayName: 'Download Build Artifacts'
+  - task: DownloadPipelineArtifact@2
+    displayName: 'Download Pipeline Artifact'
     inputs:
-      artifactName: WebSite
-      downloadPath: $(Pipeline.Workspace)
-
+      artifactName: Website
+      targetPath: '$(Pipeline.Workspace)'
   dependsOn: Build
   condition: succeeded()
 ```
