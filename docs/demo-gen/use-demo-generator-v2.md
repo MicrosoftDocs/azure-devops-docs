@@ -20,15 +20,12 @@ Set up the Demo Generator application by following the steps in the [configure s
 
 ## Select your authentication method for Demo Generator
 
-Use one of the following methods to authenticate to use the Azure DevOps Demo Generator app:
+Use one of the following methods to authenticate to the Azure DevOps Demo Generator app:
 
-- **Microsoft Entra token:** Register your application in Microsoft Entra. For more information, see [Register an application](/entra/identity-platform/quickstart-register-app?tabs=certificate%2Cexpose-a-web-api#register-an-application). 
+- **Microsoft Entra:** [Register your application in Microsoft Entra](/entra/identity-platform/quickstart-register-app?tabs=certificate%2Cexpose-a-web-api#register-an-application). 
 
    * Sign in with the displayed code.
    * Select an organization to create a project from the list.
-
-   > [!div class="mx-imgBorder"]
-   > [![Device login using AD Auth](../demo-gen/media/102.png "Device login using AD Auth")](../demo-gen/media/102.png#lightbox)
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../includes/use-microsoft-entra-reduce-pats.md)]
 
