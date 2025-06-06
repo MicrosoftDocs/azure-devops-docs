@@ -141,7 +141,7 @@ To use the service connection in pipelines:
 
   This action explicitly adds the pipeline as an authorized user of the service connection.
 
-- To authorize all pipelines to use the service connection, select the **Grant access permission to all pipelines** option in the connection properties. This option isn't recommended. Instead, authorize each pipeline individually to use the service connection.
+- To authorize all existing and future pipelines to use the service connection, select the **Grant access permission to all pipelines** option in the connection properties. This option isn't recommended. Instead, authorize each pipeline individually to use the service connection.
 
 ## Common service connection types
 
