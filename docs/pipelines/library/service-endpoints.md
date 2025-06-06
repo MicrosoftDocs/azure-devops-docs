@@ -133,8 +133,6 @@ To use the service connection in pipelines:
 
 ### Authorize pipelines
 
-- To authorize all pipelines to use the service connection, select the **Allow all pipelines to use this connection** option in the connection properties.
-
 - To authorize a single pipeline to use the service connection:
 
   1. Select **Run pipeline** on the pipeline page to queue a manual build.
@@ -142,6 +140,8 @@ To use the service connection in pipelines:
   1. On the **Waiting for review** screen, select **Permit**, and on the confirmation screen, select **Permit** again.
 
   This action explicitly adds the pipeline as an authorized user of the service connection.
+
+- To authorize all pipelines to use the service connection, select the **Allow all pipelines to use this connection** option in the connection properties. This option isn't recommended. Instead, authorize each pipeline individually to use the service connection.
 
 ## Common service connection types
 
