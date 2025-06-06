@@ -1,5 +1,5 @@
 <a id="core"></a>
-These properties are required:
+The following properties are required:
 
 | Property | Description | Notes |
 |---------------------|-------------|-------|
