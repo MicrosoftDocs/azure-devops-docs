@@ -208,12 +208,14 @@ steps:
   env:
     SOLUTION: ${{ parameters.solution }}
   displayName: Check for required parameters
-- task: msbuild@1
+- task: VSBuild@1
   inputs:
     solution: ${{ parameters.solution }}
-- task: vstest@2
+- task: VSTest@3
   inputs:
-    solution: ${{ parameters.solution }}
+    testSelector: 'testAssemblies' 
+    testAssemblyVer2: ${{ parameters.solution }} 
+    searchFolder: '$(System.DefaultWorkingDirectory)' 
 ```
 
 To show that the template fails if it's missing the required parameter:
