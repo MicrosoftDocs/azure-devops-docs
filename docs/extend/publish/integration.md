@@ -27,8 +27,8 @@ This article explains how to publish your tool, service, or product that integra
 
 ### Gather required assets
 
-1. At least one screenshot of your integration.
-2. Call-to-action or get started URL for users.
+- At least one screenshot of your integration.
+- Call-to-action or get started URL for users.
 
 > [!NOTE]
 > - The term `extension` is used in referenced documentation. Extensions are another type of Marketplace item and share many similarities with integrations.
@@ -40,7 +40,7 @@ This article explains how to publish your tool, service, or product that integra
 
 ### Organize your manifest and assets
 
-To organize your mainfest and assets, do the following steps:
+To organize your manifest and assets, do the following steps:
 
 1. Create a `home` folder to store required assets.
 2. Create an `images` folder for:
