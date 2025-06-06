@@ -36,8 +36,7 @@ az devops login --organization https://dev.azure.com/contoso
 Token:
 ```
 
-> [!NOTE]  
-> If you already signed in interactively with `az login` or used a user name and password, you don't need to provide a PAT. The `az devops` commands now support sign-in through `az login`.
+If you already signed in interactively with `az login` or used a user name and password, you don't need to provide a PAT. The `az devops` commands now support sign-in through `az login`.
 
 When you sign in successfully, this command can also set your default organization if none is configured.
 
