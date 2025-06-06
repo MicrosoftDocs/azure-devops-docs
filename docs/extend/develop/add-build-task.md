@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-date: 04/16/2025
+date: 06/06/2025
 ---
 
 # Add a custom pipelines task extension
@@ -460,14 +460,11 @@ It's easier and more secure to publish extensions under a common publisher, with
 
 Find the **Upload new extension** button, go to your packaged .vsix file, and select **Upload**.
 
-1. You can also upload your extension via the command-line interface (CLI) by using the `tfx extension publish` command instead of `tfx extension create` to package and publish your extension in one step. You can optionally use `--share-with` to share your extension with one or more accounts after it gets published. 
+You can also upload your extension via the command-line interface (CLI) by using the `tfx extension publish` command instead of `tfx extension create` to package and publish your extension in one step. You can optionally use `--share-with` to share your extension with one or more accounts after it gets published. 
 
-   ```powershell
-   tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
-   ```
-
-1. [Create a personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). 
-   - Select the **Marketplace (publish)** scope. This scope limits the token to only being able to publish extensions to the Marketplace. 
+```powershell
+tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
+```
 
 ### Share your extension
 
