@@ -1,23 +1,21 @@
-All extensions and integrations, including extensions from Microsoft, have a publisher. Anyone can create a publisher and publish extensions under it. You can also give other people access to your publisher if a team is developing the extension.
-
-A user owns the publisher, typically the user who created it. You can also share the publisher with other users.
+Every extension or integration, including those from Microsoft, must have a publisher. Anyone can create a publisher and publish extensions under it. You can also share publisher access with other users, such as your development team.
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher?managePageRedirect=true).
-2. If you're not already a member of an existing publisher, **+ Create a publisher**.
-   Enter a name in the publisher name field. The ID field should automatically get set based on the name you entered.
+2. If you aren't part of an existing publisher, select **+ Create a publisher**.  
+   Enter a publisher name; the ID field autofills based on your entry.
 
     :::image type="content" source="../../media/create-publisher.png" alt-text="Screenshot showing highlighted button, Create publisher.":::
-   
+
     > [!NOTE]
-    > - Publisher name must be within 16 characters for multibyte characters.
-    > - Make note of the ID, as you need to set it in the manifest file of your extension.
+    > - Ensure your publisher name is within 16 characters for multibyte characters.
+    > - Save the publisher ID—you need it in your extension's manifest file.
 
-   If you're not prompted to create a publisher, scroll down to the bottom of the page and select **Publish extensions** below *Related sites*.
-    * Specify an identifier for your publisher, for example: `mycompany-myteam`. This identifier is used as the value for the `publisher` attribute in your extension manifest file.
-    * Specify a display name for your publisher, for example: `My Team`
+   If you aren't prompted to create a publisher, scroll to **Publish extensions** under *Related sites*.
+    * Set a unique publisher identifier, such as `mycompany-myteam`. Use this value for the `publisher` attribute in your manifest.
+    * Set a display name, such as `My Team`.
 
-3. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement), and then select **Create**.
+3. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement), then select **Create**.
 
    :::image type="content" source="../../media/create-publisher.png" alt-text="Create publisher for extension":::
 
-Once the publisher's created, you're directed to manage items, but there aren't any items.
+After you create the publisher, you can manage items, although no items appear until you publish.
