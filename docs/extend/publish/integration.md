@@ -27,9 +27,8 @@ This article explains how to publish your tool, service, or product that integra
 
 ### Gather required assets
 
-1. 128x128 pixel logo (PNG or JPEG) representing your integration, company, or organization.
-2. At least one screenshot of your integration.
-3. Call-to-action or get started URL for users.
+1. At least one screenshot of your integration.
+2. Call-to-action or get started URL for users.
 
 > [!NOTE]
 > - The term `extension` is used in referenced documentation. Extensions are another type of Marketplace item and share many similarities with integrations.
