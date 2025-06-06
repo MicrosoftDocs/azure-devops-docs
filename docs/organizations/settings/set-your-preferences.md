@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 12/19/2024
+ms.date: 06/05/2025
 ---
 
 # Set user preferences
@@ -22,7 +22,7 @@ You can set user preferences on the user profile page in Azure DevOps. Changes c
 
 ::: moniker range=" < azure-devops"
 
-On the Azure DevOps user profile page, you can change the user picture, display name, preferred email address, language, date and time pattern, time zone, and other user interface preferences.
+On your Azure DevOps user profile page, you can update your picture, display name, email address, language, date and time format, time zone, and other interface preferences.
 
 ::: moniker-end
 
@@ -30,11 +30,11 @@ On the Azure DevOps user profile page, you can change the user picture, display 
 
 #### [Current page](#tab/current-page) 
 
-Do the following steps to set your preferences.
+To set your preferences, do the following steps:
 
 ::: moniker range="azure-devops"
 
-1. From the home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
+1. From the home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings** > **Profile**.
 
    ![Screenshot shows buttons to get to Azure DevOps profile.](../../media/open-user-settings-profile-preview.png)
 
@@ -75,19 +75,19 @@ User profile settings get updated.
 
 ::: moniker range="azure-devops"
 
-We're previewing the ability to use your profile picture, display name, contact email address, and region as configured in Microsoft Entra within Azure DevOps.
+We're previewing the option to use your profile picture, display name, contact email address, and region from Microsoft Entra in Azure DevOps.
 
-From the Azure DevOps home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
+To enable this feature, go to the Azure DevOps home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, then choose **Profile**.
 
 :::image type="content" source="media/entra-profile-preview.png" alt-text="Screenshot shows Microsoft Entra profile information in the Profile page.":::
 
-If you encounter any issues using Microsoft Entra profile information, let us know! You can [turn it off](../../project/navigation/preview-features.md) and restore your original profile information, and when you do, be sure to share detailed feedback. We review the feedback carefully to address any concerns. 
+If you experience issues with Microsoft Entra profile information, you can [turn it off](../../project/navigation/preview-features.md) and restore your original profile details. Provide detailed feedback if you do; we review all feedback to address concerns.
 
 :::image type="content" source="media/turn-off-entra-profile-information.png" alt-text="Screenshot shows window for entering feature improvements and feedback for Microsoft Entra profile information.":::
 
-To receive information, tips, and resources related to Azure DevOps, enter a check in the box and select **Save**.
+To receive Azure DevOps updates and resources, check the box and select **Save**.
 
-User profile settings get updated.
+Your user profile settings update.
 
 ## FAQs
 
@@ -116,4 +116,3 @@ A: Azure DevOps sends notification emails to the email address configured for yo
 - [Manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
 - [Understand usage and rate limits](../../integrate/concepts/rate-limits.md)
 - [Set your favorites](../../organizations/notifications/manage-your-personal-notifications.md)
-- [Use personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
