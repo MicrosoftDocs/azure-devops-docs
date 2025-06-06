@@ -9,10 +9,8 @@ A user owns the publisher, typically the user who created it. You can also share
     :::image type="content" source="../../media/create-publisher.png" alt-text="Screenshot showing highlighted button, Create publisher.":::
    
     > [!NOTE]
-    > Publisher name must be within 16 characters for multibyte characters.
-    
-    > [!NOTE]
-    > Make note of the ID, as you need to set it in the manifest file of your extension.
+    > - Publisher name must be within 16 characters for multibyte characters.
+    > - Make note of the ID, as you need to set it in the manifest file of your extension.
 
    If you're not prompted to create a publisher, scroll down to the bottom of the page and select **Publish extensions** below *Related sites*.
     * Specify an identifier for your publisher, for example: `mycompany-myteam`. This identifier is used as the value for the `publisher` attribute in your extension manifest file.
