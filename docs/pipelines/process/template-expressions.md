@@ -317,6 +317,10 @@ jobs:
 
 You can also use `stringList` to define and interate over parameters that contain a list of items. 
 
+> [!NOTE]
+> The `stringList` data type isn't available in templates. Use the `object` data type in templates instead.
+
+
 ```yaml
 parameters:
 - name: regions

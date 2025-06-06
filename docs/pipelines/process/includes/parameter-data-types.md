@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 | Data type | Notes |
 |-----------|-------|
 | `string` | string
-| `stringList` | a list of items, multiple can be selected
+| `stringList` | a list of items, multiple can be selected. Not available in templates
 | `number` | may be restricted to `values:`, otherwise any number-like string is accepted
 | `boolean` | `true` or `false`
 | `object` | any YAML structure
@@ -27,7 +27,10 @@ ai-usage: ai-assisted
 | `stage` | a single stage
 | `stageList` | sequence of stages
 
-The step, stepList, job, jobList, deployment, deploymentList, stage, stringList, and stageList data types all use standard YAML schema format. This example includes string, number, boolean, object, step, and stepList. 
+The `step`, `stepList`, `job`, `jobList`, `deployment`, `deploymentList`, `stage`, `stringList`, and `stageList` data types all use standard YAML schema format. This example includes `string`, `number`, `boolean`, `object`, `step`, and `stepList`. 
+
+> [!NOTE]
+> The `stringList` data type isn't available in templates. Use the `object` data type in templates instead.
 
 ```yaml
 parameters:
