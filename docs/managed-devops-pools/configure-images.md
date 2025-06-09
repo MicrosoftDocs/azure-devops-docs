@@ -456,7 +456,7 @@ Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019**
 * Creation of new pools using **Azure Pipelines – Windows Server 2019** will be disabled starting July 1, 2025, but existing pools on these images will continue to run until August 30, 2025. 
 * On September 1, 2025, use of **Azure Pipelines – Windows Server 2019** image will be disabled. Agents using this image won't provision and pipelines won't run.  
 
-To keep your Managed DevOps Pools that currently use the **Azure Pipelines – Windows Server 2019** image running, update your image to the **Azure Pipelines - Windows Server 2022** image. You can also switch to the Windows 2019 image from [Selected marketplace images](./configure-images.md#selected-marketplace-images) or bring your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. Note that the Windows 2019 image from [Selected marketplace images](./configure-images.md#selected-marketplace-images) does not have pre-installed software like the **Azure Pipelines – Windows Server 2019** image.
+To keep your Managed DevOps Pools running if you use the **Azure Pipelines – Windows Server 2019** image, update to the **Azure Pipelines - Windows Server 2022** image. Alternatively, you can use the Windows Server 2019 image from [Selected marketplace images](./configure-images.md#selected-marketplace-images) or your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. Note that the marketplace image does not include the pre-installed software found in the Azure Pipelines image.
 
 #### Ubuntu 20.04 image deprecation schedule
 
