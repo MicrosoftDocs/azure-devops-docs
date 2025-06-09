@@ -5,7 +5,7 @@ ms.date: 6/10/2025
 ms.topic: include
 ---
 
-### Triggers page
+### New Triggers page
 
 YAML pipelines provide you multiple powerful options to define when your pipeline should run. It's not always easy to reason if your pipeline is configured to run in response to an event, for example, a feeder pipeline completed. 
 
@@ -69,9 +69,12 @@ In the _Resource triggers_ tab, when not on the default branch, you get a warnin
 
 When trigger definitions were not correctly processed by the system, you get a warning and indications on how to solve the problem.
 
+> [!div class="mx-imgBorder"]
+> [![Screenshot of Pipelines schedule triggers with warning and indications on how to solve triggers are not processed.](../../media/257-pipelines-09.png "Screenshot of Pipelines schedule triggers with warning and indications on how to solve triggers are not processed.")](../../media/257-pipelines-07.png#lightbox)
+
 ### StringList parameter type
 
-One of the top requested YAML pipelines features is to [define parameters that contain a list of items](https://developercommunity.visualstudio.com/t/parameters-that-support-multiselect/1224839).
+One of the top requested YAML pipelines features in the Developer Community is to [define parameters that contain a list of items](https://developercommunity.visualstudio.com/t/parameters-that-support-multiselect/1224839).
 
 Starting with this sprint, we've added a new parameter type, named `StringList`, that provides this capability.
 
@@ -105,3 +108,39 @@ When queuing this pipeline, you have the option of choosing multiple regions to 
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Run pipeline region multi selection.](../../media/257-pipelines-08.png "Screenshot of Run pipeline region multi selection.")](../../media/257-pipelines-08.png#lightbox)
+
+### See the full YAML code of a pipeline run
+
+YAML pipelines are composable. You may extend a template, to ensure your pipelines runs the necessary static analysis tools, and include templates to run common stages or jobs or tasks.
+
+Debugging such pipelines was not easy, because you couldn't see the full YAML code it was running.
+
+Say you have the following pipeline:
+```yaml
+parameters:
+- name: PoolName
+  type: string
+  default: Azure Pipelines
+- name: VmImage
+  type: string
+  default: ubuntu latest
+
+extends:
+  template: security-enforcing-template.yml
+  parameters:
+    jobs:
+    - template: job.monitoring.yml
+    - template: job.build.yml
+      parameters:
+        PoolName: ${{parameters.PoolName}}
+        VmImage: ${{parameters.VmImage}}
+```
+
+There are three templates used here. Each template may use conditional expressions based on parameter and variable values to determine the actual jobs or steps to run.
+
+Furthermore, when looking at old pipeline runs, you don't know if the pipeline's code is the same now as when the run ran. 
+
+In this sprint, were adding a new functionality that allows you to see easily the full YAML code of a pipeline run.
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of pipeline summary with see full YAML option.](../../media/257-pipelines-10.png "Screenshot of pipeline summary with see full YAML option.")](../../media/257-pipelines-10.png#lightbox)
