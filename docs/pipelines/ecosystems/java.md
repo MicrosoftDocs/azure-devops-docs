@@ -21,7 +21,7 @@ Use a pipeline to:
 * Publish your app using a pipeline and Azure Artifacts.
 * Deploy your app to [Azure App Service](java-webapp.md), [Azure Functions](java-function.md), or [Azure Kubernetes Service](kubernetes/aks-template.md).
 
-If you work on an Android project, see [Build, test, and deploy Android apps](android.md).
+If you work on an Android projects, see [Build, test, and deploy Android apps](android.md).
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 1. Sign in to your Azure DevOps organization, and go to your project.
 
-1. Go to **Pipelines** and select **New pipeline** or **Create pipeline** if creating the first pipeline in the project.
+1. Go to **Pipelines**, and then select **New pipeline** or **Create pipeline** if creating the first pipeline in the project.
 
 1. Follow the wizard steps, starting by selecting **GitHub** as the location of your source code. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
