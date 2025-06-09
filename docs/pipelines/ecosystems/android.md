@@ -73,18 +73,20 @@ For more information about using Gradle tasks, see [Using tasks](https://docs.gr
 
 To run on a device instead of an emulator, the Android Application Package (APK) must be signed. Zipaligning reduces the RAM the application consumes. If your build doesn't already [sign and zipalign](https://developer.android.com/studio/publish/app-signing) the APK, add the [Android Signing](/azure/devops/pipelines/tasks/reference/android-signing-v3) task to the pipeline. For more information, see [Sign a mobile app](../apps/mobile/app-signing.md).
 
-For security, store the `jarsignerKeystorePassword` and `jarsignerKeyPassword` in [secret variables](../process/variables.md#secret-variables) and use those variables in your pipeline.
+For security, store the `apksignerKeystorePassword` and `apksignerKeyPassword` in [secret variables](../process/variables.md#secret-variables) and use those variables in your pipeline.
 
 ```yaml
-- task: AndroidSigning@2
+- task: AndroidSigning@3
   inputs:
-    apkFiles: '**/*.apk'
-    jarsign: true
-    jarsignerKeystoreFile: 'pathToYourKeystoreFile'
-    jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
-    jarsignerKeystoreAlias: 'yourKeystoreAlias'
-    jarsignerKeyPassword: '$(jarsignerKeyPassword)'
-    zipalign: true
+    apkFiles: '**/*.apk' # Specify the APK files to sign
+    apksignerKeystoreFile: 'pathToYourKeystoreFile' # Path to the keystore file
+    apksignerKeystorePassword: '$(apksignerKeystorePassword)' # Use a secret variable for security
+    apksignerKeystoreAlias: 'yourKeystoreAlias' # Alias for the keystore
+    apksignerKeyPassword: '$(apksignerKeyPassword)' # Use a secret variable for security
+    apksignerVersion: 'latest' # Use the latest version of apksigner
+    apksignerArguments: '--verbose' # Optional: Additional arguments for apksigner
+    zipalign: true # Enable zipalign to optimize APK
+    zipalignVersion: 'latest' # Use the latest version of zipalign
 ```
 
 ### Test on the Android emulator
