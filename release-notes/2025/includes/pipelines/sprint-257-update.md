@@ -49,7 +49,7 @@ When you navigate to the _Schedule triggers_, you see there are triggers defined
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Pipelines schedule triggers.](../../media/257-pipelines-03.png "Screenshot of Pipelines schedule triggers.")](../../media/257-pipelines-03.png#lightbox)
 
-When you navigate to the _Resource triggers_ section, you see the defined resource triggers and their details.
+When you navigate to the triggers_ section, you see the defined resource triggers and their details.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Pipelines resource triggers.](../../media/257-pipelines-04.png "Screenshot of Pipelines resource triggers.")](../../media/257-pipelines-04.png#lightbox)
