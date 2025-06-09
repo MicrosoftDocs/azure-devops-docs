@@ -15,9 +15,13 @@ ms.date: 09/18/2024
 
 # Service hooks events
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+
+You can use service hooks to run tasks on other services when events happen in your Azure DevOps project. This article provides information about the Azure DevOps events that a service hook can trigger on.
 
 ## Available event types
+
+The following types of events are available for use in service hooks. For a list of the events that each target service supports, see [Available services](overview.md#available-services).
 
 * **Build and release**
   * [Build completed](#build.complete)
@@ -30,7 +34,7 @@ ms.date: 09/18/2024
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
 
-* **Pipelines**
+* **Pipeline**
   * [Run state changed](#run.statechanged)
   *	[Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
@@ -40,7 +44,7 @@ ms.date: 09/18/2024
 
 ::: moniker range="=azure-devops"
 
-* **Pipelines**
+* **Pipeline**
   * [Check updated](#check-updated)
   * [Elastic agent pool resized](#elastic-agent-pool-resized)
   * [Manual intervention pending](#manual-intervention-pending)
@@ -67,11 +71,11 @@ ms.date: 09/18/2024
   * [Repository renamed](#repository-renamed)
   * [Repository status changed](#repository-status-changed)
 
-* **Service Connections**
+* **Service connection**
   * [Service connection created](#service-connection-created)
   * [Service connection updated](#service-connection-updated)
 
-* **Work items**
+* **Work item**
   * [Work item commented on](#workitem.commented)
   * [Work item created](#workitem.created)
   * [Work item deleted](#workitem.deleted)
@@ -79,9 +83,11 @@ ms.date: 09/18/2024
   * [Work item updated](#workitem.updated)
 
 > [!NOTE]
-> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving Webhooks from Azure DevOps.
+> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving webhooks from Azure DevOps.
 
 ## Build and release
+
+The following build and release events are available for use in service hooks.
 
 <a name="build.complete"></a>
 
@@ -1063,9 +1069,11 @@ Event: A deployment started.
 }
 ```
 
-::: moniker range=">= azure-devops-2020"
-
 ## Pipeline
+
+The following pipeline events are available for use in service hooks.
+
+::: moniker range="=azure-devops"
 
 <a name="check.updated"></a>
 
@@ -1249,6 +1257,8 @@ Event: A project-level agent pool is updated.
     "updatedDate": "2024-07-17T21:34:22.338Z"
 }
 ```
+
+::: moniker-end
 
 <a name="run.statechanged"></a>
 
@@ -1595,8 +1605,6 @@ Event: An approval completed for a run stage.
   "createdDate": "2019-12-13T06:18:22.487Z"
 }
 ```
-::: moniker-end
-
 
 ::: moniker range="=azure-devops"
 
@@ -1771,6 +1779,8 @@ Event: A new job is running, or it completed, or is waiting for an agent.
 ::: moniker-end
 
 ## Code
+
+The following code events are available for use in service hooks.
 
 <a name="tfvc.checkin"></a>
 
@@ -2603,6 +2613,10 @@ Event: A repository status is changed.
 }
 ```
 
+## Service connection
+
+The following service connection events are available for use in service hooks.
+
 ### Service connection created
 
 Event: A new service connection is created.
@@ -2674,6 +2688,8 @@ Event: A service connection is updated.
 ```
 
 ## Work item
+
+The following work item events are available for use in service hooks.
 
 <a name="workitem.created"></a>
 
