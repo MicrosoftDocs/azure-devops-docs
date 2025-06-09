@@ -1,15 +1,15 @@
 ---
-title: Placeholder
+title: GitHub Secret Protection and GitHub Code Security available as standalone products in Azure DevOps 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/10/2025
-description: Placeholder
+description: GitHub Secret Protection and GitHub Code Security available as standalone products in Azure DevOps
 ---
-# TBD
+# GitHub Secret Protection and GitHub Code Security available as standalone products in Azure DevOps
 
-In response to your feedback, we have prioritized multiple features in Test Plans and Repos. In Test Plans, you can now use your YAML pipelines while configuring or executing automated Test Plans. In addition, we've added a new recent test results section to the test case work item to make it easier to monitor test progress without switching or navigating through test plans. 
+You can now get GitHub Secret Protection and GitHub Code Security as standalone products in Azure DevOps. Secret Protection provides access to secret scanning, push protection, and security overview experiences. Code Security provides access to all dependency scanning, code scanning, and security overview experiences.
 
-In Repos, we've added support for diffing .ipynb files in PRs to the Jupyter Notebook extension. 
+In Test Plans, we are releasing New Test Plans directory to help you stay organized and save time. Now you can manage test plans more efficiently, having greater control over your workspace and reducing repetitive tasks.
 
 Check out the release notes for details.
 

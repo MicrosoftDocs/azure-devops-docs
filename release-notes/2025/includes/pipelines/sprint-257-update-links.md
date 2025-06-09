@@ -6,5 +6,5 @@ ms.topic: include
 ---
 
 - [New Triggers page](#new-triggers-page)
-- [StringList parameter type](#string-list-parameter-type)
+- [StringList parameter type](#stringlist-parameter-type)
 - [See the full YAML code of a pipeline run](#see-the-full-yaml-code-of-a-pipeline-run)
