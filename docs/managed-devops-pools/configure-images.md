@@ -441,7 +441,7 @@ pool:
 
 Managed DevOps Pools agent images are retired when the image's operating system reaches the end of its support lifecycle, and images based on older versions of operating systems can be retired when images based on new versions of the operating systems are released.
 
-* [Azure Pipelines images](#azure-pipelines-images) offers the same images and follows the same deprecation schedule as [Microsoft-hosted agents](../pipelines/agents/hosted.md#software).
+* [Azure Pipelines images](#azure-pipelines-images) offers the same images and follows a similar deprecation schedule as [Microsoft-hosted agents](../pipelines/agents/hosted.md#software).
 * [Selected marketplace images](#selected-marketplace-images) are typically retired when the image's operating system reaches the end of its support lifecycle.
 
 ### Image deprecation schedule
