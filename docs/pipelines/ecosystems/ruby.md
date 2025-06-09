@@ -15,7 +15,7 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to use Azure Pipelines to to build, test, and deploy your Ruby application. 
+Learn how to use Azure Pipelines to build, test, and deploy your Ruby application. 
 
 ## Create the Azure Pipelines
 
@@ -50,14 +50,14 @@ For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted
 
 ### Use a specific Ruby version
 
-Add the [Use Ruby Version](/azure/devops/pipelines/tasks/reference/use-ruby-version-v1) task to set the Ruby version in your pipeline. This snippet adds Ruby 3.4 or later to the path and sets subsequent pipeline tasks to use it.
+Add the [Use Ruby Version](/azure/devops/pipelines/tasks/reference/use-ruby-version-v0) task to set the Ruby version in your pipeline. This snippet adds Ruby 3.4 or later to the path and sets subsequent pipeline tasks to use it.
 
 ```yaml
 pool:
   vmImage: 'ubuntu-latest' 
 
 steps:
-- task: UseRubyVersion@1 
+- task: UseRubyVersion@0 
   inputs:
     versionSpec: '>= 3.4' 
     addToPath: true
