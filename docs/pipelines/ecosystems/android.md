@@ -94,7 +94,7 @@ For security, store the `apksignerKeystorePassword` and `apksignerKeyPassword` i
 To install and run the Android emulator, add the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task to your pipeline, and paste in the following code. The emulator starts as a background process and is available in later tasks. Arrange the emulator parameters to fit your testing environment.
 
 > [!IMPORTANT]
-> If you're using a [Microsoft-hosted agent](../agents/hosted.md), use the MacOS agent image with the Android emulator. Current Android emulators require hardware acceleration to start. Azure DevOps hosted Ubuntu agents do not support hardware acceleration. 
+> If you're using a [Microsoft-hosted agent](../agents/hosted.md), use the macOS agent image with the Android emulator. Current Android emulators require hardware acceleration to start. Azure DevOps hosted Ubuntu agents do not support hardware acceleration. 
 
 ```yaml
 - task: Bash@3
