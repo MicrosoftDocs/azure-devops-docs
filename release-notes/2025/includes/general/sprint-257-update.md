@@ -26,3 +26,6 @@ Due to ADO's previous reliance on ARM, admins had to permit all ADO users to byp
 There remain a couple of notable exceptions. The following ​user groups may need continued access to ARM:
 1. Billing admins need access to ARM to setup billing and access subscriptions
 2. Service Connection creators require continued access to ARM for ARM role assignment and updates to MSIs.
+
+### New Microsoft Entra OAuth scopes
+Azure DevOps has introduced two new Microsoft Entra OAuth scopes, vso.pats and vso.pats_manage to enhance security and control over personal access token (PAT) lifecycle management APIs. These scopes are now required for delegated flows that involve PAT creation and management, replacing the previously broad user_impersonation scope. This change enables app owners to reduce the permissions needed by their app to access PAT APIs. Downscope your `user_impersonation` apps to the minimum scopes needed today!
