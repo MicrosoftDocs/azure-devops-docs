@@ -493,15 +493,16 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: AzureFileCopy@4
+- task: AzureFileCopy@6
   inputs:
-    SourcePath: 'my/path'
-    azureSubscription: 'my-subscription'
-    Destination: 'AzureVMs'
-    storage: 'my-storage'
-    resourceGroup: 'my-rg'
-    vmsAdminUserName: $(VMS_USER)
-    vmsAdminPassword: $(VMS_PASS)
+    SourcePath: 'my/path' # Specify the source path
+    azureSubscription: 'my-subscription' # Azure subscription name
+    Destination: 'AzureVMs' # Destination type
+    storage: 'my-storage' # Azure storage account name
+    resourceGroup: 'my-resource-group' # Resource group name
+    vmsAdminUserName: $(VMS_USER) # Admin username for the VM
+    vmsAdminPassword: $(VMS_PASS) # Admin password for the VM
+    CleanTargetBeforeCopy: false # Do not clean the target before copying
 ```
 
 ### Reference secret variables in variable groups
