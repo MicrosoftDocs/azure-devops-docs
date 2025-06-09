@@ -498,6 +498,7 @@ steps:
     SourcePath: 'my/path' # Specify the source path
     azureSubscription: 'my-subscription' # Azure subscription name
     Destination: 'AzureVMs' # Destination type
+    storage: 'my-storage' # Azure Storage Account name
     resourceGroup: 'my-resource-group' # Resource group name
     vmsAdminUserName: $(VMS_USER) # Admin username for the VM
     vmsAdminPassword: $(VMS_PASS) # Admin password for the VM
