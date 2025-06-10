@@ -14,7 +14,7 @@ This sprint, were introducing a **Triggers** page that gives you an overview of 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Pipelines Triggers.](../../media/257-pipelines-01.png "Screenshot of Pipelines Triggers.")](../../media/257-pipelines-01.png#lightbox)
 
-Imagine you have the following YAML pipeline defined in the `main` branch of a repo. Consider there's also a `feature` branch, that has the same YAML pipeline code.
+Imagine you have the following YAML pipeline defined in the `main` branch of a repo. Consider there's also a `feature` branch that has the same YAML pipeline code.
 
 ```yaml
 trigger:
@@ -35,7 +35,7 @@ resources:
       trigger: true
 ```
 
-When you navigate to the **Triggers** page, you will see the following
+When you navigate to the **Triggers** page, you see the following
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Continuous integration triggers.](../../media/257-pipelines-02.png "Screenshot of Continuous integration triggers.")](../../media/257-pipelines-02.png#lightbox)
@@ -49,12 +49,12 @@ When you navigate to the _Schedule triggers_, you see there are triggers defined
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Pipelines schedule triggers.](../../media/257-pipelines-03.png "Screenshot of Pipelines schedule triggers.")](../../media/257-pipelines-03.png#lightbox)
 
-When you navigate to the triggers_ section, you see the defined resource triggers and their details.
+When you navigate to the _Resource triggers_ section, you see the defined resource triggers and their details.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Pipelines resource triggers.](../../media/257-pipelines-04.png "Screenshot of Pipelines resource triggers.")](../../media/257-pipelines-04.png#lightbox)
 
-You can switch branched, from `main` to `feature` to see what triggers you defined for the `feature` branch.
+You can switch branches, from `main` to `feature`, to see what triggers you defined for the `feature` branch.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Pipelines continuous integration triggers.](../../media/257-pipelines-05.png "Screenshot of Pipelines continuous integration triggers.")](../../media/257-pipelines-05.png#lightbox)
@@ -140,7 +140,7 @@ There are three templates used here. Each template may use conditional expressio
 
 Furthermore, when looking at old pipeline runs, you don't know if the pipeline's code is the same now as when the run ran. 
 
-In this sprint, were adding a new functionality that allows you to see easily the full YAML code of a pipeline run.
+In this sprint, we're adding a new functionality that allows you to easily see the full YAML code of a pipeline run.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of pipeline summary with see full YAML option.](../../media/257-pipelines-10.png "Screenshot of pipeline summary with see full YAML option.")](../../media/257-pipelines-10.png#lightbox)
