@@ -97,12 +97,12 @@ Event: A build completes.
 
 * Publisher ID: `azure-devops`
 * Event ID: `build.complete`
-* Resource Name: `build`
+* Resource name: `build`
 
 #### Settings
 
- * `definitionName`: Filter events to include only completed builds for the specified pipeline
- * `buildStatus`: Filter events to include only completed builds for the specified completion status
+ * `definition.name`: Filter events to include only completed builds for the specified pipeline.
+ * `status`: Filter events to include only completed builds that have the specified completion status.
    * Valid values: 
       * `Succeeded` 
       * `PartiallySucceeded` 
@@ -325,11 +325,11 @@ Event: A release is abandoned.
 
 * Publisher ID: `rm`
 * Event ID: `ms.azure-devops-release.release-abandoned-event`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
-* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+* `releaseDefinition.id`: Filter events to include only completed deployments for the specified pipeline.
 
 #### Sample payload
 
@@ -366,11 +366,11 @@ Event: A release is created.
 
 * Publisher ID: `rm`
 * Event ID: `ms.azure-devops-release.release-created-event`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+ * `releaseDefinition.id`: Filter events to include only completed deployments for the specified pipeline.
 
 #### Sample payload
 
@@ -530,20 +530,20 @@ Event: A deployment approval is completed.
 
 * Publisher ID: `rm`
 * Event ID: `ms.azure-devops-release.deployment-approval-completed-event`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
+ * `approval.status`: Filter events to include only deployments with an approval of the specified status.
    * Valid values: 
       * `2` - Approved
       * `4` - Rejected
- * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
+ * `approvalType`: Filter events to include only deployments requesting an approval of the specified type.
    * Valid values: 
-      * `1` - Predeployment
+      * `1` - Predeploy
       * `2` - Post-deployment
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+ * `environment.id`: Filter events to include only completed deployments for the specified environment.
+ * `releaseDefinition.id`: Filter events to include only completed deployments for the specified definition.
 
 #### Sample payload
 
@@ -610,16 +610,16 @@ Event: A deployment approval is requested.
 
 * Publisher ID: `rm`
 * Event ID: `ms.azure-devops-release.deployment-approval-pending-event`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
+ * `approvalType`: Filter events to include only deployments requesting an approval of the specified type.
    * Valid values: 
-      * `1` - Predeployment
+      * `1` - Predeploy
       * `2` - Post-deployment
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+ * `releaseEnvironment.id`: Filter events to include only completed deployments for the specified environment.
+ * `releaseDefinition.id`: Filter events to include only completed deployments for the specified pipeline.
 
 #### Sample payload
 
@@ -860,13 +860,13 @@ Event: A deployment completed.
 
 * Publisher ID: `rm`
 * Event ID: `ms.azure-devops-release.deployment-completed-event`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
- * `releaseEnvironmentStatus`: Filter events to include only completed deployments with the specified status
+ * `environment.id`: Filter events to include only completed deployments for the specified environment.
+ * `releaseDefinition.id`: Filter events to include only completed deployments for the specified pipeline.
+ * `deployment.status`: Filter events to include only completed deployments with the specified status.
    * Valid values: 
       * `8` - Canceled
       * `16` - Rejected
@@ -925,12 +925,12 @@ Event: A deployment started.
 
 * Publisher ID: `rm`
 * Event ID: `ms.azure-devops-release.deployment-started-event`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+ * `environment.id`: Filter events to include only completed deployments for the specified environment.
+ * `releaseDefinition.id`: Filter events to include only completed deployments for the specified definition.
 
 #### Sample payload
 
@@ -1083,13 +1083,13 @@ Event: A check is updated.
 
 * Publisher ID: `azure-devops`
 * Event ID: `check.updated`
-* Resource Name: `check`
+* Resource name: `check`
 
 #### Settings
 
-* `project`: Filter events to include only checks updated within the specified project.
-* `checkType`: Filter events to include only checks of the specified type.
-* `status`: Filter events to include only checks with the specified status.
+* `check.project`: Filter events to include only checks updated within the specified project.
+* `check.type`: Filter events to include only checks of the specified type.
+* `check.status`: Filter events to include only checks with the specified status.
 
 #### Sample payload
 
@@ -1120,14 +1120,14 @@ Event: An elastic agent pool is resized.
 
 * Publisher ID: `azure-devops`
 * Event ID: `elasticagentpool.resized`
-* Resource Name: `elasticagentpool`
+* Resource name: `elasticagentpool`
 
 #### Settings
 
-* `project`: Filter events to include only elastic agent pools resized within the specified project.
-* `poolName`: Filter events to include only elastic agent pools with the specified name pattern.
-* `oldSize`: Filter events to include only elastic agent pools with the specified old size.
-* `newSize`: Filter events to include only elastic agent pools with the specified new size.
+* `elasticAgentPool.project`: Filter events to include only elastic agent pools resized within the specified project.
+* `elasticAgentPool.name`: Filter events to include only elastic agent pools with the specified name pattern.
+* `elasticAgentPool.oldSize`: Filter events to include only elastic agent pools with the specified old size.
+* `elasticAgentPool.newSize`: Filter events to include only elastic agent pools with the specified new size.
 
 #### Sample payload
 
@@ -1159,13 +1159,13 @@ Event: A manual intervention is pending.
 
 * Publisher ID: `azure-devops`
 * Event ID: `manualintervention.pending`
-* Resource Name: `manualintervention`
+* Resource name: `manualintervention`
 
 #### Settings
 
-* `project`: Filter events to include only manual interventions pending within the specified project.
-* `interventionName`: Filter events to include only manual interventions with the specified name pattern.
-* `status`: Filter events to include only manual interventions with the specified status.
+* `manualIntervention.project`: Filter events to include only manual interventions pending within the specified project.
+* `manualIntervention.name`: Filter events to include only manual interventions with the specified name pattern.
+* `manualIntervention.status`: Filter events to include only manual interventions with the specified status.
 
 #### Sample payload
 
@@ -1196,12 +1196,12 @@ Event: A project-level agent pool is created.
 
 * Publisher ID: `azure-devops`
 * Event ID: `projectlevelagentpool.created`
-* Resource Name: `projectlevelagentpool`
+* Resource name: `projectlevelagentpool`
 
 #### Settings
 
-* `project`: Filter events to include only project-level agent pools created within the specified project.
-* `poolName`: Filter events to include only project-level agent pools with the specified name pattern.
+* `projectLevelAgentPool.project`: Filter events to include only project-level agent pools created within the specified project.
+* `projectLevelAgentPool.name`: Filter events to include only project-level agent pools with the specified name pattern.
 
 #### Sample payload
 
@@ -1231,12 +1231,12 @@ Event: A project-level agent pool is updated.
 
 * Publisher ID: `azure-devops`
 * Event ID: `projectlevelagentpool.updated`
-* Resource Name: `projectlevelagentpool`
+* Resource name: `projectlevelagentpool`
 
 #### Settings
 
-* `project`: Filter events to include only project-level agent pools updated within the specified project.
-* `poolName`: Filter events to include only project-level agent pools with the specified name pattern.
+* `projectLevelAgentPool.project`: Filter events to include only project-level agent pools updated within the specified project.
+* `projectLevelAgentPool.name`: Filter events to include only project-level agent pools with the specified name pattern.
 
 #### Sample payload
 
@@ -1268,11 +1268,11 @@ Event: Overall statuses of a pipeline run changed. A new run started, or a run t
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.run-state-changed-event`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
- * `PipelineId`: Filter to include only events for the specified pipeline
- * `runStateId`: Filter events based on the new state of the run
+ * `pipeline.id`: Filter to include only events for the specified pipeline.
+ * `run.state`: Filter events based on the new state of the run.
    * Valid values: 
       * `InProgress` 
       * `Canceling` 
@@ -1327,13 +1327,13 @@ Event: A new stage started, or a stage transitioned to canceling, canceled, fail
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.stage-state-changed-event`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `PipelineId`: Filter to include only events for the specified pipeline
- * `stageNameId`: Filter events to a specific stage name
- * `stageStateId`: Filter events based on the new state of the stage
+ * `pipeline.id`: Filter to include only events for the specified pipeline.
+ * `stage.name`: Filter to include only events that have a specific stage name.
+ * `stage.state`: Filter to include only events that have a stage in a specific new state.
    * Valid values: 
       * `NotStarted` 
       * `Waiting` 
@@ -1442,13 +1442,13 @@ Event: An approval is created for a run stage.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelinechecks-events.approval-pending`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `PipelineId`: Filter to include only events for the specified pipeline
- * `stageName`: Filter events to a specific stage name
- * `environmentName`: Filter events to approvals for deployments to a specified environment
+ * `id`: Filter to include only events for the pipeline with the specified ID.
+ * `stageName`: Filter to include only events with a specific stage name.
+ * `environmentName`: Filter to include only events triggered by approvals for deployments to a specified environment.
  
 #### Sample payload
 
@@ -1528,13 +1528,13 @@ Event: An approval completed for a run stage.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelinechecks-events.approval-completed`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `PipelineId`: Filter to include only events for the specified pipeline
- * `stageName`: Filter events to a specific stage name
- * `environmentName`: Filter events to approvals for deployments to a specified environment
+ * `id`: Filter to include only events for the pipeline with the specified ID.
+ * `stageName`: Filter events to a specific stage name.
+ * `environmentName`: Filter events to approvals for deployments to a specified environment.
  
 #### Sample payload
 
@@ -1614,19 +1614,19 @@ Event: A new job is running, or it completed, or is waiting for an agent.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.job-state-changed-event`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `pipelineId`: Filter to include only events for the specified pipeline
- * `stageNameId`: Filter events to a specific stage name
- * `jobNameId`: Filter events to a specific job name
- * `jobStateId`: Filter events based on the new state of the job
+ * `pipeline.id`: Filter to include only events for the specified pipeline.
+ * `stage.name`: Filter to include only events with a specific stage name.
+ * `job.name`: Filter to include only events with a specific job name.
+ * `job.state`: Filter to include only events with a job in a specified state.
    * Valid values: 
       * `Waiting` 
       * `Running`
       * `Completed`
- * `jobResultId`: Filter events based on the result of the job
+ * `job.result`: Filter to include only events with a job that has a specified result.
    * Valid values:
       * `Succeeded`
       * `Skipped`
@@ -1790,11 +1790,11 @@ Event: A changeset is checked into Team Foundation Version Control (TFVC).
 
 * Publisher ID: `azure-devops`
 * Event ID: `tfvc.checkin`
-* Resource Name: `changeset`
+* Resource name: `changeset`
 
 #### Settings
 
- * `path`: Filter to checkins that change one or more files under the specified path
+ * `path`: Filter to checkins that change one or more files under the specified path.
    * Required
 
 #### Sample payload
@@ -1852,13 +1852,13 @@ Event: Code is pushed to a Git repository.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.push`
-* Resource Name: `push`
+* Resource name: `push`
 
 #### Settings
 
- * `branch`: The branch that code is pushed into
- * `pushedBy`: A group that has the pusher as its member
- * `repository`: The repository that code is pushed to
+ * `defaultBranch`: Filter events to include only the branch that code is pushed into.
+ * `pushedBy`: Filter events to include only the group that has the pusher as its member.
+ * `repository`: Filter events to include only the repository that code is pushed to.
    * Data type: `guid`
 
 #### Sample payload
@@ -1950,15 +1950,15 @@ Event: A pull request is created in a Git repository.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.pullrequest.created`
-* Resource Name: `pullrequest`
+* Resource name: `pullrequest`
 
 #### Settings
 
- * `repository`: The repository that code is pushed to
+ * `repository`: Filter events to include only the repository that code is pushed to.
    * Data type: `guid`
- * `pullrequestCreatedBy`: A group that has the requester as a member
- * `pullrequestReviewersContains`: A group included in the reviewers list
- * `branch`: The target branch of the pull request
+ * `createdBy`: Filter events to include only the group that has the requester as a member.
+ * `reviewers`: Filter events to include only the group included in the list of reviewers.
+ * `defaultBranch`: Filter events to include only the target branch of the pull request.
 
 #### Sample payload
 
@@ -2058,15 +2058,15 @@ Event: A pull request merge is attempted in a Git repository.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.pullrequest.merge.attempted`
-* Resource Name: `pullrequest`
+* Resource name: `pullrequest`
 
 #### Settings
 
- * `repository`: The repository that code is pushed to
+ * `repository`: Filter events to include only the repository that code is pushed to.
    * Data type: `guid`
- * `pullrequestCreatedBy`: A group that has the requester as a member
- * `pullrequestReviewersContains`: A group included in the reviewers list
- * `branch`: The target branch of the pull request
+ * `createdBy`: Filter events to include only the group that has the requester as a member.
+ * `reviewers`: Filter events to include only the group included in the list of reviewers.
+ * `defaultBranch`: Filter events to include only the target branch of the pull request.
 
 
 #### Sample payload
@@ -2159,7 +2159,6 @@ Event: A pull request merge is attempted in a Git repository.
 }
 ```
 
-
 <a name="git.pullrequest.updated"></a>
 
 ### Pull request updated
@@ -2168,21 +2167,21 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.pullrequest.updated`
-* Resource Name: `pullrequest`
+* Resource name: `pullrequest`
 
 #### Settings
 
- * `notificationType`: The type of pull request change
+ * `notificationType`: Filter events to include only the type of pull request change.
    * Valid values: 
       * `PushNotification` - Source branch updated
       * `ReviewersUpdateNotification` - Reviewers changed
       * `StatusUpdateNotification` - Status changed
       * `ReviewerVoteNotification` - Votes score changed
- * `repository`: The repository that code is pushed to
+ * `repository`: Filter events to include only the repository that code is pushed to.
    * Data type: `guid`
- * `pullrequestCreatedBy`: A group that has the requester as a member
- * `pullrequestReviewersContains`: A group included in the reviewers list
- * `branch`: The target branch of the pull request
+ * `createdBy`: Filter events to include only the group that has the requester as a member.
+ * `reviewers`: Filter events to include only the group included in the list of reviewers.
+ * `defaultBranch`: Filter events to include only the target branch of the pull request.
 
 #### Sample payload
 
@@ -2289,13 +2288,13 @@ Event: A pull request is commented on.
 
 * Publisher ID: `azure-devops`
 * Event ID: `ms.vss-code.git-pullrequest-comment-event`
-* Resource Name: `pullrequest`
+* Resource name: `pullrequest`
 
 #### Settings
 
- * `repository`: The repository that pull request is commented on
+ * `repository`: Filter events to include only the repository that pull request is commented on.
    * Data type: `guid`
- * `branch`: The target branch of the pull request
+ * `defaultBranch`: Filter events to include only the target branch of the pull request.
 
 #### Sample payload
 
@@ -2437,12 +2436,12 @@ Event: A new repository is created.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.repository.created`
-* Resource Name: `repository`
+* Resource name: `repository`
 
 #### Settings
 
-* `project`: Filter events to include only repositories created within the specified project.
-* `repositoryName`: Filter events to include only repositories with the specified name pattern.
+* `repository.project`: Filter events to include only repositories created within the specified project.
+* `repository.name`: Filter events to include only repositories with the specified name pattern.
 
 #### Sample payload
 
@@ -2471,12 +2470,12 @@ Event: A repository is deleted.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.repository.deleted`
-* Resource Name: `repository`
+* Resource name: `repository`
 
 #### Settings
 
-* `project`: Filter events to include only repositories deleted within the specified project.
-* `repositoryName`: Filter events to include only repositories with the specified name pattern.
+* `repository.project`: Filter events to include only repositories deleted within the specified project.
+* `repository.name`: Filter events to include only repositories with the specified name pattern.
 
 #### Sample payload
 
@@ -2505,13 +2504,13 @@ Event: A repository is forked.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.repository.forked`
-* Resource Name: `repository`
+* Resource name: `repository`
 
 #### Settings
 
 * `project`: Filter events to include only repositories forked within the specified project.
-* `sourceRepositoryName`: Filter events to include only forks of repositories with the specified source repository name pattern.
-* `forkedRepositoryName`: Filter events to include only repositories with the specified forked repository name pattern.
+* `sourceRepository.name`: Filter events to include only forks of repositories with the specified source repository name pattern.
+* `targetRepository.name`: Filter events to include only repositories with the specified forked repository name pattern.
 
 #### Sample payload
 
@@ -2545,13 +2544,13 @@ Filter events to include only renamed repositories.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.repository.renamed`
-* Resource Name: `repository`
+* Resource name: `repository`
 
 #### Settings
 
 * `project`: Filter events to include only repositories renamed within the specified project.
-* `oldRepositoryName`: Filter events to include only repositories with the specified old name pattern.
-* `newRepositoryName`: Filter events to include only repositories with the specified new name pattern.
+* `repository.oldName`: Filter events to include only repositories with the specified old name pattern.
+* `repository.newName`: Filter events to include only repositories with the specified new name pattern.
 
 #### Sample payload
 
@@ -2581,12 +2580,12 @@ Event: A repository status is changed.
 
 * Publisher ID: `azure-devops`
 * Event ID: `git.repository.statusChanged`
-* Resource Name: `repository`
+* Resource name: `repository`
 
 #### Settings
 
 * `project`: Filter events to include only repositories within the specified project.
-* `repositoryName`: Filter events to include only repositories with the specified name pattern.
+* `repository.name`: Filter events to include only repositories with the specified name pattern.
 * `oldStatus`: Filter events to include only repositories with the specified old status.
 * `newStatus`: Filter events to include only repositories with the specified new status.
 
@@ -2623,12 +2622,12 @@ Event: A new service connection is created.
 
 * Publisher ID: `azure-devops`
 * Event ID: `serviceendpoint.created`
-* Resource Name: `serviceendpoint`
+* Resource name: `serviceendpoint`
 
 #### Settings
 
 * `project`: Filter events to include only service connections created within the specified project.
-* `serviceConnectionType`: Filter events to include only service connections of the specified type.
+* `serviceEndpoint.type`: Filter events to include only service connections of the specified type.
 
 #### Sample payload
 
@@ -2658,12 +2657,12 @@ Event: A service connection is updated.
 
 * Publisher ID: `azure-devops`
 * Event ID: `serviceendpoint.updated`
-* Resource Name: `serviceendpoint`
+* Resource name: `serviceendpoint`
 
 #### Settings
 
 * `project`: Filter events to include only service connections updated within the specified project.
-* `serviceConnectionType`: Filter events to include only service connections of the specified type.
+* `serviceEndpoint.type`: Filter events to include only service connections of the specified type.
 
 #### Sample payload
 
@@ -2699,12 +2698,12 @@ Event: A new work item is created.
 
 * Publisher ID: `azure-devops`
 * Event ID: `workitem.created`
-* Resource Name: `workitem`
+* Resource name: `workitem`
 
 #### Settings
 
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `workItemType`: Filter events to include only work items of the specified type.
+ * `System.AreaPath`: Filter events to include only work items under the specified area path.
+ * `System.WorkItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2785,12 +2784,12 @@ Event: A work item is deleted.
 
 * Publisher ID: `azure-devops`
 * Event ID: `workitem.deleted`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `workItemType`: Filter events to include only work items of the specified type.
+ * `System.AreaPath`: Filter events to include only work items under the specified area path.
+ * `System.WorkItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2865,12 +2864,12 @@ Event: A work item is newly restored.
 
 * Publisher ID: `azure-devops`
 * Event ID: `workitem.restored`
-* Resource Name: `resource`
+* Resource name: `resource`
 
 #### Settings
 
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `workItemType`: Filter events to include only work items of the specified type.
+ * `System.AreaPath`: Filter events to include only work items under the specified area path.
+ * `System.WorkItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2957,18 +2956,13 @@ Event: A work item is changed.
 
 * Publisher ID: `azure-devops`
 * Event ID: `workitem.updated`
-* Resource Name: `workitem`
-
-> [!NOTE]
-> You can't create a Service Hooks subscription with multiple fields through the UI. But, you can do so in the following ways: 
-> - [Create a custom payload through the API](/rest/api/azure/devops/hooks/subscriptions/create)
-> - [Create separate Service Hooks subscriptions for each field](#create-a-service-hooks-subscription)
+* Resource name: `workitem`
 
 #### Settings
 
- * `areaPath`: Filter events to include only work items under the specified area path.
+ * `System.AreaPath`: Filter events to include only work items under the specified area path.
  * `changedFields`: Filter events to include only work items with the specified field changed.
- * `workItemType`: Filter events to include only work items of the specified type.
+ * `System.WorkItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -3047,16 +3041,35 @@ Event: A work item is changed.
 }
 ```
 
-#### Create a service hooks subscription
+#### Filter on multiple work item fields
 
-Do the following steps to create a service hooks subscription for each work item field.
-1. Go to your **Project settings**.
-2. Select **Service Hooks** > + **Create subscription**.
-3. Choose **Web Hooks** as the type of event > **Next**. 
-4. Select **Work item updated** as the type of trigger event.
-5. Specify the field you want to monitor for changes in the subscription configuration dialog. For example, if you want to track changes in the **State** field, set the filter to **Field: State**. You can also filter events to include only items under a specified area path, only specified work item types, and only work items containing a specified tag.
-6. Select **Next**.
-7. Continue in the SETTINGS dialog, and then **Test** or **Finish** creating your subscription.
+If you want to trigger on a change in more than one work item field, you have a few possibilities:
+
+- To trigger on a change in any field, remove the `changedFields` filter.
+
+- To trigger on multiple fields, but not all fields, use one of the following options:
+
+  - Use the Azure DevOps Services REST API to create a custom payload for each field of interest. For more information, see [Subscriptions - Create](/rest/api/azure/devops/hooks/subscriptions/create).
+
+  - Create a service hook subscription for each field of interest by taking the following steps:
+
+    1. Go to your project, select **Project settings**, and then select **Service hooks**.
+
+    1. Select **Create subscription**.
+
+    1. Select **Web Hooks**, and then select **Next**.
+
+    1. Under **Trigger on this type of event**, select **Work item updated**.
+
+    1. Under **Field**, select a field you want to trigger on. For example, if you want to track changes in the work item state, select **State**.
+
+    1. Configure any other filters you want to use by specifying an area path, a work item type, or a tag.
+
+    1. Select **Next**.
+
+    1. In the **Action** dialog, configure the settings, and then select **Test** or **Finish**.
+
+    1. Repeat these steps to set up a subscription for each other field that you want to trigger on.
 
 <a name="workitem.commented"></a>
 
@@ -3066,13 +3079,13 @@ Event: A work item is commented on.
 
 * Publisher ID: `azure-devops`
 * Event ID: `workitem.commented`
-* Resource Name: `workitem`
+* Resource name: `workitem`
 
 #### Settings
 
- * `areaPath`: Filter events to include only work items under the specified area path.
+ * `System.AreaPath`: Filter events to include only work items under the specified area path.
  * `commentPattern`: The string that must be found in the comment.
- * `workItemType`: Filter events to include only work items of the specified type.
+ * `System.WorkItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
