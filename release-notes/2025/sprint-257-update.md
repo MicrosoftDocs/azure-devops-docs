@@ -9,7 +9,7 @@ description: GitHub Secret Protection and GitHub Code Security available as stan
 
 You can now get GitHub Secret Protection and GitHub Code Security as standalone products in Azure DevOps. Secret Protection provides access to secret scanning, push protection, and security overview experiences. Code Security provides access to all dependency scanning, code scanning, and security overview experiences.
 
-In Test Plans, we are releasing New Test Plans directory to help you stay organized and save time. Now you can manage test plans more efficiently, having greater control over your workspace and reducing repetitive tasks.
+In Test Plans, we are releasing new Test Plans directory to help you stay organized and save time. Now you can manage test plans more efficiently, having greater control over your workspace and reducing repetitive tasks.
 
 Check out the release notes for details.
 
@@ -59,4 +59,5 @@ We would love to hear what you think about these features. Use the help menu to 
 
 > [!div class="mx-imgBorder"] 
 > ![Make a suggestion](../media/make-a-suggestion.png)
+
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
