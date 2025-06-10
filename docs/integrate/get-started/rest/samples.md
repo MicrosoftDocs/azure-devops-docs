@@ -27,7 +27,6 @@ Authenticate with Azure DevOps when using the REST APIs or .NET Libraries by fol
 - **Create a PAT:**  
   Start with these samples and [create a personal access token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-- **Preferred Microsoft Entra authentication:**  
   [!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
 - **Use Basic Authentication with a PAT:**  
