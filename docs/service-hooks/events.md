@@ -25,8 +25,8 @@ The following types of events are available for use in service hooks. For a list
 
 * **Build and release**
   * [Build completed](#build.complete)
-  * [Release created](#ms.azure-devops-release.release-created-event)
   * [Release abandoned](#ms.azure-devops-release.release-abandoned-event)
+  * [Release created](#ms.azure-devops-release.release-created-event)
   * [Release deployment approval completed](#ms.azure-devops-release.deployment-approval-completed-event)
   * [Release deployment approval pending](#ms.azure-devops-release.deployment-approval-pending-event)
   * [Release deployment completed](#ms.azure-devops-release.deployment-completed-event)
@@ -101,8 +101,8 @@ Event: A build completes.
 
 #### Settings
 
- * `definition.name`: Filter events to include only completed builds for the specified pipeline.
- * `status`: Filter events to include only completed builds that have the specified completion status.
+ * `definitionName`: Filter events to include only completed builds for the specified pipeline.
+ * `buildStatus`: Filter events to include only completed builds that have the specified completion status.
    * Valid values: 
       * `Succeeded` 
       * `PartiallySucceeded` 
@@ -329,7 +329,7 @@ Event: A release is abandoned.
 
 #### Settings
 
-* `releaseDefinition.id`: Filter events to include only completed deployments for the specified pipeline.
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline.
 
 #### Sample payload
 
@@ -370,7 +370,7 @@ Event: A release is created.
 
 #### Settings
 
- * `releaseDefinition.id`: Filter events to include only completed deployments for the specified pipeline.
+ * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline.
 
 #### Sample payload
 
@@ -534,16 +534,16 @@ Event: A deployment approval is completed.
 
 #### Settings
 
- * `approval.status`: Filter events to include only deployments with an approval of the specified status.
+ * `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status.
    * Valid values: 
       * `2` - Approved
       * `4` - Rejected
- * `approvalType`: Filter events to include only deployments requesting an approval of the specified type.
+ * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type.
    * Valid values: 
       * `1` - Predeploy
       * `2` - Post-deployment
- * `environment.id`: Filter events to include only completed deployments for the specified environment.
- * `releaseDefinition.id`: Filter events to include only completed deployments for the specified definition.
+ * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment.
+ * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition.
 
 #### Sample payload
 
@@ -614,12 +614,12 @@ Event: A deployment approval is requested.
 
 #### Settings
 
- * `approvalType`: Filter events to include only deployments requesting an approval of the specified type.
+ * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type.
    * Valid values: 
       * `1` - Predeploy
       * `2` - Post-deployment
- * `releaseEnvironment.id`: Filter events to include only completed deployments for the specified environment.
- * `releaseDefinition.id`: Filter events to include only completed deployments for the specified pipeline.
+ * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment.
+ * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline.
 
 #### Sample payload
 
@@ -864,9 +864,9 @@ Event: A deployment completed.
 
 #### Settings
 
- * `environment.id`: Filter events to include only completed deployments for the specified environment.
- * `releaseDefinition.id`: Filter events to include only completed deployments for the specified pipeline.
- * `deployment.status`: Filter events to include only completed deployments with the specified status.
+ * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment.
+ * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline.
+ * `releaseEnvironmentStatus`: Filter events to include only completed deployments with the specified status.
    * Valid values: 
       * `8` - Canceled
       * `16` - Rejected
@@ -929,8 +929,8 @@ Event: A deployment started.
 
 #### Settings
 
- * `environment.id`: Filter events to include only completed deployments for the specified environment.
- * `releaseDefinition.id`: Filter events to include only completed deployments for the specified definition.
+ * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment.
+ * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition.
 
 #### Sample payload
 
@@ -1087,9 +1087,9 @@ Event: A check is updated.
 
 #### Settings
 
-* `check.project`: Filter events to include only checks updated within the specified project.
-* `check.type`: Filter events to include only checks of the specified type.
-* `check.status`: Filter events to include only checks with the specified status.
+* `project`: Filter events to include only checks updated within the specified project.
+* `checkType`: Filter events to include only checks of the specified type.
+* `status`: Filter events to include only checks with the specified status.
 
 #### Sample payload
 
@@ -1124,10 +1124,10 @@ Event: An elastic agent pool is resized.
 
 #### Settings
 
-* `elasticAgentPool.project`: Filter events to include only elastic agent pools resized within the specified project.
-* `elasticAgentPool.name`: Filter events to include only elastic agent pools with the specified name pattern.
-* `elasticAgentPool.oldSize`: Filter events to include only elastic agent pools with the specified old size.
-* `elasticAgentPool.newSize`: Filter events to include only elastic agent pools with the specified new size.
+* `project`: Filter events to include only elastic agent pools resized within the specified project.
+* `poolName`: Filter events to include only elastic agent pools with the specified name pattern.
+* `oldSize`: Filter events to include only elastic agent pools with the specified old size.
+* `newSize`: Filter events to include only elastic agent pools with the specified new size.
 
 #### Sample payload
 
@@ -1163,9 +1163,9 @@ Event: A manual intervention is pending.
 
 #### Settings
 
-* `manualIntervention.project`: Filter events to include only manual interventions pending within the specified project.
-* `manualIntervention.name`: Filter events to include only manual interventions with the specified name pattern.
-* `manualIntervention.status`: Filter events to include only manual interventions with the specified status.
+* `project`: Filter events to include only manual interventions pending within the specified project.
+* `interventionName`: Filter events to include only manual interventions with the specified name pattern.
+* `status`: Filter events to include only manual interventions with the specified status.
 
 #### Sample payload
 
@@ -1200,8 +1200,8 @@ Event: A project-level agent pool is created.
 
 #### Settings
 
-* `projectLevelAgentPool.project`: Filter events to include only project-level agent pools created within the specified project.
-* `projectLevelAgentPool.name`: Filter events to include only project-level agent pools with the specified name pattern.
+* `project`: Filter events to include only project-level agent pools created within the specified project.
+* `poolName`: Filter events to include only project-level agent pools with the specified name pattern.
 
 #### Sample payload
 
@@ -1235,8 +1235,8 @@ Event: A project-level agent pool is updated.
 
 #### Settings
 
-* `projectLevelAgentPool.project`: Filter events to include only project-level agent pools updated within the specified project.
-* `projectLevelAgentPool.name`: Filter events to include only project-level agent pools with the specified name pattern.
+* `project`: Filter events to include only project-level agent pools updated within the specified project.
+* `poolName`: Filter events to include only project-level agent pools with the specified name pattern.
 
 #### Sample payload
 
@@ -1271,8 +1271,8 @@ Event: Overall statuses of a pipeline run changed. A new run started, or a run t
 * Resource name: `resource`
 
 #### Settings
- * `pipeline.id`: Filter to include only events for the specified pipeline.
- * `run.state`: Filter events based on the new state of the run.
+ * `PipelineId`: Filter to include only events for the specified pipeline.
+ * `runState`: Filter events based on the new state of the run.
    * Valid values: 
       * `InProgress` 
       * `Canceling` 
@@ -1331,9 +1331,9 @@ Event: A new stage started, or a stage transitioned to canceling, canceled, fail
 
 #### Settings
 
- * `pipeline.id`: Filter to include only events for the specified pipeline.
- * `stage.name`: Filter to include only events that have a specific stage name.
- * `stage.state`: Filter to include only events that have a stage in a specific new state.
+ * `PipelineId`: Filter to include only events for the specified pipeline.
+ * `stageName`: Filter to include only events that have a specific stage name.
+ * `stageState`: Filter to include only events that have a stage in a specific new state.
    * Valid values: 
       * `NotStarted` 
       * `Waiting` 
@@ -1446,7 +1446,7 @@ Event: An approval is created for a run stage.
 
 #### Settings
 
- * `id`: Filter to include only events for the pipeline with the specified ID.
+ * `PipelineId`: Filter to include only events for the pipeline with the specified ID.
  * `stageName`: Filter to include only events with a specific stage name.
  * `environmentName`: Filter to include only events triggered by approvals for deployments to a specified environment.
  
@@ -1532,7 +1532,7 @@ Event: An approval completed for a run stage.
 
 #### Settings
 
- * `id`: Filter to include only events for the pipeline with the specified ID.
+ * `PipelineId`: Filter to include only events for the pipeline with the specified ID.
  * `stageName`: Filter events to a specific stage name.
  * `environmentName`: Filter events to approvals for deployments to a specified environment.
  
@@ -1618,15 +1618,15 @@ Event: A new job is running, or it completed, or is waiting for an agent.
 
 #### Settings
 
- * `pipeline.id`: Filter to include only events for the specified pipeline.
- * `stage.name`: Filter to include only events with a specific stage name.
- * `job.name`: Filter to include only events with a specific job name.
- * `job.state`: Filter to include only events with a job in a specified state.
+ * `pipelineId`: Filter to include only events for the specified pipeline.
+ * `stageName`: Filter to include only events with a specific stage name.
+ * `jobName`: Filter to include only events with a specific job name.
+ * `jobState`: Filter to include only events with a job in a specified state.
    * Valid values: 
       * `Waiting` 
       * `Running`
       * `Completed`
- * `job.result`: Filter to include only events with a job that has a specified result.
+ * `jobResult`: Filter to include only events with a job that has a specified result.
    * Valid values:
       * `Succeeded`
       * `Skipped`
@@ -1856,7 +1856,7 @@ Event: Code is pushed to a Git repository.
 
 #### Settings
 
- * `defaultBranch`: Filter events to include only the branch that code is pushed into.
+ * `branch`: Filter events to include only the branch that code is pushed into.
  * `pushedBy`: Filter events to include only the group that has the pusher as its member.
  * `repository`: Filter events to include only the repository that code is pushed to.
    * Data type: `guid`
@@ -1956,9 +1956,9 @@ Event: A pull request is created in a Git repository.
 
  * `repository`: Filter events to include only the repository that code is pushed to.
    * Data type: `guid`
- * `createdBy`: Filter events to include only the group that has the requester as a member.
- * `reviewers`: Filter events to include only the group included in the list of reviewers.
- * `defaultBranch`: Filter events to include only the target branch of the pull request.
+ * `pullrequestCreatedBy`: Filter events to include only the group that has the requester as a member.
+ * `pullrequestReviewersContains`: Filter events to include only the group included in the list of reviewers.
+ * `branch`: Filter events to include only the target branch of the pull request.
 
 #### Sample payload
 
@@ -2064,10 +2064,9 @@ Event: A pull request merge is attempted in a Git repository.
 
  * `repository`: Filter events to include only the repository that code is pushed to.
    * Data type: `guid`
- * `createdBy`: Filter events to include only the group that has the requester as a member.
- * `reviewers`: Filter events to include only the group included in the list of reviewers.
- * `defaultBranch`: Filter events to include only the target branch of the pull request.
-
+ * `pullrequestCreatedBy`: Filter events to include only the group that has the requester as a member.
+ * `pullrequestReviewersContains`: Filter events to include only the group included in the list of reviewers.
+ * `branch`: Filter events to include only the target branch of the pull request.
 
 #### Sample payload
 
@@ -2179,9 +2178,9 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
       * `ReviewerVoteNotification` - Votes score changed
  * `repository`: Filter events to include only the repository that code is pushed to.
    * Data type: `guid`
- * `createdBy`: Filter events to include only the group that has the requester as a member.
- * `reviewers`: Filter events to include only the group included in the list of reviewers.
- * `defaultBranch`: Filter events to include only the target branch of the pull request.
+ * `pullrequestCreatedBy`: Filter events to include only the group that has the requester as a member.
+ * `pullrequestReviewersContains`: Filter events to include only the group included in the list of reviewers.
+ * `branch`: Filter events to include only the target branch of the pull request.
 
 #### Sample payload
 
@@ -2294,7 +2293,7 @@ Event: A pull request is commented on.
 
  * `repository`: Filter events to include only the repository that pull request is commented on.
    * Data type: `guid`
- * `defaultBranch`: Filter events to include only the target branch of the pull request.
+ * `branch`: Filter events to include only the target branch of the pull request.
 
 #### Sample payload
 
@@ -2440,8 +2439,8 @@ Event: A new repository is created.
 
 #### Settings
 
-* `repository.project`: Filter events to include only repositories created within the specified project.
-* `repository.name`: Filter events to include only repositories with the specified name pattern.
+* `project`: Filter events to include only repositories created within the specified project.
+* `repositoryName`: Filter events to include only repositories with the specified name pattern.
 
 #### Sample payload
 
@@ -2474,8 +2473,8 @@ Event: A repository is deleted.
 
 #### Settings
 
-* `repository.project`: Filter events to include only repositories deleted within the specified project.
-* `repository.name`: Filter events to include only repositories with the specified name pattern.
+* `project`: Filter events to include only repositories deleted within the specified project.
+* `repositoryName`: Filter events to include only repositories with the specified name pattern.
 
 #### Sample payload
 
@@ -2509,8 +2508,8 @@ Event: A repository is forked.
 #### Settings
 
 * `project`: Filter events to include only repositories forked within the specified project.
-* `sourceRepository.name`: Filter events to include only forks of repositories with the specified source repository name pattern.
-* `targetRepository.name`: Filter events to include only repositories with the specified forked repository name pattern.
+* `sourceRepositoryName`: Filter events to include only forks of repositories with the specified source repository name pattern.
+* `forkedRepositoryName`: Filter events to include only repositories with the specified forked repository name pattern.
 
 #### Sample payload
 
@@ -2549,8 +2548,8 @@ Filter events to include only renamed repositories.
 #### Settings
 
 * `project`: Filter events to include only repositories renamed within the specified project.
-* `repository.oldName`: Filter events to include only repositories with the specified old name pattern.
-* `repository.newName`: Filter events to include only repositories with the specified new name pattern.
+* `oldRepositoryName`: Filter events to include only repositories with the specified old name pattern.
+* `newRepositoryName`: Filter events to include only repositories with the specified new name pattern.
 
 #### Sample payload
 
@@ -2585,7 +2584,7 @@ Event: A repository status is changed.
 #### Settings
 
 * `project`: Filter events to include only repositories within the specified project.
-* `repository.name`: Filter events to include only repositories with the specified name pattern.
+* `repositoryName`: Filter events to include only repositories with the specified name pattern.
 * `oldStatus`: Filter events to include only repositories with the specified old status.
 * `newStatus`: Filter events to include only repositories with the specified new status.
 
@@ -2627,7 +2626,7 @@ Event: A new service connection is created.
 #### Settings
 
 * `project`: Filter events to include only service connections created within the specified project.
-* `serviceEndpoint.type`: Filter events to include only service connections of the specified type.
+* `serviceConnectionType`: Filter events to include only service connections of the specified type.
 
 #### Sample payload
 
@@ -2662,7 +2661,7 @@ Event: A service connection is updated.
 #### Settings
 
 * `project`: Filter events to include only service connections updated within the specified project.
-* `serviceEndpoint.type`: Filter events to include only service connections of the specified type.
+* `serviceConnectionType`: Filter events to include only service connections of the specified type.
 
 #### Sample payload
 
@@ -2702,8 +2701,8 @@ Event: A new work item is created.
 
 #### Settings
 
- * `System.AreaPath`: Filter events to include only work items under the specified area path.
- * `System.WorkItemType`: Filter events to include only work items of the specified type.
+ * `areaPath`: Filter events to include only work items under the specified area path.
+ * `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2788,8 +2787,8 @@ Event: A work item is deleted.
 
 #### Settings
 
- * `System.AreaPath`: Filter events to include only work items under the specified area path.
- * `System.WorkItemType`: Filter events to include only work items of the specified type.
+ * `areaPath`: Filter events to include only work items under the specified area path.
+ * `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2868,8 +2867,8 @@ Event: A work item is newly restored.
 
 #### Settings
 
- * `System.AreaPath`: Filter events to include only work items under the specified area path.
- * `System.WorkItemType`: Filter events to include only work items of the specified type.
+ * `areaPath`: Filter events to include only work items under the specified area path.
+ * `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2960,9 +2959,9 @@ Event: A work item is changed.
 
 #### Settings
 
- * `System.AreaPath`: Filter events to include only work items under the specified area path.
+ * `areaPath`: Filter events to include only work items under the specified area path.
  * `changedFields`: Filter events to include only work items with the specified field changed.
- * `System.WorkItemType`: Filter events to include only work items of the specified type.
+ * `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -3083,9 +3082,9 @@ Event: A work item is commented on.
 
 #### Settings
 
- * `System.AreaPath`: Filter events to include only work items under the specified area path.
+ * `areaPath`: Filter events to include only work items under the specified area path.
  * `commentPattern`: The string that must be found in the comment.
- * `System.WorkItemType`: Filter events to include only work items of the specified type.
+ * `WorkItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
