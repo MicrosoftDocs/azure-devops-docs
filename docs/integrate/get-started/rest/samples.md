@@ -9,7 +9,7 @@ ms.custom: devx-track-dotnet
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 06/10/2025
+ms.date: 06/12/2025
 ---
 
 # REST API samples for Azure DevOps
@@ -33,7 +33,7 @@ Authenticate with Azure DevOps when using the REST APIs or .NET Libraries by fol
   1. Convert your PAT to a Base64-encoded string in the format `username:PAT` (the username can be empty).
   2. Add the encoded string to the `Authorization` HTTP header.
 
-   **Example using Basic Authentication with curl:**
+  **Example using Basic Authentication with curl:**
 
    ```bash
    curl -u :{yourPAT} https://dev.azure.com/{organization}/_apis/projects?api-version=7.2-preview.1
