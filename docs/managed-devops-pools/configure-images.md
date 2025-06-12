@@ -1,17 +1,17 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 05/21/2025
+ms.date: 06/12/2025
 ---
 
 # Configure Managed DevOps Pools images
 
 Managed DevOps Pools provides you with several options for virtual machine images for running pipelines in your pool. You can create your pool using selected Azure Marketplace VM images, use your own custom Azure Compute Gallery images, or use the same images as Azure Pipelines Microsoft-hosted agents.
 
-Managed DevOps Pools can be configured with a single image or multiple images. When your pool has multiple images, your pipelines should specify the image they want to run on using [aliases](#use-multiple-images-per-pool-with-aliases).
-
 > [!IMPORTANT]
-> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
+> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)] 
+
+Managed DevOps Pools can be configured with a single image or multiple images. When your pool has multiple images, your pipelines should specify the image they want to run on using [aliases](#use-multiple-images-per-pool-with-aliases).
 
 ## Choose your pool's image
 
@@ -175,7 +175,7 @@ The following example defines three images. Standby agents are enabled, with 100
 If you choose a single image, all pipelines run in your pool using that image. If you choose multiple images, you can specify the image to use on a per-pipeline basis. For more information, see [Use multiple images per pool](#use-multiple-images-per-pool-with-aliases).
 
 > [!IMPORTANT]
-> If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?&tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
+> If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?tabs=arm#choose-your-pools-image)), or by ordering the [images in the images list](./configure-pool-settings.md#images) in the Azure portal using drag and drop.
 
 You can choose from the following types of images.
 
@@ -186,6 +186,10 @@ You can choose from the following types of images.
 ## Azure Pipelines images
 
 Managed DevOps Pools provides several preconfigured images that have the same software as selected Microsoft-hosted agents for Azure Pipelines.
+
+The lifecycle of Azure Pipelines images offered in Managed DevOps Pools follows the lifecycle of the [Microsoft-hosted agent images](../pipelines/agents/hosted.md#software). If an image in Microsoft-hosted agents is deprecated, the corresponding Managed DevOps Pools is also deprecated on a similar timeframe. The version of images available in Microsoft-hosted agents might be slightly different from the version of images available in Managed DevOps Pools for the same image type.
+
+For more information on Managed DevOps Pools images lifecycle, see [Image lifecycle](#image-lifecycle).
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -234,7 +238,7 @@ Each image includes the following installed software.
 | Azure Pipelines - Ubuntu 20.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2004-Readme.md) |
 
 > [!IMPORTANT]
-> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
+> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)] 
 
 ## Selected marketplace images
 
@@ -271,9 +275,6 @@ To specify selected marketplace image, provide the resource ID of the image usin
 ```
 
 * * *
-
-> [!IMPORTANT]
-> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
 
 ## Azure Compute Gallery images
 
@@ -435,6 +436,36 @@ pool:
   demands:
   - ImageOverride -equals windows-2022
 ```
+
+## Image lifecycle
+
+Managed DevOps Pools agent images are retired when the image's operating system reaches the end of its support lifecycle, and images based on older versions of operating systems can be retired when images based on new versions of the operating systems are released.
+
+* [Azure Pipelines images](#azure-pipelines-images) offers the same images and follows a similar deprecation schedule as [Microsoft-hosted agents](../pipelines/agents/hosted.md#software).
+* [Selected marketplace images](#selected-marketplace-images) are typically retired when the image's operating system reaches the end of its support lifecycle.
+
+### Image deprecation schedule
+
+* [Azure Pipelines - Windows Server 2019 image deprecation schedule](#azure-pipelines---windows-server-2019-image-deprecation-schedule)
+* [Ubuntu 20.04 image deprecation schedule](#ubuntu-2004-image-deprecation-schedule)
+
+#### Azure Pipelines - Windows Server 2019 image deprecation schedule
+
+Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019** image.
+
+* Creation of new pools using **Azure Pipelines – Windows Server 2019** will be disabled starting July 1, 2025, but existing pools on these images will continue to run until August 30, 2025. 
+* On September 1, 2025, use of **Azure Pipelines – Windows Server 2019** image will be disabled. Agents using this image won't provision and pipelines won't run.  
+
+To keep your Managed DevOps Pools running if you use the **Azure Pipelines – Windows Server 2019** image, update to the **Azure Pipelines - Windows Server 2022** image. Alternatively, you can use the Windows Server 2019 image from [Selected marketplace images](./configure-images.md#selected-marketplace-images) or your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. Note that the marketplace image does not include the pre-installed software found in the Azure Pipelines image.
+
+#### Ubuntu 20.04 image deprecation schedule
+
+[Ubuntu 20.04 LTS Standard Support is coming to an end May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare), and Managed DevOps Pools is removing the Ubuntu 20.04 images from [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Pipelines images](./configure-images.md#azure-pipelines-images).
+
+  * Creation of new pools using Ubuntu 20.04 Selected marketplace images or Azure Pipelines images will be disabled starting June 1, 2025, but existing pools on these images will continue to run until July 1, 2025.
+  * On July 1, 2025, Pools using Ubuntu 20.04 Selected marketplace images or Azure Pipelines images will be disabled. Agents using these images won't provision and pipelines won't run.
+
+To keep your Managed DevOps Pools that currently use Ubuntu 20.04 running, update your Ubuntu 20.04 images to Ubuntu 22.04 or 24.04 (recommended). For more information, see [Choose your pool's image](./configure-images.md#choose-your-pools-image). If you have [multiple images](./configure-images.md#use-multiple-images-per-pool-with-aliases) in your pool, [update your aliases](./configure-images.md#configure-image-aliases) for your Ubuntu images so that your pipelines that require Ubuntu will run using the desired image.
 
 ## See also
 
