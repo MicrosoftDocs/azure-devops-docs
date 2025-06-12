@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 05/15/2025
+ms.date: 06/04/2025
 ---
 
 # Configure Managed DevOps Pools networking
@@ -92,7 +92,7 @@ Once the network update completes, newly created resource in the pool will use t
 
 #### [ARM template](#tab/arm/)
 
-If you are using ARM templates, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet. 
+If you're using ARM templates, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet. 
 
 ```json
 {
@@ -142,30 +142,27 @@ The following example shows the `networkProfile` section of the **fabric-profile
 
 ## Restricting outbound connectivity
 
-If you have systems in place on your network (NSG, Firewall etc.) which restrict outbound connectivity, you need to ensure that the following domains can be accessed, otherwise your Managed DevOps Pool will not be functional.
-All of them are HTTPS, unless otherwise stated.
+If you have systems in place on your network (NSG, Firewall, etc.) that restrict outbound connectivity, certain endpoints need to be allowlisted in order to fully support Managed DevOps pools. These endpoints are divided into globally required endpoints (necessary on any Managed DevOps pools machine) and endpoints required for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
 
-* Highly secure endpoints that our service depends on:
-  *  `*.prod.manageddevops.microsoft.com` - Managed DevOps Pools endpoint
-  *  `rmprodbuilds.azureedge.net` - Worker binaries
-  *  `vstsagentpackage.azureedge.net` and `https://download.agent.dev.azure.com` - Azure DevOps agent CDN location
-  *  `*.queue.core.windows.net` - Worker queue for communicating with Managed DevOps Pools service
-  *  `server.pipe.aria.microsoft.com` - Common client side telemetry solution
-  *  `azure.archive.ubuntu.com` - Provisioning Linux machines - this is HTTP (port 80), not HTTPS (port 443)
-  *  `www.microsoft.com` - Provisioning Linux machines
-  *  `security.ubuntu.com` - Provisioning Linux machines
-* Less secure, more open endpoints that our service depends on:
-   * Needed by our service:
-     * `packages.microsoft.com` - Provisioning Linux machines
-     * `ppa.launchpad.net` - Provisioning Ubuntu machines
-     * `dl.fedoraproject.org` - Provisioning certain Linux distros
-   * Needed by Azure DevOps agent:
-     * `dev.azure.com`
-     * `*.services.visualstudio.com`
-     * `*.vsblob.visualstudio.com`
-     * `*.vssps.visualstudio.com`
-     * `*.visualstudio.com`
-     These entries are the minimum domains required. If you have any issues, see [Azure DevOps allowlist](/azure/devops/organizations/security/allow-list-ip-url) for the full list of domains required.
+* Required Endpoints for Managed DevOps Pool startup - Without allowlisting these endpoints, machines will fail to come online as part of our service, and you will not be able to run pipelines on the Managed DevOps Pool
+   * `*.prod.manageddevops.microsoft.com` - Managed DevOps Pools endpoint, used to communicate with the Managed DevOps Pools service.
+   * `rmprodbuilds.azureedge.net` - Used to download the Managed DevOps Pools worker binaries and startup scripts. (The agent portion of the worker binaries is downloaded from `rm-agent.prod.manageddevops.microsoft.com` (formerly downloaded from `agent.prod.manageddevops.microsoft.com`) which is covered by the previous required `*.prod.manageddevops.microsoft.com` entry.)
+   * `*.queue.core.windows.net` - Worker queue for communicating with Managed DevOps Pools service.
+* Required Endpoints for connecting to Azure DevOps - without allowlisting these endpoints, machines may come online and even go to an "allocated" state, but will fail to communicate with ADO as either the VSTS task agent can't connect, or it can't start.
+   * `vstsagentpackage.azureedge.net` and `download.agent.dev.azure.com` - Azure DevOps agent CDN location, used to download Azure DevOps agent
+   * `dev.azure.com` - Required to handle communication with Azure DevOps
+   *  Preparing Linux machines - these endpoints are required to spin up Ubuntu machines, but are not necessary if a pool is only using Windows. As part of setting up the Azure DevOps Task agent, a few required packages are added and an apt-get is run, which will fail without these being allowlisted.
+      * `azure.archive.ubuntu.com` - Provisioning Linux machines - this is HTTP (port 80), not HTTPS (port 443)
+      * `www.microsoft.com` - Provisioning Linux machines
+      * `security.ubuntu.com` - Provisioning Linux machines
+      * `packages.microsoft.com` - Provisioning Linux machines
+      * `ppa.launchpad.net` - Provisioning some specific Linux distros
+      * `dl.fedoraproject.org` - Provisioning certain Linux distros
+* Optional, but required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization hosting your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`. These entries are the minimum domains required. If you have any issues, see [Azure DevOps allowlist](/azure/devops/organizations/security/allow-list-ip-url) for the full list of domains required.
+   * `*.services.visualstudio.com`
+   * `*.vsblob.visualstudio.com` - Used for Artifacts, both uploading and consuming
+   * `*.vssps.visualstudio.com` - Used for authentication with Azure DevOps for certain features
+   * `*.visualstudio.com`
 * Azure related endpoints:
     Azure VMs may route traffic to certain Azure features through your subnet. For these requests, you have the option of routing requests through Azure directly, or enabling access through your network.
     1. [Configuring Azure traffic to run through Service Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview)
@@ -193,7 +190,7 @@ If you configured a proxy service on your image and want your workloads running 
 
 For Windows, these environment variables should be system environment variables, and for Linux these variables should be in the **/etc/environment** file. Setting these system variables incorrectly or without a configured proxy service on the image causes provisioning of new agents to fail with network connectivity issues.
 
-If you are migrating from Azure Virtual Machine Scale Set agents and are already using the proxy environment variables on your image, as described in [Azure Virtual Machine Scale Set agents- Customizing Pipeline Agent Configuration](/azure/devops/pipelines/agents/scale-set-agents#customizing-pipeline-agent-configuration), no changes should be required.
+If you're migrating from Azure Virtual Machine Scale Set agents and are already using the proxy environment variables on your image, as described in [Azure Virtual Machine Scale Set agents- Customizing Pipeline Agent Configuration](/azure/devops/pipelines/agents/scale-set-agents#customizing-pipeline-agent-configuration), no changes should be required.
 
 ## See also
 

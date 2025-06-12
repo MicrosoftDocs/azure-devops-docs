@@ -245,12 +245,16 @@ These investments include:
       </tr>
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a>
+            <a href="/azure/devops/release-notes/2025/sprint-256-update#github-integration-pull-request-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/2025/sprint-256-update#github-integration-pull-request-mentions)">! mentions support for GitHub pull requests</a>
          </td>
          <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q2</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado)">MCP Server for Azure DevOps</a></td>
+         <td>General</td>
          <td>2025 Q2</td>
-      </tr>       
-      
+      </tr>         
       <tr>
          <td><a href="/azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
@@ -486,7 +490,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="28"><strong>2025 Q2</strong></td>
+      <td rowspan="29"><strong>2025 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -523,7 +527,7 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>      
       <tr>
          <td>
-            <a href="/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/roadmap/2024/boards-gh-pr-mentions)">! mentions support for GitHub pull requests</a></td>
+            <a href="/azure/devops/release-notes/2025/sprint-256-update#github-integration-pull-request-mentions" data-raw-source="[! mentions support](/azure/devops/release-notes/2025/sprint-256-update#github-integration-pull-request-mentions)">! mentions support for GitHub pull requests</a></td>
          <td>Boards</td>
       </tr>    
       <tr>          
@@ -535,11 +539,17 @@ Below, you will find several investments that we plan to deliver as part of this
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Report YAML stage status in deployment control on work items](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Report YAML stage status in deployment control on work items</a>
          </td>
          <td>Boards</td>         
-      </tr>      
+      </tr>        
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards & Pipelines</td>
       </tr>
+      <tr> 
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado)">MCP Server for Azure DevOps
+         </td>
+         <td>General</td>
+      </tr>  
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>

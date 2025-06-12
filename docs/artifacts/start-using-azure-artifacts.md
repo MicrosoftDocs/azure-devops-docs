@@ -7,12 +7,12 @@ ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 01/09/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # What is Azure Artifacts?
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts provides developers with a streamlined way to manage all their dependencies from a single feed. These feeds serve as repositories for storing, managing, and sharing packages, whether within your team, across organizations, or publicly online.
 

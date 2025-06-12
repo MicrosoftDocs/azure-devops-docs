@@ -335,6 +335,9 @@
         - name: Troubleshoot Azure Resource Manager service connections
           displayName: service connection, service principal, Azure resource manager, azure
           href: release/azure-rm-endpoint.md
+        - name: Use scripts to automate Azure Resource Manager service connections
+          displayName: service connection, service principal, Azure resource manager, azure
+          href: release/automate-service-connections.md
       - name: Azure App Service (Web Apps)
         items:
         - name: Deploy to App Service using Azure Pipelines
@@ -441,9 +444,9 @@
       - name: Azure Policy Compliance (Classic)
         displayName: policy, compliance
         href: /azure/governance/policy/tutorials/policy-devops-pipelines
-      - name: Create & use deployment groups (Classic)
+      - name: Deployment groups (Classic)
         items:
-        - name: Provision deployment groups
+        - name: Use deployment groups in Classic releases
           href: release/deployment-groups/index.md
         - name: Provision agents for deployment groups
           href: release/deployment-groups/howto-provision-deployment-group-agents.md

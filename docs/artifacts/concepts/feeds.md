@@ -6,12 +6,12 @@ ms.custom: peer-review-program
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 06/03/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # What are Azure Artifacts feeds?
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts feeds are organizational constructs that allow you to store, manage, and share your packages while controlling access. Feeds are not limited to specific package types; you can store various types, such as npm, NuGet, Maven, and Python packages, in a single feed.
 

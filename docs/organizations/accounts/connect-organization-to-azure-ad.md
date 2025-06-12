@@ -71,7 +71,7 @@ To connect your organization to Microsoft Entra ID, do the following steps:
 
 ## Related articles
 
-* [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
+* [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 * [Disconnect from Microsoft Entra ID](disconnect-organization-from-azure-ad.md)
 * [Change Microsoft Entra connection](change-azure-ad-connection.md)
