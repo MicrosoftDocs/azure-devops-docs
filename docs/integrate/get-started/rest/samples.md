@@ -81,7 +81,7 @@ using (var client = new HttpClient())
 -u username:PAT https://dev.azure.com/{organization}/_apis/projects?api-version=6.0
 ```
 
-## POST request samples
+## POST request sample
 
 The following curl request creates a new work item of the "Task" type in a specified project:
 
@@ -91,7 +91,7 @@ The following curl request creates a new work item of the "Task" type in a speci
 https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/$Task?api-version=6.0
 ```
 
-## PUT request samples
+## PUT request sample
 
 The following curl request updates an existing work item by changing its state to "In Progress":
 
@@ -101,7 +101,7 @@ The following curl request updates an existing work item by changing its state t
 https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}?api-version=6.0
 ```
 
-## DELETE request samples
+## DELETE request sample
 
 The following curl request deletes an existing work item from a specified project:
 
@@ -135,8 +135,6 @@ using (ProjectHttpClient projectHttpClient = new ProjectHttpClient(uri, credenti
 }
 
 ```
-
-## Error handling
 
 ## FAQs
 
