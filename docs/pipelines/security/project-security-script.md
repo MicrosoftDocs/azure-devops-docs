@@ -27,7 +27,6 @@ It's possible to automate these security settings using the Azure DevOps REST AP
 | Setting                                             | Recommended Value | Rationale                                                                                   |
 |-----------------------------------------------------|-------------------|---------------------------------------------------------------------------------------------|
 | `enforceReferencedRepoScopedToken`                    | True              | Ensures only scoped tokens are used for referenced repos, limiting access scope.           |
-| `disableClassicPipelineCreation`                      | True              | Prevents creation of legacy pipelines; encourages use of secure, version-controlled YAML.  |
 | `disableClassicBuildPipelineCreation`                 | True              | Disables classic build pipelines which lack modern security and auditing features.         |
 | `disableClassicReleasePipelineCreation`               | True              | Disables classic release pipelines in favor of YAML-based alternatives.                    |
 | `forkProtectionEnabled`                               | True              | Enables protections for builds triggered from forks to prevent secret leakage.             |
@@ -154,7 +153,6 @@ Your output for each project will look like this.
 Updating project: my-project
 
 enforceReferencedRepoScopedToken                  : True
-disableClassicPipelineCreation                    : False
 disableClassicBuildPipelineCreation               : True
 disableClassicReleasePipelineCreation             : True
 forkProtectionEnabled                             : True
