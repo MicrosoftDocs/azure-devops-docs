@@ -82,6 +82,15 @@ The following types of events are available for use in service hooks. For a list
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
 
+::: moniker range="=azure-devops"
+
+* **Advanced security**
+  * [Advanced security alert created](#advanced-security-alert-created)
+  * [Advanced security alert state changed](#advanced-security-alert-state-changed)
+  * [Advanced security alert updated](#advanced-security-alert-updated)
+
+::: moniker-end
+
 > [!NOTE]
 > The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving webhooks from Azure DevOps.
 
@@ -95,7 +104,7 @@ The following build and release events are available for use in service hooks.
 
 Event: A build completes.
 
-* Publisher ID: `azure-devops`
+* Publisher ID: `tfs`
 * Event ID: `build.complete`
 * Resource name: `build`
 
@@ -540,7 +549,7 @@ Event: A deployment approval is completed.
       * `4` - Rejected
  * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type.
    * Valid values: 
-      * `1` - Predeploy
+      * `1` - Predeployment
       * `2` - Post-deployment
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment.
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition.
@@ -616,7 +625,7 @@ Event: A deployment approval is requested.
 
  * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type.
    * Valid values: 
-      * `1` - Predeploy
+      * `1` - Predeployment
       * `2` - Post-deployment
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment.
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline.
@@ -1081,73 +1090,106 @@ The following pipeline events are available for use in service hooks.
 
 Event: A check is updated.
 
-* Publisher ID: `azure-devops`
-* Event ID: `check.updated`
+* Publisher ID: `pipelines`
+* Event ID: `ms.vss-pipelinechecks-events.check-updated-event`
 * Resource name: `check`
 
 #### Settings
 
-* `project`: Filter events to include only checks updated within the specified project.
-* `checkType`: Filter events to include only checks of the specified type.
-* `status`: Filter events to include only checks with the specified status.
+* `resourceType`: Filter events to include only checks updated for a specified resource type.
 
 #### Sample payload
 
 ```json
 {
-  "publisherId": "azure-devops",
-  "eventId": "check.updated",
-  "resource": {
-    "check": {
-      "id": "00000000-0000-0000-0000-000000000000check-id",
-      "type": "check-type",
-      "status": "check-status",
-      "project": {
-        "id": "00000000-0000-0000-0000-000000000000project-id",
-        "name": "project-name"
-      }
-    }
-  },
-  "updatedDate": "2024-07-17T21:34:22.338Z"
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "ms.vss-pipelinechecks-events.check-updated-event",
+    "publisherId": "pipelines",
+    "message": {
+        "text": "Check with configuration ID 1 updated for resource queue:1",
+        "html": "Check with configuration ID 1 updated for resource queue:1",
+        "markdown": "Check with configuration ID 1 updated for resource queue:1"
+    },
+    "detailedMessage": {
+        "text": "Check with configuration ID 1 updated for resource queue:1",
+        "html": "Check with configuration ID 1 updated for resource queue:1",
+        "markdown": "Check with configuration ID 1 updated for resource queue:1"
+    },
+    "resource": {
+        "resource": {
+            "type": "queue",
+            "id": "1"
+        },
+        "checkConfigurationId": 1,
+        "projectId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+    },
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+        }
+    },
+    "createdDate": "2025-06-12T18:52:30.863Z"
 }
 ```
 
 <a name="elastic-agent-pool-resized"></a>
 
 ### Elastic agent pool resized
-
+inconsistent
 Event: An elastic agent pool is resized.
 
-* Publisher ID: `azure-devops`
+* Publisher ID: `distributedtask`
 * Event ID: `elasticagentpool.resized`
 * Resource name: `elasticagentpool`
 
 #### Settings
 
-* `project`: Filter events to include only elastic agent pools resized within the specified project.
-* `poolName`: Filter events to include only elastic agent pools with the specified name pattern.
-* `oldSize`: Filter events to include only elastic agent pools with the specified old size.
-* `newSize`: Filter events to include only elastic agent pools with the specified new size.
+* `poolId`: Filter events to include only the elastic agent pool with the specified ID.
 
 #### Sample payload
 
 ```json
 {
-  "publisherId": "azure-devops",
-  "eventId": "elasticagentpool.resized",
-  "resource": {
-    "elasticAgentPool": {
-      "id": "00000000-0000-0000-0000-000000000000pool-id",
-      "name": "pool-name",
-      "oldSize": "old-size",
-      "newSize": "new-size",
-      "project": {
-        "id": "00000000-0000-0000-0000-000000000000project-id",
-        "name": "project-name"
-      }
-    }
-  },
-  "resizedDate": "2024-07-17T21:34:22.338Z"
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "elasticagentpool.resized",
+    "publisherId": "distributedtask",
+    "message": {
+        "text": "\"Resizing pool Sample pool from 1 to 5 VMs.",
+        "html": "\"Resizing pool Sample pool from 1 to 5 VMs.",
+        "markdown": "\"Resizing pool Sample pool from 1 to 5 VMs."
+    },
+    "detailedMessage": {
+        "text": "\"Resizing pool Sample pool from 1 to 5 VMs.",
+        "html": "\"Resizing pool Sample pool from 1 to 5 VMs.",
+        "markdown": "\"Resizing pool Sample pool from 1 to 5 VMs."
+    },
+    "resource": {
+        "poolId": 1,
+        "poolName": "Sample pool",
+        "resourceId": "VM Scale Set Id",
+        "previousSize": 1,
+        "newSize": 5
+    },
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+        }
+    },
+    "createdDate": "2025-06-12T19:13:58.458Z"
 }
 ```
 
@@ -1194,32 +1236,49 @@ Event: A manual intervention is pending.
 
 Event: A project-level agent pool is created.
 
-* Publisher ID: `azure-devops`
-* Event ID: `projectlevelagentpool.created`
+* Publisher ID: `distributedtask`
+* Event ID: `agentqueue.created`
 * Resource name: `projectlevelagentpool`
 
 #### Settings
 
 * `project`: Filter events to include only project-level agent pools created within the specified project.
-* `poolName`: Filter events to include only project-level agent pools with the specified name pattern.
 
 #### Sample payload
 
 ```json
 {
-  "publisherId": "azure-devops",
-  "eventId": "projectlevelagentpool.created",
-  "resource": {
-    "projectLevelAgentPool": {
-      "id": "00000000-0000-0000-0000-000000000000pool-id",
-      "name": "pool-name",
-      "project": {
-        "id": "00000000-0000-0000-0000-000000000000project-id",
-        "name": "project-name"
-      }
-    }
-  },
-  "createdDate": "2024-07-17T21:34:22.338Z"
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "agentqueue.created",
+    "publisherId": "distributedtask",
+    "message": {
+        "text": "Creating project-level agent pool Sample pool with id 1.",
+        "html": "Creating project-level agent pool Sample pool with id 1.",
+        "markdown": "Creating project-level agent pool Sample pool with id 1."
+    },
+    "detailedMessage": {
+        "text": "Creating project-level agent pool Sample pool with id 1.",
+        "html": "Creating project-level agent pool Sample pool with id 1.",
+        "markdown": "Creating project-level agent pool Sample pool with id 1."
+    },
+    "resource": {
+        "queueId": 1,
+        "queueName": "Sample pool",
+        "projectId": "00000000-0000-0000-0000-000000000000"
+    },
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+        }
+    },
+    "createdDate": "2025-06-12T19:25:19.515Z"
 }
 ```
 
@@ -1229,32 +1288,49 @@ Event: A project-level agent pool is created.
 
 Event: A project-level agent pool is updated.
 
-* Publisher ID: `azure-devops`
-* Event ID: `projectlevelagentpool.updated`
+* Publisher ID: `distributedtask`
+* Event ID: `agentqueue.updated`
 * Resource name: `projectlevelagentpool`
 
 #### Settings
 
-* `project`: Filter events to include only project-level agent pools updated within the specified project.
-* `poolName`: Filter events to include only project-level agent pools with the specified name pattern.
+* `queueId`: Filter events to include only project-level agent pools with the specified ID.
 
 #### Sample payload
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "projectlevelagentpool.updated",
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "agentqueue.updated",
+    "publisherId": "distributedtask",
+    "message": {
+        "text": "Updating project-level agent pool Sample pool with id 1.",
+        "html": "Updating project-level agent pool Sample pool with id 1.",
+        "markdown": "Updating project-level agent pool Sample pool with id 1."
+    },
+    "detailedMessage": {
+        "text": "Updating project-level agent pool Sample pool with id 1.",
+        "html": "Updating project-level agent pool Sample pool with id 1.",
+        "markdown": "Updating project-level agent pool Sample pool with id 1."
+    },
     "resource": {
-        "projectLevelAgentPool": {
-            "id": "00000000-0000-0000-0000-000000000000pool-id",
-            "name": "pool-name",
-            "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
-            }
+        "queueId": 1,
+        "queueName": "Sample pool",
+        "projectId": "00000000-0000-0000-0000-000000000000"
+    },
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
         }
     },
-    "updatedDate": "2024-07-17T21:34:22.338Z"
+    "createdDate": "2025-06-12T19:30:24.500Z"
 }
 ```
 
@@ -1271,12 +1347,18 @@ Event: Overall statuses of a pipeline run changed. A new run started, or a run t
 * Resource name: `resource`
 
 #### Settings
- * `PipelineId`: Filter to include only events for the specified pipeline.
- * `runState`: Filter events based on the new state of the run.
+
+ * `pipelineId`: Filter to include only events for the specified pipeline.
+ * `runStateId`: Filter events based on the new state of the run.
    * Valid values: 
       * `InProgress` 
       * `Canceling` 
       * `Completed` 
+* `runResultId`: Filter events based on the result of the run.
+   * Valid values: 
+      * `Canceled` 
+      * `Failed` 
+      * `Succeeded`
 
 #### Sample payload
 ```json
@@ -1331,14 +1413,21 @@ Event: A new stage started, or a stage transitioned to canceling, canceled, fail
 
 #### Settings
 
- * `PipelineId`: Filter to include only events for the specified pipeline.
- * `stageName`: Filter to include only events that have a specific stage name.
- * `stageState`: Filter to include only events that have a stage in a specific new state.
+ * `pipelineId`: Filter to include only events for the specified pipeline.
+ * `stageNameId`: Filter to include only events that have a specific stage name.
+ * `stageStateId`: Filter to include only events that have a stage in a specific new state.
    * Valid values: 
       * `NotStarted` 
       * `Waiting` 
       * `Running`
       * `Completed`
+ * `stageResultId`: Filter events based on the result of the stage.
+   * Valid values: 
+      * `Canceled`
+      * `Failed`
+      * `Rejected`
+      * `Skipped`
+      * `Succeeded`
 
 #### Sample payload
 
@@ -1446,7 +1535,7 @@ Event: An approval is created for a run stage.
 
 #### Settings
 
- * `PipelineId`: Filter to include only events for the pipeline with the specified ID.
+ * `pipelineId`: Filter to include only events for the pipeline with the specified ID.
  * `stageName`: Filter to include only events with a specific stage name.
  * `environmentName`: Filter to include only events triggered by approvals for deployments to a specified environment.
  
@@ -1532,7 +1621,7 @@ Event: An approval completed for a run stage.
 
 #### Settings
 
- * `PipelineId`: Filter to include only events for the pipeline with the specified ID.
+ * `pipelineId`: Filter to include only events for the pipeline with the specified ID.
  * `stageName`: Filter events to a specific stage name.
  * `environmentName`: Filter events to approvals for deployments to a specified environment.
  
@@ -1619,14 +1708,14 @@ Event: A new job is running, or it completed, or is waiting for an agent.
 #### Settings
 
  * `pipelineId`: Filter to include only events for the specified pipeline.
- * `stageName`: Filter to include only events with a specific stage name.
- * `jobName`: Filter to include only events with a specific job name.
- * `jobState`: Filter to include only events with a job in a specified state.
+ * `stageNameId`: Filter to include only events with a specific stage name.
+ * `jobNameId`: Filter to include only events with a specific job name.
+ * `jobStateId`: Filter to include only events with a job in a specified state.
    * Valid values: 
       * `Waiting` 
       * `Running`
       * `Completed`
- * `jobResult`: Filter to include only events with a job that has a specified result.
+ * `jobResultId`: Filter to include only events with a job that has a specified result.
    * Valid values:
       * `Succeeded`
       * `Skipped`
@@ -1788,7 +1877,7 @@ The following code events are available for use in service hooks.
 
 Event: A changeset is checked into Team Foundation Version Control (TFVC).
 
-* Publisher ID: `azure-devops`
+* Publisher ID: `tfs`
 * Event ID: `tfvc.checkin`
 * Resource name: `changeset`
 
@@ -1850,7 +1939,7 @@ Event: A changeset is checked into Team Foundation Version Control (TFVC).
 
 Event: Code is pushed to a Git repository.
 
-* Publisher ID: `azure-devops`
+* Publisher ID: `tfs`
 * Event ID: `git.push`
 * Resource name: `push`
 
@@ -1948,7 +2037,7 @@ Event: Code is pushed to a Git repository.
 
 Event: A pull request is created in a Git repository.
 
-* Publisher ID: `azure-devops`
+* Publisher ID: `tfs`
 * Event ID: `git.pullrequest.created`
 * Resource name: `pullrequest`
 
@@ -2056,8 +2145,8 @@ Event: A pull request is created in a Git repository.
 
 Event: A pull request merge is attempted in a Git repository.
 
-* Publisher ID: `azure-devops`
-* Event ID: `git.pullrequest.merge.attempted`
+* Publisher ID: `tfs`
+* Event ID: `git.pullrequest.merged`
 * Resource name: `pullrequest`
 
 #### Settings
@@ -2067,94 +2156,117 @@ Event: A pull request merge is attempted in a Git repository.
  * `pullrequestCreatedBy`: Filter events to include only the group that has the requester as a member.
  * `pullrequestReviewersContains`: Filter events to include only the group included in the list of reviewers.
  * `branch`: Filter events to include only the target branch of the pull request.
+ * `mergeResult`: Filter events based on the result of the pull request merge.
+   * Valid values:
+      * `Succeeded`
+      * `Unsuccessful`
+      * `Conflicts`
+      * `Failure`
+      * `RejectedByPolicy`
 
 #### Sample payload
 
 ```json
 {
-  "id": "00000000-0000-0000-0000-000000000000",
-  "eventType": "git.pullrequest.merge.attempted",
-  "publisherId": "azure-devops",
-  "scope": "all",
-  "message": {
-    "text": "Jamal Hartnett attempted to merge a pull request",
-    "html": "Jamal Hartnett attempted to merge a pull request",
-    "markdown": "Jamal Hartnett attempted to merge a pull request"
-  },
-  "detailedMessage": {
-    "text": "Jamal Hartnett attempted to merge a pull request\r\n\r\n- Merge status: Attempted\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000)\r\n",
-    "html": "Jamal Hartnett created a new pull request\r\n<ul>\r\n- Merge status: Attempted</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000\">eef717</a></br>\r\n</ul>",
-    "markdown": "Jamal Hartnett created a new pull request\r\n\r\n+ Merge status: Attempted\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000)\r\n"
-  },
-  "resource": {
-    "repository": {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "name": "Fabrikam",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000",
-      "project": {
-        "id": "00000000-0000-0000-0000-000000000000abcd-1234-efgh-5678",
-        "name": "Fabrikam",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/00000000-0000-0000-0000-000000000000",
-        "state": "wellFormed"
-      },
-      "defaultBranch": "refs/heads/main",
-      "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "git.pullrequest.merged",
+    "publisherId": "tfs",
+    "message": {
+        "text": "Jamal Hartnett has created a pull request merge commit",
+        "html": "Jamal Hartnett has created a pull request merge commit",
+        "markdown": "Jamal Hartnett has created a pull request merge commit"
     },
-    "pullRequestId": 1,
-    "status": "active",
-    "createdBy": {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "displayName": "Jamal Hartnett",
-      "uniqueName": "fabrikamfiber4@hotmail.com",
-      "url": "https://dev.azure.com/fabrikam/_apis/Identities/00000000-0000-0000-0000-000000000000",
-      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=00000000-0000-0000-0000-000000000000"
+    "detailedMessage": {
+        "text": "Jamal Hartnett has created a pull request merge commit\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
+        "html": "Jamal Hartnett has created a pull request merge commit\r\n<ul>\r\n<li>Merge status: Succeeded</li>\r\n<li>Merge commit: <a href=\"https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></li>\r\n</ul>",
+        "markdown": "Jamal Hartnett has created a pull request merge commit\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
     },
-    "creationDate": "2024-06-17T11:22:33.456789Z",
-    "title": "my first pull request",
-    "description": " - test2\r\n",
-    "sourceRefName": "refs/heads/mytopic",
-    "targetRefName": "refs/heads/main",
-    "mergeStatus": "attempted",
-    "mergeId": "00000000-0000-0000-0000-000000000000",
-    "lastMergeSourceCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
+    "resource": {
+        "repository": {
+            "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
+            "name": "Fabrikam",
+            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
+            "project": {
+                "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+                "name": "Fabrikam",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/projects/00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+                "state": "wellFormed",
+                "visibility": "unchanged",
+                "lastUpdateTime": "0001-01-01T00:00:00"
+            },
+            "defaultBranch": "refs/heads/master",
+            "remoteUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam"
+        },
+        "pullRequestId": 1,
+        "status": "completed",
+        "createdBy": {
+            "displayName": "Jamal Hartnett",
+            "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+            "uniqueName": "fabrikamfiber4@hotmail.com",
+            "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+        },
+        "creationDate": "2014-06-17T16:55:46.589889Z",
+        "closedDate": "2014-06-30T18:59:12.3660573Z",
+        "title": "my first pull request",
+        "description": " - test2\r\n",
+        "sourceRefName": "refs/heads/mytopic",
+        "targetRefName": "refs/heads/master",
+        "mergeStatus": "succeeded",
+        "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
+        "lastMergeSourceCommit": {
+            "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
+            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+        },
+        "lastMergeTargetCommit": {
+            "commitId": "a511f535b1ea495ee0c903badb68fbc83772c882",
+            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
+        },
+        "lastMergeCommit": {
+            "commitId": "eef717f69257a6333f221566c1c987dc94cc0d72",
+            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
+        },
+        "reviewers": [
+            {
+                "reviewerUrl": "https://fabrikam.visualstudio.com/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/pullRequests/1/reviewers/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "vote": 0,
+                "displayName": "[Mobile]\\Mobile Team",
+                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "uniqueName": "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "isContainer": true
+            }
+        ],
+        "commits": [
+            {
+                "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+            }
+        ],
+        "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/pullRequests/1",
+        "_links": {
+            "web": {
+                "href": "https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam/pullrequest/1#view=discussion"
+            },
+            "statuses": {
+                "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/pullRequests/1/statuses"
+            }
+        }
     },
-    "lastMergeTargetCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+        }
     },
-    "lastMergeCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
-    },
-    "reviewers": [
-      {
-        "reviewerUrl": null,
-        "vote": 0,
-        "id": "00000000-0000-0000-0000-000000000000",
-        "displayName": "[Mobile]\\Mobile Team",
-        "uniqueName": "azure-devops:///Classification/TeamProject/00000000-0000-0000-0000-000000000000\\Mobile Team",
-        "url": "https://dev.azure.com/fabrikam/_apis/Identities/00000000-0000-0000-0000-000000000000",
-        "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=00000000-0000-0000-0000-000000000000",
-        "isContainer": true
-      }
-    ],
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/pullRequests/1"
-  },
-  "resourceVersion": "1.0",
-  "resourceContainers": {
-    "collection": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    },
-    "account": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    },
-    "project": {
-      "id": "00000000-0000-0000-0000-000000000000"
-    }
-  },
-  "createdDate": "2024-09-19T13:03:27.2879096Z"
+    "createdDate": "2025-06-12T19:57:30.694Z"
 }
 ```
 
@@ -2164,7 +2276,7 @@ Event: A pull request merge is attempted in a Git repository.
 
 Event: A pull request is updated; status, review list, reviewer vote changed, or the source branch is updated with a push.
 
-* Publisher ID: `azure-devops`
+* Publisher ID: `tfs`
 * Event ID: `git.pullrequest.updated`
 * Resource name: `pullrequest`
 
@@ -2285,7 +2397,7 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
 
 Event: A pull request is commented on.
 
-* Publisher ID: `azure-devops`
+* Publisher ID: `tfs`
 * Event ID: `ms.vss-code.git-pullrequest-comment-event`
 * Resource name: `pullrequest`
 
@@ -2433,33 +2545,73 @@ Event: A pull request is commented on.
 
 Event: A new repository is created.
 
-* Publisher ID: `azure-devops`
-* Event ID: `git.repository.created`
+* Publisher ID: `tfs`
+* Event ID: `git.repo.created`
 * Resource name: `repository`
 
 #### Settings
 
-* `project`: Filter events to include only repositories created within the specified project.
-* `repositoryName`: Filter events to include only repositories with the specified name pattern.
+* `projectId`: Filter events to include only repositories created within the specified project.
+* `subscriberId`: Filter events to include only repositories associated with the specified subscription.
+* `teamId`: Filter events to include only repositories created by the team that the subscription is associated with.
 
 #### Sample payload
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "git.repository.created",
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "git.repo.created",
+    "publisherId": "tfs",
+    "message": {
+        "text": "A new Git repository was created with name Fabrikam-Fiber-Git and ID c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3.",
+        "html": "A new Git repository was created with name <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a> and ID c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3.",
+        "markdown": "A new Git repository was created with name [Fabrikam-Fiber-Git](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/) and ID `c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3`."
+    },
+    "detailedMessage": {
+        "text": "A new Git repository was created with name Fabrikam-Fiber-Git and ID c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3.",
+        "html": "A new Git repository was created with name <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a> and ID c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3.",
+        "markdown": "A new Git repository was created with name [Fabrikam-Fiber-Git](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/) and ID `c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3`."
+    },
     "resource": {
         "repository": {
-            "id": "00000000-0000-0000-0000-000000000000repository-id",
-            "name": "repository-name",
-            "url": "repository-url",
+            "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
+            "name": "Fabrikam-Fiber-Git",
+            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
             "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
-            }
+                "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+                "name": "Fabrikam-Fiber-Git",
+                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+                "state": "wellFormed",
+                "revision": 11,
+                "visibility": "private",
+                "lastUpdateTime": "2025-06-12T20:22:53.7494088+00:00"
+            },
+            "defaultBranch": "refs/heads/master",
+            "size": 728,
+            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git",
+            "sshUrl": "ssh://git@ssh.fabrikam-fiber-inc.visualstudio.com/v3/DefaultCollection/Fabrikam-Fiber-Git",
+            "isDisabled": false
+        },
+        "initiatedBy": {
+            "displayName": "Ivan Yurev",
+            "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+            "uniqueName": "user@fabrikamfiber.com"
+        },
+        "utcTimestamp": "2022-12-12T12:34:56.5498459Z"
+    },
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
         }
     },
-    "createdDate": "2024-07-17T21:34:22.338Z"
+    "createdDate": "2025-06-12T20:22:53.818Z"
 }
 ```
 
@@ -2467,33 +2619,65 @@ Event: A new repository is created.
 
 Event: A repository is deleted.
 
-* Publisher ID: `azure-devops`
-* Event ID: `git.repository.deleted`
+* Publisher ID: `tfs`
+* Event ID: `git.repo.deleted`
 * Resource name: `repository`
 
 #### Settings
 
-* `project`: Filter events to include only repositories deleted within the specified project.
-* `repositoryName`: Filter events to include only repositories with the specified name pattern.
+* `repository`: Filter events to include only repositories with the specified name pattern.
+   * Data type: `guid`
 
 #### Sample payload
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "git.repository.deleted",
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "git.repo.deleted",
+    "publisherId": "tfs",
+    "message": {
+        "text": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was deleted.",
+        "html": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was deleted.",
+        "markdown": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was deleted."
+    },
+    "detailedMessage": {
+        "text": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was deleted.\r\nProject name: Contoso\r\n\r\nRepository name: Fabrikam-Fiber-Git\r\n\r\nRepository can be restored: true\r\n",
+        "html": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was deleted.<p>Project name: Contoso</p><p>Repository name: Fabrikam-Fiber-Git</p><p>Repository can be restored: true</p>",
+        "markdown": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was deleted.\r\nProject name: Contoso\r\n\r\nRepository name: Fabrikam-Fiber-Git\r\n\r\nRepository can be restored: true\r\n"
+    },
     "resource": {
-        "repository": {
-            "id": "00000000-0000-0000-0000-000000000000repository-id",
-            "name": "repository-name",
-            "url": "repository-url",
-            "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
-            }
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+            "name": "Contoso",
+            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+            "state": "wellFormed",
+            "revision": 11,
+            "visibility": "private",
+            "lastUpdateTime": "2025-06-12T20:33:32.4370396+00:00"
+        },
+        "repositoryId": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
+        "repositoryName": "Fabrikam-Fiber-Git",
+        "isHardDelete": false,
+        "initiatedBy": {
+            "displayName": "John Johnson",
+            "id": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
+            "uniqueName": "user@fabrikamfiber.com"
+        },
+        "utcTimestamp": "2022-12-12T12:34:56.5498459Z"
+    },
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
         }
     },
-    "createdDate": "2024-07-17T21:34:22.338Z"
+    "createdDate": "2025-06-12T20:33:32.512Z"
 }
 ```
 
@@ -2501,75 +2685,166 @@ Event: A repository is deleted.
 
 Event: A repository is forked.
 
-* Publisher ID: `azure-devops`
-* Event ID: `git.repository.forked`
+* Publisher ID: `tfs`
+* Event ID: `git.repo.forked`
 * Resource name: `repository`
 
 #### Settings
 
-* `project`: Filter events to include only repositories forked within the specified project.
-* `sourceRepositoryName`: Filter events to include only forks of repositories with the specified source repository name pattern.
-* `forkedRepositoryName`: Filter events to include only repositories with the specified forked repository name pattern.
+* `repository`: Filter events to include only repositories with the specified name pattern.
+   * Data type: `guid`
 
 #### Sample payload
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "git.repository.forked",
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "git.repo.forked",
+    "publisherId": "tfs",
+    "message": {
+        "text": "Git repository Fabrikam-Fiber-Git was forked by Ivan Yurev.",
+        "html": "Git repository <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a> was forked by Ivan Yurev.",
+        "markdown": "Git repository [Fabrikam-Fiber-Git](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/) was forked by Ivan Yurev."
+    },
+    "detailedMessage": {
+        "text": "Git repository Fabrikam-Fiber-Git was forked by Ivan Yurev.\r\nSource Repository\r\n\r\nProject name: Fabrikam-Fiber-Git\r\nRepository Id: c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3\r\nRepository Name: Fabrikam-Fiber-Git\r\nDefault branch: refs/heads/main\r\nSize: 729\r\nRepository link(https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3)\r\n\r\nFork\r\n\r\nProject name: Forked-fiber-inc\r\nRepository Id: d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4\r\nRepository Name: Forked-fiber-inc\r\nDefault branch: refs/heads/main\r\nRepository link(https://forked-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4)",
+        "html": "Git repository <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a> was forked by Ivan Yurev.\r\n<h3>Source Repository</h3>\r\n<p>Project name: Fabrikam-Fiber-Git</p>\r\n<p>Repository Id: c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3</p>\r\n<p>Repository Name: Fabrikam-Fiber-Git</p>\r\n<p>Default branch: refs/heads/main</p>\r\n<p>Size: 729</p>\r\n<p><a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3\">Repository link</a></p>\r\n<h3>Fork</h3>\r\n<p>Project name: Another-Great-Project</p>\r\n<p>Repository Id: d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4</p>\r\n<p>Repository Name: Forked-fiber-inc</p>\r\n<p>Default branch: refs/heads/main</p>\r\n<p><a href=\"https://forked-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4\">Repository link</a></p>",
+        "markdown": "Git repository [Fabrikam-Fiber-Git](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3) was forked by Ivan Yurev.\r\n### Source Repository\r\n\r\nProject name: Fabrikam-Fiber-Git\r\nRepository Id: c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3\r\nRepository Name: Fabrikam-Fiber-Git\r\nDefault branch: refs/heads/main\r\nSize: 729\r\n[Repository link](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3)\r\n\r\n### Fork\r\n\r\nProject name: Another-Great-Project\r\nRepository Id: d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4\r\nRepository Name: Forked-Fiber-Git\r\nDefault branch: refs/heads/main\r\n[Repository link](https://forked-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4)"
+    },
     "resource": {
-        "repository": {
-            "id": "00000000-0000-0000-0000-000000000000forked-repository-id",
-            "name": "forked-repository-name",
-            "url": "forked-repository-url",
+        "targetRepository": {
+            "id": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
+            "name": "Forked-Fiber-Git",
+            "url": "https://forked-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
             "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
+                "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "name": "Another-Great-Project",
+                "url": "https://another-great-inc.visualstudio.com/DefaultCollection/_apis/projects/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "state": "wellFormed",
+                "revision": 11,
+                "visibility": "private",
+                "lastUpdateTime": "2025-06-12T20:39:05.1186682+00:00"
             },
-            "sourceRepository": {
-                "id": "00000000-0000-0000-0000-000000000000source-repository-id",
-                "name": "source-repository-name",
-                "url": "source-repository-url"
-            }
+            "defaultBranch": "refs/heads/main",
+            "size": 728,
+            "remoteUrl": "https://another-great-inc.visualstudio.com/DefaultCollection/_git/Forked-Fiber-Git",
+            "sshUrl": "ssh://git@ssh.another-great-inc.visualstudio.com/v3/DefaultCollection/Forked-Fiber-Git",
+            "isDisabled": false
+        },
+        "sourceRepository": {
+            "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
+            "name": "Fabrikam-Fiber-Git",
+            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
+            "project": {
+                "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+                "name": "Fabrikam-Fiber-Git",
+                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+                "state": "wellFormed",
+                "revision": 11,
+                "visibility": "private",
+                "lastUpdateTime": "2025-06-12T20:39:05.1186682+00:00"
+            },
+            "defaultBranch": "refs/heads/main",
+            "size": 728,
+            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git",
+            "sshUrl": "ssh://git@ssh.fabrikam-fiber-inc.visualstudio.com/v3/DefaultCollection/Fabrikam-Fiber-Git",
+            "isDisabled": false
+        },
+        "initiatedBy": {
+            "displayName": "Ivan Yurev",
+            "id": "66aa66aa-bb77-cc88-dd99-00ee00ee00ee",
+            "uniqueName": "user@fabrikamfiber.com"
+        },
+        "utcTimestamp": "2023-01-25T12:34:56.5498459Z"
+    },
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
         }
     },
-    "createdDate": "2024-07-17T21:34:22.338Z"
+    "createdDate": "2025-06-12T20:39:05.382Z"
 }
 ```
 
 ### Repository renamed
 
-Filter events to include only renamed repositories.
+A repository is renamed.
 
-* Publisher ID: `azure-devops`
-* Event ID: `git.repository.renamed`
+* Publisher ID: `tfs`
+* Event ID: `git.repo.renamed`
 * Resource name: `repository`
 
 #### Settings
 
-* `project`: Filter events to include only repositories renamed within the specified project.
-* `oldRepositoryName`: Filter events to include only repositories with the specified old name pattern.
-* `newRepositoryName`: Filter events to include only repositories with the specified new name pattern.
+* `repository`: Filter events to include only repositories with the specified name pattern.
+   * Data type: `guid`
 
 #### Sample payload
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "git.repository.renamed",
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "git.repo.renamed",
+    "publisherId": "tfs",
+    "message": {
+        "text": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was renamed to Fabrikam-Fiber-Git.",
+        "html": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was renamed to  <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3\">Fabrikam-Fiber-Git</a>.",
+        "markdown": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was renamed to [Fabrikam-Fiber-Git](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3)."
+    },
+    "detailedMessage": {
+        "text": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was renamed to Fabrikam-Fiber-Git.\r\nProject name: Contoso\r\n\r\nRepository name before renaming: Diber-Git\r\n\r\nDefault branch: refs/heads/master\r\n\r\nRepository link(https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3)\r\n",
+        "html": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was renamed to  <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3\">Fabrikam-Fiber-Git</a>.<p>Project name: Contoso</p><p>Repository name before renaming: Diber-Git</p><p>Default branch: refs/heads/master</p><p><a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3\">Repository link</a></p>",
+        "markdown": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 was renamed to [Fabrikam-Fiber-Git](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3).\r\nProject name: Contoso\r\n\r\nRepository name before renaming: Diber-Git\r\n\r\nDefault branch: refs/heads/master\r\n\r\n[Repository link](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3)\r\n"
+    },
     "resource": {
+        "oldName": "Diber-Git",
+        "newName": "Fabrikam-Fiber-Git",
         "repository": {
-            "id": "00000000-0000-0000-0000-000000000000repository-id",
-            "oldName": "old-repository-name",
-            "newName": "new-repository-name",
-            "url": "repository-url",
+            "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
+            "name": "Fabrikam-Fiber-Git",
+            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
             "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
-            }
+                "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "name": "Contoso",
+                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "state": "wellFormed",
+                "revision": 11,
+                "visibility": "private",
+                "lastUpdateTime": "2025-06-12T20:48:38.8174565+00:00"
+            },
+            "defaultBranch": "refs/heads/master",
+            "size": 728,
+            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git",
+            "sshUrl": "ssh://git@ssh.fabrikam-fiber-inc.visualstudio.com/v3/DefaultCollection/Fabrikam-Fiber-Git",
+            "isDisabled": false
+        },
+        "initiatedBy": {
+            "displayName": "John Johnson",
+            "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+            "uniqueName": "user@fabrikamfiber.com"
+        },
+        "utcTimestamp": "2022-12-12T12:34:56.5498459Z"
+    },
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
         }
     },
-    "createdDate": "2024-07-17T21:34:22.338Z"
+    "createdDate": "2025-06-12T20:48:38.859Z"
 }
 ```
 
@@ -2577,37 +2852,73 @@ Filter events to include only renamed repositories.
 
 Event: A repository status is changed.
 
-* Publisher ID: `azure-devops`
-* Event ID: `git.repository.statusChanged`
+* Publisher ID: `tfs`
+* Event ID: `git.repo.statuschanged`
 * Resource name: `repository`
 
 #### Settings
 
-* `project`: Filter events to include only repositories within the specified project.
-* `repositoryName`: Filter events to include only repositories with the specified name pattern.
-* `oldStatus`: Filter events to include only repositories with the specified old status.
-* `newStatus`: Filter events to include only repositories with the specified new status.
+* `repository`: Filter events to include only repositories with the specified name pattern.
+   * Data type: `guid`
 
 #### Sample payload
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "git.repository.statusChanged",
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "git.repo.statuschanged",
+    "publisherId": "tfs",
+    "message": {
+        "text": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 with name Fabrikam-Fiber-Git status was changed: enabled.",
+        "html": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 with name <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3\">Fabrikam-Fiber-Git</a> status was changed: enabled.",
+        "markdown": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 with name [Fabrikam-Fiber-Git](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3) status was changed: enabled."
+    },
+    "detailedMessage": {
+        "text": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 with name Fabrikam-Fiber-Git status was changed: enabled.\r\nProject name: Contoso\r\n\r\nRepository name: Fabrikam-Fiber-Git\r\n\r\nDefault branch: refs/heads/master\r\n\r\nIsFork: false\r\n\r\nIsDisabled: false\r\n\r\nIsInMaintenance: false\r\n\r\nClone link(https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3)\r\n",
+        "html": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 with name <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3\">Fabrikam-Fiber-Git</a> status was changed: enabled.<p>Project name: Contoso</p><p>Repository name: Fabrikam-Fiber-Git</p><p>Default branch: refs/heads/master</p><p>IsFork: false</p><p>IsDisabled: false</p><p>IsInMaintenance: false</p><p><a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3\">Clone link</a></p>",
+        "markdown": "Git repository c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3 with name [Fabrikam-Fiber-Git](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3) status was changed: enabled.\r\nProject name: Contoso\r\n\r\nRepository name: Fabrikam-Fiber-Git\r\n\r\nDefault branch: refs/heads/master\r\n\r\nIsFork: false\r\n\r\nIsDisabled: false\r\n\r\nIsInMaintenance: false\r\n\r\n[Clone link](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3)\r\n"
+    },
     "resource": {
+        "disabled": false,
         "repository": {
-            "id": "00000000-0000-0000-0000-000000000000repository-id",
-            "name": "repository-name",
-            "url": "repository-url",
+            "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
+            "name": "Fabrikam-Fiber-Git",
+            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
             "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
+                "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "name": "Fabrikam-Fiber-Git",
+                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "state": "wellFormed",
+                "revision": 11,
+                "visibility": "private",
+                "lastUpdateTime": "2025-06-12T20:55:07.6222336+00:00"
             },
-            "oldStatus": "old-status",
-            "newStatus": "new-status"
+            "defaultBranch": "refs/heads/master",
+            "size": 728,
+            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git",
+            "sshUrl": "ssh://git@ssh.fabrikam-fiber-inc.visualstudio.com/v3/DefaultCollection/Fabrikam-Fiber-Git",
+            "isDisabled": false
+        },
+        "initiatedBy": {
+            "displayName": "John Johnson",
+            "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+            "uniqueName": "user@fabrikamfiber.com"
+        },
+        "utcTimestamp": "2022-12-12T12:34:56.5498459Z"
+    },
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
         }
     },
-    "createdDate": "2024-07-17T21:34:22.338Z"
+    "createdDate": "2025-06-12T20:55:07.812Z"
 }
 ```
 
@@ -2619,39 +2930,56 @@ The following service connection events are available for use in service hooks.
 
 Event: A new service connection is created.
 
-* Publisher ID: `azure-devops`
-* Event ID: `serviceendpoint.created`
+* Publisher ID: `tfs`
+* Event ID: `ms.vss-endpoint.endpoint-created`
 * Resource name: `serviceendpoint`
 
 #### Settings
 
 * `project`: Filter events to include only service connections created within the specified project.
-* `serviceConnectionType`: Filter events to include only service connections of the specified type.
 
 #### Sample payload
 
 ```json
 {
-    "publisherId": "azure-devops",
-    "eventId": "serviceendpoint.created",
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "ms.vss-endpoint.endpoint-created",
+    "publisherId": "tfs",
+    "message": {
+        "text": "Generic service connection created: Sample service connection",
+        "html": "Generic service connection created: Sample service connection",
+        "markdown": "Generic service connection created: Sample service connection"
+    },
+    "detailedMessage": {
+        "text": "Generic service connection created: Sample service connection",
+        "html": "Generic service connection created: Sample service connection",
+        "markdown": "Generic service connection created: Sample service connection"
+    },
     "resource": {
-        "serviceEndpoint": {
-            "id": "00000000-0000-0000-0000-000000000000service-connection-id",
-            "name": "service-connection-name",
-            "type": "service-connection-type",
-            "url": "service-connection-url",
-            "project": {
-                "id": "00000000-0000-0000-0000-000000000000project-id",
-                "name": "project-name"
-            }
+        "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
+        "name": "Sample service connection",
+        "type": "Generic",
+        "authorization": null,
+        "projectIds": []
+    },
+    "resourceVersion": "1.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
         }
     },
-    "createdDate": "2024-07-17T21:34:22.338Z"
+    "createdDate": "2025-06-12T20:59:01.867Z"
 }
 ```
 
 ### Service connection updated
-
+inconsistent
 Event: A service connection is updated.
 
 * Publisher ID: `azure-devops`
@@ -2692,7 +3020,7 @@ The following work item events are available for use in service hooks.
 <a name="workitem.created"></a>
 
 ### Work item created
-
+inconsistent
 Event: A new work item is created.
 
 * Publisher ID: `azure-devops`
@@ -2778,7 +3106,7 @@ Event: A new work item is created.
 <a name="workitem.deleted"></a>
 
 ### Work item deleted
-
+inconsistent
 Event: A work item is deleted.
 
 * Publisher ID: `azure-devops`
@@ -2858,7 +3186,7 @@ Event: A work item is deleted.
 <a name="workitem.restored"></a>
 
 ### Work item restored
-
+inconsistent
 Event: A work item is newly restored.
 
 * Publisher ID: `azure-devops`
@@ -2950,7 +3278,7 @@ Event: A work item is newly restored.
 <a name="workitem.updated"></a>
 
 ### Work item updated
-
+inconsistent
 Event: A work item is changed.
 
 * Publisher ID: `azure-devops`
@@ -3073,7 +3401,7 @@ If you want to trigger on a change in more than one work item field, you have a 
 <a name="workitem.commented"></a>
 
 ### Work item commented on
-
+inconsistent
 Event: A work item is commented on.
 
 * Publisher ID: `azure-devops`
@@ -3157,6 +3485,325 @@ Event: A work item is commented on.
   "createdDate": "2024-09-19T13:03:28.9695265Z"
 }
 ```
+
+::: moniker range="=azure-devops"
+
+## Advanced security
+
+The following advanced security events are available for use in service hooks that you create by using the UI.
+
+### Advanced security alert created
+
+Event: An advanced security alert is created.
+
+* Publisher ID: `advsec`
+* Event ID: `ms.vss-alerts.alert-created-event`
+* Resource name: `resource`
+
+#### Settings
+
+ * `repository`: Filter events to include only the repository that the alert is created in.
+ * `branch`: Filter events to include only the branch that the alert is created in.
+ * `alertType`: Filter events to include only alerts of the specified type.
+   * Valid values: 
+      * `Unknown` 
+      * `Dependency` 
+      * `Secret` 
+      * `Code` 
+ * `severity`: Filter events to include only alerts with the specified severity.
+   * Valid values: 
+      * `Low` 
+      * `Medium` 
+      * `High` 
+      * `Critical` 
+      * `Note` 
+      * `Warning` 
+      * `Error` 
+      * `Undefined` 
+
+#### Sample payload
+
+```json
+{
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "ms.vss-alerts.alert-created-event",
+    "publisherId": "advsec",
+    "message": {
+        "text": "New alert is created",
+        "html": "New alert is created",
+        "markdown": "New alert is created"
+    },
+    "detailedMessage": {
+        "text": "New alert is created\r\n\r\n- Alert status: Created\r\n",
+        "html": "New alert is created\r\n\r\n- Alert status: Created\r\n",
+        "markdown": "New alert is created\r\n\r\n- Alert status: Created\r\n"
+    },
+    "resource": {
+        "alertId": 1,
+        "severity": "critical",
+        "title": "Alert title",
+        "tools": [
+            {
+                "name": "codeql",
+                "rules": [
+                    {
+                        "opaqueId": null,
+                        "friendlyName": "codeql rule",
+                        "description": null,
+                        "resources": null,
+                        "helpMessage": "update the version",
+                        "tags": null,
+                        "additionalProperties": null
+                    }
+                ]
+            }
+        ],
+        "dismissal": {
+            "dismissalId": 1,
+            "message": "Fixed",
+            "stateChangedBy": "00000000-0000-0000-0000-000000000000",
+            "stateChangedByIdentity": null,
+            "requestedOn": null,
+            "dismissalType": "fixed"
+        },
+        "repositoryUrl": "https://dev.azure.com/test/test/_git/test",
+        "gitRef": "testRef",
+        "alertType": "code",
+        "firstSeenDate": null,
+        "lastSeenDate": null,
+        "fixedDate": null,
+        "introducedDate": null,
+        "state": "fixed",
+        "physicalLocations": null,
+        "logicalLocations": null
+    },
+    "resourceVersion": "1.0",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+        }
+    },
+    "createdDate": "2025-06-09T18:22:39.862Z"
+}
+```
+
+### Advanced security alert state changed
+
+Event: The state of an advanced security alert changes.
+
+* Publisher ID: `advsec`
+* Event ID: `ms.vss-alerts.alert-state-changed-event`
+* Resource name: `resource`
+
+#### Settings
+
+ * `repository`: Filter events to include only the repository associated with the alert that changes state.
+ * `branch`: Filter events to include only the branch associated with the alert that changes state.
+ * `alertType`: Filter events to include only alerts of the specified type.
+   * Valid values: 
+      * `Unknown` 
+      * `Dependency` 
+      * `Secret` 
+      * `Code` 
+ * `severity`: Filter events to include only alerts with the specified severity.
+   * Valid values: 
+      * `Low` 
+      * `Medium` 
+      * `High` 
+      * `Critical` 
+      * `Note` 
+      * `Warning` 
+      * `Error` 
+      * `Undefined` 
+ * `fillin`: Filter events to include only alerts that have a specific new state.
+   * Valid values: 
+      * `Unknown`
+      * `Active`
+      * `Dismissed`
+      * `Fixed`
+      * `AutoDismissed`
+
+#### Sample payload
+
+```json
+{
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "ms.vss-alerts.alert-state-changed-event",
+    "publisherId": "advsec",
+    "message": {
+        "text": "Alert's state is changed",
+        "html": "Alert's state is changed",
+        "markdown": "Alert's state is changed"
+    },
+    "detailedMessage": {
+        "text": "Alert's state is changed\r\n\r\n- Alert status: State Changed\r\n",
+        "html": "Alert's state is changed\r\n\r\n- Alert status: State Changed\r\n",
+        "markdown": "Alert's state is changed\r\n\r\n- Alert status: State Changed\r\n"
+    },
+    "resource": {
+        "alertId": 1,
+        "severity": "critical",
+        "title": "Alert title",
+        "tools": [
+            {
+                "name": "codeql",
+                "rules": [
+                    {
+                        "opaqueId": null,
+                        "friendlyName": "codeql rule",
+                        "description": null,
+                        "resources": null,
+                        "helpMessage": "update the version",
+                        "tags": null,
+                        "additionalProperties": null
+                    }
+                ]
+            }
+        ],
+        "dismissal": {
+            "dismissalId": 1,
+            "message": "Fixed",
+            "stateChangedBy": "00000000-0000-0000-0000-000000000000",
+            "stateChangedByIdentity": null,
+            "requestedOn": null,
+            "dismissalType": "fixed"
+        },
+        "repositoryUrl": "https://dev.azure.com/test/test/_git/test",
+        "gitRef": "testRef",
+        "alertType": "code",
+        "firstSeenDate": null,
+        "lastSeenDate": null,
+        "fixedDate": null,
+        "introducedDate": null,
+        "state": "fixed",
+        "physicalLocations": null,
+        "logicalLocations": null
+    },
+    "resourceVersion": "1.0",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+        }
+    },
+    "createdDate": "2025-06-09T18:26:56.647Z"
+}
+```
+
+### Advanced security alert updated
+
+Event: An advanced security alert is updated.
+
+* Publisher ID: `advsec`
+* Event ID: `ms.vss-alerts.alert-updated-event`
+* Resource name: `resource`
+
+#### Settings
+
+ * `repository`: Filter events to include only the repository associated with the alert that's updated.
+ * `branch`: Filter events to include only the branch associated with the alert that's updated.
+ * `alertType`: Filter events to include only alerts of the specified type.
+   * Valid values: 
+      * `Unknown` 
+      * `Dependency` 
+      * `Secret` 
+      * `Code` 
+ * `severity`: Filter events to include only alerts with the specified severity.
+   * Valid values: 
+      * `Low` 
+      * `Medium` 
+      * `High` 
+      * `Critical` 
+      * `Note` 
+      * `Warning` 
+      * `Error` 
+      * `Undefined` 
+
+#### Sample payload
+
+```json
+{
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+    "eventType": "ms.vss-alerts.alert-updated-event",
+    "publisherId": "advsec",
+    "message": {
+        "text": "New alert is updated",
+        "html": "New alert is updated",
+        "markdown": "New alert is updated"
+    },
+    "detailedMessage": {
+        "text": "New alert is updated\r\n\r\n- Alert status: Updated\r\n",
+        "html": "New alert is updated\r\n\r\n- Alert status: Updated\r\n",
+        "markdown": "New alert is updated\r\n\r\n- Alert status: Updated\r\n"
+    },
+    "resource": {
+        "alertId": 1,
+        "severity": "critical",
+        "title": "Alert title",
+        "tools": [
+            {
+                "name": "codeql",
+                "rules": [
+                    {
+                        "opaqueId": null,
+                        "friendlyName": "codeql rule",
+                        "description": null,
+                        "resources": null,
+                        "helpMessage": "update the version",
+                        "tags": null,
+                        "additionalProperties": null
+                    }
+                ]
+            }
+        ],
+        "dismissal": {
+            "dismissalId": 1,
+            "message": "Fixed",
+            "stateChangedBy": "00000000-0000-0000-0000-000000000000",
+            "stateChangedByIdentity": null,
+            "requestedOn": null,
+            "dismissalType": "fixed"
+        },
+        "repositoryUrl": "https://dev.azure.com/test/test/_git/test",
+        "gitRef": "testRef",
+        "alertType": "code",
+        "firstSeenDate": null,
+        "lastSeenDate": null,
+        "fixedDate": null,
+        "introducedDate": null,
+        "state": "fixed",
+        "physicalLocations": null,
+        "logicalLocations": null
+    },
+    "resourceVersion": "1.0",
+    "resourceContainers": {
+        "collection": {
+            "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+        },
+        "account": {
+            "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+        },
+        "project": {
+            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+        }
+    },
+    "createdDate": "2025-06-09T18:31:56.933Z"
+}
+```
+
+::: moniker-end
+
 ## Resource containers
 
 The event payload contains a `resourceContainers` dictionary that includes the IDs of the project, collection/account, or server that the event initiated from. 
