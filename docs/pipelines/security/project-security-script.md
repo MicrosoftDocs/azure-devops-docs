@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-You can use a script to update Pipelines settings at the project-level. For organization-level settings, you'll need to make configuration changes within the Azure  DevOps UI.
+You can use a script to update pipelines settings at the project-level. For organization-level settings, you'll need to make configuration changes within the Azure  DevOps UI.
 
 It's possible to automate these security settings using the Azure DevOps REST API. 
 
