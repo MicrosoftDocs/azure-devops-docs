@@ -17,7 +17,7 @@ monikerRange: "<=azure-devops"
 
 This article is a step-by-step guide on common ways to customize your pipeline.
 
-## Prerequisite
+## Prerequisites
 
 Follow instructions in [Create your first pipeline](create-first-pipeline.md) to create a working pipeline.
 

@@ -1,6 +1,6 @@
 ---
 title: Use a script to update security settings
-description: Guidelines and recommendations for securing pipelines.
+description: Learn how to use PowerShell scripts to automate Azure DevOps pipeline security settings. Configure project-level settings with secure-by-default recommendations.
 ms.date: 06/11/2025
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted
@@ -13,6 +13,14 @@ ai-usage: ai-assisted
 You can use a script to update pipelines settings at the project-level. For organization-level settings, you'll need to make configuration changes within the Azure  DevOps UI.
 
 It's possible to automate these security settings using the Azure DevOps REST API. 
+
+## Prerequisites
+
+| **Product** | **Requirements**   |
+|---|---|
+| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To run this script and update Azure DevOps pipeline security settings: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).|
+| **Azure** | - Azure account with access to authenticate via `Connect-AzAccount`.|
+
 
 ## Recommended secure-by-default settings
 
@@ -40,6 +48,23 @@ It's possible to automate these security settings using the Azure DevOps REST AP
 
 
 ## Script to automate settings
+
+Save the PowerShell script as a `.ps1` file (example: `Update-AzureDevOpsSecuritySettings.ps1`). You can run the script with our without parameters. 
+
+**Update all projects in an organization**
+
+```powershell
+.\Update-AzureDevOpsSecuritySettings.ps1 -organization "YourOrgName"
+```
+ 
+**Update a specific project**
+
+```powershell
+.\Update-AzureDevOpsSecuritySettings.ps1 -organization "YourOrgName" -specificProjectName "YourProjectName"
+```
+
+If you get a 403 Forbidden error, verify you have Project Administrator or Collection Administrator permissions. 
+
 
 ```powershell
 # Define the organization and API version
@@ -121,4 +146,30 @@ if ($specificProjectName) {
         }
     }
 }
+```
+
+Your output for each project will look like this. 
+
+```powershell
+Updating project: my-project
+
+enforceReferencedRepoScopedToken                  : True
+disableClassicPipelineCreation                    : False
+disableClassicBuildPipelineCreation               : True
+disableClassicReleasePipelineCreation             : True
+forkProtectionEnabled                             : True
+buildsEnabledForForks                             : False
+enforceJobAuthScopeForForks                       : False
+enforceNoAccessToSecretsFromForks                 : False
+isCommentRequiredForPullRequest                   : False
+requireCommentsForNonTeamMembersOnly              : False
+requireCommentsForNonTeamMemberAndNonContributors : False
+enableShellTasksArgsSanitizing                    : False
+enableShellTasksArgsSanitizingAudit               : False
+disableImpliedYAMLCiTrigger                       : True
+statusBadgesArePrivate                            : True
+enforceSettableVar                                : True
+enforceJobAuthScope                               : True
+enforceJobAuthScopeForReleases                    : True
+publishPipelineMetadata                           : False
 ```

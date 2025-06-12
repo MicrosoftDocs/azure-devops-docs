@@ -691,8 +691,8 @@
     - name: Secure Azure Pipelines
       displayName: security, repo protection, malicious code, assume breach
       href: security/overview.md
-    - name: Use a script to set Azure Pipelines project settings
-      displayName: security, repo protection, malicious code, assume breach
+    - name: Use a script to update project security settings
+      displayName: security, project, script
       href: security/project-security-script.md     
     - name: Approach to securing YAML pipelines
       displayName: template permissions, repositories
