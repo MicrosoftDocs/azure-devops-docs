@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 06/09/2025
+ms.date: 06/12/2025
 ---
 
 # Configure Managed DevOps Pools images
@@ -187,7 +187,7 @@ You can choose from the following types of images.
 
 Managed DevOps Pools provides several preconfigured images that have the same software as selected Microsoft-hosted agents for Azure Pipelines.
 
-The lifecycle of Azure Pipelines images offered in Managed DevOps Pools follows the lifecycle of the [Microsoft-hosted agent images](../pipelines/agents/hosted.md#software). If an image in Microsoft-hosted agents is deprecated, the corresponding Managed DevOps Pools is also deprecated. The version of images available in Microsoft-hosted agents might be slightly different from the version of images available in Managed DevOps Pools for the same image type.
+The lifecycle of Azure Pipelines images offered in Managed DevOps Pools follows the lifecycle of the [Microsoft-hosted agent images](../pipelines/agents/hosted.md#software). If an image in Microsoft-hosted agents is deprecated, the corresponding Managed DevOps Pools is also deprecated on a similar timeframe. The version of images available in Microsoft-hosted agents might be slightly different from the version of images available in Managed DevOps Pools for the same image type.
 
 For more information on Managed DevOps Pools images lifecycle, see [Image lifecycle](#image-lifecycle).
 
