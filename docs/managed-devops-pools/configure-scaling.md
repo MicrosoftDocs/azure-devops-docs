@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 11/15/2024
+ms.date: 06/13/2025
 ---
 
 # Configure scaling
@@ -15,7 +15,7 @@ Managed DevOps Pools can be configured as stateless or stateful.
 * [Stateless pools](#stateless-pools) - Provide a fresh agent for every job.
 * [Stateful pools](#stateful-pools) - Allow sharing of agents between multiple jobs.
 
-The default setting for a Managed DevOps pool is stateless (**Fresh agent every time**) but in some cases teams might want to reuse agents in order to reuse the packages or files created during the previous pipeline run. Build workload is a common scenario where teams want to preserve state and reuse agents. You can achieve stateful pools through Managed DevOps Pools while balancing it with security best practices. By default an agent can be reused for a maximum of 7 days but you can configure it to be recycled sooner. 
+The default setting for a Managed DevOps pool is stateless (**Fresh agent every time**) but in some cases teams might want to reuse agents in order to reuse the packages or files created during the previous pipeline run. Build workload is a common scenario where teams want to preserve state and reuse agents. You can achieve stateful pools through Managed DevOps Pools while balancing it with security best practices. By default an agent can be reused for a maximum of 7 days but you can configure it to be recycled sooner.
 
 > [!NOTE]
 > Stateless pools or use of the agent state setting **Fresh agent every time** are recommended by security experts as a defense against supply chain attacks.
@@ -23,6 +23,8 @@ The default setting for a Managed DevOps pool is stateless (**Fresh agent every 
 ### Stateless pools
 
 When a stateless agent is configured, a new agent is procured for each job, and is discarded after the job completes.
+
+For the lifecycle of stateless agents and an explanation on how they are used in Azure DevOps pipelines (including potential delays in allocation), see the following [Lifecycle of agents and potential delays in allocation](#lifecycle-of-agents-and-potential-delays-in-allocation) section.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -883,6 +885,18 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
 ```
 
 * * *
+
+## Lifecycle of agents and potential delays in allocation
+
+Standby agents using a [Stateless](#stateless-pools) scheme require the Azure Pipelines agent to be installed and configured before transitioning from the [ready](./view-agents.md#status) state to the [allocated](./view-agents.md#status) state and running a pipeline. When provisioning new agents, Managed DevOps Pools attempts to download the latest [Azure Pipelines agent](https://github.com/microsoft/azure-pipelines-agent/releases) in order to have it already downloaded on standby agents before they transition into ready status. Startup, connection, and beginning the job can take anywhere from 10 seconds to a minute depending on the pool's SKU speed, image used, and networking load. Additionally, certain settings in a pipeline job can cause a redownload and running of a different agent, and regressions and rollbacks of the agent can also cause a redownload of the agent. [Ready agents](./view-agents.md#status) will always have a potential delay, as Managed DevOps Pools uses this agent in an "ephemeral" manner, meaning we start and run the task agent one time per job.
+
+If you are seeing delays in ready agents picking up jobs from Azure DevOps, the following are important to consider:
+
+* Do you have ready agents? - The most common issue is a misunderstanding of when agents should be preprovisioned. When the number of jobs queued is greater than the standby agent count on a pool, or jobs are queued outside of the pre-provisioning schedule, when the standby agent count is set to be empty, then machines must be spun up from scratch.
+* Are you configuring standby agents with multiple images properly? - If you are not specifying which image to use in your pipeline using the [ImageOverride](./demands.md#imageoverride) demand, jobs will be targeting the first image. This means, depending on your scaling settings, you might not have as many agents available as you'd expect as some are allocated to other images.
+* Are you using the [ImageVersionOverride](./demands.md#imageversionoverride) in your pipelines? - When you use `ImageVersionOverride` to specify a different image version than what's configured in your [pool settings](./configure-images.md), each agent is started on demand using the specified image version. Standby agents are provisioned using the image versions specified in your [pool's configuration](./configure-images.md), so if you use `ImageVersionOverride`, any standby agents won't match that version and a fresh agent is started.
+* Are Proxy/VNet/Firewall settings slowing down your pool? - Potential slowness from any network setting will result in agents taking longer to start the agent and connect it to Azure DevOps.
+* Are you overriding the agent version? - By default, Managed DevOps pools will run on the most recent Azure DevOps task agent version. Settings in the Pipeline yaml (such as the [Agent.Version](/azure/devops/pipelines/yaml-schema/pool-demands#agent-variables-as-system-capabilities) demand) and Azure DevOps organization settings can force pipelines to use older versions of the task agent, requiring a redownload once a machine has been allocated.
 
 ## See also
 
