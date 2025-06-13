@@ -69,7 +69,6 @@ You can connect up to 250 GitHub repositories to an Azure Boards project.
 	:::image type="content" source="media/github-ent/connect-github-account-first-time.png" alt-text="Screenshot of first time connecting with GitHub credentials.":::
 
 	Otherwise, select :::image type="icon" source="../../media/icons/add-light-icon.png" border="false"::: **New connection**, and the select your authentication method from the **New Connection** dialog.
-::: moniker-end
 
 <a id="server-github-ent-pat"></a> 
 <a id="github-ent-pat"></a> 
