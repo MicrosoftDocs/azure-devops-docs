@@ -33,7 +33,7 @@ This article explains how to share your Power BI Desktop file, along with its da
 
 4. Follow the prompts for signing in. If you don't have a Power BI account, create one when prompted. Select **Sign in**.
 
-5. After publishing, to view your report in Power BI, select the **Open <file name> in Power BI** link.
+5. After publishing, to view your report in Power BI, select the **Open 'file name' in Power BI** link.
 
    :::image type="content" source="media/publish-2.png" alt-text="Screenshot shows successful publish and link to open pbix file.":::
 
