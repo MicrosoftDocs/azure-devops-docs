@@ -1,7 +1,7 @@
 ---
 title: Features timeline and roadmap
 description: Learn about new features in Managed DevOps Pools.
-ms.date: 05/28/2025
+ms.date: 06/13/2025
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the new features in Managed DevOps Pools.
 ---
