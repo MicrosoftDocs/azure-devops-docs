@@ -30,7 +30,7 @@ The following section describes new features in development for Managed DevOps P
 
 ## May 2025
 
-* **Shorter time for agent allocation**: The Managed DevOps Pools made updates to shorten the startup time for [standby agents](./configure-scaling.md#standby-agent-mode) (**Fresh agent every time** setting). For more information, see [Lifecycle of agents and potential delays in allocation](./configure-scaling.md#lifecycle-of-agents-and-potential-delays-in-allocation).
+* **Shorter time for agent allocation**: The Managed DevOps Pools team made updates to shorten the startup time for [standby agents](./configure-scaling.md#standby-agent-mode) (**Fresh agent every time** setting). For more information, see [Lifecycle of agents and potential delays in allocation](./configure-scaling.md#lifecycle-of-agents-and-potential-delays-in-allocation).
 
 ## April 2025
 
