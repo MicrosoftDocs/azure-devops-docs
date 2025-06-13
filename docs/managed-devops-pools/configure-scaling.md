@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 05/16/2025
+ms.date: 06/13/2025
 ---
 
 # Configure scaling
@@ -893,10 +893,10 @@ When using a [Stateless](#stateless-pools) scheme, standby agents in a [ready](.
 If you are seeing delays in ready agents picking up jobs from Azure DevOps, the following are important to consider:
 
 * Do you have ready agents? - The most common issue is a misunderstanding of when agents should be preprovisioned. When the amount of jobs queued is greater than the standy agent count on a pool, or jobs are queued outside of the pre-provisioning schedule, when the standy agent count is set to be empty, then machines must be spun up from scratch.
-* Are you configuring standby agents with multiple images properly? - If you are not specifying which image to use in your pipeline using the [ImageOverride](./demands.md#imageoverride) demand, jobs will be targeting the first image. This means, depending on your Scaling settings, you might not have as many agents available as you'd expect as some are allocated to other images.
+* Are you configuring standby agents with multiple images properly? - If you are not specifying which image to use in your pipeline using the [ImageOverride](./demands.md#imageoverride) demand, jobs will be targeting the first image. This means, depending on your scaling settings, you might not have as many agents available as you'd expect as some are allocated to other images.
 * Are you using the [ImageVersionOverride](./demands.md#imageversionoverride) in your pipelines? - When you use `ImageVersionOverride` to specify a different image version than what's configured in your [pool settings](./configure-images.md), each agent is started on demand using the specified image version. Standby agents are provisioned using the image versions specified in your [pool's configuration](./configure-images.md), so if you use `ImageVersionOverride`, any standby agents won't match that version and a fresh agent is started.
 * Are Proxy/VNet/Firewall settings slowing down your pool? - Potential slowness from any network setting will result in agents taking longer to start the agent and connect it to Azure DevOps.
-* Are you overriding the agent version? - By default, Managed DevOps pools will run on the most recent Azure DevOps task agent version. Settings in the Pipeline yaml (such as the "Agent.Version" demand) and Azure DevOps org can force pipelines to use older versions of the task agent, requiring a redownload once a machine has been allocated.
+* Are you overriding the agent version? - By default, Managed DevOps pools will run on the most recent Azure DevOps task agent version. Settings in the Pipeline yaml (such as the [Agent.Version](/azure/devops/pipelines/yaml-schema/pool-demands#agent-variables-as-system-capabilities) demand) and Azure DevOps organization settings can force pipelines to use older versions of the task agent, requiring a redownload once a machine has been allocated.
 
 ## See also
 
