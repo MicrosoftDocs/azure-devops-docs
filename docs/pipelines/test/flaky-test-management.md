@@ -43,17 +43,19 @@ Slide the On/Off button to **On**.
 > ![Screenshot of Test Management, Flaky test detection enabled, System detection.](media/flaky-test-management/system-detection.png)
 
 The default setting for all projects is to use flaky tests for troubleshooting. 
+> [!Note]
+> Switching between systems is inherently disruptive, as all flakiness history stored in Azure DevOps is erased during the transition. 
 
 ### Flaky test detection
 
 Flaky test management supports system and custom detection.
 
-- **System detection**: The in-product flaky detection uses test rerun data. The detection is via **VSTest task** rerunning of failed tests capability or retry of stage in the pipeline. You can select specific pipelines in the project for which you would like to detect flaky tests. 
+- **System detection**: Azure DevOps has a built-in mechanism for detecting flaky tests. This involves rerunning failed tests within the same pipeline execution. If a test case fails initially but passes on a rerun, it is marked as flaky. This detection is tightly coupled with the **VSTest** task, which reruns failed tests within the same task execution. Another method involves rerunning failed jobs in the pipeline (manually by clicking on "rerun failed jobs" in any pipeline run). If a test passes in the rerun, it is marked as flaky.
 
    > [!Note]
    > Once a test is marked as flaky, the data is available for all pipelines for that branch to assist with troubleshooting in every pipeline. 
 
-- **Custom detection**: You can integrate your own flaky detection mechanism with Azure Pipelines and use the reporting capability. With custom detection, you need to update the test results metadata for flaky tests. For details, see [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result-meta-data/update). 
+- **Custom detection**: This approach allows external systems to integrate their own logic for detecting flaky tests and rely on Azure DevOps for consistent tracking and management. Communication with Azure DevOps is enabled using the [Result Meta Data - Update](/rest/api/azure/devops/testresults/result-meta-data/update) API. The API requires a Test Case Reference ID, a flag indicating whether the test is considered flaky, and the repository branch where the flakiness was observed. User should be able to get the Test Case Reference Id from the [Get Test Result By Id](/rest/api/azure/devops/testresults/results/get-test-result-by-id) API. Once this information is sent to Azure DevOps, the system stores and propagates the flakiness status for that test case in subsequent pipeline runs. After a test is marked as flaky, Azure DevOps will continue to treat it as such until it is manually unmarked.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Test Management, Flaky test detection enabled, Custom detection.](media/flaky-test-management/custom-detection.png) 

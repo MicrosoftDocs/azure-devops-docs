@@ -5,13 +5,13 @@ ms.assetid: 3f273ac7-3c2e-47d0-b333-3ca44c19bbf4
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.reviewer: amullans
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ms.date: 07/21/2023
 ---
 
 # Package graphs in Azure Artifacts
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 When releasing a package, it's crucial to ensure that all dependencies of that package are available in your feed by consuming them from an upstream source. Once you consume a package from an upstream source, a copy is saved to your feed. This ensures that even if the upstream source becomes inaccessible, your copy will continue to be available to both you and your feed consumers.
 

@@ -6,13 +6,13 @@ ms.topic: how-to
 ms.date: 05/12/2025
 ms.author: rabououn
 author: ramiMSFT
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Publish packages - Gradle
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enables developers to manage all their dependencies in one place by storing multiple package types in a single feed. This article walks you through connecting to an Azure Artifacts feed and publishing packages using Gradle.
 

@@ -7,13 +7,13 @@ ms.manager: mijacobs
 ms.topic: conceptual
 ms.custom: engagement-fy23
 ms.date: 06/11/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Restore Maven packages from your Azure Artifacts feed
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 With Azure Artifacts, you can publish and restore Maven packages from Azure Artifacts feed and public registries. This article will walk you through setting up your Maven project, connecting to your Azure Artifacts feed, and restoring your Maven packages.
 

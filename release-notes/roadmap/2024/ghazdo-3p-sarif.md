@@ -1,7 +1,7 @@
 ---
 title: Third-party SARIF support
-author: sull8000
-ms.author: bryans
+author: ncouraud
+ms.author: nicour
 ms.date: 11/8/2023
 ms.topic: article
 ms.service: azure-devops

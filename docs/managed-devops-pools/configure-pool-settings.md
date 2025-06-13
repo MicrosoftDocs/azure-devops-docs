@@ -345,7 +345,7 @@ The following example shows the `storageProfile` section of the **fabric-profile
 Managed DevOps Pools provides you with several options for virtual machine images for running pipelines in your pool. You can create your pool using selected Azure Marketplace VM images, use your own custom images in an Azure Compute Gallery, or use the same Windows and Linux images used by Azure Pipelines Microsoft-hosted agents.
 
 > [!IMPORTANT]
-> [!INCLUDE [ubuntu-22-04-deprecated](./includes/ubuntu-20-04-image-deprecation.md)] 
+> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)] 
 
 :::image type="content" source="./media/configure-images/configure-pool-image.png" alt-text="Screenshot of configure image.":::
 

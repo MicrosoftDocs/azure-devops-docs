@@ -7,7 +7,7 @@ ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 05/14/2025
+ms.date: 06/06/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -25,13 +25,12 @@ This article shows how to manage your organization's security policies that dete
 
 [!INCLUDE [manage-policies](../../includes/manage-policies.md)]
 
-
 ## Restrict authentication methods
 
 To allow seamless access to your organization without repeatedly prompting for user credentials, applications can use authentication methods, like [OAuth](../../integrate/get-started/authentication/oauth.md), [SSH](../../repos/git/use-ssh-keys-to-authenticate.md), and [personal access token (PATs)](use-personal-access-tokens-to-authenticate.md). By default, all existing organizations allow access for all authentication methods.
 
-You can limit access to these authentication methods by disabling these application connection policies:
-- **Third-party application access via OAuth**: Enable Azure DevOps OAuth apps to access resources in your organization through OAuth. This policy is defaulted to *off* for all new organizations. If you want access to [Azure DevOps OAuth apps](../../integrate/get-started/authentication/azure-devops-oauth.md), enable this policy to ensure these apps can access resources in your organization. This policy doesn't impact [Microsoft Entra ID OAuth app access](../../integrate/get-started/authentication/entra-oauth.md).
+You can limit access to these authentication methods by disabling the following application connection policies:
+- **Third-party application access via OAuth**: Enable Azure DevOps OAuth apps to access resources in your organization through OAuth. This policy is defaulted to *off* for all new organizations. If you want access to [Azure DevOps OAuth apps](../../integrate/get-started/authentication/azure-devops-oauth.md), enable this policy to ensure these apps can access resources in your organization. This policy doesn't affect [Microsoft Entra ID OAuth app access](../../integrate/get-started/authentication/entra-oauth.md).
 - **SSH authentication**: Enable applications to connect to your organization's Git repos through SSH.
 - Tenant admins can [**restrict global personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-creation-of-global-pats-tenant-policy), [**restrict full-scoped personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats-tenant-policy), and [**enforce maximum personal access token lifespan**](manage-pats-with-policies-for-administrators.md#set-maximum-lifespan-for-new-pats-tenant-policy) through tenant-level policies on the _Microsoft Entra_ settings page. Add Microsoft Entra users or groups to exempt them from these policies.
 - Organization admins can [**restrict personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-personal-access-token-creation-organization-policy) in their respective organizations. Subpolicies allow admins to permit the creation of packaging-only PATs or the creation of any-scope PATs to allowlisted Microsoft Entra users or groups.
@@ -40,30 +39,41 @@ When you deny access to an authentication method, no application can access your
 
 ## Enforce conditional access policies 
 
-Microsoft Entra ID allows tenants to define which users can access Microsoft resources through their [Conditional Access policy (CAP) feature](/azure/active-directory/conditional-access/overview). Tenant admins can set conditions that users must meet to gain access, such as requiring that the user:
+Microsoft Entra ID lets tenant admins control which users can access Microsoft resources using [Conditional Access policies (CAPs)](/azure/active-directory/conditional-access/overview). Admins set specific conditions users must meet to gain access, such as:
 
-- Be a member of a specific Entra security group
-- Belong to a certain location and/or network
-- Use a specific operating system
-- Use an enabled device in a management system
+- Membership in a specific Microsoft Entra security group
+- Location or network requirements
+- Use of a particular operating system
+- Use of a managed and enabled device
 
-Depending on which conditions the user satisfies, you can then permit them access, require additional checks like multifactor authentication, or block access altogether. Learn more about [conditional access policies](/azure/active-directory/active-directory-conditional-access) and [how to set one up for Azure DevOps](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) in the Entra docs.
+Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. Learn more about [conditional access policies](/azure/active-directory/active-directory-conditional-access) and [how to set one up for Azure DevOps](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) in the Microsoft Entra documentation.
 
 ### CAP support on Azure DevOps
 
-When you sign in to the web portal of a Microsoft Entra ID-backed organization, Microsoft Entra ID always performs validation for any Conditional Access policies set by tenant administrators. Since [modernizing our web authentication stack to use Microsoft Entra tokens](https://devblogs.microsoft.com/devops/full-web-support-for-conditional-access-policies-across-azure-devops-and-partner-web-properties/), we now also enforce validation for Conditional Access policies on all interactive (web) flows. 
+When you sign in to the web portal of a Microsoft Entra ID-backed organization, Microsoft Entra ID validates all Conditional Access policies set by tenant administrators. After [modernizing our web authentication stack to use Microsoft Entra tokens](https://devblogs.microsoft.com/devops/full-web-support-for-conditional-access-policies-across-azure-devops-and-partner-web-properties/), Azure DevOps now enforces Conditional Access policy validation on all interactive (web) flows.
 
-* Using PATs on REST API calls that rely on Microsoft Entra requests requires that any sign-in policies set by tenant admins are also met. For example, if a sign-in policy requires a user sign in every seven days, you must also sign in every seven days to continue using PATs.
-* If you don't want any CAPs to be applied to Azure DevOps, remove Azure DevOps as a resource for the CAP.
-* We support MFA policies on web flows only. For non-interactive flows, if the user doesn't satisfy a CAP, they aren't prompted for MFA and are blocked instead.
+- Meet sign-in policies when using PATs on REST API calls that rely on Microsoft Entra.
+- Remove Azure DevOps as a resource from the CAP, which prevents CAPs from applying.
+- Enforce MFA policies on web flows only; block access for non-interactive flows if users don't meet a CAP.
 
-#### IP-based conditions
+### IP-based conditions
 
-If the **Enable IP Conditional Access policy validation on non-interactive flows** policy is enabled, we check IP fencing policies on non-interactive flows, such as when you use a PAT to make a REST API call.
+If you enable the **IP Conditional Access policy validation on non-interactive flows** policy, Azure DevOps checks IP fencing policies on non-interactive flows, such as when you use a PAT to make a REST API call.
 
-We support IP-fencing conditional access policies (CAPs) for both IPv4 and IPv6 addresses. If your IPv6 address is being blocked, ensure that the tenant administrator configured CAPs to allow your IPv6 address. Additionally, consider including the IPv4-mapped address for any default IPv6 address in all CAP conditions.
+Azure DevOps supports IP-fencing conditional access policies (CAPs) for both IPv4 and IPv6 addresses. If CAPs block your IPv6 address, ask your tenant administrator to update the policy to allow your IPv6 address. Also, consider including the IPv4-mapped address for any default IPv6 address in all CAP conditions.
 
-If users access the Microsoft Entra sign-in page via a different IP address than the one used to access Azure DevOps resources (common with VPN tunneling), check your VPN configuration or networking infrastructure. Ensure to include all used IP addresses within your tenant administrator's CAPs.
+If users access the Microsoft Entra sign-in page from a different IP address than the one used to access Azure DevOps resources (which can happen with VPN tunneling), review your VPN configuration or networking setup. Make sure your tenant administrator includes all relevant IP addresses in the CAPs.
+
+### Azure Resource Manager audience and CAPs
+
+Azure DevOps doesn't depend on the Azure Resource Manager (ARM) resource (`https://management.azure.com`) when you sign in or refresh Microsoft Entra access tokens. Previously, Azure DevOps required the ARM audience during sign-in and token refresh flows. This requirement meant that administrators had to allow all Azure DevOps users to bypass ARM CAPs to ensure access.
+
+Tokens for Azure DevOps no longer require the ARM audience. As a result, you can manage CAPs more effectively without configuring specific audience settings for ARM. This approach streamlines authentication, reduces token management complexity, and lets you apply security policies more consistently across your Azure environments. Organizations can focus on broader access controls, improving compliance and security posture without being limited by audience-specific configurations.
+
+> [!NOTE]
+> There are the following exceptions where continued access to ARM is still required:
+> - **Billing administrators** need access to ARM to set up billing and access subscriptions.
+> - **Service Connection creators** require access to ARM for ARM role assignments and updates to managed service identities (MSIs).
 
 ## Policies by Level
 

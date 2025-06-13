@@ -4,12 +4,12 @@ description: Learn how to connect to your feed and restore NuGet packages using 
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 01/14/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Restore NuGet packages from the command line (NuGet.exe)
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 This article guides you through setting up your project and restoring NuGet packages using the NuGet command-line interface.
 

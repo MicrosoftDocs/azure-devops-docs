@@ -7182,6 +7182,10 @@
     {
       "source_path": "docs/organizations/accounts/manage-personal-access-tokens-via-api.md",
       "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#pat-lifecycle-management-apis"
+    },
+    {
+      "source_path": "docs/organizations/accounts/get-list-of-organizations-connected-to-azure-active-directory.md",
+      "redirect_url": "/azure/devops/organizations/accounts/get-list-of-organizations-connected-to-microsoft-entra-id"
     }
   ]
 }

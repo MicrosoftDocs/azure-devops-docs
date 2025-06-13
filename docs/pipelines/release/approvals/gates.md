@@ -45,7 +45,7 @@ The **Delay before evaluation** is a time delay at the beginning of the gate eva
 The following gates are available by default:
 
 - **Invoke Azure Function**: Trigger execution of an Azure function and ensure a successful completion. For more information, see [Azure function task](/azure/devops/pipelines/tasks/reference/azure-function-v1).
-- **Query Azure mMnitor alerts**: Observe the configured Azure monitor alert rules for active alerts. For more information, see [Azure monitor task](/azure/devops/pipelines/tasks/reference/azure-monitor-v1).
+- **Query Azure Monitor alerts**: Observe the configured Azure monitor alert rules for active alerts. For more information, see [Azure monitor task](/azure/devops/pipelines/tasks/reference/azure-monitor-v1).
 - **Invoke REST API**: Make a call to a REST API and continue if it returns a successful response. For more information, see [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1).
 - **Query work items**: Ensure the number of matching work items returned from a query is within a threshold. For more information, see [Query Work Items task](/azure/devops/pipelines/tasks/reference/query-work-items-v0).
 - **Check Azure Policy compliance**: Assess Azure Policy compliance on resources within the scope of a given subscription and resource group, and optionally at a specific resource level. For more information, see [Check Azure Policy compliance task](/azure/devops/pipelines/tasks/reference/azure-policy-check-gate-v0).
