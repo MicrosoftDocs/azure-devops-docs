@@ -4,13 +4,13 @@ description: Learn the differences between project-scoped and organization-scope
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 10/24/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Feed scopes: Project vs organization feeds
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enables developers to manage their dependencies from a single feed. A feed acts as an organizational space to host various types of packages, giving you control over who can access it, whether it's team members within your organization or even public users.
 

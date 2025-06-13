@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 05/12/2025
+ms.date: 06/02/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -27,25 +27,25 @@ Microsoft-hosted agents are only available with Azure DevOps Services, which is 
 
 The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software.
 
+#### [Windows images](#tab/windows-images/)
+
+You can see the installed software for each Windows hosted agent image by choosing the **Included Software** link in the table.
+
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
 | Windows Server 2025 with Visual Studio 2022 (preview) | *windows-2025* | `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 | Windows Server 2019 with Visual Studio 2019 - See [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)| *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
-| Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-latest`<sup>1</sup> OR `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
-| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme)
-| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://aka.ms/ubuntu-20.04-readme)
-| macOS 15 Sequoia (preview) | *macOS-15* | `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
-| macOS 14 Sonoma | *macOS-14* | `macOS-latest` OR `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
-| macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
 
-The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
+The **windows-2019** image is the default image for classic build pipelines. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
+#### Windows image updates
 
-<sup>1</sup> The `ubuntu-latest` label is in the process of transitioning from `ubuntu-22.04` to `ubuntu-24.04`. Until the transition is complete, your pipelines using `ubuntu-latest` might still use `ubuntu-22.04`.
+* [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
+* [Windows Server 2025 with Visual Studio 2022 is in preview](https://aka.ms/azdo-windows)
+* [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
 
-#### Windows Server 2019 hosted image deprecation schedule
+##### Windows Server 2019 hosted image deprecation schedule
 
 The Windows Server 2019 image is scheduled to be deprecated:
 * Deprecation start date: June 1, 2025
@@ -54,44 +54,45 @@ The Windows Server 2019 image is scheduled to be deprecated:
 
 For more information, see [Upcoming Updates for Azure Pipelines Agents Images - Windows](https://aka.ms/azdo-windows)
 
-### Recent updates
+#### [Linux images](#tab/linux-images/)
 
-* The windows-2025 image is available in preview
+You can see the installed software for each Linux hosted agent image by choosing the **Included Software** link in the table.
+
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
+| --- | --- | --- | --- |
+| Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-latest` OR `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
+| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme) |
+
+The `ubuntu-latest` image is the default image for YAML pipelines if no image is specified. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
+
+#### Linux images updates
+
+* [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
+* The `ubuntu-latest` label is in the process of transitioning from `ubuntu-22.04` to `ubuntu-24.04`. Until the transition is complete, your pipelines using `ubuntu-latest` might still use `ubuntu-22.04`.
+* [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
+
+#### [macOS images](#tab/macos-images/)
+
+You can see the installed software for each macOS hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
+
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
+| --- | --- | --- | --- |
+| macOS 15 Sequoia (preview) | *macOS-15* | `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
+| macOS 14 Sonoma | *macOS-14* | `macOS-latest` OR `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
+| macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
+
+#### macOS images updates
+
+* [[macOS] Xcode 15.4 will be removed from macOS15 images on May 29th, 2025](https://github.com/actions/runner-images/issues/12195)
+* [The macOS-15 Sequoia image is available in preview](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os)
+* Apple silicon (ARM64) support for macOS image - for more information on joining the preview, see [Apple silicon (ARM64) support for macOS image](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
 * The macOS-12 Monterey image has been retired
-* The macOS-15 Sequoia image is available in preview
-* The Ubuntu-24.04 image is available
-* The macOS-12 Monterey image is deprecated and will be retired December 3, 2024.
-* The Ubuntu-22.04 image is available
-* The macOS-14 Sonoma image is available in preview
-* The macOS-11 Big Sur image is deprecated and will be retired June 28, 2024.
-* All Microsoft hosted agents will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS starting January 28. For more information, including potential breaking changes, see [Microsoft hosted agents use PowerShell 7.4](/azure/devops/release-notes/2024/sprint-233-update#microsoft-hosted-agents-use-powershell-74).
-* The macOS 13 image is generally available
-* The macOS 10.15 image is fully unsupported as of 4/24/2023
-* The Ubuntu 18.04 image is retired
-* [`ubuntu-latest` images use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
-* [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
-* [The Ubuntu 18.04 image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/6002).
-* [The macOS 10.15 image will begin deprecation on 5/31/22 and will be fully unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583).
-* [`windows-latest` images use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
-* [`macOS-latest` images use `macOS-14`](https://devblogs.microsoft.com/devops/upcoming-deprecation-of-macos-12-hosted-pipeline-image/).
-* [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
-* The Windows Server 2016 with Visual Studio 2017 image is deprecated and was retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
-* In December 2021, we removed the following Azure Pipelines hosted image:
-  * macOS X Mojave 10.14 (`macOS-10.14`)
-* In March 2020, we removed the following Azure Pipelines hosted images:
-  * Windows Server 2012R2 with Visual Studio 2015 (`vs2015-win2012r2`)
-  * macOS X High Sierra 10.13 (`macOS-10.13`)
-  * Windows Server Core 1803 (`win1803`)
 
-Customers are encouraged to migrate to newer versions or a [self-hosted agent](windows-agent.md).
-
-For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
-
-> [!NOTE]
-> The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
+* * *
 
 > [!IMPORTANT]
 > To request additional software to be installed on Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/runner-images), where we manage the scripts to generate various images.
+
 
 ### How to identify pipelines using a deprecated hosted image
 

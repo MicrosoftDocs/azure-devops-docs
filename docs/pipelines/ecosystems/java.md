@@ -12,16 +12,16 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use Azure Pipelines to automate the build, test, and deployment of Java applications. This article shows you how to set up a pipeline for Java projects using tools like Maven, Gradle, or Ant. You'll also learn how to deploy your app to Azure services such as App Service, Functions, or Kubernetes.
+Use Azure Pipelines to automate the build, test, and deployment of Java applications. This article explains how to set up a pipeline for Java projects using tools like Maven, Gradle, or Ant. You also learn how to deploy your app to Azure services like App Service, Functions, or Kubernetes.
 
-Use a pipeline to automatically:
+Use a pipeline to:
 
 * Build your project with [Maven](https://maven.apache.org/), [Gradle](https://gradle.org/), or [Ant](https://ant.apache.org/).
 * Run tests and code analysis tools.
 * Publish your app using a pipeline and Azure Artifacts.
 * Deploy your app to [Azure App Service](java-webapp.md), [Azure Functions](java-function.md), or [Azure Kubernetes Service](kubernetes/aks-template.md).
 
-If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).
+If you work on an Android projects, see [Build, test, and deploy Android apps](android.md).
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 1. Follow the wizard steps, starting by selecting **GitHub** as the location of your source code. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. Select your repository. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
+1. Select your repository. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install** to proceed.
 
 1. When you see the **Configure your pipeline** tab, select **Maven**, **Gradle**, or **Ant** depending on how you want to [build your code](#build-your-code).
 
@@ -95,9 +95,9 @@ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository 
 
 ::: moniker range=">= azure-devops"
 
-Use Azure Pipelines to build Java apps without setting up any infrastructure. Build on Windows, Linux, or macOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java preinstalled. To check which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
+Use Azure Pipelines to build Java apps without setting up infrastructure. Build on Windows, Linux, or macOS images. Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java preinstalled. To check which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
-To select the appropriate image, update the following snippet in your `azure-pipelines.yml` file.
+Select the appropriate image by updating the following snippet in your `azure-pipelines.yml` file.
 
 ```yaml
 pool:
@@ -106,17 +106,17 @@ pool:
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
 
-As an alternative to using Microsoft-hosted agents, set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save more time if you have a large repo or you run incremental builds.
+As an alternative to Microsoft-hosted agents, set up [self-hosted agents](../agents/agents.md#install) with Java installed. Use self-hosted agents to save time if you have a large repo or run incremental builds.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-Builds run on a [self-hosted agent](../agents/agents.md#install). Ensure Java and the tools needed to build with your chosen method are installed on the agent's host.
+Builds run on a [self-hosted agent](../agents/agents.md#install). Ensure Java and the tools required for your chosen build method are installed on the agent's host.
 
 You can select your agent pool and the agent capabilities in the **Agent pool** and **Agent Specification** sections of the **Options** tab in the pipeline editor.
 
-For example to specify the agent pool and an agent with the Maven capability, add the following snippet to your `azure-pipelines.yml` file.
+For example, specify the agent pool and an agent with the Maven capability by adding the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
 pool: 
@@ -164,7 +164,7 @@ For a Gradle build, add the following task to the `azure-pipelines.yml` file. Fo
 
 ```yaml
 steps:
-- task: Gradle@2
+- task: Gradle@3
   inputs:
     workingDirectory: ''
     gradleWrapperFile: 'gradlew'

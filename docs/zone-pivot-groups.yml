@@ -48,3 +48,11 @@ groups:
     title: ACR registry
   - id: docker-registry
     title: Docker registry
+- id: configure-ghazdo-bundled-individual-products
+  title: Configure GitHub Advanced Security for Azure DevOps
+  prompt: Choose your product experience
+  pivots:
+  - id: standalone-ghazdo
+    title: Standalone
+  - id: bundled-ghazdo
+    title: Bundled

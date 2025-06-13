@@ -5,13 +5,13 @@ ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 04/07/2022
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # What are feed views?
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Feed views enable developers to share a subset of package-versions with their consumers. A common use of feed views is to share package versions that have been tested and validated but hold back on packages that are still under development and/or didn't meet a certain quality bar.
 

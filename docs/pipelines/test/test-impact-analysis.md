@@ -122,7 +122,7 @@ You can influence the way that tests are either included or ignored during a tes
 
 When TIA opens a commit and sees an unknown file type, it falls back to running all tests. While this action is good from a safety perspective, tuning this behavior might be useful in some cases. For example:
 
-* Set the **TI\_IncludePathFilters** variable to specific paths to include only these paths in a repository for which you want TIA to apply. This action is useful when teams use a shared repository. Setting this variable disables TIA for all other paths not included in the setting.
+* Set the **TIA\_IncludePathFilters** variable to specific paths to include only these paths in a repository for which you want TIA to apply. This action is useful when teams use a shared repository. Setting this variable disables TIA for all other paths not included in the setting.
 * Set the **TIA\_IncludePathFilters** variable to specify file types that don't influence the outcome of tests and for which changes should be ignored. For example, to ignore changes to.csproj files set the variable to the value: **`!\*\*\\\*.csproj`**.
 
 > Use the [minimatch pattern](../tasks/file-matching-patterns.md) when setting variables, and separate multiple items with a semicolon.

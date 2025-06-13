@@ -4,12 +4,12 @@ description: Learn how to authenticate with your Azure Artifacts feed and restor
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 02/21/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Restore npm packages from the command line
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 This article guides you through authenticating with your Azure Artifacts feed and restoring npm packages from the command line.
 

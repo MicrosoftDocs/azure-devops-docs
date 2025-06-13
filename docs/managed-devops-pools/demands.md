@@ -1,7 +1,7 @@
 ---
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.date: 05/05/2025
+ms.date: 05/21/2025
 ---
 
 # Demands
@@ -86,16 +86,24 @@ pool:
 
 ## ImageVersionOverride
 
-If you're using an Azure Compute Gallery or Azure Marketplace [image](configure-images.md#choose-your-pools-image) and want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image. The following examples specify an `ImageVersionOverride` of `2.0.0`.
+If you want to use a specific version of the image instead of the version specified by your image configuration, you can use the `ImageVersionOverride` demand. For example, you can use it to validate a new image version before promoting it to be **latest** for an image.
 
-Configure the `ImageVersionOverride` demand in the `demands` section of your pipeline.
+> [!IMPORTANT]
+> When you use `ImageVersionOverride` to specify a different image version than what's configured in your [pool settings](./configure-images.md), each agent is started on demand using the specified image version.
+>
+> [Standby agents](./configure-scaling.md#standby-agent-mode) are provisioned using the image versions specified in your [pool's configuration](./configure-images.md), so if you use `ImageVersionOverride`, any standby agents won't match that version and a fresh agent is started.
+
+Configure the `ImageVersionOverride` demand in the `demands` section of your pipeline. The following example specifies an `ImageVersionOverride` of `20250427.1.0`.
 
 ```yml
 pool: 
   name: fabrikam-dev-pool # Name of Managed DevOps Pool
   demands:
-  - ImageVersionOverride -equals 2.0.0
+  - ImageVersionOverride -equals 20250427.1.0
 ```
+
+> [!TIP]
+> If you think a pipeline is failing due to an image update, follow the procedure in [Troubleshooting - Check to see if there has been an image update](./troubleshooting.md#check-to-see-if-there-has-been-an-image-update).
 
 ## CustomCapabilities
 

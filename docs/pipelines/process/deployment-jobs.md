@@ -240,7 +240,7 @@ jobs:
       deploy:
         steps:
           # No need to explicitly pass the connection details.
-        - task: KubernetesManifest@0
+        - task: KubernetesManifest@1
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
@@ -323,7 +323,7 @@ jobs:
       deploy:             
         steps: 
         - script: echo deploy updates... 
-        - task: KubernetesManifest@0 
+        - task: KubernetesManifest@1 
           inputs: 
             action: $(strategy.action)       
             namespace: 'default' 

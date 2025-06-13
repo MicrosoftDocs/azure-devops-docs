@@ -3,7 +3,7 @@ title: Customize Python pipelines
 description:  See how to use Azure Pipelines to customize, build, test, package, and deliver Python apps and code.
 ms.topic: conceptual
 ms.custom: devx-track-python
-ms.date: 07/12/2024
+ms.date: 06/09/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 This article describes how to customize building, testing, packaging, and delivering Python apps and code in Azure Pipelines. To create your first pipeline with Python, see the [Python quickstart](python.md).
 
 ::: moniker range=">=azure-devops"
-With [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines, you can build your Python apps without having to set up your own infrastructure. Tools that you commonly use to build, test, and run Python apps, including `pip`, are preinstalled.
+With [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines, you can build Python apps without setting up your own infrastructure. Tools that you commonly use to build, test, and run Python apps, including `pip`, are preinstalled.
 
 You might need to [request the free grant of parallel jobs](https://aka.ms/azpipelines-parallelism-request) or purchase a [parallel job](../licensing/concurrent-jobs.md) to run your pipelines.
 ::: moniker-end
@@ -196,10 +196,10 @@ Add the [Publish code coverage results task](/azure/devops/pipelines/tasks/refer
 
 ## Package and deliver code
 
-To authenticate with `twine`, use the [Python twine upload authenticate task](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) to store authentication credentials in the `PYPIRC_PATH` environment variable.
+Authenticate with `twine` by using the [Python twine upload authenticate task](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) to store authentication credentials in the `PYPIRC_PATH` environment variable.
 
 ```yaml
-- task: TwineAuthenticate@0
+- task: TwineAuthenticate@1
   inputs:
     artifactFeed: '<Azure Artifacts feed name>'
     pythonUploadServiceConnection: '<twine service connection from external organization>'

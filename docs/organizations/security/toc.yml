@@ -73,7 +73,7 @@
       href: ../accounts/disconnect-organization-from-azure-ad.md
     - name: Get list of organizations backed by Entra ID
       displayName: record, catalog, inventory, name, owner, URL, ID
-      href: ../accounts/get-list-of-organizations-connected-to-azure-active-directory.md
+      href: ../accounts/get-list-of-organizations-connected-to-microsoft-entra-id.md
 - name: Manage user access (on-premises)
   items:
   - name: Remove users from Azure DevOps
