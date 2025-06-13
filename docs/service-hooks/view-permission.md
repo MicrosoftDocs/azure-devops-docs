@@ -15,9 +15,7 @@ ms.date: 06/13/2025
 # Set View permission for a group in Service Hooks
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-By default, only Project Administrators have _View_ or _Edit_ permissions. To grant these permissions to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
-
-![Screenshot showing ServiceHooks page without permissions.](./media/permissions/no-permission-service-hooks.png)
+This article explains how to grant _View_ or _Edit_ permissions for Service Hooks in Azure DevOps. By default, only Project Administrators have these permissions. To assign them to other users or groups, use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API.
 
 The `ServiceHooks` security namespace ID is defined under [List Security Namespaces](../organizations/security/manage-tokens-namespaces.md#list-security-namespaces).
 
