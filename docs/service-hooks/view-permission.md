@@ -135,7 +135,7 @@ The `ServiceHooks` security namespace ID is defined under [List Security Namespa
 
 3. Get permission token to see your changes.
     ```
-    > az devops security permission list --id cb594ebe-87dd-4fc9-ac2c-6a10a4c92046 --subject <Group or user descriptor> --output table
+    > az devops security permission list --id 00000000-0000-0000-0000-000000000000 --subject <Group or user descriptor> --output table
 
     Token                                                   Effective Allow    Effective Deny
     ------------------------------------------------------  -----------------  ----------------
