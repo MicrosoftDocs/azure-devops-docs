@@ -169,6 +169,12 @@ The following table describes the namespaces that manage object-level permission
    :::column span="2":::
       [Manages dashboard object-level permissions](permissions.md#dashboards-object-level) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
       <br/>
+      **Token format for Team Dashboard permissions**: `$/PROJECT_ID/Team_ID/Dashboard_ID`  
+      **Example**: `$/xxxxxxx-3ba9-4eca-b8d0-b8a51abaf2dc/xxxxxxx-9b78-4d75-9805-ffe28e74b764/xxxxxxxx-8b8e-4c29-aa98-28543a9947a5` 
+      <br/>
+    **Token format for Project Dashboard permissions**: `$/PROJECT_ID/00000000-0000-0000-0000-000000000000/Dashboard_ID`  
+      **Example**: `$/7c545ed8-3ba9-4eca-b8d0-b8a51abaf2dc/00000000-0000-0000-0000-000000000000/a80ab6d7-c373-4f61-a77f-f9f9e2cc865a`
+      <br/> 
       **ID:** `8adf73b7-389a-4276-b638-fe1653f7efc7`
    :::column-end:::
 :::row-end:::
@@ -277,6 +283,10 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
    :::column span="2":::
       [Manages permissions for Delivery Plans](permissions.md) to view, edit, delete, and manage delivery plans. You can manage these permissions through the [web portal for each plan](set-permissions-access-work-tracking.md).      
+      <br/>
+      **Token Format**: `Plan/PROJECT_ID/DeliveryPlan_ID` 
+      <br/><br/>
+      **Example**: `Plan/XXXXXXX-3ba9-4eca-b8d0-b8a51abaf2dc/XXXXXXXX-9c1b-443f-ae9a-e8d6a24e9be7`   
       <br/>
       **ID:** `bed337f8-e5f3-4fb9-80da-81e17d06e7a8`
    :::column-end:::
