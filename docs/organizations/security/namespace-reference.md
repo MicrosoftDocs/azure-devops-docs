@@ -171,10 +171,10 @@ The following table describes the namespaces that manage object-level permission
       <br/>
       **Token format for Team Dashboard permissions**: `$/PROJECT_ID/Team_ID/Dashboard_ID`  
       **Example**: `$/xxxxxxx-3ba9-4eca-b8d0-b8a51abaf2dc/xxxxxxx-9b78-4d75-9805-ffe28e74b764/xxxxxxxx-8b8e-4c29-aa98-28543a9947a5` 
-      <br/>
+      <br/><br/>
     **Token format for Project Dashboard permissions**: `$/PROJECT_ID/00000000-0000-0000-0000-000000000000/Dashboard_ID`  
-      **Example**: `$/7c545ed8-3ba9-4eca-b8d0-b8a51abaf2dc/00000000-0000-0000-0000-000000000000/a80ab6d7-c373-4f61-a77f-f9f9e2cc865a`
-      <br/> 
+      **Example**: `$/xxxxxxxx-3ba9-4eca-b8d0-b8a51abaf2dc/00000000-0000-0000-0000-000000000000/xxxxxxxx-c373-4f61-a77f-f9f9e2cc865a`
+      <br/><br/>
       **ID:** `8adf73b7-389a-4276-b638-fe1653f7efc7`
    :::column-end:::
 :::row-end:::
@@ -207,6 +207,7 @@ The following table describes the namespaces that manage object-level permission
       The `Administer` permission was divided into several more granular permissions [in 2017](/previous-versions/azure/devops/2017/jan-25-team-services#repo-admin-permission-changes), and shouldn't be used.
       <br/>
       **Token format for project-level permissions**: `repoV2/PROJECT_ID`  
+      <br/>
       You need to append `RepositoryID` to update repository-level permissions.  
       <br/>
       **Token format for repository-specific permissions**: `repoV2/PROJECT_ID/REPO_ID`  
