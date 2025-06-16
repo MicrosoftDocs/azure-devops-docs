@@ -149,7 +149,7 @@ Microsoft Entra ID and Microsoft accounts both support cloud authentication. For
 
 For on-premises environments, use Active Directory to efficiently manage user access. Learn more in [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups).
 
-### Authentication
+### Authenticate programmatically
 
 Access your Azure DevOps organization programmatically without repeatedly entering your username and password by choosing one of the available [authentication methods](../../integrate/get-started/authentication/authentication-guidance.md). Use the following methods to automate workflows, integrate with REST APIs, or build custom applications:
 
