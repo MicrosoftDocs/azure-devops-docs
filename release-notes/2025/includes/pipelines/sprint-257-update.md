@@ -56,7 +56,7 @@ When you navigate to the _Schedule triggers_, you see there are triggers defined
 When you navigate to the _Resource triggers_ section, you see the defined resource triggers and their details.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of Pipelines resource triggers.](../../media/257-pipelines-04.png "Screenshot of Pipelines resource triggers section.")](../../media/257-pipelines-04.png#lightbox)
+> [![Screenshot of Pipelines resource triggers section.](../../media/257-pipelines-04.png "Screenshot of Pipelines resource triggers section.")](../../media/257-pipelines-04.png#lightbox)
 
 You can switch branches, from `main` to `feature`, to see what triggers you defined for the `feature` branch.
 
@@ -67,7 +67,7 @@ You can switch branches, from `main` to `feature`, to see what triggers you defi
 > [![Screenshot of Pipelines scheduled triggers.](../../media/257-pipelines-06.png "Screenshot of Pipelines scheduled triggers.")](../../media/257-pipelines-06.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of Pipelines resource triggers.](../../media/257-pipelines-07.png "Screenshot of Pipelines continuous resource triggers.")](../../media/257-pipelines-07.png#lightbox)
+> [![Screenshot of Pipelines continuous resource triggers.](../../media/257-pipelines-07.png "Screenshot of Pipelines continuous resource triggers.")](../../media/257-pipelines-07.png#lightbox)
 
 In the _Resource triggers_ tab, when not on the default branch, you get a warning telling you the triggers defined for this branch are ignored.
 
