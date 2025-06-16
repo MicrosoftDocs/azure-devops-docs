@@ -41,7 +41,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td rowspan="14"><a href="2025/sprint-257-update.md" data-raw-source="[16 June 2025](2025/sprint-257-update.md)"> June 16 2025</a></td>
     <td>GitHub Advanced Security is now available as GitHub Secret Protection and Code Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Restrict personal access token (PAT) creation organization policy now in public preview</td><td>General</td><td>Future</td></tr>
-    <td>Removal of expired Azure DevOps OAuth Apps</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Removal of expired Azure DevOps OAuth Apps</td><td>General</td><td>N/A</td></tr>
     <td>Azure DevOps login flow no longer relies on Azure Resource Manager audience</td><td>General</td><td>Future</td></tr>
     <td>New Microsoft Entra OAuth scopes</td><td>General</td><td>Future</td></tr>
     <td>Request Access URL availability</td><td>General</td><td>Future</td></tr>
