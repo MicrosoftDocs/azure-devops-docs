@@ -16,7 +16,7 @@ YAML pipelines provide you multiple powerful options to define when your pipelin
 This sprint, were introducing a **Triggers** page that gives you an overview of what triggers you have defined in your pipeline.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of Pipelines Triggers.](../../media/257-pipelines-01.png "Screenshot of Pipelines Triggers.")](../../media/257-pipelines-01.png#lightbox)
+> [![Screenshot of Pipelines Triggers.](../../media/257-pipelines-01.png "Screenshot of Pipelines Triggers page.")](../../media/257-pipelines-01.png#lightbox)
 
 Imagine you have the following YAML pipeline defined in the `main` branch of a repo. Consider there's also a `feature` branch that has the same YAML pipeline code.
 
@@ -42,7 +42,7 @@ resources:
 When you navigate to the **Triggers** page, you see the following
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of Continuous integration triggers.](../../media/257-pipelines-02.png "Screenshot of Continuous integration triggers.")](../../media/257-pipelines-02.png#lightbox)
+> [![Screenshot of Continuous integration triggers.](../../media/257-pipelines-02.png "Screenshot of triggers page select branch with default branch main.")](../../media/257-pipelines-02.png#lightbox)
 
 Notice the default branch of the pipeline, `main`, is preselected. 
 
@@ -51,12 +51,12 @@ You see there is a _Continuous integration trigger_ for this branch, and it's de
 When you navigate to the _Schedule triggers_, you see there are triggers defined, and you can see their details.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of Pipelines schedule triggers.](../../media/257-pipelines-03.png "Screenshot of Pipelines schedule triggers.")](../../media/257-pipelines-03.png#lightbox)
+> [![Screenshot of Pipelines schedule triggers.](../../media/257-pipelines-03.png "Screenshot of Pipelines schedule triggers details.")](../../media/257-pipelines-03.png#lightbox)
 
 When you navigate to the _Resource triggers_ section, you see the defined resource triggers and their details.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of Pipelines resource triggers.](../../media/257-pipelines-04.png "Screenshot of Pipelines resource triggers.")](../../media/257-pipelines-04.png#lightbox)
+> [![Screenshot of Pipelines resource triggers.](../../media/257-pipelines-04.png "Screenshot of Pipelines resource triggers section.")](../../media/257-pipelines-04.png#lightbox)
 
 You can switch branches, from `main` to `feature`, to see what triggers you defined for the `feature` branch.
 

@@ -10,4 +10,4 @@ ms.topic: include
 - [Removal of expired Azure DevOps OAuth Apps](#removal-of-expired-azure-devops-oauth-apps)
 - [Azure DevOps login flow no longer relies on Azure Resource Manager audience](#azure-devops-login-flow-no-longer-relies-on-azure-resource-manager-audience)
 - [New Microsoft Entra OAuth scopes](#new-microsoft-entra-oauth-scopes)
-- [Request Access URL availability](request-access-url-availability)
+- [Request Access URL availability](#request-access-url-availability)
