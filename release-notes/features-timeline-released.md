@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 5/19/2025
+ms.date: 6/16/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,24 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="14"><a href="2025/sprint-257-update.md" data-raw-source="[16 June 2025](2025/sprint-257-update.md)"> June 16 2025</a></td>
+    <td>GitHub Advanced Security is now available as GitHub Secret Protection and Code Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Restrict personal access token (PAT) creation organization policy now in public preview</td><td>General</td><td>Future</td></tr>
+    <td>Removal of expired Azure DevOps OAuth Apps</td><td>General</td><td>N/A</td></tr>
+    <td>Azure DevOps login flow no longer relies on Azure Resource Manager audience</td><td>General</td><td>Future</td></tr>
+    <td>New Microsoft Entra OAuth scopes</td><td>General</td><td>Future</td></tr>
+    <td>Request Access URL availability</td><td>General</td><td>Future</td></tr>
+    <td>Managed DevOps Pools - Image Deprecations</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>New Triggers page</td><td>Pipelines</td><td>Future</td></tr>
+    <td>StringList parameter type</td><td>Pipelines</td><td>Future</td></tr>
+    <td>See the full YAML code of a pipeline run</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Introducing New Test Plans directory</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Advanced Test Case result history</td><td>Test Plans</td><td>Future</td></tr>
+    <td>View Test Case State in Execute tab</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Default resume for paused test case</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+
 <tr>
     <td rowspan="7"><a href="2025/sprint-256-update.md" data-raw-source="[19 May 2025](2025/sprint-256-update.md)"> May 19 2025</a></td>
     <td>Advanced Security now accepts results with URI locations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
