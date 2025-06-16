@@ -221,8 +221,14 @@ sections:
         answer: |
           A: By default, [Access via Microsoft Entra FAQs. Microsoft Entra guests can't search the Microsoft Entra ID in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#no-identities).    
   
-  - name: Change app access policies for your organization
+  - name: Change application access policies for your organization
     questions:      
+      
+      - question: |
+          Q: Can I still use PATs for authentication?
+        answer: |
+          A: You can still use personal access tokens (PATs) for authentication, but we recommend using the more secure method, Microsoft Entra tokens, whenever possible. For more information, see [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md).
+
       - question: |
           Q: If I deny access to one authentication method in one organization, does that affect all the organizations that I own?
         answer: |
