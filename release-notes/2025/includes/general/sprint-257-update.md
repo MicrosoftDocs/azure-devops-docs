@@ -29,3 +29,7 @@ There remain a couple of notable exceptions. The following ​user groups may ne
 
 ### New Microsoft Entra OAuth scopes
 Azure DevOps has introduced two new Microsoft Entra OAuth scopes, vso.pats and vso.pats_manage to enhance security and control over personal access token (PAT) lifecycle management APIs. These scopes are now required for delegated flows that involve PAT creation and management, replacing the previously broad user_impersonation scope. This change enables app owners to reduce the permissions needed by their app to access PAT APIs. Downscope your `user_impersonation` apps to the minimum scopes needed today!
+
+### Request Access URL availability
+
+Azure DevOps administrators can disable the [**Request Access**](/azure/devops/organizations/accounts/disable-request-access-policy?view=azure-devops) policy and provide a URL for users to request access to an organization or project. This URL, previously available only to new users, is now also shown to existing users on the 404 page. To maintain confidentiality, the request access URL is displayed regardless of the project's existence.
