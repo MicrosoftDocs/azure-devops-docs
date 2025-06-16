@@ -555,7 +555,7 @@ Event: A deployment approval is completed.
     * `1` - Predeployment
     * `2` - Post-deployment
 * `releaseEnvironmentId`: Include only events for completed deployments for a specific environment.
-* `releaseDefinitionId`: Include only events for completed deployments for a specific definition.
+* `releaseDefinitionId`: Include only events for completed deployments for a specific pipeline.
 
 #### Sample payload
 
@@ -879,10 +879,10 @@ Event: A deployment finishes.
 * `releaseEnvironmentId`: Include only events for completed deployments for a specific environment.
 * `releaseDefinitionId`: Include only events for completed deployments for a specific pipeline.
 * `releaseEnvironmentStatus`: Include only events for completed deployments with a specific status.
-  * Valid values: 
+  * Valid values:
+    * `4` - Succeeded
     * `8` - Canceled
     * `16` - Rejected
-    * `4` - Succeeded
     * `128` - Partially succeeded
 
 #### Sample payload
@@ -941,8 +941,8 @@ Event: A deployment starts.
 
 #### Settings
 
-* `releaseEnvironmentId`: Include only events for completed deployments for a specific environment.
-* `releaseDefinitionId`: Include only events for completed deployments for a specific definition.
+* `releaseEnvironmentId`: Include only events for deployments in a specific environment.
+* `releaseDefinitionId`: Include only events for deployments for a specific pipeline.
 
 #### Sample payload
 
