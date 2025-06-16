@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 06/02/2025
+ms.date: 06/16/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -33,7 +33,7 @@ You can see the installed software for each Windows hosted agent image by choosi
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2025 with Visual Studio 2022 (preview) | *windows-2025* | `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
+| Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 | Windows Server 2019 with Visual Studio 2019 - See [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)| *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
 
@@ -41,8 +41,10 @@ The **windows-2019** image is the default image for classic build pipelines. For
 
 #### Windows image updates
 
+* [Windows Server 2025 with Visual Studio 2022 image is GA](https://aka.ms/azdo-windows)
+  > [!NOTE]
+  > The `windows-latest` label is in the process of transitioning from `windows-2022` to `windows-2025`. Until the transition is complete, your pipelines using `windows-latest` might still use `windows-2022`.
 * [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
-* [Windows Server 2025 with Visual Studio 2022 is in preview](https://aka.ms/azdo-windows)
 * [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
 
 ##### Windows Server 2019 hosted image deprecation schedule
