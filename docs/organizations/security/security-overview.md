@@ -59,7 +59,7 @@ Review through all the security policies available to administrators to restrict
 
 - **Disable *“Allow public projects”*:** Disable the option to [create public projects](../projects/make-project-public.md). Switch project visibility from public to private as needed. Users who never signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes.
 - **[Restrict unnecessary authentication mechanisms](../accounts/change-application-access-policies.md)** and limit who has access to allowed authentication.
-- **Limit access with Conditional Access Policies**: Protect your organization by [defining Conditional Access policies (CAPs)](/entra/identity/conditional-access/overview) on Microsoft Entra that react to sign-in events and request additional actions before a user is granted access.
+- **Limit access with Conditional Access Policies**: Protect your organization by [defining Conditional Access policies (CAPs)](/entra/identity/conditional-access/overview) on Microsoft Entra that react to sign-in events and request other actions before a user is granted access.
   - Turn on the organization policy to [enable IP CAP validation on non-interactive flows](../accounts/change-application-access-policies.md#cap-support-on-azure-devops).
   - Add an extra layer of security by [enabling Microsoft Entra multifactor authentication](/entra/identity/authentication/tutorial-enable-azure-mfa) after sign-in. 
 
@@ -112,9 +112,9 @@ To scope permissions effectively, do the following actions:
 
 ## Ditch service accounts
 
-Historically, service accounts were used in conjunction with [personal access tokens (PATs)](../accounts/use-personal-access-tokens-to-authenticate.md) to build tools that run automated processes and services. As a result, they often have elevated permissions. Before choosing to continue building with a service account, explore if it's still the right authentication approach for you.
+Historically, service accounts were used with [personal access tokens (PATs)](../accounts/use-personal-access-tokens-to-authenticate.md) to build tools that run automated processes and services. As a result, they often have elevated permissions. Before choosing to continue building with a service account, explore if it's still the right authentication approach for you.
 
-- **Give up your PATs for Microsoft Entra tokens:** [Microsoft Entra tokens are short-lived (one-hour) tokens](../../integrate/get-started/authentication/entra.md) that can be used in place of most PATs. PATs are popular due to their ease of use, but they are also a popular vector of attack due to the ease in which they are leaked.
+- **Replace your PATs with Microsoft Entra tokens:** [Microsoft Entra tokens are short-lived (one-hour) tokens](../../integrate/get-started/authentication/entra.md) that can be used in place of most PATs. PATs are popular due to their ease of use, but they're also a popular vector of attack due to the ease in which they're leaked.
 - Read up on all the [authentication mechanisms available](../../integrate/get-started/authentication/authentication-guidance.md) before choosing one.
 - **Use service principals instead:** [Service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md) represent a Microsoft Entra application's identity and have their own permissions that define what the application can do in a given tenant. Service principals are the recommended choice to manage the permissions needed by the app. Replace any service accounts' PATs with Microsoft Entra tokens acquired for the service principal.
   - Take it one step further by authenticating using a managed identity if you're building on top of Azure resources. Managed identities take care of all credential management for you.
