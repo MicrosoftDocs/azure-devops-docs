@@ -1,7 +1,7 @@
 ---
-title: Service hooks events
+title: Service Hook Events
 titleSuffix: Azure DevOps  
-description: Reference article for service hook events. 
+description: Find information about events in Azure DevOps projects that service hooks can trigger on. See sample payloads and settings to use during subscription creation. 
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-service-hooks
@@ -10,10 +10,11 @@ ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 09/18/2024
+ms.date: 06/16/2025
+# customer intent: As a developer, I want to access reference information about events in Azure DevOps projects so that I can programmatically create service hook subscriptions that take action when events happen.
 ---
 
-# Service hooks events
+# Service hook events
 
 [!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
 
@@ -78,11 +79,11 @@ The following types of events are available for use in service hooks. For a list
   * [Service connection updated](#service-connection-updated)
 
 * **Work item**
-  * [Work item commented on](#workitem.commented)
   * [Work item created](#workitem.created)
   * [Work item deleted](#workitem.deleted)
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
+  * [Work item commented on](#workitem.commented)
 
 ::: moniker range="=azure-devops"
 
@@ -94,7 +95,7 @@ The following types of events are available for use in service hooks. For a list
 ::: moniker-end
 
 > [!NOTE]
-> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving webhook notifications from Azure DevOps.
+> The [NuGet WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving webhook notifications from Azure DevOps.
 
 ## Build and release
 
@@ -112,8 +113,8 @@ Event: A build finishes.
 
 #### Settings
 
-* `definitionName`: Filter events to include only completed builds for a specific pipeline.
-* `buildStatus`: Filter events to include only completed builds that have a specific completion status.
+* `definitionName`: Include only events for completed builds for a specific pipeline.
+* `buildStatus`: Include only events for completed builds that have a specific completion status.
   * Valid values: 
     * `Succeeded` 
     * `PartiallySucceeded` 
@@ -340,7 +341,7 @@ Event: A release is abandoned.
 
 #### Settings
 
-* `releaseDefinitionId`: Filter events to include only completed deployments for a specific pipeline.
+* `releaseDefinitionId`: Include only events for completed deployments for a specific pipeline.
 
 #### Sample payload
 
@@ -381,7 +382,7 @@ Event: A release is created.
 
 #### Settings
 
-* `releaseDefinitionId`: Filter events to include only completed deployments for a specific pipeline.
+* `releaseDefinitionId`: Include only events for completed deployments for a specific pipeline.
 
 #### Sample payload
 
@@ -545,16 +546,16 @@ Event: A deployment approval is completed.
 
 #### Settings
 
-* `releaseApprovalStatus`: Filter events to include only deployments with an approval of a specific status.
+* `releaseApprovalStatus`: Include only events for deployments with an approval of a specific status.
   * Valid values: 
     * `2` - Approved
     * `4` - Rejected
-* `releaseApprovalType`: Filter events to include only deployments for which an approval of a specific type is requested.
+* `releaseApprovalType`: Include only events for deployments for which an approval of a specific type is requested.
   * Valid values: 
     * `1` - Predeployment
     * `2` - Post-deployment
-* `releaseEnvironmentId`: Filter events to include only completed deployments for a specific environment.
-* `releaseDefinitionId`: Filter events to include only completed deployments for a specific definition.
+* `releaseEnvironmentId`: Include only events for completed deployments for a specific environment.
+* `releaseDefinitionId`: Include only events for completed deployments for a specific definition.
 
 #### Sample payload
 
@@ -625,12 +626,12 @@ Event: A deployment approval is requested.
 
 #### Settings
 
-* `releaseApprovalType`: Filter events to include only deployments for which an approval of a specific type is requested.
+* `releaseApprovalType`: Include only events for deployments for which an approval of a specific type is requested.
   * Valid values: 
     * `1` - Predeployment
     * `2` - Post-deployment
-* `releaseEnvironmentId`: Filter events to include only completed deployments for a specific environment.
-* `releaseDefinitionId`: Filter events to include only completed deployments for a specific pipeline.
+* `releaseEnvironmentId`: Include only events for completed deployments for a specific environment.
+* `releaseDefinitionId`: Include only events for completed deployments for a specific pipeline.
 
 #### Sample payload
 
@@ -875,9 +876,9 @@ Event: A deployment finishes.
 
 #### Settings
 
-* `releaseEnvironmentId`: Filter events to include only completed deployments for a specific environment.
-* `releaseDefinitionId`: Filter events to include only completed deployments for a specific pipeline.
-* `releaseEnvironmentStatus`: Filter events to include only completed deployments with a specific status.
+* `releaseEnvironmentId`: Include only events for completed deployments for a specific environment.
+* `releaseDefinitionId`: Include only events for completed deployments for a specific pipeline.
+* `releaseEnvironmentStatus`: Include only events for completed deployments with a specific status.
   * Valid values: 
     * `8` - Canceled
     * `16` - Rejected
@@ -940,8 +941,8 @@ Event: A deployment starts.
 
 #### Settings
 
-* `releaseEnvironmentId`: Filter events to include only completed deployments for a specific environment.
-* `releaseDefinitionId`: Filter events to include only completed deployments for a specific definition.
+* `releaseEnvironmentId`: Include only events for completed deployments for a specific environment.
+* `releaseDefinitionId`: Include only events for completed deployments for a specific definition.
 
 #### Sample payload
 
@@ -1098,7 +1099,7 @@ Event: A check is updated.
 
 #### Settings
 
-* `resourceType`: Filter events to include only checks updated for a specific resource type.
+* `resourceType`: Include only events for checks updated for a specific resource type.
 
 #### Sample payload
 
@@ -1153,7 +1154,7 @@ Event: An elastic agent pool is resized.
 
 #### Settings
 
-* `poolId`: Filter events to include only an elastic agent pool with a specific ID.
+* `poolId`: Include only events for an elastic agent pool with a specific ID.
 
 #### Sample payload
 
@@ -1207,9 +1208,9 @@ Event: A pipeline run starts waiting for manual intervention.
 
 #### Settings
 
-* `project`: Filter events to include only manual interventions pending in a specific project.
-* `interventionName`: Filter events to include only manual interventions with a specific name pattern.
-* `status`: Filter events to include only manual interventions with a specific status.
+* `project`: Include only events for manual interventions pending in a specific project.
+* `interventionName`: Include only events for manual interventions with a specific name pattern.
+* `status`: Include only events for manual interventions with a specific status.
 
 #### Sample payload
 
@@ -1244,7 +1245,7 @@ Event: A project-level agent pool is created.
 
 #### Settings
 
-* `project`: Filter events to include only project-level agent pools created in a specific project.
+* `project`: Include only events for project-level agent pools created in a specific project.
 
 #### Sample payload
 
@@ -1296,7 +1297,7 @@ Event: A project-level agent pool is updated.
 
 #### Settings
 
-* `queueId`: Filter events to include only project-level agent pools with a specific ID.
+* `queueId`: Include only events for project-level agent pools with a specific ID.
 
 #### Sample payload
 
@@ -1350,13 +1351,13 @@ Event: The overall status of a pipeline run changes. A new run starts, or a run 
 
 #### Settings
 
-* `pipelineId`: Filter events to include only a specific pipeline.
-* `runStateId`: Filter events based on the new state of the run.
+* `pipelineId`: Include only events for a specific pipeline.
+* `runStateId`: Include only events for runs with a specific new state.
   * Valid values: 
     * `InProgress` 
     * `Canceling` 
     * `Completed` 
-* `runResultId`: Filter events based on the result of the run.
+* `runResultId`: Include only events for runs with a specific result.
   * Valid values: 
     * `Canceled` 
     * `Failed` 
@@ -1415,15 +1416,15 @@ Event: A new stage starts in a pipeline run, or a stage transitions to a canceli
 
 #### Settings
 
-* `pipelineId`: Filter events to include only a specific pipeline.
-* `stageNameId`: Filter events to include only a specific stage name.
-* `stageStateId`: Filter events to include only a stage in a specific new state.
+* `pipelineId`: Include only events for a specific pipeline.
+* `stageNameId`: Include only events for a specific stage name.
+* `stageStateId`: Include only events for a stage in a specific new state.
   * Valid values: 
     * `NotStarted` 
     * `Waiting` 
     * `Running`
     * `Completed`
-* `stageResultId`: Filter events based on the result of the stage.
+* `stageResultId`: Include only events for stages with a specific result.
   * Valid values: 
     * `Canceled`
     * `Failed`
@@ -1435,30 +1436,30 @@ Event: A new stage starts in a pipeline run, or a stage transitions to a canceli
 
 ```json
 {
-  "id": "00000000-0000-0000-0000-000000000000ac1dd6da-af30-43cb-8434-e1005864b0a3",
+  "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
   "eventType": "ms.vss-pipelines.stage-state-changed-event",
   "publisherId": "pipelines",
   "message": {
     "text": "Run 2 stage __default succeeded.",
-    "html": "Run 2 stage <a href=\"https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_build/results?buildId=2\">__default</a> succeeded.",
-    "markdown": "Run 2 stage [__default](https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_build/results?buildId=2) succeeded."
+    "html": "Run 2 stage <a href=\"https://codedev.ms/org/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/_build/results?buildId=2\">__default</a> succeeded.",
+    "markdown": "Run 2 stage [__default](https://codedev.ms/org/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/_build/results?buildId=2) succeeded."
   },
   "detailedMessage": {
     "text": "Run 2 stage __default succeeded.",
-    "html": "Run 2 stage <a href=\"https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_build/results?buildId=2\">__default</a> succeeded.",
-    "markdown": "Run 2 stage [__default](https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_build/results?buildId=2) succeeded."
+    "html": "Run 2 stage <a href=\"https://codedev.ms/org/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/_build/results?buildId=2\">__default</a> succeeded.",
+    "markdown": "Run 2 stage [__default](https://codedev.ms/org/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/_build/results?buildId=2) succeeded."
   },
   "resource": {
     "stage": {
       "_links": {
         "web": {
-          "href": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_build/results?buildId=2"
+          "href": "https://codedev.ms/org/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/_build/results?buildId=2"
         },
         "pipeline.web": {
-          "href": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_build/definition?definitionId=2"
+          "href": "https://codedev.ms/org/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/_build/definition?definitionId=2"
         }
       },
-      "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
+      "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
       "name": "__default",
       "displayName": null,
       "state": "completed",
@@ -1466,7 +1467,7 @@ Event: A new stage starts in a pipeline run, or a stage transitions to a canceli
     },
     "run": {
       "pipeline": {
-        "url": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_apis/Pipelines/2?revision=2",
+        "url": "https://codedev.ms/org/d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4/_apis/Pipelines/2?revision=2",
         "id": 2,
         "revision": 2,
         "name": "TEST-CI",
@@ -1480,7 +1481,7 @@ Event: A new stage starts in a pipeline run, or a stage transitions to a canceli
       "name": "2"
     },
     "pipeline": {
-      "url": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_apis/Pipelines/2?revision=2",
+      "url": "https://codedev.ms/org/d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4/_apis/Pipelines/2?revision=2",
       "id": 2,
       "revision": 2,
       "name": "TEST-CI",
@@ -1493,14 +1494,14 @@ Event: A new stage starts in a pipeline run, or a stage transitions to a canceli
         {
           "author":
           {
-            "name": "Fabrikam John",
-            "email": "john@fabrikamfiber.com",
+            "name": "Himani Maharjan",
+            "email": "himani@fabrikamfiber.com",
             "date": "2024-11-11T15:09:21Z"
           },
           "committer":
           {
-            "name": "Fabrikam John",
-            "email": "john@fabrikamfiber.com",
+            "name": "Himani Maharjan",
+            "email": "himani@fabrikamfiber.com",
             "date": "2024-11-11T15:09:21Z"
           },
           "message": "Added Viva support"
@@ -1512,7 +1513,7 @@ Event: A new stage starts in a pipeline run, or a stage transitions to a canceli
   "resourceVersion": "5.1-preview.1",
   "resourceContainers": {
     "collection": {
-      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+      "id": "f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6"
     },
     "account": {
       "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
@@ -1537,15 +1538,15 @@ Event: An approval is created for a stage in a pipeline run.
 
 #### Settings
 
-* `pipelineId`: Filter events to include only a pipeline with a specific ID.
-* `stageName`: Filter events to include only deployment approvals for a specific stage name.
-* `environmentName`: Filter events to include only deployment approvals in a specific environment.
+* `pipelineId`: Include only events for a pipeline with a specific ID.
+* `stageName`: Include only events for deployment approvals for a specific stage name.
+* `environmentName`: Include only events for deployment approvals in a specific environment.
 
 #### Sample payload
 
 ```json
 {
-  "id": "00000000-0000-0000-0000-00000000000055382df7-24fa-453c-9173-3369b2417a5b",
+  "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
   "eventType": "ms.vss-pipelinechecks-events.approval-pending",
   "publisherId": "pipelines",
   "message": {
@@ -1560,12 +1561,12 @@ Event: An approval is created for a stage in a pipeline run.
   },
   "resource": {
     "approval": {
-      "id": "00000000-0000-0000-0000-0000000000000f027b05-0942-4a35-9218-26fa07d8760a",
+      "id": "f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6",
       "steps": [
         {
           "assignedApprover": {
             "displayName": null,
-            "id": "00000000-0000-0000-0000-000000000000743f73b7-cdeb-4de7-80b7-00cee17476b8"
+            "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3"
           },
           "status": "pending",
           "comment": "Sample comment",
@@ -1580,12 +1581,12 @@ Event: An approval is created for a stage in a pipeline run.
       "blockedApprovers": [
         {
           "displayName": null,
-          "id": "00000000-0000-0000-0000-000000000000d651e716-a205-4b37-a803-e373df09fea6"
+          "id": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4"
         }
       ],
       "_links": {}
     },
-    "projectId": "00000000-0000-0000-0000-000000000000",
+    "projectId": "e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5",
     "pipeline": null,
     "stage": null,
     "run": null,
@@ -1623,15 +1624,15 @@ Event: An approval is completed for a stage in a pipeline run.
 
 #### Settings
 
-* `pipelineId`: Filter events to include only a pipeline with a specific ID.
-* `stageName`: Filter events to include only a specific stage name.
-* `environmentName`: Filter events to include only deployment approvals in a specific environment.
+* `pipelineId`: Include only events for a pipeline with a specific ID.
+* `stageName`: Include only events for a specific stage name.
+* `environmentName`: Include only events for deployment approvals in a specific environment.
  
 #### Sample payload
 
 ```json
 {
-  "id": "00000000-0000-0000-0000-0000000000005810cce3-55e9-46dc-ad4f-681c57cf620e",
+  "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
   "eventType": "ms.vss-pipelinechecks-events.approval-completed",
   "publisherId": "pipelines",
   "message": {
@@ -1646,12 +1647,12 @@ Event: An approval is completed for a stage in a pipeline run.
   },
   "resource": {
     "approval": {
-      "id": "00000000-0000-0000-0000-0000000000000f027b05-0942-4a35-9218-26fa07d8760a",
+      "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
       "steps": [
         {
           "assignedApprover": {
             "displayName": null,
-            "id": "00000000-0000-0000-0000-000000000000f8482ec0-3e2f-489b-ba62-ea01cf84afa8"
+            "id": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4"
           },
           "status": "approved",
           "comment": "Sample comment",
@@ -1666,12 +1667,12 @@ Event: An approval is completed for a stage in a pipeline run.
       "blockedApprovers": [
         {
           "displayName": null,
-          "id": "00000000-0000-0000-0000-00000000000023241e2e-59af-4b58-842e-5604d508c6b5"
+          "id": "e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5"
         }
       ],
       "_links": {}
     },
-    "projectId": "00000000-0000-0000-0000-000000000000",
+    "projectId": "f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6",
     "pipeline": null,
     "stage": null,
     "run": null,
@@ -1709,15 +1710,15 @@ Event: A new job starts running, finishes, or starts waiting for an agent.
 
 #### Settings
 
-* `pipelineId`: Filter events to include only a specific pipeline.
-* `stageNameId`: Filter events to include only a specific stage name.
-* `jobNameId`: Filter events to include only a specific job name.
-* `jobStateId`: Filter events to include only a job in a specific state.
+* `pipelineId`: Include only events for a specific pipeline.
+* `stageNameId`: Include only events for a specific stage name.
+* `jobNameId`: Include only events for a specific job name.
+* `jobStateId`: Include only events for a job in a specific state.
   * Valid values: 
     * `Waiting` 
     * `Running`
     * `Completed`
-* `jobResultId`: Filter events to include only a job that has a specific result.
+* `jobResultId`: Include only events for a job that has a specific result.
   * Valid values:
     * `Succeeded`
     * `Skipped`
@@ -1731,7 +1732,7 @@ Event: A new job starts running, finishes, or starts waiting for an agent.
 {
     "subscriptionId": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
     "notificationId": 3,
-    "id": "00000000-0000-0000-0000-000000000000ac1dd6da-af30-43cb-8434-e1005864b0a3",
+    "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
     "eventType": "ms.vss-pipelines.job-state-changed-event",
     "publisherId": "pipelines",
     "message":
@@ -1761,7 +1762,7 @@ Event: A new job starts running, finishes, or starts waiting for an agent.
                     "href": "https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/definition?definitionId=2"
                 }
             },
-            "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
+            "id": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
             "name": "__default",
             "state": "completed",
             "result": "succeeded",
@@ -1770,7 +1771,7 @@ Event: A new job starts running, finishes, or starts waiting for an agent.
         },
         "stage":
         {
-            "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
+            "id": "e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5",
             "name": "__default",
             "displayName": null,
             "state": "completed",
@@ -1782,7 +1783,7 @@ Event: A new job starts running, finishes, or starts waiting for an agent.
         {
             "pipeline":
             {
-                "url": "https://codedev.ms/org/1234/_apis/Pipelines/2?revision=2",
+                "url": "https://codedev.ms/org/f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6/_apis/Pipelines/2?revision=2",
                 "id": 2,
                 "revision": 2,
                 "name": "TEST-CI",
@@ -1797,7 +1798,7 @@ Event: A new job starts running, finishes, or starts waiting for an agent.
         },
         "pipeline":
         {
-            "url": "https://codedev.ms/org/00000000-0000-0000-0000-000000000000/_apis/Pipelines/2?revision=2",
+            "url": "https://codedev.ms/org/f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6/_apis/Pipelines/2?revision=2",
             "id": 2,
             "revision": 2,
             "name": "TEST-CI",
@@ -1811,14 +1812,14 @@ Event: A new job starts running, finishes, or starts waiting for an agent.
                 {
                     "author":
                     {
-                        "name": "Fabrikam John",
-                        "email": "john@fabrikamfiber.com",
+                        "name": "Himani Maharjan",
+                        "email": "himani@fabrikamfiber.com",
                         "date": "2024-11-11T15:09:21Z"
                     },
                     "committer":
                     {
-                        "name": "Fabrikam John",
-                        "email": "john@fabrikamfiber.com",
+                        "name": "Himani Maharjan",
+                        "email": "himani@fabrikamfiber.com",
                         "date": "2024-11-11T15:09:21Z"
                     },
                     "message": "Added Viva support"
@@ -1831,14 +1832,14 @@ Event: A new job starts running, finishes, or starts waiting for an agent.
                 {
                     "author":
                     {
-                        "name": "Fabrikam John",
-                        "email": "john@github.com",
+                        "name": "Himani Maharjan",
+                        "email": "himani@github.com",
                         "date": "2024-08-11T15:05:20Z"
                     },
                     "committer":
                     {
-                        "name": "Fabrikam John",
-                        "email": "john@github.com",
+                        "name": "Himani Maharjan",
+                        "email": "himani@github.com",
                         "date": "2024-08-11T15:05:20Z"
                     },
                     "message": "Added Viva open source REST API library"
@@ -1885,7 +1886,7 @@ Event: A changeset is checked into Team Foundation Version Control (TFVC).
 
 #### Settings
 
-* `path`: Filter events to include only check-ins that change files under a specific path.
+* `path`: Include only events for check-ins that change files under a specific path.
   * Required
 
 #### Sample payload
@@ -1898,24 +1899,24 @@ Event: A changeset is checked into Team Foundation Version Control (TFVC).
   "scope": "all",
   "message": {
     "text": "Normal Paulk checked in changeset 18: Dropping in new Java sample",
-    "html": "Normal Paulk checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=000-0000-0000\">18</a>: Dropping in new Java sample",
-    "markdown": "Chuck Reinhart checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=000-0000-0000): Dropping in new Java sample"
+    "html": "Normal Paulk checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3\">18</a>: Dropping in new Java sample",
+    "markdown": "Chuck Reinhart checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3): Dropping in new Java sample"
   },
   "detailedMessage": {
     "text": "Chuck Reinhart checked in changeset 18: Dropping in new Java sample",
-    "html": "Chuck Reinhart checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&amp;cs=18\">18</a>: Dropping in new Java sample",
-    "markdown": "Chuck Reinhart checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=000-0000-0000): Dropping in new Java sample"
+    "html": "Chuck Reinhart checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3&amp;cs=18\">18</a>: Dropping in new Java sample",
+    "markdown": "Chuck Reinhart checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3): Dropping in new Java sample"
   },
   "resource": {
     "changesetId": 18,
     "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/tfvc/changesets/18",
     "author": {
-      "id": "00000000-0000-0000-0000-000000000000",
+      "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
       "displayName": "Chuck Reinhart",
       "uniqueName": "fabrikamfiber16@hotmail.com"
     },
     "checkedInBy": {
-      "id": "00000000-0000-0000-0000-000000000000",
+      "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
       "displayName": "Chuck Reinhart",
       "uniqueName": "fabrikamfiber16@hotmail.com"
     },
@@ -1947,16 +1948,16 @@ Event: Code is pushed to a Git repository.
 
 #### Settings
 
-* `branch`: Filter events to include only code pushes to a specific branch.
-* `pushedBy`: Filter events to include only code pushes by users in a specific group.
-* `repository`: Filter events to include only code pushes to a specific repository.
+* `branch`: Include only events for code pushes to a specific branch.
+* `pushedBy`: Include only events for code pushes by users in a specific group.
+* `repository`: Include only events for code pushes to a specific repository.
   * Data type: `guid`
 
 #### Sample payload
 
 ```json
 {
-  "id": "00000000-0000-0000-0000-0000000000000",
+  "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
   "eventType": "git.push",
   "publisherId": "tfs",
   "scope": "all",
@@ -1967,13 +1968,13 @@ Event: Code is pushed to a Git repository.
   },
   "detailedMessage": {
     "text": "Jamal Hartnett pushed 1 commit to branch main of repository Fabrikam-Fiber-Git.\n - Fixed bug in web.config file 33b55f7c",
-    "html": "Jamal Hartnett pushed 1 commit to branch <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmain\">main</a> of repository <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a>.\n<ul>\n- Fixed bug in web.config file <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/00000000-0000-0000-0000-000000000000\">33b55f7c</a>\n</ul>",
-    "markdown": "Jamal Hartnett pushed 1 commit to branch [main](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmain) of repository [Fabrikam-Fiber-Git](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/).\n* Fixed bug in web.config file [33b55f7c](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/00000000-0000-0000-0000-000000000000)"
+    "html": "Jamal Hartnett pushed 1 commit to branch <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmain\">main</a> of repository <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a>.\n<ul>\n- Fixed bug in web.config file <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/4444eeee455ff5aaaaabb66ccccccccc7777cccc\">33b55f7c</a>\n</ul>",
+    "markdown": "Jamal Hartnett pushed 1 commit to branch [main](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmain) of repository [Fabrikam-Fiber-Git](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/).\n* Fixed bug in web.config file [33b55f7c](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/4444eeee455ff5aaaaabb66ccccccccc7777cccc)"
   },
   "resource": {
     "commits": [
       {
-        "commitId": "00000000-0000-0000-0000-000000000000",
+        "commitId": "4444eeee455ff5aaaaabb66ccccccccc7777cccc",
         "author": {
           "name": "Jamal Hartnett",
           "email": "fabrikamfiber4@hotmail.com",
@@ -1985,37 +1986,37 @@ Event: Code is pushed to a Git repository.
           "date": "2024-02-25T19:01:00Z"
         },
         "comment": "Fixed bug in web.config file",
-        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/00000000-0000-0000-0000-000000000000"
+        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/4444eeee455ff5aaaaabb66ccccccccc7777cccc"
       }
     ],
     "refUpdates": [
       {
         "name": "refs/heads/main",
-        "oldObjectId": "aad331d8d3b131fa9ae03cf5e53965b51942618a",
-        "newObjectId": "00000000-0000-0000-0000-000000000000"
+        "oldObjectId": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
+        "newObjectId": "e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5"
       }
     ],
     "repository": {
-      "id": "00000000-0000-0000-0000-000000000000",
+      "id": "f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6",
       "name": "Fabrikam-Fiber-Git",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/abcd-1234-efgh-5678",
+      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6",
       "project": {
-        "id": "00000000-0000-0000-0000-000000000000",
+        "id": "a6a6a6a6-bbbb-cccc-dddd-e7e7e7e7e7e7",
         "name": "Fabrikam-Fiber-Git",
-        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/projects/abcd-1234-efgh-5678",
+        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/projects/a6a6a6a6-bbbb-cccc-dddd-e7e7e7e7e7e7",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/main",
       "remoteUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git"
     },
     "pushedBy": {
-      "id": "00000000-0000-0000-0000-000000000000@Live.com",
+      "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff@Live.com",
       "displayName": "Jamal Hartnett",
       "uniqueName": "Windows Live ID\\fabrikamfiber4@hotmail.com"
     },
     "pushId": 14,
     "date": "2014-05-02T19:17:13.3309587Z",
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/abcd-1234-efgh-5678/pushes/14"
+    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6/pushes/14"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2045,11 +2046,11 @@ Event: A pull request is created in a Git repository.
 
 #### Settings
 
-* `repository`: Filter events to include only pull requests in a specific repository.
+* `repository`: Include only events for pull requests in a specific repository.
   * Data type: `guid`
-* `pullrequestCreatedBy`: Filter events to include only pull requests created by users in a specific group.
-* `pullrequestReviewersContains`: Filter events to include only pull requests with reviewers in a specific group.
-* `branch`: Filter events to include only pull requests in a specific branch.
+* `pullrequestCreatedBy`: Include only events for pull requests created by users in a specific group.
+* `pullrequestReviewersContains`: Include only events for pull requests with reviewers in a specific group.
+* `branch`: Include only events for pull requests in a specific branch.
 
 #### Sample payload
 
@@ -2065,17 +2066,17 @@ Event: A pull request is created in a Git repository.
     "markdown": "Jamal Hartnett created a new pull request"
   },
   "detailedMessage": {
-    "text": "Jamal Hartnett created a new pull request\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000)\r\n",
-    "html": "Jamal Hartnett created a new pull request\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000\">eef717</a></br>\r\n</ul>",
-    "markdown": "Jamal Hartnett created a new pull request\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000)\r\n"
+    "text": "Jamal Hartnett created a new pull request\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: 6666aa(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/commits/6666aaaa677bb7cccccdd88eeeeeee999999eeee)\r\n",
+    "html": "Jamal Hartnett created a new pull request\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/commits/6666aaaa677bb7cccccdd88eeeeeee999999eeee\">6666aa</a></br>\r\n</ul>",
+    "markdown": "Jamal Hartnett created a new pull request\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [6666aa](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/commits/6666aaaa677bb7cccccdd88eeeeeee999999eeee)\r\n"
   },
   "resource": {
     "repository": {
-      "id": "00000000-0000-0000-0000-000000000000",
+      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
       "name": "Fabrikam",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
       "project": {
-        "id": "00000000-0000-0000-0000-000000000000",
+        "id": "f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6",
         "name": "Fabrikam",
         "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/abcd-1234-efgh-5678",
         "state": "wellFormed"
@@ -2086,11 +2087,11 @@ Event: A pull request is created in a Git repository.
     "pullRequestId": 1,
     "status": "active",
     "createdBy": {
-      "id": "00000000-0000-0000-0000-000000000000",
+      "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
       "displayName": "Jamal Hartnett",
       "uniqueName": "fabrikamfiber4@hotmail.com",
-      "url": "https://dev.azure.com/fabrikam/_apis/Identities/00000000-0000-0000-0000-000000000000",
-      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=00000000-0000-0000-0000-000000000000"
+      "url": "https://dev.azure.com/fabrikam/_apis/Identities/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
     },
     "creationDate": "2024-06-17T11:22:33.456789Z",
     "title": "my first pull request",
@@ -2098,32 +2099,32 @@ Event: A pull request is created in a Git repository.
     "sourceRefName": "refs/heads/mytopic",
     "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
-    "mergeId": "a1234567-abcde-1234-abc",
+    "mergeId": "a6a6a6a6-bbbb-cccc-dddd-e7e7e7e7e7e7",
     "lastMergeSourceCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
+      "commitId": "4444eeee455ff5aaaaabb66ccccccccc7777cccc",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc"
     },
     "lastMergeTargetCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
+      "commitId": "5555ffff566aa6bbbbbcc77ddddddd888888dddd",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/commits/5555ffff566aa6bbbbbcc77ddddddd888888dddd"
     },
     "lastMergeCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
+      "commitId": "6666aaaa677bb7cccccdd88eeeeeee999999eeee",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/commits/6666aaaa677bb7cccccdd88eeeeeee999999eeee"
     },
     "reviewers": [
       {
         "reviewerUrl": null,
         "vote": 0,
-        "id": "00000000-0000-0000-0000-000000000000",
+        "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
         "displayName": "[Mobile]\\Mobile Team",
-        "uniqueName": "azure-devops:///Classification/TeamProject/00000000-0000-0000-0000-000000000000\\Mobile Team",
-        "url": "https://dev.azure.com/fabrikam/_apis/Identities/00000000-0000-0000-0000-000000000000",
-        "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=00000000-0000-0000-0000-000000000000",
+        "uniqueName": "azure-devops:///Classification/TeamProject/22cc22cc-dd33-ee44-ff55-66aa66aa66aa\\Mobile Team",
+        "url": "https://dev.azure.com/fabrikam/_apis/Identities/22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+        "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
         "isContainer": true
       }
     ],
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/pullRequests/1"
+    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/pullRequests/1"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2153,12 +2154,12 @@ Event: A pull request merge is attempted in a Git repository.
 
 #### Settings
 
-* `repository`: Filter events to include only pull requests in a specific repository.
+* `repository`: Include only events for pull requests in a specific repository.
   * Data type: `guid`
-* `pullrequestCreatedBy`: Filter events to include only pull requests created by users in a specific group.
-* `pullrequestReviewersContains`: Filter events to include only pull requests with reviewers in a specific group.
-* `branch`: Filter events to include only pull requests in a specific branch.
-* `mergeResult`: Filter events to include only pull requests with a specific merge result.
+* `pullrequestCreatedBy`: Include only events for pull requests created by users in a specific group.
+* `pullrequestReviewersContains`: Include only events for pull requests with reviewers in a specific group.
+* `branch`: Include only events for pull requests in a specific branch.
+* `mergeResult`: Include only events for pull requests with a specific merge result.
   * Valid values:
     * `Succeeded`
     * `Unsuccessful`
@@ -2179,9 +2180,9 @@ Event: A pull request merge is attempted in a Git repository.
         "markdown": "Jamal Hartnett has created a pull request merge commit"
     },
     "detailedMessage": {
-        "text": "Jamal Hartnett has created a pull request merge commit\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
-        "html": "Jamal Hartnett has created a pull request merge commit\r\n<ul>\r\n<li>Merge status: Succeeded</li>\r\n<li>Merge commit: <a href=\"https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></li>\r\n</ul>",
-        "markdown": "Jamal Hartnett has created a pull request merge commit\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
+        "text": "Jamal Hartnett has created a pull request merge commit\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: 4444ee(https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc)\r\n",
+        "html": "Jamal Hartnett has created a pull request merge commit\r\n<ul>\r\n<li>Merge status: Succeeded</li>\r\n<li>Merge commit: <a href=\"https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc\">4444ee</a></li>\r\n</ul>",
+        "markdown": "Jamal Hartnett has created a pull request merge commit\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [4444ee](https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc)\r\n"
     },
     "resource": {
         "repository": {
@@ -2203,10 +2204,10 @@ Event: A pull request merge is attempted in a Git repository.
         "status": "completed",
         "createdBy": {
             "displayName": "Jamal Hartnett",
-            "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
-            "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+            "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+            "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
             "uniqueName": "fabrikamfiber4@hotmail.com",
-            "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+            "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=22cc22cc-dd33-ee44-ff55-66aa66aa66aa"
         },
         "creationDate": "2014-06-17T16:55:46.589889Z",
         "closedDate": "2014-06-30T18:59:12.3660573Z",
@@ -2215,18 +2216,18 @@ Event: A pull request merge is attempted in a Git repository.
         "sourceRefName": "refs/heads/mytopic",
         "targetRefName": "refs/heads/main",
         "mergeStatus": "succeeded",
-        "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
+        "mergeId": "f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6",
         "lastMergeSourceCommit": {
-            "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+            "commitId": "6666aaaa677bb7cccccdd88eeeeeee999999eeee",
+            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/6666aaaa677bb7cccccdd88eeeeeee999999eeee"
         },
         "lastMergeTargetCommit": {
-            "commitId": "a511f535b1ea495ee0c903badb68fbc83772c882",
-            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
+            "commitId": "5555ffff566aa6bbbbbcc77ddddddd888888dddd",
+            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/5555ffff566aa6bbbbbcc77ddddddd888888dddd"
         },
         "lastMergeCommit": {
-            "commitId": "eef717f69257a6333f221566c1c987dc94cc0d72",
-            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
+            "commitId": "4444eeee455ff5aaaaabb66ccccccccc7777cccc",
+            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc"
         },
         "reviewers": [
             {
@@ -2235,15 +2236,15 @@ Event: A pull request merge is attempted in a Git repository.
                 "displayName": "[Mobile]\\Mobile Team",
                 "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
                 "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
-                "uniqueName": "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+                "uniqueName": "vstfs:///Classification/TeamProject/00aa00aa-bb11-cc22-dd33-44ee44ee44ee\\Mobile Team",
                 "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
                 "isContainer": true
             }
         ],
         "commits": [
             {
-                "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+                "commitId": "4444eeee455ff5aaaaabb66ccccccccc7777cccc",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc"
             }
         ],
         "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/pullRequests/1",
@@ -2284,17 +2285,17 @@ Event: A pull request is updated: the status, review list, or a reviewer vote ch
 
 #### Settings
 
-* `notificationType`: Filter events to include only pull requests with a specific change.
+* `notificationType`: Include only events for pull requests with a specific change.
   * Valid values: 
     * `PushNotification` - The source branch is updated.
     * `ReviewersUpdateNotification` - The reviewers change.
     * `StatusUpdateNotification` - The status changes.
     * `ReviewerVoteNotification` - The votes score changes.
-* `repository`: Filter events to include only pull requests in a specific repository.
+* `repository`: Include only events for pull requests in a specific repository.
   * Data type: `guid`
-* `pullrequestCreatedBy`: Filter events to include only pull requests created by users in a specific group.
-* `pullrequestReviewersContains`: Filter events to include only pull requests with reviewers in a specific group.
-* `branch`: Filter events to include only pull requests in a specific branch.
+* `pullrequestCreatedBy`: Include only events for pull requests created by users in a specific group.
+* `pullrequestReviewersContains`: Include only events for pull requests with reviewers in a specific group.
+* `branch`: Include only events for pull requests in a specific branch.
 
 #### Sample payload
 
@@ -2310,19 +2311,19 @@ Event: A pull request is updated: the status, review list, or a reviewer vote ch
     "markdown": "Jamal Hartnett marked the pull request as completed"
   },
   "detailedMessage": {
-    "text": "Jamal Hartnett marked the pull request as completed\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000)\r\n",
-    "html": "Jamal Hartnett marked the pull request as completed\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000\">eef717</a></br>\r\n</ul>",
-    "markdown": "Jamal Hartnett marked the pull request as completed\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000)\r\n"
+    "text": "Jamal Hartnett marked the pull request as completed\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: 4444ee(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc)\r\n",
+    "html": "Jamal Hartnett marked the pull request as completed\r\n<ul>\r\n- Merge status: Succeeded</br>\r\n- Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc\">4444ee</a></br>\r\n</ul>",
+    "markdown": "Jamal Hartnett marked the pull request as completed\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [4444ee](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc)\r\n"
   },
   "resource": {
     "repository": {
-      "id": "00000000-0000-0000-0000-000000000000",
+      "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
       "name": "Fabrikam",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
       "project": {
-        "id": "00000000-0000-0000-0000-000000000000",
+        "id": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
         "name": "Fabrikam",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/00000000-0000-0000-0000-000000000000",
+        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/main",
@@ -2331,11 +2332,11 @@ Event: A pull request is updated: the status, review list, or a reviewer vote ch
     "pullRequestId": 1,
     "status": "completed",
     "createdBy": {
-      "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
+      "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
       "displayName": "Jamal Hartnett",
       "uniqueName": "fabrikamfiber4@hotmail.com",
-      "url": "https://dev.azure.com/fabrikam/_apis/Identities/00000000-0000-0000-0000-000000000000",
-      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=00000000-0000-0000-0000-000000000000"
+      "url": "https://dev.azure.com/fabrikam/_apis/Identities/22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=22cc22cc-dd33-ee44-ff55-66aa66aa66aa"
     },
     "creationDate": "2024-06-17T16:55:46.589889Z",
     "closedDate": "2024-06-30T18:59:12.3660573Z",
@@ -2344,38 +2345,38 @@ Event: A pull request is updated: the status, review list, or a reviewer vote ch
     "sourceRefName": "refs/heads/mytopic",
     "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
-    "mergeId": "00000000-0000-0000-0000-000000000000",
+    "mergeId": "f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6",
     "lastMergeSourceCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abc-defg-123-4567/commits/00000000-0000-0000-0000-000000000000"
+      "commitId": "5555ffff566aa6bbbbbcc77ddddddd888888dddd",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/5555ffff566aa6bbbbbcc77ddddddd888888dddd"
     },
     "lastMergeTargetCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abc-defg-123-4567/commits/00000000-0000-0000-0000-000000000000"
+      "commitId": "6666aaaa677bb7cccccdd88eeeeeee999999eeee",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/6666aaaa677bb7cccccdd88eeeeeee999999eeee"
     },
     "lastMergeCommit": {
-      "commitId": "00000000-0000-0000-0000-000000000000",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/abc-defg-123-4567/commits/00000000-0000-0000-0000-000000000000"
+      "commitId": "4444eeee455ff5aaaaabb66ccccccccc7777cccc",
+      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc"
     },
     "reviewers": [
       {
         "reviewerUrl": null,
         "vote": 0,
-        "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
+        "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
         "displayName": "[Mobile]\\Mobile Team",
-        "uniqueName": "azure-devops:///Classification/TeamProject/00000000-0000-0000-0000-000000000000\\Mobile Team",
-        "url": "https://dev.azure.com/fabrikam/_apis/Identities/abcdefg1234567",
-        "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=abcdefg1234567",
+        "uniqueName": "azure-devops:///Classification/TeamProject/d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4\\Mobile Team",
+        "url": "https://dev.azure.com/fabrikam/_apis/Identities/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+        "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
         "isContainer": true
       }
     ],
     "commits": [
       {
-        "commitId": "00000000-0000-0000-0000-000000000000",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
+        "commitId": "4444eeee455ff5aaaaabb66ccccccccc7777cccc",
+        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc"
       }
     ],
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/00000000-0000-0000-0000-000000000000/pullRequests/1"
+    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/pullRequests/1"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2405,15 +2406,15 @@ Event: A pull request is commented on.
 
 #### Settings
 
-* `repository`: Filter events to include only pull requests in a specific repository.
+* `repository`: Include only events for pull requests in a specific repository.
   * Data type: `guid`
-* `branch`: Filter events to include only pull requests in a specific branch.
+* `branch`: Include only events for pull requests in a specific branch.
 
 #### Sample payload
 
 ```json
 {
-    "id": "00000000-0000-0000-0000-000000000000af07be1b-f3ad-44c8-a7f1-c4835f2df06b",
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
     "eventType": "ms.vss-code.git-pullrequest-comment-event",
     "publisherId": "tfs",
     "message": {
@@ -2432,10 +2433,10 @@ Event: A pull request is commented on.
             "parentCommentId": 1,
             "author": {
                 "displayName": "Jamal Hartnett",
-                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/00000000-0000-0000-0000-000000000000",
-                "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
+                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
                 "uniqueName": "fabrikamfiber4@hotmail.com",
-                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=00000000-0000-0000-0000-000000000000"
+                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
             },
             "content": "This is my comment.",
             "publishedDate": "2024-06-17T11:22:33.456789Z",
@@ -2444,25 +2445,25 @@ Event: A pull request is commented on.
             "commentType": "text",
             "_links": {
                 "self": {
-                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/00000000-0000-0000-0000-000000000000/pullRequests/1/threads/5/comments/2"
+                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/pullRequests/1/threads/5/comments/2"
                 },
                 "repository": {
-                    "href": "http://joscol2/DefaultCollection/ebed510c-62eb-474b-965f-fd151ebb82e4/_apis/git/repositories/00000000-0000-0000-0000-000000000000"
+                    "href": "http://joscol2/DefaultCollection/ebed510c-62eb-474b-965f-fd151ebb82e4/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3"
                 },
                 "threads": {
-                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/00000000-0000-0000-0000-000000000000/pullRequests/1/threads/5"
+                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/pullRequests/1/threads/5"
                 }
             }
         },
         "pullRequest": {
             "repository": {
-                "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
+                "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
                 "name": "Fabrikam",
-                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/00000000-0000-0000-0000-000000000000",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
                 "project": {
-                    "id": "00000000-0000-0000-0000-000000000000abcd-1234-efgh-5678",
+                    "id": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
                     "name": "Fabrikam",
-                    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/projects/abcd-1234-efgh-5678",
+                    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/projects/d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
                     "state": "wellFormed",
                     "visibility": "unchanged",
                     "lastUpdateTime": "0001-01-01T00:00:00"
@@ -2474,10 +2475,10 @@ Event: A pull request is commented on.
             "status": "active",
             "createdBy": {
                 "displayName": "Jamal Hartnett",
-                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/00000000-0000-0000-0000-000000000000",
-                "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
+                "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+                "id": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
                 "uniqueName": "fabrikamfiber4@hotmail.com",
-                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=00000000-0000-0000-0000-000000000000"
+                "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
             },
             "creationDate": "2024-06-17T11:22:33.456789Z",
             "title": "my first pull request",
@@ -2485,44 +2486,44 @@ Event: A pull request is commented on.
             "sourceRefName": "refs/heads/mytopic",
             "targetRefName": "refs/heads/main",
             "mergeStatus": "succeeded",
-            "mergeId": "a1234567-abcde-1234-abc",
+            "mergeId": "e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5",
             "lastMergeSourceCommit": {
-                "commitId": "00000000-0000-0000-0000-000000000000",
-                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
+                "commitId": "4444eeee455ff5aaaaabb66ccccccccc7777cccc",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/4444eeee455ff5aaaaabb66ccccccccc7777cccc"
             },
             "lastMergeTargetCommit": {
-                "commitId": "00000000-0000-0000-0000-000000000000",
-                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
+                "commitId": "5555ffff566aa6bbbbbcc77ddddddd888888dddd",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/5555ffff566aa6bbbbbcc77ddddddd888888dddd"
             },
             "lastMergeCommit": {
-                "commitId": "00000000-0000-0000-0000-000000000000",
-                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
+                "commitId": "6666aaaa677bb7cccccdd88eeeeeee999999eeee",
+                "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/6666aaaa677bb7cccccdd88eeeeeee999999eeee"
             },
             "reviewers": [
                 {
                     "reviewerUrl": null,
                     "vote": 0,
                     "displayName": "[Mobile]\\Mobile Team",
-                    "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/00000000-0000-0000-0000-000000000000",
-                    "id": "00000000-0000-0000-0000-00000000000000000000-0000-0000-0000-000000000000",
-                    "uniqueName": "azure-devops:///Classification/TeamProject/00000000-0000-0000-0000-000000000000\\Mobile Team",
-                    "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=00000000-0000-0000-0000-000000000000",
+                    "url": "https://fabrikam.vssps.visualstudio.com/_apis/Identities/22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+                    "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+                    "uniqueName": "azure-devops:///Classification/TeamProject/22cc22cc-dd33-ee44-ff55-66aa66aa66aa\\Mobile Team",
+                    "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
                     "isContainer": true
                 }
             ],
             "commits": [
                 {
-                    "commitId": "00000000-0000-0000-0000-000000000000",
-                    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/00000000-0000-0000-0000-000000000000/commits/00000000-0000-0000-0000-000000000000"
+                    "commitId": "6666aaaa677bb7cccccdd88eeeeeee999999eeee",
+                    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/commits/6666aaaa677bb7cccccdd88eeeeeee999999eeee"
                 }
             ],
-            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/00000000-0000-0000-0000-000000000000/pullRequests/1",
+            "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/pullRequests/1",
             "_links": {
                 "web": {
                     "href": "https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam/pullrequest/1#view=discussion"
                 },
                 "statuses": {
-                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/00000000-0000-0000-0000-000000000000/pullRequests/1/statuses"
+                    "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/pullRequests/1/statuses"
                 }
             }
         }
@@ -2553,7 +2554,7 @@ Event: A repository is created.
 
 #### Settings
 
-* `projectId`: Filter events to include only pull requests in a specific project.
+* `projectId`: Include only events for pull requests in a specific project.
 
 #### Sample payload
 
@@ -2625,7 +2626,7 @@ Event: A repository is deleted.
 
 #### Settings
 
-* `repository`: Filter events to include only pull requests in repositories with a specific name pattern.
+* `repository`: Include only events for pull requests in repositories with a specific name pattern.
   * Data type: `guid`
 
 #### Sample payload
@@ -2659,9 +2660,9 @@ Event: A repository is deleted.
         "repositoryName": "Fabrikam-Fiber-Git",
         "isHardDelete": false,
         "initiatedBy": {
-            "displayName": "John Johnson",
+            "displayName": "Himani Maharjan",
             "id": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
-            "uniqueName": "user@fabrikamfiber.com"
+            "uniqueName": "himani@fabrikamfiber.com"
         },
         "utcTimestamp": "2022-12-12T12:34:56.5498459Z"
     },
@@ -2691,7 +2692,7 @@ Event: A repository is forked.
 
 #### Settings
 
-* `repository`: Filter events to include only pull requests in repositories with a specific name pattern.
+* `repository`: Include only events for pull requests in repositories with a specific name pattern.
   * Data type: `guid`
 
 #### Sample payload
@@ -2783,7 +2784,7 @@ Event: A repository is renamed.
 
 #### Settings
 
-* `repository`: Filter events to include only pull requests in repositories with a specific name pattern.
+* `repository`: Include only events for pull requests in repositories with a specific name pattern.
   * Data type: `guid`
 
 #### Sample payload
@@ -2826,9 +2827,9 @@ Event: A repository is renamed.
             "isDisabled": false
         },
         "initiatedBy": {
-            "displayName": "John Johnson",
+            "displayName": "Himani Maharjan",
             "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
-            "uniqueName": "user@fabrikamfiber.com"
+            "uniqueName": "himani@fabrikamfiber.com"
         },
         "utcTimestamp": "2022-12-12T12:34:56.5498459Z"
     },
@@ -2858,7 +2859,7 @@ Event: A repository status changes.
 
 #### Settings
 
-* `repository`: Filter events to include only repositories with a specific name pattern.
+* `repository`: Include only events for repositories with a specific name pattern.
   * Data type: `guid`
 
 #### Sample payload
@@ -2900,9 +2901,9 @@ Event: A repository status changes.
             "isDisabled": false
         },
         "initiatedBy": {
-            "displayName": "John Johnson",
+            "displayName": "Himani Maharjan",
             "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
-            "uniqueName": "user@fabrikamfiber.com"
+            "uniqueName": "himani@fabrikamfiber.com"
         },
         "utcTimestamp": "2022-12-12T12:34:56.5498459Z"
     },
@@ -2936,7 +2937,7 @@ Event: A service connection is created.
 
 #### Settings
 
-* `project`: Filter events to include only service connections created in a specific project.
+* `project`: Include only events for service connections created in a specific project.
 
 #### Sample payload
 
@@ -2956,7 +2957,7 @@ Event: A service connection is created.
         "markdown": "Generic service connection created: Sample service connection"
     },
     "resource": {
-        "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
+        "id": "a6a6a6a6-bbbb-cccc-dddd-e7e7e7e7e7e7",
         "name": "Sample service connection",
         "type": "Generic",
         "authorization": null,
@@ -2988,7 +2989,7 @@ Event: A service connection is updated.
 
 #### Settings
 
-* `project`: Filter events to include only service connections updated in a specific project.
+* `project`: Include only events for service connections updated in a specific project.
 
 #### Sample payload
 
@@ -3046,10 +3047,10 @@ Event: A work item is created.
 
 #### Settings
 
-* `areaPath`: Filter events to include only work items under a specific area path.
-* `workItemType`: Filter events to include only work items of a specific type.
-* `linksChanged`: Filter events to include only work items with one or more links added or removed.
-* `tag`: Filter events to include only work items that contain a specific tag.
+* `areaPath`: Include only events for work items under a specific area path.
+* `workItemType`: Include only events for work items of a specific type.
+* `linksChanged`: Include only events for work items with one or more links added or removed.
+* `tag`: Include only events for work items that contain a specific tag.
 
 #### Sample payload
 
@@ -3134,9 +3135,9 @@ Event: A work item is deleted.
 
 #### Settings
 
-* `areaPath`: Filter events to include only work items under a specific area path.
-* `workItemType`: Filter events to include only work items of a specific type.
-* `tag`: Filter events to include only work items that contain a specific tag.
+* `areaPath`: Include only events for work items under a specific area path.
+* `workItemType`: Include only events for work items of a specific type.
+* `tag`: Include only events for work items that contain a specific tag.
 
 #### Sample payload
 
@@ -3215,9 +3216,9 @@ Event: A work item is restored.
 
 #### Settings
 
-* `areaPath`: Filter events to include only work items under a specific area path.
-* `workItemType`: Filter events to include only work items of a specific type.
-* `tag`: Filter events to include only work items that contain a specific tag.
+* `areaPath`: Include only events for work items under a specific area path.
+* `workItemType`: Include only events for work items of a specific type.
+* `tag`: Include only events for work items that contain a specific tag.
 
 #### Sample payload
 
@@ -3308,11 +3309,11 @@ Event: A work item changes.
 
 #### Settings
 
-* `areaPath`: Filter events to include only work items under a specific area path.
-* `changedFields`: Filter events to include only work items with a change in a specific field.
-* `workItemType`: Filter events to include only work items of a specific type.
-* `linksChanged`: Filter events to include only work items with one or more links added or removed.
-* `tag`: Filter events to include only work items that contain a specific tag.
+* `areaPath`: Include only events for work items under a specific area path.
+* `changedFields`: Include only events for work items with a change in a specific field.
+* `workItemType`: Include only events for work items of a specific type.
+* `linksChanged`: Include only events for work items with one or more links added or removed.
+* `tag`: Include only events for work items that contain a specific tag.
 
 #### Sample payload
 
@@ -3395,13 +3396,13 @@ Event: A work item changes.
 
 If you want to trigger on a change in more than one work item field, you have a few possibilities:
 
-- To trigger on a change in any field, remove the `changedFields` filter.
+* To trigger on a change in any field, remove the `changedFields` filter.
 
-- To trigger on multiple fields, but not all fields, use one of the following options:
+* To trigger on multiple fields, but not all fields, use one of the following options:
 
-  - Use the Azure DevOps Services REST API to create a custom payload for each field of interest. For more information, see [Subscriptions - Create](/rest/api/azure/devops/hooks/subscriptions/create).
+  * Use the Azure DevOps Services REST API to create a custom payload for each field of interest. For more information, see [Subscriptions - Create](/rest/api/azure/devops/hooks/subscriptions/create).
 
-  - To create a service hook subscription for each field of interest, take the following steps for each field:
+  * To create a service hook subscription for each field of interest, take the following steps for each field:
 
     1. Go to your project, select **Project settings**, and then select **Service hooks**.
 
@@ -3429,10 +3430,10 @@ Event: A work item is commented on.
 
 #### Settings
 
-* `areaPath`: Filter events to include only work items under a specific area path.
-* `commentPattern`: Filter events to include only work items with a comment that contains a specific string.
-* `workItemType`: Filter events to include only work items of a specific type.
-* `tag`: Filter events to include only work items that contain a specific tag.
+* `areaPath`: Include only events for work items under a specific area path.
+* `commentPattern`: Include only events for work items with a comment that contains a specific string.
+* `workItemType`: Include only events for work items of a specific type.
+* `tag`: Include only events for work items that contain a specific tag.
 
 #### Sample payload
 
@@ -3522,15 +3523,15 @@ Event: An advanced security alert is created.
 
 #### Settings
 
-* `repository`: Filter events to include only alerts that are created in a specific repository.
-* `branch`: Filter events to include only alerts that are created in a specific branch.
-* `alertType`: Filter events to include only alerts of a specific type.
+* `repository`: Include only events for alerts that are created in a specific repository.
+* `branch`: Include only events for alerts that are created in a specific branch.
+* `alertType`: Include only events for alerts of a specific type.
   * Valid values: 
     * `Unknown` 
     * `Dependency` 
     * `Secret` 
     * `Code` 
-* `severity`: Filter events to include only alerts with a specific severity.
+* `severity`: Include only events for alerts with a specific severity.
   * Valid values: 
     * `Low` 
     * `Medium` 
@@ -3581,7 +3582,7 @@ Event: An advanced security alert is created.
         "dismissal": {
             "dismissalId": 1,
             "message": "Fixed",
-            "stateChangedBy": "00000000-0000-0000-0000-000000000000",
+            "stateChangedBy": "66aa66aa-bb77-cc88-dd99-00ee00ee00ee",
             "stateChangedByIdentity": null,
             "requestedOn": null,
             "dismissalType": "fixed"
@@ -3623,15 +3624,15 @@ Event: The state of an advanced security alert changes.
 
 #### Settings
 
-* `repository`: Filter events to include only alerts that are associated with a specific repository.
-* `branch`: Filter events to include only alerts that are associated with a specific branch.
-* `alertType`: Filter events to include only alerts of a specific type.
+* `repository`: Include only events for alerts that are associated with a specific repository.
+* `branch`: Include only events for alerts that are associated with a specific branch.
+* `alertType`: Include only events for alerts of a specific type.
   * Valid values: 
     * `Unknown` 
     * `Dependency` 
     * `Secret` 
     * `Code` 
-* `severity`: Filter events to include only alerts with a specific severity.
+* `severity`: Include only events for alerts with a specific severity.
   * Valid values: 
     * `Low` 
     * `Medium` 
@@ -3641,7 +3642,7 @@ Event: The state of an advanced security alert changes.
     * `Warning` 
     * `Error` 
     * `Undefined` 
-* `state`: Filter events to include only alerts with a specific new state.
+* `state`: Include only events for alerts with a specific new state.
   * Valid values: 
     * `Unknown`
     * `Active`
@@ -3689,7 +3690,7 @@ Event: The state of an advanced security alert changes.
         "dismissal": {
             "dismissalId": 1,
             "message": "Fixed",
-            "stateChangedBy": "00000000-0000-0000-0000-000000000000",
+            "stateChangedBy": "66aa66aa-bb77-cc88-dd99-00ee00ee00ee",
             "stateChangedByIdentity": null,
             "requestedOn": null,
             "dismissalType": "fixed"
@@ -3731,15 +3732,15 @@ Event: An advanced security alert is updated.
 
 #### Settings
 
-* `repository`: Filter events to include only alerts associated with a specific repository.
-* `branch`: Filter events to include only alerts associated with a specific branch.
-* `alertType`: Filter events to include only alerts of a specific type.
+* `repository`: Include only events for alerts associated with a specific repository.
+* `branch`: Include only events for alerts associated with a specific branch.
+* `alertType`: Include only events for alerts of a specific type.
   * Valid values: 
     * `Unknown` 
     * `Dependency` 
     * `Secret` 
     * `Code` 
-* `severity`: Filter events to include only alerts with a specific severity.
+* `severity`: Include only events for alerts with a specific severity.
   * Valid values: 
     * `Low` 
     * `Medium` 
@@ -3790,7 +3791,7 @@ Event: An advanced security alert is updated.
         "dismissal": {
             "dismissalId": 1,
             "message": "Fixed",
-            "stateChangedBy": "00000000-0000-0000-0000-000000000000",
+            "stateChangedBy": "66aa66aa-bb77-cc88-dd99-00ee00ee00ee",
             "stateChangedByIdentity": null,
             "requestedOn": null,
             "dismissalType": "fixed"
@@ -3832,6 +3833,6 @@ In some products and environments, the dictionary also includes a `baseUrl` fiel
 
 ## Related content
 
-- [Integrate with service hooks](overview.md)
-- [Create a service hook subscription programmatically](create-subscription.md)
-- [Service hook consumers](consumers.md)
+* [Integrate with service hooks](overview.md)
+* [Create a service hook subscription programmatically](create-subscription.md)
+* [Service hook consumers](consumers.md)
