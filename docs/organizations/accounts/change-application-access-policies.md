@@ -1,7 +1,7 @@
 ---
 title: Change application connection and security policies for organizations
 titleSuffix: Azure DevOps Services
-description: Manage security policies for accessing organization through conditional access, OAuth, SSH, and personal access tokens (PATs).
+description: Manage security policies for accessing organization through Conditional Access, OAuth, SSH, and personal access tokens (PATs).
 ms.subservice: azure-devops-organizations
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: how-to
@@ -37,38 +37,38 @@ You can limit access to these authentication methods by disabling the following 
 
 When you deny access to an authentication method, no application can access your organization through that method. Any application that previously had access encounter authentication errors and lose access.
 
-## Enforce conditional access policies 
+## Enforce Conditional Access policies 
 
-Microsoft Entra ID lets tenant admins control which users can access Microsoft resources using [Conditional Access policies (CAPs)](/azure/active-directory/conditional-access/overview). Admins set specific conditions users must meet to gain access, such as:
+Microsoft Entra ID lets tenant admins control which users can access Microsoft resources using [Conditional Access policies](/azure/active-directory/conditional-access/overview). Admins set specific conditions users must meet to gain access, such as:
 
 - Membership in a specific Microsoft Entra security group
 - Location or network requirements
 - Use of a particular operating system
 - Use of a managed and enabled device
 
-Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. Learn more about [conditional access policies](/azure/active-directory/active-directory-conditional-access) and [how to set one up for Azure DevOps](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) in the Microsoft Entra documentation.
+Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. Learn more about [Conditional Access policies](/azure/active-directory/active-directory-conditional-access) and [how to set one up for Azure DevOps](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) in the Microsoft Entra documentation.
 
-### CAP support on Azure DevOps
+### Conditional Access policy support on Azure DevOps
 
 When you sign in to the web portal of a Microsoft Entra ID-backed organization, Microsoft Entra ID validates all Conditional Access policies set by tenant administrators. After [modernizing our web authentication stack to use Microsoft Entra tokens](https://devblogs.microsoft.com/devops/full-web-support-for-conditional-access-policies-across-azure-devops-and-partner-web-properties/), Azure DevOps now enforces Conditional Access policy validation on all interactive (web) flows.
 
 - Meet sign-in policies when using PATs on REST API calls that rely on Microsoft Entra.
-- Remove Azure DevOps as a resource from the CAP, which prevents CAPs from applying.
-- Enforce MFA policies on web flows only; block access for non-interactive flows if users don't meet a CAP.
+- Remove Azure DevOps as a resource from the Conditional Access policy, which prevents Conditional Access policies from applying.
+- Enforce MFA policies on web flows only; block access for non-interactive flows if users don't meet a Conditional Access policy.
 
 ### IP-based conditions
 
 If you enable the **IP Conditional Access policy validation on non-interactive flows** policy, Azure DevOps checks IP fencing policies on non-interactive flows, such as when you use a PAT to make a REST API call.
 
-Azure DevOps supports IP-fencing conditional access policies (CAPs) for both IPv4 and IPv6 addresses. If CAPs block your IPv6 address, ask your tenant administrator to update the policy to allow your IPv6 address. Also, consider including the IPv4-mapped address for any default IPv6 address in all CAP conditions.
+Azure DevOps supports IP-fencing Conditional Access policies for both IPv4 and IPv6 addresses. If Conditional Access policies block your IPv6 address, ask your tenant administrator to update the policy to allow your IPv6 address. Also, consider including the IPv4-mapped address for any default IPv6 address in all Conditional Access policy conditions.
 
-If users access the Microsoft Entra sign-in page from a different IP address than the one used to access Azure DevOps resources (which can happen with VPN tunneling), review your VPN configuration or networking setup. Make sure your tenant administrator includes all relevant IP addresses in the CAPs.
+If users access the Microsoft Entra sign-in page from a different IP address than the one used to access Azure DevOps resources (which can happen with VPN tunneling), review your VPN configuration or networking setup. Make sure your tenant administrator includes all relevant IP addresses in the Conditional Access policies.
 
-### Azure Resource Manager audience and CAPs
+### Azure Resource Manager audience and Conditional Access policies
 
-Azure DevOps doesn't depend on the Azure Resource Manager (ARM) resource (`https://management.azure.com`) when you sign in or refresh Microsoft Entra access tokens. Previously, Azure DevOps required the ARM audience during sign-in and token refresh flows. This requirement meant that administrators had to allow all Azure DevOps users to bypass ARM CAPs to ensure access.
+Azure DevOps doesn't depend on the Azure Resource Manager (ARM) resource (`https://management.azure.com`) when you sign in or refresh Microsoft Entra access tokens. Previously, Azure DevOps required the ARM audience during sign-in and token refresh flows. This requirement meant that administrators had to allow all Azure DevOps users to bypass ARM Conditional Access policies to ensure access.
 
-Tokens for Azure DevOps no longer require the ARM audience. As a result, you can manage CAPs more effectively without configuring specific audience settings for ARM. This approach streamlines authentication, reduces token management complexity, and lets you apply security policies more consistently across your Azure environments. Organizations can focus on broader access controls, improving compliance and security posture without being limited by audience-specific configurations.
+Tokens for Azure DevOps no longer require the ARM audience. As a result, you can manage Conditional Access policies more effectively without configuring specific audience settings for ARM. This approach streamlines authentication, reduces token management complexity, and lets you apply security policies more consistently across your Azure environments. Organizations can focus on broader access controls, improving compliance and security posture without being limited by audience-specific configurations.
 
 > [!NOTE]
 > There are the following exceptions where continued access to ARM is still required:
