@@ -1,13 +1,13 @@
 ---
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/10/2025
+ms.date: 6/16/2025
 ms.topic: include
 ---
 
 ### Managed DevOps Pools - Image Deprecations
 
-Due to [Windows Server 2019 hosted image deprecation](https://learn.microsoft.com/en-us/azure/devops/release-notes/2025/pipelines/sprint-256-update#windows-server-2019-hosted-image-deprecation-schedule) and [Ubuntu 20.04 deprecation](https://learn.microsoft.com/en-us/azure/devops/release-notes/2025/pipelines/sprint-253-update#the-ubuntu-2004-pipeline-image-is-deprecated-and-will-be-retired-april-1), Managed DevOps Pools is deprecating the “Azure Pipelines – Windows Server 2019” image and Ubuntu 20.04 images. More details about the deprecations can be found [here](https://review.learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-images?view=azure-devops&branch=main&tabs=azure-portal#image-deprecation-schedule). You can read about life cycle of images offered by Managed DevOps Pools [here](https://review.learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-images?view=azure-devops&branch=main&tabs=azure-portal#image-lifecycle).
+Due to [Windows Server 2019 hosted image deprecation](/azure/devops/release-notes/2025/pipelines/sprint-256-update#windows-server-2019-hosted-image-deprecation-schedule) and [Ubuntu 20.04 deprecation](/azure/devops/release-notes/2025/pipelines/sprint-253-update#the-ubuntu-2004-pipeline-image-is-deprecated-and-will-be-retired-april-1), Managed DevOps Pools is deprecating the “Azure Pipelines – Windows Server 2019” image and Ubuntu 20.04 images. More details about the deprecations can be found [here](/azure/devops/managed-devops-pools/configure-images?view=azure-devops&branch=main&tabs=azure-portal#image-deprecation-schedule). You can read about life cycle of images offered by Managed DevOps Pools [here](/azure/devops/managed-devops-pools/configure-images?view=azure-devops&branch=main&tabs=azure-portal#image-lifecycle).
 
 ### New Triggers page
 
