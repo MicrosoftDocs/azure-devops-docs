@@ -16,7 +16,8 @@ ms.date: 11/22/2024
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
-> Auditing is still in public preview.
+> - Auditing is still in public preview.
+> - We continually add new actions to this list. To view an event that isn't currently included in the following tables, share your feedback in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
 
 The following tables describe the type of events (or actions) that are available for auditing through the Azure DevOps Auditing feature.
 
@@ -25,9 +26,6 @@ The following tables describe the type of events (or actions) that are available
 * Identify the *Product Area* for any given event. Refer to the full list in the [Area table](#areas).
 * Determine the *Category* field of an event to understand the type of action performed. See the list of possible action types in the [Categories table](#categories).
 * Find the list of all possible actions grouped by *Product Area* in the [Actions section](#actions).
-
-> [!NOTE]
-> We try our best to keep adding new actions regularly. If you'd like to see an event that isn't currently in the following tables, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
 
 ## Areas
 
