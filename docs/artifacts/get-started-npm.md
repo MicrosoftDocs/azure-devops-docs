@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
-# Get started with managing npm packages in Azure Artifacts
+# Publish and download npm packages with Azure Artifacts
 
 [!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
@@ -86,33 +86,39 @@ This setup lets you to share your configuration file without exposing your crede
 > [!IMPORTANT]
 > npm supports only a single `registry` setting in your *.npmrc* file. To use multiple registries, you must use [upstream sources](npm/upstream-sources.md) or [scopes](npm/scopes.md).
 
-## Publish packages
+## Publish packages to your feed
 
-Run the following command in your project directory to publish your npm packages:
+To successfully run the publish command, you must first authenticate with your feed. If you haven’t done this yet, follow the steps in the [Connect to a feed](connect-to-a-feed) section then continue with the instructions below.
 
-```Command
-npm publish
-```
+1. In your project directory, run the following command to publish the npm package defined in your *package.json*:
+
+    ```
+    npm publish
+    ```
 
 > [!IMPORTANT]
-> Using the `publishConfig` property to override the registry config param at publish-time is not supported. 
+> Using the `publishConfig` property to override the registry configuration at publish time is not supported.
 
-## Restore packages
+## Restore packages from your feed
 
-Run the following command in your project directory to restore your npm packages:
+To successfully run the restore command, you must first authenticate with your feed. If you haven’t done this yet, follow the steps in the [Connect to a feed](connect-to-a-feed) section then continue with the instructions below.
 
-```Command
-npm install
-```
+1. In your project directory, run the following command to restore all npm packages:
 
-To restore a specific npm package, run the following command from your project directory:
+    ```
+    npm install
+    ```
 
-```Command
-npm install --save <PACKAGE_NAME>
-```
+1. To restore a specific npm package, run the following command from your project directory:
 
-## Related articles
+    ```
+    npm install --save <PACKAGE_NAME>
+    ```
 
-- [Publish npm packages (YAML/Classic)](../pipelines/artifacts/npm.md)
-- [Use packages from npmjs.com](./npm/upstream-sources.md)
-- [Use npm scopes](npm/scopes.md)
+## Related content
+
+- [Publish npm packages with Azure Pipelines (YAML/Classic)](../pipelines/artifacts/npm.md)
+
+- [Use packages from npmjs.com](npm/upstream-sources.md)
+
+- [Use npm audit](npm/npm-audit.md)
