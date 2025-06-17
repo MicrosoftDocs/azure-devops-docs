@@ -27,11 +27,11 @@ With Azure Artifacts, you can publish and download npm packages from both your o
 
 ## Connect to a feed
 
-Azure Artifacts recommends using two separate *.npmrc* files. The first should be kept locally in the *$HOME* directory (Linux/macOS) or *$env.HOME* (Windows) to securely store your credentials. This allows the npm client to access your credentials for authentication.
+Azure Artifacts recommends using two separate configuration files. The first should be kept locally in the *$HOME* directory (Linux/macOS) or *$env.HOME* (Windows) to securely store your credentials. This allows the npm client to access your credentials for authentication.
 
-In this section, you'll configure the second *.npmrc* file, which should be placed in the same directory as your *package.json* file.
+In this section, you'll configure the second *npmrc* file, which should be placed in the same directory as your *package.json* file.
 
-This setup lets you to share your configuration file without exposing your credentials.
+This setup lets you share your configuration file without exposing your credentials.
 
 ::: moniker range="azure-devops"   
 
@@ -84,7 +84,7 @@ This setup lets you to share your configuration file without exposing your crede
 ::: moniker-end
 
 > [!IMPORTANT]
-> npm supports only a single `registry` setting in your *.npmrc* file. To use multiple registries, you must use [upstream sources](npm/upstream-sources.md) or [scopes](npm/scopes.md).
+> Npm supports only a single `registry` setting in your *npmrc* file. To use multiple registries, you must use [upstream sources](npm/upstream-sources.md) or [scopes](npm/scopes.md).
 
 ## Publish packages to your feed
 
