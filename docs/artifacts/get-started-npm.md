@@ -88,7 +88,7 @@ This setup lets you to share your configuration file without exposing your crede
 
 ## Publish packages to your feed
 
-To successfully run the publish command, you must first authenticate with your feed. If you haven’t done this yet, follow the steps in the [Connect to a feed](connect-to-a-feed) section then continue with the instructions below.
+To successfully run the publish command, you must first authenticate with your feed. If you haven’t done this yet, follow the steps in the [Connect to a feed](#connect-to-a-feed) section then continue with the instructions below.
 
 1. In your project directory, run the following command to publish the npm package defined in your *package.json*:
 
@@ -101,7 +101,7 @@ To successfully run the publish command, you must first authenticate with your f
 
 ## Restore packages from your feed
 
-To successfully run the restore command, you must first authenticate with your feed. If you haven’t done this yet, follow the steps in the [Connect to a feed](connect-to-a-feed) section then continue with the instructions below.
+To successfully run the restore command, you must first authenticate with your feed. If you haven’t done this yet, follow the steps in the [Connect to a feed](#connect-to-a-feed) section then continue with the instructions below.
 
 1. In your project directory, run the following command to restore all npm packages:
 
