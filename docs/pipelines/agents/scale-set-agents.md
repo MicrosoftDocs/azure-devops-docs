@@ -6,7 +6,7 @@ ms.custom: devx-track-azurecli, arm2024
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 04/02/2025
+ms.date: 06/12/2025
 monikerRange: azure-devops
 ---
 
@@ -543,7 +543,7 @@ This issue occurs because agent extension scripts attempt to create the user `Az
 
 #### Agent extension installation fails on scale set instances due to network security and firewall configurations
 
-The extension needs to be able to download the build agent files from `https://vstsagentpackage.azureedge.net/agent` and `https://download.agent.dev.azure.com`, and the build agent needs to be able to register with Azure DevOps Services. Make sure that this URL and Azure DevOps Services-related IPs and URLs are open on the instance. For IPs and URLs that need to be unblocked on your firewall, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url).
+The extension needs to be able to download the build agent files from `https://download.agent.dev.azure.com`, and the build agent needs to be able to register with Azure DevOps Services. Make sure that this URL and Azure DevOps Services-related IPs and URLs are open on the instance. For IPs and URLs that need to be unblocked on your firewall, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url).
 
 #### Why does my scale set agent configuration script call Add-MpPreference and configure Windows Defender on the agent?
 
