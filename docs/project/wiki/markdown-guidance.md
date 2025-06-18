@@ -479,15 +479,19 @@ The following table lists the types of links supported for different Markdown sc
 **Welcome pages**
 
 - Relative path:
+
 `[Display text](target.md)` 
 
 - Absolute path in Git:
+
 `[Display text](/folder/target.md)`
 
 - Absolute path in TFVC:
+
 `[Display text]($/project/folder/target.md)`
 
 - URL:
+
 `[Display text](http://address.com)`
 
 :::column-end:::
@@ -497,6 +501,7 @@ The following table lists the types of links supported for different Markdown sc
 **Markdown widget**
 
 - URL:
+
 `[Display text](http://address.com)`
 
 :::column-end:::
@@ -506,9 +511,11 @@ The following table lists the types of links supported for different Markdown sc
 **Wiki pages**  
 
 - Absolute path of Wiki pages:
+
 `[Display text](/parent-page/child-page)`
 
 - URL:
+
 `[Display text](http://address.com)`
 
 :::column-end:::
@@ -527,12 +534,12 @@ Relative links in a Welcome page are relative to the root of the source control 
 - _/BuildTemplates/AzureContinuousDeploy.11.xaml_
 - _./page-2.md_
 
-#### Markdown widget relative links
+#### Example: Markdown widget relative links
 
 Relative links in a Markdown widget are relative to the team project collection URL base. Here are some examples:
 
-- _/DefaultCollection/Fabrikam/_versionControl#path=$/TFVC-Welcome/BuildTemplates/AzureContinuousDeploy.11.xaml_
-- _/DefaultCollection/Fabrikam/_versionControl#path=$/TFVC-Welcome/page-2.md_ 
+- _/DefaultCollection/Fabrikam/versionControl#path=$/TFVC-Welcome/BuildTemplates/AzureContinuousDeploy.11.xaml_
+- _/DefaultCollection/Fabrikam/versionControl#path=$/TFVC-Welcome/page-2.md_ 
 
 ### Anchor links
 
@@ -801,7 +808,7 @@ MOV (_.mov_), MP4 (_.mp4_)
 :::row-end:::
 
 > [!NOTE]
-> Not all file formats are supported as attachments in pull request comments, such as Microsoft Office Message (.msg) files.
+> Not all file formats are supported as attachments in pull request comments, such as Microsoft Office Message (_.msg_) files.
 
 ### Attach images or files
 
