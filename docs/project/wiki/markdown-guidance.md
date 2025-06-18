@@ -54,7 +54,7 @@ The following table outlines the feature support for different Markdown elements
 | [Links](#links)                         |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
 | [Images](#images)                       |      |   ✔️  |  ✔️  |  ✔️   |  ✔️ |
 | [Checklist or task list](#checklists)   |      |        | ✔️  |       |  ✔️ |
-| [Emojis](#emojis)                       |      |        | ✔️  |       |  ✔️ |
+| [Emojis](#emoji-reactions)              |      |        | ✔️  |       |  ✔️ |
 | [Ignore or escape Markdown](#ignore)    |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
 | [Attachments](#attachments)             |      |        | ✔️  |       |  ✔️ |
 | [Mathematical notation](#math-notation) |      |        | ✔️  |       |  ✔️ |
@@ -265,7 +265,7 @@ The following examples show how to identify a text block as JavaScript or C#. Yo
 
 **JavaScript**
 
-```
+```Code Snippet
 <!-- ```js       - Three backticks and identifier 'js' -->
 const count = records.length;
 <!-- ```         - Three backticks -->
@@ -279,7 +279,7 @@ const count = records.length;
 
 **C#**
 
-```
+```Code Snippet
 <!-- ```csharp   - Three backticks and identifier 'csharp' -->
 Console.WriteLine("Hello, World!");
 <!-- ```         - Three backticks -->
@@ -320,11 +320,11 @@ Organize structured data with Markdown tables. You can add tables in the Markdow
 Here are some points about working with tables in Markdown:
 
 - Create each row on a separate line and end each row with a carriage return (CR) or line feed (LF).
-- Create columns with hyphens (`-`) and the pipe symbol `|`, as in `|---|---|---|`.
+- Create columns with hyphens `-` and the pipe symbol `|`, as in `|---|---|---|`.
 - Define the column headers in the first row, as in `| First | Middle | Last |`.
-- Define the column alignment (left, center, right) by using colons (`:`) in the second row, as in `|:--|:--:|--:|`.
+- Define the column alignment (left, center, right) by using colons `:` in the second row, as in `|:--|:--:|--:|`.
 - Escape the pipe symbol with a backslash `\|` when used in table text, as in `| Describe the pipe \| symbol. |`
-- Add line breaks within a cell by using the HTML break tag (`<br/>`). This approach works within a wiki but not elsewhere.  
+- Add line breaks within a cell by using the HTML break tag `<br/>`. This approach works within a wiki but not elsewhere.  
 - Add a blank space before and after a work item or pull request mentioned in table text.
 
 ### Example: Create a table
@@ -451,7 +451,7 @@ Here are some points about working with links in Markdown:
 
 - The standard Markdown syntax for a link is `[Link display text](Link path)`.
 - In pull request comments and wikis, URLs that start with HTTP or HTTPS automatically format as links.
-- If you use the hash `#` in other ways like color hex codes, you can avoid auto suggestions for work items by prefixing the hash `#` with a backslash (`\`).
+- If you use the hash mark `#` in other ways like color hex codes, you can avoid auto suggestions for work items by prefixing the hash mark `#` with a backslash `\`.
 - In Markdown files and widgets, you can create text hyperlinks for a URL by using the standard Markdown link syntax. The `Link path` can be relative or absolute.
 
    The following example shows how to specify a relative link in Markdown, where the text renders as a hyperlink:
@@ -476,29 +476,40 @@ The following table lists the types of links supported for different Markdown sc
 :::row:::
 :::column span="":::
 
-**Supported links for Welcome pages**
+**Welcome pages**
 
-- Relative path: `[Display text](target.md)` 
-- Absolute path in Git: `[Display text](/folder/target.md)`
-- Absolute path in TFVC: `[Display text]($/project/folder/target.md)`
-- URL: `[Display text](http://address.com)`
+- Relative path:
+`[Display text](target.md)` 
+
+- Absolute path in Git:
+`[Display text](/folder/target.md)`
+
+- Absolute path in TFVC:
+`[Display text]($/project/folder/target.md)`
+
+- URL:
+`[Display text](http://address.com)`
 
 :::column-end:::
 
 :::column span="":::
 
-**Supported links for the Markdown widget**
+**Markdown widget**
 
-- URL: `[Display text](http://address.com)`
+- URL:
+`[Display text](http://address.com)`
 
 :::column-end:::
 
 :::column span="":::
 
-**Supported links for Wiki pages**  
+**Wiki pages**  
 
-- Absolute path of Wiki pages: `[Display text](/parent-page/child-page)`
-- URL: `[Display text](http://address.com)`
+- Absolute path of Wiki pages:
+`[Display text](/parent-page/child-page)`
+
+- URL:
+`[Display text](http://address.com)`
 
 :::column-end:::
 :::row-end:::
@@ -509,10 +520,19 @@ The following table lists the types of links supported for different Markdown sc
 
 Relative links to source control files are interpreted differently in a Welcome page versus a Markdown widget:
 
-| Markdown | Link form | Example 1 | Example 2 |
-|----------|-----------|-----------|-----------|
-| **Welcome page**     | Relative to root of source control repo where the Welcome page exists | _/BuildTemplates/AzureContinuousDeploy.11.xaml_ | _./page-2.md_ |
-| **Markdown widget**  | Relative to team project collection URL base | _/DefaultCollection/Fabrikam/_versionControl#path=$/TFVC-Welcome/BuildTemplates/AzureContinuousDeploy.11.xaml_ | _/DefaultCollection/Fabrikam/_versionControl#path=$/TFVC-Welcome/page-2.md_ |  
+#### Example: Welcome page relative links
+
+Relative links in a Welcome page are relative to the root of the source control depository where the Welcome page exists. Here are some examples:
+
+- _/BuildTemplates/AzureContinuousDeploy.11.xaml_
+- _./page-2.md_
+
+#### Markdown widget relative links
+
+Relative links in a Markdown widget are relative to the team project collection URL base. Here are some examples:
+
+- _/DefaultCollection/Fabrikam/_versionControl#path=$/TFVC-Welcome/BuildTemplates/AzureContinuousDeploy.11.xaml_
+- _/DefaultCollection/Fabrikam/_versionControl#path=$/TFVC-Welcome/page-2.md_ 
 
 ### Anchor links
 
@@ -523,21 +543,21 @@ When a Markdown file renders as HTML, the system assigns an anchor ID to each he
 - Ignore (don't include) most special characters, such as `#`, `@`, `$` 
 - Ignore (don't include) most punctuation, such as `:`, `"`, `?`
 
-You use the hash `#` character to link to the header in the document, as in `[Display text](#<header-anchor>)`.
+You use the hash mark `#` to link to the header in the document, as in `[Display text](#<header-anchor>)`.
 
 The following example shows a heading and a link its anchor ID:
 
 ```md
 #### Team #1 : Release Wiki!
 
-For more information, [Visit the Wiki](#team-1--release-wiki).
+Welcome to the Release wiki. For more information, [Visit the Project Wiki](#team-1--release-wiki).
 ```
 
 Here's the published view:
 
 #### Team #1 : Release Wiki!
 
-> For more information, [Visit the Wiki](#team-1--release-wiki).
+Welcome to the Release wiki. For more information, [Visit the Project Wiki](#team-1--release-wiki).
 
 You can also link to a heading in another Markdown file by specifying the file name with the anchor ID in the link:
 
@@ -636,27 +656,27 @@ A task is marked as completed by checking the task box in the list:
 
 :::image type="content" source="media/markdown-guidance/checklist-pr-applied-check.png" alt-text="Screenshot that shows tasks marked as completed in the task list.":::
 
-## Emojis
+## Emoji reactions
 
-Add emojis in pull requests and wiki files. You can use emojis to add character and react to comments in the request. 
+Add emoji reactions in pull requests and wiki files. You can use emoji reactions to add character and react to comments in the request. 
 
-Enter the name of an emotion or expression like `smile` and enclose the text within colon `:` characters. In the published view of the Markdown, your input is converted to the corresponding [emoji graphic](https://www.webpagefx.com/tools/emoji-cheat-sheet/). Markdown in Azure DevOps supports most emojis.
+Enter the name of an emotion or expression like `smile` and enclose the text within colon `:` characters. In the published view of the Markdown, your input is converted to the corresponding [emoji graphic](https://www.webpagefx.com/tools/emoji-cheat-sheet/). Markdown in Azure DevOps supports most emoji graphics.
 
-### Example: Add emojis in a pull request
+### Example: Add emoji reactions in a pull request
 
-The following example shows how to add emojis with Markdown in a pull request comment:
+The following example shows how to add emoji reactions with Markdown in a pull request comment:
 
 ```md
 The code review received :+1::+1: and the team is :smile:
 ```
 
-Here's the published view of the emojis:
+Here's the published view of the emoji reactions:
 
 :::image type="content" source="media/markdown-guidance/markdown-emoji-pull-request.png" alt-text="Screenshot that shows the published view of emojis in a pull request comment."::: 
 
-### Example: Escape emojis in Markdown
+### Example: Escape emoji syntax in Markdown
 
-The following example shows how to escape emojis with the backslash `\` character in Markdown:
+The following example shows how to escape emoji syntax with the backslash `\` character in Markdown:
 
 ```md
 Markdown syntax for some emoji reactions:
@@ -689,19 +709,27 @@ The following Markdown uses the backslash `\` character to publish special chara
 
 ```md
 \\\ Code comment
+
 Show the **\_\_**underscores**\_\_**
+
 \# Code comment and not a **Heading** 
+
 **\(** Include the **parentheses \)**
-Show the __\*__asterisks__\*__, don't change to *italics*
+
+Show the __\*__asterisks__\*__ and don't change to *italics*
 ```
 
 Here's the published view of the Markdown:
 
 \\\ Code comment
+
 Show the **\_\_**underscores**\_\_**
+
 \# Code comment and not a **Heading** 
+
 **\(** Include the **parentheses \)**
-Show the __\*__asterisks__\*__, don't change to *italics*
+
+Show the __\*__asterisks__\*__ and don't change to *italics*
 
 > [!NOTE]
 > For some Markdown, you can enter the HTML code `&#92;` for the backslash rather than the character symbol `\`.
@@ -710,18 +738,67 @@ Show the __\*__asterisks__\*__, don't change to *italics*
 
 ## Attachments
 
-Attach files in pull request comments and wiki pages. Attachments can help  illustrate your point or provide details about your suggestions. 
+Attach files in pull request comments and wiki pages. Attachments can help illustrate your point or provide details about your suggestions. Attachments support the following file formats:
 
-Attachments support the following file formats:
+:::row:::
+:::column span="1":::
+**Attachment type**
+:::column-end:::
+:::column span="2":::
+**File formats**
+:::column-end:::
+:::row-end:::
 
-| Type     | File formats |
-|----------|--------------|
-| **Code** | C# (_.cs_), Extensible Markup Language (_.xml_), JavaScript Object Notation (_.json_), Hypertext Markup Language (_.html_, _.htm_), Layer (_.lyr_), Windows PowerShell script (_.ps1_), Roshal Archive (_.rar_), Remote Desktop Connection (_.rdp_), Structured Query Language (_.sql_) <br> **Note**: Code attachments aren't supported in pull request comments. |
-| **Compressed files** | ZIP (_.zip_), GZIP (_.gz_) |
-| **Documents** | Markdown (_.md_), Microsoft Office Message (_.msg_), Microsoft Project (_.mpp_), Word (_.doc_, _.docx_), Excel (_.xls_, _.xlsx_, _.csv_), PowerPoint (_.ppt_, _.pptx_), Plain text (_.txt_), Portable Document Format (_.pdf_) | 
-| **Images** | PNG (_.png_), GIF (_.gif_), JPEG (_.jpeg_, _.jpg_), Icons (_.ico_) | 
-| **Visio** | VSD (_.vsd_, _.vsdx_)  |
-| **Video** | MOV (_.mov_), MP4 (_.mp4_) |
+:::row:::
+:::column span="1":::
+**Code**
+:::column-end:::
+:::column span="2":::
+C# (_.cs_), Extensible Markup Language (_.xml_), JavaScript Object Notation (_.json_), Hypertext Markup Language (_.html_, _.htm_), Layer (_.lyr_), Windows PowerShell script (_.ps1_), Roshal Archive (_.rar_), Remote Desktop Connection (_.rdp_), Structured Query Language (_.sql_)
+
+**Note**: Code attachments aren't supported in pull request comments.
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Compressed files**
+:::column-end:::
+:::column span="2":::
+ZIP (_.zip_), GZIP (_.gz_)
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Documents**
+:::column-end:::
+:::column span="2":::
+Markdown (_.md_), Microsoft Office Message (_.msg_), Microsoft Project (_.mpp_), Word (_.doc_, _.docx_), Excel (_.xls_, _.xlsx_, _.csv_), PowerPoint (_.ppt_, _.pptx_), Plain text (_.txt_), Portable Document Format (_.pdf_)
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Images**
+:::column-end:::
+:::column span="2":::
+PNG (_.png_), GIF (_.gif_), JPEG (_.jpeg_, _.jpg_), Icons (_.ico_)
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Visio**
+:::column-end:::
+:::column span="2":::
+VSD (_.vsd_, _.vsdx_)
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Video**
+:::column-end:::
+:::column span="2":::
+MOV (_.mov_), MP4 (_.mp4_)
+:::column-end:::
+:::row-end:::
 
 > [!NOTE]
 > Not all file formats are supported as attachments in pull request comments, such as Microsoft Office Message (.msg) files.
@@ -765,7 +842,7 @@ $
 $\Gamma,  \Delta,  \Theta, \Lambda, \Xi, \Pi, \Sigma, \Upsilon, \Phi, \Psi, \Omega$
 ```
 
-Here's the published view of the characters in the Markdown file:
+Here's the published view of the Greek characters:
 
 :::image type="content" source="media/markdown-guidance/mathematical-notation-greek-characters.png" alt-text="Screenshot that shows the published view of the KaTex code snippet that lists Greek characters used in mathematical notation.":::
 
@@ -875,7 +952,7 @@ sequenceDiagram
 
 Here's the published view of the sequence diagram:
 
-:::image type="content" source="media/wiki/wiki-mermaid-sequence-diagram.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a sequence diagram and a preview of the published view.":::
+:::image type="content" source="media/wiki/wiki-mermaid-sequence-diagram.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a sequence diagram and a preview of the published view." lightbox="media/wiki/wiki-mermaid-sequence-diagram.png":::
 
 #### Example: Gantt chart
 
@@ -900,7 +977,7 @@ gantt
 
 Here's the published view of the Gantt chart:
 
-:::image type="content" source="media/wiki/wiki-mermaid-gantt-chart.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a Gantt chart and a preview of the published view.":::
+:::image type="content" source="media/wiki/wiki-mermaid-gantt-chart.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a Gantt chart and a preview of the published view." lightbox="media/wiki/wiki-mermaid-gantt-chart.png":::
 
 #### Example: Flowchart
 
@@ -911,7 +988,7 @@ The following example creates a flowchart with the `graph` type. The graph infor
 > [!NOTE]
 > Azure DevOps doesn't support the `flowchart` diagram type, the arrow `---->` syntax, or links to and from a `subgraph` diagram type.
 
-```
+```md
 :::mermaid
 graph LR;
     A[Hard edge] -->|Link text| B(Round edge) --> C{Decision}
@@ -922,7 +999,7 @@ graph LR;
 
 Here's the published view of the flowchart graph:
 
-:::image type="content" source="media/wiki/wiki-mermaid-flowchart.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a flowchart graph and a preview of the published view.":::
+:::image type="content" source="media/wiki/wiki-mermaid-flowchart.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a flowchart graph and a preview of the published view." lightbox="media/wiki/wiki-mermaid-flowchart.png":::
 
 #### Example: Class diagram
 
@@ -930,7 +1007,7 @@ The class diagram (type `classDiagram`) is the essential part of the object-orie
 
 The following example shows how to add a class diagram to a wiki page:
 
-```
+```md
 :::mermaid
 classDiagram
     Creature <|-- Superman
@@ -958,7 +1035,7 @@ classDiagram
 
 Here's the published view of the class diagram:
 
-:::image type="content" source="media/wiki/wiki-mermaid-class-diagram.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a class diagram and a preview of the published view.":::
+:::image type="content" source="media/wiki/wiki-mermaid-class-diagram.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a class diagram and a preview of the published view." lightbox="media/wiki/wiki-mermaid-class-diagram.png":::
 
 #### Example: State diagram
 
@@ -966,7 +1043,7 @@ The state diagram (type `stateDiagram`) describes how system states can change w
 
 The following example shows how to add a state diagram to a wiki page. This example uses version 2 of the state diagram type (type `stateDiagram-v2`).
 
-```
+```md
 :::mermaid
 stateDiagram-v2
     [*] --> Active
@@ -996,7 +1073,7 @@ The user journey (type `journey`) diagram describes what steps are required to c
 
 The following example shows how to add a user journey diagram to a wiki page:
 
-```
+```md
 :::mermaid
 journey
     title Home office day
@@ -1024,7 +1101,7 @@ The pie chart (type `pie`) diagram helps to visualize the percentages of informa
 
 The following example creates a pie chart with the title `Fishermen in countries`:
 
-```
+```md
 :::mermaid
 pie title Fishermen in countries
     "Norway" : 684
@@ -1043,7 +1120,7 @@ The requirements diagram (type `requirementDiagram`) creates a visualization of 
 
 The following example shows how to add a requirements diagram to a wiki page:
 
-```
+```md
 :::mermaid
 requirementDiagram
     requirement development_req {
