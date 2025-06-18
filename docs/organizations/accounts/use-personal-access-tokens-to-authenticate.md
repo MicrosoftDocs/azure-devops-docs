@@ -9,7 +9,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/09/2025
+ms.date: 06/12/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -70,7 +70,7 @@ Use your PAT anywhere your user credentials are required for authentication in A
 
 ### Notifications
 
-During the lifespan of a PAT, users receive two notifications: at time of creation and three days before expiration.
+During a PAT's lifespan, users receive two notifications: one when the PAT is created and another seven days before it expires.
 
 After you create a PAT, you might receive a notification similar to the following example. This notification serves as confirmation that your PAT was successfully added to your organization.
 
@@ -148,8 +148,8 @@ Do the following steps to:
 
 You can revoke a PAT at any time for these and other reasons:
 
-- Revoke a PAT if you suspect it's compromised.
-- Revoke a PAT when it's no longer needed.
+- Revoke a PAT if you suspect it is compromised.
+- Revoke a PAT when it is no longer needed.
 - Revoke a PAT to enforce security policies or compliance requirements.
 
 1. From your home page, open user settings :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
@@ -200,6 +200,7 @@ If you're using a PAT issued before that data, regenerate your PAT. If you integ
 * Keep PAT lifespans short (weekly is ideal, even shorter is better).
 
 ### Managing PATs
+
 * **Don't share your PATs!**
 * **Store your PATs in a secure key management solution**, like [Azure KeyVault](/azure/key-vault/general/overview).
 * Regularly rotate or regenerate your PATs via UI or PAT Lifecycle Management APIs.

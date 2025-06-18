@@ -7,11 +7,11 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 10/24/2024
+ms.date: 06/12/2025
 monikerRange: 'azure-devops'
 ---
 
-# Manage personal access tokens using policies (for admins)
+# Manage personal access tokens using policies (for administrators)
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -27,7 +27,7 @@ Existing PATs, created through both the UI and APIs, remain valid for the rest o
 
 | Category | Requirements |
 |--------------|-------------|
-|**Entra Tenant**| Your organization is [linked to a Microsoft Entra tenant](connect-organization-to-azure-ad.md).|
+|**Microsoft Entra tenant**| Your organization is [linked to a Microsoft Entra tenant](connect-organization-to-azure-ad.md).|
 |**Permissions**| <ul><li>Org-level policies: [Project Collection Administrator](../security/look-up-project-collection-administrators.md)</li><li>Tenant-level policies: [Azure DevOps Administrator](../security/look-up-azure-devops-administrator.md)</li></ul>|
 
 
@@ -44,7 +44,7 @@ Each policy has its own unique allowlist. To exempt a user from all policies, th
 
 Azure DevOps Administrators can restrict users from creating global PATs, which can be used in all accessible organizations rather than a single organization. When this policy is enabled, new PATs must be associated with specific Azure DevOps organizations. By default, this policy is set to *off*.
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
@@ -85,16 +85,17 @@ Azure DevOps Administrators can define the maximum lifespan of a PAT, specifying
 ## Restrict personal access token creation (organization policy)
 
 > [!NOTE]
-> This policy is in public preview.
+> - This policy is in public preview.
+> - This policy is only available for Microsoft Entra-backed organizations.
 
-Project Collection Administrators are able to control who can create and regenerate PATs in the organizations they manage. For existing organizations, this policy is set to *off*. Once this policy is in public preview, by default, this policy is set to *on*. Existing PATs will continue working until the PAT's expiration date.
+Project Collection Administrators are able to control who can create and regenerate PATs in the organizations they manage. For existing organizations, this policy is set to *off*. Once this policy is in public preview, by default, this policy is set to *on*. Existing PATs continue working until the PAT's expiration date.
 
 > [!TIP]
 > Combine this policy with a short duration set for the "Set maximum lifespan for new PATs" policy to drive down PAT usage in your organization.
 
 The policy also blocks global PAT usage in the organization. Global PAT users must be added to the allowlist to continue to use their global PAT in the organization.
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
@@ -102,13 +103,13 @@ The policy also blocks global PAT usage in the organization. Global PAT users mu
 
    :::image type="content" source="media/disable-pat-policy/disable-pat-policy.png" alt-text="Screenshot of toggle moved to on position and subpolicies checked for Restrict personal access token creation policy.":::
 
-4. If your organization members regularly make use of packaging PATs, select the *Allow creation of PAT with packaging scope only* checkbox. Common packaging scenarios have not fully moved to Entra-based authentication, and may still rely on PATs. If this policy is enabled, users not on the allowlist will see only packaging scopes available to them on their "Personal access tokens" page.
+4. If your organization members regularly use packaging PATs, select the *Allow creation of PAT with packaging scope only* checkbox. Many packaging scenarios still rely on PATs and haven't fully transitioned to Microsoft Entra-based authentication. When this policy is enabled, users who aren't on the allowlist have access only to packaging scopes on their "Personal access tokens" page.
 
    :::image type="content" source="media/disable-pat-policy/disable-pat-packaging-only.png" alt-text="Screenshot of packaging scopes available only on the user's Create a new personal access token modal.":::
 
 6. If any Microsoft Entra users or groups require continued access to PATs, add them to the allowlist by selecting *Manage* and searching for the user or group in the dropdown. Once allowlist updates are complete, select the checkbox next to *Allow creation of PAT of any scope for selected Microsoft Entra users and groups*.
 
-7. Move the toggle to *on* in order for the restriction policy to apply. Selected subpolicies won't apply until the toggle is on.
+7. Move the toggle to *on* in order for the restriction policy to apply. Selected subpolicies don't apply until the toggle is on.
 
 ## Revoke leaked PATs automatically (tenant policy)
 
