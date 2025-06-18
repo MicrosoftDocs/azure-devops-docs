@@ -159,7 +159,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Link to work items from a wiki](../../project/wiki/markdown-guidance.md)  
       - [Link work items](../backlogs/add-link.md)  
       - [List work items](../queries/using-queries.md)  
-      - [List work items in a wiki](../../project/wiki/markdown-guidance.md#)  
+      - [List work items in a wiki](../../project/wiki/markdown-guidance.md)
       <br/>
       - [Manage bugs](../backlogs/manage-bugs.md)  
       - [Manage issues or impediments](../backlogs/manage-issues-impediments.md)
