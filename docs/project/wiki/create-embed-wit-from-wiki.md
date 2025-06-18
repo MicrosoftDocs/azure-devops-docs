@@ -38,7 +38,7 @@ Create and embed work items in your wiki page content. This feature gives you an
 The selected content in the wiki page is replaced with the embedded work item.
 
 > [!NOTE]
-> Only Markdown plain text, including bold and italics, get replaced in the wiki page. For the rest of the content like images, code blocks, and videos, the work item gets created, but the embed must be done manually. This process is to prevent the page from breaking due to the replaced work item. For more information, see [Link to work items from a Wiki page](markdown-guidance.md#link-to-work-items-from-a-wiki-page).
+> Only Markdown plain text, including bold and italics, get replaced in the wiki page. For the rest of the content like images, code blocks, and videos, the work item gets created, but the embed must be done manually. This process is to prevent the page from breaking due to the replaced work item. For more information, see [Link to work items from a Wiki page](markdown-guidance.md#link-work-items).
 
 ## Show work item status
 
