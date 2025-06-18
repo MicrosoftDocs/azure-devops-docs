@@ -21,7 +21,7 @@ ms.date: 06/18/2025
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-This article describes the basic syntax for using Markdown (_.md_) format with Azure DevOps features, including [Wiki pages](#use-markdown-in-wikis). Markdown syntax lets you add special formatting to your page content, such as headings, lists, tables, and images. Use Markdown to format your README files, dashboards, pull request content, and so on.
+This article describes the basic syntax for using Markdown (_.md_) format with Azure DevOps features, including [Wiki pages](#markdown-in-an-azure-devops-wiki). Markdown syntax lets you add special formatting to your page content, such as headings, lists, tables, and images. Use Markdown to format your README files, dashboards, pull request content, and so on.
 
 You have two formatting options: common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [Markdown extensions for GitHub](https://docs.github.com/get-started/writing-on-github).
 
@@ -44,7 +44,7 @@ The following table outlines the feature support for different Markdown elements
 |-----------------------------------------|:----:|:------:|:---:|:------:|:----:|
 | [Headers](#headers)                     |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
 | [Paragraphs and line breaks](#breaks)   |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Blockquotes](#blockquotes)             |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
+| [Block quotes](#block-quotes)             |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
 | [Horizontal rules](#rules)              |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
 | [Emphasis](#emphasis)                   |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
 | [Code highlighting](#code)              |      |        | ✔️  |  ✔️   |  ✔️ |
@@ -122,7 +122,7 @@ The following image shows the published view of the Markdown for spacing in a wi
 
 Quote comments or text to set the context for your new comment or text. The quoted text displays indented from the left margin with a vertical line along the quoted section.
 
-You can add blockquotes in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
+You can add block quotes in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
 
 To quote a single line of text or a paragraph block, insert a right angle bracket `>` before the first text.
 
@@ -255,7 +255,9 @@ The following image shows the published view of the Markdown for a portion of te
 
 There's an alternate method for converting a text block into code. When a line of text in the Markdown starts with four spaces in the left margin, the text automatically converts to a code block. The following example demonstrates this behavior:
 
+```md
     This article is a Markdown file (_.md_). This line of text automatically formats as code because the line starts with four spaces in the left margin.
+```
 
 The preferred approach is to enclose the text within three backticks so you can specify the language identifier. The identifier applies syntax highlighting to the code according to the conventions of the specified language. Identifier labels are available for most programming languages, such as JavaScript (`js`), C# (`csharp`), and Markdown (`md`). For the list of supported languages, see the [highlightjs](https://github.com/highlightjs/highlight.js/tree/stable-11/src/languages) GitHub repository.
 
@@ -528,14 +530,14 @@ The following example shows a heading and a link its anchor ID:
 ```md
 #### Team #1 : Release Wiki!
 
-For more information, [Visit the Wiki](#team-1--release--wiki).
+For more information, [Visit the Wiki](#team-1--release-wiki).
 ```
 
 Here's the published view:
 
 #### Team #1 : Release Wiki!
 
-> For more information, [Visit the Wiki](#team-1--release--wiki).
+> For more information, [Visit the Wiki](#team-1--release-wiki).
 
 You can also link to a heading in another Markdown file by specifying the file name with the anchor ID in the link:
 
@@ -650,7 +652,7 @@ The code review received :+1::+1: and the team is :smile:
 
 Here's the published view of the emojis:
 
-:::image type="content" source="media/markdown-guidance/markdown-emojis-pull-request.png" alt-text="Screenshot that shows the published view of emojis in a pull request comment."::: 
+:::image type="content" source="media/markdown-guidance/markdown-emoji-pull-request.png" alt-text="Screenshot that shows the published view of emojis in a pull request comment."::: 
 
 ### Example: Escape emojis in Markdown
 
@@ -783,7 +785,7 @@ $$
 
 Here's the published view of the notation in the Markdown file:
 
-:::image type="content" source="media/markdown-guidance/media/markdown-guidance/mathematical-notation-algebra.png" alt-text="Screenshot that shows the published view of the KaTex code snippet that includes inline notation and an algebraic block expression.":::
+:::image type="content" source="media/markdown-guidance/mathematical-notation-algebra.png" alt-text="Screenshot that shows the published view of the KaTex code snippet that includes inline notation and an algebraic block expression.":::
 
 ### Example: Show sums and integrals
 
@@ -801,7 +803,7 @@ $$
 
 Here's the published view of the expressions in the Markdown file:
 
-:::image type="content" source="media/markdown-guidance/media/markdown-guidance/mathematical-notation-sums-integrals.png" alt-text="Screenshot that shows the published view of the KaTex code snippet that uses two block expressions to calculate sums and integrals.":::
+:::image type="content" source="media/markdown-guidance/mathematical-notation-sums-integrals.png" alt-text="Screenshot that shows the published view of the KaTex code snippet that uses two block expressions to calculate sums and integrals.":::
 
 ## Markdown in an Azure DevOps wiki
 
