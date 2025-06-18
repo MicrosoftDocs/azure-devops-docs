@@ -471,7 +471,7 @@ When you link to another Markdown page in the same Git or Team Foundation Versio
 > [!NOTE]  
 > Links to documents on file shares (`file://...`) aren't supported for security purposes.
 
-The following table lists the types of links supported for different Markdown scenarios.
+The following sections provide examples for different Markdown scenarios.
 
 #### Example: Welcome page relative links
 
