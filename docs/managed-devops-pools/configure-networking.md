@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 06/13/2025
+ms.date: 06/18/2025
 ---
 
 # Configure Managed DevOps Pools networking
@@ -149,7 +149,7 @@ If you have systems in place on your network (NSG, Firewall, etc.) that restrict
    * `rmprodbuilds.azureedge.net` - Used to download the Managed DevOps Pools worker binaries and startup scripts. (The agent portion of the worker binaries is downloaded from `rm-agent.prod.manageddevops.microsoft.com` (formerly downloaded from `agent.prod.manageddevops.microsoft.com`) which is covered by the previous required `*.prod.manageddevops.microsoft.com` entry.)
    * `*.queue.core.windows.net` - Worker queue for communicating with Managed DevOps Pools service.
 * Required Endpoints for connecting to Azure DevOps - without allowlisting these endpoints, machines may come online and even go to an "allocated" state, but will fail to communicate with ADO as either the VSTS task agent can't connect, or it can't start.
-   * `vstsagentpackage.azureedge.net` and `download.agent.dev.azure.com` - Azure DevOps agent CDN location, used to download Azure DevOps agent
+   * `download.agent.dev.azure.com` - Azure DevOps agent CDN location, used to download Azure DevOps agent (formerly `vstsagentpackage.azureedge.net` - for more information, see [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/)).
    * `dev.azure.com` - Required to handle communication with Azure DevOps
    *  Preparing Linux machines - these endpoints are required to spin up Ubuntu machines, but are not necessary if a pool is only using Windows. As part of setting up the Azure DevOps Task agent, a few required packages are added and an apt-get is run, which will fail without these being allowlisted.
       * `azure.archive.ubuntu.com` - Provisioning Linux machines - this is HTTP (port 80), not HTTPS (port 443)
