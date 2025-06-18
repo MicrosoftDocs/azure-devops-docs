@@ -473,53 +473,31 @@ When you link to another Markdown page in the same Git or Team Foundation Versio
 
 The following table lists the types of links supported for different Markdown scenarios.
 
-:::row:::
-:::column span="":::
+#### Example: Welcome page relative links
 
-**Welcome pages**
+Here are some examples of relative links in the Welcome page for a wiki:
 
-- Relative path:
+- Relative path: `[Display text](target.md)` 
 
-`[Display text](target.md)` 
+- Absolute path in Git: `[Display text](/folder/target.md)`
 
-- Absolute path in Git:
+- Absolute path in TFVC: `[Display text]($/project/folder/target.md)`
 
-`[Display text](/folder/target.md)`
+- URL: `[Display text](http://address.com)`
 
-- Absolute path in TFVC:
+#### Example: Markdown widget relative links
 
-`[Display text]($/project/folder/target.md)`
+The following example shows a relative link in a Markdown widget:
 
-- URL:
+- URL: `[Display text](http://address.com)`
 
-`[Display text](http://address.com)`
+#### Example: Wiki pages relative links
 
-:::column-end:::
+Here are some examples of relative links in a wiki page:
 
-:::column span="":::
+- Absolute path of Wiki pages: `[Display text](/parent-page/child-page)`
 
-**Markdown widget**
-
-- URL:
-
-`[Display text](http://address.com)`
-
-:::column-end:::
-
-:::column span="":::
-
-**Wiki pages**  
-
-- Absolute path of Wiki pages:
-
-`[Display text](/parent-page/child-page)`
-
-- URL:
-
-`[Display text](http://address.com)`
-
-:::column-end:::
-:::row-end:::
+- URL: `[Display text](http://address.com)`
 
 <a id="relative-links"></a>
 
