@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 04/02/2025
+ms.date: 06/12/2025
 ---
 
 ### I'm running a firewall and my code is in Azure Repos. What URLs does the agent need to communicate with?
@@ -30,10 +30,10 @@ If you're running an agent in a secure network behind a firewall, make sure the 
 | `https://dev.azure.com`                              | For organizations using the `dev.azure.com` domain                                     |
 | `https://login.microsoftonline.com`                  | Microsoft Entra sign-in                                                         |
 | `https://management.core.windows.net`                | Azure Management APIs                                                                 |
-| `https://vstsagentpackage.azureedge.net`<br>`https://download.agent.dev.azure.com`             | Agent package                                                                          |
+| `https://download.agent.dev.azure.com`             | Agent package                                                                          |
 
 > [!IMPORTANT]
-> [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/), which requires a new domain URL to be allow-listed in firewall rules for agent software download.
+> [Edgio CDN for Azure DevOps was retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/), which requires a new domain URL to be allow-listed in firewall rules for agent software download.
 > The new domain to allow-list for agent download is `https://*.dev.azure.com`. If your firewall rules don't allow wildcards, use `https://download.agent.dev.azure.com`.
 > 
 > The Azure DevOps team recommends to make this change by the following date:

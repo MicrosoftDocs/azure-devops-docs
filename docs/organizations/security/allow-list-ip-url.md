@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/02/2025
+ms.date: 06/12/2025
 ---
 
 # Allowed IP addresses and domain URLs
@@ -253,8 +253,7 @@ https://{organization_name}.vstmr.visualstudio.com
 https://{organization_name}.pkgs.visualstudio.com
 https://{organization_name}.vssps.visualstudio.com
 
-Azure DevOps uses the following URLs to provide the agent software for download for self-hosted agents.
-https://vstsagentpackage.azureedge.net
+Azure DevOps uses the following URL to provide the agent software for download for self-hosted agents.
 https://download.agent.dev.azure.com
 
 Azure DevOps uses content delivery network (CDN) to serve static content. The following URLs are part of that. 
@@ -300,7 +299,7 @@ We recommend you open port `443` to all traffic on the following IP addresses an
 |https://cdn.vsassets.io    | Hosts Azure DevOps Content Delivery Networks (CDNs) content        |
 |https://static2.sharepointonline.com    | Hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on        |
 |https://vsrm.dev.azure.com   | Hosts releases        |
-|https://vstsagentpackage.azureedge.net<br>https://download.agent.dev.azure.com      |  Required to set up self-hosted agent in machines within your network              |
+|https://download.agent.dev.azure.com      |  Required to set up self-hosted agent in machines within your network              |
 |https://amp.azure.net   | Needed for deploying to Azure app service           |
 |https://go.microsoft.com  | Accesses go links        |
 
@@ -351,7 +350,7 @@ For more information about hosted Windows, Linux, and macOS agents, see [Microso
 If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/linux-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/osx-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
 
 > [!IMPORTANT]
-> [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/), which requires a new domain URL to be allow-listed in firewall rules for agent software download.
+> [Edgio CDN for Azure DevOps was retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/), which required a new domain URL to be allow-listed in firewall rules for agent software download.
 > The new domain to allow-list for agent download is `https://*.dev.azure.com`. If your firewall rules don't allow wildcards, use `https://download.agent.dev.azure.com`.
 > 
 > The Azure DevOps team recommends to make this change by the following date:
