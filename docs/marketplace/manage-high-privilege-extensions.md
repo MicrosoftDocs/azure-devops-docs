@@ -11,9 +11,6 @@ ms.date: 04/23/2025
 
 # Manage high privilege scopes, pipeline decorators, and unpublished extensions
 
-> [!IMPORTANT]
-> This feature is in **public preview**. Features in public preview could undergo changes before becoming generally available.
-
 Extensions in Azure DevOps enhance functionality and streamline workflows, but some extensions might pose security vulnerabilities due to their high privilege scopes or unpublished status. This article explains how to identify and manage high privilege, pipeline decorators, and unpublished extensions to protect your Azure DevOps organization from potential security vulnerabilities or unexpected behavior.
 
 ## What are high privilege scopes and high privilege extensions?
@@ -64,9 +61,6 @@ When you select any extension and especially an extension with high privilege sc
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Azure DevOps' Visual Studio Marketplace acquisition screen for a high privilege extension.](media/high-privilege-extensions/acquisition-pipeline.png)
-
-> [!NOTE]
-> This feature is being released gradually. If you don't see the high privilege scope insights in your [Azure DevOps Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) user interface, wait a few more days until it becomes available for you too.
 
 ## Use pipeline decorators safely
 
