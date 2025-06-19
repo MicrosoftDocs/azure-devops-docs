@@ -61,7 +61,7 @@ For more information, see [OData query guidelines, Do use weekly or monthly snap
 
 ### About work item revisions
 
- Each time you update a work item, the system creates a new revision and records this action in the `System.RevisedDate` field, which makes it useful for specifying a history filter. The revised date is represented by `RevisedDate` (DateTime) and `RevisedDateSK` (Int32) properties. For best performance, use the latter date surrogate key. It represents the date when a revision was created or it has null for active or incomplete revisions. 
+ Each time you update a work item, the system creates a new revision and records this action in the `System.RevisedDate` field, which makes it useful for specifying a history filter. The revised date is represented by `RevisedDate` (DateTime) and `RevisedDateSK` (Int32) properties. For best performance, use the latter date surrogate key. It represents the date when a revision was created or it has "9999-01-01T00:00:00Z", which is how we denote a Null value in an OData datetime data type, for active or incomplete revisions. 
 
 If you want all the dates since the `{startDate}` inclusive, add the following filter to your query.
 
@@ -428,6 +428,7 @@ Custom fields are automatically added to the Analytics service as a custom prope
 
 <!--- CMMI specific fields not added to navigation properties --> 
 
+ 
  
 ## Related articles
 
