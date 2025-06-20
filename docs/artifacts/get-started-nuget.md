@@ -1,43 +1,31 @@
 ---
-title: "Quickstart: Get started with NuGet packages and Azure Artifacts"
-description: Learn how to use Azure Artifacts to publish and download NuGet packages from your feed.
+title: Publish and download NuGet packages with Azure Artifacts
+description: Learn how to use Azure Artifacts to publish and download NuGet packages.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.author: rabououn
 author: ramiMSFT
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.date: 05/14/2024
+ms.date: 06/20/2025
 monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
-# Quickstart: Get started with NuGet packages in Azure Artifacts
+# Publish and download NuGet packages with Azure Artifacts
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
-Azure Artifacts enables developers to publish and download NuGet packages from sources such as feeds and public registries. With Azure Artifacts, you can create feeds that are either:
+Azure Artifacts enables developers to publish and download NuGet packages from feeds or public registries. Feeds can be either private, allowing you to share packages with specific users, or public, making your packages accessible to anyone on the internet.
 
-* Private, so you can share packages with your team and specific users.
-* Public, so you can share packages openly with anyone on the internet.
-
-In this quickstart, you learn how to:
-
-> [!div class="checklist"]
->
-> * Create a new feed.
-> * Set up your project and connect to your feed.
-> * Publish NuGet packages.
-> * Download packages from your feed.
+This article guides you through creating a feed, configuring your project, and publishing and downloading NuGet packages.
 
 ## Prerequisites
 
-* Create an Azure DevOps [organization](../organizations/accounts/create-organization.md) and a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
+| **Product**        | **Requirements**   |
+|--------------------|--------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Install the [latest NuGet version](https://www.nuget.org/downloads). |
 
-* Install the [latest NuGet version](https://www.nuget.org/downloads).
-
-* Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
-
-## <a name = "create-feed"></a> Create a feed
+## Create a feed
 
 [!INCLUDE [](includes/create-feed.md)]
 
