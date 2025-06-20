@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 02/17/2025
+ms.date: 06/20/2025
 monikerRange: 'azure-devops'
 ---
 # Data protection overview
@@ -279,7 +279,7 @@ More requirements for internal projects include associating the organization wit
 
 You might be interested in understanding third-party evaluation of our procedures for data security. Azure DevOps achieved the following certifications:
 
-- ISO 27001:2013
+- ISO 27001:2022
 - ISO 27018:2019
 - ISO 26262:2023
 - Health Insurance Portability and Accountability Act (HIPAA)
