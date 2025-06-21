@@ -48,4 +48,4 @@ ms.date: 03/15/2024
 ::: moniker-end
 
 > [!NOTE]
-> By default, newly created feeds have their project's **Build Service** value set to **Feed and Upstream Reader (Collaborator)**.
+> By default, the **Build Service** for the project *(for example: projectName Build Service (orgName))* is assigned the **Feed and Upstream Reader (Collaborator)** role when a new feed is created.
