@@ -225,6 +225,10 @@ When you create a Managed DevOps Pool, the account you use to sign in to the Azu
 | **Organization-level Agent pools administrator** | Administrators of agent pools at the organization level can [create new agent pools as well as perform all operations on them at the organization level](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level). | A [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or another **Organization-level Agent pools administrator** can add users to this group and grant them the administrator role. For more information, see [Set organization security for all agent pools](../pipelines/policies/permissions.md#set-organization-security-for-all-agent-pools). |
 | **Project Collection Administrator** | The Project Collection Administrators group is the main administrative security group defined for an organization and can perform all operations in an Azure DevOps organization, including creating new pools. | Other project collection administrators can add users to this group. For information about this group and how to see its members, see [Look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md). |
 
+> [!NOTE]
+> When deploying your Managed DevOps Pool using Infrastructure-as-Code via an Azure Pipelines make sure the service connection's App Registration is added to one of the groups above as described [here](https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops#2-add-a-service-principal-to-an-azure-devops-organization), otherwise deployment will fail with error [The logged in user does not have Manage permissions in the Azure DevOps organization](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/troubleshooting?view=azure-devops#the-logged-in-user-was-not-found-in-the-azure-devops-organization)
+
+
 ## Next steps
 
 * [Create your first Managed DevOps Pool](./quickstart-azure-portal.md)
