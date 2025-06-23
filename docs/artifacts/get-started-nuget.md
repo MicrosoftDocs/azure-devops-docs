@@ -67,7 +67,7 @@ To publish a package to your feed, run the following command. The `ApiKey` param
 nuget.exe push -Source <SOURCE_NAME> -ApiKey key <PACKAGE_PATH>
 ```
 
-#### Examples:**
+#### Examples
 
 - **Project-scoped feed**:
 
