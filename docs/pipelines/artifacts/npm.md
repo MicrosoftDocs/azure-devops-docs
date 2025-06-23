@@ -19,7 +19,7 @@ With Azure Pipelines, you can publish your npm packages to Azure Artifacts feeds
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
+- Create a [new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - If you're using a self-hosted agent, make sure that it has [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 

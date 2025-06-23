@@ -22,7 +22,7 @@ Finding the right package for your project can be challenging, especially when t
 | Category | Requirements |
 |--------------|-------------|
 | **Azure DevOps organization and project** | An [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project). |
-| **Azure Artifacts feed** | An [Azure Artifacts feed](../../artifacts/get-started-nuget.md#create-feed). |
+| **Azure Artifacts feed** | An [Azure Artifacts feed](../../artifacts/get-started-nuget.md#create-a-feed). |
 
 ## Search packages
 
