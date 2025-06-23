@@ -1,7 +1,7 @@
 ---
 title: Configure storage
 description: Learn how to add an empty data disk to your Managed DevOps Pools agents.
-ms.date: 11/13/2024
+ms.date: 06/23/2025
 ---
 
 # Configure storage
@@ -110,7 +110,7 @@ Configure the following properties for your attached data disk.
 | Size (GiB) | Specify the size of your data disk. The maximum size depends on the storage type. For more information, see [Disk type comparison](/azure/virtual-machines/disks-types#disk-type-comparison) .|
 | Caching Type | Specify the caching type for your disk. Choose from: **Default**, **None**, **ReadOnly**, **ReadWrite**. The default for data disks that support caching is **ReadOnly**. For more information, see [Virtual machine and disk performance](/azure/virtual-machines/disks-performance). |
 | Storage Type | Choose from the following storage types: **Standard_LRS** (default), **Premium_LRS**, **StandardSSD_LRS**, **Premium_ZRS**, **StandardSSD_ZRS**. For more information about these types, see [SKU Types](/rest/api/storagerp/srp_sku_types) and [Azure managed disk types](/azure/virtual-machines/disks-types). |
-| Drive Letter | If you have any Windows agent images in your pool, choose a drive letter for your disk. If you don't specify a drive letter, **F** is used for VM sizes with a temporary disk; otherwise **E** is used. The drive letter must be a single letter except **A**, **C**, **D**, or **E**. If you are using a VM size without a temporary disk and want **E** as your drive letter, leave **Drive Letter** empty to get the default value of **E**. |
+| Drive Letter | If you have any Windows agent images in your pool, choose a drive letter for your disk. If you don't specify a drive letter, **F** is used for VM sizes with a temporary disk; otherwise **E** is used. The drive letter must be a single letter except **A**, **C**, **D**, or **E**. If you are using a VM size without a temporary disk and want **E** as your drive letter, leave **Drive Letter** empty to get the default value of **E**. If you're using an ARM template or Azure CLI script to configure your storage, omit the drive letter parameter if you don't want a drive letter. |
 
 ## Use the data disk for your agent working directory
 
