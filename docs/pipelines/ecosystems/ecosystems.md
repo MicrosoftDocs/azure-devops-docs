@@ -22,7 +22,7 @@ You can select from the following languages and platforms to find guidance for b
 
 ## Build your app
 
-Build your app with any of the following languages.
+See the following topics for examples of building your app with any of the following languages.
 
 - [.NET Core](dotnet-core.md)
 - [Anaconda](anaconda.md)
@@ -42,7 +42,7 @@ Build your app with any of the following languages.
 
 ## Deploy your app
 
-Deploy your app to any of the following platforms.
+See the following topics for information on dDeploy your app to any of the following platforms.
 
 - [Kubernetes](./kubernetes/deploy.md)
 - [Azure Stack](../targets/azure-stack.md)
