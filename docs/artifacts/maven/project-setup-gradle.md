@@ -20,7 +20,7 @@ Azure Artifacts enables developers to manage project dependencies from a single 
 
 | **Product**        | **Requirements**                       |
 |--------------------|----------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-feed).<br> - Download and install [Gradle](https://docs.gradle.org/current/userguide/installation.html). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed).<br> - Download and install [Gradle](https://docs.gradle.org/current/userguide/installation.html). |
 
 ## Project setup
 
