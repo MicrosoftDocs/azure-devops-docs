@@ -65,7 +65,7 @@ POST https://almsearch.dev.azure.com/ORGANIZATION_NAME/_apis/search/packagesearc
 Using upstream sources, you can consume packages from public registries and other Azure Artifacts feeds. For more information, see [Search upstream](../../artifacts/how-to/search-upstream.md).
 
 > [!NOTE]
-> You can only search for packages in upstream sources from your feed in Azure DevOps Services. NuGet Package Explorer doesn't support searching for upstream packages. For more information, see [Download NuGet packages](../../artifacts/get-started-nuget.md#download-packages).
+> You can only search for packages in upstream sources from your feed in Azure DevOps Services. NuGet Package Explorer doesn't support searching for upstream packages. For more information, see [Download NuGet packages](../../artifacts/get-started-nuget.md#download-packages-from-your-feed).
 
 ## Next steps
 
