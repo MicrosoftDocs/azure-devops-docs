@@ -42,7 +42,7 @@ A typical authorization flow might include the following steps:
 
    ![Screenshot of Azure DevOps sign in page.](./media/authorize/vso-sign-in.png) 
 
-1. After you sign in, you get the authorization approval page.
+1. After you sign in, the authorization approval page appears.
 
    ![Screenshot of Azure DevOps authorization page](./media/authorize/vso-authorize.png)
 
@@ -52,7 +52,7 @@ A typical authorization flow might include the following steps:
 
 1. The authorized service uses that authorization to access resources in your Visual Studio account.
 
-To ensure an authorization request is legitimate, take the following steps:
+To ensure an authorization request is legitimate, take the following precautions:
 
 - Look for the Azure DevOps branding across the upper portion of the authorization approval page.
 - Ensure the authorization approval page URL begins with `https://app.vssps.visualstudio.com/`.
@@ -61,9 +61,9 @@ To ensure an authorization request is legitimate, take the following steps:
 
 ## Manage authorizations
 
-To see the services that you've authorized to access your account, go to [https://app.vssps.visualstudio.com/Profile/View](https://app.vssps.visualstudio.com/Profile/View)
+To see the services that are authorized to access your account, go to [https://app.vssps.visualstudio.com/Profile/View](https://app.vssps.visualstudio.com/Profile/View)
 and select **Manage authorizations**.
 
 ![Screenshot of the list of authorized services.](./media/authorize/authorizations.png)
 
-You can revoke any authorizations here, so the service can't access your account on your behalf.
+You can use this page to revoke authorizations so that services can't access your account on your behalf.
