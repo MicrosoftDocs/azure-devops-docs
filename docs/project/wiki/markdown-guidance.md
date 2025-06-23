@@ -896,6 +896,9 @@ Mermaid lets you create diagrams and visualizations by using text and code. The 
 - [User Journey](https://mermaid.js.org/syntax/userJourney.html)
 - [Pie chart](https://mermaid.js.org/syntax/pie.html)
 - [Requirements diagram](https://mermaid.js.org/syntax/requirementDiagram.html)
+- [Gitgraph diagrams](https://mermaid.js.org/syntax/gitgraph.html)
+- [Entity Relationship diagrams](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)
+- [Timeline diagrams](https://mermaid.js.org/syntax/timeline.html)
 
 For more information, see the [Mermaid release notes](https://github.com/mermaid-js/mermaid/releases).
 
@@ -1124,6 +1127,89 @@ requirementDiagram
 Here's the published view of the requirements diagram:
 
 :::image type="content" source="media/wiki/wiki-mermaid-requirements-diagram.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a requirements diagram and a preview of the published view." lightbox="media/wiki/wiki-mermaid-requirements-diagram.png":::
+
+#### Example: Gitgraph diagram
+
+A git graph diagram (type `gitGraph`) is used to visualize Git operations like commits, branches, and merges.
+
+The following example shows how to add a git graph diagram to a wiki page:
+
+```md
+::: mermaid
+gitGraph
+  commit id: "Initial commit"
+  branch develop
+  commit id: "Develop commit 1"
+  commit id: "Develop commit 2"
+  checkout main
+  commit id: "Main commit 1"
+  merge develop id: "Merge develop into main"
+  branch feature
+  checkout feature
+  commit id: "Feature commit 1"
+  checkout develop
+  commit id: "Develop commit 3"
+  checkout feature
+  merge develop id: "Merge develop into feature"
+:::
+```
+
+Here's the published view of the git graph diagram:
+
+:::image type="content" source="media/wiki/wiki-mermaid-gitgraph-diagram.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a git graph diagram and a preview of the published view." lightbox="media/wiki/wiki-mermaid-gitgraph-diagram.png":::
+
+#### Example: Entity Relationship diagram
+
+An entity relationship diagram (type `erDiagram`) is used to model the relationships between entities in a system, such as a database or an application. These diagrams help in understanding and designing the structure of data and its interrelationships.
+
+The following example shows how to add an entity relationship diagram to a wiki page:
+
+```md
+::: mermaid
+erDiagram
+  CUSTOMER {
+    string name
+    string address
+  }
+  ORDER {
+    int orderNumber
+    string product
+  }
+  CUSTOMER ||--o{ ORDER : places
+:::
+```
+
+Here's the published view of the entity relationship diagram:
+
+:::image type="content" source="media/wiki/wiki-mermaid-entity-relationship-diagram.png" alt-text="Screenshot of the Mermaid Live Editor with the code for an entity relationship diagram and a preview of the published view." lightbox="media/wiki/wiki-mermaid-entity-relationship-diagram.png":::
+
+#### Example: Timeline diagram
+
+A timeline diagram (type `timeline`) is used to visualize events in chronological order, making it easier to track progress or historical events.
+
+The following example shows how to add a Timeline diagram to a wiki page:
+
+```md
+::: mermaid
+timeline
+  title Project Development Timeline
+  section Planning
+    Project kickoff : 2025-01-01
+    Requirements gathering : 2025-01-15
+  section Development
+    Initial development : 2025-02-01
+    First prototype : 2025-03-01
+  section Testing
+    Alpha testing : 2025-04-01
+    Beta testing : 2025-05-01
+  section Release
+    Public release : 2025-06-01
+:::
+```
+
+Here's the published view of the timeline diagram:
+
+:::image type="content" source="media/wiki/wiki-mermaid-timeline-diagram.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a timeline diagram and a preview of the published view." lightbox="media/wiki/wiki-mermaid-timeline-diagram.png":::
 
 ::: moniker-end
 
