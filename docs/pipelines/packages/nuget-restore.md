@@ -21,7 +21,7 @@ With NuGet Package Restore you can install all your project's dependency without
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
+- Create a [new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - If you're using a self-hosted agent, make sure that it has the [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download) and [NuGet (4.8.0.5385+)](https://www.nuget.org/downloads) installed.
 

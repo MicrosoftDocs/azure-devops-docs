@@ -19,7 +19,7 @@ Azure Artifacts enables developers to seamlessly publish packages to feeds and s
 
 | **Product**        | **Requirements**                       |
 |--------------------|----------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Download and install the [.NET Core SDK](https://dotnet.microsoft.com/en-us/download). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Download and install the [.NET Core SDK](https://dotnet.microsoft.com/en-us/download). |
 
 ## Connect to a feed
 
