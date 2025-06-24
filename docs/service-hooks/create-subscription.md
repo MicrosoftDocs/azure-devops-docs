@@ -15,35 +15,36 @@ ms.date: 10/14/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Using the [Subscriptions REST APIs](/rest/api/azure/devops/hooks/) , you can programmatically create a subscription that performs an action on an external/consumer service when a specific event occurs in an Azure DevOps project. For example, you can create a subscription to notify your service when a build fails.
+You can use a subscription to perform an action on an external or consumer service when a specific event occurs in an Azure DevOps project. For example, a subscription can notify your service when a build fails. To create a subscription programmatically, you can use the [Subscriptions REST APIs](/rest/api/azure/devops/hooks/).
 
-Supported events:
+Azure DevOps provides support for numerous trigger events. Examples include the following events:
 
 - Build completed
 - Code pushed (for Git projects)
-- Pull request create or updated (for Git projects)
-- Code checked in (TFVC projects)
-- Work item created, updated, deleted, restored or commented on
+- Pull request created or updated (for Git projects)
+- Code checked in (for Team Foundation Version Control projects)
+- Work item created, updated, deleted, restored, or commented on
 
-You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [Event reference](./events.md).
+To control which events trigger an action, you can configure filters on your subscriptions. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see [Service hook events](./events.md).
 
-For a complete set of supported consumer services and actions, see the [Consumer reference](./consumers.md).
+For a complete set of supported consumer services and actions, see [Service hook consumers](./consumers.md).
 
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
 |**Project access**| [Project member](../organizations/security/add-users-team-project.md). |
-|**Data**|- Project ID. Use the [Project REST API](/rest/api/azure/devops/core/projects) to get the project ID.<br>- Event ID and settings. See the [Event reference](./events.md).<br>- Consumer and action IDs and settings. See the [Consumer reference](./consumers.md).|
+|**Data**|- Project ID. Use the [Project REST API](/rest/api/azure/devops/core/projects) to get the project ID.<br>- Event ID and settings. See [Service hook events](./events.md).<br>- Consumer and action IDs and settings. See [Service hook consumers](./consumers.md).|
 
 ## Create the request
 
-Construct the body of the HTTP POST request to create the subscription based on the project ID, event, consumer, and action. 
+When you create a subscription, the body of your HTTP POST request specifies the project ID, event, consumer, action, and related settings. 
 
-See the following example request for creating a subscription that causes a build event to POST to `https://myservice/event` when the build `WebSite.CI` fails. 
+You can use the following request to create a subscription for a build completed event. It sends a POST request to `https://myservice/event` when the `WebSite.CI` build fails.
 
 **Request**
-```js
+
+```json
 {
     "publisherId": "tfs",
     "eventType": "build.complete",
@@ -53,7 +54,7 @@ See the following example request for creating a subscription that causes a buil
     "publisherInputs": {
         "buildStatus": "failed",
         "definitionName": "WebSite.CI",
-        "projectId": "56479caf-1eeb-4bca-86ab-aaa6f29399d9",
+        "projectId": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
     },
     "consumerInputs": {
         "url": " https://myservice/event"
@@ -64,9 +65,10 @@ See the following example request for creating a subscription that causes a buil
 We highly recommend using secure HTTPS URLs for the security of the private data in the JSON object.
 
 **Response**
-See the following response to the request to create the subscription:
 
-```js
+The request to create the subscription generates a response that's similar to the following one:
+
+```json
 {
     "id": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
     "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/hooks/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
@@ -76,19 +78,19 @@ See the following response to the request to create the subscription:
     "consumerId": "webHooks",
     "consumerActionId": "httpRequest",
     "createdBy": {
-        "id": "00ca946b-2fe9-4f2a-ae2f-40d5c48001bc"
+        "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa"
     },
     "createdDate": "2014-03-28T16:10:06.523Z",
     "modifiedBy": {
-        "id": "1c4978ae-7cc9-4efa-8649-5547304a8438"
+        "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa"
     },
     "modifiedDate": "2014-04-25T18:15:26.053Z",
     "publisherInputs": {
         "buildStatus": "failed",
         "definitionName": "WebSite.CI",
-        "hostId": "17f27955-99bb-4861-9550-f2c669d64fc9",
-        "projectId": "56479caf-1eeb-4bca-86ab-aaa6f29399d9",
-        "tfsSubscriptionId": "29cde8b4-f37e-4ef9-a6d4-d57d526d82cc"
+        "hostId": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
+        "projectId": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+        "tfsSubscriptionId": "ffff5f5f-aa6a-bb7b-cc8c-dddddd9d9d9d"
     },
     "consumerInputs": {
         "url": "http://myservice/event"
@@ -101,21 +103,22 @@ If the subscription request fails, you get an HTTP response code of 400 with a m
 
 ### What happens when the event occurs?
 
-When an event occurs, all enabled subscriptions in the project are evaluated, and the consumer action is performed for all matching subscriptions.
+When an event occurs, all enabled subscriptions in the project are evaluated. Then the consumer action is performed for all matching subscriptions.
 
 ### Resource versions (advanced)
 
 Resource versioning is applicable when an API is in preview. For most scenarios, specifying `1.0` as the resource version is the safest route.
 
-The event payload sent to certain consumers, like Webhooks, Azure Service Bus, and Azure Storage, includes a JSON representation of subject resource (for example, a build or work item). The representation of this resource can have different forms or versions. 
+The event payload sent to certain consumers includes a JSON representation of a subject resource. For instance, the payload sent to webhooks, Azure Service Bus, and Azure Storage includes information about a build or work item. The representation of this resource can have various forms or versions.
 
-You can specify the version of the resource that you want to have sent to the consumer service via the `resourceVersion` field on the subscription.
-The resource version is the same as the [API version](../integrate/concepts/rest-api-versioning.md). Not specifying a resource version means "latest released". You should always specify a resource version, which ensures a consistent event payload over time.
+You can specify the version of the resource that you want to send to the consumer service via the `resourceVersion` field on the subscription.
+
+The resource version is the same as the [API version](../integrate/concepts/rest-api-versioning.md). If you don't specify a resource version, the latest version, `latest released`, is used. To help ensure a consistent event payload over time, always specify a resource version.
 
 ## FAQs
 ### Q: Are there services that I can subscribe to manually?
 
-A: Yes. For more information about the services that you can subscribe to from the administration page for a project, see the [Overview](./overview.md).
+A: Yes. For more information about the services that you can subscribe to from a project administration page, see [Integrate with service hooks](overview.md).
 
 ### Q: Are there C# libraries that I can use to create subscriptions?
 
@@ -211,7 +214,6 @@ namespace Microsoft.Samples.VisualStudioOnline
 
 ## Related articles
 
-- [Authorize service hooks](authorize.md)
-- [Consumers](consumers.md)
-- [Events](events.md)
-- [Troubleshooting and FAQs](troubleshoot.md)
+- [Manage authorization of services to access Azure DevOps](authorize.md)
+- [Service hooks events](events.md)
+- [Troubleshoot service hooks](troubleshoot.md)
