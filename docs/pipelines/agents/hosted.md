@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 06/16/2025
+ms.date: 06/24/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -42,8 +42,7 @@ The **windows-2019** image is the default image for classic build pipelines. For
 #### Windows image updates
 
 * [Windows Server 2025 with Visual Studio 2022 image is GA](https://aka.ms/azdo-windows)
-  > [!NOTE]
-  > The `windows-latest` label is in the process of transitioning from `windows-2022` to `windows-2025`. Until the transition is complete, your pipelines using `windows-latest` might still use `windows-2022`.
+  * The `windows-latest` label still refers to `windows-2022`. The change to `windows-2025` will be made in the future and this page will be updated at that time.
 * [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
 * [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
 
