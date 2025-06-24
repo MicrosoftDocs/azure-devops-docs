@@ -19,12 +19,19 @@ File and directory names are compared to patterns to include (or sometimes exclu
 You can build up complex behavior by stacking multiple patterns.
 See [fnmatch](http://man7.org/linux/man-pages/man3/fnmatch.3.html) for a full syntax guide.
 
+- [Match characters](#match-characters)
+- [Extended globbing](#extended-globbing)
+- [Comments](#comments)
+- [Exclude patterns](#exclude-patterns)
+- [Escaping](#escaping)
+- [Slash](#slash)
+
 ### Match characters
 
 Most characters are used as exact matches.
 What counts as an "exact" match is platform-dependent:
 the Windows filesystem is case-insensitive, so the pattern "ABC" would match a file called "abc".
-On case-sensitive filesystems, that pattern and name would not match.
+On case-sensitive filesystems, that pattern and name wouldn't match.
 
 The following characters have special behavior.
 
@@ -34,41 +41,57 @@ The following characters have special behavior.
 * `**` recursive wildcard. For example, `/hello/**/*` matches all descendants of `/hello`.
 
 ### Extended globbing
-* `?(hello|world)` - matches `hello` or `world` zero or one times
+
+* `?(hello|world)` - matches `hello` or `world` zero times or one time
 * `*(hello|world)` - zero or more occurrences
 * `+(hello|world)` - one or more occurrences
 * `@(hello|world)` - exactly once
 * `!(hello|world)` - not `hello` or `world`
 
-Note, extended globs cannot span directory separators. For example, `+(hello/world|other)` is not valid.
+> [!NOTE]
+> Extended globs can't span directory separators. For example, `+(hello/world|other)` isn't valid.
 
 ### Comments
+
 Patterns that begin with `#` are treated as comments.
 
 ### Exclude patterns
+
 Leading `!` changes the meaning of an include pattern to exclude.
 You can include a pattern, exclude a subset of it, and then re-include a subset of that:
 this is known as an "interleaved" pattern.
 
 Multiple `!` flips the meaning. See <a href="#doubleexcl_examples">examples</a>.
 
-You must define an include pattern before an exclude one. See <a href="#character_set_examples">examples</a>.
+You must define an include pattern before an exclude pattern. See <a href="#character_set_examples">examples</a>.
 
 ### Escaping
+
+
 Wrapping special characters in `[]` can be used to escape literal glob characters in a file name. For example the literal file name `hello[a-z]` can be escaped as `hello[[]a-z]`.
 
 ### Slash
+
 `/` is used as the path separator on Linux and macOS.
 Most of the time, Windows agents accept `/`.
 Occasions where the Windows separator (`\`) must be used are documented.
 
 ## Examples
 
+- [Basic pattern examples](#basic-pattern-examples)
+- [Asterisk examples](#asterisk_examples)
+- [Question mark examples](#question_mark_examples)
+- [Character set examples](#character_set_examples)
+- [Recursive wildcard examples](#recursive-wildcard-examples)
+- [Exclude pattern examples](#exclude-pattern-examples)
+- [Double exclude](#doubleexcl_examples)
+- [Folder exclude](#doubleexcl_examples)
+
 ### Basic pattern examples
 
 <h4 id="asterisk_examples">Asterisk examples</h4>
 
-**Example 1:** Given the pattern `*Website.sln` and files:
+**Example 1:** Given the pattern `*Website.sln`, and the following files:
 ```
 ConsoleHost.sln
 ContosoWebsite.sln
