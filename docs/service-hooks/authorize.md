@@ -16,7 +16,7 @@ ms.date: 06/24/2025
 
 [!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
 
-When you use a service that's integrated with Azure DevOps, you can grant the service access to your Azure DevOps resources, such as work items, source code, and build results.
+When you integrate a service with Azure DevOps, you can grant the service access to your Azure DevOps resources, such as work items, source code, and build results.
 
 Azure DevOps uses the industry-standard OAuth 2.0 authorization framework to grant the service access to your resources.
 
