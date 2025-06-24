@@ -84,8 +84,8 @@ Occasions where the Windows separator (`\`) must be used are documented.
 - [Character set examples](#character_set_examples)
 - [Recursive wildcard examples](#recursive-wildcard-examples)
 - [Exclude pattern examples](#exclude-pattern-examples)
-- [Double exclude](#doubleexcl_examples)
-- [Folder exclude](#folder-exclude)
+- [Double exclude examples](#double-exclude-examples)
+- [Folder exclude examples](#folder-exclude-examples)
 
 ### Basic pattern examples
 
@@ -230,7 +230,7 @@ Here are some example paths that would match `**/*.ext`:
 
 The `**` part means any number of directories (including zero), and `*.ext` means any file ending in `.ext`.
 
-### Exclude pattern
+### Exclude pattern examples
 
 Given the following pattern, and the following files:
 ```
@@ -254,7 +254,7 @@ Fabrikam.dll
 Fabrikam.pdb
 ```
 
-<h4 id="doubleexcl_examples">Double exclude</h4>
+<h4 id="doubleexcl_examples">Double exclude examples</h4>
 
 Given the following pattern, and the following files:
 ```
