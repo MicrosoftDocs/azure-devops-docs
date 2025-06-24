@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: "<=azure-devops"
-ms.date: 04/23/2025
+ms.date: 06/24/2025
 ---
 
 # Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards
@@ -48,7 +48,7 @@ When a pull request description includes a valid state name, for example, ``Clos
 By default, work items referenced with ``fix``, ``fixes``, or ``fixed`` transitions to the first state associated with the **Resolved** category. If no such state exists in the current process, the system instead transitions the work item to the first state in the **Completed** category.
 
 > [!IMPORTANT]  
-> You can still link work items and target other branches, but state transition rules will not apply unless the pull request is merged into the default branch.
+> You can still link work items and target other branches, but state transition rules don't apply unless the pull request is merged into the default branch.
 
 For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
 
