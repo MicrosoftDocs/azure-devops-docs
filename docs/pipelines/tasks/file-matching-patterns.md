@@ -84,7 +84,7 @@ Occasions where the Windows separator (`\`) must be used are documented.
 - [Character set examples](#character_set_examples)
 - [Recursive wildcard examples](#recursive-wildcard-examples)
 - [Exclude pattern examples](#exclude-pattern-examples)
-- [Double exclude examples](#double-exclude-examples)
+- [Double exclude examples](#doubleexcl_examples)
 - [Folder exclude examples](#folder-exclude-examples)
 
 ### Basic pattern examples
