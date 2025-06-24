@@ -1,27 +1,25 @@
 ---
-title: How to use upstream sources in your Azure Artifacts feed
-description: Use upstream sources in Azure Artifacts to consume packages from public registries
+title: How to restore packages from upstream sources in your Azure Artifacts feed
+description: Learn how to consume packages from public registries with upstream sources in Azure Artifacts.
 ms.service: azure-devops-artifacts
-ms.date: 06/03/2022
+ms.date: 06/24/2025
 monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
-# Tutorial: How to use upstream sources
+# Tutorial: How to restore packages from upstream sources
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Using upstream sources in your feed enables you to manage your application dependencies from a single feed. Using upstream sources makes it easy to consume packages from public registries while having protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
+Using upstream sources in Azure Artifacts enables you to manage all your application dependencies from a single feed. It simplifies consuming packages from public registries like *NuGet.org* or *npmjs.com*, while also providing protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
 
-This tutorial will walk you through how to enable upstream sources on your feed and consume packages from public registries such as NuGet.org or npmjs.com.
+This tutorial walks you through enabling upstream sources in your feed and consuming packages from public registries such as *NuGet.org* or *npmjs.com*.
 
-In this tutorial, you will:
+## Prerequisites
 
->[!div class="checklist"]  
-> * Create a new feed and enable upstream sources.
-> * Set up your configuration file.
-> * Run an initial package restore to populate your feed.
-> * Check your feed to view the saved copy of the packages you consumed from the public registry.
+| **Product**        | **Requirements**   |
+|--------------------|--------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server. |
 
 ## Create a feed and enable upstream sources
 
