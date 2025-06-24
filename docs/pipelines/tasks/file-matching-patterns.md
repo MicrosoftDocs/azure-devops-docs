@@ -85,7 +85,7 @@ Occasions where the Windows separator (`\`) must be used are documented.
 - [Recursive wildcard examples](#recursive-wildcard-examples)
 - [Exclude pattern examples](#exclude-pattern-examples)
 - [Double exclude](#doubleexcl_examples)
-- [Folder exclude](#doubleexcl_examples)
+- [Folder exclude](#folder-exclude)
 
 ### Basic pattern examples
 
@@ -120,7 +120,7 @@ FabrikamWebsite/FabrikamWebsite.proj
 
 <h4 id="question_mark_examples">Question mark examples</h4>
 
-**Example 1:** Given the pattern `log?.log` and files:
+**Example 1:** Given the pattern `log?.log`, and the following files:
 ```
 log1.log
 log2.log
@@ -134,7 +134,7 @@ log2.log
 log3.log
 ```
 
-**Example 2:** Given the pattern `image.???` and files:
+**Example 2:** Given the pattern `image.???`, and the following files:
 ```
 image.tiff
 image.png
@@ -148,7 +148,7 @@ image.ico
 
 <h4 id="character_set_examples">Character set examples</h4>
 
-**Example 1:** Given the pattern `Sample[AC].dat` and files:
+**Example 1:** Given the pattern `Sample[AC].dat`, and the following files:
 ```
 SampleA.dat
 SampleB.dat
@@ -161,7 +161,7 @@ SampleA.dat
 SampleC.dat
 ```
 
-**Example 2:** Given the pattern `Sample[A-C].dat` and files:
+**Example 2:** Given the pattern `Sample[A-C].dat`, and the following files:
 ```
 SampleA.dat
 SampleB.dat
@@ -175,7 +175,7 @@ SampleB.dat
 SampleC.dat
 ```
 
-**Example 3:** Given the pattern `Sample[A-CEG].dat` and files:
+**Example 3:** Given the pattern `Sample[A-CEG].dat`, and the following files:
 ```
 SampleA.dat
 SampleB.dat
@@ -197,7 +197,7 @@ SampleG.dat
 
 #### Recursive wildcard examples
 
-Given the pattern `**/*.ext` and files:
+Given the pattern `**/*.ext`, and the following files:
 ```
 sample1/A.ext
 sample1/B.ext
@@ -230,14 +230,14 @@ Here are some example paths that would match `**/*.ext`:
 
 The `**` part means any number of directories (including zero), and `*.ext` means any file ending in `.ext`.
 
-### Exclude pattern examples
+### Exclude pattern
 
-Given the pattern:
+Given the following pattern, and the following files:
 ```
 *
 !*.xml
 ```
-and files:
+
 ```
 ConsoleHost.exe
 ConsoleHost.pdb
@@ -256,13 +256,13 @@ Fabrikam.pdb
 
 <h4 id="doubleexcl_examples">Double exclude</h4>
 
-Given the pattern:
+Given the following pattern, and the following files:
 ```
 *
 !*.xml
 !!Fabrikam.xml
 ```
-and files:
+
 ```
 ConsoleHost.exe
 ConsoleHost.pdb
@@ -280,14 +280,14 @@ Fabrikam.pdb
 Fabrikam.xml
 ```
 
-<h4 id="doubleexcl_examples">Folder exclude</h4>
+#### Folder exclude examples
 
-Given the pattern:
+Given the following pattern, and the following files:
 ```
 **
 !sample/**
 ```
-and files:
+
 ```
 ConsoleHost.exe
 ConsoleHost.pdb
