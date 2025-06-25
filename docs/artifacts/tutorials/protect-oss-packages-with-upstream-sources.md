@@ -254,7 +254,7 @@ Now that you've enabled upstream sources and authenticated with your feed, selec
 
 ::: moniker range="azure-devops-2020"
 
-# [npm](#tab/npmrestore)
+# [npm](#tab/npmrestoreserver)
 
 1. Remove the *node_modules* folder from your project.
 
@@ -267,7 +267,7 @@ Now that you've enabled upstream sources and authenticated with your feed, selec
 > [!NOTE]
 > The `--force` flag ensures that packages are pulled from the remote source even if a local copy exists.
 
-# [NuGet](#tab/nugetrestore)
+# [NuGet](#tab/nugetrestoreserver)
 
 1. Clear your local cache.
 
@@ -281,7 +281,7 @@ Now that you've enabled upstream sources and authenticated with your feed, selec
     nuget.exe restore
     ```
 
-# [Python](#tab/python)
+# [Python](#tab/pythonrestoreserver)
 
 - Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
@@ -289,7 +289,7 @@ Now that you've enabled upstream sources and authenticated with your feed, selec
     pip install
     ```
 
-# [Maven](#tab/mavenrestore)
+# [Maven](#tab/mavenrestoreserver)
 
 - Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
@@ -297,7 +297,7 @@ Now that you've enabled upstream sources and authenticated with your feed, selec
     mvn install
     ```
 
-# [Gradle](#tab/gradlerestore)
+# [Gradle](#tab/gradlerestoreserver)
 
 - Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
