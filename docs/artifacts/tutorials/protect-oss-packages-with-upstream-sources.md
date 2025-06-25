@@ -23,90 +23,66 @@ This tutorial walks you through enabling upstream sources in your feed and consu
 
 ## Create a feed and enable upstream sources
 
-::: moniker range="<=azure-devops"
-
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
 
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
+1. Provide a **Name** for your feed, choose its **Visibility** and **Scop**, and make sure you check the **Include packages from common public sources** checkbox to enable upstream sources.
 
-1. Provide a name for your feed, and choose its visibility. Make sure you check the **Include packages from common public sources** checkbox to enable upstream sources, and then select **Create** when you're done.
+1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window.":::
+    :::image type="content" source="../media/new-feed-with-upstream-source.png" alt-text="a Screenshot displaying how to create a new feed and enable upstream sources in Azure Artifacts.":::
 
-::: moniker-end
-
-> [!NOTE]
+> [!IMPORTANT]
 > To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button on the right for the specified view > **Edit** .
 
-## Set up the configuration file
+## Authenticate with the feed
 
-Now that we created our feed, we need to update the config file to point to our feed. To do this we must:
-
-1. Get the source's URL
-1. Update the configuration file
+Now that you've created your feed, select the appropriata tab based on the technology you're using and follow the instructions to set up your configuration file and connect to your feed:
 
 #### [npm](#tab/npm/)
 
-::: moniker range="<=azure-devops"
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select **Connect to feed**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
+1. Select **npm** from the left navigation pane, and follow the provided instructions in the **Project setup** section to set up your config file. If you don’t already have a *.npmrc* file, create a new one in the root of your project (the same folder as your *package.json*). Open your new *.npmrc* file and paste in the provided snippet.
 
-1. On the left side of the page, select the **npm** tab.
-
-1. Follow the instructions in the **Project setup** section to set up your config file.
-
-    :::image type="content" source="../media/connect-to-feed-npm-registry-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project.":::
-
-::: moniker-end
-
-If you don't have a *.npmrc* file already, create a new one in the root of your project (in the same folder as your *package.json*). Open your new *.npmrc* file and paste the snippet you just copied in the previous step.
+    :::image type="content" source="../media/connect-to-feed-npm-registry-azure-devops-newnav.png" alt-text="A screenshot displaying how to set up your npm project in Azure Artifacts.":::
 
 #### [NuGet](#tab/nuget/)
 
-1. Select **Artifacts**, and then select your feed. 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Connect to feed**, and then choose **NuGet.exe**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-    :::image type="content" source="../media/nuget-connect-to-feed.png" alt-text="Screenshot showing how to connect to NuGet feeds.":::
+1. Select **NuGet.exe** from the left navigation pane, then copy the XML snippet provided in the **Project Setup** section.
 
-1. Copy the XML snippet in the **Project Setup** section.
-
-1. Create a new file named *nuget.config* in the root of your project.
-
-1. Paste the XML snippet in your config file.
+1. Create a new *nuget.config* file in the root of your project, and paste in the XML snippet you copied in the previous step.
 
 #### [Pip](#tab/pip/)
 
-1. Select **Artifacts**, and then select your feed from the dropdown list.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Connect to feed**, and then select **pip** under the Python section.
+1. Select **Artifacts**, select your feed from the dropdown menu,and then select **Connect to feed**.
 
-    :::image type="content" source="../media/project-setup-pip.png" alt-text="A screenshot showing how to connect to a feed with pip projects.":::
+1. Select **pip** from the left navigation pane.
 
 1. Create a [virtual environment](https://go.microsoft.com/fwlink/?linkid=2103878) if you haven't done so already.
 
-1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) file to your virtualenv and paste the following snippet:
-
-    ```command
-    [global]
-    index-url=https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/simple/
-    ```
+1. Add a *pip.ini* (Windows) or *pip.conf* (Mac/Linux) file to your virtualenv and paste in the snippet provided in the **Project setup** secion.
 
 #### [Maven](#tab/maven/)
 
-1. Select **Artifacts**, and then select your feed from the dropdown list.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Connect to feed**, and then select **Maven**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-    :::image type="content" source="../media/project-setup-maven.png" alt-text="A screenshot showing how to connect to a feed with Maven projects.":::
+1. Select **Maven** from the left navigation pane.
 
-1. Add the following snippet to the `<repositories>` and `<distributionManagement>` sections in your pom.xml:
+1. Add the snippet provided in the **Project setup** section to the `<repositories>` and `<distributionManagement>` sections in your *pom.xml*. Your file should look similar to the following:
 
-    ```command
+    ```xml
     <repository>
       <id>[FEED-NAME]</id>
       <url>https://pkgs.dev.azure.com/[ORGANIZATION-NAME]/_packaging/[FEED-NAME]/maven/v1</url>
@@ -119,9 +95,9 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     </repository>
     ```
 
-1. Add a `<server>` to your settings.xml file:
+1. Paste the provided `<server>` snippet into your *settings.xml* file. You file should look similar to this:
 
-    ```command
+    ```xml
     <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -136,19 +112,19 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     </settings>
     ```
 
-1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes and paste your personal access token into the `<password>` tag in your settings.xml file.
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes and paste your personal access token into the `<password>` tag in your *settings.xml* file.
 
 #### [Gradle](#tab/gradle/)
 
-1. Select **Artifacts**, and then select your feed from the dropdown list.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Connect to feed**, and then select **Gradle**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-    :::image type="content" source="../media/project-setup-gradle.png" alt-text="A screenshot showing how to connect to a feed with Gradle projects.":::
+1. Select **Gradle** from the left navigation pane.
 
-1. Add the following snippet to the *repositories* and *publishing* sections in your build.gradle file:
+1. Add the snippet provided in the **Project setup** section to the *repositories* and *publishing* sections in your *build.gradle* file. Your file should resemble the following:
 
-    ```command
+    ```
     maven {
         url 'https://pkgs.dev.azure.com/[ORGANIZATION-NAME]/_packaging/[FEED-NAME]/maven/v1'
         name '[FEED-NAME]'
@@ -158,9 +134,9 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     }
     ```
 
-1. Add a `<server>` to your settings.xml file:
+1. Paste the provided `<server>` snippet into your *settings.xml* file. Your file should resemble the following:
 
-    ```command
+    ```xml
     <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -175,7 +151,33 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     </settings>
     ```
 
-1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes. Paste your personal access token into the `<password>` tag in your settings.xml file.
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes. Paste your personal access token into the `<password>` tag in your *settings.xml* file.
+
+#### [Cargo](#tab/cargo/)
+
+1. Sign in to your Azure DevOps organization, and navigate to your project.
+
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
+
+1. Select **Cargo** from the left navigation pane.
+
+1. Add the snippet provided in the **Project setup** section to your *cargo/config.toml* file in your source repository. Your *config.toml* file should resemble the following:
+
+      ```
+        [registries]
+        FEED_NAME = { index = "sparse+https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/Cargo/index/" }
+        ```
+
+1. Add the second snippet provided in the **Project setup** section to your *cargo/config.toml* file to replace the *crates.io* source with your feed. Your file should resemble the following:
+
+    ```
+    [source.crates-io]
+    replace-with = "FEED_NAME"
+    ```
+
+1. [Configure a credential provider](../cargo/project-setup-cargo.md#configure-a-credential-provider)
+
+1. [Log in to the registry](../cargo/project-setup-cargo.md#log-in-to-the-registry)
 
 - - -
 
