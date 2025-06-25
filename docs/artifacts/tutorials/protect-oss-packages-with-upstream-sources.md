@@ -60,7 +60,7 @@ Now that you've created your feed, select the appropriata tab based on the techn
 
 1. Create a new *nuget.config* file in the root of your project, and paste in the XML snippet you copied in the previous step.
 
-#### [Pip](#tab/pip/)
+#### [Python](#tab/pip/)
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -183,173 +183,136 @@ Now that you've created your feed, select the appropriata tab based on the techn
 
 ## Restore packages
 
-Now that you enabled upstream sources and set up your configuration file, you can now run the package restore command to query the upstream source and retrieve the upstream packages.
+Now that you've enabled upstream sources and authenticated with your feed, select the appropriate tab based on your package type, and follow the instructions to restore packages from public registries into your Azure Artifacts feed.
 
-To restore packages using Azure Pipelines instead, see [Restore Maven packages with Azure Pipelines (YAML/Classic)](../../pipelines/packages/maven-restore.md) for detailed steps. 
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 # [npm](#tab/npmrestore)
 
-Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
+1. Remove the *node_modules* folder from your project.
 
-```Command
-npm install --force
-```
+1. Open a command prompt window and run the following command to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    npm install --force
+    ```
 
 > [!NOTE]
-> The `--force` argument will force pull remotes even if a local copy exists. 
+> The `--force` flag ensures that packages are pulled from the remote source even if a local copy exists.
 
 # [NuGet](#tab/nugetrestore)
 
-1. Clear your local cache:
+1. Clear your local cache.
 
     ```Command
     nuget locals -clear all
     ```
 
-1. Restore your NuGet packages:
+1. Open a command prompt window and run the following command to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
     ```Command
     nuget.exe restore
     ```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-# [dotnet](#tab/dotnet)
-
-Run the following command in your project directory:
-
-```Command
-dotnet restore --interactive
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
 
 # [Python](#tab/python)
 
-Run the following command in your project directory:
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-```Command
-pip install
-```
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    pip install
+    ```
 
 # [Maven](#tab/mavenrestore)
 
-Run the following command in your project directory:
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-```Command
-mvn install
-```
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    mvn install
+    ```
 
 # [Gradle](#tab/gradlerestore)
 
-Run the following command in your project directory:
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-```Command
-gradle build
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    gradle build
+    ```
 
 # [Cargo](#tab/cargorestore)
 
-Run the following command in your project directory:
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-```Command
-cargo build
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    cargo build
+    ```
 
 - - -
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="azure-devops-2020"
 
-# [npm](#tab/npmserver)
+# [npm](#tab/npmrestore)
 
-Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
+1. Remove the *node_modules* folder from your project.
 
-```Command
-npm install --force
-```
+1. Open a command prompt window and run the following command to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    npm install --force
+    ```
 
 > [!NOTE]
-> The `--force` argument will force pull remotes even if a local copy exists. 
+> The `--force` flag ensures that packages are pulled from the remote source even if a local copy exists.
 
-# [NuGet](#tab/nugeserver)
+# [NuGet](#tab/nugetrestore)
 
-1. Clear your local cache:
+1. Clear your local cache.
 
     ```Command
     nuget locals -clear all
     ```
 
-1. Restore your NuGet packages:
+1. Open a command prompt window and run the following command to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
     ```Command
     nuget.exe restore
     ```
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+# [Python](#tab/python)
 
-# [dotnet](#tab/dotnetserver)
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-Run the following command in your project directory:
+    ```Command
+    pip install
+    ```
 
-```Command
-dotnet restore --interactive
-```
+# [Maven](#tab/mavenrestore)
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-# [Python](#tab/pythonserver)
+    ```Command
+    mvn install
+    ```
 
-Run the following command in your project directory:
+# [Gradle](#tab/gradlerestore)
 
-```Command
-pip install
-```
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-# [Maven](#tab/mavenserver)
-
-Run the following command in your project directory:
-
-```Command
-mvn install
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-# [Gradle](#tab/gradleserver)
-
-Run the following command in your project directory:
-
-```Command
-gradle build
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    gradle build
+    ```
 
 - - -
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
-- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
-- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
-- [Feed permissions](../feeds/feed-permissions.md)
-- [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)
+- [Manage permissions](../feeds/feed-permissions.md)
+
+- [Publish & download pipeline artifacts](../../pipelines/artifacts/pipeline-artifacts.md)
+
+- [Publish symbols with Azure Pipelines](../../pipelines/artifacts/symbols.md)
