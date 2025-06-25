@@ -717,7 +717,7 @@ To run tests and publish code coverage with Coverlet, do the following tasks:
     displayName: 'dotnet build'
     inputs:
       command: 'build'
-      configuration: $(buildConfiguration)
+      arguments: '--configuration $(buildConfiguration)'
     
   - task: DotNetCoreCLI@2
     displayName: 'dotnet test'
