@@ -1,6 +1,6 @@
 ---
 title: Create a Service Hook Subscription Programmatically
-description: Find out how to programmatically create a service hook subscription that configures an action to take when a specific event occurs in Azure DevOps.
+description: Find out how to programmatically create a service hook subscription that prescribes an action to take when a specified event occurs in Azure DevOps.
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-service-hooks
