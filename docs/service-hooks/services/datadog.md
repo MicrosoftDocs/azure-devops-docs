@@ -7,17 +7,18 @@ ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 11/03/2020
+ms.date: 06/25/2025
 ---
 # Create a service hook for Azure DevOps with Datadog 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Learn how to create events and metrics in Datadog in response to events from Azure DevOps. Use these metrics and events in Datadog to create dashboards, troubleshoot issues, and create monitors to alert you of critical issues. Datadog accepts all Azure DevOps event types.
+You can use Azure DevOps service hooks to create events and metrics in Datadog in response to events in Azure DevOps. In Datadog, you can use these metrics and events to create dashboards, troubleshoot issues, and create monitors to alert you to critical issues. Datadog accepts all Azure DevOps event types.
 
 > [!IMPORTANT]
-> The Datadog feature might not be turned on by default for Azure DevOps Server 2019 and 2020, which is a known issue. Until it resolves, you can use the following SQL command in your config database to turn on the feature:
-`exec prc_SetRegistryValue 1, '#\FeatureAvailability\Entries\ServiceHooks.Consumers.datadog\AvailabilityState\', 1`
+> The Datadog feature might not be turned on by default for Azure DevOps Server 2020, which is a known issue. Until it's resolved, you can use the following SQL command in your **Tfs_Configuration** database to turn on the feature:
+>
+> `exec prc_SetRegistryValue 1, '#\FeatureAvailability\Entries\ServiceHooks.Consumers.datadog\AvailabilityState\', 1`
 
 ## Prerequisites
 
@@ -28,45 +29,56 @@ Learn how to create events and metrics in Datadog in response to events from Azu
 
 ## Start sending Azure DevOps events to Datadog
 
-1. Go to **Project settings** > **Service hooks**: `https://{orgName}/{project_name}/_settings/serviceHooks`.
+To send Azure DevOps events to Datadog, you set up a subscription for each type of event.
 
-2. Select **Create subscription**.
+### Create a subscription for an event
 
-   ![Select Create subscription from the Service hooks page](../media/service-hooks-page-select-create-subscription.png)
+1. Go to your Azure DevOps project, select **Project settings**, and then select **Service hooks**. Alternately, go to https://{organization-name}/{project-name}/_settings/serviceHooks`.
 
-3. Choose **Datadog** among the list of services, and then choose **Next**.
+1. Select **Create subscription**.
 
-   :::image type="content" source="../media/select-datadog.png" alt-text="Screenshot with red box around Datadog and Next selections.":::
+   :::image type="content" source="../media/azure-devops-create-subscription.png" alt-text="Screenshot of the Service Hooks page of an Azure DevOps project. The Create subscription button is highlighted.":::
 
-4. Select an event to trigger on, configure any filters, and then select **Next**.
+1. In the list of services, select **Datadog**, and then select **Next**.
 
-   :::image type="content" source="../media/datadog-trigger-event.png" alt-text="Screenshot of configuration fields for triggering event in Azure DevOps.":::
+   :::image type="content" source="../media/select-datadog.png" alt-text="Screenshot of the Service page in the New service hooks subscription wizard. In the service list, Datadog is highlighted. Next is also highlighted.":::
 
-5. Configure the action to perform.
-   - Paste (ctrl+v) your Datadog API Key into the required field.
-   - Indicate whether your Datadog account is US or EU.
+1. Select an event to trigger on, configure any filters that you want to use, and then select **Next**.
 
-6. Choose **Test** to verify that Azure DevOps can use the provided configuration and successfully create a subscription.
+   :::image type="content" source="../media/datadog-trigger-event.png" alt-text="Screenshot of the Trigger page in the New service hooks subscription wizard. The event list, two filters, and the Next button are highlighted.":::
 
-7. Once verified, choose **Finish** to complete the creation of subscription.
+1. Configure the action to perform when the event happens:
+   - Under **Datadog API Key**, enter your Datadog API key.
+   - Under **Datadog Account Type**, select your account type.
 
-   :::image type="content" source="../media/datadog-api-key-account-type-selection.png" alt-text="Screenshot of where you select and configure the action to perform.":::
+1. To verify that Azure DevOps can use the provided configuration and successfully create a subscription, select **Test**.
 
-8.	Repeat steps 2-7 for each event type you want to send to Datadog. Datadog accepts and encourages users to send all event types.
-9.	Go to [Datadog](https://app.datadoghq.com/account/login) to see events and metrics start to flow into your environment.
+1. To create the subscription, select **Finish**.
+
+   :::image type="content" source="../media/datadog-api-key-account-type-selection.png" alt-text="Screenshot of the Action page in the New service hooks subscription wizard, with a key and an account type visible and Test and Finish highlighted.":::
+
+### Add subscriptions for other events
+
+Repeat the steps in [Create a subscription for an event](#create-a-subscription-for-an-event) for each event type you want to send to Datadog. Datadog accepts and encourages users to send all event types.
+
+### Use your data in Datadog
+
+As events occur and their data and metrics start to flow into Datadog, you can set up dashboards and monitors. To get started, go to [Datadog](https://app.datadoghq.com/account/login).
 
 ## FAQs
 
 ### Q: Can I create service hook subscriptions programmatically?
 
-A: Yes. For more information, see [Create a service hooks subscription programmatically](../create-subscription.md). Submit to either of the following Datadog endpoints: 
+A: Yes. For more information, see [Create a service hook subscription programmatically](../create-subscription.md). Your Datadog account type determines the endpoint that your subscription should submit requests to. Use one of the following endpoints:
 
-- **US:** `https://app.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
-- **EU:** `https://app.datadoghq.eu/intake/webhook/azuredevops?api_key=<API_KEY>`
-- **US3:** `https://us3.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
-- **US5:** `https://us5.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
-- **AP1:** `https://ap1.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
-- **Gov:** `https://app.ddog-gov.com/intake/webhook/azuredevops?api_key=<API_KEY>`
+| Account type | Endpoint |
+| --- | --- |
+| US | `https://app.datadoghq.com/intake/webhook/azuredevops?api_key=<API-key>` |
+| EU | `https://app.datadoghq.eu/intake/webhook/azuredevops?api_key=<API-key>` |
+| US3 | `https://us3.datadoghq.com/intake/webhook/azuredevops?api_key=<API-key>` |
+| US5 | `https://us5.datadoghq.com/intake/webhook/azuredevops?api_key=<API-key>` |
+| AP1 | `https://ap1.datadoghq.com/intake/webhook/azuredevops?api_key=<API-key>` |
+| Gov | `https://app.ddog-gov.com/intake/webhook/azuredevops?api_key=<API-key>` |
 
 ### Q: How can I use these events in Datadog?
 
