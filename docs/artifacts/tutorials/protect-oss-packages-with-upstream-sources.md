@@ -27,7 +27,7 @@ This tutorial walks you through enabling upstream sources in your feed and consu
 
 1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
 
-1. Provide a **Name** for your feed, choose its **Visibility** and **Scop**, and make sure you check the **Include packages from common public sources** checkbox to enable upstream sources.
+1. Provide a **Name** for your feed, choose its **Visibility** and **Scope**, and make sure you check the **Include packages from common public sources** checkbox to enable upstream sources.
 
 1. Select **Create** when you're done.
 
@@ -38,7 +38,7 @@ This tutorial walks you through enabling upstream sources in your feed and consu
 
 ## Authenticate with the feed
 
-Now that you've created your feed, select the appropriata tab based on the technology you're using and follow the instructions to set up your configuration file and connect to your feed:
+Now that you've created your feed, select the appropriate tab based on the technology you're using and follow the instructions to set up your configuration file and connect to your feed:
 
 #### [npm](#tab/npm/)
 
@@ -64,13 +64,13 @@ Now that you've created your feed, select the appropriata tab based on the techn
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, select your feed from the dropdown menu,and then select **Connect to feed**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
 1. Select **pip** from the left navigation pane.
 
 1. Create a [virtual environment](https://go.microsoft.com/fwlink/?linkid=2103878) if you haven't done so already.
 
-1. Add a *pip.ini* (Windows) or *pip.conf* (Mac/Linux) file to your virtualenv and paste in the snippet provided in the **Project setup** secion.
+1. Add a *pip.ini* (Windows) or *pip.conf* (Mac/Linux) file to your virtualenv and paste in the snippet provided in the **Project setup** section.
 
 #### [Maven](#tab/maven/)
 
