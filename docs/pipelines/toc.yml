@@ -720,7 +720,7 @@
     href: release/approvals/servicenow.md
 - name: Migrate
   items:
-  - name: Migrate from Classic pipelines
+  - name: Migrate Classic pipelines to YAML 
     href: release/from-classic-pipelines.md
   - name: Migrate from Jenkins
     href: migrate/from-jenkins.md
