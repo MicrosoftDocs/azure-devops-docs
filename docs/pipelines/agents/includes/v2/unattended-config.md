@@ -35,7 +35,7 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 ### Pool and agent names
 - `--pool <pool>` - pool name for the agent to join
 - `--agent <agent>` - agent name
-- `--replace` - replace the agent in a pool. If another agent is listening by the same name, it will start failing with a conflict
+- `--replace` - Specify `--replace` if you are replacing the current agent installation with an agent with the same name. If your intention is to replace an agent with the same name that's hosted elsewhere, unconfigure the other agent first before configuring this one (and you don't need to specify `--replace`); otherwise if you have two agent instances with the same name, you'll get conflicts, and after a few moments of conflicts, one of the agents will shut down.
 
 ### Agent setup
 - `--work <workDirectory>` - work directory where job data is stored. Defaults to `_work` under the
