@@ -12,7 +12,7 @@ ms.date: 06/26/2025
 monikerRange: '<= azure-devops'
 ---
 
-# Create your Azure Pipelines ecosystem
+# Azure Pipelines ecosystem examples
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
