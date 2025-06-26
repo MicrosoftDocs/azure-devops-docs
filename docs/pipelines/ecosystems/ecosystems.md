@@ -24,7 +24,7 @@ See the following topics for examples of building your app with any of the follo
 
 - .NET
     - [.NET Core](./dotnet-core.md)
-    - [.NET Framework](apps/aspnet/build-aspnet-4.md)
+    - [.NET Framework](../apps/aspnet/build-aspnet-4.md)
 - JavaScript
     - [JavaScript quickstart](./javascript.md)
     - [Customize JavaScript](./customize-javascript.md)
