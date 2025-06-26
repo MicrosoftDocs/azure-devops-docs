@@ -1,10 +1,10 @@
 ---
-title: Migrate from Classic to YAML pipelines
+title: Migrate your Classic pipeline to YAML
 titleSuffix: Azure Pipelines
-description: How to migrate from Classic pipelines to YAML.
+description: Learn how to migrate from Classic pipelines to YAML.
 ms.subservice: azure-devops-pipelines-migrate
 ms.topic: quickstart
-ms.date: 07/01/2024
+ms.date: 06/26/2025
 monikerRange: azure-devops
 ---
 
@@ -12,55 +12,45 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Get started with Azure Pipelines by converting your existing Classic pipeline to use YAML. With a YAML-based pipeline, you can implement your CI/CD strategy as code and see its history, compare versions, blame, annotate, and so on.
+Azure Pipelines lets you manage your CI/CD process as code, making it easier to track changes, compare versions, annotate, and more.
 
-When you convert your Classic pipeline, the end product is two pipelines. You'll have one new YAML pipeline and a Classic pipeline that can be retired. Your Classic pipeline's run history remains in the Classic pipeline. 
+When you convert a Classic pipeline, you’ll end up with two pipelines: a new YAML pipeline and the original Classic one, which can then be retired. Your Classic pipeline's run history remains in the Classic pipeline. 
 
 > [!NOTE]
-> You can only export a YAML file from an existing Classic pipeline created with the classic build designer. If you don't see the option to export to JSON or YAML, then your pipeline doesn't support exporting. Classic release pipelines don't have the export to YAML option. You can export a classic release pipeline by exporting each individual task. 
+> You can only export a YAML file from a Classic pipeline created using the classic build designer. If you don’t see an option to export to YAML or JSON, your pipeline likely doesn’t support exporting. Classic release pipelines don’t support YAML export, you’ll need to export each task individually. 
 
 ## Prerequisites
 
-Make sure you have the following items before you begin.
-
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- An active Azure DevOps organization. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
-- A working pipeline that uses the Classic user interface (UI) editor.
-- A sample YAML pipeline file in your code. Create a sample YAML pipeline in the following section.
+| **Product**        | **Requirements**   |
+|--------------------|--------------------|
+| **Azure**   | - An Azure account with an active [subscription](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.<br> - A working Classic pipeline.  |
 
 ## Create a sample YAML pipeline
 
-Do the following steps to create a sample YAML pipeline, which you'll update later with your exported code from the Classic UI editor.
+Follow these steps to create a starter YAML pipeline, which you’ll later update with code exported from the Classic UI editor:
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select your project.
+1. Sign in to your organization, and navigate to your project.
 
-2. Select **Pipelines**, and then **New pipeline**.
+1. Select **Pipelines**, and then select **New pipeline**.
 
-   :::image type="content" source="media/pipelines-new-pipeline.png" alt-text="Two buttons to select for new pipeline creation.":::
+   :::image type="content" source="media/pipelines-new-pipeline.png" alt-text="A screenshot displaying how to create a new pipeline.":::
 
-3. Select the location for your source code as either **GitHub** or **Azure Repos Git**.
+1. Select your source code location either **GitHub** or **Azure Repos Git**, and then select your repository.
 
-   :::image type="content" source="media/source-code-location.png" alt-text="List of possible selections for your source code.":::
+   :::image type="content" source="media/source-code-location.png" alt-text="A screenshot displaying source code locations.":::
 
-4. Select a repository.
+1. On the **Configure your pipeline page**, select the **Starter pipeline**.
 
-   :::image type="content" source="media/select-repository.png" alt-text="Page where you select a repository for your source code pipeline.":::
+   :::image type="content" source="media/select-pipeline-template.png" alt-text="A screenshot displaying the available pipeline templates.":::
 
-5. On the Configure your pipeline page, select **Starter pipeline**.
+1. Select **Save and run**, and then enter your commit message. Select **Commit directly to the main branch**, and then select **Save and run** once more. This will start a new run and commit the yaml pipeline to your repository.
 
-   :::image type="content" source="media/select-pipeline-template.png" alt-text="List of templates to choose from for configuring your new pipeline.":::
-
-6. Select **Save and run**.
-
-   :::image type="content" source="media/save-run-new-yaml-pipeline.png" alt-text="Review page where you select Save and run.":::
-
-7. Enter your commit message, select **Commit directly to the main branch**, and then choose **Save and run** again. A new run starts and it's committed to the repository. Wait for the run to finish.
-
-   :::image type="content" source="media/commit-save-run.png" alt-text="Commit message to commit to the main branch, and then select Save and run button.":::
+   :::image type="content" source="media/commit-save-run.png" alt-text="A screenshot displaying how to save and run a new yaml pipeline.":::
 
 ## Export your Classic pipeline
 
-1. Sign in to your Azure DevOps organization, and then go to your project.
+1. Sign in to your Azure DevOps organization, and navigate to your project.
 
 1. Select **Pipelines** > **Pipelines**. 
  
