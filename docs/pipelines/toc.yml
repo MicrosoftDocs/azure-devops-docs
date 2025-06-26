@@ -512,7 +512,7 @@
       href: process/artifact-policy.md
   - name: Examples
     items:
-    - name: Ecosystem support
+    - name: Ecosystems examples
       displayName: language, platform
       href: ecosystems/ecosystems.md
     - name: .NET

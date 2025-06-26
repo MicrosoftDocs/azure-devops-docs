@@ -23,26 +23,26 @@ The articles in this section provide examples of how to build and deploy applica
 See the following topics for examples of building your app with any of the following languages.
 
 - .NET
-    - [.NET Core](ecosystems/dotnet-core.md)
+    - [.NET Core](./dotnet-core.md)
     - [.NET Framework](apps/aspnet/build-aspnet-4.md)
 - JavaScript
-    - [JavaScript quickstart](ecosystems/javascript.md)
-    - [Customize JavaScript](ecosystems/customize-javascript.md)
-    - [Node.js tutorial](ecosystems/nodejs-tutorial.md)
+    - [JavaScript quickstart](./javascript.md)
+    - [Customize JavaScript](./customize-javascript.md)
+    - [Node.js tutorial](./nodejs-tutorial.md)
 - Python
-    - [Python quickstart](ecosystems/python.md)
-    - [Customize Python](ecosystems/customize-python.md)
-    - [Python to web app](ecosystems/python-webapp.md)
-    - [Anaconda](ecosystems/anaconda.md)
+    - [Python quickstart](./python.md)
+    - [Customize Python](./customize-python.md)
+    - [Python to web app](./python-webapp.md)
+    - [Anaconda](./anaconda.md)
 - Java
-    - [Java apps](ecosystems/java.md)
-    - [Java to web App](ecosystems/java-webapp.md)
+    - [Java apps](./java.md)
+    - [Java to web App](./java-webapp.md)
     - [Java to web app with MicroProfile](/azure/java/microprofile/cicd-microprofile)
-- [Android](ecosystems/android.md)
-- [Go](ecosystems/go.md)
-- [PHP](ecosystems/php.md)
-- [Ruby](ecosystems/ruby.md)
-- [Xcode](ecosystems/xcode.md)
+- [Android](./android.md)
+- [Go](./go.md)
+- [PHP](./php.md)
+- [Ruby](./ruby.md)
+- [Xcode](./xcode.md)
 
 ## Deploy your app
 
