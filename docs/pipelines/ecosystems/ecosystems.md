@@ -8,9 +8,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: freshness-fy22q2
-ms.date: 06/23/2025
-featureFlags:
-- clicktale 
+ms.date: 06/26/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -18,32 +16,39 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can select from the following languages and platforms to find guidance for building and deploying your app. 
+The articles in this section provide examples of how to build and deploy applications using Azure Pipelines.
 
 ## Build your app
 
 See the following topics for examples of building your app with any of the following languages.
 
-- [.NET Core](dotnet-core.md)
-- [Anaconda](anaconda.md)
-- [Android](android.md)
-- [ASP.NET](../apps/aspnet/build-aspnet-4.md)
-- [C/C++ with GCC](../apps/c-cpp/gcc.md)
-- [C/C++ with VC++](../apps/windows/cpp.md)
-- [Containers](./containers/build-image.md)
-- [Go](go.md)
-- [Java](java.md)
-- [JavaScript and Node.js](javascript.md)
-- [PHP](php.md)
-- [Python](python.md)
-- [Ruby](ruby.md)
-- [Xcode](xcode.md)
-
+- .NET
+    - [.NET Core](ecosystems/dotnet-core.md)
+    - [.NET Framework](apps/aspnet/build-aspnet-4.md)
+- JavaScript
+    - [JavaScript quickstart](ecosystems/javascript.md)
+    - [Customize JavaScript](ecosystems/customize-javascript.md)
+    - [Node.js tutorial](ecosystems/nodejs-tutorial.md)
+- Python
+    - [Python quickstart](ecosystems/python.md)
+    - [Customize Python](ecosystems/customize-python.md)
+    - [Python to web app](ecosystems/python-webapp.md)
+    - [Anaconda](ecosystems/anaconda.md)
+- Java
+    - [Java apps](ecosystems/java.md)
+    - [Java to web App](ecosystems/java-webapp.md)
+    - [Java to web app with MicroProfile](/azure/java/microprofile/cicd-microprofile)
+- [Android](ecosystems/android.md)
+- [Go](ecosystems/go.md)
+- [PHP](ecosystems/php.md)
+- [Ruby](ecosystems/ruby.md)
+- [Xcode](ecosystems/xcode.md)
 
 ## Deploy your app
 
-See the following topics for information on dDeploy your app to any of the following platforms.
+See the following topics for information on deploying your app to any of the following platforms.
 
+- [Deploy to Azure services](../overview-azure.md)
 - [Kubernetes](./kubernetes/deploy.md)
 - [Azure Stack](../targets/azure-stack.md)
 - [Azure SQL database](../targets/azure-sqldb.md)
@@ -54,5 +59,3 @@ See the following topics for information on dDeploy your app to any of the follo
 - [Virtual machine resources](../process/environments-virtual-machines.md)
 - [Web App for Containers](../apps/cd/deploy-docker-webapp.md)
 - [Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
-
-
