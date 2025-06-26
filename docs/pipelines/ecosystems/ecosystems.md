@@ -20,7 +20,7 @@ The articles in this section provide examples of how to build and deploy applica
 
 ## Build your app
 
-See the following topics for examples of building your app with any of the following languages.
+See the following topics for examples of building your app with the following languages.
 
 - .NET
     - [.NET Core](./dotnet-core.md)
