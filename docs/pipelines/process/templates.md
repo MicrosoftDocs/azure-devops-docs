@@ -460,8 +460,8 @@ jobs:
 
 Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. If you're using a template to include variables in a pipeline, the included template can only be used to define variables. You can use steps and more complex logic when you're [extending from a template](#extend-from-a-template). 
 
-
-Use [parameters](template-parameters.md#passing-parameters) instead of variables for added security such as specifying type. For more information on the importance of using parameters for shell tasks, refer to the [Enable shell tasks arguments parameter validation documentation](../security/inputs.md#enable-shell-tasks-arguments-parameter-validation).
+> [!NOTE]
+> Use [parameters](template-parameters.md#passing-parameters) instead of variables for added security such as specifying type. For more information on the importance of using parameters for shell tasks, refer to the [Enable shell tasks arguments parameter validation documentation](../security/inputs.md#enable-shell-tasks-arguments-parameter-validation).
 
 In this example, the variable `favoriteVeggie` is included in `azure-pipelines.yml`.
 
