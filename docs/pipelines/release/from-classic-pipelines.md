@@ -48,53 +48,32 @@ Follow these steps to create a starter YAML pipeline, which you’ll later updat
 
    :::image type="content" source="media/commit-save-run.png" alt-text="A screenshot displaying how to save and run a new yaml pipeline.":::
 
-## Export your Classic pipeline
+## Export a Classic pipeline to YAML
 
 1. Sign in to your Azure DevOps organization, and navigate to your project.
 
 1. Select **Pipelines** > **Pipelines**. 
  
-1. Select your Classic pipeline definition, select the ellipses icon, and then select **Export to YAML**. Make sure you're in the pipeline definition view, not a specific run, to see the **Export to YAML** option.
+1. Find your Classic pipeline, select the ellipses (...) next to it, and then select **Export to YAML**. Make sure you're in the pipeline definition view, not a specific run, to see the **Export to YAML** option.
 
-    :::image type="content" source="media/export-yaml.png" alt-text="Screenshot of context menu, to export your pipeline to YAML.":::
+    :::image type="content" source="media/export-yaml.png" alt-text="A screenshot displaying how to export a Classic pipeline to YAML.":::
 
 1. Open the downloaded YAML file in your code editor.
 
-1. If your YAML pipeline includes variables defined in the Classic UI, define the variables again in your pipeline settings UI or in your YAML file. For more information, see [Define variables](../process/variables.md).
+1. If your Classic pipeline used variables defined in the Classic UI editor, you’ll need to redefine them either in the YAML file or in the pipeline settings. See [Define variables](../process/variables.md) for more details.
 
-1. Review any `cron` schedules in your YAML file. By default, `cron` schedules in YAML are in UTC. In Classic pipelines, they are in the organization's timezone. For more information, see [Configure schedules for pipelines](../process/scheduled-triggers.md).
+1. Review any `cron` schedules in your YAML file. YAML schedules use UTC by default, while Classic pipelines use your organization’s local time zone. See [Configure schedules for pipelines](../process/scheduled-triggers.md) for more details.
 
-1. Use the Task Assistant to make any other changes to the YAML file. The Task Assistant is a pane on the right side of the screen, which helps you correctly create and modify YAML steps.
+1. Use the **Task Assistant** (the pane on the right side of the editor) to help you add or modify steps in your YAML file.
 
-    :::image type="content" source="media/task-assistant-yaml.png" alt-text="Configure your pipeline task with Task Assistant.":::
+    :::image type="content" source="media/task-assistant-yaml.png" alt-text="A screenshot displaying how to configure pipeline tasks with the Task Assistant.":::
 
-1. **Save and run** your pipeline.
+1. Select **Save and run** once you're done.
 
-## Clean up resources
+## Related content
 
-If you're not going to use this sample pipeline anymore, delete it from your project. Deletion is permanent and includes all builds and associated artifacts.
-
-1. Select the ellipses (...) and select **Delete**.
-
-2. Enter the name of your pipeline to permanently delete it, and then select **Delete**.
-
-## FAQ
-
-### Is there a task in YAML pipelines to create work items when there's a build failure? 
-
-YAML pipelines don't have a [Create work item on failure setting](../build/options.md#create-a-work-item-on-failure) like classic build pipelines. You have a couple of options for creating this functionality yourself.
-- You can use a script or PowerShell task and call the [REST API](/rest/api/azure/devops/pipelines/). 
-- You can use Azure CLI to call [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) in your pipeline. [See an example](../customize-pipeline.md#create-work-item-on-failure) of using the CLI to create a bug on failure.
-
-## Next steps
-
-Learn about the feature differences between YAML and Classic pipelines.
-
-> [!div class="nextstepaction"]
-> [Use Azure Pipelines](../get-started/pipelines-get-started.md#feature-availability)
-
-## Related articles
+- [YAML vs Classic Pipelines](../get-started/pipelines-get-started.md#feature-availability)
 
 - [Customize your pipeline](../customize-pipeline.md)
-- [Learn YAML pipeline editor basics](../get-started/yaml-pipeline-editor.md)
-- [Define approvals and checks](../release/approvals/approvals.md)
+
+- [YAML pipeline editor](../get-started/yaml-pipeline-editor.md)
