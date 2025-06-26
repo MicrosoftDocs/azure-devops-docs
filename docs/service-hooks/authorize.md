@@ -25,6 +25,9 @@ Azure DevOps uses the industry-standard OAuth 2.0 authorization framework to gra
 - The service that you authorize doesn't have access to your Azure DevOps credentials.
 - You can revoke any authorizations that you grant to other services.
 
+> [!IMPORTANT]
+> Azure DevOps OAuth is slated for deprecation in 2026. To build an application on top of Azure DevOps REST APIs, explore the [Microsoft identity platform](/entra/identity-platform/v2-overview) and [register your application in Microsoft Entra ID](/entra/identity-platform/quickstart-register-app). For more information, see [No new Azure DevOps OAuth apps beginning April 2025](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps/).
+
 ## Prerequisites
 
 | Category | Requirement |
