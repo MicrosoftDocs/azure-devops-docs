@@ -8,7 +8,7 @@ ms.topic: include
 ### Support for YAML pipelines in Test Plans
 
 > [!NOTE]
-> **Updated 6/26//2025:** We’ve temporarily disabled this feature due to a bug and are working to resolve it as quickly as possible. We will share additional updates in this article as soon as the issue is fixed. 
+> **Updated 6/26//2025:** We’ve temporarily disabled this feature due to a bug and are working to resolve it as quickly as possible. We will share additional updates in this article as soon as the issue is resolved. 
 
 In addition to Classic pipelines, you can now use your YAML pipelines when configuring your Test Plans or executing automated tests from Test Plans.
 
