@@ -1,15 +1,13 @@
 ---
-title: GitHub Secret Protection and GitHub Code Security available as standalone products in Azure DevOps 
+title: Azure DevOps MCP Server (public preview)
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/30/2025
-description: GitHub Secret Protection and GitHub Code Security available as standalone products in Azure DevOps
+description: Azure DevOps MCP Server (public preview)
 ---
-# GitHub Secret Protection and GitHub Code Security available as standalone products in Azure DevOps
+# Azure DevOps MCP Server (public preview)
 
-You can now get GitHub Secret Protection and GitHub Code Security as standalone products in Azure DevOps. Secret Protection provides access to secret scanning, push protection, and security overview experiences. Code Security provides access to all dependency scanning, code scanning, and security overview experiences.
-
-In Test Plans, we are releasing new Test Plans directory to help you stay organized and save time. Now you can manage test plans more efficiently, having greater control over your workspace and reducing repetitive tasks.
+We’re thrilled to introduce the public preview of the Azure DevOps MCP Server! You can now access Azure DevOps data such as work items, pull requests, builds, test plans, and more thru a self-hosted, on-premises solution from GitHub Copilot in Visual Studio Code. This integration enhances Copilot’s ability to provide intelligent, context-aware suggestions while ensuring your data remains securely within your environment.
 
 Check out the release notes for details.
 
@@ -20,6 +18,10 @@ Check out the release notes for details.
 ### General
 
 [!INCLUDE [sprint-258-update-links](includes/general/sprint-258-update-links.md)] 
+
+### Azure Repos
+
+[!INCLUDE [sprint-258-update-links](includes/repos/sprint-258-update-links.md)]
 
 ### Azure Pipelines
 
@@ -36,6 +38,10 @@ Check out the release notes for details.
 ## General
 
 [!INCLUDE [sprint-258-update](includes/general/sprint-258-update.md)]
+
+## Azure Repos
+
+[!INCLUDE [sprint-258-update](includes/repos/sprint-258-update.md)]
 
 ## Azure Pipelines
 

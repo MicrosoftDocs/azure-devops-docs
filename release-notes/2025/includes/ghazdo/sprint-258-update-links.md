@@ -1,8 +1,9 @@
 ---
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/16/2025
+ms.date: 6/30/2025
 ms.topic: include
 ---
 
-- [GitHub Advanced Security is now available as GitHub Secret Protection and Code Security for Azure DevOps](#github-advanced-security-is-now-available-as-github-secret-protection-and-code-security-for-azure-devops)
+- [One click enablement for dependency scanning now in public preview](#one-click-enablement-for-dependency-scanning-now-in-public-preview)
+- [Service hooks for GitHub Advanced Security for Azure DevOps alerts generally available](#service-hooks-for-github-advanced-security-for-azure-devops-alerts-generally-available)
