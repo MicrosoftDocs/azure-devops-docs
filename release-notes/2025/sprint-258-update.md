@@ -7,17 +7,19 @@ description: Azure DevOps MCP Server (public preview)
 ---
 # Azure DevOps MCP Server (public preview)
 
-We’re thrilled to introduce the public preview of the Azure DevOps MCP Server! You can now access Azure DevOps data such as work items, pull requests, builds, test plans, and more thru a self-hosted, on-premises solution from GitHub Copilot in Visual Studio Code. This integration enhances Copilot’s ability to provide intelligent, context-aware suggestions while ensuring your data remains securely within your environment.
+We’re thrilled to introduce the public preview of the Azure DevOps MCP Server! You can now access Azure DevOps data such as work items, pull requests, builds, test plans, and more thru a self-hosted, on-premises solution from GitHub Copilot in Visual Studio Code. 
+
+This integration enhances Copilot’s ability to provide intelligent, context-aware suggestions while ensuring your data remains securely within your environment.
 
 Check out the release notes for details.
-
-### GitHub Advanced Security for Azure DevOps
-
-[!INCLUDE [sprint-258-update-links](includes/ghazdo/sprint-258-update-links.md)] 
 
 ### General
 
 [!INCLUDE [sprint-258-update-links](includes/general/sprint-258-update-links.md)] 
+
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-258-update-links](includes/ghazdo/sprint-258-update-links.md)] 
 
 ### Azure Repos
 
@@ -27,13 +29,13 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-258-update-links](includes/testplans/sprint-258-update-links.md)]
 
-## GitHub Advanced Security for Azure DevOps
-
-[!INCLUDE [sprint-258-update](includes/ghazdo/sprint-258-update.md)]
-
 ## General
 
 [!INCLUDE [sprint-258-update](includes/general/sprint-258-update.md)]
+
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-258-update](includes/ghazdo/sprint-258-update.md)]
 
 ## Azure Repos
 
