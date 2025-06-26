@@ -23,10 +23,6 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-258-update-links](includes/repos/sprint-258-update-links.md)]
 
-### Azure Pipelines
-
-[!INCLUDE [sprint-258-update-links](includes/pipelines/sprint-258-update-links.md)]
-
 ### Azure Test Plans
 
 [!INCLUDE [sprint-258-update-links](includes/testplans/sprint-258-update-links.md)]
@@ -42,10 +38,6 @@ Check out the release notes for details.
 ## Azure Repos
 
 [!INCLUDE [sprint-258-update](includes/repos/sprint-258-update.md)]
-
-## Azure Pipelines
-
-[!INCLUDE [sprint-258-update](includes/pipelines/sprint-258-update.md)]
 
 ## Azure Test Plans
 
