@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra 
 monikerRange: '<= azure-devops'
 ms.date: 02/13/2025
+ms.update-cycle: 1095-days
 ---
 
 # Explore work items with the Test & Feedback extension

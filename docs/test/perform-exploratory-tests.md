@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/16/2024
+ms.update-cycle: 1095-days
 ---
 
 # Install the Test & Feedback extension

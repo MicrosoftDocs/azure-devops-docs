@@ -9,6 +9,7 @@ ms.author: jeom
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
+ms.update-cycle: 1095-days
 ---
 
 # Test objects and terms

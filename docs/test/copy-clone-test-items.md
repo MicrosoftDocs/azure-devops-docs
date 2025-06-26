@@ -9,6 +9,7 @@ author: raviLiftr
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 03/12/2024
+ms.update-cycle: 1095-days
 ---
 
 # Copy or clone test plans, test suites, and test cases 

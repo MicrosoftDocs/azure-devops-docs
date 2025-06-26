@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
+ms.update-cycle: 1095-days
 ---
 
 # Manual test access and permissions 
