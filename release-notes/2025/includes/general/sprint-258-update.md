@@ -22,3 +22,7 @@ Check out this demo showing how to create iterations and assign them to a team:
 🎥 [mcp-demo-create-iterations.mp4](https://mseng.visualstudio.com/b924d696-3eae-4116-8443-9a18392d8544/_apis/wit/attachments/42de9cfe-c40d-4097-b8b3-fa6a0d68d232?fileName=mcp-demo-create-iterations.mp4&download=true)
 
 Ready to get started? Visit the [Azure DevOps MCP Server repository](https://github.com/microsoft/azure-devops-mcp) for installation instructions, examples, and contribution guidelines.
+
+### New organizations won't offer public projects
+
+Starting this sprint, new organizations will no longer have the [Allow public projects policy](/azure/devops/organizations/projects/make-project-public?view=azure-devops#1-enable-anonymous-access-to-projects) available. This policy remains unchanged for existing customers. Microsoft recommends using [GitHub](https://github.com/) for all your public project needs.
