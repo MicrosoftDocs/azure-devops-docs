@@ -1,7 +1,7 @@
 ---
-title: Create your product backlog in Azure Boards
+title: Create and manage your product backlog in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards.
+description: Learn how to create, configure, and manage your product backlog in Azure Boards. Add backlog items, set up boards, and customize work item tracking.
 ms.custom: boards-backlogs
 ms.service: azure-devops-boards
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
@@ -9,11 +9,11 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/16/2024
-#customer intent: As a team member, I want to understand how backlogs work in Azure Boards to improve my team's workflow.
+ms.date: 06/27/2025
+#customer intent: As a team member, I want to understand how to create and manage backlogs in Azure Boards to improve my team's workflow.
 ---
 
-# Create your backlog in Azure Boards
+# Create and manage your backlog in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -26,6 +26,44 @@ The product backlog is your project plan, which shows what your team intends to 
 ## Prerequisites
 
 [!INCLUDE [prerequisites](../includes/prerequisites.md)]
+
+## Understand backlog and board work items
+
+Before creating and managing your backlog, it's important to understand what work items appear on your backlog and boards. Your product **Backlog** and **Board** display work items that meet the following criteria:
+
+::: moniker range="<=azure-devops"
+
+- Work item type belongs to the Requirements category. The types differ depending on the process selected for your project:  
+    - [Basic](../get-started/plan-track-work.md) : Issue, Backlog name=**Issues**  
+    - [Agile](../work-items/guidance/agile-process.md): User Story, Backlog name=**Stories**  
+    - [Scrum](../work-items/guidance/scrum-process.md): Product Backlog Item, Backlog name=**Backlog items** 
+    - [CMMI](../work-items/guidance/cmmi-process.md): Requirement, Backlog name=**Requirements**  
+- Work item **Area Path** matches one of the selected team's Area Paths
+- Work item **Iteration Path** is under the team's Default Iteration Path
+
+::: moniker-end
+
+[!INCLUDE [temp](../includes/basic-process-note.md)] 
+
+You can determine the work item types that belong to your Requirements category by [opening your product Backlog](create-your-backlog.md) and checking the product backlog name. 
+
+::: moniker range="<=azure-devops"
+
+> [!div class="mx-imgBorder"]
+> ![Product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png)
+
+::: moniker-end
+
+Look up your team's Area Path(s) and Iteration Paths. For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and 
+[Define sprint paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations). 
+
+## Default sprint backlog and Taskboard work items
+
+Your sprint backlog and Taskboard apply the filters associated with your team's default backlog and board work items along with the Iteration Path you select.  
+
+You can only select Iteration Paths that have been [preselected by your team](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations). 
+
+Your sprint backlog displays only those work items assigned to the selected sprint. Child tasks assigned to other sprints aren't displayed.
 
 ## Add a backlog
 
@@ -303,6 +341,10 @@ Teams who want the least overhead for tracking and estimating might prefer Kanba
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Add a team, move from one default team to several teams](../../organizations/settings/add-teams.md)
+- [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)
+- [Workflow states & state categories](../work-items/workflow-and-state-categories.md) 
+- [Automate work item state transitions](../work-items/automate-work-item-state-transitions.md)
 
 ::: moniker-end
 
@@ -313,5 +355,9 @@ Teams who want the least overhead for tracking and estimating might prefer Kanba
 - [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Add a team, move from one default team to several teams](../../organizations/settings/add-teams.md)
+- [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)
+- [Workflow states & state categories](../work-items/workflow-and-state-categories.md) 
+- [Automate work item state transitions](../work-items/automate-work-item-state-transitions.md)
 
 ::: moniker-end
