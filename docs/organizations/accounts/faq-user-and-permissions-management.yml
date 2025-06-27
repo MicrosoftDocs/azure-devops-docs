@@ -51,7 +51,8 @@ sections:
         answer: |
           A: They might need a different [access level](../security/access-levels.md#supported-access-levels) assigned, in addition to permissions granted through security groups. For example, [Stakeholder access](../security/stakeholder-access.md) access level provides partial support to select features, allowing users to view and modify work items, but not to use all features.
 
-      - question: I accidentally removed my permissions and am unable to grant them again. What should I do?
+      - question: |
+          Q: I accidentally removed my permissions and am unable to grant them again. What should I do?
         answer: |
           A: The only way to resolve this scenario is to [Request an increase in permission levels](../security/request-changes-permissions.md).
 
@@ -391,7 +392,7 @@ sections:
       - question: |
           Q: Why don't users appear or disappear promptly in Azure DevOps after I add or delete them in the Users hub?
         answer: |
-          A: If you experience delays finding new users or gettings deleted users promptly removed from Azure DevOps (for example, in drop-down lists and groups) after you add or delete users, [file a problem report on Developer Community](https://go.microsoft.com/fwlink/?LinkId=820594) so we can investigate.
+          A: If you experience delays finding new users or getting deleted users promptly removed from Azure DevOps (for example, in drop-down lists and groups) after you add or delete users, [file a problem report on Developer Community](https://go.microsoft.com/fwlink/?LinkId=820594) so we can investigate.
           
           <a name="ChooseOrgAcctMSAcct"></a>
           
