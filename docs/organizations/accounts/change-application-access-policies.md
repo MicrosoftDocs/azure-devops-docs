@@ -37,6 +37,8 @@ You can limit access to these authentication methods by disabling the following 
 
 When you deny access to an authentication method, no application can access your organization through that method. Any application that previously had access encounter authentication errors and lose access.
 
+<a name='cap-support-on-azure-devops'></a>
+
 ## Conditional Access policy support on Azure DevOps
 
 [Conditional Access (CA) in Azure DevOps](conditional-access-policies.md) is enforced through Microsoft Entra ID and supports both interactive (web) and non-interactive (client credential) flows, validating policies like MFA, IP restrictions, and device compliance during sign-in and periodically via token checks. 
