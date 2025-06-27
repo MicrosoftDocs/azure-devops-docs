@@ -11,7 +11,7 @@ ms.date: 06/27/2025
 monikerRange: 'azure-devops'
 ---
 
-# Setup Conditional Access policies on Azure DevOps
+# Set up Conditional Access policies on Azure DevOps
 
 Microsoft Entra ID lets tenant admins control which users can access Microsoft resources using [Conditional Access policies](/azure/active-directory/conditional-access/overview). Admins set specific conditions users must meet to gain access, such as:
 
@@ -28,12 +28,12 @@ Based on these conditions, you can grant access, require more checks like multif
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| You must be at least a **Conditional Access Administrator** to set up a Conditional Access policy in your tenant. Learn more in the ["Create a Contional Access policy" Entra docs](/entra/identity/authentication/tutorial-enable-azure-mfa.md#create-a-conditional-access-policy). |
+|**Permissions**| You must be at least a **Conditional Access Administrator** to set up a Conditional Access policy in your tenant. Learn more in the ["Create a Conditional Access policy" Entra docs](/entra/identity/authentication/tutorial-enable-azure-mfa.md#create-a-conditional-access-policy). |
 
-1. Go to the [Azure Portal](https://portal.azure.com) and find the **“Microsoft Entra Conditional Access”** service.
-2. Select **“Policies”** on the right sidebar.
-3. Select the **“+ New policy”** button. Provide the policy a name. 
-5. For the **“Target resources”** assignments, toggle “Select resources” and add the “Microsoft Visual Studio Team Services” resource (resource id: 499b84ac-1321-427f-aa17-267ca6975798) to the list of target resources.
+1. Go to the [Azure portal](https://portal.azure.com) and find the **"Microsoft Entra Conditional Access"** service.
+2. Select **"Policies"** on the right sidebar.
+3. Select the **"+ New policy"** button. Provide the policy a name. 
+5. For the **"Target resources"** assignments, toggle **"Select resources"** and add the _"Microsoft Visual Studio Team Services"_ resource (resource id: 499b84ac-1321-427f-aa17-267ca6975798) to the list of target resources.
 6. Configure other settings as desired.
 7. Select **Save** to apply this new policy.
 
@@ -43,7 +43,7 @@ Based on these conditions, you can grant access, require more checks like multif
 
 When you sign in to the web portal of a Microsoft Entra ID-backed organization, Microsoft Entra ID validates all Conditional Access policies set by tenant administrators. After [modernizing our web authentication stack to use Microsoft Entra tokens](https://devblogs.microsoft.com/devops/full-web-support-for-conditional-access-policies-across-azure-devops-and-partner-web-properties/), Azure DevOps now enforces Conditional Access policy validation on all interactive (web) flows.
 
-- Meet sign-in policies when using PATs on REST API calls that rely on Microsoft Entra.
+- Meet sign-in policies when using [Personal Access Tokens (PATs)](use-personal-access-tokens-to-authenticate.md) on REST API calls that rely on Microsoft Entra.
 - Remove Azure DevOps as a resource from the Conditional Access policy, which prevents Conditional Access policies from applying.
 - Enforce MFA policies on web flows only; block access for non-interactive flows if users don't meet a Conditional Access policy.
 
@@ -66,9 +66,9 @@ If users access the Microsoft Entra sign-in page from a different IP address tha
 
 Azure DevOps doesn't depend on the Azure Resource Manager (ARM) resource (`https://management.azure.com`) when you sign in or refresh Microsoft Entra access tokens. Previously, Azure DevOps required the ARM audience during sign-in and token refresh flows. This requirement meant that administrators had to allow all Azure DevOps users to bypass ARM Conditional Access policies to ensure access. 
 
-If you have previously set up a Conditional Access policy for Azure Resoruce Manager or the associated [Windows Azure Service Management API application](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps#windows-azure-service-management-api), this policy will no longer cover Azure DevOps signins. Setup a new Azure DevOps Conditional Access policy for continued coverage of Azure DevOps.
+If you previously set up a Conditional Access policy for Azure Resource Manager or the associated [Windows Azure Service Management API application](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps#windows-azure-service-management-api), this policy no longer covers Azure DevOps sign-ins. Set up a new Azure DevOps Conditional Access policy for continued coverage of Azure DevOps.
 
-Continued access to ARM is still required by the following user groups, and you may want to consider adding them as exclusions to any ARM or Windows Azure Service Management API Conditional Access policies.
+The following groups still require continued access to ARM. You may want to consider adding them as exclusions to any ARM or Windows Azure Service Management API Conditional Access policies.
 - **Billing administrators** need access to ARM to set up billing and access subscriptions.
 - **Service Connection creators** require access to ARM for ARM role assignments and updates to managed service identities (MSIs).
 
