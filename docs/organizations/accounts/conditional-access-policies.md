@@ -20,16 +20,15 @@ Microsoft Entra ID lets tenant admins control which users can access Microsoft r
 - Use of a particular operating system
 - Use of a managed and enabled device
 
-Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. Learn more about [Conditional Access policies](/azure/active-directory/active-directory-conditional-access) and [how to set one up for Azure DevOps](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) in the Microsoft Entra documentation.
+Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. Learn more about [Conditional Access policies](/azure/active-directory/active-directory-conditional-access) in the Microsoft Entra documentation.
 
 ## Prerequisites
 
+## Create a Conditional Access policy for Azure DevOps
+
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| <ul><li>Org-level policies: [Project Collection Administrator](../security/look-up-project-collection-administrators.md)</li><li>Tenant-level policies: [Azure DevOps Administrator](../security/look-up-azure-devops-administrator.md)</li></ul>|
-
-
-## Create a Conditional Access policy for Azure DevOps
+|**Permissions**| You must be at least a **Conditional Access Administrator** to set up a Conditional Access policy in your tenant. Learn more in the ["Create a Contional Access policy" Entra docs](/entra/identity/authentication/tutorial-enable-azure-mfa.md#create-a-conditional-access-policy). |
 
 1. Go to the [Azure Portal](https://portal.azure.com) and find the **“Microsoft Entra Conditional Access”** service.
 2. Select **“Policies”** on the right sidebar.
@@ -39,7 +38,6 @@ Based on these conditions, you can grant access, require more checks like multif
 7. Select **Save** to apply this new policy.
 
  :::image type="content" source="../../media/setup-ado-cap.png" alt-text="Screenshot showing how to add Azure DevOps as a target resource on a new Conditional Access policy in Microsoft Entra portal.":::
-
 
 ### Conditional Access behavior on web
 
@@ -51,7 +49,11 @@ When you sign in to the web portal of a Microsoft Entra ID-backed organization, 
 
 ### IP-based conditions
 
-If you enable the **IP Conditional Access policy validation on non-interactive flows** policy, Azure DevOps checks IP fencing policies on non-interactive flows, such as when you use a PAT to make a REST API call.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| You must be an [Project Collection Administrator](../security/look-up-project-collection-administrators.md) to enable this policy.</li></ul>|
+
+If the **IP Conditional Access policy validation on non-interactive flows** organization policy is enabled on the **Organization Settings** page, Azure DevOps checks IP fencing policies on non-interactive flows, such as when you use a PAT to make a REST API call.
 
 Azure DevOps supports IP-fencing Conditional Access policies for both IPv4 and IPv6 addresses. If Conditional Access policies block your IPv6 address, ask your tenant administrator to update the policy to allow your IPv6 address. Also, consider including the IPv4-mapped address for any default IPv6 address in all Conditional Access policy conditions.
 
