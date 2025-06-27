@@ -22,15 +22,14 @@ Always revoke credentials when they're no longer required to maintain the securi
 
 ### Microsoft Entra OAuth tokens
 
-Use [Microsoft Entra](../../integrate/get-started/authentication/entra.md) to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). Microsoft Entra tokens can be used wherever personal access tokens are used. Here's a helpful tip on how to get a one-time access token from the Azure CLI to call git fetch:
+[Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) are the preferred authentication for Git operations and [REST APIs](/rest/api/azure/devops/). They can be used wherever personal access tokens are used and generated for a user principal or a [managed identity and/or service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md). 
+
+Here's a helpful tip on how to get a one-time Microsoft Entra token from the Azure CLI to call git fetch: (When generating on behalf of a service principal, make sure to [login as the service principal](/cli/azure/authenticate-azure-cli) first.)
 
 ```powershell
 $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
 git -c http.extraheader="AUTHORIZATION: bearer $accessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
 ```
-
->[!TIP]
-> Look into the [Git Credential Manager (GCM)](set-up-credential-managers.md) instead to avoid entering your credentials everytime. Use GCM with default credential type as `Oauth` to generate Microsoft Entra tokens.
 
 ### Personal access tokens
 
@@ -65,11 +64,6 @@ git --config-env=http.extraheader=HEADER_VALUE clone https://dev.azure.com/yourO
 
 ---
 
-
->[!TIP]
-> If you are using PATs regularly, look into the [Git Credential Manager (GCM)](set-up-credential-managers.md) instead to avoid entering your credentials everytime. Even better, explore using GCM with default credential type as `Oauth` to generate Microsoft Entra tokens instead of PATs whenever possible.
-
-
 ### SSH keys
 
 Key authentication with SSH works through a public and private key pair that you create on your computer. 
@@ -86,7 +80,7 @@ For more information, see [Set up SSH with Azure DevOps](use-ssh-keys-to-authent
 
 <a name="use-credential-managers-to-generate-tokens"></a>
 
-Use the [Git Credential Manager (GCM)](set-up-credential-managers.md) to avoid entering your credentials every time and keep your token more secure when accessing Azure Repos. Sign in to the web portal, generate a token, and then use the token as your password when you're connecting to Azure Repos. Microsoft Entra tokens or PATs are generated on demand when you have the credential manager installed and saved locally for use with the Git command line or other client. 
+Use the [Git Credential Manager (GCM)](set-up-credential-managers.md) to avoid entering your credentials every time and keep your token more secure when accessing Azure Repos. Sign in to the web portal, generate a token, and then use the token as your password when you're connecting to Azure Repos. Microsoft Entra tokens (preferred) or PATs are generated on demand when you have the credential manager installed and saved locally for use with the Git command line or other client. 
 
 ## Existing repositories
 

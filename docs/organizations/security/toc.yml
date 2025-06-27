@@ -101,6 +101,9 @@
     - name: Manage security policies
       displayName: application, settings, add, update, remove
       href: ../accounts/change-application-access-policies.md
+    - name: Setup Conditional Access policies
+      displayName: conditional, access, policies
+      href: ../accounts/conditional-access-policies.md
     - name: Manage PAT policies
       href: ../accounts/manage-pats-with-policies-for-administrators.md
     - name: Add external users
