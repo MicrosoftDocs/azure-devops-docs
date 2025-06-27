@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: freshness-fy22q2
-ms.date: 06/26/2025
+ms.date: 06/27/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -53,9 +53,8 @@ See the following topics for information on deploying your app to any of the fol
 - [Azure Stack](../targets/azure-stack.md)
 - [Azure SQL database](../targets/azure-sqldb.md)
 - [Azure Web Apps](../targets/webapp.md)
-- [Linux VM](/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups)
 - [npm](../artifacts/npm.md)
 - [NuGet](../artifacts/nuget.md)
 - [Virtual machine resources](../process/environments-virtual-machines.md)
 - [Web App for Containers](../apps/cd/deploy-docker-webapp.md)
-- [Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+- [Deploy to Azure Functions](/azure/azure-functions/functions-how-to-azure-devops)
