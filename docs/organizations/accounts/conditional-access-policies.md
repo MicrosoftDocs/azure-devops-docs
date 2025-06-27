@@ -1,7 +1,7 @@
 ---
 title: Conditional Access policies on Azure DevOps
 titleSuffix: Azure DevOps Services
-description: Setup Microsoft Entra Conditional Access policies to grant or restrict access to tenant resources
+description: Set up Microsoft Entra Conditional Access policies to grant or restrict access to tenant resources
 ms.subservice: azure-devops-organizations
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: how-to
