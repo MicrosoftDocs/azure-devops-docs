@@ -28,7 +28,7 @@ Based on these conditions, you can grant access, require more checks like multif
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| You must be at least a **Conditional Access Administrator** to set up a Conditional Access policy in your tenant. Learn more in the ["Create a Conditional Access policy" Entra docs](/entra/identity/authentication/tutorial-enable-azure-mfa.md#create-a-conditional-access-policy). |
+|**Permissions**| You must be at least a **Conditional Access Administrator** to set up a Conditional Access policy in your tenant. Learn more in the ["Create a Conditional Access policy" Entra docs](/entra/identity/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy). |
 
 1. Go to the [Azure portal](https://portal.azure.com) and find the **"Microsoft Entra Conditional Access"** service.
 2. Select **"Policies"** on the right sidebar.
@@ -66,7 +66,7 @@ If users access the Microsoft Entra sign-in page from a different IP address tha
 
 Azure DevOps doesn't depend on the Azure Resource Manager (ARM) resource (`https://management.azure.com`) when you sign in or refresh Microsoft Entra access tokens. Previously, Azure DevOps required the ARM audience during sign-in and token refresh flows. This requirement meant that administrators had to allow all Azure DevOps users to bypass ARM Conditional Access policies to ensure access. 
 
-If you previously set up a Conditional Access policy for Azure Resource Manager or the associated [Windows Azure Service Management API application](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps#windows-azure-service-management-api), this policy no longer covers Azure DevOps sign-ins. Set up a new Azure DevOps Conditional Access policy for continued coverage of Azure DevOps.
+If you previously set up a Conditional Access policy for Azure Resource Manager or the associated [Windows Azure Service Management API application](/entra/identity/conditional-access/concept-conditional-access-cloud-apps#windows-azure-service-management-api), this policy no longer covers Azure DevOps sign-ins. Set up a new Azure DevOps Conditional Access policy for continued coverage of Azure DevOps.
 
 The following groups still require continued access to ARM. You may want to consider adding them as exclusions to any ARM or Windows Azure Service Management API Conditional Access policies.
 - **Billing administrators** need access to ARM to set up billing and access subscriptions.
