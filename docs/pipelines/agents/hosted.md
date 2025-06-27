@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 06/24/2025
+ms.date: 06/27/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -25,7 +25,7 @@ Microsoft-hosted agents are only available with Azure DevOps Services, which is 
 
 ## Software
 
-The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software.
+The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software. You can see the installed software for each image by choosing the **Included Software** link in the following table. For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support).
 
 #### [Windows images](#tab/windows-images/)
 
