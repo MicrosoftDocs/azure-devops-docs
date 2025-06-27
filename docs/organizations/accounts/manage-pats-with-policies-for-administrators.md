@@ -88,7 +88,7 @@ Azure DevOps Administrators can define the maximum lifespan of a PAT, specifying
 > - This policy is in public preview.
 > - This policy is only available for Microsoft Entra-backed organizations.
 
-Project Collection Administrators are able to control who can create and regenerate PATs in the organizations they manage. For existing organizations, this policy is set to *off*. Once this policy is in public preview, by default, this policy is set to *on*. Existing PATs continue working until the PAT's expiration date.
+Project Collection Administrators are able to control who can create and regenerate PATs in the organizations they manage. By default, this policy is set to *off*. Existing PATs continue working until the PAT's expiration date.
 
 > [!TIP]
 > Combine this policy with a short duration set for the "Set maximum lifespan for new PATs" policy to drive down PAT usage in your organization.
