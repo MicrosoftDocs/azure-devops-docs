@@ -55,14 +55,18 @@ When you connect to a Git repository from your Git client for the first time, th
 Once authenticated, the credential manager creates and caches a token for future connections to the repo. Git commands that connect to this account won't prompt for user credentials until the token expires. A token can be revoked through Azure Repos.
 
 ### Set default credential type as OAuth
-By default, GCM will request a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) from Azure Repos. However, you can change the default token type to a [Microsoft Entra token](../../integrate/get-started/authentication/entra.md) for Git authentication instead. We recommend this approach since the latter token has a one-hour expiration compared to the 7-day PATs minted by GCM. All PATs created by GCM can be [revoked in the User Settings page](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#revoke-a-pat).
+By default, GCM will request a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) from Azure Repos. However, you can [change the default Git authentication](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposcredentialtype) to use the preferred [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md). We recommend this approach since the latter token has a one-hour expiration compared to the 7-day PATs minted by GCM. Learn more about [using GCM with Azure Repos](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/azrepos-users-and-tokens.md#set-default-credential-type).
 
-To [set your default credential type to Microsoft Entra tokens](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposcredentialtype), set the `credential.azreposCredentialType` configuration entry (or `GCM_AZREPOS_CREDENTIALTYPE` environment variable) to `oauth`. Learn more about [using GCM with Azure Repos](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/azrepos-users-and-tokens.md#set-default-credential-type).
+```
+git config --global credential.azreposCredentialType oauth
+```
 
 ### Use service principal as authentication
 You can also provide a [service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md) for [authentication with GCM](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipal). Specify the client and tenant IDs of a service principal in this format: `{tenantId}/{clientId}`.
 
-```git config --global credential.azreposServicePrincipal "11111111-1111-1111-1111-111111111111/22222222-2222-2222-2222-222222222222"```
+```
+git config --global credential.azreposServicePrincipal "11111111-1111-1111-1111-111111111111/22222222-2222-2222-2222-222222222222"
+```
 
 You must also set at least one authentication mechanism if you set this value:
 * [credential.azreposServicePrincipalSecret](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalsecret)
