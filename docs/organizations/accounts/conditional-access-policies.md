@@ -37,7 +37,7 @@ Based on these conditions, you can grant access, require more checks like multif
 6. Configure other settings as desired.
 7. Select **Save** to apply this new policy.
 
- :::image type="content" source="../../media/setup-ado-cap.png" alt-text="Screenshot showing how to add Azure DevOps as a target resource on a new Conditional Access policy in Microsoft Entra portal.":::
+ :::image type="content" source="./media/setup-ado-cap.png" alt-text="Screenshot showing how to add Azure DevOps as a target resource on a new Conditional Access policy in Microsoft Entra portal.":::
 
 ### Conditional Access behavior on web
 
