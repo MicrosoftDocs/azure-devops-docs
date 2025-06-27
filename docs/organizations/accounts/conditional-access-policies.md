@@ -38,6 +38,9 @@ Based on these conditions, you can grant access, require more checks like multif
 6. Configure other settings as desired.
 7. Select **Save** to apply this new policy.
 
+ :::image type="content" source="../../media/setup-ado-cap.png" alt-text="Screenshot showing how to add Azure DevOps as a target resource on a new Conditional Access policy in Microsoft Entra portal.":::
+
+
 ### Conditional Access behavior on web
 
 When you sign in to the web portal of a Microsoft Entra ID-backed organization, Microsoft Entra ID validates all Conditional Access policies set by tenant administrators. After [modernizing our web authentication stack to use Microsoft Entra tokens](https://devblogs.microsoft.com/devops/full-web-support-for-conditional-access-policies-across-azure-devops-and-partner-web-properties/), Azure DevOps now enforces Conditional Access policy validation on all interactive (web) flows.
