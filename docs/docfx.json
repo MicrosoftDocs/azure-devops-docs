@@ -212,6 +212,9 @@
       "ms.custom": {
         "repos/**": "UpdateFrequency3"
       },
+      "ms.update-cycle": {
+        "repos/**": "1095-days"
+      },
       "recommendations": {
         "pipelines/repos/**": "true",
         "repos/tfvc/**": "true",

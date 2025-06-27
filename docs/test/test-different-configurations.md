@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/20/2021
+ms.update-cycle: 1095-days
 ---
 
 # Test different configurations

@@ -9,6 +9,7 @@ ms.author: jeom
 author: wisdeom
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
+ms.update-cycle: 1095-days
 ---
 
 # Run automated tests from test plans

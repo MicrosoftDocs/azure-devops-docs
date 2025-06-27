@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 4/04/2022
+ms.update-cycle: 1095-days
 ---
 
 # Set test retention policies

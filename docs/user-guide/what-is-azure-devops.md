@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/22/2025
+ms.update-cycle: 1095-days
 #customer intent: As a developer, I want to understand the features in Azure DevOps so I can plan, code, collaborate, and ship my applications faster.
 ---
 
