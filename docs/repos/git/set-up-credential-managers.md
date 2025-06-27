@@ -48,7 +48,7 @@ On Linux, you can install from a [.deb](https://github.com/GitCredentialManager/
 
 ## Using the Git Credential Manager
 
-When you connect to a Git repository from your Git client for the first time, the credential manager prompts for credentials. Provide your Microsoft account or Microsoft Entra credentials. If your account has multi-factor authentication enabled, the credential manager prompts you to go through that process as well.
+When you connect to a Git repository from your Git client for the first time, the credential manager prompts for credentials. Provide your Microsoft account or Microsoft Entra credentials. If your account has multifactor authentication enabled, the credential manager prompts you to go through that process as well.
 
 ![Git Credential Manager prompting during Git pull](media/gcm_login_prompt.gif)
 
