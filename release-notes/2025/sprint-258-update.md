@@ -1,11 +1,11 @@
 ---
-title: Azure DevOps MCP Server (public preview)
+title: Azure DevOps MCP Server in public preview
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/30/2025
-description: Azure DevOps MCP Server (public preview)
+description: Azure DevOps MCP Server in public preview
 ---
-# Azure DevOps MCP Server (public preview)
+# Azure DevOps MCP Server in public preview
 
 We’re thrilled to introduce the public preview of the Azure DevOps MCP Server! You can now access Azure DevOps data such as work items, pull requests, builds, test plans, and more thru a self-hosted, on-premises solution from GitHub Copilot in Visual Studio Code. 
 
