@@ -3,7 +3,7 @@ title: Agent software version 4
 description: Learn how to run pipelines using the version 4 agent software.
 monikerRange: 'azure-devops'
 ms.topic: conceptual
-ms.date: 11/27/2024
+ms.date: 06/30/2025
 ---
 
 # Agent software version 4
@@ -14,6 +14,8 @@ The pipelines team is upgrading the agent software from version 3.x to version 4
 ## Upgrade to 4.x agent on supported operating systems
 
 If you're running your self-hosted agents on newer operating systems [supported by .NET 8](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions), the upgrade to the new agent version is automatic.
+
+To manually initiate the update, see [Update self-hosted agents](./agents.md#to-update-self-hosted-agents).
 
 The following operating systems are supported by the 4.x agent.
 

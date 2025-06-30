@@ -3,13 +3,15 @@ title: Agent software version 3
 description: Learn how to run pipelines using the version 3 agent software.
 monikerRange: '>= azure-devops-2022'
 ms.topic: conceptual
-ms.date: 06/27/2025
+ms.date: 06/30/2025
 ---
 
 # Agent software version 3
 
 > [!IMPORTANT]
-> Agent software version 3 (using .NET 6) is unsupported for Azure DevOps Services, and the Azure Pipelines team recommends you upgrade to [Agent software version 4](./v4-agent.md) (using .NET 8). If you're running your self-hosted agents on an operating system that isn't supported by .NET 8, you must update your machines to use a newer supported operating system [supported by .NET 8](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions). 
+> Agent software version 3 (using .NET 6) is unsupported for Azure DevOps Services, and the Azure Pipelines team recommends you upgrade to [Agent software version 4](./v4-agent.md) (using .NET 8). If you're running your self-hosted agents on an operating system that isn't supported by .NET 8, you must update your machines to use a newer supported operating system [supported by .NET 8](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions).
+>
+> To update your self-hosted agents to version 4, see [Upgrade to agent software version 4](./v4-agent.md#upgrade-to-4x-agent-on-supported-operating-systems).
 
 The pipelines team is upgrading the agent software from version 2.x (using .NET Core 3.1) to version 3.x (using .NET 6). The new agent version supports new Apple silicon hardware and newer operating systems like Ubuntu 22.04, or Windows on ARM64.
 
