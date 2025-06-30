@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 06/30/2025
-# customer intent: As a developer, I want to access reference information about consumers in Azure DevOps service hooks so that I can use service hooks to perform actions on those consumers  when events occur in Azure DevOps projects.
+# customer intent: As a developer, I want to access reference information about consumers in Azure DevOps service hooks so that I can use service hooks to perform actions on those consumers when events occur in Azure DevOps projects.
 ---
 
 # Service hook consumers
