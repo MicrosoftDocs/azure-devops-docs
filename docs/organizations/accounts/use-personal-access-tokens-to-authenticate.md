@@ -269,7 +269,7 @@ To rotate your PAT, do the following steps:
 
 ### Q: How long do expired, revoked, or inactive PATs remain visible in the Azure DevOps token list?
 
-A: PATs that are expired or revoked can no longer be used or regenerated. However, they remain visible in your PAT list for audit and reference purposes. These inactive tokens typically stay visible for several months after expiration or revocation before being automatically removed from the display. This visibility helps you track your token history and ensure proper cleanup of unused credentials.
+A: PATs that are expired or revoked can no longer be used or regenerated. These inactive tokens stay visible for several months after expiration or revocation before being automatically removed from the display.
 
 ### Q: I see a "Need admin approval" pop-up when I try to use a Microsoft Entra app to call the PAT Lifecycle Management APIs.
 A: Your tenant's security policies require admin consent before applications can access organization resources in the organization. Reach out to your tenant administrator.
