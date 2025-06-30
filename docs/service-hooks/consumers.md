@@ -319,5 +319,5 @@ This action creates a private comment in a Zendesk ticket.
 
 ## Related content
 
-- [Authorize other services](authorize.md)
-- [Service hooks overview](overview.md)
+- [Manage authorization of services to access Azure DevOps](authorize.md)
+- [Integrate with service hooks](overview.md)
