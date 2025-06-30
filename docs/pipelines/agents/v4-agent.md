@@ -56,7 +56,7 @@ The following operating systems are supported by the 4.x agent.
 
 ## Upgrade to 4.x agent on unsupported operating systems
 
-If you're running your self-hosted agents on an operating system that isn't supported by .NET 8, you must update your machines to use a newer supported operating system [supported by .NET 8](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions).
+If you're running your self-hosted agents on an operating system that isn't supported by .NET 8, you must update your machines to use a newer supported operating system [supported by .NET 8](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions). After updating, SEE [Update self-hosted agents](./agents.md#to-update-self-hosted-agents) for instructions on how to update your agents to the 4.x version.
 
 The following list of operating systems were supported for self-hosted 3.x agents, but aren't supported by .NET 8 and can't be used to run version 4.x agents.
 
