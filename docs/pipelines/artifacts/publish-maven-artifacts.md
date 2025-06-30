@@ -78,9 +78,15 @@ Azure Pipelines enables developers to publish Maven artifacts to Azure Artifacts
 
 ## Publish packages to a feed in a different organization
 
-To publish packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization.
+To publish packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization, and then use that PAT to create a service connection and authenticate with the target feed.
 
-Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope. Make sure to copy your personal access token as you'll need it in the following section.
+#### Create a personal access token
+
+1. Navigate to the organization that hosts the target feed.
+
+1. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope.
+
+1.  Copy your personal access token as you'll need it in the following section.
 
 #### Create a service connection
 
