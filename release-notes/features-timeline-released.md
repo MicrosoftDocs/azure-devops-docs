@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/16/2025
+ms.date: 6/30/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -38,6 +38,15 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="6"><a href="2025/sprint-258-update.md" data-raw-source="[30 June 2025](2025/sprint-258-update.md)"> June 30 2025</a></td>
+    <td>Azure DevOps MCP Server public preview</td><td>General</td><td>N/A</td></tr>
+    <td>New organizations won't offer public projects</td><td>General</td><td>N/A</td></tr>
+    <td>One click enablement for dependency scanning now in public preview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Service hooks for GitHub Advanced Security for Azure DevOps alerts generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Syntax highlighting support for Kusto Query Language</td><td>Repos</td><td>Future</td></tr>
+    <td>Ability to associate Java, JavaScript and Python tests to manual test cases</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
     <td rowspan="14"><a href="2025/sprint-257-update.md" data-raw-source="[16 June 2025](2025/sprint-257-update.md)"> June 16 2025</a></td>
     <td>GitHub Advanced Security is now available as GitHub Secret Protection and Code Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Restrict personal access token (PAT) creation organization policy now in public preview</td><td>General</td><td>Future</td></tr>
@@ -54,7 +63,6 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>View Test Case State in Execute tab</td><td>Test Plans</td><td>Future</td></tr>
     <td>Default resume for paused test case</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
-
 <tr>
     <td rowspan="7"><a href="2025/sprint-256-update.md" data-raw-source="[19 May 2025](2025/sprint-256-update.md)"> May 19 2025</a></td>
     <td>Advanced Security now accepts results with URI locations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
