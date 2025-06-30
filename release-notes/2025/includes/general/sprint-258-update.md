@@ -19,7 +19,8 @@ Here are just a few examples of what you can do with the Azure DevOps MCP Server
 
 Check out this demo showing how to create iterations and assign them to a team:
 
-🎥 [mcp-demo-create-iterations.mp4](https://mseng.visualstudio.com/b924d696-3eae-4116-8443-9a18392d8544/_apis/wit/attachments/42de9cfe-c40d-4097-b8b3-fa6a0d68d232?fileName=mcp-demo-create-iterations.mp4&download=true)
+> [!div class="mx-imgBorder"]
+> ![Azure DevOp MCP Server demo.](../../media/258-boards-01.gif "Azure DevOp MCP Server demo")
 
 Ready to get started? Visit the [Azure DevOps MCP Server repository](https://github.com/microsoft/azure-devops-mcp) for installation instructions, examples, and contribution guidelines.
 
