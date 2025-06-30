@@ -23,8 +23,6 @@
     displayname: backlog level, view options, rollup, parents, forecasting, mapping, completed, expand, collapse, filter
   - name: Automate work item state transitions
     href: automate-work-item-state-transitions.md
-  - name: Set up your backlogs & boards
-    href: set-up-your-backlog.md
   - name: Change column options
     href: set-column-options.md
   - name: Display rollup progress bars or totals

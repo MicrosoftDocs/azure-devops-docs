@@ -66,7 +66,7 @@ When you select a backlog level, it defaults to a **collapsed view**, displaying
 The number of backlog levels available to you gets determined by your team administrator and might include custom work item types or other backlog levels tailored to your team's needs. Each backlog automatically applies the filters associated with the **Area paths** and **Iteration paths** selected for the team.
 
 > [!NOTE]  
-> Before using the tools described in this article, we recommend reviewing [Set up your project's backlogs and boards](set-up-your-backlog.md) to ensure your backlog configurations support your team's requirements.
+> Before using the tools described in this article, we recommend reviewing [Create your backlog](create-your-backlog.md) to ensure your backlog configurations support your team's requirements.
 
 From the **Backlogs** page, you can choose between a **Product Backlog** or a **Portfolio backlog**. To select a backlog, use the backlog level selector located next to the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **View options** icon. The labels within this selector vary based on the process model selected for your project, any customizations made to that process, and configurations set by your team administrator, as illustrated in the following images. 
 
@@ -337,8 +337,7 @@ Parent work items can include:
 
 ## Related articles
 
-- [Set up your project's backlogs and boards](set-up-your-backlog.md)
-- [Create your product backlog](create-your-backlog.md)  
+- [Create and manage your backlog](create-your-backlog.md)  
 - [Define features and epics](define-features-epics.md)  
 - [Organize your backlog and map child work items to parents](organize-backlog.md) 
 - [Configure team settings](../../organizations/settings/manage-teams.md)  

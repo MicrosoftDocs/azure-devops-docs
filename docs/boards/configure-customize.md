@@ -514,6 +514,6 @@ For more information on configuring backlogs and boards, see [Manage and configu
 ## Related articles
 
 - [Configuration and Customization FAQs](../organizations/settings/work/faqs.yml)
-- [Set up your Backlogs and Boards](backlogs/set-up-your-backlog.md)  
+- [Set up your backlog](backlogs/create-your-backlog.md)  
 - [Inherited process model](../organizations/settings/work/inheritance-process-model.md)  
 - [Manage and configure team tools](../organizations/settings/manage-teams.md)

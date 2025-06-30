@@ -207,6 +207,6 @@ Unparenting a work item removes its association with a parent backlog item or us
 ## Related articles
 
 - [Assign backlog items to a sprint](assign-work-sprint.md)  
-- [Setup your Backlogs & Boards](../backlogs/set-up-your-backlog.md)  
+- [Create and manage your backlog](../backlogs/create-your-backlog.md)  
 - [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)   
 - [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)

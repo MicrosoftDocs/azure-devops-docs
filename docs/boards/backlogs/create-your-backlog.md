@@ -1,5 +1,5 @@
 ---
-title: Create and manage your product backlog in Azure Boards
+title: Create and manage your product backlog
 titleSuffix: Azure Boards
 description: Learn how to create, configure, and manage your product backlog in Azure Boards. Add backlog items, set up boards, and customize work item tracking.
 ms.custom: boards-backlogs
@@ -9,11 +9,11 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/27/2025
+ms.date: 06/30/2025
 #customer intent: As a team member, I want to understand how to create and manage backlogs in Azure Boards to improve my team's workflow.
 ---
 
-# Create and manage your backlog in Azure Boards
+# Create and manage your backlog
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -319,8 +319,7 @@ Choose to hide Completed child items when you want to forecast work. For more in
 
 ::: moniker-end
 
-Your product backlog is one of three classes of backlogs available to you, *backlogs*, *boards*, and *plans*. If you don't see the work items you expect on your backlog, see [Set up your backlogs and boards](set-up-your-backlog.md).
-
+Your product backlog is one of three classes of backlogs available to you, *backlogs*, *boards*, and *plans*.
 ## Next steps
 
 With your backlog in place, your team can begin work on the top-priority items. Now it's time to decide how you want to work as a team. Do you want to use Scrum or Kanban? You can use these methods independently or together.
