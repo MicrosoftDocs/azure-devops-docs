@@ -9,7 +9,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2025
+ms.date: 06/27/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -148,9 +148,14 @@ Do the following steps to:
 
 You can revoke a PAT at any time for these and other reasons:
 
-- Revoke a PAT if you suspect it is compromised.
-- Revoke a PAT when it is no longer needed.
-- Revoke a PAT to enforce security policies or compliance requirements.
+- **Security breach**: Revoke a PAT immediately if you suspect it is compromised, leaked, or exposed in logs or public repositories.
+- **No longer needed**: Revoke a PAT when the project, service, or integration it was created for is complete or discontinued.
+- **Policy compliance**: Revoke a PAT to enforce security policies, compliance requirements, or organizational token rotation schedules.
+- **User changes**: Revoke a PAT when a team member leaves the organization or changes roles and no longer needs access.
+- **Scope reduction**: Revoke and recreate a PAT with reduced permissions when you need to limit its access capabilities.
+- **Regular maintenance**: Revoke a PAT as part of routine security hygiene and token lifecycle management.
+
+Do the following steps to revoke a PAT:
 
 1. From your home page, open user settings :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
@@ -255,19 +260,22 @@ A: All PATs are associated with the user identity that created it. Applications 
 In Azure DevOps, you can generate access tokens that aren't linked to a specific user by using Microsoft Entra tokens issued by an [application service principal or managed identity](../../integrate/get-started/authentication/service-principal-managed-identity.md). For pipelines, use [service connections](../../pipelines/library/service-endpoints.md) to securely authenticate and authorize automated tasks without relying on user-specific credentials.
 
 ### Q: How can I regenerate/rotate PATs through the API? I saw that option in the UI, but I don’t see a similar method in the API.
-The 'Regenerate' functionality available in the UI actually accomplishes a few actions, which can be replicated through API. 
+A: The 'Regenerate' functionality available in the UI actually accomplishes a few actions, which can be replicated through API. 
 
 To rotate your PAT, do the following steps:
 1. See PAT metadata with a **GET** call, 
 2. Create a new PAT with the old PAT ID using a **POST** call, 
 3. Revoke the old PAT using a **DELETE** call.
 
+### Q: How long do expired, revoked, or inactive PATs remain visible in the Azure DevOps token list?
+
+A: PATs that are expired or revoked can no longer be used or regenerated. These inactive tokens stay visible for several months after expiration or revocation before being automatically removed from the display.
+
 ### Q: I see a "Need admin approval" pop-up when I try to use a Microsoft Entra app to call the PAT Lifecycle Management APIs.
-Your tenant's security policies require admin consent before applications can access organization resources in the organization. Reach out to your tenant administrator.
+A: Your tenant's security policies require admin consent before applications can access organization resources in the organization. Reach out to your tenant administrator.
 
 ### Q: Can I use a service principal to create or manage PATs?
-No, personal access tokens belong to a user identity. Microsoft Entra [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) are able to generate short-lived Microsoft Entra tokens that can be used in most places where a PAT is accepted. Learn more about [our efforts to reduce PAT usage across Azure DevOps](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) and explore replacing PATs with Microsoft Entra tokens.
-
+A: No, PATs belong to a user identity. Microsoft Entra [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) can generate short-lived Microsoft Entra tokens that you can use in most places where a PAT is accepted. Learn more about [our efforts to reduce PAT usage across Azure DevOps](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) and explore replacing PATs with Microsoft Entra tokens.
 
 ## Related articles
 

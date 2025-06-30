@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 06/16/2025
+  ms.date: 06/27/2025
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
@@ -51,7 +51,8 @@ sections:
         answer: |
           A: They might need a different [access level](../security/access-levels.md#supported-access-levels) assigned, in addition to permissions granted through security groups. For example, [Stakeholder access](../security/stakeholder-access.md) access level provides partial support to select features, allowing users to view and modify work items, but not to use all features.
 
-      - question: I accidentally removed my permissions and am unable to grant them again. What should I do?
+      - question: |
+          Q: I accidentally removed my permissions and am unable to grant them again. What should I do?
         answer: |
           A: The only way to resolve this scenario is to [Request an increase in permission levels](../security/request-changes-permissions.md).
 
@@ -108,9 +109,9 @@ sections:
           ![Screenshot shows GitHub Enterprise listed as user's access level in Organization settings, Users page.](media/faq/github-enterprise.png)
 
       - question: |
-          Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?
+          Q: How are GitHub Enterprise users detected?
         answer: |
-          A: No, only GitHub Enterprise cloud users are detected in Azure DevOps. Customers using GitHub Server can [sync license usage between GitHub Enterprise Server and GitHub Enterprise Cloud](https://docs.github.com/enterprise-server@3.15/billing/managing-your-license-for-github-enterprise/syncing-license-usage-between-github-enterprise-server-and-github-enterprise-cloud).
+          A: Azure DevOps automatically checks if a user has GitHub Enterprise when the user signs in. It can take up to 24 hours for their access level to change to GitHub Enterprise. There are no charges for a user with the GitHub Enterprise access level.
 
       - question: |
           Q: What kind of access do GitHub Enterprise users get in Azure DevOps?
@@ -118,19 +119,28 @@ sections:
           A: Basic access, which includes all features except Test Plans. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
       - question: |
-          Q: How are GitHub Enterprise users detected?
+          Q: What if a GitHub Enterprise user needs access to Test Plans?
         answer: |
-          A: Azure DevOps automatically checks if a user has GitHub Enterprise when the user signs in. It can take up to 24 hours for their access level to change to GitHub Enterprise. There are no charges for a user with the GitHub Enterprise access level.
+          A: GitHub Enterprise users who need access to Test Plans can be assigned the Basic + Test Plans access level. 
+
+      - question: |
+          Q: What happens when a GitHub Enterprise license is no longer detected?
+        answer: |
+          A: When a user no longer has GitHub Enterprise, they're treated like a new user.  
+          - Your organization's default access level, whether Basic or Basic + Test Plans, gets assigned automatically. 
+          - If your organization established Group Rules, the user receives the access specified for their Microsoft Entra group. Group rule reevaluation occurs every 24 hours, so they might initially have Stakeholder access before receiving group rule access. 
+          
+          Otherwise, users who no longer have access through GitHub Enterprise maintain Stakeholder access until an administrator assigns them paid access. 
+      
+      - question: |
+          Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?
+        answer: |
+          A: No, only GitHub Enterprise cloud users are detected in Azure DevOps. Customers using GitHub Server can [sync license usage between GitHub Enterprise Server and GitHub Enterprise Cloud](https://docs.github.com/enterprise-server@3.15/billing/managing-your-license-for-github-enterprise/syncing-license-usage-between-github-enterprise-server-and-github-enterprise-cloud).
 
       - question: |
           Q: What access level should I select if a user has a GitHub Enterprise license?
         answer: |
           A: If you know a user has a GitHub Enterprise license, the best option to choose is Stakeholder, to avoid any charges for Basic before the user signs in for the first time
-
-      - question: |
-          Q: What if a GitHub Enterprise user needs access to Test Plans?
-        answer: |
-          A: GitHub Enterprise users who need access to Test Plans can be assigned the Basic + Test Plans access level. 
 
       - question: |
           Q: What if a GitHub Enterprise user also has a Visual Studio subscription?
@@ -382,7 +392,7 @@ sections:
       - question: |
           Q: Why don't users appear or disappear promptly in Azure DevOps after I add or delete them in the Users hub?
         answer: |
-          A: If you experience delays finding new users or gettings deleted users promptly removed from Azure DevOps (for example, in drop-down lists and groups) after you add or delete users, [file a problem report on Developer Community](https://go.microsoft.com/fwlink/?LinkId=820594) so we can investigate.
+          A: If you experience delays finding new users or getting deleted users promptly removed from Azure DevOps (for example, in drop-down lists and groups) after you add or delete users, [file a problem report on Developer Community](https://go.microsoft.com/fwlink/?LinkId=820594) so we can investigate.
           
           <a name="ChooseOrgAcctMSAcct"></a>
           
