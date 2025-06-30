@@ -17,16 +17,6 @@ We’ve introduced a new organization-level policy in Azure DevOps—Restrict pe
 
 As we prepare for the end-of-life for Azure DevOps OAuth apps in 2026, we'll begin regularly removing apps with secrets that have expired more than six months ago (180 days ago). App owners of these inactive apps will be informed and if there’s any further need for the app registration between now and Azure DevOps OAuth’s end-of-life in 2026, you are asked to rotate the app secret before June 9 when we begin app deletions. [Learn more in our blog post](https://devblogs.microsoft.com/devops/spring-cleaning-cta-for-azure-devops-oauth-apps-with-expired-or-long-living-secrets/).
 
-### Azure DevOps login flow no longer relies on Azure Resource Manager audience
-
-We've removed a dependency on the Azure Resource Manager (ARM) resource when logging in or refreshing Entra access tokens used to access Azure DevOps. The ARM resource is often associated with the [Azure portal](https://portal.azure.com), and admins may want to restrict which users in their tenant can access the portal through Conditional Access policy (CAP) enforcement.
-
-Due to ADO's previous reliance on ARM, admins had to permit all ADO users to bypass the ARM CAPs in order to use ADO. This is no longer necessary as we've removed the ARM resource audience requirement during signin and refresh token flows. 
-
-There remain a couple of notable exceptions. The following ​user groups may need continued access to ARM:
-1. Billing admins need access to ARM to setup billing and access subscriptions
-2. Service Connection creators require continued access to ARM for ARM role assignment and updates to MSIs.
-
 ### New Microsoft Entra OAuth scopes
 Azure DevOps has introduced two new Microsoft Entra OAuth scopes, vso.pats and vso.pats_manage to enhance security and control over personal access token (PAT) lifecycle management APIs. These scopes are now required for delegated flows that involve PAT creation and management, replacing the previously broad user_impersonation scope. This change enables app owners to reduce the permissions needed by their app to access PAT APIs. Downscope your `user_impersonation` apps to the minimum scopes needed today!
 
