@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Release triggers are an automation tool that can be used in your deployment workflow to initiate actions when specific conditions are met. after certain conditions are met. Classic release pipelines support several types of triggers, which we'll cover in this article:
+Release triggers are an automation tool that can be used in your deployment workflow to initiate actions when specific conditions are met. Classic release pipelines support several types of triggers, which we'll cover in this article:
 
 - [Continuous deployment triggers](#continuous-deployment-triggers)
 
