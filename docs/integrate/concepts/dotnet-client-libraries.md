@@ -1,14 +1,16 @@
 ---
 title: .NET client libraries
-description: Easily integrate with Azure DevOps from apps and services on Windows.
+description: Learn how to use Azure DevOps .NET client libraries to integrate work items, Git repositories, builds, and pipelines into your C# applications and Windows services.
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
+ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
 ms.custom: devx-track-dotnet
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/20/2025
+ms.date: 07/02/2025
+#customer intent: As a .NET developer, I want to integrate my C# applications with Azure DevOps services like work items, Git repositories, builds, and pipelines using official client libraries and REST APIs.
 ---
 
 # .NET client libraries
@@ -40,8 +42,6 @@ The following table maps the package versions of the .NET client libraries to th
 |---------------|---------------------|
 |16.205.x| `versions >= Azure DevOps Server 2022` |
 |16.170.x| `versions >= Azure DevOps Server 2020`|
-|16.153.x| `versions >= Azure DevOps Server 2019 Update 1`|
-|16.143.x| `versions >= Azure DevOps Server 2019`|
 
 For the latest preview versions, see the [NuGet packages gallery](https://www.nuget.org/packages?q=azure+devops+.net).
 
@@ -69,7 +69,7 @@ The following table lists the .NET client libraries available for accessing vari
 |[Microsoft.Azure.Pipelines.Policy.Client](https://www.nuget.org/packages/Microsoft.Azure.Pipelines.Policy.Client/)<br/>Provides access to the pipeline approvals, checks, and authorization via public REST APIs. |`Microsoft.Azure.Pipelines.Policy.Client.dll` |
 
 > [!TIP]
-> If you have an existing Windows application or service that uses the TFS Client Object Model, use `Microsoft.TeamFoundationServer.ExtendedClient`. This package provides access to the older SOAP-based APIs, which are necessary for certain functionalities not available in the newer REST APIs. However, this package doesn't support .NET Standard and is intended for use only when the REST APIs don't offer the required functionality.
+> **Legacy SOAP APIs**: If you have an existing Windows application that uses the TFS Client Object Model, use `Microsoft.TeamFoundationServer.ExtendedClient` for SOAP-based APIs. This package is only recommended when REST APIs don't provide the specific functionality you need (such as TFVC workspace creation). This package doesn't support .NET Standard and Microsoft is no longer investing in SOAP-based APIs.
 
 ## Soap package
 
@@ -190,7 +190,7 @@ async void InitAzureDevOps()
 
 ### Using NetStandard 2.0 versions of the Azure DevOps OM
 
-For version 16.143.1 of our NuGet packages, we support NetStandard 2.0. These packages correlate with Azure DevOps Server 2019 RTW and are fully compatible with Azure DevOps.
+For version 16.143.1 of our NuGet packages, we support NetStandard 2.0. These packages correlate with Azure DevOps Server and are fully compatible with Azure DevOps.
 
 ### Microsoft.TeamFoundationServer.ExtendedClient package doesn't have NetStandard support
 
