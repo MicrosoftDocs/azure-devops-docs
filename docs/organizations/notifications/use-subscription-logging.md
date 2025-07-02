@@ -1,26 +1,24 @@
 ---
-title: How to enable subscription logging
+title: Use subscription logging to troubleshoot notifications
 titleSuffix: Azure DevOps 
-description: How to use subscription logging to troubleshoot Azure DevOps Services notifications
+description: Enable subscription logging and access diagnostic logs to troubleshoot notification issues in Azure DevOps.
 ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
-ms.date: 01/22/2020  
+ms.topic: how-to
+ms.date: 07/02/2025  
 monikerRange: '<= azure-devops'
+#customer intent: As a project member, I want to enable subscription logging and access diagnostic logs so that I can troubleshoot notification delivery issues in Azure DevOps.
 ---
 
-
-# How to enable subscription logging for troubleshooting
+# Use subscription logging to troubleshoot notifications
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
- For certain activities, when you select **Team members by role**, you can choose to have the user that initiated the activity receive a notification. This notification is controlled by the **Skip initiator** checkbox. By default, this box is checked, meaning the user that starts the change isn't notified about it.
-
-Subscription logging is a valuable tool for troubleshooting. It provides diagnostic information from the notifications pipeline and is disabled by default. Once enabled, up to 25 logs, or one hour's worth of logs, are collected for the subscription.
+Subscription logging helps you troubleshoot notification issues by providing diagnostic information from the notifications pipeline. This feature is disabled by default. When enabled, Azure DevOps collects up to 25 logs or one hour's worth of diagnostic data for the subscription, whichever limit is reached first.
 
 ## Prerequisites
 
@@ -28,44 +26,41 @@ Subscription logging is a valuable tool for troubleshooting. It provides diagnos
 
 ## Enable subscription logging
 
-To enable subscription logging, complete the following steps:
+1. Go to the notifications page with diagnostics enabled by entering this URL in your browser:
 
-1. Enable diagnostics for your organization by entering the following URL in your browser:
+    `https://dev.azure.com/{Your_Organization}/_notifications?diagnostics=true`
 
-    `https://dev.azure.com/{organization}/_notifications?diagnostics=true`
+    Replace `{Your_Organization}` with your organization name (for example, `https://dev.azure.com/contoso/_notifications?diagnostics=true`).
 
-2. The option _Enable Diagnostics_ appears in the subscription context menu.
+2. On the notifications page, locate the subscription you want to debug and select its context menu (three dots).
+
+3. Select **Enable Diagnostics** from the menu to start collecting logs for that subscription.
 
 > [!div class="mx-imgBorder"] 
 >![Screenshot shows enabled subscription logging.](media/enable-subscription-logging.png)
 
-## View subscription diagnostic logs for event matching
+## View subscription diagnostic logs
 
-Get all subscription event processing logs by entering the following URL in your browser:
+Access subscription diagnostic logs directly using API calls. Enter the following URL in your browser:
 
-`https://dev.azure.com/{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
+`https://dev.azure.com/{Your_Organization}/_apis/notification/DiagnosticLogs/{eventID}/entries?startTime={date}&endTime={date}`
 
-* _organization_ is your organization (for example, dev.azure.com/fabrikam-fiber)
-* _date_ is a date time specification (for example, **2018-06-29** or **2018-06-29 02:00**)
-* _event ID_ is **915f48f2-1b64-40d9-a43f-fe2528b4f296** for work item events, or
-* _event ID_ is **9a688110-9e33-4cdc-affd-75d16303e7f1** for Git events, or
-* _event ID_ is **a4804dcf-4bb6-4109-b61c-e59c2e8a9ff7** for any other event type
+**Parameters:**
+* `{Your_Organization}` - Your organization name (for example, `contoso`)
+* `{date}` - Date and time in format `YYYY-MM-DD` or `YYYY-MM-DD HH:MM` (for example, `2025-07-02` or `2025-07-02 14:30`)
+* `{eventID}` - Use the appropriate event ID based on the type of logs you need:
 
-The result is JSON-formatted logging information.
+**Event matching logs:**
+* `915f48f2-1b64-40d9-a43f-fe2528b4f296` for work item events
+* `9a688110-9e33-4cdc-affd-75d16303e7f1` for Git events  
+* `a4804dcf-4bb6-4109-b61c-e59c2e8a9ff7` for other event types
 
-## View subscription diagnostic logs for notification delivery
+**Notification delivery logs:**
+* `631f49b3-46e1-42ec-8fff-081bd176c18a` for work item events
+* `8833fc71-42ca-441b-ab12-25314877772d` for Git events
+* `a96d6177-beef-477a-a2ee-2c31433214d0` for other event types
 
-Retrieve all notification delivery logs in a given time frame by entering the URL in your browser.
-
-`https://dev.azure.com/{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
-
-* _organization_ is your organization (for example, dev.azure.com/fabrikam-fiber)
-* _date_ is a date time specification (for example, **2018-06-29** or **2018-06-29 02:00**)
-* _event ID_ is **631f49b3-46e1-42ec-8fff-081bd176c18a** for work item events, or
-* _event ID_ is **8833fc71-42ca-441b-ab12-25314877772d** for Git events, or
-* _event ID_ is **a96d6177-beef-477a-a2ee-2c31433214d0** for any other event type
-
-The result is JSON-formatted logging information.
+Returns JSON-formatted diagnostic information.
 
 ## Related articles
 
