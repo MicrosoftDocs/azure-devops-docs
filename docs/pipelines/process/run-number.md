@@ -1,5 +1,5 @@
 ---
-title: Run and build numbers
+title: Configure run and build numbers
 description: Learn about Azure Pipelines run numbers and build numbers and how you can configure them in your pipelines.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how Azure Pipelines build numbers and run numbers are constructed, and how you can customize them in your pipelines.
+Azure Pipelines assigns a unique run number (also called a build number) to each pipeline execution. You can customize these numbers to make them more meaningful for your team, using variables, tokens, and naming patterns.
 
 The run number is used to identify a specific execution of a pipeline or build. The build number is synonymous with the run number. 
 
@@ -19,18 +19,15 @@ If you don't specify a build name in YAML pipelines, or you leave the **Name** f
 
 ::: moniker range=">=azure-devops-2020"
 
-In YAML pipelines, the build name property is called `name` and must be at the root level of a pipeline. Items specified at the root level of a YAML file are [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) properties.
+You can only customize the run number at the root level of your pipeline using the `name` property. Set the `name` property at the [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) level. The `name` property isn't supported in templates or stages.
 
->[!NOTE]
->The `name` property doesn't work in template files. 
-
-The following example code outputs a customized build number like **project_def_master_202408281**.
+The following code sets a custom run number format like `project_def_main_202408281`:
 
 ```yaml
-name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:r)
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
 
 steps:
-  - script: echo '$(Build.BuildNumber)'
+  - script: echo '$(Build.BuildNumber)'  
 ```
 
 ::: moniker-end
@@ -87,7 +84,7 @@ The following table shows how each token resolves, based on the previous example
 >[!IMPORTANT]
 >If you want to show prefix zeros in the run number, you can add more `r` characters to the `Rev` token. For example, specify `$(Rev:rr)` if you want the `Rev` number to begin with `01`, `02`, and so on.
 >
->If you use a zero-padded `Rev` as part of a version numbering scheme, be aware that some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros. This behavior causes a version number mismatch in the artifacts that are produced.
+>If you use a zero-padded `Rev` as part of a version numbering scheme, some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros. This behavior causes a version number mismatch in the artifacts that are produced.
 
 ## Expressions
 
@@ -154,7 +151,7 @@ steps:
 
 ### How can I reference the run number variable within a script?
 
-You can define a new variable that includes the run number, or call the run number directly. In the following example, `$(MyRunNumber)` is a new variable that includes the run number. You can call the run number variable by using `MyRunNumber` or `$(Build.BuildNumber)`.
+You can reference the run number directly as `$(Build.BuildNumber)` in your scripts, or create a custom variable that includes it. For example:
 
 ```yaml
 # Set MyRunNumber
