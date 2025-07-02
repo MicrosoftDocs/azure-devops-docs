@@ -1,14 +1,16 @@
 ---
 title: .NET client libraries
-description: Easily integrate with Azure DevOps from apps and services on Windows.
+description: Learn how to use Azure DevOps .NET client libraries to integrate work items, Git repositories, builds, and pipelines into your C# applications and Windows services.
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
+ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
 ms.custom: devx-track-dotnet
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/20/2025
+ms.date: 07/02/2025
+#customer intent: As a .NET developer, I want to integrate my C# applications with Azure DevOps services like work items, Git repositories, builds, and pipelines using official client libraries and REST APIs.
 ---
 
 # .NET client libraries
@@ -40,8 +42,6 @@ The following table maps the package versions of the .NET client libraries to th
 |---------------|---------------------|
 |16.205.x| `versions >= Azure DevOps Server 2022` |
 |16.170.x| `versions >= Azure DevOps Server 2020`|
-|16.153.x| `versions >= Azure DevOps Server 2019 Update 1`|
-|16.143.x| `versions >= Azure DevOps Server 2019`|
 
 For the latest preview versions, see the [NuGet packages gallery](https://www.nuget.org/packages?q=azure+devops+.net).
 
@@ -69,7 +69,7 @@ The following table lists the .NET client libraries available for accessing vari
 |[Microsoft.Azure.Pipelines.Policy.Client](https://www.nuget.org/packages/Microsoft.Azure.Pipelines.Policy.Client/)<br/>Provides access to the pipeline approvals, checks, and authorization via public REST APIs. |`Microsoft.Azure.Pipelines.Policy.Client.dll` |
 
 > [!TIP]
-> If you have an existing Windows application or service that uses the TFS Client Object Model, use `Microsoft.TeamFoundationServer.ExtendedClient`. This package provides access to the older SOAP-based APIs, which are necessary for certain functionalities not available in the newer REST APIs. However, this package doesn't support .NET Standard and is intended for use only when the REST APIs don't offer the required functionality.
+> **Legacy SOAP APIs**: If you have an existing Windows application that uses the TFS Client Object Model, use `Microsoft.TeamFoundationServer.ExtendedClient` for SOAP-based APIs. This package is only recommended when REST APIs don't provide the specific functionality you need (such as TFVC workspace creation). This package doesn't support .NET Standard and Microsoft is no longer investing in SOAP-based APIs.
 
 ## Soap package
 
@@ -99,20 +99,21 @@ using Microsoft.VisualStudio.Services.Client;
 using Microsoft.TeamFoundation.SourceControl.WebApi;
 using Microsoft.VisualStudio.Services.WebApi;
 
-const String c_collectionUri = "https://dev.azure.com/fabrikam";
-const String c_projectName = "MyGreatProject";
-const String c_repoName = "MyRepo";
+const string collectionUri = "https://dev.azure.com/fabrikam";
+const string projectName = "MyGreatProject";
+const string repoName = "MyRepo";
+const string accessToken = "your-microsoft-entra-id-token";
 
-Uri orgUrl = new Uri(c_collectionUri);
+Uri orgUrl = new Uri(collectionUri);
 
-// Connect to Azure DevOps Services
-VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, personalAccessToken));
+// Connect to Azure DevOps using Microsoft Entra ID token
+VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, accessToken));
 
 // Get a GitHttpClient to talk to the Git endpoints
 using (GitHttpClient gitClient = connection.GetClient<GitHttpClient>())
 {
     // Get data about a specific repository
-    var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+    var repo = gitClient.GetRepositoryAsync(projectName, repoName).Result;
 }
 ```
 
@@ -131,13 +132,13 @@ namespace ConsoleApp1
         const string collectionUri = "https://dev.azure.com/fabrikam";
         const string projectName = "MyGreatProject";
         const string repoName = "MyRepo";
-        const string pat = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        const string accessToken = "your-microsoft-entra-id-token";
 
         static void Main(string[] args)
         {
-            var creds = new VssBasicCredential(string.Empty, pat);
+            var creds = new VssBasicCredential(string.Empty, accessToken);
             
-            // Connect to Azure DevOps Services
+            // Connect to Azure DevOps Services using Microsoft Entra ID token
             var connection = new VssConnection(new Uri(collectionUri), creds);
             
             // Get a GitHttpClient to talk to the Git endpoints
@@ -150,6 +151,9 @@ namespace ConsoleApp1
 }
 
 ```
+
+> [!TIP]
+> **Microsoft Entra ID authentication**: The previous examples use Microsoft Entra ID tokens for authentication. For more information, see [Authenticate to Azure DevOps using Microsoft Entra](../get-started/authentication/entra.md).
 
 For more authentication samples, see [.NET Samples](../get-started/client-libraries/samples.md).
 
@@ -190,7 +194,7 @@ async void InitAzureDevOps()
 
 ### Using NetStandard 2.0 versions of the Azure DevOps OM
 
-For version 16.143.1 of our NuGet packages, we support NetStandard 2.0. These packages correlate with Azure DevOps Server 2019 RTW and are fully compatible with Azure DevOps.
+For version 16.143.1 of our NuGet packages, we support NetStandard 2.0. These packages correlate with Azure DevOps Server and are fully compatible with Azure DevOps.
 
 ### Microsoft.TeamFoundationServer.ExtendedClient package doesn't have NetStandard support
 
