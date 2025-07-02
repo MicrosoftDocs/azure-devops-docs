@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-To control access to your team's critical resources and key business assets in Azure DevOps Services, use Microsoft services like Microsoft 365 or [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/). [Microsoft Entra ID works with your organization](access-with-azure-ad.md) to control access and authenticate users.
+To control access to your team's critical resources and key business assets in Azure DevOps Services, use Microsoft services like Microsoft 365 or [Microsoft Entra ID](/entra/fundamentals/whatis). [Microsoft Entra ID works with your organization](access-with-azure-ad.md) to control access and authenticate users.
 
 Organize your directory members with [Microsoft Entra groups](/azure/active-directory/fundamentals/active-directory-manage-groups) and manage permissions in bulk for your organization. Add these groups to built-in groups like Project Collection Administrators or Contributors, or to custom groups like your project management team. Microsoft Entra group members inherit permissions from the Azure DevOps group, so you don't have to manage group members individually.
 

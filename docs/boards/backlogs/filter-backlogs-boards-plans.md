@@ -54,7 +54,7 @@ Filter functions are available from all Azure Boards tools: Work items, Boards, 
 
 The following table indicates the supported options based on the tool indicated with a ✔️ or is listed. 
 
-Backlogs and boards are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). Other tools have predefined filters based on the view, query filter clauses, or settings you select.
+Backlogs and boards are subject to filters defined for the team as described in [Create and manage your backlog](create-your-backlog.md). Other tools have predefined filters based on the view, query filter clauses, or settings you select.
 
 :::row:::
    :::column span="1.5":::
@@ -507,7 +507,7 @@ Along with the standard filter functions summarized in the previous table, the f
   
 
 **Notes**
-1. The **Work items** page is subject to filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). **Boards** and **Backlogs** are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). Completed and In Progress work items get determined based on the state categories assigned to the workflow state as described in [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md#category-states). 
+1. The **Work items** page is subject to filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). **Boards** and **Backlogs** are subject to filters defined for the team. Completed and In Progress work items get determined based on the state categories assigned to the workflow state as described in [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md#category-states). 
 2. Grouping is supported through portfolio backlogs and boards, parent-child links, and tree hierarchy. Tree hierarchies are flattened when filtering is applied and reinstated when filtering is cleared.  
 3. **Backlogs** and **Sprint Backlogs** support reordering. However, when filtering is enabled, reordering isn't supported.
 4. **Taskboards** provides a **Group by** function based on **People** or **Stories**.  
@@ -753,7 +753,7 @@ For more information, see [Query work item history and discussion fields](../que
 
 ## Related articles  
 
-- [Set up your Backlogs and Boards](set-up-your-backlog.md)
+- [Create and manage you backlog](create-your-backlog.md)
 - [About backlogs](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items)
 - [Change column options](set-column-options.md)
 - [Display rollup progress or totals](display-rollup.md) 
