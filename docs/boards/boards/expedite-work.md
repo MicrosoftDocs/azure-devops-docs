@@ -11,7 +11,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/03/2024
+ms.date: 07/02/2025
 ---
 
 # Expedite work using swimlanes
@@ -40,7 +40,7 @@ You can drag items into a swimlane and reorder them within the swimlane.
 
 > [!TIP]  
 > - Enter `o` to expand all swimlanes and `u` to collapse all swimlanes. To move the focus up or down, enter the `↑↓` up/down arrows. For more information, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
-> - When you have many swimlanes or cards on your board, you may encounter slow performance when dragging a card. We recommend that you use swimlanes in conjunction with card styles, tags, and board filters to manage your work items. If you have a lot of cards in the default lane, place that lane lower on the board to enhance performance when dragging a card to another swimlane.  
+> - When you have many swimlanes or cards on your board, you might encounter slow performance when dragging a card. We recommend that you use swimlanes with card styles, tags, and board filters to manage your work items. If you have numerous cards in the default lane, place that lane lower on the board to enhance performance when dragging a card to another swimlane.  
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of board and dragging items into a swimlane.](media/expedite/swimlanes-move-item.png)
@@ -106,7 +106,7 @@ Identify the swimlanes that support your tracking needs and add them to your boa
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing board settings dialog, Reorder a swimlane.](media/expedite/swimlanes-reorder.png)  
 
-5. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Remove**. 
+5. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and select **Remove**. 
 	
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing board settings dialog, Remove a swimlane.](media/expedite/swimlanes-remove.png)  
@@ -114,6 +114,8 @@ Identify the swimlanes that support your tracking needs and add them to your boa
 6. When you're done with your changes, choose **Save**.  
 
 ::: moniker-end 
+
+::: moniker range="azure-devops"
 
 ## Set up swimlane rules
 
@@ -179,6 +181,8 @@ The following examples show some of the ways you can use and set up swimlane rul
   **Board results**
   
   :::image type="content" source="media/expedite/board-assigned-to-swimlanes.png" alt-text="Screenshot showing swimlanes grouped by priority.":::
+
+::: moniker-end
 
 ## Query for work items based on swimlane
 
