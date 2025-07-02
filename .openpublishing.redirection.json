@@ -7186,6 +7186,10 @@
     {
       "source_path": "docs/organizations/accounts/get-list-of-organizations-connected-to-azure-active-directory.md",
       "redirect_url": "/azure/devops/organizations/accounts/get-list-of-organizations-connected-to-microsoft-entra-id"
+    },
+    {
+      "source_path": "docs/boards/backlogs/set-up-your-backlog.md",
+      "redirect_url": "/azure/devops/boards/backlogs/create-your-backlog"
     }
   ]
 }
