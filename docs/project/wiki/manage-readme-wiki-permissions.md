@@ -9,9 +9,9 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ai-usage: ai-assisted
-ms.date: 06/05/2025
+ms.date: 07/02/2025
 monikerRange: "<=azure-devops"
-#cutsomer intent: As an Azure DevOps developer, I want to manage permissions for README files and my team project wiki to ensure secure access for users.
+#customer intent: As an Azure DevOps developer, I want to manage permissions for README files and my team project wiki to ensure secure access for users.
 ---
 
 # Manage wiki permissions
@@ -26,13 +26,15 @@ By default, all project Contributors have "read" and "edit" access to the Git re
 
 1. Sign in to your project (`https://dev.azure.com/<Organization>/<Project>`) in Azure DevOps.
 
-1. In the left navigation, select **Wiki** > **More options** :::image type="icon" source="../../media/icons/more-actions.png"::: > **Wiki security**:
+2. Select **Project settings**.
 
-   :::image type="content" source="media/wiki/wiki-open-security.png" alt-text="Screenshot that shows how to select the Wiki security action for a Wiki in the Azure DevOps web portal.":::
+3. Under **Repos**, select **Repositories**.
 
-1. In the **Security for Wiki** dialog, adjust the settings for the various security options.
+4. Select the wiki repository, typically named `<ProjectName>.wiki`.
 
-   :::image type="content" source="media/wiki/security-dialog.png" alt-text="Screenshot of the Wiki security dialog that shows various security options and their current settings." lightbox="media/wiki/security-dialog.png":::
+5. Select the **Security** tab to manage permissions for the wiki repository.
+
+   The Security tab displays a list of users and groups with their current permissions. You can modify permissions for existing users/groups.
 
    For definitions of each repository permission, see [Git repository (object-level) permissions](../../organizations/security/permissions.md#git-repository-object-level).
 
@@ -45,19 +47,24 @@ To grant *Edit* permissions to an individual or group, complete the following st
 
 1. Sign in to your project (`https://dev.azure.com/<Organization>/<Project>`) in Azure DevOps.
 
-1. In the left navigation, select **Wiki** > **More options** :::image type="icon" source="../../media/icons/more-actions.png"::: > **Wiki security**.
+2. Select **Project settings**.
 
-1. Select **Add**.
+3. Under **Repos**, select **Repositories**.
 
-   If this button isn't available, check your [permissions](../../organizations/security/about-permissions.md).
+4. Select the wiki repository, typically named `<ProjectName>.wiki`.
 
-1. Enter the name of the user or group you want to grant permissions to and select the user or group from the search results.
+5. Select the **Security** tab.
 
-   After you add the user or group, they're listed in the **Wiki security** pane.
+6. In the security permissions list, find the user or group you want to modify, or select a group like **Contributors** to modify permissions for all members of that group.
 
-1. To grant *Edit* permissions, set the **Contribute permission** to **Allow**.
+7. To add a new user, modify permissions for existing groups that the user is already a member of.
 
-1. Select **Save** to apply your changes.
+   > [!NOTE]
+   > The exact method for adding users and groups might vary. If there isn't an option to add users directly in the repository security settings, you might need to add users to existing project groups, like Contributors, through **Project settings** > **General** > **Teams** or **Project settings** > **Permissions**.
+
+8. To grant *Edit* permissions, locate the **Contribute** permission and set it to **Allow**.
+
+9. The changes save automatically.
 
 ### Other considerations
 
@@ -88,6 +95,7 @@ For more information about Stakeholder access, see [About access levels, Stakeho
 
 ## Related content
 
+- [Clone and update wiki content offline](wiki-update-offline.md)
 - [Learn default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
 - [Get Started with Git](../../repos/git/gitquickstart.md)
 - [Learn about Azure DevOps security](../../organizations/security/about-security-identity.md)
