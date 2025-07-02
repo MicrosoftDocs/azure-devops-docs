@@ -99,20 +99,21 @@ using Microsoft.VisualStudio.Services.Client;
 using Microsoft.TeamFoundation.SourceControl.WebApi;
 using Microsoft.VisualStudio.Services.WebApi;
 
-const String c_collectionUri = "https://dev.azure.com/fabrikam";
-const String c_projectName = "MyGreatProject";
-const String c_repoName = "MyRepo";
+const string collectionUri = "https://dev.azure.com/fabrikam";
+const string projectName = "MyGreatProject";
+const string repoName = "MyRepo";
+const string accessToken = "your-microsoft-entra-id-token";
 
-Uri orgUrl = new Uri(c_collectionUri);
+Uri orgUrl = new Uri(collectionUri);
 
-// Connect to Azure DevOps Services
-VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, personalAccessToken));
+// Connect to Azure DevOps using Microsoft Entra ID token
+VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, accessToken));
 
 // Get a GitHttpClient to talk to the Git endpoints
 using (GitHttpClient gitClient = connection.GetClient<GitHttpClient>())
 {
     // Get data about a specific repository
-    var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+    var repo = gitClient.GetRepositoryAsync(projectName, repoName).Result;
 }
 ```
 
@@ -131,13 +132,13 @@ namespace ConsoleApp1
         const string collectionUri = "https://dev.azure.com/fabrikam";
         const string projectName = "MyGreatProject";
         const string repoName = "MyRepo";
-        const string pat = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        const string accessToken = "your-microsoft-entra-id-token";
 
         static void Main(string[] args)
         {
-            var creds = new VssBasicCredential(string.Empty, pat);
+            var creds = new VssBasicCredential(string.Empty, accessToken);
             
-            // Connect to Azure DevOps Services
+            // Connect to Azure DevOps Services using Microsoft Entra ID token
             var connection = new VssConnection(new Uri(collectionUri), creds);
             
             // Get a GitHttpClient to talk to the Git endpoints
@@ -150,6 +151,9 @@ namespace ConsoleApp1
 }
 
 ```
+
+> [!TIP]
+> **Microsoft Entra ID authentication**: The previous examples use Microsoft Entra ID tokens for authentication. For more information, see [Authenticate to Azure DevOps using Microsoft Entra](../get-started/authentication/entra.md).
 
 For more authentication samples, see [.NET Samples](../get-started/client-libraries/samples.md).
 
