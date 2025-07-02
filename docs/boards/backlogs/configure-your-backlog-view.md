@@ -15,7 +15,7 @@ ms.date: 07/01/2025
 
 # Configure your backlog view in Azure Boards
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Backlogs help teams define, prioritize, and organize work hierarchically while assigning tasks to iterations and forecasting progress. Each backlog is a shared team resource where changes to items, priorities, and parent-child links are instantly visible to all team members.
 

@@ -14,7 +14,7 @@ ms.date: 07/01/2025
 
 # Display rollup progress or totals in Azure Boards
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Rollup automatically sums child work item values to display totals on parent items. Use it to track work estimates, effort, size, or story points across your backlog hierarchy. Learn how to add rollup columns to backlogs, sprint planning, and taskboards.
 
