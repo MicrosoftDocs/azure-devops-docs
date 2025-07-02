@@ -95,6 +95,7 @@ For more information about Stakeholder access, see [About access levels, Stakeho
 
 ## Related content
 
+- [Clone and update wiki content offline](clone-wiki-repository.md)
 - [Learn default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
 - [Get Started with Git](../../repos/git/gitquickstart.md)
 - [Learn about Azure DevOps security](../../organizations/security/about-security-identity.md)
