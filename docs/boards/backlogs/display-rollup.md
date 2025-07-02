@@ -170,14 +170,14 @@ Use the following methods to get rollup data:
 
 ## Analytics, latency, and error states
 
-Rollup data gets calculated from the Analytics service. When dealing with a large amount of data, you might experience some latency in displaying rollup. Hover over the :::image type="icon" source="../../media/icons/rollup.png" border="false"::: rollup icon to determine the state of the data.
+Rollup data is calculated from the Analytics service. Large datasets may cause display latency. Hover over the :::image type="icon" source="../../media/icons/rollup.png" border="false"::: rollup icon to check data status.
 
-If an error occurs in retrieving rollup data, you see an :::image type="icon" source="../../media/icons/info.png" border="false"::: info icon and empty rows. Errors indicate when the Analytics data was last updated, meaning the Analytics services are still processing changes that might affect rollup calculations. Once the Analytics data is up to date, the rollup columns refresh with the latest data.
+Errors appear as an :::image type="icon" source="../../media/icons/info.png" border="false"::: info icon with empty rows, indicating the Analytics service is still processing recent changes. Rollup columns refresh automatically once processing completes.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Error getting data.](media/rollup/error-getting-data.png)
 
-For more information about the service, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
+For more information, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
 
 ## Change the column order or remove a rollup column
 
