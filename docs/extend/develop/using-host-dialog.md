@@ -167,7 +167,7 @@ A function can be called when the OK button is selected. This function is specif
 
 If a call to `getDialogResult` returns a non-null value, this value is then passed to the function specified by `okCallback` (also in the options) and the dialog is closed.
 
-In this example, the `attachFormChanged` callback gets called when inputs on the form change. Based whether the form is valid or not, the OK button is enabled or disabled.
+In this example, the `attachFormChanged` callback gets called when inputs on the form change. Based on whether the form is valid or not, the OK button is enabled or disabled.
 
 ```javascript
     import * as SDK from "azure-devops-extension-sdk";
@@ -227,7 +227,7 @@ Initially, the OK button is disabled. However, you can enable/disable this butto
 
 ## Pass values to the dialog
 
-It's possible pass initial values to dialog content when it is opened in the host dialog.
+It's possible to pass initial values to dialog content when it is opened in the host dialog.
 
 ```json
     {
