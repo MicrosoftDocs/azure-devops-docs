@@ -1,15 +1,16 @@
 ---
 title: Create and manage your product backlog
 titleSuffix: Azure Boards
-description: Learn how to create, configure, and manage your product backlog in Azure Boards. Add backlog items, set up boards, and customize work item tracking.
+description: Create and prioritize your product backlog in Azure Boards. Add work items, estimate effort, and organize requirements to guide your team's development work.
 ms.custom: boards-backlogs
 ms.service: azure-devops-boards
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/30/2025
+ms.date: 07/01/2025
 #customer intent: As a team member, I want to understand how to create and manage backlogs in Azure Boards to improve my team's workflow.
 ---
 

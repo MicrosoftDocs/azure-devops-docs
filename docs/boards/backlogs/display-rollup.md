@@ -1,34 +1,37 @@
 ---
 title: Display rollup columns to show progress, counts, or totals in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to add or remove the rollup column displays that show progress or totals of hierarchical items in Azure Boards.
+description: Learn how to add rollup columns that automatically sum child work item values to display progress bars, counts, and totals on parent items in Azure Boards.
 ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-monikerRange: '>= azure-devops-2020'
-ms.date: 09/16/2024
+monikerRange: '<= azure-devops'
+ms.date: 07/01/2025
+# customer intent: As a team member, I want to display rollup columns that automatically sum child work item values so that I can track progress, counts, and totals across my backlog hierarchy.
 ---
 
 # Display rollup progress or totals in Azure Boards
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
 
-This article provides an overview of rollup functionality in Azure DevOps, explaining how rollup sums values of select fields for all child work items of a parent. Rollup is commonly used for estimated or completed work, effort, size, or story points. However, rollup of Effort, Story Points, or Size fields across product and portfolio backlogs isn't supported. This article also guides you through the steps to implement rollup functionality in various contexts such as product and portfolio backlogs, sprint Planning pane, sprint backlogs, and taskboards.
-
-In the following example, **Progress by Work Items** displays progress bars for parent work items based on the percentage of closed descendant items. For Epics, descendant items include all child Features and their child or grandchild work items. For Features, descendant items include all child User Stories and their child work items.
+Rollup automatically sums child work item values to display totals on parent items. Use it to track work estimates, effort, size, or story points across your backlog hierarchy. Learn how to add rollup columns to backlogs, sprint planning, and taskboards.
 
 > [!IMPORTANT]
-> - Rollup data supports progress bars, counts of work items, and sums of numeric fields within a project. Child items linked to a different project aren't included in the parent rollup calculations.
-> - Links to test cases or test artifacts aren't included in rollup calculations, as these items are linked using test-specific link types.
+> - Rollup supports progress bars, work item counts, and numeric field sums within a project only
+> - Cross-project child items and test case links aren't included in rollup calculations
+> - Rollup of Effort, Story Points, or Size fields isn't supported across product and portfolio backlogs
+
+In the following example, **Progress by Work Items** shows progress bars based on the percentage of closed descendant items. For Epics, this includes all child Features and their descendants. For Features, this includes all child User Stories and their descendants.
+
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Progress bars showing rollup by work items.](media/rollup/progress-by-work-items.png)
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> You can view rollup progress in the new version of Delivery Plans, now available in public preview for Azure Boards. This feature is integrated into Azure Boards and is no longer an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans Experience**. For more information, see [Review team Delivery Plans](../plans/review-team-plans.md).
+> Rollup progress is available in the new Delivery Plans (public preview). Enable **New Delivery Plans Experience** in [preview features](../../project/navigation/preview-features.md). For more information, see [Review team Delivery Plans](../plans/review-team-plans.md).
 
 ::: moniker-end
 
@@ -97,7 +100,8 @@ Each user can customize their column options, and these settings persist across 
 
    Open a portfolio backlog and select **In Progress Items** and **Completed Child Items**. This allows you to compare the State value of items with the rollup value.
 
-   ![Screenshot shows opening column options.](media/rollup/view-in-progress-and-completed-items.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot shows opening column options.](media/rollup/view-in-progress-and-completed-items.png)
 
 2. Select **Column options**, or select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and then select **Column options**.
    
@@ -105,7 +109,7 @@ Each user can customize their column options, and these settings persist across 
    > ![Choose Column options and then select Column options.](media/rollup/open-column-options.png)
 
    > [!TIP]
-   > The Column options you select apply to the chosen backlog level and will persist across your sessions until you change them.
+   > The Column options you select apply to the chosen backlog level and persists across your sessions until you change them.
 
 ## Add a rollup column
 
@@ -114,8 +118,7 @@ Each user can customize their column options, and these settings persist across 
    > [!div class="mx-imgBorder"]   
    > ![Screenshot of Column options dialog.](media/rollup/add-rollup-column-from-quick-list.png)
 
-   > [!NOTE]
-   > The menu options vary based on the process chosen for your project, the selected backlog level, and whether the **Show parents** view option is enabled.
+   The menu options vary based on the process chosen for your project, the selected backlog level, and whether the **Show parents** view option is enabled.
 
    For example, the following image shows that the Count of Tasks for the parent user stories is 2 and 4, respectively. The Count of Tasks for the parent Feature and Epic is 6.
    
