@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps Services
 ms.custom: 
 description: Learn how Azure DevOps Administrators can prevent users from creating new organizations via the Microsoft Entra tenant policy.
 ms.subservice: azure-devops-organizations
-ms.assetid: 
+ms.assetid:
+ai-usage: ai-assisted
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/23/2025
+ms.date: 07/01/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -22,7 +23,7 @@ Learn how to turn on the Microsoft Entra tenant policy, which restricts users fr
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**|[Azure DevOps Administrator](../security/look-up-azure-devops-administrator.md). |
+|**Permissions**|[Azure DevOps Administrator](../security/look-up-azure-devops-administrator.md) role in Microsoft Entra ID. |
 
 ## Turn on the policy
 
@@ -39,6 +40,8 @@ To turn on the policy that restricts users from creating new organizations, do t
    :::image type="content" source="media/azure-ad-tenant-policy/restrict-organization-creation-toggle.png" alt-text="Screenshot shows highlighted toggle for Restrict organization creation.":::
 
 ## Optional
+
+After you enable the policy, you can customize its behavior by creating an allowlist for exceptions and customizing the error message users see when they can't create organizations.
 
 ### Create allowlist
 
