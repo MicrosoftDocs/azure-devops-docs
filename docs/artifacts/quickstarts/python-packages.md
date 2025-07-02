@@ -1,39 +1,32 @@
 ---
-title: Get started with Python packages in Azure Artifacts
-description: Learn how to set up your project and manage your Python packages in Azure Artifacts.
+title: Publish and download Python packages with Azure Artifacts
+description: Learn how to configure your project to publish and download Python packages with Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
-ms.date: 12/03/2024
+ms.date: 07/02/2025
 monikerRange: "<=azure-devops"
 ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 "recommendations": "true"
 ---
 
-# Get started with Python packages in Azure Artifacts
+# Publish and download Python packages with Azure Artifacts
 
 [!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
 
-Using Azure Artifacts, you can publish and download packages from feeds and public registries such as PyPi. This quickstart will guide you through creating a feed, configuring your project, and managing Python packages in your Azure Artifacts feed. In this article, you learn how to:
-
-> [!div class="checklist"]
->
-> * Create a new feed.
-> * Authenticate with your feed.
-> * Publish Python packages.
-> * Install packages from your feed.
+Using Azure Artifacts, you can publish and download packages from feeds and public registries such as PyPi. This quickstart guides you through creating a feed, configuring your project, and managing Python packages in your Azure Artifacts feed.
 
 ## Prerequisites
 
-- Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
-
-- Download and install [Python](https://www.python.org/downloads/).
+| **Product**        | **Requirements**     |
+|--------------------|----------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [Python](https://www.python.org/downloads/). |
 
 ## Get the code
 
-1. If you don't have your own Python project, you can use the following sample Python project:
+1. If you don't have your own Python project, you can use the following sample Python project. Otherwise, you can skip to the next section:
 
     ```
-    https://github.com/microsoft/python-package-template
+    https://github.com/Azure-Samples/azure-stack-hub-flask-hello-world
     ```
 
 1. To build your wheel and source distribution, run the following commands in your project directory:
@@ -43,7 +36,7 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
     python -m build
     ```
 
-1. If your Python project has a *setup.py* file, you can also use this command to build your package:
+1. If your Python project has a *setup.py* file, you can also build your package using:
 
     ```
     python setup.py sdist bdist_wheel
@@ -53,7 +46,7 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
 
 [!INCLUDE [](../includes/create-feed.md)]
 
-## Connect to a feed
+## Connect to your feed
 
 #### [twine](#tab/twine)
 
@@ -61,11 +54,11 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
 
 1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-1. Select **twine** under the **Python** section.
+1. Under the **Python** section, select **twine**.
 
-1. If this is your first time using Azure Artifacts with twine, select **Get the tools** and follow the steps to install the prerequisites.
+1. If this is your first time using Azure Artifacts with twine, select **Get the tools** and follow the instructions to download Python and install Twine and the artifacts keyring.
 
-1. Add a *pypirc* file to your home directory and paste the provided snippet. Your file should look like this:
+1. Create a *pypirc* file in your home directory and paste the snippet provided in the **Project setup** section. Your file should look like this:
 
     ```
     [distutils]
@@ -77,7 +70,7 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
     ```
 
 > [!NOTE]
-> If your *.pypirc* file already contains credentials for the public PyPI index, we recommend removing the `[pypi]` section to prevent accidental publication of private packages to PyPI.
+> If your *.pypirc* file already includes credentials for the public PyPI index, we recommend removing the `[pypi]` section to avoid accidentally publishing private packages to PyPI.
 
 #### [pip](#tab/pip)
 
@@ -85,13 +78,13 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
 
 1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-1. Select **pip** under the **Python** section.
+1. Under the **Python** section, select **pip**.
 
-1. If this is your first time using Azure Artifacts with pip, select **Get the tools** and follow the steps to install the prerequisites.
+1. If this is your first time using Azure Artifacts with pip, select **Get the tools** and follow the instructions to download Python, update pip, and install the keyring.
 
 1. [Create a virtual environment](https://docs.python.org/3/library/venv.html).
 
-1. Add a *pip.ini* file (Windows) or *pip.conf* file (Mac/Linux) to your virtual environment and paste the provided snippet into it. Your file should resemble the following:
+1. Add a *pip.ini* file (Windows) or *pip.conf* file (Mac/Linux) to your virtual environment, and paste the provided snippet into it. Your file should resemble the following:
 
     ```
     [global]
@@ -100,39 +93,40 @@ Using Azure Artifacts, you can publish and download packages from feeds and publ
 
 - - - 
 
-## Publish packages
+## Publish packages to your feed
 
-1. Run this command in your project directory to create source and wheel distributions:
+1. In your project directory, run the following command to create source and wheel distributions:
 
     ```
     python setup.py sdist bdist_wheel
     
     ```
 
-1. Run the following command to publish your package. Use the -r *FEED_NAME* flag to ensure your private packages are not accidentally published to PyPI.
+1. To publish your package, use the command below. Be sure to use the -r *FEED_NAME* flag to avoid accidentally publishing to PyPI:
 
     ```
     twine upload -r <FEED_NAME> dist/*
     ```
 
-## Install packages
+## Install packages from your feed
 
-1. Run this command in your project directory to install your packages:
+1. To install packages from your feed, run the following command in your project directory:
 
     ```
     pip install
     ```
 
-1. To install a specific package, run the following command, replacing the placeholder with the package name from your feed.
+1. To install a specific package, replace the placeholder with the package name from your feed:
 
-    ```Command
+    ```
     pip install <PACKAGE_NAME>
     ```
 
-## Next steps
+## Related content
 
-> [!div class="nextstepaction"]
-> [Use packages from Python package index (PyPI)](../python/use-packages-from-pypi.md)
-> [Set up upstream sources](../how-to/set-up-upstream-sources.md)
-> [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+
+- [Use packages from Python package index (PyPI)](../python/use-packages-from-pypi.md)
+
+- [Publish Python packages with Azure Pipelines YAML/Classic](../../pipelines/artifacts/pypi.md)
 
