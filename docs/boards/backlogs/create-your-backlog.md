@@ -50,7 +50,7 @@ More filtering criteria:
 Sprint backlogs and Taskboards apply these same filters plus the selected **Iteration Path**. You can only select Iteration Paths [preselected by your team](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations). Sprint backlogs display only work items assigned to the selected sprint—child tasks assigned to other sprints aren't displayed.
 
 > [!div class="mx-imgBorder"]
-> ![Product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png)
+> ![Screenshot of Product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png)
 
 For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and [Define sprint paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#list-team-iterations).
 
