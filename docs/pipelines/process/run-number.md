@@ -13,22 +13,18 @@ monikerRange: "<=azure-devops"
 
 Azure Pipelines assigns a unique run number (also called a build number) to each pipeline execution. You can customize these numbers to make them more meaningful for your team, using variables, tokens, and naming patterns.
 
-This article explains how Azure Pipelines build numbers and run numbers are constructed, and how you can customize them in your pipelines.
-
 The run number is used to identify a specific execution of a pipeline or build. The build number is synonymous with the run number. 
 
 If you don't specify a build name in YAML pipelines, or you leave the **Name** field blank in Classic pipelines, your run gets a unique integer as its name. You can give runs more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters in build names.
 
 ::: moniker range=">=azure-devops-2020"
 
-You can only customize the run number at the root level of the pipeline with the `name`property. The `name` property is set at the [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) level.
+You can only customize the run number at the root level of your pipeline using the `name` property. Set the `name` property at the [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) level. The `name` property isn't supported in templates or stages.
 
-The `name` property only works at the pipeline root and not in templates or stages.
-
-The following example code outputs a customized number like `project_def_main_20240828.1`.
+The following code sets a custom run number format like `project_def_main_202408281`:
 
 ```yaml
-name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:r)
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
 
 steps:
   - script: echo '$(Build.BuildNumber)'  
