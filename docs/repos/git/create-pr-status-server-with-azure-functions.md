@@ -5,7 +5,7 @@ description: Create a serverless function to listen to pull request events and p
 ms.assetid: 
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 02/14/2025
+ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -14,7 +14,7 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The pull request (PR) workflow allows developers to receive feedback on their code from peers and automated tools. Non-Microsoft tools and services can also participate in the PR workflow by using the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). This article guides you through creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/services/functions/) to validate PRs in an Azure DevOps Git repository. Azure Functions eliminate the need to provision and maintain servers, even as your workload grows. They provide a fully managed compute platform with high reliability and security.
+The pull request (PR) workflow allows developers to receive feedback on their code from peers and automated tools. Non-Microsoft tools and services can also participate in the PR workflow by using the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). This article guides you through creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/services/functions/) to validate PRs in an Azure DevOps Git repository. Azure Functions eliminates the need to provision and maintain servers, even as your workload grows. They provide a fully managed compute platform with high reliability and security.
 
 For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
@@ -25,7 +25,7 @@ For more information about PR status, see [Customize and extend pull request wor
 | **Organization** | An [organization in Azure DevOps](../../organizations/accounts/create-organization.md) with a Git repository. |
 | **Azure Function** | An [Azure Function](#create-a-basic-azure-function-to-listen-to-azure-repos-events), which implements a serverless, event-driven solution that integrates with Azure DevOps to create custom branch policies and automate PR validation.|
 | **Service Hooks** | [Configure service hooks](#configure-a-service-hook-for-pr-events) for PR events to notify your Azure function when a pull request changes. |
-| **Personal Access Token (PAT)** | Create a PAT with the **Code (status)** scope to have permission to change PR status. For more information, see [Use PATs to authenticate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
+| **Authentication** | **Microsoft Entra ID token** with the **Code (status)** scope to have permission to change PR status. For more information, see [Microsoft Entra authentication](../../integrate/get-started/authentication/entra.md). |
 
 ### Create a basic Azure Function to listen to Azure Repos events
 
@@ -140,13 +140,13 @@ Now that your server can receive service hook events when new PRs are created, u
 
 Update the code of your Azure function, similar to the following example.
 
-Make sure to update the code with your organization name, project name, repository name, and [PAT token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). In order to have permission to change PR status, the PAT requires [vso.code_status](../../integrate/get-started/authentication/oauth.md#scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
+Make sure to update the code with your organization name, project name, repository name, and Microsoft Entra ID token. In order to have permission to change PR status, the token requires [vso.code_status](../../integrate/get-started/authentication/oauth.md#scopes) scope, which you can obtain through Microsoft Entra authentication.
 
 >[!Important]
->This sample code stores the PAT in code, simplifying the sample. It is recommended to store secrets in KeyVault and retrieve them from there.
+>This sample code stores the token in code, simplifying the sample. It is recommended to store secrets in Azure Key Vault and retrieve them from there using managed identity for enhanced security.
 
 
-This sample inspects the PR title to see if the user indicated if the PR is a work in progress by adding **WIP** to the title. If so, the sample code changes the status posted back to the PR. Replace the code in your Azure function with the following code which updates the status posted back to the PR.
+This sample inspects the PR title to see if the user indicated if the PR is a work in progress by adding **WIP** to the title. If so, the sample code changes the status posted back to the PR. Replace the code in your Azure function with the following code, which updates the status posted back to the PR.
 
 ```cs
 using System;
@@ -162,9 +162,9 @@ private static string repositoryName   = "[Repo Name]";          // Repository n
 
 /*
     This is here just to simplify the sample, it is recommended to store
-    secrets in KeyVault and retrieve them from there.
+    secrets in Azure Key Vault and retrieve them using managed identity.
 */
-private static string pat = "[PAT TOKEN]";
+private static string accessToken = "[MICROSOFT_ENTRA_TOKEN]";
 
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
 {
@@ -215,9 +215,7 @@ private static void PostStatusOnPullRequest(int pullRequestId, string status)
     using (HttpClient client = new HttpClient())
     {
         client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(
-                ASCIIEncoding.ASCII.GetBytes(
-                string.Format("{0}:{1}", "", pat))));
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
         var method = new HttpMethod("POST");
         var request = new HttpRequestMessage(method, Url)
