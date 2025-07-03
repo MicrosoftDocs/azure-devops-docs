@@ -162,4 +162,4 @@ Now that you've defined your sprint plan, your team's ready to begin work on the
 
 To add or rename the sprints your team uses, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).  
 
-If your backlog doesn't show the work items you expect, see [Setup your Backlogs & Boards](../backlogs/set-up-your-backlog.md). 
+If your backlog doesn't show the work items you expect, see [Create and manage your backlog](../backlogs/create-your-backlog.md). 

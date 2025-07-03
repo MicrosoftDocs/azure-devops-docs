@@ -16,7 +16,8 @@ ms.date: 11/22/2024
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
-> Auditing is still in public preview.
+> - Auditing is still in public preview.
+> - We continually add new actions to this list. To view an event that isn't currently included in the following tables, share your feedback in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
 
 The following tables describe the type of events (or actions) that are available for auditing through the Azure DevOps Auditing feature.
 
@@ -25,9 +26,6 @@ The following tables describe the type of events (or actions) that are available
 * Identify the *Product Area* for any given event. Refer to the full list in the [Area table](#areas).
 * Determine the *Category* field of an event to understand the type of action performed. See the list of possible action types in the [Categories table](#categories).
 * Find the list of all possible actions grouped by *Product Area* in the [Actions section](#actions).
-
-> [!NOTE]
-> We try our best to keep adding new actions regularly. If you'd like to see an event that isn't currently in the following tables, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
 
 ## Areas
 
@@ -213,10 +211,18 @@ The following tables describe the type of events (or actions) that are available
 | Action | Description |
 |--------|-------------|
 | `Pipelines.DeploymentJobCompleted` | Deployment for run "{RunName}" on pipeline "{PipelineName}" to environment "{EnvironmentName}" {DeploymentResult}. |
+| `Pipelines.HostedParallelismPaid` | Organization's hosted pipeline capacity set to paid tier only.|
+| `Pipelines.HostedParallelismPrivate` | Organization's hosted pipeline capacity set to free tier limit for private projects. |
+| `Pipelines.HostedParallelismPublic` | Organization's hosted pipeline capacity set to free tier limit for public projects. |
+| `Pipelines.OAuthConfigurationCreated` | Created OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OAuthConfigurationDeleted` | Updated OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OAuthConfigurationUpdated` | Deleted OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OrganizationSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
 | `Pipelines.PipelineCreated` | Created pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
 | `Pipelines.PipelineDeleted` | Deleted pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
 | `Pipelines.PipelineModified` | Modified pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
 | `Pipelines.PipelineRetentionSettingChanged` | Pipelines retention "{SettingName}" changed from {OldValue} to {NewValue} in {ProjectName} project. |
+| `Pipelines.ProjectSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
 | `Pipelines.ResourceAuthorizedForPipeline` | Successfully authorized {ResourceType} resource {ResourceId} for pipeline ID {PipelineId}. |
 | `Pipelines.ResourceAuthorizedForProject` | Successfully authorized {ResourceType} resource {ResourceId} for the project. |
 | `Pipelines.ResourceNotAuthorizedForPipeline` | Didn't authorize {ResourceType} resource {ResourceId} for pipeline ID {PipelineId}. The resource doesn't exist or the user doesn't have permission. |
@@ -225,11 +231,14 @@ The following tables describe the type of events (or actions) that are available
 | `Pipelines.ResourceUnauthorizedForProject` | Successfully unauthorized {ResourceType} resource {ResourceId} for the project. |
 | `Pipelines.RunRetained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease ID {RetentionLeaseId} to {RetentionOwnerId}. |
 | `Pipelines.RunUnretained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained. |
-| `Pipelines.ProjectSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
-| `Pipelines.OAuthConfigurationCreated` | Created OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OAuthConfigurationDeleted` | Updated OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OAuthConfigurationUpdated` | Deleted OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OrganizationSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
+| `Pipelines.VariablesSetAtRuntime` | A run of pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}, has defined variable(s) that are not marked as "Settable at queue time".|
+| `CheckConfiguration.ApprovalCheckOrderChanged`| >A check with id {CheckId} for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" has been changed from {OriginalApprovalType} to {FinalApprovalType} |
+| `CheckConfiguration.Created`| A check of type {Type} has been added to {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Deleted`| A check of type {Type} has been removed from {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Disabled` | A check of type {Type} has been disabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Enabled`| A check of type {Type} has been enabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Updated`| A check of type {Type} has been updated for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+
 
 ### Policy events
 

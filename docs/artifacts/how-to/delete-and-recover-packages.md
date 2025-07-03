@@ -6,13 +6,13 @@ ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.custom: peer-review-program
 ms.topic: how-to
 ms.date: 03/13/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Delete and recover packages
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts securely stores various package types in a feed, whether published directly or saved from upstream sources. As older package versions become less relevant, you can remove them manually or by using retention policies to free up space and reduce costs.
 
@@ -237,7 +237,7 @@ Packages remain in the recycle bin for 30 days before they're permanently delete
 
 ##### Q: What if I don't want to enable retention policies?
 
-A: Azure Artifacts retention policies are designed to help manage your dependencies and streamline storage cost management. If you choose not to enable retention policies, you'll need to manage your storage manually, monitoring consumption and deleting packages as necessary. Azure Artifacts offers 2 GiB of free storage per organization, which allows you to evaluate whether the service fits your workflow. Once you exceed the storage limit, you won't be able to publish new artifacts unless you set up billing and [increase your storage limit](../start-using-azure-artifacts.md#increase-azure-artifacts-storage-limit).
+A: Azure Artifacts retention policies are designed to help manage your dependencies and streamline storage cost management. If you choose not to enable retention policies, you'll need to manage your storage manually, monitoring consumption and deleting packages as necessary. Azure Artifacts offers 2 GiB of free storage per organization, which allows you to evaluate whether the service fits your workflow. Once you exceed the storage limit, you won't be able to publish new artifacts unless you set up billing and [increase your storage limit](../start-using-azure-artifacts.md#increase-artifacts-storage-limit).
 
 ##### Q: How long does it take for the billed storage amount to update after deleting Artifacts?
 

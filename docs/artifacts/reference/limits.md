@@ -4,12 +4,12 @@ description: Package count and size limits in Azure Artifacts
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/25/2022
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Package sizes and count limits
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts is a highly scalable package management solution that enables developers to create, host, and share different types of packages. In this article, we will cover the size and count limits that developers should be aware of when using Azure Artifacts. Some of these limits are imposed by the client tools that Azure Artifacts integrates with (example nuget.exe).
 
@@ -29,7 +29,7 @@ Azure Artifacts is a highly scalable package management solution that enables de
 
 - **NuGet packages**: limited to 500 MiB per file.
 
-- **Npm packages**: limited to 500 MiB per file.
+- **Npm packages**: limited to 500 MiB per file. Additionally, Azure Artifacts enforces a separate hard limit of 375 KB specifically for the *package.json* file.
 
 - **Maven packages**: limited to 500 MiB per file.
 
@@ -44,6 +44,10 @@ Azure Artifacts is a highly scalable package management solution that enables de
 > Universal Packages containing an exceptionally large number of files (100K+) may fail to publish. In this case, we recommend bundling the files into a *ZIP* or *TAR* archive to reduce the file count.
 
 ::: moniker-end
+
+## Increase Artifacts storage limit 
+
+[!INCLUDE [](../includes/increase-storage-limit.md)]
 
 ## Related articles
 

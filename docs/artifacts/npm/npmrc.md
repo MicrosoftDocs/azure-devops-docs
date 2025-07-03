@@ -6,13 +6,13 @@ ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: conceptual
 ms.date: 03/13/2025
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Connect your npm project to Azure Artifacts
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enables developers to manage their packages from various sources, including both public registries like npmjs.com and private feeds. To authenticate with Azure Artifacts, you'll need to configure your npm config file. This file contains feed URLs and credentials used by npm, offering options to customize your npm client behavior, such as setting up proxies, defining default package locations, or configuring private package feeds. The *npmrc* file is typically located in the user's home directory but can also be created at the project level to override default settings.
 
@@ -207,6 +207,10 @@ The following steps guide you through setting up the first configuration file. S
                         
     always-auth=true
     ```
+
+> [!NOTE]
+> For Debian, Ubuntu, and other community or entreprise distributions such as Fedora or Redhat make sure you've installed the prerequisites from the [NodeSource distributions repository](https://github.com/nodesource/distributions).
+
 ### Setup credentials
 
 1. Copy the following snippet and paste it into your user-level *.npmrc* file:

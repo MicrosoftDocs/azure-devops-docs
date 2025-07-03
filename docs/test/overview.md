@@ -9,6 +9,7 @@ ms.author: jeom
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 09/06/2024
+ms.update-cycle: 1095-days
 ---
 
 # What is Azure Test Plans?  

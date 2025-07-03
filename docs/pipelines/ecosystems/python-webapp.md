@@ -547,7 +547,7 @@ stages:
         python -m venv antenv
         source antenv/bin/activate
         python -m pip install --upgrade pip
-        pip install setup
+        pip install setuptools
         pip install -r requirements.txt
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
@@ -711,7 +711,7 @@ The job contains multiple steps:
            python -m venv antenv
            source antenv/bin/activate
            python -m pip install --upgrade pip
-           pip install setup
+           pip install setuptools
            pip install  -r ./requirements.txt
          workingDirectory: $(projectRoot)
          displayName: "Install requirements"

@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/27/2022
+ms.date: 06/16/2025
 ---
 
 # About settings for users, teams, projects, or organizations
@@ -84,12 +84,14 @@ Individual contributors can customize their experience in Azure DevOps by settin
       **Authentication**
    :::column-end:::
    :::column span="2":::
-      - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
       - [Authorize access to REST APIs with OAuth 2.0](../../integrate/get-started/authentication/oauth.md)
+      - [Authenticate access with Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md)
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
+      - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
    :::column-end:::
    :::column span="2":::
-      For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
+      For an overview of supported authentication methods, see [Authentication overview](../../integrate/get-started/authentication/authentication-guidance.md).
+      [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)] 
    :::column-end:::
 :::row-end:::
 ---
@@ -100,8 +102,10 @@ Individual contributors can customize their experience in Azure DevOps by settin
       **Authentication**
    :::column-end:::
    :::column span="2":::
-      - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
+      - [Authenticate access with Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md)
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
+      - [Manage OAuth app authorizations](manage-authorizations.md)
+      - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
    :::column-end:::
    :::column span="2":::
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
@@ -117,7 +121,6 @@ Individual contributors can customize their experience in Azure DevOps by settin
       - [Set personal or team favorites](../../project/navigation/set-favorites.md)
    :::column-end:::
    :::column span="2":::
-      For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -131,7 +134,7 @@ Individual contributors can customize their experience in Azure DevOps by settin
       - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
    :::column-end:::
    :::column span="2":::
-      Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When a project is created, a number of notifications are defined. If you want to opt out, you can.
+      Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When a project is created, many notifications are defined. If you want to opt out, you can.
    :::column-end:::
 :::row-end:::
 ---
@@ -181,7 +184,7 @@ The following table provides an overview of the Agile tools and resources that t
       - [Define work item templates](../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
    :::column-end:::
    :::column span="2":::
-      For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). Configure boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). 
+      For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). Configure boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [work in progress (WIP) limits](../../boards/boards/wip-limits.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -304,7 +307,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Add a team administrator](add-team-administrator.md)
    :::column-end:::
    :::column span="2":::
-      A default team is created when you create a project. You add a team when you want to provide a group of users in your organization a set of Agile tools, which they have full ownership to configure and manage. Teams have access to a product backlog, portfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more. For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md). 
+            When you create a project, Azure DevOps automatically creates a default team. You can add more teams to give specific groups of users their own set of Agile tools, which they can fully configure and manage. Each team gets access to its own product backlog, portfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more. For a complete overview of all tools available to teams, see [About teams and Agile tools](about-teams-and-settings.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -326,7 +329,8 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set build and release permissions](../../pipelines/policies/permissions.md#pipeline-permissions)
    :::column-end:::
    :::column span="2":::
-      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
+      Project Administrators can add users to a project or a team. Adding a user to a team also adds them to the project. Users added at the project level can view and contribute only to that specific project.
+      For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -338,7 +342,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Manage project-level notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
    :::column span="2":::
-      Many project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
+      Many project-level notifications are set up automatically when you create a project. You manage project-level notifications in the same way as [team-level notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -362,7 +366,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set default dashboard permissions](../../report/dashboards/dashboard-permissions.md)
    :::column-end:::
    :::column span="2":::
-      New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.
+      New dashboards added to a project automatically inherit the default dashboard permissions. By default, team members have permission to create and edit dashboards for their team.
    :::column-end:::
 :::row-end:::
 ---
@@ -390,7 +394,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set retention policies](../../pipelines/policies/retention.md)
    :::column-end:::
    :::column span="2":::
-      Area and iteration paths set at the project level are then used to set team defaults. To configure more product backlogs, boards, and dashboards, you first [add a team](add-teams.md).
+      Area and iteration paths defined at the project level serve as defaults for teams. To configure more product backlogs, boards, or dashboards for specific groups, first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -446,7 +450,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Request a Marketplace extension](../../marketplace/request-extensions.md)
    :::column-end:::
    :::column span="2":::
-      Individual contributors and project administrators can request a Marketplace extension is installed. Only members of the Project Collection Administrators group can respond to these requests and actually install extensions.
+      Individual contributors and project administrators can request the installation of a Marketplace extension. However, only members of the Project Collection Administrators group can approve and install these extensions.
    :::column-end:::
 :::row-end:::
 ---
@@ -474,7 +478,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Link GitHub commits, pull requests, and issues to work items](../../boards/github/link-to-from-github.md)
    :::column-end:::
    :::column span="2":::
-      By connecting your Azure Boards project with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.
+      By connecting your Azure Boards project to GitHub.com repositories, you enable linking between GitHub commits, pull requests, and Azure Boards work items. This integration allows you to use GitHub for source code development while using Azure Boards to plan and track your work.
    :::column-end:::
 :::row-end:::
 ---
@@ -496,7 +500,7 @@ From the administrative **Project settings** page, you can configure settings av
 
 ## Project Collection Administrator (PCA) role and managing collections of projects 
 
-Members of the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md) configure resources for all projects that are defined for an organization or collection. They also can do all tasks to add projects, manage projects, and manage permissions for the collection, a project, a team, or an object.   
+Members of the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md) manage resources and settings for all projects within an organization or collection. They have full permissions to add and manage projects, configure resources, and set permissions at the collection, project, team, or object level.
 
 ::: moniker range="azure-devops"
   
@@ -504,7 +508,7 @@ Members of the [**Project Collection Administrators** group](../security/change-
 From the administrative **Organization settings** page, you can configure settings available from the tabs shown in the following image and table. 
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** and **Projects** pages. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group can't access **Organization Settings** other than the **Overview** and **Projects** pages. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization settings options, cloud.](media/about/organization-settings-options-cloud.png) 
@@ -779,7 +783,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Artifacts storage consumption](../../artifacts/artifact-storage.md)
    :::column-end:::
    :::column span="2":::
-     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Start using Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-azure-artifacts-storage-limit).
+     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Start using Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#increase-artifacts-storage-limit).
    :::column-end:::
 :::row-end:::
 ---
@@ -801,9 +805,9 @@ For more information, see [Team Foundation Server Administration Documentation](
 
 ## Related articles
 
-- [Add and manage information banners](manage-banners.md)
-- [Resources granted to project members](../projects/resources-granted-to-project-members.md) 
-- [Permissions and groups reference](../security/permissions.md) 
-- [Get started managing your project](../../user-guide/project-admin-tutorial.md)
-- [Get started managing your organization or project collection](../../user-guide/manage-organization-collection.md)
-- [Rate limits](../../integrate/concepts/rate-limits.md)
+- [Add or update information banners](manage-banners.md)
+- [Review resources granted to project members](../projects/resources-granted-to-project-members.md)
+- [Configure permissions and groups](../security/permissions.md)
+- [Manage your project](../../user-guide/project-admin-tutorial.md)
+- [Manage your organization or project collection](../../user-guide/manage-organization-collection.md)
+- [Monitor and manage rate limits](../../integrate/concepts/rate-limits.md)

@@ -7,7 +7,7 @@ ms.author: vijayma
 author: vijayma
 ms.reviewer: dastahel
 ms.custom: freshness-fy22q2, kr2b-contr-experiment
-ms.date: 01/20/2022
+ms.date: 06/09/2025
 monikerRange: azure-devops
 ---
 
@@ -15,15 +15,15 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This article explains how to automatically build Ruby projects.
+Learn how to use Azure Pipelines to build, test, and deploy your Ruby application. 
 
 ## Create the Azure Pipelines
 
-Do the following steps to set up a pipeline for a Ruby app.
+Follow these steps to set up a pipeline for a Ruby app.
 
 1. Sign in to your Azure DevOps organization and go to your project.
 
-1. Select **Pipelines** > **New pipeline**.
+1. Go to **Pipelines** > **New pipeline**.
 
 1. Select **GitHub** as the location of your source code.
 
@@ -33,14 +33,14 @@ Do the following steps to set up a pipeline for a Ruby app.
 
 1. Select the `Ruby` template for your pipeline.
 
-1. A YAML file gets generated. Select **Save and run** > **Commit directly to the main branch**, and then choose **Save and run** again.
+1. A YAML file is generated. Select **Save and run** > **Commit directly to the main branch**, and then select **Save and run** again.
 
 1. Wait for the run to finish.
 
 You have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
 
 > [!TIP]
-> To make changes to the YAML file as described in this article, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+> To make changes to the YAML file described in this article, select the pipeline on the **Pipelines** page, and then select **Edit** for the `azure-pipelines.yml` file.
 
 ## Build environment
 
@@ -50,18 +50,18 @@ For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted
 
 ### Use a specific Ruby version
 
-Add the [Use Ruby Version](/azure/devops/pipelines/tasks/reference/use-ruby-version-v0) task to set the version of Ruby used in your pipeline. This snippet adds Ruby 2.4 or later to the path and sets subsequent pipeline tasks to use it.
+Add the [Use Ruby Version](/azure/devops/pipelines/tasks/reference/use-ruby-version-v0) task to set the Ruby version in your pipeline. This snippet adds Ruby 3.4 or later to the path and sets subsequent pipeline tasks to use it.
 
 ```yaml
-# https://learn.microsoft.com/azure/devops/pipelines/ecosystems/ruby
 pool:
-  vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'windows-latest'
+  vmImage: 'ubuntu-latest' 
 
 steps:
-- task: UseRubyVersion@0
+- task: UseRubyVersion@0 
   inputs:
-    versionSpec: '>= 2.5'
+    versionSpec: '>= 3.4' 
     addToPath: true
+  displayName: 'Set Ruby version'
 ```
 
 ### Install Rails
@@ -70,18 +70,18 @@ To install Rails, add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
 - script: gem install rails && rails -v
-  displayName: 'gem install rails'
+  displayName: 'Install Rails'
 ```
 
 ### Install dependencies
 
-To use Bundler to install dependencies, add the following snippet to your `azure-pipelines.yml` file.
+Use Bundler to install dependencies by adding the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
 - script: |
-    CALL gem install bundler
+    gem install bundler
     bundle install --retry=3 --jobs=4
-  displayName: 'bundle install'
+  displayName: 'Install dependencies with Bundler'
 ```
 
 ### Run Rake
@@ -95,9 +95,9 @@ To execute Rake in the context of the current bundle (as defined in your Gemfile
 
 ### Publish test results
 
-The sample code includes unit tests written using [RSpec](https://rspec.info/). When Rake is run by the previous step, it runs the RSpec tests. The RSpec RakeTask in the Rakefile has been configured to produce JUnit style results using the RspecJUnitFormatter. 
+The sample code includes unit tests written with [RSpec](https://rspec.info/). When Rake runs in the previous step, it executes the RSpec tests. The RSpec RakeTask in the Rakefile is configured to produce JUnit-style results using the RspecJUnitFormatter. 
 
-Add the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task to publish JUnit style test results to the server. You get a rich test reporting experience that you can use for troubleshooting any failed tests and for test timing analysis.
+Add the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task to publish JUnit-style test results to the server. 
 
 ```yaml
 - task: PublishTestResults@2
@@ -110,16 +110,17 @@ Add the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-t
 
 The sample code uses [SimpleCov](https://github.com/colszowka/simplecov) to collect code coverage data when unit tests get run. SimpleCov is configured to use Cobertura and HTML report formatters. 
 
-Add the [Publish Code Coverage Results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) task to publish code coverage results to the server. When you do so, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
+Add the [Publish Code Coverage Results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) task to publish code coverage results to the server. This lets you view coverage metrics in the build summary and download HTML reports for further analysis.
 
 ```yaml
-- task: PublishCodeCoverageResults@1
+- task: PublishCodeCoverageResults@2
   inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
+    failIfCoverageEmpty: true 
 ```
 
 ## Build an image and push to container registry
 
-For your Ruby app, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
+For your Ruby app, you can [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).

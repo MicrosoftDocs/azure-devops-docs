@@ -98,9 +98,15 @@
       href: npm/npm-audit.md
   - name: Maven
     items:
-    - name: Project setup
-      displayName: maven pom, maven artifacts, maven packages, maven authentication
-      href: maven/pom-and-settings.md
+    - name: Project setup - Maven
+      displayName: maven, pom, artifacts, package
+      href: maven/project-setup-maven.md
+    - name: Project setup - Gradle
+      displayName: Maven, Gradle
+      href: maven/project-setup-gradle.md
+    - name: Publish packages - Maven
+      displayName: maven, publish
+      href: maven/publish-packages-maven.md
     - name: Publish artifacts with Gradle
       displayName: gradle, publish
       href: maven/publish-with-gradle.md
@@ -163,9 +169,12 @@
       href: npm/npm-audit.md
   - name: Maven
     items:
-    - name: Project setup
+    - name: Project setup - Maven
       displayName: maven pom, maven artifacts, maven packages, maven authentication
-      href: maven/pom-and-settings.md
+      href: maven/project-setup-maven.md
+    - name: Project setup - Gradle
+      displayName: Maven, Gradle
+      href: maven/project-setup-gradle.md
     - name: Restore Maven packages
       displayName: maven, restore, install
       href: maven/install.md
@@ -283,7 +292,7 @@
     items:
     - name: Share PowerShell modules with Azure Artifacts
       href: tutorials/private-powershell-library.md
-  - name: Manage dependencies with upstream sources
+  - name: Restore packages from upstream sources
     href: tutorials/protect-oss-packages-with-upstream-sources.md
 - name: Artifacts in Azure Pipelines
   items:

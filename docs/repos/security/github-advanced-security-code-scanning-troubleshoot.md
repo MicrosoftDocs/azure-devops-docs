@@ -79,13 +79,12 @@ Troubleshooting steps:
 
 * Grant `Advanced Security: View alerts` and `Advanced Security: Manage and dismiss alerts` permission to the build service account used in your pipeline, which for project-scoped pipelines is `[Project Name] Build Service ([Organization Name])`, and for collection-scoped pipelines is `Project Collection Build Service ([Organization Name])`.
 
-## Code scanning publishing results to the incorrect repository 
+## Code scanning publishing results to the unintended repository 
 
 If you have a pipeline definition housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results may be processed and submitted to the incorrect repository, publishing to the repository containing the pipeline definition rather than the source code repository.
 
-To enable proper result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+To enable intended result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
 
-Alternatively, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
 
 >[!div class="tabbedCodeSnippets"]
 ```yaml
@@ -94,39 +93,41 @@ trigger:
 
 resources:
   repositories:
-    - repository: BicepGoat
+    # PipelineRepo: The repository containing the pipeline definition.
+    # This is optional and only needed if you plan to reference files or scripts from this repo.
+    - repository: PipelineRepo
       type: git
-      name: BicepGoat
+      name: DevOpsPipelineRepo
+      ref: refs/heads/main
+      trigger:
+        - main
+    # SourceRepo: The repository where scanning and publishing will occur.
+    - repository: SourceRepo
+      type: git
+      name: code-to-analyze-repo
       ref: refs/heads/main
       trigger:
         - main
 
 jobs:
-  # Explicit - `advancedsecurity.publish.repository` explicitly defines the repository to submit SARIF to.
-  - job: "AdvancedSecurityCodeScanningExplicit"
-    displayName: "🛡 Infrastructure-as-Code Scanning (Explicit)"
+  - job: "CodeQLScan"
+    displayName: "CodeQL Scanning with Inferred Publishing"
     variables:
-      advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['BicepGoat']) ]
-    steps:
-      - checkout: BicepGoat
-      - task: TemplateAnalyzerSarif@1
-        displayName: Scan with Template Analyzer
-      - task: AdvancedSecurity-Publish@1
-        displayName: Publish to IaC Scanning Results to Advanced Security
-
-
-  # Infer - `advancedsecurity.publish.repository.infer` specifies that the `AdvancedSecurity-Publish` must
-  # infer repository to submit SARIF to from the working directory on the build agent.
-  - job: "AdvancedSecurityCodeScanningInfer"
-    displayName: "🛡 Infrastructure-as-Code Scanning (Infer)"
-    variables:
+      # Enable repository inference
       advancedsecurity.publish.repository.infer: true
     steps:
-      - checkout: BicepGoat
-      - task: TemplateAnalyzerSarif@1
-        displayName: Scan with Template Analyzer
-      - task: AdvancedSecurity-Publish@1
-        displayName: Publish to IaC Scanning Results to Advanced Security
+      # Checkout the SourceRepo
+      - checkout: SourceRepo
+
+      # Initialize CodeQL
+      - task: AdvancedSecurity-Codeql-Init@1
+        displayName: "Initialize CodeQL"
+        inputs:
+          languages: "python,javascript" # Adjust based on repository languages
+
+      # Perform CodeQL analysis
+      - task: AdvancedSecurity-Codeql-Analyze@1
+        displayName: "Analyze Code with CodeQL"
 ```
 
 ## Manual installation of CodeQL bundle to self-hosted agent 
@@ -135,6 +136,13 @@ Install the CodeQL bundle to the agent tool cache by utilizing the setup script 
 1.	Pick the latest CodeQL release bundle from [GitHub](https://github.com/github/codeql-action/releases). 
 1.	Download and unzip the bundle to the following directory inside the agent tool directory, typically located under `_work/_tool`: `./CodeQL/0.0.0-[codeql-release-bundle-tag]/x64/`. Using the current release of `v2.16.0`, the folder name would be titled `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64/`. Learn more about the [agent tool directory](https://github.com/microsoft/azure-pipelines-tool-lib/blob/master/docs/overview.md#tool-cache). 
 1.	Create an empty file titled `x64.complete` within the `./CodeQL/0.0.0-[codeql-release-bundle-tag]` folder. Using the previous example, the end file path to your `x64.complete` file should be `./CodeQL/0.0.0-codeql-bundle-v2.16.0/x64.complete`.
+
+## How can I explicitly define the repository to publish code scanning alerts to?
+-   Use the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+-   As another option, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` 
+
+For more information, check the [release notes](/azure/devops/release-notes/2025/ghazdo/sprint-253-update#multi-repository-publishing-scenarios-supported-for-github-advanced-security-for-azure-devops).
+
 
 ## Related articles
 

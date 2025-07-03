@@ -22,7 +22,7 @@ Finding the right package for your project can be challenging, especially when t
 | Category | Requirements |
 |--------------|-------------|
 | **Azure DevOps organization and project** | An [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project). |
-| **Azure Artifacts feed** | An [Azure Artifacts feed](../../artifacts/get-started-nuget.md#create-feed). |
+| **Azure Artifacts feed** | An [Azure Artifacts feed](../../artifacts/get-started-nuget.md#create-a-feed). |
 
 ## Search packages
 
@@ -65,7 +65,7 @@ POST https://almsearch.dev.azure.com/ORGANIZATION_NAME/_apis/search/packagesearc
 Using upstream sources, you can consume packages from public registries and other Azure Artifacts feeds. For more information, see [Search upstream](../../artifacts/how-to/search-upstream.md).
 
 > [!NOTE]
-> You can only search for packages in upstream sources from your feed in Azure DevOps Services. NuGet Package Explorer doesn't support searching for upstream packages. For more information, see [Download NuGet packages](../../artifacts/get-started-nuget.md#download-packages).
+> You can only search for packages in upstream sources from your feed in Azure DevOps Services. NuGet Package Explorer doesn't support searching for upstream packages. For more information, see [Download NuGet packages](../../artifacts/get-started-nuget.md#download-packages-from-your-feed).
 
 ## Next steps
 

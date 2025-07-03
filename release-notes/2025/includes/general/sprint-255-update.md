@@ -15,4 +15,13 @@ We've added a new feature that flags these scopes on each organization's admin p
 > [!div class="mx-imgBorder"]
 > [![Screenshot of feedback box.](../../media/255-general-01.png "Screenshot of feedback box")](../../media/255-general-01.png#lightbox)
 
-For more information, visit  [documentation](https://learn.microsoft.com/azure/devops/marketplace/manage-high-privilege-extensions?view=azure-devops) page.
+For more information, visit  [documentation](/azure/devops/marketplace/manage-high-privilege-extensions) page.
+
+### Overlapping Secrets for OAuth apps
+
+Azure DevOps has introduced Overlapping Secrets for OAuth apps—a new feature available on both UI and API designed to streamline secret rotation and reduce downtime. 
+
+> [!div class="mx-imgBorder"]
+> [![Screenshot of applications settings.](../../media/255-general-02.png "Screenshot of of applications settings.")](../../media/255-general-02.png#lightbox)
+
+With overlapping secrets, developers can generate a new secret while the old one remains valid, ensuring uninterrupted access during secret rotations. With this update, we also reduce the default secret validity period to 60 days.  As Azure DevOps OAuth apps approach deprecation in 2026, this update provides a critical security improvement for teams still relying on them. Try it today to simplify your secret management and improve resilience. Learn more in our blog post.

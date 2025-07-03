@@ -77,13 +77,12 @@ By default, the dependency scanning task will process the `Agent.BuildDirectory`
     DependencyScanning.SourcePath: scan/code/path
 ```
 
-## Dependency scanning publishing results to the incorrect repository 
+## Dependency scanning publishing results to the unintended repository 
 
 If you have a pipeline definition housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results may be processed and submitted to the incorrect repository, publishing to the repository containing the pipeline definition rather than the source code repository.
 
-To enable proper result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+To enable intended result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
 
-Alternatively, if you don't explicitly check out a repository or use an alias to check out your repository, utilize the variable `advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['YourRepositoryAlias']) ]` instead.
 
 >[!div class="tabbedCodeSnippets"]
 ```yaml
@@ -92,34 +91,35 @@ trigger:
 
 resources:
   repositories:
-    - repository: BicepGoat
+    # PipelineRepo: The repository containing the pipeline definition.
+    # This is optional and only needed if you plan to reference files or scripts from this repo.
+    - repository: PipelineRepo
       type: git
-      name: BicepGoat
+      name: DevOpsPipelineRepo
+      ref: refs/heads/main
+      trigger:
+        - main
+    # SourceRepo: The repository where scanning and publishing will occur.
+    - repository: SourceRepo
+      type: git
+      name: code-to-analyze-repo
       ref: refs/heads/main
       trigger:
         - main
 
 jobs:
-  # Explicit - `advancedsecurity.publish.repository` explicitly defines the repository to submit SARIF to.
-  - job: "AdvancedSecurityDependencyScanningExplicit"
-    displayName: "🛡 Dependency scanning (Explicit)"
+  - job: "DependencyScan"
+    displayName: "Dependency Scanning with Inferred Publishing"
     variables:
-      advancedsecurity.publish.repository: $[ convertToJson(resources.repositories['BicepGoat']) ]
-    steps:
-      - checkout: BicepGoat
-      - task: AdvancedSecurity-Dependency-Scanning@1
-        displayName: Dependency Scanning
-
-  # Infer - `advancedsecurity.publish.repository.infer` specifies that the `AdvancedSecurity-Publish` must
-  # infer repository to submit SARIF to from the working directory on the build agent.
-  - job: "AdvancedSecurityDependencyScanningInfer"
-    displayName: "🛡 Dependency scanning (Infer)"
-    variables:
+      # Enable repository inference
       advancedsecurity.publish.repository.infer: true
     steps:
-      - checkout: BicepGoat
+      # Checkout the SourceRepo
+      - checkout: SourceRepo
+
+      # Perform Dependency Scanning
       - task: AdvancedSecurity-Dependency-Scanning@1
-        displayName: Dependency Scanning
+        displayName: "Analyze Dependencies for Vulnerabilities"
 ```
 
 ## Missing dependency scanning pull request annotations when adjusting where results are published 

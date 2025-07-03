@@ -59,7 +59,7 @@ Create a Power BI query to pull the data into Power BI as follows:
 3. The Advanced Editor window opens.
 
     > [!div class="mx-imgBorder"] 
-    > ![Screenshot shows Power BI - Advanced Editor.](media/odatapowerbi-advancededitor.png)
+    > ![Screenshot shows Power BI - Advanced Editor.](media/odata-power-bi-advanced-editor.png)
 
 4. Replace the contents with the following query:
  
@@ -85,7 +85,7 @@ in
 ```
 
    > [!div class="mx-imgBorder"] 
-   > ![Screenshot of Power BI, Advanced Editor, Pasted Query.](media/odatapowerbi-advancededitor-pasted.png)
+   > ![Screenshot of Power BI, Advanced Editor, Pasted Query.](media/odata-power-bi-advanced-editor-pasted.png)
 
 1. Substitute your values within the sample query.
 
@@ -97,7 +97,7 @@ in
     * `{startdate}` - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: `2022-09-01Z` represents 2022-September-01. Don't enclose in quotes.
 
     > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI, Advanced Editor, Replaced Strings in Query.](media/odatapowerbi-advancededitor-replaced.png)
+    > ![Screenshot of Power BI, Advanced Editor, Replaced Strings in Query.](media/odata-power-bi-advanced-editor-replaced.png)
 
 2. Choose **Done** to execute the query.
 
@@ -115,7 +115,7 @@ After closing the **Advanced Editor** and while remaining in the **Power Query E
     > ![Screenshot of Power BI transform data, Expand AreaPath column.](media/transform-data/expand-area-path-property.png)
 
 	> [!NOTE]   
-	> The available properties to select depends on the properties requested to return in the query. If you don't specify any properties, then all properties are available. For more information about these properties, see the following metadata references: [Areas](../analytics/entity-reference-boards.md#areas), [Iterations](../analytics/entity-reference-boards.md#iterations), and [Users](../analytics/entity-reference-general.md#users).
+	> The available properties to select depend on the properties requested to return in the query. If you don't specify any properties, then all properties are available. For more information about these properties, see the following metadata references: [Areas](../analytics/entity-reference-boards.md#areas), [Iterations](../analytics/entity-reference-boards.md#iterations), and [Users](../analytics/entity-reference-general.md#users).
 	
 1. The table now contains entity fields.
 

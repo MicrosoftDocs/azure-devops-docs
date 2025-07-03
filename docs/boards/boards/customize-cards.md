@@ -289,6 +289,5 @@ If you want to preserve the backlog priority when you move a card to a new colum
 ## Related articles
 
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
-- [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 - [Set up swimlanes](expedite-work.md)

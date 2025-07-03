@@ -51,9 +51,7 @@ To create a service connection for Azure Pipelines:
 
 1. Optionally, enter a **Description**.
 
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection.
-
-   If you don't select this option, you must later explicitly [authorize each pipeline to use the service connection](#authorize-pipelines).
+1. Selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](#authorize-pipelines).
    
 1. Select **Save** or **Verify and save**.
 
@@ -135,8 +133,6 @@ To use the service connection in pipelines:
 
 ### Authorize pipelines
 
-- To authorize all pipelines to use the service connection, select the **Allow all pipelines to use this connection** option in the connection properties.
-
 - To authorize a single pipeline to use the service connection:
 
   1. Select **Run pipeline** on the pipeline page to queue a manual build.
@@ -144,6 +140,8 @@ To use the service connection in pipelines:
   1. On the **Waiting for review** screen, select **Permit**, and on the confirmation screen, select **Permit** again.
 
   This action explicitly adds the pipeline as an authorized user of the service connection.
+
+- To authorize all existing and future pipelines to use the service connection, select the **Grant access permission to all pipelines** option in the connection properties. This option isn't recommended. Instead, authorize each pipeline individually to use the service connection.
 
 ## Common service connection types
 
@@ -168,7 +166,7 @@ Azure Pipelines supports the following service connection types by default. You 
 | [Jira](#jira-service-connection) | Connect to a Jira server. |
 | [Kubernetes](#kubernetes-service-connection) | Connect to a Kubernetes cluster. |
 | [Maven](#maven-service-connection) | Connect to a Maven repository. |
-| [npm](#npm-service-connection) | Connect to an npm repository. |
+| [npm](#npm-service-connection) | Connect to an npm registry. |
 | [NuGet](#nuget-service-connection) | Connect to a NuGet server. |
 | [Other Git](#other-git-service-connection) | Connect to a git repository. |
 | [Python package download](#python-package-download-service-connection) | Connect to a Python repository for download. |
@@ -580,7 +578,7 @@ Use the following parameters when you define and secure a connection to an npm s
 | Parameter | Description  |
 |-----------------------|-------------|
 | Authentication method | Required. Select **Username and Password** or **Authentication Token**. |
-| Registry URL| Required. The URL of the Maven repository. |
+| Registry URL| Required. The URL of the npm registry. |
 | Username  | Required when connection type is **Username and Password**. The username for authentication.|
 | Password  | Required when connection type is **Username and Password**. The password for the username. |
 | Personal Access Token | Required **Authentication Token** is selected. The personal access token (PAT) to authenticate with the service or registry. PATs are applicable to repositories that support them, for example https://registry.npmjs.org DevOps Services organizations or Azure DevOps Server. For more information, see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |

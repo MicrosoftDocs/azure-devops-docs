@@ -2,11 +2,12 @@
 title: Configure schedules to run pipelines
 description: Configure schedules to run pipelines
 ms.topic: conceptual
-ms.colelction: ce-skilling-ai-copilot
+ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 ms.author: sdanie
 author: steved0x
 ms.date: 02/27/2025
+ms.update-cycle: 180-days
 monikerRange: '<= azure-devops'
 ---
 

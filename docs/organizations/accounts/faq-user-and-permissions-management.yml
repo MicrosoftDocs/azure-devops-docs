@@ -9,13 +9,13 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 02/10/2025
+  ms.date: 06/27/2025
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
-  Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. We grouped the FAQs by the following subjects.
+   This article provides answers to frequently asked questions (FAQs) about user and permissions management in Azure DevOps. The FAQs are organized by topic to help you quickly find information about managing users, permissions, access levels, Visual Studio subscriptions, GitHub Enterprise integration, and related administrative tasks.
   <a name="general-permissions"></a>
   
 
@@ -37,15 +37,7 @@ sections:
       - question: |
           Q: How do I find the organization owner?
         answer: |
-          A: If you have at least Basic access, you can find the current owner in your organization settings.
-          
-          1. Go to your **Organization settings**.
-          
-             ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
-          
-          2. Find the current owner.
-          
-             ![Find the current owner in organization information](../../media/find-organization-owner.png)
+          A: If you have at least Basic access, you can find the current owner in your organization settings. For more information, see [Look up the organization owner](../security/look-up-organization-owner.md).
           
       - question: |
           Q: How do I find a Project Collection Administrator?
@@ -54,11 +46,13 @@ sections:
           
           For more information, see [Look up a project collection administrator](../security/look-up-project-collection-administrators.md).
       
-      - question: Why can't users access some features?
+      - question: |
+          Q: Why can't users access some features?
         answer: |
-           Q: They might need a different [access level](../security/access-levels.md#supported-access-levels) assigned, in addition to permissions granted through security groups. For example, [Stakeholder access](../security/stakeholder-access.md) access level provides partial support to select features, allowing users to view and modify work items, but not to use all features.
+          A: They might need a different [access level](../security/access-levels.md#supported-access-levels) assigned, in addition to permissions granted through security groups. For example, [Stakeholder access](../security/stakeholder-access.md) access level provides partial support to select features, allowing users to view and modify work items, but not to use all features.
 
-      - question: I accidentally removed my permissions and am unable to grant them again. What should I do?
+      - question: |
+          Q: I accidentally removed my permissions and am unable to grant them again. What should I do?
         answer: |
           A: The only way to resolve this scenario is to [Request an increase in permission levels](../security/request-changes-permissions.md).
 
@@ -110,19 +104,9 @@ sections:
       - question: |
           Q: Which GitHub Enterprise customers are eligible for Azure DevOps access?
         answer: |
-          A: GitHub Enterprise Cloud customers who access GitHub and Azure DevOps with the same Entra tenant. Users must sign in using the same identity in GitHub and Azure DevOps. 
+          A: GitHub Enterprise Cloud customers who access GitHub and Azure DevOps with the same Microsoft Entra tenant. Users must sign in using the same identity in GitHub and Azure DevOps. 
           
           ![Screenshot shows GitHub Enterprise listed as user's access level in Organization settings, Users page.](media/faq/github-enterprise.png)
-
-      - question: |
-          Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?
-        answer: |
-          A: Users of GitHub Enterprise Server are detected if they also have a matching license in the cloud. For more information, see [Syncing license usage between GitHub Enterprise Server and GitHub Enterprise Cloud](https://docs.github.com/enterprise-server@3.15/billing/managing-your-license-for-github-enterprise/syncing-license-usage-between-github-enterprise-server-and-github-enterprise-cloud).
-
-      - question: |
-          Q: What kind of access do GitHub Enterprise users get in Azure DevOps?
-        answer: |
-          A: Basic access, which includes all features except Test Plans. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
       - question: |
           Q: How are GitHub Enterprise users detected?
@@ -130,14 +114,33 @@ sections:
           A: Azure DevOps automatically checks if a user has GitHub Enterprise when the user signs in. It can take up to 24 hours for their access level to change to GitHub Enterprise. There are no charges for a user with the GitHub Enterprise access level.
 
       - question: |
-          Q: What access level should I select if a user has a GitHub Enterprise license?
+          Q: What kind of access do GitHub Enterprise users get in Azure DevOps?
         answer: |
-          A: If you know a user has a GitHub Enterprise license, the best option to choose is Stakeholder, to avoid any charges for Basic before the user signs in for the first time
+          A: Basic access, which includes all features except Test Plans. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
       - question: |
           Q: What if a GitHub Enterprise user needs access to Test Plans?
         answer: |
           A: GitHub Enterprise users who need access to Test Plans can be assigned the Basic + Test Plans access level. 
+
+      - question: |
+          Q: What happens when a GitHub Enterprise license is no longer detected?
+        answer: |
+          A: When a user no longer has GitHub Enterprise, they're treated like a new user.  
+          - Your organization's default access level, whether Basic or Basic + Test Plans, gets assigned automatically. 
+          - If your organization established Group Rules, the user receives the access specified for their Microsoft Entra group. Group rule reevaluation occurs every 24 hours, so they might initially have Stakeholder access before receiving group rule access. 
+          
+          Otherwise, users who no longer have access through GitHub Enterprise maintain Stakeholder access until an administrator assigns them paid access. 
+      
+      - question: |
+          Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?
+        answer: |
+          A: No, only GitHub Enterprise cloud users are detected in Azure DevOps. Customers using GitHub Server can [sync license usage between GitHub Enterprise Server and GitHub Enterprise Cloud](https://docs.github.com/enterprise-server@3.15/billing/managing-your-license-for-github-enterprise/syncing-license-usage-between-github-enterprise-server-and-github-enterprise-cloud).
+
+      - question: |
+          Q: What access level should I select if a user has a GitHub Enterprise license?
+        answer: |
+          A: If you know a user has a GitHub Enterprise license, the best option to choose is Stakeholder, to avoid any charges for Basic before the user signs in for the first time
 
       - question: |
           Q: What if a GitHub Enterprise user also has a Visual Studio subscription?
@@ -228,8 +231,14 @@ sections:
         answer: |
           A: By default, [Access via Microsoft Entra FAQs. Microsoft Entra guests can't search the Microsoft Entra ID in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#no-identities).    
   
-  - name: Change app access policies for your organization
+  - name: Change application access policies for your organization
     questions:      
+      
+      - question: |
+          Q: Can I still use PATs for authentication?
+        answer: |
+          A: You can still use personal access tokens (PATs) for authentication, but we recommend using the more secure method, Microsoft Entra tokens, whenever possible. For more information, see [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md).
+
       - question: |
           Q: If I deny access to one authentication method in one organization, does that affect all the organizations that I own?
         answer: |
@@ -248,16 +257,10 @@ sections:
           Q: How do I remove myself from an organization when the owner isn't available to remove me?
         answer: |
           A: To remove yourself from an organization, do the following steps:
-          
           1. Go to [aex.dev.azure.com](https://aex.dev.azure.com).
           2. Select the organization, and then choose **Leave**.
-          
-              ![Member removing their self from the organization](media/faq/member-leave-organization.png)
-          
           3. Confirm that you want to **Leave** the organization.
-          
-              ![Screenshot showing confirmation for leaving the organization.](media/faq/confirm-removal-from-organization.png)
-          
+
           <a name="group-based-licensing"></a>
 
       - question: |
@@ -271,9 +274,6 @@ sections:
           Q: Will my users lose their access level and project membership if I remove a group rule?
         answer: |
           A: Users in the group **TestGroup** lose access to group resources if the users haven't been explicitly assigned to the resources or assigned via a different group rule.
-          
-          > [!div class="mx-imgBorder"]
-          > ![remove-test-group-group-rule-managing_group-based-licensing](media/faq/remove-test-group-rule.png)
           
       - question: |
           Q: Will my Azure DevOps or Microsoft Entra group get deleted if I remove its group rule?
@@ -342,7 +342,7 @@ sections:
       - question: |
           Q: Why can't I find members from my connected Microsoft Entra ID, even though I'm the global admin?
         answer: |
-          A: You're probably a guest in the Microsoft Entra instance that backs Azure DevOps. By default, Microsoft Entra guests can't search in Microsoft Entra ID. That's why you aren't finding users in your connected Microsoft Entra ID to add to your organization.
+          A: You're probably a guest in the Microsoft Entra instance that backs Azure DevOps. By default, Microsoft Entra guests can't search in Microsoft Entra ID, which is why you aren't finding users in your connected Microsoft Entra ID to add to your organization.
           
           First, check to see if you're a Microsoft Entra guest:
           
@@ -359,32 +359,32 @@ sections:
           
           1. [Download and install Microsoft Graph PowerShell](/powershell/microsoftgraph/installation).
               ```
-              PS Install-Module -Name Microsoft Graph
+              PowerShell Install-Module -Name Microsoft Graph
               ```
           2. Open PowerShell and run the following cmdlets.
           
               a. Connect to Microsoft Entra ID:
           
               ```
-              PS Connect-MgGraph -Scopes 'User.Read.All'
+              PowerShell Connect-MgGraph -Scopes 'User.Read.All'
               ```
           
               b. Find the **objectId** of the user:
           
               ```
-              PS Get-MgUser -Filter "UserPrincipalName eq '<YourUPN>'"
+              PowerShell Get-MgUser -Filter "UserPrincipalName eq '<YourUPN>'"
               ```
           
               c. Check the **usertype** attribute for this user to see if they're a guest or member:
           
               ```
-              PS Get-MgUser -UserId <Id> -Property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType 
+              PowerShell Get-MgUser -UserId <Id> -Property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType 
               ```
           
               d. Change the **usertype** from **member** to **guest**:
           
               ```
-              PS Update-MgUser -UserID <replace the  ID for the result of the command to search> -UserType Member
+              PowerShell Update-MgUser -UserID <replace the  ID for the result of the command to search> -UserType Member
               ```
           
           <a name="users-delay"></a>
@@ -392,7 +392,7 @@ sections:
       - question: |
           Q: Why don't users appear or disappear promptly in Azure DevOps after I add or delete them in the Users hub?
         answer: |
-          A: If you experience delays finding new users or having deleted users promptly removed from Azure DevOps (for example, in drop-down lists and groups) after you add or delete users, [file a problem report on Developer Community](https://go.microsoft.com/fwlink/?LinkId=820594) so we can investigate.
+          A: If you experience delays finding new users or getting deleted users promptly removed from Azure DevOps (for example, in drop-down lists and groups) after you add or delete users, [file a problem report on Developer Community](https://go.microsoft.com/fwlink/?LinkId=820594) so we can investigate.
           
           <a name="ChooseOrgAcctMSAcct"></a>
           

@@ -71,8 +71,6 @@ Check out [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-d
 
 ::: moniker-end
 
-If you want to develop your own widget based on Analytics, see [Create an Analytics widget](../extend-analytics/example-analytics-widget.md).
-
 ::: moniker range=">= azure-devops-2020"
 
 ## In-context reports and roll-up columns 

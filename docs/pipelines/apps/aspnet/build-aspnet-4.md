@@ -34,7 +34,7 @@ https://github.com/Azure-Samples/app-service-web-dotnet-get-started
 
 Once you have the sample code in your own repository, create a pipeline in your Azure DevOps project by using the instructions in [Create your first pipeline](../../create-first-pipeline.md).
 
-Select the **ASP.NET** template. This choice automatically adds the *azure-pipelines.yml* file with the tasks required to build the code to the sample repository. The template includes the VSTest@2 task to run tests. The sample repository doesn't contain tests, so you can remove the VSTest@2 task from the pipeline.  
+Select the **ASP.NET** template. This choice automatically adds the *azure-pipelines.yml* file with the tasks required to build the code to the sample repository. The template includes the VSTest@3 task to run tests. The sample repository doesn't contain tests, so you can remove the VSTest@3 task from the pipeline.  
 
 Your pipeline should look like the following example:
 

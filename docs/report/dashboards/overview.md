@@ -260,7 +260,7 @@ There's no chart or widget that tracks changes to sprint scope. However, you can
 
 ### Sample Cumulative Flow Diagram widget
 
-:::image type="content" source="media/cfd-exampe-rolling-30-days.png" alt-text="Screenshot that shows a Cumulative Flow Diagram widget.":::
+:::image type="content" source="media/cfd-example-rolling-30-days.png" alt-text="Screenshot that shows a Cumulative Flow Diagram widget.":::
 
 ### Monitor code activity, build progress, and deployment status
 

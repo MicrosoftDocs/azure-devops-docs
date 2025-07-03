@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/11/2024
+ms.update-cycle: 1095-days
 ---
 
 # Run manual tests

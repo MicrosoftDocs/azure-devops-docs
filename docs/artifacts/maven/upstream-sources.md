@@ -4,13 +4,13 @@ description: How to use packages from Maven Central upstream source
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 11/10/2023
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Use packages from Maven Central
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Using Azure Artifacts upstream sources allows you to use a single feed for hosting both the packages you produce and packages from public registries such as Maven Central. When you add upstream sources to your feed, Azure Artifacts saves a copy of any package installed from upstream. This ensures continued accessibility for your development, even if a public registry suffers an outage. Additionally, Azure Artifacts supports various other Maven upstream sources, including the Google Maven Repository, Gradle Plugins, and JitPack.
 
@@ -49,7 +49,7 @@ If you checked the *upstream sources* checkbox when creating your feed, Maven Ce
 
 ## Save package from Maven Central
 
-Before saving packages from Maven Central, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](pom-and-settings.md) to set up your Maven project and connect to your feed. The following example illustrates how to save the Kotlin Datetime Library from Maven Central using the command line.
+Before saving packages from Maven Central, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](project-setup-maven.md) to set up your Maven project and connect to your feed. The following example illustrates how to save the Kotlin Datetime Library from Maven Central using the command line.
 
 If you want to save/restore your packages using Azure Pipelines instead, follow the steps in the [Restore Maven packages with Azure Pipelines (YAML/Classic)](../../pipelines/packages/maven-restore.md) tutorial. 
 

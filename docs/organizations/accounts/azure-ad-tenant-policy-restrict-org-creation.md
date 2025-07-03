@@ -1,18 +1,19 @@
 ---
-title: Restrict new organization creation, Microsoft Entra tenant policy
+title: Restrict new organization creation
 titleSuffix: Azure DevOps Services
 ms.custom: 
 description: Learn how Azure DevOps Administrators can prevent users from creating new organizations via the Microsoft Entra tenant policy.
 ms.subservice: azure-devops-organizations
-ms.assetid: 
+ms.assetid:
+ai-usage: ai-assisted
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/23/2025
+ms.date: 07/01/2025
 monikerRange: 'azure-devops'
 ---
 
-# Restrict organization creation via Microsoft Entra tenant policy
+# Restrict organization creation
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -22,7 +23,7 @@ Learn how to turn on the Microsoft Entra tenant policy, which restricts users fr
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**|[Azure DevOps Administrator in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and go to **Microsoft Entra ID** > **Roles and administrators**. If you're not an Azure DevOps administrator, you can't see the policies. Contact your administrator, if necessary. The Project Collection Administrator role isn't required. |
+|**Permissions**|[Azure DevOps Administrator](../security/look-up-azure-devops-administrator.md) role in Microsoft Entra ID. |
 
 ## Turn on the policy
 
@@ -38,10 +39,9 @@ To turn on the policy that restricts users from creating new organizations, do t
 
    :::image type="content" source="media/azure-ad-tenant-policy/restrict-organization-creation-toggle.png" alt-text="Screenshot shows highlighted toggle for Restrict organization creation.":::
 
-   > [!IMPORTANT]
-   > If you don't see the **Restric organization creation** policy toggle, check your role in the Azure portal. For more information, see the [Prerequisites](#prerequisites).
-
 ## Optional
+
+After you enable the policy, you can customize its behavior by creating an allowlist for exceptions and customizing the error message users see when they can't create organizations.
 
 ### Create allowlist
 
@@ -72,5 +72,5 @@ The error message is customized.
 
 * [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
 * [Learn about access with Microsoft Entra ID](access-with-azure-ad.md)
-* [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
+* [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md)
 * [Resolve orphaned organization](resolve-orphaned-organization.md)

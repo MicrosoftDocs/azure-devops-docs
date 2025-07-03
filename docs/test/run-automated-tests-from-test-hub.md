@@ -9,6 +9,7 @@ ms.author: jeom
 author: wisdeom
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
+ms.update-cycle: 1095-days
 ---
 
 # Run automated tests from test plans
@@ -36,17 +37,17 @@ Automate test cases in your test plans and run them directly from **Azure Test P
 
 1. In the **Test Plans** page, choose your test plan, open the shortcut menu, and then select **Test plan settings**.
 
-   ![Screenshot shows choosing Test plan settings.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-101.png)
+   <img src="media/run-automated-tests-from-test-hub/test-plan-settings.png" alt="Screenshot shows choosing Test plan settings." width="100%" />
 
 2. In the Test plan settings dialog, select the build pipeline that generates builds that
-   contain the test binaries. You can then select a specific build number to test, or let the
+   contain the test binaries (both, Classic and YAML build pipelines are supported). You can then select a specific build number to test, or let the
    system automatically use the latest build when tests are run.
 
-   ![Screenshot shows selecting the build and build number.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102.png)
+   <img src="media/run-automated-tests-from-test-hub/test-plan-settings-modal-build-selection.png" alt="Screenshot shows selecting the build and build number." width="70%" />
 
-3. You need a release pipeline that was created from the **Run automated tests from Test Manager** template to run tests from test plans in **Azure Test Plans**. If you have an existing release pipeline created using this template, select it and then select the existing stage in the release pipeline for the test execution. Otherwise, select **Create new** in the dialog to create a new release pipeline that contains a single stage with the **Visual Studio Test** task already added.
+3. You need a release pipeline that was created from the **Run automated tests from Test Manager** template to run tests from test plans in **Azure Test Plans**. If you have an existing release pipeline created using this template, select it and then select the existing stage in the release pipeline for the test execution (both, Classic and YAML release pipelines are supported). Otherwise, select **Create new** in the dialog to create a new release pipeline that contains a single stage with the **Visual Studio Test** task already added.
 
-   ![Screenshot shows selecting a release pipeline or creating a new one.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102a.png)
+   <img src="media/run-automated-tests-from-test-hub/test-plan-settings-modal-build-new-release-pipeline.png" alt="Screenshot shows selecting a release pipeline or creating a new one." width="70%" />
 
    [How do I pass parameters to my test code from a build or release pipeline?](#pass-params)
 
@@ -58,44 +59,36 @@ Automate test cases in your test plans and run them directly from **Azure Test P
 
 6. Add the [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to the release pipeline and configure it as follows:
  
-   * Verify that version 2 of the Visual Studio Test task is selected. The version number is shown in the drop-down list of the task settings panel. 
-
-     ![Screenshot shows checking the task version number setting.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-03.png) 
+   * Verify that you are using the version 3 of the Visual Studio Test task.
 
    * Verify that **Select tests using** is set to **Test run**.
      [What does this setting mean?](#faq-ondemandruns) 
 
-     ![Screenshot shows checking the test selection method setting.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-02.png) 
-
-   * For the **Test platform version** setting, select **Installed by Tools Installer**. 
-
-     ![Screenshot shows setting the installer option.](media/run-automated-tests-from-test-hub/set-installer.png) 
+   * For the **vsTestVersion**, select **toolsInstaller**. 
 
    * If you have UI tests that run on **physical browsers** or **thick clients**, ensure that the agent is set to run as an interactive process with autologon enabled. You must set up an agent to run interactively before you queue the build or release. The **Test mix contains UI tests** checkbox doesn't configure the agent in interactive mode automatically - used only as a reminder to configure the agent appropriately to avoid failures.
    * If you're running UI tests on a **headless browser**, the interactive process configuration isn't required.
    * Select how the test platform gets provisioned, and the version of Visual Studio or the location of the test platform that is installed on the test machines. 
    * If your tests need **input parameters** such as app URLs or database connection strings, select the relevant settings file from the build artifacts. You can use the **Publish build artifacts** tasks in your build pipeline to publish the settings file in a drop location if this file isn't included in the artifacts. In the following example, the application URL is exposed in the run settings file, and is overridden to set it to a staging URL using the **Override test run parameters** setting.
 
-     ![Screenshot shows specifying the properties for the Visual Studio Test task.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
+   ![Screenshot shows checking the task version number setting.](media/run-automated-tests-from-test-hub/vstest-configuration.png) 
 
-     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2).
+     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v3).
 
 7. Choose the **Agent job** item and verify that the deployment queue is set to the one containing the machines where you want to run the tests. If your tests require special machines from the agent pool, you can add demands that select at runtime.
-
-   ![Screenshot shows specifying the properties for the Agent job.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-04.png)
 
    You might be able to minimize test times by distributing tests across multiple agents by setting **Parallelism** to **Multiple executions** and specifying the number of agents.
 
    > [!NOTE]
    > If you're running UI tests such as CodeUI or Selenium on physical browsers such as IE, Firefox, or Chrome, the agent on the machines must be running in interactive mode and not as a service. [More details](#faq-agentmode). 
 
-8. In the **Pipeline** page of the release pipeline, verify that the build pipeline containing the test binaries links to this release pipeline as an artifact source.  
+9. In the **Pipeline** page of the release pipeline, verify that the build pipeline containing the test binaries links to this release pipeline as an artifact source.  
 
    ![Screenshot shows verifying the linked build artifacts.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-106.png)
  
-9. **Save** the release pipeline.
+10. **Save** the release pipeline.
 
-10. If you chose **Create new** in the Test plan settings dialog in step 2 of this example, return to the browser page that contains your test plan settings. In the Test plan settings dialog, select the release pipeline and stage you saved.
+11. If you chose **Create new** in the Test plan settings dialog in step 2 of this example, return to the browser page that contains your test plan settings. In the Test plan settings dialog, select the release pipeline and stage you saved.
 
     ![Screenshot shows selecting the release pipeline and stage.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-107.png)
 
@@ -104,21 +97,21 @@ Automate test cases in your test plans and run them directly from **Azure Test P
 1. In the **Test Plans** web portal, open the test plan and select a test suite that contains the
    automated tests.
 
-2. Select the test(s) you want to run, open the **Run** menu, and then select **Run test**. 
+2. Select the test case(s) you want to run, then click on **Run for web application**. 
 
-   ![Screenshot shows selecting Run test.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-108.png)
+   ![Screenshot shows selecting Run test.](media/run-automated-tests-from-test-hub/executing-automated-tests.png)
 
    The test binaries for these tests must be available in the build artifacts generated by your build pipeline.
 
-3. Select **OK** to start the testing process. The system checks that only automated tests get selected (any manual tests are ignored), validates the stage to ensure the Visual Studio Test task is present and has valid settings, checks the user's permission to create a release for the selected release pipeline, creates a test run, and then triggers the creation of a release to the selected stage.
+3. The system checks that only automated tests get selected (any manual tests are ignored), validates the stage to ensure the Visual Studio Test task is present and has valid settings, checks the user's permission to create a release for the selected release pipeline, creates a test run, and then triggers the creation of a release to the selected stage.
 
-   ![Screenshot shows starting the test execution.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-109.png)
+    <img src="media/run-automated-tests-from-test-hub/test-results.png" alt="Screenshot shows starting the test execution." width="500" />
 
 4. Select **View test run** to view the test progress and analyze the failed tests. Test results have the relevant information for debugging failed tests such as the error message, stack trace, console logs, and attachments. 
  
 5. After test execution is complete, the **Runs** page of the **Azure Test Plans**  shows the test results. The **Run summary** page shows an overview of the run.
 
-   ![Screenshot shows the test run summary.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-110.png)
+   ![Screenshot shows the test run summary.](media/run-automated-tests-from-test-hub/run-summary.png)
  
    There's a link to the **Release** used to run the tests, which makes it easy to find the release that ran the tests if you need to come back later and analyze the results. Also use this link if you want to open the release to view the release logs.
 
@@ -129,13 +122,11 @@ Automate test cases in your test plans and run them directly from **Azure Test P
 
 6. The **Test results** page lists the results for each test in the test run. Select a test to see debugging information for failed tests such as the error message, stack trace, console logs, and attachments. 
 
-   ![Screenshot shows viewing the test results details.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-111.png)
+   ![Screenshot shows viewing the test results details.](media/run-automated-tests-from-test-hub/test-run-results.png)
 
-7. Open the **Test Plans** page and select the test plan to see the status
-   of your tests if tests are updated after test execution is complete.
-   Select a test to see the recent test results.
+7. In **Test Plans** go to the **Runs** page where you can find an overiew of all your test runs. From here, you can open the detailed view of each test run.
 
-   ![Screenshot shows viewing the test plan.](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-112.png)
+   ![Screenshot shows viewing the test plan.](media/run-automated-tests-from-test-hub/test-results-overview.png)
 
 ## FAQ
 
@@ -157,7 +148,7 @@ For more information, see [Release permissions](../pipelines/policies/permission
 **A:** Yes, you can do this using the **Run with options** command.
 Open the shortcut menu for the test suite in the left column and select **Run with options**.
 
-![Screenshot shows configuring the Run with options dialog.](media/run-auto-tests-from-hub-08.png)
+<img src="media/run-automated-tests-from-test-hub/run-with-options.png" alt="Screenshot shows configuring the Run with options dialog." width="70%" />
 
 Enter the following values in the Run with options dialog and then select **OK**:
 
@@ -166,7 +157,7 @@ Enter the following values in the Run with options dialog and then select **OK**
 * **Release Pipeline**: Select a pipeline from the list of release pipelines that can consume the selected build artifact. 
 * **Release Stage**: Select the name of the stage configured in your release pipeline.<p />
 
-![Screenshot shows configured Run with options dialog.](media/run-auto-tests-from-hub-09a.png)
+<img src="media/run-automated-tests-from-test-hub/run-with-options-configuration-modal.png" alt="Screenshot shows configured Run with options dialog." width="50%" />
 
 ### Q: Why use release stages to run tests? 
 

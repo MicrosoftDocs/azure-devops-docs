@@ -1,114 +1,88 @@
 ---
-title: How to use upstream sources in your Azure Artifacts feed
-description: Use upstream sources in Azure Artifacts to consume packages from public registries
+title: How to restore packages from upstream sources in your Azure Artifacts feed
+description: Learn how to consume packages from public registries with upstream sources in Azure Artifacts.
 ms.service: azure-devops-artifacts
-ms.date: 06/03/2022
-monikerRange: '<= azure-devops'
+ms.date: 06/24/2025
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
-# Tutorial: How to use upstream sources
+# Tutorial: How to restore packages from upstream sources
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Using upstream sources in your feed enables you to manage your application dependencies from a single feed. Using upstream sources makes it easy to consume packages from public registries while having protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
+Using upstream sources in Azure Artifacts enables you to manage all your application dependencies from a single feed. It simplifies consuming packages from public registries like *NuGet.org* or *npmjs.com*, while also providing protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
 
-This tutorial will walk you through how to enable upstream sources on your feed and consume packages from public registries such as NuGet.org or npmjs.com.
+This tutorial walks you through enabling upstream sources in your feed and consuming packages from public registries such as *NuGet.org* or *npmjs.com*.
 
-In this tutorial, you will:
+## Prerequisites
 
->[!div class="checklist"]  
-> * Create a new feed and enable upstream sources.
-> * Set up your configuration file.
-> * Run an initial package restore to populate your feed.
-> * Check your feed to view the saved copy of the packages you consumed from the public registry.
+| **Product**        | **Requirements**   |
+|--------------------|--------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server. |
 
 ## Create a feed and enable upstream sources
-
-::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
 
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
+1. Provide a **Name** for your feed, choose its **Visibility** and **Scope**, and make sure you check the **Include packages from common public sources** checkbox to enable upstream sources.
 
-1. Provide a name for your feed, and choose its visibility. Make sure you check the **Include packages from common public sources** checkbox to enable upstream sources, and then select **Create** when you're done.
+1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window.":::
+    :::image type="content" source="../media/new-feed-with-upstream-source.png" alt-text="a Screenshot displaying how to create a new feed and enable upstream sources in Azure Artifacts.":::
 
-::: moniker-end
-
-> [!NOTE]
+> [!IMPORTANT]
 > To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button on the right for the specified view > **Edit** .
 
-## Set up the configuration file
+## Authenticate with the feed
 
-Now that we created our feed, we need to update the config file to point to our feed. To do this we must:
-
-1. Get the source's URL
-1. Update the configuration file
+Now that you've created your feed, select the appropriate tab based on the technology you're using and follow the instructions to set up your configuration file and connect to your feed:
 
 #### [npm](#tab/npm/)
 
-::: moniker range="<=azure-devops"
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select **Connect to feed**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
+1. Select **npm** from the left navigation pane, and follow the provided instructions in the **Project setup** section to set up your config file. If you don’t already have a *.npmrc* file, create a new one in the root of your project (the same folder as your *package.json*). Open your new *.npmrc* file and paste in the provided snippet.
 
-1. On the left side of the page, select the **npm** tab.
-
-1. Follow the instructions in the **Project setup** section to set up your config file.
-
-    :::image type="content" source="../media/connect-to-feed-npm-registry-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project.":::
-
-::: moniker-end
-
-If you don't have a *.npmrc* file already, create a new one in the root of your project (in the same folder as your *package.json*). Open your new *.npmrc* file and paste the snippet you just copied in the previous step.
+    :::image type="content" source="../media/connect-to-feed-npm-registry-azure-devops-newnav.png" alt-text="A screenshot displaying how to set up your npm project in Azure Artifacts.":::
 
 #### [NuGet](#tab/nuget/)
 
-1. Select **Artifacts**, and then select your feed. 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Connect to feed**, and then choose **NuGet.exe**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-    :::image type="content" source="../media/nuget-connect-to-feed.png" alt-text="Screenshot showing how to connect to NuGet feeds.":::
+1. Select **NuGet.exe** from the left navigation pane, then copy the XML snippet provided in the **Project Setup** section.
 
-1. Copy the XML snippet in the **Project Setup** section.
+1. Create a new *nuget.config* file in the root of your project, and paste in the XML snippet you copied in the previous step.
 
-1. Create a new file named *nuget.config* in the root of your project.
+#### [Python](#tab/pip/)
 
-1. Paste the XML snippet in your config file.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-#### [Pip](#tab/pip/)
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-1. Select **Artifacts**, and then select your feed from the dropdown list.
-
-1. Select **Connect to feed**, and then select **pip** under the Python section.
-
-    :::image type="content" source="../media/project-setup-pip.png" alt-text="A screenshot showing how to connect to a feed with pip projects.":::
+1. Select **pip** from the left navigation pane.
 
 1. Create a [virtual environment](https://go.microsoft.com/fwlink/?linkid=2103878) if you haven't done so already.
 
-1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) file to your virtualenv and paste the following snippet:
-
-    ```command
-    [global]
-    index-url=https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/simple/
-    ```
+1. Add a *pip.ini* (Windows) or *pip.conf* (Mac/Linux) file to your virtualenv and paste in the snippet provided in the **Project setup** section.
 
 #### [Maven](#tab/maven/)
 
-1. Select **Artifacts**, and then select your feed from the dropdown list.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Connect to feed**, and then select **Maven**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-    :::image type="content" source="../media/project-setup-maven.png" alt-text="A screenshot showing how to connect to a feed with Maven projects.":::
+1. Select **Maven** from the left navigation pane.
 
-1. Add the following snippet to the `<repositories>` and `<distributionManagement>` sections in your pom.xml:
+1. Add the snippet provided in the **Project setup** section to the `<repositories>` and `<distributionManagement>` sections in your *pom.xml*. Your file should look similar to the following:
 
-    ```command
+    ```xml
     <repository>
       <id>[FEED-NAME]</id>
       <url>https://pkgs.dev.azure.com/[ORGANIZATION-NAME]/_packaging/[FEED-NAME]/maven/v1</url>
@@ -121,9 +95,9 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     </repository>
     ```
 
-1. Add a `<server>` to your settings.xml file:
+1. Paste the provided `<server>` snippet into your *settings.xml* file. You file should look similar to this:
 
-    ```command
+    ```xml
     <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -138,19 +112,19 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     </settings>
     ```
 
-1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes and paste your personal access token into the `<password>` tag in your settings.xml file.
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes and paste your personal access token into the `<password>` tag in your *settings.xml* file.
 
 #### [Gradle](#tab/gradle/)
 
-1. Select **Artifacts**, and then select your feed from the dropdown list.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Connect to feed**, and then select **Gradle**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
 
-    :::image type="content" source="../media/project-setup-gradle.png" alt-text="A screenshot showing how to connect to a feed with Gradle projects.":::
+1. Select **Gradle** from the left navigation pane.
 
-1. Add the following snippet to the *repositories* and *publishing* sections in your build.gradle file:
+1. Add the snippet provided in the **Project setup** section to the *repositories* and *publishing* sections in your *build.gradle* file. Your file should resemble the following:
 
-    ```command
+    ```
     maven {
         url 'https://pkgs.dev.azure.com/[ORGANIZATION-NAME]/_packaging/[FEED-NAME]/maven/v1'
         name '[FEED-NAME]'
@@ -160,9 +134,9 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     }
     ```
 
-1. Add a `<server>` to your settings.xml file:
+1. Paste the provided `<server>` snippet into your *settings.xml* file. Your file should resemble the following:
 
-    ```command
+    ```xml
     <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -177,179 +151,168 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     </settings>
     ```
 
-1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes. Paste your personal access token into the `<password>` tag in your settings.xml file.
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes. Paste your personal access token into the `<password>` tag in your *settings.xml* file.
+
+#### [Cargo](#tab/cargo/)
+
+1. Sign in to your Azure DevOps organization, and navigate to your project.
+
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
+
+1. Select **Cargo** from the left navigation pane.
+
+1. Add the snippet provided in the **Project setup** section to your *cargo/config.toml* file in your source repository. Your *config.toml* file should resemble the following:
+
+      ```
+        [registries]
+        FEED_NAME = { index = "sparse+https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/Cargo/index/" }
+        ```
+
+1. Add the second snippet provided in the **Project setup** section to your *cargo/config.toml* file to replace the *crates.io* source with your feed. Your file should resemble the following:
+
+    ```
+    [source.crates-io]
+    replace-with = "FEED_NAME"
+    ```
+
+1. [Configure a credential provider](../cargo/project-setup-cargo.md#configure-a-credential-provider)
+
+1. [Log in to the registry](../cargo/project-setup-cargo.md#log-in-to-the-registry)
 
 - - -
 
 ## Restore packages
 
-Now that you enabled upstream sources and set up your configuration file, you can now run the package restore command to query the upstream source and retrieve the upstream packages.
+Now that you've enabled upstream sources and authenticated with your feed, select the appropriate tab based on your package type, and follow the instructions to restore packages from public registries into your Azure Artifacts feed.
 
-To restore packages using Azure Pipelines instead, see [Restore Maven packages with Azure Pipelines (YAML/Classic)](../../pipelines/packages/maven-restore.md) for detailed steps. 
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 # [npm](#tab/npmrestore)
 
-Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
+1. Remove the *node_modules* folder from your project.
 
-```Command
-npm install --force
-```
+1. Open a command prompt window and run the following command to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    npm install --force
+    ```
 
 > [!NOTE]
-> The `--force` argument will force pull remotes even if a local copy exists. 
+> The `--force` flag ensures that packages are pulled from the remote source even if a local copy exists.
 
 # [NuGet](#tab/nugetrestore)
 
-1. Clear your local cache:
+1. Clear your local cache.
 
     ```Command
     nuget locals -clear all
     ```
 
-1. Restore your NuGet packages:
+1. Open a command prompt window and run the following command to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
     ```Command
     nuget.exe restore
     ```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-# [dotnet](#tab/dotnet)
-
-Run the following command in your project directory:
-
-```Command
-dotnet restore --interactive
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
 
 # [Python](#tab/python)
 
-Run the following command in your project directory:
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-```Command
-pip install
-```
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    pip install
+    ```
 
 # [Maven](#tab/mavenrestore)
 
-Run the following command in your project directory:
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-```Command
-mvn install
-```
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    mvn install
+    ```
 
 # [Gradle](#tab/gradlerestore)
 
-Run the following command in your project directory:
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-```Command
-gradle build
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    gradle build
+    ```
 
 # [Cargo](#tab/cargorestore)
 
-Run the following command in your project directory:
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-```Command
-cargo build
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    cargo build
+    ```
 
 - - -
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="azure-devops-2020"
 
-# [npm](#tab/npmserver)
+# [npm](#tab/npmrestoreserver)
 
-Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
+1. Remove the *node_modules* folder from your project.
 
-```Command
-npm install --force
-```
+1. Open a command prompt window and run the following command to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    npm install --force
+    ```
 
 > [!NOTE]
-> The `--force` argument will force pull remotes even if a local copy exists. 
+> The `--force` flag ensures that packages are pulled from the remote source even if a local copy exists.
 
-# [NuGet](#tab/nugeserver)
+# [NuGet](#tab/nugetrestoreserver)
 
-1. Clear your local cache:
+1. Clear your local cache.
 
     ```Command
     nuget locals -clear all
     ```
 
-1. Restore your NuGet packages:
+1. Open a command prompt window and run the following command to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
     ```Command
     nuget.exe restore
     ```
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+# [Python](#tab/pythonrestoreserver)
 
-# [dotnet](#tab/dotnetserver)
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-Run the following command in your project directory:
+    ```Command
+    pip install
+    ```
 
-```Command
-dotnet restore --interactive
-```
+# [Maven](#tab/mavenrestoreserver)
 
-Your feed now should have a saved copy of any packages you installed from upstream.
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-# [Python](#tab/pythonserver)
+    ```Command
+    mvn install
+    ```
 
-Run the following command in your project directory:
+# [Gradle](#tab/gradlerestoreserver)
 
-```Command
-pip install
-```
+- Open a command prompt window and run the following command in your project directory to restore your packages. Once completed, your feed should have a saved copy of any packages installed from upstream.
 
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-# [Maven](#tab/mavenserver)
-
-Run the following command in your project directory:
-
-```Command
-mvn install
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
-
-# [Gradle](#tab/gradleserver)
-
-Run the following command in your project directory:
-
-```Command
-gradle build
-```
-
-Your feed now should have a saved copy of any packages you installed from upstream.
+    ```Command
+    gradle build
+    ```
 
 - - -
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
-- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
-- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
-- [Feed permissions](../feeds/feed-permissions.md)
-- [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)
+- [Manage permissions](../feeds/feed-permissions.md)
+
+- [Publish & download pipeline artifacts](../../pipelines/artifacts/pipeline-artifacts.md)
+
+- [Publish symbols with Azure Pipelines](../../pipelines/artifacts/symbols.md)

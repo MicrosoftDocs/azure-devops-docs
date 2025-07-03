@@ -7,7 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 08/17/2023
+ms.date: 06/09/2025
 monikerRange: "<=azure-devops"
 ---
 
@@ -15,7 +15,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-gt-eq-2019](../includes/version-gt-eq-2019.md)]
 
-This is a step-by-step guide on common ways to customize your pipeline.
+This article is a step-by-step guide on common ways to customize your pipeline.
 
 ## Prerequisite
 
@@ -25,7 +25,7 @@ Follow instructions in [Create your first pipeline](create-first-pipeline.md) to
 
 A pipeline is defined using a YAML file in your repo. Usually, this file is named `azure-pipelines.yml` and is located at the root of your repo.
 
-Navigate to the **Pipelines** page in Azure Pipelines, select the pipeline you created, and choose **Edit** in the context menu of the pipeline to open the YAML editor for the pipeline. 
+Go to the **Pipelines** page in Azure Pipelines, select the pipeline you created, and select **Edit** in the context menu of the pipeline to open the YAML editor. 
 
 > [!NOTE]
 > For instructions on how to view and manage your pipelines in the Azure DevOps portal, see [View and manage your pipelines](create-first-pipeline.md#view-and-manage-your-pipelines).
@@ -56,7 +56,7 @@ Examine the contents of the YAML file.
    > The contents of your YAML file may be different depending on the sample repo you started with, or upgrades made in Azure Pipelines.
     
 
-This pipeline runs whenever your team pushes a change to the main branch of your repo or creates a pull request. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
+The pipeline runs whenever your team pushes a change to the main branch of the repo or creates a pull request. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
 
 ## Change the platform to build on
 
@@ -71,7 +71,7 @@ You can build your project on [Microsoft-hosted agents](../pipelines/agents/host
       vmImage: "ubuntu-latest"
     ```
 
-* To choose a different platform like Windows or Mac, change the `vmImage` value:
+* To switch to a different platform like Windows or Mac, change the `vmImage` value:
 
     ```yaml
     pool:
@@ -94,12 +94,11 @@ You can add more **scripts** or **tasks** as steps to your pipeline. A task is a
 * Add the following snippet to the end of your YAML file.
 
     ```yaml
-    - task: PublishCodeCoverageResults@1
+    - task: PublishCodeCoverageResults@2
       inputs:
-        codeCoverageTool: "JaCoCo"
-        summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml"
-        reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco"
-        failIfCoverageEmpty: true
+        summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml" # Path to summary files
+        reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco" # Path to report directory
+        failIfCoverageEmpty: true # Fail if code coverage results are missing
     ```
     
 * Select **Save** and then confirm the changes.
@@ -249,7 +248,7 @@ From the **Pipeline settings** pane you can configure the following settings.
   * **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
   * **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. All build policies using a disabled pipeline will show "Unable to queue Build" message next to the build policy in the PR overview window and the status of the build policy will be broken. 
 * **YAML file path** - If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
-* **Automatically link work items included in this run** - The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When **Automatically link work items included in this run** is selected, you must specify either a specific branch, or `*` for all branches, which is the default. If you specify a branch, work items are only associated with runs of that branch. If you specify `*`, work items are associated for all runs. 
+* **Automatically link work items included in this run** - The changes associated with a given pipeline run might have work items associated with them. Select this option to link those work items to the run. When **Automatically link work items included in this run** is selected, you must specify either a specific branch, or `*` for all branches, which is the default. If you specify a branch, work items are only associated with runs of that branch. If you specify `*`, work items are associated for all runs. 
 
   :::image type="content" source="media/customize-pipeline/link-work-items.png" alt-text="Screenshot of setting to automatically link work items included in this run.":::
 
@@ -267,7 +266,7 @@ To support security of your pipeline operations, you can add users to a built-in
 
 ::: moniker range="azure-devops"
 
-YAML pipelines don't have a [Create work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. Classic build pipelines are single stage, and **Create work item on failure** applies to the whole pipeline. YAML pipelines can be multi-stage, and a pipeline level setting may not be appropriate. To implement **Create work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work-items/create) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command at the desired point in your pipeline. 
+YAML pipelines don't have a [Create work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. Classic build pipelines are single stage, and **Create work item on failure** applies to the whole pipeline. YAML pipelines can be multi-stage, and a pipeline level setting may not be appropriate. To implement **Create work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work-items/create) REST API call, or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command at the desired point in your pipeline. 
 
 The following example has two jobs. The first job represents the work of the pipeline, but if it fails, the second job runs, and creates a bug in the same project as the pipeline.
 

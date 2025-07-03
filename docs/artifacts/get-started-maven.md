@@ -5,12 +5,12 @@ ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.date: 07/01/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Get started with Maven packages in Azure Artifacts
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enables developers to manage their dependencies from a single feed while providing control over package sharing. With Azure Artifacts feeds, you can publish and restore Maven packages, and set up upstream sources to consume packages from public registries like Maven Central, Google Maven Repository, Gradle Plugins, and JitPack. This article will guide you through setting up your Maven project, connecting to an Azure Artifacts feed, and publishing and restoring your Maven packages.
 

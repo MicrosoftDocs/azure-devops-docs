@@ -114,7 +114,7 @@ landingContent:
             url: ./github/link-to-from-github.md
       - linkListType: concept
         links:
-          - text: Link work items to other objects
+          - text: Link work items to objects
             url: ./backlogs/add-link.md
       - linkListType: tutorial
         links:
@@ -160,8 +160,6 @@ landingContent:
         links:
           - text: Fix reordering & nesting issues
             url: ./backlogs/resolve-backlog-reorder-issues.md
-          - text: Set up your Backlogs & Boards
-            url: ./backlogs/set-up-your-backlog.md
           - text: FAQs 
             url: faqs.yml
   - title: Quick reference

@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 03/12/2025
+ms.date: 07/02/2025
 ---
 
 # View and configure team velocity
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Velocity metrics provide valuable insights that help teams plan and [forecast](../../boards/sprints/forecast.md) sprints, and evaluate how accurately they estimate and meet planned commitments. These metrics indicate how much work a team can complete during a sprint, based on either **the count of work items completed** or **the sum of estimates** for effort (product backlog items), story points (user stories), or size (requirements). Use velocity to aid in determining team capacity, but don't confuse it with key performance indicators.
 
@@ -23,11 +23,18 @@ Velocity metrics provide valuable insights that help teams plan and [forecast](.
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 > [!TIP]
-> The images in this article might differ from what you see in your web portal. These differences can be due to updates to your web app, options enabled by you or your admin, and the process chosen when creating your project (Agile, Basic, Scrum, or CMMI). The Basic process is available starting from Azure DevOps Server 2019 Update 1.
+> The images in this article might differ from what you see in your web portal. These differences can be due to updates to your web app, options enabled by you or your admin, and the process chosen when creating your project (Agile, Basic, Scrum, or CMMI).
+
+## Understand velocity numbers
+
+**Velocity** represents the amount of work your team completed in past sprints, which helps predict future capacity:
+
+- **When tracking by count**: Velocity shows the number of work items (user stories, bugs, tasks) completed per sprint
+- **When tracking by sum**: Velocity shows the total story points, effort hours, or size estimates completed per sprint
+
+For example, if your team completed user stories worth 25 story points in Sprint 1, 30 story points in Sprint 2, and 28 story points in Sprint 3, your average velocity is approximately 28 story points per sprint. This average helps you plan how much work to commit to in future sprints.
 
 ## Velocity chart types
-
-::: moniker range=">= azure-devops-2020"
 
 You can choose between two Velocity charts: the in-context Velocity chart from the Backlogs page and the Velocity widget for dashboards. Both charts help you quickly understand the workflow state categories described in the following table.
 
@@ -61,14 +68,10 @@ You can configure each chart in the following ways:
 - Number of iterations.  
 
 The widget offers more configuration options. For more information, see [Configure and view Velocity charts](team-velocity.md).
- 
-::: moniker-end
 
 <a id="velocity-chart"></a>
 
 ## View the Velocity in-context report   
-
-::: moniker range=">= azure-devops-2020" 
 
 Velocity reports are available for both product and portfolio backlogs. Each report includes interactive controls, allowing users to customize the view to their specific interests.
 
@@ -96,8 +99,6 @@ Velocity reports are available for both product and portfolio backlogs. Each rep
 6. Select the dashboard and select **OK**.  
 
 7. To return to the Analytics summary, select the :::image type="icon" source="../../media/icons/back-arrow.png" border="false"::: back arrow.
-
-::: moniker-end
 
 ## Configure the Velocity widget    
 

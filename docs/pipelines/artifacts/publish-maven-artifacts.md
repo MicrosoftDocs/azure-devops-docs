@@ -1,22 +1,22 @@
 ---
-title: Publish Maven artifacts
+title: Publish Maven artifacts with Azure Pipelines
 description: Learn how to publish Maven artifacts to internal and external feed using Azure Pipelines.
 ms.topic: how-to
-ms.date: 11/18/2024
-monikerRange: '<= azure-devops'
+ms.date: 06/30/2025
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Publish Maven artifacts with Azure Pipelines (YAML/Classic)
 
-Using Azure Pipelines, you can publish your Maven artifacts to Azure Artifacts feeds in your organization, in other organizations, and to public registries such as Maven Central. This article will guide you through publishing your Maven artifacts using both YAML and Classic pipelines.
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
+Azure Pipelines enables developers to publish Maven artifacts to Azure Artifacts feeds within the same organization, across other organizations, and to public registries such as Maven Central. This article guides you through publishing your Maven artifacts using both YAML and Classic pipelines.
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
-
-- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
-
-- An Azure Artifacts feed. [Create one for free](../../artifacts/get-started-maven.md#create-a-feed).
+| **Product**        | **Requirements**   |
+|--------------------|--------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../../artifacts/start-using-azure-artifacts.md#create-a-new-feed).<br> - A [working pipeline](../create-first-pipeline.md).<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project, you must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections, you must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md). |
 
 ## Publish packages to a feed in the same organization
 
@@ -34,18 +34,18 @@ Using Azure Pipelines, you can publish your Maven artifacts to Azure Artifacts f
 2. Select **Pipelines**, and then select your pipeline definition. 
 ::: moniker-end
 
-3. Select **Edit**, and then add the following snippet to your YAML pipeline.
+3. Select **Edit**, and then add the following snippet to your YAML pipeline:
 
-```yml
-steps:
-- task: MavenAuthenticate@0
-  displayName: 'Authenticate to Azure Artifacts feed'
-  inputs:
-    artifactsFeeds: 'MavenDemo,MavenDemoFeed2'        ## Select one or multiple feeds to authenticate with.
-- script: |
-   mvn deploy
-  displayName: 'Publish'
-```
+    ```yml
+    steps:
+    - task: MavenAuthenticate@0
+      displayName: 'Authenticate to Azure Artifacts feed'
+      inputs:
+        artifactsFeeds: 'MavenDemo,MavenDemoFeed2'        ## Select one or multiple feeds to authenticate with.
+    - script: |
+       mvn deploy
+      displayName: 'Publish'
+    ```
 
 #### [Classic](#tab/classic/)
 
@@ -61,29 +61,32 @@ steps:
 2. Select **Pipelines**, and then select your pipeline definition. 
 ::: moniker-end
 
-3. Select **Edit**, and then select the `+` sign to add a new task. Add the *Maven Authenticate* and *Command line* tasks to your pipeline definition and configure them as follows:
+3. Select **Edit**, and then select the `+` sign to add a new task. Add the **Maven Authenticate** and **Command line** tasks to your pipeline definition and configure them as follows:
 
     1. **Maven Authenticate**: Select one or multiple feeds from the **Feeds** dropdown menu.
 
     1. **Command line task**:
-        - **Display name**: Publish.
-        - **Script**: 
-            ```
-            mvn deploy
-            ```
+        - **Display name**: Publish
+        - **Script**: `mvn deploy`
 
 4. Select **Save & queue** when you're done.   
 
 ---
 
 > [!NOTE]
-> To publish packages to a feed using Azure Pipelines, make sure that both the *Project Collection Build Service* and your project's *Build Service* identities have the **Feed Publisher (Contributor)** role in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
+> To publish packages to a feed using Azure Pipelines, make sure that both the **Project Collection Build Service** and your project's **Build Service** identities are assigned the **Feed Publisher (Contributor)** role in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
 
-## Publish packages to a feed in another organization
+## Publish packages to a feed in a different organization
 
-To publish your packages to a feed in another Azure DevOps organization, you must first create a personal access token in the target organization.
+To publish packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization, and then use that PAT to create a service connection and authenticate with the target feed.
 
-Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope.  Copy your personal access token as you'll need it in the following section.
+#### Create a personal access token
+
+1. Navigate to the organization that hosts the target feed.
+
+1. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope.
+
+1.  Copy your personal access token as you'll need it in the following section.
 
 #### Create a service connection
 
@@ -93,9 +96,12 @@ Navigate to the organization hosting your target feed and [Create a personal acc
 
 1. Select **New service connection**, select **Maven**, and then select **Next**. 
 
-1. Select **Username and Password** as the **Authentication method**, and then enter your **Repository URL** and your **Repository Id**.
+1. For **Authentication method**, select **Username and Password**. Enter your **Repository URL** and your **Repository Id**.
 
-1. Enter your **Username** (a placeholder, as Azure Pipelines will use your `pom.xml` configuration file and the personal access token you created earlier to authenticate). For **Password**, paste your personal access token. Provide a **Name** for your service connection, and check the **Grant access permission to all pipelines** checkbox.
+1. In the **Username**  field, enter any string value (this is required, but Azure Pipelines will use your `pom.xml` configuration and the personal access token you created earlier for authentication). 
+    - For **Password**, paste the personal access token you created earlier.
+    - Provide a **Name** for your service connection.
+    - Check the **Grant access permission to all pipelines** checkbox.
 
 1. Select **Save** when you're done.
 
@@ -107,19 +113,19 @@ Navigate to the organization hosting your target feed and [Create a personal acc
 
 1. Select **Pipelines**, and then select your pipeline definition.
 
-1. Select **Edit**, and then add the following snippet to your YAML pipeline.
+1. Select **Edit**, and then add the following snippet to your YAML pipeline:
 
-```yaml
-steps:
-- task: MavenAuthenticate@0
-  displayName: 'Authenticate to Azure Artifacts feed'
-  inputs:
-    MavenServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION> 
-
-- script: |
-   mvn deploy
-  displayName: 'Publish'
-```
+    ```yaml
+    steps:
+    - task: MavenAuthenticate@0
+      displayName: 'Authenticate to Azure Artifacts feed'
+      inputs:
+        MavenServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION> 
+    
+    - script: |
+       mvn deploy
+      displayName: 'Publish'
+    ```
 
 #### [Classic](#tab/classic/)
 
@@ -141,16 +147,13 @@ steps:
 
 ::: moniker-end
 
-3. Select **Edit**, and then select the `+` sign to add a new task. Add the *Maven Authenticate* and *Command line* tasks to your pipeline definition and configure them as follows:
+3. Select **Edit**, and then select the `+` icon to add a new task. Add the **Maven Authenticate** and **Command line** tasks to your pipeline definition and configure them as follows:
 
-    1. **Maven Authenticate**: Select your service connection from the **Credentials for repositories outside this organization/collection** dropdown menu.
+    1. **Maven Authenticate**: From the **Credentials for repositories outside this organization/collection** dropdown, select your service connection.
 
     1. **Command line task**:
         - **Display name**: Publish.
-        - **Script**: 
-            ```
-            mvn deploy
-            ```
+        - **Script**: `mvn deploy`
 
 4. Select **Save & queue** when you're done.
 
@@ -159,5 +162,7 @@ steps:
 ## Related content
 
 - [Maven Authenticate v0 task](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0)
+
 - [Use the .artifactignore file](../../artifacts/reference/artifactignore.md)
+
 - [Publish and download pipeline artifacts](pipeline-artifacts.md)

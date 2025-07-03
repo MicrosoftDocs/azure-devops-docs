@@ -6,6 +6,7 @@ ms.topic: quickstart
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 06/21/2024
+ms.update-cycle: 180-days
 ms.collection: ce-skilling-ai-copilot
 monikerRange: '>= azure-devops-2020'
 ---

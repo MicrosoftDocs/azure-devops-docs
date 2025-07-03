@@ -8,7 +8,7 @@ ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 04/07/2025
+ms.date: 06/24/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Setting up billing in Azure DevOps is essential for managing costs associated with users, CI/CD concurrency, and extensions. This article guides you through the process to [set up billing](#set-up-billing-for-your-organization), [change your Azure subscription](#change-your-billing-subscription), [remove your billing subscription](#remove-your-billing-subscription), and [give a user access to manage billing](#give-a-user-access-to-manage-billing).
+This article guides you through managing billing in Azure DevOps, which is essential for controlling costs associated with users, CI/CD concurrency, and extensions. You'll learn how to [set up billing](#set-up-billing-for-your-organization), [change your Azure subscription](#change-your-billing-subscription), [remove your billing subscription](#remove-your-billing-subscription), and [give a user access to manage billing](#give-a-user-access-to-manage-billing).
 
 *All services are billed via Azure*. You're not required to use any other Azure services.
 
@@ -77,7 +77,7 @@ Billing is set up for your Azure DevOps organization. You can [review your indiv
 
 ## Change your billing subscription
 
-You might need to change the Azure subscription for your Azure DevOps organization's billing if the subscription is linked to a former user. Consider switching to a shared subscription or removing the billing arrangement. You can [remove your billing subscription](#remove-your-billing-subscription) anytime. [Migrating between resource groups isn't supported](billing-faq.yml).
+You might need to change the Azure subscription for your Azure DevOps organization's billing if the subscription is linked to a former user. Consider switching to a shared subscription or removing the billing arrangement. You can [remove your billing subscription](#remove-your-billing-subscription) anytime. [Migrating between resource groups isn't supported](billing-faq.yml). If billing is set up for an organization that you don't recognize, you can [look up the owner for organizations connected to your Microsoft Entra ID](../accounts/get-list-of-organizations-connected-to-microsoft-entra-id.md).
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -130,13 +130,13 @@ Assign any of the following roles to a user under the subscription your organiza
 > [!NOTE]
 > The user must accept their email invitation before they can access the Azure subscription, if they aren't in your directory.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Pay for users](buy-basic-access-add-users.md)
 
-## Related articles
+## Related content
 
-* [Increase Azure Artifacts storage limit](../../artifacts/start-using-azure-artifacts.md#increase-azure-artifacts-storage-limit)
+* [Increase Azure Artifacts storage limit](../../artifacts/start-using-azure-artifacts.md#increase-artifacts-storage-limit)
 * [Buy Azure Test Plans](buy-basic-access-add-users.md)
 * [Learn about cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)

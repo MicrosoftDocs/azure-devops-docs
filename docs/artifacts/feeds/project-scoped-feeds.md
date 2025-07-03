@@ -4,13 +4,13 @@ description: Learn the differences between project-scoped and organization-scope
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 10/24/2024
-monikerRange: '<= azure-devops'
+monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
 # Feed scopes: Project vs organization feeds
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Azure Artifacts enables developers to manage their dependencies from a single feed. A feed acts as an organizational space to host various types of packages, giving you control over who can access it, whether it's team members within your organization or even public users.
 
@@ -42,7 +42,7 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
 | **Visibility**    | Inherits the visibility of the project.                                                                       | Always private by default.                                                        |
 | **Links**         | The URL includes the project name.<br>Example: `https://pkgs.dev.azure.com/<ORG_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json` | The URL does not include a project.<br>Example: `https://pkgs.dev.azure.com/<ORG_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json` |
 | **User Interface**| Visible only after navigating to the project that hosts the feed.                                              | Always available from the feeds dropdown menu.                                     |
-| **Connection**    | To access a feed from a pipeline running in a different project within the same organization, the **Project Collection Build Service** and the project's **Build Service** identity of the project running the pipeline must be granted the **Feed Publisher (Contributor)** role in feed settings. | You only need to assign the **Project Collection Build Service** the **Feed Publisher (Contributor)** role in feed settings. |
+| **Connection**    | To access a feed from a pipeline running in a different project within the same organization, both the **Project Collection Build Service** and the project's **Build Service** of the project running the pipeline must be granted the appropriate role. | Only the **Project Collection Build Service** needs to be granted the appropriate role. |
 
 > [!NOTE]
 > To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > selecting the ellipsis button on the right for the specified view > then selecting **Edit**.
@@ -62,11 +62,15 @@ A: To make specific packages in your feed accessible to all users in your organi
 
 #### Q: How can I access a project-scoped feed in another project from my pipeline?
 
-To allow a pipeline to access a project-scoped feed in a different project, you need to grant the pipeline access to both the project where the feed is scoped and to the feed itself.
+To allow a pipeline to access a project-scoped feed in a different project, you need to grant access both at the project level (where the feed is hosted) and the feed level.
 
-- **Project permissions**: navigate to the project hosting the feed, select **Project settings** > **Permissions** and then add your pipeline's *project build service* to the Contributors group or any group that grants contributor access.
+- **Project permissions**: Navigate to the project hosting the feed, select **Project settings** > **Permissions** and then add your pipeline's *project build service* to the **Readers** group.
 
-- **Feed permissions**: navigate to the feed you want to access, select  **Settings** > **Feed permissions**, and then add your *project build service* as a **Feed and Upstream Reader (Collaborator)**. The *Project build service* identity is formatted as follows: `[Project name] Build Service ([Organization name])` (for example, FabrikamFiber Build Service (codesharing-demo)).
+- **Feed permissions**: Navigate to the feed you want to access, select  **Settings** > **Feed permissions**, and then add your *project build service* with one of the following roles:
+    -  **Feed and Upstream Reader (Collaborator)**: If you want to view or download packages from the feed, or save packages from upstream sources.
+    -  **Feed Publisher (Contributor)**: If you want to publish, promote, or deprecate packages, in addition to viewing or downloading packages from the feed, or save packages from upstream sources. 
+
+The *Project build service* identity is formatted as: `[Project name] Build Service ([Organization name])`. Example: *FabrikamFiber Build Service (codesharing-demo)*.
 
 #### Q: How can I download a pipeline artifact from another project within the same organization?
 

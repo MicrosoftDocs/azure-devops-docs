@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 9/4/2024
+ms.date: 6/30/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -38,6 +38,40 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="6"><a href="2025/sprint-258-update.md" data-raw-source="[30 June 2025](2025/sprint-258-update.md)"> June 30 2025</a></td>
+    <td>Azure DevOps MCP Server public preview</td><td>General</td><td>N/A</td></tr>
+    <td>New organizations won't offer public projects</td><td>General</td><td>N/A</td></tr>
+    <td>One click enablement for dependency scanning now in public preview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Service hooks for GitHub Advanced Security for Azure DevOps alerts generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Syntax highlighting support for Kusto Query Language</td><td>Repos</td><td>Future</td></tr>
+    <td>Ability to associate Java, JavaScript and Python tests to manual test cases</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="13"><a href="2025/sprint-257-update.md" data-raw-source="[16 June 2025](2025/sprint-257-update.md)"> June 16 2025</a></td>
+    <td>GitHub Advanced Security is now available as GitHub Secret Protection and Code Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Restrict personal access token (PAT) creation organization policy now in public preview</td><td>General</td><td>Future</td></tr>
+    <td>Removal of expired Azure DevOps OAuth Apps</td><td>General</td><td>N/A</td></tr>
+    <td>New Microsoft Entra OAuth scopes</td><td>General</td><td>Future</td></tr>
+    <td>Request Access URL availability</td><td>General</td><td>Future</td></tr>
+    <td>Managed DevOps Pools - Image Deprecations</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>New Triggers page</td><td>Pipelines</td><td>Future</td></tr>
+    <td>StringList parameter type</td><td>Pipelines</td><td>Future</td></tr>
+    <td>See the full YAML code of a pipeline run</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Introducing New Test Plans directory</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Advanced Test Case result history</td><td>Test Plans</td><td>Future</td></tr>
+    <td>View Test Case State in Execute tab</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Default resume for paused test case</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="7"><a href="2025/sprint-256-update.md" data-raw-source="[19 May 2025](2025/sprint-256-update.md)"> May 19 2025</a></td>
+    <td>Advanced Security now accepts results with URI locations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>GitHub Integration: Pull Request Mentions</td><td>Boards</td><td>Future</td></tr>
+    <td>Windows Server 2019 hosted image deprecation schedule</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Support for Jupyter Notebook Diffing in PR</td><td>Repos</td><td>Future</td></tr>
+    <td>Support for YAML pipelines in Test Plans</td><td>Test Plans</td><td>Future</td></tr>
+    <td>View Recent Test Results in Test Case</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Available Data for Rollup Columns in backlog</td><td>Reporting</td><td>Future</td></tr>
+<tr>
     <td rowspan="3"><a href="2025/sprint-255-update.md" data-raw-source="[23 April 2025](2025/sprint-255-update.md)"> 23 April 2025</a></td>
     <td>Manage high privilege scopes, pipeline decorators, and unpublished extensions</td><td>General</td><td>Future</td></tr>
     <td>Advanced Security now accepts results with URI locations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
@@ -58,7 +92,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Retirement of action logging and switch to screen recording</td><td>Test Plans</td><td>Future</td></tr>
     <td>Auto-pause manual test run</td><td>Test Plans</td><td>Future</td></tr>
  <tr>
-    <td rowspan="14"><a href="2025/sprint-253-update.md" data-raw-source="[20 March  2025](2025/sprint-253-update.md)"> 20 March  2025</a></td>
+    <td rowspan="13"><a href="2025/sprint-253-update.md" data-raw-source="[20 March  2025](2025/sprint-253-update.md)"> 20 March  2025</a></td>
     <td>Overlapping secrets for Azure DevOps OAuth </td><td>General</td><td>Future</td></tr>
     <td>Deprecation of Languages statistics tags from the Project Summary Page </td><td>General</td><td>Future</td></tr>
     <td>Delivery Plans permission added </td><td>General</td><td>Future</td></tr>
@@ -69,7 +103,6 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Hosted image updates</td><td>Pipelines</td><td>Future</td></tr>
     <td>Workload identity federation uses Entra issuer</td><td>Pipelines</td><td>Future</td></tr>
     <td>Gradle@4 task</td><td>Pipelines</td><td>Future</td></tr>
-    <td>stringList parameter type</td><td>Pipelines</td><td>Future</td></tr>
     <td>Identity of user who requested a stage to run</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improvements on the Publish code coverage results v2 task</td><td>Test Plans</td><td>Future</td></tr>
     <td>Export test cases with custom columns in XLSX</td><td>Test Plans</td><td>Future</td></tr>
@@ -125,7 +158,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New release version for Test and Feedback Extensions (TFE)</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
-    <td rowspan="14"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
+    <td rowspan="16"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
     <td>Copy code block to clipboard </td><td>General</td><td>Future</td></tr>
     <td>Entra Profile information </td><td>General</td><td>Future</td></tr>
     <td>Pull request annotations for dependency and code scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>

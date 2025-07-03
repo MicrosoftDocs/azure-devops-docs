@@ -26,7 +26,7 @@
     href: auth-overview.md
   - name: Authenticate with SSH
     href: use-ssh-keys-to-authenticate.md
-  - name: Authenticate with the Git Credential Manager
+  - name: Authenticate with Git Credential Manager
     href: set-up-credential-managers.md
 - name: Key concepts
   items:
@@ -180,7 +180,7 @@
 - name: Samples
   items:
   - name: Azure DevOps Samples for .NET
-    href: https://github.com/Microsoft/azure-devops-dotnet-samples
+    href: ../../integrate/get-started/client-libraries/samples.md?toc=/azure/devops/repos/toc.json
 - name: Command reference
   items:
   - name: Git commands

@@ -8,25 +8,18 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: "<=azure-devops"
-ms.date: 11/22/2024
+monikerRange: '<= azure-devops'
+ms.date: 07/01/2025
+# customer intent: As a team member, I want to configure my backlog view options so that I can organize, prioritize, and track work items effectively for my team's workflow and project requirements. -->
 ---
 
 # Configure your backlog view in Azure Boards
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Backlogs in Azure DevOps are essential tools that support a wide range of project management tasks. They enable teams to:
+Backlogs help teams define, prioritize, and organize work hierarchically while assigning tasks to iterations and forecasting progress. Each backlog is a shared team resource where changes to items, priorities, and parent-child links are instantly visible to all team members.
 
-- **Define work to be done**: Outline and document the tasks and deliverables required for project completion.
-- **Prioritize work**: Order work items based on their importance and urgency to ensure the most critical tasks are addressed first.
-- **Organize work hierarchically**: Group related tasks into parent-child relationships for better structure and clarity.
-- **Assign work to iterations**: Allocate tasks to specific timeframes or sprints to manage project phases effectively.
-- **Forecast work**: Predict project progress and identify potential bottlenecks to maintain timely delivery.
-
-Each backlog—whether it's a **product** or **portfolio** backlog—is a shared resource accessible to all team members. When you add backlog items, set priorities, or establish parent-child links between work items, these changes are instantly visible to the entire team upon refreshing their backlog view.
-
-To maximize the effectiveness of your backlog management, it's crucial to configure your view options in a way that aligns with your team's workflow and project requirements.
+This article shows you how to configure your backlog view options—including backlog levels, view settings, column options, and filtering—to align with your team's workflow and project requirements.
 
 ## Prerequisites
 
@@ -42,33 +35,33 @@ To maximize the effectiveness of your backlog management, it's crucial to config
 
 ## Backlog configuration options
 
-You can customize your backlog view using the following tools:
+Customize your backlog view with these configuration tools:
 
-- **Expand/collapse one level**
-- **Column options**
-- **Backlog level selector**
-- **View options**
-- **Filter toolbar**
+- **Expand/collapse one level**: Show or hide hierarchical work item relationships
+- **Column options**: Select which fields display as columns
+- **Backlog level selector**: Switch between product and portfolio backlogs
+- **View options**: Control visibility of parents, forecasting, filters, and planning panes
+- **Filter toolbar**: Find specific work items by keywords, tags, or field values
 
-Each backlog level—such as stories, features, and epics (Agile process) or product backlog items, features, and epics (Scrum process)—has its own set of configurable options. These settings remain in effect until you decide to change them.
+Each backlog level (Stories, Features, Epics) maintains separate configuration settings that persist across sessions.
 
 :::image type="content" source="media/configure-view-options/customization-tools.png" alt-text="Screenshot showing the four types of Backlog configuration tool options.":::
 
 ### Expand and collapse the hierarchy
 
-When you select a backlog level, it defaults to a **collapsed view**, displaying only the items associated with that specific level. To view more details, use the ![expand icon](../media/icons/expand_icon.png) and ![collapse icon](../media/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. This action allows you to navigate through the work item structure as needed. Your expand/collapse selections don't persist when you switch to a different page or view.
+Backlog levels default to a **collapsed view** showing only items for that level. Use the ![expand icon](../media/icons/expand_icon.png) and ![collapse icon](../media/icons/collapse_icon.png) icons to show or hide one level of the hierarchy. These settings don't persist when you navigate to other pages.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Expand/Collapse icons that show/hide a hierarchical view.](media/configure-view-options/expand-collapse.png)
 
 ### Use backlog levels
 
-The number of backlog levels available to you gets determined by your team administrator and might include custom work item types or other backlog levels tailored to your team's needs. Each backlog automatically applies the filters associated with the **Area paths** and **Iteration paths** selected for the team.
+Your team administrator configures available backlog levels, which might include custom work item types. Each backlog automatically applies your team's **Area paths** and **Iteration paths** filters.
 
 > [!NOTE]  
-> Before using the tools described in this article, we recommend reviewing [Set up your project's backlogs and boards](set-up-your-backlog.md) to ensure your backlog configurations support your team's requirements.
+> Before configuring these tools, review [Create your backlog](create-your-backlog.md) to ensure your setup supports your team's requirements.
 
-From the **Backlogs** page, you can choose between a **Product Backlog** or a **Portfolio backlog**. To select a backlog, use the backlog level selector located next to the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **View options** icon. The labels within this selector vary based on the process model selected for your project, any customizations made to that process, and configurations set by your team administrator, as illustrated in the following images. 
+Use the backlog level selector (next to the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **View options** icon) to switch between **Product Backlog** and **Portfolio backlog** levels. Available options vary by process model and customizations, as shown in the following table. 
 
 :::row:::
    :::column span="1":::
@@ -98,7 +91,7 @@ From the **Backlogs** page, you can choose between a **Product Backlog** or a **
    :::column-end:::
 :::row-end:::
 
-For information on team configuration of backlog levels, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
+For more information, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
  
 ### Use the view options menu
 
@@ -110,13 +103,13 @@ The :::image type="icon" source="../../media/icons/view-options-icon.png" border
       :::image type="content" source="media/configure-view-options/view-options-menu-cloud.png" alt-text="Screenshot of View options menu, Azure DevOps Services."::: 
    :::column-end:::
    :::column span="3":::
-      - **Parents**: Show the hierarchical grouping of parent-child work items. Useful when adding child work items, reparenting a work item, or displaying rollup columns.  
-      - **Forecasting**: Show the **Forecast** tool and forecast lines. The **Forecast** option only appears for the first-level backlog and depends on the assignment of **Story points**, **Effort**, or **Size**.   
-      - **In progress items**: Show items whose workflow **State** corresponds to an *In progress* workflow state category. If you turn the **In progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In progress state category don't appear in the backlog. For more information about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
-      - **Completed child items**: Show child items that are completed. Typically turn it **On** when reviewing a rollup column.     
-      - **Keep hierarchy with filters**: Maintain the backlog hierarchy when filtering.   
-      - **Mapping**: Shows the **Mapping** pane to support drag-and-drop linking of work items to parent items. The **Mapping** option doesn't appear when you select the highest backlog level configured for your team. 
-      - **Planning**: Shows the **Planning** pane to support drag-and-drop of work items to **Iteration paths**.  
+      - **Parents**: Show hierarchical parent-child relationships. Useful for adding children, reparenting, or viewing rollup columns.  
+      - **Forecasting**: Show forecast tool and lines. Available only for first-level backlogs with assigned **Story points**, **Effort**, or **Size**.   
+      - **In progress items**: Show items in *In progress* workflow states. When off, hides items in *Active*, *Committed*, or *Resolved* states. See [workflow states and state categories](../work-items/workflow-and-state-categories.md).
+      - **Completed child items**: Show completed child items. Turn on when reviewing rollup columns.     
+      - **Keep hierarchy with filters**: Maintain hierarchy when filtering.   
+      - **Mapping**: Show **Mapping** pane for drag-and-drop linking to parents. Not available at the highest backlog level. 
+      - **Planning**: Show **Planning** pane for drag-and-drop assignment to **Iteration paths**.  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -127,23 +120,23 @@ The :::image type="icon" source="../../media/icons/view-options-icon.png" border
       :::image type="content" source="media/configure-view-options/view-options-menu.png" alt-text="Screenshot of View options menu."::: 
    :::column-end:::
    :::column span="3":::
-      - **Parents**: Show the hierarchical grouping of parent-child work items. Useful when adding child work items, reparenting a work item, or displaying rollup columns.  
-      - **Forecasting**: Show the **Forecast** tool and forecast lines. The **Forecast** option only appears for the first-level backlog and depends on the assignment of **Story points**, **Effort**, or **Size**.   
-      - **In progress items**: Show items whose workflow **State** corresponds to an *In progress* workflow state category. If you turn the **In progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In progress state category don't appear in the backlog. For more information about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
-      - **Completed child items**: Show child items that are completed. Typically you turn it **On** when reviewing a rollup column. 
-      - **Mapping**: Shows the **Mapping** pane to support drag-and-drop linking of work items to parent items. The **Mapping** option doesn't appear when you select the highest backlog level configured for your team. 
-      - **Planning**: Shows the **Planning** pane to support drag-and-drop of work items to **Iteration paths**.  
+      - **Parents**: Show hierarchical parent-child relationships. Useful for adding children, reparenting, or viewing rollup columns.  
+      - **Forecasting**: Show forecast tool and lines. Available only for first-level backlogs with assigned **Story points**, **Effort**, or **Size**.   
+      - **In progress items**: Show items in *In progress* workflow states. When off, hides items in *Active*, *Committed*, or *Resolved* states. See [workflow states and state categories](../work-items/workflow-and-state-categories.md).
+      - **Completed child items**: Show completed child items. Turn on when reviewing rollup columns. 
+      - **Mapping**: Show **Mapping** pane for drag-and-drop linking to parents. Not available at the highest backlog level. 
+      - **Planning**: Show **Planning** pane for drag-and-drop assignment to **Iteration paths**.  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
 
 ### Use the filter toolbar 
 
-Enable filtering to locate specific work items based on criteria such as keywords, tags, assignments, or other fields configured via **Column options**. To activate the filter feature, select the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** icon.
+Filter work items by keywords, tags, assignments, or fields configured in **Column options**. Select the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** icon to activate filtering.
 
 :::image type="content" source="media/configure-view-options/filter-toolbar.png" alt-text="Screenshot of backlog filter toolbar.":::
 
-When filtering is active, the backlog displays a flat list of all work items, even if **Parents** is enabled to show hierarchical groupings. The hierarchical view is temporarily suspended until you disable the filter toolbar. The filter toolbar remains visible until you close it.
+When active, filtering displays a flat list and temporarily suspends the hierarchical view, even if **Parents** is enabled. The filter toolbar stays visible until you close it.
 
 For more information, see [Filter backlogs, boards, and plans](filter-backlogs-boards-plans.md).
 
@@ -151,31 +144,31 @@ For more information, see [Filter backlogs, boards, and plans](filter-backlogs-b
 
 ## Filter your backlog and maintain the hierarchy 
  
-You can filter your backlog and maintain the hierarchy of work by choosing show **Parents** and **Keep hierarchy with filters** from the **View options** menu. 
+Filter your backlog while preserving hierarchy by enabling **Parents** and **Keep hierarchy with filters** in the **View options** menu. 
 
 :::image type="content" source="media/filter/keep-hierarchy-with-filters.png" alt-text="Screenshot of View options menu, Keep hierarchy with filters selected."::: 
 
-Use these options when you want to show work items assigned to one or more team members, work item types, area or iteration paths, or combination of these options and keywords. The hierarchy is maintained and work items that match the filter criteria are shown in bold text.  
+Use these options to filter by team members, work item types, paths, or keywords while maintaining the hierarchy. Matching items appear in bold text.  
 
 ::: moniker-end
 
 ## Add work items quickly
 
-Efficiently adding work items allows you to capture tasks swiftly and refine their details as more information becomes available. Utilize queries on your backlog to triage, review, refine, and enhance work items added through your backlog.
+Quickly capture work items and refine details later. Use backlog queries to triage and enhance items after adding them.
 
 1. Choose the backlog level where you want to add new work items.
 
-2. From the **View options** menu, toggle the sliders for **Parents** and **Forecasting** to **Off**, which simplifies the view by hiding hierarchical groupings and forecasting tools.
+2. From the **View options** menu, turn **Off** **Parents** and **Forecasting** to simplify the view.
     
-3. (Optional settings:)
-    - **In progress items**: Turn this option on or off based on whether you want to display items currently in progress.
-    - **Column display**: Minimize the number of columns shown on your backlog or select specific fields you wish to display to streamline your view.
+3. (Optional) Configure more settings:
+    - **In progress items**: Show or hide items currently in progress.
+    - **Column display**: Minimize columns or select specific fields, streamlining your view.
 
 4. Add new work items:
     - Select the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: **New work item** icon.
     - Enter a title for the work item.
     - Select **Add to Top** or **Add to Bottom**:
-        - **Recommendation**: Add items to the bottom of the backlog if your team prioritizes backlog items regularly.
+        - **Recommendation**: Add items to the bottom if your team prioritizes backlog items regularly.
     - Select **Enter** to add the work item.
     
     > [!div class="mx-imgBorder"]
@@ -192,35 +185,34 @@ For more detailed instructions, see the following articles:
  
 ## Prioritize your product backlog 
 
-If your team follows Agile or Scrum methodologies, prioritizing the backlog ensures that the most important work items are addressed first. Follow these steps to effectively prioritize your backlog:
+Prioritize your backlog to ensure the most important work items are addressed first:
 
-1. Choose the backlog level you want to prioritize, for example, Stories, Features, Epics.
+1. Choose the backlog level you want to prioritize (Stories, Features, Epics).
 
-2. From the **View options** menu, turn the **Parents** view option **Off** to simplify the view by hiding hierarchical groupings.
+2. From the **View options** menu, turn **Off** the **Parents** option to simplify the view.
 
 3. **Reorder work items**:
-    - **Drag and drop**: Select and drag work items up or down within the backlog to adjust their priority.
-    - **Keyboard shortcuts**: Alternatively, hold down the **Alt** key and use the up and down arrow keys to move work items.
+    - **Drag and drop**: Select and drag work items up or down to adjust priority.
+    - **Keyboard shortcuts**: Hold **Alt** and use arrow keys to move items.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing Reorder work items.](media/configure-view-options/reorder-backlog.png)
 
 > [!NOTE]
-> Changes you make to the priority of work items affect all team members. When others refresh their backlogs, the updated priorities display. A background process updates the [**Stack rank** (Agile, Basic, and CMMI processes)](../queries/planning-ranking-priorities.md) or [**Backlog priority** (Scrum process)](../queries/planning-ranking-priorities.md) fields. These fields track the relative ranking of items in the product, feature, epic, or other portfolio backlogs. By default, these fields do not appear on the work item form. Priority ranking is assigned separately for each backlog level, which you can verify by adding the field to a backlog and viewing it in a hierarchical list.
+> Priority changes affect all team members and update automatically when they refresh their backlogs. A background process updates the [**Stack rank** (Agile, Basic, and CMMI processes)](../queries/planning-ranking-priorities.md) or [**Backlog priority** (Scrum process)](../queries/planning-ranking-priorities.md) fields. These fields track relative ranking and are assigned separately for each backlog level. By default, these fields don't appear on work item forms.
 
-Backlogs involved in portfolio management or containing nested same-type child items might restrict the reordering of items. For more information, see the following articles:
+Some backlogs might restrict reordering due to portfolio management or nested items. For more information, see:
 - [Backlogs, portfolios, and Agile project management: Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
 - [Fix reordering and nesting issues](resolve-backlog-reorder-issues.md)
  
 ## Prioritize a portfolio backlog
 
-The method for prioritizing a portfolio backlog is similar to that described for a product backlog. The main difference is that you prioritize child items within each portfolio item. Each backlog level&mdash;**Stories**, **Features**, **Epics**&mdash;supports priority ordering distinct from every other level.   
+Portfolio backlog prioritization works like product backlog prioritization, except you prioritize child items within each portfolio item. Each backlog level (**Stories**, **Features**, **Epics**) supports separate priority ordering.   
 
-**Prioritize the portfolio items:**
+**Prioritize portfolio items:**
 1. Select the portfolio backlog level you want to prioritize. 
 1. Turn **Off** the **Parents** view option.  
-1. Drag the work items up or down within the backlog.   
-2. Within each item, you can expand to see child items and drag these items into priority order.
+1. Drag work items up or down within the backlog.   
 
 **Prioritize child items:**
 1. Expand each portfolio item.  
@@ -228,35 +220,35 @@ The method for prioritizing a portfolio backlog is similar to that described for
 
 ### Link work items to a parent (mapping)
 
-You can quickly link one or more work items to a parent portfolio item by dragging them within your backlog view.
+Quickly link work items to parent portfolio items by dragging them within your backlog view.
 
 > [!TIP]  
-> Before mapping work items, add and prioritize the portfolio backlog items you want to link to. The **Mapping** pane lists portfolio backlog items in priority order.
+> Before mapping, add and prioritize the portfolio backlog items you want to link to. The **Mapping** pane lists portfolio items in priority order.
 
-1. Choose the backlog level where you want to link work items, for example, **Stories** to link to **Features**.
+1. Choose the backlog level where you want to link work items (for example, **Stories** to **Features**).
 
 2. Select :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **View options**.
-3. Select **Mapping** to open the Mapping pane. By default, the pane lists the next-level portfolio items for the current team.
+3. Select **Mapping** to open the Mapping pane. The pane lists next-level portfolio items for the current team.
 
-4. (Optional) To map items to parent items owned by a different team, select the desired team from the team selector in the **Mapping** pane.
+4. (Optional) To map items to parents owned by a different team, select the team from the team selector in the **Mapping** pane.
     
    :::image type="content" source="media/configure-view-options/mapping-pane-selector.png" alt-text="Screenshot of Team selector in Mapping pane."::: 
 
 5. Drag work items from the backlog and drop them onto the desired portfolio item in the **Mapping** pane.
    
-   The system automatically creates a parent-child link. The backlog item's text turns bold briefly as the system saves the changes.
+   The system automatically creates a parent-child link and the backlog item's text turns bold briefly.
 
-   You can select multiple work items to drag at once:
-   - **Sequential selection**: Hold down the **Shift** key to select a range of items.
-   - **Non-sequential selection**: Hold down the **Ctrl** key to select individual items.
+   To select multiple work items:
+   - **Sequential selection**: Hold **Shift** to select a range of items.
+   - **Non-sequential selection**: Hold **Ctrl** to select individual items.
    - Drag the selected items to create links.
 
-6. (Optional) Within an expanded hierarchical view, you can also drag a work item to a different parent to reparent it.
+6. (Optional) Within an expanded hierarchical view, drag a work item to a different parent to reparent it.
 
 ::: moniker range=">= azure-devops-2020"
 
 > [!TIP]  
-> To view work items that are unparented, add the **Parent** field as a column. The **Title** of the parent item will be listed for work items that have been linked to a parent.
+> To view unparented work items, add the **Parent** field as a column. The parent item's **Title** appears for linked work items.
 
 ::: moniker-end
 
@@ -264,9 +256,9 @@ For more information, see [Organize your backlog and map child work items to par
 
 ## Add child items to a portfolio backlog item  
 
-1. Select the portfolio backlog level, such as **Features**, that you want to add items to. 
-1. Select :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: **Add User Story, Bug** for the feature you want to add the child item to as shown in the following image. Your labels might differ based on process and customizations. 
-1. In the work item form that appears, enter a **Title** and any other required fields or details. Save the work item to close it. 
+1. Select the portfolio backlog level (**Features**, for example) where you want to add items. 
+1. Select :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: **Add User Story, Bug** for the feature you want to add the child item to. Labels might differ based on your process and customizations. 
+2. In the work item form, enter a **Title** and any required fields. Save the work item. 
  
 For more information, see [Define features and epics, add child items](define-features-epics.md#add-child-items).
 
@@ -274,36 +266,36 @@ For more information, see [Define features and epics, add child items](define-fe
 
 1. Select the backlog level you want to inspect for unparented items. 
 2. Open **View options** and select **Parents**.
-3. Scroll to the bottom of the backlog and expand **Unparented Stories**, **Unparented Features**, or similar entries. Unparented work items are listed under these entries.  
+3. Scroll to the bottom and expand **Unparented Stories**, **Unparented Features**, or similar entries. Unparented work items are listed under these entries.  
 	
    :::image type="content" source="media/configure-view-options/unparented-stories.png" alt-text="Screenshot of Unparented stories.":::  
 
 ## Assign work to a sprint or iteration
 
-Similar to using the **Mapping** pane, you can use the **Planning** pane to assign one or more work items to an **Iteration path** or sprint. 
+Use the **Planning** pane to assign work items to an **Iteration path** or sprint. 
 
-1. Ensure all **Iteration paths** are selected for your team that you want to show in the **Planning** pane. 
+1. Ensure all **Iteration paths** you want to show in the **Planning** pane are selected for your team. 
 1. Choose the backlog level that contains the work items you want to assign.   
 1. Open **View options**, turn **Off** **Completed child items** and choose **Planning**.  
-1. Drag work items from the backlog to the portfolio item listed in the **Mapping** pane. 
-	The system creates a parent-child link in the background. The backlog item turns bold and then unbold as the system saves the changes. 
+1. Drag work items from the backlog to the desired sprint in the **Planning** pane. 
+	The system creates assignments in the background. The backlog item turns bold briefly as the system saves changes. 
 
-	You can select multiple backlog items and drag them to a portfolio item. To select several items in a sequence, hold down the shift key. To select several nonsequential items, use the **Ctrl** key. Then, you can drag the selected items.  
+	To select multiple items: hold **Shift** for sequential items or **Ctrl** for individual items, then drag the selected items.  
 	:::image type="content" source="media/configure-view-options/assign-sprint-planning-pane.png" alt-text="Screenshot showing drag of a backlog item to a Planning pane sprint."::: 
 
 ## Forecast a backlog 
 
-The **Forecast** tool is only available for the product backlog. To forecast your backlog, do the following steps: 
+The **Forecast** tool is only available for the product backlog. To forecast your backlog: 
 
-1. Ensure that future **Iteration paths** are selected for your team. 
+1. Ensure future **Iteration paths** are selected for your team. 
 2. Choose the backlog level for your team. 
-3. (Optional) Add the **Story points**, **Effort**, or **Size** field as a column based on the process your project uses. 
-4. Open **View options** and turn **Off** the **Parents**, **In progress** items, and **Completed child items**. Turn **On** the **Forecast** option. 
+3. (Optional) Add the **Story points**, **Effort**, or **Size** field as a column based on your process. 
+4. Open **View options** and turn **Off** **Parents**, **In progress** items, and **Completed child items**. Turn **On** **Forecast**. 
 5. Enter a velocity estimate in the **Forecasting based on velocity** box.  
 6. Review the forecast lines that appear, similar to the ones shown in the following image. 
 	:::image type="content" source="../sprints/media/forecast-s125.png" alt-text="Screenshot of backlog showing Forecast lines."::: 
    
-   The forecast tool doesn't reference any iteration assignments made to the product backlog items. 
+   The forecast tool doesn't reference iteration assignments made to product backlog items. 
 
 > [!TIP]  
 > You can drag items to reprioritize them with forecast lines shown. You can also use the **Planning** pane with the **Forecast** tool turned on.  
@@ -312,40 +304,16 @@ For more information, see [Forecast your product backlog](../sprints/forecast.md
 
 ::: moniker range="azure-devops"
 
-### Add rollup columns
+## Next step
 
-Enhance your backlog view by adding rollup columns such as a **Progress bar**, **Work item count**, or the **Sum** of any integer or numeric field. These columns let you:
+> [!div class="nextstepaction"]
+> [Add rollup columns](display-rollup.md)
 
-- Monitor progress: Visualize the completion status of parent work items based on their child items.
-- Track workload: View the number of work items associated with each parent item.
-- Aggregate Data: Calculate the total value of numeric fields, for example, Story Points and Effort, for better project tracking.
-
-Parent work items can include:
-- **User Stories** with child **Tasks**
-- **Features** with child **User Stories** and **Bugs**
-- **Epics** with child **Features**
- 
-1. Select the backlog level you want to view progress on.
-2. Open **View options** to show **Completed Child Items**.  
-3. Open **Column options**, choose **Add a rollup column**, and select the progress bar or count to display. 
-
-	:::image type="content" source="media/configure-view-options/progress-feature.png" alt-text="Screenshot of Scenario backlog showing Rollup column for Progress by Feature."::: 
-
-   It can take several moments for the progress bar or count to appear. For more information, see [Display rollup progress or totals](display-rollup.md).
- 
 ::: moniker-end
 
-## Related articles
+## Related content
 
-- [Set up your project's backlogs and boards](set-up-your-backlog.md)
-- [Create your product backlog](create-your-backlog.md)  
+- [Create and manage your backlog](create-your-backlog.md)  
 - [Define features and epics](define-features-epics.md)  
 - [Organize your backlog and map child work items to parents](organize-backlog.md) 
-- [Configure team settings](../../organizations/settings/manage-teams.md)  
-
-### Bulk modify tools 
-
-- [Bulk modify (web)](bulk-modify-work-items.md) 
-- [Bulk add or modify (Excel)](office/bulk-add-modify-work-items-excel.md) 
-- [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md)
-
+- [Configure team settings](../../organizations/settings/manage-teams.md)

@@ -21,12 +21,12 @@ With NuGet Package Restore you can install all your project's dependency without
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
+- Create a [new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - If you're using a self-hosted agent, make sure that it has the [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download) and [NuGet (4.8.0.5385+)](https://www.nuget.org/downloads) installed.
 
 > [!NOTE]
-> If you're using Ubuntu 24.04 or higher, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the *nuget.exe*. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
+> If you're using Ubuntu 24.04 or later, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the *nuget.exe*. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
 
 ## Restore NuGet packages from a feed in the same organization
 
@@ -47,7 +47,7 @@ With NuGet Package Restore you can install all your project's dependency without
         versionSpec: '*'
         checkLatest: true
     
-    - script: nuget restore <SOLUTION_PATH>
+    - script: nuget restore <SOLUTION_PATH>    ## If you're using Ubuntu 24.04 or later, use the following command instead: dotnet restore <SOLUTION_PATH>
     ```
 
 ### [Classic](#tab/classic/)
@@ -59,10 +59,7 @@ With NuGet Package Restore you can install all your project's dependency without
 1. Select **+** to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate*, and *Command line* tasks to your pipeline. Leave the *NuGet tool installer* and *NuGet Authenticate* tasks with their default settings and configure the *Command line* task as follows:
 
     - **Display name**: Restore.
-    - **Script**: 
-        ```
-        nuget.exe restore <SOLUTION_PATH>
-        ```
+    - **Script**: `nuget.exe restore <SOLUTION_PATH>`. If you're using Ubuntu 24.04 or later, use the following command instead: `dotnet restore <SOLUTION_PATH>`.
 
 1. Select **Save & queue** when you're done.
 
@@ -121,9 +118,7 @@ To restore NuGet packages from a feed in a different Azure DevOps organization, 
       inputs:
         nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
         
-    - script: |
-          nuget.exe restore <SOLUTION_PATH>
-      displayName: Restore       
+    - script: nuget.exe restore <SOLUTION_PATH>      ## If you're using Ubuntu 24.04 or later, use the following command instead: dotnet restore <SOLUTION_PATH>   
     ```
 
 ### [Classic](#tab/classic/)
@@ -139,10 +134,7 @@ To restore NuGet packages from a feed in a different Azure DevOps organization, 
     
     1. Command line task:
         - **Display name**: Restore.
-        - **Script**: 
-            ```
-            nuget.exe restore <SOLUTION_PATH>
-            ```
+        - **Script**: `nuget.exe restore <SOLUTION_PATH>`. If you're using Ubuntu 24.04 or later, use the following command instead: `dotnet restore <SOLUTION_PATH>`.
 
 1. Select **Save & queue** when you're done.
 
