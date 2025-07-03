@@ -21,26 +21,28 @@ Secure authentication is fundamental to protecting your Azure Repos and Azure De
 
 Always revoke or rotate credentials when they're no longer needed. This practice maintains repository security and follows the principle of least privilege access.
 
-## Quick comparison: Authentication methods
-
-| Feature | Microsoft Entra OAuth Tokens ⭐ | Personal Access Tokens | SSH Keys |
-|---------|--------------------------------|------------------------|----------|
-| **Security** | ✅ Modern OAuth 2.0 security | ⚠️ Basic token authentication | ✅ Strong cryptographic security |
-| **Recommendation** | ✅ **Preferred method** | ⚠️ Alternative option | ✅ Good for CLI users |
-| **Expiration** | ✅ Automatic token refresh | ⚠️ Manual renewal required | ✅ Long-term validity |
-| **Enterprise integration** | ✅ Native Microsoft Entra ID integration | ❌ Limited integration | ❌ No enterprise integration |
-| **Ease of setup** | ✅ Automated with GCM | ✅ Simple setup | ⚠️ Requires key generation |
-
 ## Authentication mechanisms
 
-> [!TIP]
-> **Microsoft Entra OAuth tokens are the recommended and preferred authentication method** for Azure DevOps Git operations and REST APIs. Use them instead of Personal Access Tokens whenever possible for enhanced security and modern authentication.
-
-### Microsoft Entra OAuth tokens (Recommended) ⭐
+### Microsoft Entra OAuth tokens (Recommended)
 
 [Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) are the **preferred authentication method** for Git operations and [REST APIs](/rest/api/azure/devops/). They offer enhanced security features and can be used wherever personal access tokens are used. These tokens are generated for a user principal or a [managed identity and/or service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md). 
 
-Here's a helpful tip on how to get a one-time Microsoft Entra token from the Azure CLI to call git fetch: (When generating on behalf of a service principal, make sure to [sign in as the service principal](/cli/azure/authenticate-azure-cli) first.)
+**Quick start with Azure CLI**: You can obtain a Microsoft Entra token for immediate use with Git operations using the Azure CLI. This method is ideal for testing or one-time operations.
+
+**For user authentication:**
+```bash
+ az login
+ az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
+```
+
+**For service principal authentication:**
+First [sign in as the service principal](/cli/azure/authenticate-azure-cli), then obtain the token:
+```bash
+az login --service-principal -u <client-id> -p <client-secret> --tenant <tenant-id>
+az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
+```
+
+**Example usage with Git:**
 
 ```powershell
 $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
