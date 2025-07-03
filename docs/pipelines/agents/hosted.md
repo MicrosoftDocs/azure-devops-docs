@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 06/27/2025
+ms.date: 07/03/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -51,7 +51,7 @@ The **windows-2019** image is the default image for classic build pipelines. For
 The Windows Server 2019 image is scheduled to be deprecated:
 * Deprecation start date: June 1, 2025
 * Brownout period: June 3, 2025 to June 24, 2025
-* Scheduled removal date for Windows Server 2019 hosted image: June 30, 2025
+* Scheduled removal date for Windows Server 2019 hosted image: December 31, 2025
 
 For more information, see [Upcoming Updates for Azure Pipelines Agents Images - Windows](https://aka.ms/azdo-windows)
 
