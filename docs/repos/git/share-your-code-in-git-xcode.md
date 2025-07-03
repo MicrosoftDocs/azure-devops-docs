@@ -1,13 +1,14 @@
 ---
-title: Share your Xcode project with Git
+title: Share your Xcode project with Git and Azure Repos
 titleSuffix: Azure Repos
-description: "Share code in Git using Xcode"
+description: Learn how to share and collaborate on Xcode projects using Azure Repos with modern authentication methods including Microsoft Entra ID tokens and SSH keys.
 ms.assetid: "f1fedd72-d9b9-45cf-99aa-2e624c899c45"
 ms.service: azure-devops-repos
-ms.topic: quickstart
-ms.date: 09/10/2018
+ms.topic: how-to
+ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+# customer-intent: As an iOS developer using Xcode, I want to securely share my project code with Azure Repos using modern authentication methods so I can collaborate with my team and manage version control for my iOS applications.
 ---
 
 
@@ -21,14 +22,30 @@ This guide shows you how to share your Xcode projects using Azure Repos.
 
 [!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
-## Create a local Git repo for your Xcode project
+## Authentication methods
 
-Create a local Git repo for your code to manage your project in version control. 
+Choose the authentication method that best fits your workflow:
 
-* [New projects](#new-projects)
-* [Existing projects](#existing-projects)
+| Method | Best for | Setup complexity | Security | 
+|--------|----------|------------------|----------|
+| **SSH keys** | Individual developers, long-term use | Medium (one-time setup) | High | 
+| **Microsoft Entra ID tokens** | Enterprise environments, temporary access | Medium | Very High |
+| **Personal Access Tokens** | Specific scenarios, automation | Low | Medium | 
 
-If your project is already in a local Git repo, you can skip ahead to [Create a new Git repo in Azure Repos](#create-a-new-git-repo-in-azure-repos).
+> [!TIP]
+> For most developers, **SSH keys** provide the best balance of security and usability with Xcode. Set them up once and they work seamlessly.
+
+## Set up your Xcode project with Git
+
+Create a local Git repo for your code to manage your project in version control.
+
+Choose the option that matches your situation:
+
+* [New projects](#new-projects) - Creating a new Xcode project
+* [Existing projects](#existing-projects) - Adding Git to an existing project
+
+> [!NOTE]
+> If your project is already in a local Git repo, skip to [Create a new Git repo in Azure Repos](#create-a-new-git-repo-in-azure-repos).
 
 ### New projects
 
@@ -44,46 +61,79 @@ Create a local Git repo for your existing projects not in version control by goi
 
 ## Create a new Git repo in Azure Repos
 
-Create a new Git repo in Azure Repos for your Xcode project. 
+Create a new Git repo in Azure Repos for your Xcode project.
 
-If you have already created a repo for your Xcode project in Azure DevOps Services, you can skip ahead to [Push your project](#push-your-project).
+> [!NOTE]
+> If you already created a repo for your Xcode project in Azure DevOps, skip to [Connect and push your project](#connect-and-push-your-project).
 
-1. Browse to your Project in your Azure DevOps organization and select the drop-down ![Azure DevOps Services drop-down picker](media/share-your-code-in-git-xcode/vsts_drop_down_arrow.png) next to the name of the current Git repo. Select **New Repository..**  
-   ![Create a new Git repo in Azure DevOps Services](media/share-your-code-in-git-xcode/newrepo.png)
+1. In your Azure DevOps organization, go to your project and select the dropdown ![Azure DevOps drop-down picker](media/share-your-code-in-git-xcode/vsts_drop_down_arrow.png) next to the current Git repo name. Select **New Repository**.
 
-2. Enter a name for your new Git repo and select **Create**. Your browser will navigate to your new empty Git repo for your Xcode project. Copy the clone URL to the clipboard so that you can use it in Xcode to connect to VSTS.  
+2. Enter a name for your new Git repo and select **Create**. 
 
-   ![Copy the clone URL for your new Git repo](media/share-your-code-in-git-xcode/newrepocopycloneurl.png)
+3. Copy the clone URL from your new repo. Choose the URL format based on your authentication method:
+   - **SSH**: Use the SSH clone URL (if you set up SSH keys)  
+   - **HTTPS**: Use the HTTPS clone URL (for tokens)
 
-   > [!NOTE]
-   > If you want to use SSH to connect to your Azure Repos/TFS Git repo, [Set up SSH credentials](use-ssh-keys-to-authenticate.md) and use the SSH clone URL when adding the remote for your local Git repo.
+   > [!TIP]
+   > **Choose your authentication method:**
+   > - **SSH keys** (recommended for simplicity): Set up once and works seamlessly with Xcode. See [Use SSH keys](use-ssh-keys-to-authenticate.md).
+   > - **Microsoft Entra ID tokens** (recommended for enterprise): Modern, secure authentication. See [Microsoft Entra ID authentication](../../integrate/get-started/authentication/entra.md).
+   > - **Personal Access Tokens**: Alternative method for specific scenarios. See [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+   > 
+   > When using SSH, use the SSH clone URL when configuring your remote.
 
-## Push your project
+## Connect and push your project
 
-1. Go to **Source Control** in Xcode and select **_Projectname_ -- main**, then **Configure...**  
+Now connect your local Xcode project to Azure Repos and push your code.
+
+1. In Xcode, go to **Source Control** and select **[Project name] -- main**, then **Configure**.
 
    ![Configure your Xcode Git project settings](media/share-your-code-in-git-xcode/xcodeconfigureproject.png)
 
-2. Select **Remotes**, then select the ![plus](media/share-your-code-in-git-xcode/xcodeplusicon.png) icon and choose **Add Remote...**
+2. Select **Remotes**, then select the ![plus](media/share-your-code-in-git-xcode/xcodeplusicon.png) icon and choose **Add Remote**.
 
-3. In the **Address** field, paste the Git clone URL for your repo copied in the previous step. Select **Add Remote**, then select **Done** to finish creating the `origin` remote for your local Git repo.  
+3. In the **Address** field, paste the Git clone URL you copied earlier. Select **Add Remote**, then **Done** to create the `origin` remote.
 
    ![Add a remote to the local Git repo for your Xcode project to connect to Azure DevOps Services](media/share-your-code-in-git-xcode/xcodeaddremote2.png)
 
-4. Go to **Source Control, Push...**, enter the branchname on `origin` to push to, and select **Push**.
+4. Go to **Source Control** > **Push**, enter the branch name on `origin` to push to (usually `main`), and select **Push**.
 
    ![Push your Xcode project to Azure DevOps Services](media/share-your-code-in-git-xcode/xcodepushtomaster.png)
 
-5. If prompted, enter your Azure DevOps Services credentials. For **Username**, enter your Azure DevOps Services username. For **Password**, enter a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) created for your user in VSTS. Select **OK**. 
+5. If prompted for credentials, choose your authentication method:
 
-   ![Authenticate using personal access tokens](media/share-your-code-in-git-xcode/xcodeauthentication.png)
+   > [!IMPORTANT]
+   > We recommend using SSH keys or Microsoft Entra ID tokens for secure authentication. Only use personal access tokens when other methods aren't available.
 
-Xcode will [push](pushing.md) your project to your Azure Repos/TFS Git repo so you can share it with your team.
+   ### Option 1: SSH Authentication (Recommended)
+   
+   If you configured SSH keys, Xcode authenticates automatically. No other credentials needed.
+   
+   ### Option 2: Microsoft Entra ID Token
+   
+   For **Username**: Enter your Azure DevOps username.
+   For **Password**: Use a Microsoft Entra ID access token.
+   
+   ```bash
+   # Get token using Azure CLI
+   az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
+   ```
+   
+   ### Option 3: Personal Access Token (alternative)
+   
+   For **Username**: Enter your Azure DevOps username.
+   For **Password**: Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Code (read and write)** scope.
+   
+   Select **OK** to complete authentication. 
 
-## Next steps
+   ![Authenticate using a token](media/share-your-code-in-git-xcode/xcodeauthentication.png)
+
+After successful authentication, Xcode [pushes](pushing.md) your project to Azure Repos. Your code is now available for your team to collaborate on.
+
+> [!TIP]
+> Once you set up authentication, future pushes and pulls use the same credentials automatically.
+
+## Next step
 
 > [!div class="nextstepaction"]
-> [Learn more about using Git in the Git tutorial](gitworkflow.md)
-
-
-
+> [Learn Git workflow fundamentals](gitworkflow.md)

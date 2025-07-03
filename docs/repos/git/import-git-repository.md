@@ -1,16 +1,17 @@
 ---
-title: Import a Git repo into your project
+title: Import a Git repository into a project
 titleSuffix: Azure Repos
-description: Import a repo from GitHub, GitLab, or Bitbucket into your project in Azure DevOps.
+description: Import a Git repository from GitHub, GitLab, Bitbucket, or other locations into your Azure DevOps project using secure authentication methods including Microsoft Entra ID tokens.
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.service: azure-devops-repos
-ms.topic: quickstart
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/14/2025
+ms.date: 07/02/2025
 ms.subservice: azure-devops-repos-git
+# customer-intent: As a developer, I want to import an existing Git repository from GitHub, GitLab, or other providers into Azure DevOps so I can consolidate my source code and use Azure DevOps features for my project.
 ---
 
-# Import a Git repo
+# Import a Git repository to a project
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -25,7 +26,7 @@ This article shows you how to import an existing Git repo from GitHub, Bitbucket
 
 ## Import into a new repo  
 
-1. Select **Repos**, **Files**.
+1. In your browser, sign in to your organization and select **Repos**, **Files**.
 
    ![View your branches](media/repos-navigation/repos-files.png)
 
@@ -35,7 +36,7 @@ This article shows you how to import an existing Git repo from GitHub, Bitbucket
 
 3. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-   If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter your credentials. SSH authentication isn't supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo using git CLI](#manual-import-git-cli).
+   If the source repository is private but can be accessed using basic authentication (username-password, Microsoft Entra ID tokens, personal access tokens, and so on), select **Requires authorization** and enter your credentials. For enhanced security, we recommend using Microsoft Entra ID tokens when possible. SSH authentication isn't supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo using git CLI](#manual-import-git-cli).
 
    ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
@@ -81,7 +82,7 @@ az repos import create --git-source-url
 |`org`, `organization`| Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config. 
 |`repository`| Name or ID of the repository to create the import request in.  |
-|`requires-authorization`| Flag to indicate if the source git repository is private. If you require authentication, then generate an authentication token on the source repo and set the environment variable `AZURE_DEVOPS_EXT_GIT_SOURCE_PASSWORD_OR_PAT` to the value of the token. Then the import request includes authentication. |
+|`requires-authorization`| Flag to indicate if the source git repository is private. If you require authentication, then generate an authentication token on the source repo and set the environment variable `AZURE_DEVOPS_EXT_GIT_SOURCE_PASSWORD_OR_PAT` to the value of the token. For enhanced security, we recommend using Microsoft Entra ID tokens when possible. Then the import request includes authentication. |
 |`subscription`| Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 |`user-name`| User name to specify when the git repository is private.|
 
@@ -152,7 +153,6 @@ az repos import create --git-source-url https://github.com/fabrikamprime/fabrika
 
 ## Manually import a repo using git CLI
 
-The import repo feature was introduced in the 2017 Update 1. You can also follow these steps to manually import a repo into an Azure DevOps Services repo by replacing "TFS" with Azure Repos in the following steps.
 
 1. Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then navigate to the repo's folder. When cloning using the `bare` option, the folder name includes the `.git` suffix. In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
 
@@ -170,7 +170,7 @@ The import repo feature was introduced in the 2017 Update 1. You can also follow
     ```
     
    > [!WARNING]
-   > Using `--mirror` overwrites all branches in the target repo which includes deleting any branches not in the source repo.
+   > Using `--mirror` overwrites all branches in the target repo, which includes deleting any branches not in the source repo.
 
 4. If the source repository has LFS objects, then fetch them, and copy them from the source repo to the target repo.
 
@@ -191,7 +191,7 @@ Although imports are most often successful, the following conditions might cause
 
 * [What if my Source repository is behind two-factor authentication?](#q-what-if-my-source-repository-is-behind-two-factor-authentication)
 * [What if my source repository doesn't support multi_ack?](#multiack)
-* [Can I import from previous versions of Team Foundation Server?](#q-can-i-import-from-previous-versions)
+* [Can I import from previous on-premises versions?](#q-can-i-import-from-previous-versions)
 * [Can I use MSA-based credentials?](#q-can-i-use-msa-based-credentials)
 * [Can I import from TFVC?](#q-can-i-import-from-tfvc)
 * [What if my source repository contains Git LFS objects?](#q-what-if-my-source-repository-contains-git-lfs-objects)
@@ -199,7 +199,23 @@ Although imports are most often successful, the following conditions might cause
 ### Q: What if my source repository is behind two-factor authentication?
 
 A: The import service uses REST APIs to validate and trigger import and can't work directly with repositories that require two-factor authentication.
-Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Azure DevOps Services](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
+
+Most Git hosting providers support authentication tokens that can be supplied to the import service:
+
+**Microsoft Entra ID tokens (recommended):** Microsoft Entra ID tokens provide better security and are the recommended authentication method. You can obtain these tokens through:
+
+- **Azure CLI** (for development/testing):
+   ```bash
+   az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
+   ```
+
+- **Service Principal** (for production/automated scenarios):
+   - Register an application in Microsoft Entra ID
+   - Create a client secret for the application
+   - Grant the application appropriate permissions in Azure DevOps
+   - Use the service principal credentials to obtain tokens programmatically
+
+**Personal Access Tokens (alternative):** [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Azure DevOps](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) also support personal access tokens. 
 
 <a id="multiack"></a>
 
@@ -211,13 +227,12 @@ This failure can happen when creating import request or while import is in progr
 
 ### Q: Can I import from previous versions?
 
-A: If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then import fails.
-This happens because of a contract mismatch between the latest Azure DevOps and previous versions.
- 
+A: If the source Git repository is in an on-premises version earlier than 2017 RTM, then the import fails, due to a contract mismatch between the latest Azure DevOps and previous versions.
+
 ### Q: Can I use MSA-based credentials?
 
-A: Unfortunately, MSA (Microsoft Account, formerly Live ID) based credentials don't work. Import service relies on basic authentication to communicate with the source repository. If the username / password you're using aren't basic auth then authentication and import fail.
-One way to check if the username / password you're using are basic auth or not is to try using Git to clone your repository using the following format
+A: Unfortunately, MSA (Microsoft Account) based credentials don't work. Import service relies on basic authentication to communicate with the source repository. If the username and password you're using aren't basic auth, then authentication and import fail.
+One way to check whether the username / password you're using are basic auth is to try using Git to clone your repository using the following format:
 
 ```
 git clone https://<<username>>:<<password>>@<<remaining clone Url>>
