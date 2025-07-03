@@ -59,9 +59,9 @@ The steps in this section use [Express](https://expressjs.com/), which is a ligh
 
     a. Open the project folder in Visual Studio Code by running the following command from the `pr-server` folder.
 
-       ``` 
-       code .
-       ```
+    ``` 
+    code .
+    ```
 
     b. Create a new file `(Ctrl + N)` and paste in the following sample code to create a basic Express server.
 
