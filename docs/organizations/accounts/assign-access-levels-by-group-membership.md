@@ -7,7 +7,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/07/2025
+ms.date: 07/02/2025
 monikerRange: 'azure-devops'
 ---
 
