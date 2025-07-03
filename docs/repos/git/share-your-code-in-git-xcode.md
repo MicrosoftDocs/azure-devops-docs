@@ -51,13 +51,13 @@ Choose the option that matches your situation:
 
 Create a local Git repo when you create a new project. Choose **Create Git repository on My Mac** when creating a new project. 
 
-![Create a Git repo at the time of Xcode project creation](media/share-your-code-in-git-xcode/xcodenewproject.png)
+![Screenshot that shows how to create a Git repo at the time of Xcode project creation.](media/share-your-code-in-git-xcode/xcodenewproject.png)
 
 ### Existing projects
 
 Create a local Git repo for your existing projects not in version control by going to **Source Control, Create Working Copy...** . Select the projects to add to the local Git repo and select **Create**. Xcode creates a Git repo for your code and adds a [commit](commits.md) with your project files.
 
-![Add a local Git repo to an existing Xcode project](media/share-your-code-in-git-xcode/xcodecreateworkingcopy.png)
+![Screenshot that shows how to add a local Git repo to an existing Xcode project.](media/share-your-code-in-git-xcode/xcodecreateworkingcopy.png)
 
 ## Create a new Git repo in Azure Repos
 
@@ -88,17 +88,17 @@ Now connect your local Xcode project to Azure Repos and push your code.
 
 1. In Xcode, go to **Source Control** and select **[Project name] -- main**, then **Configure**.
 
-   ![Configure your Xcode Git project settings](media/share-your-code-in-git-xcode/xcodeconfigureproject.png)
+   ![Screenshot that shows how to configure your Xcode Git project settings.](media/share-your-code-in-git-xcode/xcodeconfigureproject.png)
 
 2. Select **Remotes**, then select the ![plus](media/share-your-code-in-git-xcode/xcodeplusicon.png) icon and choose **Add Remote**.
 
 3. In the **Address** field, paste the Git clone URL you copied earlier. Select **Add Remote**, then **Done** to create the `origin` remote.
 
-   ![Add a remote to the local Git repo for your Xcode project to connect to Azure DevOps Services](media/share-your-code-in-git-xcode/xcodeaddremote2.png)
+   ![Screenshot that shows how to add a remote to the local Git repo for your Xcode project to connect to Azure DevOps Services.](media/share-your-code-in-git-xcode/xcodeaddremote2.png)
 
 4. Go to **Source Control** > **Push**, enter the branch name on `origin` to push to (usually `main`), and select **Push**.
 
-   ![Push your Xcode project to Azure DevOps Services](media/share-your-code-in-git-xcode/xcodepushtomaster.png)
+   ![Screenshot that shows how to push your Xcode project to Azure DevOps Services.](media/share-your-code-in-git-xcode/xcodepushtomaster.png)
 
 5. If prompted for credentials, choose your authentication method:
 
@@ -126,7 +126,7 @@ Now connect your local Xcode project to Azure Repos and push your code.
    
    Select **OK** to complete authentication. 
 
-   ![Authenticate using a token](media/share-your-code-in-git-xcode/xcodeauthentication.png)
+   ![Screenshot that shows how to authenticate using a token.](media/share-your-code-in-git-xcode/xcodeauthentication.png)
 
 After successful authentication, Xcode [pushes](pushing.md) your project to Azure Repos. Your code is now available for your team to collaborate on.
 
