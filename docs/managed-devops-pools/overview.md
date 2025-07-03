@@ -1,7 +1,7 @@
 ---
 title: Managed DevOps Pools Overview
 description: Learn about Managed DevOps Pools.
-ms.date: 03/25/2025
+ms.date: 07/03/2025
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the benefits of using Managed DevOps Pools.
 ---
@@ -21,7 +21,7 @@ Manage DevOps Pools:
 * Has agents in the geographical region closest to your dependencies
 * Scales up and down based on your configuration
 * Can maintain state of your agents up to seven days, so your builds are faster due to cache hits 
-* Can run long running workflows up to two days long
+* Can run long running workflows up to two days long. Contact support if your workflow requires running a single job that takes more than two days to finish.
 * Can access resources in your company network or isolate your workload to only access specific endpoints
 * Can create agents that have the same software as Azure Pipelines Microsoft-hosted agents
 * Can view all active agents and the status of agent provisioning and reimaging

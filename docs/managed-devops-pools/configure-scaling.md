@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 06/13/2025
+ms.date: 07/03/2025
 ---
 
 # Configure scaling
@@ -141,6 +141,9 @@ The following example shows the contents of the **agent-profile.json** file.
 When **Same agent can be used by multiple builds** (`"kind": "stateful"` in resources templates or `{ "stateful": {...} }` in Azure CLI) is enabled, agents in the pool are considered to be stateful. Stateful pools are configured using the following settings.
 
 * **Max time to live for standby agents** (`maxAgentLifetime`) configures the maximum duration an agent in a stateful pool can run before it is shut down and discarded. The format for **Max time to live for standby agents** is `dd.hh:mm:ss`. The default value of **Max time to live for standby agents** is set to the maximum allowed duration of seven days (`7.00:00:00`).
+
+   > [!IMPORTANT]
+   > If a new job start right before the **Max time to live for standby agents** interval expires, the agent won't shut down until the job completes, unless the job takes longer than two days to run. Individual jobs in Managed DevOps Pools can run for a maximum of two days, even if they are running on a standby agent with more than two days configured for **Max time to live for standby agents**. If your workkflow requires running a single job that takes more than two days to finish, contact support.
 
 * **Grace Period** (`gracePeriodTimeSpan`) configures the amount of time an agent in a stateful pool waits for new jobs before shutting down after all current and queued jobs are complete. The format for **Grace Period** is `dd.hh:mm:ss` and the default is no grace period.
 
