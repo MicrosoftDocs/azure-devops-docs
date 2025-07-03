@@ -21,7 +21,7 @@ Manage DevOps Pools:
 * Has agents in the geographical region closest to your dependencies
 * Scales up and down based on your configuration
 * Can maintain state of your agents up to seven days, so your builds are faster due to cache hits 
-* Can run long running workflows up to two days long. Contact support if your workflow requires running a single job that takes more than two days to finish.
+* Can run long running workflows up to two days long. Contact support if your workflow requires running a single job that takes more than two days to complete.
 * Can access resources in your company network or isolate your workload to only access specific endpoints
 * Can create agents that have the same software as Azure Pipelines Microsoft-hosted agents
 * Can view all active agents and the status of agent provisioning and reimaging
