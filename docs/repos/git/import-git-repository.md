@@ -21,32 +21,34 @@ This article shows you how to import an existing Git repo from GitHub, Bitbucket
 
 [!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
+## Import into a new repo  
+
+Do the following steps to import into a new repo:
+
 > [!NOTE]
 > When the import of the repository is completed, Azure DevOps sets the **Default** branch for that imported repository. If the imported repository contains a branch named `main`, it gets set as the default branch, otherwise the first branch (in alphabetical order) of the imported repository gets set as **Default**.
 
-## Import into a new repo  
+1. In your browser, sign in to your organization and select **Repos** > **Files**.
 
-1. In your browser, sign in to your organization and select **Repos**, **Files**.
-
-   ![View your branches](media/repos-navigation/repos-files.png)
+   ![Screenshot shows view of branches.](media/repos-navigation/repos-files.png)
 
 2. From the repo drop-down, select **Import repository**.
 
-   ![Manage repositories](media/repo-mgmt/import-repository.png)
+   ![Screenshot shows Manage repositories screen.](media/repo-mgmt/import-repository.png)
 
-3. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
+3. [Enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-   If the source repository is private but can be accessed using basic authentication (username-password, Microsoft Entra ID tokens, personal access tokens, and so on), select **Requires authorization** and enter your credentials. For enhanced security, we recommend using Microsoft Entra ID tokens when possible. SSH authentication isn't supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo using git CLI](#manual-import-git-cli).
+  ![Screenshot shows Import Repository Dialog with publicly available sample repo URL.](media/Import-Repo/ImportRepoDialog.png)
 
-   ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
+4. Select **Import a repository**.
 
-::: moniker-end
+The repo gets imported.
 
 ## Import into an existing empty repo 
 
 On the **Files** page of the empty Git repository, select **Import** and [enter the clone URL](clone.md#clone_url). Provide credentials if the source repository requires authentication. 
 
-![Import Repository into an existing repository](media/Import-Repo/ImportRepofromEmptyRepo.png)
+![Screenshot shows Import Repository into an existing repository.](media/Import-Repo/ImportRepofromEmptyRepo.png)
 
 > [!NOTE]
 > The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [Link work items to commits](share-your-code-in-git-vs.md#link-work-items)
@@ -57,8 +59,7 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 
 You can use [az repos import](/cli/azure/repos/import#az-repos-import-create) to import a repository to your Azure DevOps project.  
 
-> [!NOTE]
-> You must first create the repository in Azure DevOps before you can import a Git repository. Also, the repository you create must be empty. To create a repo, see [Create your Git repo in Azure Repos](share-your-code-in-git-cmdline.md#create-your-git-repo-in-azure-repos).
+You must first create the repository in Azure DevOps before you can import a Git repository. Also, the repository you create must be empty. To create a repo, see [Create your Git repo in Azure Repos](share-your-code-in-git-cmdline.md#create-your-git-repo-in-azure-repos).
 
 ```azurecli
 az repos import create --git-source-url
