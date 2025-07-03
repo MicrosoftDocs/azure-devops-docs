@@ -57,12 +57,19 @@ For more information about reserved names, see [File names, paths, and namespace
 
 ## Azure Artifacts
 
-Universal packages must conform to the following restrictions.
+- Universal packages must conform to the following restrictions:
 
-|Restriction type  |Restriction  |
-|---------|---------|
-|Package name    |- Must be lowercase.<br/>- Must start and end with letters or numbers.<br/>- Must only contain letters, numbers, and nonconsecutive dashes, underscore, or periods.         |
-|Package version    |Must be lowercase without build metadata.         |
+|  Restriction type  |  Restriction  |
+|--------------------|---------------|
+|Package name        |- Must be lowercase.<br/>- Must start and end with letters or numbers.<br/>- Must only contain letters, numbers, and nonconsecutive dashes, underscore, or periods.         |
+|Package version     |- Must be lowercase without build metadata.                                                                                                                                 |
+
+- Feeds must conform to the following restrictions:
+
+| Restriction type | Restriction |
+|------------------|-------------|
+| Feed name        | - Feed names are NOT case sensitive; however, you cannot create a new feed with a name that differs only by capitalization from an existing feed.<br/>- Must start and end with a letter or number.<br>- Cannot start with a '.' or '_', or end with a '.'.<br/>- Cannot include any of the following characters: @ ~ ; { } ' + = , < > | / \ ? : & $ * " # [ ] %. |
+
 
 ## Azure Boards 
 
