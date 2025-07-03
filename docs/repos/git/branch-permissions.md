@@ -24,18 +24,18 @@ You can set permissions for individual users and groups, and inherit and overrid
 ## Use the branches view to configure security
 
 1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
-2. Select **Repos** > **Branches**.
+1. Select **Repos** > **Branches**.
 
    ![Screenshot shows opening the Branches page on the web.](media/branches/branches_nav-new-nav.png)
-
-3. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search** box in the upper right.
+   
+1. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search** box in the upper right.
 
    ![Screenshot shows Branches page.](media/branches/branches-page.png)
-
-4. To open the context menu, select **...** **More actions** next to the branch name. Select **Branch security** from the menu.
+   
+1. To open the context menu, select **...** **More actions** next to the branch name. Select **Branch security** from the menu.
 
    ![Screenshot shows Open the branch permissions page from the branches context menu.](media/branches/branches_context_menu_permissions.png)
-
+   
 ## Add users or groups
 
 > [!TIP]    
@@ -49,17 +49,22 @@ You can set permissions for individual users and groups, and inherit and overrid
 To remove permissions for a user or group, select the user or group, and then select **Remove**. This change doesn't affect other permissions for the user or group in your project.    
 
 ![Screenshot shows Remove branch permissions for a user in Azure DevOps.](media/branches/remove_permissions.png)
- 
+
 ## Set permissions 
 
 Users and groups with permissions set at the repository level [inherit those permissions](../../organizations/security/about-permissions.md#permission-inheritance) by default.
 
-Branch creators automatically receive the following permissions:
+When a branch is created by a user, that user becomes the owner/creator of that branch. Branch creators automatically receive the following explicit (directly assigned) permissions which override inheritance from the repo level:  
 
-- **Contribute**
-- **Force push**
-- **Manage permissions** (when allowed through the repository setting **Permissions management**)
-- **Remove others' locks**
+**Contribute**
+
+**Force push**
+
+**Manage permissions** (when allowed through the repository setting **Permissions management**)
+
+**Remove others' locks**
+
+A majority of branches are ephemeral and scoped to a single user, these permissions prevent the need for an admin to assist with routine tasks like deleting a branch after a PR merge. It might be desirable to modify these permissions for a branch with a different scope and audience like the "Main" branch in the repo. The permissions are directly assigned; they can be manually changed in the in the branch permissions.
 
 > [!NOTE]
 > The **Exempt from policy enforcement** permission is replaced by the following two permissions:
