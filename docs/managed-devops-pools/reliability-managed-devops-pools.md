@@ -24,7 +24,7 @@ Managed DevOps Pools instances don't automatically replicate or switch from a fa
 
 ### Plan for disaster recovery
 
-Document the configuration of your Managed DevOps Pools so that you can recreate them in the even of an outage. This includes the following resources that Managed DevOps Pools depends on:
+Document the configuration of your Managed DevOps Pools so that you can recreate them in the event of an outage. This includes the following resources that Managed DevOps Pools depends on:
 
 - The resource group for the replacement pool
 - The dev center and dev center project for the replacement pool
