@@ -5,10 +5,11 @@ description: Create a web server to listen to pull request events and post statu
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 10/31/2018
+ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.custom: devx-track-js
+# customer-intent: As a developer, I want to create a Node.js server that integrates with Azure DevOps pull request events so I can implement custom status checks and automated validation workflows using Microsoft Entra ID authentication.
 ---
 
 
@@ -24,6 +25,7 @@ The pull request (PR) workflow provides developers with an opportunity to get fe
 |-------------|-------------|
 | **Organization** | An [organization in Azure DevOps](../../organizations/accounts/create-organization.md) with a Git repository. |
 |**Tools**| - [Visual Studio Code](https://code.visualstudio.com/Docs/setup) or other code editor of your choice.<br>- [Node.js](https://nodejs.org/en/download/). The download contains an installer, which you can run to install the Node.js runtime on your local machine. When installing Node.js, be sure to keep the [npm package manager](https://www.npmjs.com/) portion of the install, which is selected by default.|
+| **Authentication** | **Microsoft Entra ID token** with the **Code (status)** scope to have permission to change PR status. For more information, see [Microsoft Entra authentication](../../integrate/get-started/authentication/entra.md). |
 
 ## Create a basic web server using Express
 The steps in this section use [Express](https://expressjs.com/), which is a lightweight web framework for Node.js that provides many HTTP utility methods that simplify creating a web server. This framework provides you with the basic functions needed to listen to PR events.
@@ -53,13 +55,15 @@ The steps in this section use [Express](https://expressjs.com/), which is a ligh
     npm install express
     ```
 
-4. Create an Express app to build upon for the PR status server. The following steps are based on the Express [Hello world example](https://expressjs.com/en/starter/hello-world.html). Open the project folder in VS Code by running the following command from the `pr-server` folder.
+4. Create an Express app to build upon for the PR status server. The following steps are based on the Express [Hello world example](https://expressjs.com/en/starter/hello-world.html). 
+
+    a. Open the project folder in Visual Studio Code by running the following command from the `pr-server` folder.
 
     ``` 
     code .
     ```
 
-5. Create a new file `(Ctrl + N)` and paste in the following sample code.
+    b. Create a new file `(Ctrl + N)` and paste in the following sample code to create a basic Express server.
 
     ``` javascript
     const express = require('express')
@@ -74,9 +78,9 @@ The steps in this section use [Express](https://expressjs.com/), which is a ligh
     })
     ```
 
-6. Save the file as `app.js`.
+    c. Save the file as `app.js`.
 
-7. Run the basic web server using the following command:
+5. Run the basic web server using the following command:
 
     ```
     node app.js
@@ -197,22 +201,9 @@ Now that your server can receive service hook events when new PRs are created, u
     const collectionURL = process.env.COLLECTIONURL    
     const token = process.env.TOKEN
 
-    var authHandler = vsts.getPersonalAccessTokenHandler(token)
+    var authHandler = vsts.getBearerHandler(token)
     var connection = new vsts.WebApi(collectionURL, authHandler)
-
-    var vstsGit = connection.getGitApi().then( 
-        vstsGit => {                                    
-            vstsGit.createPullRequestStatus(prStatus, repoId, pullRequestId).then( result => {
-                console.log(result);
-            },
-            error => {
-                console.log(error);
-            })
-        }, 
-        error => { 
-            console.log(error);
-        } 
-    );
+    var vstsGit = connection.getGitApi()
     ```
 
 5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your Azure DevOps organization.
@@ -221,13 +212,82 @@ Now that your server can receive service hook events when new PRs are created, u
     setx COLLECTIONURL "https://dev.azure.com/<your account>"
     ```
 
-6. Create a personal auth token (PAT) for your app to use, following these instructions: 
-   [Authenticating with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
+6. Get a Microsoft Entra ID token for your app to use. Microsoft Entra ID tokens are the recommended authentication method for Azure DevOps REST APIs. You can get these tokens through the following ways:
+   - Option 1: Azure CLI (for development/testing)
+     ```bash
+     az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
+     ```
+   - Option 2: Service Principal (for production)
+     1. Register an application in Microsoft Entra ID
+     2. Create a client secret for the application  
+     3. Grant the application appropriate permissions in Azure DevOps
+     4. Use the service principal credentials to obtain tokens programmatically
+   
+   For more information, see [Microsoft Entra authentication](../../integrate/get-started/authentication/entra.md).
 
-7. Create an environment variable for your PAT.
+7. Create an environment variable for your Microsoft Entra ID token.
 
     ```
-    setx TOKEN "yourtokengoeshere"
+    setx TOKEN "your-entra-id-token-here"
+    ```
+
+### Obtaining Microsoft Entra ID tokens programmatically (Recommended for production)
+
+For production applications, you should obtain Microsoft Entra ID tokens programmatically rather than using static tokens. Here's how to implement this using the Microsoft Authentication Library (MSAL) for Node.js:
+
+1. Install the MSAL Node package:
+    ```bash
+    npm install @azure/msal-node
+    ```
+
+2. Create a token provider module (`tokenProvider.js`):
+    ```javascript
+    const { ConfidentialClientApplication } = require('@azure/msal-node');
+
+    const clientConfig = {
+        auth: {
+            clientId: process.env.CLIENT_ID,
+            clientSecret: process.env.CLIENT_SECRET,
+            authority: `https://login.microsoftonline.com/${process.env.TENANT_ID}`
+        }
+    };
+
+    const cca = new ConfidentialClientApplication(clientConfig);
+
+    async function getAccessToken() {
+        const clientCredentialRequest = {
+            scopes: ['499b84ac-1321-427f-aa17-267ca6975798/.default']
+        };
+
+        try {
+            const response = await cca.acquireTokenByClientCredential(clientCredentialRequest);
+            return response.accessToken;
+        } catch (error) {
+            console.error('Error acquiring token:', error);
+            throw error;
+        }
+    }
+
+    module.exports = { getAccessToken };
+    ```
+
+3. Update your `app.js` to use the token provider:
+    ```javascript
+    const { getAccessToken } = require('./tokenProvider');
+
+    // Instead of using a static token, get a fresh token
+    app.post("/", async function (req, res) {
+        try {
+            const token = await getAccessToken();
+            var authHandler = vsts.getBearerHandler(token);
+            var connection = new vsts.WebApi(collectionURL, authHandler);
+            
+            // ... rest of your POST handler code
+        } catch (error) {
+            console.error('Authentication error:', error);
+            res.status(500).send('Authentication failed');
+        }
+    });
     ```
 
 8. Update the `post()` function to read the PR details from the service hook payload. You need these values to post back status.
@@ -280,39 +340,42 @@ Now that your server can receive service hook events when new PRs are created, u
 12. The resulting method should look something like this:
 
     ``` javascript
-    app.post("/", function (req, res) {
+    app.post("/", async function (req, res) {
+        try {
+            // Get the details about the PR from the service hook payload
+            var repoId = req.body.resource.repository.id
+            var pullRequestId = req.body.resource.pullRequestId
+            var title = req.body.resource.title
 
-        // Get the details about the PR from the service hook payload
-        var repoId = req.body.resource.repository.id
-        var pullRequestId = req.body.resource.pullRequestId
-        var title = req.body.resource.title
-
-        // Build the status object that we want to post.
-        // Assume that the PR is ready for review...
-        var prStatus = {
-            "state": "succeeded",
-            "description": "Ready for review",
-            "targetUrl": "https://visualstudio.microsoft.com",
-            "context": {
-                "name": "wip-checker",
-                "genre": "continuous-integration"
+            // Build the status object that we want to post.
+            // Assume that the PR is ready for review...
+            var prStatus = {
+                "state": "succeeded",
+                "description": "Ready for review",
+                "targetUrl": "https://visualstudio.microsoft.com",
+                "context": {
+                    "name": "wip-checker",
+                    "genre": "continuous-integration"
+                }
             }
-        }
 
-        // Check the title to see if there is "WIP" in the title.
-        if (title.includes("WIP")) {
+            // Check the title to see if there is "WIP" in the title.
+            if (title.includes("WIP")) {
+                // If so, change the status to pending and change the description.
+                prStatus.state = "pending"
+                prStatus.description = "Work in progress"
+            }
 
-            // If so, change the status to pending and change the description.
-            prStatus.state = "pending"
-            prStatus.description = "Work in progress"
-        }
-
-        // Post the status to the PR
-        vstsGit.createPullRequestStatus(prStatus, repoId, pullRequestId).then( result => {
+            // Get the Git API instance and post the status to the PR
+            const gitApi = await vstsGit
+            const result = await gitApi.createPullRequestStatus(prStatus, repoId, pullRequestId)
             console.log(result)
-        })
 
-        res.send("Received the POST")
+            res.send("Received the POST")
+        } catch (error) {
+            console.error('Error processing PR status:', error)
+            res.status(500).send('Error processing request')
+        }
     })
     ```
 
