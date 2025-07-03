@@ -68,7 +68,7 @@ For more information about reserved names, see [File names, paths, and namespace
 
 | Restriction type | Restriction |
 |------------------|-------------|
-| Feed name        | - Feed names are NOT case sensitive; however, you cannot create a new feed with a name that differs only by capitalization from an existing feed.<br/>- Must start and end with a letter or number.<br>- Cannot start with a '.' or '_', or end with a '.'.<br/>- Cannot include any of the following characters: @ ~ ; { } ' + = , < > | / \ ? : & $ * " # [ ] %. |
+| Feed name        | - Feed names are NOT case sensitive; however, you cannot create a new feed with a name that differs only by capitalization from an existing feed.<br/>- Must start and end with a letter or number.<br>- Cannot start with a '.' or '_', or end with a '.'.<br/>- Cannot include any of the following characters: @ ~ ; { } ' + = , < > \| / \ ? : & $ * " # [ ] %. |
 
 
 ## Azure Boards 
