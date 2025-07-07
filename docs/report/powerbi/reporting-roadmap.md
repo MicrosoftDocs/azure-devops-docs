@@ -115,25 +115,4 @@ Check out the [Features Timeline](/azure/devops/release-notes/features-timeline)
 - [Run quality tests in your build pipeline by using Azure Pipelines](/training/modules/run-quality-tests-build-pipeline)
 - [Run functional tests in Azure DevOps](/training/modules/run-functional-tests-azure-pipelines)
 
-The Analytics data model consists of entity sets, whose members (entities) contain properties that can be filtered, aggregated, and summarized. For an overview of supported entity sets and entity types, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
-
-The following tools support interaction with the Analytics service:
-
-- **Analytics views**: Provide a quick way to generate reports based on work tracking and test cases. You can define an Analytics view and share with others. Using Power BI, you can build any type of report Power BI supports. To learn more, see [What are Analytics views?](../powerbi/what-are-analytics-views.md)
-- **Power BI**: Connect to Analytics from Power BI through an Analytics view, OData query, or OData feed. See [About Power BI integration](../powerbi/overview.md)
-- **OData query**: Use OData to directly query Analytics from a supported browser and use the returned JSON data as needed
-- Programmatic query of the Analytics metadata [Construct OData queries for Analytics, URL components to query the metadata](../analytics/analytics-query-parts.md#query-metadata)
-
-### Analytics permissions
-
-To access and work with Analytics data, users need appropriate project-level permissions. The core Analytics permissions include:
-
-- **View Analytics**: Required to access Analytics data through OData queries, Power BI connections, and Analytics widgets. By default, all Contributors with Basic access have this permission. Users with Stakeholder access don't have permission to view or edit Analytics views.
-- **Delete Shared Analytics views**: Allows users to delete Analytics views that are shared with the project
-- **Edit Shared Analytics views**: Allows users to modify Analytics views that are shared with the project
-
-For individual Analytics views, creators can set specific permissions to control who can view, edit, and delete their shared views. For detailed information about setting up and managing these permissions, see [Set permissions to access Analytics and Analytics views](../powerbi/analytics-security.md).
-
-### Query performance and latency
-
-Analytics is optimized for read and aggregation performance, and reduces the effect reporting scenarios have on Azure DevOps. The data copy introduces up to a 30-second delay before the data associated with any one change shows up in Analytics. For more information, see [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
+For an overview of supported entity sets and entity types, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
