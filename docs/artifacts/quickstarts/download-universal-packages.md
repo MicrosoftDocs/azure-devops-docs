@@ -63,6 +63,9 @@ Make sure you have set up authentication, and then run the following command to 
     az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION_NAME> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
     ```
 
+> [!NOTE]
+> Azure Artifacts does not support a direct API endpoint to download Universal Packages. You must use the Azure CLI to download the package.
+
 ## Download specific files
 
 To download only specific files, use the `--file-filter` parameter to fetch only the specified subset of files. See [File matching patterns reference](../../pipelines/tasks/file-matching-patterns.md) for more details.
