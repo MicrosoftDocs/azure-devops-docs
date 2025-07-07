@@ -137,7 +137,3 @@ For individual Analytics views, creators can set specific permissions to control
 ### Query performance and latency
 
 Analytics is optimized for read and aggregation performance, and reduces the effect reporting scenarios have on Azure DevOps. The data copy introduces up to a 30-second delay before the data associated with any one change shows up in Analytics. For more information, see [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
-
-## Roadmap timeline
-
-Check out the [Features Timeline](/azure/devops/release-notes/features-timeline) for the roadmap of reporting features.

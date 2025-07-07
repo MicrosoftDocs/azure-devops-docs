@@ -343,7 +343,7 @@
     },
     {
       "source_path": "docs/report/sql-reports/migration-guide.md",
-      "redirect_url": "/previous-versions/azure/devops/report/powerbi/reporting-roadmap",
+      "redirect_url": "/azure/devops/report/powerbi/reporting-roadmap",
       "redirect_document_id": true
     }
   ]
