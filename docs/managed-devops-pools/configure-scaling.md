@@ -143,7 +143,7 @@ When **Same agent can be used by multiple builds** (`"kind": "stateful"` in reso
 * **Max time to live for standby agents** (`maxAgentLifetime`) configures the maximum duration an agent in a stateful pool can run before it is shut down and discarded. The format for **Max time to live for standby agents** is `dd.hh:mm:ss`. The default value of **Max time to live for standby agents** is set to the maximum allowed duration of seven days (`7.00:00:00`).
 
    > [!IMPORTANT]
-   > If a new job starts right before the **Max time to live for standby agents** interval expires, the agent won't shut down until the job completes, unless the job takes longer than two days to run. Individual jobs in Managed DevOps Pools can run for a maximum of two days, even if they are running on a standby agent with more than two days configured for **Max time to live for standby agents**. Contact support if your workflow requires running a single job that takes more than two days to complete.
+   > If a job is running when the **Max time to live for standby agents** interval expires, the agent won't shut down until the job completes, unless the job takes longer than two days to run. Individual jobs in Managed DevOps Pools can run for a maximum of two days, even if they are running on a standby agent with more than two days configured for **Max time to live for standby agents**. Contact support if your workflow requires running a single job that takes more than two days to complete.
 
 * **Grace Period** (`gracePeriodTimeSpan`) configures the amount of time an agent in a stateful pool waits for new jobs before shutting down after all current and queued jobs are complete. The format for **Grace Period** is `dd.hh:mm:ss` and the default is no grace period.
 
