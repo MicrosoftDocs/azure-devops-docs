@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 06/13/2025
+ms.date: 07/03/2025
 ---
 
 # Configure scaling
@@ -141,6 +141,9 @@ The following example shows the contents of the **agent-profile.json** file.
 When **Same agent can be used by multiple builds** (`"kind": "stateful"` in resources templates or `{ "stateful": {...} }` in Azure CLI) is enabled, agents in the pool are considered to be stateful. Stateful pools are configured using the following settings.
 
 * **Max time to live for standby agents** (`maxAgentLifetime`) configures the maximum duration an agent in a stateful pool can run before it is shut down and discarded. The format for **Max time to live for standby agents** is `dd.hh:mm:ss`. The default value of **Max time to live for standby agents** is set to the maximum allowed duration of seven days (`7.00:00:00`).
+
+   > [!IMPORTANT]
+   > If a job is running when the **Max time to live for standby agents** interval expires, the agent won't shut down until the job completes, unless the job takes longer than two days to run. Individual jobs in Managed DevOps Pools can run for a maximum of two days, even if they are running on a standby agent with more than two days configured for **Max time to live for standby agents**. Contact support if your workflow requires running a single job that takes more than two days to complete.
 
 * **Grace Period** (`gracePeriodTimeSpan`) configures the amount of time an agent in a stateful pool waits for new jobs before shutting down after all current and queued jobs are complete. The format for **Grace Period** is `dd.hh:mm:ss` and the default is no grace period.
 
@@ -888,7 +891,7 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
 
 ## Lifecycle of agents and potential delays in allocation
 
-Standby agents using a [Stateless](#stateless-pools) scheme require the Azure Pipelines agent to be installed and configured before transitioning from the [ready](./view-agents.md#status) state to the [allocated](./view-agents.md#status) state and running a pipeline. When provisioning new agents, Managed DevOps Pools attempts to download the latest [Azure Pipelines agent](https://github.com/microsoft/azure-pipelines-agent/releases) in order to have it already downloaded on standby agents before they transition into ready status. Startup, connection, and beginning the job can take anywhere from 10 seconds to a minute depending on the pool's SKU speed, image used, and networking load. Additionally, certain settings in a pipeline job can cause a redownload and running of a different agent, and regressions and rollbacks of the agent can also cause a redownload of the agent. [Ready agents](./view-agents.md#status) will always have a potential delay, as Managed DevOps Pools uses this agent in an "ephemeral" manner, meaning we start and run the task agent one time per job.
+Standby agents using a [Stateless](#stateless-pools) scheme require the Azure Pipelines agent to be installed and configured before transitioning from the [ready](./view-agents.md#status) state to the [allocated](./view-agents.md#status) state and running a pipeline. When Managed DevOps Pools provisions new agents, it attempts to download the latest [Azure Pipelines agent](https://github.com/microsoft/azure-pipelines-agent/releases) in order to have it already downloaded on standby agents before they transition into ready status. Startup, connection, and beginning the job can take anywhere from 10 seconds to a minute depending on the pool's SKU speed, image used, and networking load. Additionally, certain settings in a pipeline job can cause a redownload and running of a different agent, and regressions and rollbacks of the agent can also cause a redownload of the agent. [Ready agents](./view-agents.md#status) will always have a potential delay, as Managed DevOps Pools uses this agent in an "ephemeral" manner, meaning we start and run the task agent one time per job.
 
 If you are seeing delays in ready agents picking up jobs from Azure DevOps, the following are important to consider:
 
