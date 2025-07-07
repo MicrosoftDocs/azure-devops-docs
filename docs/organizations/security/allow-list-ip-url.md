@@ -8,14 +8,20 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/12/2025
+ms.date: 07/02/2025
 ---
 
 # Allowed IP addresses and domain URLs
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If your organization is secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these IPs and URLs to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
+If your organization is secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these IPs and URLs to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network.
+
+**Required ports:**
+- **Port 443 (HTTPS)**: Required for all Azure DevOps web access, REST API calls, and most service connections
+- **Port 22 (SSH)**: Required only for Git operations using SSH protocol
+
+See the following sections in this article:
 
 - [Allowed domain URLs](#allowed-domain-urls)
 - [IP addresses and range restrictions](#ip-addresses-and-range-restrictions)
@@ -37,7 +43,7 @@ _Outbound connections_ target other dependent sites. Examples of such connection
 - Azure Pipelines agents installed on your organization's network connecting to Azure DevOps to poll for pending jobs
 - CI events sent from a source code repository hosted within your organization's network to Azure DevOps
 
-Ensure the following IP addresses are allowed for outbound connections, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from a machine in your organization to Azure DevOps Services.
+Ensure the following IP addresses are allowed for outbound connections on **port 443 (HTTPS)**, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from a machine in your organization to Azure DevOps Services.
 
 #### [IP V4 ranges](#tab/IP-V4)
 
@@ -86,7 +92,7 @@ _Inbound connections_ originate from Azure DevOps and target resources within yo
 - Azure Pipelines connecting to on-premises source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [Bitbucket Server](../../pipelines/repos/on-premises-bitbucket.md)  
 - Azure DevOps Services [Audit Streaming](../audit/auditing-streaming.md) connecting to on-premises or cloud-based Splunk
 
-Ensure the following IP addresses are allowed for inbound connections, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from Azure DevOps Services to your on-premises or other cloud services.
+Ensure the following IP addresses are allowed for inbound connections on **port 443 (HTTPS)**, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from Azure DevOps Services to your on-premises or other cloud services.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > |  Geography | Region  | IP V4 ranges |  
@@ -114,7 +120,7 @@ Ensure the following IP addresses are allowed for inbound connections, so your o
 Azure Service Tags are supported only for *inbound* connections. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 
 > [!NOTE]
-> The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted agents. Customers are still required to allow the [entire geography for the Microsoft Hosted agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Microsoft Managed DevOps Pools](../../managed-devops-pools/overview.md). Alternatively, you can also use [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md). Managed DevOps Pools and Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands.  
+> The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted agents. Customers are still required to allow the [entire geography for the Microsoft Hosted agents](../../pipelines/agents/hosted.md#agent-ip-ranges). If allowing the entire geography is a concern, we recommend using the [Microsoft Managed DevOps Pools](../../managed-devops-pools/overview.md). Alternatively, you can also use [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md). Managed DevOps Pools and Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands.  
 Hosted macOS agents are hosted in GitHub's macOS cloud. IP ranges can be retrieved using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) using the instructions provided [here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#ip-addresses).
 
 ### Other IP addresses
@@ -138,7 +144,7 @@ For more information, see [Worldwide endpoints](/microsoft-365/enterprise/urls-a
 
 ### Azure DevOps ExpressRoute connections
 
-If your organization uses ExpressRoute, ensure the following IP addresses are allowed for both outbound and inbound connections.
+If your organization uses ExpressRoute, ensure the following IP addresses are allowed for both outbound and inbound connections on **port 443 (HTTPS)**.
 
 #### [IP V4 ranges](#tab/IP-V4)
 
@@ -216,9 +222,13 @@ For more information about Azure DevOps and ExpressRoute, see [ExpressRoute for 
 
 ## Allowed Domain URLs
 
-Network connection issues could occur because of your security appliances, which may be blocking connections - Visual Studio uses TLS 1.2 and above. When you're using [NuGet](#nuget-connections) or connecting from Visual Studio 2015 and later, update the security appliances to support TLS 1.2 and above for the following connections.
+Network connection issues could occur because of your security appliances, which might be blocking connections - Visual Studio uses TLS 1.2 and above. When you're using [NuGet](#nuget-connections) or connecting from Visual Studio 2015 and later, update the security appliances to support TLS 1.2 and above for the following connections.
 
-To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*.dev.azure.com` are open.
+**Port requirements for domain URLs:**
+- **Port 443 (HTTPS)**: Required for all domain URLs listed in this article
+- **Port 22 (SSH)**: Required only for SSH Git connections (see [SSH connections](#ssh-connections) section)
+
+To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*.dev.azure.com` are open on **port 443**.
 
 The following section includes the most common domain URLs to support sign in and licensing connections.
 
@@ -275,7 +285,7 @@ https://live.com
 https://login.live.com 
 ```
 
-The following URL is required if you're migrating from Azure DevOps server to the cloud service using our data migration tool.
+The following URL is required if you're migrating from Azure DevOps Server to the cloud service using our data migration tool.
 ```
 https://dataimport.dev.azure.com
 ```
@@ -290,18 +300,22 @@ https://dataimport.dev.azure.com
 
 We recommend you open port `443` to all traffic on the following IP addresses and domains. We also recommend you open port `22` to a smaller subset of targeted IP addresses.
 
-|More domain URLs |Descriptions  |
-|---------|---------|
-|https://login.microsoftonline.com |Authentication and sign-in related     |
-|https://*.vssps.visualstudio.com   |Authentication and sign-in related          |
-|https://*.gallerycdn.vsassets.io   |Hosts Azure DevOps extensions         |
-|https://*.vstmrblob.vsassets.io | Hosts Azure DevOps TCM log data        |
-|https://cdn.vsassets.io    | Hosts Azure DevOps Content Delivery Networks (CDNs) content        |
-|https://static2.sharepointonline.com    | Hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on        |
-|https://vsrm.dev.azure.com   | Hosts releases        |
-|https://download.agent.dev.azure.com      |  Required to set up self-hosted agent in machines within your network              |
-|https://amp.azure.net   | Needed for deploying to Azure app service           |
-|https://go.microsoft.com  | Accesses go links        |
+**Port configuration summary:**
+- **Port 443 (HTTPS)**: Open to ALL domain URLs and IP addresses listed in this article
+- **Port 22 (SSH)**: Open only to SSH-specific hosts listed in the [SSH connections](#ssh-connections) section
+
+|More domain URLs |Descriptions |Required Port |
+|---------|---------|---------|
+|https://login.microsoftonline.com |Authentication and sign-in related |443 |
+|https://*.vssps.visualstudio.com   |Authentication and sign-in related |443 |
+|https://*.gallerycdn.vsassets.io   |Hosts Azure DevOps extensions |443 |
+|https://*.vstmrblob.vsassets.io | Hosts Azure DevOps TCM log data |443 |
+|https://cdn.vsassets.io    | Hosts Azure DevOps Content Delivery Networks (CDNs) content |443 |
+|https://static2.sharepointonline.com    | Hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on |443 |
+|https://vsrm.dev.azure.com   | Hosts releases |443 |
+|https://download.agent.dev.azure.com      |  Required to set up self-hosted agent in machines within your network |443 |
+|https://amp.azure.net   | Needed for deploying to Azure app service |443 |
+|https://go.microsoft.com  | Accesses go links |443 |
 
 ### Azure Artifacts
 
@@ -329,7 +343,7 @@ https://*.nuget.org
 
 ### SSH connections
 
-If you need to connect to Git repositories on Azure DevOps with SSH, allow requests to port 22 for the following hosts:
+If you need to connect to Git repositories on Azure DevOps with SSH, allow requests to **port 22** for the following hosts:
 
 ```SSHDomainHosts
 
@@ -337,7 +351,7 @@ ssh.dev.azure.com
 vs-ssh.visualstudio.com
 ```
 
-Also allow IP addresses in the "name": "AzureDevOps" section of [this downloadable file](https://www.microsoft.com/download/details.aspx?id=56519) (updated weekly) named: **Azure IP ranges and Service Tags - Public Cloud**
+Also allow **port 22** for IP addresses in the "name": "AzureDevOps" section of [this downloadable file](https://www.microsoft.com/download/details.aspx?id=56519) (updated weekly) named: **Azure IP ranges and Service Tags - Public Cloud**
 
 ### Azure Pipelines Microsoft-hosted agents
 
@@ -351,9 +365,9 @@ If you're running a firewall and your code is in Azure Repos, see [Self-hosted L
 
 > [!IMPORTANT]
 > [Edgio CDN for Azure DevOps was retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/), which required a new domain URL to be allow-listed in firewall rules for agent software download.
-> The new domain to allow-list for agent download is `https://*.dev.azure.com`. If your firewall rules don't allow wildcards, use `https://download.agent.dev.azure.com`.
+> The new domain to allowlist for agent download is `https://*.dev.azure.com`. If your firewall rules don't allow wildcards, use `https://download.agent.dev.azure.com`.
 > 
-> The Azure DevOps team recommends to make this change by the following date:
+> The Azure DevOps team recommended making this change by the following date:
 > - May 1, 2025 for Azure DevOps Services
 > - May 15, 2025 for Azure DevOps Server
 >
