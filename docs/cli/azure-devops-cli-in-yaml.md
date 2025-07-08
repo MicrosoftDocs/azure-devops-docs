@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/30/2025
+ms.date: 07/07/2025
 #customer intent: As a team member, I want to use YAML configuration files to manage my pipeline tasks by using Azure DevOps CLI.
 ---
 
@@ -27,6 +27,8 @@ If you want to use Azure DevOps CLI with a YAML pipeline, use the following exam
 Some Azure DevOps CLI commands, like `az devops configure` and `az devops --help`, don't require any authentication. They don't connect into Azure DevOps. Most commands interact with Azure DevOps and do require authentication.
 
 You can authenticate using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example.
+
+Using `System.AccessToken` relies on having a PAT. As a more secure alternative, you can use the AzureCLI@2 task to populate a service connection.
 
 # [Bash](#tab/bash)
 
@@ -47,6 +49,60 @@ You can authenticate using the [System.AccessToken](../pipelines/build/variables
   env:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
 ```
+
+# [AzureCLI@2](#tab/cliconn)
+
+```yml
+parameters:
+- name: serviceConnection
+  displayName: Azure Service Connection Name
+  type: string
+  default: my-azure-subscription
+
+  steps:
+  - task: AzureCLI@2
+    condition: succeededOrFailed()
+    displayName: 'Azure CLI -> DevOps CLI'
+    inputs:
+      azureSubscription: '${{ parameters.serviceConnection }}'
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        Write-Host "Using logged-in Azure CLI session..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
+        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
+        az devops configure -l
+
+        Write-Host "`nUse Azure DevOps CLI (az devops) to list projects in the organization '$(System.CollectionUri)'..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops project list$($PSStyle.Reset)"
+        az devops project list --query "value[].{Name:name, Id:id}" `
+                               -o table
+   
+        Write-Host "`nUse Azure DevOps CLI (az pipelines) to list pools in the organization '$(System.CollectionUri)'..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az pipelines pool list$($PSStyle.Reset)"
+        az pipelines pool list --query "[].{Id:id, Name:name}" `
+                               -o table
+      failOnStandardError: true
+
+  - task: AzureCLI@2
+    condition: succeededOrFailed()
+    displayName: 'List all builds in Azure DevOps project'
+    inputs:
+      azureSubscription: '${{ parameters.serviceConnection }}'
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        Write-Host "Using logged-in Azure CLI session..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
+        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
+        az devops configure -l
+
+        Write-Host "`nListing all builds in the specified Azure DevOps organization and project..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az pipelines build list$($PSStyle.Reset)"
+        az pipelines build list --organization $(System.CollectionUri) --project $(System.TeamProject) -o table
+      failOnStandardError: true
+```
+
 
 ---
 
@@ -160,7 +216,6 @@ You can upgrade the Azure CLI on your hosted images by running the following com
 - pwsh: pip install --pre azure-cli
   displayName: 'Upgrade Azure CLI'
 ```
-
 ---
 
 ## Conditionally install the Azure DevOps CLI extension
