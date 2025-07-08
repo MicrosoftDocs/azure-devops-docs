@@ -32,20 +32,20 @@ GitHub experts, security researchers, and community contributors write and maint
 
 CodeQL supports and uses the following language identifiers:
 
-| Language               | Identifier            | Optional alternative identifiers (if any) |
-|------------------------|-----------------------|-------------------------------------------|
-| C/C++                  | `c-cpp`                 | `c` or `cpp`                                  |
-| C#                     | `csharp`                |                                           |
-| Go                     | `go`                    |                                           |
-| Java/Kotlin            | `java-kotlin`           |                           |
-| JavaScript/TypeScript  | `javascript`            |                                           |
-| Python                 | `python`                |                                           |
-| Ruby                   | `ruby`                  |                                           |
-| Swift                  | `swift`                 |                                           |
+| Language               | Identifier            |
+|------------------------|-----------------------|
+| C/C++                  | `cpp`                 |
+| C#                     | `csharp`                |
+| Go                     | `go`                    |
+| Java/Kotlin            | `java`           |
+| JavaScript/TypeScript  | `javascript`            |
+| Python                 | `python`                | 
+| Ruby                   | `ruby`                  | 
+| Swift                  | `swift`                 | 
 
 > [!TIP]
-> * Use `c-cpp` to analyze code written in C, C++ or both.
-> * Use `java-kotlin` to analyze code written in Java, Kotlin or both.
+> * Use `cpp` to analyze code written in C, C++ or both.
+> * Use `java` to analyze code written in Java, Kotlin or both.
 > * Use `javascript` to analyze code written in JavaScript, TypeScript or both.
 
 For more information, see [Supported languages and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/). 
