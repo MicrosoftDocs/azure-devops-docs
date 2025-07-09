@@ -47,7 +47,7 @@ The following steps guide you through setting up the project-level configuration
 
 1. Select **Connect to Feed** and then select **npm** from the left navigation pane. 
 
-1. Add a *.npmrc* to your project, in the same directory as your *package.json* and paste the provided snippet from the **Project setup** into the file.
+1. Add a *.npmrc* to your project, in the same directory as your *package.json* and paste the provided snippet from the **Project setup** section into the file.
 
     :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot displaying how to set up your npm project and connect to a feed.":::
 
@@ -59,7 +59,15 @@ The following steps guide you through setting up the project-level configuration
 
 ### [Other](#tab/other/)
 
-1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the following snippet into it. 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to Feed** and then select **npm** from the left navigation pane. 
+
+1. Add a *.npmrc* file to your project's directory. This should be the same directory where your *package.json* file is located. 
+
+1. Paste the snippet provided in the **Project setup** section into your *.npmrc* file. Your file should look similar to the following:
 
     ```
     registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
@@ -99,19 +107,19 @@ The following steps guide you through setting up the project-level configuration
 
 1. Generate a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
 
-1. Run the following command in a command prompt window, and then paste your personal access token when prompted. Once done, copy the generated Base 64 encoded value.
+1. Run the following command in a command prompt window. When prompted, paste your personal access token (PAT) and press **Enter**. The script will return a Base64-encoded version of your PAT, copy that value to use in the next step.
 
     ```
     node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
     ```
 
-1. If you're on Linux/Mac, you can alternatively use the following command to convert your personal access token to Base 64. Copy the resulting Base64 encoded value.
+1. If you're using Linux or macOS, you can run the following command in your terminal to convert your personal access token (PAT) to a Base64-encoded string. Copy the resulting value to use in the next step.
 
     ```
     echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64
     ```
 
-1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user *.npmrc* file with the encoded personal access token obtained from the previous step.
+1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user-level *.npmrc* file with the Base64-encoded personal access token you generated in the previous step.
 
 * * *
 
@@ -123,23 +131,30 @@ The following steps guide you through setting up the project-level configuration
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
-1. Select **Artifacts**, and then select **Connect to Feed**.
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to Feed**.
  
     :::image type="content" source="../media/server-2022-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2022.1.":::
 
-1. Select **npm** from the left sidebar, and then follow the instructions in the **Project setup** section to set up your config file.
+1. Select **npm** from the left, and then follow the steps in the **Project setup** section to configure your .npmrc. file and authenticate with your feed.
 
    :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1.":::
 
-### [Linux/macOS](#tab/Linuxmac/)
+### [Other](#tab/other/)
 
-1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the following snippet into it. 
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to Feed** and then select **npm** from the left navigation pane. 
+
+1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the snippet provided in the **Project setup** section into your *.npmrc* file. Your file should look similar to the following:
 
     ```
     registry=http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
                         
     always-auth=true
     ```
+
 ### Setup credentials
 
 1. Copy the following snippet and paste it into your user-level *.npmrc* file:
@@ -172,13 +187,13 @@ The following steps guide you through setting up the project-level configuration
 
 1. Generate a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
 
-1. Run the following command in a command prompt window, and then paste your personal access token when prompted. Once done, copy the generated Base 64 encoded value.
+1. Run the following command in a command prompt window. When prompted, paste your personal access token and press **Enter**. The script will return a Base64-encoded version of your PAT, copy that value to use in the next step.
 
     ```
     node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
     ```
 
-1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user *.npmrc* file with the encoded personal access token obtained from the previous step.
+1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user-level *.npmrc* file with the Base64-encoded personal access token you generated in the previous step.
 
 * * *
 
@@ -194,13 +209,19 @@ The following steps guide you through setting up the project-level configuration
  
     :::image type="content" source="../media/server-2020-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2020.1.":::
 
-1. Select **npm** from the left, and then follow the instructions in **Project setup** to set up your config file.
+1. Select **npm** from the left, and then follow the steps in the **Project setup** section to configure your .npmrc. file and authenticate with your feed.
 
    :::image type="content" source="../media/npm-project-setup-server-2020-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2020.1.":::
 
-### [Linux/macOS](#tab/Linuxmac/)
+### [Other](#tab/other/)
 
-1. Add a *.npmrc* file in your project's directory, in the same directory as your package.json file, and paste the following snippet into it:
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
+
+1. Select **Connect to Feed** and then select **npm** from the left navigation pane. 
+
+1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the snippet provided in the **Project setup** section into your *.npmrc* file. Your file should look similar to the following:
 
     ```
     registry=http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
@@ -243,20 +264,20 @@ The following steps guide you through setting up the project-level configuration
 
 1. Generate a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
 
-1. Run the following command in a command prompt window, and then paste your personal access token when prompted. Once done, copy the generated Base 64 encoded value.
+1. Run the following command in a command prompt window. When prompted, paste your personal access token and press **Enter**. The script will return a Base64-encoded version of your PAT, copy that value to use in the next step.
 
     ```
     node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
     ```
 
-1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user *.npmrc* file with the encoded personal access token obtained from the previous step.
+1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user-level *.npmrc* file with the Base64-encoded personal access token you generated in the previous step.
 
 * * *
 
 ::: moniker-end
 
 > [!TIP]
-> Using multiple registries in .npmrc files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
+> Using multiple registries in *.npmrc* files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
 
 ::: moniker range="azure-devops"   
 
