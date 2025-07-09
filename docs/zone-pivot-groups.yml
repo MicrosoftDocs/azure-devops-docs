@@ -62,5 +62,5 @@ groups:
   pivots:
   - id: pat
     title: PAT
-  - id: task
-    title: AzureCLI@2
+  - id: service-connection
+    title: Service Connection

@@ -481,6 +481,7 @@ steps:
 
 ::: zone-end  
 
+::: zone pivot="service-connection"
 
 ```yml
 parameters:
@@ -533,7 +534,6 @@ parameters:
       failOnStandardError: true
 ```
 
-::: zone pivot="task"
 
 
 ::: zone-end 
