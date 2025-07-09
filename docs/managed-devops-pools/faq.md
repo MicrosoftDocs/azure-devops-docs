@@ -41,4 +41,4 @@ To see the Azure regions that support Managed DevOps Pools in your subscription,
 
 ## Can I use VM Reservations to save on costs for the Managed DevOps Pool agents?
 
-No, VM Reservations do not apply to Managed DevOps Pool agents.
+No, VM Reservations do not apply to Managed DevOps Pool instances.
