@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 06/12/2025
+ms.date: 07/07/2025
 ---
 
 # Configure Managed DevOps Pools images
@@ -453,8 +453,8 @@ Managed DevOps Pools agent images are retired when the image's operating system 
 
 Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019** image.
 
-* Creation of new pools using **Azure Pipelines – Windows Server 2019** will be disabled starting July 1, 2025, but existing pools on these images will continue to run until August 30, 2025. 
-* On September 1, 2025, use of **Azure Pipelines – Windows Server 2019** image will be disabled. Agents using this image won't provision and pipelines won't run.  
+* Creation of new pools using **Azure Pipelines – Windows Server 2019** will be disabled starting November 1, 2025, but existing pools on these images will continue to run until December 31, 2025. 
+* On December 31, 2025, use of **Azure Pipelines – Windows Server 2019** image will be disabled. Agents using this image won't provision and pipelines won't run.  
 
 To keep your Managed DevOps Pools running if you use the **Azure Pipelines – Windows Server 2019** image, update to the **Azure Pipelines - Windows Server 2022** image. Alternatively, you can use the Windows Server 2019 image from [Selected marketplace images](./configure-images.md#selected-marketplace-images) or your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. Note that the marketplace image does not include the pre-installed software found in the Azure Pipelines image.
 
