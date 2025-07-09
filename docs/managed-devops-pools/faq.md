@@ -38,3 +38,7 @@ To see the Azure regions that support Managed DevOps Pools in your subscription,
 
 > [!IMPORTANT]
 > If the **Microsoft.DevOpsInfrastructure** is not registered in your subscription, you won't see any locations. [Register the Managed DevOps Pools resource provider in your Azure Subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription) before you check for supported regions. For more information about Azure resource providers, see [Azure resource providers and types](/azure/azure-resource-manager/management/).
+
+## Can I use VM Reservations to save on costs for the Managed DevOps Pool agents?
+
+No, VM Reservations do not apply to Managed DevOps Pool agents.
