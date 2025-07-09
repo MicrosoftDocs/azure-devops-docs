@@ -17,14 +17,14 @@ zone_pivot_groups: configure-cli
 
 # Azure DevOps CLI in Azure Pipeline YAML
 
-::: zone pivot="pat"  
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
-If you want to use Azure DevOps CLI with a YAML pipeline, use the following examples to install Azure CLI, add the Azure DevOps extension, and run Azure DevOps CLI commands.
+If you want to use Azure DevOps CLI with a YAML pipeline, you can use the Azure DevOps extension or use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2). The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. The Azure DevOps CLI extension runs  `az devops` commands. 
 
-> [!NOTE]
-> The steps in this article show how to authenticate with Azure DevOps and run `az devops` commands using the Azure DevOps CLI extension. If you want to use Azure CLI to interact with Azure resources, use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2).
+You need to use a PAT with the Azure CLI extension in a pipeline. For added security, use the use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2) with a service connection. 
+
+::: zone pivot="pat"  
 
 ## Authenticate with Azure DevOps
 
@@ -483,14 +483,27 @@ steps:
 
 ::: zone pivot="service-connection"
 
+
+## Authenticate with a service connection 
+
+When you use a service connection, the service connection provides the necessary crentials for Azure CLI and Azure DevOps CLI commands in the AzureCLI@2 task without requiring manual credential management in the pipeline.
+
+> [!NOTE]
+> When you use a service connection for authentication with `AzureCLI@2`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md#2-add-a-service-principal-to-an-azure-devops-organization). 
+
+This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@2` task. The task lists all projects (`az devops project list`) and pools (`az pipelines pool list`). 
+
 ```yml
+trigger:
+  - main
+
 parameters:
 - name: serviceConnection
   displayName: Azure Service Connection Name
   type: string
-  default: my-azure-subscription
+  default: my-service-connection
 
-  steps:
+steps:
   - task: AzureCLI@2
     condition: succeededOrFailed()
     displayName: 'Azure CLI -> DevOps CLI'
@@ -514,26 +527,7 @@ parameters:
         az pipelines pool list --query "[].{Id:id, Name:name}" `
                                -o table
       failOnStandardError: true
-
-  - task: AzureCLI@2
-    condition: succeededOrFailed()
-    displayName: 'List all builds in Azure DevOps project'
-    inputs:
-      azureSubscription: '${{ parameters.serviceConnection }}'
-      scriptType: pscore
-      scriptLocation: inlineScript
-      inlineScript: |
-        Write-Host "Using logged-in Azure CLI session..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
-        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
-        az devops configure -l
-
-        Write-Host "`nListing all builds in the specified Azure DevOps organization and project..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az pipelines build list$($PSStyle.Reset)"
-        az pipelines build list --organization $(System.CollectionUri) --project $(System.TeamProject) -o table
-      failOnStandardError: true
 ```
-
 
 
 ::: zone-end 
