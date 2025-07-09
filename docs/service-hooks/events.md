@@ -1202,7 +1202,7 @@ Event: An elastic agent pool is resized.
 
 Event: A pipeline run starts waiting for manual intervention.
 
-* Publisher ID: `azure-devops`
+* Publisher ID: `rm`
 * Event ID: `manualintervention.pending`
 * Resource name: `manualintervention`
 
@@ -1216,7 +1216,7 @@ Event: A pipeline run starts waiting for manual intervention.
 
 ```json
 {
-  "publisherId": "azure-devops",
+  "publisherId": "rm",
   "eventId": "manualintervention.pending",
   "resource": {
     "manualIntervention": {
