@@ -56,3 +56,11 @@ groups:
     title: Standalone
   - id: bundled-ghazdo
     title: Bundled
+- id: configure-cli
+  title: Configure Azure CLI
+  prompt: Choose your Azure CLI authentication method
+  pivots:
+  - id: pat
+    title: PAT
+  - id: task
+    title: AzureCLI@2

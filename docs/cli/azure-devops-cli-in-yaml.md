@@ -10,10 +10,14 @@ ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 07/07/2025
+zone_pivot_groups: configure-cli
+
 #customer intent: As a team member, I want to use YAML configuration files to manage my pipeline tasks by using Azure DevOps CLI.
 ---
 
 # Azure DevOps CLI in Azure Pipeline YAML
+
+::: zone pivot="pat"  
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
@@ -49,60 +53,6 @@ Using `System.AccessToken` relies on having a PAT. As a more secure alternative,
   env:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
 ```
-
-# [AzureCLI@2](#tab/cliconn)
-
-```yml
-parameters:
-- name: serviceConnection
-  displayName: Azure Service Connection Name
-  type: string
-  default: my-azure-subscription
-
-  steps:
-  - task: AzureCLI@2
-    condition: succeededOrFailed()
-    displayName: 'Azure CLI -> DevOps CLI'
-    inputs:
-      azureSubscription: '${{ parameters.serviceConnection }}'
-      scriptType: pscore
-      scriptLocation: inlineScript
-      inlineScript: |
-        Write-Host "Using logged-in Azure CLI session..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
-        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
-        az devops configure -l
-
-        Write-Host "`nUse Azure DevOps CLI (az devops) to list projects in the organization '$(System.CollectionUri)'..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops project list$($PSStyle.Reset)"
-        az devops project list --query "value[].{Name:name, Id:id}" `
-                               -o table
-   
-        Write-Host "`nUse Azure DevOps CLI (az pipelines) to list pools in the organization '$(System.CollectionUri)'..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az pipelines pool list$($PSStyle.Reset)"
-        az pipelines pool list --query "[].{Id:id, Name:name}" `
-                               -o table
-      failOnStandardError: true
-
-  - task: AzureCLI@2
-    condition: succeededOrFailed()
-    displayName: 'List all builds in Azure DevOps project'
-    inputs:
-      azureSubscription: '${{ parameters.serviceConnection }}'
-      scriptType: pscore
-      scriptLocation: inlineScript
-      inlineScript: |
-        Write-Host "Using logged-in Azure CLI session..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
-        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
-        az devops configure -l
-
-        Write-Host "`nListing all builds in the specified Azure DevOps organization and project..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az pipelines build list$($PSStyle.Reset)"
-        az pipelines build list --organization $(System.CollectionUri) --project $(System.TeamProject) -o table
-      failOnStandardError: true
-```
-
 
 ---
 
@@ -527,8 +477,66 @@ steps:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
   displayName: 'List variables in Fabrikam-2023 variable group'
 ```
-
 ---
+
+::: zone-end  
+
+
+```yml
+parameters:
+- name: serviceConnection
+  displayName: Azure Service Connection Name
+  type: string
+  default: my-azure-subscription
+
+  steps:
+  - task: AzureCLI@2
+    condition: succeededOrFailed()
+    displayName: 'Azure CLI -> DevOps CLI'
+    inputs:
+      azureSubscription: '${{ parameters.serviceConnection }}'
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        Write-Host "Using logged-in Azure CLI session..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
+        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
+        az devops configure -l
+
+        Write-Host "`nUse Azure DevOps CLI (az devops) to list projects in the organization '$(System.CollectionUri)'..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops project list$($PSStyle.Reset)"
+        az devops project list --query "value[].{Name:name, Id:id}" `
+                               -o table
+   
+        Write-Host "`nUse Azure DevOps CLI (az pipelines) to list pools in the organization '$(System.CollectionUri)'..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az pipelines pool list$($PSStyle.Reset)"
+        az pipelines pool list --query "[].{Id:id, Name:name}" `
+                               -o table
+      failOnStandardError: true
+
+  - task: AzureCLI@2
+    condition: succeededOrFailed()
+    displayName: 'List all builds in Azure DevOps project'
+    inputs:
+      azureSubscription: '${{ parameters.serviceConnection }}'
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        Write-Host "Using logged-in Azure CLI session..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
+        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
+        az devops configure -l
+
+        Write-Host "`nListing all builds in the specified Azure DevOps organization and project..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az pipelines build list$($PSStyle.Reset)"
+        az pipelines build list --organization $(System.CollectionUri) --project $(System.TeamProject) -o table
+      failOnStandardError: true
+```
+
+::: zone pivot="task"
+
+
+::: zone-end 
 
 For more examples of working with variables, including working with variables across jobs and stages, see [Define variables](../pipelines/process/variables.md). For examples of the query syntax used in the previous example, see [How to query Azure CLI command output using a JMESPath query](/cli/azure/query-azure-cli).
 
