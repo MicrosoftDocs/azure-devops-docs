@@ -8,6 +8,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 11/03/2022
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 

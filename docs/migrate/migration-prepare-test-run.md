@@ -8,6 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 05/20/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Prepare for test run migration

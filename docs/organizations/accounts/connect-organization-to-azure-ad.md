@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 10/22/2024
 monikerRange: 'azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Connect your organization to Microsoft Entra ID

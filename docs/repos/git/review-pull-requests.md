@@ -10,6 +10,7 @@ author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 08/03/2022
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 # Review pull requests

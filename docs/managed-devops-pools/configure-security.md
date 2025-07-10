@@ -2,6 +2,7 @@
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
 ms.date: 04/25/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Configure Managed DevOps Pools security settings

@@ -10,6 +10,7 @@ ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ms.date: 08/26/2024
+ms.custom: sfi-image-nochange
 --- 
 
 # Add an Active Directory / Microsoft Entra group to a built-in security group

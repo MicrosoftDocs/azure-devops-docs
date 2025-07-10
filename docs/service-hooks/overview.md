@@ -8,6 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 06/04/2025
+ms.custom: sfi-image-nochange
 # customer intent: As a team member, I want to find out how to use service hooks so that I can automate tasks in other services when events happen in my Azure DevOps project.
 ---
 

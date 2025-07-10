@@ -6,6 +6,7 @@ monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/21/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Use Azure DevOps OAuth 2.0 to create a web app

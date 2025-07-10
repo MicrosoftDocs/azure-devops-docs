@@ -1,7 +1,6 @@
 ---
 title: Delete, remove, restore project
 titleSuffix: Azure DevOps
-ms.custom: engagement-fy23
 description: Delete or remove a project from your organization in Azure DevOps. Restore a recently deleted project.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.subservice: azure-devops-projects
@@ -10,6 +9,9 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
 ms.date: 03/11/2025
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Delete a project

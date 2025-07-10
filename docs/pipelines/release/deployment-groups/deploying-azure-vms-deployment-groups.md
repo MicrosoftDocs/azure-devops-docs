@@ -4,6 +4,7 @@ description: DevOps CI CD - Deploy to Azure VMs using deployment groups in Azure
 ms.topic: tutorial
 ms.date: 05/26/2020
 monikerRange: '<= azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Deploy to Azure VMs using deployment groups in Azure Pipelines

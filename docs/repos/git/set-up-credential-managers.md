@@ -8,6 +8,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.date: 07/02/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Use Git Credential Manager to authenticate to Azure Repos

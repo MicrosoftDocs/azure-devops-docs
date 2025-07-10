@@ -2,13 +2,15 @@
 title: Sign up for Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to sign up for free for Azure Boards.
-ms.custom: boards-get-started
 ms.subservice: azure-devops-new-user
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 03/13/2025
+ms.custom:
+  - boards-get-started
+  - sfi-image-nochange
 ---
 
 # Sign up for Azure Boards

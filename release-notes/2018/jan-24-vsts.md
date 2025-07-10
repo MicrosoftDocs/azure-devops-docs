@@ -5,6 +5,7 @@ ms.topic: article
 ms.manager: jillfra
 description: In the Sprint 129 Update of Visual Studio Team Services (VSTS) on January 24, 2018, as we return with the work from Sprint 128 and 129, you’ll notice several enhancements that should delight members from across your team.
 hide_comments: true
+ms.custom: sfi-image-nochange
 ---
 
 # Improved GitHub builds and suggested work item paths – VSTS Sprint 129 Update

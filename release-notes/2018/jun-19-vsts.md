@@ -2,6 +2,7 @@
 title: Modernizing the UI – VSTS Sprint 136 Update
 ms.date: 6/22/2018
 description: In the Sprint 136 Update of Visual Studio Team Services (VSTS), we introduce a more modern UI.
+ms.custom: sfi-image-nochange
 ---
 
 # Modernizing the UI – VSTS Sprint 136 Update

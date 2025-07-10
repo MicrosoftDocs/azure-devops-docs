@@ -6,6 +6,7 @@ description: Set up a webhook subscription that sends JSON representations of Az
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 monikerRange: '<= azure-devops'
 ms.date: 08/13/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Webhooks

@@ -8,6 +8,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 01/22/2024
+ms.custom: sfi-image-nochange
 --- 
 
 # Add users or groups to a team or project

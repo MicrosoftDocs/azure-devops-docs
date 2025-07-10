@@ -5,11 +5,13 @@ description: Set up secret scanning for GitHub Advanced Security for Azure DevOp
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
-ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 07/02/2025
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
 
 # Set up secret scanning 

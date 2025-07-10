@@ -6,7 +6,12 @@ ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.author: jukullam
 ms.date: 04/01/2024
 monikerRange: "<=azure-devops"
-ms.custom: devx-track-python, freshness-fy22q2, arm2024, linux-related-content
+ms.custom:
+  - devx-track-python
+  - freshness-fy22q2
+  - arm2024
+  - linux-related-content
+  - sfi-image-nochange
 ---
 
 # Use Azure Pipelines to build and deploy a Python web app to Azure App Service

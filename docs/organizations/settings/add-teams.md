@@ -3,13 +3,16 @@ title: Create or add a team
 titleSuffix: Azure DevOps 
 description: Learn how to create or add a team to a project in Azure DevOps to scale your development processes, collaborate effectively, and manage project resources.
 ms.subservice: azure-devops-settings
-ms.custom: teams, devx-track-azurecli
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 11/12/2024
+ms.custom:
+  - teams
+  - devx-track-azurecli
+  - sfi-image-nochange
 ---
 
 # Create or add a team 

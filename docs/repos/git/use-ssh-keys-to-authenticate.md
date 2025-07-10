@@ -9,6 +9,7 @@ ms.date: 08/20/2024
 ms.author: sdanie
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 # Use SSH key authentication
