@@ -86,7 +86,7 @@ When an enduring failure occurs in a subscription, the subscription is placed on
 
 ### Probation
 
-When a subscription is on probation, the number of notifications it can send is limited. Any new events are lost.
+When a subscription is on probation, any new events are lost. The system makes a limited number of attempts to resend the failed notification.
 
 The following table lists approximate backoff times and total probation times for retries that are attempted during probation. At most seven retries are attempted, and the maximum backoff time for a probation retry is 15 hours.
 
@@ -116,10 +116,12 @@ If the subscription receives a successful response while on probation, it gets r
 
 **A:** A subscription is automatically disabled in the following cases:
 
-* A series of consecutive failures occurs over a prolonged period.
 * A terminal failure is encountered.
+* A series of consecutive failures occurs over a prolonged period.
 
-Notifications that result in transient failures are retried several times before being declared enduring failures. Enduring failure notifications aren't retried. The following status codes provide examples of each type of failure:
+Notifications that result in transient failures are retried several times before being declared enduring failures. Enduring failure notifications are retried a limited number of times during [probation](#probation). If all probation retries fail, the subscription gets disabled.
+
+The following status codes provide examples of each type of failure:
 
 * Transient: 408 (Request Timeout), 502 (Bad Gateway), 503 (Service Unavailable), 504 (Gateway Timeout)
 * Terminal: 410 (Gone)
