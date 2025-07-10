@@ -21,7 +21,7 @@ Finding the right package for your project can be time-consuming, especially whe
 
 | **Product**        | **Requirements**  |
 |--------------------|-------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../../artifacts/start-using-azure-artifacts#create-a-new-feed). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../../artifacts/start-using-azure-artifacts.md#create-a-new-feed). |
 
 ## Search packages
 
