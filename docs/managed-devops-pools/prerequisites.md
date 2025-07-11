@@ -266,7 +266,7 @@ To check your agent pools permissions at the organization level:
 
    :::image type="content" source="./media/prerequisites/organization-agent-pools-security.png" alt-text="Screenshot of Organization level agent pools security page.":::
 
-1. If you need to create a Managed DevOps Pools in this organization, ask a Project collection administrator, or an administrator listed here, to choose **Add**, add you as an administrator, and choose **Save**. For more information, see [Set agent pool security in Azure Pipelines](../pipelines/policies/permissions.md#set-agent-pool-security-in-azure-pipelines).
+1. If you need to create Managed DevOps Pools in this organization, ask a Project collection administrator, or an administrator listed here, to choose **Add**, add you as an administrator, and choose **Save**. For more information, see [Set agent pool security in Azure Pipelines](../pipelines/policies/permissions.md#set-agent-pool-security-in-azure-pipelines).
 
    > [!TIP]
    > If the **Add** button is disabled, you don't have permission to create Managed DevOps Pools in this organization.
@@ -298,7 +298,7 @@ To check your agent pools permissions at the project level:
 
    :::image type="content" source="./media/prerequisites/project-agent-pools-security.png" alt-text="Screenshot of Project level agent pools security page.":::
 
-1. If you need to create a Managed DevOps Pools for use in this Project, ask a Project collection administrator, a Project administrator (or anyone in one of the listed administrator groups), or an administrator listed here, to choose **Add**, add you as an administrator, and choose **Save**. For more information, see [Set agent pool security in Azure Pipelines](../pipelines/policies/permissions.md#set-agent-pool-security-in-azure-pipelines).
+1. If you need to create Managed DevOps Pools for use in this Project, ask a Project collection administrator, a Project administrator (or anyone in one of the listed administrator groups), or an administrator listed here, to choose **Add**, add you as an administrator, and choose **Save**. For more information, see [Set agent pool security in Azure Pipelines](../pipelines/policies/permissions.md#set-agent-pool-security-in-azure-pipelines).
 
    > [!TIP]
    > If the **Add** button is enabled, you have permission to create Managed DevOps Pools for use in this project.
