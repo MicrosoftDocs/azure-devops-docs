@@ -4,8 +4,6 @@ ms.topic: conceptual
 title: Cross-platform CLI authentication for Azure DevOps
 description: Learn authentication options for the cross-platform CLI for Azure DevOps, including Microsoft Entra ID tokens and personal access tokens.
 ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8
-> [!NOTE]
-> OAuth 2.0 is only available for Azure DevOps Services, not Azure DevOps Server. For on-premises scenarios, use [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Authentication, or [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
