@@ -32,7 +32,7 @@ To use Managed DevOps Pools, register the following resource providers with your
 | **Microsoft.DevOpsInfrastructure** | Resource provider for Managed DevOps Pools |
 | **Microsoft.DevCenter** | Resource provider for dev center and dev center project |
 
-Registering a resource provider uses the `/register/action` operation. Permission to perform this operation is included if your account is assigned the [contributor or owner role](/azure/role-based-access-control/built-in-roles) on your subscription.
+Registering a resource provider uses the `/register/action` operation. Permission to perform this operation is included if your account is granted the [contributor or owner role](/azure/role-based-access-control/built-in-roles) on your subscription.
 
 
 #### [Azure portal](#tab/azure-portal/)
@@ -224,7 +224,7 @@ When you create a Managed DevOps Pool, the account you use to sign in to the Azu
 |------------|-------------|
 | [Azure DevOps organization member](#verify-membership-in-the-azure-devops-organization) | You must be a member of the Azure DevOps organization where you want to create Managed DevOps Pools. |
 | [Organization level agent pools administrator](#organization-level-agent-pools-administrator) | You must have agent pool **Administrator** permissions at the organization level in the Azure DevOps organization where you want to create Managed DevOps Pools. |
-| [Project level agent pools administrator or creator](#project-level-agent-pools-administrator-or-creator) | You must have **Administrator** or **Creator** agent pool permissions at the project level for each project in whichyou want to make your Managed DevOps Pool available to pipelines. |
+| [Project level agent pools administrator or creator](#project-level-agent-pools-administrator-or-creator) | You must have **Administrator** or **Creator** agent pool permissions at the project level for each project in which you want to make your Managed DevOps Pool available to pipelines. |
 
 * [Membership in the Azure DevOps organization](#verify-azure-devops-permissions)
 * [Organization level agent pools administrator](#organization-level-agent-pools-administrator) for each organization where you want to create Managed DevOps Pools
@@ -237,15 +237,16 @@ You must be a member of the Azure DevOps organization before the permissions in 
 > [!TIP]
 > If you are currently working in the Azure DevOps organization, for example using Azure Boards, working with Azure Repos, or creating Azure Pipelines, you are already a member of the Azure DevOps organization, and you can skip this step.
 
-1. Go to `https://dev.azure.com/{organization}}/_settings/users`, replacing `{organization}` with the name of your Azure DevOps organization.
-   * If you are denied access to the page, you are not a member of the Azure DevOps organization. You must be [added as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization) by an administrator of the Azure DevOps organization.
-   * If you can access the page, review the user list and verify that you are a member of the Azure DevOps organization. If you don't see your account listed, you must be [added as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization) by an administrator of the Azure DevOps organization.
+To verify your membership in the Azure DevOps organization, go to `https://dev.azure.com/{organization}}/_settings/users`, replacing `{organization}` with the name of your Azure DevOps organization.
+
+* If you are denied access to the page, you are not a member of the Azure DevOps organization. You must be [added as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization) by an administrator of the Azure DevOps organization.
+* If you can access the page, review the user list and verify that you are a member of the Azure DevOps organization. If you don't see your account listed, you must be [added as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization) by an administrator of the Azure DevOps organization.
 
 ### Organization level agent pools administrator
 
 You must have Organization level agent pools **Administrator** permissions for each organization where you want to create Managed DevOps Pools.
 
-You can be directly assigned the **Organization-level agent pools administrator** role by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or another **Organization-level Agent pools administrator**, and you are granted this permission automatically if you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md).
+You can be directly granted the **Organization-level agent pools administrator** permission by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or another **Organization-level Agent pools administrator**, and you are granted this permission automatically if you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md).
 
 To check your agent pools permissions at the organization level:
 
@@ -276,10 +277,10 @@ To check your agent pools permissions at the organization level:
 
 You must have Project level agent pools **Administrator** or **Creator** permissions for each project in which you want to make your Managed DevOps Pool available to pipelines.
 
-  * If you create your Managed DevOps Pool with **Add pool to all projects** set to **Yes**, Managed DevOps Pools will configure the pool to be available in all projects for which you have the **Administrator** or **Creator** permission, and skip any projects where you don't permission.
-  * If you provide a list of projects when creating your Managed DevOps Pool, you must have the **Administrator** or **Creator** permission for each of those projects or else pool creation will fail.
+  * If you create your Managed DevOps Pool with **Add pool to all projects** set to **Yes**, Managed DevOps Pools will configure the pool to be available in all projects for which you have the **Administrator** or **Creator** permission, and skip any projects where you don't have permission.
+  * If you provide a list of projects when creating your Managed DevOps Pool, you must have the **Administrator** or **Creator** permission for every listed project or else pool creation fails.
 
-You can be directly assigned the **Administrator** or **Creator** role by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md), a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), or another **Project-level agent pools administrator**. You are granted the **Administrator** role automatically if you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group).
+You can be directly granted the **Administrator** or **Creator** permission by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md), a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), or another **Project-level agent pools administrator**. You are granted the **Administrator** role automatically if you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group).
 
 To check your agent pools permissions at the project level:
 
