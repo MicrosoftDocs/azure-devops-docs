@@ -231,6 +231,7 @@ Each image includes the following installed software.
 
 | Image | Included software |
 |-------|-------------------|
+| Azure Pipelines - Windows Server 2025 | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Azure Pipelines - Windows Server 2022 | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md) |
 | Azure Pipelines - Windows Server 2019 | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2019-Readme.md) |
 | Azure Pipelines - Ubuntu 24.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
@@ -282,6 +283,7 @@ Choose **Azure Compute Gallery images** to specify an image from any Azure Compu
 
 * Windows Server 2019
 * Windows Server 2022
+* Windows Server 2025
 * Windows 11
 * Ubuntu 20.04
 * Ubuntu 22.04
@@ -406,6 +408,7 @@ In addition to any aliases that you configure, Azure Pipelines images have the f
 
 | Azure Pipelines image | Predefined alias |
 |-----------------------|------------------|
+| Azure Pipelines - Windows Server 2025 | `windows-2025` |
 | Azure Pipelines - Windows Server 2022 | `windows-2022` |
 | Azure Pipelines - Windows Server 2019 | `windows-2019` |
 | Azure Pipelines - Ubuntu 24.04 | `ubuntu-24.04` |
