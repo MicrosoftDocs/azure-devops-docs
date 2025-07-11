@@ -229,10 +229,10 @@ Azure Pipeline definitions must conform to the following restrictions.
 
 |Restriction type    |Restriction  |
 |--------------------|-------------|
-|Expressions         | Must start with `a-Z` or `_AND`, followed by `a-Z`, `0-9`, or `_`.        |
-|Variables           | User-defined and environment variable names may include letters, numbers, `.`, and `_`. Must not use the following system-reserved prefixes: `endpoint`, `input`, `secret`, `path`, and `securefile`. Variables starting with these (case-insensitive) won’t be available to tasks or scripts.|
+|Expressions         | - Must start with `a-Z` or `_`, followed by `a-Z`, `0-9`, or `_`.        |
+|Variables           | - User-defined and environment variable must only contain alphanumeric characters, `.`, and `_`.<br>- Must not begin with the following reserved prefixes: `endpoint`, `input`, `secret`, `path`, and `securefile`. Variables using these prefixes (case-insensitive) won’t be available to tasks or scripts.|
 |Stages              | - Name of the stage `stage` must only contain alphanumeric characters and `_`.<br/>- Must not start with a number.   |
-|Jobs                | Name of the job `job` must only contain alphanumeric characters and `_`.<br/>- Must not start with a number.<br>- Must not contain keywords, for example: "deploy". |
+|Jobs                | - Name of the job `job` must only contain alphanumeric characters and `_`.<br/>- Must not start with a number.<br>- Must not contain keywords, for example: "deploy". |
 |Deployment jobs     | - Name of the deployment job `deployment` must only contain alphanumeric characters and `_`.<br>- Job and stage names must not contain reserved keywords (for example: deploy).<br>- Each job in a stage must have a unique name.       |
 |Matrix job strategy | - Matrix configuration names must only contain alphanumeric characters and `_`.<br>- Must start with a letter.<br>- Maximum length: 100 characters.       |
 |Build resource      | - Alias or name of build artifact `build` must only contain alphanumeric characters, `-`, and `_`. |
