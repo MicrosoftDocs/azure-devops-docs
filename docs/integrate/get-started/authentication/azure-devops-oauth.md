@@ -23,7 +23,7 @@ Azure DevOps is an identity provider for OAuth 2.0 apps. Our implementation of O
 
 1. Go to `https://app.vsaex.visualstudio.com/app/register` to register your app.
 
-2. Select the [scopes](./oauth.md#scopes) that your application needs, and then use the same scopes when you [authorize your app](#2-authorize-your-app). If you registered your app using the preview APIs, re-register because the scopes that you used are now deprecated.
+2. Select the [scopes](./oauth.md#available-scopes) that your application needs, and then use the same scopes when you [authorize your app](#2-authorize-your-app). If you registered your app using the preview APIs, re-register because the scopes that you used are now deprecated.
 
 3. Select **Create application**.
 
@@ -61,7 +61,7 @@ Parameter     | Type   | Notes
 client_id     | GUID   | The ID assigned to your app when it was registered.
 response_type | string | `Assertion`
 state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization request.
-scope         | string | Scopes registered with the app. Space separated. See [available scopes](oauth.md#scopes).
+scope         | string | Scopes registered with the app. Space separated. See [available scopes](oauth.md#available-scopes).
 redirect_uri  | URL    | Callback URL for your app. **Must exactly match the URL registered with the app**.
 
 2. Add a link or button to your site that takes the user to the Azure DevOps Services authorization endpoint:
@@ -216,7 +216,7 @@ You can find a C# sample that implements OAuth to call Azure DevOps Services RES
 
 ## Regenerate client secret
 
-Application secrets regularly expire every 60 days (as of March 2025). You may have two secrets at any time. Continue to create and use access tokens and refresh tokens by rotating your soon-to-expire app secret with a new application secret. This can be done on the app's registration page on the [Visual Studio profile](https://aex.dev.azure.com/me) or through the [Registration Secret APIs](/rest/api/azure/devops/delegatedauth/registration-secret). To use the APIs, you must use an [Entra access token](entra-oauth.md) with the `vso.tokens` [scope](oauth.md#scopes).
+Application secrets regularly expire every 60 days (as of March 2025). You may have two secrets at any time. Continue to create and use access tokens and refresh tokens by rotating your soon-to-expire app secret with a new application secret. This can be done on the app's registration page on the [Visual Studio profile](https://aex.dev.azure.com/me) or through the [Registration Secret APIs](/rest/api/azure/devops/delegatedauth/registration-secret). To use the APIs, you must use an [Entra access token](entra-oauth.md) with the `vso.tokens` [scope](oauth.md#available-scopes).
 
 1. Create a secondary secret by selecting **"Generate Secret"** for "Secret 2". (Use the [Create Registration Secret API](/rest/api/azure/devops/delegatedauth/registration-secret/create).)
 
