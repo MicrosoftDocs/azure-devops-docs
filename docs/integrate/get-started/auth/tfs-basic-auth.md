@@ -1,98 +1,131 @@
 ---
 ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
-title: Use the Cross-platform CLI for Azure DevOps 
-description: Use the Cross-platform CLI for Azure DevOps, using personal access tokens (PATs).
+title: Cross-platform CLI authentication for Azure DevOps
+description: Learn authentication options for the cross-platform CLI for Azure DevOps, including Microsoft Entra ID tokens and personal access tokens.
 ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8
+> [!NOTE]
+> OAuth 2.0 is only available for Azure DevOps Services, not Azure DevOps Server. For on-premises scenarios, use [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Authentication, or [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/10/2023
+ms.date: 07/11/2025
 ---
 
-# Use the Cross-platform CLI for Azure DevOps using personal access tokens
+# Cross-platform CLI authentication for Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Use personal access tokens (PATs) with the cross-platform CLI for Azure DevOps.
+This article explains authentication approaches for the cross-platform CLI (tfx-cli) and Azure DevOps.
 
 > [!IMPORTANT]
-> We don't recommend using basic authentication or PATs. Instead, we recommend using [Microsoft Entra-based authentication](../authentication/entra.md), if you're interacting with Microsoft Entra accounts.
+> We recommend using [Microsoft Entra ID authentication](../authentication/entra.md) as the primary method for authentication. Personal access tokens (PATs) should be used only when Microsoft Entra ID authentication isn't available. Basic authentication is deprecated and not recommended.
 
 ## Prerequisites
 
-- Latest version of [**Node.js source code**](https://nodejs.org/en/download/)
-- **Cross-platform CLI for Azure DevOps**
-  - Install **tfx-cli** using `npm`, a component of Node.js by running:
+Before you begin, ensure you have:
 
-   ```no-highlight
-    npm i -g tfx-cli 
+- [Node.js](https://nodejs.org/en/download/) (latest LTS version recommended)
+- **tfx-cli** installed globally:
+
+   ```bash
+   npm install -g tfx-cli
    ```
 
-   For more information about **tfx-cli**, see the [Node CLI for Azure DevOps on GitHub](https://github.com/Microsoft/tfs-cli).
+For more information about tfx-cli, see the [Node CLI for Azure DevOps on GitHub](https://github.com/Microsoft/tfs-cli).
 
-## Personal access token
+## Authentication methods
 
-Create a personal access token and paste it into the sign-in command.
+Choose the appropriate authentication method based on your environment:
 
+| Method | Recommended for | Security level |
+|--------|----------------|----------------|
+| Microsoft Entra ID | Azure DevOps Services | High |
+| PAT | Azure DevOps Server, automation scripts | Medium |
+| Basic Authentication | Legacy on-premises only | Low (deprecated) |
+
+## Microsoft Entra ID authentication (Recommended)
+
+For Azure DevOps Services, use Microsoft Entra ID authentication for the best security:
+
+```bash
+tfx login
+```
+
+When prompted:
+1. Enter your service URL, for example, `https://dev.azure.com/Your_Organization`.
+2. Follow the browser-based authentication flow.
+3. Complete the sign-in process in your browser.
+
+For detailed guidance on Microsoft Entra ID authentication, see [Microsoft Entra-based authentication](../authentication/entra.md).
+
+## PAT authentication
+
+Use PATs when Microsoft Entra ID authentication isn't available, such as with Azure DevOps Server or automation scenarios.
+
+### Create and use a PAT
+
+1. [Create a PAT](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with the required scopes.
+2. Sign in using the PAT:
+
+```bash
+tfx login
+```
+
+3. When prompted, provide:
+   - **Service URL**: Your Azure DevOps instance URL.
+   - **Personal access token**: The PAT you created.
+
+**Example URLs:**
+- Azure DevOps Services: `https://dev.azure.com/Your_Organization`
+- Azure DevOps Server: `https://yourserver/tfs/DefaultCollection`
+- Visual Studio Marketplace: `https://marketplace.visualstudio.com`
+
+**Example session:**
 ```
 ~$ tfx login
 Copyright Microsoft Corporation
 
-> Service URL: {url}
-> Personal access token: xxxxxxxxxxxx
+> Service URL: https://dev.azure.com/Your_Organization
+> Personal access token: **********************
 Logged in successfully
 ```
 
-See the following examples of valid URLs:
-
-- `https://marketplace.visualstudio.com`
-- `https://youraccount.visualstudio.com/DefaultCollection`
-
-## Configure for Basic authentication
+## Basic authentication (Deprecated)
 
 > [!WARNING]
-> We don't recommend basic authentication. Turning on IIS basic authentication causes various issues, and you should use [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) instead.  For example, if you turn on IIS basic authentication, GIT command line stops working.
+> Basic authentication is deprecated and not recommended. Use Microsoft Entra ID or PATs instead. Basic authentication:
+> - Sends credentials in plaintext
+> - Can cause issues with Git command line operations
+> - Poses security risks
 
-Follow these steps to enable basic auth for your Azure DevOps instance:
+### Configure basic authentication (Legacy Azure DevOps Server only)
 
-> [!WARNING]
-> Basic authentication sends usernames and passwords in plaintext. Consider [configuring Azure DevOps Server to use SSL](/azure/devops/server/admin/setup-secure-sockets-layer) to enable secure communication when using basic auth.
+If you must use basic authentication with legacy Azure DevOps Server installations:
 
-1. Install the `Basic Authentication` feature for IIS in Server Manager.
+1. **Enable IIS Basic Authentication:**
+   - Open Server Manager.
+   - Install the Basic Authentication feature for IIS.
+   - In IIS Manager, go to your Azure DevOps Server website.
+   - Double-select **Authentication** in the Features view.
+   - Enable Basic Authentication.
+   - Leave domain and realm settings empty.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Screenshot of configure basic authentication feature.](./media/configureBasicAuthFeature.png)
+2. **Sign in with basic authentication:**
 
-2. Open IIS Manager and expand to the `Azure DevOps Server` website, double-click the `Authentication` tile in the Features view.
-
-3. Choose `Basic Authentication` in the list of authentication methods. Choose `Enable` in the right hand column. You should now see `Basic Authentication` enabled.
-
-> [!NOTE]
-> Leave the **domain** and **realm** settings for Basic Authentication empty.
-
-## tfx sign in with Basic authentication
-
-Now you can start to use `tfx` against your server. Sign in before you issue commands.
-
-1. Enter the following command:
-
-   ```no-highlight
-   tfx login --auth-type basic
-   ```
-
-2. Add your service url.
-3. Add your username. Use `domain\user` (for example, fabrikam\peter). If you're working on a workgroup machine, use `machinename\user`.
-4. Add your password. Enter the password for the username that you previously entered.
-
-**You can now use any other tfx command.**
-
-```no-highlight
-> tfx login --auth-type basic
-Copyright Microsoft Corporation
-
-Enter service url > http://localhost:8080/tfs/defaultcollection
-Enter username > fabfiber\peter
-Enter password > *******
-logged in successfully
+```bash
+tfx login --auth-type basic
 ```
+
+When prompted, provide:
+- **Service URL**: Your on-premises server URL (for example, `http://yourserver:8080/tfs/DefaultCollection`).
+- **Username**: Use `domain\username` format (for example, `fabrikam\john`)
+- **Password**: Your domain password.
+
+> [!TIP]
+> Consider [configuring SSL](/azure/devops/server/admin/setup-secure-sockets-layer) for secure communication when using basic authentication.
+
+## Next step
+
+> [!div class="nextstepaction"]
+[View the complete tfx-cli command reference](https://github.com/Microsoft/tfs-cli)
