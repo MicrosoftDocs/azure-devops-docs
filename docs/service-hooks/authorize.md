@@ -44,9 +44,7 @@ A typical authorization flow might include the following steps:
 
 1. You use a service that uses Azure DevOps resources, so the service requests authorization.
 
-1. To initiate the authentication process for the service, the registered app opens a Microsoft Entra ID website.
-
-   :::image type="content" source="media/authorize/microsoft-account-selection.png" alt-text="Screenshot of a Microsoft dialog for selecting an account. One account is visible, and an option for adding another account is available.":::
+1. To initiate the authentication process for the service, the registered app opens a Microsoft Entra ID website that prompts you to select an account.
 
 1. After you select an account, the authorization approval page appears.
 
