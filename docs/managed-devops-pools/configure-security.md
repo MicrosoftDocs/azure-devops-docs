@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 04/25/2025
+ms.date: 07/11/2025
 ---
 
 # Configure Managed DevOps Pools security settings
@@ -15,11 +15,18 @@ Be default, Managed DevOps Pools are configured for a single organization, with 
 * [Use pool with a single organization](#use-pool-with-a-single-organization)
 * [Use pool in multiple organizations](#use-pool-in-multiple-organizations)
 
+> [!NOTE]
+> If you configure your pool with access granted to all projects, the pool is added to the projects for which you have the appropriate permissions.
+>
+> If you configure your pool with access granted to specific projects, you must have permission to add the pool in all of the designated projects, or the pool creation fails.
+>
+> To see the permissions required to configure Managed DevOps Pools in your organization and projects, see [Prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions).
+
 ### Use pool with a single organization
 
 #### [Azure portal](#tab/azure-portal/)
 
-By default, Managed DevOps Pools is configured for use with a single Azure DevOps organization that you specify when you create the pool. When your pool is configured for a single organization, the organization name is displayed and configured in Pool settings
+By default, Managed DevOps Pools is configured for use with a single Azure DevOps organization that you specify when you create the pool. When your pool is configured for a single organization, the organization name is displayed and configured in **Pool** settings.
 
 By default, **Add pool to all projects** is set to **Yes**, and access to the Managed DevOps Pool is granted to all projects in the organization. Choose **No** to specify a list of projects to limit which projects in your organization can use the pool.
 
