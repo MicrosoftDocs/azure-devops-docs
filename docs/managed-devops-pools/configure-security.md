@@ -361,7 +361,7 @@ The following example shows the `osProfile` section of the **fabric-profile.json
 
 ## Pool administration permissions
 
-As part of the Managed DevOps Pool creation process, an organization level agent pool is created in Azure DevOps. The **Pool administration permissions** setting specifies which users are granted the administrator role of the newly created pool in Azure DevOps. To view and manage the Azure DevOps agent pool permissions after the Managed DevOps Pool is created, see [Create and manage agent pools - Security of agent pools](/azure/devops/pipelines/agents/pools-queues#security).
+As part of the Managed DevOps Pool creation process, an agent pool is created at the Azure DevOps organization level, and a project level agent pool is created in each designated project. The **Pool administration permissions** setting specifies which users are granted the administrator role of the newly created agent pools in Azure DevOps. To view and manage the Azure DevOps agent pool permissions after the Managed DevOps Pool is created, see [Create and manage agent pools - Security of agent pools](/azure/devops/pipelines/agents/pools-queues#security).
 
 #### [Azure portal](#tab/azure-portal/)
 
