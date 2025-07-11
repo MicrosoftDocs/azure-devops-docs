@@ -3,7 +3,7 @@ title: Deploy a build and release agent on macOS
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.date: 04/01/2025
+ms.date: 07/11/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -11,9 +11,18 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-:::moniker range="<=azure-devops"
+:::moniker range="=azure-devops"
 
-This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Services and current versions of Azure DevOps Server. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
+This article provides guidance for using the [4.x agent software](v4-agent.md) with Azure DevOps Services.
+
+:::moniker-end
+
+:::moniker range="<azure-devops"
+
+This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
+
+> [!IMPORTANT]
+> If you're using Azure DevOps Server, you should be using the [4.x agent software](v4-agent.md).
 
 :::moniker-end
 
@@ -39,7 +48,7 @@ To build and deploy Xcode apps, you need at least one macOS agent. This agent ca
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
-    * macOS 15.0 "Sequoia"
+    * macOS 15.0 "Sequoia" (only supported when using [4.x agent software](v4-agent.md))
 
 - **Git** - Git 2.9.0 or higher (latest version recommended - you can easily install with [Homebrew](https://brew.sh/))
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
