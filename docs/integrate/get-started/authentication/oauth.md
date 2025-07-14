@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/11/2025
+ms.date: 07/14/2025
 ---
 
 # OAuth 2.0 authentication for Azure DevOps REST APIs
@@ -53,7 +53,7 @@ Microsoft Entra ID OAuth provides the most secure and future-proof authenticatio
 ### Azure DevOps OAuth (Deprecated)
 
 > [!WARNING]
-> Azure DevOps OAuth is deprecated. New app registrations are no longer accepted as of April 2025, and the service is schedule for ful deprecation in 2026. Migrate existing applications to Microsoft Entra ID OAuth.
+> Azure DevOps OAuth is deprecated. New app registrations are no longer accepted as of April 2025, and the service is schedule for full deprecation in 2026. Migrate existing applications to Microsoft Entra ID OAuth.
 
 For existing Azure DevOps OAuth applications:
 - Review the [Azure DevOps OAuth guide](./azure-devops-oauth.md) for current implementation details
@@ -127,5 +127,4 @@ Choose your implementation path:
 ## Related articles
 
 - [Authentication guidance overview](authentication-guidance.md)
-- [Personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 - [Manage app authorizations](../../../organizations/settings/manage-authorizations.md)
