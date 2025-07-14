@@ -47,7 +47,7 @@ When you use Microsoft tools, your Microsoft account (MSA) or Microsoft Entra ID
 
    :::image type="content" source="media/pats/create-new-pat.png" alt-text="Screenshot showing entry of basic token information.":::
 
-5. Select the [scopes](../../integrate/get-started/authentication/oauth.md#scopes)
+5. Select the [scopes](../../integrate/get-started/authentication/oauth.md#available-scopes)
    for this token to authorize for *your specific tasks*.
 
       For example, to create a token for a [build and release agent](../../pipelines/agents/agents.md) to authenticate to Azure DevOps, set the token's scope to **Agent Pools (Read & manage)**. To read audit log events and manage or delete streams, select **Read Audit Log**, and then select **Create**.
@@ -132,7 +132,7 @@ Do the following steps to:
 
 - Regenerate a PAT to create a new token, which invalidates the previous one.
 - Extend a PAT to increase its validity period.
-- Alter the [scope](../../integrate/get-started/authentication/oauth.md#scopes) of a PAT to change its permissions.
+- Alter the [scope](../../integrate/get-started/authentication/oauth.md#available-scopes) of a PAT to change its permissions.
 
 1. From your home page, open user settings :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
