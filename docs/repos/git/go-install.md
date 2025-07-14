@@ -104,7 +104,7 @@ The `<user>` part can be any nonempty string; we suggest using `entra` or your u
 
 #### Personal Access Tokens (alternative)
 
-If you prefer to use PATs, create a PAT as described in [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). This PAT requires only the **Code (read)** [scope](../../integrate/get-started/authentication/oauth.md#scopes).
+If you prefer to use PATs, create a PAT as described in [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). This PAT requires only the **Code (read)** [scope](../../integrate/get-started/authentication/oauth.md#available-scopes).
 
 After you create the PAT, add this entry to your `.gitconfig` file:
 

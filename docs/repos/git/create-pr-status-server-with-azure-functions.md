@@ -140,7 +140,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
 Update the code of your Azure function, similar to the following example.
 
-Make sure to update the code with your organization name, project name, repository name, and Microsoft Entra ID token. In order to have permission to change PR status, the token requires [vso.code_status](../../integrate/get-started/authentication/oauth.md#scopes) scope, which you can obtain through Microsoft Entra authentication.
+Make sure to update the code with your organization name, project name, repository name, and Microsoft Entra ID token. In order to have permission to change PR status, the token requires [vso.code_status](../../integrate/get-started/authentication/oauth.md#available-scopes) scope, which you can obtain through Microsoft Entra authentication.
 
 >[!Important]
 >This sample code stores the token in code, simplifying the sample. It is recommended to store secrets in Azure Key Vault and retrieve them from there using managed identity for enhanced security.
