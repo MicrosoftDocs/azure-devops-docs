@@ -331,7 +331,7 @@ A: Service principals and managed identities offer significant security advantag
 - **Conditional access**: Apply policies based on location, device, and risk factors
 - **No service accounts**: Eliminates dependency on individual user accounts for automation
 
-For migration examples, see [Replace PATs with Microsoft Entra tokens](entra.md#replace-pats-with-microsoft-entra-tokens).
+For migration examples, see [Replace PATs with Microsoft Entra tokens](entra.md#migration-from-legacy-authentication).
 
 #### Q: What are the rate limits on service principals and managed identities?
 

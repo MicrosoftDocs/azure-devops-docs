@@ -29,7 +29,7 @@ Learn how to extend and integrate with Azure DevOps using the [.NET client libra
 - **Azure-hosted applications**: Use [managed identities](../authentication/service-principal-managed-identity.md)
 - **CI/CD pipelines**: Use [service principals](../authentication/service-principal-managed-identity.md) 
 - **Interactive applications**: Use [Microsoft Entra authentication](../authentication/entra.md)
-- **Legacy scenarios only**: Use [personal access tokens](../authentication/authentication-guidance.md#personal-access-tokens-pats)
+- **Legacy scenarios only**: Use [personal access tokens](../authentication/authentication-guidance.md)
 
 > [!IMPORTANT]
 > This article shows multiple authentication methods for different scenarios. Choose the most appropriate method based on your deployment environment and security requirements.
@@ -525,7 +525,7 @@ private static bool IsTransientError(Exception ex)
 - Deploy incrementally to production
 - Monitor for authentication issues
 
-For detailed migration guidance, see [Replace PATs with Microsoft Entra tokens](../authentication/entra.md#replace-pats-with-microsoft-entra-tokens).
+For detailed migration guidance, see [Replace PATs with Microsoft Entra tokens](../authentication/entra.md#migration-from-legacy-authentication).
 
 ## Related resources
 

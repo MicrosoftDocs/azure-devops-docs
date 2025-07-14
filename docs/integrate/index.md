@@ -49,12 +49,12 @@ Azure DevOps integration enables you to:
 **Choose the right authentication method:**
 
 **✅ Recommended for production:**
-- **[Managed Identity](./get-started/authentication/authentication-guidance.md#managed-identity)** - For Azure-hosted applications (most secure)
-- **[Service Principal](./get-started/authentication/authentication-guidance.md#service-principal)** - For CI/CD pipelines and automated services
+- **[Managed Identity](./get-started/authentication/service-principal-managed-identity.md)** - For Azure-hosted applications (most secure)
+- **[Service Principal](./get-started/authentication/service-principal-managed-identity.md)** - For CI/CD pipelines and automated services
 - **[Microsoft Entra ID](./get-started/authentication/entra.md)** - For user-facing applications requiring OAuth flows
 
 **⚡ Quick development:**
-- **[Personal Access Tokens (PATs)](./get-started/authentication/authentication-guidance.md#personal-access-tokens)** - For testing and personal automation only
+- **[Personal Access Tokens (PATs)](./get-started/authentication/authentication-guidance.md)** - For testing and personal automation only
 
 **❌ Avoid for production:**
 - Username/password authentication (deprecated)
