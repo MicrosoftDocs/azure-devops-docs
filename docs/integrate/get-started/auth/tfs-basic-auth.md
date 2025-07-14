@@ -7,7 +7,7 @@ ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/11/2025
+ms.date: 07/14/2025
 ---
 
 # Cross-platform CLI authentication for Azure DevOps
@@ -36,11 +36,11 @@ For more information about tfx-cli, see the [Node CLI for Azure DevOps on GitHub
 
 Choose the appropriate authentication method based on your environment:
 
-| Method | Recommended for | Security level |
-|--------|----------------|----------------|
-| Microsoft Entra ID | Azure DevOps Services | High |
-| PAT | Azure DevOps Server, automation scripts | Medium |
-| Basic Authentication | Legacy on-premises only | Low (deprecated) |
+| Method | Recommended for | 
+|--------|----------------|
+| Microsoft Entra ID | Azure DevOps Services | 
+| PAT | Azure DevOps Server, automation scripts | 
+| Basic Authentication | Azure DevOps Server only | 
 
 ## Microsoft Entra ID authentication (Recommended)
 
@@ -59,16 +59,16 @@ For detailed guidance on Microsoft Entra ID authentication, see [Microsoft Entra
 
 ## PAT authentication
 
-Use PATs when Microsoft Entra ID authentication isn't available, such as with Azure DevOps Server or automation scenarios.
+Use PATs when Microsoft Entra ID authentication isn't available, such as with Azure DevOps Server.
 
 ### Create and use a PAT
 
 1. [Create a PAT](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with the required scopes.
 2. Sign in using the PAT:
 
-```bash
-tfx login
-```
+    ```bash
+    tfx login
+    ```
 
 3. When prompted, provide:
    - **Service URL**: Your Azure DevOps instance URL.
@@ -92,14 +92,14 @@ Logged in successfully
 ## Basic authentication (Deprecated)
 
 > [!WARNING]
-> Basic authentication is deprecated and not recommended. Use Microsoft Entra ID or PATs instead. Basic authentication:
+> Basic authentication is deprecated and not recommended. Use Microsoft Entra ID instead. Basic authentication:
 > - Sends credentials in plaintext
 > - Can cause issues with Git command line operations
 > - Poses security risks
 
-### Configure basic authentication (Legacy Azure DevOps Server only)
+### Configure basic authentication (Azure DevOps Server only)
 
-If you must use basic authentication with legacy Azure DevOps Server installations:
+If you must use basic authentication with Azure DevOps Server installations:
 
 1. **Enable IIS Basic Authentication:**
    - Open Server Manager.
@@ -111,14 +111,14 @@ If you must use basic authentication with legacy Azure DevOps Server installatio
 
 2. **Sign in with basic authentication:**
 
-```bash
-tfx login --auth-type basic
-```
+    ```bash
+    tfx login --auth-type basic
+    ```
 
-When prompted, provide:
-- **Service URL**: Your on-premises server URL (for example, `http://yourserver:8080/tfs/DefaultCollection`).
-- **Username**: Use `domain\username` format (for example, `fabrikam\john`)
-- **Password**: Your domain password.
+3. When prompted, provide:
+   - **Service URL**: Your on-premises server URL (for example, `http://yourserver:8080/tfs/DefaultCollection`).
+   - **Username**: Use `domain\username` format (for example, `fabrikam\john`)
+   - **Password**: Your domain password.
 
 > [!TIP]
 > Consider [configuring SSL](/azure/devops/server/admin/setup-secure-sockets-layer) for secure communication when using basic authentication.
@@ -126,4 +126,4 @@ When prompted, provide:
 ## Next step
 
 > [!div class="nextstepaction"]
-[View the complete tfx-cli command reference](https://github.com/Microsoft/tfs-cli)
+> [View the complete tfx-cli command reference](https://github.com/Microsoft/tfs-cli)
