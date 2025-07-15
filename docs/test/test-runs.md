@@ -28,9 +28,9 @@ Test runs help teams:
 - Identify regressions or failures quickly  
 - Audit and analyze historical test data
 
-:::image type="content" source="media/test-runs/step1-public-preview.png" alt-text="Screenshot showing step 1 of accessing preview features to disable the new Test Run Hub.":::
+:::image type="content" source="media/test-runs/step-one-public-preview.png" alt-text="Screenshot showing step 1 of accessing preview features to disable the new Test Run Hub.":::
 
-:::image type="content" source="media/test-runs/step2-public-preview.png" alt-text="Screenshot showing step 2 of disabling the New Test Run Hub feature.":::
+:::image type="content" source="media/test-runs/step-two-public-preview.png" alt-text="Screenshot showing step 2 of disabling the New Test Run Hub feature.":::
 
 ## Access test runs
 
