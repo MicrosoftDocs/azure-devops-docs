@@ -1,10 +1,11 @@
 ---
 title: Use runtime and type-safe parameters
-description: You can use runtime parameters in pipelines or as part of a template
+description: Learn how to use runtime parameters to customize pipeline behavior, control data types, and dynamically pass values.
 ms.topic: conceptual
 ms.date: 07/15/2025
 monikerRange: '>=azure-devops-2020'
 ai-usage: ai-assisted
+#customer intent: As a developer, I want to use runtime parameters in Azure Pipelines so that I can customize pipeline behavior dynamically.
 ---
 
 # Runtime parameters
