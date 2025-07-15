@@ -302,6 +302,10 @@ To check your agent pools permissions at the project level:
    >
    > If the **Add** button is disabled, you don't have permission to create Managed DevOps Pools for use in this project, unless you have the **Creator** permission, in which case your name (or the name of a group for which you are a member) would be listed in the **User permissions** list as having the **Creator** permission.
 
+> [!NOTE]
+> When deploying your Managed DevOps Pool using Infrastructure-as-Code via an Azure Pipelines make sure the service connection's App Registration is added to one of the groups above as described [here](https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops#2-add-a-service-principal-to-an-azure-devops-organization), otherwise deployment will fail with error [The logged in user does not have Manage permissions in the Azure DevOps organization](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/troubleshooting?view=azure-devops#the-logged-in-user-was-not-found-in-the-azure-devops-organization)
+
+
 ## Next steps
 
 * [Create your first Managed DevOps Pool](./quickstart-azure-portal.md)
