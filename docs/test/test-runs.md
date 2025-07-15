@@ -6,7 +6,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 ms.date: 07/15/2025
-monikers: '<= azure-devops'
+monikers: '>= azure-devops-2020'
 ---
 
 # Manage test runs in Azure DevOps Test Plans
