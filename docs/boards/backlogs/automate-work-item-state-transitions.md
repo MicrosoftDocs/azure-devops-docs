@@ -7,7 +7,7 @@ ms.custom: cross-service
 ms.author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/05/2024
+ms.date: 07/15/2025
 ---
 
 
@@ -45,7 +45,8 @@ Rules are established at the team backlog level and are applicable to all work i
 Do the following steps to set team rules for each backlog level. 
 
 > [!NOTE]
-> Work items must belong to the same team; when you close a task in a different team or project, it doesn't trigger the closure of the parent item.
+> - **Team scope requirement**: Work items must belong to the same team for automation rules to trigger. Closing a task in a different team or project doesn't automatically update the parent item's state.
+> - **Interface limitation**: Work item state automation rules only function when you update items through Boards, Backlogs, or Sprint views. These rules don't trigger when updating work item states from query results or work item forms.
 
 1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
