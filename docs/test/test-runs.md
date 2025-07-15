@@ -1,6 +1,6 @@
 ---
-title: Manage test runs in Azure Test Plans
-description: Learn how to create, view, and manage test runs using the new Test Run Hub experience in Azure Test Plans.
+title: Manage test runs in Azure DevOps Test Plans
+description: Learn how to create, view, and manage test runs using the new Test Run Hub experience in Azure DevOps Test Plans.
 ms.service: azure-devops-test-plans
 ms.author: chcomley
 author: chcomley
@@ -9,11 +9,11 @@ ms.date: 07/15/2025
 monikers: '<= azure-devops'
 ---
 
-# Manage test runs in Azure Test Plans
+# Manage test runs in Azure DevOps Test Plans
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Test Plans provides a new Test Run Hub experience for managing test execution. This enhanced interface helps teams track test progress, analyze results, and maintain quality across development cycles.
+Azure DevOps Test Plans provides a new Test Run Hub experience for managing test execution. This enhanced interface helps teams track test progress, analyze results, and maintain quality across development cycles.
 
 > [!NOTE]
 > The new Test Run Hub experience is automatically enabled for all organizations. You can disable it by going to **Preview features** and turning off **New Test Run Hub**.
