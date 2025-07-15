@@ -486,7 +486,7 @@ steps:
 
 ## Authenticate with a service connection 
 
-When you use a service connection, the service connection provides the necessary crentials for Azure CLI and Azure DevOps CLI commands in the AzureCLI@2 task without requiring manual credential management in the pipeline.
+When you use a service connection, the service connection provides the necessary credentials for Azure CLI and Azure DevOps CLI commands in the AzureCLI@2 task without requiring manual credential management in the pipeline.
 
 > [!NOTE]
 > When you use a service connection for authentication with `AzureCLI@2`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md#2-add-a-service-principal-to-an-azure-devops-organization). 
@@ -527,6 +527,55 @@ steps:
         az pipelines pool list --query "[].{Id:id, Name:name}" `
                                -o table
       failOnStandardError: true
+```
+
+## Assign the results of an Azure DevOps CLI call to a variable
+
+To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example gets the ID of a variable group named **Fabrikam-2023** and uses this value in a subsequent step.
+
+
+
+
+```yml
+# Install Azure DevOps extension
+trigger:
+  - main
+
+variables:
+- name: variableGroupId
+
+parameters:
+- name: serviceConnection
+  displayName: Azure Service Connection Name
+  type: string
+  default: my-service-connection
+
+steps:
+  - task: AzureCLI@2
+    condition: succeededOrFailed()
+    displayName: 'Azure CLI -> DevOps CLI'
+    inputs:
+      azureSubscription: '${{ parameters.serviceConnection }}'
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        Write-Host "Using logged-in Azure CLI session..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
+        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
+        az devops configure -l
+
+        ##vso[task.setvariable variable=variableGroupId]$(az pipelines variable-group list --group-name kubernetes --query [].id -o tsv)"
+
+  - task: AzureCLI@2
+    condition: succeededOrFailed()
+    displayName: 'Azure CLI -> DevOps CLI'
+    inputs:
+      azureSubscription: '${{ parameters.serviceConnection }}'
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        Write-Host "Using logged-in Azure CLI session..."
+        az pipelines variable-group variable list --group-id '$(variableGroupId)'
 ```
 
 
