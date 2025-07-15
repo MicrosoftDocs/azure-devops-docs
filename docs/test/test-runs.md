@@ -2,15 +2,16 @@
 title: Manage test runs in Azure Test Plans
 description: Learn how to create, view, and manage test runs using the new Test Run Hub experience in Azure Test Plans.
 ms.service: azure-devops-test-plans
-ms.subservice: test-execution
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 ms.date: 07/15/2025
-monikers: '>= azure-devops-2020'
+monikers: '<= azure-devops'
 ---
 
 # Manage test runs in Azure Test Plans
+
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Test Plans provides a new Test Run Hub experience for managing test execution. This enhanced interface helps teams track test progress, analyze results, and maintain quality across development cycles.
 
@@ -34,11 +35,11 @@ To view test runs:
 1. In your Azure DevOps project, select **Test Plans**.
 2. Select **Runs** from the left navigation.
 
-:::image type="content" source="media/test-runs/runs-menu-option.png" alt-text="Screenshot showing the Runs option in the Test Plans side menu.":::
+<!-- :::image type="content" source="media/test-runs/runs-menu-option.png" alt-text="Screenshot showing the Runs option in the Test Plans side menu."::: -->
 
 The test runs page displays all available test runs with filtering and search capabilities.
 
-:::image type="content" source="media/test-runs/test-runs-landing-page.png" alt-text="Screenshot of the test runs landing page showing the list of available test runs.":::
+<!-- :::image type="content" source="media/test-runs/test-runs-landing-page.png" alt-text="Screenshot of the test runs landing page showing the list of available test runs."::: -->
 
 ## Search and filter test runs
 
@@ -55,7 +56,7 @@ The Test Run Hub provides several ways to find specific test runs:
 - Filter by timeline, run type, and other attributes
 - Use the dropdown filters in the search bar
 
-:::image type="content" source="media/test-runs/search-bar-filters.png" alt-text="Screenshot showing the search bar with dropdown filters for test runs.":::
+<!-- :::image type="content" source="media/test-runs/search-bar-filters.png" alt-text="Screenshot showing the search bar with dropdown filters for test runs."::: -->
 
 > [!TIP]
 > Filter selections persist across sessions until manually cleared. All search filters are additive - ensure your timeline filter includes the period when older runs were executed.
@@ -68,7 +69,7 @@ To configure which columns display:
 2. Choose the columns you want to see.
 3. Select **Apply**.
 
-:::image type="content" source="media/test-runs/column-options-configuration.png" alt-text="Screenshot showing the column options configuration dialog for test runs.":::
+<!-- :::image type="content" source="media/test-runs/column-options-configuration.png" alt-text="Screenshot showing the column options configuration dialog for test runs."::: -->
 
 > [!NOTE]
 > Pipeline Run and Pipeline Run Tested columns apply to automated runs only.
@@ -99,7 +100,7 @@ The main page includes:
 - **Test run metadata**: Execution details including who ran the test, when, and the environment
 - **Attachments and logs**: Screenshots, logs, and other artifacts from execution
 
-:::image type="content" source="media/test-runs/run-main-view.png" alt-text="Screenshot of the main test run view showing summary information and test case results.":::
+<!-- :::image type="content" source="media/test-runs/run-main-view.png" alt-text="Screenshot of the main test run view showing summary information and test case results."::: -->
 
 ### Analytics dashboard
 
@@ -113,9 +114,9 @@ Each test run includes a predefined analytics dashboard that breaks down results
 
 You can filter dashboard tiles by selecting subcategory text to focus on specific insights.
 
-:::image type="content" source="media/test-runs/run-analytics.png" alt-text="Screenshot of the test run analytics dashboard showing breakdowns by outcome, priority, and other metrics.":::
+<!-- :::image type="content" source="media/test-runs/run-analytics.png" alt-text="Screenshot of the test run analytics dashboard showing breakdowns by outcome, priority, and other metrics."::: -->
 
-:::image type="content" source="media/test-runs/subcategory-tile-filtering.png" alt-text="Screenshot showing how to filter subcategory tiles in the analytics dashboard.":::
+<!-- :::image type="content" source="media/test-runs/subcategory-tile-filtering.png" alt-text="Screenshot showing how to filter subcategory tiles in the analytics dashboard."::: -->
 
 ## Manage attachments
 
@@ -127,9 +128,9 @@ To add attachments to a test run:
 2. Choose your files and upload them.
 3. View, download, or delete attachments as needed.
 
-:::image type="content" source="media/test-runs/adding-attachments.png" alt-text="Screenshot showing how to add attachments to a test run.":::
+<!-- :::image type="content" source="media/test-runs/adding-attachments.png" alt-text="Screenshot showing how to add attachments to a test run."::: -->
 
-:::image type="content" source="media/test-runs/run-attachments-list.png" alt-text="Screenshot of the test run attachments list with options to download or delete files.":::
+<!-- :::image type="content" source="media/test-runs/run-attachments-list.png" alt-text="Screenshot of the test run attachments list with options to download or delete files."::: -->
 
 > [!NOTE]
 > - Images and PDF files can be previewed by selecting the filename
@@ -149,7 +150,7 @@ The test case results section allows you to:
 - Customize column display (similar to the main runs page)
 - Link test results to Azure DevOps work items
 
-:::image type="content" source="media/test-runs/test-case-results.png" alt-text="Screenshot of the test case results section showing individual test outcomes.":::
+<!-- :::image type="content" source="media/test-runs/test-case-results.png" alt-text="Screenshot of the test case results section showing individual test outcomes."::: -->
 
 ### Link to work items
 
@@ -159,7 +160,7 @@ To associate test results with bugs or other work items:
 2. Choose to create a new bug or link to an existing work item.
 3. Complete the linking process.
 
-:::image type="content" source="media/test-runs/marked-case-for-item-relation.png" alt-text="Screenshot showing test cases marked for linking to work items.":::
+<!-- :::image type="content" source="media/test-runs/marked-case-for-item-relation.png" alt-text="Screenshot showing test cases marked for linking to work items."::: -->
 
 ## Analyze detailed test results
 
@@ -171,7 +172,7 @@ Select any test case to view detailed results including:
 - **Analysis information**: Post-execution analysis and next actions
 - **Attachments**: All test result-specific attachments
 
-:::image type="content" source="media/test-runs/detailed-test-case-results.png" alt-text="Screenshot of the detailed test case results page showing comprehensive test information.":::
+<!-- :::image type="content" source="media/test-runs/detailed-test-case-results.png" alt-text="Screenshot of the detailed test case results page showing comprehensive test information."::: -->
 
 ### Analysis information
 
@@ -185,8 +186,10 @@ The analysis section helps structure post-execution review:
 
 You can also manage test runs programmatically using the [Azure DevOps REST API](/rest/api/azure/devops/test).
 
-## Next steps
+## Next step
 
-- [Create and run manual tests](../../../test/create-test-cases.md)
-- [Run tests from test plans](../../../test/run-manual-tests.md)
-- [Analyze test results and trends](../../../test/track-test-status.md)
+[Placeholder]
+
+## Related content
+
+[Placeholder]
