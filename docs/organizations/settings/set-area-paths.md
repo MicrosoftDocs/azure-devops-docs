@@ -3,13 +3,17 @@ title: Define area paths and assign to a team
 titleSuffix: Azure Boards
 description: Group work items based on team, product, or feature area by defining area paths for Azure Boards and Azure DevOps.
 ms.subservice: azure-devops-settings
-ms.custom: teams, engagement-fy23, devx-track-azurecli
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 11/14/2024
+ms.custom:
+  - teams
+  - engagement-fy23
+  - devx-track-azurecli
+  - sfi-image-nochange
 ---
 
 # Define area paths and assign to a team

@@ -4,6 +4,7 @@ description: Learn how to consume packages from public registries with upstream 
 ms.service: azure-devops-artifacts
 ms.date: 06/24/2025
 monikerRange: '>= azure-devops-2020'
+ms.custom: sfi-image-nochange
 "recommendations": "true"
 ---
 

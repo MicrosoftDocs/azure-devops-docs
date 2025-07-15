@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 # Use Azure Functions to create custom branch policies

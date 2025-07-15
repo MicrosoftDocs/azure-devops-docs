@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 # Git preferences and settings in Visual Studio

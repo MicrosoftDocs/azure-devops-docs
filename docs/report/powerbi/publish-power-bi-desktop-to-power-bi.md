@@ -9,6 +9,7 @@ ms.author: chcomley
 monikerRange: "<=azure-devops"
 author: chcomley
 ms.date: 06/13/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Publish a Power BI Desktop file to Power BI 

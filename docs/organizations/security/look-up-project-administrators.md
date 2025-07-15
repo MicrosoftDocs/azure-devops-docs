@@ -3,12 +3,14 @@ title: Find a project administrator
 titleSuffix: Azure DevOps
 description: Quickly identify members of the Project Administrators group in Azure DevOps.
 ms.subservice: azure-devops-security
-ms.custom: security-refresh
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 07/12/2024
+ms.custom:
+  - security-refresh
+  - sfi-image-nochange
 --- 
 
 # Look up a project administrator 

@@ -8,6 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<azure-devops"
 ms.date: 06/13/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Connect Azure DevOps Server to GitHub (on-premises)

@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
 ms.date: 07/14/2020
+ms.custom: sfi-image-nochange
 ---
 
 # Enter client credentials in Power BI or Excel 

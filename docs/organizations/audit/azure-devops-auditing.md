@@ -10,6 +10,7 @@ ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 02/26/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Access, export, and filter audit logs

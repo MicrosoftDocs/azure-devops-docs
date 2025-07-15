@@ -5,11 +5,13 @@ description: Set up code scanning with GitHub Advanced Security for Azure DevOps
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
-ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 02/20/2025
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
 
 # Set up code scanning 

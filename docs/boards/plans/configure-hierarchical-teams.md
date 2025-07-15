@@ -8,6 +8,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
+ms.custom: sfi-image-nochange
 ---
 
 # Configure a hierarchy of teams

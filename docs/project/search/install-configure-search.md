@@ -3,13 +3,15 @@ title: Install, configure Search
 titleSuffix: Azure DevOps 
 description: Find installation and setup instructions for Code, Wiki & Work Item Search in Azure DevOps Server.
 ms.assetid: 
-ms.custom: engagement-fy23
 ms.subservice: azure-devops-search
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '< azure-devops'
 ms.date: 01/22/2025
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Install and configure Search
