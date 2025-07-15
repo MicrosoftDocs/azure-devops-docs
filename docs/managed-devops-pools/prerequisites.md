@@ -227,6 +227,9 @@ When you create a Managed DevOps Pool, the account you use to sign in to the Azu
 | [Organization level agent pools administrator](#organization-level-agent-pools-administrator) | You must have agent pool **Administrator** permissions at the organization level in the Azure DevOps organization where you want to create Managed DevOps Pools. |
 | [Project level agent pools administrator or creator](#project-level-agent-pools-administrator-or-creator) | You must have **Administrator** or **Creator** agent pool permissions at the project level for each project in which you want to make your Managed DevOps Pool available to pipelines. |
 
+> [!NOTE]
+> When deploying your Managed DevOps Pool using Infrastructure-as-Code via Azure Pipelines, make sure the service connection's App Registration is added to one of the groups above as described [here](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#2-add-a-service-principal-to-an-azure-devops-organization), otherwise deployment will fail with error [The logged in user does not have Manage permissions in the Azure DevOps organization](/azure/devops/managed-devops-pools/troubleshooting#the-logged-in-user-was-not-found-in-the-azure-devops-organization)
+
 ### Verify membership in the Azure DevOps organization
 
 You must be a member of the Azure DevOps organization before the permissions in this section can be granted to your account.
@@ -301,9 +304,6 @@ To check your agent pools permissions at the project level:
    > If the **Add** button is enabled, you have permission to create Managed DevOps Pools for use in this project.
    >
    > If the **Add** button is disabled, you don't have permission to create Managed DevOps Pools for use in this project, unless you have the **Creator** permission, in which case your name (or the name of a group for which you are a member) would be listed in the **User permissions** list as having the **Creator** permission.
-
-> [!NOTE]
-> When deploying your Managed DevOps Pool using Infrastructure-as-Code via Azure Pipelines, make sure the service connection's App Registration is added to one of the groups above as described [here](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#2-add-a-service-principal-to-an-azure-devops-organization), otherwise deployment will fail with error [The logged in user does not have Manage permissions in the Azure DevOps organization](/azure/devops/managed-devops-pools/troubleshooting#the-logged-in-user-was-not-found-in-the-azure-devops-organization)
 
 
 ## Next steps
