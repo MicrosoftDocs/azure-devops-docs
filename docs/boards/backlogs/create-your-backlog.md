@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/01/2025
+ms.date: 07/15/2025
 #customer intent: As a team member, I want to understand how to create and manage backlogs in Azure Boards to improve my team's workflow.
 ---
 
@@ -205,6 +205,8 @@ Use these essential fields to estimate effort and define requirements for sprint
 | [Acceptance Criteria](../queries/titles-ids-descriptions.md) | **Define "Done"** - Describe specific criteria for completion. Establish shared understanding between team and customers for acceptance testing. |
 | [Impact Assessment](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi) | **Assess risk (CMMI only)** - Document customer impact of not implementing the requirement. |
 
+
+
 <a id="show-hide-in-progress"></a>  
 
 ## Show or hide In Progress Items
@@ -227,6 +229,55 @@ Use the **View options** selector to toggle **Completed Child items** visibility
 **Hide** completed child items when [forecasting work](../sprints/forecast.md).
 
 [!INCLUDE [temp](../includes/note-closed-items.md)]
+
+## Review checklist for work items, backlogs, and boards
+
+If you don't see the work items you expect on your [product Backlog](create-your-backlog.md) or [board](../boards/kanban-quickstart.md), complete the following checks: 
+
+1. Make sure you've selected the team backlog or board of interest. To learn how, see [Use breadcrumbs and selectors to go to and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
+
+2. [Create a query](../queries/using-queries.md) of your backlog items, specifying the work item types that belong to your Requirements category and the Area Path associated with your team, for example:  
+
+	> [!div class="mx-imgBorder"]
+	> ![Requirement category query](media/setup-backlog/requirements-query.png)
+
+3. Add the <strong>State</strong>, <strong>Area Path</strong>, and <strong>Iteration Path</strong> fields to the [column options](set-column-options.md).
+
+4. Check the query results and that the values of the work items you expect to show up on your backlog meet these criteria:
+	- <strong>Area Path</strong> belongs to your team's area path(s)
+	- <strong>Iteration Path</strong> belongs under your team's default iteration path
+	- <strong>State</strong> isn't Closed, Completed, Done, or Removed. 
+
+> [!NOTE]
+> You can also filter your product backlog to show or hide work items that are in an **In Progress** state category, corresponding to an Active, Resolved, Committed, Doing workflow state. 
+
+## Other factors that can affect work items in your backlogs and boards
+
+The following settings can influence the type and number of work items that appear in your backlogs and boards. 
+
+- In your board, newly added work items may not appear if they're stack ranked lower within the product backlog. By choosing **Show more items**, you can cause the board to refresh and display more work items. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Boards, Show more items](media/setup-backlog/show-more-items.png) 
+
+- If you have nested work items that belong to the same category, only leaf nodes may appear on the board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. For more information, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md).
+
+- If you've turned off the **In Progress** view, then those work items where work has started won't appear in the backlog list.  
+
+	::: moniker range=">= azure-devops-2020"
+	> [!div class="mx-imgBorder"]  
+	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress-s155.png)  
+	::: moniker-end
+
+- Work items appear in the priority order in which they're added or moved to. This order or sequence is managed by the **Stack Rank** (Basic, Agile, and CMMI processes) or **Backlog Priority** (Scrum) field. For more information, see the Stack rank section in [Backlogs, portfolios, and Agile project management](backlogs-overview.md#stack-rank).
+
+- Each backlog can display up to 999 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.  
+
+- Sprint backlogs show only those work items that meet the team's area path and the **Iteration Path** defined for the sprint. 
+
+- Inheritance process model: If an administrator [disables or deletes a work item type](../../organizations/settings/work/customize-process-work-item-type.md#enable-disable), it doesn't appear on backlogs and boards. 
+
+- On-premises XML process model: If an administrator [deletes or destroys a work item type](../../reference/witadmin/witadmin-import-export-manage-wits.md), it doesn't appear on backlogs and boards.
 
 ## Next step
 
