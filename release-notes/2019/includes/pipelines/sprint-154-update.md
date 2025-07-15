@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 
 ### Azure Pipelines app for Jira

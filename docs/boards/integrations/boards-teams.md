@@ -4,13 +4,15 @@ titleSuffix: Azure Boards
 description: Learn how to create work items and monitor work item activity in an Azure Boards project from a Microsoft Teams channel.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
-ms.custom: cross-service
 ms.topic: how-to
 ms.reviewer: karrg
 ms.author: karrg
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 08/13/2024
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
  
 # Use Azure Boards in Microsoft Teams

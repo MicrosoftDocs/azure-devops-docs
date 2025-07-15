@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 10/24/2024
 monikerRange: 'azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Rename your organization in Azure DevOps

@@ -6,6 +6,7 @@ ms.service: azure-devops-repos
 monikerRange: '<= azure-devops'
 ms.date: 02/24/2022
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 # Learn how to migrate from Subversion (SVN) to Git, including history

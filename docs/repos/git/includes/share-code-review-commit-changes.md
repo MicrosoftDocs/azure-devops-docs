@@ -5,6 +5,7 @@ ms.date: 10/18/2022
 ms.topic: include
 ms.service: azure-devops-repos
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 1. To see what's changed in a commit, select **Git** > **Manage Branches** to open the **Git Repository** window.

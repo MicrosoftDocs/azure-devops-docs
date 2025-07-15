@@ -1,7 +1,6 @@
 ---
 title: Switch to another Microsoft Entra ID
 titleSuffix: Azure DevOps Services
-ms.custom: engagement-fy23
 description: Learn how to change or switch your organization connection to a different Microsoft Entra ID.
 ms.subservice: azure-devops-organizations
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
@@ -10,6 +9,9 @@ ms.author: chcomley
 author: chcomley
 ms.date: 11/08/2024
 monikerRange: 'azure-devops'
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Change your organization connection to a different Microsoft Entra ID

@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
 ms.date: 10/08/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Access data through Excel 

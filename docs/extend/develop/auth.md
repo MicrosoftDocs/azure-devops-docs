@@ -8,6 +8,7 @@ monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 07/10/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Authenticate and secure web extensions

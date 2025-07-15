@@ -5,11 +5,13 @@ description: Configure permissions and authentication for GitHub Advanced Securi
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
-ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 07/02/2025
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 # customer-intent: As a project administrator, I want to configure permissions and authentication for GitHub Advanced Security so I can control access to security alerts and enable secure API access for my development team.
 ---
 

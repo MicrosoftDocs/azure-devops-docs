@@ -4,6 +4,7 @@ ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 07/01/2024
+ms.custom: sfi-image-nochange
 ---
 
 ::: moniker range="azure-devops"

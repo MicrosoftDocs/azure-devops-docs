@@ -5,12 +5,14 @@ description: Learn how to create work items and monitor work item activity in an
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to
-ms.custom: cross-service
 ms.reviewer: karrg
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 10/20/2021
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
  
 # Use the Azure Boards app with Slack to manage work items

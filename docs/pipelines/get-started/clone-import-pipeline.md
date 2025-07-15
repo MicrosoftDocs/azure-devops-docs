@@ -4,6 +4,7 @@ description: Create a pipeline by cloning or importing an existing pipeline
 ms.topic: conceptual
 ms.date: 11/01/2023
 monikerRange: '<= azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Clone or import a pipeline

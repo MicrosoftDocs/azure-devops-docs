@@ -1,6 +1,5 @@
 ---
 title: Manage variable groups
-ms.custom: devx-track-azurecli, pipelinesresourcesrefresh
 description: Share common variables across pipelines using variable groups.
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.topic: tutorial
@@ -8,6 +7,10 @@ ms.author: ronai
 author: RoopeshNair
 ms.date: 08/15/2024
 monikerRange: '<= azure-devops'
+ms.custom:
+  - devx-track-azurecli
+  - pipelinesresourcesrefresh
+  - sfi-image-nochange
 ---
 
 # Manage variable groups

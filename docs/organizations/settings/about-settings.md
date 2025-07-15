@@ -8,6 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 06/16/2025
+ms.custom: sfi-image-nochange
 ---
 
 # About settings for users, teams, projects, or organizations

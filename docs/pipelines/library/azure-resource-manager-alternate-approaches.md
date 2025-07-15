@@ -7,6 +7,7 @@ author: juliakm
 ms.date: 10/18/2024
 ai-usage: ai-assisted 
 monikerRange: '<= azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Azure Resource Manager service connection special cases

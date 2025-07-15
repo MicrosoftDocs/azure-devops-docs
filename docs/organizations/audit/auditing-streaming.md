@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: '= azure-devops'
 ms.date: 11/11/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Create audit streaming

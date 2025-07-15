@@ -2,7 +2,10 @@
 metadata:
   title: Billing FAQs
   titleSuffix: Azure DevOps
-  ms.custom: freshness-fy22q1, engagement-fy23
+  ms.custom:
+    - freshness-fy22q1
+    - engagement-fy23
+    - sfi-image-nochange
   description: Find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   ms.subservice: azure-devops-billing
   ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f

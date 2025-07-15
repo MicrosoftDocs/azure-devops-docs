@@ -1,7 +1,6 @@
 ---
 title: Restrict new organization creation
 titleSuffix: Azure DevOps Services
-ms.custom: 
 description: Learn how Azure DevOps Administrators can prevent users from creating new organizations via the Microsoft Entra tenant policy.
 ms.subservice: azure-devops-organizations
 ms.assetid:
@@ -11,6 +10,8 @@ ms.author: chcomley
 author: chcomley
 ms.date: 07/01/2025
 monikerRange: 'azure-devops'
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Restrict organization creation

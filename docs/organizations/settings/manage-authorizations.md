@@ -8,6 +8,7 @@ monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/21/2024
+ms.custom: sfi-image-nochange
 ---
 
 #  Authorize other services to access Azure DevOps

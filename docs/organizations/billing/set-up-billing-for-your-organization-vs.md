@@ -1,7 +1,6 @@
 ---
 title: Manage billing for your organization
 titleSuffix: Azure DevOps Services
-ms.custom: freshness-fy22q1, engagement-fy23
 description: Use an Azure subscription to configure billing and pay for users, CI/CD concurrency, and extensions for Azure DevOps.
 ms.subservice: azure-devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
@@ -10,6 +9,10 @@ ms.author: chcomley
 author: chcomley
 ms.date: 06/24/2025
 monikerRange: 'azure-devops'
+ms.custom:
+  - freshness-fy22q1
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Manage billing

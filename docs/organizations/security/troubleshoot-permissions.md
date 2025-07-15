@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 02/10/2025
+ms.custom: sfi-image-nochange
 --- 
 
 # Troubleshoot access and permission issues
