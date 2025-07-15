@@ -133,7 +133,10 @@ sections:
           - Your organization's default access level, whether Basic or Basic + Test Plans, gets assigned automatically. 
           - If your organization established Group Rules, the user receives the access specified for their Microsoft Entra group. Group rule reevaluation occurs every 24 hours, so they might initially have Stakeholder access before receiving group rule access. 
           
-          Otherwise, users who no longer have access through GitHub Enterprise maintain Stakeholder access until an administrator assigns them paid access. 
+          Otherwise, users who no longer have access through GitHub Enterprise maintain Stakeholder access until an administrator assigns them paid access.
+
+          The following example shows that the license isn't detected anymore:
+          ![Screenshot shows GitHub Enterprise no longer listed as user's access level in Organization settings, Users page.](media/faq/github-enterprise-no-license.png)
       
       - question: |
           Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?
