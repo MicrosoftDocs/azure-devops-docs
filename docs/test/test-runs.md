@@ -28,6 +28,10 @@ Test runs help teams:
 - Identify regressions or failures quickly  
 - Audit and analyze historical test data
 
+:::image type="content" source="media/test-runs/step1-public-preview.png" alt-text="Screenshot showing step 1 of accessing preview features to disable the new Test Run Hub.":::
+
+:::image type="content" source="media/test-runs/step2-public-preview.png" alt-text="Screenshot showing step 2 of disabling the New Test Run Hub feature.":::
+
 ## Access test runs
 
 To view test runs:
@@ -35,7 +39,7 @@ To view test runs:
 1. In your Azure DevOps project, select **Test Plans**.
 2. Select **Runs** from the left navigation.
 
-   :::image type="content" source="media/test-runs/runs-menu-option.png" alt-text="Screenshot showing the Runs option in the Test Plans side menu.":::
+   :::image type="content" source="media/test-runs/run-option-test-plans-side-menu.png" alt-text="Screenshot showing the Runs option in the Test Plans side menu.":::
 
    The test runs page displays all available test runs with filtering and search capabilities.
 
@@ -66,6 +70,9 @@ The Test Run Hub provides several ways to find specific test runs:
 To configure which columns display:
 
 1. Select **Column options** in the top right.
+
+   :::image type="content" source="media/test-runs/column-options-open.png" alt-text="Screenshot showing how to open the column options menu.":::
+
 2. Choose the columns you want to see.
 3. Select **Apply**.
 
@@ -181,6 +188,8 @@ The analysis section helps structure post-execution review:
 - Available for all test results after execution
 - Failed, paused, and blocked cases have additional triage fields
 - Comments are specific to analysis (separate from run or result comments)
+
+:::image type="content" source="media/test-runs/analysis.png" alt-text="Screenshot showing the analysis information section for detailed test case review.":::
 
 ## Programmatic access
 
