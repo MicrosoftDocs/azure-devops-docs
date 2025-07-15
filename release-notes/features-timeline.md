@@ -644,9 +644,9 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <td rowspan="1"><strong>2025 Q4</strong></td>      
-        <td>
+         <td>
             <a href="/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent" data-raw-source="[Work item integration wth GitHub coding agent](/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent)">Support work item integration with the <br/>GitHub Copilot coding agent (preview)</a>
-         </td>
+         </td>      
          <td>Boards</td>         
       </tr>   
       <td rowspan="19"><strong>Future</strong></td>
