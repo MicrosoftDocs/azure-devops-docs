@@ -16,7 +16,9 @@ monikers: 'azure-devops'
 Azure DevOps Test Plans provides a new Test Run Hub experience for managing test execution. This enhanced interface helps teams track test progress, analyze results, and maintain quality across development cycles.
 
 > [!NOTE]
-> The new Test Run Hub experience is automatically enabled for all organizations. You can disable it by going to **Preview features** and turning off **New Test Run Hub**.
+> The new Test Run Hub experience is automatically enabled for all organizations. You can disable it by going to **Preview features** and moving the toggle for **New Test Run Hub** to **Off**.
+> :::image type="content" source="media/test-runs/step-one-public-preview.png" alt-text="Screenshot showing step 1 of accessing preview features to disable the new Test Run Hub.":::
+> :::image type="content" source="media/test-runs/step-two-public-preview.png" alt-text="Screenshot showing step 2 of disabling the New Test Run Hub feature.":::
 
 ## What is a test run?
 
@@ -28,16 +30,12 @@ Test runs help teams:
 - Identify regressions or failures quickly  
 - Audit and analyze historical test data
 
-:::image type="content" source="media/test-runs/step-one-public-preview.png" alt-text="Screenshot showing step 1 of accessing preview features to disable the new Test Run Hub.":::
-
-:::image type="content" source="media/test-runs/step-two-public-preview.png" alt-text="Screenshot showing step 2 of disabling the New Test Run Hub feature.":::
-
 ## Access test runs
 
 To view test runs:
 
 1. In your Azure DevOps project, select **Test Plans**.
-2. Select **Runs** from the left navigation.
+2. Select **Runs**.
 
    :::image type="content" source="media/test-runs/run-option-test-plans-side-menu.png" alt-text="Screenshot showing the Runs option in the Test Plans side menu.":::
 
@@ -51,7 +49,7 @@ The Test Run Hub provides several ways to find specific test runs:
 
 ### Default filters
 
-- **Timeline**: Past 7 days (default)
+- **Timeline**: Past seven days (default)
 - **Run type**: Manual runs (default)
 
 ### Search capabilities
@@ -186,7 +184,7 @@ Select any test case to view detailed results including:
 The analysis section helps structure post-execution review:
 
 - Available for all test results after execution
-- Failed, paused, and blocked cases have additional triage fields
+- Failed, paused, and blocked cases have more triage fields
 - Comments are specific to analysis (separate from run or result comments)
 
 :::image type="content" source="media/test-runs/analysis.png" alt-text="Screenshot showing the analysis information section for detailed test case review.":::
