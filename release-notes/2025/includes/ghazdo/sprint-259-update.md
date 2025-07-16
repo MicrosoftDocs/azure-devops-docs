@@ -9,6 +9,4 @@ ms.topic: include
 
 In previous releases, [February 12](/azure/devops/release-notes/2025/sprint-251-update#github-advanced-security-updates-for-default-branch-changes) and [February 24](/azure/devops/release-notes/2025/sprint-252-update#deleted-branches-removed-from-advanced-security-branch-picker), we announced features that helped manage branch changes in your repository. 
 
-For deleted branch changes, these are specifically to manage pull request branches that are subsequently deleted. This feature does not currently support regular branches that are scanned then later deleted for some reason.
-
-We found out that these changes weren't properly reflected for many customers, and this release fixes issues that customers were encountering.
+For deleted branch changes, these are specifically to manage pull request branches that are subsequently deleted. Previously, this feature didn't support regular branches that are scanned then later deleted. In this sprint, we addressed those issues to ensure the feature now works as intended.

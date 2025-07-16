@@ -1,13 +1,15 @@
 ---
-title: Advanced Security properly picks up on default branch changes and deleted branches 
+title: New Boards Hub enabled for all customers across all regions
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 7/17/2025
-description: Advanced Security properly picks up on default branch changes and deleted branches 
+description: New Boards Hub enabled for all customers across all regions
 ---
-# Advanced Security properly picks up on default branch changes and deleted branches 
 
-TBD
+# New Boards Hub enabled for all customers across all regions 
+
+In this sprint, we're excited to announce that the New Boards Hub is enabled for all customers globally! Try out the New Boards Hub and share your feedback to help shape what's next. You can find details about how to share your feedback in the release notes. 
+In addition, the Markdown support for comments is generally available with this release. This has been a long-awaited feature requested in the Developer Community. 
 
 Check out the release notes for details.
 
