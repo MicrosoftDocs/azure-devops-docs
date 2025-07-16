@@ -10,6 +10,8 @@
       items:
         - name: "2025"
           items:
+          - name: July 17
+            href: 2025/sprint-259-update.md
           - name: June 30
             href: 2025/sprint-258-update.md
           - name: June 16
