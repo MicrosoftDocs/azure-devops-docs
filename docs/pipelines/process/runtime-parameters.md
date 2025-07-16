@@ -33,7 +33,7 @@ Use [templateContext](template-parameters.md#use-templatecontext-to-pass-propert
 
 The following table highlights the key differences between parameters and variables in Azure Pipelines.
 
-| Feature              | Parameters         |  Variables          |
+| Feature              | Parameters         |  [Variables](variables.md)          |
 |----------------------|----------------------------|-----------------------------|
 | **Evaluation Time**  | Template parsing (queue)   | Runtime (during execution)  |
 | **Mutability**       | Immutable after queue      | Can be updated dynamically during pipeline execution |
