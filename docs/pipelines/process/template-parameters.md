@@ -169,7 +169,11 @@ Objects allow you to define complex parameter structures, such as nested element
 
 ##### Example: Iterating through object keys and values
 
+The following template file the `myObject` parameter as an object with default key-value pairs. The job iterates through the keys and prints their values.
+
 ```yaml
+# object-keys-template.yml
+
 parameters:
   - name: myObject
     type: object
@@ -192,22 +196,57 @@ jobs:
     displayName: 'Display object keys and values'
 ```
 
+The pipeline overrides the default values of `myObject` with custom values.
+
+```yaml
+# azure-pipelines.yml
+
+trigger:
+- main
+
+extends:
+  template: object-keys-template.yml
+  parameters:
+    myObject:
+      key1: 'customValue1'
+      key2: 'customValue2'
+      key3: 'customValue3'
+```
+
 ##### Example: Iterating through nested objects
 
 ```yaml
+# File: nested-objects-template.yml
+
 parameters:
 - name: listOfFruits
   type: object
   default:
   - fruitName: 'apple'
-    colors: ['red','green']
+    colors: ['red', 'green']
   - fruitName: 'lemon'
-    colors: ['yellow'] 
+    colors: ['yellow']
 
 steps:
-- ${{ each fruit in parameters.listOfFruits }} : # Iterate over each fruit in the 'listOfFruits'
-  - ${{ each fruitColor in fruit.colors}} : # Iterate over each color in the current fruit's colors
-    - script: echo ${{ fruit.fruitName}} ${{ fruitColor }} # Echo the current fruit's name and color
+- ${{ each fruit in parameters.listOfFruits }}: # Iterate over each fruit in the 'listOfFruits'
+  - ${{ each fruitColor in fruit.colors }}: # Iterate over each color in the current fruit's colors
+    - script: echo ${{ fruit.fruitName }} ${{ fruitColor }} # Echo the current fruit's name and color
+```
+
+````yaml
+# File: azure-pipelines.yml
+
+trigger:
+- main
+
+extends:
+  template: nested-objects-template.yml
+  parameters:
+    listOfFruits:
+    - fruitName: 'banana'
+      colors: ['yellow']
+    - fruitName: 'grape'
+      colors: ['purple', 'green']
 ```
 
 ### Dynamically include a list of steps with the stepList parameter 
