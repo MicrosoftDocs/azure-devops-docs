@@ -19,7 +19,7 @@ Runtime parameters give you more control over the values passed to a pipeline. W
 
 You can specify [parameters in templates](template-parameters.md) and in the pipeline. Parameters have data types such as number and string, and they can be restricted to a subset of values. The `parameters` section in a YAML defines what parameters are available. 
 
-Parameters are available only during template parsing. They expand just before the pipeline runs, replacing values surrounded by `${{ }}` with parameter values. Use [variables](variables.md) if you need your values to be more widely available during your [pipeline run](runs.md). 
+Parameters are available only during template parsing. They expand before the pipeline runs, replacing values surrounded by `${{ }}` with parameter values. Use [variables](variables.md) if your values need to be available throughout the [pipeline run](runs.md). 
 
 > [!NOTE]
 > This guidance doesn't apply to classic pipelines. For parameters in classic pipelines, see [Process parameters (classic)](parameters.md). 
@@ -27,12 +27,12 @@ Parameters are available only during template parsing. They expand just before t
 
 Parameters must contain a name and data type. Parameters can't be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. If you don't assign a default value or set `default` to `false`, the first available value is used. 
 
-Use [templateContext](template-parameters.md#use-templatecontext-to-pass-properties-to-templates) to pass extra properties to stages, steps, and jobs that are used as parameters in a template. 
+Use [templateContext](template-parameters.md#use-templatecontext-to-pass-properties-to-templates) to pass additional properties to stages, steps, and jobs used as parameters in a template. 
 
 
 ## Use parameters in pipelines
 
-Set runtime parameters at the beginning of a YAML file. 
+Set runtime parameters at the start of a YAML file. 
 
 This example pipeline includes an `image` parameter with three hosted agents as `string` options. In the jobs section, the `pool` value specifies the agent from the parameter used to run the job. The `trigger` is set to none so that you can select the value of `image` when you manually trigger your pipeline to run. 
 
@@ -58,7 +58,7 @@ jobs:
   - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
 ```
 
-From the pipeline runs page, select **Run pipeline** to run the pipeline. You'll see the option to select the Pool Image. If you don't make a selection, the default option `ubuntu-latest` is used. You don't have the option to select a Pool Image if you run your pipeline from the YAML editor. 
+From the pipeline runs page, select **Run pipeline** to run the pipeline. You'll see the option to select the Pool Image. If you don't make a selection, the default option `ubuntu-latest` is used. You can't select a Pool Image if you run your pipeline from the YAML editor. 
 
 > [!div class="mx-imgBorder"]
 > ![runtime parameters](media/runtime-param-ui.png)
@@ -281,7 +281,7 @@ Write-Host $env:myStringName
 
 ### Check for an empty parameter object
 
-Use the `length()` [expression](expressions.md) to check whether an object parameter has no value. 
+Use the `length()` [expression](expressions.md) to check if an object parameter has no value. 
 
 ```yaml
 parameters:
@@ -390,7 +390,7 @@ steps:
 
 ## Parameter security best practices
 
-When using runtime parameters in Azure Pipelines, avoid passing secrets or sensitive values as parameter inputs, since parameter values are expanded at template parsing time and might be exposed in pipeline logs or outputs. 
+When using runtime parameters in Azure Pipelines, don't pass secrets or sensitive values as parameter inputs, because parameter values are expanded at template parsing time and might be exposed in pipeline logs or outputs. 
 
 Always validate and restrict allowed parameter values to prevent injection of unexpected or unsafe input, and follow the principle of least privilege when granting access to pipeline resources. 
 
