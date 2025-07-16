@@ -63,5 +63,5 @@ For more information, see the following articles:
 ## Related articles
 
 - [Grant reviewers permissions to provide feedback](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
-- [Set default permissions and access for collaboration tools](../wiki/wiki-readme-permissions.md)
+- [Set default permissions and access for collaboration tools](../wiki/manage-readme-wiki-permissions.md)
 - [Provide feedback and get support](../../user-guide/provide-feedback.md)
