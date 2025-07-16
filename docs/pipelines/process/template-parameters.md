@@ -185,6 +185,201 @@ jobs:
     displayName: 'Display object keys and values'
 ```
 
+### Loop through parameters
+
+
+You can also loop through your string, number, and boolean parameters. 
+
+#### [Script](#tab/script)
+
+This example loops through parameters and prints the name and value of each parameter. There are four different parameters and each represents a different type. `myStringName` is a single-line string. `myMultiString` is a multi-line string. `myNumber` is a number. `myBoolean` is a boolean value. In the steps section, the script tasks output the key and value of each parameter. 
+
+```yaml
+# start.yaml
+parameters:
+- name: myStringName
+  type: string
+  default: a string value
+- name: myMultiString
+  type: string
+  default: default
+  values:
+  - default
+  - ubuntu
+- name: myNumber
+  type: number
+  default: 2
+  values:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+- name: myBoolean
+  type: boolean
+  default: true
+
+steps: 
+- ${{ each parameter in parameters }}:
+  - script: echo ${{ parameter.Key }} 
+  - script: echo ${{ parameter.Value }}
+```
+
+```yaml
+# azure-pipeline.yaml
+trigger: none
+
+extends:
+  template: start.yaml
+```
+
+#### [PowerShell](#tab/powershell)
+
+In this example, you loop through parameters and print the name and value of each parameter. There are four different parameters and each represents a different type. `myStringName` is a single-line string. `myMultiString` is a multi-line string. `myNumber` is a number. `myBoolean` is a boolean value. In the steps section, you loop through parameters in a PowerShell task and set each parameter as an environment variable. 
+
+```yaml
+# start.yaml
+
+parameters:
+- name: myStringName
+  type: string
+  default: a string value
+- name: myMultiString
+  type: string
+  default: default
+  values:
+  - default
+  - ubuntu
+- name: myNumber
+  type: number
+  default: 2
+  values:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+- name: myBoolean
+  type: boolean
+  default: true
+
+steps: 
+  - task: PowerShell@2
+    env:
+      ${{ each parameter in parameters }}:
+        ${{ parameter.Key }}: ${{ parameter.Value }}
+    inputs:
+      filePath: test_script.ps1
+      pwsh: true
+```
+
+```yaml
+# azure-pipeline.yaml
+trigger: none
+
+extends:
+  template: start.yaml
+```
+
+```powershell
+# test_script.ps1
+
+Write-Host "Hello, World!"
+Write-Host $env:myStringName
+
+```
+
+---
+
+### Dynamically include a list of steps with the stepList parameter 
+
+In this example, the `stepList` parameter type is used to dynamically include a list of steps in the build process. 
+
+- The main pipeline (`azure-pipelines.yml`) defines two jobs: build and deploy.
+- The build job uses a template (`build.yml`) and passes a list of build tasks using the `stepList` parameter.
+- The `build.yml` template dynamically includes the steps defined in the `build_tasks` parameter.
+
+```yaml
+#azure-pipelines.yml
+
+trigger:
+- main
+
+jobs:
+  - job: build
+    displayName: 'Build .NET Core Application'
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+      - checkout: self
+
+      - template: build.yml
+        parameters:
+          build_tasks:
+            - task: DotNetCoreCLI@2
+              displayName: 'Restore'
+              inputs:
+                command: 'restore'
+                projects: '**/*.csproj'  
+
+            - task: DotNetCoreCLI@2
+              displayName: 'Build'
+              inputs:
+                command: 'build'
+                arguments: '--no-restore'
+                projects: '**/*.csproj' 
+
+  - job: deploy
+    displayName: 'Pack for Azure App Service deployment'
+    dependsOn: build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - download: current
+        artifact: drop
+```
+
+The `build.yml` template:
+
+- Defines the parameter `build_tasks` with the stepList type and a default empty list.
+- Sets the .NET Core SDK to 8.x. 
+- Iterates over each step in the `build_tasks` parameter.
+- Executes each step defined in the `build_tasks` list.
+
+```yaml
+#build.yml
+
+parameters:
+  - name: build_tasks
+    type: stepList
+    default: []
+
+steps:
+  - task: UseDotNet@2
+    displayName: 'Use .NET Core SDK'
+    inputs:
+      packageType: 'sdk'
+      version: '8.x'
+
+  - ${{ each step in parameters.build_tasks }}:
+      - ${{ step }}
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Publish'
+    inputs:
+      command: 'publish'
+      arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+      projects: '**/*.csproj'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'drop'
+```
+
+
 ### Required parameters
 
 Pipelines automatically reports an error if a parameter is missing. You can add a validation step at the beginning of your template to check for the parameters you require and take appropriate action.
