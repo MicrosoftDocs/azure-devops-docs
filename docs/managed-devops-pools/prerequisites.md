@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for Managed DevOps Pools
 description: Learn how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools.
-ms.date: 07/11/2025
+ms.date: 07/16/2025
 ms.custom: sfi-image-nochange
 ---
 
@@ -13,6 +13,7 @@ At a high level, you need:
 
 > [!div class="checklist"]
 > - An Azure account with an active subscription, with the Managed DevOps Pools resource provider registered
+> - Permissions to create a Managed DevOps Pool in the Azure subscription
 > - An Azure DevOps organization, connected to the Microsoft Entra ID tenant of the users who will be administering the Managed DevOps Pool
 > - Permissions in the Azure DevOps organization to create a Managed DevOps Pool
 
@@ -20,9 +21,23 @@ This article shows you how to configure your Azure subscription and Azure DevOps
 
 ## Configure your Azure subscription
 
+1. [Verify Azure permissions](#verify-azure-permissions)
 1. [Register the Managed DevOps Pools resource provider in your Azure Subscription](#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription)
 1. [Review Managed DevOps Pools quotas](#review-managed-devops-pools-quotas)
 1. [Create a dev center and dev center project](#create-a-dev-center-and-dev-center-project) (If you plan to create your Managed DevOps Pools using the Azure portal, you can create the dev center and dev center project during the pool creation process.)
+
+### Verify Azure permissions
+
+To create and and manage Managed DevOps Pools, you must have one of the following roles assigned to your account in the Azure subscription where you want to create the Managed DevOps Pools.
+
+| Role | Scope | Description |
+|------|-------|-------------|
+| [DevOps Infrastructure Contributor Role](/azure/role-based-access-control/built-in-roles/devops#devops-infrastructure-contributor-role) | Resource group or subscription | This role allows you to create and manage Managed DevOps Pools in the designated scope, but not other Azure DevOps resources. |
+| [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) | Resource group or subscription | This role allows you to create and manage Managed DevOps Pools, as well as other Azure resources. |
+| [Owner](/azure/role-based-access-control/built-in-roles/privileged#owner) | Resource group or subscription | This role allows you to create and manage Managed DevOps Pools, as well as other Azure resources. |
+
+For information on assigning roles, see [Steps to assign an Azure role](/azure/role-based-access-control/role-assignments-steps).
+
 
 ### Register the Managed DevOps Pools resource provider in your Azure Subscription
 
