@@ -30,14 +30,17 @@ This article shows you how to configure your Azure subscription and Azure DevOps
 
 To create and and manage Managed DevOps Pools, you must have one of the following roles assigned to your account in the Azure subscription where you want to create the Managed DevOps Pools.
 
-| Role | Scope | Description |
-|------|-------|-------------|
-| [DevOps Infrastructure Contributor Role](/azure/role-based-access-control/built-in-roles/devops#devops-infrastructure-contributor-role) | Resource group or subscription | This role allows you to create and manage Managed DevOps Pools in the designated scope, but not other Azure DevOps resources. |
-| [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) | Resource group or subscription | This role allows you to create and manage Managed DevOps Pools, as well as other Azure resources. |
-| [Owner](/azure/role-based-access-control/built-in-roles/privileged#owner) | Resource group or subscription | This role allows you to create and manage Managed DevOps Pools, as well as other Azure resources. |
+To check the role assignments for yoru account, see [List Azure role assignments](/azure/role-based-access-control/role-assignments-list-portal).
+
+| Role | Description |
+|------|-------------|
+| [DevOps Infrastructure Contributor Role](/azure/role-based-access-control/built-in-roles/devops#devops-infrastructure-contributor-role) | This role allows you to create and manage Managed DevOps Pools in the designated scope, but not other Azure DevOps resources. |
+| [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) | This role allows you to create and manage Managed DevOps Pools, as well as other Azure resources. |
+| [Owner](/azure/role-based-access-control/built-in-roles/privileged#owner) | This role allows you to create and manage Managed DevOps Pools, as well as other Azure resources. |
+
+The roles in the following table are listed in order of least privileged to most privileged. The **DevOps Infrastructure Contributor Role** is the least privileged role that allows you to create and manage Managed DevOps Pools.
 
 For information on assigning roles, see [Steps to assign an Azure role](/azure/role-based-access-control/role-assignments-steps).
-
 
 ### Register the Managed DevOps Pools resource provider in your Azure Subscription
 
