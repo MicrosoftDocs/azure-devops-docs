@@ -8,8 +8,8 @@ ms.date: 07/16/2025
 | Category | Scope | Name | High-privilege | Description | Inherits From |
 | -------- | ----- | ---- | --------- | ----------- | ------------- |
 | **Advanced Security** | `vso.advsec` | AdvancedSecurity (read) | Yes | Grants the ability to read alerts, result instances, analysis result instances. ||
-| | `vso.advsec_write` | AdvancedSecurity (read and write) | Yes | Grants the ability to upload analyses in sarif | `vso.advsec` |
-| | `vso.advsec_manage` | AdvancedSecurity (read, write, and manage) | Yes | Grants the ability to upload analyses in sarif | `vso.advsec_write` |
+| | `vso.advsec_write` | AdvancedSecurity (read and write) | Yes | Grants the ability to upload analyses in sarif. | `vso.advsec` |
+| | `vso.advsec_manage` | AdvancedSecurity (read, write, and manage) | Yes | Grants the ability to upload analyses in sarif. | `vso.advsec_write` |
 | **Agent Pools** | `vso.agentpools` | Agent Pools (read) || Grants the ability to view tasks, pools, queues, agents, and currently running or recently completed jobs for agents. ||
 | | `vso.agentpools_manage` | Agent Pools (read, manage) | Yes | Grants the ability to manage pools, queues, and agents. | `vso.agentpools` |
 | | `vso.environment_manage` | Environment (read, manage) | Yes | Grants the ability to manage pools, queues, agents, and environments. | `vso.agentpools_manage` |
