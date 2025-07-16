@@ -183,13 +183,6 @@ Accept: application/json;api-version=7.2
 
 For supported versions, see [REST API versioning](../concepts/rest-api-versioning.md#supported-versions).
 
-## Cross-origin resource sharing (CORS)
-
-Azure DevOps Services supports CORS, enabling JavaScript code from external domains to make Ajax requests to REST APIs. Each request must include authentication credentials (Microsoft Entra ID tokens, OAuth access tokens, or PATs are supported).
-
-> [!TIP]
-> For complete CORS implementation examples, see [REST API samples](../get-started/rest/samples.md#cors-support).
-
 ## More resources
 
 For practical implementation guidance and complete code examples, see:
