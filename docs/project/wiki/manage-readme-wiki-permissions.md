@@ -1,26 +1,25 @@
 ---
-title: Manage Permissions for READMEs and Wiki Pages
+title: Manage Permissions for Wikis, READMEs, and Collaboration Tools
 titleSuffix: Azure DevOps
-description: Learn how to set permissions to grant or secure access to README files and your team project built-in wiki in Azure DevOps.
+description: Learn how to set permissions to grant or secure access to wikis, README files, notifications, and other collaboration tools in Azure DevOps.
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.topic: concept-article
 ms.author: chcomley
 author: chcomley
-ms.reviewer: gopinach
 ai-usage: ai-assisted
 ms.date: 07/16/2025
 monikerRange: "<=azure-devops"
-#customer intent: As an Azure DevOps administrator, I want to manage permissions for README files and my team project wiki to ensure secure access for users.
+#customer intent: As an Azure DevOps administrator, I want to manage permissions for wikis, README files, and collaboration tools to ensure secure access for users.
 ---
 
-# Manage wiki permissions
+# Manage wiki and collaboration tool permissions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes how to set and manage permissions for your team project wiki and project README files. Wiki permissions are managed through the underlying Git repository security settings.
+This article describes how to set and manage permissions for collaboration tools in Azure DevOps, including team project wikis, project README files, notifications, and feedback. These tools help teams collaborate effectively while maintaining appropriate security controls.
 
-By default, all members of the Contributors group have permission to read and edit wiki pages. Project Administrators can modify these permissions to control who can read, edit, or manage wiki content.
+Wiki permissions are managed through the underlying Git repository security settings. By default, all members of the Contributors group have permission to read and edit wiki pages. Project Administrators can modify these permissions to control who can read, edit, or manage wiki content.
 
 ## Prerequisites
 
@@ -38,6 +37,32 @@ Wiki permissions are controlled through the underlying Git repository that store
 
 Each type uses the same Git repository permission model but might have different repository locations.
 
+## Default permissions by role
+
+The following table shows default permissions for collaboration tools including wikis, READMEs, notifications, and feedback:
+
+|Task |Stakeholders  |Readers  |Contributors  |Team Administrators | Organization owner/Project Administrator |
+|---------|---------|---------|---------|---------|---------|
+|Set personal notifications or alerts    | ✔️ | | ✔️ | ✔️ | ✔️ |
+|Set team notifications or alerts     |         |         |         | ✔️ | ✔️ |
+|Set project-level notifications or alerts    |         |         |         |        | ✔️ |
+|READMEs     | See Note 1  | ✔️ | ✔️ | ✔️ |✔️|
+|View project wikis     |  ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
+|View code wikis     |    | ✔️ | ✔️ | ✔️ | ✔️  |
+|Provision or create a wiki    |  |  |  |  | ✔️ |
+|Publish code as wiki     |         |  | ✔️ | See Note 2 | See Note 2 |
+|View the project page   | ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
+|Edit the project page    |         |         |         |        | ✔️ |
+|Navigate using the project pages     | ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
+|Request feedback    |   | ✔️ | ✔️ | ✔️ | ✔️  |
+|Provide feedback    |✔️ | ✔️ | ✔️ | ✔️ | ✔️   |
+|Powerful code search     | ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
+|Powerful work tracking search     | ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
+
+**Notes:**
+1. Stakeholders can view project READMEs, but not READMEs defined for a repository.
+2. Project Administrators or Team Administrators with contribute permission can publish code as wiki. Project Administrators have this permission by default.
+
 ## Manage permissions for project wikis
 
 Project wikis (provisioned wikis) are stored in a dedicated Git repository. You can manage permissions for these wikis through the repository security settings.
@@ -50,7 +75,7 @@ Project wikis (provisioned wikis) are stored in a dedicated Git repository. You 
 
 3. Under **Repos**, select **Repositories**.
 
-4. Select the wiki repository. For a project wiki, it's typically named `{ProjectName}.wiki`.
+4. Select the wiki repository. A project wiki is typically named `{ProjectName}.wiki`.
 
 5. Select the **Security** tab.
 
@@ -234,11 +259,29 @@ README files in repositories follow the same permission model as the repository 
 
 Users need **Read** permission to view README files and **Contribute** permission to edit them.
 
+> [!NOTE]
+> Stakeholders can view project READMEs but can't access READMEs defined for specific repositories in private projects.
+
+## Related collaboration tools
+
+### Notifications and alerts
+
+To manage notifications and alerts:
+- **Personal notifications**: See [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
+- **Team notifications**: See [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
+
+> [!NOTE]
+> There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
+
+### Feedback permissions
+
+For managing feedback permissions, see [Set feedback permissions](/previous-versions/azure/devops/project/feedback/get-feedback).
+
 ## Related content
 
 - [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md)
-- [Git repository permissions](../../organizations/security/permissions.md#git-repository-object-level)
-- [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
-- [About wikis, READMEs, and Markdown](about-readme-wiki.md)
-- [Provisioned vs. published wikis](provisioned-vs-published-wiki.md)
-- [Clone and update wiki content offline](wiki-update-offline.md)
+- [Set Git repository permissions](../../organizations/security/permissions.md#git-repository-object-level)
+- [Learn about access levels](../../organizations/security/access-levels.md)
+- [Create and edit wikis](about-readme-wiki.md)
+- [Choose between provisioned and published wikis](provisioned-vs-published-wiki.md)
+- [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)

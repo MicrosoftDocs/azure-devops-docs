@@ -61,9 +61,6 @@
     href: ../../user-guide/provide-feedback.md
 - name: Reference
   items:
-  - name: Default permissions (Security)
-    displayName: personal, team, project, contributors, access, security, automatic
-    href: ../../project/wiki/wiki-readme-permissions.md
   - name: View notification statistics for your organization
     displayName: active, subscription, event, initiator, administrator, review
     href: view-organization-notification-statistics.md
