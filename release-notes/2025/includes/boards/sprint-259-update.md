@@ -11,9 +11,10 @@ We’re excited to announce the general availability of the **Markdown editor fo
 
 Existing large text fields will remain unchanged, but you can choose to convert them to Markdown individually as needed.
   
-![53761898-4f61-4c95-a6d2-a36ed38729cd.gif](https://dev.azure.com/mseng/b924d696-3eae-4116-8443-9a18392d8544/_apis/wit/attachments/176fc614-520e-430d-8cbe-0463e9a20b1d?fileName=53761898-4f61-4c95-a6d2-a36ed38729cd.gif) 
- 
-[Community Suggestion Ticket](https://developercommunity.visualstudio.com/t/make-it-easy-to-insert-tables-into-a-work-item-des/1108159)
+> [!div class="mx-imgBorder"]
+> ![Gif to demo markdown support for comments.](../../media/259-boards-01.gif "gif to demo markdown support for comments.")
+
+This request was prioritized based on [this Developer community suggestion ticket](https://developercommunity.visualstudio.com/t/make-it-easy-to-insert-tables-into-a-work-item-des/1108159)
 
 > [!NOTE]
 > We are rolling this feature out gradually, region by region. We expect it to be available to all customers within 4–5 weeks.
