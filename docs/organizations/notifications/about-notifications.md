@@ -138,5 +138,5 @@ If you're enrolled in the Microsoft Entra profile information preview, your prof
 - [Default and supported notifications](oob-built-in-notifications.md)
 - [Query with group clauses](../../boards/queries/using-queries.md#group-clauses)
 - [FAQs](faq-notifications.yml)
-- [Default permissions and access set for collaboration tools](../../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)
+- [Default permissions and access set for collaboration tools](../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)
 - [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)
