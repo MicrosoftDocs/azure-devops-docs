@@ -215,6 +215,10 @@ extends:
 
 ##### Example: Iterating through nested objects
 
+The template defines a `listOfFruits` parameter containing objects with nested arrays, then uses nested loops to process each fruit and its associated colors. 
+
+
+
 ```yaml
 # File: nested-objects-template.yml
 
@@ -233,7 +237,9 @@ steps:
     - script: echo ${{ fruit.fruitName }} ${{ fruitColor }} # Echo the current fruit's name and color
 ```
 
-````yaml
+The pipeline file shows how to override the default values with custom fruit data.
+
+```yaml
 # File: azure-pipelines.yml
 
 trigger:
@@ -249,9 +255,9 @@ extends:
       colors: ['purple', 'green']
 ```
 
-### Dynamically include a list of steps with the stepList parameter 
+### Dynamically include a list of steps with the stepList parameter
 
-In this example, the `stepList` parameter type is used to dynamically include a list of steps in the build process. 
+In this example, the `stepList` parameter type is used to dynamically include a list of steps in the build process.
 
 - The main pipeline (`azure-pipelines.yml`) defines two jobs: build and deploy.
 - The build job uses a template (`build.yml`) and passes a list of build tasks using the `stepList` parameter.
@@ -336,52 +342,4 @@ steps:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
       ArtifactName: 'drop'
 ```
-
-
-### Required parameters
-
-Pipelines automatically reports an error if a parameter is missing. You can add a validation step at the beginning of your template to check for the parameters you require and take appropriate action.
-
-Here's an example that checks for the `solution` parameter using Bash:
-
-```yaml
-# File: steps/msbuild.yml
-
-parameters:
-- name: 'solution'
-  default: ''
-  type: string
-
-steps:
-- bash: |
-    if [ -z "$SOLUTION" ]; then
-      echo "##vso[task.logissue type=error;]Missing template parameter \"solution\""
-      echo "##vso[task.complete result=Failed;]"
-    fi
-  env:
-    SOLUTION: ${{ parameters.solution }}
-  displayName: Check for required parameters
-- task: VSBuild@1
-  inputs:
-    solution: ${{ parameters.solution }}
-- task: VSTest@3
-  inputs:
-    testSelector: 'testAssemblies' 
-    testAssemblyVer2: ${{ parameters.solution }} 
-    searchFolder: '$(System.DefaultWorkingDirectory)' 
-```
-
-To show that the template fails if it's missing the required parameter:
-
-```yaml
-# File: azure-pipelines.yml
-
-# This will fail since it doesn't set the "solution" parameter to anything,
-# so the template will use its default of an empty string
-steps:
-- template: steps/msbuild.yml
-
-```
-
-::: moniker-end
 
