@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for Managed DevOps Pools
 description: Learn how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools.
-ms.date: 07/11/2025
+ms.date: 07/16/2025
 ms.custom: sfi-image-nochange
 ---
 
@@ -228,7 +228,7 @@ When you create a Managed DevOps Pool, the account you use to sign in to the Azu
 | [Project level agent pools administrator or creator](#project-level-agent-pools-administrator-or-creator) | You must have **Administrator** or **Creator** agent pool permissions at the project level for each project in which you want to make your Managed DevOps Pool available to pipelines. |
 
 > [!NOTE]
-> When deploying your Managed DevOps Pool using Infrastructure-as-Code via Azure Pipelines, make sure the service connection's App Registration is added to one of the groups above as described [here](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#2-add-a-service-principal-to-an-azure-devops-organization), otherwise deployment will fail with error [The logged in user does not have Manage permissions in the Azure DevOps organization](/azure/devops/managed-devops-pools/troubleshooting#the-logged-in-user-was-not-found-in-the-azure-devops-organization)
+> To create a Managed DevOps Pool from a pipeline, add the service connection's App Registration to the Azure DevOps organization and grant it the permissions described in the previous table. For more information, see [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md) and [Use service principals & managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md). above as described [here](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#2-add-a-service-principal-to-an-azure-devops-organization), otherwise deployment will fail with error 
 
 ### Verify membership in the Azure DevOps organization
 
