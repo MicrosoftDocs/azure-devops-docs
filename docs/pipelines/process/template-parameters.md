@@ -167,7 +167,7 @@ extends:
 
 Objects allow you to define complex parameter structures, such as nested elements. You can iterate through objects to access their keys and values or nested properties.
 
-##### Example: Iterating through ibject keys and values
+##### Example: Iterating through object keys and values
 
 ```yaml
 parameters:
@@ -208,63 +208,6 @@ steps:
 - ${{ each fruit in parameters.listOfFruits }} : # Iterate over each fruit in the 'listOfFruits'
   - ${{ each fruitColor in fruit.colors}} : # Iterate over each color in the current fruit's colors
     - script: echo ${{ fruit.fruitName}} ${{ fruitColor }} # Echo the current fruit's name and color
-```
-
-#### Iterating through step lists
-
-The `stepList` parameter type allows you to dynamically include a list of steps in the pipeline. This is useful for modularizing pipeline tasks.
-
-```yaml
-#azure-pipelines.yml
-
-trigger:
-- main
-
-jobs:
-  - job: build
-    displayName: 'Build .NET Core Application'
-    pool:
-      vmImage: 'ubuntu-latest'
-
-    steps:
-      - checkout: self
-
-      - template: build.yml
-        parameters:
-          build_tasks:
-            - task: DotNetCoreCLI@2
-              displayName: 'Restore'
-              inputs:
-                command: 'restore'
-                projects: '**/*.csproj'  
-
-            - task: DotNetCoreCLI@2
-              displayName: 'Build'
-              inputs:
-                command: 'build'
-                arguments: '--no-restore'
-                projects: '**/*.csproj' 
-```
-
-The `build.yml` template:
-
-```yaml
-#build.yml
-
-parameters:
-  - name: build_tasks
-    type: stepList
-    default: []
-
-steps:
-  - task: UseDotNet@2
-    displayName: 'Use .NET Core SDK'
-    inputs:
-      packageType: 'sdk'
-      version: '8.x'
-
-  - ${{ each step in parameters.build_tasks }}:
-      - ${{ step }}
 ```
 
 ### Dynamically include a list of steps with the stepList parameter 
