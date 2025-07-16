@@ -29,6 +29,17 @@ Parameters must contain a name and data type. Parameters can't be optional. A de
 
 Use [templateContext](template-parameters.md#use-templatecontext-to-pass-properties-to-templates) to pass additional properties to stages, steps, and jobs used as parameters in a template. 
 
+## What is the difference between parameters and variables? 
+
+The following table highlights the key differences between parameters and variables in Azure Pipelines.
+
+| Feature              | Parameters         |  Variables          |
+|----------------------|----------------------------|-----------------------------|
+| **Evaluation Time**  | Template parsing (queue)   | Runtime (during execution)  |
+| **Mutability**       | Immutable after queue      | Can be updated dynamically during pipeline execution |
+| **UI exposure during run**  | Shown in Run Pipeline UI and can be set before a run | Not exposed during runs |
+| **Secret values**      | Do not support secret values | Can be marked as secrets |
+
 
 ## Use parameters in pipelines
 
