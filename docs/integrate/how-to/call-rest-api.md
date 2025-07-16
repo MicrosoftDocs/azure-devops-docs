@@ -188,18 +188,18 @@ For supported versions, see [REST API versioning](../concepts/rest-api-versionin
 Azure DevOps Services supports CORS, enabling JavaScript code from external domains to make Ajax requests to REST APIs. Each request must include authentication credentials (Microsoft Entra ID tokens, OAuth access tokens, or PATs are supported).
 
 > [!TIP]
-> For complete CORS implementation examples, see [REST API samples](samples.md#cors-support).
+> For complete CORS implementation examples, see [REST API samples](../get-started/rest/samples.md#cors-support).
 
 ## More resources
 
 For practical implementation guidance and complete code examples, see:
 
-* [REST API samples](samples.md) - Complete examples with Microsoft Entra ID authentication
-* [Authentication guidance](authenticate/authentication-guidance.md) - Detailed authentication options
+* [REST API samples](../get-started/rest/samples.md) - Complete examples with Microsoft Entra ID authentication
+* [Authentication guidance](../get-started/authentication/authentication-guidance.md) - Detailed authentication options
 * [REST API versioning](../concepts/rest-api-versioning.md) - API lifecycle information
-* [OAuth 2.0](authenticate/oauth.md) - OAuth implementation details
+* [OAuth 2.0](../get-started/authentication/oauth.md) - OAuth implementation details
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Try REST API samples](samples.md)
+> [Try REST API samples](../get-started/rest/samples.md)
