@@ -7,9 +7,7 @@ description: Advanced Security properly picks up on default branch changes and d
 ---
 # Advanced Security properly picks up on default branch changes and deleted branches 
 
-We’re thrilled to introduce the public preview of the Azure DevOps MCP Server! You can now access Azure DevOps data such as work items, pull requests, builds, test plans, and more thru a self-hosted, on-premises solution from GitHub Copilot in Visual Studio Code. 
-
-This integration enhances Copilot’s ability to provide intelligent, context-aware suggestions while ensuring your data remains securely within your environment.
+TBD
 
 Check out the release notes for details.
 
