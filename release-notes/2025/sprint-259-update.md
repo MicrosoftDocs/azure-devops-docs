@@ -8,7 +8,8 @@ description: New Boards Hub enabled for all customers across all regions
 
 # New Boards Hub enabled for all customers across all regions 
 
-In this sprint, we're excited to announce that the New Boards Hub is enabled for all customers globally! Try out the New Boards Hub and share your feedback to help shape what's next. You can find details about how to share your feedback in the release notes. 
+In this sprint, we're excited to announce that the New Boards Hub is enabled for all customers globally! Try out the New Boards Hub and share your feedback to help shape what's next. You can find details about how to share your feedback in the release notes.
+
 In addition, the Markdown support for comments is generally available with this release. This has been a long-awaited feature requested in the Developer Community. 
 
 Check out the release notes for details.
