@@ -1,8 +1,15 @@
+---
+ms.author: chcomley
+author: chcomley
+ms.topic: include
+ms.date: 07/16/2025
+---
+
 | Category | Scope | Name | High-privilege | Description | Inherits From |
 | -------- | ----- | ---- | --------- | ----------- | ------------- |
 | **Advanced Security** | `vso.advsec` | AdvancedSecurity (read) | Yes | Grants the ability to read alerts, result instances, analysis result instances. ||
-| | `vso.advsec_write` | AdvancedSecurity (read and write) | Yes |Grants the ability to upload analyses in sarif | `vso.advsec` |
-| | `vso.advsec_manage` | AdvancedSecurity (read, write, and manage) | Yes |Grants the ability to upload analyses in sarif | `vso.advsec_write` |
+| | `vso.advsec_write` | AdvancedSecurity (read and write) | Yes | Grants the ability to upload analyses in sarif | `vso.advsec` |
+| | `vso.advsec_manage` | AdvancedSecurity (read, write, and manage) | Yes | Grants the ability to upload analyses in sarif | `vso.advsec_write` |
 | **Agent Pools** | `vso.agentpools` | Agent Pools (read) || Grants the ability to view tasks, pools, queues, agents, and currently running or recently completed jobs for agents. ||
 | | `vso.agentpools_manage` | Agent Pools (read, manage) | Yes | Grants the ability to manage pools, queues, and agents. | `vso.agentpools` |
 | | `vso.environment_manage` | Environment (read, manage) | Yes | Grants the ability to manage pools, queues, agents, and environments. | `vso.agentpools_manage` |
@@ -19,7 +26,7 @@
 | **Connected Server** | `vso.connected_server` | Connected Server || Grants the ability to access endpoints needed from an on-premises connected server. ||
 | **Entitlements** | `vso.entitlements` | Entitlements (Read) || Provides read only access to licensing entitlements endpoint to get account entitlements. ||
 | | `vso.memberentitlementmanagement` | MemberEntitlement Management (read) || Grants the ability to read users, their licenses as well as projects and extensions they can access. ||
-| | `vso.memberentitlementmanagement_write` | MemberEntitlement Management (write) | Yes | Grants the ability to manage users, their licenses as well as projects and extensions they can access. |  `vso.memberentitlementmanagement` |
+| | `vso.memberentitlementmanagement_write` | MemberEntitlement Management (write) | Yes | Grants the ability to manage users, their licenses as well as projects and extensions they can access. | `vso.memberentitlementmanagement` |
 | **Extensions** | `vso.extension` | Extensions (read) || Grants the ability to read installed extensions. | `vso.profile` |
 | | `vso.extension_manage` | Extensions (read and manage) | Yes | Grants the ability to install, uninstall, and perform other administrative actions on installed extensions. | `vso.extension` |
 | | `vso.extension.data` | Extension data (read) || Grants the ability to read data (settings and documents) stored by installed extensions. | `vso.profile` |
@@ -43,13 +50,13 @@
 | | `vso.packaging_write` | Packaging (read and write) | Yes | Grants the ability to create and read feeds and packages. | `vso.packaging` |
 | | `vso.packaging_manage` | Packaging (read, write, and manage) | Yes | Grants the ability to create, read, update, and delete feeds and packages. | `vso.packaging_write` |
 | **Pipeline Resources** | `vso.pipelineresources_use` | Pipeline Resources (use) | Yes | Grants the ability to approve a pipeline's request to use a protected resource: agent pool, environment, queue, repository, secure files, service connection, and variable group. ||
-| | `vso.pipelineresources_manage` | Pipeline Resources (use and manage) | Yes | Grants the ability to manage a protected resource or a pipeline's request to use a protected resource: agent pool, environment, queue, repository, secure files, service connection, and variable group. | `vso.pipelineresources_manage` |
+| | `vso.pipelineresources_manage` | Pipeline Resources (use and manage) | Yes | Grants the ability to manage a protected resource or a pipeline's request to use a protected resource: agent pool, environment, queue, repository, secure files, service connection, and variable group. | `vso.pipelineresources_use` |
 | **Project and Team** | `vso.project` | Project and team (read) || Grants the ability to read projects and teams. ||
 | | `vso.project_write` | Project and team (read and write) || Grants the ability to read and update projects and teams. | `vso.project` |
 | | `vso.project_manage` | Project and team (read, write and manage) | Yes | Grants the ability to create, read, update, and delete projects and teams. | `vso.project_write` |
 | **Release** | `vso.release` | Release (read) || Grants the ability to read release artifacts, including releases, release definitions and release environment. | `vso.profile` |
-| | `vso.release_execute` | Release (read, write and execute) | Yes | Grants the ability to read and update release artifacts, including releases, release definitions and release environment, and the ability to queue a new release. | `vso.release` | 
-| | `vso.release_manage` | Release (read, write, execute and manage) | Yes | Grants the ability to read, update, and delete release artifacts, including releases, release definitions and release environment, and the ability to queue and approve a new release. | `vso.release_manage` |
+| | `vso.release_execute` | Release (read, write and execute) | Yes | Grants the ability to read and update release artifacts, including releases, release definitions and release environment, and the ability to queue a new release. | `vso.release` |
+| | `vso.release_manage` | Release (read, write, execute and manage) | Yes | Grants the ability to read, update, and delete release artifacts, including releases, release definitions and release environment, and the ability to queue and approve a new release. | `vso.release_execute` |
 | **Secure Files** | `vso.securefiles_read` | Secure Files (read) | Yes | Grants the ability to read secure files. ||
 | | `vso.securefiles_write` | Secure Files (read, create) | Yes | Grants the ability to read and create secure files. | `vso.securefiles_read` |
 | | `vso.securefiles_manage` | Secure Files (read, create, and manage) | Yes | Grants the ability to read, create, and manage secure files. | `vso.securefiles_write` |
@@ -61,7 +68,7 @@
 | | `vso.hooks_write` | Service hooks (read and write) || Grants the ability to create and update service hook subscriptions and read metadata, including supported events, consumers, and actions. (No longer public.) | `vso.hooks` |
 | | `vso.hooks_interact` | Service hooks (interact) || Grants the ability to interact and perform actions on events received via service hooks. (No longer public.) | `vso.profile` |
 | **Settings** | `vso.settings` | Settings (read) || Grants the ability to read settings. ||
-| | `vso.settings_write` | Settings (read and write) || Grants the ability to create and read settings. ||
+| | `vso.settings_write` | Settings (read and write) || Grants the ability to read and write settings. | `vso.settings` |
 | **Symbols** | `vso.symbols` | Symbols (read) || Grants the ability to read symbols. | `vso.profile` |
 | | `vso.symbols_write` | Symbols (read and write) || Grants the ability to read and write symbols. | `vso.symbols` |
 | | `vso.symbols_manage` | Symbols (read, write and manage) || Grants the ability to read, write, and manage symbols. | `vso.symbols_write` |
