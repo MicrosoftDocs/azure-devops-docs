@@ -342,4 +342,4 @@ steps:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
       ArtifactName: 'drop'
 ```
-
+::: moniker-end
