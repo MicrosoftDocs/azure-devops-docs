@@ -208,18 +208,21 @@ To prevent a user from accessing the wiki:
 ### Troubleshooting permissions
 
 **Problem**: User can't edit wiki pages
+
 **Solution**: 
 1. Verify the user has **Contribute** permission on the wiki repository
 2. Check if there are any **Deny** permissions blocking access
 3. Ensure the user has at least **Basic** access level in the project
 
 **Problem**: User can't see the wiki
+
 **Solution**:
 1. Verify the user has **Read** permission on the wiki repository
 2. Check if the wiki exists and is properly configured
 3. Ensure the user has project access
 
 **Problem**: Changes to permissions don't take effect
+
 **Solution**:
 1. Wait a few minutes for permissions to propagate
 2. Ask the user to refresh their browser or sign out and back in
