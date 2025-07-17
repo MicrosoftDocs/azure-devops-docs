@@ -88,7 +88,7 @@ Bugs that are managed with requirements can be added through the [product backlo
 
 You can review bugs defined for your project by creating a query and specifying the **Work Item Type=Bug**. Or, open a predefined query: **Active Bugs** (Agile and CMMI) or **Work in Progress** (Scrum).  
 
-## Related articles
+## Related content
 
 - [Define, capture, triage, and manage bugs](../../boards/backlogs/manage-bugs.md)
 - [Select backlog navigation levels for your team](select-backlog-navigation-levels.md)

@@ -109,7 +109,7 @@ As the amount of software, features, and complexity increase, you'll need to ado
 - **Internal Open Source**: Bring the value and ethos that's developed in the Open Source Software community to your internal development teams.  
 
 
-## Related articles
+## Related content
 
 Along with the above practices, you'll find more guidance around scaling your Agile tools in the following articles: 
 

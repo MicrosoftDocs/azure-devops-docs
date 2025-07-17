@@ -56,7 +56,7 @@ Enter clear, precise, detailed feedback in the **Tell us more** section. Avoid i
 
 For more information, see the following section of related articles.
 
-## Related articles
+## Related content
 
 * [View the Azure DevOps Roadmap](/azure/devops/release-notes/features-timeline)
 * [View Azure Boards FAQs](../boards/faqs.yml)

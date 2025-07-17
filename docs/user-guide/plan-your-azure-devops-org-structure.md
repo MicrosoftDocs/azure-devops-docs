@@ -265,7 +265,7 @@ The organizations are for the same company, but are mostly isolated from each ot
 > [!TIP]
 > You can more easily partition an existing organization with projects, than combine different organizations.
 
-## Related articles  
+## Related content  
 
 - [Create an organization](../organizations/accounts/create-organization.md)
 - [Create a project](../organizations/projects/create-project.md)

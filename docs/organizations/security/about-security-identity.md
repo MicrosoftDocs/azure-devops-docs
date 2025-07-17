@@ -258,7 +258,7 @@ Since repositories and build and release pipelines pose unique security challeng
 > [!div class="nextstepaction"]
 > [Permissions and groups reference](permissions.md)
 
-## Related articles
+## Related content
  
 - [Default permissions and access assignments](permissions-access.md)
 - [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory)

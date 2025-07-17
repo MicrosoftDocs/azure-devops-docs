@@ -529,7 +529,7 @@ Notes:
 
    [!INCLUDE [feature support information](../includes/deprecate-project.md)]
 
-## Related articles
+## Related content
 
 - [Query by assignment or workflow changes](query-by-workflow-changes.md)
 - [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)

@@ -380,7 +380,7 @@ During the import process, we highly recommend that you restrict access to your 
 > [!NOTE]
 > Azure DevOps doesn't natively support allowlisting directly within its settings. However, you can manage allowlisting at the network level using your organization's firewall or proxy settings. 
 
-## Related articles
+## Related content
 
 - [Available service tags](/azure/virtual-network/service-tags-overview)
 - [Microsoft-hosted agents IP address ranges](../../pipelines/agents/hosted.md#agent-ip-ranges)

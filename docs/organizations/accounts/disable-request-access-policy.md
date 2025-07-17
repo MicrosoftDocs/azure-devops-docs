@@ -45,7 +45,7 @@ This article explains how to disable the 'Request Access' policy in Azure DevOps
 
 When users try to access a project without the required permissions, the error message includes the **request access URL**. This link is shown on the error page to maintain confidentiality, regardless of whether the project exists.
 
-## Related articles
+## Related content
 
 - [Assign access levels by group membership](assign-access-levels-by-group-membership.md)
 - [Manage Conditional Access](change-application-access-policies.md)

@@ -307,7 +307,7 @@ The authentication scheme in a service endpoint determines the credentials that 
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)
 
-## Related articles
+## Related content
 
 - [Test and debug extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
 - [Develop a web extension](../get-started/node.md)

@@ -810,7 +810,7 @@ You can change the field name, the index, and the report attributes for any fiel
 
 ::: moniker-end  
 
-## Related articles  
+## Related content  
 
 ::: moniker range="azure-devops"  
 - [Refer to the Query quick reference](../queries/query-index-quick-ref.md) to quickly understand query syntax and usage.

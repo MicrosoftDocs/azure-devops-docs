@@ -86,7 +86,7 @@ The display shows a list of users who are part of the **Project Collection Admin
 > [!div class="nextstepaction"]
 > [Look up a project administrator](look-up-project-administrators.md)
 
-## Related articles
+## Related content
 
 - [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)

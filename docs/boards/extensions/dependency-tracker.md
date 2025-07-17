@@ -888,7 +888,7 @@ False
 ```
 
 
-## Related articles
+## Related content
 
 - [Manage work item fields](..//work-items/guidance/work-item-field.md)
 - [Review team delivery plans](../plans/review-team-plans.md)

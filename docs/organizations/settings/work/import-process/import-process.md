@@ -151,7 +151,7 @@ For example, you might export a process to:
 
 After making the necessary modifications, you can reimport the process to update existing projects or create new ones using the customized process. This action ensures consistency and flexibility in managing work tracking across your Azure DevOps organization.
 
-## Related articles
+## Related content
 
 - [Customize a Hosted XML process](customize-process.md)
 - [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)

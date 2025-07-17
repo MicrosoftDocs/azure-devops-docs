@@ -661,7 +661,7 @@ For more information, see [Microsoft Privacy policy](https://privacy.microsoft.c
 > [!div class="nextstepaction"]
 > [View your test progress](track-test-status.md)
 
-## Related articles
+## Related content
 
 - [FAQs for manual testing](reference-qa.yml#runtests)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)

@@ -54,6 +54,6 @@ The [Azure Resource health REST API](/rest/api/azure/devops/status) can retrieve
 
 [!INCLUDE [rest-api-docs-rollout](../includes/rest-api-docs-rollout.md)] 
 
-## Related articles
+## Related content
 
 - [Blog post: How do you measure quality of a service?](https://devblogs.microsoft.com/bharry/how-do-you-measure-quality-of-a-service/) 

@@ -45,7 +45,7 @@ To change the **Organization owner**, see [Change organization owner](../account
 > [!div class="nextstepaction"]
 > [Look up a project collection administrator](look-up-project-collection-administrators.md)
 
-## Related articles
+## Related content
 
 - [Request an increase in permission levels](request-changes-permissions.md)
 - [Look up a project administrator](look-up-project-administrators.md)

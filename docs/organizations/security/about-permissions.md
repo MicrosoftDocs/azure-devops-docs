@@ -320,7 +320,7 @@ Feature flags control access to new features. Azure DevOps periodically introduc
 > [!div class="nextstepaction"]
 > [Default permissions and access](permissions-access.md)
 
-## Related articles
+## Related content
 
 ::: moniker range="= azure-devops"
 

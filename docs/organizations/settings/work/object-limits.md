@@ -249,7 +249,7 @@ When migrating from on-premises to Azure DevOps Services, you might encounter se
 
 For more information, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md) and [Troubleshoot import and migration errors](../../../migrate/migration-troubleshooting.md).
 
-## Related articles
+## Related content
 
 ::: moniker range="azure-devops"
 

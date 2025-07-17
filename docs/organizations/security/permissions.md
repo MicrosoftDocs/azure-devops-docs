@@ -3008,7 +3008,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Get started with permissions, access, and security groups](about-permissions.md)   
 - [Security namespace and permission reference for Azure DevOps](namespace-reference.md)    

@@ -78,7 +78,7 @@ If anything is missing from the migrated organization, [contact Support](https:/
 > [!div class="nextstepaction"]
 > [Get Azure DevOps Services extensions (optional)](https://marketplace.visualstudio.com/azuredevops?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide)
 
-## Related articles 
+## Related content 
 
 - [Validate and prepare for migration](migration-validate.md)
 - [Prepare for test run](migration-prepare-test-run.md) 

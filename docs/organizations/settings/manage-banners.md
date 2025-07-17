@@ -305,7 +305,7 @@ az devops admin banner update --id 7653f414-3c01-424f-8f84-e51aa99b797c --messag
 
 * * *
 
-## Related articles
+## Related content
 
 ::: moniker range="azure-devops"
 - [Get started managing your organization or project collection](../../user-guide/manage-organization-collection.md)

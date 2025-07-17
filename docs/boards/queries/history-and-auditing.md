@@ -381,7 +381,7 @@ You can use the following fields to filter queries and create reports. Several o
 >    </FIELD>
 >    ```
 
-## Related articles
+## Related content
 
 - [Use the query editor](using-queries.md)
 - [Query fields, operators, and macros](query-operators-variables.md)   

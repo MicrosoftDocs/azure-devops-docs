@@ -296,7 +296,7 @@ The following table describes fields associated with links and attachments. Most
    :::column-end:::
 :::row-end:::
 
-## Related articles
+## Related content
 
 - [Add a link to multiple work items](../backlogs/add-link.md) 
 - [Link work items to other objects](../backlogs/add-link.md) 

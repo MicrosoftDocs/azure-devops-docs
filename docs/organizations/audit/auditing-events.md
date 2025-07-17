@@ -367,7 +367,7 @@ The following tables describe the type of events (or actions) that are available
 | `Token.SshRevokeEvent` | SSH Key "{DisplayName}" was revoked. |
 | `Token.SshUpdateEvent` | SSH Key "{DisplayName}" was updated. |
 
-## Related articles
+## Related content
 - [Review audit log](azure-devops-auditing.md#review-audit-log)
 - [Export audit events](azure-devops-auditing.md#export-audit-events)
 - [Set up an audit stream](auditing-streaming.md)

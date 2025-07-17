@@ -188,7 +188,7 @@ For more information, see [Show bugs on backlogs and boards](../../organizations
 > [!div class="nextstepaction"]
 > [Organize your backlog](organize-backlog.md)
 
-## Related articles
+## Related content
 
 - [Configure your backlog view](configure-your-backlog-view.md)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)

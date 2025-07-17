@@ -171,7 +171,7 @@ You can zoom in and zoom out of the view. Also, you can move the state nodes aro
 > [!div class="nextstepaction"]
 > [Review changes made to an inherited process through the audit log](../../audit/azure-devops-auditing.md)
 
-## Related articles
+## Related content
 
 - [Learn about workflow states in backlogs and boards](../../../boards/work-items/workflow-and-state-categories.md)
 - [Add and manage work item types](customize-process-work-item-type.md)

@@ -66,7 +66,7 @@ For more information about changing your project settings, see the following art
 > [!div class="nextstepaction"]
 > [Add users or groups to your team or project](../../organizations/security/add-users-team-project.md)
 
-## Related articles  
+## Related content  
 
 - [Track issues and tasks](plan-track-work.md)
 - [About access levels](../../organizations/security/access-levels.md)

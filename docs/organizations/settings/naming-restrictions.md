@@ -485,7 +485,7 @@ User accounts that you add to an organization or collection must conform to the 
 
 [!INCLUDE [temp](../../project/wiki/includes/wiki-naming-conventions.md)]
 
-## Related articles
+## Related content
 
 - [Azure Artifacts count and size limits](../../artifacts/reference/limits.md)
 - [Work tracking, process, and project limits](./work/object-limits.md)

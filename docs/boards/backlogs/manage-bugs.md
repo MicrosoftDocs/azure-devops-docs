@@ -496,7 +496,7 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 > [!div class="nextstepaction"]
 > [Use templates to add and update work items](work-item-template.md)
 
-## Related articles
+## Related content
 
 - [Remove, delete, or restore work items](remove-delete-work-items.md)
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)

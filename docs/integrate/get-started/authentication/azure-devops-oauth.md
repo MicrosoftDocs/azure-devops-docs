@@ -346,7 +346,7 @@ A:
 > [!div class="nextstepaction"]
 > [Get started with Microsoft Entra ID OAuth](entra-oauth.md)
 
-## Related articles
+## Related content
 
 - [Choose your authentication method](authentication-guidance.md)
 - [Migrate to Microsoft Entra ID OAuth](entra-oauth.md)

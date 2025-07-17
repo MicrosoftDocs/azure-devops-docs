@@ -153,7 +153,7 @@ You can use these REST APIs to work with extensions:
 - [Extend the work item form](../../../extend/develop/add-workitem-extension.md)  
 - [Add a custom control to the work item form](../../../extend/develop/custom-control.md)  
 
-## Related articles 
+## Related content 
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 

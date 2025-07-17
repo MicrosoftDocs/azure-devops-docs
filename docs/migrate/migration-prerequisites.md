@@ -86,7 +86,7 @@ Have the following items:
 > [!div class="nextstepaction"]
 > [Validate and prepare for migration](migration-validate.md)
 
-## Related articles 
+## Related content 
 
 - [Prepare for test run](migration-prepare-test-run.md)
 - [Do test run migration](migration-test-run.md)

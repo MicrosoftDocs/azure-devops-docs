@@ -500,7 +500,7 @@ A: Be a member of the [Team Foundation Administrators group](/azure/devops/serve
 > [!div class="nextstepaction"]
 > [Manage extension permissions](grant-permissions.md)
 
-## Related articles
+## Related content
 
 - [Request and approve extension requests](request-extensions.md)
 - [Develop a web extension](../extend/get-started/node.md)

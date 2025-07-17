@@ -55,7 +55,7 @@ Other open source examples that you might be interested in.
 
 To get started as quickly as possible, use the [seed project](https://github.com/cschleiden/vsts-extension-ts-seed-simple) that contains the files required to build an extension using TypeScript. There's a grunt script to automate building, packaging, and publishing the extension.
 
-## Related articles
+## Related content
 
 - [Develop a web extension](../get-started/node.md)
 - [Use the Developer Formula Design System](https://developer.microsoft.com/azure-devops/)

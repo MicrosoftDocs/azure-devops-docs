@@ -133,7 +133,7 @@ The policy is disabled and any PATs checked into public GitHub repositories rema
 > [!div class="nextstepaction"]
 > [Change application access policies](change-application-access-policies.md)
 
-## Related articles
+## Related content
 - [Restrict organization creation with Microsoft Entra tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Use personal access tokens to authenticate](use-personal-access-tokens-to-authenticate.md)
 - [Revoke organization users' personal access tokens (for admins)](admin-revoke-user-pats.md)

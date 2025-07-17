@@ -290,7 +290,7 @@ To add the field to the form:
     ```
 
 
-## Related articles 
+## Related content 
 
 - [Query by a numeric field](query-numeric.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)  

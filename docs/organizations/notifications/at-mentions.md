@@ -129,7 +129,7 @@ When the **Limit user visibility and collaboration to specific projects** previe
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Work item form controls](../../boards/work-items/about-work-items.md#work-item-form-controls)  
 - [Pull requests](../../repos/git/pull-requests.md)

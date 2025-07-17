@@ -80,7 +80,7 @@ This article helps you understand how to grant and manage permissions for users 
 
 By following these steps, you can effectively manage extension permissions within your Azure DevOps organization. This ensures that only authorized users can install, update, or remove extensions, maintaining the security and integrity of your development environment.
 
-## Related articles
+## Related content
 
 - [Install extensions](install-extension.md)
 - [Request extensions](request-extensions.md)

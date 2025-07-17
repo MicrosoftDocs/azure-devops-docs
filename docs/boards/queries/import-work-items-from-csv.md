@@ -264,7 +264,7 @@ When you import from CSV, for performance reasons, the identity picker doesn't g
 
 ::: moniker-end 
 
-## Related articles
+## Related content
 
 - [Access the Work Item Field Index](../work-items/guidance/work-item-field.md)
 - [Bulk Add or Modify Work Items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)

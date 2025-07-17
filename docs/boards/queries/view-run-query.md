@@ -282,7 +282,7 @@ You can email a formatted query list by choosing the **Send to Microsoft Outlook
 > [!div class="nextstepaction"]
 > [Define a query](using-queries.md)
 
-## Related articles
+## Related content
 
 - [Manage queries and query folders](organize-queries.md)
 - [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)

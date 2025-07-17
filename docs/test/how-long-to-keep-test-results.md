@@ -70,7 +70,7 @@ you can specify how long to keep automated test results based on the branch.
 
 Clean up automated test results left over from deleted builds or test results that aren't related to builds. For example, results published from external test systems. Set the retention limits at the project level as described in [Set retention period for test results](#manual-test-results-limits) earlier in this article.
 
-## Related articles
+## Related content
 
 - [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 - [FAQs for manual testing](reference-qa.yml#manageresults)

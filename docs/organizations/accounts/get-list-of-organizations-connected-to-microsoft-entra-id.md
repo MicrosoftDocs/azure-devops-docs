@@ -83,7 +83,7 @@ You can get a list of organizations backed by Microsoft Entra ID by using the [a
 > [!div class="nextstepaction"]
 > [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
-## Related articles
+## Related content
 
 * [Resolve orphaned organization](resolve-orphaned-organization.md)
 * [Disconnect from Microsoft Entra ID](disconnect-organization-from-azure-ad.md)

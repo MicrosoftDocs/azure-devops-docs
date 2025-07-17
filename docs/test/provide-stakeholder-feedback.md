@@ -129,7 +129,7 @@ Stakeholders and other users can respond to feedback requests using the Test & F
  
 7. Capture and submit your feedback as [previously shown](#capture-feedback).
 
-## Related articles
+## Related content
 
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)

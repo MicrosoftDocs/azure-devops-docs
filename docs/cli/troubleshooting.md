@@ -56,7 +56,7 @@ You can only add child iterations of a backlog iteration to your team. Create ch
 Get the identifier of the iteration and add it to your team using `az boards iteration team add -h` command.
  
 
-## Related articles
+## Related content
 - [az boards area](/cli/azure/boards/area)
 - [az boards iteration](/cli/azure/boards/iteration)
 - [Define area paths and assign to a team](../organizations/settings/set-area-paths.md)
