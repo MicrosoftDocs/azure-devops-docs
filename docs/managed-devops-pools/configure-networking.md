@@ -142,7 +142,7 @@ The following example shows the `networkProfile` section of the **fabric-profile
 * * *
 
 > [!IMPORTANT]
-> Don't put a **Delete** lock on the virtual network when updating your pools. During a pool update operation, Managed DevOps Pools creates a [Service Association Link (SAL)](/rest/api/virtualnetwork/service-association-links/list) on the subnet. If an update fails, Managed DevOps Pools attempts to clean the SAL, but if there is a **Delete** lock, Managed DevOps Pools won't be able to delete the SAL, and the subnet will be in a locked state (undeletable).
+> Don't put a **Delete** lock on the virtual network when updating your pools. During a pool update operation, Managed DevOps Pools creates a [Service Association Link (SAL)](/rest/api/virtualnetwork/service-association-links/list) on the subnet. If an update fails, Managed DevOps Pools attempts to clean the SAL, but if there is a **Delete** lock, you'll get an `InUseSubnetCannotBeDeleted` error, and Managed DevOps Pools won't be able to delete the SAL, leaving the subnet in a locked state (undeletable). To resolve the issue, remove the **Delete** lock, and retry the update operation.
 >
 > For more information, see [Lock your Azure resources to protect your infrastructure - Considerations before applying your locks](/azure/azure-resource-manager/management/lock-resources#considerations-before-applying-your-locks).
 
