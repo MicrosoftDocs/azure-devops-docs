@@ -496,7 +496,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="17"><strong>2025 Q3</strong></td>
+      <td rowspan="18"><strong>2025 Q3</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -550,11 +550,7 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwrigth)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
          <td>Test Plans</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/secret-protection" data-raw-source="[Secret Protection and Code Security plans for Advanced Security](/azure/devops/release-notes/roadmap/2025/ghazdo/secret-protection)">Secret Protection and Code Security plans for Advanced Security </a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>        
+      </tr>    
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/audit-logging" data-raw-source="[Advanced Security events streamed to Azure DevOps audit log](/azure/devops/release-notes/roadmap/2025/ghazdo/audit-logging)">Advanced Security events streamed to Azure DevOps audit log</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
@@ -565,6 +561,14 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata" data-raw-source="[Adding additional metadata for dependency alerts to improve remediation](/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata)">Adding additional metadata for dependency alerts to improve remediation</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/security-overview-bulk" data-raw-source="[Security overview bulk enablement enhancements](/azure/devops/release-notes/roadmap/2025/ghazdo/security-overview-bulk)">Security overview bulk enablement enhancements</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/alert-dismissal" data-raw-source="[Alert dismissal information displayed in alert detail view](/azure/devops/release-notes/roadmap/2025/ghazdo/alert-dismissal)">Alert dismissal information displayed in alert detail view</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <td rowspan="1"><strong>2025 Q4</strong></td>      
