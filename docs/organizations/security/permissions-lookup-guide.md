@@ -326,7 +326,7 @@ Values in parenthesis indicate what level the permission is managed:
    :::column-end:::
 :::row-end:::
 
-## Related articles
+## Related content
 
 - Grant or restrict permissions to select tasks using [Grant or restrict permissions to select tasks](restrict-access.md).
 - Get started with permissions, access, and security groups by following [Get started with permissions, access, and security groups](about-permissions.md).

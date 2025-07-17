@@ -52,7 +52,7 @@ This setting affects the backlog and board views for all team members, ensuring 
 
    Your customized backlog and board view reflect the selected backlog levels.
 
-## Related articles
+## Related content
 
 - [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md)
 - [Understand backlogs, boards, and plans](../../boards/backlogs/backlogs-boards-plans.md)

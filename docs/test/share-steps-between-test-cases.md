@@ -83,7 +83,7 @@ When you [run a test](run-manual-tests.md), you can either mark the whole shared
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Test objects and terms](test-objects-overview.md)
 - [Create a test case](create-test-cases.md)

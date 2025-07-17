@@ -49,7 +49,7 @@ You can unfollow a wiki page in the following ways:
 > [!NOTE]
 > When a user deletes a page, all followers get removed.
 
-## Related articles
+## Related content
 
 - [Create a wiki for your team project](wiki-create-repo.md)
 - [Learn about wiki Git repository files and file structure](wiki-file-structure.md)

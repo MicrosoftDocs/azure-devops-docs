@@ -215,6 +215,6 @@ Work items you add from the widget are automatically scoped to your team's defau
 
 The [Backlog Priority](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of PBIs, bugs, features, or epics. However, by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you've [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.  
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](../../includes/create-team-project-links.md)]  

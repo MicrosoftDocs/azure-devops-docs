@@ -221,7 +221,7 @@ For more information, see [Change a project's process](manage-process.md#migrate
 
 <a id="process-rest-api">  </a>
 
-## Related articles
+## Related content
 
 - [Use the REST API to manage processes](/rest/api/azure/devops/processes/processes/list)
 - [Create an inherited process and change the project to use that process](manage-process.md). 

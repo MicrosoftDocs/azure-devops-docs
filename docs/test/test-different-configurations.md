@@ -205,7 +205,7 @@ If you have a test case that appears in several test suites, you can set the dif
 The same test case can have different configuration settings in different test suites and test plans.
 ::: moniker-end
 
-## Related articles
+## Related content
 
 * [Overview of manual and exploratory testing](index.yml)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)

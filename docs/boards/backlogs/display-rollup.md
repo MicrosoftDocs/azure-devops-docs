@@ -209,7 +209,7 @@ Change the column order, column size, or sort options using the following action
 - **Change column order:** Select the field and drag it to a new location.
 - **Resize a column:** Select the column divider to the right of the field and drag it to adjust the size.
 
-## Related articles
+## Related content
 
 - [Change column options](set-column-options.md)
 - [Access the work item field index](../work-items/guidance/work-item-field.md)

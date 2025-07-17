@@ -277,7 +277,7 @@ A: Work items get deleted within 24 hours after your project is deleted.
 
 A: Wait 28 days before the project is permanently deleted.
 
-## Related articles
+## Related content
 
 - [Create a project](create-project.md)
 - [Restore a project](delete-project.md#restore-a-deleted-project)

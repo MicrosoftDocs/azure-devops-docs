@@ -231,7 +231,7 @@ You can create a .pem file using OpenSSL:
 openssl pkcs12 -in file.pfx -out file.pem -nodes -secret pass:<secret_here>
 ```
 
-## Related articles
+## Related content
 
 - [Manage service connections](../pipelines/library/service-endpoints.md)
 - [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md)

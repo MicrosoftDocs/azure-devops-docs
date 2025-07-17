@@ -362,7 +362,7 @@ If your deployment is integrated with SQL Server Reports, you need to [Grant per
 > [Move work items from one team to another team](../../boards/work-items/move-work-items.md) or 
 > [Manage teams and configure team tools](manage-teams.md)
 
-## Related articles
+## Related content
 
 - [Rename or remove a team](rename-remove-team.md)
 - [Learn about teams and Agile tools](about-teams-and-settings.md)

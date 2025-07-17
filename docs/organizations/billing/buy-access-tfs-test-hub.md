@@ -77,7 +77,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 > [!div class="nextstepaction"]
 > [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 
-## Related articles
+## Related content
 
 - [Buy Basic access for users](buy-basic-access-add-users.md)
 - [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)

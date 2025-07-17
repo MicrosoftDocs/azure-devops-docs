@@ -460,7 +460,7 @@ You can assign these fields for a backlog item: user story, issue, product backl
 
 [!INCLUDE [discussion comments](../includes/discussion-tip-azure-devops.md)]
 
-## Related articles
+## Related content
 
 > [!div class="nextstepaction"]
 > [Customize your board](../configure-customize.md)

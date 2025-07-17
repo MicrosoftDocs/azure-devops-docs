@@ -72,7 +72,7 @@ Stakeholder access supports business owners. It also supports analysts and other
 
 ::: moniker-end
 
-## Related articles 
+## Related content 
 
 - [Get started as a stakeholder](../../organizations/security/get-started-stakeholder.md)  
 - [Add another team](../../organizations/settings/add-teams.md)  

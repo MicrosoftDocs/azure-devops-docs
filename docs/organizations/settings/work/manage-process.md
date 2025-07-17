@@ -186,7 +186,7 @@ Project Collection Administrators can [add projects](../../projects/create-proje
 > or
 > [Add and manage work item types](customize-process-work-item-type.md)
 
-## Related articles  
+## Related content  
 
 - [About process customization and inherited processes](inheritance-process-model.md)
 - [Customize a project using an inherited process](customize-process.md). 

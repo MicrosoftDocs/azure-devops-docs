@@ -98,6 +98,6 @@ After you verify your customizations, you can apply the inherited process to you
 
 [!INCLUDE [temp](../includes/post-upgrade-steps.md)]
 
-## Related articles
+## Related content
 
 - [About process customization and inherited processes](inheritance-process-model.md)  

@@ -54,7 +54,7 @@ For other settings, see [Set your preferences](../../organizations/settings/set-
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Set your preferences](../../organizations/settings/set-your-preferences.md)
 - [Manage personal notifications](./manage-your-personal-notifications.md)

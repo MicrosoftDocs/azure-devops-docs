@@ -89,6 +89,6 @@ Use the CMMI template and guidance as part of a process improvement program. Ada
 
 <a id="predefined-queries"></a>
 
-## Related articles 
+## Related content 
 
 [!INCLUDE [temp](../../includes/create-team-project-links.md)]

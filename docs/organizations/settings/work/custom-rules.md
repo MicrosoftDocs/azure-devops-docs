@@ -77,7 +77,7 @@ You delete or disable the rule from the actions menu of the rule.
 
 ![Delete or disable a rule](media/process/custom-rule-delete-disable-rule.png)  
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 

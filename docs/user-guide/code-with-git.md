@@ -202,7 +202,7 @@ This action completes the following tasks:
 > [!div class="nextstepaction"]
 > [Set up continuous integration & delivery](../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json)
 > 
-## Related articles
+## Related content
 
 - [Understand key concepts for new users to Azure Pipelines](../pipelines/get-started/key-pipelines-concepts.md)
 - [Discover what Azure Repos is](../repos/get-started/what-is-repos.md)

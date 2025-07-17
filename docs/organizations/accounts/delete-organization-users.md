@@ -106,7 +106,7 @@ To remove users from a project, remove them from the **Teams** groups they belon
 
 ![Screenshot showing removal of a user from a security group, new navigation.](media/delete-user/remove-user-vert.png)
 
-## Related articles
+## Related content
 
 - [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)  
 - [Request an increase in permission levels](../../organizations/security/request-changes-permissions.md)

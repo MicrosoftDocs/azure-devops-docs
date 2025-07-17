@@ -119,7 +119,7 @@ For example, the following query shows how to query across all projects for acti
 > [!div class="nextstepaction"]
 > [Add, update, and follow a work item](../backlogs/add-work-items.md) 
 
-## Related articles  
+## Related content  
 
 - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  
 - [View and update work items via the mobile work item form](../../project/navigation/mobile-work.md)  

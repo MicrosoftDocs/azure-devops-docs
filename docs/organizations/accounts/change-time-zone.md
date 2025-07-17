@@ -74,7 +74,7 @@ To change your user profile time zone, do the following steps:
 
 Your user profile time zone is updated.
 
-## Related articles
+## Related content
 
 - [Learn about time zone settings and usage](../settings/timezone-settings-usage.md)
 - [Set user preferences](../settings/set-your-preferences.md)

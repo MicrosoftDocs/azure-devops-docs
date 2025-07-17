@@ -104,7 +104,7 @@ Although you can access source code, work items, and builds from both clients, s
  
 [!INCLUDE [temp](../../repos/git/includes/note-new-git-tool.md)]
 
-## Related articles
+## Related content
 
 - [Manage projects](../../organizations/projects/about-projects.md) 
 - [Manage settings for projects and organizations](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects) 

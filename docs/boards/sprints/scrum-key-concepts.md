@@ -155,7 +155,7 @@ Along with the built-in Velocity chart, you can add a Velocity widget to your te
 
 Each team is associated with one and only one velocity chart. Velocity varies depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics. Learn more: [Add tasks to backlog items](add-tasks.md).
 
-## Related articles 
+## Related content 
 
 - [About Sprints and Scrum](scrum-overview.md) 
 - [Scrum best practices](best-practices-scrum.md).  

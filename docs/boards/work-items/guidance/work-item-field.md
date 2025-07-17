@@ -265,7 +265,7 @@ The following articles describe fields that are commonly used by several WITs or
 - [Review Meetings](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields)
 - [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) 
 
-## Related articles
+## Related content
 
 ::: moniker range=">= azure-devops-2022"  
 

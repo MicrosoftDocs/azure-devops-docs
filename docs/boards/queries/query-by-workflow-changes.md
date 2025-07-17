@@ -874,7 +874,7 @@ Then the Activated By and Activated Date fields are set to `READONLY`.
 
 [!INCLUDE [activated-resolved-by-fields](../includes/activated-resolved-by-fields.md)]
 
-## Related articles
+## Related content
 
 - [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md) 
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)

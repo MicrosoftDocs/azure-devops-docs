@@ -69,7 +69,7 @@ Add users to the following roles from the **Services** page. For information abo
 
 [!INCLUDE [temp](includes/service-endpoint-roles.md)]
 
-## Related articles
+## Related content
 
 - [Start managing permissions, access, and security groups](about-permissions.md)
 - [Reference permissions and groups](permissions.md)

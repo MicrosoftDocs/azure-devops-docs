@@ -148,7 +148,7 @@ Use the following sequences when you manage customizations using the Hosted XML 
 
 
 
-## Related articles
+## Related content
 - [Customize a Hosted XML process](./import-process/customize-process.md)  
 - [Import a process](./import-process/import-process.md)  
 - [Change a project from Hosted XML to Inheritance](change-process-from-hosted-to-inherited.md) 

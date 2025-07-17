@@ -78,7 +78,7 @@ After you migrate your wiki extension files to the Azure DevOps wiki, you're rea
 > [!div class="nextstepaction"]
 > [Uninstall the Wiki extension](../../marketplace/install-extension.md)
 
-## Related articles
+## Related content
   
 - [Wiki page title naming conventions](add-edit-wiki.md#page-title-names)  
 - [Clone and update wiki pages offline](wiki-update-offline.md)  

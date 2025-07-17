@@ -236,7 +236,7 @@ You can [create bugs from the web portal, Visual Studio, or when testing with Te
 [!INCLUDE [temp](../../includes/customize-work-tracking.md)] 
 
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](../../includes/create-team-project-links.md)]  
    

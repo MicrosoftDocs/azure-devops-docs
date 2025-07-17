@@ -197,7 +197,7 @@ If your name isn't listed in the capacity view, you need to be added as a team m
 > [!div class="nextstepaction"]
 > [4. Adjust work](adjust-work.md)
 
-## Related articles
+## Related content
 
 - [Configure and monitor sprint burndown](../../report/dashboards/configure-sprint-burndown.md)
 - [View and configure team velocity](../../report/dashboards/team-velocity.md)

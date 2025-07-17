@@ -78,7 +78,7 @@ Microsoft doesn't control or limit the locations from which you or your users ca
 > [!NOTE]
 > Because there's only one region in Brazil, customer data in Brazil is replicated to the South Central US region for disaster recovery and load balancing. For more information, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).
 
-## Related articles
+## Related content
 
 - [Get started with Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137)
 - [Data protection overview](data-protection.md)

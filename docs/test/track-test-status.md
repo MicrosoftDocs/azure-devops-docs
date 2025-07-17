@@ -231,7 +231,7 @@ You can [configure the dashboard widget](../report/dashboards/widget-catalog.md)
 > [!NOTE]
 > Be a team administrator to configure the dashboard widget, but team members with Stakeholder access can view the charts on the dashboard.
 
-## Related articles
+## Related content
 
 - [Progress report](progress-report.md) 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)

@@ -168,7 +168,7 @@ To delete a stream, make sure that you have the *Delete audit streams* permissio
 
 The system removes your stream. Any unsent events before the deletion don't get sent.
 
-## Related articles
+## Related content
 
 - [Review the audit log](azure-devops-auditing.md#review-audit-log)
 - [Export audit events](azure-devops-auditing.md#export-audit-events)

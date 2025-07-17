@@ -127,7 +127,7 @@ When you open the browser, it defaults to the **Assigned to me** page. From ther
 > 
 >:::image type="content" source="../media/mobile-azure-devops-hubs.png" alt-text="Screenshot showing Azure DevOps hubs accessible via mobile browser.":::
 
-## Related articles  
+## Related content  
 
 - [View blog post, The mobile work item form (preview)](https://devblogs.microsoft.com/devops/the-mobile-work-item-form/).
 - [Set personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  

@@ -379,7 +379,7 @@ You restrict access to work tracking objects in one of two ways:
 
 ---
 
-## Related articles
+## Related content
 
 - [Apply rules to workflow states (Inheritance process)](apply-rules-to-workflow-states.md)
 - [Rules and rule evaluation](rule-reference.md)

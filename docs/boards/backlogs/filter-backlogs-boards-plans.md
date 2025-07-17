@@ -751,7 +751,7 @@ For more information, see [Query work item history and discussion fields](../que
 
 ::: moniker-end
 
-## Related articles  
+## Related content  
 
 - [Create and manage you backlog](create-your-backlog.md)
 - [About backlogs](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items)

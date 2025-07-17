@@ -234,7 +234,7 @@ In the following example, we added the *Ticket* work item type that is tracked a
 > [!NOTE]    
 > You can't remove the default, inherited work item type from the Iteration backlog. However, you can disable the work item type and that effectively removes it from the user interface. 
 
-## Related articles
+## Related content
 
 - [Organize your backlog, work with portfolio backlogs](../../../boards/backlogs/organize-backlog.md)
 - [Add a custom work item type](add-custom-wit.md)  

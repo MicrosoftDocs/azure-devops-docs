@@ -172,7 +172,7 @@ The primary workaround is to maintain single ownership of work items by [definin
 > [!div class="nextstepaction"]
 > [Review team Delivery Plans](review-team-plans.md)
 
-## Related articles
+## Related content
 
 - [Create your backlog](../backlogs/create-your-backlog.md)  
 - [Create a board](../boards/kanban-quickstart.md)

@@ -95,6 +95,6 @@ From a **Project Settings>Work>Team configuration** page, you select a team from
 
 ::: moniker-end
 
-## Related articles
+## Related content
 - [Work across projects](work-across-projects.md)
 - [Add teams](../../organizations/settings/add-teams.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json)

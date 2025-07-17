@@ -218,7 +218,7 @@ For more information, see the following articles:
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
 
-## Related articles
+## Related content
 
 - [Query FAQs](query-faqs.yml)
 - [Query quick reference](query-index-quick-ref.md)

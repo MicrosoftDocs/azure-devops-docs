@@ -152,7 +152,7 @@ The [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=rea
 > [!div class="nextstepaction"]
 > [Expedite work using swimlanes](expedite-work.md)  
 
-## Related articles
+## Related content
 
 - [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)

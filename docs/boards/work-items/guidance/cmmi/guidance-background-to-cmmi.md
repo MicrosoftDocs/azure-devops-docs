@@ -114,7 +114,7 @@ Each process area is made up of required, expected, and informative components. 
   
 Only generic and specific goals are required. Everything else is provided as a guide. For  examples of expected and informative components, the CMMI literature pulled data from large space and defense-systems projects. These projects might not reflect the type of projects that are undertaken in your organization, nor may they reflect more recent trends in the industry, such as the emergence of [Agile software development](/devops/plan/what-is-agile-development) methods.  
 
-## Related articles
+## Related content
 
 - [CMMI process](../cmmi-process.md)
 - [Software Engineering Institute Releases Version 1.3 of CMMI Product Suite](https://www.sei.cmu.edu/news-events/news/article.cfm?assetid=509086)

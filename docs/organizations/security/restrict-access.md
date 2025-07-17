@@ -302,7 +302,7 @@ For examples that illustrate how to restrict modification of work items or selec
 > [!div class="nextstepaction"]
 > [Remove user accounts](/azure/active-directory/add-users-azure-active-directory#delete-a-user?toc=/azure/devops/organizations/security/toc.json)
 
-## Related articles
+## Related content
 
 - [View default permissions and access](permissions-access.md)
 - [Use the permission lookup guide](permissions-lookup-guide.md)

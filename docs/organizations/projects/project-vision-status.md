@@ -241,7 +241,7 @@ For projects that selected TFVC for version control, the README.md file needs to
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Project summary page with the README file displayed.](media/share-project/tfvc-project-summary-with-readme.png)
 
-## Related articles
+## Related content
 
 - [Learn about Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)

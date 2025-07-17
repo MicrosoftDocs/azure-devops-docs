@@ -661,7 +661,7 @@ If your on-premises deployment is integrated with SQL Server Reports, you must m
 > [!div class="nextstepaction"]
 > [Manage your project](../../user-guide/project-admin-tutorial.md) 
 
-## Related articles
+## Related content
 
 ::: moniker range="azure-devops"
 

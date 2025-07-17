@@ -244,7 +244,7 @@ For more information about limiting access, see [Set permissions and access for 
 - To have work done by several teams roll up into a portfolio backlog, [set up the team hierarchy](../../boards/plans/portfolio-management.md).
 - To add fields or work item types, see [Customize your work tracking experience](../../reference/customize-work.md).
 
-## Related articles 
+## Related content 
 
 - [Add another team](add-teams.md)  
 - [Configure team settings](manage-teams.md)      

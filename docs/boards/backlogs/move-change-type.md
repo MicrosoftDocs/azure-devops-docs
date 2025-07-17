@@ -138,7 +138,7 @@ When you realize that a work item is assigned to the wrong project within your o
 
    Comments are automatically added to the **Discussion** and an entry gets made to the **History**. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
-## Related articles   
+## Related content   
 
 - [Remove or delete work items](remove-delete-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  

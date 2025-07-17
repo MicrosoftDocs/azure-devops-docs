@@ -275,7 +275,7 @@ See [Look up your Azure DevOps platform and version](../../user-guide/lookup-pla
 > [!div class="nextstepaction"]
 > [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md).
 
-## Related articles
+## Related content
 
 - [Work in web portal](../../project/navigation/index.md)  
 - [Work in Team Explorer](../../user-guide/work-team-explorer.md) 

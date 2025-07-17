@@ -326,7 +326,7 @@ The following Marketplace extensions support integration between Azure DevOps an
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel): Opens a selected query in Excel.
 - [Office 365 Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-o365): Pushes notifications of configurable Azure DevOps events to an Office 365 Group.
 
-## Related articles
+## Related content
 
 - [Bulk modify work items (web portal)](../bulk-modify-work-items.md)
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)

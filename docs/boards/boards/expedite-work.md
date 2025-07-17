@@ -193,7 +193,7 @@ You can track which work items get added to a board swimlane by creating a query
 > [!div class="nextstepaction"] 
 > [Customize cards](../../boards/boards/customize-cards.md)  
 
-## Related articles
+## Related content
 
 * [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
 * [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)

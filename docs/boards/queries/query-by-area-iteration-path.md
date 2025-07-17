@@ -119,7 +119,7 @@ The following fields don't appear on work item forms but are tracked for each wo
 
 The default reportable type is none. Area ID and Iteration ID are indexed, Node Name isn't. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
-## Related articles 
+## Related content 
 
 - [Query quick reference](query-index-quick-ref.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
