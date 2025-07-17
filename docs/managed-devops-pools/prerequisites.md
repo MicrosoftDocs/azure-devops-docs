@@ -32,7 +32,7 @@ To create and and manage Managed DevOps Pools, you must have one of the followin
 
 | Role | Description |
 |------|-------------|
-| [DevOps Infrastructure Contributor Role](/azure/role-based-access-control/built-in-roles/devops#devops-infrastructure-contributor-role) | This role allows you to create and manage Managed DevOps Pools in the designated [scope](/azure/role-based-access-control/role-assignments-steps#step-3-identify-the-needed-scope), but not other Azure DevOps resources. |
+| [DevOps Infrastructure Contributor](/azure/role-based-access-control/built-in-roles/devops#devops-infrastructure-contributor) | This role allows you to create and manage Managed DevOps Pools in the designated [scope](/azure/role-based-access-control/role-assignments-steps#step-3-identify-the-needed-scope), but not other Azure DevOps resources. |
 | [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) | This role allows you to create and manage Managed DevOps Pools, as well as other Azure resources. |
 | [Owner](/azure/role-based-access-control/built-in-roles/privileged#owner) | This role allows you to create and manage Managed DevOps Pools, as well as other Azure resources, including the ability to assign roles. |
 
