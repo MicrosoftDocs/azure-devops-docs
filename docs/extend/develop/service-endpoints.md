@@ -64,7 +64,7 @@ In this article, the manifest file creation is separated into the following thre
     - [task.json components](#taskjson-components)
   - [Authentication](#authentication)
   - [Next steps](#next-steps)
-  - [Related articles](#related-articles)
+  - [Related content](#related-content)
 
 ### Create basic manifest file
 
