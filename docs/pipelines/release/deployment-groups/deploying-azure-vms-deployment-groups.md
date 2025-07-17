@@ -1,65 +1,47 @@
 ---
-title: Deploying to Azure VMs using deployment groups in Azure Pipelines
-description: DevOps CI CD - Deploy to Azure VMs using deployment groups in Azure Pipelines
+title: Deploy web apps to Azure VMs using deployment groups
+description: Learn how to deploy web apps to Azure VMs using deployment groups in Azure Pipelines.
 ms.topic: tutorial
-ms.date: 05/26/2020
+ms.date: 07/17/2025
 monikerRange: '<= azure-devops'
 ms.custom: sfi-image-nochange
 ---
 
-# Deploy to Azure VMs using deployment groups in Azure Pipelines
+# Deploy web apps to Azure VMs using deployment
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
+In earlier versions of Azure Pipelines, deploying applications to multiple servers required significant planning and maintenance. Windows PowerShell remoting had to be enabled manually, specific ports needed to be opened, and deployment agents had to be installed on each server. Managing roll-out deployments also required manual intervention. These challenges have been greatly simplified with the introduction of  [Deployment Groups](/vsts/build-release/concepts/definitions/release/deployment-groups/).
 
-
-In earlier versions of Azure Pipelines, applications that needed to be deployed to multiple servers required a significant amount of planning and maintenance. Windows PowerShell remoting had to be enabled manually, required ports opened, and deployment agents installed on each of the servers. The pipelines then had to be managed manually if a roll-out deployment was required.
-
-All the above challenges have been evolved seamlessly with the introduction of the [Deployment Groups](/vsts/build-release/concepts/definitions/release/deployment-groups/).
-
-A deployment group installs a deployment agent on each of the target servers in the configured group and instructs the release pipeline to gradually deploy the application to those servers. Multiple pipelines can be created for the roll-out deployments so that the latest version of an application can be delivered in a phased manner to multiple user groups for validation of newly introduced features.
+A deployment group installs a deployment agent on each target server in the group and enables the release pipeline to gradually deploy the application across those servers. You can create multiple pipelines for roll-out deployments, allowing phased delivery of application updates to different user groups.
 
 > [!NOTE]
-> Deployment groups are a concept used in Classic pipelines. If you are using YAML pipelines, see [Environments](../../process/environments.md).
-
-In this tutorial, you learn about:
-
-> [!div class="checklist"]
-> * Provisioning VM infrastructure to Azure using a template
-> * Creating an Azure Pipelines deployment group
-> * Creating and running a CI/CD pipeline to deploy the solution with a deployment group 
+> Deployment groups are used in Classic pipelines. If you are using YAML pipelines, see [Environments](../../process/environments.md).
 
 ## Prerequisites
 
-- A Microsoft Azure account.
-- An Azure DevOps organization.
+| **Product**        | **Requirements**  |
+|--------------------|-------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md). |
+| **Azure**   | - An [Azure subscription](https://azure.microsoft.com/free/). |
 
-Use the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77368&Name=deploymentgroups) to provision the tutorial project on your Azure DevOps organization.
+## Set up resources in Azure
 
-## Setting up the Azure deployment environment
-
-The following resources are provisioned on the Azure using an ARM template:
+In this section, you'll create the following resources in Azure using the provided ARM template:
 
 - Six Virtual Machines (VM) web servers with IIS configured
 - SQL server VM (DB server)
 - Azure Network Load Balancer
 
-1. Click the **Deploy to Azure** link below to initiate resource provisioning. Provide all the necessary information and select **Purchase**. You may use any combination of allowed administrative usernames and passwords as they are not used again in this tutorial. The **Env Prefix Name** is prefixed to all of the resource names in order to ensure that those resources are generated with globally unique names. Try to use something personal or random, but if you see a naming conflict error during validation or creation, try changing this parameter and running again.
+1. Open this link: [Deploy to Azure](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json) to start provisioning your resources. 
 
-    [Deploy to Azure](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
+1. Fill in the required information and select **Purchase**. You can use any allowed combination of administrative usernames and passwords, as they won’t be used again in this tutorial. The **Env Prefix Name** is added to all resource names to ensure global uniqueness. Use something personal or random. If you encounter a naming conflict during validation or creation, try changing this value and redeploying. Provisioning typically takes 10–15 minutes.
 
-    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deploy-azure.png" alt-text="Screenshot showing how to set up your Azure deployment environment.":::
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/provision-resources-arm-azure.png" alt-text="Screenshot showing how to set up your Azure resources in Azure.":::
 
-    > [!NOTE]
-    > It takes approximately 10-15 minutes to complete the deployment. If you receive any naming conflict errors, try changing the parameter you provide for **Env Prefix Name**.
+1. Once deployment completes, review the generated resources in your resource group in the Azure portal. Select the DB server VM with **sqlSrv** in its name to view its details.
 
-1. Once the deployment completes, you can review all of the resources generated in the specified resource group using the Azure portal. Select the DB server VM with **sqlSrv** in its name to view its details.
-
-    ![Resource group deploy to Azure.](media/deploying-azure-vms-deployment-groups/resource-group.png)
-
-1. Make a note of the **DNS name**. This value is required in a later step. You can use the copy button to copy it to the clipboard.
-
-    ![SQL DNS deploy to Azure.](media/deploying-azure-vms-deployment-groups/sql-dns.png)
+1. Copy the **DNS name** as you’ll need it in a later step.
 
 ## Creating and configuring a deployment group
 
