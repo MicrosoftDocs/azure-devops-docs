@@ -505,9 +505,11 @@ Below, you will find several investments that we plan to deliver as part of this
          </td>
          <td>General</td>      
       </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata" data-raw-source="[Adding additional metadata for dependency alerts to improve remediation](/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata)">Adding additional metadata for dependency alerts to improve remediation</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
+      <tr> 
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado)">MCP Server for Azure DevOps (GA)
+         </td>
+         <td>General</td>
       </tr>
       <tr>          
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
@@ -549,12 +551,6 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwrigth)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
          <td>Test Plans</td>
       </tr>
-      <tr> 
-         <td>
-            <a href="/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado)">MCP Server for Azure DevOps (GA)
-         </td>
-         <td>General</td>
-      </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/secret-protection" data-raw-source="[Secret Protection and Code Security plans for Advanced Security](/azure/devops/release-notes/roadmap/2025/ghazdo/secret-protection)">Secret Protection and Code Security plans for Advanced Security </a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
@@ -565,6 +561,10 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking" data-raw-source="[Link Boards items to Advanced Security Alerts](/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking)">Link Boards items to Advanced Security Alerts</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata" data-raw-source="[Adding additional metadata for dependency alerts to improve remediation](/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata)">Adding additional metadata for dependency alerts to improve remediation</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <td rowspan="1"><strong>2025 Q4</strong></td>      
