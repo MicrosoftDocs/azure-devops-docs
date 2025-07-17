@@ -141,6 +141,11 @@ The following example shows the `networkProfile` section of the **fabric-profile
 
 * * *
 
+> [!IMPORTANT]
+> Don't put a **Delete** lock on the virtual network when updating your pools. During a pool update operation, Managed DevOps Pools creates a [Service Association Link (SAL)](/rest/api/virtualnetwork/service-association-links/list) on the subnet. If an update fails, Managed DevOps Pools attempts to clean the SAL, but if there is a **Delete** lock, Managed DevOps Pools won't be able to delete the SAL, and the subnet will be in a locked state (undeletable).
+>
+> For more information, see [Lock your Azure resources to protect your infrastructure - Considerations before applying your locks](/azure/azure-resource-manager/management/lock-resources#considerations-before-applying-your-locks).
+
 ## Restricting outbound connectivity
 
 If you have systems in place on your network (NSG, Firewall, etc.) that restrict outbound connectivity, certain endpoints need to be allowlisted in order to fully support Managed DevOps pools. These endpoints are divided into globally required endpoints (necessary on any Managed DevOps pools machine) and endpoints required for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
