@@ -27,7 +27,7 @@ Parameters are available only during template parsing. They expand before the pi
 
 Parameters must contain a name and data type. Parameters can't be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. If you don't assign a default value or set `default` to `false`, the first available value is used. 
 
-Use [templateContext](template-parameters.md#use-templatecontext-to-pass-properties-to-templates) to pass additional properties to stages, steps, and jobs used as parameters in a template. 
+Use [templateContext](template-parameters.md#use-templatecontext-to-pass-properties-to-templates) to pass more properties to stages, steps, and jobs used as parameters in a template. 
 
 ## What is the difference between parameters and variables? 
 
@@ -35,7 +35,7 @@ The following table highlights the key differences between parameters and variab
 
 | Feature              | Parameters         |  Variables         |
 |----------------------|----------------------------|-----------------------------|
-| **Evaluation Time**  | Template parsing (queue)   | Macro (`$(var)`) variables at runtime before a task runs. Runtime expression (`$[variables.var]`) at runtime when the value is needed |
+| **Evaluation Time**  | Template parsing (queue)   | Macro (`$(var)`) variables evaluate at runtime before a task runs. Runtime expressions (`$[variables.var]`) evaluate at runtime when the value is needed |
 | **Mutability**       | Immutable after queue      | User-defined, environment, and output variables can be updated dynamically during pipeline execution |
 | **UI exposure during run**  | Shown in Run Pipeline UI and can be set before a run | Exposed during run if set in Pipeline UI as overridable |
 | **Secret values**      | No support for secret values | Can be marked as secrets |
