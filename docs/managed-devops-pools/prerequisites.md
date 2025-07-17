@@ -28,7 +28,7 @@ This article shows you how to configure your Azure subscription and Azure DevOps
 
 ### Verify Azure permissions
 
-To create and and manage Managed DevOps Pools, you must have one of the following roles assigned to your account in the Azure subscription where you want to create the Managed DevOps Pools. The following roles are listed in order of least privileged to most privileged. The **DevOps Infrastructure Contributor Role** is the least privileged role that allows you to create and manage Managed DevOps Pools.
+To create and and manage Managed DevOps Pools, you must have one of the following roles assigned to your account in the Azure subscription where you want to create the Managed DevOps Pools. The following roles are listed in order of least privileged to most privileged. The **DevOps Infrastructure Contributor** is the least privileged role that allows you to create and manage Managed DevOps Pools.
 
 | Role | Description |
 |------|-------------|
