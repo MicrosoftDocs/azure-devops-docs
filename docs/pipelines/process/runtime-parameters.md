@@ -33,12 +33,12 @@ Use [templateContext](template-parameters.md#use-templatecontext-to-pass-propert
 
 The following table highlights the key differences between parameters and variables in Azure Pipelines.
 
-| Feature              | Parameters         |  Variables         |
+| Feature              | Parameters         |  [Variables](variables.md)         |
 |----------------------|----------------------------|-----------------------------|
 | **Evaluation Time**  | Template parsing (queue)   | Macro (`$(var)`) variables evaluate at runtime before a task runs. Runtime expressions (`$[variables.var]`) evaluate at runtime when the value is needed |
 | **Mutability**       | Immutable after queue      | User-defined, environment, and output variables can be updated dynamically during pipeline execution |
 | **UI exposure during run**  | Shown in Run Pipeline UI and can be set before a run | Exposed during run if set in Pipeline UI as overridable |
-| **Secret values**      | No support for secret values | Can be marked as secrets |
+| **Secret values**      | No support for secret values | Can be [set as secrets](set-secret-variables.md) |
 
 
 ## Use parameters in pipelines
