@@ -263,7 +263,7 @@ You might be signed into Azure DevOps with an incorrect identity. Do the followi
 - [Custom backlogs and boards](../settings/work/customize-process-backlogs-boards.md)
 - [Custom controls](../settings/work/custom-controls-process.md)
 
-## Related articles
+## Related content
 
 - [Manage permissions with the command line tool](manage-tokens-namespaces.md)
 - [Change individual or group permissions](/azure/devops/organizations/security/request-changes-permissions)

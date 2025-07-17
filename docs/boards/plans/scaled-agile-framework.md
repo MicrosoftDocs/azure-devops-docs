@@ -350,7 +350,7 @@ Each of the following articles within this suite of tutorials provide details on
 > [How SAFe&reg; concepts map to Azure Boards artifacts](safe-concepts.md)
 
 
-## Related articles
+## Related content
 
 - [Scale Agile to Large Teams](/devops/plan/scaling-agile)
 - [Agile culture](agile-culture.md)

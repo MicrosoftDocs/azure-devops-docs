@@ -87,7 +87,7 @@ Getting added to a new security group can alter your inherited permissions.
 
 :::image type="content" source="media/troubleshoot-permissions/re-evaluate-permissions-button.png" alt-text="Reevaluate permissions control":::
 
-## Related articles
+## Related content
 
 - [Permissions lookup guide](permissions-lookup-guide.md)
 - [Default permissions and access](permissions-access.md) 

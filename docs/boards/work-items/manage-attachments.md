@@ -201,7 +201,7 @@ The attachment is permanently deleted and isn't accessible from any other links.
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Learn about work items and work item types](about-work-items.md)
 - [Manage work items](../backlogs/manage-work-items.md)

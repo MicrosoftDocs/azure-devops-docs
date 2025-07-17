@@ -270,7 +270,7 @@ From any query, you can export a list of work items as a comma-delimited list. O
 
 You may find other ways to share information by exporting work items to other applications such as Microsoft Word. For more information, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
 
-## Related articles  
+## Related content  
 
 ::: moniker range="azure-devops"
 

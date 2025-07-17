@@ -224,7 +224,7 @@ If you receive the error **Configuration failed. Please make sure that the organ
 
 If these steps don't resolve your authentication issue, reach out to the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-## Related articles
+## Related content
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 

@@ -60,7 +60,7 @@ To create a feedback query, do the following steps.
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [What is Azure Test Plans?](overview.md)
 - [Request feedback using the Test & Feedback extension](request-stakeholder-feedback.md)

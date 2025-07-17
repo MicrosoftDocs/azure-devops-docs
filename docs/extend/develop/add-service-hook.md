@@ -164,7 +164,7 @@ Actions for your consumer have the following properties:
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)
 
-## Related articles
+## Related content
 
 - [Service hook consumers](../../service-hooks/consumers.md)
 - [Available services for service hooks](../../service-hooks/overview.md#available-services)

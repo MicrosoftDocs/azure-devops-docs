@@ -242,7 +242,7 @@ Or, if your project uses an On-premises XML process, you can [increase the maxim
 > [!div class="nextstepaction"]
 > [End of sprint activities](end-sprint-activities.md) 
 
-## Related articles
+## Related content
 
 - Assign backlog items to a sprint using [Assign backlog items to a sprint](assign-work-sprint.md)
 - Interactively filter backlogs, boards, queries, and plans with [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)

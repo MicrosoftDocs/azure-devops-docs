@@ -78,7 +78,7 @@ If you [add any new custom domains](/azure/active-directory/fundamentals/add-cus
 
 [!INCLUDE [inform-users-microsoft-entra-change](includes/inform-users-microsoft-entra-change.md)]
 
-## Related articles
+## Related content
 
 - [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
 - [Rename a project](../projects/rename-project.md)

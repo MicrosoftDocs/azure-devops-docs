@@ -909,7 +909,7 @@ WHERE
     )
 ```
 
-## Related articles 
+## Related content 
 
 - [Query fields, operators, values, and variables](query-operators-variables.md)  
 - [Work item fields and attributes](../work-items/work-item-fields.md) 

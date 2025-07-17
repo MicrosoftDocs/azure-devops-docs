@@ -192,7 +192,7 @@ In each iteration, address errors and conduct validation checks to resolve them,
 > [!div class="nextstepaction"]
 > [Prepare for test run](migration-prepare-test-run.md) 
 
-## Related articles 
+## Related content 
 
 - [`witadmin`: Customize and manage objects for tracking work](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Configure features after Azure DevOps Server upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)

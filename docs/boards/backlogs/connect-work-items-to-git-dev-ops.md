@@ -183,7 +183,7 @@ The link types you can add within the development section are Branch, Build, Cha
 
 ![Screenshot shows Artifact-to-artifact link types.](../queries/media/link-tracking-artifact-to-artifact-link-types.png)
 
-## Related articles
+## Related content
 
 - [Learn about Azure DevOps cross-service](../../cross-service/cross-service-overview.md)
 - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)

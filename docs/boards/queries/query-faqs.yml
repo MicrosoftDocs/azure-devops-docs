@@ -198,7 +198,7 @@ sections:
           - [Define a chart for a query](../../report/dashboards/charts.md) and add it to a dashboard, or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard. Each time you open the dashboard, the query automatically runs and refreshes.   
 
 additionalContent: |
-  ## Related articles
+  ## Related content
   -  [Azure Boards FAQs](../faqs.yml) 
   -  [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
   -  [Excel FAQs](../backlogs/office/faqs.yml)

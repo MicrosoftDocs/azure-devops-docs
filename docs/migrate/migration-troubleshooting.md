@@ -498,7 +498,7 @@ A: If your migration was queued but failed and you didn't receive an email notif
 - **Contact Customer Support**: If the error is complex or you can't resolve the issue using the logs and troubleshooting steps, consider [filing a customer support case](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS) for further assistance.
 - **Rollback and retry**: If necessary, roll back your Azure DevOps Server instance and reattach the collection before attempting the migration again.
  
-## Related articles
+## Related content
 
 - [Complete post migration tasks](migration-post-import.md)
 - [Delete a project](../organizations/projects/delete-project.md)

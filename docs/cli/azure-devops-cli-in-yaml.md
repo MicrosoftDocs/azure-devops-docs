@@ -477,7 +477,7 @@ steps:
 
 For more examples of working with variables, including working with variables across jobs and stages, see [Define variables](../pipelines/process/variables.md). For examples of the query syntax used in the previous example, see [How to query Azure CLI command output using a JMESPath query](/cli/azure/query-azure-cli).
 
-## Related articles
+## Related content
 
 - [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken)
 - [Access repositories, artifacts, and other resources](../pipelines/process/access-tokens.md)

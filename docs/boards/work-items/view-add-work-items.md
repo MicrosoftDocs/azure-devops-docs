@@ -320,7 +320,7 @@ Use the following three controls to manage your views in the web portal.
 > [!div class="nextstepaction"]
 > [Manage work items](../backlogs/manage-work-items.md)
 
-## Related articles
+## Related content
 
 - [Azure Boards FAQs](../faqs.yml)   
 - [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md)

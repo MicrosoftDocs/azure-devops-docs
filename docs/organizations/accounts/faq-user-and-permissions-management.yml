@@ -425,7 +425,7 @@ sections:
 
 additionalContent: |
 
-  ## Related articles
+  ## Related content
   
   - [Access with Microsoft Entra ID FAQ](faq-azure-access.yml)
   - [Configure and customize organization FAQ](faq-configure-customize-organization.yml)

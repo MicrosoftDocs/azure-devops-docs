@@ -158,7 +158,7 @@ Now that you've defined your sprint plan, your team's ready to begin work on the
 > [!div class="nextstepaction"]
 > [2. Add tasks](add-tasks.md)
 
-## Related articles
+## Related content
 
 To add or rename the sprints your team uses, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).  
 

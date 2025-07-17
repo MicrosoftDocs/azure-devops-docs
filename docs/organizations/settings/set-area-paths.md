@@ -484,7 +484,7 @@ You can quickly generate [queries](../../boards/queries/using-queries.md) to vie
 > [!div class="nextstepaction"]
 > [Set iteration paths or sprints](set-iteration-paths-sprints.md)
 
-## Related articles
+## Related content
 
 As you can see, area paths play a major role in supporting Agile tools, teams, and managing work items. Learn more about working with these fields from the following articles:
 

@@ -117,7 +117,7 @@ However, these objects aren't connected to each other through link types. For de
 	
    ![Screenshot shows Delete shared steps from form.](media/delete-test-shared-steps-remove-link.png)  
 
-## Related articles   
+## Related content   
 
 - [Create a test plan](../../test/create-a-test-plan.md)
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 

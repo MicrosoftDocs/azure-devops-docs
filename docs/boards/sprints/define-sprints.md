@@ -98,6 +98,6 @@ For example, by selecting Sprints 1 through 6, the Fabrikam Fiber team gets acce
 > [!div class="nextstepaction"]
 > [Assign work to a sprint](assign-work-sprint.md) or [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 
-## Related articles 
+## Related content 
 
 If you work with several teams, and each team wants their own backlog view, you can [create more teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items. These items only include those assigned values under the team's default area path and iteration path.

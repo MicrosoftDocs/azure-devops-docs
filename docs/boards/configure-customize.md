@@ -511,7 +511,7 @@ For more information on configuring backlogs and boards, see [Manage and configu
 > [!div class="nextstepaction"]
 > [Get started as an administrator](../user-guide/project-admin-tutorial.md)
 
-## Related articles
+## Related content
 
 - [Configuration and Customization FAQs](../organizations/settings/work/faqs.yml)
 - [Set up your backlog](backlogs/create-your-backlog.md)  

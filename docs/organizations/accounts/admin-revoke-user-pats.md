@@ -74,7 +74,7 @@ A: Once a user gets removed from Microsoft Entra ID, the PATs and FedAuth tokens
 
 A: If you have JWTs that you believe should be revoked, we recommend doing so promptly. Revoke JWTs issued as part of the OAuth flow using the [PowerShell script](https://github.com/Microsoft/vsts-script-samples/tree/master/PowerShell/TokenAdmin). Be sure to use the date range option in the script.
 
-## Related articles
+## Related content
 
 - [Learn how Microsoft protects your projects and data in Azure DevOps](../../organizations/security/data-protection.md)
 - [Use personal access tokens to authenticate](use-personal-access-tokens-to-authenticate.md)

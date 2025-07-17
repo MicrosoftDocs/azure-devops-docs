@@ -158,6 +158,6 @@ A workflow is an integral aspect of a work item. It's defined by its correspondi
 
  The workflow also specifies the values that appear in the State and Reason drop-down menus. For more information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md).  
 
-## Related articles 
+## Related content 
 
 - [Scrum best practices](../sprints/best-practices-scrum.md)

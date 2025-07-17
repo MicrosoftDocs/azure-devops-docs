@@ -204,7 +204,7 @@ Unparenting a work item removes its association with a parent backlog item or us
 > [!div class="nextstepaction"]
 > [3. Set sprint capacity](set-capacity.md)
 
-## Related articles
+## Related content
 
 - [Assign backlog items to a sprint](assign-work-sprint.md)  
 - [Create and manage your backlog](../backlogs/create-your-backlog.md)  

@@ -174,7 +174,7 @@ There are best practices to help you effectively manage work items for developme
 > [Create your backlog](create-your-backlog.md) or 
 > [Kanban board quickstart](../boards/kanban-quickstart.md) 
 
-## Related articles
+## Related content
 
 - [View the work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json)
 - [Explore work item form controls](../work-items/about-work-items.md#work-item-form-controls)

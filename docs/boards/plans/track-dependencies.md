@@ -81,7 +81,7 @@ When a dependency links to a work item in another project, the project informati
 
 :::image type="content" source="media/dependencies/dependencies-cross-project.png" alt-text="Dependencies dialog for a work item with dependencies-cross-project.":::
 
-## Related articles  
+## Related content  
 
 - [Add or edit a Delivery Plan](add-edit-delivery-plan.md)
 - [Review team Delivery Plans](review-team-plans.md)

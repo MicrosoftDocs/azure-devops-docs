@@ -92,7 +92,7 @@ To approve extensions, have [**edit collection-level information** permissions](
 
 Tell your team about your installed extensions, so they can start using their capabilities.
 
-## Related articles
+## Related content
 
 - [Review FAQs](faq-extensions.yml)
 - [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing)

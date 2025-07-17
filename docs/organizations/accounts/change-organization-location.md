@@ -53,7 +53,7 @@ To change your organization geography, use [Azure DevOps Virtual Support Agent](
 
 We can't provide a specific time frame for your organization's relocation due to potential delays from various factors and the automated nature of the migration process. The process might get rescheduled to take place over the weekend to ensure all necessary changes are successfully completed.
 
-## Related articles
+## Related content
 
 - [Explore worldwide data regions for Azure DevOps](../security/data-location.md)
 - [View data locations for Azure DevOps](../security/data-location.md)

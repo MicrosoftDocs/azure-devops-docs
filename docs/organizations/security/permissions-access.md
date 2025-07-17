@@ -235,7 +235,7 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Add users to a project or team](../../organizations/security/add-users-team-project.md)  
 - [Permissions and groups reference](permissions.md)  

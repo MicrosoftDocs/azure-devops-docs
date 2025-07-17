@@ -59,7 +59,7 @@ For example, here we turn on filtering for the dashboard directory.
 > [!div class="mx-imgBorder"]  
 > ![Screenshot shows highlighted Filter icon in the dashboard directory.](../../report/dashboards/media/dashboards/filter-directory.png)   
 
-## Related articles  
+## Related content  
 - [Commit history](../../repos/git/commit-history.md)
 - [Working with Git tags](../../repos/git/git-tags.md)
 - [Filter backlogs and queries](../../boards/backlogs/filter-backlogs-boards-plans.md)

@@ -280,7 +280,7 @@ sections:
           For more information, see [Troubleshoot Office integration issues](tfs-office-integration-issues.md#resolve-data-conflicts).
 
 additionalContent: | 
-  ## Related articles
+  ## Related content
   - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
   - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
   - [Query FAQs](../../queries/query-faqs.yml)

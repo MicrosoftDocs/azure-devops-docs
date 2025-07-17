@@ -156,7 +156,7 @@ To add the **Tags** field as a column field for the product backlog, you modify 
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Use the query editor to list and manage queries](using-queries.md) 
 - [Show tags on cards](../../boards/boards/customize-cards.md)

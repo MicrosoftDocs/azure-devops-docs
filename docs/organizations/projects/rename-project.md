@@ -108,7 +108,7 @@ If you use OData feeds in Power BI, update the feed URL to use the new project n
 
 If you created custom Analytics views using the old project name, you need to update the views with the new name. For more information, see [Analytics views](../../report/powerbi/analytics-views-manage.md#edit-an-existing-view).
 
-## Related articles
+## Related content
 
 - [Delete a project](delete-project.md)
 - [Git and Azure Repos](../../repos/git/index.yml)

@@ -64,7 +64,7 @@ In this article, the manifest file creation is separated into the following thre
     - [task.json components](#taskjson-components)
   - [Authentication](#authentication)
   - [Next steps](#next-steps)
-  - [Related articles](#related-articles)
+  - [Related content](#related-content)
 
 ### Create basic manifest file
 
@@ -307,7 +307,7 @@ The authentication scheme in a service endpoint determines the credentials that 
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)
 
-## Related articles
+## Related content
 
 - [Test and debug extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
 - [Develop a web extension](../get-started/node.md)

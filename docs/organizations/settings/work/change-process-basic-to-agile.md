@@ -156,7 +156,7 @@ You can customize boards to display intermediate columns. For each column added,
 
     :::image type="content" source="media/change-process/board-user-story.png" alt-text="Screenshot of board columns.":::
 
-## Related articles
+## Related content
 
 - [Modify work items in bulk](../../../boards/backlogs/bulk-modify-work-items.md)
 - [Create an inherited process](./manage-process.md#create-an-inherited-process)

@@ -263,7 +263,7 @@ file to pass values as parameters to your test code. For example, in a release t
      Test** task. Version 1 of the task, and the **Run Functional Tests** task,
      aren't supported.<p /> 
 
-## Related articles
+## Related content
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate automated test results with requirements](../pipelines/test/requirements-traceability.md)

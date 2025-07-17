@@ -101,7 +101,7 @@ The following steps show how to use the developer tools in Google Chrome. For mo
 
 You have a complete HAR file with the necessary data for troubleshooting.
 
-## Related articles
+## Related content
 
 - [Access Azure DevOps troubleshooting documentation](/troubleshoot/azure/devops/welcome-azure-devops)
 - [Get support and provide feedback](provide-feedback.md)

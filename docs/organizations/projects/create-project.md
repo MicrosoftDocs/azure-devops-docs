@@ -324,7 +324,7 @@ You can add Git (distributed) or TFVC (centralized) repositories to your project
 > [!div class="nextstepaction"]
 > [Structure your project](about-projects.md#structure-your-project)
 
-## Related articles
+## Related content
 
 - [Rename a project](rename-project.md)
 - [Delete a project](delete-project.md)

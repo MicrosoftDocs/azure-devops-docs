@@ -205,7 +205,7 @@ Select the `Sign in` button and you get redirected to a consent page like the on
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 
-## Related articles
+## Related content
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Use Azure Pipelines with Slack](../../pipelines/integrations/slack.md)

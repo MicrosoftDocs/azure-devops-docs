@@ -136,7 +136,7 @@ When migrating into Azure DevOps Services, keep in mind the following key princi
 > [!div class="nextstepaction"]
 > [Get started with the Azure DevOps Data Migration Tool](migration-get-started.md)
 
-## Related articles
+## Related content
 
 - [Complete prerequisites for migration](migration-prerequisites.md)
 - [Validate and prepare for migration](migration-validate.md)

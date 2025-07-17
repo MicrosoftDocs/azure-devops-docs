@@ -435,7 +435,7 @@ ExecuteUnrestrictedQuery  8      Execute query without any restrictions on the q
 
 See [Security namespace and permission reference for Azure DevOps](namespace-reference.md). 
  
-## Related articles
+## Related content
 
 - [Security namespace and permission reference](namespace-reference.md)
 - [Security namespaces REST API](/rest/api/azure/devops/security/security%20namespaces)

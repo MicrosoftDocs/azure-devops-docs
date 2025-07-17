@@ -103,7 +103,7 @@ Based on the build or release pipeline, you can choose the timeline or pipeline 
 
 For more information about Test Analytics for builds and releases, tracking the quality of requirements, and test failures, see [Test Analytics](../pipelines/test/test-analytics.md).
 
-## Related articles 
+## Related content 
 
 - [Learn about requirements traceability](../pipelines/test/requirements-traceability.md)
 - [View requirements tracking sample report](../report/powerbi/sample-stories-overview.md)

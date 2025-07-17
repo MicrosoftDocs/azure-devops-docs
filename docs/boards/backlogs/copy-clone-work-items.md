@@ -112,7 +112,7 @@ In Visual Studio, right-select the work item tab to copy the URL. The URL opens 
 
 * * *
 
-## Related articles
+## Related content
 
 - [Prepopulate fields with work item templates](work-item-template.md)
 - [Copy or clone test plans, test suites, test cases, and other test items](../../test/copy-clone-test-items.md)

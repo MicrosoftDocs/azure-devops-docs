@@ -372,7 +372,7 @@ The following table describes common fields used to filter queries. The **ID** f
 > Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
 
 
-## Related articles
+## Related content
 
 - [Query editor](using-queries.md)   
 - [Add work items](../backlogs/add-work-items.md)  

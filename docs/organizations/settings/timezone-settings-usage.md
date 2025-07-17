@@ -50,7 +50,7 @@ For work items, the History date-time fields reference the organization's or ser
 
 The time zone setting for on-premises Azure DevOps corresponds to the time zone set for the Azure DevOps Server.
 
-## Related articles
+## Related content
 
 - [Change the time zone in Azure DevOps](../accounts/change-time-zone.md)
 - [Configure schedules for pipelines](../../pipelines/process/scheduled-triggers.md)

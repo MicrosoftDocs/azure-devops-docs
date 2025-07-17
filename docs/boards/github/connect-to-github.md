@@ -437,7 +437,7 @@ A: For more information, see [User and permissions management FAQs/GitHub Enterp
 > [!div class="nextstepaction"]
 > [Link GitHub commits, pull requests, and branches to work items](link-to-from-github.md) 
 
-## Related articles
+## Related content
 
 - [Install and configure the Azure Boards app for GitHub](install-github-app.md)
 - [Configure status badges to add to GitHub README files](configure-status-badges.md)

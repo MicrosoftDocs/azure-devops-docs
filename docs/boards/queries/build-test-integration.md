@@ -532,7 +532,7 @@ There are the following limitations when querying by test case:
 - **Performance and rate limits**: Azure DevOps imposes limits on the resources individuals can consume and the number of requests they can make. Nonoptimized queries or excessive API calls can lead to delays or blocked requests.
 - **Test case linking**: Test cases aren’t automatically linked to other work items in a way that supports complex queries. For example, you can’t easily query for a hierarchical view of test cases linked to specific requirements or user stories.
 
-## Related articles
+## Related content
 
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 

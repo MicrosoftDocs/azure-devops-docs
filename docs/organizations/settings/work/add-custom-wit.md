@@ -146,7 +146,7 @@ We recommend that you create a test project and apply your customized  inherited
 > Or
 > [Customize the workflow](customize-process-workflow.md)
 
-## Related articles 
+## Related content 
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 

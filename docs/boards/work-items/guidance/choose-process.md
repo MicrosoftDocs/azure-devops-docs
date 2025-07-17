@@ -515,7 +515,7 @@ From the web portal or Microsoft Test Manager, view which test cases are defined
 
 If you change the workflow for the test plan and test suite, you might need to update the process configuration as described here. For definitions of each test field, see [Create a query based on build and test integration fields](../../queries/build-test-integration.md).
 
-## Related articles
+## Related content
 
 <a id="term-note"></a>
 

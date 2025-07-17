@@ -108,7 +108,7 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 > [!div class="nextstepaction"]
 > [Board quickstart](../boards/boards/kanban-quickstart.md)
 
-## Related articles
+## Related content
 - [Learn more about test case management](../test/create-test-cases.md)
 - [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md)
 - [Essential services](services.md)

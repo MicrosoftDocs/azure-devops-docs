@@ -411,7 +411,7 @@ By default, team members inherit the permissions afforded to members of the proj
 If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 ::: moniker-end
 
-## Related articles 
+## Related content 
 
 - [Manage permissions for specific tasks](restrict-access.md)
 - [Rules and rule evaluation](../settings/work/rule-reference.md)  

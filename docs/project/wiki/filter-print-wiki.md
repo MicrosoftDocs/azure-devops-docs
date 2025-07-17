@@ -40,7 +40,7 @@ The **Print page** menu option allows you to use your browser print function to 
 
 The print feature might not be available from the Firefox web browser.  
 
-## Related articles
+## Related content
 
 - [Follow a wiki page and get notifications](follow-notifications-wiki-pages.md)
 - [Provisioned vs. published wiki](provisioned-vs-published-wiki.md)

@@ -111,7 +111,7 @@ As your team grows, your tools grow. You can easily add teams which can focus on
 [![Add teams](media/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](media/overview/ov-scale-2.png)](../organizations/settings/set-area-paths.md)[![Manage teams and configure team tools](media/overview/ov-scale-3.png)](../organizations/settings/manage-teams.md)  
 
  
-## Related articles
+## Related content
 
 Once you've signed up for Azure DevOps Services or installed Azure DevOps Server, get familiar with the [web portal and working in the user and admin contexts](../project/navigation/index.md).
 

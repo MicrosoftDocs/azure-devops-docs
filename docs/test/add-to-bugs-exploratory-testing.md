@@ -62,7 +62,7 @@ After you file bugs, create tasks, or create test cases, they show up in the "Re
 
 See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
-## Related articles
+## Related content
 
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
