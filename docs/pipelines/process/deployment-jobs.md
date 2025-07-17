@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 01/24/2025
+ms.date: 07/17/2025
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2020'
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 > [!IMPORTANT]
-> - Job and stage names can't contain keywords (example: `deployment`).
+> - Job and stage names must not conflict with reserved keywords (such as `deployment` for job type)
 > - Each job in a stage must have a unique name. 
 
 In YAML pipelines, we recommend that you put your deployment steps in a special type of [job](phases.md) called a deployment job. A deployment job is a collection of steps that are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. Azure DevOps supports the *runOnce*, *rolling*, and the *canary* strategies.  
@@ -202,22 +202,21 @@ The following variables are available in this strategy:
 The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. The example includes a checkout step. 
 
 ```YAML
-
 jobs:
   # Track deployments on the environment.
-- deployment: DeployWeb
-  displayName: deploy Web App
-  pool:
-    vmImage: 'ubuntu-latest'
-  # Creates an environment if it doesn't exist.
-  environment: 'smarthotel-dev'
-  strategy:
-    # Default deployment strategy, more coming...
-    runOnce:
-      deploy:
-        steps:
-        - checkout: self 
-        - script: echo my first deployment
+  - deployment: DeployWeb
+    displayName: deploy Web App
+    pool:
+      vmImage: 'ubuntu-latest'
+    # Creates an environment if it doesn't exist.
+    environment: 'smarthotel-dev'
+    strategy:
+      # Default deployment strategy, more coming...
+      runOnce:
+        deploy:
+          steps:
+            - checkout: self
+            - script: echo my
 ```
 
 With each run of this job, deployment history is recorded against the `smarthotel-dev` environment.
@@ -229,28 +228,27 @@ The next example demonstrates how a pipeline can refer both an environment and a
 
 ```YAML
 jobs:
-- deployment: DeployWeb
-  displayName: deploy Web App
-  pool:
-    vmImage: 'ubuntu-latest'
-  # Records deployment against bookings resource - Kubernetes namespace.
-  environment: 'smarthotel-dev.bookings'
-  strategy: 
-    runOnce:
-      deploy:
-        steps:
-          # No need to explicitly pass the connection details.
-        - task: KubernetesManifest@1
-          displayName: Deploy to Kubernetes cluster
-          inputs:
-            action: deploy
-            namespace: $(k8sNamespace)
-            manifests: |
-              $(System.ArtifactsDirectory)/manifests/*
-            imagePullSecrets: |
-              $(imagePullSecret)
-            containers: |
-              $(containerRegistry)/$(imageRepository):$(tag)
+  - deployment: DeployWeb
+    displayName: deploy Web App
+    pool:
+      vmImage: 'ubuntu-latest'
+    # Records deployment against bookings resource - Kubernetes namespace.
+    environment: 'smarthotel-dev.bookings'
+    strategy: 
+      runOnce:
+        deploy:
+          steps:
+            # No need to explicitly pass the connection details.
+            - task: KubernetesManifest@1
+              displayName: Deploy to Kubernetes cluster
+              inputs:
+                action: deploy
+                namespace: $(k8sNamespace)
+                manifests: |
+                  $(System.ArtifactsDirectory)/manifests/*
+                imagePullSecrets: |
+                  $(imagePullSecret)
+                containers:
 ```
 
 This approach has the following benefits:
@@ -268,40 +266,40 @@ This is useful in the cases where the same connection detail is set for multiple
 The rolling strategy for VMs updates up to five targets in each iteration. `maxParallel` determines the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It's also used to determine the success and failure conditions during deployment.
 
 ```YAML
-jobs: 
-- deployment: VMDeploy
-  displayName: web
-  environment:
-    name: smarthotel-dev
-    resourceType: VirtualMachine
-  strategy:
-    rolling:
-      maxParallel: 5  #for percentages, mention as x%
-      preDeploy:
-        steps:
-        - download: current
-          artifact: drop
-        - script: echo initialize, cleanup, backup, install certs
-      deploy:
-        steps:
-        - task: IISWebAppDeploymentOnMachineGroup@0
-          displayName: 'Deploy application to Website'
-          inputs:
-            WebSiteName: 'Default Web Site'
-            Package: '$(Pipeline.Workspace)/drop/**/*.zip'
-      routeTraffic:
-        steps:
-        - script: echo routing traffic
-      postRouteTraffic:
-        steps:
-        - script: echo health check post-route traffic
-      on:
-        failure:
+jobs:
+  - deployment: VMDeploy
+    displayName: web
+    environment:
+      name: smarthotel-dev
+      resourceType: VirtualMachine
+    strategy:
+      rolling:
+        maxParallel: 5  # for percentages, mention as x%
+        preDeploy:
           steps:
-          - script: echo Restore from backup! This is on failure
-        success:
+            - download: current
+              artifact: drop
+            - script: echo initialize, cleanup, backup, install certs
+        deploy:
           steps:
-          - script: echo Notify! This is on success
+            - task: IISWebAppDeploymentOnMachineGroup@0
+              displayName: 'Deploy application to Website'
+              inputs:
+                WebSiteName: 'Default Web Site'
+                Package: '$(Pipeline.Workspace)/drop/**/*.zip'
+        routeTraffic:
+          steps:
+            - script: echo routing traffic
+        postRouteTraffic:
+          steps:
+            - script: echo health check post-route traffic
+        on:
+          failure:
+            steps:
+              - script: echo Restore from backup! This is on failure
+          success:
+            steps:
+              - script: echo Notify! This is on
 ```
 
 ### Canary deployment strategy
@@ -309,38 +307,38 @@ jobs:
 In the next example, the canary strategy for AKS will first deploy the changes with 10-percent pods, followed by 20 percent, while monitoring the health during `postRouteTraffic`. If all goes well, it will promote to 100 percent.  
 
 ```YAML
-jobs: 
-- deployment: 
-  environment: smarthotel-dev.bookings
-  pool: 
-    name: smarthotel-devPool
-  strategy:                  
-    canary:      
-      increments: [10,20]  
-      preDeploy:                                     
-        steps:           
-        - script: initialize, cleanup....   
-      deploy:             
-        steps: 
-        - script: echo deploy updates... 
-        - task: KubernetesManifest@1 
-          inputs: 
-            action: $(strategy.action)       
-            namespace: 'default' 
-            strategy: $(strategy.name) 
-            percentage: $(strategy.increment) 
-            manifests: 'manifest.yml' 
-      postRouteTraffic: 
-        pool: server 
-        steps:           
-        - script: echo monitor application health...   
-      on: 
-        failure: 
-          steps: 
-          - script: echo clean-up, rollback...   
-        success: 
-          steps: 
-          - script: echo checks passed, notify... 
+jobs:
+  - deployment: 
+      environment: smarthotel-dev.bookings
+      pool: 
+        name: smarthotel-devPool
+      strategy:                  
+        canary:      
+          increments: [10, 20]  
+          preDeploy:                                     
+            steps:           
+              - script: initialize, cleanup....
+          deploy:             
+            steps: 
+              - script: echo deploy updates...
+              - task: KubernetesManifest@1
+                inputs:
+                  action: $(strategy.action)
+                  namespace: 'default'
+                  strategy: $(strategy.name)
+                  percentage: $(strategy.increment)
+                  manifests: 'manifest.yml'
+          postRouteTraffic: 
+            pool: server 
+            steps:           
+              - script: echo monitor application health...
+          on: 
+            failure: 
+              steps: 
+                - script: echo clean-up, rollback...
+            success: 
+              steps: 
+                -
 ```
 ## Use pipeline decorators to inject steps automatically
 
