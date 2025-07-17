@@ -272,40 +272,7 @@ These investments include:
 
 Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs). Managed DevOps Pools is generally available, so you can migrate your Virtual machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible. 
 
-Below, you will find several investments we plan to deliver as part of this initiative:
-
-<table>
-    <thead>
-        <tr>
-            <th>Feature</th>
-            <th>Area</th>
-            <th>Quarter</th>
-        </tr>
-    </thead>
-    <tbody>
-      </tr>
-            <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/trusted-certificates" data-raw-source="[Add trusted root certificates](/azure/devops/release-notes/roadmap/2025/mdp/trusted-certificates)">Add trusted root certificates</a></td>
-         <td>Pipelines</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q2</td>
-      </tr>      
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/pool-creation" data-raw-source="[Pool creation at the Azure DevOps project level using project level permissions](/azure/devops/release-notes/roadmap/2025/mdp/pool-creation)">Pool creation at the Azure DevOps project level using project level permissions</a></td>
-         <td>Pipelines</td>
-         <td>2025 Q3</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/spot-vms" data-raw-source="[Spot Virtual Machines instance](/azure/devops/release-notes/roadmap/2025/mdp/spot-vms)">Spot Virtual Machines instance</a></td>
-         <td>Pipelines</td>
-         <td>2025 Q4</td>
-      </tr>      
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/mdp/container-agents" data-raw-source="[Container based agents](/azure/devops/release-notes/roadmap/2025/mdp/container-agents)">Container based agents</a></td>
-         <td>Pipelines</td>
-         <td>2025 Q4</td>
-      </tr>
-   </tbody>
-</table>
+You will find the detailed roadmap [here](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/features-timeline?view=azure-devops)
 
 ### YAML and release pipelines feature parity
 
