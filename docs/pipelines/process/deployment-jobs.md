@@ -216,7 +216,7 @@ jobs:
         deploy:
           steps:
             - checkout: self
-            - script: echo my
+            - script: echo my first deployment
 ```
 
 With each run of this job, deployment history is recorded against the `smarthotel-dev` environment.
@@ -248,7 +248,8 @@ jobs:
                   $(System.ArtifactsDirectory)/manifests/*
                 imagePullSecrets: |
                   $(imagePullSecret)
-                containers:
+                containers: |
+                  $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
 This approach has the following benefits:
@@ -299,7 +300,7 @@ jobs:
               - script: echo Restore from backup! This is on failure
           success:
             steps:
-              - script: echo Notify! This is on
+              - script: echo Notify! This is on success
 ```
 
 ### Canary deployment strategy
@@ -338,7 +339,7 @@ jobs:
                 - script: echo clean-up, rollback...
             success: 
               steps: 
-                -
+                - script: echo checks passed, notify...
 ```
 ## Use pipeline decorators to inject steps automatically
 
