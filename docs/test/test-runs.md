@@ -5,13 +5,13 @@ ms.service: azure-devops-test-plans
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 07/15/2025
+ms.date: 07/18/2025
 monikers: 'azure-devops'
 ---
 
 # Manage test runs in Azure DevOps Test Plans
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 Azure DevOps Test Plans provides a new Test Run Hub experience for managing test execution. This enhanced interface helps teams track test progress, analyze results, and maintain quality across development cycles.
 
@@ -62,9 +62,9 @@ The Test Run Hub provides several ways to find specific test runs:
 :::image type="content" source="media/test-runs/search-bar.png" alt-text="Screenshot showing the search bar with dropdown filters for test runs.":::
 
 > [!TIP]
-> Filter selections and column widths persist across sessions until manually cleared.
-> All search filters are additive - e.g. when the timeline filter is set to "Past 7d" search logic will be scoped for the runs of last seven days only.
-> If a search is needed for runs executed more than 180 days ago, then it is possible via the Azure DevOps REST APIs. 
+> Your filter selections and column widths remain saved across sessions until you manually clear them.
+> Search filters combine additively - for example, setting the timeline filter to "Past 7d" limits search results to runs from the last seven days only.
+> To search for runs older than 180 days, use the Azure DevOps REST APIs. 
 
 ### Customize columns
 
@@ -142,8 +142,8 @@ Once attachments are present you can view, download, or delete them as needed.
 :::image type="content" source="media/test-runs/run-attachments-list.png" alt-text="Screenshot of the test run attachments list with options to download or delete files.":::
 
 > [!TIP]
-> - Images and PDF files can be previewed by selecting the filename.
-> - Run-level attachments are separate from individual test result attachments. And individual test results can have their own attachments, accessible through the dedicated attachment tabs in the test result details.
+> - Preview images and PDF files by selecting the filename.
+> - Run-level attachments are separate from individual test result attachments. Each test result can have its own attachments, which you can access through the attachment tabs in the test result details.
 
 ## Work with test case results
 
@@ -190,7 +190,7 @@ The analysis section helps structure post-execution review:
 :::image type="content" source="media/test-runs/analysis.png" alt-text="Screenshot showing the analysis information section for detailed test case review.":::
 
 > [!TIP]
-> If more entries are needed under each of the dropdowns of e.g. more options to choose from for Failure, then they can be added via the Azure DevOps REST APIs.
+> To add more options to any dropdown (for example, additional failure types), use the Azure DevOps REST APIs.
 
 
 ## Programmatic access
