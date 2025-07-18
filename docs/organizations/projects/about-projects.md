@@ -374,5 +374,4 @@ You can also use the [**az devops project** CLI](/cli/azure/devops/project).
 
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Navigate the web portal](../../project/navigation/index.md)
-- [Understand what you get with a project](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Understand differences between Azure DevOps](../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Features and services included with Azure DevOps](../../user-guide/what-is-azure-devops.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)

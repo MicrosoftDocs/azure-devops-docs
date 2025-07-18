@@ -29,7 +29,7 @@ Each service offers multiple pages with numerous features and functional tasks. 
 
 Here's what you need to know to start using the web portal effectively.  
 
-- [**Open a service, page, or settings**](go-to-service-page.md): Use to switch to a different [service or functional area](../../user-guide/services.md) 
+- [**Open a service, page, or settings**](go-to-service-page.md): Use to switch to a different [service or functional area](../../user-guide/what-is-azure-devops.md) 
 - [**Add an artifact or team**](add-artifact-team.md): Use to quickly add a work item, Git repo, build or release pipelines, or a new team
 - [**Open another project or repo**](work-across-projects.md): Use to switch to a different project or access work items and pull requests defined in different projects, or your favorite items
 - [**Open team artifacts, use breadcrumbs, selectors and directories**](use-breadcrumbs-selectors.md): Use to navigate within a service, open other artifacts, or return to a root function

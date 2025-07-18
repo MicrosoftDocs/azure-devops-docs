@@ -23,10 +23,6 @@ highlightedContent:
       itemType: overview
       url: ./user-guide/what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json
     # Card
-    - title: Azure DevOps Services vs. Azure DevOps Server
-      itemType: overview
-      url: ./user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json
-    # Card
     - title: What's new in Azure DevOps? 
       itemType: whats-new 
       url: https://aka.ms/azuredevops/releasenotes
