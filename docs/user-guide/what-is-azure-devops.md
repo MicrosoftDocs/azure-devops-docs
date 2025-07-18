@@ -43,23 +43,23 @@ Azure DevOps includes the following integrated services:
 
 [**Azure Boards**](../boards/get-started/what-is-azure-boards.md): Plan and track work using Agile tools, Kanban boards, backlogs, and dashboards. Create work items like user stories, bugs, and tasks. Use sprint planning, burndown charts, and velocity tracking. Customize workflows and work item types to match your team's process.
 
-*Example scenario: A product team planning a mobile app feature creates user stories for "user sign-in," tracks bugs found during development, and uses sprint boards to monitor progress during two-week iterations.*
+> **Example scenario:** A product team planning a mobile app feature creates user stories for "user sign-in," tracks bugs found during development, and uses sprint boards to monitor progress during two-week iterations.
 
 [**Azure Repos**](../repos/get-started/what-is-repos.md): Host unlimited private Git repositories or use Team Foundation Version Control (TFVC) for source code management. Features include branch policies, pull requests with code reviews, conflict resolution, and integration with popular IDEs and editors.
 
-*Example scenario: Development team members create feature branches for new functionality, submit pull requests for code review, and use branch policies to ensure all code is reviewed and tested before merging to the main branch.*
+> **Example scenario:** Development team members create feature branches for new functionality, submit pull requests for code review, and use branch policies to ensure all code is reviewed and tested before merging to the main branch.
 
 [**Azure Pipelines**](../pipelines/get-started/what-is-azure-pipelines.md): Build, test, and deploy applications with CI/CD pipelines that work with any language, platform, and cloud. Supports Docker containers, Kubernetes, and deployments to Azure, AWS, Google Cloud, or on-premises. Includes parallel jobs, deployment gates, and release approvals.
 
-*Example scenario: Every code commit triggers an automated pipeline that builds a .NET web application, runs unit tests, creates a Docker container, and deploys to staging environment for testing before production release.*
+> **Example scenario:** Every code commit triggers an automated pipeline that builds a .NET web application, runs unit tests, creates a Docker container, and deploys to staging environment for testing before production release.
 
 [**Azure Test Plans**](../test/overview.md): Plan, execute, and track testing with manual test cases, exploratory testing sessions, and automated test integration. Create test suites, track test results, capture screenshots and videos, and generate detailed test reports.
 
-*Example scenario: QA team creates test cases for user registration flow, executes manual tests on different browsers, captures screenshots of issues, and links test results to user stories for traceability.*
+> **Example scenario:** QA team creates test cases for user registration flow, executes manual tests on different browsers, captures screenshots of issues, and links test results to user stories for traceability.
 
 [**Azure Artifacts**](../artifacts/start-using-azure-artifacts.md): Create, host, and share packages like NuGet, npm, Maven, Python, and Universal packages with your team and organization. Integrate with build pipelines, manage package versions, and control access with upstream sources and retention policies.
 
-*Example scenario: Development team creates a shared authentication library, publishes it as a NuGet package to Azure Artifacts, and references it across multiple projects while controlling access to internal packages.*
+> **Example scenario:** Development team creates a shared authentication library, publishes it as a NuGet package to Azure Artifacts, and references it across multiple projects while controlling access to internal packages.
 
 :::column-end:::
 :::row-end:::
