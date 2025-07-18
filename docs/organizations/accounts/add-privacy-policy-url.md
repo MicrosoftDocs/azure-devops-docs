@@ -43,4 +43,3 @@ A privacy policy is legally required for all websites and apps that collect or u
 - [Azure DevOps data location](../security/data-location.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
 - [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
-- [Developer Services Agreement](../../user-guide/services.md)
