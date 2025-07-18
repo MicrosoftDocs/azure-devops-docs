@@ -115,6 +115,8 @@ productDirectory:
           text: Run automated tests
         - url: ./test/create-test-cases.md
           text: Create manual tests
+        - url: ./test/test-runs.md
+          text: Manage test runs
         - url: ./test/index.yml
           text: See more >
     # Card
