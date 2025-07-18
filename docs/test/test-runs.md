@@ -134,11 +134,11 @@ To add attachments to a test run:
 1. In the test run details, select **+ Add attachments**.
 2. Choose your files and upload them.
 
-   :::image type="content" source="media/test-runs/adding-attachments-run.png" alt-text="Screenshot showing how to add attachments to a test run.":::
+:::image type="content" source="media/test-runs/adding-attachments-run.png" alt-text="Screenshot showing how to add attachments to a test run.":::
 
 Once attachments are present you can view, download, or delete them as needed.
 
-   :::image type="content" source="media/test-runs/run-attachments-list.png" alt-text="Screenshot of the test run attachments list with options to download or delete files.":::
+:::image type="content" source="media/test-runs/run-attachments-list.png" alt-text="Screenshot of the test run attachments list with options to download or delete files.":::
 
 > [!TIP]
 > - Images and PDF files can be previewed by selecting the filename.
