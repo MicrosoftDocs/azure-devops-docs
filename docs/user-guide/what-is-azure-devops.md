@@ -8,7 +8,7 @@ ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/17/2025
+ms.date: 07/18/2025
 ms.update-cycle: 1095-days
 #customer intent: As a developer, I want to understand Azure DevOps so I can plan, code, collaborate, and ship my applications.
 ---
@@ -43,7 +43,7 @@ Azure DevOps includes the following integrated services:
 
 [**Azure Boards**](../boards/get-started/what-is-azure-boards.md): Plan and track work using Agile tools, Kanban boards, backlogs, and dashboards. Create work items like user stories, bugs, and tasks. Use sprint planning, burndown charts, and velocity tracking. Customize workflows and work item types to match your team's process.
 
-*Example scenario: A product team planning a mobile app feature creates user stories for "user login," tracks bugs found during development, and uses sprint boards to monitor progress during two-week iterations.*
+*Example scenario: A product team planning a mobile app feature creates user stories for "user sign-in," tracks bugs found during development, and uses sprint boards to monitor progress during two-week iterations.*
 
 [**Azure Repos**](../repos/get-started/what-is-repos.md): Host unlimited private Git repositories or use Team Foundation Version Control (TFVC) for source code management. Features include branch policies, pull requests with code reviews, conflict resolution, and integration with popular IDEs and editors.
 
@@ -66,7 +66,7 @@ Azure DevOps includes the following integrated services:
 
 ### How Azure DevOps services work together
 
-The following diagram shows how Azure DevOps services integrate throughout the development lifecycle:
+The following diagram shows how the services integrate throughout the development lifecycle:
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -152,7 +152,7 @@ Azure DevOps supports two primary types of source control to suit diverse projec
 Git is a version control system where each developer has a local copy of the entire repository. This approach allows for offline work and easy branching and merging. Git is the default choice for new projects and is recommended for its flexibility and robustness.
 
 > [!NOTE]
-> Git in Azure DevOps is standard Git. You can use Visual Studio with third-party Git services. You can also use third-party Git clients with Azure DevOps Server.
+> Git in Azure DevOps is standard Git. You can use Visual Studio with non-Microsoft Git services. You can also use non-Microsoft Git clients with Azure DevOps Server.
 
 You can do the following tasks with Azure Repos for Git:
 
@@ -239,7 +239,6 @@ Azure Artifacts supports comprehensive package management scenarios:
 
 Azure DevOps enhances team collaboration through the following services designed to streamline communication and project tracking:
 
-- [**Team dashboards**](../report/dashboards/dashboards.md): Create and customize dashboards to provide your team with real-time visibility into project metrics and progress.
 - [**Project wiki**](../project/wiki/manage-wikis.md): Document your project details, guidelines, and knowledge base in a centralized, easily accessible wiki.
 - [**Work item discussions**](../boards/work-items/work-item-fields.md): Facilitate conversations directly within work item forms and enable contextual and timely communication.
 - **Traceability links**: Establish links between [work items](../boards/backlogs/add-link.md), [commits](../repos/git/commits.md), [pull requests](../repos/git/pull-requests.md), and more, and help ensure comprehensive traceability across your project.
@@ -282,14 +281,6 @@ Accessible administration is provided in the following ways:
 
 For a deeper understanding of the administrative capabilities available to you, including how to configure and manage various levels of settings, see [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md).
 
-## Additional features
-
-Beyond the core services, Azure DevOps provides:
-
-- **[Wiki](../project/wiki/about-readme-wiki.md)**: Document projects and share knowledge in a centralized location  
-- **[Analytics and reporting](../report/powerbi/analytics-security.md)**: Generate insights and reports using built-in analytics and Power BI integration
-- **[Notifications](../organizations/notifications/about-notifications.md)**: Stay informed with customizable alerts for work items, builds, releases, and code changes
-
 ## Key capabilities
 
 ### Project management
@@ -306,13 +297,11 @@ Beyond the core services, Azure DevOps provides:
 
 ### Build and deployment
 - Continuous integration with automated builds triggered by code changes
-- Multi-platform support for .NET, Java, Node.js, Python, and more
+- Multi-platform support for .NET, Java, Node.js, Python, Android, iOS, Linux, macOS, and Windows
 - Deploy to Azure, AWS, GCP, or on-premises environments
+- Multi-environment deployment across development, staging, and production
 - Release management with approval gates and deployment strategies
-- **Cross-platform builds**: Build applications for any platform including Android, iOS, Linux, macOS, and Windows
-- **Multi-environment deployment**: Automate deployments across development, staging, and production environments
-- **Approval workflows**: Implement gates and approvals to ensure quality before production releases
-- **Parallel processing**: Run multiple build agents simultaneously to speed up your CI/CD process
+- Parallel processing with multiple build agents for faster CI/CD
 
 ### Testing and quality
 - Manual test case management and execution
@@ -334,7 +323,7 @@ Azure DevOps Services offers several advantages for development teams:
 
 ### Pricing and access
 
-- **Free for small teams**: Up to 5 users get access to all basic features
+- **Free for small teams**: Up to five users get access to all basic features
 - **Pay-as-you-grow**: Add users with Basic or Basic + Test Plans licenses as needed
 - **Unlimited stakeholders**: Free access for unlimited stakeholders to view dashboards and work items
 
@@ -346,7 +335,7 @@ For more information about Azure DevOps Server, see [Install Azure DevOps Server
 
 ## Getting started
 
-Ready to start with Azure DevOps? Here are your next steps:
+Ready to get started with Azure DevOps? Here are your next steps:
 
 1. **[Create a free organization](sign-up-invite-teammates.md)** - Set up your Azure DevOps Services organization
 2. **[Create your first project](../organizations/projects/create-project.md)** - Start organizing your work
@@ -354,7 +343,7 @@ Ready to start with Azure DevOps? Here are your next steps:
 4. **[Import or create repositories](../repos/git/creatingrepo.md)** - Get your code into Azure Repos
 5. **[Set up your first pipeline](../pipelines/create-first-pipeline.md)** - Automate builds and deployments
 
-## Learn more
+## Related content
 
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Tools and clients for Azure DevOps](tools.md)
