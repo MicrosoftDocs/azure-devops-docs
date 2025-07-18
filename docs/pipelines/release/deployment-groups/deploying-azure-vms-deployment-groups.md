@@ -681,7 +681,11 @@ This section guides you through setting up your Azure resources using an ARM tem
 
 1. Once deployment finishes, go to your resource group in the Azure portal to review the generated resources. Select the DB server VM with **sqlSrv** in its name to view its details.
 
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/arm-deployment-view-resources.png" alt-text="A screenshot displaying the newly created resources in Azure.":::
+
 1. Copy the **DNS name** as you’ll need it in a later step.
+
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/arm-vm-overview.png" alt-text="A screenshot displaying the DB server VM in Azure.":::
 
 ## Creating and configuring a deployment group
 
