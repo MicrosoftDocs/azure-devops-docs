@@ -189,7 +189,7 @@ The analysis section helps structure post-execution review:
 :::image type="content" source="media/test-runs/analysis.png" alt-text="Screenshot showing the analysis information section for detailed test case review.":::
 
 > [!TIP]
-> When more entries are needed in the dropdowns of e.g. Failure type and Resolution, they can be added via the Azure DevOps REST APIs. 
+> If more entries are needed under each of the dropdowns of e.g. more options to choose from for Failure, then they can be added via the Azure DevOps REST APIs.
 
 
 ## Programmatic access
