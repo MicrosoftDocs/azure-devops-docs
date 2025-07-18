@@ -28,7 +28,7 @@ This article shows you how to configure your Azure subscription and Azure DevOps
 
 ### Verify Azure permissions
 
-To create and and manage Managed DevOps Pools, you must have one of the following roles assigned to your account in the Azure subscription where you want to create the Managed DevOps Pools. The following roles are listed in order of least privileged to most privileged. The **DevOps Infrastructure Contributor** is the least privileged role that allows you to create and manage Managed DevOps Pools.
+To create and manage Managed DevOps Pools, you must have one of the following roles assigned to your account in the Azure subscription where you want to create the Managed DevOps Pools. The following roles are listed in order of least privileged to most privileged. The **DevOps Infrastructure Contributor** is the least privileged role that allows you to create and manage Managed DevOps Pools.
 
 | Role | Description |
 |------|-------------|
@@ -40,8 +40,7 @@ To check the role assignments for your account, see [List Azure role assignments
 
 For information on assigning roles, see [Steps to assign an Azure role](/azure/role-based-access-control/role-assignments-steps).
 
-> [!NOTE]
-> If you're also creating a dev center and dev center project, you must have the [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) or [Owner](/azure/role-based-access-control/built-in-roles/privileged#owner) role assigned to your account for the [scope](/azure/role-based-access-control/role-assignments-steps#step-3-identify-the-needed-scope) in which you want to the create the Dev Center.
+If you're also creating a dev center and dev center project, you must have the [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) or [Owner](/azure/role-based-access-control/built-in-roles/privileged#owner) role assigned to your account for the [scope](/azure/role-based-access-control/role-assignments-steps#step-3-identify-the-needed-scope) in which you want to create the dev center. For more information, see [Create a dev center and dev center project](#create-a-dev-center-and-dev-center-project).
 
 ### Register the Managed DevOps Pools resource provider in your Azure Subscription
 
@@ -192,7 +191,7 @@ Managed DevOps Pools requires a dev center and dev center project. You have the 
 
 Multiple Managed DevOps Pools can use the same dev center and dev center project, and the dev center project isn't required to be in the same region or the same subscription as your Managed DevOps Pool.
 
-To create a dev center and dev center project, you must have the [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) or [Owner](/azure/role-based-access-control/built-in-roles/privileged#owner) role assigned to your account for the [scope](/azure/role-based-access-control/role-assignments-steps#step-3-identify-the-needed-scope) in which you want to the create the Dev Center.
+To create a dev center and dev center project, you must have the [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) or [Owner](/azure/role-based-access-control/built-in-roles/privileged#owner) role assigned to your account for the [scope](/azure/role-based-access-control/role-assignments-steps#step-3-identify-the-needed-scope) in which you want to create the dev center.
 
 #### Create a dev center
 
