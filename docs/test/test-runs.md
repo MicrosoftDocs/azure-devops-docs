@@ -62,9 +62,9 @@ The Test Run Hub provides several ways to find specific test runs:
 :::image type="content" source="media/test-runs/search-bar.png" alt-text="Screenshot showing the search bar with dropdown filters for test runs.":::
 
 > [!TIP]
-> Your filter selections and column widths remain saved across sessions until you manually clear them.
-> Search filters combine additively - for example, setting the timeline filter to "Past 7d" limits search results to runs from the last seven days only.
-> To search for runs older than 180 days, use the Azure DevOps REST APIs. 
+> - Filter selections and column widths persist across sessions until you clear them manually.
+> - Search filters work additively. For example, selecting "Past 7d" in the timeline filter shows only runs from the last seven days.
+> - Use the Azure DevOps REST APIs to search for runs older than 180 days.
 
 ### Customize columns
 
