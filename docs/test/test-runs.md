@@ -62,6 +62,7 @@ The Test Run Hub provides several ways to find specific test runs:
 
 > [!TIP]
 > Filter selections persist across sessions until manually cleared. All search filters are additive - ensure your timeline filter includes the period when older runs were executed.
+> If a search is needed for runs executed more than 180 days ago, then it is possible via the Azure DevOps REST APIs. 
 
 ### Customize columns
 
@@ -186,14 +187,10 @@ The analysis section helps structure post-execution review:
 
 :::image type="content" source="media/test-runs/analysis.png" alt-text="Screenshot showing the analysis information section for detailed test case review.":::
 
+> [!TIP]
+> When more entries are needed in the dropdowns of e.g. Failure type and Resolution, they can be added via the Azure DevOps REST APIs. 
+
+
 ## Programmatic access
 
 You can also manage test runs programmatically using the [Azure DevOps REST API](/rest/api/azure/devops/test).
-
-## Next step
-
-[Placeholder]
-
-## Related content
-
-[Placeholder]
