@@ -75,7 +75,7 @@ When your Azure DevOps Administrator in Microsoft Entra ID *isn't* a member of t
 
    You're redirected to the organization overview page. To transfer ownership to another user, see [Change organization owner](change-organization-ownership.md).
 
-## Related articles
+## Related content
 
 - [Change the organization owner](change-organization-ownership.md)
 - [Review administrator role permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)

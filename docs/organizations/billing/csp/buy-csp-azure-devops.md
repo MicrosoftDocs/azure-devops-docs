@@ -48,7 +48,7 @@ When your customer gains access to the CSP-based Azure subscription, they can [m
 
 Now, you're paying for Azure DevOps with your CSP-based Azure subscription. The CSP can't make purchases on a customer's behalf.
 
-## Related articles
+## Related content
 
 - [Buy and manage Visual Studio cloud subscriptions for your customers](/visualstudio/subscriptions/vscloud-csp)
 - [Buy Visual Studio App Center resources](https://visualstudio.microsoft.com/app-center/)

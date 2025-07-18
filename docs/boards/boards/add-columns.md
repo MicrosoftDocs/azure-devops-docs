@@ -219,7 +219,7 @@ In the following table, we list tasks and their associated articles, so you can 
 |[Track board column status](#track-column-status)   | Create queries and charts based on board columns.        |
 |[View and configure a cumulative flow diagram](../../report/dashboards/cumulative-flow.md)   |Review a cumulative flow diagram based on column assignments.         |
 
-## Related articles
+## Related content
 
 - [Accelerate work with swimlanes](expedite-work.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  

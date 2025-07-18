@@ -41,7 +41,7 @@ This differs from apps that perform actions on-behalf-of themselves. For that, y
 * Use the `.default` scope when requesting a token with all scopes that the app is permissioned for.
 * In a previous Azure DevOps OAuth app, you might have use Azure DevOps user identifiers that don't exist in Microsoft Entra. When migrating to Microsoft Entra, use the [ReadIdentities API](/rest/api/azure/devops/ims/identities/read-identities) to resolve and match the different identities used by each identity provider.
 
-## Related articles
+## Related content
 
 - [Authenticate to Azure DevOps with Microsoft Entra](entra.md)
 - [Use service principals & managed identities in Azure DevOps](service-principal-managed-identity.md)

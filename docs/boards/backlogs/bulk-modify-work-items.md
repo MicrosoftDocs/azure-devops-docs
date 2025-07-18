@@ -191,7 +191,7 @@ This example adds the *Service* tag to the selected work items.
 
 :::image type="content" source="media/bulk-modify/edit-tags-dialog.png" alt-text="Screenshot of Edit work items dialog where you can add tags.":::
 
-## Related articles
+## Related content
 
 To add fields or customize a work item form, see [Customize your work tracking experience](../../reference/customize-work.md). The method you use depends on the process model that supports your project.  
 

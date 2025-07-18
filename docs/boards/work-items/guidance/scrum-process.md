@@ -84,6 +84,6 @@ For a summary of updates made to process templates, see [Release Notes for Azure
 
 
 
-## Related articles 
+## Related content 
 
 [!INCLUDE [temp](../../includes/create-team-project-links.md)]

@@ -280,7 +280,7 @@ From the **Chart** tab, you can create various test case or test result charts. 
 > [!div class="nextstepaction"]
 > [Create test plans and test suites](create-a-test-plan.md)
  
-## Related articles
+## Related content
 
 - [Run manual tests](run-manual-tests.md) 
 - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)

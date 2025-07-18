@@ -130,7 +130,7 @@ For more information about building extensions, see the following articles:
 > [!div class="nextstepaction"]
 > [Develop an extension](./get-started/node.md)
 
-## Related articles
+## Related content
 
 * [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
 * [Extension Publisher Page](https://marketplace.visualstudio.com/manage)

@@ -286,7 +286,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 4. When you're done with your changes, select **Save**.
 
-## Related articles
+## Related content
 
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  

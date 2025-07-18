@@ -234,7 +234,7 @@ When it updates, the section should appear as follows.
 > [!div class="nextstepaction"]
 > [Link GitHub commits and pull requests to work items](link-to-from-github.md) 
 
-## Related articles
+## Related content
 
 - [Learn about Azure Boards](../../boards/get-started/what-is-azure-boards.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)

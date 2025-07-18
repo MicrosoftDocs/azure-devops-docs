@@ -254,7 +254,7 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [Recycle bin REST API Reference](/rest/api/azure/devops/wit/recyclebin)
 - [Work Items - Delete REST API Reference](/rest/api/azure/devops/wit/work-items/delete)
   
-## Related articles
+## Related content
 
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)
 - [Delete test artifacts](delete-test-artifacts.md)

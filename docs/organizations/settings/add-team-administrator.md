@@ -143,7 +143,7 @@ From the Administrators section, choose ![delete icon](../../media/icons/delete-
 > [!div class="nextstepaction"]
 > [Manage teams and configure team tools](manage-teams.md) 
 
-## Related articles
+## Related content
 
 - [Add teams](add-teams.md)
 - [Learn about teams & Agile tools](../../organizations/settings/about-teams-and-settings.md)

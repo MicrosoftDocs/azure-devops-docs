@@ -68,7 +68,7 @@ The following table provides the default permissions assigned to the built-in se
 
 For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../organizations/security/permissions-access.md).  
  
-## Related articles
+## Related content
 
 - [Test objects and terms](test-objects-overview.md)  
 - [Set permissions and access for manual testing](../organizations/security/set-permissions-access-test.md)  

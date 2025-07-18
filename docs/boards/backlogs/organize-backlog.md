@@ -220,7 +220,7 @@ From a product or portfolio backlog, you can multi-select several work items and
 
 [!INCLUDE [temp](../includes/display-rollup-section.md)]
 
-## Related articles  
+## Related content  
 
 - [Define features and epics](define-features-epics.md)
 - [Configure your backlog view](configure-your-backlog-view.md)

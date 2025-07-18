@@ -290,7 +290,7 @@ Search has the following limitation: If you do a disaster recovery (DR) operatio
 > [!div class="nextstepaction"]
 > [Functional code search](functional-code-search.md)
 
-## Related articles
+## Related content
 
 - [Functional work item search](functional-work-item-search.md)
 - [Functional artifact or package search](functional-package-search.md)

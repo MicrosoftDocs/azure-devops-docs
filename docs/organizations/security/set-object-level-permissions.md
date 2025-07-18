@@ -185,7 +185,7 @@ Here are some more tips for managing notifications:
   - As an alternative, consider providing an email distribution list that reaches your entire organization.
   - In Azure DevOps Services you can create a banner using the `az devops banner` command that all users see when they sign in.
 
-## Related articles
+## Related content
 
 - [Manage permissions for specific tasks](restrict-access.md)
 - [Manage permissions with command line tool](manage-tokens-namespaces.md)

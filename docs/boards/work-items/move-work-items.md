@@ -198,7 +198,7 @@ After you move work items from one team to another team, do the following action
 
 For more information, see [Create your backlog](../backlogs/create-your-backlog.md).
 
-## Related articles
+## Related content
 
 - [Create or add a team](../../organizations/settings/add-teams.md)
 - [Learn about teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) 

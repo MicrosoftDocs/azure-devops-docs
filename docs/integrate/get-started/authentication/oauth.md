@@ -124,7 +124,7 @@ Choose your implementation path:
 > [!div class="nextstepaction"]
 > [Azure DevOps OAuth documentation](azure-devops-oauth.md)
 
-## Related articles
+## Related content
 
 - [Authentication guidance overview](authentication-guidance.md)
 - [Manage app authorizations](../../../organizations/settings/manage-authorizations.md)

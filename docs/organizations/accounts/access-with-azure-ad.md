@@ -54,7 +54,7 @@ For more information, see [Frequently asked questions about Azure access](faq-az
 > [!div class="nextstepaction"]
 > [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md)
 
-## Related articles
+## Related content
 
 * [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 * [Disconnect your organization from Microsoft Entra ID](/azure/active-directory/add-users-azure-active-directory#delete-a-user)

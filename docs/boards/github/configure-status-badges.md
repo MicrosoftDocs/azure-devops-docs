@@ -64,7 +64,7 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
 	You should see the same preview image that you selected with values that correspond to your board. 
 
-## Related articles
+## Related content
 
 - [Add columns to your board](../boards/add-columns.md)
 - [Customize cards](../boards/customize-cards.md)

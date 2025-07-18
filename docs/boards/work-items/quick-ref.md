@@ -307,7 +307,7 @@ You customize work item types using the On-premises XML process model. For more 
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)

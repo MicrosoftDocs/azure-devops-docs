@@ -340,7 +340,7 @@ For more information, see  the [Marketplace Publisher Agreement](https://aka.ms/
 | **Azure DevOps Services installs** | Total number of organizations the extension is installed in. Repeated installs on the same organization get counted. |
 | **Azure DevOps Server installs** | Total number of collections the extension is installed in. Repeated installs on the same collection get counted. Disconnected server data isn't available. |
 
-## Related articles
+## Related content
 
 - [Develop a web extension](../get-started/node.md)
 - [Explore extensibility points](../reference/targets/overview.md)

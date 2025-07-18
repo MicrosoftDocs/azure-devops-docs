@@ -400,7 +400,7 @@ You can use Azure DevOps REST APIs to add or update the following artifacts:
 > [!div class="nextstepaction"]
 > [Customize Azure Boards to support SAFe®](safe-customize.md)  
 
-## Related articles
+## Related content
 
 - [Add teams](../../organizations/settings/add-teams.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)

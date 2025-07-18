@@ -7,7 +7,7 @@ ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
-monikerRange: 'azure-devops-2020 || azure-devops-2022'
+monikerRange: '<= azure-devops'
 ms.date: 04/25/2025
 #customer intent: As a developer, I want to understand the tools and clients that support connecting to Azure DevOps, so I can use the appropriate tools for my development.
 ---

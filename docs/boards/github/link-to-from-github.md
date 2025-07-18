@@ -144,7 +144,7 @@ With GitHub annotations enabled on the board, you can quickly open linked GitHub
 > [!div class="nextstepaction"]
 > [Configure status badges](configure-status-badges.md)
 
-## Related articles
+## Related content
 
 - [Integrate Azure Boards with GitHub](index.md)
 - [Understand how workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md)

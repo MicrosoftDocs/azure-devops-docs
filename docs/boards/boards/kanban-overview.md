@@ -168,7 +168,7 @@ You can also add or modify the fields defined for a work item type (WIT), add a 
 > [!div class="nextstepaction"]
 > [Use your board](kanban-quickstart.md)  
 
-## Related articles  
+## Related content  
 
 - [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md) 
 - [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)

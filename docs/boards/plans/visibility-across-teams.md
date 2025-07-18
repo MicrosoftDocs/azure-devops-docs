@@ -166,7 +166,7 @@ Only when the work item state changes does the card column reflect the same on a
 > [!IMPORTANT]   
 > Work items that appear on more than one team's board can yield query results that don't meet your expectations. Because each team can customize the board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For more information, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
-## Related articles
+## Related content
 
 As you can see, there are many ways you can monitor progress and trends across several teams. The methods you choose depend on your focus and organizational goals.
 

@@ -70,7 +70,7 @@ To connect your organization to Microsoft Entra ID, do the following steps:
 <a name='inform-users-microsoft-entra-change'></a>
 [!INCLUDE [inform-users-microsoft-entra-change](includes/inform-users-microsoft-entra-change.md)]
 
-## Related articles
+## Related content
 
 * [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)

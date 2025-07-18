@@ -101,6 +101,6 @@ If you have any issues connecting to Azure DevOps, see [Troubleshoot connection]
 > [!div class="nextstepaction"]
 > [Use the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 
-## Related articles
+## Related content
 
 *  [FAQs for manual testing](reference-qa.yml#tandfext)

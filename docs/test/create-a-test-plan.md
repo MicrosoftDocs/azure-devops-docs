@@ -161,7 +161,7 @@ In **Test Plans** for your test plan, use the :::image type="icon" source="media
 > [!div class="nextstepaction"]
 > [Create manual test cases](create-test-cases.md#test-cases) 
 
-## Related articles
+## Related content
 
 * [Test objects and terms](test-objects-overview.md) 
 * [FAQs for manual testing](reference-qa.yml#testplans)

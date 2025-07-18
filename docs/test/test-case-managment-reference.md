@@ -143,7 +143,7 @@ The following table provides links to articles that describe how to exercise the
  
  
 
-## Related articles
+## Related content
 
 - [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)
 - [Associate automated tests with test cases](associate-automated-test-with-test-case.md) 

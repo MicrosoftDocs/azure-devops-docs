@@ -370,7 +370,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 You can also use the [**az devops project** CLI](/cli/azure/devops/project).  
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Navigate the web portal](../../project/navigation/index.md)

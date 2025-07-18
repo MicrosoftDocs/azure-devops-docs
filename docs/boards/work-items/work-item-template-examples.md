@@ -116,6 +116,6 @@ For more information, see the following articles:
 You can programmatically interact with work item templates to create, get, list, and delete using the [Templates REST APIs](/rest/api/azure/devops/wit/templates/list).
 
 
-## Related articles
+## Related content
 
 - [Use templates to add and update work items](../backlogs/work-item-template.md)

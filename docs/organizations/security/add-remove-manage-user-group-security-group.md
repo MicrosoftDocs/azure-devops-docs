@@ -389,7 +389,7 @@ If your on-premises deployment is integrated with SQL Server Reports, you need t
 > [!div class="nextstepaction"]
 > [Manage projects](../projects/about-projects.md)
 
-## Related articles
+## Related content
  
 - [Set object-level permissions](set-object-level-permissions.md)
 - [Get started with permissions, access, and security groups](about-permissions.md)

@@ -320,7 +320,7 @@ After you add members to your project, each member receives an invitation email 
 > [!div class="nextstepaction"]
 > [Set up billing](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 
-## Related articles
+## Related content
 
 * [Create a project](../projects/create-project.md)
 * [Invite external users](add-external-user.md)

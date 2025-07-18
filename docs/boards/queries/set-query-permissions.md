@@ -162,7 +162,7 @@ To keep anyone else from modifying a shared query that you create, you might wan
 
 ::: moniker-end
 
-## Related articles  
+## Related content  
 
 - [Manage queries and query folders](organize-queries.md)
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)

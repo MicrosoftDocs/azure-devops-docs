@@ -134,7 +134,7 @@ When you link a test case to a work item using the "Tested By" link type, the bo
 > [!div class="nextstepaction"]
 > [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md)
 
-## Related articles
+## Related content
 
 - [Create manual tests](../../test/create-test-cases.md).  
 - [Disable this feature from the common configurations dialog](../../boards/boards/customize-cards.md).

@@ -466,7 +466,7 @@ The following table lists common query fields and their data type for which samp
    :::column-end:::
 :::row-end:::
 
-## Related articles
+## Related content
 
 - [Query by field value comparisons](query-field-value.md)
 - [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)  

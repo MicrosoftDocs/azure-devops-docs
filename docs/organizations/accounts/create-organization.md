@@ -60,7 +60,7 @@ With your organization, the following aspects are included in the free tier:
 > [!div class="nextstepaction"]
 > [Create a project](../projects/create-project.md)
 
-## Related articles
+## Related content
 
 * [Get started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md)
 * [Rename an organization](rename-organization.md)

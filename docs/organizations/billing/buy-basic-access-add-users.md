@@ -156,7 +156,7 @@ You're entitled to the same number of user licenses to be used in the server.
 > [!div class="nextstepaction"]
 > [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 
-## Related articles
+## Related content
 
 * [Set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing)
 * [Change your Azure subscription for billing](change-azure-subscription.md)

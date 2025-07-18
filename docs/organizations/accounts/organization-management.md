@@ -168,7 +168,7 @@ A best practice for managing users is to use security groups. You can utilize de
    :::column-end:::
 :::row-end:::
 
-## Related articles
+## Related content
 
 * [Learn about access levels](../security/access-levels.md)
 * [Understand default permissions and access](../security/permissions-access.md)

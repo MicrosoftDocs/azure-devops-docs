@@ -920,7 +920,7 @@ The following table provides descriptions for each of the link type attributes r
    :::column-end:::
 :::row-end:::
 
-## Related articles
+## Related content
 
 - [Link work items to other objects](../backlogs/add-link.md)  
 - [Track dependencies using Delivery Plans](../plans/track-dependencies.md)

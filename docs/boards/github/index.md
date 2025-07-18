@@ -83,7 +83,7 @@ If you connect the same GitHub repo to projects defined in two or more Azure Dev
 - Azure DevOps can only integrate with GitHub repositories or Azure Repos Git repositories. Integration with other Git repositories isn't supported.
 - You can't query for work items with links to GitHub artifacts. However, you can query for work items with an `External Link Count > 0`.
   
-## Related articles
+## Related content
 
 - [Build GitHub repositories](../../pipelines/repos/github.md) 
 - [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)

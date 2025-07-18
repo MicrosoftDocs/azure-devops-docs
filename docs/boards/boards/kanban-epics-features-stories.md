@@ -55,7 +55,7 @@ Add new items to a feature or epic through the item's   :::image type="icon" sou
 
 When you have many items to add, keep entering your task titles and press Enter. If you have details you want to add about to a work item, hover over the item and press Enter.  
  
-## Related articles
+## Related content
 
 - [Kanban board overview](kanban-overview.md)
 - [Add tasks or child items as checklists](add-task-checklists.md)

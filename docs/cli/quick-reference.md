@@ -252,7 +252,7 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 - [Show details of a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-show)
 - [Update a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-update)
 
-## Related articles
+## Related content
 
 - [Cross-service integration overview](../cross-service/cross-service-overview.md)
 - [witAdmin: Customize and manage objects for tracking work](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)

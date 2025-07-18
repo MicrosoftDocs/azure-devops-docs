@@ -1119,7 +1119,7 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 --- 
 
 
-## Related articles
+## Related content
 
 - [Sample rule scenarios](rule-samples.md)  
 - [Work item field index](../../../boards/work-items/guidance/work-item-field.md)

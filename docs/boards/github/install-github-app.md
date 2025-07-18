@@ -197,7 +197,7 @@ If you uninstall the Azure Boards app for GitHub, the following message displays
 > [!div class="nextstepaction"]
 > [Link GitHub commits, pull requests, and branches to work items](link-to-from-github.md) 
 
-## Related articles
+## Related content
  
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Change GitHub repository access, or suspend or uninstall the integration](change-azure-boards-app-github-repository-access.md)

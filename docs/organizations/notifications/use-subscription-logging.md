@@ -62,7 +62,7 @@ Access subscription diagnostic logs directly using API calls. Enter the followin
 
 Returns JSON-formatted diagnostic information.
 
-## Related articles
+## Related content
 
 - [Manage personal notifications](manage-your-personal-notifications.md)
 - [Manage notifications for a team, project, or organization](manage-team-group-global-organization-notifications.md)

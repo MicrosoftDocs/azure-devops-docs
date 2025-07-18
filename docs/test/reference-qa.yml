@@ -208,7 +208,7 @@ sections:
             1. Change it to **Disabled**.
 
 additionalContent: | 
-  ## Related articles
+  ## Related content
   - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
   - [Run manual tests](run-manual-tests.md)
   - [Track test status](track-test-status.md)

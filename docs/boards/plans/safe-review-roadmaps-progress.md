@@ -147,6 +147,6 @@ Need to develop a report using Analytics view and Power BI. Want something to ap
 > [Sign up for Azure Boards for free](../get-started/sign-up-invite-teammates.md) 
 
 
-## Related articles
+## Related content
 
 - [Review team Delivery Plans](review-team-plans.md) 

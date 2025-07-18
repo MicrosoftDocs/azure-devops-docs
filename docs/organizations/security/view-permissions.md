@@ -207,7 +207,7 @@ Do the following steps to view object-level permissions for you or other users.
 > [!div class="nextstepaction"]
 > [Look up a member of the Project Administrators group](look-up-project-administrators.md) 
 
-## Related articles
+## Related content
 
 - [Troubleshoot permissions](troubleshoot-permissions.md)
 - [Look up permissions and roles](permissions-lookup-guide.md)

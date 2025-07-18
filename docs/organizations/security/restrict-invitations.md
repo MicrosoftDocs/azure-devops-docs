@@ -52,7 +52,7 @@ Now, only Project Collection Administrators can invite new users to Azure DevOps
 > Project and Team Administrators can directly add users to their projects through the permissions blade. However, if they attempt to add users through the **Add Users** button located in the **Organization settings** > **Users** section, it's not visible to them.
 > Adding a user directly through **Project settings** > **Permissions** doesn't result in the user appearing automatically in the **Organization settings** > **Users** list. For the user to be reflected in the Users list, they must sign in to the system.
 
-## Related articles
+## Related content
 - [Default permissions and access](permissions-access.md) 
 - [Permission lookup guide](permissions-lookup-guide.md) 
 - [Get started with permissions, access, and security groups](about-permissions.md)

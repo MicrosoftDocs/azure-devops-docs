@@ -219,7 +219,7 @@ For details on supported Markdown features, see the following articles.
 <a id="related-articles"></a> 
 
 
-## Related articles
+## Related content
 
 - [Agile process](../work-items/guidance/agile-process.md)
 - [Scrum process](../work-items/guidance/scrum-process.md)
