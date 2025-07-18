@@ -39,7 +39,7 @@ To view test runs:
 
    :::image type="content" source="media/test-runs/run-option-test-plans-side-menu.png" alt-text="Screenshot showing the Runs option in the Test Plans side menu.":::
 
-   The test runs page displays all available test runs with filtering and search capabilities.
+   The test runs page displays all available test runs, both manual and automated, with filtering and search capabilities.
 
    :::image type="content" source="media/test-runs/test-runs-landing-page.png" alt-text="Screenshot of the test runs landing page showing the list of available test runs.":::
 
@@ -129,15 +129,16 @@ You can filter dashboard tiles by selecting subcategory text to focus on specifi
 
 To add attachments to a test run:
 
-1. In the test run details, select **+ Add**.
+1. In the test run details, select **+ Add attachments**.
 2. Choose your files and upload them.
-3. View, download, or delete attachments as needed.
 
    :::image type="content" source="media/test-runs/adding-attachments-run.png" alt-text="Screenshot showing how to add attachments to a test run.":::
 
+Once attachments are present you can view, download, or delete them as needed.
+
    :::image type="content" source="media/test-runs/run-attachments-list.png" alt-text="Screenshot of the test run attachments list with options to download or delete files.":::
 
-> [!NOTE]
+> [!TIP]
 > - Images and PDF files can be previewed by selecting the filename
 > - Run-level attachments are separate from individual test result attachments
 
