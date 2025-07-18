@@ -22,7 +22,7 @@ A deployment group installs a deployment agent on each target server in the grou
 
 | **Product**        | **Requirements**  |
 |--------------------|-------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../../organizations/projects/create-project.md). |
 | **Azure**   | - An [Azure subscription](https://azure.microsoft.com/free/). |
 
 ## Set up resources in Azure
