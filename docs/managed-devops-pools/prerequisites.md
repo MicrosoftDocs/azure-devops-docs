@@ -19,6 +19,9 @@ At a high level, you need:
 
 This article shows you how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools. These configuration steps only need to be performed a single time per Azure DevOps organization and Azure subscription.
 
+> [!NOTE]
+> If you're creating a Managed DevOps Pool from a pipeline, grant the permissions described in [Verify Azure permissions](#verify-azure-permissions) and [Verify Azure DevOps permissions](#verify-azure-devops-permissions) to the service connection's app registration or managed identity instead of your account. For more information, see [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md) and [Use service principals & managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md).
+
 ## Configure your Azure subscription
 
 1. [Verify Azure permissions](#verify-azure-permissions)
@@ -39,6 +42,9 @@ To create and manage Managed DevOps Pools, you must have one of the following ro
 To check the role assignments for your account, see [List Azure role assignments](/azure/role-based-access-control/role-assignments-list-portal).
 
 For information on assigning roles, see [Steps to assign an Azure role](/azure/role-based-access-control/role-assignments-steps).
+
+> [!NOTE]
+> If you're creating a Managed DevOps Pool from a pipeline, assign one of the roles from the previous table to the the service connection's app registration or managed identity. For more information, see [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md) and [Use service principals & managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 If you're creating a dev center and dev center project during Managed DevOps Pool creation, you must have the [Contributor](/azure/role-based-access-control/built-in-roles/privileged#contributor) or [Owner](/azure/role-based-access-control/built-in-roles/privileged#owner) role assigned to your account for the [scope](/azure/role-based-access-control/role-assignments-steps#step-3-identify-the-needed-scope) in which you want to create the dev center. For more information, see [Create a dev center and dev center project](#create-a-dev-center-and-dev-center-project).
 
@@ -248,7 +254,7 @@ When you create a Managed DevOps Pool, the account you use to sign in to the Azu
 | [Project level agent pools administrator or creator](#project-level-agent-pools-administrator-or-creator) | You must have **Administrator** or **Creator** agent pool permissions at the project level for each project in which you want to make your Managed DevOps Pool available to pipelines. |
 
 > [!NOTE]
-> To create a Managed DevOps Pool from a pipeline, add the service connection's App Registration to the Azure DevOps organization and grant it the permissions described in the previous table. For more information, see [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md) and [Use service principals & managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md). above as described [here](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#2-add-a-service-principal-to-an-azure-devops-organization), otherwise deployment will fail with error 
+> If you're creating a Managed DevOps Pool from a pipeline, add the service connection's app registration or managed identity to the Azure DevOps organization and grant it the permissions described in the previous table. For more information, see [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md) and [Use service principals & managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 ### Verify membership in the Azure DevOps organization
 
