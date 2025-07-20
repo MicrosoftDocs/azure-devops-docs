@@ -196,7 +196,7 @@ jobs:
 - job: B
   dependsOn: A
   variables:
-    myVarFromJobA: $[ dependencies.A.outputs['passOutput.myOutputVar'] ]  
+    myVarFromJobA: $[ dependencies.A.outputs['A.passOutput.myOutputVar'] ]  
   steps:
   - bash: |
      echo $(myVarFromJobA)
@@ -227,7 +227,7 @@ jobs:
 - job: B
   dependsOn: A
   variables:
-    myVarFromJobA: $[ dependencies.A.outputs['passOutput.myOutputVar'] ]  
+    myVarFromJobA: $[ dependencies.A.outputs['A.passOutput.myOutputVar'] ]  
   steps:
   - powershell: |
      Write-Host $(myVarFromJobA)
