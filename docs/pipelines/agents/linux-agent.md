@@ -4,7 +4,7 @@ description: Learn how you can easily deploy a self-hosted agent on Linux for Az
 ms.topic: conceptual
 ms.custom: linux-related-content
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 07/11/2025
+ms.date: 07/21/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -23,7 +23,7 @@ This article provides guidance for using the [4.x agent software](v4-agent.md) w
 This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
 > [!IMPORTANT]
-> If you're using Azure DevOps Server, you should be using the [4.x agent software](v4-agent.md).
+> If you're using Azure DevOps Services, you should be using the [4.x agent software](v4-agent.md).
 
 :::moniker-end
 

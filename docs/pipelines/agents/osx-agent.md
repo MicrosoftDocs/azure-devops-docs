@@ -3,7 +3,7 @@ title: Deploy a build and release agent on macOS
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.date: 07/11/2025
+ms.date: 07/21/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -22,7 +22,7 @@ This article provides guidance for using the [4.x agent software](v4-agent.md) w
 This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
 > [!IMPORTANT]
-> If you're using Azure DevOps Server, you should be using the [4.x agent software](v4-agent.md).
+> If you're using Azure DevOps Services, you should be using the [4.x agent software](v4-agent.md).
 
 :::moniker-end
 
