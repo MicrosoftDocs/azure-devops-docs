@@ -169,7 +169,7 @@ Objects allow you to define complex parameter structures, such as nested element
 
 ##### Example: Iterating through object keys and values
 
-The following template file the `myObject` parameter as an object with default key-value pairs. The job iterates through the keys and prints their values.
+The following template file defines the `myObject` parameter as an object with default key-value pairs. The job iterates through the keys and prints their values.
 
 ```yaml
 # object-keys-template.yml
