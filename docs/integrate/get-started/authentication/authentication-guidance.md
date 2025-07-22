@@ -1,137 +1,150 @@
 ---
-title: Choose your authentication method for Azure DevOps
+title: Authentication Methods For Azure DevOps
 titleSuffix: Azure DevOps  
 description: Choose the right authentication method for your Azure DevOps integration, with Microsoft Entra ID as the recommended approach.
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.subservice: azure-devops-security
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: arm2024
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/14/2025
+ms.date: 07/21/2025
 ---
 
-# Choose your authentication method for Azure DevOps
+# Authentication methods for Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
+This article describes authentication methods for Azure DevOps integration and helps you choose the best option for your scenario. Modern authentication approaches like Microsoft Entra ID provide enhanced security and provide the best approach for new applications.
+
 > [!IMPORTANT]
-> **Microsoft Entra ID authentication is recommended** for new applications integrating with Azure DevOps Services. Personal access tokens should be used sparingly and only when Microsoft Entra ID isn't available.
+> Microsoft Entra ID authentication is recommended for new applications integrating with Azure DevOps Services.
+> Use personal access tokens sparingly, and only use them when Microsoft Entra ID isn't available.
 
-This article helps you choose the most appropriate authentication method for your Azure DevOps integration. Modern authentication approaches like Microsoft Entra ID provide enhanced security and are recommended for new applications.
+OAuth 2.0 and Microsoft Entra ID authentication are available for Azure DevOps Services only, not Azure DevOps Server.
 
-> [!NOTE]
-> OAuth 2.0 and Microsoft Entra ID authentication are only available for Azure DevOps Services, not Azure DevOps Server. For on-premises scenarios, use [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Authentication, or [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). 
+For on-premises scenarios, use [.NET client libraries](../../concepts/dotnet-client-libraries.md), Windows authentication, or [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Authentication methods by scenario
 
 Choose the appropriate authentication method based on your application type and requirements:
 
-| Application Type | Description | Example | Recommended Method | Code Samples |
-|------------------|-------------|---------|-------------------|-------------|
-| **Web/desktop apps** | Interactive applications using current frameworks | React app, .NET desktop app | [Microsoft Entra ID OAuth](./entra-oauth.md) with MSAL | [sample](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ManagedClientConsoleAppSample) |
-| **Service/background apps** | Applications running without user interaction | Azure Functions, background services | [Service principals & managed identities](./service-principal-managed-identity.md) | [sample](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples) |
-| **Legacy client apps** | Existing applications using client libraries | Console apps with Azure DevOps .NET libraries | [Client Libraries](../../concepts/dotnet-client-libraries.md) with OAuth | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| **Headless/CLI apps** | Non-interactive command-line tools | Build scripts, automation tools | [Device Code Flow](./entra-oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
-| **Azure DevOps extensions** | Extensions running within Azure DevOps | Custom dashboard widgets, work item forms | [VSS Web Extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [sample](../../../extend/develop/add-dashboard-widget.md) |
-| **Azure DevOps Server apps** | On-premises Azure DevOps Server integrations | Custom server extensions | [Client Libraries](../../concepts/dotnet-client-libraries.md) or Windows Auth | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| **Personal/ad-hoc scripts** | Quick scripts for personal use | PowerShell scripts, curl commands | [Personal Access Tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) | [examples](../../how-to/call-rest-api.md) |
+| Application type | Description | Example | Recommended method | Code samples |
+|------------------|-------------|---------|--------------------|--------------|
+| **Web/desktop apps** | Interactive applications using current frameworks | React app, .NET desktop app | [Microsoft Entra OAuth](./entra-oauth.md) with the Microsoft Authentication Library (MSAL) | [Managed client console app](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ManagedClientConsoleAppSample) |
+| **Service/background apps** | Applications running without user interaction | Azure Functions, background services | [Service principals and managed identities](./service-principal-managed-identity.md) | [Service principals](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples) |
+| **Legacy client apps** | Existing applications using client libraries | Console apps with Azure DevOps .NET libraries | [.NET client libraries](../../concepts/dotnet-client-libraries.md) with OAuth | [Client library console app](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
+| **Headless/CLI apps** | Non-interactive command-line tools | Build scripts, automation tools | [Device authorization grant flow](/entra/identity-platform/v2-oauth2-device-code) | [Device profile](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
+| **Azure DevOps extensions** | Extensions running within Azure DevOps | Custom dashboard widgets and work item forms | [Azure DevOps web extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [Add a dashboard widget](../../../extend/develop/add-dashboard-widget.md) |
+| **Azure DevOps Server apps** | On-premises Azure DevOps Server integrations | Custom server extensions | [.NET client libraries](../../concepts/dotnet-client-libraries.md) or Windows Auth | [Client library console app](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
+| **Personal/ad-hoc scripts** | Quick scripts for personal use | PowerShell scripts, curl commands | [Personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) | [Get started with the REST APIs](../../how-to/call-rest-api.md) |
 
-## Getting started recommendations
+## Suggestions for getting started
 
-### For new applications
-- **Start with [Microsoft Entra ID authentication](entra-oauth.md)** for the best security and future compatibility.
-- Use **service principals or managed identities** for service-to-service scenarios.
+The following sections provide recommendations for getting started in different scenarios.
+
+### New applications
+
+- [Build Azure DevOps integrations with Microsoft Entra OAuth apps](entra-oauth.md) for the best security and future compatibility.
+- Use service principals or managed identities for service-to-service scenarios.
 - Avoid personal access tokens in production applications.
 
-### For existing applications  
-- **Plan migration** from personal access tokens to Microsoft Entra ID authentication.
-- Consider the [authentication migration timeline](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) for Azure DevOps improvements.
+### Existing applications
+
+- Plan migration from personal access tokens to Microsoft Entra ID authentication.
+- Consider the [authentication migration timeline](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) for Azure DevOps improvements and reducing the use of personal access tokens.
 - Review your current authentication approach against security best practices.
 
-### For Azure DevOps Server
-- Use [Client Libraries](../../concepts/dotnet-client-libraries.md) with Windows Authentication when possible.
+### Azure DevOps Server
+
+- Use [.NET client libraries](../../concepts/dotnet-client-libraries.md) with Windows Authentication when possible.
 - Personal access tokens are acceptable for some Azure DevOps Server scenarios.
 - Plan for future Azure DevOps Services migration to take advantage of modern authentication.
 
-## Frequently asked questions
+## Answers to common questions 
 
-### Q: Should I use Microsoft Entra ID OAuth or Personal Access Tokens?
-A: 
-**Use Microsoft Entra ID OAuth** for:
+The following sections provide answers to frequently asked questions.
+
+### Should I use Microsoft Entra ID OAuth or personal access tokens?
+
+**Use Microsoft Entra ID OAuth** in the following scenarios:
+
 - New applications and integrations
-- Production workloads requiring robust security
-- Applications needing enterprise identity integration
+- Production workloads that require robust security
+- Applications that need enterprise identity integration
 - Long-term projects with compliance requirements
 
-**Use Personal Access Tokens only for**:
+**Only use Personal Access Tokens** in the following scenarios:
+
 - Personal scripts and ad-hoc tasks
 - Legacy applications during migration planning
 - Azure DevOps Server scenarios where modern authentication isn't available
 
-### Q: Should I use service principals or user delegation for authentication?
-A: 
-**Use service principals or managed identities** when:
-- Building applications that operate independently (background services, automation)
-- Creating apps that don't require user interaction
-- Implementing service-to-service communication
-- Building CI/CD pipelines or automated workflows
+### Should I use service principals or user delegation for authentication?
 
-**Use user delegation (OAuth with user consent)** when:
-- Building applications that act on behalf of human users
-- Creating interactive apps where users sign in with their own credentials
-- Implementing features that require user-specific permissions
-- Building apps that need to respect user's individual access rights
+**Use service principals or managed identities** in the following scenarios:
 
-### Q: How do I authenticate with both Azure DevOps Server and Azure DevOps Services?
-A:
-**Best practice**: Create separate authentication paths:
-- **Azure DevOps Services**: Use Microsoft Entra ID OAuth
-- **Azure DevOps Server**: Use Client Libraries with Windows Authentication or PATs
+- Build applications that operate independently (background services, automation)
+- Create apps that don't require user interaction
+- Implement service-to-service communication
+- Build CI/CD pipelines or automated workflows
 
-Use the `requestContext` to detect the service type and apply the appropriate authentication method.
+**Use user delegation (OAuth with user consent)** in the following scenarios:
 
-### Q: Why can't my service account access Azure DevOps APIs?
-A: 
-Common issues:
-- **Service account not "materialized"**: Service accounts need interactive sign-in permissions or proper Microsoft Entra ID registration
-- **Insufficient permissions**: Ensure the service account has appropriate Azure DevOps permissions
-- **Authentication method**: Use service principals or managed identities instead of trying to authenticate as a service account
+- Build applications that act on behalf of human users
+- Create interactive apps where users sign in with their own credentials
+- Implement features that require user-specific permissions
+- Build apps that respect user's individual access rights
 
-### Q: How do I migrate from PATs to modern authentication?
-A: Do the following steps:
-1. **Identify current PAT usage** in your applications
-2. **Choose the appropriate modern method**:
+### How do I authenticate with both Azure DevOps Server and Azure DevOps Services?
+
+The best practice is to create separate authentication paths:
+
+- **Azure DevOps Services**: Use Microsoft Entra ID OAuth.
+- **Azure DevOps Server**: Use .NET client libraries with Windows Authentication or personal access tokens.
+
+Use the `requestContext` method to detect the service type and apply the appropriate authentication method.
+
+### Why can't my service account access Azure DevOps APIs?
+ 
+Here are some common issues that can affect service account access:
+
+- **Service account not "materialized"**: Use correct sign in method. Service accounts need interactive sign-in permissions or proper Microsoft Entra ID registration.
+- **Insufficient permissions**: Ensure the service account has appropriate Azure DevOps permissions.
+- **Authentication method**: Use service principals or managed identities instead of trying to authenticate as a service account.
+
+### How do I migrate from personal access tokens to modern authentication?
+
+Complete the following steps:
+
+1. Identify current personal access token usage in your applications.
+
+1. Choose an alternate authentication method:
+
    - Microsoft Entra ID OAuth for user-delegated scenarios
    - Service principals for service-to-service scenarios
-3. **Update authentication code** using our [migration samples](https://github.com/microsoft/azure-devops-auth-samples)
-4. **Test thoroughly** before removing PAT dependencies
-5. **Monitor and validate** the new authentication method
 
-## Next step
+1. Update the authentication code by using the [Azure DevOps migration authentication samples](https://github.com/microsoft/azure-devops-auth-samples).
 
-Choose your authentication implementation:
+1. Test the changes thoroughly before you remove any personal access token dependencies.
 
-**For new applications:**
-> [!div class="nextstepaction"]
-> [Microsoft Entra ID OAuth](entra-oauth.md)
+1. Monitor and validate the new authentication method.
 
-**For service applications:**
-> [!div class="nextstepaction"]
-> [Service principals and managed identities](service-principal-managed-identity.md)
+## Implementation procedures
 
-**For personal scripts:**
-> [!div class="nextstepaction"]
-> [Personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+After you choose the authentication method for your scenario, complete the implementation:
 
-## Related resources
+- **New applications**: [Build Azure DevOps integrations with Microsoft Entra OAuth apps](entra-oauth.md)
 
-- [Microsoft Entra ID authentication guide](entra-oauth.md)
+- **Service applications**: [Use service principals and managed identities in Azure DevOps](service-principal-managed-identity.md)
+
+- **Personal scripts**: [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+
+## Related content
+
 - [OAuth 2.0 for Azure DevOps](oauth.md)
 - [Azure DevOps Services REST API reference](/rest/api/azure/devops)
-- [Azure DevOps .NET Client Libraries](../../concepts/dotnet-client-libraries.md)
-- [Authentication code samples](https://github.com/microsoft/azure-devops-auth-samples)
 - [Security and identity in Azure DevOps](../../../organizations/security/about-security-identity.md)
-- [Azure DevOps data protection overview](../../../organizations/security/data-protection.md)
+- [Azure DevOps data protection overview](../../../organizations/security/data-protection.md) 
