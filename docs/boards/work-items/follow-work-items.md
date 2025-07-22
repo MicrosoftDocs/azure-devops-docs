@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/21/2025
+ms.date: 07/22/2025
 ---
 
 # Follow work items and pull requests  
@@ -161,11 +161,6 @@ Use the **@Follows** macro to build powerful queries that combine items you're f
 > [!TIP]
 > **Share query structures**: While @Follows is personal to you, you can share query templates with teammates to create consistent follow-up workflows.
 
-## Next step
-
-> [!div class="nextstepaction"]
-> [Add and update work items](../backlogs/add-work-items.md) 
-
 ## Frequently asked questions
 
 ### Q: Can I add someone else to follow a work item or PR?
@@ -187,6 +182,11 @@ For team-wide notifications, see [Manage team notifications](../../organizations
 ### Q: Can I follow items across different projects?
 
 **A:** Yes! The Follow feature works across all projects in your organization. Use the **Followed work items** query to see everything in one place.
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Add and update work items](../backlogs/add-work-items.md) 
 
 ## Related content
 
