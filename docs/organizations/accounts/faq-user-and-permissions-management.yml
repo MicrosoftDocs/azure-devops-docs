@@ -135,8 +135,8 @@ sections:
           Q: What happens when a GitHub Enterprise license is no longer detected?
         answer: |
           A: When a user no longer has GitHub Enterprise, they're treated like a new user.  
-          - Your organization's default access level, whether Basic or Basic + Test Plans, gets assigned automatically. 
-          - If your organization established Group Rules, the user receives the access specified for their Microsoft Entra group. Group rule reevaluation occurs every 24 hours, so they might initially have Stakeholder access before receiving group rule access. 
+          - If your organization's default access level is Basic, they get assigned Basic automatically. 
+          - If your organization established Group Rules, the user receives the access specified by their group membership. Group rule reevaluation occurs every 24 hours, so they might initially have Stakeholder access before receiving group rule access. 
           
           Otherwise, users who no longer have access through GitHub Enterprise maintain Stakeholder access until an administrator assigns them paid access.
 
