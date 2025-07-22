@@ -24,9 +24,7 @@ The **@mention** control allows you to quickly add a user or group to a work ite
 For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups within Microsoft Entra ID. You can search for users and groups beyond those users added to your project. For more information, see [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more).
 
 > [!NOTE]
-
 > You can post an @mention via API. To get the Azure DevOps User ID, see [Get the Azure DevOps User ID](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0).
-
 >
 > - If your organization is using the existing HTML editor, add the following HTML code:
 >   ```html
@@ -100,7 +98,7 @@ You can also use group mentions. Enter the name of a team or a security group, c
 > ![Screenshot of discussion section with at mention made.](media/at-mention/at-mention-discussion.png)
 
 > [!NOTE]
-> Don't copy and paste **@mention** users from a previous comment. Although the formatting may look identical to a properly entered mention, it doesn't register as a true mention and doesn't send an email notification.
+> Don't copy and paste **@mention** users from a previous comment. Although the formatting might look identical to a properly entered mention, it doesn't register as a true mention and doesn't send an email notification.
 
 Upon completion of your selection and text entry, your **@mention** user receives an email alerting them about the mention.
 
