@@ -3,7 +3,7 @@ title: Follow work items and pull requests
 titleSuffix: Azure Boards & Azure Repos
 description: Track updates to work items and pull requests by following them to receive targeted notifications in Azure DevOps.
 ms.custom: work-items, cross-project
-ms.subservice: azure-devops-boards
+ms.service: azure-devops-boards
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ai-usage: ai-assisted
 ms.author: chcomley
@@ -94,7 +94,7 @@ You receive email notifications when team members:
 **Quick steps**: Go to any pull request → :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More actions** → :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow**.
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot showing the Pull Request context menu with Follow icon option.](media/follow-work/follow-pull-request.png)
+> ![Screenshot showing the Pull Request context menu with Follow icon option.](media/follow-pull-request.png)
 
 ### Pull request notifications
 
@@ -137,6 +137,8 @@ You receive email notifications when team members:
 ## Create custom queries with @Follows
 
 Use the **@Follows** macro to build powerful queries that combine items you're following with other criteria.
+
+<a id="query-work-items-that-youre-following">  </a>
 
 ### Basic @Follows query
 
@@ -190,7 +192,6 @@ For team-wide notifications, see [Manage team notifications](../../organizations
 
 ## Related content
 
-- [Query for work items in Azure Boards](../queries/query-work-items.md)
 - [Create and save managed queries with Query Editor](../queries/using-queries.md)
 - [View and configure notifications](../../organizations/notifications/about-notifications.md)
 - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
