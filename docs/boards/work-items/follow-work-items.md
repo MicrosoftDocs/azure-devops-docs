@@ -22,7 +22,9 @@ ms.date: 07/22/2025
 Stay informed about changes to specific work items or pull requests by using the Follow feature. This feature provides targeted notifications on a case-by-case basis, helping you track items that matter most to your work without information overload.
 
  > [!TIP]
-> **Quick start**: Select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow** icon on any work item or pull request to start receiving notifications when it changes.## What you can do with the Follow feature
+> **Quick start**: Select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow** icon on any work item or pull request to start receiving notifications when it changes.
+
+## What you can do with the Follow feature
 
 - **Track specific items**: Get notifications only for work items and pull requests you choose to follow
 - **Customize notifications**: Choose when to receive alerts (all changes, mentions only, or specific field updates)
@@ -34,7 +36,7 @@ Stay informed about changes to specific work items or pull requests by using the
 | Feature | Following | Notification Subscriptions |
 |---------|-----------|---------------------------|
 | **Scope** | Individual items you select | Broad criteria across projects |
-| **Setup** | One-select on specific items | Configure rules and filters |
+| **Setup** | One-click on specific items | Configure rules and filters |
 | **Best for** | Tracking specific work items/PRs | Automated team workflows |
 | **Examples** | Following a bug you reported | All items assigned to you |
 
@@ -53,7 +55,7 @@ For automated notifications based on broader criteria, see [Manage personal noti
 
 ### Customize your notification preferences
 
-Select the :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: **Settings** icon next to Follow to choose when you get notified:
+Select the :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: **Settings** icon next to **Follow** to choose when you get notified:
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing the Work item form notification settings dialog for follow.](media/follow-work/notification-settings-for-follow.png)
@@ -65,13 +67,13 @@ Select the :::image type="icon" source="../media/icons/gear_icon.png" border="fa
 | **Custom** | When specific fields change | Critical updates only |
 
 **Custom notification triggers:**
-- **State changes**: When status updates (New → Active → Resolved)
+- **State changes**: When status updates, for example, New → Active → Resolved
 - **Assignment changes**: When someone new is assigned
 - **Iteration changes**: When moved to different sprint
 
 ### What triggers notifications
 
-You receive email notifications when team members:
+You receive email notifications when team members make the following actions:
 
 | Action | Example | 
 |--------|---------|
