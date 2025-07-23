@@ -1,5 +1,5 @@
 ---
-title: Query work items by history
+title: Query Work Items By History
 titleSuffix: Azure Boards
 description: Learn how to query work item history and comments to support audit requirements when working in Azure Boards.
 ms.service: azure-devops-boards
@@ -10,9 +10,9 @@ ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 11/26/2024
+ms.date: 07/23/2025
+#customer intent: As an Azure DevOps developer, I want to query work item history and comments, so I can support audit requirements in Azure Boards.
 ---
-
 
 # Query work item history and discussion fields
 
@@ -21,7 +21,7 @@ ms.date: 11/26/2024
 The history of a work item records who created the item, what changes were made, and the reasons behind those changes. This information is essential for tracking the evolution of an item over time. When adding entries to the history field, include detailed information to help the next work item owner understand the context of the changes and the actions required.
 
 > [!NOTE]
-> There is no separate **Discussion** work item field. To query work items with comments from the Discussion area, filter on the **History** field. All text entered into the Discussion box is automatically included in the History field.
+> There's no separate **Discussion** work item field. To query work items with comments from the Discussion area, filter on the **History** field. All text entered into the Discussion box is automatically included in the History field.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ The history of a work item records who created the item, what changes were made,
 
 ## Query a work item's history 
 
-You can use the web portal or Team Explorer to view a work item's history or search for work items based on the **History** field. Searching the **History** field returns only work items with changes recorded in that field and does not include changes made to other fields.
+You can use the web portal or Team Explorer to view a work item's history or search for work items based on the **History** field. Searching the **History** field returns only work items with changes recorded in that field and doesn't include changes made to other fields.
 
 #### [Browser](#tab/browser/)
 <a id="team-services"></a> 
@@ -59,7 +59,7 @@ The **Query Editor** isn't available when you're connected to GitHub or non-Micr
 * If you're set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](../work-items/set-work-item-experience-vs.md).  
 * If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
 
-![Screenshot of Query Editor to Search for items based on words contained in the History field in Team Explorer.](media/hist-audit-query-team-explorer.png) 
+:::image type="content" source="media/hist-audit-query-team-explorer.png" alt-text="Screenshot of Query Editor to Search for items based on words contained in the History field in Team Explorer.":::
 
 * * *
 
@@ -109,7 +109,7 @@ Use the query editor to include the **History** field in a [query clause](using-
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Items closed within a specified time period
+   Items closed within a specified time
    :::column-end:::
    :::column span="1":::
    `State = Done`  
@@ -119,7 +119,7 @@ Use the query editor to include the **History** field in a [query clause](using-
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Items I've been associated with
+   Items with which I have an association
    :::column-end:::
    :::column span="1":::
    `History Contains Words MyName`  
@@ -144,7 +144,7 @@ Use the query editor to include the **History** field in a [query clause](using-
   - For more information, see [Configure and Manage Stopwords and Stoplists for Full-Text Search](/sql/relational-databases/search/configure-and-manage-stopwords-and-stoplists-for-full-text-search).
 
 - **Run and validate your query:**
-  - Select ![Run query](../media/icons/run_query.png) or ![Run query, earlier version](../media/icons/run_query_te.png) in the query editor toolbar.
+  - Select :::image type="icon" source="../media/icons/run_query.png"::: or :::image type="icon" source="../media/icons/run_query_te.png"::: in the query editor toolbar.
   - Ensure the query returns the expected results.
   - If results are missing, adjust your search terms and run the query again.
 
@@ -152,7 +152,7 @@ Use the query editor to include the **History** field in a [query clause](using-
 
 ## View the history of work items  
 
-An entry gets made to the **History** field each time a work item is saved. To view the history of changes, open an existing work item, and then choose the ![history tab icon](../media/icons/icon-history-tab-wi.png) or **History**, or for some work item types (WITs), choose **Details**. 
+An entry gets made to the **History** field each time a work item is saved. To view the history of changes, open an existing work item, and then select **History** :::image type="icon" source="../media/icons/icon-history-tab-wi.png":::, or for some work item types (WITs), select **Details**. 
 
 <a id="web-portal-explorer-tab"></a> 
 The history details shown depend on the platform, version, and client.
@@ -162,21 +162,21 @@ The history details shown depend on the platform, version, and client.
 <a id="team-services-tab"></a> 
 <a id="team-services-view"></a> 
 
-:::image type="content" source="media/hist-audit-wi-form-vsts-tab.png" alt-text="Screenshot of Work item form, Web portal, Choose History tab.":::
+:::image type="content" source="media/hist-audit-wi-form-vsts-tab.png" alt-text="Screenshot of Work item form, Web portal, History tab.":::
 
-The state change history diagram appears first. To see the entire history of state changes, choose **Show all**.
+The state change history diagram appears first. To see the entire history of state changes, select **Show all**.
 
 :::image type="content" source="media/state-change-history-diagram.png" alt-text="Screenshot of Work item form, Web portal, State change history diagram (web portal only).":::
 
-Choose an entry in the left pane and view the details of changes made.
+Select an entry in the left pane and view the details of changes made.
 
 :::image type="content" source="media/hist-audit-wi-form.png" alt-text="Screenshot of Work item form, History tab, Web portal, Details.":::
 
 #### [Visual Studio](#tab/visual-studio/)
 
-To view only the comments that were added to the log, choose the **Discussion Only** tab. To view all changes made to the item, choose the **All Changes** tab, and then choose the **show all changes** link for a specific date and time.  
+To view only the comments that were added to the log, select the **Discussion Only** tab. To view all changes made to the item, select the **All Changes** tab, and then select the **show all changes** link for a specific date and time.  
 
-![Screenshot of Work item form, Team Explorer, History tab.](media/ALM_HA_AllChanges.png) 
+:::image type="content" source="media/ALM_HA_AllChanges.png" alt-text="Screenshot of Work item form, Team Explorer, History tab.":::
 
 * * *
 
@@ -282,7 +282,7 @@ You can use the following fields to filter queries and create reports. Several o
    > History field queries return work items whose **Discussion** comments or **Description** fields contain words that match the keywords entered. You can't use the History field to query on changes made to other fields.  
 
    You can't add formatted text to the history field. Once you save the work item, you can't alter the history.  
-   The `History` field, along with the `Description`, `Steps to Repro` and `Title` fields are automatically indexed for full-text search as described in [Query fields, operators, and macros](query-operators-variables.md).  
+   The `History` field, along with the `Description`, `Steps to Repro`, and `Title` fields are automatically indexed for full-text search as described in [Query fields, operators, and macros](query-operators-variables.md).  
 
    `Reference name=System.History, Data type=History`
    :::column-end:::
@@ -310,7 +310,7 @@ You can use the following fields to filter queries and create reports. Several o
    :::column span="2":::
    A number that is assigned to the historical revision of a work item.   
    > [!NOTE]   
-   > A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restricts updates from the REST API, however, updates from the web portal are not affected.   
+   > A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restricts updates from the REST API, however, updates from the web portal aren't affected.   
 
    `Reference name=System.Rev, Data type=Integer`
    :::column-end:::
@@ -346,7 +346,7 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="test-suite-audit"/>Test Suite Audit
+   <a id="test-suite-audit">Test Suite Audit </a>
    :::column-end:::
    :::column span="2":::
    Tracks other operations performed when modifying a test suite, for example, adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There's a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.  
@@ -359,7 +359,7 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="watermark"/>Watermark
+   <a id="watermark">Watermark </a>
    :::column-end:::
    :::column span="2":::
    A system-managed field (not editable) that increments with changes made to a work item.  
@@ -371,15 +371,15 @@ You can use the following fields to filter queries and create reports. Several o
    :::column-end:::
 :::row-end:::
 
+**Table notes**
 
-> [!NOTE]
-> 1. These fields must be included in the `WORKFLOW` section of the WIT definition. For example, this syntax is included within the `FIELDS` definition when transitioning to a Resolved state:
-> 
->    ```xml
->    <FIELD refname="Microsoft.VSTS.Common.ResolvedDate">
->       <SERVERDEFAULT from="clock" />
->    </FIELD>
->    ```
+<sup>**1**</sup> These fields must be included in the `WORKFLOW` section of the WIT definition. For example, the following syntax is included within the `FIELDS` definition when transitioning to a Resolved state:
+
+```xml
+<FIELD refname="Microsoft.VSTS.Common.ResolvedDate">
+   <SERVERDEFAULT from="clock" />
+</FIELD>
+```
 
 ## Related content
 
