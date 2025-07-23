@@ -79,8 +79,8 @@ To configure which columns display:
 
    :::image type="content" source="media/test-runs/column-options.png" alt-text="Screenshot showing the column options configuration dialog for test runs.":::
 
-> [!NOTE]
-> Pipeline Run and Pipeline Run Tested columns apply to automated runs only.
+> [!TIP]
+> Pipeline Run and Pipeline Run Tested columns apply to automated runs only, and relate to both Build and Release Pipelines.
 
 ## Test run states
 
