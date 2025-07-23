@@ -5,7 +5,7 @@ ms.service: azure-devops-test-plans
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 07/18/2025
+ms.date: 07/23/2025
 monikers: 'azure-devops'
 ---
 
@@ -16,20 +16,19 @@ monikers: 'azure-devops'
 Azure DevOps Test Plans provides a new Test Run Hub experience for managing test execution. This enhanced interface helps teams track test progress, analyze results, and maintain quality across development cycles.
 
 > [!NOTE]
-> The new Test Run Hub experience is automatically enabled for all organizations. You can disable it by going to **Preview features** and moving the toggle for **New Test Run Hub** to **Off**. In case of disabling the experience, please consider leaving your feedback as well to help improve the feature closer to your needs.
-> Additionally, if you dont see the new experience activated yet for your Azure DevOps organisation, this is normal as the roll out is gradual. Please wait for few more days and you will see it activated soon.
-> :::image type="content" source="media/test-runs/step-one-public-preview.png" alt-text="Screenshot showing step 1 of accessing preview features to disable the new Test Run Hub.":::
-> :::image type="content" source="media/test-runs/step-two-public-preview.png" alt-text="Screenshot showing step 2 of disabling the New Test Run Hub feature.":::
+> The new Test Run Hub experience is automatically enabled for all organizations. To disable it, go to **Preview features** and set the **New Test Run Hub** toggle to **Off**. If you [disable this feature](../project/navigation/preview-features.md), share your feedback to help us improve it.
+>  
+> If you don't see the new experience in your organization yet, it's normal as the rollout is gradual.
 
 ## What is a test run?
 
-A test run is a container that captures the execution of one or more test cases in Azure DevOps. It represents a specific instance of test execution and tracks the outcome, duration, and related details of test case execution. Test runs are typically created when test cases are executed from a test plan or a pipeline.
+A test run is a container that captures the execution of one or more test cases in Azure DevOps. It tracks the outcome, duration, and execution details for a specific testing session. Test runs are automatically created when you execute test cases from a test plan or pipeline.
 
 Test runs help teams:
 
-- Monitor test progress and quality trends
-- Identify regressions or failures quickly  
-- Audit and analyze historical test data
+- **Monitor quality trends**: Track test progress and pass rates over time
+- **Identify issues quickly**: Spot regressions, failures, and blocked tests
+- **Maintain test history**: Audit and analyze historical execution data for insights
 
 ## Access test runs
 
@@ -68,7 +67,7 @@ The Test Run Hub provides several ways to find specific test runs:
 
 ### Customize columns
 
-To configure which columns display:
+To configure which columns display, do the following steps:
 
 1. Select **Column options** in the top right.
 
@@ -103,7 +102,7 @@ When you select a test run, the details page provides comprehensive information:
 The main page includes:
 
 - **Pass rate**: Percentage of executed cases that passed (excluding "Not applicable" cases)
-- **Comments**: Run-level comments (supports Markdown formatting, tagging users by typing "@", work items "#", and pull requests "!")
+- **Comments**: Run-level comments (supports Markdown formatting, tagging users by entering `@`, work items `#`, and pull requests `!`)
 - **Test case results**: Outcome of each test case (Passed, Failed, Not Executed)
 - **Test run metadata**: Execution details including who ran the test, when, and the environment
 - **Attachments and logs**: Screenshots, logs, and other artifacts from execution
@@ -190,7 +189,7 @@ The analysis section helps structure post-execution review:
 :::image type="content" source="media/test-runs/analysis.png" alt-text="Screenshot showing the analysis information section for detailed test case review.":::
 
 > [!TIP]
-> To add more options to any dropdown (for example, additional failure types), use the Azure DevOps REST APIs.
+> To add more options to any dropdown, for example, more failure types, use the Azure DevOps REST APIs.
 
 
 ## Programmatic access
