@@ -103,7 +103,7 @@ When you select a test run, the details page provides comprehensive information:
 The main page includes:
 
 - **Pass rate**: Percentage of executed cases that passed (excluding "Not applicable" cases)
-- **Comments**: Run-level comments (supports Markdown formatting)
+- **Comments**: Run-level comments (supports Markdown formatting, tagging users by typing "@", work items "#", and pull requests "!")
 - **Test case results**: Outcome of each test case (Passed, Failed, Not Executed)
 - **Test run metadata**: Execution details including who ran the test, when, and the environment
 - **Attachments and logs**: Screenshots, logs, and other artifacts from execution
