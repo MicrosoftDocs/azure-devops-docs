@@ -1156,7 +1156,7 @@ gitGraph
 
 Here's the published view of the git graph diagram:
 
-:::image type="content" source="media/wiki/wiki-mermaid-gitgraph-diagram.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a git graph diagram and a preview of the published view." lightbox="media/wiki/wiki-mermaid-gitgraph-diagram.png":::
+:::image type="content" source="media/wiki/wiki-mermaid-git-graph-diagram.png" alt-text="Screenshot of the Mermaid Live Editor with the code for a git graph diagram and a preview of the published view." lightbox="media/wiki/wiki-mermaid-git-graph-diagram.png":::
 
 #### Example: Entity Relationship diagram
 
