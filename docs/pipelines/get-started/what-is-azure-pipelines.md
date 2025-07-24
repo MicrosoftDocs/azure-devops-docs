@@ -79,7 +79,7 @@ Azure Pipelines CD systems produce deployable artifacts, including infrastructur
 
 You can use Azure Pipelines to deploy your code to multiple targets. Targets include virtual machines, environments, containers, on-premises and cloud platforms, and platform-as-a-service (PaaS) services. You can also publish your mobile application to a store.
 
-Once you implement CI, you can create a release definition to automate deploying your application to one or more environments. You define the automation process as a collection of tasks.
+Once you have CI running, you can create release definitions to automate deploying your application to one or more environments. You define the automation process as a collection of tasks.
 
 ## Package formats
 
@@ -89,11 +89,9 @@ To produce packages that external users can consume, you can integrate package m
 
 ::: moniker range=">= azure-devops"
 
-In a pipeline, each running job consumes a *parallel job*. Azure DevOps provides every organization with a free tier of parallel jobs for both Microsoft-hosted and self-hosted private and public projects.
+Azure DevOps grants every organization a free tier of parallel jobs for both Microsoft-hosted and self-hosted private and public projects. For private projects, the free tier provides one parallel job that can take up to 60 minutes to run, up to 1,800 minutes per month. For public projects, the free grant provides one parallel job with unlimited minutes for self-hosted agents, or up to 10 parallel jobs for Microsoft-hosted projects.
 
-For private projects, the free grant of parallel jobs provides one parallel job that can take up to 60 minutes to run, up to 1,800 minutes per month. For public projects, the free grant provides one parallel job with unlimited minutes for self-hosted agents, or up to 10 parallel jobs that can take up to 360 minutes for Microsoft-hosted or open-source projects.
-
-Public projects and some private projects in new Azure DevOps organizations might not get this free grant of parallel jobs by default. In that case, you need to request the free grant of parallel jobs by completing the [Azure DevOps Parallelism Request](https://aka.ms/azpipelines-parallelism-request). The request can take several business days to process.
+For new Azure DevOps organizations, public projects and some private projects don't automatically get this free grant of parallel jobs by default. In that case, you need to request the free grant of parallel jobs by completing the [Azure DevOps Parallelism Request](https://aka.ms/azpipelines-parallelism-request). The request can take several business days to process.
 
 If the free tier of parallel jobs isn't sufficient for your project, you can purchase more capacity per parallel job or [buy more parallel jobs](../licensing/concurrent-jobs.md?tabs=self-hosted#how-do-i-buy-more-parallel-jobs). Paid parallel jobs can take up to 360 minutes to run and have no monthly time limit.
 
