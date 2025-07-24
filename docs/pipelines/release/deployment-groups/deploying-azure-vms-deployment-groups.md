@@ -58,40 +58,39 @@ A deployment group is a collection of machines, each with a deployment agent ins
 
 1. Enter **Release** as the **Deployment group name**, then select **Create**. A registration script will be generated. You can use this script to register target servers and install the deployment agent manually. However, in this tutorial, the target servers are automatically registered as part of the release pipeline.
 
+## Create a personal access token
+
+1. From your Azure DevOps project, select the **User Settings** icon, and then select **Personal Access Tokens**.
+
+1. Select **New Token**, enter a name for your PAT, and then choose an expiration date.
+
+1. Select **Custom defined** for **Scopes**, select **Show all scopes**, and then check the following scopes:
+    1.  **Agent Pools** -> **Read & manage**
+    1.  **Deployment Groups** -> **Read & manage**.
+
+1. Select **Create** when you're done, and copy your PAT as you'll need it in the following section.
+
 ## Configure the release pipeline
 
-1. From under **Pipelines**, navigate to **Releases**. Select the release pipeline named **Deployment Groups** and select **Edit**.
+1. Navigate to your Azure DevOps project and select **Pipelines** > **Releases**. 
 
-1. Select the **Tasks** tab to view the deployment tasks in pipeline. The tasks are organized as three stages called **Agent phase**, **Deployment group phase**, and **IIS Deployment phase**.
+1. Select the **Deployment Groups** release definiton, then select **Edit**.
 
-1. Select the **Agent phase**. In this stage, the target servers are associated with the deployment group using the Azure Resource Group Deployment task. To run, an agent pool and specification must be defined. Select the **Azure Pipelines** pool and **windows-latest** specification.
+1. Select the **Tasks** tab to view the deployment tasks in your pipeline. The tasks are organized into three stages: **Agent phase**, **Deployment group phase**, and **IIS Deployment phase**.
 
-    ![Configuring the agent phase](media/deploying-azure-vms-deployment-groups/agent-phase.png)
+1. Select the **Agent phase** stage, and then choose the **Azure Pipelines** pool and the **windows-latest** specification.
 
-1. Select the **Azure Resource Group Deployment** task. Configure a service connection to the Azure subscription used earlier to create infrastructure. After authorizing the connection, select the resource group created for this tutorial.
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-agent-phase.png" alt-text="A screenshot displaying the agent phase in the Classic release pipeline.":::
 
-    ![Creating an Azure service connection](media/deploying-azure-vms-deployment-groups/create-azure-connection.png)
+1. Select the **Azure Resource Group Deployment** task, select the **Azure subscription** you used earlier to create your resources, then select **Authorize** to authorize the connection. Once authorized, select the **Resource group** you created for this tutorial.
 
-1. This task will run on the virtual machines hosted in Azure, and will need to be able to connect back to this pipeline in order to complete the deployment group requirements. To secure the connection, they will need a **personal access token (PAT)**. From the **User settings** dropdown, open **Personal access tokens** in a new tab. Most browsers support opening a link in a new tab via right-click context menu or **Ctrl+Click**.
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-resource-group-deployment-task.png" alt-text="A screenshot displaying how to configure the resource group in the deployment task.":::
 
-    ![Navigating to personal access tokens](media/deploying-azure-vms-deployment-groups/open-pat.png)
+1. This task will run on virtual machines in Azure and must be able to connect back to the pipeline to complete the deployment group requirements. To secure the connection, a service connection must be set up using the Personal Access Token (PAT) you created earlier. Scroll down within the same task, and select **New** for the **Azure Pipelines service connection**.
 
-1. In the new tab, select **New Token**.
+1. Enter the **Connection URL** of your Azure DevOps organization (https://dev.azure.com/organizationName). Paste in the **Personal Access Token** you created earlier, specify a **Service connection name**, and check the **Grant access permission to all pipelines** box. Select **Verify and save** when you're done.
 
-1. Enter a name and select the **Full access** scope. Select **Create** to create the token. Once created, copy the token and close the browser tab. You return to the Azure Pipeline editor.
-
-    ![Creating a personal access token](media/deploying-azure-vms-deployment-groups/create-pat.png)
-
-1. Under **Azure Pipelines service connection**, select **New**.
-
-    ![Adding an Azure Pipelines service connection](media/deploying-azure-vms-deployment-groups/new-azure-pipelines-connection.png)
-
-1. Enter the **Connection URL** to the current instance of Azure DevOps. This URL is something like `https://dev.azure.com/[Your account]`. Paste in the **Personal Access Token** created earlier and specify a **Service connection name**. Select **Verify and save**.
-
-    ![Creating an Azure Pipelines service connection](media/deploying-azure-vms-deployment-groups/create-azure-pipelines-connection.png)
-  
-    > [!NOTE]
-    > To register an agent, you must be a member of the Administrator role in the agent pool. The identity of the agent pool administrator is needed only at the time of registration. The administrator identity isn't persisted on the agent, and it's not used in any subsequent communication between the agent and Azure Pipelines. After the agent is registered, there's no need to renew the personal access token because it's required only at the time of registration.
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-deployment-task-service-connection.png" alt-text="A screenshot displaying how to configure a new service connection for the deployment task.":::
 
 1. Select the current **Team project** and the **Deployment group** created earlier.
 
