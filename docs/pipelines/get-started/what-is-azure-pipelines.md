@@ -1,9 +1,11 @@
 ---
 title: What is Azure Pipelines?
-description: Learn about how Azure Pipelines can automatically build, test, and deploy your code.
+description: Learn how Azure Pipelines can use continuous integration, testing, and delivery to automatically build, test, and deploy your code.
 ms.topic: overview
 ms.date: 07/24/2025
 monikerRange: '<= azure-devops'
+# customer intent: As a developer, I want to learn about Azure Pipelines capabilities so I can automatically build, test, and deliver my code.
+
 ---
 
 # What is Azure Pipelines?
