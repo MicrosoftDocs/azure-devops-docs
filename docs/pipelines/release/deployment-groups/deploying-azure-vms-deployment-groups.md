@@ -1,13 +1,13 @@
 ---
-title: Deploy web apps to Azure VMs using deployment groups
-description: Learn how to deploy web apps to Azure VMs using deployment groups in Azure Pipelines.
+title: Deploy web apps to Azure VMs with deployment groups
+description: Learn how to deploy web apps to Azure VMs with deployment groups in Azure Pipelines.
 ms.topic: tutorial
 ms.date: 07/17/2025
 monikerRange: '<= azure-devops'
 ms.custom: sfi-image-nochange
 ---
 
-# Deploy web apps to Azure VMs using deployment
+# Deploy web apps to Azure VMs with deployment groups
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
@@ -23,6 +23,7 @@ A deployment group installs a deployment agent on each target server in the grou
 | **Product**        | **Requirements**  |
 |--------------------|-------------------|
 | **Azure DevOps**   | - An Azure DevOps [organization](../../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../../organizations/projects/create-project.md). |
+| **Azure DevOps Demo Generator**   | - [Set up the Demo Generator](/azure/devops/demo-gen/configure).<br>- Create a [new Azure DevOps project](/azure/devops/demo-gen/use-demo-generator-v2) and make sure to choose the **DeploymentGroups** template (number 15 in the list).  |
 | **Azure**   | - An [Azure subscription](https://azure.microsoft.com/free/). |
 
 ## Set up resources in Azure
@@ -45,21 +46,19 @@ This section guides you through setting up your Azure resources using an ARM tem
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/arm-vm-overview.png" alt-text="A screenshot displaying the DB server VM in Azure.":::
 
-## Creating and configuring a deployment group
+## Creata a deployment group
 
-Azure Pipelines makes it easier to organize servers required for deploying applications. A deployment group is a collection of machines with deployment agents. Each of the machines interacts with Azure Pipelines to coordinate the deployment of the app.
+A deployment group is a collection of machines, each with a deployment agent installed. These machines communicate with Azure Pipelines to coordinate application deployments.
 
-Since there is no configuration change required for the build pipeline, the build is triggered automatically after the project is provisioned. When you queue a release later on, this build is used.
+1. Navigate to the Azure DevOps project you created earlier using the demo generator.
 
-1. Navigate to the Azure DevOps project created by the demo generator.
-
-1. From under **Pipelines**, navigate to **Deployment groups**.
-
-    ![Navigating to Deployment groups under Pipelines](media/deploying-azure-vms-deployment-groups/pipelines-deployment-groups.png)
+1. Select **Pipelines** > **Deployment groups**.
 
 1. Select **Add a deployment group**.
 
-1. Enter the **Deployment group name** of **Release** and select **Create**. A registration script is generated. You can register the target servers using the script provided if working on your own. However, in this tutorial, the target servers are automatically registered as part of the release pipeline. The release definition uses stages to deploy the application to the target servers. A stage is a logical grouping of the tasks that defines the runtime target on which the tasks will execute. Each deployment group stage executes tasks on the machines defined in the deployment group.
+1. Enter **Release** as the **Deployment group name**, then select **Create**. A registration script will be generated. You can use this script to register target servers and install the deployment agent manually. However, in this tutorial, the target servers are automatically registered as part of the release pipeline.
+
+## Configure the release pipeline
 
 1. From under **Pipelines**, navigate to **Releases**. Select the release pipeline named **Deployment Groups** and select **Edit**.
 
