@@ -95,7 +95,7 @@ For private projects, the free grant of parallel jobs provides one parallel job 
 
 Public projects and some private projects in new Azure DevOps organizations might not get this free grant of parallel jobs by default. In that case, you need to request the free grant of parallel jobs by completing the [Azure DevOps Parallelism Request](https://aka.ms/azpipelines-parallelism-request). The request can take several business days to process.
 
-If the free tier of parallel jobs isn't sufficient for your project, you can purchase more capacity per parallel job or [buy more parallel jobs](../licensing/concurrent-jobs.md?tabs=self-hosted#how-do-i-buy-more-parallel-jobs). Paid parallel jobs can run for up to 360 minutes each time and have no monthly time limit.
+If the free tier of parallel jobs isn't sufficient for your project, you can purchase more capacity per parallel job or [buy more parallel jobs](../licensing/concurrent-jobs.md?tabs=self-hosted#how-do-i-buy-more-parallel-jobs). Paid parallel jobs can take up to 360 minutes to run and have no monthly time limit.
 
 For more information, see:
 - [Use private and public projects](../../organizations/projects/about-projects.md#use-private-and-public-projects)
