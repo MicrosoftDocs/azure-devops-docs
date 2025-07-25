@@ -50,7 +50,7 @@ We support the following subset of .NET 6 supported distributions:
     * Red Hat Enterprise Linux 7+
       * No longer requires separate package
     * SUSE Enterprise Linux 12 SP2 or later
-    * Ubuntu 22.04, 20.04, 18.04, 16.04
+    * Ubuntu 24.04, 22.04, 20.04, 18.04, 16.04
     * Azure Linux 2.0
     * Oracle Linux 7 and higher
   * ARM64
