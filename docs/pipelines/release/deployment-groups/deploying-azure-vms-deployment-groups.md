@@ -65,18 +65,23 @@ A deployment group is a collection of machines, each with a deployment agent ins
 1. Select **New Token**, enter a name for your PAT, and then choose an expiration date.
 
 1. Select **Custom defined** for **Scopes**, select **Show all scopes**, and then check the following scopes:
-    1.  **Agent Pools** -> **Read & manage**
-    1.  **Deployment Groups** -> **Read & manage**.
+    1. **Project and Team** -> **Read & write**.
+    1. **Agent Pools** -> **Read & manage**
+    1. **Deployment Groups** -> **Read & manage**.
 
 1. Select **Create** when you're done, and copy your PAT as you'll need it in the following section.
 
 ## Configure the release pipeline
 
+The Classic release pipeline template includes one agent job, the **Agent phase**, which runs tasks on an agent in an agent pool. It also includes two deployment group jobs: the **Deployment group phase** and the **IIS Deployment phase**. Deployment group jobs run tasks on machines defined in a deployment group. Follow the steps below to configure each job.
+
+### Configure the agent job
+
 1. Navigate to your Azure DevOps project and select **Pipelines** > **Releases**. 
 
 1. Select the **Deployment Groups** release definiton, then select **Edit**.
 
-1. Select the **Tasks** tab to view the deployment tasks in your pipeline. The tasks are organized into three stages: **Agent phase**, **Deployment group phase**, and **IIS Deployment phase**.
+1. Select the **Tasks** tab to view the deployment tasks in your pipeline.
 
 1. Select the **Agent phase** stage, and then choose the **Azure Pipelines** pool and the **windows-latest** specification.
 
@@ -86,19 +91,21 @@ A deployment group is a collection of machines, each with a deployment agent ins
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-resource-group-deployment-task.png" alt-text="A screenshot displaying how to configure the resource group in the deployment task.":::
 
-1. This task will run on virtual machines in Azure and must be able to connect back to the pipeline to complete the deployment group requirements. To secure the connection, a service connection must be set up using the Personal Access Token (PAT) you created earlier. Scroll down within the same task, and select **New** for the **Azure Pipelines service connection**.
+1. This task will run on virtual machines in Azure and must be able to connect back to the pipeline to complete the deployment group requirements. To secure the connection, a service connection must be set up using the Personal Access Token (PAT) you created earlier. Scroll down within the same task, and select **New** under **Azure Pipelines service connection**.
 
-1. Enter the **Connection URL** of your Azure DevOps organization (https://dev.azure.com/organizationName). Paste in the **Personal Access Token** you created earlier, specify a **Service connection name**, and check the **Grant access permission to all pipelines** box. Select **Verify and save** when you're done.
+1. In the **New service connection** panel, enter the **Connection URL** of your Azure DevOps organization `https://dev.azure.com/organizationName`. Paste in the **Personal Access Token** you created earlier, specify a **Service connection name**, and check the **Grant access permission to all pipelines** box. Select **Verify and save** when you're done.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-deployment-task-service-connection.png" alt-text="A screenshot displaying how to configure a new service connection for the deployment task.":::
 
-1. Select the current **Team project** and the **Deployment group** created earlier.
+1. Scroll down in th **Azure Resource Group Deployment** task, then select from the dropdown menues your **Team project** and the **Deployment Group** your created earlier.
 
-    ![Configuring the Azure Pipelines deployment group](media/deploying-azure-vms-deployment-groups/configure-pipeline-deployment-group.png)
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-team-deployment-group-setup.png" alt-text="A screenshot displaying how to configure the team project and deployment group for the deployment task.":::
 
-1. Select the **Deployment group phase** stage. This stage executes tasks on the machines defined in the deployment group. This stage is linked to the **SQL-Svr-DB** tag. Choose the **Deployment Group** from the dropdown.
+### Configure the deployment group jobs
 
-    ![Configuring the deployment group phase](media/deploying-azure-vms-deployment-groups/deployment-group-phase.png)
+1. From the **Deployment Groups** release definiton, select the **Deployment group phase** job. This job executes tasks on the machines defined in the deployment group. This job uses the **SQL-Svr-DB** tag to deploy to a subset of targets in the deployment group. Under the **Deployment Group** dropdown, select the **Release** deployment group you created earlier.
+
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-phase-setup.png" alt-text="A screenshot displaying how to configure the deployment group phase job.":::
 
 1. Select the **IIS Deployment phase** stage. This stage deploys the application to the web servers using the specified tasks. This stage is linked to the **WebSrv** tag. Choose the **Deployment Group** from the dropdown.
 
