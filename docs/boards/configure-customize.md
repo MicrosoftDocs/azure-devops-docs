@@ -103,7 +103,6 @@ Consider this tracking option for the following scenarios:
 - Monitor [Sprint burndown](../report/dashboards/configure-sprint-burndown.md) based on remaining work, such as hours or days: 
 - Conduct daily scrums, update, and monitor task status by using a [Sprint Taskboard](sprints/task-board.md)
 - Estimate work by [defining Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates-to-backlog-items)
-
 - View progress bars, counts, or sums of [rollup](backlogs/display-rollup.md) on tasks
 - Track dependencies across teams and projects with [delivery plans](plans/track-dependencies.md)
 
@@ -142,10 +141,15 @@ Consider this option for the following scenarios:
 
 The following sections describe the areas you can configure and customize and the tools impacted by customizations. You can customize each area at the Organization, Project, or Team level, or a combination of two levels, as indicated. For a description of the Standard tools, Analytics tools, and Portfolio planning tools, see [What is Azure Boards](get-started/what-is-azure-boards.md), [In-context reports: Work tracking](../report/dashboards/overview.md#in-context-reports-work-tracking), and [Plans (Agile at scale)](plans/index.md).
 
-### Area paths, project configuration, team subscriptions (Project, Team)
+:::row:::
+   :::column span="3":::
+   -----------------------------------------------------------------------------------------------------------------
+   **Area paths, project configuration, team subscriptions** (Project, Team)
 
-For more information, see [Area paths, product teams, and portfolio management](#area-path) later in this article.
-
+   For more information, see [Area paths, product teams, and portfolio management](#area-path) later in this article.
+   
+   :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    **Standard tools**
@@ -174,10 +178,15 @@ For more information, see [Area paths, product teams, and portfolio management](
    :::column-end:::
 :::row-end:::
 
-### Iteration paths, project configuration, team subscription (Project, Team)
+:::row:::
+   :::column span="3":::
+   -----------------------------------------------------------------------------------------------------------------
+   **Iteration paths, project configuration, team subscription** (Project, Team)
+   
+   For more information, see [Iteration paths - sprints releases and versioning](#iteration-paths---sprints-releases-and-versioning) later in this article.
 
-For more information, see [Iteration paths - sprints releases and versioning](#iteration-paths---sprints-releases-and-versioning) later in this article.
-
+   :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    **Standard tools**
@@ -206,10 +215,15 @@ For more information, see [Iteration paths - sprints releases and versioning](#i
    :::column-end:::
 :::row-end:::
 
-### Show bugs (Team) - Custom WITs, Product backlog (Process), Taskboard (Process)
+:::row:::
+   :::column span="3":::
+   -----------------------------------------------------------------------------------------------------------------
+   **Show bugs on boards & backlogs** (Team), **Custom WITs**, **Product backlog** (Process), **Taskboard** (Process)
 
-For more information, see [Show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md) and [Custom WITS](#custom-wits).
+   For more information, see [Show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md) and [Custom WITS](#custom-wits).
 
+   :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    **Standard tools**
@@ -229,10 +243,15 @@ For more information, see [Show bugs on backlogs and boards](../organizations/se
    :::column-end:::
 :::row-end:::
 
-### Custom WITs, Portfolio backlog (Process), More portfolio backlogs (Process)
+:::row:::
+   :::column span="3":::
+   -----------------------------------------------------------------------------------------------------------------
+   **Custom WITs**, **Portfolio backlog** (Process), **More portfolio backlogs** (Process)
 
-For more information, see [Custom WITS](#custom-wits) later in this article.
+   For more information, see [Custom WITS](#custom-wits) later in this article.
 
+   :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    **Standard tools**
@@ -250,10 +269,15 @@ For more information, see [Custom WITS](#custom-wits) later in this article.
    :::column-end:::
 :::row-end:::
 
-### Custom workflow (Process)
+:::row:::
+   :::column span="3":::
+   -----------------------------------------------------------------------------------------------------------------
+   **Custom workflow** (Process)
 
-For more information, see [Custom workflow](#custom-workflow) later in this article.
+   For more information, see [Custom workflow](#custom-workflow) later in this article.
 
+   :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    **Standard tools**   
@@ -271,10 +295,15 @@ For more information, see [Custom workflow](#custom-workflow) later in this arti
    :::column-end:::
 :::row-end:::
 
-### Custom field (Process)
+:::row:::
+   :::column span="3":::
+   -----------------------------------------------------------------------------------------------------------------
+   **Custom field** (Process)
 
-For more information, see [Custom fields](#custom-fields) later in this article.
+   For more information, see [Custom fields](#custom-fields) later in this article.
 
+   :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    **Standard tools**
