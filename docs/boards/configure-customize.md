@@ -26,7 +26,7 @@ If you know which tasks you want to complete, you can get started quickly with t
 - [Configure your backlog](backlogs/configure-your-backlog-view.md)
 
 > [!NOTE]   
-> Most of the following guidance applies to both the cloud and on-premises versions. A few features like Rollup, Analytics, and some portfolio planning tools, are currently available for the cloud only. 
+> Most of the guidance presented in this article applies to both the cloud and on-premises versions. A few features like Rollup, Analytics, and some portfolio planning tools, are currently available for the cloud only. 
 
 ## Considerations for customization
 
@@ -36,35 +36,24 @@ The following table summarizes the primary considerations for structuring your A
 
 :::row:::
    :::column span="1":::
-      **Project level**
-   :::column-end:::
-   :::column span="1":::
-      **Team level**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      ----------------------------------------------------------------------------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
+   **Project level**
       
-      - How many teams to define 
-      - How to structure area paths to support portfolio management views
-      - Identify specific field customizations 
-      - Identify custom work item types (WITs)
-      - Explore portfolio backlog customizations
-      - Explore workflow customizations
+   - How many teams to define 
+   - How to structure area paths to support portfolio management views
+   - Identify specific field customizations 
+   - Identify custom work item types (WITs)
+   - Explore portfolio backlog customizations
+   - Explore workflow customizations
 
    :::column-end:::
    :::column span="1":::
-      
-      - How to use the product backlog to plan and prioritize your work 
-      - Decide whether to track bugs as requirements or tasks, or not use bugs at all
-      - Decide whether to use tasks to track time and capacity
-      - Explore how to use portfolio backlog levels 
-      - Decide how to inform upper management of progress, status, and risks
+   **Team level**
+
+   - How to use the product backlog to plan and prioritize your work 
+   - Decide whether to track bugs as requirements or tasks, or not use bugs at all
+   - Decide whether to use tasks to track time and capacity
+   - Explore how to use portfolio backlog levels 
+   - Decide how to inform upper management of progress, status, and risks
 
    :::column-end:::
 :::row-end:::
@@ -83,16 +72,16 @@ You can add custom WITs at each level, and even add custom portfolio backlogs. T
 
 ## Work tracking options and recommended usage  
 
-Teams can choose which WITs they use to track their work. This article describes four work tracking options:
+Teams can choose which WITs they use to track their work. This article describes four options:
 
 <!-- Chrystal - Need information for last column for the last row entry -->
 
-| Option | Summary | Recommendation | Process support |
-|--------|---------|----------------|-----------------|
-| [Tasks only](#tasks-only) | Track the tasks only. | **Not recommended** | _not applicable_ |
-| [Requirements with child-dependent tasks](#requirements-with-child-dependent-tasks) | Track the requirements along with the child-dependent tasks. | Use with Scrum methods <br>-  Track time associated with work | Scrum |
-| [Requirements only](#requirements-only) | Track the requirements only for user stories, issues, product backlog items, and more. | Use with Kanban or Scrumban methods <br>- Don't track time associated with work | Agile, Basic, Scrum, CMMI |
-| [Requirements grouped under portfolio WITs](#requirements-grouped-under-portfolio-wits) | Track the requirements grouped under portfolio WITs, such as epics and features. | Enable multiple teams to view rollups and calendar views from other teams <br>- Use all portfolio planning tools | _TBD_ |
+| Option | Recommendation | Process support |
+|--------|----------------|-----------------|
+| Track [tasks only](#tasks-only) | **Not recommended** | _Not applicable_ |
+| Track [requirements with child-dependent tasks](#requirements-with-child-dependent-tasks) | - Track time associated with work | Scrum |
+| Track [requirements only](#requirements-only) | - Track requirements for user stories, issues, product backlog items, and more <br>- Don't track time associated with work | Agile, Basic, Scrum, Scrumban, CMMI |
+| Track [requirements grouped under portfolio WITs](#requirements-grouped-under-portfolio-wits) | - Track requirements for epics and features, and more <br>- Let multiple teams view rollups and calendars from other teams <br>- Use all portfolio planning tools | _TBD_ |
 
 The following sections describe the recommended usage for each option, along with supported tasks and tools.
 
@@ -107,50 +96,31 @@ Tracking requirements along with child-dependent tasks is recommended for teams 
 Consider this tracking option for the following scenarios:
 
 - Quickly define and prioritize [product backlog](backlogs/create-your-backlog.md) items
-
 - [Forecast](sprints/forecast.md) sprints by using team velocity metrics
-
 - Plan sprints with the [Backlog Planning tool](sprints/assign-work-sprint.md)
-
 - Plan and track capacity with the [Sprint capacity tool](sprints/set-capacity.md)
-
 - Track estimated and remaining work by using a [Taskboard](sprints/adjust-work.md)
-
 - Monitor [Sprint burndown](../report/dashboards/configure-sprint-burndown.md) based on remaining work, such as hours or days: 
-
 - Conduct daily scrums, update, and monitor task status by using a [Sprint Taskboard](sprints/task-board.md)
-
 - Estimate work by [defining Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates-to-backlog-items)
 
 - View progress bars, counts, or sums of [rollup](backlogs/display-rollup.md) on tasks
-
 - Track dependencies across teams and projects with [delivery plans](plans/track-dependencies.md)
 
 Many teams start out using Scrum methods to track and plan their work with the tools available through the Sprints hub. The Sprints tools support estimating and tracking remaining work and use of capacity planning. If you don't plan on using these tools, adding the child-dependent tasks is optional. Developers might add them as a checklist of items for completing a user story or backlog requirement.
 
 ### Requirements only
 
-Tracking the requirements only is recommended for teams that follow Kanban or Scrumban methods. You can track several types of requirements:
-
-- Track user story requirements with the Agile process
-- Track issues requirements by using the Basic process
-- Track requirements for product backlog items with the Scrum process
-- Track other requirements by following the CMMI process  
+Tracking the requirements only is recommended for teams that follow Kanban or Scrumban methods. You can track requirements for user stories (Agile), issues (Basic), product backlog items (Scrum), and other data (CMMI).
 
 Consider this option for the following scenarios:
 
 - Quickly define and prioritize [product backlog](backlogs/create-your-backlog.md) items
-
 - Plan sprints with the [Backlog Planning tool](sprints/assign-work-sprint.md)
-
 - Estimate work by [defining Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates-to-backlog-items)
-
 - [Forecast](sprints/forecast.md) sprints by using team velocity metrics
-
 - Monitor [Sprint burndown](../report/dashboards/configure-sprint-burndown.md) based on requirement estimates
-
 - Update requirement status by using a [Kanban board](boards/kanban-quickstart.md)
-
 - Track dependencies across teams and projects with [delivery plans](plans/track-dependencies.md)
 
 ### Requirements grouped under portfolio WITs
@@ -160,31 +130,22 @@ Tracking requirements grouped under portfolio WITs, such as epics and features, 
 Consider this option for the following scenarios:
 
 - Quickly define and prioritize [portfolio backlog](backlogs/define-features-epics.md) items
-
 - Quickly define child user stories of [portfolio checklist](boards/kanban-epics-features-stories.md) items
-
 - Map work items to features and epics with the [Mapping tool](backlogs/organize-backlog.md)
-
 - Support cross-team progress calendar views by setting up [delivery plans](plans/review-team-plans.md)
-
 - Support calendar view of all team features by setting up a [feature timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
-
 - Support calendar view of a specific epic on an [epic roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
-
 - View progress bars, counts, or sums of [rollup](backlogs/display-rollup.md) on child items
-
 - Track dependencies across teams and projects with [delivery plans](plans/track-dependencies.md)
 
 ## Options to configure and customize
 
-The following table shows the areas you can configure and customize and the tools impacted by customizations. The table indicates whether you can customize each area at the Organization, Project, or Team level, or a combination of two levels. For a description of the Standard tools, Analytics tools, and Portfolio planning tools, see [What is Azure Boards](get-started/what-is-azure-boards.md), [In-context reports: Work tracking](../report/dashboards/overview.md#in-context-reports-work-tracking), and [Plans (Agile at scale)](plans/index.md).
+The following sections describe the areas you can configure and customize and the tools impacted by customizations. You can customize each area at the Organization, Project, or Team level, or a combination of two levels, as indicated. For a description of the Standard tools, Analytics tools, and Portfolio planning tools, see [What is Azure Boards](get-started/what-is-azure-boards.md), [In-context reports: Work tracking](../report/dashboards/overview.md#in-context-reports-work-tracking), and [Plans (Agile at scale)](plans/index.md).
 
-:::row:::
-   :::column span="3":::
-   [**Area paths, project configuration, and team subscriptions**](#area-path) (Project, Team)
+### Area paths, project configuration, team subscriptions (Project, Team)
 
-   :::column-end:::
-:::row-end:::
+For more information, see [Area paths, product teams, and portfolio management](#area-path) later in this article.
+
 :::row:::
    :::column span="1":::
    **Standard tools**
@@ -213,12 +174,10 @@ The following table shows the areas you can configure and customize and the tool
    :::column-end:::
 :::row-end:::
 
-:::row:::
-   :::column span="3":::
-   [**Iteration paths, project configuration, and team subscription**](#iteration-paths-sprints-releases--versioning) (Project, Team)
+### Iteration paths, project configuration, team subscription (Project, Team)
 
-   :::column-end:::
-:::row-end:::
+For more information, see [Iteration paths - sprints releases and versioning](#iteration-paths---sprints-releases-and-versioning) later in this article.
+
 :::row:::
    :::column span="1":::
    **Standard tools**
@@ -247,12 +206,10 @@ The following table shows the areas you can configure and customize and the tool
    :::column-end:::
 :::row-end:::
 
-:::row:::
-   :::column span="3":::
-   [**Show bugs on backlogs & boards** (Team)](../organizations/settings/show-bugs-on-backlog.md), **Custom WITs**, **Product backlog** (Process), **Taskboard** (Process)
+### Show bugs (Team) - Custom WITs, Product backlog (Process), Taskboard (Process)
 
-   :::column-end:::
-:::row-end:::
+For more information, see [Show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md) and [Custom WITS](#custom-wits).
+
 :::row:::
    :::column span="1":::
    **Standard tools**
@@ -270,19 +227,12 @@ The following table shows the areas you can configure and customize and the tool
    - Velocity
 
    :::column-end:::
-   :::column span="1":::
-   **Portfolio planning tools**
-
-   _Not applicable_
-   :::column-end:::
 :::row-end:::
 
-:::row:::
-   :::column span="3":::
-   **Custom WITs**, **Portfolio backlog** (Process), **More portfolio backlogs** (Process)
+### Custom WITs, Portfolio backlog (Process), More portfolio backlogs (Process)
 
-   :::column-end:::
-:::row-end:::
+For more information, see [Custom WITS](#custom-wits) later in this article.
+
 :::row:::
    :::column span="1":::
    **Standard tools**
@@ -298,19 +248,12 @@ The following table shows the areas you can configure and customize and the tool
    - Velocity
 
    :::column-end:::
-   :::column span="1":::
-   **Portfolio planning tools**
-
-   _Not applicable_
-   :::column-end:::
 :::row-end:::
 
-:::row:::
-   :::column span="3":::   
-   **Custom workflow** (Process)
+### Custom workflow (Process)
 
-   :::column-end:::
-:::row-end:::
+For more information, see [Custom workflow](#custom-workflow) later in this article.
+
 :::row:::
    :::column span="1":::
    **Standard tools**   
@@ -326,19 +269,12 @@ The following table shows the areas you can configure and customize and the tool
    - Cumulative flow diagram
 
    :::column-end:::
-   :::column span="1":::
-   **Portfolio planning tools**
-
-   _Not applicable_
-   :::column-end:::
 :::row-end:::
 
-:::row:::
-   :::column span="3":::
-   **Custom field** (Process)
+### Custom field (Process)
 
-   :::column-end:::
-:::row-end:::
+For more information, see [Custom fields](#custom-fields) later in this article.
+
 :::row:::
    :::column span="1":::
    **Standard tools**
@@ -352,11 +288,6 @@ The following table shows the areas you can configure and customize and the tool
 
    - [Rollup progress bars, sum, or count](#rollup-hierarchy-and-portfolio-management)
    
-   :::column-end:::
-   :::column span="1":::
-   **Portfolio planning tools**
-
-   _Not applicable_
    :::column-end:::
 :::row-end:::
 
@@ -451,7 +382,7 @@ The [Delivery Plans](plans/review-team-plans.md) feature supports rollup views o
 
 ::: moniker-end
 
-## Iteration paths sprints releases and versioning
+## Iteration paths - sprints releases and versioning
 
 Iteration paths support Scrum and Scrumban processes where work is assigned to a set time period. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Each iteration or sprint corresponds to a regular time interval referred to as a _sprint cadence_. Typical sprint cadences include two weeks, three weeks, or a month. For more information, see [About area and iteration paths](../organizations/settings/about-areas-iterations.md).  
 
@@ -492,32 +423,23 @@ When you add custom fields to a WIT, it doesn’t directly affect any specific t
 
 ### Custom WITs 
 
-The following table shows the effects when you add a custom WIT to a specific category.
+When you add a custom WIT to a specific category, the following changes occur.
 
-:::row:::
-   :::column span="1":::
-   **Task**
+Task-level changes:
 
-   - Child work items of the new WIT appear on the product backlog
-	- Work items based on the new WIT appear on the sprint backlogs and Taskboards
+- Child work items of the new WIT appear on the product backlog
+- Work items based on the new WIT appear on the sprint backlogs and Taskboards
 
-   :::column-end:::
-   :::column span="1":::
-   **Requirement**
+Requirements changes:
 
-   - Work items based on the new WIT appear on the product backlog and \board
-	- Each team must configure the \board to support the new WIT 
+- Work items based on the new WIT appear on the product backlog and \board
+- Each team must configure the \board to support the new WIT 
 
-   :::column-end:::
-   :::column span="1":::
-   **Epic or feature**
+Changes to epics or features:
 
-   - Work items based on the new WIT appear on the corresponding portfolio backlogs and boards
-	- Each team must configure the \boards to support the new WIT
-	- The new WITs might not appear on one or more of the portfolio planning tools
-
-   :::column-end:::  
-:::row-end:::
+- Work items based on the new WIT appear on the corresponding portfolio backlogs and boards
+- Each team must configure the \boards to support the new WIT
+- The new WITs might not appear on one or more of the portfolio planning tools
 
 ### Custom workflow 
 
