@@ -43,7 +43,7 @@ These organizations are integrated with Microsoft Entra ID, enabling centralized
 
 **Ownership:** The organization is governed by Microsoft Entra administrator policies and can be [recovered by the administrator](resolve-orphaned-organization.md) if it becomes orphaned. 
 
-### Not connected to Microsoft Entra ID 
+### Not connected to Microsoft Entra ID
 
 The following examples are standalone Azure DevOps organizations that primarily use Microsoft accounts (MSAs) for authentication. 
 
