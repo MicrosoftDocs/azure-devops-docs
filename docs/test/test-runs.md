@@ -5,7 +5,7 @@ ms.service: azure-devops-test-plans
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 07/23/2025
+ms.date: 07/28/2025
 monikers: 'azure-devops'
 ---
 
@@ -16,7 +16,9 @@ monikers: 'azure-devops'
 Azure DevOps Test Plans provides a new Test Run Hub experience for managing test execution. This enhanced interface helps teams track test progress, analyze results, and maintain quality across development cycles.
 
 > [!NOTE]
-> The new Test Run Hub experience is automatically enabled for all organizations. To disable it, go to **Preview features** and set the **New Test Run Hub** toggle to **Off**. If you [disable this feature](../project/navigation/preview-features.md), share your feedback to help us improve it.
+> The new **Test Run Hub** experience is a public **Preview feature** that's automatically enabled for all organizations. This feature can change at any time during the preview period.
+>
+> To disable it, go to **Preview features** and look for the feature flag named **New Test Run Hub** and set the toggle to **Off**. If you [disable this feature](../project/navigation/preview-features.md), share your feedback to help us improve it.
 >  
 > If you don't see the new experience in your organization yet, it's normal as the rollout is gradual.
 
