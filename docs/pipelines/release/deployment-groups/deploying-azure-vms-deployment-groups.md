@@ -131,11 +131,32 @@ The Classic release pipeline template includes one agent job, the **Agent phase*
 > [!TIP]
 > If you receive an error that the DefaultConnectionString variable must be saved as a secret, select the padlock icon next to its value to protect it.
 
-## Queuing a release and reviewing the deployment 
+## Create a release and deploy application
 
-1. Select **Save** and confirm.
+Now that the release definition is configured and saved, you can proceed to create a release to deploy your web app to Azure. However, before starting the release, you have to make sure the build pipeline has run at least once. This generates the pipeline artifact required for deployment. If you try to run the release pipeline before the build pipeline, the *Artifacts* section in the release panel will be empty. Follow the steps below to run your pipeline, generate a pipeline artifact then create a new release:
 
-1. Select **Create release** and confirm. Follow the release through to completion. The deployment is then ready for review.
+1. From your Azure DevOps project, select **Pipeline**, and then select the **Deployment Groups** build pipeline.
+
+1. Selelct **Run pipeline**. In the pipeline run panel, select your **Agent specification**, then select **Run**.
+
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-agent-specification-run.png" alt-text="A screenshot displaying how to configure the pipeline run.":::
+
+1. After the pipeline completes successfully, it will generate a pipeline artifact. You can view it from the pipeline summary window:
+
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-pipeline-artifact.png" alt-text="A screenshot displaying the generated pipeline artifact.":::
+
+1. Now go to **Pipelines** > **Release**, select your release definition, and then select **Create release** to start the deployment pipeline.
+
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-create-release.png" alt-text="A screenshot displaying how to create a new release.":::
+
+1. Select **Create** when you're done then select the pipeline run to open the overview. You should see your pipeline *In progress*. Click on the stage to view the detailed deployment logs.
+
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-release-overview.png" alt-text="A screenshot displaying the release pipeline overview.":::
+
+
+
+
+
 
 1. In the Azure portal, open one of the web VMs in your resource group. You can select any that have `websrv` in the name.
 
