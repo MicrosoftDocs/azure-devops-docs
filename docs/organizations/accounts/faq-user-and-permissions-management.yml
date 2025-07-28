@@ -150,12 +150,19 @@ sections:
           1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
           2. Select **Users**.
           3. Select the **Access level** filter and choose **GitHub Enterprise (Invalid)**.
+              
               ![Screenshot showing GitHub Enterprise Invalid access level checked for user type.](media/faq/access-level-filter-github-enterprise-invalid.png)
+          
           4. Check the box for **All**.
+              
               ![Screenshot showing checked box for All.](media/faq/all-checkbox-selected.png)
+          
           5. Select **Manage** and **Change access level**.
+              
               ![Screenshot showing Basic access level selected.](media/faq/manage-change-access-level.png)
+          
           6. Select **Basic** and **Save**.
+              
               ![Screenshot showing Basic access level selected.](media/faq/basic-access-level-save.png)
       
       - question: |
