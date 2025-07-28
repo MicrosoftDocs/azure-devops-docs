@@ -72,10 +72,7 @@ Access control gets managed by specific [Microsoft Entra administrators](/azure/
 
 Without Microsoft Entra ID, you're solely responsible for controlling organization access. In this case, all users sign in with only Microsoft accounts, and you manually manage user permissions and access.
 
-For more information, see [Frequently asked questions about Azure access](faq-azure-access.yml)
-
-> [!div class="nextstepaction"]
-> [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md)
+For more information, see [Frequently asked questions about Azure access](faq-azure-access.yml) and [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md).
 
 ## Related content
 
