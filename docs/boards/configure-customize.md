@@ -74,14 +74,12 @@ You can add custom WITs at each level, and even add custom portfolio backlogs. T
 
 Teams can choose which WITs they use to track their work. This article describes four options:
 
-<!-- Chrystal - Need information for last column for the last row entry -->
-
-| Option | Recommendation | Process support |
+| Option | Recommendation | Tool support |
 |--------|----------------|-----------------|
 | Track [tasks only](#tasks-only) | **Not recommended** | _Not applicable_ |
-| Track [requirements with child-dependent tasks](#requirements-with-child-dependent-tasks) | - Track time associated with work | Scrum |
-| Track [requirements only](#requirements-only) | - Track requirements for user stories, issues, product backlog items, and more <br>- Don't track time associated with work | Agile, Basic, Scrum, Scrumban, CMMI |
-| Track [requirements grouped under portfolio WITs](#requirements-grouped-under-portfolio-wits) | - Track requirements for epics and features, and more <br>- Let multiple teams view rollups and calendars from other teams <br>- Use all portfolio planning tools | _TBD_ |
+| Track [requirements with child-dependent tasks](#requirements-with-child-dependent-tasks) | - Track time associated with work | Scrum process methods |
+| Track [requirements only](#requirements-only) | - Don't track time associated with work <br>- Track requirements for user stories, issues, product backlog items, and more | Methods associated with the Agile process, Basic process, Scrum process, Scrumban, and CMMI process |
+| Track [requirements grouped under portfolio WITs](#requirements-grouped-under-portfolio-wits) | - Track requirements for epics and features, and more <br>- Let multiple teams view rollups and calendars from other teams | All portfolio planning tools |
 
 The following sections describe the recommended usage for each option, along with supported tasks and tools.
 
