@@ -55,7 +55,7 @@ From your web browser, open your product backlog.
 
 1. Select your project, choose **Boards>Backlogs**, and then select the team. 
 
-    :::image type="content" source="media/organize-backlogs-boards/open-backlogs-backlog.png" alt-text="Screenshot shows backlog items for a selected team.":::
+    :::image type="content" source="media/organize-backlog/open-backlogs-backlog.png" alt-text="Screenshot shows backlog items for a selected team.":::
 
     To select different backlog, open the selector and then choose a team or select the **View Backlog directory** option. Or, enter a keyword to filter the list of team backlogs for the project.
 
@@ -66,11 +66,11 @@ From your web browser, open your product backlog.
 
 1. Select **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level.
 
-    :::image type="content" source="media/organize-backlogs-boards/select-product-backlog-agile.png" alt-text="Screenshot shows the Stories option with its suboptions, including Features and Stories.":::
+    :::image type="content" source="media/organize-backlog/select-product-backlog-agile.png" alt-text="Screenshot shows the Stories option with its suboptions, including Features and Stories.":::
 
 1. To choose which columns should display and in what order, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md).
 
-	:::image type="content" source="media/organize-backlogs-boards/open-column-options.png" alt-text="Screenshot shows the Column Options button.":::
+	:::image type="content" source="media/organize-backlog/open-column-options.png" alt-text="Screenshot shows the Column Options button.":::
 
 ::: moniker-end
 
