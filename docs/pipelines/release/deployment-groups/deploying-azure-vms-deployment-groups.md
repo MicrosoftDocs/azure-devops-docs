@@ -107,39 +107,29 @@ The Classic release pipeline template includes one agent job, the **Agent phase*
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-phase-setup.png" alt-text="A screenshot displaying how to configure the deployment group phase job.":::
 
-1. Select the **IIS Deployment phase** stage. This stage deploys the application to the web servers using the specified tasks. This stage is linked to the **WebSrv** tag. Choose the **Deployment Group** from the dropdown.
+1. Select the **IIS Deployment phase** job. This job uses the **WebSrv** tag to deploy the web application to a subset of the web servers. Choose the **Deployment Group** you created earlier from the dropdown.
 
-1. Select the **Disconnect Azure Network Load Balancer** task. As the target machines are connected to the NLB, this task will disconnect the machines from the NLB prior to the deployment and reconnect them back to the NLB after the deployment. Configure the task to use the Azure connection, resource group, and load balancer (there should only be one). 
+1. Select the **Disconnect Azure Network Load Balancer** task. This task disconnects the machines from the Azure Network Load Balancer (NLB) before deployment and reconnects them afterward. Select your **Azure subscription**, **Resource group**, and **Load balancer name** from the dropdowm menus. 
 
-1. Select the **IIS Web App Manage** task. This task runs on the deployment target machines registered with the deployment group configured for the task/stage. It creates a web app and application pool locally with the name **PartsUnlimited** running under the port **80**
+1. The **IIS Web App Manage** and **IIS Web App Deploy** tasks are prefilled and requires no changes.
 
-1. Select the **IIS Web App Deploy** task. This task runs on the deployment target machines registered with the deployment group configured for the task/stage. It deploys the application to the IIS server using **Web Deploy**.
+1. Select the **Connect Azure Network Load Balancer** task. Select your **Azure subscription**, **Resource group**, and **Load balancer name** from the dropdowm menus. This task reconnects the machines to the Azure Network Load Balancer after deployment.
 
-1. Select the **Connect Azure Network Load Balancer** task. Configure the task to use the Azure connection, resource group, and load balancer (there should only be one).
+1. Select the **Variables** tab from the upper left corner, select **Pipeline variables**, and provide the following values. Replace the placeholder in the **DefaultConnectionString** variable with the SQL server DNS name that you copied earlier:
 
-1. Select the **Variables** tab, create your variables, and provide their respective values as shown in the example below:
 
-    | Variable Name | Variable Value  |
-    |--|--|
-    | DatabaseName | PartsUnlimited-Dev |
-    | DBPassword | xxxxxxxx |
-    | DBUserName | xxxxxxxx |
+    |      Variable Name      |                                                          Variable Value                                                                                 |
+    |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | DatabaseName            | PartsUnlimited-Dev                                                                                                                                      |
+    | DBPassword              | xxxxxxxx                                                                                                                                                |
+    | DBUserName              | xxxxxxxx                                                                                                                                                |
     | DefaultConnectionString | Data Source=[YOUR_DNS_NAME];Initial Catalog=PartsUnlimited-Dev;User ID=xxxxxxxx;Password=xxxxxxxx;MultipleActiveResultSets=False;Connection Timeout=30; |
-    | ServerName | localhost |
+    | ServerName              | localhost                                                                                                                                               |
 
-    > [!IMPORTANT]
-    > Make sure to replace your SQL server DNS name (which you noted from Azure portal earlier) in **DefaultConnectionString** variable.
+1. Select **Save**, add a comment if you'd like, then select **Ok**.
 
-    Your DefaultConnectionString  should look similar to the following after replacing the SQL DNS:
-
-    `Data Source=cust1sqljo5zndv53idtw.westus2.cloudapp.azure.com;Initial Catalog=PartsUnlimited-Dev;User ID=xxxxxxxx;Password=xxxxxxxx;MultipleActiveResultSets=False;Connection Timeout=30;`
-
-    The final variable list should look something like this:
-
-    ![Configuring pipeline variables](media/deploying-azure-vms-deployment-groups/variables.png)
-
-    > [!NOTE]
-    > You may receive an error that the `DefaultConnectionString` variable must be saved as a secret. If that happens, select the variable and click the padlock icon that appears next to its value to protect it.
+> [!TIP]
+> If you receive an error that the DefaultConnectionString variable must be saved as a secret, select the padlock icon next to its value to protect it.
 
 ## Queuing a release and reviewing the deployment 
 
