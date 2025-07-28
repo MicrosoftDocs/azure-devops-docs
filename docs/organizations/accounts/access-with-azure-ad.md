@@ -29,8 +29,8 @@ These organizations are integrated with Microsoft Entra ID, enabling centralized
 
 **User access:** 
 
-    - ✅ Entra ID users (members or guests of the connected tenant) can sign in. 
-    - ⚠️ Microsoft account users can sign in after [accepting an invitation as a guest user](/entra/external-id/b2b-quickstart-add-guest-users-portal) to the connected Microsoft Entra ID tenant, provided your tenant [allows guest user access](/entra/external-id/external-collaboration-settings-configure). 
+- ✅ Entra ID users (members or guests of the connected tenant) can sign in. 
+- ⚠️ Microsoft account users can sign in after [accepting an invitation as a guest user](/entra/external-id/b2b-quickstart-add-guest-users-portal) to the connected Microsoft Entra ID tenant, provided your tenant [allows guest user access](/entra/external-id/external-collaboration-settings-configure). 
 
 **Benefits:**
 
@@ -49,8 +49,8 @@ The following examples are standalone Azure DevOps organizations that primarily 
 
 **User access:** 
 
-    - ✅ Microsoft account users can sign in freely. 
-    - ⚠️ Entra ID users can only sign-in if their sign in address matches their Entra user principal name (UPN). When adding Entra users to your organization, ensure you are adding them by UPN. 
+- ✅ Microsoft account users can sign in freely. 
+- ⚠️ Entra ID users can only sign-in if their sign in address matches their Entra user principal name (UPN). When adding Entra users to your organization, ensure you are adding them by UPN. 
 
 **Limitations:** Lacks centralized identity governance and enterprise-grade security features. 
 
