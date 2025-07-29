@@ -41,9 +41,9 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
 1. Create a resource group to contain the Managed DevOps Pool and other resources. Replace `<resourceGroupName>` with the name you want to use for the resource group, and `<location>` with the Azure region where you want to create the resource group.
 
-```azurecli
+   ```azurecli
    az group create --name <resourceGroupName> --location <location>
-```
+   ```
 
 ## Review and save the template
 
