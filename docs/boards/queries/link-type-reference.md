@@ -37,7 +37,7 @@ A specific field maintains a count of links for the first four link types, such 
 - [**Work link type**](#work-link-type): links work items including select test case management work items
 - [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
 - [**External link type**](#external-link-type): connects a work item to an external object, such as a code object, build, or wiki page
-- [**GitHub link type**](#github-link-type): connects a work item to a GitHub repository commit or pull request.     
+- [**GitHub link type**](#github-link-type): connects a work item to a GitHub repository commit or pull request.
 
 A specific field maintains a count of links for the first three link types, such as *Related Link Count*, *Hyperlink Count*, and *External Link Count*.  
 
@@ -845,7 +845,7 @@ The following table provides descriptions for each of the link type attributes r
       `directional`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type is directional (`true`) or not (`false`).  Directional link types get defined in pairs with a forward and reverse component. For more information, see [LinkTypes elements reference](/previous-versions/azure/devops/reference/xml/link-type-element-reference). 
+      Indicates whether the link type is directional (`true`) or not (`false`). Directional link types get defined in pairs with a forward and reverse component. For more information, see [LinkTypes elements reference](/previous-versions/azure/devops/reference/xml/link-type-element-reference). 
    :::column-end:::
 :::row-end:::
 :::row:::
