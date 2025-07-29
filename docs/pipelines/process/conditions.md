@@ -24,7 +24,8 @@ By default, a step runs if nothing in its job failed yet and the step immediatel
 
 You can override or customize these default behaviors by setting a stage, job, or step to run even if or only if a previous dependency fails or has another outcome, or by defining custom conditions. In a YAML pipeline definition, you use the `condition` property to specify conditions under which a stage, job, or step can run.
 
-[!INCLUDE [include](includes/task-run-built-in-conditions.md)]- [Custom conditions](#custom-conditions).
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
+- [Custom conditions](#custom-conditions).
 
 >[!IMPORTANT]
 >When you specify a `condition` property for a stage, job, or step, you overwrite the default condition. Your stage, job, or step might run even if the build is canceled. Make sure your conditions take the state of the parent stage or job into account.
