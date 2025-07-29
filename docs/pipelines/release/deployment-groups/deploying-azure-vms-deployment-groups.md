@@ -163,7 +163,9 @@ Now that the release definition is configured and saved, you can proceed to crea
 
 If you encounter either of these errors while running the *Sql Dacpac Deployment On Machine Group* task, follow these steps:
 
-1/ Verify your databe: Make sure that the database was successfully created during the resource deployment. You can confirm this using the Azure CLI or sqlcmd:
+1. Verify your database: 
+
+Make sure that the database was successfully created during the resource deployment. You can confirm this using the Azure CLI or sqlcmd:
 
 ```
 sqlcmd -S <server-name> -U <username> -P <password> -Q "SELECT name FROM sys.databases"
@@ -176,27 +178,29 @@ sqlcmd -S <server-name> -U <username> -P <password> -Q "CREATE DATABASE [YourDat
 ```
 
 
-2/Make sure the SQL Server Authentication is enabled: Your SQL Server must be configured to allow both SQL and Windows Authentication (Mixed Mode). To enable this:
+2. Verify your SQL Server Authentication:
 
-    a. Connect using SSMS or sqlcmd
+Make sure the SQL Server Authentication is enabled, your SQL Server must be configured to allow both SQL and Windows Authentication (Mixed Mode). To enable this:
+
+a. Connect using SSMS or sqlcmd
     
-    b. Run the following query:
+b. Run the following query:
     
-        ```
-        EXEC xp_instance_regwrite 
-          N'HKEY_LOCAL_MACHINE',
-          N'Software\\Microsoft\\MSSQLServer\\MSSQLServer',
-          N'LoginMode',
-          REG_DWORD,
-          2;
-        ```
+```
+EXEC xp_instance_regwrite 
+    N'HKEY_LOCAL_MACHINE',
+    N'Software\\Microsoft\\MSSQLServer\\MSSQLServer',
+    N'LoginMode',
+    REG_DWORD,
+    2;
+```
     
-    c. Restart the SQL Server service for the change to take effect:
-    
-        ```
-        net stop MSSQLSERVER
-        net start MSSQLSERVER
-        ```
+c. Restart the SQL Server service for the change to take effect:
+
+```
+net stop MSSQLSERVER
+net start MSSQLSERVER
+```
     
 ## Cleaning up resources
 
