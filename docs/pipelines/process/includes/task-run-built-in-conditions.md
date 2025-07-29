@@ -10,7 +10,7 @@ ms.date: 07/25/2025
 >[!NOTE]
 >Conditions apply to all previous direct and indirect dependencies with the same agent pool. Stages or jobs in different agent pools run concurrently.
 
-Possible conditions include:
+Conditions based on previous dependency status include:
 
 - **Succeeded**: Run only if all previous dependencies succeed. This behavior is the default if no condition is set in the YAML. To apply this condition, specify `condition: succeeded()`.
 - **Succeeded or failed**: Run even if a previous dependency fails, unless the run is canceled. To apply this condition, specify `condition: succeededOrFailed()`.
