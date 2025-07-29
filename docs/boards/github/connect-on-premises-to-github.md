@@ -13,7 +13,7 @@ ms.custom: sfi-image-nochange
 
 # Connect Azure DevOps Server to GitHub (on-premises)
 
-[!INCLUDE [version-gt-eq-2020-lt-azure-devops](../../includes/version-gt-eq-2020-lt-azure-devops.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=2095009 --> 
 
