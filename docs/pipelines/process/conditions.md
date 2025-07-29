@@ -109,13 +109,13 @@ jobs:
 
 You can create a variable in a step that future steps can specify in a condition. Variables created from steps are available to future steps by default and don't need to be marked as multi-job output variables.
 
-Variables created in a step in a job:
+Variables created in a step in a job have the following limitations:
 
 - Are [scoped](variables.md#set-a-job-scoped-variable-from-a-script) to the steps in the same job.
-- Are available in subsequent steps only as environment variables.
+- Are available in subsequent steps only as [environment variables](variables.md#environment-variables).
 - Can't be used in the same step that defines them.
 
-The following example creates a pipeline variable in a step and uses the variable in a later step's condition and script.
+The following example creates a pipeline variable in a step and uses the variable in a later step's script condition.
 
 ```yaml
 steps:
