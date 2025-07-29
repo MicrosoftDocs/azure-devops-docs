@@ -53,7 +53,7 @@ From your web browser, open your product backlog.
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Select your project, choose **Boards>Backlogs**, and then select the team. 
+1. Select your project, choose **Boards** > **Backlogs**, and then select the team. 
 
     :::image type="content" source="media/organize-backlog/open-backlogs-backlog.png" alt-text="Screenshot shows backlog items for a selected team.":::
 
@@ -66,11 +66,11 @@ From your web browser, open your product backlog.
 
 1. Select **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level.
 
-    :::image type="content" source="media/organize-backlog/select-product-backlog-agile.png" alt-text="Screenshot shows the Stories option with its suboptions, including Features and Stories.":::
+    :::image type="content" source="media/organize-backlog/select-product-backlog-agile.png" alt-text="Screenshot shows the Stories option with its suboptions, including Features and Stories." lightbox="media/organize-backlog/select-product-backlog-agile.png":::
 
 1. To choose which columns should display and in what order, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md).
 
-	:::image type="content" source="media/organize-backlog/open-column-options.png" alt-text="Screenshot shows the Column Options button.":::
+	:::image type="content" source="media/organize-backlog/open-column-options.png" alt-text="Screenshot shows the Column Options button." lightbox="media/organize-backlog/open-column-options.png":::
 
 ::: moniker-end
 
@@ -130,7 +130,7 @@ If you already created your backlog, you can organize it by mapping child items 
 
 1. Find **Unparented** backlog items that appear at the end of the parented set of backlog items. Parents must be turned on in view options. 
 
-    :::image type="content" source="media/organize-backlog/map-unparented-items-agile.png" alt-text="Screenshot shows an unparented item to be moved to a different parent.":::
+    :::image type="content" source="media/organize-backlog/map-unparented-items-agile.png" alt-text="Screenshot shows an unparented item to be moved to a different parent." lightbox="media/organize-backlog/map-unparented-items-agile.png":::
 
 1. To map features to epics, select the **Features** backlog from the backlog selector. The Epics Mapping pane automatically displays. 
 
@@ -146,7 +146,7 @@ If you already created your backlog, you can organize it by mapping child items 
 
 1. Find **Unparented** backlog items that appear at the end of the parented set of backlog items. Parents must be turned on in view options. 
 
-   :::image type="content" source="media/organize-backlog/map-unparented-items-agile.png" alt-text="Screenshot shows an unparented item being moved to a different parent.":::
+   :::image type="content" source="media/organize-backlog/map-unparented-items-agile.png" alt-text="Screenshot shows an unparented item being moved to a different parent." lightbox="media/organize-backlog/map-unparented-items-agile.png":::
 
 2. To map features to epics, select the **Features** backlog from the backlog selector. The Epics Mapping pane automatically displays. 
 
