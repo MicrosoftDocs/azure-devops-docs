@@ -308,7 +308,7 @@ sections:
       - question: How do I connect Azure Boards to GitHub?
 
         answer: | 
-          Azure Boards integrates with GitHub for Azure DevOps Server 2019 and later versions. For more information, see [Azure Boards & GitHub](github/index.md).
+          See [Azure Boards & GitHub](github/index.md).
 
       - question: Can I specify the status when linking a work item to a GitHub commit or PR?
 
