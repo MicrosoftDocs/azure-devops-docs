@@ -12,7 +12,7 @@ ms.date: 07/12/2023
 
 # Add status badges for your GitHub repo 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
  
 You can add Markdown syntax to a GitHub repo `README.md` file to display your board status in that repo. Show the status by adding the syntax you choose from your board settings.  
 

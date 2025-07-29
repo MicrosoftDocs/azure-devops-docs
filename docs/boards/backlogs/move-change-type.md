@@ -14,7 +14,7 @@ ms.date: 05/05/2025
 
 # Bulk move work items and change the work item type in Azure Boards
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Sometimes, work items get created with the wrong type or assigned to an incorrect project. You can correct these issues by updating individual work items or bulk modifying multiple items. You can also remove irrelevant work items from your backlog or Taskboard.
 

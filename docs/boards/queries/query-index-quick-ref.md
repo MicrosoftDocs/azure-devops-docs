@@ -233,7 +233,7 @@ The following table indicates the operators and macros available for the differe
    `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`  
    **Macros**: `@Today`, valid with any **DateTime** field  
 
-   **Additional macros supported on Azure DevOps 2019 Update 1 and later versions:**:  
+   **Additional macros supported on Azure DevOps 2020 and later versions:**:  
    `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, and `@StartOfYear`, valid with any **DateTime** field
    :::column-end::: 
 :::row-end:::
@@ -362,10 +362,10 @@ The following table indicates the operators and macros available for the differe
 :::row-end:::
 
 > [!NOTE]  
-> 1. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Server 2019 and later versions. 
-> 2. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions.   
-> 3. The `@TeamAreas` macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions. 
-> 4. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
+> 1. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is supported for Azure DevOps Services and Azure DevOps Server 2020 and later versions. 
+> 2. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Services and Azure DevOps Server 2020 and later versions.   
+> 3. The `@TeamAreas` macro is supported for Azure DevOps Services and Azure DevOps Server 2020 and later versions. 
+> 4. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Services and Azure DevOps Server 2020 and later versions, and only when run from the web portal.
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
