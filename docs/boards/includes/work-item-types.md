@@ -28,8 +28,6 @@ The following image shows the hierarchy for the Basic process backlog work item:
 - Issues and tasks are used to track work.
 - Epics are used to group work under larger scenarios.
 
-The Basic process is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions.
-
 For more information about using these work item types, see [Plan and track work](../get-started/plan-track-work.md).
 
 #### [Scrum process](#tab/scrum-process)

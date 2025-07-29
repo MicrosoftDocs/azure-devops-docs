@@ -81,7 +81,7 @@ Query clauses that specify a text or rich-text field can use the operators and m
  
 
 > [!NOTE]  
-> 1. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions
+> 1. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2020 and later versions
 > 2. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#query-across-or-within-projects).
 
 

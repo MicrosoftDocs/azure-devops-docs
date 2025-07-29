@@ -69,7 +69,7 @@ As updates are made to the CMMI process template, the version number is updated.
 > |Version | CMMI name | Major version |
 > |-------------|-------------------|--------------|
 > | Azure DevOps Services<br/>Azure DevOps Server 2022 | CMMI | 18 |
-> | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | CMMI | 17 |
+> | Azure DevOps Server 2020 | CMMI | 17 |
 
 For a summary of updates made to process templates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 

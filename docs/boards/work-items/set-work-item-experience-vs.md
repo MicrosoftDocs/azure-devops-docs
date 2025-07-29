@@ -13,7 +13,7 @@ ms.date: 11/21/2024
 
 # Set the work items experience
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Visual Studio 2019 allows you to switch between the default and legacy views of the Team Explorer **Work Items** page. The default view is designed to align with the web portal's **Boards** > **Work Items** page, offering a modern and consistent interface for managing work items. The legacy view retains the familiar layout from previous versions of Visual Studio, supporting users who prefer the traditional Work Items page experience.

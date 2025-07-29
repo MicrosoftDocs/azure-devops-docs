@@ -596,7 +596,7 @@ Attributes assigned to a field depend on the platform and version you're using. 
 
 > [!NOTE]  
 > 1. For on-premises deployments, you can enable indexing for a field to improve query response times when filtering on the field. For more information, see [Indexed fields](#index-fields) later in this article. 
-> 2. The **isPicklist** and **isPicklistSuggested** attributes are only assigned to custom fields defined for an inherited process. The Inherited process model is supported for Azure DevOps Server 2019 and later versions. For more information, see [Inherited process model](../../organizations/settings/work/inheritance-process-model.md).
+> 2. The **isPicklist** and **isPicklistSuggested** attributes are only assigned to custom fields defined for an inherited process. The Inherited process model is supported for Azure DevOps Server 2020 and later versions. For more information, see [Inherited process model](../../organizations/settings/work/inheritance-process-model.md).
 > 3. All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services.   
 
 

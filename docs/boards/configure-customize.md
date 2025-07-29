@@ -431,8 +431,6 @@ Some organizations require time tracking to support other purposes, such as bill
 
 - Azure Boards provides limited native support for time tracking. To support your other time tracking requirements, consider using a [Marketplace extension](https://marketplace.visualstudio.com/search?term=time%20tracking&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance).
 
-- The `Original Estimate`, `Completed Work`, and `Remaining Work` fields are designed to support integration with Microsoft Project. Integration support with Microsoft Project is deprecated for Azure DevOps Server 2019 and later versions, including the cloud service. 
-
 ## Process changes that affect all teams 
 
 Any modification made to a process in a project affects all teams in that project. Many modifications don't cause significant disruptions. Certain changes can require critical adjustments for the teams, as described in the following sections.
