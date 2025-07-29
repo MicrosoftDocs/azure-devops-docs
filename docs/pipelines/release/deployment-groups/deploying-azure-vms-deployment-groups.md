@@ -153,27 +153,51 @@ Now that the release definition is configured and saved, you can proceed to crea
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-release-overview.png" alt-text="A screenshot displaying the release pipeline overview.":::
 
+1. In the summary window, you can see the status of each phase of the deployment:
+
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-release-summary.png" alt-text="A screenshot displaying the release summary.":::
+
+## Troubleshooting
+
+- **Unable to connect to master or target server** or **A connection was successfully established with the server, but then an error occurred during the login process.**
+
+If you encounter either of these errors while running the *Sql Dacpac Deployment On Machine Group* task, follow these steps:
+
+1/ Verify your databe: Make sure that the database was successfully created during the resource deployment. You can confirm this using the Azure CLI or sqlcmd:
+
+```
+sqlcmd -S <server-name> -U <username> -P <password> -Q "SELECT name FROM sys.databases"
+```
+
+If you database is not present in the list, you can create a new one using the following command:
+
+```
+sqlcmd -S <server-name> -U <username> -P <password> -Q "CREATE DATABASE [YourDatabaseName]"
+```
 
 
+2/Make sure the SQL Server Authentication is enabled: Your SQL Server must be configured to allow both SQL and Windows Authentication (Mixed Mode). To enable this:
 
-
-
-1. In the Azure portal, open one of the web VMs in your resource group. You can select any that have `websrv` in the name.
-
-    ![Locating a web VM](media/deploying-azure-vms-deployment-groups/web-vm.png)
-
-1. Copy the **DNS** of the VM. The [**Azure Load Balancer**](/azure/load-balancer/load-balancer-overview) will distribute incoming traffic among healthy instances of servers defined in a load-balanced set. As a result, the **DNS** of all web server instances is the same.
-
-    ![Locating the web app domain](media/deploying-azure-vms-deployment-groups/web-app-domain.png)
-
-1. Open a new browser tab to the DNS of the VM. Confirm the deployed app is running.
-
-    ![Reviewing the app](media/deploying-azure-vms-deployment-groups/web-app-review.png)
-
-## Summary
-
-In this tutorial, you deployed a web application to a set of Azure VMs using Azure Pipelines and Deployment Groups. While this scenario covered a handful of machines, you can easily scale the process up to support hundreds, or even thousands, of machines using virtually any configuration.
-
+    a. Connect using SSMS or sqlcmd
+    
+    b. Run the following query:
+    
+        ```
+        EXEC xp_instance_regwrite 
+          N'HKEY_LOCAL_MACHINE',
+          N'Software\\Microsoft\\MSSQLServer\\MSSQLServer',
+          N'LoginMode',
+          REG_DWORD,
+          2;
+        ```
+    
+    c. Restart the SQL Server service for the change to take effect:
+    
+        ```
+        net stop MSSQLSERVER
+        net start MSSQLSERVER
+        ```
+    
 ## Cleaning up resources
 
 This tutorial created an Azure DevOps project and some resources in Azure. If you're not going to continue to use these resources, delete them with the following steps:
