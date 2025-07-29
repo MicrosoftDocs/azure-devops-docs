@@ -9,7 +9,7 @@ ms.date: 07/15/2025
 Managed DevOps Pools provides you with several options for virtual machine images for running pipelines in your pool. You can create your pool using selected Azure Marketplace VM images, use your own custom Azure Compute Gallery images, or use the same images as Azure Pipelines Microsoft-hosted agents.
 
 > [!IMPORTANT]
-> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)] 
+> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
 
 Managed DevOps Pools can be configured with a single image or multiple images. When your pool has multiple images, your pipelines should specify the image they want to run on using [aliases](#use-multiple-images-per-pool-with-aliases).
 
@@ -170,6 +170,70 @@ The following example defines three images. Standby agents are enabled, with 100
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+Images are configured in the `fabricProfile` section of the Managed DevOps Pools resource properties.
+
+The following example specifies three images. For more information on the schema for images, see the following sections in this article.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    fabricProfile: {
+      ...
+      images: [
+        {
+          resourceId: '/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/ubuntu-24_04-lts/skus/server/versions/latest'
+          aliases: [
+            'ubuntu-24.04-gen2'
+          ]
+        }
+        {
+          wellKnownImageName: 'windows-2022'
+        }
+        {
+          wellKnownImageName: 'ubuntu-22.04'
+        }
+      ]
+    }
+  }
+}
+```
+
+Each image can have the following properties.
+
+| Property | Description |
+|----------|-------------|
+| `aliases` | An optional list of aliases. You can then refer to the image using the aliases instead of the full resource ID of the image. |
+| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
+| `wellKnownImageName` | The alias of the Azure Pipelines image. Required when using [Azure Pipelines images](#azure-pipelines-images). |
+| `buffer` | When [standby agents](./configure-scaling.md#standby-agent-mode) are enabled, `buffer` designates which percentage of standby agents to be allocated to this image. The total of all image `buffer` values must equal 100. |
+
+The following example defines three images. Standby agents are enabled, with 100% of the standby agents allocated to the `windows-2022` image.
+
+```bicep
+images: [
+  {
+    resourceId: '/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/ubuntu-24_04-lts/skus/server/versions/latest'
+    aliases: [
+      'ubuntu-24.04-gen2'
+    ]
+    buffer: 0
+  }
+  {
+    buffer: 100
+    wellKnownImageName: 'windows-2022'
+  }
+  {
+    buffer: 0
+    wellKnownImageName: 'ubuntu-22.04'
+  }
+]
+```
+
 * * *
 
 If you choose a single image, all pipelines run in your pool using that image. If you choose multiple images, you can specify the image to use on a per-pipeline basis. For more information, see [Use multiple images per pool](#use-multiple-images-per-pool-with-aliases).
@@ -225,6 +289,20 @@ To specify an Azure Pipelines image, provide the predefined alias of the image u
 
 You can optionally specify a version in your `wellKnownImageName` setting, for example `"wellKnownImageName": "windows-2022/latest"` or `"wellKnownImageName": "windows-2022/20250427.1.0"`. If you don't specify a version, `latest` is used.
 
+#### [Bicep](#tab/bicep/)
+
+To specify an Azure Pipelines image, provide the alias of the image using the `wellKnownImageName` property. See a [list of Azure Pipelines image predefined aliases.](#azure-pipelines-image-predefined-aliases)
+
+```bicep
+images: [
+  {
+    wellKnownImageName: 'windows-2022'
+  }
+]
+```
+
+You can optionally specify a version in your `wellKnownImageName` setting, for example `"wellKnownImageName": "windows-2022/latest"` or `"wellKnownImageName": "windows-2022/20250427.1.0"`. If you don't specify a version, `latest` is used.
+
 * * *
 
 Each image includes the following installed software.
@@ -238,7 +316,7 @@ Each image includes the following installed software.
 | Azure Pipelines - Ubuntu 22.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md) |
 
 > [!IMPORTANT]
-> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)] 
+> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
 
 ## Selected marketplace images
 
@@ -271,6 +349,18 @@ To specify selected marketplace image, provide the resource ID of the image usin
     {
         "resourceId": "/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/Publishers/canonical/ArtifactTypes/VMImage/Offers/ubuntu-24_04-lts/Skus/server/versions/latest"
     }
+]
+```
+
+#### [Bicep](#tab/bicep/)
+
+To specify a selected marketplace image, provide the resource ID of the image using the `resourceId` property.
+
+```bicep
+images: [
+  {
+    resourceId: '/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/ubuntu-24_04-lts/skus/server/versions/latest'
+  }
 ]
 ```
 
@@ -319,6 +409,18 @@ To specify an Azure Compute Gallery image, provide the resource ID of the image 
     {
         "resourceId": "/subscriptions/subscription_id_placeholder/resourceGroups/resource_group_placeholder/providers/Microsoft.Compute/galleries/my_images/images/Ubuntu2404"
     }
+]
+```
+
+#### [Bicep](#tab/bicep/)
+
+To specify an Azure Compute Gallery image, provide the resource ID of the image using the `resourceId` property.
+
+```bicep
+images: [
+  {
+    resourceId: '/subscriptions/subscription_id_placeholder/resourceGroups/resource_group_placeholder/providers/Microsoft.Compute/galleries/my_images/images/Ubuntu2404'
+  }
 ]
 ```
 
@@ -397,6 +499,21 @@ To configure aliases, specify them in the `aliases` list. The following example 
 ]
 ```
 
+#### [Bicep](#tab/bicep/)
+
+To configure aliases, specify them in the `aliases` list. The following example defines one image with a single alias named `ubuntu-24.04-gen2`.
+
+```bicep
+images: [
+  {
+    resourceId: '/subscriptions/subscription_id_placeholder/Providers/Microsoft.Compute/Locations/eastus/publishers/canonical/artifacttypes/vmimage/offers/ubuntu-24_04-lts/skus/server/versions/latest'
+    aliases: [
+        'ubuntu-24.04-gen2'
+    ]
+  }
+]
+```
+
 * * *
 
 #### Azure Pipelines image predefined aliases
@@ -418,7 +535,7 @@ If you have multiple images in your pool, you can configure a pipeline to run on
 To run a pipeline on the Ubuntu 24.04 image from the previous example that had an `ubuntu-24.04-gen2` alias, specify the following demand in the `pool` section of your pipeline.
 
 ```yml
-pool: 
+pool:
   name: fabrikam-dev-pool # Name of Managed DevOps Pool
   demands:
   - ImageOverride -equals ubuntu-24.04-gen2
@@ -430,7 +547,7 @@ pool:
 To run a pipeline using an Azure Pipelines image in your pool, use the alias in the previous table. To run a pipeline on the Azure Pipelines Windows Server 2022 image from the previous example, specify the following demand in the `pool` section of your pipeline.
 
 ```yml
-pool: 
+pool:
   name: fabrikam-dev-pool # Name of Managed DevOps Pool
   demands:
   - ImageOverride -equals windows-2022
@@ -452,8 +569,8 @@ Managed DevOps Pools agent images are retired when the image's operating system 
 
 Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019** image.
 
-* Creation of new pools using **Azure Pipelines – Windows Server 2019** will be disabled starting November 1, 2025, but existing pools on these images will continue to run until December 31, 2025. 
-* On December 31, 2025, use of **Azure Pipelines – Windows Server 2019** image will be disabled. Agents using this image won't provision and pipelines won't run.  
+* Creation of new pools using **Azure Pipelines – Windows Server 2019** will be disabled starting November 1, 2025, but existing pools on these images will continue to run until December 31, 2025.
+* On December 31, 2025, use of **Azure Pipelines – Windows Server 2019** image will be disabled. Agents using this image won't provision and pipelines won't run.
 
 To keep your Managed DevOps Pools running if you use the **Azure Pipelines – Windows Server 2019** image, update to the **Azure Pipelines - Windows Server 2022** image. Alternatively, you can use the Windows Server 2019 image from [Selected marketplace images](./configure-images.md#selected-marketplace-images) or your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. Note that the marketplace image does not include the pre-installed software found in the Azure Pipelines image.
 
