@@ -26,7 +26,7 @@ For an overview of the integration that the Azure Boards app for GitHub supports
 | **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
 
 > [!IMPORTANT]  
-> If your repository is already connected via another authentication type such as OAuth, you must remove that repository from your existing connection before you re-connect it via the GitHub App. Follow the steps provided in [Add or remove GitHub repositories](#add-remove-repos) later in this article before you configure the GitHub App.
+> If your repository is already connected via another authentication type such as OAuth, you must remove that repository from your existing connection before you reconnect it by using the GitHub App. Follow the steps provided in [Add or remove GitHub repositories](#add-remove-repos) later in this article before you configure the GitHub App.
 >
 > You can connect an Azure DevOps organization to multiple GitHub repositories if you're an administrator for those repositories. However, you shouldn't connect a GitHub repository to more than one Azure DevOps organization.
 
@@ -119,13 +119,13 @@ At this point, your Azure Boards-GitHub integration is complete. You can skip th
 
    :::image type="content" source="media/github-app/readme-file-with-badge.png" alt-text="Screenshot of GitHub repo with badge added.":::
 
-	For more information, see [Configure status badges to add to GitHub README files](configure-status-badges.md).
+	For more information, see [Add status badges for your GitHub repo](configure-status-badges.md).
 
 <a id="configure"></a>
 
 ## Configure other projects or repositories
 
-You can configure other Azure Boards/Azure DevOps Projects, GitHub.com repositories, or change the current configuration from the Azure Boards app page. For more information, see [Change GitHub repository access, or suspend or uninstall the integration](install-github-app.md#add-remove-repos).
+You can configure other Azure Boards/Azure DevOps Projects, GitHub.com repositories, or change the current configuration from the Azure Boards app page. For more information, see [Add or remove repositories, or remove a connection from Azure Boards](install-github-app.md#add-remove-repos).
 
 <a id="add-remove-repos"></a>
 
@@ -188,7 +188,7 @@ If you encounter a problem with a connection, we recommend that you remove the c
  
 If you change the repositories that the Azure Boards app for GitHub supports, you might get redirected to Azure Boards GitHub connections. A good practice is to remove the repositories in Azure Boards that can no longer connect to GitHub. For more information, see [Add or remove GitHub repositories](#add-remove-repos).
 
-If you uninstall the Azure Boards app for GitHub, the following message displays in Azure Boards, **Project settings** > **GitHub** connections. Choose **Remove connection** to remove all previously made GitHub connections. For more information, see [Add/remove GitHub repositories](#add-remove-repos). 
+If you uninstall the Azure Boards app for GitHub, the following message displays in Azure Boards, **Project settings** > **GitHub** connections. Choose **Remove connection** to remove all previously made GitHub connections. For more information, see [Add or remove GitHub repositories](#add-remove-repos). 
 
 :::image type="content" source="media/change-repo-access/boards-remove-connection.png" alt-text="Screenshot of uninstalled Azure Boards GitHub app.":::
 
