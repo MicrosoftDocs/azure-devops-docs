@@ -9,13 +9,7 @@ ms.date: 07/30/2025
 
 <a id="definitions-in-common"></a>
 
-The following fields and tabs appear in most work items. Each tab is used to track specific information. 
-
-Commonly used tabs include:
-
-- :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png"::: **History** of changes to the work item.
-- :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png"::: **Links** representing connections with other work items.
-- :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png"::: **Attachments** to the work item, such as spreadsheets or screen captures.  
+The following fields and tabs appear in most work items. Each tab is used to track specific information. Commonly used tabs include :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png"::: **History**, :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png"::: **Links**, and :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png"::: **Attachments**.
 
 The only required field for all work item types is **Title**. When you save a work item, the system assigns a unique identifier, **ID**. The form highlights required fields in yellow. For information about other fields, see [Work item field index](../work-items/guidance/work-item-field.md).   
 
@@ -81,25 +75,25 @@ The only required field for all work item types is **Title**. When you save a wo
 :::row-end:::
 :::row:::
    :::column span="1":::
-   :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png"::: (History tab)
+   :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png"::: [History](../queries/history-and-auditing.md) tab
    :::column-end:::
    :::column span="3":::
-   View the work item [History](../queries/history-and-auditing.md) to see all changes made to the item, as captured by the system. Each time a work item is updated, the details are appended to the history. You see the change date, the change author, and the list of updated fields. You can also add formatted text to the **History** field.
+   View the work item **History** to see all changes made to the item, as captured by the system. Each time a work item is updated, the details are appended to the history. You see the change date, the change author, and the list of updated fields. You can also add formatted text to the **History** field.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png"::: (Links tab)
+   :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png"::: [Links](../backlogs/add-link.md) tab
    :::column-end:::
    :::column span="3":::
-   Add [Links](../backlogs/add-link.md) to create connections with other work items. Many kinds of links are supported, such as hyperlinks, changesets, source files, and more. Specify the relationship of the linked item to the work item, such as _Parent_, _Found in Build_, or _Test Result_. 
+   Add **Links** to create connections with other work items. Many kinds of links are supported, such as hyperlinks, changesets, source files, and more. Specify the relationship of the linked item to the work item, such as _Parent_, _Found in Build_, or _Test Result_. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png"::: (Attachments tab)
+   :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png"::: [Attachments](../queries/linking-attachments.md) tab
    :::column-end:::
    :::column span="3":::
-   Use [Attachments](../queries/linking-attachments.md) to include supporting information about the work item with the item. Attach email threads, documents, images, log files, or other file types.
+   Use **Attachments** to include supporting information about the work item with the item. Attach email threads, documents, images, log files, or other file types.
    :::column-end:::
 :::row-end:::

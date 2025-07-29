@@ -35,7 +35,7 @@ Enter a name or number to filter the menu list to match your entry. Select the e
 
 ### Edit or delete a comment
 
-To edit or delete any of your discussion comments, select **Edit** :::image type="icon" source="../../media/icons/edit.png"::: or select **More actions** (:::image type="icon" source="../../media/icons/actions-icon.png":::) > **Delete**.
+To edit or delete any of your discussion comments, select **Edit** :::image type="icon" source="../../media/icons/edit.png"::: or **More actions** (:::image type="icon" source="../../media/icons/actions-icon.png":::) and then select **Delete**:
 
 :::image type="content" source="../media/discussion-edit-delete.png" alt-text="Screenshot of Discussion section where you can choose Edit or Delete actions.":::
 
