@@ -93,7 +93,7 @@ Once the network update completes, newly created resource in the pool will use t
 
 #### [ARM template](#tab/arm/)
 
-If you're using ARM templates, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet. 
+If you're using ARM templates, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet.
 
 ```json
 {
@@ -139,6 +139,24 @@ The following example shows the `networkProfile` section of the **fabric-profile
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+If you're using Bicep, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'MyManagedDevOpsPool'
+  location: 'eastus'
+  properties: {
+    ...
+    fabricProfile: {
+      networkProfile: {
+        subnetId: '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet'
+      }
+  }
+}
+```
+
 * * *
 
 ## Restricting outbound connectivity
@@ -159,7 +177,7 @@ If you have systems in place on your network (NSG, Firewall, etc.) that restrict
       * `packages.microsoft.com` - Provisioning Linux machines
       * `ppa.launchpad.net` - Provisioning some specific Linux distros
       * `dl.fedoraproject.org` - Provisioning certain Linux distros
-* Optional, but required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization hosting your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`. 
+* Optional, but required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization hosting your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`.
    * `*.services.visualstudio.com`
    * `*.vsblob.visualstudio.com` - Used for Artifacts, both uploading and consuming
    * `*.vssps.visualstudio.com` - Used for authentication with Azure DevOps for certain features
