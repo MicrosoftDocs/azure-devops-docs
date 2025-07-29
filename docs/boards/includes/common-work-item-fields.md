@@ -2,24 +2,29 @@
 ms.topic: include
 ms.author: chcomley
 author: chcomley 
-ms.date: 06/07/2023
+ms.date: 07/30/2025
 ---
-
 
 ## Definitions for common work tracking fields  
 
 <a id="definitions-in-common"></a>
 
-The following fields and tabs appear in most work items. Each tab gets used to track specific information, such as :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png" border="false"::: **History**, :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png" border="false"::: **Links**, or :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: **Attachments**. These three tabs provide a history of changes, view of linked work items, and ability to view and attach files.  
+The following fields and tabs appear in most work items. Each tab is used to track specific information. 
 
-The only required field for all work item types is **Title**. When you save a work item, the system assigns it a unique **ID**. The form highlights required field in yellow. For information about other fields, see [Work item field index](../work-items/guidance/work-item-field.md).   
+Commonly used tabs include:
+
+- :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png"::: **History** of changes to the work item.
+- :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png"::: **Links** representing connections with other work items.
+- :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png"::: **Attachments** to the work item, such as spreadsheets or screen captures.  
+
+The only required field for all work item types is **Title**. When you save a work item, the system assigns a unique identifier, **ID**. The form highlights required fields in yellow. For information about other fields, see [Work item field index](../work-items/guidance/work-item-field.md).   
 
 > [!NOTE]   
-> Additional fields may be required depending on customizations made to your process and project.  
+> Other fields might be required depending on customizations made to your process and project.  
 
 :::row:::
    :::column span="1":::
-   **Field/tab**
+   **Field or Tab**
    :::column-end:::
    :::column span="3":::
    **Usage**
@@ -31,7 +36,7 @@ The only required field for all work item types is **Title**. When you save a wo
    [Title](../queries/titles-ids-descriptions.md) 
    :::column-end:::
    :::column span="3":::
-   Enter a description of 255 characters or less. You can always modify the title later.
+   Enter a description of 255 characters or less. You can modify the **Title** later.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -39,7 +44,7 @@ The only required field for all work item types is **Title**. When you save a wo
    [Assigned To](../queries/query-by-workflow-changes.md)
    :::column-end:::
    :::column span="3":::
-   Assign the work item to the team member responsible for performing the work. 
+   Assign the work item to the team member responsible for performing the work, or leave blank and complete the assignment later.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -47,7 +52,7 @@ The only required field for all work item types is **Title**. When you save a wo
    [State](../queries/query-by-workflow-changes.md)
    :::column-end:::
    :::column span="3":::
-   When the work item is created, the State defaults to the first state in the workflow. As work progresses, update it to reflect the current state.
+   When you first create a work item, the **State** field automatically shows the first state in the workflow, such as **New** or **Unassigned**. As work progresses, update the **State** to reflect the current status of the work item.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -55,7 +60,7 @@ The only required field for all work item types is **Title**. When you save a wo
    [Reason](../queries/query-by-workflow-changes.md)
    :::column-end:::
    :::column span="3":::
-   Use the default first. Update it when you change state. Each State is associated with a default reason.
+   When you first create a work item, set the default **Reason** value, such as **Created** or **New work item**. As the **State** changes for the work item, update the **Reason** value accordingly. Each **State** for the work item is associated with a default **Reason** value.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -63,7 +68,7 @@ The only required field for all work item types is **Title**. When you save a wo
    [Area](../queries/query-by-area-iteration-path.md)
    :::column-end:::
    :::column span="3":::
-   Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting.  To change the dropdown list of areas, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). 
+   Choose the area path associated with the product or team, or leave blank and enter an appropriate value later. You can change the dropdown list of available areas. For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -71,34 +76,30 @@ The only required field for all work item types is **Title**. When you save a wo
    [Iteration](../queries/query-by-area-iteration-path.md)
    :::column-end:::
    :::column span="3":::
-   Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting. To change the drop-down list of iterations, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings//set-iteration-paths-sprints.md).
+   Choose the sprint or iteration in which to complete the work item, or leave blank and assign the value later. You can change the dropdown list of iterations. For more information, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings//set-iteration-paths-sprints.md).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   ![History tab icon](../backlogs/media/icon-history-tab-wi.png)[(History)](../queries/history-and-auditing.md)
+   :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png"::: (History tab)
    :::column-end:::
    :::column span="3":::
-   Review the audit trail that the system captures and capture additional information.
-
-   Every time that the work item is updated, information is appended to the history. History includes the date of the change, who made the change, and which fields were changed. You can also add formatted text to the history field.
+   View the work item [History](../queries/history-and-auditing.md) to see all changes made to the item, as captured by the system. Each time a work item is updated, the details are appended to the history. You see the change date, the change author, and the list of updated fields. You can also add formatted text to the **History** field.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   ![Links tab icon](../backlogs/media/icon-links-tab-wi.png) [(Links)](../backlogs/add-link.md)
+   :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png"::: (Links tab)
    :::column-end:::
    :::column span="3":::
-   Add all types of links, such as hyperlinks, changesets, source files, and so on.
-
-   This tab also lists all links defined for the work item.
+   Add [Links](../backlogs/add-link.md) to create connections with other work items. Many kinds of links are supported, such as hyperlinks, changesets, source files, and more. Specify the relationship of the linked item to the work item, such as _Parent_, _Found in Build_, or _Test Result_. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png)[(Attachments)](../queries/linking-attachments.md) 
+   :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png"::: (Attachments tab)
    :::column-end:::
    :::column span="3":::
-   Share more detailed information by adding files to the work item, such as email threads, documents, images, log files, or other file types.
+   Use [Attachments](../queries/linking-attachments.md) to include supporting information about the work item with the item. Attach email threads, documents, images, log files, or other file types.
    :::column-end:::
 :::row-end:::
