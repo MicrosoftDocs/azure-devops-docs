@@ -43,7 +43,7 @@ Agents are configured using the `agentProfile` property in the Managed DevOps Po
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -114,7 +114,7 @@ When **Agent state** is set to **Fresh agent every time**, a new agent is procur
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -225,7 +225,7 @@ Standby agents are configured using the `resourcePredictionsProfile` section of 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -322,7 +322,7 @@ Manual standby agent provisioning is specified in the `resourcePredictionsProfil
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -805,7 +805,7 @@ The following example configures a manual scheme with 1 agent provisioned on Mon
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -924,7 +924,7 @@ The following example configures four agents to be used during working hours wit
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -1015,7 +1015,7 @@ The following example configures four agents to be used during working hours wit
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -1078,7 +1078,7 @@ If you choose the all week scheme, you can specify a number of agents you want a
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -1173,7 +1173,7 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...

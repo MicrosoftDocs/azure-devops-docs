@@ -19,7 +19,7 @@ Before completing the steps in this article, have configured your Azure subscrip
 Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and run the following commands.
 
 1. Sign in the to Azure CLI.
- 
+
    ```azurecli
    az login
    ```
@@ -35,7 +35,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
    az account list -o table
    ```
 
-   If you have multiple tenants, or want to see more information about working with Azure subscription using Azure CLI, see [How to manage Azure subscriptions with the Azure CLI](/cli/azure/manage-azure-subscriptions-azure-cli). 
+   If you have multiple tenants, or want to see more information about working with Azure subscription using Azure CLI, see [How to manage Azure subscriptions with the Azure CLI](/cli/azure/manage-azure-subscriptions-azure-cli).
 
 ## Create a resource group, Dev Center, and Dev Center Project
 
@@ -81,7 +81,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
             {
                 "name": "[parameters('poolName')]",
                 "type": "microsoft.devopsinfrastructure/pools",
-                "apiVersion": "2024-10-19",
+                "apiVersion": "2025-01-21",
                 "location": "[parameters('location')]",
                 "tags": {},
                 "properties": {
@@ -130,7 +130,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
     | `imageName` | This example is configured to use an [Azure Pipelines image](./configure-images.md#azure-pipelines-images), and uses the Windows Server 2022 image. If you want to change it, choose from the [Azure Pipelines image predefined aliases](./configure-images.md#azure-pipelines-image-predefined-aliases). Managed DevOps Pools also supports Azure Compute Gallery images and selected marketplace images. For information on configuring a Managed DevOps Pools resource for these image types, see [Configure Managed DevOps Pools images](./configure-images.md). |
     | `poolSize` | Update `value` with the maximum number of agents you want to be able to run concurrent jobs. In this example the `poolSize` is `1`.|
     | `location` | The Azure region for the pool. In this example the region is `eastus`. |
-    
+
     ```json
     {
         "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
@@ -163,7 +163,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and run the following commands. You can skip the first two commands if your Azure CLI session from the first procedure is still active.
 
 1. Sign in the to Azure CLI.
- 
+
    ```azurecli
    az login
    ```
@@ -179,8 +179,8 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
    az account list -o table
    ```
 
-   If you have multiple tenants, or want to see more information about working with Azure subscription using Azure CLI, see [How to manage Azure subscriptions with the Azure CLI](/cli/azure/manage-azure-subscriptions-azure-cli). 
-   
+   If you have multiple tenants, or want to see more information about working with Azure subscription using Azure CLI, see [How to manage Azure subscriptions with the Azure CLI](/cli/azure/manage-azure-subscriptions-azure-cli).
+
 3. Go to the folder when you saved the two JSON files from the previous step. In this example, the files are saved to `C:\examples`.
 
    ```azurecli
@@ -194,7 +194,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
    ```
 
    If your subscription doesn't have the capacity to configure your pool with desired Azure VM SKU and maximum agents count, pool creation fails with an error similar to the following message. `Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription_id_placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`. To resolve the issue, see [Review Managed DevOps Pools quotas](./prerequisites.md#review-managed-devops-pools-quotas).
-   
+
 ## View your created pool in the Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).

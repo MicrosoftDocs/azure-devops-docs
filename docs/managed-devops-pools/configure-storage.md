@@ -41,7 +41,7 @@ Additional disk storage is configured in an ARM template in the property `dataDi
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...

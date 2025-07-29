@@ -99,7 +99,7 @@ If you're using ARM templates, add a `networkProfile` property in the `fabricPro
 {
     "name": "MyManagedDevOpsPool",
     "type": "Microsoft.DevOpsInfrastructure/pools",
-    "apiVersion": "2024-10-19",
+    "apiVersion": "2025-01-21",
     "location": "eastus",
     "properties": {
         ...

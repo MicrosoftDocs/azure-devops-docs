@@ -76,7 +76,7 @@ resource devCenterProject 'Microsoft.DevCenter/projects@2025-02-01' = {
   }
 }
 
-resource pool 'microsoft.devopsinfrastructure/pools@2024-10-19' = {
+resource pool 'microsoft.devopsinfrastructure/pools@2025-01-21' = {
   name: poolName
   location: location
   properties: {
