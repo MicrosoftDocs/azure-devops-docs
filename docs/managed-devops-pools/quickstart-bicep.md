@@ -160,7 +160,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
    If you have multiple tenants, or want to see more information about working with Azure subscription using Azure CLI, see [How to manage Azure subscriptions with the Azure CLI](/cli/azure/manage-azure-subscriptions-azure-cli).
 
-3. Go to the folder when you saved the Bicep and Bicepparam files from the previous step. In this example, the files are saved to `C:\examples`.
+3. Go to the folder when you saved the **mdp-azure-deploy.bicep** and **mdp-azure-deploy-parameters.bicepparam** files from the previous step. In this example, the files are saved to `C:\examples`.
 
    ```azurecli
    cd c:\examples
