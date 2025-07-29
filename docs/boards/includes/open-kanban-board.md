@@ -24,16 +24,14 @@ ms.topic: include
 
 	To select another team's board, open the selector. Then select a different team, or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team boards** option. Or, you can enter a keyword to filter the list of team backlogs for the project.
 
-	> [!div class="mx-imgBorder"]  
-	> :::image type="content" source="../boards/media/quickstart/select-kanban-team-board.png" alt-text="Screenshot shows selecting another team's board."::: 
+	:::image type="content" source="../boards/media/quickstart/select-kanban-team-board.png" alt-text="Screenshot shows selecting another team's board."::: 
 
 	> [!TIP]    
 	> Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI as the backlog level. 
 
-	> [!div class="mx-imgBorder"]  
-	> :::image type="content" source="../sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot shows selecting product backlog level, Backlog items, Stories, or Requirements."::: 
+	:::image type="content" source="../sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot shows selecting product backlog level, Backlog items, Stories, or Requirements."::: 
 
 To switch to the [product backlog](../backlogs/create-your-backlog.md), select **Stories backlog**. To switch to a Taskboard, see [Update and monitor your Taskboard](../sprints/task-board.md).  
 
@@ -47,16 +45,14 @@ To switch to the [product backlog](../backlogs/create-your-backlog.md), select *
 
 	To select another team's board, open the selector. Then select a different team, or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team boards** option. Or, you can enter a keyword to filter the list of team backlogs for the project.
 
-	> [!div class="mx-imgBorder"]  
-	> :::image type="content" source="../boards/media/quickstart/select-kanban-team-board.png" alt-text="Screenshot shows selecting another team's board.::: 
+    :::image type="content" source="../boards/media/quickstart/select-kanban-team-board.png" alt-text="Screenshot shows selecting another team's board."::: 
 
 	> [!TIP]    
 	> Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
-2. Check that you selected **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI as the backlog level. 
+1. Check that you selected **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI as the backlog level. 
 
-	> [!div class="mx-imgBorder"]  
-	> :::image type="content" source="../sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot shows selecting Backlog items, or, if relevant, Stories or Requirements."::: 
+    :::image type="content" source="../sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot shows selecting Backlog items, or, if relevant, Stories or Requirements."::: 
 
 To switch to the [product backlog](../backlogs/create-your-backlog.md), select **Stories backlog**. To switch to a Taskboard, see [Update and monitor your Taskboard](../sprints/task-board.md).  
 
