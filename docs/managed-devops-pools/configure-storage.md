@@ -31,7 +31,7 @@ Choose **Delete** to delete the data disk configuration for an existing pool.
 
 #### [ARM template](#tab/arm/)
 
-Additional disk storage is configured in an ARM template in `dataDisks` section under `storageProfile`. In the following example, a 10 GB Standard_LRS disk is configured with  the drive letter `Q` and no caching.
+Additional disk storage is configured in an ARM template in the property `dataDisks` section under `storageProfile`. In the following example, a 10 GB `Standard_LRS` disk is configured with  the drive letter `Q` and no caching.
 
 ```json
 {
@@ -45,16 +45,19 @@ Additional disk storage is configured in an ARM template in `dataDisks` section 
             "location": "eastus",
             "properties": {
                 ...
-                "storageProfile": {
-                    "osDiskStorageAccountType": "Standard",
-                    "dataDisks": [
-                        {
-                            "diskSizeGiB": 10,
-                            "caching": "None",
-                            "storageType": "Standard_LRS",
-                            "driveLetter": "Q"
-                        }
-                    ]
+                "fabricProfile": {
+                  ...
+                  "storageProfile": {
+                      "osDiskStorageAccountType": "Standard",
+                      "dataDisks": [
+                          {
+                              "diskSizeGiB": 10,
+                              "caching": "None",
+                              "storageType": "Standard_LRS",
+                              "driveLetter": "Q"
+                          }
+                      ]
+                  }
                 }
             }
         }
@@ -101,6 +104,36 @@ The following example shows the `storageProfile` section of the **fabric-profile
 
 To delete the data disk configuration for an existing pool, specify an empty list for `dataDisks`: `"dataDisks": []`.
 
+#### [Bicep](#tab/bicep/)
+
+Additional disk storage is configured in a Bicep template in the property `dataDisks` section under `storageProfile`. In the following example, a 10 GB `Standard_LRS` disk is configured with  the drive letter `Q` and no caching.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    fabricProfile: {
+      ...
+      storageProfile: {
+        osDiskStorageAccountType: 'Standard'
+        dataDisks: [
+          {
+            diskSizeGiB: 10
+            caching: 'None'
+            storageAccountType:'Standard_LRS'
+            driveLetter: 'Q'
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+To delete the data disk configuration for an existing pool, specify an empty list for `dataDisks`: `"dataDisks": []`.
+
 * * *
 
 Configure the following properties for your attached data disk.
@@ -121,7 +154,7 @@ To configure your agents to use a working directory on the data disk, specify a 
 In the following example, the agent working directory on a Windows agent is configured to use a folder on an attached data disk that is assigned the drive letter **F**.
 
 ```yml
-pool: 
+pool:
   name: fabrikam-managed-pool # Name of Managed DevOps Pool
   demands:
   - WorkFolder -equals f:\custom-work-folder # Windows agent example
@@ -132,7 +165,7 @@ pool:
 For Linux agents, the data disk is mounted as **/mnt/storage/sdc**. The following example configures the agent working directory to be a folder named **custom-work-folder** on the data disk.
 
 ```yml
-pool: 
+pool:
   name: fabrikam-managed-pool # Name of Managed DevOps Pool
   demands:
   - WorkFolder -equals /mnt/storage/sdc/custom-work-folder
