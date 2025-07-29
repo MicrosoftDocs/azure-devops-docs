@@ -13,6 +13,6 @@ ms.date: 07/25/2025
 Possible conditions include:
 
 - **Succeeded**: Run only if all previous dependencies succeed. This behavior is the default if no condition is set in the YAML. To apply this condition, specify `condition: succeeded()`.
-- **Succeeded or failed**: Run even if a previous dependency fails, unless the run is canceled. To apply this condition, specify `condition: succeededOrFailed()` in the YAML.
-- **Always**: Run even if a previous dependency fails, even if the run is canceled. To apply this condition, specify `condition: always()` in the YAML.
-- **Failed**: Run only when a previous dependency fails. To apply this condition, specify `condition: failed()` in the YAML.
+- **Succeeded or failed**: Run even if a previous dependency fails, unless the run is canceled. To apply this condition, specify `condition: succeededOrFailed()`.
+- **Always**: Run even if a previous dependency fails, even if the run is canceled. To apply this condition, specify `condition: always()`.
+- **Failed**: Run only when a previous dependency fails. To apply this condition, specify `condition: failed()`.
