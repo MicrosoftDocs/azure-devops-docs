@@ -49,93 +49,93 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
 1. Create a local file name **mdp-azure-deploy.bicep** with the following contents. This file is a parameterized Bicep template that creates a `Microsoft.DevOpsInfrastructure/pools` resource including the dependencies `Microsoft.DevCenter/devcenters` resource and `Microsoft.DevCenter/projects` resource.
 
-```bicep
-@minLength(3)
-@maxLength(44)
-param poolName string
-
-@maxLength(26)
-param devCenterName string
-
-param devCenterProjectName string
-param adoOrg string
-param imageName string
-param poolSize int
-param location string = 'eastus'
-
-resource devCenter 'Microsoft.DevCenter/devcenters@2025-02-01' = {
-  name: '${poolName}-devcenter'
-  location: location
-}
-
-resource devCenterProject 'Microsoft.DevCenter/projects@2025-02-01' = {
-  name: '${poolName}-project'
-  location: location
-  properties: {
-    devCenterId: devCenter.id
-  }
-}
-
-resource pool 'microsoft.devopsinfrastructure/pools@2025-01-21' = {
-  name: poolName
-  location: location
-  properties: {
-    organizationProfile: {
-      organizations: [
-        {
-          url: adoOrg
-          parallelism: 1
-        }
-      ]
-      permissionProfile: {
-        kind: 'CreatorOnly'
+    ```bicep
+    @minLength(3)
+    @maxLength(44)
+    param poolName string
+    
+    @maxLength(26)
+    param devCenterName string
+    
+    param devCenterProjectName string
+    param adoOrg string
+    param imageName string
+    param poolSize int
+    param location string = 'eastus'
+    
+    resource devCenter 'Microsoft.DevCenter/devcenters@2025-02-01' = {
+      name: '${poolName}-devcenter'
+      location: location
+    }
+    
+    resource devCenterProject 'Microsoft.DevCenter/projects@2025-02-01' = {
+      name: '${poolName}-project'
+      location: location
+      properties: {
+        devCenterId: devCenter.id
       }
-      kind: 'AzureDevOps'
     }
-    devCenterProjectResourceId: devCenterProject.id
-    maximumConcurrency: poolSize
-    agentProfile: {
-      kind: 'Stateless'
-    }
-    fabricProfile: {
-      sku: {
-        name: 'Standard_D2ads_v5'
-      }
-      images: [
-        {
-          wellKnownImageName: imageName
-          buffer: '*'
+    
+    resource pool 'microsoft.devopsinfrastructure/pools@2025-01-21' = {
+      name: poolName
+      location: location
+      properties: {
+        organizationProfile: {
+          organizations: [
+            {
+              url: adoOrg
+              parallelism: 1
+            }
+          ]
+          permissionProfile: {
+            kind: 'CreatorOnly'
+          }
+          kind: 'AzureDevOps'
         }
-      ]
-      kind: 'Vmss'
+        devCenterProjectResourceId: devCenterProject.id
+        maximumConcurrency: poolSize
+        agentProfile: {
+          kind: 'Stateless'
+        }
+        fabricProfile: {
+          sku: {
+            name: 'Standard_D2ads_v5'
+          }
+          images: [
+            {
+              wellKnownImageName: imageName
+              buffer: '*'
+            }
+          ]
+          kind: 'Vmss'
+        }
+      }
     }
-  }
-}
-```
+    ```
 
-2. Create another local file named **mdp-azure-deploy-parameters.bicepparam** and save it in the same folder as the first file. Update the following properties to match the details of your environment.
+1. Create another local file named **mdp-azure-deploy-parameters.bicepparam** and save it in the same folder as the first file. Update the following properties to match the details of your environment.
 
-| Parameter | Value |
-|----------|-------|
-| `poolName` | Update `value` with the desired name of your pool. The name must consist of alphanumeric characters, `.`, `-`, or `_`, and be between 3 and 44 characters in length. The name must be globally unique in Azure. |
-| `devCenterName` | Update `value` with the desired name of your Dev Center. |
-| `devCenterProjectName` | Update `value` with the desired name of your Dev Center project. |
-| `adoOrg` | Update `value` and replace `your-organization` with the name of your Azure DevOps organization. |
-| `imageName` | This example is configured to use an [Azure Pipelines image](./configure-images.md#azure-pipelines-images), and uses the Windows Server 2022 image. If you want to change it, choose from the [Azure Pipelines image predefined aliases](./configure-images.md#azure-pipelines-image-predefined-aliases). Managed DevOps Pools also supports Azure Compute Gallery images and selected marketplace images. For information on configuring a Managed DevOps Pools resource for these image types, see [Configure Managed DevOps Pools images](./configure-images.md). |
-| `poolSize` | Update `value` with the maximum number of agents you want to be able to run concurrent jobs. In this example the `poolSize` is `1`.|
-| `location` | The Azure region for the pool. In this example the region is `eastus`. |
-
-```bicepparam
-using './mdp-azure-deploy.bicep'
-
-param poolName = '<pool-name>'
-param devCenterName = '<dev-center-name>'
-param devCenterProjectName = '<dev-center-project-name>'
-param adoOrg = 'https://dev.azure.com/fabrikam'
-param location = 'westeurope'
-param imageName = 'windows-2022'
-param poolSize = 1
-```
+    | Parameter | Value |
+    |----------|-------|
+    | `poolName` | Update `value` with the desired name of your pool. The name must consist of alphanumeric characters, `.`, `-`, or `_`, and be between 3 and 44 characters in length. The name must be globally unique in Azure. |
+    | `devCenterName` | Update `value` with the desired name of your Dev Center. |
+    | `devCenterProjectName` | Update `value` with the desired name of your Dev Center project. |
+    | `adoOrg` | Update `value` and replace `your-organization` with the name of your Azure DevOps organization. |
+    | `imageName` | This example is configured to use an [Azure Pipelines image](./configure-images.md#azure-pipelines-images), and uses the Windows Server 2022 image. If you want to change it, choose from the [Azure Pipelines image predefined aliases](./configure-images.md#azure-pipelines-image-predefined-aliases). Managed DevOps Pools also supports Azure Compute Gallery images and selected marketplace images. For information on configuring a Managed DevOps Pools resource for these image types, see [Configure Managed DevOps Pools images](./configure-images.md). |
+    | `poolSize` | Update `value` with the maximum number of agents you want to be able to run concurrent jobs. In this example the `poolSize` is `1`.|
+    | `location` | The Azure region for the pool. In this example the region is `eastus`. |
+    
+    ```bicepparam
+    using './mdp-azure-deploy.bicep'
+    
+    param poolName = '<pool-name>'
+    param devCenterName = '<dev-center-name>'
+    param devCenterProjectName = '<dev-center-project-name>'
+    param adoOrg = 'https://dev.azure.com/fabrikam'
+    param location = 'westeurope'
+    param imageName = 'windows-2022'
+    param poolSize = 1
+    ```
 
 ## Create the Managed DevOps Pool
 

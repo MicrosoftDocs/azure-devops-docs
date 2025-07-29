@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 07/15/2025
+ms.date: 07/29/2025
 ---
 
 # Configure Managed DevOps Pools images
@@ -301,7 +301,7 @@ images: [
 ]
 ```
 
-You can optionally specify a version in your `wellKnownImageName` setting, for example `"wellKnownImageName": "windows-2022/latest"` or `"wellKnownImageName": "windows-2022/20250427.1.0"`. If you don't specify a version, `latest` is used.
+You can optionally specify a version in your `wellKnownImageName` setting, for example `wellKnownImageName: 'windows-2022/latest'` or `wellKnownImageName: 'windows-2022/20250427.1.0'`. If you don't specify a version, `latest` is used.
 
 * * *
 
@@ -342,7 +342,7 @@ To specify a selected marketplace image, provide the resource ID of the image us
 
 #### [Azure CLI](#tab/azure-cli/)
 
-To specify selected marketplace image, provide the resource ID of the image using the `resourceId` property.
+To specify a selected marketplace image, provide the resource ID of the image using the `resourceId` property.
 
 ```json
 "images": [

@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 07/03/2025
+ms.date: 07/29/2025
 ---
 
 # Configure scaling
@@ -268,7 +268,7 @@ The following example shows the contents of the **agent-profile.json** file.
 
 #### [Bicep](#tab/bicep/)
 
-Standby agents are configured using the `resourcePredictionsProfile` section of the `agentProfile` property. Set `"kind": "Manual"` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. Set `"kind": "Automatic"` to configure automatic standby agents. Omit the `ResourcePredictionsProfile` section to disable standby agents. See the following sections for details on how to configure each scaling type.
+Standby agents are configured using the `resourcePredictionsProfile` section of the `agentProfile` property. Set `"kind": "Manual"` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. Set `kind: 'Automatic'` to configure automatic standby agents. Omit the `ResourcePredictionsProfile` section to disable standby agents. See the following sections for details on how to configure each scaling type.
 
 ```bicep
 resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
@@ -660,9 +660,9 @@ Specify the desired time zone for your scheme using the `timeZone` property. The
 
 The schedule for the standby agents is defined by the `daysData` list. The `daysData` list can have either one item or seven items.
 
-A `daysData` list with seven items maps to the days of the week, starting with Sunday. Each of these seven items can have zero or more `"time": count` entries, specifying a time in 24 hour format, and a standby agent count. The specified count of standby agents is maintained until the next `"time": count` entry, which can be on the same day, or on a following day.
+A `daysData` list with seven items maps to the days of the week, starting with Sunday. Each of these seven items can have zero or more `'time': count` entries, specifying a time in 24 hour format, and a standby agent count. The specified count of standby agents is maintained until the next `'time': count` entry, which can be on the same day, or on a following day.
 
-A `daysData` list with a single item defines an [All Week scheme](#all-week-scheme), where the single `"time": count` entry corresponds to the standby agent count for the entire week.
+A `daysData` list with a single item defines an [All Week scheme](#all-week-scheme), where the single `'time': count` entry corresponds to the standby agent count for the entire week.
 
 The following example is a manual standby agent scheme, using `Eastern Standard Time`, with a single agent provisioned Monday through Friday, from 9:00 AM (standby agent count `1`) through 5:00 PM (standby agent count `0`).
 
@@ -702,7 +702,7 @@ The following example is a manual standby agent scheme, using `Eastern Standard 
 }
 ```
 
-A single `daysData` item contains a dictionary of times and standby agent counts. Each `"time" : count` entry specifies the number of standby agents to schedule starting at the specified time, in 24 hour format. Consecutive `"time" : count` entries specify a sequence of scheduled agent counts for that day.
+A single `daysData` item contains a dictionary of times and standby agent counts. Each `'time' : count` entry specifies the number of standby agents to schedule starting at the specified time, in 24 hour format. Consecutive `'time' : count` entries specify a sequence of scheduled agent counts for that day.
 
 ```bicep
 daysData: [

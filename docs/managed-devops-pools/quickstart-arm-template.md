@@ -1,7 +1,7 @@
 ---
 title: Create a Managed DevOps Pool using an ARM template
 description: Learn how to create a Managed DevOps Pool using an Azure Resource Manager template (ARM template).
-ms.date: 04/30/2025
+ms.date: 07/29/2025
 ms.topic: quickstart
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using an ARM template and run a pipeline in the new pool.
 ---

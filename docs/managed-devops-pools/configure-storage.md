@@ -1,7 +1,7 @@
 ---
 title: Configure storage
 description: Learn how to add an empty data disk to your Managed DevOps Pools agents.
-ms.date: 06/23/2025
+ms.date: 07/29/2025
 ---
 
 # Configure storage
@@ -132,7 +132,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 }
 ```
 
-To delete the data disk configuration for an existing pool, specify an empty list for `dataDisks`: `"dataDisks": []`.
+To delete the data disk configuration for an existing pool, specify an empty list for `dataDisks`: `dataDisks: []`.
 
 * * *
 
