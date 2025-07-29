@@ -41,7 +41,7 @@ To switch to the [product backlog](../backlogs/create-your-backlog.md), select *
 
 1. Select your project, and select **Boards** > **Boards**. Then select your team from the team selector menu. 
 
-	:::image type="content" source="../boards/media/quickstart/open-kanban-board-agile.png" alt-text="Screenshot how to open a board for your team.":::  
+	:::image type="content" source="../boards/media/quickstart/open-kanban-board-agile.png" alt-text="Screenshot shows how to open a board for your team.":::  
 
 	To select another team's board, open the selector. Then select a different team, or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team boards** option. Or, you can enter a keyword to filter the list of team backlogs for the project.
 
