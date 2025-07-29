@@ -237,9 +237,7 @@ The test case contains multiple fields, many of which are automated and integrat
 
 :::image type="content" source="media/agile-test-case-form.png" alt-text="Screenshot of test case form." lightbox="media/agile-test-case-form.png" :::
 
-The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: **Links** tab captures the links to user stories and bugs in a test case. By linking user stories and bugs to test cases, the team can track the progress made during testing for each item. By defining these links, you support information that appears in the SQL Server [Stories Overview](../../../report/sql-reports/stories-overview-report-agile.md) report.
-
-<!-- Link redirects to "/previous-versions/azure/devops/report/sql-reports/stories-overview-report-agile.md" but updated link fails in the preview build  -->
+The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: **Links** tab captures the links to user stories and bugs in a test case. By linking user stories and bugs to test cases, the team can track the progress made during testing for each item. By defining these links, you support information that appears in the SQL Server [Stories Overview](/previous-versions/azure/devops/report/sql-reports/stories-overview-report-agile) report.
 
 ### Track code defects
 
