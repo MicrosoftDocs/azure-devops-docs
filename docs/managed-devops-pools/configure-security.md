@@ -134,7 +134,6 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
     }
   }
 }
-
 ```
 
 The `organizationProfile` section has the following properties.
@@ -460,30 +459,22 @@ The following example shows the `osProfile` section of the **fabric-profile.json
 
 Interactive mode is configured in the `osProfile` section of the `fabricProfile` property. Set `logonType` to `Interactive` to enable interactive mode, or `Service` to disable interactive mode.
 
-```json
-{
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "resources": [
-        {
-            "name": "fabrikam-managed-pool",
-            "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
-            "location": "eastus",
-            "properties": {
-            ...
-            "fabricProfile": {
-                "sku": {...},
-                "images": [...],
-                "osProfile": {
-                    "secretsManagementSettings": {...},
-                    "logonType": "Interactive"
-                },
-                "storageProfile": {...},
-                "kind": "Vmss"
-            }
-        }
-    ]
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    fabricProfile: {
+      sku: {...}
+      images: [...]
+      osProfile: {
+        secretsManagementSettings: {...}
+        logonType: 'Interactive'
+      }
+      storageProfile: {...}
+      kind: 'Vmss'
+    }
+  }
 }
 ```
 

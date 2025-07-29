@@ -1008,53 +1008,45 @@ The following example configures four agents to be used during working hours wit
 #### [Bicep](#tab/bicep/)
 
 ```bicep
-{
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "resources": [
-        {
-            "name": "fabrikam-managed-pool",
-            "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
-            "location": "eastus",
-            "properties": {
-                ...
-                "agentProfile": {
-                    "kind": "Stateless",
-                    "resourcePredictionsProfile": {
-                        "kind": "Manual"
-                    },
-                    "resourcePredictions": {
-                        "timeZone": "Eastern Standard Time",
-                        "daysData": [
-                            {},
-                            {
-                                "09:00:00": 4,
-                                "17:00:00": 0
-                            },
-                            {
-                                "09:00:00": 4,
-                                "17:00:00": 0
-                            },
-                            {
-                                "09:00:00": 4,
-                                "17:00:00": 0
-                            },
-                            {
-                                "09:00:00": 4,
-                                "17:00:00": 0
-                            },
-                            {
-                                "09:00:00": 4,
-                                "17:00:00": 0
-                            },
-                            {}
-                        ]
-                    }
-                }
-            }
-        }
-    ]
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    agentProfile: {
+      kind: 'Stateless'
+      resourcePredictionsProfile: {
+        kind: 'Manual'
+      }
+      resourcePredictions: {
+        timeZone: 'Eastern Standard Time'
+        daysData: [
+          {}
+          {
+            '09:00:00': 4,
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 4,
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 4,
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 4,
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 4,
+            '17:00:00': 0
+          }
+          {}
+        ]
+      }
+    }
+  }
 }
 ```
 
