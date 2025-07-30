@@ -93,7 +93,7 @@ Just as you can add items to your product backlog, you can add items to your **f
 
    In the following example, there are six added features.  
 
-   :::image type="content" source="media/features-epics/features-backlog-agile.png" alt-text="Screenshot showing how to add a feature, Azure DevOps Server 2019.":::
+   :::image type="content" source="media/features-epics/features-backlog-agile.png" alt-text="Screenshot showing how to add a feature, Azure DevOps Server.":::
 
    You can add epics in the same way. Open the **Epics** backlog from the backlogs selector.  
 

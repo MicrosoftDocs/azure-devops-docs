@@ -54,12 +54,14 @@ To remove permissions for a user or group, select the user or group, and then se
 
 Users and groups with permissions set at the repository level [inherit those permissions](../../organizations/security/about-permissions.md#permission-inheritance) by default.
 
-Branch creators automatically receive the following permissions:
+When a branch is created by a user, that user becomes the owner/creator of that branch. Branch creators automatically receive the following explicit (directly assigned) permissions which override inheritance from the repo level:  
 
 - **Contribute**
 - **Force push**
 - **Manage permissions** (when allowed through the repository setting **Permissions management**)
 - **Remove others' locks**
+
+A majority of branches are ephemeral and scoped to a single user, these permissions prevent the need for an admin to assist with routine tasks like deleting a branch after a PR merge. It might be desirable to modify these permissions for a branch with a different scope and audience like the "Main" branch in the repo. The permissions are directly assigned; they can be manually changed in the in the branch permissions.
 
 > [!NOTE]
 > The **Exempt from policy enforcement** permission is replaced by the following two permissions:
@@ -79,4 +81,3 @@ Branch creators automatically receive the following permissions:
 | **Force push (rewrite history, delete branches and tags)** | Can force push to a branch, which can rewrite history. This permission is also required to delete a branch. |
 | **Manage permissions** | Can set permissions for the branch. |
 | **Remove others' locks** | Can remove [locks](lock-branches.md) set on branches by other users. |
-

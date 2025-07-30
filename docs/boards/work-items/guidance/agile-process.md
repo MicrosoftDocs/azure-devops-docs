@@ -72,9 +72,7 @@ As updates are made to the Agile process template, the version number is updated
 > |Version | Agile process name | Major version |
 > |-------------|-------------------|--------------|
 > | Azure DevOps Services<br/>Azure DevOps Server 2022 | Agile | 18 |
-> | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | Agile | 17 |
-> | TFS 2018 | Agile | 16 |
-
+> | Azure DevOps Server 2020|
 
 For a summary of updates made to process templates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
