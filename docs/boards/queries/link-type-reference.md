@@ -544,8 +544,7 @@ GitHub link types are system-defined and support linking work items to GitHub ob
 
 ::: moniker range=">= azure-devops-2020"
 
-> [!div class="mx-imgBorder"]  
-> :::image type="content" source="media/link-type-reference/linkscontrol-github-link-types.png" alt-text="Diagram is a conceptual image of GitHub link type.":::  
+:::image type="content" source="media/link-type-reference/linkscontrol-github-link-types.png" alt-text="Diagram is a conceptual image of GitHub link type.":::  
 
 ::: moniker-end
 
@@ -656,7 +655,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       Link category: System-defined  
    :::column-end:::
    :::column span="":::
-      Use this nondirectional link to create links between work items defined in different organizations, as long as the same Microsoft Entra ID manage them.
+      Use this nondirectional link to create links between work items defined in different organizations, as long as the same Microsoft Entra ID manages them.
    :::column-end:::
 :::row-end:::
 
@@ -666,7 +665,8 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 
 ## Custom link type
 
-You can create a custom link type; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following articles:  
+You can create a custom link type, export and import definitions of link types, and delete, activate, deactivate, and reactivate types of links. See the following articles:
+
 - [Link type element reference](/previous-versions/azure/devops/reference/xml/link-type-element-reference) 
 - [Manage link types (`witadmin`)](/previous-versions/azure/devops/reference/witadmin/manage-link-types). 
 
@@ -680,7 +680,7 @@ To get a list of link types, you can use one of the supported command-line tools
 
 ### az boards work-item relation list-type  
 
-You can list link types supported by your organization with the [az boards work-item relation list-type](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can list link types supported by your organization with the [az boards work-item relation list-type](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az boards work-item relation list-type [--org]
@@ -765,7 +765,7 @@ The default json format provides additional information about the attributes def
 
 You can list link types supported for your project collection using the [`witadmin listlinktypes`](/previous-versions/azure/devops/reference/witadmin/manage-link-types) command-line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. 
 
-Here we list the link types for the fabrikam-sever default collection: 
+Here is a list of the link types for the fabrikam-sever default collection: 
 
 ```CLI
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer>witadmin listlinktypes /collection:http://fabrikam-server/DefaultCollection
@@ -904,7 +904,7 @@ The following table provides descriptions for each of the link type attributes r
       `topology`
    :::column-end:::
    :::column span="2":::
-      Specifies the topology type&mdash;dependency`, `network`, and `tree`. For descriptions, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology). 
+      Specifies the topology type: `dependency`, `network`, and `tree`. For descriptions, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -912,7 +912,7 @@ The following table provides descriptions for each of the link type attributes r
       `usage`
    :::column-end:::
    :::column span="2":::
-      Specifies the usage type&mdash;resourceLink or `workItemLink`. The workItemLink` value indicates a link type that links two work items. The `resourceLink` value indicates a link type used to link a work item to a resource, such as a URL or attachment.  
+      Specifies the usage type: `resourceLink or `workItemLink`. The workItemLink` value indicates a link type that links two work items. The `resourceLink` value indicates a link type used to link a work item to a resource, such as a URL or attachment.  
    :::column-end:::
 :::row-end:::
 :::row:::
