@@ -56,7 +56,7 @@ When you complete your sprint plan, your sprint backlog should contain all the i
 
 Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [About teams and Agile tools](../backlogs/backlogs-overview.md). 
 
-For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../organizations/settings/about-teams-and-settings.md).  
+For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
 ::: moniker range=">= azure-devops-2020"  
 
@@ -75,7 +75,7 @@ From your web browser, open your product backlog.
 
 1. Select **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level.
 
-	:::image type="content" source="../sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text=""Screenshot shows the Stories option with its suboptions, including Features and Stories."::: 
+	:::image type="content" source="../sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot shows the Stories option with its suboptions, including Features and Stories."::: 
 
 1. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md).
 
@@ -97,7 +97,7 @@ You can assign work items to a sprint through drag-and-drop from the product bac
 
 1. The next step is to open the Planning pane. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Planning**. While you're at it, make sure **Parents** and **Forecasting** are off. You can set **In Progress items** to on or off.
 
-	:::image type="content" source="media/define-sprints/view-options-planning-menu.png" alt-text="Screenshot whos the View options menu where you can select Planning.":::
+	:::image type="content" source="media/define-sprints/view-options-planning-menu.png" alt-text="Screenshot shows the View options menu where you can select Planning.":::
 
 	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Manage sprint timelines](define-sprints.md).
 
@@ -133,7 +133,7 @@ With multi-select, you can complete several actions on several work items at onc
 - Add links
 - [Map items or change the parent an item is linked to](../backlogs/organize-backlog.md#mapping)
 
-To select several items in a sequence, hold down the shift key. To select several nonsequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (:::image type="icon" source="../media/icons/context_menu.png":::) or action (:::image type="icon" source="../media/icons/actions-icon.png") menu of one of the items. 
+To select several items in a sequence, hold down the shift key. To select several nonsequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (:::image type="icon" source="../media/icons/context_menu.png":::) or action (:::image type="icon" source="../media/icons/actions-icon.png":::) menu of one of the items. 
 
 For more information, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). 
 
