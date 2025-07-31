@@ -32,27 +32,36 @@ You can override or customize these default behaviors by setting a stage, job, o
 
 ### Condition example
 
-The following YAML example demonstrates the `always()` and `failed()` conditions. The first script task in job 1 has an `always` condition, so it runs even if dependencies fail or the build is canceled. In the second script task, `exit 1` forces the `1` job to fail.
+The following YAML example demonstrates the `always()` and `failed()` conditions. The first script task in job 1 has an `always` condition, so it runs even if dependencies fail or the build is canceled. In the second script task, `exit job1` forces the `job1` job to fail.
 
-Stages run sequentially, but jobs can run in parallel. To set a condition that depends on the outcome of another job, use `dependsOn`. In the following example, job 2 depends on job 1 and runs because job 1 fails.
+Stages run sequentially, but jobs can run in parallel. To set a condition that depends on the outcome of another job, use `dependsOn`. In the following example, `job2` depends on `job1` and runs because `job1` fails.
 
 ```yaml
 jobs:
-- job: 1
+- job: job1
   steps:
   - script: echo Hello!
     condition: always() # this step runs even if the build is canceled
   - script: |
       echo "This task will fail."
-      exit 1 
+      exit job1 
 - job: 2
-  dependsOn: 1
-  condition: failed() # this job runs only if job 1 fails
+  dependsOn: job1
+  condition: failed() # this job runs only if job1 fails
 ```
+
+## Custom conditions
+
+If the built-in conditions don't meet your needs, you can specify custom conditions as [expressions](expressions.md) in YAML pipeline definitions.
+
+The agent evaluates the expression beginning with the innermost function and proceeding outward. The final result is a boolean value that determines whether or not to run the stage, job, or step. For a full guide to the syntax, see [Expressions](expressions.md).
+
+> [!IMPORTANT]
+> Conditions are evaluated to determine whether to start a stage, job, or step. Therefore, nothing that's computed at runtime inside a stage, job, or step is available to use within that same stage, job, or step. For example, if you set a variable using a runtime expression with `$[ ]` syntax in a job, you can't use that variable in conditions within that job.
 
 ## Variables in conditions
 
-You can set variables and use them in conditions. The following example sets and uses an `isMain` variable to run Stage B only when the build source branch is `main`.
+You can set variables and use them in conditions. The following pipeline sets an `isMain` variable and uses it in a condition that runs Stage B only when the build source branch is `main`.
 
 ```yaml
 variables:
@@ -89,7 +98,7 @@ jobs:
 
 ### Job output variables used in subsequent job conditions
 
-You can make a variable available to future jobs in the same stage and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](variables.md#set-a-multi-job-output-variable) by using `isOutput=true`, as in the following code:
+You can make variables available for future jobs in the same stage to specify in conditions. Variables available to future jobs must be marked as [multi-job output variables](variables.md#set-a-multi-job-output-variable) by using `isOutput=true`, as in the following code:
 
 ```yaml
 jobs:
@@ -108,7 +117,7 @@ jobs:
 
 ### Step variables used in subsequent step conditions
 
-You can create a variable in a step that future steps can specify in a condition. Variables created from steps are available to future steps by default and don't need to be marked as multi-job output variables.
+You can create a variable in a step that future steps in the same job can specify in a condition. Variables created from steps are available to future steps by default and don't need to be marked as multi-job output variables.
 
 Variables created in a step in a job have the following limitations:
 
@@ -136,7 +145,7 @@ steps:
 
 ## Parameters in conditions
 
-Parameter expansion occurs before conditions are evaluated. Therefore, when you declare a parameter in the same pipeline as a condition, you can embed the parameter inside the condition. The script step in the following YAML runs because the preceding step succeeded and `parameters.doThing` is `true`.
+Parameter expansion occurs before conditions are evaluated. Therefore, when you declare a parameter in a pipeline, you can embed the parameter inside any conditions in that pipeline. The script step in the following example runs because the preceding step succeeded and `parameters.doThing` is `true`.
 
 ```yaml
 parameters:
@@ -149,21 +158,21 @@ steps:
   condition: and(succeeded(), ${{ eq(parameters.doThing, true) }})
 ```
 
-The `condition` in the preceding pipeline combines two functions: `succeeded()` and `${{ eq(parameters.doThing, true) }}`. The `succeeded()` function checks if the previous step succeeded and also returns `true` if there was no previous step.
+The `condition` in the preceding pipeline combines two functions: `succeeded()` and `${{ eq(parameters.doThing, true) }}`. The `succeeded()` function checks if the previous step succeeded. This function also returns `true` if there was no previous step.
 
-The `${{ eq(parameters.doThing, true) }}` function checks whether the `doThing` parameter is equal to `true`. Since the default value for `doThing` is `true`, the condition returns `true` unless the pipeline sets a different value.
+The `${{ eq(parameters.doThing, true) }}` function checks whether the `doThing` parameter is equal to `true`. Since the pipeline sets the default value for `doThing` as `true`, the condition returns `true` unless the pipeline sets a different value.
 
 ### Template parameters in conditions
 
-When you pass a parameter to a template, you can either set the parameter's value in the template or [use templateContext to pass the parameter to the template](template-parameters.md?view=azure-devops&preserve-view=true#use-templatecontext-to-pass-properties-to-templates).
+When you pass a parameter to a template, you can set the parameter's value in the template or [use templateContext to pass the parameter to the template](template-parameters.md?view=azure-devops&preserve-view=true#use-templatecontext-to-pass-properties-to-templates).
 
-For example, the following *parameters.yml* file declares the `doThing` parameter and default value:
+The following *parameters.yml* template file declares the `doThing` parameter with a default value of `true`.
 
 ```yaml
 # parameters.yml
 parameters:
 - name: doThing
-  default: true # value passed to the condition
+  default: true
   type: boolean
 
 jobs:
@@ -173,32 +182,20 @@ jobs:
     condition: ${{ eq(parameters.doThing, true) }}
 ```
 
-The pipeline code in the *azure-pipeline.yml* file references the job in the *parameters.yml* template file. The output of the pipeline is `I did a thing` because the parameter `doThing` is true.
+The following *azure-pipelines.yml* pipeline definition references the job in the *parameters.yml* template file. The output of the pipeline is `I did a thing` because the parameter `doThing` is true.
 
 ```yaml
-# azure-pipeline.yml
+# azure-pipelines.yml
 parameters:
 - name: doThing
   default: true 
   type: boolean
-
-trigger:
-- none
 
 extends:
   template: parameters.yml
 ```
 
 For more template parameter examples, see the [Template usage reference](templates.md).
-
-## Custom conditions
-
-If the built-in conditions don't meet your needs, you can specify custom conditions as [expressions](expressions.md) in YAML pipeline definitions.
-
-The agent evaluates the expression beginning with the innermost function and proceeding outward. The final result is a boolean value that determines whether or not to run the stage, job, or step. For a full guide to the syntax, see [Expressions](expressions.md).
-
-> [!IMPORTANT]
-> Conditions are evaluated to determine whether to start a stage, job, or step. Therefore, nothing computed at runtime inside a stage, job, or step is available to use within that stage, job, or step. For example, if you set a variable using a runtime expression with `$[ ]` syntax in a job, you can't use that variable in conditions within that job.
 
 ## Condition settings for various outcomes
 
@@ -380,5 +377,6 @@ You can experience this issue if a condition configured in a stage doesn't inclu
 
 ## Related content
 
-- [Specify jobs in your pipeline](../process/phases.md)  
-- [Add stages, dependencies, and conditions](../process/stages.md)
+- [Specify jobs in your pipeline](phases.md)  
+- [Add stages, dependencies, and conditions](stages.md)
+- [Template parameters](template-parameters.md)
