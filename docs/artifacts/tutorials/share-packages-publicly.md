@@ -40,7 +40,7 @@ To share your packages publicly, you can simply share your feed URL, for example
 :::image type="content" source="../media/packages-public-feed.png" alt-text="A screenshot displaying a package in a public feed.":::
 
 > [!NOTE]
-> You must be a **Feed Administrator** to enable package badges. See [Manage permissions](feeds/feed-permissions.md) for more details.
+> You must be a **Feed Administrator** to enable package badges. See [Manage permissions](../feeds/feed-permissions.md) for more details.
 
 ## Publish packages (CLI)
 
