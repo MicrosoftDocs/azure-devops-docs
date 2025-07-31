@@ -64,12 +64,12 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
     param location string = 'eastus'
     
     resource devCenter 'Microsoft.DevCenter/devcenters@2025-02-01' = {
-      name: '${poolName}-devcenter'
+      name: '${devCenterName}'
       location: location
     }
     
     resource devCenterProject 'Microsoft.DevCenter/projects@2025-02-01' = {
-      name: '${poolName}-project'
+      name: '${devCenterProjectName}'
       location: location
       properties: {
         devCenterId: devCenter.id
