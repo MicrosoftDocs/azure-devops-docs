@@ -40,8 +40,8 @@
   - name: Delete and recover packages
     displayName: delete, recover, packages, artifacts
     href: how-to/delete-and-recover-packages.md
-  - name: Use public feeds to share your packages publicly
-    displayName: share packages, share artifacts, artifact feeds, public feeds, feeds
+  - name: Share packages publicly
+    displayName: share, packages, artifact, public, feeds
     href: tutorials/share-packages-publicly.md
   - name: Package badges
     displayName: packages, badges, sharing
