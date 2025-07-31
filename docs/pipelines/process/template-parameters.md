@@ -2,7 +2,7 @@
 title: Parameters and templateContext
 description: How to use parameters in templates
 ms.topic: conceptual
-ms.date: 10/25/2024
+ms.date: 07/16/2025
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted
 ---
@@ -17,7 +17,7 @@ You can also [use parameters outside of templates](runtime-parameters.md). You c
 
 ### Passing parameters
 
-Parameters must contain a name and data type. In `azure-pipelines.yml`, when the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
+Parameters must include a name and data type. In `azure-pipelines.yml`, if the parameter `yesNo` is set to a boolean value, the build succeeds. If `yesNo` is set to a string like `apples`, the build fails.
 
 ```yaml
 # File: simple-param.yml
@@ -48,11 +48,11 @@ extends:
 
 You can use `templateContext` to pass more properties to [stages](/azure/devops/pipelines/yaml-schema/stages-stage), steps, and [jobs](/azure/devops/pipelines/yaml-schema/jobs-job) that are used as parameters in a template. Specifically, you can specify `templateContext` within the `jobList`, `deploymentList`, or `stageList` parameter data type. 
   
-You can use `templateContext` to make it easier to set up environments when processing each job. By bundling a job and its environment properties object together, `templateContext` can help you have more maintainable and easier to understand YAML. 
+`templateContext` makes it easier to set up environments when processing each job. By bundling a job and its environment properties object together, `templateContext` helps create more maintainable and easier-to-understand YAML. 
 
 In this example, the parameter `testSet` in `testing-template.yml` has the data type `jobList`. The template `testing-template.yml` creates a new variable `testJob` using the [each keyword](expressions.md#each-keyword). The template then references the `testJob.templateContext.expectedHTTPResponseCode`, which gets set in `azure-pipeline.yml` and passed to the template. 
 
-When response code is 200, the template makes a REST request. When the response code is 500, the template outputs all of the environment variables for debugging. 
+When the response code is 200, the template makes a REST request. When the response code is 500, the template outputs all environment variables for debugging. 
 
 `templateContext` can contain properties. 
 
@@ -127,42 +127,53 @@ steps:
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
 
-You can iterate through an object and print each string in the object. 
+
+### Iterating through parameters and their data types
+
+Azure Pipelines allows you to iterate through parameters of various data types, such as strings, objects, numbers, and booleans. This flexibility enables dynamic pipeline behavior based on parameter values. Below are examples demonstrating how to iterate through parameters and handle different data types.
+
+#### Iterating through simple parameters
+
+You can loop through simple parameters like strings, numbers, and booleans. In this example, the pipeline iterates through a list of parameters and prints their names and values.
 
 ```yaml
+# start.yaml
 parameters:
-- name: listOfStrings  
-  type: object
-  default: 
-  - one
-  - two
+- name: myStringName
+  type: string
+  default: a string value
+- name: myNumber
+  type: number
+  default: 2
+- name: myBoolean
+  type: boolean
+  default: true
 
-steps:
-- ${{ each value in parameters.listOfStrings }}: # Iterate over each value in the 'listOfStrings' parameter
-  - script: echo ${{ value }} # Output the current value in the iteration
-``` 
-
-Additionally, you can iterate through nested elements within an object.
-
-```yaml
-parameters:
-- name: listOfFruits
-  type: object
-  default:
-  - fruitName: 'apple'
-    colors: ['red','green']
-  - fruitName: 'lemon'
-    colors: ['yellow'] 
-
-steps:
-- ${{ each fruit in parameters.listOfFruits }} : # Iterate over each fruit in the 'listOfFruits'
-  - ${{ each fruitColor in fruit.colors}} : # Iterate over each color in the current fruit's colors
-    - script: echo ${{ fruit.fruitName}} ${{ fruitColor }} # Echo the current fruit's name and color
-``` 
-
-You can also directly reference an object's keys and corresponding values. 
+steps: 
+- ${{ each parameter in parameters }}:
+  - script: echo ${{ parameter.Key }} 
+  - script: echo ${{ parameter.Value }}
+```
 
 ```yaml
+# azure-pipeline.yaml
+trigger: none
+
+extends:
+  template: start.yaml
+```
+
+#### Iterating through objects
+
+Objects allow you to define complex parameter structures, such as nested elements. You can iterate through objects to access their keys and values or nested properties.
+
+##### Example: Iterating through object keys and values
+
+The following template file defines the `myObject` parameter as an object with default key-value pairs. The job iterates through the keys and prints their values.
+
+```yaml
+# object-keys-template.yml
+
 parameters:
   - name: myObject
     type: object
@@ -185,50 +196,150 @@ jobs:
     displayName: 'Display object keys and values'
 ```
 
-### Required parameters
-
-Pipelines automatically reports an error if a parameter is missing. You can add a validation step at the beginning of your template to check for the parameters you require and take appropriate action.
-
-Here's an example that checks for the `solution` parameter using Bash:
+The pipeline overrides the default values of `myObject` with custom values.
 
 ```yaml
-# File: steps/msbuild.yml
+# azure-pipelines.yml
 
-parameters:
-- name: 'solution'
-  default: ''
-  type: string
+trigger:
+- main
 
-steps:
-- bash: |
-    if [ -z "$SOLUTION" ]; then
-      echo "##vso[task.logissue type=error;]Missing template parameter \"solution\""
-      echo "##vso[task.complete result=Failed;]"
-    fi
-  env:
-    SOLUTION: ${{ parameters.solution }}
-  displayName: Check for required parameters
-- task: VSBuild@1
-  inputs:
-    solution: ${{ parameters.solution }}
-- task: VSTest@3
-  inputs:
-    testSelector: 'testAssemblies' 
-    testAssemblyVer2: ${{ parameters.solution }} 
-    searchFolder: '$(System.DefaultWorkingDirectory)' 
+extends:
+  template: object-keys-template.yml
+  parameters:
+    myObject:
+      key1: 'customValue1'
+      key2: 'customValue2'
+      key3: 'customValue3'
 ```
 
-To show that the template fails if it's missing the required parameter:
+##### Example: Iterating through nested objects
+
+The template defines a `listOfFruits` parameter containing objects with nested arrays, then uses nested loops to process each fruit and its associated colors. 
+
+
+
+```yaml
+# File: nested-objects-template.yml
+
+parameters:
+- name: listOfFruits
+  type: object
+  default:
+  - fruitName: 'apple'
+    colors: ['red', 'green']
+  - fruitName: 'lemon'
+    colors: ['yellow']
+
+steps:
+- ${{ each fruit in parameters.listOfFruits }}: # Iterate over each fruit in the 'listOfFruits'
+  - ${{ each fruitColor in fruit.colors }}: # Iterate over each color in the current fruit's colors
+    - script: echo ${{ fruit.fruitName }} ${{ fruitColor }} # Echo the current fruit's name and color
+```
+
+The pipeline file shows how to override the default values with custom fruit data.
 
 ```yaml
 # File: azure-pipelines.yml
 
-# This will fail since it doesn't set the "solution" parameter to anything,
-# so the template will use its default of an empty string
-steps:
-- template: steps/msbuild.yml
+trigger:
+- main
 
+extends:
+  template: nested-objects-template.yml
+  parameters:
+    listOfFruits:
+    - fruitName: 'banana'
+      colors: ['yellow']
+    - fruitName: 'grape'
+      colors: ['purple', 'green']
 ```
 
-::: moniker-end
+### Dynamically include a list of steps with the stepList parameter
 
+In this example, the `stepList` parameter type is used to dynamically include a list of steps in the build process.
+
+- The main pipeline (`azure-pipelines.yml`) defines two jobs: build and deploy.
+- The build job uses a template (`build.yml`) and passes a list of build tasks using the `stepList` parameter.
+- The `build.yml` template dynamically includes the steps defined in the `build_tasks` parameter.
+
+```yaml
+#azure-pipelines.yml
+
+trigger:
+- main
+
+jobs:
+  - job: build
+    displayName: 'Build .NET Core Application'
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+      - checkout: self
+
+      - template: build.yml
+        parameters:
+          build_tasks:
+            - task: DotNetCoreCLI@2
+              displayName: 'Restore'
+              inputs:
+                command: 'restore'
+                projects: '**/*.csproj'  
+
+            - task: DotNetCoreCLI@2
+              displayName: 'Build'
+              inputs:
+                command: 'build'
+                arguments: '--no-restore'
+                projects: '**/*.csproj' 
+
+  - job: deploy
+    displayName: 'Pack for Azure App Service deployment'
+    dependsOn: build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - download: current
+        artifact: drop
+```
+
+The `build.yml` template:
+
+- Defines the parameter `build_tasks` with the stepList type and a default empty list.
+- Sets the .NET Core SDK to 8.x. 
+- Iterates over each step in the `build_tasks` parameter.
+- Executes each step defined in the `build_tasks` list.
+
+```yaml
+#build.yml
+
+parameters:
+  - name: build_tasks
+    type: stepList
+    default: []
+
+steps:
+  - task: UseDotNet@2
+    displayName: 'Use .NET Core SDK'
+    inputs:
+      packageType: 'sdk'
+      version: '8.x'
+
+  - ${{ each step in parameters.build_tasks }}:
+      - ${{ step }}
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Publish'
+    inputs:
+      command: 'publish'
+      arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+      projects: '**/*.csproj'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'drop'
+```
+::: moniker-end
