@@ -34,7 +34,7 @@ For more information, see [About process customization and inherited processes](
 
 ## Create inherited process
 
-For more information, see [Create inherited process](manage-process.md#create-an-inherited-process).
+For more information, see [Create an inherited process](manage-process.md#create-an-inherited-process).
 
 <a id="add-wit">  </a>
 
