@@ -109,11 +109,9 @@ The Classic release pipeline template includes one agent job, the **Agent phase*
 
 1. Select the **IIS Deployment phase** job. This job uses the **WebSrv** tag to deploy the web application to a subset of the web servers. Choose the **Deployment Group** you created earlier from the dropdown.
 
-1. Select the **Disconnect Azure Network Load Balancer** task. This task disconnects the machines from the Azure Network Load Balancer (NLB) before deployment and reconnects them afterward. Select your **Azure subscription**, **Resource group**, and **Load balancer name** from the dropdowm menus. 
+1. The **Disconnect Azure Network Load Balancer** and **Connect Azure Network Load Balancer** tasks are deprecated. you can disable them for now by right clicking on the task and selecting **Disable select task(s)**.
 
 1. The **IIS Web App Manage** and **IIS Web App Deploy** tasks are prefilled and requires no changes.
-
-1. Select the **Connect Azure Network Load Balancer** task. Select your **Azure subscription**, **Resource group**, and **Load balancer name** from the dropdowm menus. This task reconnects the machines to the Azure Network Load Balancer after deployment.
 
 1. Select the **Variables** tab from the upper left corner, select **Pipeline variables**, and provide the following values. Replace the placeholder in the **DefaultConnectionString** variable with the SQL server DNS name that you copied earlier:
 
@@ -176,7 +174,6 @@ If your database is not present in the list, you can create a new one using the 
 ```
 sqlcmd -S <server-name> -U <username> -P <password> -Q "CREATE DATABASE [YourDatabaseName]"
 ```
-
 
 2. Verify your SQL Server Authentication:
 
@@ -246,6 +243,6 @@ All Azure resources created during this tutorial were placed in the same resourc
 
 - [Provision agents for deployment groups](howto-provision-deployment-group-agents.md)
 
-- [Add deployment group jobs to a release pipeline](deployment-group-phases.md)
+- [Add deployment group jobs to a release pipeline](../deployment-group-phases.md)
 
-- [Deploy pull request Artifacts with release pipelines](deploy-pull-request-builds)
+- [Deploy pull request Artifacts with release pipelines](../deploy-pull-request-builds.md)
