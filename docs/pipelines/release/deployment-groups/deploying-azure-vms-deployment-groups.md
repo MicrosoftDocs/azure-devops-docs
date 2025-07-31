@@ -201,14 +201,46 @@ c. Restart the SQL Server service for the change to take effect:
 net stop MSSQLSERVER
 net start MSSQLSERVER
 ```
-    
-## Cleaning up resources
 
-This tutorial created an Azure DevOps project and some resources in Azure. If you're not going to continue to use these resources, delete them with the following steps:
+- **Some of my agents are offline even though the agent is running on my VM**
 
-1. Delete the Azure DevOps project created by the Azure DevOps Demo Generator.
+If one or more of your agents are showing as offline, you can try a couple of things. First, log in to the VM where the agent is running and run the following command to check if your VM is resolving to the same set of IPs.
 
-1. All Azure resources created during this tutorial were assigned to the resource group specified during creation. Deleting that group will delete the resources they contain. This deletion can be done via the CLI or portal.
+```
+nslookup dev.azure.com
+```
+
+If all VMs are resolving to the same set of IPs, make sure the load balancer is configured with the correct outbound rule. You can add a backend pool to your load balancer in Azure, add the NICs of your VMs to the backend pool, and then associate it with your load balancer's outbound rule. To do this:
+
+1. Navigate to Azure and find your load balancer.
+
+1. Select **Backend pools**, choose your existing pool or create a new one, and add your web servers under **IP configurations**.
+
+1. Go to **Load balancing rules**, select your load balancing rule, and choose your backend pool from the **Backend pool** dropdown.
+
+## Clean up resources
+
+This tutorial created an Azure DevOps project and deployed resources in Azure. If you no longer need them, follow these steps to clean up:
+
+1. Delete the Azure DevOps project:
+Navigate to your **Project settings** > **Overview** > **Delete**.
+
+1. Delete the Azure Resource Group
+All Azure resources created during this tutorial were placed in the same resource group. Deleting the resource group will remove all associated resources. You can do this via the Azure Portal or CLI:
+
+- **Azure CLI**
+
+    ```dotnetcli
+    az group delete --name <RESOURCE_GROUP_NAME> --yes --no-wait
+    ```
+
+- **Azure Portal**
+
+1. Navigate to Azure portal > **Resource groups**.
+
+1. Select the resource group you used in the tutorial.
+
+1. Select **Delete resource group**, confirm the name, then select **Delete**.
 
 ## Next steps
 
