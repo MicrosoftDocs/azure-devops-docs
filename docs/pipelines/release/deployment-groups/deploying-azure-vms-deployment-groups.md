@@ -97,7 +97,7 @@ The Classic release pipeline template includes one agent job, the **Agent phase*
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-deployment-task-service-connection.png" alt-text="A screenshot displaying how to configure a new service connection for the deployment task.":::
 
-1. Scroll down in th **Azure Resource Group Deployment** task, then select from the dropdown menus your **Team project** and the **Deployment Group** your created earlier.
+1. Scroll down in th **Azure Resource Group Deployment** task, then select from the dropdown menus your **Team project** and the **Deployment Group** you created earlier.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-team-deployment-group-setup.png" alt-text="A screenshot displaying how to configure the team project and deployment group for the deployment task.":::
 
@@ -231,7 +231,7 @@ All Azure resources created during this tutorial were placed in the same resourc
     az group delete --name <RESOURCE_GROUP_NAME> --yes --no-wait
     ```
 
-- **Azure Portal**
+- **Azure portal**
 
 1. Navigate to Azure portal > **Resource groups**.
 
