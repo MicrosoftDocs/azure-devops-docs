@@ -9,7 +9,12 @@ ms.date: 08/04/2022
 
 ## Create light-weight charts  
 
-You can define a shared flat query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
+You can define a shared flat query and create a chart based on your tracking interests. Chart types include:
 
-[![Screenshot of conceptual edit query tasks.](../../report/dashboards/media/gs-chart-query.png)](../queries/using-queries.md)[![Screenshot of conceptual create chart tasks.](../../report/dashboards/media/gs-chart-create.png)](../../report/dashboards/charts.md)[![Screenshot of conceptual add to dashboard tasks.](../../report/dashboards/media/gs-chart-add-dashboard.png)](../../report/dashboards/add-charts-to-dashboard.md)
+- *status*: pie, bar, column, stacked bar, and pivot
+- *trend*: stacked area, line, and area   
+
+*Select one of the following images to go to the linked article.*
+
+[:::image type="icon" source="../../report/dashboards/media/gs-chart-query.png":::](../queries/using-queries.md)[:::image type="icon" source="../../report/dashboards/media/gs-chart-create.png":::](../../report/dashboards/charts.md)[:::image type="icon" source="../../report/dashboards/media/gs-chart-add-dashboard.png":::](../../report/dashboards/add-charts-to-dashboard.md)
   
