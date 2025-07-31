@@ -1,7 +1,7 @@
 ---
-title: Search across Azure D## Prerequisites
-Description: Quickly search within Azure DevOps, across all your code, wiki, packages, and work items.
-ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
+title: Search across Azure DevOps
+Description: Quickly search within Azure DevOps
+id: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: how-to
@@ -33,39 +33,13 @@ For detailed information about specific search types, see:
 
 ## Prerequisites
 
+| Access level | Search capabilities |
+|---|---|
+| **All project members** | Every project member can use the search functions, including users with Stakeholder, Basic, and higher levels of access. |
+| **Stakeholder limitations** | - **Wiki search:** Limited to provisioned wikis only. Published wiki results don't appear because they require access to regular repositories.<br>- **Code search:** Not available for Stakeholder users. |
 
----  
-:::row:::
-   :::column span="1":::
-      **Access level**
-   :::column-end:::
-   :::column span="2":::
-      **Search capabilities**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **All project members**
-   :::column-end:::
-   :::column span="2":::
-      Every project member can use the search functions, including users with Stakeholder, Basic, and higher levels of access.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Stakeholder limitations**
-   :::column-end:::
-   :::column span="2":::
-      - **Wiki search:** Limited to provisioned wikis only. Published wiki results don't appear because they require access to regular repositories.
-      - **Code search:** Not available for Stakeholder users.
-   :::column-end:::
-:::row-end:::
----
-
-**Important notes:**
-- **Access-based results:** When you search across the organization or collection, only results for projects and items you have access to display.
+> [!NOTE]
+> **Access-based results:** When you search across the organization or collection, only results for projects and items you have access to display.
 
 ::: moniker range="< azure-devops"
 > [!IMPORTANT]
@@ -86,117 +60,47 @@ For detailed information about specific search types, see:
 ::: moniker range="azure-devops"
 The following features apply to all searches, including work items, code, wikis, and packages.
 ::: moniker-end
-
 ::: moniker range="< azure-devops"
 The following features apply to all searches, including work items, code, and packages.
 ::: moniker-end
 
----  
-:::row:::
-   :::column span="1":::
-      **Search feature**
-   :::column-end:::
-   :::column span="2":::
-      **Usage**
-   :::column-end:::
-   :::column span="2":::
-      **Example**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Keyword**
-   :::column-end:::
-   :::column span="2":::
-      Search based on one or more keywords.
-   :::column-end:::
-   :::column span="2":::
-      `validate` finds instances that contain the word *validate*.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Exact match**
-   :::column-end:::
-   :::column span="2":::
-      Search based on an exact match, enclosed in double-quotes.
-   :::column-end:::
-   :::column span="2":::
-      `"Client not found"` finds instances that contain the exact phrase match *Client not found*. Search might not handle special characters as expected. Try escaping special characters or simplifying the search phrase.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Wildcard**
-   :::column-end:::
-   :::column span="2":::
-      - Add wildcard characters, `*` and `?`, to keywords to extend the search criteria.
-      - Add `*` at the end of a keyword to find items that start with the keyword.
-      - Add `?` in the middle to represent any alphanumeric character.
-      - Use wildcard characters anywhere in your search string except as a prefix. You can use prefix wildcards with the other search filter functions.
-      - You can use more than one wildcard to match more than one character.
-   :::column-end:::
-   :::column span="2":::
-      - `alpha?version` finds instances of alpha1version and alphaXversion.
-      - `Browser*` finds instances of BrowserEdge, BrowserIE, and BrowserFirefox.
-      - `CodeSenseHttp*` finds files containing words that start with *CodeSenseHttp*, such as CodeSenseHttpClient and CodeSenseHttpClientTest.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Boolean operators**
-   :::column-end:::
-   :::column span="2":::
-      - Find two or more keywords using Boolean operators: `AND`, `OR`, and `NOT` (must be uppercase).
-      - Add parenthesis to clauses to support logical groupings.
-      - Because `AND` is the default operator, an entry of two keywords with no operator is the same as an `AND` search.
-   :::column-end:::
-   :::column span="2":::
-      - `Validate AND revisit` finds files that contain both the words *validate* and *revisit*.
-      - `Validate OR revisit` finds files that contain either of the words *validate* or *revisit*.
-      - `Validate NOT revisit` finds files that contain the word *validate* but not the word, *revisit*.
-      - `(Validate NOT revisit) OR "release delayed"` finds files that contain the word *validate* but not the word, *revisit, or files that contain the phrase *release delayed*.
-   :::column-end:::
-:::row-end:::
----
+| Search feature | Usage | Example |
+|---|---|---|
+|**Keyword**|Search based on one or more keywords|`validate` finds instances that contain the word *validate*|
+|**Exact match**|Search based on an exact match, enclosed in double-quotes|`"Client not found"` finds instances that contain the exact phrase match *Client not found*. Search might not handle special characters as expected. Try escaping special characters or simplifying the search phrase|
+|**Wildcard**|
+      - Add wildcard characters, `*` and `?`, to keywords to extend the search criteria.<br>
+      - Add `*` at the end of a keyword to find items that start with the keyword.<br>
+      - Add `?` in the middle to represent any alphanumeric character.<br>
+      - Use wildcard characters anywhere in your search string except as a prefix. You can use prefix wildcards with the other search filter functions.<br>
+      - You can use more than one wildcard to match more than one character.|
+      - `alpha?version` finds instances of alpha1version and alphaXversion.<br>
+      - `Browser*` finds instances of BrowserEdge, BrowserIE, and BrowserFirefox.<br>
+      - `CodeSenseHttp*` finds files containing words that start with *CodeSenseHttp*, such as CodeSenseHttpClient and CodeSenseHttpClientTest.| DevOps, across all your code, wiki, packages, and work items.|
+|**Boolean operators**|
+      - Find two or more keywords using Boolean operators: `AND`, `OR`, and `NOT` (must be uppercase).<br>
+      - Add parenthesis to clauses to support logical groupings.<br>
+      - Because `AND` is the default operator, an entry of two keywords with no operator is the same as an `AND` search.<br>
+      - `Validate AND revisit` finds files that contain both the words *validate* and *revisit*.|
+      - `Validate OR revisit` finds files that contain either of the words *validate* or *revisit*.<br>
+      - `Validate NOT revisit` finds files that contain the word *validate* but not the word, *revisit*.<br>
+      - `(Validate NOT revisit) OR "release delayed"` finds files that contain the word *validate* but not the word, *revisit, or files that contain the phrase *release delayed*.|
+|**Special characters**|
+      - Escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes.<br>
+      - Include special characters in a search string, or search specifically for special characters, according to the following rules:<br>
+        - CodeA23?R finds files containing words that start with CodeA23<br>
+        - Have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.<br>
+      - Search for any special character that isn't a part of the query language.|
+      - `"flatten()"` finds the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes.<br>
+      - `"\"react-redux\""` finds the literal string "react-redux."|
 ::: moniker range="azure-devops"
-:::row:::
-   :::column span="1":::
-      **Proximity**
-   :::column-end:::
-   :::column span="2":::
-      - Search for files based on vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase).
-      - By default, proximity search looks for terms within five tokens distance.
-   :::column-end:::
-   :::column span="2":::
-      - `term1 BEFORE term2` returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them.
-      - `term1 AFTER term2` returns the same results as term2 BEFORE term1.
-      - `term1 NEAR term2` returns all files where term1 is within five token distance from term2 in any direction. `term1 NEAR term2` returns the same results as `term1 BEFORE term2` OR `term2 BEFORE term1`.
-   :::column-end:::
-:::row-end:::
+|**Proximity**|
+      - Search for files based on vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase).<br>
+      - By default, proximity search looks for terms within five tokens distance.|
+      - `term1 BEFORE term2` returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them.<br>
+      - `term1 AFTER term2` returns the same results as term2 BEFORE term1.<br>
+      - `term1 NEAR term2` returns all files where term1 is within five token distance from term2 in any direction. `term1 NEAR term2` returns the same results as `term1 BEFORE term2` OR `term2 BEFORE term1`.|
 ::: moniker-end
----
-:::row:::
-   :::column span="1":::
-      **Special characters**
-   :::column-end:::
-   :::column span="2":::
-      - Escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes.
-      - Include special characters in a search string, or search specifically for special characters, according to the following rules:
-        - CodeA23?R finds files containing words that start with CodeA23
-        - Have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.
-      - Search for any special character that isn't a part of the query language.
-   :::column-end:::
-   :::column span="2":::
-      - `"flatten()"` finds the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes.
-      - `"\"react-redux\""` finds the literal string "react-redux."
-   :::column-end:::
-:::row-end:::
----
 
 ## Search from different contexts
 
@@ -220,81 +124,17 @@ The search experience adapts based on where you start your search:
 
 The following table shows other search tasks and where to find them:
 
----  
-:::row:::
-   :::column span="1":::
-      **Search task**
-   :::column-end:::
-   :::column span="2":::
-      **Action**
-   :::column-end:::
-:::row-end:::
----
+| Search task | Action |
+|---|---|
 ::: moniker range="azure-devops"
-:::row:::
-   :::column span="1":::
-      Find an organization setting
-   :::column-end:::
-   :::column span="2":::
-      Go to your organization and select **Organization settings**.
-   :::column-end:::
-:::row-end:::
+| **Find an organization setting** | Go to your organization and select **Organization settings**. |
 ::: moniker-end
----
-:::row:::
-   :::column span="1":::
-      Find a project setting
-   :::column-end:::
-   :::column span="2":::
-      Go to your project and select **Project settings**.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Find a user setting
-   :::column-end:::
-   :::column span="2":::
-      Go to your **User settings page**.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Find a user
-   :::column-end:::
-   :::column span="2":::
-      Go to your organization and select **Organization settings** > **Users**, and then enter the name in the filter box.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Find an organization
-   :::column-end:::
-   :::column span="2":::
-       Scroll through the left side of your screen, which lists all organizations. 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Find a project
-   :::column-end:::
-   :::column span="2":::
-      Go to your organization, and then enter the project name in the Filter projects box.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      View file history and compare versions 
-   :::column-end:::
-   :::column span="2":::
-      Go to **Repos** > **Files**, highlight your file, and then select **History**.
-   :::column-end:::
-:::row-end:::
----
+| **Find a project setting** | Go to your project and select **Project settings**. |
+| **Find a user setting** | Go to your **User settings page**. |
+| **Find a user** | Go to your organization and select **Organization settings** > **Users**, and then enter the name in the filter box. |
+| **Find an organization** | Scroll through the left side of your screen, which lists all organizations. |
+| **Find a project** | Go to your organization, and then enter the project name in the Filter projects box. |
+| **View file history and compare versions** | Go to **Repos** > **Files**, highlight your file, and then select **History**. |
 
 ::: moniker range="azure-devops"
 > [!NOTE]
