@@ -40,7 +40,7 @@ Here's an example of a sprint plan that consists of backlog items and the tasks 
 
 ::: moniker range="<=azure-devops"
 
-:::image type="content" source="media/assign-items-sprint/assign-intro.png" alt-text="Screenshot shows Sprint planning in a Backlog with work details..":::
+:::image type="content" source="media/assign-items-sprint/assign-intro.png" alt-text="Screenshot shows Sprint planning in a Backlog with work details." lightbox="media/assign-items-sprint/assign-intro.png":::
 ::: moniker-end
 
 Planning meetings typically consist of two parts. In the first part, the team and product owner identify the 
@@ -75,11 +75,11 @@ From your web browser, open your product backlog.
 
 1. Select **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level.
 
-	:::image type="content" source="../sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot shows the Stories option with its suboptions, including Features and Stories."::: 
+	:::image type="content" source="../sprints/media/assign-items-sprint/select-product-backlog-agile.png" alt-text="Screenshot shows the Stories option with its suboptions, including Features and Stories." lightbox="../sprints/media/assign-items-sprint/select-product-backlog-agile.png"::: 
 
 1. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md).
 
-	:::image type="content" source="../sprints/media/assign-items-sprint/open-column-options.png" alt-text="Screenshot shows the Column Options button.":::
+	:::image type="content" source="../sprints/media/assign-items-sprint/open-column-options.png" alt-text="Screenshot shows the Column Options button." lightbox="../sprints/media/assign-items-sprint/open-column-options.png":::
 
 ::: moniker-end  
 
@@ -106,7 +106,7 @@ You can assign work items to a sprint through drag-and-drop from the product bac
 	> [!NOTE]   
 	> The **Planning** pane only shows the current sprint and the next 10 future sprints in the list, even if more exist for the team. Only a team administrator or member of the **Project Administrators** group can [select iterations for a team](../../organizations/settings/set-iteration-paths-sprints.md).
 
-	:::image type="content" source="media/define-sprints/drag-drop-backlog-items-to-sprint.png" alt-text="Screenshot show how to drag a work item from the backlog to a spring.":::
+	:::image type="content" source="media/define-sprints/drag-drop-backlog-items-to-sprint.png" alt-text="Screenshot show how to drag a work item from the backlog to a spring." lightbox="media/define-sprints/drag-drop-backlog-items-to-sprint.png":::
 
 1. Select one or more items from the backlog and drag them to the sprint you're planning. This action updates the Iteration Path of the backlog items and any of its child tasks to the sprint you selected.
 
