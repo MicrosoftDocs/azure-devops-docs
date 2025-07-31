@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Runtime parameters give you more control over the values passed to a pipeline. With runtime parameters, you can:
+Runtime parameters give you more control over the values you pass to a pipeline. With runtime parameters, you can:
 - Supply different values to scripts and tasks at runtime
 - Control parameter types, allowed ranges, and default values
 - Dynamically select jobs and stages with [template expressions](template-expressions.md)
@@ -25,7 +25,7 @@ Parameters are available only during template parsing. They expand before the pi
 > This guidance doesn't apply to classic pipelines. For parameters in classic pipelines, see [Process parameters (classic)](parameters.md). 
 > 
 
-Parameters must contain a name and data type. Parameters can't be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. If you don't assign a default value or set `default` to `false`, the first available value is used. 
+Parameters must contain a name and data type. You can't make parameters optional. You need to assign a default value in your YAML file or when you run your pipeline. If you don't assign a default value or set `default` to `false`, the first available value is used. 
 
 Use [templateContext](template-parameters.md#use-templatecontext-to-pass-properties-to-templates) to pass more properties to stages, steps, and jobs used as parameters in a template. 
 
@@ -61,7 +61,7 @@ jobs:
   - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
 ```
 
-From the pipeline runs page, select **Run pipeline** to run the pipeline. You'll see the option to select the Pool Image. If you don't make a selection, the default option `ubuntu-latest` is used. You can't select a Pool Image if you run your pipeline from the YAML editor. 
+From the pipeline runs page, select **Run pipeline** to run the pipeline. You see the option to select the Pool Image. If you don't make a selection, the default option `ubuntu-latest` is used. You can't select a Pool Image if you run your pipeline from the YAML editor. 
 
 > [!div class="mx-imgBorder"]
 > ![runtime parameters](media/runtime-param-ui.png)
@@ -129,7 +129,7 @@ jobs:
 
 ### Selectively exclude a stage
 
-You can also use parameters to set whether a stage runs. In this example, there's a pipeline with four stages and different jobs for each stage. The Performance Test stage runs if the parameter `runPerfTests` is true. The default value of `runPerfTests` is false, so only three of the four stages run unless updated. 
+You can also use parameters to set whether a stage runs. In this example, there's a pipeline with four stages and different jobs for each stage. The Performance Test stage runs if the parameter `runPerfTests` is true. The default value of `runPerfTests` is false, so only three of the four stages run unless you update the value. 
 
 ```yaml
 parameters:
@@ -200,8 +200,8 @@ steps:
 
 ## Parameter security best practices
 
-When using runtime parameters in Azure Pipelines, don't pass secrets or sensitive values as parameter inputs, because parameter values are expanded at template parsing time and might be exposed in pipeline logs or outputs. 
+When you use runtime parameters in Azure Pipelines, don't pass secrets or sensitive values as parameter inputs. Parameter values are expanded at template parsing time and might be exposed in pipeline logs or outputs. 
 
-Always validate and restrict allowed parameter values to prevent injection of unexpected or unsafe input, and follow the principle of least privilege when granting access to pipeline resources. 
+Always validate and restrict allowed parameter values to prevent injection of unexpected or unsafe input. Follow the principle of least privilege when granting access to pipeline resources. 
 
-Use pipeline variables marked as secrets and stored in Azure Key Vault, the Pipeline UI, or variable groups for credentials, tokens, or other confidential data. For more information, see [Protect secrets in Azure Pipelines](../security/secrets.md).
+For credentials, tokens, or other confidential data, use pipeline variables marked as secrets and stored in Azure Key Vault, the Pipeline UI, or variable groups. For more information, see [Protect secrets in Azure Pipelines](../security/secrets.md).
