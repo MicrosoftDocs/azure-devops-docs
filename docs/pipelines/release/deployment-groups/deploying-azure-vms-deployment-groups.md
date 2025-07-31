@@ -46,7 +46,7 @@ This section guides you through setting up your Azure resources using an ARM tem
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/arm-vm-overview.png" alt-text="A screenshot displaying the DB server VM in Azure.":::
 
-## Creata a deployment group
+## Create a deployment group
 
 A deployment group is a collection of machines, each with a deployment agent installed. These machines communicate with Azure Pipelines to coordinate application deployments.
 
@@ -97,13 +97,13 @@ The Classic release pipeline template includes one agent job, the **Agent phase*
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-deployment-task-service-connection.png" alt-text="A screenshot displaying how to configure a new service connection for the deployment task.":::
 
-1. Scroll down in th **Azure Resource Group Deployment** task, then select from the dropdown menues your **Team project** and the **Deployment Group** your created earlier.
+1. Scroll down in th **Azure Resource Group Deployment** task, then select from the dropdown menus your **Team project** and the **Deployment Group** your created earlier.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-team-deployment-group-setup.png" alt-text="A screenshot displaying how to configure the team project and deployment group for the deployment task.":::
 
 ### Configure the deployment group jobs
 
-1. From the **Deployment Groups** release definiton, select the **Deployment group phase** job. This job executes tasks on the machines defined in the deployment group. This job uses the **SQL-Svr-DB** tag to deploy to a subset of targets in the deployment group. Under the **Deployment Group** dropdown, select the **Release** deployment group you created earlier.
+1. From the **Deployment Groups** release definition, select the **Deployment group phase** job. This job executes tasks on the machines defined in the deployment group. This job uses the **SQL-Svr-DB** tag to deploy to a subset of targets in the deployment group. Under the **Deployment Group** dropdown, select the **Release** deployment group you created earlier.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-phase-setup.png" alt-text="A screenshot displaying how to configure the deployment group phase job.":::
 
@@ -137,7 +137,7 @@ Now that the release definition is configured and saved, you can proceed to crea
 
 1. From your Azure DevOps project, select **Pipeline**, and then select the **Deployment Groups** build pipeline.
 
-1. Selelct **Run pipeline**. In the pipeline run panel, select your **Agent specification**, then select **Run**.
+1. Select **Run pipeline**. In the pipeline run panel, select your **Agent specification**, then select **Run**.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-agent-specification-run.png" alt-text="A screenshot displaying how to configure the pipeline run.":::
 
@@ -171,7 +171,7 @@ Make sure that the database was successfully created during the resource deploym
 sqlcmd -S <server-name> -U <username> -P <password> -Q "SELECT name FROM sys.databases"
 ```
 
-If you database is not present in the list, you can create a new one using the following command:
+If your database is not present in the list, you can create a new one using the following command:
 
 ```
 sqlcmd -S <server-name> -U <username> -P <password> -Q "CREATE DATABASE [YourDatabaseName]"
@@ -226,7 +226,7 @@ This tutorial created an Azure DevOps project and deployed resources in Azure. I
 Navigate to your **Project settings** > **Overview** > **Delete**.
 
 1. Delete the Azure Resource Group
-All Azure resources created during this tutorial were placed in the same resource group. Deleting the resource group will remove all associated resources. You can do this via the Azure Portal or CLI:
+All Azure resources created during this tutorial were placed in the same resource group. Deleting the resource group will remove all associated resources. You can do this via the Azure portal or CLI:
 
 - **Azure CLI**
 
@@ -242,7 +242,10 @@ All Azure resources created during this tutorial were placed in the same resourc
 
 1. Select **Delete resource group**, confirm the name, then select **Delete**.
 
-## Next steps
+## Related content
 
-> [!div class="nextstepaction"]
-> [Provision agents for deployment groups](howto-provision-deployment-group-agents.md)
+- [Provision agents for deployment groups](howto-provision-deployment-group-agents.md)
+
+- [Add deployment group jobs to a release pipeline](deployment-group-phases.md)
+
+- [Deploy pull request Artifacts with release pipelines](deploy-pull-request-builds)
