@@ -1,7 +1,7 @@
 ---
 title: Search across Azure DevOps
-Description: Quickly search within Azure DevOps
-id: A0889E82-EAE7-464C-B82A-B05D2E404426
+description: Quickly search within Azure DevOps
+ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: how-to
