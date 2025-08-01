@@ -132,7 +132,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
     param devCenterName = '<dev-center-name>'
     param devCenterProjectName = '<dev-center-project-name>'
     param adoOrg = 'https://dev.azure.com/fabrikam'
-    param location = 'westeurope'
+    param location = 'eastus'
     param imageName = 'windows-2022'
     param poolSize = 1
     ```
