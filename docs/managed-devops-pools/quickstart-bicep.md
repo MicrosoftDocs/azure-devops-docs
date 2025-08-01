@@ -53,29 +53,29 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
     @minLength(3)
     @maxLength(44)
     param poolName string
-    
+
     @maxLength(26)
     param devCenterName string
-    
+
     param devCenterProjectName string
     param adoOrg string
     param imageName string
     param poolSize int
     param location string = 'eastus'
-    
+
     resource devCenter 'Microsoft.DevCenter/devcenters@2025-02-01' = {
-      name: '${devCenterName}'
+      name: devCenterName
       location: location
     }
-    
+
     resource devCenterProject 'Microsoft.DevCenter/projects@2025-02-01' = {
-      name: '${devCenterProjectName}'
+      name: devCenterProjectName
       location: location
       properties: {
         devCenterId: devCenter.id
       }
     }
-    
+
     resource pool 'microsoft.devopsinfrastructure/pools@2025-01-21' = {
       name: poolName
       location: location
@@ -124,10 +124,10 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
     | `imageName` | This example is configured to use an [Azure Pipelines image](./configure-images.md#azure-pipelines-images), and uses the Windows Server 2022 image. If you want to change it, choose from the [Azure Pipelines image predefined aliases](./configure-images.md#azure-pipelines-image-predefined-aliases). Managed DevOps Pools also supports Azure Compute Gallery images and selected marketplace images. For information on configuring a Managed DevOps Pools resource for these image types, see [Configure Managed DevOps Pools images](./configure-images.md). |
     | `poolSize` | Update `value` with the maximum number of agents you want to be able to run concurrent jobs. In this example the `poolSize` is `1`.|
     | `location` | The Azure region for the pool. In this example the region is `eastus`. |
-    
+
     ```bicepparam
     using './mdp-azure-deploy.bicep'
-    
+
     param poolName = '<pool-name>'
     param devCenterName = '<dev-center-name>'
     param devCenterProjectName = '<dev-center-project-name>'
