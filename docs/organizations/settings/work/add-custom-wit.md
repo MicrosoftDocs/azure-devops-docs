@@ -77,7 +77,7 @@ For more information, see [Create inherited process](manage-process.md#create-an
 
    This example adds a new field. Choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: (**New Field** icon).  
 
-   :::image type="content" source="media/process/cpwit-new-ticket-define.png" alt-text="Screenshot shows the Options page where you can make the field required and specify a default value.":::    
+   :::image type="content" source="media/process/cpwit-new-ticket-define.png" alt-text="Screenshot shows the new field option for your new Ticket work item.":::    
 
 1. Here, we add the Customer Ticket field to a new group labeled **Customer focus**. 
 
