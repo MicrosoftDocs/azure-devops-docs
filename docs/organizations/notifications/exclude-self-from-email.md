@@ -42,7 +42,7 @@ Do the following steps to opt out of receiving notifications that you create:
 
 You don't receive notifications for events you trigger yourself.
 
-#### Related articles
+#### Related content
 
 - [Manage personal notification settings](manage-your-personal-notifications.md)
 - [Follow a specific work item](../../boards/work-items/follow-work-items.md)  

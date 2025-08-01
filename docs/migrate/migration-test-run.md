@@ -10,6 +10,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Do test run migration
@@ -568,7 +569,7 @@ The Data Migration Tool flags errors that you need to correct before migration. 
 > [!div class="nextstepaction"]
 > [Resolve migration errors](migration-troubleshooting.md)
 
-## Related articles
+## Related content
 
 - [Migration overview](migration-overview.md) 
 - [Post migration tasks](migration-post-migration.md)

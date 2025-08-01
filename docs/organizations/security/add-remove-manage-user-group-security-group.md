@@ -3,12 +3,14 @@ title: Add or remove users or groups
 titleSuffix: Azure DevOps
 description: How-to guide to add or remove users or groups to security groups and manage security groups in Azure DevOps.
 ms.subservice: azure-devops-security
-ms.custom: security-refresh
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2023
+ms.custom:
+  - security-refresh
+  - sfi-image-nochange
 --- 
 
 # Use security groups to manage users and groups
@@ -387,7 +389,7 @@ If your on-premises deployment is integrated with SQL Server Reports, you need t
 > [!div class="nextstepaction"]
 > [Manage projects](../projects/about-projects.md)
 
-## Related articles
+## Related content
  
 - [Set object-level permissions](set-object-level-permissions.md)
 - [Get started with permissions, access, and security groups](about-permissions.md)

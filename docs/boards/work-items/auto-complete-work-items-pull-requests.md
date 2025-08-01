@@ -76,7 +76,7 @@ To disable the automatic completion of associated work items when users complete
 
 Mentions in commit comments to close work items (for example, "Fixes #123") isn't allowed.
 
-## Related articles
+## Related content
 
 - [Create, view, and manage pull requests](../../repos/git/pull-requests.md)  
 - [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md)  

@@ -72,5 +72,5 @@ The following groups still require continued access to ARM. You may want to cons
 - **Billing administrators** need access to ARM to set up billing and access subscriptions.
 - **Service Connection creators** require access to ARM for ARM role assignments and updates to managed service identities (MSIs).
 
-## Related articles
+## Related content
 * [Change application connection & security policies for your organization](change-application-access-policies.md)

@@ -115,7 +115,7 @@ By following this approach, you have a smooth transition while ensuring your pre
 > [!div class="nextstepaction"]
 > [Complete prerequisites for migration](migration-prerequisites.md)
 
-## Related articles 
+## Related content 
 
 - [Validate and prepare for migration](migration-validate.md)
 - [Prepare for test run](migration-prepare-test-run.md)

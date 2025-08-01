@@ -79,7 +79,7 @@ f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.c
 
 * * *
  
-## Related articles
+## Related content
 
 - [About access levels](access-levels.md)
 - [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 

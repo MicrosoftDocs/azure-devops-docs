@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 11/12/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Rename or remove a team  
@@ -277,7 +278,7 @@ Are you sure you want to delete this team? (y/n): y
 
 * * *
 
-## Related articles
+## Related content
 
 - [Add teams](add-teams.md)  
 - [Learn about teams and Agile tools](about-teams-and-settings.md)  

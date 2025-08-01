@@ -1,16 +1,16 @@
 ---
-title: Complete migration prerequisites
-description: Learn about what's required before you begin migration from on-premises to the cloud in Azure DevOps Services.
+title: Complete Migration Prerequisites
+description: Learn about requirements before you begin migration from on-premises to the cloud in Azure DevOps Services.
 ms.topic: how-to
 ms.subservice: azure-devops-migrate
 ms.contentid:
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2024
+ms.date: 07/29/2025
 ---
 
-# Complete prerequisites for migration
+# Complete migration prerequisites
 
 As you move to the second phase of migrating to Azure DevOps Services with the Azure DevOps Data Migration Tool, you must complete the prerequisites for transferring your data to the cloud. If your organization already meets these prerequisites, you can skip this phase entirely.
 
@@ -33,6 +33,10 @@ Ensure your team has a functional Microsoft Entra ID tenant for authenticating m
 > [!TIP]
 > - We recommend that you use the same Microsoft Entra ID tenant as other Microsoft Cloud services. If your company already has Microsoft Entra ID, skip this step. 
 > - While Microsoft accounts (MSAs) work for Azure DevOps Services authentication, they can't be mapped during Azure DevOps Server database migration.
+> - If your Microsoft Entra tenant has the **Restrict organization creation** policy enabled, any data import operation using the Azure DevOps Migration Tool fails unless the importing user is explicitly added to the allowlist. To ensure a successful import:
+>   - Temporarily add the importing user to the allowlist.
+>   - The user added to the allowlist must match the AccountOwner specified in the import.json file used for the migration.
+>   - For details on configuring the allowlist, see [Restrict organization creation](/azure/devops/organizations/accounts/azure-ad-tenant-policy-restrict-org-creation).
 
 ### Synchronize identities and groups with Microsoft Entra ID Connect 
 
@@ -44,7 +48,7 @@ To set up the synchronization, do the following steps:
 
 For more information on setting up Microsoft Entra ID Connect, see [Microsoft Entra Connect Sync](https://aka.ms/AzureADConnect).
 
-Also, explore how you can configure Azure DevOps Services to use Microsoft Entra ID by visiting this page. Although the steps in that article don’t align exactly with your Team Foundation Server database migration, it serves as valuable reference information. The Data Migration Tool establishes the link to your Microsoft Entra ID tenant during the creation of your Azure DevOps Services organization at the start of the migration process.
+Also, explore how you can configure Azure DevOps Services to use Microsoft Entra ID by visiting this page. Although the steps in that article don’t align exactly with your Azure DevOps Server database migration, it serves as valuable reference information. The Data Migration Tool establishes the link to your Microsoft Entra ID tenant during the creation of your Azure DevOps Services organization at the start of the migration process.
 
 > [!NOTE]
 > DirSync was a predecessor technology to Microsoft Entra ID Connect. Upgrade to Microsoft Entra ID Connect if you’re using DirSync.
@@ -81,12 +85,12 @@ Have the following items:
     `Migrator validate /collection:[^1^][4]	(http://localhost:8080/DefaultCollection) /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}`
     If you need to run the tool from a machine other than the Azure DevOps Server, use the `/connectionString` parameter. 
 
-## Next steps 
+## Next step
 
 > [!div class="nextstepaction"]
 > [Validate and prepare for migration](migration-validate.md)
 
-## Related articles 
+## Related content
 
 - [Prepare for test run](migration-prepare-test-run.md)
 - [Do test run migration](migration-test-run.md)

@@ -171,7 +171,7 @@ We recommend that you add teams to scale your tools rather than add projects for
 
 For more information, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
 
-## Related articles  
+## Related content  
 
 Before you can create or work with any of the Agile tools, you need a project. If you don't have one yet, you can [create one](../../organizations/projects/create-project.md).
 

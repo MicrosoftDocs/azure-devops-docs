@@ -187,7 +187,7 @@ After changing the process, you may want to make additional updates as follows:
 - [Update your project summary or vision](../../../organizations/projects/project-vision-status.md)
 - Disable or delete the work item types that won't be used going forward. See [Customize a work item type for an inherited process](customize-process-work-item-type.md#enable-disable)
 
-## Related articles
+## Related content
 
 - [Bulk modify work items](../../../boards/backlogs/bulk-modify-work-items.md)
 - [Change the process used by a project](./manage-process.md#migrate)

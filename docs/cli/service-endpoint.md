@@ -4,12 +4,16 @@ titleSuffix: Azure DevOps
 description: Learn how to use Azure DevOps CLI to create a service endpoint. You can create and manage different types of service connections.
 ms.topic: how-to
 ms.subservice: azure-devops-reference
-ms.custom: devx-track-arm-template, devx-track-azurecli, arm2024
 ms.manager: mijacobs 
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 06/03/2025
+ms.custom:
+  - devx-track-arm-template
+  - devx-track-azurecli
+  - arm2024
+  - sfi-image-nochange
 #customer intent: As a developer, I want to use Azure DevOps CLI to create and manage different types of service connections.
 ---
 
@@ -227,7 +231,7 @@ You can create a .pem file using OpenSSL:
 openssl pkcs12 -in file.pfx -out file.pem -nodes -secret pass:<secret_here>
 ```
 
-## Related articles
+## Related content
 
 - [Manage service connections](../pipelines/library/service-endpoints.md)
 - [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md)

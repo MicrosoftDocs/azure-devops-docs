@@ -2,7 +2,6 @@
 title: Data protection overview
 titleSuffix: Azure DevOps Services
 description: Learn how Microsoft helps protect your projects and data in Azure DevOps. 
-ms.custom: freshness-fy22
 ms.topic: article
 ms.subservice: azure-devops-security
 ms.author: chcomley
@@ -10,6 +9,9 @@ author: chcomley
 ms.reviewer: jominana
 ms.date: 06/20/2025
 monikerRange: 'azure-devops'
+ms.custom:
+  - freshness-fy22
+  - sfi-ropc-nochange
 ---
 # Data protection overview
 
@@ -354,6 +356,6 @@ Azure DevOps supports enforcing certain types of conditional access policies (fo
 - [Data locations for Azure DevOps](data-location.md)
 - [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement)
 - [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html)
-- [Features and services included with Azure DevOps](../../user-guide/services.md)
+- [Features and services included with Azure DevOps](../../user-guide/what-is-azure-devops.md)
 - [Azure Trust Center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)

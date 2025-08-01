@@ -74,6 +74,6 @@ Or, you can select all the items in the list, choose **Copy as HTML**, and paste
 > [!div class="nextstepaction"]
 > [6. Update the taskboard](task-board.md) 
 
-## Related articles
+## Related content
 
 - [Send email with work items](../work-items/email-work-items.md)

@@ -5,12 +5,14 @@ description: Configure billing for GitHub Advanced Security for Azure DevOps
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: conceptual
-ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 05/15/2025
 zone_pivot_groups: configure-ghazdo-bundled-individual-products
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
 
 #  Advanced Security billing

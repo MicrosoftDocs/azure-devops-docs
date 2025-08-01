@@ -1,7 +1,8 @@
 ---
 title: Configure pool settings
 description: Learn how to configure Managed DevOps Pools settings.
-ms.date: 04/28/2025
+ms.date: 07/29/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Configure pool settings
@@ -38,6 +39,7 @@ Choose the Dev Center project for your Managed DevOps Pool. During pool creation
 The dev center project is specified by the `devCenterProjectResourceId` property.
 
 ```json
+{
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "resources": [
@@ -77,6 +79,27 @@ You can retrieve the `devcenter-project-id` for your dev center project in the A
  az devcenter admin project show --name fabrikam-dev-center-project --resource-group fabrikam-managed-devops-pools --query "id"
 ```
 
+#### [Bicep](#tab/bicep/)
+
+The dev center project is specified by the `devCenterProjectResourceId` property.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    devCenterProjectResourceId: '/subscriptions/subscription_id_placeholder/resourceGroups/fabrikam-managed-devops-pools/providers/Microsoft.DevCenter/projects/fabrikam-dev-center-project'
+  }
+}
+```
+
+You can retrieve the `devCenterProjectResourceId` for your Dev Center project in the Azure portal by using the JSON View from the overview page of your Dev Center project, or you can retrieve it using the Azure CLI to query the project for its `id` property. In the following example, the `devCenterProjectResourceId` is retrieved from a Dev Center project named `fabrikam-dev-center-project` in the `fabrikam-managed-devops-pools` resource group.
+
+```azurecli
+ az devcenter admin project show --name fabrikam-dev-center-project --resource-group fabrikam-managed-devops-pools --query "id"
+```
+
 * * *
 
 ## Azure DevOps organization
@@ -101,7 +124,7 @@ If your pool is configured for multiple organizations, the **Azure DevOps organi
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -147,6 +170,29 @@ The following example shows the `organizations` list in the **organization-profi
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+**Azure DevOps organization** is configured using the `organizations` list in the `organizationProfile` section. In the following example, a Managed DevOps Pool is configured for all projects in a single organization, with a parallelism of 4. For an example of configuring multiple organizations, see [Use pool in multiple organizations](./configure-security.md#use-pool-in-multiple-organizations).
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    organizationProfile: {
+      organizations: [
+        {
+          url: 'https://dev.azure.com/fabrikam-tailspin'
+          projects: []
+          parallelism: 4
+        }
+      ]
+    }
+  }
+}
+```
+
 * * *
 
 By default, your Managed DevOps Pool is available to all projects in your specified organizations. To limit your pool to specific projects, see [Security settings - configure organization access](configure-security.md#configure-organization-access).
@@ -175,7 +221,7 @@ You can view the current status and count of the provisioned agents in your pool
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -194,6 +240,22 @@ You can view the current status and count of the provisioned agents in your pool
 az mdp pool create \
    --maximum-concurrency 4
    # other parameters omitted for space
+```
+
+#### [Bicep](#tab/bicep/)
+
+**Maximum agents** is configured using the `maximumConcurrency` property. In the following example, **Maximum agents** is set to `4`.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    maximumConcurrency: 4
+  }
+}
+
 ```
 
 * * *
@@ -223,7 +285,7 @@ Agent size is configured using the `sku` property in the `fabricProfile` section
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -263,6 +325,25 @@ The following example shows the `sku` section of the **fabric-profile.json** fil
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+Agent size is configured using the `sku` property in the `fabricProfile` section. In the following example, a **Standard_D2ads_v5** VM size is specified.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    fabricProfile: {
+      ...
+      sku: {
+        name: 'Standard_D2ads_v5'
+      }
+    }
+  }
+}
+```
+
 * * *
 
 If your subscription doesn't have the capacity to configure your pool with desired Azure VM SKU and maximum agents count, you'll receive an error similar to the following message. `Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription_id_placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`. To resolve the issue, see [Review Managed DevOps Pools quotas](./prerequisites.md#review-managed-devops-pools-quotas).
@@ -297,7 +378,7 @@ OS disk type is configured using the `osDiskStorageAccountType` property in the 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -338,6 +419,25 @@ The following example shows the `storageProfile` section of the **fabric-profile
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+OS disk type is configured using the `osDiskStorageAccountType` property in the `storageProfile` section. In the following example, a **Standard** OS disk type is specified. Choose **Standard**, **StandardSSD**, or **Premium**.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    fabricProfile: {
+      ...
+      storageProfile: {
+        osDiskStorageAccountType: 'Standard'
+      }
+    }
+  }
+}
+```
+
 * * *
 
 ## Images
@@ -345,7 +445,7 @@ The following example shows the `storageProfile` section of the **fabric-profile
 Managed DevOps Pools provides you with several options for virtual machine images for running pipelines in your pool. You can create your pool using selected Azure Marketplace VM images, use your own custom images in an Azure Compute Gallery, or use the same Windows and Linux images used by Azure Pipelines Microsoft-hosted agents.
 
 > [!IMPORTANT]
-> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)] 
+> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
 
 :::image type="content" source="./media/configure-images/configure-pool-image.png" alt-text="Screenshot of configure image.":::
 

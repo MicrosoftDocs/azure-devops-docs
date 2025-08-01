@@ -5,6 +5,7 @@ ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.date: 05/14/2025
 monikerRange: '<= azure-devops'
+ms.custom: sfi-image-nochange
 "recommendations": "true"
 ---
 

@@ -585,7 +585,7 @@ To resolve publishing errors that might arise when you're working in Excel, see 
 > [!div class="nextstepaction"]
 > [Integrate Azure Boards and GitHub](../../github/index.md)
 
-## Related articles
+## Related content
 
 ::: moniker range=">= azure-devops-2020"  
 

@@ -661,7 +661,7 @@ You can copy and clone test plans and test suites using the following REST APIs.
 > [!div class="nextstepaction"]
 > [Run manual tests](run-manual-tests.md)
 
-## Related articles
+## Related content
 
 - [Create test plans and test suites](create-a-test-plan.md)
 - [Create test cases](create-test-cases.md)

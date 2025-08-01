@@ -147,7 +147,7 @@ To collect advanced diagnostic data such as code coverage, IntelliTrace, and Tes
 > You must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) and other run settings in Microsoft Test Manager and specify these as the default settings for the test plan.
 > For more information, see [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
 
-## Related articles
+## Related content
 
 - [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 - [Overview of manual and exploratory testing](index.yml)

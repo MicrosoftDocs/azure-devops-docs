@@ -117,7 +117,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 ::: moniker range="<=azure-devops"
 
 > [!NOTE]  
-> The *Removed* state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available when you add a project to Azure DevOps Services or [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609).  
+> The *Removed* state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available with Azure DevOps Services and Azure DevOps Server 2020 and later versions.
 
 ::: moniker-end
 
@@ -254,7 +254,7 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [Recycle bin REST API Reference](/rest/api/azure/devops/wit/recyclebin)
 - [Work Items - Delete REST API Reference](/rest/api/azure/devops/wit/work-items/delete)
   
-## Related articles
+## Related content
 
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)
 - [Delete test artifacts](delete-test-artifacts.md)

@@ -44,7 +44,7 @@ Enable and disable services within your project overview settings.
 
 The service you disabled is no longer present in the side bar of Azure DevOps.
 
-## Related articles
+## Related content
 
 ::: moniker range="azure-devops"
 - [Learn about projects and scaling the organization](../projects/about-projects.md)  

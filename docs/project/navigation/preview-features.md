@@ -213,6 +213,6 @@ While there's no fixed timeline for when a preview feature moves to general avai
 - **Azure DevOps roadmap and release notes:** The Azure DevOps roadmap provides insights into upcoming features and enhancements. It includes information about features currently in preview and their expected release timelines. Azure DevOps release notes provide detailed information about new features, improvements, and bug fixes. For more information, see the Relevant Links section at [Azure DevOps Blog](https://devblogs.microsoft.com/devops/). 
 - **Azure DevOps blog:** The Azure DevOps blog often features posts about new releases, including when preview features transition to GA. Subscribing to the blog or regularly checking it can help you stay updated. For more information, see [Azure DevOps Blog](https://devblogs.microsoft.com/devops/).
 
-## Related articles
+## Related content
 
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)

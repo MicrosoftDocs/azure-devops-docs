@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 03/17/2025
 monikerRange: 'azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 
@@ -109,7 +110,7 @@ If you have [Project Collection Administrator](../../user-guide/manage-organizat
 > [!NOTE]
 > Users have elevated access in Azure DevOps for up to 1 hour after their PIM group access gets deactivated.
 
-## Related articles
+## Related content
 
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Manage conditional access](change-application-access-policies.md)

@@ -7,6 +7,7 @@ ms.author: ronai
 author: RoopeshNair
 ms.date: 02/01/2022
 monikerRange: "<=azure-devops"
+ms.custom: sfi-image-nochange
 ---
 
 # Deploy to Azure Stack Hub App Service using Azure Pipelines

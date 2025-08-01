@@ -8,6 +8,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: "<=azure-devops"
 ms.date: 04/25/2025
+ms.custom: sfi-image-nochange
 #customer intent: As a team member, I want to see how to use OData queries to get Azure DevOps Analytics data into Power BI so that I can minimize Power BI refresh times by taking advantage of server-side filtering and aggregation.
 ---
 

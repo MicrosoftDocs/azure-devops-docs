@@ -9,6 +9,7 @@ ms.topic: reference
 ms.date: 03/14/2018
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 

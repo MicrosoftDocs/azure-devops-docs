@@ -12,7 +12,7 @@ ms.date: 03/01/2024
 
 # Install the Azure Boards app for GitHub  
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Install the Azure Boards app for GitHub to connect Azure Boards to your GitHub repositories. When you connect Azure Boards projects with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. 
  
@@ -197,7 +197,7 @@ If you uninstall the Azure Boards app for GitHub, the following message displays
 > [!div class="nextstepaction"]
 > [Link GitHub commits, pull requests, and branches to work items](link-to-from-github.md) 
 
-## Related articles
+## Related content
  
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Change GitHub repository access, or suspend or uninstall the integration](change-azure-boards-app-github-repository-access.md)

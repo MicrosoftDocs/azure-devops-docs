@@ -139,7 +139,7 @@ Choose the ![Delete icon](../../../media/icons/delete_icon.png) Delete option fr
 > [!NOTE]    
 > Deleting a page doesn't delete any data. Once data has been defined for a field, it's maintained in the data store and work item history, even if you remove it from the form. You can always choose to re-add the field by choosing **New field** and selecting **Use an existing field**.    
 
-## Related articles  
+## Related content  
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 

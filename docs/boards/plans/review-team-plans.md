@@ -170,7 +170,7 @@ Here are some tips for printing portions of a plan:
 > [!TIP]
 > To share a delivery plan with a team member, copy the URL and send the copied URL to your team member via email, chat, or any other communication tool your team uses.
 
-## Related articles  
+## Related content  
  
 - [Add or edit a delivery plan](add-edit-delivery-plan.md)
 - [Track dependencies using Delivery Plans](track-dependencies.md)

@@ -7190,6 +7190,26 @@
     {
       "source_path": "docs/boards/backlogs/set-up-your-backlog.md",
       "redirect_url": "/azure/devops/boards/backlogs/create-your-backlog"
+    },
+    {
+      "source_path_from_root": "/docs/project/wiki/wiki-readme-permissions.md",
+      "redirect_url": "/azure/devops/project/wiki/manage-readme-wiki-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/services.md",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/devops-alm-overview.md",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/about-azure-devops-services-tfs.md",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops",
+      "redirect_document_id": false
     }
   ]
 }

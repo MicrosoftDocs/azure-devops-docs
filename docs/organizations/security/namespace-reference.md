@@ -1264,7 +1264,7 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 ---
  
 
-## Related articles
+## Related content
 
 - [Learn about security, authentication, and authorization](about-security-identity.md)
 - [Use the security Namespaces REST API](/rest/api/azure/devops/security/)

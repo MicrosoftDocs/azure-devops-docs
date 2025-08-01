@@ -46,7 +46,7 @@ If this is your first time using Azure Artifacts with npm on your machine, follo
 
 ## Publish packages
 
-1. If you haven't authenticated with your feed yet, follow the steps in the [Project setup](npmrc.md#connect-to-feed) to connect to your feed and then proceed with the next step once you're done.
+1. If you haven't authenticated with your feed yet, follow the steps in the [Project setup](npmrc.md#connect-to-a-feed) to connect to your feed and then proceed with the next step once you're done.
 
 1. Run the following command in your project directory to publish the npm packages listed in your *package.json*:
 

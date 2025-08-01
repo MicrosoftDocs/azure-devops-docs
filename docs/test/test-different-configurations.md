@@ -3,13 +3,15 @@ title: Test different configurations
 description: Learn about manual and exploratory testing. You can test different configurations with Azure Test Plans and Team Foundation Server.
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
 ms.service: azure-devops-test-plans
-ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/20/2021
 ms.update-cycle: 1095-days
+ms.custom:
+  - UpdateFrequency3
+  - sfi-image-nochange
 ---
 
 # Test different configurations
@@ -203,7 +205,7 @@ If you have a test case that appears in several test suites, you can set the dif
 The same test case can have different configuration settings in different test suites and test plans.
 ::: moniker-end
 
-## Related articles
+## Related content
 
 * [Overview of manual and exploratory testing](index.yml)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)

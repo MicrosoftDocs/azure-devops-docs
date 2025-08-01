@@ -190,7 +190,7 @@ Monitor for code and secret vulnerabilities with the following automated securit
 
 For more information, see the [GitHub advanced security overview](../../repos/security/github-advanced-security-security-overview.md).
 
-## Related articles
+## Related content
 
 - [Data locations for Azure DevOps](data-location.md)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)

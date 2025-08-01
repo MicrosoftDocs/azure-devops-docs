@@ -151,7 +151,7 @@ You can then assess the delta between the current team's velocity and the requir
 > [!div class="nextstepaction"]
 > [Assign work to a sprint](assign-work-sprint.md)
 
-## Related articles
+## Related content
 
 *	[Team velocity](../../report/dashboards/team-velocity.md)  
 *	[Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 

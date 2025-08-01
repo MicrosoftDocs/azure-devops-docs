@@ -76,7 +76,7 @@ You can also use Azure DevOps Services with any IDE or code editor, like the fol
 > [!div class="nextstepaction"]
 > [Add users to your organization](add-organization-users.md)
 
-## Related articles
+## Related content
 
 * [Add code to Git](../../repos/git/share-your-code-in-git-vs.md)
 * [Add code to TFVC](../../repos/tfvc/share-your-code-in-tfvc-vs.md)

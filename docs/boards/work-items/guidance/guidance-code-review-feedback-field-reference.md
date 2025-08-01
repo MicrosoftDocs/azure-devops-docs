@@ -57,7 +57,7 @@ The following fields track feedback requests and responses. You complete the fir
 |**Application Type**|The type of application that stakeholders provide feedback on. The valid types are specified in the process configuration file, ProcessConfiguration. The default values are **Web Application**, **Remote Machine**, and **Client Application**.<br/>Reference name=`Microsoft.Feedback.ApplicationType`|String|  
 |**Rating**|The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response)<br /> The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0—Not Rated**<br />-   **1 - Poor**<br />-   **2 - Fair**<br />-   **3- Good**<br />-   **4- Very Good**<br />-   **5 - Excellent**<br/>Reference name=`Microsoft.Common.Rating`|String|  
   
-## Related articles
+## Related content
 
 - [Explore the index of work item fields](work-item-field.md)  
 - [Provide and gather feedback](/previous-versions/azure/devops/project/feedback/get-feedback)  

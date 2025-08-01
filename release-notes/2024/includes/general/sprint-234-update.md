@@ -3,6 +3,7 @@ author: ckanyika
 ms.author: ckanyika
 ms.date: 2/9/2024
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 
 ### Final notice of alternate credentials deprecation

@@ -1,7 +1,8 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 06/18/2025
+ms.date: 07/29/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Configure Managed DevOps Pools networking
@@ -92,13 +93,13 @@ Once the network update completes, newly created resource in the pool will use t
 
 #### [ARM template](#tab/arm/)
 
-If you're using ARM templates, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet. 
+If you're using ARM templates, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet.
 
 ```json
 {
     "name": "MyManagedDevOpsPool",
     "type": "Microsoft.DevOpsInfrastructure/pools",
-    "apiVersion": "2024-10-19",
+    "apiVersion": "2025-01-21",
     "location": "eastus",
     "properties": {
         ...
@@ -138,6 +139,24 @@ The following example shows the `networkProfile` section of the **fabric-profile
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+If you're using Bicep, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'MyManagedDevOpsPool'
+  location: 'eastus'
+  properties: {
+    ...
+    fabricProfile: {
+      networkProfile: {
+        subnetId: '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet'
+      }
+  }
+}
+```
+
 * * *
 
 ## Restricting outbound connectivity
@@ -158,11 +177,13 @@ If you have systems in place on your network (NSG, Firewall, etc.) that restrict
       * `packages.microsoft.com` - Provisioning Linux machines
       * `ppa.launchpad.net` - Provisioning some specific Linux distros
       * `dl.fedoraproject.org` - Provisioning certain Linux distros
-* Optional, but required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization hosting your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`. These entries are the minimum domains required. If you have any issues, see [Azure DevOps allowlist](/azure/devops/organizations/security/allow-list-ip-url) for the full list of domains required.
+* Optional, but required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization hosting your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`.
    * `*.services.visualstudio.com`
    * `*.vsblob.visualstudio.com` - Used for Artifacts, both uploading and consuming
    * `*.vssps.visualstudio.com` - Used for authentication with Azure DevOps for certain features
    * `*.visualstudio.com`
+     > [!NOTE]
+     > The previous entries are the minimum domains required. If you have any issues, see [Azure DevOps allowed IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md) for the full list of required domains.
 * Azure related endpoints:
     Azure VMs may route traffic to certain Azure features through your subnet. For these requests, you have the option of routing requests through Azure directly, or enabling access through your network.
     1. [Configuring Azure traffic to run through Service Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview)
@@ -195,3 +216,4 @@ If you're migrating from Azure Virtual Machine Scale Set agents and are already 
 ## See also
 
 * [Configure pool settings](./configure-pool-settings.md)
+* [Azure DevOps allowed IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md)

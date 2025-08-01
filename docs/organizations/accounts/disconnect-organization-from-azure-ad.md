@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 10/23/2024
 monikerRange: 'azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Disconnect your organization from Microsoft Entra ID
@@ -55,7 +56,7 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
 
 Your organization is disconnected from Microsoft Entra ID. Only users with Microsoft accounts can sign in.
 
-## Related articles
+## Related content
 
 * [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
 * [Learn about access with Microsoft Entra ID](access-with-azure-ad.md)

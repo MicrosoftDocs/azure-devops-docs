@@ -6,9 +6,11 @@ ms.subservice: azure-devops-pipelines-integrations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.custom: cross-service
 monikerRange: '<= azure-devops'
 ms.date: 09/09/2024
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
 
 # Configure pipelines to support work tracking

@@ -352,7 +352,7 @@ To add users to a project, see [Add users to a project or team](../../organizati
 > [!div class="nextstepaction"]
 >[Sign up for Azure Boards](../get-started/index.md)
 
-## Related articles
+## Related content
 
 - [Navigate the web portal](../../project/navigation/index.md)
 - [Learn about Kanban boards](../boards/kanban-overview.md)

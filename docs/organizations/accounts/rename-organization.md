@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 10/24/2024
 monikerRange: 'azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Rename your organization in Azure DevOps
@@ -57,7 +58,7 @@ Your organization is renamed.
 
 A: The organization URL setting is two-way toggle. You can turn on the new domain name URL. You can also turn off the new URL - then, you go back to using old URL format.  
 
-## Related articles
+## Related content
 
 - [Resolve orphaned organization](resolve-orphaned-organization.md)
 - [Delete an organization](delete-your-organization.md)

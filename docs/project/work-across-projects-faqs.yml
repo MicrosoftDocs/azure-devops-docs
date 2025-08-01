@@ -138,6 +138,6 @@ sections:
           1. Get all pull requests of each repository using [Pull Requests - Get Pull Requests](/rest/api/azure/devops/git/pull-requests/get-pull-request#pullrequeststatus). 
  
 additionalContent: |
-  ## Related articles
+  ## Related content
   -  [Work across projects](navigation/work-across-projects.md)
   -  [Connect to team projects](../organizations/projects/connect-to-projects.md)  

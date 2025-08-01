@@ -161,7 +161,7 @@ There are no per-project limits placed on creating service connections. However,
 - [Microsoft Entra service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions)
 - [Azure subscription and service limits, quotas, and constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
-## Related articles
+## Related content
 
 - [Track work, manage processes, and set project limits](../../organizations/settings/work/object-limits.md)
 - [Configure and customize Azure Boards](../../boards/configure-customize.md)

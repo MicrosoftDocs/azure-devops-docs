@@ -69,6 +69,6 @@ az repos policy create --policy-configuration C:\policyConfiguration.txt
 > [!NOTE]
 > The path is provided using '\\' backslash.
 
-## Related articles
+## Related content
 
 - [Git repository settings and policies](../repos/git/repository-settings.md)

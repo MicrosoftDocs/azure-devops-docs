@@ -421,7 +421,7 @@ In addition, you can create custom reports by querying the Analytics service. Fo
 > [!div class="nextstepaction"]
 > [Test objects and terms](test-objects-overview.md)
 
-## Related articles
+## Related content
 
 - [Navigate Test Plans](navigate-test-plans.md)
 - [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)

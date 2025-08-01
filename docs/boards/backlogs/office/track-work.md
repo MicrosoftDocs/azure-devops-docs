@@ -52,7 +52,6 @@ macOS isn't supported. Even if you installed Visual Studio for Mac, connection t
 :::column span="2":::
 Azure DevOps Services  
 Azure DevOps Server 2020  
-Azure DevOps Server 2019
 Visual Studio 2022  
 Visual Studio 2019  
 Azure DevOps Office Integration 2019
@@ -84,7 +83,7 @@ Visual Studio 2017
 :::row-end:::
 
 > [!NOTE]  
-> - Support for Project integration and the **TFSFieldMapping** command is deprecated for Azure DevOps Server 2019 and later versions. You might find support using one of the [Marketplace extensions](#marketplace-extensions).
+> - Support for Project integration and the **TFSFieldMapping** command is deprecated for Azure DevOps Server 2020 and later versions. You might find support using one of the [Marketplace extensions](#marketplace-extensions).
 > - Support for linking PowerPoint files to work items from within PowerPoint is deprecated starting with Visual Studio 2019 and Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated.
 
 ## Prerequisites
@@ -326,7 +325,7 @@ The following Marketplace extensions support integration between Azure DevOps an
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel): Opens a selected query in Excel.
 - [Office 365 Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-o365): Pushes notifications of configurable Azure DevOps events to an Office 365 Group.
 
-## Related articles
+## Related content
 
 - [Bulk modify work items (web portal)](../bulk-modify-work-items.md)
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)

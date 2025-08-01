@@ -110,7 +110,7 @@ A: Azure DevOps sends notification emails to the email address configured for yo
 
 ---
 
-## Related articles
+## Related content
 
 - [Set your time zone](../settings/timezone-settings-usage.md)
 - [Manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)

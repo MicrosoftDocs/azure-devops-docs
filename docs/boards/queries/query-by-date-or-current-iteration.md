@@ -73,8 +73,8 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** field 
 ::: moniker-end
 
 Notes:
-1. The `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, and `@StartOfYear` macros are supported for Azure DevOps Server 2019.1 and later versions. They're only supported when run from the web portal.
-1. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions and is only supported when run from the web portal.
+1. The `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, and `@StartOfYear` macros are supported for Azure DevOps Server 2020 and later versions. They're only supported when run from the web portal.
+1. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2020 and later versions and is only supported when run from the web portal.
 
 > [!TIP]
 > The `WasEver` operator can be used with the **Iteration Path** field but only when defined through the WIQL syntax. For an example, see [Work Item Query Language (WIQL) syntax reference](wiql-syntax.md).
@@ -92,7 +92,7 @@ You can use the `@CurrentIteration` macro in a query from the following clients:
 - Visual Studio 2019 or later versions connected to Azure Boards
 - The REST API
 
-You can use the `@CurrentIteration +/- n` macro in a query against Azure Boards, Azure DevOps Server 2019, and later versions, and with a REST API that includes the team as a parameter. An example is `@CurrentIteration('[Project]\Team')`.
+You can use the `@CurrentIteration +/- n` macro in a query against Azure Boards, Azure DevOps Server 2020, and later versions, and with a REST API that includes the team as a parameter. An example is `@CurrentIteration('[Project]\Team')`.
 
 An error occurs if you open a query that contains the `@CurrentIteration` macro in earlier versions of Visual Studio, or from Microsoft Excel or Microsoft Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../organizations/notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
 
@@ -529,7 +529,7 @@ Notes:
 
    [!INCLUDE [feature support information](../includes/deprecate-project.md)]
 
-## Related articles
+## Related content
 
 - [Query by assignment or workflow changes](query-by-workflow-changes.md)
 - [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)

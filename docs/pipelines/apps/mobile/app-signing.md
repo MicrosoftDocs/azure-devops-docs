@@ -6,6 +6,7 @@ ms.assetid: 1b9de1a8-0749-40af-87e8-857fb86cf0ae
 ms.reviewer: dastahel
 ms.date: 07/20/2024
 monikerRange: '<= azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Sign a mobile app

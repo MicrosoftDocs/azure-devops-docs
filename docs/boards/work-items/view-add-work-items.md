@@ -17,7 +17,7 @@ ms.date: 10/02/2024
 
 # View and add work items
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
 View work items that you created or are assigned to you. The **Work items** page offers several personalized pivots and interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project.
@@ -33,9 +33,6 @@ You can add work items in the following ways:
 - [Add work items using the Azure DevOps CLI](#add-a-work-item-from-a-boards-backlogs-or-sprints-page)
 
 These methods provide flexibility in how you manage and track your work items within Azure DevOps.
-
-> [!NOTE]     
-> The **Work Items** page is available from Azure DevOps Services, Azure DevOps Server 2019 and later versions, and Visual Studio 2019 RC1. 
 
 ## Prerequisites
 
@@ -252,7 +249,7 @@ Do the following steps to add a work item from your Boards, Backlogs, or Sprints
    > Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](../work-items/guidance/scrum-process.md),
    or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create are different. For example, backlog items may be called user stories (Agile), issues (Basic) product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to deliver and the work to be performed.
    >
-   > For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). The Basic process requires Azure DevOps Server 2019.1 or later version.
+   > For more information, see [About processes and process templates](../work-items/guidance/choose-process.md).
 
 2. Select a work item type from the dropdown menu, enter a title, and then select **Enter**. From a board, for example, you can also select **Add to top**. Before you can change the state from its initial default, save it.  
 
@@ -320,7 +317,7 @@ Use the following three controls to manage your views in the web portal.
 > [!div class="nextstepaction"]
 > [Manage work items](../backlogs/manage-work-items.md)
 
-## Related articles
+## Related content
 
 - [Azure Boards FAQs](../faqs.yml)   
 - [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md)

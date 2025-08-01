@@ -34,8 +34,6 @@ The default processes differ mainly in the work item types they provide for plan
 - **Agile**: Supports many Agile method terms.
 - **CMMI**: Provides the most support for formal processes and change management.
 
-[!INCLUDE [temp](../../includes/note-basic-process.md)]
-
 :::row:::
    :::column span="2":::
 
@@ -330,9 +328,9 @@ Notes:
 Workflow states support tracking the status of work as it moves from a `New` state to a `Closed` or a `Done` state. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.
 
 > [!IMPORTANT]
-> For Azure DevOps Services and Azure DevOps Server 2019, the default workflow transitions support any state to any state transition. Customize these workflows to restrict some transitions. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
+> **Workflow transitions:** The default workflow transitions support any state to any state transition for Azure DevOps Services and Azure DevOps Server 2020 and later versions. You can customize these workflows to restrict specific transitions based on your team's requirements. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
 >
-> View the supported workflow transitions for each work item type by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a new hub under **Boards** labeled **State Visualizer**. On that page, choose a work item type and view the workflow state model.
+> **Visualizing workflows:** To view the supported workflow transitions for each work item type, install the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a **State Visualizer** hub under **Boards** where you can select a work item type and view its complete workflow state model.
 
 The following diagrams show the typical forward progression of those work item types used to track work and code defects for the three default processes. They also show some of the regressions to former states and transitions to removed states.
 
@@ -376,7 +374,7 @@ Each image shows only the default reason associated with the transition.
 #### [Basic process](#tab/basic-process)
 
 > [!NOTE]
-> The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose the Agile, Scrum, or CMMI process.
+> The Basic process is available with Azure DevOps Services and Azure DevOps Server 2020 and later versions. For earlier on-premises deployments, use the Agile, Scrum, or CMMI process instead.
 
 :::row:::
    :::column span="1":::
@@ -515,7 +513,7 @@ From the web portal or Microsoft Test Manager, view which test cases are defined
 
 If you change the workflow for the test plan and test suite, you might need to update the process configuration as described here. For definitions of each test field, see [Create a query based on build and test integration fields](../../queries/build-test-integration.md).
 
-## Related articles
+## Related content
 
 <a id="term-note"></a>
 

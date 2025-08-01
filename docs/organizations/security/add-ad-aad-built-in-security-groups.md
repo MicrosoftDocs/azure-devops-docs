@@ -10,6 +10,7 @@ ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ms.date: 08/26/2024
+ms.custom: sfi-image-nochange
 --- 
 
 # Add an Active Directory / Microsoft Entra group to a built-in security group
@@ -165,7 +166,7 @@ The process for adding an Active Directory group to a built-in security group is
 > [!div class="nextstepaction"]
 > [Request an increase in permission levels](request-changes-permissions.md)
 
-## Related articles
+## Related content
 
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Change project-level permissions](change-project-level-permissions.md)

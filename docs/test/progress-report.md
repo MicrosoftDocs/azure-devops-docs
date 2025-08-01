@@ -83,7 +83,7 @@ Filter by **Test Suites**, **Configuration**, **Tester**, Test Case **Priority**
  
   
 
-## Related articles
+## Related content
 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
 - [FAQs for manual testing](reference-qa.yml#trackstatus)

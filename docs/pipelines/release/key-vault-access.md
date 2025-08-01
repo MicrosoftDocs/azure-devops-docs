@@ -8,6 +8,7 @@ ms.service: azure-devops-pipelines
 ms.topic: tutorial
 monikerRange: "<=azure-devops"
 zone_pivot_groups: key-vault-access-path
+ms.custom: sfi-image-nochange
 ---
 
 # Access a private key vault from your pipeline

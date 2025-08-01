@@ -312,7 +312,7 @@ Users with Basic access have full access to all features. Users with Stakeholder
 > [!div class="nextstepaction"]
 > [Add a work item](view-add-work-items.md)
 
-## Related articles 
+## Related content 
 
 - [Learn key concepts and work item tasks in Azure Boards](quick-ref.md)
 - [Navigate the web portal](../../project/navigation/index.md)

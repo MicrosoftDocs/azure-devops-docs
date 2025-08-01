@@ -10,6 +10,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/17/2024
+ms.custom: sfi-image-nochange
 --- 
 
 # View permissions for yourself or others
@@ -206,7 +207,7 @@ Do the following steps to view object-level permissions for you or other users.
 > [!div class="nextstepaction"]
 > [Look up a member of the Project Administrators group](look-up-project-administrators.md) 
 
-## Related articles
+## Related content
 
 - [Troubleshoot permissions](troubleshoot-permissions.md)
 - [Look up permissions and roles](permissions-lookup-guide.md)

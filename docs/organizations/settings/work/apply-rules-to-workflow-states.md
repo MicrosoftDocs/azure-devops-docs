@@ -533,7 +533,7 @@ The Agile process bug work item type previously had a rule that reassigned the b
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Add a custom rule](custom-rules.md)  
 - [Work item form caching](troubleshoot-work-item-form-caching-issues.md)  

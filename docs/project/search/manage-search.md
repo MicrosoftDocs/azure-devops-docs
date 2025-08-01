@@ -127,6 +127,6 @@ You're prompted to enter the following information.
 
 If you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database, [reindex all your collections](manage-search.md#reindex-a-repository-or-collection).
 
-## Related articles
+## Related content
 
 - [Install and configure Search](install-configure-search.md)

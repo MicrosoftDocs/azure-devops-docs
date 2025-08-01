@@ -207,7 +207,7 @@ Team Explorer is a plug-in for Visual Studio. You gain access to Team Explorer w
 >[!div class="nextstepaction"]
 >[Work in Team Explorer](../../user-guide/work-team-explorer.md)
 
-## Related articles
+## Related content
 
 - [Learn keyboard shortcuts for Microsoft Test Manager](/previous-versions/visualstudio/visual-studio-2013/ff458183(v=vs.120))
 - [Customize Visual Studio keyboard shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)

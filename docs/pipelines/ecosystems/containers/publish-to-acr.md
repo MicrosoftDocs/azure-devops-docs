@@ -6,6 +6,7 @@ ms.author: rabououn
 author: ramiMSFT
 ms.date: 08/06/2024
 monikerRange: 'azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Build and publish Docker images to Azure Container Registry

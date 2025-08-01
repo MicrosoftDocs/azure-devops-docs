@@ -4,11 +4,14 @@ titleSuffix: Azure DevOps
 description: Learn how to generate Power BI reports based on Work Items with Direct Links.
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
-ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 10/08/2021
+ms.custom:
+  - powerbisample
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # List linked work items sample queries and reports

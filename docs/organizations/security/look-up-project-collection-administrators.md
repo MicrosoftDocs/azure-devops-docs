@@ -3,12 +3,14 @@ title: Look up a project collection administrator
 titleSuffix: Azure DevOps
 description: Learn how to identify members of the Project Collection Administrators group in Azure DevOps.
 ms.subservice: azure-devops-security
-ms.custom: security-refresh
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 07/12/2024
+ms.custom:
+  - security-refresh
+  - sfi-image-nochange
 ---
 
 # Look up a project collection administrator 
@@ -84,7 +86,7 @@ The display shows a list of users who are part of the **Project Collection Admin
 > [!div class="nextstepaction"]
 > [Look up a project administrator](look-up-project-administrators.md)
 
-## Related articles
+## Related content
 
 - [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)

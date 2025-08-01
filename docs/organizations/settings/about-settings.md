@@ -8,6 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 06/16/2025
+ms.custom: sfi-image-nochange
 ---
 
 # About settings for users, teams, projects, or organizations
@@ -803,7 +804,7 @@ For more information, see [Team Foundation Server Administration Documentation](
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Add or update information banners](manage-banners.md)
 - [Review resources granted to project members](../projects/resources-granted-to-project-members.md)

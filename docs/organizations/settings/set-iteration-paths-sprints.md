@@ -517,7 +517,7 @@ You can quickly generate [queries](../../boards/queries/using-queries.md) to vie
 
 ![Stacked bar chart by area](media/areas/ALM_CW_StackedBarChart.png)
 
-## Related articles 
+## Related content 
 
 * [About areas and iterations](about-areas-iterations.md)  
 * [Add another team](../../organizations/settings/add-teams.md)  

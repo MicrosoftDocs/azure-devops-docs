@@ -280,7 +280,7 @@ A query tile displays a count of the work items in a query. You can also quickly
 
 ::: moniker-end
  
-## Related articles
+## Related content
 
 - [Query FAQs](query-faqs.yml)  
 - [Set query permissions](set-query-permissions.md)  

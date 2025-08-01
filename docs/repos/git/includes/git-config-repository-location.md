@@ -5,6 +5,7 @@ ms.date: 10/19/2022
 ms.topic: include
 msservice: azure-devops-repos
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 The **Default repository location** setting is only available at the global scope.

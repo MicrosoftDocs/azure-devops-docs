@@ -10,6 +10,7 @@ ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 02/26/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Access, export, and filter audit logs
@@ -201,7 +202,7 @@ The following limitations apply to what can be audited:
 ### Q: What is the DirectoryServiceAddMember group and why is it appearing on the audit log?
 A: The `DirectoryServiceAddMember` group helps manage membership in your organization. Many system, user, and administrative actions can affect membership in this system group. Since this group is used only for internal processes, you can disregard audit log entries that capture membership changes to this group.
 
-## Related articles
+## Related content
 
 - [Create audit streaming](auditing-streaming.md)
 - [Learn about auditing events](auditing-events.md)

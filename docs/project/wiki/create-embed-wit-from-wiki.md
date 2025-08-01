@@ -46,7 +46,7 @@ The status, ID, and title of an embedded work item is shown in the wiki page. Wo
 
 ![Screenshot of Work item status shown on wiki page.](media/wiki/show-work-item-status-wiki.png)
 
-## Related articles
+## Related content
 
 - [Add and edit wiki pages](add-edit-wiki.md)  
 - [View wiki page history and revert](wiki-view-history.md)

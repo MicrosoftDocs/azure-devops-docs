@@ -99,7 +99,7 @@ If you don't have a wiki yet, you can add one. Once added, you can add and updat
 - [Add and edit wiki pages](../wiki/add-edit-wiki.md)
 - [Publish a Git repository to a wiki](../wiki/publish-repo-to-wiki.md)
 
-## Related articles
+## Related content
 
 - [Azure Artifacts](../../artifacts/index.yml)  
 - [Exploratory & Manual Testing](../../test/index.yml)

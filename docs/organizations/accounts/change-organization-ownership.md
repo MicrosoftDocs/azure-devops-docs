@@ -51,7 +51,7 @@ To change the organization owner, do the following steps:
 
 Your organization has a new owner. The new owner has full administrative control over the organization, including the ability to manage users, projects, and settings. They can also configure security policies, access levels, and billing information. Ensure the new owner is aware of their responsibilities and has the necessary permissions to effectively manage the organization.
 
-## Related articles
+## Related content
 
 - [Resolve inactive organization owner](resolve-orphaned-organization.md)
 - [Change organization location](change-organization-location.md)

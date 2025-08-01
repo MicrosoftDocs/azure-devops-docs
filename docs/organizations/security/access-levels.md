@@ -540,7 +540,7 @@ Service accounts don't require a CAL or other purchase.
 
 ::: moniker-end
 
-## Related articles  
+## Related content  
 
 ::: moniker range="azure-devops"
 
