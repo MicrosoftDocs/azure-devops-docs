@@ -24,7 +24,7 @@ The default setting for a Managed DevOps pool is stateless (**Fresh agent every 
 
 When a stateless agent is configured, a new agent is procured for each job, and is discarded after the job completes.
 
-For the lifecycle of stateless agents and an explanation on how they are used in Azure DevOps pipelines (including potential delays in allocation), see the following [Lifecycle of agents and potential delays in allocation](#lifecycle-of-agents-and-potential-delays-in-allocation) section.
+For the lifecycle of stateless agents and an explanation on how they are used in Azure Pipelines (including potential delays in allocation), see the following [Lifecycle of agents and potential delays in allocation](#lifecycle-of-agents-and-potential-delays-in-allocation) section.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -1222,7 +1222,7 @@ Standby agents using a [Stateless](#stateless-pools) scheme require the Azure Pi
 
 If you are seeing delays in ready agents picking up jobs from Azure DevOps, the following are important to consider:
 
-* Do you have ready agents? - The most common issue is a misunderstanding of when agents should be preprovisioned. When the number of jobs queued is greater than the standby agent count on a pool, or jobs are queued outside of the pre-provisioning schedule, when the standby agent count is set to be empty, then machines must be spun up from scratch.
+* Do you have ready agents? - The most common issue is a misunderstanding of when agents should be pre-provisioned. When the number of jobs queued is greater than the standby agent count on a pool, or jobs are queued outside of the pre-provisioning schedule, when the standby agent count is set to be empty, then machines must be spun up from scratch.
 * Are you configuring standby agents with multiple images properly? - If you are not specifying which image to use in your pipeline using the [ImageOverride](./demands.md#imageoverride) demand, jobs will be targeting the first image. This means, depending on your scaling settings, you might not have as many agents available as you'd expect as some are allocated to other images.
 * Are you using the [ImageVersionOverride](./demands.md#imageversionoverride) in your pipelines? - When you use `ImageVersionOverride` to specify a different image version than what's configured in your [pool settings](./configure-images.md), each agent is started on demand using the specified image version. Standby agents are provisioned using the image versions specified in your [pool's configuration](./configure-images.md), so if you use `ImageVersionOverride`, any standby agents won't match that version and a fresh agent is started.
 * Are Proxy/VNet/Firewall settings slowing down your pool? - Potential slowness from any network setting will result in agents taking longer to start the agent and connect it to Azure DevOps.
