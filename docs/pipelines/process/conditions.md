@@ -53,7 +53,7 @@ jobs:
 ```
 
 > [!NOTE]
-> You can also use the Azure Pipelines UI to manually run dependent stages when the parent stage fails. For more information, see [Run children stages when parent stage fails](../../release-notes/2024/pipelines/sprint-246-update.md#run-children-stages-when-parent-stage-fails).
+> You can also use the Azure Pipelines UI to manually run dependent stages when the parent stage fails. For more information, see [Run children stages when parent stage fails](../../../release-notes/2024/pipelines/sprint-246-update.md#run-children-stages-when-parent-stage-fails).
 
 ## Custom conditions
 
