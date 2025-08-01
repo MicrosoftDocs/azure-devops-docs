@@ -272,7 +272,8 @@ To verify your membership in the Azure DevOps organization, go to `https://dev.a
 
 You must have Organization level agent pools **Administrator** permissions for each organization where you want to create Managed DevOps Pools.
 
-You can be directly assigned the **Organization-level agent pools administrator** permission by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or another **Organization-level Agent pools administrator**. If you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md), your account is automatically assigned the **Organization-level agent pools administrator** permission.
+* You can be directly assigned the **Organization-level agent pools administrator** permission by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or another **Organization-level Agent pools administrator**.
+* If you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md), your account is automatically assigned the **Organization-level agent pools administrator** permission.
 
 To check your agent pools permissions at the organization level:
 
@@ -303,10 +304,11 @@ To check your agent pools permissions at the organization level:
 
 You must have Project level agent pools **Administrator** or **Creator** permissions for each project in which you want to make your Managed DevOps Pool available to pipelines.
 
-  * If you create your Managed DevOps Pool with **Add pool to all projects** set to **Yes**, Managed DevOps Pools will configure the pool to be available in all projects for which you have the **Administrator** or **Creator** permission. To use the pool in other projects, you can manually add the pool to the other projects after you are assigned the **Administrator** or **Creator** permission for those projects.
+  * If you create your Managed DevOps Pool with **Add pool to all projects** set to **Yes**, Managed DevOps Pools will configure the pool to be available in all projects for which you have the **Administrator** or **Creator** permission. You can manually add the pool to additional projects after you are assigned the **Administrator** or **Creator** permission for those projects.
   * If you provide a list of projects when creating your Managed DevOps Pool, you must have the **Administrator** or **Creator** permission for every listed project or else pool creation fails.
 
-You can be directly assigned the **Administrator** or **Creator** permission by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md), a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), or another **Project-level agent pools administrator**. You are assigned the **Administrator** role automatically if you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group).
+* You can be directly assigned the **Administrator** or **Creator** permission by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md), a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), or another **Project-level agent pools administrator**.
+* If you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), your account is automatically assigned the **Administrator** permission.
 
 To check your agent pools permissions at the project level:
 
