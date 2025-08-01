@@ -15,7 +15,7 @@ ms.date: 11/26/2024
 
 # Import, update, and export bulk work items with CSV files in Azure Boards
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 ::: moniker range="<=azure-devops"
 Import and export work items in bulk using CSV-formatted files in Azure Boards. While you can continue to use Excel for bulk imports and updates, the native import/export feature allows you to manage work items without requiring Excel. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).

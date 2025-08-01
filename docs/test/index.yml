@@ -12,8 +12,8 @@ metadata:
   ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
   ms.topic: landing-page 
   ms.author: jeom
-  author: raviLiftr
-  ms.date: 06/26/2024  
+  author: chcomley
+  ms.date: 07/18/2025
   ms.update-cycle: 1095-days
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -60,6 +60,8 @@ landingContent:
         links:
           - text: Set test retention policies
             url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json 
+          - text: Manage test runs
+            url: ../test/test-runs.md
   - title: Run automated tests
     linkLists:
       - linkListType: concept

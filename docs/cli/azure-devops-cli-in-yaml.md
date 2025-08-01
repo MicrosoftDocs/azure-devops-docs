@@ -9,24 +9,30 @@ ms.manager: mijacobs
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/30/2025
+ms.date: 07/07/2025
+zone_pivot_groups: configure-cli
+
 #customer intent: As a team member, I want to use YAML configuration files to manage my pipeline tasks by using Azure DevOps CLI.
 ---
 
 # Azure DevOps CLI in Azure Pipeline YAML
 
+
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
-If you want to use Azure DevOps CLI with a YAML pipeline, use the following examples to install Azure CLI, add the Azure DevOps extension, and run Azure DevOps CLI commands.
+If you want to use Azure DevOps CLI with a YAML pipeline, you can use the Azure DevOps extension or use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2). The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. The Azure DevOps CLI extension runs  `az devops` commands. 
 
-> [!NOTE]
-> The steps in this article show how to authenticate with Azure DevOps and run `az devops` commands using the Azure DevOps CLI extension. If you want to use Azure CLI to interact with Azure resources, use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2).
+You need to use a PAT with the Azure CLI extension in a pipeline. For added security, use the use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2) with a service connection. 
+
+::: zone pivot="pat"  
 
 ## Authenticate with Azure DevOps
 
 Some Azure DevOps CLI commands, like `az devops configure` and `az devops --help`, don't require any authentication. They don't connect into Azure DevOps. Most commands interact with Azure DevOps and do require authentication.
 
 You can authenticate using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example.
+
+Using `System.AccessToken` relies on having a PAT. As a more secure alternative, you can use the AzureCLI@2 task to populate a service connection.
 
 # [Bash](#tab/bash)
 
@@ -160,7 +166,6 @@ You can upgrade the Azure CLI on your hosted images by running the following com
 - pwsh: pip install --pre azure-cli
   displayName: 'Upgrade Azure CLI'
 ```
-
 ---
 
 ## Conditionally install the Azure DevOps CLI extension
@@ -472,8 +477,109 @@ steps:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
   displayName: 'List variables in Fabrikam-2023 variable group'
 ```
-
 ---
+
+::: zone-end  
+
+::: zone pivot="service-connection"
+
+
+## Authenticate with a service connection 
+
+When you use a service connection, the service connection provides the necessary credentials for Azure CLI and Azure DevOps CLI commands in the AzureCLI@2 task without requiring manual credential management in the pipeline.
+
+> [!NOTE]
+> When you use a service connection for authentication with `AzureCLI@2`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md#2-add-a-service-principal-to-an-azure-devops-organization). 
+
+This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@2` task. The task lists all projects (`az devops project list`) and pools (`az pipelines pool list`). 
+
+```yml
+trigger:
+  - main
+
+parameters:
+- name: serviceConnection
+  displayName: Azure Service Connection Name
+  type: string
+  default: my-service-connection
+
+steps:
+  - task: AzureCLI@2
+    condition: succeededOrFailed()
+    displayName: 'Azure CLI -> DevOps CLI'
+    inputs:
+      azureSubscription: '${{ parameters.serviceConnection }}'
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        Write-Host "Using logged-in Azure CLI session..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
+        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
+        az devops configure -l
+
+        Write-Host "`nUse Azure DevOps CLI (az devops) to list projects in the organization '$(System.CollectionUri)'..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops project list$($PSStyle.Reset)"
+        az devops project list --query "value[].{Name:name, Id:id}" `
+                               -o table
+   
+        Write-Host "`nUse Azure DevOps CLI (az pipelines) to list pools in the organization '$(System.CollectionUri)'..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az pipelines pool list$($PSStyle.Reset)"
+        az pipelines pool list --query "[].{Id:id, Name:name}" `
+                               -o table
+      failOnStandardError: true
+```
+
+## Assign the results of an Azure DevOps CLI call to a variable
+
+To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example gets the ID of a variable group named **Fabrikam-2023** and uses this value in a subsequent step.
+
+
+
+
+```yml
+# Install Azure DevOps extension
+trigger:
+  - main
+
+variables:
+- name: variableGroupId
+
+parameters:
+- name: serviceConnection
+  displayName: Azure Service Connection Name
+  type: string
+  default: my-service-connection
+
+steps:
+  - task: AzureCLI@2
+    condition: succeededOrFailed()
+    displayName: 'Azure CLI -> DevOps CLI'
+    inputs:
+      azureSubscription: '${{ parameters.serviceConnection }}'
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        Write-Host "Using logged-in Azure CLI session..."
+        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
+        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
+        az devops configure -l
+
+        ##vso[task.setvariable variable=variableGroupId]$(az pipelines variable-group list --group-name kubernetes --query [].id -o tsv)"
+
+  - task: AzureCLI@2
+    condition: succeededOrFailed()
+    displayName: 'Azure CLI -> DevOps CLI'
+    inputs:
+      azureSubscription: '${{ parameters.serviceConnection }}'
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        Write-Host "Using logged-in Azure CLI session..."
+        az pipelines variable-group variable list --group-id '$(variableGroupId)'
+```
+
+
+::: zone-end 
 
 For more examples of working with variables, including working with variables across jobs and stages, see [Define variables](../pipelines/process/variables.md). For examples of the query syntax used in the previous example, see [How to query Azure CLI command output using a JMESPath query](/cli/azure/query-azure-cli).
 

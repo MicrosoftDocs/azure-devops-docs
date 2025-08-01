@@ -5,34 +5,17 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 05/20/2021
+ms.date: 07/28/2025
 ---
-
- 
 
 Define iteration paths and assign them to teams when you want to use the following tools: 
 
-::: moniker range="azure-devops"
-
-- [Assign work items to sprints using the Planning pane](../sprints/assign-work-sprint.md)
-- [Query and chart work items based on Iteration Path](../queries/query-by-area-iteration-path.md)
-- [Forecast your product backlog](../sprints/forecast.md)
-- [Sprints> all tools](../sprints/scrum-overview.md) 
-- [Delivery Plans, a calendar view of team deliverables](../plans/review-team-plans.md)  
-- [Velocity chart](../../report/dashboards/team-velocity.md) and [Sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)  
-
-::: moniker-end
-
-::: moniker range="<azure-devops"
-
-- [Assign work to sprints using the Planning pane](../sprints/assign-work-sprint.md)
-- [Query and chart work items based on Iteration Path](../queries/query-by-area-iteration-path.md)
-- [Forecast your product backlog](../sprints/forecast.md)
-- [Sprints> all tools](../sprints/scrum-overview.md) 
-- [Delivery Plans](../plans/review-team-plans.md)  
-- [Velocity chart](../../report/dashboards/team-velocity.md) and [Sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)
-
-::: moniker-end
+- [Assign work items to sprints by using the Planning pane](../sprints/assign-work-sprint.md)
+- [Chart work items based on Iteration Path](../queries/query-by-area-iteration-path.md)
+- [Forecast product backlog](../sprints/forecast.md)
+- [Implement Scrum practices (all tools) for your team](../sprints/scrum-overview.md) 
+- [Use Delivery Plans and calendar views](../plans/review-team-plans.md)  
+- [Chart team velocity](../../report/dashboards/team-velocity.md) and [Chart Sprint burndown](../../report/dashboards/configure-sprint-burndown.md)  
 
 > [!TIP]    
-> If a team hasn't subscribed or selected an iteration path, that iteration path won't appear in a team view or tool.
+> If your team doesn't subscribe to or select a specific iteration path, the iteration path isn't visible in the team view or in the tool.

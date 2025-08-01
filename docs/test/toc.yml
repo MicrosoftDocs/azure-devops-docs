@@ -75,6 +75,9 @@
   href: ../project/feedback/toc.yml
 - name: Track progress and results
   items:
+  - name: Manage test runs
+    displayName: run, manual tests, test runs, test results
+    href: test-runs.md
   - name: Track test status
     displayName: track, status
     href: track-test-status.md

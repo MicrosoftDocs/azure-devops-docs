@@ -246,7 +246,7 @@ For projects that selected TFVC for version control, the README.md file needs to
 - [Learn about Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Navigate the web portal](../../project/navigation/index.md)
-- [Discover what you get with a project](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Features and services included with Azure DevOps](../../user-guide/what-is-azure-devops.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
  
 **REST APIs**
 

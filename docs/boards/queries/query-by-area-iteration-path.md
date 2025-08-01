@@ -51,7 +51,7 @@ Along with these operators, you can use the following macros when you select the
 > | `@TeamAreas`       |        Filter items based on area path(s) assigned to a specific team.                       |
 
 > [!NOTE]
-> The `@CurrentIteration +/- n` and `@TeamAreas` macros are supported for Azure DevOps Server 2019 and later versions. These macros are only supported from the web portal. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+> The `@CurrentIteration +/- n` and `@TeamAreas` macros are supported for Azure DevOps Server 2020 and later versions. These macros are only supported from the web portal. Queries that contain these macros don't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
 
 ## Area path queries 
 

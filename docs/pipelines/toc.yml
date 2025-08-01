@@ -450,9 +450,9 @@
           href: release/deployment-groups/index.md
         - name: Provision agents for deployment groups
           href: release/deployment-groups/howto-provision-deployment-group-agents.md
-        - name: Add a deployment group job to a release pipeline
+        - name: Deployment group jobs
           href: release/deployment-group-phases.md
-        - name: Deploying to Azure VMs using deployment groups in Azure Pipelines
+        - name: Deploy web apps to Azure VMs with deployment groups
           href: release/deployment-groups/deploying-azure-vms-deployment-groups.md
   - name: Artifacts
     items:

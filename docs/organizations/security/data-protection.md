@@ -356,6 +356,6 @@ Azure DevOps supports enforcing certain types of conditional access policies (fo
 - [Data locations for Azure DevOps](data-location.md)
 - [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement)
 - [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html)
-- [Features and services included with Azure DevOps](../../user-guide/services.md)
+- [Features and services included with Azure DevOps](../../user-guide/what-is-azure-devops.md)
 - [Azure Trust Center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)

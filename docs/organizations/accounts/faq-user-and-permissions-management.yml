@@ -12,7 +12,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 06/27/2025
+  ms.date: 07/28/2025
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
@@ -117,6 +117,11 @@ sections:
           A: Azure DevOps automatically checks if a user has GitHub Enterprise when the user signs in. It can take up to 24 hours for their access level to change to GitHub Enterprise. There are no charges for a user with the GitHub Enterprise access level.
 
       - question: |
+          Q: How are GitHub Enterprise users in data residency regions identified?
+        answer: |
+          A: Customers in data residency regions enable detection by installing the [Azure Boards app](https://github.com/marketplace/azure-boards) and [linking their ghe.com instance](https://devblogs.microsoft.com/devops/boards-integration-with-github-enterprise-cloud-and-data-residency-public-preview/). Once configured, users are detected automatically. 
+      
+      - question: |
           Q: What kind of access do GitHub Enterprise users get in Azure DevOps?
         answer: |
           A: Basic access, which includes all features except Test Plans. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
@@ -130,13 +135,35 @@ sections:
           Q: What happens when a GitHub Enterprise license is no longer detected?
         answer: |
           A: When a user no longer has GitHub Enterprise, they're treated like a new user.  
-          - Your organization's default access level, whether Basic or Basic + Test Plans, gets assigned automatically. 
-          - If your organization established Group Rules, the user receives the access specified for their Microsoft Entra group. Group rule reevaluation occurs every 24 hours, so they might initially have Stakeholder access before receiving group rule access. 
+          - If your organization's default access level is Basic, they get assigned Basic automatically. 
+          - If your organization established Group Rules, the user receives the access specified by their group membership. Group rule reevaluation occurs every 24 hours, so they might initially have Stakeholder access before receiving group rule access. 
           
           Otherwise, users who no longer have access through GitHub Enterprise maintain Stakeholder access until an administrator assigns them paid access.
 
           The following example shows that the license isn't detected anymore:
           ![Screenshot shows GitHub Enterprise no longer listed as user's access level in Organization settings, Users page.](media/faq/github-enterprise-no-license.png)
+      
+      - question: |
+          Q: How do I restore Basic access to users who no longer have a GitHub Enterprise license?
+        answer: |
+          A: Do the following steps to restore Basic access to users who no longer have a GitHub Enterprise license:
+          1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+          2. Select **Users**.
+          3. Select the **Access level** filter and choose **GitHub Enterprise (Invalid)**.
+              
+              ![Screenshot showing GitHub Enterprise Invalid access level checked for user type.](media/faq/access-level-filter-github-enterprise-invalid.png)
+          
+          4. Check the box for **All**.
+              
+              ![Screenshot showing checked box for All.](media/faq/all-checkbox-selected.png)
+          
+          5. Select **Manage** and **Change access level**.
+              
+              ![Screenshot showing Manage and Change access level selections.](media/faq/manage-change-access-level.png)
+          
+          6. Select **Basic** and **Save**.
+              
+              ![Screenshot showing Basic access level selected.](media/faq/basic-access-level-save.png)
       
       - question: |
           Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?

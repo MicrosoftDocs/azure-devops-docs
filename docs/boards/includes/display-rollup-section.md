@@ -18,6 +18,6 @@ Product and portfolio backlogs support rollup columns. You can add one or more r
 
 The following example shows progress bars for a portfolio backlog. 
 
-:::image type="content" source="../backlogs/media/rollup/epic-features-progress-user-stories-50-percent.png" alt-text="Screenshot example of epic, feature, and user stories progress.":::
+:::image type="content" source="../backlogs/media/rollup/epic-features-progress-user-stories-50-percent.png" alt-text="Screenshot shows the progress bars column in the backlog view.":::
 
 ::: moniker-end

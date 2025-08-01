@@ -5,10 +5,10 @@ summary: Managed DevOps Pool is a fully managed service where VMs or containers 
 
 metadata:
   title: Managed DevOps Pools documentation
-  titleSuffix: Azure DevOps 
+  titleSuffix: Azure DevOps
   description: Managed DevOps Pool is a fully managed service where VMs or containers powering the agents will live in a Microsoft Azure subscription and not in your own Azure subscription.
-  ms.topic: landing-page 
-  ms.date: 02/03/2025
+  ms.topic: landing-page
+  ms.date: 07/29/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -34,6 +34,8 @@ landingContent:
             url: quickstart-arm-template.md
           - text: Azure CLI
             url: quickstart-azure-cli.md
+          - text: Bicep
+            url: quickstart-bicep.md
   - title: Configure Managed DevOps Pools
     linkLists:
       - linkListType: concept

@@ -1,5 +1,5 @@
 ---
-title: Add tags to work items to categorize lists and boards 
+title: Add Tags to Work Items to Categorize Lists and Boards 
 titleSuffix: Azure Boards
 description: Learn how to add work item tags to categorize and filter lists & boards when working in Azure Boards.
 ms.custom: boards-queries
@@ -9,21 +9,19 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/24/2024
+ms.date: 07/31/2025
+#customer intent: As a team member with organizational responsibilities, I want to use tags to organize team activities.
 ---
 
 # Add work item tags to categorize and filter lists and boards  
  
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Tag work items to quickly filter the product backlog or a work item query by categories that you define. A tag corresponds to a one or two keyword phrase that you define and that supports your needs to filter a backlog or query, or define a query.
+Tag work items to quickly filter the product backlog or a work item query by categories that you define. A tag corresponds to a one or two keyword phrase that you define. A tag supports your needs to filter a backlog or query, or define a query.
 
-Tags are a better choice for filtering work items than using text strings as described in [Define a query/Best practices](using-queries.md).
+You can add and modify tags from the web portal or from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to modify tags in bulk.
 
-You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to modify tags in bulk.
-
-> [!NOTE]   
-> Tags are a shared resource associated with a project and not a team. If your project contains multiple teams, all teams add to and work from the same set of tags.  
+Tags are a better choice for filtering work items than using text strings as described in [Define a work item query](using-queries.md). Tags are a shared resource associated with a project and not a team. If your project contains multiple teams, all teams add to and work from the same set of tags.
 
 ## Prerequisites
 
@@ -39,25 +37,22 @@ Tags should be 400 characters or less and not contain separators such as a `,` (
 
 From the web portal, open a work item and add a tag. Choose **Add tag** and type your keyword. Or, select from the list of previously assigned tags.  
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing adding one or more tags to a work item.](media/add-tags/add-tag-vsts.png)
+:::image type="content" source="media/add-tags/add-tag-vsts.png" alt-text="Screenshot shows adding one or more tags to a work item.":::
 
 To add several tags at one time, type a comma between tags. Tags are case sensitive.  
 
-Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, choose the x on the tag,![Screenshot of deleting a tag assigned to a work item.](media/add-tags/unassign-a-tag.png).   
+Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, choose the **x** on the tag, :::image type="icon" source="media/add-tags/unassign-a-tag.png":::.   
 
 <a id="bulk-modify"></a>
 
 ## Bulk add or remove tags
 
-You can bulk update work items to add or remove tags from the web portal.
-You bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags). Or, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to bulk add or remove tags.   
+You can bulk update work items to add or remove tags from the web portal. You bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags). Or, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to bulk add or remove tags.   
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing Edit work items dialog, Bulk add to several work items.](media/add-tags/bulk-add-tags.png) 
+:::image type="content" source="media/add-tags/bulk-add-tags.png" alt-text="Screenshot shows the Edit work items dialog, with Tags value to be added."::: 
 
 > [!NOTE]   
-> Bulk modifying tags from Visual Studio or other supported clients isn't supported. 
+> Boards doesn't support modifying tags in bulk from Visual Studio or other clients.
 
 <a id="query"></a>
 
@@ -67,12 +62,11 @@ To query work items based on tags, add a clause for each tag you want to use to 
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
-You can use the **Contains** or **Does Not Contain** operators. Tags that start with the `@` character can't be used in a work item query as the query editor interprets the `@` character as a macro. For more information, see [Create managed queries](using-queries.md). 
+You can use the **Contains** or **Does Not Contain** operators. Tags that start with the `@` character can't be used in a work item query because the query editor interprets the `@` character as a macro. For more information, see [Define a work item query](using-queries.md). 
 
-For example, here we query for all work items that are tagged either ```Web``` or ```Service```. 
+For example, here's a query for all work items that are tagged as either `Web` or `Service`. 
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Query Editor to query on tags.](media/add-tags/query-tags-add-or.png) 
+:::image type="content" source="media/add-tags/query-tags-add-or.png" alt-text="Screenshot shows the Query Editor with a query on tags."::: 
 
 <a id="no-tags"></a>
 
@@ -85,13 +79,11 @@ For example, here we query for all work items that are tagged either ```Web``` o
 
 Choose **Column Options** to add the **Tags** field to the product backlog or a work item query. If the option doesn't appear, choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  to select it from the menu of options.    
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Column options dialog, Add Tags to the selected columns to display.](media/add-tags/column-options-add-tags-field.png)
+:::image type="content" source="media/add-tags/column-options-add-tags-field.png" alt-text="Screenshot shows the Column options dialog, with the Tags option.":::
 
 All tags added to the listed work items appear.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of product backlog, View with Tags column added.](media/add-tags/backlog-with-tags.png) 
+:::image type="content" source="media/add-tags/backlog-with-tags.png" alt-text="Screenshot shows the Product backlog where you can see the Tags column."::: 
 
 <a id="filter"></a>
 
@@ -101,36 +93,34 @@ From the web portal, you can filter backlogs, boards, and query results using ta
 
 Begin by choosing **Filter** :::image type="icon" source="../media/icons/filter-icon.png" border="false":::. 
 
-Check the boxes of those tags that you want to filter on. Keep the **OR** selection to run a logical OR for all the tags you selected. Or, choose the **AND** option to run a logical AND on all the selected tags. 
+Select the tags that you want to filter on. Keep the **OR** selection to run a logical OR for all the tags you selected. Or, choose the **AND** option to run a logical AND on all the selected tags. 
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of view with tags column added.](media/add-tags/filter-backlog-tags.png) 
+:::image type="content" source="media/add-tags/filter-backlog-tags.png" alt-text="Screenshot shows the Product backlog filtered by tags."::: 
 
 ## Delete, remove, or manage tags
 
 You can't delete tags using the Azure DevOps Web UI. 
 
-If you need to remove a tag, you can create a script or application capable of a delete using the [Azure DevOps REST API](/rest/api/azure/devops/wit/tags?view=azure-devops-rest-7.2&preserve-view=true) or the [.NET client libraries](/azure/devops/integrate/concepts/dotnet-client-libraries?view=azure-devops&preserve-view=true). For more examples, see [Azure-DevOps-Admin-CLI](https://github.com/danhellem/azure-devops-admin-cli).
+If you need to remove a tag, create a script or application capable of a delete using the [Azure DevOps REST API](/rest/api/azure/devops/wit/tags?view=azure-devops-rest-7.2&preserve-view=true) or the [.NET client libraries](/azure/devops/integrate/concepts/dotnet-client-libraries?view=azure-devops&preserve-view=true). For more examples, see [Azure-DevOps-Admin-CLI](https://github.com/danhellem/azure-devops-admin-cli).
 
 Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2), which adds a **Tags** page under **Boards** or **Work** to manage tags, including deletes. 
 
 ## Color-code tags on boards
 
-Highlight tags on board cards by color-coding them. These colors only appear on the board that you configure. They don't appear on backlogs or Taskboards. For more information, see [Customize cards, color-code tags](../boards/customize-cards.md). 
+Highlight tags on board cards by color-coding them. These colors only appear on the board that you configure. They don't appear on backlogs or Taskboards. For more information, see [Assign tag colors](../boards/customize-cards.md#assign-tag-colors). 
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of sequence, Boards, Settings, Tag colors dialog.](media/add-tags/color-code-tags.png)
+:::image type="content" source="media/add-tags/color-code-tags.png" alt-text="Screenshot shows the Tag colors page for setting colors for tags.":::
 
 <a id="group-by-tags"></a> 
 ::: moniker range="azure-devops"
 
 ## Chart work items and group by tags
 
-You can't group a query-based chart by tags, but, you can group a **Chart for Work Items** widget by tags that you add to a dashboard.    This feature is in public preview. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
+You can't group a query-based chart by tags, but, you can group a **Chart for Work Items** widget by tags that you add to a dashboard. This feature is in public preview. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
 
-To group a **Chart for Work Items** widget by tags, complete the same steps provided in [Track progress with status and trend query-based charts, Add a chart widget to a dashboard](../../report/dashboards/charts.md). Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
+To group a **Chart for Work Items** widget by tags, complete the same steps provided in [Add a chart to a dashboard](../../report/dashboards/charts.md#add-a-chart-to-a-dashboard). Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
 
-:::image type="content" source="../../report/dashboards/media/charts/configure-chart-widget-tags.png" alt-text="Screenshot of Chart by Work Items, Configure, Group by Tags.":::
+:::image type="content" source="../../report/dashboards/media/charts/configure-chart-widget-tags.png" alt-text="Screenshot shows Chart by Work Items configured to group by tags.":::
 
 ::: moniker-end
 
@@ -152,14 +142,14 @@ Limit queries to fewer than 25 tags. More than that amount and the query likely 
 
 ### Add tags to the default column view on the product backlog 
 
-To add the **Tags** field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```. For more information, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+To add the **Tags** field as a column field for the product backlog, modify the ProcessConfiguration file to include `System.Tags` For more information, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end
 
 ## Related content
 
-- [Use the query editor to list and manage queries](using-queries.md) 
-- [Show tags on cards](../../boards/boards/customize-cards.md)
+- [Define a work item query](using-queries.md) 
+- [Customize cards on a board](../../boards/boards/customize-cards.md)
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
 - [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
