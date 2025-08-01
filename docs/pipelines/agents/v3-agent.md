@@ -38,7 +38,6 @@ The following operating systems are supported by the 3.x agent.
       * No longer requires separate package
     * SUSE Enterprise Linux 12 SP2 or later
     * Ubuntu 22.04, 20.04, 18.04, 16.04
-    * Azure Linux 2.0
     * Oracle Linux 7 and higher
   * ARM64
     * Debian 10+
