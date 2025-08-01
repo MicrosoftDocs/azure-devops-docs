@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
-ms.date: 07/03/2025
+ms.date: 07/29/2025
 ---
 
 # Configure scaling
@@ -24,7 +24,7 @@ The default setting for a Managed DevOps pool is stateless (**Fresh agent every 
 
 When a stateless agent is configured, a new agent is procured for each job, and is discarded after the job completes.
 
-For the lifecycle of stateless agents and an explanation on how they are used in Azure DevOps pipelines (including potential delays in allocation), see the following [Lifecycle of agents and potential delays in allocation](#lifecycle-of-agents-and-potential-delays-in-allocation) section.
+For the lifecycle of stateless agents and an explanation on how they are used in Azure Pipelines (including potential delays in allocation), see the following [Lifecycle of agents and potential delays in allocation](#lifecycle-of-agents-and-potential-delays-in-allocation) section.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -43,7 +43,7 @@ Agents are configured using the `agentProfile` property in the Managed DevOps Po
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -76,6 +76,23 @@ The following example shows the contents of the **agent-profile.json** file.
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+Agents are configured using the `agentProfile` property in the Managed DevOps Pools resource. In the following example, a **Stateless** agent is specified.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    agentProfile: {
+      kind: 'Stateless'
+    }
+  }
+}
+```
+
 * * *
 
 When **Agent state** is set to **Fresh agent every time**, a new agent is procured for each job, and is discarded after the job completes.
@@ -97,7 +114,7 @@ When **Agent state** is set to **Fresh agent every time**, a new agent is procur
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -128,11 +145,28 @@ The following example shows the contents of the **agent-profile.json** file.
 
 ```json
 {
-    "Stateful": 
+    "Stateful":
     {
         "maxAgentLifetime": "7.00:00:00",
         "gracePeriodTimeSpan": "00:30:00"
     }
+}
+```
+
+#### [Bicep](#tab/bicep/)
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    agentProfile: {
+      kind: 'Stateful'
+      maxAgentLifetime: '7.00:00:00'
+      gracePeriodTimeSpan:'00:30:00'
+    }
+  }
 }
 ```
 
@@ -162,7 +196,7 @@ Grace period enables the most cost effective way of running stateful pools for p
 
 ## Standby agent mode
 
-When you create a pool, **Standby agent mode** is off by default, and there are no standby agents to immediately assign to your pipelines, which might have to wait a few moments, up to 15 minutes, for an agent to be provisioned on demand. For better performance, enable **Standby agent mode** and configure a standby agent schedule that provides capacity for your workload. 
+When you create a pool, **Standby agent mode** is off by default, and there are no standby agents to immediately assign to your pipelines, which might have to wait a few moments, up to 15 minutes, for an agent to be provisioned on demand. For better performance, enable **Standby agent mode** and configure a standby agent schedule that provides capacity for your workload.
 
 When a standby agent schedule is configured, Managed DevOps Pools periodically compares the count of provisioned agents with the standby agent count specified by the current provisioning scheme, and starts new agents as required to maintain the standby agent count. You can view the current status and count of the agents in your pool using the [Agents](./view-agents.md) pane.
 
@@ -191,7 +225,7 @@ Standby agents are configured using the `resourcePredictionsProfile` section of 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -232,6 +266,27 @@ The following example shows the contents of the **agent-profile.json** file.
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+Standby agents are configured using the `resourcePredictionsProfile` section of the `agentProfile` property. Set `"kind": "Manual"` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. Set `kind: 'Automatic'` to configure automatic standby agents. Omit the `ResourcePredictionsProfile` section to disable standby agents. See the following sections for details on how to configure each scaling type.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    agentProfile: {
+      kind: 'Stateless'
+      resourcePredictionsProfile: {
+        kind: 'Manual'
+      }
+      resourcePredictions: {...}
+    }
+  }
+}
+```
+
 * * *
 
 ## Manual
@@ -267,7 +322,7 @@ Manual standby agent provisioning is specified in the `resourcePredictionsProfil
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -380,8 +435,7 @@ Standby agent counts do not automatically reset back to zero at the end of a day
 To make no adjustment to the standby agent count specified at the conclusion of the previous day (or week if you are configuring the first period of the week), specify a `daysData` item with zero entries.
 
 ```json
-{
-}
+{}
 ```
 
 To schedule a single standby agent to start at `09:00:00` and stop at `17:00:00` (using the time zone specified by the `resourcePredictions` property), specify the following configuration.
@@ -407,7 +461,7 @@ To schedule a standby agent to be available starting at `09:00:00` on the specif
 
 ```json
 {
-    "09:00:00": `1`
+    "09:00:00": 1
 },
 {
     "17:00:00": 0
@@ -534,8 +588,7 @@ Standby agent counts do not automatically reset back to zero at the end of a day
 To make no adjustment to the standby agent count specified at the conclusion of the previous day (or week if you are configuring the first period of the week), specify a `daysData` item with zero entries.
 
 ```json
-{
-}
+{}
 ```
 
 To schedule a single standby agent to start at `09:00:00` and stop at `17:00:00` (using the time zone specified by the `resourcePredictions` property), specify the following configuration.
@@ -561,10 +614,160 @@ To schedule a standby agent to be available starting at `09:00:00` on the specif
 
 ```json
 {
-    "09:00:00": `1`
+    "09:00:00": 1
 },
 {
     "17:00:00": 0
+}
+```
+
+#### [Bicep](#tab/bicep/)
+
+Manual standby agent provisioning is specified in the `resourcePredictionsProfile` section of `agentProfile`, and the details are configured in the `resourcePredictions` section.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    agentProfile: {
+      kind: 'Stateless'
+      resourcePredictionsProfile: {
+        kind: 'Manual'
+      }
+      resourcePredictions: {
+        timeZone: 'Eastern Standard Time'
+        daysData: [
+          {}
+          {
+            '00:00:00': 1
+            '04:00:00': 0
+          }
+          {}
+          {}
+          {}
+          {}
+          {}
+        ]
+      }
+    }
+  }
+}
+```
+
+Specify the desired time zone for your scheme using the `timeZone` property. The default is `UTC`. To retrieve a list of time zone names for this property, see [TimeZoneInfo.GetSystemTimeZones Method](/dotnet/api/system.timezoneinfo.getsystemtimezones).
+
+The schedule for the standby agents is defined by the `daysData` list. The `daysData` list can have either one item or seven items.
+
+A `daysData` list with seven items maps to the days of the week, starting with Sunday. Each of these seven items can have zero or more `'time': count` entries, specifying a time in 24 hour format, and a standby agent count. The specified count of standby agents is maintained until the next `'time': count` entry, which can be on the same day, or on a following day.
+
+A `daysData` list with a single item defines an [All Week scheme](#all-week-scheme), where the single `'time': count` entry corresponds to the standby agent count for the entire week.
+
+The following example is a manual standby agent scheme, using `Eastern Standard Time`, with a single agent provisioned Monday through Friday, from 9:00 AM (standby agent count `1`) through 5:00 PM (standby agent count `0`).
+
+```bicep
+{
+    kind: 'Stateless'
+    resourcePredictions: {
+        timeZone: 'Eastern Standard Time'
+        daysData: [
+          {}
+          {
+            '09:00:00': 1
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 1
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 1
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 1
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 1
+            '17:00:00': 0
+          }
+          {}
+        ]
+    }
+    resourcePredictionsProfile: {
+        kind: 'Manual'
+    }
+}
+```
+
+A single `daysData` item contains a dictionary of times and standby agent counts. Each `'time' : count` entry specifies the number of standby agents to schedule starting at the specified time, in 24 hour format. Consecutive `'time' : count` entries specify a sequence of scheduled agent counts for that day.
+
+```bicep
+daysData: [
+    {} // Schedule of standby agent count adjustments for Sunday
+    {   // Schedule of standby agent count adjustments for Monday
+        '09:00:00': 1 // Adjust standby agent count to 1
+        '17:00:00': 0  // Adjust standby agent count to 0
+    }
+    {  // Schedule of standby agent count adjustments for Tuesday
+        '09:00:00': 1
+        '17:00:00': 0
+    }
+    {  // Schedule of standby agent count adjustments for Wednesday
+        '09:00:00': 1
+        '17:00:00': 0
+    }
+    {  // Schedule of standby agent count adjustments for Thursday
+        '09:00:00': 1
+        '17:00:00': 0
+    }
+    {  // Schedule of standby agent count adjustments for Friday
+        '09:00:00': 1
+        '17:00:00': 0
+    }
+    {} // Schedule of standby agent count adjustments for Saturday
+]
+```
+
+Standby agent counts do not automatically reset back to zero at the end of a day or at the end of the week, and specifying an empty `daysData` item does not disable standby agents for that day. An empty `daysData` item means that there are no changes to the standby agent count schedule for that day. To set the standby agent to zero starting at a specific time period, you must explicitly provide a `"time" : count` entry with a `count` of `0`.
+
+#### Examples
+
+To make no adjustment to the standby agent count specified at the conclusion of the previous day (or week if you are configuring the first period of the week), specify a `daysData` item with zero entries.
+
+```bicep
+{}
+```
+
+To schedule a single standby agent to start at `09:00:00` and stop at `17:00:00` (using the time zone specified by the `resourcePredictions` property), specify the following configuration.
+
+```bicep
+{
+    '09:00:00': 1
+    '17:00:00': 0
+}
+```
+
+To schedule a single standby agent starting from midnight through `09:00:00`, followed by 10 standby agents until `17:00:00`, specify the following configuration.
+
+```bicep
+{
+    '00:00:00': 1
+    '09:00:00': 10
+    '17:00:00': 0
+}
+```
+
+To schedule a standby agent to be available starting at `09:00:00` on the specified day, and stopping at `17:00:00` the following day, use two consecutive `daysData` items.
+
+```bicep
+{
+    '09:00:00': 1
+}
+{
+    '17:00:00': 0
 }
 ```
 
@@ -602,7 +805,7 @@ The following example configures a manual scheme with 1 agent provisioned on Mon
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -659,11 +862,45 @@ The following example configures a manual scheme with 1 agent provisioned on Mon
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    agentProfile: {
+      kind: 'Stateless'
+      resourcePredictionsProfile: {
+        kind: 'Manual'
+      }
+      resourcePredictions: {
+        timeZone: 'Eastern Standard Time'
+        daysData: [
+          {}
+          {
+            '00:00:00': 1
+            '04:00:00': 0
+          }
+          {}
+          {}
+          {}
+          {}
+          {}
+        ]
+      }
+    }
+  }
+}
+```
+
+
 * * *
 
 ### Weekday scheme
 
-If you choose the weekday scheme, you can specify a start time and end time in which the specified number of standby agents will be on standby each weekday. 
+If you choose the weekday scheme, you can specify a start time and end time in which the specified number of standby agents will be on standby each weekday.
 
 | Property | Description |
 |----------|-------------|
@@ -687,7 +924,7 @@ The following example configures four agents to be used during working hours wit
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -768,6 +1005,51 @@ The following example configures four agents to be used during working hours wit
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    agentProfile: {
+      kind: 'Stateless'
+      resourcePredictionsProfile: {
+        kind: 'Manual'
+      }
+      resourcePredictions: {
+        timeZone: 'Eastern Standard Time'
+        daysData: [
+          {}
+          {
+            '09:00:00': 4
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 4
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 4
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 4
+            '17:00:00': 0
+          }
+          {
+            '09:00:00': 4
+            '17:00:00': 0
+          }
+          {}
+        ]
+      }
+    }
+  }
+}
+```
+
 * * *
 
 ### All Week Scheme
@@ -788,7 +1070,7 @@ If you choose the all week scheme, you can specify a number of agents you want a
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -831,6 +1113,32 @@ If you choose the all week scheme, you can specify a number of agents you want a
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    agentProfile: {
+      kind: 'Stateless'
+      resourcePredictionsProfile: {
+        kind: 'Manual'
+      }
+      resourcePredictions: {
+        timeZone: 'Eastern Standard Time'
+        daysData: [
+          {
+            '00:00:00': 1
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
 * * *
 
 ## Automatic
@@ -857,7 +1165,7 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
@@ -887,6 +1195,25 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    agentProfile: {
+      kind: 'Stateless'
+      resourcePredictionsProfile: {
+        kind: 'Automatic'
+        predictionPreference: 'Balanced'
+      }
+    }
+  }
+}
+```
+
 * * *
 
 ## Lifecycle of agents and potential delays in allocation
@@ -895,7 +1222,7 @@ Standby agents using a [Stateless](#stateless-pools) scheme require the Azure Pi
 
 If you are seeing delays in ready agents picking up jobs from Azure DevOps, the following are important to consider:
 
-* Do you have ready agents? - The most common issue is a misunderstanding of when agents should be preprovisioned. When the number of jobs queued is greater than the standby agent count on a pool, or jobs are queued outside of the pre-provisioning schedule, when the standby agent count is set to be empty, then machines must be spun up from scratch.
+* Do you have ready agents? - The most common issue is a misunderstanding of when agents should be pre-provisioned. When the number of jobs queued is greater than the standby agent count on a pool, or jobs are queued outside of the pre-provisioning schedule, when the standby agent count is set to be empty, then machines must be spun up from scratch.
 * Are you configuring standby agents with multiple images properly? - If you are not specifying which image to use in your pipeline using the [ImageOverride](./demands.md#imageoverride) demand, jobs will be targeting the first image. This means, depending on your scaling settings, you might not have as many agents available as you'd expect as some are allocated to other images.
 * Are you using the [ImageVersionOverride](./demands.md#imageversionoverride) in your pipelines? - When you use `ImageVersionOverride` to specify a different image version than what's configured in your [pool settings](./configure-images.md), each agent is started on demand using the specified image version. Standby agents are provisioned using the image versions specified in your [pool's configuration](./configure-images.md), so if you use `ImageVersionOverride`, any standby agents won't match that version and a fresh agent is started.
 * Are Proxy/VNet/Firewall settings slowing down your pool? - Potential slowness from any network setting will result in agents taking longer to start the agent and connect it to Azure DevOps.
