@@ -32,7 +32,7 @@ Welcome to what's new in the Azure DevOps docs from July 1, 2025 through July 31
 
 ### Updated articles
 
-- [1. Assign backlog items to a sprint in Azure Boards](/azure/devops/boards/sprints/assign-work-sprint)
+- [Assign backlog items to a sprint in Azure Boards](/azure/devops/boards/sprints/assign-work-sprint)
 - [Agile process work item types](/azure/devops/boards/work-items/guidance/agile-process)
 - [Reference guide for link types](/azure/devops/boards/queries/link-type-reference)
 - [Add work item tags to categorize and filter lists and boards](/azure/devops/boards/queries/add-tags-to-work-items)
