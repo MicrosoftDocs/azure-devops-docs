@@ -69,7 +69,7 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 #### Linux images updates
 
 * [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
-* The `ubuntu-latest` label is in the process of transitioning from `ubuntu-22.04` to `ubuntu-24.04`. Until the transition is complete, your pipelines using `ubuntu-latest` might still use `ubuntu-22.04`.
+* The `ubuntu-latest` label has transitioned from `ubuntu-22.04` to `ubuntu-24.04`.
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
 #### [macOS images](#tab/macos-images/)
