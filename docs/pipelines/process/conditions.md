@@ -3,7 +3,7 @@ title: Pipeline conditions
 description: Learn about conditions that Azure Pipelines stages, jobs, or steps can run under, and ways to specify those conditions.
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 07/31/2025
+ms.date: 08/01/2025
 monikerRange: '<= azure-devops'
 #customer intent: As an Azure Pipelines user, I want to understand the conditions that pipeline stages, jobs, and steps can run under, so I can configure builds to run under various conditions.
 ---
@@ -34,7 +34,9 @@ You can override or customize these default behaviors by setting a stage, job, o
 
 The following YAML example demonstrates the `always()` and `failed()` conditions. The first script task in job 1 has an `always` condition, so it runs even if dependencies fail or the build is canceled. In the second script task, `exit job1` forces the `job1` job to fail.
 
-Stages run sequentially, but jobs can run in parallel. To set a condition that depends on the outcome of another job, use `dependsOn`. In the following example, `job2` depends on `job1` and runs because `job1` fails.
+Pipeline stages run sequentially by default, but jobs can run in parallel. You can use the `dependsOn` property to explicitly define dependencies between stages or jobs.
+
+To set the conditions for a job that depends on the outcome of another job, use `dependsOn` to define the dependency. In the following example, `job2` depends on `job1` and runs because `job1` fails.
 
 ```yaml
 jobs:
@@ -49,6 +51,9 @@ jobs:
   dependsOn: job1
   condition: failed() # this job runs only if job1 fails
 ```
+
+> [!NOTE]
+> You can also use the Azure Pipelines UI to manually run dependent stages when the parent stage fails. For more information, see [Run children stages when parent stage fails](../../release-notes/2024/pipelines/sprint-246-update.md#run-children-stages-when-parent-stage-fails).
 
 ## Custom conditions
 
@@ -299,7 +304,7 @@ steps:
 
 You can use parameters in conditions. Parameter expansion happens before the pipeline runs and replaces values surrounded by `${{ }}` with the literal parameter values. Because parameter expansion occurs before condition evaluation, you can declare a parameter in a pipeline and embed the parameter inside any condition in that pipeline.
 
-The `condition` in the following example combines two functions: `succeeded()` and `${{ eq(parameters.doThing, true) }}`. The `succeeded()` function checks if the previous step succeeded. This function returns `true` if there is no previous step.
+The `condition` in the following example combines two functions: `succeeded()` and `${{ eq(parameters.doThing, true) }}`. The `succeeded()` function checks if the previous step succeeded. This function also returns `true` if there is no previous step.
 
 The `${{ eq(parameters.doThing, true) }}` function checks whether the `doThing` parameter is equal to `true`. The script step in the following example runs because there was no previous step and `parameters.doThing` is `true` by default.
 
