@@ -7,7 +7,7 @@ ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 07/31/2025
+ms.date: 08/01/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -82,9 +82,9 @@ The following features apply to all searches, including work items, code, and pa
 
 | Search feature | Usage | Example |
 |---|---|---|
-|**Keyword**|Search based on one or more keywords|`validate` finds instances that contain the word *validate*|
-|**Exact match**|Search based on an exact match, enclosed in double-quotes|`"Client not found"` finds instances that contain the exact phrase match *Client not found*. Search might not handle special characters as expected. Try escaping special characters or simplifying the search phrase|
-|**Wildcard**|- Add wildcard characters, `*` and `?`, to keywords to extend the search criteria.<br>- Add `*` at the end of a keyword to find items that start with the keyword.<br>- Add `?` in the middle to represent any alphanumeric character.<br>- Use wildcard characters anywhere in your search string except as a prefix. You can use prefix wildcards with the other search filter functions.<br>- You can use more than one wildcard to match more than one character.|- `alpha?version` finds instances of alpha1version and alphaXversion.<br>- `Browser*` finds instances of BrowserEdge, BrowserIE, and BrowserFirefox.<br>- `CodeSenseHttp*` finds files containing words that start with *CodeSenseHttp*, such as CodeSenseHttpClient and CodeSenseHttpClientTest.| DevOps, across all your code, wiki, packages, and work items.|
+|**Keyword**|Search based on one or more keywords|`validate` finds instances that contain the word *validate*.|
+|**Exact match**|Search based on an exact match, enclosed in double-quotes|`"Client not found"` finds instances that contain the exact phrase match *Client not found*. Search might not handle special characters as expected. Try escaping special characters or simplifying the search phrase.|
+|**Wildcard**|- Add wildcard characters, `*` and `?`, to keywords to extend the search criteria.<br>- Add `*` at the end of a keyword to find items that start with the keyword.<br>- Add `?` in the middle to represent any alphanumeric character.<br>- Use wildcard characters anywhere in your search string except as a prefix. You can use prefix wildcards with the other search filter functions.<br>- You can use more than one wildcard to match more than one character.|- `alpha?version` finds instances of alpha1version and alphaXversion.<br>- `Browser*` finds instances of BrowserEdge, BrowserIE, and BrowserFirefox.<br>- `CodeSenseHttp*` finds files containing words that start with *CodeSenseHttp*, such as CodeSenseHttpClient and CodeSenseHttpClientTest.|
 |**Boolean operators**|- Find two or more keywords using Boolean operators: `AND`, `OR`, and `NOT` (must be uppercase).<br>- Add parenthesis to clauses to support logical groupings.<br>- Because `AND` is the default operator, an entry of two keywords with no operator is the same as an `AND` search.<br>- `Validate AND revisit` finds files that contain both the words *validate* and *revisit*.|- `Validate OR revisit` finds files that contain either of the words *validate* or *revisit*.<br>- `Validate NOT revisit` finds files that contain the word *validate* but not the word, *revisit*.<br>- `(Validate NOT revisit) OR "release delayed"` finds files that contain the word *validate* but not the word, *revisit, or files that contain the phrase *release delayed*.|
 |**Special characters**|- Escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes.<br>- Include special characters in a search string, or search specifically for special characters, according to the following rules:<br>- CodeA23?R finds files containing words that start with CodeA23<br>- Have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.<br>- Search for any special character that isn't a part of the query language.|- `"flatten()"` finds the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes.<br>- `"\"react-redux\""` finds the literal string "react-redux."|
 
