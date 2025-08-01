@@ -10,31 +10,28 @@ ms.date: 07/20/2020
 
 ## Apply the customized process to your project 
 
-After you've verified your customizations, you can now apply the process to your existing project. 
+After you verify your customizations, you can now apply the process to your existing project. 
 
 > [!TIP]    
-> As you customize a WIT, all projects that reference the inherited process that you're customizing automatically updates to reflect the custom WITs you've added. To view your customizations, refresh your web browser.
+> As you customize a WIT, all projects that reference the inherited process automatically update to reflect the custom WITs you added. To view your customizations, refresh your web browser.
 
 ::: moniker range=">= azure-devops-2020"
 
-1. For the process currently used by the project, choose the number of projects. 
+1. For the process currently used by the project, choose the number of the project.
 
-	Here we open the menu for the Agile default process. 
+	This is the Agile default process. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Agile process, Choose number of team projects](/azure/devops/organizations/settings/work/media/process/choose-process-team-projects.png) 
+	:::image type="content" source="/azure/devops/organizations/settings/work/media/process/choose-process-team-projects.png" alt-text="Screenshot shows the number for the team project, as a link."::: 
 
 1. Open the &hellip; context menu for the project you want to change,  and choose the **Change process** option. 
 
-	Here we open the menu for the MyFirstProject1. 
+	This is MyFirstProject1. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Project, Change process](/azure/devops/organizations/settings/work/media/process/choose-change-process.png) 
+	:::image type="content" source="/azure/devops/organizations/settings/work/media/process/choose-change-process.png" alt-text="Screenshot shows the project created with the Change process option."::: 
 
-1. From the Change the project process dialog, choose the process from the menu of options. And, then choose **Save**.
+1. From the **Change the project process** dialog, choose the process from the menu of options. And, then choose **Save**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Change process dialog](/azure/devops/organizations/settings/work/media/process/change-project-process-inherited-agile.png) 
+	:::image type="content" source="/azure/devops/organizations/settings/work/media/process/change-project-process-inherited-agile.png" alt-text="Screenshot shows the Change the project process dialog with Agile Inherited selected."::: 
 
 ::: moniker-end
 
