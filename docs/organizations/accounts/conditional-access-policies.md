@@ -33,7 +33,7 @@ Based on these conditions, you can grant access, require more checks like multif
 1. Go to the [Azure portal](https://portal.azure.com) and find the **"Microsoft Entra Conditional Access"** service.
 2. Select **"Policies"** on the right sidebar.
 3. Select the **"+ New policy"** button. Provide the policy a name. 
-5. For the **"Target resources"** assignments, toggle **"Select resources"** and add the _"Microsoft Visual Studio Team Services"_ resource (resource id: 499b84ac-1321-427f-aa17-267ca6975798) to the list of target resources.
+5. For the **"Target resources"** assignments, toggle **"Select resources"** and add the _"Azure DevOps"_ or _"Microsoft Visual Studio Team Services"_ resource (resource id: 499b84ac-1321-427f-aa17-267ca6975798) to the list of target resources.
 6. Configure other settings as desired.
 7. Select **Save** to apply this new policy.
 
@@ -62,7 +62,7 @@ If users access the Microsoft Entra sign-in page from a different IP address tha
 ### Azure Resource Manager audience
 
 > [!NOTE]
-> These changes will go into effect starting July 28, 2025. Learn more in [our blog post](https://devblogs.microsoft.com/devops/removing-azure-resource-manager-reliance-on-azure-devops-sign-ins/).
+> These changes will go into effect starting Sep 2, 2025. Learn more in [our blog post](https://devblogs.microsoft.com/devops/removing-azure-resource-manager-reliance-on-azure-devops-sign-ins/).
 
 Azure DevOps doesn't depend on the Azure Resource Manager (ARM) resource (`https://management.azure.com`) when you sign in or refresh Microsoft Entra access tokens. Previously, Azure DevOps required the ARM audience during sign-in and token refresh flows. This requirement meant that administrators had to allow all Azure DevOps users to bypass ARM Conditional Access policies to ensure access. 
 
