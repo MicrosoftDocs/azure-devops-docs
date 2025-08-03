@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 02/20/2025
+ms.date: 08/03/2025
 zone_pivot_groups: configure-ghazdo-bundled-individual-products
 ---
 
