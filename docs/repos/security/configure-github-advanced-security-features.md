@@ -153,7 +153,7 @@ As mentioned, secret scanning repository scanning is automatically kicked off up
 To gain access to dependency scanning features, you need the **Code Security** product enabled for your repository.
 :::zone-end
 
-Dependency scanning is a pipeline-based scanning tool. Results are aggregated per repository. We recommend that you add the dependency scanning task to all the pipelines that you want scanned. 
+Dependency scanning is a pipeline-based scanning tool. Results are aggregated per repository. For scanning your default branch, you can utilize the "Scan for vulnerable dependencies" setting from the repository settings page. This will automatically include the dependency scanning task into any pipeline targeting your default branch, or any pull request build targeting your default branch.
 
 >[!TIP] 
 > For the most accurate scanning results, add the dependency scanning task after the build steps or package restore step in a pipeline that builds the code you wish to scan.
@@ -170,8 +170,7 @@ Add the `Advanced Security Dependency Scanning` task to your pipeline.
 
 :::image type="content" source="media/dependency-scanning-config-classic.png" lightbox="media/dependency-scanning-config-classic.png" alt-text="Screenshot of dependency scanning pipeline setup for classic pipelines.":::
 
-
-To generate alerts, run your first scan with a pipeline with the dependency scanning task included.
+For more advanced set up or if you want to scan all branches, we recommend that you add the dependency scanning task to all the pipelines that you want scanned. See [Dependency scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-dependency-scanning-troubleshoot.md#manual-dependency-scanning-task-set-up) for more details.
 
 --- 
 
