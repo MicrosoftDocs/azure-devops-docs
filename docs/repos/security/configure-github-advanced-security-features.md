@@ -153,24 +153,15 @@ As mentioned, secret scanning repository scanning is automatically kicked off up
 To gain access to dependency scanning features, you need the **Code Security** product enabled for your repository.
 :::zone-end
 
-Dependency scanning is a pipeline-based scanning tool. Results are aggregated per repository. For scanning your default branch, you can utilize the "Scan for vulnerable dependencies" setting from the repository settings page. This will automatically include the dependency scanning task into any pipeline targeting your default branch, or any pull request build targeting your default branch.
+Dependency scanning is a pipeline-based scanning tool. Results are aggregated per repository. For scanning your default branch, you can utilize the "Scan for vulnerable dependencies" setting from the repository settings page. This will automatically include the dependency scanning task into any pipeline targeting your default branch, or any pull request build targeting your default branch. 
 
->[!TIP] 
-> For the most accurate scanning results, add the dependency scanning task after the build steps or package restore step in a pipeline that builds the code you wish to scan.
+:::zone pivot="standalone-ghazdo"
+:::image type="content" source="media/ghazdo-dependency-one-click-code-security.png" lightbox="media/ghazdo-dependency-one-click-enablement.png" alt-text="Screenshot of dependency scanning one-click setup."::: 
+:::zone-end
 
-#### [YAML](#tab/yaml)
-
-Add the task Advanced Security Dependency Scanning task ([AdvancedSecurity-Dependency-Scanning@1](/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1)) directly to your YAML pipeline file or select the **Advanced Security Dependency Scanning** task from the [task assistant](../../pipelines/get-started/yaml-pipeline-editor.md#use-task-assistant).
-
-:::image type="content" source="media/dependency-scanning-config-yaml.png" lightbox="media/dependency-scanning-config-yaml.png" alt-text="Screenshot of dependency scanning pipeline setup for YAML.":::
-
-#### [Classic](#tab/classic)
-
-Add the `Advanced Security Dependency Scanning` task to your pipeline. 
-
-:::image type="content" source="media/dependency-scanning-config-classic.png" lightbox="media/dependency-scanning-config-classic.png" alt-text="Screenshot of dependency scanning pipeline setup for classic pipelines.":::
-
-For more advanced set up or if you want to scan all branches, we recommend that you add the dependency scanning task to all the pipelines that you want scanned. See [Dependency scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-dependency-scanning-troubleshoot.md#manual-dependency-scanning-task-set-up) for more details.
+:::zone pivot="bundled-ghazdo"
+:::image type="content" source="media/ghazdo-dependency-one-click-enablement.png" lightbox="media/ghazdo-dependency-one-click-enablement.png" alt-text="Screenshot of dependency scanning one-click setup."::: 
+:::zone-end
 
 --- 
 
