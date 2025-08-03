@@ -20,7 +20,7 @@ Learn how to troubleshoot dependency scanning issues in GitHub Advanced Security
 
 [!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)] 
 
-## Manually adding the dependency scanning task to your pipelines 
+## Manual dependency scanning task set up
 
 >[!TIP] 
 > For the most accurate scanning results, add the dependency scanning task after the build steps or package restore step in a pipeline that builds the code you wish to scan.
