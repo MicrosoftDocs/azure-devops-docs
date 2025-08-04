@@ -237,11 +237,10 @@ steps:
 ```
 
 > [!TIP]
-> CodeQL analysis for Kotlin/Swift is currently in beta. During the beta, analysis of these languages is less comprehensive than CodeQL analysis of others.
 > - Use `java` to analyze code written in Java, Kotlin or both.
 > - Use `javascript` to analyze code written in JavaScript, TypeScript, or both. 
 
-If the language specified is `cpp, java, csharp` or `swift`, custom build steps are required.
+If the language specified is `swift`, custom build steps are required.
 
 #### [Classic](#tab/classic)
 
