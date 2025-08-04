@@ -11,12 +11,15 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article discusses resources for YAML pipelines. A resource is anything a pipeline uses that exists outside that pipeline. Resources in YAML pipelines can be other pipelines, builds, containers, packages, repositories, or webhooks. After you define a resource, you can consume it anywhere in your pipeline. For more information and examples, see [Resource definitions](#resource-definitions).
+This article discusses resources for YAML pipelines. A resource is anything a pipeline uses that exists outside that pipeline. Resources in YAML pipelines can be other pipelines, builds, containers, packages, repositories, or webhooks.
+
+After you define a resource, you can consume it anywhere in your pipeline. For more information and examples, see [Resource definitions](#resource-definitions).
 
 You can use resource status to automatically [trigger](#triggers) pipelines by setting the `trigger` property in the resource definition. When a resource triggers a pipeline run, the pipeline `resources.triggeringAlias` and `resources.triggeringCategory` variables are set to the resource name and category. These variables are empty unless the `Build.Reason` variable is set to `ResourceTrigger`.
 
 Resources allow full [traceability](#traceability) for the services a pipeline uses, including version, artifacts, associated commits, and work items. If you subscribe to trigger events on your resources, you can fully automate your DevOps workflows.
 
+<a name="resource-authorization-in-yaml-pipelines"></a>
 <a name="authorize-a-yaml-pipeline"></a>
 ## Resource authorization
 
@@ -24,7 +27,9 @@ Resources must be authorized to be used in YAML pipelines. Resource owners contr
 
 - You can use the resource's administration settings to authorize **all pipelines** to access the resource. For example, you can manage secure files and variable groups in the **Library** page under **Pipelines**, and agent pools and service connections in **Project settings**. This authorization is convenient for resources you don't need to restrict, such as test resources.
 
-- Make sure you have at least **User** role in the [agent pool security roles](../../organizations/security/about-security-roles.md#agent-pool-security-roles-project-level) for your project. YAML pipelines you create are automatically authorized to use resources that you have **User** role for.
+- Make sure you have at least **User** role in the [agent pool security roles](../../organizations/security/about-security-roles.md#agent-pool-security-roles-project-level) for your project. YAML pipelines you create are automatically authorized to use resources that you have **User** role on.
+
+- If you add a resource definition to a YAML pipeline but the build fails with an error like `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use`, make sure you have at least **User** role on the resource. You can then choose the option to authorize the resources on the failed build. Once the resource is authorized, you can start a new build.
 
 ## Approval checks for resources
 
@@ -97,13 +102,13 @@ resources:
 
 Azure Pipelines evaluates the default versions for resources based on their resource definitions. A pipeline's default resource artifact versions depend on whether the pipeline runs manually or on schedule, or triggers based on the outcome of the resource run.
 
-For scheduled runs, or manual runs if you don't use the version picker, Azure Pipelines considers only successfully completed continuous integration (CI) runs when evaluating default resource versions. For manual runs, you can override the defined versions by using the [manual version picker](#manual-resource-version-picker).
-
 For a manual or scheduled pipeline run, the values of the `version`, `branch`, and `tags` properties in the `pipeline` resource definition define the artifact versions. The `branch` input can't have wildcards, and the `tags` properties use the `AND` operator.
+
+For scheduled runs, or manual runs if you don't use the version picker, Azure Pipelines considers only successfully completed continuous integration (CI) runs when evaluating default resource versions. For manual runs, you can override the defined versions by using the [manual version picker](#manual-resource-version-picker).
 
 The following table lists `pipeline` resource definition properties and the artifact versions they specify.
 
-|Specified properties | Artifact version |
+|Specified property | Artifact version |
 |---------|---------|
 | `version`     | Build that has the specified run number |
 | `branch`      | Latest build that ran on the specified branch |
@@ -130,7 +135,7 @@ resources:
 <a name="triggers"></a>
 #### Pipeline resource triggers
 
-For pipeline runs that are triggered by the outcome of a resource run, the `trigger` property settings in the resource definition determine the default resource artifact versions. To use a `pipeline` resource as a trigger to run the current pipeline, set the `trigger` property in the `pipeline` resource definition. If you don't include a `trigger` property, resource runs don't trigger current pipeline runs.
+For pipeline runs that trigger by the outcome of a resource run, the `trigger` property settings in the resource definition determine the default resource artifact versions. To use a `pipeline` resource as a trigger to run the current pipeline, set the `trigger` property in the `pipeline` resource definition. If you don't include a `trigger` property, resource runs don't trigger current pipeline runs.
 
 When a pipeline triggers based on a `trigger` value in a `pipeline` resource definition, the values of the overall resource definition `version`, `branch`, and `tags` properties are ignored. The `trigger` properties determine the artifact versions.
 
@@ -293,7 +298,7 @@ If you have a CI build system that produces artifacts, you can consume the artif
 
 The `builds` category is extensible. A `build` resource can be from any external CI system like Jenkins, TeamCity, or CircleCI. You can use `builds` to write an extension to consume artifacts from your build service or introduce a new type of service.
 
-In the `build` definition, `version` defaults to the latest successful build. You must explicitly set `trigger` if desired. For complete schema information, see the [resources.builds.build] (/azure/devops/pipelines/yaml-schema/resources-builds-build) definition.
+In the `build` definition, `version` defaults to the latest successful build. You must explicitly set `trigger` if desired. For complete schema information, see the [resources.builds.build](/azure/devops/pipelines/yaml-schema/resources-builds-build) definition.
 
 In the following example, Jenkins is the resource type.
 
@@ -330,7 +335,7 @@ The optional `patterns` property defines a minimatch path or list of [minimatch 
 For complete schema information, see the [steps.downloadBuild](/azure/devops/pipelines/yaml-schema/steps-download-build) definition.
 
 <a name="define-a-repositories-resource"></a>
-### Repository resource
+### Repositories resource
 
 Use the `repository` keyword to let the system know about external repositories if:
 
@@ -362,7 +367,7 @@ The following table describes the `repository` resource types:
 
 |Type |Name value  |Example  |
 |---------|---------|---------|
-|`git`   | A different repository in the same project or same organization. | Same project: `name: otherRepo`<br>Another project in the same organization: `name: otherProject/otherRepo`. |
+|`git`   | A different repository in the same project or same organization. | Same project: `name: otherRepo`<br>Another project in the same organization:<br>`name: otherProject/otherRepo`. |
 |`github`     | Full name of the GitHub repository including the user or organization.  | `name: myOrganization/otherRepo`  |
 |`githubenterprise`    | Full name of the GitHub Enterprise repository including the user or organization. | `name: myEnterpriseOrg/otherRepo`        |
 |`bitbucket`   | Full name of the Bitbucket Cloud repository including the user or organization.        | `name: MyBitbucketOrg/otherRepo`        |
@@ -421,7 +426,7 @@ resources.repositories.<alias>.url
 resources.repositories.<alias>.version
 ```
 
-The following example has an alias of `common`, , so you access the repository resource variables using `resources.repositories.common.*`.
+The following example has an alias of `common`, so you access the repository resource variables using `resources.repositories.common.*`.
 
 ```yaml
 resources:
@@ -573,9 +578,11 @@ steps:
 
 You can consume artifacts and enable automated triggers with pipeline, container, build, and package resources. However, you can't use these resources to automate your deployments based on external events or services.
 
-The `webhooks` resource in YAML pipelines lets you integrate your pipelines with external services like GitHub, GitHub Enterprise, Nexus, and Artifactory to automate workflows. You can subscribe to external events through webhooks and use the events to trigger your pipelines.
+Webhooks automate your workflow based on external webhook events that first-class pipeline, build, container, or package resources don't support. You can subscribe to external events through webhooks and use the events to trigger your pipelines.
 
-To subscribe to a webhook event, you define a webhook resource in your pipeline and point it to an incoming webhook service connection. The following example defines and calls a webhook resource:
+The `webhooks` resource in YAML pipelines lets you integrate your pipelines with external services like GitHub, GitHub Enterprise, Nexus, and Artifactory to automate workflows. For on-premises services where Azure DevOps doesn't have visibility into the process, you can configure webhooks on the service to trigger your pipelines automatically.
+
+To subscribe to a webhook event, you define a `webhook` resource in your pipeline and point it to an incoming webhook service connection. The following example defines and calls a webhook resource:
 
 ```yaml
 resources:
@@ -588,8 +595,6 @@ steps:
 ```
 
 For complete schema information, see the [resources.webhooks.webhook](/azure/devops/pipelines/yaml-schema/resources-webhooks-webhook) definition.
-
-Webhooks automate your workflow based on external webhook events that aren't supported by first-class pipelines, builds, containers, or packages resources. For on-premises services where Azure DevOps doesn't have visibility into the process, you can configure webhooks on the service to trigger your pipelines automatically.
 
 You can consume the JSON payload data in your jobs as variables by using the format `${{ parameters.<WebhookAlias>.<JSONPath>}}`. You can define filters on the webhook resource based on the JSON payload data to customize triggers for each pipeline. Whenever the incoming webhook service connection receives a webhook event, a new run triggers for all the pipelines subscribed to the webhook event.
 
@@ -675,7 +680,7 @@ After a pipeline deploys to an environment, you can see a list of resources that
 
 Using a `pipelines` resource is a way to consume artifacts from a CI pipeline and also configure automated triggers. A resource gives you full visibility into the process by displaying the version consumed, artifacts, commits, and work items. When you define a pipeline resource, the associated artifacts are automatically downloaded in deployment jobs.
 
-You can use the `download` shortcut to download the artifacts in build jobs or to override the download behavior in deployment jobs. For more information, see the [steps.download] definition(/azure/devops/pipelines/yaml-schema/steps-download).
+You can use the `download` shortcut to download the artifacts in build jobs or to override the download behavior in deployment jobs. For more information, see the [steps.download](/azure/devops/pipelines/yaml-schema/steps-download) definition.
 
 The [Download Pipeline Artifacts task](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) doesn't provide traceability or triggers, but sometimes it makes sense to use this task directly. For example, you might have a script task stored in a different template that requires artifacts from a build to be downloaded. Or, you might not want to add a pipeline resource to a template. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build information to a task.
 
@@ -716,12 +721,6 @@ If you receive a 500 status code response with the error `Cannot find webhook fo
 1. Select **Save & queue**.
 1. After this pipeline runs successfully, perform a `POST` API call with valid JSON in the body to 
 `https://dev.azure.com/<organization>/_apis/public/distributedtask/webhooks/<webhook-name>?api-version=<apiversion>`. You should now receive a 200 status code response.
-
-### Why did my build fail with a not-authorized message?
-
-If you add a resource definition to a YAML pipeline but the build fails with an error like `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use.`, verify that the [agent pool security roles](../../organizations/security/about-security-roles.md) for your project are correct.
-
-If you have **User** role on the resource, you can choose the option to authorize the resources on the failed build. Once the resource is authorized, you can start a new build.
 
 ### Why didn't my resource trigger work?
 
