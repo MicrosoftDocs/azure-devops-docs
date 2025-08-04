@@ -246,9 +246,9 @@ If the language specified is `cpp, java, csharp` or `swift`, custom build steps 
 #### [Classic](#tab/classic)
 
 Add the tasks in the following order: 
-1. `Advanced Security Initialize CodeQL`
+1. `Advanced Security Initialize CodeQL` ([AdvancedSecurity-Codeql-Init@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1))
 1. Add your own custom build steps
-1. `Advanced Security Perform CodeQL Analysis`
+1. `Advanced Security Perform CodeQL Analysis` ([AdvancedSecurity-Codeql-Analyze@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1))
 
 :::image type="content" source="media/code-scanning-config-classic-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML." lightbox="media/code-scanning-config-classic-tasks.png" :::
 
