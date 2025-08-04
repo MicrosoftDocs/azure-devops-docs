@@ -163,9 +163,7 @@ Dependency scanning is a pipeline-based scanning tool. Results are aggregated pe
 :::image type="content" source="media/dependency-one-click-enablement.png" lightbox="media/dependency-one-click-enablement.png" alt-text="Screenshot of dependency scanning one-click setup."::: 
 :::zone-end
 
-For more advanced set up or if you want to scan all branches, we recommend that you add the dependency scanning task to all the pipelines that you want scanned. See [Dependency scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-dependency-scanning-troubleshoot.md#manual-dependency-scanning-task-set-up) for more details.
-
---- 
+For more advanced setup or if you want to scan all branches, we recommend that you add the dependency scanning task to all the pipelines that you want scanned. See [Dependency scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-dependency-scanning-troubleshoot.md#manual-dependency-scanning-task-set-up) for more details.
 
 ## Set up code scanning
 
@@ -260,8 +258,6 @@ Also, specify which language you're analyzing in the `Initialize CodeQL` task. I
 If you're running on a self-hosted agent, select the `Enable automatic CodeQL detection and installation` to automatically use the latest CodeQL bits on your agent if you didn't manually install the latest CodeQL bundle to your agent tool cache.
 
 To generate alerts, run your first scan with a pipeline with the code scanning tasks included.
-
---- 
 
 ## Set up pull request annotations 
 
