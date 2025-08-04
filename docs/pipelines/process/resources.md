@@ -25,9 +25,9 @@ Resources allow full [traceability](#traceability) for the services a pipeline u
 
 Resources must be authorized to be used in YAML pipelines. Resource owners control the users and pipelines that can access their resources. There are several ways to authorize a YAML pipeline to use resources.
 
-- You can use the resource's administration settings to authorize **all pipelines** to access the resource. For example, you can manage secure files and variable groups in the **Library** page under **Pipelines**, and agent pools and service connections in **Project settings**. This authorization is convenient for resources you don't need to restrict, such as test resources.
+- You can use the resource's administration settings to **Grant access permissions to all pipelines**. For example, you can manage secure files and variable groups on the **Pipelines** > **Library** page, and agent pools and service connections in **Project settings** > **Pipelines**. This authorization is convenient for resources you don't need to restrict, such as test resources.
 
-- Make sure you have at least **User** role in the [agent pool security roles](../../organizations/security/about-security-roles.md#agent-pool-security-roles-project-level) for your project. YAML pipelines you create are automatically authorized to use resources that you have **User** role on.
+- Make sure you have at least **User** role in the [agent pool security roles](../../organizations/security/about-security-roles.md#agent-pool-security-roles-project-level) for your project. YAML pipelines you create are automatically authorized to use resources where you have **User** role.
 
 - If you add a resource definition to a YAML pipeline but the build fails with an error like `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use`, make sure you have at least **User** role on the resource. You can then choose the option to authorize the resources on the failed build. Once the resource is authorized, you can start a new build.
 
@@ -60,20 +60,18 @@ YAML pipeline resources can be:
 - [Repositories](#repositories-resource), or
 - [Webhooks](#webhooks-resource).
 
-For complete schema information, see the [resources](/azure/devops/pipelines/yaml-schema/resources) definition in the [YAML schema reference for Azure Pipelines](/azure/devops/pipelines/yaml-schema).
+The following sections provide information and examples for the Azure Pipelines resource categories. For complete schema information, see the [resources](/azure/devops/pipelines/yaml-schema/resources) definition in the [YAML schema reference for Azure Pipelines](/azure/devops/pipelines/yaml-schema).
 
 <a name="define-a-pipelines-resource"></a>
 ### Pipelines resource
 
-If you have a pipeline that produces artifacts, you can consume the artifacts as a `pipelines` resource. Only Azure Pipelines can use the `pipelines` resource. You can use CI `pipeline` resources as [triggers](#triggers) for your CD workflows.
+You can use CI `pipeline` resources as [triggers](#triggers) for your CD workflows. You can also use the `pipeline` label to reference the pipeline resource from other parts of your pipeline, such as to [download artifacts](#pipeline-artifact-download) or [use pipeline resource variables](#pipeline-resource-variables). Only Azure Pipelines can use the `pipelines` resource.
 
 In the `pipelines` resource definition:
 - `pipeline` is a unique name you use to reference the pipeline resources.
 - `source` is the name of the pipeline that produced the pipeline artifacts.
 
 For complete schema information, see the [resources.pipelines.pipeline](/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline) definition.
-
-You use the `pipeline` label to reference the pipeline resource from other parts of your pipeline, such as to [download artifacts](#pipeline-artifact-download) or [use pipeline resource variables](#pipeline-resource-variables).
 
 #### Example pipeline resource definitions
 
@@ -100,7 +98,7 @@ resources:
 <a name="evaluation-of-artifact-version"></a>
 #### Resource version evaluation
 
-Azure Pipelines evaluates the default versions for resources based on their resource definitions. A pipeline's default resource artifact versions depend on whether the pipeline runs manually or on schedule, or triggers based on the outcome of the resource run.
+Azure Pipelines evaluates the default versions for resources based on their resource definitions. A pipeline's default resource artifact versions depend on whether the pipeline runs manually or on schedule, or [triggers](#pipeline-resource-triggers) based on the outcome of the resource run.
 
 For a manual or scheduled pipeline run, the values of the `version`, `branch`, and `tags` properties in the `pipeline` resource definition define the artifact versions. The `branch` input can't have wildcards, and the `tags` properties use the `AND` operator.
 
@@ -135,7 +133,7 @@ resources:
 <a name="triggers"></a>
 #### Pipeline resource triggers
 
-For pipeline runs that trigger by the outcome of a resource run, the `trigger` property settings in the resource definition determine the default resource artifact versions. To use a `pipeline` resource as a trigger to run the current pipeline, set the `trigger` property in the `pipeline` resource definition. If you don't include a `trigger` property, resource runs don't trigger current pipeline runs.
+For pipeline runs that trigger on the outcome of a resource run, the `trigger` property settings in the resource definition determine the default resource artifact versions. To use a `pipeline` resource as a trigger to run the current pipeline, you must set the `trigger` property. If you don't include a `trigger` property, resource runs don't trigger current pipeline runs.
 
 When a pipeline triggers based on a `trigger` value in a `pipeline` resource definition, the values of the overall resource definition `version`, `branch`, and `tags` properties are ignored. The `trigger` properties determine the artifact versions.
 
@@ -144,7 +142,7 @@ When a pipeline triggers based on a `trigger` value in a `pipeline` resource def
 > - If the `pipeline` resource is from the same repository as the current pipeline, or `self`, triggering is on the same branch and commit that raises the triggering event.
 > - If the `pipeline` resource is from a different repository than the current pipeline, triggering is on the default branch of the `pipeline` resource repository.
 
-The following table lists the `trigger` properties and how they affect trigger behavior.
+The following table describes how the `trigger` properties affect trigger behavior.
 
 |Trigger property  | Trigger behavior  |
 |---------|---------|
@@ -193,7 +191,7 @@ resources:
       - Production
 ```
 
-The following example uses `tags` filters for default version evaluation and for `trigger`. The trigger tags use the `AND` operator. The `tags` set in `pipeline` resource definitions are different from the tags set on branches in the Git repository.
+The following example uses `tags` filters for default version evaluation and for the trigger. The `trigger` tags use the `AND` operator. The `tags` set in `pipeline` resource definitions are different from the tags set on branches in the Git repository.
 
 ```yml
 resources:
@@ -247,7 +245,7 @@ In a regular build job, artifacts don't automatically download. Use `download` e
 
 In the `download` step, the optional `artifact` property specifies artifact names. If not specified, all available artifacts download.
 
-The optional `patterns` property defines patterns that represent files to include. For full schema information, see the [steps.download](/azure/devops/pipelines/yaml-schema/steps-download) definition.
+The optional `patterns` property defines patterns that represent files to download. For full schema information, see the [steps.download](/azure/devops/pipelines/yaml-schema/steps-download) definition.
 
 ```yaml
 - job: deploy_windows_x86_agent
@@ -463,9 +461,9 @@ Repos from the `repository` resource aren't automatically synced in your jobs. Y
 <a name="define-a-containers-resource"></a>
 ### Containers resource
 
-You can use `containers` resources to consume container images in your CI/CD pipelines. A `container` resource can be a public or private Docker registry or Azure Container Registry instance.
+You can use `containers` resources to consume container images in your CI/CD pipelines. A `container` resource can be a public or private Docker registry or an Azure Container Registry instance.
 
-You can consume a generic container resource image as part of your jobs, or use it in [container jobs](../process/container-phases.md). If your pipeline requires the support of one or more services, you also need to create and connect to service containers. You can use [volumes](service-containers.md#volumes) to share data between services. For more information, see [Service containers](service-containers.md).
+You can consume a generic container resource image as part of your jobs, or use it in [container jobs](../process/container-phases.md). If your pipeline requires the support of one or more services, you also need to create and connect to [service containers](service-containers.md). You can use [volumes](service-containers.md#volumes) to share data between services.
 
 If you need to consume images from a Docker registry, you can define a generic container resource without using a `type` keyword. For example:
 
@@ -576,40 +574,38 @@ steps:
 > [!NOTE]
 > Webhooks released in Azure DevOps Server 2020.1. 
 
-You can consume artifacts and enable automated triggers with pipeline, container, build, and package resources. However, you can't use these resources to automate your deployments based on external events or services.
-
-Webhooks automate your workflow based on external webhook events that first-class pipeline, build, container, or package resources don't support. You can subscribe to external events through webhooks and use the events to trigger your pipelines.
+You can use Azure Pipelines pipeline, container, build, and package resources to consume artifacts and automate triggers, but you can't use them to base deployments on external events or services. Webhooks automate your workflow based on external webhook events that first-class Azure Pipelines resources don't support. You can subscribe to external events through webhooks and use the events to trigger your pipelines.
 
 The `webhooks` resource in YAML pipelines lets you integrate your pipelines with external services like GitHub, GitHub Enterprise, Nexus, and Artifactory to automate workflows. For on-premises services where Azure DevOps doesn't have visibility into the process, you can configure webhooks on the service to trigger your pipelines automatically.
 
-To subscribe to a webhook event, you define a `webhook` resource in your pipeline and point it to an incoming webhook service connection. The following example defines and calls a webhook resource:
+To subscribe to a webhook event, you define a `webhook` resource in your pipeline and specify an incoming webhook service connection. The following example defines and calls a webhook resource:
 
 ```yaml
 resources:
   webhooks:
-    - webhook: WebHook
-      connection: IncomingWH
+    - webhook: myWebhookResource
+      connection: myWebHookConnection
 
 steps:  
-- script: echo ${{ parameters.WebHook.resource.message.title }}
+- script: echo ${{ parameters.myWebHookResource.resource.message.title }}
 ```
 
 For complete schema information, see the [resources.webhooks.webhook](/azure/devops/pipelines/yaml-schema/resources-webhooks-webhook) definition.
 
-You can consume the JSON payload data in your jobs as variables by using the format `${{ parameters.<WebhookAlias>.<JSONPath>}}`. You can define filters on the webhook resource based on the JSON payload data to customize triggers for each pipeline. Whenever the incoming webhook service connection receives a webhook event, a new run triggers for all the pipelines subscribed to the webhook event.
+You can consume the JSON payload data as variables in your jobs by using the format `${{ parameters.<WebhookAlias>.<JSONPath>}}`. You can define filters on the webhook resource based on the JSON payload data to customize triggers for each pipeline. Whenever the incoming webhook service connection receives a webhook event, a new run triggers for all the pipelines subscribed to that webhook event.
 
 #### Webhook trigger configuration
 
-To configure webhook triggers, you first set up a webhook on your external service, providing the following information:
+To configure a webhook trigger, you set up a webhook in the external service, providing the following information:
 
 - **Request Url**: `https://dev.azure.com/<org_name>/_apis/public/distributedtask/webhooks/<webhook_connection_name>?api-version=6.0-preview`
-- **Secret** (Optional): If you need to secure your JSON payload, provide a secret value.
+- **Secret** (Optional): If you need to secure the JSON payload, provide a secret value.
 
-Next, you create a new incoming webhook service connection. For this service connection type, you define the following information:
+In Azure DevOps **Project Settings** > **Pipelines** > **Service connections**, you create a new incoming webhook service connection. For example, you might define the following information for a GitHub service connection type:
 
-- **WebHook Name**: Same as the webhook created in your external service.
-- **Secret** (Optional): Uses the payload's HMAC-SHA1 hash to verify the incoming request. If you used a secret when creating your webhook, you must provide the same secret.
-- **Http Header**: The HTTP header in the request that contains the payload's HMAC-SHA1 hash value for request verification. For example, the GitHub request header is `X-Hub-Signature`.
+- **WebHook Name**: The webhook connection name you created in your external service.
+- **Secret** (optional): The payload's HMAC-SHA1 hash to verify the incoming request. If you used a secret when creating your webhook, you must provide the same secret.
+- **Http Header** (optional): The HTTP header in the request that contains the payload's HMAC-SHA1 hash value for request verification. For example, the GitHub request header is `X-Hub-Signature`.
 
 ![Screenshot that shows the incoming webhook service connection.](media/incoming-webhook.png)
 
