@@ -163,7 +163,7 @@ Dependency scanning is a pipeline-based scanning tool. Results are aggregated pe
 :::image type="content" source="media/dependency-one-click-enablement.png" lightbox="media/dependency-one-click-enablement.png" alt-text="Screenshot of dependency scanning one-click setup."::: 
 :::zone-end
 
-For more advanced setup or if you want to scan all branches, we recommend that you add the dependency scanning task to all the pipelines that you want scanned. See [Dependency scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-dependency-scanning-troubleshoot.md#manual-dependency-scanning-task-set-up) for more details.
+For more advanced setup or if you want to scan all branches, we recommend that you add the dependency scanning task to all the pipelines that you want scanned. See [Dependency scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-dependency-scanning-troubleshoot.md#manual-dependency-scanning-task-setup) for more details.
 
 ## Set up code scanning
 
@@ -243,7 +243,6 @@ steps:
 
 If the language specified is `cpp, java, csharp` or `swift`, custom build steps are required.
 
-
 #### [Classic](#tab/classic)
 
 Add the tasks in the following order: 
@@ -252,6 +251,8 @@ Add the tasks in the following order:
 1. `Advanced Security Perform CodeQL Analysis`
 
 :::image type="content" source="media/code-scanning-config-classic-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML." lightbox="media/code-scanning-config-classic-tasks.png" :::
+
+---
 
 Also, specify which language you're analyzing in the `Initialize CodeQL` task. If the language specified is `cpp, java, csharp` or `swift`,  custom build steps are required.
 
