@@ -58,7 +58,7 @@ You can view the specific queries and task details executed by CodeQL in the bui
 
 ### Code scanning build mode customization
 Code scanning supports two build modes when setting up a pipeline for scanning:
-* `none` - the CodeQL database is created directly from the codebase without building the codebase (supported for all interpreted languages, and additionally supported for C# and Java).
+* `none` - the CodeQL database is created directly from the codebase without building the codebase (supported for all interpreted languages, and additionally supported for `cpp`, `java`, and `csharp`).
 * `manual` - you define the build steps to use for the codebase in the workflow (supported for all compiled languages).
 
 For more information on the different build modes including a comparison on the benefits of each build mode, see [CodeQL code scanning for compiled languages](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages#about-the-codeql-analysis-workflow-and-compiled-languages). 
