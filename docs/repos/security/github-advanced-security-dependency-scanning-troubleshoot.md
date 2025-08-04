@@ -33,7 +33,7 @@ Add the task Advanced Security Dependency Scanning task ([AdvancedSecurity-Depen
 
 ### [Classic](#tab/classic)
 
-Add the `Advanced Security Dependency Scanning` task to your pipeline. 
+Add the `Advanced Security Dependency Scanning` ([AdvancedSecurity-Dependency-Scanning@1](/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1)) task to your pipeline. 
 
 :::image type="content" source="media/dependency-scanning-config-classic.png" lightbox="media/dependency-scanning-config-classic.png" alt-text="Screenshot of dependency scanning pipeline setup for classic pipelines.":::
 
