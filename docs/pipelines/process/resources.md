@@ -1,10 +1,11 @@
 ---
 title: Resources in YAML pipelines
-description: Learn about defining and consuming YAML resources that you can use anywhere in your pipelines, or to trigger pipeline automation.
+description: Learn about defining YAML resources that you can consume in your pipelines and using them to download artifacts, call variables, or trigger pipeline automation.
 ms.topic: conceptual
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.date: 08/04/2025
 monikerRange: "<=azure-devops"
+#customer intent: As an Azure Pipelines user, I want to know about defining and consuming resources in YAML pipelines so I can use the resources to access artifacts and automate workflows.
 ---
 
 # Resources in YAML pipelines
@@ -15,7 +16,7 @@ This article discusses resources for YAML pipelines. A resource is anything a pi
 
 After you define a resource, you can consume it anywhere in your pipeline. For more information and examples, see [Resource definitions](#resource-definitions).
 
-You can use resource status to automatically [trigger](#triggers) pipelines by setting the `trigger` property in the resource definition. When a resource triggers a pipeline run, the pipeline `resources.triggeringAlias` and `resources.triggeringCategory` variables are set to the resource name and category. These variables are empty unless the `Build.Reason` variable is set to `ResourceTrigger`.
+You can use resource status to automatically [trigger](#triggers) pipelines by setting the `trigger` property in the resource definition. The pipeline `resources.triggeringAlias` and `resources.triggeringCategory` variables are then set to the resource name and category. These variables are empty unless the `Build.Reason` variable is set to `ResourceTrigger`.
 
 Resources allow full [traceability](#traceability) for the services a pipeline uses, including version, artifacts, associated commits, and work items. If you subscribe to trigger events on your resources, you can fully automate your DevOps workflows.
 
@@ -25,7 +26,7 @@ Resources allow full [traceability](#traceability) for the services a pipeline u
 
 Resources must be authorized to be used in YAML pipelines. Resource owners control the users and pipelines that can access their resources. There are several ways to authorize a YAML pipeline to use resources.
 
-- You can use the resource's administration settings to **Grant access permissions to all pipelines**. For example, you can manage secure files and variable groups on the **Pipelines** > **Library** page, and agent pools and service connections in **Project settings** > **Pipelines**. This authorization is convenient for resources you don't need to restrict, such as test resources.
+- Use the resource's administration settings to **Grant access permissions to all pipelines**. For example, you can manage secure files and variable groups on the **Pipelines** > **Library** page, and agent pools and service connections in **Project settings** > **Pipelines**. This authorization is convenient for resources you don't need to restrict, such as test resources.
 
 - Make sure you have at least **User** role in the [agent pool security roles](../../organizations/security/about-security-roles.md#agent-pool-security-roles-project-level) for your project. YAML pipelines you create are automatically authorized to use resources where you have **User** role.
 
@@ -39,11 +40,13 @@ Setting a [required template](../security/templates.md#set-required-templates) a
 
 ## Manual resource version picker
 
-Azure Pipelines automatically evaluates the default versions for resources based on their resource definitions. For scheduled runs, or manual runs if you don't manually choose a different run, Azure Pipelines considers only successfully completed continuous integration (CI) runs to evaluate default resource versions.
+Azure Pipelines evaluates the default versions for resources based on their resource definitions. For scheduled runs, or manual runs if you don't manually choose a run, Azure Pipelines considers only successfully completed continuous integration (CI) runs to evaluate default resource versions.
 
 You can use the manual resource version picker to choose different resource versions when you manually trigger a YAML continuous deployment (CD) pipeline. The resource version picker is supported for pipeline, build, repository, container, and package resources.
 
-For `pipeline` resources, the manual version picker lets you see all available runs across all branches, search the runs based on the pipeline number or branch, and pick a run that's successful, failed, or in progress. You don't need to wait for a CI run to complete, or rerun it because of an unrelated failure, before you can run your CD pipeline. You have the flexibility to choose any run that you know produced the artifacts you need.
+For `pipeline` resources, the manual version picker lets you see all available runs across all branches, search the runs based on the pipeline number or branch, and pick a run that's successful, failed, or in progress.
+
+You don't need to wait for a CI run to complete, or rerun it because of an unrelated failure, before you can run your CD pipeline. You have the flexibility to choose any run that you know produced the artifacts you need.
 
 To use the resource version picker, select **Resources** in the **Run pipeline** pane, select a resource, and pick a specific version from the list of available versions. For resources where you can't fetch available versions, like GitHub packages, you can enter your desired version in the text field.
 
@@ -60,12 +63,12 @@ YAML pipeline resources can be:
 - [Repositories](#repositories-resource), or
 - [Webhooks](#webhooks-resource).
 
-The following sections provide information and examples for the Azure Pipelines resource categories. For complete schema information, see the [resources](/azure/devops/pipelines/yaml-schema/resources) definition in the [YAML schema reference for Azure Pipelines](/azure/devops/pipelines/yaml-schema).
+The following sections provide definitions and examples of the YAML pipeline resource categories. For complete schema information, see the [resources](/azure/devops/pipelines/yaml-schema/resources) definition in the [YAML schema reference for Azure Pipelines](/azure/devops/pipelines/yaml-schema).
 
 <a name="define-a-pipelines-resource"></a>
 ### Pipelines resource
 
-You can use CI `pipeline` resources as [triggers](#triggers) for your CD workflows. You can also use the `pipeline` label to reference the pipeline resource from other parts of your pipeline, such as to [download artifacts](#pipeline-artifact-download) or [use pipeline resource variables](#pipeline-resource-variables). Only Azure Pipelines can use the `pipelines` resource.
+You can use CI `pipeline` resources as [triggers](#triggers) for your CD workflows. You can also reference `pipeline` resources from your pipeline to [download artifacts](#pipeline-artifact-download) or [use pipeline resource variables](#pipeline-resource-variables). Only Azure Pipelines can use the `pipelines` resource.
 
 In the `pipelines` resource definition:
 - `pipeline` is a unique name you use to reference the pipeline resources.
@@ -578,7 +581,9 @@ You can use Azure Pipelines pipeline, container, build, and package resources to
 
 The `webhooks` resource in YAML pipelines lets you integrate your pipelines with external services like GitHub, GitHub Enterprise, Nexus, and Artifactory to automate workflows. For on-premises services where Azure DevOps doesn't have visibility into the process, you can configure webhooks on the service to trigger your pipelines automatically.
 
-To subscribe to a webhook event, you define a `webhook` resource in your pipeline and specify an incoming webhook service connection. The following example defines and calls a webhook resource:
+To subscribe to a webhook event, you define a `webhook` resource in your pipeline and specify an incoming webhook service connection. For complete schema information, see the [resources.webhooks.webhook](/azure/devops/pipelines/yaml-schema/resources-webhooks-webhook) definition.
+
+You can consume the JSON payload data as variables in your jobs by using the format `${{ parameters.<WebhookAlias>.<JSONPath>}}`. The following example defines and then calls a webhook resource:
 
 ```yaml
 resources:
@@ -590,9 +595,29 @@ steps:
 - script: echo ${{ parameters.myWebHookResource.resource.message.title }}
 ```
 
-For complete schema information, see the [resources.webhooks.webhook](/azure/devops/pipelines/yaml-schema/resources-webhooks-webhook) definition.
+You can define filters on the webhook resource based on the JSON payload data to customize triggers for each pipeline. Whenever the incoming webhook service connection receives a webhook event, a new run triggers for all the pipelines subscribed to that webhook event.
 
-You can consume the JSON payload data as variables in your jobs by using the format `${{ parameters.<WebhookAlias>.<JSONPath>}}`. You can define filters on the webhook resource based on the JSON payload data to customize triggers for each pipeline. Whenever the incoming webhook service connection receives a webhook event, a new run triggers for all the pipelines subscribed to that webhook event.
+The following example uses webhook filters.
+
+```yml
+resources:
+  webhooks:
+    - webhook: MyWebhookTrigger          
+      connection: MyWebhookConnection    
+      filters:
+        - path: repositoryName      
+          value: maven-releases     
+        - path: action
+          value: CREATED
+
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host ${{ parameters.MyWebhookTrigger.repositoryName}}
+      Write-Host ${{ parameters.MyWebhookTrigger.component.group}}
+```
 
 #### Webhook trigger configuration
 
@@ -624,28 +649,6 @@ To trigger your pipeline using a webhook, you make a `POST` request to `https://
 
 >[!NOTE]
 >Accessing data from the webhook's request body can lead to incorrect YAML. For example, the pipeline step `- script: echo ${{ parameters.WebHook.resource.message }}` pulls in the entire JSON message, which generates invalid YAML. Any pipeline triggered via this webhook doesn't run, because the generated YAML is invalid.
-
-The following example uses webhook filters.
-
-```yml
-resources:
-  webhooks:
-    - webhook: MyWebhookTrigger          
-      connection: MyWebhookConnection    
-      filters:
-        - path: repositoryName      
-          value: maven-releases     
-        - path: action
-          value: CREATED
-
-steps:
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-      Write-Host ${{ parameters.MyWebhookTrigger.repositoryName}}
-      Write-Host ${{ parameters.MyWebhookTrigger.component.group}}
-```
 
 ::: moniker-end
 
