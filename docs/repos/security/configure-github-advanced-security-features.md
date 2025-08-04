@@ -236,13 +236,6 @@ steps:
 
 ```
 
-> [!TIP]
-> CodeQL analysis for Kotlin/Swift is currently in beta. During the beta, analysis of these languages is less comprehensive than CodeQL analysis of others.
-> - Use `java` to analyze code written in Java, Kotlin or both.
-> - Use `javascript` to analyze code written in JavaScript, TypeScript, or both. 
-
-If the language specified is `cpp, java, csharp` or `swift`, custom build steps are required.
-
 #### [Classic](#tab/classic)
 
 Add the tasks in the following order: 
@@ -254,7 +247,11 @@ Add the tasks in the following order:
 
 ---
 
-Also, specify which language you're analyzing in the `Initialize CodeQL` task. If the language specified is `cpp, java, csharp` or `swift`,  custom build steps are required.
+Also, specify which language you're analyzing in the `Initialize CodeQL` task. If the language specified is `swift`,  custom build steps are required.
+
+> [!TIP]
+> - Use `java` to analyze code written in Java, Kotlin or both.
+> - Use `javascript` to analyze code written in JavaScript, TypeScript, or both. 
 
 If you're running on a self-hosted agent, select the `Enable automatic CodeQL detection and installation` to automatically use the latest CodeQL bits on your agent if you didn't manually install the latest CodeQL bundle to your agent tool cache.
 
