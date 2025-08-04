@@ -18,7 +18,26 @@ Learn how to troubleshoot dependency scanning issues in GitHub Advanced Security
 
 ## Prerequisites
 
-[!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
+[!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)] 
+
+## Manual dependency scanning task setup
+
+>[!TIP] 
+> For the most accurate scanning results, add the dependency scanning task after the build steps or package restore step in a pipeline that builds the code you wish to scan.
+
+### [YAML](#tab/yaml)
+
+Add the task Advanced Security Dependency Scanning task ([AdvancedSecurity-Dependency-Scanning@1](/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1)) directly to your YAML pipeline file or select the **Advanced Security Dependency Scanning** task from the [task assistant](../../pipelines/get-started/yaml-pipeline-editor.md#use-task-assistant).
+
+:::image type="content" source="media/dependency-scanning-config-yaml.png" lightbox="media/dependency-scanning-config-yaml.png" alt-text="Screenshot of dependency scanning pipeline setup for YAML.":::
+
+### [Classic](#tab/classic)
+
+Add the `Advanced Security Dependency Scanning` ([AdvancedSecurity-Dependency-Scanning@1](/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1)) task to your pipeline. 
+
+:::image type="content" source="media/dependency-scanning-config-classic.png" lightbox="media/dependency-scanning-config-classic.png" alt-text="Screenshot of dependency scanning pipeline setup for classic pipelines.":::
+
+---
 
 ## Dependency scanning not identifying any components
 If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step before the `AdvancedSecurity-Dependency-Scanning@1` task. 
