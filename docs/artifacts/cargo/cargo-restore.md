@@ -45,6 +45,8 @@ To restore your dependencies, make sure you have your dependecies listed in your
 
 The downloaded crates are cached locally in your `~/.cargo/registry/cache/<registry-hash>/` where the registry hash is a unique identifier based on your feed URL.
 
+:::image type="content" source="media/cargo-fetch-packages.png" alt-text="A screenshot displaying the result of the cargo fetch command.":::
+
 ## Related content
 
 - [Publish Cargo packages (CLI)](cargo-publish.md)
