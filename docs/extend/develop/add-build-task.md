@@ -1031,11 +1031,6 @@ To upgrade your tasks:
 > [!IMPORTANT]
 > If you don't add support for the Node 20 runner to your custom tasks, they fail on agents installed from the `pipelines-agent-*` [release feed](../../pipelines/agents/agents.md#node-runner-versions).
 
-For more help and resources, see:
-- [Azure DevOps Extension Development](../develop/index.md)
-- [Task Library Reference](./integrate-build-task.md)
-- [Extension Samples](https://github.com/Microsoft/vsts-extension-samples)
-
 ## Related content
 
 - [Extension manifest reference](./manifest.md)
