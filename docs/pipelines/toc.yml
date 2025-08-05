@@ -183,7 +183,7 @@
     - name: Library & shared resources
       displayName: security roles, variables, variable groups, secure files
       href: library/index.md
-    - name: Add resources to a pipeline
+    - name: Resources in YAML pipelines
       href: process/resources.md
     - name: Define and target environments
       displayName: clusters, vms, resources

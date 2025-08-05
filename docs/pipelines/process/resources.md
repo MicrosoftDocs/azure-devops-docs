@@ -3,7 +3,7 @@ title: Resources in YAML pipelines
 description: Learn about defining YAML resources that you can consume in your pipelines and using them to download artifacts, call variables, or trigger pipeline automation.
 ms.topic: conceptual
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 08/04/2025
+ms.date: 08/05/2025
 monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines user, I want to know about defining and consuming resources in YAML pipelines so I can use the resources to access artifacts and automate workflows.
 ---
@@ -16,15 +16,29 @@ This article discusses resources for YAML pipelines. A resource is anything a pi
 
 After you define a resource, you can consume it anywhere in your pipeline. For more information and examples, see [Resource definitions](#resource-definitions).
 
+```yaml
+resources:
+  pipelines:
+  - pipeline: resources1
+    source: otherPipeline
+
+steps:
+- download: resources1
+  artifact: artifact1.txt
+```
+
 You can use resource status to automatically [trigger](#triggers) pipelines by setting the `trigger` property in the resource definition. The pipeline `resources.triggeringAlias` and `resources.triggeringCategory` variables are then set to the resource name and category. These variables are empty unless the `Build.Reason` variable is set to `ResourceTrigger`.
 
 Resources allow full [traceability](#traceability) for the services a pipeline uses, including version, artifacts, associated commits, and work items. If you subscribe to trigger events on your resources, you can fully automate your DevOps workflows.
+
+> [!NOTE]
+> This article primarily discusses resources in YAML pipelines. For resources in Classic pipelines, see [About resources for Azure Pipelines](about-resources.md?tabs=classic).
 
 <a name="resource-authorization-in-yaml-pipelines"></a>
 <a name="authorize-a-yaml-pipeline"></a>
 ## Resource authorization
 
-Resources must be authorized to be used in YAML pipelines. Resource owners control the users and pipelines that can access their resources. There are several ways to authorize a YAML pipeline to use resources.
+Resources must be authorized to be used in pipelines. Resource owners control the users and pipelines that can access their resources. There are several ways to authorize a YAML pipeline to use resources.
 
 - Use the resource's administration settings to **Grant access permissions to all pipelines**. For example, you can manage secure files and variable groups on the **Pipelines** > **Library** page, and agent pools and service connections in **Project settings** > **Pipelines**. This authorization is convenient for resources you don't need to restrict, such as test resources.
 
@@ -87,7 +101,7 @@ resources:
     source: SmartHotel-CI # name of the pipeline that produces the artifacts
 ```
 
-To consume a pipeline from another project, include the `project` name in the resource definition. The following example also uses `branch` to resolve the default version when the pipeline is triggered manually or by schedule. The branch input can't have wildcards.
+To specify a pipeline from another project, include the `project` name in the resource definition. The following example also uses `branch` to resolve the default version when the pipeline is triggered manually or by schedule. The branch input can't have wildcards.
 
 ```yaml
 resources:
@@ -235,7 +249,6 @@ resources:
       stages:
       - Production
       - PreProduction
-      
 ```
 
 #### Pipeline artifact download
