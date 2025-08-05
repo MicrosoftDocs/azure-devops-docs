@@ -19,7 +19,7 @@ customer-intent: As a developer, I want to create custom build and release tasks
 
 This guide walks you through creating, testing, and publishing custom build or release tasks as Azure DevOps extensions. Custom pipeline tasks let you extend Azure DevOps with specialized functionality tailored to your team's workflows, from simple utilities to complex integrations with external systems.
 
-You learn how to:
+Learn how to do the following tasks:
 - Set up the development environment and project structure
 - Create task logic using TypeScript and the Azure Pipelines Task Library
 - Implement comprehensive unit testing with mock frameworks
@@ -96,8 +96,8 @@ Create the basic project structure and install required dependencies:
 
    The `package.json` file gets created with default settings. The `--yes` flag accepts all default options automatically.
 
-  > [!TIP]
-  > Azure Pipelines agents expect task folders to include node modules. Copy `node_modules` to your `buildandreleasetask` folder. To manage VSIX file size (50-MB limit), consider running `npm install --production` or `npm prune --production` before packaging.
+   > [!TIP]
+   > Azure Pipelines agents expect task folders to include node modules. Copy `node_modules` to your `buildandreleasetask` folder. To manage VSIX file size (50-MB limit), consider running `npm install --production` or `npm prune --production` before packaging.
 
 2. Install the Azure Pipelines Task Library:
 
@@ -346,12 +346,12 @@ Before packaging, test your task to ensure it works correctly:
 
    This action should trigger the error handling path in your code.
 
-> [!TIP]
-> For information about task runners and Node.js versions, see [Node runner update guidance](https://devblogs.microsoft.com/devops/node-runner-update-guidance-for-azure-pipelines-task-authors/#upcoming-changes).
+   > [!TIP]
+   > For information about task runners and Node.js versions, see [Node runner update guidance](https://devblogs.microsoft.com/devops/node-runner-update-guidance-for-azure-pipelines-task-authors/#upcoming-changes).
 
 For more information, see the [Build/release task reference](./integrate-build-task.md).
 
-## Step 2: Implement comprehensive unit testing
+## 2. Implement comprehensive unit testing
 
 Testing your task thoroughly ensures reliability and helps catch issues before deployment to production pipelines.
 
@@ -527,8 +527,8 @@ The extension manifest (`vss-extension.json`) contains all information about you
 1. Create an images folder with an `extension-icon.png` file
 2. Create `vss-extension.json` in your extension's root directory (not in the task folder):
 
-```json
-{
+   ```json
+   {
     "manifestVersion": 1,
     "id": "my-custom-tasks",
     "name": "My Custom Tasks",
@@ -563,8 +563,8 @@ The extension manifest (`vss-extension.json`) contains all information about you
             }
         }
     ]
-}
-```
+   }
+   ```
 
 #### Key manifest properties
 
@@ -661,7 +661,7 @@ After sharing, install the extension to your Azure DevOps organization:
 
 <a name="packagetask"></a>
 
-## Step 3: Package and publish your extension
+## 3. Package and publish your extension
 
 ### Verify your extension
 
@@ -683,13 +683,12 @@ After installation, verify your task works correctly:
 
 <a name="createbuildrelease"></a>
 
-## Step 4: Automate extension publishing with CI/CD
+## 4. Automate extension publishing with CI/CD
 
 To maintain your custom task effectively, create automated build and release pipelines that handle testing, packaging, and publishing.
 
 ### Prerequisites for automation
 
-- **Azure DevOps project**: [Create a project](../../organizations/projects/create-project.md?tabs=preview-page) if needed
 - **Azure DevOps Extension Tasks**: [Install the extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks) for free
 - **Variable group**: Create a [pipeline library variable group](../../pipelines/library/variable-groups.md?tabs=classic) with these variables:
   - `publisherId`: Your marketplace publisher ID
@@ -881,6 +880,8 @@ Add test scripts to your `package.json`:
 - **Security**: Use service connections instead of hardcoded credentials
 - **Monitoring**: Set up alerts for failed deployments
 
+For classic build pipelines, follow these steps to set up extension packaging and publishing:
+
 1. Add the `Bash` task to compile the TypeScript into JavaScript.
 1. To query the existing version, add the **Query Extension Version** task using the following inputs:
     - Connect to: Visual Studio Marketplace
@@ -942,11 +943,11 @@ Install your shared extension in a few steps:
 
 1. Go to **Organization settings** and select **Extensions**.
 
-2. Locate your extension in the **Extensions Shared With Me** section
+2. Locate your extension in the **Extensions Shared With Me** section:
    - Select the extension link
    - Select **Get it free** or **Install**
 
-3. Check that the extension appears in your **Installed** extensions list
+3. Check that the extension appears in your **Installed** extensions list:
    - Confirm it's available in your pipeline task library
 
 > [!NOTE]
