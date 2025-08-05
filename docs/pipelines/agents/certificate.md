@@ -118,5 +118,26 @@ When that IIS SSL setting enabled, you need to use `2.125.0` or above version ag
   macOS: macOS Keychain
   Windows: Windows Credential Store
   ```
+## Verifying Root Certificate Authority Trust 
+The build agent utilizes Node.js that relies on its own certificate store that’s derived from Mozilla's trusted root certificates. It's crucial that any root certificate used for secure communication is trusted by the Node.js Certificate Authority store. This would help avoid errors below after updating a certificate on the DevOps server: 
+- unable to get local issuer certificate
+- SELF_SIGNED_CERT_IN_CHAIN
+- unable to verify the first certificate
 
+The tls.rootCertificates array can be used to verify trusterd root Certificate Authorities (CAs) used for verifying TLS/SSL connections.  
+```bash
+# Sample script to extract Node.js root certificates using Node.js.  
+node -e ' 
+const tls = require("tls"); 
+console.log(tls.rootCertificates.join("\n")); 
+' > "$ROOT_CERTS_FILE" 
+```
+To configure Node.js to trust a certificate 
+NODE_EXTRA_CA_CERTS environment variable, introduced in Node v7.3.0, allows you to specify a file containing one or more additional CA certificates that Node will trust in addition to the default bundle. NODE_EXTRA_CA_CERTS appends to the trust store.
+1. Export the certificate(s) in PEM format: On your server or CA, export the root (and any intermediate, if needed) certificates as a PEM encoded file. This is a text file with -----BEGIN CERTIFICATE----- and base64 data. Ensure it’s Base-64 encoded PEM, not DER. (On Windows, .CER files can be either; you may rename to .pem to avoid confusion. The file can actually have any extension, but .pem or .crt is standard.) If you have multiple internal CAs (a chain), you can concatenate them into one file – Node will read all certificatess in that file. 
+2. Make the PEM available on the build agent by placing it into a known path (e.g. C:\certs\CorpRootCA.pem or /etc/ssl/certs/CorpRootCA.pem).
+3. Set an OS environment variable NODE_EXTRA_CA_CERTS pointing to that PEM file. For example, on Windows, one can use PowerShell: 
+```
+[Environment]::SetEnvironmentVariable("NODE_EXTRA_CA_CERTS", "C:\certs\CorpRootCA.pem", "Machine")
+```
 Learn more about [agent client certificate support](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/design/clientcert.md).
