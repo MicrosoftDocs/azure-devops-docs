@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2025
+ms.date: 08/05/2025
 customer-intent: As a developer, I want to create custom build and release tasks for Azure DevOps pipelines so that I can extend the platform with specialized functionality for my team's workflows.
 ---
 
