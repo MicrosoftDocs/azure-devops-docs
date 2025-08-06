@@ -801,45 +801,29 @@ When using the classic editor, select **Index sources publish symbols** from the
 
 For more information, see [Publish symbols](../artifacts/symbols.md).
 
-## Troubleshoot
+## Troubleshooting
 
-If you can build your project on your development machine, but you're having trouble building it on Azure Pipelines, explore the following potential causes and corrective actions:
+If your project builds on your development machine, but not in Azure Pipelines, explore the following potential causes and corrective actions.
 
 ::: moniker range=">=azure-devops"
 
-* Prerelease versions of the .NET Core SDK aren't installed on Microsoft-hosted agents. After a new version of the .NET Core SDK is released, it can take a few weeks to roll out to all the Azure Pipelines data centers. You don't have to wait for this rollout to complete. You can use the [Use .NET Core](#build-environment) task to install the .NET Core SDK version you want on Microsoft-hosted agents.  
+- Prerelease versions of the .NET Core SDK aren't installed on Microsoft-hosted agents. A new version of the .NET Core SDK can take a few weeks to roll out to all Azure Pipelines data centers. Instead of waiting for this rollout to complete, you can use the [Use .NET Core](#build-environment) task to install the .NET Core SDK version you want on Microsoft-hosted agents.
 
 ::: moniker-end
 
-* Check the .NET Core SDK versions and runtime on your development machine and make sure they match the agent. You can include a command-line script `dotnet --version` in your pipeline to print the version of the .NET Core SDK. Either use the [.NET Core Tool Installer](#build-environment) to deploy the same version on the agent, or update your projects and development machine to the newer version of the .NET Core SDK.
+- Make sure the .NET Core SDK versions and runtime on your development machine match the pipeline agent. You can include a `dotnet --version` command-line script in your pipeline to print the version of the .NET Core SDK. Either use the [.NET Core Tool Installer](#build-environment) to deploy the same version on the agent, or update your projects and development machine to the pipeline version of the .NET Core SDK.
 
-* You might be using some logic in the Visual Studio IDE that isn't encoded in your pipeline. 
-Azure Pipelines runs each of the commands you specify in the tasks one after the other in a new process. 
-Examine the logs from the pipelines build to see the exact commands that ran as part of the build. 
-To locate the problem, repeat the same commands in the same order on your development machine.
+- You might be using some logic in Visual Studio that isn't encoded in your pipeline. Azure Pipelines runs each of the commands you specify in the tasks one after another in a new process. Examine the logs from the pipelines build to see the exact commands that ran in the build. To locate the problem, repeat the same commands in the same order on your development machine.
 
-* If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects, 
-  you should also use the **NuGet** task to restore packages specified in `packages.config` files.
-Add the **MSBuild** or **Visual Studio Build** task to build the .NET Framework projects.
+- If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects, you should use the **NuGet** task to restore packages specified in *packages.config* files. Add the **MSBuild** or **Visual Studio Build** task to build the .NET Framework projects.
 
-* Your builds might fail intermittently while restoring packages: either NuGet.org is having issues or there are networking problems between the Azure data center and NuGet.org. You can explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds, as it's not in our control.
+- Your builds might fail intermittently while restoring packages. Either NuGet.org is having issues, or there are networking problems between the Azure data center and NuGet.org. You can explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds.
 
-* Occasionally, a when new version of the .NET Core SDK or Visual Studio is rolled out, your build might break. For example, a newer version or feature of the NuGet tool is shipped with the SDK could break your build. To isolate this issue, use the **.NET Core Tool Installer** task to specify the version of the .NET Core SDK used in your build.
+- A new version of the .NET Core SDK or Visual Studio could break your build. For example, a newer version or feature of the NuGet tool that's shipped with the SDK could break the build. To isolate this issue, use the **.NET Core Tool Installer** task to specify the version of the .NET Core SDK to use in your build.
 
-## FAQ
+## Related content
 
-### Q: Where can I learn more about Azure Artifacts?
-
-A: [Azure Artifacts](../../artifacts/index.yml)
-
-### Q: Where can I learn more about .NET Core commands?
-
-A: [.NET Core CLI tools](/dotnet/core/tools/)
-
-### Q: Where can I learn more about running tests in my solution?
-
-A: [Unit testing in .NET Core projects](/dotnet/core/testing/)
-
-### Q: Where can I learn more about tasks?
-
-A: [Build and release tasks](../tasks/index.md)
+- To learn more about Azure Artifacts, see [Azure Artifacts](../../artifacts/index.yml).
+- To learn more about .NET Core commands, see [.NET Core CLI tools](/dotnet/core/tools/).
+- To learn more about running tests in your solution, see [Unit testing in .NET Core projects](/dotnet/core/testing/).
+- To learn more about tasks, see [Build and release tasks](../tasks/index.md).
