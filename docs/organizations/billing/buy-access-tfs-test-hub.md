@@ -40,7 +40,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 
    Users get invited to your organization, but aren't required to use Azure DevOps. 
 
-3. As the Azure DevOps Server Administrator, [add these same users to Azure DevOps Server](../../organizations/security/add-users-team-project.md#add-users-team-project). 
+3. As the Azure DevOps Server Administrator, [add these same users to Azure DevOps Server](../../organizations/security/add-users-team-project.md#add-project-users). 
 4. [Assign access levels for users](../../organizations/security/change-access-levels.md).
 
 ::: moniker range=" < azure-devops > azure-devops-2020"
@@ -56,7 +56,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
     > [!NOTE]
     > Invited users must sign in to Visual Studio Test Professional with the same credentials that they used to join your organization. 
 
-3. As the Azure DevOps Server Administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). Give users [Basic + Test Plans access](../security/change-access-levels.md) so they can use Azure Test Plans. 
+3. As the Azure DevOps Server Administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-project-users). Give users [Basic + Test Plans access](../security/change-access-levels.md) so they can use Azure Test Plans. 
 
    Test Plans installs automatically in Azure DevOps Server. 
 
