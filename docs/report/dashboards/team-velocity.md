@@ -44,10 +44,10 @@ Items in the *Proposed* or *Resolved* states are excluded from the **Completed**
 
 |Workflow state  |Description |
 |---------|---------|
-|Planned    | Work items assigned to a sprint before it starts. If reassigned after the sprint begins, they remain Planned in the original sprint and appear as Late or Incomplete in the new sprint.   |
-|Completed  | Work items assigned to the sprint and completed before the end of the sprint.        |
+|Planned    | Work items assigned to a sprint before and in the day the sprint starts. If a work item is re-assigned after the sprint starts (the 2nd day of the sprint), it remains Planned in the original sprint and appears as Late or Incomplete in the new sprint. If re-assigned before or the same day the sprint begins, it is removed from Planned from that sprint.|
+|Completed | Work items assigned to the sprint and completed before the end of the sprint.        |
 |Completed Late     |Work items assigned to the sprint but completed after the sprint ends.          |
-|Incomplete    | Work items assigned to the sprint but not yet completed.       |  
+|Incomplete    | Work items assigned to the sprint but not yet completed.       |
 | Resolved | Bugs assigned to the sprint, indicating a solution was implemented but not yet verified.|
 
 Later in this article, learn how to [open the Velocity in-context report](#velocity-chart) or [configure the Velocity widget](#configure-the-velocity-widget).
@@ -111,10 +111,10 @@ Complete the following steps to configure the Velocity widget.
 1. Select the ![Actions icon](../media/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog.
 
    :::image type="content" source="media/velocity/configure-dashboard-sequence.png" alt-text="Screenshot showing sequence of highlighted buttons to configure Velocity dashboard."::: 
-	
+ 
 	Modify the title, select the team, and then select either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 
-   :::image type="content" source="media/team-velocity-config-dialog.png" alt-text="Screenshot showing Configure dialog, Velocity widget.":::
+      :::image type="content" source="media/team-velocity-config-dialog.png" alt-text="Screenshot showing Configure dialog, Velocity widget.":::
 
 2. Specify the number of sprints you want to view. The default is 6 and the maximum is 15.    
 
