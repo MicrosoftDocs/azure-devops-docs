@@ -83,8 +83,8 @@ If you don't manage your user base with Microsoft Entra ID, as described in the 
 For more information about adding users to your organization, see the following articles:
 
 * [Add users to your organization](add-organization-users.md)
-* [Add users to a team](../security/add-users-team-project.md#add-users-to-a-team)
-* [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project)
+* [Add users to a team](../security/add-users-team-project.md#add-team-members)
+* [Add users to a project](../security/add-users-team-project.md#add-project-users)
 
 <a id="access-azure-ad"></a>
 
