@@ -216,8 +216,8 @@ As a team administrator, you can add new or existing members from the **Team Mem
 
 	   The system assigns the **Stakeholder** access level for the new user, when all of the five Basic (free) access levels are already assigned. Active contributors to a project need to have **Basic** access as a minimum. A **Project Collection Administrator** can change the access level and resend invitations from the [**Organization Settings** > **Users** page](#manage-users-or-resend-invitations).
 
-	> [!NOTE]
-	> Users with limited access, such as **Stakeholders**, can't access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
+	   > [!NOTE]
+	   > Users with limited access, such as **Stakeholders**, can't access select features even if granted permissions to those features. For more information, see [Permissions and access](permissions-access.md).
 
 When the process completes, a notification briefly displays to indicate success or failure. You can select **Details** to open the notification and review the details:
 
@@ -339,7 +339,7 @@ You add team members from **Project Settings** > **Work** > **Team configuration
 
 ---
 
-> [!TIP]
+> [!NOTE]
 > The team **Members** list has a **Total** indicator that shows the team size. The maximum value displayed by the indicator is 500. If your team has more than 500 members, the indicator shows the size as 500. If your team has fewer than 500 members, the indicator shows the actual size.
 > 
 > :::image type="content" source="media/add-users/total-team-members.png" alt-text="Screenshot of the Total indicator for the Team members.":::
@@ -349,8 +349,7 @@ You add team members from **Project Settings** > **Work** > **Team configuration
 
 Remove a user or group from a team by using the following procedures.
 
-> [!NOTE]
-> If the user you're planning to remove is a team administrator, first remove the user as a team administrator, and then remove the user from the team. For more information, see [Remove a Team administrator](../../organizations/settings/add-team-administrator.md#remove-an-administrator).
+If the user you're planning to remove is a team administrator, first remove the user as a team administrator, and then remove the user from the team. For more information, see [Remove a Team administrator](../../organizations/settings/add-team-administrator.md#remove-an-administrator).
 
 ::: moniker range="azure-devops"
 
@@ -364,11 +363,11 @@ Remove a user or group from a team by using the following procedures.
 
 1. Go to **Project Settings** > **Teams** and select the Team you want to update.
 
-1.  In the team **Members** section, review the **Direct Members** of the team. Locate the user to remove and select :::image type="icon" source="../../media/icons/more-actions.png"::: **More actions** > **Remove**:
+1. In the team **Members** section, review the **Direct Members** of the team. Locate the user to remove and select :::image type="icon" source="../../media/icons/more-actions.png"::: **More actions** > **Remove**:
 
    :::image type="content" source="media/add-users/direct-members-remove.png" alt-text="Screenshot of the Team profile page showing how to select the Remove option for a team member." lightbox="media/add-users/direct-members-remove.png":::
 
-1. In the confirmation dialog, select **Delete**: 
+1. In the confirmation dialog, select **Delete**:
 
    :::image type="content" source="media/add-users/remove-user-confirmation.png" alt-text="Screenshot of Delete member dialog confirmation.":::
 
@@ -487,7 +486,7 @@ Select the **Current UI** tab, and follow the instructions for adding users to p
 
 1. Enter the display name or email address for the user or group to add to the security group. Select the matching entry in the system, and then select **Save changes**. You can also add multiple accounts by separating the entries with a comma (**,**).
 
-   :::image type="content" source="media/project-level-permissions-add-a-user.png" border="false" alt-text="Screenshot that shows how to add users and groups to a security group.":::
+   :::image type="content" source="media/project-level-permissions-add-a-user.png" alt-text="Screenshot that shows how to add users and groups to a security group.":::
 
 1. (Optional) After you add users as members of the security group, you can customize the permissions for other functionality in the project. For example, you might adjust permissions in specific [work tracking areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md#set-permissions-on-a-shared-query).
 
@@ -682,7 +681,9 @@ If your on-premises deployment is integrated with SQL Server Reports, you must m
 ::: moniker range="azure-devops"
 
 - [Add users and manage access](../accounts/add-organization-users.md)
+
 - [Manage permissions with command line tool](manage-tokens-namespaces.md)
+
 - [Change project visibility to public or private](../../organizations/projects/make-project-public.md)
 
 ::: moniker-end
