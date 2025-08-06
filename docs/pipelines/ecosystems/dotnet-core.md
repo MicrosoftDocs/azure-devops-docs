@@ -1,10 +1,10 @@
 ---
 title: Build, test, and deploy .NET Core apps
 description: Use .NET Core to build apps with Azure Pipelines.
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
-ms.date: 01/26/2024
+ms.date: 08/05/2025
 ms.custom: freshness-fy22q2, content-freshness, devx-track-dotnet
 monikerRange: "<=azure-devops"
 ---
@@ -13,205 +13,112 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use an Azure Pipeline to automatically build, test, and deploy your .NET Core projects. This article shows you how to do the following tasks:
+This article describes how to use Azure Pipelines to work with .NET Core projects. The article walks you through the following tasks:
 
 ::: moniker range="<=azure-devops-2022"
 
-* Set up your build environment with [self-hosted](../agents/agents.md) agents.
-* Restore dependencies, build your project, and test with the [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
-* Test your code and use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) to publish code coverage results.
-* Package and deliver your build output to:
-   * your pipeline.
-   * a [NuGet feed](../artifacts/nuget.md).
-   * a `.zip` file to deploy a [web app to Azure](../targets/webapp.md).
+- Create a .NET Core web app and upload it to a GitHub repository.
+- Create an Azure DevOps project and Azure Pipelines pipeline to build the project.
+- Set up your build environment with [self-hosted](../agents/agents.md) agents.
+- Restore dependencies, build your project, and test with the .NET Core [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task or a [script](../scripts/cross-platform-scripting.md).
+- Use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) to publish code coverage results.
+- Package and deliver your build output to your pipeline, a [NuGet feed](../artifacts/nuget.md), and a *.zip* for deployment to an [Azure web app](../targets/webapp.md).
 ::: moniker-end
 
 ::: moniker range=">= azure-devops"
 
-* Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
-* Restore dependencies, build your project, and test with the  [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
-* Test your code and use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) to publish code coverage results.
-* Package and deliver your build output to:
-   * your pipeline.
-   * a [NuGet feed](../artifacts/nuget.md).
-   * a `.zip` file to deploy a [web app to Azure](../targets/webapp.md).
+- Create a .NET Core web app and upload it to a GitHub repository.
+- Create an Azure DevOps project and Azure Pipelines pipeline to build the project.
+- Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
+- Restore dependencies, build your project, and test with the .NET Core [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task or a [script](../scripts/cross-platform-scripting.md).
+- Use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) to publish code coverage results.
+- Package and deliver your build output to your pipeline, a [NuGet feed](../artifacts/nuget.md), and a ZIP file for deployment to an [Azure web app](../targets/webapp.md).
 
 ::: moniker-end
 
 > [!NOTE]
-> For help with .NET Framework projects, see [Build ASP.NET apps with .NET Framework](../apps/aspnet/build-aspnet-4.md).
+> To work with .NET Framework projects, see [Build ASP.NET apps with .NET Framework](../apps/aspnet/build-aspnet-4.md).
 
 ## Prerequisites
 
 ::: moniker range=">=azure-devops"
 
-| **Product** | **Requirements**   |
-|---|---|
-| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  |
-| **GitHub** | - A [GitHub](https://github.com) account.|
+To complete all the procedures in this article, you need the following prerequisites:
+
+- An Azure DevOps organization. You can [create one for free](../get-started/pipelines-sign-up.md).
+- Membership in the organization [Project Administrators group](../../organizations/security/change-project-level-permissions.md), to create Azure DevOps projects and grant project access to pipelines. Azure DevOps Organization owners automatically have this membership.
+- An Azure DevOps project in the organization. For instructions, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
+- The ability to run pipelines on Microsoft-hosted agents, by requesting a free tier of parallel jobs. The request can take several business days to process. For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
+- The **Administrator** or **Creator** role for [service connections](../library/add-resource-protection.md), which you can assign as a Project Administrator.
+- A [GitHub](https://github.com) account and repository.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-| **Product** | **Requirements**   |
-|---|---|
-| **Azure DevOps** | - An Azure DevOps collection.<br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).|
-| **GitHub** | - A [GitHub](https://github.com) account.|
+To complete all the procedures in this article, you need the following prerequisites:
+
+- An Azure DevOps collection.
+- An Azure DevOps project created in the organization. For instructions, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
+- Membership in the organization [Project Administrators group](../../organizations/security/change-project-level-permissions.md), to create Azure DevOps projects and grant project access to pipelines. Azure DevOps Organization owners automatically have this membership.
+- The **Administrator** or **Creator** role for [service connections](../library/add-resource-protection.md), which you can assign as a Project Administrator.
+- A [GitHub](https://github.com) account and repository.
 
 ::: moniker-end
 
-## Create your first pipeline
+## Create a .NET project and upload it to GitHub
 
-Are you new to Azure Pipelines? If so, then we recommend you try the following section first.
+If you already have a .NET project uploaded to your GitHub repository, you can skip this section. [!INCLUDE [include](../includes/dotnet-setup.md)]
 
-[!INCLUDE [include](../includes/dotnet-setup.md)]
+## Create a pipeline
 
-### Create a DevOps project
-
-Create a new Azure DevOps project to host your pipeline. 
-
-::: moniker range="azure-devops"
-
-1. In a browser, go to [dev.azure.com](https://dev.azure.com) and sign in.
-1. Select your organization.
-1. Create a new project by selecting **New project** or **Create project** if creating the first project in the organization.
-1. Enter a **Project name**.
-1. Select the **Visibility** for your project.
-1. Select **Create**.
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-1. In a browser, go to your Azure DevOps Server.
-1. Select your collection.
-1. Create a new project by selecting **New project** or **Create project** if creating the first project in the collection.
-1. Enter a **Project name**.
-1. Select the **Visibility** for your project.
-1. Select **Create**.
-
-::: moniker-end
-
-
-### Set up your build environment
-
-::: moniker range="<=azure-devops-2022"
-
-Your builds run on [self-hosted agents](../agents/agents.md#install). Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agents. You can build your .NET Core projects by using the .NET Core SDK and runtime on [Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), and [Docker](../agents/docker.md). 
-
-You can install a specific version of .NET SDK by adding the UseDotNet@2 task in your pipeline YAML file or add the task to your pipeline using the classic editor.
-
-Example YAML snippet:
-
-```yaml
-steps:
-- task: UseDotNet@2
-  inputs:
-    version: '8.x'
-```
-
-::: moniker-end
-
-::: moniker range=">=azure-devops"
-
-Your builds run on [Microsoft-hosted agents](../agents/hosted.md). You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, and macOS.
-
-Alternatively, you can use a [self-hosted agent](../agents/agents.md). With a self-hosted agent, you can use preview or private SDKs not officially supported by Azure DevOps Services and run incremental builds.
-
-::: moniker-end
-
-### Create your pipeline
-
-You can use the YAML pipeline editor or the classic editor to create your pipeline. To use the classic editor, select **Use the classic editor**.
+If you already have a pipeline in your repository, you can skip this section. Otherwise, you can use the Azure Pipelines YAML pipeline editor or Classic editor to create a pipeline as follows.
 
 # [YAML](#tab/yaml-editor)
 
 ::: moniker range=">=azure-devops"
 
-##### Create a new pipeline and select your source
-
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
-
-##### Configure your pipeline
-
-1. When the **Configure** tab appears, select **Show more** and select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
-
-1. Examine your new pipeline to see what the YAML does. 
-
-You can customize the YAML file for your requirements. For example, you can specify the agent pool or add a [task to install different .NET SDK](#build-environment).
-
-##### Save and run your pipeline
-
-1. When you're ready, select **Save and run**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
-
-1. Optionally, you can edit the commit message.
-1. Commit the new _azure-pipelines.yml_ file to your repository by selecting **Save and run**.
-1. To watch your pipeline in action, select the job in the **Jobs** section.
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-### Create and run your pipeline
-
-You can create a pipeline by using the YAML pipeline editor or the classic editor.
-
-1. Go to your project and select **Pipelines**.
-1. Select **Create pipeline** or **New pipeline** if creating the first pipeline for this project.
-
-##### Select your source
-
-1. Select your source repository. For this example, use **GitHub Enterprise Server**.
-
-   1. Enter the URL for your GitHub account. For example, `https://github.com/<username>`.
-   1. Enter your personal access token for your GitHub account.
-   1. Enter a Service connection name. For example, `my-github`.
-   1. Select **Create**.
-1. Select your GitHub repository.
-
-##### Configure your pipeline
 
 1. On the **Configure** tab, select **Show more** and select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
 
-1. Examine your new pipeline to see what the YAML does. 
- 
-You can customize the YAML file for your requirements. For example, you can add tasks to install a .NET SDK or to test and publish your project.
-
-##### Save and run your pipeline
+1. On the **Review pipeline** tab, examine the YAML code to see what it does. You can customize the YAML file for your requirements. For example, you could specify the agent pool or add a [task to install a different .NET SDK](#build-environment).
 
 ::: moniker-end
-
-::: moniker range=">= azure-devops-2020 <= azure-devops-2022"
-
-1. Select **Save and run**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing the Save and run button in a new YAML pipeline.](media/save-and-run-button-new-yaml-pipeline.png)
-
-1. To commit the new *azure-pipelines.yml* file to your repository, edit the commit message as needed and select **Save and run**.
-
-To watch your pipeline in action, select the job in the **Jobs** section.
-
-::: moniker-end
-
-# [Classic](#tab/classic-editor)
-
-Use these steps to create your pipeline using the classic editor.
-
-##### Create pipeline
-
-1. Go to your project and select **Pipelines**.
-
-1. Select **Create pipeline** or **New pipeline** if you're not creating the first pipeline for this project.
-1. Select **Use the classic editor**.
 
 ::: moniker range="< azure-devops"
 
-##### Select your source
+1. In your Azure DevOps project, select **Pipelines** from the left navigation menu.
+1. Select **New pipeline** or **Create pipeline** if this is the first pipeline in the project.
+1. Select your source repository type. For this example, use **GitHub Enterprise Server**.
+1. On the next screen, enter the following information:
+   - Enter the URL for your GitHub account. For example, `https://github.com/<username>`.
+   - Enter your personal access token for your GitHub account.
+   - Enter a Service connection name. For example, `my-github`.
+1. Select **Create**.
+1. Select your GitHub repository.
+1. On the **Configure** tab, select **Show more** and select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
+1. Examine your new pipeline to see what the YAML does. You can customize the YAML file for your requirements. For example, you can add tasks to install a .NET SDK or to test and publish your project.
+
+::: moniker-end
+<!--::: moniker range=">= azure-devops-2020 <= azure-devops-2022"-->
+
+1. When you're ready, select **Save and run**.
+
+   ![Screenshot that shows the Save and run button in a new YAML pipeline.](media/save-and-run-button-new-yaml-pipeline.png)
+
+1. Optionally edit the **Commit message**, and then select **Save and run** again.
+1. On the **Summary** tab, select the job in the **Jobs** section to watch your pipeline in action.
+
+# [Classic](#tab/classic-editor)
+
+1. In your Azure DevOps project, select **Pipelines** from the left navigation menu.
+1. Select **New pipeline** or **Create pipeline** if this is the first pipeline in the project.
+1. On the **Where is your code** screen, select the link in **Use the classic editor to create a pipeline without YAML**.
+   >[!NOTE]
+   >The ability to create Classic pipelines is turned off by default for new Azure DevOps organizations and projects. If you don't see the option to use the Classic editor, turn off the **Disable creation of new Classic pipelines** option in **Organization Settings**> **Pipelines** and/or **Project settings**> **Pipelines**.
+
+::: moniker range="< azure-devops"
 
 1. Select your source. For this example, select **GitHub Enterprise Server**.
 1. Select **Connect to GitHub Enterprise Server**.
@@ -222,33 +129,24 @@ Use these steps to create your pipeline using the classic editor.
 
 ::: moniker range=">= azure-devops"
 
-##### Select your source
-
-1. Select your source. For this example, select **GitHub**.
-1. Enter your GitHub credentials to create a GitHub service connection to use in your pipeline.
-1. Select your repository and select **Continue**.
+1. Under **Select a source**, select **GitHub**.
+1. Provide a **Connection name**, and then select **Authorize using OAuth**. You can also select to **Authorize with a GitHub personal access token**.
+1. Provide your GitHub repository organization and name, and your default branch, usually *main*.
+1. Select **Continue**.
 
 ::: moniker-end
 
-##### Configure your pipeline
+1. From **Select a template**, search for and select **ASP.NET Core**, and then select **Apply**. The pipeline page opens where you can add tasks, specify the agent pools and agents, and configure other build options.
+1. In the **Tasks** tab, under **Agent pool**, select **Azure Pipelines**.
+1. Under **Agent Specification**, select **windows-latest** for this example.
 
-1. From **Select a template**, find then select **ASP.NET Core**.
-
-   The pipeline page opens where you can configure your pipeline. Here you can add tasks, specify the agent pools and agents and configure other build options.
-
-1. In the **Tasks** tab, select your **Agent pool** (usually *Default*)
-1. Select the **Agent specification**. For this example, select **windows-latest**.
-   
-    You can add other tasks to the Agent job by selecting **+** on the agent job and selecting another task from the catalog. For example, you might want to add the **Use .NET Core** task as the first task to install the necessary version of the .NET SDK.
-
-##### Save and run your pipeline
+   **Agent job 1** currently contains the tasks **Restore**, **Build**, **Test**, **Publish**, and **Publish Artifacts**. You can add other tasks to **Agent job 1** by selecting **+** on job and selecting another task from the list. For example, you could add the **Use .NET Core** task as the first task to install a different version of the .NET SDK.
 
 ::: moniker range=">=azure-devops"
 
-1. Select **Save and queue** from the **Save & queue** dropdown list at the top of the page.
-1. In **Run pipeline**, enter a comment and select **Save and Run**.
-
-You can see your pipeline in action by selecting the job from the **Jobs** section on the **Summary** tab.
+1. Select **Save and queue** > **Save and queue** at the top of the page.
+1. In **Run pipeline**, enter a **Save comment** and then select **Save and Run**.
+1. On the **Summary** tab, select the job in the **Jobs** section to watch your pipeline in action.
 
 ::: moniker-end
 
@@ -272,11 +170,24 @@ You can see your pipeline in action by selecting the job from the **Jobs** secti
 
 ---
 
-You now have a working pipeline that's ready for you to customize! Read further to learn some of the common ways to customize your pipeline.
+You now have a working pipeline that's ready to customize.
 
-## Build environment
+### Set up your build environment
 
 ::: moniker range="<=azure-devops-2022"
+
+Your builds run on [self-hosted agents](../agents/agents.md#install). Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agents. You can build your .NET Core projects by using the .NET Core SDK and runtime on [Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), and [Docker](../agents/docker.md). 
+
+You can install a specific version of .NET SDK by adding the UseDotNet@2 task in your pipeline YAML file or add the task to your pipeline using the classic editor.
+
+Example YAML snippet:
+
+```yaml
+steps:
+- task: UseDotNet@2
+  inputs:
+    version: '8.x'
+```
 
 Azure Pipelines uses self-hosted agents to build your .NET Core projects. Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agents. You can build your .NET Core projects by using the .NET Core SDK and runtime on [Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), and [Docker](../agents/docker.md).
 
@@ -309,6 +220,10 @@ steps:
 ::: moniker-end
 
 ::: moniker range=">=azure-devops"
+
+Your builds run on [Microsoft-hosted agents](../agents/hosted.md). You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, and macOS.
+
+Alternatively, you can use a [self-hosted agent](../agents/agents.md). With a self-hosted agent, you can use preview or private SDKs not officially supported by Azure DevOps Services and run incremental builds.
 
 You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without the need to set up infrastructure. 
 

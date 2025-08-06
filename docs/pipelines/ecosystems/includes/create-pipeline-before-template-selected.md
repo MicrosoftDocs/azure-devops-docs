@@ -4,18 +4,19 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 12/01/2023
+ms.date: 08/05/2025
 ms.custom: devdivchpfy22
 ---
 
-1. Sign in to your Azure DevOps organization and go to your project.
+1. In your Azure DevOps project, select **Pipelines** from the left navigation menu.
 
-1. Go to **Pipelines**, and then select **New pipeline** or **Create pipeline** if creating your first pipeline.
+1. Select **New pipeline** or **Create pipeline** if this is the first pipeline in the project.
 
-1. Do the steps of the wizard by first selecting **GitHub** as the location of your source code.
+1. On the **Where is your code** screen, select **GitHub**.
 
 1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When you see the list of repositories, select your repository.
+1. On the **Select a repository** screen, select the repository your .NET app is in.
 
 1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
+
