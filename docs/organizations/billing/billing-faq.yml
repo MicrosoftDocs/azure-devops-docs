@@ -313,10 +313,18 @@ sections:
           Q: Why is the location of my organization resource incorrect? 
         answer: |
           A: The location of your organization resource could be incorrect for various reasons, such as [changing your organization region](../accounts/change-organization-location.md#change-organization-geography). To find the location of your organization, [check the geography listed in Azure DevOps](../accounts/change-organization-location.md), which is the source of truth for Azure DevOps locations. If the location listed there doesn't match the location listed inside the Azure portal, do these steps:
-          
+                 
           1. In Azure DevOps Billing settings, [remove your billing subscription](change-azure-subscription.md#remove-your-billing-subscription).
           2. In the Azure portal, delete the Azure DevOps resource group if it's still there. 
           3. In Azure DevOps Billing settings, [set up billing for your organization](set-up-billing-for-your-organization-vs.md#set-up-billing).
+
+          > [!IMPORTANT]
+          > - When you remove the billing subscription from your organization, any paid quantities for the following resources will immediately go back to the free tier of service until billing is set up again:
+          >    - Basic
+          >    - Azure Artifacts
+          >    - Azure Test Plans
+          >    - Microsoft-hosted CI/CD
+          >    - Self-hosted CI/CD
 
       - question: |
           Q: Why is the name of my organization resource incorrect? 
