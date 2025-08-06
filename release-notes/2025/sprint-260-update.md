@@ -1,14 +1,16 @@
 ---
-title: TBD
+title: Azure Boards and Azure Pipelines GitHub Enterprise Cloud Integration
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 8/11/2025
-description: TBC
+description: Azure Boards and Azure Pipelines GitHub Enterprise Cloud Integration
 ---
 
-# TBD
+# Azure Boards and Azure Pipelines GitHub Enterprise Cloud Integration
 
-Placeholder 
+Azure Boards and Azure Pipelines now support integration with GitHub Enterprise Cloud organizations with data residency enabled. You can learn more about how to create a new connection for Azure Boards and a new pipeline form the release notes. 
+
+In addition, with this release we are no longer allowing organizations to create public projects. This change won't impact organizations that already have the Allow public policy enabled. 
 
 Check out the release notes for details.
 
