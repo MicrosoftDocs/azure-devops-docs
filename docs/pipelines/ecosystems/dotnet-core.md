@@ -20,7 +20,8 @@ This article describes how to use Azure Pipelines to work with .NET Core project
 - Create a .NET Core web app and upload it to a GitHub repository.
 - Create an Azure DevOps project and Azure Pipelines pipeline to build the project.
 - Set up your build environment with [self-hosted](../agents/agents.md) agents.
-- Restore dependencies, build your project, and test with the .NET Core [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task or a [script](../scripts/cross-platform-scripting.md).
+- Restore dependencies, build your project, and test with the **.NET Core** ([DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2)) task or a [script](../scripts/cross-platform-scripting.md).
+- Use the **.NET Core** (`DotNetCoreCLI@2`) task to add other .NET SDK commands to your pipeline.
 - Use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) to publish code coverage results.
 - Package and deliver your build output to your pipeline, a [NuGet feed](../artifacts/nuget.md), and a *.zip* for deployment to an [Azure web app](../targets/webapp.md).
 ::: moniker-end
@@ -30,7 +31,8 @@ This article describes how to use Azure Pipelines to work with .NET Core project
 - Create a .NET Core web app and upload it to a GitHub repository.
 - Create an Azure DevOps project and Azure Pipelines pipeline to build the project.
 - Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
-- Restore dependencies, build your project, and test with the .NET Core [DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task or a [script](../scripts/cross-platform-scripting.md).
+- Restore dependencies, build your project, and test with the **.NET Core** ([DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2)) task or a [script](../scripts/cross-platform-scripting.md).
+- Use the **.NET Core** (`DotNetCoreCLI@2`) task to add other .NET SDK commands to your pipeline.
 - Use the [publish code coverage task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) to publish code coverage results.
 - Package and deliver your build output to your pipeline, a [NuGet feed](../artifacts/nuget.md), and a ZIP file for deployment to an [Azure web app](../targets/webapp.md).
 
@@ -46,8 +48,8 @@ This article describes how to use Azure Pipelines to work with .NET Core project
 To complete all the procedures in this article, you need the following prerequisites:
 
 - An Azure DevOps organization. You can [create one for free](../get-started/pipelines-sign-up.md).
-- Membership in the organization [Project Administrators group](../../organizations/security/change-project-level-permissions.md), to create Azure DevOps projects and grant project access to pipelines. Azure DevOps Organization owners automatically have this membership.
-- An Azure DevOps project in the organization. For instructions, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
+- Membership in the organization [Project Administrators group](../../organizations/security/change-project-level-permissions.md), so you can create Azure DevOps projects and grant project access to pipelines. Azure DevOps Organization owners automatically have this membership.
+- An Azure DevOps project in the organization. [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
 - The ability to run pipelines on Microsoft-hosted agents, by requesting a free tier of parallel jobs. The request can take several business days to process. For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
 - The **Administrator** or **Creator** role for [service connections](../library/add-resource-protection.md), which you can assign as a Project Administrator.
 - A [GitHub](https://github.com) account and repository.
@@ -60,7 +62,7 @@ To complete all the procedures in this article, you need the following prerequis
 
 - An Azure DevOps collection.
 - An Azure DevOps project created in the organization. For instructions, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- Membership in the organization [Project Administrators group](../../organizations/security/change-project-level-permissions.md), to create Azure DevOps projects and grant project access to pipelines. Azure DevOps Organization owners automatically have this membership.
+- Membership in the [Project Administrators group](../../organizations/security/change-project-level-permissions.md), so you can create Azure DevOps projects and grant project access to pipelines. Azure DevOps Organization owners automatically have this membership.
 - The **Administrator** or **Creator** role for [service connections](../library/add-resource-protection.md), which you can assign as a Project Administrator.
 - A [GitHub](https://github.com) account and repository.
 
@@ -68,12 +70,11 @@ To complete all the procedures in this article, you need the following prerequis
 
 ## Create a .NET project and upload it to GitHub
 
-If you already have a .NET project uploaded to your GitHub repository, you can skip this section. [!INCLUDE [include](../includes/dotnet-setup.md)]
+If you want to use a .NET project already uploaded to your GitHub repository, you can skip this section. [!INCLUDE [include](../includes/dotnet-setup.md)]
 
 ## Create a pipeline
 
-If you already have a pipeline in your repository, you can skip this section. Otherwise, you can use the Azure Pipelines YAML pipeline editor or Classic editor to create a pipeline as follows.
-
+If you have a pipeline you want to use, you can skip this section. Otherwise, you can use either the YAML pipeline editor or the classic editor to create a pipeline as follows:
 # [YAML](#tab/yaml-editor)
 
 ::: moniker range=">=azure-devops"
@@ -81,8 +82,7 @@ If you already have a pipeline in your repository, you can skip this section. Ot
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
 1. On the **Configure** tab, select **Show more** and select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
-
-1. On the **Review pipeline** tab, examine the YAML code to see what it does. You can customize the YAML file for your requirements. For example, you could specify the agent pool or add a [task to install a different .NET SDK](#build-environment).
+1. On the **Review pipeline** tab, examine the YAML code. You can customize the file for your requirements. For example, you could specify the agent pool or add a [task to install a different .NET SDK](#build-environment).
 
 ::: moniker-end
 
@@ -92,13 +92,13 @@ If you already have a pipeline in your repository, you can skip this section. Ot
 1. Select **New pipeline** or **Create pipeline** if this is the first pipeline in the project.
 1. Select your source repository type. For this example, use **GitHub Enterprise Server**.
 1. On the next screen, enter the following information:
-   - Enter the URL for your GitHub account. For example, `https://github.com/<username>`.
-   - Enter your personal access token for your GitHub account.
-   - Enter a Service connection name. For example, `my-github`.
+   - The URL for your GitHub account, for example `https://github.com/myname`.
+   - Your GitHub personal access token (PAT).
+   - A service connection name, for example `my-github`.
 1. Select **Create**.
 1. Select your GitHub repository.
 1. On the **Configure** tab, select **Show more** and select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
-1. Examine your new pipeline to see what the YAML does. You can customize the YAML file for your requirements. For example, you can add tasks to install a .NET SDK or to test and publish your project.
+1. Examine the new YAML pipeline code. You can customize the YAML file for your requirements. For example, you could add a [task to install a different .NET SDK](#build-environment) or to test and publish your project.
 
 ::: moniker-end
 <!--::: moniker range=">= azure-devops-2020 <= azure-devops-2022"-->
@@ -114,9 +114,9 @@ If you already have a pipeline in your repository, you can skip this section. Ot
 
 1. In your Azure DevOps project, select **Pipelines** from the left navigation menu.
 1. Select **New pipeline** or **Create pipeline** if this is the first pipeline in the project.
-1. On the **Where is your code** screen, select the link in **Use the classic editor to create a pipeline without YAML**.
+1. On the **Where is your code** screen, select **Use the classic editor to create a pipeline without YAML**.
    >[!NOTE]
-   >The ability to create Classic pipelines is turned off by default for new Azure DevOps organizations and projects. If you don't see the option to use the Classic editor, turn off the **Disable creation of new Classic pipelines** option in **Organization Settings**> **Pipelines** and/or **Project settings**> **Pipelines**.
+   >The ability to create classic pipelines is turned off by default for new Azure DevOps organizations and projects. If you don't see the option to use the classic editor, turn off the **Disable creation of classic build pipelines** and **Disable creation of classic release pipelines** in **Organization Settings** > **Pipelines** > **Settings** and/or **Project settings**> **Pipelines** > **Settings**.
 
 ::: moniker range="< azure-devops"
 
@@ -172,15 +172,18 @@ You can see your pipeline in action by selecting the job from the **Jobs** secti
 
 You now have a working pipeline that's ready to customize.
 
-### Set up your build environment
+## Set up your build environment
 
 ::: moniker range="<=azure-devops-2022"
 
-Your builds run on [self-hosted agents](../agents/agents.md#install). Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agents. You can build your .NET Core projects by using the .NET Core SDK and runtime on [Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), and [Docker](../agents/docker.md). 
+You can build your .NET Core projects by using the .NET Core SDK and runtime on [Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), or [Docker](../agents/docker.md). Azure Pipelines uses [self-hosted agents](../agents/agents.md#install) to build your .NET Core project. Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agents.
 
-You can install a specific version of .NET SDK by adding the UseDotNet@2 task in your pipeline YAML file or add the task to your pipeline using the classic editor.
+To install a specific version of the .NET SDK, add the `UseDotNet@2` task in your pipeline YAML file or add the **.NET Core** task to your pipeline in the classic editor.
 
-Example YAML snippet:
+>[!NOTE]
+>For agents that run on physical systems, installing SDKs and tools through your pipeline alters the build environment on the agent's host.
+
+The following example YAML snippet installs .NET SDK 8.0.x:
 
 ```yaml
 steps:
@@ -189,11 +192,19 @@ steps:
     version: '8.x'
 ```
 
-Azure Pipelines uses self-hosted agents to build your .NET Core projects. Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agents. You can build your .NET Core projects by using the .NET Core SDK and runtime on [Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), and [Docker](../agents/docker.md).
+To install a newer SDK, set `performMultiLevelLookup` to `true`.
 
-For example, to select a pool and agent capabilities in the pipeline YAML file:  
+```yaml
+steps:
+- task: UseDotNet@2
+  displayName: 'Install .NET Core SDK'
+  inputs:
+    version: 8.x
+    performMultiLevelLookup: true
+    includePreviewVersions: true # Required for preview versions
+```
 
-You can select the agent pool and agent for your build job. Agents are specified based on their capabilities.
+You can select the agent pool and agent for your build job. You can also specify agents based on their capabilities. For example, the following YAML pipeline snippet selects a pool and agent capabilities.
 
 ```yml
 pool:
@@ -203,42 +214,24 @@ pool:
   - anotherCapability -equals somethingElse
 ```
 
-You can install a specific version of .NET SDK by adding the UseDotNet@2 task in your pipeline. Keep in mind that for agents that run on physical systems, installing SDKs and tools through your pipeline alters the build environment on the agent's host.
-
-To install a newer SDK, set `performMultiLevelLookup` to `true` in the following snippet: 
-
-```yaml
-steps:
-- task: UseDotNet@2
-  displayName: 'Install .NET Core SDK'
-  inputs:
-    version: 8.x
-    performMultiLevelLookup: true
-    includePreviewVersions: true # Required for preview versions
-```
-
 ::: moniker-end
 
 ::: moniker range=">=azure-devops"
 
-Your builds run on [Microsoft-hosted agents](../agents/hosted.md). You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, and macOS.
+You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, or macOS. Your builds run on [Microsoft-hosted agents](../agents/hosted.md), so you don't need to set up infrastructure.
 
-Alternatively, you can use a [self-hosted agent](../agents/agents.md). With a self-hosted agent, you can use preview or private SDKs not officially supported by Azure DevOps Services and run incremental builds.
+The Azure Pipelines [Microsoft-hosted agents](../agents/hosted.md) include several preinstalled versions of supported .NET Core SDKs. See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of available images and configuration examples.
 
-You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without the need to set up infrastructure. 
-
-For example, Ubuntu is set here in the pipeline YAML file.  
+For example, the following YAML pipeline snippet sets Ubuntu OS for the agent pool.
 
 ```yaml
 pool:
   vmImage: 'ubuntu-latest' 
 ```
 
-See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and further configuration examples.
+Microsoft-hosted agents don't include some older versions of the .NET Core SDK, and don't typically include prerelease versions. If you need these versions of the SDK on Microsoft-hosted agents, you can install them by using the [UseDotNet@2](/azure/devops/pipelines/tasks/reference/use-dotnet-v2) task.
 
-The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines include several preinstalled versions of supported .NET Core SDKs. Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. They also don't typically include prerelease versions. If you need these versions of the SDK on Microsoft-hosted agents, install them using the [UseDotNet@2](/azure/devops/pipelines/tasks/reference/use-dotnet-v2) task.
-
-For example, to install 5.0.x SDK, add the following snippet:
+For example, use the following snippet to install the 5.0.x SDK:
 
 ```yaml
 steps:
@@ -247,7 +240,7 @@ steps:
     version: '5.x'
 ```
 
-Windows agents already include a .NET Core runtime. To install a newer SDK, set `performMultiLevelLookup` to `true` in the following snippet: 
+Windows agents already include a .NET Core runtime. To install a newer SDK, set `performMultiLevelLookup` to `true` as in the following snippet:
 
 ```yaml
 steps:
@@ -259,19 +252,33 @@ steps:
     includePreviewVersions: true # Required for preview versions
 ```
 
-> [!TIP]
-> To save the cost of running the tool installer, you can set up a [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), or [Windows](../agents/windows-agent.md) [self-hosted agent](../agents/agents.md#install).
-> You can also use self-hosted agents to save time if you have a large repository or you run incremental builds. A self-hosted agent can also help you in using the SDKs that aren't included in Azure DevOps or are only available on your corporate or on-premises environments. 
+Alternatively, you can use [self-hosted agents](../agents/agents.md#self-hosted-agents) to build your .NET Core projects. You can set up [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), or [Windows](../agents/windows-agent.md) self-hosted agents. 
+
+Self-hosted agents let you:
+
+- Avoid the cost of running the `UseDotNet@2` tool installer.
+- Decrease build time if you have a large repository.
+- Run incremental builds.
+- Use preview or private SDKs that Microsoft doesn't officially support.
+- Use SDKs available only on your corporate or on-premises environments.
+
+For more information, see [Self-hosted agents](../agents/agents.md#self-hosted-agents).
 
 ::: moniker-end
 
 ## Restore dependencies
 
-NuGet is a popular way to depend on code that you don't build. You can download NuGet packages and project-specific tools that are specified in the project file by running the `dotnet restore` command either through the **.NET Core** task or directly in a script in your pipeline. For more information, see  [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
+NuGet packages are a way for your project to depend on code that you don't build. You can download NuGet packages and project-specific tools by running the `dotnet restore` command, either through the **.NET Core** (`DotNetCoreCLI@2`) task or as a script in your pipeline. The `dotnet restore` command uses the `NuGet.exe` packaged with the .NET Core SDK and can only restore packages specified in .NET Core project *.csproj* files.
 
-You can download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository. The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds. If your feed is in the same project as your pipeline, you don't need to authenticate. 
+You can use the **.NET Core** (`DotNetCoreCLI@2`) task to download NuGet packages from Azure Artifacts, NuGet.org, or another external or internal NuGet repository, and to restore packages from authenticated NuGet feeds. If your feed is in the same project as your pipeline, you don't need to authenticate. For more information, see [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 
-This pipeline uses an Azure Artifact feed for `dotnet restore` in the **DotNetCoreCLI@2** task. 
+::: moniker range=">=azure-devops"
+
+When you use Microsoft-hosted agents, you get a new machine every time you run a build, which restores the packages with each run. Restoration can take a significant amount of time. To mitigate this issue, use Azure Artifacts or a self-hosted agent to take advantage of the package cache.
+
+::: moniker-end
+
+The following pipeline uses the `DotNetCoreCLI@2` task to restore an Azure Artifact feed.
 
 ```yaml
 trigger:
@@ -305,9 +312,99 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 ```
 
-The `dotnet restore` command uses the `NuGet.exe` packaged with the .NET Core SDK and can only restore packages specified in the .NET Core project `.csproj` files. 
+In .NET Core SDK version 2.0 and newer, packages restore automatically when you run commands such as `dotnet build`. You still need to use the **.NET Core** (`DotNetCoreCLI@2`) task to restore packages if you use an authenticated feed.
 
-If you also have a Microsoft .NET Framework project in your solution or use `package.json` to specify your dependencies, use the **NuGet** task to restore those dependencies.
+If your feed is authenticated, manage its credentials by creating a NuGet service connection in **Project Settings** > **Pipelines** > **Service connections**. For more information about NuGet service connections, see [Publish NuGet packages with Azure Pipelines](../artifacts/nuget.md).
+
+### Restore packages from NuGet.org
+
+To restore packages from NuGet.org, update your pipeline as follows.
+
+# [YAML](#tab/yaml-editor)
+
+You can add the restore command to your pipeline by editing the YAML code directly or by using the task assistant.
+
+Add the **.NET Core** (`DotNetCoreCLI@2`) task directly by inserting the following snippet into your *azure-pipelines.yml* file before your build tasks.
+
+```yaml
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Restore
+  inputs:
+    command: restore
+    projects: '**/*.csproj'
+    feedsToUse: select
+```
+
+To use the task assistant:
+
+1. Go to the position in the YAML file where you want to insert the task.
+1. Select **.NET Core** from the task catalog.
+1. On the configuration screen, select **restore** from the **Command** dropdown list.
+1. In the **Path to project(s) or solution(s)** field, enter the path to your *.csproj* files. You can use the wildcard *\*\*/\*.csproj* for all *.csproj* files in all subfolders.
+1. For **Feeds to add**, ensure that **Feed(s) I select here** and **Use packages from NuGet.org** are selected.
+1. Select **Add**.
+1. Select **Validate and save**, and then select **Save** to commit the change.
+
+# [Classic](#tab/classic-editor)
+
+Use these steps to add a restore task by using the classic editor:
+
+1. On the **Tasks** tab in your pipeline, select **Agent job 1** or other job that runs your build tasks.
+1. Select **+** to add a new task to that job.
+1. In the task catalog, select **.NET Core** and then select **Add**.
+1. In the left pane, select the added **dotnet build** task to open the task editor.
+1. Select **restore** from the **Command** dropdown list. The display name changes to **dotnet restore**.
+1. In the **Path to project(s) or solution(s)** field, enter the path to your *.csproj* files. You can use the wildcard *\*\*/\*.csproj* for all *.csproj* files in all subfolders.
+1. For **Feeds to add**, ensure that **Feed(s) I select here** and **Use packages from NuGet.org** are selected.
+1. In the left pane, drag the task to position it before the **Build** task.
+1. At the top of the page, select **Save & queue** > **Save**.
+
+---
+
+### Restore packages from an external feed
+
+To specify an external NuGet repository, put the URL in a *NuGet.config* file in your repository. Make sure any custom feed is specified in your *NuGet.config* file, and that credentials are specified in a NuGet service connection.
+
+To restore packages from an external feed, add the `restore` task as instructed in the previous section, but change the configuration settings as follows:
+
+# [YAML](#tab/yaml-editor)
+
+Add the **.NET Core** (`DotNetCoreCLI@2`) task directly by inserting the following snippet into your *azure-pipelines.yml* file before your build tasks. Replace `<NuGet service connection>` with your service connection name.
+
+```yaml
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Restore
+  inputs:
+    command: restore
+    projects: '**/*.csproj'
+    feedsToUse: config
+    nugetConfigPath: NuGet.config    # Relative to root of the repository
+    externalFeedCredentials: <NuGet service connection>
+```
+
+To use the task assistant:
+
+1. Add the **.NET Core** task and select **restore** on the configuration screen as in the preceding procedure.
+1. For **Feeds to add**, select **Feeds in my NuGet.config**.
+1. Under **Path to NuGet.config**, enter the path to your *NuGet.config* file, relative to the root of your repository. You can select the ellipsis **...** to browse to and select the location.
+1. Under **Credentials for feeds outside this organization/collection**, select credentials to use for external registries located in the selected *NuGet.config*. For feeds in this organization, you can leave this field blank. The build’s credentials are used automatically.
+
+# [Classic](#tab/classic-editor)
+
+1. Add the **.NET Core** task and select **restore** on the configuration screen.
+1. For **Feeds to add**, select **Feeds in my NuGet.config**.
+1. Under **Path to NuGet.config**, enter the path to your *NuGet.config* file, relative to the root of your repository. You can select the ellipsis **...** to browse to and select the repository location.
+1. Under **Credentials for feeds outside this organization/collection**, select credentials to use for external registries located in the selected *NuGet.config*. For feeds in this organization, you can leave this field blank because the build’s credentials are used automatically.
+
+   You can select **Manage** to go to your project settings and select the connection. You can also select **New** to create a service connection. Be sure to select the checkbox for **Grant access permission to all pipelines**.
+
+---
+
+### Restore packages for .NET Framework projects
+
+If you also have a Microsoft .NET Framework project in your solution or use *package.json* to specify your dependencies, use the **NuGetCommand@2** task to restore those dependencies.
 
 ```yaml
 - task: NuGetCommand@2
@@ -317,82 +414,16 @@ If you also have a Microsoft .NET Framework project in your solution or use `pac
     feedsToUse: 'select'
 ```
 
-> [!NOTE]
-> If you're using Ubuntu 24.04 or higher, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the `NuGetCommand@2` task. For more information, see [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images).
-
-In .NET Core SDK version 2.0 and newer, packages are restored automatically when running commands such as `dotnet build`. However, you would still need to use the **.NET Core** task to restore packages if you use an authenticated feed.
-
-Your builds can fail because of connection issues when you restore packages from NuGet.org. You can use Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) to cache the packages. The credentials of the pipeline are automatically used when it connects to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service** account. To learn more about using Azure Artifacts to cache your NuGet packages, see [Connect to Azure Artifact feeds](../../artifacts/nuget/nuget-exe.md).
-
-To specify a NuGet repository, put the URL in a `NuGet.config` file in your repository. If your feed is authenticated, manage its credentials by creating a NuGet service connection in the **Services** tab under **Project Settings**.
-
-::: moniker range=">=azure-devops"
-
-When you use Microsoft-hosted agents, you get a new machine every time you run a build, which restores the packages with each run. Restoration can take a significant amount of time. To mitigate, you can either use Azure Artifacts or a self-hosted agent with the benefit of using the package cache.
-
-::: moniker-end
-
-For more information about NuGet service connections, see [publish to NuGet feeds](../artifacts/nuget.md).
-
-### Restore packages from an external feed
-
-Do the following to restore packages from an external feed.
-
-# [YAML](#tab/yaml-editor)
-
-You can add the restore command to your pipeline using the YAML pipeline editor by directly inserting the following snippet into your `azure-pipelines.yml` file or using the task assistant to add the **.NET Core** task.
-
-```yaml
-# do this before your build tasks
-steps:
-- task: DotNetCoreCLI@2
-  displayName: Restore
-  inputs:
-    command: restore
-    projects: '**/*.csproj'
-    feedsToUse: config
-    nugetConfigPath: NuGet.config    # Relative to root of the repository
-    externalFeedCredentials: <Name of the NuGet service connection>
-```
- Replace the \<placeholder\> with your service connection name.
-
-To use the task assistant:
-
-To add a build task using the task assistant, do the following steps:
-
-1. Go to the position in the YAML file where you want to insert the task.
-
-1. Select the **.NET Core** from the task catalog.
-1. Select the **restore** command from the **Command** dropdown list.  
-1. In the **Path to project(s)** field, enter the path to your `.csproj` files.
-1. Select **Add**.
-1. Select **Save** to commit the change.
-
-# [Classic](#tab/classic-editor)
-
-Use these steps to add a restore task using the classic editor:
-
-1. Select **Tasks** in your pipeline and select the job that runs your build tasks. 
-
-1. Select **+** to add a new task to that job.
-1. In the task catalog, find and select **.NET Core** task and select **Add**.
-1. Select the task to open the task editor.
-1. Select **restore** in the **Command** list and specify any other options you need for this task.
-1. In the task list, drag the task to position it before the build task.
-1. From the **Save & queue** dropdown list, select an option to save the change.
-
----
-
-> [!NOTE]
-> Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service connection.
+>[!NOTE]
+>For Ubuntu 24.04 or higher, you must use the **NuGetAuthenticate** task instead of the **NuGetCommand@2** task with the .NET CLI. For more information, see [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images).
 
 ## Build your project
 
-Build your .NET Core projects by running the `dotnet build` command. You can add the command to your pipeline as a command line script or by using the .NET Core task.
+Build your .NET Core projects by running the `dotnet build` command. You can add the command to your pipeline as a command line script or by using the **.NET Core** (`DotNetCoreCLI@2`) task.
 
-### Build with the .NET Core task
+### Use the .NET Core task
 
-YAML example to build using the DotNetCoreCLI@2 task:
+YAML example to build using the **.NET Core** (`DotNetCoreCLI@2`) task:
 
 ```yaml
 steps:
@@ -803,7 +834,7 @@ For more information, see [Publish symbols](../artifacts/symbols.md).
 
 ## Troubleshooting
 
-If your project builds on your development machine, but not in Azure Pipelines, explore the following potential causes and corrective actions.
+If your project builds on your local machine but not in Azure Pipelines, explore the following potential causes and corrective actions.
 
 ::: moniker range=">=azure-devops"
 
@@ -811,19 +842,22 @@ If your project builds on your development machine, but not in Azure Pipelines, 
 
 ::: moniker-end
 
-- Make sure the .NET Core SDK versions and runtime on your development machine match the pipeline agent. You can include a `dotnet --version` command-line script in your pipeline to print the version of the .NET Core SDK. Either use the [.NET Core Tool Installer](#build-environment) to deploy the same version on the agent, or update your projects and development machine to the pipeline version of the .NET Core SDK.
+- A new version of the .NET Core SDK or Visual Studio that contains a newer version or feature of the NuGet tool could break the build. Make sure the .NET Core SDK versions and runtime on your development machine match the pipeline agent.
 
-- You might be using some logic in Visual Studio that isn't encoded in your pipeline. Azure Pipelines runs each of the commands you specify in the tasks one after another in a new process. Examine the logs from the pipelines build to see the exact commands that ran in the build. To locate the problem, repeat the same commands in the same order on your development machine.
+  You can include a `dotnet --version` command-line script in your pipeline to print the version of the .NET Core SDK. Either use the [.NET Core Tool Installer](#build-environment) to deploy the same version on the agent, or update your projects and development machine to the pipeline version of the .NET Core SDK.
 
-- If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects, you should use the **NuGet** task to restore packages specified in *packages.config* files. Add the **MSBuild** or **Visual Studio Build** task to build the .NET Framework projects.
+- You might be using some logic in Visual Studio that isn't encoded in your pipeline. Azure Pipelines runs each command you specify in a task sequentially in a new process. Examine the logs from the pipelines build to see the exact commands that ran in the build. To locate the problem, repeat the same commands in the same order on your development machine.
 
-- Your builds might fail intermittently while restoring packages. Either NuGet.org is having issues, or there are networking problems between the Azure data center and NuGet.org. You can explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds.
+- If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects, use the **NuGet** task to restore packages specified in the *packages.config* files. Add the **MSBuild** or **Visual Studio Build** task to build the .NET Framework projects.
 
-- A new version of the .NET Core SDK or Visual Studio could break your build. For example, a newer version or feature of the NuGet tool that's shipped with the SDK could break the build. To isolate this issue, use the **.NET Core Tool Installer** task to specify the version of the .NET Core SDK to use in your build.
+- Your builds might fail intermittently because of connection issues when you restore packages from NuGet.org. NuGet.org might be having issues, or there could be networking problems between the Azure data center and NuGet.org. You can explore whether using Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) to cache the packages improves the reliability of your builds.
+
+  The credentials of the pipeline are automatically used to connect to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service** account. To learn more about using Azure Artifacts to cache your NuGet packages, see [Connect to Azure Artifact feeds](../../artifacts/nuget/nuget-exe.md).
+
 
 ## Related content
 
-- To learn more about Azure Artifacts, see [Azure Artifacts](../../artifacts/index.yml).
-- To learn more about .NET Core commands, see [.NET Core CLI tools](/dotnet/core/tools/).
-- To learn more about running tests in your solution, see [Unit testing in .NET Core projects](/dotnet/core/testing/).
-- To learn more about tasks, see [Build and release tasks](../tasks/index.md).
+- [Azure Artifacts](../../artifacts/index.yml)
+- [Build and release tasks](../tasks/index.md)
+- [.NET Core CLI tools](/dotnet/core/tools/)
+- [Unit testing in .NET Core projects](/dotnet/core/testing/)
