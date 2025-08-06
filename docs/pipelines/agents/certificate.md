@@ -50,7 +50,7 @@ The agent version 2.125.0 or above has the ability to ignore SSL server certific
 
 > [!IMPORTANT]
 > 
-> Ignoring SSL server certificate validation errors is not secure and not recommended, we highly suggest you install the certificate into your machine certificate store.
+> Ignoring SSL server certificate validation errors isn't secure and not recommended, we highly suggest you install the certificate into your machine certificate store.
 
 Pass `--sslskipcertvalidation` during agent configuration
 ```
@@ -59,15 +59,15 @@ Pass `--sslskipcertvalidation` during agent configuration
 
 > [!NOTE]
 > 
-> There is limitation of using this flag on Linux and macOS  
-> The `libcurl` library on your Linux or macOS machine needs to built with OpenSSL, [More Detail](https://github.com/dotnet/corefx/issues/9728)
+> To use the `--sslskipcertvalidation` flag on Linux and macOS,
+> the `libcurl` library on your Linux or macOS machine must be built with OpenSSL. [More information](https://github.com/dotnet/corefx/issues/9728)
 
 ### Git get sources fails with SSL certificate problem (Windows agent only)
 
 We ship command-line Git as part of the Windows agent.
-We use this copy of Git for all Git related operation.
+We use this copy of Git for all Git related operations.
 When you have a self-signed SSL certificate for your on-premises Azure DevOps Server machine, make sure to configure the Git we shipped to allow that self-signed SSL certificate.
-There are 2 approaches to solve the problem.
+There are two approaches to solve the problem.
 
 1. Set the following git config in global level by the agent's run as user.
    ```bash
@@ -75,7 +75,7 @@ There are 2 approaches to solve the problem.
    ```
    > [!NOTE]
    >
-   > Setting system level Git config is not reliable on Windows. The system `.gitconfig` file is stored with the copy of Git we packaged, which gets replaced whenever the agent is upgraded to a new version.
+   > Setting system level Git config isn't reliable on Windows. The system `.gitconfig` file is stored with the copy of Git we packaged, which gets replaced whenever the agent is upgraded to a new version.
 
 2. Enable git to use `SChannel` during configure with 2.129.0 or higher version agent
    Pass `--gituseschannel` during agent configuration
@@ -117,7 +117,7 @@ When that IIS SSL setting enabled, you need to use version `2.125.0` or newer an
   Windows: Windows Credential Store
   ```
 ## Verifying Root Certificate Authority Trust 
-The build agent utilizes Node.js that relies on its own certificate store derived from Mozilla's trusted root certificates. It's crucial that any root certificate used for secure communication is trusted by the Node.js Certificate Authority store. This helps avoid the following errors after updating a certificate on the Azure DevOps Server machine: 
+The build agent utilizes Node.js that relies on its own certificate store derived from Mozilla's trusted root certificates. It's crucial that any root certificate used for secure communication is trusted by the Node.js Certificate Authority store, which helps avoid the following errors after updating a certificate on the Azure DevOps Server machine: 
 - unable to get local issuer certificate
 - SELF_SIGNED_CERT_IN_CHAIN
 - unable to verify the first certificate
