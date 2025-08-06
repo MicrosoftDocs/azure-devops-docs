@@ -84,7 +84,7 @@ Team and project administrators can add existing users to their team or project.
       <!-- Team Administrators -->
    :::column-end:::
    :::column span="2":::
-      [**Project settings** > **Teams** > **Team** > **Members**](#add-teams-members)  
+      [**Project settings** > **Teams** > **Team** > **Members**](#add-team-members)  
    :::column-end:::
    :::column span="2":::
       - Add existing users or groups to a team.
@@ -99,7 +99,7 @@ Team and project administrators can add existing users to their team or project.
       Team Administrators
    :::column-end:::
    :::column span="2":::
-      [**Project settings** > **Teams** > **Team** > **Members**](#add-teams-members)  
+      [**Project settings** > **Teams** > **Team** > **Members**](#add-team-members)  
    :::column-end:::
    :::column span="2":::
       - Add existing users or groups to a team.
@@ -272,7 +272,7 @@ The first time you add a user or group to Azure DevOps, you can't browse directl
 
 1. Select **Boards** > **Boards** > **Show team profile** (people icon) > **Team Settings**:
 
-   :::image type="content" source="../settings/media/team-defaults/open-team-profile-choose-team-settings-preview.png" alt-text="Screenshot that shows how to access the Team Settings by selecting the Show team profile icon.:::
+   :::image type="content" source="../settings/media/team-defaults/open-team-profile-choose-team-settings-preview.png" alt-text="Screenshot that shows how to access the Team Settings by selecting the Show team profile icon.":::
 
    If you need to switch the team context, use the **Team** selector in the breadcrumb trail for the current page:
 
@@ -350,7 +350,7 @@ You add team members from **Project Settings** > **Work** > **Team configuration
 Remove a user or group from a team by using the following procedures.
 
 > [!NOTE]
-> If the user you're planning to remove is a team administrator, first remove the user as a team administrator, and then remove the user from the team. For more information, see [Remove a Team administrator](../../organizations/settings/add-team-administrator.md##remove-an-administrator).
+> If the user you're planning to remove is a team administrator, first remove the user as a team administrator, and then remove the user from the team. For more information, see [Remove a Team administrator](../../organizations/settings/add-team-administrator.md#remove-an-administrator).
 
 ::: moniker range="azure-devops"
 
@@ -443,7 +443,7 @@ As a member of the **Project Administrators** group, you can add users or groups
 
 1. Enter the display name or email address for the user or group to add to the security group. Select the matching entry in the system, and then select **Save**. You can also add multiple accounts by separating the entries with a semicolon (**;**).
 
-	:::image type="content" source="media/add-users/media/add-users/invite-members-contributors.png" alt-text="Screenshot of Invite members to security group (Contributors) dialog, choose user account to add to the group.":::
+	:::image type="content" source="media/add-users/invite-members-contributors.png" alt-text="Screenshot of Invite members to security group (Contributors) dialog, choose user account to add to the group.":::
 
 	After you save your selections, the security group **Members** list refreshes to include the new members. If you don't see the new members in the list, select :::image type="icon" source="../../media/icons/refresh.png"::: **Refresh** to update the view. 
 
