@@ -22,7 +22,7 @@ Check out the release notes for details.
 
 ### Azure Repos
 
-[!INCLUDE [sprint-260-update-links](includes/pipelines/sprint-260-update-links.md)]
+[!INCLUDE [sprint-260-update-links](includes/repos/sprint-260-update-links.md)]
 
 ## General
 
