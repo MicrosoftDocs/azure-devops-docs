@@ -39,8 +39,8 @@ macOS isn't supported. Even if you installed Visual Studio for Mac, connection t
 | Visual Studio 2017 | ✔️ | ✔️ | ✔️ |
 
 > [!NOTE]  
-> - Support for Project integration and the **TFSFieldMapping** command is deprecated. You might find support using one of the [Marketplace extensions](#marketplace-extensions).
-> - Support for linking PowerPoint files to work items from within PowerPoint is deprecated starting with Visual Studio 2019 and Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated.
+> 1. Support for Project integration and the **TFSFieldMapping** command is deprecated. You might find support using one of the [Marketplace extensions](#marketplace-extensions).
+> 2. Support for linking PowerPoint files to work items from within PowerPoint is deprecated starting with Visual Studio 2019 and Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated.
 
 ## Prerequisites
 
