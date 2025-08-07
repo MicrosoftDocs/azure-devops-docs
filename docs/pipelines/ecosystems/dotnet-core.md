@@ -85,7 +85,7 @@ If you have a pipeline you want to use, you can skip this section. Otherwise, yo
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-7. On the **Configure** tab, select **Show more** and then select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list. This template provides many of the steps and settings that this article describes..
+7. On the **Configure** tab, select **Show more** and then select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list. This template provides many of the steps and settings that this article describes.
 
    You can also select **Starter pipeline** on the **Configure** tab to start with a minimal pipeline and add the steps and settings yourself.
 
