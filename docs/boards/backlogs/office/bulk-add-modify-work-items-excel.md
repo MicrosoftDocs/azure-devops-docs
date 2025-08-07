@@ -10,24 +10,22 @@ ms.custom: linked-from-support
 ms.topic: tutorial
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 08/19/2024
+ms.date: 08/07/2025
 ---
 
 # Add or modify work items in bulk with Microsoft Excel 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range=">= azure-devops-2020"
 > [!TIP]  
 > To import or update work items in bulk, you can use either the [web portal](../bulk-modify-work-items.md) or the [CSV import](../../queries/import-work-items-from-csv.md) feature, which is the recommended approach.
-::: moniker-end
 
 Save time with Microsoft Excel when you need to add or modify many work items, add links and attachments to multiple work items, and more. You can also use native Excel features to perform actions such as summing a column, copying and pasting rows, filling down data into cells, and more.
 
 For information about connecting to Excel, see [Connect Azure Boards to an Office client](track-work.md). For answers to specific questions about the integration of Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards](faqs.yml).
 
 > [!NOTE]  
-> macOS is not supported. Even with Visual Studio for Mac installed, connecting to Azure DevOps from Excel is not supported.
+> macOS isn't supported. Even with Visual Studio for Mac installed, connecting to Azure DevOps from Excel isn't supported.
 
 ## Prerequisites 
 
@@ -38,7 +36,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 | **Project access** | [Project member](../../../organizations/security/add-users-team-project.md). |
 | **Access levels** |At least [Stakeholder access](../../../organizations/security/stakeholder-access.md).   |
 | **Permissions** | - Member of the **Contributors** group.<br> - **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md). |
-| **Tools** |- Microsoft Excel 2010 or later, including Microsoft Office Excel 365. <br> - [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family). Install the Azure DevOps Office Integration plug-in by installing one of the latest editions of Visual Studio or the Azure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.<br> - [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later](https://visualstudio.microsoft.com/downloads/) To use the [Select User](#select-user) feature, download the free version of Visual Studio Community. This feature helps avoid data validation errors by misspelling user names and is useful when assigning user names from a large group of user accounts. |
+| **Tools** |- Microsoft Excel 2010 or later, including Microsoft Office Excel 365. <br> - [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019). To download, scroll to **All Downloads**, select **Other Tools, Frameworks, and Redistributables**, and then choose **Download** next to Azure DevOps Office Integration 2019. Alternatively, you can get the plug-in by installing one of the latest editions of Visual Studio. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.<br> - [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later](https://visualstudio.microsoft.com/downloads/) To use the [Select User](#select-user) feature, download the free version of Visual Studio Community. This feature helps avoid data validation errors by misspelling user names and is useful when assigning user names from a large group of user accounts. |
 
 ::: moniker-end
 
@@ -49,7 +47,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 | **Project access** | [Project member](../../../organizations/security/add-users-team-project.md). |
 | **Access levels** |At least [Stakeholder access](../../../organizations/security/stakeholder-access.md).   |
 | **Permissions** | - Member of the **Contributors** group.<br> - *View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md). |
-| **Tools** |- Microsoft Excel 2010 or later, including Microsoft Office Excel 365. <br>- [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family). Install the plug-in by installing one of the latest editions of Visual Studio or the Azure DevOps Standalone Office Integration installer. The Azure DevOps Office Integration 2019 plug-in supports connection to Azure Boards and Azure DevOps from Excel, Project, and the PowerPoint-based storyboarding tool.<br> -  To use the [Select User](#select-user) feature, install [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Azure DevOps Office Integration 2019 or later](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019). You can download the free version of Visual Studio Community. This feature helps avoid data validation errors by misspelling user names and is useful when assigning user names from a large group of user accounts.|
+| **Tools** |- Microsoft Excel 2010 or later, including Microsoft Office Excel 365. <br>- [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019). To download, scroll to **All Downloads**, select **Other Tools, Frameworks, and Redistributables**, and then choose **Download** next to Azure DevOps Office Integration 2019. Alternatively, you can get the plug-in by installing one of the latest editions of Visual Studio. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.<br> -  To use the [Select User](#select-user) feature, install [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Azure DevOps Office Integration 2019 or later](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019). You can download the free version of Visual Studio Community. This feature helps avoid data validation errors by misspelling user names and is useful when assigning user names from a large group of user accounts.|
 
 ::: moniker-end  
 
@@ -193,7 +191,7 @@ You can and can't do the following tasks from an Excel worksheet:
 1. Open Excel and connect to your Azure Boards project. Use one of the four methods provided in [Connect Azure DevOps project to Excel](track-work.md).
 
 	> [!NOTE]   
-	> When you connect to Azure Boards in the cloud, the **Team Project Collection** is automatically selected as there is only one collection associated with your Azure DevOps Services organization. When you connect to Azure Boards in an on-premises server, you choose the **Team Project Collection** prior to choosing the project.  
+	> When you connect to Azure Boards in the cloud, the **Team Project Collection** is automatically selected as there's only one collection associated with your Azure DevOps Services organization. When you connect to Azure Boards in an on-premises server, choose the **Team Project Collection** before you choose the project.  
 
 1. In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), ensure that you installed the [Azure DevOps Office Integration 2019 tool](https://visualstudio.microsoft.com/downloads/#other-family). For more information, see [Azure DevOps Office integration issues](tfs-office-integration-issues.md). 
 
@@ -327,7 +325,7 @@ The easiest way to bulk update multiple work items is to create a query for the 
 > [!TIP]
 > **Keep your work in sync with these tips:**
 > - Use ![Refresh icon in Excel on Team ribbon](media/bulk-modify-excel-refresh-inline.png) (**Refresh**) when you first open a saved worksheet to download the latest data from the data store.
-> - Add columns to the worksheet using ![Choose Column icon in Excel on Team ribbon](media/bulk-modify-excel-choose-columns-inline.png) (**Choose Columns**) to enter data for additional fields.
+> - Add columns to the worksheet using ![Choose Column icon in Excel on Team ribbon](media/bulk-modify-excel-choose-columns-inline.png) (**Choose Columns**) to enter data for more fields.
 > - Publish your additions and modifications often to avoid data conflicts.
 > - Save your workbook periodically to prevent data loss before you publish or refresh.
 
@@ -454,7 +452,7 @@ If you start your worksheet from an existing query, you see all the column field
 Use the Select User feature to find user accounts and assign values to person-named fields. This feature also provides access to the most recently used (MRU) values. If your team has hundreds or thousands of user accounts, this feature is especially useful.
 
 > [!TIP]  
-> Without the **Select User** feature, you must enter user names exactly as they are in the database, or you'll receive data validation errors when you try to publish.  
+> Without the **Select User** feature, you must enter user names exactly as they are in the database, or you receive data validation errors when you try to publish.  
 
 1. If you don't have the latest version of [Visual Studio (2015.1 or later version](https://visualstudio.microsoft.com/downloads/), get it now. You need the latest update to access the Select User feature.  
 
@@ -520,6 +518,7 @@ The **Choose Linked Work Items** dialog works in the same way as the **Get Work 
 	:::image type="content" source="media/excel/links-tab-added-columns.png" alt-text="Screenshot of To reorder the links, choose the field to sort the list on that field.":::
 
 This dialog works in the same way as the **Get Work Items** dialog. See [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
+
 ### Open a linked work item
 
 From the **Links** tab, choose the linked work item, right-select to open the context menu, and choose **Open Linked Item**. 
@@ -587,15 +586,9 @@ To resolve publishing errors that might arise when you're working in Excel, see 
 
 ## Related content
 
-::: moniker range=">= azure-devops-2020"  
-
 - [Modify work items in bulk (web portal)](../bulk-modify-work-items.md)  
 - [Import or update work items in bulk using CSV files](../../queries/import-work-items-from-csv.md)
 - [Troubleshoot Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [View FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
 - [View and add work items](../../work-items/view-add-work-items.md) 
 - [Learn basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
-
-::: moniker-end  
-
-  
