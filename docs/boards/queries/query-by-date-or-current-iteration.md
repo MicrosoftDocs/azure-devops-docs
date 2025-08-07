@@ -277,7 +277,7 @@ The following image shows how to list all User Story and Bug work item types tha
 
 :::image type="content" source="media//query-date-iteration/sliding-window-iterations.png" alt-text="Screenshot that shows CurrentIteration plus and minus clauses.":::
 
-To use this macro, the specified team must [select a set of sprints](../../organizations/settings/set-iteration-paths-sprints.md) that span the `+/- n` value entered for thhave selectede macro.
+To use this macro, the specified team must [select a set of sprints](../../organizations/settings/set-iteration-paths-sprints.md) that span the `+/- n` value entered for the selected macro.
 
 ::: moniker-end
 
@@ -312,11 +312,11 @@ FROM workitems
 WHERE
     [System.TeamProject] = @project
     AND [System.WorkItemType] IN ('User Story', 'Bug')
-    AND [System.AreaPath] UNDER 'FabrikamFiber\Web'
+    AND [System.AreaPath] UNDER 'Fabrikam Fiber\Web'
     AND NOT [System.State] IN ('Completed', 'Closed', 'Cut', 'Resolved')
-    AND NOT [System.IterationPath] = @currentIteration('[FabrikamFiber]\Web <id:cdf5e823-1179-4503-9fb1-a45e2c1bc6d4>')
-    AND EVER [System.IterationPath] = @currentIteration('[FabrikamFiber]\Web <id:cdf5e823-1179-4503-9fb1-a45e2c1bc6d4>')
-    AND [System.IterationPath] = @currentIteration('[FabrikamFiber]\Web <id:cdf5e823-1179-4503-9fb1-a45e2c1bc6d4>') + 1
+    AND NOT [System.IterationPath] = @currentIteration('[Fabrikam Fiber]\Web <id:00aa00aa-bb11-cc22-dd33-44ee44ee44ee>')
+    AND EVER [System.IterationPath] = @currentIteration('[Fabrikam Fiber]\Web <id:00aa00aa-bb11-cc22-dd33-44ee44ee44ee>')
+    AND [System.IterationPath] = @currentIteration('[Fabrikam Fiber]\Web <id:00aa00aa-bb11-cc22-dd33-44ee44ee44ee>') + 1
     AND [System.ChangedDate] >= @today - 30
 ORDER BY [System.Id]
 ```
