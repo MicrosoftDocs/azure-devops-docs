@@ -70,19 +70,21 @@ To complete all the procedures in this article, you need the following prerequis
 
 ## Create a .NET project and upload it to GitHub
 
-If you want to use a .NET project already uploaded to your GitHub repository, you can skip this section. [!INCLUDE [include](../includes/dotnet-setup.md)]
+If you want to use a .NET project already in your GitHub repository, you can skip this section. [!INCLUDE [include](../includes/dotnet-setup.md)]
 
 ## Create a pipeline
 
-If you have a pipeline you want to use, you can skip this section. Otherwise, you can use either the YAML pipeline editor or the classic editor to create a pipeline as follows:
+If you have a pipeline you want to use, you can skip this section. Otherwise, you can use either the YAML pipeline editor or the classic editor to create a starter pipeline as follows:
 # [YAML](#tab/yaml-editor)
 
 ::: moniker range=">=azure-devops"
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-1. On the **Configure** tab, select **Show more** and select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list.
-1. On the **Review pipeline** tab, examine the YAML code. You can customize the file for your requirements. For example, you could specify the agent pool or add a [task to install a different .NET SDK](#build-environment).
+1. On the **Configure** tab, select **Starter pipeline**.
+1. On the **Review** tab, examine the YAML code. You can customize the file for your requirements. For example, you can specify a different agent pool or add a task to install a different .NET SDK.
+
+You can also select **Show more** on the **Configure** tab and then select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list. This template provides many of the steps and settings that this article describes.
 
 ::: moniker-end
 
@@ -137,7 +139,7 @@ If you have a pipeline you want to use, you can skip this section. Otherwise, yo
 ::: moniker-end
 
 1. From **Select a template**, search for and select **ASP.NET Core**, and then select **Apply**. The pipeline page opens where you can add tasks, specify the agent pools and agents, and configure other build options.
-1. In the **Tasks** tab, under **Agent pool**, select **Azure Pipelines**.
+1. In the **Tasks** tab, under **Agent pool**, select **Default**.
 1. Under **Agent Specification**, select **windows-latest** for this example.
 
    **Agent job 1** currently contains the tasks **Restore**, **Build**, **Test**, **Publish**, and **Publish Artifacts**. You can add other tasks to **Agent job 1** by selecting **+** on job and selecting another task from the list. For example, you could add the **Use .NET Core** task as the first task to install a different version of the .NET SDK.
@@ -176,9 +178,9 @@ You now have a working pipeline that's ready to customize.
 
 ::: moniker range="<=azure-devops-2022"
 
-You can build your .NET Core projects by using the .NET Core SDK and runtime on [Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), or [Docker](../agents/docker.md). Azure Pipelines uses [self-hosted agents](../agents/agents.md#install) to build your .NET Core project. Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agents.
+Azure Pipelines uses [self-hosted agents](../agents/agents.md#install) to build your .NET Core project. You can use the .NET Core SDK and runtime on [Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), or [Docker](../agents/docker.md) agents. Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agents.
 
-To install a specific version of the .NET SDK, add the `UseDotNet@2` task in your pipeline YAML file or add the **.NET Core** task to your pipeline in the classic editor.
+To install a specific version of the .NET SDK, add the `UseDotNet@2` task to a YAML pipeline file or the **Use .NET Core** task in the classic editor.
 
 >[!NOTE]
 >For agents that run on physical systems, installing SDKs and tools through your pipeline alters the build environment on the agent's host.
@@ -218,20 +220,20 @@ pool:
 
 ::: moniker range=">=azure-devops"
 
-You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, or macOS. Your builds run on [Microsoft-hosted agents](../agents/hosted.md), so you don't need to set up infrastructure.
+You can build your .NET Core projects by using the .NET Core SDK and runtime for Windows, Linux, or macOS. By default, your builds run on [Microsoft-hosted agents](../agents/hosted.md), so you don't need to set up infrastructure.
 
 The Azure Pipelines [Microsoft-hosted agents](../agents/hosted.md) include several preinstalled versions of supported .NET Core SDKs. See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of available images and configuration examples.
 
-For example, the following YAML pipeline snippet sets Ubuntu OS for the agent pool.
+The following YAML pipeline snippet sets Ubuntu OS for the agent pool.
 
 ```yaml
 pool:
   vmImage: 'ubuntu-latest' 
 ```
 
-Microsoft-hosted agents don't include some older versions of the .NET Core SDK, and don't typically include prerelease versions. If you need these versions of the SDK on Microsoft-hosted agents, you can install them by using the [UseDotNet@2](/azure/devops/pipelines/tasks/reference/use-dotnet-v2) task.
+Microsoft-hosted agents don't include some older versions of the .NET Core SDK, and don't typically include prerelease versions. If you need these versions of the SDK on Microsoft-hosted agents, you can install them by using the **Use DotNet** ([UseDotNet@2](/azure/devops/pipelines/tasks/reference/use-dotnet-v2)) task.
 
-For example, use the following snippet to install the 5.0.x SDK:
+For example, the following code installs the 5.0.x SDK:
 
 ```yaml
 steps:
@@ -252,6 +254,8 @@ steps:
     includePreviewVersions: true # Required for preview versions
 ```
 
+### Self-hosted agents
+
 Alternatively, you can use [self-hosted agents](../agents/agents.md#self-hosted-agents) to build your .NET Core projects. You can set up [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), or [Windows](../agents/windows-agent.md) self-hosted agents. 
 
 Self-hosted agents let you:
@@ -270,11 +274,11 @@ For more information, see [Self-hosted agents](../agents/agents.md#self-hosted-a
 
 NuGet packages are a way for your project to depend on code that you don't build. You can download NuGet packages and project-specific tools by running the `dotnet restore` command, either through the **.NET Core** (`DotNetCoreCLI@2`) task or as a script in your pipeline. The `dotnet restore` command uses the `NuGet.exe` packaged with the .NET Core SDK and can only restore packages specified in .NET Core project *.csproj* files.
 
-You can use the **.NET Core** (`DotNetCoreCLI@2`) task to download NuGet packages from Azure Artifacts, NuGet.org, or another external or internal NuGet repository, and to restore packages from authenticated NuGet feeds. If your feed is in the same project as your pipeline, you don't need to authenticate. For more information, see [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
+You can use the **.NET Core** (`DotNetCoreCLI@2`) task to download and restore NuGet packages from Azure Artifacts, NuGet.org, or another authenticated external or internal NuGet repository. If the NuGet feed is in the same project as your pipeline, you don't need to authenticate. For more information, see [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 
 ::: moniker range=">=azure-devops"
 
-When you use Microsoft-hosted agents, you get a new machine every time you run a build, which restores the packages with each run. Restoration can take a significant amount of time. To mitigate this issue, use Azure Artifacts or a self-hosted agent to take advantage of the package cache.
+When you use Microsoft-hosted agents, you get a new machine every time you run a build, which restores the packages with each run. Restoration can take a significant amount of time. To mitigate this issue, use Azure Artifacts or a [self-hosted agent](#self-hosted-agents) to take advantage of the package cache.
 
 ::: moniker-end
 
@@ -314,7 +318,7 @@ steps:
 
 In .NET Core SDK version 2.0 and newer, packages restore automatically when you run commands such as `dotnet build`. You still need to use the **.NET Core** (`DotNetCoreCLI@2`) task to restore packages if you use an authenticated feed.
 
-If your feed is authenticated, manage its credentials by creating a NuGet service connection in **Project Settings** > **Pipelines** > **Service connections**. For more information about NuGet service connections, see [Publish NuGet packages with Azure Pipelines](../artifacts/nuget.md).
+Manage the credentials for an authenticated feed by creating a NuGet service connection in **Project Settings** > **Pipelines** > **Service connections**. For more information about NuGet service connections, see [Publish NuGet packages with Azure Pipelines](../artifacts/nuget.md).
 
 ### Restore packages from NuGet.org
 
@@ -348,7 +352,7 @@ To use the task assistant:
 
 # [Classic](#tab/classic-editor)
 
-Use these steps to add a restore task by using the classic editor:
+Add a restore task by using the classic editor.
 
 1. On the **Tasks** tab in your pipeline, select **Agent job 1** or other job that runs your build tasks.
 1. Select **+** to add a new task to that job.
@@ -419,11 +423,15 @@ If you also have a Microsoft .NET Framework project in your solution or use *pac
 
 ## Build your project
 
-Build your .NET Core projects by running the `dotnet build` command. You can add the command to your pipeline as a command line script or by using the **.NET Core** (`DotNetCoreCLI@2`) task.
+Build your .NET Core project by running the `dotnet build` command. You can add the command to your pipeline by using the **.NET Core** (`DotNetCoreCLI@2`) task or as a command line script.
 
 ### Use the .NET Core task
 
-YAML example to build using the **.NET Core** (`DotNetCoreCLI@2`) task:
+# [YAML](#tab/yaml-editor)
+
+You can add a build task with the YAML pipeline editor by directly editing the file or by using the task assistant.
+
+Add the **.NET Core** (`DotNetCoreCLI@2`) task directly by inserting the following snippet. Update the `arguments` to match your needs.
 
 ```yaml
 steps:
@@ -432,42 +440,40 @@ steps:
   inputs:
     command: build
     projects: '**/*.csproj'
-    arguments: '--configuration $(buildConfiguration)' # Update this to match your needs
+    arguments: '--configuration $(buildConfiguration)'
 ```
 
-# [YAML](#tab/yaml-editor)
-
-You can add a build task using the YAML pipeline editor by directly editing the file or adding the **.NET Core** task using the task assistant.
-
-To add a build task using the task assistant, do the following steps:
+To use the task assistant:
 
 1. Go to the position in the YAML file where you want to insert the task.
-
-1. Select the **.NET Core** from the task catalog.
-1. Select the **build** command from the **Command** dropdown list.  
-1. In the **Path to project(s)** field, enter the path to your `.csproj` files.
+1. Select the **.NET Core** (`DotNetCoreCLI@2`) task.
+1. Select **build** from the **Command** dropdown list.
+1. In the **Path to project(s) or solution(s)** field, enter the path to your *.csproj* files. You can use the wildcard *\*\*/\*.csproj* for all *.csproj* files in all subfolders.
 1. Select **Add**.
 1. Select **Save** to commit the change.
 
 # [Classic](#tab/classic-editor)
 
-To add a build task using  the classic editor, do the following steps:
+Add a build task using the classic editor.
 
-1. Select **Tasks** in your pipeline. 
-
-1. Select the job that runs your build tasks. 
+1. On the **Tasks** tab in your pipeline, select **Agent job 1** or other job that runs your build tasks.
 1. Select **+** to add a new task to that job.
-1. In the task catalog, find and add the **.NET Core** task.
-1. Select the task and select **build** from the **Command** dropdown list.
-1. In the **Path to project(s)** field, enter the path to your `.csproj` files.
-1. Drag the task to position it in the correct task sequence in the pipeline.
-1. Select the **Save and queue** dropdown list and select an option to save your changes.
+1. In the task catalog, select **.NET Core** and then select **Add**.
+1. In the left pane, select the added **dotnet build** task to open the task editor. The **Command** field already shows **build**.
+1. In the **Path to project(s) or solution(s)** field, enter the path to your *.csproj* files. You can use the wildcard *\*\*/\*.csproj* for all *.csproj* files in all subfolders.
+1. For **Feeds to add**, ensure that **Feed(s) I select here** and **Use packages from NuGet.org** are selected.
+1. In the left pane, drag the task to position it in the correct task sequence.
+1. At the top of the page, select **Save & queue** > **Save**.
 
 ---
 
 ### Build .NET Core with a command line script
 
-YAML example to build using `dotnet build` as a script:
+You can also build using a command line script.
+
+# [YAML](#tab/yaml-editor)
+
+To add a build command line by directly editing the YAML file, add the following code:
 
 ```yml
 steps:
@@ -475,75 +481,53 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 ```
 
-# [YAML](#tab/yaml-editor)
-
-You can add a build task using the YAML pipeline editor by directly editing the file or adding the [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task.
-
-Use the following steps to add the **Command Line** task:
+You can also use the task assistant to add the [Command line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task.
 
 1. Go to the position in the YAML file where you want to insert the task.
-
-1. Select the  **Command Line** from the task catalog.
-1. Optionally, add a **Display name**.
-1. Enter the `dotnet build` command with parameters. For example, `dotnet build --configuration $(buildConfiguration)`.
-1. Enter the path to the `.csproj` file as the working directory.
+1. Select the **Command line** (`CmdLine@2`) task from the list.
+1. In the **Script** field, enter the `dotnet build` command with parameters. For example, `dotnet build --configuration $(buildConfiguration)`.
+1. Under **Advanced** > **Working Directory**, enter the path to the *.csproj* file as the working directory. If you leave it blank, the working directory defaults to `$(Build.SourcesDirectory)`.
 1. Select **Add**.
 1. Select **Save** to commit the change.
 
 # [Classic](#tab/classic-editor)
 
-To add a build task using  the classic editor, do the following steps:
+To add a build command line by using the classic editor, do the following steps:
 
-1. Select **Tasks** in your pipeline. 
-
-1. Select the job that runs your build tasks. 
+1. On the **Tasks** tab in your pipeline, select **Agent job 1** or other job that runs your build tasks.
 1. Select **+** to add a new task to that job.
-1. In the task catalog, find and **Add** the **Command Line** task.
-1. Optionally, add a **Display name**.
-1. Enter the `dotnet build` command with parameters. For example, `dotnet build --configuration $(buildConfiguration)`.
-1. Enter the path to the `.csproj` file as the working directory.
-1. Drag the task to position it in the correct task sequence in the pipeline.
-1. Select the **Save and queue** dropdown list and select an option to save your changes.
+1. In the task catalog, select **Command line** and then select **Add**.
+1. In the left pane, select the added **Command Line Script** task to open the task editor.
+1. Edit the **Display name** if desired.
+1. Under **Script**, enter the `dotnet build` command with parameters. For example, `dotnet build --configuration $(buildConfiguration)`.
+1. Under **Advanced** > **Working Directory**, enter the path to the *.csproj* file as the working directory. You can select the ellipsis **...** to browse to and select the repository location.
+1. In the left pane, drag the task to position it in the correct task sequence.
+1. At the top of the page, select **Save & queue** > **Save**.
 
 ---
 
-## Add .NET SDK commands to your pipeline
+## Add other .NET SDK commands to your pipeline
 
-You can add .NET SDK commands to your project as a script or using the .NET Core task. The [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task allows you to easily add dotnet CLI commands to your pipeline. You can add **.NET Core** tasks by editing your YAML file or using the classic editor.
+You can add other .NET SDK commands to your pipeline by using the **.NET Core** (`DotNetCoreCLI@2`) task or as scripts.
 
 ### Add a .NET CLI command with the .NET Core task
 
+The [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task allows you to easily add .NET CLI commands to your pipeline. You can add **.NET Core** (`DotNetCoreCLI@2`) tasks by editing your YAML file or by using the classic editor.
+
 # [YAML](#tab/yaml-editor)
 
-To add a .NET Core CLI command using the YAML pipeline editor, do the following steps:
+To add a .NET Core command using the task assistant in the YAML pipeline editor, do the following steps:
 
 1. Go to the position in the YAML file where you want to insert the task.
-
 1. Select **.NET Core** from the task catalog.
-1. Select the command you want to run.  
+1. Select the command you want to run from the dropdown list in the **Command** field.
 1. Configure any options needed.
 1. Select **Add**.
 1. Select **Save** to commit the change.
 
-# [Classic](#tab/classic-editor)
-
-To add .NET Core task using  the classic editor, do the following steps:
-
-1. Select **Tasks** in your pipeline. 
-
-1. Select the job that runs your build tasks. 
-1. Select **+** to add a new task to that job.
-1. In the task catalog, find and add the **.NET Core** task.
-1. Select the task and select the **Command** that you want to run.
-1. Configure any options needed.
-1. Drag the task to position it in the correct task sequence in the pipeline.
-1. From the **Save and queue** dropdown list, select an option to save your changes.
-
----
-
 ### Add a .NET Core CLI command in a script
 
-You can add .NET Core CLI commands as a `script` in your `azure-pipelines.yml` file.
+You can add a .NET Core CLI command as a `script` in your *azure-pipelines.yml* file.
 
 Example:
 
@@ -554,29 +538,45 @@ steps:
 - script: dotnet test <test-project> 
 ```
 
+# [Classic](#tab/classic-editor)
+
+To add a .NET Core command using the classic editor, do the following steps:
+
+1. On the **Tasks** tab in your pipeline, select **Agent job 1** or other job that runs your build tasks.
+1. Select **+** to add a new task to that job.
+1. In the task catalog, select **.NET Core** and then select **Add**.
+1. In the left pane, select the added **dotnet build** task to open the task editor.
+1. Edit the **Display name** as desired. The task name in the left pane updates accordingly.
+1. Under **Command**, select the command that you want to run, such as **custom**.
+1. Configure any options needed.
+1. In the left pane, drag the task to position it in the correct task sequence.
+1. At the top of the page, select **Save & queue** > **Save**.
+
+---
+
 ### Install a tool
 
-To install a .NET Core global tool like [dotnetsay](https://www.nuget.org/packages/dotnetsay/) in your build running on Windows, take the following steps:
+To install a .NET Core global tool like [dotnetsay](https://www.nuget.org/packages/dotnetsay/) in a build running on Windows, add a **.NET Core** task and set the following properties in the configuration:
 
-1. Add the **.NET Core** task and set the following properties:
-   * **Command**: custom.
-     * **Path to projects**: _leave empty_.
-   * **Custom command**: tool.
-   * **Arguments**: `install -g dotnetsay`.
-1. To run the tool, add a **Command Line** and set the following properties:
-   * **Script:** `dotnetsay`.
+- **Command**: **custom**
+- **Path to projects**: leave empty
+- **Custom command**: `tool`
+- **Arguments**: `install -g dotnetsay`
 
-## Run your tests
+To run the tool, add a **Command Line** task and enter `dotnetsay` in the **Script** field.
 
-When you have test projects in your repository, you can use the **.NET Core** task to run unit tests by using testing frameworks like MSTest, xUnit, and NUnit. The test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher.
-Test results are automatically published to the service. These results are available to you in the build summary and can be used for troubleshooting failed tests and test-timing analysis.
+## Run tests
 
-You can add a test task to your pipeline using the **DotNetCoreCLI@2** task or add the following snippet to your `azure-pipelines.yml` file:
+When you have test projects in your repository, you can use the **.NET Core** (`DotNetCoreCLI@2`) task to run unit tests by using testing frameworks like MSTest, xUnit, and NUnit. The test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher.
+
+Test results automatically publish to the service and are available to you in the build summary. You can use the test results to troubleshoot failed tests and analyze test timing.
+
+To add a test task to your pipeline, add the following snippet to your *azure-pipelines.yml* file:
 
 ```yaml
 steps:
 # ...
-# do this after other tasks such as building
+# do this after other tasks such as build
 - task: DotNetCoreCLI@2
   inputs:
     command: test
@@ -584,14 +584,14 @@ steps:
     arguments: '--configuration $(buildConfiguration)'
 ```
 
-When using the **.NET Core** task editor, set **Command** to **test** and **Path to projects** should refer to the test projects in your solution.
+If you use the task assistant to add the **.NET Core** (`DotNetCoreCLI@2`) task, set **Command** to **test** and **Path to projects** to the test projects in your solution.
 
 Alternatively, you can run the `dotnet test` command with a specific logger and then use the **Publish Test Results** task:
 
 ```yaml
 steps:
 # ...
-# do this after your tests have run
+# do this after your tests run
 - script: dotnet test <test-project> --logger trx
 - task: PublishTestResults@2
   condition: succeededOrFailed()
@@ -600,18 +600,18 @@ steps:
     testResultsFiles: '**/*.trx'
 ```
 
-## Collect code coverage 
+## Collect code coverage results
 
-When you're building on the Windows platform, code coverage metrics can be collected by using the built-in coverage data collector. The test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
+When you build on the Windows platform, you can collect code coverage metrics by using the built-in coverage data collector. The test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
 
-When you use the **.NET Core** task to run tests, coverage data is automatically published to the server. The ``.coverage`` file can be downloaded from the build summary for viewing in Visual Studio.
+When you use the **.NET Core** (`DotNetCoreCLI@2`) task to run tests, coverage data automatically publishes to the server. You can download the *.coverage* file from the build summary to view in Visual Studio.
 
-Add the following snippet to your `azure-pipelines.yml` file:
+To collect code coverage, add the `--collect "Code Coverage"` argument when you add the test task to your pipeline.
 
 ```yaml
 steps:
 # ...
-# do this after other tasks such as building
+# do this after other tasks such as build
 - task: DotNetCoreCLI@2
   inputs:
     command: test
@@ -619,22 +619,20 @@ steps:
     arguments: '--configuration $(buildConfiguration) --collect "Code Coverage"'
 ```
 
-To add the **.NET Core** task through the task editor:
+If you use the task assistant to add the **.NET Core** (`DotNetCoreCLI@2`) task, set the following properties:
 
-1. Add the .NET Core task to your build job and set the following properties:
+- **Command**: **test**
+- **Path to projects**: Set to the test projects in your solution
+- **Arguments**: `--configuration $(BuildConfiguration) --collect "Code Coverage"`
 
-    1. **Command**: test.
-    1. **Path to projects**: _Should refer to the test projects in your solution_.
-    1. **Arguments**: `--configuration $(BuildConfiguration) --collect "Code Coverage"`.
+Ensure that the **Publish test results** option remains selected.
 
-1. Ensure that the **Publish test results** option remains selected.
-
-If you choose to run the `dotnet test` command, specify the test results logger and coverage options. Then use the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task:
+Alternatively, to collect code coverage results by using the `dotnet test` command with a specific logger and then running the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task, use the following code:
 
 ```yaml
 steps:
 # ...
-# do this after your tests have run
+# do this after your tests run
 - script: dotnet test <test-project> --logger trx --collect "Code Coverage"
 - task: PublishTestResults@2
   inputs:
@@ -644,14 +642,14 @@ steps:
 
 ### Collect code coverage metrics with Coverlet
 
-If you're building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
+If you build on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
 
-You can publish code coverage results to the server with the [Publish Code Coverage Results task (PublishCodeCoverageResults@2)](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) task. The coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
+You can publish code coverage results to the server with the [Publish Code Coverage Results (PublishCodeCoverageResults@2)](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) task. You must configure the coverage tool to generate results in Cobertura or JaCoCo coverage format.
 
-To run tests and publish code coverage with Coverlet, do the following tasks:
+To run tests and publish code coverage with Coverlet:
 
-* Add a reference to the  `coverlet.collector` NuGet package.
-* Add the following snippet to your `azure-pipelines.yml` file:
+- Add a reference to the `coverlet.collector` NuGet package.
+- Add the following snippet to your *azure-pipelines.yml* file:
 
   ```yaml
   - task: UseDotNet@2
@@ -671,7 +669,7 @@ To run tests and publish code coverage with Coverlet, do the following tasks:
       command: 'test'
       arguments: '--configuration $(buildConfiguration) --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura'
       publishTestResults: true
-      projects: 'MyTestLibrary' # update with your test project directory
+      projects: '<test project directory>'
     
   - task: PublishCodeCoverageResults@2
     displayName: 'Publish code coverage report'
@@ -682,23 +680,26 @@ To run tests and publish code coverage with Coverlet, do the following tasks:
 
 ## Package and deliver your code
 
-You can publish your build artifacts by:
+To package and deliver your build output, you can:
 
-* Publishing to Azure Pipelines.
-* Publishing packages to Azure Artifacts.
-* Creating a NuGet package and publish to your NuGet feed.
-* Creating a *.zip* archive to deploy your web app.
+- Publish your build artifacts to Azure Pipelines.
+- Publish a package to Azure Artifacts.
+- Create a NuGet package and publish it to your NuGet feed.
+- Create a ZIP archive to deploy to a web app.
+- Publish symbols to an Azure Artifacts symbol server or a file share.
+
+You can also [build an image](containers/build-image.md) for your app and [push it to a container registry](containers/push-image.md).
 
 ### Publish artifacts to Azure Pipelines
 
 ::: moniker range=">=azure-devops"
 
-To publish the output of your .NET **build** to your pipeline, do the following tasks: 
+To publish the output of your .NET build to your pipeline:
 
-* Run `dotnet publish --output $(Build.ArtifactStagingDirectory)` on the .NET CLI or add the **DotNetCoreCLI@2** task with the publish command.
-* Publish the artifact by using the [Publish Pipeline Artifact](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
+1. Run `dotnet publish --output $(Build.ArtifactStagingDirectory)` using the .NET CLI or add the **.NET Core** (`DotNetCoreCLI@2`) task with the **publish** command.
+1. Publish the artifact by using the [Publish Pipeline Artifact (PublishPipelineArtifact@1)](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task. This task uploads all the files in `$(Build.ArtifactStagingDirectory)` as an artifact of your build.
 
-Add the following snippet to your `azure-pipelines.yml` file:
+Add the following code to your *azure-pipelines.yml* file:
 
 ```yaml
 steps:
@@ -710,7 +711,6 @@ steps:
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
 
-# this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)' 
@@ -718,21 +718,21 @@ steps:
 
 ```
 
-> [!NOTE]
-> The **DotNetCoreCLI@2** task has a `publishWebProjects` input that is set to **true** by default. This task publishes _all_ web projects in your repo by default. You can find more help and information in the [open source task on GitHub](https://github.com/microsoft/azure-pipelines-tasks).
-
 To copy more files to the build directory before publishing, use the [Copy Files (CopyFile@2)](/azure/devops/pipelines/tasks/reference/copy-files-v2) task.
+
+> [!NOTE]
+> The `publishWebProjects` input in the **.NET Core** (`DotNetCoreCLI@2`) task is set to `true` by default. This task publishes all web projects in your repository by default. For more information, see the [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repository on GitHub.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-To publish the output of your .NET **build** to your pipeline, do the following tasks: 
+To publish the output of your .NET build to your pipeline, do the following tasks: 
 
-* Run `dotnet publish --output $(Build.ArtifactStagingDirectory)` on CLI or add the **DotNetCoreCLI@2** task with the publish command.
-* Publish the artifact by using the [Publish build artifact (PublishBuildArtifacts@1)](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1)  task.
+1. Run `dotnet publish --output $(Build.ArtifactStagingDirectory)` using the .NET CLI or add the **.NET Core** (`DotNetCoreCLI@2`) task with the **publish** command.
+1. Publish the artifact by using the [Publish build artifact (PublishBuildArtifacts@1)](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
 
-To publish your build artifacts as a .zip file, add the following snippet to your `azure-pipelines.yml` file:
+The following *azure-pipelines.yml* code also publishes your build artifacts as a ZIP file. The `PublishBuildArtifacts@1` task uploads all the files in `$(Build.ArtifactStagingDirectory)` as an artifact of your build.
 
 ```yaml
 steps:
@@ -740,11 +740,10 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
-    publishWebProjects: True
+    publishWebProjects: true
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
 
-# this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
@@ -752,19 +751,19 @@ steps:
 
 ```
 
-For more information, see [Publish and download build artifacts](../artifacts/build-artifacts.md).
-
 ::: moniker-end
+
+For more information, see [Publish and download build artifacts](../artifacts/build-artifacts.md).
 
 ### Publish to a NuGet feed
 
-To create a NuGet package and publish it to your NuGet feed, add the following snippet:
+To create a NuGet package and publish it to your NuGet feed, add the following snippet to your *azure-pipelines.yml* file:
 
 ```yaml
 steps:
 # ...
-# do this near the end of your pipeline in most cases
-- script: dotnet pack /p:PackageVersion=$(version)  # define version variable elsewhere in your pipeline
+# do this near the end of your pipeline
+- script: dotnet pack /p:PackageVersion=$(version)  # define the version variable elsewhere in your pipeline
 - task: NuGetAuthenticate@1
   inputs:
     nuGetServiceConnections: '<Name of the NuGet service connection>'
@@ -778,23 +777,22 @@ steps:
 ```
 
 > [!NOTE]
-> The NuGetAuthenticate@1 task doesn't support NuGet API key authentication. If you're using a NuGet API key, use the NuGetCommand@2 task with the `command` input set to `push` with the `--api-key` argument. For example, `dotnet nuget push --api-key $(NuGetApiKey)`.
+> The `NuGetAuthenticate@1` task doesn't support NuGet API key authentication. If you're using a NuGet API key, use the `NuGetCommand@2` task with the `command` input set to `push` and the `--api-key` argument. For example, `dotnet nuget push --api-key $(NuGetApiKey)`.
 
-For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).  
+For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).
 
 ### Publish a NuGet package to Azure Artifacts
 
-You can publish your NuGet packages to your Azure Artifacts feed by using the [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) to push to your Azure Artifact feed. For example, see [Publish NuGet packages with Azure Pipelines](../artifacts/nuget.md).
+You can publish your NuGet packages to your Azure Artifacts feed by using the [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) task. For more information, see [Publish NuGet packages with Azure Pipelines](../artifacts/nuget.md).
 
-### Deploy a web app
+### Publish a ZIP file archive to a web app
 
-To create a .zip file archive that's ready to publish to a web app, add the following snippet:
+To create a ZIP file archive that's ready to publish to a web app, add the following snippet to *azure-pipelines.yml*. Run this task after you build your app, near the end of your pipeline in most cases. For example, run this task before you deploy to an Azure web app on Windows.
+
 
 ```yaml
 steps:
 # ...
-# do this after you've built your app, near the end of your pipeline in most cases
-# for example, you do this before you deploy to an Azure web app on Windows
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
@@ -803,19 +801,13 @@ steps:
     zipAfterPublish: True
 ```
 
-To publish this archive to a web app, see [Azure Web Apps deployment](../targets/webapp.md).  
-
-### Build an image and push to container registry
-
-You can also [build an image](containers/build-image.md) for your app and [push it to a container registry](containers/push-image.md).
-
-<a name="troubleshooting"></a>
+To publish this archive to a web app, see [Azure Web Apps deployment](../targets/webapp.md).
 
 ### Publish symbols
 
-You can use the **PublishSymbols@2** task to publish symbols to an Azure Artifacts symbol server or a file share.
+You can use the `PublishSymbols@2` task to publish symbols to an Azure Artifacts symbol server or a file share. For more information, see [Publish symbols](../artifacts/symbols.md).
 
-For example, to publish symbols to a file share, add the following snippet to your `azure-pipelines.yml` file:
+For example, to publish symbols to a file share, add the following snippet to your *azure-pipelines.yml* file:
 
 ```yaml
 - task: PublishSymbols@2
@@ -825,35 +817,32 @@ For example, to publish symbols to a file share, add the following snippet to yo
     IndexSources: true
     PublishSymbols: true
     SymbolServerType: 'FileShare' 
-    SymbolsPath: '\\server\shareName'
+    SymbolsPath: '\\<server>\<shareName>'
 ```
 
-When using the classic editor, select **Index sources publish symbols** from the task catalog to add to your pipeline.
-
-For more information, see [Publish symbols](../artifacts/symbols.md).
+To use the classic editor, add the **Index sources and publish symbols** task to your pipeline.
 
 ## Troubleshooting
 
-If your project builds on your local machine but not in Azure Pipelines, explore the following potential causes and corrective actions.
+If your project builds successfully on your local machine but not in Azure Pipelines, explore the following potential causes and corrective actions.
 
 ::: moniker range=">=azure-devops"
 
-- Prerelease versions of the .NET Core SDK aren't installed on Microsoft-hosted agents. A new version of the .NET Core SDK can take a few weeks to roll out to all Azure Pipelines data centers. Instead of waiting for this rollout to complete, you can use the [Use .NET Core](#build-environment) task to install the .NET Core SDK version you want on Microsoft-hosted agents.
+- Prerelease versions of the .NET Core SDK aren't installed on Microsoft-hosted agents, and a new version of the SDK can take a few weeks to roll out to all Azure Pipelines data centers. Instead of waiting for a rollout to complete, you can use the [Use .NET Core](#build-environment) task to install the .NET Core SDK version you want on Microsoft-hosted agents.
 
 ::: moniker-end
 
-- A new version of the .NET Core SDK or Visual Studio that contains a newer version or feature of the NuGet tool could break the build. Make sure the .NET Core SDK versions and runtime on your development machine match the pipeline agent.
+- A new version of the .NET Core SDK or Visual Studio could break the build, for example if it contains a newer version or feature of the NuGet tool. Make sure the .NET Core SDK versions and runtime on your development machine match the pipeline agent.
 
   You can include a `dotnet --version` command-line script in your pipeline to print the version of the .NET Core SDK. Either use the [.NET Core Tool Installer](#build-environment) to deploy the same version on the agent, or update your projects and development machine to the pipeline version of the .NET Core SDK.
-
-- You might be using some logic in Visual Studio that isn't encoded in your pipeline. Azure Pipelines runs each command you specify in a task sequentially in a new process. Examine the logs from the pipelines build to see the exact commands that ran in the build. To locate the problem, repeat the same commands in the same order on your development machine.
-
-- If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects, use the **NuGet** task to restore packages specified in the *packages.config* files. Add the **MSBuild** or **Visual Studio Build** task to build the .NET Framework projects.
 
 - Your builds might fail intermittently because of connection issues when you restore packages from NuGet.org. NuGet.org might be having issues, or there could be networking problems between the Azure data center and NuGet.org. You can explore whether using Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) to cache the packages improves the reliability of your builds.
 
   The credentials of the pipeline are automatically used to connect to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service** account. To learn more about using Azure Artifacts to cache your NuGet packages, see [Connect to Azure Artifact feeds](../../artifacts/nuget/nuget-exe.md).
 
+- You might be using some logic in Visual Studio that isn't encoded in your pipeline. Azure Pipelines runs each command you specify in a task sequentially in a new process. Examine the logs from the pipelines build to see the exact commands that ran in the build. To locate the problem, repeat the same commands in the same order on your development machine.
+
+- If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects, use the **NuGet** task to restore packages specified in the *packages.config* files. Add the **MSBuild** or **Visual Studio Build** task to build the .NET Framework projects.
 
 ## Related content
 
