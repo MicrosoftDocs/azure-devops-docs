@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/28/2025
+ms.date: 08/07/2025
 ---
 
 # Change your preferred email address for notifications
@@ -22,13 +22,16 @@ Change your preferred email address for notifications through your organization 
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]
-> - Your preferred email address applies to all organizations in your Azure DevOps account and can't be set per organization
+> - Your preferred email address applies to all organizations in Azure DevOps and can't be set per organization
 > - Notifications might take up to 24 hours to get delivered to the updated email addresses
-> - If you're using the Microsoft Entra profile information preview, your profile is managed through Microsoft Entra ID and can't be edited directly in Azure DevOps. See [Set user preferences, Microsoft Entra profile preview](../settings/set-your-preferences.md#microsoft-entra-profile-preview)
+> - **If you're using Microsoft Entra ID authentication**, your profile email is managed through Microsoft Entra ID and appears disabled/read-only in Azure DevOps. Contact your Microsoft Entra ID administrator to update your email address, or see [Set user preferences, Microsoft Entra profile preview](../settings/set-your-preferences.md#microsoft-entra-profile-preview)
 
 ::: moniker-end
 
 ## Change your email address
+
+> [!NOTE]
+> If your email field appears grayed out or disabled, your organization is using Microsoft Entra ID authentication. Your Microsoft Entra ID administrator can update your email address, or you can update it yourself in the Microsoft Entra ID portal if you have the necessary permissions.
 
 Follow these steps to update your preferred notification email address:
 
@@ -47,7 +50,7 @@ Follow these steps to update your preferred notification email address:
 
 ::: moniker-end
 
-::: moniker range="<azure-devops"
+::: moniker range="< azure-devops"
 
 ### For Azure DevOps Server
 
@@ -59,7 +62,7 @@ Follow these steps to update your preferred notification email address:
 
 	:::image type="content" source="../settings/media/user-preferences/user-profile-dialog-general-tab.png" alt-text="Screenshot of the User Profile dialog showing the General tab with email settings.":::
 
-For additional settings, see [Set your preferences](../../organizations/settings/set-your-preferences.md).
+For more settings, see [Set your preferences](../../organizations/settings/set-your-preferences.md).
 
 ::: moniker-end
 
@@ -67,9 +70,10 @@ For additional settings, see [Set your preferences](../../organizations/settings
 
 | Issue | Solution |
 |-------|----------|
-| **Email change not taking effect** | Wait up to 24 hours for changes to propagate across all Azure DevOps services |
+| **Email field is disabled/grayed out** | Your organization uses Microsoft Entra ID authentication. Contact your Microsoft Entra ID administrator or update your email in the Microsoft Entra ID portal |
+| **Email change not taking effect** | Wait up to 24 hours for changes to propagate across all services |
 | **Still receiving notifications at old email** | Check if you have organization-specific notification subscriptions that override your profile settings |
-| **Can't edit email in Microsoft Entra preview** | Contact your Microsoft Entra ID administrator to update your profile information |
+| **Can't edit email in Microsoft Entra preview** | Contact your Microsoft Entra ID administrator for profile information updates |
 | **Not receiving any notifications** | Verify your [notification subscription settings](./manage-your-personal-notifications.md) are configured correctly |
 
 ## Related content
