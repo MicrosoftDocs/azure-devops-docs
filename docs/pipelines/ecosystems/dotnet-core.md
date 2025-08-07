@@ -1,12 +1,13 @@
 ---
 title: Build, test, and deploy .NET Core projects
-description: Use .NET Core to build apps with Azure Pipelines.
+description: Learn how to use Azure Pipelines to build, test, and deploy .NET Core projects and apps.
 ms.topic: how-to
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
-ms.date: 08/05/2025
+ms.date: 08/07/2025
 ms.custom: freshness-fy22q2, content-freshness, devx-track-dotnet
 monikerRange: "<=azure-devops"
+#customer intent: As a .NET developer, I want to know how to use Azure Pipelines to work with .NET Core projects so I can build, test, and deploy my .NET Core apps.
 ---
 
 # Build, test, and deploy .NET Core projects
@@ -76,7 +77,7 @@ If you want to use a .NET project already in your GitHub repository, you can ski
 
 ## Create a pipeline
 
-If you have a pipeline you want to use, you can skip this section. Otherwise, you can use either the YAML pipeline editor or the classic editor to create a starter pipeline as follows:
+If you have a pipeline you want to use, you can skip this section. Otherwise, you can use either the YAML pipeline editor or the classic editor to create a pipeline as follows:
 
 # [YAML](#tab/yaml-editor)
 
@@ -84,11 +85,11 @@ If you have a pipeline you want to use, you can skip this section. Otherwise, yo
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-7. On the **Configure** tab, select **Starter pipeline**.
+7. On the **Configure** tab, select **Show more** and then select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list. This template provides many of the steps and settings that this article describes..
 
-   You can also select **Show more** on the **Configure** tab and then select the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) pipeline template from the list. This template provides many of the steps and settings that this article describes.
-   
-8. On the **Review** tab, examine the YAML code. You can customize the file for your requirements. For example, you can specify a different agent pool or add a task to install a .NET SDK.
+   You can also select **Starter pipeline** on the **Configure** tab to start with a minimal pipeline and add the steps and settings yourself.
+
+8. On the **Review** tab, examine the YAML code. You can customize the file for your requirements. For example, you can specify a different agent pool or add a task to install a different .NET SDK.
 
 ::: moniker-end
 
@@ -160,9 +161,9 @@ If you have a pipeline you want to use, you can skip this section. Otherwise, yo
 
 ::: moniker-end
 
-8. On the **Select a template** screen, select **Empty job**. The pipeline page opens, where you can add tasks, specify the agent pools and agents, and configure other build options.
+8. On the **Select a template** screen, search for and select the **ASP.NET Core** template, and then select **Apply**. The pipeline page opens, where you can add tasks, specify agent pools and agents, and configure other build options.
 
-   You can also search for and select the **ASP.NET Core** template, and then select **Apply**. This template provides many of the steps and settings that this article describes.
+   The **ASP.NET Core** template provides many of the steps and settings that this article describes. You can also select **Empty job** to start with a minimal pipeline and add the tasks and settings yourself.
 
 9. In the **Tasks** tab, under **Agent pool**, select **Azure Pipelines** to use Microsoft-hosted agents.
 
@@ -850,7 +851,7 @@ If your project builds successfully on your local machine but not in Azure Pipel
 
 ::: moniker range=">=azure-devops"
 
-- Prerelease versions of the .NET Core SDK aren't installed on Microsoft-hosted agents, and it can take a few weeks to roll out a new version of the SDK to all Azure Pipelines data centers. Instead of waiting for a rollout to complete, you can use the [Use .NET Core](#build-environment) task to install the .NET Core SDK version you want on Microsoft-hosted agents.
+- Prerelease versions of the .NET Core SDK aren't installed on Microsoft-hosted agents, and rolling out a new version of the SDK to all Azure Pipelines data centers can take a few weeks. Instead of waiting for a rollout to complete, you can use the [Use .NET Core](#build-environment) task to install the .NET Core SDK version you want on Microsoft-hosted agents.
 
 ::: moniker-end
 
