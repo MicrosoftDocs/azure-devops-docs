@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 07/21/2025
+ms.date: 08/07/2025
 #customer intent: As an Azure DevOps developer, I want to use GitHub with Azure Boards, so I can manage code in GitHub and link to GitHub commits, pull requests, and issues in Azure Boards.
 ---
 
@@ -25,7 +25,7 @@ Stay aligned and coordinated with Azure Boards and link your code activity and i
 
 Azure Boards and Azure DevOps support integration with GitHub.com and GitHub Enterprise Server repositories. You can start from either Azure Boards or GitHub to integrate and connect to GitHub repositories to an Azure Boards project. 
 
-The latest version of Azure DevOps supports up to 1,000 GitHub repository connections. Azure DevOps 2022 supports up to 500 repositories, and earlier versions support up to 100 repositories.
+Azure DevOps Services supports up to 500 GitHub repository connections per connection. Azure DevOps 2022 supports up to 500 repositories, and earlier versions support up to 100 repositories.
 
 - [Install and configure the Azure Boards app for GitHub](install-github-app.md)
 
