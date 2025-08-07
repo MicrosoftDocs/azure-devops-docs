@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 08/05/2025
+ms.date: 08/07/2025
 ms.custom: devdivchpfy22
 ---
 
