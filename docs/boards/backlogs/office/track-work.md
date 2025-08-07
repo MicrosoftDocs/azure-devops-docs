@@ -33,62 +33,16 @@ macOS isn't supported. Even if you installed Visual Studio for Mac, connection t
 
 ---
 
-:::row:::
-:::column span="2":::
-**Azure DevOps/Visual Studio version**
-:::column-end:::
-:::column span="":::
-**Excel**
-:::column-end:::
-:::column span="":::
-**Project**<sup>1</sup>
-:::column-end:::
-:::column span="":::
-**PowerPoint Storyboarding**<sup>2</sup>
-:::column-end:::
-:::row-end:::
----
-:::row:::
-:::column span="2":::
-Azure DevOps Services  
-Azure DevOps Server 2020  
-Visual Studio 2022  
-Visual Studio 2019  
-Azure DevOps Office Integration 2019
-:::column-end:::
-:::column span="":::
-✔️  
-:::column-end:::
-:::column span="":::
-
-:::column-end:::
-:::column span="":::
-
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-
-Visual Studio 2017  
-:::column-end:::
-:::column span="":::
-✔️  
-:::column-end:::
-:::column span="":::
-✔️  
-:::column-end:::
-:::column span="":::
-✔️  
-:::column-end:::
-:::row-end:::
+| Azure DevOps/Visual Studio version | Excel | Project<sup>1</sup> | PowerPoint Storyboarding<sup>2</sup> |
+|-------------------------------------|-------|---------------------|--------------------------------------|
+| Azure DevOps Services<br>Azure DevOps Server 2020<br>Visual Studio 2022<br>Visual Studio 2019<br>Azure DevOps Office Integration 2019 | ✔️ | | |
+| Visual Studio 2017 | ✔️ | ✔️ | ✔️ |
 
 > [!NOTE]  
 > - Support for Project integration and the **TFSFieldMapping** command is deprecated. You might find support using one of the [Marketplace extensions](#marketplace-extensions).
 > - Support for linking PowerPoint files to work items from within PowerPoint is deprecated starting with Visual Studio 2019 and Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated.
 
 ## Prerequisites
-
-Connection from an Office client to an Azure Boards project requires the following software and permissions.
 
 ::: moniker range="azure-devops"
 
