@@ -1,5 +1,5 @@
 ---
-title: Build, test, and deploy .NET Core apps
+title: Build, test, and deploy .NET Core projects
 description: Use .NET Core to build apps with Azure Pipelines.
 ms.topic: how-to
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
@@ -9,7 +9,7 @@ ms.custom: freshness-fy22q2, content-freshness, devx-track-dotnet
 monikerRange: "<=azure-devops"
 ---
 
-# Build, test, and deploy .NET Core apps
+# Build, test, and deploy .NET Core projects
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -18,7 +18,7 @@ This article describes how to use Azure Pipelines to work with .NET Core project
 ::: moniker range="<=azure-devops-2022"
 
 - Create a .NET Core web app and upload it to a GitHub repository.
-- Create an Azure DevOps project and Azure Pipelines pipeline to build the project.
+- Create an Azure DevOps project and an Azure Pipelines pipeline to build the project.
 - Set up your build environment with [self-hosted](../agents/agents.md) agents.
 - Restore dependencies, build your project, and test with the **.NET Core** ([DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2)) task or a [script](../scripts/cross-platform-scripting.md).
 - Use the **.NET Core** (`DotNetCoreCLI@2`) task to add other .NET SDK commands to your pipeline.
@@ -29,7 +29,7 @@ This article describes how to use Azure Pipelines to work with .NET Core project
 ::: moniker range=">= azure-devops"
 
 - Create a .NET Core web app and upload it to a GitHub repository.
-- Create an Azure DevOps project and Azure Pipelines pipeline to build the project.
+- Create an Azure DevOps project and an Azure Pipelines pipeline to build the project.
 - Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
 - Restore dependencies, build your project, and test with the **.NET Core** ([DotNetCoreCLI@2](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2)) task or a [script](../scripts/cross-platform-scripting.md).
 - Use the **.NET Core** (`DotNetCoreCLI@2`) task to add other .NET SDK commands to your pipeline.
@@ -91,7 +91,7 @@ You can also select **Show more** on the **Configure** tab and then select the [
 ::: moniker range="< azure-devops"
 
 1. In your Azure DevOps project, select **Pipelines** from the left navigation menu.
-1. Select **New pipeline** or **Create pipeline** if this is the first pipeline in the project.
+1. Select **New pipeline** or **Create pipeline** if this pipeline is the first in the project.
 1. Select your source repository type. For this example, use **GitHub Enterprise Server**.
 1. On the next screen, enter the following information:
    - The URL for your GitHub account, for example `https://github.com/myname`.
@@ -115,7 +115,7 @@ You can also select **Show more** on the **Configure** tab and then select the [
 # [Classic](#tab/classic-editor)
 
 1. In your Azure DevOps project, select **Pipelines** from the left navigation menu.
-1. Select **New pipeline** or **Create pipeline** if this is the first pipeline in the project.
+1. Select **New pipeline** or **Create pipeline** if this pipeline is the first in the project.
 1. On the **Where is your code** screen, select **Use the classic editor to create a pipeline without YAML**.
    >[!NOTE]
    >The ability to create classic pipelines is turned off by default for new Azure DevOps organizations and projects. If you don't see the option to use the classic editor, turn off the **Disable creation of classic build pipelines** and **Disable creation of classic release pipelines** in **Organization Settings** > **Pipelines** > **Settings** and/or **Project settings**> **Pipelines** > **Settings**.
@@ -174,6 +174,7 @@ You can see your pipeline in action by selecting the job from the **Jobs** secti
 
 You now have a working pipeline that's ready to customize.
 
+<a name="build-environment"></a>
 ## Set up your build environment
 
 ::: moniker range="<=azure-devops-2022"
@@ -272,7 +273,7 @@ For more information, see [Self-hosted agents](../agents/agents.md#self-hosted-a
 
 ## Restore dependencies
 
-NuGet packages are a way for your project to depend on code that you don't build. You can download NuGet packages and project-specific tools by running the `dotnet restore` command, either through the **.NET Core** (`DotNetCoreCLI@2`) task or as a script in your pipeline. The `dotnet restore` command uses the `NuGet.exe` packaged with the .NET Core SDK and can only restore packages specified in .NET Core project *.csproj* files.
+NuGet packages are a way for your project to depend on code that you don't build. You can download NuGet packages and project-specific tools by running the `dotnet restore` command, either through the **.NET Core** (`DotNetCoreCLI@2`) task or as a script in your pipeline. The `dotnet restore` command uses the `NuGet.exe` packaged with the .NET Core SDK and can only restore packages specified in the .NET Core project *.csproj* files.
 
 You can use the **.NET Core** (`DotNetCoreCLI@2`) task to download and restore NuGet packages from Azure Artifacts, NuGet.org, or another authenticated external or internal NuGet repository. If the NuGet feed is in the same project as your pipeline, you don't need to authenticate. For more information, see [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 
@@ -565,7 +566,7 @@ To install a .NET Core global tool like [dotnetsay](https://www.nuget.org/packag
 
 To run the tool, add a **Command Line** task and enter `dotnetsay` in the **Script** field.
 
-## Run tests
+## Run your tests
 
 When you have test projects in your repository, you can use the **.NET Core** (`DotNetCoreCLI@2`) task to run unit tests by using testing frameworks like MSTest, xUnit, and NUnit. The test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher.
 
@@ -600,7 +601,7 @@ steps:
     testResultsFiles: '**/*.trx'
 ```
 
-## Collect code coverage results
+## Collect code coverage
 
 When you build on the Windows platform, you can collect code coverage metrics by using the built-in coverage data collector. The test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
 
