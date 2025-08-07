@@ -259,8 +259,19 @@ namespace WeeklyFileIPRanges
 ```
 
 ### Service tags
-
-Microsoft-hosted agents can't be listed by service tags. If you're trying to grant hosted agents access to your resources, you'll need to follow the IP range allow listing method.
+Where supported, customers can use the AzureCloud [service tag](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview) instead. To limit this to the United States Geography, you would use the following tags:
+```
+AzureCloud.centralus
+AzureCloud.eastus
+AzureCloud.eastus2
+AzureCloud.eastus3
+AzureCloud.northcentralus
+AzureCloud.southcentralus
+AzureCloud.westcentralus
+AzureCloud.westus
+AzureCloud.westus2
+AzureCloud.westus3
+```
 
 ## Security
 
