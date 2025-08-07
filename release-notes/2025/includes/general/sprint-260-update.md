@@ -22,8 +22,8 @@ There remain a couple of notable exceptions  — the following ​user groups ma
 1. Billing admins need access to ARM to setup billing and access subscriptions
 2. Service Connection creators require continued access to ARM for ARM role assignment and updates to MSIs
 
-### Azure DevOps remote index support in VSCode
+### Azure DevOps remote index support
 
-As announced by Visual Studio Code (https://code.visualstudio.com/updates/v1_103#_azure-devops-repos-remote-index-support), The #codebase tool in VS Code as of the July update supports remote indexes for workspaces that are linked to Azure DevOps repos. This enables #codebase to search for relevant snippets almost instantly without any initialization. This even works for larger repos with tens of thousands of indexable files. 
+Azure DevOps now supports remote indexes for IDE workspaces that are linked to Azure DevOps repos. This enables #codebase to search for relevant snippets almost instantly without any initialization. This even works for larger repos with tens of thousands of indexable files. Support for remote workspaces has released starting with the July updates to Visual Studio  and VS Code. For more info please see the [VS Code Release Notes](https://code.visualstudio.com/updates/v1_103#_azure-devops-repos-remote-index-support). 
 
-Remote indexes are used automatically when working in a workspace that is linked to Azure DevOps through git. Make sure you are also logged into VS Code with the Microsoft account you use to access the Azure DevOps repos.
+Remote indexes are used automatically when working in a workspace that is linked to Azure DevOps through git. Make sure you are also logged into Visual Studio or VS Code  with the Microsoft account you use to access the Azure DevOps repo.
