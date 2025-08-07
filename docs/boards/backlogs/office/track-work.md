@@ -1,14 +1,14 @@
 ---
 title: Connect Azure Boards to an Office client to track your work
 titleSuffix: Azure Boards
-description: Learn how to connect to Excel to integrate and track your work in Azure Boards or Azure DevOps Server.
+description: Learn how to connect to Excel to integrate and track your work in Azure DevOps.
 ms.service: azure-devops-boards
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/17/2024
+ms.date: 08/07/2025
 #customer intent: As a team member or lead, I want to use Microsoft Excel in working with Azure Boards or Azure DevOps Server to improve my team's tracking efforts.
 ---
 
@@ -33,86 +33,34 @@ macOS isn't supported. Even if you installed Visual Studio for Mac, connection t
 
 ---
 
-:::row:::
-:::column span="2":::
-**Azure DevOps/Visual Studio version**
-:::column-end:::
-:::column span="":::
-**Excel**
-:::column-end:::
-:::column span="":::
-**Project**<sup>1</sup>
-:::column-end:::
-:::column span="":::
-**PowerPoint Storyboarding**<sup>2</sup>
-:::column-end:::
-:::row-end:::
----
-:::row:::
-:::column span="2":::
-Azure DevOps Services  
-Azure DevOps Server 2020  
-Visual Studio 2022  
-Visual Studio 2019  
-Azure DevOps Office Integration 2019
-:::column-end:::
-:::column span="":::
-✔️  
-:::column-end:::
-:::column span="":::
-
-:::column-end:::
-:::column span="":::
-
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-TFS 2018  
-Visual Studio 2017  
-:::column-end:::
-:::column span="":::
-✔️  
-:::column-end:::
-:::column span="":::
-✔️  
-:::column-end:::
-:::column span="":::
-✔️  
-:::column-end:::
-:::row-end:::
+| Azure DevOps/Visual Studio version | Excel | Project<sup>1</sup> | PowerPoint Storyboarding<sup>2</sup> |
+|-------------------------------------|-------|---------------------|--------------------------------------|
+| Azure DevOps Services<br>Azure DevOps Server 2020<br>Visual Studio 2022<br>Visual Studio 2019<br>Azure DevOps Office Integration 2019 | ✔️ | | |
+| Visual Studio 2017 | ✔️ | ✔️ | ✔️ |
 
 > [!NOTE]  
-> - Support for Project integration and the **TFSFieldMapping** command is deprecated for Azure DevOps Server 2020 and later versions. You might find support using one of the [Marketplace extensions](#marketplace-extensions).
-> - Support for linking PowerPoint files to work items from within PowerPoint is deprecated starting with Visual Studio 2019 and Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated.
+> 1. Support for Project integration and the **TFSFieldMapping** command is deprecated. You might find support using one of the [Marketplace extensions](#marketplace-extensions).
+> 2. Support for linking PowerPoint files to work items from within PowerPoint is deprecated starting with Visual Studio 2019 and Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated.
 
 ## Prerequisites
 
-Connection from an Office client to an Azure Boards project requires the following software and permissions.
-
 ::: moniker range="azure-devops"
 
-- To connect Excel to Azure Boards, install Office Excel 2010 or later version, including Office Excel 365.
-- All Office integration tasks require an installed version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family).
-- The only way to get the Azure DevOps Office Integration plug-in is to install one of the latest editions of Visual Studio or Azure DevOps Office Integration. The plug-in supports connection to Azure DevOps from Excel.
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md).
+| Category | Requirements |
+|----------|-------------|
+| **Software** | - Office Excel 2010 or later version, including Office Excel 365<br>- Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019), scroll to All Downloads, select **Other Tools, Frameworks, and Redistributables**, and then **Download** next to Azure DevOps Office Integration 2019<br>- Azure DevOps Office Integration plug-in (installed with Visual Studio or Azure DevOps Office Integration) |
+| **Permissions** | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project |
+| **Project** | - If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md) |
 
 ::: moniker-end
 
-::: moniker range="<azure-devops"
+::: moniker range="< azure-devops"
 
-- To connect Excel to Azure Boards, you must install Office Excel 2010 or later version, including Microsoft 365.
-- All Office integration tasks require that you install a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family)
-- The only way to get the Team Foundation plug-in is to install one of the latest editions of Visual Studio or Azure DevOps Office Integration 2019. The Azure DevOps Office Integration 2019 plug-in supports connection to Azure DevOps from Excel.
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md).
-
-::: moniker-end
-
-::: moniker range="<=azure-devops"
-
-- Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
-- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards. If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md).
+| Category | Requirements |
+|----------|-------------|
+| **Software** | - Office Excel 2010 or later version, including Microsoft 365<br>- Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019), scroll to All Downloads, select **Other Tools, Frameworks, and Redistributables**, and then **Download** next to Azure DevOps Office Integration 2019<br>- Team Foundation plug-in (installed with Visual Studio or Azure DevOps Office Integration 2019) |
+| **Permissions** | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project |
+| **Project** | - If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md) |
 
 ::: moniker-end
 
