@@ -14,6 +14,10 @@ In addition, with this release we are no longer allowing organizations to create
 
 Check out the release notes for details.
 
+### GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-260-update-links](includes/ghazdo/sprint-260-update-links.md)]
+
 ### General
 
 [!INCLUDE [sprint-260-update-links](includes/general/sprint-260-update-links.md)]
@@ -25,6 +29,10 @@ Check out the release notes for details.
 ### Azure Repos
 
 [!INCLUDE [sprint-260-update-links](includes/repos/sprint-260-update-links.md)]
+
+## GitHub Advanced Security for Azure DevOps
+
+[!INCLUDE [sprint-260-update](includes/ghazdo/sprint-260-update.md)]
 
 ## General
 

@@ -21,3 +21,7 @@ There remain a couple of notable exceptions  — the following ​user groups ma
 
 1. Billing admins need access to ARM to setup billing and access subscriptions
 2. Service Connection creators require continued access to ARM for ARM role assignment and updates to MSIs
+ 
+### Continuous Access Evaluation on Azure DevOps
+
+Azure DevOps now supports [Continuous Access Evaluation (CAE)](https://learn.microsoft.com/entra/identity/conditional-access/concept-continuous-access-evaluation), enabling near real-time enforcement of Conditional Access policies through Microsoft Entra ID. This enhancement allows Azure DevOps to instantly revoke access when critical events occur—such as user disablement, password resets, or location/IP changes—without waiting for token expiration. Real-time enforcement means that compromised accounts or policy violations are addressed as soon as we learn of the event, reducing exposure windows and improving incident response. Developers using CAE-capable client libraries ([].NET now available](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/20.259.0-preview), Python and Go to come) must handle claims challenges and update sign-in flows accordingly. General availability begins August 2025 following phased rollout for all customers.
