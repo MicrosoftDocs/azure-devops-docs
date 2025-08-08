@@ -30,9 +30,6 @@ Change your preferred email address for notifications through your organization 
 
 ## Change your email address
 
-> [!NOTE]
-> If your email field appears grayed out or disabled, your organization is using Microsoft Entra ID authentication. Your Microsoft Entra ID administrator can update your email address, or you can update it yourself in the Microsoft Entra ID portal if you have the necessary permissions.
-
 Follow these steps to update your preferred notification email address:
 
 ::: moniker range="azure-devops"
