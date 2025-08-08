@@ -70,7 +70,7 @@ If you already have a feed, you can skip this section. Otherwise, follow the ste
 
 ## Prepare your package
 
-In this example, you'll use a sample .NET Core Class Library and set up your package metadata before building the project and creating a NuGet package ready for publishing to your feed. If you don't have a project yet, follow the instructions in this guide to [Create a .NET class library using Visual Studio Code](https://learn.microsoft.com/en-us/dotnet/core/tutorials/library-with-visual-studio-code).
+In this example, you'll use a sample .NET Core Class Library and set up your package metadata before building the project and creating a NuGet package ready for publishing to your feed. If you don't have a project yet, follow the instructions in this guide to [Create a .NET class library using Visual Studio Code](/dotnet/core/tutorials/library-with-visual-studio-code).
 
 #### [Without GitHub Copilot](#tab/withoutgithubcopilot/)
 
