@@ -48,7 +48,7 @@ Create an inherited process that you can customize with the following steps. The
 
 1. Sign in to your organization (`https://dev.azure.com/<Your_Organization>`).
 
-1. Select :::image type="icon" source"../../../media/icons/gear-icon.png"::: **Organization settings**.
+1. Select :::image type="icon" source="../../../media/icons/gear-icon.png"::: **Organization settings**.
 
    :::image type="content" source="../../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing the Organization settings action highlighted in Azure DevOps.":::
 
