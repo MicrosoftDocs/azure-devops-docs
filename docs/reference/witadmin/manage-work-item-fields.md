@@ -18,9 +18,6 @@ ms.date: 08/07/2025
 
 The **witadmin** command-line tool provides powerful capabilities for managing work item fields in your project collection. Whether you need to rename fields, adjust data types, or configure synchronization with identity providers, these commands give you granular control over your work tracking experience.
 
-> [!IMPORTANT]
-> The **witadmin** tool is primarily designed for Azure DevOps Server (on-premises) environments using the On-premises XML process model. For Azure DevOps Services, we recommend using the [inherited process model](../../organizations/settings/work/inheritance-process-model.md) through the web interface to customize work item fields.
-
 ## What you can do with witadmin field commands
 
 Use the following **witadmin** commands to manage fields across all work item types and projects in your collection:
