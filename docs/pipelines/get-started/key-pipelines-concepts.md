@@ -23,7 +23,7 @@ The following graphic shows the main components and actions of a pipeline.
 
 - A manual, scheduled, or automated [trigger](#triggers) causes a [pipeline](#pipelines) to start.
 - A [pipeline](#pipelines) can contain one or more [stages](#stages) and deploy to one or more [environments](#environments).
-- [Stages](#stages) are a way to organize pipelines and each contain one or more [jobs](#jobs).
+- [Stages](#stages) are a way to organize pipelines, and each contains one or more [jobs](#jobs).
 - [Jobs](#jobs) run on [agents](#agents), or can be agentless.
 - Each [job](#jobs) contains one or more [steps](#steps).
 - A [step](#steps) is the smallest element of a pipeline and can be a [task](#tasks) or a [script](#scripts).
@@ -32,7 +32,7 @@ The following graphic shows the main components and actions of a pipeline.
 
 ## Azure Pipelines terms
 
-The following terms define key Azure Pipelines components and actions.
+The following terms define key Azure Pipelines components and processes.
 
 ### Agents
 
@@ -66,19 +66,19 @@ In Classic pipelines, deployment runs the tasks for the deployment stage, which 
 
 ### Deployment groups
 
-in Azure Pipelines Classic release pipelines, a [deployment group](../release/deployment-groups.md) is a logical group of deployment target machines. Every target server in the deployment group requires a deployment agent installed. For more information, see [Provision agents for deployment groups](../release/deployment-groups/howto-provision-deployment-group-agents.md).
+In Azure Pipelines Classic release pipelines, a [deployment group](../release/deployment-groups/index.md) is a logical group of deployment target machines. Every target server in the deployment group requires a deployment agent installed. For more information, see [Provision agents for deployment groups](../release/deployment-groups/howto-provision-deployment-group-agents.md).
 
 ### Environments
 
-An [environment](../process/environments.md) is a collection of resources like virtual machines, containers, web apps, or services where you deploy your application. Pipelines can deploy to one or more environments after a completing a build and running tests.
+An [environment](../process/environments.md) is a collection of resources like virtual machines, containers, web apps, or services where you deploy your application. Pipelines can deploy to one or more environments after completing a build and running tests.
 
 ### Jobs
 
-A job represents an execution boundary of a set of steps that run sequentially on the same [agent](#agents). Pipeline [stages](#stages) can include one or more jobs. Jobs don't always run sequentially by default.
+A job represents an execution boundary of a set of steps that run sequentially on the same [agent](#agents). Pipeline [stages](#stages) can include one or more jobs. Jobs don't always run sequentially in stages by default.
 
-Jobs are useful for running a series of steps in different environments. For example, your build stage could contain one job for building an x86 configuration and another job for building an x64 configuration.
+Jobs are useful for running a series of steps in different environments. For example, your build stage could contain one job for building an `x86` configuration and another job for building an `x64` configuration.
 
-Each job runs on an agent that runs all the steps in that job. A limited number of task steps support agentless jobs that run without using an agent. For more information, see [Agentless jobs supported tasks](../process/phases.md#agentless-jobs-supported-tasks).
+Each job runs on an agent that runs all the steps in that job. A limited number of task steps support agentless jobs that run without an agent. For more information, see [Agentless jobs supported tasks](../process/phases.md#agentless-jobs-supported-tasks).
 
 ### Library
 
