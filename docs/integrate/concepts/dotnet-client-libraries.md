@@ -33,7 +33,7 @@ The .NET client libraries for Azure DevOps offer several key features that make 
 - **Downloadable from NuGet.org**: Easily import the libraries into your Visual Studio projects by downloading them from [NuGet.org](https://www.nuget.org/).
 - **Licensed for redistribution**: The libraries are licensed for redistribution in your apps and services. You can [view the license](https://go.microsoft.com/fwlink/?LinkId=329770) for more details.
 - **Access to APIs**: Gain access to both traditional client object model APIs and [REST APIs](/rest/api/azure/devops/?view-azure-devops-rest-7.2&preserve-view=true) to interact with Azure DevOps programmatically.
-- **Claims challenges support**: As of version 20.259.0, .NET client libraries can now return tokens with [claims challenges](/entra/identity-platform/claims-challenge?tabs=dotnet) that can be used to gracefully handle reauthentication requests after critical company events (e.g. password resets, account deletions, etc.) as part of our support for [Continuous Access Evaluation](../../docs/organizations/accounts/conditional-access-policies.md#continuous-access-evaluation). Python and Go support to come in the latter half of 2025.
+- **Claims challenges support**: As of version 20.259.0, .NET client libraries can now return tokens with [claims challenges](/entra/identity-platform/claims-challenge?tabs=dotnet) that can be used to gracefully handle reauthentication requests after critical company events (e.g. password resets, account deletions, etc.) as part of our support for [Continuous Access Evaluation](../../organizations/accounts/conditional-access-policies.md#continuous-access-evaluation). Python and Go support to come in the latter half of 2025.
 
 ## Package and Azure DevOps version-mapping table
 
