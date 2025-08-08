@@ -20,3 +20,9 @@ Previously, dismissal information was only available via the alerts API. Now, in
 > [![Image to show information about the latest dismissal.](../../media/260-ghazdo-01.png "Image to show information about the latest dismissal")](../../media/260-ghazdo-01.png#lightbox)
 
 This address [Developer Community feedback](https://developercommunity.visualstudio.com/t/GHAzDO-closed-security-issues-misses-inf/10930119).
+
+## Validity checking for secrets now generally available 
+
+Validity checking is a feature to determine if an exposed secret is active or inactive, helping you prioritize your remediation efforts. No opt-in is needed; once the feature is available in your organization, any patterns that support validity checking will automatically attempt a validity check. In an alert that supports validity checking, you can also manually re-validate the secret. 
+
+See all supported patterns with validity checking at [Secret scanning patterns](/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops#partner-provider-patterns). 
