@@ -52,7 +52,7 @@ Create an inherited process that you can customize with the following steps. The
 
    :::image type="content" source="../../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing the Organization settings action highlighted in Azure DevOps.":::
 
-1. Select **Boards** > **Process**. In the **Processes** list, highlight the process to use and select :::image type="icon" source="../../../media/icons/actions-icon.png" **More actions** > **Create inherited process**.
+1. Select **Boards** > **Process**. In the **Processes** list, highlight the process to use and select :::image type="icon" source="../../../media/icons/actions-icon.png"::: **More actions** > **Create inherited process**.
 
    Choose the same system process that was used to create the project that you want to customize. The process types can include [Agile](../../../boards/work-items/guidance/agile-process.md), [Basic](../../../boards/get-started/plan-track-work.md&tabs=basic-process&preserve-view=true), [Scrum](../../../boards/work-items/guidance/scrum-process.md), and [Capability Maturity Model Integration(CMMI)](../../../boards/work-items/guidance/cmmi-process.md).
 
@@ -117,7 +117,7 @@ The following steps demonstrate how to use the migrate method to change a projec
 
    :::image type="content" source="media/agile-to-scrum/choose-agile.png" alt-text="Screenshot that shows how to open the details for a process by selecting the process name.":::
 
-1. In the process details page, select the **Projects** tab. In the project list, highlight the project to change and select :::image type="icon" source="../../../media/icons/actions-icon.png" **More actions** > **Change process**. 
+1. In the process details page, select the **Projects** tab. In the project list, highlight the project to change and select :::image type="icon" source="../../../media/icons/actions-icon.png"::: **More actions** > **Change process**. 
 
    :::image type="content" source="media/agile-to-scrum/change-process-for-project.png" alt-text="Screenshot that shows how to select the change process action for a project.":::
 
@@ -134,7 +134,7 @@ The following steps demonstrate how to use the migrate method to change a projec
 
 Follow these steps to create a project from a process:
 
-1. Select **Boards** > **Process**. In the **Processes** list, highlight the process to update and select :::image type="icon" source="../../../media/icons/actions-icon.png" **More actions** > **New team project**. 
+1. Select **Boards** > **Process**. In the **Processes** list, highlight the process to update and select :::image type="icon" source="../../../media/icons/actions-icon.png"::: **More actions** > **New team project**. 
 
    ::: moniker range=">= azure-devops-2020"
 
@@ -157,13 +157,13 @@ Before you implement customizations across your organization, it's essential to 
 > [!TIP]
 > If you modify a process used by multiple projects, each project immediately reflects the incremental process change. To bundle process changes before rolling them out to all projects, complete the following procedure.
 
-1. Select **Boards** > **Process**. In the **Processes** list, highlight the process to use and select :::image type="icon" source="../../../media/icons/actions-icon.png" **More actions** > **Create copy of process**.  
+1. Select **Boards** > **Process**. In the **Processes** list, highlight the process to use and select :::image type="icon" source="../../../media/icons/actions-icon.png"::: **More actions** > **Create copy of process**.  
 
    :::image type="content" source="media/process/copy-process.png" alt-text="Screenshot that shows how to select the copy option for a selected process.":::
 
 1. Enter a name and optional description for the copied process and select **Copy process**.
 
-   :::image type="content" source="media/process/copy-process-dialog.png" alt-text="Screenshot of the Copy process dialog."":::
+   :::image type="content" source="media/process/copy-process-dialog.png" alt-text="Screenshot of the Copy process dialog.":::
 	
 1. Make your changes to the copied process. Because no project is currently using the new (copied) process, your changes don't affect any projects.
 
@@ -177,13 +177,13 @@ Before you implement customizations across your organization, it's essential to 
 
 To prevent the creation of projects from a specific process, you can disable the option. You might enable this option when you want to apply several customizations and don't want the process used until the updates are complete. Or, you might retire use of a specific process in favor of moving projects to a new process. 
 
-All system processes and newly created inherited processes are enabled by default. To disable or enable a process, open the :::image type="icon" source="../../../media/icons/actions-icon.png" **More actions** menu for the process and select **Disable process** or **Enable process**. 
+All system processes and newly created inherited processes are enabled by default. To disable or enable a process, open the :::image type="icon" source="../../../media/icons/actions-icon.png"::: **More actions** menu for the process and select **Disable process** or **Enable process**. 
 
 ## Set a process as the default
 
 You can have an inherited process preselected for other projects you plan to create, by setting the process as the default. This action ensures that any new projects automatically use the inherited process you prefer. 
 
-To set a process as the default, open the :::image type="icon" source="../../../media/icons/actions-icon.png" **More actions** menu for the inherited process and select **Set as default process**. This option isn't available with any of the system processes. 
+To set a process as the default, open the :::image type="icon" source="../../../media/icons/actions-icon.png"::: **More actions** menu for the inherited process and select **Set as default process**. This option isn't available with any of the system processes. 
 
 **Project Collection Administrators** can [add projects](../../projects/create-project.md) from the **Projects** page. 
 
