@@ -7,4 +7,4 @@ ms.topic: include
 
 - [Only organizations with existing public projects can create new ones](#only-organizations-with-existing-public-projects-can-create-new-ones)
 - [Azure DevOps login flow no longer relies on Azure Resource Manager audience](#azure-devops-login-flow-no-longer-relies-on-azure-resource-manager-audience)
-- [Continuous Access Evaluation on Azure DevOps](#continuos-access-evaluation-on-azure-devops)
+- [Continuous Access Evaluation on Azure DevOps](#continuous-access-evaluation-on-azure-devops)
