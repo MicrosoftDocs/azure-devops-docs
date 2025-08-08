@@ -16,10 +16,10 @@ ms.date: 08/07/2025
 
 [!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
+The **witadmin** command-line tool provides powerful capabilities for managing work item fields in your project collection. Whether you need to rename fields, adjust data types, or configure synchronization with identity providers, these commands give you granular control over your work tracking experience.
+
 > [!IMPORTANT]
 > The **witadmin** tool is primarily designed for Azure DevOps Server (on-premises) environments using the On-premises XML process model. For Azure DevOps Services, we recommend using the [inherited process model](../../organizations/settings/work/inheritance-process-model.md) through the web interface to customize work item fields.
-
-The **witadmin** command-line tool provides powerful capabilities for managing work item fields in your project collection. Whether you need to rename fields, adjust data types, or configure synchronization with identity providers, these commands give you granular control over your work tracking experience.
 
 ## What you can do with witadmin field commands
 
@@ -60,6 +60,8 @@ For more information, see [Change project collection-level permissions](../../or
   
 ## Syntax  
 
+Use the following command syntax patterns to manage work item fields with the witadmin tool:
+
 ```  
 witadmin changefield /collection:CollectionURL /n:RefName   [/name:NewName]    [/syncnamechanges:true | false]   [/reportingname:ReportingName]    [/reportingrefname:ReportingRefName]   [/reportingtype:Type]   [/reportingformula:Formula]   [/type:PlainText | HTML]   [/noprompt]  
 
@@ -87,19 +89,48 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 
 ### Synchronizing person names with Microsoft Entra ID and Active Directory  
 
-You must manually enable synchronization of any custom work item fields that are used to assign person names that reference Microsoft Entra ID (for Azure DevOps Services) or Active Directory (for Azure DevOps Server). You must enable synchronization for each field for each project collection that contains the custom fields.  
+Configure custom person-name fields to automatically update when user names change in your identity provider.
 
-All system reference fields that show person-names have the attribute `syncnamechanges` set to `true`. Such fields include System.AssignedTo, System.ChangedBy, and System.CreatedBy. Synchronization is enabled for each person name field that is defined in one of the default process templates. For more information, see [Assignments and workflow fields](../../boards/queries/query-by-workflow-changes.md).  
+#### When to enable synchronization
 
-After synchronization is enabled, the field no longer shows a static string. Instead, the field shows the name associated with a user account. When you change the user name in Microsoft Entra ID, Active Directory, or a workgroup, a field with `syncnamechanges` set to `true` automatically shows the new name.  
+**Custom fields only**: You must manually enable synchronization for any custom work item fields used to assign person names.
 
-When you assign the `syncnamechanges` attribute to a String field, the field always accepts valid user names. However, the field doesn't allow group names that are stored in Azure DevOps Server or in Active Directory if any one of the following conditions is `true`:  
+**System fields**: All built-in person-name fields automatically have synchronization enabled:
+- `System.AssignedTo`
+- `System.ChangedBy` 
+- `System.CreatedBy`
 
-- The `VALIDUSER` rule is specified across all work item types    
-- The `VALIDUSER` rule is specified for a work item type    
-- The `ALLOWEDVALUES` rule is specified for a work item type, and that rule has a filter criterion that excludes groups  
+#### Identity provider support
 
-For more information, see [All FIELD elements](/previous-versions/azure/devops/reference/xml/field-definition-element-reference).  
+| Environment | Identity Provider |
+|-------------|-------------------|
+| **Azure DevOps Services** | Microsoft Entra ID |
+| **Azure DevOps Server** | Active Directory or workgroup |
+
+#### How synchronization works
+
+| State | Behavior |
+|-------|----------|
+| **Before enabling** | Field shows static text strings |
+| **After enabling** | Field displays current user name from identity provider |
+| **When names change** | Fields with `syncnamechanges=true` automatically update |
+
+#### Group name restrictions
+
+When you enable the `syncnamechanges` attribute on a String field, it accepts valid user names but **doesn't allow group names** if any of these conditions apply:
+
+- **`VALIDUSER` rule** specified across all work item types
+- **`VALIDUSER` rule** specified for a specific work item type  
+- **`ALLOWEDVALUES` rule** specified with filter criteria that excludes groups
+
+#### Configuration scope
+
+> [!IMPORTANT]
+> You must enable synchronization for each field in each project collection that contains the custom fields.
+
+For more information, see:
+- [Assignments and workflow fields](../../boards/queries/query-by-workflow-changes.md)
+- [All FIELD elements](/previous-versions/azure/devops/reference/xml/field-definition-element-reference).  
 
 ### Attributes that you can change for each work item type  
 
@@ -258,12 +289,12 @@ witadmin reportfield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
   
 #### Verify the data type of the field that you want to convert  
   
-1.  Verify the data type assigned to the field, such as MyCompany.CustomerName, that you want to synchronize by entering the following command:  
-  
-    ```  
-    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomerName  
-    ```  
-  
+Verify the data type assigned to the field, such as MyCompany.CustomerName, that you want to synchronize by entering the following command:  
+
+```  
+witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomerName  
+```
+
 #### Enable synchronization  
   
 1.  To enable synchronization for a person-named field, type the following command, substituting your data for the arguments that are shown here:  
