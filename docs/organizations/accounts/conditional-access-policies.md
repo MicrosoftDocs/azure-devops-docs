@@ -22,8 +22,6 @@ Microsoft Entra ID lets tenant admins control which users can access Microsoft r
 
 Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. Learn more about [Conditional Access policies](/azure/active-directory/active-directory-conditional-access) in the Microsoft Entra documentation.
 
-## Prerequisites
-
 ## Create a Conditional Access policy for Azure DevOps
 
 | Category | Requirements |
@@ -39,7 +37,7 @@ Based on these conditions, you can grant access, require more checks like multif
 
  :::image type="content" source="./media/setup-ado-cap.png" alt-text="Screenshot showing how to add Azure DevOps as a target resource on a new Conditional Access policy in Microsoft Entra portal.":::
 
-### Conditional Access behavior on web
+## Conditional Access behavior on web
 
 When you sign in to the web portal of a Microsoft Entra ID-backed organization, Microsoft Entra ID validates all Conditional Access policies set by tenant administrators. After [modernizing our web authentication stack to use Microsoft Entra tokens](https://devblogs.microsoft.com/devops/full-web-support-for-conditional-access-policies-across-azure-devops-and-partner-web-properties/), Azure DevOps now enforces Conditional Access policy validation on all interactive (web) flows.
 
@@ -47,7 +45,7 @@ When you sign in to the web portal of a Microsoft Entra ID-backed organization, 
 - Remove Azure DevOps as a resource from the Conditional Access policy, which prevents Conditional Access policies from applying.
 - Enforce MFA policies on web flows only; block access for non-interactive flows if users don't meet a Conditional Access policy.
 
-### IP-based conditions
+## IP-based conditions
 
 | Category | Requirements |
 |--------------|-------------|
@@ -59,7 +57,7 @@ Azure DevOps supports IP-fencing Conditional Access policies for both IPv4 and I
 
 If users access the Microsoft Entra sign-in page from a different IP address than the one used to access Azure DevOps resources (which can happen with VPN tunneling), review your VPN configuration or networking setup. Make sure your tenant administrator includes all relevant IP addresses in the Conditional Access policies.
 
-### Azure Resource Manager audience
+## Azure Resource Manager audience
 
 > [!NOTE]
 > These changes will go into effect starting Sep 2, 2025. Learn more in [our blog post](https://devblogs.microsoft.com/devops/removing-azure-resource-manager-reliance-on-azure-devops-sign-ins/).
@@ -71,6 +69,12 @@ If you previously set up a Conditional Access policy for Azure Resource Manager 
 The following groups still require continued access to ARM. You may want to consider adding them as exclusions to any ARM or Windows Azure Service Management API Conditional Access policies.
 - **Billing administrators** need access to ARM to set up billing and access subscriptions.
 - **Service Connection creators** require access to ARM for ARM role assignments and updates to managed service identities (MSIs).
+
+## Continuous Access Evaluation
+
+Azure DevOps now supports [Continuous Access Evaluation (CAE) via Microsoft Entra ID](/entra/identity/conditional-access/concept-continuous-access-evaluation), enabling near real-time enforcement of Conditional Access policies. With CAE, access tokens can be revoked immediately when critical events occur—such as user disablement, password changes, or location/IP shifts—without waiting for token expiration. This enhances security, reduces operational overhead, and improves resilience during identity service outages.
+
+App developers using our latest [.NET client library version](../../integrate/concepts/dotnet-client-libraries.md) (20.259.0-preview and beyond) are recommended to provide support for CAE-enabled tokens by [gracefully handling claims challenges](/entra/identity-platform/claims-challenge?tabs=dotnet). CAE support will be coming to Python and Go client libraries in the latter half of 2025.
 
 ## Related content
 * [Change application connection & security policies for your organization](change-application-access-policies.md)
