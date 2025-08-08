@@ -30,11 +30,11 @@ An inherited process serves as the foundation for your work tracking system. Whe
 In this tutorial, you:
 
 > [!div class="checklist"]
-> * [Create an inherited process based on the Agile, Scrum, Basic, or CMMI models]
-> * [Change the process type associated with a project]
-> * [Create a new project from a defined process]
-> * [Copy a process and make customizations]
-> * [Enable and disable processes, and set the default process]
+> * Create an inherited process based on the Agile, Scrum, Basic, or CMMI models
+> * Change the process type associated with a project
+> * Create a new project from a defined process
+> * Copy a process and make customizations
+> * Enable and disable processes, and set the default process
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ Create an inherited process that you can customize with the following steps. The
 
 1. Select **Boards** > **Process**. In the **Processes** list, highlight the process to use and select :::image type="icon" source="../../../media/icons/actions-icon.png"::: **More actions** > **Create inherited process**.
 
-   Choose the same system process that was used to create the project that you want to customize. The process types can include [Agile](../../../boards/work-items/guidance/agile-process.md), [Basic](../../../boards/get-started/plan-track-work.md&tabs=basic-process&preserve-view=true), [Scrum](../../../boards/work-items/guidance/scrum-process.md), and [Capability Maturity Model Integration(CMMI)](../../../boards/work-items/guidance/cmmi-process.md).
+   Choose the same system process that was used to create the project that you want to customize. The process types can include [Agile](../../../boards/work-items/guidance/agile-process.md), [Basic](../../../boards/get-started/plan-track-work.md?tabs=basic-process&preserve-view=true), [Scrum](../../../boards/work-items/guidance/scrum-process.md), and [Capability Maturity Model Integration(CMMI)](../../../boards/work-items/guidance/cmmi-process.md).
 
    The following example creates an inherited process from the Agile system process:
 
@@ -77,12 +77,12 @@ Create an inherited process that you can customize with the following steps. The
 
 1. Select **Process**.
 
-   :::image type="content" source="media/process/open-process-2020.png" border="false" alt-text="Screenshot showing highlighted Process button." lightbox="HERE":::
+   :::image type="content" source="media/process/open-process-2020.png" alt-text="Screenshot showing how to select the Process option to see all processes for the collection.":::
 
    > [!IMPORTANT]  
    > If you don't have the **Create inherited process** menu option, then the collection you selected is set to work with the on-premises XML process model. For more information, see [Customize your work tracking experience - On-premises XML process model](../../../reference/customize-work.md).
 
-Inherited child processes automatically update, based on their parent system processes. Updates to processes are documented in [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
+   Inherited child processes automatically update, based on their parent system processes. Updates to processes are documented in [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ After you define the inherited process, you can complete the following tasks:
 
 - [Customize a project by using an inherited process](customize-process.md)   
 - [Create a project](#create-a-project-from-a-process) that uses the inherited process  
-- [Update a project to use the inherited process](#migrate), as described in the next section       
+- [Update a project to use the inherited process](#migrate)       
 
 <a id="migrate"></a>
 
@@ -138,7 +138,7 @@ Follow these steps to create a project from a process:
 
    ::: moniker range=">= azure-devops-2020"
 
-   :::image type="content" source="media/process/new-team-project-from-inherited-process-menu.png" border="false" alt-text="Screenshot that shows how to select the new team project option for a selected process.":::
+   :::image type="content" source="media/process/new-team-project-from-inherited-process-menu.png" alt-text="Screenshot that shows how to select the new team project option for a selected process.":::
 
    ::: moniker-end
 
