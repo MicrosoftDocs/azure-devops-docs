@@ -16,20 +16,28 @@ ms.date: 08/07/2025
 
 [!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
-You can manage the fields defined for work item types that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](/previous-versions/azure/devops/reference/xml/global-workflow-xml-element-reference) and [importing it to the collection](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow).  
+> [!IMPORTANT]
+> The **witadmin** tool is primarily designed for Azure DevOps Server (on-premises) environments using the On-premises XML process model. For Azure DevOps Services, we recommend using the [inherited process model](../../organizations/settings/work/inheritance-process-model.md) through the web interface to customize work item fields.
 
--   `changefield`: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:   
-    -   **Data type** for `PlainText` or `HTML` fields.    
-        > [!IMPORTANT]  
-        >  When you upgrade Azure DevOps Server from an earlier version to the current version, the type assignment for the **Description** (System.Description) field is automatically converted from `PlainText` to `HTML`. With the `changefield` command, you can restore the content of this field to display plain text.  
-    -   **Friendly name** that displays in the work item query. This name might differ from the name displayed on the work item form.    
-    -   **Reporting attributes** which includes the name of the field as it appears in a report, the reference report name, and the reporting type.  
-    -   **Synchronization** with Microsoft Entra ID or Active Directory - you can enable/disable synchronization of person name fields.   
--   `deletefield`: Deletes the specified field.     
--   `listfields`: Lists the attributes for all fields or a specified field.
+The **witadmin** command-line tool provides powerful capabilities for managing work item fields in your project collection. Whether you need to rename fields, adjust data types, or configure synchronization with identity providers, these commands give you granular control over your work tracking experience.
 
-> [!NOTE]
-> The `witadmin indexfield` command is deprecated. Indexing fields is no longer required.
+## What you can do with witadmin field commands
+
+Use the following **witadmin** commands to manage fields across all work item types and projects in your collection:
+
+-  **`changefield`**: Modify field attributes that apply collection-wide, including:
+    -  **Data type conversion** between `PlainText` and `HTML` formats
+    > [!IMPORTANT]  
+    >  When you upgrade Azure DevOps Server, the **Description** field (System.Description) automatically converts from `PlainText` to `HTML`. Use the `changefield` command to revert this if needed.
+    -  **Friendly names** displayed in work item queries (might differ from form labels)
+    -  **Reporting attributes** for data warehouse integration
+    -  **Identity synchronization** with Microsoft Entra ID or Active Directory
+-   **`deletefield`**: Remove unused fields from your collection
+-   **`listfields`**: View field attributes and usage across projects
+
+> [!TIP]
+> - To add global fields in On-premises XML environments, modify the [global workflow file](../../reference/xml/global-workflow-xml-element-reference.md) and import it to your collection.
+> - The `witadmin indexfield` command is deprecated. Field indexing occurs automatically.
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)] 
   
@@ -67,7 +75,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 |`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|   
 |`/n:RefName`<br />`/n:Name`|The reference name of a work item type field.|  
 |`/name:NewName`|Specifies the new name for the field.|  
-|`/syncnamechanges`|Specifies to use the work item field to store names and to update as changes are made in Microsoft Entra ID, Active Directory, or a workgroup. This option is valid only when a field with the data type of String is specified for the `typename`.<br /><br /> Specify `true` to enable synchronization for the data field, specify `false` to disable synchronization for the data field.|  
+|`/syncnamechanges`|Specifies to use the work item field to store names and to update as changes are made in Microsoft Entra ID, Active Directory, or a workgroup. This option is valid only when a field with the data type of String is specified for the `typename`.<br /><br /> Specify `true` to enable synchronization for the data field. Specify `false` to disable synchronization for the data field.|  
 |`/reportingname:ReportingName`|Specifies the name of the field in the data warehouse to be used for reporting.|  
 |`/reportingrefname:ReportingRefName`|Specifies the reference name of the field in the data warehouse to be used for reporting.|  
 |`/reportingtype:Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   `dimension:` Used for the Integer, String, or DateTime fields.<br />-   `detail:` Used for the Integer, Double, String, or DateTime fields.<br />-   `measure:` Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-  `none:` Used to disable reportability on the field.<br /><br /> For more information, see [About work item fields and attributes](../../boards/work-items/work-item-fields.md).|  
@@ -117,66 +125,66 @@ Use `witadmin listfields` to see the set of fields in use, to select one to add 
 
 Enter the following command to list the attributes defined for a specified field, such as `Microsoft.VSTS.Common.Issue`.  
 
-    ```  
-    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Issue  
-    ```  
+```  
+witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Issue  
+```  
   
-     Field and attribute information appears for the named field, as shown in this example.  
+Field and attribute information appears for the named field, as shown in this example.  
   
-    ```  
-    Field: Microsoft.VSTS.Common.Issue  
+```  
+Field: Microsoft.VSTS.Common.Issue  
     Name: Issue  
     Type: String  
     Reportable As: dimension  
     Use: Adventure Works (Shared Steps), AW Future (Shared Steps), AW Current (Shared Steps)  
     Indexed: False  
-    ```  
-  
-     The **Use** parameter indicates the name of each project and the work item type where the field is used. For more information about field attributes, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
+```  
+
+The **Use** parameter indicates the name of each project and the work item type where the field is used. For more information about field attributes, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
 
 ### List all fields in a project collection  
 
 Enter the following command to list all fields defined for a project collection.  
 
-    ```  
-    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
-    ```  
+```  
+witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
+```  
 
-     Field information for all the fields for the named project collection appears. See [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
+Field information for all the fields for the named project collection appears. See [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
 
 ### List fields that aren't being used  
 
 Enter the following command to list the fields that are no longer being used in the project collection by any work item type.  
 
-    ```  
-    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /unused  
-    ```  
-  
-     Field and attribute information appears for each field that is not being used, as shown in this example.  
-  
-    ```  
+```
+witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /unused  
+```
+
+Field and attribute information appears for each field that isn't being used, as shown in this example.  
+
+```
     Field: Microsoft.VSTS.CMMI.TaskType  
     Name: Task Type  
     Type: String  
     Reportable As: dimension  
     Use: Not In Use  
     Indexed: False  
-  
+
     Field: Microsoft.VSTSUE.Common.Flag  
     Name: Flag  
     Type: String  
     Reportable As: dimension  
     Use: Not In Use  
     Indexed: False  
-  
+
     Field: Microsoft.VSTSUE.Common.Progress  
     Name: Progress  
     Type: String  
     Reportable As: dimension  
     Use: Not In Use  
     Indexed: False  
-    ```  
-  
+```
+
 ### Rename a field  
 
 You can change the friendly name of a work item field to meet the naming conventions that your team uses. The new name is applied to all work item types that reference the changed field in all projects in the project collection. The friendly name displays when you define filter criteria in a work item query. The name that appears on a work item form might be different than the friendly name defined for the field.  
@@ -203,7 +211,7 @@ You can change the friendly name of a work item field to meet the naming convent
   
 3.  In the Query Editor, choose the **Click here to add a clause** link to add a row, select the blank **Field** cell, and in the cell, enter `Rank`. The following message that appears above the results list. This message indicates that the Rank can't be found.  
   
-     **Run the query to see the query results.**  TF51005: The query references a field that doesn't exist. The error is caused by <\<Rank>>.  
+     **Run the query to see the query results.**  TF51005: The query references a field that doesn't exist. The error is caused by `<\<Rank>>`.  
   
 4.  Delete the value **Rank** from the **Field** cell, and enter `Important Rank` into the cell.  
   
@@ -223,7 +231,7 @@ You can change the friendly name of a work item field to meet the naming convent
   
      This work item is created from the work item type that you changed and imported.  
   
-11. Notice, in the **Status** box, that the label for the renamed field, **Rank**, hasn't changed. This is because the field labels on the work item forms are scoped to the parent project and are independent of the server-wide field name specified.  
+11. Notice, in the **Status** box, that the label for the renamed field **Rank** didn't change. The field labels on the work item forms are scoped to the parent project and are independent of the server-wide field name specified.  
   
     > [!NOTE]  
     > For more information about how to change field labels on work item forms, see [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).  
