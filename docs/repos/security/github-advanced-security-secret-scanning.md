@@ -168,6 +168,8 @@ If you believe a blocked secret is a false positive or safe to push, you can byp
 
 Secret validity checks help you prioritize alerts by indicating if a detected secret is still usable. For supported secret types, GitHub Advanced Security for Azure DevOps automatically asks the issuing provider whether the credential is active, no separate feature toggle is required once secret scanning is enabled.
 
+![Screenshot of Advanced Security Secret validation list.](./media/secret-validity-checking-alert-list.png)
+
 #### Before you start
 Ensure:
 - GitHub Advanced Security for Azure DevOps is enabled for the project/repository or Secret protection is enabled if you are in the standalone experience.
@@ -187,7 +189,7 @@ If a secret type does not support validation, the secret alert view details page
 | Status  | Meaning | Action |
 |---------|---------|--------|
 | Active  | Provider confirmed the secret is still usable. | Open the alert and follow its Recommendations & Remediation steps. |
-| Unknown | Verification couldn’t complete (unsupported type, provider error, rate limit, network). | Treat as possibly active; retry verification later. |
+| Unknown | No definitive signal of activity; it may be inactive, or verification failed due to service, network, or other unexpected errors.  | Treat as possibly active; retry verification or rotate if sensitive. |
 
 #### Typical workflow
 1. Filter Validation status = Active to surface highest-risk alerts.
