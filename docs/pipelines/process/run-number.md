@@ -3,7 +3,7 @@ title: Configure run and build numbers
 description: Learn about Azure Pipelines run numbers and build numbers and how you can configure them in your pipelines.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 07/01/2024
+ms.date: 08/11/2025
 monikerRange: "<=azure-devops"
 ---
 
@@ -11,70 +11,63 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines assigns a unique run number (also called a build number) to each pipeline execution. You can customize these numbers to make them more meaningful for your team, using variables, tokens, and naming patterns.
+Azure Pipelines assigns a unique run number, also called a build number, to identify each execution of a pipeline or build. This article explains the structure of these numbers and how you can customize them to be more meaningful for your team.
 
-The run number is used to identify a specific execution of a pipeline or build. The build number is synonymous with the run number. 
-
-If you don't specify a build name in YAML pipelines, or you leave the **Name** field blank in Classic pipelines, your run gets a unique integer as its name. You can give runs more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters in build names.
+If you don't specify a build name in YAML pipelines, or you leave the **Build number format** field blank in Classic pipelines, each run gets a unique integer as its name. You can use a combination of naming patterns, tokens, and variables to give runs more useful names.
 
 ::: moniker range=">=azure-devops-2020"
 
-You can only customize the run number at the root level of your pipeline using the `name` property. Set the `name` property at the [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) level. The `name` property isn't supported in templates or stages.
+## Customize the name property
 
-The following code sets a custom run number format like `project_def_main_202408281`:
+In Classic pipelines, you can customize the **Build number format** under **Options** in the pipeline definition. In YAML pipelines, you can customize the run number by using the `name` property at the [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) level. The `name` property isn't supported in templates or stages.
+
+The following YAML pipeline example sets a custom run number format like **project_def_main_202408281**:
 
 ```yaml
 name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
 
 steps:
-  - script: echo '$(Build.BuildNumber)'  
+  - script: echo '$(Build.BuildNumber)'
 ```
 
 ::: moniker-end
 
-## Run number
+## Run numbers
 
-The default value for a run number in Azure Pipelines is `$(Date:yyyyMMdd).$(Rev:r)`. `$(Rev:r)` is a special variable format that only works in the build number field. When a build completes, if nothing else in the build number changed, the `Rev` integer value increases by one.
+The default value for an Azure Pipelines run number is `$(Date:yyyyMMdd).$(Rev:r)`. The `$(Rev:r)` is a special variable that works only in the build number field. When a build completes, if nothing else in the build number changed, the `Rev` integer value increases by one.
 
 `$(Rev:r)` resets to `1` when any other part of the build number changes. For example, if you configure your build number format as `$(Build.DefinitionName)_$(Date:yyyyMMdd).$(Rev:r)`, the build number resets when the date changes.
 
-If the previous build number was `MyBuild_20230621.1`, the next build number that day is `MyBuild_20230621.2`. The first build number the next day is `MyBuild_20230622.1`.
+If the previous build number was **MyBuild_20230621.1**, the next build number that day is **MyBuild_20230621.2**. The first build number the next day is **MyBuild_20230622.1**.
 
-`$(Rev:r)` also resets to `1` if you change the build number to indicate a version change. For example, if your build format is `1.0.$(Rev:r)` and your last build number was `1.0.3`, if you change the build number to `1.1.$(Rev:r)`, the next build number is `1.1.1`.
+`$(Rev:r)` also resets to `1` if you change the version. If your build format is `1.0.$(Rev:r)` and your last build number was **1.0.3**, if you change the version to `1.1.$(Rev:r)`, the next build number is **1.1.1**.
 
-## Example
+For example, if you specify the build number format `$(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)`, the second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
 
-Consider the following data for a build run:
+The build number tokens resolve as follows:
 
-- Project name: Fabrikam
-- Pipeline name: CIBuild
-- Branch: main
-- Build ID/Run ID: 752
-- Date: May 6, 2024
-- Time: 9:07:03 PM
-- One run completed earlier today.
+- Project name: **Fabrikam**
+- Build definition name: **CIBuild**
+- Branch: **main**
+- Build/run ID: **752**
+- Date: **May 6, 2024**
+- Run number for that day: **2**
 
-If you specify the following build number format, the second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
+### Tokens
 
-```yaml
-$(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
-```
-
-## Tokens
-
-The following table shows how each token resolves, based on the previous example. You can use these tokens only to define run numbers. They don't work anywhere else in a pipeline.
+The following table shows how run number tokens resolve. You can use these tokens only to define run numbers. They don't work anywhere else in a pipeline.
 
 | Token | Example value | Notes |
 | ----- | -------------- | ----------- |
-| `$(Build.DefinitionName)` | CIBuild | The pipeline name can't contain invalid or whitespace characters.|
-| `$(Build.BuildId)` | 752 | `$(Build.BuildId)` is an internal, immutable ID, also called the Run ID, that is unique across the Azure DevOps organization.|
+| `$(Build.DefinitionName)` | CIBuild | Can't contain invalid or whitespace characters.|
+| `$(Build.BuildId)` | 752 | An internal, immutable ID, also called the `Run ID`, that's unique in the Azure DevOps organization.|
+| `$(Date:yyyyMMdd)` | 20240506 | A date format. You can also specify other date formats, such as `$(Date:MMddyy)`. |
 | `$(DayOfMonth)` | 6 ||
 | `$(DayOfYear)` | 126 ||
 | `$(Hours)` | 21 ||
 | `$(Minutes)` | 7 ||
 | `$(Month)` | 5 ||
-| `$(Rev:r)` | 2 | The third daily run is `3`, and so on. Use `$(Rev:r)` to ensure that every completed build has a unique name. |
-| `$(Date:yyyyMMdd)` | 20240506 | You can specify other date formats such as `$(Date:MMddyy)`. |
+| `$(Rev:r)` | 2 | Number of runs that day. Use `$(Rev:r)` to ensure that every completed build has a unique name. |
 | `$(Seconds)` | 3 ||
 | `$(SourceBranchName)` | main ||
 | `$(TeamProject)` | Fabrikam ||
@@ -84,21 +77,21 @@ The following table shows how each token resolves, based on the previous example
 >[!IMPORTANT]
 >If you want to show prefix zeros in the run number, you can add more `r` characters to the `Rev` token. For example, specify `$(Rev:rr)` if you want the `Rev` number to begin with `01`, `02`, and so on.
 >
->If you use a zero-padded `Rev` as part of a version numbering scheme, some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros. This behavior causes a version number mismatch in the artifacts that are produced.
+>However, if you use a zero-padded `Rev` as part of a version numbering scheme, some pipeline tasks or popular tools like NuGet packages remove the leading zeros. This behavior causes a version number mismatch in the artifacts that the build produces.
 
-## Expressions
+### Expressions
 
-If you use an expression to set the build number, you can't use some tokens, because their values aren't set at the time expressions are evaluated. These tokens include `$(Build.BuildId)`, `$(Build.BuildURL)`, and `$(Build.BuildNumber)`.
+If you use an expression to set the build number, you can't use `$(Build.BuildId)`, `$(Build.BuildUri)`, or `$(Build.BuildNumber)` tokens, because their values aren't set at the time pipeline expressions are evaluated.
 
-## Variables
+### Variables
 
-You can use user-defined and predefined variables in your build number. For example, if you define `My.Variable`, you can specify the following number format:
+You can use both predefined and user-defined variables in your build number. For example, if you define `My.Variable`, you can specify the following number format. The first four variables are predefined.
 
 ```yaml
 $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.RequestedFor)_$(Build.BuildId)_$(My.Variable)
 ```
 
-In the preceding example, the first four variables are predefined. For information on how to define user variables, see [Set variables in pipelines](variables.md#set-variables-in-pipeline).
+For more information about predefined variables, see [Use predefined variables](../build/variables.md). For information on how to define user variables, see [Define variables](variables.md).
 
 ## FAQ
 
@@ -118,7 +111,7 @@ The time zone is UTC.
 
 ::: moniker range="<azure-devops"
 
-The time zone is the same as the time zone of the operating system of the machine that runs your application tier server.
+The time zone is the same as the operating system of the machine that runs your application tier server.
 
 ::: moniker-end
 
@@ -126,7 +119,7 @@ The time zone is the same as the time zone of the operating system of the machin
 
 ### How can I set the build number dynamically with conditions?
 
-You can use variables as part of your run number. In the following example, the variable `why` is used as part of the run number, and its value changes depending on the `Build.Reason`.
+You can use variables as part of your run number. In the following example, the variable `why` is set as part of the run number, and its value changes depending on the `Build.Reason`.
 
 ```yaml
 variables:
@@ -151,7 +144,7 @@ steps:
 
 ### How can I reference the run number variable within a script?
 
-You can reference the run number directly as `$(Build.BuildNumber)` in your scripts, or create a custom variable that includes it. For example:
+You can reference the run number directly as `$(Build.BuildNumber)` in your scripts, or create a custom variable that includes the number. For example:
 
 ```yaml
 # Set MyRunNumber
@@ -168,4 +161,5 @@ steps:
 <!-- ENDSECTION -->
 ## Related content
 
-[Define variables](variables.md)
+- [Define variables](variables.md)
+- [Use predefined variables](../build/variables.md)
