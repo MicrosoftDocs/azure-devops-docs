@@ -217,7 +217,7 @@ Because permissions are defined at different levels, review the following articl
 
 To remove a user from a group, choose **Remove** next to the user's name that you want to remove.
 
-	:::image type="content" source="media/project-collection/remove-admin-member-server.png" alt-text="Screenshot of Remove user confirmation dialog, on-premises versions.":::
+:::image type="content" source="media/project-collection/remove-admin-member-server.png" alt-text="Screenshot of Remove user confirmation dialog, on-premises versions.":::
 
 ::: moniker-end
 
@@ -229,11 +229,11 @@ To remove a user from a group, choose **Remove** next to the user's name that yo
 
 1. Choose the **Settings** tab. You can change a group description, add a group image, or delete a group through the group **Settings** page. 
 
-From the **Project settings > Permissions** or **Organization settings** > **Permissions** page, choose the group you want to manage, and then choose **Settings**.  
+1. From the **Project settings > Permissions** or **Organization settings** > **Permissions** page, choose the group you want to manage, and then choose **Settings**.  
 
-For example, here we open the Settings for the Work Tracking Administrators group.
+    For example, here we open the Settings for the Work Tracking Administrators group.
 
-:::image type="content" source="media/project-collection/group-settings.png" alt-text="Screenshot of Open group settings, preview page.":::
+    :::image type="content" source="media/project-collection/group-settings.png" alt-text="Screenshot of Open group settings, preview page.":::
 
 You can modify the group name, group description, upload an image, or delete the group.  
 
@@ -243,7 +243,7 @@ You can modify the group name, group description, upload an image, or delete the
 
 You can change a group name, description, add a group image, or delete a group. 
 
-1. From the **Project > Settings > Security** or **Organization > Settings > Security** page, choose the group you want to manage
+1. From the **Project > Settings > Security** or **Organization** page, choose the group you want to manage
 
 1. Choose from the **Edit** menu to either **Edit profile** or **Delete**. 
 
@@ -268,7 +268,7 @@ For on-premises deployments, see these other articles:
 
 ::: moniker range="<azure-devops"
 
-If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. To learn more, see [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
+If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. To learn more, see [Grant permissions to view or create SQL Server reports in Azure DevOps Server](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end
 
