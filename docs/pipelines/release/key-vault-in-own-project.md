@@ -256,11 +256,11 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: AzureKeyVault@1
+- task: AzureKeyVault@2                                # Download Azure Key Vault secrets.
   inputs:
-    azureSubscription: 'SERVICE_CONNECTION_NAME'
-    KeyVaultName: 'KEY_VAULT_NAME'
-    SecretsFilter: '*'
+    azureSubscription: 'SERVICE_CONNECTION_NAME'       # Name of the service connection. Alias: ConnectedServiceName.
+    KeyVaultName: 'KEY_VAULT_NAME'                     # Name of the key vault.
+    SecretsFilter: '*'                                 # Secrets filter. Default: *.
 
 - bash: |
     echo "Secret Found! $MY_MAPPED_ENV_VAR"        
