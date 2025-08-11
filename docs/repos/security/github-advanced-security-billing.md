@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 05/15/2025
+ms.date: 08/11/2025
 zone_pivot_groups: configure-ghazdo-bundled-individual-products
 ms.custom:
   - cross-service
@@ -55,7 +55,7 @@ Use the following table for an example of how active committers and your potenti
 ### Migrating to standalone experiences 
 For existing customers, there is no disruption to your current Advanced Security experience. If you're interested in moving to the Secret Protection and Code Security products, contact Azure DevOps support via the **Azure Portal**. File a support ticket for the GitHub Advanced Security for Azure DevOps service and select "Billing migration from bundled to standalone products" as the problem type. 
 
-In your support request, include all Azure subscriptions that may be linked to your Azure DevOps organizations to be migrated.
+In your support request, include all Azure subscriptions that may be linked to the Azure DevOps organizations you wish to be migrated. This operation is completed at the subscription level, so all organizations tied to the provided Azure subscriptions will be migrataed to see the standalone Secret Protection and Code Security proudcts. This is an irreversible request. 
 :::zone-end 
 
 :::zone pivot="standalone-ghazdo"
