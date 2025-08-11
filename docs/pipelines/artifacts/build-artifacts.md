@@ -147,17 +147,13 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
-- task: DownloadBuildArtifacts@0
+- task: DownloadBuildArtifacts@1
   inputs:
-    buildType: 'current'
-    downloadType: 'single'
-    artifactName: 'drop'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    buildType: 'current'        # Options: 'current' | 'specific'. Specify which build artifacts will be downloaded: `current` or from a specific build
+    downloadType: 'single'      # Options: 'single' | 'specific'. Choose whether to download a single artifact or all artifacts of a specific build.
+    artifactName: 'drop'        # Required when downloadType == single. The name of the artifact that will be downloaded.
+    downloadPath: '$(System.ArtifactsDirectory)'    # Path on the agent machine where the artifacts will be downloaded. Default: $(System.ArtifactsDirectory).
 ```
-* **buildType**: specify which build artifacts will be downloaded: `current` (the default value) or from a specific build.
-* **downloadType**: choose whether to download a single artifact or all artifacts of a specific build.
-* **artifactName**: the name of the artifact that will be downloaded.
-* **downloadPath**: path on the agent machine where the artifacts will be downloaded.
 
 ::: moniker-end
 
@@ -196,13 +192,13 @@ steps:
 - task: DownloadBuildArtifacts@1
   displayName: 'Download Build Artifacts'
   inputs:
-    buildType: specific
-    project: 'xxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxx'
-    pipeline: 20
-    buildVersionToDownload: specific
-    buildId: 128
-    artifactName: drop
-    extractTars: false
+    buildType: specific                        # Options: 'current' | 'specific'. Specify which build artifacts will be downloaded: `current` or from a specific build
+    project: 'xxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxx'    # Required when buildType == specific. Project ID.
+    pipeline: 20                                   # Required when buildType == specific. Build pipeline.
+    buildVersionToDownload: specific    # Options: 'latest' | 'latestFromBranch' | 'specific'. Required when buildType == specific. Build version to download.
+    buildId: 128                        # Required when buildType == specific && buildVersionToDownload == specific. Build ID.
+    artifactName: drop                  # The name of the artifact that will be downloaded.
+    extractTars: false                  # boolean. Extract all files that are stored inside tar archives.
 ```
 
 #### [Classic](#tab/classic/)

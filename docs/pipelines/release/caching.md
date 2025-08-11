@@ -367,11 +367,11 @@ steps:
     path: $(GRADLE_USER_HOME)
   displayName: Configure gradle caching
 
-- task: Gradle@2
+- task: Gradle@4                            # Build using a Gradle wrapper script
   inputs:
-    gradleWrapperFile: 'gradlew'
-    tasks: 'build'
-    options: '--build-cache'
+    gradleWrapperFile: 'gradlew'            # Alias: wrapperScript. Gradle wrapper.
+    tasks: 'build'                          # Default: build. Gradle tasks.
+    options: '--build-cache'                # String. Gradle options.
   displayName: Build
 
 - script: |   
