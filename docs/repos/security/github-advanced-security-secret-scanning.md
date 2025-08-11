@@ -174,6 +174,8 @@ Ensure:
 - Secret scanning is turned on (validity checks are an enhancement to secret scanning; they do not run alone).  
 If both are enabled, validity checks begin automatically for supported secret types detected after that point. See the list of supported partner provider patterns: https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops#partner-provider-patterns
 
+If a secret type does not support validation, the secret alert view details page will not display any validation status and element, such as the validation status tag `Active` and the Validate Secret button. 
+
 #### What you get
 - Automatic verification for supported partner secret types (no extra setup).
 - Status shown in the Secret scanning alerts list and detail pane.
@@ -185,13 +187,12 @@ If both are enabled, validity checks begin automatically for supported secret ty
 | Status  | Meaning | Action |
 |---------|---------|--------|
 | Active  | Provider confirmed the secret is still usable. | Open the alert and follow its Recommendations & Remediation steps. |
-| Inactive | Secret is revoked, expired, or otherwise unusable. | Follow alert guidance to clean up any residual references. |
 | Unknown | Verification couldn’t complete (unsupported type, provider error, rate limit, network). | Treat as possibly active; retry verification later. |
 
 #### Typical workflow
 1. Filter Validation status = Active to surface highest-risk alerts.
 2. For each active secret, open the alert and follow the Recommendations and Remediation steps provided in the alert view.
-3. (Optional) Use on-demand verification after remediation to confirm the status changes (for example, to Inactive).
+3. Use on-demand verification after remediation to confirm the status changes (for example, to Inactive).
 4. Address Unknown secrets next—retry on-demand verification or treat as active if the data is sensitive.
 5. Close alerts per your policy after completing the remediation steps in the alert.
 
