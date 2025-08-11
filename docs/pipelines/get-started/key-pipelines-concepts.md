@@ -21,6 +21,8 @@ The following graphic shows the main components and actions of a pipeline.
 
 ![Diagram that shows the key concepts of a pipeline.](media/key-concepts-overview.svg)
 
+*Dave Jarvis contributed to this graphic.*
+
 - A manual, scheduled, or automated [trigger](#triggers) causes a [pipeline](#pipelines) to start.
 - A [pipeline](#pipelines) can contain one or more [stages](#stages) and deploy to one or more [environments](#environments).
 - [Stages](#stages) are a way to organize pipelines, and each contains one or more [jobs](#jobs).
