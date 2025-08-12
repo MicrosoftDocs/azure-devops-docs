@@ -174,7 +174,7 @@ Secret validity checks help you prioritize alerts by indicating if a detected se
 Ensure:
 - GitHub Advanced Security for Azure DevOps is enabled for the project/repository or Secret protection is enabled if you are in the standalone experience.
 - Secret scanning is turned on (validity checks are an enhancement to secret scanning; they do not run alone).  
-If both are enabled, validity checks begin automatically for supported secret types detected after that point. See the list of supported partner provider patterns: https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops#partner-provider-patterns
+If both are enabled, validity checks begin automatically for supported secret types detected after that point. See the list of supported partner provider patterns: https://learn.microsoft.com/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops#partner-provider-patterns
 
 If a secret type does not support validation, the secret alert view details page will not display any validation status and element, such as the validation status tag `Active` and the Validate Secret button. 
 
@@ -188,13 +188,13 @@ If a secret type does not support validation, the secret alert view details page
 #### Status meanings
 | Status  | Meaning | Action |
 |---------|---------|--------|
-| Active  | Provider confirmed the secret is still usable. | Open the alert and follow its Recommendations & Remediation steps. |
+| `Active`  | Provider confirmed the secret is still usable. | Open the alert and follow its Recommendations & Remediation steps. |
 | Unknown | No definitive signal of activity; it may be inactive, or verification failed due to service, network, or other unexpected errors.  | Treat as possibly active; retry verification or rotate if sensitive. |
 
 #### Typical workflow
-1. Filter Validation status = Active to surface highest-risk alerts.
+1. Filter Validation status = `Active` to surface highest-risk alerts.
 2. For each active secret, open the alert and follow the Recommendations and Remediation steps provided in the alert view.
-3. Use on-demand verification after remediation to confirm the status changes (for example, to Inactive).
+3. Use on-demand verification after remediation to confirm the status changes.
 4. Address Unknown secrets next—retry on-demand verification or treat as active if the data is sensitive.
 5. Close alerts per your policy after completing the remediation steps in the alert.
 
