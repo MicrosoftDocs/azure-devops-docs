@@ -1,7 +1,7 @@
 ---
 title: Features timeline and roadmap
 description: Learn about new features in Managed DevOps Pools.
-ms.date: 07/15/2025
+ms.date: 08/12/2025
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the new features in Managed DevOps Pools.
 ---
@@ -28,7 +28,7 @@ The following section describes new features in development for Managed DevOps P
 
 * **Azure Pipelines image versions**: When a new image version breaks your pipeline, you can configure an [image version override demand](./demands.md#imageversionoverride) in every pipeline to [revert to the version used by the last successful pipeline run](./troubleshooting.md#check-to-see-if-there-has-been-an-image-update). With the proposed feature, you can select the image version of an Azure Pipelines image in the Managed DevOps Pools user interface, and pin your pool's image to a specific image version. **Planned for October 2025**.
 
-* **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for September 2025.**
+* **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for early 2026.**
 
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for early 2026.**
 
