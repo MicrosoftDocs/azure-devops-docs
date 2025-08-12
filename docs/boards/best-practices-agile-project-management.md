@@ -385,7 +385,7 @@ For more information, see:
 > [!div class="nextstepaction"]
 > [Configure and customize Azure Boards](configure-customize.md)
 
-## Related articles
+## Related content
 
 - [Manage requirements](../cross-service/manage-requirements.md)
 - [Work with multi-team ownership of backlog items](backlogs/backlogs-overview.md#multi-team)

@@ -59,7 +59,7 @@ The external user is added to the organization to which they were invited and ha
 
 A guest user can add other guest users to the organization after being granted the Guest Inviter role in Microsoft Entra ID.
 
-## Related articles
+## Related content
 
 * [Learn about Microsoft Entra B2B collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 * [Migrate to group-based resource management](./assign-access-levels-by-group-membership.md)

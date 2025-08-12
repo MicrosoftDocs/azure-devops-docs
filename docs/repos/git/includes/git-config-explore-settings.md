@@ -5,6 +5,7 @@ ms.date: 10/19/2022
 ms.topic: include
 msservice: azure-devops-repos
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 1. To configure Git settings in Visual Studio, choose **Git > Settings** from the menu bar to open the **Options** view.

@@ -89,7 +89,7 @@ To avoid issues, consider rewriting tools or updating build processes to reduce 
 - The `Count` column shows the number of commands in the window.
 - Other columns highlight total TSTUs and delay time.
 
-## Related articles
+## Related content
 
 - [Work tracking, process, and project limits](../settings/work/object-limits.md)
 - [Access, export, and filter Azure DevOps audit logs](../audit/azure-devops-auditing.md)

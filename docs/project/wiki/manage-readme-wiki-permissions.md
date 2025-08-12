@@ -1,93 +1,290 @@
 ---
-title: Manage Permissions for READMEs and Wiki Pages
+title: Manage Permissions for Wikis, READMEs, and Collaboration Tools
 titleSuffix: Azure DevOps
-description: Learn how to set permissions to grant or secure access to README files and your team project built-in wiki in Azure DevOps.
+description: Learn how to set permissions to grant or secure access to wikis, README files, notifications, and other collaboration tools in Azure DevOps.
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.topic: concept-article
 ms.author: chcomley
 author: chcomley
-ms.reviewer: gopinach
 ai-usage: ai-assisted
-ms.date: 06/05/2025
+ms.date: 07/16/2025
 monikerRange: "<=azure-devops"
-#cutsomer intent: As an Azure DevOps developer, I want to manage permissions for README files and my team project wiki to ensure secure access for users.
+#customer intent: As an Azure DevOps administrator, I want to manage permissions for wikis, README files, and collaboration tools to ensure secure access for users.
 ---
 
-# Manage wiki permissions
+# Manage wiki and collaboration tool permissions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes how to set and manage permissions for your team project wiki and project README files. By default, all members of the Contributors group have permission to edit wiki pages.
+This article describes how to set and manage permissions for collaboration tools in Azure DevOps, including team project wikis, project README files, notifications, and feedback. These tools help teams collaborate effectively while maintaining appropriate security controls.
 
-## Manage permissions for wikis
+Wiki permissions are managed through the underlying Git repository security settings. By default, all members of the Contributors group have permission to read and edit wiki pages. Project Administrators can modify these permissions to control who can read, edit, or manage wiki content.
 
-By default, all project Contributors have "read" and "edit" access to the Git repository for the project wiki. You can manage these permissions and control who can read and edit wiki pages. For more information, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
+## Prerequisites
 
-1. Sign in to your project (`https://dev.azure.com/<Organization>/<Project>`) in Azure DevOps.
+| Requirement | Description |
+|-------------|-------------|
+| **Permissions** | Project Administrator permissions or Manage permissions permission for the wiki repository |
+| **Project access** | Access to the project where the wiki is located |
 
-1. In the left navigation, select **Wiki** > **More options** :::image type="icon" source="../../media/icons/more-actions.png"::: > **Wiki security**:
+## How wiki permissions work
 
-   :::image type="content" source="media/wiki/wiki-open-security.png" alt-text="Screenshot that shows how to select the Wiki security action for a Wiki in the Azure DevOps web portal.":::
+Wiki permissions are controlled through the underlying Git repository that stores the wiki content. There are two types of wikis in Azure DevOps:
 
-1. In the **Security for Wiki** dialog, adjust the settings for the various security options.
+- **Project wiki (provisioned wiki)**: Stored in a dedicated Git repository (typically named `<ProjectName>.wiki`)
+- **Code wiki (published wiki)**: Based on files in an existing Git repository
 
-   :::image type="content" source="media/wiki/security-dialog.png" alt-text="Screenshot of the Wiki security dialog that shows various security options and their current settings." lightbox="media/wiki/security-dialog.png":::
+Each type uses the same Git repository permission model but might have different repository locations.
 
-   For definitions of each repository permission, see [Git repository (object-level) permissions](../../organizations/security/permissions.md#git-repository-object-level).
+## Default permissions by role
+
+The following table shows default permissions for collaboration tools including wikis, READMEs, notifications, and feedback:
+
+|Task |Stakeholders  |Readers  |Contributors  |Team Administrators | Organization owner/Project Administrator |
+|---------|---------|---------|---------|---------|---------|
+|Set personal notifications or alerts    | ✔️ | | ✔️ | ✔️ | ✔️ |
+|Set team notifications or alerts     |         |         |         | ✔️ | ✔️ |
+|Set project-level notifications or alerts    |         |         |         |        | ✔️ |
+|READMEs     | See Note 1  | ✔️ | ✔️ | ✔️ |✔️|
+|View project wikis     |  ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
+|View code wikis     |    | ✔️ | ✔️ | ✔️ | ✔️  |
+|Provision or create a wiki    |  |  |  |  | ✔️ |
+|Publish code as wiki     |         |  | ✔️ | See Note 2 | See Note 2 |
+|View the project page   | ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
+|Edit the project page    |         |         |         |        | ✔️ |
+|Navigate using the project pages     | ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
+|Request feedback    |   | ✔️ | ✔️ | ✔️ | ✔️  |
+|Provide feedback    |✔️ | ✔️ | ✔️ | ✔️ | ✔️   |
+|Powerful code search     | ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
+|Powerful work tracking search     | ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
+
+**Notes:**
+1. Stakeholders can view project READMEs, but not READMEs defined for a repository.
+2. Project Administrators or Team Administrators with contribute permission can publish code as wiki. Project Administrators have this permission by default.
+
+## Manage permissions for project wikis
+
+Project wikis (provisioned wikis) are stored in a dedicated Git repository. You can manage permissions for these wikis through the repository security settings.
+
+### View and modify wiki permissions
+
+1. Sign in to your organization (`https://dev.azure.com/{organization}`) and go to your project.
+
+2. Select **Project settings**.
+
+3. Under **Repos**, select **Repositories**.
+
+4. Select the wiki repository. A project wiki is typically named `{ProjectName}.wiki`.
+
+5. Select the **Security** tab.
+
+6. Review the current permissions for users and groups. The permissions list shows:
+   - **Users and groups**: Individual users, Azure DevOps groups, and Microsoft Entra ID groups
+   - **Permission levels**: Explicit permissions like Allow, Deny, or inherited permissions
+   - **Permission types**: Read, Contribute, Force push, Manage permissions, etc.
+
+### Key repository permissions for wikis
+
+The following repository permissions control wiki access:
+
+| Permission | Description | Wiki access |
+|------------|-------------|-------------|
+| **Read** | View repository content | View wiki pages and history |
+| **Contribute** | Read, create, and modify content | Create and edit wiki pages |
+| **Force push** | Rewrite repository history | Force push wiki changes (advanced) |
+| **Manage permissions** | Change repository security | Modify who can access the wiki |
+| **Create branch** | Create new branches | Create wiki branches (advanced) |
+
+> [!TIP]
+> For most wiki scenarios, you only need to manage **Read** and **Contribute** permissions. Users with **Contribute** permission can create, edit, and delete wiki pages.
+
+## Grant wiki access to users and groups
+
+### Add a user or group to wiki permissions
+
+1. In the wiki repository **Security** tab, select **Add** (the plus icon) in the users/groups section.
+
+2. Search for and select:
+   - **Individual users** by email address or display name
+   - **Azure DevOps groups** (for example, Contributors, Readers)
+   - **Microsoft Entra ID groups** if your organization is connected to Microsoft Entra ID
+
+3. After adding the user or group, set their permissions:
+   - Set **Read** to **Allow** for view-only access
+   - Set **Contribute** to **Allow** for edit access
+   - Set permissions to **Deny** to explicitly block access
+
+4. Select **Save changes**.
+
+### Modify existing permissions
+
+1. In the **Security** tab, find the user or group you want to modify.
+
+2. Select the permission level (Allow, Deny, or Not set) to change it:
+   - **Allow**: Grants the permission explicitly
+   - **Deny**: Blocks the permission explicitly (overrides inherited permissions)
+   - **Not set**: Uses inherited permissions from parent groups
+
+3. Changes are saved automatically.
+
+### Remove user or group access
+
+1. In the **Security** tab, find the user or group you want to remove.
+
+2. Select the user or group, then select **Remove** (trash icon).
+
+3. Confirm the removal when prompted.
 
 > [!NOTE]
-> If you don't have access to create a wiki page, you can request access from a project Administrator. They can grant you adequate permission on the underlying Git repository for the wiki.
+> Removing a user from repository permissions doesn't remove them from the project. It only removes their explicit permissions for this specific wiki repository.
 
-## Grant Edit permissions to an individual or group
+## Manage permissions for code wikis (published wikis)
 
-To grant *Edit* permissions to an individual or group, complete the following steps:
+Code wikis are based on files in an existing Git repository. Permissions for code wikis are managed through the source repository settings.
 
-1. Sign in to your project (`https://dev.azure.com/<Organization>/<Project>`) in Azure DevOps.
+### Set permissions for code wikis
 
-1. In the left navigation, select **Wiki** > **More options** :::image type="icon" source="../../media/icons/more-actions.png"::: > **Wiki security**.
+1. Go to **Repos** > **Files** in your project.
 
-1. Select **Add**.
+2. Select the repository that contains your published wiki content.
 
-   If this button isn't available, check your [permissions](../../organizations/security/about-permissions.md).
+3. Select **Settings** > **Security** tab.
 
-1. Enter the name of the user or group you want to grant permissions to and select the user or group from the search results.
+4. Manage permissions using the same process as project wikis, focusing on:
+   - **Read**: View wiki content
+   - **Contribute**: Edit wiki files
 
-   After you add the user or group, they're listed in the **Wiki security** pane.
+## Common permission scenarios
 
-1. To grant *Edit* permissions, set the **Contribute permission** to **Allow**.
+### Scenario 1: Read-only wiki access
 
-1. Select **Save** to apply your changes.
+To give a user view-only access to the wiki:
 
-### Other considerations
+1. Add the user to the wiki repository security.
+2. Set **Read** to **Allow**.
+3. Ensure **Contribute** is **Not set** or **Deny**.
 
-When you assign permissions to project users, review the following considerations:
+### Scenario 2: Wiki editors
 
-- Ensure the user or group has the necessary access level to the Azure DevOps project.
+To give a user edit access to the wiki:
 
-- Review and adjust other permissions as needed to maintain security and proper access control, such as *Read*, *Delete*, and *Manage*.
+1. Add the user to the wiki repository security.
+2. Set **Read** to **Allow**.
+3. Set **Contribute** to **Allow**.
 
-## Stakeholder wiki access
+### Scenario 3: Wiki administrators
 
-Users with project Stakeholder access have permissions set for *private* and *public* projects.
+To give a user full control over the wiki:
+
+1. Add the user to the wiki repository security.
+2. Set **Read**, **Contribute**, and **Manage permissions** to **Allow**.
+
+### Scenario 4: Restrict wiki access
+
+To prevent a user from accessing the wiki:
+
+1. Find the user in the wiki repository security.
+2. Set **Read** to **Deny**.
+   
+   The user's access is blocked even if they have permissions through group membership.
+
+## Best practices for wiki permissions
+
+### Security recommendations
+
+- **Use groups instead of individual permissions**: Add users to appropriate Azure DevOps groups (Contributors, Readers) rather than granting individual permissions.
+- **Follow principle of least privilege**: Grant only the minimum permissions needed for users to complete their work.
+- **Regular permission reviews**: Periodically review who has access to your wikis and remove unnecessary permissions.
+- **Use Microsoft Entra ID groups**: If your organization uses Microsoft Entra ID, use Microsoft Entra ID groups for easier user management.
+
+### Permission inheritance
+
+- Users inherit permissions from groups they belong to.
+- **Deny** permissions override **Allow** permissions.
+- Explicit permissions override inherited permissions.
+- Project-level permissions don't automatically grant repository-level permissions.
+
+### Troubleshooting permissions
+
+**Problem**: User can't edit wiki pages
+
+**Solution**: 
+1. Verify the user has **Contribute** permission on the wiki repository
+2. Check if there are any **Deny** permissions blocking access
+3. Ensure the user has at least **Basic** access level in the project
+
+**Problem**: User can't see the wiki
+
+**Solution**:
+1. Verify the user has **Read** permission on the wiki repository
+2. Check if the wiki exists and is properly configured
+3. Ensure the user has project access
+
+**Problem**: Changes to permissions don't take effect
+
+**Solution**:
+1. Wait a few minutes for permissions to propagate
+2. Ask the user to refresh their browser or sign out and back in
+3. Verify permissions were saved correctly
+
+## Stakeholder access and wikis
+
+Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) have different wiki permissions depending on project visibility.
 
 ### Private projects
 
-Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read [**provisioned**](provisioned-vs-published-wiki.md) wiki pages and view revisions, but they can't edit them. For example, Stakeholders can't create, edit, reorder, or revert changes to project wiki pages. These permissions can't be changed.
+**Project wikis (provisioned)**:
+- **Read access**: Stakeholders can read wiki pages and view revisions
+- **Edit access**: Stakeholders can't create, edit, reorder, or revert wiki pages
+- **Permissions**: These limitations can't be changed through repository permissions
 
-Stakeholders have no access to read or edit [**published code**](provisioned-vs-published-wiki.md) wiki pages in private projects. For more information, see the [Stakeholder access quick reference for project and code wikis](../../organizations/security/stakeholder-access.md#public-versus-private-feature-access).
+**Code wikis (published)**:
+- **No access**: Stakeholders can't read or edit published code wikis in private projects
 
 ### Public projects
 
-Stakeholders have full access to wikis in public projects.
+Stakeholders have full read and write access to all wiki types in public projects.
 
-For more information about Stakeholder access, see [About access levels, Stakeholder access, Public versus private feature access](../../organizations/security/stakeholder-access.md#public-versus-private-feature-access).
+For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md#public-versus-private-feature-access).
+
+> [!IMPORTANT]
+> Wiki permissions apply to the entire wiki repository. You can't set permissions for individual wiki pages.
+
+## README file permissions
+
+README files in repositories follow the same permission model as the repository they're contained in:
+
+1. Go to **Repos** > **Files**.
+2. Select the repository containing the README.
+3. Select **Settings** > **Security**.
+4. Manage permissions using the repository security settings.
+
+Users need **Read** permission to view README files and **Contribute** permission to edit them.
 
 > [!NOTE]
-> You can set permissions for the entire wiki, but not for individual pages.
+> Stakeholders can view project READMEs but can't access READMEs defined for specific repositories in private projects.
+
+## Related collaboration tools
+
+### Notifications and alerts
+
+To manage notifications and alerts:
+- **Personal notifications**: See [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
+- **Team notifications**: See [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
+
+> [!NOTE]
+> There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
+
+### Feedback permissions
+
+For managing feedback permissions, see [Set feedback permissions](/previous-versions/azure/devops/project/feedback/get-feedback).
 
 ## Related content
 
-- [Learn default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
-- [Get Started with Git](../../repos/git/gitquickstart.md)
-- [Learn about Azure DevOps security](../../organizations/security/about-security-identity.md)
+- [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md)
+- [Set Git repository permissions](../../organizations/security/permissions.md#git-repository-object-level)
+- [Learn about access levels](../../organizations/security/access-levels.md)
+- [Create and edit wikis](about-readme-wiki.md)
+- [Choose between provisioned and published wikis](provisioned-vs-published-wiki.md)
+- [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)

@@ -8,6 +8,7 @@ ms.author: jeom
 author: raviLiftr
 monikerRange: '>=azure-devops-2020'
 ms.date: 09/14/2021
+ms.update-cycle: 1095-days
 ---
 
 
@@ -207,7 +208,7 @@ Choose **Copy test case** to copy or clone a test case. Specify the destination 
 
 Use **View linked items** option, to review objects linked to the test case. Choose each tab to view the links listed under the linked object type: 
 - **Test Suites**
-- **Requirements**: Includes any work item that belongs to the Requirements Category, such as User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI), or a custom work item type.
+- **Requirements**: Includes any work item that belongs to the Requirements Category, such as User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI).
 - **Bugs**: Includes bugs filed as part of test execution and any work items that belong to the bug Category that links to the test case.
  
 :::image type="content" source="media/navigate/view-linked-items.png" alt-text="Define tab, View linked items dialog.":::
@@ -279,7 +280,7 @@ From the **Chart** tab, you can create various test case or test result charts. 
 > [!div class="nextstepaction"]
 > [Create test plans and test suites](create-a-test-plan.md)
  
-## Related articles
+## Related content
 
 - [Run manual tests](run-manual-tests.md) 
 - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)

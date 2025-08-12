@@ -5,7 +5,7 @@ description: Learn how to create a local clone of any remote Git repo using Visu
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 10/19/2022
+ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -71,8 +71,8 @@ Typically, you need to know the clone URL of the remote repo that you want to cl
 
    :::image type="content" source="media/clone/visual-studio-2019/common/github-clone-repo.png" border="true" alt-text="Screenshot of the Clone popup on the  page on the GitHub site." lightbox="media/clone/visual-studio-2019/common/github-clone-repo-lrg.png":::
 
-> [!IMPORTANT]
-> The "Generate Git Credentials" button will be removed in January 2025, to reduce creation of unnecessary and underutilized personal access tokens. Review the Git Authentication docs for all authentication methods available to you for git clone operations.
+> [!TIP]
+> **Microsoft Entra ID tokens are the recommended authentication method** for Git operations. The "Generate Git Credentials" button was removed in January 2025 to encourage the use of more secure authentication methods. For all available authentication options, including the preferred Microsoft Entra OAuth tokens, see the [Authentication overview](auth-overview.md).
 
 ## Clone an Azure Repos Git repo
 
@@ -105,7 +105,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
    :::image type="content" source="media/clone/visual-studio-2019/team-explorer/connect-add-server.png" border="true" alt-text="Screenshot of the 'Connect to a Project' window in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/connect-add-server-lrg.png":::
 
-After you've cloned a remote Git repo, Visual Studio detects the local clone and adds it to the list of **Local Repositories** in the **Git** menu.
+After you clone a remote Git repo, Visual Studio detects the local clone and adds it to the list of **Local Repositories** in the **Git** menu.
 
 :::image type="content" source="media/clone/visual-studio-2019/common/local-repositories.png" border="true" alt-text="Screenshot of the 'Local Repositories' option in the Git menu in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/common/local-repositories-lrg.png":::
 
@@ -165,7 +165,7 @@ You can clone any Git repo that's accessible to you by using the clone URL of th
 
    :::image type="content" source="media/clone/visual-studio-2019/team-explorer/clone-remote-repo.png" border="true" alt-text="Screenshot of the Clone options in the 'Local Git Repositories' section of the 'Team Explorer' Connect view in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/clone-remote-repo-lrg.png":::
 
-After you've cloned a remote Git repo, Visual Studio detects the local clone and adds it to the list of **Local Repositories** in the **Git** menu.
+After you clone a remote Git repo, Visual Studio detects the local clone and adds it to the list of **Local Repositories** in the **Git** menu.
 
 :::image type="content" source="media/clone/visual-studio-2019/common/local-repositories.png" border="true" alt-text="Screenshot of the 'Local Repositories' option from the Git menu in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/common/local-repositories-lrg.png":::
 
@@ -173,7 +173,7 @@ After you've cloned a remote Git repo, Visual Studio detects the local clone and
 
 1. If you haven't already, [download and install Git](http://git-scm.com/download). Enable [Git Credential Manager](set-up-credential-managers.md) when prompted during the install, or [configure SSH authentication](use-ssh-keys-to-authenticate.md).
 
-1. At the command prompt, run the Git clone command with the [clone URL](#clone_url) of the remote repo. This command will create a local clone repo under the current folder.
+1. At the command prompt, run the Git clone command with the [clone URL](#clone_url) of the remote repo. This command creates a local clone repo under the current folder.
 
 ```console
 git clone <clone URL>

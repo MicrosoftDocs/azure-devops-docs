@@ -43,7 +43,7 @@ Edit or delete any comments that you added to a wiki. You can't edit or delete c
 
 ![Screenshot of Edit or delete wiki comment.](media/wiki/wiki-comment.png)
 
-## Related articles
+## Related content
 
 - [Follow wiki pages, get notifications](follow-notifications-wiki-pages.md)
 - [Create and embed a work item from wiki content](create-embed-wit-from-wiki.md)

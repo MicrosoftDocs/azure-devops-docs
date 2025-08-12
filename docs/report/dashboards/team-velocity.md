@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 03/12/2025
+ms.date: 07/02/2025
 ---
 
 # View and configure team velocity
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Velocity metrics provide valuable insights that help teams plan and [forecast](../../boards/sprints/forecast.md) sprints, and evaluate how accurately they estimate and meet planned commitments. These metrics indicate how much work a team can complete during a sprint, based on either **the count of work items completed** or **the sum of estimates** for effort (product backlog items), story points (user stories), or size (requirements). Use velocity to aid in determining team capacity, but don't confuse it with key performance indicators.
 
@@ -23,11 +23,18 @@ Velocity metrics provide valuable insights that help teams plan and [forecast](.
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 > [!TIP]
-> The images in this article might differ from what you see in your web portal. These differences can be due to updates to your web app, options enabled by you or your admin, and the process chosen when creating your project (Agile, Basic, Scrum, or CMMI). The Basic process is available starting from Azure DevOps Server 2019 Update 1.
+> The images in this article might differ from what you see in your web portal. These differences can be due to updates to your web app, options enabled by you or your admin, and the process chosen when creating your project (Agile, Basic, Scrum, or CMMI).
+
+## Understand velocity numbers
+
+**Velocity** represents the amount of work your team completed in past sprints, which helps predict future capacity:
+
+- **When tracking by count**: Velocity shows the number of work items (user stories, bugs, tasks) completed per sprint
+- **When tracking by sum**: Velocity shows the total story points, effort hours, or size estimates completed per sprint
+
+For example, if your team completed user stories worth 25 story points in Sprint 1, 30 story points in Sprint 2, and 28 story points in Sprint 3, your average velocity is approximately 28 story points per sprint. This average helps you plan how much work to commit to in future sprints.
 
 ## Velocity chart types
-
-::: moniker range=">= azure-devops-2020"
 
 You can choose between two Velocity charts: the in-context Velocity chart from the Backlogs page and the Velocity widget for dashboards. Both charts help you quickly understand the workflow state categories described in the following table.
 
@@ -37,10 +44,10 @@ Items in the *Proposed* or *Resolved* states are excluded from the **Completed**
 
 |Workflow state  |Description |
 |---------|---------|
-|Planned    | Work items assigned to a sprint before it starts. If reassigned after the sprint begins, they remain Planned in the original sprint and appear as Late or Incomplete in the new sprint.   |
-|Completed  | Work items assigned to the sprint and completed before the end of the sprint.        |
+|Planned    | Work items assigned to a sprint before and in the day the sprint starts. If a work item is re-assigned after the sprint starts (the 2nd day of the sprint), it remains Planned in the original sprint and appears as Late or Incomplete in the new sprint. If re-assigned before or the same day the sprint begins, it is removed from Planned from that sprint.|
+|Completed | Work items assigned to the sprint and completed before the end of the sprint.        |
 |Completed Late     |Work items assigned to the sprint but completed after the sprint ends.          |
-|Incomplete    | Work items assigned to the sprint but not yet completed.       |  
+|Incomplete    | Work items assigned to the sprint but not yet completed.       |
 | Resolved | Bugs assigned to the sprint, indicating a solution was implemented but not yet verified.|
 
 Later in this article, learn how to [open the Velocity in-context report](#velocity-chart) or [configure the Velocity widget](#configure-the-velocity-widget).
@@ -61,14 +68,10 @@ You can configure each chart in the following ways:
 - Number of iterations.  
 
 The widget offers more configuration options. For more information, see [Configure and view Velocity charts](team-velocity.md).
- 
-::: moniker-end
 
 <a id="velocity-chart"></a>
 
 ## View the Velocity in-context report   
-
-::: moniker range=">= azure-devops-2020" 
 
 Velocity reports are available for both product and portfolio backlogs. Each report includes interactive controls, allowing users to customize the view to their specific interests.
 
@@ -97,8 +100,6 @@ Velocity reports are available for both product and portfolio backlogs. Each rep
 
 7. To return to the Analytics summary, select the :::image type="icon" source="../../media/icons/back-arrow.png" border="false"::: back arrow.
 
-::: moniker-end
-
 ## Configure the Velocity widget    
 
 You can only configure your Velocity widget for a single team. If you want to view the velocity for several teams, then you must configure a portfolio management team that rolls up from several teams. For more information, see [Add teams](../../organizations/settings/add-teams.md).   
@@ -110,10 +111,10 @@ Complete the following steps to configure the Velocity widget.
 1. Select the ![Actions icon](../media/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog.
 
    :::image type="content" source="media/velocity/configure-dashboard-sequence.png" alt-text="Screenshot showing sequence of highlighted buttons to configure Velocity dashboard."::: 
-	
+ 
 	Modify the title, select the team, and then select either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 
-   :::image type="content" source="media/team-velocity-config-dialog.png" alt-text="Screenshot showing Configure dialog, Velocity widget.":::
+      :::image type="content" source="media/team-velocity-config-dialog.png" alt-text="Screenshot showing Configure dialog, Velocity widget.":::
 
 2. Specify the number of sprints you want to view. The default is 6 and the maximum is 15.    
 

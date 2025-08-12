@@ -13,13 +13,13 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Git has gained much popularity in recent years as a distributed source code repository that lets users work with the full repository while in a disconnected state. The benefits of git are well-documented, but what happens if you need to "roll back the clock" on the primary repository? Doing so is not so intuitive and requires elevated permissions, as you might expect for something that affects every single user of the repository.
+Git has gained much popularity in recent years as a distributed source code repository that lets users work with the full repository while in a disconnected state. The benefits of git are well-documented, but what happens if you need to "roll back the clock" on the primary repository? Doing so isn't so intuitive and requires elevated permissions, as you might expect for something that affects every single user of the repository.
 
 So how can you roll back the central repository safely?
 
 ## Problem Scenario
 
-Imagine that you commit a large file, such as a video, to your git server. In a traditional source code system, it is convenient to store everything in one place and then pull down what you need.  However, with git, the entire repository is cloned down to each user's local computer.  With a large file, every single user on the project will need to download the large file(s), too. With each subsequent large file committed to the server, the problem only grows, until the repository is too large to be efficient for its users.  To make matters worse, even if you remove the offender from your local repository and recommit, the file will still exist in the repository's history, which means that it will still be downloaded to everyone's local computer as part of the history.
+Imagine that you commit a large file, such as a video, to your git server. In a traditional source code system, it's convenient to store everything in one place and then pull down what you need.  However, with git, the entire repository is cloned down to each user's local computer.  With a large file, every single user on the project will need to download the large file(s), too. With each subsequent large file committed to the server, the problem only grows, until the repository is too large to be efficient for its users.  To make matters worse, even if you remove the offender from your local repository and recommit, the file will still exist in the repository's history, which means that it will still be downloaded to everyone's local computer as part of the history.
 
 > ![Team Explorer Changes dialog showing large video in included changes](./media/remove-binaries/RemoveBinaries-large-file-to-be-added.png)
 
@@ -39,20 +39,20 @@ Imagine that you commit a large file, such as a video, to your git server. In a 
 > see this [blog post](/archive/blogs/congyiw/why-does-cloning-from-vsts-return-old-unreferenced-objects) for a detailed explanation and workaround for this behavior 
 > when using Azure Repos Git repos.
 
-To fix this, you have to start at the source, which, in this case, is the server repository. Ask the team to stop pushing to the repository, but if additional pushes happen during this process, you will have to account for them, too, so as not to lose any data.
+To fix this, you have to start at the source, which, in this case, is the server repository. Ask the team to stop pushing to the repository, but if additional pushes happen during this process, you'll have to account for them, too, so as not to lose any data.
 
 ## Rebase and force push
 If no one else on the team has made any changes to the repository - usually through a push - you can take the easy route, in which you essentially make your local repository look the way that you want it to (that is, without the large file), then force your changes to the server.
 
 __Note: You may need to clone or fix your local repo before beginning this work.  This could result in lost work or changes, so proceed with caution.__
 
-By default, you likely only have the ability to change their local project files and repository and to push your changes to the server, so you do not have the ability to make other changes, such as deletions or rebasing, at the server level. Therefore, you will need to either acquire project Force push (preferred) or admin permissions from your administrator or find someone who has them and is willing to help.  For more information on git permissions, go [here](set-git-repository-permissions.md).
+By default, you likely only have the ability to change their local project files and repository and to push your changes to the server, so you don't have the ability to make other changes, such as deletions or rebasing, at the server level. Therefore, you'll need to either acquire project Force push (preferred) or admin permissions from your administrator or find someone who has them and is willing to help.  For more information on git permissions, go [here](set-git-repository-permissions.md).
 
 > ![Command Prompt - git push --force permissions.](./media/remove-binaries/RemoveBinaries-force-push-permissions.png)
 
 Next, you need to rebase the repository. 
 
-1) But first, use `git log` to find the SHA hash values of the most recent commits - you will need this information in a moment. This is because we need to know the most recent good commit. You get that information by opening a git command prompt and typing:
+1) But first, use `git log` to find the SHA hash values of the most recent commits - you'll need this information in a moment. This is because we need to know the most recent good commit. You get that information by opening a git command prompt and typing:
 
 > `git log`
 
@@ -67,9 +67,9 @@ Alternatively, you can get the SHA hash from viewing the branch history in the V
 
 > ![Command Prompt - Select video commit](./media/remove-binaries/RemoveBinaries-large-file-sha.png)
 
-4) You will need the sha that starts "25b4"
+4) You'll need the sha that starts "25b4"
 
-Remember that git uses pointers to determine where in the repository the head or current branch are located. Because of this, the repository state that you are interested in will be at some point in the past. To 'go back in time' and make that prior desired state the new current state, you will need to use the git rebase command:
+Remember that git uses pointers to determine where in the repository the head or current branch are located. Because of this, the repository state that you're interested in will be at some point in the past. To 'go back in time' and make that prior desired state the new current state, you'll need to use the git rebase command:
 
 > `git rebase -i <SHA hash of desired new current branch>`
 > 
@@ -91,7 +91,7 @@ The `-i` switch provides a little extra safety, because it will bring up the his
 
 7) Change "`pick`" to "`drop`" as shown, then type "`:w`" (in vi) to save and "`:q!`" to start the rebase
 
-Now type `git log` again - the offending branch should be absent from the log. If it is, you are ready for the final step, which requires project admin permissions.
+Now type `git log` again - the offending branch should be absent from the log. If it is, you're ready for the final step, which requires project admin permissions.
 
 > `git log`
 > 
@@ -115,7 +115,7 @@ __Use with caution, as you can easily lose data on the server!!__
 
 *Notice that you must authenticate to the server for this to work*
 
-If you are using Azure Repos, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](auth-overview.md#personal-access-tokens).
+If you're using Azure Repos, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](auth-overview.md).
 
 Now, the branch will be permanently gone from the server, and subsequent clones and syncs by project team members will not download the large files you were trying to remove.  Users will need to pull down from the server in order to make sure that they are in sync with the new server repo state.
 
@@ -123,7 +123,7 @@ Now, the branch will be permanently gone from the server, and subsequent clones 
 
 If other users have already committed to the server repository, you have an additional consideration. You want to remove the branch that contains the large file(s), but you don't want to lose changes the team has made. To address this, when you open the editor as part of rebasing, look carefully at the commits. Make sure that the commits you want to retain are listed on the 'pick' lines; delete the ones you want to remove, such as where a large file was added.
 
-Note that after rebasing, the other users on the team will also need to rebase so that everyone has a consistent copy of the server repository. This is a pain for everyone and normally should be avoided. Thus, if you do need to remove a push as noted here, it is important to coordinate with the team.  For full details on rebasing, take a look at the official rebasing documentation [here](https://www.git-scm.com/book/en/v2/Git-Branching-Rebasing).
+Note that after rebasing, the other users on the team will also need to rebase so that everyone has a consistent copy of the server repository. This is a pain for everyone and normally should be avoided. Thus, if you do need to remove a push as noted here, it's important to coordinate with the team.  For full details on rebasing, take a look at the official rebasing documentation [here](https://www.git-scm.com/book/en/v2/Git-Branching-Rebasing).
 
 The key is to make sure that you know which commits are desired and undesired. Study the git log or the history in your IDE (such as Visual Studio) and make a meticulous note of the SHA hashes to keep and those to toss.
 

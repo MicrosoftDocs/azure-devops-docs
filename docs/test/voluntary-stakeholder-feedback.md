@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.author: jeom
 author: rohit-batra
 ms.date: 12/07/2018
+ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
 
@@ -75,7 +76,7 @@ Use the Test & Feedback extension to provide voluntary feedback, even if you don
      
    ![Screenshot showing highlighted square icon to stop your feedback session.](media/shared/provide-stakeholder-feedback-12.png)
 
-## Related articles
+## Related content
 
 * [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md#request)
 * [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)

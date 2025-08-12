@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 
 ## Sign up with a personal Microsoft account

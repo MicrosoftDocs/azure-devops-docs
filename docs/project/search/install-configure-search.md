@@ -3,13 +3,15 @@ title: Install, configure Search
 titleSuffix: Azure DevOps 
 description: Find installation and setup instructions for Code, Wiki & Work Item Search in Azure DevOps Server.
 ms.assetid: 
-ms.custom: engagement-fy23
 ms.subservice: azure-devops-search
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '< azure-devops'
 ms.date: 01/22/2025
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Install and configure Search
@@ -270,7 +272,7 @@ Search for Azure DevOps Server has the following limitation:
 * [Reindex all your collections](manage-search.md#reindex-a-repository-or-collection) if you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database.
 * Search isn't extensible, but you can submit a new feature request on the [Developer Community](https://developercommunity.visualstudio.com/home).
 
-## Related articles
+## Related content
 
 - [Manage indexing for Search](manage-search.md)
 - [Get started with Search](get-started-search.md)

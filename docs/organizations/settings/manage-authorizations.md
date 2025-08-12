@@ -8,6 +8,7 @@ monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/21/2024
+ms.custom: sfi-image-nochange
 ---
 
 #  Authorize other services to access Azure DevOps
@@ -72,7 +73,7 @@ Review the services that you granted authorization to access your organization.
 > [!div class="nextstepaction"]
 > [Set user preferences](set-your-preferences.md)
 
-## Related articles
+## Related content
 
 - [Change application access policies](../accounts/change-application-access-policies.md)
 - [Manage service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)

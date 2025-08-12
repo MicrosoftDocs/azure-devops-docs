@@ -9,6 +9,7 @@ author: raviLiftr
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 03/12/2024
+ms.update-cycle: 1095-days
 ---
 
 # Copy or clone test plans, test suites, and test cases 
@@ -660,7 +661,7 @@ You can copy and clone test plans and test suites using the following REST APIs.
 > [!div class="nextstepaction"]
 > [Run manual tests](run-manual-tests.md)
 
-## Related articles
+## Related content
 
 - [Create test plans and test suites](create-a-test-plan.md)
 - [Create test cases](create-test-cases.md)

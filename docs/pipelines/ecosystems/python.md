@@ -5,8 +5,11 @@ ms.topic: quickstart
 ms.date: 07/08/2024
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 monikerRange: "<=azure-devops"
-ms.custom: devx-track-python, freshness-fy22q2
 ms.author: jukullam
+ms.custom:
+  - devx-track-python
+  - freshness-fy22q2
+  - sfi-image-nochange
 ---
 
 # Build and publish a Python app

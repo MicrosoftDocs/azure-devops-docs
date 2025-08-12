@@ -150,7 +150,7 @@ In the following example, we grant members assigned to the Test Admin group perm
 > [!div class="nextstepaction"]
 > [Navigate Test Plans](../../test/navigate-test-plans.md)
 
-## Related articles 
+## Related content 
 
 - [Manage access](restrict-access.md)   
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 

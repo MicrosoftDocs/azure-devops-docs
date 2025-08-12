@@ -186,7 +186,7 @@ Before you set tag colors, [add tags to backlog items](../queries/add-tags-to-wo
    > [!TIP]
    > If tags don't display on the cards, select **Fields** and make sure you checked **Show Tags**. 
 
-## Related articles  
+## Related content  
 <a id="plans-rest-api">  </a>
 
 - [Manage Delivery Plans using the REST API](/rest/api/azure/devops/work/plans/create?view=azure-devops-rest-6.0&preserve-view=true)

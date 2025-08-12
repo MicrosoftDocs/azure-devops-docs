@@ -40,8 +40,8 @@
   - name: Delete and recover packages
     displayName: delete, recover, packages, artifacts
     href: how-to/delete-and-recover-packages.md
-  - name: Use public feeds to share your packages publicly
-    displayName: share packages, share artifacts, artifact feeds, public feeds, feeds
+  - name: Share packages publicly
+    displayName: share, packages, artifact, public, feeds
     href: tutorials/share-packages-publicly.md
   - name: Package badges
     displayName: packages, badges, sharing
@@ -292,7 +292,7 @@
     items:
     - name: Share PowerShell modules with Azure Artifacts
       href: tutorials/private-powershell-library.md
-  - name: Manage dependencies with upstream sources
+  - name: Restore packages from upstream sources
     href: tutorials/protect-oss-packages-with-upstream-sources.md
 - name: Artifacts in Azure Pipelines
   items:

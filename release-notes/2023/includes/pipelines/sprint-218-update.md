@@ -3,6 +3,7 @@ author: ckanyika
 ms.author: ckanyika
 ms.date: 3/8/2023
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 
 ### Node runner download task

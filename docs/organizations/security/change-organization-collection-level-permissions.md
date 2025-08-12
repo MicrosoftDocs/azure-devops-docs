@@ -305,7 +305,7 @@ A: You need the following permissions:
 > [!div class="nextstepaction"]
 > [Manage projects](../projects/about-projects.md)
 
-## Related articles
+## Related content
 
 - [Look up a project collection administrator](look-up-project-collection-administrators.md)
 - [Manage users, groups, and security groups](add-remove-manage-user-group-security-group.md)

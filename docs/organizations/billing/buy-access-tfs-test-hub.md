@@ -18,7 +18,7 @@ monikerRange: '< azure-devops'
 
  For [Azure DevOps Server](https://visualstudio.microsoft.com/tfs/), you pay per user for Basic features. Users with [Visual Studio subscriptions](https://visualstudio.microsoft.com/vs/pricing/) are free to add because Basic features are included in their subscription as a benefit. It's also free to add users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md), which provides free access to a limited set of features.
 
-[Buy monthly access](buy-basic-access-add-users.md), rather than a Visual Studio subscription or [Azure DevOps Server Client Access License (CAL)](../../user-guide/about-azure-devops-services-tfs.md). With paid monthly access, users have access to both Azure DevOps Services and Azure DevOps Server. Users aren't required to use Azure DevOps Services, though. For more information about access levels, see [Change access levels](../security/change-access-levels.md).
+[Buy monthly access](buy-basic-access-add-users.md), rather than a Visual Studio subscription or Azure DevOps Server Client Access License (CAL). With paid monthly access, users have access to both Azure DevOps Services and Azure DevOps Server. Users aren't required to use Azure DevOps Services, though. For more information about access levels, see [Change access levels](../security/change-access-levels.md).
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 
    Users get invited to your organization, but aren't required to use Azure DevOps. 
 
-3. As the Azure DevOps Server Administrator, [add these same users to Azure DevOps Server](../../organizations/security/add-users-team-project.md#add-users-team-project). 
+3. As the Azure DevOps Server Administrator, [add these same users to Azure DevOps Server](../../organizations/security/add-users-team-project.md#add-project-users). 
 4. [Assign access levels for users](../../organizations/security/change-access-levels.md).
 
 ::: moniker range=" < azure-devops > azure-devops-2020"
@@ -56,7 +56,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
     > [!NOTE]
     > Invited users must sign in to Visual Studio Test Professional with the same credentials that they used to join your organization. 
 
-3. As the Azure DevOps Server Administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). Give users [Basic + Test Plans access](../security/change-access-levels.md) so they can use Azure Test Plans. 
+3. As the Azure DevOps Server Administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-project-users). Give users [Basic + Test Plans access](../security/change-access-levels.md) so they can use Azure Test Plans. 
 
    Test Plans installs automatically in Azure DevOps Server. 
 
@@ -77,7 +77,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 > [!div class="nextstepaction"]
 > [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 
-## Related articles
+## Related content
 
 - [Buy Basic access for users](buy-basic-access-add-users.md)
 - [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)

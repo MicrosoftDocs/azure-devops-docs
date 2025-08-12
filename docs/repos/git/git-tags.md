@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.date: 09/28/2021
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 # Use Git tags

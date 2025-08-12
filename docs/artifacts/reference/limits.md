@@ -29,7 +29,7 @@ Azure Artifacts is a highly scalable package management solution that enables de
 
 - **NuGet packages**: limited to 500 MiB per file.
 
-- **Npm packages**: limited to 500 MiB per file.
+- **Npm packages**: limited to 500 MiB per file. Additionally, Azure Artifacts enforces a separate hard limit of 375 KB specifically for the *package.json* file.
 
 - **Maven packages**: limited to 500 MiB per file.
 

@@ -7,3 +7,4 @@ ms.topic: include
 ---
 
 - [Manage high privilege scopes, pipeline decorators, and unpublished extensions](#manage-high-privilege-scopes-pipeline-decorators-and-unpublished-extensions)
+- [Overlapping Secrets for OAuth apps](#overlapping-secrets-for-oauth-apps)

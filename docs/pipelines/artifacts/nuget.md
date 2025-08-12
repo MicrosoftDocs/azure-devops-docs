@@ -24,7 +24,7 @@ Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts fe
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
+- Create a [new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - If you're using a self-hosted agent, make sure that it has the [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download) and [NuGet (4.8.0.5385+)](https://www.nuget.org/downloads) installed.
 
@@ -48,7 +48,7 @@ steps:
 - task: NuGetToolInstaller@1                            # Minimum required NuGet version: 4.8.0.5385+.
   displayName: 'NuGet Tool Installer'
 
-- task: NuGetAuthenticate@0
+- task: NuGetAuthenticate@1                            # Authenticate with Azure Artifacts and other NuGet registries.
   displayName: 'NuGet Authenticate'
 
 - script: |
@@ -199,10 +199,10 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
     - task: NuGetToolInstaller@1                            # Minimum required NuGet version: 4.8.0.5385+.
       displayName: 'NuGet Tool Installer'
 
-    - task: NuGetAuthenticate@0
+    - task: NuGetAuthenticate@1                            # Authenticate with Azure Artifacts and other NuGet registries.
       inputs:
-        nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
-        
+        nuGetServiceConnections: <SERVICE_CONNECTION_NAME>        # Name of the service connection used to authenticate with feeds across organizations or public registries.
+      
     - script: |
         nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
       displayName: Push          

@@ -269,7 +269,7 @@ You see something similar to the following image.
 
 Select the task to see the logs, which show runtime values and that the context is available.
 
-## Related articles
+## Related content
 
 - [About YAML expression syntax](../../pipelines/process/expressions.md#functions)
 - [Pipeline decorator expression context](pipeline-decorator-context.md)

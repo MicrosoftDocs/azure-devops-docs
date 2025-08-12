@@ -440,7 +440,7 @@ Work items you add from the widget are automatically scoped to your team's defau
 
 [!INCLUDE [temp](../../includes/customize-work-tracking.md)] 
 
-## Related articles 
+## Related content 
 
 [!INCLUDE [temp](../../includes/create-team-project-links.md)]  
 

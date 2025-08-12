@@ -56,7 +56,7 @@ All charges appear on your monthly Azure bill. Azure supports payment by credit 
 > [!div class="nextstepaction"]
 > [Set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing)
 
-## Related articles
+## Related content
 
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [Marketplace & Extensibility](../../marketplace-extensibility/index.yml)

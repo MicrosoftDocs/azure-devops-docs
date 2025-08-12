@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.author: jeom
 author: rohit-batra
 ms.date: 12/07/2018
+ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
 
@@ -128,7 +129,7 @@ Stakeholders and other users can respond to feedback requests using the Test & F
  
 7. Capture and submit your feedback as [previously shown](#capture-feedback).
 
-## Related articles
+## Related content
 
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)

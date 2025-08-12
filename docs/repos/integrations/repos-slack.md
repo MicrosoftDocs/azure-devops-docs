@@ -5,12 +5,14 @@ description: Monitor Azure Repos from Slack.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to
-ms.custom: cross-service
 ms.manager: bijuv
 ms.author: Divais
 author: Divais
 monikerRange: 'azure-devops'
 ms.date: 04/30/2024
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
 
 # Azure Repos with Slack

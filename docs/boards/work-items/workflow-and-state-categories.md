@@ -351,7 +351,7 @@ When you link a work item to a pull request (PR), you can automatically complete
 
 You can automatically update the state of a work item according to the state of its child tasks. For more information, see [Automate work item state transitions](automate-work-item-state-transitions.md).
 
-## Related articles
+## Related content
 
 **Inheritance process model**
 - [Customize your workflow](../../organizations/settings/work/customize-process-workflow.md)

@@ -19,7 +19,7 @@ This article guides you through setting up your Visual Studio to install NuGet p
 
 | **Product**        | **Requirements**    |
 |--------------------|---------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-feed). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed). |
 | **Other**          | - Download [Visual Studio](https://visualstudio.microsoft.com/downloads/). |
 
 ## Get the source URL

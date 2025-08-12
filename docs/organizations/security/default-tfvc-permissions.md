@@ -21,7 +21,7 @@ All members of the Contributors group with Basic access can contribute to a TFVC
 
 To change permissions for TFVC repositories or branches, see [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md).
 
-## Related articles
+## Related content
 
 - [Default permissions and access](permissions-access.md) 
 - [Permissions and groups reference](permissions.md) 

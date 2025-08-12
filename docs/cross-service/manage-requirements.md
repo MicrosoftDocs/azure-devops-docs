@@ -267,7 +267,7 @@ If you want to see the features that several teams are delivering across a timel
 
 Azure DevOps provides a robust alert system, where project members can [set alerts for themselves, a team, or a project](../organizations/notifications/about-notifications.md). As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications. 
  
-## Related articles 
+## Related content 
 
 - [Follow best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
 - [Understand work items](../boards/work-items/about-work-items.md)

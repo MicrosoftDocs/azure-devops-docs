@@ -8,9 +8,6 @@ ms.date: 08/30/2024
 ai-usage: ai-assisted
 ---
 
-> [!IMPORTANT]
->  The new stringList data type feature will roll out over the next month. 
-
 | Data type | Notes |
 |-----------|-------|
 | `string` | string

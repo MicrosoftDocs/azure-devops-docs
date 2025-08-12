@@ -33,7 +33,7 @@
   displayname: copy, clone, create, duplicate, copy to clipboard
 - name: Collaborate with others
   items:
-  - name: Follow work
+  - name: Follow work items and PRs
     href: follow-work-items.md
     displayname: query
   - name: Use @mentions in discussions

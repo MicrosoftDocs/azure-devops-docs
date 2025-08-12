@@ -4,12 +4,14 @@ titleSuffix: Azure DevOps
 description: Browse through the places where your extension can extend Azure DevOps capabilities.
 ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
 ms.subservice: azure-devops-ecosystem
-ms.custom: engagement-fy23
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: overview
 ms.date: 04/11/2025
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Extensibility points

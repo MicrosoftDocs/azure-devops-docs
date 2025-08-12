@@ -124,7 +124,7 @@ sections:
   
 
 additionalContent: | 
-  ## Related articles
+  ## Related content
   - [Azure Boards Configuration and Customization](../../../boards/configure-customize.md)
   - [Azure Boards FAQs](../../../boards/faqs.yml)
   - [Work tracking, process, and project limits](object-limits.md)   

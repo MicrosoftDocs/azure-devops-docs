@@ -2,6 +2,7 @@
 title: Visualize release progress – VSTS Sprint 135 Update
 ms.date: 5/30/2018
 description: In the Sprint 135 Update of Visual Studio Team Services (VSTS), we bring a new way to visualize all your release activity.
+ms.custom: sfi-image-nochange
 ---
 
 # Visualize release progress – VSTS Sprint 135 Update

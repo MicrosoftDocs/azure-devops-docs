@@ -236,7 +236,7 @@ For other options to determine changes to the sprint scope, see [Query by date o
 > [!div class="nextstepaction"]
 > [Schedule sprints](define-sprints.md) 
 
-## Related articles 
+## Related content 
 
 If you work with several teams, and each team wants their own backlog view, you can [create more teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path. 
 

@@ -139,7 +139,7 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 [!INCLUDE [area-iteration-paths](includes/name-restrictions/area-iteration-paths.md)] 
 
 
-## Related articles 
+## Related content 
  
 - [Define area paths and assign to a team](set-area-paths.md)
 - [Define iteration paths and configure team iterations](set-iteration-paths-sprints.md)

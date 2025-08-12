@@ -3,13 +3,15 @@ ms.subservice: azure-devops-ecosystem
 title: Package, publish extensions
 description: An overview of how to package, publish, unpublish, publicize, and share an extension for Azure DevOps.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
-ms.custom: engagement-fy23
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 03/25/2025
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Package and publish extensions
@@ -338,7 +340,7 @@ For more information, see  the [Marketplace Publisher Agreement](https://aka.ms/
 | **Azure DevOps Services installs** | Total number of organizations the extension is installed in. Repeated installs on the same organization get counted. |
 | **Azure DevOps Server installs** | Total number of collections the extension is installed in. Repeated installs on the same collection get counted. Disconnected server data isn't available. |
 
-## Related articles
+## Related content
 
 - [Develop a web extension](../get-started/node.md)
 - [Explore extensibility points](../reference/targets/overview.md)

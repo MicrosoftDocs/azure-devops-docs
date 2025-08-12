@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: concept-article
 ms.date: 05/15/2025
 monikerRange: '<= azure-devops'
+ms.custom: sfi-image-nochange
 #customer intent: As an Azure DevOps developer, I want to understand how email recipients are determined for notifications and events, so I can ensure users receive the correct messages.
 ---
 

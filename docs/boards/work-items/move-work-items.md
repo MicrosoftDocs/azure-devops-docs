@@ -196,9 +196,9 @@ After you move work items from one team to another team, do the following action
 - **Verify Iteration Path**: Check the Iteration Path for the sprint. The sprint backlog only displays work items assigned to the selected sprint's Iteration Path.
 - **Verify work item types and filters**: Review your backlog filters and that work item types are correctly categorized to ensure all relevant items display.
 
-For more information, see [Set up your project's backlogs and boards](../backlogs/set-up-your-backlog.md).
+For more information, see [Create your backlog](../backlogs/create-your-backlog.md).
 
-## Related articles
+## Related content
 
 - [Create or add a team](../../organizations/settings/add-teams.md)
 - [Learn about teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) 

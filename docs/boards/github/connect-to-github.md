@@ -8,6 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 02/10/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Connect Azure Boards to GitHub (cloud) 
@@ -298,19 +299,6 @@ The following supported authentication options depend on the GitHub platform you
       - GitHub credentials
    :::column-end:::
 :::row-end:::
-:::row:::
-   :::column span="1":::
-      **Azure DevOps Server 2019**
-   :::column-end:::
-   :::column span="1":::
-      Not applicable
-   :::column-end:::
-   :::column span="1":::
-      - OAuth  
-      - PAT
-      - GitHub credentials
-   :::column-end:::
-:::row-end:::
 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
 
@@ -436,7 +424,7 @@ A: For more information, see [User and permissions management FAQs/GitHub Enterp
 > [!div class="nextstepaction"]
 > [Link GitHub commits, pull requests, and branches to work items](link-to-from-github.md) 
 
-## Related articles
+## Related content
 
 - [Install and configure the Azure Boards app for GitHub](install-github-app.md)
 - [Configure status badges to add to GitHub README files](configure-status-badges.md)

@@ -78,7 +78,7 @@ If your project summary isn't set up yet, a welcome page displays:
 
 Select one of the following tasks to get started:
 
-- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). You can only invite users who are [added to your organization](../security/add-users-team-project.md#add-users-to-a-project).
+- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). You can only invite users who are [added to your organization](../security/add-users-team-project.md#add-project-users).
 - **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 - **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
 - **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
@@ -241,12 +241,12 @@ For projects that selected TFVC for version control, the README.md file needs to
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Project summary page with the README file displayed.](media/share-project/tfvc-project-summary-with-readme.png)
 
-## Related articles
+## Related content
 
 - [Learn about Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Navigate the web portal](../../project/navigation/index.md)
-- [Discover what you get with a project](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Features and services included with Azure DevOps](../../user-guide/what-is-azure-devops.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
  
 **REST APIs**
 

@@ -5,12 +5,14 @@ description: Learn how to create work items and monitor work item activity in an
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to
-ms.custom: cross-service
 ms.reviewer: karrg
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 10/20/2021
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
  
 # Use the Azure Boards app with Slack to manage work items
@@ -203,7 +205,7 @@ Select the `Sign in` button and you get redirected to a consent page like the on
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 
-## Related articles
+## Related content
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Use Azure Pipelines with Slack](../../pipelines/integrations/slack.md)

@@ -6,6 +6,7 @@ description: Use Slack with your Azure DevOps organization to create a service h
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 monikerRange: '<= azure-devops'
 ms.date: 11/21/2023
+ms.custom: sfi-image-nochange
 ---
 
 # Create a service hook for Azure DevOps with Slack

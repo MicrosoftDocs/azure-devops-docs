@@ -155,7 +155,7 @@ DELETE https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/repositories
 > [!div class="nextstepaction"]
 > [Add and edit wiki pages](add-edit-wiki.md)
 
-## Related articles
+## Related content
 
 - [Publish repo to wiki](publish-repo-to-wiki.md)
 - [Wiki markdown guidance](markdown-guidance.md)

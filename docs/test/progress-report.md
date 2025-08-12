@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '>= azure-devops-2020'
 ms.date: 09/14/2021
+ms.update-cycle: 1095-days
 ---
 
 # Progress Report
@@ -82,7 +83,7 @@ Filter by **Test Suites**, **Configuration**, **Tester**, Test Case **Priority**
  
   
 
-## Related articles
+## Related content
 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
 - [FAQs for manual testing](reference-qa.yml#trackstatus)

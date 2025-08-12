@@ -5,11 +5,13 @@ description: Set up code scanning with GitHub Advanced Security for Azure DevOps
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
-ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 02/20/2025
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
 
 # Set up code scanning 
@@ -32,20 +34,20 @@ GitHub experts, security researchers, and community contributors write and maint
 
 CodeQL supports and uses the following language identifiers:
 
-| Language               | Identifier            | Optional alternative identifiers (if any) |
-|------------------------|-----------------------|-------------------------------------------|
-| C/C++                  | `c-cpp`                 | `c` or `cpp`                                  |
-| C#                     | `csharp`                |                                           |
-| Go                     | `go`                    |                                           |
-| Java/Kotlin            | `java-kotlin`           |                           |
-| JavaScript/TypeScript  | `javascript`            |                                           |
-| Python                 | `python`                |                                           |
-| Ruby                   | `ruby`                  |                                           |
-| Swift                  | `swift`                 |                                           |
+| Language               | Identifier            |
+|------------------------|-----------------------|
+| C/C++                  | `cpp`                 |
+| C#                     | `csharp`                |
+| Go                     | `go`                    |
+| Java/Kotlin            | `java`           |
+| JavaScript/TypeScript  | `javascript`            |
+| Python                 | `python`                | 
+| Ruby                   | `ruby`                  | 
+| Swift                  | `swift`                 | 
 
 > [!TIP]
-> * Use `c-cpp` to analyze code written in C, C++ or both.
-> * Use `java-kotlin` to analyze code written in Java, Kotlin or both.
+> * Use `cpp` to analyze code written in C, C++ or both.
+> * Use `java` to analyze code written in Java, Kotlin or both.
 > * Use `javascript` to analyze code written in JavaScript, TypeScript or both.
 
 For more information, see [Supported languages and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/). 
@@ -56,7 +58,7 @@ You can view the specific queries and task details executed by CodeQL in the bui
 
 ### Code scanning build mode customization
 Code scanning supports two build modes when setting up a pipeline for scanning:
-* `none` - the CodeQL database is created directly from the codebase without building the codebase (supported for all interpreted languages, and additionally supported for C# and Java).
+* `none` - the CodeQL database is created directly from the codebase without building the codebase (supported for all interpreted languages, and additionally supported for `cpp`, `java`, and `csharp`).
 * `manual` - you define the build steps to use for the codebase in the workflow (supported for all compiled languages).
 
 For more information on the different build modes including a comparison on the benefits of each build mode, see [CodeQL code scanning for compiled languages](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages#about-the-codeql-analysis-workflow-and-compiled-languages). 

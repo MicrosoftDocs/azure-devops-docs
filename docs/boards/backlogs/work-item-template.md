@@ -449,7 +449,7 @@ For example, the following widget contains links to three templates.
 
 For more information, see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md). 
 
-## Related articles
+## Related content
 
 - [Azure Boards FAQs](../faqs.yml) 
 - [Sample work item templates](../work-items/work-item-template-examples.md)

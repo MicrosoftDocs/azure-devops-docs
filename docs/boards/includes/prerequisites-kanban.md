@@ -3,10 +3,10 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 09/11/2024
+ms.date: 07/30/2025
 ---
 
-Boards automatically get created when you create a project or add a team. Each team has access to their own product and portfolio boards as described in [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools).
+A board is created when you create a project or add a team. Each team has access to their own product and portfolio boards as described in [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools).
 
 ::: moniker range="azure-devops"
 

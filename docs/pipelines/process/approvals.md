@@ -7,6 +7,7 @@ ms.author: sandrica
 author: silviuandrica
 ms.date: 08/29/2024
 monikerRange: ">= azure-devops-2020"
+ms.custom: sfi-image-nochange
 ---
 
 # Define approvals and checks

@@ -75,8 +75,7 @@ As updates get made to the Scrum process template, the version number gets updat
 > |Version | Scrum process name | Major version |
 > |-------------|-------------------|--------------|
 > | Azure DevOps Services<br/>Azure DevOps Server 2022 | Scrum | 18 |
-> | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | Scrum | 17 |
-> | TFS 2018 | Scrum | 16 |
+> | Azure DevOps Server 2020 | Scrum | 17 |
 
 For a summary of updates made to process templates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
@@ -84,6 +83,6 @@ For a summary of updates made to process templates, see [Release Notes for Azure
 
 
 
-## Related articles 
+## Related content 
 
 [!INCLUDE [temp](../../includes/create-team-project-links.md)]

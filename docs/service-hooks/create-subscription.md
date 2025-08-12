@@ -1,49 +1,56 @@
 ---
-title: Create a service hook subscription programmatically
-description: Use service hooks to set up actions to take when specific events occur in Azure DevOps.
+title: Create a Service Hook Subscription Programmatically
+description: Find out how to programmatically create a service hook subscription that prescribes an action to take when a specified event occurs in Azure DevOps.
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-service-hooks
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2022
+ms.date: 06/25/2025
+# customer intent: As a developer, I want to create a service hook subscription programmatically so that I can automate tasks in other services when events happen in my Azure DevOps project.
 ---
 
 # Create a service hook subscription programmatically
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
 
-Using the [Subscriptions REST APIs](/rest/api/azure/devops/hooks/) , you can programmatically create a subscription that performs an action on an external/consumer service when a specific event occurs in an Azure DevOps project. For example, you can create a subscription to notify your service when a build fails.
+You can use a subscription to perform an action on an external or consumer service when a specific event occurs in an Azure DevOps project. For example, a subscription can notify your service when a build fails.
 
-Supported events:
-
-- Build completed
-- Code pushed (for Git projects)
-- Pull request create or updated (for Git projects)
-- Code checked in (TFVC projects)
-- Work item created, updated, deleted, restored or commented on
-
-You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [Event reference](./events.md).
-
-For a complete set of supported consumer services and actions, see the [Consumer reference](./consumers.md).
+To create a subscription programmatically, you can use the [Subscriptions REST APIs](/rest/api/azure/devops/hooks/). This article provides a sample request and sample code for creating a subscription.
 
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
 |**Project access**| [Project member](../organizations/security/add-users-team-project.md). |
-|**Data**|- Project ID. Use the [Project REST API](/rest/api/azure/devops/core/projects) to get the project ID.<br>- Event ID and settings. See the [Event reference](./events.md).<br>- Consumer and action IDs and settings. See the [Consumer reference](./consumers.md).|
+|**Data**|- Project ID. Use the [Project REST API](/rest/api/azure/devops/core/projects) to get the project ID.<br>- Event ID and settings. See [Service hook events](events.md).<br>- Consumer and action IDs and settings. See [Service hook consumers](consumers.md).|
 
-## Create the request
+## Supported events
 
-Construct the body of the HTTP POST request to create the subscription based on the project ID, event, consumer, and action. 
+Azure DevOps provides support for numerous trigger events. Examples include the following events:
 
-See the following example request for creating a subscription that causes a build event to POST to `https://myservice/event` when the build `WebSite.CI` fails. 
+- Build completed
+- Code pushed (for Git projects)
+- Pull request created or updated (for Git projects)
+- Code checked in (for Team Foundation Version Control projects)
+- Work item created, updated, deleted, restored, or commented on
+
+To control which events trigger an action, you can configure filters on your subscriptions. For example, you can filter the build completed event based on the build status.
+
+- For a complete set of supported events and filter options, see [Service hook events](events.md).
+- For a complete set of supported consumer services and actions, see [Service hook consumers](consumers.md).
+
+## Create a request
+
+When you create a subscription, you use the body of an HTTP POST request to specify the project ID, event, consumer, action, and related settings. 
+
+You can use the following request to create a subscription for a build completed event. In this example, when the `WebSite.CI` build fails, the subscription sends a POST request to `https://myservice/event`.
 
 **Request**
-```js
+
+```json
 {
     "publisherId": "tfs",
     "eventType": "build.complete",
@@ -53,7 +60,7 @@ See the following example request for creating a subscription that causes a buil
     "publisherInputs": {
         "buildStatus": "failed",
         "definitionName": "WebSite.CI",
-        "projectId": "56479caf-1eeb-4bca-86ab-aaa6f29399d9",
+        "projectId": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
     },
     "consumerInputs": {
         "url": " https://myservice/event"
@@ -64,9 +71,10 @@ See the following example request for creating a subscription that causes a buil
 We highly recommend using secure HTTPS URLs for the security of the private data in the JSON object.
 
 **Response**
-See the following response to the request to create the subscription:
 
-```js
+The request to create the subscription generates a response that's similar to the following one:
+
+```json
 {
     "id": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
     "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/hooks/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
@@ -76,19 +84,19 @@ See the following response to the request to create the subscription:
     "consumerId": "webHooks",
     "consumerActionId": "httpRequest",
     "createdBy": {
-        "id": "00ca946b-2fe9-4f2a-ae2f-40d5c48001bc"
+        "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa"
     },
     "createdDate": "2014-03-28T16:10:06.523Z",
     "modifiedBy": {
-        "id": "1c4978ae-7cc9-4efa-8649-5547304a8438"
+        "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa"
     },
     "modifiedDate": "2014-04-25T18:15:26.053Z",
     "publisherInputs": {
         "buildStatus": "failed",
         "definitionName": "WebSite.CI",
-        "hostId": "17f27955-99bb-4861-9550-f2c669d64fc9",
-        "projectId": "56479caf-1eeb-4bca-86ab-aaa6f29399d9",
-        "tfsSubscriptionId": "29cde8b4-f37e-4ef9-a6d4-d57d526d82cc"
+        "hostId": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4",
+        "projectId": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+        "tfsSubscriptionId": "ffff5f5f-aa6a-bb7b-cc8c-dddddd9d9d9d"
     },
     "consumerInputs": {
         "url": "http://myservice/event"
@@ -101,117 +109,106 @@ If the subscription request fails, you get an HTTP response code of 400 with a m
 
 ### What happens when the event occurs?
 
-When an event occurs, all enabled subscriptions in the project are evaluated, and the consumer action is performed for all matching subscriptions.
+When an event occurs, all enabled subscriptions in the project are evaluated. Then the consumer action is performed for all matching subscriptions.
 
 ### Resource versions (advanced)
 
 Resource versioning is applicable when an API is in preview. For most scenarios, specifying `1.0` as the resource version is the safest route.
 
-The event payload sent to certain consumers, like Webhooks, Azure Service Bus, and Azure Storage, includes a JSON representation of subject resource (for example, a build or work item). The representation of this resource can have different forms or versions. 
+The event payload sent to certain consumers includes a JSON representation of a subject resource. For instance, the payload sent to webhooks, Azure Service Bus, and Azure Storage includes information about a build or work item. The representation of this resource can have various forms or versions.
 
-You can specify the version of the resource that you want to have sent to the consumer service via the `resourceVersion` field on the subscription.
-The resource version is the same as the [API version](../integrate/concepts/rest-api-versioning.md). Not specifying a resource version means "latest released". You should always specify a resource version, which ensures a consistent event payload over time.
+You can specify the version of the resource that you want to send to the consumer service via the `resourceVersion` field on the subscription.
+
+The resource version is the same as the [API version](../integrate/concepts/rest-api-versioning.md). If you don't specify a resource version, the latest version, `latest released`, is used. To help ensure a consistent event payload over time, always specify a resource version.
 
 ## FAQs
+
 ### Q: Are there services that I can subscribe to manually?
 
-A: Yes. For more information about the services that you can subscribe to from the administration page for a project, see the [Overview](./overview.md).
+A: Yes. For more information about the services that you can subscribe to from a project administration page, see [Integrate with service hooks](overview.md).
 
 ### Q: Are there C# libraries that I can use to create subscriptions?
 
-A: No, but here's a sample to help you get started.
+A: No, but here's a sample to help you get started. For authentication to Azure DevOps, the following code uses a personal access token (PAT) that's stored in Azure Key Vault. In a production environment, use a more secure authentication method. For more information, see [Choose the right authentication mechanism](../integrate/get-started/authentication/authentication-guidance.md).
 
-```cs
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Mvc;
+```csharp
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
+using Microsoft.VisualStudio.Services.Common;
+using Microsoft.VisualStudio.Services.ServiceHooks.WebApi;
+using Microsoft.VisualStudio.Services.WebApi;
 
-namespace Microsoft.Samples.VisualStudioOnline
+namespace CreateServiceHookSubscription
 {
-    public class ServiceHookEventController : Controller
+    internal class Program
     {
+        // Create a service hook subscription to send a message to an Azure Service Bus queue when code is pushed to a Git repository.
 
-        // POST: /ServiceHookEvent/workitemcreated
-        [HttpPost]
-        public HttpResponseMessage WorkItemCreated(Content workItemEvent)
+        static async Task Main(string[] args)
         {
-            //Grabbing the title for the new workitem
-            var value = RetrieveFieldValue("System.field", workItemEvent.Resource.Fields);
+            // Get the secrets from the key vault.
+            string keyVaultURI = "https://<key-vault-name>.vault.azure.net/";
+            var secretClient = new SecretClient(new Uri(keyVaultURI), new DefaultAzureCredential());
+            string personalAccessTokenSecretName = "<personal-access-token-secret-name>";
+            string serviceBusConnectionStringSecretName = "<Service-Bus-connection-string-secret-name>";
+            KeyVaultSecret personalAccessTokenSecret = await secretClient.GetSecretAsync(personalAccessTokenSecretName);
+            KeyVaultSecret serviceBusConnectionStringSecret = await secretClient.GetSecretAsync(serviceBusConnectionStringSecretName);
 
-            //Acknowledge event receipt
-            return new HttpResponseMessage(HttpStatusCode.OK);
+            // Set up the connection parameters for Azure DevOps.
+            var azureDevOpsOrganizationURL = new Uri("https://dev.azure.com/<Azure-DevOps-organization-name>/");
+            string azureDevOpsTeamProjectID = "<Azure-DevOps-team-project-ID>";
+            string azureDevOpsPersonalAccessToken = personalAccessTokenSecret.Value;
+
+            // Set up the event parameters.
+            string eventPublisherID = "tfs";
+            string eventID = "git.push";
+            string eventDescription = "Any stage in any release";
+            string resourceVersion = "1.0";
+
+            // Set up the consumer parameters.
+            string consumerID = "azureServiceBus";
+            string consumerActionID = "serviceBusQueueSend";
+            string serviceBusNamespace = "<Service-Bus-namespace>";
+            string serviceBusQueueName = "<Service-Bus-queue-name>";
+            string consumerActionDescription = $"Send a message to the Service Bus {serviceBusQueueName} queue in the {serviceBusNamespace} namespace.";
+            string serviceBusConnectionString = serviceBusConnectionStringSecret.Value;
+
+            // Configure the subscription.
+            var subscription = new Subscription()
+            {
+                PublisherId = eventPublisherID,
+                PublisherInputs = new Dictionary<string, string>
+                {
+                    ["projectId"] = azureDevOpsTeamProjectID
+                },
+                EventType = eventID,
+                EventDescription = eventDescription,
+                ResourceVersion = resourceVersion,
+                ActionDescription = consumerActionDescription,
+                ConsumerActionId = consumerActionID,
+                ConsumerId = consumerID,
+                ConsumerInputs = new Dictionary<string, string>
+                {
+                    ["connectionString"] = serviceBusConnectionString,
+                    ["queueName"] = serviceBusQueueName
+                }
+            };
+
+            // Connect to the Azure DevOps organization and get a service hook client.
+            var azureDevOpsCredentials = new VssBasicCredential(azureDevOpsPersonalAccessToken, string.Empty);
+            var azureDevOpsConnection = new VssConnection(azureDevOpsOrganizationURL, azureDevOpsCredentials);
+            var serviceHookClient = azureDevOpsConnection.GetClient<ServiceHooksPublisherHttpClient>();
+
+            // Create the subscription.
+            var createdSubscription = await serviceHookClient.CreateSubscriptionAsync(subscription);
+            Console.WriteLine($"A subscription was created that has ID {createdSubscription.Id}.");
         }
-
-        /// <summary>
-        /// Gets the value for a specified work item field.
-        /// </summary>
-        /// <param name="key">Key used to retrieve matching value</param>
-        /// <param name="fields">List of fields for a work item</param>
-        /// <returns></returns>
-        public String RetrieveFieldValue(String key, IList<FieldInfo> fields)
-        {
-            if (String.IsNullOrEmpty(key))
-                return String.Empty;
-
-            var result = fields.Single(s => s.Field.RefName == key);
-
-            return result.Value;
-        }
-
-	}
-
-    public class Content
-    {
-        public String SubscriptionId { get; set; }
-
-        public int NotificationId { get; set; }
-
-        public String EventType { get; set; }
-
-        public WorkItemResource Resource { get; set; }
-
-    }
-
-    public class WorkItemResource
-    {
-        public String UpdatesUrl { get; set; }
-
-        public IList<FieldInfo> Fields { get; set;}
-
-        public int Id { get; set; }
-
-        public int Rev { get; set; }
-
-        public String Url { get; set; }
-
-        public String WebUrl { get; set; }
-    }
-
-    public class FieldInfo
-    {
-        public FieldDetailedInfo Field { get; set; }
-
-        public String Value { get; set; }
-
-    }
-
-    public class FieldDetailedInfo
-    {
-        public int Id { get; set; }
-
-        public String Name { get; set; }
-
-        public String RefName { get; set; }
     }
 }
 ```
 
-## Related articles
+## Related content
 
-- [Authorize service hooks](authorize.md)
-- [Consumers](consumers.md)
-- [Events](events.md)
-- [Troubleshooting and FAQs](troubleshoot.md)
+- [Manage authorization of services to access Azure DevOps](authorize.md)
+- [Service hooks events](events.md)
+- [Troubleshoot service hooks](troubleshoot.md)

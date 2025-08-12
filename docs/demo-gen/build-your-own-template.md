@@ -7,6 +7,7 @@ author: hsachinraj
 ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.date: 05/24/2023
+ms.custom: sfi-image-nochange
 ---
 
 # Build a custom template

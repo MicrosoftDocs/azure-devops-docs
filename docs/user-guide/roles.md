@@ -140,7 +140,7 @@ To get started, see [Manage organizations](../organizations/accounts/organizatio
 
 
 
-## Related articles
+## Related content
 
 - [A tour of services](services.md)
 - [Plan your organizational structure in Azure DevOps](plan-your-azure-devops-org-structure.md)

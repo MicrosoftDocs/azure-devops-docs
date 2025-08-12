@@ -51,7 +51,7 @@ Along with these operators, you can use the following macros when you select the
 > | `@TeamAreas`       |        Filter items based on area path(s) assigned to a specific team.                       |
 
 > [!NOTE]
-> The `@CurrentIteration +/- n` and `@TeamAreas` macros are supported for Azure DevOps Server 2019 and later versions. These macros are only supported from the web portal. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+> The `@CurrentIteration +/- n` and `@TeamAreas` macros are supported for Azure DevOps Server 2020 and later versions. These macros are only supported from the web portal. Queries that contain these macros don't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
 
 ## Area path queries 
 
@@ -119,7 +119,7 @@ The following fields don't appear on work item forms but are tracked for each wo
 
 The default reportable type is none. Area ID and Iteration ID are indexed, Node Name isn't. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
-## Related articles 
+## Related content 
 
 - [Query quick reference](query-index-quick-ref.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)

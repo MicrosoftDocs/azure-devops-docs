@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/16/2024
+ms.update-cycle: 1095-days
 ---
 
 # Exploratory testing with the Test & Feedback extension in Connected mode

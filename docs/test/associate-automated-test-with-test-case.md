@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 ms.date: 01/28/2025
+ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
 
@@ -140,7 +141,7 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 
 ![Screenshot of Change work item display mode.](media/work-item-compatibility.png)
 
-## Related articles
+## Related content
 
 * [Associate automated test results with requirements](../pipelines/test/requirements-traceability.md)
 * [Run automated tests from test plans](run-automated-tests-from-test-hub.md)

@@ -31,7 +31,7 @@ In this article, you'll learn how to:
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
+- Create a [new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - Install [PowerShell](/powershell/scripting/install/installing-powershell) 6.0 or later to ensure you have the required *PowerShellGet* version needed for installing *PSResourceGet*.
 
@@ -218,7 +218,7 @@ In this article, you'll learn how to:
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
+- Create a [new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
 

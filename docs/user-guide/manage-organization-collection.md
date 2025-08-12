@@ -247,7 +247,7 @@ To learn about scaling your organization, see the following articles.
 - [About projects and scaling your organization](../organizations/projects/about-projects.md)
 - [Plan your organizational structure](plan-your-azure-devops-org-structure.md)  
  
-## Related articles
+## Related content
 
 ::: moniker range="azure-devops"  
 

@@ -351,7 +351,7 @@ A `FORM` element and its child elements must conform to the syntax and rules des
 
 A `Control` element can't specify a custom control. Custom controls aren't supported.
 
-## Related articles
+## Related content
 
 - [Import and export Hosted XML processes](import-process.md)  
 - [Evaluate rules and rule behavior](../rule-reference.md)  

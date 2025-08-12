@@ -194,7 +194,7 @@ You can use APIs to extend or supplement the capabilities listed in this article
 > [!div class="nextstepaction"]
 > [Supported filter functions and more for work items](../../boards/backlogs/filter-backlogs-boards-plans.md#supported-filter-functions)
 
-## Related articles
+## Related content
 
 - [Get started with Search](get-started-search.md)
 - [Search code](functional-code-search.md)

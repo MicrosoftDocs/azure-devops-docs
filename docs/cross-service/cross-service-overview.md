@@ -34,7 +34,7 @@ The following table summarizes some of the features that help you work with your
 | Teams | [Each team gets access to a suite of Agile tools](../organizations/settings/about-teams-and-settings.md) and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work. For quick navigation, they can favorite repositories, pipelines, and test plans. |
 | Alerts | Configure or opt out of personal, team, project, or organization-level alerts. [Subscribe to email alerts](../organizations/notifications/about-notifications.md) when changes occur to work items, code reviews, pull requests, source control files, builds, and more. |
 | Summaries by email | - [Email a list of work items](../boards/backlogs/bulk-modify-work-items.md) <br> - [Email query items](../boards/queries/view-run-query.md) <br> - [Send release summaries by email](../pipelines/release/index.md) |
-| Wiki | [Embed Azure Boards query results in Wiki](../project/wiki/markdown-guidance.md#embed-azure-boards-query-results-in-wiki). |
+| Wiki | [Embed Azure Boards query results in Wiki](../project/wiki/markdown-guidance.md#embed-azure). |
 
 ## Azure Boards and Azure Repos integration
 
@@ -303,7 +303,7 @@ Microsoft products support automation or integration with several other applicat
 - [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
 - [Power Automate templates for Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
  
-## Related articles
+## Related content
 
 - [End-to-end traceability](end-to-end-traceability.md)
 - [Data model for Analytics](../report/extend-analytics/data-model-analytics-service.md)

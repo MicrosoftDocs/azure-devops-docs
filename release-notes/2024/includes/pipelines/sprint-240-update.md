@@ -3,6 +3,7 @@ author: ckanyika
 ms.author: ckanyika
 ms.date: 6/14/2024
 ms.topic: include
+ms.custom: sfi-ropc-nochange
 ---
 
 ### Access Azure Service Bus from Pipelines using Microsoft Entra ID authentication

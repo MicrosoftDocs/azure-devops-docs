@@ -89,7 +89,7 @@ You can set an access level from its page. Choose **Set as default access level*
 > [!IMPORTANT]  
 > Service accounts get added to the default access level. If you set Stakeholder as the default access level, you must add the Azure DevOps service accounts to the Basic or an advanced access level group.
 
-## Related articles
+## Related content
 
 - [About access levels](access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)

@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.author: jeom
 author: rohit-batra
 ms.date: 12/07/2018
+ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
 
@@ -48,7 +49,7 @@ Request feedback from stakeholders directly from an Azure DevOps work item.
 
 Teams can request feedback from other team members, such as users having Basic access. Just add their names in the feedback request form so that a **Request feedback** email gets sent to them. Also see [Can users with Basic access respond to feedback requests](provide-stakeholder-feedback.md#non-stakeholder-feedback).
 
-## Related articles
+## Related content
 
 * [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
 * [Voluntary stakeholder feedback using the Test &amp; Feedback extension](voluntary-stakeholder-feedback.md#voluntary)

@@ -7,7 +7,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/07/2025
+ms.date: 07/02/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -111,7 +111,7 @@ To manage a user's resources solely through their group memberships, remove any 
 
 A: Visual Studio Subscribers are always directly assigned via the [Visual Studio Admin Portal](https://manage.visualstudio.com/) and take precedence in Azure DevOps over access levels assigned directly or via group rules. When you view these users from the Users Hub, the License Source always shows as Direct. The only exception are Visual Studio Professional subscribers who are assigned Basic + Test Plans. Since Basic + Test Plans provides more access in Azure DevOps, it takes precedence over a Visual Studio Professional subscription.
 
-## Related articles
+## Related content
 
 * [Install Active Directory and Microsoft Entra users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
 * [Learn about accessing your organization with Microsoft Entra ID](access-with-azure-ad.md)

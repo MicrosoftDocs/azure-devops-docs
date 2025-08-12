@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 06/02/2025
+ms.date: 08/01/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -25,7 +25,7 @@ Microsoft-hosted agents are only available with Azure DevOps Services, which is 
 
 ## Software
 
-The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software.
+The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software. You can see the installed software for each image by choosing the **Included Software** link in the following table. For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support).
 
 #### [Windows images](#tab/windows-images/)
 
@@ -33,7 +33,7 @@ You can see the installed software for each Windows hosted agent image by choosi
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2025 with Visual Studio 2022 (preview) | *windows-2025* | `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
+| Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 | Windows Server 2019 with Visual Studio 2019 - See [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)| *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
 
@@ -41,8 +41,9 @@ The **windows-2019** image is the default image for classic build pipelines. For
 
 #### Windows image updates
 
+* [Windows Server 2025 with Visual Studio 2022 image is GA](https://aka.ms/azdo-windows)
+  * The `windows-latest` label still refers to `windows-2022`. The change to `windows-2025` will be made in the future and this page will be updated at that time.
 * [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
-* [Windows Server 2025 with Visual Studio 2022 is in preview](https://aka.ms/azdo-windows)
 * [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
 
 ##### Windows Server 2019 hosted image deprecation schedule
@@ -50,7 +51,7 @@ The **windows-2019** image is the default image for classic build pipelines. For
 The Windows Server 2019 image is scheduled to be deprecated:
 * Deprecation start date: June 1, 2025
 * Brownout period: June 3, 2025 to June 24, 2025
-* Scheduled removal date for Windows Server 2019 hosted image: June 30, 2025
+* Scheduled removal date for Windows Server 2019 hosted image: December 31, 2025
 
 For more information, see [Upcoming Updates for Azure Pipelines Agents Images - Windows](https://aka.ms/azdo-windows)
 
@@ -68,7 +69,7 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 #### Linux images updates
 
 * [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
-* The `ubuntu-latest` label is in the process of transitioning from `ubuntu-22.04` to `ubuntu-24.04`. Until the transition is complete, your pipelines using `ubuntu-latest` might still use `ubuntu-22.04`.
+* The `ubuntu-latest` label has transitioned from `ubuntu-22.04` to `ubuntu-24.04`.
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
 #### [macOS images](#tab/macos-images/)
@@ -77,12 +78,14 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| macOS 15 Sequoia (preview) | *macOS-15* | `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
+| macOS 15 Sequoia | *macOS-15* | `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 14 Sonoma | *macOS-14* | `macOS-latest` OR `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 | macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
 
 #### macOS images updates
 
+* The macOS 15 Sequoia hosted agent image is in GA.
+ * The `macOS-latest` label still refers to `macOS-14`. The migration of `macos-latest` to refer to `macOS-15` will begin August 4, 2025, with a planned completion date of August 30, 2025. For more information, see [[macOS] macos-latest YAML-label will use macos-15 in August 2025](https://github.com/actions/runner-images/issues/12520).
 * [[macOS] Xcode 15.4 will be removed from macOS15 images on May 29th, 2025](https://github.com/actions/runner-images/issues/12195)
 * [The macOS-15 Sequoia image is available in preview](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os)
 * Apple silicon (ARM64) support for macOS image - for more information on joining the preview, see [Apple silicon (ARM64) support for macOS image](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).

@@ -1,7 +1,7 @@
 ---
 title: Configure storage
 description: Learn how to add an empty data disk to your Managed DevOps Pools agents.
-ms.date: 11/13/2024
+ms.date: 07/29/2025
 ---
 
 # Configure storage
@@ -31,7 +31,7 @@ Choose **Delete** to delete the data disk configuration for an existing pool.
 
 #### [ARM template](#tab/arm/)
 
-Additional disk storage is configured in an ARM template in `dataDisks` section under `storageProfile`. In the following example, a 10 GB Standard_LRS disk is configured with  the drive letter `Q` and no caching.
+Additional disk storage is configured in an ARM template in the property `dataDisks` section under `storageProfile`. In the following example, a 10 GB `Standard_LRS` disk is configured with  the drive letter `Q` and no caching.
 
 ```json
 {
@@ -41,20 +41,23 @@ Additional disk storage is configured in an ARM template in `dataDisks` section 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2024-10-19",
+            "apiVersion": "2025-01-21",
             "location": "eastus",
             "properties": {
                 ...
-                "storageProfile": {
-                    "osDiskStorageAccountType": "Standard",
-                    "dataDisks": [
-                        {
-                            "diskSizeGiB": 10,
-                            "caching": "None",
-                            "storageType": "Standard_LRS",
-                            "driveLetter": "Q"
-                        }
-                    ]
+                "fabricProfile": {
+                  ...
+                  "storageProfile": {
+                      "osDiskStorageAccountType": "Standard",
+                      "dataDisks": [
+                          {
+                              "diskSizeGiB": 10,
+                              "caching": "None",
+                              "storageType": "Standard_LRS",
+                              "driveLetter": "Q"
+                          }
+                      ]
+                  }
                 }
             }
         }
@@ -101,6 +104,36 @@ The following example shows the `storageProfile` section of the **fabric-profile
 
 To delete the data disk configuration for an existing pool, specify an empty list for `dataDisks`: `"dataDisks": []`.
 
+#### [Bicep](#tab/bicep/)
+
+Additional disk storage is configured in a Bicep template in the property `dataDisks` section under `storageProfile`. In the following example, a 10 GB `Standard_LRS` disk is configured with  the drive letter `Q` and no caching.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    fabricProfile: {
+      ...
+      storageProfile: {
+        osDiskStorageAccountType: 'Standard'
+        dataDisks: [
+          {
+            diskSizeGiB: 10
+            caching: 'None'
+            storageAccountType:'Standard_LRS'
+            driveLetter: 'Q'
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+To delete the data disk configuration for an existing pool, specify an empty list for `dataDisks`: `dataDisks: []`.
+
 * * *
 
 Configure the following properties for your attached data disk.
@@ -110,7 +143,7 @@ Configure the following properties for your attached data disk.
 | Size (GiB) | Specify the size of your data disk. The maximum size depends on the storage type. For more information, see [Disk type comparison](/azure/virtual-machines/disks-types#disk-type-comparison) .|
 | Caching Type | Specify the caching type for your disk. Choose from: **Default**, **None**, **ReadOnly**, **ReadWrite**. The default for data disks that support caching is **ReadOnly**. For more information, see [Virtual machine and disk performance](/azure/virtual-machines/disks-performance). |
 | Storage Type | Choose from the following storage types: **Standard_LRS** (default), **Premium_LRS**, **StandardSSD_LRS**, **Premium_ZRS**, **StandardSSD_ZRS**. For more information about these types, see [SKU Types](/rest/api/storagerp/srp_sku_types) and [Azure managed disk types](/azure/virtual-machines/disks-types). |
-| Drive Letter | If you have any Windows agent images in your pool, choose a drive letter for your disk. If you don't specify a drive letter, **F** is used for VM sizes with a temporary disk; otherwise **E** is used. The drive letter must be a single letter except **A**, **C**, **D**, or **E**. If you are using a VM size without a temporary disk and want **E** as your drive letter, leave **Drive Letter** empty to get the default value of **E**. |
+| Drive Letter | If you have any Windows agent images in your pool, choose a drive letter for your disk. If you don't specify a drive letter, **F** is used for VM sizes with a temporary disk; otherwise **E** is used. The drive letter must be a single letter except **A**, **C**, **D**, or **E**. If you are using a VM size without a temporary disk and want **E** as your drive letter, leave **Drive Letter** empty to get the default value of **E**. If you're using an ARM template or Azure CLI script to configure your storage, omit the drive letter parameter if you don't want a drive letter. |
 
 ## Use the data disk for your agent working directory
 
@@ -121,7 +154,7 @@ To configure your agents to use a working directory on the data disk, specify a 
 In the following example, the agent working directory on a Windows agent is configured to use a folder on an attached data disk that is assigned the drive letter **F**.
 
 ```yml
-pool: 
+pool:
   name: fabrikam-managed-pool # Name of Managed DevOps Pool
   demands:
   - WorkFolder -equals f:\custom-work-folder # Windows agent example
@@ -132,7 +165,7 @@ pool:
 For Linux agents, the data disk is mounted as **/mnt/storage/sdc**. The following example configures the agent working directory to be a folder named **custom-work-folder** on the data disk.
 
 ```yml
-pool: 
+pool:
   name: fabrikam-managed-pool # Name of Managed DevOps Pool
   demands:
   - WorkFolder -equals /mnt/storage/sdc/custom-work-folder

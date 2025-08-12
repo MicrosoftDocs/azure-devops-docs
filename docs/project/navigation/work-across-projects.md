@@ -83,7 +83,7 @@ Choose the :::image type="icon" source="../../media/icons/inbox.png" border="fal
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of items you've favorited across projects.](media/favorites/open-favorites-page-vnav.png) 
 
-## Related articles
+## Related content
 
 - [Work across projects FAQs](../work-across-projects-faqs.yml)
 - [Manage or enable features](preview-features.md)  

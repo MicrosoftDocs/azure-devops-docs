@@ -1,7 +1,8 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 06/04/2025
+ms.date: 07/29/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Configure Managed DevOps Pools networking
@@ -92,13 +93,13 @@ Once the network update completes, newly created resource in the pool will use t
 
 #### [ARM template](#tab/arm/)
 
-If you're using ARM templates, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet. 
+If you're using ARM templates, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet.
 
 ```json
 {
     "name": "MyManagedDevOpsPool",
     "type": "Microsoft.DevOpsInfrastructure/pools",
-    "apiVersion": "2024-10-19",
+    "apiVersion": "2025-01-21",
     "location": "eastus",
     "properties": {
         ...
@@ -138,6 +139,24 @@ The following example shows the `networkProfile` section of the **fabric-profile
 }
 ```
 
+#### [Bicep](#tab/bicep/)
+
+If you're using Bicep, add a `networkProfile` property in the `fabricProfile` section, then add a `subnetId` property under `networkProfile` with the resource ID of your subnet.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+  name: 'MyManagedDevOpsPool'
+  location: 'eastus'
+  properties: {
+    ...
+    fabricProfile: {
+      networkProfile: {
+        subnetId: '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet'
+      }
+  }
+}
+```
+
 * * *
 
 ## Restricting outbound connectivity
@@ -149,7 +168,7 @@ If you have systems in place on your network (NSG, Firewall, etc.) that restrict
    * `rmprodbuilds.azureedge.net` - Used to download the Managed DevOps Pools worker binaries and startup scripts. (The agent portion of the worker binaries is downloaded from `rm-agent.prod.manageddevops.microsoft.com` (formerly downloaded from `agent.prod.manageddevops.microsoft.com`) which is covered by the previous required `*.prod.manageddevops.microsoft.com` entry.)
    * `*.queue.core.windows.net` - Worker queue for communicating with Managed DevOps Pools service.
 * Required Endpoints for connecting to Azure DevOps - without allowlisting these endpoints, machines may come online and even go to an "allocated" state, but will fail to communicate with ADO as either the VSTS task agent can't connect, or it can't start.
-   * `vstsagentpackage.azureedge.net` and `download.agent.dev.azure.com` - Azure DevOps agent CDN location, used to download Azure DevOps agent
+   * `download.agent.dev.azure.com` - Azure DevOps agent CDN location, used to download Azure DevOps agent (formerly `vstsagentpackage.azureedge.net` - for more information, see [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/)).
    * `dev.azure.com` - Required to handle communication with Azure DevOps
    *  Preparing Linux machines - these endpoints are required to spin up Ubuntu machines, but are not necessary if a pool is only using Windows. As part of setting up the Azure DevOps Task agent, a few required packages are added and an apt-get is run, which will fail without these being allowlisted.
       * `azure.archive.ubuntu.com` - Provisioning Linux machines - this is HTTP (port 80), not HTTPS (port 443)
@@ -158,11 +177,13 @@ If you have systems in place on your network (NSG, Firewall, etc.) that restrict
       * `packages.microsoft.com` - Provisioning Linux machines
       * `ppa.launchpad.net` - Provisioning some specific Linux distros
       * `dl.fedoraproject.org` - Provisioning certain Linux distros
-* Optional, but required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization hosting your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`. These entries are the minimum domains required. If you have any issues, see [Azure DevOps allowlist](/azure/devops/organizations/security/allow-list-ip-url) for the full list of domains required.
+* Optional, but required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization hosting your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`.
    * `*.services.visualstudio.com`
    * `*.vsblob.visualstudio.com` - Used for Artifacts, both uploading and consuming
    * `*.vssps.visualstudio.com` - Used for authentication with Azure DevOps for certain features
    * `*.visualstudio.com`
+     > [!NOTE]
+     > The previous entries are the minimum domains required. If you have any issues, see [Azure DevOps allowed IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md) for the full list of required domains.
 * Azure related endpoints:
     Azure VMs may route traffic to certain Azure features through your subnet. For these requests, you have the option of routing requests through Azure directly, or enabling access through your network.
     1. [Configuring Azure traffic to run through Service Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview)
@@ -195,3 +216,4 @@ If you're migrating from Azure Virtual Machine Scale Set agents and are already 
 ## See also
 
 * [Configure pool settings](./configure-pool-settings.md)
+* [Azure DevOps allowed IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md)

@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra 
 monikerRange: '<= azure-devops'
 ms.date: 02/13/2025
+ms.update-cycle: 1095-days
 ---
 
 # Explore work items with the Test & Feedback extension
@@ -95,7 +96,7 @@ After you file bugs, create tasks, or create test cases, they appear on the "Rec
 
 For more information, see [View your sessions and gain insights](insights-exploratory-testing.md).
 
-## Related articles
+## Related content
 
 * [Find answers to FAQs for manual testing](reference-qa.yml#tandfext)
 * [Use the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)

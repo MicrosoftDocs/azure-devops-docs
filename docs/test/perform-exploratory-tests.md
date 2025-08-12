@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/16/2024
+ms.update-cycle: 1095-days
 ---
 
 # Install the Test & Feedback extension
@@ -100,6 +101,6 @@ If you have any issues connecting to Azure DevOps, see [Troubleshoot connection]
 > [!div class="nextstepaction"]
 > [Use the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 
-## Related articles
+## Related content
 
 *  [FAQs for manual testing](reference-qa.yml#tandfext)

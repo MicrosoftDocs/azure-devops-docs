@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.author: jeom
 author: rohit-batra
 ms.date: 11/30/2021
+ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
 
@@ -59,7 +60,7 @@ To create a feedback query, do the following steps.
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [What is Azure Test Plans?](overview.md)
 - [Request feedback using the Test & Feedback extension](request-stakeholder-feedback.md)

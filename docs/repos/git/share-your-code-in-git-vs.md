@@ -9,6 +9,7 @@ ms.topic: tutorial
 ms.date: 10/14/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 # Share your code with Azure Repos and Visual Studio

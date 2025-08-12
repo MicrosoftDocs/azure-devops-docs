@@ -4,13 +4,15 @@ titleSuffix: Azure Boards
 description: Learn how to create work items and monitor work item activity in an Azure Boards project from a Microsoft Teams channel.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
-ms.custom: cross-service
 ms.topic: how-to
 ms.reviewer: karrg
 ms.author: karrg
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 08/13/2024
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
  
 # Use Azure Boards in Microsoft Teams
@@ -60,7 +62,7 @@ After the app installs, you see a welcome message in the Teams conversation pane
 
 :::image type="content" source="media/integrations-teams/welcome-message.png" alt-text="Screenshot of the Welcome message in the conversation pane.":::
 
-### Azure Pipelines app commands
+### Azure Boards app commands
 
 You can use the following `@azure boards` commands to interact with the Azure Boards app in your Teams channel.
 
@@ -222,7 +224,7 @@ If you receive the error **Configuration failed. Please make sure that the organ
 
 If these steps don't resolve your authentication issue, reach out to the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-## Related articles
+## Related content
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 

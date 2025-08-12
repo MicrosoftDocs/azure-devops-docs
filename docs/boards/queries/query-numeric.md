@@ -426,7 +426,7 @@ The following table describes the activity-based and numeric fields that you can
 > [!div class="nextstepaction"]
 > [Customize your work tracking experience](../../reference/customize-work.md)
 
-## Related articles 
+## Related content 
 
 - [Create your backlog](../backlogs/create-your-backlog.md)
 - [Plan sprints](../sprints/assign-work-sprint.md)

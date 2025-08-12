@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 07/03/2024
+  ms.date: 06/16/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -49,6 +49,8 @@ landingContent:
             url: access-levels.md
           - text: Stakeholder access quick reference
             url: stakeholder-access.md
+          - text: Replace PATs with Microsoft Entra tokens
+            url: ../../integrate/get-started/authentication/entra.md
       - linkListType: quickstart
         links:
           - text: Change access levels (on-premises)

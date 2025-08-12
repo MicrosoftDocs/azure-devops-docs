@@ -10,6 +10,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 11/04/2021
+ms.update-cycle: 1095-days
 ---
 
 # Create manual test cases
@@ -234,7 +235,7 @@ To permanently delete test plans and test suites, be a member of the Project Adm
 > [!div class="nextstepaction"]
 > [Run manual tests](run-manual-tests.md)
 
-## Related articles
+## Related content
 
 - [Copy or clone stories, issues and other work items](../boards/backlogs/copy-clone-work-items.md)
 - [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md)

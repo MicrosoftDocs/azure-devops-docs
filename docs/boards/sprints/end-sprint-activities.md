@@ -99,7 +99,7 @@ As a project or team administrator, make sure to meet the following guidance for
  
 For more information, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
 
-## Related articles
+## Related content
 
 - [Implement Scrum practices for your team in Azure Boards](scrum-overview.md)
 - [Assign backlog items to a sprint](assign-work-sprint.md)  

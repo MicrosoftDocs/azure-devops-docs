@@ -22,7 +22,7 @@ This differs from apps that perform actions on-behalf-of themselves. For that, y
 
 * [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app)
 * [Add permissions for access to Microsoft Graph](/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-microsoft-graph): Learn how to add delegated permissions from an Azure resource. Instead of Microsoft Graph, select `Azure DevOps` from the list of resources.
-* [Read about scopes and permissions in the Microsoft identity platform](/entra/identity-platform/scopes-oidc): Understand the `.default` scope. See the scopes available for Azure DevOps in [our list of scopes](oauth.md#scopes).
+* [Read about scopes and permissions in the Microsoft identity platform](/entra/identity-platform/scopes-oidc): Understand the `.default` scope. See the scopes available for Azure DevOps in [our list of scopes](oauth.md#available-scopes).
 * [Request permissions through consent](/entra/identity-platform/consent-types-developer)
 * [Use authentication libraries](/entra/identity-platform/reference-v2-libraries) and [code samples](/entra/identity-platform/sample-v2-code?tabs=apptype)
 * [Explore support and help options for developers](/entra/identity-platform/developer-support-help-options)
@@ -41,7 +41,7 @@ This differs from apps that perform actions on-behalf-of themselves. For that, y
 * Use the `.default` scope when requesting a token with all scopes that the app is permissioned for.
 * In a previous Azure DevOps OAuth app, you might have use Azure DevOps user identifiers that don't exist in Microsoft Entra. When migrating to Microsoft Entra, use the [ReadIdentities API](/rest/api/azure/devops/ims/identities/read-identities) to resolve and match the different identities used by each identity provider.
 
-## Related articles
+## Related content
 
 - [Authenticate to Azure DevOps with Microsoft Entra](entra.md)
 - [Use service principals & managed identities in Azure DevOps](service-principal-managed-identity.md)

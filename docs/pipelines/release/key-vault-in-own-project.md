@@ -4,7 +4,9 @@ description: Lean how to set up Azure Key vaults with your own project and use i
 ms.topic: tutorial
 ms.date: 04/14/2025
 monikerRange: "<=azure-devops"
-ms.custom: arm2024
+ms.custom:
+  - arm2024
+  - sfi-image-nochange
 "recommendations": "true"
 ---
 
@@ -254,11 +256,11 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: AzureKeyVault@1
+- task: AzureKeyVault@2                                # Download Azure Key Vault secrets.
   inputs:
-    azureSubscription: 'SERVICE_CONNECTION_NAME'
-    KeyVaultName: 'KEY_VAULT_NAME'
-    SecretsFilter: '*'
+    azureSubscription: 'SERVICE_CONNECTION_NAME'       # Name of the service connection. Alias: ConnectedServiceName.
+    KeyVaultName: 'KEY_VAULT_NAME'                     # Name of the key vault.
+    SecretsFilter: '*'                                 # Secrets filter. Default: *.
 
 - bash: |
     echo "Secret Found! $MY_MAPPED_ENV_VAR"        

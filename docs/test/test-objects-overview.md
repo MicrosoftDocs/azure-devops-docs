@@ -9,6 +9,7 @@ ms.author: jeom
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
+ms.update-cycle: 1095-days
 ---
 
 # Test objects and terms
@@ -426,7 +427,7 @@ The following table describes several terms used in manual and exploratory testi
 :::row-end:::
   
 
-## Related articles
+## Related content
 
 - [Exploratory and manual testing scenarios and capabilities](overview.md)  
 - [Navigate Test Plans](navigate-test-plans.md)

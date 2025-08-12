@@ -9,6 +9,7 @@ author: wisdeom
 ms.topic: how-to
 monikerRange: '= azure-devops'
 ms.date: 12/04/2023
+ms.update-cycle: 1095-days
 ---
 
 
@@ -144,7 +145,7 @@ A: Ensure to follow the below limitations:
 > [!div class="nextstepaction"]
 > [Run manual tests](run-manual-tests.md)
 
-## Related articles
+## Related content
 
 - [Create test plans and test suites](create-a-test-plan.md)
 - [Create test cases](create-test-cases.md)

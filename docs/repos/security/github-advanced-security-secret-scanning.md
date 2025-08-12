@@ -5,16 +5,18 @@ description: Set up secret scanning for GitHub Advanced Security for Azure DevOp
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
-ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 02/20/2025
+ms.date: 07/02/2025
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
 
 # Set up secret scanning 
 
-Exposed credentials in engineering systems provide easily exploitable opportunities for attackers. To defend against this threat, GitHub Advanced Security for Azure DevOps scans for credentials and other sensitive content in your source code. Push protection also prevents any credentials from being leaked in the first place. You'll need either GitHub Advanced Security for Azure DevOps or, if you're using the standalone experience, GitHub Secret Protection for Azure DevOps enabled. 
+Exposed credentials in engineering systems provide easily exploitable opportunities for attackers. To defend against this threat, GitHub Advanced Security for Azure DevOps scans for credentials and other sensitive content in your source code. Push protection also prevents any credentials from being leaked in the first place. You need either GitHub Advanced Security for Azure DevOps or, if you're using the standalone experience, GitHub Secret Protection for Azure DevOps enabled. 
 
 Secret scanning for your repository scans for any secrets that might already exist in your source code across history and push protection prevents any new secrets from being exposed in source code. 
 

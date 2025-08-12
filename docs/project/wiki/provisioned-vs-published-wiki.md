@@ -94,10 +94,10 @@ You can work offline or in a local branch to update content for both types of wi
 Both types of wiki support several other features and operations:
 
 - [Markdown format](markdown-guidance.md)
-- [HTML tags](markdown-guidance.md#use-html-tags-in-wiki-pages)
+- [HTML tags](markdown-guidance.md#html)
 - [Insert and resize images](markdown-guidance.md#images)
-- [Mathematical notation and characters](markdown-guidance.md#mathematical-notation)
-- [Link to items with hash tag (#)](markdown-guidance.md#link-to-work-items-from-a-wiki-page)
+- [Mathematical notation and characters](markdown-guidance.md#math-notation)
+- [Link to items with hash tag (#)](markdown-guidance.md#link-work-items)
 - [Attach files](markdown-guidance.md#attach)
 - [Filter Wiki contents](filter-print-wiki.md#filter-wiki-pages)
 - [Print a Wiki page](filter-print-wiki.md#print-a-wiki-page)

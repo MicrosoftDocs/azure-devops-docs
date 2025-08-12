@@ -1,12 +1,15 @@
 ---
 title: Set a Resource Manager workload identity service connection
-ms.custom: devx-track-arm-template, arm2024
 description: Learn how to manually set an Azure Resource Manager workload identity service connection in Azure Pipelines, one of the services in Azure DevOps.
 ms.topic: conceptual
 ms.author: jukullam
 author: juliakm
 ms.date: 10/16/2024
 monikerRange: '>= azure-devops'
+ms.custom:
+  - devx-track-arm-template
+  - arm2024
+  - sfi-image-nochange
 "recommendations": "true"
 ---
 

@@ -3,12 +3,14 @@ title: Find a project administrator
 titleSuffix: Azure DevOps
 description: Quickly identify members of the Project Administrators group in Azure DevOps.
 ms.subservice: azure-devops-security
-ms.custom: security-refresh
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 07/12/2024
+ms.custom:
+  - security-refresh
+  - sfi-image-nochange
 --- 
 
 # Look up a project administrator 
@@ -106,7 +108,7 @@ The display presents a list of the Project Collection Administrators group's mem
 > [!div class="nextstepaction"]
 > [Add users to a project or team](add-users-team-project.md) 
 
-## Related articles
+## Related content
 
 - [Change project-level permissions](change-project-level-permissions.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)

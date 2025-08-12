@@ -11,9 +11,6 @@ ms.date: 04/23/2025
 
 # Manage high privilege scopes, pipeline decorators, and unpublished extensions
 
-> [!IMPORTANT]
-> This feature is in **public preview**. Features in public preview could undergo changes before becoming generally available.
-
 Extensions in Azure DevOps enhance functionality and streamline workflows, but some extensions might pose security vulnerabilities due to their high privilege scopes or unpublished status. This article explains how to identify and manage high privilege, pipeline decorators, and unpublished extensions to protect your Azure DevOps organization from potential security vulnerabilities or unexpected behavior.
 
 ## What are high privilege scopes and high privilege extensions?
@@ -65,9 +62,6 @@ When you select any extension and especially an extension with high privilege sc
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Azure DevOps' Visual Studio Marketplace acquisition screen for a high privilege extension.](media/high-privilege-extensions/acquisition-pipeline.png)
 
-> [!NOTE]
-> This feature is being released gradually. If you don't see the high privilege scope insights in your [Azure DevOps Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) user interface, wait a few more days until it becomes available for you too.
-
 ## Use pipeline decorators safely
 
 [Pipeline decorators](../extend/develop/add-pipeline-decorator.md) are private extensions that modify and enhance all pipelines within your organization, they're also classified as high privilege extensions. Use pipeline decorator extensions cautiously and only if you trust their publishers and code.
@@ -85,7 +79,7 @@ Discontinue the use of unpublished extensions by uninstalling them from your Azu
 
 Additionally, with the Azure DevOps Services REST API [version 7.2](/rest/api/azure/devops/extensionmanagement/installed-extensions/list?view=azure-devops-rest-7.2&tabs=HTTP#extensionstateflags&preserve-view=true), the string field `unpublished` is now available. This field enables you to programmatically identify extensions that are unpublished from the Visual Studio Marketplace. And for example, you can build your own process of detecting and managing unpublished extensions within your Azure DevOps organization.
 
-## Related articles
+## Related content
 
 - [Secure your Azure DevOps environment](../organizations/security/security-overview.md)
 - [Publish extensions to the Visual Studio Marketplace](../extend/publish/overview.md)

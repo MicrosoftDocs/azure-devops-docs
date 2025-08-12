@@ -2,13 +2,15 @@
 title: Analytics best practices
 titleSuffix: Azure DevOps  
 description: Learn about the best practices to use when you query Analytics for Azure DevOps.
-ms.custom: analytics 
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 11/02/2023
+ms.custom:
+  - analytics
+  - sfi-image-nochange
 ---
 
 # Analytics best practices 

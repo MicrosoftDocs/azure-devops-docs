@@ -98,7 +98,7 @@ There isn't a limit on the number of projects that you can create within a proje
 
    Select one of the following options to continue:
 
-   - **Invite**: Add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project).
+   - **Invite**: Add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add users to a project](../security/add-users-team-project.md#add-project-users).
    - **Boards**: Add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
    - **Repos**: Clone or import a repository or initialize a *README* file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
    - **Pipelines**: Define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
@@ -135,7 +135,7 @@ There isn't a limit on the number of projects that you can create within a proje
 
    Select one of the following options to continue:
 
-   - **Invite**: add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project).
+   - **Invite**: add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add users to a project](../security/add-users-team-project.md#add-project-users).
    - **Boards**: add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
    - **Repos**: clone or import a repository, or initialize a *README* file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
    - **Pipelines**: define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
@@ -324,7 +324,7 @@ You can add Git (distributed) or TFVC (centralized) repositories to your project
 > [!div class="nextstepaction"]
 > [Structure your project](about-projects.md#structure-your-project)
 
-## Related articles
+## Related content
 
 - [Rename a project](rename-project.md)
 - [Delete a project](delete-project.md)

@@ -9,6 +9,7 @@ ms.author: jeom
 author: raviLiftr
 monikerRange: 'azure-devops'
 ms.date: 08/25/2023
+ms.update-cycle: 1095-days
 ---
 
 # Manage test failure type

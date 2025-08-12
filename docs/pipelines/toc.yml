@@ -183,7 +183,7 @@
     - name: Library & shared resources
       displayName: security roles, variables, variable groups, secure files
       href: library/index.md
-    - name: Add resources to a pipeline
+    - name: Resources in YAML pipelines
       href: process/resources.md
     - name: Define and target environments
       displayName: clusters, vms, resources
@@ -450,9 +450,9 @@
           href: release/deployment-groups/index.md
         - name: Provision agents for deployment groups
           href: release/deployment-groups/howto-provision-deployment-group-agents.md
-        - name: Add a deployment group job to a release pipeline
+        - name: Deployment group jobs
           href: release/deployment-group-phases.md
-        - name: Deploying to Azure VMs using deployment groups in Azure Pipelines
+        - name: Deploy web apps to Azure VMs with deployment groups
           href: release/deployment-groups/deploying-azure-vms-deployment-groups.md
   - name: Artifacts
     items:
@@ -512,7 +512,7 @@
       href: process/artifact-policy.md
   - name: Examples
     items:
-    - name: Ecosystem support
+    - name: Ecosystems examples
       displayName: language, platform
       href: ecosystems/ecosystems.md
     - name: .NET
@@ -723,7 +723,7 @@
     href: release/approvals/servicenow.md
 - name: Migrate
   items:
-  - name: Migrate from Classic pipelines
+  - name: Migrate Classic pipelines to YAML 
     href: release/from-classic-pipelines.md
   - name: Migrate from Jenkins
     href: migrate/from-jenkins.md

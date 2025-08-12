@@ -119,7 +119,7 @@ To work with WITs programmatically, see [Work Item Types REST API](/rest/api/azu
 
 [!INCLUDE [temp](includes/qa-custom-work-item-on-backlog.md)] 
 
-## Related articles  
+## Related content  
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 

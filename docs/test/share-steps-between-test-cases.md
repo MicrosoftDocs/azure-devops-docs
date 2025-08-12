@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/06/2021
+ms.update-cycle: 1095-days
 ---
 
 # Share steps between test cases
@@ -82,7 +83,7 @@ When you [run a test](run-manual-tests.md), you can either mark the whole shared
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Test objects and terms](test-objects-overview.md)
 - [Create a test case](create-test-cases.md)

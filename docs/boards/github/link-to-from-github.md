@@ -8,12 +8,12 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: "<=azure-devops"
-ms.date: 04/23/2025
+ms.date: 06/24/2025
 ---
 
 # Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 In this article, learn how to link work items to GitHub commits, pull requests, and branches after connecting your Azure Boards project with a GitHub repository. You can use the **#mention** syntax for commits and branches or add a GitHub commit, pull request, or branch link directly from the Azure Boards work item.
 
@@ -46,6 +46,9 @@ You can also enter a commit or pull request message to transition the work item.
 When a pull request description includes a valid state name, for example, ``Closed AB#1234``, the system updates the referenced work item to that specific state. If the state name isn’t recognized directly, Azure Boards tries to match it to a workflow category like ``Resolved`` or ``Completed``. If a match is found, the work item transitions to the first available state defined under that category.
 
 By default, work items referenced with ``fix``, ``fixes``, or ``fixed`` transitions to the first state associated with the **Resolved** category. If no such state exists in the current process, the system instead transitions the work item to the first state in the **Completed** category.
+
+> [!IMPORTANT]  
+> You can still link work items and target other branches, but state transition rules don't apply unless the pull request is merged into the default branch.
 
 For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
 
@@ -141,7 +144,7 @@ With GitHub annotations enabled on the board, you can quickly open linked GitHub
 > [!div class="nextstepaction"]
 > [Configure status badges](configure-status-badges.md)
 
-## Related articles
+## Related content
 
 - [Integrate Azure Boards with GitHub](index.md)
 - [Understand how workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md)

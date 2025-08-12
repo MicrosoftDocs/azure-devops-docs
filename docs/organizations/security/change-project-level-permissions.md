@@ -252,7 +252,7 @@ You can change the project-level permissions for a specific user. To understand 
 > [!div class="nextstepaction"]
 > [Manage projects](../projects/about-projects.md)
 
-## Related articles
+## Related content
 
 - [Set object-level permissions](set-object-level-permissions.md)
 - [Get started with permissions, access, and security groups](about-permissions.md)
