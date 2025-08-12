@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Use the [Azure DevOps REST API](/azure/devops/build/general-settings/update?view=azure-devops-rest-7.1) to automate updates to some Azure DevOps pipeline settings at the project level. Some settings aren't available through the REST API. For organization-level settings, you'll need to make configuration changes within the Azure  DevOps UI.  
+Use the [Azure DevOps REST API](/rest/api/azure/devops/build/general-settings/update/) to automate updates to some Azure DevOps pipeline settings at the project level. Some settings aren't available through the REST API. For organization-level settings, you'll need to make configuration changes within the Azure  DevOps UI.  
 
 ## Prerequisites
 
