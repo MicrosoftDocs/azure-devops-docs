@@ -3,7 +3,7 @@ title: Run and build numbers
 description: Learn about Azure Pipelines run numbers and build numbers and how you can configure them in your pipelines.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 08/11/2025
+ms.date: 08/12/2025
 monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines customer, I want to understand the composition of run numbers so I can customize them to be more meaningful and useful for my team.
 ---
@@ -14,13 +14,13 @@ monikerRange: "<=azure-devops"
 
 A unique run number or build number identifies each execution of an Azure Pipelines pipeline or build. This article explains the structure of this number and how you can customize it to be more useful or meaningful for your team.
 
-If you don't specify a build name in YAML pipelines, or you leave the **Name** or **Build number format** field blank in Classic pipelines, each run gets a unique integer as its name. Build names can also use a combination of tokens, variables, and other characters. You can customize run and build numbers by using naming patterns, tokens, and variables.
+If you don't specify a build name in YAML pipelines, or you leave the **Name** or **Build number format** field blank in Classic pipelines, each run gets a unique integer as its name. Build names can use other characters, tokens, and variables. You can customize run and build numbers by using naming patterns, special tokens, and predefined or user-defined variables.
 
 ## Build number configuration
 
-In Classic pipelines, you can customize the **Build number format** under **Options** in the pipeline definition. In YAML pipelines, you can customize the run number by using the `name` property at the [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) level of the YAML pipeline definition. The `name` property isn't supported in templates or stages.
+In Classic pipelines, you can customize the **Build number format** under **Options** in the pipeline definition. In YAML pipelines, you can customize the run number format by using the `name` property at the [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) level of the YAML file. The `name` property isn't supported in templates or stages.
 
-The following YAML pipeline example sets a custom run number format that produces a name like **MyProject_MyBuild_main_20240828.1**:
+The following example sets a custom run number format that produces a build number like **MyProject_MyBuild_main_20240828.1**.
 
 ```yaml
 name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
@@ -31,7 +31,7 @@ steps:
 
 ## Run number
 
-The default value for an Azure Pipelines run number is `$(Date:yyyyMMdd).$(Rev:r)`. The `$(Rev:r)` is a special variable that works only in the build number field. When a build completes, if nothing else in the build number changed, the `Rev` integer value increases by one.
+The default value for an Azure Pipelines run number is `$(Date:yyyyMMdd).$(Rev:r)`. The `$(Rev:r)` revision variable works only in a build number field. When a build completes, if nothing else in the build number changes, the `Rev` integer value increases by one.
 
 `$(Rev:r)` resets to `1` when any other part of the build number changes. For example, if you configure your build number format as `$(Build.DefinitionName)_$(Date:yyyyMMdd).$(Rev:r)`, the build number resets when the date changes.
 
@@ -39,7 +39,7 @@ If the previous build number was **MyBuild_20230621.1**, the next build number t
 
 `$(Rev:r)` also resets to `1` if you change the version. If your build format is `1.0.$(Rev:r)` and your last build number was **1.0.3**, if you change the version to `1.1.$(Rev:r)`, the next build number is **1.1.1**.
 
-In the following example, the second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
+The following build number format produces the name **Fabrikam_CIBuild_main_20240506.2** for the second run on May 6, 2024.
 
 ```yaml
 name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
@@ -67,7 +67,7 @@ The following table shows how run number tokens resolve. You can use these token
 | `$(Hours)` | 21 ||
 | `$(Minutes)` | 7 ||
 | `$(Month)` | 5 ||
-| `$(Rev:r)` | 2 | Number of runs that day. Use `$(Rev:r)` to ensure that every completed build has a unique name. |
+| `$(Rev:r)` | 2 | Position in the number of runs that day. Use `$(Rev:r)` to ensure that every completed build has a unique name. |
 | `$(Seconds)` | 3 ||
 | `$(SourceBranchName)` | main ||
 | `$(TeamProject)` | Fabrikam ||
@@ -81,7 +81,7 @@ The following table shows how run number tokens resolve. You can use these token
 
 ### Expressions in run numbers
 
-If you use an expression to set the run number, you can't use the `$(Build.BuildId)`, `$(Build.BuildUri)`, or `$(Build.BuildNumber)` tokens, because their values aren't set at the time pipeline expressions are evaluated.
+If you use an expression to set the run number, you can't use the `$(Build.BuildId)`, `$(Build.BuildUri)`, or `$(Build.BuildNumber)` tokens, because their values aren't set yet at the time pipeline expressions are evaluated.
 
 ### Variables in run numbers
 
