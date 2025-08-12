@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 07/29/2025
+ms.date: 08/12/2025
 ms.custom: sfi-image-nochange
 ---
 
@@ -610,6 +610,23 @@ To use this feature, you must:
 - Configure an [identity on your pool](configure-identity.md), and this identity must have **Key Vault Secrets User** permissions to fetch the secret from your Key Vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to Key Vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
 
 - The principal configuring the Key Vault integration settings (if you are configuring the Key Vault settings, then your account) must have the **Key Vault Certificate User** role assignment on the Key Vault where the certificates are stored.
+
+- **Coming soon** - If you are enforcing network isolation for your Azure KeyVault to only permit authorized resources access, you must add the following IP addressess to your [Azure Key Vault allowlist](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips).
+
+    | Location            | IP address range        |
+    |---------------------|-------------------------|
+    | australiaeast       | 4.198.194.192/28        |
+    | brazilsouth         | 74.163.143.32/28        |
+    | canadacentral       | 130.107.66.0/28         |
+    | centralindia        | 98.70.255.112/28        |
+    | centralus           | 72.152.33.16/28         |
+    | eastus2             | 72.153.21.192/28        |
+    | germanywestcentral  | 131.189.121.128/28      |
+    | northeurope         | 72.145.24.48/28         |
+    | southeastasia       | 135.171.33.48/28        |
+    | switzerlandnorth    | 74.161.82.192/28        |
+    | uksouth             | 131.145.107.64/28       |
+    | westcentralus       | 128.24.189.20           |
 
 > [!NOTE]
 > As of `api-version 2025-01-21`, if you use this feature you can only use a single identity on the pool. Support for multiple identities will be added soon.
