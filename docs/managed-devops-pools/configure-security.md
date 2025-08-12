@@ -611,7 +611,7 @@ To use this feature, you must:
 
 - The principal configuring the Key Vault integration settings (if you are configuring the Key Vault settings, then your account) must have the **Key Vault Certificate User** role assignment on the Key Vault where the certificates are stored.
 
-- **Coming soon** - If you are enforcing network isolation for your Azure Key Vault to only permit authorized resources access, you must add the following IP addressess to your [Azure Key Vault allowlist](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips).
+- **Coming soon** - If you are enforcing network isolation for your Azure Key Vault to only permit authorized resources access, you must add the following IP addressess to your [Azure Key Vault allowlist](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips). The following IP address ranges and any new IP address ranges will be added to an upcoming [Azure service tag](/azure/virtual-network/service-tags-overview) named **DevOpsInfrastructure**.
 
     | Location            | IP address range        |
     |---------------------|-------------------------|
