@@ -286,7 +286,7 @@ With your backlog in place, your team can begin work on the top-priority items. 
 > [!div class="nextstepaction"]
 > [Scrum: Schedule sprints](../sprints/define-sprints.md) or [Kanban](../boards/kanban-quickstart.md)
 
-## Related articles
+## Related content
 
 - [Configure and customize Azure Boards](../configure-customize.md)  
 - [Bulk modify work items](bulk-modify-work-items.md)

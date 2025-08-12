@@ -69,7 +69,7 @@ The error message is customized.
 
 ![Screenshot shows customized error message.](media/azure-ad-tenant-policy/error-message-example-ui.png)
 
-## Related articles
+## Related content
 
 * [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
 * [Learn about access with Microsoft Entra ID](access-with-azure-ad.md)

@@ -306,7 +306,7 @@ Also, you can bulk add or update work items with the following tools:
 
 
 
-## Related articles
+## Related content
 
 - [About work items](../work-items/about-work-items.md)  
 - [About Boards and Kanban](../boards/kanban-overview.md)  

@@ -278,7 +278,7 @@ Are you sure you want to delete this team? (y/n): y
 
 * * *
 
-## Related articles
+## Related content
 
 - [Add teams](add-teams.md)  
 - [Learn about teams and Agile tools](about-teams-and-settings.md)  

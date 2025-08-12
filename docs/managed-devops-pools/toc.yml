@@ -18,6 +18,8 @@
     href: quickstart-arm-template.md
   - name: Azure CLI
     href: quickstart-azure-cli.md
+  - name: Bicep
+    href: quickstart-bicep.md
 - name: Configure
   items:
   - name: Configure pool settings

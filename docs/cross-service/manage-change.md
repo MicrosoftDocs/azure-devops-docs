@@ -85,6 +85,6 @@ Teams can monitor changes through work item queries, team velocity charts, and s
 
 Azure DevOps provides a robust alert system, where project members can [set alerts for themselves, a team, or a project](../organizations/notifications/about-notifications.md). As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications.
 
-## Related articles
+## Related content
 
 - [What is Agile?](/devops/plan/what-is-agile)

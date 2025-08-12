@@ -73,7 +73,7 @@ System and user-defined variables (except secret variables) also get injected as
 
 ## Variable naming restrictions
 
-User-defined and environment variables can consist of letters, numbers, `.`, and `_` characters. Don't use variable prefixes reserved by the system. These are: `endpoint`, `input`, `secret`, `path`, and `securefile`. Any variable that begins with one of these strings (regardless of capitalization) won't be available to your tasks and scripts. 
+User-defined and environment variables can consist of letters, numbers, `.`, and `_` characters. Don't use variable prefixes reserved by the system. These are: `endpoint`, `input`, `secret`, `path`, and `securefile`. Any variable that begins with one of these strings (regardless of capitalization) won't be available to your tasks and scripts. Don't use spaces in variables. For additional constraints, see  [Azure Pipelines naming restrictions](../../organizations/settings/naming-restrictions.md#azure-pipelines). 
 
 ## Understand variable syntax
 

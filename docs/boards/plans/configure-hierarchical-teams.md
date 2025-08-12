@@ -125,7 +125,7 @@ If your feature teams use Scrum or use sprints to assign their work, set up a se
 
 > [!NOTE]
 > While maintaining a single sprint cadence simplifies project administration, you can create different cadences as needed. For example, some teams may follow a monthly cadence while others follow a 3-week cadence. Simply define a node under the top project node for each cadence, and then define the sprints under those nodes. For example: 
-> - Fabrikam Fiber/CY2019
+> - Fabrikam Fiber/CY2025
 > - Fabrikam Fiber/3Week Sprints
 > 
 > Here we define the start and end dates of the first 6 sprints corresponding to a 3-week cadence. 
@@ -172,7 +172,7 @@ The primary workaround is to maintain single ownership of work items by [definin
 > [!div class="nextstepaction"]
 > [Review team Delivery Plans](review-team-plans.md)
 
-## Related articles
+## Related content
 
 - [Create your backlog](../backlogs/create-your-backlog.md)  
 - [Create a board](../boards/kanban-quickstart.md)

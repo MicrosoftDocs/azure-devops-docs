@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/30/2025
+ms.date: 8/11/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,27 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="9"><a href="2025/sprint-260-update.md" data-raw-source="[11 August 2025](2025/sprint-260-update.md)"> August 11 2025</a></td>
+    <td>Only organizations with existing public projects can create new ones</td><td>General</td><td>N/A</td></tr>
+    <td>Azure DevOps login flow no longer relies on Azure Resource Manager audience</td><td>General</td><td>N/A</td></tr>
+    <td>Continuous Access Evaluation on Azure DevOps</td><td>General</td><td>N/A</td></tr>
+    <td>New secret patterns added to Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Periodic repository re-scans performed for secret scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Dismissals in Advanced Security now available in alert detail UI</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Validity checking for secrets now generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Azure Boards and Pipelines integration for GitHub Enterprise Cloud with Data Residency</td><td>Boards</td><td>Future</td></tr>
+    <td>Improved screen reader support for pull request experience</td><td>Repos</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="6"><a href="2025/sprint-259-update.md" data-raw-source="[30 June 2025](2025/sprint-259-update.md)"> July 17 2025</a></td>
+    <td>Basic access included for GitHub Enterprise data residency customers</td><td>General</td><td>N/A</td></tr>
+    <td>Advanced Security properly picks up on default branch changes and deleted branches</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>New Boards Hub now enabled for all customers</td><td>Boards</td><td>Future</td></tr>
+    <td>Bug fixes improving GitHub integration and security</td><td>Boards</td><td>Future</td></tr>
+    <td>Create work items from pull request comments</td><td>Repos</td><td>Future</td></tr>
+    <td>Enhanced diagram support in wiki pages and file preview</td><td>Repos</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="6"><a href="2025/sprint-258-update.md" data-raw-source="[30 June 2025](2025/sprint-258-update.md)"> June 30 2025</a></td>
     <td>Azure DevOps MCP Server public preview</td><td>General</td><td>N/A</td></tr>

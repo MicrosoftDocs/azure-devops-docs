@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/10/2025
+ms.date: 07/28/2025
 ms.custom: sfi-image-nochange
 --- 
 
@@ -77,6 +77,7 @@ Users can lose access for the following reasons:
 |**Reason for loss of access**  |**Troubleshooting action**|
 |---------|---------|
 |The user's Visual Studio subscription expired.     | This user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.        |
+|The GitHub Enterprise license expired or got removed.    | See the [FAQs/GitHub Enterprise section](../accounts/faq-user-and-permissions-management.yml#github-enterprise).       |
 |The Azure subscription used for billing is no longer active.  |  All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).       |
 |The Azure subscription used for billing was removed from your organization.    | Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)        |
 
@@ -263,7 +264,7 @@ You might be signed into Azure DevOps with an incorrect identity. Do the followi
 - [Custom backlogs and boards](../settings/work/customize-process-backlogs-boards.md)
 - [Custom controls](../settings/work/custom-controls-process.md)
 
-## Related articles
+## Related content
 
 - [Manage permissions with the command line tool](manage-tokens-namespaces.md)
 - [Change individual or group permissions](/azure/devops/organizations/security/request-changes-permissions)

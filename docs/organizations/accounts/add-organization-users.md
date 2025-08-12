@@ -140,7 +140,7 @@ You can see all security groups in a project using the [az devops security group
 For more information about user access, read [about access levels](../security/access-levels.md).
 
 > [!NOTE]
-> You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if your organization has available access, or [Stakeholder features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if not. For more information, see [Add users to projects](../security/add-users-team-project.md#add-users-to-a-project).
+> You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if your organization has available access, or [Stakeholder features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if not. For more information, see [Add users to projects](../security/add-users-team-project.md#add-project-users).
 >
 > When a user no longer needs access to your organization, [delete them](delete-organization-users.md) from your organization.
 
@@ -320,7 +320,7 @@ After you add members to your project, each member receives an invitation email 
 > [!div class="nextstepaction"]
 > [Set up billing](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
 
-## Related articles
+## Related content
 
 * [Create a project](../projects/create-project.md)
 * [Invite external users](add-external-user.md)

@@ -202,7 +202,7 @@ Complete the following steps to manage annotations.
    :::image type="content" source="media/customize-cards/annotate-settings-154.png" alt-text="Screenshot showing a board, Settings dialog, Annotations tab.":::
 
 	> [!NOTE]   
-	> GitHub annotations requires Azure DevOps Server 2019 Update 1 or later version. For more information, see [Link GitHub commits, pull requests, branches, and issues to work items](../github/link-to-from-github.md).
+	> GitHub annotations requires Azure DevOps Server 2020 or later version. For more information, see [Link GitHub commits, pull requests, branches, and issues to work items](../github/link-to-from-github.md).
 
 3. When you're done, select **Save**.
 
@@ -286,7 +286,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 4. When you're done with your changes, select **Save**.
 
-## Related articles
+## Related content
 
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  

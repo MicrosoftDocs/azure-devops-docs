@@ -154,7 +154,7 @@ When tasks and bugs link to their parent requirements, they group them correctly
 
 A: No, not at this time. You can always check the entire list of items assigned to a sprint when you select **Create query**.
 
-## Related articles
+## Related content
 
 - [Create and manage your backlog](create-your-backlog.md)  
 - [Learn about Kanban boards](../boards/kanban-overview.md)  

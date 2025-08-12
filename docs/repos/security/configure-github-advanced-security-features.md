@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 02/20/2025
+ms.date: 08/03/2025
 zone_pivot_groups: configure-ghazdo-bundled-individual-products
 ---
 
@@ -153,27 +153,17 @@ As mentioned, secret scanning repository scanning is automatically kicked off up
 To gain access to dependency scanning features, you need the **Code Security** product enabled for your repository.
 :::zone-end
 
-Dependency scanning is a pipeline-based scanning tool. Results are aggregated per repository. We recommend that you add the dependency scanning task to all the pipelines that you want scanned. 
+Dependency scanning is a pipeline-based scanning tool. Results are aggregated per repository. For scanning your default branch, you can utilize the "Scan for vulnerable dependencies" setting from the repository settings page. This will automatically include the dependency scanning task into any pipeline targeting your default branch, or any pull request build targeting your default branch. 
 
->[!TIP] 
-> For the most accurate scanning results, add the dependency scanning task after the build steps or package restore step in a pipeline that builds the code you wish to scan.
+:::zone pivot="standalone-ghazdo"
+:::image type="content" source="media/dependency-one-click-code-security.png" lightbox="media/dependency-one-click-code-security.png" alt-text="Screenshot of dependency scanning one-click setup."::: 
+:::zone-end
 
-#### [YAML](#tab/yaml)
+:::zone pivot="bundled-ghazdo"
+:::image type="content" source="media/dependency-one-click-enablement.png" lightbox="media/dependency-one-click-enablement.png" alt-text="Screenshot of dependency scanning one-click setup."::: 
+:::zone-end
 
-Add the task Advanced Security Dependency Scanning task ([AdvancedSecurity-Dependency-Scanning@1](/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1)) directly to your YAML pipeline file or select the **Advanced Security Dependency Scanning** task from the [task assistant](../../pipelines/get-started/yaml-pipeline-editor.md#use-task-assistant).
-
-:::image type="content" source="media/dependency-scanning-config-yaml.png" lightbox="media/dependency-scanning-config-yaml.png" alt-text="Screenshot of dependency scanning pipeline setup for YAML.":::
-
-#### [Classic](#tab/classic)
-
-Add the `Advanced Security Dependency Scanning` task to your pipeline. 
-
-:::image type="content" source="media/dependency-scanning-config-classic.png" lightbox="media/dependency-scanning-config-classic.png" alt-text="Screenshot of dependency scanning pipeline setup for classic pipelines.":::
-
-
-To generate alerts, run your first scan with a pipeline with the dependency scanning task included.
-
---- 
+For more advanced setup or if you want to scan all branches, we recommend that you add the dependency scanning task to all the pipelines that you want scanned. See [Dependency scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-dependency-scanning-troubleshoot.md#manual-dependency-scanning-task-setup) for more details.
 
 ## Set up code scanning
 
@@ -246,30 +236,26 @@ steps:
 
 ```
 
-> [!TIP]
-> CodeQL analysis for Kotlin/Swift is currently in beta. During the beta, analysis of these languages is less comprehensive than CodeQL analysis of others.
-> - Use `java` to analyze code written in Java, Kotlin or both.
-> - Use `javascript` to analyze code written in JavaScript, TypeScript, or both. 
-
-If the language specified is `cpp, java, csharp` or `swift`, custom build steps are required.
-
-
 #### [Classic](#tab/classic)
 
 Add the tasks in the following order: 
-1. `Advanced Security Initialize CodeQL`
+1. `Advanced Security Initialize CodeQL` ([AdvancedSecurity-Codeql-Init@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1))
 1. Add your own custom build steps
-1. `Advanced Security Perform CodeQL Analysis`
+1. `Advanced Security Perform CodeQL Analysis` ([AdvancedSecurity-Codeql-Analyze@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1))
 
 :::image type="content" source="media/code-scanning-config-classic-tasks.png" alt-text="Screenshot of code scanning pipeline setup for YAML." lightbox="media/code-scanning-config-classic-tasks.png" :::
 
-Also, specify which language you're analyzing in the `Initialize CodeQL` task. If the language specified is `cpp, java, csharp` or `swift`,  custom build steps are required.
+---
+
+Also, specify which language you're analyzing in the `Initialize CodeQL` task. If the language specified is `swift`,  custom build steps are required.
+
+> [!TIP]
+> - Use `java` to analyze code written in Java, Kotlin or both.
+> - Use `javascript` to analyze code written in JavaScript, TypeScript, or both. 
 
 If you're running on a self-hosted agent, select the `Enable automatic CodeQL detection and installation` to automatically use the latest CodeQL bits on your agent if you didn't manually install the latest CodeQL bundle to your agent tool cache.
 
 To generate alerts, run your first scan with a pipeline with the code scanning tasks included.
-
---- 
 
 ## Set up pull request annotations 
 

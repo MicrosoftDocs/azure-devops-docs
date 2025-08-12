@@ -295,7 +295,7 @@ Do the following steps to migrate the Git tip only:
 > [!div class="nextstepaction"]
 > [Code with Git](../../user-guide/code-with-git.md)
 
-## Related articles
+## Related content
 
 - [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more)
 - [Delete a project](delete-project.md)

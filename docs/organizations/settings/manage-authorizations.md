@@ -73,7 +73,7 @@ Review the services that you granted authorization to access your organization.
 > [!div class="nextstepaction"]
 > [Set user preferences](set-your-preferences.md)
 
-## Related articles
+## Related content
 
 - [Change application access policies](../accounts/change-application-access-policies.md)
 - [Manage service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)

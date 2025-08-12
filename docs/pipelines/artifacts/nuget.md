@@ -48,7 +48,7 @@ steps:
 - task: NuGetToolInstaller@1                            # Minimum required NuGet version: 4.8.0.5385+.
   displayName: 'NuGet Tool Installer'
 
-- task: NuGetAuthenticate@0
+- task: NuGetAuthenticate@1                            # Authenticate with Azure Artifacts and other NuGet registries.
   displayName: 'NuGet Authenticate'
 
 - script: |
@@ -199,10 +199,10 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
     - task: NuGetToolInstaller@1                            # Minimum required NuGet version: 4.8.0.5385+.
       displayName: 'NuGet Tool Installer'
 
-    - task: NuGetAuthenticate@0
+    - task: NuGetAuthenticate@1                            # Authenticate with Azure Artifacts and other NuGet registries.
       inputs:
-        nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
-        
+        nuGetServiceConnections: <SERVICE_CONNECTION_NAME>        # Name of the service connection used to authenticate with feeds across organizations or public registries.
+      
     - script: |
         nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
       displayName: Push          

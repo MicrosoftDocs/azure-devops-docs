@@ -119,7 +119,7 @@ You can view the results in the **Test Case Results** dialog box.
 ![Screenshot shows test results for a test point.](media/repeat-test-with-different-data/view-test-results.png)
 ::: moniker-end
 
-## Related articles
+## Related content
 
 * [FAQs for manual testing](reference-qa.yml#repeatdifferent)
 * [Overview of manual and exploratory testing](index.yml)

@@ -264,7 +264,7 @@ The following table provides an index to those fields that support field compari
    :::column-end:::
 :::row-end:::
 
-## Related articles 
+## Related content 
 
 - [Query index quick reference](query-index-quick-ref.md)
 - [Query by title, ID, or description](titles-ids-descriptions.md)

@@ -81,7 +81,7 @@ Query clauses that specify a text or rich-text field can use the operators and m
  
 
 > [!NOTE]  
-> 1. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions
+> 1. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2020 and later versions
 > 2. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#query-across-or-within-projects).
 
 
@@ -372,7 +372,7 @@ The following table describes common fields used to filter queries. The **ID** f
 > Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
 
 
-## Related articles
+## Related content
 
 - [Query editor](using-queries.md)   
 - [Add work items](../backlogs/add-work-items.md)  

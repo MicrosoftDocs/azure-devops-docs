@@ -39,7 +39,7 @@ When you [create an organization](create-organization.md) in Azure DevOps, the s
 
 Your organization's image gets updated. This change is reflected across all areas of Azure DevOps where the organization image is displayed, including the organization settings, project dashboards, and user profiles.
 
-## Related articles
+## Related content
 
 - [Change your organization's owner](change-organization-ownership.md)
 - [Change your organization's location](change-organization-location.md)

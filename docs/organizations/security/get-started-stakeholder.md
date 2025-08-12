@@ -238,7 +238,7 @@ For more information, see:
 > [!div class="nextstepaction"]
 > [Create your product backlog](../../boards/backlogs/create-your-backlog.md)
  
-## Related articles
+## Related content
 
 - [Add work items](../../boards/backlogs/add-work-items.md)
 - [Get started with Kanban boards](../../boards/boards/kanban-quickstart.md)

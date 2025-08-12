@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2024
+ms.date: 08/07/2025
 ---
 
 # Get started with Azure DevOps Data Migration Tool
@@ -58,7 +58,27 @@ When you migrate a team project collection SQL database, the Data Migration Tool
 
 ## Choose data center 
 
-When you set up your Azure DevOps Services organization, you can choose the location for your data. During initial sign-up and organization creation, select a region that suits your needs. To use later for migration, make a note of the region’s shorthand code. For more information, see Supported regions for migration. 
+When you set up your Azure DevOps Services organization, you can choose the location for your data. During initial sign-up and organization creation, select a region that suits your needs. To use later for migration, make a note of the region's shorthand code.
+
+> [!IMPORTANT]
+> Not all Azure regions support the Data Migration Tool. Setting up temporary SQL VMs or other migration infrastructure in unsupported regions can cause delays and require reconfiguration. Review the supported regions before proceeding with your migration planning.
+
+### Supported Azure regions for migration
+
+The following table lists the Azure regions that support the Azure DevOps Data Migration Tool:
+
+| Region | Shorthand code |
+|--------|----------------|
+| Central US | CUS |
+| East US 2 | EUS2 |
+| West Europe | WE |
+| Australia East | AE |
+| Brazil South | BS |
+| South India | SI |
+| Asia Pacific (Hong Kong) | APE |
+| Canada Central | CC |
+
+For the complete migration process and detailed region considerations, see [Supported Azure regions for migration](migration-test-run.md#supported-azure-regions-for-migration).
 
 ## Understand pricing 
 
@@ -115,7 +135,7 @@ By following this approach, you have a smooth transition while ensuring your pre
 > [!div class="nextstepaction"]
 > [Complete prerequisites for migration](migration-prerequisites.md)
 
-## Related articles 
+## Related content 
 
 - [Validate and prepare for migration](migration-validate.md)
 - [Prepare for test run](migration-prepare-test-run.md)

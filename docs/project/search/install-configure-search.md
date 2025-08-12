@@ -272,7 +272,7 @@ Search for Azure DevOps Server has the following limitation:
 * [Reindex all your collections](manage-search.md#reindex-a-repository-or-collection) if you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database.
 * Search isn't extensible, but you can submit a new feature request on the [Developer Community](https://developercommunity.visualstudio.com/home).
 
-## Related articles
+## Related content
 
 - [Manage indexing for Search](manage-search.md)
 - [Get started with Search](get-started-search.md)

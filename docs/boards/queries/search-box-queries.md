@@ -246,7 +246,7 @@ The following examples show how to use operators when you create a search string
 |Contain the keyword `triage` in the title or description, aren't assigned to you, and aren't closed.|`triage -A=@me -S=Closed`|
 |Active bugs that are assigned to you that don't contain the keyword `bugbash` in the title.|`S=Active T=bug A=@Me -Title:bugbash`
 
-## Related articles
+## Related content
 
 - [About managed queries](about-managed-queries.md)  
 - [Define a query](using-queries.md)   

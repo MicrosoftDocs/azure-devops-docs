@@ -2,16 +2,20 @@
 ms.topic: include
 ms.author: chcomley
 author: chcomley 
-ms.date: 03/25/2021
+ms.date: 07/29/2025
 ---
 
 > [!IMPORTANT]
-> Microsoft Project Integration and the `TFSFieldMapping` command aren't supported for:
+> **Microsoft Project Integration is no longer supported**
 >
-> - Visual Studio 2019 and Azure DevOps Office Integration 2019.
-> - Azure DevOps Server 2019 and later versions, including Azure DevOps Services.
+> Microsoft Project Integration and the `TFSFieldMapping` command are discontinued for:
+> - Visual Studio 2019 and later versions (including Azure DevOps Office Integration)
+> - Azure DevOps Server 2020 and later versions
+> - Azure DevOps Services
 >
-> Full support for Microsoft Excel integration is maintained, allowing bulk import and update of work items. Alternatives to using Microsoft Project include:
+> **What still works:** Microsoft Excel integration remains fully supported for bulk import and update of work items.
 >
-> - [Delivery Plans](../plans/review-team-plans.md)
-> - Marketplace extensions like [Project Connect](https://marketplace.visualstudio.com/items?itemName=TVT.TVT-PjO) or [GANTT chart](https://marketplace.visualstudio.com/search?term=gantt&target=AzureDevOps&category=Azure%20Boards&visibilityQuery=all&sortBy=Relevance)
+> **Recommended alternatives:**
+> - **[Delivery Plans](../plans/review-team-plans.md)** - Native Azure DevOps feature for project planning and cross-team tracking
+> - **Project management extensions** - Browse the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/search?term=project%20management&target=AzureDevOps&category=Azure%20Boards&sortBy=Installs) for current Gantt chart and project management solutions
+> - **Third-party integrations** - Many project management tools offer Azure DevOps connectors for seamless workflow integration

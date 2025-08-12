@@ -562,7 +562,7 @@ Due to internal optimizations, saved queries tend to perform better over unsaved
 
 Sometimes you need to run your query a few times to reach the right optimization plan. Make sure to save your query and run it up to 10 times over a 30-minute period. This way, the system can examine and seek out the optimization plan that's most appropriate for your query. 
 
-## Related articles
+## Related content
 
 - [Query quick reference](query-index-quick-ref.md).  
 - [Query FAQs](query-faqs.yml)

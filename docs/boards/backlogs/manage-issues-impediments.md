@@ -115,7 +115,7 @@ If you want to track issues or impediments along with your requirements or a por
 - **For the On-premise XML process**: [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
 ::: moniker-end
 
-## Related articles 
+## Related content 
 
 - [Add work items](add-work-items.md)
 - [Work item form controls](../work-items/about-work-items.md#work-item-form-controls)

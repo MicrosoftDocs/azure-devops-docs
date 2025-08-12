@@ -13,7 +13,7 @@ ms.custom: sfi-image-nochange
 
 # Connect Azure DevOps Server to GitHub (on-premises)
 
-[!INCLUDE [version-gt-eq-2019-lt-azure-devops](../../includes/version-gt-eq-2019-lt-azure-devops.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=2095009 --> 
 
@@ -104,64 +104,6 @@ You can connect up to 250 GitHub repositories to an Azure Boards project.
 The Azure Boards-GitHub integration relies on various authentication protocols to support the connection. Changes to a user's permission scope or authentication credentials can cause revocation of the GitHub repositories connected to Azure Boards. 
  
 For an overview of the integration that the Azure Boards app for GitHub supports, see [Azure Boards-GitHub integration](index.md).  
-<!--
-#### Supported authentication options
-
-The following authentication options are supported based on the GitHub platform you want to connect to.  
-
-:::row:::
-   :::column span="1":::
-      **Platform**
-   :::column-end:::
-   :::column span="1":::
-      **GitHub.com**
-   :::column-end:::
-   :::column span="1":::
-      **GitHub Enterprise Server**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Azure DevOps Services**
-   :::column-end:::
-   :::column span="1":::
-      - GitHub.com user account 
-      - Personal access token (PAT)
-   :::column-end:::
-   :::column span="1":::
-      - OAuth  
-      - PAT
-      - GitHub credentials
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Azure DevOps Server 2020**
-   :::column-end:::
-   :::column span="1":::
-      Not applicable
-   :::column-end:::
-   :::column span="1":::
-      - PAT 
-      - GitHub credentials
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Azure DevOps Server 2019**
-   :::column-end:::
-   :::column span="1":::
-      Not applicable
-   :::column-end:::
-   :::column span="1":::
-      - OAuth  
-      - PAT
-      - GitHub credentials
-   :::column-end:::
-:::row-end:::
- 
-[!INCLUDE[temp](../includes/github-platform-support.md)]
--->
 
 When the Azure Boards connection to GitHub no longer has access, it shows an alert status in the user interface with a red-X. Hover over the alert and it indicates that the credentials are no longer valid. To correct the problem, remove the connection and recreate a new connection.
 
@@ -234,7 +176,7 @@ When it updates, the section should appear as follows.
 > [!div class="nextstepaction"]
 > [Link GitHub commits and pull requests to work items](link-to-from-github.md) 
 
-## Related articles
+## Related content
 
 - [Learn about Azure Boards](../../boards/get-started/what-is-azure-boards.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)

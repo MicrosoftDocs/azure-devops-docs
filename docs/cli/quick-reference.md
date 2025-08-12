@@ -99,7 +99,7 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Delete a team](../organizations/settings/rename-remove-team.md#delete-a-team)
       - [List team members](../organizations/security/add-users-team-project.md#list-team-members)
       - [List teams](../organizations/settings/add-teams.md#list-teams)
-      - [Show team details](../organizations/security/add-users-team-project.md#show-details)
+      - [Show team details](../organizations/security/add-users-team-project.md#show-team-details)
       - [Rename a team](../organizations/settings/rename-remove-team.md#rename-a-team)
       #### User accounts
       - [Add a user](../organizations/accounts/add-organization-users.md#add-users-to-your-organization)
@@ -252,7 +252,7 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 - [Show details of a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-show)
 - [Update a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-update)
 
-## Related articles
+## Related content
 
 - [Cross-service integration overview](../cross-service/cross-service-overview.md)
 - [witAdmin: Customize and manage objects for tracking work](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)

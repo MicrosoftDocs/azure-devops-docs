@@ -160,7 +160,7 @@ This SDK includes a JavaScript library that provides APIs required for communica
 > [!div class="nextstepaction"]
 > [Package and publish your extension](../publish/overview.md)
 
-## Related articles
+## Related content
 
 * [Developer Formula Design System](https://developer.microsoft.com/azure-devops/)
 * [Contribution model](../develop/contributions-overview.md)

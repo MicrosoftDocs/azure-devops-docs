@@ -7,7 +7,7 @@ ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/24/2025
+ms.date: 07/25/2025
 monikerRange: 'azure-devops'
 ms.custom:
   - freshness-fy22q1
@@ -19,7 +19,7 @@ ms.custom:
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This article guides you through managing billing in Azure DevOps, which is essential for controlling costs associated with users, CI/CD concurrency, and extensions. You'll learn how to [set up billing](#set-up-billing-for-your-organization), [change your Azure subscription](#change-your-billing-subscription), [remove your billing subscription](#remove-your-billing-subscription), and [give a user access to manage billing](#give-a-user-access-to-manage-billing).
+This article guides you through managing billing in Azure DevOps, which is essential for controlling costs associated with users, CI/CD concurrency, and extensions. Learn how to [set up billing](#set-up-billing-for-your-organization), [change your Azure subscription](#change-your-billing-subscription), [remove your billing subscription](#remove-your-billing-subscription), and [give a user access to manage billing](#give-a-user-access-to-manage-billing).
 
 *All services are billed via Azure*. You're not required to use any other Azure services.
 
@@ -31,7 +31,7 @@ This article guides you through managing billing in Azure DevOps, which is essen
 >    - Microsoft-hosted CI/CD
 >    - Self-hosted CI/CD
 > - Before you delete your organization resource in the Azure portal, ensure you changed the billing subscription. Deleting the resource before this change might result in reverting to the free tier of service for your organization. For more information, see [Billing FAQs](billing-faq.yml#azure-portal-integration).
-> - When billing gets canceled or changed, a resource group gets left behind in the old Azure subscription. Despite Azure's warning that "Dependent resources will be deleted," it's safe to delete these resource groups. The Azure DevOps organization won't be deleted or harmed. These resource groups take the naming format, `VisualStudioOnline-<DEVOPS-ORG-HOSTID-WITHOUT-DASHES>`.
+> - When billing gets canceled or changed, a resource group gets left behind in the old Azure subscription. Despite Azure's warning that "Dependent resources will be deleted," it's safe to delete these resource groups. The Azure DevOps organization isn't deleted or harmed. These resource groups take the naming format, `VisualStudioOnline-<DEVOPS-ORG-HOSTID-WITHOUT-DASHES>`.
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ This article guides you through managing billing in Azure DevOps, which is essen
 
 ## Set up billing for your organization
 
-Set up billing in Azure DevOps before making any purchases. This is a one-time setup per organization. Once you select an Azure subscription for billing, you can add users and assign licenses.
+Set up billing in Azure DevOps before making any purchases. This action is a one-time setup per organization. Once you select an Azure subscription for billing, you can add users and assign licenses.
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
@@ -110,10 +110,7 @@ Azure DevOps removes your billing subscription from your organization.
 
 ## Give a user access to manage billing
 
-> [!IMPORTANT]
-> Classic admins retired August 31, 2024. You can't add a new coadministrator using the Access control. Remove coadministrators and use Azure role-based access control (RBAC) for fine-grained access control. For more information, see [Azure classic subscription administrators](/azure/role-based-access-control/classic-administrators).
-
-Assign any of the following roles to a user under the subscription your organization uses for billing: [Owner](/azure/role-based-access-control/built-in-roles#owner), [Contributor](/azure/role-based-access-control/built-in-roles#contributor), or [Service admin](/azure/billing/billing-add-change-azure-subscription-administrator). For more information, see [Azure roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+Assign the [Owner](/azure/role-based-access-control/built-in-roles#owner) or [Contributor](/azure/role-based-access-control/built-in-roles#contributor) role to a user under the subscription your organization uses for billing. For more information, see [Azure roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 1. [Sign in to the Azure portal](https://portal.azure.com/) as the Azure Account Administrator.
 2. Enter *subscriptions* in the search box and select **Subscriptions**. 

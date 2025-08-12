@@ -315,7 +315,7 @@ Your Taskboard automatically refreshes when changes occur. There isn't any live 
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 - [Create your backlog](../backlogs/create-your-backlog.md)

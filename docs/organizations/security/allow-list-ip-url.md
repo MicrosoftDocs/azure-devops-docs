@@ -327,7 +327,7 @@ https://*.visualstudio.com
 https://*.dedup.microsoft.com
 ```
 
-Also allow all IP addresses in the "name": "Storage.{region}" section of the following file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). {region} is the same Azure Geography as your organization.
+Also allow all IP addresses in the "name": "Storage.{region}" section of the following file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://aka.ms/aax7d4q). {region} is the same Azure Geography as your organization.
 
 ### NuGet connections
 
@@ -351,7 +351,7 @@ ssh.dev.azure.com
 vs-ssh.visualstudio.com
 ```
 
-Also allow **port 22** for IP addresses in the "name": "AzureDevOps" section of [this downloadable file](https://www.microsoft.com/download/details.aspx?id=56519) (updated weekly) named: **Azure IP ranges and Service Tags - Public Cloud**
+Also allow **port 22** for IP addresses in the "name": "AzureDevOps" section of [this downloadable file](https://aka.ms/aax7d4q) (updated weekly) named: **Azure IP ranges and Service Tags - Public Cloud**
 
 ### Azure Pipelines Microsoft-hosted agents
 
@@ -380,7 +380,7 @@ During the import process, we highly recommend that you restrict access to your 
 > [!NOTE]
 > Azure DevOps doesn't natively support allowlisting directly within its settings. However, you can manage allowlisting at the network level using your organization's firewall or proxy settings. 
 
-## Related articles
+## Related content
 
 - [Available service tags](/azure/virtual-network/service-tags-overview)
 - [Microsoft-hosted agents IP address ranges](../../pipelines/agents/hosted.md#agent-ip-ranges)

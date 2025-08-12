@@ -74,7 +74,7 @@ If your organization is connected to Microsoft Entra ID, **Global Administrators
 5. Access the Azure DevOps organization using your administrator privileges.
 6. Follow the standard deletion process [previously outlined](#delete-organization).
 
-## Related articles
+## Related content
 
 - [Recover your deleted organization](recover-your-organization.md)
 - [Resolve an orphaned organization](resolve-orphaned-organization.md)

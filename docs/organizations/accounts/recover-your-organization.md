@@ -50,7 +50,7 @@ After you delete an organization, it's disabled but available for 28 days. If yo
    * If billing was previously set up for your organization, [relink your organization](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing) to an Azure subscription.
    * If your organization was connected to Microsoft Entra ID for authenticating user access, you don't have to reconnect it.
 
-## Related articles
+## Related content
 
 * [Delete an organization](delete-your-organization.md)
 * [Create a new organization](create-organization.md)

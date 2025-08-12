@@ -114,7 +114,7 @@ To view feature progress based on linked requirements, use the Feature Timeline.
 > [!div class="nextstepaction"]
 > [Configure a hierarchy of teams](configure-hierarchical-teams.md)
 
-## Related articles
+## Related content
  
 - [Create your backlog](../backlogs/create-your-backlog.md)
 - [Get started with Kanban](../boards/kanban-quickstart.md)

@@ -303,7 +303,7 @@ Microsoft products support automation or integration with several other applicat
 - [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
 - [Power Automate templates for Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
  
-## Related articles
+## Related content
 
 - [End-to-end traceability](end-to-end-traceability.md)
 - [Data model for Analytics](../report/extend-analytics/data-model-analytics-service.md)

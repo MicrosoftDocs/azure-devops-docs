@@ -804,7 +804,7 @@ For more information, see [Team Foundation Server Administration Documentation](
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Add or update information banners](manage-banners.md)
 - [Review resources granted to project members](../projects/resources-granted-to-project-members.md)

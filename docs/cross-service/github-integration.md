@@ -105,7 +105,7 @@ Additionally, you can map your GitHub repositories to one or more projects in Az
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Azure Boards-GitHub integration](../boards/github/index.md)  
 - [Build GitHub repositories](../pipelines/repos/github.md)  

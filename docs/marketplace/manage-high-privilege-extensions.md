@@ -79,7 +79,7 @@ Discontinue the use of unpublished extensions by uninstalling them from your Azu
 
 Additionally, with the Azure DevOps Services REST API [version 7.2](/rest/api/azure/devops/extensionmanagement/installed-extensions/list?view=azure-devops-rest-7.2&tabs=HTTP#extensionstateflags&preserve-view=true), the string field `unpublished` is now available. This field enables you to programmatically identify extensions that are unpublished from the Visual Studio Marketplace. And for example, you can build your own process of detecting and managing unpublished extensions within your Azure DevOps organization.
 
-## Related articles
+## Related content
 
 - [Secure your Azure DevOps environment](../organizations/security/security-overview.md)
 - [Publish extensions to the Visual Studio Marketplace](../extend/publish/overview.md)

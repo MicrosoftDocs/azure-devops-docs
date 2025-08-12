@@ -13,7 +13,7 @@ ms.date: 11/11/2024
 
 # Manage Work Items in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
 Work items help you plan and manage your project by tracking different types of work, such as user stories, product backlog items, tasks, test cases, or bugs. Use work items to describe the work to be done, assign tasks, track status, and coordinate efforts within your team.
@@ -174,7 +174,7 @@ There are best practices to help you effectively manage work items for developme
 > [Create your backlog](create-your-backlog.md) or 
 > [Kanban board quickstart](../boards/kanban-quickstart.md) 
 
-## Related articles
+## Related content
 
 - [View the work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json)
 - [Explore work item form controls](../work-items/about-work-items.md#work-item-form-controls)

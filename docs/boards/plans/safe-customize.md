@@ -252,7 +252,7 @@ You add the following Marketplace extensions to get access to many rich features
 > [!div class="nextstepaction"]
 > [Plan and track SAFe® programs and portfolios](safe-plan-track-boards.md) 
 
-## Related articles
+## Related content
 
 - [Manage access](../../organizations/security/restrict-access.md) 
 - [Develop a web extension for Azure DevOps Services](../../extend/get-started/node.md)

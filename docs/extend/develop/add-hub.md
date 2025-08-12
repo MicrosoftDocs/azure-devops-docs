@@ -172,7 +172,7 @@ Set `addressable` to `true` unless you include other files that don't need to be
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)
 
-## Related articles
+## Related content
 
 - [Testing and debugging extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
 - [Extension manifest reference](../develop/manifest.md)

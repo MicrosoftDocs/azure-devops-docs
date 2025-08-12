@@ -88,7 +88,7 @@ For answers to the following frequently asked questions, see the [FAQs](../faqs.
 - Can I set up automation rules for user stories but not for features or epics?
 - Why are automation rules not working if the child or parent items belongs to a different team or project?
 
-## Related articles
+## Related content
 
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 - [Configure team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)

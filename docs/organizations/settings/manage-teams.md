@@ -182,7 +182,7 @@ Team administrators have the ability to add and edit alerts, allowing the team t
 
 :::image type="content" source="media/manage-notifications.png" alt-text="Screenshot of highlighted Notifications button.":::
 
-## Related articles
+## Related content
 
 - [About projects and scaling your organization](../projects/about-projects.md)
 - [About teams and Agile tools](about-teams-and-settings.md)  

@@ -108,7 +108,7 @@ The display presents a list of the Project Collection Administrators group's mem
 > [!div class="nextstepaction"]
 > [Add users to a project or team](add-users-team-project.md) 
 
-## Related articles
+## Related content
 
 - [Change project-level permissions](change-project-level-permissions.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)

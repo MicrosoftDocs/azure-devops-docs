@@ -136,7 +136,7 @@ Your team should engage in discussions after several weeks of using WIP limits. 
 
 * **Manage culture change:** Apply change management principles and promote team ownership during WIP limit implementation.
 
-## Related articles
+## Related content
 
 - [Split columns](split-columns.md)  
 - [Speed up work](expedite-work.md)  

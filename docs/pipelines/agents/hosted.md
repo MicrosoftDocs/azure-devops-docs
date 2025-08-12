@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 07/03/2025
+ms.date: 08/01/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -69,7 +69,7 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 #### Linux images updates
 
 * [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
-* The `ubuntu-latest` label is in the process of transitioning from `ubuntu-22.04` to `ubuntu-24.04`. Until the transition is complete, your pipelines using `ubuntu-latest` might still use `ubuntu-22.04`.
+* The `ubuntu-latest` label has transitioned from `ubuntu-22.04` to `ubuntu-24.04`.
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
 #### [macOS images](#tab/macos-images/)
@@ -78,12 +78,14 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| macOS 15 Sequoia (preview) | *macOS-15* | `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
+| macOS 15 Sequoia | *macOS-15* | `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 14 Sonoma | *macOS-14* | `macOS-latest` OR `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 | macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
 
 #### macOS images updates
 
+* The macOS 15 Sequoia hosted agent image is in GA.
+ * The `macOS-latest` label still refers to `macOS-14`. The migration of `macos-latest` to refer to `macOS-15` will begin August 4, 2025, with a planned completion date of August 30, 2025. For more information, see [[macOS] macos-latest YAML-label will use macos-15 in August 2025](https://github.com/actions/runner-images/issues/12520).
 * [[macOS] Xcode 15.4 will be removed from macOS15 images on May 29th, 2025](https://github.com/actions/runner-images/issues/12195)
 * [The macOS-15 Sequoia image is available in preview](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os)
 * Apple silicon (ARM64) support for macOS image - for more information on joining the preview, see [Apple silicon (ARM64) support for macOS image](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).

@@ -2094,7 +2094,7 @@ Corrected misspellings.
     </taskXml>
 ```
 
-## Related articles
+## Related content
 
 - [Validate and import processes](../../../../migrate/migration-import.md)
 - [Azure DevOps Data Import Service](../../../../migrate/migration-overview.md)

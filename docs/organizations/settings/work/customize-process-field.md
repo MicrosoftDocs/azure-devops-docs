@@ -302,7 +302,7 @@ To delete a custom field, do the following steps:
 	![Screenshot shows Delete field, confirmation dialog.](media/process/cpfield-delete-confirmation.png) 
  
 
-## Related articles  
+## Related content  
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 

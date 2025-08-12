@@ -46,7 +46,7 @@ For more information, see [Add and manage dashboards](../../report/dashboards/da
 
 
 
-## Related articles
+## Related content
  
 - [Visibility across teams](visibility-across-teams.md)   
 - [Agile culture and scale](agile-culture.md)   

@@ -42,7 +42,7 @@ Sign up for Azure DevOps with either a Microsoft account or GitHub account.
 > [!div class="nextstepaction"]
 > [Create a project](../organizations/projects/create-project.md)
 
-## Related articles
+## Related content
 
 - [Plan your organizational structure in Azure DevOps](plan-your-azure-devops-org-structure.md)
 - [Change the location of your organization](../organizations/accounts/change-organization-location.md)

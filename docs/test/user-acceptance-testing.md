@@ -80,7 +80,7 @@ The example dashboard is also used for other types of testing, such as continuou
 
 If you don't see the data or information you expect in the dashboard charts, verify that the columns in your data are added to the Tests view. For more information, see [this blog post](https://devblogs.microsoft.com/devops/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
 
-## Related articles
+## Related content
 
 - [Test objects and terms](test-objects-overview.md)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)

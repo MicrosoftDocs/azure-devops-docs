@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/15/2024
+ms.date: 08/07/2025
 #customer intent: As a team member, I want to learn how to query work items in Azure Boards so I can find items based on when they were created, which iteration they belong to, or other factors.
 ---
 
@@ -73,8 +73,8 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** field 
 ::: moniker-end
 
 Notes:
-1. The `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, and `@StartOfYear` macros are supported for Azure DevOps Server 2019.1 and later versions. They're only supported when run from the web portal.
-1. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions and is only supported when run from the web portal.
+1. The `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, and `@StartOfYear` macros are supported for Azure DevOps Server 2020 and later versions. They're only supported when run from the web portal.
+1. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2020 and later versions and is only supported when run from the web portal.
 
 > [!TIP]
 > The `WasEver` operator can be used with the **Iteration Path** field but only when defined through the WIQL syntax. For an example, see [Work Item Query Language (WIQL) syntax reference](wiql-syntax.md).
@@ -92,7 +92,7 @@ You can use the `@CurrentIteration` macro in a query from the following clients:
 - Visual Studio 2019 or later versions connected to Azure Boards
 - The REST API
 
-You can use the `@CurrentIteration +/- n` macro in a query against Azure Boards, Azure DevOps Server 2019, and later versions, and with a REST API that includes the team as a parameter. An example is `@CurrentIteration('[Project]\Team')`.
+You can use the `@CurrentIteration +/- n` macro in a query against Azure Boards, Azure DevOps Server 2020, and later versions, and with a REST API that includes the team as a parameter. An example is `@CurrentIteration('[Project]\Team')`.
 
 An error occurs if you open a query that contains the `@CurrentIteration` macro in earlier versions of Visual Studio, or from Microsoft Excel or Microsoft Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../organizations/notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
 
@@ -240,7 +240,7 @@ If your team follows Scrum processes, you schedule work to be completed in sprin
 The query finds any item assigned to a sprint that corresponds to the current iteration path for the team. For example, if a team is on Sprint 5, the query returns items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query returns items assigned to Sprint 6.
 
 > [!NOTE]
-> For the `@CurrentIteration` macro to work, the team must have selected an iteration path whose date range encompasses the current date. For more information, see [Select team sprints and set the default iteration path](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path). Also, queries that contain this macro are only valid when run from the web portal.
+> For the `@CurrentIteration` macro to work, the team must select an iteration path whose date range encompasses the current date. For more information, see [Select team sprints and set the default iteration path](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path). Also, queries that contain this macro are only valid when run from the web portal.
 >
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) earlier in this article.
 
@@ -251,7 +251,7 @@ Azure Boards adds a team parameter when you select the **@CurrentIteration** or 
 :::image type="content" source="media/query-date-iteration/at-current-with-team-parameter.png" alt-text="Screenshot that shows the Query filter by using the CurrentIteration macro with team parameter.":::
 
 > [!TIP]
-> If the `@CurrentIteration` macro isn't working, check that the expected iteration is selected for your team and that dates have been set for it. For more information, see [Select team sprints](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path).
+> If the `@CurrentIteration` macro isn't working, check that the expected iteration is selected for your team and that dates are set for it. For more information, see [Select team sprints](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path).
 
 To change the team parameter that the system automatically sets, choose it by entering the name of the team in the parameter field added below the **@CurrentIteration** macro.
 
@@ -268,7 +268,7 @@ To change the team parameter that the system automatically sets, choose it by en
 Use the `@CurrentIteration +/- n` macro when you want to track the work a team planned for upcoming sprints and for understanding work that wasn't completed in previous sprints.
 
 > [!NOTE]
-> For the `@CurrentIteration +/- n` macro to work, the team must have selected iteration paths that meet the `+/- n`
+> For the `@CurrentIteration +/- n` macro to work, the team must select iteration paths that meet the `+/- n`
 > criteria. Date ranges must encompass the current date for the `@CurrentIteration`. For more information about team selection of iteration paths, see [Select team sprints and set the default iteration path](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path).
 >
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) earlier in this article.
@@ -277,7 +277,7 @@ The following image shows how to list all User Story and Bug work item types tha
 
 :::image type="content" source="media//query-date-iteration/sliding-window-iterations.png" alt-text="Screenshot that shows CurrentIteration plus and minus clauses.":::
 
-To use this macro, the specified team must [select a set of sprints](../../organizations/settings/set-iteration-paths-sprints.md) that span the `+/- n` value entered for the macro.
+To use this macro, the specified team must [select a set of sprints](../../organizations/settings/set-iteration-paths-sprints.md) that span the `+/- n` value entered for the selected macro.
 
 ::: moniker-end
 
@@ -312,16 +312,12 @@ FROM workitems
 WHERE
     [System.TeamProject] = @project
     AND [System.WorkItemType] IN ('User Story', 'Bug')
-    AND [System.AreaPath] UNDER 'FabrikamFiber\Web'
+    AND [System.AreaPath] UNDER 'Fabrikam Fiber\Web'
     AND NOT [System.State] IN ('Completed', 'Closed', 'Cut', 'Resolved')
-    AND NOT [System.IterationPath] = @currentIteration('[FabrikamFiber]\Web <id:cdf5e823-1179-4503-9fb1-a45e2c1bc6d4>')
-    AND (
-        EVER (
-            [System.IterationPath] = @currentIteration('[FabrikamFiber]\Web <id:cdf5e823-1179-4503-9fb1-a45e2c1bc6d4>')
-        )
-        AND [System.IterationPath] = @currentIteration('[FabrikamFiber]\Web <id:cdf5e823-1179-4503-9fb1-a45e2c1bc6d4>') + 1
-        AND [System.ChangedDate] >= @today - 30
-    )
+    AND NOT [System.IterationPath] = @currentIteration('[Fabrikam Fiber]\Web <id:00aa00aa-bb11-cc22-dd33-44ee44ee44ee>')
+    AND EVER [System.IterationPath] = @currentIteration('[Fabrikam Fiber]\Web <id:00aa00aa-bb11-cc22-dd33-44ee44ee44ee>')
+    AND [System.IterationPath] = @currentIteration('[Fabrikam Fiber]\Web <id:00aa00aa-bb11-cc22-dd33-44ee44ee44ee>') + 1
+    AND [System.ChangedDate] >= @today - 30
 ORDER BY [System.Id]
 ```
 
@@ -529,7 +525,7 @@ Notes:
 
    [!INCLUDE [feature support information](../includes/deprecate-project.md)]
 
-## Related articles
+## Related content
 
 - [Query by assignment or workflow changes](query-by-workflow-changes.md)
 - [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)

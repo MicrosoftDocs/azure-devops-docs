@@ -322,7 +322,7 @@ The following command removes the user contoso@contoso.com from the specified se
 az devops security group membership remove --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3MTY5NTAtOTkzNjA1MTg2LTI1ODQxNTkyOTktMjYzMDUyNzA2OC0xLTQxNDY0Mzc4MzktMzgxMDM2MDM5MS0yNjE0MjU5MzI3LTI5MjI2MTc3OTA --member-id contoso@contoso.com --yes
 ```
 
-## Related articles
+## Related content
 
 - [Manage tokens and namespaces](manage-tokens-namespaces.md)
 - [Security REST API](/rest/api/azure/devops/security/)

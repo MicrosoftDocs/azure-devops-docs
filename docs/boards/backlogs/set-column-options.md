@@ -214,7 +214,7 @@ You can change the column order, column size, or sort options by using the follo
 
 For other keyboard shortcuts, enter **?** to display available shortcuts based on the page you're on. 
 
-## Related articles
+## Related content
 
 ::: moniker range=">= azure-devops-2020"
 

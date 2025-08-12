@@ -423,7 +423,7 @@ private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken
 
 **Solution:** Ensure the service principal is properly added to the organization with required permissions. This error indicates the identity isn't recognized in the organization.
 
-## Related articles
+## Related content
 
 - [Sample applications and code examples](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples)
 - [Service Principal Entitlements API reference](/rest/api/azure/devops/memberentitlementmanagement/service-principal-entitlements?view=azure-devops-rest-7.1&preserve-view=true)

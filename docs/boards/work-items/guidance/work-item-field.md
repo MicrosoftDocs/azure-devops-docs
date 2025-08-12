@@ -1,32 +1,40 @@
 ---
-title: Learn default and system work item field descriptions
+title: Work Item Fields For Agile and Scrum Processes
 titleSuffix: Azure Boards
-description: Learn about all fields used in the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps.
+description: Explore the default and system work item fields used by the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps.
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
-ms.topic: conceptual  
+ms.topic: concept-article 
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 08/19/2024
+ms.date: 07/22/2025
+#customer intent: As an Azure DevOps developer, I want to explore the fields used by the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps, so I can use the fields in my development.
 ---
 
-# Field descriptions for default and work item fields used in process templates
+# Default and work item fields used in process templates
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Use this index to find descriptions of each field used to track work items. This reference covers all fields defined within the core system processes/templates: [Basic](../../get-started/plan-track-work.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you selected when you [created your project](../../../organizations/projects/create-project.md).
+This article provides an index of fields used by the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps. The reference covers all default fields and system work item fields defined within the core system processes and templates:
 
-::: moniker range="azure-devops"  
+- [Basic process](../../get-started/plan-track-work.md)
+- [Agile process](agile-process.md)
+- [Scrum process](scrum-process.md)
+- [Capability Maturity Model Integration (CMMI) process](cmmi-process.md)
 
-To support other tracking needs, [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
+The fields and work item types (WITs) available to you depend on the process you select when you [create your project](../../../organizations/projects/create-project.md).
 
-::: moniker-end  
+::: moniker range="azure-devops"
 
-::: moniker range="<azure-devops"
+To support other tracking needs, [define your own custom work item fields](../../../organizations/settings/work/customize-process.md).
 
-To support other tracking needs, define your own custom work item fields using the Inheritance process model. If your project collection uses the On-premises XML process model, see [Modify or add a custom field](../../../reference/add-modify-field.md).
+::: moniker-end
+::: moniker range="< azure-devops"
+
+To support other tracking needs, define your own custom work item fields by using the Inheritance process model. If your project collection uses the On-premises XML process model, see [Add or modify a field for work tracking](../../../reference/add-modify-field.md).
+
 ::: moniker-end  
 
 > [!NOTE]   
@@ -34,13 +42,16 @@ To support other tracking needs, define your own custom work item fields using t
 
 ## Alphabetical index 
 
-Values in parenthesis indicate the following criteria:
+The alphabetical index of fields uses annotations to denote the following criteria about the fields:
 
-- **System**: Core system field assigned to all work item types for all processes  
-- **Agile**: Used only by the [Agile process](agile-process.md)  
-- **CMMI**: Used only by the [CMMI process](cmmi-process.md)  
-- **Scrum**: Used only by the [Scrum process](scrum-process.md)  
-- **TCM**: Used to support test case management   
+- (System) - Core system field assigned to all work item types for all processes  
+- (Agile) - Used only by the Agile process
+- (CMMI) - Used only by the CMMI process
+- (Scrum) - Used only by the Scrum process
+- (TCM) - Used to support test case management
+- (1) - Available in Azure DevOps Services and Azure DevOps Server 2020 and later versions
+- (2) - Available in Azure DevOps Services only
+- (3) - Not used by the Agile and Scrum processes or Azure Boards and Azure DevOps
 
 :::row:::
    :::column span="1":::
@@ -53,7 +64,7 @@ Values in parenthesis indicate the following criteria:
    - [Activated Date](../../queries/query-by-workflow-changes.md#fields)
    - [Activity](../../queries/query-numeric.md#fields)
    - [Actual Attendee 1-8](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
-   - [Analysis](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
+   - [Analysis](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#issue-tracking-fields) (CMMI)
    - [Application Launch Instructions](guidance-code-review-feedback-field-reference.md#fields)
    - [Application Start Information](guidance-code-review-feedback-field-reference.md#fields) 
    - [Application Type](guidance-code-review-feedback-field-reference.md#fields) 
@@ -65,7 +76,7 @@ Values in parenthesis indicate the following criteria:
    - [Associated Context Owner](guidance-code-review-feedback-field-reference.md#fields)
    - [Associated Context Type](guidance-code-review-feedback-field-reference.md#fields)
    - [Attached File Count](../../queries/linking-attachments.md#fields)
-   - Authorized As (Not used)
+   - Authorized As (3)
    - [Automated Test ID](../../queries/build-test-integration.md#fields) (TCM)
    - [Automated Test Name](../../queries/build-test-integration.md#fields) (TCM) 
    - [Automated Test Storage](../../queries/build-test-integration.md#fields) (TCM)
@@ -91,7 +102,7 @@ Values in parenthesis indicate the following criteria:
    - [Closed Date](../../queries/query-by-workflow-changes.md#fields) (System)
    - [Closed Status](guidance-code-review-feedback-field-reference.md#fields)
    - [Closed Status Code](guidance-code-review-feedback-field-reference.md#fields)
-   - [Closing Comment](guidance-code-review-feedback-field-reference.md#fields)
+   - [Closing Comments](guidance-code-review-feedback-field-reference.md#fields)
    - [Comment Count](../../queries/linking-attachments.md#fields)
    - [Comments](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Committed](../../queries/planning-ranking-priorities.md#fields) (CMMI)
@@ -143,6 +154,7 @@ Values in parenthesis indicate the following criteria:
    - [Link Comment](../../queries/linking-attachments.md#fields) (System)
    - [Link Description](../../queries/linking-attachments.md#fields) (System)
    - [Local Data Source](../../queries/build-test-integration.md#fields) (TCM)
+   - [LocalDataSource](../../queries/build-test-integration.md#fields) (TCM)
    - [Meeting Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Minutes](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI) 
    - [Mitigation Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI) 
@@ -154,7 +166,7 @@ Values in parenthesis indicate the following criteria:
    - [Optional Attendee 1-8](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Original Estimate](../../queries/query-numeric.md#fields)
    - [Parameters](../../queries/build-test-integration.md#fields) (TCM)
-   - [Parent<sup>1</sup>](../../queries/linking-attachments.md#parent)
+   - [Parent](../../queries/linking-attachments.md#parent) (1)
    - [Priority](../../queries/planning-ranking-priorities.md#fields) 
    - [Probability](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    - [Proposed Fix](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI) 
@@ -169,7 +181,7 @@ Values in parenthesis indicate the following criteria:
    - [Reason](../../queries/query-by-workflow-changes.md#fields) (System)
    - [Related Link Count](../../queries/linking-attachments.md#fields) (System)
    - [Remaining Work](../../queries/query-numeric.md#fields) 
-   - [Remote Link Count<sup>2</sup>](../../queries/linking-attachments.md#remote-link-count) (System)
+   - [Remote Link Count](../../queries/linking-attachments.md#remote-link-count) (System) (2)
    - [Repro Steps](../../queries/titles-ids-descriptions.md#fields)
    - [Required Attendee 1-8](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Requirement Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields) (CMMI)
@@ -193,7 +205,7 @@ Values in parenthesis indicate the following criteria:
    - [Stack Rank](../../queries/planning-ranking-priorities.md#fields)
    - [Start Date](../../queries/query-by-date-or-current-iteration.md#fields)
    - [State](../../queries/query-by-workflow-changes.md#fields) (System)
-   - [State Change Date](../../queries/query-by-workflow-changes.md#fields)
+   - [State Changed Date](../../queries/query-by-workflow-changes.md#fields)
    - [State Code](guidance-code-review-feedback-field-reference.md#fields)
    - [Steps](../../queries/build-test-integration.md#fields) (TCM)
    - [Steps to Reproduce](../../queries/titles-ids-descriptions.md#fields) (TCM)
@@ -226,19 +238,15 @@ Values in parenthesis indicate the following criteria:
    :::column-end:::
 :::row-end:::
 
-> [!NOTE]  
-> 1. This field is available from Azure DevOps Services and Azure DevOps Server 2020 and later versions.
-> 2. This field is available for Azure DevOps Services only.
-
-Use system fields or custom fields added to your project collection to enable meaningful cross-project reports and queries. Any nonsystem field referenced in the workflow or forms section of the work item type definition must have a **FIELD** element defined in the **FIELDS** section of the work item type definition XML file. Specify any nonsystem field you want to use for generating queries or reports in the **FIELDS** section. 
+Use system fields or custom fields added to your project collection and enable meaningful cross-project reports and queries. Any nonsystem field referenced in the workflow or forms section of the work item type definition must have a `FIELD` element defined in the `FIELDS` section of the work item type definition XML file. Specify any nonsystem field you want to use for generating queries or reports in the `FIELDS` section. 
 
 ## Field reference articles 
 
-The following articles describe fields that are commonly used by several WITs or are functionally specific to one or a few WITs. For more information, see [Work item field and attributes in Azure Boards](../work-item-fields.md).
+The following articles describe fields that are commonly used by several work item types or are functionally specific to one or a few WITs. For more information, see [Work item fields and attributes in Azure Boards](../work-item-fields.md).
 
 ### Fields common to many work types
 
-- [Titles, IDs, and descriptive fields](../../queries/titles-ids-descriptions.md)
+- [Titles, identifiers (IDs), and descriptive fields](../../queries/titles-ids-descriptions.md)
 - [History and revision changes](../../queries/history-and-auditing.md#fields)
 - [Areas and iterations](../../queries/query-by-area-iteration-path.md#fields)
 - [Assignments and account-specific fields](../../queries/query-by-workflow-changes.md#fields)
@@ -260,29 +268,18 @@ The following articles describe fields that are commonly used by several WITs or
 
 - [Requirements](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields)
 - [Bugs](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields)
-- [Change Requests](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields)
+- [Change requests](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields)
 - [Issues](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields)
-- [Review Meetings](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields)
+- [Review meetings](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields)
 - [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) 
 
-## Related articles
+## Related content
 
-::: moniker range=">= azure-devops-2022"  
+- [List work item fields and attributes](../work-item-fields.md)
+- [Track your work by using managed queries in Azure Boards](../../queries/about-managed-queries.md)
+- [Define a work item query](../../queries/using-queries.md)
+- [Learn about default processes and process templates](choose-process.md)  
 
-- [Learn about work item fields](../work-item-fields.md)
-- [Learn about managed queries](../../queries/about-managed-queries.md)
-- [Define a query](../../queries/using-queries.md) 
-- [Learn about processes and process templates](choose-process.md)  
-  
-::: moniker-end  
-
-::: moniker range="< azure-devops-2022"  
-
-- [Learn about work item fields](../work-item-fields.md)
-- [Learn about managed queries](../../queries/about-managed-queries.md)
-- [Define a query](../../queries/using-queries.md) 
-- [Learn about processes and process templates](choose-process.md)  
-- [Learn about reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference) (On-premises XML process model only)  
-
+::: moniker range="< azure-devops-2022"
+- [Explore the reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference) (On-premises XML process model only)
 ::: moniker-end     
-

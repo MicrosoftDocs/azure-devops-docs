@@ -51,7 +51,7 @@ Start a Test Plans trial and assign any of your users Basic + Test Plans for 30 
 > [!div class="nextstepaction"]
 > [Create a test plan](../../test/create-a-test-plan.md)
 
-## Related articles
+## Related content
 
 - [Navigate Test Plans](../../test/navigate-test-plans.md)
 - [Find answers in Billing FAQs](billing-faq.yml)

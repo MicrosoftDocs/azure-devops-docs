@@ -736,7 +736,7 @@ For more information, see [Full-Text Search Queries and Collation Settings](/azu
 
 ::: moniker-end
 
-## Related articles 
+## Related content 
 
 - [Use the query quick reference](query-index-quick-ref.md)
 - [Learn about managed queries](about-managed-queries.md)
