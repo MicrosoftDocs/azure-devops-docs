@@ -16,8 +16,6 @@ A unique run number or build number identifies each execution of an Azure Pipeli
 
 If you don't specify a build name in YAML pipelines, or you leave the **Name** or **Build number format** field blank in Classic pipelines, each run gets a unique integer as its name. Build names can also use a combination of tokens, variables, and other characters. You can customize run and build numbers by using naming patterns, tokens, and variables.
 
-::: moniker range=">=azure-devops-2020"
-
 ## Build number configuration
 
 In Classic pipelines, you can customize the **Build number format** under **Options** in the pipeline definition. In YAML pipelines, you can customize the run number by using the `name` property at the [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) level of the YAML pipeline definition. The `name` property isn't supported in templates or stages.
@@ -31,8 +29,6 @@ steps:
   - script: echo '$(Build.BuildNumber)'
 ```
 
-::: moniker-end
-
 ## Run number
 
 The default value for an Azure Pipelines run number is `$(Date:yyyyMMdd).$(Rev:r)`. The `$(Rev:r)` is a special variable that works only in the build number field. When a build completes, if nothing else in the build number changed, the `Rev` integer value increases by one.
@@ -43,7 +39,7 @@ If the previous build number was **MyBuild_20230621.1**, the next build number t
 
 `$(Rev:r)` also resets to `1` if you change the version. If your build format is `1.0.$(Rev:r)` and your last build number was **1.0.3**, if you change the version to `1.1.$(Rev:r)`, the next build number is **1.1.1**.
 
-If you specify the following build number format, the second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
+In the following example, the second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
 
 ```yaml
 name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
