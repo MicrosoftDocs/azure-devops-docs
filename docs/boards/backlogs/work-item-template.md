@@ -22,7 +22,7 @@ ms.date: 08/13/2025
 
 Work item templates help you quickly create work items with prepopulated values for your commonly used fields. You can use work item templates to create work items or make bulk updates to several work items. This article describes how you can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. For examples that demonstrate how to use the work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
 
-Work item templates are distinct from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) or these specific articles for default process templates: [Basic](../get-started/plan-track-work.md&tabs=basic-process), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process.md).  
+Work item templates are distinct from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) or these specific articles for default process templates: [Basic](../get-started/plan-track-work.md#tabs=basic-process&view=preserv-true), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process.md).  
 
 ## Prerequisites
 
@@ -55,10 +55,10 @@ The following table shows the support for tasks in the web portal and Visual Stu
       [Capture a work item as a template](#capture-a-work-item-as-a-template)
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
 :::row-end:::
 ---
@@ -68,10 +68,10 @@ The following table shows the support for tasks in the web portal and Visual Stu
       (Define, edit, delete, copy link, create copy, and rename)
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
 :::row-end:::
 ---
@@ -80,10 +80,10 @@ The following table shows the support for tasks in the web portal and Visual Stu
       [Copy the link (URL) of a template](#edit-delete-copy-link-or-create-copy)
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
 :::row-end:::
 ---
@@ -92,10 +92,10 @@ The following table shows the support for tasks in the web portal and Visual Stu
       [Add a work item by using a template](#add-a-work-item-by-using-a-template)
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
 :::row-end:::
 ---
@@ -104,10 +104,10 @@ The following table shows the support for tasks in the web portal and Visual Stu
       [Define a work item template](#create-a-work-item-template)
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
 :::row-end:::
 ---
@@ -116,10 +116,10 @@ The following table shows the support for tasks in the web portal and Visual Stu
       [Apply a template to one or more work items](#apply-a-template-to-new-or-existing-work-items)
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
 :::row-end:::
 ---
@@ -128,7 +128,7 @@ The following table shows the support for tasks in the web portal and Visual Stu
       [Add or remove tags from templates](#add-or-remove-tags-from-templates)
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
    :::column span="1":::
        
@@ -140,7 +140,7 @@ The following table shows the support for tasks in the web portal and Visual Stu
       [Define a template with a hyperlink](#define-an-unplanned-work-item-template-with-a-hyperlink) 
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../media/icons/table-indicator-purple-checkmark.png":::
+      :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png":::
    :::column-end:::
    :::column span="1":::
           
@@ -169,7 +169,7 @@ Azure DevOps assigns a unique GUID identifier to each template captured through 
 
 1. At the right, select :::image type="icon" source="../media/icons/actions-icon.png"::: **More actions** > **Templates** > **Capture**:
 
-   :::image type="content" source="media/templates/wi-templates-capture-bug-vsts-s136.png" border="false" alt-text="Screenshot that shows how to select the capture work item field definitions as a template option from the More actions menu." lightbox="media/templates/wi-templates-capture-bug-vsts-s136.png":::
+   :::image type="content" source="media/templates/wi-templates-capture-bug-vsts-s136.png" alt-text="Screenshot that shows how to select the capture work item field definitions as a template option from the More actions menu." lightbox="media/templates/wi-templates-capture-bug-vsts-s136.png":::
 
 1. In the **Capture Template** dialog, configure the required fields, and any optional fields:
 
@@ -185,12 +185,12 @@ Azure DevOps assigns a unique GUID identifier to each template captured through 
 
 1. Select **Save**, and then select **Copy link** to capture the URL for the template.
 
-Use the URL whenever you want to add a work item of the same type with predefined values. Here are some examples:
+   Use the URL whenever you want to add a work item of the same type with predefined values. Here are some examples:
 
-- Create a work item based on the captured template by pasting the URL link in a browser window.
-- Share the URL with others for their own use when adding work items.
-- Add the URL as a hyperlink to a [project wiki](../../project/wiki/wiki-create-repo.md).
-- Add the URL to a [Markdown widget on a team dashboard](../../report/dashboards/add-markdown-to-dashboard.md#add-the-markdown-widget).
+   - Create a work item based on the captured template by pasting the URL link in a browser window.
+   - Share the URL with others for their own use when adding work items.
+   - Add the URL as a hyperlink to a [project wiki](../../project/wiki/wiki-create-repo.md).
+   - Add the URL to a [Markdown widget on a team dashboard](../../report/dashboards/add-markdown-to-dashboard.md#add-the-markdown-widget).
 
 ### [Visual Studio 2015](#tab/visual-studio/)
 
@@ -252,7 +252,7 @@ Use the following procedure to create a work item template through the web porta
 
 After you have a saved template, you can edit or delete the template, create a sharable link to the template, or create a copy of the template.
 
-From the work item type page, select :::image type="icon" source="../media/icons/actions-icon.png"::: the **More actions** for an existing template and then select a menu option:
+From the work item type page, select :::image type="icon" source="../media/icons/actions-icon.png"::: **More actions** for an existing template and then select a menu option:
 
 :::image type="content" source="media/wi-templates-template-action-menu.png" alt-text="Screenshot of the More actions menu options for a selected template."::: 
 
@@ -280,7 +280,7 @@ You can use Visual Studio with Power Tools to manage your own work item template
 
 - **Cut**, **Copy**, **Paste**, **Rename**, and **Delete** actions: Use these actions on templates and folders with the right-click context menu.
    
-   - To edit multiple templates, use **Shift** + **Select** to choose a range of items. You can use **Ctrl** + **Select** to add individual templates to the selected group. Use the right-click context menu on one of the selected items and select the action to apply. The action affects all selected items.
+- To edit multiple templates, use **Shift** + **Select** to choose a range of items. You can use **Ctrl** + **Select** to add individual templates to the selected group. Use the right-click context menu on one of the selected items and select the action to apply. The action affects all selected items.
 
 ### Define a template  
 
