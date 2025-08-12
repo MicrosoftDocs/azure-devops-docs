@@ -10,34 +10,34 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-You can use the [Azure DevOps REST API](/azure/devops/build/general-settings/update?view=azure-devops-rest-7.1) to automate updating some Azure DevOps pipeline settings at the project level. Not all settings are available via the REST API. For organization-level settings, you'll need to make configuration changes within the Azure  DevOps UI.  
+Use the [Azure DevOps REST API](/azure/devops/build/general-settings/update?view=azure-devops-rest-7.1) to automate updates to some Azure DevOps pipeline settings at the project level. Some settings aren't available through the REST API. For organization-level settings, you'll need to make configuration changes within the Azure  DevOps UI.  
 
 ## Prerequisites
 
 | **Product** | **Requirements**   |
 |---|---|
 | **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To run this script and update Azure DevOps pipeline security settings: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).|
-| **Azure** | - Azure account with access to authenticate via `Connect-AzAccount`.|
+| **Azure** | - Azure account with access to authenticate by using `Connect-AzAccount`.|
 
 
-## Recommended secure-by-default settings
+## Recommended secure by default settings
 
 | Setting                                             | Recommended Value | Rationale                                                                                   |
 |-----------------------------------------------------|-------------------|---------------------------------------------------------------------------------------------|
 | `enforceReferencedRepoScopedToken`                    | True              | Ensures only scoped tokens are used for referenced repos, limiting access scope.           |
-| `disableClassicBuildPipelineCreation`                 | True              | Disables classic build pipelines which lack modern security and auditing features.         |
-| `disableClassicReleasePipelineCreation`               | True              | Disables classic release pipelines in favor of YAML-based alternatives.                    |
+| `disableClassicBuildPipelineCreation`                 | True              | Disables classic build pipelines that lack modern security and auditing features.         |
+| `disableClassicReleasePipelineCreation`               | True              | Disables classic release pipelines in favor of YAML alternatives.                    |
 | `forkProtectionEnabled`                               | True              | Enables protections for builds triggered from forks to prevent secret leakage.             |
 | `buildsEnabledForForks`                               | False             | Disallows builds from forks to avoid executing untrusted code.                             |
 | `enforceJobAuthScopeForForks`                         | True              | Restricts job authorization to the current project for forked builds.                      |
 | `enforceNoAccessToSecretsFromForks`                   | True              | Prevents secrets from being exposed to forked builds.                                      |
-| `isCommentRequiredForPullRequest`                     | True              | Adds a manual gate before running builds on PRs.                                           |
+| `isCommentRequiredForPullRequest`                     | True              | Adds a manual gate before running builds on pull requests.                                           |
 | `requireCommentsForNonTeamMembersOnly`                | True              | Ensures only trusted contributors can trigger builds automatically.                        |
 | `requireCommentsForNonTeamMemberAndNonContributors`   | True              | Adds another layer of protection for external PRs.                                         |
 | `enableShellTasksArgsSanitizing`                      | True              | Prevents command injection in shell tasks.                                                 |
 | `enableShellTasksArgsSanitizingAudit`                 | Optional          | Logs violations without blocking builds; useful for gradual rollout.                       |
 | `disableImpliedYAMLCiTrigger`                         | True              | Prevents unintended CI triggers from YAML changes.                                         |
-| `statusBadgesArePrivate`                              | True              | Keeps pipeline status private to avoid leaking project info.                               |
+| `statusBadgesArePrivate`                              | True              | Keeps pipeline status private to avoid leaking project information.                               |
 | `enforceSettableVar`                                  | True              | Ensures only explicitly allowed variables can be set at runtime.                           |
 | `enforceJobAuthScope`                                 | True              | Restricts job access to only the current project.                                          |
 | `enforceJobAuthScopeForReleases`                      | True              | Same as above, for release pipelines.                                                      |
