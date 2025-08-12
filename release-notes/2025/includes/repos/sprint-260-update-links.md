@@ -6,3 +6,4 @@ ms.topic: include
 ---
 
 - [Improved screen reader support for pull request experience](#improved-screen-reader-support-for-pull-request-experience)
+- [Azure DevOps remote index support in VSCode](#azure-devops-remote-index-support-in-vscode)
