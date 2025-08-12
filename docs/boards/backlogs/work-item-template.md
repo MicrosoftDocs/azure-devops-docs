@@ -22,7 +22,7 @@ ms.date: 08/13/2025
 
 Work item templates help you quickly create work items with prepopulated values for your commonly used fields. You can use work item templates to create work items or make bulk updates to several work items. This article describes how you can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. For examples that demonstrate how to use the work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
 
-Work item templates are distinct from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) or these specific articles for default process templates: [Basic](../get-started/plan-track-work.md#tabs=basic-process&preserve-view=true), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process.md).  
+Work item templates are distinct from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) or these specific articles for default process templates: [Basic](../get-started/plan-track-work.md?tabs=basic-process&preserve-view=true), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process.md).  
 
 ## Prerequisites
 
@@ -37,16 +37,16 @@ The availability of template task options depends on your client and platform co
 
 The following table shows the support for tasks in the web portal and Visual Studio 2015 or earlier versions. If you use the **Task** description links to jump to the corresponding sections, be sure to select the content version (**tab**) in the section for your platform configuration, as appropriate.
 
-| **Task** | **Web portal** | **Visual Studio** |
-|----------|:--------------:|:-----------------:|
-| [Capture a work item as a template](#capture-a-work-item-as-a-template) | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: |
-| [Manage work item templates](#manage-work-item-templates) <br>(Define, edit, delete, copy link, create copy, and rename) | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: |
-| [Copy the link (URL) of a template](#edit-delete-copy-link-or-create-copy) | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: |
-| [Add a work item by using a template](#add-a-work-item-by-using-a-template) | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: |
-| [Define a work item template](#create-a-work-item-template) | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: |
-| [Apply a template to one or more work items](#apply-a-template-to-new-or-existing-work-items) | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: | 
-| [Add or remove tags from templates](#add-or-remove-tags-from-templates) | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: |  |
-| [Define a template with a hyperlink](#define-an-unplanned-work-item-template-with-a-hyperlink) | :::image type="icon" source="../media/icons/table-indicator-purple-check-mark.png"::: |
+| Template task | Web portal | Visual Studio |
+|---------------|:----------:|:-------------:|
+| [Capture a work item as a template](#capture-a-work-item-as-a-template) | ✔️ | ✔️ |
+| [Manage work item templates](#manage-work-item-templates) <br>(Define, edit, delete, copy link, create copy, and rename) | ✔️ | ✔️ |
+| [Copy the link (URL) of a template](#edit-delete-copy-link-or-create-copy) | ✔️ | ✔️ |
+| [Add a work item by using a template](#add-a-work-item-by-using-a-template) | ✔️ | ✔️ |
+| [Define a work item template](#create-a-work-item-template) | ✔️ | ✔️ |
+| [Apply a template to one or more work items](#apply-a-template-to-new-or-existing-work-items) | ✔️ | ✔️ |
+| [Add or remove tags from templates](#add-or-remove-tags-from-templates) | ✔️ |  |
+| [Define a template with a hyperlink](#define-an-unplanned-work-item-template-with-a-hyperlink) | ✔️ |  |
 
 ### Restrictions for using templates
 
