@@ -164,19 +164,13 @@ Don't bypass flagged secrets because doing so can put your company’s security 
 
 If you believe a blocked secret is a false positive or safe to push, you can bypass push protection. Include the string `skip-secret-scanning:true` in your commit message. Even if you bypass push protection, a secret scanning alert is generated in the alert UX once the secret gets pushed.
 
-## Secret validity checks for your repository
+## About validity checks
 
 Secret validity checks help you prioritize alerts by indicating if a detected secret is still usable. For supported secret types, GitHub Advanced Security for Azure DevOps automatically asks the issuing provider whether the credential is active, no separate feature toggle is required once secret scanning is enabled.
 
 ![Screenshot of Advanced Security Secret validation list.](./media/secret-validity-checking-alert-list.png)
 
-#### Before you start
-Ensure:
-- GitHub Advanced Security for Azure DevOps is enabled for the project/repository or Secret protection is enabled if you are in the standalone experience.
-- Secret scanning is turned on (validity checks are an enhancement to secret scanning; they do not run alone).  
-If both are enabled, validity checks begin automatically for supported secret types detected after that point. See the list of supported partner provider patterns: https://learn.microsoft.com/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops#partner-provider-patterns
-
-If a secret type does not support validation, the secret alert view details page will not display any validation status and element, such as the validation status tag `Active` and the Validate Secret button. 
+Having the GitHub Advanced Security for Azure DevOps bundle or Secret protection automatically enables validity checks.
 
 #### What you get
 - Automatic verification for supported partner secret types (no extra setup).
