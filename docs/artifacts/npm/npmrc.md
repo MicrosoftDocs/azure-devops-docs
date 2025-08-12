@@ -270,6 +270,10 @@ The following steps guide you through setting up the project-level configuration
     node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
     ```
 
+    > [!NOTE]
+    > As of July 2024, Azure DevOps Personal Access Tokens (PATs) are [82 characters long](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#changes-to-format). Some tools may insert automatic line breaks when encoding tokens to Base64. To avoid this, use the `-w0` flag with the *base64* command to ensure the output stays on a single line. 
+    > In this tutorial, we use Node’s Buffer method, which produces a single-line *Base64* string by default.
+
 1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user-level *.npmrc* file with the Base64-encoded personal access token you generated in the previous step.
 
 * * *
