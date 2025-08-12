@@ -12,17 +12,17 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines assigns a unique run number, also called a build number, to identify each execution of a pipeline or build. This article explains the structure of these numbers and how you can customize them to be more meaningful for your team.
+A unique run number or build number identifies each execution of an Azure Pipelines pipeline or build. This article explains the structure of this number and how you can customize it to be more useful or meaningful for your team.
 
-If you don't specify a build name in YAML pipelines, or you leave the **Build number format** field blank in Classic pipelines, each run gets a unique integer as its name. Build names can use a combination of tokens, variables, and underscore characters. You can use naming patterns, tokens, and variables to give runs more useful names.
+If you don't specify a build name in YAML pipelines, or you leave the **Name** or **Build number format** field blank in Classic pipelines, each run gets a unique integer as its name. Build names can also use a combination of tokens, variables, and other characters. You can customize run and build numbers by using naming patterns, tokens, and variables.
 
 ::: moniker range=">=azure-devops-2020"
 
-## Customize the name property
+## Build number configuration
 
-In Classic pipelines, you can customize the **Build number format** under **Options** in the pipeline definition. In YAML pipelines, you can customize the run number by using the `name` property at the [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) level. The `name` property isn't supported in templates or stages.
+In Classic pipelines, you can customize the **Build number format** under **Options** in the pipeline definition. In YAML pipelines, you can customize the run number by using the `name` property at the [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) level of the YAML pipeline definition. The `name` property isn't supported in templates or stages.
 
-The following YAML pipeline example sets a custom run number format like **project_def_main_202408281**:
+The following YAML pipeline example sets a custom run number format that produces a name like **MyProject_MyBuild_main_20240828.1**:
 
 ```yaml
 name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
@@ -33,7 +33,7 @@ steps:
 
 ::: moniker-end
 
-## Run numbers
+## Run number
 
 The default value for an Azure Pipelines run number is `$(Date:yyyyMMdd).$(Rev:r)`. The `$(Rev:r)` is a special variable that works only in the build number field. When a build completes, if nothing else in the build number changed, the `Rev` integer value increases by one.
 
@@ -43,10 +43,10 @@ If the previous build number was **MyBuild_20230621.1**, the next build number t
 
 `$(Rev:r)` also resets to `1` if you change the version. If your build format is `1.0.$(Rev:r)` and your last build number was **1.0.3**, if you change the version to `1.1.$(Rev:r)`, the next build number is **1.1.1**.
 
-For example, if you specify the following build number format, the second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
+If you specify the following build number format, the second run on May 6, 2024 is named **Fabrikam_CIBuild_main_20240506.2**.
 
 ```yaml
-$(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd).$(Rev:r)
 ```
 
 The build number tokens resolve as follows:
@@ -63,7 +63,7 @@ The following table shows how run number tokens resolve. You can use these token
 
 | Token | Example value | Notes |
 | ----- | -------------- | ----------- |
-| `$(Build.DefinitionName)` | CIBuild | Can't contain invalid or whitespace characters.|
+| `$(Build.DefinitionName)` | CIBuild | A build name, which can't contain invalid or whitespace characters.|
 | `$(Build.BuildId)` | 752 | An internal, immutable ID, also called the `Run ID`, that's unique in the Azure DevOps organization.|
 | `$(Date:yyyyMMdd)` | 20240506 | A date format. You can also specify other date formats, such as `$(Date:MMddyy)`. |
 | `$(DayOfMonth)` | 6 ||
