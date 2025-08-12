@@ -1,7 +1,7 @@
 ---
 title: Use a script to update security settings
 description: Learn how to use PowerShell scripts to automate Azure DevOps pipeline security settings. Configure project-level settings with secure-by-default recommendations.
-ms.date: 06/11/2025
+ms.date: 08/12/2025
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted
 ---
@@ -10,9 +10,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-You can use a script to update pipelines settings at the project-level. For organization-level settings, you'll need to make configuration changes within the Azure  DevOps UI.
-
-It's possible to automate these security settings using the Azure DevOps REST API. 
+You can use the [Azure DevOps REST API](/azure/devops/build/general-settings/update?view=azure-devops-rest-7.1) to automate updating some Azure DevOps pipeline settings at the project level. Not all settings are available via the REST API. For organization-level settings, you'll need to make configuration changes within the Azure  DevOps UI.  
 
 ## Prerequisites
 
