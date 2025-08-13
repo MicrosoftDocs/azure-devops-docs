@@ -285,11 +285,11 @@ For a list of tool installer tasks, see [Tool tasks](../tasks/reference.md#tool-
 
 ### Example: Test and validate an app on multiple versions of Node.js
 
-The following example sets up a build pipeline to run and validate an app for multiple versions of Node.js.
+The following example sets up a build pipeline to run and validate an app on multiple versions of Node.js.
 
 #### [YAML](#tab/yaml/)
 
-In the following example, the [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script writes the installed version to the command line.
+Create an *azure-pipelines.yml* file in your project's base directory that has the following contents. The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script writes the installed version to the command line.
 .
 
 ```yaml
@@ -298,22 +298,21 @@ steps:
   displayName: Node install
   inputs:
     version: '16.x' # The version to install
-- script: write Node version
+- script: which node
 ```
 
 #### [Classic](#tab/classic/)
 
-1. In the **Agent job** for your Classic pipeline, under **Execution plan**, set **Parallelism** to **Multi-configuration**
+1. In the **Agent job** for your Classic pipeline, under **Execution plan**, set **Parallelism** to **Multi-configuration**.
 1. Under **Multipliers**, enter *NodeVersionSpec*.
 1. Set **Maximum number of agents** to *2*.
 1. Add the following tasks to your pipeline:
-
    - **Node.js tool installer**. Under **Version Spec**, enter *$(NodeVersionSpec)*
    - **Command Line**. Under **Script**, enter *where node* if you're running on a Windows agent, or *which node* if you're running on a macOS or Linux agent.
 1. On the [Variables tab](../build/variables.md), define the variable *NodeVersionSpec* with the value *10.x, 12.x*, and select **Settable at queue time**.
 1. Select **Save & queue**.
 
-The [Node.js tool installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) task downloads each of the Node.js versions if they aren't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
+The [Node.js tool installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) task downloads each Node.js version if they aren't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
 
 ---
 
