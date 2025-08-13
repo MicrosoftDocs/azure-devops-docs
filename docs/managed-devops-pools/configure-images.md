@@ -384,7 +384,7 @@ Choose **Azure Compute Gallery images** to specify an image from any Azure Compu
 > [!IMPORTANT]
 > Managed DevOps Pools supports only [generalized](/azure/virtual-machines/generalize) Azure Compute Gallery images.
 >
-> Managed DevOps Pools doesn't support Azure Compute Gallery images that are created using a paid base image. If you receive an error like **Image Base is not supported, since it's a paid image. Please provide a different image that is free.**, select a different Azure Compute Gallery image that's created using a free base image.
+> Managed DevOps Pools doesn't support Azure Compute Gallery images that are created using a paid base image. If you receive an error like **Image Base is not supported, since it's a paid image. Please provide a different image that is free.**, select a different Azure Compute Gallery image based on a virtual machine that's created using a [free pricing plan](/marketplace/purchase-vm-in-azure-portal#purchase-a-vm-using-the-marketplace-experience) for the base image.
 
 #### [Azure portal](#tab/azure-portal/)
 
