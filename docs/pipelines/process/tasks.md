@@ -1,9 +1,9 @@
 ---
 title: Task types and usage
-description: Learn how to define tasks in your pipeline, set inputs, and control task conditions with Azure DevOps.
+description: Learn about tasks in Azure Pipelines pipeline jobs, including setting inputs and controlling run conditions.
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 08/12/2025
+ms.date: 08/13/2025
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ---
@@ -12,15 +12,15 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes tasks and how to use them in Azure Pipelines. A task is a prepackaged script or procedure that performs an action or uses a set of inputs to define pipeline automation. For more information, see the [steps.task](/azure/devops/pipelines/yaml-schema/steps-task) definition.
+Azure Pipelines jobs consist of steps, which can be tasks or scripts. A task is a prepackaged script or procedure that performs an action or uses a set of inputs to define pipeline automation. This article describes pipeline tasks and how to use them. For more information, see the [steps.task](/azure/devops/pipelines/yaml-schema/steps-task) definition.
 
-Azure DevOps includes many built-in tasks to enable fundamental build and deployment scenarios. For available built-in Azure Pipelines tasks, see the [Azure Pipelines task reference](../tasks/reference.md). You can also create [custom tasks](../../extend/develop/add-build-task.md) or install tasks from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
+Azure Pipelines includes many built-in tasks that enable fundamental build and deployment scenarios. For a list of available built-in Azure Pipelines tasks, see the [Azure Pipelines task reference](../tasks/reference.md). You can also install tasks from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) or create [custom tasks](../../extend/develop/add-build-task.md).
 
-Pipeline jobs consist of steps, which can be tasks or scripts. By default, all steps in a job run in sequence in the same context, whether on the host or in a [job container](container-phases.md). To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [Specify jobs in your pipeline](phases.md). You can also optionally use [step targets](#target) to control context for individual tasks.
+By default, all steps in a job run in sequence in the same context, whether on the host or in a [job container](container-phases.md). You can optionally use [step targets](#target) to control context for individual tasks. To run some tasks in parallel on multiple agents, or without using an agent, see [Specify jobs in your pipeline](phases.md).
 
 ## Task management
 
-Tasks are available and installed at the organization level. You can use only tasks and task versions that exist for your [organization](../../organizations/accounts/organization-management.md).
+Tasks are available and installed at the Azure DevOps [organization](../../organizations/accounts/organization-management.md) level. You can only use tasks and task versions that exist for your organization.
 
 You can disable built-in tasks, Marketplace tasks, or both in **Organization Settings** > **Pipelines** > **Settings** under **Task restrictions**. If you disable both built-in and Marketplace tasks, only tasks you install by using the [Node CLI for Azure DevOps](https://www.npmjs.com/package/tfx-cli) are available.
 
@@ -30,7 +30,7 @@ Disabling Marketplace tasks can help improve pipeline security. Generally, it's 
 
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) offers many extensions you can install to extend the Azure Pipelines task catalog. You can also create custom tasks. For more information, see [Add a custom pipelines task extension](../extend/develop/add-build-task.md).
 
-In YAML pipelines, you refer to tasks by name. If your custom task name matches a built-in or Marketplace task, the built-in or Marketplace task takes precedence. To reference your custom task, you can use the unique task GUID you used to create your custom task. For more information, see [Understand task.json components](../extend/develop/add-build-task.md#understanding-taskjson-components).
+In YAML pipelines, you refer to tasks by name. If your custom task name matches a built-in or Marketplace task, the pipeline uses the built-in or Marketplace task. To avoid this situation, you can reference your custom task by the unique task GUID you assigned when you created the task. For more information, see [Understand task.json components](../extend/develop/add-build-task.md#understanding-taskjson-components).
 
 <a name="taskversions"></a>
 ## Task versions
@@ -53,7 +53,7 @@ If you change the version and have problems with your builds, you can revert the
 
 ---
 
-## Task properties and control options
+## Task options
 
 #### [YAML](#tab/yaml/)
 
@@ -75,9 +75,9 @@ In YAML pipelines, the following properties are available for the `task` compone
   timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
 ```
 
-A task can't determine whether a pipeline job continues after the task finishes, but it can provide a task status such as `succeeded` or `failed`. Downstream tasks can then set a `condition` based on that status to determine whether to run.
-
 ### Conditions
+
+A task can't determine whether to continue the pipeline job after the task finishes, but provides a task status such as `succeeded` or `failed`. Downstream tasks and jobs can then set a `condition` based on that status to determine whether to run.
 
 The [conditions](conditions.md) property specifies conditions under which the task runs. By default, a step runs if nothing in its job failed yet and the step immediately preceding it completed.
 
@@ -101,27 +101,27 @@ steps:
 
 ### Continue on error
 
-The `continueOnError` property tells the task whether to continue running regardless of its outcome. If set to `true`, this property tells the task to ignore any `failed` status and continue running. Downstream steps and jobs treat the task result as `success` for the purpose of making their run decisions.
+The `continueOnError` property tells the task whether to continue running and report success regardless of its outcome. If set to `true`, this property tells the task to ignore a `failed` status and continue running. Downstream steps and jobs treat the task result as `success` when they make their run decisions.
 
 ### Retry count on task failure
 
-Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero retries.
+The `retryCountOnTaskFailure` property specifies the number of times to retry if the task fails. The default is zero retries.
 
 - The maximum number of retries allowed is 10.
 - The wait time before retry increases after each failed attempt, following an exponential backoff strategy. The first retry happens after 1 second, the second retry after 4 seconds, and the tenth retry after 100 seconds.
-- There's no assumption about the idempotency of the task. If the task had side effects, such as partially creating an external resource, it might fail the second time it runs.
-- No information about the retry count is made available to the task.
+- Retrying the task doesn't provide idempotency. Side effects of the first try, such as partially creating an external resource, could cause retries to fail.
+- No information about the number of retries is made available to the task.
 - Task failure adds a warning to the task logs indicating that it failed before retrying the task.
 - All retry attempts show in the UI as part of the same task node.
 
 >[!NOTE]
->The `retryCountOnTaskFailure` property requires agent version 2.194.0 or later. On Azure DevOps Server 2022, retries aren't supported for [agentless tasks](./phases.md#agentless-jobs-supported-tasks). For more information, see [Azure DevOps service update November 16, 2021 - Automatic retries for a task](/azure/devops/release-notes/2021/sprint-195-update#automatic-retries-for-a-task), and [Azure DevOps service update June 14, 2025 - Retries for server tasks](/azure/devops/release-notes/2024/sprint-240-update#retries-for-server-tasks).
+>The `retryCountOnTaskFailure` property requires agent version 2.194.0 or later. On Azure DevOps Server 2022, retries aren't supported for [agentless tasks](./phases.md#agentless-jobs-supported-tasks). For more information, see [Azure DevOps service update November 16, 2021 - Automatic retries for a task](/azure/devops/release-notes/2021/sprint-195-update#automatic-retries-for-a-task) and [Azure DevOps service update June 14, 2025 - Retries for server tasks](/azure/devops/release-notes/2024/sprint-240-update#retries-for-server-tasks).
 
 :::moniker range="> azure-devops-2020"
 
 ### Target
 
-Tasks run in an execution context, which is either the agent host or a container. An individual step can override its context by specifying a `target`. Available options are `host` to target the agent host, and any containers defined in the pipeline. In the following example, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
+Tasks run in an execution context, which is either the agent host or a container. A task can override its context by specifying a `target`. Available options are `host` to target the agent host, and any containers defined in the pipeline. In the following example, `SampleTask@1` runs on the host and `AnotherTask@1` runs in a container.
 
 ```yaml
 resources:
@@ -143,19 +143,19 @@ steps:
 The timeout period begins when the task starts running, and doesn't include the time the task is queued or is waiting for an agent.
 
 > [!NOTE]
-> Pipelines may specify a job level timeout in addition to a task level timeout. If the job level timeout interval elapses before your task completes, the running job terminates, even if the step is configured with a longer timeout interval. For more information, see [Timeouts](phases.md#timeouts).
+> Pipelines may specify a job level timeout in addition to a task level timeout. If the job level timeout interval elapses before a task completes, the running job terminates, even if the task is configured with a longer timeout interval. For more information, see [Timeouts](phases.md#timeouts).
 
 #### [Classic](#tab/classic/)
 
 <a name="controloptions"></a>
-In Classic pipelines, each task offers you the following **Control Options**:
+In Classic pipelines, each task offers the following **Control Options**:
 
 ### Enabled
 
-Clear the **Enabled** check box to disable a task. Disabling the task is useful when you want to temporarily take the task out of the process for testing or for specific deployments.
+Clear the **Enabled** check box to disable a task. Disabling the task is useful to temporarily take the task out of the process for testing or for specific deployments.
 
 > [!TIP]
-> You can also right-click the task in the left pane and select **Disable/Enable selected task(s)** to toggle this setting. Disabled tasks appear with a strikeout through them.
+> You can also right-click the task in the left pane and select **Disable/Enable selected task(s)** to toggle this setting.
 
 #### Continue on error
 
@@ -166,14 +166,14 @@ Select this option if you want this task to report success even if it fails, pos
 Specify the number of retries if this task fails. The default is zero.
 
 - The failing task retries in seconds. The wait time before retry increases after each failed attempt.
-- There's no assumption about the idempotency of the task. If the task had side effects, such as partially creating an external resource, it might fail the second time it runs.
+- Retrying the task doesn't provide idempotency. Side effects of the first try, such as partially creating an external resource, could cause retries to fail.
 - No information about the retry count is made available to the task.
 - Task failure adds a warning to the task logs indicating that it failed before retrying the task.
 - All retry attempts show in the UI as part of the same task node.
 
 ### Timeout
 
-The timeout for this task in minutes. The default is `0`, or infinite timeout. Setting a value other than zero overrides the setting for the parent task job. The timeout period begins when the task starts running, and doesn't include the time the task is queued or is waiting for an agent.
+The maximum time in minutes that a job can run before being automatically canceled. The default is `0`, or infinite time. Setting a value other than zero overrides the setting for the parent task job. The timeout period begins when the task starts running, and doesn't include the time the task is queued or is waiting for an agent.
 
 ### Run this task
 
