@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 Azure Pipelines jobs consist of steps, which can be tasks or scripts. A task is a prepackaged script or procedure that performs an action or uses a set of inputs to define pipeline automation. This article describes pipeline tasks and how to use them. For more information, see the [steps.task](/azure/devops/pipelines/yaml-schema/steps-task) definition.
 
-Azure Pipelines includes many built-in tasks that enable fundamental build and deployment scenarios. For a list of available built-in Azure Pipelines tasks, see the [Azure Pipelines task reference](../tasks/reference.md). You can also install tasks from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) or create [custom tasks](../../extend/develop/add-build-task.md).
+Azure Pipelines includes many built-in tasks that enable fundamental build and deployment scenarios. For a list of available built-in Azure Pipelines tasks, see the [Azure Pipelines task reference](https://github.com/MicrosoftDocs/azure-devops-yaml-schema-pr/blob/live/task-reference/index.md). You can also install tasks from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) or create [custom tasks](../../extend/develop/add-build-task.md).
 
 By default, all steps in a job run in sequence in the same context, whether on the host or in a [job container](container-phases.md). You can optionally use [step targets](#target) to control context for individual tasks. To run some tasks in parallel on multiple agents, or without using an agent, see [Specify jobs in your pipeline](phases.md).
 
@@ -24,20 +24,20 @@ Tasks are available and installed at the Azure DevOps [organization](../../organ
 
 You can disable built-in tasks, Marketplace tasks, or both in **Organization Settings** > **Pipelines** > **Settings** under **Task restrictions**. If you disable both built-in and Marketplace tasks, only tasks you install by using the [Node CLI for Azure DevOps](https://www.npmjs.com/package/tfx-cli) are available.
 
-Disabling Marketplace tasks can help improve pipeline security. Generally, it's not recommended to disable built-in tasks. For more information, see [Control available tasks](../security/misc.md#control-available-tasks).
+Disabling Marketplace tasks can help improve pipeline security. Under most circumstances, you shouldn't disable built-in tasks. For more information, see [Control available tasks](../security/misc.md#control-available-tasks).
 
 ## Custom tasks
 
-The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) offers many extensions you can install to extend the Azure Pipelines task catalog. You can also create custom tasks. For more information, see [Add a custom pipelines task extension](../extend/develop/add-build-task.md).
+The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) offers many extensions you can install to extend the Azure Pipelines task catalog. You can also create custom tasks. For more information, see [Add a custom pipelines task extension](../../extend/develop/add-build-task.md).
 
-In YAML pipelines, you refer to tasks by name. If your custom task name matches a built-in or Marketplace task, the pipeline uses the built-in or Marketplace task. To avoid this situation, you can reference your custom task by the unique task GUID you assigned when you created the task. For more information, see [Understand task.json components](../extend/develop/add-build-task.md#understanding-taskjson-components).
+In YAML pipelines, you refer to tasks by name. If your custom task name matches a built-in or Marketplace task, the pipeline uses the built-in or Marketplace task. To avoid this situation, you can reference your custom task by the unique task GUID you assigned when you created the task. For more information, see [Understand task.json components](../../extend/develop/add-build-task.md#understanding-taskjson-components).
 
 <a name="taskversions"></a>
 ## Task versions
 
 Tasks are versioned, and you must specify the major version of the tasks you use in your pipeline. Specifying the version helps prevent issues when new versions of a task are released.
 
-Pipelines automatically update to use new minor task versions, such as 1.2 to 1.3. Task versions are typically backwards compatible, but in some scenarios you might encounter unpredictable errors when a task automatically updates.
+Pipelines automatically update to use new minor task versions, such as 1.2 to 1.3. Minor task versions are typically backwards compatible, but in some scenarios you might encounter unpredictable errors when a task automatically updates.
 
 If a new task major version such as 2.0 releases, your pipeline continues to use the major version you specified until you edit the pipeline to manually change to the new major version. Build logs provide alerts when new major versions are available. You can only use task versions that exist for your [organization](../../organizations/accounts/organization-management.md).
 
@@ -57,35 +57,33 @@ If you change the version and have problems with your builds, you can revert the
 
 #### [YAML](#tab/yaml/)
 
-In YAML pipelines, the following properties are available for the `task` component. For more information, see the [steps.task](/azure/devops/pipelines/yaml-schema/steps-task) definition.
+The following properties are available for YAML pipeline `task` steps. For more information, see the [steps.task](/azure/devops/pipelines/yaml-schema/steps-task) definition.
 
-```yaml
-- task: string # Required as first property. Name of the task to run.
-  inputs: # Inputs for the task.
-    string: string # Name/value pairs
-  condition: string # Evaluate this condition expression to determine whether to run this task.
-  continueOnError: boolean # Continue running even on failure?
-  displayName: string # Human-readable name for the task.
-  enabled: boolean # Run this task when the job runs?
-  env: # Variables to map into the process's environment.
-    string: string # Name/value pairs
-  name: string # ID of the step.
-  retryCountOnTaskFailure: string # Number of retries if the task fails.
-  target: string | target # Environment in which to run this task.
-  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
-```
+|Property|Type|Description|
+|--------|----|-----------|
+|`task`|string|Required as first property. Name of the task to run.|
+|`inputs`|string|Inputs for the task, using name/value pairs.|
+|`condition`|string|Conditions under which the task runs.|
+|`continueOnError`|boolean|Whether to continue running even on failure.|
+|`displayName`|string|Human-readable name for the task.|
+|`enabled`|boolean|Whether to run this task when the job runs.|
+|`env`|string|Variables to map into the process's environment, using name/value pairs.|
+|`name`|string|ID of the step.|
+|`retryCountOnTaskFailure`|string|Number of retries if the task fails.|
+|`target`|string|Environment to run this task in.|
+|`timeoutInMinutes`|string|The maximum time the task can run before being automatically canceled.|
 
 ### Conditions
 
-A task can't determine whether to continue the pipeline job after the task finishes, but provides a task status such as `succeeded` or `failed`. Downstream tasks and jobs can then set a `condition` based on that status to determine whether to run.
+A task can't determine whether to continue the pipeline job after the task finishes, only provide an ending status such as `succeeded` or `failed`. Downstream tasks and jobs can then set a `condition` based on that status to determine whether to run.
 
-The [conditions](conditions.md) property specifies conditions under which the task runs. By default, a step runs if nothing in its job failed yet and the step immediately preceding it completed.
+The [conditions](conditions.md) property specifies conditions under which this task runs. By default, a step runs if nothing in its job failed yet and the step immediately preceding it completed.
 
 You can override or customize these defaults by setting the step to run even if or only if a previous dependency fails or has another outcome. You can also define [custom conditions](conditions.md#custom-conditions), which are composed of [expressions](expressions.md).
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 
-In the following YAML example, `PublishTestResults@2` runs even if the previous step fails because of its [succeededOrFailed() condition](expressions.md#succeededorfailed).
+In the following YAML example, `PublishTestResults@2` runs even if the previous step failed, because of its [succeededOrFailed](expressions.md#succeededorfailed) condition.
 
 ```yaml
 steps:
@@ -101,11 +99,15 @@ steps:
 
 ### Continue on error
 
-The `continueOnError` property tells the task whether to continue running and report success regardless of its outcome. If set to `true`, this property tells the task to ignore a `failed` status and continue running. Downstream steps and jobs treat the task result as `success` when they make their run decisions.
+The `continueOnError` property tells the task whether to continue running and report success regardless of failures. If set to `true`, this property tells the task to ignore a `failed` status and continue running. Downstream steps and jobs treat the task result as `success` when they make their run decisions.
+
+## Enabled
+
+By default, the task runs whenever the job runs. You can set `enabled` to `false` to disable the task. Temporarily disabling the task is useful to remove the task from the process for testing purposes or for specific deployments.
 
 ### Retry count on task failure
 
-The `retryCountOnTaskFailure` property specifies the number of times to retry if the task fails. The default is zero retries.
+The `retryCountOnTaskFailure` property specifies the number of times to retry the task if it fails. The default is zero retries.
 
 - The maximum number of retries allowed is 10.
 - The wait time before retry increases after each failed attempt, following an exponential backoff strategy. The first retry happens after 1 second, the second retry after 4 seconds, and the tenth retry after 100 seconds.
@@ -119,6 +121,7 @@ The `retryCountOnTaskFailure` property specifies the number of times to retry if
 
 :::moniker range="> azure-devops-2020"
 
+<a name="step-target"></a>
 ### Target
 
 Tasks run in an execution context, which is either the agent host or a container. A task can override its context by specifying a `target`. Available options are `host` to target the agent host, and any containers defined in the pipeline. In the following example, `SampleTask@1` runs on the host and `AnotherTask@1` runs in a container.
@@ -148,11 +151,13 @@ The timeout period begins when the task starts running, and doesn't include the 
 #### [Classic](#tab/classic/)
 
 <a name="controloptions"></a>
-In Classic pipelines, each task offers the following **Control Options**:
+In Classic pipelines, tasks offer several **Control Options**.
+
+:::image type="content" source="media/tasks/task-control-options.png" alt-text="Screenshot that shows the expanded Control Options for a Classic pipeline task.":::
 
 ### Enabled
 
-Clear the **Enabled** check box to disable a task. Disabling the task is useful to temporarily take the task out of the process for testing or for specific deployments.
+Clear the **Enabled** check box to disable a task. Temporarily disabling the task is useful to remove the task from the process for testing purposes or for specific deployments.
 
 > [!TIP]
 > You can also right-click the task in the left pane and select **Disable/Enable selected task(s)** to toggle this setting.
@@ -173,17 +178,17 @@ Specify the number of retries if this task fails. The default is zero.
 
 ### Timeout
 
-The maximum time in minutes that a job can run before being automatically canceled. The default is `0`, or infinite time. Setting a value other than zero overrides the setting for the parent task job. The timeout period begins when the task starts running, and doesn't include the time the task is queued or is waiting for an agent.
+The maximum time in minutes that the task can run before being automatically canceled. The default is `0`, or infinite time. Setting a value other than zero overrides the setting for the parent task job. The timeout period begins when the task starts running, and doesn't include the time the task is queued or is waiting for an agent.
 
 ### Run this task
 
-Select the condition for running this task:
+Select one of the following condition for running this task:
 
-- Only when all previous tasks have succeeded
-- Even if a previous task has failed, unless the build was canceled
-- Even if a previous task has failed, even if the build was canceled
-- Only when a previous task has failed
-- Custom conditions, and then specify the [custom condition](conditions.md#custom-conditions).
+- **Only when all previous tasks have succeeded**. This condition is the default.
+- **Even if a previous task has failed, unless the build was canceled**
+- **Even if a previous task has failed, even if the build was canceled**
+- **Only when a previous task has failed**
+- **Custom conditions**, and then enter a [Custom condition](conditions.md#custom-conditions) specifying an expression for when this task should run.
 
 > [!NOTE]
 > If you choose to run tasks even when the build is canceled, make sure to specify sufficient time for these tasks to run in the [timeout options](../process/phases.md#timeouts).
@@ -192,96 +197,59 @@ Select the condition for running this task:
 
 ## Environment variables
 
+You can use environment variables to map system or user-defined information into the task process.
+
 #### [YAML](#tab/yaml/)
 
-Each task can specify an `env` property, which is a list of string pairs that represent environment variables mapped into the task process.
-
-:::moniker range="azure-devops"
+A YAML pipeline task can specify an `env` property, which lists name/value string pairs representing environment variables.
 
 ```yml
 - task: AzureCLI@2
-  displayName: Azure CLI
-  inputs: # Specific to each task
   env:
     ENV_VARIABLE_NAME: value
     ENV_VARIABLE_NAME2: value
   ...
 ```
 
-Steps can be scripts or tasks. The following example runs a `script` step that assigns a value to the `AZURE_DEVOPS_EXT_PAT` environment variable, which authenticates with Azure DevOps CLI.
+You can set environment variables by using `script` steps, or by using scripts in command line, Bash, or PowerShell tasks.
+
+The following example runs a `script` step that assigns a value to the `ENV_VARIABLE_NAME` environment variable and echoes the value.
 
 ```yml
-- script: az pipelines variable-group list --output table
+- script: echo "This is " $ENV_VARIABLE_NAME1
   env:
-    AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
-  displayName: 'List variable groups using the script step'
+    ENV_VARIABLE_NAME: value
+  displayName: 'echo environment variable'
 ```
 
-The preceding script is functionally the same as running a [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2). The following example uses the task syntax.
-
-```yaml
-- task: CmdLine@2
-  inputs:
-    script: az pipelines variable-group list --output table
-  env:
-    AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
-  displayName: 'List variable groups using the command line task'
-
-```
-
-::: moniker range="< azure-devops"
-
-Each task can specify an `env` property, which is a list of string pairs that represent environment variables mapped into the task process.
+The preceding script is functionally the same as running a [Bash@3](/azure/devops/pipelines/tasks/reference/bash-v3) task with a `script` input. The following example uses the task syntax.
 
 ```yml
 - task: Bash@3
   inputs:
-     targetType: # specific to each task
-  env:
-    ENV_VARIABLE_NAME: value
-    ENV_VARIABLE_NAME2: value
-  ...
-```
-
-Steps can be scripts or tasks. The following example runs a `script` step that assigns a value to the `ENV_VARIABLE_NAME` environment variable and echoes the value.
-
-```yml
-- script: echo "This is " $ENV_VARIABLE_NAME
-  env:
-    ENV_VARIABLE_NAME: "my value"
-  displayName: 'echo environment variable'
-```
-
-The preceding script is functionally the same as running a [Bash@3](/azure/devops/pipelines/tasks/reference/bash-v3) task. The following example uses the task syntax.
-
-```yml
-- task: Bash@2
-  inputs:
     script: echo "This is " $ENV_VARIABLE_NAME
   env:
-    ENV_VARIABLE_NAME: "my value"
+    ENV_VARIABLE_NAME: value
   displayName: 'echo environment variable'
 ```
-
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
-In Classic pipelines, you can work with environment variables by using the **Output variables** section of the task editor.
+In Classic pipelines, you can add and edit environment variables in the **Environment Variables** section of the task editor.
 
-:::image type="content" source="media/tasks/task-environment-variables.png" alt-text="Task environment variables.":::
+:::image type="content" source="media/tasks/task-environment-variables.png" alt-text="Screenshot that shows task Environment Variables.":::
 
 ---
 
 <a name="tool-installers"></a>
 ## Build tool installer tasks
 
-Tool installer tasks enable your build pipeline to install and control your dependencies. You can use tool installer tasks to:
+Build tool installer tasks enable your build pipeline to install and control dependencies. You can use build tool installer tasks to:
 
-- Install a tool or runtime for your continuous integration (CI) build, even on [Microsoft-hosted agents](../agents/hosted.md).
+- Install a tool or runtime for a build, even on [Microsoft-hosted agents](../agents/hosted.md).
 - Validate your app or library against multiple versions of a dependency such as Node.js.
 
-For a list of tool installer tasks, see [Tool tasks](../tasks/reference.md#tool-tasks).
+For a list of tool installer tasks, see [Tool tasks](https://github.com/MicrosoftDocs/azure-devops-yaml-schema-pr/blob/live/task-reference/index.md#tool-tasks).
 
 ### Example: Test and validate an app on multiple versions of Node.js
 
@@ -289,7 +257,7 @@ The following example sets up a build pipeline to run and validate an app on mul
 
 #### [YAML](#tab/yaml/)
 
-Create an *azure-pipelines.yml* file in your project's base directory that has the following contents. The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script writes the installed version to the command line.
+Create an *azure-pipelines.yml* file with the following contents in your project's base directory. The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script writes the installed version to the command line.
 .
 
 ```yaml
@@ -298,7 +266,8 @@ steps:
   displayName: Node install
   inputs:
     version: '16.x' # The version to install
-- script: which node
+- script: # Enter where node for a Windows agent or which node for a macOS or Linux agent
+
 ```
 
 #### [Classic](#tab/classic/)
@@ -316,10 +285,10 @@ The [Node.js tool installer](/azure/devops/pipelines/tasks/reference/node-tool-v
 
 ---
 
-## Related articles
+## Related content
 
 - [Jobs](phases.md)
 - [Task groups](../library/task-groups.md)
-- [Azure Pipelines task reference](../tasks/reference.md)
+- [Azure Pipelines task reference](https://github.com/MicrosoftDocs/azure-devops-yaml-schema-pr/blob/live/task-reference/index.md)
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
