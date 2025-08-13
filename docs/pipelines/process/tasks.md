@@ -1,114 +1,63 @@
 ---
-title: Task types & usage
+title: Task types and usage
 description: Learn how to define tasks in your pipeline, set inputs, and control task conditions with Azure DevOps.
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 02/21/2024
+ms.date: 08/12/2025
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ---
 
-# Task types & usage
+# Task types and usage
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-A **task** performs an action in a pipeline and is a packaged script or procedure that's
-abstracted with a set of inputs. Tasks are the building blocks for defining automation in a pipeline. 
+This article describes tasks and how to use them in Azure Pipelines. A task is a prepackaged script or procedure that performs an action or uses a set of inputs to define pipeline automation. For more information, see the [steps.task](/azure/devops/pipelines/yaml-schema/steps-task) definition.
 
-::: moniker range="<=azure-devops"
+Azure DevOps includes many built-in tasks to enable fundamental build and deployment scenarios. For available built-in Azure Pipelines tasks, see the [Azure Pipelines task reference](../tasks/reference.md). You can also create [custom tasks](../../extend/develop/add-build-task.md) or install tasks from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
-When you run a [job](phases.md), all the tasks are run in sequence, one after the other.
-To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
+Pipeline jobs consist of steps, which can be tasks or scripts. By default, all steps in a job run in sequence in the same context, whether on the host or in a [job container](container-phases.md). To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [Specify jobs in your pipeline](phases.md). You can also optionally use [step targets](#target) to control context for individual tasks.
 
-By default, all tasks run in the same context, whether that's on the [host](phases.md) or in a [job container](container-phases.md).
+## Task management
 
-You might optionally use [step targets](#step-target) to control context for an individual task.
+Tasks are available and installed at the organization level. You can use only tasks and task versions that exist for your [organization](../../organizations/accounts/organization-management.md).
 
-Learn more about how to specify properties for a task with the [built-in tasks](../tasks/index.md). 
-::: moniker-end
+You can disable built-in tasks, Marketplace tasks, or both in **Organization Settings** > **Pipelines** > **Settings** under **Task restrictions**. If you disable both built-in and Marketplace tasks, only tasks you install by using the [Node CLI for Azure DevOps](https://www.npmjs.com/package/tfx-cli) are available.
 
-To learn more about the general attributes supported by tasks, see the [YAML Reference for *steps.task*](/azure/devops/pipelines/yaml-schema/steps-task).
+Disabling Marketplace tasks can help improve pipeline security. Generally, it's not recommended to disable built-in tasks. For more information, see [Control available tasks](../security/misc.md#control-available-tasks).
 
 ## Custom tasks
 
-Azure DevOps includes [built-in tasks](../tasks/index.md) 
-to enable fundamental build and deployment scenarios. You also can [create your own custom task](../../extend/develop/add-build-task.md).
+The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) offers many extensions you can install to extend the Azure Pipelines task catalog. You can also create custom tasks. For more information, see [Add a custom pipelines task extension](../extend/develop/add-build-task.md).
 
-In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
-offers many extensions; each of which, when installed to your
-subscription or collection, extends the task catalog with one or more tasks.
-You can also write your own [custom extensions](../../integrate/index.md)
-to add tasks to Azure Pipelines.
-
-::: moniker range="<=azure-devops"
-
-In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
-and a custom task, the in-box task takes precedence. You can use the task GUID or a fully qualified
-name for the custom task to avoid this risk:
-
-```yaml
-steps:
-- task: myPublisherId.myExtensionId.myContributionId.myTaskName@1 #format example
-- task: qetza.replacetokens.replacetokens-task.replacetokens@3 #working example
-```
-
-To find `myPublisherId` and `myExtensionId`, select **Get** on a task in the marketplace. The values after the `itemName` in your URL string are `myPublisherId` and `myExtensionId`. You can also find the fully qualified name by adding the task to a [Release pipeline](../release/releases.md) and selecting **View YAML** when editing the task. 
-
-::: moniker-end
+In YAML pipelines, you refer to tasks by name. If your custom task name matches a built-in or Marketplace task, the built-in or Marketplace task takes precedence. To reference your custom task, you can use the unique task GUID you used to create your custom task. For more information, see [Understand task.json components](../extend/develop/add-build-task.md#understanding-taskjson-components).
 
 <a name="taskversions"></a>
 ## Task versions
 
-Tasks are versioned, and you must specify the major version of the task used in your
-pipeline. This can help to prevent issues when new versions of a task are released.
-Tasks are typically backwards compatible, but in some scenarios you may
-encounter unpredictable errors when a task is automatically updated.
+Tasks are versioned, and you must specify the major version of the tasks you use in your pipeline. Specifying the version helps prevent issues when new versions of a task are released.
 
-When a new minor version is released (for example, 1.2 to 1.3), your pipeline
-automatically uses the new version. However, if a new major version is released
-(for example 2.0), your pipeline continues to use the major version you specified
-until you edit the pipeline and manually change to the new major version.
-The log will include an alert that a new major version is available.
+Pipelines automatically update to use new minor task versions, such as 1.2 to 1.3. Task versions are typically backwards compatible, but in some scenarios you might encounter unpredictable errors when a task automatically updates.
 
-You can set which minor version gets used by specifying the full version number of a task after the `@` sign (example: `GoTool@0.3.1`). You can only use task versions that exist for your [organization](../../organizations/accounts/organization-management.md). 
+If a new task major version such as 2.0 releases, your pipeline continues to use the major version you specified until you edit the pipeline to manually change to the new major version. Build logs provide alerts when new major versions are available. You can only use task versions that exist for your [organization](../../organizations/accounts/organization-management.md).
 
 #### [YAML](#tab/yaml/)
-::: moniker range="<=azure-devops"
 
-In YAML, you specify the major version using `@` in the task name.
-For example, to pin to version 2 of the `PublishTestResults` task:
-
-```yaml
-steps:
-- task: PublishTestResults@2
-```
-
-::: moniker-end
+In YAML, you specify the major version by using `@` in the task name. For example, to use version 2 of the `PublishTestResults` task, specify `PublishTestResults@2`. You can specify which minor version to use by providing the full task version number after the `@`, such as `GoTool@0.3.1`.
 
 #### [Classic](#tab/classic/)
-Each task in a pipeline has a **Version** selector to let you choose the version you want.
 
-If you select a preview version (such as **1.\* Preview**), the
-version is still under development and might have issues.
+In Classic pipelines, each task has a **Version** selector to let you choose the version you want. Consider cloning the pipeline and testing the cloned pipeline with a new major task version. If you select a preview version such as **1.\* Preview**, the version is still under development and might have issues.
 
-If you change the version and have problems with your builds, you can revert the pipeline change from the **History** tab.
-The ability to restore to an older version of a release pipeline isn't currently available. You must manually revert the changes to the release pipeline, then save the pipeline.
+If you change the version and have problems with your builds, you can revert the pipeline change from the **History** tab. For release pipelines, the ability to restore to an older version isn't available. You must manually revert the changes to the release pipeline, then save the pipeline.
 
-Consider cloning the pipeline and testing the cloned pipeline with the new major task version.
+---
 
-* * *
-
-<a name="controloptions"></a>
-
-## Task control options
-
-Each task offers you some **Control Options**.
+## Task properties and control options
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=" azure-devops-2020"
-
-Control options are available as keys on the `task` section.
+In YAML pipelines, the following properties are available for the `task` component. For more information, see the [steps.task](/azure/devops/pipelines/yaml-schema/steps-task) definition.
 
 ```yaml
 - task: string # Required as first property. Name of the task to run.
@@ -117,52 +66,26 @@ Control options are available as keys on the `task` section.
   condition: string # Evaluate this condition expression to determine whether to run this task.
   continueOnError: boolean # Continue running even on failure?
   displayName: string # Human-readable name for the task.
-  target: string | target # Environment in which to run this task.
   enabled: boolean # Run this task when the job runs?
   env: # Variables to map into the process's environment.
     string: string # Name/value pairs
   name: string # ID of the step.
-  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
-```
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
-
-Control options are available as keys on the `task` section.
-
-```yaml
-- task: string # Required as first property. Name of the task to run.
-  inputs: # Inputs for the task.
-    string: string # Name/value pairs
-  condition: string # Evaluate this condition expression to determine whether to run this task.
-  continueOnError: boolean # Continue running even on failure?
-  displayName: string # Human-readable name for the task.
-  target: string | target # Environment in which to run this task.
-  enabled: boolean # Run this task when the job runs?
-  env: # Variables to map into the process's environment.
-    string: string # Name/value pairs
-  name: string # ID of the step.
-  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
   retryCountOnTaskFailure: string # Number of retries if the task fails.
+  target: string | target # Environment in which to run this task.
+  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
 ```
 
-::: moniker-end
+A task can't determine whether a pipeline job continues after the task finishes, but it can provide a task status such as `succeeded` or `failed`. Downstream tasks can then set a `condition` based on that status to determine whether to run.
 
-:::moniker range="<=azure-devops"
+### Conditions
 
-> [!NOTE]
-> A given task or job can't unilaterally decide whether the job/stage continues. What it can do is offer a status of **succeeded** or **failed**, and downstream tasks/jobs each have a condition computation that lets them decide whether to run or not. The default condition which is effectively "run if we're in a successful state".
-> 
-> **Continue on error** alters this in a subtle way. It effectively "tricks" all downstream steps/jobs into treating any result as "success" for the purposes of making that decision. Or to put it another way, it says "don't consider the failure of this task when you're making a decision about the condition of the containing structure".
+The [conditions](conditions.md) property specifies conditions under which the task runs. By default, a step runs if nothing in its job failed yet and the step immediately preceding it completed.
 
-The timeout period begins when the task starts running. It doesn't include the
-time the task is queued or is waiting for an agent.
+You can override or customize these defaults by setting the step to run even if or only if a previous dependency fails or has another outcome. You can also define [custom conditions](conditions.md#custom-conditions), which are composed of [expressions](expressions.md).
 
-> [!NOTE]
-> Pipelines may have a job level timeout specified in addition to a task level timeout. If the job level timeout interval elapses before your step completes, the running job is terminated, even if the step is configured with a longer timeout interval. For more information, see [Timeouts](phases.md#timeouts).
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 
-In this YAML, `PublishTestResults@2` runs even if the previous step fails because of the [succeededOrFailed() condition](expressions.md#succeededorfailed).
+In the following YAML example, `PublishTestResults@2` runs even if the previous step fails because of its [succeededOrFailed() condition](expressions.md#succeededorfailed).
 
 ```yaml
 steps:
@@ -176,21 +99,29 @@ steps:
   condition: succeededOrFailed()
 ```
 
-### Conditions
+### Continue on error
 
-[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
-* [Custom conditions](conditions.md), which are composed of [expressions](expressions.md)
+The `continueOnError` property tells the task whether to continue running regardless of its outcome. If set to `true`, this property tells the task to ignore any `failed` status and continue running. Downstream steps and jobs treat the task result as `success` for the purpose of making their run decisions.
 
-::: moniker-end
+### Retry count on task failure
+
+Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero retries.
+
+- The maximum number of retries allowed is 10.
+- The wait time before retry increases after each failed attempt, following an exponential backoff strategy. The first retry happens after 1 second, the second retry after 4 seconds, and the tenth retry after 100 seconds.
+- There's no assumption about the idempotency of the task. If the task had side effects, such as partially creating an external resource, it might fail the second time it runs.
+- No information about the retry count is made available to the task.
+- Task failure adds a warning to the task logs indicating that it failed before retrying the task.
+- All retry attempts show in the UI as part of the same task node.
+
+>[!NOTE]
+>The `retryCountOnTaskFailure` property requires agent version 2.194.0 or later. On Azure DevOps Server 2022, retries aren't supported for [agentless tasks](./phases.md#agentless-jobs-supported-tasks). For more information, see [Azure DevOps service update November 16, 2021 - Automatic retries for a task](/azure/devops/release-notes/2021/sprint-195-update#automatic-retries-for-a-task), and [Azure DevOps service update June 14, 2025 - Retries for server tasks](/azure/devops/release-notes/2024/sprint-240-update#retries-for-server-tasks).
 
 :::moniker range="> azure-devops-2020"
 
-### Step target
+### Target
 
-Tasks run in an execution context, which is either the agent host or a container.
-An individual step might override its context by specifying a `target`.
-Available options are the word `host` to target the agent host plus any containers defined in the pipeline.
-For example:
+Tasks run in an execution context, which is either the agent host or a container. An individual step can override its context by specifying a `target`. Available options are `host` to target the agent host, and any containers defined in the pipeline. In the following example, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ```yaml
 resources:
@@ -205,92 +136,65 @@ steps:
   target: pycontainer
 ```
 
-Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
-
 ::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
-
-### Number of retries if task failed
-
-Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero retries. For more information on task properties, see [steps.task in the YAML Schema](/azure/devops/pipelines/yaml-schema/steps-task). 
-
-```yml
-- task: <name of task>
-  retryCountOnTaskFailure: <max number of retries>
-   ...
-```
-
-> [!NOTE]
-> * Requires agent version 2.194.0 or later. On Azure DevOps Server 2022, retries are not supported for [agentless tasks](./phases.md#agentless-jobs-supported-tasks). For more information, see [Azure DevOps service update November 16, 2021 - Automatic retries for a task](/azure/devops/release-notes/2021/sprint-195-update#automatic-retries-for-a-task), and [Azure DevOps service update June 14, 2025 - Retries for server tasks](/azure/devops/release-notes/2024/sprint-240-update#retries-for-server-tasks). 
-> * The maximum number of retries allowed is 10.
-> * The wait time between each retry increases after each failed attempt, following an exponential backoff strategy. The 1st retry happens after 1 second, the 2nd retry after 4 seconds, and the 10th retry after 100 seconds.
-> * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
-> * There is no information about the retry count made available to the task.
-> * A warning is added to the task logs indicating that it has failed before it is retried.
-> * All of the attempts to retry a task are shown in the UI as part of the same task node.
-
-::: moniker-end
-
-#### [Classic](#tab/classic/)
-
-### Enabled
-
-Clear this check box to disable a task. This is useful
-when you want to temporarily take task out of the process for testing or for specific deployments.
-
-> [!TIP]
-> You can also right-click the task to toggle this setting.
 
 ### Timeout
 
-The timeout for this task in minutes. The default is zero (infinite timeout).
-Setting a value other than zero overrides the setting for the parent task job.
-The timeout period begins when the task starts running. It doesn't include the
-time the task is queued or is waiting for an agent.
+The timeout period begins when the task starts running, and doesn't include the time the task is queued or is waiting for an agent.
 
-### Azure Pipelines options
+> [!NOTE]
+> Pipelines may specify a job level timeout in addition to a task level timeout. If the job level timeout interval elapses before your task completes, the running job terminates, even if the step is configured with a longer timeout interval. For more information, see [Timeouts](phases.md#timeouts).
 
-#### Continue on error (partially successful)
+#### [Classic](#tab/classic/)
 
-Select this option if you want subsequent tasks in the same job to possibly run even if this task fails. The build or deployment will be no better than partially successful. Whether subsequent tasks run depends on the **Run this task** setting.
+<a name="controloptions"></a>
+In Classic pipelines, each task offers you the following **Control Options**:
+
+### Enabled
+
+Clear the **Enabled** check box to disable a task. Disabling the task is useful when you want to temporarily take the task out of the process for testing or for specific deployments.
+
+> [!TIP]
+> You can also right-click the task in the left pane and select **Disable/Enable selected task(s)** to toggle this setting. Disabled tasks appear with a strikeout through them.
+
+#### Continue on error
+
+Select this option if you want this task to report success even if it fails, possibly allowing dependent tasks in the same job to run. The overall build or deployment can be no more than partially successful. Whether subsequent tasks run also depends on their **Run this task** setting.
 
 #### Number of retries if task failed
 
-Specify the number of retries if this task fails. The default is zero. 
+Specify the number of retries if this task fails. The default is zero.
 
-> [!NOTE]
-> * The failing task retries in seconds. The wait time between each retry increases after each failed attempt.
-> * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
-> * There is no information about the retry count made available to the task.
-> * A warning is added to the task logs indicating that it has failed before it is retried.
-> * All of the attempts to retry a task are shown in the UI as part of the same task node.
+- The failing task retries in seconds. The wait time before retry increases after each failed attempt.
+- There's no assumption about the idempotency of the task. If the task had side effects, such as partially creating an external resource, it might fail the second time it runs.
+- No information about the retry count is made available to the task.
+- Task failure adds a warning to the task logs indicating that it failed before retrying the task.
+- All retry attempts show in the UI as part of the same task node.
 
-#### Run this task
+### Timeout
+
+The timeout for this task in minutes. The default is `0`, or infinite timeout. Setting a value other than zero overrides the setting for the parent task job. The timeout period begins when the task starts running, and doesn't include the time the task is queued or is waiting for an agent.
+
+### Run this task
 
 Select the condition for running this task:
 
-[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
-* [Custom conditions](conditions.md), which are composed of [expressions](expressions.md)
+- Only when all previous tasks have succeeded
+- Even if a previous task has failed, unless the build was canceled
+- Even if a previous task has failed, even if the build was canceled
+- Only when a previous task has failed
+- Custom conditions, and then specify the [custom condition](conditions.md#custom-conditions).
 
 > [!NOTE]
-> If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [pipeline options](../process/phases.md#timeouts).
+> If you choose to run tasks even when the build is canceled, make sure to specify sufficient time for these tasks to run in the [timeout options](../process/phases.md#timeouts).
 
-#### Continue on error (partially successful)
-
-Select this option if you want subsequent tasks in the same job to run even if this task fails. The build or deployment will be no better than partially successful.
-
-#### Always run
-
-Select this check box if you want the task to run even if the build or deployment is failing.
-
-* * *
+---
 
 ## Environment variables
 
 #### [YAML](#tab/yaml/)
 
-Each task has an `env` property that is a list of string pairs that represent environment variables mapped into the task process.
+Each task can specify an `env` property, which is a list of string pairs that represent environment variables mapped into the task process.
 
 :::moniker range="azure-devops"
 
@@ -322,8 +226,6 @@ The following example runs the `script` step, which is a shortcut for the [Comma
   displayName: 'List variable groups using the command line task'
 
 ```
-
-:::moniker-end
 
 ::: moniker range="< azure-devops"
 
@@ -363,22 +265,23 @@ You can work with environment variables using the **Environment Variables** sect
 
 :::image type="content" source="media/tasks/task-environment-variables.png" alt-text="Task environment variables.":::
 
-* * *
+---
 
-<h2 id="tool-installers">Build tool installers (Azure Pipelines)</h2>
+<a name="tool-installers"></a>
+## Build tool installer tasks
 
 Tool installers enable your build pipeline to install and control your dependencies. Specifically, you can:
 
-* Install a tool or runtime on the fly (even on [Microsoft-hosted agents](../agents/hosted.md)) just in time for your CI build.
+- Install a tool or runtime on the fly (even on [Microsoft-hosted agents](../agents/hosted.md)) just in time for your CI build.
+- Validate your app or library against multiple versions of a dependency such as Node.js.
 
-* Validate your app or library against multiple versions of a dependency such as Node.js.
-
-For example, you can set up your build pipeline to run and validate your app for multiple versions of Node.js.
+For a list of tool installer tasks, see [Tool tasks]((../tasks/reference.md#tool-tasks).
 
 ### Example: Test and validate your app on multiple versions of Node.js
 
+For example, you can set up your build pipeline to run and validate your app for multiple versions of Node.js.
+
 #### [YAML](#tab/yaml/)
-::: moniker range="<=azure-devops"
 
 Create an azure-pipelines.yml file in your project's base directory with the following contents.
 
@@ -399,7 +302,6 @@ steps:
 [Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.
 The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script logs the location of the Node.js version on disk.
 
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -423,7 +325,7 @@ Add these tasks:
 
 ![node js installer](../tasks/tool/media/node.png) Tool: Node.js Installer
 
-* Version Spec: 
+- Version Spec: 
 
   ```
   $(NodeVersionSpec)
@@ -431,12 +333,12 @@ Add these tasks:
 
 ![CLI](../tasks/utility/media/command-line.png) Utility: Command Line
 
-* Script (if you're running on a Windows agent)
+- Script (if you're running on a Windows agent)
   ```
   where node
   ```
 
-* Script (if you're running on a macOS or Linux agent)
+- Script (if you're running on a macOS or Linux agent)
   ```
   which node
   ```
@@ -453,26 +355,12 @@ On the [Variables tab](../build/variables.md), define this variable:
 
 Select **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads each of the Node.js versions if they aren't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
 
-* * *
-
-### Tool installer tasks
-
-For a list of our tool installer tasks, see [Tool installer tasks](../tasks/index.md#tool).
-
-::: moniker range=">= azure-devops-2020"
-
-### Disabling in-box and Marketplace tasks
-
-On the organization settings page, you can disable Marketplace tasks, in-box tasks, or both.
-Disabling Marketplace tasks can help [increase security](../security/misc.md) of your pipelines.
-If you disable both in-box and Marketplace tasks, only tasks you install using [`tfx`](https://www.npmjs.com/package/tfx-cli) is available.
-
-::: moniker-end
+---
 
 ## Related articles
 
-* [Jobs](phases.md)
-* [Task groups](../library/task-groups.md)
-* [Built-in task catalog](../tasks/index.md)
+- [Jobs](phases.md)
+- [Task groups](../library/task-groups.md)
+- [Azure Pipelines task reference](../tasks/reference.md)
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
