@@ -208,16 +208,18 @@ Each task can specify an `env` property, which is a list of string pairs that re
   ...
 ```
 
-The following example runs the `script` step, which is a shortcut for the [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2), followed by the equivalent task syntax. This example assigns a value to the `AZURE_DEVOPS_EXT_PAT` environment variable, which is used to authenticating with Azure DevOps CLI.
+Steps can be scripts or tasks. The following example runs a `script` step that assigns a value to the `AZURE_DEVOPS_EXT_PAT` environment variable, which authenticates with Azure DevOps CLI.
 
 ```yml
-# Using the script shortcut syntax
 - script: az pipelines variable-group list --output table
   env:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
   displayName: 'List variable groups using the script step'
+```
 
-# Using the task syntax
+The preceding script is functionally the same as running a [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2). The following example uses the task syntax.
+
+```yaml
 - task: CmdLine@2
   inputs:
     script: az pipelines variable-group list --output table
@@ -229,6 +231,8 @@ The following example runs the `script` step, which is a shortcut for the [Comma
 
 ::: moniker range="< azure-devops"
 
+Each task can specify an `env` property, which is a list of string pairs that represent environment variables mapped into the task process.
+
 ```yml
 - task: Bash@3
   inputs:
@@ -239,16 +243,18 @@ The following example runs the `script` step, which is a shortcut for the [Comma
   ...
 ```
 
-The following example runs the `script` step, which is a shortcut for the [Bash@3](/azure/devops/pipelines/tasks/reference/bash-v3), followed by the equivalent task syntax. This example assigns a value to the `ENV_VARIABLE_NAME` environment variable and echoes the value.
+Steps can be scripts or tasks. The following example runs a `script` step that assigns a value to the `ENV_VARIABLE_NAME` environment variable and echoes the value.
 
 ```yml
-# Using the script shortcut syntax
 - script: echo "This is " $ENV_VARIABLE_NAME
   env:
     ENV_VARIABLE_NAME: "my value"
   displayName: 'echo environment variable'
+```
 
-# Using the task syntax
+The preceding script is functionally the same as running a [Bash@3](/azure/devops/pipelines/tasks/reference/bash-v3) task. The following example uses the task syntax.
+
+```yml
 - task: Bash@2
   inputs:
     script: echo "This is " $ENV_VARIABLE_NAME
@@ -261,7 +267,7 @@ The following example runs the `script` step, which is a shortcut for the [Bash@
 
 #### [Classic](#tab/classic/)
 
-You can work with environment variables using the **Environment Variables** section of the task editor.
+In Classic pipelines, you can work with environment variables by using the **Output variables** section of the task editor.
 
 :::image type="content" source="media/tasks/task-environment-variables.png" alt-text="Task environment variables.":::
 
@@ -270,90 +276,44 @@ You can work with environment variables using the **Environment Variables** sect
 <a name="tool-installers"></a>
 ## Build tool installer tasks
 
-Tool installers enable your build pipeline to install and control your dependencies. Specifically, you can:
+Tool installer tasks enable your build pipeline to install and control your dependencies. You can use tool installer tasks to:
 
-- Install a tool or runtime on the fly (even on [Microsoft-hosted agents](../agents/hosted.md)) just in time for your CI build.
+- Install a tool or runtime for your continuous integration (CI) build, even on [Microsoft-hosted agents](../agents/hosted.md).
 - Validate your app or library against multiple versions of a dependency such as Node.js.
 
-For a list of tool installer tasks, see [Tool tasks]((../tasks/reference.md#tool-tasks).
+For a list of tool installer tasks, see [Tool tasks](../tasks/reference.md#tool-tasks).
 
-### Example: Test and validate your app on multiple versions of Node.js
+### Example: Test and validate an app on multiple versions of Node.js
 
-For example, you can set up your build pipeline to run and validate your app for multiple versions of Node.js.
+The following example sets up a build pipeline to run and validate an app for multiple versions of Node.js.
 
 #### [YAML](#tab/yaml/)
 
-Create an azure-pipelines.yml file in your project's base directory with the following contents.
+In the following example, the [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script writes the installed version to the command line.
+.
 
 ```yaml
-pool:
-  vmImage: ubuntu-latest
-
 steps:
-# Node install
 - task: UseNode@1
   displayName: Node install
   inputs:
-    version: '16.x' # The version we're installing
-# Write the installed version to the command line
-- script: which node
+    version: '16.x' # The version to install
+- script: write Node version
 ```
-
-[Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.
-The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script logs the location of the Node.js version on disk.
-
 
 #### [Classic](#tab/classic/)
 
-#### Tasks tab
+1. In the **Agent job** for your Classic pipeline, under **Execution plan**, set **Parallelism** to **Multi-configuration**
+1. Under **Multipliers**, enter *NodeVersionSpec*.
+1. Set **Maximum number of agents** to *2*.
+1. Add the following tasks to your pipeline:
 
-[Create a new build pipeline](../create-first-pipeline.md) (start with an empty process) to try this out.
+   - **Node.js tool installer**. Under **Version Spec**, enter *$(NodeVersionSpec)*
+   - **Command Line**. Under **Script**, enter *where node* if you're running on a Windows agent, or *which node* if you're running on a macOS or Linux agent.
+1. On the [Variables tab](../build/variables.md), define the variable *NodeVersionSpec* with the value *10.x, 12.x*, and select **Settable at queue time**.
+1. Select **Save & queue**.
 
-Apply the following agent settings:
-
-1. Set **Parallelism** to **Multi-configuration**
-
-2. Specify **Multipliers**:
-
-```
-NodeVersionSpec
-```
-
-3. Set **Maximum number of agents** to 2
-
-Add these tasks:
-
-![node js installer](../tasks/tool/media/node.png) Tool: Node.js Installer
-
-- Version Spec: 
-
-  ```
-  $(NodeVersionSpec)
-  ```
-
-![CLI](../tasks/utility/media/command-line.png) Utility: Command Line
-
-- Script (if you're running on a Windows agent)
-  ```
-  where node
-  ```
-
-- Script (if you're running on a macOS or Linux agent)
-  ```
-  which node
-  ```
-
-#### Variables tab
-
-On the [Variables tab](../build/variables.md), define this variable:
-
-|Name|Value|Settable at queue time|
-|-|-|-|
-|```NodeVersionSpec```|```10.x, 12.x```|Selected|
-
-#### Save & queue
-
-Select **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads each of the Node.js versions if they aren't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
+The [Node.js tool installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) task downloads each of the Node.js versions if they aren't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
 
 ---
 
