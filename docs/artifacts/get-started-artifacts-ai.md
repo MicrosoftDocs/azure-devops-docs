@@ -1,33 +1,32 @@
 ---
-title: Publish a package to an Azure Artifacts feed - Copilot
+title: Publish your first package to an Azure Artifacts feed - Copilot
 description: Learn how to publish your first package to an Azure Artifacts feed.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 06/21/2024
+ms.date: 08/08/2025
 ms.update-cycle: 180-days
 ms.collection: ce-skilling-ai-copilot
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Publish a package to an Azure Artifacts feed
+# Publish your first package to an Azure Artifacts feed
 
-Azure Artifacts enables developers to efficiently manage all their dependencies from a single feed. Feeds in Azure Artifacts serve as organizational repositories for storing, managing, and sharing your packages within your team, across organizations, or publicly on the internet. Azure Artifacts feeds support a wide range of package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
+Azure Artifacts enables developers to efficiently manage all their dependencies from a single feed. Feeds in Azure Artifacts serve as organizational repositories for storing, managing, and sharing packages whether within a team, across organizations, or publicly on the internet. Azure Artifacts supports a wide range of package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
-This article walks you through the process of publishing your first package to an Azure Artifacts feed. You also have the option to use GitHub Copilot to streamline this process and explore the capabilities of the GitHub Copilot Chat in Visual Studio Code. 
+This article walks you through publishing your first NuGet package to an Azure Artifacts feed. Optionally, you can follow the instructions to use GitHub Copilot to help set up your project and prepare your package for publishing.
 
 ## Prerequisites
 
-* Create an Azure DevOps [organization](../organizations/accounts/create-organization.md) and a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
-
-* Install the [.NET Core SDK](https://dotnet.microsoft.com/en-us/download).
-
-* Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
-
-* (Optional) [Set up GitHub Copilot and Visual Studio Code](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-code-suggestions-in-your-editor?tool=vscode). A 30-day GitHub Copilot free trial is available if you haven't signed up yet.
+| **Product**        | **Requirements**   |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Donwload and install the [latest NuGet version](https://www.nuget.org/downloads). |
+| **GitHub Copilot** (Optional)  | - [Set up GitHub Copilot and Visual Studio Code](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-code-suggestions-in-your-editor?tool=vscode). A 30-day GitHub Copilot free trial is available if you haven't signed up yet. |
 
 ## Create a feed
+
+If you already have a feed, you can skip this section. Otherwise, follow the steps below to create a new feed in Azure Artifacts:
 
 ::: moniker range="azure-devops"
 
@@ -35,21 +34,21 @@ This article walks you through the process of publishing your first package to a
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-1. Provide a descriptive **Name** for your feed and set its **Visibility** (who can view packages in your feed). Define the **Scope** of your feed, and if you  want to include packages from public sources, check the **Upstream sources** checkbox.
+1. Provide a descriptive **Name** for your feed and set its **Visibility** to define who can view packages in your feed. Define the **Scope** of your feed, and check the **Upstream sources** checkbox if you want to include packages from public sources.
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="media/create-new-feed-azure-devops.png" alt-text="Screenshot that shows how to create a new feed in Azure DevOps Services.":::
+    :::image type="content" source="media/create-new-feed-azure-devops.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022 || azure-devops-2020"
 
-1. Sign in to your Azure DevOps server, and then navigate to your project.
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
 2. Select **Artifacts**, and then select **Create Feed**.
 
-3. Provide a descriptive **Name** for your feed and set its **Visibility** (who can view packages in your feed). Define the **Scope** of your feed, and if you  want to include packages from public sources, check the **Upstream sources** checkbox.
+3. Provide a descriptive **Name** for your feed and set its **Visibility** to define who can view packages in your feed. Define the **Scope** of your feed, and check the **Upstream sources** checkbox if you want to include packages from public sources.
 
 ::: moniker-end
 
@@ -57,7 +56,7 @@ This article walks you through the process of publishing your first package to a
 
 4. Select **Create** when you're done.
 
-    :::image type="content" source="media/create-new-feed-server-2022.png" alt-text="Screenshot that shows how to create a new feed in Azure DevOps Server 2022.":::
+    :::image type="content" source="media/create-new-feed-server-2022.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Server 2022.":::
 
 ::: moniker-end
 
@@ -65,27 +64,17 @@ This article walks you through the process of publishing your first package to a
 
 4. Select **Create** when you're done.
 
-    :::image type="content" source="media/create-new-feed-server-2020.png" alt-text="Screenshot that shows how to create a new feed in Azure DevOps Server 2020.":::
+    :::image type="content" source="media/create-new-feed-server-2020.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Server 2020.":::
 
 ::: moniker-end
 
-## Prepare the code
+## Prepare your package
+
+In this example, you'll use a sample .NET Core Class Library and set up your package metadata before building the project and creating a NuGet package ready for publishing to your feed. If you don't have a project yet, follow the instructions in this guide to [Create a .NET class library using Visual Studio Code](/dotnet/core/tutorials/library-with-visual-studio-code).
 
 #### [Without GitHub Copilot](#tab/withoutgithubcopilot/)
 
-Follow these steps to create a basic Class Library project from the command line, set up your package's metadata, and generate a NuGet package:
-
-1. On your local machine, create a new folder and give it a name.
-
-1. Open a command prompt window and navigate to the folder you created.
-
-1. Run the following command to create a new Class Library project:
-
-    ```dotnetcli
-    dotnet new classlib
-    ```
-
-1. Open your *csproj* file and add your package metadata within the `<PropertyGroup>` tag. Your file structure should resemble the following:
+1. Open your project in Visual Studio Code, and then select your *csproj* file. Add your package metadata within the `<PropertyGroup>` tag. Your file should resemble the following:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -106,7 +95,7 @@ Follow these steps to create a basic Class Library project from the command line
     </Project>
     ```
 
-1. Run the following command to package your project and generate a *.nupkg* artifact. your NuGet package is generated in the `bin\release` directory.
+1. Run the following command in your project directory to build your project and create a *.nupkg* package. Your package will be in the `bin\release` folder.
 
     ```dotnetcli
     dotnet pack
@@ -114,42 +103,55 @@ Follow these steps to create a basic Class Library project from the command line
 
 #### [With GitHub Copilot](#tab/githubcopilot/)
 
-Before publishing a package to the feed you created earlier, you must first pack your project and prepare it for publishing. 
+The following example walks you through using GitHub Copilot to set up your package metada and prepare your package for publishing.
 
-The following example walks you through using GitHub Copilot to create a sample .NET Core class library and generate a NuGet package from the command line. You can also use GitHub Copilot to generate other types of projects, such as npm or Python projects.
+1. Open your project in Visual Studio Code, and select the *csproj* file from the *Explorer* to open it.
 
-1. Open Visual Studio Code and select the chat icon from the left navigation panel to open the GitHub Copilot Chat.
+1. Select the chat icon at the top to open GitHub Copilot Chat. Your current file context should display the *.csproj* file.
 
-1. In the prompt box. ask GitHub copilot: "How do I create a .NET Core project and package it as a NuGet package?". GitHub Copilot's response might be something similar to the following:
+1. In the GitHub Copilot prompt box, ask GitHub copilot to add your package metada. You can use the following prompt:
 
-    :::image type="content" source="media/create-project-github-copilot-response.png" alt-text="A screenshot that shows a response from GitHub Copilot Chat.":::
+    ```
+    Add the following package metadata to my csproj file:
+    PackageId: demoNuGetPackage
+    Version: 1.0.0
+    Authors: user123
+    Company: FabrikamFiber
+    ```
 
-1. Follow the provided steps to generate your project, define your package ID and version, and pack your project.
+    :::image type="content" source="media/add-package-metadata-github-copilot.png" alt-text="A screenshot displaying how to add package metada using GitHub Copilot in Visual Studio Code.":::
 
-You can also ask GitHub Copilot to explain your project structure using the `@workspace` command, which lets you interact with the files and folders in your current workspace.
+1. After a few seconds, GitHub Copilot will confirm that the package metadata has been added to your *csproj* file.
 
-> `@workspace` explain my app structure
+    :::image type="content" source="media/package-metadata-confirmation.png" alt-text="A screenshot showing GitHub Copilot confirming successful addition of the package metadata.":::
 
-:::image type="content" source="media/github-copilot-app-structure.png" alt-text="A screenshot that shows GitHub Copilot explaining workspace app structure.":::
+1. In the GitHub Copilot prompt box, ask copilot to build your project and generate the NuGet package. When prompted for confirmation, select **Continue**.
 
-Another useful method to understand new source code is to ask GitHub Copilot how specific files are related within the project. For example, you can ask how the *csproj* file is related to the *Class1.cs* file:
+    :::image type="content" source="media/build-project-github-copilot.png" alt-text="A screenshot showing prompt asking for confirmation to build the project.":::
 
-> #file:artifacts-github-copilot.csproj #file:Class1.cs how are these files related
+1. Once build is successful, GitHub Copilot will prompt you again to confirm generating the NuGet package. Select **Continue** to proceed.
 
-:::image type="content" source="media/github-copilot-csproj-class-relation.png" alt-text="A screenshot that shows GitHub Copilot response in Visual Studio Code.":::
+    :::image type="content" source="media/generate-package-github-copilot.png" alt-text="A screenshot showing prompt asking for confirmation to generatethe NuGet package.":::
 
+1. After completion, you’ll see a confirmation that the package was created successfully, including the metadata and where the package is saved locally.
+
+    :::image type="content" source="media/package-created-confirmation.png" alt-text="A screenshot showing GitHub Copilot confirming successful creation of the NuGet package.":::
 
 * * *
 
 ## Connect to a feed
 
+Follow the steps below to set up your project and connect to your Azure Artifacts feed. Make sure you've installed the Azure Artifacts credential provider and the latest version of NuGet as outlined in the prerequisites.
+
 ::: moniker range="azure-devops"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts** and then select your feed from the dropdown menu.
 
 1. Select **Connect to feed**, and then select **dotnet** from the **NuGet** section.
 
-1. Follow the instructions in the **Project setup** to set up your *nuget.config* file. The structure of your file should look similar to this:
+1. Follow the instructions in the **Project setup** to set up your *nuget.config* file. The structure of your file should resemble one of the following:
 
     - **Project-scoped feed**:
 
@@ -185,21 +187,18 @@ Another useful method to understand new source code is to ask GitHub Copilot how
 
 1. Select **Connect to Feed**, and then select **dotnet** from the left navigation pane.
 
-1. Follow the instructions in the **Project setup** section to configure your *nuget.config* file and connect to your feed.
+1. Follow the instructions in the **Project setup** section to set up your *nuget.config* file.
 
-    :::image type="content" source="media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot that shows how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022.":::
+    :::image type="content" source="media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot that shows how to connect to a feed in Azure DevOps Server 2020 and 2022.":::
 
 ::: moniker-end
 
-> [!TIP]
-> You can ask GitHub Copilot, "how to add a new package source to an existing *nuget.config* file". Copilot will guide you through using the `nuget sources Add` command to add your new feed source URL to your *nuget.config* file.
+## Publish your package
 
-## Publish packages
-
-Run the following command from your project directory to publish your package. The ApiKey is required, but you can use any string value when publishing to an Azure Artifacts feed.
+Run the following command from your project directory to publish the package to your Azure Artifacts feed. The `--api-key` parameter is required, but you can use any string value when publishing to Azure Artifacts.
 
 ```dotnetcli
-dotnet nuget push --source <FEED_NAME> --api-key az <PACKAGE_PATH>
+dotnet nuget push --source <FEED_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
 ```
 
 ## Next steps
@@ -207,4 +206,3 @@ dotnet nuget push --source <FEED_NAME> --api-key az <PACKAGE_PATH>
 > [!div class="nextstepaction"]
 > [Monitor Artifacts storage](artifact-storage.md)
 > [Share packages publicly](tutorials/share-packages-publicly.md)
-> [Manage permissions](feeds/feed-permissions.md)
