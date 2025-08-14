@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Azure Artifacts enables developers to manage packages from various sources, including public registries like *npmjs.com* and private feeds. To authenticate with Azure Artifacts, you need to configure your *.npmrc* config file. This file stores feed URLs and credentials used by npm, and it allows you to customize client behavior such as setting up proxies, defining default package locations, or configuring access to private feeds. The *.npmrc* file is typically located in the user's home directory, but can also be created at the project level to override default settings.
+Azure Artifacts enables developers to manage packages from various sources, including public registries like *npmjs.com* and private feeds. To authenticate with Azure Artifacts, you need to configure your *npmrc* config file. This file stores feed URLs and credentials used by npm, and it allows you to customize client behavior such as setting up proxies, defining default package locations, or configuring access to private feeds. The *npmrc* file is typically located in the user's home directory, but can also be created at the project level to override default settings.
 
 ## Prerequisites
 
@@ -113,13 +113,17 @@ The following steps guide you through setting up the project-level configuration
     node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
     ```
 
+    > [!NOTE]
+    > As of July 2024, Azure DevOps Personal Access Tokens (PATs) are [82 characters long](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#changes-to-format). Some tools may insert automatic line breaks when encoding tokens to Base64. To avoid this, use the `-w0` flag with the *base64* command to ensure the output stays on a single line. 
+    > In this tutorial, we use Node’s Buffer method, which produces a single-line *Base64* string by default.
+
 1. If you're using Linux or macOS, you can run the following command in your terminal to convert your personal access token (PAT) to a Base64-encoded string. Copy the resulting value to use in the next step.
 
     ```
-    echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64
+    echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64 -w0
     ```
 
-1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user-level *.npmrc* file with the Base64-encoded personal access token you generated in the previous step.
+1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user-level *npmrc* file with the Base64-encoded personal access token you generated in the previous step.
 
 * * *
 
@@ -135,7 +139,7 @@ The following steps guide you through setting up the project-level configuration
  
     :::image type="content" source="../media/server-2022-1-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in Azure DevOps Server 2022.1.":::
 
-1. Select **npm** from the left, and then follow the steps in the **Project setup** section to configure your .npmrc. file and authenticate with your feed.
+1. Select **npm** from the left, and then follow the steps in the **Project setup** section to configure your *npmrc* file and authenticate with your feed.
 
    :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1.":::
 
@@ -147,7 +151,7 @@ The following steps guide you through setting up the project-level configuration
 
 1. Select **Connect to Feed** and then select **npm** from the left navigation pane. 
 
-1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the snippet provided in the **Project setup** section into your *.npmrc* file. Your file should look similar to the following:
+1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the snippet provided in the **Project setup** section into your *npmrc* file. Your file should look similar to the following:
 
     ```
     registry=http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
@@ -193,6 +197,10 @@ The following steps guide you through setting up the project-level configuration
     node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
     ```
 
+    > [!NOTE]
+    > As of July 2024, Azure DevOps Personal Access Tokens (PATs) are [82 characters long](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#changes-to-format). Some tools may insert automatic line breaks when encoding tokens to Base64. To avoid this, use the `-w0` flag with the *base64* command to ensure the output stays on a single line. 
+    > In this tutorial, we use Node’s Buffer method, which produces a single-line *Base64* string by default.
+
 1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user-level *.npmrc* file with the Base64-encoded personal access token you generated in the previous step.
 
 * * *
@@ -221,7 +229,7 @@ The following steps guide you through setting up the project-level configuration
 
 1. Select **Connect to Feed** and then select **npm** from the left navigation pane. 
 
-1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the snippet provided in the **Project setup** section into your *.npmrc* file. Your file should look similar to the following:
+1. Add a *.npmrc* file in your project's directory, in the same directory as your *package.json* file, and paste the snippet provided in the **Project setup** section into your *npmrc* file. Your file should look similar to the following:
 
     ```
     registry=http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
@@ -269,6 +277,10 @@ The following steps guide you through setting up the project-level configuration
     ```
     node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
     ```
+
+    > [!NOTE]
+    > As of July 2024, Azure DevOps Personal Access Tokens (PATs) are [82 characters long](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#changes-to-format). Some tools may insert automatic line breaks when encoding tokens to Base64. To avoid this, use the `-w0` flag with the *base64* command to ensure the output stays on a single line. 
+    > In this tutorial, we use Node’s Buffer method, which produces a single-line *Base64* string by default.
 
 1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user-level *.npmrc* file with the Base64-encoded personal access token you generated in the previous step.
 
