@@ -8,8 +8,8 @@ ms.author: jukullam
 ms.date: 07/22/2024
 monikerRange: 'azure-devops'
 ---
- 
-# Use Azure Pipelines with Slack
+
+ # Use Azure Pipelines with Slack
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -21,6 +21,7 @@ This article shows you how to use the [Azure Pipelines app for Slack](https://sl
 
 - A Slack account with permission to install an app to your Slack workspace.
 - An Azure DevOps project with **Project Collection Administrators** or **Project Administrators** permissions.
+- Must not be an external user in Entra.
 
 ## Install the Azure Pipelines app
 
@@ -33,6 +34,9 @@ This article shows you how to use the [Azure Pipelines app for Slack](https://sl
 Once the app is installed in your Slack workspace, you can connect the app to any pipeline you want to monitor. You must authenticate to Azure Pipelines before running any commands.
 
 :::image type="content" source="media/integrations-slack/sign-in.png" alt-text="A screenshot showing the sign-in prompt message.":::
+
+> [!NOTE]
+> If your Azure DevOps organization is connected to an Entra ID tenant, you must sign in with a native member of that tenant. External users will see the following error if they try to sign in to the Azure Pipelines app: `Configuration failed. Please make sure that the organization exists and that you have sufficient permissions.`
 
 ## Subscribe to pipelines
 
