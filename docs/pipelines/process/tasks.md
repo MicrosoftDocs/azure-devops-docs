@@ -258,7 +258,7 @@ The following example sets up a build pipeline to run and validate an app on mul
 
 #### [YAML](#tab/yaml/)
 
-1. Create an *azure-pipelines.yml* file that has the following contents in your project's base directory.
+Create an *azure-pipelines.yml* file that has the following contents in your project's base directory.
 
 ```yaml
 pool:
