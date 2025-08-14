@@ -18,5 +18,5 @@ The Azure Pipelines app uses the OAuth authentication protocol, and requires [Th
 
 ### Configuration failed. Please make sure that the organization exists and that you have sufficient permissions.
 
-If you are seeing this error, you are most likely a Guest user in the Entra tenant connected to your Azure DevOps organization. You will need to have an Entra Member go through the configuration steps.
+If you're seeing this error, you're most likely a Guest user in the Entra tenant connected to your Azure DevOps organization. You'll need to have an Entra Member go through the configuration steps.
 
