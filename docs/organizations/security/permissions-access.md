@@ -27,7 +27,7 @@ The most common built-in security groups—**Readers**, **Contributors**, and **
 
 In general, use the following guidance when assigning users to a security group:
 
-- Add to the **Contributors** security group: fulltime workers who contribute to the code base or manage projects
+- Add to the **Contributors** security group: full-time workers who contribute to the code base or manage projects
 - Add to the **Project Administrators** security group: users tasked with managing project resources
 - Add to the **Project Collection Administrators** security group: users tasked with managing organization or collection resources
 
