@@ -45,7 +45,7 @@ Use particular caution with secret variables. The recommended methods for settin
 
 When you define a variable in the Azure Pipelines UI, you can select whether to allow users to override the value during pipeline execution. Variables that allow users to set their value at queue time are called queue-time variables and can be defined only in the Azure Pipelines **Variables** UI.
 
-In YAML pipelines, you designate these variables by selecting **Let users override this value when running this pipeline**. In the Classic editor, you select the check box for **Settable at queue time**.
+In the Classic pipeline editor, you define queue-time variable by selecting the check box for **Settable at queue time**. In YAML pipelines, you designate them by selecting **Let users override this value when running this pipeline**.
 
 :::image type="content" source="media/define-variables-yaml-pipeline.png" alt-text="Screenshot of defining a queue-time variable.":::
 
@@ -55,7 +55,7 @@ When a user manually runs the pipeline, they can select queue-time variables and
 
 ::: moniker range="azure-devops"
 
-Users must have [Edit queue build configuration](/azure/devops/pipelines/policies/permissions#set-pipeline-permissions-in-azure-pipelines) permission on a pipeline to be able to define the values of variables set at queue time.
+Users must have [Edit queue build configuration](/azure/devops/pipelines/policies/permissions#set-pipeline-permissions-in-azure-pipelines) permission on a pipeline to be able to define variables set at queue time.
 
 ### Limit variables that can be set at queue time
 
@@ -63,7 +63,7 @@ The Azure Pipelines UI and the REST API that runs a pipeline provide ways for us
 
 :::image type="content" source="media/add-variables-at-queue-time.png" alt-text="Screenshot of adding a queue-time variable just before running the pipeline.":::
 
-To avoid issues caused by these abilities, you can limit variables that can be set at queue time. You can enable the **Limit variables that can be set at queue time** setting so users can only set variables that are explicitly marked as **Settable at queue time** or **Let users override this value when running this pipeline** at queue time.
+To avoid issues caused by these abilities, you can limit variables that can be set at queue time. You can enable the **Limit variables that can be set at queue time** setting so users can set only variables that are explicitly marked as **Settable at queue time** or **Let users override this value when running this pipeline** at queue time.
 
 This setting can be applied at the organization and project levels.
 
@@ -83,9 +83,13 @@ The following example shows the variables for a Classic pipeline, with some of t
 
 :::image type="content" source="media/define-variables-classic-pipeline.png" alt-text="Screenshot of defining a variable in a Classic pipeline.":::
 
-When you run this pipeline, only the variables marked **Settable at queue time** are visible on the **Variables** screen to be selected. If **Limit variables that can be set at queue time** is enabled at the project or organization level, the **Add variable** button doesn't appear.
+When you run this pipeline, only the variables marked **Settable at queue time** are visible on the **Variables** screen to be selected.
 
 :::image type="content" source="media/add-variables-at-queue-time-setting-on.png" alt-text="Screenshot of variables panel with setting on.":::
+
+If **Limit variables that can be set at queue time** is enabled at the project or organization level, the **Add variable** button doesn't appear.
+
+:::image type="content" source="media/no-new-variables.png" alt-text="Screenshot of not being able to add variables at run time with setting on.":::
 
 Using the [Builds - Queue](/rest/api/azure/devops/build/builds/queue) or the [Runs - Run Pipeline](/rest/api/azure/devops/pipelines/runs/run-pipeline) APIs to queue a pipeline run and attempting to set the value of a variable not marked **Settable at queue time** fails with an error similar to the following:
  
@@ -105,7 +109,7 @@ Using the [Builds - Queue](/rest/api/azure/devops/build/builds/queue) or the [Ru
 
 ## Parameters
 
-A running pipeline can't modify pipeline parameters like variables. Parameters have data types such as `number` and `string`, and can be restricted to specific value subsets. This restriction is valuable when a user-configurable aspect of the pipeline should only accept values from a predefined list, ensuring that the pipeline doesn't accept arbitrary data.
+A running pipeline can't modify pipeline parameters, unlike variables. Parameters have data types such as `number` and `string`, and can be restricted to specific value subsets. This restriction is valuable when a user-configurable aspect of the pipeline should only accept values from a predefined list, ensuring that the pipeline doesn't accept arbitrary data.
 
 <a name="shellTasksValidation"></a> 
 <a name="enable-shell-tasks-arguments-parameter-validation"></a>
@@ -113,7 +117,7 @@ A running pipeline can't modify pipeline parameters like variables. Parameters h
 
 Pipelines can reference tasks executed within the pipeline. Some tasks include an `arguments` parameter that allows users to specify more options for the task.
 
-Applying the  **Enable shell tasks arguments validation** setting validates `argument` parameters for built-in shell tasks to check for inputs that can inject commands into scripts. The check ensures that the shell correctly executes characters like semicolons, quotes, and parentheses in the following specific tasks:
+Applying the  **Enable shell tasks arguments validation** setting validates `argument` parameters for built-in shell tasks to check for inputs that can inject commands into scripts. The check ensures that the shell correctly executes characters like semicolons, quotes, and parentheses in the following pipeline tasks:
 
 - PowerShell 
 - BatchScript
