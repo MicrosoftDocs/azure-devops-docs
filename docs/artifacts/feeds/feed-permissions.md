@@ -3,7 +3,7 @@ title: Configure permissions
 description: How to configure permissions for Artifacts feeds, views, and pipelines access
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 03/15/2024
 monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
