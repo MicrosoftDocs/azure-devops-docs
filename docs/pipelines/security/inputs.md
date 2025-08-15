@@ -108,7 +108,7 @@ Using the [Builds - Queue](/rest/api/azure/devops/build/builds/queue) or the [Ru
 A running pipeline can't modify pipeline parameters like variables. Parameters have data types such as `number` and `string`, and can be restricted to specific value subsets. This restriction is valuable when a user-configurable aspect of the pipeline should only accept values from a predefined list, ensuring that the pipeline doesn't accept arbitrary data.
 
 <a name="shellTasksValidation"></a> 
-<a name="#enable-shell-tasks-arguments-parameter-validation"></a>
+<a name="enable-shell-tasks-arguments-parameter-validation"></a>
 ### Enable shell tasks arguments validation
 
 Pipelines can reference tasks executed within the pipeline. Some tasks include an `arguments` parameter that allows users to specify more options for the task.
