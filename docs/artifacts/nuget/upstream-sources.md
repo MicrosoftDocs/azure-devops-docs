@@ -3,7 +3,7 @@ title: Consume packages from nuget.org
 description: How to consume packages from nuget.org with Azure Artifacts upstream sources
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/16/2024
 monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
