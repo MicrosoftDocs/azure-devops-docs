@@ -84,7 +84,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 #### macOS images updates
 
-* [[macOS] Xcode support policy will be changed on August 11, 2025](https://github.com/actions/runner-images/issues/12541). For the current list of Xcode versions supported on the macOS 15 image, see [macOS 15 - Xcode](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md#xcode).
+* [[macOS] Starting August 11, 2025, if your workflow is running on a macOS-15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
 * The macOS 15 Sequoia hosted agent image is in GA.
  * The `macOS-latest` label still refers to `macOS-14`. The migration of `macos-latest` to refer to `macOS-15` will begin August 4, 2025, with a planned completion date of August 30, 2025. For more information, see [[macOS] macos-latest YAML-label will use macos-15 in August 2025](https://github.com/actions/runner-images/issues/12520).
 * [[macOS] Xcode 15.4 will be removed from macOS15 images on May 29th, 2025](https://github.com/actions/runner-images/issues/12195)
