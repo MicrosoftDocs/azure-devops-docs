@@ -164,6 +164,38 @@ Don't bypass flagged secrets because doing so can put your company’s security 
 
 If you believe a blocked secret is a false positive or safe to push, you can bypass push protection. Include the string `skip-secret-scanning:true` in your commit message. Even if you bypass push protection, a secret scanning alert is generated in the alert UX once the secret gets pushed.
 
+## About validity checks
+
+Secret validity checks help you prioritize alerts by indicating if a detected secret is still usable. For supported secret types, GitHub Advanced Security for Azure DevOps automatically asks the issuing provider whether the credential is active, no separate feature toggle is required once secret scanning is enabled.
+
+![Screenshot of Advanced Security Secret validation list.](./media/secret-validity-checking-alert-list.png)
+
+Having the GitHub Advanced Security for Azure DevOps bundle or Secret protection automatically enables validity checks.
+
+#### What you get
+- Automatic verification for supported partner secret types (no extra setup).
+- Status shown in the Secret scanning alerts list and detail pane.
+- Filtering by validation status so you can focus on active secrets.
+- You can optionally perform an "on-demand" validity check for the secret in the alert view.
+
+
+#### Status meanings
+| Status  | Meaning | Action |
+|---------|---------|--------|
+| `Active`  | Provider confirmed the secret is still usable. | Open the alert and follow its Recommendations & Remediation steps. |
+| Unknown | No definitive signal of activity; it may be inactive, or verification failed due to service, network, or other unexpected errors.  | Treat as possibly active; retry verification or rotate if sensitive. |
+
+#### Typical workflow
+1. Filter Validation status = `Active` to surface highest-risk alerts.
+2. For each active secret, open the alert and follow the Recommendations and Remediation steps provided in the alert view.
+3. Use on-demand verification after remediation to confirm the status changes.
+4. Address Unknown secrets next—retry on-demand verification or treat as active if the data is sensitive.
+5. Close alerts per your policy after completing the remediation steps in the alert.
+
+#### On-demand verification
+Use "verify secret" (in the alert detail) after following its Recommendations & Remediation or when a prior attempt returned Unknown. The timestamp updates on completion.
+
+
 ## Related articles
 
 - [Troubleshoot secret scanning](github-advanced-security-secret-scanning-troubleshoot.md)
