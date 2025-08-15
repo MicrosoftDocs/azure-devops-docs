@@ -4,9 +4,6 @@ ms.custom: devx-track-azurecli
 description: Step-by-step tutorial to customize a pipeline
 ms.topic: quickstart
 ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
-ms.manager: jepling
-ms.author: vijayma
-author: vijayma
 ms.date: 06/09/2025
 monikerRange: "<=azure-devops"
 ---
@@ -17,7 +14,7 @@ monikerRange: "<=azure-devops"
 
 This article is a step-by-step guide on common ways to customize your pipeline.
 
-## Prerequisite
+## Prerequisites
 
 Follow instructions in [Create your first pipeline](create-first-pipeline.md) to create a working pipeline.
 
