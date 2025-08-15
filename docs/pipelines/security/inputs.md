@@ -2,8 +2,7 @@
 title: Securely use variables and parameters
 description: Find out how to safely accept input from pipeline users in Azure Pipelines.
 ms.assetid: ada3e166-c606-48b3-8e5e-7d83b1c1c962
-ms.reviewer: vijayma
-ms.date: 08/14/2025
+ms.date: 08/15/2025
 monikerRange: '>= azure-devops-2020'
 #customer intent: As an Azure Pipeline administrator, I want to understand how to securely accept user input so I can avoid security risks from variable and parameter usage in my pipelines.
 ---
@@ -97,7 +96,7 @@ Using the [Builds - Queue](/rest/api/azure/devops/build/builds/queue) or the [Ru
 {
   "$id": "1",
   "innerException": null,
-  "message": "You can't set the following variables (system.definitionId). If you want to be able to set these variables, then edit the pipeline and select Settable at queue time on the variables tab of the pipeline editor.",
+  "message": "You can't set the following variables (BuildConfiguration). If you want to be able to set these variables, then edit the pipeline and select Settable at queue time on the variables tab of the pipeline editor.",
   "typeName": "Microsoft.Azure.Pipelines.WebApi.PipelineValidationException, Microsoft.Azure.Pipelines.WebApi",
   "typeKey": "PipelineValidationException",
   "errorCode": 0,
