@@ -70,7 +70,7 @@ sections:
       - question: |
           Q: How are daily pro-rated charges calculated? 
         answer: |
-          A: The quantity for all Azure DevOps meters, Basic, Basic + Test Plans, MS-Hosted CI/CD, Self-Hosted CI/CD and Artifacts, pro-rates at 1/31st of a unit per day. So, your charges during a month with fewer than 31 days are slightly less than the published monthly rate.
+          A: The quantity for all Azure DevOps meters, Basic, Basic + Test Plans (Standard), MS-Hosted CI/CD, Self-Hosted CI/CD and Artifacts, pro-rates at 1/31st of a unit per day. So, your charges during a month with fewer than 31 days are slightly less than the published monthly rate.
           
       - question: |
           Q: What happens if I set up billing before my Azure Test Plans trial expires?
@@ -282,6 +282,11 @@ sections:
             - Group by tag, and see charges stacked by organization
           
                ![Screenshot of grouping by tag showing stacked charges.](media/billing-faq/group-by-tag-charges-stacked-by-organization.png)
+
+      - question: |
+          Q: What are the `Standard User` and `Basic User` meters I see on my bill? 
+        answer: |
+          A: The `Standard User` meter corresponds to the `Basic + Test Plans` access level. The `Basic User` meter corresponds to the `Basic` access level.
           
           ## Azure portal integration
 
