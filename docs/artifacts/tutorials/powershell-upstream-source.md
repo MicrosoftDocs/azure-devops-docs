@@ -4,6 +4,7 @@ description: How to use the PowerShell Gallery as an upstream source
 ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
+ms.topic: tutorial
 ms.date: 10/17/2023
 monikerRange: 'azure-devops'
 "recommendations": "true"

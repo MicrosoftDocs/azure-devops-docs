@@ -4,7 +4,7 @@ description: Learn how to connect to your Azure Artifacts feed and restore your 
 ms.service: azure-devops-artifacts
 ms.assetid: 0f66e727-e76a-4a72-be12-3fa1775b9e2c
 ms.manager: mijacobs
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: engagement-fy23
 ms.date: 06/11/2024
 monikerRange: '>= azure-devops-2020'

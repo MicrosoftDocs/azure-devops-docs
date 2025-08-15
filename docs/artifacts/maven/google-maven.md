@@ -2,7 +2,7 @@
 title: Use packages from Google Maven Repository upstream source
 description: How to consume packages from Google Maven Repository upstream source
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 11/14/2023
 monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
