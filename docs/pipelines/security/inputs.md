@@ -5,19 +5,20 @@ ms.assetid: ada3e166-c606-48b3-8e5e-7d83b1c1c962
 ms.reviewer: vijayma
 ms.date: 08/14/2025
 monikerRange: '>= azure-devops-2020'
+#customer intent: As an Azure Pipeline administrator, I want to understand how to securely accept user input so I can avoid security risks from variable and parameter usage in my pipelines.
 ---
 
 # Securely use pipeline variables and parameters
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-In Azure Pipelines, you can allow users to customize pipeline execution by using variables and parameters to collect their input. However, accepting user input can also introduce security risks if not handled properly. In this article, you learn how to securely use variables and parameters in your pipeline.
+In Azure Pipelines, you can allow users to customize pipeline execution by collecting their input with variables and parameters. However, accepting user input can also introduce security risks if not handled properly. In this article, you learn how to securely use variables and parameters in your pipeline.
 
 [!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
 ## Variables
 
-Variables are as a convenient way to gather user input in advance and facilitate data transfer between pipeline steps. However, variables that are defined in YAML tasks or scripts are read-write by default. Downstream steps can modify variable values unexpectedly.
+Variables are as a convenient way to gather user input in advance and facilitate data transfer between pipeline steps. However, variables that are defined in YAML tasks or scripts are read-write by default. Values set in upstream steps can modify downstream values unexpectedly.
 
 For example, the following script snippet calls a variable called `MyConfig`.
 
@@ -25,9 +26,9 @@ For example, the following script snippet calls a variable called `MyConfig`.
 msbuild.exe myproj.proj -property:Configuration=$(MyConfig)
 ```
 
-If a preceding step set the `MyConfig` variable value to `Debug & deltree /y c:`, running this script and deleting the contents of the build agent could lead to unintended consequences. This example highlights the potential danger of such settings.
+If a preceding step set the `MyConfig` variable value to `Debug & deltree /y c:`, running this script deletes the contents of the build agent and could lead to unintended consequences. This example highlights the potential danger of such settings.
 
-System variables like `Build.SourcesDirectory` and task output variables are always read-only. You can also designate a variable that's created in a script or YAML task as read-only by passing the `isReadonly=true` flag in its logging command.
+System variables like `Build.SourcesDirectory` and task output variables are always read-only. You can also designate a variable created in a script or YAML task as read-only by passing the `isReadonly=true` flag in its logging command.
 
 In a YAML variable definition, you can specify a read-only variable by using the specific `readonly` key:
 
@@ -44,6 +45,8 @@ Use particular caution with secret variables. The recommended methods for settin
 
 When you define a variable in the Azure Pipelines UI, you can select whether to allow users to override the value during pipeline execution. Variables that allow users to set their value at queue time are called queue-time variables and can be defined only in the Azure Pipelines **Variables** UI.
 
+In YAML pipelines, you designate these variables by selecting **Let users override this value when running this pipeline**. In the Classic editor, you select the check box for **Settable at queue time**.
+
 :::image type="content" source="media/define-variables-yaml-pipeline.png" alt-text="Screenshot of defining a queue-time variable.":::
 
 When a user manually runs the pipeline, they can select queue-time variables and change the values.
@@ -56,37 +59,35 @@ Users must have [Edit queue build configuration](/azure/devops/pipelines/policie
 
 ### Limit variables that can be set at queue time
 
-The Azure Pipelines UI and the REST API that runs a pipeline provide ways for users to add new variables at queue time. This ability allows users to create variables that the pipeline author didn't define, to override system variables, and to set any variable values at queue time.
+The Azure Pipelines UI and the REST API that runs a pipeline provide ways for users to add new variables at queue time. This ability allows users to create variables that the pipeline author didn't define, to override system variables, and to set values for existing variables at queue time.
 
 :::image type="content" source="media/add-variables-at-queue-time.png" alt-text="Screenshot of adding a queue-time variable just before running the pipeline.":::
 
-To address risks and issues that these abilities cause, you can limit variables that can be set at queue time. When you enable the **Limit variables that can be set at queue time** setting, only variables that are explicitly marked as **Settable at queue time** or **Let users override this value when running this pipeline** can be set at queue time.
+To avoid issues caused by these abilities, you can limit variables that can be set at queue time. You can enable the **Limit variables that can be set at queue time** setting so users can only set variables that are explicitly marked as **Settable at queue time** or **Let users override this value when running this pipeline** at queue time.
 
 This setting can be applied at the organization and project levels.
 
 :::image type="content" source="media/org-level-settings-off.png" alt-text="Screenshot of the option limiting variables that can be set at queue time at organization level.":::
 
-- **Project Collection Administrators** can apply this setting at the organization level in **Organization settings** > **Pipelines** > **Settings**. When the setting is **On**, only variables that are explicitly marked as **Settable at queue time** can be set at queue time for all pipelines in all projects in the organization.
+**Project Collection Administrators** can apply this setting at the organization level in **Organization settings** > **Pipelines** > **Settings**. When the setting is **On**, only variables that are explicitly marked as **Settable at queue time** can be set at queue time for all pipelines in all projects in the organization.
 
-  :::image type="content" source="media/org-level-settings-off.png" alt-text="Screenshot of the option limiting variables that can be set at queue time at organization level.":::
+:::image type="content" source="media/org-level-settings.png" alt-text="Screenshot of the enabled option limiting variables that can be set at queue time at organization level.":::
 
-- **Project Administrators** can apply this setting at the project level in **Project settings** > **Pipelines** > **Settings**. When the setting is **On**, only variables that are explicitly marked as **Settable at queue time** can be set at queue time for all pipelines in this project. If the setting isn't enabled at the organization level, it can be enabled or disabled for individual projects.
+**Project Administrators** can apply this setting at the project level in **Project settings** > **Pipelines** > **Settings**. When the setting is **On**, only variables that are explicitly marked as **Settable at queue time** can be set at queue time for all pipelines in this project. If the setting isn't enabled at the organization level, it can be enabled or disabled for individual projects.
 
-  If the organization-level setting is enabled, it applies to all projects in the organization and can't be turned off at the project level.
+If the organization-level setting is enabled, it applies to all projects in the organization and can't be turned off at the project level.
 
-  :::image type="content" source="media/project-level-settings.png" alt-text="Screenshot of the option limiting variables that can be set at queue time unavailable at project level.":::
+:::image type="content" source="media/project-level-settings.png" alt-text="Screenshot of the option limiting variables that can be set at queue time unavailable at project level.":::
 
-The following example shows the variables for a Classic pipeline, with some of them marked **Settable at queue time**.
+The following example shows the variables for a Classic pipeline, with some of them marked **Settable at queue time**. The `BuildPlatform` variable can be set at queue time, but the `BuildConfiguration` can't.
 
 :::image type="content" source="media/define-variables-classic-pipeline.png" alt-text="Screenshot of defining a variable in a Classic pipeline.":::
 
-When you run the pipeline, only the variables marked **Settable at queue time** are visible on the **Variables** screen to be selected for setting. The `system.debug` variable can be set at queue time, but the `system.definitionId` can't.
-
-If the **Limit variables that can be set at queue time** setting is enabled at the project or organization level, the **Add variable** button doesn't appear.
+When you run this pipeline, only the variables marked **Settable at queue time** are visible on the **Variables** screen to be selected. If **Limit variables that can be set at queue time** is enabled at the project or organization level, the **Add variable** button doesn't appear.
 
 :::image type="content" source="media/add-variables-at-queue-time-setting-on.png" alt-text="Screenshot of variables panel with setting on.":::
 
-Using the [Builds - Queue](/rest/api/azure/devops/build/builds/queue) or the [Runs - Run Pipeline](/rest/api/azure/devops/pipelines/runs/run-pipeline) APIs to queue a pipeline run and attempting to set the value of a variable not marked **Settable at queue time** fails with an error similar to the following.
+Using the [Builds - Queue](/rest/api/azure/devops/build/builds/queue) or the [Runs - Run Pipeline](/rest/api/azure/devops/pipelines/runs/run-pipeline) APIs to queue a pipeline run and attempting to set the value of a variable not marked **Settable at queue time** fails with an error similar to the following:
  
 ```json
 {
@@ -104,14 +105,15 @@ Using the [Builds - Queue](/rest/api/azure/devops/build/builds/queue) or the [Ru
 
 ## Parameters
 
-A running pipeline can't modify pipeline parameters as it can variables. Parameters have data types such as `number` and `string`, and can be restricted to specific value subsets. This restriction is valuable when a user-configurable aspect of the pipeline should only accept values from a predefined list, ensuring that the pipeline doesn't accept arbitrary data.
+A running pipeline can't modify pipeline parameters like variables. Parameters have data types such as `number` and `string`, and can be restricted to specific value subsets. This restriction is valuable when a user-configurable aspect of the pipeline should only accept values from a predefined list, ensuring that the pipeline doesn't accept arbitrary data.
 
 <a name="shellTasksValidation"></a> 
+<a name="#enable-shell-tasks-arguments-parameter-validation"></a>
 ### Enable shell tasks arguments validation
 
-Pipelines can reference tasks executed within the pipeline. Some tasks include an `arguments` parameter that allows you to specify more options for the task.
+Pipelines can reference tasks executed within the pipeline. Some tasks include an `arguments` parameter that allows users to specify more options for the task.
 
-Applying the setting **Enable shell tasks arguments validation** validates `argument` parameters for certain built-in shell tasks to check for inputs that can inject commands into scripts. The check ensures that the shell correctly executes characters like semicolons, quotes, and parentheses in the following specific tasks:
+Applying the  **Enable shell tasks arguments validation** setting validates `argument` parameters for built-in shell tasks to check for inputs that can inject commands into scripts. The check ensures that the shell correctly executes characters like semicolons, quotes, and parentheses in the following specific tasks:
 
 - PowerShell 
 - BatchScript
