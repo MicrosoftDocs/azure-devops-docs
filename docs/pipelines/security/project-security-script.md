@@ -46,7 +46,7 @@ Use the [Azure DevOps REST API](/rest/api/azure/devops/build/general-settings/up
 
 ## Script to automate settings
 
-Save the PowerShell script as a `.ps1` file (example: `Update-AzureDevOpsSecuritySettings.ps1`). You can run the script with our without parameters. 
+Save the PowerShell script as a `.ps1` file (example: `Update-AzureDevOpsSecuritySettings.ps1`). You can run the script with or without parameters. 
 
 **Update all projects in an organization**
 
