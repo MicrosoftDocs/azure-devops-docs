@@ -262,49 +262,52 @@ Create an *azure-pipelines.yml* file that has the following contents in your pro
 
 ```yaml
 pool:
-  vmImage: windows-latest
+  vmImage: 'windows-latest'
 
-strategy:
-  matrix:
-    node10:
-      nodeversion: 10.x
-    node12:
-      nodeversion: 12.x
-  maxParallel: 2
+jobs:
+- job: NodeJS
+  strategy:
+    matrix:
+      node14:
+        nodeVersion: '14.x'
+      node16:
+        nodeVersion: '16.x'
+    maxParallel: 2
+  steps:
+    - task: NodeTool@0
+      displayName: 'Install Node.js $(nodeVersion)'
+      inputs:
+        versionSpec: '$(nodeVersion)'
+        checkLatest: true
 
-steps:
-- task: UseNode@1
-  displayName: 'Use Node $(nodeversion)*'
-  inputs:
-    version: '$(nodeversion)'
-
-- script: 'where node'
-  displayName: 'Command Line Script'
+    - script: |
+        echo Using Node version $(nodeVersion)
+        node --version
+      displayName: 'Verify Node Installation'
 ```
 
->[!NOTE]
->For Linux or macOS agents, change `vmImage` to your agent specification, such as `ubuntu-latest`, and change the `script` contents to `which node`.
-
-Save and run the pipeline. The job runs twice, one for each version of Node.js you specified in the `nodeversion` variable.
+Save and run the pipeline. The job runs twice, one for each version of Node.js you specified in the `nodeVersion` variable.
 
 The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script writes the installed version to the command line.
 
 #### [Classic](#tab/classic/)
 
 1. In the **Agent job** for your Classic pipeline, under **Execution plan**, set **Parallelism** to **Multi-configuration**.
-1. Under **Multipliers**, enter *NodeVersionSpec*.
+1. Under **Multipliers**, enter *nodeVersion*.
 1. Set **Maximum number of agents** to *2*.
 1. Add the **Node.js tool installer** task to your pipeline with the following settings:
-   - **Task version**: Select **1.\* (preview)**.
-   - **Version**: Enter *$(NodeVersionSpec)*.
-1. Add the **Command Line** task to your pipeline. Under **Script**:
-   - Enter *where node* if you're running on a Windows agent.
-   - Enter *which node* if you're running on a macOS or Linux agent.
-1. On the [Variables tab](../build/variables.md), define the variable *NodeVersionSpec* with the value *10.x, 12.x*, and select **Settable at queue time**.
+   - Enter *$(nodeVersion)* under **Version Spec**.
+   - Select the check box for **Check for Latest Version**.
+1. Add the **Command line** task to your pipeline, and enter the following code under **Script**:
+
+   `echo Using Node version $(nodeVersion)`<br>
+   `node --version`
+
+1. On the [Variables tab](../build/variables.md), define the variable *nodeVersion* with the value *14.x, 16.x*, and select **Settable at queue time**.
 1. Select **Save & queue**.
 1. On the **Run pipeline** screen, select **Save and run**.
 
-The job runs twice, one for each version of Node.js you specified in the `NodeVersionSpec` variable. The [Node.js tool installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) task downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
+The job runs twice, one for each version of Node.js you specified in the `nodeVersion` variable. The [Node.js tool installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) task downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
 
 ---
 
