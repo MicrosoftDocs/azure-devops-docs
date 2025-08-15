@@ -5,13 +5,14 @@ ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
 ms.date: 08/15/2025
 monikerRange: '<= azure-devops'
+#customer intent: As a developer, I want to know how PowerShell scripts work in pipelines so I can add business logic to my pipelines.
 ---
 
 # PowerShell scripts for pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how PowerShell scripts can add business logic to pipelines. The Azure Pipelines [PowerShell v2 task](/azure/devops/pipelines/tasks/reference/powershell-v2) can run PowerShell scripts that access the Azure DevOps REST API, work with Azure DevOps work items, manage tests, or call other services.
+This article explains how PowerShell scripts can add business logic to pipelines. The Azure Pipelines [PowerShell v2 task](/azure/devops/pipelines/tasks/reference/powershell-v2) can run PowerShell scripts in your pipelines that access the Azure DevOps REST API, work with Azure DevOps work items, manage tests, or call other services.
 
 You can use [predefined variables](../build/variables.md) or [user-defined variables](../process/variables.md#user-defined-variables) in PowerShell scripts. You can also set [multi-job output variables](../process/variables.md#set-a-multi-job-output-variable) to make variables available to other jobs. For more information, see [Define variables](../process/variables.md).
 
