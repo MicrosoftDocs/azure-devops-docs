@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="< azure-devops"
 
-Microsoft-hosted agents are only available with Azure DevOps Services, which is hosted in the cloud. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with on-premises TFS or Azure DevOps Server. With these on-premises versions, you must use [self-hosted agents](agents.md).
+Microsoft-hosted agents are only available with Azure DevOps Services, which is hosted in the cloud. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with on-premises Azure DevOps Server. With these on-premises versions, you must use [self-hosted agents](agents.md).
 
 [!INCLUDE [include](../../includes/version-selector.md)]
 
@@ -84,18 +84,18 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 #### macOS images updates
 
-* [[macOS] Xcode support policy will be changed on August 11, 2025](https://github.com/actions/runner-images/issues/12541). For the current list of Xcode versions supported on the macOS 15 image, see [macOS 15 - Xcode](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md#xcode).
+* [[macOS] Starting August 11, 2025, if your workflow is running on a macOS-15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
 * The macOS 15 Sequoia hosted agent image is in GA.
  * The `macOS-latest` label still refers to `macOS-14`. The migration of `macos-latest` to refer to `macOS-15` will begin August 4, 2025, with a planned completion date of August 30, 2025. For more information, see [[macOS] macos-latest YAML-label will use macos-15 in August 2025](https://github.com/actions/runner-images/issues/12520).
 * [[macOS] Xcode 15.4 will be removed from macOS15 images on May 29th, 2025](https://github.com/actions/runner-images/issues/12195)
 * [The macOS-15 Sequoia image is available in preview](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os)
 * Apple silicon (ARM64) support for macOS image - for more information on joining the preview, see [Apple silicon (ARM64) support for macOS image](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
-* The macOS-12 Monterey image has been retired
+* The macOS-12 Monterey image is retired
 
 * * *
 
 > [!IMPORTANT]
-> To request additional software to be installed on Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/runner-images), where we manage the scripts to generate various images.
+> To request software to be added to Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/runner-images), where we manage the scripts to generate various images.
 
 
 ### How to identify pipelines using a deprecated hosted image
@@ -331,7 +331,7 @@ We can't increase the memory, processing power, or disk space for Microsoft-host
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. What should I do?
 
-Microsoft-hosted agents are only available in Azure Pipelines and not in TFS or Azure DevOps Server.
+Microsoft-hosted agents are only available in Azure Pipelines and not in Azure DevOps Server.
 
 By default, all project contributors in an organization have access to the Microsoft-hosted agents. But, your organization administrator may limit the access of Microsoft-hosted agents to select users or projects. Ask the owner of your Azure DevOps organization to grant you permission to use a Microsoft-hosted agent. See [agent pool security](pools-queues.md#security).
 
@@ -386,7 +386,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
 #### Xcode
 
-  If you use the [Xcode task](/azure/devops/pipelines/tasks/reference/xcode-v5) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
+  If you use the [Xcode task](/azure/devops/pipelines/tasks/reference/xcode-v5) included with Azure Pipelines and Azure DevOps Server, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_13.2.app/Contents/Developer"`
 
