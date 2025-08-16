@@ -16,11 +16,11 @@ This article explains how PowerShell scripts can add business logic to Azure Pip
 
 You can use [predefined variables](../build/variables.md) or [user-defined variables](../process/variables.md#user-defined-variables) in PowerShell scripts. You can also set [multi-job output variables](../process/variables.md#set-a-multi-job-output-variable) to make variables available to other jobs. For more information, see [Define variables](../process/variables.md).
 
-You can use named parameters in your PowerShell scripts. Other kinds of parameters, such as [switch parameters](/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters#switch-parameters), aren't supported. For more information, see [How to declare cmdlet parameters](/powershell/scripting/developer/cmdlet/how-to-declare-cmdlet-parameters).
+You can also use named parameters in your PowerShell scripts. Other kinds of parameters, such as [switch parameters](/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters#switch-parameters), aren't supported. For more information, see [How to declare cmdlet parameters](/powershell/scripting/developer/cmdlet/how-to-declare-cmdlet-parameters).
 
 ## PowerShell script task
 
-To call a PowerShell script, you add the [PowerShell v2 (PowerShell@2)](/azure/devops/pipelines/tasks/reference/powershell-v2) task to your pipeline, and then call a PowerShell script file path or enter an inline PowerShell script.
+To use a PowerShell script, you add the [PowerShell v2 (PowerShell@2)](/azure/devops/pipelines/tasks/reference/powershell-v2) task to your pipeline, and then call a PowerShell script file or enter an inline PowerShell script.
 
 The build uses the active branch of your code. If your pipeline run uses the `main` branch of your code, your script also uses the `main` branch.
 
@@ -49,7 +49,7 @@ steps:
 >[!NOTE]
 > By default, the `PowerShell@2` task uses Windows PowerShell for Windows agents and the latest version of PowerShell for Linux/macOS agents. To use the latest version of PowerShell on Windows agents, set the `pwsh` parameter to `true`.
 
-You can also add a [`pwsh`](/azure/devops/pipelines/yaml-schema/steps-pwsh) or [powershell](/azure/devops/pipelines/yaml-schema/steps-powershell) step to your YAML pipeline as a shortcut for the `PowerShell@2` step. The `pwsh` step runs a script in PowerShell Core on Windows, macOS, and Linux. The `powershell` step uses Windows PowerShell on Windows and the latest version of PowerShell on Linux and macOS.
+You can also add a [`pwsh`](/azure/devops/pipelines/yaml-schema/steps-pwsh) or [`powershell`](/azure/devops/pipelines/yaml-schema/steps-powershell) step to your YAML pipeline as a shortcut for the `PowerShell@2` step. The `pwsh` step runs a script in PowerShell Core on Windows, macOS, and Linux. The `powershell` step uses Windows PowerShell on Windows and the latest version of PowerShell on Linux and macOS.
 
 ```yaml
 steps:
@@ -61,32 +61,32 @@ steps:
 
 ### [Classic](#tab/classic)
 
->[!NOTE]
-> By default, PowerShell v2 uses Windows PowerShell for Windows agents and the latest version of PowerShell for Linux/macOS agents. To use the latest version of PowerShell on Windows agents, select **Use PowerShell Core** under **Advanced options** in the PowerShell pane.
-
-1. In a Classic pipeline, add the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) to your pipeline.
+1. In a Classic pipeline, add the [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task to your pipeline.
 
 1. In the **PowerShell** pane, select either **File Path** or **Inline** under **Type**.
 
-   - For **File path**, the default, add the location of your script file relative to the working directory under **Script Path**.
+   - If you choose **File path**, the default, add the location of your script file relative to the working directory under **Script Path**.
    - For **Inline**, enter your PowerShell commands in the **Script** field.
 
    :::image type="content" source="media/powershell-update-script-path.png" alt-text="Screenshot of PowerShell task script path setting.":::
+
+>[!NOTE]
+> By default, PowerShell v2 uses Windows PowerShell for Windows agents and the latest version of PowerShell for Linux/macOS agents. To use the latest version of PowerShell on Windows agents, select **Use PowerShell Core** under **Advanced options** in the PowerShell pane.
 
 ---
 
 ## Example script to apply version to assemblies
 
-The following PowerShell script applies a version based on build number to assemblies. For example, if your build number format definition `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)` produced the build number **Build HelloWorld_2024.07.19.1**, the script applies version **2024.07.19.1** to your assemblies.
+The following PowerShell script applies a version based on build number to assemblies. For example, if your build number format definition `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)` produces the build number **Build HelloWorld_2024.07.19.1**, the script applies version **2024.07.19.1** to your assemblies.
 
-For the script to run successfully, your build number format must have four segments. For more information, see [Run or build numbers](../process/run-number.md).
+For this script to run successfully, your build number format must have four segments. For more information, see [Run or build numbers](../process/run-number.md).
 
 > [!NOTE]
 > Build number is also called run number.
 
 ### [YAML](#tab/yaml)
 
-1. Customize your build number in the YAML pipeline by using the `name` property at the root level of the pipeline.
+1. Customize your build number definition in the YAML pipeline by using the `name` property at the root level of the pipeline.
 
    ```yaml
    name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
@@ -98,7 +98,7 @@ For the script to run successfully, your build number format must have four segm
 
 #### [Classic](#tab/classic)
 
-1. In a Classic pipeline, specify your build number format in the **Options** tab under **Build number format**. For example, enter `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`.
+1. In your Classic pipeline, specify your build number format in the **Options** tab under **Build number format**. For example, enter `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`.
 
    :::image type="content" source="media\build-number-format.png" alt-text="Screenshot of build number format setting.":::
 
@@ -196,7 +196,7 @@ The following PowerShell script uses environment variables to access the [Azure 
 
 #### [YAML](#tab/yaml)
 
-In your YAML pipeline, you can define the environmental variable `$env:SYSTEM_ACCESSTOKEN` in the `PowerShell@2` task, and use it in an inline script to get the OAuth token to access the REST API.
+In your YAML pipeline, you can define the environmental variable `$env:SYSTEM_ACCESSTOKEN` in a `PowerShell@2` task, and use it in the inline script to get the OAuth token to access the REST API.
 
 ```yaml
 - task: PowerShell@2
@@ -221,7 +221,7 @@ To enable your script to use the build process OAuth token, select the **Agent j
 
 Your script can now use the `SYSTEM_ACCESSTOKEN` environment variable to access the [Azure Pipelines REST API](../../integrate/index.md).
 
-The following inline script in a **PowerShell Script** task uses the Azure Pipelines REST API to retrieve the pipeline definition.
+The following inline script in a **PowerShell** task uses the Azure Pipelines REST API to retrieve the pipeline definition.
 
 ```powershell
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
