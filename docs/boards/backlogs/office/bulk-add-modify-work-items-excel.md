@@ -496,7 +496,7 @@ Use the **Select User** feature to find user accounts and assign values to perso
 
 1. In the **Assign User** dialog, enter the name of the user account. As you type, the text box automatically filters the results until you can select the account of interest.
 
-   :::image type="content" source="media/excel/assign-user-to-field.png" border="false" alt-text="Screenshot of the Assign User dialog.":::
+   :::image type="content" source="media/excel/excel-assign-user-to-field.png" border="false" alt-text="Screenshot of the Assign User dialog.":::
 
    - Enter a letter to jump to names starting with that letter. Only user names are recognized, not account aliases.
    
