@@ -97,7 +97,7 @@ sections:
 
       - question:  How do I publish to a tree? 
         answer: |
-          Follow the instructions provided in [Bulk add or modify work items with Excel, Import work items, tree list](bulk-add-modify-work-items-excel.md#tree-list) 
+          Follow the instructions provided in [Bulk add or modify work items with Excel, Import work items, tree list](bulk-add-modify-work-items-excel.md#tree-lists) 
 
       - question: Why does my direct-links query appear as a flat list in Excel?
         answer: |
