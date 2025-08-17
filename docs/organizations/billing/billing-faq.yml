@@ -70,7 +70,7 @@ sections:
       - question: |
           Q: How are daily pro-rated charges calculated? 
         answer: |
-          A: The quantity for all Azure DevOps meters, Basic, Basic + Test Plans, MS-Hosted CI/CD, Self-Hosted CI/CD and Artifacts, pro-rates at 1/31st of a unit per day. So, your charges during a month with fewer than 31 days are slightly less than the published monthly rate.
+          A: The quantity for all Azure DevOps meters, Basic, Basic + Test Plans (Standard), MS-Hosted CI/CD, Self-Hosted CI/CD and Artifacts, pro-rates at 1/31st of a unit per day. So, your charges during a month with fewer than 31 days are slightly less than the published monthly rate.
           
       - question: |
           Q: What happens if I set up billing before my Azure Test Plans trial expires?
@@ -282,6 +282,11 @@ sections:
             - Group by tag, and see charges stacked by organization
           
                ![Screenshot of grouping by tag showing stacked charges.](media/billing-faq/group-by-tag-charges-stacked-by-organization.png)
+
+      - question: |
+          Q: What are the `Standard User` and `Basic User` meters I see on my bill? 
+        answer: |
+          A: The `Standard User` meter corresponds to the `Basic + Test Plans` access level. The `Basic User` meter corresponds to the `Basic` access level.
           
           ## Azure portal integration
 
@@ -318,10 +323,30 @@ sections:
           2. In the Azure portal, delete the Azure DevOps resource group if it's still there. 
           3. In Azure DevOps Billing settings, [set up billing for your organization](set-up-billing-for-your-organization-vs.md#set-up-billing).
 
+          > [!IMPORTANT]
+          > - When you remove the billing subscription from your organization, any paid quantities for the following resources will immediately go back to the free tier of service until billing is set up again:
+          >    - Basic
+          >    - Azure Artifacts
+          >    - Azure Test Plans
+          >    - Microsoft-hosted CI/CD
+          >    - Self-hosted CI/CD
+
       - question: |
           Q: Why is the name of my organization resource incorrect? 
         answer: |
-          A: If you have [renamed your organization](../accounts/rename-organization.md) after you set up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing) again. 
+          A: If you have [renamed your organization](../accounts/rename-organization.md) after you set up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, do these steps:
+
+          1. In Azure DevOps Billing settings, [remove your billing subscription](change-azure-subscription.md#remove-your-billing-subscription).
+          2. In the Azure portal, delete the Azure DevOps resource group if it's still there. 
+          3. In Azure DevOps Billing settings, [set up billing for your organization](set-up-billing-for-your-organization-vs.md#set-up-billing).
+
+          > [!IMPORTANT]
+          > - When you remove the billing subscription from your organization, any paid quantities for the following resources will immediately go back to the free tier of service until billing is set up again:
+          >    - Basic
+          >    - Azure Artifacts
+          >    - Azure Test Plans
+          >    - Microsoft-hosted CI/CD
+          >    - Self-hosted CI/CD
          
       - question: |
           Q: What happens if I delete my organization resource? 
