@@ -55,7 +55,7 @@ CRATE_NAME = { version = "VERSION_NUMBER", registry = "FEED_NAME" }
     cargo build
     ```
 
-The downloaded crates are cached locally in your `~/.cargo/registry/cache/<registry-hash>/` where the *<registry-hash>* is a unique identifier based on your feed URL.
+The downloaded crates are cached locally in your `~/.cargo/registry/cache/<registry-hash>/` where the *registry-hash* is a unique identifier based on your feed URL.
 
 :::image type="content" source="media/cargo-fetch-packages.png" alt-text="A screenshot displaying the result of the cargo fetch command.":::
 
