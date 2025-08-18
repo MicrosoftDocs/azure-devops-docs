@@ -3,7 +3,7 @@ title: PowerShell scripts for pipelines
 description: Learn about using PowerShell scripts to customize your pipelines by adding business logic.
 ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.date: 08/15/2025
+ms.date: 08/18/2025
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to know how PowerShell scripts work in pipelines so I can add business logic to my pipelines.
 ---
@@ -20,21 +20,11 @@ You can also use named parameters in your PowerShell scripts. Other kinds of par
 
 ## PowerShell script task
 
-To use a PowerShell script, you add the [PowerShell v2 (PowerShell@2)](/azure/devops/pipelines/tasks/reference/powershell-v2) task to your pipeline, and then call a PowerShell script file or enter an inline PowerShell script.
+To use a PowerShell script, you add the [PowerShell v2 (PowerShell@2)](/azure/devops/pipelines/tasks/reference/powershell-v2) task to your pipeline, and then enter an inline PowerShell script or call a PowerShell script file.
 
 The build uses the active branch of your code. If your pipeline run uses the `main` branch of your code, your script also uses the `main` branch.
 
 ### [YAML](#tab/yaml)
-
-The following example adds the `PowerShell@2` step to a YAML pipeline. The code invokes a PowerShell script file named *test.ps1* located in the root of your repository.
-
-```yaml
-steps:
-- task: PowerShell@2
-  inputs:
-    targetType: 'filePath'
-    filePath: 'test.ps1'
-```
 
 The following example uses `targetType: 'inline'` and adds an inline script in the `script` property.
 
@@ -46,10 +36,20 @@ steps:
     script: Write-Host "Hello world!"
 ```
 
->[!NOTE]
-> By default, the `PowerShell@2` task uses Windows PowerShell for Windows agents and the latest version of PowerShell for Linux/macOS agents. To use the latest version of PowerShell on Windows agents, set the `pwsh` parameter to `true`.
+The following example adds the `PowerShell@2` step to a YAML pipeline. The code invokes a PowerShell script file named *test.ps1* located in the root of your repository.
 
-You can also add a [`pwsh`](/azure/devops/pipelines/yaml-schema/steps-pwsh) or [`powershell`](/azure/devops/pipelines/yaml-schema/steps-powershell) step to your YAML pipeline as a shortcut for the `PowerShell@2` step. The `pwsh` step runs a script in PowerShell Core on Windows, macOS, and Linux. The `powershell` step uses Windows PowerShell on Windows and the latest version of PowerShell on Linux and macOS.
+```yaml
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'filePath'
+    filePath: 'test.ps1'
+```
+
+>[!NOTE]
+> By default, the `PowerShell@2` task uses Windows PowerShell 5.1 for Windows agents and the latest version of PowerShell for Linux/macOS agents. To use the latest version of PowerShell on Windows agents, you must add the `pwsh` parameter set to `true`.
+
+You can also add a [`pwsh`](/azure/devops/pipelines/yaml-schema/steps-pwsh) or [`powershell`](/azure/devops/pipelines/yaml-schema/steps-powershell) step to your YAML pipeline as a shortcut for the `PowerShell@2` step. The `pwsh` shortcut runs the latest version of PowerShell on Windows, macOS, or Linux. The `powershell` shortcut runs Windows PowerShell 5.1 on Windows or the latest version of PowerShell on Linux and macOS.
 
 ```yaml
 steps:
@@ -71,7 +71,7 @@ steps:
    :::image type="content" source="media/powershell-update-script-path.png" alt-text="Screenshot of PowerShell task script path setting.":::
 
 >[!NOTE]
-> By default, PowerShell v2 uses Windows PowerShell for Windows agents and the latest version of PowerShell for Linux/macOS agents. To use the latest version of PowerShell on Windows agents, select **Use PowerShell Core** under **Advanced options** in the PowerShell pane.
+> By default, the PowerShell v2 task uses Windows PowerShell 5.1 for Windows agents and the latest version of PowerShell for Linux/macOS agents. To use the latest version of PowerShell on Windows agents, select **Use PowerShell Core** under **Advanced options** in the PowerShell pane.
 
 ---
 
@@ -94,7 +94,7 @@ For this script to run successfully, your build number format must have four seg
 
 1. Save the following PowerShell script as a file at the root of your repository.
 
-1. Add a `pwsh` or `PowerShell@2` task step to your pipeline, and call the file path of the PowerShell script file, relative to the working directory.
+1. Add a `PowerShell@2` task step or `pwsh` or `powershell` shortcut to your pipeline, and call the file path of the PowerShell script file, relative to the working directory.
 
 #### [Classic](#tab/classic)
 
