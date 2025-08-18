@@ -3,7 +3,7 @@ title: Task types and usage
 description: Learn about tasks in Azure Pipelines pipeline jobs, including setting inputs and controlling run conditions.
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 08/14/2025
+ms.date: 08/18/2025
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 #customer intent: As an Azure Pipelines creator and user, I want to understand tasks in pipeline jobs so I can select and configure them correctly.
@@ -304,6 +304,8 @@ The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v
    `node --version`
 
 1. On the [Variables tab](../build/variables.md), define the variable *nodeVersion* with the value *14.x, 16.x*, and select **Settable at queue time**.
+   >[!NOTE]
+   > In a Release pipeline, select **Settable at release time**. For more information, see [How can I edit variables at release time?](../../release/index.md#q-how-can-i-edit-variables-at-release-time)
 1. Select **Save & queue**.
 1. On the **Run pipeline** screen, select **Save and run**.
 
