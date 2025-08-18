@@ -19,7 +19,7 @@ Azure Artifacts enables developers to host various package types in a feed, whet
 
 ## Create a feed
 
-To consume and publish Rust crates with Azure Artifacts, it's recommended to use two separate feeds: One dedicated feed for consuming crates from https://crates.io, and another separate feed for publishing your internal crates. See [Source Replacement](https://doc.rust-lang.org/cargo/reference/source-replacement.html#source-replacement) for more details. If you don’t already have a feed set up, here’s how to create one:
+To consume and publish Rust crates with Azure Artifacts, it's recommended to use two separate feeds: One dedicated feed for consuming crates from *crates.io*, and another separate feed for publishing your internal crates. See [Source Replacement](https://doc.rust-lang.org/cargo/reference/source-replacement.html#source-replacement) for more details. If you don’t already have a feed set up, here’s how to create one:
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
