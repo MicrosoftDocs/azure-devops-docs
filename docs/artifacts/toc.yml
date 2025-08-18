@@ -199,9 +199,9 @@
     - name: Project setup
       displayName: cargo, crate
       href: cargo/project-setup-cargo.md
-    - name: Cargo quickstart
-      displayName: cargo, crate
-      href: get-started-cargo.md
+    - name: Restore Cargo packages
+      href: cargo/cargo-restore.md
+      displayName: cargo, crate, restore
 - name: Upstream sources
   items:
   - name: What are upstream sources?
