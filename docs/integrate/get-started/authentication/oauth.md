@@ -1,6 +1,6 @@
 ---
 ms.topic: how-to
-title: OAuth 2.0 authentication for Azure DevOps REST APIs
+title: OAuth 2.0 Authentication for Azure DevOps REST APIs
 description: Learn how to use OAuth 2.0 authentication with Azure DevOps REST APIs, with Microsoft Entra ID as the recommended approach.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ai-usage: ai-assisted
@@ -18,50 +18,50 @@ ms.date: 07/14/2025
 Learn how to use OAuth 2.0 to authenticate your applications for Azure DevOps REST API access without requiring users to repeatedly provide credentials.
 
 > [!IMPORTANT]
-> **Microsoft Entra ID OAuth is the recommended approach** for new applications. Azure DevOps OAuth 2.0 is deprecated and no longer accepts new registrations as of April 2025, with full deprecation planned for 2026.
+> We recommend that you use Microsoft Entra ID OAuth for new applications. Azure DevOps OAuth 2.0 is deprecated and no longer accepts new registrations as of April 2025, with full deprecation planned for 2026.
 
 ## How OAuth 2.0 works with Azure DevOps
 
 > [!NOTE]
-> OAuth 2.0 is only available for Azure DevOps Services, not Azure DevOps Server. For on-premises scenarios, use [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Authentication, or [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+> OAuth 2.0 is available only for Azure DevOps Services, not Azure DevOps Server. For on-premises scenarios, use [Client libraries](../../concepts/dotnet-client-libraries.md), Windows Authentication, or [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize applications and generate access tokens for REST API calls. The process involves:
+Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize applications and generate access tokens for REST API calls. The process involves the following steps:
 
-1. **App registration**: Register your application with the OAuth provider
-2. **User authorization**: Users grant permission for your app to access their data
-3. **Token exchange**: Receive an access token to make API calls
-4. **API access**: Use the token for authenticated REST API requests
-5. **Token refresh**: Refresh expired tokens to maintain access
+- **App registration**: Register your application with the OAuth provider.
+- **User authorization**: Grant permission for your app to access user data.
+- **Token exchange**: Receive an access token to make API calls.
+- **API access**: Use the token for authenticated REST API requests.
+- **Token refresh**: Refresh expired tokens to maintain access.
 
-:::image type="content" source="media/oauth-overview.png" alt-text="OAuth 2.0 authorization flow diagram showing the process from app registration to API access.":::
+:::image type="content" source="media/oauth-overview.png" alt-text="Diagram that shows the OAuth 2.0 authorization flow process from app registration to API access.":::
 
 ## OAuth implementation options
 
-Choose the appropriate OAuth implementation based on your application's needs:
+Choose the appropriate OAuth implementation based on your application's needs.
 
-### Microsoft Entra ID OAuth (Recommended)
+### Microsoft Entra ID OAuth (recommended)
 
 Microsoft Entra ID OAuth provides the most secure and future-proof authentication method for Azure DevOps applications. Benefits include:
 
 - **Enterprise integration**: Seamless integration with existing Microsoft Entra ID infrastructure
-- **Enhanced security**: Advanced security features including conditional access and multifactor authentication
+- **Enhanced security**: Advanced security features include Conditional Access and multifactor authentication
 - **Future support**: Actively maintained and supported platform
 - **Unified identity**: Single sign-on experience across Microsoft services
 
 **Get started**: Follow our [Microsoft Entra ID OAuth guide](entra-oauth.md) for implementation details and migration guidance.
 
-### Azure DevOps OAuth (Deprecated)
+### Azure DevOps OAuth (deprecated)
 
 > [!WARNING]
-> Azure DevOps OAuth is deprecated. New app registrations are no longer accepted as of April 2025, and the service is schedule for full deprecation in 2026. Migrate existing applications to Microsoft Entra ID OAuth.
+> Azure DevOps OAuth is deprecated. New app registrations are no longer accepted as of April 2025. The service is scheduled for full deprecation in 2026. Migrate existing applications to Microsoft Entra ID OAuth.
 
 For existing Azure DevOps OAuth applications:
-- Review the [Azure DevOps OAuth guide](./azure-devops-oauth.md) for current implementation details
-- Plan migration to Microsoft Entra ID OAuth before 2026
-- [Manage existing app authorizations](../../../organizations/settings/manage-authorizations.md) as needed
 
-> [!TIP]
-> **Migration planning**: Start planning your migration to Microsoft Entra ID OAuth early. Our [migration guide](entra-oauth.md) provides tips and considerations for a smooth transition.
+- Review the [Azure DevOps OAuth guide](./azure-devops-oauth.md) for current implementation details.
+- Plan migration to Microsoft Entra ID OAuth before 2026.
+- [Manage existing app authorizations](../../../organizations/settings/manage-authorizations.md) as needed.
+
+**Migration planning**: Start planning your migration to Microsoft Entra ID OAuth early. The [Migration guide](entra-oauth.md) provides tips and considerations for a smooth transition.
 
 ## OAuth scopes
 
@@ -74,12 +74,13 @@ Scopes define what Azure DevOps resources your application can access. Both Micr
 - **API coverage**: Scopes enable access to REST APIs and select Git endpoints only (SOAP APIs not supported).
 - **User consent**: Users must explicitly grant permission for each requested scope.
 
-### Finding required scopes
+### Find required scopes
 
 To determine what scopes your application needs:
-1. Check the API Reference documentation for each endpoint you plan to use.
-2. Look for the `scopes` header on each API page.
-3. To avoid requesting redundant permissions, consider scope relationships.
+
+- Check the API reference documentation for each endpoint you plan to use.
+- Look for the `scopes` header on each API page.
+- To avoid requesting redundant permissions, consider scope relationships.
 
 ### Available scopes
 
@@ -89,7 +90,7 @@ To determine what scopes your application needs:
 
 ### Q: Can I use OAuth with mobile applications?
 
-A: No. Azure DevOps Services only supports the web server flow (authorization code flow), which requires securely storing an app secret. Mobile applications can't securely store secrets, making OAuth unsuitable for mobile scenarios.
+A: No. Azure DevOps Services supports only the web server flow (authorization code flow), which requires securely storing an app secret. Mobile applications can't securely store secrets, which makes OAuth unsuitable for mobile scenarios.
 
 **Alternative for mobile apps**: Use [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for mobile application authentication.
 
@@ -99,30 +100,21 @@ A: OAuth supports REST APIs and select Git endpoints only. SOAP APIs don't suppo
 
 ### Q: How do I migrate from Azure DevOps OAuth to Microsoft Entra ID OAuth?
 
-A: Follow our [Microsoft Entra ID OAuth migration guide](entra-oauth.md), which includes:
-- Step-by-step migration instructions
-- Code examples and best practices
-- Timeline considerations for the deprecation
+A: Follow the [Microsoft Entra ID OAuth migration guide](entra-oauth.md), which includes:
+
+- Step-by-step migration instructions.
+- Code examples and best practices.
+- Timeline considerations for the deprecation.
 
 ### Q: What happens to my existing Azure DevOps OAuth app after 2026?
 
 A: Existing Azure DevOps OAuth apps stop working when the service is fully deprecated in 2026. Plan your migration to Microsoft Entra ID OAuth well before this deadline.
 
-## Next step
+## Choose your implementation path
 
-Choose your implementation path:
-
-**For new applications:**
-> [!div class="nextstepaction"]
-> [Build with Microsoft Entra ID OAuth](entra-oauth.md)
-
-**For existing Azure DevOps OAuth apps:**
-> [!div class="nextstepaction"]  
-> [Plan your migration to Microsoft Entra ID](entra-oauth.md)
-
-**For existing apps that need immediate support:**
-> [!div class="nextstepaction"]
-> [Azure DevOps OAuth documentation](azure-devops-oauth.md)
+- **For new applications:** [Build with Microsoft Entra ID OAuth](entra-oauth.md)
+- **For existing Azure DevOps OAuth apps:** [Plan your migration to Microsoft Entra ID](entra-oauth.md)
+- **For existing apps that need immediate support:** [Azure DevOps OAuth documentation](azure-devops-oauth.md)
 
 ## Related content
 
