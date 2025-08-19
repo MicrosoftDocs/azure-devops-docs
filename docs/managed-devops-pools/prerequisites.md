@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for Managed DevOps Pools
 description: Learn how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools.
-ms.date: 08/01/2025
+ms.date: 08/19/2025
 ms.custom: sfi-image-nochange
 ---
 
@@ -247,11 +247,12 @@ To create a Managed DevOps Pool in your Azure DevOps organization, your Azure De
 
 When you create a Managed DevOps Pool, the account you use to sign in to the Azure subscription that contains your Managed DevOps Pool is used to create a corresponding agent pool in your Azure DevOps organization. To successfully create a Managed DevOps Pool, your account must have the following permissions in your Azure DevOps organization.
 
+
 | Permission | Description |
 |------------|-------------|
 | [Azure DevOps organization member](#verify-membership-in-the-azure-devops-organization) | You must be a member of the Azure DevOps organization where you want to create Managed DevOps Pools. |
 | [Organization level agent pools administrator](#organization-level-agent-pools-administrator) | You must have agent pool **Administrator** permissions at the organization level in the Azure DevOps organization where you want to create Managed DevOps Pools. |
-| [Project level agent pools administrator or creator](#project-level-agent-pools-administrator-or-creator) | You must have **Administrator** or **Creator** agent pool permissions at the project level for each project in which you want to make your Managed DevOps Pool available to pipelines. |
+| [Project level agent pools administrator or creator](#project-level-agent-pools-administrator-or-creator) | You must be a [project member](../organizations/security/add-users-team-project.md#add-users-or-groups-to-a-project) and have **Administrator** or **Creator** agent pool permissions at the project level for each project in which you want to make your Managed DevOps Pool available to pipelines. |
 
 > [!NOTE]
 > If you're creating a Managed DevOps Pool from a pipeline, add the service connection's app registration or managed identity to the Azure DevOps organization and grant it the permissions described in the previous table. For more information, see [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md) and [Use service principals & managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md).
@@ -302,8 +303,9 @@ To check your agent pools permissions at the organization level:
 
 ### Project level agent pools administrator or creator
 
-You must have Project level agent pools **Administrator** or **Creator** permissions for each project in which you want to make your Managed DevOps Pool available to pipelines.
+You must be a member of a project (any role is acceptable including [Readers](../organizations/security/add-users-team-project.md#add-users-or-groups-to-a-project)), and you must have Project level agent pools **Administrator** or **Creator** permissions for each project in which you want to make your Managed DevOps Pool available to pipelines.
 
+* You can be [added as a project member](../organizations/security/add-users-team-project.md#add-users-or-groups-to-a-project) by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group).
 * You can be directly assigned the **Administrator** or **Creator** permission by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md), a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), or another **Project-level agent pools administrator**.
 * If you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), your account is automatically assigned the **Administrator** permission.
 
