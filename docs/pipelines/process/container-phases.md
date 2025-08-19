@@ -12,16 +12,16 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article explains container jobs in Azure Pipelines. Containers are lightweight abstractions that provide isolation from host operating systems.
+This article explains container jobs in Azure Pipelines. Containers are lightweight abstractions from the host operating system that provide all the necessary elements to run a job in a specific environment.
 
-By default, Azure Pipelines [jobs](phases.md) run directly on host machines with [agents](../agents/agents.md) installed. Hosted agent jobs are convenient, require little initial setup or infrastructure maintenance, and are well-suited for basic projects. If you want more control over task context, you can define and run pipeline jobs in containers with the exact versions of operating systems, tools, and dependencies you want.
+By default, Azure Pipelines [jobs](phases.md) run directly on [agents](../agents/agents.md) installed on host machines. Hosted agent jobs are convenient, require little initial setup or infrastructure maintenance, and are well-suited for basic projects. If you want more control over task context, you can define and run pipeline jobs in containers that have the exact versions of operating systems, tools, and dependencies you want.
 
-For a container job, the agent first fetches and starts the container, and then each step of the job runs inside the container. If you need fine-grained control of individual build steps, you can use [step targets](tasks.md#step-target) to choose a container or host for each step.
+For a container job, the agent first fetches and starts the container, and then runs each step of the job inside the container. If you need fine-grained control of individual build steps, you can use [step targets](tasks.md#step-target) to choose a container or host for each step.
 
 ## Requirements for container jobs
 
 - A YAML-based pipeline. Classic pipelines don't support container jobs.
-- A Windows or Ubuntu hosted agent. MacOS agents don't support containers. For non-Ubuntu Linux agents, see [Nonglibc-based containers](#nonglibc-based-containers).
+- A Windows or Ubuntu hosted agent. MacOS agents don't support containers. To use non-Ubuntu Linux agents, see [Nonglibc-based containers](#nonglibc-based-containers).
 - Docker installed on the agent, with permission to access the Docker daemon.
 
 >[!NOTE]
@@ -116,7 +116,7 @@ steps:
 
 A container job uses the underlying host agent's Docker configuration file for image registry authorization. This file signs out at the end of the Docker registry container initialization.
 
-Registry image pulls for container jobs could be denied for `unauthorized authentication` if another job running in parallel on the agent already signed out the Docker configuration file. The solution is to set a Docker environment variable called `DOCKER_CONFIG` for each agent pool that runs on the hosted agent.
+Registry image pulls for container jobs could be denied for `unauthorized authentication` if another job running in parallel on the agent already signed out the Docker configuration file. The solution is to set a Docker environment variable called `DOCKER_CONFIG` for each agent pool running on the hosted agent.
 
 Export the `DOCKER_CONFIG` in each agent pool's *runsvc.sh* script as follows:
 
@@ -180,7 +180,7 @@ jobs:
 
 ## Service endpoints
 
-You can host containers on registries other than public Docker Hub. To host an image on [Azure Container Registry](/azure/container-registry/) or another private container registry, including a private Docker Hub registry, add a [service connection](../library/service-endpoints.md) to access the registry. Then you can reference the endpoint in the container definition.
+You can host containers on registries other than public Docker Hub. To host an image on [Azure Container Registry](/azure/container-registry/) or another private container registry, including a private Docker Hub registry, add a [service connection](../library/service-endpoints.md#docker-registry-service-connection) to access the registry. Then you can reference the endpoint in the container definition.
 
 Private Docker Hub connection:
 
