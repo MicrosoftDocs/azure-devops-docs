@@ -2,7 +2,7 @@
 title: Build and publish a Python app
 description: Learn how to automatically build and test Python apps with Azure Pipelines.
 ms.topic: quickstart
-ms.date: 07/08/2024
+ms.date: 08/19/2025
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 monikerRange: "<=azure-devops"
 ms.author: jukullam
@@ -20,12 +20,15 @@ In this quickstart, you create a pipeline that builds and tests a Python app. Yo
 
 ## Prerequisites
 
+- An Azure DevOps organization and project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
+- A GitHub account.
 
-[!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
+  >[!IMPORTANT]
+  >During GitHub procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, authorize Azure Pipelines, or authenticate to GitHub organizations. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 ::: moniker range=">=azure-devops"
 
-Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Linux, macOS, and Windows. You don't have to set up anything more to build Python projects. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software).
+Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Linux, macOS, and Windows. You don't have to set up anything more to build Python projects. To see which Python versions are preinstalled, see [Software](../agents/hosted.md#software).
 
 ::: moniker-end
 
@@ -34,26 +37,24 @@ Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Lin
 Fork the sample Python repository to your GitHub account.
 
 1. Go to the [python-sample-vscode-flask-tutorial](https://github.com/Microsoft/python-sample-vscode-flask-tutorial) repository.
-1. Select **Fork** in the upper-right corner of the page.
-1. Select your GitHub account. By default, the fork is named the same as the parent repository, but you can name it something different.
-
->[!IMPORTANT]
->During the following procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+1. Select **Fork** at upper right.
+1. Make sure your GitHub account name is selected under **Owner**, and select **Create fork**. The fork is named the same as the parent repository by default, but you can name it something different.
 
 ## Create your pipeline
 
-1. In your Azure DevOps project, select **Pipelines** > **Create Pipeline**, and then select **GitHub** as the location of your source code.
-1. On the **Select a repository** screen, select your forked sample repository.
+1. In your Azure DevOps project, select **Pipelines** from the left navigation menu and then select **New pipeline**, or **Create Pipeline** if this is the first pipeline in the project.
+1. On the **Where is your code** screen, select **GitHub** as the location of your source code.
+1. On the **Select a repository** screen, select your forked Python sample repository.
 1. On the **Configure your pipeline** screen, select **Starter pipeline**.
 
 ## Customize your pipeline
 
-On the **Review your pipeline YAML** screen, replace the contents of the generated *azure-pipelines.yml* file with the following code. The code:
+On the **Review your pipeline YAML** screen, replace the contents of the generated *azure-pipelines.yml* file with the following code. The code does the following actions on three different versions of Python:
 
-- Installs required Python versions and dependencies.
-- Packages build artifacts to a ZIP archive.
-- Publishes the archive to your pipeline.
-- Runs tests.
+1. Installs required Python version and dependencies.
+1. Packages build artifacts to a ZIP archive.
+1. Publishes the archive to your pipeline.
+1. Runs tests.
 
 ::: moniker range=">=azure-devops"
 ```yaml
@@ -110,8 +111,8 @@ steps:
 
 Customize *azure-pipelines.yml* to match your project configuration.
 
-- If you have a different agent pool, change the pool `name` parameter.
-- If necessary, change the Python version to a version installed on your self-hosted agent.
+- If you have a different agent pool, replace the pool `name` placeholder with your pool name or `default`.
+- If necessary, change the Python `versionSpec` to a version installed on your self-hosted agent.
 
 ```yaml
   trigger:
@@ -157,30 +158,38 @@ Customize *azure-pipelines.yml* to match your project configuration.
 
 ## Run your pipeline
 
-::: moniker range="<=azure-devops"
-
 Select **Save and run**, and then select **Save and run** again.
 
-The **Summary** tab shows the status of your pipeline run.
+You can select **Job** on the **Summary** screen to see your job in action.
 
-To view your build artifact, select the **published** link in the **Summary** tab.
+::: moniker range=">=azure-devops"
+
+The job runs three times on the three specified Python versions. The three versions can run in parallel on different agents.
+
+:::image type="content" source="media/pipeline-summary-multiple.png" alt-text="Screenshot of completed Python multiple version job.":::
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops"
+## View artifacts
+
+To view your build artifact, select the **[N] published** link in the **Summary** tab.
 
 :::image type="content" source="media/published-artifacts-link.png" alt-text="Screenshot of published build artifacts link.":::
 
 The **Artifacts** page shows the published build artifacts.
+
+::: moniker range=">=azure-devops"
+
 :::image type="content" source="media/pipeline-artifacts-list.png" alt-text="Screenshot of published build artifacts.":::
 
 ::: moniker-end
 
-::: moniker range="<azure-devops"
+::: moniker range="< azure-devops"
 
 :::image type="content" source="media/pipeline-summary-page-single-job.png" alt-text="Screenshot of completed Python job.":::
 
 The **Artifacts** page shows the published build artifacts.
+
 :::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Screenshot of published build artifacts link.":::
 
 ::: moniker-end
@@ -195,13 +204,14 @@ To view the test results, select the **Tests** tab.
 
 ## Clean up
 
-When you finish this quickstart, you can delete the Azure DevOps project you created.
+If you're done using the pipeline you created, you can delete it.
 
-1. In your project, select the **Project settings** gear icon in the lower left corner of the page.
-1. At the bottom of the **Project overview** page, select **Delete**.
-1. Enter the project name and select **Delete**.
+1. Select **Pipelines** from your project's left navigation menu.
+1. In the pipeline list, hover over the pipeline you created, select the **More actions** icon on the right, and then select **Delete**.
+   Or select the pipeline, and on the pipeline page, select the **More actions** icon at upper right, and then select **Delete**.
+1. Enter the pipeline name, and then select **Delete** again.
 
-Congratulations, you successfully created and ran a pipeline that built and tested a Python app. Now you can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your continuous integration and continuous delivery (CI/CD) system.
+You successfully created and ran a pipeline that built and tested a Python app. You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD process.
 
 ## Next steps
 
