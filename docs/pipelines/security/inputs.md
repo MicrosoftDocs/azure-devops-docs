@@ -46,6 +46,9 @@ When you define a variable in the Azure Pipelines UI, you can select whether to 
 
 In the Classic pipeline editor, you define queue-time variable by selecting the check box for **Settable at queue time**. In YAML pipelines, you designate them by selecting **Let users override this value when running this pipeline**.
 
+>[!NOTE]
+> In a Release pipeline, select **Settable at release time**. For more information, see [How can I edit variables at release time?](../../release/index.md#q-how-can-i-edit-variables-at-release-time)
+
 :::image type="content" source="media/define-variables-yaml-pipeline.png" alt-text="Screenshot of defining a queue-time variable.":::
 
 When a user manually runs the pipeline, they can select queue-time variables and change the values.
