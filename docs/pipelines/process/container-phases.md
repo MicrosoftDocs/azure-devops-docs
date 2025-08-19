@@ -5,6 +5,7 @@ ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
 ms.date: 08/18/2025
 monikerRange: "<=azure-devops"
+#customer intent: As an Azure Pipelines builder and tester, I want to learn about running pipeline jobs in containers so I can build and test pipelines in various agent configurations.
 ---
 
 # Container jobs in YAML pipelines
@@ -207,7 +208,7 @@ If you want to use a nonglibc-based container in a pipeline, you must:
 
 - Supply your own copy of Node.js.
 - Add a label to your image pointing to the location of the Node.js binary.
-- Provide the `bash`, `sudo`, `which`, and `groupadd` dependencies for Azure Pipelines.
+- Provide the `bash`, `sudo`, `which`, and `groupadd` Azure Pipelines dependencies.
 
 ### Supply your own Node.js
 
