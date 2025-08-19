@@ -281,7 +281,8 @@ To assign your managed identity to the **Contributor** team, follow these steps:
               
           # Publish the package to Azure Artifacts
           - name: 'dotnet publish'
-            run: dotnet nuget push --api-key AzureArtifacts bin/Release/*.nupkg 
+            run: dotnet nuget push bin/Release/*.nupkg --api-key AzureDevOps --source ${{ env.AZURE_ARTIFACTS_FEED_URL }}    
+
     ```
 3. Go to your Azure Artifacts feed to verify that you see the package you pushed.
     
