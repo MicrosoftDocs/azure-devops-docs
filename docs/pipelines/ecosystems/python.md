@@ -48,7 +48,7 @@ Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Lin
 >- Authenticate to GitHub organizations.
 >- Install the Azure Pipelines app in GitHub.
 >- [Create a GitHub service connection](../library/service-endpoints.md#create-a-service-connection) in Azure DevOps.
-
+>
 >Follow onscreen instructions to complete the required processes. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 ## Fork the sample code
@@ -224,8 +224,6 @@ The **Artifacts** page shows the published build artifacts.
 To view the test results, select the **Tests** tab.
 
 :::image type="content" source="media/pipeline-test-results.png" alt-text="Screenshot of pipeline test results.":::
-
-::: moniker-end
 
 ## Clean up
 
