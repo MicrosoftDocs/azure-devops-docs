@@ -3,7 +3,7 @@ title: YAML pipeline container jobs
 description: Learn about configuring and running Azure Pipelines YAML pipeline jobs inside containers.
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
-ms.date: 08/18/2025
+ms.date: 08/19/2025
 monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines builder and tester, I want to learn about running pipeline jobs in containers so I can build and test pipelines in various agent configurations.
 ---
@@ -14,18 +14,16 @@ monikerRange: "<=azure-devops"
 
 This article explains container jobs in Azure Pipelines. Containers are lightweight abstractions from the host operating system that provide all the necessary elements to run a job in a specific environment.
 
-By default, Azure Pipelines [jobs](phases.md) run directly on [agents](../agents/agents.md) installed on host machines. Hosted agent jobs are convenient, require little initial setup or infrastructure maintenance, and are well-suited for basic projects. If you want more control over task context, you can define and run pipeline jobs in containers that have the exact versions of operating systems, tools, and dependencies you want.
+By default, Azure Pipelines [jobs](phases.md) run directly on [agents](../agents/agents.md) installed on host machines. Hosted agent jobs are convenient, require little initial setup or infrastructure maintenance, and are well-suited for basic projects. For more control over task context, you can define and run pipeline jobs in containers to get the exact versions of operating systems, tools, and dependencies you want.
 
-For a container job, the agent first fetches and starts the container, and then runs each step of the job inside the container. If you need fine-grained control of individual build steps, you can use [step targets](tasks.md#step-target) to choose a container or host for each step.
+For a container job, the agent first fetches and starts the container, and then runs each step of the job inside the container. If you need finer-grained control of individual build steps, you can use [step targets](tasks.md#step-target) to choose a container or host for each step.
 
 ## Requirements for container jobs
 
 - A YAML-based pipeline. Classic pipelines don't support container jobs.
 - A Windows or Ubuntu hosted agent. MacOS agents don't support containers. To use non-Ubuntu Linux agents, see [Nonglibc-based containers](#nonglibc-based-containers).
 - Docker installed on the agent, with permission to access the Docker daemon.
-
->[!NOTE]
->Containers aren't supported when the agent is already running inside a container. You can't have nested containers.
+- Agent running directly on the host, not already inside a container. Nested containers aren't supported.
 
 ### [Linux](#tab/linux)
 
@@ -36,9 +34,10 @@ Linux-based containers also have the following requirements:
 - No `ENTRYPOINT`. Containers with an `ENTRYPOINT` might not work, because [docker exec](https://docs.docker.com/reference/cli/docker/container/exec) expects the container to always be running.
 - `USER` provided with access to `groupadd` and other privileged commands without using `sudo`.
 - Ability to run Node.js, which the agent provides.
+  >[!NOTE]
+  >Node.js must be preinstalled for Linux containers on Windows hosts.
 
->[!NOTE]
->Some stripped-down containers available on Docker Hub, especially containers based on Alpine Linux, don't satisfy these requirements. For more information, see [Nonglibc-based containers](#nonglibc-based-containers).
+Some stripped-down containers available on Docker Hub, especially containers based on Alpine Linux, don't satisfy these requirements. For more information, see [Nonglibc-based containers](#nonglibc-based-containers).
 
 ### [Windows](#tab/windows)
 
@@ -51,9 +50,6 @@ Linux-based containers also have the following requirements:
   >A base Windows Nano Server container doesn't have the required dependencies to run Node.js.
 
 ---
-
->[!NOTE]
->Node.js must be preinstalled for Linux containers on Windows hosts.
 
 ## Single job
 
@@ -144,7 +140,7 @@ For more information, see the [docker container create](https://docs.docker.com/
 
 ## Reusable container definition
 
-The following example defines the containers in the `resources` section, and then references them by their assigned aliases. The `jobs` keyword is used for clarity.
+The following YAML example defines the containers in the `resources` section, and then references them by their assigned aliases. The `jobs` keyword is used for clarity.
 
 ```yaml
 resources:
@@ -199,7 +195,7 @@ container:
 ```
 
 >[!NOTE]
->Azure Pipelines can't set up a service connection for Amazon Elastic Container Registry (ECR), because Amazon ECR requires other client tools to convert Amazon Web Services (AWS) credentials to use for Docker authentication.
+>Azure Pipelines can't set up a service connection for Amazon Elastic Container Registry (ECR), because Amazon ECR requires other client tools to convert Amazon Web Services (AWS) credentials to be usable for Docker authentication.
 
 ## Nonglibc-based containers
 
