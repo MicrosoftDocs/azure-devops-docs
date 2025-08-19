@@ -12,16 +12,16 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article explains container jobs in Azure Pipelines. By default, Azure Pipelines [jobs](phases.md) run directly on host machines with [agents](../agents/agents.md) installed. Hosted agent jobs are convenient, require little initial setup or infrastructure maintenance, and are well-suited for basic projects.
+This article explains container jobs in Azure Pipelines. Containers are lightweight abstractions that provide isolation from host operating systems.
 
-Containers are lightweight abstractions that provide isolation from host operating systems. If you want more control over task context, you can define and run pipeline jobs in containers that have the exact versions of operating systems, tools, and dependencies you want.
+By default, Azure Pipelines [jobs](phases.md) run directly on host machines with [agents](../agents/agents.md) installed. Hosted agent jobs are convenient, require little initial setup or infrastructure maintenance, and are well-suited for basic projects. If you want more control over task context, you can define and run pipeline jobs in containers with the exact versions of operating systems, tools, and dependencies you want.
 
-For a container job, the agent first fetches and starts the container. Then each step of the job runs inside the container. If you need fine-grained control of individual build steps, [step targets](tasks.md#step-target) let you choose a container or host for each step.
+For a container job, the agent first fetches and starts the container, and then each step of the job runs inside the container. If you need fine-grained control of individual build steps, you can use [step targets](tasks.md#step-target) to choose a container or host for each step.
 
 ## Requirements for container jobs
 
-- A YAML pipeline. Classic pipelines don't support container jobs.
-- A Windows or Ubuntu hosted agent. MacOS agents don't support running containers.
+- A YAML-based pipeline. Classic pipelines don't support container jobs.
+- A Windows or Ubuntu hosted agent. MacOS agents don't support containers. For non-Ubuntu Linux agents, see [Nonglibc-based containers](#nonglibc-based-containers).
 - Docker installed on the agent, with permission to access the Docker daemon.
 
 >[!NOTE]
@@ -32,15 +32,13 @@ For a container job, the agent first fetches and starts the container. Then each
 Linux-based containers also have the following requirements:
 
 - Bash installed.
-- GNU C Library (glibc)-based. For alternatives, see [Nonglibc-based containers](#nonglibc-based-containers).
-- No `ENTRYPOINT`. Containers with an `ENTRYPOINT` might not work because `docker create` and `docker exec` expect the container to always be running.
-- `USER` provided with access to `groupadd` and other privileged commands without using `sudo`
+- GNU C Library (glibc)-based. Non-glibc containers require added setup. For more information, see [Nonglibc-based containers](#nonglibc-based-containers).
+- No `ENTRYPOINT`. Containers with an `ENTRYPOINT` might not work, because [docker exec](https://docs.docker.com/reference/cli/docker/container/exec) expects the container to always be running.
+- `USER` provided with access to `groupadd` and other privileged commands without using `sudo`.
 - Ability to run Node.js, which the agent provides.
-  >[!NOTE]
-  >Node.js must be preinstalled for Linux containers on Windows hosts.
 
-  >[!NOTE]
-  >Some stripped-down containers available on Docker Hub, especially containers based on Alpine Linux, don't satisfy these requirements.
+>[!NOTE]
+>Some stripped-down containers available on Docker Hub, especially containers based on Alpine Linux, don't satisfy these requirements. For more information, see [Nonglibc-based containers](#nonglibc-based-containers).
 
 ### [Windows](#tab/windows)
 
@@ -53,6 +51,9 @@ Linux-based containers also have the following requirements:
   >A base Windows Nano Server container doesn't have the required dependencies to run Node.js.
 
 ---
+
+>[!NOTE]
+>Node.js must be preinstalled for Linux containers on Windows hosts.
 
 ## Single job
 
@@ -90,7 +91,7 @@ steps:
 
 ## Multiple jobs
 
-You can use containers to run the same step in multiple jobs. The following example runs the same step in multiple versions of Ubuntu Linux. You don't have to use the `jobs` keyword because only a single job is defined.
+You can use containers to run the same step in multiple jobs. The following example runs the same step in multiple versions of Ubuntu Linux. You don't have to use the `jobs` keyword, because only a single job is defined.
 
 ```yaml
 pool:
@@ -111,11 +112,11 @@ steps:
 - script: printenv
 ```
 
-### Multiple jobs with agent pools on a single agent host
+### Multiple jobs on a single agent host
 
 A container job uses the underlying host agent's Docker configuration file for image registry authorization. This file signs out at the end of the Docker registry container initialization.
 
-Registry image pulls for other container jobs in the pipeline might be denied for `unauthorized authentication`, because another job running in parallel already signed out the Docker configuration file. The solution is to set a Docker environment variable called `DOCKER_CONFIG` that's specific to each agent pool running on the hosted agent.
+Registry image pulls for container jobs could be denied for `unauthorized authentication` if another job running in parallel on the agent already signed out the Docker configuration file. The solution is to set a Docker environment variable called `DOCKER_CONFIG` for each agent pool that runs on the hosted agent.
 
 Export the `DOCKER_CONFIG` in each agent pool's *runsvc.sh* script as follows:
 
@@ -139,7 +140,7 @@ steps:
 
 Run `docker create --help` to get the list of options you can pass to Docker invocation. Not all these options are guaranteed to work with Azure Pipelines. Check first to see if you can use a `container` property for the same purpose.
 
-For more information, see the [docker create](https://docs.docker.com/engine/reference/commandline/create) command reference and the [resources.containers.container](/azure/devops/pipelines/yaml-schema/resources-containers-container) definition in the [YAML schema reference for Azure Pipelines](https://github.com/MicrosoftDocs/azure-devops-yaml-schema-pr/blob/live/content/index.md).
+For more information, see the [docker container create](https://docs.docker.com/reference/cli/docker/container/create/) command reference and the [resources.containers.container](/azure/devops/pipelines/yaml-schema/resources-containers-container) definition in the [YAML schema reference for Azure Pipelines](/azure/devops/pipelines/yaml-schema).
 
 ## Reusable container definition
 
@@ -198,11 +199,11 @@ container:
 ```
 
 >[!NOTE]
->Azure Pipelines can't set up a service connection for Amazon Elastic Container Registry (ECR), because Amazon ECR requires other client tools to convert Amazon Web Services (AWS) credentials into something Docker can use to authenticate.
+>Azure Pipelines can't set up a service connection for Amazon Elastic Container Registry (ECR), because Amazon ECR requires other client tools to convert Amazon Web Services (AWS) credentials to use for Docker authentication.
 
 ## Nonglibc-based containers
 
-The Azure Pipelines agent supplies Node.js, which is required to run tasks and scripts. The Node.js version compiles against the C runtime used in the hosted cloud, typically glibc. Some Linux variants use other C runtimes. For instance, Alpine Linux uses musl. For more information, see [Microsoft-hosted agents](../agents/hosted.md#software).
+The hosted Azure Pipelines agents supply Node.js, which is required to run tasks and scripts. The Node.js version compiles against the C runtime used in the hosted cloud, typically glibc. Some Linux variants use other C runtimes. For instance, Alpine Linux uses musl. For more information, see [Microsoft-hosted agents](../agents/hosted.md#software).
 
 If you want to use a nonglibc-based container in a pipeline, you must:
 
@@ -214,7 +215,7 @@ If you want to use a nonglibc-based container in a pipeline, you must:
 
 If you use a nonglibc-based container, you must add a Node binary to your container. Node.js 18 is a safe choice. Start from the `node:18-alpine` image.
 
-### Tell the agent about Node.js
+### Direct the agent to Node.js
 
 The agent reads the container label `"com.azure.dev.pipelines.handler.node.path"`. If this label exists, it must be the path to the Node.js binary.
 
