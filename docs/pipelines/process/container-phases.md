@@ -30,7 +30,7 @@ For a container job, the agent first fetches and starts the container, and then 
 Linux-based containers also have the following requirements:
 
 - Bash installed.
-- GNU C Library (glibc)-based. Non-glibc containers require added setup. For more information, see [Nonglibc-based containers](#nonglibc-based-containers).
+- GNU C Library (`glibc`)-based. Nonglibc containers require added setup. For more information, see [Nonglibc-based containers](#nonglibc-based-containers).
 - No `ENTRYPOINT`. Containers with an `ENTRYPOINT` might not work, because [docker exec](https://docs.docker.com/reference/cli/docker/container/exec) expects the container to always be running.
 - `USER` provided with access to `groupadd` and other privileged commands without using `sudo`.
 - Ability to run Node.js, which the agent provides.
@@ -112,7 +112,7 @@ steps:
 
 A container job uses the underlying host agent's Docker configuration file for image registry authorization. This file signs out at the end of the Docker registry container initialization.
 
-Registry image pulls for container jobs could be denied for `unauthorized authentication` if another job running in parallel on the agent already signed out the Docker configuration file. The solution is to set a Docker environment variable called `DOCKER_CONFIG` for each agent pool running on the hosted agent.
+Registry image pulls for container jobs could be denied for unauthorized authentication if another job running in parallel on the agent already signed out the Docker configuration file. The solution is to set a Docker environment variable called `DOCKER_CONFIG` for each agent pool running on the hosted agent.
 
 Export the `DOCKER_CONFIG` in each agent pool's *runsvc.sh* script as follows:
 
@@ -199,7 +199,7 @@ container:
 
 ## Nonglibc-based containers
 
-The hosted Azure Pipelines agents supply Node.js, which is required to run tasks and scripts. The Node.js version compiles against the C runtime used in the hosted cloud, typically glibc. Some Linux variants use other C runtimes. For instance, Alpine Linux uses musl. For more information, see [Microsoft-hosted agents](../agents/hosted.md#software).
+The hosted Azure Pipelines agents supply Node.js, which is required to run tasks and scripts. The Node.js version compiles against the C runtime used in the hosted cloud, typically `glibc`. Some Linux variants use other C runtimes. For instance, Alpine Linux uses `musl`. For more information, see [Microsoft-hosted agents](../agents/hosted.md#software).
 
 If you want to use a nonglibc-based container in a pipeline, you must:
 
