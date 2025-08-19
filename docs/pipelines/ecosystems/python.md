@@ -27,7 +27,7 @@ To complete all the procedures in this article, you need the following prerequis
 
 - An Azure DevOps organization and project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
 - The ability to run pipelines on Microsoft-hosted agents, by requesting a free tier of parallel jobs. This request can take several business days to process. For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
-- A GitHub account.
+- A [GitHub](https://github.com) account where you can create repositories and grant access to pipelines.
 
 Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Linux, macOS, and Windows. You don't have to set up anything more to build Python projects. To see which Python versions are preinstalled, see [Software](../agents/hosted.md#software).
 
@@ -36,8 +36,8 @@ Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Lin
 ::: moniker range="< azure-devops"
 
 - An Azure DevOps organization and project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- A GitHub account.
-- Python 3.12 or other version installed on your [self-hosted build agent](../agents/agents.md#self-hosted-agents).
+- Python 3.12 or other Python version installed on your [self-hosted build agent](../agents/agents.md#self-hosted-agents).
+- A [GitHub](https://github.com) account where you can create repositories and grant access to pipelines.
 
 ::: moniker-end
 
@@ -48,7 +48,8 @@ Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Lin
 >- Authenticate to GitHub organizations.
 >- Install the Azure Pipelines app in GitHub.
 >- [Create a GitHub service connection](../library/service-endpoints.md#create-a-service-connection) in Azure DevOps.
->Follow onscreen instructions to complete the required process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+
+>Follow onscreen instructions to complete the required processes. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 ## Fork the sample code
 
@@ -67,6 +68,8 @@ Fork the sample Python repository to your GitHub account.
 
 ## Customize your pipeline
 
+::: moniker range=">=azure-devops"
+
 On the **Review your pipeline YAML** screen, replace the contents of the generated *azure-pipelines.yml* file with the following code. The code does the following actions on three different versions of Python:
 
 1. Installs required Python version and dependencies.
@@ -74,7 +77,6 @@ On the **Review your pipeline YAML** screen, replace the contents of the generat
 1. Publishes the archive to your pipeline.
 1. Runs tests.
 
-::: moniker range=">=azure-devops"
 ```yaml
 trigger:
 - main
@@ -126,6 +128,13 @@ steps:
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+
+On the **Review your pipeline YAML** screen, replace the contents of the generated *azure-pipelines.yml* file with the following code. The code does the following actions:
+
+1. Installs required Python version and dependencies.
+1. Packages build artifacts to a ZIP archive.
+1. Publishes the archive to your pipeline.
+1. Runs tests.
 
 Customize *azure-pipelines.yml* to match your project configuration.
 
@@ -186,9 +195,15 @@ The job runs three times, once for each specified Python version. The three vers
 
 ::: moniker-end
 
+::: moniker range="< azure-devops"
+
+:::image type="content" source="media/pipeline-summary-page-single-job.png" alt-text="Screenshot of completed single Python job.":::
+
+::: moniker-end
+
 ## View artifacts and test results
 
-To view your build artifact, select the **[N] published** link on the **Summary** tab.
+To view your build artifacts, select the **[N] published** link on the **Summary** tab.
 
 :::image type="content" source="media/published-artifacts-link.png" alt-text="Screenshot of published build artifacts link.":::
 
@@ -202,15 +217,9 @@ The **Artifacts** page shows the published build artifacts.
 
 ::: moniker range="< azure-devops"
 
-:::image type="content" source="media/pipeline-summary-page-single-job.png" alt-text="Screenshot of completed Python job.":::
-
-The **Artifacts** page shows the published build artifacts.
-
 :::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Screenshot of published build artifacts.":::
 
 ::: moniker-end
-
-::: moniker range="<=azure-devops"
 
 To view the test results, select the **Tests** tab.
 
