@@ -3,7 +3,7 @@ title: PowerShell scripts for pipelines
 description: Learn about using PowerShell scripts to customize your pipelines by adding business logic.
 ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.date: 08/18/2025
+ms.date: 08/19/2025
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to know how PowerShell scripts work in pipelines so I can add business logic to my pipelines.
 ---
@@ -47,9 +47,9 @@ steps:
 ```
 
 >[!NOTE]
-> By default, the `PowerShell@2` task uses Windows PowerShell 5.1 for Windows agents and the latest version of PowerShell for Linux/macOS agents. To use the latest version of PowerShell on Windows agents, you must add the `pwsh` parameter set to `true`.
+>By default, the `PowerShell@2` task uses Windows PowerShell 5.1 for Windows agents and PowerShell 7.x for Linux/macOS agents. To use PowerShell 7.x on Windows agents, you must have PowerShell 7.x. installed and add the `pwsh` parameter set to `true`. [Microsoft-hosted agents](../agents/hosted.md) have PowerShell 7.x installed by default.
 
-You can also add a [`pwsh`](/azure/devops/pipelines/yaml-schema/steps-pwsh) or [`powershell`](/azure/devops/pipelines/yaml-schema/steps-powershell) step to your YAML pipeline as a shortcut for the `PowerShell@2` step. The `pwsh` shortcut runs the latest version of PowerShell on Windows, macOS, or Linux. The `powershell` shortcut runs Windows PowerShell 5.1 on Windows or the latest version of PowerShell on Linux and macOS.
+You can also add a [`pwsh`](/azure/devops/pipelines/yaml-schema/steps-pwsh) or [`powershell`](/azure/devops/pipelines/yaml-schema/steps-powershell) step to your YAML pipeline as a shortcut for the `PowerShell@2` step. The `pwsh` shortcut runs PowerShell 7.x on macOS, Linux, or Windows. The `powershell` shortcut runs Windows PowerShell 5.1 on Windows or PowerShell 7.x on Linux and macOS.
 
 ```yaml
 steps:
@@ -71,7 +71,7 @@ steps:
    :::image type="content" source="media/powershell-update-script-path.png" alt-text="Screenshot of PowerShell task script path setting.":::
 
 >[!NOTE]
-> By default, the PowerShell v2 task uses Windows PowerShell 5.1 for Windows agents and the latest version of PowerShell for Linux/macOS agents. To use the latest version of PowerShell on Windows agents, select **Use PowerShell Core** under **Advanced options** in the PowerShell pane.
+> By default, the PowerShell v2 task uses Windows PowerShell 5.1 for Windows agents and PowerShell 7.x for Linux/macOS agents. To use PowerShell 7.x on Windows agents, select **Use PowerShell Core** under **Advanced options** in the PowerShell pane. You must have PowerShell 7.x. installed, which [Microsoft-hosted agents](../agents/hosted.md) do by default.
 
 ---
 
@@ -107,6 +107,8 @@ For this script to run successfully, your build number format must have four seg
 1. Add a **PowerShell** task to your pipeline, and call the file path of the PowerShell script file, relative to the working directory.
 
 ---
+
+**PowerShell script to apply version to assemblies:**
 
 ```powershell
 # Enable -Verbose option
