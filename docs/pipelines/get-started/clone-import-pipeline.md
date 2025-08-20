@@ -12,9 +12,9 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In Azure Pipelines, you can create a pipeline by using an existing pipeline as a starting point. For YAML pipelines, you can simply copy a YAML pipeline file or code from one pipeline to another. Cloning a YAML pipeline copies only the YAML code. You need to reconfigure any other settings, such as variables, triggers, options, and security.
+This article explains how to create a pipeline in Azure Pipelines by using an existing pipeline as a starting point. For YAML pipelines, you can copy a YAML pipeline file or code from one pipeline to another. Cloning a YAML pipeline copies only the YAML code. You need to reconfigure any other settings in the new pipeline, such as variables, triggers, options, and security.
 
-For Classic pipelines, if the pipeline to copy is in the same project as your new pipeline, you can clone it. If it's in a different project, you can export it from that project and import it into your project. Cloning a Classic pipeline also clones its settings, except for security.
+For Classic pipelines, if the source pipeline is in the same project as your new pipeline, you can clone it. If it's in a different project, you can export it from that project and import it into your project. Cloning a Classic pipeline also clones its settings, except for security.
 
 :::moniker range="azure-devops"
 
@@ -37,11 +37,11 @@ For YAML pipelines, you copy the YAML from the pipeline you want to clone to you
 
 If your source pipeline and new pipeline use the same source code repository, you can copy the source YAML pipeline definition file to the new pipeline. If the two pipelines are in different repositories or you want to start with a new file, you can copy the YAML code from the source pipeline into the new one.
 
-To clone an existing pipeline definition YAML file in the repo:
+To clone an existing pipeline definition file:
 
 1. Create a **New pipeline** in your Azure DevOps project.
-1. On the **Configure your pipeline** page, select **Existing Azure Pipelines YAML file**, enter the path and filename for the existing source file, and select **Continue**.
-1. Name and [customize](../customize-pipeline.md) the new pipeline as desired, and then select **Save and run**.
+1. On the **Configure your pipeline** page, select **Existing Azure Pipelines YAML file**, enter the path and filename for the existing pipeline file, and select **Continue**.
+1. Rename and [customize](../customize-pipeline.md) the new pipeline as desired, and then select **Save and run**.
 
 To copy YAML code from a source pipeline into a new pipeline:
 
@@ -50,8 +50,8 @@ To copy YAML code from a source pipeline into a new pipeline:
 
    :::image type="content" source="media/pipeline-edit.png" alt-text="Screenshot that shows Edit pipeline selected.":::
 
-1. Copy the pipeline YAML from the editor.
-1. Create a **New pipeline** in your Azure DevOps project.
+1. Copy the pipeline YAML code from the editor.
+1. Create a **New pipeline** in your project.
 1. On the **Configure your pipeline** page, select **Starter pipeline**.
 1. On your new pipeline page, replace the contents of the starter file with the copied pipeline YAML.
 1. Name and [customize](../customize-pipeline.md) the new pipeline as desired, and then select **Save and run**.
@@ -60,7 +60,7 @@ To copy YAML code from a source pipeline into a new pipeline:
 
 #### [Classic](#tab/classic/)
 
-If the pipeline you want to clone is in the same project as your new pipeline, use the following procedure. If the pipeline to clone is in a different project, use [Export and Import](#export-and-import-a-pipeline).
+If the pipeline you want to clone is in the same project as your new pipeline, use the following procedure. If the pipeline to clone is in a different project, use [Export and Import](#export-and-import-a-classic-pipeline).
 
 1. Select the pipeline you want to clone from the list on the **Pipelines** page.
 1. On the pipeline page, select the **More actions** icon at upper right, and then select **Clone**. The **Clone** item is available only for Classic pipelines.
@@ -94,7 +94,7 @@ You can export an existing build definition from a project, and then import it i
 
 1. The JSON file downloads to the download directory of your local machine per your browser settings.
 
-1. Select **Pipelines** on the project page for your new pipeline, select the **More actions** icon at upper right on the **Pipelines** page, and select **Import a pipeline**.
+1. Select **Pipelines** on the project page for your new pipeline, select the **More actions** icon at upper right on the **Pipelines** page, and then select **Import a pipeline**.
 
 1. Browse to and select the exported JSON file in your download directory, and then select **Import**.
 
@@ -107,7 +107,7 @@ You can export an existing build definition from a project, and then import it i
 
 The procedure for exporting and importing Classic release pipelines is similar to the Classic build pipeline procedure, but the menus and UI are slightly different.
 
-1. To export a Classic release pipeline, navigate to **Releases**, choose the **More actions** icon, and select **Export**. The **Export** item is available only for Classic pipelines.
+1. To export a Classic release pipeline, navigate to **Releases**, choose the **More actions** icon, and select **Export**. The **Export** item is available only for Classic release pipelines.
 
    :::image type="content" source="media/classic-export-definition.png" alt-text="Screenshot that shows Export release pipeline.":::
 
