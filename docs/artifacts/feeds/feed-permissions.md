@@ -122,7 +122,7 @@ If you want to completely hide your packages, you must restrict access to both t
 ## Pipelines permissions
 
 To access your feed from your pipeline, the [corresponding build identity](../../pipelines/process/access-tokens.md#scoped-build-identities) must have the necessary permissions.
-The project-level build identity is named `[Project name] Build Service ([Organization name])`, for example `FabrikamFiber Build Service (codesharing-demo)` while the organization-level build identity is named `Project Collection Build Service ([Organization name])`, for example `Project Collection Build Service (codesharing-demo)`. Here's how to add the the build identity to your feed's permissions:
+The project-level build identity is named `[Project name] Build Service ([Organization name])`, for example `FabrikamFiber Build Service (codesharing-demo)` while the organization-level build identity is named `Project Collection Build Service ([Organization name])`, for example `Project Collection Build Service (codesharing-demo)`. Here's how to add the build identity to your feed's permissions:
 
 1. Sign in to your Azure DevOps organization, then navigate to your project.
 
