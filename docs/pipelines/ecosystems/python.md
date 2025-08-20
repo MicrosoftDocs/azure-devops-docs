@@ -25,8 +25,8 @@ To complete all the procedures in this article, you need the following prerequis
 
 ::: moniker range=">=azure-devops"
 
-- An Azure DevOps organization and project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- The ability to run pipelines on Microsoft-hosted agents, by requesting a free tier of parallel jobs. This request can take several business days to process. For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
+- An Azure DevOps organization with the ability to run parallel jobs on [Microsoft-hosted agents](../agents/hosted.md). For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
+- An Azure DevOps project in the organization where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
 - A [GitHub](https://github.com) account where you can create repositories and grant access to pipelines.
 
 Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Linux, macOS, and Windows. You don't have to set up anything more to build Python projects. To see which Python versions are preinstalled, see [Software](../agents/hosted.md#software).
@@ -35,8 +35,9 @@ Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Lin
 
 ::: moniker range="< azure-devops"
 
-- An Azure DevOps organization and project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- Python 3.12 or other Python version installed on your [self-hosted build agent](../agents/agents.md#self-hosted-agents).
+- An Azure DevOps organization with the ability to run [parallel jobs](../licensing/concurrent-jobs.md) on [self-hosted build agents](../agents/agents.md#self-hosted-agents).
+- An Azure DevOps project in the organization where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
+- Python 3.12 or other Python version installed on your self-hosted agent.
 - A [GitHub](https://github.com) account where you can create repositories and grant access to pipelines.
 
 ::: moniker-end
@@ -49,7 +50,7 @@ Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Lin
 >- Install the Azure Pipelines app in GitHub.
 >- [Create a GitHub service connection](../library/service-endpoints.md#create-a-service-connection) in Azure DevOps.
 >
->Follow onscreen instructions to complete the required processes. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+>Follow instructions to complete the required processes. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 ## Fork the sample code
 
