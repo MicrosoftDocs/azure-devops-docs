@@ -269,8 +269,8 @@
 - name: Security
   items:
   - name: Manage permissions
-    displayName: feed, artifact, permissions
     href: feeds/feed-permissions.md
+    displayName: feed, view, artifacts, security, permissions
   - name: Safeguard against malicious public packages
     displayName: upstreams, behavior, configure upstreams
     href: concepts/upstream-behavior.md

@@ -147,7 +147,7 @@ If a feed has a failing upstream source, the metadata for packages of the same p
 
 ##### Q: I can't find my package even though I can see it in one of my feed's upstreams?
 
-A: Packages from upstream sources become available in the downstream feed soon after they're published. However, the package will only be visible to readers after it has been saved to the feed. A package is saved when a user with [Feed and Upstream Reader (Collaborator)](../feeds/feed-permissions.md#permissions-table) or higher permissions installs the version in the downstream feed. This triggers the downstream to save a copy of the package from upstream, after which it is permanently saved and available in the downstream to all readers. This is when the package version becomes visible in the package versions section of the web UI.
+A: Packages from upstream sources become available in the downstream feed soon after they're published. However, the package will only be visible to readers after it has been saved to the feed. A package is saved when a user with [Feed and Upstream Reader (Collaborator)](../feeds/feed-permissions.md#feed-roles-and-permissions) or higher permissions installs the version in the downstream feed. This triggers the downstream to save a copy of the package from upstream, after which it is permanently saved and available in the downstream to all readers. This is when the package version becomes visible in the package versions section of the web UI.
 
 ##### Q: What are feed views?
 

@@ -20,7 +20,7 @@ Azure Artifacts securely stores various package types in a feed, whether publish
 
 |    **Product**     |   **Requirements**   |
 |--------------------|----------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An [Azure Artifacts feed](../start-using-azure-artifacts.md#create-a-new-feed).<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- You must be a [Feed Owner](../feeds/feed-permissions.md#permissions-table) to set up retention policies, delete packages and feeds, or restore packages from the recycle bin.<br>   &nbsp;&nbsp;&nbsp;&nbsp;- You must be a [Feed Publisher (Contributor)](../feeds/feed-permissions.md#permissions-table) or higher to unlist, deprecate, or yank packages. |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An [Azure Artifacts feed](../start-using-azure-artifacts.md#create-a-new-feed).<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- You must be a [Feed Owner](../feeds/feed-permissions.md#feed-roles-and-permissions) to set up retention policies, delete packages and feeds, or restore packages from the recycle bin.<br>   &nbsp;&nbsp;&nbsp;&nbsp;- You must be a [Feed Publisher (Contributor)](../feeds/feed-permissions.md#feed-roles-and-permissions) or higher to unlist, deprecate, or yank packages. |
 
 ## Delete packages
 
