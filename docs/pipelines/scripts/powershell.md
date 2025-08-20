@@ -1,78 +1,114 @@
 ---
-title: PowerShell scripts to customize pipelines
+title: PowerShell scripts for pipelines
 description: Learn about using PowerShell scripts to customize your pipelines by adding business logic.
 ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.date: 07/03/2024
+ms.date: 08/19/2025
 monikerRange: '<= azure-devops'
+#customer intent: As a developer, I want to know how PowerShell scripts work in pipelines so I can add business logic to my pipelines.
 ---
 
-# PowerShell scripts to customize pipelines
+# PowerShell scripts for pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how you can move beyond compiling and testing code and use PowerShell scripts to add business logic to pipelines. The Azure Pipelines [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) runs PowerShell scripts in your pipelines. You can use PowerShell to access the Azure DevOps REST API, work with Azure DevOps work items and test management, or call other services as needed.
+This article explains how PowerShell scripts can add business logic to Azure Pipelines. The [PowerShell v2 (PowerShell@2)](/azure/devops/pipelines/tasks/reference/powershell-v2) task runs PowerShell scripts that can access the Azure DevOps REST API, work with Azure DevOps work items, manage tests, or call other services.
 
-You can use variables in your PowerShell scripts, including [user-defined variables](../process/variables.md#user-defined-variables) that you set yourself. You can also use [predefined variables](../build/variables.md) that are available in all Azure Pipelines, and set [multi-job output variables](../process/variables.md#set-a-multi-job-output-variable) to make variables available to future jobs. For more information, see [Define variables](../process/variables.md).
+You can use [predefined variables](../build/variables.md) or [user-defined variables](../process/variables.md#user-defined-variables) in PowerShell scripts. You can also set [multi-job output variables](../process/variables.md#set-a-multi-job-output-variable) to make variables available to other jobs. For more information, see [Define variables](../process/variables.md).
 
-You can use named parameters in your PowerShell scripts. Other kinds of parameters, such as switch parameters, aren't supported and cause errors if you try to use them. For more information, see [How to declare cmdlet parameters](/powershell/scripting/developer/cmdlet/how-to-declare-cmdlet-parameters).
+You can also use named parameters in your PowerShell scripts. Other kinds of parameters, such as [switch parameters](/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters#switch-parameters), aren't supported. For more information, see [How to declare cmdlet parameters](/powershell/scripting/developer/cmdlet/how-to-declare-cmdlet-parameters).
 
-## Add a PowerShell script to a pipeline
+## PowerShell script task
 
-The build uses the active branch of your code. If your pipeline run uses the `main` branch, your script also uses the `main` branch.
+To use a PowerShell script, you add the [PowerShell v2 (PowerShell@2)](/azure/devops/pipelines/tasks/reference/powershell-v2) task to your pipeline, and then enter an inline PowerShell script or call a PowerShell script file.
+
+The build uses the active branch of your code. If your pipeline run uses the `main` branch of your code, your script also uses the `main` branch.
 
 ### [YAML](#tab/yaml)
 
-You can run Windows PowerShell on a [Windows build agent](../agents/windows-agent.md), or run PowerShell Core on any platform. The syntax for including PowerShell Core is slightly different than for Windows PowerShell.
-
-After you push your PowerShell script to your repo, add a `pwsh` or `powershell` step to your pipeline. The `pwsh` keyword and `powershell` keywords are both shortcuts to run the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2).
-
-Example for PowerShell Core:
+The following example uses `targetType: 'inline'` and adds an inline script in the `script` property.
 
 ```yaml
 steps:
-- pwsh: ./my-script.ps1
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: Write-Host "Hello world!"
 ```
 
-Example for Windows PowerShell:
+The following example adds the `PowerShell@2` step to a YAML pipeline. The code invokes a PowerShell script file named *test.ps1* located in the root of your repository.
 
 ```yaml
 steps:
-- powershell: .\my-script.ps1
+- task: PowerShell@2
+  inputs:
+    targetType: 'filePath'
+    filePath: 'test.ps1'
+```
+
+>[!NOTE]
+>By default, the `PowerShell@2` task uses Windows PowerShell 5.1 for Windows agents and PowerShell 7.x for Linux/macOS agents. To use PowerShell 7.x on Windows agents, you must have PowerShell 7.x. installed and add the `pwsh` parameter set to `true`. [Microsoft-hosted agents](../agents/hosted.md) have PowerShell 7.x installed by default.
+
+You can also add a [`pwsh`](/azure/devops/pipelines/yaml-schema/steps-pwsh) or [`powershell`](/azure/devops/pipelines/yaml-schema/steps-powershell) step to your YAML pipeline as a shortcut for the `PowerShell@2` step. The `pwsh` shortcut runs PowerShell 7.x on macOS, Linux, or Windows. The `powershell` shortcut runs Windows PowerShell 5.1 on Windows or PowerShell 7.x on Linux and macOS.
+
+```yaml
+steps:
+- pwsh: test.ps1
+
+steps:
+- pwsh: Write-Host Hello
 ```
 
 ### [Classic](#tab/classic)
 
-Add the PowerShell Script task to your pipeline, and add your script file to the **Script Path**. The same [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) works for both PowerShell Core and Windows PowerShell. 
+1. In a Classic pipeline, add the [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2) task to your pipeline.
 
-:::image type="content" source="media/powershell-update-script-path.png" alt-text="Screenshot of PowerShell task script path setting.":::
+1. In the **PowerShell** pane, select either **File Path** or **Inline** under **Type**.
+
+   - If you choose **File path**, the default, add the location of your script file relative to the working directory under **Script Path**.
+   - For **Inline**, enter your PowerShell commands in the **Script** field.
+
+   :::image type="content" source="media/powershell-update-script-path.png" alt-text="Screenshot of PowerShell task script path setting.":::
+
+>[!NOTE]
+> By default, the PowerShell v2 task uses Windows PowerShell 5.1 for Windows agents and PowerShell 7.x for Linux/macOS agents. To use PowerShell 7.x on Windows agents, select **Use PowerShell Core** under **Advanced options** in the PowerShell pane. You must have PowerShell 7.x. installed, which [Microsoft-hosted agents](../agents/hosted.md) do by default.
 
 ---
 
 ## Example script to apply version to assemblies
 
-The example script in this section applies a version to assembly property files. For the script to run successfully, the defined build number format must have four periods, for example `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`.
+The following PowerShell script applies a version based on build number to assemblies. For example, if your build number format definition `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)` produces the build number **Build HelloWorld_2024.07.19.1**, the script applies version **2024.07.19.1** to your assemblies.
+
+For this script to run successfully, your build number format must have four segments. For more information, see [Run or build numbers](../process/run-number.md).
 
 > [!NOTE]
 > Build number is also called run number.
 
 ### [YAML](#tab/yaml)
 
-Customize your build number in the YAML pipeline by using the `name` property. The `name` property must be at the root level of the pipeline. For more information, see [Configure run or build numbers](../process/run-number.md).
+1. Customize your build number definition in the YAML pipeline by using the `name` property at the root level of the pipeline.
 
-```yaml
-name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
-```
+   ```yaml
+   name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+   ```
+
+1. Save the following PowerShell script as a file at the root of your repository.
+
+1. Add a `PowerShell@2` task step or `pwsh` or `powershell` shortcut to your pipeline, and call the file path of the PowerShell script file, relative to the working directory.
 
 #### [Classic](#tab/classic)
 
-To customize your build number in a Classic pipeline, when you add the build task to your pipeline, specify your build number format in the **Options** tab. 
+1. In your Classic pipeline, specify your build number format in the **Options** tab under **Build number format**. For example, enter `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`.
 
-:::image type="content" source="media\build-number-format.png" alt-text="Screenshot of build number format setting.":::
+   :::image type="content" source="media\build-number-format.png" alt-text="Screenshot of build number format setting.":::
+
+1. Save the following PowerShell script as a file at the root of your repository.
+
+1. Add a **PowerShell** task to your pipeline, and call the file path of the PowerShell script file, relative to the working directory.
 
 ---
 
-The following PowerShell example script applies a version to assemblies. For example, if your defined build number format `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)` produces build number `Build HelloWorld_2024.07.19.1`, the script applies version `2024.07.19.1` to your assemblies.
+**PowerShell script to apply version to assemblies:**
 
 ```powershell
 # Enable -Verbose option
@@ -158,13 +194,11 @@ else
 <a name="example-powershell-script-access-rest-api"></a>
 ## Example script to access the REST API
 
-This example uses the `SYSTEM_ACCESSTOKEN` variable to access the [Azure Pipelines REST API](../../integrate/index.md).
+The following PowerShell script uses environment variables to access the [Azure Pipelines REST API](../../integrate/index.md) and retrieve the pipeline definition.
 
 #### [YAML](#tab/yaml)
 
-You can use `$env:SYSTEM_ACCESSTOKEN` in an inline script in your YAML pipeline to access the OAuth token.
-
-The following inline PowerShell script in a YAML pipeline uses the OAuth token to access the Azure Pipelines REST API that retrieves the pipeline definition.
+In your YAML pipeline, you can define the environmental variable `$env:SYSTEM_ACCESSTOKEN` in a `PowerShell@2` task, and use it in the inline script to get the OAuth token to access the REST API.
 
 ```yaml
 - task: PowerShell@2
@@ -183,13 +217,13 @@ The following inline PowerShell script in a YAML pipeline uses the OAuth token t
 
 #### [Classic](#tab/classic)
 
-To enable your script to use the build process OAuth token, select the **Agent job** for the PowerShell script task, and then select **Allow scripts to access the OAuth token** under **Additional options**.
+To enable your script to use the build process OAuth token, select the **Agent job** for your pipeline, and then select the check box for **Allow scripts to access the OAuth token** under **Additional options**.
 
 :::image type="content" source="media\allow-script-to-access-oauth-token.png" alt-text="Screenshot of enabling OAuth token access for scripts.":::
 
 Your script can now use the `SYSTEM_ACCESSTOKEN` environment variable to access the [Azure Pipelines REST API](../../integrate/index.md).
 
-The following inline script in a **PowerShell Script** task uses the Azure Pipelines REST API to retrieve the pipeline definition.
+The following inline script in a **PowerShell** task uses the Azure Pipelines REST API to retrieve the pipeline definition.
 
 ```powershell
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
@@ -204,6 +238,6 @@ Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 
 ## Related content
 
-- [Configure run or build numbers](../process/run-number.md)
+- [Run or build numbers](../process/run-number.md)
 - [Azure Pipelines PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2)
 - [Azure Pipelines REST API](../../integrate/index.md)

@@ -91,7 +91,7 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
 1. If this is the first time using Cargo with Azure Artifacts, make sure you have installed [rustup](https://rustup.rs/).
 
-1. Add the provided snippet from the **Project setup** section to your *.cargo/config.toml* file in your source repository depending on your scenario. See [Permissions table](../feeds/feed-permissions.md#permissions-table) to learn more about the different roles and their permissions:
+1. Add the provided snippet from the **Project setup** section to your *.cargo/config.toml* file in your source repository depending on your scenario. See [Feed roles and permissions](../feeds/feed-permissions.md#feed-roles-and-permissions) to learn more about the different roles and their permissions:
 
     - **Feed Readers and anonymous users**:
     
