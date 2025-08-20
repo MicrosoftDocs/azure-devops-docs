@@ -1,7 +1,7 @@
 ---
 title: Clone or import a pipeline
 description: Learn about creating a pipeline by cloning or importing an existing pipeline in Azure Pipelines.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/20/2025
 monikerRange: '<= azure-devops'
 ms.custom: sfi-image-nochange
@@ -22,7 +22,10 @@ To migrate a Classic build pipeline to a YAML pipeline by using **Export to YAML
 
 :::moniker-end
 
-You need `Edit release pipeline` or `Create build pipeline` permissions to clone a Classic pipeline. 
+## Prerequisites
+
+- An Azure DevOps project where you have permission to create and edit pipelines.
+- An existing Azure Pipelines pipeline to base a new pipeline on.
 
 ## Clone or copy a pipeline
 
