@@ -2,7 +2,7 @@
 title: Build and publish a Python app
 description: Learn how to automatically build and test Python apps with Azure Pipelines.
 ms.topic: quickstart
-ms.date: 08/19/2025
+ms.date: 08/20/2025
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 monikerRange: "<=azure-devops"
 ms.author: jukullam
@@ -35,9 +35,8 @@ Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Lin
 
 ::: moniker range="< azure-devops"
 
-- An Azure DevOps organization with the ability to run [parallel jobs](../licensing/concurrent-jobs.md) on [self-hosted build agents](../agents/agents.md#self-hosted-agents).
-- An Azure DevOps project in the organization where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- Python 3.12 or other Python version installed on your self-hosted agent.
+- An Azure DevOps project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
+- Python 3.12 or other Python version installed on your [self-hosted build agent](../agents/agents.md#self-hosted-agents).
 - A [GitHub](https://github.com) account where you can create repositories and grant access to pipelines.
 
 ::: moniker-end
