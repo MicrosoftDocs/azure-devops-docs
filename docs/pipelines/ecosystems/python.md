@@ -211,13 +211,13 @@ The **Artifacts** page shows the published build artifacts.
 
 ::: moniker range=">=azure-devops"
 
-:::image type="content" source="media/pipeline-artifacts-list.png" alt-text="Screenshot of published build artifacts for multiple job.":::
+:::image type="content" source="media/pipeline-artifacts-list.png" alt-text="Screenshot of published build artifacts.":::
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-:::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Screenshot of published build artifacts.":::
+:::image type="content" source="media/pipeline-artifacts-list-single-file.png" alt-text="Screenshot of published build artifacts for a single job.":::
 
 ::: moniker-end
 
