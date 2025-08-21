@@ -102,7 +102,7 @@ We recommend that you create a test project and apply your customized inherited 
 1. The **Create new project** page opens. Fill out the form. 
 
 	::: moniker range="azure-devops"
-	:::image type="content" source="media/process/create-test-project-sprint-166.png" alt-text="Screenshot shows the Create new project form."::: 
+	:::image type="content" source="media/process/create-test-project-sprint166.png" alt-text="Screenshot shows the Create new project form."::: 
 	::: moniker-end
 	::: moniker range=">= azure-devops-2020 < azure-devops"
 	:::image type="content" source="media/add-custom-field/create-new-project-2020.png" alt-text="Screenshot shows the Create new project page."::: 
