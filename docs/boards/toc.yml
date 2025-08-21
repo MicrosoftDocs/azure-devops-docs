@@ -23,6 +23,8 @@
   href: queries/toc.yml
 - name: Plans & portfolios
   href: plans/toc.yml
+- name: Azure DevOps MCP Server
+  href: mcp-server/mcp-server-overview.md
 - name: Azure Boards & GitHub
   href: github/toc.yml
 - name: Integrations & extensions
