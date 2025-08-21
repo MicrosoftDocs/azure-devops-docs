@@ -2,7 +2,7 @@
 title: Build and publish a Python app
 description: Learn how to automatically build and test Python apps with Azure Pipelines.
 ms.topic: quickstart
-ms.date: 08/20/2025
+ms.date: 08/21/2025
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 monikerRange: "<=azure-devops"
 ms.author: jukullam
@@ -25,9 +25,6 @@ To complete all the procedures in this article, you need the following prerequis
 
 ::: moniker range=">=azure-devops"
 
-- An Azure DevOps organization with the ability to run parallel jobs on [Microsoft-hosted agents](../agents/hosted.md). For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
-- An Azure DevOps project in the organization where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- A [GitHub](https://github.com) account where you can create repositories and grant access to pipelines.
 
 Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Linux, macOS, and Windows. You don't have to set up anything more to build Python projects. To see which Python versions are preinstalled, see [Software](../agents/hosted.md#software).
 
@@ -36,18 +33,17 @@ Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Lin
 ::: moniker range="< azure-devops"
 
 - An Azure DevOps project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- Python 3.12 or other Python version installed on your [self-hosted build agent](../agents/agents.md#self-hosted-agents).
-- A [GitHub](https://github.com) account where you can create repositories and grant access to pipelines.
+- A [self-hosted build agent](../agents/agents.md#self-hosted-agents) that has Python 3.12 or other Python version installed.
+- A [GitHub](https://github.com) account and [GitHub service connection](../library/service-endpoints.md#create-a-service-connection) to authorize Azure Pipelines.
 
 ::: moniker-end
 
 >[!IMPORTANT]
->GitHub procedures might require you to take one or more of the following actions:
->- Sign in to GitHub.
->- Authorize Azure Pipelines in GitHub.
+>GitHub procedures might require you to take one or more of the following actions in GitHub:
+>- Sign in.
+>- Authorize Azure Pipelines.
 >- Authenticate to GitHub organizations.
->- Install the Azure Pipelines app in GitHub.
->- [Create a GitHub service connection](../library/service-endpoints.md#create-a-service-connection) in Azure DevOps.
+>- Install the Azure Pipelines app.
 >
 >Follow instructions to complete the required processes. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
