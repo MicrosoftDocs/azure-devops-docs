@@ -2,8 +2,8 @@
 title: How to use YAML templates for reusable and secure pipelines
 description: Learn how to create reusable YAML pipeline templates to streamline and secure your CI/CD processes.
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
-ms.topic: conceptual
-ms.date: 02/26/2025
+ms.topic: how-to
+ms.date: 08/21/2025
 monikerRange: "<=azure-devops"
 zone_pivot_groups: template-type
 ai-usage: ai-assisted
@@ -17,18 +17,27 @@ ai-usage: ai-assisted
 
 Templates let you define reusable content, logic, and parameters in YAML pipelines. To work with templates effectively, you need to have a basic understanding of [Azure Pipelines key concepts](../get-started/key-pipelines-concepts.md) such as stages, steps, and jobs. 
 
-Templates can help you speed up development. For example, you can have a series of the same tasks in a template and then include the template multiple times in different stages of your YAML pipeline. 
+There are two main types of templates:
+
+- **Includes templates:** Insert reusable content into a pipeline. If a template is used to include content, it functions like an include directive in many programming languages. Content from a template is inserted into the pipeline or template that includes it.
+- **Extends templates:** Control and define a schema for what is allowed in a pipeline. When an extends template is used, it defines logic and structure that a pipeline must follow. This is useful for enforcing security, compliance, or organizational standards.
+
+Templates can help you speed up development. For example, you can have a series of the same tasks in a template and then include the template multiple times in different stages of your YAML pipeline.
 
 Templates can also help you secure your pipeline. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow. For example, you might want to restrict what tasks are allowed to run. For that scenario, you can use template to prevent someone from successfully running a task that violates your organization's security policies.
- 
-There are two types of templates: includes and extends. 
 
-- **Includes templates** let you insert reusable content with a template. If a template is used to include content, it functions like an include directive in many programming languages. Content from template is inserted into the pipeline or template that includes it.
-- **Extends templates** let you control what is allowed in a pipeline. When an extends template controls what is allowed in a pipeline, the template defines logic that a pipeline must follow. For example, an extends template can be used in the context of extending a pipeline to perform stages or jobs. 
+To take full advantage of templates, you should also use [template expressions](template-expressions.md) and [template parameters](template-parameters.md).
 
-To take full advantage of templates, you should also use [template expressions](template-expressions.md) and [template parameters](template-parameters.md). 
+## Prerequisites
 
-### Imposed limits on template updates
+| **Product** | **Requirements**   |
+|---|---|
+| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../organizations/security/permissions.md) can manage pipelines. <br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).
+| **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../library/service-endpoints.md) to authorize Azure Pipelines.|
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/). |
+
+
+## Imposed limits on template updates
 
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
@@ -45,12 +54,12 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 
 ::: moniker range=">=azure-devops-2020"
 
-To increase security, you can enforce that a pipeline extends from a particular template. The file `start.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. 
-In `start.yml`, if a `buildStep` gets passed with a script step, then it's rejected and the pipeline build fails. 
+To increase security, you can enforce that a pipeline extends from a particular template. The file `start-extends-template.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. 
+In `start-extends-template.yml`, if a `buildStep` gets passed with a script step, then it's rejected and the pipeline build fails. 
 When extending from a template, you can increase security by adding a [required template approval](../security/templates.md#set-required-templates). 
 
 ```yaml
-# File: start.yml
+# File: start-extends-template.yml
 parameters:
 - name: buildSteps # the name of the parameter is buildSteps
   type: stepList # data type is StepList
@@ -85,7 +94,7 @@ trigger:
 - main
 
 extends:
-  template: start.yml
+  template: start-extends-template.yml
   parameters:
     buildSteps:  
       - bash: echo Test #Passes
@@ -110,11 +119,11 @@ trigger:
 - none
 
 extends:
-  template: resource-template.yml
+  template: resource-extends-template.yml
 ```
 
 ```yaml
-# File: resource-template.yml
+# File: resource-extends-template.yml
 resources:
   pipelines:
   - pipeline: my-pipeline 
@@ -134,13 +143,13 @@ steps:
 
 ::: moniker range=">=azure-devops-2020"
 
-You can copy content from one YAML and reuse it in a different YAML. Copying content from one YAML to another saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
+You can insert content from one YAML and reuse it in a different YAML. Inserting content from one YAML to another saves you from having to manually include the same logic in multiple places. The `insert-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
 > [!NOTE]
 > Template files need to exist on your filesystem at the start of a pipeline run. You can't reference templates in an artifact. 
 
 ```yaml
-# File: templates/include-npm-steps.yml
+# File: templates/insert-npm-steps.yml
 
 steps:
 - script: npm install
@@ -156,12 +165,12 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-  - template: templates/include-npm-steps.yml  # Template reference
+  - template: templates/insert-npm-steps.yml  # Template reference
 - job: Windows
   pool:
     vmImage: 'windows-latest'
   steps:
-  - template: templates/include-npm-steps.yml  # Template reference
+  - template: templates/insert-npm-steps.yml  # Template reference
 ```
 
 #### Reuse steps across multiple jobs
@@ -170,7 +179,7 @@ You can insert a template to reuse one or more steps across several jobs.
 In addition to the steps from the template, each job can define more steps.
 
 ```yaml
-# File: templates/npm-steps.yml
+# File: templates/insert-npm-steps.yml
 steps:
 - script: npm install
 - script: npm test
@@ -184,20 +193,20 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-  - template: templates/npm-steps.yml  # Template reference
+  - template: templates/insert-npm-steps.yml  # Template reference
 
 - job: macOS
   pool:
     vmImage: 'macOS-latest'
   steps:
-  - template: templates/npm-steps.yml  # Template reference
+  - template: templates/insert-npm-steps.yml  # Template reference
 
 - job: Windows
   pool:
     vmImage: 'windows-latest'
   steps:
   - script: echo This script runs before the template's steps, only on Windows.
-  - template: templates/npm-steps.yml  # Template reference
+  - template: templates/insert-npm-steps.yml  # Template reference
   - script: echo This step runs after the template's steps.
 ```
 
@@ -206,7 +215,7 @@ jobs:
 Much like steps, jobs can be reused with templates.
 
 ```yaml
-# File: templates/jobs.yml
+# File: templates/insert-jobs.yml
 jobs:
 - job: Ubuntu
   pool:
@@ -225,13 +234,13 @@ jobs:
 # File: azure-pipelines.yml
 
 jobs:
-- template: templates/jobs.yml  # Template reference
+- template: templates/insert-jobs.yml  # Template reference
 ```
 
 When working with multiple jobs, remember to remove the name of the job in the template file, so as to avoid conflict
 
 ```yaml
-# File: templates/jobs.yml
+# File: templates/insert-multiple-jobs.yml
 jobs:
 - job: 
   pool:
@@ -250,9 +259,9 @@ jobs:
 # File: azure-pipelines.yml
 
 jobs:
-- template: templates/jobs.yml  # Template reference
-- template: templates/jobs.yml  # Template reference
-- template: templates/jobs.yml  # Template reference
+- template: templates/insert-multiple-job.yml  # Template reference
+- template: templates/insert-multiple-jobs.yml  # Template reference
+- template: templates/insert-multiple-jobs.yml  # Template reference
 ```
 
 #### Reuse stages across multiple templates
@@ -260,7 +269,7 @@ jobs:
 Stages can also be reused with templates.
 
 ```yaml
-# File: templates/stages1.yml
+# File: templates/insert-stage1.yml
 stages:
 - stage: Angular
   jobs:
@@ -270,7 +279,7 @@ stages:
 ```
 
 ```yaml
-# File: templates/stages2.yml
+# File: templates/insert-stage2.yml
 stages:
 - stage: Build
   jobs:
@@ -295,8 +304,8 @@ stages:
     - task: Npm@1
       inputs:
         command: 'install'
-- template: templates/stages1.yml # Template reference
-- template: templates/stages2.yml # Template reference
+- template: templates/insert-stage1.yml # Template reference
+- template: templates/insert-stage2.yml # Template reference
 ```
 
 #### Add parameters to job, stage, and step templates
@@ -466,7 +475,7 @@ Variables can be defined in one YAML and included in another template. This coul
 In this example, the variable `favoriteVeggie` is included in `azure-pipelines.yml`.
 
 ```yaml
-# File: vars.yml
+# File: insert-vars.yml
 variables:
   favoriteVeggie: 'brussels sprouts'
 ```
@@ -475,7 +484,7 @@ variables:
 # File: azure-pipelines.yml
 
 variables:
-- template: vars.yml  # Template reference
+- template: insert-vars.yml  # Template reference
 
 steps:
 - script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
