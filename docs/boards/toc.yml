@@ -1,7 +1,7 @@
 - name: Azure Boards Documentation
   href: index.yml
 - name: Azure DevOps MCP Server
-  href: mcp-server/mcp-server-overview.md
+  href: ../mcp-server/mcp-server-overview.md
 - name: What is Azure Boards?
   displayName: scrum, kanban, basics, agile, CMMI, backlog
   href: get-started/what-is-azure-boards.md
