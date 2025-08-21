@@ -344,9 +344,9 @@ Service principals and managed identities have specific limitations compared to 
 
 ## Frequently asked questions
 
-#### Q: Why should I use a service principal or managed identity instead of a PAT?
+### Why should I use a service principal or managed identity instead of a PAT?
 
-A: Service principals and managed identities offer significant security advantages over PATs.
+Service principals and managed identities offer significant security advantages over PATs.
 
 Security benefits:
 
@@ -363,21 +363,21 @@ Operational benefits:
 
 For migration examples, see [Replace PATs with Microsoft Entra tokens](entra.md#migration-from-legacy-authentication).
 
-#### Q: What are the rate limits on service principals and managed identities?
+### What are the rate limits on service principals and managed identities?
 
-A: Service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
+Service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
 
-#### Q: Will using this feature cost more?
+### Will using this feature cost more?
 
-A: Service principals and managed identities are priced like users based on access level. Key differences are:
+Service principals and managed identities are priced like users based on access level. Key differences are:
 
 - **No multi-organization billing discount**: Each identity counts as a separate license in every organization.
 - **License assignment**: Access levels must be assigned directly. (Group rules don't apply automatically.)
 - **Same pricing tiers**: Basic, Basic + Test Plans, and Visual Studio subscriber rates apply.
 
-#### Q: Can I add a managed identity from a different tenant to my organization?
+### Can I add a managed identity from a different tenant to my organization?
 
-A: You can add identities directly from your organization's connected tenant only. For cross-tenant scenarios, use this workaround.
+You can add identities directly from your organization's connected tenant only. For cross-tenant scenarios, use this workaround.
 
 To set up a cross-tenant managed identity:
 

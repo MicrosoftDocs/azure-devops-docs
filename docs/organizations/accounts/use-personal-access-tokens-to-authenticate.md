@@ -27,13 +27,13 @@ When you use Microsoft tools, your Microsoft account or Microsoft Entra ID is re
 
 | Category | Requirements |
 |--------------|-------------|
-|Permissions |- Permission to access and modify your user settings where PATs are managed. <br>- Go to your profile and select **User settings** > **Personal access tokens**. If you can see and manage your PATs here, you have the necessary permissions.<br>- Go to your project and select **Project settings** > **Permissions**. Find your user account in the list and check the permissions that are assigned to you. Look for permissions related to managing tokens or user settings.<br>- If your [organization has policies in place](manage-pats-with-policies-for-administrators.md), an administrator might need to grant you specific permissions or add you to an allowlist to create and manage PATs.<br>- PATs are connected to the user account that minted the token. Depending on the tasks the PAT performs, you might need more permissions yourself.|
+|Permissions |Permission to access and modify your user settings where PATs are managed. <br>- Go to your profile and select **User settings** > **Personal access tokens**. If you can see and manage your PATs here, you have the necessary permissions.<br>- Go to your project and select **Project settings** > **Permissions**. Find your user account in the list and check the permissions that are assigned to you. Look for permissions related to managing tokens or user settings.<br>- If your [organization has policies in place](manage-pats-with-policies-for-administrators.md), an administrator might need to grant you specific permissions or add you to an allowlist to create and manage PATs.<br>- PATs are connected to the user account that minted the token. Depending on the tasks the PAT performs, you might need more permissions yourself.|
 |Access levels |At least Basic access.|
 |Tasks|*Use PATs only when necessary and always rotate them regularly.* See the section [Best practices for using PATs](#best-practices-for-using-pats).|
 
 ## Create a PAT
 
-1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
+1. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`).
   
 1. From your home page, open user settings :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
@@ -85,24 +85,26 @@ For more information, see [Configure an SMTP server and customize email for aler
 
 If you receive an unexpected PAT notification, it might mean that an administrator or tool created a PAT for you. Here are some examples:
 
-- A token named `git: `https://dev.azure.com/{Your_Organization}` on YourMachine` is created when you connect to an Azure DevOps Git repo via *git.exe*.
-- A token named *Service Hooks: Azure App Service: Deploy web app* is created when you or an administrator sets up an Azure App Service web app deployment.
+- A token named `git: https://dev.azure.com/{Your_Organization} on YourMachine` is created when you connect to an Azure DevOps Git repo via git.exe.
+- A token named `Service Hooks: Azure App Service: Deploy web app` is created when you or an administrator sets up an Azure App Service web app deployment.
 - A token named `WebAppLoadTestCDIntToken` is created when web load testing is set up as part of a pipeline by you or an administrator.
-- A token named *Microsoft Teams Integration* is created when a Microsoft Teams Integration Messaging Extension is set up.
+- A token named `Microsoft Teams Integration` is created when a Microsoft Teams Integration Messaging Extension is set up.
 
-> [!WARNING]
-> - [Revoke the PAT](admin-revoke-user-pats.md) (and change your password) if you suspect that it exists in error.
-> - Check with your administrator if you're a Microsoft Entra user to see if an unknown source or location accessed your organization.
-> - Review the FAQ on [accidental PAT check-ins to public GitHub repositories](#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
+If you think the situation is serious:
+
+- [Revoke the PAT](admin-revoke-user-pats.md) (and change your password) if you suspect that it exists in error.
+- Check with your administrator if you're a Microsoft Entra user to see if an unknown source or location accessed your organization.
+- Review the FAQ on [accidental PAT check-ins to public GitHub repositories](#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
 
 ## Use a PAT
 
 Your PAT serves as your digital identity, much like a password. You can use PATs as a quick way to do one-time requests or prototype an application locally. Use a PAT in your code to authenticate [REST API](/rest/api/azure/devops) requests and automate workflows by including the PAT in the authorization header of your request.
 
 After your app code is working, switch to [Microsoft Entra OAuth to acquire tokens for your app's users](../../integrate/get-started/authentication/entra-oauth.md) or a [service principal or managed identity to acquire tokens as an application](../../integrate/get-started/authentication/service-principal-managed-identity.md). We don't recommend that you keep running apps or scripts with PATs long term. You can use Microsoft Entra tokens anywhere that a PAT is used.
-> Consider [acquiring a Microsoft Entra token via the Azure CLI](../../cli/entra-tokens.md) for ad-hoc requests.
 
-#### [Windows](#tab/Windows/)
+Consider [acquiring a Microsoft Entra token via the Azure CLI](../../cli/entra-tokens.md) for ad-hoc requests.
+
+### [Windows](#tab/Windows/)
 
 To provide the PAT through an HTTP header, you must first convert it to a `Base64` string. It can then be provided as an HTTP header in the following format:
 
@@ -111,7 +113,7 @@ To provide the PAT through an HTTP header, you must first convert it to a `Base6
 Authorization: Basic BASE64_USERNAME_PAT_STRING
 ```
 
-#### [Linux/macOS](#tab/Linux/)
+### [Linux/macOS](#tab/Linux/)
 
 The following sample gets a list of builds by using curl:
 
@@ -171,7 +173,7 @@ Some things to note about these APIs:
 
 * [Microsoft Entra access tokens](../../integrate/get-started/authentication/entra.md) are required to access this API. We recommend a stronger form of authentication when you mint new tokens.
 * Only users or apps that use an "on-behalf-of user" flow can generate PATs. Apps that use "on-behalf-of application" flows or authentication flows that don't issue Microsoft Entra access tokens aren't valid for use with this API. As such, [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) can't create or manage PATs.
-* Previously the PAT Lifecycle Management APIs supported only the `user_impersonation` scope, but now the `vso.pats` are available and are the recommended scope to use with these APIS. Downscope all apps that previously relied on `user_impersonation` to call these APIs.
+* Previously the PAT Lifecycle Management APIs supported only the `user_impersonation` scope, but now the `vso.pats` are available and are the recommended scope to use with these APIs. Downscope all apps that previously relied on `user_impersonation` to call these APIs.
 
 ## Changes to format
 
@@ -216,49 +218,49 @@ If you're using a PAT issued before that data, regenerate your PAT. If you integ
 
 ## FAQs
 
-#### Q: Why can't I edit or regenerate a PAT scoped to a single organization?
+### Why can't I edit or regenerate a PAT scoped to a single organization?
 
-A: Sign in to the organization where your PAT is scoped. You can view your PATs when you're signed in to any organization in the same Microsoft Entra ID by changing the *Access scope* filter. You can edit only organization-scoped tokens when you're signed in to the specific organization.
+Sign in to the organization where your PAT is scoped. You can view your PATs when you're signed in to any organization in the same Microsoft Entra ID by changing the *Access scope* filter. You can edit only organization-scoped tokens when you're signed in to the specific organization.
 
-#### Q: What happens to a PAT if a user account is disabled?
+### What happens to a PAT if a user account is disabled?
 
-A: When a user is removed from Azure DevOps, the PAT invalidates within one hour. If your organization is connected to Microsoft Entra ID, the PAT also invalidates in Microsoft Entra ID because it belongs to the user. We recommend rotating the PAT to another user or service account to keep services running.
+When a user is removed from Azure DevOps, the PAT invalidates within one hour. If your organization is connected to Microsoft Entra ID, the PAT also invalidates in Microsoft Entra ID because it belongs to the user. We recommend that you rotate the PAT to another user or service account to keep services running.
 
-#### Q: Can I use PATs with all Azure DevOps REST APIs?
+### Can I use PATs with all Azure DevOps REST APIs?
 
-A: No. You can use PATs with most Azure DevOps REST APIs, but [organizations and profiles](/rest/api/azure/devops/) and the PAT Management Lifecycle APIs support only [Microsoft Entra tokens](../../integrate/get-started/authentication/entra-oauth.md).
+No. You can use PATs with most Azure DevOps REST APIs, but [organizations and profiles](/rest/api/azure/devops/) and the PAT Management Lifecycle APIs support only [Microsoft Entra tokens](../../integrate/get-started/authentication/entra-oauth.md).
 
-#### Q: What happens if I accidentally check my PAT into a public repository on GitHub?
+### What happens if I accidentally check my PAT into a public repository on GitHub?
 
-A: Azure DevOps scans for PATs checked into public repositories on GitHub. When we find a leaked token, we immediately send a detailed email notification to the token owner and log an event in your Azure DevOps organization's [audit log](../audit/azure-devops-auditing.md#review-audit-log). We encourage affected users to mitigate the issue by [revoking the leaked token](use-personal-access-tokens-to-authenticate.md#revoke-a-pat) and replacing it with a new token.
+Azure DevOps scans for PATs that are checked in to public repositories on GitHub. When we find a leaked token, we immediately send a detailed email notification to the token owner and log an event in your Azure DevOps organization's [audit log](../audit/azure-devops-auditing.md#review-audit-log). We encourage affected users to mitigate the issue by [revoking the leaked token](use-personal-access-tokens-to-authenticate.md#revoke-a-pat) and replacing it with a new token.
 
 Unless you disabled the *Automatically revoke leaked personal access tokens* policy, we immediately revoke the leaked PAT. For more information, see [Revoke leaked PATs automatically](manage-pats-with-policies-for-administrators.md#revoke-leaked-pats-automatically-tenant-policy).
 
-#### Q: Can I use a personal access token as an ApiKey to publish NuGet packages to an Azure Artifacts feed by using the dotnet/nuget.exe command line?
+### Can I use a personal access token as an API key to publish NuGet packages to an Azure Artifacts feed by using the dotnet/nuget.exe command line?
 
-A: No. Azure Artifacts doesn't support passing a PAT as an ApiKey. When you use a local development environment, we recommend installing the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to authenticate with Azure Artifacts. For more information, see the following examples: [dotnet](../../artifacts/nuget/dotnet-exe.md) and [NuGet.exe](../../artifacts/nuget/publish.md). If you want to publish your packages by using Azure Pipelines, use the [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) task to authenticate with your feed. For more information, see the example in [Publish NuGet packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md).
+No. Azure Artifacts doesn't support passing a PAT as an API key. When you use a local development environment, we recommend that you install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to authenticate with Azure Artifacts. For more information, see the following examples: [dotnet](../../artifacts/nuget/dotnet-exe.md) and [NuGet.exe](../../artifacts/nuget/publish.md). If you want to publish your packages by using Azure Pipelines, use the [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) task to authenticate with your feed. For more information, see the example in [Publish NuGet packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md).
 
-#### Q: Why did my PAT stop working?
+### Why did my PAT stop working?
 
-A: PAT authentication requires you to regularly sign in to Azure DevOps by using the full authentication flow. Signing in once every 30 days is sufficient for many users, but you might need to sign in more frequently depending on your Microsoft Entra configuration. If your PAT stops working, first try to sign in to your organization and complete the full authentication prompt. If your PAT still doesn't work, check if it expired.
+PAT authentication requires you to regularly sign in to Azure DevOps by using the full authentication flow. Signing in once every 30 days is sufficient for many users, but you might need to sign in more frequently depending on your Microsoft Entra configuration. If your PAT stops working, first try to sign in to your organization and complete the full authentication prompt. If your PAT still doesn't work, check if it expired.
 
 Enabling IIS Basic Authentication invalidates using PATs for Azure DevOps Server. We recommend that you always keep [IIS Basic Authentication](/iis/configuration/system.webserver/security/authentication/basicauthentication) turned off.
 
 > [!WARNING]
-> If you use Git with IIS Basic Authentication, Git breaks because it requires PATs for user authentication. You can add an extra header to Git requests to use it with IIS Basic Authentication, but we don't recommend this action. The extra header must be used for all Azure DevOps Server installations because Windows Auth also prevents using PATs. The extra header must also include a base 64 encoding of `user:PAT`.
+> If you use Git with IIS Basic Authentication, Git breaks because it requires PATs for user authentication. You can add an extra header to Git requests to use it with IIS Basic Authentication, but we don't recommend this action. The extra header must be used for all Azure DevOps Server installations because Windows Auth also prevents using PATs. The extra header must also include a Base 64 encoding of `user:PAT`.
 >   ```
 >   git -c http.extraheader='Authorization: Basic [base 64 encoding of "user:password"]' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
 >   ```
 
-#### Q: How do I create access tokens that aren't tied to a person?
+### How do I create access tokens that aren't tied to a person?
 
-A: All PATs are associated with the user identity that created it. Applications can't create PATs.
+All PATs are associated with the user identity that created it. Applications can't create PATs.
 
-In Azure DevOps, you can generate access tokens that aren't linked to a specific user. Use Microsoft Entra tokens that were issued by an [application service principal or managed identity](../../integrate/get-started/authentication/service-principal-managed-identity.md). For pipelines, use [service connections](../../pipelines/library/service-endpoints.md) to securely authenticate and authorize automated tasks without relying on user-specific credentials.
+In Azure DevOps, you can generate access tokens that aren't linked to a specific user. Use Microsoft Entra tokens that an [application service principal or managed identity](../../integrate/get-started/authentication/service-principal-managed-identity.md) issued. For pipelines, use [service connections](../../pipelines/library/service-endpoints.md) to securely authenticate and authorize automated tasks without relying on user-specific credentials.
 
-### Q: How can I regenerate/rotate PATs through the API? I saw that option in the UI, but I don't see a similar method in the API.
+### How can I regenerate/rotate PATs through the API? I saw that option in the UI, but I don't see a similar method in the API.
 
-A: The **Regenerate** functionality available in the UI actually accomplishes a few actions, which you can replicate through an API.
+The **Regenerate** functionality available in the UI actually accomplishes a few actions, which you can replicate through an API.
 
 To rotate your PAT, follow these steps:
 
@@ -266,17 +268,17 @@ To rotate your PAT, follow these steps:
 1. Create a new PAT with the old PAT ID by using a **POST** call.
 1. Revoke the old PAT by using a **DELETE** call.
 
-### Q: How long do expired, revoked, or inactive PATs remain visible in the Azure DevOps token list?
+### How long do expired, revoked, or inactive PATs remain visible in the Azure DevOps token list?
 
-A: You can no longer use or regenerate PATs that are expired or revoked. These inactive tokens stay visible for several months after expiration or revocation before being automatically removed from the display.
+You can no longer use or regenerate PATs that are expired or revoked. These inactive tokens stay visible for several months after expiration or revocation before being automatically removed from the display.
 
-### Q: Why do I see a "Need admin approval" message when I try to use a Microsoft Entra app to call the PAT Lifecycle Management APIs?
+### Why do I see a "Need admin approval" message when I try to use a Microsoft Entra app to call the PAT Lifecycle Management APIs?
 
-A: Your tenant's security policies require admin consent before applications can access organization resources in the organization. Reach out to your tenant administrator.
+Your tenant's security policies require admin consent before applications can access organization resources in the organization. Reach out to your tenant administrator.
 
-### Q: Can I use a service principal to create or manage PATs?
+### Can I use a service principal to create or manage PATs?
 
-A: No. PATs belong to a user identity. Microsoft Entra [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) can generate short-lived Microsoft Entra tokens that you can use in most places where a PAT is accepted. Learn more about [our efforts to reduce PAT usage across Azure DevOps](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) and explore replacing PATs with Microsoft Entra tokens.
+No. PATs belong to a user identity. Microsoft Entra [service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) can generate short-lived Microsoft Entra tokens that you can use in most places where a PAT is accepted. Learn more about [our efforts to reduce PAT usage across Azure DevOps](https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/) and explore replacing PATs with Microsoft Entra tokens.
 
 ## Related content
 
