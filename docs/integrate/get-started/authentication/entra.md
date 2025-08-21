@@ -25,7 +25,7 @@ This article explains the benefits of Microsoft Entra ID authentication and guid
 [Microsoft Entra ID](/entra/fundamentals/whatis) is Microsoft's cloud-based identity and access management platform that lets organizations:
 
 - Manage user identities and control access to resources.
-- Implement enterprise security policies like multifactor authentication and Conditional Access.
+- Implement enterprise security policies like multifactor authentication and Microsoft Entra Conditional Access.
 - Integrate with thousands of applications, including Azure DevOps Services.
 - Provide single sign-on across Microsoft and non-Microsoft services.
 
@@ -44,7 +44,7 @@ The [Microsoft Identity platform](/entra/identity-platform/) provides two primar
 
 - Users sign in with their Microsoft Entra ID credentials.
 - Applications receive delegated permissions to act as the signed-in user.
-- Support for multifactor authentication and Conditional Access policies.
+- Support for multifactor authentication and Microsoft Entra Conditional Access policies.
 - Ideal for web applications, desktop apps, and user-facing tools.
 
 **Get started**: [Microsoft Entra ID OAuth implementation](entra-oauth.md)
@@ -91,7 +91,7 @@ Microsoft Entra ID authentication provides significant advantages over legacy Az
 |---------|-------------------|------------------------|-------------------|
 | Token lifespan | One hour (autorefresh) | Up to one year | Configurable |
 | Multifactor authentication | ✅ Native support | ❌ Not supported | ❌ Not supported |
-| Conditional Access | ✅ Full support | ❌ Not supported | ❌ Not supported |
+| Conditional access | ✅ Full support | ❌ Not supported | ❌ Not supported |
 | Enterprise policies | ✅ Enforced | ⚠️ Limited | ⚠️ Limited |
 | Audit logging | ✅ Comprehensive | ⚠️ Basic | ⚠️ Basic |
 | Future investment | ✅ Active development | ⚠️ Maintenance mode | ❌ Deprecated |

@@ -44,7 +44,7 @@ Choose the appropriate OAuth implementation based on your application's needs.
 Microsoft Entra ID OAuth provides the most secure and future-proof authentication method for Azure DevOps applications. Benefits include:
 
 - **Enterprise integration**: Seamless integration with existing Microsoft Entra ID infrastructure
-- **Enhanced security**: Advanced security features include Conditional Access and multifactor authentication
+- **Enhanced security**: Advanced security features include Microsoft Entra Conditional Access and multifactor authentication
 - **Future support**: Actively maintained and supported platform
 - **Unified identity**: Single sign-on experience across Microsoft services
 
