@@ -67,7 +67,9 @@ The Azure DevOps MCP Server provides your AI assistant with secure access to you
 ## Common use cases and examples
 
 ### Daily standup preparation
+
 **What MCP Server provides**: Access to your assigned work items and recent updates
+
 **What your AI assistant does**: Analyzes the data to help you prepare
 
 **Example conversation**:
@@ -75,7 +77,9 @@ The Azure DevOps MCP Server provides your AI assistant with secure access to you
 - "Now analyze these items and help me prepare for standup - what did I complete, what am I working on, and what's blocked?"
 
 ### Sprint planning support
+
 **What MCP Server provides**: Access to backlog items, team data, and work item details
+
 **What your AI assistant does**: Helps analyze capacity and plan the sprint
 
 **Example conversation**:
@@ -83,7 +87,9 @@ The Azure DevOps MCP Server provides your AI assistant with secure access to you
 - "Based on these items, which ones should we prioritize for a two-week sprint with three developers?"
 
 ### Code review workflow
+
 **What MCP Server provides**: Pull request details and linked work item information
+
 **What your AI assistant does**: Provides business context for technical changes
 
 **Example conversation**:
@@ -91,7 +97,9 @@ The Azure DevOps MCP Server provides your AI assistant with secure access to you
 - "Help me understand the business effect of these code changes"
 
 ### Work item management
+
 **What MCP Server provides**: Work item CRUD operations and bulk updates
+
 **What your AI assistant does**: Helps with natural language work item operations
 
 **Example conversation**:
@@ -99,7 +107,9 @@ The Azure DevOps MCP Server provides your AI assistant with secure access to you
 - "Update the priority to 'High' for any security-related bugs and assign them to the current sprint"
 
 ### Project reporting
+
 **What MCP Server provides**: Access to work items, builds, and project data
+
 **What your AI assistant does**: Creates summaries and identifies trends
 
 **Example conversation**:
