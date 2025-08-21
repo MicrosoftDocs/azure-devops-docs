@@ -13,7 +13,7 @@ ms.date: 08/21/2025
 
 # About Azure DevOps MCP Server
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 Consider asking your AI assistant "Get my current sprint work items, then identify which ones might be at risk" and getting instant access to your actual Azure DevOps data. The Azure DevOps MCP Server provides your AI assistant with secure access to work items, pull requests, builds, test plans, and documentation from your Azure DevOps organization.
 
