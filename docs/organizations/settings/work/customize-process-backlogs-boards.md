@@ -127,11 +127,11 @@ You can add a portfolio backlog and custom work item type following these steps.
 
 ::: moniker-end
 
-1. From the  **Backlog levels** page, choose **+ New top level portfolio backlog**.
+4. From the **Backlog levels** page, choose **+ New top level portfolio backlog**.
 
    :::image type="content" source="media/process/process-new-portfolio-backlog.png" alt-text="Screenshot showing Web portal, Admin context, Process page, select Process.":::
 
-1. Name the backlog level, select the backlog level color, and add the work item type to associate with this level, and then select **Add**. 
+5. Name the backlog level, select the backlog level color, and add the work item type to associate with this level, and then select **Add**. 
 
 	::: moniker range=">= azure-devops-2020"
 
@@ -139,7 +139,7 @@ You can add a portfolio backlog and custom work item type following these steps.
 
 	::: moniker-end
 
-1. If you're associating only one work item type with the backlog, then choose **Save** to save your changes. Otherwise, you can add more work item types as needed. 
+6. If you're associating only one work item type with the backlog, then choose **Save** to save your changes. Otherwise, you can add more work item types as needed. 
 
 	::: moniker range=">= azure-devops-2020"
 

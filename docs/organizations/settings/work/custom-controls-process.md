@@ -110,22 +110,22 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
    Here, we show how the control appears by default with the checkbox and then with the toggle control.  
 
-:::row:::
-   :::column span="1":::
-   **Boolean field with checkbox**
-   :::column-end:::
-   :::column span="1":::
-   **Boolean field with toggle control**
-   :::column-end:::
-:::row-end::: 
-:::row:::
-   :::column span="1":::
-   ![Boolean field with checkbox](media/process/boolean-checkbox.png)
-   :::column-end:::
-   :::column span="1":::
-   ![Boolean field with toggle control](media/process/boolean-toggle.png)
-   :::column-end:::
-:::row-end:::
+    :::row:::
+       :::column span="1":::
+       **Boolean field with checkbox**
+       :::column-end:::
+       :::column span="1":::
+       **Boolean field with toggle control**
+       :::column-end:::
+    :::row-end::: 
+    :::row:::
+       :::column span="1":::
+       :::image type="content" source="media/process/boolean-checkbox.png" alt-text="Screenshot of Boolean field with checkbox.":::
+       :::column-end:::
+       :::column span="1":::
+       :::image type="content" source="media/process/boolean-toggle.png" alt-text="Screenshot of Boolean field with toggle control.":::
+       :::column-end:::
+    :::row-end:::
 
 <a id="group-level"></a>
 

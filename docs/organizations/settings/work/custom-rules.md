@@ -23,13 +23,13 @@ Custom rules provide support for several business use cases. You can go beyond s
 
 With a custom rule, you can define actions based on specific conditions. For example, you can apply a rule to support these types of scenarios:
 
-- When a value is defined for Priority, make Risk a required field.
-- When a change is made to the value of Release, clear the value of Milestone.
-- When a change was made to the value of Remaining Work, make Completed Work a required field.
-- When the value of Approved is True, make Approved By a required field.
-- When a user story is created, make the following fields required: Priority, Risk, and Effort.
-- When current user is a member of Project Administrators, make Priority required.
-- When current user isn't a member of Project Administrators, hide the Priority field.
+- When a value is defined for **Priority**, make **Risk** a required field.
+- When a change is made to the value of **Release**, clear the value of **Milestone**.
+- When a change was made to the value of **Remaining Work**, make **Completed Work** a required field.
+- When the value of **Approved** is *True*, make **Approved** By a required field.
+- When a user story is created, make the following fields required: **Priority**, **Risk**, and **Effort**.
+- When current user is a member of Project Administrators, make **Priority** required.
+- When current user isn't a member of Project Administrators, hide the **Priority** field.
 
 > [!NOTE]  
 > You make a field required and specify a field default through the [**Options** tab](customize-process-field.md#options) for the field.

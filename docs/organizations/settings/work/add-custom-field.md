@@ -49,7 +49,7 @@ Follow these steps to add a field to an existing work item type. You can't use t
 	:::image type="content" source="media/field/breadcrumbs-bug-wit.png" alt-text="Screenshot shows the process page for MyAgile, showing a bug."::: 
 
 	If the **New field** and other options are disabled, you don't have the necessary permissions to edit the process. See [Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
-	
+
 1. With the WIT selected, select **New field**.  
 
 	:::image type="content" source="media/field/bug-new-field.png" alt-text="Screenshot shows the process page for a WIT with New field highlighted."::: 
@@ -84,7 +84,7 @@ Follow these steps to add a field to an existing work item type. You can't use t
 	> [!TIP]
 	> After you add a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, [add those elements first](customize-process-form.md) and then add your fields. You can't add a field to the gray area within the form where the **Assigned To**, **State**, and **Reason** fields are located. 
 
-<a id="verify">  </a>
+<a id="verify"></a>
 
 ## Verify the customization you made 
 
