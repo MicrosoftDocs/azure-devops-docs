@@ -21,16 +21,21 @@ In this quickstart, you create a pipeline that builds and tests a Python app. Yo
 
 ## Prerequisites
 
-To complete all the procedures in this article, you need the following prerequisites:
-
 ::: moniker range=">=azure-devops"
 
-
 Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Linux, macOS, and Windows. You don't have to set up anything more to build Python projects. To see which Python versions are preinstalled, see [Software](../agents/hosted.md#software).
+
+To complete all the procedures in this article, you need the following prerequisites:
+
+- Mambership in an Azure DevOps organization that has the ability to run [parallel jobs](../licensing/concurrent-jobs.md) on [Microsoft-hosted agents](../agents/hosted.md).
+- An Azure DevOps project in the organization where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
+- A [GitHub](https://github.com) account and [GitHub service connection](../library/service-endpoints.md#create-a-service-connection) to authorize Azure Pipelines.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+
+To complete all the procedures in this article, you need the following prerequisites:
 
 - An Azure DevOps project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
 - A [self-hosted build agent](../agents/agents.md#self-hosted-agents) that has Python 3.12 or other Python version installed.
