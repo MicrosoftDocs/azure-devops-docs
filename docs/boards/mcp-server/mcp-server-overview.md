@@ -19,7 +19,8 @@ Consider asking your AI assistant "Get my current sprint work items, then identi
 
 Unlike cloud-based solutions that require sending your data externally, the Azure DevOps MCP Server runs locally within your secure environment, ensuring your sensitive project information never leaves your network while still delivering enterprise-grade AI capabilities.
 
-
+> [!IMPORTANT]
+> Azure DevOps MCP Server is in public preview. Features and functionality might change before general availability. For issues or feedback, visit the [GitHub repository](https://github.com/microsoft/azure-devops-mcp).
 
 ## Why use Azure DevOps MCP Server?
 
