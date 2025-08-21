@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 08/15/2025
+ms.date: 08/20/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -84,6 +84,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 #### macOS images updates
 
+* The macOS 13 Ventura image will be deprecated starting September 1, 2025, with plans for retirement on November 14, 2025. For more information, see [Upcoming Updates for Azure Pipelines Agents Images - mac-OS 13 Ventura](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
 * [[macOS] Starting August 11, 2025, if your workflow is running on a macOS-15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
 * The macOS 15 Sequoia hosted agent image is in GA.
  * The `macOS-latest` label still refers to `macOS-14`. The migration of `macos-latest` to refer to `macOS-15` will begin August 4, 2025, with a planned completion date of August 30, 2025. For more information, see [[macOS] macos-latest YAML-label will use macos-15 in August 2025](https://github.com/actions/runner-images/issues/12520).
