@@ -2,7 +2,7 @@
 title: Build and publish a Python app
 description: Learn how to automatically build and test Python apps with Azure Pipelines.
 ms.topic: quickstart
-ms.date: 08/21/2025
+ms.date: 08/22/2025
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 monikerRange: "<=azure-devops"
 ms.author: jukullam
@@ -25,21 +25,19 @@ In this quickstart, you create a pipeline that builds and tests a Python app. Yo
 
 Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Linux, macOS, and Windows. You don't have to set up anything more to build Python projects. To see which Python versions are preinstalled, see [Software](../agents/hosted.md#software).
 
-To complete all the procedures in this article, you need the following prerequisites:
-
-- Mambership in an Azure DevOps organization that has the ability to run [parallel jobs](../licensing/concurrent-jobs.md) on [Microsoft-hosted agents](../agents/hosted.md).
-- An Azure DevOps project in the organization where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- A [GitHub](https://github.com) account and [GitHub service connection](../library/service-endpoints.md#create-a-service-connection) to authorize Azure Pipelines.
+| **Product** | **Requirements**   |
+|---|---|
+| **Azure DevOps** | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../../organizations/security/permissions.md) can manage pipelines. <br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md).
+| **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../../library/service-endpoints.md) to authorize Azure Pipelines.|
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-To complete all the procedures in this article, you need the following prerequisites:
-
-- An Azure DevOps project where you have permission to create pipelines and deploy apps. To create a project, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- A [self-hosted build agent](../agents/agents.md#self-hosted-agents) that has Python 3.12 or other Python version installed.
-- A [GitHub](https://github.com) account and [GitHub service connection](../library/service-endpoints.md#create-a-service-connection) to authorize Azure Pipelines.
+| **Product** | **Requirements**   |
+|---|---|
+| **Azure DevOps** | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br>   - A self-hosted agent with Python 3.12 or other Python version installed. To create one, see [Self-hosted agents](../../agents/agents.md#self-hosted-agents).  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../../organizations/security/permissions.md) can manage pipelines. <br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md).
+| **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../../library/service-endpoints.md) to authorize Azure Pipelines.|
 
 ::: moniker-end
 
