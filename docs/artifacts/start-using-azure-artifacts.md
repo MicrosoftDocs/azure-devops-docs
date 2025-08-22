@@ -18,7 +18,7 @@ monikerRange: '>= azure-devops-2020'
 Azure Artifacts provides developers with a streamlined way to manage all their dependencies from a single feed. These feeds serve as repositories for storing, managing, and sharing packages, whether within your team, across organizations, or publicly online. Azure Artifacts supports multiple package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
 > [!NOTE]
-> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization begins handling more critical tasks, [increase artifacts storage limit](#increase-artifacts-storage-limit) to ensure you have the appropriate resources.
+> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization begins handling more critical tasks, [increase artifacts storage limit](artifact-storage.md#increase-artifacts-storage-limit) to ensure you have the appropriate resources.
 
 ## Create a new feed
 
