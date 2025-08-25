@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 08/22/2025
+ms.date: 08/25/2025
 ---
 
 ### Do I need an agent to run pipelines?
@@ -19,8 +19,8 @@ See [Troubleshoot pipeline runs](../troubleshooting/troubleshooting.md).
 
 See [Create and manage agent pools](../agents/pools-queues.md).
 
-### How can I fix ny NuGet push task failing with "Error: unable to get local issuer certificate"?
+### How can I fix my NuGet push task failing with "Error: unable to get local issuer certificate"?
 
 You can fix this issue by adding a trusted root certificate. Either add the `NODE_EXTRA_CA_CERTS=file` environment variable to your build agent, or add the `NODE.EXTRA.CA.CERTS=file` task variable in your pipeline.
 
-For more details about this variable, see [NODE_EXTRA_CA_CERTS=file](https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file) in the Node.js documentation. For instructions on setting a variable in your pipeline, see [Set variables in a pipeline](../process/variables.md#set-variables-in-pipeline).
+For more information about this variable, see [NODE_EXTRA_CA_CERTS=file](https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file) in the Node.js documentation. For instructions on setting a variable in your pipeline, see [Set variables in a pipeline](../process/variables.md#set-variables-in-pipeline).

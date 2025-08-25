@@ -3,16 +3,16 @@ title: Run Git commands in a script
 description: Learn how you can run Git commands for your workflow in Azure Pipelines build scripts.
 ms.topic: how-to
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
-ms.date: 08/22/2025
+ms.date: 08/25/2025
 monikerRange: '<= azure-devops'
-#customer intent: As a developer, I want to learn how to run GitHub commands in Azure Pipelines scripts so I can run pipelines to work with my GitHub code.
+#customer intent: As a developer, I want to learn how to run GitHub commands in Azure Pipelines scripts so I can run pipelines to work with my code from GitHub.
 ---
 
 # Run Git commands in pipeline scripts
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how to run Git commands in Azure Pipelines build scripts. Git commands are available on [Microsoft-hosted](../agents/hosted.md) and [self-hosted](../agents/agents.md) agents to run Git commands for build workflows. For example, after a continuous integration (CI) build completes on a feature branch, you can merge the branch to main.
+Git commands are available for build workflows on [Microsoft-hosted](../agents/hosted.md) and [self-hosted](../agents/agents.md) agents. For example, after a continuous integration (CI) build completes on a feature branch, you can merge the branch to main. This article explains how to run Git commands in Azure Pipelines build scripts. 
 
 <a name="enable"></a>
 ## Enable scripts to run Git commands
@@ -35,7 +35,7 @@ The project build service must have permissions to write to the source repositor
 
    :::image type="content" source="media/organization-project-settings.png" alt-text="Sreenshot that shows selecting Security for repositories. ":::
 
-1. On the **User permissions** page, select the **Project Collection Build Service** identity. Be sure to select **\<project name> Build Service (\<organization>)** under **User**, not **Project Collection Build Service Accounts** under **Azure DevOps Groups**. By default, this identity can read from the repo but can’t push any changes to it.
+1. On the **User permissions** page, select the **Project Collection Build Service** identity. Be sure to select **\<project name> Build Service (\<organization>)** under **User**, not **Project Collection Build Service Accounts**. By default, this identity can read from the repo but can't push any changes to it.
 
 1. Drop down the list and select **Allow** next to each permission needed for the Git commands you want to run, typically **Create branch**, **Contribute**, **Read**, and **Create tag**.
 
@@ -65,7 +65,7 @@ In the Classic pipeline editor, select the agent job on the left, and on the rig
 
 ## Clean the local repo
 
-The build pipeline doesn't automatically clean up certain changes to the local repository, such as deleting local branches or undoing local git config changes. If you run into problems using a self-hosted agent, you can clean the repo before you run the build.
+The build pipeline doesn't automatically clean up certain changes to the local repository, such as deleting local branches or undoing local `git config` changes. If you run into problems using a self-hosted agent, you can clean the repo before you run the build.
 
 In general, for faster performance of self-hosted agents, don't clean the repo. Cleaning isn't effective for Microsoft-hosted agents, because they use a new agent each time. For more information, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
 
@@ -105,7 +105,7 @@ The following examples run Git commands in a [Command line](/azure/devops/pipeli
 
 ### List the files in your repo
 
-To list the files in the Git repo, use the [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task as follows:
+To list the files in the Git repo, use the [Command line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task in a YAML pipeline as follows:
 
 ```yaml
 - task: CmdLine@2
@@ -115,7 +115,7 @@ To list the files in the Git repo, use the [Command Line](/azure/devops/pipeline
 
 ### Merge a feature branch to main
 
-The following example merges a CI build to `main` if the build succeeds.
+The following Classic pipeline example merges a CI build to `main` if the build succeeds.
 
 1. Create a file called *merge.bat* at the root of your repo with the following contents:
 
@@ -141,13 +141,13 @@ The following example merges a CI build to `main` if the build succeeds.
    git status
    ```
 
-1. On the [Triggers](../build/triggers.md) tab of your Classic pipeline, select the checkbox to **Enable continuous integration**.
+1. On the [Triggers](../build/triggers.md) tab in your Classic pipeline, select the checkbox to **Enable continuous integration**.
 
 1. Under **Branch filters** and **Path filters**, select branches and paths to **Include** or **Exclude** from the build.
 
 1. Add a [Batch script](/azure/devops/pipelines/tasks/reference/batch-script-v1) as the last task in your pipeline.
 
-1. Under **Path**, enter the location and name of the *merge.bat* file.
+1. Under **Path** in the task configuration, enter the location and name of the *merge.bat* file.
 
 ## FAQ
 
