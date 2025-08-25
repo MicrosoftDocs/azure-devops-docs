@@ -39,7 +39,7 @@ The project build service must have permissions to write to the source repositor
 
 1. Drop down the list and select **Allow** next to each permission needed for the Git commands you want to run, typically **Create branch**, **Contribute**, **Read**, and **Create tag**.
 
-   :::image type="content" source="media/modify-repo-security.png" alt-text="Screenshot that shows granting the build identity permissions to repositories. ":::
+   :::image type="content" source="media/modify-repo-security.png" alt-text="Screenshot that shows granting the identity permissions to repositories. ":::
 
 ### Allow scripts to access the system token
 
@@ -59,7 +59,7 @@ For more information about the `checkout` step, see the [`steps.checkout`](/azur
 
 # [Classic](#tab/classic)
 
-In the Classic pipeline editor, select the agent job on the left, and on the right under **Additional settings**, select the check box for **Allow scripts to access the OAuth token**.
+In the Classic pipeline editor, select the agent job at left, and at right under **Additional settings**, select the check box for **Allow scripts to access the OAuth token**.
 
 ---
 
