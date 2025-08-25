@@ -161,6 +161,7 @@ Yes, you can run Git commands if your remote repo is in GitHub or another Git se
 
 You can use the following Azure Pipelines tasks to run Git commands:
 
+- [Bash](/azure/devops/pipelines/tasks/reference/bash-v3)
 - [Batch Script](/azure/devops/pipelines/tasks/reference/batch-script-v1)
 - [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2)
 - [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2)
