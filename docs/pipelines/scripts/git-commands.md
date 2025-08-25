@@ -35,7 +35,7 @@ The project build service must have permissions to write to the source repositor
 
    :::image type="content" source="media/organization-project-settings.png" alt-text="Sreenshot that shows selecting Security for repositories. ":::
 
-1. On the **User permissions** page, select the **Project Collection Build Service** identity. Be sure to select **\<project name> Build Service (\<organization>)** under **User**, not **Project Collection Build Service Accounts**. By default, this identity can read from the repo but can't push any changes to it.
+1. On the **User permissions** page, select the **Build Service** identity. Be sure to select **\<project name> Build Service (\<organization>)** under **Users**, not **Project Collection Build Service Accounts**. By default, this identity can read from the repo but can't push any changes to it.
 
 1. Drop down the list and select **Allow** next to each permission needed for the Git commands you want to run, typically **Create branch**, **Contribute**, **Read**, and **Create tag**.
 
