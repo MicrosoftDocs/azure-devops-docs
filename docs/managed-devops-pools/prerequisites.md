@@ -250,8 +250,8 @@ When you create a Managed DevOps Pool, the account you use to sign in to the Azu
 | Permission | Description |
 |------------|-------------|
 | [Azure DevOps organization member](#verify-membership-in-the-azure-devops-organization) | You must be a member of the Azure DevOps organization where you want to create Managed DevOps Pools. |
-| [Azure DevOps project member](#verify-azure-devops-project-membership) | You must be a member of each project in which you want to make your Managed DevOps Pool available to pipelines. |
-| [Project level agent pools administrator or creator](#verify-project-level-agent-pools-administrator-or-creator-permissions) | You must have **Administrator** or **Creator** agent pools permissions at the project level for each project in which you want to make your Managed DevOps Pool available to pipelines. |
+| [Azure DevOps project member](#verify-azure-devops-project-membership) | You must be a member of each project in which you want to make your Managed DevOps Pools available to pipelines. |
+| [Project level agent pools administrator or creator](#verify-project-level-agent-pools-administrator-or-creator-permissions) | You must have **Administrator** or **Creator** agent pools permissions at the project level for each project in which you want to make your Managed DevOps Pools available to pipelines. |
 
 > [!NOTE]
 > If you're creating a Managed DevOps Pool from a pipeline, add the service connection's app registration or managed identity to the Azure DevOps organization and grant it the permissions described in the previous table. For more information, see [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md) and [Use service principals & managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md).
@@ -261,38 +261,38 @@ When you create a Managed DevOps Pool, the account you use to sign in to the Azu
 You must be a member of the Azure DevOps organization before the permissions in this section can be assigned to your account.
 
 > [!TIP]
-> If you are currently working in an Azure DevOps organization, for example using Azure Boards, working with Azure Repos, or using Azure Pipelines, you are already a member of that Azure DevOps organization, and you can skip this step and proceed to [Verify Azure DevOps project membership](#verify-azure-devops-project-membership).
+> If you're currently working in an Azure DevOps organization, for example using Azure Boards, working with Azure Repos, or using Azure Pipelines, you're already a member of that Azure DevOps organization, and you can skip this step and proceed to [Verify Azure DevOps project membership](#verify-azure-devops-project-membership).
 
 To verify your membership in an Azure DevOps organization, go to `https://dev.azure.com/{organization}/_settings/users`, replacing `{organization}` with the name of your Azure DevOps organization.
 
-* If you are denied access to the page, you are not a member of the Azure DevOps organization. You must be [added as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization) by an administrator of the Azure DevOps organization.
-* If you can access the page, review the user list and verify that you are a member of the Azure DevOps organization. If you don't see your account listed, or you can't access the page, you must be [added as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization) by an administrator of the Azure DevOps organization.
+* If you're denied access to the page, you're not a member of the Azure DevOps organization. You must be [added as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization) by an administrator of the Azure DevOps organization.
+* If you can access the page, review the user list and verify that you're a member of the Azure DevOps organization. If you don't see your account listed, or you can't access the page, you must be [added as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization) by an administrator of the Azure DevOps organization.
 
 ### Verify Azure DevOps project membership    
 
-You must be a project member (any role is acceptable including [Readers](../organizations/security/add-users-team-project.md#add-users-or-groups-to-a-project)) for each project in which you want to make your Managed DevOps Pool available to pipelines.
+You must be a project member (any role is acceptable including [Readers](../organizations/security/add-users-team-project.md#add-users-or-groups-to-a-project)) for each project in which you want to make your Managed DevOps Pools available to pipelines.
 
 > [!TIP]
-> If you are currently working in an Azure DevOps project, for example using Azure Boards, working with Azure Repos, or using Azure Pipelines, you are already a member of that Azure DevOps project, and you can skip this step and proceed to [Verify project level agent pools administrator or creator permissions](#verify-project-level-agent-pools-administrator-or-creator-permissions).
+> If you're currently working in an Azure DevOps project, for example using Azure Boards, working with Azure Repos, or using Azure Pipelines, you're already a member of that Azure DevOps project, and you can skip this step and proceed to [Verify project level agent pools administrator or creator permissions](#verify-project-level-agent-pools-administrator-or-creator-permissions).
 
 To verify your membership in a project:
 
 1. Go to `https://dev.azure.com/{organization}/{project}/_settings/permissions`, replacing `{organization}` with the name of your Azure DevOps organization, and `{project}` with the name of the project.
-1. If you can access the page, choose **Users**, and verify that you are listed as a user.
+1. If you can access the page, choose **Users**, and verify that you're listed as a user.
 
    :::image type="content" source="./media/prerequisites/project-users.png" alt-text="Screenshot of verifying Azure DevOps project membership.":::
 
    If you don't see your account listed, or you can't access the page, you must be [added as a member](../organizations/security/add-users-team-project.md#add-users-or-groups-to-a-project) by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group).
 
 > [!IMPORTANT]
-> If creation of your Managed DevOps Pool appears to succeed but the pool isn't added to your project, verify that you are a project member in addition to having one of the project level agent pools permissions described in [Verify project level agent pools administrator or creator permissions](#verify-project-level-agent-pools-administrator-or-creator-permissions). If you have the project level agent permissions but are not a project member, Managed DevOps Pool creation may silently fail.
+> If creation of your Managed DevOps Pool appears to succeed but the pool isn't added to your project, verify that you're a project member in addition to having one of the project level agent pools permissions described in [Verify project level agent pools administrator or creator permissions](#verify-project-level-agent-pools-administrator-or-creator-permissions). If you have the project level agent permissions but are not a project member, Managed DevOps Pool creation may silently fail.
 
 ### Verify project level agent pools administrator or creator permissions
 
-In addition to the project membership requirement described in the previous step, you must have project level agent pools **Administrator** or **Creator** permissions for each project in which you want to make your Managed DevOps Pool available to pipelines.
+In addition to the project membership requirement described in the previous step, you must have project level agent pools **Administrator** or **Creator** permissions for each project in which you want to make your Managed DevOps Pools available to pipelines.
 
 * You can be directly assigned the **Administrator** or **Creator** permission by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md), a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), or another **Project-level agent pools administrator**.
-* If you are a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), your account is automatically assigned the **Administrator** permission.
+* If you're a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group), your account is automatically assigned the **Administrator** permission.
 
 Managed DevOps Pools has two different modes for adding a Managed DevOps Pool to the projects in your Azure DevOps organization.
 
@@ -320,7 +320,7 @@ To check your agent pools permissions at the project level:
    > [!TIP]
    > If the **Add** button is enabled, you have permission to create Managed DevOps Pools for use in this project.
    >
-   > If the **Add** button is disabled, you don't have permission to create Managed DevOps Pools for use in this project, unless you have the **Creator** permission, in which case your name (or the name of a group for which you are a member) would be listed in the **User permissions** list as having the **Creator** permission.
+   > If the **Add** button is disabled, you don't have permission to create Managed DevOps Pools for use in this project, unless you have the **Creator** permission, in which case your name (or the name of a group for which you're a member) would be listed in the **User permissions** list as having the **Creator** permission.
 
 
 ## Next steps
