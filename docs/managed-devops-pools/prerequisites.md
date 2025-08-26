@@ -158,7 +158,7 @@ The default agent size for new Managed DevOps Pools resources is **Standard D2ad
 
    :::image type="content" source="./media/quotas/quota-request-granted.png" alt-text="Screenshot of granted quota request.":::
 
-   If the quota adjustment can't be auto-approved, you'll be directed to submit a support request, as described in the following section.
+   If the quota adjustment can't be autoapproved, you'll be directed to submit a support request, as described in the following section.
 
 ##### Create a quota support request
 
