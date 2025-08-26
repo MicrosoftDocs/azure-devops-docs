@@ -88,27 +88,27 @@ To determine what scopes your application needs:
 
 ## Frequently asked questions
 
-### Can I use OAuth with mobile applications?
+### Q. Can I use OAuth with mobile applications?
 
-No. Azure DevOps Services supports only the web server flow (authorization code flow), which requires securely storing an app secret. Mobile applications can't securely store secrets, which makes OAuth unsuitable for mobile scenarios.
+A. No. Azure DevOps Services supports only the web server flow (authorization code flow), which requires securely storing an app secret. Mobile applications can't securely store secrets, which makes OAuth unsuitable for mobile scenarios.
 
 **Alternative for mobile apps**: Use [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for mobile application authentication.
 
-### Does OAuth work with all Azure DevOps APIs?
+### Q. Does OAuth work with all Azure DevOps APIs?
 
-OAuth supports REST APIs and select Git endpoints only. SOAP APIs don't support OAuth authentication.
+A. OAuth supports REST APIs and select Git endpoints only. SOAP APIs don't support OAuth authentication.
 
-### How do I migrate from Azure DevOps OAuth to Microsoft Entra ID OAuth?
+### Q. How do I migrate from Azure DevOps OAuth to Microsoft Entra ID OAuth?
 
-Follow the [Microsoft Entra ID OAuth migration guide](entra-oauth.md), which includes:
+A. Follow the [Microsoft Entra ID OAuth migration guide](entra-oauth.md), which includes:
 
 - Step-by-step migration instructions.
 - Code examples and best practices.
 - Timeline considerations for the deprecation.
 
-### What happens to my existing Azure DevOps OAuth app after 2026?
+### Q. What happens to my existing Azure DevOps OAuth app after 2026?
 
-Existing Azure DevOps OAuth apps stop working when the service is fully deprecated in 2026. Plan your migration to Microsoft Entra ID OAuth well before this deadline.
+A. Existing Azure DevOps OAuth apps stop working when the service is fully deprecated in 2026. Plan your migration to Microsoft Entra ID OAuth well before this deadline.
 
 ## Choose your implementation path
 
