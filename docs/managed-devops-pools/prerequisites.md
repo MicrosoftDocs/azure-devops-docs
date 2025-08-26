@@ -285,7 +285,7 @@ To verify your membership in a project:
    If you don't see your account listed, or you can't access the page, you must be [added as a member](../organizations/security/add-users-team-project.md#add-users-or-groups-to-a-project) by a [Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md) or a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group).
 
 > [!IMPORTANT]
-> If creation of your Managed DevOps Pool appears to succeed but the pool isn't added to your project, verify that you're a project member in addition to having one of the project level agent pools permissions described in [Verify project level agent pools administrator or creator permissions](#verify-project-level-agent-pools-administrator-or-creator-permissions). If you have the project level agent permissions but are not a project member, Managed DevOps Pool creation may silently fail.
+> If creation of your Managed DevOps Pool appears to succeed but the pool isn't added to your Azure DevOps project, verify that you're a project member in addition to having one of the project level agent pools permissions described in [Verify project level agent pools administrator or creator permissions](#verify-project-level-agent-pools-administrator-or-creator-permissions). If you have the project level agent pools permissions but are not a project member, Managed DevOps Pool creation may silently fail.
 
 ### Verify project level agent pools administrator or creator permissions
 
