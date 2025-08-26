@@ -265,8 +265,8 @@ You must be a member of the Azure DevOps organization before the permissions in 
 
 To verify your membership in an Azure DevOps organization, go to `https://dev.azure.com/{organization}/_settings/users`, replacing `{organization}` with the name of your Azure DevOps organization.
 
-* If you're denied access to the page, you're not a member of the Azure DevOps organization. You must be [added as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization) by an administrator of the Azure DevOps organization.
-* If you can access the page, review the user list and verify that you're a member of the Azure DevOps organization. If you don't see your account listed, or you can't access the page, you must be [added as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization) by an administrator of the Azure DevOps organization.
+* If you're denied access to the page, you're not a member of the Azure DevOps organization. Ask a [Project Collection administrator](../organizations/security/look-up-project-collection-administrators.md) to [add you as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization).
+* If you can access the page, review the user list and verify that you're a member of the Azure DevOps organization. If you don't see your account listed, or you can't access the page, ask a [Project Collection administrator](../organizations/security/look-up-project-collection-administrators.md) to [add you as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization).
 
 ### Verify Azure DevOps project membership    
 
@@ -282,7 +282,7 @@ To verify your membership in a project:
 
    :::image type="content" source="./media/prerequisites/project-users.png" alt-text="Screenshot of verifying Azure DevOps project membership.":::
 
-   If you don't see your account listed, or you can't access the page, you must be [added as a member](../organizations/security/add-users-team-project.md#add-users-or-groups-to-a-project) by a [Project Collection administrator](../organizations/security/look-up-project-collection-administrators.md) or a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group).
+   If you don't see your account listed, or you can't access the page, ask a [Project Collection administrator](../organizations/security/look-up-project-collection-administrators.md) or a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group) to [add you as a project member](../organizations/security/add-users-team-project.md#add-users-or-groups-to-a-project) by 
 
 > [!IMPORTANT]
 > If creation of your Managed DevOps Pool appears to succeed but the pool isn't added to your Azure DevOps project, verify that you're a project member in addition to having one of the project level agent pools permissions described in [Verify project level agent pools administrator or creator permissions](#verify-project-level-agent-pools-administrator-or-creator-permissions). If you have the project level agent pools permissions but aren't a project member, Managed DevOps Pool creation may silently fail.
