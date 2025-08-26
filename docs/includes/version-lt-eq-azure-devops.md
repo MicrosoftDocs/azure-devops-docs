@@ -2,8 +2,8 @@
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 08/08/2022
+ms.date: 08/26/2025
 ---
 
 
-**Azure DevOps Services | Azure DevOps Server 2022 - Azure DevOps Server 2019**
+**Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020**

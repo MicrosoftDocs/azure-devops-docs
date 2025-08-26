@@ -7,7 +7,7 @@ ms.topic: include
 
 ### TFVC check-in policies changes
 
-#### New version (19.254) of Microsoft.TeamFoundationServer.ExtendedClient NuGet package
+#### New version (19.255.0-preview) of Microsoft.TeamFoundationServer.ExtendedClient NuGet package
 NuGet `Microsoft.TeamFoundationServer.ExtendedClient` package was updated with new TFVC policy classes and methods.
 
 
