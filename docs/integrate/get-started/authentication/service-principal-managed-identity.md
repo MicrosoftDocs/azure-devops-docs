@@ -161,7 +161,7 @@ Use the [ServicePrincipalEntitlements REST API](/rest/api/azure/devops/memberent
 Other considerations:
 
 - **Find the correct ID:** Use the service principal's object ID on the **Enterprise applications** pane in the Microsoft Entra admin center, not the application registration's object ID.
-- **Tenant restrictions:** You can add identities only from the same tenant to which your Azure DevOps organization is connected. For cross-tenant scenarios, see the [FAQ workaround](#can-i-add-a-managed-identity-from-a-different-tenant-to-my-organization).
+- **Tenant restrictions:** You can add identities only from the same tenant to which your Azure DevOps organization is connected. For cross-tenant scenarios, see the [FAQ workaround](#q-can-i-add-a-managed-identity-from-a-different-tenant-to-my-organization).
 
 ### Step 3: Configure permissions
 

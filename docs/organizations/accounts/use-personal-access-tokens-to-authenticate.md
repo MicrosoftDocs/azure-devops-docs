@@ -94,7 +94,7 @@ If you think the situation is serious:
 
 - [Revoke the PAT](admin-revoke-user-pats.md) (and change your password) if you suspect that it exists in error.
 - Check with your administrator if you're a Microsoft Entra user to see if an unknown source or location accessed your organization.
-- Review the FAQ on [accidental PAT check-ins to public GitHub repositories](#what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
+- Review the FAQ on [accidental PAT check-ins to public GitHub repositories](#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
 
 ## Use a PAT
 

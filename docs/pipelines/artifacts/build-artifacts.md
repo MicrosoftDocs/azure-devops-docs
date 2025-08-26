@@ -227,7 +227,7 @@ Add the :::image type="icon" source="../tasks/utility/media/downloadbuildartifac
 
 ## Tips
 
-- Disable IIS Basic Authentication if you're using Azure DevOps Server to allow authentication with your Personal Access Token. For more information, see [Why did my PAT stop working?](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#why-did-my-pat-stop-working).
+- Disable IIS Basic Authentication if you're using Azure DevOps Server to allow authentication with your Personal Access Token. For more information, see [Why did my PAT stop working?](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-why-did-my-pat-stop-working).
 
 - Use forward slashes in file path arguments. Backslashes don't work in macOS/Linux agents.
 
