@@ -26,8 +26,7 @@ Azure DevOps supports two types of identities for sign in: Microsoft Personal ac
 
 ### 401 - Not Authorized
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows Azure DevOps connection 401 error.](media/troubleshoot-connection/401_notauthorized.png)
+[ ![Screenshot shows Azure DevOps connection 401 error.](media/troubleshoot-connection/401_notauthorized.png)](media/troubleshoot-connection/401_notauthorized.png#lightbox)
 
 The most common sign in error is *401 Not Authorized*, which occurs when your identity doesn't have permissions to access the organization or a resource within the organization. The following list outlines the most common causes for the 401 error:
 
