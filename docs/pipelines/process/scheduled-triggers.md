@@ -24,25 +24,27 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 
 ## Scheduled triggers
 
-#### [YAML](#tab/yaml/)
+:::zone pivot="pipelines-yaml"
+:::zone-end 
 
-::: moniker range="<=azure-devops"
+:::zone pivot="pipelines-classic"
+:::zone-end 
+
+:::zone pivot="pipelines-yaml"
 
 > [!IMPORTANT]
-> Scheduled triggers defined using the pipeline settings UI take precedence over YAML scheduled triggers.
+> Scheduled triggers defined using the YAML pipeline settings UI take precedence over YAML scheduled triggers.
 > 
 > If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, 
 > only the UI defined scheduled triggers are run. 
 > To run the YAML defined scheduled triggers in your YAML pipeline,
-> you must remove the scheduled triggers defined in the pipeline settings UI.
+> you must remove the scheduled triggers defined in the YAML pipeline settings UI.
 > Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
 > scheduled triggers to start being evaluated.
 >
 > To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-scheduled-triggers).
 
 Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
-
-::: moniker-end
 
 ::: moniker range="<azure-devops-2022"
 
@@ -204,19 +206,17 @@ For more examples, see [schedules.cron examples](/azure/devops/pipelines/yaml-sc
 
 ::: moniker-end
 
-#### [Classic](#tab/classic/)
+:::zone-end 
+
+:::zone pivot="pipelines-classic"
 
 Select the days and times when you want to run the build using the classic editor.
 
 If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
-::: moniker range="<=azure-devops"
-
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
-::: moniker-end
-
-* * *
+:::zone-end 
 
 ## Examples
 
