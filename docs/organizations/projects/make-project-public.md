@@ -19,7 +19,7 @@ Learn how to change the visibility of your Azure DevOps project between public a
 
 > [!IMPORTANT]
 > - When you change a private project to public visibility, **all project contents become publicly accessible**. You can't selectively keep certain repositories, area paths, or build artifacts private within a public project.
-> - Only organizations with the [Allow public project policy already enabled](#step-1-enable-public-projects-for-your-organization) can create projects of change the visibility of a project to public. The policy is no longer available to organizations that aren't using it already. Microsoft recommentds using [GitHub](https://github.com/) for all your public project needs.
+> - Only organizations with the [Allow public project policy already enabled](#step-1-enable-public-projects-for-your-organization) can create projects of change the visibility of a project to public. The policy is no longer available to organizations that aren't using it already. Microsoft recommends using [GitHub](https://github.com/) for all your public project needs.
 
 ## What changes when you make a project public
 
@@ -27,7 +27,7 @@ Making a project public affects permissions, access levels, and available featur
 
 ### Security and permissions changes
 
-When switching from private to public:
+When you switch project visibility from private to public, the following changes occur:
 
 * **Deny permissions are ignored**: Any permissions explicitly set to "Deny" aren't enforced for public users
 * **Minimum access granted**: Nonmembers automatically receive baseline read access to public content
@@ -59,7 +59,7 @@ The following table shows what features are available to users who aren't projec
 
 ## Prerequisites
 
-Before changing project visibility, ensure you meet these requirements:
+Before you change project visibility, ensure you meet these requirements:
 
 |Requirement|Details|
 |-----------|-------|
@@ -137,9 +137,9 @@ Before changing project visibility, ensure you meet these requirements:
 
    ![Screenshot showing Project Settings, Overview, Visibility options.](media/switch-to-public.png)
 
-## Managing contributors in public projects
+## Manage contributors in public projects
 
-### Adding project members
+### Add project members
 
 Add contributors to public projects the same way as private projects:
 
@@ -151,7 +151,7 @@ For more information, see [Add users to your organization](../accounts/add-organ
 
 ### External user considerations
 
-When [inviting external users](../accounts/add-external-user.md) to public projects:
+When you [invite external users](../accounts/add-external-user.md) to public projects:
 - They gain access to all public content in your organization
 - Consider creating separate organizations for public projects if you have sensitive content elsewhere
 
@@ -166,7 +166,7 @@ If your current organization contains sensitive material:
 
 ### Option 2: Selective content migration
 
-#### Moving sensitive work items
+#### Move sensitive work items
 - Use the [move work items feature](../../boards/backlogs/move-change-type.md#move) to transfer sensitive items to a private project
 - Cross-project links continue working for members but remain hidden from nonmembers
 
@@ -209,7 +209,7 @@ Nonmembers of public projects can't do the following actions:
 - Navigate between multiple public projects in the same organization
 - Favorite or follow artifacts
 
-## Troubleshooting public project access
+## Troubleshoot public project access
 
 ### Common issues
 
