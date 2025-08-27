@@ -22,7 +22,7 @@ Unlike cloud-based solutions that require sending your data externally, the Azur
 > [!IMPORTANT]
 > Azure DevOps MCP Server is in public preview. Features and functionality might change before general availability. For issues or feedback, visit the [GitHub repository](https://github.com/microsoft/azure-devops-mcp).
 
-## Get started with MCP Server
+## Install MCP Server
 
 Ready to enhance your AI assistant with Azure DevOps context? The Azure DevOps MCP Server works with popular AI coding environments like Visual Studio Code with GitHub Copilot, Visual Studio 2022, Cursor, and Claude Code.
 
