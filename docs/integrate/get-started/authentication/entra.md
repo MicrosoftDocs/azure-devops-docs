@@ -107,7 +107,7 @@ Organizations increasingly adopt [security policies that restrict personal acces
 |------------|------------|
 | Authenticate with Git Credential Manager (GCM) | GCM defaults to authenticating with PATs. Set the default credential type to `oauth`. Learn more on the [Git Credential Manager (GCM) page](../../../repos/git/set-up-credential-managers.md). |
 | Authenticate in a build or release pipeline | Use a [service connection with Workload Identity Federation](../../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation). |
-| Ad-hoc requests to Azure DevOps REST APIs | Issue a [one-off Microsoft Entra token by using the Azure CLI](../../../cli/entra-tokens.md).  |
+| Ad hoc requests to Azure DevOps REST APIs | Issue a [one-off Microsoft Entra token by using the Azure CLI](../../../cli/entra-tokens.md).  |
 
 > [!TIP]
 > Do you have an Azure DevOps PAT scenario with no clear Microsoft Entra token alternative? Share your scenario in the [Developer Community](https://developercommunity.visualstudio.com/AzureDevOps).
