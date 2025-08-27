@@ -39,10 +39,10 @@ To understand more about Azure Pipelines concepts, watch the following video:
 ## Prepare the sample app
 
 1. Fork the sample repository at [https://github.com/Microsoft/python-sample-vscode-flask-tutorial](https://github.com/Microsoft/python-sample-vscode-flask-tutorial) to your GitHub account.
-1. Clone your fork to your local machine by using `git clone <your-forked-repository-url>`.
-1. Change to your local clone with `cd python-sample-vscode-flask-tutorial`, and build and run the app locally to make sure it works.
+1. Clone your fork to your local machine by using `git clone <your-forked-repository-url>.git`.
+1. Go to your local clone by using `cd python-sample-vscode-flask-tutorial`, and build and run the app locally to make sure it works.
 
-<!--   # [Linux](#tab/linux)-->
+   <!--   # [Linux](#tab/linux)-->
    
    ```bash
    python -m venv .env
@@ -68,13 +68,13 @@ To understand more about Azure Pipelines concepts, watch the following video:
 1. To test the app, go to *http://localhost:5000* in a browser window, and verify that you see the title **Visual Studio Flask Tutorial**.
 1. Close the browser window and stop the Flask server by using <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-## Create and deploy an App Service web app
+## Create and deploy the App Service web app
 
 Create your Azure App Service web app by using Cloud Shell in the Azure portal. To use Cloud Shell, sign in to the [Azure portal](https://portal.azure.com) and select the Cloud Shell button on the toolbar, or go to [Azure Cloud Shell](https://shell.azure.com/).
 
 :::image type="content" source="../media/python/azure-cloud-shell-button.png" alt-text="Screenshot of Azure Cloud Shell button on the Azure portal toolbar.":::
 
-The Cloud Shell appears along the bottom of the browser. Make sure **Bash** is selected in the dropdown menu as the environment.
+The Cloud Shell appears along the bottom of the browser. Make sure **Bash** is selected as the environment in the dropdown menu. You can maximize the Cloud Shell window to give yourself more room.
 
 :::image type="content" source="../media/python/azure-cloud-shell-interface.png" alt-text="Screenshot of Azure Cloud Shell.":::
 
@@ -95,21 +95,24 @@ The Cloud Shell appears along the bottom of the browser. Make sure **Bash** is s
    cd python-sample-vscode-flask-tutorial
    ```
 
-1. Run the [az webapp up](/cli/azure/webapp#az-webapp-up) command to provision the App Service web app and do the first deployment. Replace `<your-web-app-name>` with a name that's unique across Azure, such as a personal or company name along with an app identifier, like `<your-name>-flaskpipelines`. The app URL becomes *\<your-web-app-name>.azurewebsites.net*.
+1. Run the [az webapp up](/cli/azure/webapp#az-webapp-up) command to provision the App Service web app and do the first deployment. Running `az webapp up` with no parameters assigns a randomly generated web app name that's unique in Azure. 
 
    ```azurecli
-   az webapp up --name <your-web-app-name>
+   az webapp up
    ```
+
+   >[!NOTE]
+   >You can add the `--name <your-web-app-name>` parameter and assign a name that's unique across Azure, such as a personal or company name along with an app identifier, like `--name <your-name>-flaskpipelines`. The name can contain only alphanumeric characters and hyphens and can't begin or end with a hyphen.
 
 The `az webapp up` command recognizes the app as a Python app, and takes the following actions:
 
 - Creates a default [resource group](/cli/azure/group#az-group-create).
 - Creates a default [App Service plan](/cli/azure/appservice/plan#az-appservice-plan-create).
-- [Creates a web app](/cli/azure/webapp#az-webapp-create) with the specified name.
+- [Creates a web app](/cli/azure/webapp#az-webapp-create) with the assigned name. The app `URL` is `<your-web-app-name>.azurewebsites.net`.
 - [Deploys](/azure/app-service/deploy-zip) all files from the current working directory to a ZIP archive, with build automation enabled.
-- Caches the parameters locally in the *.azure/config* file so you don't need to specify them again when deploying later with `az webapp up` or other `az webapp` commands from the project folder. The commands use the cached values automatically by default.
+- Caches the parameters locally in the *.azure/config* file so you don't need to specify them again when deploying from the project folder with `az webapp up` or other `az webapp` commands. The commands use the cached values automatically by default.
 
-You can override the default action with your own values by using the command parameters.  For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
+You can override the default action with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
 The `az webapp up` command produces the following JSON output:
 
@@ -121,14 +124,14 @@ The `az webapp up` command produces the following JSON output:
   "name": <your-web-app-name>,
   "os": "Linux",
   "resourcegroup": <your-resource-group>,
-  "runtime_version": "python|3.11",
+  "runtime_version": "python|<runtime-version>",
   "runtime_version_detected": "-",
   "sku": <sku>,
   "src_path": <repository-source-path>
 }
 ```
 
-Note the `URL`, `resourcegroup`, and `runtime_version` values. You use the `resourcegroup` in the next step, and use the `runtime_version` in your pipeline YAML file. The `URL` is the URL of your web app. You can use it to verify that the app is running.
+Note the `URL`, `resourcegroup`, and `runtime_version` values to use later. You use the `resourcegroup` in the next step, and use the `runtime_version` in your pipeline YAML file. The `URL` is the URL of your web app. You can use it to verify that the app is running.
 
 ### Set the startup command
 
@@ -170,6 +173,15 @@ The command returns a JSON object similar to the following example:
 }
 ```
 
+```json
+{
+  "appId": "c2e84cff-dfc5-4130-abef-e8069402a320",
+  "displayName": "iam-sp",
+  "password": "6zm8Q~kw8eqNCIlWEcCYK8RzeOspmoagTH~pXc4T",
+  "tenant": "888d76fa-54b2-4ced-8ee5-aac1585adee7"
+}
+```
+
 Make a note of the `clientId`, `clientSecret`, `subscriptionId`, and `tenantId` values to use for creating a service connection in the next section.
 
 ::: moniker-end
@@ -181,31 +193,30 @@ A service connection provides authenticated access from Azure Pipelines to exter
 ::: moniker range=">=azure-devops"
 
 1. On your Azure DevOps project page, select **Project settings**.
+1. From **Project Settings**, select **Pipelines** > **Service connections**.
 
-   :::image type="content" source="../media/python/project-settings.png" alt-text="Screenshot of project settings button on the project dashboard.":::
+   :::image type="content" source="../media/python/project-settings.png" alt-text="Screenshot of selecting Pipeline Service connections in Project Settings.":::
 
-1. Select **Service connections** in the **Pipelines** section of the menu.
-1. Select **Create service connection**.
-1. Select **Azure Resource Manager** and select **Next**. 
+1. On the **Service connections** page, select **New service connection** or **Create service connection** for the first service connection in the project.
+1. On the **New service connection** screen, select **Azure Resource Manager** and then select **Next**. 
 
     :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Screenshot of Azure Resource Manager service connection selection.":::
 
-1. Select your authentication method and select **Next**. 
-1. In the **New Azure service connection** dialog, enter the information specific to the selected authentication method. For more information about authentication methods, see [Connect to Azure by using an Azure Resource Manager service connection](../library/connect-to-azure.md).
-  
-    For example, if you're using a **Workload Identity federation (automatic)** or **Service principal (automatic)** authentication method, enter the required information.
+1. On the **New Azure service connection** screen, select your **Identity type**. This example uses **App registration (automatic)**, which is recommended. For more information about authentication methods, see [Connect to Azure by using an Azure Resource Manager service connection](../library/connect-to-azure.md).
 
-    :::image type="content" source="../media/azure-service-connection-settings-devops-services.png" alt-text="Screenshot of New service connection dialog box.":::
+1. For **Credential**, select **Workload identity federation (automatic)**.
 
-    |**Field**|**Description**|
-    |--|--|
-    |**Scope level**| Select **Subscription**.|
-    |**Subscription**| Your Azure subscription name.|
-    |**Resource group**| The name of the resource group containing your web app.|
-    |**Service connection name**| A descriptive name for the connection.|
-    |**Grant access permissions to all pipelines**| Select this option to grant access to all pipelines.|
+1. Fill out the following fields:
+
+   - **Scope level**: Select **Subscription**.
+   - **Subscription**: Select your Azure subscription.
+   - **Resource group**: Select the resource group that contains your web app.
+   - **Service Connection Name**: Enter a descriptive name for the connection.|
+   - **Grant access permissions to all pipelines**: Select this check box to grant access to all pipelines in the project.
  
 1. Select **Save**.
+
+   :::image type="content" source="../media/azure-service-connection-settings-devops-services.png" alt-text="Screenshot of New Azure service connection dialog box.":::
 
 The new connection appears in the **Service connections** list, and is ready to use in your pipeline.
 
@@ -213,36 +224,41 @@ The new connection appears in the **Service connections** list, and is ready to 
 
 ::: moniker range="< azure-devops"
 
-1. On project page, select **Project settings**.
+1. On your Azure DevOps project page, select **Project settings**.
+1. From **Project Settings**, select **Pipelines** > **Service connections**.
 
     :::image type="content" source="../media/python/project-settings.png" alt-text="Screenshot of project settings button on the project dashboard.":::
 
-1. Select **Service connections** in the **Pipelines** section of the menu.
-1. Select **Create service connection**.
+1. On the **Service connections** page, select **New service connection** or **Create service connection** for the first service connection in the project.
+1. On the **New service connection** screen, select **Azure Resource Manager** and then select **Next**. 
 
-1. Select **Azure Resource Manager** and select **Next**. 
+   :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Screenshot of Azure Resource Manager service connection selection.":::
 
-    :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Screenshot of Azure Resource Manager service connection selection.":::
+1. On the **New Azure service connection** screen, under **Identity type**, select **App registration or managed identity (manual)**. For more information about authentication methods, see [Connect to Azure by using an Azure Resource Manager service connection](../library/connect-to-azure.md).
 
-1. On **New Azure service connection**, select **Service principal (manual)** and select **Next**.
-1. On the next page, complete the following information.
+1. For **Credential**, select **Secret**.
 
-   :::image type="content" source="../media/azure-service-connection-settings-devops-server.png" alt-text="Screenshot of new service connection dialog box.":::
+1. Fill out the following fields:
 
-    |**Field**|**Description**|
-   |--|--|
-   |**Environment**| Select `Azure Cloud`.|
-   |**Scope level**| Select **Subscription**.| 
-   |**Subscription Id**| Your subscription ID.|
-   |**Subscription Name**| Your Azure subscription name.|
-   |**Service Principal Id**| The `appId` value from the JSON object returned by the `az ad sp create-for-rbac` command.|
-   |**Service Principal Key**| The `password` value from the JSON object returned by the `az ad sp create-for-rbac` command.|
-   |**Tenant Id**| The `tenant` value from the JSON object returned by the `az ad sp create-for-rbac` command.|
+   - **Environment**: Select **Azure Cloud**.
+   - **Scope Level**: Select **Subscription**.
+   - **Subscription ID**: Enter your Azure subscription ID.
+   - **Subscription name**: Enter your Azure subscription name.
 
-1. Select **Verify** to verify the connection.
-1. Enter a **Service connection name**.
-1. Ensure **Grant access permissions to all pipelines** is selected.
+   :::image type="content" source="../media/azure-service-connection-settings-devops-server.png" alt-text="Screenshot of top part of the new service connection screen.":::
+
+1. Under **Authentication**, complete the following fields:
+
+   - **Application (client) ID**: Enter the `appId` value returned by the `az ad sp create-for-rbac` command.
+   - **Directory (tenant) ID**: Enter the `tenant` value returned by the `az ad sp create-for-rbac` command.
+   - **Credential**: Select **Service principal key**.
+   - **Client secret**: Enter the `password` value returned by the `az ad sp create-for-rbac` command.
+   - Select **Verify** to verify the connection.
+1. Under **Service Connection Name**, enter a name for the service connection.
+1. Under **Security**, select the check box for **Grant access permissions to all pipelines**.
 1. Select **Verify and save**.
+
+   :::image type="content" source="../media/azure-service-connection-settings-devops-server.png" alt-text="Screenshot of bottom part of the new service connection screen.":::
 
 The new connection appears in the **Service connections** list, and is ready to use in your pipeline.
 
@@ -254,76 +270,65 @@ Create a pipeline to build and deploy your Python web app to Azure App Service.
 
 ::: moniker range=">=azure-devops"
 
-1. On the left navigation menu, select **Pipelines**.
+1. On the left navigation menu for your project, select **Pipelines**.
+1. On the **Pipelines** page, select **New pipeline**, or **Create pipeline** if this pipeline is the first in the project.
 
-    :::image type="content" source="../media/python/select-pipelines.png" alt-text="Screenshot of Pipelines selection on the project dashboard.":::
+   :::image type="content" source="media/create-first-pipeline.png" alt-text="Screenshot of new pipeline button on the pipelines list.":::
 
-1. Select **Create Pipeline**.
+1. On the **Where is your code** screen, select **GitHub**. You might be prompted to sign into GitHub.
 
-    :::image type="content" source="media/create-first-pipeline.png" alt-text="Screenshot of new pipeline button on the pipelines list.":::
+   :::image type="content" source="../media/python/where-is-your-code.png" alt-text="Screenshot of selecting GitHub as the location of your code.":::
 
-1. In the **Where is your code** dialog, select **GitHub**. You might be prompted to sign into GitHub.
+1. On the **Select a repository** screen, select your forked sample repository. You might be prompted to enter your GitHub password again as a confirmation.
 
-    :::image type="content" source="../media/python/where-is-your-code.png" alt-text="Screenshot of select GitHub as the location of your code.":::
+   :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
 
-1. On the **Select a repository** screen, select the forked sample repository.
+   GitHub might prompt you to install the **Azure Pipelines** extension or app. For more information, see [Access to GitHub repositories](../repos/github?view=azure-devops&tabs=yaml#access-to-github-repositories).
 
-    :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
+<!--   :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
 
-1. You might be prompted to enter your GitHub password again as a confirmation. 
-1. If the Azure Pipelines extension isn't installed on GitHub, GitHub prompts you to install the **Azure Pipelines** extension.
+   On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
 
-    :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
+   :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::-->
 
-    On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
-    
-    :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::
-    
-1. In the **Configure your pipeline** dialog, select **Python to Linux Web App on Azure**.
-1. Select your Azure subscription and select **Continue**.  
-1. If you're using your username and password to authenticate, a browser opens for you to sign in to your Microsoft account.
-1. Select your web app name from the dropdown list and select **Validate and configure**.
+1. On the **Configure your pipeline** page, select **Python to Linux Web App on Azure**.
 
-Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAML pipeline editor. The pipeline file defines your CI/CD pipeline as a series of *stages*, *jobs*, and *steps*, where each step contains the details for different *tasks* and *scripts*. Take a look at the pipeline to see what it does. Make sure all the default inputs are appropriate for your code.
+1. Select your Azure subscription and select **Continue**.
+
+1. Select your Azure web app name and select **Validate and configure**.
+
+   Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAML pipeline editor. On the **Review your pipeline YAML** page, look at the pipeline to see what it does. Make sure all the default inputs are appropriate for your code.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-1. On the navigation menu, select **Pipelines**.
+1. On the left navigation menu for your project, select **Pipelines**.
+1. On the **Pipelines** page, select **New pipeline**, or **Create pipeline** if this pipeline is the first in the project.
 
-    :::image type="content" source="../media/python/select-pipelines.png" alt-text="Screenshot of Pipelines selection on the project dashboard.":::
+   :::image type="content" source="media/create-first-pipeline.png" alt-text="Screenshot of new pipeline button on the pipelines list.":::
 
-1. Select **Create Pipeline**.
+1. On the **Where is your code** page, select **GitHub Enterprise Server**. You might be prompted to sign into GitHub.
 
-    :::image type="content" source="media/create-first-pipeline.png" alt-text="Screenshot of New pipeline button.":::
+   :::image type="content" source="../media/python/where-is-your-code-devops-server.png" alt-text="Screenshot of select GitHub as the location of your code.":::
 
-1. In the **Where is your code** dialog, select **GitHub Enterprise Server**. You might be prompted to sign into GitHub.
+1. On the **Select a repository** tab, select your forked sample repository. You might be prompted to enter your GitHub password again as a confirmation.
 
-    :::image type="content" source="../media/python/where-is-your-code.png" alt-text="Screenshot of select GitHub as the location of your code.":::
+   :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
 
-1. On the **Select a repository** tab, select the forked sample repository. 
+   GitHub might prompt you to install the **Azure Pipelines** extension or app. For more information, see [Access to GitHub repositories](../repos/github?view=azure-devops&tabs=yaml#access-to-github-repositories).
 
-    :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
+<!--   :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
 
-1. You might be prompted to enter your GitHub password again as a confirmation.
-1. If the Azure Pipelines extension isn't installed on GitHub, GitHub prompts you to install the **Azure Pipelines** extension.
+   On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
 
-    :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Screenshot of Azure Pipelines extension on GitHub.":::
+   :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::-->
 
-    On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
+1. On the **Configure your pipeline** page, select **Starter pipeline**.
+1. On the **Review your pipeline YAML** page, replace the contents of the starter *azure-pipelines.yml* file with the following YAML pipeline file. In the YAML file:
 
-    :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::
-
-1. In the **Configure your pipeline** dialog, select **Starter pipeline**.
-1. Replace the contents of the *azure-pipelines.yml* file with the following YAML code. Replace the following placeholders with your own values:
-
-   |**Placeholder**|**Description**|
-   |--|--|
-   |`<your-service-connection-name>`|The name of the service connection you created.|
-   |`<your-web-app-name>`|The name your Azure App Service web app.|
-   |`<your-pool-name>`|The name of the agent pool you want to use.|
-   |`<your-python-version>`|The version of Python running on your agent. Match this version with the Python version running on your web app, as shown in the JSON output of the `az webapp up` command.|
+   - Replace the `<your-service-connection-name>` and `<your-web-app-name>` placeholders with your own values.
+   - Replace `<your-pool-name>` with the name of the agent pool you want to use, and replace `<your-python-version>` with the version of Python running on your agent. This version should match the `runtime_version` from the JSON output of the `az webapp up` command.
 
 ::: moniker-end
 
@@ -333,7 +338,7 @@ The following section describes the YAML pipeline file. To learn about the pipel
 
 ::: moniker range=">=azure-devops"
 
-The following code shows the complete example pipeline YAML file:
+The following code shows the complete example pipeline YAML file. The pipeline file defines your CI/CD pipeline as a series of *stages*, *jobs*, and *steps*, where each step contains the details for different *tasks* and *scripts*.
 
 ```yml
 trigger:
@@ -423,97 +428,96 @@ stages:
 
 ::: moniker range="< azure-devops"
 
-    ```yml
-    trigger:
-    - main
-    
-    variables:
-      # Azure Resource Manager connection created during pipeline creation
-      azureServiceConnectionId: '<your-service-connection-name>'
-    
-      # Web app name
-      webAppName: '<your-web-app-name>'
-    
-      # Environment name
-      environmentName: '<your-web-app-name>'
-    
-      # Project root folder. 
-      projectRoot: $(System.DefaultWorkingDirectory)
-    
-      # Python version: 
-      pythonVersion: '<your-python-version>'
-    
-    stages:
-    - stage: Build
-      displayName: Build stage
-      jobs:
-      - job: BuildJob
-        pool:
-          name: '<your-pool-name>'
-          demands: python
-        steps:
-        - task: UsePythonVersion@0
-          inputs:
-            versionSpec: '$(pythonVersion)'
-          displayName: 'Use Python $(pythonVersion)'
-    
-        - script: |
-            python -m venv antenv
-            source antenv/bin/activate
-            python -m pip install --upgrade pip
-            pip install -r requirements.txt
-          workingDirectory: $(projectRoot)
-          displayName: "Install requirements"
-    
-        - task: ArchiveFiles@2
-          displayName: 'Archive files'
-          inputs:
-            rootFolderOrFile: '$(projectRoot)'
-            includeRootFolder: false
-            archiveType: zip
-            archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-            replaceExistingArchive: true
-    
-        - task: PublishBuildArtifacts@1
-          inputs:
-            PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-            ArtifactName: 'drop'
-            publishLocation: 'Container'
-    
-    - stage: Deploy
-      displayName: 'Deploy Web App'
-      dependsOn: Build
-      condition: succeeded()
-      jobs:
-      - deployment: DeploymentJob
-        pool:
-          name: '<your-pool-name'
-        environment: $(environmentName)
-        strategy:
-          runOnce:
-            deploy:
-              steps:
-    
-              - task: UsePythonVersion@0
-                inputs:
-                  versionSpec: '$(pythonVersion)'
-                displayName: 'Use Python version'
-    
-              - task: AzureWebApp@1
-                displayName: 'Deploy Azure Web App : <your-web-app-name>'
-                inputs:
-                  azureSubscription: $(azureServiceConnectionId)
-                  appName: $(webAppName)
-                  package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
-                  startUpCommand: 'startup.txt'
-    
-    ```
+```yml
+trigger:
+- main
+
+variables:
+  # Azure Resource Manager connection created during pipeline creation
+  azureServiceConnectionId: '<your-service-connection-name>'
+
+  # Web app name
+  webAppName: '<your-web-app-name>'
+
+  # Environment name
+  environmentName: '<your-web-app-name>'
+
+  # Project root folder. 
+  projectRoot: $(System.DefaultWorkingDirectory)
+
+  # Python version: 
+  pythonVersion: '<your-python-version>'
+
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:
+  - job: BuildJob
+pool:
+      name: '<your-pool-name>'
+      demands: python
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python $(pythonVersion)'
+
+    - script: |
+        python -m venv antenv
+        source antenv/bin/activate
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+      workingDirectory: $(projectRoot)
+      displayName: "Install requirements"
+
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(projectRoot)'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+
+- stage: Deploy
+  displayName: 'Deploy Web App'
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - deployment: DeploymentJob
+    pool:
+      name: '<your-pool-name'
+    environment: $(environmentName)
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: '$(pythonVersion)'
+            displayName: 'Use Python version'
+
+          - task: AzureWebApp@1
+            displayName: 'Deploy Azure Web App : <your-web-app-name>'
+            inputs:
+              azureSubscription: $(azureServiceConnectionId)
+              appName: $(webAppName)
+              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+              startUpCommand: 'startup.txt'
+```
 
 ::: moniker-end
 
 ### Variables
 
-The `variables` section of the file contains the following variables:
+The `variables` section of the file defines the following variables:
 
 ::: moniker range=">=azure-devops"
 
@@ -522,7 +526,7 @@ The `variables` section of the file contains the following variables:
 |`azureServiceConnectionId`|The ID or name of the Azure Resource Manager service connection.|
 |`webAppName`|The name of the Azure App Service web app.|
 |`vmImageName`|The name of the operating system to use for the build agent.|
-|`environmentName`|The name of the environment used in the deployment stage. The environment is automatically created when the stage job is run.|
+|`environmentName`|The name of the environment used in the deployment stage. The environment is automatically created when the stage job runs.|
 |`projectRoot`|The root folder containing the app code.|
 |`pythonVersion`|The version of Python to use on the build and deployment agents.|
 
@@ -530,7 +534,7 @@ The `variables` section of the file contains the following variables:
 
 ::: moniker range="< azure-devops"
 
-The `variables` section contains the following variables:
+The `variables` section of the file contains the following variables:
 
 |**Variable**|**Description**|
 |--|---|
@@ -542,7 +546,7 @@ The `variables` section contains the following variables:
 
 ::: moniker-end
 
-## Build and deployment stages
+## Build and deploy
 
 The pipeline consists of build and deployment stages.
 
@@ -771,11 +775,11 @@ You're now ready to try it out!
 
 ### Configure a self-hosted agent
 
-To use your own self-hosted build agent, you need to configure the agent to run Python. Downloading Python versions isn't supported on self-hosted agents. You must preinstall the Python version. Use the full installer to get a pip-compatible version of Python. 
+To use your own self-hosted build agent, you need to configure the agent to run Python. Downloading Python versions isn't supported on self-hosted agents. You must preinstall the Python version. Use the full installer to get a pip-compatible version of Python.
 
-To avoid incompatible issues, you should match the Python version with the runtime version in your Azure App Services web app, as shown in the JSON output of the `az webapp up` command.
+To avoid compatibility issues, match the Python version with the runtime version in your Azure App Services web app, as shown in the JSON output of the `az webapp up` command.
 
-The desired Python version needs to be added to the tool cache on the self-hosted agent so the task can use it. Normally, the tool cache is located under the _work/_tool directory of the agent. Alternatively, you can override the path with the environment variable `AGENT_TOOLSDIRECTORY`. Under the tools directory, create the following directory structure based on your Python version:
+The desired Python version needs to be added to the tool cache on the self-hosted agent so the pipeline task can use it. Normally, the tool cache is located under the _work/_tool directory of the agent. Alternatively, you can override the path with the environment variable `AGENT_TOOLSDIRECTORY`. Under the tools directory, create the following directory structure based on your Python version:
 
 ```console
 $AGENT_TOOLSDIRECTORY/
@@ -803,14 +807,12 @@ If the machine hosting your agent already has the Python version you want to use
 
 ::: moniker-end
 
-1. In the editor, select **Save and run**.
-1. In the **Save and run** dialog, add a commit message then select **Save and run**.
+1. In the pipeline editor, select **Save and run**.
+1. On the **Save and run** screen, add a commit message if desired and then select **Save and run**.
 
-   You can watch the pipeline as it runs by selecting the Stages or Jobs in the pipeline run summary. 
+   You can watch the pipeline run by selecting the **Stages** or **Jobs** on the pipeline **Summary** page. Each job and stage displays a green check mark as it completes successfully. If errors occur, they appear in the summary or in the job steps.
 
    :::image type="content" source="../media/python/pipeline-summary-stages-section.png" alt-text="Screenshot of pipeline run summary stages section.":::
-
-   There are green check marks next to each stage and job as it completes successfully. If errors occur, they're displayed in the summary or in the job steps. 
 
    :::image type="content" source="../media/python/pipeline-stages.png" alt-text="Screenshot of pipeline stage steps.":::
 
@@ -824,17 +826,17 @@ If the machine hosting your agent already has the Python version you want to use
 
    :::image type="content" source="../media/python/app-results.png" alt-text="Screenshot of view of the sample app running on App Service.":::
 
-### Install missing dependencies
-
-If an app deployment fails because of a missing dependency, the *requirements.txt* file wasn't processed during deployment. This behavior happens if you create the web app directly in the portal rather than using the `az webapp up` command. The `az webapp up` command specifically sets the build action `SCM_DO_BUILD_DURING_DEPLOYMENT` to `true`. If you provision an app service through the portal, this action isn't automatically set.
-
-To set the action:
+>[!NOTE]
+>If an app deployment fails because of a missing dependency, the *requirements.txt* file wasn't processed during deployment. This issue occurs if you create the web app directly in the portal rather than using the `az webapp up` command.
 >
-1. On the portal page for your web app, select **Configuration** from the left navigation menu.
-1. On the **Application Settings** tab, select **New Application Setting**.
-1. In the popup that appears, set **Name** to `SCM_DO_BUILD_DURING_DEPLOYMENT`, set **Value** to `true`, and select **OK**.
-1. Select **Save** at the top of the **Configuration** page.
-1. Run the pipeline again. The dependencies should be installed during deployment.
+>The `az webapp up` command specifically sets the build action `SCM_DO_BUILD_DURING_DEPLOYMENT` to `true`. If you provision an app service through the portal, this action isn't automatically set.
+>
+>To set the action:
+>1. On the portal page for your web app, select **Configuration** from the left navigation menu.
+>1. On the **Application Settings** tab, select **New Application Setting**.
+>1. In the popup that appears, set **Name** to `SCM_DO_BUILD_DURING_DEPLOYMENT`, set **Value** to `true`, and select **OK**.
+>1. Select **Save** at the top of the **Configuration** page.
+>1. Run the pipeline again. The dependencies should now install during deployment.
 
 ## Trigger a pipeline run
 
@@ -844,16 +846,15 @@ To trigger a pipeline run, commit a change to the repository. For example, you c
 1. Make a change to the code, such as changing the title of the app.
 1. Commit the change to your repository.
 1. Go to your pipeline and verify a new run is created.
-1. When the run completes, verify the new build is deployed to your web app.
-    1. In the Azure portal, go to your web app.
-    1. Select **Deployment Center** and select the **Logs** tab. 
-    1. Verify that the new deployment is listed.
+1. When the run completes, verify that the new build is deployed to your web app.
+1. In the Azure portal, go to your web app and select **Deployment Center** from the left navigation menu.
+1. Select the **Logs** tab and verify that the new deployment is listed.
 
 ## Deploy Django apps to App Service
 
 You can use Azure Pipelines to deploy Django apps to App Service on Linux if you're using a separate database. You can't use a SQLite database, because App Service locks the *db.sqlite3* file, preventing both reads and writes. This behavior doesn't affect an external database.
 
-As described in [Configure Python app on App Service - Container startup process](/azure/app-service/containers/how-to-configure-python#container-startup-process), App Service automatically looks for a *wsgi.py* file within your app code, which typically contains the app object. If you want to customize the startup command in any way, use the `startUpCommand` parameter in the `AzureWebApp@1` step of your YAML pipeline file, as described in the previous section.
+As described in [Container startup process](/azure/app-service/containers/how-to-configure-python#container-startup-process), App Service automatically looks for a *wsgi.py* file in your app code, which typically contains the app object. If you want to customize the startup command, use the `startUpCommand` parameter in the `AzureWebApp@1` step of your YAML pipeline file.
 
 When you use Django, you typically want to migrate the data models using `manage.py migrate` after deploying the app code. You can add `startUpCommand` with a post-deployment script for this purpose. For example, here's the `startUpCommand` property in the AzureWebApp@1 task. 
 
@@ -898,15 +899,13 @@ You can also use a task like [PublishTestResults@2](../tasks/test/publish-test-r
 
 ## Clean up resources
 
-To avoid incurring charges on the Azure resources created in this tutorial:
+To avoid incurring charges on the Azure resources you created in this tutorial:
 
-* Delete the project that you created. Deleting the project deletes the pipeline and service connection.
+- Delete the Azure DevOps project you created. Deleting the project deletes the pipeline and service connection.
+- Delete the Azure resource group that contains the App Service and the App Service Plan. In the Azure portal, go to the resource group, select **Delete resource group**, and follow the prompts.
+- Delete the Azure storage account that maintains the file system for Cloud Shell. Close the Cloud Shell then go to the resource group that begins with **cloud-shell-storage-**, select **Delete resource group**, and follow the prompts.
 
-* Delete the Azure resource group that contains the App Service and the App Service Plan. In the Azure portal, go to the resource group, select **Delete resource group**, and follow the prompts.
+## Related content
 
-* Delete the storage account that maintains the file system for Cloud Shell. Close the Cloud Shell then go to the resource group that begins with **cloud-shell-storage-**, select **Delete resource group**, and follow the prompts.
-
-## Next steps
-
-* [Customize Python apps in Azure Pipelines](./customize-python.md)
-* [Configure Python app on App Service](/azure/app-service/containers/how-to-configure-python)
+- [Customize Python apps in Azure Pipelines](./customize-python.md)
+- [Configure Python app on App Service](/azure/app-service/containers/how-to-configure-python)
