@@ -186,7 +186,7 @@ Restore deleted work items or permanently delete them from the web portal **Recy
 ::: moniker-end
 
 > [!NOTE]
-> Test artifacts such as test plans, test suites, and test cases are all considered work items in Azure DevOps. However, the method used to [Delete test artifacts in Azure Boards](../delete-test-artifacts) differs from the method for deleting non-test work items. Azure DevOps Services supports a soft-deletion model, where Test Plans and Test Suites are in a soft-delete state for 14 days after they are deleted. While they are in the soft-delete state, they can be restored.
+> Test artifacts such as test plans, test suites, and test cases are all considered work items in Azure DevOps. However, the method used to [Delete test artifacts in Azure Boards](../backlogs/delete-test-artifacts) differs from the method for deleting non-test work items. Azure DevOps Services supports a soft-deletion model, where Test Plans and Test Suites are in a soft-delete state for 14 days after they are deleted. While they are in the soft-delete state, they can be restored.
 
 <a id="az-boards-cli"></a>
 
