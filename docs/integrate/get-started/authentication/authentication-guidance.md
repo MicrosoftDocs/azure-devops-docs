@@ -39,7 +39,7 @@ Choose the appropriate authentication method based on your application type and 
 | Headless/CLI apps | Noninteractive command-line tools | Build scripts, automation tools | [Device authorization grant flow](/entra/identity-platform/v2-oauth2-device-code) | [Device profile](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Azure DevOps extensions | Extensions running within Azure DevOps | Custom dashboard widgets and work item forms | [Azure DevOps web extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [Add a dashboard widget](../../../extend/develop/add-dashboard-widget.md) |
 | Azure DevOps Server apps | On-premises Azure DevOps Server integrations | Custom server extensions | [.NET client libraries](../../concepts/dotnet-client-libraries.md) or Windows Auth | [Client library console app](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| Personal/ad-hoc scripts | Quick scripts for personal use | PowerShell scripts, curl commands | [Personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) | [Get started with the REST APIs](../../how-to/call-rest-api.md) |
+| Personal/ad hoc scripts | Quick scripts for personal use | PowerShell scripts, curl commands | [Personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) | [Get started with the REST APIs](../../how-to/call-rest-api.md) |
 
 ## Suggestions for getting started
 
@@ -78,7 +78,7 @@ Use Microsoft Entra ID OAuth in the following scenarios:
 
 Only use personal access tokens in the following scenarios:
 
-- Personal scripts and ad-hoc tasks
+- Personal scripts and ad hoc tasks
 - Legacy applications during migration planning
 - Azure DevOps Server scenarios where modern authentication isn't available
 
