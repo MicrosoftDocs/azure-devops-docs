@@ -222,11 +222,10 @@ Nonmembers of public projects can't do the following actions:
 **Problem**: External users can't contribute
 - **Solution**: Ensure they're added as project members with appropriate access levels
 
-## Next steps
+## Next step
 
-- [Learn about access levels](../security/access-levels.md)
-- [Set up Git for your project](../../user-guide/code-with-git.md)
-- [Configure project permissions](../security/set-project-collection-level-permissions.md)
+> [!div class="nextstepaction"]
+> [Set up Git for your project](../../user-guide/code-with-git.md)
 
 ## Related content
 
