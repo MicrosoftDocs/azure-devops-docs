@@ -72,9 +72,9 @@ User-assigned managed identity:
 
 When to use each type:
 
-- **Service principals**: Cross-cloud deployments, continuous integration and continuous delivery (CI/CD) pipelines, applications outside Azure
-- **System-assigned managed identities**: Single Azure resource applications (Azure Functions, Azure App Service)
-- **User-assigned managed identities**: Multi-resource applications, shared identity scenarios
+- **Service principals**: Cross-cloud deployments, continuous integration and continuous delivery (CI/CD) pipelines, applications outside Azure.
+- **System-assigned managed identities**: Single Azure resource applications (Azure Functions, Azure App Service).
+- **User-assigned managed identities**: Multi-resource applications, shared identity scenarios.
 
 ## Implementation guide
 
@@ -116,7 +116,7 @@ For system-assigned managed identity:
 
 1. Go to your Azure resource, such as App Service or an Azure Functions app.
 1. Go to **Identity** > **System assigned**.
-1. Toggle the status to **On**.
+1. Switch the status to **On**.
 1. Select **Save** to save the configuration.
 
 For user-assigned managed identity:
