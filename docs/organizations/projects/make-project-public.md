@@ -65,7 +65,7 @@ Before changing project visibility, ensure you meet these requirements:
 |-----------|-------|
 |**Permissions**|[Project Collection Administrator](../security/look-up-project-collection-administrators.md) or Organization Owner|
 |**Organization setup**|Must enable "Allow public projects" policy|
-|**Security review**|Complete the [migration checklist](#pre-migration-security-checklist) |
+|**Security review**|Complete the [migration checklist](#premigration-security-checklist) |
 
 ## Premigration security checklist
 
@@ -230,7 +230,6 @@ Nonmembers of public projects can't do the following actions:
 ## Related content
 
 - [About public projects](about-projects.md)
-- [Private-to-public migration guide](../security/migration-guide.md)
 - [Delete a project](delete-project.md)
 - [Add external users](../accounts/add-external-user.md)
 - [Add a privacy policy URL](../accounts/add-privacy-policy-url.md)
