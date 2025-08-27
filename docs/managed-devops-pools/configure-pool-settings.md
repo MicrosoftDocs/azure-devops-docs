@@ -1,7 +1,7 @@
 ---
 title: Configure pool settings
 description: Learn how to configure Managed DevOps Pools settings.
-ms.date: 07/29/2025
+ms.date: 08/27/2025
 ms.custom: sfi-image-nochange
 ---
 
@@ -9,9 +9,20 @@ ms.custom: sfi-image-nochange
 
 This article describes how to configure the basic settings of your Managed DevOps Pool.
 
-Go to **Overview** to view an overview of pool settings, [move Azure resources to a new resource group or subscription](/azure/azure-resource-manager/management/move-resource-group-and-subscription), or configure [tags](/azure/azure-resource-manager/management/tag-resources). Managed DevOps Pools passes up to 20 tags to the VM, and the rest are ignored.
+## Overview
+
+Go to **Overview** to view an overview of pool settings.
 
 :::image type="content" source="media/pool-settings/essentials.png" alt-text="Screenshot of pool overview essentials." lightbox="media/pool-settings/essentials-expanded.png":::
+
+From the **Overview** page, you can:
+
+* View your resource group and subscription details, and [move Azure resources to a new resource group or subscription](/azure/azure-resource-manager/management/move-resource-group-and-subscription).
+* View the location of your pool. To view the supported locations, follow the procedure in [Register the Managed DevOps Pools resource provider in your Azure Subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
+* Configure [tags](/azure/azure-resource-manager/management/tag-resources). Managed DevOps Pools passes up to 20 tags to the VM, and the rest are ignored.
+* View configuration information for your pool, like **Name**, **Azure DevOps organization**, **Agent state**, and **Maximum agents**.
+
+## Pool settings
 
 To configure your pool, go to **Settings** > **Pool**.
 
