@@ -1,9 +1,9 @@
-- name: Azure DevOps MCP Server
-  href: mcp-server/mcp-server-overview.md
 - name: Azure DevOps
   href: index.yml
 - name: Get started >>
   href: get-started/index.yml
+- name: Azure DevOps MCP Server
+  href: mcp-server/mcp-server-overview.md
 - name: Azure Artifacts >>
   href: artifacts/index.yml
 - name: Azure Boards >>
