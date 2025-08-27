@@ -258,7 +258,7 @@ The new connection appears in the **Service connections** list, and is ready to 
 1. Under **Security**, select the check box for **Grant access permissions to all pipelines**.
 1. Select **Verify and save**.
 
-   :::image type="content" source="../media/azure-service-connection-settings-devops-server.png" alt-text="Screenshot of bottom part of the new service connection screen.":::
+   :::image type="content" source="../media/azure-service-connection-devops-server.png" alt-text="Screenshot of bottom part of the new service connection screen.":::
 
 The new connection appears in the **Service connections** list, and is ready to use in your pipeline.
 
@@ -283,7 +283,7 @@ Create a pipeline to build and deploy your Python web app to Azure App Service.
 
    :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
 
-   GitHub might prompt you to install the **Azure Pipelines** extension or app. For more information, see [Access to GitHub repositories](../repos/github?view=azure-devops&tabs=yaml#access-to-github-repositories).
+   GitHub might prompt you to install the **Azure Pipelines** extension or app. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 <!--   :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
 
@@ -316,7 +316,7 @@ Create a pipeline to build and deploy your Python web app to Azure App Service.
 
    :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
 
-   GitHub might prompt you to install the **Azure Pipelines** extension or app. For more information, see [Access to GitHub repositories](../repos/github?view=azure-devops&tabs=yaml#access-to-github-repositories).
+   GitHub might prompt you to install the **Azure Pipelines** extension or app. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 <!--   :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
 
