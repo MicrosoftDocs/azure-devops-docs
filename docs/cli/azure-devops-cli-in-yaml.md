@@ -490,7 +490,7 @@ steps:
 When you use a service connection, the service connection provides the necessary credentials for Azure CLI and Azure DevOps CLI commands in the AzureCLI@2 task without requiring manual credential management in the pipeline.
 
 > [!NOTE]
-> When you use a service connection for authentication with `AzureCLI@2`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md##step-2-add-the-identity-to-azure-devops). 
+> When you use a service connection for authentication with `AzureCLI@2`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md#step-2-add-the-identity-to-azure-devops). 
 
 This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@2` task. The task lists all projects (`az devops project list`) and pools (`az pipelines pool list`). 
 
