@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/07/2025
+ms.date: 08/27/2025
 zone_pivot_groups: configure-cli
 
 #customer intent: As a team member, I want to use YAML configuration files to manage my pipeline tasks by using Azure DevOps CLI.
@@ -20,9 +20,10 @@ zone_pivot_groups: configure-cli
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
-If you want to use Azure DevOps CLI with a YAML pipeline, you can use the Azure DevOps extension or use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2). The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. The Azure DevOps CLI extension runs  `az devops` commands. 
+If you want to use Azure DevOps CLI with a YAML pipeline, you can use the Azure DevOps extension or use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2). The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. The Azure DevOps CLI extension runs `az devops` commands. 
 
-You need to use a PAT with the Azure CLI extension in a pipeline. For added security, use the use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2) with a service connection. 
+You can authenticate with either a PAT or you can use the [AzureCLI@2 task](/azure/devops/pipelines/tasks/reference/azure-cli-v2) with a service connection. Using a service connection is the more secure option because you won't need to manually manage credentials.
+
 
 ::: zone pivot="pat"  
 
@@ -531,13 +532,9 @@ steps:
 
 ## Assign the results of an Azure DevOps CLI call to a variable
 
-To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example gets the ID of a variable group named **Fabrikam-2023** and uses this value in a subsequent step.
-
-
-
+To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example gets the ID of a variable group named **kubernetes** and uses this value in a subsequent step.
 
 ```yml
-# Install Azure DevOps extension
 trigger:
   - main
 
@@ -564,7 +561,8 @@ steps:
         az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
         az devops configure -l
 
-        ##vso[task.setvariable variable=variableGroupId]$(az pipelines variable-group list --group-name kubernetes --query [].id -o tsv)"
+        $id = az pipelines variable-group list --group-name kubernetes --query [].id -o tsv
+        Write-Host "##vso[task.setvariable variable=variableGroupId]$id"
 
   - task: AzureCLI@2
     condition: succeededOrFailed()
