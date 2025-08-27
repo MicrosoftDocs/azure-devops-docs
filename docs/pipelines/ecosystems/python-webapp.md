@@ -50,7 +50,7 @@ To understand more about Azure Pipelines concepts, watch the following video:
    pip install -r ./requirements.txt
    export set FLASK_APP=hello_app.webapp
    python3 -m flask run
-```
+   ```
 
 1. To test the app, go to *http://localhost:5000* in a browser window, and verify that you see the title **Visual Studio Flask Tutorial**.
 1. Close the browser window and stop the Flask server by using <kbd>Ctrl</kbd>+<kbd>C</kbd>.
