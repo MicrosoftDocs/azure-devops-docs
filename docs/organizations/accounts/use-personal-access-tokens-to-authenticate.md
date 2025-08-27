@@ -102,7 +102,7 @@ Your PAT serves as your digital identity, much like a password. You can use PATs
 
 After your app code is working, switch to [Microsoft Entra OAuth to acquire tokens for your app's users](../../integrate/get-started/authentication/entra-oauth.md) or a [service principal or managed identity to acquire tokens as an application](../../integrate/get-started/authentication/service-principal-managed-identity.md). We don't recommend that you keep running apps or scripts with PATs long term. You can use Microsoft Entra tokens anywhere that a PAT is used.
 
-Consider [acquiring a Microsoft Entra token via the Azure CLI](../../cli/entra-tokens.md) for ad-hoc requests.
+Consider [acquiring a Microsoft Entra token via the Azure CLI](../../cli/entra-tokens.md) for ad hoc requests.
 
 ### [Windows](#tab/Windows/)
 
@@ -191,7 +191,7 @@ If you're using a PAT issued before that data, regenerate your PAT. If you integ
 
 ### Consider alternatives
 
-* Acquire a Microsoft Entra token via the [Azure CLI](../../cli/entra-tokens.md) for ad-hoc requests instead of minting a longer-lived PAT.
+* Acquire a Microsoft Entra token via the [Azure CLI](../../cli/entra-tokens.md) for ad hoc requests instead of minting a longer-lived PAT.
 * Use credential managers like [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager) or [Azure Artifacts Credential Manager](https://github.com/microsoft/artifacts-credprovider) to simplify credential management, with authentication set to `oauth` or Microsoft Entra tokens.
 
 ### Create PATs
@@ -224,7 +224,7 @@ A. Sign in to the organization where your PAT is scoped. You can view your PATs 
 
 ### Q. What happens to a PAT if a user account is disabled?
 
-A. When a user is removed from Azure DevOps, the PAT invalidates within one hour. If your organization is connected to Microsoft Entra ID, the PAT also invalidates in Microsoft Entra ID because it belongs to the user. We recommend that you rotate the PAT to another user or service account to keep services running.
+A. When a user is removed from Azure DevOps, the PAT is invalidated within one hour. If your organization is connected to Microsoft Entra ID, the PAT is also invalidated in Microsoft Entra ID because it belongs to the user. We recommend that you rotate the PAT to another user or service account to keep services running.
 
 ### Q. Can I use PATs with all Azure DevOps REST APIs?
 
