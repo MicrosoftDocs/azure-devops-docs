@@ -186,7 +186,7 @@ Restore deleted work items or permanently delete them from the web portal **Recy
 ::: moniker-end
 
 > [!NOTE]
-> Deleted test artifacts don't appear in the **Recycle Bin** and can't be restored. When you delete a test artifact, all of its associated child items, such as child test suites, test points across all configurations, testers, test results history, and other associated history also get deleted. The underlying test case work item doesn't get deleted.
+> Test artifacts such as test plans, test suites, and test cases are all considered work items in Azure DevOps. However, the method used to [Delete test artifacts in Azure Boards](../delete-test-artifacts) differs from the method for deleting non-test work items. Azure DevOps Services supports a soft-deletion model, where Test Plans and Test Suites are in a soft-delete state for 14 days after they are deleted. While they are in the soft-delete state, they can be restored.
 
 <a id="az-boards-cli"></a>
 
