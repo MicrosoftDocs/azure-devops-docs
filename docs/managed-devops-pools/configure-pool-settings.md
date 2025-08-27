@@ -21,7 +21,7 @@ From the **Overview** page, you can:
 * View the location of your pool. To view the supported locations, follow the procedure in [Register the Managed DevOps Pools resource provider in your Azure Subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
 * Configure [tags](/azure/azure-resource-manager/management/tag-resources). Managed DevOps Pools passes up to 20 tags to the VM, and the rest are ignored.
 * View configuration information for your pool, like **Name**, **Azure DevOps organization**, **Agent state**, and **Maximum agents**.
-* [View predefined metrics charts](./monitor-pool.md#view-metrics-on-the-managed-devops-pool-overview)
+* [View predefined metrics charts](./monitor-pool.md#view-metrics-on-the-managed-devops-pool-overview).
 
 ## Pool settings
 
