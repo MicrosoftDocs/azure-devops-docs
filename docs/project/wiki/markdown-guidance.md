@@ -645,7 +645,7 @@ A task is marked as completed by checking the task box in the list:
 
 Add emoji reactions in pull requests and wiki files. You can use emoji reactions to add character and react to comments in the request. 
 
-Enter the name of an emotion or expression like `smile` and enclose the text within colon `:` characters. In the published view of the Markdown, your input is converted to the corresponding [emoji graphic](https://github.com/ikatyang/emoji-cheat-sheet/). Markdown in Azure DevOps supports most GitHub emoji graphics, it does not support the [Custom Emojii](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#github-custom-emoji) like `:bowtie:`
+Enter the name of an emotion or expression like `smile` and enclose the text within colon `:` characters. In the published view of the Markdown, your input is converted to the corresponding [emoji graphic](https://github.com/ikatyang/emoji-cheat-sheet/). Markdown in Azure DevOps supports most GitHub emoji graphics. It doesn't support the [Custom Emoji](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#github-custom-emoji) like `:bowtie:`.
 
 ### Example: Add emoji reactions in a pull request
 
