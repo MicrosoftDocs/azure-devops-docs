@@ -247,7 +247,7 @@ GET http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01
 Metadata: true
 ```
 
-#### Azure CLI for ad-hoc operations
+#### Azure CLI for ad hoc operations
 
 For one-time operations or testing, use the Azure CLI:
 
