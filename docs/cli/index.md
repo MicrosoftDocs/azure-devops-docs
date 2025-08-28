@@ -8,6 +8,7 @@ ms.manager: mijacobs
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
+ms.update: 90-days
 ms.date: 05/30/2025
 #customer intent: As a project team member, I want to set up Azure DevOps CLI and understand how to access pipelines, boards, repos, and artifacts. 
 ---
