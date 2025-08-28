@@ -4,7 +4,7 @@ description: Use CI/CD with Azure Pipelines to automatically build, test, and de
 ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.author: jukullam
-ms.date: 08/27/2025
+ms.date: 08/28/2025
 monikerRange: "<=azure-devops"
 ms.custom:
   - devx-track-python
@@ -90,13 +90,13 @@ The Cloud Shell appears along the bottom of the browser. Make sure **Bash** is s
 
 The `az webapp up` command recognizes the app as a Python app, and takes the following actions:
 
-- Creates a default [resource group](/cli/azure/group#az-group-create).
-- Creates a default [App Service plan](/cli/azure/appservice/plan#az-appservice-plan-create).
-- [Creates a web app](/cli/azure/webapp#az-webapp-create) with the assigned name. The app `URL` is `<your-web-app-name>.azurewebsites.net`.
-- [Deploys](/azure/app-service/deploy-zip) all files from the current working directory to a ZIP archive, with build automation enabled.
-- Caches the parameters locally in the *.azure/config* file so you don't need to specify them again when deploying from the project folder with `az webapp up` or other `az webapp` commands. The commands use the cached values automatically by default.
+1. Creates a default [resource group](/cli/azure/group#az-group-create).
+1. Creates a default [App Service plan](/cli/azure/appservice/plan#az-appservice-plan-create).
+1. [Creates a web app](/cli/azure/webapp#az-webapp-create) with the assigned name. The app `URL` is `<your-web-app-name>.azurewebsites.net`.
+1. [Deploys](/azure/app-service/deploy-zip) all files from the current working directory to a ZIP archive, with build automation enabled.
+1. Caches the parameters locally in the *.azure/config* file so you don't need to specify them again when deploying from the project folder with `az webapp up` or other `az webapp` commands. The commands use the cached values automatically by default.
 
-You can override the default action with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
+You can override the default actions with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
 The `az webapp up` command produces the following JSON output:
 
@@ -115,7 +115,7 @@ The `az webapp up` command produces the following JSON output:
 }
 ```
 
-Note the `URL`, `resourcegroup`, and `runtime_version` values to use later in this tutorial.
+Record the `URL`, `resourcegroup`, and `runtime_version` values to use later in this tutorial.
 
 ### Set the startup command
 
@@ -169,7 +169,7 @@ A service connection provides authenticated access from Azure Pipelines to exter
 
 1. On your Azure DevOps project page, select **Project settings**.
 1. From **Project Settings**, select **Pipelines** > **Service connections**.
-1. On the **Service connections** page, select **New service connection** or **Create service connection** for the first service connection in the project.
+1. On the **Service connections** page, select **New service connection** or **Create service connection** if this service connection is the first in the project.
 
    :::image type="content" source="../media/python/project-settings.png" alt-text="Screenshot of selecting Pipeline Service connections in Project Settings.":::
 
@@ -204,7 +204,7 @@ The new connection appears in the **Service connections** list, and is ready to 
 
     :::image type="content" source="../media/python/project-settings.png" alt-text="Screenshot of project settings button on the project dashboard.":::
 
-1. On the **Service connections** page, select **New service connection** or **Create service connection** for the first service connection in the project.
+1. On the **Service connections** page, select **New service connection** or **Create service connection** if this service connection is the first in the project.
 1. On the **New service connection** screen, select **Azure Resource Manager** and then select **Next**. 
 
    :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Screenshot of Azure Resource Manager service connection selection.":::
@@ -254,18 +254,16 @@ Create a pipeline to build and deploy your Python web app to Azure App Service.
 
    :::image type="content" source="../media/python/where-is-your-code.png" alt-text="Screenshot of selecting GitHub as the location of your code.":::
 
-1. On the **Select a repository** screen, select your forked sample repository. You might be prompted to enter your GitHub password again as a confirmation.
+1. On the **Select a repository** screen, select your forked sample repository. GitHub might prompt you to enter your GitHub password again, or to install the [Azure Pipelines](https://github.com/apps/azure-pipelines) GitHub app. Follow onscreen instructions to install the app. For more information, see [GitHub app authentication](../repos/github.md#github-app-authentication). 
 
    :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
 
-   GitHub might prompt you to install the [Azure Pipelines](https://github.com/apps/azure-pipelines) GitHub app. For more information, see [GitHub app authentication](../repos/github.md#github-app-authentication).
-
-<!--   :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
-
+   <!--   :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
+   
    On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
-
+   
    :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::-->
-
+   
 1. On the **Configure your pipeline** page, select **Python to Linux Web App on Azure**.
 
 1. On the next screen, select your Azure subscription and select **Continue**.
@@ -291,12 +289,12 @@ Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAM
 
    :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
 
-   GitHub might prompt you to install the **Azure Pipelines** extension or app. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
-
-<!--   :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
-
+   GitHub might prompt you to install the [Azure Pipelines](https://github.com/apps/azure-pipelines) GitHub extension or app. Follow onscreen instructions to install the app. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+   
+   <!--   :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
+   
    On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
-
+   
    :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::-->
 
 1. On the **Configure your pipeline** page, select **Starter pipeline**.
@@ -587,7 +585,7 @@ The job contains multiple steps:
            archiveType: zip
            archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
            replaceExistingArchive: true
-```
+   ```
 
    The parameters are set as follows:
 
@@ -634,9 +632,9 @@ The deployment stage contains a single deployment job configured as follows.
     environment: $(environmentName)
 ```
 
-The `deployment` keyword indicates that the job is a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md) to deploy to. The `environment` is automatically created in your project when the job is run.
+- The `deployment` keyword indicates that the job is a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md) to deploy to. The `environment` is automatically created in your project when the job is run.
 
-The `pool` parameter specifies the deployment agent pool and uses the default agent pool if a `name` isn't specified. The agent runs on the operating system defined in the `vmImageName` variable, in this case `ubuntu-latest`.
+- The `pool` parameter specifies the deployment agent pool and uses the default agent pool if a `name` isn't specified. The agent runs on the operating system defined in the `vmImageName` variable, in this case `ubuntu-latest`.
 
 ::: moniker-end
 
@@ -675,11 +673,11 @@ The `steps` in this stage first run the [UsePythonVersion](/azure/devops/pipelin
     package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
 ```
 
-The `azureSubscription` parameter contains the `azureServiceConnectionId` specified in the pipeline variables. The `appName` contains the value of the `webAppName` variable, and the `package` specifies the name and location of the *.zip* file to deploy.
+- The `azureSubscription` parameter contains the `azureServiceConnectionId` specified in the pipeline variables.
+- The `appName` contains the value of the `webAppName` variable.
+- The `package` specifies the name and location of the *.zip* file to deploy.
 
 Also, because the *python-vscode-flask-tutorial* repository contains the app startup command in a file named *startup.txt*, you can specify the app startup command by adding the parameter: `startUpCommand: 'startup.txt'`.
-
-::: moniker-end
 
 ## Run the pipeline
 
@@ -724,7 +722,7 @@ If the machine hosting your agent already has the Python version you want to use
 1. In the pipeline editor, select **Save and run**.
 1. On the **Save and run** screen, add a commit message if desired and then select **Save and run**.
 
-   You can watch the pipeline run by selecting the **Stages** or **Jobs** on the pipeline **Summary** page.
+   You can watch the pipeline run by selecting the **Stages** or **Jobs** on the pipeline **Summary** page. Each job and stage displays a green check mark as it completes successfully. If errors occur, they appear in the summary or in the job steps.
 
    :::image type="content" source="../media/python/pipeline-summary-stages-section.png" alt-text="Screenshot of pipeline run summary stages section.":::
 
@@ -732,13 +730,11 @@ If the machine hosting your agent already has the Python version you want to use
 
    :::image type="content" source="../media/python/edit-pipeline-command.png" alt-text="Screenshot of edit pipeline comment from a build report.":::
 
-   Each job and stage displays a green check mark as it completes successfully. If errors occur, they appear in the summary or in the job steps.
-
-1. From the deployment job, select the **Deploy Azure Web App** task to display its output. To visit the deployed site, hold down <kbd>Ctrl</kbd> and select the URL after **App Service Application URL**.
+1. From the deployment job, select the **Deploy Azure Web App** task to display its output.
 
    :::image type="content" source="../media/python/pipeline-stages.png" alt-text="Screenshot of pipeline stage steps.":::
 
-   The app should appear as follows:
+1. From the output, select the URL after **App Service Application URL**. The app should appear as follows:
 
    :::image type="content" source="../media/python/app-results.png" alt-text="Screenshot of view of the sample app running on App Service.":::
 
