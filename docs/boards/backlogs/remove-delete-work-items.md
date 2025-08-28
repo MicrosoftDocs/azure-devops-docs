@@ -35,57 +35,12 @@ To move a work item from one project to another, or to change the work item type
 ## Prerequisites
 
 | Category | Requirements |
-|--------------|-------------|
-| **Permissions** | - To remove, delete, and restore work items: Member of the **Contributors** group.<br>- To permanently delete work items: Member of the **Project Administrators** group or granted the required permission.<br>- Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin regardless of the permissions they're granted.|
-
-:::row:::
-   :::column span="1":::
-      **Task** 
-   :::column-end:::
-   :::column span="2":::
-       **Required permissions**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      [Change state to **Remove** or **Cut**](#remove)
-   :::column-end:::
-   :::column span="2":::
-       - **Area Path** permission set to **Allow**: **Edit work items in this node**
-       - By default, members of the **Contributors** group have this permission.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      [Delete work items](#delete) and  
-      [Restore work items](#restore)  
-   :::column-end:::
-   :::column span="2":::
-       - Project-level permission set to **Allow**: **Delete and restore work items**
-       - At least [**Basic** access](../../organizations/security/access-levels.md).
-       - By default, members of the **Contributors** group have this permission.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      [Permanently delete or destroy work items](#restore-or-destroy-work-items)  
-   :::column-end:::
-   :::column span="2":::
-       - Project-level permission set to **Allow**: **Permanently delete work items**
-       - By default, members of the **Project Administrators** group have this permission.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      [Delete or destroy work items from the command line](#az-boards-cli)
-   :::column-end:::
-   :::column span="2":::
-       - Project-level permission set to **Allow**: **Permanently delete work items**
-       - By default, members of the **Project Administrators** group have this permission.
-   :::column-end:::
-:::row-end:::
----
+|----------|-------------|
+| **General Access** | - To remove, delete, and restore work items: Member of the **Contributors** group<br>- To permanently delete work items: Member of the **Project Administrators** group or granted the required permission<br>- Users with **Stakeholder** access can view the **Recycle Bin** contents but can't restore or permanently delete items regardless of permissions granted |
+| **Change state to Remove or Cut** | - **Area Path** permission set to **Allow**: **Edit work items in this node**<br>- By default, members of the **Contributors** group have this permission |
+| **Delete and restore work items** | - Project-level permission set to **Allow**: **Delete and restore work items**<br>- At least [**Basic** access](../../organizations/security/access-levels.md)<br>- By default, members of the **Contributors** group have this permission |
+| **Permanently delete or destroy work items** | - Project-level permission set to **Allow**: **Permanently delete work items**<br>- By default, members of the **Project Administrators** group have this permission |
+| **Delete or destroy work items from command line** | - Project-level permission set to **Allow**: **Permanently delete work items**<br>- By default, members of the **Project Administrators** group have this permission |
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../get-started/permissions-access-boards.md).  
 
@@ -117,7 +72,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 ::: moniker range="<=azure-devops"
 
 > [!NOTE]  
-> The *Removed* state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available with Azure DevOps Services and Azure DevOps Server 2020 and later versions.
+> The *Removed* state isn't supported with the Basic process. It's only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available with Azure DevOps Services and Azure DevOps Server 2020 and later versions.
 
 ::: moniker-end
 
@@ -186,7 +141,7 @@ Restore deleted work items or permanently delete them from the web portal **Recy
 ::: moniker-end
 
 > [!NOTE]
-> Test artifacts such as test plans, test suites, and test cases are all considered work items in Azure DevOps. However, the method used to [Delete test artifacts in Azure Boards](../backlogs/delete-test-artifacts.md) differs from the method for deleting non-test work items. Azure DevOps Services supports a soft-deletion model, where Test Plans and Test Suites are in a soft-delete state for 14 days after they are deleted. While they are in the soft-delete state, they can be restored.
+> Test artifacts such as test plans, test suites, and test cases are all considered work items in Azure DevOps. However, the method used to [Delete test artifacts in Azure Boards](../backlogs/delete-test-artifacts.md) differs from the method for deleting nontest work items. Azure DevOps Services supports a soft-deletion model, where Test Plans and Test Suites are in a soft-delete state for 14 days after they're deleted. While they are in the soft-deleted state, they can be restored.
 
 <a id="az-boards-cli"></a>
 
