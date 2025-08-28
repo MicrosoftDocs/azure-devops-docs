@@ -37,6 +37,42 @@ To understand more about Azure Pipelines concepts, watch the following video:
 
 [!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
 
+::: moniker range="< azure-devops"
+
+### Configure a self-hosted agent
+
+Downloading Python versions isn't supported on self-hosted build agents. To use your own self-hosted agent, you need to configure the agent to run Python.
+
+To avoid compatibility issues, match the Python version with the runtime version in your Azure App Services web app, `3.11` in this case. You must preinstall the Python version. Use the full installer to get a pip-compatible version of Python.
+
+The desired Python version needs to be added to the tool cache on the self-hosted agent so the pipeline task can use it. Normally, the tool cache is located under the _work/_tool directory of the agent. Alternatively, you can override the path with the environment variable `AGENT_TOOLSDIRECTORY`. Under the tools directory, create the following directory structure based on your Python version:
+
+```console
+$AGENT_TOOLSDIRECTORY/
+    Python/
+        {version number}/
+            {platform}/
+                {tool files}
+            {platform}.complete
+```
+
+The version number should follow the format of 1.2.3. The platform should either be x86 or x64. The tool files should be the unzipped Python version files. The `{platform}.complete` should be a 0-byte file that looks like `x86.complete` or `x64.complete` and just signifies the tool is properly installed in the cache.
+
+For example, to use Python 3.11 on a 64-bit Windows machine, create the following directory structure:
+
+```console
+$AGENT_TOOLSDIRECTORY/
+    Python/
+        3.11.4/
+            x64/
+                {python files}
+            x64.complete
+```
+
+If the machine hosting your agent already has the Python version you want to use, you can copy the files to the tool cache. If you don't have the Python version, you can download it from the [Python website](https://www.python.org/downloads/).
+
+::: moniker-end
+
 ## Prepare the sample app
 
 1. Fork the sample repository at [https://github.com/Microsoft/python-sample-vscode-flask-tutorial](https://github.com/Microsoft/python-sample-vscode-flask-tutorial) to your GitHub account.
@@ -98,7 +134,7 @@ The `az webapp up` command recognizes the app as a Python app, and takes the fol
 
 You can override the default actions with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
-The `az webapp up` command produces the following JSON output:
+The `az webapp up` command produces the following JSON output for the sample web app:
 
 ```json
 {
@@ -108,7 +144,7 @@ The `az webapp up` command produces the following JSON output:
   "name": <your-web-app-name>,
   "os": "Linux",
   "resourcegroup": <your-resource-group>,
-  "runtime_version": "python|<runtime-version>",
+  "runtime_version": "python|3.11",
   "runtime_version_detected": "-",
   "sku": <sku>,
   "src_path": <repository-source-path>
@@ -285,12 +321,10 @@ Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAM
 
    :::image type="content" source="../media/python/where-is-your-code-devops-server.png" alt-text="Screenshot of select GitHub as the location of your code.":::
 
-1. On the **Select a repository** tab, select your forked sample repository. You might be prompted to enter your GitHub password again as a confirmation.
+1. On the **Select a repository** tab, select your forked sample repository. GitHub might prompt you to enter your GitHub password again or install the [Azure Pipelines](https://github.com/apps/azure-pipelines) GitHub extension or app. Follow onscreen instructions to install the app. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
    :::image type="content" source="../media/python/select-repository.png" alt-text="Screenshot of repository selection.":::
 
-   GitHub might prompt you to install the [Azure Pipelines](https://github.com/apps/azure-pipelines) GitHub extension or app. Follow onscreen instructions to install the app. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
-   
    <!--   :::image type="content" source="../media/python/github-pipelines-install-01.png" alt-text="Install Azure Pipelines extension on GitHub.":::
    
    On this page, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**.
@@ -298,14 +332,16 @@ Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAM
    :::image type="content" source="../media/python/github-pipelines-install-02.png" alt-text="Screenshot of Approve and Install Azure Pipelines extension on GitHub.":::-->
 
 1. On the **Configure your pipeline** page, select **Starter pipeline**.
-1. On the **Review your pipeline YAML** page, replace the contents of the starter *azure-pipelines.yml* file with the following YAML pipeline file. In the YAML file:
+
+1. On the **Review your pipeline YAML** page, replace the contents of the starter *azure-pipelines.yml* file with the following [YAML pipeline file](#yaml-pipeline-file). In the YAML file:
 
    - Replace the `<your-service-connection-name>` and `<your-web-app-name>` placeholders with your own values.
+
    - Replace `<your-pool-name>` with the name of the agent pool you want to use, and replace `<your-python-version>` with the version of Python running on your agent. This version should match the `runtime_version` from the JSON output of the `az webapp up` command.
 
 ::: moniker-end
 
-## View the YAML pipeline file
+### YAML pipeline file
 
 On the **Review your pipeline YAML** page, look at the pipeline to see what it does. Make sure all the default inputs are appropriate for your code. To learn about the pipeline YAML file schema, see the [YAML schema reference](/azure/devops/pipelines/yaml-schema/pipeline).
 
@@ -605,12 +641,8 @@ The job contains multiple steps:
          artifact: drop
     ```
 
-   The parameters are set as follows:
-
-   |**Parameter**|**Description**|
-   |---|---|
-   |`upload`|The location of the *.zip* file to upload.|
-   |`artifact`|The name of the artifact to create. Set to `drop`.|
+   - The `upload` parameter sets the location and name of the *.zip* file to upload.
+   - The `artifact` parameter sets the name of the created artifact to `drop`.
 
 #### Deployment stage
 
@@ -647,13 +679,13 @@ The deployment stage contains a single deployment job configured as follows.
     environment: $(environmentName)
 ```
 
-The `deployment` keyword indicates that the job is a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md) to deploy to. The `environment` is automatically created in your project when the job is run.
+- The `deployment` keyword indicates that the job is a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md) to deploy to. The `environment` is automatically created in your project when the job is run.
 
-The `pool` parameter specifies the deployment agent pool and must contain an agent with the capability to run the Python version specified in the pipeline.
+- The `pool` parameter specifies the deployment agent pool and must contain an agent with the capability to run the Python version specified in the pipeline.
 
 ::: moniker-end
 
-The `strategy` keyword defines the deployment strategy. The `runOnce` keyword specifies that the deployment job runs once. The `deploy` keyword specifies the steps to run in the deployment job.
+The `strategy` keyword defines the deployment strategy.
 
 ```yml
   strategy:
@@ -662,7 +694,13 @@ The `strategy` keyword defines the deployment strategy. The `runOnce` keyword sp
         steps:
 ```
 
-The `steps` in this stage first run the [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0) task, same as in the [Build stage](#build-stage), and then deploy the web app using the [AzureWebApp@1](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task. This task deploys the pipeline artifact `drop` to your web app.
+- The `runOnce` keyword specifies that the deployment job runs once.
+- The `deploy` keyword specifies the `steps` to run in the deployment job.
+
+The `steps` in this stage run the following tasks:
+
+1. [UsePythonVersion@0](/azure/devops/pipelines/tasks/reference/use-python-version-v0) selects the version of Python to use, same as in the [Build stage](#build-stage).
+1. [AzureWebApp@1](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) deploys the web app and the `drop` ZIP artifact.
 
 ```yml
 - task: AzureWebApp@1
@@ -683,42 +721,6 @@ Also, because the *python-vscode-flask-tutorial* repository contains the app sta
 
 You're now ready to try out the pipeline.
 
-::: moniker range="< azure-devops"
-
-### Configure a self-hosted agent
-
-To use your own self-hosted build agent, you need to configure the agent to run Python. Downloading Python versions isn't supported on self-hosted agents. You must preinstall the Python version. Use the full installer to get a pip-compatible version of Python.
-
-To avoid compatibility issues, match the Python version with the runtime version in your Azure App Services web app, as shown in the JSON output of the `az webapp up` command.
-
-The desired Python version needs to be added to the tool cache on the self-hosted agent so the pipeline task can use it. Normally, the tool cache is located under the _work/_tool directory of the agent. Alternatively, you can override the path with the environment variable `AGENT_TOOLSDIRECTORY`. Under the tools directory, create the following directory structure based on your Python version:
-
-```console
-$AGENT_TOOLSDIRECTORY/
-    Python/
-        {version number}/
-            {platform}/
-                {tool files}
-            {platform}.complete
-```
-
-The version number should follow the format of 1.2.3. The platform should either be x86 or x64. The tool files should be the unzipped Python version files. The `{platform}.complete` should be a 0-byte file that looks like `x86.complete` or `x64.complete` and just signifies the tool is properly installed in the cache.
-
-For example, to use Python 3.11 on a 64-bit Windows machine, create the following directory structure:
-
-```console
-$AGENT_TOOLSDIRECTORY/
-    Python/
-        3.11.4/
-            x64/
-                {python files}
-            x64.complete
-```
-
-If the machine hosting your agent already has the Python version you want to use, you can copy the files to the tool cache. If you don't have the Python version, you can download it from the [Python website](https://www.python.org/downloads/).
-
-::: moniker-end
-
 1. In the pipeline editor, select **Save and run**.
 1. On the **Save and run** screen, add a commit message if desired and then select **Save and run**.
 
@@ -726,7 +728,7 @@ If the machine hosting your agent already has the Python version you want to use
 
    :::image type="content" source="../media/python/pipeline-summary-stages-section.png" alt-text="Screenshot of pipeline run summary stages section.":::
 
-   You can quickly return to the YAML editor by selecting the vertical dots at the upper right of the **Summary** page and selecting **Edit pipeline**.
+   You can quickly return to the YAML editor by selecting the vertical dots at the upper right on the **Summary** page and selecting **Edit pipeline**.
 
    :::image type="content" source="../media/python/edit-pipeline-command.png" alt-text="Screenshot of edit pipeline comment from a build report.":::
 
@@ -752,7 +754,7 @@ If the machine hosting your agent already has the Python version you want to use
 
 ## Trigger a pipeline run
 
-This pipeline is set to run whenever a change checks in to the code repository. For example, you can add a new feature to the app, or update the app's dependencies. To trigger a pipeline run, commit a change to the repository.
+This pipeline is set to run whenever a change checks in to the code repository. To trigger a pipeline run, commit a change to the repository. For example, you can add a new feature to the app, or update the app's dependencies.
 
 1. Go to the GitHub repository for your app.
 1. Make a change to the code, such as changing the title of the app.
@@ -764,7 +766,7 @@ This pipeline is set to run whenever a change checks in to the code repository. 
 
 ## Deploy Django apps to App Service
 
-You can use Azure Pipelines to deploy Django apps to App Service on Linux if you're using a separate database. You can't use a SQLite database, because App Service locks the *db.sqlite3* file, preventing both reads and writes. This behavior doesn't affect an external database.
+You can use Azure Pipelines to deploy Django apps to App Service on Linux if you're using a separate database. You can't use a SQLite database, because App Service locks the *db.sqlite3* file, preventing both reads and writes. This behavior doesn't affect external databases.
 
 As explained in [Container startup process](/azure/app-service/containers/how-to-configure-python#container-startup-process), App Service automatically looks for a *wsgi.py* file in your app code, which typically contains the app object. If you want to customize the startup command, use the `startUpCommand` parameter in the `AzureWebApp@1` step of your YAML pipeline file.
 
@@ -782,7 +784,7 @@ When you use Django, you typically want to migrate the data models using `manage
 
 ## Run tests on the build agent
 
-As part of your build process, you might want to run tests on your app code. Tests run on the build agent, so you need to install your dependencies into a virtual environment on the build agent. After the tests run, delete the virtual environment before you create the *.zip* file for deployment.
+As part of your build process, you might want to run tests on your app code. Tests run on the build agent, so you need to install your dependencies into a virtual environment on the build agent. After the tests run, delete the test virtual environment before you create the *.zip* file for deployment.
 
 The following script elements illustrate this process. Place them before the `ArchiveFiles@2` task in the *azure-pipelines.yml* file. For more information, see [Run cross-platform scripts](../scripts/cross-platform-scripting.md?tabs=yaml). 
 
