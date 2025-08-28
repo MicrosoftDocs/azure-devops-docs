@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
+ms.update: 90-days
 ms.date: 05/07/2025
 # customer intent: As a team member, I want to learn how to create, edit, and delete Azure DevOps dashboards so that I can view and share information about my projects and teams, such as progress and status updates.
 ---
