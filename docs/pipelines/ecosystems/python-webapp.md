@@ -237,10 +237,9 @@ A service connection provides authenticated access from Azure Pipelines to exter
 
 1. On your Azure DevOps project page, select **Project settings**.
 1. From **Project Settings**, select **Pipelines** > **Service connections**.
+1. On the **Service connections** page, select **New service connection** or **Create service connection** if this service connection is the first in the project.
 
     :::image type="content" source="../media/python/project-settings.png" alt-text="Screenshot of project settings button on the project dashboard.":::
-
-1. On the **Service connections** page, select **New service connection** or **Create service connection** if this service connection is the first in the project.
 
 1. On the **New service connection** screen, select **Azure Resource Manager** and then select **Next**. 
 
