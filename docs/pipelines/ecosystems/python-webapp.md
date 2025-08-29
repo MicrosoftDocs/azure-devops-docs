@@ -256,8 +256,6 @@ A service connection provides authenticated access from Azure Pipelines to exter
    - **Subscription Id**: Enter your Azure subscription ID.
    - **Subscription Name**: Enter your Azure subscription name.
 
-   :::image type="content" source="../media/azure-service-connection-settings-devops-server.png" alt-text="Screenshot of top part of the new service connection screen.":::
-
 1. In the **Authentication** section, complete the following fields:
 
    - **Service Principal Id**: Enter the `appId` value returned by the `az ad sp create-for-rbac` command.
