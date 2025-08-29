@@ -247,7 +247,7 @@ A service connection provides authenticated access from Azure Pipelines to exter
 
 1. Select **Service principal (manual)** and then select **Next**.
 
-    :::image type="content" source="media/new-azure-resource-manager-conn-sp-manual-selection-server.png" alt-text="Screenshot that shows selecting a service principal (manual) authentication method selection.":::
+    :::image type="content" source="media/new-azure-resource-manager-manual-selection-server.png" alt-text="Screenshot that shows selecting a service principal (manual) authentication method selection.":::
 
 1. On the **New Azure service connection** screen, complete the following fields:
 
