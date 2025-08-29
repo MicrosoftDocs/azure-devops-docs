@@ -9,7 +9,7 @@ ms.topic: tutorial
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 07/02/2025
+ms.date: 08/29/2025
 ---
 
 # View and configure team velocity
@@ -47,10 +47,10 @@ Items in the *Proposed* or *Resolved* states are excluded from the **Completed**
 
 |Workflow state|Description|
 |---------|---------|
-|**Planned**|Work items assigned to a sprint by end of day 1. Once counted as planned, items remain in this category for the original sprint even if moved later. Items moved before day 1 ends aren't counted as planned.|
+|**Planned**|Work items assigned to a sprint by end of day 1, regardless of their current state. Once counted as planned, items remain in this category for the original sprint even if moved later. A work item can be counted as planned in multiple sprints if it meets the day 1 assignment rule for each sprint.|
 |**Incomplete**|Work items currently assigned to the sprint with **In Progress** state. Excludes items in Proposed, Resolved, or Completed states.|
 |**Resolved**|Work items in **Resolved** state. Not plotted unless configured to treat Resolved items as Completed.|
-|**Completed**|Work items in **Completed** state (including Closed) with a completion date on or before the sprint end date.|
+|**Completed**|Work items in **Completed** state with a completion date on or before the sprint end date.|
 |**Completed Late**|Work items in **Completed** state with a completion date after the sprint end date.|
 
 > [!NOTE]
