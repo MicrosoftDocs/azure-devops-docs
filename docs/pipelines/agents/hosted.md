@@ -259,7 +259,7 @@ namespace WeeklyFileIPRanges
 ```
 
 ### Service tags
-Where supported, customers can use the AzureCloud [service tag](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview) instead. To limit this to the United States Geography, you would use the following tags:
+Where supported, customers can use the AzureCloud [service tag](/azure/virtual-network/service-tags-overview) instead. To limit this to the United States Geography, you would use the following tags:
 ```
 AzureCloud.centralus
 AzureCloud.eastus
