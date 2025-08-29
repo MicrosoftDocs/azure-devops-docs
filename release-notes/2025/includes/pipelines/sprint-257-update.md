@@ -113,6 +113,9 @@ When queuing this pipeline, you have the option of choosing multiple regions to 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Run pipeline region multi selection.](../../media/257-pipelines-08.png "Screenshot of Run pipeline region multi selection.")](../../media/257-pipelines-08.png#lightbox)
 
+> [!NOTE]
+> The `stringList` data type isn't available in templates. Use the `object` data type in templates instead.
+
 ### See the full YAML code of a pipeline run
 
 YAML pipelines are composable. You may extend a template, to ensure your pipelines runs the necessary static analysis tools, and include templates to run common stages or jobs or tasks.
