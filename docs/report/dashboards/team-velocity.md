@@ -53,8 +53,6 @@ Items in the *Proposed* or *Resolved* states are excluded from the **Completed**
 |**Completed**|Work items in **Completed** state with a completion date on or before the sprint end date.|
 |**Completed Late**|Work items in **Completed** state with a completion date after the sprint end date.|
 
-Planned work doesn't care the state the WI is when in planned, and that the same WI can be counted as planned in multiple sprints
-
 > [!NOTE]
 > When configured to treat Resolved items as Completed, moving a Resolved item to Completed state after the sprint end date changes its classification from Completed to Completed Late.
 
