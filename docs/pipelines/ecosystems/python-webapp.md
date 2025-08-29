@@ -12,6 +12,8 @@ ms.custom:
   - arm2024
   - linux-related-content
   - sfi-image-nochange
+#customer intent: As a Linux app developer, I want to know how to use Azure Pipelines to build and deploy Python web apps so I can automatically deploy my apps and updates.
+
 ---
 
 # Use Azure Pipelines to build and deploy a Python web app to Azure App Service
