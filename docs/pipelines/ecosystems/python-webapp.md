@@ -4,7 +4,7 @@ description: Use CI/CD with Azure Pipelines to automatically build, test, and de
 ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.author: jukullam
-ms.date: 08/28/2025
+ms.date: 08/29/2025
 monikerRange: "<=azure-devops"
 ms.custom:
   - devx-track-python
@@ -86,8 +86,8 @@ If the machine hosting your agent already has the Python version you want to use
    source .env/Scripts/activate
    pip install --upgrade pip
    pip install -r ./requirements.txt
-   export set FLASK_APP=hello_app.webapp
-   python3 -m flask run
+   export FLASK_APP=hello_app.webapp
+   flask run
    ```
 
 1. To test the app, go to *http://localhost:5000* in a browser window, and verify that you see the title **Visual Studio Flask Tutorial**.
@@ -231,8 +231,6 @@ A service connection provides authenticated access from Azure Pipelines to exter
 
    :::image type="content" source="../media/azure-service-connection-settings-devops-services.png" alt-text="Screenshot of New Azure service connection dialog box.":::
 
-The new connection appears in the **Service connections** list, and is ready to use in your pipeline.
-
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -243,39 +241,41 @@ The new connection appears in the **Service connections** list, and is ready to 
     :::image type="content" source="../media/python/project-settings.png" alt-text="Screenshot of project settings button on the project dashboard.":::
 
 1. On the **Service connections** page, select **New service connection** or **Create service connection** if this service connection is the first in the project.
+
 1. On the **New service connection** screen, select **Azure Resource Manager** and then select **Next**. 
 
-   :::image type="content" source="../media/python/service-connection-type-devops-services.png" alt-text="Screenshot of Azure Resource Manager service connection selection.":::
+   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows the Azure Resource Manager selection.":::
 
-1. On the **New Azure service connection** screen, under **Identity type**, select **App registration or managed identity (manual)**. For more information about authentication methods, see [Connect to Azure by using an Azure Resource Manager service connection](../library/connect-to-azure.md).
+1. Select **Service principal (manual)** and then select **Next**.
 
-1. For **Credential**, select **Secret**.
+    :::image type="content" source="media/new-azure-resource-manager-conn-sp-manual-selection-server.png" alt-text="Screenshot that shows selecting a service principal (manual) authentication method selection.":::
 
-1. Fill out the following fields:
+1. On the **New Azure service connection** screen, complete the following fields:
 
    - **Environment**: Select **Azure Cloud**.
    - **Scope Level**: Select **Subscription**.
-   - **Subscription ID**: Enter your Azure subscription ID.
-   - **Subscription name**: Enter your Azure subscription name.
+   - **Subscription Id**: Enter your Azure subscription ID.
+   - **Subscription Name**: Enter your Azure subscription name.
 
    :::image type="content" source="../media/azure-service-connection-settings-devops-server.png" alt-text="Screenshot of top part of the new service connection screen.":::
 
-1. Under **Authentication**, complete the following fields:
+1. In the **Authentication** section, complete the following fields:
 
-   - **Application (client) ID**: Enter the `appId` value returned by the `az ad sp create-for-rbac` command.
-   - **Directory (tenant) ID**: Enter the `tenant` value returned by the `az ad sp create-for-rbac` command.
+   - **Service Principal Id**: Enter the `appId` value returned by the `az ad sp create-for-rbac` command.
    - **Credential**: Select **Service principal key**.
-   - **Client secret**: Enter the `password` value returned by the `az ad sp create-for-rbac` command.
+   - **Service principal key**: Enter the `password` value returned by the `az ad sp create-for-rbac` command.
+   - **Tenant Id**: Enter the `tenant` value returned by the `az ad sp create-for-rbac` command.
    - Select **Verify** to verify the connection.
-1. Under **Service Connection Name**, enter a name for the service connection.
-1. Under **Security**, select the check box for **Grant access permissions to all pipelines**.
+    
+1. In the **Details** section, under **Service Connection Name**, enter a name for the service connection.
+1. Select the check box for **Grant access permissions to all pipelines**.
 1. Select **Verify and save**.
 
-   :::image type="content" source="../media/azure-service-connection-devops-server.png" alt-text="Screenshot of bottom part of the new service connection screen.":::
-
-The new connection appears in the **Service connections** list, and is ready to use in your pipeline.
+   :::image type="content" source="../media/azure-service-connection-settings-devops-server.png" alt-text="Screenshot of top part of the new service connection screen.":::
 
 ::: moniker-end
+
+The new connection appears in the **Service connections** list, and is ready to use in your pipeline.
 
 ## Create a pipeline
 
