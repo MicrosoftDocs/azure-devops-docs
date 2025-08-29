@@ -40,15 +40,19 @@ You can choose between two Velocity charts: the in-context Velocity chart from t
 
 Items in the *Proposed* or *Resolved* states are excluded from the **Completed**, **Completed Late**, and **Incomplete** calculations. For more information, see [How workflow category states are used in Azure Boards](../../boards/work-items/workflow-and-state-categories.md). Your selections are personal and persist across sessions until changed.
 
-<a id="state-descriptions-table"></a>
+> [!IMPORTANT]
+> Only Planned columns use historical data for plotting the graph. The rest of the plots (Incomplete, Completed, Completed Late) use current work item data.
 
-|Workflow state  |Description |
+|Workflow state|Description |
 |---------|---------|
-|Planned    | Work items assigned to a sprint before and in the day the sprint starts. If a work item is re-assigned after the sprint starts (the 2nd day of the sprint), it remains Planned in the original sprint and appears as Late or Incomplete in the new sprint. If re-assigned before or the same day the sprint begins, it is removed from Planned from that sprint.|
-|Completed | Work items assigned to the sprint and completed before the end of the sprint.        |
-|Completed Late     |Work items assigned to the sprint but completed after the sprint ends.          |
-|Incomplete    | Work items assigned to the sprint but not yet completed.       |
-| Resolved | Bugs assigned to the sprint, indicating a solution was implemented but not yet verified.|
+|Planned    |All work items that remain assigned to a sprint by the end of its 1st day, regardless of the state they were in. If a work item was assigned to the sprint by the end of the 1st day and then is removed/re-assigned on or after the 2nd day of the sprint, the work item will continue to be counted as Planned work in the original sprint. If a work item is removed/re-assigned from the sprint before the end of the 1st day of the sprint, it will not count as Planned for that sprint. A work item can be counted as planned in two or more sprints if the work item follows the rule of staying assigned by the end of the 1st day of each of the sprints where it appears|
+|Incomplete|Work items currently assigned to the sprint (regardless of when and the state when they were assigned to it) but not yet completed or resolved. This count includes only items in states in the In Progress state category and excludes those in states in the Proposed, Resolved and Completed state categories.   |
+|Resolved   |Work items that are in a state that belongs to the Resolved state category. Work items in this category are not plotted in the graph unless the widget is configured to display Resolved work items as Completed. Work items in states belonging to the Resolved state category are excluded in this count unless your widget is configured to treat Resolved items as Completed.|
+|Completed|Work items currently assigned to the sprint (regardless of when and the state when they were assigned to it) that are in the state of the Completed state category (i.e. Closed) and have a Completed Date on or before the sprint end date. |
+|Completed Late|Work items currently assigned to the sprint (regardless of when and the state when they were assigned to it) that are in the state of the Completed state category and have a Completed Date after the sprint end date.|
+
+> [!NOTE]
+> If you configured your widget to display Resolved work items as Completed, moving a Resolved work item to a state in the Completed state category AFTER the sprint end date, it will now be counted as Completed Late and no longer as Completed.
 
 Later in this article, learn how to [open the Velocity in-context report](#velocity-chart) or [configure the Velocity widget](#configure-the-velocity-widget).
 
@@ -111,7 +115,7 @@ Complete the following steps to configure the Velocity widget.
 1. Select the ![Actions icon](../media/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog.
 
    :::image type="content" source="media/velocity/configure-dashboard-sequence.png" alt-text="Screenshot showing sequence of highlighted buttons to configure Velocity dashboard."::: 
- 
+
 	Modify the title, select the team, and then select either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 
       :::image type="content" source="media/team-velocity-config-dialog.png" alt-text="Screenshot showing Configure dialog, Velocity widget.":::
