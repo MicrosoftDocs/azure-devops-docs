@@ -41,18 +41,20 @@ You can choose between two Velocity charts: the in-context Velocity chart from t
 Items in the *Proposed* or *Resolved* states are excluded from the **Completed**, **Completed Late**, and **Incomplete** calculations. For more information, see [How workflow category states are used in Azure Boards](../../boards/work-items/workflow-and-state-categories.md). Your selections are personal and persist across sessions until changed.
 
 > [!IMPORTANT]
-> Only Planned columns use historical data for plotting the graph. The rest of the plots (Incomplete, Completed, Completed Late) use current work item data.
+> Only **Planned** data uses historical snapshots. All other states (**Incomplete**, **Completed**, **Completed Late**) reflect current work item data.
 
-|Workflow state|Description |
+<a id="state-descriptions-table"></a>
+
+|Workflow state|Description|
 |---------|---------|
-|Planned    |All work items that remain assigned to a sprint by the end of its 1st day, regardless of the state they were in. If a work item was assigned to the sprint by the end of the 1st day and then is removed/re-assigned on or after the 2nd day of the sprint, the work item will continue to be counted as Planned work in the original sprint. If a work item is removed/re-assigned from the sprint before the end of the 1st day of the sprint, it will not count as Planned for that sprint. A work item can be counted as planned in two or more sprints if the work item follows the rule of staying assigned by the end of the 1st day of each of the sprints where it appears|
-|Incomplete|Work items currently assigned to the sprint (regardless of when and the state when they were assigned to it) but not yet completed or resolved. This count includes only items in states in the In Progress state category and excludes those in states in the Proposed, Resolved and Completed state categories.   |
-|Resolved   |Work items that are in a state that belongs to the Resolved state category. Work items in this category are not plotted in the graph unless the widget is configured to display Resolved work items as Completed. Work items in states belonging to the Resolved state category are excluded in this count unless your widget is configured to treat Resolved items as Completed.|
-|Completed|Work items currently assigned to the sprint (regardless of when and the state when they were assigned to it) that are in the state of the Completed state category (i.e. Closed) and have a Completed Date on or before the sprint end date. |
-|Completed Late|Work items currently assigned to the sprint (regardless of when and the state when they were assigned to it) that are in the state of the Completed state category and have a Completed Date after the sprint end date.|
+|**Planned**|Work items assigned to a sprint by end of day 1. Once counted as planned, items remain in this category for the original sprint even if moved later. Items moved before day 1 ends aren't counted as planned.|
+|**Incomplete**|Work items currently assigned to the sprint with **In Progress** state. Excludes items in Proposed, Resolved, or Completed states.|
+|**Resolved**|Work items in **Resolved** state. Not plotted unless configured to treat Resolved items as Completed.|
+|**Completed**|Work items in **Completed** state (including Closed) with a completion date on or before the sprint end date.|
+|**Completed Late**|Work items in **Completed** state with a completion date after the sprint end date.|
 
 > [!NOTE]
-> If you configured your widget to display Resolved work items as Completed, moving a Resolved work item to a state in the Completed state category AFTER the sprint end date, it will now be counted as Completed Late and no longer as Completed.
+> When configured to treat Resolved items as Completed, moving a Resolved item to Completed state after the sprint end date changes its classification from Completed to Completed Late.
 
 Later in this article, learn how to [open the Velocity in-context report](#velocity-chart) or [configure the Velocity widget](#configure-the-velocity-widget).
 
