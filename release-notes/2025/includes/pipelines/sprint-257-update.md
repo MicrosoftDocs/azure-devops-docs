@@ -113,7 +113,8 @@ When queuing this pipeline, you have the option of choosing multiple regions to 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Run pipeline region multi selection.](../../media/257-pipelines-08.png "Screenshot of Run pipeline region multi selection.")](../../media/257-pipelines-08.png#lightbox)
 
-Please note that `stageList` cannot be used on templates. For templates, please leverage the `Object` data type instead.
+> [!NOTE]
+> The `stringList` data type isn't available in templates. Use the `object` data type in templates instead.
 
 ### See the full YAML code of a pipeline run
 
