@@ -9,7 +9,7 @@ ms.date: 08/07/2020
 
 1. Sign in to your project collection (`http://your-server/DefaultCollection`).
 
-1. Choose **Azure DevOps**, **Collection settings**.
+1. Choose **Azure DevOps** > **Collection settings**.
 
    ![Choose Collection settings.](../../media/agent-pools-tab/collection-settings-2020.png)
 

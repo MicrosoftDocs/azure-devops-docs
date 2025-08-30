@@ -9,7 +9,7 @@ ms.date: 02/12/2020
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-1. Choose **Azure DevOps**, **Organization settings**.
+1. Choose **Azure DevOps** > **Organization settings**.
 
    ![Choose Organization settings.](../../media/agent-pools-tab/organization-settings.png)
 
