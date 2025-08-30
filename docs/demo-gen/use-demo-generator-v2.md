@@ -29,7 +29,7 @@ Use one of the following methods to authenticate to the Azure DevOps Demo Genera
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../includes/use-microsoft-entra-reduce-pats.md)]
 
-- **Personal Access Token (PAT):** Sign in with a [Personal Access Token (PAT)](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#creating-pats) with the following scopes:
+- **Personal Access Token (PAT):** Sign in with a [Personal Access Token (PAT)](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-pats) with the following scopes:
 
    | Scope                      | Description                                |
    | -------------------------- | ------------------------------------------ |

@@ -22,6 +22,12 @@ Unlike cloud-based solutions that require sending your data externally, the Azur
 > [!IMPORTANT]
 > Azure DevOps MCP Server is in public preview. Features and functionality might change before general availability. For issues or feedback, visit the [GitHub repository](https://github.com/microsoft/azure-devops-mcp).
 
+## Install MCP Server
+
+Ready to enhance your AI assistant with Azure DevOps context? The Azure DevOps MCP Server works with popular AI coding environments like Visual Studio Code with GitHub Copilot, Visual Studio 2022, Cursor, and Claude Code.
+
+For detailed installation instructions and setup for your preferred environment, see [Install Azure DevOps MCP Server](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md).
+
 ## Why use Azure DevOps MCP Server?
 
 Traditional AI assistants lack context about your specific projects, work items, and team processes. They can help with generic coding questions but can't answer "What's blocking our current sprint?" or "Which pull requests need my review?" The Azure DevOps MCP Server bridges this gap by connecting your AI assistant directly to your Azure DevOps data.
@@ -116,16 +122,8 @@ The Azure DevOps MCP Server provides your AI assistant with secure access to you
 - "Get all completed work items from the last sprint"
 - "Create a summary report for stakeholders highlighting key accomplishments and metrics"
 
-## Get started with MCP Server
-
-Ready to enhance your AI assistant with Azure DevOps context? The Azure DevOps MCP Server works with popular AI coding environments like Visual Studio Code with GitHub Copilot, Visual Studio 2022, Cursor, and Claude Code.
-
-For detailed installation instructions and setup for your preferred environment, see [Getting started with Azure DevOps MCP Server](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md).
-
 ## Related content
 
 - [Example prompts for Azure DevOps MCP Server](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/EXAMPLES.md)
 - [Troubleshoot Azure DevOps MCP Server](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/TROUBLESHOOTING.md)
 - [Frequently asked questions about Azure DevOps MCP Server](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/FAQ.md)
-
-

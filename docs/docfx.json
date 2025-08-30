@@ -209,9 +209,6 @@
         "pipelines/tasks/**": "azure-devops-pipelines-tasks",
         "pipelines/test/**": "azure-devops-pipelines-test"
       },
-      "ms.custom": {
-        "repos/**": "UpdateFrequency3"
-      },
       "ms.update-cycle": {
         "repos/**": "1095-days"
       },
