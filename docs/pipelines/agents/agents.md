@@ -439,7 +439,7 @@ We keep Microsoft-hosted agents up to date. If the newer version of the agent is
 
 If you run a self-hosted agent interactively, or if there's a newer *major* version of the agent available, then you might have to manually upgrade the agents. You can upgrade the agents from the **Agent pools** tab under your organization. Pipelines can't run without a compatible agent.
 
-### Update self-hosted agents
+### To update self-hosted agents
 
 1. Navigate to **Project settings** > **Agent pools**.
 
