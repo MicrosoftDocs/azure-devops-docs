@@ -1,4 +1,4 @@
----
+f---
 title: Manage test runs in Azure DevOps Test Plans
 description: Learn how to create, view, and manage test runs using the new Test Run Hub experience in Azure DevOps Test Plans.
 ms.service: azure-devops-test-plans
@@ -65,6 +65,7 @@ The Test Run Hub provides several ways to find specific test runs:
 > [!TIP]
 > - Filter selections and column widths persist across sessions until you clear them manually.
 > - Search filters work additively. For example, selecting "Past 7d" in the timeline filter shows only runs from the last seven days.
+> - A maximum of 5,000 results can appear in the Test Run Hub UI.
 > - Use the Azure DevOps REST APIs to search for runs older than 180 days.
 
 ### Customize columns
@@ -156,6 +157,9 @@ The test case results section allows you to:
 - Customize column display (similar to the main runs page)
 - Link test results to Azure DevOps work items
 
+> [!TIP]
+> The default Outcome filter is set to _Failed_ or _Aborted_ to streamline deeper analysis.
+
 :::image type="content" source="media/test-runs/test-case-results.png" alt-text="Screenshot of the test case results section showing individual test outcomes.":::
 
 ### Link to work items
@@ -177,6 +181,9 @@ Select any test case to view detailed results including:
 - **Test steps**: Detailed step-by-step results with outcomes and comments
 - **Analysis information**: Post-execution analysis and next actions
 - **Attachments**: All test result-specific attachments
+
+> [!TIP]
+> The default Test Case Result filter is as well set to _Failed_ or _Aborted_ to streamline deeper analysis.
 
 :::image type="content" source="media/test-runs/detailed-test-case-results.png" alt-text="Screenshot of the detailed test case results page showing comprehensive test information.":::
 
