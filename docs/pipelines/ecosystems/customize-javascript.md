@@ -601,8 +601,10 @@ The next example publishes to a custom registry defined in your repo's `.npmrc` 
   inputs:
      command: publish
      publishRegistry: useExternalRegistry
-     publishEndpoint: https://my.npmregistry.com
+     publishEndpoint: https://your-registry.example.com
 ```
+
+- Replace `your-registry.example.com` with the URL of your npm registry.
 
 The final example publishes the module to an Azure DevOps Services package management feed. 
 
@@ -611,8 +613,10 @@ The final example publishes the module to an Azure DevOps Services package manag
   inputs:
      command: publish
      publishRegistry: useFeed
-     publishFeed: https://my.npmregistry.com
+     publishFeed: https://your-registry.example.com
 ```
+
+- Replace `your-registry.example.com` with the URL of your npm registry.
 
 For more information about versioning and publishing npm packages, see [Publish npm packages](../artifacts/npm.md) and [How can I version my npm packages as part of the build process?](#q-how-can-i-version-my-npm-packages-as-part-of-the-build-process).
 
