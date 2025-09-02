@@ -7,6 +7,7 @@ ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
+ms.update: 90-days
 ms.date: 03/13/2025
 ms.custom:
   - boards-get-started
