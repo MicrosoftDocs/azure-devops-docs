@@ -1,6 +1,6 @@
 ---
 title: Managed DevOps Pools Overview
-description: Learn about Managed DevOps Pools.
+description: Learn about how you can use Managed DevOps Pools to spin up pools that are tailored to your specific needs.
 ms.date: 07/03/2025
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the benefits of using Managed DevOps Pools.
@@ -10,14 +10,14 @@ ms.topic: overview
 
 Managed DevOps Pools empowers development teams to quickly and easily spin up Azure DevOps agent pools that are tailored to a team's specific needs. Managed DevOps Pools implements security best practices and provides ways to balance cost and performance. It also provides paths for the most common scenarios and significantly reduces time spent in creating and maintaining custom pools.
 
-Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. They simplify custom pool creation even further by improving the scalability and reliability of custom pools. See [Compare Managed DevOps Pools with Azure Virtual Machine Scale Set agents](./migrate-from-scale-set-agents.md). Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription. They don't live in your own Azure subscription, similar to using Azure DevOps Virtual Machine Scale Set agent pools. For more information, see [Microsoft Managed DevOps Pools architecture overview](./architecture-overview.md).
+Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It simplifies custom pool creation even further by improving the scalability and reliability of custom pools. See [Compare Managed DevOps Pools with Azure Virtual Machine Scale Set agents](./migrate-from-scale-set-agents.md). Managed DevOps Pools is a fully managed service where virtual machines or containers powering the agents live in a Microsoft Azure subscription. They don't live in your own Azure subscription, similar to using Azure DevOps Virtual Machine Scale Set agent pools. For more information, see [Microsoft Managed DevOps Pools architecture overview](./architecture-overview.md).
 
-## Usage Scenarios
+## Usage scenarios
 
 Managed DevOps Pools:
 
 * Has more powerful agents than the agents that are available in out-of-the-box agents.
-* Uses a virtual machine image that is custom-tailored by you for your CI/CD workload.
+* Uses a virtual machine image that you custom make for your CI/CD workload.
 * Has agents in the geographical region closest to your dependencies.
 * Scales up and down based on your configuration.
 * Can maintain the state of your agents up to seven days, so your builds are faster due to cache hits.
@@ -47,7 +47,7 @@ Managed DevOps Pools provides the following benefits when you create, configure,
 * **Azure cost**: Managed DevOps pools help optimize your Azure cost based on your CI/CD workload's unique needs.
 * **Scalable**: Managed DevOps pools are scalable, up to thousands of agents running simultaneously.
 * **Reliable**: Your developers experience less downtime, because Managed DevOps pools have high uptime.
-* **Security**: Your pool's agents are secured by Microsoft's best practices, and you can use features to further secure your pool.
+* **Security**: Your pool's agents have the security of Microsoft's best practices, and you can use features to further secure your pool.
 
 ## Get started
 
@@ -58,7 +58,7 @@ To start using Managed DevOps Pools, see [Get started with Managed DevOps Pools]
 See what users are saying about Managed DevOps Pools. The following links take you to the respective author's external sites outside of Microsoft Learn.
 
 * [A first look at revolutionizing your cloud deployments with Azure Managed DevOps Pools](https://www.azureviking.com/post/a-first-look-at-revolutionizing-your-cloud-deployments-with-azure-managed-devops-pools) by Haflidi Fridthjofsson
-* [A first look at using Azure Managed DevOps Pools](https://blogs.blackmarble.co.uk/rfennell/a-first-look-at-using-azure-mdp/) by Richard Fennel
+* [A first look at using Azure Managed DevOps Pools](https://blogs.blackmarble.co.uk/rfennell/a-first-look-at-using-azure-mdp/) by Richard Fennell
 * [Azure DevOps Managed DevOps pools](https://bjompen.com/#/posts/azdo.mdp?id=azure-devops-managed-devops-pools) by bjompen
 * [Deploying in a private Azure environment using Managed DevOps Pools](https://logcorner.com/deploying-in-a-private-azure-environment-using-managed-devops-pools/) by Gora Leye
 * [Managed DevOps Pools: Simplifying Self-Hosted Azure Pipeline Agents](https://blog.almguru.com/managed-devops-pools-simplifying-self-hosted-azure-pipeline-agents-cd5f9c60640c) by Vladimir Gusarov
