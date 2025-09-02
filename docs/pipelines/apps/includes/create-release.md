@@ -37,7 +37,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
    * **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
      If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see
-     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
+     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/azure-resource-manager-alternate-approaches.md) to manually set up the connection.
 
    * **App Service Name**: Select the name of the web app from your subscription.
 
