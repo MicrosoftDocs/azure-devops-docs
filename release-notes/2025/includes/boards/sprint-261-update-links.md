@@ -6,4 +6,4 @@ ms.date: 09/04/2025
 ms.topic: include
 ---
 
-- [Dynamic checklist support in work item Markdown fields](dynamic-checklist-support-in-work-item-markdown-fields)
+- [Dynamic checklist support in work item Markdown fields](#dynamic-checklist-support-in-work-item-markdown-fields)
