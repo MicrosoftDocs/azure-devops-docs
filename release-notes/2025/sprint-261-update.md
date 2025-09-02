@@ -7,6 +7,12 @@ ms.date: 09/04/2025
 description: Placeholder
 ---
 
+# Azure Boards and Azure Pipelines integration with GitHub Enterprise Cloud
+
+Placeholder
+
+Check out the release notes for details.
+
 ### GitHub Advanced Security for Azure DevOps
 
 [!INCLUDE [sprint-261-update-links](includes/ghazdo/sprint-261-update-links.md)]
@@ -21,7 +27,7 @@ description: Placeholder
 [!INCLUDE [sprint-261-update-links](includes/repos/sprint-261-update-links.md)]
 
 ### Testing
-[!INCLUDE [sprint-261-update-links](includes/testing/sprint-261-update-links.md)]
+[!INCLUDE [sprint-261-update-links](includes/testplans/sprint-261-update-links.md)]
 
 ## GitHub Advanced Security for Azure DevOps
 
@@ -37,7 +43,7 @@ description: Placeholder
 [!INCLUDE [sprint-261-update](includes/repos/sprint-261-update.md)]
 
 ## Testing
-[!INCLUDE [sprint-261-update](includes/testing/sprint-261-update.md)]
+[!INCLUDE [sprint-261-update](includes/testplans/sprint-261-update.md)]
 
 ## Next steps
 
