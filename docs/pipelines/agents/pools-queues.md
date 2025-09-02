@@ -392,7 +392,7 @@ Choose from one of the following processes:
 * Open access for all pipelines to use the agent pool from the more options at top-right corner of the **Pipeline permissions** section in security tab of an agent pool.
 * Lock down the agent pool and allow only selected YAML pipelines to use it. If any other YAML pipeline refers to the agent pool, an authorization request is raised, which an agent pool **Administrator** must approve. This process doesn't limit access from Classic pipelines.
 
-:::image type="content" source="media/agent-pools-pipeline-permissions.png" alt-text="Screenshot of the pipeline permissions user experience for an agent pool.":::
+:::image type="content" source="media/agent-pools-pipeline-permissions.png" alt-text="Screenshot that shows the pipeline permissions user experience for an agent pool.":::
 
 Pipeline permissions for the *Azure Pipelines* agent pool can't be configured, because the pool is accessible to all pipelines by default.
 
@@ -425,7 +425,7 @@ Select the desired pool, and then choose **Settings** to configure maintenance j
 
 :::moniker range="<=azure-devops"
 
-:::image type="content" source="media/maintenance-job-settings.png" alt-text="Maintenance job settings":::
+:::image type="content" source="media/maintenance-job-settings.png" alt-text="Screenshot that shows maintenance job settings.":::
 
 :::moniker-end
 
@@ -435,7 +435,7 @@ Select **Maintenance History** to see the maintenance job history for the curren
 
 :::moniker range="<=azure-devops"
 
-:::image type="content" source="media/maintenance-job-history.png" alt-text="Maintenance job history":::
+:::image type="content" source="media/maintenance-job-history.png" alt-text="Screenshot that shows maintenance job history.":::
 
 :::moniker-end
 

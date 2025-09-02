@@ -352,11 +352,11 @@ The agent communicates with Azure Pipelines or Azure DevOps Server. It determine
 All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows you to configure the agent to different topologies as shown by the following examples.
 
 ::: moniker range="< azure-devops"
-![Agent topologies in on-premises installations.](media/agent-topologies-tfs.png)
+:::image type="content" source="media/agent-topologies-tfs.pn" alt-text="Graphic that shows agent topologies in on-premises installations." lightbox= "media/agent-topologies-tfs.pn":::
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-![Agent topologies in Azure DevOps Services.](media/agent-topologies-devops.png)
+:::image type="content" source="media/agent-topologies-devops.png" alt-text="Graphic that shows agent topologies in Azure DevOps Services." lightbox= "media/agent-topologies-devops.png":::
 ::: moniker-end
 
 Here's a common communication pattern between the agent and Azure Pipelines or Azure DevOps Server.
@@ -391,7 +391,7 @@ When you use the agent to deploy artifacts to a set of servers, it must have "li
 
 If your on-premises environments don't have connectivity to a Microsoft-hosted agent pool, which is typically the case due to intermediate firewalls, you need to manually configure self-hosted agents on on-premises computers. The agents must have connectivity to the target on-premises environments, and access to the internet to connect to Azure Pipelines or Azure DevOps Server. This process is demonstrated in the following schematic:
 
-![Agent connectivity for on-premises environments](media/agent-connections-devops.png)
+:::image type="content" source="media/agent-connections-devops.png" alt-text="Graphic that shows agent connectivity for on-premises environments." lightbox= "media/agent-connections-devops.png":::
 ::: moniker-end
 
 <a name="configure-tfs-authentication"></a>
@@ -457,19 +457,19 @@ If you run a self-hosted agent interactively, or if there's a newer *major* vers
 
 1. Navigate to **Project settings** > **Agent pools**.
 
-    ![Project settings, Agent pools](media/agent-queues-tab/agent-queues.png)
+   :::image type="content" source="media/agent-queues-tab/agent-queues.png" alt-text="Screenshot that shows how to select Agent pools." lightbox= "media/agent-queues-tab/agent-queues.png":::
 
 1. Select your agent pool and choose **Update all agents**.
 
-    ![Update all agents](media/agents/update-all-agents.png)
+   :::image type="content" source="media/agents/update-all-agents.png" alt-text="Screenshot that shows how to select Update all agents." lightbox= "media/agents/update-all-agents.png":::
 
     You can also update agents individually by choosing **Update agent** from the **...** menu.
 
-    ![Update agent](media/agents/update-agent.png)
+   :::image type="content" source="media/agents/update-agent.png" alt-text="Screenshot that shows how to select Update agent." lightbox= "media/agents/update-agent.png":::
 
 1. Select **Update** to confirm.
 
-    ![Update all agents confirmation](media/agents/update-all-agents-confirmation.png)
+   :::image type="content" source="media/agents/update-all-agents-confirmation.png" alt-text="Screenshot that shows how to select Update to confirm." lightbox= "media/agents/update-all-agents-confirmation.png":::
 
 1. An update request is queued for each agent in the pool, and runs when any currently running jobs complete. An upgrade typically takes only a few moments. This amount of time is long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
 

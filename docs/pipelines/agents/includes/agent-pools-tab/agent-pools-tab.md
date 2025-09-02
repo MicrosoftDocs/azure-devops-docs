@@ -11,8 +11,8 @@ ms.date: 02/12/2020
 
 1. Select **Azure DevOps** > **Organization settings**.
 
-   ![Choose Organization settings.](../../media/agent-pools-tab/organization-settings.png)
+   :::image type="content" source="../../media/agent-pools-tab/organization-settings.png" alt-text="Screenshot that shows how to select Organization settings." lightbox= "../../media/agent-pools-tab/organization-settings.png":::
 
 1. Select **Agent pools**.
 
-   ![Choose Agent pools tab.](../../media/agent-pools-tab/agent-pools.png)
+   :::image type="content" source="../../media/agent-pools-tab/agent-pools.png" alt-text="Screenshot that shows how to select the Agent pools tab." lightbox= "../../media/agent-pools-tab/agent-pools.png":::
