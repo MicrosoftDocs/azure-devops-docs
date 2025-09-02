@@ -16,8 +16,7 @@ monikerRange: '<= azure-devops'
 
 An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into agent pools. When you configure an agent, it's registered with a single pool. When you create a pipeline, you specify the pool in which the pipeline runs. When you run the pipeline, it runs on an agent from that pool that meets the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) of the pipeline.
 
-> [!NOTE]
-> Managed DevOps Pools agent pools are managed in the Azure portal. If you're using Managed DevOps Pools, see [Create your first Managed DevOps Pool](../../managed-devops-pools/quickstart-azure-portal.md).
+Managed DevOps Pools agent pools are managed in the Azure portal. If you're using Managed DevOps Pools, see [Create your first Managed DevOps Pool](../../managed-devops-pools/quickstart-azure-portal.md).
 
 ::: moniker-end
 
@@ -35,14 +34,13 @@ In Azure DevOps Server, agent pools are scoped to the entire server, so you can 
 
 ::: moniker range="<=azure-devops"
 
-> [!NOTE]
-> Agent pool jobs run a job on a single agent. If you need to run a job on all agents, like a deployment group for classic release pipelines, see [Provision deployment groups](../release/deployment-groups/index.md).
+Agent pool jobs run a job on a single agent. If you need to run a job on all agents, like a deployment group for classic release pipelines, see [Provision deployment groups](../release/deployment-groups/index.md).
 
 ::: moniker-end
 
 ::: moniker range="<=azure-devops"
 
-If you're an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
+If you're an organization administrator, you create and manage agent pools from the **Agent pools** tab in admin settings.
 
 ::: moniker-end
 
@@ -50,7 +48,7 @@ If you're an organization administrator, you create and manage agent pools from 
 
 ::: moniker range="<=azure-devops"
 
-If you're a project team member, you create and manage agent pools from the agent pools tab in project settings.
+If you're a project team member, you create and manage agent pools from the **Agent pools** tab in project settings.
 
 ::: moniker-end
 
@@ -60,14 +58,14 @@ If you're a project team member, you create and manage agent pools from the agen
 
 The following agent pools are provided by default:
 
-* **Default** pool: Use it to register [self-hosted agents](agents.md) that you set up.
+* **Default pool**: Use it to register [self-hosted agents](agents.md) that you set up.
 
 ::: moniker range="azure-devops"
 
-* **Azure Pipelines** hosted pool with various Windows, Linux, and macOS images. For a complete list of the available images and their installed software, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
+* **Azure Pipelines-hosted pool**: This comes with various Windows, Linux, and macOS images. For a complete list of the available images and their installed software, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
 
    > [!NOTE]
-   > The Azure Pipelines-hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines-hosted pool. In some circumstances, you might still see the old pool names, but behind the scenes, the hosted jobs are run using the Azure Pipelines pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
+   > The Azure Pipelines-hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines-hosted pool. In some circumstances, you might still see the old pool names, but behind the scenes, the hosted jobs run by using the Azure Pipelines pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
 By default, all contributors in a project are members of the **User** role on hosted pools. This designation allows every contributor in a project to author and run pipelines by using Microsoft-hosted agents.
 
@@ -109,13 +107,13 @@ To choose a pool and agent in the classic editor, go to the pipeline settings. S
 #### [Azure Pipelines UI](#tab/browser)
 
 ::: moniker range="<=azure-devops"
-Organization administrators create and manage agent pools from the **Agent pools** tab in **Admin settings**.
+Organization administrators create and manage agent pools from the **Agent pools** tab in admin settings.
 ::: moniker-end
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 ::: moniker range="<=azure-devops"
-Project team members create and manage agent pools from the **Agent pools** tab in **Project settings**.
+Project team members create and manage agent pools from the **Agent pools** tab in project settings.
 ::: moniker-end
 
 [!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
@@ -148,8 +146,8 @@ az pipelines pool list [--action {manage, none, use}]
 #### Parameters
 
 * **action**: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
-* **detect**: Automatically detect organization. Accepted values are `false` and `true`.
-* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+* **detect**: Automatically detect the organization. Accepted values are `false` and `true`.
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
 * **pool-name**: Filter the list with a matching pool name.
 * **pool-type**: Filter the list with the type of pool. Accepted values are `automation` and `deployment`.
 
@@ -187,8 +185,8 @@ az pipelines pool show --id
 
 * **id** or **pool-id**: (Required) ID of the pool to list the details.
 * **action**: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
-* **detect**: Automatically detect organization. Accepted values are `false` and `true`.
-* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+* **detect**: Automatically detect the organization. Accepted values are `false` and `true`.
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 
@@ -235,14 +233,14 @@ az pipelines queue list [--action {manage, none, use}]
 #### Parameters
 
 * **action**: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
-* **detect**: Automatically detect organization. Accepted values are `false` and `true`.
-* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-* **project** or **p**: The name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. This process is required if not configured as default or picked up via git config.
-* **queue-name**: Filter the list with matching queue name regex (for example *ubuntu* for a queue named *Hosted Ubuntu 1604*).
+* **detect**: Automatically detect the organization. Accepted values are `false` and `true`.
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
+* **project** or **p**: The name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. This process is required if it's not configured as default or picked up via git config.
+* **queue-name**: Filter the list with a matching queue name regex (for example: *ubuntu* for a queue named *Hosted Ubuntu 1604*).
 
 #### Example
 
-The following example lists all queues in table format. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example lists all queues in table format. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`.
 
 ```azurecli
 az pipelines queue list --output table
@@ -274,9 +272,9 @@ az pipelines queue show --id
 
 * **id** or **queue-id**: ID of the agent queue to get information about.
 * **action**: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
-* **detect**: Automatically detect organization. Accepted values are `false` and `true`.
-* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-* **project** or **p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+* **detect**: Automatically detect the organization. Accepted values are `false` and `true`.
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
+* **project** or **p**: Name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. This process is required if it's not configured as default or picked up via git config.
 
 #### Example
 
@@ -367,9 +365,9 @@ When you understand how security works for agent pools, you can better control t
 
 | Role on an agent pool in Organization Settings | Purpose |
 |------|---------|
-| Reader | Members of this role can view the agent pool and agents. You typically use this role to add operators that are responsible for monitoring the agents and their health.  |
-| Service Account | Members of this role can use the organization agent pool to create a project agent pool in a project. If you follow the previous guidelines to create new project agent pools, you typically don't have to add any members here. |
-| Administrator | In addition to all the above permissions, members of this role can register or unregister agents from the organization agent pool. They can also refer to the organization agent pool when they create a project agent pool in a project. They can also manage membership for all roles of the organization agent pool. A user who creates an organization agent pool is automatically assigned the Administrator role for that pool. |
+| **Reader** | Members of this role can view the agent pool and agents. You typically use this role to add operators that are responsible for monitoring the agents and their health.  |
+| **Service Account** | Members of this role can use the organization agent pool to create a project agent pool in a project. If you follow the previous guidelines to create new project agent pools, you typically don't have to add any members here. |
+| **Administrator** | In addition to all the above permissions, members of this role can register or unregister agents from the organization agent pool. They can also refer to the organization agent pool when they create a project agent pool in a project. They can also manage membership for all roles of the organization agent pool. A user who creates an organization agent pool is automatically assigned the **Administrator** role for that pool. |
 
 The **All agent pools** node in the **Agent Pools** tab controls the security of *all* organization agent pools. Role memberships for individual organization agent pools are automatically inherited from those of the **All agent pools** node. By default, Azure DevOps Server administrators are also administrators of the **All agent pools** node when using Azure DevOps Server.
 
@@ -379,20 +377,20 @@ Roles are also defined on each project agent pool. Membership in these roles gov
 
 | Role on an agent pool in Project Settings | Purpose |
 |------|---------|
-| Reader | Members of this role can view the project agent pool. You typically use this role to add operators that monitor the build and deployment jobs in that project agent pool.  |
-| User | Members of this role can use the project agent pool when they author pipelines. |
-| Administrator | In addition to all the above operations, members of this role can manage membership for all roles of the project agent pool. A user who creates an organization agent pool is automatically assigned the Administrator role for that pool.
+| **Reader** | Members of this role can view the project agent pool. You typically use this role to add operators that monitor the build and deployment jobs in that project agent pool.  |
+| **User** | Members of this role can use the project agent pool when they author pipelines. |
+| **Administrator** | In addition to all the above operations, members of this role can manage membership for all roles of the project agent pool. A user who creates an organization agent pool is automatically assigned the **Administrator** role for that pool. |
 
 ::: moniker range="azure-devops"
 
 #### Pipeline permissions
 
-Pipeline permissions control which YAML pipelines are authorized to use an agent pool. Pipeline permissions don't restrict access from Classic pipelines.
+Pipeline permissions control which YAML pipelines are authorized to use an agent pool. Pipeline permissions don't restrict access from classic pipelines.
 
 Choose from one of the following processes:
 
 * Open access for all pipelines to use the agent pool from the more options at top-right corner of the **Pipeline permissions** section in security tab of an agent pool.
-* Lock down the agent pool and allow only selected YAML pipelines to use it. If any other YAML pipeline refers to the agent pool, an authorization request is raised, which an agent pool Administrator must approve. This process doesn't limit access from Classic pipelines.
+* Lock down the agent pool and allow only selected YAML pipelines to use it. If any other YAML pipeline refers to the agent pool, an authorization request is raised, which an agent pool **Administrator** must approve. This process doesn't limit access from Classic pipelines.
 
 :::image type="content" source="media/agent-pools-pipeline-permissions.png" alt-text="Screenshot of the pipeline permissions user experience for an agent pool.":::
 
@@ -402,7 +400,7 @@ Pipeline permissions for the *Azure Pipelines* agent pool can't be configured, b
 
 ::: moniker range="azure-devops"
 
-The **Security** action in the **Agent pools** tab controls the security of *all* project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from what you define here. By default, the following groups are added to the Administrator role of **All agent pools**: Build Administrators, Release Administrators, and Project Administrators.
+The **Security** action in the **Agent pools** tab controls the security of *all* project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from what you define here. By default, the following groups are added to the **Administrator** role of **All agent pools**: **Build Administrators**, **Release Administrators**, and **Project Administrators**.
 
 ::: moniker-end
 
@@ -469,7 +467,7 @@ Ask the owner of your Azure DevOps organization to grant you permission to use t
 
 The Azure Pipelines pool provides all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or need to run more jobs in parallel, then you can either:
 
-* [Host your own agents on infrastructure that you manage](agents.md).
-* [Buy more parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost).
+* [Host your own agents on infrastructure that you manage](agents.md)
+* [Buy more parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 
 ::: moniker-end
