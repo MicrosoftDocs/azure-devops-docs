@@ -352,7 +352,7 @@ The agent communicates with Azure Pipelines or Azure DevOps Server. It determine
 All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows you to configure the agent to different topologies as shown by the following examples.
 
 ::: moniker range="< azure-devops"
-:::image type="content" source="media/agent-topologies-tfs.pn" alt-text="Graphic that shows agent topologies in on-premises installations." lightbox= "media/agent-topologies-tfs.pn":::
+:::image type="content" source="media/agent-topologies-tfs.png" alt-text="Graphic that shows agent topologies in on-premises installations." lightbox= "media/agent-topologies-tfs.png":::
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -371,9 +371,9 @@ Here's a common communication pattern between the agent and Azure Pipelines or A
 
 1. The agent discards the job-specific `OAuth` token after the job is completed, and then checks if there's a new job request using the listener OAuth token.
 
-The payload of the messages exchanged between the agent and Azure Pipelines or Azure DevOps Server are secured by using asymmetric encryption. 
+The payload of the messages exchanged between the agent and Azure Pipelines or Azure DevOps Server are secured by using asymmetric encryption.
 
-Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before it sends it to the agent. The agent decrypts the job content by using its private key. 
+Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before it sends it to the agent. The agent decrypts the job content by using its private key.
 
 This method secures secrets stored in pipelines or variable groups when exchanged with the agent.
 
@@ -427,7 +427,7 @@ After you configure the agent, we recommend you first try it in interactive mode
 * **As an interactive process with automatic sign in enabled**: In some cases, you might need to run the agent interactively for production use (for example: to run UI tests). When you configure an agent to run in this mode, the screen saver is disabled. Some domain policies might prevent you from enabling automatic sign in or disabling the screen saver. In such cases, you might need to seek an exemption from the domain policy, or run the agent on a workgroup computer where the domain policies don't apply.
 
    > [!NOTE]
-   > There are security risks when you enable automatic sign in or disable the screen saver. Other users might be able to access the computer and use the account that automatically signs in. If you configure the agent to run this way, you must ensure the computer is physically protected (for example: located in a secure facility). 
+   > There are security risks when you enable automatic sign in or disable the screen saver. Other users might be able to access the computer and use the account that automatically signs in. If you configure the agent to run this way, you must ensure the computer is physically protected (for example: located in a secure facility).
    >
    > If you use remote desktop to access a computer on which an agent is running with automatic sign in, closing the remote desktop causes the computer to lock. Any UI tests that run on this agent might fail. To avoid this issue, use the [`tscon`](/windows-server/administration/windows-commands/tscon) command to disconnect from remote desktop. Refer to the following example:
    >
@@ -457,7 +457,7 @@ If you run a self-hosted agent interactively, or if there's a newer *major* vers
 
 1. Navigate to **Project settings** > **Agent pools**.
 
-   :::image type="content" source="media/agent-queues-tab/agent-queues.png" alt-text="Screenshot that shows how to select Agent pools." lightbox= "media/agent-queues-tab/agent-queues.png":::
+   :::image type="content" source="media/agent-queues-tab/agent-queues.png" alt-text="Screenshot that shows how to find and select Agent pools." lightbox= "media/agent-queues-tab/agent-queues.png":::
 
 1. Select your agent pool and choose **Update all agents**.
 

@@ -17,4 +17,4 @@ ms.date: 08/07/2020
 
    ![Choose Agent pools.](../../media/agent-pools-tab/agent-pools-2020.png)
 
-:::image type="content" source="../../media/agent-pools-tab/agent-pools-2020.png" alt-text="Screenshot that shows how to select Agent pools." lightbox= "../../media/agent-pools-tab/agent-pools-2020.png":::
+:::image type="content" source="../../media/agent-pools-tab/agent-pools-2020.png" alt-text="Screenshot that shows how to go to and select Agent pools." lightbox= "../../media/agent-pools-tab/agent-pools-2020.png":::

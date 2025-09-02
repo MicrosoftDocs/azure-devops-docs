@@ -9,4 +9,4 @@ ms.date: 02/12/2020
 
 Go to your project and select **Project settings** > **Agent pools**.
 
-:::image type="content" source="../../media/agent-queues-tab/agent-queues.png" alt-text="Screenshot that shows how to select Agent pools." lightbox= "../../media/agent-queues-tab/agent-queues.png":::
+:::image type="content" source="../../media/agent-queues-tab/agent-queues.png" alt-text="Screenshot that shows how to select the option for Agent pools." lightbox= "../../media/agent-queues-tab/agent-queues.png":::
