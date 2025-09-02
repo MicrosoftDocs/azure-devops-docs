@@ -21,8 +21,6 @@ Learn how to establish a seamless connection between Power BI and Azure DevOps u
 
 [!INCLUDE [analytics note](includes/analytics-views-warning.md)]
 
-## Overview
-
 The Power BI Data Connector provides a direct connection to Azure DevOps Analytics, allowing you to do the following tasks:
 
 - Import Analytics views into Power BI Desktop
@@ -58,10 +56,6 @@ Ensure you meet the following requirements before connecting Power BI to Azure D
 ::: moniker-end
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
-
-## Connect to Analytics views
-
-Follow these steps to connect Power BI Desktop to your Azure DevOps Analytics views:
 
 [!INCLUDE [connect to an analytics view](../includes/connect-analytics-view.md)]
 
