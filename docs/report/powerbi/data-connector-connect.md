@@ -109,6 +109,8 @@ To get the most out of your Power BI and Analytics integration:
 - Monitor report usage and performance
 - Maintain security and access controls
 
+<a id="q-a"></a>
+
 ## Troubleshooting
 
 ### Common error scenarios
