@@ -56,6 +56,8 @@ You can customize the following aspects of board cards:
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing how to open board settings.](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
+<a id="fields">  </a>
+
 ## Add fields to cards
 
 Display relevant fields on cards to enable quick viewing and editing without opening work items.
@@ -94,6 +96,9 @@ Use style rules to highlight cards based on field values. Cards change color aut
 | Blocked work | `Blocked = Yes` |
 | Feature area focus | `Area Path Under Fabrikam\Mobile` |
 
+<a id="define-style-rules-to-highlight-cards">  </a>
+<a id="style-rule">  </a>
+
 ### Create style rules
 
 1. In your board settings, select **Styles** > **Add styling rule**.
@@ -109,6 +114,8 @@ Use style rules to highlight cards based on field values. Cards change color aut
 3. Use the actions menu (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) to **Clone** or **Delete** rules.
 
 4. Select **Save**.
+
+<a id="assign-tag-colors">  </a>
 
 ## Set tag colors
 
@@ -146,6 +153,8 @@ Enabled annotations appear as numbered icons on cards:
 > [!NOTE]
 > Disabling an annotation also disables the ability to add those items directly from the board.
 
+<a id="configure-inline-tests">  </a>
+
 ## Configure tests
 
 Control how inline tests are organized when created from boards.
@@ -161,6 +170,8 @@ Control how inline tests are organized when created from boards.
     > ![Screenshot of test configuration options.](media/customize-cards/settings-tests.png)  
 
 3. Select **Save**.
+
+<a id="reorder-cards">  </a>
 
 ## Configure card reordering
 
