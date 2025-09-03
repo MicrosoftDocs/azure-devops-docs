@@ -18,11 +18,11 @@ ms.date: 09/03/2025
 
 Delivery Plans provide visual dependency tracking for work items linked with **Predecessor/Successor** relationships. Dependency visualization helps you identify scheduling conflicts and manage cross-team dependencies effectively.
 
-:::image type="content" source="media/dependencies/dependencies-with-without-issues.png" alt-text="Screenshot of delivery plan showing work items with dependencies and dependency issues.":::
-
 Cards display dependency status icons:
 - :::image type="icon" source="media/dependencies/dependency-green-icon.png" border="false"::: **Green icon**: No dependency scheduling issues
 - :::image type="icon" source="media/dependencies/dependency-red-icon.png" border="false"::: **Red icon**: Dependency scheduling conflicts detected
+
+:::image type="content" source="media/dependencies/dependencies-with-without-issues.png" alt-text="Screenshot of delivery plan showing work items with dependencies and dependency issues.":::
 
 ## Prerequisites
 
@@ -40,9 +40,9 @@ For complete setup requirements, see [Add or edit a Delivery Plan](add-edit-deli
 
 ## View dependency lines
 
-1. [Open your Delivery Plan](add-edit-delivery-plan.md#open-plans) from **Boards** > **Delivery Plans**.
+1. Open your Delivery Plan from **Boards** > **Delivery Plans**.
 
-2. Select the top or bottom edge of a work item card to show its dependency lines. Select again or click elsewhere to hide the lines.
+2. Select the top or bottom edge of a work item card to show its dependency lines. Select again or select elsewhere to hide the lines.
 
    **No scheduling conflicts** (black lines):
    :::image type="content" source="media/dependencies/dependency-lines-no-issue.png" alt-text="Screenshot of dependency lines showing no scheduling issues.":::
@@ -78,9 +78,9 @@ Dependency conflicts occur when a successor work item is scheduled to complete b
 
 **To resolve conflicts:**
 
-1. **Review scheduling**: Check the **Target Date** or **Iteration Path** end dates for conflicting work items
-2. **Adjust timing**: Modify work item dates or iteration assignments to resolve scheduling conflicts
-3. **Re-evaluate dependencies**: Consider if dependency relationships are still accurate
+- **Review scheduling**: Check the **Target Date** or **Iteration Path** end dates for conflicting work items
+- **Adjust timing**: Modify work item dates or iteration assignments to resolve scheduling conflicts
+- **Re-evaluate dependencies**: Consider if dependency relationships are still accurate
 
 > [!NOTE]
 > Dependency end dates are determined by either the work item's **Target Date** or the **End Date** of its assigned **Iteration Path**.
