@@ -143,9 +143,9 @@
         "pipelines/tasks/**": "sdanie",
         "pipelines/test/**": "jeom",
         "service-hooks/**": "aaronha",
-        "repos/tfvc/**": "Battle-born",
-        "repos/get-started/**": "Battle-born",
-        "repos/git/**": "Battle-born",
+        "repos/tfvc/**": "alexpysanets",
+        "repos/get-started/**": "alexpysanets",
+        "repos/git/**": "alexpysanets",
         "test/**": "jeom"
       },
       "author": {
