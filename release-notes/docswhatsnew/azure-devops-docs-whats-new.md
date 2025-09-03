@@ -112,9 +112,7 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2025 through Augus
 
 ### New articles
 
-- [Quickstart: Create a Managed DevOps Pool using a Bicep template](/azure/devops/managed-devops-pools/quickstart-bicep)
-
-*Thanks to Microsoft Azure MVP [John Lokerse](https://mvp.microsoft.com/en-US/MVP/profile/9d148c3d-6dde-4fbf-bbc6-b2e67b27c28b) for contributing this article and contributing the Bicep snippets to the Managed DevOps Pools configuration articles listed in the following section. See the pull request for John's contribution at [Added Azure Bicep tab, Bicep quickstart and AVM references](https://github.com/MicrosoftDocs/azure-devops-docs/pull/14310).*
+- [Quickstart: Create a Managed DevOps Pool using a Bicep template](/azure/devops/managed-devops-pools/quickstart-bicep) - *Thanks to Microsoft Azure MVP [John Lokerse](https://mvp.microsoft.com/en-US/MVP/profile/9d148c3d-6dde-4fbf-bbc6-b2e67b27c28b) for contributing this article and contributing the Bicep snippets to the Managed DevOps Pools configuration articles listed in the following section. See the pull request for John's contribution at [Added Azure Bicep tab, Bicep quickstart and AVM references](https://github.com/MicrosoftDocs/azure-devops-docs/pull/14310).*
 
 ### Updated articles
 
