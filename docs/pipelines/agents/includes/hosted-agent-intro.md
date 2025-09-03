@@ -9,7 +9,7 @@ ms.date: 02/12/2020
 
 If your pipelines are in Azure Pipelines, you can conveniently run your jobs by using a *Microsoft-hosted agent*. With Microsoft-hosted agents, maintenance and upgrades happen automatically.
 
-You always have the latest version of the VM image you specify in your pipeline. Each time you run a pipeline, you get a fresh virtual machine for each job in the pipeline. The virtual machine is discarded after one job, which means any change that a job makes to the virtual machine file system, such as checking out code, will be unavailable on the next job. 
+You always have the latest version of the VM image you specify in your pipeline. Each time you run a pipeline, you get a fresh virtual machine for each job in the pipeline. The virtual machine is discarded after one job, which means any change that a job makes to the virtual machine file system, such as checking out code, is unavailable on the next job.
 
 Microsoft-hosted agents can run jobs [directly on the VM](../../process/phases.md) or [in a container](../../process/container-phases.md).
 

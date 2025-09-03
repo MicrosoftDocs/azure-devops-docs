@@ -38,7 +38,7 @@ macOS: OpenSSL certificate store for agent version 2.124.0 or below
        Keychain for agent version 2.125.0 or above
 ```
 
-You can easily verify whether the certificate is installed correctly by running a few commands. You should be good as long as the SSL handshake finishes correctly (even if you get a 401 for the request).
+You can easily verify whether the certificate is installed correctly by running a few commands. As long as the SSL handshake finishes correctly (even if you get a 401 for the request), the installation was successful.
 
 ```
 Windows: PowerShell Invoke-WebRequest -Uri https://corp.tfs.com/tfs -UseDefaultCredentials 

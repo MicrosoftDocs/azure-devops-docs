@@ -62,12 +62,9 @@ The following agent pools are provided by default:
 
 ::: moniker range="azure-devops"
 
-* **Azure Pipelines-hosted pool**: This type of pool comes with various Windows, Linux, and macOS images. For a complete list of the available images and their installed software, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
+* **Azure Pipelines**: This hosted pool comes with various Windows, Linux, and macOS images. For a complete list of the available images and their installed software, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
 
-   > [!NOTE]
-   > The Azure Pipelines-hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines-hosted pool. In some circumstances, you might still see the old pool names, but behind the scenes, the hosted jobs run by using the Azure Pipelines pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
-
-By default, all contributors in a project are members of the **User** role on hosted pools. This designation allows every contributor in a project to author and run pipelines by using Microsoft-hosted agents.
+By default, all contributors in a project are members of the **User** role on hosted pools. This designation allows every contributor in a project to author and run pipelines with Microsoft-hosted agents.
 
 ::: moniker-end
 
@@ -317,7 +314,7 @@ Here are some typical situations when you might want to create self-hosted agent
 
 You're a member of a project and you want to use a set of machines that your team owns to run build and deployment jobs.
 
-1. Make sure that you have permissions to create pools in your project. In **Project settings**, go to the **Agent pools** pane, and select **Security**. In order to create new pools, you must have the **Administrator** role.
+1. Make sure that you have permissions to create pools in your project. In **Project settings**, go to the **Agent pools** pane, and select **Security**. To create new pools, you must have the **Administrator** role.
 1. Select **Add pool** and choose the option to create a new pool.
 1. [Install](agents.md#install) and configure agents to be part of the new agent pool.
 
@@ -338,7 +335,7 @@ You want to share a set of agent machines with some, but not all, of your projec
 
 You're a member of a project and want to use a set of machines that your team owns to run build and deployment jobs.
 
-1. Make sure you have permissions to create pools in your project. In **Project settings**, go to the **Agent pools** pane, and select **Security**. In order to create new pools, you must have the **Administrator** role.
+1. Make sure you have permissions to create pools in your project. In **Project settings**, go to the **Agent pools** pane, and select **Security**. To create new pools, you must have the **Administrator** role.
 1. Select **Add pool** and choose the option to create a **new** pool.
 1. [Install](agents.md#install) and configure agents to be part of the new agent pool.
 
