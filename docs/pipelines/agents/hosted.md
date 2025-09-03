@@ -41,7 +41,7 @@ The **windows-2019** image is the default image for classic build pipelines. For
 
 #### Windows image updates
 
-* The `windows-latest` is migrating from Windows Server 2022 to Windows Server 2025 beginning September 2, 2025 with a completion date of September 30, 2025.
+* The `windows-latest` is migrating from Windows Server 2022 to Windows Server 2025 beginning September 2, 2025 with a completion date of September 30, 2025. For more information see [Windows-latest workflows will use Windows Server 2025](https://github.com/actions/runner-images/issues/12677).
 * [Windows Server 2025 with Visual Studio 2022 image is GA](https://aka.ms/azdo-windows)
 * [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
 * [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
