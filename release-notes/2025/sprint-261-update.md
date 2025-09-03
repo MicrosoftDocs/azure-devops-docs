@@ -9,7 +9,7 @@ description: Newly generated OAuth client secrets will be shown only at time of 
 
 # Newly generated OAuth client secrets will be shown only at time of creation  
 
-With this release we are changing how Azure DevOps displays OAuth client secrets. Now, newly generated client secrets will be shown only once at the time of creation. This means that they will no longer be retrievable the UI or API. This change will reduce the risk of accidental exposure and encourages secure storage practices. 
+With this release we are changing how Azure DevOps displays OAuth client secrets. Now, newly generated client secrets will be shown only once at the time of creation. This means that they will no longer be retrievable via the UI or API. This change will reduce the risk of accidental exposure and encourages secure storage practices. 
 
 Check out the release notes for details.
 
