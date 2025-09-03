@@ -49,11 +49,9 @@ You can customize the following aspects of board cards:
 
 ## Access board settings
 
-1. [Open your board](kanban-quickstart.md) and ensure you have team administrator permissions.
+1. Open your board and select the backlog level you want to customize (Product backlog, Features, Epics).
 
-2. Select the backlog level you want to customize (Product backlog, Features, Epics).
-
-3. Select the :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: **Settings** icon to open board configuration.
+2. Select :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: **Settings**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing how to open board settings.](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -62,7 +60,7 @@ You can customize the following aspects of board cards:
 
 Display relevant fields on cards to enable quick viewing and editing without opening work items.
 
-1. In board settings, select **Fields** and choose the work item type to configure.
+1. In your board settings, select **Fields** and choose the work item type to configure.
 
    :::image type="content" source="media/customize-cards/settings-fields-142.png" alt-text="Screenshot of Fields settings for User Story work item type.":::
 
@@ -98,26 +96,25 @@ Use style rules to highlight cards based on field values. Cards change color aut
 
 ### Create style rules
 
-1. In board settings, select **Styles** > **Add styling rule**.
-
-2. Choose a card color and define the criteria:
+1. In your board settings, select **Styles** > **Add styling rule**.
 
    :::image type="content" source="../sprints/media/customize/taskboard-styles-priority.png" alt-text="Screenshot of style rule configuration dialog.":::
 
-3. Set up criteria using query-like syntax:
+2. Choose a card color and define the criteria:
+   Set up criteria using query-like syntax:
    - All clauses use AND logic
    - Rules apply in the order listed
    - Higher rules take precedence
 
-4. Use the actions menu (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) to **Clone** or **Delete** rules.
+3. Use the actions menu (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) to **Clone** or **Delete** rules.
 
-5. Select **Save** when finished.
+4. Select **Save**.
 
 ## Set tag colors
 
 Assign colors to specific tags for visual categorization.
 
-1. In board settings, select **Tag colors** > **Add tag color**.
+1. In your board settings, select **Tag colors** > **Add tag color**.
 
 2. Choose the tag and its display color:
 
@@ -132,9 +129,8 @@ Assign colors to specific tags for visual categorization.
 
 Annotations display icons on cards showing related items like tasks, tests, or GitHub commits.
 
-1. In board settings, select **Annotations**.
-
-2. Enable annotations you want to use:
+1. In your board settings, select **Annotations**.
+2. Check the box next to the annotations that you want to use.
 
    :::image type="content" source="media/customize-cards/annotate-settings-154.png" alt-text="Screenshot of annotation settings showing available options.":::
 
@@ -154,7 +150,7 @@ Enabled annotations appear as numbered icons on cards:
 
 Control how inline tests are organized when created from boards.
 
-1. In board settings, select **Tests** (requires Test annotation to be enabled).
+1. In your board settings, select **Tests** (requires Test annotation to be enabled).
 
 2. Choose test organization options:
    - Create new test plan for each test
@@ -170,7 +166,7 @@ Control how inline tests are organized when created from boards.
 
 Control how card order is maintained when moving cards between columns.
 
-1. In board settings, select **Card reordering**.
+1. In your board settings, select **Card reordering**.
 
 2. Choose the reordering behavior:
    - **Maintain backlog priority order**
@@ -183,8 +179,6 @@ Control how card order is maintained when moving cards between columns.
 
 ::: moniker range=">= azure-devops-2022"
 ### Move cards to specific positions
-
-With the **New Boards Hub** enabled, you can move cards to specific column positions:
 
 1. Select **···** (More actions) on a work item card.
 2. Choose **Move to position**.
