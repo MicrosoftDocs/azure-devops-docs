@@ -41,7 +41,7 @@ The **windows-2019** image is the default image for classic build pipelines. For
 
 #### Windows image updates
 
-* The `windows-latest` is migrating from Windows Server 2022 to Windows Server 2025 beginning September 2, 2025 with a completion date of September 30, 2025. For more information see [Windows-latest workflows will use Windows Server 2025](https://github.com/actions/runner-images/issues/12677).
+* The `windows-latest` label is migrating from Windows Server 2022 to Windows Server 2025 beginning September 2, 2025 with a completion date of September 30, 2025. For more information see [Windows-latest workflows will use Windows Server 2025](https://github.com/actions/runner-images/issues/12677).
 * [Windows Server 2025 with Visual Studio 2022 image is GA](https://aka.ms/azdo-windows)
 * [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
 * [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
@@ -84,8 +84,8 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 #### macOS images updates
 
-* The macOS 13 Ventura image will be deprecated starting September 1, 2025, with plans for retirement on November 14, 2025. For more information, see [Upcoming Updates for Azure Pipelines Agents Images - mac-OS 13 Ventura](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
-* [[macOS] Starting August 11, 2025, if your workflow is running on a macOS-15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
+* The macOS 13 Ventura image will be deprecated starting September 1, 2025, with plans for retirement on November 14, 2025. For more information, see [Upcoming Updates for Azure Pipelines Agents Images - macOS 13 Ventura](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
+* [[macOS] Starting August 11, 2025, if your workflow is running on a macOS 15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
 * The macOS 15 Sequoia hosted agent image is in GA.
  * The `macOS-latest` label still refers to `macOS-14`. The migration of `macos-latest` to refer to `macOS-15` will begin August 4, 2025, with a planned completion date of August 30, 2025. For more information, see [[macOS] macos-latest YAML-label will use macos-15 in August 2025](https://github.com/actions/runner-images/issues/12520).
 * [[macOS] Xcode 15.4 will be removed from macOS15 images on May 29th, 2025](https://github.com/actions/runner-images/issues/12195)
