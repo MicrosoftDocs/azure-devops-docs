@@ -1,8 +1,8 @@
 ---
-title: Create and manage agent pools
+title: Create and Manage Agent Pools
 ms.topic: conceptual
 ms.custom: devx-track-azurecli
-description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Azure DevOps Server.
+description: Learn how to organize agents into pools for builds and releases in Azure Pipelines and Azure DevOps Server.
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.date: 08/30/2024
 monikerRange: '<= azure-devops'
@@ -62,7 +62,7 @@ The following agent pools are provided by default:
 
 ::: moniker range="azure-devops"
 
-* **Azure Pipelines-hosted pool**: This comes with various Windows, Linux, and macOS images. For a complete list of the available images and their installed software, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
+* **Azure Pipelines-hosted pool**: This type of pool comes with various Windows, Linux, and macOS images. For a complete list of the available images and their installed software, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
 
    > [!NOTE]
    > The Azure Pipelines-hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines-hosted pool. In some circumstances, you might still see the old pool names, but behind the scenes, the hosted jobs run by using the Azure Pipelines pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
@@ -369,7 +369,7 @@ When you understand how security works for agent pools, you can better control t
 | **Service Account** | Members of this role can use the organization agent pool to create a project agent pool in a project. If you follow the previous guidelines to create new project agent pools, you typically don't have to add any members here. |
 | **Administrator** | In addition to all the above permissions, members of this role can register or unregister agents from the organization agent pool. They can also refer to the organization agent pool when they create a project agent pool in a project. They can also manage membership for all roles of the organization agent pool. A user who creates an organization agent pool is automatically assigned the **Administrator** role for that pool. |
 
-The **All agent pools** node in the **Agent Pools** tab controls the security of *all* organization agent pools. Role memberships for individual organization agent pools are automatically inherited from those of the **All agent pools** node. By default, Azure DevOps Server administrators are also administrators of the **All agent pools** node when using Azure DevOps Server.
+The **All agent pools** node in the **Agent Pools** tab controls the security of *all* organization agent pools. Role memberships for individual organization agent pools are automatically inherited from the **All agent pools** node. By default, Azure DevOps Server administrators are also administrators of the **All agent pools** node when using Azure DevOps Server.
 
 ### Project-level security settings
 

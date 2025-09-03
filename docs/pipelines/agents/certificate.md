@@ -1,5 +1,5 @@
 ---
-title: Run the agent with a self-signed certificate
+title: Run an Agent with a Self-Signed Certificate
 description: Learn how to run the build and release an agent with a self-signed certificate for Azure Pipelines and Azure DevOps Server.
 ms.topic: conceptual
 ms.assetid: 09E36E4D-D94B-4F5B-BE4D-9E7B4E7B68E2
@@ -8,13 +8,13 @@ ms.date: 08/05/2025
 monikerRange: '< azure-devops'
 ---
 
-# Run the agent with a self-signed certificate
+# Run an agent with a self-signed certificate
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 This article explains how you can run a self-hosted agent with a self-signed certificate for Azure Pipelines and Azure DevOps Server.
 
-## Work with SSL server certificate
+## Work with an SSL server certificate
 
 ```
 Enter server URL > https://corp.tfs.com/tfs
@@ -47,7 +47,7 @@ macOS: curl -v https://corp.tfs.com/tfs (agent version 2.124.0 or below, curl ne
        curl -v https://corp.tfs.com/tfs (agent version 2.125.0 or above, curl needs to be built for Secure Transport)
 ```
 
-If you can't successfully install the certificate into your machine's certificate store for various reasons (like you don't have the correct permissions or you are on a customized Linux machine) the agent version 2.125.0 or above has the ability to ignore an SSL server certificate validation error.
+If you can't successfully install the certificate into your machine's certificate store for various reasons (like you don't have the correct permissions or you are on a customized Linux machine), the agent version 2.125.0 or above has the ability to ignore an SSL server certificate validation error.
 
 > [!IMPORTANT]
 >
@@ -63,13 +63,13 @@ Pass `--sslskipcertvalidation` during agent configuration:
 >
 > To use the `--sslskipcertvalidation` flag on Linux and macOS, the `libcurl` library on your Linux or macOS machine must be built with OpenSSL. Learn more about the [`libcurl` library](https://github.com/dotnet/corefx/issues/9728).
 
-### Git get sources fails with SSL certificate problem (Windows agent only)
+### Problem: Git get sources command fails with an SSL certificate (Windows agent only)
 
 We ship command-line Git as part of the Windows agent and use this copy of Git for all Git-related operations. When you have a self-signed SSL certificate for your on-premises Azure DevOps Server machine, configure the shipped Git to allow the self-signed SSL certificate.
 
 There are two ways to solve this problem:
 
-1. Set the following git config at a global level by the agent's run as user.
+1. Set the following `git config` at a global level by the agent's run as user.
 
    ```bash
    git config --global http."https://tfs.com/".sslCAInfo certificate.pem
@@ -77,7 +77,7 @@ There are two ways to solve this problem:
 
    > [!NOTE]
    >
-   > Setting a system-level Git config isn't reliable on Windows. The system `.gitconfig` file is stored with the copy of Git we packaged. The packaged Git is replaced every time the agent is upgraded to a new version.
+   > Setting a system-level `git config` isn't reliable on Windows. The system `.gitconfig` file is stored with the copy of Git we packaged. The packaged Git is replaced every time the agent is upgraded to a new version.
 
 2. Enable git to use `SChannel` during configuration when you're using a 2.129.0 or later version agent. Pass `--gituseschannel` during agent configuration.
 

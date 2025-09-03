@@ -99,7 +99,7 @@ All official Azure DevOps tasks use Node 20 as a universal handler. However, cus
   * `vsts-agent-\`: Packages that support Nodes 6 and 10.
   * `pipelines-agent-\`: Packages that don't support Nodes 6 and 10. In the future, this version of the package becomes the default agent package.
 
-  If you know that you aren't using any tasks that are dependent on Nodes 6 or 10, and you don't want Nodes 6 or 10 installed on your agent machine, you can install the agent from the [Alternate Agent Downloads section in this documentation](https://github.com/microsoft/azure-pipelines-agent/releases).
+  If aren't using any tasks that require Nodes 6 or 10, and you don't want Nodes 6 or 10 installed on your agent machine, you can install the agent from [Alternate Agent Downloads in this documentation](https://github.com/microsoft/azure-pipelines-agent/releases).
 
 ## Azure Virtual Machine Scale Set agents
 
@@ -365,7 +365,7 @@ Here's a common communication pattern between the agent and Azure Pipelines or A
 
    Once registration is complete, the agent downloads a `listener OAuth token` and uses it to listen to the job queue.
 
-1. The agent listens to see if a new job request is posted for it in the job queue in Azure Pipelines or Azure DevOps Server by using an HTTP long poll. When a job is available, the agent downloads the job and a `job-specific OAuth token`. Azure Pipelines/Azure DevOps Server generates a short-lived token for the scoped identity [specified in the pipeline](../build/options.md).
+1. The agent listens to see if a new job request is posted in the job queue in Azure Pipelines or Azure DevOps Server by using an HTTP long poll. When a job is available, the agent downloads the job and a `job-specific OAuth token`. Azure Pipelines/Azure DevOps Server generates a short-lived token for the scoped identity [specified in the pipeline](../build/options.md).
 
    The agent uses the token to access or modify resources on Azure Pipelines or Azure DevOps Server within that job (for example, to access source code or upload test results).
 
