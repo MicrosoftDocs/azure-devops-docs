@@ -147,8 +147,8 @@ Enabled annotations appear as numbered icons on cards:
 
 | Annotation Type | Example |
 |----------------|---------|
-| Tasks | ![Task annotations enabled.](media/annotate-task.png) |
-| Tests | ![Test annotations enabled.](media/annotate-test.png) |
+| Tasks | ![Screenshot of task annotations enabled.](media/annotate-task.png) |
+| Tests | ![Screenshot of test annotations enabled.](media/annotate-test.png) |
 
 > [!NOTE]
 > Disabling an annotation also disables the ability to add those items directly from the board.
