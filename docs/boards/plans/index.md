@@ -45,7 +45,7 @@ Portfolio management in Azure Boards enables executives and program managers to 
 
 Portfolio views help leaders understand delivery progress, identify bottlenecks, and make informed decisions about resource allocation and priorities.
 
-Learn more: [Manage portfolios](portfolio-management.md)
+For more information, see [Manage portfolios](portfolio-management.md).
 
 ### Delivery plans
 
@@ -59,7 +59,7 @@ Delivery Plans provide timeline-based coordination for multi-team environments. 
 
 Delivery Plans help program managers coordinate releases, identify scheduling conflicts, and ensure aligned execution across development teams.
 
-Learn more: [Review delivery plans](review-team-plans.md)
+For more information, see [Review delivery plans](review-team-plans.md).
 
 ### Multi-team dashboards
 
@@ -100,11 +100,15 @@ Use multi-team dashboards when you need:
 
 ## Scaling considerations
 
+When implementing Azure Boards at scale, consider these organizational, technical, and cultural factors that affect success.
+
 ### Organizational factors
 - **Team structure**: How teams are organized and their relationships
 - **Communication patterns**: How information flows between teams
 - **Decision-making processes**: Who makes what decisions and when
 - **Reporting needs**: What visibility different stakeholders require
+
+For comprehensive guidance on scaling organizational practices, see [Practices that scale](practices-that-scale.md).
 
 ### Technical factors
 - **Work item hierarchies**: How work is broken down and organized
@@ -112,11 +116,15 @@ Use multi-team dashboards when you need:
 - **Iteration alignment**: Whether teams share sprint schedules or operate independently
 - **Integration needs**: How Azure Boards connects with other development tools
 
+To understand cross-team coordination approaches, see [Visibility across teams](visibility-across-teams.md).
+
 ### Cultural factors
 - **Agile maturity**: How comfortable teams are with Agile practices
 - **Collaboration patterns**: How teams work together and share information
 - **Change management**: How the organization adapts to new processes and tools
 - **Continuous improvement**: How teams and the organization learn and evolve
+
+Learn more about fostering the right mindset in [Agile culture and scale](agile-culture.md). For broader organizational change, see [Agile culture](/devops/plan/adopting-agile).
 
 ## Benefits of scaling with Azure Boards
 
@@ -149,19 +157,9 @@ Azure Boards scaling capabilities build upon foundational team practices. Organi
 
 The platform grows with your organization, supporting both simple team workflows and complex organizational scenarios.
 
-## Related content
+Whether you're just beginning to scale or looking to optimize existing practices, these resources provide deeper insights into expanding team structures and optimizing dynamics:
 
-### Conceptual guidance
-- [Visibility across teams](visibility-across-teams.md)   
-- [Agile culture and scale](agile-culture.md)   
-- [Practices that scale](practices-that-scale.md)
+- **Expand team structures**: Learn strategies to [scale Agile to large teams](/devops/plan/scaling-agile) effectively
+- **Optimize team dynamics**: Discover approaches for [creating productive teams](/devops/plan/building-productive-teams) at scale
 
-### Implementation resources
-- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
-- [Manage portfolios](portfolio-management.md)
-- [Review delivery plans](review-team-plans.md)
-
-### Learning resources
-- [Agile culture](/devops/plan/adopting-agile)  
-- [Scale Agile to large teams](/devops/plan/scaling-agile)  
-- [Creating productive teams](/devops/plan/building-productive-teams)
+These resources complement Azure Boards capabilities by addressing the people and process aspects of scaling Agile practices successfully.
