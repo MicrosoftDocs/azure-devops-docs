@@ -10,6 +10,8 @@ ms.topic: quickstart
 
 This article shows you how to create a Managed DevOps Pool using a Bicep template, and run a pipeline in the new pool.
 
+*Thanks to Microsoft Azure MVP [John Lokerse](https://mvp.microsoft.com/en-US/MVP/profile/9d148c3d-6dde-4fbf-bbc6-b2e67b27c28b) for contributing this article and contributing the Bicep snippets to the Managed DevOps Pools configuration articles.*
+
 ## Prerequisites
 
 Before completing the steps in this article, have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
