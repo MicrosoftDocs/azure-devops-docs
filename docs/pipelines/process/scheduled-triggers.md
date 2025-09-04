@@ -25,12 +25,6 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 ## Scheduled triggers
 
 :::zone pivot="pipelines-yaml"
-:::zone-end 
-
-:::zone pivot="pipelines-classic"
-:::zone-end 
-
-:::zone pivot="pipelines-yaml"
 
 > [!IMPORTANT]
 > Scheduled triggers defined using the YAML pipeline settings UI take precedence over YAML scheduled triggers.
