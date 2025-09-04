@@ -106,8 +106,6 @@ landingContent:
         links:
           - text: Secure your analytics & reporting
             url: ../../report/secure-your-analytics-reporting.md
-          - text: Analytics security overview
-            url: ../../report/analytics-security.md
       - linkListType: how-to-guide
         links:
           - text: Set dashboard permissions

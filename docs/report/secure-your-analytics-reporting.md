@@ -2,7 +2,7 @@
 title: Secure your analytics & reporting
 titleSuffix: Azure DevOps
 description: Learn about security concepts, access controls, and best practices for protecting your analytics data and reports in Azure DevOps.
-ms.service: azure-devops-analytics
+ms.subservice: azure-devops
 ms.custom: security
 ms.author: chcomley
 author: chcomley
@@ -21,9 +21,9 @@ Azure DevOps analytics and reporting provide powerful insights into your develop
 
 Analytics and reporting security operates on a multi-layered approach that includes:
 
-- **Control data visibility**: Manage who can view analytics data and which projects they can access. For more information, see [Analytics security](analytics-security.md)
+- **Control data visibility**: Manage who can view analytics data and which projects they can access.
 - **Implement dashboard permissions**: Control access to dashboards and their underlying data. For more information, see [Set dashboard permissions](dashboards/dashboard-permissions.md)
-- **Configure project-level access**: Restrict analytics access based on project membership. For more information, see [Default permissions and access for reporting](../organizations/security/permissions-access.md#reports)
+- **Configure project-level access**: Restrict analytics access based on project membership. For more information, see [Default permissions and access for reporting](../organizations/security/permissions-access.md)
 - **Manage Power BI integration**: Secure connections between Azure DevOps and Power BI. For more information, see [Connect to Power BI Data Connector](powerbi/data-connector-connect.md)
 - **Enable audit and compliance**: Track data access and maintain compliance requirements. For more information, see [Access, export, and filter audit logs](../organizations/audit/azure-devops-auditing.md)
 
@@ -31,7 +31,7 @@ Analytics and reporting security operates on a multi-layered approach that inclu
 
 ### Access levels for reporting
 
-Analytics and reporting capabilities vary by access level. For comprehensive information about default permissions for each access level, see [Default permissions and access for reporting](../organizations/security/permissions-access.md#reports).
+Analytics and reporting capabilities vary by access level. For comprehensive information about default permissions for each access level, see [Default permissions and access for reporting](../organizations/security/permissions-access.md).
 
 | Access Level | Analytics & Reporting Capabilities |
 |--------------|-----------------------------------|
@@ -69,8 +69,6 @@ Analytics security is built on the principle of data visibility inheritance from
 - **Repository access**: Code metrics are filtered based on repository permissions. For more information, see [Set Git repository permissions](../repos/git/set-git-repository-permissions.md)
 - **Pipeline visibility**: Build and release analytics follow pipeline security settings. For more information, see [Set pipeline permissions](../pipelines/policies/set-permissions.md)
 
-For detailed information on how analytics inherits permissions, see [Analytics security](analytics-security.md).
-
 ### Analytics views
 
 Control access to specific data sets through Analytics views. For more information about creating and managing Analytics views, see [Create an Analytics view](analytics/analytics-views-create.md).
@@ -87,7 +85,7 @@ Implement data filtering to protect sensitive information:
 
 - **Configure area path restrictions**: Limit analytics data to specific work item areas. For more information, see [Set work tracking permissions](../organizations/security/set-permissions-access-work-tracking.md)
 - **Apply field-level security**: Hide sensitive work item fields from analytics. For more information, see [Add and modify a field](../organizations/settings/work/add-custom-field.md)
-- **Manage cross-project access**: Control visibility across multiple projects. For more information, see [Analytics security](analytics-security.md)
+- **Manage cross-project access**: Control visibility across multiple projects.
 
 ## Dashboard security
 
@@ -107,7 +105,7 @@ Control who can view, edit, and manage dashboards. For step-by-step instructions
 Different widgets have varying security implications:
 
 - **Query-based widgets**: Inherit security from underlying work item queries. For more information, see [Set permissions on queries](../boards/queries/set-query-permissions.md)
-- **Analytics widgets**: Follow Analytics view permissions and project access. For more information, see [Analytics security](analytics-security.md)
+- **Analytics widgets**: Follow analytics view permissions and project access.
 - **External widgets**: Might require other authentication and data sharing considerations. For more information, see [Security best practices](../organizations/security/security-best-practices.md)
 - **Custom widgets**: Security depends on implementation and data sources. For more information, see [Add, rename, and delete dashboards](dashboards/dashboards.md)
 
@@ -216,7 +214,7 @@ Organization: TechCorp
 
 In this configuration:
 - **Team members** can access analytics only for their assigned projects. For more information, see [Change project-level permissions](../organizations/security/change-project-level-permissions.md)
-- **Shared Services metrics** are visible to all teams for dependency tracking. For more information, see [Analytics security](analytics-security.md)
+- **Shared Services metrics** are visible to all teams for dependency tracking.
 - **Executive dashboard** provides high-level metrics without exposing sensitive project details. For more information, see [Set dashboard permissions](dashboards/dashboard-permissions.md)
 - **Cross-project queries** are restricted based on user permissions. For more information, see [Create an Analytics view](analytics/analytics-views-create.md)
 
