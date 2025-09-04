@@ -54,7 +54,7 @@ Azure Boards supports multiple authentication methods:
 
 ::: moniker range="< azure-devops"
 - **Integrate Active Directory**: Connect on-premises identity integration. For more information, see [Set up groups for use in Azure DevOps Server](/azure/devops/server/admin/setup-ad-groups)
-- **Create local accounts**: Manage server-based user accounts. For more information, see [Add users to Azure DevOps Server](/azure/devops/server/admin/add-users)
+- **Create local accounts**: Manage server-based user accounts
 - **Configure Microsoft Entra ID**: Enable cloud-based identity management. For more information, see [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md)
 ::: moniker-end
 
@@ -110,7 +110,7 @@ Protect sensitive information using these strategies:
 - **Create custom fields** with restricted access that only specific groups can view or edit. For more information, see [Add and modify a field](../organizations/settings/work/add-custom-field.md)
 - **Limit work item type restrictions** to control who can create or modify certain work item types. For more information, see [Customize a work item type](../organizations/settings/work/customize-process-work-item-type.md)
 - **Configure hidden fields** to be invisible to certain user groups. For more information, see [Add and modify a field](../organizations/settings/work/add-custom-field.md)
-- **Set read-only fields** to prevent unauthorized modifications to critical data. For more information, see [Add a rule to a work item type](../organizations/settings/work/add-rule-work-item-type.md)
+- **Set read-only fields** to prevent unauthorized modifications to critical data. For more information, see [Add a rule to a work item type](../organizations/settings/work/custom-rules.md)
 
 ### Compliance features
 
@@ -142,7 +142,7 @@ Protect sensitive information using these strategies:
 - **Handle sensitive information carefully**: Avoid storing credentials or personal data in work items
 - **Manage file attachments**: Implement policies for acceptable file types and sizes
 - **Validate external links**: Approve external URL links in work items
-- **Secure query access**: Ensure queries don't expose unauthorized data. For more information, see [Set permissions for queries and query folders](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-on-queries-and-query-folders)
+- **Secure query access**: Ensure queries don't expose unauthorized data. For more information, see [Set permissions for queries and query folders](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-on-queries-or-query-folders)
 
 ### Monitoring and compliance
 
@@ -184,7 +184,7 @@ Manage security when teams work across projects:
 
 - **Grant cross-project permissions**: Provide specific access to external team members
 - **Control work item linking**: Manage who can create dependencies across projects
-- **Manage shared queries**: Control access to queries that span multiple projects. For detailed configuration steps, see [Set permissions for queries and query folders](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-on-queries-and-query-folders)
+- **Manage shared queries**: Control access to queries that span multiple projects. For detailed configuration steps, see [Set permissions for queries and query folders](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-on-queries-or-query-folders)
 
 ### Contractor and vendor access
 
@@ -204,7 +204,7 @@ Secure access for external contributors. For comprehensive guidance on managing 
 - [ ] [Design area path hierarchy based on security requirements](../organizations/settings/set-area-paths.md)
 - [ ] [Configure team permissions and access boundaries](../organizations/settings/add-teams.md)
 - [ ] [Set work tracking permissions](../organizations/security/set-permissions-access-work-tracking.md) for area paths and iterations
-- [ ] [Configure query folder permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-on-queries-and-query-folders) to control access to shared queries
+- [ ] [Configure query folder permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-on-queries-or-query-folders) to control access to shared queries
 
 ### Ongoing management
 
