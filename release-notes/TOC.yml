@@ -10,6 +10,8 @@
       items:
         - name: "2025"
           items:
+          - name: September 4
+            href: 2025/sprint-261-update.md
           - name: August 11
             href: 2025/sprint-260-update.md
           - name: July 17
@@ -296,6 +298,8 @@
         items:
         - name: "2025"
           items:
+          - name: September 4
+            href: 2025/boards/sprint-261-update.md
           - name: August 11
             href: 2025/boards/sprint-260-update.md
           - name: July 17
@@ -464,6 +468,8 @@
         items:
         - name: "2025"
           items:
+          - name: September 4
+            href: 2025/repos/sprint-261-update.md
           - name: August 11
             href: 2025/repos/sprint-260-update.md
           - name: July 17
@@ -792,6 +798,8 @@
         items:
         - name: "2025"
           items:
+          - name: September 4
+            href: 2025/testplans/sprint-261-update.md
           - name: June 30
             href: 2025/testplans/sprint-258-update.md
           - name: June 16
@@ -914,6 +922,8 @@
         items:
         - name: "2025"
           items:
+          - name: September 4
+            href: 2025/ghazdo/sprint-261-update.md
           - name: August 11
             href: 2025/ghazdo/sprint-260-update.md
           - name: July 17
@@ -975,6 +985,8 @@
         items:
         - name: "2025"
           items:
+          - name: September 4
+            href: 2025/general/sprint-261-update.md
           - name: August 11
             href: 2025/general/sprint-260-update.md
           - name: July 17

@@ -25,7 +25,7 @@ On the popup menu, select the **Enable announcements for line changes and commen
 > [!div class="mx-imgBorder"]
 > [![Image to Editor preferences.](../../media/260-repos-03.png "Image to Editor preferences.")](../../media/260-repos-03.png#lightbox)
 
-### Azure DevOps remote index support
+### Azure DevOps remote index support in VSCode
 
 Azure DevOps now supports remote indexes for IDE workspaces that are linked to Azure DevOps repos. This enables #codebase to search for relevant snippets almost instantly without any initialization. This even works for larger repos with tens of thousands of indexable files. Support for remote workspaces has released starting with the July updates to Visual Studio  and VS Code. For more info please see the [VS Code Release Notes](https://code.visualstudio.com/updates/v1_103#_azure-devops-repos-remote-index-support). 
 
