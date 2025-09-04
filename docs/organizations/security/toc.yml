@@ -218,7 +218,7 @@
   - name: Download repository permissions report
     displayName: json
     href: download-permissions-report.md 
-- name: Secure zure Test Plans
+- name: Secure Azure Test Plans
   items:
   - name: Set permissions & access for testing
     displayName: create, update, add, user, group, security, settings
