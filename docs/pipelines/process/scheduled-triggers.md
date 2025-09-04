@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.custom: copilot-scenario-highlight
 ms.author: sdanie
 author: steved0x
-ms.date: 08/26/2025
+ms.date: 09/04/2025
 ms.update-cycle: 180-days
 zone_pivot_groups: pipelines-version
 monikerRange: '<= azure-devops'
