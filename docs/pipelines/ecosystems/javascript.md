@@ -2,7 +2,6 @@
 title: Build and publish a Node.js package
 description:  Learn how to use Azure Pipelines to build, deploy, and test a Node.js app.
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
-ms.reviewer: vijayma
 ms.topic: how-to
 ms.custom: devx-track-js, freshness-fy22q2
 ms.date: 05/27/2025

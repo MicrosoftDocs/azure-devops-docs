@@ -3,7 +3,6 @@ title: Build, test, and deploy .NET Core projects
 description: Learn how to use Azure Pipelines to build, test, and deploy .NET Core projects and apps.
 ms.topic: how-to
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
-ms.reviewer: vijayma
 ms.date: 08/07/2025
 ms.custom: freshness-fy22q2, content-freshness, devx-track-dotnet
 monikerRange: "<=azure-devops"
