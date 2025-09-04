@@ -69,20 +69,24 @@ landingContent:
             url: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json  
           - text: Connect your organization to Microsoft Entra ID
             url: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/security/toc.json  
-  - title: Manage billing
+  
+  - title: Secure Azure Boards
     linkLists:
       - linkListType: overview
         links:
-          - text: Billing overview
-            url: ../billing/overview.md
+          - text: Secure your Azure Boards
+            url: ../../boards/secure-your-azure-boards.md
+          - text: Default permissions and access to Azure Boards
+            url: ../../boards/get-started/permissions-access-boards.md
       - linkListType: how-to-guide
         links:
-          - text: Buy Basic access
-            url: ../billing/buy-basic-access-add-users.md
-          - text: Set up billing for your organization
-            url: ../billing/set-up-billing-for-your-organization-vs.md#set-up-billing
-          - text: Try Azure Test Plans for free
-            url: ../billing/try-additional-features-vs.md
+          - text: Set work tracking & plan permissions
+            url: set-permissions-access-work-tracking.md
+          - text: Add members to a team administrator role
+            url: ../settings/add-team-administrator.md
+          - text: Set query permissions
+            url: ../../boards/queries/set-query-permissions.md
+
   - title: Secure organizations and projects  
     linkLists:
       - linkListType: overview
@@ -115,4 +119,4 @@ landingContent:
             url: permissions-lookup-guide.md
           - text: Permissions and groups reference
             url: permissions.md
- 
+
