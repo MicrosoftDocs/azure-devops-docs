@@ -137,6 +137,6 @@ Assign the [Owner](/azure/role-based-access-control/built-in-roles#owner) or [Co
 
 ## Related content
 
-* [Increase Azure Artifacts storage limit](../../artifacts/start-using-azure-artifacts.md#increase-artifacts-storage-limit)
+* [Increase Azure Artifacts storage limit](../../artifacts/artifact-storage.md#increase-artifacts-storage-limit)
 * [Buy Azure Test Plans](buy-basic-access-add-users.md)
 * [Learn about cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)
