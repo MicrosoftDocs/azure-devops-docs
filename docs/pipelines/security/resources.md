@@ -2,7 +2,6 @@
 title: Secure pipeline resources
 description: Learn about permissions, checks, and approvals for Azure Pipeline resources.
 ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
-ms.reviewer: vijayma
 ms.date: 07/15/2024
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'

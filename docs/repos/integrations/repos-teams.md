@@ -5,8 +5,6 @@ description: Monitor Azure Repos from Microsoft Teams.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
-ms.author: vijayma
-author: vijayma
 monikerRange: 'azure-devops'
 ms.date: 05/22/2023
 ms.custom:

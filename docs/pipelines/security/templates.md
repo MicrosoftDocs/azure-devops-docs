@@ -2,7 +2,6 @@
 title: Use templates for security
 description: Learn about using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
-ms.reviewer: vijayma
 ms.date: 07/18/2024
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'

@@ -5,8 +5,6 @@ description: Learn how to review pull requests using Git in Azure Repos, includi
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.author: vijayma
-author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 08/03/2022
 ms.subservice: azure-devops-repos-git

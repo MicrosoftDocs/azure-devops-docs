@@ -5,8 +5,6 @@ description: Follow steps to manage access to a Team Foundation Version Control 
 ms.assetid:  
 ms.service: azure-devops-repos
 ms.topic: quickstart
-ms.author: vijayma
-author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 11/30/2022
 ms.subservice: azure-devops-repos-git
