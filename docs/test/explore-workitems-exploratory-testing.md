@@ -38,10 +38,6 @@ Explore the following items:
 1. On the board, open the shortcut menu for the work item you want to explore and select **Do exploratory testing**.
 
    ![Screenshot showing opening the Do exploratory testing menu item.](media/explore-workitems-exploratory-testing/explore-workitems-01.png)
-   
-   A banner in the Work hub displays the work item associated with your session.
-
-   ![Screenshot showing the banner with the work item for your session.](media/explore-workitems-exploratory-testing/explore-workitems-02.png)
 
 2. Launch the Test & Feedback extension. Any acceptance criteria for the work item are shown.
 

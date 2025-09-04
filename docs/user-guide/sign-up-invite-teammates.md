@@ -7,6 +7,7 @@ ms.subservice: azure-devops-new-user
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
+ms.update: 90-days
 ms.date: 03/13/2025
 monikerRange: 'azure-devops'
 ---

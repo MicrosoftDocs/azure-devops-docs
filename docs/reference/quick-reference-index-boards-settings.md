@@ -57,7 +57,7 @@ Each team administrator can configure the following elements for their team, bac
       - [Definition of Done](../boards/boards/add-columns.md#definition-of-done)  
       - [Split columns](../boards/boards/split-columns.md)   
       - [Swimlanes](../boards/boards/expedite-work.md)  
-      - [Card fields, styles, tag colors, annotations, and card reordering](../boards/boards/customize-cards.md#kanban-board)    
+      - [Card fields, styles, tag colors, annotations, and card reordering](../boards/boards/customize-cards.md)    
    :::column-end:::
 :::row-end:::
 ---

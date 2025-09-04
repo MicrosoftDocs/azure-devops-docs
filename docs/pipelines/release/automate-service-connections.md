@@ -127,7 +127,7 @@ The first code snippet is a configuration file, `ServiceConnectionGeneric.json`.
   "authorization": {
     "parameters": {
       "tenantid": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
-      "serviceprincipalid": "00001111-aaaa-2222-bbbb-3333cccc4444"
+      "serviceprincipalid": "aaaaaaaa-bbbb-cccc-1111-222222222222"
     },
     "scheme": "WorkloadIdentityFederation"
   },
@@ -155,7 +155,7 @@ Example output:
 
 ```json
 {
-  "serviceprincipalid": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "serviceprincipalid": "aaaaaaaa-bbbb-cccc-1111-222222222222",
   "tenantid": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
   "workloadIdentityFederationIssuer": "https://login.microsoftonline.com/aaaabbbb-0000-cccc-1111-dddd2222eeee/v2.0",
   "workloadIdentityFederationIssuerType": "EntraID",

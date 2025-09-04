@@ -25,15 +25,3 @@ The following operating system versions won't be supported by the updated v4 age
 - Ubuntu, 16.04, 18.04
 - Windows 7, 8 & 10 up to 21H2
 
-### Preview mode for shell tasks arguments validation
-
-Shell tasks such as [Bash@3](/azure/devops/pipelines/tasks/reference/bash-v3), [BatchScript@1](/azure/devops/pipelines/tasks/reference/batch-script-v1), [CmdLine@2](/azure/devops/pipelines/tasks/reference/cmd-line-v2) and [PowerShell@2](/azure/devops/pipelines/tasks/reference/powershell-v2) can be protected from command injection by enabling [shell tasks arguments validation](/azure/devops/pipelines/security/inputs#enable-shell-tasks-arguments-parameter-validation) in organization or project settings.
-
-Enabling shell tasks arguments validation can break existing scripts as input is rejected by input validation. For example, some characters are considered a command separator and rejected when this setting is enabled.
-
-To make this transition smoother, we added a preview mode. With preview mode enabled, you receive warnings in your pipeline and audit logs, giving you visibility into potential issues without interrupting your tasks or workflows.
-
-Go to Organization Settings > Pipelines > Settings > Task restrictions > Audit On:
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of general to enable auditing.](../../media/245-pipelines-01.png "Screenshot of general to enable auditing")
