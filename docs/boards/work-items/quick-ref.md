@@ -21,7 +21,7 @@ Use this index to quickly access concepts and tasks related to work items and in
 
 > [!NOTE]   
 > The following features require the **New Boards Hub** feature, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md):
-> - [Change the link type of an existing link](quick-ref.md#work-item-user-tasks)
+> - [Change the link type of an existing link](quick-ref.md#common-work-item-tasks)
 > - [Filter the history tab](../queries/history-and-auditing.md#filter-history) 
 > - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
 > - [Move a card to a specific column position](../boards/customize-cards.md#reorder-cards)
