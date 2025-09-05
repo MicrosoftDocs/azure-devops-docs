@@ -87,6 +87,7 @@ The Azure DevOps MCP Server provides your AI assistant with secure access to you
 - "Now analyze these items and help me prepare for standup - what did I complete, what am I working on, and what's blocked?"
 
 **Example output**:
+
 **What the server provides** (raw data):
 ```json
 {
@@ -140,6 +141,7 @@ Blockers: Need security approval for payment integration, staging deployment del
 - "Based on these items, which ones should we prioritize for a two-week sprint with three developers?"
 
 **Example output**:
+
 **What the server provides** (raw data):
 ```json
 {
@@ -206,6 +208,7 @@ SPRINT PLANNING RECOMMENDATIONS:
 - "Help me understand the business effect of these code changes"
 
 **Example output**:
+
 **What the server provides** (raw data):
 ```json
 {
@@ -284,6 +287,7 @@ REVIEW FOCUS AREAS:
 - "Create a summary report for stakeholders highlighting key accomplishments and metrics"
 
 **Example output**:
+
 **What the server provides** (raw data):
 ```json
 {
