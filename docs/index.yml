@@ -44,7 +44,7 @@ highlightedContent:
       url: ./organizations/projects/connect-to-projects.md
     # Card
     - title: Enable AI assistance with Azure DevOps
-      itemType: conceptual
+      itemType: get-started
       url: ./mcp-server/mcp-server-overview.md
     # Card
     - title: Secure access to Azure DevOps
