@@ -3,14 +3,13 @@ title: Run the agent behind a web proxy
 description: Learn how you can run a v2 private build and release agent behind a web proxy for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 6AC4BA22-9F6F-44B5-BB15-445A7CFD2AD4
-ms.date: 01/25/2023
+ms.date: 09/05/2025
 monikerRange: '<= azure-devops'
 ---
 
 # Run a self-hosted agent behind a web proxy
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
 
 
 When your self-hosted agent requires a web proxy, you can inform the agent about the proxy during configuration.
@@ -74,3 +73,22 @@ Create a `.proxybypass` file in the agent's root directory that specifies regula
 github\.com
 bitbucket\.com
 ```
+
+## How to resolve 407 authentication errors
+
+The default proxy authentication behavior can cause `407 authentication errors` in some corporate environments if your agent is behind a web proxy. To resolve this, you can configure the the agent to use Basic authentication in by using the --usebasicauthforproxy` flag during agent configuration.
+
+For example:
+
+# [Windows](#tab/windows)
+
+```dotnetcli
+./config.cmd --proxyurl http://proxy.company.com:port --proxyusername <userNamePlaceholder> --proxypassword <passwordPlaceholder> --usebasicauthforproxy
+```
+
+# [Linux/macOS](#tab/unix-macOS)
+```
+./config.sh --proxyurl http://proxy.company.com:port --proxyusername <userNamePlaceholder> --proxypassword <passwordPlacehopasswordPlaceholderlder> --usebasicauthforproxy
+```
+
+* * *
