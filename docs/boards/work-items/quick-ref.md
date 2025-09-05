@@ -182,8 +182,6 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Use @mentions](../../organizations/notifications/at-mentions.md)  
    :::column-end:::
 :::row-end:::
-
----
 :::row:::
    :::column span="1":::
       **Queries and search**
