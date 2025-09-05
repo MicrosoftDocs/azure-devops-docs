@@ -151,7 +151,7 @@ Once installed, a copy of the package will be automatically saved to your feed, 
 
 1. The *ModelContextProtocol* packages, installed in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to your feed.
 
-:::image type="content" source="../media/mcp-package-download-upstream.png" alt-text="A screenshot displaying the MCP package saved to the feed.":::
+    :::image type="content" source="../media/mcp-package-download-upstream.png" alt-text="A screenshot displaying the MCP package saved to the feed." lightbox="../media/mcp-package-download-upstream.png":::
 
 ## Related content
 
