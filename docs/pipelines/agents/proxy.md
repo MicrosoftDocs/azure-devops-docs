@@ -86,7 +86,7 @@ For example:
 ./config.cmd --proxyurl http://proxy.company.com:port --proxyusername <userNamePlaceholder> --proxypassword <passwordPlaceholder> --usebasicauthforproxy
 ```
 
-# [Linux/macOS](#tab/unix-macOS)
+# [macOS and Linux](#tab/unix)
 ```
 ./config.sh --proxyurl http://proxy.company.com:port --proxyusername <userNamePlaceholder> --proxypassword <passwordPlacehopasswordPlaceholderlder> --usebasicauthforproxy
 ```
