@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 You need at least one agent to build your code or deploy your software by using Azure Pipelines. As your code base and team grow, you need multiple agents.
 
-When your pipeline runs, the system begins one or more jobs. An agent computes infrastructure by using installed agent software that runs one job at a time.
+When your pipeline runs, the system begins one or more jobs. An agent is computing infrastructure with installed agent software that runs one job at a time.
 
 Azure Pipelines provides several different types of agents.
 
@@ -112,8 +112,6 @@ Azure Pipelines manages the scaling of your agents for you. Specify the followin
 * A maximum number of virtual machines in the scale set
 
 For more information, see [Azure Virtual Machine Scale Set agents](scale-set-agents.md).
-
-[!INCLUDE [mdp-recommended](../../managed-devops-pools/includes/mdp-recommended.md)]
 
 ## Managed DevOps Pools agents
 
