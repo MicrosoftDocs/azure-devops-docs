@@ -2,13 +2,13 @@
 title: Secure your analytics & reporting
 titleSuffix: Azure DevOps
 description: Learn about security concepts, access controls, and best practices for protecting your analytics data and reports in Azure DevOps.
-ms.subservice: azure-devops
+ms.subservice: azure-devops-security
 ms.custom: security
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 09/04/2025
+ms.date: 09/05/2025
 ---
 
 # Secure your analytics & reporting

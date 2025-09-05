@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 09/04/2025
+  ms.date: 09/05/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -80,7 +80,6 @@ landingContent:
             url: ../../boards/get-started/permissions-access-boards.md
       - linkListType: how-to-guide
         links:
-<<<<<<< HEAD
           - text: Buy Basic access
             url: ../billing/buy-basic-access-add-users.md
           - text: Set up billing for your organization
@@ -97,8 +96,6 @@ landingContent:
             url: ../../boards/get-started/permissions-access-boards.md
       - linkListType: how-to-guide
         links:
-=======
->>>>>>> 87cea4d36fe9d2a7159feb50ea6ef8d21ec9943c
           - text: Set work tracking & plan permissions
             url: set-permissions-access-work-tracking.md
           - text: Add members to a team administrator role
@@ -106,7 +103,6 @@ landingContent:
           - text: Set query permissions
             url: ../../boards/queries/set-query-permissions.md
 
-<<<<<<< HEAD
   - title: Secure analytics & reporting
     linkLists:
       - linkListType: overview
@@ -122,8 +118,6 @@ landingContent:
           - text: Configure Power BI connections
             url: ../../report/powerbi/data-connector-connect.md
 
-=======
->>>>>>> 87cea4d36fe9d2a7159feb50ea6ef8d21ec9943c
   - title: Secure organizations and projects  
     linkLists:
       - linkListType: overview

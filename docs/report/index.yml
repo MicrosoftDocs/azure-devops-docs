@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 09/03/2025
+  ms.date: 09/05/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -43,8 +43,6 @@ landingContent:
         links:
           - text: Secure your analytics & reporting
             url: ./secure-your-analytics-reporting.md
-          - text: Analytics security overview
-            url: ./analytics-security.md
       - linkListType: how-to-guide
         links:
           - text: Set dashboard permissions
