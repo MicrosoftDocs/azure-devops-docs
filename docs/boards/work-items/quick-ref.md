@@ -101,7 +101,7 @@ Use this index to quickly access concepts and tasks related to work items and in
 
 ## Common work item tasks
 
-Tasks listed below are available to users with **Contributor** permissions and **Basic** access.  
+The following tasks are available to users with **Contributor** permissions and **Basic** access.  
 
 ---
 :::row:::
@@ -234,7 +234,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
 
 ## Administrative and customization tasks 	
 
-Tasks listed below must be performed by an administrator who has the necessary permissions, as they affect all users and teams within a project. 	
+Administrators with the necessary permissions perform the following tasks, as they affect all users and teams within a project. 	
 
 ::: moniker range="azure-devops"  
 
