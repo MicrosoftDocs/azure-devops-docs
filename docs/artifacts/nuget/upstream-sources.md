@@ -1,85 +1,63 @@
 ---
-title: Consume packages from nuget.org
-description: How to consume packages from nuget.org with Azure Artifacts upstream sources
+title: Consume packages from the NuGet Gallery
+description: Learn how to consume packages from nuget.org with Azure Artifacts upstream sources.
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.service: azure-devops-artifacts
 ms.topic: how-to
-ms.date: 04/16/2024
+ms.date: 09/5/2025
 monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
-# Use packages from NuGet Gallery
+# Use packages from the NuGet Gallery
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-With Azure Artifacts upstream sources, developers are able to consume packages from public registries such as nuget.org and npmjs.com. This article will walk you through the process of setting up your project and using the command line to effectively consume NuGet packages from the NuGet Gallery. In this article, you'll learn how to:
-
-> [!div class="checklist"]    
-> * Enable upstream sources for your feed 
-> * Add NuGet Gallery as an upstream source 
-> * Connect to your feed
-> * Install packages from nuget.org
+Azure Artifacts upstream sources make it easy for developers to pull packages from public registries like *nuget.org* and *npmjs.com*. In this article, you learn how to set up your project and use the command line to consume NuGet packages from the NuGet Gallery.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+| **Product**        | **Requirements**                       |
+|--------------------|----------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Install the latest [NuGet version](https://www.nuget.org/downloads). |
 
-- An Azure Artifacts feed.
+## Create a feed and enable upstream sources
 
-- Download [NuGet](https://www.nuget.org/downloads).
+If you haven't created a feed yet, follow the steps below to create a new feed and enable upstream sources. If you already have a feed, proceed to the [next step](#add-nuget-gallery-upstream-source) to add the NuGet Gallery as an upstream source.
 
-- Download and install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-## Enable upstream sources on your feed
+1. Select **Artifacts**, and then select **Create Feed**.
 
-If you haven't created a feed yet, follow the steps below to create a new one and make sure you select the upstream sources checkbox to enable them. If you already have a feed, proceed to the [next step](#add-nuget-gallery-upstream-source) to add the NuGet Gallery as an upstream source.
+1. Provide a **Name** for your feed, select the **Visibility** option to define who can view your packages, and choose your **Scope**. Azure Artifacts recommends scoping feeds to a project rather than the entire organization. 
 
-[!INCLUDE [](../includes/create-feed.md)]
+1. Make sure to check the **Include packages from common public sources** option, as you'll need this to consume packages from public registries such as *nuget.org*, *npmjs.com* etc..
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="../media/enable-upstream-nuget-gallery.png" alt-text="A screenshot displaying how to create a new feed and enable upstream sources in Azure Artifacts.":::
 
 ## Add NuGet Gallery upstream source
 
-::: moniker range="azure-devops"
+If you checked the Upstream sources checkbox when creating your feed (as shown in the previous section), the NuGet Gallery should have been added automatically to your feed’s upstream sources. If you're working with a different feed or forgot to check that option, you can manually add the NuGet Gallery by following these steps:
 
-If you've checked the upstream sources checkbox when making your feed, NuGet Gallery should have been added automatically. If not, add it manually by following these steps:
+1. Sign in to Azure DevOps, and then navigate to your project.
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Artifacts**, and then select your feed.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed settings**.
 
-1. Select **Upstream Sources**, and then select **Add Upstream** to add a new upstream source.
-
-1. Select **Public source**, and then select **NuGet Gallery** from the dropdown menu.
-
-1. Select **Add** when you're done, and then select **Save** one more time at the top right corner to save your changes.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2022"
-
-1. Sign in to your Azure DevOps server, and then navigate to your project.
-
-1. Select **Artifacts**, and then select your feed.
-
-1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed settings**.
+::: moniker range="azure-devops || azure-devops-2022"
 
 1. Select **Upstream Sources**, and then select **Add Upstream**.
 
-1. Select **Public source**, and then select **NuGet Gallery** from the dropdown menu.
+1. Select **Public source**, select **NuGet Gallery** from the dropdown menu, and then select **Add**.
 
-1. Select **Save** when you're done, and then select **Save** one more time at the top right corner to save your changes.
+1. Select **Save** at the top right corner, then select **Save** again to confirm and apply your changes.
 
 ::: moniker-end
 
 ::: moniker range="=azure-devops-2020"
-
-1. Sign in to your Azure DevOps server, and then navigate to your project.
-
-1. Select **Artifacts**, and then select your feed.
-
-1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed settings**.
 
 1. Select **Upstream Sources**, and then select **Add upstream source**.
 
