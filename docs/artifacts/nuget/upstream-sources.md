@@ -67,30 +67,22 @@ If you checked the Upstream sources checkbox when creating your feed (as shown i
 
 ::: moniker-end
 
-## Connect to feed
+## Connect to your feed
+
+In this section, you learn how to set up your project to authenticate with your Azure Artifacts feed and save packages from upstream sources such as the NuGet Gallery.
 
 ::: moniker range="azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select **Connect to feed**, and then select **NuGet.exe**.
 
-1. Add a *nuget.config* file in the same folder as your *.csproj* or *.sln* file. Paste the provided XML snippet into your file. If you use the examples below, make sure you replace the placeholders with the appropriate values for your scenario.
+1. Make sure you've installed the prerequisites, then add a *nuget.config* file in the same folder as your *.csproj* or *.sln* file. 
 
-    - **Organization-scoped feed**:
-    
-        ```xml
-        <?xml version="1.0" encoding="utf-8"?>
-        <configuration>
-          <packageSources>
-            <clear />
-            <add key="<SOURCE_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-          </packageSources>
-        </configuration>
-        ```
-    
+1. Paste the XML snippet provided in the **Project setup** section into your file. Your file should resemble the following:
+
     - **Project-scoped feed**:
     
         ```xml
@@ -103,13 +95,25 @@ If you checked the Upstream sources checkbox when creating your feed (as shown i
         </configuration>
         ```
 
+    - **Organization-scoped feed**:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<SOURCE_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020 || azure-devops-2022"
 
-1. Sign in to your Azure DevOps server, and then navigate to your project.
+1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed.
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select **Connect to Feed**, and then select **NuGet.exe** from the left navigation pane.
 
@@ -119,48 +123,40 @@ If you checked the Upstream sources checkbox when creating your feed (as shown i
 
 ## Install packages from NuGet Gallery
 
-With our project now configured to authenticate with our feed, we can now proceed to install packages from the NuGet Gallery upstream. In this example, we will install the *Serilog* diagnostic logging library:
+Now that your project is configured to authenticate with your Azure Artifacts feed, you can proceed to install packages from the NuGet Gallery upstream. In this example, you'll install the *MCP C# SDK* for the Model Context Protocol for .NET applications to interact with MCP clients and servers:
 
 1. Navigate to the NuGet Gallery at `https://www.nuget.org/`.
 
-1. Search for the *Serilog* package, and then select it to navigate to the details page.
+1. Search for the *ModelContextProtocol*, then select it to open the details page.
 
-1. Select the **Package Manager** tab, and copy the command. In our example, the command is as follows: 
+1. Select the **.NET CLI** tab, and copy the command. In this example, the command is: 
 
     ```Command
-    NuGet\Install-Package Serilog -Version 3.1.2-dev-02097
+    dotnet add package ModelContextProtocol --version 0.3.0-preview.4
     ```
 
-1. Open your project in Visual Studio, and then select **Tools** > **NuGet Package Manager** > **Package Manager Console** to open the console window.
+1. Open a command prompt window, navigate to your project directory, then paste your command and press *Enter* to install the package.
 
-1. Paste your command in the Package Manager Console window, and press Enter to install your package.
+Once installed, a copy of the package will be automatically saved to your feed, ensuring availability if NuGet Gallery is down and protecting your workflow from other corrupted or malicious packages from the public registry.
 
 [!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
 ## View saved packages
 
-::: moniker range="azure-devops"
+1. Sign in to Azure DevOps, and navigate to your project.
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-::: moniker-end
+1. Select the **NuGet Gallery** source from the dropdown menu to filter for packages from this upstream.
 
-::: moniker range="< azure-devops"
+1. The *ModelContextProtocol* packages, installed in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to your feed.
 
-1. Sign in to your Azure DevOps server, and then navigate to your project.
+:::image type="content" source="../media/mcp-package-download-upstream.png" alt-text="A screenshot displaying the MCP package saved to the feed.":::
 
-::: moniker-end
+## Related content
 
-2. Select **Artifacts**, and then select your feed from the dropdown menu.
-
-3. Select the **NuGet Gallery** source from the dropdown menu to filter for packages from this upstream.
-
-4. The *Serilog* package, installed in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to our feed when we executed the install command.
-
-    :::image type="content" source="media/package-saved-from-upstream.png" alt-text="A screenshot showing the package that was saved from upstream.":::
-
-## Related articles
+- [Publish packages to NuGet.org](./publish-to-nuget-org.md)
 
 - [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
-- [Publish packages to NuGet.org](./publish-to-nuget-org.md)
+
 - [Manage permissions](../feeds/feed-permissions.md)
