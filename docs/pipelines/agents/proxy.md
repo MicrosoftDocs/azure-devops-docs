@@ -76,7 +76,7 @@ bitbucket\.com
 
 ## How to resolve 407 authentication errors
 
-The default proxy authentication behavior can cause `407 authentication errors` in some corporate environments if your agent is behind a web proxy. To resolve this, you can configure the the agent to use Basic authentication in by using the --usebasicauthforproxy` flag during agent configuration.
+The default proxy authentication behavior can cause `407 authentication errors` in some corporate environments if your agent is behind a web proxy. To resolve this, you can configure the the agent to use Basic authentication in by using the `--usebasicauthforproxy` flag during agent configuration.
 
 For example:
 
