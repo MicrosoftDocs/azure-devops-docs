@@ -26,14 +26,14 @@ To carry out the procedures in this article, you need the following prerequisite
 
 ### [Linux](#tab/linux)
 
-- Access to a source repository where you can create pipelines. For more information, see [Supported source repositories}](../repos/index.md)
+- Access to a source repository where you can create pipelines. For more information, see [Supported source repositories](../repos/index.md)
 - [Administrator role](../agents/pools-queues.md#security) for the *deployment pool*, the set of target servers available to your Azure DevOps organization. For more information, see [Set deployment group security in Azure Pipelines](../policies/permissions.md#deployment-group-permissions).
 - Project Administrator or Build Administrator [permissions](../policies/permissions.md) in the Azure DevOps project that contains the environment. For more information, see [Resource security](../security/resources.md).
 - Access and permission to download and run executable scripts on VMs you want to connect to the environment.
 
 ### [Windows](#tab/windows)
 
-- Access to a source repository where you can create pipelines. For more information, see [Supported source repositories}](../repos/index.md)
+- Access to a source repository where you can create pipelines. For more information, see [Supported source repositories](../repos/index.md)
 - [Administrator role](../agents/pools-queues.md#security) for the *deployment pool* or set of target servers available to your Azure DevOps organization. For more information, see [Set deployment group security in Azure Pipelines](../policies/permissions.md#deployment-group-permissions).
 - Project Administrator or Build Administrator [permissions](../policies/permissions.md) in the Azure DevOps project that contains the environment. For more information, see [Resource security](../security/resources.md).
 - Access and PowerShell administrator permissions on VMs you want to connect to the environment.
@@ -96,7 +96,9 @@ Once the VM is registered, it appears as a resource under the **Resources** tab 
 
 ## Use environment VMs in YAML pipelines
 
-In your YAML deployment job, you can target VMs by referencing their environment. The following pipeline runs on any VM in the `VMEnv` environment.
+In your YAML deployment job, you can target VM resources by referencing their environment. For more information about YAML pipeline deployment jobs, see the [jobs.deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment) definition in the [YAML pipelines schema reference](/azure/devops/pipelines/yaml-schema).
+
+The following pipeline runs on any VM in the `VMEnv` environment.
 
 ```yaml
 trigger: 
@@ -116,7 +118,7 @@ jobs:
             - script: echo "Hello world"
 ```
 
-To target a specific VM in the environment, you can follow the environment name with the resource name. The following example deploys only to the VM resource named `RESOURCE-PC` in the `VMenv` environment.
+To target a specific VM in the environment, append the VM resource name to the environment name. The following example deploys only to the VM resource named `RESOURCE-PC` in the `VMenv` environment.
 
 ```yaml
 trigger: 
@@ -135,7 +137,7 @@ jobs:
           steps:
             - script: echo "Hello world"
 ```
-To configure environment properties in addition to the name, you can use the full syntax of the [jobs-deployment-environment](/azure/devops/pipelines/yaml-schema/jobs-deployment-environment) keyword. You can deploy to specific VMs in the environment by specifying them in `resourceName`.
+You can also use the full syntax of the [jobs-deployment-environment](/azure/devops/pipelines/yaml-schema/jobs-deployment-environment) keyword, and deploy to specific environment VMs by listing them in `resourceName`.
 
 ```yaml
 trigger: 
@@ -158,16 +160,21 @@ jobs:
           - script: echo "Hello world"
 ```
 
-You can apply a deployment `strategy` to define how to roll out your application. VMs support both the `runOnce` and the `rolling` strategies. For more information about deployment strategies and lifecycle hooks, see [Deployment strategies](./deployment-jobs.md#deployment-strategies).
-
-For more information about YAML pipeline deployment jobs, see the [jobs.deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment) definition in the [YAML pipelines schema reference](/azure/devops/pipelines/yaml-schema).
 >[!NOTE]
 >- The `resourceType` values like `virtualMachine` are case sensitive. Incorrect casing results in no matching resources found.
 >- If you retry a stage, the deployment reruns on all specified VMs, not just failed targets.
 
+### Deployment strategy
+
+You can apply a deployment `strategy` to define how to roll out your application. VMs support both the `runOnce` and the `rolling` strategies. For more information about deployment strategies and lifecycle hooks, see [Deployment strategies](./deployment-jobs.md#deployment-strategies).
+
+### Permissions
+
+The first time you run the pipeline that uses the environment, you must grant permission for all runs of the pipeline to access the agent pool and the environment. Select the **Waiting** symbol next to the job on the pipeline run **Summary** screen, and then select **Permit** to grant the necessary permissions.
+
 ## Add and manage tags
 
-Tags are a way to target a specific set of environment VMs for deployment. The pipeline deploys only to VMs that have the tags applied.
+Tags are a way to target a specific set of environment VMs for deployment. The pipeline deploys only to environment VMs that have the tags applied.
 
 You can apply or remove tags on the VM's Azure portal page, or interactively when you register the agent script on the VM.
 
@@ -211,7 +218,7 @@ Select the **Deployments** tab for complete traceability of commits and work ite
 
 ### [Linux](#tab/linux)
 
-To remove a VM from a Linux environment, run the following command on each machine.
+To remove a VM from a Linux environment, run the following command on the machine.
 
 ```
 ./config.sh remove
@@ -219,11 +226,7 @@ To remove a VM from a Linux environment, run the following command on each machi
 
 ### [Windows](#tab/windows)
 
-To remove VMs from a Windows environment, run the following command. Make sure you run the command:
-
-- On each machine.
-- From an administrator PowerShell command prompt.
-- In the same folder path as the environment registration command.
+To remove a VM from a Windows environment, run the following command on the VM from an administrator PowerShell command prompt in the same folder where you ran the environment registration command.
 
 ```
 ./config.cmd remove
