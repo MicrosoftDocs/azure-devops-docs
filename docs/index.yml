@@ -11,7 +11,7 @@ metadata:
   ms.subservice: azure-devops-projects
   ms.author: chcomley
   author: chcomley
-  ms.date: 09/04/2025
+  ms.date: 09/05/2025
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -42,6 +42,10 @@ highlightedContent:
     - title: Connect to a project
       itemType: how-to-guide
       url: ./organizations/projects/connect-to-projects.md
+    # Card
+    - title: Enable AI assistance with Azure DevOps
+      itemType: overview
+      url: ./mcp-server/mcp-server-overview.md
     # Card
     - title: Secure access to Azure DevOps
       itemType: how-to-guide
