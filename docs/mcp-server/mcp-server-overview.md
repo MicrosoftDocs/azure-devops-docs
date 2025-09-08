@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/05/2025
+ms.date: 09/08/2025
 #customer intent: As a project member, I want to understand what the Azure DevOps MCP Server is and how it can enhance my AI assistant with real-time Azure DevOps context to improve my productivity and decision-making.
 ---
 
@@ -27,8 +27,6 @@ Unlike cloud-based solutions that require sending your data externally, the Azur
 
 ## Prerequisites
 
-Before installing the Azure DevOps MCP Server, ensure you have the following requirements:
-
 | Requirement | Description | Download/Installation |
 |-------------|-------------|----------------------|
 | **Node.js** | Version 18.0 or higher required for running the MCP Server | [Download Node.js](https://nodejs.org/) |
@@ -45,7 +43,7 @@ For detailed installation instructions and setup for your preferred environment,
 
 Traditional AI assistants lack context about your specific projects, work items, and team processes. They can help with generic coding questions but can't answer "What's blocking our current sprint?" or "Which pull requests need my review?" The Azure DevOps MCP Server bridges this gap by connecting your AI assistant directly to your Azure DevOps data.
 
-The Azure DevOps MCP Server provides contextual intelligence based on your actual project data, not generic responses. You can ask natural language questions about your work items, sprints, and releases, and receive insights that understand your team's specific processes and terminology. This eliminates context switching between tools, provides instant answers without navigating through the Azure DevOps web interface, and automates routine project management tasks through natural language.
+The Azure DevOps MCP Server provides contextual intelligence based on your actual project data, not generic responses. You can ask natural language questions about your work items, sprints, and releases, and receive insights that understand your team's specific processes and terminology. This process eliminates context switching between tools, provides instant answers without navigating through the Azure DevOps web interface, and automates routine project management tasks through natural language.
 
 ## Security and privacy
 
@@ -76,6 +74,8 @@ The Azure DevOps MCP Server provides your AI assistant with secure access to you
 
 ## Common use cases and examples
 
+For more examples, see [Example usage](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/EXAMPLES.md).
+
 ### Daily standup preparation
 
 **What the Azure DevOps MCP Server provides**: Access to your assigned work items and recent updates
@@ -85,6 +85,16 @@ The Azure DevOps MCP Server provides your AI assistant with secure access to you
 **Example prompt**:
 - "Get my work items for project MyProject"
 - "Now analyze these items and help me prepare for standup - what did I complete, what am I working on, and what's blocked?"
+
+**What the prompt translates to** (Azure DevOps queries):
+```wiql
+SELECT [System.Id], [System.Title], [System.WorkItemType], [System.State], [System.Reason], [System.ChangedDate], [System.AssignedTo]
+FROM workitems 
+WHERE [System.TeamProject] = 'MyProject' 
+AND [System.AssignedTo] = @me
+AND [System.State] <> 'Removed'
+ORDER BY [System.ChangedDate] DESC
+```
 
 **Example output**:
 
@@ -139,6 +149,17 @@ Blockers: Need security approval for payment integration, staging deployment del
 **Example prompt**:
 - "Get all work items in the product backlog for MyProject"
 - "Based on these items, which ones should we prioritize for a two-week sprint with three developers?"
+
+**What the prompt translates to** (Azure DevOps queries):
+```wiql
+SELECT [System.Id], [System.Title], [System.WorkItemType], [Microsoft.VSTS.Scheduling.StoryPoints], [System.State], [Microsoft.VSTS.Common.Priority]
+FROM workitems 
+WHERE [System.TeamProject] = 'MyProject' 
+AND [System.AreaPath] UNDER 'MyProject'
+AND [System.State] IN ('New', 'Approved', 'Committed')
+AND [System.WorkItemType] IN ('Epic', 'Feature', 'User Story', 'Bug', 'Task')
+ORDER BY [Microsoft.VSTS.Common.Priority] ASC, [Microsoft.VSTS.Common.StackRank] ASC
+```
 
 **Example output**:
 
@@ -206,6 +227,13 @@ SPRINT PLANNING RECOMMENDATIONS:
 **Example prompt**:
 - "Get details for pull request #67 and its linked work items"
 - "Help me understand the business effect of these code changes"
+
+**What the prompt translates to** (Azure DevOps REST API calls):
+```http
+GET https://dev.azure.com/{organization}/{project}/_apis/git/pullrequests/67?api-version=7.1-preview.1
+
+GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems?ids={linkedWorkItemIds}&$expand=relations&api-version=7.1-preview.3
+```
 
 **Example output**:
 
@@ -285,6 +313,16 @@ REVIEW FOCUS AREAS:
 **Example prompt**:
 - "Get all completed work items from the last sprint"
 - "Create a summary report for stakeholders highlighting key accomplishments and metrics"
+
+**What the prompt translates to** (Azure DevOps queries and API calls):
+```wiql
+SELECT [System.Id], [System.Title], [System.WorkItemType], [Microsoft.VSTS.Scheduling.StoryPoints], [System.State], [System.CompletedDate]
+FROM workitems 
+WHERE [System.TeamProject] = @project 
+AND [System.IterationPath] = @currentIteration
+AND [System.State] IN ('Done', 'Closed', 'Resolved')
+ORDER BY [System.CompletedDate] DESC
+```
 
 **Example output**:
 
