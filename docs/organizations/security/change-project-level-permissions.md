@@ -180,6 +180,8 @@ You can change the project-level permissions for a specific user. To understand 
 
 ::: moniker-end
 
+[!INCLUDE [enable-mcp-server](../../boards/includes/enable-mcp-server.md)]
+
 ## Next step
 
 > [!div class="nextstepaction"]

@@ -38,6 +38,8 @@ Sign up for Azure DevOps with either a Microsoft account or GitHub account.
 
 ---
 
+[!INCLUDE [enable-mcp-server](../boards/includes/enable-mcp-server.md)]
+
 ## Next steps  
  
 > [!div class="nextstepaction"]
