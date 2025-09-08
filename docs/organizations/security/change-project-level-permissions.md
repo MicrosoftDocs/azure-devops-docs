@@ -180,6 +180,8 @@ You can change the project-level permissions for a specific user. To understand 
 
 ::: moniker-end
 
+[!INCLUDE [mcp-server-tip](../../boards/includes/mcp-server-tip.md)]
+
 ## Next step
 
 > [!div class="nextstepaction"]

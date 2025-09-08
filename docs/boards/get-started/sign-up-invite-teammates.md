@@ -42,6 +42,8 @@ Sign up for Azure Boards with either a Microsoft account or GitHub account.
 
 ---
 
+[!INCLUDE [mcp-server-tip](../includes/mcp-server-tip.md)]
+
 <a id="change-settings"></a>
 
 ### Optional: Change your organization or project settings
