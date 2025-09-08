@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for August 1, 2025 - August 31, 2025"
 description: "What's new in the Azure DevOps docs for August 1, 2025 - August 31, 2025."
-ms.date: 09/04/2025
+ms.date: 09/08/2025
 ---
 
 # Azure DevOps docs: What's new for August 1, 2025 - August 31, 2025
@@ -112,7 +112,7 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2025 through Augus
 
 ### New articles
 
-- [Quickstart: Create a Managed DevOps Pool using a Bicep template](/azure/devops/managed-devops-pools/quickstart-bicep) - *Thanks to Microsoft Azure MVP [John Lokerse](https://mvp.microsoft.com/en-US/MVP/profile/9d148c3d-6dde-4fbf-bbc6-b2e67b27c28b) for [contributing this article and contributing the Bicep snippets](https://github.com/MicrosoftDocs/azure-devops-docs/pull/14310) to the Managed DevOps Pools configuration articles listed in the following section.
+- [Quickstart: Create a Managed DevOps Pool using a Bicep template](/azure/devops/managed-devops-pools/quickstart-bicep)
 
 ### Updated articles
 
