@@ -74,7 +74,7 @@ github\.com
 bitbucket\.com
 ```
 
-## Enable Basic authentication for proxy Setup
+## Enable Basic authentication for proxy setup
 
 The agent configuration may not be compatible with certain corporate proxy setups that use default NTLM authentication, and you may get `407 authentication errors`. In such cases, you can enable Basic authentication for the proxy by adding the `--usebasicauthforproxy` flag during agent configuration, provided the proxy supports fallback to Basic authentication.
 
