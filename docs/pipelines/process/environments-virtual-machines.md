@@ -5,7 +5,7 @@ ms.topic: how-to
 ms.custom: pipelinesresourcesrefresh
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: mijacobs
-ms.date: 09/04/2025
+ms.date: 09/08/2025
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -13,9 +13,9 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-You can define Azure Pipelines [environments](environments.md) such as Development, Test, or Production to target with deployments. You can install agents on physical or virtual machine (VM) resources to add them to these environments.
+An Azure Pipelines [environment](environments.md) is a group of [resources](about-resources.md) that you can target with deployments from a pipeline. Typical environments include Development, Test, or Production.
 
-This article describes how to define and use environments to manage deployments across VM or physical server resources. The environment's deployment history provides traceability from each machine to your pipeline.
+To add physical or virtual machine (VM) resources to environments, you install agents on the machines. The environment's deployment history provides traceability from each machine. This article describes how to define and use environments to manage deployments across VM or server resources.
 
 >[!NOTE]
 > Azure DevOps environments are available only for YAML pipelines. For Classic pipelines, [deployment groups](../release/deployment-groups/index.md) provide similar functionality.
@@ -40,11 +40,11 @@ To carry out the procedures in this article, you need the following prerequisite
 
 ---
 
-## Create and add resources to an environment
+## Create an environment and add a VM
 
 Use the following procedure to add a VM or physical machine to an environment.
 
-### Add a VM resource
+### Create the environment with VM resource
 
 1. In your Azure DevOps project, go to **Pipelines** > **Environments** and then select **Create environment** or **New environment**.
 1. On the **New environment** screen, enter a **Name** and optional **Description**.
@@ -79,7 +79,7 @@ The script is the same for all the Windows VMs added to the environment. For mor
 
 ---
 
-### Run the copied script on the VM
+### Run the copied registration script on the VM
 
 1. Select **Close**. The new environment is created. To copy the script again, for example if your PAT expires before you can install the agent, select **Add resource** again on the environment's page.
 
@@ -94,11 +94,11 @@ Once the VM is registered, it appears as a resource under the **Resources** tab 
 
 :::image type="content" source="media/vm-resourceview.png" alt-text="Screenshot of the Resources tab.":::
 
-## Use environment VMs in YAML pipelines
+## Use environments in YAML pipelines
 
-In your YAML deployment job, you can target VM resources by referencing their environment. For more information about YAML pipeline deployment jobs, see the [jobs.deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment) definition in the [YAML pipelines schema reference](/azure/devops/pipelines/yaml-schema).
+You can target VM resources in your YAML deployment job by referencing their environment. For more information about YAML deployment jobs, see [Deployment jobs](deployment-jobs.md) and the [jobs.deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment) definition in the [YAML pipelines schema reference](/azure/devops/pipelines/yaml-schema).
 
-The following pipeline runs on any VM in the `VMEnv` environment.
+The following pipeline runs only on VMs in the `VMEnv` environment.
 
 ```yaml
 trigger: 
@@ -118,7 +118,7 @@ jobs:
             - script: echo "Hello world"
 ```
 
-To target a specific VM in the environment, append the VM resource name to the environment name. The following example deploys only to the VM resource named `RESOURCE-PC` in the `VMenv` environment.
+You can target a specific VM in the environment by appending the VM resource name to the environment name. The following example deploys only to the VM resource named `RESOURCE-PC` in the `VMenv` environment.
 
 ```yaml
 trigger: 
