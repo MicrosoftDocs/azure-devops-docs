@@ -2,12 +2,12 @@
 title: Configure schedules to run pipelines
 description: Configure schedules to run pipelines
 ms.topic: conceptual
-ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 ms.author: sdanie
 author: steved0x
-ms.date: 02/27/2025
+ms.date: 09/04/2025
 ms.update-cycle: 180-days
+zone_pivot_groups: pipelines-version
 monikerRange: '<= azure-devops'
 ---
 
@@ -24,25 +24,21 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 
 ## Scheduled triggers
 
-#### [YAML](#tab/yaml/)
-
-::: moniker range="<=azure-devops"
+:::zone pivot="pipelines-yaml"
 
 > [!IMPORTANT]
-> Scheduled triggers defined using the pipeline settings UI take precedence over YAML scheduled triggers.
+> Scheduled triggers defined using the YAML pipeline settings UI take precedence over YAML scheduled triggers.
 > 
 > If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, 
 > only the UI defined scheduled triggers are run. 
 > To run the YAML defined scheduled triggers in your YAML pipeline,
-> you must remove the scheduled triggers defined in the pipeline settings UI.
+> you must remove the scheduled triggers defined in the YAML pipeline settings UI.
 > Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
 > scheduled triggers to start being evaluated.
 >
 > To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-scheduled-triggers).
 
 Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
-
-::: moniker-end
 
 ::: moniker range="<azure-devops-2022"
 
@@ -73,8 +69,6 @@ schedules:
 ```
 
 ::: moniker-end
-
-::: moniker range="<=azure-devops"
 
 Scheduled pipelines in YAML have the following constraints.
 
@@ -148,8 +142,6 @@ schedules:
 
 Because `release` was added to the branch filters in the `main` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `release` branch is added to the branch filters in the YAML file **in the release branch** will the scheduled build be added to the scheduler.
 
-::: moniker-end
-
 ::: moniker range=">=azure-devops-2022"
 
 ### Batch considerations for scheduled triggers
@@ -204,25 +196,21 @@ For more examples, see [schedules.cron examples](/azure/devops/pipelines/yaml-sc
 
 ::: moniker-end
 
-#### [Classic](#tab/classic/)
+:::zone-end 
+
+:::zone pivot="pipelines-classic"
 
 Select the days and times when you want to run the build using the classic editor.
 
 If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
-::: moniker range="<=azure-devops"
-
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
-::: moniker-end
-
-* * *
+:::zone-end 
 
 ## Examples
 
-#### [YAML](#tab/yaml/)
-
-::: moniker range="<=azure-devops"
+:::zone pivot="pipelines-yaml"
 
 The following example defines two schedules: 
 
@@ -253,13 +241,11 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 
 For more examples, see [Migrating from the classic editor](#migrating-from-the-classic-editor).
 
-::: moniker-end
+:::zone-end
 
-#### [Classic](#tab/classic/)
+:::zone pivot="pipelines-classic"
 
 #### Example: Nightly build of Git repo in multiple time zones
-
-::: moniker range="<=azure-devops"
 
 In this example, the classic editor scheduled trigger has two entries, which produce the following builds.
 
@@ -271,13 +257,7 @@ In this example, the classic editor scheduled trigger has two entries, which pro
 
     ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
 
-::: moniker-end
-
 #### Example: Nightly build with different frequencies
-
-::: moniker range="<=azure-devops"
-
-**Azure Pipelines and Azure DevOps 2019 Server**
 
 In this example, the classic editor scheduled trigger has two entries, producing the following builds.
 
@@ -289,15 +269,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
     ![Scheduled trigger frequency 2, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-weekly-night.png)
 
-::: moniker-end
+:::zone-end
 
-* * *
+:::zone pivot="pipelines-yaml"
 
 ## Cron syntax
-
-#### [YAML](#tab/yaml/)
-
-::: moniker range="<=azure-devops"
 
 Each Azure Pipelines scheduled trigger cron expression is a space-delimited expression with five entries in the following order. The expression is enclosed in single quotes `'`.
 
@@ -370,19 +346,11 @@ Build a UTC cron expression for Monday through Friday at 12:30 AM Central Europe
 
 *Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
-::: moniker-end
-
-#### [Classic](#tab/classic/)
-
-Classic schedules are defined using a graphical editor instead of cron syntax. For information on defining classic schedules, see [Examples](#examples).
-
-* * *
+:::zone-end
 
 ## Scheduled runs view
 
-#### [YAML](#tab/yaml/)
-
-::: moniker range="<=azure-devops"
+:::zone pivot="pipelines-yaml"
 
 You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline.
 
@@ -411,10 +379,9 @@ The **Scheduled runs** windows displays the times converted to the local time zo
 > [!NOTE]
 > If you update the schedule for a running pipeline, the **Scheduled runs** view isn't updated with the new schedule until the currently running pipeline completes.
 
-::: moniker-end
+:::zone-end
 
-#### [Classic](#tab/classic/)
-::: moniker range=">= azure-devops-2020"
+:::zone pivot="pipelines-classic"
 
 You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline. 
 
@@ -424,22 +391,14 @@ After you create or update your scheduled triggers, you can verify them using th
 
 ![Scheduled runs](media/triggers/scheduled-runs-classic.png)
 
-::: moniker-end
-
-* * *
+:::zone-end
 
 <a name="always"></a>
 ## Running even when there are no code changes
 
-::: moniker range="<=azure-devops"
-
 By default, your pipeline doesn't run as scheduled if there have been no code changes since the last successful scheduled run. For instance, consider that you've scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you don't make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline doesn't run as scheduled during the weekend. 
 
-::: moniker-end
-
-#### [YAML](#tab/yaml/)
-
-::: moniker range="<=azure-devops"
+:::zone pivot="pipelines-yaml"
 
 To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
 
@@ -450,19 +409,17 @@ schedules:
   always: true
 ```
 
-::: moniker-end
+:::zone-end
 
-#### [Classic](#tab/classic/)
-
-::: moniker range="<=azure-devops"
+:::zone pivot="pipelines-classic"
 
 To configure the scheduled pipeline to build only if there has been a change since the last build, check **Only schedule builds if the source or pipeline has changed**.
 
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
-::: moniker-end
+:::zone-end
 
-* * *
+:::zone pivot="pipelines-yaml"
 
 <a name="limits"></a>
 ## Limits on the number of scheduled runs in YAML pipelines
@@ -471,7 +428,8 @@ There are certain limits on how often you can schedule a pipeline to run. These 
 - around 1000 runs per pipeline per week
 - 10 runs per pipeline per 15 minutes
 
-::: moniker range="<=azure-devops"
+:::zone-end
+
 ## Migrating from the classic editor
 
 The following examples show you how to migrate your schedules from the classic editor to YAML.
@@ -568,10 +526,6 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 * Days of the week - `Sun` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `0`.
 * We also specify `always: true` since this build is scheduled to run whether or not the source code has been updated.
 
-::: moniker-end
-
-::: moniker range=">=azure-devops-2020"
-
 ## FAQ
 
 * [I want my pipeline to run only on the schedule and not when someone pushes a change to a branch](#i-want-my-pipeline-to-run-only-on-the-schedule-and-not-when-someone-pushes-a-change-to-a-branch)
@@ -650,4 +604,4 @@ schedules:
 
 For more information, see [Branch considerations for scheduled triggers](#branch-considerations-for-scheduled-triggers).
 
-::: moniker-end
+

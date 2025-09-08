@@ -2,8 +2,6 @@
 title: Secure files for Azure Pipelines
 description: Understand how to add and consume secure files for Azure Pipelines.
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
-ms.author: vijayma
-author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 07/31/2024
 ms.topic: how-to

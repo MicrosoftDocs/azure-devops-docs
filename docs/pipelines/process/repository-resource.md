@@ -2,7 +2,6 @@
 title: Add protection to a repository resource
 description: Add checks and pipeline protection to a repository
 ms.custom: pipelinesresourcesrefresh
-ms.reviewer: vijayma
 ms.date: 09/15/2022
 ms.topic: how-to
 monikerRange: "<=azure-devops"

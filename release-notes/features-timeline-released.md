@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 8/11/2025
+ms.date: 09/05/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="5"><a href="2025/sprint-261-update.md" data-raw-source="[4 September 2025](2025/sprint-261-update.md)"> September 4 2025</a></td>
+    <td>New SARIF processing completed service hook event</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>OAuth client secrets now shown only once</td><td>General</td><td>N/A</td></tr>
+    <td>Dynamic checklist support in work item Markdown fields</td><td>Boards</td><td>Future</td></tr>
+    <td>Improved navigation for pull request threads and discussions</td><td>Repos</td><td>Future</td></tr>
+    <td>Associate automated tests to test cases</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
     <td rowspan="9"><a href="2025/sprint-260-update.md" data-raw-source="[11 August 2025](2025/sprint-260-update.md)"> August 11 2025</a></td>
     <td>Only organizations with existing public projects can create new ones</td><td>General</td><td>N/A</td></tr>

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Steps for how to grant or restrict access to a Git repository feature. 
 ms.service: azure-devops-repos
 ms.topic: quickstart
-ms.author: vijayma
-author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 04/14/2021
 ms.subservice: azure-devops-repos-git

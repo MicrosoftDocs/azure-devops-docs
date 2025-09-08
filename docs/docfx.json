@@ -143,9 +143,9 @@
         "pipelines/tasks/**": "sdanie",
         "pipelines/test/**": "jeom",
         "service-hooks/**": "aaronha",
-        "repos/tfvc/**": "vijayma",
-        "repos/get-started/**": "vijayma",
-        "repos/git/**": "vijayma",
+        "repos/tfvc/**": "alexpysanets",
+        "repos/get-started/**": "alexpysanets",
+        "repos/git/**": "alexpysanets",
         "test/**": "jeom"
       },
       "author": {
@@ -177,8 +177,8 @@
         "pipelines/test/**": "raviLiftr",
         "service-hooks/**": "aaronhallberg",
         "repos/tfvc/**": "MaximMalygin",
-        "repos/get-started/**": "vijayma",
-        "repos/git/**": "vijayma",
+        "repos/get-started/**": "Battle-born",
+        "repos/git/**": "Battle-born",
         "test/**": "raviLiftr"
       },
       "ms.service": {

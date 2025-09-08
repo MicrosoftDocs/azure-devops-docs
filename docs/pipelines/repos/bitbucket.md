@@ -2,8 +2,6 @@
 title: Build Bitbucket Cloud repositories
 description: Using a Bitbucket Cloud repository with Azure Pipelines
 ms.topic: reference
-ms.author: vijayma
-author: vijayma
 ms.date: 10/27/2023
 monikerRange: azure-devops
 ---

@@ -3,8 +3,6 @@ title: Build and test Ruby apps
 description: Learn how to use Azure Pipelines and scripts to build and test your Ruby projects.
 ms.topic: quickstart
 ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
-ms.author: vijayma
-author: vijayma
 ms.reviewer: dastahel
 ms.custom: freshness-fy22q2, kr2b-contr-experiment
 ms.date: 06/09/2025
