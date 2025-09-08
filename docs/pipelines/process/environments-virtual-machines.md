@@ -7,6 +7,8 @@ ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: mijacobs
 ms.date: 09/08/2025
 monikerRange: '>= azure-devops-2020'
+#customer intent: As an Azure Pipelines user, I want to learn how to create and add VM resources to environments so I can deploy pipeline jobs to different targets like Test or Production.
+
 ---
 
 # Manage VM resources in environments
@@ -15,7 +17,7 @@ monikerRange: '>= azure-devops-2020'
 
 An Azure Pipelines [environment](environments.md) is a group of [resources](about-resources.md) that you can target with deployments from a pipeline. Typical environments include Development, Test, or Production.
 
-To add physical or virtual machine (VM) resources to environments, you install agents on the machines. The environment's deployment history provides traceability from each machine. This article describes how to define and use environments to manage deployments across VM or server resources.
+To add physical or virtual machine (VM) resources to environments, you install agents on the machines. The environment's deployment history then provides traceability from each machine. This article describes how to define and use environments to manage deployments across VM or server resources.
 
 >[!NOTE]
 > Azure DevOps environments are available only for YAML pipelines. For Classic pipelines, [deployment groups](../release/deployment-groups/index.md) provide similar functionality.
@@ -44,7 +46,7 @@ To carry out the procedures in this article, you need the following prerequisite
 
 Use the following procedure to add a VM or physical machine to an environment.
 
-### Create the environment with VM resource
+### Create the environment with a VM resource
 
 1. In your Azure DevOps project, go to **Pipelines** > **Environments** and then select **Create environment** or **New environment**.
 1. On the **New environment** screen, enter a **Name** and optional **Description**.
@@ -64,7 +66,7 @@ The agent scripts for VM resources are like the scripts for self-hosted agents, 
 1. On the **Virtual machine resource** screen, choose Linux under **Operating system**.
 1. Select the icon to copy the Linux registration script.
 
-   :::image type="content" source="media/vm-creation-linux.png" alt-text="Screenshot that shows adding a virtual machine.":::
+   :::image type="content" source="media/vm-creation-linux.png" alt-text="Screenshot that shows adding a Linux virtual machine.":::
 
 The script is the same for all the Linux VMs added to the environment. For more information about installing the agent script, see [Self-hosted Linux agents](../agents/linux-agent.md).
 
@@ -73,7 +75,7 @@ The script is the same for all the Linux VMs added to the environment. For more 
 1. On the **Virtual machine resource** screen, choose Windows under **Operating system**.
 1. Select the icon to copy the [PowerShell](/powershell/scripting/overview) registration script.
 
-   :::image type="content" source="media/vm-creation.png" alt-text="Add a virtual machine.":::    
+   :::image type="content" source="media/vm-creation.png" alt-text="Screenshot that shows adding a Windows virtual machine.":::
 
 The script is the same for all the Windows VMs added to the environment. For more information about installing the agent script, see [Self-hosted Windows agents](../agents/windows-agent.md).
 
@@ -81,14 +83,14 @@ The script is the same for all the Windows VMs added to the environment. For mor
 
 ### Run the copied registration script on the VM
 
-1. Select **Close**. The new environment is created. To copy the script again, for example if your PAT expires before you can install the agent, select **Add resource** again on the environment's page.
+1. Select **Close**. The new environment is created. To copy the script again, for example if your PAT expires, select **Add resource** again on the environment's page.
 
    :::image type="content" source="media/environment-new.png" alt-text="Screenshot of the new environment created message.":::
 
 1. Run the copied script on each target VM that you want to register with the environment.
 
    > [!NOTE]
-   > If the VM already has another agent running on it, provide a unique name for the `agent` to register with the environment.
+   > If the VM already has another agent running on it, provide a unique name for the new `agent` to register with the environment.
 
 Once the VM is registered, it appears as a resource under the **Resources** tab of the Azure Pipelines environment.
 
@@ -96,9 +98,9 @@ Once the VM is registered, it appears as a resource under the **Resources** tab 
 
 ## Use environments in YAML pipelines
 
-You can target VM resources in your YAML deployment job by referencing their environment. For more information about YAML deployment jobs, see [Deployment jobs](deployment-jobs.md) and the [jobs.deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment) definition in the [YAML pipelines schema reference](/azure/devops/pipelines/yaml-schema).
+You can target VM resources in your YAML deployment jobs by referencing their environment. For more information about YAML deployment jobs, see [Deployment jobs](deployment-jobs.md) and the [jobs.deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment) definition in the [YAML pipelines schema reference](/azure/devops/pipelines/yaml-schema).
 
-The following pipeline runs only on VMs in the `VMEnv` environment.
+The following pipeline deployment job runs only on VMs in the `VMEnv` environment.
 
 ```yaml
 trigger: 
@@ -109,7 +111,7 @@ pool:
 
 jobs:
 - deployment: VMDeploy
-  displayName: Deploy to VM
+  displayName: Deploy to VMenv
   environment: VMenv
   strategy:
      runOnce:
@@ -129,7 +131,7 @@ pool:
 
 jobs:
 - deployment: VMDeploy
-  displayName: Deploy to VM
+  displayName: Deploy to RESOURCE-PC in VMenv
   environment: VMenv.RESOURCE-PC  # only deploy to the VM resource named RESOURCE-PC
   strategy:
      runOnce:
@@ -148,7 +150,7 @@ pool:
 
 jobs:
 - deployment: VMDeploy
-  displayName: Deploy to VM
+  displayName: Deploy to RESOURCE-PC in VMenv with full syntax
   environment: 
     name: VMenv
     resourceType: virtualMachine
@@ -162,7 +164,7 @@ jobs:
 
 >[!NOTE]
 >- The `resourceType` values like `virtualMachine` are case sensitive. Incorrect casing results in no matching resources found.
->- If you retry a stage, the deployment reruns on all specified VMs, not just failed targets.
+>- If you retry a stage, the deployment reruns on all specified VMs, not just on failed targets.
 
 ### Deployment strategy
 
@@ -174,13 +176,13 @@ The first time you run the pipeline that uses the environment, you must grant pe
 
 ## Add and manage tags
 
-Tags are a way to target a specific set of environment VMs for deployment. The pipeline deploys only to environment VMs that have the tags applied.
+Tags are a way to target a specific set of environment VMs for deployment. When you specify `tags` in the `environment` keyword, the pipeline deploys only to environment VMs that have the tags applied.
 
-You can apply or remove tags on the VM's Azure portal page, or interactively when you register the agent script on the VM.
+There's no limit to the number of tags that you can apply to VMs. Tag names are limited to 256 characters each.
+
+You can apply or remove tags on VMs from the VM's Azure portal page, or interactively when you register the agent script on the VM.
 
 :::image type="content" source="media/vm-tags.png" alt-text="Screenshot that shows setting VM tags.":::
-
-There's no limit to the number of tags that you can apply. Tag names are limited to 256 characters each.
 
 >[!TIP]
 >You can also apply tags when installing the registration script unattended by specifying `addvirtualmachineresourcetags` and listing a comma-separated list of tags in `virtualmachineresourcetags <tags>`. For more information, see [Unattended configuration](../agents/windows-agent.md#environments-only).
@@ -210,7 +212,7 @@ jobs:
 
 ## View deployment history
 
-Select the **Deployments** tab for complete traceability of commits and work items, and a cross-pipeline deployment history per environment and resource.
+Select the **Deployments** tab of the environment page for complete traceability of commits and work items and a cross-pipeline deployment history per environment and resource.
 
 :::image type="content" source="media/vm-deployments.png" alt-text="Screenshot that shows VM Deployments view.":::
 
@@ -237,5 +239,6 @@ To remove a VM from a Windows environment, run the following command on the VM f
 ## Related content
 
 - [Create and target environments](environments.md)
+- [Environment - Kubernetes resource](environments-kubernetes.md)
 - [Deployment jobs](deployment-jobs.md)
 - [YAML pipelines schema reference](/azure/devops/pipelines/yaml-schema)
