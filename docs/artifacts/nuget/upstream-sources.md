@@ -31,7 +31,7 @@ If you haven't created a feed yet, follow the steps below to create a new feed a
 
 1. Provide a **Name** for your feed, select the **Visibility** option to define who can view your packages, and choose your **Scope**. Azure Artifacts recommends scoping feeds to a project rather than the entire organization. 
 
-1. Make sure to check the **Include packages from common public sources** option, as you'll need this to consume packages from public registries such as *nuget.org*, *npmjs.com* etc..
+1. Make sure to check the **Include packages from common public sources** option, as you'll need this to consume packages from public registries such as *nuget.org*, *npmjs.com* etc.
 
 1. Select **Create** when you're done.
 
