@@ -25,7 +25,7 @@ Boards provide an intuitive and visual way to manage your projects, track work i
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
-[!INCLUDE [mcp-server-tip](../includes/mcp-server-tip.md)]
+[!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)]
 
 [!INCLUDE [temp](../includes/open-kanban-board.md)] 
 

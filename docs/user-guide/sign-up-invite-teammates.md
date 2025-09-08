@@ -38,7 +38,7 @@ Sign up for Azure DevOps with either a Microsoft account or GitHub account.
 
 ---
 
-[!INCLUDE [mcp-server-tip](../boards/includes/mcp-server-tip.md)]
+[!INCLUDE [enable-mcp-server](../boards/includes/enable-mcp-server.md)]
 
 ## Next steps  
  

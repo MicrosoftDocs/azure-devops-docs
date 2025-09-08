@@ -45,7 +45,7 @@ To start using the Azure DevOps extension for Azure CLI:
    az devops configure --defaults organization=https://dev.azure.com/contoso project=ContosoWebApp
    ```
 
-[!INCLUDE [mcp-server-tip](../boards/includes/mcp-server-tip.md)]
+[!INCLUDE [enable-mcp-server](../boards/includes/enable-mcp-server.md)]
 
 ## Use commands
 

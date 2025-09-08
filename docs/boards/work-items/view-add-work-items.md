@@ -35,7 +35,7 @@ You can add work items in the following ways:
 
 These methods provide flexibility in how you manage and track your work items within Azure DevOps.
 
-[!INCLUDE [mcp-server-tip](../includes/mcp-server-tip.md)]
+[!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)]
 
 ## Prerequisites
 

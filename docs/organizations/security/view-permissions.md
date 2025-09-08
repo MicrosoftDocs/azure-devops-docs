@@ -203,7 +203,7 @@ Do the following steps to view object-level permissions for you or other users.
    :::column-end:::
 :::row-end:::
 
-[!INCLUDE [mcp-server-tip](../../boards/includes/mcp-server-tip.md)]
+[!INCLUDE [enable-mcp-server](../../boards/includes/enable-mcp-server.md)]
 
 ## Next steps
 
