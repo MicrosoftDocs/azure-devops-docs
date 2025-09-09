@@ -29,7 +29,7 @@ Based on these conditions, you can grant access, require more checks like multif
 |**Permissions**| You must be at least a **Conditional Access Administrator** to set up a Conditional Access policy in your tenant. Learn more in the ["Create a Conditional Access policy" Entra docs](/entra/identity/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy). |
 
 > [!WARNING]
-> [External authentication methods](/entra/identity/authentication/how-to-authentication-external-method-manage) are currently incompatible with authentication strength. You should use the **[Require multifactor authentication](/entra/identity/conditional-access/concept-conditional-access-grant#require-multifactor-authentication)** grant control.
+> [External authentication methods](/entra/identity/authentication/how-to-authentication-external-method-manage) are currently incompatible with authentication strength. You should use the **[Require multifactor authentication](/entra/identity/conditional-access/concept-conditional-access-grant#require-multifactor-authentication)** grant control. This example uses the [built-in multifactor authentication strength](/entra/identity/authentication/concept-authentication-strengths), some organizations may choose to use a stronger authentication strength like passwordless or phishing-resistant.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator).
 1. Browse to **Entra ID** > **Conditional Access** > **Policies**.
