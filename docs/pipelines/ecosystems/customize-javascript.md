@@ -13,6 +13,7 @@ This article explains how Azure Pipelines works with JavaScript apps. [Microsoft
 
 To quickly create a pipeline for JavaScript, see the [JavaScript quickstart](javascript.md).
 
+<a name="use-a-specific-version-of-nodejs"></a>
 ## Node tool installer tasks
 
 To install Node.js and npm versions that aren't preinstalled, or install on self-hosted agents:
@@ -187,6 +188,7 @@ You can also call compilers directly from the pipeline by using a script. These 
 
 You can use the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) task to build the code if you have a compile script defined in your project *package.json*, or use the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task to compile your code if you don't define a compile script.
 
+<a name="run-unit-tests></a>
 ## Unit testing
 
 You can configure your pipelines to run your JavaScript tests so they produce results formatted in the JUnit XML format. You can then publish the results using the [Publish test results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task.
@@ -376,16 +378,6 @@ To create a .zip file archive that is ready for publishing to a web app, use the
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
-
-
-## Build and push image to container registry
-
-Once your source code builds successfully and your unit tests are in place and successful, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
-
-::: moniker-end
-
-<a name="troubleshooting"></a>
 
 ## JavaScript frameworks
 
@@ -419,6 +411,8 @@ Add the following tasks to your pipeline:
 - **bash**
   * **Type:** `inline`
   * **Script:** `ng build --prod`
+
+::: moniker-end
 
 For tests in your pipeline that require a browser to run, such as running Karma in the the `ng test` command, use a headless browser instead of a standard browser. In the Angular starter app:
 
@@ -495,9 +489,11 @@ Add the following tasks to your pipeline:
   * **Type:** `inline`
   * **Script:** `npx webpack --config webpack.config.js`
 
+::: moniker-end
+
 ### Build task runners
 
-It's common to use [Gulp](https://gulpjs.com/) or [Grunt](https://gruntjs.com/) as a task runner to build and test a JavaScript app.
+It's common to use [Gulp](https://gulpjs.com/) or [Grunt](https://gruntjs.com/) as task runners to build and test JavaScript apps.
 
 #### Gulp
 
@@ -616,6 +612,7 @@ If you can build your project on your development machine but can't build it in 
 
 This failure type occurs when the Node.js package exceeds the memory usage limit. To resolve the issue, add a variable like `NODE_OPTIONS` and assign it a value of `--max_old_space_size=16384`.
 
+<a name="q-how-can-i-version-my-npm-packages-as-part-of-the-build-process"></a>
 ### How can I version my npm packages as part of the build process?
 
 One option is to use a combination of version control and [npm version](https://docs.npmjs.com/cli/version). At the end of a pipeline run, you can update your repo with the new version. The following YAML pipeline has a GitHub repo, and the package deploys to npmjs. The build fails if there's a mismatch between the package version on npmjs and the *package.json* file. 
