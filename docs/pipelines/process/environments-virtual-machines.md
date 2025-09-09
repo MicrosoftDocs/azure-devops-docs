@@ -59,7 +59,7 @@ Use the following procedure to add a VM or physical machine to an environment.
 The agent scripts for VM resources are like the scripts for self-hosted agents, and use the same commands. The scripts include an Azure DevOps Personal Access Token (PAT) for the signed-in user, which expires three hours after the script is generated. You need the PAT only to install the agent.
 
 > [!NOTE]
-> To configure a deployment group agent, or if you see an error when registering the VM environment resource, set your personal access token (PAT) scope to **Full access** in your Azure DevOps account settings.
+> To configure a deployment group agent, or if you get an error when registering the VM environment resource, try setting your PAT **Access scope** to **All accessible organizations** in **User settings** > **Personal access tokens**.
 
 ### [Linux](#tab/linux)
 
