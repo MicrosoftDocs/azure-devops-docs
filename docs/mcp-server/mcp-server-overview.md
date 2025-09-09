@@ -90,16 +90,13 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 | **Example prompt** | "Get my work items for project MyProject and help me prepare for standup - what did I complete, what am I working on, and what's blocked?" |
 | **Query translation** | WIQL query to retrieve your assigned work items, filtered by project and excluding removed items, ordered by most recent changes |
 | **Raw data result** | Six work items including bugs, tasks, user stories, and features with their current states (Resolved, Done, Active, New, Blocked) |
-
-**AI assistant standup summary:**
-
+| **AI assistant standup summary**|
 | Status | Work Items |
 |--------|------------|
 | ✅ **Completed** | Bug #4521: "Sign in page crashes on mobile Safari" - Resolved yesterday<br>Task #4498: "Update API documentation for v2.1" - Completed 2 days ago |
 | 🔄 **In Progress** | User Story #4456: "Implement two-factor authentication" - In Progress (three days)<br>└── Subtasks: Database schema (Done), UI components (In Progress), Testing (Not Started)<br><br>Bug #4534: "Performance issue with large datasets" - Active (one day) |
-| ⚠️ **Blocked** | Feature #4423: "Integration with external payment gateway" - Blocked<br>└── Waiting for: Security team approval (blocked five days)<br>└── Action needed: Follow up with Sarah from InfoSec team<br><br>Task #4467: "Deploy to staging environment" - Impediment<br>└── Issue: Staging server maintenance scheduled today 2-4 PM |
-
-**Summary for standup**: Yesterday: Resolved mobile Safari sign-in issue, completed API docs. Today: Continue 2FA implementation, investigate dataset performance issue. Blockers: Need security approval for payment integration, staging deployment delayed due to maintenance.
+| ⚠️ **Blocked** | Feature #4423: "Integration with external payment gateway" - Blocked<br>└── Waiting for: Security team approval (blocked five days)<br>└── Action needed: Follow up with Sarah from InfoSec team<br><br>Task #4467: "Deploy to staging environment" - Impediment<br>└── Issue: Staging server maintenance scheduled today 2-4 PM ||
+|**Summary for standup**| Yesterday: Resolved mobile Safari sign-in issue, completed API docs. Today: Continue 2FA implementation, investigate dataset performance issue. Blockers: Need security approval for payment integration, staging deployment delayed due to maintenance.|
 
 ### Sprint planning support
 
