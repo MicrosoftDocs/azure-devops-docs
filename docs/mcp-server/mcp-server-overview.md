@@ -85,7 +85,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 
 :::row:::
        :::column span="1":::
-       **Component**
+       **Component**<hr>
        :::column-end:::
        :::column span="2":::
        **Description**<hr>
@@ -93,7 +93,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **MCP Server provides** 
+       **MCP Server provides**<hr> 
        :::column-end:::
        :::column span="2":::
        Access to your assigned work items and recent updates<hr>
@@ -101,7 +101,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **AI assistant action** 
+       **AI assistant action**<hr> 
        :::column-end:::
        :::column span="2":::
        Analyzes the data to help you prepare for standup<hr>
@@ -109,7 +109,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Example prompt** 
+       **Example prompt**<hr> 
        :::column-end:::
        :::column span="2":::
        "Get my work items for project MyProject and help me prepare for standup - what did I complete, what am I working on, and what's blocked?"<hr>
@@ -117,7 +117,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Query translation** 
+       **Query translation**<hr> 
        :::column-end:::
        :::column span="2":::
         WIQL query to retrieve your assigned work items, filtered by project and excluding removed items, ordered by most recent changes<hr>
@@ -125,7 +125,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Raw data result** 
+       **Raw data result**<hr> 
        :::column-end:::
        :::column span="2":::
         Six work items including bugs, tasks, user stories, and features with their current states (Resolved, Done, Active, New, Blocked)<hr>
@@ -150,7 +150,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 
 :::row:::
        :::column span="1":::
-       **Component**
+       **Component**<hr>
        :::column-end:::
        :::column span="2":::
        **Description**<hr>
@@ -158,7 +158,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **MCP Server provides** 
+       **MCP Server provides**<hr> 
        :::column-end:::
        :::column span="2":::
        Access to backlog items, team data, and work item details<hr>
@@ -166,7 +166,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **AI assistant action** 
+       **AI assistant action**<hr> 
        :::column-end:::
        :::column span="2":::
        Helps analyze capacity and plan the sprint<hr>
@@ -174,7 +174,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Example prompt** 
+       **Example prompt**<hr> 
        :::column-end:::
        :::column span="2":::
        "Get all work items in the product backlog for MyProject and prioritize them for a two-week sprint with three developers"<hr>
@@ -182,7 +182,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Query translation** 
+       **Query translation**<hr> 
        :::column-end:::
        :::column span="2":::
         WIQL query to retrieve backlog items with story points, priority, and state information, ordered by priority and stack rank<hr>
@@ -190,7 +190,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Raw data result**
+       **Raw data result**<hr>
        :::column-end:::
        :::column span="2":::
         Nine backlog items including epics, features, user stories, bugs, and tasks with story points and dependencies, plus team metrics (three developers, 14-day sprint, 60-point velocity)<hr>
@@ -198,7 +198,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::    
 :::row:::
        :::column span="1":::
-       **AI assistant output**
+       **AI assistant output**<hr>
        :::column-end:::
        :::column span="2":::
         |Category | Work Items | Points |
@@ -213,7 +213,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 
 :::row:::
        :::column span="1":::
-       **Component**
+       **Component**<hr>
        :::column-end:::
        :::column span="2":::
        **Description**<hr>
@@ -221,7 +221,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **MCP Server provides** 
+       **MCP Server provides**<hr> 
        :::column-end:::
        :::column span="2":::
        Pull request details and linked work item information<hr>
@@ -229,7 +229,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **AI assistant action** 
+       **AI assistant action**<hr> 
        :::column-end:::
        :::column span="2":::
        Provides business context for technical changes<hr>
@@ -237,7 +237,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Example prompt** 
+       **Example prompt**<hr> 
        :::column-end:::
        :::column span="2":::
        "Get details for pull request #67 and its linked work items and help me understand the business effect of these code changes"<hr>
@@ -245,7 +245,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **API translation** 
+       **API translation**<hr> 
        :::column-end:::
        :::column span="2":::
         REST API calls to retrieve pull request details and linked work item information with expanded relations<hr>
@@ -253,7 +253,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Raw data result** 
+       **Raw data result**<hr> 
        :::column-end:::
        :::column span="2":::
         Pull request #67 (caching layer implementation, eight files changed, +156/-42 lines) and two linked work items (performance user story and settings bug)<hr>
@@ -261,7 +261,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::    
 :::row:::
        :::column span="1":::
-       **AI assistant output** 
+       **AI assistant output**<hr> 
        :::column-end:::
        :::column span="2":::
         | Component | Details |
@@ -275,7 +275,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 
 :::row:::
        :::column span="1":::
-       **Component**
+       **Component**<hr>
        :::column-end:::
        :::column span="2":::
        **Description**<hr>
@@ -283,7 +283,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **MCP Server provides** 
+       **MCP Server provides**<hr> 
        :::column-end:::
        :::column span="2":::
        Access to work items, builds, and project data<hr>
@@ -291,7 +291,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **AI assistant action** 
+       **AI assistant action**<hr> 
        :::column-end:::
        :::column span="2":::
        Creates summaries and identifies trends<hr>
@@ -299,7 +299,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Example prompt** 
+       **Example prompt**<hr> 
        :::column-end:::
        :::column span="2":::
        "Get all completed work items from the last sprint and create a summary report for stakeholders highlighting key accomplishments and metrics"<hr>
@@ -307,7 +307,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Query translation** 
+       **Query translation**<hr> 
        :::column-end:::
        :::column span="2":::
         WIQL query to retrieve completed work items from current iteration with story points and completion dates, ordered by most recent<hr>
@@ -315,7 +315,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::
 :::row:::
        :::column span="1":::
-       **Raw data result** 
+       **Raw data result**<hr> 
        :::column-end:::
        :::column span="2":::
         Six work items from last sprint including bugs, tasks, user stories, and features with completion states and story points<hr>
@@ -323,7 +323,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 :::row-end:::    
 :::row:::
        :::column span="1":::
-       **AI assistant output** 
+       **AI assistant output**<hr> 
        :::column-end:::
        :::column span="2":::
         |Metric | Results |
