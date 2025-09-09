@@ -92,9 +92,9 @@ The script is the same for all the Windows VMs added to the environment. For mor
    > [!NOTE]
    > If the VM already has another agent running on it, provide a unique name for the new `agent` to register with the environment.
 
-Once the VM is registered, it appears as a resource under the **Resources** tab of the Azure Pipelines environment.
+1. Once the VM is registered, verify that it appears on the **Resources** tab of the Azure Pipelines environment page.
 
-:::image type="content" source="media/vm-resourceview.png" alt-text="Screenshot of the Resources tab.":::
+   :::image type="content" source="media/vm-resourceview.png" alt-text="Screenshot of the Resources tab.":::
 
 ## Use environments in YAML pipelines
 
@@ -168,7 +168,7 @@ jobs:
 
 ### Deployment strategy
 
-You can apply a deployment `strategy` to define how to roll out your application. VMs support both the `runOnce` and the `rolling` strategies. For more information about deployment strategies and lifecycle hooks, see [Deployment strategies](./deployment-jobs.md#deployment-strategies).
+In a deployment job, you apply a deployment `strategy` to define how to roll out your application. VMs support both the `runOnce` and the `rolling` strategies. For more information about deployment strategies and lifecycle hooks, see [Deployment strategies](./deployment-jobs.md#deployment-strategies).
 
 ### Permissions
 
@@ -187,7 +187,7 @@ You can apply or remove tags on VMs from the VM's Azure portal page, or interact
 >[!TIP]
 >You can also apply tags when installing the registration script unattended by specifying `addvirtualmachineresourcetags` and listing a comma-separated list of tags in `virtualmachineresourcetags <tags>`. For more information, see [Unattended configuration](../agents/windows-agent.md#environments-only).
 
-If you specify multiple tags, the pipeline uses only VMs that include all the tags. The following example targets only VMs that have both the `windows` and `prod` tags. The pipeline doesn't deploy to VMs that have only one or none of the tags.
+If you specify multiple tags, the pipeline deploys only to VMs that include all the tags. The following example targets only VMs that have both the `windows` and `prod` tags. The pipeline doesn't deploy to VMs that have only one or none of the tags.
 
 ```yaml
 trigger: 
