@@ -83,20 +83,72 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 
 ### Daily standup preparation
 
-| Component | Description |
-|-----------|-------------|
-| **MCP Server provides** | Access to your assigned work items and recent updates |
-| **AI assistant does** | Analyzes the data to help you prepare for standup |
-| **Example prompt** | "Get my work items for project MyProject and help me prepare for standup - what did I complete, what am I working on, and what's blocked?" |
-| **Query translation** | WIQL query to retrieve your assigned work items, filtered by project and excluding removed items, ordered by most recent changes |
-| **Raw data result** | Six work items including bugs, tasks, user stories, and features with their current states (Resolved, Done, Active, New, Blocked) |
-| **AI assistant standup summary**|
-| Status | Work Items |
+:::row:::
+       :::column span="1":::
+       Component
+       :::column-end:::
+       :::column span="2":::
+       Description
+       :::column-end:::
+    :::row-end:::
+    :::row:::
+       :::column span="1":::
+       **MCP Server provides** 
+       :::column-end:::
+       :::column span="2":::
+       Access to your assigned work items and recent updates
+       :::column-end:::
+    :::row-end:::
+    :::row:::
+       :::column span="1":::
+       **AI assistant does** 
+       :::column-end:::
+       :::column span="2":::
+       Analyzes the data to help you prepare for standup
+       :::column-end:::
+    :::row-end:::
+    :::row-end:::
+    :::row:::
+       :::column span="1":::
+       **Example prompt** 
+       :::column-end:::
+       :::column span="2":::
+       "Get my work items for project MyProject and help me prepare for standup - what did I complete, what am I working on, and what's blocked?"
+       :::column-end:::
+    :::row-end:::
+    :::row:::
+       :::column span="1":::
+       **Query translation** 
+       :::column-end:::
+       :::column span="2":::
+        WIQL query to retrieve your assigned work items, filtered by project and excluding removed items, ordered by most recent changes
+       :::column-end:::
+    :::row-end:::
+    :::row:::
+       :::column span="1":::
+       **Raw data result** 
+       :::column-end:::
+       :::column span="2":::
+        Six work items including bugs, tasks, user stories, and features with their current states (Resolved, Done, Active, New, Blocked)
+       :::column-end:::
+    :::row-end:::    
+    :::row:::
+       :::column span="1":::
+       **AI assistant standup summary** 
+       :::column-end:::
+       :::column span="2":::
+        | Status | Work Items |
 |--------|------------|
 | ✅ **Completed** | Bug #4521: "Sign in page crashes on mobile Safari" - Resolved yesterday<br>Task #4498: "Update API documentation for v2.1" - Completed 2 days ago |
 | 🔄 **In Progress** | User Story #4456: "Implement two-factor authentication" - In Progress (three days)<br>└── Subtasks: Database schema (Done), UI components (In Progress), Testing (Not Started)<br><br>Bug #4534: "Performance issue with large datasets" - Active (one day) |
 | ⚠️ **Blocked** | Feature #4423: "Integration with external payment gateway" - Blocked<br>└── Waiting for: Security team approval (blocked five days)<br>└── Action needed: Follow up with Sarah from InfoSec team<br><br>Task #4467: "Deploy to staging environment" - Impediment<br>└── Issue: Staging server maintenance scheduled today 2-4 PM ||
 |**Summary for standup**| Yesterday: Resolved mobile Safari sign-in issue, completed API docs. Today: Continue 2FA implementation, investigate dataset performance issue. Blockers: Need security approval for payment integration, staging deployment delayed due to maintenance.|
+       :::column-end:::
+    :::row-end:::  
+
+
+
+
 
 ### Sprint planning support
 
