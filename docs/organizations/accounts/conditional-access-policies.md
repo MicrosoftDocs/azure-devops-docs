@@ -38,8 +38,8 @@ Based on these conditions, you can grant access, require more checks like multif
 1. Under **Assignments**, select **Users or workload identities**.
    1. Under **Include**, select **All users**
    1. Under **Exclude**: 
-      1. Select **Users and groups** 
-         1. Choose your organization's emergency access or break-glass accounts.
+      - Select **Users and groups** 
+         - Choose your organization's emergency access or break-glass accounts.
 1. Under **Target resources** > **Resources (formerly cloud apps)** > **Include**, **Select resources**, select _"Azure DevOps"_ or _"Microsoft Visual Studio Team Services"_ resource (resource id: 499b84ac-1321-427f-aa17-267ca6975798) to the list of target resources.
 1. Under **Access controls** > **Grant**, select **Grant access**, **Require authentication strength**, select **Multifactor authentication**, then select **Select**.
 1. Confirm your settings and set **Enable policy** to **Report-only**.
