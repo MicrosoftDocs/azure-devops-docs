@@ -180,12 +180,13 @@ Tags are a way to target a specific set of environment VMs for deployment. When 
 
 There's no limit to the number of tags that you can apply to VMs. Tag names are limited to 256 characters each.
 
-You can apply or remove tags on VMs from the VM's Azure portal page, or interactively when you register the agent script on the VM.
+You can apply or remove tags by selecting the **More actions** icon next to the VM on the environment's **Resources** tab.
 
-:::image type="content" source="media/vm-tags.png" alt-text="Screenshot that shows setting VM tags.":::
+:::image type="content" source="media/vm-tags.png" alt-text="Screenshot that shows setting VM tags in the UI.":::
 
->[!TIP]
->You can also apply tags when installing the registration script unattended by specifying `addvirtualmachineresourcetags` and listing a comma-separated list of tags in `virtualmachineresourcetags <tags>`. For more information, see [Unattended configuration](../agents/windows-agent.md#environments-only).
+You can also apply tags interactively when you register the agent script on the VM.
+
+:::image type="content" source="media/manage-tags.png" alt-text="Screenshot that shows setting VM tags in the interactive script.":::
 
 If you specify multiple tags, the pipeline deploys only to VMs that include all the tags. The following example targets only VMs that have both the `windows` and `prod` tags. The pipeline doesn't deploy to VMs that have only one or none of the tags.
 
