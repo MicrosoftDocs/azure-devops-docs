@@ -13,20 +13,20 @@ monikerRange: 'azure-devops'
 
 # Set up Conditional Access policies on Azure DevOps
 
-Microsoft Entra ID lets tenant admins control which users can access Microsoft resources using [Conditional Access policies](/azure/active-directory/conditional-access/overview). Admins set specific conditions users must meet to gain access, such as:
+Microsoft Entra ID lets tenant admins control which users can access Microsoft resources using [Conditional Access policies](/entra/identity/conditional-access/overview). Admins set specific conditions users must meet to gain access, such as:
 
 - Membership in a specific Microsoft Entra security group
 - Location or network requirements
 - Use of a particular operating system
 - Use of a managed and enabled device
 
-Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. Learn more about [Conditional Access policies](/azure/active-directory/active-directory-conditional-access) in the Microsoft Entra documentation.
+Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. Learn more about [Conditional Access policies](/entra/identity/conditional-access/concept-conditional-access-policies) in the Microsoft Entra documentation.
 
 ## Create a Conditional Access policy for Azure DevOps
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| You must be at least a **Conditional Access Administrator** to set up a Conditional Access policy in your tenant. Learn more in the ["Create a Conditional Access policy" Entra docs](/entra/identity/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy). |
+|**Permissions**| You must be at least a **Conditional Access Administrator** to set up a Conditional Access policy in your tenant. Learn more in the ["Create a Conditional Access policy" Entra docs](/entra/identity/conditional-access/policy-all-users-mfa-strength). |
 
 > [!WARNING]
 > [External authentication methods](/entra/identity/authentication/how-to-authentication-external-method-manage) are currently incompatible with authentication strength. You should use the **[Require multifactor authentication](/entra/identity/conditional-access/concept-conditional-access-grant#require-multifactor-authentication)** grant control. This example uses the [built-in multifactor authentication strength](/entra/identity/authentication/concept-authentication-strengths), some organizations may choose to use a stronger authentication strength like passwordless or phishing-resistant.
