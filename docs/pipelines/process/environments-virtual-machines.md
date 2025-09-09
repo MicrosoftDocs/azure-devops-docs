@@ -28,14 +28,14 @@ To carry out the procedures in this article, you need the following prerequisite
 
 ### [Linux](#tab/linux)
 
-- Access to a source repository where you can create pipelines. For more information, see [Supported source repositories](../repos/index.md)
+- Access to a source repository where you can create pipelines. For more information, see [Supported source repositories](../repos/index.md).
 - [Administrator role](../agents/pools-queues.md#security) for the *deployment pool*, the set of target servers available to your Azure DevOps organization. For more information, see [Set deployment group security in Azure Pipelines](../policies/permissions.md#deployment-group-permissions).
 - Project Administrator or Build Administrator [permissions](../policies/permissions.md) in the Azure DevOps project that contains the environment. For more information, see [Resource security](../security/resources.md).
 - Access and permission to download and run executable scripts on VMs you want to connect to the environment.
 
 ### [Windows](#tab/windows)
 
-- Access to a source repository where you can create pipelines. For more information, see [Supported source repositories](../repos/index.md)
+- Access to a source repository where you can create pipelines. For more information, see [Supported source repositories](../repos/index.md).
 - [Administrator role](../agents/pools-queues.md#security) for the *deployment pool* or set of target servers available to your Azure DevOps organization. For more information, see [Set deployment group security in Azure Pipelines](../policies/permissions.md#deployment-group-permissions).
 - Project Administrator or Build Administrator [permissions](../policies/permissions.md) in the Azure DevOps project that contains the environment. For more information, see [Resource security](../security/resources.md).
 - Access and PowerShell administrator permissions on VMs you want to connect to the environment.
