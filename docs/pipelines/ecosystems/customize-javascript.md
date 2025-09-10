@@ -1,13 +1,14 @@
 ---
-title: Customize pipelines for JavaScript
+title: Pipelines for JavaScript apps
 description: Learn about ways to customize pipelines to support building, testing, running, and publishing JavaScript apps.
 ms.topic: conceptual
 ms.custom: devx-track-js, freshness-fy22q2
 ms.date: 09/09/2025
 monikerRange: '<= azure-devops'
+#customer intent: As a JavaScript developer, I want to understand how Azure Pipelines works with JavaScript apps, so I can create pipelines to build, test, run, package, and publish my apps.
 ---
 
-# Customize pipelines for JavaScript
+# Pipelines for JavaScript apps
 
 This article explains how Azure Pipelines works with JavaScript apps. [Microsoft-hosted agents](../agents/hosted.md) preinstall common JavaScript build, test, and deployment tools like npm, Node.js, Yarn, and Gulp without requiring you to set up any infrastructure. You can also preconfigure [self-hosted agents](../agents/agents.md).
 
@@ -98,7 +99,7 @@ To use the npm task:
      command: 'install'
 ```
 
-Tools you install this way use the npm `npx` package runner, which detects the tools in its PATH resolution. The following example calls the `mocha` test runner, and uses the version installed as a development dependency rather than the version installed globally through `npm install -g`.
+Tools you install this way use the npm `npx` package runner, which detects the tools in its PATH resolution. The following example calls the `mocha` test runner, and uses the development dependency version rather than the version installed globally through `npm install -g`.
 
 ```yaml
 - script: npx mocha
@@ -127,7 +128,7 @@ To install tools your project needs that aren't set as development dependencies 
 
 ## Dependency package downloads
 
-You can use [Yarn](https://yarnpkg.com) or Azure Artifacts to download packages from the public npm registry, a type of private npm repository that you specify in an *\*.npmrc* file. To specify an npm registry, add its URL to the *\*.npmrc* file in your code repository.
+You can use [Yarn](https://yarnpkg.com) or Azure Artifacts to download packages from the public npm registry or a private npm registry that you specify in an *\*.npmrc* file. To specify an npm registry, add its URL to the *\*.npmrc* file in your code repository.
 
 ### Use npm
 
@@ -173,7 +174,7 @@ To pass registry credentials to npm commands via task runners such as Gulp, add 
 
 ### Use Yarn
 
-Use a script to invoke [Yarn](https://yarnpkg.com) to restore dependencies. Yarn is preinstalled on some [Microsoft-hosted agents](../agents/hosted.md). You can install and configure Yarn on self-hosted agents like any other tool.
+Use a script to install [Yarn](https://yarnpkg.com) for restoring dependencies. Yarn is preinstalled on some [Microsoft-hosted agents](../agents/hosted.md). You can install and configure Yarn on self-hosted agents like any other tool.
 
 ```yaml
 - script: yarn install
@@ -195,12 +196,12 @@ You can also call compilers directly from the pipeline by using a script. These 
 - script: tsc --target ES6 --strict true --project tsconfigs/production.json
 ```
 
-You can use the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) task to build the code if your project *package.json* defines a compile script. If you don't define a compile script, you can also use the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task to compile your code.
+You can use the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) task to build the code if your project *package.json* defines a compile script. If you don't define a compile script, you can use the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task to compile your code.
 
 <a name="run-unit-tests"></a>
 ## Unit testing
 
-You can configure your pipelines to run your JavaScript tests so they produce results formatted in the JUnit XML format. You can then publish the results using the [Publish test results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task.
+You can configure your pipelines to run your JavaScript tests so they produce results in the JUnit XML format. You can then publish the results using the [Publish test results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task.
 
 If your test framework doesn't support JUnit output, add support through a partner reporting module such as [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter). You can either update your test script to use the JUnit reporter, or pass those options into the task definition if the reporter supports command-line options.
 
@@ -310,7 +311,7 @@ To upload a subset of files, first copy the necessary files from the working dir
 
 If your project's output is an `npm` module for other projects to use and isn't a web application, use the [npm](/azure/devops/pipelines/tasks/reference/npm-v1) task to publish the module to a local registry or to the public npm registry. Provide a unique name/version combination each time you publish.
 
-The following example uses the script to publish to the public npm registry. The example assumes that you manage version information such as [npm version](https://docs.npmjs.com/cli/version) through a *package.json* file in version control. 
+The following example uses the script to publish to the public npm registry. The example assumes that you manage version information such as [npm version](https://docs.npmjs.com/cli/version) through a *package.json* file in version control.
 
 ```yaml
 - script: npm publish
@@ -395,7 +396,7 @@ For Angular apps, you can run Angular-specific commands such as `ng test`, `ng b
 
 ::: moniker range="< azure-devops"
 
-Add and configure the following tasks in your Classic pipeline:
+In a Classic pipeline, add and configure the following tasks:
 
 - **npm**
   - **Command:** `custom`
@@ -465,7 +466,7 @@ To release the app, point your release task to the `dist` or `build` artifact an
 
 ### Webpack
 
-You can use a webpack configuration file to specify a compiler such as Babel or TypeScript, to transpile JSX or TypeScript to plain JavaScript, and to bundle your app.
+You can use a webpack configuration file to specify a compiler such as Babel or TypeScript, to transpile JavaScript XML (JSX) or TypeScript to plain JavaScript, and to bundle your app.
 
 ```yaml
 - script: |
@@ -475,7 +476,7 @@ You can use a webpack configuration file to specify a compiler such as Babel or 
 
 ::: moniker range="< azure-devops"
 
-Add the following tasks to your Classic pipeline:
+In a Classic pipeline, add the following tasks:
 
 - **npm**
   - **Command:** `custom`
@@ -562,7 +563,9 @@ If the steps in your *Gruntfile.js* file require authentication with an npm regi
 
 ::: moniker range="< azure-devops"
 
-The simplest way to create a pipeline if your app uses Grunt is to use the **Node.js with Grunt** build template when you create the pipeline. This template automatically adds various tasks to invoke Gulp commands and to publish artifacts. In the task, select the **Publish to TFS/Team Services** option to publish test results, and select **Enable Code Coverage** to enable code coverage by using Istanbul.
+The simplest way to create a pipeline if your app uses Grunt is to use the **Node.js with Grunt** build template when you create the pipeline. This template automatically adds various tasks to invoke Gulp commands and to publish artifacts.
+
+In the task, select the **Publish to TFS/Team Services** option to publish test results, and select **Enable Code Coverage** to enable code coverage by using Istanbul.
 
 ::: moniker-end
 
@@ -572,13 +575,13 @@ If you can build your project on your development machine but can't build it in 
 
 - Check that the versions of Node.js and the task runner on your development machine match the ones on the agent.
 
-  You can include command-line scripts such as `node --version` in your pipeline to check what's installed on the agent. Either use the `Use Node.js` task to install the same version on the agent, or run `npm install` commands to update the tool versions.
+  You can include command-line scripts such as `node --version` in your pipeline to check the versions installed on the agent. Either use the `Use Node.js` task to install the same version on the agent, or run `npm install` commands to update the tool versions.
 
 - If your builds fail intermittently while you restore packages, either the npm registry has issues, or there are networking problems between the Azure data center and the registry. Explore whether using Azure Artifacts with an npm registry as an upstream source improves the reliability of your builds.
 
 - If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [Use Node.js (UseNode@1)](/azure/devops/pipelines/tasks/reference/use-node-v1) task instead. `nvm` is installed for historical reasons on the macOS image. `nvm` manages multiple Node.js versions by adding shell aliases and altering `PATH`, which interacts poorly with the way Azure Pipelines runs each task in a new process. For more information, see [Pipeline runs](../process/runs.md).
 
-  The [Use Node.js (UseNode@1)](/azure/devops/pipelines/tasks/reference/use-node-v1) task handles this model correctly. However, if your work requires using `nvm`, you can add the following script to the beginning of each pipeline:
+  The `Use Node.js` task handles this model correctly. However, if your work requires using `nvm`, you can add the following script to the beginning of each pipeline:
 
   ```yaml
   steps:
