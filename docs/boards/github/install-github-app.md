@@ -73,6 +73,21 @@ If necessary, to grant GitHub access to your Azure DevOps organization, do the f
 
 <a id="install"></a>
 
+## Check your Third-party application access policy
+
+Ensure your GitHub organization permits third‑party application access for the Azure Boards app. If third‑party access is restricted, adding repositories from Azure DevOps can show an empty list or produce an error.
+
+To enable access:
+
+1. In GitHub, open your organization and go to Settings > OAuth app policy.
+
+2. Approve the Azure Boards app specifically (recommended), or remove restrictions for all third‑party applications.
+
+   :::image type="content" source="media/github-app/third-party-oauth-app-policy-screen-for-boards-app.png" alt-text="Screenshot shows the third-party application access policy.":::
+
+> [!NOTE] 
+> You must be an organization owner or administrator to change this setting.
+
 ## Use the connection 
 
 At this point, your Azure Boards-GitHub integration is complete. You can skip the next steps or go through them to understand the features supported with the connection.  
