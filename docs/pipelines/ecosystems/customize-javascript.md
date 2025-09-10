@@ -3,7 +3,7 @@ title: Pipelines for JavaScript apps
 description: Learn about ways to customize pipelines to support building, testing, running, and publishing JavaScript apps.
 ms.topic: conceptual
 ms.custom: devx-track-js, freshness-fy22q2
-ms.date: 09/09/2025
+ms.date: 09/10/2025
 monikerRange: '<= azure-devops'
 #customer intent: As a JavaScript developer, I want to understand how Azure Pipelines works with JavaScript apps, so I can create pipelines to build, test, run, package, and publish my apps.
 ---
@@ -327,7 +327,7 @@ The following example publishes to a custom registry defined in your repo's *\*.
      publishEndpoint: https://my.npmregistry.com
 ```
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range=">=azure-devops"
 
 The following example publishes the module to an Azure DevOps Services package management feed.
 
