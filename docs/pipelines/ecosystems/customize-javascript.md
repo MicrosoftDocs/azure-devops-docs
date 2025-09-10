@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Pipelines for JavaScript apps
 
-This article explains how Azure Pipelines works with JavaScript apps. [Microsoft-hosted agents](../agents/hosted.md) preinstall common JavaScript build, test, and deployment tools like npm, Node.js, Yarn, and Gulp without requiring you to set up any infrastructure. You can also preconfigure [self-hosted agents](../agents/agents.md).
+This article explains how Azure Pipelines works with JavaScript apps. [Microsoft-hosted agents](../agents/hosted.md) preinstall common JavaScript build, test, and deployment tools like npm, Node.js, Yarn, and Gulp without requiring you to set up any infrastructure. You can also configure [self-hosted agents](../agents/agents.md).
 
 To quickly create a pipeline for JavaScript, see the [JavaScript quickstart](javascript.md).
 
@@ -21,6 +21,8 @@ To install Node.js and npm versions that aren't preinstalled, or to install the 
 
 - For npm, run the `npm i -g npm@version-number` command in your pipeline.
 - For Node.js, add the [Use Node.js ecosystem v1 (UseNode@1)](/azure/devops/pipelines/tasks/reference/use-node-v1) task to your pipeline.
+
+#### [YAML](#tab/yaml)
 
 To install a specific Node.js version, add the following code to your *azure-pipelines.yml* file:
 
@@ -37,7 +39,7 @@ To install a specific Node.js version, add the following code to your *azure-pip
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+#### [Classic](#tab/classic)
 
 To install a specific Node.js version in a Classic pipeline:
 
@@ -45,11 +47,11 @@ To install a specific Node.js version in a Classic pipeline:
 1. In the task catalog, find and add the **Node.js tool installer** task.
 1. Under **Version Spec** in the task configuration screen, specify the version of the Node.js runtime that you want to install.
 
-::: moniker-end
+---
 
 ### Use multiple node versions
 
-::: moniker range=">=azure-devops"
+#### [YAML](#tab/yaml)
 
 You can use the [Use Node.js ecosystem v1](/azure/devops/pipelines/tasks/reference/use-node-v1) task with a `matrix` strategy to build and test your app on multiple versions of Node.js. For more information, see [Multi-job configuration](../process/phases.md?tabs=yaml#multi-job-configuration).
 
@@ -71,14 +73,11 @@ steps:
 - script: npm install
 ```
 
-::: moniker-end
-
-::: moniker range="< azure-devops"
+#### [Classic](#tab/classic)
 
 To build and test your app on multiple versions of Node.js, see [Multi-job configuration](../process/phases.md?tabs=classic#multi-job-configuration).
 
-::: moniker-end
-
+---
 ## Dependency tool installation
 
 If you have development dependency tools in your project *package.json* or *package-lock.json* file, install the tools and dependencies through npm. The project file defines the exact version of the tools, independent of other versions that exist on the build agent.
@@ -115,6 +114,7 @@ To install tools your project needs that aren't set as development dependencies 
 
 > [!NOTE]
 > On Microsoft-hosted Linux agents, preface the command with `sudo`, like `sudo npm install -g`.
+> 
 > These tool installation tasks run every time the pipeline runs, so be mindful of their impact on build times. If the overhead seriously impacts build performance, consider using [self-hosted agents](../agents/agents.md#install) preconfigured with the tool versions you need.
 
 ::: moniker-end
@@ -166,7 +166,16 @@ To pass registry credentials to npm commands via task runners such as Gulp, add 
 ::: moniker range=">=azure-devops"
 
 >[!NOTE]
->[Microsoft-hosted agents](../agents/hosted.md) use a new machine with every build. Restoring dependencies can take a significant amount of time. To mitigate the issue, you can use Azure Artifacts or a self-hosted agent to use the package cache.
+>[Microsoft-hosted agents](../agents/hosted.md) use a new machine with every build. Restoring dependencies can take a significant amount of time. To mitigate the issue, you can use Azure Artifacts or a self-hosted agent with the package cache.
+>
+>If your builds occasionally fail because of connection issues when you restore packages from the npm registry, you can use Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) to cache the packages. Azure Artifacts automatically uses the credentials of the pipeline, which are ordinarily derived from the **Project Collection Build Service** account.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+>[!NOTE]
+>Restoring dependencies can take a significant amount of time. To mitigate the issue, you can use Azure Artifacts or a self-hosted agent with the package cache.
 >
 >If your builds occasionally fail because of connection issues when you restore packages from the npm registry, you can use Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) to cache the packages. Azure Artifacts automatically uses the credentials of the pipeline, which are ordinarily derived from the **Project Collection Build Service** account.
 
@@ -229,7 +238,7 @@ If you defined a `test` script in your project *package.json* file, you can invo
 
 ### Publish test results
 
-To publish the results, use the [Publish test results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task.
+To publish test results, use the [Publish test results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task.
 
 ```yaml
 - task: PublishTestResults@2
@@ -245,6 +254,8 @@ If your test scripts run a code coverage tool such as [Istanbul](https://github.
 
 The task expects Cobertura or JaCoCo reporting output. Ensure that your code coverage tool runs with the necessary options to generate the right output, for example `--report cobertura`.
 
+#### [YAML](#tab/yaml)
+
 The following example uses the Istanbul command-line interface [nyc](https://github.com/istanbuljs/nyc) along with [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter), and invokes `npm test`.
 
 ```yaml
@@ -258,11 +269,11 @@ The following example uses the Istanbul command-line interface [nyc](https://git
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
 ```
 
-::: moniker range="< azure-devops"
+#### [Classic](#tab/classic)
 
 Set the **Control Options** for the **Publish Test Results** task to run the task even if a previous task fails, unless the deployment was canceled.
 
-::: moniker-end
+---
 
 ## End-to-end browser testing
 
@@ -380,6 +391,8 @@ You can install packages in your pipeline to support various JavaScript framewor
 
 For Angular apps, you can run Angular-specific commands such as `ng test`, `ng build`, and `ng e2e`. To use Angular CLI commands in your pipeline, install the [angular/cli npm package](https://www.npmjs.com/package/@angular/cli) on the build agent.
 
+#### [YAML](#tab/yaml)
+
 ```yaml
 - script: |
     npm install -g @angular/cli
@@ -394,7 +407,7 @@ For Angular apps, you can run Angular-specific commands such as `ng test`, `ng b
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+#### [Classic](#tab/classic)
 
 In a Classic pipeline, add and configure the following tasks:
 
@@ -409,7 +422,7 @@ In a Classic pipeline, add and configure the following tasks:
   - **Type:** `inline`
   - **Script:** `ng build --prod`
 
-::: moniker-end
+---
 
 For tests in your pipeline that require a browser to run, such as running Karma with the `ng test` command, use a headless browser instead of a standard browser. In the Angular starter app:
 
@@ -468,15 +481,17 @@ To release the app, point your release task to the `dist` or `build` artifact an
 
 You can use a webpack configuration file to specify a compiler such as Babel or TypeScript, to transpile JavaScript XML (JSX) or TypeScript to plain JavaScript, and to bundle your app.
 
+#### [YAML](#tab/yaml)
+
 ```yaml
 - script: |
     npm install webpack webpack-cli --save-dev
     npx webpack --config webpack.config.js
 ```
 
-::: moniker range="< azure-devops"
+#### [Classic](#tab/classic)
 
-In a Classic pipeline, add the following tasks:
+In a Classic pipeline, add and configure the following tasks:
 
 - **npm**
   - **Command:** `custom`
@@ -486,7 +501,7 @@ In a Classic pipeline, add the following tasks:
   - **Type:** `inline`
   - **Script:** `npx webpack --config webpack.config.js`
 
-::: moniker-end
+---
 
 ### Build task runners
 
@@ -496,7 +511,13 @@ It's common to use [Gulp](https://gulpjs.com/) or [Grunt](https://gruntjs.com/) 
 
 ::: moniker range=">=azure-devops"
 
-Gulp is preinstalled on Microsoft-hosted agents. You can run the `gulp` command in the YAML file.
+Gulp is preinstalled on Microsoft-hosted agents.
+
+::: moniker-end
+
+#### [YAML](#tab/yaml)
+
+You can run the `gulp` command in the YAML pipeline file.
 
 ```yaml
 - script: gulp # add any needed options
@@ -531,19 +552,23 @@ To publish code coverage results to the server, add the [Publish code coverage r
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 ```
 
-::: moniker-end
+#### [Classic](#tab/classic)
 
-::: moniker range="< azure-devops"
+The simplest way to create a Classic pipeline if your app uses Gulp is to use the **Node.js with gulp** build template when you create the pipeline. This template automatically adds various tasks to invoke Gulp commands and publish artifacts. In the task, select **Enable Code Coverage** to enable code coverage by using Istanbul.
 
-The simplest way to create a pipeline if your app uses Gulp is to use the **Node.js with gulp** build template when you create the pipeline. This template automatically adds various tasks to invoke Gulp commands and publish artifacts. In the task, select **Enable Code Coverage** to enable code coverage by using Istanbul.
-
-::: moniker-end
+---
 
 #### Grunt
 
 ::: moniker range=">=azure-devops"
 
-Grunt is preinstalled on Microsoft-hosted agents. You can run the `grunt` command in the YAML file.
+Grunt is preinstalled on Microsoft-hosted agents.
+
+::: moniker-end
+
+#### [YAML](#tab/yaml)
+
+You can run the `grunt` command in the YAML file.
 
 ```yaml
 - script: grunt # add any needed options
@@ -559,15 +584,13 @@ If the steps in your *Gruntfile.js* file require authentication with an npm regi
 - script: grunt
 ```
 
-::: moniker-end
+#### [Classic](#tab/classic)
 
-::: moniker range="< azure-devops"
+The simplest way to create a Classic pipeline if your app uses Grunt is to use the **Node.js With Grunt** build template when you create the pipeline. This template automatically adds various tasks to invoke Gulp commands and to publish artifacts.
 
-The simplest way to create a pipeline if your app uses Grunt is to use the **Node.js with Grunt** build template when you create the pipeline. This template automatically adds various tasks to invoke Gulp commands and to publish artifacts.
+In the task, select the **Publish to Azure Pipelines** option to publish test results, and select **Enable Code Coverage** to enable code coverage by using Istanbul.
 
-In the task, select the **Publish to TFS/Team Services** option to publish test results, and select **Enable Code Coverage** to enable code coverage by using Istanbul.
-
-::: moniker-end
+---
 
 ## Troubleshooting
 
