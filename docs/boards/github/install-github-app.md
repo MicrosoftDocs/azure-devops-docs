@@ -73,7 +73,7 @@ If necessary, to grant GitHub access to your Azure DevOps organization, do the f
 
 <a id="install"></a>
 
-## Check your Third-party application access policy
+## Check your third-party application access policy
 
 Ensure your GitHub organization permits third‑party application access for the Azure Boards app. If third‑party access is restricted, adding repositories from Azure DevOps can show an empty list or produce an error.
 
