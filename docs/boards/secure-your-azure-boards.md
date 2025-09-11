@@ -3,7 +3,7 @@ title: Secure your Azure Boards
 titleSuffix: Azure Boards
 description: Learn about security concepts, access controls, and best practices for protecting your work tracking data in Azure Boards.
 ms.subservice: azure-devops-security
-ms.custom: security
+ms.custom: horz-security
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
