@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into agent pools. When you configure an agent, it's registered with a single pool. When you create a pipeline, you specify the pool in which the pipeline runs. When you run the pipeline, it runs on an agent from that pool that meets the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) of the pipeline.
 
-Managed DevOps Pools agent pools are managed in the Azure portal. If you're using Managed DevOps Pools, see [Create your first Managed DevOps Pool](../../managed-devops-pools/quickstart-azure-portal.md).
+Managed DevOps Pools agent pools are managed in the Azure portal. If you're using Managed DevOps Pools, see the [quickstart for creating a pool](../../managed-devops-pools/quickstart-azure-portal.md).
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ By default, all contributors in a project are members of the **User** role on ho
 
 :::moniker range="<=azure-devops"
 
-To choose a Microsoft-hosted agent from the Azure Pipelines pool in your Azure DevOps Services YAML pipeline, specify the name of the image, by using the **YAML VM Image Label** from [this table](hosted.md#use-a-microsoft-hosted-agent).
+To choose a Microsoft-hosted agent from the Azure Pipelines pool in your Azure DevOps Services YAML pipeline, specify the name of the image by using the **YAML VM Image Label** from [this table](hosted.md#use-a-microsoft-hosted-agent).
 
 ```yaml
 pool:
@@ -93,7 +93,7 @@ For more information, see the [YAML schema](/azure/devops/pipelines/yaml-schema)
 
 # [Classic](#tab/classic)
 
-To choose a pool and agent in the classic editor, go to the pipeline settings. Select the desired **Agent pool** and the desired image from the **Agent Specification** dropdown menu. The default **Agent Specification** selection is *windows-2019*. For more information about the software installed on Microsoft-hosted images, see the corresponding entry in the **Classic Editor Pool** column from [this table](hosted.md#use-a-microsoft-hosted-agent).
+To choose a pool and agent in the classic editor, go to the pipeline settings. Select the desired **Agent pool** value and the desired image from the **Agent Specification** dropdown menu. The default **Agent Specification** selection is **windows-2019**. For more information about the software installed on Microsoft-hosted images, see the corresponding entry in the **Classic Editor Pool** column from [this table](hosted.md#use-a-microsoft-hosted-agent).
 
 :::image type="content" source="media/agent-pool-classic.png" alt-text="Screenshot that shows how to select an agent pool and the desired agent.":::
 
@@ -142,11 +142,11 @@ az pipelines pool list [--action {manage, none, use}]
 
 #### Parameters
 
-* **action**: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
-* **detect**: Automatically detect the organization. Accepted values are `false` and `true`.
-* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
-* **pool-name**: Filter the list with a matching pool name.
-* **pool-type**: Filter the list with the type of pool. Accepted values are `automation` and `deployment`.
+* `action`: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
+* `detect`: Automatically detect the organization. Accepted values are `false` and `true`.
+* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
+* `pool-name`: Filter the list with a matching pool name.
+* `pool-type`: Filter the list with the type of pool. Accepted values are `automation` and `deployment`.
 
 #### Example
 
@@ -180,10 +180,10 @@ az pipelines pool show --id
 
 #### Parameters
 
-* **id** or **pool-id**: (Required) ID of the pool to list the details.
-* **action**: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
-* **detect**: Automatically detect the organization. Accepted values are `false` and `true`.
-* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
+* `id` or `pool-id`: (Required) ID of the pool to list the details.
+* `action`: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
+* `detect`: Automatically detect the organization. Accepted values are `false` and `true`.
+* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 
@@ -229,11 +229,11 @@ az pipelines queue list [--action {manage, none, use}]
 
 #### Parameters
 
-* **action**: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
-* **detect**: Automatically detect the organization. Accepted values are `false` and `true`.
-* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
-* **project** or **p**: The name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. This process is required if it's not configured as default or picked up via git config.
-* **queue-name**: Filter the list with a matching queue name regex (for example, *ubuntu* for a queue named *Hosted Ubuntu 1604*).
+* `action`: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
+* `detect`: Automatically detect the organization. Accepted values are `false` and `true`.
+* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
+* `project` or `p`: The name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. This process is required if it's not configured as default or picked up via git config.
+* `queue-name`: Filter the list with a matching queue name regex (for example, *ubuntu* for a queue named *Hosted Ubuntu 1604*).
 
 #### Example
 
@@ -267,11 +267,11 @@ az pipelines queue show --id
 
 #### Parameters
 
-* **id** or **queue-id**: ID of the agent queue to get information about.
-* **action**: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
-* **detect**: Automatically detect the organization. Accepted values are `false` and `true`.
-* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
-* **project** or **p**: Name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. This process is required if it's not configured as default or picked up via git config.
+* `id` or `queue-id`: ID of the agent queue to get information about.
+* `action`: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
+* `detect`: Automatically detect the organization. Accepted values are `false` and `true`.
+* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
+* `project` or `p`: Name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. This process is required if it's not configured as default or picked up via git config.
 
 #### Example
 
@@ -308,46 +308,46 @@ If you have many self-hosted agents that are intended for different teams or pur
 
 ## Create agent pools
 
-Here are some typical situations when you might want to create self-hosted agent pools:
+Here are some typical situations when you might want to create self-hosted agent pools.
 
 ::: moniker range="azure-devops"
 
-You're a member of a project and you want to use a set of machines that your team owns to run build and deployment jobs.
+You're a member of a project and want to use a set of machines that your team owns to run build and deployment jobs:
 
-1. Make sure that you have permissions to create pools in your project. In **Project settings**, go to the **Agent pools** pane, and select **Security**. To create new pools, you must have the **Administrator** role.
+1. Make sure that you have permissions to create pools in your project. In **Project settings**, go to the **Agent pools** pane and select **Security**. To create new pools, you must have the **Administrator** role.
 1. Select **Add pool**, and then select the option to create a new pool.
 1. [Install](agents.md#install) and configure agents to be part of the new agent pool.
 
-You're a member of the infrastructure team and would like to set up a pool of agents to use in all projects.
+You're a member of the infrastructure team and want to set up a pool of agents to use in all projects:
 
 1. Make sure that you have permissions to create pools in your project. In **Organization settings**, go to the **Agent pools** pane and select **Security**.
 1. Create a **New agent pool** and select the option **Auto-provision this agent pool in all projects** when you create the pool. This setting ensures that all projects have access to this agent pool.  
 1. [Install](agents.md#install) and configure agents to be part of the new agent pool.
 
-You want to share a set of agent machines with some, but not all, of your projects.
+You want to share a set of agent machines with some, but not all, of your projects:
 
-1. Go to **Settings** for one of the projects. Add an agent pool, and select the option to create a **new** pool at the organization level.
+1. Go to **Settings** for one of the projects. Add an agent pool, and select the option to create a new pool at the organization level.
 1. Go to the other projects and create a pool in each of them. Select **Use an existing agent pool from the organization**.
 1. [Install](agents.md#install) and configure agents to be part of the shared agent pool.
 ::: moniker-end
 
 ::: moniker range="<azure-devops"
 
-You're a member of a project and want to use a set of machines that your team owns to run build and deployment jobs.
+You're a member of a project and want to use a set of machines that your team owns to run build and deployment jobs:
 
-1. Make sure you have permissions to create pools in your project. In **Project settings**, go to the **Agent pools** pane, and select **Security**. To create new pools, you must have the **Administrator** role.
-1. Select **Add pool**, and then select the option to create a **new** pool.
+1. Make sure you have permissions to create pools in your project. In **Project settings**, go to the **Agent pools** pane and select **Security**. To create new pools, you must have the **Administrator** role.
+1. Select **Add pool**, and then select the option to create a new pool.
 1. [Install](agents.md#install) and configure agents to be part of the new agent pool.
 
-You're a member of the infrastructure team and would like to set up a pool of agents to use in all projects.
+You're a member of the infrastructure team and want to set up a pool of agents to use in all projects:
 
 1. Make sure you have the permissions to create pools in your project. In **Organization settings**, go to the **Agent pools** pane and select **Security**.
 1. Create a **New agent pool** and select the option **Auto-provision this agent pool in all projects** when you create the pool. This setting ensures that all projects have access to this agent pool.
 1. [Install](agents.md#install) and configure agents to be part of the new agent pool.
 
-You want to share a set of agent machines with some, but not all, of your projects.
+You want to share a set of agent machines with some, but not all, of your projects:
 
-1. Go to **Settings** for one of the projects. Add an agent pool, and select the option to create a **new** pool at the organization level.
+1. Go to **Settings** for one of the projects. Add an agent pool, and select the option to create a new pool at the organization level.
 1. Go to the other projects and create a pool in each of them. Select **Use an existing agent pool from the organization**.
 1. [Install](agents.md#install) and configure agents to be part of the shared agent pool.
 ::: moniker-end
@@ -356,7 +356,7 @@ You want to share a set of agent machines with some, but not all, of your projec
 
 When you understand how security works for agent pools, you can better control the sharing and use of agents.
 
-**Roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
+*Roles* are defined on each agent pool. *Membership* in these roles governs what operations you can perform on an agent pool.
 
 ### Organization-level security settings
 
@@ -440,7 +440,7 @@ The maintenance is done per agent pool, not per machine. If you have multiple ag
 
 ### The maintenance job of my self-hosted agent pool looks stuck. Why?
 
-Typically, a maintenance job gets *stuck* when it's waiting to run on an agent that's no longer in the agent pool. For example, an agent was purposefully taken offline, or there are issues communicating with it.
+Typically, a maintenance job gets stuck when it's waiting to run on an agent that's no longer in the agent pool. For example, an agent was purposefully taken offline, or there are issues communicating with it.
 
 Maintenance jobs that are queued to run wait seven days to run. If they aren't run during that time, they automatically are in a failed state. You can't change this time limit.
 
@@ -462,7 +462,7 @@ Ask the owner of your Azure DevOps organization to grant you permission to use t
 
 ### I need more hosted build resources. What can I do?
 
-The Azure Pipelines pool provides all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or need to run more jobs in parallel, then you can either:
+The Azure Pipelines pool provides all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or you need to run more jobs in parallel, then you can either:
 
 * [Host your own agents on infrastructure that you manage](agents.md)
 * [Buy more parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
