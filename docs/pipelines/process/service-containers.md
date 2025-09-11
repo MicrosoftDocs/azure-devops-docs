@@ -13,9 +13,9 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This article describes using service containers in Azure Pipelines. If your pipeline requires the support of one or more services, you might need to create, connect to, and clean up the services per [job](phases.md). For example, your pipeline might run integration tests that require access to a newly created database and memory cache for each job in the pipeline.
+This article describes using *service containers* in Azure Pipelines. If your pipeline requires the support of one or more services, you might need to create, connect to, and clean up the services per [job](phases.md). For example, your pipeline might run integration tests that require access to a newly created database and memory cache for each job in the pipeline.
 
-A *service container* provides a simple and portable way to run a service. A service container is accessible only to the job that requires it.
+A service container provides a simple and portable way to run services in your pipeline. The service container is accessible only to the job that requires it.
 
 Service containers let you automatically create, network, and manage the lifecycles of services that your pipelines depend on. Service containers work with any kind of job, but are most commonly used with [container jobs](container-phases.md).
 
@@ -63,7 +63,7 @@ steps:
 
 You can also use service containers in noncontainer jobs. The pipeline starts the latest containers, but because the job doesn't run in a container, there's no automatic name resolution. Instead, you reach services by using `localhost`. The following example pipeline explicitly specifies the `8080:80` port for `nginx`.
 
-An alternative approach is to assign a random port dynamically at runtime. To allow the job to access the port, the pipeline creates a [variable](variables.md) of the form `agent.services.<serviceName>.ports.<port>`. You can access the dynamic port by using the [environment variable](variables.md#environment-variables) in a Bash script.
+An alternative approach is to assign a random port dynamically at runtime. To allow the job to access the port, the pipeline creates a [variable](variables.md) of the form `agent.services.<serviceName>.ports.<port>`. You can access the dynamic port by using this [environment variable](variables.md#environment-variables) in a Bash script.
 
 In the following pipeline, `redis` gets a random available port on the host, and the `agent.services.redis.ports.6379` variable contains the port number.
 
@@ -128,7 +128,7 @@ steps:
 
 ## Ports
 
-Jobs that run directly on the host require `ports` to access the service container. Specifying `ports` isn't required if your job is running in a container, because containers on the same Docker network automatically expose all ports to each other by default.
+Jobs that run directly on the host require `ports` to access the service container. Specifying `ports` isn't required if your job runs in a container, because containers on the same Docker network automatically expose all ports to each other by default.
 
 A port takes the form `<hostPort>:<containerPort>` or just `<containerPort>` with an optional `/<protocol>` at the end. For example, `6379/tcp` exposes `tcp` over port `6379`, bound to a random port on the host machine.
 
