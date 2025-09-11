@@ -199,7 +199,7 @@ On the **Tasks** tab of the pipeline, add the demand to your agent job.
 
 You can view agent details, including version and system capabilities, and manage its user capabilities. Go to **Agent pools** and select the **Capabilities** tab for the desired agent.
 
-1. In your web browser:
+1. In your web browser, go to **Agent pools**:
 
    [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
@@ -322,7 +322,7 @@ These credentials are different from the credentials that you use when you regis
 
 > [!TIP]
 >
-> After you install new software on a self-hosted agent, you must restart the agent for the new capability to show up. For more information, see: [Restart Windows agent](windows-agent.md#how-do-i-restart-the-agent), [Restart Linux agent](linux-agent.md#how-do-i-restart-the-agent), and [Restart Mac agent](osx-agent.md#how-do-i-restart-the-agent).
+> After you install new software on a self-hosted agent, you must restart the agent for the new capability to show up. For more information, see [Restart Windows agent](windows-agent.md#how-do-i-restart-the-agent), [Restart Linux agent](linux-agent.md#how-do-i-restart-the-agent), and [Restart Mac agent](osx-agent.md#how-do-i-restart-the-agent).
 
 <h2 id="communication">Communication</h2>
 
@@ -340,7 +340,7 @@ These credentials are different from the credentials that you use when you regis
 
 The agent communicates with Azure Pipelines or Azure DevOps Server. It determines which job it needs to run and reports the logs and job status. The agent always initiates this communication.
 
-All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows you to configure the agent to different topologies as shown by the following examples.
+All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows you to configure the agent to different topologies, as shown in the following examples.
 
 ::: moniker range="< azure-devops"
 :::image type="content" source="media/agent-topologies-tfs.png" alt-text="Graphic that shows agent topologies in on-premises installations." lightbox= "media/agent-topologies-tfs.png":::
@@ -350,13 +350,13 @@ All the messages from the agent to Azure Pipelines or Azure DevOps Server happen
 :::image type="content" source="media/agent-topologies-devops.png" alt-text="Graphic that shows agent topologies in Azure DevOps Services." lightbox= "media/agent-topologies-devops.png":::
 ::: moniker-end
 
-Here's a common communication pattern between the agent and Azure Pipelines or Azure DevOps Server.
+Here's a common communication pattern between the agent and Azure Pipelines or Azure DevOps Server:
 
 1. The user registers an agent with Azure Pipelines or Azure DevOps Server by adding it to an [agent pool](pools-queues.md). To register an agent in that agent pool, you need to have the [Agent pool administrator](pools-queues.md#security) role. The **Agent pool administrator** role is needed only at the time of registration and isn't persisted on the agent. It isn't used in any further communication between the agent and Azure Pipelines or Azure DevOps Server.
 
    After registration is complete, the agent downloads a `listener OAuth token` and uses it to listen to the job queue.
 
-1. The agent listens to see if a new job request is posted in the job queue in Azure Pipelines or Azure DevOps Server by using an HTTP long poll. When a job is available, the agent downloads the job and a `job-specific OAuth token`. Azure Pipelines/Azure DevOps Server generates a short-lived token for the scoped identity [specified in the pipeline](../build/options.md).
+1. The agent listens to see if a new job request is posted in the job queue in Azure Pipelines or Azure DevOps Server by using an HTTP long poll. When a job is available, the agent downloads the job and a `job-specific OAuth token`. Azure Pipelines or Azure DevOps Server generates a short-lived token for the scoped identity [specified in the pipeline](../build/options.md).
 
    The agent uses the token to access or modify resources on Azure Pipelines or Azure DevOps Server within that job. For example, it uses the token to access source code or upload test results.
 
@@ -377,7 +377,7 @@ This method secures secrets stored in pipelines or variable groups when exchange
 
 When you use the agent to deploy artifacts to a set of servers, it must have "line of sight" connectivity to those servers. Microsoft-hosted agent pools, by default, have connectivity to Azure websites and servers that run in Azure.
 
-If your Azure resources run in an Azure Virtual Network, you can get the [Agent IP ranges](hosted.md#agent-ip-ranges) where Microsoft-hosted agents are deployed. Then, you can configure the firewall rules for your Azure virtual network to allow access by the agent.
+If your Azure resources run in an Azure virtual network, you can get the [Agent IP ranges](hosted.md#agent-ip-ranges) where Microsoft-hosted agents are deployed. Then, you can configure the firewall rules for your Azure virtual network to allow access by the agent.
 
 If your on-premises environments don't have connectivity to a Microsoft-hosted agent pool, which is typically the case due to intermediate firewalls, you need to manually configure self-hosted agents on on-premises computers. The agents must have connectivity to the target on-premises environments, and access to the internet to connect to Azure Pipelines or Azure DevOps Server. This process is demonstrated in the following schematic:
 
@@ -411,7 +411,7 @@ The authentication method that you use to register the agent is used only during
 
 You can run your self-hosted agent as either a service or an interactive process.
 
-After you configure the agent, we recommend you first try it in interactive mode to make sure it works. Then, for production use, we recommend you run the agent in one of the following modes so that it reliably remains in a running state. These modes also ensure that the agent starts automatically if the machine is restarted.
+After you configure the agent, we recommend that you first try it in interactive mode to make sure it works. Then, for production use, we recommend that you run the agent in one of the following modes so that it reliably remains in a running state. These modes also ensure that the agent starts automatically if the machine is restarted.
 
 * **As a service**: You can use the service manager of the operating system to manage the lifecycle of the agent. The experience to autoupgrade the agent is better when you run the agent as a service.
 * **As an interactive process with automatic sign in enabled**: In some cases, you might need to run the agent interactively for production use (for example, to run UI tests). When you configure an agent to run in this mode, the screen saver is disabled. Some domain policies might prevent you from enabling automatic sign in or disabling the screen saver. In such cases, you might need to seek an exemption from the domain policy, or run the agent on a workgroup computer where the domain policies don't apply.
@@ -419,7 +419,7 @@ After you configure the agent, we recommend you first try it in interactive mode
    > [!NOTE]
    > There are security risks when you enable automatic sign in or disable the screen saver. Other users might be able to access the computer and use the account that automatically signs in. If you configure the agent to run this way, you must ensure the computer is physically protected (for example, located in a secure facility).
    >
-   > If you use remote desktop to access a computer on which an agent is running with automatic sign in, closing the remote desktop causes the computer to lock. Any UI tests that run on this agent might fail. To avoid this issue, use the [`tscon`](/windows-server/administration/windows-commands/tscon) command to disconnect from remote desktop. Refer to the following example:
+   > If you use a remote desktop to access a computer on which an agent is running with automatic sign in, closing the remote desktop causes the computer to lock. Any UI tests that run on this agent might fail. To avoid this issue, use the [`tscon`](/windows-server/administration/windows-commands/tscon) command to disconnect from the remote desktop. For example:
    >
    > `%windir%\System32\tscon.exe 1 /dest:console`
 
@@ -453,7 +453,7 @@ If you run a self-hosted agent interactively, or if there's a newer *major* vers
 
    :::image type="content" source="media/agents/update-all-agents.png" alt-text="Screenshot that shows how to select Update all agents." lightbox= "media/agents/update-all-agents.png":::
 
-    You can also update agents individually by choosing **Update agent** from the **...** menu.
+    You can also update agents individually by selecting **Update agent** from the **...** menu.
 
    :::image type="content" source="media/agents/update-agent.png" alt-text="Screenshot that shows how to select Update agent." lightbox= "media/agents/update-agent.png":::
 
@@ -461,7 +461,7 @@ If you run a self-hosted agent interactively, or if there's a newer *major* vers
 
    :::image type="content" source="media/agents/update-all-agents-confirmation.png" alt-text="Screenshot that shows how to select Update to confirm." lightbox= "media/agents/update-all-agents-confirmation.png":::
 
-1. An update request is queued for each agent in the pool, and runs when any currently running jobs complete. An upgrade typically takes only a few moments. This amount of time is long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
+1. An update request is queued for each agent in the pool, and it runs when any currently running jobs finish. An upgrade typically takes only a few moments. This amount of time is long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
 
 ::: moniker-end
 
@@ -515,16 +515,15 @@ For Microsoft-hosted agents, the agent is torn down and returned to the Azure Pi
 
 For self-hosted agents:
 
-When a pipeline is canceled, the agent sends a sequence of commands to the process that's executing the current step.
-
+* When a pipeline is canceled, the agent sends a sequence of commands to the process that's executing the current step.
 * The first command is sent with a timeout of 7.5 seconds.
 * If the process doesn't terminate, a second command is sent with a 2.5-second timeout.
 * If the process doesn't terminate, the agent commands it to be killed.
 * If the process ignores the two initial termination requests, it's forcibly killed.
 
-From the initial request to termination takes approximately 10 seconds.
+The time from the initial request to termination is approximately 10 seconds.
 
-The commands issued to the process to cancel the pipeline differ based on the agent operating system.
+The commands issued to the process to cancel the pipeline differ based on the agent operating system:
 
 * macOS and Linux: The commands sent are `SIGINT`, followed by `SIGTERM`, followed by `SIGKILL`.
 * Windows: The commands sent to the process are `Ctrl+C`, followed by `Ctrl+Break`, followed by `Process.Kill`.
@@ -556,18 +555,18 @@ POST https://{server url}/tfs/{collection}/_apis/distributedtask/pools/{poolId}/
 
 ::: moniker range="<=azure-devops"
 
-#### URI Parameters
+#### URI parameters
 
 | Name           | In    | Required | Type          | Description                                                                            |
 | -------------- | ----- | -------- | ------------- | -------------------------------------------------------------------------------------- |
-| `agentId`      | query | `False`    | string        | The agent to update. If not specified, update is triggered for all agents.       |
+| `agentId`      | query | `False`    | string        | The agent to update. If it's not specified, an update is triggered for all agents.       |
 | `organization` | path  | `True`     | string        | The name of the Azure DevOps organization.                                             |
 | `poolId`       | path  | `True`     | integer int32 | The agent pool to use.                                                                  |
 | `api-version`  | query | `False`    | string        | Version of the API to use. To use this version of the API, the value should be set to `6.0`. |
 
 To trigger an agent update, the request body should be empty.
 
-Azure Pipelines Agent is open source on [GitHub](https://github.com/microsoft/azure-pipelines-agent).
+The Azure Pipelines agent is open source on [GitHub](https://github.com/microsoft/azure-pipelines-agent).
 
 ## Related content
 
