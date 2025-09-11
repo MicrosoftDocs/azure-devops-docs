@@ -144,7 +144,7 @@ az pipelines pool list [--action {manage, none, use}]
 
 * `action`: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
 * `detect`: Automatically detect the organization. Accepted values are `false` and `true`.
-* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
+* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via Git configuration. For example: `https://dev.azure.com/MyOrganizationName/`.
 * `pool-name`: Filter the list with a matching pool name.
 * `pool-type`: Filter the list with the type of pool. Accepted values are `automation` and `deployment`.
 
@@ -183,7 +183,7 @@ az pipelines pool show --id
 * `id` or `pool-id`: (Required) ID of the pool to list the details.
 * `action`: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
 * `detect`: Automatically detect the organization. Accepted values are `false` and `true`.
-* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
+* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via Git configuration. For example: `https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 
@@ -231,8 +231,8 @@ az pipelines queue list [--action {manage, none, use}]
 
 * `action`: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
 * `detect`: Automatically detect the organization. Accepted values are `false` and `true`.
-* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
-* `project` or `p`: The name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. This process is required if it's not configured as default or picked up via git config.
+* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via Git configuration. For example: `https://dev.azure.com/MyOrganizationName/`.
+* `project` or `p`: The name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. This process is required if it's not configured as default or picked up via Git configuration.
 * `queue-name`: Filter the list with a matching queue name regex (for example, *ubuntu* for a queue named *Hosted Ubuntu 1604*).
 
 #### Example
@@ -270,8 +270,8 @@ az pipelines queue show --id
 * `id` or `queue-id`: ID of the agent queue to get information about.
 * `action`: Filter the list with user action permitted. Accepted values are `manage`, `none`, and `use`.
 * `detect`: Automatically detect the organization. Accepted values are `false` and `true`.
-* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via git config. For example: `https://dev.azure.com/MyOrganizationName/`.
-* `project` or `p`: Name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. This process is required if it's not configured as default or picked up via git config.
+* `org` or `organization`: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. This process is required if it's not configured as default or picked up via Git configuration. For example: `https://dev.azure.com/MyOrganizationName/`.
+* `project` or `p`: Name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. This process is required if it's not configured as default or picked up via Git configuration.
 
 #### Example
 
