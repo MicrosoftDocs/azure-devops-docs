@@ -54,7 +54,7 @@ Although multiple agents can be installed per machine, we strongly recommend tha
 
 :::moniker-end
 
-You can install the agent on Linux, macOS, and Windows machines or a Docker container. For more information about installing a self-hosted agent, see:
+You can install the agent on Linux, macOS, and Windows machines. You can also install the agent on a Docker container. For more information about installing a self-hosted agent, see:
 
 * [macOS agent](osx-agent.md)
 * [Linux agent](linux-agent.md)
@@ -84,18 +84,18 @@ After you install the agent on a machine, you can install any other software on 
 
 The agent ships with several versions of Node.js libraries to support target tasks that use different Node.js handlers.
 
-All official Azure DevOps tasks use Node.js library 20 as a universal handler. However, customers might still use custom tasks that use the end-of-support Node.js 6, 10, or 16 libraries. To support backward compatibility with a node that reached end of support, we provide the following self-service methods so that you can manually install the designated Node.js runner:
+All official Azure DevOps tasks use Node.js 20 library as a universal handler. However, customers might still use custom tasks that use the end-of-support Node.js 6, Node.js 10, or Node.js 16 library. To support backward compatibility with a node that reached end of support, we provide the following self-service methods so that you can manually install the designated Node.js runner:
 
-* Manually install the Node.js 6 or 10 runner. For more information, see [Node.js runner support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md).
-* Use the [`NodeTaskRunnerInstaller@0`](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0) task in your pipelines that require the outdated Node.js 6 or 10 library.
-* Install an agent package that includes Node.js libraries 6 and 10.
+* Manually install the Node.js 6 or Node.js 10 runner. For more information, see [Node.js runner support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md).
+* Use the [`NodeTaskRunnerInstaller@0`](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0) task in your pipelines that require the outdated Node.js 6 or Node.js 10 library.
+* Install an agent package that includes Node.js 6 and Node.js 10 libraries.
   
-  Azure Pipelines provides two versions of agent packages.
+  Azure Pipelines provides two versions of agent packages:
 
-  * `vsts-agent-\`: Packages that support Node.js libraries 6 and 10.
-  * `pipelines-agent-\`: Packages that don't support Node.js libraries 6 and 10. In the future, this version of the package becomes the default agent package.
+  * `vsts-agent-\`: Packages that support Node.js 6 and Node.js 10 libraries.
+  * `pipelines-agent-\`: Packages that don't support Node.js 6 and Node.js 10 libraries. In the future, this version of the package becomes the default agent package.
 
-  If your tasks don't require Node.js libraries 6 or 10, and you don't want to install Node.js libraries 6 or 10 on your agent machine, you can install the agent from [this documentation, under Alternate Agent Downloads](https://github.com/microsoft/azure-pipelines-agent/releases).
+  If your tasks don't require the Node.js 6 or Node.js 10 library, and you don't want to install the Node.js 6 or Node.js 10 library on your agent machine, you can install the agent from [this documentation, under Alternate Agent Downloads](https://github.com/microsoft/azure-pipelines-agent/releases).
 
 ## <a name = "azure-virtual-machine-scale-set-agents"></a> Azure Virtual Machine Scale Sets agents
 
@@ -103,7 +103,7 @@ Azure Virtual Machine Scale Sets agents are a form of self-hosted agents that ca
 
 Azure Pipelines manages the scaling of your agents for you. Specify the following factors:
 
-* A Virtual Machine Scale Set
+* A virtual machine scale set
 * The number of agents to keep on standby
 * A maximum number of virtual machines in the scale set
 
@@ -128,7 +128,7 @@ Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Sets 
 
 ::: moniker range="azure-devops"
 
-The concept of parallel jobs represents the number of jobs you can run at the same time in your organization. If your organization has a single parallel job, you can run a single job at a time in your organization. Any other concurrent jobs are queued until the first job completes. To run two jobs at the same time, you need two parallel jobs. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
+The concept of parallel jobs represents the number of jobs that you can run at the same time in your organization. If your organization has a single parallel job, you can run a single job at a time in your organization. Any other concurrent jobs are queued until the first job finishes. To run two jobs at the same time, you need two parallel jobs. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
 
 Microsoft provides a free tier of service by default in every organization that includes at least one parallel job. Depending on the number of concurrent pipelines you need to run, you might need more parallel jobs to use multiple Microsoft-hosted or self-hosted agents at the same time. For more information on parallel jobs and different free tiers of service, see [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs.md).
 
@@ -151,7 +151,7 @@ You might need more parallel jobs to use multiple agents at the same time:
 
 <h2 id="capabilities">Capabilities</h2>
 
-Every self-hosted agent has a set of capabilities that indicate what it can do. Capabilities are name-value pairs that are either:
+Every self-hosted agent has a set of capabilities that indicate what it can do. Capabilities are name/value pairs that are either:
 
 * Capabilities that the agent software discovers, called *system capabilities*.
 * Capabilities that you define, called *user capabilities*.
@@ -160,7 +160,7 @@ The agent software automatically determines various system capabilities. These c
 
 When you store environment variables as capabilities, the stored capability values are used to set the environment variables when an agent runs. Also, when you make any changes to environment variables while the agent is running, they aren't picked up and used by any task. If you don't want sensitive environment variables that change to be stored as capabilities, you can direct the agent to ignore them. Set the `VSO_AGENT_IGNORE` environment variable, with a comma-delimited list of variables to ignore. For example, `PATH` is a critical variable that you might want to ignore if you're installing software.
 
-When you author a pipeline, you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities that match the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) specified in the pipeline. As a result, agent capabilities allow you to direct jobs to specific agents.
+When you author a pipeline, you specify certain *demands* of the agent. The system sends the job only to agents that have capabilities that match the [demands](/azure/devops/pipelines/yaml-schema/pool-demands) specified in the pipeline. As a result, agent capabilities allow you to direct jobs to specific agents.
 
 Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that meets the requirements of the job. When you use Microsoft-hosted agents, you select an image for the agent that matches the requirements of the job. Although it's possible to add capabilities to a Microsoft-hosted agent, you don't need to use capabilities with Microsoft-hosted agents.
 
@@ -199,7 +199,7 @@ On the **Tasks** tab of the pipeline, add the demand to your agent job.
 
 You can view agent details, including version and system capabilities, and manage its user capabilities. Go to **Agent pools** and select the **Capabilities** tab for the desired agent.
 
-1. In your web browser, go to Agent pools:
+1. In your web browser:
 
    [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
