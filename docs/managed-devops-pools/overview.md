@@ -26,16 +26,17 @@ Managed DevOps Pools:
 * Can create agents that have the same software as Azure Pipelines Microsoft-hosted agents.
 * Can view all active agents and the status of agent provisioning and reimaging.
 * Can attach a data disk so you don't have to use a larger edition just to get more disk space.
-* See the [roadmap and features timeline](./features-timeline.md#roadmap) to learn about upcoming features.
+
+To learn about upcoming features, see the [roadmap and features timeline](./features-timeline.md#roadmap).
 
 ## What's new for Managed DevOps Pools GA
 
 * **Managed DevOps Pools is supported in more Azure regions**: Managed DevOps Pools is now available in Sweden Central, Brazil South, Japan East, UAE North, Korea Central, and Norway East, which allows you to use regional resources for optimized performance and compliance. To see the Azure regions that support Managed DevOps Pools in your subscription, [register the `Microsoft.DevOpsInfrastructure` provider in your subscription and view the supported locations](prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
-* **Integrate with Azure Key Vault**: Managed DevOps Pools offers the ability to fetch certificates from an Azure Key Vault during provisioning. Because of this process, the certificates already exist on the machine by the time it runs your Azure Pipelines. To use this feature, [configure a managed identity on your pool](./configure-identity.md), and grant it permissions to access secrets from your Key Vault. For more information, see [Integrate with Azure Key Vault](./configure-security.md#key-vault-configuration).
-* **Proxy support**: You can set up your Managed DevOps Pools to direct network traffic through a proxy. By using an image with a preinstalled proxy, you can run your Azure Pipelines on Managed DevOps Pools behind a proxy, like the current Azure Virtual Machine Scale Sets agents offering. This setup enables the agent to retrieve sources and download artifacts, passing the proxy details to tasks that also require proxy settings to access the web. For more information, see [Proxy support](./configure-networking.md#configure-the-azure-devops-agent-to-run-behind-a-proxy).
+* **Integrate with Azure Key Vault**: Managed DevOps Pools offers the ability to fetch certificates from Azure Key Vault during provisioning. Because of this process, the certificates already exist on the machine by the time it runs your pipelines. To use this feature, [configure a managed identity on your pool](./configure-identity.md), and grant it permissions to access secrets from your key vault. For more information, see [Integrate with Azure Key Vault](./configure-security.md#key-vault-configuration).
+* **Proxy support**: You can set up Managed DevOps Pools to direct network traffic through a proxy. By using an image with a preinstalled proxy, you can run your pipelines on Managed DevOps Pools behind a proxy, like the current Azure Virtual Machine Scale Sets agents offering. This setup enables the agent to retrieve sources and download artifacts, passing the proxy details to tasks that also require proxy settings to access the web. For more information, see [Proxy support](./configure-networking.md#configure-the-azure-devops-agent-to-run-behind-a-proxy).
 * **View agent IP address**: You can now view the IP address of the agent in the **Initialize** job step of your pipeline log. This feature is useful for scenarios like when you want to investigate pipelines that fail due to proxies or firewall rules.
-* **Move to another resource group or subscription**: You can now move your Managed DevOps Pools to another Azure resource group or to another subscription. For more information, see [Move Azure resources to a new resource group or subscription](/azure/azure-resource-manager/management/move-resource-group-and-subscription).
-* **Ubuntu 24.04 support**: Ubuntu 24.04 is now supported. There are three images in [Selected marketplace images](./configure-images.md#selected-marketplace-images) and you can now bring your own Ubuntu 24.04 images by using [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images).
+* **Move to another resource group or subscription**: You can now move pools to another Azure resource group or to another subscription. For more information, see [Move Azure resources to a new resource group or subscription](/azure/azure-resource-manager/management/move-resource-group-and-subscription).
+* **Ubuntu 24.04 support**: Ubuntu 24.04 is now supported. There are three images in [Selected marketplace images](./configure-images.md#selected-marketplace-images), and you can now bring your own Ubuntu 24.04 images by using [Azure Compute Gallery images](./configure-images.md#azure-compute-gallery-images).
 
 ## Benefits
 
@@ -44,9 +45,9 @@ Managed DevOps Pools provides the following benefits when you create, configure,
 * **Time spent on management**: Managed DevOps Pools is designed to reduce time spent managing CI/CD infrastructure, which frees up platform engineering or development team cycles to focus on other problems.
 * **Team-specific pools**: Because users can easily create new pools, platform engineering teams can easily create multiple team-specific pools. This process prevents teams from noisy neighbor situations and tailors pools to suit the needs of individual teams.
 * **Worry-free self-service**: Platform engineering teams can choose to empower development teams to create their own custom pools without compromising on governance, by allowing the use of curated images and networks.
-* **Azure cost**: Managed DevOps pools help optimize your Azure cost based on your CI/CD workload's unique needs.
-* **Scalable**: Managed DevOps pools are scalable, up to thousands of agents running simultaneously.
-* **Reliable**: Your developers experience less downtime, because Managed DevOps pools have high uptime.
+* **Azure cost**: Pools help optimize your Azure cost based on your CI/CD workload's unique needs.
+* **Scalable**: Pools are scalable, up to thousands of agents running simultaneously.
+* **Reliable**: Your developers experience less downtime, because pools have high uptime.
 * **Security**: Your pool's agents have the security of Microsoft's best practices, and you can use features to further secure your pool.
 
 ## Get started
