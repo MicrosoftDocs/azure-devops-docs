@@ -80,7 +80,7 @@ After you install the agent on a machine, you can install any other software on 
 >
 > We support only the most recent version of the agent, because that is the only version guaranteed to have all up-to-date patches and bug fixes.
 
-### Node.js runner versions
+### <a name = "node-runner-versions"></a> Node.js runner versions
 
 The agent ships with several versions of Node.js libraries to support target tasks that use different Node.js handlers.
 
@@ -97,7 +97,7 @@ All official Azure DevOps tasks use Node.js library 20 as a universal handler. H
 
   If your tasks don't require Node.js libraries 6 or 10, and you don't want to install Node.js libraries 6 or 10 on your agent machine, you can install the agent from [here, under Alternate Agent Downloads](https://github.com/microsoft/azure-pipelines-agent/releases).
 
-## Azure Virtual Machine Scale Sets agents
+## <a name = "azure-virtual-machine-scale-set-agents"></a> Azure Virtual Machine Scale Sets agents
 
 Azure Virtual Machine Scale Sets agents are a form of self-hosted agents that can be autoscaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and image of machines on which agents run.
 

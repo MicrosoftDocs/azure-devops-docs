@@ -23,7 +23,7 @@ ms.date: 02/12/2020
 
 1. Look for the `Agent.Version` capability. You can compare this value against the latest published agent version on the [Azure Pipelines Agent](https://github.com/Microsoft/azure-pipelines-agent/releases) page.
 
-1. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. If you want to manually update some agents, right click the pool, and then select **Update all agents**.
+1. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. If you want to manually update some agents, right-click the pool, and then select **Update all agents**.
 
 ::: moniker range="< azure-devops"
 
@@ -35,6 +35,6 @@ Yes. Beginning with Azure DevOps Server 2019, you can configure your server to l
 
 2. Transfer the downloaded package files to each Azure DevOps Server Application Tier by using a method of your choice (for example, USB drive, network transfer, and so on). Place the agent files under the `%ProgramData%\Microsoft\Azure DevOps\Agents` folder. If there's no folder labeled **Agents**, create one.
 
-3. You're all set! Your Azure DevOps Server now uses the local files whenever the agents are updated. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. But if you want to manually update some agents, right click the pool, and then choose **Update all agents**.
+3. You're all set! Your Azure DevOps Server now uses the local files whenever the agents are updated. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. But if you want to manually update some agents, right-click the pool, and then choose **Update all agents**.
 
 ::: moniker-end

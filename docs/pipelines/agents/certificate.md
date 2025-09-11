@@ -97,17 +97,17 @@ When that IIS SSL setting is enabled, you need to use version 2.125.0 or newer a
 
 1. Prepare all required certificate information:
 
-- A certificate authority (CA) certificate in `.pem` format: This file should contain the public key and signature of the CA certificate. You need to put the root CA certificate and all your intermediate CA certificates into one `.pem` file.  
-- A client certificate in `.pem` format: This file should contain the public key and signature of the client certificate.
-- A client certificate private key in `.pem` format: This file should contain only the private key of the client certificate.  
-- A client certificate archive package in `.pfx` format: This file should contain the signature, public key, and private key of the client certificate.
-- Password: Use `SAME` password to protect the client certificate private key and the client certificate archive package, because they both have the client certificate's private key.
+   - A certificate authority (CA) certificate in `.pem` format: This file should contain the public key and signature of the CA certificate. You need to put the root CA certificate and all your intermediate CA certificates into one `.pem` file.  
+   - A client certificate in `.pem` format: This file should contain the public key and signature of the client certificate.
+   - A client certificate private key in `.pem` format: This file should contain only the private key of the client certificate.  
+   - A client certificate archive package in `.pfx` format: This file should contain the signature, public key, and private key of the client certificate.
+   - Password: Use `SAME` password to protect the client certificate private key and the client certificate archive package, because they both have the client certificate's private key.
 
 2. Install a CA certificate into the machine certificate store:
 
-- Linux: OpenSSL certificate store
-- macOS: System or User Keychain
-- Windows: Windows certificate store
+   - Linux: OpenSSL certificate store
+   - macOS: System or User Keychain
+   - Windows: Windows certificate store
 
 3. Pass `--sslcacert`, `--sslclientcert`, `--sslclientcertkey`. `--sslclientcertarchive`, and `--sslclientcertpassword` during agent configuration.
 
