@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/08/2025
+ms.date: 09/11/2025
 #customer intent: As a project member, I want to understand what the Azure DevOps MCP Server is and how it can enhance my AI assistant with real-time Azure DevOps context to improve my productivity and decision-making.
 ---
 
@@ -91,7 +91,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        **Description**
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **MCP Server provides** 
@@ -100,7 +100,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        Access to your assigned work items and recent updates
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **AI assistant action** 
@@ -109,7 +109,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        Analyzes the data to help you prepare for standup
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **Example prompt** 
@@ -118,7 +118,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        "Get my work items for project MyProject and help me prepare for standup - what did I complete, what am I working on, and what's blocked?"
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **Query translation** 
@@ -127,7 +127,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         WIQL query to retrieve your assigned work items, filtered by project and excluding removed items, ordered by most recent changes
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **Raw data result** 
@@ -136,7 +136,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         Six work items including bugs, tasks, user stories, and features with their current states (Resolved, Done, Active, New, Blocked)
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **AI assistant output** 
@@ -150,7 +150,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         |**Summary for standup**| - Yesterday: Resolved mobile Safari sign-in issue, completed API docs.<br>- Today: Continue 2FA implementation, investigate dataset performance issue.<br>- Blockers: Need security approval for payment integration, staging deployment delayed due to maintenance.|
        :::column-end:::
 :::row-end:::
-<hr>
+---
 
 ### Sprint planning support
 
@@ -232,7 +232,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        **Description**
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **MCP Server provides** 
@@ -241,7 +241,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        Pull request details and linked work item information
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **AI assistant action** 
@@ -250,7 +250,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        Provides business context for technical changes
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **Example prompt** 
@@ -259,7 +259,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        "Get details for pull request #67 and its linked work items and help me understand the business effect of these code changes"
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **API translation** 
@@ -268,7 +268,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         REST API calls to retrieve pull request details and linked work item information with expanded relations
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **Raw data result** 
@@ -277,7 +277,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         Pull request #67 (caching layer implementation, eight files changed, +156/-42 lines) and two linked work items (performance user story and settings bug)
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **AI assistant output** 
@@ -290,4 +290,4 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         |**Business impact summary**| - 💼 **Strategic Alignment**: Supports Q3 user retention goal (20% improvement)<br>Addresses premium user experience issues affecting revenue<br>Enables future personalization features<br>- 📊 **Expected Outcomes**: Performance: 60% reduction in preference loading time (2.5s → 1.0s)<br>User Experience: Eliminates loading delays in settings and profile pages<br>Support Impact: Expected 40% reduction in performance-related tickets<br>- 🔍 **Review Focus Areas**: Cache invalidation logic (data consistency)<br>Error handling for cache unavailability<br>Performance monitoring implementation<br>Security considerations for cached user data |
        :::column-end:::
 :::row-end:::
-<hr>
+---
