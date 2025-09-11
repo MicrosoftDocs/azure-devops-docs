@@ -120,7 +120,7 @@ Managed DevOps Pools:
 * Provides paths for the most common scenarios.
 * Significantly reduces the time it takes to create and maintain custom pools.
 
-Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Sets agent pools. It simplifies custom pool creation even further by improving the scalability and reliability of custom pools. Managed DevOps Pools is a fully managed service. The virtual machines or containers that power agents live in a Microsoft Azure subscription and not in your own Azure subscription, similar to Azure DevOps Virtual Machine Scale Sets agent pools. For more information, see the [Managed DevOps Pools](../../managed-devops-pools/index.yml) documentation.
+Managed DevOps Pools is an evolution of Azure Virtual Machine Scale Sets agent pools. It simplifies custom pool creation even further by improving the scalability and reliability of custom pools. Managed DevOps Pools is a fully managed service. The virtual machines or containers that power agents live in a Microsoft Azure subscription and not in your own Azure subscription, similar to Azure Virtual Machine Scale Sets agent pools. For more information, see the [Managed DevOps Pools](../../managed-devops-pools/index.yml) documentation.
 
 ::: moniker-end
 
