@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/08/2025
+ms.date: 09/11/2025
 #customer intent: As a project member, I want to understand what the Azure DevOps MCP Server is and how it can enhance my AI assistant with real-time Azure DevOps context to improve my productivity and decision-making.
 ---
 
@@ -83,106 +83,211 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
 
 ### Daily standup preparation
 
-| Component | Description |
-|-----------|-------------|
-| **MCP Server provides** | Access to your assigned work items and recent updates |
-| **AI assistant does** | Analyzes the data to help you prepare for standup |
-| **Example prompt** | "Get my work items for project MyProject and help me prepare for standup - what did I complete, what am I working on, and what's blocked?" |
-| **Query translation** | WIQL query to retrieve your assigned work items, filtered by project and excluding removed items, ordered by most recent changes |
-| **Raw data result** | Six work items including bugs, tasks, user stories, and features with their current states (Resolved, Done, Active, New, Blocked) |
-
-**AI assistant standup summary:**
-
-| Status | Work Items |
-|--------|------------|
-| ✅ **Completed** | Bug #4521: "Sign in page crashes on mobile Safari" - Resolved yesterday<br>Task #4498: "Update API documentation for v2.1" - Completed 2 days ago |
-| 🔄 **In Progress** | User Story #4456: "Implement two-factor authentication" - In Progress (three days)<br>└── Subtasks: Database schema (Done), UI components (In Progress), Testing (Not Started)<br><br>Bug #4534: "Performance issue with large datasets" - Active (one day) |
-| ⚠️ **Blocked** | Feature #4423: "Integration with external payment gateway" - Blocked<br>└── Waiting for: Security team approval (blocked five days)<br>└── Action needed: Follow up with Sarah from InfoSec team<br><br>Task #4467: "Deploy to staging environment" - Impediment<br>└── Issue: Staging server maintenance scheduled today 2-4 PM |
-
-**Summary for standup**: Yesterday: Resolved mobile Safari sign-in issue, completed API docs. Today: Continue 2FA implementation, investigate dataset performance issue. Blockers: Need security approval for payment integration, staging deployment delayed due to maintenance.
+:::row:::
+       :::column span="1":::
+       **Component**
+       :::column-end:::
+       :::column span="2":::
+       **Description**
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **MCP Server provides** 
+       :::column-end:::
+       :::column span="2":::
+       Access to your assigned work items and recent updates
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **AI assistant action** 
+       :::column-end:::
+       :::column span="2":::
+       Analyzes the data to help you prepare for standup
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **Example prompt** 
+       :::column-end:::
+       :::column span="2":::
+       "Get my work items for project MyProject and help me prepare for standup - what did I complete, what am I working on, and what's blocked?"
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **Query translation** 
+       :::column-end:::
+       :::column span="2":::
+        WIQL query to retrieve your assigned work items, filtered by project and excluding removed items, ordered by most recent changes
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **Raw data result** 
+       :::column-end:::
+       :::column span="2":::
+        Six work items including bugs, tasks, user stories, and features with their current states (Resolved, Done, Active, New, Blocked)
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **AI assistant output** 
+       :::column-end:::
+       :::column span="2":::
+        | Status | Work Items |
+        |--------|------------|
+        | ✅ **Completed** | Bug #4521: "Sign in page crashes on mobile Safari" - Resolved yesterday<br>Task #4498: "Update API documentation for v2.1" - Completed 2 days ago |
+        | 🔄 **In Progress** | User Story #4456: "Implement two-factor authentication" - In Progress (three days)<br>└── Subtasks: Database schema (Done), UI components (In Progress), Testing (Not Started)<br><br>Bug #4534: "Performance issue with large datasets" - Active (one day) |
+        | ⚠️ **Blocked** | Feature #4423: "Integration with external payment gateway" - Blocked<br>└── Waiting for: Security team approval (blocked five days)<br>└── Action needed: Follow up with Sarah from InfoSec team<br>Task #4467: "Deploy to staging environment" - Impediment<br>└── Issue: Staging server maintenance scheduled today 2-4 PM |
+        |**Summary for standup**| - Yesterday: Resolved mobile Safari sign-in issue, completed API docs.<br>- Today: Continue 2FA implementation, investigate dataset performance issue.<br>- Blockers: Need security approval for payment integration, staging deployment delayed due to maintenance.|
+       :::column-end:::
+:::row-end:::
+---
 
 ### Sprint planning support
 
-| Component | Description |
-|-----------|-------------|
-| **MCP Server provides** | Access to backlog items, team data, and work item details |
-| **AI assistant does** | Helps analyze capacity and plan the sprint |
-| **Example prompt** | "Get all work items in the product backlog for MyProject and prioritize them for a two-week sprint with three developers" |
-| **Query translation** | WIQL query to retrieve backlog items with story points, priority, and state information, ordered by priority and stack rank |
-| **Raw data result** | Nine backlog items including epics, features, user stories, bugs, and tasks with story points and dependencies, plus team metrics (three developers, 14-day sprint, 60-point velocity) |
-
-**AI assistant sprint planning analysis:**
-
-| Category | Work Items | Points |
-|----------|------------|--------|
-| ✅ **Recommended** | Epic #3401: "User Profile Enhancement" - High business value, no dependencies<br>Bug #3456: "Search results time out on large datasets" - Critical user impact<br>Feature #3378: "Export dashboard to PDF" - Frequently requested<br>Story #3489: "Implement password reset flow" - Security priority<br>Task #3512: "Upgrade React components to v18" - Technical debt<br>Story #3467: "Add dark mode toggle" - Quick win | **60 total**<br>(13 + 8 + 13 + 8 + 13 + 5) |
-| ⏳ **Deferred** | Epic #3234: "Mobile app rewrite" - Too large for single sprint<br>Feature #3445: "AI-powered recommendations" - Waiting for data science team<br>Story #3523: "Integration with external CRM" - Blocked by vendor API | 34, 21, 13 |
-
-**Planning recommendations:**
-- **Balance**: Mix of features (3), bugs (1), technical debt (1), quick wins (1)
-- **Risk level**: Low-medium risk items for predictable delivery
-- **Dependencies**: All selected items have resolved dependencies
-- **Skills**: Work distribution matches current team expertise
-- **Business value**: Prioritized customer-facing features and critical fixes
+:::row:::
+       :::column span="1":::
+       **Component**
+       :::column-end:::
+       :::column span="2":::
+       **Description**
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **MCP Server provides** 
+       :::column-end:::
+       :::column span="2":::
+       Access to backlog items, team data, and work item details
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **AI assistant action** 
+       :::column-end:::
+       :::column span="2":::
+       Helps analyze capacity and plan the sprint
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **Example prompt** 
+       :::column-end:::
+       :::column span="2":::
+       "Get all work items in the product backlog for MyProject and prioritize them for a two-week sprint with three developers"
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **Query translation** 
+       :::column-end:::
+       :::column span="2":::
+        WIQL query to retrieve backlog items with story points, priority, and state information, ordered by priority and stack rank
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **Raw data result** 
+       :::column-end:::
+       :::column span="2":::
+        Nine backlog items including epics, features, user stories, bugs, and tasks with story points and dependencies, plus team metrics (three developers, 14-day sprint, 60-point velocity)
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **AI assistant output**
+       :::column-end:::
+       :::column span="2":::
+        |Category | Work Items | Points |
+        |----------|------------|--------|
+        | ✅ **Recommended** | Epic #3401: "User Profile Enhancement" - High business value, no dependencies<br>Bug #3456: "Search results time out on large datasets" - Critical user impact<br>Feature #3378: "Export dashboard to PDF" - Frequently requested<br>Story #3489: "Implement password reset flow" - Security priority<br>Task #3512: "Upgrade React components to v18" - Technical debt<br>Story #3467: "Add dark mode toggle" - Quick win | **60 total**<br>(13 + 8 + 13 + 8 + 13 + 5) |
+        | ⏳ **Deferred** | Epic #3234: "Mobile app rewrite" - Too large for single sprint<br>Feature #3445: "AI-powered recommendations" - Waiting for data science team<br>Story #3523: "Integration with external CRM" - Blocked by vendor API | 34, 21, 13 |
+        **Planning recommendations**|- **Balance**: Mix of features (3), bugs (1), technical debt (1), quick wins (1)<br>- **Risk level**: Low-medium risk items for predictable delivery<br>- **Dependencies**: All selected items have resolved dependencies<br>- **Skills**: Work distribution matches current team expertise<br>- **Business value**: Prioritized customer-facing features and critical fixes|
+       :::column-end:::
+:::row-end:::
+---
 
 ### Code review workflow
 
-| Component | Description |
-|-----------|-------------|
-| **MCP Server provides** | Pull request details and linked work item information |
-| **AI assistant does** | Provides business context for technical changes |
-| **Example prompt** | "Get details for pull request #67 and its linked work items and help me understand the business effect of these code changes" |
-| **API translation** | REST API calls to retrieve pull request details and linked work item information with expanded relations |
-| **Raw data result** | Pull request #67 (caching layer implementation, eight files changed, +156/-42 lines) and two linked work items (performance user story and settings bug) |
-
-**AI assistant business context analysis:**
-
-| Component | Details |
-|-----------|---------|
-| **Pull Request** | PR #67: "Implement caching layer for user preferences"<br>Author: Sarah Chen, Status: Active (awaiting review)<br>Files: 8 changed (+156, -42 lines), Created: Two days ago |
-| **Linked Work Items** | 🎯 User Story #2847: "Improve app performance for returning users" (High priority)<br>└── Target: Page load time < 2 seconds for logged-in users<br><br>🐛 Bug #2901: "Settings page loads slowly for users with many preferences" (Medium severity)<br>└── Impact: Affects 15% of premium users, causing support tickets |
-
-**Business impact summary:**
-
-| Category | Analysis |
-|----------|----------|
-| 💼 **Strategic Alignment** | Supports Q3 user retention goal (20% improvement)<br>Addresses premium user experience issues affecting revenue<br>Enables future personalization features |
-| 📊 **Expected Outcomes** | Performance: 60% reduction in preference loading time (2.5s → 1.0s)<br>User Experience: Eliminates loading delays in settings and profile pages<br>Support Impact: Expected 40% reduction in performance-related tickets |
-| 🔍 **Review Focus Areas** | Cache invalidation logic (data consistency)<br>Error handling for cache unavailability<br>Performance monitoring implementation<br>Security considerations for cached user data |
-
-### Project reporting
-
-| Component | Description |
-|-----------|-------------|
-| **MCP Server provides** | Access to work items, builds, and project data |
-| **AI assistant does** | Creates summaries and identifies trends |
-| **Example prompt** | "Get all completed work items from the last sprint and create a summary report for stakeholders highlighting key accomplishments and metrics" |
-| **Query translation** | WIQL query to retrieve completed work items from current iteration with story points and completion dates, ordered by most recent |
-| **Raw data result** | Six work items from last sprint including bugs, tasks, user stories, and features with completion states and story points |
-
-**AI assistant stakeholder report:**
-
-| Metric | Results |
-|--------|---------|
-| **Sprint Summary** | Sprint completed with two items finished, 2 in progress, 2 blocked<br>Team: MyProject, Sprint period: Last two weeks |
-| ✅ **Completed Work** | Bug #4521: "Sign-in page crashes on mobile Safari" - Resolved (Critical fix)<br>Task #4498: "Update API documentation for v2.1" - Done (Documentation update) |
-| 🔄 **In Progress** | User Story #4456: "Implement two-factor authentication" - 60% complete<br>└── Database schemas complete, UI in progress, testing pending<br><br>Bug #4534: "Performance issue with large datasets" - Investigation phase |
-| ⚠️ **Blocked Items** | Feature #4423: "Integration with external payment gateway"<br>└── Blocked: Waiting for security team approval (five days)<br><br>Task #4467: "Deploy to staging environment"<br>└── Impediment: Server maintenance conflict |
-
-**Key accomplishments:**
-- **Critical bug resolved**: Mobile Safari sign-in issue affecting user access
-- **Documentation updated**: API v2.1 documentation completed for developer onboarding
-- **Security progress**: Two-factor authentication implementation 60% complete
-- **Performance investigation**: Dataset performance issue analysis underway
-
-**Next sprint focus:**
-- **Complete**: Two-factor authentication implementation and testing
-- **Resolve**: Payment gateway integration pending security approval
-- **Address**: Staging deployment scheduling conflicts
-- **Continue**: Dataset performance optimization efforts
-
-## Related content
-
-- [Example prompts for Azure DevOps MCP Server](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/EXAMPLES.md)
-- [Troubleshoot Azure DevOps MCP Server](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/TROUBLESHOOTING.md)
-- [Frequently asked questions about Azure DevOps MCP Server](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/FAQ.md)
+:::row:::
+       :::column span="1":::
+       **Component**
+       :::column-end:::
+       :::column span="2":::
+       **Description**
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **MCP Server provides** 
+       :::column-end:::
+       :::column span="2":::
+       Pull request details and linked work item information
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **AI assistant action** 
+       :::column-end:::
+       :::column span="2":::
+       Provides business context for technical changes
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **Example prompt** 
+       :::column-end:::
+       :::column span="2":::
+       "Get details for pull request #67 and its linked work items and help me understand the business effect of these code changes"
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **API translation** 
+       :::column-end:::
+       :::column span="2":::
+        REST API calls to retrieve pull request details and linked work item information with expanded relations
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **Raw data result** 
+       :::column-end:::
+       :::column span="2":::
+        Pull request #67 (caching layer implementation, eight files changed, +156/-42 lines) and two linked work items (performance user story and settings bug)
+       :::column-end:::
+:::row-end:::
+---
+:::row:::
+       :::column span="1":::
+       **AI assistant output** 
+       :::column-end:::
+       :::column span="2":::
+        | Component | Details |
+        |-----------|---------|
+        | **Pull Request** | PR #67: "Implement caching layer for user preferences"<br>Author: Sarah Chen, Status: Active (awaiting review)<br>Files: 8 changed (+156, -42 lines), Created: Two days ago |
+        | **Linked Work Items** | 🎯 User Story #2847: "Improve app performance for returning users" (High priority)<br>└── Target: Page load time < 2 seconds for logged-in users<br><br>🐛 Bug #2901: "Settings page loads slowly for users with many preferences" (Medium severity)<br>└── Impact: Affects 15% of premium users, causing support tickets |
+        |**Business impact summary**| - 💼 **Strategic Alignment**: Supports Q3 user retention goal (20% improvement)<br>Addresses premium user experience issues affecting revenue<br>Enables future personalization features<br>- 📊 **Expected Outcomes**: Performance: 60% reduction in preference loading time (2.5s → 1.0s)<br>User Experience: Eliminates loading delays in settings and profile pages<br>Support Impact: Expected 40% reduction in performance-related tickets<br>- 🔍 **Review Focus Areas**: Cache invalidation logic (data consistency)<br>Error handling for cache unavailability<br>Performance monitoring implementation<br>Security considerations for cached user data |
+       :::column-end:::
+:::row-end:::
+---
