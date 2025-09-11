@@ -162,7 +162,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        **Description**
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **MCP Server provides** 
@@ -171,7 +171,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        Access to backlog items, team data, and work item details
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **AI assistant action** 
@@ -180,7 +180,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        Helps analyze capacity and plan the sprint
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **Example prompt** 
@@ -189,7 +189,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        "Get all work items in the product backlog for MyProject and prioritize them for a two-week sprint with three developers"
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **Query translation** 
@@ -198,7 +198,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         WIQL query to retrieve backlog items with story points, priority, and state information, ordered by priority and stack rank
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **Raw data result** 
@@ -207,7 +207,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         Nine backlog items including epics, features, user stories, bugs, and tasks with story points and dependencies, plus team metrics (three developers, 14-day sprint, 60-point velocity)
        :::column-end:::
 :::row-end:::
-<hr>
+---
 :::row:::
        :::column span="1":::
        **AI assistant output**
@@ -220,7 +220,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         **Planning recommendations**|- **Balance**: Mix of features (3), bugs (1), technical debt (1), quick wins (1)<br>- **Risk level**: Low-medium risk items for predictable delivery<br>- **Dependencies**: All selected items have resolved dependencies<br>- **Skills**: Work distribution matches current team expertise<br>- **Business value**: Prioritized customer-facing features and critical fixes|
        :::column-end:::
 :::row-end:::
-<hr>
+---
 
 ### Code review workflow
 
