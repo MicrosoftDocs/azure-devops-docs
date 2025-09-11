@@ -446,7 +446,7 @@ Maintenance jobs that are queued to run wait seven days to run. If they aren't r
 
 The seven-day limit is different from the *maintenance job timeout* setting. The latter controls the maximum number of minutes an agent can spend doing maintenance. The timer starts when the job starts, not when the job is queued on an agent.
 
-### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are not available. Why?
+### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls aren't available. Why?
 
 In the **Create a project agent pool** dialog, you can't use an existing organization agent pool if another project agent pool already references it. Each organization agent pool can be referenced by only one project agent pool within a project collection.
 

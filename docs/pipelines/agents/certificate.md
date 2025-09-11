@@ -145,7 +145,7 @@ To configure Node.js to trust a certificate:
 
 The `NODE_EXTRA_CA_CERTS` environment variable, introduced in Node v7.3.0, allows you to specify a file that contains one or more CA certificates that Node trusts (in addition to the default bundle). `NODE_EXTRA_CA_CERTS` appends to the trust store.
 
-1. Export the certificate in PEM format: On your server or CA, export the root (and any intermediate, if needed) certificates as a PEM-encoded file. This format is a text file with `-----BEGIN CERTIFICATE-----` and Base64 data. Make sure that you use Base64-encoded PEM, and not DER. (On Windows, .CER files can be either; you can rename to .pem to avoid confusion. The file can actually have any extension, but .pem or .crt is standard.) 
+1. Export the certificate in PEM format: On your server or CA, export the root (and any intermediate, if needed) certificates as a PEM-encoded file. This format is a text file with `-----BEGIN CERTIFICATE-----` and Base64 data. Make sure that you use Base64-encoded PEM, and not DER. (On Windows, .CER files can be either; you can rename to .pem to avoid confusion. The file can actually have any extension, but .pem or .crt is standard.)
 
    If you have multiple internal CAs (a chain), you can concatenate them into one file. Node reads all certificates in that file.
 

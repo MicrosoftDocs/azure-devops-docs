@@ -92,10 +92,10 @@ All official Azure DevOps tasks use Node.js library 20 as a universal handler. H
   
   Azure Pipelines provides two versions of agent packages.
 
-  * `vsts-agent-\`: Packages that supports Node.js libraries 6 and 10.
+  * `vsts-agent-\`: Packages that support Node.js libraries 6 and 10.
   * `pipelines-agent-\`: Packages that don't support Node.js libraries 6 and 10. In the future, this version of the package becomes the default agent package.
 
-  If your tasks don't require Node.js libraries 6 or 10, and you don't want to install Node.js libraries 6 or 10 on your agent machine, you can install the agent from [here, under Alternate Agent Downloads](https://github.com/microsoft/azure-pipelines-agent/releases).
+  If your tasks don't require Node.js libraries 6 or 10, and you don't want to install Node.js libraries 6 or 10 on your agent machine, you can install the agent from [this documentation, under Alternate Agent Downloads](https://github.com/microsoft/azure-pipelines-agent/releases).
 
 ## <a name = "azure-virtual-machine-scale-set-agents"></a> Azure Virtual Machine Scale Sets agents
 
