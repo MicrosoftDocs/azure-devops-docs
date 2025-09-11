@@ -13,15 +13,14 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This article describes using *service containers* in Azure Pipelines. A *container* provides a simple and portable way to run a service. Service containers let you automatically create, network, and manage the lifecycles of services that your pipelines depend on.
+This article describes using service containers in Azure Pipelines. If your pipeline requires the support of one or more services, you might need to create, connect to, and clean up the services per [job](phases.md). For example, your pipeline might run integration tests that require access to a newly created database and memory cache for each job in the pipeline.
 
-If your pipeline requires the support of one or more services, you might need to create, connect to, and clean up the services per [job](phases.md). For example, your pipeline might run integration tests that require access to a newly created database and memory cache for each job in the pipeline.
+A *service container* provides a simple and portable way to run a service. A service container is accessible only to the job that requires it.
 
-A service container is accessible only to the job that requires it. Service containers work with any kind of job, but are most commonly used with [container jobs](container-phases.md).
+Service containers let you automatically create, network, and manage the lifecycles of services that your pipelines depend on. Service containers work with any kind of job, but are most commonly used with [container jobs](container-phases.md).
 
 >[!NOTE]
 >Classic pipelines don't support service containers.
-
 
 ## Conditions and limitations
 
@@ -129,7 +128,7 @@ steps:
 
 ## Ports
 
-Specifying `ports` isn't required if your job is running in a container, because containers on the same Docker network automatically expose all ports to each other by default. Jobs that run directly on the host require `ports` to access the service container.
+Jobs that run directly on the host require `ports` to access the service container. Specifying `ports` isn't required if your job is running in a container, because containers on the same Docker network automatically expose all ports to each other by default.
 
 A port takes the form `<hostPort>:<containerPort>` or just `<containerPort>` with an optional `/<protocol>` at the end. For example, `6379/tcp` exposes `tcp` over port `6379`, bound to a random port on the host machine.
 
@@ -170,11 +169,11 @@ services:
 ```
 
 >[!NOTE]
->Microsoft-hosted pools don't persist volumes between jobs because the host machine is cleaned up after each job.
+>Microsoft-hosted pools don't persist volumes between jobs, because the host machine is cleaned up after each job.
 
 ## Multiple containers with services example
 
-The following example has a Django Python web container connected to PostgreSQL and MySQL database containers.
+The following example pipeline has a Django Python web container connected to PostgreSQL and MySQL database containers.
 
 - The PostgreSQL database is the primary database, and its container is named `db`.
 - The `db` container uses volume `/data/db:/var/lib/postgresql/data`, and passes three database variables to the container via `env`.
