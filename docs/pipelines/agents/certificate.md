@@ -61,7 +61,7 @@ Pass `--sslskipcertvalidation` during agent configuration:
 
 > [!NOTE]
 >
-> To use the `--sslskipcertvalidation` flag on Linux and macOS, the `libcurl` library on your Linux or macOS machine must be built with OpenSSL. Learn more about the [`libcurl` library](https://github.com/dotnet/corefx/issues/9728).
+> To use the `--sslskipcertvalidation` flag on Linux and macOS, the [`libcurl` library](https://github.com/dotnet/corefx/issues/9728) on your Linux or macOS machine must be built with OpenSSL.
 
 ### Problem: Git get sources command fails with an SSL certificate (Windows agent only)
 
@@ -69,7 +69,7 @@ We ship command-line Git as part of the Windows agent and use this copy of Git f
 
 There are two ways to solve this problem:
 
-1. Set the following `git config` at a global level by the agent's run as user.
+- Set the following `git config` at a global level by the agent's run as user.
 
    ```bash
    git config --global http."https://tfs.com/".sslCAInfo certificate.pem
@@ -79,7 +79,7 @@ There are two ways to solve this problem:
    >
    > Setting a system-level `git config` isn't reliable on Windows. The system `.gitconfig` file is stored with the copy of Git we packaged. The packaged Git is replaced every time the agent is upgraded to a new version.
 
-2. Enable git to use `SChannel` during configuration when you're using a 2.129.0 or later version agent. Pass `--gituseschannel` during agent configuration.
+- Enable git to use `SChannel` during configuration when you're using a 2.129.0 or later version agent. Pass `--gituseschannel` during agent configuration.
 
    ```
    ./config.cmd --gituseschannel
@@ -101,12 +101,12 @@ When that IIS SSL setting is enabled, you need to use version 2.125.0 or newer a
    - A client certificate in `.pem` format: This file should contain the public key and signature of the client certificate.
    - A client certificate private key in `.pem` format: This file should contain only the private key of the client certificate.  
    - A client certificate archive package in `.pfx` format: This file should contain the signature, public key, and private key of the client certificate.
-   - Password: Use `SAME` password to protect the client certificate private key and the client certificate archive package, because they both have the client certificate's private key.
+   - Password: Use the same password to protect the client certificate private key and the client certificate archive package, because they both have the client certificate's private key.
 
 2. Install a CA certificate into the machine certificate store:
 
    - Linux: OpenSSL certificate store
-   - macOS: System or User Keychain
+   - macOS: System or user keychain
    - Windows: Windows certificate store
 
 3. Pass `--sslcacert`, `--sslclientcert`, `--sslclientcertkey`. `--sslclientcertarchive`, and `--sslclientcertpassword` during agent configuration.
@@ -141,17 +141,15 @@ console.log(tls.rootCertificates.join("\n"));
 ' > "$ROOT_CERTS_FILE" 
 ```
 
-To configure Node.js to trust a certificate:
+The `NODE_EXTRA_CA_CERTS` environment variable, introduced in Node v7.3.0, allows you to specify a file that contains one or more CA certificates that Node trusts (in addition to the default bundle). `NODE_EXTRA_CA_CERTS` appends to the trust store. To configure Node.js to trust a certificate:
 
-The `NODE_EXTRA_CA_CERTS` environment variable, introduced in Node v7.3.0, allows you to specify a file that contains one or more CA certificates that Node trusts (in addition to the default bundle). `NODE_EXTRA_CA_CERTS` appends to the trust store.
-
-1. Export the certificate in PEM format: On your server or CA, export the root (and any intermediate, if needed) certificates as a PEM-encoded file. This format is a text file with `-----BEGIN CERTIFICATE-----` and Base64 data. Make sure that you use Base64-encoded PEM, and not DER. (On Windows, .CER files can be either; you can rename to .pem to avoid confusion. The file can actually have any extension, but .pem or .crt is standard.)
+1. On your server or CA, export the root (and any intermediate, if needed) certificates as a PEM-encoded file. This format is a text file with `-----BEGIN CERTIFICATE-----` and Base64 data. Make sure that you use Base64-encoded PEM, and not DER. (On Windows, .cer files can be either; you can rename to .pem to avoid confusion. The file can actually have any extension, but .pem or .crt is standard.)
 
    If you have multiple internal CAs (a chain), you can concatenate them into one file. Node reads all certificates in that file.
 
-1. Make the PEM available on the build agent by placing it into a known path (for example `C:\certs\CorpRootCA.pem or /etc/ssl/certs/CorpRootCA.pem`).
+1. Make the PEM available on the build agent by placing it into a known path (for example, `C:\certs\CorpRootCA.pem or /etc/ssl/certs/CorpRootCA.pem`).
 
-1. Set an OS environment variable `NODE_EXTRA_CA_CERTS` that points to the PEM file. For example, you can use PowerShell on Windows:
+1. Set an OS environment variable, `NODE_EXTRA_CA_CERTS`, that points to the PEM file. For example, you can use PowerShell on Windows:
 
 ```
 [Environment]::SetEnvironmentVariable("NODE_EXTRA_CA_CERTS", "C:\certs\CorpRootCA.pem", "Machine")
