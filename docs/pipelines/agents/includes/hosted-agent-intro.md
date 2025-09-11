@@ -15,7 +15,7 @@ Microsoft-hosted agents can run jobs [directly on the VM](../../process/phases.m
 
 Azure Pipelines provides a predefined agent pool named **Azure Pipelines** with Microsoft-hosted agents.
 
-For many teams, this process is the simplest way to run your jobs. You can try it first to see if it works for your build or deployment. If not, you can use [Scale Set agents](../scale-set-agents.md) or a self-hosted agent.
+For many teams, this process is the simplest way to run your jobs. You can try it first to see if it works for your build or deployment. If not, you can use [Virtual Machine Scale Sets agents](../scale-set-agents.md) or a self-hosted agent.
 
 > [!TIP]
 >

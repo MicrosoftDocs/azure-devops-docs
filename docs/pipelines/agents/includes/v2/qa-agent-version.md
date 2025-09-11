@@ -9,7 +9,7 @@ ms.date: 02/12/2020
 
 ### How do I make sure I have the latest agent version?
 
-1. Navigate to the **Agent pools** tab:
+1. Go to the **Agent pools** tab:
 
    [!INCLUDE [agent-pools-tab](../../includes/agent-pools-tab.md)]
 
@@ -33,7 +33,7 @@ Yes. Beginning with Azure DevOps Server 2019, you can configure your server to l
 
 1. From a computer with internet access, download the latest version of the agent package files (in .zip or .tar.gz form) from the [Azure Pipelines Agent GitHub Releases page](https://github.com/Microsoft/azure-pipelines-agent/releases).
 
-2. Transfer the downloaded package files to each Azure DevOps Server Application Tier by using a method of your choice (for example: USB drive, Network transfer, and so on). Place the agent files under the `%ProgramData%\Microsoft\Azure DevOps\Agents` folder. If there's no folder labeled **Agents**, create one.
+2. Transfer the downloaded package files to each Azure DevOps Server Application Tier by using a method of your choice (for example, USB drive, network transfer, and so on). Place the agent files under the `%ProgramData%\Microsoft\Azure DevOps\Agents` folder. If there's no folder labeled **Agents**, create one.
 
 3. You're all set! Your Azure DevOps Server now uses the local files whenever the agents are updated. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. But if you want to manually update some agents, right click the pool, and then choose **Update all agents**.
 
