@@ -3,7 +3,7 @@ title: Pipelines for JavaScript apps
 description: Learn about ways to customize pipelines to support building, testing, running, and publishing JavaScript apps.
 ms.topic: conceptual
 ms.custom: devx-track-js, freshness-fy22q2
-ms.date: 09/10/2025
+ms.date: 09/11/2025
 monikerRange: '<= azure-devops'
 #customer intent: As a JavaScript developer, I want to understand how Azure Pipelines works with JavaScript apps, so I can create pipelines to build, test, run, package, and publish my apps.
 ---
@@ -46,6 +46,9 @@ To install a specific Node.js version in a Classic pipeline:
 1. On the **Tasks** tab of your pipeline, select the job that runs your build tasks, and then select **+** to add a new task.
 1. In the task catalog, find and add the **Node.js tool installer** task.
 1. Under **Version Spec** in the task configuration screen, specify the version of the Node.js runtime that you want to install.
+
+>[!NOTE]
+>After you add the task, you can drop down the **Task version** selector at the top of the configuration screen and select the **1.\* (preview)** version of the taska, which is called **Use Node.js ecosystem**. If you use this task version, use the **Version** field to specify the Node.js runtime version you want.
 
 ---
 
