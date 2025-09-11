@@ -1,48 +1,46 @@
 ---
 title: Cumulative Flow Guidance
 titleSuffix: Azure DevOps   
-description: See how to use cumulative flow diagrams (CFDs) to monitor your work process. Find out how CFDs, cycle times, and lead times can help you identify issues.
+description: "Learn how to use cumulative flow diagrams (CFDs), cycle times, and lead times to monitor your work process and identify issues. Discover actionable insights to improve workflow efficiency."
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.topic: conceptual 
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/30/2025
+ms.date: 09/10/2025
 # customer intent: As a team member, I want to become familiar with cumulative flow diagrams (CFDs), cycle times, and lead times so that I can monitor and identify issues in my work process.
 ---
 
-# Cumulative flow, lead time, and cycle time guidance
+# Cumulative flow guidance for lead time and cycle time
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can use cumulative flow diagrams (CFDs) to monitor the flow of work through a system. The cycle time and lead time are the two primary metrics that are used for tracking. You can extract these metrics from a CFD.
+Cumulative flow diagrams (CFDs) help you monitor your work process by visualizing the flow of work through your system. This article explains how to use CFDs, cycle times, and lead times to identify issues and improve workflow efficiency.
 
-This article shows you how you can use CFDs, cycle times, and lead times to identify issues in your work process and help you move work through your system.
-
-- To configure or view a CFD, see [View and configure a cumulative flow diagram](cumulative-flow.md). 
+- To set up or view a CFD, see [View and configure a cumulative flow diagram](cumulative-flow.md).
 - To add a lead time or cycle time control chart to a dashboard, see [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md).
-
-## Sample charts and primary metrics
+- To set up or view a CFD, see [View and configure a cumulative flow diagram](cumulative-flow.md).
+- To add a lead time or cycle time control chart to a dashboard, see [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md).
 
 :::row:::
    :::column span="2":::
-      The continuous-flow CFD provides the chart that's most favored by teams that follow a lean process.  
-      
-      However, many teams combine lean practices with Scrum or other methodologies. As a result, they use lean practices within the span of an iteration or sprint. In this situation, the diagram takes on a slightly different look. It provides two extra, and very valuable, pieces of information, as shown in the next chart, the fixed-period CFD.
-   :::column-end:::
-   :::column span="3":::
+      The continuous-flow CFD is the chart most teams that follow a lean process prefer.
+
+But many teams combine lean practices with Scrum or other methods. They use lean practices during an iteration or sprint. In this case, the diagram looks a bit different. It shows two extra,The continuous-flow CFD is the chart most teams that follow a lean process prefer.
+
+But many teams combine lean practices with Scrum or other methods. They use lean practices during an iteration or sprint. In this case, the diagram looks a bit different. It shows two extra, valuable pieces of information, as shown in the next chart, the fixed-period CFD.
       **Continuous-flow CFD**  
       :::image type="content" source="media/guidance/cfd-metrics.png" alt-text="Chart that shows an abstract continuous-flow CFD. Labels point out the lead time, cycle time, work in progress, and items in various states.":::
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
-      This fixed-period CFD is for a completed sprint.  
-      
-      The top line represents the scope set for the sprint. Because the work must be completed by the last day of the sprint, the slope of the Closed state indicates whether a team is on track to complete the sprint. The easiest way to think of this view is as a burnup chart.
-      
-      In the chart, the first step in the process is depicted as the upper-left area. The last step in the process is depicted as the bottom-right area.  
+      This fixed-period CFD shows a completed sprint.
+
+The top line shows the scope set for the sprint. Because the work needs to finish by the last day, the slope of the Closed state shows if a team is on track. Think of this view as a burnup chart.
+
+In the chart, the first step in the process is in the upper-left area. The last step is in the bottom-right area.  
    :::column-end:::
    :::column span="3":::
       **Fixed-period CFD for a completed sprint**  
@@ -52,7 +50,7 @@ This article shows you how you can use CFDs, cycle times, and lead times to iden
 
 ## Chart metrics  
 
-CFDs display the count of work items grouped by state, or column, over time. The two primary metrics that are used for tracking are the cycle time and lead time. You can extract these metrics from the chart.  
+CFDs show the count of work items grouped by state or column over time. The two primary metrics for tracking are cycle time and lead time. You extract these metrics from the chart.
 
 ---
 :::row:::
@@ -69,7 +67,7 @@ CFDs display the count of work items grouped by state, or column, over time. The
       **Cycle time** <sup>1</sup>
    :::column-end:::
    :::column span="3":::
-      The time it takes to move work through a single process or workflow state. The length is measured from the start of one process to the start of the next process. 
+      The time it takes to move work through a single process or workflow state. Measure the length from the start of one process to the start of the next process.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -77,17 +75,17 @@ CFDs display the count of work items grouped by state, or column, over time. The
       **Lead time** <sup>1</sup>
    :::column-end:::
    :::column span="3":::
-      *For a continuous-flow process*: The time from when a request is made (such as adding a proposed user story) until that request is completed (closed).
+            *For a continuous-flow process*: The time from when a request is made (like adding a proposed user story) until that request is completed (closed).
+      
+      *For a sprint or fi      *For a continuous-flow process*: The time from when a request is made (like adding a proposed user story) until that request is completed (closed).
       
       *For a sprint or fixed-period process*: The time from when work on a request begins until the work is completed (for example, the time from the Active to the Closed state).
-   :::column-end:::
-:::row-end:::
 :::row:::
    :::column span="1":::
       **Work in progress (WIP)**
    :::column-end:::
    :::column span="3":::
-      The amount of work or number of work items that are actively being worked on.
+      The amount of work or number of work items that are actively in progress.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -95,17 +93,17 @@ CFDs display the count of work items grouped by state, or column, over time. The
       **Scope**
    :::column-end:::
    :::column span="3":::
-      The amount of work committed for the given period of time. This metric only applies to fixed-period processes.
+      The amount of work committed for the given period. This metric only applies to fixed-period processes.
    :::column-end:::
 :::row-end:::
 --- 
 <sup>1</sup> The CFD widget that uses Analytics data and the built-in CFD that you can view from a team backlog or board don't provide discrete lead time and cycle time values. However, the [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md) do provide these values.
 
-There's a well-defined correlation between lead time or cycle time and WIP. More WIP results in longer cycle times, which lead to longer lead times. The opposite is also true&mdash;less WIP results in shorter cycle and lead times. When the development team focuses on fewer items, they reduce the cycle and lead times. This correlation is a key reason why you should set [WIP limits](../../boards/boards/wip-limits.md) on the board you use to track and manage work.  
+There's a clear correlation between lead time or cycle time and WIP. More WIP leads to longer cycle times and longer lead times. The opposite is also true—less WIP leads to shorter cycle and lead times. When the development team focuses on fewer items, they reduce cycle and lead times. This correlation is a key reason to set [WIP limits](../../boards/boards/wip-limits.md) on the board you use to track and manage work.
 
-The count of work items indicates the total amount of work on a given day. In a fixed-period CFD, a change in this count indicates scope change for a given period. In a continuous-flow CFD, it indicates the total amount of work that's in the queue and completed for a given day.  
+The count of work items shows the total amount of work on a given day. In a fixed-period CFD, a change in this count means a scope change for that period. In a continuous-flow CFD, it shows the total amount of work that's in the queue and completed for a given day.
 
-Categorizing work into specific board columns shows you the amount of work in each area of the process. This view provides insights on where work is moving smoothly, where there are blockages, and where no work is being done at all. It's difficult to decipher a tabular view of the data. However, the visual CFD helps you understand what's happening in your work process and why it's happening. 
+Categorizing work into specific board columns shows the amount of work in each area of the process. This view gives insight into where work is moving smoothly, where there are blockages, and where no work is being done. It's hard to understand a tabular view of the data, but the visual CFD helps you see what's happening in your work process and why. 
 
 ## Identify issues and take appropriate actions 
  
@@ -166,9 +164,9 @@ Systemic flat-line problems indicate a more challenging problem, although such p
 - Processes taking a long time
 - Work shifting to other opportunities that aren't captured on the board 
 
-One example of systemic flatlining can occur in a features CFD. Feature work can take significantly longer than work on user stories, because features are composed of several stories. In these situations, either the slope is expected (as in an earlier example), or the issue is well known and the team has already raised it. If it's a known issue, the problem resolution is outside the scope of this article.  
+One example of systemic flat lining can occur in a features CFD. Feature work can take longer than work on user stories, because features are composed of several stories. In these situations, either the slope is expected (as in an earlier example), or the issue is well known and the team already raised it. If it's a known issue, the problem resolution is outside the scope of this article.  
 
-Teams can proactively fix problems that appear as CFD bulges. The fix that's appropriate can depend on where the bulge occurs. As an example, suppose that the bulge occurs in the development process. The bulge might be happening because testing is taking significantly longer than writing code. Testers might also be finding a large number of bugs. When they continually transition the work back to the developers, the developers inherit a growing list of active work.  
+Teams can proactively fix problems that appear as CFD bulges. The fix that's appropriate can depend on where the bulge occurs. As an example, suppose that the bulge occurs in the development process. The bulge might be happening because testing is taking longer than writing code. Testers might also be finding a large number of bugs. When they continually transition the work back to the developers, the developers inherit a growing list of active work.  
 
 There are two potentially easy ways to solve this problem:
 
@@ -200,43 +198,43 @@ A large amount of WIP usually shows up as a vertical bulge. The longer that ther
 
 Here's a good rule of thumb for WIP: There should be no more than two items in progress per team member at any given time. The main reason for using a limit of two items, not a stricter limit, is that reality frequently intrudes on the software development process.
 
-Sometimes it takes time to get information from a stakeholder or to acquire necessary software. There are any number of reasons why work can be halted. Having a second work item to pivot to can provide some leeway. If both items are blocked, it's time to raise a red flag to get something unblocked&mdash;not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items can have difficulty switching context. It's likely that they forget what they were doing, which can lead to mistakes.
+Sometimes it takes time to get information from a stakeholder or to acquire necessary software. There are any number of reasons why work can be halted. Maintaining a second work item provides operational flexibility during unexpected delays. If both items are blocked, it's time to raise a red flag to get something unblocked&mdash;not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items can have difficulty switching context. It's likely that they forget what they were doing, which can lead to mistakes.
 
 ## Lead time versus cycle time   
 
-The following diagram illustrates how lead time differs from cycle time. Lead time starts when a work item is created and ends when the work item enters a Completed state category. Cycle time starts when a work item first enters an In Progress or Resolved state category. Cycle time ends when the work item enters a Completed state category. 
+The following diagram shows how lead time and cycle time differ. Lead time starts when a work item is created and ends when the work item enters a Completed state category. Cycle time starts when a work item enters an In Progress or Resolved state category and ends when it enters a Completed state category. 
 
 :::image type="content" source="media/cycle-lead-time-concept-intro.png" alt-text="Diagram that shows how state categories are used to measure cycle time and lead time.":::
 
-If a work item enters a Completed state category and then is reactivated, its lead and cycle times are affected. Any extra time it spends in a Proposed, In Progress, or Resolved state category contributes to its lead and cycle times.
+If your team uses a board to track and manage work, understanding how your columns map to workflow states helps you manage work more effectively. To learn how to set up your board, see [Manage columns on your board](../../boards/boards/add-columns.md). 
 
-If your team uses a board to track and manage work, it helps to understand how your columns map to workflow states. For more information on configuring your board, see [Manage columns on your board](../../boards/boards/add-columns.md). 
+To learn how the system uses the state categories—Proposed, In Progress, Resolved, and Completed—see [About workflow states in backlogs and boards](../../boards/work-items/workflow-and-state-categories.md).
 
-For more information about how the system uses the state categories&mdash;Proposed, In Progress, Resolved, and Completed&mdash;see [About workflow states in backlogs and boards](../../boards/work-items/workflow-and-state-categories.md).   
+[!INCLUDE [how-cycle-time-handles-reactivated-work-items](../includes/how-cycle-time-handles-reactivated-work-items.md)]
 
 ## Estimate delivery times based on lead and cycle times
   
-You can use your average lead and cycle times and standard deviations to estimate delivery times. 
+Use your average lead and cycle times and standard deviations to estimate delivery times.
 
-When you create a work item, you can use your team's average lead time to estimate the completion date of that work item. Your team's standard deviation tells you the variability of the estimate. Likewise, you can use your cycle time and its standard deviation to estimate the completion of a work item after work begins.  
+When you create a work item, use your team's average lead time to estimate the completion date. The team's standard deviation shows the variability of the estimate. Likewise, use your cycle time and its standard deviation to estimate when a work item finishes after work begins.
 
 ### Example Cycle Time widget
 
-In the following chart, the average cycle time is eight days. The standard deviation is six days. Using this data, you can estimate that the team completes future user stories about 2 to 14 days after they begin work. The narrower the standard deviation, the more predictable your estimates.
+In the following chart, the average cycle time is eight days and the standard deviation is six days. With this data, estimate that the team completes future user stories about 2 to 14 days after work begins. A narrower standard deviation makes your estimates more predictable.
 
-:::image type="content" source="media/cycle-time-planning.png" alt-text="Screenshot of a Cycle Time widget. A scatter-plot chart has dots for work items, a moving average line, and a standard deviation band.":::
+:::image type="content" source="media/cycle-time-planning.png" alt-text="Screenshot of a Cycle Time widget. The scatter-plot chart shows dots for work items, a moving average line, and a standard deviation band.":::
 
 ## Identify process issues 
 
-Outliers often represent an underlying process issue. Examples include waiting too long to review pull requests or not resolving an external dependency quickly. Review your team's control chart for outliers. 
+Outliers often mean there's an underlying process issue. For example, waiting too long to review pull requests or not fixing an external dependency quickly. Check your team's control chart for outliers.
 
-### Example Cycle Time widget showing several outliers
+### Example cycle time widget showing several outliers
 
-The following chart shows several outliers, because several bugs took longer than average to complete. Investigating why these bugs took longer might help uncover process issues. Addressing process issues can help reduce your team's standard deviation and improve your team's predictability.
+The following chart shows several outliers because some bugs took longer than average to finish. Checking why these bugs took longer can help you find process issues. Fixing process issues helps reduce your team's standard deviation and improves your team's predictability.
 
-:::image type="content" source="media/cycle-time-outliers.png" alt-text="Screenshot of a Cycle Time widget. Several work item dots are far above the moving average line and the standard deviation band.":::
+:::image type="content" source="media/cycle-time-outliers.png" alt-text="Screenshot of a cycle time widget. Several work item dots are far above the moving average line and the standard deviation band.":::
 
-You can also see how process changes affect your lead and cycle times. For example, on May 15, the team made a concerted effort to limit the WIP and address stale bugs. You can see that the standard deviation narrows after that date, showing improved predictability.
+You also see how process changes affect your lead and cycle times. For example, on May 15, the team worked to limit the WIP and fix stale bugs. The standard deviation narrows after that date, showing improved predictability.
 
 ## Next steps
 
