@@ -47,7 +47,7 @@ macOS: curl -v https://corp.tfs.com/tfs (agent version 2.124.0 or below, curl ne
        curl -v https://corp.tfs.com/tfs (agent version 2.125.0 or above, curl needs to be built for Secure Transport)
 ```
 
-If you can't successfully install the certificate into your machine's certificate store for various reasons (like you don't have the correct permissions or you are on a customized Linux machine), the agent version 2.125.0 or above has the ability to ignore an SSL server certificate validation error.
+If you can't successfully install the certificate into your machine's certificate store for various reasons (like you don't have the correct permissions or you are on a customized Linux machine), there's another option. The agent version 2.125.0 or above has the ability to ignore an SSL server certificate validation error.
 
 > [!IMPORTANT]
 >

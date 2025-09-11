@@ -448,7 +448,7 @@ The seven-day limit is different from the *maintenance job timeout* setting. The
 
 ### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are grayed out. Why?
 
-On the **Create a project agent pool** dialog box, you can't use an existing organization agent pool if it's already referenced by another project agent pool. Each organization agent pool can be referenced by only one project agent pool within a given project collection.
+On the **Create a project agent pool** dialog box, you can't use an existing organization agent pool if another project agent pool already references it. Each organization agent pool can be referenced by only one project agent pool within a given project collection.
 
 ::: moniker range="azure-devops"
 
