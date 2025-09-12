@@ -130,7 +130,7 @@ For more information, see [Change application connection & security policies for
 
 ### Organizations and projects
 
-By default, users added to an organization can view all organization and project information and settings. You can restrict specific users, such as Stakeholders, Microsoft Entra users, or member sof a particular security group, with the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once the feature [gets turned on](#turn-on-the-preview-feature-and-add-users-to-the-security-group), any user or group that [gets added to the **Project-Scoped Users** group](#identity-search-and-selection) is restricted in the following ways:
+By default, users added to an organization can view all organization and project information and settings. You can restrict specific users, such as Stakeholders, Microsoft Entra users, or members of a particular security group, with the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once the feature [gets turned on](#turn-on-the-preview-feature-and-add-users-to-the-security-group), any user or group that [gets added to the **Project-Scoped Users** group](#identity-search-and-selection) is restricted in the following ways:
 
 - Access is confined to only the projects to which they're explicitly added.
 - Views displaying lists of users, projects, billing details, usage data, and more accessed through **Organization settings** are restricted.
@@ -197,7 +197,7 @@ For more information, see [What is the Analytics service?](../report/powerbi/wha
 
 ## Adjust time zone and other organization settings
 
-When you create an organization, you specify the name of your organization and select the region where your organization is hosted. The default **Time zone** is set to *UTC*. You can update the **Time zone** and specify a Privacy URL from the **Organization settings>Overview** page. For more information about these settings, see the following articles:  
+When you create an organization, you specify the name of your organization and select the geography where your organization is hosted. The default **Time zone** is set to *UTC*. You can update the **Time zone** and specify a Privacy URL from the **Organization settings>Overview** page. For more information about these settings, see the following articles:  
 
 - [Time zone settings and usage](../organizations/settings/timezone-settings-usage.md)
 - [Add a privacy policy URL for your organization](../organizations/accounts/add-privacy-policy-url.md)

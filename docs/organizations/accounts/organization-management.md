@@ -144,7 +144,7 @@ A best practice for managing users is to use security groups. You can utilize de
    - [Rename organization](rename-organization.md)
    - [Delete an organization](delete-your-organization.md)
    - [Recover a deleted organization](recover-your-organization.md)
-   - [Change location (region)](change-organization-location.md)
+   - [Change your organization geography](change-organization-location.md)
    - [Add privacy policy URL](add-privacy-policy-url.md)
    - [Change time zone](change-time-zone.md)
    
