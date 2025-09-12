@@ -117,9 +117,9 @@ sections:
           A: Azure DevOps automatically checks if a user has GitHub Enterprise when the user signs in. It can take up to 24 hours for their access level to change to GitHub Enterprise. There are no charges for a user with the GitHub Enterprise access level.
 
       - question: |
-          Q: How are GitHub Enterprise users in data residency geographies identified?
+          Q: How are GitHub Enterprise users in data residency regions identified?
         answer: |
-          A: Customers in data residency geographies enable detection by installing the [Azure Boards app](https://github.com/marketplace/azure-boards) and [linking their ghe.com instance](https://devblogs.microsoft.com/devops/boards-integration-with-github-enterprise-cloud-and-data-residency-public-preview/). Once configured, users are detected automatically. 
+          A: Customers in data residency regions enable detection by installing the [Azure Boards app](https://github.com/marketplace/azure-boards) and [linking their ghe.com instance](https://devblogs.microsoft.com/devops/boards-integration-with-github-enterprise-cloud-and-data-residency-public-preview/). Once configured, users are detected automatically. 
 
       - question: |
           Q: What kind of access do GitHub Enterprise users get in Azure DevOps?

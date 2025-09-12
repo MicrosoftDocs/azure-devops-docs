@@ -60,7 +60,7 @@ We can't provide a specific time frame for your organization's relocation due to
 
 ## Related content
 
-- [Explore worldwide data geographies for Azure DevOps](../security/data-location.md)
+- [Explore worldwide data locations for Azure DevOps](../security/data-location.md)
 - [View data locations for Azure DevOps](../security/data-location.md)
 - [Learn about data protection](../security/data-protection.md)
 - [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
