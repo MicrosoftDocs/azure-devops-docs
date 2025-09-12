@@ -197,7 +197,7 @@ For more information, see [What is the Analytics service?](../report/powerbi/wha
 
 ## Adjust time zone and other organization settings
 
-When you create an organization, you specify the name of your organization and select the region where your organization is hosted. The default **Time zone** is set to *UTC*. You can update the **Time zone** and specify a Privacy URL from the **Organization settings>Overview** page. For more information about these settings, see the following articles:  
+When you create an organization, you specify the name of your organization and select the geography where your organization is hosted. The default **Time zone** is set to *UTC*. You can update the **Time zone** and specify a Privacy URL from the **Organization settings>Overview** page. For more information about these settings, see the following articles:  
 
 - [Time zone settings and usage](../organizations/settings/timezone-settings-usage.md)
 - [Add a privacy policy URL for your organization](../organizations/accounts/add-privacy-policy-url.md)

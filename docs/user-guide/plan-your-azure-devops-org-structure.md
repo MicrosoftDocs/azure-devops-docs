@@ -123,7 +123,7 @@ You may want to add another project due to the following scenarios:
 
 When you're considering many projects, keep in mind that Git repo portability makes it easy to migrate  repos (including full history) between projects. Other history can't be migrated between projects. Examples are push and pull request history.
 
-When you map projects to business units, your company gets a single organization and sets up many projects with one or more projects representing a business unit. All Azure DevOps assets of the company are contained within this organization and located within a given region (for example, Western Europe). Consider the following guidance for mapping your projects to business units:
+When you map projects to business units, your company gets a single organization and sets up many projects with one or more projects representing a business unit. All Azure DevOps assets of the company are contained within this organization and located within a given geography (for example, Western Europe). Consider the following guidance for mapping your projects to business units:
 
 <a id="mapping-guidance-table" >  </a>
 

@@ -579,7 +579,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
    :::column-end:::
    :::column span="2":::
-      From the **Overview** page, you can manage the time zone, owner, region, and other settings that apply to all projects.
+      From the **Overview** page, you can manage the time zone, owner, geography, and other settings that apply to all projects.
    :::column-end:::
 :::row-end:::
 ---
