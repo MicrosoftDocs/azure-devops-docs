@@ -48,7 +48,7 @@ To install a specific Node.js version in a Classic pipeline:
 1. Under **Version Spec** in the task configuration screen, specify the version of the Node.js runtime that you want to install.
 
 >[!NOTE]
->After you add the task, you can drop down the **Task version** selector at the top of the configuration screen and select the **1.\* (preview)** version of the taska, which is called **Use Node.js ecosystem**. If you use this task version, use the **Version** field to specify the Node.js runtime version you want.
+>After you add the task, you can drop down the **Task version** selector at the top of the configuration screen and select the **1.\* (preview)** version of the task, which is called **Use Node.js ecosystem**. If you use this task version, use the **Version** field to specify the Node.js runtime version you want.
 
 ---
 
