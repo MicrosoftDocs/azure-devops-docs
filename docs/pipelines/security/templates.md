@@ -1,5 +1,5 @@
 ---
-title: Template use to improve security
+title: Template for security
 description: Learn about using template features to help improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.date: 09/12/2025
@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Use templates to help improve security
+# Templates for security
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
