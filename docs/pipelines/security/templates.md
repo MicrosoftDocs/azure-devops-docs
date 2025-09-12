@@ -1,5 +1,5 @@
 ---
-title: Template for security
+title: Templates for security
 description: Learn about using template features to help improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.date: 09/12/2025
@@ -11,13 +11,11 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-If multiple pipelines within your team or organization share the same structure, consider using [templates](../process/templates.md). This article describes how templates can streamline security for Azure Pipelines.
+Azure Pipelines [templates](../process/templates.md) let you define reusable content, logic, and parameters in YAML pipelines. This article describes how templates can help enhance pipeline security by:
 
-Pipeline templates can:
-
-- Define the outer structure of your pipeline to help prevent malicious code infiltration.
-- Automatically include steps to do tasks such as credential scanning.
-- Help enforce [checks on protected resources](resources.md). These checks form the fundamental security framework for Azure Pipelines and apply to all pipeline structures, stages, and jobs.
+- Defining the outer structure of a pipeline to help prevent malicious code infiltration.
+- Automatically including steps to do tasks such as credential scanning.
+- Helping enforce [checks on protected resources](resources.md), which form the fundamental security framework for Azure Pipelines and apply to all pipeline structures and components.
 
 [!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
@@ -25,7 +23,7 @@ Pipeline templates can:
 
 Azure Pipelines provides *includes* and *extends* templates.
 
-- An `includes` templates includes the template's code directly in the outer file that references the template, similar to `#include` in C++. The following example pipeline inserts the *include-npm-steps.yml* template into the `steps` section.
+- An `includes` template includes the template's code directly in the outer file that references the template, similar to `#include` in C++. The following example pipeline inserts the *include-npm-steps.yml* template into the `steps` section.
 
   ```yaml
     steps:
@@ -53,7 +51,7 @@ steps:
   - ${{ step }}
 ```
 
-The following pipeline code extends the *template.yml* template.
+The following example pipeline extends the *template.yml* template.
 
 ```yaml
 # azure-pipelines.yml
@@ -77,15 +75,13 @@ extends:
 
 ## Pipeline security features
 
-The YAML pipeline syntax includes several built-in protections. `Extends` template can enforce their use to enhance pipeline security. You can implement any of the following restrictions.
+YAML pipeline syntax includes several built-in protections. `Extends` templates can enforce their use to enhance pipeline security. You can implement any of the following restrictions.
 
 ### Step targets
 
-You can restrict certain steps to run in a container rather than on the host. Steps in containers don't have access to the agent's host, preventing these steps from modifying agent configuration or leaving malicious code for later execution.
+You can restrict specified steps to run in a container rather than on the host. Steps in containers can't access the agent's host, so they can't modify agent configuration or leave malicious code for later execution.
 
-For example, you can limit network access. Without open network access, user steps can't retrieve packages from unauthorized sources or upload code and secrets to external network locations.
-
-The following example pipeline runs a step on the agent host before running a step inside a container.
+For example, you can prevent open network access from within a container, so user steps can't retrieve packages from unauthorized sources or upload code and secrets to external locations. The following example pipeline demonstrates running a step on the agent host before running a step inside a container.
 
 ```yaml
 resources:
@@ -93,8 +89,8 @@ resources:
   - container: builder
     image: mysecurebuildcontainer:latest
 steps:
-- script: echo This step runs on the agent host, and it could use Docker commands to tear down or limit the container's network
-- script: echo This step runs inside the builder container
+- script: echo This step runs on the agent host, so could use commands to tear down or limit the host network
+- script: echo This step runs inside the builder container, which limits network access
   target: builder
 ```
 
@@ -102,7 +98,7 @@ steps:
 
 Before a pipeline runs, templates and their parameters transform into constants. [Template parameters](../process/template-parameters.md) can enhance type safety for input parameters.
 
-In the following example template, the parameters restrict the available pipeline pool options by enumerating specific choices instead of allowing freeform strings.
+In the following example template, the parameters restrict the available pipeline pool options by enumerating specific choices instead of allowing any string.
 
 ```yaml
 # template.yml
@@ -120,7 +116,7 @@ steps:
 - script: echo Hello world
 ```
 
-When it extends the template, the pipeline must specify one of the available pool choices.
+To extend the template, the pipeline must specify one of the available pool choices.
 
 ```yaml
 # azure-pipelines.yml
@@ -134,9 +130,9 @@ extends:
 
 ### Agent logging command restrictions
 
-User steps request services by using *logging commands*, which are specially formatted strings printed to standard output. You can restrict the services that the Azure Pipelines agent provides to user steps. In restricted mode, most of the agent's services, such as uploading artifacts and attaching test results, are unavailable.
+User steps request services by using *logging commands*, which are specially formatted strings printed to standard output. You can restrict the services that logging commands provide for user steps. In `restricted` mode, most agent services such as uploading artifacts and attaching test results are unavailable.
 
-In the following example, the `target` property instructs the agent not to allow publishing artifacts, so the task fails.
+In the following example, the `target` property instructs the agent not to allow publishing artifacts, so the artifact publishing task fails.
 
 ```yaml
 - task: PublishBuildArtifacts@1
@@ -146,11 +142,13 @@ In the following example, the `target` property instructs the agent not to allow
     commands: restricted
 ```
 
-The `setvariable` command remains permissible in `restricted` mode, and pipeline variables can be exported as environment variables to subsequent tasks. If tasks output user-provided data, such as open issues retrieved via a REST API, they might be vulnerable to injection attacks. Malicious user content could set environment variables that might be exploited to compromise the agent host.
+#### Variables in logging commands
 
-To mitigate this risk, you can explicitly declare which variables are settable by using the `setvariable` logging command. If you specify an empty list, all variable setting is disallowed.
+The `setvariable` command remains permissible in `restricted` mode, so tasks that output user-provided data, such as open issues retrieved via a REST API, might be vulnerable to injection attacks. Malicious user content could set variables that export as environment variables to subsequent tasks and compromise the agent host.
 
-The following example restricts the `settableVariables` to `expectedVar` or a variable prefixed with `ok`. The task fails because it attempts to set a different variable.
+To mitigate this risk, you can explicitly declare the variables that are settable by using the `setvariable` logging command. If you specify an empty list in `settableVariables`, all variable setting is disallowed.
+
+The following example restricts the `settableVariables` to `expectedVar` or a variable prefixed with `ok`. The task fails because it attempts to set a different variable called `BadVar`.
 
 ```yaml
 - task: PowerShell@2
@@ -184,7 +182,7 @@ jobs:
 
 Azure Pipelines templates have the flexibility to iterate over and modify YAML syntax. By using iteration, you can enforce specific YAML security features.
 
-A template can also rewrite user steps, allowing only approved tasks to run. For example, you can prevent inline script execution.
+A template can also rewrite user steps, allowing only approved tasks to run. For example, the template can prevent inline script execution.
 
 The following example template prevents the script step types `bash`, `powershell`, `pwsh`, and `script` from running. For complete lockdown of scripts, you could also block `BatchScript` and `ShellScript`.
 
@@ -214,7 +212,7 @@ steps:
           displayName: 'Disabled by template: ${{ step.displayName }}'
 ```
 
-In the following pipeline that extends this template, the script steps are stripped out and not run.
+In the following example pipeline that extends the preceding template, the script steps are stripped out and not run.
 
 ```yaml
 # azure-pipelines.yml
@@ -268,7 +266,7 @@ You can configure [approvals and checks](../process/approvals.md) for your agent
 <a name="set-required-templates"></a>
 ### Required templates
 
-To enforce the use of a specific template, configure the [required template](../process/approvals.md#required-template) check for a resource. This check applies only when the pipeline extends from a template.
+To enforce the use of a specific template, configure the [required template](../process/approvals.md#required-template) check on the service connection for a resource. This check applies only when the pipeline extends from a template.
 
 When you view the pipeline job, you can monitor the check's status. If the pipeline doesn't extend from the required template, the check fails. The run stops and notifies you of the failed check.
 
