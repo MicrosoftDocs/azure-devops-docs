@@ -112,65 +112,37 @@ Upstream sources offer a critical safeguard for your consumers and infrastructur
 
 ## Override packages from upstream sources
 
-When you enable upstream sources, keep in mind that you cannot publish a package version that already exists in an upstream source. For example, if you enable the *NuGet.org* upstream, you won't be able to publish the *Newtonsoft.Json 10.0.3* package, as that version is already available on NuGet.org.
-
-If you need to publish a package version that already exists in one of your upstream sources, you must follow these steps:
+When upstream sources are enabled in your feed, you **cannot publish a package version that already exists** in one of those upstream sources. For example, if the *NuGet.org* upstream is enabled, you won’t be able to publish *Newtonsoft.Json 10.0.3* to your feed, since that version is already available on *NuGet.org*. To override a package version from an upstream source:
 
 1. Disable the relevant upstream source.
 
-1. Publish your package.
+1. Publish your desired package version to the feed.
 
 1. Re-enable the upstream source.
 
-This process ensures that you can publish the desired version while maintaining the integrity of your upstream sources.
+This workflow ensures you can publish the desired version while maintaining the integrity of your upstream sources.
 
 > [!NOTE]
 > Package versions are immutable. Saved packages remain in the feed even if the upstream source is disabled or removed.
 
 ## Upstream sources health status
 
-If a feed has a failing upstream source, the metadata for packages of the same protocol can no longer be refreshed. To check the health status of your upstream sources, follow these steps:
+If a feed has a failing upstream source, metadata for packages using the same protocol can no longer be refreshed. To check the health status of your upstream sources, follow these steps:
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, and navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed settings**, and then select **Upstream sources**.
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to open **Feed settings**, then select **Upstream sources**.
 
     :::image type="content" source="media/last-sync-upstreams.png" alt-text="A screenshot showing the upstream sources last sync up status.":::
 
-1. If any failures occur, a warning message will be displayed. Clicking on the *Failed* status provides additional details, including the cause of the failure and instructions on how to resolve it.
+1. If any failures occur, a warning message will be displayed. Select the *Failed* status to view detailed information, including the cause of the failure and steps to resolve it.
 
     :::image type="content" source="media/last-sync-upstreams-details.png" alt-text="A screenshot displaying details of the sync up failure.":::
 
 > [!NOTE]
-> For public registries like NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it becomes available for download. This delay depends on job timing and data propagation. However, when the upstream source is an Azure Artifacts feed, the latency is usually no more than a few minutes.
-
-## FAQs
-
-##### Q: I can't find my package even though I can see it in one of my feed's upstreams?
-
-A: Packages from upstream sources become available in the downstream feed soon after they're published. However, the package will only be visible to readers after it has been saved to the feed. A package is saved when a user with [Feed and Upstream Reader (Collaborator)](../feeds/feed-permissions.md#feed-roles-and-permissions) or higher permissions installs the version in the downstream feed. This triggers the downstream to save a copy of the package from upstream, after which it is permanently saved and available in the downstream to all readers. This is when the package version becomes visible in the package versions section of the web UI.
-
-##### Q: What are feed views?
-
-A: Views allow developers to selectively share a subset of package versions that have been tested and validated, excluding any packages that are still under development or haven't met the quality criteria. See [What are feed views](./views.md) for more details.
-
-##### Q: I can't find the feed that I want to configure as an upstream source?
-
-A: Make sure that the feed's owner has shared a view as an upstream source. See [Add a feed in a different organization as an upstream source](../how-to/set-up-upstream-sources.md#add-a-feed-in-a-different-organization-as-an-upstream-source) for more details.
-
-##### Q: Can a user with **Feed Reader** role download packages from an upstream source?
-
-A: No. A user with the **Feed Reader** role in an Azure Artifacts feed can only download packages that have been saved to the feed. Packages are saved to the feed when a **Feed and Upstream Reader (Collaborator)**, **Feed Publisher (Contributor)**, or **Feed Owner** installs those packages from upstream.
-
-##### Q: What happens when a user deletes or unpublishes a package saved from an upstream source?
-
-A: The package becomes unavailable for download from the feed, and the version number is permanently reserved. Additionally, the package will no longer be saved from the upstream source. Earlier and later versions of the package will remain unaffected.
-
-##### Q: What happens when a user deprecates a package saved from an upstream source?
-
-A: When a user deprecates a package, a warning message is added to the package's metadata. This warning is displayed whenever the package is viewed or installed from the feed.
+> For public registries like *NuGet.org*, there is typically a 3-6 hour delay between when a package is pushed to the public registry and when it becomes available for download. This delay depends on job timing and data propagation. However, when the upstream source is an Azure Artifacts feed, the latency is usually no more than a few minutes.
 
 ## Related content
 
@@ -178,4 +150,4 @@ A: When a user deprecates a package, a warning message is added to the package's
 
 - [Use upstream sources in a public feed](../how-to/public-feeds-upstream-sources.md)
 
-- [Feed permissions](../feeds/feed-permissions.md)
+- [Manage permissions](../feeds/feed-permissions.md)
