@@ -3,7 +3,7 @@ title: Service containers
 description: Learn about running containerized services in Azure Pipelines single or multiple container jobs or noncontainer jobs.
 ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
 ms.topic: conceptual
-ms.date: 09/11/2025
+ms.date: 09/12/2025
 monikerRange: azure-devops
 #customer intent: As an Azure Pipelines user, I want to understand service containers so I can use them to automatically manage services that my pipelines require.
 
@@ -182,7 +182,7 @@ The following example pipeline has a Django Python web container connected to Po
 
 In the steps, `pip` installs dependencies, and then Django tests run.
 
-To set up a working example, you need a [Django site set up with two databases](https://docs.djangoproject.com/en/3.2/topics/db/multi-db/). The example assumes your *manage.py* file and your Django project are in the root directory. If not, you might need to update the `/__w/1/s/` path in `/__w/1/s/manage.py test`.
+To set up a working example, you need a [Django site set up with two databases](https://docs.djangoproject.com/en/5.2/topics/db/multi-db/). The example assumes your *manage.py* file and your Django project are in the root directory. If not, you might need to update the `/__w/1/s/` path in `/__w/1/s/manage.py test`.
 
 ```yaml
 resources:
