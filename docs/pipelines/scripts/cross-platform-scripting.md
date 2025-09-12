@@ -14,11 +14,11 @@ monikerRange: '<= azure-devops'
 
 Azure Pipelines can run pipelines on Linux, macOS, and Windows machines. If you use cross-platform development technologies like .NET Core, Node.js, or Python, these cross-platform build capabilities bring both benefits and challenges. For example, most pipelines include one or more scripts to run during the build process, but script syntax often differs over platforms.
 
-This article explains how you can use cross-platform scripting to support different platforms. You can use an Azure Pipelines `script` step to ease writing cross-platform scripts. You can also use [conditions](../process/conditions.md) to target scripts to specific platforms.
+This article explains how you can use cross-platform scripting to support different build platforms. You can use an Azure Pipelines `script` step to ease writing cross-platform scripts. You can also use [conditions](../process/conditions.md) to target scripts to specific platforms.
 
 ## Script step
 
-The [script](../get-started/key-pipeline-concepts.md#scripts) keyword is a shortcut for the [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2), which runs Bash on Linux and macOS or cmd.exe on Windows.
+The [script](../get-started/key-pipelines-concepts.md#scripts) keyword is a shortcut for the [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2), which runs Bash on Linux and macOS or cmd.exe on Windows.
 
 You can use `script` to easily pass arguments to a cross-platform tool. The `script` step runs in each platform's native script interpreter, Bash on macOS and Linux or cmd.exe on Windows. The following example uses a `script` step to call `npm` with a set of arguments.
 
@@ -115,7 +115,7 @@ steps:
 ---
 
 >[!NOTE]
->PowerShell is also an option for scripts. The [pwsh](/azure/devops/pipelines/yaml-schema/steps-pwsh) shortcut runs PowerShell 7.x on macOS, Linux, or Windows. Agents must have PowerShell 7.x installed. [Microsoft-hosted agents](../agents/hosted.md) have PowerShell 7.x installed by default.
+>PowerShell is also an option for scripts. The [`pwsh`](/azure/devops/pipelines/yaml-schema/steps-pwsh) shortcut runs PowerShell 7.x on macOS, Linux, or Windows. Agents must have PowerShell 7.x installed. [Microsoft-hosted agents](../agents/hosted.md) have PowerShell 7.x installed by default.
 
 ## Platform-based switching
 
