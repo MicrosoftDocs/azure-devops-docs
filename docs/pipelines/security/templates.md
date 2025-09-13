@@ -5,6 +5,7 @@ ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.date: 09/12/2025
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
+#customer intent: As an Azure DevOps user, I want to understand how pipeline templates can help increase security, so I can use templates to do security tasks and help prevent malicious code infiltration and execution.
 ---
 
 # Templates for security
@@ -79,9 +80,11 @@ YAML pipeline syntax includes several built-in protections. `Extends` templates 
 
 ### Step targets
 
-You can restrict specified steps to run in a container rather than on the host. Steps in containers can't access the agent's host, so they can't modify agent configuration or leave malicious code for later execution.
+You can restrict specified steps to run in a container rather than on the host. Steps in containers can't access the agent host, so they can't modify agent configuration or leave malicious code for later execution.
 
-For example, you can prevent open network access from within a container, so user steps can't retrieve packages from unauthorized sources or upload code and secrets to external locations. The following example pipeline demonstrates running a step on the agent host before running a step inside a container.
+For example, you can run user steps in a container to prevent them from accessing the network, so they can't retrieve packages from unauthorized sources or upload code and secrets to external locations.
+
+The following example pipeline runs a step on the agent host that could potentially alter the host network, followed by a step inside a container that limits network access.
 
 ```yaml
 resources:
@@ -89,8 +92,8 @@ resources:
   - container: builder
     image: mysecurebuildcontainer:latest
 steps:
-- script: echo This step runs on the agent host, so could use commands to tear down or limit the host network
-- script: echo This step runs inside the builder container, which limits network access
+- script: echo This step runs on the agent host
+- script: echo This step runs inside the builder container
   target: builder
 ```
 
@@ -130,9 +133,9 @@ extends:
 
 ### Agent logging command restrictions
 
-User steps request services by using *logging commands*, which are specially formatted strings printed to standard output. You can restrict the services that logging commands provide for user steps. In `restricted` mode, most agent services such as uploading artifacts and attaching test results are unavailable.
+User steps request services by using *logging commands*, which are specially formatted strings printed to standard output. You can restrict the services that logging commands provide for user steps. In `restricted` mode, most agent services such as uploading artifacts and attaching test results are unavailable for logging commands.
 
-In the following example, the `target` property instructs the agent not to allow publishing artifacts, so the artifact publishing task fails.
+In the following example, the `target` property instructs the agent to restrict publishing artifacts, so the artifact publishing task fails.
 
 ```yaml
 - task: PublishBuildArtifacts@1
@@ -144,11 +147,11 @@ In the following example, the `target` property instructs the agent not to allow
 
 #### Variables in logging commands
 
-The `setvariable` command remains permissible in `restricted` mode, so tasks that output user-provided data, such as open issues retrieved via a REST API, might be vulnerable to injection attacks. Malicious user content could set variables that export as environment variables to subsequent tasks and compromise the agent host.
+The `setvariable` command remains permissible in `restricted` mode, so tasks that output user-provided data, such as open issues retrieved via a REST API, might be vulnerable to injection attacks. Malicious user content could set variables that export to subsequent tasks as environment variables and could compromise the agent host.
 
 To mitigate this risk, you can explicitly declare the variables that are settable by using the `setvariable` logging command. If you specify an empty list in `settableVariables`, all variable setting is disallowed.
 
-The following example restricts the `settableVariables` to `expectedVar` or a variable prefixed with `ok`. The task fails because it attempts to set a different variable called `BadVar`.
+The following example restricts the `settableVariables` to `expectedVar` and any variable prefixed with `ok`. The task fails because it attempts to set a different variable called `BadVar`.
 
 ```yaml
 - task: PowerShell@2
@@ -268,7 +271,7 @@ You can configure [approvals and checks](../process/approvals.md) for your agent
 
 To enforce the use of a specific template, configure the [required template](../process/approvals.md#required-template) check on the service connection for a resource. This check applies only when the pipeline extends from a template.
 
-When you view the pipeline job, you can monitor the check's status. If the pipeline doesn't extend from the required template, the check fails. The run stops and notifies you of the failed check.
+When you view the pipeline job, you can monitor the check's status. If the pipeline doesn't extend from the required template, the check fails.
 
 :::image type="content" source="../process/media/approval-fail.png" alt-text="Screenshot showing a failed approval check.":::
 
@@ -298,7 +301,7 @@ steps:
 - script: echo ${{ parameters.image }}
 ```
 
-The following example pipeline extends the *params.yml* template and requires it for approval. To demonstrate a pipeline failure, comment out the reference to *params.yml*.
+The following example pipeline extends the *params.yml* template and requires it for approval. To demonstrate a pipeline failure, comment out the `extends` reference to *params.yml*.
 
 ```yaml
 # azure-pipeline.yml
