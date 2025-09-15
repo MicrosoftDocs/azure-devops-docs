@@ -38,26 +38,26 @@ Markdown syntax lets you format content with headers, reference links, bold text
 > [!NOTE]
 > Markdown in Azure DevOps doesn't support JavaScript or iframes. For example, you can't embed interactive elements like countdown timers.
 
-The following table shows which Markdown elements each feature supports and links to syntax sections in this article. The table uses the notation Definition of **Done**, Markdown **Widget**, Pull requests (**PR**), **README** files, and **Wiki** files.
+The following list shows which Markdown elements each feature supports and links to syntax sections in this article:
 
 | Markdown type                           | Done | Widget | PR  | README | Wiki |
 |-----------------------------------------|:----:|:------:|:---:|:------:|:----:|
-| [Headers](#headers)                     |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Paragraphs and line breaks](#paragraphs-and-line-breaks)   |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Block quotes](#block-quotes)             |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Horizontal rules](#rules)              |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Emphasis](#emphasis)                   |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Code highlighting](#code)              |      |        | ✔️  |  ✔️   |  ✔️ |
-| [Suggest change](#suggest-change)       |      |        | ✔️  |        |     |
-| [Tables](#tables)                       |      |   ✔️  |  ✔️  |  ✔️   |  ✔️ |
-| [Lists](#lists)                         |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Links](#links)                         |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Images](#images)                       |      |   ✔️  |  ✔️  |  ✔️   |  ✔️ |
-| [Checklist or task list](#checklists)   |      |        | ✔️  |       |  ✔️ |
-| [Emojis](#emoji-reactions)              |      |        | ✔️  |       |  ✔️ |
-| [Ignore or escape Markdown](#ignore)    |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Attachments](#attachments)             |      |        | ✔️  |       |  ✔️ |
-| [Mathematical notation](#math-notation) |      |        | ✔️  |       |  ✔️ |
+| [Headers](#headers)                     | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Paragraphs and line breaks](#paragraphs-and-line-breaks)   | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Block quotes](#block-quotes)             | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Horizontal rules](#rules)              | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Emphasis](#emphasis)                   | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Code highlighting](#code)              |       |        | &#10003; | &#10003; | &#10003; |
+| [Suggest change](#suggest-change)       |       |        | &#10003; |        |      |
+| [Tables](#tables)                       |       | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Lists](#lists)                         | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Links](#links)                         | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Images](#images)                       |       | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Checklist or task list](#checklists)   |       |        | &#10003; |        | &#10003; |
+| [Emojis](#emoji-reactions)              |       |        | &#10003; |        | &#10003; |
+| [Ignore or escape Markdown](#ignore)    | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Attachments](#attachments)             |       |        | &#10003; |        | &#10003; |
+| [Mathematical notation](#math-notation) |       |        | &#10003; |        | &#10003; |
 
 ## Headers
 
@@ -75,10 +75,12 @@ The following Markdown creates a top-level header (H1) and four levels of subhea
 ### This is a lower subheader (H3)
 #### This is an H4 header
 ##### This is an H5 header
+```
 
 The following image shows the published view of the Markdown:
 
 :::image type="content" source="media/markdown-guidance/markdown-headers.png" alt-text="Screenshot of the published view of Markdown syntax for five levels of headers.":::
+
 ## Paragraphs and line breaks
 
 > [!IMPORTANT]
