@@ -1,110 +1,68 @@
 ---
 title: Deploy to Linux VMs
-description: Deploy a web application to a web server on a Linux VM with an environment.
+description: Use Azure Pipelines to deploy a Java or JavaScript web application to Linux VM web servers in an environment.
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: freshness-fy22q2, linux-related-content
-ms.date: 07/18/2024
+ms.date: 09/15/2025
 monikerRange: 'azure-devops'
+#customer intent: As an Azure Pipelines user, I want to set up environments with Linux VMs so I can easily deploy my Java or JavaScript web apps with complete traceability.
 ---
 
 # Deploy to Linux VMs in an environment
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-gt-eq-2020.md)]
 
-In this quickstart, you learn how to set up an Azure DevOps pipeline for deployment to multiple Linux [virtual machine (VM) resources](../process/environments-virtual-machines.md) in an [environment](../process/environments.md). You can use these instructions for any app that publishes a web deployment package.
+In this quickstart, you learn how to set up an Azure DevOps pipeline for deployment to multiple Linux [virtual machine (VM) resources](../process/environments-virtual-machines.md) in an [environment](../process/environments.md). These instructions build and publish either a Java or JavaScript app. You can use these instructions for any app that publishes a web deployment package.
 
 ## Prerequisites
 
+#### [JavaScript](#tab/javascript)
+
+For JavaScript or Node.js apps:
+
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An Azure DevOps organization and project. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
-
-#### [JavaScript](#tab/javascript)
-
-For JavaScript or Node.js apps, [at least two Linux VMs set up with Nginx on Azure](/azure/virtual-machines/linux/quick-create-cli).
+- [At least two Linux VMs set up with Nginx on Azure](/azure/virtual-machines/linux/quick-create-cli).
+- Your own fork of the GitHub sample code repo: https://github.com/MicrosoftDocs/pipelines-javascript.
 
 #### [Java](#tab/java)
 
-For Java Spring Boot and Spring Cloud based apps, [at least two Linux VMs created in Azure using the Java 13 on Ubuntu 20.04 template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004), which provides a fully supported OpenJDK-based runtime.
+For Java Spring Boot and Spring Cloud based apps:
+
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- An Azure DevOps organization and project. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
+- [At least two Linux VMs created in Azure using the Java 13 on Ubuntu 20.04 template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004), which provides a fully supported OpenJDK-based runtime.
+- Your own fork of the GitHub sample code repo: https://github.com/spring-projects/spring-petclinic. If you already have an app in GitHub that you want to deploy, you can use that code instead.
+
+  >[!NOTE]
+  >Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://docs.spring.io/spring-boot/docs/2.3.0.RELEASE/maven-plugin/reference/html/#build-image).
 
 ---
-
-## Fork the sample code
-
-[!INCLUDE [include](includes/get-code-before-sample-repo-option-to-use-own-code.md)] 
-
-#### [JavaScript](#tab/javascript)
-
-```
-https://github.com/MicrosoftDocs/pipelines-javascript
-```
-
-#### [Java](#tab/java)
-
-```
-https://github.com/spring-projects/spring-petclinic
-```
-> [!NOTE]
-> Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://docs.spring.io/spring-boot/docs/2.3.0.RELEASE/maven-plugin/reference/html/#build-image).
-
----
-
-## Create an environment with Linux VMs
-
-You can add VMs as resources within [environments](../process/environments.md) and target them for multi-VM deployments. The deployment history for the environment provides traceability from the VM to the commit.
-
-### Add a VM resource
-
-1. In your Azure DevOps project, go to **Pipelines** > **Environments** and then select **Create environment** or **New environment**.
-1. On the first **New environment** screen, add a **Name** and an optional **Description**.
-1. Under **Resource**, select **Virtual machines**, and then select **Next**.
-1. On the next **New environment** screen, choose Linux under **Operating system**.
-1. Copy the Linux registration script. The script is the same for all the Linux VMs added to the environment.
-
-   :::image type="content" source="media/vm-creation.png" alt-text="Screenshot of VM creation.":::
-   
-   > [!NOTE]
-   > The Personal Access Token (PAT) of the signed in user is pre-inserted in the script and expires after three hours.
-   
-1. Select **Close**, and note that the new environment is created.
-1. Run the copied script on each target VM that you want to register with the environment.
-
-   > [!NOTE]
-   > If the VM already has another agent running on it, provide a unique name for **agent** to register with the environment.
-
-Once the VM is registered, it appears as a resource under the **Resources** tab of the environment.
-
-:::image type="content" source="media/vm-resourceview.png" alt-text="Screenshot of VM resource view.":::
-
- To copy the script again for creating more resources, for example if your PAT expires, select **Add resource** on the environment's page.
-
-### Add and manage tags
-
-Tags are a way to target a specific set of VMs in an environment for deployment. There's no limit to the number of tags that you can use. Tags are limited to 256 characters each.
-
-You can add tags or remove tags for VMs in the interactive registration script or through the UI by selecting **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: for a VM resource. For this quickstart, assign a different tag to each VM in your environment.
-
-:::image type="content" source="media/vm-tags.png" alt-text="Screenshot of tags view.":::
-
-## Define a CI build pipeline
-
-You need a continuous integration (CI) build pipeline that publishes your web app, and a deployment script to run locally on the Linux server. Set up your CI build pipeline based on the runtime you want to use.
 
 >[!IMPORTANT]
 >During GitHub procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
-1. In your Azure DevOps project, select **Pipelines** > **Create Pipeline**, and then select **GitHub** as the location of your source code.
+## Create an environment and add Linux VMs
+
+You can [add VMs as resources within environments](../process/environments-virtual-machines.md) and target them for multi-VM deployments. The environment's deployment history then provides traceability from each machine to the continuous integration (CI) commit.
+
+In your Azure Pipelines project, create an environment and add the two Linux VMs by following the procedure at [Create an environment and add a VM](../process/environments-virtual-machines.md?tabs=linux#create-an-environment-and-add-a-vm).
+
+## Define and run a CI build pipeline
+
+Create a CI build pipeline that publishes your web app.
+
+1. In your Azure DevOps project, select **Pipelines** > **New pipeline** or **Create Pipeline**, and then select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select your forked sample repository.
-1. On the **Configure your pipeline** screen, select **Starter pipeline**. Azure Pipelines generates a YAML file called *azure-pipelines.yml* for your pipeline.
-1. Select the dropdown caret next to **Save and run**, select **Save**, and then select **Save** again. The file is saved to your forked GitHub repository.
+1. On the **Configure your pipeline** screen, select **Starter pipeline**. Azure Pipelines generates a YAML file called *azure-pipelines.yml*.
+1. Replace the entire contents of the starter YAML pipeline with the following code, based on your runtime.
 
 ### Edit the code
 
-Select **Edit**, and replace the contents of the *azure-pipelines.yml* file with the following code. You add to this YAML in future steps.
-
 #### [JavaScript](#tab/javascript)
 
-The following code builds your Node.js project with npm.
+The following pipeline builds your Node.js project with npm.
 
 ```yaml
     trigger:
@@ -141,11 +99,11 @@ The following code builds your Node.js project with npm.
           artifact: drop
 ```
 
-For more information, review the steps in [Build your Node.js app with gulp](javascript.md) for creating a build.
+For more information, review the steps for creating a build in [Build your Node.js app with gulp](javascript.md).
 
 #### [Java](#tab/java)
 
-The following code builds your Java project and runs tests with Apache Maven.
+The following pipeline builds your Java project and runs tests with Apache Maven.
 
 ```yaml
     trigger:
@@ -175,19 +133,23 @@ The following code builds your Java project and runs tests with Apache Maven.
           artifact: drop
 ```
 
-For more information, review the steps in [Build your Java app with Maven](java.md) for creating a build.
+For more information, review the steps for creating a build in [Build your Java app with Maven](java.md).
 
 ---
 
-## Run your pipeline
+### Run your pipeline
 
-Select **Validate and save**, then select **Save**, select **Run**, and select **Run** again.
+Select **Validate and save**, and then select **Save**, select **Run**, and select **Run** again.
 
-After your pipeline runs, verify that the job ran successfully and that you see a published artifact.
+After your pipeline runs, look at the **Summary** page to verify that the job ran successfully and that you see a published artifact.
 
 ## Deploy to the Linux VMs
 
-1. Edit your pipeline to add the following [deployment job](../process/deployment-jobs.md). Replace `<environment name>` with the name of the environment you created earlier. Select specific VMs from the environment to receive the deployment by specifying the `<VM tag>` that you defined for each VM.
+Add a [deployment job](../process/deployment-jobs.md) to your pipeline that runs on the Linux server.
+
+1. To add the deployment script, select **Edit** at upper right on the **Summary** page, and add the following code to the end of  your pipeline. Replace `<environment name>` with the name of the environment you created earlier.
+
+   Optionally, select specific VMs from the environment to receive the deployment by using the `tags` parameter and specifying the `<VM tag>` you defined for each VM.
 
     ```yaml
     jobs:  
@@ -197,27 +159,15 @@ After your pipeline runs, verify that the job ran successfully and that you see 
         name:  <environment name>
         resourceType: VirtualMachine
         tags: <VM tag> # Update value for VMs to deploy to
-      strategy:
     ```
    
-   For more information, see the complete [jobs.deployment definition](/azure/devops/pipelines/yaml-schema/jobs-deployment).
+1. Add the deployment `strategy` by adding the following code to the job. You can specify either `runOnce` or `rolling` as a deployment strategy.
 
-   For more information about the `environment` keyword and resources targeted by a deployment job, see the [jobs.deployment.environment definition](/azure/devops/pipelines/yaml-schema/jobs-deployment-environment).
+   - `runOnce` is the simplest deployment strategy, as shown in the following code. The `preDeploy`> `deploy` > `routeTraffic` > `postRouteTraffic` lifecycle hooks each execute once, and then either `on: success` or `on: failure` executes.
 
-1. Specify either `runOnce` or `rolling` as a deployment `strategy`.
 
-   - `runOnce` is the simplest deployment strategy. The `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks each execute once. Then either `on:` `success` or `on:` `failure` executes.
-
-     The following code shows a deployment job for `runOnce`:
      
      ```yaml
-     jobs:
-     - deployment: VMDeploy
-       displayName: Web deploy
-       environment:
-         name: <environment name>
-         resourceType: VirtualMachine
-         tags: <VM tag>
        strategy:
          runOnce:
            deploy:
@@ -225,11 +175,13 @@ After your pipeline runs, verify that the job ran successfully and that you see 
              - script: echo my first deployment
      ```
 
-   - The following code shows a YAML snippet for the `rolling` deployment strategy, using a Java pipeline. You can update up to five targets in each iteration. The `maxParallel` parameter specifies the number of targets that can be deployed to in parallel.
+   - A [rolling deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment-strategy-rolling) updates the application on a fixed set of VMs in each iteration. You can update up to five targets in each iteration.\
 
-     The `maxParallel` selection accounts for absolute number or percentage of targets that must remain available at any time, excluding the targets being deployed to, and determines success and failure conditions during deployment.
+     The `maxParallel` parameter specifies the absolute number or percentage of VMs that must remain available at any time, excluding the VMs currently being deployed to. The `maxParallel` selection accounts for and determines success and failure conditions during deployment.
 
-     ```yaml
+     The following code shows a YAML deployment job for the `rolling` deployment strategy, using a Java pipeline.
+
+ ```yaml
      jobs: 
      - deployment: VMDeploy
        displayName: web
@@ -269,7 +221,9 @@ After your pipeline runs, verify that the job ran successfully and that you see 
                  - script: echo Notify! This is on success
      ```
 
-     With each run of this job, deployment history is recorded against the environment you created and registered the VMs in.
+     With each run of this job, deployment history records against the environment you created and registered the VMs in.
+
+For more information about deployment jobs, see the complete [jobs.deployment definition](/azure/devops/pipelines/yaml-schema/jobs-deployment). For more information about the `environment` keyword and resources targeted by a deployment job, see the [jobs.deployment.environment definition](/azure/devops/pipelines/yaml-schema/jobs-deployment-environment).
 
 ## Access pipeline traceability in environment
 
@@ -278,12 +232,8 @@ The environment **Deployments** view provides complete traceability of commits a
 :::image type="content" source="media/vm-deployments.png" alt-text="Screenshot of deployments view.":::
 
 ## Related content
- 
-- [Jobs](../process/phases.md)
-- [Tasks](../process/tasks.md)
-- [Catalog of tasks](../tasks/index.md)
-- [Variables](../process/variables.md)
-- [Triggers](../build/triggers.md)
-- [Troubleshooting](../troubleshooting/troubleshooting.md)
-- [YAML schema reference](/azure/devops/pipelines/yaml-schema)
+
+- [Environments](../process/environments.md)
+- [VM resources in environments](../process/environments-virtual-machines.md)
+- [Deployment jobs](../process/deployment-jobs.md)
 
