@@ -38,52 +38,7 @@ Markdown syntax lets you format content with headers, reference links, bold text
 > [!NOTE]
 > Markdown in Azure DevOps doesn't support JavaScript or iframes. For example, you can't embed interactive elements like countdown timers.
 
-The following table shows which Markdown elements each feature supports and links to syntax sections in this article. The table uses the notation Definition of **Done**, Markdown **Widget**, Pull requests (**PR**), **README** files, and **Wiki** files.
-
-| Markdown type                           | Done | Widget | PR  | README | Wiki |
-|-----------------------------------------|:----:|:------:|:---:|:------:|:----:|
-| [Headers](#headers)                     |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Paragraphs and line breaks](#paragraphs-and-line-breaks)   |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Block quotes](#block-quotes)             |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Horizontal rules](#rules)              |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Emphasis](#emphasis)                   |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Code highlighting](#code)              |      |        | ✔️  |  ✔️   |  ✔️ |
-| [Suggest change](#suggest-change)       |      |        | ✔️  |        |     |
-| [Tables](#tables)                       |      |   ✔️  |  ✔️  |  ✔️   |  ✔️ |
-| [Lists](#lists)                         |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Links](#links)                         |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Images](#images)                       |      |   ✔️  |  ✔️  |  ✔️   |  ✔️ |
-| [Checklist or task list](#checklists)   |      |        | ✔️  |       |  ✔️ |
-| [Emojis](#emoji-reactions)              |      |        | ✔️  |       |  ✔️ |
-| [Ignore or escape Markdown](#ignore)    |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Attachments](#attachments)             |      |        | ✔️  |       |  ✔️ |
-| [Mathematical notation](#math-notation) |      |        | ✔️  |       |  ✔️ |
-
-<table>
-<thead>
-  <tr><th>Markdown type</th><th>Done</th><th>Widget</th><th>PR</th><th>README</th><th>Wiki</th></tr>
-</thead>
-<tbody>
-  <tr><td><a href="#headers">Headers</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#paragraphs-line-breaks">Paragraphs and line breaks</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#block-quotes">Block quotes</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#horizontal-rules">Horizontal rules</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#emphasis">Emphasis</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#code-highlighting">Code highlighting</a></td><td></td><td></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#suggest-change">Suggest change</a></td><td></td><td></td><td>&#10003;</td><td></td><td></td></tr>
-  <tr><td><a href="#tables">Tables</a></td><td></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#lists">Lists</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#links">Links</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#images">Images</a></td><td></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#checklist-task-list">Checklist or task list</a></td><td></td><td></td><td>&#10003;</td><td></td><td>&#10003;</td></tr>
-  <tr><td><a href="#emojis">Emojis</a></td><td></td><td></td><td>&#10003;</td><td></td><td>&#10003;</td></tr>
-  <tr><td><a href="#ignore-escape-markdown">Ignore or escape Markdown</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
-  <tr><td><a href="#attachments">Attachments</a></td><td></td><td></td><td>&#10003;</td><td></td><td>&#10003;</td></tr>
-  <tr><td><a href="#math-notation">Mathematical notation</a></td><td></td><td></td><td>&#10003;</td><td></td><td>&#10003;</td></tr>
-</tbody>
-</table>
-
-Supported Markdown elements and where they're available:
+The following list shows which Markdown elements each feature supports and links to syntax sections in this article:
 
 - [Headers](#headers) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
 - [Paragraphs and line breaks](#paragraphs-and-line-breaks) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
