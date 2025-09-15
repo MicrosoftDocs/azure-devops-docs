@@ -59,6 +59,49 @@ The following table shows which Markdown elements each feature supports and link
 | [Attachments](#attachments)             |      |        | ✔️  |       |  ✔️ |
 | [Mathematical notation](#math-notation) |      |        | ✔️  |       |  ✔️ |
 
+<table>
+<thead>
+  <tr><th>Markdown type</th><th>Done</th><th>Widget</th><th>PR</th><th>README</th><th>Wiki</th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="#headers">Headers</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#paragraphs-line-breaks">Paragraphs and line breaks</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#block-quotes">Block quotes</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#horizontal-rules">Horizontal rules</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#emphasis">Emphasis</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#code-highlighting">Code highlighting</a></td><td></td><td></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#suggest-change">Suggest change</a></td><td></td><td></td><td>&#10003;</td><td></td><td></td></tr>
+  <tr><td><a href="#tables">Tables</a></td><td></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#lists">Lists</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#links">Links</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#images">Images</a></td><td></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#checklist-task-list">Checklist or task list</a></td><td></td><td></td><td>&#10003;</td><td></td><td>&#10003;</td></tr>
+  <tr><td><a href="#emojis">Emojis</a></td><td></td><td></td><td>&#10003;</td><td></td><td>&#10003;</td></tr>
+  <tr><td><a href="#ignore-escape-markdown">Ignore or escape Markdown</a></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+  <tr><td><a href="#attachments">Attachments</a></td><td></td><td></td><td>&#10003;</td><td></td><td>&#10003;</td></tr>
+  <tr><td><a href="#math-notation">Mathematical notation</a></td><td></td><td></td><td>&#10003;</td><td></td><td>&#10003;</td></tr>
+</tbody>
+</table>
+
+Supported Markdown elements and where they're available:
+
+- [Headers](#headers) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
+- [Paragraphs and line breaks](#paragraphs-and-line-breaks) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
+- [Block quotes](#block-quotes) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
+- [Horizontal rules](#rules) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
+- [Emphasis](#emphasis) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
+- [Code highlighting](#code) — Done: No · Widget: No · PR: Yes · README: Yes · Wiki: Yes  
+- [Suggest change](#suggest-change) — Done: No · Widget: No · PR: Yes · README: No · Wiki: No  
+- [Tables](#tables) — Done: No · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
+- [Lists](#lists) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
+- [Links](#links) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
+- [Images](#images) — Done: No · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
+- [Checklist or task list](#checklists) — Done: No · Widget: No · PR: Yes · README: No · Wiki: Yes  
+- [Emojis](#emoji-reactions) — Done: No · Widget: No · PR: Yes · README: No · Wiki: Yes  
+- [Ignore or escape Markdown](#ignore) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
+- [Attachments](#attachments) — Done: No · Widget: No · PR: Yes · README: No · Wiki: Yes  
+- [Mathematical notation](#math-notation) — Done: No · Widget: No · PR: Yes · README: No · Wiki: Yes
+
 ## Headers
 
 Structure your content by using Markdown headers. Headers separate long portions of page content into sections that are easier to read. You can add headers in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
@@ -79,6 +122,7 @@ The following Markdown creates a top-level header (H1) and four levels of subhea
 The following image shows the published view of the Markdown:
 
 :::image type="content" source="media/markdown-guidance/markdown-headers.png" alt-text="Screenshot of the published view of Markdown syntax for five levels of headers.":::
+
 ## Paragraphs and line breaks
 
 > [!IMPORTANT]
