@@ -1,5 +1,5 @@
 ---
-title: Deploy to Linux VMs
+title: Deploy to Linux VMs in an environment
 description: Use Azure Pipelines to deploy a Java or JavaScript web application to Linux VM web servers in an environment.
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
@@ -24,7 +24,7 @@ For JavaScript or Node.js apps:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An Azure DevOps organization and project. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
 - [At least two Linux VMs set up with Nginx on Azure](/azure/virtual-machines/linux/quick-create-cli).
-- Your own fork of the GitHub sample code repo: https://github.com/MicrosoftDocs/pipelines-javascript.
+- Your own fork of the GitHub sample code repo at [https://github.com/MicrosoftDocs/pipelines-javascript](https://github.com/MicrosoftDocs/pipelines-javascript). If you already have an app in GitHub that you want to deploy, you can use that code instead.
 
 #### [Java](#tab/java)
 
@@ -33,15 +33,15 @@ For Java Spring Boot and Spring Cloud based apps:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An Azure DevOps organization and project. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
 - [At least two Linux VMs created in Azure using the Java 13 on Ubuntu 20.04 template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004), which provides a fully supported OpenJDK-based runtime.
-- Your own fork of the GitHub sample code repo: https://github.com/spring-projects/spring-petclinic. If you already have an app in GitHub that you want to deploy, you can use that code instead.
+- Your own fork of the GitHub sample code repo at [https://github.com/spring-projects/spring-petclinic](https://github.com/spring-projects/spring-petclinic). If you already have an app in GitHub that you want to deploy, you can use that code instead.
 
   >[!NOTE]
-  >Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://docs.spring.io/spring-boot/docs/2.3.0.RELEASE/maven-plugin/reference/html/#build-image).
+  >`Petclinic` is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://docs.spring.io/spring-boot/docs/2.3.0.RELEASE/maven-plugin/reference/html/#build-image).
 
 ---
 
 >[!IMPORTANT]
->During GitHub procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. Follow the onscreen instructions to complete the process. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+>During GitHub procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. To complete each process, follow the onscreen instructions. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 ## Create an environment and add Linux VMs
 
@@ -55,8 +55,8 @@ Create a CI build pipeline that publishes your web app.
 
 1. In your Azure DevOps project, select **Pipelines** > **New pipeline** or **Create Pipeline**, and then select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select your forked sample repository.
-1. On the **Configure your pipeline** screen, select **Starter pipeline**. Azure Pipelines generates a YAML file called *azure-pipelines.yml*.
-1. Replace the entire contents of the starter YAML pipeline with the following code, based on your runtime.
+1. On the **Configure your pipeline** screen, select **Starter pipeline**.
+1. On the **Review your pipeline YAML** screen, replace the entire generated starter *azure-pipelines.yml* with the following code, based on your runtime.
 
 ### Edit the code
 
@@ -141,7 +141,7 @@ For more information, review the steps for creating a build in [Build your Java 
 
 Select **Validate and save**, and then select **Save**, select **Run**, and select **Run** again.
 
-After your pipeline runs, look at the **Summary** page to verify that the job ran successfully and that you see a published artifact.
+After your pipeline runs, view the **Summary** page to verify that the job ran successfully and that you see a published artifact.
 
 ## Deploy to the Linux VMs
 
@@ -161,7 +161,7 @@ Add a [deployment job](../process/deployment-jobs.md) to your pipeline that runs
         tags: <VM tag> # Update value for VMs to deploy to
     ```
    
-1. Add the deployment `strategy` by adding the following code to the job. You can specify either `runOnce` or `rolling` as a deployment strategy.
+1. Add the deployment `strategy` by adding the following code to the `deployment` job. You can specify either `runOnce` or `rolling` as a deployment strategy.
 
    - `runOnce` is the simplest deployment strategy, as shown in the following code. The `preDeploy`> `deploy` > `routeTraffic` > `postRouteTraffic` lifecycle hooks each execute once, and then either `on: success` or `on: failure` executes.
 
@@ -181,7 +181,7 @@ Add a [deployment job](../process/deployment-jobs.md) to your pipeline that runs
 
      The following code shows a YAML deployment job for the `rolling` deployment strategy, using a Java pipeline.
 
- ```yaml
+     ```yaml
      jobs: 
      - deployment: VMDeploy
        displayName: web
