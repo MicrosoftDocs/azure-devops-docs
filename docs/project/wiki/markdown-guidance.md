@@ -40,22 +40,24 @@ Markdown syntax lets you format content with headers, reference links, bold text
 
 The following list shows which Markdown elements each feature supports and links to syntax sections in this article:
 
-- [Headers](#headers) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
-- [Paragraphs and line breaks](#paragraphs-and-line-breaks) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
-- [Block quotes](#block-quotes) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
-- [Horizontal rules](#rules) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
-- [Emphasis](#emphasis) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
-- [Code highlighting](#code) — Done: No · Widget: No · PR: Yes · README: Yes · Wiki: Yes  
-- [Suggest change](#suggest-change) — Done: No · Widget: No · PR: Yes · README: No · Wiki: No  
-- [Tables](#tables) — Done: No · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
-- [Lists](#lists) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
-- [Links](#links) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
-- [Images](#images) — Done: No · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
-- [Checklist or task list](#checklists) — Done: No · Widget: No · PR: Yes · README: No · Wiki: Yes  
-- [Emojis](#emoji-reactions) — Done: No · Widget: No · PR: Yes · README: No · Wiki: Yes  
-- [Ignore or escape Markdown](#ignore) — Done: Yes · Widget: Yes · PR: Yes · README: Yes · Wiki: Yes  
-- [Attachments](#attachments) — Done: No · Widget: No · PR: Yes · README: No · Wiki: Yes  
-- [Mathematical notation](#math-notation) — Done: No · Widget: No · PR: Yes · README: No · Wiki: Yes
+| Markdown type                           | Done | Widget | PR  | README | Wiki |
+|-----------------------------------------|:----:|:------:|:---:|:------:|:----:|
+| [Headers](#headers)                     | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Paragraphs and line breaks](#paragraphs-and-line-breaks)   | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Block quotes](#block-quotes)             | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Horizontal rules](#rules)              | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Emphasis](#emphasis)                   | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Code highlighting](#code)              |       |        | &#10003; | &#10003; | &#10003; |
+| [Suggest change](#suggest-change)       |       |        | &#10003; |        |      |
+| [Tables](#tables)                       |       | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Lists](#lists)                         | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Links](#links)                         | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Images](#images)                       |       | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Checklist or task list](#checklists)   |       |        | &#10003; |        | &#10003; |
+| [Emojis](#emoji-reactions)              |       |        | &#10003; |        | &#10003; |
+| [Ignore or escape Markdown](#ignore)    | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [Attachments](#attachments)             |       |        | &#10003; |        | &#10003; |
+| [Mathematical notation](#math-notation) |       |        | &#10003; |        | &#10003; |
 
 ## Headers
 
