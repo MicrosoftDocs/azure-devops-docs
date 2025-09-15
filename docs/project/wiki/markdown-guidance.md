@@ -80,7 +80,9 @@ The following image shows the published view of the Markdown:
 
 :::image type="content" source="media/markdown-guidance/markdown-headers.png" alt-text="Screenshot of the published view of Markdown syntax for five levels of headers.":::
 
+
 ## Paragraphs and line breaks
+
 
 > [!IMPORTANT]
 > Azure DevOps Markdown handles line breaks differently than most other Markdown implementations. To create a line break (soft return) within a paragraph, add two spaces at the end of the line before you press **Enter**. If you press **Enter** without the two spaces, the published output doesn't include a line break.
