@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: concept-article
 monikerRange: '<= azure-devops'
-ms.date: 06/18/2025
+ms.date: 09/15/2025
 #customer intent: As an Azure DevOps developer, I want to use Markdown to create tables, lists, headings, and more, so I can share my project information in pull requests, README files, dashboards, and wikis.
 ---
 
@@ -21,29 +21,29 @@ ms.date: 06/18/2025
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-This article describes the basic syntax for using Markdown (_.md_) format with Azure DevOps features, including [Wiki pages](#markdown-in-an-azure-devops-wiki). Markdown syntax lets you add special formatting to your page content, such as headings, lists, tables, and images. Use Markdown to format your README files, dashboards, pull request content, and so on.
+This article describes the basic syntax for using Markdown (*.md*) format with Azure DevOps features, including [Wiki pages](#markdown-in-an-azure-devops-wiki). Markdown syntax lets you add special formatting to your page content, like headings, lists, tables, and images. Use Markdown to format your README files, dashboards, pull request content, and more.
 
-You have two formatting options: common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [Markdown extensions for GitHub](https://docs.github.com/get-started/writing-on-github).
+There are two formatting options: common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax), and [Markdown extensions for GitHub](https://docs.github.com/get-started/writing-on-github).
 
 ## Support for Azure DevOps features
 
-Markdown syntax covers a wide range of formatting options, such as content headers, reference links, text emphasis like bold, and file attachments. Not all Markdown syntax is available for all features in Azure DevOps. Some of the significant features that support Markdown syntax include:
+Markdown syntax lets you format content with headers, reference links, bold text, and file attachments. Not all Markdown syntax works with every feature in Azure DevOps. Key features that support Markdown syntax include:
 
-- Criteria for the [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done) for project milestones
-- Information like team goals and metrics with the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md)
-- [Pull requests](../../repos/git/pull-requests.md) for project files in a Git repository
-- [README files](../../repos/git/create-a-readme.md) in a Git repo to support contributors
-- [Wiki files](add-edit-wiki.md) for page content in a team project wiki
+- Criteria for the [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done) for project milestones.
+- Team goals and metrics with the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md).
+- [Pull requests](../../repos/git/pull-requests.md) for project files in a Git repository.
+- [README files](../../repos/git/create-a-readme.md) in a Git repo to help contributors.
+- [Wiki files](add-edit-wiki.md) for page content in a team project wiki.
 
 > [!NOTE]
-> Markdown in Azure DevOps doesn't support JavaScript or iframes. For example, you can't embed interactive elements like countdown timers directly.
+> Markdown in Azure DevOps doesn't support JavaScript or iframes. For example, you can't embed interactive elements like countdown timers.
 
-The following table outlines the feature support for different Markdown elements and provides links to the syntax sections in this article. The table uses the notation Definition of **Done**, Markdown **Widget**, Pull requests (**PR**), **README** files, and **Wiki** files.
+The following table shows which Markdown elements each feature supports and links to syntax sections in this article. The table uses the notation Definition of **Done**, Markdown **Widget**, Pull requests (**PR**), **README** files, and **Wiki** files.
 
 | Markdown type                           | Done | Widget | PR  | README | Wiki |
 |-----------------------------------------|:----:|:------:|:---:|:------:|:----:|
 | [Headers](#headers)                     |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
-| [Paragraphs and line breaks](#breaks)   |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
+| [Paragraphs and line breaks](#paragraphs-and-line-breaks)   |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
 | [Block quotes](#block-quotes)             |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
 | [Horizontal rules](#rules)              |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
 | [Emphasis](#emphasis)                   |  ✔️ |   ✔️   | ✔️  |  ✔️   |  ✔️ |
@@ -61,9 +61,9 @@ The following table outlines the feature support for different Markdown elements
 
 ## Headers
 
-Structure your content by using Markdown headers. Headers help to separate long portions of page content into sections that are easier to read. You can add headers in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
+Structure your content by using Markdown headers. Headers separate long portions of page content into sections that are easier to read. You can add headers in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
 
-To define a top-level header, start a line with a single hash mark `#` followed by the heading text, such as `# Get Started on the Project`. Organize your remarks with subheaders by starting the line with more than one hash mark like `## Request Permissions` or `### Send Feedback`. You can use up to six hash marks to create size levels of headers.
+To define a top-level header, start a line with a single hash mark `#` followed by the heading text, such as `# Get started on the project`. Organize your remarks with subheaders by starting the line with more than one hash mark like `## Request permissions` or `### Send feedback`. You can use up to six hash marks to create size levels of headers.
 
 ### Example: Create headers in Markdown
 
@@ -75,48 +75,61 @@ The following Markdown creates a top-level header (H1) and four levels of subhea
 ### This is a lower subheader (H3)
 #### This is an H4 header
 ##### This is an H5 header
-```
 
 The following image shows the published view of the Markdown:
 
-:::image type="content" source="media/markdown-guidance/markdown-headers.png" alt-text="Screenshot that shows a published view of the Markdown syntax for five levels of headers.":::
-
-<a id="breaks"></a>
-
+:::image type="content" source="media/markdown-guidance/markdown-headers.png" alt-text="Screenshot of the published view of Markdown syntax for five levels of headers.":::
 ## Paragraphs and line breaks
 
-Make your text easier to read by breaking long portions into smaller paragraphs or insert line breaks to create spaces between lines of text.  
+> [!IMPORTANT]
+> Azure DevOps Markdown handles line breaks differently than most other Markdown implementations. To create a line break (soft return) within a paragraph, add two spaces at the end of the line before you press **Enter**. If you press **Enter** without the two spaces, the published output doesn't include a line break.
 
-You can add paragraphs and line breaks in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
+Break long sections into smaller paragraphs or insert line breaks to make your text easier to read.
+
+Add paragraphs and line breaks in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
 
 ### Example: Add breaks in Markdown and pull requests
 
-Comments in a pull request accept Markdown, such as **Bold** and _Italic_ style for text. You can also use the **Enter** key to insert a line break to start new text on the next line or add spacing between lines.
+Comments in a pull request accept Markdown, such as **Bold** and _Italic_ style for text. Use the **Enter** key to insert a line break to start new text on the next line or add spacing between lines.
 
-In the following Markdown, the author uses the **Enter** key to start the second sentence on a new line: 
+In Azure DevOps, to create a line break within a paragraph, add two spaces at the end of the line before you press **Enter**:
 
 ```md
-_Markdown_ lets you separate long lines of text by using the **Enter** key in a pull request comment. <!-- Select Enter -->
-Select **Enter** once to start text on a new line. <!-- Select Enter twice -->
-Select **Enter** twice to insert a blank line between lines of text.
+This is the first line with two spaces at the end.  
+This is the second line, which will appear directly below the first.
+```
+
+This renders as:
+
+This is the first line with two spaces at the end.  
+This is the second line, which will appear directly below the first.
+
+If you press **Enter** without two trailing spaces, the lines combine into a single paragraph in the published output.
+
+To create a new paragraph (with a blank line between), press **Enter** twice:
+
+```md
+This is the first paragraph.
+
+This is the second paragraph.
 ```
 
 The following image shows the published view of the Markdown for spacing in a pull request comment:
 
-:::image type="content" source="media/markdown-guidance/markdown-breaks.png" alt-text="Screenshot that shows a published view of the Markdown syntax for line and paragraph breaks.":::
+:::image type="content" source="media/markdown-guidance/markdown-breaks.png" alt-text="Screenshot of the published view of Markdown syntax for line and paragraph breaks in a pull request comment.":::
 
 ### Example: Add breaks in Markdown files or widgets
 
-In a Markdown file or Markdown widget, you can separate lines of text to create new paragraphs. Add two spaces (**Space** key) before the line break, and select **Enter** to start a new paragraph.
+In a Markdown file or Markdown widget, separate lines of text to create new paragraphs. Add two spaces (**Space** key) before the line break, and press **Enter** to start a new paragraph.
 
 ```md
-Add two **Space** characters before the end of the line and then select **Enter**. <!-- Select Space twice, Selet Enter -->
+Add two **Space** characters before the end of the line and then press **Enter**.
 The next paragraph starts on a new line. The two paragraphs are separated by a blank line.
 ```
 
 The following image shows the published view of the Markdown for spacing in a widget:
 
-:::image type="content" source="media/markdown-guidance/markdown-widget-breaks.png" alt-text="Screenshot that shows a published view of the Markdown syntax for the Enter and Space keys.":::
+:::image type="content" source="media/markdown-guidance/markdown-widget-breaks.png" alt-text="Screenshot of the published view of Markdown syntax for the Enter and Space keys in a widget.":::
 
 ## Block quotes
 
@@ -126,7 +139,7 @@ You can add block quotes in a [Definition of Done (board)](../../boards/boards/a
 
 To quote a single line of text or a paragraph block, insert a right angle bracket `>` before the first text.
 
-To creat a nested quote, insert two or more brackets before the text. The nested quote is indented further from the left margin with double vertical lines along the quoted section. 
+To create a nested quote, insert two or more brackets before the text. The nested quote is indented further from the left margin with double vertical lines along the quoted section.
 
 ### Example: Quote text by using brackets
 
@@ -148,15 +161,15 @@ This text references the nested block quotes.
 
 The following image shows the published view of the Markdown for quoted text:
 
-:::image type="content" source="media/markdown-guidance/markdown-block-quotes.png" alt-text="Screenshot that shows a published view of the Markdown syntax for quoting blocks of text.":::
+:::image type="content" source="media/markdown-guidance/markdown-block-quotes.png" alt-text="Screenshot of the published view of the Markdown syntax for quoting blocks of text.":::
 
 <a id="rules"></a>
 
 ## Horizontal rules
 
-Underline or separate content and page sections with horizontal rules. You can add separators in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
+Underline or separate content and page sections with horizontal rules. You can add separators in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, readme files, and wiki files.
 
-To add a horizontal rule, enter a blank line and then another line with three hyphens (dashes) `---`.
+To add a horizontal rule, enter a blank line, then another line with three hyphens (dashes) `---`.
 
 ### Example: Insert horizontal separators
 
@@ -172,44 +185,44 @@ Text **between** horizontal rules
 Text **under** a horizontal rule
 ```
 
-The following image shows the published view of the Markdown for horizontal rules: 
+The following image shows the published view of the Markdown for horizontal rules.
 
-:::image type="content" source="media/markdown-guidance/markdown-horizontal-rules.png" alt-text="Screenshot that shows a published view of the Markdown syntax for horizontal rules.":::
+:::image type="content" source="media/markdown-guidance/markdown-horizontal-rules.png" alt-text="Screenshot of the published view of the Markdown syntax for horizontal rules.":::
 
 <a id="emphasis"></a>
 
 ## Emphasis (bold, italics, strikethrough)
 
-Markdown provides several style options for emphasizing text:
+Markdown lets you emphasize text in several ways:
 
 | Style             | Example              | Markdown |
 |-------------------|----------------------|----------|
-| **Italics**       | _Italicized text_    | Enclose text within single asterisk `*` or underscore `_` characters. |
-| **Bold** (Strong) | __Bolded text__      | Enclose text within double asterisk `**` or underscore `__` characters. |
-| **Strikethrough** | ~~Crossed out text~~ | Enclose text within double tilde `~~` characters. |
+| **Italics**       | _Italicized text_    | Enclose text within a single asterisk `*` or underscore `_` character. |
+| **Bold** (Strong) | __Bolded text__      | Enclose text within double asterisks `**` or underscores `__`. |
+| **Strikethrough** | ~~Crossed out text~~ | Enclose text within double tildes `~~`. |
 
-You can combine these styles to apply emphasis to the text. The emphasis styles are available in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
+Combine these styles to add emphasis. You can use emphasis styles in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
 
 > [!NOTE]  
-> There's no Markdown syntax for underlining text. In a wiki page, you can underline text by using the HTML underline `<u>` element.
+> Markdown doesn't have syntax for underlining text. In a wiki page, you can underline text by using the HTML underline `<u>` element.
 
 ### Example: Emphasize text
 
-The following Markdown shows how to emphasize text by using different styles and combining styles:
+Here's some Markdown that shows how to emphasize text with different and combined styles:
 
 ```md
 **Italics** highlights text in a larger block like _new terminology_.
 
 **Bold** (strong) adds presence to text, such as **Important!**
 
-**Strikethrough** is useful for corrections like "Send feedback ~~to the team~~.
+**Strikethrough** is useful for corrections like "Send feedback ~~to the team~~."
 
 Combine styles for other effects, such as ~~__Content removed__~~ and **_Milestones_**.
 ```
 
-The following image shows the published view of the Markdown for text emphasis styles: 
+The next image shows how Markdown text emphasis styles look when published: 
 
-:::image type="content" source="media/markdown-guidance/markdown-emphasis-styles.png" alt-text="Screenshot that shows a published view of the Markdown syntax for text emphasis styles.":::
+:::image type="content" source="media/markdown-guidance/markdown-emphasis-styles.png" alt-text="Screenshot of the published view of Markdown text emphasis styles.":::
 
 <a id="code"></a>
 
@@ -221,11 +234,11 @@ To format a text block as code, enclose the block within three backtick (` ``` `
 
 You can also format a portion of text within a larger text block as an inline code segment. For this style, enclose the inline code within single backticks. The backticks are inline with the text and not on separate lines.
 
-Code highlighting entered in the Markdown widget renders code as plain preformatted text.
+Code highlighting in the Markdown widget renders code as plain preformatted text.
 
 ### Example: Highlight code block in Markdown widget
 
-The following example shows how to highlight a text block as code in the Markdown widget:
+This example shows how to highlight a text block as code in the Markdown widget:
 
 ```bash
 <!-- ```  Three backticks to start block " -->
@@ -233,7 +246,7 @@ sudo npm install vsoagent-installer -g
 <!-- ```  Three backticks to end block -->
 ``` 
 
-The following example shows the published view of the Markdown for a text block highlighted as code:
+This example shows the published view of the Markdown for a text block highlighted as code:
 
 ```bash
 sudo npm install vsoagent-installer -g
@@ -241,27 +254,27 @@ sudo npm install vsoagent-installer -g
 
 ### Example: Highlight inline code in Markdown widget
 
-The following example shows how to highlight a portion of text as an inline code segment in the Markdown widget: 
+This example shows how to highlight a portion of text as an inline code segment in the Markdown widget:
 
 ```md
 To install the Microsoft Cross Platform Build and Release Agent, run the following: <!-- ` - Single backtick --> $ sudo npm install vsoagent-installer -g <!-- ` - Single backtick -->
 ``` 
 
-The following image shows the published view of the Markdown for a portion of text highlighted as an inline code segment:
+This image shows the published view of the Markdown for a portion of text highlighted as an inline code segment:
 
 :::image type="content" source="media/markdown-guidance/markdown-widget-inline-code.png" alt-text="Screenshot that shows a published view of the Markdown syntax for a portion of text highlighted as an inline code segment.":::
 
 ### Example: Convert text to code, identify code language
 
-There's an alternate method for converting a text block into code. When a line of text in the Markdown starts with four spaces in the left margin, the text automatically converts to a code block. The following example demonstrates this behavior:
+There's another way to convert a text block into code. When a line of text in Markdown starts with four spaces in the left margin, the text automatically converts to a code block. This example demonstrates this behavior:
 
 ```md
     This article is a Markdown file (_.md_). This line of text automatically formats as code because the line starts with four spaces in the left margin.
 ```
 
-The preferred approach is to enclose the text within three backticks so you can specify the language identifier. The identifier applies syntax highlighting to the code according to the conventions of the specified language. Identifier labels are available for most programming languages, such as JavaScript (`js`), C# (`csharp`), and Markdown (`md`). For the list of supported languages, see the [highlightjs](https://github.com/highlightjs/highlight.js/tree/stable-11/src/languages) GitHub repository.
+The preferred approach is to enclose the text within three backticks so you can specify the language identifier. The identifier applies syntax highlighting to the code according to the conventions of the specified language. Identifier labels are available for most programming languages, like JavaScript (`js`), C# (`csharp`), and Markdown (`md`). For the list of supported languages, see the [highlightjs](https://github.com/highlightjs/highlight.js/tree/stable-11/src/languages) GitHub repository.
 
-The following examples show how to identify a text block as JavaScript or C#. You add the language identifier label after the first three backticks, as in ` ```md `.
+These examples show how to identify a text block as JavaScript or C#. Add the language identifier label after the first three backticks, as in ` ```md `.
 
 **JavaScript**
 
@@ -271,7 +284,7 @@ const count = records.length;
 <!-- ```         - Three backticks -->
 ``` 
 
-Here's the published view of the JavaScript code:
+This is the published view of the JavaScript code:
 
 ```js
 const count = records.length;
@@ -285,7 +298,7 @@ Console.WriteLine("Hello, World!");
 <!-- ```         - Three backticks -->
 ```
 
-Here's the published view of the C# code:
+This is the published view of the C# code:
 
 ```csharp
 Console.WriteLine("Hello, World!");
@@ -293,13 +306,13 @@ Console.WriteLine("Hello, World!");
 
 ## Suggest change
 
-GitHub pull requests support the **Comment** feature where contributors can provide input and suggest changes. You can add a comment for a specific line or multiple lines in a file. The pull request author can apply the suggested change in a comment by selecting **Apply Change**. This action commits the change to the pull request and starts a build.
+GitHub pull requests support the **Comment** feature, which lets contributors provide input and suggest changes. Add a comment for a specific line or multiple lines in a file. The pull request author applies the suggested change in a comment by selecting **Apply Change**. This action commits the change to the pull request and starts a build.
 
-If you add a comment that includes code highlighting in the Markdown widget, the code renders in a differences format. The changes in the modified line are annotated to show the differences. The minus symbol `-` indicates removed content and the plus symbol `+` highlights new content.
+When you add a comment that includes code highlighting in the Markdown widget, the code shows in a differences format. The changes in the modified line are annotated to show the differences. The minus symbol `-` indicates removed content, and the plus symbol `+` highlights new content.
 
 ### Example: Suggest changes in a pull request comment
 
-The following example shows how to suggest code changes on a pull request in the Markdown widget. In this scenario, the code block uses the identifier `suggestion`:
+This example shows how to suggest code changes on a pull request in the Markdown widget. In this scenario, the code block uses the identifier `suggestion`:
 
 ```
 <!-- ```suggestion   - Three backticks and identifier 'suggestion' -->
@@ -307,29 +320,29 @@ The following example shows how to suggest code changes on a pull request in the
 <!-- ```         - Three backticks -->
 ```
 
-The following image shows the differences view with the comment suggestion:
+The following image shows the differences view with the comment suggestion.
 
-:::image type="content" source="media/markdown-guidance/suggestion-snapshot.png" alt-text="Screenshot that shows an example of a suggested change for code in a pull request comment."::: 
+:::image type="content" source="media/markdown-guidance/suggestion-snapshot.png" alt-text="Screenshot of a suggested change for code in a pull request comment."::: 
 
 For more information, see [Suggest changes in comments](../../repos/git/review-pull-requests.md?tabs=browser#suggest-changes-in-comments).
 
 ## Tables
 
-Organize structured data with Markdown tables. You can add tables in the Markdown widget, pull requests, Readme files, and wiki files. Tables are especially useful for describing function parameters, object methods, and other data with a clear name-to-description mapping. 
+Organize structured data with Markdown tables. Add tables in the Markdown widget, pull requests, Readme files, and wiki files. Tables are especially useful for describing function parameters, object methods, and other data with a clear name-to-description mapping.
 
 Here are some points about working with tables in Markdown:
 
 - Create each row on a separate line and end each row with a carriage return (CR) or line feed (LF).
-- Create columns with hyphens `-` and the pipe symbol `|`, as in `|---|---|---|`.
-- Define the column headers in the first row, as in `| First | Middle | Last |`.
-- Define the column alignment (left, center, right) by using colons `:` in the second row, as in `|:--|:--:|--:|`.
-- Escape the pipe symbol with a backslash `\|` when used in table text, as in `| Describe the pipe \| symbol. |`
-- Add line breaks within a cell by using the HTML break tag `<br/>`. This approach works within a wiki but not elsewhere.  
+- Create columns with hyphens `-` and the pipe symbol `|`, like `|---|---|---|`.
+- Define the column headers in the first row, like `| First | Middle | Last |`.
+- Set the column alignment (left, center, right) by using colons `:` in the second row, like `|:--|:--:|--:|`.
+- Escape the pipe symbol with a backslash `\|` when you use it in table text, like `| Describe the pipe \| symbol. |`
+- Add line breaks within a cell by using the HTML break tag `<br/>`. This approach works in a wiki but not elsewhere.
 - Add a blank space before and after a work item or pull request mentioned in table text.
 
 ### Example: Create a table
 
-The following example shows how to create a table about with three columns and five rows in Markdown:
+The following example shows how to create a table with three columns and five rows in Markdown:
 
 ```md
 | Feature | Prerelease | Release target |  
@@ -341,7 +354,7 @@ The following example shows how to create a table about with three columns and f
 | Search | No | 1/5/2026 |
 ```
 
-Here's the published view of the Markdown table:
+Here's how the Markdown table looks when published:
 
 | Feature | Prerelease | Release target |  
 |:---|:---:|---:|
@@ -353,21 +366,21 @@ Here's the published view of the Markdown table:
 
 ## Lists
 
-Organize related items with different types of lists. Create an ordered list to show the precedence of items or items in a sequence. Create lists of related but unordered items by using bullet points. You can add list styles in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
+Organize related items by using different types of lists. Use an ordered list to show the order or sequence of items. Use bullet points for related items that don't need to be in order. Add list styles in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
 
 Here are some points about working with lists in Markdown:
 
 - Specify each list item on a separate line.
-- Start each item in an ordered list with a number followed by a period, as in `1. First item 2. Next item.`
-  You can also start each item with `1.` and let the publishing system determine the numbering for you.
-- Start each item in an unordered list with a hyphen `-` or asterisk `*`, as in `- First point - Next point`.
+- Start each item in an ordered list with a number followed by a period, like `1. First item 1. Next item.`
+  The publishing system automatically numbers the list.
+- Start each item in an unordered list with a hyphen `-` or asterisk `*`, like `- First point - Next point`.
 - Check the spacing before and after lists in a Markdown file or widget:
-   - For the initial list, add a blank line before and after the list.
-   - For nested lists, use correct indentation. No extra before and after line breaks are needed.
+   - For the first list, add a blank line before and after the list.
+   - For nested lists, use correct indentation. You don't need extra line breaks before or after nested lists.
 
 ### Example: Create a numbered (ordered) list
 
-The following example shows how to create a numbered list for items in a sequence by using Markdown:
+This example shows how to create a numbered list for items in a sequence by using Markdown:
 
 ```md
 <!-- Blank -->
@@ -385,7 +398,7 @@ Here's the published view of the Markdown ordered list:
 
 ### Example: Create a bullet (unordered) list
 
-The following example shows how to create an unordered list of related items by using Markdown:
+This example shows how to create an unordered list of related items by using Markdown:
 
 ```md
 <!-- Blank -->
@@ -403,9 +416,9 @@ Here's the published view of the Markdown unordered list:
 
 ### Example: Nested lists
 
-You can also create lists within lists and mix the styles.
+Create lists within lists and mix the styles.
 
-The following example shows how to create a numbered list that has nested bullet lists in Markdown:
+This example shows how to create a numbered list with nested bullet lists in Markdown:
 
 ```md
 <!-- Blank -->
@@ -445,33 +458,33 @@ Here's the published view of the list with nested lists:
 
 ## Links
 
-Link to work items by entering the hash mark `#` followed by a work item ID, and then select the work item from the list. You can add different types of links in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
+Link to work items by entering the hash mark `#` followed by a work item ID, then select the work item from the list. Add different types of links in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
 
 Here are some points about working with links in Markdown:
 
 - The standard Markdown syntax for a link is `[Link display text](Link path)`.
 - In pull request comments and wikis, URLs that start with HTTP or HTTPS automatically format as links.
-- If you use the hash mark `#` in other ways like color hex codes, you can avoid auto suggestions for work items by prefixing the hash mark `#` with a backslash `\`.
-- In Markdown files and widgets, you can create text hyperlinks for a URL by using the standard Markdown link syntax. The `Link path` can be relative or absolute.
+- If you use the hash mark `#` in other ways, like color hex codes, you can avoid auto suggestions for work items by prefixing the hash mark `#` with a backslash `\`.
+- In Markdown files and widgets, create text hyperlinks for a URL by using the standard Markdown link syntax. The `Link path` can be relative or absolute.
 
-   The following example shows how to specify a relative link in Markdown, where the text renders as a hyperlink:
+  The following example shows how to specify a relative link in Markdown. The text renders as a hyperlink:
 
-   ```md
-   For more information, see the [C# language reference](/dotnet/csharp/language-reference/).
-   ```
+  ```md
+  For more information, see the [C# language reference](/dotnet/csharp/language-reference/).
+  ```
 
-   Here's the published view of the link:
+  Here's the published view of the link:
 
-   For more information, see the [C# language reference](/dotnet/csharp/language-reference/).
+  For more information, see the [C# language reference](/dotnet/csharp/language-reference/).
 
 ### Supported links
 
-When you link to another Markdown page in the same Git or Team Foundation Version Control (TFVC) repository, you can specify the link target as a relative or absolute path.
+When you link to another Markdown page in the same Git or Team Foundation Version Control (TFVC) repository, specify the link target as a relative or absolute path.
 
 > [!NOTE]  
-> Links to documents on file shares (`file://...`) aren't supported for security purposes.
+> Links to documents on file shares (`file://...`) aren't supported for security reasons.
 
-The following sections provide examples for different Markdown scenarios.
+The following sections show examples for different Markdown scenarios.
 
 #### Example: Welcome page relative links
 
@@ -495,19 +508,18 @@ The following example shows a relative link in a Markdown widget:
 
 Here are some examples of relative links in a wiki page:
 
-- Absolute path of Wiki pages: `[Display text](/parent-page/child-page)`
-
+- Absolute path of wiki pages: `[Display text](/parent-page/child-page)`
 - URL: `[Display text](http://address.com)`
 
 <a id="relative-links"></a>
 
 ### Source control relative links
 
-Relative links to source control files are interpreted differently in a Welcome page versus a Markdown widget:
+Relative links to source control files are interpreted differently in a Welcome page and a Markdown widget:
 
 #### Example: Welcome page relative links
 
-Relative links in a Welcome page are relative to the root of the source control depository where the Welcome page exists. Here are some examples:
+Relative links in a Welcome page are relative to the root of the source control repository where the Welcome page exists. Here are some examples:
 
 - _/BuildTemplates/AzureContinuousDeploy.11.xaml_
 - _./page-2.md_
@@ -525,12 +537,12 @@ When a Markdown file renders as HTML, the system assigns an anchor ID to each he
 
 - Replace spaces in the header text with hyphens `-`
 - Change uppercase letters to lowercase
-- Ignore (don't include) most special characters, such as `#`, `@`, `$` 
-- Ignore (don't include) most punctuation, such as `:`, `"`, `?`
+- Ignore most special characters, such as `#`, `@`, `$`
+- Ignore most punctuation, such as `:`, `"`, `?`
 
-You use the hash mark `#` to link to the header in the document, as in `[Display text](#<header-anchor>)`.
+Use the hash mark `#` to link to the header in the document, as in `[Display text](#<header-anchor>)`.
 
-The following example shows a heading and a link its anchor ID:
+The following example shows a heading and a link to its anchor ID:
 
 ```md
 #### Team #1 : Release Wiki!
@@ -544,13 +556,13 @@ Here's the published view:
 
 Welcome to the Release wiki. For more information, [Visit the Project Wiki](#team-1--release-wiki).
 
-You can also link to a heading in another Markdown file by specifying the file name with the anchor ID in the link:
+Link to a heading in another Markdown file by specifying the file name with the anchor ID in the link:
 
 ```md
 [Set up a project wiki](about-readme-wiki.md#set-up-a-project-wiki).
 ```
 
-A wiki page is also a Markdown file. You can reference a heading in one page in the wiki from another page:
+A wiki page is also a Markdown file. Reference a heading in one page in the wiki from another page:
 
 ```md
 Welcome to the Wiki!
@@ -564,13 +576,13 @@ Welcome to the Wiki!
 
 ## Images
 
-Demonstrate concepts and add visual interest by using images and animated GIFs in your content. You can add images in the Markdown widget, pull requests, Readme files, and wiki files.
+Use images and animated GIFs to demonstrate concepts and add visual interest to your content. Add images in the Markdown widget, pull requests, Readme files, and wiki files.
 
-The standard Markdown syntax for an image or animated GIF is `![Image alt text](Image path)`. The syntax is similar to the syntax for a link, but the line begins with an exclamation point `!` symbol.
+Use the standard Markdown syntax for an image or animated GIF: `![Image alt text](Image path)`. This syntax is similar to a link, but the line begins with an exclamation point `!` symbol.
 
-The `Image alt text` value describes the image. The alt text value displays when the user hovers over the image in the published view. The `Image path` identifies the image location.
+`Image alt text` describes the image and displays when the user hovers over the image in the published view. `Image path` identifies the image location.
 
-The following example adds an illustration to a Markdown file:
+Here's an example that adds an illustration to a Markdown file:
 
 ```md
 ![Illustration to use for new users](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
@@ -578,7 +590,7 @@ The following example adds an illustration to a Markdown file:
 
 ### Image path
 
-The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
+The path to the image file can be a relative path or an absolute path in Git or TFVC, just like the path to another Markdown file in a link.
 
 - Relative path: `![Image alt text](./image.png)`  
 - Absolute path in Git: `![Image alt text](/media/markdown-guidance/image.png)`  
@@ -586,14 +598,14 @@ The path to the image file can be a relative path or the absolute path in Git or
 
 ### Image size
 
-You can set the image size with the `Image-path =Image-widthxImage-height` syntax:
+Set the image size with the `Image-path =Image-widthxImage-height` syntax:
 
-- The letter `x` represents the `by` portion in the calculation expression "width-by-height."
+- The letter `x` represents the "by" in the width-by-height expression.
 - Don't add a space before or after the letter `x`.
-- Do include a space before the equal `=` sign.
-- If you prefer, you can specify the `Image-width` only, as in `Image-path =Image-widthx`. Notice that you still specify the letter `x`.
+- Include a space before the equal `=` sign.
+- To specify only the width, use `Image-path =Image-widthx`. You still need to include the letter `x`.
 
-The following example shows the Markdown syntax for an image where you specify a width of 500 and a height of 250:
+Here's an example of Markdown syntax for an image with a width of 500 and a height of 250:
 
 ```md
 ![Image alt text](./image.png =500x250)
@@ -603,15 +615,15 @@ The following example shows the Markdown syntax for an image where you specify a
 
 ## Checklist or task list
 
-Track the progress of your assignments and action items with lightweight task lists. You can add checklists or task lists in pull requests and wiki files. This feature is useful in the pull request description to track input from reviewers or in a wiki project page to track task status.
+Track the progress of your assignments and action items with lightweight task lists. Add checklists or task lists in pull requests and wiki files. This feature is useful in the pull request description to track input from reviewers or in a wiki project page to track task status.
 
 ### Example: Create checklist in Markdown
 
-You can create a checklist directly in the Markdown:
+Create a checklist directly in the Markdown:
 
 - Use empty square brackets `[<space>]` to create a new task.
 - Show a task as completed by including the letter `x` inside the square brackets `[x]`.
-- Precede each task with a hyphen and space `-<space>[<space>]` or a number and space `1.<space>[<space>]`. You can use any numeral.
+- Precede each task with a hyphen and space `-<space>[<space>]` or a number and space `1.<space>[<space>]`. Use any numeral.
 - Don't use a checklist inside a Markdown table.
 
 The following example creates a checklist with four items, where the first item is marked as completed:
@@ -627,41 +639,41 @@ Here's the published view of the checklist:
 
 :::image type="content" source="media/markdown-guidance/markdown-checklists.png" alt-text="Screenshot that shows a checklist where the first item is marked as completed."::: 
 
-After the checklist is published, users can mark an item as completed by selecting the item checkbox in the list. 
+After the checklist is published, users mark an item as completed by selecting the item checkbox in the list.
 
 ### Example: Apply task list Markdown to selected text
 
-You can also select existing text in the web portal and use actions on the Markdown toolbar to apply the checklist format. After you add a checklist or task in this manner, you can edit the list or task in the Markdown.
+Select existing text in the web portal and use actions on the Markdown toolbar to apply the checklist format. After you add a checklist or task in this manner, edit the list or task in the Markdown.
 
-The following image shows how to apply the **Task List** style on the Markdown toolbar to the selected text:
+The following image shows how to apply the **Task List** style on the Markdown toolbar to selected text:
 
 :::image type="content" source="media/markdown-guidance/checklist-pr-apply.png" alt-text="Screenshot that shows how to apply the Task List style on the Markdown toolbar to selected text in a pull request."::: 
 
-A task is marked as completed by checking the task box in the list:
+Mark a task as completed by checking the task box in the list:
 
 :::image type="content" source="media/markdown-guidance/checklist-pr-applied-check.png" alt-text="Screenshot that shows tasks marked as completed in the task list.":::
 
 ## Emoji reactions
 
-Add emoji reactions in pull requests and wiki files. You can use emoji reactions to add character and react to comments in the request. 
+Add emoji reactions in pull requests and wiki files. Use emoji reactions to add character and react to comments in the request.
 
-Enter the name of an emotion or expression like `smile` and enclose the text within colon `:` characters. In the published view of the Markdown, your input is converted to the corresponding [emoji graphic](https://github.com/ikatyang/emoji-cheat-sheet/). Markdown in Azure DevOps supports most GitHub emoji graphics. It doesn't support the [Custom Emoji](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#github-custom-emoji) like `:bowtie:`.
+Enter the name of an emotion or expression like `smile` and enclose the text within colon `:` characters. In the published view of the Markdown, your input converts to the corresponding [emoji graphic](https://github.com/ikatyang/emoji-cheat-sheet/). Markdown in Azure DevOps supports most GitHub emoji graphics. It doesn't support the [Custom Emoji](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#github-custom-emoji) like `:bowtie:`.
 
 ### Example: Add emoji reactions in a pull request
 
-The following example shows how to add emoji reactions with Markdown in a pull request comment:
+This example shows how to add emoji reactions with Markdown in a pull request comment:
 
 ```md
 The code review received :+1::+1: and the team is :smile:
 ```
 
-Here's the published view of the emoji reactions:
+This image shows the published view of the emoji reactions:
 
-:::image type="content" source="media/markdown-guidance/markdown-emoji-pull-request.png" alt-text="Screenshot that shows the published view of emojis in a pull request comment."::: 
+:::image type="content" source="media/markdown-guidance/markdown-emoji-pull-request.png" alt-text="Screenshot of the published view of emojis in a pull request comment."::: 
 
 ### Example: Escape emoji syntax in Markdown
 
-The following example shows how to escape emoji syntax with the backslash `\` character in Markdown:
+This example shows how to escape emoji syntax with the backslash `\` character in Markdown:
 
 ```md
 Markdown syntax for some emoji reactions:
@@ -670,27 +682,27 @@ Markdown syntax for some emoji reactions:
 - **Sad** \:cry:
 ```
 
-Here's the published view of the Markdown that shows the emoji syntax:
+This image shows the published view of the Markdown that shows the emoji syntax:
 
-:::image type="content" source="media/markdown-guidance/markdown-escape-emoji.png" alt-text="Screenshot that shows how to escape emoji syntax in Markdown by using the backslash '\' character."::: 
+:::image type="content" source="media/markdown-guidance/markdown-escape-emoji.png" alt-text="Screenshot of how to escape emoji syntax in Markdown by using the backslash '\' character."::: 
 
-In a pull request comment, you need two backslashes `\\` to escape the emoji syntax conversion.
+In a pull request comment, use two backslashes `\\` to escape the emoji syntax conversion.
 
 <a id="ignore"></a>
 
 ## Special characters as literal text
 
-Publish special characters as literal text by using the backslash `\` as an escape character in the Markdown. The backslash causes the publishing system to bypass any interpretation and conversion process for the special character. The special character is shown as literal text in the published view.
+Use the backslash `\` as an escape character in Markdown to publish special characters as literal text. The backslash tells the publishing system to show the special character as literal text and not interpret or convert it.
 
-You can use ignore and escape syntax in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
+Use ignore and escape syntax in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
 
 ### Example: Publish special characters
 
-The Markdown syntax \`Enclose text in backticks\` has the published view `Enclose text in backticks`. The publishing system applies the `inline code` format to the text within the backticks (\`) and it doesn't publish the backticks.
+The Markdown syntax \`Enclose text in backticks\` shows as `Enclose text in backticks` in the published view. The publishing system applies the `inline code` format to the text within the backticks (\`) and doesn't publish the backticks.
 
-If you prefix the backtick (\`) with a backslash (\\), the format of the text  within the backticks doesn't change and the backticks are published. This behavior is available for most special characters, including parentheses `()`, square brackets `[]]`, underscore `_`, hyphen `-`, hash mark `#` asterisk `*`, ``` backtick \` ```, and the backslash `\` itself.
+If you prefix the backtick (\`) with a backslash (\\), the text format within the backticks doesn't change, and the backticks are published. This behavior works for most special characters, including parentheses `()`, square brackets `[]`, underscore `_`, hyphen `-`, hash mark `#`, asterisk `*`, backtick \` , and the backslash `\` itself.
 
-The following Markdown uses the backslash `\` character to publish special characters as literal text:
+The following Markdown uses the backslash `\` character to show special characters as literal text:
 
 ```md
 \\\ Code comment
@@ -717,7 +729,7 @@ Show the **\_\_**underscores**\_\_**
 Show the __\*__asterisks__\*__ and don't change to *italics*
 
 > [!NOTE]
-> For some Markdown, you can enter the HTML code `&#92;` for the backslash rather than the character symbol `\`.
+> For some Markdown, enter the HTML code `&#92;` for the backslash instead of the character symbol `\`.
 
 <a name="attach"></a>
 
@@ -790,15 +802,15 @@ MOV (_.mov_), MP4 (_.mp4_)
 
 ### Attach images or files
 
-There are several ways you can attach an image or file in a pull request **Comment** box or on a wiki page in the **Edit** pane:
+You can attach an image or file in a pull request **Comment** box or on a wiki page in the **Edit** pane in several ways:
 
-- Drag and drop a file into the comment or onto the wiki page.
-- Paste an image on your clipboard into the comment or onto the wiki page. The image renders directly in the comment or on the wiki page.
-- Select the **Attach** (paperclip) icon in the comment or in the **Format** pane in your wiki page and choose the file to attach:
+- Drag a file into the comment or onto the wiki page.
+- Paste an image from your clipboard into the comment or onto the wiki page. The image shows directly in the comment or on the wiki page.
+- Select the **Attach** (paperclip) icon in the comment or in the **Format** pane in your wiki page, and choose the file to attach:
 
    :::image type="content" source="media/markdown-guidance/attach-files.png" alt-text="Screenshot that shows how to select the paperclip icon to attach a file onto a wiki page.":::   
 
-When you attach a nonimage file, the system creates a link to the file in the comment or on the wiki page. You can change the link display text within the square brackets, as in `[Updated link display text](LINK URL)`. When you publish the page or comment, the user can select the link to access the attachment.
+When you attach a nonimage file, the system creates a link to the file in the comment or on the wiki page. Change the link display text within the square brackets, as in `[Updated link display text](LINK URL)`. When you publish the page or comment, the user selects the link to access the attachment.
 
 <a id="math-notation"></a>
 
