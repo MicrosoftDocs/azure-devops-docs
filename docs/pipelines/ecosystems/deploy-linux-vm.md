@@ -19,9 +19,6 @@ In this quickstart, you learn how to set up an Azure DevOps pipeline for deploym
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An Azure DevOps organization and project. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
-  - [Administrator role](../agents/pools-queues.md#security) for the *deployment pool*, the set of target servers available to your Azure DevOps organization. For more information, see [Set deployment group security in Azure Pipelines](../policies/permissions.md#deployment-group-permissions).
-  - Project Administrator or Build Administrator [permissions](../policies/permissions.md) in the Azure DevOps project that contains your environment. For more information, see [Resource security](../security/resources.md).
-- Access and permission to download and run executable scripts on VMs you want to connect to the environment.
 
 #### [JavaScript](#tab/javascript)
 
@@ -47,9 +44,9 @@ Also, for Java Spring Boot and Spring Cloud based apps:
 
 ## Create an environment and add Linux VMs
 
-You can [add VMs as resources within environments](../process/environments-virtual-machines.md) and target them for multi-VM deployments. The environment's deployment history then provides traceability from each machine to the commit.
+You can [add VMs as resources within environments](../process/environments-virtual-machines.md) and target them for deployments. The environment's deployment history then provides traceability from each machine to the commit.
 
-In your Azure Pipelines project, create an environment and add the two Linux VMs by following the procedure at [Create an environment and add a VM](../process/environments-virtual-machines.md?tabs=linux#create-an-environment-and-add-a-vm).
+In your Azure Pipelines project, create an environment and add the VMs by following the procedure at [Create an environment and add a VM](../process/environments-virtual-machines.md?tabs=linux#create-an-environment-and-add-a-vm). Install the copied script on each VM you want to add to the environment.
 
 ## Define and run a CI build pipeline
 
