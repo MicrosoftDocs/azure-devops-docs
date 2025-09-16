@@ -22,7 +22,7 @@ Use the [**Azure CLI**](/cli/azure/install-azure-cli) to issue a [Microsoft Entr
 | Azure CLI     | Download and install the [Azure CLI](/cli/azure/install-azure-cli). |
 | Entra app | (If authenticating for a service principal) Create the Entra application and have the app client ID and client secret ready. |
 
-## Acquire an Entra token for yourself
+## Get an Entra token for yourself
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -43,7 +43,7 @@ Use the [**Azure CLI**](/cli/azure/install-azure-cli) to issue a [Microsoft Entr
    ```
 
 # [Azure PowerShell](#tab/azure-powershell)
-## Acquiring a token for a user
+## Get a token for a user
 
 1. Sign in to Azure PowerShell using the `Connect-AzAccount` command and follow the on-screen instructions.
 2. Set the correct subscription for the signed-in user with these PowerShell commands. Make sure the Azure subscription ID is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
@@ -60,7 +60,7 @@ Use the [**Azure CLI**](/cli/azure/install-azure-cli) to issue a [Microsoft Entr
 > [!NOTE]
 > [Get-AzAccessToken](/powershell/module/az.accounts/get-azaccesstoken) returns the token as a [SecureString](/dotnet/api/system.security.securestring). If you're unsure of how to use SecureString, refer to the documentation. To convert a SecureString to plain text to use in an Auth Header, leverage the .NET [[System.Runtime.InteropServices.Marshal]](/dotnet/api/system.runtime.interopservices.marshal) class to [convert](/dotnet/api/system.runtime.interopservices.marshal.securestringtobstr) the SecureString to a BSTR (binary string) pointer, then [read](/dotnet/api/system.runtime.interopservices.marshal.ptrtostringbstr) the pointer as a plain text string to a variable.
 
-## Acquire a token for a service principal
+## Get a token for a service principal
 
 1. Sign in to the Azure CLI as the service principal using the `az devops login` command.
 2. Follow the on-screen instructions and finish signing in.
