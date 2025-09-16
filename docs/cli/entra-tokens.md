@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 05/12/2025
+ms.date: 09/16/2025
 ---
 
 # Issue Entra tokens with Azure CLI
@@ -22,7 +22,7 @@ Use the [**Azure CLI**](/cli/azure/install-azure-cli) to issue a [Microsoft Entr
 | Azure CLI     | Download and install the [Azure CLI](/cli/azure/install-azure-cli). |
 | Entra app | (If authenticating for a service principal) Create the Entra application and have the app client ID and client secret ready. |
 
-## Acquiring an Entra token for yourself
+## Acquire an Entra token for yourself
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -58,10 +58,9 @@ Use the [**Azure CLI**](/cli/azure/install-azure-cli) to issue a [Microsoft Entr
    Get-AzAccessToken -ResourceUrl '499b84ac-1321-427f-aa17-267ca6975798'
    ```
 > [!NOTE]
-> [Get-AzAccessToken](/powershell/module/az.accounts/get-azaccesstoken) will return the token as a [SecureString](/dotnet/api/system.security.securestring).   If you are unsure of how to use SecureString please refer to the documentation.  If you need to convert a SecureString to plain text to use in an Auth Header, you can look into leveraging the .NET [[System.Runtime.InteropServices.Marshal]](/dotnet/api/system.runtime.interopservices.marshal) class to [convert](/dotnet/api/system.runtime.interopservices.marshal.securestringtobstr) the SecureString to a BSTR (binary string) pointer, then [read](/dotnet/api/system.runtime.interopservices.marshal.ptrtostringbstr) the pointer as a plain text string to a variable.
+> [Get-AzAccessToken](/powershell/module/az.accounts/get-azaccesstoken) returns the token as a [SecureString](/dotnet/api/system.security.securestring). If you're unsure of how to use SecureString, refer to the documentation. To convert a SecureString to plain text to use in an Auth Header, leverage the .NET [[System.Runtime.InteropServices.Marshal]](/dotnet/api/system.runtime.interopservices.marshal) class to [convert](/dotnet/api/system.runtime.interopservices.marshal.securestringtobstr) the SecureString to a BSTR (binary string) pointer, then [read](/dotnet/api/system.runtime.interopservices.marshal.ptrtostringbstr) the pointer as a plain text string to a variable.
 
-
-## Acquiring a token for a service principal
+## Acquire a token for a service principal
 
 1. Sign in to the Azure CLI as the service principal using the `az devops login` command.
 2. Follow the on-screen instructions and finish signing in.
