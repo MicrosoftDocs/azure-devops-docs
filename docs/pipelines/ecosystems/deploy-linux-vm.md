@@ -4,9 +4,9 @@ description: Use Azure Pipelines to deploy a Java or JavaScript web application 
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: freshness-fy22q2, linux-related-content
-ms.date: 09/15/2025
+ms.date: 09/16/2025
 monikerRange: 'azure-devops'
-#customer intent: As an Azure Pipelines user, I want to set up environments with Linux VMs so I can easily deploy my Java or JavaScript web apps with complete traceability.
+#customer intent: As an Azure Pipelines user, I want to set up environments with Linux VMs so I can easily deploy my Java or JavaScript web apps to prebuilt targets with complete traceability.
 ---
 
 # Deploy to Linux VMs in an environment
@@ -25,14 +25,14 @@ In this quickstart, you learn how to set up an Azure DevOps pipeline for deploym
 
 #### [JavaScript](#tab/javascript)
 
-For JavaScript or Node.js apps:
+Also, for JavaScript or Node.js apps:
 
 - [At least two Linux VMs set up with Nginx on Azure](/azure/virtual-machines/linux/quick-create-cli).
 - Your own fork of the GitHub sample code repo at [https://github.com/MicrosoftDocs/pipelines-javascript](https://github.com/MicrosoftDocs/pipelines-javascript). If you already have an app in GitHub that you want to deploy, you can use your code instead.
 
 #### [Java](#tab/java)
 
-For Java Spring Boot and Spring Cloud based apps:
+Also, for Java Spring Boot and Spring Cloud based apps:
 
 - [At least two Linux VMs created in Azure using the Java 13 on Ubuntu 20.04 template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004), which provides a fully supported OpenJDK-based runtime.
 - Your own fork of the GitHub sample code repo at [https://github.com/spring-projects/spring-petclinic](https://github.com/spring-projects/spring-petclinic). If you already have an app in GitHub that you want to deploy, you can use your code instead.
@@ -147,13 +147,16 @@ After your pipeline runs, view the build **Summary** page to verify that the job
 
 ## Deploy to the Linux VMs
 
-Add a [deployment job](../process/deployment-jobs.md) to your pipeline that runs on the Linux server.
+Add a `Deploy` stage to your pipeline that starts when the `Build` stage completes successfully. The [deployment job](../process/deployment-jobs.md) in this stage runs on the Linux servers.
 
-1. To add the deployment script, select the **More actions** icon at upper right on the **Summary** page, select **Edit pipeline**, and add the following `deployment` job to the end of your pipeline inside the `jobs` keyword. Replace `<environment name>` with the name of the environment you created.
+1. To add the deployment stage and job, select the **More actions** icon at upper right on the **Summary** page, select **Edit pipeline**, and add the following code to the end of your pipeline. Replace `<environment name>` with the name of the environment you created.
 
    Optionally, you can select specific VMs from the environment to receive the deployment by using the `tags` parameter and specifying the `<VM tag>` you defined for the VM.
 
    ```yaml
+   - stage: Deploy
+     displayName: Deploy to Environment
+     jobs:
      - deployment: VMDeploy
        displayName: Web deploy
        environment:
@@ -179,9 +182,12 @@ Add a [deployment job](../process/deployment-jobs.md) to your pipeline that runs
 
      The `maxParallel` parameter accounts for the number or percentage of VMs that must remain available at any time, excluding the VMs that are being deployed to, and also determines success and failure conditions during deployment.
 
-     The following code shows the complete deployment job for the Java pipeline, using the `rolling` deployment strategy.
+     The following code shows the complete deployment stage and job for the Java pipeline, using the `rolling` deployment strategy.
 
      ```yaml
+     - stage: Deploy
+       displayName: Deploy to Environment
+       jobs:
        - deployment: VMDeploy
          displayName: web
          environment:
@@ -204,7 +210,7 @@ Add a [deployment job](../process/deployment-jobs.md) to your pipeline that runs
                      script: |
                        # Modify deployment script based on the app type
                        echo "Starting deployment script run"
-                       sudo java -jar '$(Pipeline.Workspace)/drop/**/target/*.jar'
+                       sudo java -jar '$(Pipeline.Workspace)/drop/target/*.jar'
                routeTraffic:
                  steps:
                  - script: echo routing traffic
