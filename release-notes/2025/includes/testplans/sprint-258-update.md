@@ -12,4 +12,4 @@ Introducing the ability to associate automated tests written in Java/JUnit (Mave
 > [!div class="mx-imgBorder"]
 > [![Screenshot of test case associated to test.](../../media/258-testplans-01.png "Screenshot of test case associated to test")](../../media/258-testplans-01.png#lightbox)
 
-Upon completion of the association, you can run your tests within your pipelines using the new Azure Test Plan task. Additionally, you can run your tests on an ad-hoc basis through the [Test Plans](../../../../docs/test/run-automated-tests-from-test-hub.md) experience.
+Upon completion of the association, you can run your tests within your pipelines using the new Azure Test Plan task. Additionally, you can run your tests on an ad-hoc basis through the Test Plans experience.
