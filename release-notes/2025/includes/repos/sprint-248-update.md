@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Sparse checkout for Azure Repos
 
-The [git sparse-checkout](https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout/) command is now supported in the YAML checkout task, alongside the [partial clone filter](/azure/devops/pipelines/yaml-schema/steps-checkout.md), to improve repository checkout performance. You can use the properties `sparseCheckoutDirectories` and `sparseCheckoutPatterns`.
+The [git sparse-checkout](https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout/) command is now supported in the YAML checkout task, alongside the partial clone filter, to improve repository checkout performance. You can use the properties `sparseCheckoutDirectories` and `sparseCheckoutPatterns`.
 
 Setting `sparseCheckoutDirectories` enables cone mode, where the checkout process uses directory matching. Alternatively, you can set `sparseCheckoutPatterns` which triggers non-cone mode, allowing more complex pattern matching. 
 
