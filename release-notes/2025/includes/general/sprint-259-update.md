@@ -9,4 +9,4 @@ ms.topic: include
 
 GitHub Enterprise Cloud customers in [data residency regions](https://github.blog/engineering/engineering-principles/github-enterprise-cloud-with-data-residency/) now get Basic access in Azure DevOps. After installing the [Azure Boards app](https://github.com/marketplace/azure-boards), GitHub Enterprise users are detected automatically. 
 
-You can learn more about GitHub Enterprise licensing in our [documentation](/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops#github-enterprise).
+You can learn more about GitHub Enterprise licensing in our [documentation](/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops&preserve-view=true#github-enterprise).

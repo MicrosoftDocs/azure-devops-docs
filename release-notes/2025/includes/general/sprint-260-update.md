@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Only organizations with existing public projects can create new ones
 
-Starting this sprint, only organizations that already have the [Allow public projects policy](/azure/devops/organizations/projects/make-project-public?view=azure-devops#1-enable-anonymous-access-to-projects) enabled can continue using it. The policy does not change for existing customers. 
+Starting this sprint, only organizations that already have the [Allow public projects policy](/azure/devops/organizations/projects/make-project-public?view=azure-devops&preserve-view=true#1-enable-anonymous-access-to-projects) enabled can continue using it. The policy does not change for existing customers. 
 
 Microsoft recommends using [GitHub](https://github.com/) for all your public project needs.
 
