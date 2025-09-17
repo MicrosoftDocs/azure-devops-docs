@@ -101,9 +101,11 @@ Export your development or distribution signing certificate to a *.p12* file by 
 
 To export using the Keychain Access app on macOS or to generate a signing certificate on Windows, use the procedure described in [iOS Signing](https://github.com/phonegap/phonegap-docs/blob/master/docs/4-phonegap-build/3-signing/2-ios.html.md).
 
-- In Azure Pipelines **Libraries** > **Secure files**, select **+ Secure file** and upload the P12 file to the Azure Pipelines [secure files library](../../library/secure-files.md). During upload, the certificate is encrypted and securely stored.
+#### Upload the P12 file and add the password variable
 
-- In the **Variables** UI for the app's build pipeline, add a variable named *P12password* with the certificate password as the value. Select the **lock** icon to secure the password and obscure it in logs.
+In Azure Pipelines **Libraries** > **Secure files**, select **+ Secure file** and upload the P12 file to the Azure Pipelines [secure files library](../../library/secure-files.md). During upload, the certificate is encrypted and securely stored.
+
+In the **Variables** UI for the app's build pipeline, add a variable named *P12password* with the certificate password as the value. Select the **lock** icon to secure the password and obscure it in logs.
 
 ### Get the provisioning profile
 
