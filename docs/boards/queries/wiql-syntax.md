@@ -668,7 +668,7 @@ AI can help you:
 - Format and summarize results for dashboards or reports.
 
 > [!TIP]
-> For REST API details, see [Query By Wiql (REST API)](https://learn.microsoft.com/rest/api/azure/devops/wit/wiql/query-by-wiql?view=azure-devops-rest-6.1&tabs=HTTP).
+> For more information about REST API, see [Query By Wiql (REST API)](/rest/api/azure/devops/wit/wiql/query-by-wiql?view=azure-devops-rest-6.1&tabs=HTTP).
 
 **Example: Automate WIQL with Python and AI**
 
