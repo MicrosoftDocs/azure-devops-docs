@@ -98,7 +98,7 @@ If you don't have your own module, follow the instructions in this section to cr
 
 1. The type of credential object to use depends on which version of Azure DevOps you're on:
 
-    - On Azure DevOps Service (dev.azure.com), run the following command to create the credential object:
+    - On Azure DevOps Services (dev.azure.com), run the following command to create the credential object:
 
         ```powershell
         $credential = Get-Credential
