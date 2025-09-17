@@ -5,11 +5,12 @@ description: Learn about the reference syntax for the Work Item Query Language u
 ms.custom: boards-queries  
 ms.service: azure-devops-boards
 ms.topic: reference
+ai-usage: ai-assisted
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
 ms.author: chcomley  
 author: chcomley  
 monikerRange: '<= azure-devops'
-ms.date: 09/12/2025
+ms.date: 09/17/2025
 ---
 
 # Work Item Query Language (WIQL) syntax reference
@@ -62,7 +63,7 @@ ASOF '02-11-2025'
 | `ASOF`      | Specifies a historical query by indicating a date for when the filter is to be applied. For example, this query returns all user stories that were defined as *Active* on February 11, 2025. Specify the date according to the guidance provided in [Date and time pattern](#date-and-time-pattern).<br>`ASOF '02-11-2025'` |
 
 > [!NOTE]
-> WIQL queries made against Azure Boards must not exceed 32 K characters. The system doesn't allow you to create or run queries that exceed that length.
+> WIQL queries made against Azure Boards must not exceed 32-K characters. The system doesn't allow you to create or run queries that exceed that length.
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
@@ -248,7 +249,7 @@ The following table lists the macros or variables you can use within a WIQL quer
 | `@Me` | Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the `Field` column to `Activated By`, the `Operator` column to `=`, and the `Value` column to `@Me`. |
 | `@CurrentIteration` | Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context. |
 | `@Project` | Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the `Field` column to `Team Project`, the `Operator` column to `=`, and the `Value` column to `@Project`. |
-| `@StartOfDay`<br/>`@StartOfWeek`<br/>`@StartOfMonth`<br/>`@StartOfYear` | Use these macros to filter `DateTime` fields based on the start of the current day, week, month, year, or an offset to one of these values. For example, you can find all items created in the last 3 months if you set the `Field` column to `Created Date`, the `Operator` column to `>=`, and the `Value` column to `@StartOfMonth - 3`. |
+| `@StartOfDay`<br/>`@StartOfWeek`<br/>`@StartOfMonth`<br/>`@StartOfYear` | Use these macros to filter `DateTime` fields based on the start of the current day, week, month, year, or an offset to one of these values. For example, you can find all items created in the last three months if you set the `Field` column to `Created Date`, the `Operator` column to `>=`, and the `Value` column to `@StartOfMonth - 3`. |
 | `@Today` | Use this variable to search for work items that relate to the current date or to an earlier date. You can also modify the `@Today` variable by subtracting days. For example, you can find all items activated in the last week if you set the `Field` column to `Activated Date`, the `Operator` column to `>=`, and the `Value` column to `@Today - 7`. |
 | `[Any]` | Use this variable to search for work items that relate to any value that is defined for a particular field. |
 
@@ -265,7 +266,7 @@ WHERE
 
 ### `@today` macro
 
-You can use the `@today` macro with any `DateTime` field. This macro replaces midnight of the current date on the local computer that runs the query. You can also specify `@today+x` or `@today-y` using integer offsets for x days after `@today` and y days before `@today`, respectively. A query that uses the `@today` macro can return different result sets depending on the time zone in which it's run.
+You can use the `@today` macro with any `DateTime` field. This macro replaces midnight of the current date on the local computer that runs the query. You can also specify `@today+x` or `@today-y` using integer offsets for x days after `@today` and y days before `@today`, respectively. A query that uses the `@today` macro can return different result sets depending on the time zone in which it runs.
 
 The following examples assume that today is 1/3/2025.
 
@@ -625,20 +626,100 @@ WHERE
     )
 ```
 
-## Related content 
+## Use Copilot to write, fix, and optimize WIQL
 
-- [Query fields, operators, values, and variables](query-operators-variables.md)  
-- [Work item fields and attributes](../work-items/work-item-fields.md) 
-- [About managed queries](about-managed-queries.md)  
-- [Define a query](using-queries.md)      
+You can use an AI assistant (for example, GitHub Copilot or other copilots) to help create, correct, or optimize WIQL queries. Treat Copilot as a productivity aid—not an authoritative source—and always review and test any generated query before running it against production data.
 
-<!---
-https://msdn.microsoft.com/library/bb130306.aspx
--->
+Guidance and best practices:
 
-<!---
+- **Capabilities**: Copilot can translate plain-language requirements into WIQL, fix syntax errors (unmatched brackets, missing commas, incorrect keywords), convert SELECT lists between friendly and reference names, generate `ASOF` clauses or date literals, and suggest clause rewrites to narrow or broaden result sets.
+- **Validate**: Always validate generated WIQL in the Query Editor or a safe test project. Check macros (for example `@Me`, `@Today`) and locale-dependent date formats before use.
+- **Security**: Never paste secrets, access tokens, or any private connection strings into prompts. Remove or redact any sensitive values in examples you feed to Copilot.
+- **Performance**: Ask Copilot to minimize result payloads (return only needed fields), add appropriate WHERE filters, and avoid overly broad use of `IN` or unbounded `LIKE` searches. Remember the 32-K character limit for WIQL queries.
+- **Review edge cases**: Confirm behavior for historical (`ASOF`) queries, tree/link queries (`FROM workItemLinks`), and `WAS EVER`/`EVER` operators that scan revisions—these can be more complex and might need manual tuning.
 
-> [!WARNING]  
-> You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server occurs. For more information, see Performance Considerations.
+Example - Generate WIQL from plain English:
 
--->
+Prompt: "Return ID and Title for active Bugs assigned to @Me in project 'Fabrikam' and modified in the last 30 days. Sort by ChangedDate desc."
+
+Copilot produces:
+
+  ```WIQL
+  SELECT [System.Id], [System.Title]
+  FROM workitems
+  WHERE
+    [System.TeamProject] = 'Fabrikam'
+    AND [System.WorkItemType] = 'Bug'
+    AND [System.State] = 'Active'
+    AND [System.AssignedTo] = @Me
+    AND [System.ChangedDate] >= @Today - 30
+  ORDER BY [System.ChangedDate] DESC
+  ```
+
+### Automate WIQL queries with REST API and AI
+
+You can use AI assistants, like Copilot, to automate the two-step WIQL REST API process:
+
+1. Use the [Query By Wiql REST API](/rest/api/azure/devops/wit/wiql/query-by-wiql) to retrieve work item IDs matching your WIQL.
+2. Use the [Get Work Items API](/rest/api/azure/devops/wit/work-items/list) to fetch full details for those IDs.
+
+AI can help you:
+- Generate WIQL from plain language, then chain the two API calls in code (for example, Python, PowerShell, or JavaScript).
+- Format and summarize results for dashboards or reports.
+
+> [!TIP]
+> For more information about REST API, see [Query By Wiql (REST API)](/rest/api/azure/devops/wit/wiql/query-by-wiql?view=azure-devops-rest-6.1&tabs=HTTP&preserve-view=true).
+
+**Example: Automate WIQL with Python and AI**
+
+Suppose you want to list the titles and states of all active bugs in a project.
+
+**Prompt to Copilot:**  
+"Write Python code that uses the Azure DevOps REST API to list the titles and states of all active bugs in my project. Use WIQL to get the IDs, then fetch the details for those IDs."
+
+You can use Copilot to generate code like this:
+
+```python
+import requests
+
+# Azure DevOps organization and project info
+org = "your-org"
+project = "your-project"
+pat = "your-personal-access-token"
+headers = {"Authorization": f"Basic {pat}"}
+
+# Step 1: Run WIQL query to get work item IDs
+wiql = {
+    "query": """
+        SELECT [System.Id]
+        FROM workitems
+        WHERE [System.TeamProject] = '{project}'
+          AND [System.WorkItemType] = 'Bug'
+          AND [System.State] = 'Active'
+    """.format(project=project)
+}
+wiql_url = f"https://dev.azure.com/{org}/{project}/_apis/wit/wiql?api-version=6.1-preview.2"
+resp = requests.post(wiql_url, json=wiql, headers=headers)
+ids = [item["id"] for item in resp.json()["workItems"]]
+
+# Step 2: Get work item details
+if ids:
+    ids_str = ",".join(map(str, ids))
+    details_url = f"https://dev.azure.com/{org}/{project}/_apis/wit/workitemsbatch?api-version=6.1-preview.1"
+    body = {"ids": ids, "fields": ["System.Title", "System.State"]}
+    details_resp = requests.post(details_url, json=body, headers=headers)
+    for item in details_resp.json()["value"]:
+        print(f"{item['fields']['System.Title']} - {item['fields']['System.State']}")
+else:
+    print("No active bugs found.")
+```
+
+## Related content
+
+- [Query By Wiql (REST API)](/rest/api/azure/devops/wit/wiql/query-by-wiql?view=azure-devops-rest-6.1&tabs=HTTP&preserve-view=true)
+- [Get Work Items (REST API)](/rest/api/azure/devops/wit/work-items/list?view=azure-devops-rest-6.1&tabs=HTTP&preserve-view=true)
+- [Query quick reference](query-index-quick-ref.md)
+- [Work item fields and attributes](../work-items/work-item-fields.md)
+- [Link type reference](link-type-reference.md)
+- [Permissions and groups](../../organizations/security/permissions.md)
+- [Set your preferences](../../organizations/settings/set-your-preferences.md)
