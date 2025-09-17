@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps service updates and integration improvements
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 4/3/2025
 description: Azure DevOps service updates and integration improvements
 ---

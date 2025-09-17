@@ -1,7 +1,7 @@
 ---
 title: Improved security with new personal access token format
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 7/3/2024
 description: Improved security with new personal access token format
 ---
