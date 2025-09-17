@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Azure Artifacts upstream sources allow developers to store packages from various origins in a single feed, including packages published to the feed and those installed from public registries like *NuGet.org* or *npmjs.com*. Once upstream sources are enabled, any package installed from an upstream source is automatically saved to your feed
+Azure Artifacts upstream sources allow developers to store packages from various origins in a single feed, including packages published to the feed and those installed from public registries like *NuGet.org* or *npmjs.com*. Once upstream sources are enabled, any package installed from an upstream source is automatically saved to your feed.
 
 [!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
@@ -33,7 +33,7 @@ Enabling upstream sources offers several advantages for managing your product’
 
 To take full advantage of the benefits of upstream sources as a package consumer, follow these best practices:
 
-#### 1. Use a single feed in your configuration file
+#### Use a single feed in your configuration file
 
 In order for your feed to provide a [deterministic restore](#search-order), make sure that your configuration file (such as *nuget.config* or *npmrc*) references **only one feed** with upstream sources enabled. 
 
@@ -54,7 +54,7 @@ In order for your feed to provide a [deterministic restore](#search-order), make
     > [!NOTE]
     > NuGet compiles several [configuration files](/nuget/consume-packages/configuring-nuget-behavior) to determine the complete set of options to apply. Using `<clear />` ensures that all other package sources specified in higher-level configuration files are ignored.
 
-#### 2. Order your upstream sources intentionally
+#### Order your upstream sources intentionally
 
 If you're using only public registries like *NuGet.org* or *npmjs.com*, the order of upstream sources doesn’t affect behavior. Requests to the feed follow the sequence outlined in the [search order](#search-order) section.
 
@@ -67,7 +67,7 @@ If your organization follows this practice, place the upstream source containing
 
 To ensure your feed can be easily configured as an upstream source, follow these best practices:
 
-#### 1. Use the default view
+#### Use the default view
 
 All newly created feeds use the `@Local` view by default. This view includes:
 
@@ -76,7 +76,7 @@ All newly created feeds use the `@Local` view by default. This view includes:
 
 If you want to use other views such as a view for newly released package versions, you can promote your packages to the `@Release` view and then make that view available to your target consumers. See [Feed views](views.md) for more details.
 
-#### 2. Construct a package graph
+#### Construct a package graph
 
 To construct a package graph, simply connect to the feed's default view and install the package you want to share. Once a package is saved to the default view, users who want to consume it will be able to resolve the package graph and install the desired version. Packages from upstream sources are displayed based on the configured view for the corresponding upstream source. See [How upstreams construct the set of available packages](package-graph.md#how-upstreams-construct-the-set-of-available-packages) for more details.
 
@@ -112,7 +112,9 @@ Upstream sources offer a critical safeguard for your consumers and infrastructur
 
 ## Override packages from upstream sources
 
-When upstream sources are enabled in your feed, you **cannot publish a package version that already exists** in one of those upstream sources. For example, if the *NuGet.org* upstream is enabled, you won’t be able to publish *Newtonsoft.Json 10.0.3* to your feed, since that version is already available on *NuGet.org*. To override a package version from an upstream source:
+When upstream sources are enabled in your feed, you **cannot publish a package version that already exists** in one of those upstream sources. For example, if the *NuGet.org* upstream is enabled, you won’t be able to publish *Newtonsoft.Json 10.0.3* to your feed, since that version is already available on *NuGet.org*.
+
+To override a package version from an upstream source:
 
 1. Disable the relevant upstream source.
 
