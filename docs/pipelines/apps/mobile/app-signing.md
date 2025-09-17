@@ -119,7 +119,7 @@ In Azure Pipelines, upload the provisioning profile to the [secure files library
 
 You need at least one agent machine to run an Azure Pipelines build or release pipeline. You can use [Microsoft-hosted agents](../../agents/hosted.md) or set up [self-hosted agents](../../agents/agents.md#self-hosted-agents). For more information, see [Azure Pipelines agents](../../agents/agents.md).
 
-For Apple app signing and provisioning, you can either install the required certificate and profiles during each build, or preinstall the certificate and profiles on the macOS build agent.
+For Apple app signing and provisioning on hosted macOS agents, or if you don't want to allow access to the agent keychain, you can install required certificate and profiles during each build. If you use a self-hosted agent and trust the people and processes that can access the agent keychain, you can preinstall the certificate and profiles on the macOS build agent.
 
 #### Install the certificate and profile during each build
 
