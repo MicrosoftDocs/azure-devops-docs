@@ -75,6 +75,7 @@ On the pipeline **Variables** tab, add the following variables:
 - **key-password**: Password for the key associated with the specified alias. Be sure to select the **lock** icon.
 
 On the pipeline **Tasks** tab, select the Android signing task and reference the names of your newly created variables in the **Signing Options** as `$(<keystore-password>)`, `$(<key-alias>)`, and `$(<key-password>)`.
+
 ---
 
 Any build agent can now securely sign your app without any certificate management on the build machine itself.
