@@ -96,21 +96,26 @@ If you don't have your own module, follow the instructions in this section to cr
 
 ## Register a repository
 
-1. Run the following command to create a credential object. Replace the placeholders with the correct information.
+1. The type of credential object to use depends on which version of Azure DevOps you're on:
 
-    ```powershell
-    $username = "<USER_NAME>"
-    $patToken = "<PERSONAL_ACCESS_TOKEN>" | ConvertTo-SecureString -AsPlainText -Force
+    - On Azure DevOps Service (dev.azure.com), run the following command to create the credential object:
 
-    $credentials = New-Object System.Management.Automation.PSCredential($username, $patToken)
-    ```
+        ```powershell
+        $credential = Get-Credential
+        ```
+
+    - On Azure DevOps Server (on-premises), run the following command to create the credential object:
+
+        ```powershell
+        $credential = Read-Host -AsSecureString
+        ```
 
 1. Ensure that *SecretManagement* and *SecretStore* are installed, then run the following command to create a vault and add a secret:
 
     ```powershell
     Register-SecretVault -Name "MySecretVault" -ModuleName Microsoft.PowerShell.SecretStore -DefaultVault
 
-    Set-Secret -Name "MyCredential" -Secret $credentials -Vault "MySecretVault"
+    Set-Secret -Name "MyCredential" -Secret $credential -Vault "MySecretVault"
 
     $CredentialInfo = [Microsoft.PowerShell.PSResourceGet.UtilClasses.PSCredentialInfo]::new('MySecretVault', 'MyCredential')
     ```
