@@ -44,7 +44,7 @@ Add the [AndroidSigning@3](/azure/devops/pipelines/tasks/reference/android-signi
 
 - `<apkFiles>` is the required path and name of the APK files to sign. The default value is `**/*.apk`.
 - `<apksign>` must be `true`, which is the default.
-- `<keystore-file>` is the name of your uploaded keystore file in the secure files library.
+- `<apksignerKeystoreFile>` is the name of your uploaded keystore file in the secure files library.
 - `<apksignerKeystorePassword>` is the password to the unencrypted keystore file.
 - `<apksignerKeystoreAlias>` is the key alias for the signing certificate.
 - `<apksignerKeyPassword>` is the password for the key associated with the specified alias.
@@ -101,9 +101,9 @@ Export your development or distribution signing certificate to a *.p12* file by 
 
 To export using the Keychain Access app on macOS or to generate a signing certificate on Windows, use the procedure described in [iOS Signing](https://github.com/phonegap/phonegap-docs/blob/master/docs/4-phonegap-build/3-signing/2-ios.html.md).
 
-In Azure Pipelines **Libraries** > **Secure files**, select **+ Secure file** and upload the P12 file to the Azure Pipelines [secure files library](../../library/secure-files.md). During upload, the certificate is encrypted and securely stored.
+- In Azure Pipelines **Libraries** > **Secure files**, select **+ Secure file** and upload the P12 file to the Azure Pipelines [secure files library](../../library/secure-files.md). During upload, the certificate is encrypted and securely stored.
 
-In the **Variables** UI for the app's build pipeline, add a variable named *P12password* with the certificate password as the value. Select the **lock** icon to secure the password and obscure it in logs.
+- In the **Variables** UI for the app's build pipeline, add a variable named *P12password* with the certificate password as the value. Select the **lock** icon to secure the password and obscure it in logs.
 
 ### Get the provisioning profile
 
@@ -117,7 +117,7 @@ In Azure Pipelines, upload the provisioning profile to the [secure files library
 
 You need at least one agent machine to run an Azure Pipelines build or release pipeline. You can use [Microsoft-hosted agents](../../agents/hosted.md) or set up [self-hosted agents](../../agents/agents.md#self-hosted-agents). For more information, see [Azure Pipelines agents](../../agents/agents.md).
 
-To sign and provision an Apple app, you can either install the required certificate and profiles during each build, or preinstall the certificate and profiles on the macOS build agent.
+For Apple app signing and provisioning, you can either install the required certificate and profiles during each build, or preinstall the certificate and profiles on the macOS build agent.
 
 #### Install the certificate and profile during each build
 
@@ -188,7 +188,7 @@ To install the provisioning profile on the agent, run the following command from
 sudo cp <profile> ~/Library/MobileDevice/Provisioning Profiles/<UUID>.mobileprovision
 ```
 
-**Add signing and provisioning tasks that use the default keychain to the pipeline**
+**Add signing and provisioning tasks that use the default keychain**
 
 # [YAML](#tab/yaml)
 
