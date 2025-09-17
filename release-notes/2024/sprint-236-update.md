@@ -1,7 +1,7 @@
 ---
 title: Resource utilization notifications in Azure Pipelines agent
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 3/26/2024
 description: Resource utilization notifications in Azure Pipelines agent
 ---

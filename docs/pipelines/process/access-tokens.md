@@ -3,7 +3,6 @@ title: Understand job access tokens
 description: Access repositories, artifacts and other resources from pipelines
 ms.topic: reference
 ms.date: 06/30/2022
-monikerRange: '<= azure-devops'
 ---
 
 # Access repositories, artifacts, and other resources

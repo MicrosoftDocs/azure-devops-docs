@@ -1,6 +1,6 @@
 ---
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 1/17/2025
 ms.topic: include
 ---
@@ -11,6 +11,6 @@ The security overview in GitHub Advanced Security for Azure DevOps now provides 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of security overview.](../../media/248-ghazdo-01.png "Screenshot of security overview")](../../media/248-ghazdo-01.png#lightbox)
 
-For more information, see [Security overview for Advanced Security](/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops#viewing-security-insights). 
+For more information, see [Security overview for Advanced Security](/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops&preserve-view=true#viewing-security-insights). 
 
 
