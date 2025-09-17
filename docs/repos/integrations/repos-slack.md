@@ -1,5 +1,5 @@
 ---
-title: Azure Repos with Slack
+title: Use Azure Repos with Slack
 titleSuffix: Azure Repos
 description: Monitor Azure Repos from Slack.
 ms.service: azure-devops
@@ -9,13 +9,13 @@ ms.manager: bijuv
 ms.author: Divais
 author: Divais
 monikerRange: 'azure-devops'
-ms.date: 04/30/2024
+ms.date: 09/17/2025
 ms.custom:
   - cross-service
   - sfi-image-nochange
 ---
 
-# Azure Repos with Slack
+# Use Azure Repos with Slack
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -30,6 +30,7 @@ If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slac
 > [!NOTE]
 > * You can only link the Azure Repos app for Slack to a project hosted on Azure DevOps Services.
 > * Notifications aren't supported inside direct messages.
+> * If your Azure DevOps organization is connected to a Microsoft Entra ID tenant, you must sign in with a native member of that tenant. External users might see authentication errors when attempting to sign in through Slack.
 
 ## Add the Azure Repos app to your Slack workspace
 
@@ -73,6 +74,9 @@ If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slac
     Confirmation of sign-in displays within the chat.
 
     :::image type="content" source="media/integrations-slack/signed-in-confirmation.png" alt-text="Screenshot sign-in confirmation in chat.":::
+
+> [!NOTE]
+> If your Azure DevOps organization is connected to a Microsoft Entra ID tenant, you must sign in with a native member of that tenant. External users see an error if they attempt to sign in through Slack: `Configuration failed. Please make sure that the organization exists and that you have sufficient permissions.`
 
 To start monitoring all Git repositories in a project, use the following slash command inside a channel:
 
@@ -136,7 +140,7 @@ When a user subscribes to a repository using the `/azrepos subscribe` command, a
 The following steps demonstrate how to customize subscriptions.
 
 1.	Run the `/azrepos subscriptions` command.
-2.	In the list of subscriptions, if there's a subscription that is unwanted or must be modified (Example: creating noise in the channel), select the **Remove** button.
+2.	In the list of subscriptions, if there's a subscription that's unwanted or must be modified (Example: creating noise in the channel), select the **Remove** button.
 3.	Select the **Add subscription** button.
 4.	Select the required repository and the desired event.
 5.	Select the appropriate filters.
@@ -190,6 +194,7 @@ The following table lists all the `/azrepos commands` you can use in your Slack 
 | /azrepos signout	| Sign out from your Azure Repos organization |
 | /azrepos feedback	| Report a problem or suggest a feature |
 | /azrepos unsubscribe all [project url] | Remove all repositories (belonging to a project) and their associated subscriptions from a channel |
+| /azrepos help | Get help on the commands |
 
 ### Notifications in private channels
 
@@ -209,6 +214,14 @@ Select the `Sign in` button and you're redirected to a consent page like the one
 > ![Screenshot shows Consent to the requested app permissions.](media/troubleshooting/repos-consent-page-slack.png)
 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
+
+## Conditions and limitations
+
+- You can use the Azure Repos app for Slack only with Azure DevOps Services.
+- Notifications aren't supported inside direct messages.
+- To create subscriptions in a channel, you must be a project admin or a team admin as described in the Prerequisites section.
+- To use the app, **Third party application access via OAuth** must be enabled in Azure DevOps **Organization settings** > **Security** > **Policies**.
+- If your organization uses Microsoft Entra ID, external guests might be unable to sign in via Slack; use a native tenant account when authenticating.
 
 ## Related articles
 
