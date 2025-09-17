@@ -716,8 +716,8 @@ else:
 
 ## Related content
 
-- [Query By Wiql (REST API)](/rest/api/azure/devops/wit/wiql/query-by-wiql?view=azure-devops-rest-6.1&tabs=HTTP)
-- [Get Work Items (REST API)](/rest/api/azure/devops/wit/work-items/list?view=azure-devops-rest-6.1&tabs=HTTP)
+- [Query By Wiql (REST API)](/rest/api/azure/devops/wit/wiql/query-by-wiql?view=azure-devops-rest-6.1&tabs=HTTP&preserve-view=true)
+- [Get Work Items (REST API)](/rest/api/azure/devops/wit/work-items/list?view=azure-devops-rest-6.1&tabs=HTTP&preserve-view=true)
 - [Query quick reference](query-index-quick-ref.md)
 - [Work item fields and attributes](../work-items/work-item-fields.md)
 - [Link type reference](link-type-reference.md)
