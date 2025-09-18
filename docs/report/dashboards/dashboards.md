@@ -137,7 +137,7 @@ To edit widgets:
 Developers can create custom widgets and automate dashboard operations:
 
 - Create or extend widgets using the Dashboard widget extension model: [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md).
-- Manage dashboards programmatically with the [Dashboards REST API](https://learn.microsoft.com/rest/api/azure/devops/dashboard/dashboards?view=azure-devops-rest-7.2).
+- Manage dashboards programmatically with the Dashboards REST API.
 
 ## Troubleshooting
 

@@ -71,7 +71,7 @@ After you sign in, you'll be prompted to create a project. Projects can be publi
 3. (Optional) Expand **Advanced** to choose version control (Git or TFVC) and the work item process (Basic, Agile, Scrum, or CMMI).
 4. Select **Create project** — your project's board appears automatically.
 
-For more on project options, see [Create a project using Advanced settings](#advanced-settings) and [What is a public project?](../../organizations/projects/about-projects.md).
+For more on project options, see [Create a project using advanced settings](#advanced-project-options) and [What is a public project?](../../organizations/projects/about-projects.md).
 
 ## Invite teammates
 

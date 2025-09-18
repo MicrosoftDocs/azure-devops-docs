@@ -5,7 +5,7 @@ description: Learn how to use your board to plan and track work in Azure Boards.
 ms.custom: boards-kanban 
 ms.topic: quickstart
 ms.service: azure-devops-boards
-ai-usage: ai-assistance
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

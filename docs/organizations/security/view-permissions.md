@@ -50,7 +50,7 @@ Effective permissions are computed by evaluating assignments across:
 - Group memberships (built-in groups, custom groups, Microsoft Entra ID groups)
 - Explicit Deny assignments (take precedence)
 
-For a deep dive on permission resolution and inheritance, see [About permissions, Permission states](../organizations/security/about-permissions.md).
+For a deep dive on permission resolution and inheritance, see [About permissions, Permission states](about-permissions.md).
 
 ## Where to view permissions
 
@@ -82,9 +82,7 @@ The **Security**/**Permissions** page shows assigned groups and users and a perm
 
 ## Check effective permissions (command line / REST)
 
-If you prefer automation, use the REST API to read ACLs or the Azure DevOps CLI/PowerShell modules to script permission checks. Look up the security namespace for the resource and evaluate ACL bits to compute effective access. See:
-- [Security namespaces (REST API)](https://learn.microsoft.com/rest/api/azure/devops/security/)
-- Azure DevOps CLI and extension guidance (see the following related conten
+If you prefer automation, use the REST API to read ACLs or the Azure DevOps CLI/PowerShell modules to script permission checks. Look up the security namespace for the resource and evaluate ACL bits to compute effective access.
 
 ## Common scenarios and troubleshooting
 
@@ -112,7 +110,6 @@ Use the audit logs (Organization settings > Audit logs) to track changes to secu
 - [About permissions and security groups](about-permissions.md)
 - [Set object-level permissions](set-object-level-permissions.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)
-- [Security REST API reference](https://learn.microsoft.com/rest/api/azure/devops/security/)
 - [Manage users and groups](add-remove-manage-user-group-security-group.md)
 
 ## Next step
@@ -125,4 +122,3 @@ Use the audit logs (Organization settings > Audit logs) to track changes to secu
 - [Security groups, service accounts, and permissions reference](permissions.md)
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 - [Stakeholder access quick reference](stakeholder-access.md)
-- [Audit logs](../../organizations/settings/audit-logs.md)
