@@ -19,7 +19,7 @@ ms.date: 10/25/2024
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
-You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
+You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time simply by selecting each one.   
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ To add widgets to the dashboard, select :::image type="icon" source="media/icons
 
 The [widget catalog](widget-catalog.md) automatically opens. Add all the widgets that you want and drag their tiles into the sequence you want. 
 
-When you finish your additions, select  **Done editing** to exit dashboard editing. The widget catalog closes. You can then [configure the widgets](#configure) as needed.
+When you finish your additions, select  **Done editing** to exit dashboard editing. The widget catalog closes. You can then configure the widget as needed.
 
 > [!TIP]   
 > When you're in dashboard edit mode, you can remove, rearrange, and configure widgets, as well as add new widgets. Once you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.
