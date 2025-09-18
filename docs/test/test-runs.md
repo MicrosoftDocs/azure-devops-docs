@@ -166,18 +166,19 @@ The test case results section allows you to:
 
 To associate test results with bugs or other work items:
 
-1. Select the checkboxes for the test cases you want to link.
+1. Select the checkboxes for the test cases you want to link
+   
+:::image type="content" source="media/test-runs/marked-case-item-relation.png" alt-text="Screenshot showing test cases marked for linking to work items.":::
+
 2. Choose to create a new bug or link to an existing work item.
 3. Complete the linking process.
-
-:::image type="content" source="media/test-runs/marked-case-item-relation.png" alt-text="Screenshot showing test cases marked for linking to work items.":::
 
 ## Analyze detailed test results
 
 Select any test case to view detailed results including:
 
 - **Test result summary**: Overview of the test execution
-- **Linked work items**: Associated bugs and other work items  
+- **Linked work items**: Associated bugs and other work items; click the "+ Add" button of the section to relate anything needed!  
 - **Test steps**: Detailed step-by-step results with outcomes and comments
 - **Analysis information**: Post-execution analysis and next actions
 - **Attachments**: All test result-specific attachments

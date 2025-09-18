@@ -1,7 +1,7 @@
 ---
 title: Basic access included with GitHub Enterprise plus Boards/GitHub integration improvements
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 2/24/2025
 description: Basic access included with GitHub Enterprise plus Boards/GitHub integration improvements
 ---

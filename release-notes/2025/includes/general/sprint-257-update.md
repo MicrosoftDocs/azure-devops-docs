@@ -22,4 +22,4 @@ Azure DevOps has introduced two new Microsoft Entra OAuth scopes, vso.pats and v
 
 ### Request Access URL availability
 
-Azure DevOps administrators can disable the [**Request Access**](/azure/devops/organizations/accounts/disable-request-access-policy?view=azure-devops) policy and provide a URL for users to request access to an organization or project. This URL, previously available only to new users, is now also shown to existing users on the 404 page. To maintain confidentiality, the request access URL is displayed regardless of the project's existence.
+Azure DevOps administrators can disable the [**Request Access**](/azure/devops/organizations/accounts/disable-request-access-policy?view=azure-devops&preserve-view=true) policy and provide a URL for users to request access to an organization or project. This URL, previously available only to new users, is now also shown to existing users on the 404 page. To maintain confidentiality, the request access URL is displayed regardless of the project's existence.
