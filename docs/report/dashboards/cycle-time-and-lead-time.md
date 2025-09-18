@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 09/10/2025
+ms.date: 09/18/2025
 #customer intent: As a team member, I want to create Lead Time or Cycle Time widgets to show team progress on the dashboard.
 ---
 
@@ -18,6 +18,18 @@ ms.date: 09/10/2025
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 The lead time and cycle time widgets show how long it takes for work to flow through your development pipeline. Lead time is the total time from when a work item is created to when it's finished. Cycle time is the time it takes your team to finish work items after they start working on them.
+
+## Key definitions
+
+- **Cycle time calculation**: the period from the first transition of a work item into an Active/In Progress (or Resolved, where applicable) state category through to the final transition into a Completed/Closed state category. For reactivated work items, cycle time begins at the first time the item entered an Active (or Resolved) state category and ends at the final time it enters a Completed state category. Cycle time includes the entire active work periods, including any time after reactivation.
+- **Total cycle time**: the total elapsed time that includes both active work periods and any time spent in Closed/Completed state before a reactivation occurs (for example, if an item is closed and later re-opened, total cycle time reflects the entire elapsed duration across active and closed periods as defined by your metrics).
+
+Example scenario (illustrates reactivation):
+New → Active → Resolved → Closed → New → Active → Closed
+
+For this scenario:
+- Cycle time calculation starts at the first transition to Active and ends at the final transition to Closed.
+- Total cycle time includes the active periods and the closed period before reactivation.
 
 The following diagram shows how lead time and cycle time are different. Lead time is the time from *Work Item Creation* to when a work item enters a *Completed* state. Cycle time is the time from when a work item first enters an *In Progress or Resolved* state category to when it enters a *Completed* state category. For more information, see [About workflow states in backlogs and boards](../../boards/work-items/workflow-and-state-categories.md).
 
@@ -33,9 +45,7 @@ For more information, see [Cumulative flow, lead time, and cycle time guidance](
 
 [!INCLUDE [analytics-widgets-prerequisites](../includes/analytics-widgets-prerequisites.md)]
 
-##1. Make sure your team's board has defined [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.
-hat support your workflow processes.
-
+1. Make sure your team's board has defined [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.
 2. [Add the widget to your dashboard](./add-widget-to-dashboard.md). There are two widgets: [Cycle Time](widget-catalog.md#cycle-time-widget) and [Lead Time](widget-catalog.md#lead-time-widget). Select the one you want to display and configure.
 
 <a id="configure-widget"></a>
