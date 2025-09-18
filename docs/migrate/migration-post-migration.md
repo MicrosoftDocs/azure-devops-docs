@@ -8,7 +8,7 @@ ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2024
+ms.date: 09/18/2025
 ---
 
 # Complete post migration tasks
@@ -17,15 +17,23 @@ When migration completes, an email gets sent to the organization owner and at th
 
 :::image type="content" source="media/post-migration-stage-migration-highres.png" alt-text="Diagram of highlighted post-migration stage of the seven stages of migration.":::
 
-## Spot check 
+## Validate migrated content
 
-Immediately after the organization becomes available, take a small team and do spot checks on the organization. We recommend that this team consists of the project collection administrators. This check shouldn't be in-depth, but rather making sure that major pieces from your collection were brought over.
+Immediately after the organization becomes available, verify the migrated content and configuration to ensure all critical components successfully migrated. Your project collection administrators should lead this process and cover all major areas of your collection.
+We recommend validating the following:
 
-- **Source code:** Verify that your source code repositories migrated correctly. 
-- **Build history:** Ensure your build history made it over. 
-- **Area paths:** Confirm that all area paths are still present. 
+- **Source code**: Confirm that all repositories migrated correctly and are accessible.
+- **Build history**: Verify that the complete build history is intact and matches expectations.
+- **Area paths**: Ensure all area paths are present and correctly structured.
+- **Work items**: Review a representative sample of work items to confirm data integrity and relationships.
+- **Permissions & security**: Validate that user permissions, groups, and access controls are correctly configured.
+- **Service connections & pipelines**: Check that service connections and pipeline configurations are functional.
+- **Dashboards & widgets**: Confirm that dashboards render correctly and widgets display expected data.
 
-These quick checks help you catch any missing or incomplete data before opening the organization to your entire user base. 
+This validation helps identify any missing, incomplete, or misconfigured data before opening the organization to your broader user base, ensuring a smooth transition and minimizing disruption.
+
+> [!IMPORTANT]
+> Do not remove or destroy your on-premises data or decommission systems until you confirm that all expected data and functionality exist in the migrated organization. If you discover missing or incomplete data during validation, open a support case promptly rather than proceeding with on-premises deletion. For help, see [Contact Support](https://visualstudio.microsoft.com/support/).
 
 ## Rename organization (optional) 
 
@@ -69,11 +77,9 @@ Your organization includes five free users with [Basic](https://visualstudio.mic
 
 After your builds are running and license subscription is configured, we recommend that you open the organization to all users for validation. Then individual users can ensure that all the content is in place, has the right access level, and they can pull code.  
 
-Users of TFVC with local workspaces must remap their workspaces against the new organization, and Git users must reconfigure their remotes to pull code.  
+Users of TFVC with local workspaces must remap their workspaces against the new organization, and Git users must reconfigure their remotes to pull code.
 
-If anything is missing from the migrated organization, [contact Support](https://visualstudio.microsoft.com/support/).  
-
-## Next steps 
+## Next step  
 
 > [!div class="nextstepaction"]
 > [Get Azure DevOps Services extensions (optional)](https://marketplace.visualstudio.com/azuredevops?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide)
