@@ -46,14 +46,10 @@ To sign up for all Azure DevOps Services, see [Sign up, sign in to Azure DevOps]
 
 You can sign up using either a Microsoft account (personal or Microsoft Entra) or a GitHub account. Choose the option that matches how you plan to authenticate and invite users.
 
-### Microsoft account (personal or Microsoft Entra)
-
 [!INCLUDE [sign-up-msft-account](../../includes/sign-up-msft-account.md)]
 
 > [!NOTE]  
 > If your organization uses Microsoft Entra ID and your identity is managed by that tenant, sign in with your Microsoft Entra account. External (guest) accounts might not be allowed to create or administer an organization in that tenant—use a native tenant account if you see authentication errors.
-
-### GitHub account
 
 [!INCLUDE [sign-in-github-account](../../includes/sign-in-github-account.md)]
 

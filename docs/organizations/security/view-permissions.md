@@ -30,10 +30,6 @@ Quick steps:
 3. Use the Users/Groups or Effective Permissions UI to inspect effective access.
 4. If needed, examine group memberships and deny rules that override allows.
 
-What "effective permissions: mean:
-
-Effective permissions are the net access a user or group actually has on an object after Azure DevOps evaluates every relevant permission assignment. The system combines explicit Allow and Deny assignments across the object, parent scopes, and all group memberships; explicit Deny entries take priority. In practice, "effective permissions" show the final result (what someone can actually do), not every individual assignment that contributed to that result.
-
 > [!NOTE]
 > Permission management features and UI vary slightly between Azure DevOps Services (cloud) and on-premises Azure DevOps Server. The following guidance calls out UI differences where applicable.
 
@@ -49,6 +45,10 @@ Effective permissions are computed by evaluating assignments across:
 - Parent scopes (collection, organization, project)
 - Group memberships (built-in groups, custom groups, Microsoft Entra ID groups)
 - Explicit Deny assignments (take precedence)
+
+What "effective" permissions means:
+
+Effective permissions are the net access a user or group actually has on an object after Azure DevOps evaluates every relevant permission assignment. The system combines explicit Allow and Deny assignments across the object, parent scopes, and all group memberships; explicit Deny entries take priority. In practice, "effective permissions" show the final result (what someone can actually do), not every individual assignment that contributed to that result.
 
 For a deep dive on permission resolution and inheritance, see [About permissions, Permission states](about-permissions.md).
 

@@ -15,7 +15,7 @@ ms.date: 09/18/2025
 # customer intent: As a team member, I want to learn how to create, edit, and delete Azure DevOps dashboards so that I can view and share information about my projects and teams, such as progress and status updates.
 ---
 
-# Quickstart: Add, rename, and delete dashboards in Azure DevOps
+# Quickstart: Add, rename, and delete dashboards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
