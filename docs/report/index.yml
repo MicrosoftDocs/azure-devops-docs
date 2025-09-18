@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 09/03/2025
+  ms.date: 09/05/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -36,7 +36,23 @@ landingContent:
           - text: Widget catalog
             url: ./dashboards/widget-catalog.md
 
-  # Card 2 - Monitor Work Progress (High Value)
+  # Card 2 - Security (Foundational)
+  - title: Secure your analytics
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Secure your analytics & reporting
+            url: ./secure-your-analytics-reporting.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set dashboard permissions
+            url: ./dashboards/dashboard-permissions.md
+          - text: Manage access levels
+            url: ../organizations/security/change-access-levels.md
+          - text: Configure project permissions
+            url: ../organizations/security/change-project-level-permissions.md
+
+  # Card 3 - Monitor Work Progress (High Value)
   - title: Monitor work progress
     linkLists:
       - linkListType: tutorial
@@ -56,7 +72,7 @@ landingContent:
           - text: Create work item charts
             url: ./dashboards/charts.md
 
-  # Card 3 - Power BI Integration (Popular)
+  # Card 4 - Power BI Integration (Popular)
   - title: Create Power BI reports
     linkLists:
       - linkListType: get-started
@@ -78,7 +94,7 @@ landingContent:
           - text: Sample reports and scenarios
             url: ./powerbi/sample-odata-overview.md
 
-  # Card 4 - Pipeline Insights (DevOps Focus)
+  # Card 5 - Pipeline Insights (DevOps Focus)
   - title: Track pipeline performance
     linkLists:
       - linkListType: concept
@@ -94,7 +110,7 @@ landingContent:
           - text: Add pipeline widgets to dashboards
             url: ../pipelines/reports/pipeline-widgets.md?toc=/azure/devops/report/toc.json
 
-  # Card 5 - Test Insights (Quality Focus)
+  # Card 6 - Test Insights (Quality Focus)
   - title: Monitor test quality
     linkLists:
       - linkListType: tutorial
@@ -110,7 +126,7 @@ landingContent:
           - text: Trace requirements to tests
             url: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/report/toc.json
 
-  # Card 6 - Advanced Scenarios (For Power Users)
+  # Card 7 - Advanced Scenarios (For Power Users)
   - title: Advanced analytics and customization
     linkLists:
       - linkListType: overview

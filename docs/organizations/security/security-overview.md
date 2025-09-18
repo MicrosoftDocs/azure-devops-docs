@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps
 description: An overview of actions to ensure the security of your Azure DevOps environment, data, and users.
 ms.topic: overview
 ms.subservice: azure-devops-security
+ms.custom: horz-security
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

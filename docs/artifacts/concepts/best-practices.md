@@ -63,7 +63,7 @@ This section outlines best practices for consuming packages with Azure Artifacts
 
 - **Ensure the order of sources reflects your desired package resolution strategy**:
 
-    The feed checks upstream sources sequentially and will return the package from the first source that contains it. Be mindful of the order to ensure your feed resolves packages from the correct source. See [Order your upstream sources intentionally](upstream-sources.md#2-order-your-upstream-sources-intentionally) and [Search order](upstream-sources.md#search-order) for more details.
+    The feed checks upstream sources sequentially and will return the package from the first source that contains it. Be mindful of the order to ensure your feed resolves packages from the correct source. See [Order your upstream sources intentionally](upstream-sources.md#order-your-upstream-sources-intentionally) and [Search order](upstream-sources.md#search-order) for more details.
 
 - **Add external sources using the feed locator**:
 

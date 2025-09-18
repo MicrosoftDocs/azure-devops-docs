@@ -1,7 +1,7 @@
 ---
 title: Security and Pipeline workflows
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 1/17/2024
 description: Security and Pipeline workflows
 ---
