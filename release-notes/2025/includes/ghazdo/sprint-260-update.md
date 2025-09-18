@@ -7,7 +7,7 @@ ms.topic: include
 
 ### New secret patterns added to Advanced Security 
 
-New patterns have been added to Advanced Security's Secret Protection for both user alerts and push protection. View the updated list of supported secret patterns at [Secret scanning patterns](/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops&preserve-view=true#partner-provider-patterns). 
+New patterns have been added to Advanced Security's Secret Protection for both user alerts and push protection. View the updated list of supported secret patterns at [Secret scanning patterns](/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops#partner-provider-patterns). 
 
 ### Periodic repository re-scans performed for secret scanning 
 
@@ -25,4 +25,4 @@ This address [Developer Community feedback](https://developercommunity.visualstu
 
 Validity checking is a feature to determine if an exposed secret is active or inactive, helping you prioritize your remediation efforts. No opt-in is needed; once the feature is available in your organization, any patterns that support validity checking will automatically attempt a validity check. In an alert that supports validity checking, you can also manually re-validate the secret. 
 
-See all supported patterns with validity checking at [Secret scanning patterns](/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops&preserve-view=true#partner-provider-patterns). 
+See all supported patterns with validity checking at [Secret scanning patterns](/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops#partner-provider-patterns). 

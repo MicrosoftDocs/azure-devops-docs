@@ -34,26 +34,8 @@ landingContent:
             url: ./get-started/plan-track-work.md
           - text: Get started as a Stakeholder
             url: ../organizations/security/get-started-stakeholder.md
-
-  # Card 2 - Security (foundational for all implementations)
-  - title: Secure & govern
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Secure your Azure Boards
-            url: ./secure-your-azure-boards.md
-          - text: About permissions and access levels
-            url: ./get-started/permissions-access-boards.md
-      - linkListType: how-to-guide
-        links:
-          - text: Set work tracking permissions
-            url: ../organizations/security/set-permissions-access-work-tracking.md
-          - text: Add external users
-            url: ../organizations/accounts/add-external-user.md
-          - text: Manage conditional access
-            url: ../organizations/accounts/change-application-access-policies.md
   
-  # Card 3 - Core concepts (foundation knowledge)
+  # Card 2 - Core concepts (foundation knowledge)
   - title: Understand processes & workflows
     linkLists:
       - linkListType: concept
@@ -69,7 +51,7 @@ landingContent:
           - text: About Backlogs & Agile project management
             url: ./backlogs/backlogs-overview.md
 
-  # Card 4 - Plan your work (logical next step after understanding)
+  # Card 3 - Plan your work (logical next step after understanding)
   - title: Plan & organize your work
     linkLists:
       - linkListType: quickstart
@@ -87,7 +69,7 @@ landingContent:
           - text: Add tags to work items
             url: ./queries/add-tags-to-work-items.md
 
-  # Card 5 - Choose your methodology (Kanban vs Scrum)
+  # Card 4 - Choose your methodology (Kanban vs Scrum)
   - title: Choose your methodology
     linkLists:
       - linkListType: tutorial
@@ -107,7 +89,7 @@ landingContent:
           - text: Set sprint capacity
             url: ./sprints/set-capacity.md
 
-  # Card 6 - Track & manage work (daily operations)
+  # Card 5 - Track & manage work (daily operations)
   - title: Track & manage work items
     linkLists:
       - linkListType: tutorial
@@ -127,7 +109,7 @@ landingContent:
           - text: Bulk modify work items (Excel)
             url: ./backlogs/office/bulk-add-modify-work-items-excel.md
 
-  # Card 7 - Monitor progress (reporting & analytics)
+  # Card 6 - Monitor progress (reporting & analytics)
   - title: Monitor progress & performance
     linkLists:
       - linkListType: tutorial
@@ -143,7 +125,7 @@ landingContent:
           - text: Query quick reference
             url: ./queries/query-index-quick-ref.md
 
-  # Card 8 - Collaborate & integrate (team features)
+  # Card 7 - Collaborate & integrate (team features)
   - title: Collaborate & integrate
     linkLists:
       - linkListType: quickstart
@@ -157,7 +139,7 @@ landingContent:
           - text: Azure Boards with Microsoft Teams
             url: ./integrations/boards-teams.md
 
-  # Card 9 - Scale for larger organizations
+  # Card 8 - Scale for larger organizations
   - title: Scale for enterprise
     linkLists:
       - linkListType: tutorial
@@ -173,7 +155,7 @@ landingContent:
           - text: About teams & Agile tools
             url: ../organizations/settings/about-teams-and-settings.md
 
-  # Card 10 - Customize & configure (advanced users)
+  # Card 9 - Customize & configure (advanced users)
   - title: Customize & configure
     linkLists:
       - linkListType: tutorial
@@ -191,7 +173,7 @@ landingContent:
           - text: Configure & customize Boards 
             url: configure-customize.md
 
-  # Card 11 - Reference & troubleshooting (support materials)
+  # Card 10 - Reference & troubleshooting (support materials)
   - title: Reference & troubleshooting
     linkLists:
       - linkListType: reference

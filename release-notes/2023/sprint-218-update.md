@@ -1,7 +1,7 @@
 ---
 title: Improved dashboard management and pipeline security
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 3/8/2023
 description: With this update, we have enable the capability to view when a dashboard was last visited or modified providing you with view to determine which ones can be removed.
 ---

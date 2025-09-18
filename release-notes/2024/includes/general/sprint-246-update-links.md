@@ -1,6 +1,6 @@
 ---
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.service: azure-devops
 ms.date: 10/16/2024
 ms.topic: include

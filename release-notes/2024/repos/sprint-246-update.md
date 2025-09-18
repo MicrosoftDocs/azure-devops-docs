@@ -2,7 +2,7 @@
 title: Azure DevOps Release Notes - Azure Repos Sprint 246 Update
 description: See the Sprint 246 feature updates for Azure Repos, including next steps.
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 10/15/2024
 ---
 

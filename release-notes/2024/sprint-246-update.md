@@ -1,7 +1,7 @@
 ---
 title: Enhanced security and workflow efficiency
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 10/16/2024
 description: Enhanced security and workflow efficiency
 ---

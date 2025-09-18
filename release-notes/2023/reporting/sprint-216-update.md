@@ -2,7 +2,7 @@
 title: Azure DevOps Release Notes - Reporting Sprint 216 Update
 description: See the Sprint 216 feature updates for Reporting, including next steps.
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 2/7/2023
 ---
 

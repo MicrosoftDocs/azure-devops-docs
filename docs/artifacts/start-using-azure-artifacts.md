@@ -108,8 +108,6 @@ You can track artifact storage consumption through the UI available in your orga
 
 - [Organization-level storage](./artifact-storage.md#organization-level-storage): Provides an overview of total storage usage including consumption details by project and artifact type.
 
-If you have questions about your artifact storage or consumption, see the [Storage FAQs](artifact-storage.md#faqs) for more details.
-
 ::: moniker-end
 
 ## Related content

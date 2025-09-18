@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 09/05/2025
+  ms.date: 06/16/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -69,15 +69,12 @@ landingContent:
             url: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json  
           - text: Connect your organization to Microsoft Entra ID
             url: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/security/toc.json  
-  
-  - title: Secure Azure Boards
+  - title: Manage billing
     linkLists:
       - linkListType: overview
         links:
-          - text: Secure your Azure Boards
-            url: ../../boards/secure-your-azure-boards.md
-          - text: Default permissions and access to Azure Boards
-            url: ../../boards/get-started/permissions-access-boards.md
+          - text: Billing overview
+            url: ../billing/overview.md
       - linkListType: how-to-guide
         links:
           - text: Buy Basic access
@@ -86,38 +83,6 @@ landingContent:
             url: ../billing/set-up-billing-for-your-organization-vs.md#set-up-billing
           - text: Try Azure Test Plans for free
             url: ../billing/try-additional-features-vs.md
-  - title: Secure Azure Boards
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Secure your Azure Boards
-            url: ../../boards/secure-your-azure-boards.md
-          - text: Default permissions and access to Azure Boards
-            url: ../../boards/get-started/permissions-access-boards.md
-      - linkListType: how-to-guide
-        links:
-          - text: Set work tracking & plan permissions
-            url: set-permissions-access-work-tracking.md
-          - text: Add members to a team administrator role
-            url: ../settings/add-team-administrator.md
-          - text: Set query permissions
-            url: ../../boards/queries/set-query-permissions.md
-
-  - title: Secure analytics & reporting
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Secure your analytics & reporting
-            url: ../../report/secure-your-analytics-reporting.md
-      - linkListType: how-to-guide
-        links:
-          - text: Set dashboard permissions
-            url: ../../report/dashboards/dashboard-permissions.md
-          - text: Create Analytics views
-            url: ../../report/analytics/analytics-views-create.md
-          - text: Configure Power BI connections
-            url: ../../report/powerbi/data-connector-connect.md
-
   - title: Secure organizations and projects  
     linkLists:
       - linkListType: overview
@@ -150,4 +115,4 @@ landingContent:
             url: permissions-lookup-guide.md
           - text: Permissions and groups reference
             url: permissions.md
-
+ 

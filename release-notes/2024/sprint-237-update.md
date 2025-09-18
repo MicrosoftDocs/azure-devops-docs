@@ -1,7 +1,7 @@
 ---
 title: Improvements to secret scanning capabilities and New Board Hub on by default
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 4/10/2024
 description: Improvements to secret scanning capabilities and New Board Hub on by default
 ---

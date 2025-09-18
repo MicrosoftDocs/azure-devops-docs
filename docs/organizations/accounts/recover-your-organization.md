@@ -55,6 +55,6 @@ After you delete an organization, it's disabled but available for 28 days. If yo
 * [Delete an organization](delete-your-organization.md)
 * [Create a new organization](create-organization.md)
 * [Change organization owner](change-organization-ownership.md)
-* [Change your organization geography](change-organization-location.md)
+* [Change organization data region](change-organization-location.md)
 * [Learn about FAQs for configuring and customizing your organization](faq-configure-customize-organization.yml)
 * [Assign an owner to an orphaned organization](resolve-orphaned-organization.md)

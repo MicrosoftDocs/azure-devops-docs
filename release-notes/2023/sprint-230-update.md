@@ -1,7 +1,7 @@
 ---
 title:  GitHub Integration - Improved AB# validation
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 11/16/2023
 description: GitHub Integration - Improved AB# validation
 ---

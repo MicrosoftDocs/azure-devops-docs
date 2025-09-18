@@ -1,7 +1,7 @@
 ---
 title:  New usability features for Boards, Pipelines and Reporting  
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 4/20/2023
 description: New usability features for Boards, Pipelines and Reporting
 ---

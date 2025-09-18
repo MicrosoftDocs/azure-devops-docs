@@ -28,4 +28,4 @@ Then enter the URL of your GitHub Enterprise Cloud organization.
 > [!div class="mx-imgBorder"]
 > ![Image to show GitHub Enterprise with data residency.](../../media/260-boards-03.png "Image to show GitHub Enterprise with data residency.")
 
-After your `https://organization.ghe.com` url is validated, the experience is same as it has always been, and you can select your GitHub repositories.
+After your https://organization.ghe.com url is validated, the experience is same as it has always been, and you can select your GitHub repositories.

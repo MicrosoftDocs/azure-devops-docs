@@ -1,7 +1,7 @@
 ---
 title:  Increased Azure Pipelines limits for Azure Resource Manager (ARM) integration.
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 8/2/2023
 ms.custom: devx-track-arm-template
 description: Increased Azure Pipelines limits for Azure Resource Manager (ARM) integration.

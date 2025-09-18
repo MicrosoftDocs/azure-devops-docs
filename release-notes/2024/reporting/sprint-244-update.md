@@ -2,7 +2,7 @@
 title: Azure DevOps Release Notes - Reporting Sprint 244 Update
 description: See the Sprint 244 feature updates for Reporting, including next steps.
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 9/4/2024
 ---
 

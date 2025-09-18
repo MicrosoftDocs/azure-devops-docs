@@ -1,7 +1,7 @@
 ---
 title: Expanded security scanning and GitHub pull request integration with Azure Boards
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 4/23/2025
 description: Expanded security scanning and GitHub pull request integration with Azure Boards
 ---

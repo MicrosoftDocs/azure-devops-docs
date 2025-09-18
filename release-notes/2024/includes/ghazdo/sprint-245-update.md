@@ -1,6 +1,6 @@
 ---
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 9/26/2024
 ms.topic: include
 ---
@@ -23,7 +23,7 @@ Additionally, the Security Overview updates to reflect default branch changes, a
 
 You can now upload results from your third-party scanning tool to show in the Advanced Security code scanning tab. 
 
-Using a scanning tool that publishes a SARIF file to the `$(Agent.TempDirectory)/.advsec` directory, conforms to the SARIF 2.1 standard, and runs the AdvancedSecurity-Publish@1 after the task will upload results to the code scanning tab.
+Using a scanning tool that publishes a SARIF file to the `$(Agent.TempDirectory)/.advsec` directory, conforms to the SARIF 2.1 standard, and runs the [AdvancedSecurity-Publish@1](/azure/devops/pipelines/tasks/reference/advanced-security-publish-v1?view=azure-pipelines) after the task will upload results to the code scanning tab.
 
 > [!NOTE]
 > The file path associated with a result in the SARIF file must be accessible to the `AdvancedSecurity-Publish@1` task running in the build agent.

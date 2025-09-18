@@ -1,7 +1,7 @@
 ---
 title:  Select a geography when creating a new Azure DevOps organization
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 1/11/2024
 description: Select a geography when creating a new Azure DevOps organization
 ---

@@ -24,8 +24,6 @@ You can use dashboards to offer guidance and keep your team in sync. Configurabl
 
 Dashboards also offer easy-to-read, real-time information that's easy to access. At a glance, you can use a dashboard to make informed decisions without having to drill down into other parts of your project.
 
-[!INCLUDE [enable-mcp-server](../../boards/includes/enable-mcp-server.md)]
-
 ## Prerequisites
 
 [!INCLUDE [Dashboard prerequisites](../includes/dashboard-prerequisites.md)]

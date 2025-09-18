@@ -1,6 +1,6 @@
 ---
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 3/20/2025
 ms.topic: include
 ---

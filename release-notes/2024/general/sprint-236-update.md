@@ -2,7 +2,7 @@
 title: Azure DevOps release notes - Azure DevOps Sprint 236 update
 description: See the Sprint 236 feature updates for Azure DevOps, including next steps.
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 3/26/2024
 ---
 

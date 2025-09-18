@@ -61,7 +61,7 @@ from Visual Studio Test Explorer.
 
 3. Create your tests. For example, the following code creates a default class named **MySeleniumTests**
    that performs a simple test on the Bing.com website. Replace the contents of the **TheBingSearchTest** function
-   with the Selenium code
+   with the [Selenium code](https://www.seleniumhq.org/docs/)
    required to test your web app or website. Change the **browser** assignment in the **SetupTest**
    function to the browser you want to use for the test.
 

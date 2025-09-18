@@ -261,7 +261,7 @@ az login --identity
 az account get-access-token --resource https://app.vssps.visualstudio.com/
 ```
 
-For more information, see [Acquire Microsoft Entra tokens](../../../cli/entra-tokens.md#get-a-token-for-a-service-principal).
+For more information, see [Acquire Microsoft Entra tokens](../../../cli/entra-tokens.md#acquiring-a-token-for-a-service-principal).
 
 ### Step 5: Use tokens with Azure DevOps
 

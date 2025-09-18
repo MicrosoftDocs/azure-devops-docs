@@ -2,6 +2,7 @@
 title: Newly generated OAuth client secrets will be shown only at time of creation 
 author: gloridelmorales
 ms.author: glmorale
+ms.technology: devops-release-notes
 ms.date: 09/04/2025
 description: Newly generated OAuth client secrets will be shown only at time of creation 
 ---

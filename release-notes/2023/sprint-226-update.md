@@ -1,7 +1,7 @@
 ---
 title:  Enhanced security management 
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 8/23/2023
 description: Enhanced security management 
 ---

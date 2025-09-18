@@ -42,8 +42,6 @@ Sign up for Azure Boards with either a Microsoft account or GitHub account.
 
 ---
 
-[!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)]
-
 <a id="change-settings"></a>
 
 ### Optional: Change your organization or project settings
@@ -95,10 +93,10 @@ For more information about changing your project settings, see the following art
 	> [!div class="mx-imgBorder"]  
 	> ![Create password dialog for Azure DevOps with valid email address.](media/acquisition/create-account-2.png)
   
-1. Choose the geography and specify your birthday to complete your account registration and then choose **Next**.  
+1. Choose the region and specify your birthday to complete your account registration and then choose **Next**.  
  
 	> [!div class="mx-imgBorder"]  
-	> ![Create account dialog specify geography and birthday.](media/acquisition/create-account-3.png) 
+	> ![Create account dialog specify region and birthday.](media/acquisition/create-account-3.png) 
 
 1. Enter the code sent to your email address to verify your account and then choose **Next**.   
 
@@ -146,10 +144,10 @@ If you have a Microsoft account or Microsoft Entra organizational account, follo
 	> [!div class="mx-imgBorder"]  
 	> ![Get started with Azure DevOps, Select Continue.](media/acquisition/get-started-1.png)
 
-1. An organization is suggested based on the account you used to sign in. You can modify the account name. Choose the geography where you want your projects hosted. Then enter the characters you see into the text box, and then choose **Continue**.
+1. An organization is suggested based on the account you used to sign in. You can modify the account name. Choose the region where you want your projects hosted. Then enter the characters you see into the text box, and then choose **Continue**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Get started with Azure DevOps, choose organization name and geography.](media/acquisition/get-started-2.png)
+	> ![Get started with Azure DevOps, choose organization name and region.](media/acquisition/get-started-2.png)
 	 
 	An organization is created based on the name entered in the **Name your Azure DevOps organization** box.  
 

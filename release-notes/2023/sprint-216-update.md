@@ -1,7 +1,7 @@
 ---
 title: Improved pipeline security and administrator control
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 2/7/2023
 description: With this update, we improved pipelines security resources and administrator control.
 ---

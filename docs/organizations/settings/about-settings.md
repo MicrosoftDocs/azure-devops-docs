@@ -575,11 +575,11 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       **Overview**
    :::column-end:::
    :::column span="2":::
-      - Add and manage organization information like the [owner](../accounts/change-organization-ownership.md), [time zone](../settings/timezone-settings-usage.md), [privacy policy URL](../accounts/add-privacy-policy-url.md), and more
+      - Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md)- [Recover](../accounts/recover-your-organization.md), [Find or change your organization location](../accounts/change-organization-location.md)
       - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)
    :::column-end:::
    :::column span="2":::
-      From the **Overview** page, you can manage the time zone, owner, and other settings that apply to all projects.
+      From the **Overview** page, you can manage the time zone, owner, region, and other settings that apply to all projects.
    :::column-end:::
 :::row-end:::
 ---

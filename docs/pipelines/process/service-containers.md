@@ -3,40 +3,30 @@ title: Service containers
 description: Learn about running containerized services in Azure Pipelines single or multiple container jobs or noncontainer jobs.
 ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
 ms.topic: conceptual
-ms.date: 09/12/2025
+ms.date: 07/15/2024
 monikerRange: azure-devops
-#customer intent: As an Azure Pipelines user, I want to understand service containers so I can use them to automatically manage services that my pipelines require.
-
 ---
 
 # Service containers
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This article describes using *service containers* in Azure Pipelines. If your pipeline requires the support of one or more services, you might need to create, connect to, and clean up the services per [job](phases.md). For example, your pipeline might run integration tests that require access to a newly created database and memory cache for each job in the pipeline.
+If your pipeline requires the support of one or more services, you might need to create, connect to, and clean up the services per job. For example, your pipeline might run integration tests that require access to a newly created database and memory cache for each job in the pipeline.
 
-A service container provides a simple and portable way to run services in your pipeline. The service container is accessible only to the job that requires it.
+A *container* provides a simple and portable way to run a service that your pipeline depends on. A *service container* lets you automatically create, network, and manage the lifecycle of a containerized service. Each service container is accessible only to the [job](phases.md) that requires it. Service containers work with any kind of job, but are most commonly used with [container jobs](container-phases.md).
 
-Service containers let you automatically create, network, and manage the lifecycles of services that your pipelines depend on. Service containers work with any kind of job, but are most commonly used with [container jobs](container-phases.md).
+## Requirements
+
+- Service containers must define a `CMD` or `ENTRYPOINT`. The pipeline runs `docker run` for the provided container without any arguments.
+
+- Azure Pipelines can run Linux or [Windows containers](/virtualization/windowscontainers/about/). You can use either the hosted Ubuntu container pool for Linux containers or the hosted Windows pool for Windows containers. The hosted macOS pool doesn't support running containers.
 
 >[!NOTE]
->Classic pipelines don't support service containers.
-
-## Conditions and limitations
-
-- Service containers must define a `CMD` or `ENTRYPOINT`. The pipeline runs `docker run` with no arguments for the provided container.
-
-- Azure Pipelines can run Linux or [Windows](/virtualization/windowscontainers/about/) containers. You use the hosted Ubuntu pool for Linux containers or the hosted Windows pool for Windows containers. The hosted macOS pool doesn't support running containers.
-
-- Service containers share the same container resources as container jobs, so they can use the same [startup options](container-phases.md?tabs=yaml#options).
-
-- If a service container specifies a [HEALTHCHECK](https://docs.docker.com/engine/reference/builder/#healthcheck), the agent can optionally wait until the container is healthy before running the job.
+>Service containers aren't supported in Classic pipelines.
 
 ## Single container job
 
-The following example YAML pipeline defines a single container job that uses a service container. The pipeline fetches the `buildpack-deps` and `nginx` containers from [Docker Hub](https://hub.docker.com) and then starts all containers. The containers are networked so they can reach each other by their `services` names.
-
-From inside the job container, the `nginx` host name resolves to the correct services by using Docker networking. All containers on the network automatically expose all ports to each other.
+The following example YAML pipeline definition shows a single container job.
 
 ```yaml
 resources:
@@ -59,13 +49,13 @@ steps:
   displayName: Show that nginx is running
 ```
 
+The preceding pipeline fetches the `nginx` and `buildpack-deps` containers from [Docker Hub](https://hub.docker.com) and then starts the containers. The containers are networked together so that they can reach each other by their `services` name.
+
+From inside this job container, the `nginx` host name resolves to the correct services by using Docker networking. All containers on the network automatically expose all ports to each other.
+
 ## Single noncontainer job
 
-You can also use service containers in noncontainer jobs. The pipeline starts the latest containers, but because the job doesn't run in a container, there's no automatic name resolution. Instead, you reach services by using `localhost`. The following example pipeline explicitly specifies the `8080:80` port for `nginx`.
-
-An alternative approach is to assign a random port dynamically at runtime. To allow the job to access the port, the pipeline creates a [variable](variables.md) of the form `agent.services.<serviceName>.ports.<port>`. You can access the dynamic port by using this [environment variable](variables.md#environment-variables) in a Bash script.
-
-In the following pipeline, `redis` gets a random available port on the host, and the `agent.services.redis.ports.6379` variable contains the port number.
+You can also use service containers without a job container, as in the following example.
 
 ```yaml
 resources:
@@ -93,6 +83,12 @@ steps:
     curl localhost:8080
     echo $AGENT_SERVICES_REDIS_PORTS_6379
 ```
+
+The preceding pipeline starts the latest `nginx` containers. Since the job isn't running in a container, there's no automatic name resolution. Instead, you can reach services by using `localhost`. The example explicitly provides the `8080:80` port.
+
+An alternative approach is to let a random port get assigned dynamically at runtime. You can then access these dynamic ports by using [variables](variables.md). These variables take the form: `agent.services.<serviceName>.ports.<port>`. In a Bash script, you can access variables by using the process environment.
+
+In the preceding example, `redis` is assigned a random available port on the host. The `agent.services.redis.ports.6379` variable contains the port number.
 
 ## Multiple jobs
 
@@ -128,10 +124,6 @@ steps:
 
 ## Ports
 
-Jobs that run directly on the host require `ports` to access the service container. Specifying `ports` isn't required if your job runs in a container, because containers on the same Docker network automatically expose all ports to each other by default.
-
-A port takes the form `<hostPort>:<containerPort>` or just `<containerPort>` with an optional `/<protocol>` at the end. For example, `6379/tcp` exposes `tcp` over port `6379`, bound to a random port on the host machine.
-
 When you invoke a container resource or an inline container, you can specify an array of `ports` to expose on the container, as in the following example.
 
 ```yaml
@@ -150,13 +142,15 @@ services:
     - 6379/tcp
 ```
 
+Specifying `ports` isn't required if your job is running in a container, because containers on the same Docker network automatically expose all ports to each other by default.
+
+If your job is running on the host, `ports` are required to access the service. A port takes the form `<hostPort>:<containerPort>` or just `<containerPort>` with an optional `/<protocol>` at the end. For example, `6379/tcp` exposes `tcp` over port `6379`, bound to a random port on the host machine.
+
 For ports bound to a random port on the host machine, the pipeline creates a variable of the form `agent.services.<serviceName>.ports.<port>` so that the job can access the port. For example, `agent.services.redis.ports.6379` resolves to the randomly assigned port on the host machine.
 
 ## Volumes
 
-Volumes are useful for sharing data between services or for persisting data between multiple runs of a job. You specify volume mounts as an array of `volumes`.
-
-Each volume takes the form `<source>:<destinationPath>`, where `<source>` is either a named volume or an absolute path on the host, and `<destinationPath>` is an absolute path in the container. Volumes can be named Docker volumes, anonymous Docker volumes, or bind mounts on the host.
+Volumes are useful for sharing data between services or for persisting data between multiple runs of a job. You specify volume mounts as an array of `volumes` of the form `<source>:<destinationPath>`, where `<source>` can be a named volume or an absolute path on the host machine, and `<destinationPath>` is an absolute path in the container. Volumes can be named Docker volumes, anonymous Docker volumes, or bind mounts on the host.
 
 ```yaml
 services:
@@ -169,20 +163,28 @@ services:
 ```
 
 >[!NOTE]
->Microsoft-hosted pools don't persist volumes between jobs, because the host machine is cleaned up after each job.
+>If you use Microsoft-hosted pools, your volumes aren't persisted between jobs, because the host machine is cleaned up after each job is completed.
+
+## Startup options
+
+Service containers share the same container resources as container jobs. This means that you can use the same [startup options](container-phases.md?tabs=yaml#options).
+
+## Health check
+
+If any service container specifies a [HEALTHCHECK](https://docs.docker.com/engine/reference/builder/#healthcheck), the agent can optionally wait until the container is healthy before running the job.
 
 ## Multiple containers with services example
 
-The following example pipeline has a Django Python web container connected to PostgreSQL and MySQL database containers.
+The following example has a Django Python web container connected to PostgreSQL and MySQL database containers.
 
 - The PostgreSQL database is the primary database, and its container is named `db`.
-- The `db` container uses volume `/data/db:/var/lib/postgresql/data`, and passes three database variables to the container via `env`.
-- The `mysql` container uses port `3306:3306`, and also passes database variables via `env`.
+- The `db` container uses volume `/data/db:/var/lib/postgresql/data`, and there are three database variables passed to the container via `env`.
+- The `mysql` container uses port `3306:3306`, and there are also database variables passed via `env`.
 - The `web` container is open with port `8000`.
 
-In the steps, `pip` installs dependencies, and then Django tests run.
+In the steps, `pip` installs dependencies and then Django tests run.
 
-To set up a working example, you need a [Django site set up with two databases](https://docs.djangoproject.com/en/5.2/topics/db/multi-db/). The example assumes your *manage.py* file and your Django project are in the root directory. If not, you might need to update the `/__w/1/s/` path in `/__w/1/s/manage.py test`.
+To set up a working example, you need a [Django site set up with two databases](https://docs.djangoproject.com/en/3.2/topics/db/multi-db/). The example assumes your *manage.py* file is in the root directory and your Django project is also within that directory. If not, you might need to update the `/__w/1/s/` path in `/__w/1/s/manage.py test`.
 
 ```yaml
 resources:

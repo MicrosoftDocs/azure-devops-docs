@@ -272,7 +272,7 @@ These investments include:
 
 Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs). Features to support new scenarios will be added to Managed DevOps Pools and not Virtual Machine Scale Set pools. Managed DevOps Pools is generally available, so you can migrate your Virtual Machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible.
 
-You will find the detailed roadmap [here](/azure/devops/managed-devops-pools/features-timeline?view=azure-devops&preserve-view=true).
+You will find the detailed roadmap [here](/azure/devops/managed-devops-pools/features-timeline?view=azure-devops)
 
 ### YAML and release pipelines feature parity
 

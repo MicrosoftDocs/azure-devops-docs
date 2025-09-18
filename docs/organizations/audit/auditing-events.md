@@ -189,8 +189,8 @@ The following tables describe the type of events (or actions) that are available
 
 | Action | Description |
 |--------|-------------|
-| `Organization.Create` | Organization {OrganizationName} was created in {PreferredGeography} geography. |
-| `Organization.LinkToAAD` | Organization {OrganizationName} was linked to Microsoft Entra tenant {EntraTenant}. |
+| `Organization.Create` | Organization {OrganizationName} was created in {PreferredRegion} region. |
+| `Organization.LinkToAAD` | Organization {OrganizationName} was linked to Microsoft Entra tenant {AADTenant}. |
 | `Organization.UnlinkFromAAD` | Organization {OrganizationName} was unlinked from Microsoft Entra tenant. |
 | `Organization.Update.Delete` | Organization {OrganizationName} was deleted. |
 | `Organization.Update.ForceUpdateOwner` | Organization owner was changed from {OldOwnerName} to {NewOwnerName}. Reason specified by actor "{ForceUpdateReason}". |

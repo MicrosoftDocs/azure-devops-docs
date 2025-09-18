@@ -1,7 +1,7 @@
 ---
 title: Setting to disable creation of TFVC repositories
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 6/14/2024
 description: Setting to disable creation of TFVC repositories
 ---

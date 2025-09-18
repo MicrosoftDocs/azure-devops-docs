@@ -1,6 +1,6 @@
 ---
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.service: azure-devops
 ms.date: 2/12/2025
 ms.topic: include
@@ -14,7 +14,7 @@ The **Generate Git Credentials** button has been removed from the **Clone Reposi
 > [![Screenshot of deactivated generate git credentials button.](../../media/251-general-01.png "Screenshot of deactivated generate git credentials button")](../../media/251-general-01.png#lightbox)
 
 
-To enhance security and streamline authentication, consider using Entra tokens for ad-hoc Git clone operations in Repos and Wiki. Documentation is available to help you configure authentication via the  [command line](/azure/devops/repos/git/auth-overview?view=azure-devops&tabs=Windows&preserve-view=true) or within the [Git Credential Manager](/azure/devops/repos/git/set-up-credential-managers?view=azure-devop&preserve-view=trues) (GCM).
+To enhance security and streamline authentication, consider using Entra tokens for ad-hoc Git clone operations in Repos and Wiki. Documentation is available to help you configure authentication via the  [command line](/azure/devops/repos/git/auth-overview?view=azure-devops&tabs=Windows) or within the [Git Credential Manager](/azure/devops/repos/git/set-up-credential-managers?view=azure-devops) (GCM).
 
 While PATs remain available for Git operations, they must now be manually created with the appropriate `vso.code` scope from the Personal Access Token page. Ensure that PATs are only active as long as needed and revoked when no longer in use. As a best practice, store PATs securely in a secret management service such as Azure Key Vault (AKV) and rotate them regularly.
 

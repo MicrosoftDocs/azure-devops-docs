@@ -1,7 +1,7 @@
 ---
 title: Pull request widget for multiple repos is now in private preview
 author: ckanyika
-ms.author: glmorale
+ms.author: ckanyika
 ms.date: 2/17/2023
 description: With this update, we are excited to announce that you can select multiple repositories in the pull request widget.
 ---
