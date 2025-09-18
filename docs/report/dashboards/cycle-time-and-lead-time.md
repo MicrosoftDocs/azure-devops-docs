@@ -21,15 +21,18 @@ The lead time and cycle time widgets show how long it takes for work to flow thr
 
 ## Key definitions
 
-- **Cycle time calculation**: the period from the first transition of a work item into an Active/In Progress (or Resolved, where applicable) state category through to the final transition into a Completed/Closed state category. For reactivated work items, cycle time begins at the first time the item entered an Active (or Resolved) state category and ends at the final time it enters a Completed state category. Cycle time includes the entire active work periods, including any time after reactivation.
-- **Total cycle time**: the total elapsed time that includes both active work periods and any time spent in Closed/Completed state before a reactivation occurs (for example, if an item is closed and later re-opened, total cycle time reflects the entire elapsed duration across active and closed periods as defined by your metrics).
+- **Lead time** — The total elapsed time from when a work item is created (or first enters the backlog) until it reaches a Completed / Closed state. Lead time measures end-to-end delivery, and is useful for estimating delivery time and tracking SLAs.
 
-Example scenario (illustrates reactivation):
+- **Cycle time calculation** — The period from the first transition of a work item into an Active / In Progress (or Resolved, where applicable) state category through to the final transition into a Completed / Closed state category. For reactivated work items, cycle time starts at the first time the work item entered an Active (or Resolved) state category and ends at the final time it enters a Completed state category. Cycle time includes the entire active work periods (all time the item spends in active states), including any active time after reactivation.
+
+- **Total cycle time** — The total elapsed time that includes both active work periods and any time spent in Closed/Completed state before a reactivation occurs. In other words, total cycle time reflects the full elapsed duration across active and closed periods when a work item is closed and later re-opened.
+
+Example scenario (reactivation):
 New → Active → Resolved → Closed → New → Active → Closed
 
-For this scenario:
-- Cycle time calculation starts at the first transition to Active and ends at the final transition to Closed.
-- Total cycle time includes the active periods and the closed period before reactivation.
+In this scenario:
+- Cycle time calculation starts at the first transition to Active and ends at the final transition to Closed (it aggregates the active spans).
+- Total cycle time includes the active spans and also the Closed period between them (so it measures the full elapsed duration across both active and closed states).
 
 The following diagram shows how lead time and cycle time are different. Lead time is the time from *Work Item Creation* to when a work item enters a *Completed* state. Cycle time is the time from when a work item first enters an *In Progress or Resolved* state category to when it enters a *Completed* state category. For more information, see [About workflow states in backlogs and boards](../../boards/work-items/workflow-and-state-categories.md).
 
