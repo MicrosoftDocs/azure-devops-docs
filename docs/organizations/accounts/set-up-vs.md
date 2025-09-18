@@ -65,8 +65,6 @@ You can also use Azure DevOps Services with any IDE or code editor, like the fol
 
 6. If you're a new Visual Studio user, you can change your settings anytime in Visual Studio options.
 
-    :::image type="content" source="media/set-up-vs/hellonewprofile.png" alt-text="Screenshot shows option to change settings.":::
-
     These changes get saved with your profile and your settings roam with you wherever you sign in. 
 
 7. To view your new organization, sign in to ```https://dev.azure.com/{Your_Organization}```.
