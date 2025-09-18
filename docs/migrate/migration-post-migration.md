@@ -33,7 +33,7 @@ We recommend validating the following:
 This validation helps identify any missing, incomplete, or misconfigured data before opening the organization to your broader user base, ensuring a smooth transition and minimizing disruption.
 
 > [!IMPORTANT]
-> Do not remove or destroy your on-premises data or decommission systems until you confirm that all expected data and functionality exist in the migrated organization. If you discover missing or incomplete data during validation, open a support case promptly rather than proceeding with on-premises deletion. For help, see [Contact Support](https://visualstudio.microsoft.com/support/).
+> Do not remove or destroy your on-premises data or decommission systems until you confirm that all expected data and functionality exist in the migrated organization.
 
 ## Rename organization (optional) 
 
