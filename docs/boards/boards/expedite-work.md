@@ -74,7 +74,7 @@ Identify the swimlanes that support your tracking needs and add them to your boa
 ::: moniker range="azure-devops"
 
 1. [Open your board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project administrators can customize the board.
-2. Choose :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: **Configure board settings**.
+2. Choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: **Configure board settings**.
 3. Choose **Swimlanes**, choose **Add swimlane**, and enter the swimlane name (for example, *Expedite*). Use the more actions icon :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to insert a lane above or below another lane.
 
    [!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
@@ -129,7 +129,7 @@ Limits for swimlane rules:
 
 Do the following steps to set up swimlane rules for your board.
 
-1. From your board, choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to **Configure board settings**.
+1. From your board, choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: **Configure board settings**.
 2. Select **Swimlanes**, select the **swimlane** or **[+ Add swimlane](#add-or-remove-a-swimlane)**, and then select **+ Add criteria**.
 
    :::image type="content" source="media/expedite/add-swimlane-criteria.png" alt-text="Screenshot showing add swimlane rule criteria.":::
