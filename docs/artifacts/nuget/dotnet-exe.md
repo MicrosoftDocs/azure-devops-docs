@@ -35,7 +35,7 @@ If you already have a feed, proceed to the next step. Otherwise, follow the inst
 
 ## Connect to a feed
 
-Before you can publish packages to your feed, you must authenticate with Azure Artifacts, follow the instructions below to setup your project and authenticate with your feed:
+Before you can publish packages to your feed, you must authenticate with Azure Artifacts. Follow the instructions below to set up your project and authenticate with your feed:
 
 #### [Project scoped feed (Recommended)](#tab/projectscoped)
 
