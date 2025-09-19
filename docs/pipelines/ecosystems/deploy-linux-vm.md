@@ -31,7 +31,7 @@ Also, for JavaScript or Node.js apps:
 
 Also, for Java Spring Boot and Spring Cloud based apps:
 
-- At least two VMs running Linux Ubuntu with the Java 17+ SDK installed. You can install the Java SDK by running the following commands on the VM:
+- At least two Linux VMs with the Java 17+ SDK installed. You can install the Java SDK by running the following commands on the VM:
 
   ```bash
   sudo apt update
@@ -39,7 +39,8 @@ Also, for Java Spring Boot and Spring Cloud based apps:
   sudo update-alternatives --config java
   sudo update-alternatives --config javac
   java -version 
-```
+  ```
+
 - Your own fork of the GitHub sample code repo at [https://github.com/spring-projects/spring-petclinic](https://github.com/spring-projects/spring-petclinic). If you already have an app in GitHub that you want to deploy, you can use your code instead.
 
   >[!NOTE]
@@ -221,7 +222,7 @@ Add a `Deploy` stage to your pipeline that starts when the `Build` stage complet
        - deployment: VMDeploy
          displayName: web
          environment:
-           name: Java
+           name: <environment name>
            resourceType: VirtualMachine
          strategy:
              rolling:
