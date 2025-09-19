@@ -15,5 +15,5 @@ We introduced new keyboard shortcuts that allows navigate through pull request d
 - Collapse selected thread - `ctrl+alt+c`
 - Expand selected thread - `ctrl+alt+e`
 
-More information about available keyboard shortcuts n Azure DevOps can be found in official documentation: [Keyboard shortcuts for web portal and Team Explorer](https://learn.microsoft.com/azure/devops/project/navigation/keyboard-shortcuts?view=azure-devops).
+More information about available keyboard shortcuts n Azure DevOps can be found in official documentation: [Keyboard shortcuts for web portal and Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=azure-devops&preserve-view=true).
 

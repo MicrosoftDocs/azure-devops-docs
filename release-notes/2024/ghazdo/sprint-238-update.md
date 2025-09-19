@@ -2,7 +2,7 @@
 title: Azure DevOps release notes - GitHub Advanced Security for Azure DevOps 238 Update
 description: See the Sprint 238 feature updates for GitHub Advanced Security for Azure DevOps, including next steps.
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 5/2/2024
 ---
 

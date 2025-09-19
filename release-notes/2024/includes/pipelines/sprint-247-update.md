@@ -1,6 +1,6 @@
 ---
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 11/13/2024
 ms.topic: include
 ms.custom: sfi-image-nochange
