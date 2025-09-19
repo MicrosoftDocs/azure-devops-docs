@@ -32,8 +32,6 @@ There are two types of copy functions you can use:
 - **Copy a single work item:** To duplicate a single work item, use the "Create copy of a work item" feature.
 - **Copy a list of work items:** To copy a list of work items, multi-select a list of work items and use the "Copy as HTML" or "Copy to clipboard" feature.
 
-[!INCLUDE [temp](../includes/image-differences.md)]
-
 ::: moniker-end
 
 ## Prerequisites
