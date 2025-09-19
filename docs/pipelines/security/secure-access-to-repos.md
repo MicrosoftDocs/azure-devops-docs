@@ -1,38 +1,38 @@
 ---
-title: Secure access to Azure repositories from pipelines
-description: Secure access to Azure repositories from pipelines
+title: Access repositories from pipelines
+description: Learn how to provide secure access to Git repositories from Azure Pipelines.
 ms.author: sandrica
 ms.date: 06/10/2024
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Secure access to Azure Repos from pipelines
+# Securely access repositories from pipelines
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Your repositories are vital for your business success as they house the code powering your operations. Access to repositories should be carefully controlled. This article guides you on enhancing [Build pipeline](#build-pipelines) and [Classic release pipeline](#classic-release-pipelines) security when accessing Azure Repos to mitigate the risk of unauthorized access.
-
-To ensure secure access to Azure repositories, enable the following toggles: 
-- **Limit job authorization scope to current project for non-release pipelines**
-- **Limit job authorization scope to current project for release pipelines**
-- **Protect access to repositories in YAML pipelines**
+To protect the code that runs their operations, organizations must carefully control access to their source code repositories. This article describes how to allow pipelines to securely access Git source code repositories to mitigate the risk of unauthorized access.
 
 [!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
 ## Basic process
 
-The following steps to secure your pipelines are similar across all pipelines:
+A Project Collection Administrator can take the following steps to ensure secure access to Git repositories from Azure Pipelines.
 
-1. Identify the Azure Repos repositories that your pipeline requires access to within the same organization but across different projects.<br>
-  Do so by inspecting your pipeline or enable **Limit job authorization scope to current project for (non-)release pipelines** and note which repositories your pipeline fails to check out. Submodule repositories might not show up in the first failed run.
-2. [Grant the pipeline's build identity access to that project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection) for each project that contains a repository your pipeline needs to access.
-3. [Grant the pipeline's build identity **Read** access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection) for each  repository your pipeline checks out.
-4. [Grant the pipeline's build identity **Read** access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection) for each repository that is used as a submodule by a repository your pipeline checks out and is in the same project.
-5. Enable **Limit job authorization scope to current project for non-release pipelines**, **Limit job authorization scope to current project for release pipelines**, and **Protect access to repositories in YAML pipelines**.
+1. Inspect the pipeline to identify any repositories the pipeline must access that are in different projects in the same organization. If you enable **Limit job authorization scope to current project for (non-)release pipelines**, pipelines can only check out code from the current project's repository.
+
+1. Grant the pipeline's build identity access to any required projects outside the current project. For more information, see [Configure permissions for a project to access another project in the same project collection](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
+
+1. Grant the pipeline's build identity **Read** access to each repository the pipeline checks out. Also grant the pipeline **Read** access to each repository used as a submodule by a repository your pipeline checks out and is in the same project. For more information, see [Configure permissions to access another repo in the same project collection](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
+
+1. Enable the following toggles in **Organization Settings**:
+
+   - **Limit job authorization scope to current project for non-release pipelines**
+   - **Limit job authorization scope to current project for release pipelines**
+   - **Protect access to repositories in YAML pipelines**
 
 ## Build pipelines
 
-To illustrate the steps to take to improve the security of your pipelines when they access Azure Repos, we use the following example.
+The following example illustrates the steps to improve the security of a pipeline when it accesses Azure Repos repositories.
 
 - Assume you're working on the `SpaceGameWeb` pipeline hosted in the `fabrikam-tailspin/SpaceGameWeb` project, in the `SpaceGameWeb` Azure Repos repository. 
 - Your `SpaceGameWeb` pipeline checks out the `SpaceGameWebReact` repository in the same project, and the `FabrikamFiber` and `FabrikamChat` repositories in the `fabrikam-tailspin/FabrikamFiber` project.
@@ -45,29 +45,29 @@ To illustrate the steps to take to improve the security of your pipelines when t
 
 ### Use a project-based build identity for build pipelines
 
-During pipeline execution, an identity gets used to access resources, such as repositories, service connections, and variable groups. Pipelines can utilize two types of identities: project-level and collection-level. The former prioritizes security, while the latter emphasizes ease of use. For more information, see [scoped build identities](../process/access-tokens.md#scoped-build-identities) and [job authorization scope](../process/access-tokens.md#job-authorization-scope).
+A pipeline uses an identity to access resources such as repositories, service connections, and variable groups during execution. Pipelines can utilize two types of identities: project-level and organization-level.
 
-For enhanced security, use project-level identities when you run your pipelines. These identities can only access resources within their associated project, minimizing the risk of unauthorized access by malicious actors.
+Project-level identities prioritize security, while organization-level identities emphasize ease of use. For more information, see [Scoped build identities](../process/access-tokens.md#scoped-build-identities) and [Job authorization scope](../process/access-tokens.md#job-authorization-scope).
 
-To configure your pipeline to use a project-level identity, enable the **Limit job authorization scope to current project for non-release pipelines** setting.
+For enhanced security, use project-level identities when you run your pipelines. These identities can access resources only within their associated project, minimizing the risk of unauthorized access by malicious actors.
 
-In our running example, when this toggle is off, the `SpaceGameWeb` pipeline can access all repositories in all projects. When the toggle is on, `SpaceGameWeb` can only access resources in the `fabrikam-tailspin/SpaceGameWeb` project, so only the `SpaceGameWeb` and `SpaceGameWebReact` repositories.
+To configure a pipeline to use a project-level identity, enable the **Limit job authorization scope to current project for non-release pipelines** setting.
 
-If you run our example pipeline, when you turn on the toggle, the pipeline fails, and the error logs tell you `remote: TF401019: The Git repository with name or identifier FabrikamChat does not exist or you do not have permissions for the operation you are attempting.` and `remote: TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
+In the preceding example, when this toggle is off, the `SpaceGameWeb` pipeline can access all repositories in all projects in the organization. When the toggle is on, the pipeline can only access resources in the `fabrikam-tailspin/SpaceGameWeb` project, which contains only the `SpaceGameWeb` and `SpaceGameWebReact` repositories.
 
-To fix the checkout issues, follow the steps described in the [Basic process](#basic-process) section of this article.
+If you run the example pipeline with the toggle on, the pipeline fails with the errors `remote: TF401019: The Git repository with name or identifier FabrikamChat does not exist or you do not have permissions for the operation you are attempting.` and `remote: TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
 
-Additionally, explicitly check out the submodule repositories, _before_ the repositories that use them. In our example, it means the `FabrikamFiberLib` repository.
+To fix the issues, follow the steps described in [Basic process](#basic-process). Also, explicitly check out the submodule repositories, before the repositories that use them. In the example, check out the `FabrikamFiberLib` repository first. The example pipeline now succeeds.
 
-If you run our example pipeline, it succeeds.
+### Protect access to repositories in YAML pipelines
 
-### Further configuration
+Azure DevOps provides a fine-grained permissions mechanism for Git repositories in the **Protect access to repositories in YAML pipelines** setting. This setting makes a YAML pipeline explicitly request permission to access any repository, regardless of which project it belongs to. For more information, see [Protect access to repositories in YAML pipelines](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines).
 
-To further improve security when you access Azure Repos, consider enabling **Protect access to repositories in YAML pipelines**.
+This setting doesn't affect checking out other types of repositories, such as GitHub-hosted ones.
 
-## [YAML pipelines](#tab/yaml)
+When this setting is turned on, the `SpaceGameWeb` pipeline asks permission to access the `SpaceGameWebReact` repository in the `fabrikam-tailspin/SpaceGameWeb` project, and the `FabrikamFiber` and `FabrikamChat` repositories in the `fabrikam-tailspin/FabrikamFiber` project.
 
-Assume the `SpaceGameWeb` pipeline is a YAML pipeline, and its YAML source code looks similar to the following code.
+Assume the `SpaceGameWeb` pipeline is a YAML pipeline with source code similar to the following example.
 
 ```yml
 trigger:
@@ -103,13 +103,7 @@ steps:
   - ...
 ```
 
-### Protect access to repositories in YAML pipelines
-
-Azure DevOps provides a fine-grained permissions mechanism for Azure Repos repositories, in the form of the **Protect access to repositories in YAML pipelines** setting. This setting makes a YAML pipeline explicitly ask for permission to access _all_ Azure Repos repositories, regardless of which project they belong to. For more information, see [access repos](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines). This setting doesn't affect checking out other types of repositories, such as GitHub-hosted ones.
-
-In our running example, when this setting is turned on, the `SpaceGameWeb` pipeline asks permission to access the `SpaceGameWebReact` repository in the `fabrikam-tailspin/SpaceGameWeb` project, and the `FabrikamFiber` and `FabrikamChat` repositories in the `fabrikam-tailspin/FabrikamFiber` project.
-
-When you run the example pipeline, it builds similar to the following example.
+When you run the example pipeline for the first time, it requests permission to access the repositories.
 
 :::image type="content" source="media/running-the-pipeline-first-time.png" alt-text="Screenshot of running the SpaceGameWeb pipeline the first time after turning on the Protect access to repositories in YAML pipelines toggle.":::
 
