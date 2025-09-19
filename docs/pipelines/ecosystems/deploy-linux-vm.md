@@ -4,7 +4,7 @@ description: Use Azure Pipelines to deploy a Java or JavaScript web application 
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: freshness-fy22q2, linux-related-content
-ms.date: 09/17/2025
+ms.date: 09/19/2025
 monikerRange: 'azure-devops'
 #customer intent: As an Azure Pipelines user, I want to set up environments with Linux VMs so I can easily deploy my Java or JavaScript web apps to prebuilt targets with complete traceability.
 ---
@@ -31,7 +31,7 @@ Also, for JavaScript or Node.js apps:
 
 Also, for Java Spring Boot and Spring Cloud based apps:
 
-- At least two Ubuntu 20.04+ Linux VMs with the Java 17+ SDK installed. You can install the Java SDK by running the following commands on the VM:
+- At least two VMs running Linux Ubuntu with the Java 17+ SDK installed. You can install the Java SDK by running the following commands on the VM:
 
   ```bash
   sudo apt update
@@ -190,15 +190,39 @@ Add a `Deploy` stage to your pipeline that starts when the `Build` stage complet
      The following code shows the complete deployment stage and job for the Java pipeline, using the `rolling` deployment strategy.
 
      ```yaml
+     trigger:
+     - main
+     
+     pool:
+       vmImage: ubuntu-latest
+     
+     stages:
+     - stage: Build
+       displayName: Build stage
+       jobs:  
+       - job: Build
+         displayName: Build Maven Project
+         steps:
+         - task: Maven@4
+           displayName: 'Maven Package'
+           inputs:
+             mavenPomFile: 'pom.xml'
+         - task: CopyFiles@2
+           displayName: 'Copy Files to artifact staging directory'
+           inputs:
+             SourceFolder: '$(System.DefaultWorkingDirectory)'
+             Contents: '**/target/*.?(war|jar)'
+             TargetFolder: $(Build.ArtifactStagingDirectory)
+         - upload: $(Build.ArtifactStagingDirectory)
+           artifact: drop
      - stage: Deploy
        displayName: Deploy to Environment
        jobs:
        - deployment: VMDeploy
          displayName: web
          environment:
-           name: <environment name>
+           name: Java
            resourceType: VirtualMachine
-           tags: <VM tag>
          strategy:
              rolling:
                maxParallel: 2  #for percentages, mention as x%
@@ -213,9 +237,12 @@ Add a `Deploy` stage to your pipeline that starts when the `Build` stage complet
                    inputs:
                      targetType: 'inline'
                      script: |
-                       # Modify deployment script based on the app type
-                       echo "Starting deployment script run"
-                       sudo java -jar '$(Pipeline.Workspace)/drop/target/*.jar'
+                       JAR=$(ls $(Pipeline.Workspace)/drop/target/*.jar | head -n 1)
+                       java -jar "$JAR" --server.port=8081 &
+                       PID=$!
+                       sleep 15
+                       kill $PID 2>/dev/null || echo "Process already exited"
+     
                routeTraffic:
                  steps:
                  - script: echo routing traffic
