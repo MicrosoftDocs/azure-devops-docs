@@ -15,6 +15,8 @@ ms.date: 09/09/2024
 # Copy or clone work items and more
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
+	
+::: moniker range="<azure-devops"
 
 There are two types of copy functions you can use:
 
@@ -22,6 +24,19 @@ There are two types of copy functions you can use:
 - **Copy a list of work items:** To copy a list of work items, multi-select a list of work items and use the "Copy as HTML" or "Copy to clipboard" feature.
 
 [!INCLUDE [temp](../includes/image-differences.md)]
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+There are two types of copy functions you can use:
+
+- **Copy a single work item:** To duplicate a single work item, use the "Create copy of a work item" feature.
+- **Copy a list of work items:** To copy a list of work items, multi-select a list of work items and use the "Copy as HTML" or "Copy to clipboard" feature.
+
+[!INCLUDE [temp](../includes/image-differences.md)]
+
+::: moniker-end
 
 ## Prerequisites
 
@@ -31,13 +46,20 @@ There are two types of copy functions you can use:
 
 ## Copy or clone a work item
 
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> The option to clone a work item is not longer available in the Azure DevOps Service. You can use the Copy option instead.
+
+::: moniker-end
+
 **Copy** a work item to create a new work item with a new ID and prepopulated fields from the original. You can modify the fields as needed. A related link to the original work item and any parent link are copied over, but history and attachments are not.
+
+::: moniker range="<azure-devops"
 
 **Clone** a work item to create an exact copy of an existing work item, including all fields and attachments, but with a new ID. Cloning is useful when no field modifications are needed.
 
 In summary, **copy** a work item to adjust prepopulated values, and **clone** a work item to create an exact duplicate.
-
-::: moniker range="< azure-devops"
 
 > [!NOTE]
 > Some fields might get copied depending on your on-premises version and customizations. If the work item type you clone lacks a state transition rule to clear the *Closed By* field when the *State* is **New** or **Active**, that field gets copied. Current system out-of-box templates include this rule.
