@@ -48,7 +48,7 @@ There are two types of copy functions you can use:
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]
+> [!IMPORTANT]
 > The option to clone a work item is not longer available in the Azure DevOps Service. You can use the Copy option instead.
 
 ::: moniker-end
@@ -90,9 +90,6 @@ In summary, **copy** a work item to adjust prepopulated values, and **clone** a 
 3. In the work item form that opens, update other fields as needed. Select **OK**. All work items start in the "New" state.
 
 ::: moniker-end
-
-> [!TIP]
-> Copied or cloned work items always have a higher ID than the original work items.
 
 ## Change the work item type
 
