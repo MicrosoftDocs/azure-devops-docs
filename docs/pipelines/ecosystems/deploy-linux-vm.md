@@ -49,7 +49,7 @@ Also, for Java Spring Boot and Spring Cloud based apps:
 ---
 
 >[!IMPORTANT]
->For GitHub procedures, you might need to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection), or be prompted to sign in to GitHub, install the Azure Pipelines GitHub app, or authorize Azure Pipelines. To complete each process, follow the onscreen instructions. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+>For GitHub procedures, you need a [GitHub service connection](../library/service-endpoints.md#github-service-connection). You might also be prompted to sign in to GitHub, install the Azure Pipelines GitHub app, or authorize Azure Pipelines. To complete each process, follow the onscreen instructions. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 ## Create an environment and add Linux VMs
 
@@ -79,32 +79,29 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-stages:
-- stage: Build
-  displayName: Build stage
-  jobs:  
-  - job: Build
-    displayName: Build
-    steps:
-    - task: UseNode@1
-      inputs:
-        version: '16.x'
-      displayName: 'Install Node.js'
-    - script: |
-        npm install
-        npm run build --if-present
-        npm run test --if-present
-      displayName: 'npm install, build and test'
-    - task: ArchiveFiles@2
-      displayName: 'Archive files'
-      inputs:
-        rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-        includeRootFolder: false
-        archiveType: zip
-        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-        replaceExistingArchive: true
-    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-      artifact: drop
+jobs:  
+- job: Build
+  displayName: Build
+  steps:
+  - task: UseNode@1
+    inputs:
+      version: '16.x'
+    displayName: 'Install Node.js'
+  - script: |
+      npm install
+      npm run build --if-present
+      npm run test --if-present
+    displayName: 'npm install, build and test'
+  - task: ArchiveFiles@2
+    displayName: 'Archive files'
+    inputs:
+      rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+      includeRootFolder: false
+      archiveType: zip
+      archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      replaceExistingArchive: true
+  - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+    artifact: drop
 ```
 
 For more information, review the steps for creating a build in [Build your Node.js app with gulp](javascript.md).
@@ -120,25 +117,22 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-stages:
-- stage: Build
-  displayName: Build stage
-  jobs:  
-  - job: Build
-    displayName: Build Maven Project
-    steps:
-    - task: Maven@4
-      displayName: 'Maven Package'
-      inputs:
-        mavenPomFile: 'pom.xml'
-    - task: CopyFiles@2
-      displayName: 'Copy Files to artifact staging directory'
-      inputs:
-        SourceFolder: '$(System.DefaultWorkingDirectory)'
-        Contents: '**/target/*.?(war|jar)'
-        TargetFolder: $(Build.ArtifactStagingDirectory)
-    - upload: $(Build.ArtifactStagingDirectory)
-      artifact: drop
+jobs:  
+- job: Build
+  displayName: Build Maven Project
+  steps:
+  - task: Maven@4
+    displayName: 'Maven Package'
+    inputs:
+      mavenPomFile: 'pom.xml'
+  - task: CopyFiles@2
+    displayName: 'Copy Files to artifact staging directory'
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)'
+      Contents: '**/target/*.?(war|jar)'
+      TargetFolder: $(Build.ArtifactStagingDirectory)
+  - upload: $(Build.ArtifactStagingDirectory)
+    artifact: drop
 ```
 
 For more information, review the steps for creating a build in [Build your Java app with Maven](java.md).
@@ -160,22 +154,18 @@ Add a `Deploy` stage to your pipeline that starts when the `Build` stage complet
    Optionally, you can select specific VMs from the environment to receive the deployment by using the `tags` parameter and specifying the `<VM tag>` you defined for the VM.
 
    ```yaml
-   - stage: Deploy
-     displayName: Deploy to Environment
-     jobs:
-     - deployment: VMDeploy
-       displayName: Web deploy
-       environment:
-         name: <environment name>
-         resourceType: VirtualMachine
-         tags: <VM tag> # VMs to deploy to
+  - deployment: VMDeploy
+    displayName: Web deploy
+    environment:
+      name: <environment name>
+      resourceType: VirtualMachine
+      tags: <VM tag> # VMs to deploy to
    ```
 
 1. Specify the deployment `strategy` by adding the following code to the `deployment` job. You can specify a `runOnce` or `rolling` deployment strategy.
 
    - `runOnce` is the simplest deployment strategy, as shown in the following code. The `preDeploy`> `deploy` > `routeTraffic` > `postRouteTraffic` lifecycle hooks each execute once, and then either `on: success` or `on: failure` executes.
 
-     
      ```yaml
          strategy:
             runOnce:
@@ -197,66 +187,59 @@ Add a `Deploy` stage to your pipeline that starts when the `Build` stage complet
      pool:
        vmImage: ubuntu-latest
      
-     stages:
-     - stage: Build
-       displayName: Build stage
-       jobs:  
-       - job: Build
-         displayName: Build Maven Project
-         steps:
-         - task: Maven@4
-           displayName: 'Maven Package'
-           inputs:
-             mavenPomFile: 'pom.xml'
-         - task: CopyFiles@2
-           displayName: 'Copy Files to artifact staging directory'
-           inputs:
-             SourceFolder: '$(System.DefaultWorkingDirectory)'
-             Contents: '**/target/*.?(war|jar)'
-             TargetFolder: $(Build.ArtifactStagingDirectory)
-         - upload: $(Build.ArtifactStagingDirectory)
-           artifact: drop
-     - stage: Deploy
-       displayName: Deploy to Environment
-       jobs:
-       - deployment: VMDeploy
-         displayName: web
-         environment:
-           name: <environment name>
-           resourceType: VirtualMachine
-         strategy:
-             rolling:
-               maxParallel: 2  #for percentages, mention as x%
-               preDeploy:
+     jobs:  
+     - job: Build
+       displayName: Build Maven Project
+       steps:
+       - task: Maven@4
+         displayName: 'Maven Package'
+         inputs:
+           mavenPomFile: 'pom.xml'
+       - task: CopyFiles@2
+         displayName: 'Copy Files to artifact staging directory'
+         inputs:
+           SourceFolder: '$(System.DefaultWorkingDirectory)'
+           Contents: '**/target/*.?(war|jar)'
+           TargetFolder: $(Build.ArtifactStagingDirectory)
+       - upload: $(Build.ArtifactStagingDirectory)
+         artifact: drop
+     - deployment: VMDeploy
+       displayName: web
+       environment:
+         name: <environment name>
+         resourceType: VirtualMachine
+       strategy:
+           rolling:
+             maxParallel: 2  #for percentages, mention as x%
+             preDeploy:
+               steps:
+               - download: current
+                 artifact: drop
+               - script: echo initialize, cleanup, backup, install certs
+             deploy:
+               steps:
+               - task: Bash@3
+                 inputs:
+                   targetType: 'inline'
+                   script: |
+                     JAR=$(ls $(Pipeline.Workspace)/drop/target/*.jar | head -n 1)
+                     java -jar "$JAR" --server.port=8081 &
+                     PID=$!
+                     sleep 15
+                     kill $PID 2>/dev/null || echo "Process already exited"
+             routeTraffic:
+               steps:
+               - script: echo routing traffic
+             postRouteTraffic:
+               steps:
+               - script: echo health check post-route traffic
+             on:
+               failure:
                  steps:
-                 - download: current
-                   artifact: drop
-                 - script: echo initialize, cleanup, backup, install certs
-               deploy:
+                 - script: echo Restore from backup! This is on failure
+               success:
                  steps:
-                 - task: Bash@3
-                   inputs:
-                     targetType: 'inline'
-                     script: |
-                       JAR=$(ls $(Pipeline.Workspace)/drop/target/*.jar | head -n 1)
-                       java -jar "$JAR" --server.port=8081 &
-                       PID=$!
-                       sleep 15
-                       kill $PID 2>/dev/null || echo "Process already exited"
-     
-               routeTraffic:
-                 steps:
-                 - script: echo routing traffic
-               postRouteTraffic:
-                 steps:
-                 - script: echo health check post-route traffic
-               on:
-                 failure:
-                   steps:
-                   - script: echo Restore from backup! This is on failure
-                 success:
-                   steps:
-                   - script: echo Notify! This is on success
+                 - script: echo Notify! This is on success
      ```
 
 1. After you add the deployment job, select **Validate and save**, then select **Save**, select **Run**, and select **Run** again. With each run of this job, deployment history records against the environment the VMs are registered in.
