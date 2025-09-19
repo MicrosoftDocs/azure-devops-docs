@@ -113,6 +113,8 @@ Before you can publish packages to your feed, you must authenticate with Azure A
 
 ::: moniker-end
 
+---
+
 ## Publish packages to a feed in the same organization
 
 Run the following command to publish a package to your feed. Replace the placeholders with the appropriate values:
