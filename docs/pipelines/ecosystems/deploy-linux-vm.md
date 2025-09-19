@@ -169,18 +169,18 @@ Add a `deployment` job to your pipeline that starts when the `Build` job complet
    - `runOnce` is the simplest deployment strategy, as shown in the following code. The `preDeploy`> `deploy` > `routeTraffic` > `postRouteTraffic` lifecycle hooks each execute once, and then either `on: success` or `on: failure` executes.
 
      ```yaml
-         strategy:
-            runOnce:
-              deploy:
-                 steps:
-                 - script: echo my first deployment
+       strategy:
+          runOnce:
+            deploy:
+               steps:
+               - script: echo my first deployment
      ```
 
    - A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) updates the application on a fixed set of VMs in each iteration. You can update up to five targets in each iteration.
 
      The `maxParallel` parameter accounts for the number or percentage of VMs that must remain available at any time, excluding the VMs that are being deployed to, and also determines success and failure conditions during deployment.
 
-     The following code shows the complete Java pipeline using the `rolling` deployment strategy.
+     The following code shows a complete Java pipeline that uses the `rolling` deployment strategy.
 
      ```yaml
      trigger:
