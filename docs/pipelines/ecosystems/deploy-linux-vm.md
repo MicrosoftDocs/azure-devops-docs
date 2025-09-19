@@ -147,19 +147,21 @@ After your pipeline runs, view the build **Summary** page to verify that the job
 
 ## Deploy to the Linux VMs
 
-Add a `Deploy` stage to your pipeline that starts when the `Build` stage completes successfully. The [deployment job](../process/deployment-jobs.md) in this stage runs on the Linux servers.
+Add a `deployment` job to your pipeline that starts when the `Build` job completes successfully. The [deployment job](../process/deployment-jobs.md) runs on the Linux servers.
 
-1. To add the deployment stage and job, select the **More actions** icon at upper right on the **Summary** page, select **Edit pipeline**, and add the following code to the end of your pipeline. Replace `<environment name>` with the name of the environment you created.
+1. To add the deployment job, select the **More actions** icon at upper right on the **Summary** page, select **Edit pipeline**, and add the following code to the end of your pipeline. Replace `<environment name>` with the name of the environment you created.
 
    Optionally, you can select specific VMs from the environment to receive the deployment by using the `tags` parameter and specifying the `<VM tag>` you defined for the VM.
 
    ```yaml
-  - deployment: VMDeploy
-    displayName: Web deploy
-    environment:
-      name: <environment name>
-      resourceType: VirtualMachine
-      tags: <VM tag> # VMs to deploy to
+   - deployment: VMDeploy
+     displayName: Web deploy
+     dependsOn: Build
+     condition: succeeded()
+     environment:
+       name: <environment name>
+       resourceType: VirtualMachine
+       tags: <VM tag> # VMs to deploy to
    ```
 
 1. Specify the deployment `strategy` by adding the following code to the `deployment` job. You can specify a `runOnce` or `rolling` deployment strategy.
@@ -178,7 +180,7 @@ Add a `Deploy` stage to your pipeline that starts when the `Build` stage complet
 
      The `maxParallel` parameter accounts for the number or percentage of VMs that must remain available at any time, excluding the VMs that are being deployed to, and also determines success and failure conditions during deployment.
 
-     The following code shows the complete deployment stage and job for the Java pipeline, using the `rolling` deployment strategy.
+     The following code shows the complete Java pipeline using the `rolling` deployment strategy.
 
      ```yaml
      trigger:
@@ -205,6 +207,8 @@ Add a `Deploy` stage to your pipeline that starts when the `Build` stage complet
          artifact: drop
      - deployment: VMDeploy
        displayName: web
+       dependsOn: Build
+       condition: succeeded()
        environment:
          name: <environment name>
          resourceType: VirtualMachine
