@@ -295,15 +295,15 @@ If the problem persists after completing the previous troubleshooting steps, con
 1. Open the Command Prompt or PowerShell as the Administrator.
 2. Run the DISM tool to repair the Windows image:
 
-```cmd
-DISM.exe /Online /Cleanup-Image /RestoreHealth
-```
+   ```cmd
+   DISM.exe /Online /Cleanup-Image /RestoreHealth
+   ```
 
 3. After DISM completes, run the System File Checker:
 
-```cmd
-sfc /scannow
-```
+   ```cmd
+   sfc /scannow
+   ```
 
 ## Related content
 
