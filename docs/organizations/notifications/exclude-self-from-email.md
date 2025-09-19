@@ -18,17 +18,6 @@ monikerRange: '<= azure-devops'
 
 This article shows how to prevent the initiator of an event from receiving notification emails when that event triggers a team or role-based subscription. The feature is useful when people don't want emails for actions they themselves perform (for example, creating a pull request).
 
-What you'll learn:
-- Where to find the Skip initiator option.
-- When Skip initiator is availab
-- Troubleshooting steps if you don't see the option.
-
-Quick steps:
-1. Sign in to your project: `https://dev.azure.com/{Your_Organization}/{Your_Project}`
-2. Select **Project settings** > **Notifications**.
-3. Create a new subscription or edit an existing team/role subscription.
-4. Check the **Skip initiator** box to exclude the event initiator from the notification.
-
 ## Prerequisites
 
 [!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
