@@ -4,7 +4,7 @@ description: Use Azure Pipelines to deploy a Java or JavaScript web application 
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: freshness-fy22q2, linux-related-content
-ms.date: 09/16/2025
+ms.date: 09/17/2025
 monikerRange: 'azure-devops'
 #customer intent: As an Azure Pipelines user, I want to set up environments with Linux VMs so I can easily deploy my Java or JavaScript web apps to prebuilt targets with complete traceability.
 ---
@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-gt-eq-2020.md)]
 
-In this quickstart, you learn how to set up an Azure DevOps pipeline for deployment to multiple Linux [virtual machine (VM) resources](../process/environments-virtual-machines.md) in an [environment](../process/environments.md). These instructions build and publish either a JavaScript or Java app, but you can adapt them for any app that publishes a web deployment package.
+In this quickstart, you learn how to set up an Azure DevOps pipeline for deployment to multiple Linux [virtual machine (VM) resources](../process/environments-virtual-machines.md) in an [environment](../process/environments.md). These instructions build and deploy either a JavaScript or Java app, but you can adapt them for any app that publishes a web deployment package.
 
 ## Prerequisites
 
@@ -31,7 +31,15 @@ Also, for JavaScript or Node.js apps:
 
 Also, for Java Spring Boot and Spring Cloud based apps:
 
-- [At least two Linux VMs created in Azure using the Java 13 on Ubuntu 20.04 template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004), which provides a fully supported OpenJDK-based runtime.
+- At least two Ubuntu 20.04+ Linux VMs with the Java 17+ SDK installed. You can install the Java SDK by running the following commands on the VM:
+
+  ```bash
+  sudo apt update
+  sudo apt install openjdk-17-jdk
+  sudo update-alternatives --config java
+  sudo update-alternatives --config javac
+  java -version 
+```
 - Your own fork of the GitHub sample code repo at [https://github.com/spring-projects/spring-petclinic](https://github.com/spring-projects/spring-petclinic). If you already have an app in GitHub that you want to deploy, you can use your code instead.
 
   >[!NOTE]
@@ -40,7 +48,7 @@ Also, for Java Spring Boot and Spring Cloud based apps:
 ---
 
 >[!IMPORTANT]
->During GitHub procedures, you might be prompted to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection) or be redirected to GitHub to sign in, install Azure Pipelines, or authorize Azure Pipelines. To complete each process, follow the onscreen instructions. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+>For GitHub procedures, you might need to create a [GitHub service connection](../library/service-endpoints.md#github-service-connection), or be prompted to sign in to GitHub, install the Azure Pipelines GitHub app, or authorize Azure Pipelines. To complete each process, follow the onscreen instructions. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 ## Create an environment and add Linux VMs
 
@@ -55,9 +63,9 @@ Create a continuous integration (CI) build pipeline that publishes your web app.
 1. In your Azure DevOps project, select **Pipelines** > **New pipeline** or **Create Pipeline**, and then select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select your forked sample repository.
 1. On the **Configure your pipeline** screen, select **Starter pipeline**.
-1. On the **Review your pipeline YAML** screen, replace the entire generated starter *azure-pipelines.yml* with the following code, based on your runtime.
+1. On the **Review your pipeline YAML** screen, replace the generated starter *azure-pipelines.yml* with the following code, based on your runtime.
 
-### Edit the code
+### Replace the code
 
 #### [JavaScript](#tab/javascript)
 
@@ -223,7 +231,7 @@ Add a `Deploy` stage to your pipeline that starts when the `Build` stage complet
                    - script: echo Notify! This is on success
      ```
 
-1. After you add the deployment job, select **Validate and save**, then select **Save**, select **Run**, and select **Run** again. With each run of this job, deployment history records against the environment you created and registered the VMs in.
+1. After you add the deployment job, select **Validate and save**, then select **Save**, select **Run**, and select **Run** again. With each run of this job, deployment history records against the environment the VMs are registered in.
 
    >[!NOTE]
    >The first time you run the pipeline that uses the environment, you must grant permission for all runs of the pipeline to access the agent pool and the environment. Select the **Waiting** symbol next to the job on the pipeline run **Summary** screen, and then select **Permit** to grant the necessary permissions.
@@ -234,7 +242,7 @@ Add a `Deploy` stage to your pipeline that starts when the `Build` stage complet
 
 ## Access pipeline traceability in environment
 
-The environment **Deployments** view provides complete traceability of commits and work items and a cross-pipeline deployment history for the environment.
+The environment **Deployments** tab provides complete traceability of commits and work items and a cross-pipeline deployment history for the environment.
 
 :::image type="content" source="media/vm-deployments.png" alt-text="Screenshot of deployments view.":::
 
