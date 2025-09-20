@@ -37,9 +37,11 @@ The following example illustrates the process to improve the security of a pipel
 The `https://dev.azure.com/fabrikam-tailspin` organization contains the **SpaceGameWeb** and **FabrikamFiber** projects.
 
 - The **SpaceGameWeb** project's repository structure looks like the following screenshot:
+
   :::image type="content" source="media/spacegame-repository-structure.png" alt-text="Screenshot of the SpaceGameWeb repository structure.":::
 
 - The **FabrikamFiber** project's repository structure looks like the following screenshot. The **FabrikamFiber** repository uses the **FabrikamFiberLib** repository in its project as a submodule.
+
   :::image type="content" source="media/fabrikam-repository-structure.png" alt-text="Screenshot of the FabrikamFiber repository structure.":::
 
 The **SpaceGameWeb** pipeline in the **SpaceGameWeb** project checks out the **SpaceGameWebReact** repository in its project, and the **FabrikamFiber** and **FabrikamChat** repositories in the **FabrikamFiber** project. If the project isn't set up to use a project-based build identity or to protect access to repositories in YAML pipelines, the **SpaceGameWeb** pipeline runs successfully.
@@ -64,7 +66,9 @@ To fix the issues, follow the steps described in [Basic process](#basic-process)
 
 In the example, the **FabrikamFiber** repository uses the **FabrikamFiberLib** repository in the same project as a submodule. Even if you give the pipeline build identity **FabrikamFiber** project access and **Read** access to the **FabrikamFiberLib** repository, the **FabrikamFiber** repository checkout still fails when checking out the **FabrikamFiberLib** submodule.
 
-To solve this issue, explicitly check out submodule repositories before checking out the repositories that use them. In the example, explicitly check out **FabrikamFiberLib** by adding a `checkout: git://FabrikamFiber/FabrikamFiberLib` step before the `checkout: FabrikamFiber` step in your pipeline. The example pipeline now succeeds.
+To solve this issue, explicitly check out submodule repositories before checking out the repositories that use them. In the example, explicitly check out **FabrikamFiberLib** by adding a `checkout: git://FabrikamFiber/FabrikamFiberLib` step before the `checkout: FabrikamFiber` step in your pipeline.
+
+The example pipeline now succeeds. For more information, see [Check out submodules](../repos/pipeline-options-for-git.md#checkout-submodules).
 
 ### Protect access to repositories in YAML pipelines
 
@@ -72,7 +76,7 @@ Azure DevOps provides a fine-grained permissions mechanism in the **Protect acce
 
 This setting doesn't affect checking out other types of repositories, such as GitHub-hosted ones.
 
-When this setting is turned on, YAML pipelines request permission to access repositories the first time they run. If the **SpaceGameWeb** pipeline is a YAML pipeline with source code similar to the following example, it asks permission to access the **SpaceGameWebReact** repository in the **SpaceGameWeb** project, and the **FabrikamFiber** and **FabrikamChat** repositories in the **FabrikamFiber** project.
+When this setting is enabled, YAML pipelines request permission to access repositories the first time they run. If the **SpaceGameWeb** pipeline is a YAML pipeline with source code similar to the following example, it asks permission to access the **SpaceGameWebReact** repository in the **SpaceGameWeb** project, and the **FabrikamFiber** and **FabrikamChat** repositories in the **FabrikamFiber** project.
 
 ```yml
 trigger:
@@ -108,6 +112,8 @@ steps:
   - ...
 ```
 
+The first time you run the pipeline, you see a permission request like the following screenshot:
+
 :::image type="content" source="media/running-the-pipeline-first-time.png" alt-text="Screenshot of running the SpaceGameWeb pipeline the first time after turning on the Protect access to repositories in YAML pipelines toggle.":::
 
 Select **Permit** to grant permission to your pipeline repositories or resources.
@@ -140,13 +146,13 @@ In Classic build pipelines, you can't explicitly declare other repositories as r
 
 #### The **Build job authorization scope** setting
 
-The **Limit job authorization scope to current project for non-release pipelines** organization setting overrides the **Build job authorization scope** option setting in a Classic pipeline. If you enable the organization setting, the pipeline runs with project-based identity even if you set **Build job authorization scope** to **Project collection**.
+The **Limit job authorization scope to current project for non-release pipelines** organization setting overrides the **Build job authorization scope** option setting in a Classic pipeline. If you enable the organization setting, the pipeline runs with project-based identity even if you set the pipeline **Build job authorization scope** to **Project collection**.
 
 :::image type="content" source="media/build-job-authorization-scope.png" alt-text="Screenshot of the successful run of the Build job authorization scope setting.":::
 
 #### Classic pipelines and the 'Protect access to repositories in YAML pipelines' setting
 
-The **Protect access to repositories in YAML pipelines** setting makes a YAML pipeline explicitly ask for permission to access all Azure Repos repositories, regardless of which project they belong to. When you enable **Protect access to repositories in YAML pipelines** setting, your Classic build pipelines can't access any Azure Repos repository except for the one specified in the pipeline settings. In the pipeline example, you get an error and the log message `TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting`.
+The **Protect access to repositories in YAML pipelines** setting makes a YAML pipeline explicitly ask for permission to access all Azure Repos repositories, regardless of which project they belong to. When you enable **Protect access to repositories in YAML pipelines** setting, your Classic build pipelines can't access any Azure Repos repository except for the one specified in the pipeline settings. For the pipeline example, you get an error and the log message `TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting`.
 
 If you have both YAML and Classic pipelines and need your Classic pipelines to check out repositories not specified in their settings, create different projects for the YAML pipelines and the Classic pipelines. Then enable **Protect access to repositories in YAML pipelines** only for the YAML pipelines project.
 
@@ -160,21 +166,18 @@ For example, the **FabrikamFiberDocRelease** project has a release pipeline name
 
 ### Use a project-based build identity for a Classic release pipelines
 
-For enhanced security, use project-level identities to run pipelines. These identities can access resources only within their associated project, minimizing the risk of unauthorized access by malicious actors.
+For enhanced security, use a project-level identity to run the pipeline. This identity can access resources only within the associated project, minimizing the risk of unauthorized access by malicious actors.
 
-To configure a pipeline to use a project-level identity, enable the **Limit job authorization scope to current project for non-release pipelines** toggle in **Organization Settings**.
+To configure the pipeline to use a project-level identity, enable the **Limit job authorization scope to current project for non-release pipelines** toggle in **Organization Settings**.
 
-In the preceding example, when this toggle is off, the **FabrikamFiberDocRelease** pipeline can access all repositories in all projects, including the **FabrikamFiber** repository. When the toggle is on, **FabrikamFiberDocRelease** can only access resources in the **FabrikamFiberDocRelease** project, so the **FabrikamFiber** repository is inaccessible.
+In the example, when this toggle is off, the **FabrikamFiberDocRelease** pipeline can access all repositories in all projects, including the **FabrikamFiber** repository. When the toggle is on, **FabrikamFiberDocRelease** can only access resources in the **FabrikamFiberDocRelease** project, so the **FabrikamFiber** repository is inaccessible.
 
-To fix the issues, follow the steps described in [Basic process](#basic-process). Also, explicitly check out the submodule repositories before checking out the repositories that use them. The example pipeline now succeeds.
-
-
-
+To fix the issue, follow the steps described in [Basic process](#basic-process). Also, explicitly check out the submodule repositories before checking out the repositories that use them. The example pipeline now succeeds.
 
 ## Related articles
 
 - [Scoped build identities](../process/access-tokens.md#scoped-build-identities)
 - [Job authorization scope](../process/access-tokens.md#job-authorization-scope)
 - [Grant a pipeline's build identity access to a project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection)
-- [Grant a pipeline's build identity _Read_ access to a repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection)
-- [How to check out submodules](../repos/pipeline-options-for-git.md#checkout-submodules)
+- [Grant a pipeline's build identity Read access to a repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection)
+- [Check out submodules](../repos/pipeline-options-for-git.md#checkout-submodules)
