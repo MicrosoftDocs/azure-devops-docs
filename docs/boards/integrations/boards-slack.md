@@ -9,7 +9,7 @@ ms.reviewer: karrg
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/17/2025
+ms.date: 09/22/2025
 ms.custom:
   - cross-service
   - sfi-image-nochange
@@ -39,9 +39,6 @@ events in their Slack channel. Conversations in the Slack channel can be used to
 | **Permissions** | To create subscriptions in a Slack channel for work item events: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) or [Team Administrators](../../organizations/settings/add-team-administrator.md) group. |
 | **Policies** | To receive notifications: [**Third party application access via OAuth** policy enabled for the organization](../../organizations/accounts/change-application-access-policies.md). |
 
-> [!NOTE]
-> If your Azure DevOps organization is connected to a Microsoft Entra ID tenant, you must sign in with a native member of that tenant. External users might see authentication errors when attempting to sign in through Slack.
-
 ## Add the Azure Boards app to your Slack workspace
 
 1. To install the Azure Boards app to your Slack workspace, open a web browser, sign into Slack, and open the [Azure Boards app](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp). 
@@ -61,7 +58,7 @@ To use the app, you must first link your Azure Boards project to your Slack chan
     ![screenshot of sign-in](./media/integrations-slack/signin.png)
 
 > [!NOTE]
-> If your Azure DevOps organization is connected to a Microsoft Entra ID tenant, you must sign in with a native member of that tenant. External users see the following error if they try to sign in to the Azure Boards app: `Configuration failed. Please make sure that the organization exists and that you have sufficient permissions.`
+> If your Azure DevOps organization is connected to a Microsoft Entra ID tenant, you're required to sign in with a native member of that tenant. External users might see authentication errors when attempting to sign in through Slack. Ensure that the organization exists and that you have sufficient permissions.
 
 1. After signing in, use the following slash command inside a Slack channel to link to the Azure Boards project that you specify with the URL:
 
@@ -128,7 +125,7 @@ You can add areas that your team works on to the channel so that they're always 
     ```
     /azboards create 'user story' Push cloud monitoring alerts to mobile devices
     ```
-    
+
 
 ## Create a work item from message actions
 
@@ -139,7 +136,6 @@ access to the discussion that led to the creation of the work item.
 
     > [!div class="mx-imgBorder"]  
     > ![Create work item using message action](./media/integrations-slack/message-action-collated.png)
-
 
 ## Manage Azure Boards subscriptions
 
@@ -211,10 +207,10 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 
 ## Conditions and limitations
 
-- You can use the Azure Boards app for Slack only with Azure DevOps Services.
-- Notifications aren't supported inside direct messages.
-- To create subscriptions in a channel, you must be a project or team admin as described in the Prerequisites section.
-- To use the app, **Third party application access via OAuth** must be enabled in Azure DevOps **Organization settings** > **Security** > **Policies**.
+- The Azure Boards app for Slack works only with Azure DevOps Services (cloud). It isn't supported on Azure DevOps Server.
+- Notifications don't appear in direct messages — they go to channels only.
+- To create channel subscriptions, be a Project or Team Administrator (see the [Prerequisites](#prerequisites) section).
+- Your organization must allow third-party apps to use OAuth. Make sure the **Third party application access via OAuth** policy is enabled in **Organization settings** > **Security** > **Policies**.
 
 ## Related content
 

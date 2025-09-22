@@ -9,7 +9,7 @@ ms.manager: bijuv
 ms.author: Divais
 author: Divais
 monikerRange: 'azure-devops'
-ms.date: 09/17/2025
+ms.date: 09/22/2025
 ms.custom:
   - cross-service
   - sfi-image-nochange
@@ -28,9 +28,11 @@ If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slac
 |**Permissions**|- To create subscriptions in a Slack channel for repository-related events: Member of the **Project Administrators** group or team administrator. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md).<br> - To receive notifications: **Third-party application access via OAuth** setting enabled for the organization. For more information, see [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).|
 
 > [!NOTE]
-> * You can only link the Azure Repos app for Slack to a project hosted on Azure DevOps Services.
-> * Notifications aren't supported inside direct messages.
-> * If your Azure DevOps organization is connected to a Microsoft Entra ID tenant, you must sign in with a native member of that tenant. External users might see authentication errors when attempting to sign in through Slack.
+> - The Azure Repos app for Slack works only with Azure DevOps Services (cloud); it isn't supported on Azure DevOps Server.
+> - Notifications are sent to channels — they don't appear in direct messages.
+> - To create channel subscriptions be a Project or Team Administrator (see the [Prerequisites](#prerequisites) section).
+> - Your organization must allow third‑party apps to sign in using OAuth. Check **Organization settings** > **Security** > **Policies** and enable **Third party application access via OAuth** if it's not already on.
+> - If your organization is connected to a Microsoft Entra ID tenant, sign in with an account that is a native member of that tenant; guest or external accounts can run into authentication errors when signing in through Slack.
 
 ## Add the Azure Repos app to your Slack workspace
 
@@ -74,9 +76,6 @@ If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slac
     Confirmation of sign-in displays within the chat.
 
     :::image type="content" source="media/integrations-slack/signed-in-confirmation.png" alt-text="Screenshot sign-in confirmation in chat.":::
-
-> [!NOTE]
-> If your Azure DevOps organization is connected to a Microsoft Entra ID tenant, you must sign in with a native member of that tenant. External users see an error if they attempt to sign in through Slack: `Configuration failed. Please make sure that the organization exists and that you have sufficient permissions.`
 
 To start monitoring all Git repositories in a project, use the following slash command inside a channel:
 
@@ -217,11 +216,11 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 
 ## Conditions and limitations
 
-- You can use the Azure Repos app for Slack only with Azure DevOps Services.
-- Notifications aren't supported inside direct messages.
-- To create subscriptions in a channel, you must be a project admin or a team admin as described in the Prerequisites section.
-- To use the app, **Third party application access via OAuth** must be enabled in Azure DevOps **Organization settings** > **Security** > **Policies**.
-- If your organization uses Microsoft Entra ID, external guests might be unable to sign in via Slack; use a native tenant account when authenticating.
+- The Azure Repos app for Slack works with Azure DevOps Services (cloud) only — it isn't available for Azure DevOps Server.
+- Notifications are sent to channels (not to direct messages).
+- To create channel subscriptions be a Project or Team Administrator.
+- Your organization must allow third‑party apps to sign in via OAuth. Check **Organization settings** > **Security** > **Policies** and enable **Third party application access via OAuth** if needed.
+- If your organization uses Microsoft Entra ID, sign in with an account that is a native member of that tenant — guest or external accounts can experience authentication issues when signing in through Slack.
 
 ## Related articles
 
