@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for Managed DevOps Pools
 description: Learn how to configure your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools.
-ms.date: 08/26/2025
+ms.date: 09/22/2025
 ms.custom: sfi-image-nochange
 ---
 
@@ -263,10 +263,12 @@ You must be a member of the Azure DevOps organization before the permissions in 
 > [!TIP]
 > If you're currently working in an Azure DevOps organization, for example using Azure Boards, working with Azure Repos, or using Azure Pipelines, you're already a member of that Azure DevOps organization, and you can skip this step and proceed to [Verify Azure DevOps project membership](#verify-azure-devops-project-membership).
 
-To verify your membership in an Azure DevOps organization, go to `https://dev.azure.com/{organization}/_settings/users`, replacing `{organization}` with the name of your Azure DevOps organization.
+To verify your membership in an Azure DevOps organization:
 
-* If you're denied access to the page, you're not a member of the Azure DevOps organization. Ask a [Project Collection administrator](../organizations/security/look-up-project-collection-administrators.md) to [add you as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization).
-* If you can access the page, review the user list and verify that you're a member of the Azure DevOps organization. If you don't see your account listed, or you can't access the page, ask a [Project Collection administrator](../organizations/security/look-up-project-collection-administrators.md) to [add you as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization).
+1. Go to `https://dev.azure.com/{organization}/_settings/users`, replacing `{organization}` with the name of your Azure DevOps organization.
+2. If you can access the page, review the user list and verify that you're a member of the Azure DevOps organization.
+
+   If you don't see your account listed, or you can't access the page, ask a [Project Collection administrator](../organizations/security/look-up-project-collection-administrators.md) to [add you as a member](../organizations/accounts/add-organization-users.md#add-users-to-your-organization).
 
 ### Verify Azure DevOps project membership    
 
