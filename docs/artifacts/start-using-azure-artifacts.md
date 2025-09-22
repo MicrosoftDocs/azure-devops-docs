@@ -114,6 +114,8 @@ If you have questions about your artifact storage or consumption, see the [Stora
 
 ## Related content
 
+- [Azure Artifacts best practices](concepts/best-practices.md) 
+
 - [Limits on package sizes and counts](reference/limits.md)
 
 - [Manage permissions](feeds/feed-permissions.md)

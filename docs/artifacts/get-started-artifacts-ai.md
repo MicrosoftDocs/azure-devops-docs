@@ -205,4 +205,5 @@ dotnet nuget push --source <FEED_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
 
 > [!div class="nextstepaction"]
 > [Monitor Artifacts storage](artifact-storage.md)
+> [Azure Artifacts best practices](concepts/best-practices.md) 
 > [Share packages publicly](tutorials/share-packages-publicly.md)
