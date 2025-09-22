@@ -25,11 +25,13 @@ If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slac
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**|- To create subscriptions in a Slack channel for repository-related events: Member of the **Project Administrators** group or team administrator. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md).<br> - To receive notifications: **Third-party application access via OAuth** setting enabled for the organization. For more information, see [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).|
+| Platform | Azure Repos Slack app works only with Azure DevOps Services (cloud); it isn't supported on Azure DevOps Server. |
+| Permissions | To create subscriptions in a Slack channel for repository-related events: Member of the **Project Administrators** group or team administrator. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). To receive notifications: **Third-party application access via OAuth** setting enabled for the organization. For more information, see [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md). |
+| Organization policies | Your organization must allow third‑party apps to sign in using OAuth. Check **Organization settings** > **Security** > **Policies** and enable **Third party application access via OAuth** if it's not already on. |
+| Microsoft Entra account | If your organization is connected to a Microsoft Entra ID tenant, sign in with an account that is a native member of that tenant; guest or external accounts can experience authentication errors when signing in through Slack. |
 
 > [!NOTE]
-> - The Azure Repos app for Slack works only with Azure DevOps Services (cloud); it isn't supported on Azure DevOps Server.
-> - Notifications are sent to channels — they don't appear in direct messages.
+> - Notifications are sent to channels—they don't appear in direct messages.
 > - To create channel subscriptions be a Project or Team Administrator (see the [Prerequisites](#prerequisites) section).
 > - Your organization must allow third‑party apps to sign in using OAuth. Check **Organization settings** > **Security** > **Policies** and enable **Third party application access via OAuth** if it's not already on.
 > - If your organization is connected to a Microsoft Entra ID tenant, sign in with an account that is a native member of that tenant; guest or external accounts can run into authentication errors when signing in through Slack.
@@ -216,11 +218,11 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 
 ## Conditions and limitations
 
-- The Azure Repos app for Slack works with Azure DevOps Services (cloud) only — it isn't available for Azure DevOps Server.
+- The Azure Repos app for Slack works with Azure DevOps Services (cloud) only—it isn't available for Azure DevOps Server.
 - Notifications are sent to channels (not to direct messages).
 - To create channel subscriptions be a Project or Team Administrator.
 - Your organization must allow third‑party apps to sign in via OAuth. Check **Organization settings** > **Security** > **Policies** and enable **Third party application access via OAuth** if needed.
-- If your organization uses Microsoft Entra ID, sign in with an account that is a native member of that tenant — guest or external accounts can experience authentication issues when signing in through Slack.
+- If your organization uses Microsoft Entra ID, sign in with an account that is a native member of that tenant—guest or external accounts can experience authentication issues when signing in through Slack.
 
 ## Related articles
 
