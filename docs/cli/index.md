@@ -1,14 +1,15 @@
 ---
 title: Get Started with Azure DevOps CLI
 titleSuffix: Azure DevOps 
-description: Install the Azure DevOps extension command line interface. Learn how to sign on, configure defaults, access help, and open Azure DevOps services in a browser.
+description: Install the Azure DevOps extension for the Azure CLI. Learn how to sign on, configure defaults, access help, and open Azure DevOps Services in a browser.
 ms.topic: quickstart
 ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/30/2025
+ms.update: 90-days
+ms.date: 09/18/2025
 #customer intent: As a project team member, I want to set up Azure DevOps CLI and understand how to access pipelines, boards, repos, and artifacts. 
 ---
 
@@ -16,19 +17,40 @@ ms.date: 05/30/2025
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-In this quickstart, you set up and start using the Azure DevOps extension for Azure Command Line Interface (CLI). With Azure CLI, you can manage many Azure DevOps Services from the command line. Azure CLI commands enable you to streamline your tasks with faster and flexible interactive canvas, bypassing user interface workflows.
+This quickstart shows how to install and start using the Azure DevOps extension for the Azure Command Line Interface (CLI). The extension adds commands for managing Azure DevOps Services from the command line so you can script and automate common tasks.
+
+What you'll learn:
+- How to install the Azure DevOps extension for Azure CLI.
+- How to sign in, configure defaults, and get help for commands.
+- How to open Azure DevOps in a browser from the CLI.
+
+Quick steps:
+1. Install Azure CLI (if not already installed).
+2. Add or update the Azure DevOps extension.
+3. Sign in and set default organization/project.
+4. Run `az devops --help` or open an artifact with `--open`.
 
 > [!NOTE]  
-> The Azure DevOps CLI is only available for use with Azure DevOps Services. The Azure DevOps extension for the Azure CLI doesn't support any version of Azure DevOps Server.
+> The Azure DevOps CLI extension works only with Azure DevOps Services (cloud). It doesn't support Azure DevOps Server (on-premises).
 
-To start using the Azure DevOps extension for Azure CLI:
+## Install and update
 
-1. Install Azure CLI. Follow the instructions in [Install the Azure CLI](/cli/azure/install-azure-cli) to set up your Azure CLI environment. At a minimum, your Azure CLI version must be 2.10.1. You can use the `az --version` command to validate.
+1. Install Azure CLI. Follow the steps in [Install the Azure CLI](/cli/azure/install-azure-cli). After installation, verify your version:
+
+```azurecli
+az --version
+```
 
 1. Add the Azure DevOps extension.
 
    ```azurecli
    az extension add --name azure-devops
+   ```
+
+   If you already have the extension installed, and want to make sure you have the latest version, run the update command:
+
+   ```azurecli
+   az extension update --name azure-devops
    ```
 
 1. To confirm the installation, run the command `az extension list` or `az extension show --name azure-devops`.
@@ -43,6 +65,8 @@ To start using the Azure DevOps extension for Azure CLI:
    ```azurecli
    az devops configure --defaults organization=https://dev.azure.com/contoso project=ContosoWebApp
    ```
+
+[!INCLUDE [enable-mcp-server](../boards/includes/enable-mcp-server.md)]
 
 ## Use commands
 

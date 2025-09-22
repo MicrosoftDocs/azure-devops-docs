@@ -7,9 +7,6 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-### I use TFS on-premises and I don't see some of these features. Why not?
+### Why don't I see some of these features in my on-premises Azure DevOps Server?
 
-Some of these features are available only on
-[Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
-and not yet available on-premises. Some features are available on-premises if you have
-[upgraded to the latest version of TFS](/azure/devops/server/upgrade/get-started).
+Some of these features are available only on [Azure DevOps Services](https://azure.microsoft.com/products/devops) and not available for on-premises [Azure DevOps Server](https://azure.microsoft.com/products/devops/server). Some features are available only in the latest version of Azure DevOps Server.

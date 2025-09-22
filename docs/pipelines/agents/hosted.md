@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 08/20/2025
+ms.date: 09/03/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -33,16 +33,16 @@ You can see the installed software for each Windows hosted agent image by choosi
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
-| Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
+| Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-latest` OR `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
+| Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 | Windows Server 2019 with Visual Studio 2019 - See [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)| *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
 
 The **windows-2019** image is the default image for classic build pipelines. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
 #### Windows image updates
 
+* The `windows-latest` label is migrating from Windows Server 2022 to Windows Server 2025 beginning September 2, 2025 with a completion date of September 30, 2025. For more information see [Windows-latest workflows will use Windows Server 2025](https://github.com/actions/runner-images/issues/12677).
 * [Windows Server 2025 with Visual Studio 2022 image is GA](https://aka.ms/azdo-windows)
-  * The `windows-latest` label still refers to `windows-2022`. The change to `windows-2025` will be made in the future and this page will be updated at that time.
 * [[Windows & Ubuntu] .NET 6 will be removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
 * [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
 
@@ -84,12 +84,12 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 #### macOS images updates
 
-* The macOS 13 Ventura image will be deprecated starting September 1, 2025, with plans for retirement on November 14, 2025. For more information, see [Upcoming Updates for Azure Pipelines Agents Images - mac-OS 13 Ventura](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
-* [[macOS] Starting August 11, 2025, if your workflow is running on a macOS-15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
+* The macOS 13 Ventura image will be deprecated starting September 1, 2025, with plans for retirement on November 14, 2025. For more information, see [Upcoming Updates for Azure Pipelines Agents Images - macOS 13 Ventura](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
+* [[macOS] Starting August 11, 2025, if your workflow is running on a macOS 15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
 * The macOS 15 Sequoia hosted agent image is in GA.
  * The `macOS-latest` label still refers to `macOS-14`. The migration of `macos-latest` to refer to `macOS-15` will begin August 4, 2025, with a planned completion date of August 30, 2025. For more information, see [[macOS] macos-latest YAML-label will use macos-15 in August 2025](https://github.com/actions/runner-images/issues/12520).
 * [[macOS] Xcode 15.4 will be removed from macOS15 images on May 29th, 2025](https://github.com/actions/runner-images/issues/12195)
-* [The macOS-15 Sequoia image is available in preview](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os)
+* [The macOS 15 Sequoia image is available in preview](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os)
 * Apple silicon (ARM64) support for macOS image - for more information on joining the preview, see [Apple silicon (ARM64) support for macOS image](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
 * The macOS-12 Monterey image is retired
 

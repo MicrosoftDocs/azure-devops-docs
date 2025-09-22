@@ -143,8 +143,10 @@ The updated file looks like this:
 ```yaml
 steps:
 - ${{ if eq(resources.repositories['self'].ref, resources.repositories['self'].defaultBranch) }}:
-  - script: dir
+  - task: CmdLine@2
     displayName: 'Run my script (injected from decorator)'
+    inputs:
+      script: dir
 ```
 
 You can start to see the power of this extensibility point.
@@ -165,8 +167,10 @@ If we see another script task, we shouldn't inject ours.
 ```yaml
 steps:
 - ${{ if and(eq(resources.repositories['self'].ref, resources.repositories['self'].defaultBranch), not(containsValue(job.steps.*.task.id, 'd9bafed4-0b18-4f58-968d-86655b4d2ce9'))) }}:
-  - script: dir
+  - task: CmdLine@2
     displayName: 'Run my script (injected from decorator)'
+    inputs:
+      script: dir
 ```
 
 ## 5. Specify a target task

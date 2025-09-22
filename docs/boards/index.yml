@@ -10,15 +10,15 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 04/24/2024 
+  ms.date: 09/02/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  # Card (optional)
-  - title: About Azure Boards
+  # Card 1 - Start with getting started (most important for new users)
+  - title: Get started with Azure Boards
     linkLists:
       - linkListType: overview
         links:
@@ -26,16 +26,6 @@ landingContent:
             url: ./get-started/what-is-azure-boards.md
           - text: About work items
             url: ./work-items/about-work-items.md
-      - linkListType: concept
-        links:
-          - text: About default processes
-            url: ./work-items/guidance/choose-process.md
-          - text: Agile process workflow
-            url: ./work-items/guidance/agile-process-workflow.md
-          - text: Best practices for Agile project management
-            url: best-practices-agile-project-management.md
-  - title: Get started
-    linkLists:
       - linkListType: quickstart
         links:
           - text: Sign up for Azure Boards
@@ -44,12 +34,44 @@ landingContent:
             url: ./get-started/plan-track-work.md
           - text: Get started as a Stakeholder
             url: ../organizations/security/get-started-stakeholder.md
-  - title: Plan your project
+
+  # Card 2 - Security (foundational for all implementations)
+  - title: Secure & govern
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Secure your Azure Boards
+            url: ./secure-your-azure-boards.md
+          - text: About permissions and access levels
+            url: ./get-started/permissions-access-boards.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set work tracking permissions
+            url: ../organizations/security/set-permissions-access-work-tracking.md
+          - text: Add external users
+            url: ../organizations/accounts/add-external-user.md
+          - text: Manage conditional access
+            url: ../organizations/accounts/change-application-access-policies.md
+  
+  # Card 3 - Core concepts (foundation knowledge)
+  - title: Understand processes & workflows
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About default processes
+            url: ./work-items/guidance/choose-process.md
+          - text: Agile process workflow
+            url: ./work-items/guidance/agile-process-workflow.md
+          - text: Best practices for Agile project management
+            url: best-practices-agile-project-management.md
       - linkListType: overview
         links:
           - text: About Backlogs & Agile project management
             url: ./backlogs/backlogs-overview.md
+
+  # Card 4 - Plan your work (logical next step after understanding)
+  - title: Plan & organize your work
+    linkLists:
       - linkListType: quickstart
         links:
           - text: Create your backlog
@@ -60,78 +82,100 @@ landingContent:
             url: ./backlogs/organize-backlog.md
       - linkListType: tutorial
         links:
-          - text: Bulk add or modify work items (Excel)
-            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
-          - text: Bulk add or modify work items (Web)
-            url: ./backlogs/bulk-modify-work-items.md
-  - title: Implement Kanban
+          - text: Use work item templates
+            url: ./backlogs/work-item-template.md
+          - text: Add tags to work items
+            url: ./queries/add-tags-to-work-items.md
+
+  # Card 5 - Choose your methodology (Kanban vs Scrum)
+  - title: Choose your methodology
     linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Board quickstart
-            url: ./boards/kanban-quickstart.md
       - linkListType: tutorial
         links:
-          - text: Board overview
+          - text: Implement Kanban boards
+            url: ./boards/kanban-quickstart.md
+          - text: Kanban board overview
             url: ./boards/kanban-overview.md
-          - text: Add columns
-            url: ./boards/add-columns.md
-          - text: Customize your board
-            url: ./configure-customize.md
-  - title: Implement Scrum
-    linkLists:
-      - linkListType: overview
-        links:
           - text: About Sprints & Scrum 
             url: ./sprints/scrum-overview.md
-      - linkListType: tutorial
-        links:
           - text: Assign work to sprints
             url: ./sprints/assign-work-sprint.md
-          - text: Set capacity
+      - linkListType: how-to-guide
+        links:
+          - text: Add board columns
+            url: ./boards/add-columns.md
+          - text: Set sprint capacity
             url: ./sprints/set-capacity.md
-          - text: Monitor sprint burndown
-            url: ../report/dashboards/configure-sprint-burndown.md
-  - title: List & manage work items
+
+  # Card 6 - Track & manage work (daily operations)
+  - title: Track & manage work items
     linkLists:
       - linkListType: tutorial
         links:
           - text: Create managed queries
             url: ./queries/using-queries.md
-          - text: Do ad hoc searches
+          - text: Search for work items
             url: ./queries/search-box-queries.md
           - text: Define, triage, & manage bugs
             url: ./backlogs/manage-bugs.md
           - text: Remove, delete, or restore work items  
             url: ./backlogs/remove-delete-work-items.md
-  - title: Collaborate 
+      - linkListType: how-to-guide
+        links:
+          - text: Bulk modify work items (Web)
+            url: ./backlogs/bulk-modify-work-items.md
+          - text: Bulk modify work items (Excel)
+            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
+
+  # Card 7 - Monitor progress (reporting & analytics)
+  - title: Monitor progress & performance
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Monitor sprint burndown
+            url: ../report/dashboards/configure-sprint-burndown.md
+          - text: Link work items to objects
+            url: ./backlogs/add-link.md
+      - linkListType: reference
+        links:
+          - text: Work items quick reference
+            url: ./work-items/quick-ref.md
+          - text: Query quick reference
+            url: ./queries/query-index-quick-ref.md
+
+  # Card 8 - Collaborate & integrate (team features)
+  - title: Collaborate & integrate
     linkLists:
       - linkListType: quickstart
         links:
           - text: Connect Azure Boards to GitHub
             url: ./github/connect-to-github.md
-          - text: Link GitHub commits, pull requests, & branches to work items
+          - text: Link GitHub commits & pull requests
             url: ./github/link-to-from-github.md
-      - linkListType: concept
-        links:
-          - text: Link work items to objects
-            url: ./backlogs/add-link.md
       - linkListType: tutorial
         links:
-          - text: Use work item templates
-            url: ./backlogs/work-item-template.md
-          - text: Add tags to work items
-            url: ./queries/add-tags-to-work-items.md
           - text: Azure Boards with Microsoft Teams
             url: ./integrations/boards-teams.md
-  - title: Configure & customize
+
+  # Card 9 - Scale for larger organizations
+  - title: Scale for enterprise
     linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Portfolio management
+            url: ./plans/portfolio-management.md
+          - text: Review team deliverables & plans
+            url: ./plans/review-team-plans.md
+          - text: Implement Scaled Agile Framework®
+            url: ./plans/scaled-agile-framework.md
       - linkListType: concept
         links:
           - text: About teams & Agile tools
             url: ../organizations/settings/about-teams-and-settings.md
-          - text: Configure & customize Boards 
-            url: configure-customize.md
+
+  # Card 10 - Customize & configure (advanced users)
+  - title: Customize & configure
+    linkLists:
       - linkListType: tutorial
         links:
           - text: Set area paths
@@ -142,41 +186,25 @@ landingContent:
             url: ../organizations/settings/work/add-custom-field.md
           - text: Customize the workflow
             url: ../organizations/settings/work/customize-process-workflow.md
-          - text: See more...
-            url: ../reference/index.yml
-  - title: Agile at scale
-    linkLists:
-      - linkListType: tutorial
+      - linkListType: concept
         links:
-          - text: Portfolio management
-            url: ./plans/portfolio-management.md
-          - text: Review team deliverables & plans
-            url: ./plans/review-team-plans.md
-          - text: Implement Scaled Agile Framework®
-            url: ./plans/scaled-agile-framework.md
-  - title: Troubleshoot
+          - text: Configure & customize Boards 
+            url: configure-customize.md
+
+  # Card 11 - Reference & troubleshooting (support materials)
+  - title: Reference & troubleshooting
     linkLists:
+      - linkListType: reference
+        links:
+          - text: Work item field index
+            url: ./work-items/guidance/work-item-field.md
+          - text: Azure DevOps CLI
+            url: /cli/azure/boards
+          - text: REST API
+            url: /rest/api/azure/devops/work
       - linkListType: how-to-guide
         links:
           - text: Fix reordering & nesting issues
             url: ./backlogs/resolve-backlog-reorder-issues.md
           - text: FAQs 
             url: faqs.yml
-  - title: Quick reference
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Work items quick reference
-            url: ./work-items/quick-ref.md
-          - text: Query quick reference
-            url: ./queries/query-index-quick-ref.md
-          - text: Work item field index
-            url: ./work-items/guidance/work-item-field.md
-  - title: Developer resources
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Azure DevOps CLI
-            url: /cli/azure/boards
-          - text: REST API
-            url: /rest/api/azure/devops/work

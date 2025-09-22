@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 8/11/2025
+ms.date: 09/05/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="5"><a href="2025/sprint-261-update.md" data-raw-source="[4 September 2025](2025/sprint-261-update.md)"> September 4 2025</a></td>
+    <td>New SARIF processing completed service hook event</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>OAuth client secrets now shown only once</td><td>General</td><td>N/A</td></tr>
+    <td>Dynamic checklist support in work item Markdown fields</td><td>Boards</td><td>Future</td></tr>
+    <td>Improved navigation for pull request threads and discussions</td><td>Repos</td><td>Future</td></tr>
+    <td>Associate automated tests to test cases</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
     <td rowspan="9"><a href="2025/sprint-260-update.md" data-raw-source="[11 August 2025](2025/sprint-260-update.md)"> August 11 2025</a></td>
     <td>Only organizations with existing public projects can create new ones</td><td>General</td><td>N/A</td></tr>
@@ -198,7 +205,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Improve pasting of HTML based content into Wikis</td><td>Wiki</td><td>Future</td></tr>
 <tr>
 <tr>
-    <td rowspan="14"><a href="2024/sprint-245-update.md" data-raw-source="[26 September 2024](2024/sprint-245-update.md)"> 26 September 2024</a></td>
+    <td rowspan="12"><a href="2024/sprint-245-update.md" data-raw-source="[26 September 2024](2024/sprint-245-update.md)"> 26 September 2024</a></td>
     <td>Pull request branches now visible in Advanced Security branch picker </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Automatic updates for default branch changes in Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Generic third-party SARIF support for Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
@@ -209,7 +216,6 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Permanently delete attachments</td><td>Boards</td><td>Future</td></tr>
     <td>New Health and usage panel in repo file hub </td><td>Repos</td><td>Future</td></tr>
     <td>Azure Pipeline agent v4 runs on .NET 8</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Preview mode for shell tasks arguments validation</td><td>Pipelines</td><td>Future</td></tr>
     <td>Seamless build Pipeline integration for test case execution</td><td>Test Plans</td><td>Future</td></tr>
     <td>Test and feedback extension in Manifest V3 (Edge release)</td><td>Test Plans</td><td>Future</td></tr>
 <tr>

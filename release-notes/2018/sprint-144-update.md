@@ -16,8 +16,31 @@ Check out the [Features](#features) list below for more.
 
 Azure Boards:
 
-- [Link GitHub commits and pull requests to Azure Boards work items](#link-github-commits-and-pull-requests-to-azure-boards-work-items)
-- [Acquire Azure Boards as a service](#acquire-azure-boards-as-a-service)
+- [Link GitHub commits and pull requests to Azure Boards work items - Sprint 144 Update](#link-github-commits-and-pull-requests-to-azure-boards-work-items---sprint-144-update)
+  - [Features](#features)
+  - [Azure Boards](#azure-boards)
+    - [Link GitHub commits and pull requests to Azure Boards work items](#link-github-commits-and-pull-requests-to-azure-boards-work-items)
+    - [Acquire Azure Boards as a service](#acquire-azure-boards-as-a-service)
+  - [Azure Repos](#azure-repos)
+    - [Rerun expired build for auto-complete pull requests](#rerun-expired-build-for-auto-complete-pull-requests)
+  - [Azure Pipelines](#azure-pipelines)
+    - [Manage GitHub releases using pipelines](#manage-github-releases-using-pipelines)
+    - [VS Code extension for YAML based pipelines](#vs-code-extension-for-yaml-based-pipelines)
+    - [Web editor with IntelliSense for YAML pipelines](#web-editor-with-intellisense-for-yaml-pipelines)
+    - [ServiceNow Change Management integration](#servicenow-change-management-integration)
+    - [Links to specific lines in a build log](#links-to-specific-lines-in-a-build-log)
+    - [Specify multi-platform pipeline in a single file](#specify-multi-platform-pipeline-in-a-single-file)
+    - [Automatically redeploy on failure](#automatically-redeploy-on-failure)
+  - [Azure Artifacts](#azure-artifacts)
+    - [PyPI public preview](#pypi-public-preview)
+  - [General](#general)
+    - [Service health portal](#service-health-portal)
+  - [Wiki](#wiki)
+    - [Markdown templates for formulas and videos](#markdown-templates-for-formulas-and-videos)
+  - [Administration](#administration)
+    - [Restore deleted projects](#restore-deleted-projects)
+  - [Next steps](#next-steps)
+  - [How to provide feedback](#how-to-provide-feedback)
 
 Azure Repos:
 
@@ -25,13 +48,31 @@ Azure Repos:
 
 Azure Pipelines:
 
-- [Manage GitHub releases using pipelines](#manage-github-releases-using-pipelines)
-- [VS Code extension for YAML based pipelines](#vs-code-extension-for-yaml-based-pipelines)
-- [Web editor with IntelliSense for YAML pipelines](#web-editor-with-intellisense-for-yaml-pipelines)
-- [ServiceNow Change Management integration](#servicenow-change-management-integration)
-- [Links to specific lines in a build log](#links-to-specific-lines-in-a-build-log)
-- [Specify multi-platform pipeline in a single file](#specify-multi-platform-pipeline-in-a-single-file)
-- [Automatically redeploy on failure](#automatically-redeploy-on-failure)
+- [Link GitHub commits and pull requests to Azure Boards work items - Sprint 144 Update](#link-github-commits-and-pull-requests-to-azure-boards-work-items---sprint-144-update)
+  - [Features](#features)
+  - [Azure Boards](#azure-boards)
+    - [Link GitHub commits and pull requests to Azure Boards work items](#link-github-commits-and-pull-requests-to-azure-boards-work-items)
+    - [Acquire Azure Boards as a service](#acquire-azure-boards-as-a-service)
+  - [Azure Repos](#azure-repos)
+    - [Rerun expired build for auto-complete pull requests](#rerun-expired-build-for-auto-complete-pull-requests)
+  - [Azure Pipelines](#azure-pipelines)
+    - [Manage GitHub releases using pipelines](#manage-github-releases-using-pipelines)
+    - [VS Code extension for YAML based pipelines](#vs-code-extension-for-yaml-based-pipelines)
+    - [Web editor with IntelliSense for YAML pipelines](#web-editor-with-intellisense-for-yaml-pipelines)
+    - [ServiceNow Change Management integration](#servicenow-change-management-integration)
+    - [Links to specific lines in a build log](#links-to-specific-lines-in-a-build-log)
+    - [Specify multi-platform pipeline in a single file](#specify-multi-platform-pipeline-in-a-single-file)
+    - [Automatically redeploy on failure](#automatically-redeploy-on-failure)
+  - [Azure Artifacts](#azure-artifacts)
+    - [PyPI public preview](#pypi-public-preview)
+  - [General](#general)
+    - [Service health portal](#service-health-portal)
+  - [Wiki](#wiki)
+    - [Markdown templates for formulas and videos](#markdown-templates-for-formulas-and-videos)
+  - [Administration](#administration)
+    - [Restore deleted projects](#restore-deleted-projects)
+  - [Next steps](#next-steps)
+  - [How to provide feedback](#how-to-provide-feedback)
 
 Azure Artifacts:
 

@@ -1,7 +1,7 @@
 ---
 title: Git authentication and improved pipeline scalability
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 2/12/2025
 description: Git authentication and improved pipeline scalability
 ---

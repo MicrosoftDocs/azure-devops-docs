@@ -7,21 +7,30 @@ ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 03/14/2025
+ms.date: 09/19/2025
 ---
 
 # Resolve Azure DevOps and Office integration issues
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-If the **Team** ribbon is missing in Microsoft Excel, as shown in the following image, do the procedures in this article to resolve the issue.
+Azure DevOps integrates with Microsoft Office applications, primarily Excel and Project, to enable bulk editing and management of work items. This integration relies on the Azure DevOps Office Integration add-in, which adds a **Team** ribbon to your Office applications.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Excel and Azure DevOps/Office integration Team ribbon.](media/excel-team-ribbon.png)
 
-> [!NOTE]
-> The Azure DevOps Office integration is feature complete with no plans for updates or improvements. Future investments focus on native tooling for [bulk importing or updating work items using CSV files](../../queries/import-work-items-from-csv.md). If you encounter issues with the Office integration, consider using this alternative.
-> All Office integration tasks require an installed version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family), which installs the Azure DevOps Office Integration Add-in. For prerequisites, see [Azure Boards and Office integration](track-work.md).
+> [!IMPORTANT]
+> The Azure DevOps Office integration add-in is no longer supported and might not function with current versions of Office or browsers. Microsoft doesn't provide updates or fixes for this add-in. For bulk work item operations, use the [CSV import/export functionality](../../queries/import-work-items-from-csv.md), which is the recommended and supported approach.
+
+Common scenarios where you might encounter integration issues include:
+
+- **Missing Team ribbon**: The Azure DevOps Team ribbon doesn't appear in Excel or other Office applications
+- **Add-in not loading**: The Azure DevOps add-in fails to load or is disabled
+- **Authentication problems**: Sign-in issues after password changes or organizational updates  
+- **Publishing errors**: Data conflicts or validation errors when updating work items from Office
+- **Installation conflicts**: Issues arising from installing Office and Visual Studio in different orders
+
+This article provides step-by-step solutions for the most common Azure DevOps Office integration problems. Before troubleshooting, ensure you have the necessary prerequisites and understand the current state of Office integration support.
 
 [!INCLUDE [temp](../../includes/deprecate-project.md)]
 
@@ -34,7 +43,7 @@ This tool allows you to connect to Azure Boards from Excel. To install the Azure
 1. Install the tool by running the downloaded file.
 1. Restart Excel to see the **Team** ribbon.
 
-If you still don't see the **Team** ribbon, follow the steps in the following sections.
+If you still don't see the **Team** ribbon, do the steps in the following sections.
 
 ## Enable the Azure DevOps add-in
 
@@ -232,9 +241,74 @@ You can use the Office Excel tools to find and resolve an error in a work item l
    - If the **Error Checking** dialog box shows another error, repeat the previous two steps to resolve the error.  
    - If a message appears that indicates error checking completed, select **OK** to close both this message and the **Error Checking** dialog box.  
 
+## Resolve TF80070: An error occurred while performing the operation
+
+The TF80070 error typically occurs due to assembly binding conflicts between different versions of the Newtonsoft.Json library used by Azure DevOps Office integration and other installed applications.
+
+:::image type="content" source="../../media/error-tf80070.png" alt-text="Screenshot showing error message for TF80070.":::
+
+### Symptoms
+
+You might encounter this error when you:
+- Attempt to connect to Azure DevOps from Excel
+- Open or refresh work item lists in Excel
+- Publish changes from Excel to Azure DevOps
+
+### Resolution
+
+Resolve this issue by creating a configuration file that redirects assembly bindings to the correct version of the Newtonsoft.Json library.
+
+1. Locate your Excel installation folder. The typical paths are:
+   - **Microsoft 365/Office 2016-2021**: `C:\Program Files\Microsoft Office\root\Office16\`
+   - **Office 2013**: `C:\Program Files\Microsoft Office\Office15\`
+   - **Office 2010**: `C:\Program Files\Microsoft Office\Office14\`
+
+2. Create a new text file in the Excel installation folder and name it `excel.exe.config`.
+
+   > [!IMPORTANT]
+   > You need administrator privileges to create files in the Office installation directory. Right-click on **Notepad** and select **Run as administrator** before you create the file.
+
+3. Add the following XML content to the `excel.exe.config` file:
+
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <configuration>
+     <runtime>
+       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+         <dependentAssembly>
+           <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30AD4FE6B2A6AEED" culture="neutral"/>
+           <bindingRedirect oldVersion="0.0.0.0-12.0.0.0" newVersion="13.0.0.0"/>
+         </dependentAssembly>
+       </assemblyBinding>
+     </runtime>
+   </configuration>
+   ```
+
+4. Save the file and ensure it's named exactly `excel.exe.config` (not `excel.exe.config.txt`).
+
+5. Close all Excel instances and restart Excel.
+
+6. Test the connection by attempting to connect to Azure DevOps from Excel again.
+
+If the problem persists after completing the previous troubleshooting steps, consider repairing the user's profile and checking for corrupted system files.
+
+1. Open the Command Prompt or PowerShell as the Administrator.
+2. Run the DISM tool to repair the Windows image:
+
+   ```cmd
+   DISM.exe /Online /Cleanup-Image /RestoreHealth
+   ```
+
+3. After DISM completes, run the System File Checker:
+
+   ```cmd
+   sfc /scannow
+   ```
+
 ## Related content
 
 - [Bulk modify work items (web portal)](../bulk-modify-work-items.md)  
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml)
 - [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)
+

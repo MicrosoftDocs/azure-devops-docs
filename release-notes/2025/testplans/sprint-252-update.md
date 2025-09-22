@@ -2,7 +2,7 @@
 title: Azure DevOps Release Notes - Azure Test Plans Sprint 252 Update
 description: See the Sprint 252 feature updates for Azure Test Plans, including next steps.
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 2/24/2025
 ---
 

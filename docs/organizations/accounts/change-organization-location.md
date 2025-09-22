@@ -2,13 +2,13 @@
 title: Find or change the geography of your organization
 titleSuffix: Azure DevOps Services
 ms.custom: references_regions
-description: Find your organization's default location or update your organization's region in Azure DevOps.
+description: Find your organization's default location and choose your organization's geography location when you create one.
 ms.subservice: azure-devops-organizations
 ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 04/03/2025
+ms.date: 08/26/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -17,6 +17,9 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When you [create an organization](create-organization.md) in Azure DevOps, you can choose the geography where your organization gets hosted. You might select your organization's geography based on locality, network latency, or sovereignty requirements for data centers. The default location for your organization is based on the nearest [Microsoft Azure geography](https://azure.microsoft.com/regions) where services are available.
+
+> [!IMPORTANT]
+> We're temporarily pausing organization geography moves. Follow [Azure DevOps release notes](https://aka.ms/azuredevops/releasenotes) to get notified of future changes when we resume organization geography changes.
 
 ## Find your organization geography
 
@@ -28,7 +31,7 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 
 1. Select **Overview**. The geography information is listed further down the page.
 
-   :::image type="content" source="media/change-organization-location/organization-settings-geography.png" alt-text="Screenshot showing the region in Organization settings.":::
+   :::image type="content" source="media/change-organization-location/organization-settings-geography.png" alt-text="Screenshot showing the geography in Organization settings.":::
 
 ## Prerequisites
 
@@ -36,26 +39,28 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 
 ## Change organization geography
 
-> [!IMPORTANT]
-> You can only change your organization's geography to one of the following locations:
-> - Australia
-> - Brazil
-> - Canada
-> - Asia Pacific
-> - Europe
-> - India
-> - United Kingdom
-> - United States
+By default, your organization is associated with the closest geography based on your location.
 
-By default, your organization is associated with the closest geography based on your location. However, changing to a different data center (region) within the same geography isn't possible.
+When organization location moves resume, you can only change your organization's geography to one of the following locations:
+- Australia
+- Brazil
+- Canada
+- Asia Pacific
+- Europe
+- India
+- United Kingdom
+- United States
+
+<!---REMOVING TEMPORARILY PER SOO, 8/26/2025
+However, changing to a different data center (geography) within the same geography isn't possible.
 
 To change your organization geography, use [Azure DevOps Virtual Support Agent](https://go.microsoft.com/fwlink/?linkid=2160944).
 
-We can't provide a specific time frame for your organization's relocation due to potential delays from various factors and the automated nature of the migration process. The process might get rescheduled to take place over the weekend to ensure all necessary changes are successfully completed.
+We can't provide a specific time frame for your organization's relocation due to potential delays from various factors and the automated nature of the migration process. The process might get rescheduled to take place over the weekend to ensure all necessary changes are successfully completed.-->
 
 ## Related content
 
-- [Explore worldwide data regions for Azure DevOps](../security/data-location.md)
+- [Explore worldwide data locations for Azure DevOps](../security/data-location.md)
 - [View data locations for Azure DevOps](../security/data-location.md)
 - [Learn about data protection](../security/data-protection.md)
 - [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)

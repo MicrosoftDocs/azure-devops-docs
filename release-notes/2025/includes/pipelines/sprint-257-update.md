@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Managed DevOps Pools - Image Deprecations
 
-Due to [Windows Server 2019 hosted image deprecation](/azure/devops/release-notes/2025/pipelines/sprint-256-update#windows-server-2019-hosted-image-deprecation-schedule) and [Ubuntu 20.04 deprecation](/azure/devops/release-notes/2025/pipelines/sprint-253-update#the-ubuntu-2004-pipeline-image-is-deprecated-and-will-be-retired-april-1), Managed DevOps Pools is deprecating the “Azure Pipelines – Windows Server 2019” image and Ubuntu 20.04 images. More details about the deprecations can be found [here](/azure/devops/managed-devops-pools/configure-images?view=azure-devops&branch=main&tabs=azure-portal#image-deprecation-schedule). You can read about life cycle of images offered by Managed DevOps Pools [here](/azure/devops/managed-devops-pools/configure-images?view=azure-devops&branch=main&tabs=azure-portal#image-lifecycle).
+Due to [Windows Server 2019 hosted image deprecation](/azure/devops/release-notes/2025/pipelines/sprint-256-update#windows-server-2019-hosted-image-deprecation-schedule) and [Ubuntu 20.04 deprecation](/azure/devops/release-notes/2025/pipelines/sprint-253-update#the-ubuntu-2004-pipeline-image-is-deprecated-and-will-be-retired-april-1), Managed DevOps Pools is deprecating the “Azure Pipelines – Windows Server 2019” image and Ubuntu 20.04 images. More details about the deprecations can be found [here](/azure/devops/managed-devops-pools/configure-images?view=azure-devops&branch=main&tabs=azure-portal#image-deprecation-schedule&preserve-view=true). You can read about life cycle of images offered by Managed DevOps Pools [here](/azure/devops/managed-devops-pools/configure-images?view=azure-devops&branch=main&tabs=azure-portal#image-lifecycle&preserve-view=true).
 
 ### New Triggers page
 
@@ -112,6 +112,9 @@ When queuing this pipeline, you have the option of choosing multiple regions to 
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Run pipeline region multi selection.](../../media/257-pipelines-08.png "Screenshot of Run pipeline region multi selection.")](../../media/257-pipelines-08.png#lightbox)
+
+> [!NOTE]
+> The `stringList` data type isn't available in templates. Use the `object` data type in templates instead.
 
 ### See the full YAML code of a pipeline run
 

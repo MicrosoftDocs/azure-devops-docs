@@ -2,7 +2,7 @@
 title: Azure DevOps Release Notes - Azure Repos Sprint 235 Update
 description: See the Sprint 235 feature updates for Azure Repos, including next steps.
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 2/29/2024
 ---
 

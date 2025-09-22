@@ -256,9 +256,9 @@ These investments include:
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q2</td>
       </tr>         
       <tr>
-         <td><a href="/azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-248-update#azure-boards-integration-with-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
+         <td><a href="/azure/devops/release-notes/2025/sprint-260-update#azure-boards-and-pipelines-integration-for-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-260-update#azure-boards-and-pipelines-integration-for-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
-         <td>2025 Q3</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q3</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent" data-raw-source="[Work item integration wth GitHub coding agent](/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent)">Support work item integration with the <br/>GitHub Copilot coding agent (preview)</a></td>
@@ -272,7 +272,7 @@ These investments include:
 
 Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs). Features to support new scenarios will be added to Managed DevOps Pools and not Virtual Machine Scale Set pools. Managed DevOps Pools is generally available, so you can migrate your Virtual Machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible.
 
-You will find the detailed roadmap [here](/azure/devops/managed-devops-pools/features-timeline?view=azure-devops)
+You will find the detailed roadmap [here](/azure/devops/managed-devops-pools/features-timeline?view=azure-devops&preserve-view=true).
 
 ### YAML and release pipelines feature parity
 

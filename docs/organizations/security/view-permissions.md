@@ -1,213 +1,124 @@
 ---
-title: View permissions for yourself or others
+title: View permissions and effective access
 titleSuffix: Azure DevOps
-description: How you can view the permissions assigned to you or your team members, including project-level, collection-level, and object-level permissions. 
-ms.assetid:  
+description: Learn how to view permissions, check effective permissions for a user or group, and troubleshoot access issues in Azure DevOps.
 ms.subservice: azure-devops-security
 ai-usage: ai-assisted
-ms.topic: quickstart
+ms.custom: security-refresh
 ms.author: chcomley
 author: chcomley
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/17/2024
-ms.custom: sfi-image-nochange
---- 
+ms.update: 90-days
+ms.date: 09/18/2025
+---
 
-# View permissions for yourself or others
+# View permissions and effective access
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In this article, learn how to view your permissions or the permissions for other users in Azure DevOps. If you don't have permission to access a feature or function, you can request it from the right resource.
+This article shows how to view permissions and check effective access for users and groups at the organization, project, and repository (or other object) levels. It explains permission states (Allow, Deny, Inherit), how inheritance and group membership affect effective permissions, and steps to troubleshoot common access issues.
 
-You can set and view permissions at the following three levels:
-- [Project-level](#view-project-level-permissions)
-- [Organization or Collection-level](#view-organization-or-collection-level-permissions)
-- [Object-level](#view-object-level-permissions)
- 
-For more information, see [Get started with permissions, access, and security groups](about-permissions.md).
+What you'll learn:
+- Where to view permission assignments in the web portal.
+- How to check effective permissions for a user or group.
+- Common reasons permissions don't have the expected effect (inheritance, denies, Stakeholder access, Microsoft Entra ID group mapping).
 
-## Prerequisites
+Quick steps:
+1. Open **Organization settings** or **Project settings** > **Security** (or **Permissions**).
+2. Select the object (project, repository, or group) and view assigned permissions.
+3. Use the Users/Groups or Effective Permissions UI to inspect effective access.
+4. If needed, examine group memberships and deny rules that override allows.
 
-| Category | Requirements |
-|--------------|-------------|
-| **Project access** | [Project member](add-users-team-project.md). |
-| **Permissions**| Member of the **Project Valid Users** group or **Project Collection Valid Users** group.|
+> [!NOTE]
+> Permission management features and UI vary slightly between Azure DevOps Services (cloud) and on-premises Azure DevOps Server. The following guidance calls out UI differences where applicable.
 
-## View project-level permissions
+## Permission model basics
 
-Do the following steps to view project-level permissions for you or other users.
+Permissions in Azure DevOps use three assignment states:
+- Allow—explicitly grants a permission.
+- Deny—explicitly denies a permission and overrides Allow.
+- Inherit — no explicit assignment at this level; the permission is inherited from parent scopes or group membership.
 
-::: moniker range="azure-devops"
+Effective permissions are computed by evaluating assignments across:
+- The object itself (project, repo, area path, etc.)
+- Parent scopes (collection, organization, project)
+- Group memberships (built-in groups, custom groups, Microsoft Entra ID groups)
+- Explicit Deny assignments (take precedence)
 
-> [!NOTE]   
-> To get the new user interface for the **Project Permissions Settings Page**, [enable the preview feature](../../project/navigation/preview-features.md).
+What "effective" permissions means:
 
-#### [Preview page](#tab/preview-page) 
+Effective permissions are the net access a user or group actually has on an object after Azure DevOps evaluates every relevant permission assignment. The system combines explicit Allow and Deny assignments across the object, parent scopes, and all group memberships; explicit Deny entries take priority. In practice, "effective permissions" show the final result (what someone can actually do), not every individual assignment that contributed to that result.
 
-1. Sign in to your project (```https://dev.azure.com/{Your_Organization/Your_Project}```).
-2. Select **Project settings** > **Permissions**.
+For a deep dive on permission resolution and inheritance, see [About permissions, Permission states](about-permissions.md).
 
-	:::image type="content" source="../settings/media/shared/open-project-settings-permissions-preview.png" alt-text="Screenshot shows Project settings and Permissions buttons.":::
+## Where to view permissions
 
-3. Select **Users**. To filter the list, enter a name into the *Search users* box.
+You can view permissions at multiple places in the web portal depending on the object:
 
-	:::image type="content" source="media/view-permissions/search-user-name-s154.png" alt-text="Screenshot shows finding a user, preview page.":::
+- Organization or collection level: **Organization settings** > **Security** (or O**rganization settings** > **Permissions**).
+- Project level: **Project settings** > **Permissions** (or **Project settings** > **Security** in older UIs).
+- Repository, pipeline, board, or other resource: Open the resource, then **Settings** or **Security** (for example, **Repos** > select **repository** > **Security**).
 
-   If your project administration is done using groups, **Expand search** after you begin to enter the user name.
+The **Security**/**Permissions** page shows assigned groups and users and a permission matrix you can filter by user or group.
 
-4. Choose the user you want. The project-level permissions for that user display. These permissions are based on the groups the user belongs to or the permissions set specifically for the user's account.    
-	
-    :::image type="content" source="media/view-permissions/user-permissions-s154.png" alt-text="Screenshot shows Permissions set for a user.":::
-
-5. Select **Member of** to see which security groups and teams that the user belongs to.  
-
-    In the following example, *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group for several projects. 
-
-    :::image type="content" source="media/view-permissions/member-of-view-s154.png" alt-text="Screenshot shows Permissions, Member of tab.":::
-
-#### [Current page](#tab/current-page) 
-
-1. Sign in to your project (```https://dev.azure.com/{Your_Organization/Your_Project}```).
-1. Select **Project settings** > **Security**.
-
-   :::image type="content" source="media/view-permissions/open-security-project-level-vert.png" alt-text="Screenshot shows the Project settings and Security buttons.":::
-
-1. Enter the user name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
-
-   :::image type="content" source="media/view-permissions/search-user-name-vert-nav.png" alt-text="Screenshot of find a user or group name, current page.":::
-
-2. Choose the user name you want. The project-level permissions are based on the groups the user belongs to or the permissions set for the user.      
-
-    :::image type="content" source="media/view-permissions/project-level-user-permissions-vsts.png" alt-text="Screenshot shows Project Administrators Group, Members tab.":::
-
-3. Select **Member of** to see which security groups the user belongs to.  
-
-    In the following example, *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group. 
-
-    :::image type="content" source="media/view-permissions/project-level-member-of-permissions-vsts.png" alt-text="Screenshot shows Security tab, User name, Members tab.":::
-
-* * * 
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-1. Open **Project settings**. Choose the ![gear icon](media/icons/gear_icon.png) gear settings icon, and select **Security**. 
-
-    :::image type="content" source="media/view-permissions/open-project-level-security-horz.png" alt-text="Screenshot shows Open Project Settings, Security, previous nav.":::
-
-2. Enter the user name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
-
-    :::image type="content" source="media/view-permissions/search-user-name.png" alt-text="Screenshot shows searching for user name.":::
-
-3. Choose the user name you want. The project-level permissions are based on the groups the user belongs to or the permissions set for the user.      
-
-    :::image type="content" source="media/view-permissions/project-level-user-permissions-tfs.png" alt-text="Screenshot shows Project level permissions for a user.":::
-
-4. Select **Member of** to see which security groups the user belongs to.  
-
-    In the following example, *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group. 
-
-    :::image type="content" source="media/view-permissions/view-permissions-member-of.png" alt-text="Screenshot shows Web portal, Security tab, User name, Members of.":::
-
-For more information, see [Permissions and groups reference](permissions.md#project-level-groups). 
-
-::: moniker-end
-
-> [!TIP]
-> If there's an asterisk (*) next to a 'Deny' permission, it indicates that the denial applies to all child objects or resources under the specified scope. This means that if a user is denied a permission at a higher level, they're also denied that permission for all related resources, regardless of any other permissions that might be granted at lower levels. 
-> 
-> For example, if a user has 'Deny' permission for 'View project' with an asterisk (*) at the project level, they can't view any of the repositories, boards, or pipelines within that project, even if they are granted 'Allow' permissions at those lower levels.
-
-## View organization or collection-level permissions 
-
-Do the following steps to view organization or collection-level permissions for you or other users.
+## Check effective permissions (UI)
 
 ::: moniker range="azure-devops"
+1. Sign in to `https://dev.azure.com/{Your_Organization}`.
+2. Go to the object you want to inspect (Organization, Project, Repository, etc.).
+3. Select **Project settings** or **Organization settings** > **Permissions** (or **Security**).
+4. Choose **Users** or **Groups**, select the identity you want to inspect, then view the permission grid.
+5. Use any provided "Effective permissions" link or button (if present) to calculate the final effective permission for the selected identity on the chosen object.
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-1. Select **Organization settings**. 
+    :::image type="content" source="media/view-permissions/open-security-project-level-vert.png" alt-text="Open security or permissions for a project.":::
+::: moniker-end
 
-    :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot shows Organization settings button."::: 
+::: moniker range="<azure-devops"
+1. Sign in to your server or collection portal.
+2. Go to **Project settings** > **Security** (or Organization/Collection settings > Security).
+3. Select the group or user and examine the permission matrix. Use the filter and effective-permission controls in the dialog.
+::: moniker-end
 
-2. Select **Permissions** > **Project Collection Administrators** > **Members**. 
+## Check effective permissions (command line / REST)
 
-    :::image type="content" source="media/view-permissions/project-collection-admin-users-s154.png" alt-text="Screenshot shows Members tab in Permissions for Project Collection Administrators group.":::
+If you prefer automation, use the REST API to read ACLs or the Azure DevOps CLI/PowerShell modules to script permission checks. Look up the security namespace for the resource and evaluate ACL bits to compute effective access.
 
-3. View the user's permissions and group membership. For more information, see the previous steps in [View project-level permissions](#view-project-level-permissions).
+## Common scenarios and troubleshooting
 
-::: moniker-end 
+- Deny overrides Allow: An explicit Deny on any scope wins. Check for denies on higher or lower scopes and across group memberships.
+- Membership in multiple groups: Effective permissions combine group assignments; a Deny in any group applies.
+- Inheritance from parent scopes: If a permission is Inherit at the current level, check parent scopes for assignments.
+- Microsoft Entra ID group mapping: If users are added through Microsoft Entra groups, ensure the correct group is synced to Azure DevOps and that the group's membership is what you expect.
+- Stakeholder access limits: Users with Stakeholder access have limited feature availability regardless of permission assignments—verify access level if a user can't perform an action.
+- Dynamic or temporary access: Some policies (like conditional access) or external provisioning might affect sign-in/access—check Microsoft Entra conditional access policies if sign-in fails.
 
-::: moniker range=" < azure-devops"
+Quick troubleshooting checklist
+1. Confirm the user account being used to sign in (matches the identity shown in Azure DevOps).
+2. Inspect the user's direct and indirect group memberships.
+3. Search for any explicit Deny assignments at the object and parent scopes.
+4. Check the user's access level (Stakeholder vs Basic) and licensing limits.
+5. If you're using Microsoft Entra groups, confirm group sync and membership.
+6. If needed, use REST/CLI to list ACLs for the resource and evaluate programmatically.
 
-1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
-2. Select **Admin settings**. 
+## Audit and history
 
-    :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot shows the Admin settings button.":::
+Use the audit logs (Organization settings > Audit logs) to track changes to security groups, permission assignments, and membership changes if your organization has auditing enabled. Audit events can help trace when a permission or membership was changed.
 
-3. Select **Security** > **Project Collection Administrators** > **Members**.
+## Useful links and tools
 
-4. View the user's permissions and group membership. For more information, see the previous steps in [View project-level permissions](#view-project-level-permissions).
+- [About permissions and security groups](about-permissions.md)
+- [Set object-level permissions](set-object-level-permissions.md)
+- [Permissions lookup guide](permissions-lookup-guide.md)
+- [Manage users and groups](add-remove-manage-user-group-security-group.md)
 
-::: moniker-end    
-
-
-
-## View object-level permissions 
-
-Do the following steps to view object-level permissions for you or other users.
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Go to the object and open the Security dialog for the object.
-   For specific instructions, see the following articles: 
-
-:::row:::
-   :::column span="1":::
-   **Area**
-   :::column-end:::
-   :::column span="1":::
-   **Task**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Wiki & dashboard permissions
-   :::column-end:::
-   :::column span="1":::   
-   - [README & wiki](../../project/wiki/manage-readme-wiki-permissions.md)
-   - [Dashboards](../../report/dashboards/dashboard-permissions.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Azure Repos, Azure Pipelines/DevOps (code, build, test, release) permissions 
-   :::column-end:::
-   :::column span="1":::   
-   - [Git branch](../../repos/git/branch-permissions.md)
-   - [Git repository](../../repos/git/set-git-repository-permissions.md)
-   - [TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Builds](../../pipelines/policies/permissions.md#pipeline-permissions)
-   - [Release pipeline security](../../pipelines/policies/permissions.md#release-pipeline-permissions)
-   - [Approvals and approvers](../../pipelines/release/approvals/index.md) 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Azure Boards & work tracking permissions
-   :::column-end:::
-   :::column span="1":::
-   - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)
-   - [Work item query and folder](../../boards/queries/set-query-permissions.md)
-   - Plan permissions
-   :::column-end:::
-:::row-end:::
-
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
-> [Look up a member of the Project Administrators group](look-up-project-administrators.md) 
+> [Change project-level permissions or group membership](change-project-level-permissions.md)
 
 ## Related content
 
-- [Troubleshoot permissions](troubleshoot-permissions.md)
-- [Look up permissions and roles](permissions-lookup-guide.md)
+- [Security groups, service accounts, and permissions reference](permissions.md)
+- [Manage and configure team tools](../../organizations/settings/manage-teams.md)
+- [Stakeholder access quick reference](stakeholder-access.md)

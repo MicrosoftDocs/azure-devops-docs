@@ -143,9 +143,9 @@
         "pipelines/tasks/**": "sdanie",
         "pipelines/test/**": "jeom",
         "service-hooks/**": "aaronha",
-        "repos/tfvc/**": "vijayma",
-        "repos/get-started/**": "vijayma",
-        "repos/git/**": "vijayma",
+        "repos/tfvc/**": "alexpysanets",
+        "repos/get-started/**": "alexpysanets",
+        "repos/git/**": "alexpysanets",
         "test/**": "jeom"
       },
       "author": {
@@ -177,8 +177,8 @@
         "pipelines/test/**": "raviLiftr",
         "service-hooks/**": "aaronhallberg",
         "repos/tfvc/**": "MaximMalygin",
-        "repos/get-started/**": "vijayma",
-        "repos/git/**": "vijayma",
+        "repos/get-started/**": "Battle-born",
+        "repos/git/**": "Battle-born",
         "test/**": "raviLiftr"
       },
       "ms.service": {
@@ -208,9 +208,6 @@
         "pipelines/targets/**": "azure-devops-pipelines-targets",
         "pipelines/tasks/**": "azure-devops-pipelines-tasks",
         "pipelines/test/**": "azure-devops-pipelines-test"
-      },
-      "ms.custom": {
-        "repos/**": "UpdateFrequency3"
       },
       "ms.update-cycle": {
         "repos/**": "1095-days"

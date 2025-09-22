@@ -16,9 +16,6 @@ Any changes made to existing secrets in the key vault are automatically availabl
 
 Although Key Vault supports storing and managing cryptographic keys and certificates in Azure, Azure Pipelines variable group integration only supports mapping key vault secrets. Cryptographic keys and certificates aren't supported.
 
-> [!NOTE]
-> Key vaults that use Azure role-based access control (Azure RBAC) aren't supported.
-
 ### Prerequisites
 
 | Product | Requirements|
@@ -53,8 +50,8 @@ Create an Azure key vault.
 1. Select **+ Add** and on the **Choose secrets** screen, select the secrets from your vault for mapping to this variable group, then select **OK**.
 1. Select **Save** to save the secret variable group.
 
-:::image type="content" source="../../library/media/link-azure-key-vault-variable-group.png" alt-text="Screenshot of variable group with Azure key vault integration.":::
-
+    :::image type="content" source="../../library/media/link-azure-key-vault-variable-group.png" alt-text="Screenshot of variable group with Azure key vault integration.":::
+    
 >[!NOTE]
 >Your service connection must have at least **Get** and **List** permissions on the key vault, which you can authorize in the preceding steps. You can also provide these permissions from the Azure portal by following these steps:
 >

@@ -1,7 +1,7 @@
 ---
 title:  Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 10/26/2023
 description: Deprecation announcement for NuGet Restore v1 and NuGet Installer v0 pipeline tasks
 ---
