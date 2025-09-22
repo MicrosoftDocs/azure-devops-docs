@@ -52,5 +52,7 @@ Azure Artifacts is a highly scalable package management solution that enables de
 ## Related articles
 
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)
-- [Publish and download Universal Packages](../quickstarts/universal-packages.md)
+
+- [Azure Artifacts best practices](../concepts/best-practices.md) 
+
 - [Upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)

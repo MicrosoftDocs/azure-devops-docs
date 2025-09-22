@@ -62,9 +62,7 @@ You must be a feed owner also to delete feeds. Deleted feeds remain in the recyc
 
 ## Related content
 
-- [What are feeds?](./concepts/feeds.md)
-
-- [Feed views](./concepts/views.md)
+- [Azure Artifacts best practices](concepts/best-practices.md) 
 
 - [Azure Artifacts Upstream Sources](./concepts/upstream-sources.md)
 
