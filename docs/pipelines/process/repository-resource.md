@@ -66,9 +66,9 @@ You can also set a repository to only be used on specific YAML pipelines. Restri
 
 6. Select :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::.
 
-7. Choose the repository to add.
+7. Choose the Pipeline to add.
 
-You can see the added repository listed.
+You can see the added Pipeline listed.
 
 ## Next steps
 
