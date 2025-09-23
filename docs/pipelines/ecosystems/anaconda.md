@@ -1,9 +1,9 @@
 ---
 title: Run pipelines with Anaconda environments
 description: Set up and use Anaconda environments with Azure Pipelines, Azure DevOps
-ms.topic: quickstart
+ms.topic: how-to
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
-ms.date: 01/24/2022
+ms.date: 09/23/2025
 monikerRange: azure-devops
 author: JuliaKM
 ---
@@ -12,7 +12,7 @@ author: JuliaKM
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to set up and use Anaconda with Python in your pipeline. Anaconda is a Python distribution for data science and machine learning.  
+Set up and use Anaconda with Python in your pipeline. Anaconda is a Python distribution for data science and machine learning.  
 
 ## Get started
 
@@ -28,18 +28,18 @@ Follow these instructions to set up a pipeline for a sample Python app with Anac
 
 1. When the list of repositories appears, select your Anaconda sample repository.
 
-1. Azure Pipelines will analyze the code in your repository and detect an existing `azure-pipelines.yml` file.
+1. Azure Pipelines analyzes the code in your repository and detects an existing `azure-pipelines.yml` file.
 
 1. Select **Run**.
 
 1. A new run is started. Wait for the run to finish.
 
 > [!TIP]
-> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+> To make changes to the YAML file as described in this article, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 ## Add conda to your system path
 
-On [hosted agents](../agents/hosted.md), conda is left out of `PATH` by default to keep its Python version from conflicting with other installed versions. The `task.prependpath` agent command will make it available to all subsequent steps.
+On [hosted agents](../agents/hosted.md), conda isn't included in `PATH` by default to prevent its Python version from conflicting with other installed versions. Use the `task.prependpath` agent command to make conda available to all later steps.
 
 # [Ubuntu](#tab/ubuntu)
 
@@ -56,8 +56,8 @@ Use the `macOS-latest` agent with Anaconda.
 - bash: echo "##vso[task.prependpath]$CONDA/bin"
   displayName: Add conda to PATH
 
-# On Hosted macOS, the agent user doesn't have ownership of Miniconda's installation directory/
-# We need to take ownership if we want to update conda or install packages globally
+# On hosted macOS, the agent user doesn't own Miniconda's installation directory.
+# Take ownership if you want to update conda or install packages globally.
 - bash: sudo chown -R $USER $CONDA
   displayName: Take ownership of conda installation
 ```
@@ -75,7 +75,7 @@ Use the `macOS-latest` agent with Anaconda.
 
 ### From command-line arguments
 
-The `conda create` command will create an environment with the arguments you pass it.
+The `conda create` command creates an environment with the arguments you pass.
 
 # [Ubuntu](#tab/ubuntu)
 
@@ -99,7 +99,7 @@ The `conda create` command will create an environment with the arguments you pas
 ```
 
 > [!NOTE]
-> To add specific conda channels, you need to add an extra line for conda config:
+> To add specific conda channels, add an extra line for conda config:
 > `conda config --add channels conda-forge`
 
 
@@ -115,15 +115,10 @@ You can check in an [`environment.yml`](https://conda.io/docs/user-guide/tasks/m
 ```
 
 > [!NOTE]
-> If you are using a self-hosted agent and don't remove the environment at the end, you'll get an
-> error on the next build since the environment already exists. To resolve, use the `--force`
-> argument: `conda env create --quiet --force --file environment.yml`.
+> If you use a self-hosted agent and don't remove the environment at the end, you get an error on the next build because the environment already exists. To fix this, remove the environment before creating a new one with `conda env remove --name your-env-name`.
 
 > [!NOTE]
-> If you are using self-hosted agents that are sharing storage, and running jobs in parallel 
-> using the same Anaconda environments, there may be clashes between those environments. 
-> To resolve, use the `--name` argument and a unique identifier as the argument value,
-> like a concatenation with the `$(Build.BuildNumber)` build variable.
+> If you use self-hosted agents that share storage and run jobs in parallel using the same Anaconda environments, there can be clashes between those environments. To fix this, use the `--name` argument and a unique identifier as the argument value, like a concatenation with the `$(Build.BuildNumber)` build variable.
 
 ### Install packages from Anaconda
 
@@ -133,7 +128,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 
 ```yaml
 - bash: |
-    source activate myEnvironment
+    conda activate myEnvironment
     conda install --yes --quiet --name myEnvironment scipy
   displayName: Install Anaconda packages
 ```
@@ -142,7 +137,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 
 ```yaml
 - bash: |
-    source activate myEnvironment
+    conda activate myEnvironment
     conda install --yes --quiet --name myEnvironment scipy
   displayName: Install Anaconda packages
 ```
@@ -162,14 +157,14 @@ The following YAML installs the `scipy` package in the conda environment named `
 
 > [!NOTE]
 > Each build step runs in its own process.
-> When you activate an Anaconda environment, it will edit `PATH` and make other changes to its current process.
-> Therefore, an Anaconda environment must be activated separately for each step.
+> When you activate an Anaconda environment, it edits `PATH` and makes other changes to its current process.
+> So, activate an Anaconda environment separately for each step.
 
 # [Ubuntu](#tab/ubuntu)
 
 ```yaml
 - bash: |
-    source activate myEnvironment
+    conda activate myEnvironment
     python -m pytest --junitxml=junit/unit-test.xml
   displayName: pytest
 
@@ -183,7 +178,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 
 ```yaml
 - bash: |
-    source activate myEnvironment
+    conda activate myEnvironment
     pytest --junitxml=junit/unit-test.xml
   displayName: pytest
 
@@ -209,18 +204,19 @@ The following YAML installs the `scipy` package in the conda environment named `
 
 ---
 
-## FAQs
+
+## FAQ
 
 ### Why am I getting a "Permission denied" error?
-On Hosted macOS, the agent user does not have ownership of the directory where Miniconda is installed.
-For a fix, see the "Hosted macOS" tab under [Add conda to your system path](#add-conda-to-your-system-path).
+On hosted macOS, the agent user doesn't own the directory where Miniconda is installed.
+To fix this issue, go to the "Hosted macOS" tab under [Add conda to your system path](#add-conda-to-your-system-path).
 
 ### Why does my build stop responding on a `conda create` or `conda install` step?
-If you forget to pass `--yes`, conda will stop and wait for user interaction.
+If you don't pass `--yes`, conda stops and waits for user input.
 
 ### Why is my script on Windows stopping after it activates the environment?
 On Windows, `activate` is a Batch script. You must use the [`call`](/windows-server/administration/windows-commands/call) command to resume running your script after activating.
 See examples of using `call` [in a pipeline](#run-pipeline-steps-in-an-anaconda-environment).
 
 ### How can I run my tests with multiple versions of Python?
-See [Build Python apps in Azure Pipelines](./python.md).
+Go to [Build Python apps in Azure Pipelines](./python.md).
