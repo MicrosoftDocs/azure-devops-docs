@@ -7,5 +7,5 @@ ms.topic: include
 ---
 
 - [New state filter available for Coverage in security overview](#new-state-filter-available-for-coverage-in-security-overview)
-- [Enhanced filtering and search capabilities for Coverage](#enhanced-filtering-and-search-cpabilities-for-coverage)
+- [Enhanced filtering and search capabilities for Coverage](#enhanced-filtering-and-search-capabilities-for-coverage)
 - [Granular enablement panels now available for project and organization-level enablement](#granular-enablement-panels-now-available-for-project-and-organization-level-enablement)
