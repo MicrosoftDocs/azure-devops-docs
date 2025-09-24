@@ -542,7 +542,6 @@ Below, you will find several investments that we plan to deliver as part of this
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/alert-dismissal" data-raw-source="[Alert dismissal information displayed in alert detail view](/azure/devops/release-notes/roadmap/2025/ghazdo/alert-dismissal)">Alert dismissal information displayed in alert detail view</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="0"><strong>2026 Q1</strong></td>
       <td rowspan="19"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
