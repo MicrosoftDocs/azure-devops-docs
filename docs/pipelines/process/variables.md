@@ -149,6 +149,22 @@ Choose a runtime expression if you're working with [conditions](conditions.md) a
 
 Typically a template variable is the standard to use. By leveraging template variables, your pipeline will fully inject the variable value into your pipeline at pipeline compilation. This is helpful when attempting to debug pipelines. You can download the log files and evaluate the fully expanded value that is being substituted in. Since the variable is substituted in, you shouldn't leverage template syntax for sensitive values.
 
+### Use AI to identify variable syntax issues
+
+This is an example prompt for Copilot Chat that identifies what types of variables are used in a pipeline and when the variables will resolve. Highlight your YAML code and then enter the following Copilot Chat prompt.
+
+```copilot-prompt
+What types of Azure DevOps variables are used in this YAML pipeline? Give specific examples.
+When does each variable process in the pipeline? 
+How will each variable render when not found? 
+What stages and jobs will the variables be available for? 
+```
+
+Customize your prompt to add specifics as needed. 
+
+> [!TIP]  
+> Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs). 
+
 ## Set variables in pipeline
 
 #### [YAML](#tab/yaml/)
