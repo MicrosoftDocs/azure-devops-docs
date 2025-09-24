@@ -15,31 +15,33 @@ To protect the code that runs their operations, organizations must carefully con
 
 [!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
-## Improve repository access security
+## Project-based identities for pipelines
 
-A [Project Administrator](../../organizations/security/change-project-level-permissions.md) or [Project Collection Administrator](../../organizations/security/look-up-project-collection-administrators.md) can take the following steps to strengthen access security to Git repositories from Azure Pipelines.
+A pipeline uses an identity to access resources such as repositories, service connections, and variable groups during execution. Pipelines can utilize two types of identities: organization-level or project-level.
 
-1. Inspect the pipeline to identify any required repositories that are in other projects. If you enable **Limit job authorization scope to current project for non-release pipelines**, pipelines can check out code only from the current project's repositories.
+Organization-level identity is easy to set up and use, but project-level identities prioritize security. To enhance security, use project-level identities to run pipelines. A project-level identity can access resources only within its project, minimizing the impact of any unauthorized access by malicious actors. For more information, see [Scoped build identities](../process/access-tokens.md#scoped-build-identities) and [Job authorization scope](../process/access-tokens.md#job-authorization-scope).
 
-1. Grant the pipeline project access to any other projects it requires. For more information, see [Configure permissions for a project to access another project in the same project collection](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
+To configure a pipeline to use a project-level identity, you enable **Limit job authorization scope to current project for non-release pipelines** or **Limit job authorization scope to current project for release pipelines** in the pipeline project's **Project Settings** under **Pipelines** > **Settings**.
 
-1. Grant the pipeline build identity **Read** access to each repository that the pipeline checks out. Also grant the pipeline **Read** access to any repositories used as submodules by required repositories. For more information, see [Configure permissions to access another repo in the same project collection](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
+## Steps to improve repository access security
+
+A [Project Administrator](../../organizations/security/change-project-level-permissions.md) or [Project Collection Administrator](../../organizations/security/look-up-project-collection-administrators.md) can take the following steps to improve security for accessing Git repositories from pipelines.
+
+1. Inspect the pipelines to identify any required repositories that are in other projects. If you enable **Limit job authorization scope to current project for non-release pipelines**, pipelines can check out code only from the current project's repositories.
+
+1. Grant pipeline projects access to any other projects they require. For more information, see [Configure permissions for a project to access another project in the same project collection](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
+
+1. Grant pipeline build identities **Read** access to each repository they check out. Also grant pipeline identities **Read** access to any repositories used as submodules by required repositories. For more information, see [Configure permissions to access another repo in the same project collection](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
 
 1. Enable the following organization or project settings for the pipeline project:
 
    - **Limit job authorization scope to current project for non-release pipelines**.
    - **Limit job authorization scope to current project for release pipelines** if your project has release pipelines.
-   - **Protect access to repositories in YAML pipelines** if your project has YAML pipelines.
+   - **Protect access to repositories in YAML pipelines** if your project has Azure Repos YAML pipelines.
 
-   Enable these settings by setting their toggles to **On** in **Organization Settings** or **Project Settings** > **Pipelines** > **Settings** > **General**. If the settings are enabled in **Organizational Settings**, they can't be overridden in **Project Settings**. If the settings aren't enabled in **Organization Settings**, they can be enabled at the project level.
+   Enable these settings by setting their toggles to **On** in **Organization Settings** or **Project Settings** > **Pipelines** > **Settings** > **General**.
 
-## Use project-based identities for pipelines
-
-A pipeline uses an identity to access resources such as repositories, service connections, and variable groups during execution. Pipelines can utilize two types of identities: organization-level or project-level.
-
-Organization-level identity is easy to use, but project-level identities prioritize security. To enhance security, use project-level identities to run pipelines. A project-level identity can access resources only within its project, minimizing the impact of any unauthorized access by malicious actors. For more information, see [Scoped build identities](../process/access-tokens.md#scoped-build-identities) and [Job authorization scope](../process/access-tokens.md#job-authorization-scope).
-
-To configure a pipeline to use a project-level identity, enable **Limit job authorization scope to current project for non-release pipelines** or **Limit job authorization scope to current project for release pipelines** in the pipeline project's **Project Settings** > **Pipelines** > **Settings**.
+   If the settings are enabled in **Organizational Settings**, they can't be overridden in **Project Settings**. If the settings aren't enabled in **Organization Settings**, they can be enabled at the project level.
 
 ### Use a repository as a submodule
 
@@ -49,15 +51,6 @@ If a repository uses another repository in its project as a submodule, checkout 
 
 The following security considerations apply for pipeline access to GitHub repositories. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
-### Authentication to GitHub repositories
-
-To trigger builds and fetch code during builds, Azure Pipelines must be granted access to GitHub repositories. The three authentication types for granting Azure Pipelines access to GitHub repositories are GitHub personal access token (PAT), OAuth, or the GitHub Azure Pipelines app.
-
-The GitHub Azure Pipelines app is the recommended authentication type for continuous integration pipelines. Builds and GitHub status updates then use the Azure Pipelines identity instead of your personal GitHub identity. OAuth and PAT authentication use your personal GitHub identity and must be authorized for pipeline access. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
-
->[!NOTE]
->If you install the GitHub app for all repositories in a GitHub organization, the token the app uses can access all private and public repos in the organization. For better security, either separate private repos into a separate organization, or explicitly select the repositories the app has access to.
-
 ### GitHub service connections
 
 To use GitHub repositories, Azure Pipelines requires a [GitHub service connection](../library/service-endpoints.md#github-service-connection). To strengthen service connection security:
@@ -65,6 +58,17 @@ To use GitHub repositories, Azure Pipelines requires a [GitHub service connectio
 - If you use a personal access token (PAT) for authorization, choose a fine-grained PAT and limit the scope to certain users, repositories, and permissions.
 - Allow access only to repositories that pipelines require to run.
 - Don't select **Grant access permission to all pipelines** for the service connection. Explicitly authorize the service connection for each pipeline that uses it.
+
+### Authentication to GitHub repositories
+
+To trigger builds and fetch code during builds, Azure Pipelines must be granted access to GitHub repositories. This access can use GitHub personal access token (PAT), OAuth, or GitHub Azure Pipelines app authentication.
+
+The GitHub Azure Pipelines app is the recommended authentication type for continuous integration (CI) pipelines. Builds and GitHub status updates then use the Azure Pipelines identity instead of using your personal GitHub identity. When you install the app, you can limit which repositories the app can access for increased security.
+
+OAuth and PAT authentication use your personal GitHub identity and must be authorized for pipeline access. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+
+>[!NOTE]
+>If you install the GitHub app for all repositories in a GitHub organization, the token the app uses can access all private and public repos in the organization. For better security, either separate private repos into a separate organization, or explicitly select which repositories the app can access.
 
 ### Forked GitHub repositories
 
@@ -80,9 +84,9 @@ Alternatively, you can select **Customize rules for building pull requests from 
 
 Other ways to increase fork security include:
 
-- If you use pull request validation to trigger builds, deselect **Build pull requests from forks of this repository**, or ensure that **Make secrets available to builds of forks** and **Make fork builds have the same permissions as regular builds** are deselected. You can also select **Require a team member's comment before building a pull request**.
+- If you use pull request validation to trigger builds, deselect **Build pull requests from forks of this repository** in the **Trigger** section of the pipeline definition, or ensure that **Make secrets available to builds of forks** and **Make fork builds have the same permissions as regular builds** are deselected. You can also select **Require a team member's comment before building a pull request**.
 
-- Use Microsoft-hosted agents to build from forks. Resources are then immediately deleted from the agents after builds. If you use self-hosted agents, clean and update the agents regularly, or use separate agents for different repositories or branches.
+- Use Microsoft-hosted agents to build from forks. Resources are then immediately deleted from the agents after builds. If you use self-hosted agents, clean and update the agents regularly, or use separate agents for different forks or branches.
 
 ## Azure Repos repositories
 
@@ -146,7 +150,7 @@ To configure the pipeline to use a project-level identity, enable the **Limit jo
 
 When this toggle is on, the example **FabrikamFiberDocRelease** pipeline can only access resources in the **FabrikamFiberDocRelease** project, so the **FabrikamFiber** repository is inaccessible.
 
-To fix the issue, grant the release pipeline access to the **FabrikamFiber** project, and **Read** access to the **FabrikamFiber** and **FabrikamFiberLib** repositories. Also explicitly check out the **FabrikamFiberLib** submodule repository before checking out the **FabrikamFiber** repository. The example pipeline now succeeds.
+To fix the issue, grant the pipeline project access to the **FabrikamFiber** project, and the pipeline identity **Read** access to the **FabrikamFiber** and **FabrikamFiberLib** repositories. Also explicitly check out the **FabrikamFiberLib** submodule repository before checking out the **FabrikamFiber** repository. The example pipeline now succeeds.
 
 ---
 
@@ -226,7 +230,7 @@ steps:
 
 ## More repository security measures
 
-- To reduce security risks from YAML and Classic pipelines sharing resources, [disable creation of classic pipelines](approach.md#disable-creation-of-classic-pipelines) by turning on the **Disable creation of classic build pipelines** and **Disable creation of classic release pipelines** toggles in **Project Settings** or **Organization Settings**. These settings are turned on by default for new organizations.
+- To reduce security risks from YAML and Classic pipelines sharing resources, [disable creation of classic pipelines](approach.md#disable-creation-of-classic-pipelines) by turning on the **Disable creation of classic build pipelines** and **Disable creation of classic release pipelines** toggles in **Project Settings** or **Organization Settings**. Classic build and release pipeline creation are disabled by default for new organizations.
 
 - [Use pipeline templates](templates.md) to define the pipeline structure and help prevent malicious code infiltration. Templates can also automatically do tasks such as credential scanning or enforcing checks on protected resources.
 
@@ -238,7 +242,7 @@ steps:
 
 - Limit the scope of the Azure Pipelines access token by providing the token only for repositories listed in the pipeline's `resources` section. For more information, see [Repository protection](resources.md#repository-protection).
 
-## Related articles
+## Related content
 
 - [Access repositories, artifacts, and other resources](../process/access-tokens.md)
 - [Protect a repository resource](../process/repository-resource.md)
