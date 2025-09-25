@@ -1,12 +1,12 @@
 ---
-title: Azure Boards integration with GitHub Copilot private preview
+title: Private preview of Azure Boards integration with GitHub Copilot
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 09/25/2025
-description: Azure Boards integration with GitHub Copilot private preview
+description: Private preview of Azure Boards integration with GitHub Copilot
 ---
 
-# Azure Boards integration with GitHub Copilot private preview
+# Private preview of Azure Boards integration with GitHub Copilot
 
 We’re thrilled to introduce a new capability in our Azure Boards and GitHub integration. You can now connect  work items with the GitHub Copilot coding agent. This feature will let you create work items, add detailed instructions in the description, and seamlessly send them to Copilot. The coding agent can then tackle a range of engineering tasks such as bug fixes, incremental feature development, test coverage improvements, documentation updates, and technical debt remediation.
 

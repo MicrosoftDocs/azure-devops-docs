@@ -22,4 +22,7 @@ Previously, the security overview Coverage page was a flat list of repositories 
 
 ### Granular enablement panels now available for project and organization-level enablement
 
-Previously, users did not have the ability to modify sub-features at the project or organization-level, such as push protection or dependency scanning auto-injection. These changes now bring the same granular controls you see at the repository level to the project and organization enablement experiences after you select `Enable all`. 
+Previously, users did not have the ability to modify sub-features at the project or organization-level, such as push protection or dependency scanning auto-injection. These changes now bring the same granular controls you see at the repository level to the project and organization enablement experiences after you select `Enable all`.
+
+> [!div class="mx-imgBorder"]
+> [![Image to show enabled selected features.](../../media/262-ghazdo-01.png "Image to show enabled selected features")](../../media/262-ghazdo-01.png#lightbox)
