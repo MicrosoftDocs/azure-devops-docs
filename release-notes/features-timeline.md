@@ -251,20 +251,25 @@ These investments include:
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q2</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/2025/sprint-258-update#azure-devops-mcp-server-public-preview" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/2025/sprint-258-update#azure-devops-mcp-server-public-preview)">MCP Server for Azure DevOps (preview)</a></td>
-         <td>General</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q2</td>
-      </tr>         
-      <tr>
          <td><a href="/azure/devops/release-notes/2025/sprint-260-update#azure-boards-and-pipelines-integration-for-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-260-update#azure-boards-and-pipelines-integration-for-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q3</td>
       </tr>
+         <tr>
+         <td><a href="/azure/devops/release-notes/2025/sprint-258-update#azure-devops-mcp-server-public-preview" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/2025/sprint-258-update#azure-devops-mcp-server-public-preview)">MCP Server for Azure DevOps</a></td>
+         <td>General</td>
+         <td>2025 Q4</td>
+      </tr> 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent" data-raw-source="[Work item integration wth GitHub coding agent](/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent)">Support work item integration with the <br/>GitHub Copilot coding agent (preview)</a></td>
          <td>Boards</td>
          <td>2025 Q4</td>
-      </tr>              
+      </tr>    
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-github-integration-scale-improvements" data-raw-source="[Scale improvements for connecting with GitHub repositories]()">Scale improvements for connecting with GitHub repositories</a></td>
+         <td>Boards</td>
+         <td>2025 Q4</td>
+      </tr>           
     </tbody>
 </table>
 
@@ -477,18 +482,18 @@ Below, you will find several investments that we plan to deliver as part of this
             <a href="/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado)">MCP Server for Azure DevOps (GA)
          </td>
          <td>General</td>
-      </tr>
-      <tr>          
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
-        <td>Boards</td>
-      </tr>
+      </tr>      
       <tr>     
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent" data-raw-source="[Work item integration wth GitHub coding agent](/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent)">Support work item integration with the <br/>GitHub Copilot coding agent (preview)</a></td>      
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent" data-raw-source="[Work item integration wth GitHub coding agent](/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent)">Support work item integration with the <br/>GitHub Copilot coding agent (GA)</a></td>      
          <td>Boards</td>
       </tr>
+      <tr>          
+        <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-github-integration-scale-improvements" data-raw-source="[Scale improvements for connecting to GitHub repositories]()">Scale improvements for connecting with GitHub repositories</a></td>
+        <td>Boards</td>
+      </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support" data-raw-source="[Support GitHub Enterprise Cloud with data residency](/azure/devops/release-notes/roadmap/2024/boards-ghec-data-residency-support)">Support for GitHub Enterprise Cloud with data residency</a></td>
-         <td>Boards & Pipelines</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-for-boards-and-backlogs" data-raw-source="[Improved filter experience for boards and backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-for-boards-and-backlogs)">Improved filter experience for boards and backlogs</a></td>
+         <td>Boards</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
