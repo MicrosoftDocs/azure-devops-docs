@@ -48,6 +48,20 @@ The file name for each wiki page corresponds to the wiki page title. In the file
 
 The _.order_ file defines the wiki page sequence. Git looks for this file in each folder to identify the sequence to present files at that location. The default page sequence is alphabetical order (A to Z) by file name.
 
+> [!IMPORTANT]
+> If a parent folder contains only subfolders and no files of its own, the wiki will display the parent folder as blank—even if the subfolders contain markdown files. To ensure that markdown files within subfolders are visible, always include at least one file (such as a .order file or any other file with content) in the parent folder.
+
+```
+|- parent-folder
+|-- sub-folder1
+|   |-- file1.md
+|   |-- file2.md
+|-- sub-folder2
+|   |-- file3.md
+|   |-- file4.md
+|-- .order
+```
+
 ### Define custom page sequence
 
 When a folder doesn't have an _.order_ file, Git uses the default alphabetical sequence.
