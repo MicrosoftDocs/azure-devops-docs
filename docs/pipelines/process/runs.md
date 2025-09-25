@@ -227,14 +227,14 @@ az pipelines runs tag delete --run-id 123 --tag YAML
 ```
 ## Manage runs with the Azure DevOps MCP Server
 
-You can manage pipeline runs in Copilot with the Azure DevOps MCP server. To get started, see [Enable AI assistance with Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md)
+You can manage pipeline runs in Copilot with the Azure DevOps MCP server. To get started, see [Enable AI assistance with Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md).
 
 ### List pipeline runs
 
 List the pipeline runs for a particular pipeline.
 
 ```copilot-prompt
-Show the three most recent runs for the fabrikamfiber pipeline.
+Show the three most recent runs for the Tailspin pipeline.
 ```
 
 This prompt lists the last three pipeline runs with a link to view each run.
