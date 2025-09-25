@@ -6,6 +6,8 @@ ms.custom: devx-track-azurecli, ai-assisted
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
 ms.date: 06/09/2025
 monikerRange: "<=azure-devops"
+ms.collection: 
+  - ce-skilling-ai-copilot
 ---
 
 # Pipeline runs
@@ -223,6 +225,40 @@ Delete a tag from a pipeline run in your project using the [az pipelines runs ta
 ```azurecli 
 az pipelines runs tag delete --run-id 123 --tag YAML
 ```
+## Manage runs with the Azure DevOps MCP Server
+
+You can manage pipeline runs in Copilot with the Azure DevOps MCP server. To get started, see [Enable AI assistance with Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md)
+
+### MCP: List pipeline runs
+
+List the pipeline runs for a particular pipeline.
+
+```copilot-prompt
+Show the three most recent runs for the fabrikamfiber pipeline.
+```
+
+This prompt lists the last three pipeline runs with a link to view each run.
+
+### MCP: Show pipeline run details
+
+Fetch the status of a specific build.
+
+```copilot-prompt
+Show the status and details for build 12345678.9.
+```
+
+This prompt returns returns the status, result, start/finish time, and summary for a build. 
+
+### MCP: Start a new pipeline run
+
+Begin a new run of a pipeline.
+
+```copilot-prompt
+Start the Tailspin pipeline and provide a direct link to the run, including the project name in the URL.
+```
+
+This prompt starts your pipeline and and provides a link to the pipeline run.
+
 
 ::: moniker-end
 

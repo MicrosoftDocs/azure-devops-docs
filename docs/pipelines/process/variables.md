@@ -6,6 +6,8 @@ ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.date: 10/03/2024
 ai-usage: ai-assisted
+ms.collection: 
+  - ce-skilling-ai-copilot
 ---
 
 # Define variables
