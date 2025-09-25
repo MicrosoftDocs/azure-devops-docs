@@ -10,12 +10,12 @@ description: Upcoming scalability enhancements for connecting GitHub repositorie
 hide_comments: true
 ---
 
-# Planned scalability improvements when connecting to GitHub repositories
+# Planned scalability improvements for GitHub repository connections
 
-We are planning to improve scalability for organizations connecting a large number of GitHub repositories to Azure DevOps projects. The following enhancements are on our roadmap:
+We plan to enhance scalability for organizations that connect many GitHub repositories to Azure DevOps projects. The following improvements are on our roadmap:
 
-- Increase the maximum number of connected repositories to 5,000.
-- Enhance the search and selection experience when connecting GitHub repositories.
-- Optimize performance for searching and selecting repositories, commits, pull requests, and branches, even when connected to a high volume of GitHub repositories.
+- Raise the maximum number of connected repositories to 5,000.
+- Improve the search and selection process for connecting GitHub repositories.
+- Optimize performance for searching and selecting repositories, commits, pull requests, and branches, even with a high volume of connected GitHub repositories.
 
-These improvements are subject to change.
+These planned improvements are subject to change.
