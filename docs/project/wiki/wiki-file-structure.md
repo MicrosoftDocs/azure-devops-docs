@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-ms.date: 05/29/2025
+ms.date: 09/25/2025
 #customer intent: As an Azure DevOps developer, I want to understand the wiki file and folder structure in the Git repository, so I can follow the naming and location conventions.
 ---
 
@@ -49,18 +49,18 @@ The file name for each wiki page corresponds to the wiki page title. In the file
 The _.order_ file defines the wiki page sequence. Git looks for this file in each folder to identify the sequence to present files at that location. The default page sequence is alphabetical order (A to Z) by file name.
 
 > [!IMPORTANT]
-> If a parent folder contains only subfolders and no files of its own, the wiki will display the parent folder as blank—even if the subfolders contain markdown files. To ensure that markdown files within subfolders are visible, always include at least one file (such as a .order file or any other file with content) in the parent folder.
-
-```
-|- parent-folder
-|-- sub-folder1
-|   |-- file1.md
-|   |-- file2.md
-|-- sub-folder2
-|   |-- file3.md
-|   |-- file4.md
-|-- .order
-```
+> When a parent folder contains only subfolders and no files of its own, the wiki displays the parent folder as blank—even if the subfolders include markdown files. To ensure visibility of markdown files within subfolders, always place at least one file (such as a `.order` file or any other file with content) in the parent folder.
+>
+>```
+>|- parent-folder
+>|-- sub-folder1
+>|   |-- file1.md
+>|   |-- file2.md
+>|-- sub-folder2
+>|   |-- file3.md
+>|   |-- file4.md
+>|-- .order
+>```
 
 ### Define custom page sequence
 
