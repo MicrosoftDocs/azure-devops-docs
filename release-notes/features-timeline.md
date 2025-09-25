@@ -492,7 +492,7 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>Boards</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-for-boards-and-backlogs" data-raw-source="[Improved filter experience for boards and backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-for-boards-and-backlogs)">Improved filter experience for boards and backlogs</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved filter experience for boards and backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved filter experience for boards and backlogs</a></td>
          <td>Boards</td>
       </tr>
       <tr>
