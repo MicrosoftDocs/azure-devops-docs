@@ -1,16 +1,16 @@
 ---
-title: 'Tutorial: Build and deploy a Node.js app'
-description: Create a pipeline in Azure Pipelines that builds and deploys a Node.js application to an Azure App Service app.
-ms.topic: tutorial 
+title: 'Build and deploy a Node.js app'
+description: Use Azure Pipelines to build and deploy a Node.js application to an Azure App Service webapp with continuous integration and deployment.
+ms.topic: how-to
 ms.custom: devx-track-js
 ms.date: 09/25/2025
 monikerRange: "<=azure-devops"
-#customer intent: As a Node.js web app developer, I want to learn how to create a pipeline to deploy my apps to Azure App Service so I can implement continuous integration and continuous delivery.
+#customer intent: As a Node.js web app developer, I want to learn how to create a pipeline to deploy my apps to Azure App Service so I can implement continuous integration and continuous deployment.
 ---
 
-# Tutorial: Create a pipeline to build and deploy a Node.js app
+# Build and deploy a Node.js app
 
-In this tutorial, you learn how to create a pipeline in Azure Pipelines that builds and deploys a Node.js application to Azure App Service. You can deploy your Node.js app with continuous integration (CI) and continuous delivery (CD) to reduce the risk of errors and downtime. With CI and CD, your pipeline automatically builds and deploys your Node.js web app to App Service whenever there's a commit to your app code repository.
+This article shows you how to use Azure Pipelines to create a pipeline that builds and deploys a Node.js application to Azure App Service. The pipeline uses continuous integration (CI) and continuous delivery (CD) to automatically build and deploy your app whenever there's a commit to your app code repository. Using CI/CD reduces the risk of errors and downtime.
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ The browser goes to the new fork, which has the URL `https://github.com/<owner>/
 
 ## Create and deploy the App Service web app
 
-Create your Azure App Service web app by using [Cloud Shell](/azure/cloud-shell/overview) in the Azure portal. To use Cloud Shell, sign in to the [Azure portal](https://portal.azure.com) and select the Cloud Shell button on the toolbar.
+Create your Azure App Service web app by using [Cloud Shell](/azure/cloud-shell/overview) in the Azure portal. To use Cloud Shell, sign in to the [Azure portal](https://portal.azure.com) and select the Cloud Shell button on the top toolbar.
 
 :::image type="content" source="../media/python/azure-cloud-shell-button.png" alt-text="Screenshot of Azure Cloud Shell button on the Azure portal toolbar.":::
 
@@ -49,7 +49,7 @@ The Cloud Shell appears along the bottom of the browser. Make sure **Bash** is s
 1. In Cloud Shell, clone your forked repository to Azure with the following command, replacing `<your-forked-repository-url>` with the URL of your forked repository.
 
    ```bash
-   git clone <your-forked-repository-url>.git
+   git clone <your-forked-repository-url>
    ```
 
 1. Change directory to the cloned repository folder.
@@ -58,9 +58,9 @@ The Cloud Shell appears along the bottom of the browser. Make sure **Bash** is s
    cd nodejs-docs-hello-world
    ```
 
-1. Run the [az webapp up](/cli/azure/webapp#az-webapp-up) command to provision an App Service web app and do the first deployment. Running `az webapp up` with no parameters assigns a randomly generated web app name that's unique in Azure.
+1. Run the [az webapp up](/cli/azure/webapp#az-webapp-up) command to provision an App Service web app and do the first deployment. The `--sku F1` argument creates the web app on the Free pricing tier, which incurs no cost.
 
-   You can also use the `--name <web-app-name>` parameter to assign any name that's unique in Azure, such as a personal or company name with an app identifier, like `--name <your-name>-nodeapp`. The `--sku F1` argument creates the web app on the Free pricing tier, which incurs no cost.
+   Running `az webapp up` with no `name` parameters assigns a randomly generated web app name that's unique in Azure. You can also use the `--name <web-app-name>` parameter to assign any name that's unique in Azure, such as a personal or company name with an app identifier, like `--name <your-name>-nodeapp`.
 
    ```azurecli
    az webapp up --sku F1 --name <app-name>
@@ -76,6 +76,8 @@ The `az webapp up` command recognizes the app as a Node.js app, and takes the fo
 
 You can override the default actions with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
+The command produces status messages as it runs. When the website starts successfully, verify that you can see the **Hello World!** app by selecting the URL at `You can launch the app at <URL>`.
+
 The `az webapp up` command produces the following JSON output for the sample web app:
 
 ```json
@@ -88,12 +90,11 @@ The `az webapp up` command produces the following JSON output for the sample web
   "resourcegroup": "<your-resource-group-name>",
   "runtime_version": "node|20-LTS",
   "runtime_version_detected": "10.0",
-  "sku": "<sku>",
+  "sku": "FREE",
   "src_path": "<repository-source-path>"
 }
 ```
 
-   :::image type="content" source="../apps/cd/azure/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the Cloud Shell menu item.":::
 
 ## Create the pipeline from a template
 
@@ -105,51 +106,48 @@ The `az webapp up` command produces the following JSON output for the sample web
 
 1. On the **Configure your pipeline** page, select **Node.js Express Web App to Linux on Azure**.
 
-1. On the next screen, select your Azure subscription and select **Continue**.
+1. On the next screen, select your Azure subscription and select **Continue**. This action creates a service connection to your Azure resources.
 
 1. On the next screen, select your Azure web app and select **Validate and configure**. Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAML pipeline editor.
 
-1. On the **Review your pipeline YAML** screen, review the code for your pipeline configuration, and then select **Save and run** to run your pipeline. The *azure-pipelines.yml* file saves to your forked repository, and the code deploys to Azure App Service.
+1. On the **Review your pipeline YAML** screen, review the code for your pipeline configuration, and then select **Save and run** and **Save and run** again to run your pipeline. The *azure-pipelines.yml* file saves to your forked repository, and the code deploys to Azure App Service.
 
->[!NOTE]
->The first time the pipeline runs, it asks for permission to access the environment it creates. Select **Permit** to grant permission for the pipeline to access the environment.
+   >[!NOTE]
+   >The first time the pipeline runs, it asks for permission to access the environment it creates. Select **Permit** to grant permission for the pipeline to access the environment.
 
-## Deploy the Node.js app to Azure App Service
+1. On the run **Summary** page, select the job to watch your pipeline run and trace its build.
 
-The pipeline is configured to run whenever a change is committed to the `main` branch of your forked code repository. To demonstrate a CI build:
-
-1. In your forked GitHub repository, select the *azure-pipelines.yml* file and Go to your pipeline in Azure Pipelines and select **Edit** at upper right.
-1. Make a small, insignificant change to your pipeline YAML, such changing a `diaplayName`. Select **Save and run** again to commit your changes to GitHub and trigger the pipeline to run.
-
-1. In Azure DevOps, go to **Pipelines** > **Pipelines** and select your pipeline. 
-
-1. Watch your pipeline run and trace its build. 
-
-1. After the build succeeds, select the deploy task, and select the URL to view the deployed website.
+1. When the run succeeds, select the **Azure Web App Deploy** task, and select the **App Service Application URL** to view the deployed website.
 
    :::image type="content" source="media/nodejs-tutorial/deploy-url.png" alt-text="Screenshot of the web site URL location in Azure Pipelines.":::
 
-1. Go to the deployed website URL and verify that you see the site running on App Service.
+1. Verify that you see the site running on App Service at the deployed website URL.
 
     :::image type="content" source="media/nodejs-tutorial/hello-world-site.png" alt-text="Screenshot of the Node.js application running in a web browser.":::
 
+## Run a CI build and deployment
+
+The `trigger: main` keyword configures your pipeline to run whenever a change is committed to the `main` branch of your forked code repository. To demonstrate a CI build:
+
+1. In your forked GitHub repository, edit the *README.md* file to make a small change.
+1. Select **Commit changes**, and **Commit changes** again.
+1. In your Azure DevOps project, note that your **nodejs-docs-hello-world** pipeline runs again with the description **Individual CI**.
+
 ## Clean up resources
 
-If you're not going to continue to use this application, delete the resource group in Azure portal and the project in Azure DevOps with the following steps:
+You can delete the resources you created for this article if you don't need them anymore.
 
-To clean up your resource group:
+To remove the Azure App Service resources, run the following commands in order in Cloud Shell. You must delete the web app before you can delete its app service plan, and you must delete the app service plan before you can delete its resource group.
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
+```bash
+az webapp delete --name <web-app-name> --resource-group <resource-group-name>
+az appservice plan delete --name <app-service-plan-name> --resource-group <resource-group-name>
+az group delete --name <resource-group-name>
+```
 
-    :::image type="content" source="../apps/cd/azure/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing selecting the Cloud Shell menu item. ":::
+To remove your pipeline in Azure Pipelines, select the pipeline, select the **More actions** icon at upper right on the pipeline page, and then select **Delete**. To remove your Azure DevOps project, see [Delete a project](../../organizations/projects/delete-project.md).
 
-1. Run the following [az group delete](/cli/azure/group#az-group-delete) command to delete the resource group that you used, `hello-world-nodejs-rg`.
-
-    ```azurecli
-    az group delete --name hello-world-nodejs-rg
-    ```
-To delete your Azure DevOps project, including the build pipeline, see [Delete project](../../organizations/projects/delete-project.md).
+To delete your forked **nodejs-docs-hello-world** GitHub repo, go to the repo and select **Settings** in the top menu bar. Scroll to the bottom of the page, and select **Delete this repository**.
 
 ## Related content
 
