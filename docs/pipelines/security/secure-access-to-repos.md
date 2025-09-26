@@ -2,7 +2,7 @@
 title: Access repositories from pipelines
 description: Learn how to provide secure access to source code repositories from Azure Pipelines.
 ms.author: sandrica
-ms.date: 09/23/2025
+ms.date: 09/25/2025
 monikerRange: '>= azure-devops-2020'
 #customer intent: As a developer, I want to know about how Azure Pipelines can securely access repositories so I can help protect my source code from security threats.
 ---
@@ -17,9 +17,9 @@ To protect the code that runs their operations, organizations must carefully con
 
 ## Project-based identities for pipelines
 
-A pipeline uses an identity to access resources such as repositories, service connections, and variable groups during execution. Pipelines can utilize two types of identities: organization-level or project-level.
+A pipeline uses an identity to access resources such as repositories, service connections, and variable groups during execution. Pipelines can utilize two types of identities: collection-level or project-level.
 
-Organization-level identity is easy to set up and use, but project-level identities prioritize security. To enhance security, use project-level identities to run pipelines. A project-level identity can access resources only within its project, minimizing the impact of any unauthorized access by malicious actors. For more information, see [Scoped build identities](../process/access-tokens.md#scoped-build-identities) and [Job authorization scope](../process/access-tokens.md#job-authorization-scope).
+Collection-level identity is easy to set up and use, but project-level identities prioritize security. To enhance security, use project-level identities to run pipelines. A project-level identity can access resources only within its project, minimizing the impact of any unauthorized access by malicious actors. For more information, see [Scoped build identities](../process/access-tokens.md#scoped-build-identities) and [Job authorization scope](../process/access-tokens.md#job-authorization-scope).
 
 To configure a pipeline to use a project-level identity, you enable **Limit job authorization scope to current project for non-release pipelines** or **Limit job authorization scope to current project for release pipelines** in the pipeline project's **Project Settings** under **Pipelines** > **Settings**.
 
@@ -109,7 +109,7 @@ Select **Permit** to grant permission to your pipeline repositories or resources
 
 #### Use a git command line to check out other repositories
 
-A command-line script like `git clone https://$(System.AccessToken)@dev.azure.com/fabrikam-tailspin/FabrikamFiber/_git/OtherRepo/` can fail when **Protect access to repositories in YAML pipelines** is enabled. To solve the issue, explicitly check out the `OtherRepo` repository using the `checkout` command, such as `checkout: git://FabrikamFiber/OtherRepo`.
+A command-line script like `git clone https://github/fabrikam-tailspin/FabrikamFiber/_git/OtherRepo/` can fail when **Protect access to repositories in YAML pipelines** is enabled. To solve the issue, explicitly check out the `OtherRepo` repository using the `checkout` command, such as `checkout: git://FabrikamFiber/OtherRepo`.
 
 #### [Classic pipelines](#tab/classic)
 
