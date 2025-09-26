@@ -76,7 +76,7 @@ The `az webapp up` command recognizes the app as a Node.js app, and takes the fo
 
 You can override the default actions with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
-The command produces status messages as it runs. After the website starts successfully, verify you can see the **Hello World** app by selecting the app URL at `You can launch the app at https://<your-web-app-name>.azurewebsites.net`.
+The command produces status messages as it runs. After the website starts successfully, you can select the link at `You can launch the app at https://<your-web-app-name>.azurewebsites.net` to go to the **Hello World** web app.
 
 The `az webapp up` command produces the following JSON output for the sample web app:
 
@@ -115,7 +115,7 @@ The `az webapp up` command produces the following JSON output for the sample web
    The pipeline takes the following actions:
    
    - Sets a trigger to run on every commit to the main code branch.
-   - Establishes and uses variables for the Azure resource manager service connection, web app name, VM pool, and an environment that it creates.
+   - Establishes and uses variables for the service connection, web app, machine image, and environment.
    - Installs Node.js on the build agent and uses npm to run and test the app build.
    - Packages the built app to a ZIP archive and uploads the ZIP to a drop location.
    - Deploys the ZIP package to the App Service app and starts the app.
@@ -141,7 +141,7 @@ The `trigger: main` keyword configures your pipeline to run whenever a change is
 
 1. Go to your forked GitHub repository and make a small change in the *README.md* file.
 1. Select **Commit changes**, and **Commit changes** again.
-1. In your Azure DevOps project, verify that your **nodejs-docs-hello-world** pipeline runs again with a run description of **Individual CI**.
+1. In Azure Pipelines, verify that your **nodejs-docs-hello-world** pipeline runs again with a run description of **Individual CI**.
 
 ## Clean up resources
 
