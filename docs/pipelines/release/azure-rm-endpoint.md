@@ -55,7 +55,7 @@ The following issues might occur when you create service connections:
 - [Failed to assign Contributor role](#failed-to-assign-contributor-role)
 - [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-when-creating-a-service-connection)
 - [Some subscriptions are missing from the list of subscriptions](#some-subscriptions-are-missing-from-the-list-of-subscriptions)
-- [Service principal's token expired](#service-principals-token-expired)
+- [Service principal's token expired](#service-principal-or-secret-expired)
 - [Failed to obtain the JSON web token (JWT) by using the service principal client ID](#failed-to-obtain-the-jwt-by-using-the-service-principal-client-id)
 - [Azure subscription isn't passed from the previous task output](#azure-subscription-isnt-passed-from-the-previous-task-output)
 - [What authentication mechanisms are supported? How do managed identities work?](#what-authentication-mechanisms-are-supported-how-do-managed-identities-work)
