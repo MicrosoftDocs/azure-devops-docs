@@ -2,7 +2,7 @@
 title: Access repositories from pipelines
 description: Learn how to provide secure access to source code repositories from Azure Pipelines.
 ms.author: sandrica
-ms.date: 09/25/2025
+ms.date: 09/26/2025
 monikerRange: '>= azure-devops-2020'
 #customer intent: As a developer, I want to know about how Azure Pipelines can securely access repositories so I can help protect my source code from security threats.
 ---
@@ -55,17 +55,16 @@ The following security considerations apply for pipeline access to GitHub reposi
 
 To use GitHub repositories, Azure Pipelines requires a [GitHub service connection](../library/service-endpoints.md#github-service-connection). To strengthen service connection security:
 
-- If you use a personal access token (PAT) for authorization, choose a fine-grained PAT and limit the scope to certain users, repositories, and permissions.
 - Allow access only to repositories that pipelines require to run.
 - Don't select **Grant access permission to all pipelines** for the service connection. Explicitly authorize the service connection for each pipeline that uses it.
 
 ### Authentication to GitHub repositories
 
-To trigger builds and fetch code during builds, Azure Pipelines must be granted access to GitHub repositories. This access can use GitHub personal access token (PAT), OAuth, or GitHub Azure Pipelines app authentication.
+To trigger builds and fetch code during builds, Azure Pipelines must be granted access to GitHub repositories. This access can use GitHub personal access token (PAT), OAuth, or GitHub Azure Pipelines app authentication. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 The GitHub Azure Pipelines app is the recommended authentication type for continuous integration (CI) pipelines. Builds and GitHub status updates then use the Azure Pipelines identity instead of using your personal GitHub identity. When you install the app, you can limit which repositories the app can access for increased security.
 
-OAuth and PAT authentication use your personal GitHub identity and must be authorized for pipeline access. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+OAuth and PAT authentication use your personal GitHub identity and must be authorized for pipeline access. Using a PAT is discouraged due to security concerns. If you must use PAT authentication, choose a fine-grained PAT and limit the scope to certain users, repositories, and permissions. For more information, see [Managing your personal access tokens](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). 
 
 >[!NOTE]
 >If you install the GitHub app for all repositories in a GitHub organization, the token the app uses can access all private and public repos in the organization. For better security, either separate private repos into a separate organization, or explicitly select which repositories the app can access.
