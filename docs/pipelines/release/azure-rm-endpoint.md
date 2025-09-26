@@ -185,7 +185,7 @@ To resolve this issue, ask the subscription administrator to [assign you the app
   1. Clear your browser cache and cookies to ensure that any old tokens are removed.
   1. From the Azure DevOps portal, go to the service connections, and reauthorize the connection to Azure. This step prompts Azure DevOps to use a new token.
 
-### Service principal's token expired
+### Service principal or secret expired
 
 An issue that often arises with service principals or secrets that are automatically created is that the token expires and needs to be renewed. If you have an issue with refreshing the token, see [Failed to obtain an access token or a valid refresh token wasn't found](#failed-to-obtain-an-access-token-or-a-valid-refresh-token-wasnt-found).
 
@@ -197,11 +197,11 @@ If your token expired, you could see one of the error messages:
 
 To renew the access token for an automatically created service principal or secret:
 
-1. Go to **Project settings** > **Service connections**, and then select the service connection you want to modify.
+1. Go to **Project settings** > **Service connections**, and then select the service connection you want to refresh.
 
-1. Select **Edit** in the upper-right corner. 
+1. Select **Rotate secret**.
 
-1. Select **Save**.
+     :::image type="content" source="media/azure-rm-endpoint/rotate-secret.png" alt-text="Screenshot of option to rotate an ARM secret. ":::
 
 The token for your service principal or secret is now renewed for three more months.
 
