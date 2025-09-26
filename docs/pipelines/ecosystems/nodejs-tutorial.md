@@ -1,16 +1,16 @@
 ---
-title: 'Build and deploy a Node.js app'
+title: Build and deploy a Node.js app
 description: Use Azure Pipelines to build and deploy a Node.js application to an Azure App Service webapp with continuous integration and deployment.
 ms.topic: how-to
 ms.custom: devx-track-js
-ms.date: 09/25/2025
+ms.date: 09/26/2025
 monikerRange: "<=azure-devops"
 #customer intent: As a Node.js web app developer, I want to learn how to create a pipeline to deploy my apps to Azure App Service so I can implement continuous integration and continuous deployment.
 ---
 
 # Build and deploy a Node.js app
 
-This article shows you how to use Azure Pipelines to create a pipeline that builds and deploys a Node.js application to Azure App Service. The pipeline uses continuous integration (CI) and continuous delivery (CD) to automatically build and deploy your app whenever there's a commit to your app code repository. Using CI/CD reduces the risk of errors and downtime.
+This article shows how to use Azure Pipelines to create a pipeline that builds and deploys a Node.js application to Azure App Service with continuous integration (CI) and continuous delivery (CD). CI/CD reduces downtime and error risk by automatically building and deploy your app whenever there's a commit to your app code repository.
 
 ## Prerequisites
 
@@ -25,11 +25,11 @@ This article shows you how to use Azure Pipelines to create a pipeline that buil
 
    :::image type="content" source="media/nodejs-tutorial/select-fork.png" alt-text="Screenshot of GitHub to select the Node.js project to fork. ":::
 
-1. Select your organization as fork **Owner**, and then select **Create fork**.
+1. Select your GitHub organization as fork **Owner** if it's not already selected, and then select **Create fork**.
 
    :::image type="content" source="media/nodejs-tutorial/create-fork.png" alt-text="Screenshot of create fork in GitHub. ":::
 
-The browser goes to the new fork, which has the URL `https://github.com/<owner>/nodejs-docs-hello-world`.
+The browser goes to the new fork at URL `https://github.com/<owner>/nodejs-docs-hello-world`.
 
 ## Create and deploy the App Service web app
 
@@ -60,7 +60,7 @@ The Cloud Shell appears along the bottom of the browser. Make sure **Bash** is s
 
 1. Run the [az webapp up](/cli/azure/webapp#az-webapp-up) command to provision an App Service web app and do the first deployment. The `--sku F1` argument creates the web app on the Free pricing tier, which incurs no cost.
 
-   Running `az webapp up` with no `name` parameters assigns a randomly generated web app name that's unique in Azure. You can also use the `--name <web-app-name>` parameter to assign any name that's unique in Azure, such as a personal or company name with an app identifier, like `--name <your-name>-nodeapp`.
+   Running `az webapp up` without a `name` parameters automatically assigns a randomly generated web app name that's unique in Azure. You can also use the `--name <web-app-name>` parameter to assign any name that's unique in Azure, such as a personal or company name with an app identifier, like `--name <your-name>-nodeapp`.
 
    ```azurecli
    az webapp up --sku F1 --name <app-name>
@@ -70,13 +70,13 @@ The `az webapp up` command recognizes the app as a Node.js app, and takes the fo
 
 1. Creates a default [resource group](/cli/azure/group#az-group-create).
 1. Creates a default [App Service plan](/cli/azure/appservice/plan#az-appservice-plan-create).
-1. [Creates a web app](/cli/azure/webapp#az-webapp-create) with the assigned name. The app `URL` is `<your-web-app-name>.azurewebsites.net`.
+1. [Creates a web app](/cli/azure/webapp#az-webapp-create) with the assigned name and the URL `<your-web-app-name>.azurewebsites.net`.
 1. [Deploys](/azure/app-service/deploy-zip) all files from the current working directory to a ZIP archive, with build automation enabled.
 1. Caches the parameters locally in the *.azure/config* file so you don't need to specify them again when deploying from the project folder with `az webapp up` or other `az webapp` commands. The commands use the cached values automatically by default.
 
 You can override the default actions with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
-The command produces status messages as it runs. When the website starts successfully, verify that you can see the app by selecting the URL at `You can launch the app at <URL>`.
+The command produces status messages as it runs. After the website starts successfully, verify you can see **Hello World!** by selecting the app URL at `You can launch the app at https://<your-web-app-name>.azurewebsites.net`.
 
 The `az webapp up` command produces the following JSON output for the sample web app:
 
@@ -131,7 +131,7 @@ The `trigger: main` keyword configures your pipeline to run whenever a change is
 
 1. Go to your forked GitHub repository and edit the *README.md* file to make a small change.
 1. Select **Commit changes**, and **Commit changes** again.
-1. In your Azure DevOps project, verify that your **nodejs-docs-hello-world** pipeline runs again with the description **Individual CI**.
+1. In your Azure DevOps project, verify that your **nodejs-docs-hello-world** pipeline runs again with a run description of **Individual CI**.
 
 ## Clean up resources
 
@@ -139,7 +139,7 @@ You can delete the resources you created for this article if you don't need them
 
 To remove the Azure App Service resources, run the following commands in order in Cloud Shell. You must delete the web app before you can delete its app service plan, and you must delete the app service plan before you can delete its resource group.
 
-```bash
+```azurecli
 az webapp delete --name <web-app-name> --resource-group <resource-group-name>
 az appservice plan delete --name <app-service-plan-name> --resource-group <resource-group-name>
 az group delete --name <resource-group-name>
