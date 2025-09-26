@@ -41,7 +41,7 @@ A [Project Administrator](../../organizations/security/change-project-level-perm
 
    Enable these settings by setting their toggles to **On** in **Organization Settings** or **Project Settings** > **Pipelines** > **Settings** > **General**.
 
-   If the settings are enabled in **Organizational Settings**, they can't be overridden in **Project Settings**. If the settings aren't enabled in **Organization Settings**, they can be enabled at the project level.
+   If the settings are enabled in **Organization Settings**, they can't be overridden in **Project Settings**. If the settings aren't enabled in **Organization Settings**, they can be enabled at the project level.
 
 ### Use a repository as a submodule
 
