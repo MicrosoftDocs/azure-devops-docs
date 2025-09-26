@@ -1,6 +1,6 @@
 ---
-title: Build and deploy a Node.js app
-description: Use Azure Pipelines to build and deploy a Node.js application to an Azure App Service webapp with continuous integration and deployment.
+title: Build and deploy a Node.js web app
+description: Use Azure Pipelines to build and deploy a Node.js application to an Azure App Service web app with continuous integration and deployment.
 ms.topic: how-to
 ms.custom: devx-track-js
 ms.date: 09/26/2025
@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Build and deploy a Node.js app
 
-This article shows how to use Azure Pipelines to create a pipeline that builds and deploys a Node.js application to Azure App Service with continuous integration (CI) and continuous delivery (CD). CI/CD reduces downtime and error risk by automatically building and deploying your app whenever there's a commit to your app code repository.
+This article shows how to use Azure Pipelines to create a pipeline that builds and deploys a Node.js application to Azure App Service with continuous integration (CI) and continuous deployment (CD). CI/CD reduces downtime and error risk by automatically building and deploying your app whenever there's a commit to your app code repository.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ This article shows how to use Azure Pipelines to create a pipeline that builds a
 
 1. In GitHub, go to the [Node.js Hello World](https://github.com/Azure-Samples/nodejs-docs-hello-world) repository and select **Fork** in the top menu.
 
-   :::image type="content" source="media/nodejs-tutorial/select-fork.png" alt-text="Screenshot of GitHub to select the Node.js project to fork. ":::
+   :::image type="content" source="media/nodejs-tutorial/select-fork.png" alt-text="Screenshot of GitHub to select the Node.js project to fork.":::
 
 1. Select your GitHub organization as fork **Owner** if not already selected, and then select **Create fork**.
 
@@ -72,7 +72,8 @@ The `az webapp up` command recognizes the app as a Node.js app, and takes the fo
 1. Creates a default [App Service plan](/cli/azure/appservice/plan#az-appservice-plan-create).
 1. [Creates a web app](/cli/azure/webapp#az-webapp-create) with the assigned name and the URL `<your-web-app-name>.azurewebsites.net`.
 1. [Deploys](/azure/app-service/deploy-zip) all files from the current working directory to a ZIP archive, with build automation enabled.
-1. Caches the parameters locally in the *.azure/config* file so you don't need to specify them again when deploying from the project folder with `az webapp up` or other `az webapp` commands. The commands use the cached values automatically by default.
+1. Caches the parameters locally in the *.azure/config* file so you don't need to specify them again when deploying from the project folder with `az webapp up` or other `az webapp` commands.
+1. Builds the app and starts the website.
 
 You can override the default actions with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
@@ -94,7 +95,6 @@ The `az webapp up` command produces the following JSON output for the sample web
   "src_path": "<repository-source-path>"
 }
 ```
-
 
 ## Create the pipeline from a template
 
@@ -120,6 +120,8 @@ The `az webapp up` command produces the following JSON output for the sample web
    - Packages the built app to a ZIP archive and uploads the ZIP to a drop location.
    - Deploys the ZIP package to the App Service app and starts the app.
 
+### Save and run the pipeline
+
 1. After you review the code, select **Save and run** and **Save and run** again to save and run your pipeline. The *azure-pipelines.yml* file saves to your forked repository, and the code deploys to Azure App Service.
 
    >[!NOTE]
@@ -141,23 +143,23 @@ The `trigger: main` keyword configures your pipeline to run whenever a change is
 
 1. Go to your forked GitHub repository and make a small change in the *README.md* file.
 1. Select **Commit changes**, and **Commit changes** again.
-1. In Azure Pipelines, verify that your **nodejs-docs-hello-world** pipeline runs again with a run description of **Individual CI**.
+1. In Azure Pipelines, verify that your **nodejs-docs-hello-world** pipeline runs again with a description of **Individual CI**.
 
 ## Clean up resources
 
 You can delete the resources you created for this article if you don't need them anymore.
 
-To remove the Azure App Service resources, run the following commands in order in Cloud Shell. You must delete the web app before you can delete its app service plan, and you must delete the app service plan before you can delete its resource group.
+- To remove the Azure App Service resources, run the following commands in order in Cloud Shell. You must delete the web app before you can delete its app service plan, and you must delete the app service plan before you can delete its resource group.
 
-```azurecli
-az webapp delete --name <web-app-name> --resource-group <resource-group-name>
-az appservice plan delete --name <app-service-plan-name> --resource-group <resource-group-name>
-az group delete --name <resource-group-name>
-```
+  ```azurecli
+  az webapp delete --name <web-app-name> --resource-group <resource-group-name>
+  az appservice plan delete --name <app-service-plan-name> --resource-group <resource-group-name>
+  az group delete --name <resource-group-name>
+  ```
 
-To remove your pipeline in Azure Pipelines, select the pipeline, select the **More actions** icon at upper right on the pipeline page, and then select **Delete**. To remove your Azure DevOps project, see [Delete a project](../../organizations/projects/delete-project.md).
+- To remove your pipeline in Azure Pipelines, select the pipeline, select the **More actions** icon at upper right on the pipeline page, and then select **Delete**. To remove your Azure DevOps project, see [Delete a project](../../organizations/projects/delete-project.md).
 
-To delete your forked **nodejs-docs-hello-world** GitHub repo, go to the repo and select **Settings** in the top menu bar. Scroll to the bottom of the page, and select **Delete this repository**.
+- To delete your forked **nodejs-docs-hello-world** GitHub repo, go to the repo and select **Settings** in the top menu bar. Scroll to the bottom of the page, and select **Delete this repository**.
 
 ## Related content
 
