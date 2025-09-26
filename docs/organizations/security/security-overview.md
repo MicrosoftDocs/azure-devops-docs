@@ -59,6 +59,7 @@ Ensure your Azure DevOps environment complies with industry standards and regula
 Review through all the security policies available to administrators to restrict and control who has access to the organization. Maintain control of the organization by preventing unnecessary project creation.
 
 - **Disable *“Allow public projects”*:** Disable the option to [create public projects](../projects/make-project-public.md). Switch project visibility from public to private as needed. Users who never signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes.
+  - For bulk updates, automate switching project visibility with the [Change project visibility script](./scripts/change-project-visibility-cli.ps1). The script requires a Microsoft Entra token 
 - **[Restrict unnecessary authentication mechanisms](../accounts/change-application-access-policies.md)** and limit who has access to allowed authentication.
 - **Limit access with Conditional Access Policies**: Protect your organization by [defining Conditional Access policies (CAPs)](/entra/identity/conditional-access/overview) on Microsoft Entra that react to sign-in events and request other actions before a user is granted access.
   - Turn on the organization policy to [enable IP CAP validation on non-interactive flows](../accounts/change-application-access-policies.md#cap-support-on-azure-devops).
