@@ -76,7 +76,7 @@ The `az webapp up` command recognizes the app as a Node.js app, and takes the fo
 
 You can override the default actions with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
-The command produces status messages as it runs. When the website starts successfully, verify that you can see the **Hello World!** app by selecting the URL at `You can launch the app at <URL>`.
+The command produces status messages as it runs. When the website starts successfully, verify that you can see the app by selecting the URL at `You can launch the app at <URL>`.
 
 The `az webapp up` command produces the following JSON output for the sample web app:
 
@@ -127,11 +127,11 @@ The `az webapp up` command produces the following JSON output for the sample web
 
 ## Run a CI build and deployment
 
-The `trigger: main` keyword configures your pipeline to run whenever a change is committed to the `main` branch of your forked code repository. To demonstrate a CI build:
+The `trigger: main` keyword configures your pipeline to run whenever a change is committed to the `main` branch of your forked code repository. To run a CI build:
 
-1. In your forked GitHub repository, edit the *README.md* file to make a small change.
+1. Go to your forked GitHub repository and edit the *README.md* file to make a small change.
 1. Select **Commit changes**, and **Commit changes** again.
-1. In your Azure DevOps project, note that your **nodejs-docs-hello-world** pipeline runs again with the description **Individual CI**.
+1. In your Azure DevOps project, verify that your **nodejs-docs-hello-world** pipeline runs again with the description **Individual CI**.
 
 ## Clean up resources
 
