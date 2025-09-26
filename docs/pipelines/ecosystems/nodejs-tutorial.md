@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Build and deploy a Node.js app
 
-This article shows how to use Azure Pipelines to create a pipeline that builds and deploys a Node.js application to Azure App Service with continuous integration (CI) and continuous delivery (CD). CI/CD reduces downtime and error risk by automatically building and deploy your app whenever there's a commit to your app code repository.
+This article shows how to use Azure Pipelines to create a pipeline that builds and deploys a Node.js application to Azure App Service with continuous integration (CI) and continuous delivery (CD). CI/CD reduces downtime and error risk by automatically building and deploying your app whenever there's a commit to your app code repository.
 
 ## Prerequisites
 
@@ -25,11 +25,11 @@ This article shows how to use Azure Pipelines to create a pipeline that builds a
 
    :::image type="content" source="media/nodejs-tutorial/select-fork.png" alt-text="Screenshot of GitHub to select the Node.js project to fork. ":::
 
-1. Select your GitHub organization as fork **Owner** if it's not already selected, and then select **Create fork**.
+1. Select your GitHub organization as fork **Owner** if not already selected, and then select **Create fork**.
 
    :::image type="content" source="media/nodejs-tutorial/create-fork.png" alt-text="Screenshot of create fork in GitHub. ":::
 
-The browser goes to the new fork at URL `https://github.com/<owner>/nodejs-docs-hello-world`.
+The browser goes to your new fork at URL `https://github.com/<owner>/nodejs-docs-hello-world`.
 
 ## Create and deploy the App Service web app
 
@@ -76,7 +76,7 @@ The `az webapp up` command recognizes the app as a Node.js app, and takes the fo
 
 You can override the default actions with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
-The command produces status messages as it runs. After the website starts successfully, verify you can see **Hello World!** by selecting the app URL at `You can launch the app at https://<your-web-app-name>.azurewebsites.net`.
+The command produces status messages as it runs. After the website starts successfully, verify you can see the **Hello World** app by selecting the app URL at `You can launch the app at https://<your-web-app-name>.azurewebsites.net`.
 
 The `az webapp up` command produces the following JSON output for the sample web app:
 
@@ -104,13 +104,23 @@ The `az webapp up` command produces the following JSON output for the sample web
 
 1. On the **Select a repository** screen, select your forked **nodejs-docs-hello-world** repository.
 
-1. On the **Configure your pipeline** page, select **Node.js Express Web App to Linux on Azure**.
+1. Azure Pipelines recognizes the code as a Node.js app, and suggests several pipeline [templates](../process/templates.md) on the **Configure your pipeline** page. Select **Node.js Express Web App to Linux on Azure**.
 
 1. On the next screen, select your Azure subscription and select **Continue**. This action creates a service connection to your Azure resources.
 
 1. On the next screen, select your Azure web app and select **Validate and configure**. Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAML pipeline editor.
 
-1. On the **Review your pipeline YAML** screen, review the code for your pipeline configuration, and then select **Save and run** and **Save and run** again to run your pipeline. The *azure-pipelines.yml* file saves to your forked repository, and the code deploys to Azure App Service.
+1. On the **Review your pipeline YAML** screen, review the code for your pipeline.
+
+   The pipeline takes the following actions:
+   
+   - Sets a trigger to run on every commit to the main code branch.
+   - Establishes and uses variables for the Azure resource manager service connection, web app name, VM pool, and an environment that it creates.
+   - Installs Node.js on the build agent and uses npm to run and test the app build.
+   - Packages the built app to a ZIP archive and uploads the ZIP to a drop location.
+   - Deploys the ZIP package to the App Service app and starts the app.
+
+1. After you review the code, select **Save and run** and **Save and run** again to save and run your pipeline. The *azure-pipelines.yml* file saves to your forked repository, and the code deploys to Azure App Service.
 
    >[!NOTE]
    >The first time the pipeline runs, it asks for permission to access the environment it creates. Select **Permit** to grant permission for the pipeline to access the environment.
@@ -129,7 +139,7 @@ The `az webapp up` command produces the following JSON output for the sample web
 
 The `trigger: main` keyword configures your pipeline to run whenever a change is committed to the `main` branch of your forked code repository. To run a CI build:
 
-1. Go to your forked GitHub repository and edit the *README.md* file to make a small change.
+1. Go to your forked GitHub repository and make a small change in the *README.md* file.
 1. Select **Commit changes**, and **Commit changes** again.
 1. In your Azure DevOps project, verify that your **nodejs-docs-hello-world** pipeline runs again with a run description of **Individual CI**.
 
