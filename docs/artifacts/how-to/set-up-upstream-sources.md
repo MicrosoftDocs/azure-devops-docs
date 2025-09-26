@@ -150,7 +150,7 @@ A: Make sure that the feed owner has shared a view as an upstream source. See [A
 
 ##### Q: What are feed views?
 
-A: Feed views let you share a subset of package versions that have been tested and validated, excluding those still in development or not meeting quality criteria. See [What are feed views](./views.md) for more details.
+A: Feed views let you share a subset of package versions that have been tested and validated, excluding those still in development or not meeting quality criteria. See [What are feed views](../concepts/views.md) for more details.
 
 ##### Q: Can a user with the **Feed Reader** role download packages from an upstream source?
 
