@@ -71,9 +71,8 @@ The `az webapp up` command recognizes the app as a Node.js app, and takes the fo
 1. Creates a default [resource group](/cli/azure/group#az-group-create).
 1. Creates a default [App Service plan](/cli/azure/appservice/plan#az-appservice-plan-create).
 1. [Creates a web app](/cli/azure/webapp#az-webapp-create) with the assigned name and the URL `<your-web-app-name>.azurewebsites.net`.
-1. [Deploys](/azure/app-service/deploy-zip) all files from the current working directory to a ZIP archive, with build automation enabled.
+1. [ZIP deploys](/azure/app-service/deploy-zip) all files from the current working directory, with build automation enabled.
 1. Caches the parameters locally in the *.azure/config* file so you don't need to specify them again when deploying from the project folder with `az webapp up` or other `az webapp` commands.
-1. Builds the app and starts the website.
 
 You can override the default actions with your own values by using the command parameters. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
