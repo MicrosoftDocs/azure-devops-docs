@@ -26,7 +26,7 @@ landingContent:
         links:
           - text: Sign up and invite teammates
             url: ./get-started/sign-up-invite-teammates.md
-          - text: Quick start: Plan & track work
+          - text: 'Quick start: Plan & track work'
             url: ./get-started/plan-track-work.md
           - text: Get started as a Stakeholder
             url: ../organizations/security/get-started-stakeholder.md
