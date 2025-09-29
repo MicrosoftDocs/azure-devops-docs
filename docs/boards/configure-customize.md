@@ -64,6 +64,8 @@ Explain the chosen approach to teams and update process documentation.
 
 ## Areas, iterations, and team setup
 
+<a id="area-path"></a>
+
 Use area paths to partition work by product, feature, or business area. Use iteration paths for sprints, releases, or milestones.
 
 Recommendations
@@ -77,7 +79,20 @@ See:
 - [About area and iteration paths](../organizations/settings/about-areas-iterations.md)
 - [Configure a hierarchy of teams](plans/configure-hierarchical-teams.md)
 
+## Show bugs on boards & backlogs
+
+<a id="show-bugs"></a>
+
+Each team decides whether bugs appear on the product backlog (as requirements) or are tracked as tasks tied to requirements. Teams that use Scrum often show bugs on the backlog; teams using Agile or CMMI can choose whether bugs appear on backlogs. To change how bugs display for a team, update the team settings:
+
+- Configure team behavior: ../organizations/settings/show-bugs-on-backlog.md
+- If you recently changed settings and bugs don't appear as expected, see troubleshooting: ./backlogs/resolve-backlog-reorder-issues.md#display-nested-items-on-backlogs-and-boards
+
+Keep a consistent team policy so queries, boards, and rollups behave predictably.
+
 ## Rollup and portfolio views
+
+<a id="rollup"></a>
 
 Add rollup columns to backlogs to show progress bars, counts, or sums for child items. Use Delivery Plans and feature timelines to view cross-team schedules and dependencies.
 
