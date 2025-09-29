@@ -28,7 +28,7 @@ Learn how to do the following tasks:
 - Troubleshoot common dashboard and widget issues.
 
 Quick steps:
-1. In your project, open Overview > Dashboards.
+1. In your project, open **Overview** > **Dashboards**.
 2. Select **New dashboard** to create a team or project dashboard.
 3. Select **Edit**, open the widget catalog, drag widgets onto the canvas, then select **Done Editing**.
 4. Open **More options** > **Dashboard settings** to rename or change refresh settings.
