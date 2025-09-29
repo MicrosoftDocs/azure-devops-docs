@@ -68,14 +68,14 @@ Explain the chosen approach to teams and update process documentation.
 
 Use area paths to partition work by product, feature, or business area. Use iteration paths for sprints, releases, or milestones.
 
-Recommendations
+Recommendations:
 - Create area path hierarchies that reflect how managers want rollups reported.
 - Give each team a default area and iteration subscription so work items inherit correct context.
 - Use consistent iteration cadences across teams that deliver together.
 
 :::image type="content" source="media/config-custom/area-path-team-assignments.png" alt-text="Screenshot showing area paths and team assignments.":::
 
-See:
+Related content:
 - [About area and iteration paths](../organizations/settings/about-areas-iterations.md)
 - [Configure a hierarchy of teams](plans/configure-hierarchical-teams.md)
 
@@ -85,8 +85,8 @@ See:
 
 Each team decides whether bugs appear on the product backlog (as requirements) or are tracked as tasks tied to requirements. Teams that use Scrum often show bugs on the backlog; teams using Agile or CMMI can choose whether bugs appear on backlogs. To change how bugs display for a team, update the team settings:
 
-- Configure team behavior: ../organizations/settings/show-bugs-on-backlog.md
-- If you recently changed settings and bugs don't appear as expected, see troubleshooting: ./backlogs/resolve-backlog-reorder-issues.md#display-nested-items-on-backlogs-and-boards
+- [Show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md)
+- [Troubleshooting](backlogs/resolve-backlog-reorder-issues.md#display-nested-items-on-backlogs-and-boards)
 
 Keep a consistent team policy so queries, boards, and rollups behave predictably.
 
@@ -108,7 +108,7 @@ Work item workflow states determine default board columns. You can:
 - Add columns to team boards (affects only that team).
 - Map state-to-column mappings carefully to preserve reporting consistency (for example, cumulative flow diagrams).
 
-See:
+Related content:
 - [Add or manage columns](backlogs/set-column-options.md)
 - [Customize workflow states](../organizations/settings/work/customize-process-backlogs-boards.md)
 
@@ -116,7 +116,7 @@ See:
 
 Custom fields let you capture project-specific data. They can power rollups and reports but apply across the process.
 
-Recommendations
+Recommendations:
 - Limit custom fields to those that support reporting or automation.
 - Use numeric custom fields for rollup sums; use picklists for consistent reporting.
 - Remember: process-level fields are shared across projects in the collection/organization.
@@ -142,7 +142,7 @@ Control who changes processes, area/iteration trees, and team configuration:
 - Project-level changes (areas/iterations): Project Administrators or users with node permissions.
 - Team-level changes: Team administrators or Project Administrators.
 
-See:
+Related content:
 - [Create and manage processes](../organizations/settings/work/manage-process.md)
 - [Set permissions for process customization](../organizations/security/set-permissions-access-work-tracking.md)
 
@@ -150,7 +150,7 @@ See:
 
 Use Remaining Work, Original Estimate, and Completed Work fields for sprint planning and capacity. If you track time for billing or other purposes, evaluate Marketplace extensions for richer time-tracking support.
 
-See:
+Related content:
 - [Sprint capacity](sprints/set-capacity.md)
 - [Configure sprint burndown](../report/dashboards/configure-sprint-burndown.md)
 

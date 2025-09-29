@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/26/2025
+ms.date: 09/29/2025
 #customer intent: As a team member, I want to understand how to use the different processes to manage our team projects.
 ---
 
@@ -128,15 +128,20 @@ To track implementation details, create tasks from a parent work item.
    :::image type="content" source="media/plan-track-work/prep-images-task.png" alt-text="Screenshot showing entering a task title.":::
 1. To add multiple tasks quickly, continue typing titles and press Enter after each.
 
-Tasks inherit the parent's **Area Path** and **Iteration Path** and appear on sprint taskboards.
+   Tasks inherit the parent's **Area Path** and **Iteration Path** and appear on sprint taskboards.
 
-You can:
-- Mark a task complete by selecting its checkbox (State changes to **Done**).
-  :::image type="content" source="media/plan-track-work/mark-tasks-as-done.png" alt-text="Screenshot showing tasks marked as done.":::
-- Reorder or reparent tasks by dragging them in the checklist.
-  :::image type="content" source="media/plan-track-work/reorder-task.png" alt-text="Screenshot showing reordering a task.":::
-- Expand or collapse a task checklist.
-  :::image type="content" source="media/plan-track-work/collapse-task-list.png" alt-text="Screenshot showing a collapsed task checklist.":::
+   You can:
+   - Mark a task complete by selecting its checkbox (State changes to **Done**).
+   
+   :::image type="content" source="media/plan-track-work/mark-tasks-as-done.png" alt-text="Screenshot showing tasks marked as done.":::
+   
+   - Reorder or reparent tasks by dragging them in the checklist.
+   
+   :::image type="content" source="media/plan-track-work/reorder-task.png" alt-text="Screenshot showing reordering a task.":::
+   
+   - Expand or collapse a task checklist.
+   
+   :::image type="content" source="media/plan-track-work/collapse-task-list.png" alt-text="Screenshot showing a collapsed task checklist.":::
 
 ## Open and update a work item
 

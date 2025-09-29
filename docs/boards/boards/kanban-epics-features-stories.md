@@ -5,11 +5,11 @@ description: Quickly define and view the status of child features, user stories,
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
-ms.topic: tutorial
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/26/2025
+ms.date: 09/29/2025
 ---
 
 # Add board features and epics
@@ -34,20 +34,20 @@ Your board is one of several boards available in a project. For an overview of s
 2. Choose **Boards** > **Boards**.
 3. Select the correct team from the team selector menu.
 
-:::image type="content" source="media/quickstart/open-kanban-board-agile.png" alt-text="Screenshot showing how to open your board from the web portal.":::
+   :::image type="content" source="media/quickstart/open-kanban-board-agile.png" alt-text="Screenshot showing how to open your board from the web portal.":::
 
-To choose another team's board, open the selector and pick a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team boards** option. Use the search box to filter team boards for the project.
+   To choose another team's board, open the selector and pick a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team boards** option. Use the search box to filter team boards for the project.
 
-> [!div class="mx-imgBorder"]  
-> :::image type="content" source="media/quickstart/select-kanban-team-board.png" alt-text="Screenshot showing the team board selector and Browse all team boards option.":::  
->
-> [!TIP]  
-> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team board. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false":::) appear at the top of the team selector list.
+   > [!div class="mx-imgBorder"]  
+   > :::image type="content" source="media/quickstart/select-kanban-team-board.png" alt-text="Screenshot showing the team board selector and Browse all team boards option.":::  
+   >
+   > [!TIP]  
+   > Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team board. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false":::) appear at the top of the team selector list.
 
-2. Select **Features** or **Epics** from the backlog selector menu.
+4. Select **Features** or **Epics** from the backlog selector menu.
 
-> [!div class="mx-imgBorder"]  
-> :::image type="content" source="media/features-epics/select-portfolio-level.png" alt-text="Screenshot showing how to choose the portfolio backlog level (Features or Epics).":::
+   > [!div class="mx-imgBorder"]  
+   > :::image type="content" source="media/features-epics/select-portfolio-level.png" alt-text="Screenshot showing how to choose the portfolio backlog level (Features or Epics).":::
 
 ## Add epics or features
 
