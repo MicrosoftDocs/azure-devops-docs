@@ -1,58 +1,61 @@
 ---
 title: Request stakeholder feedback
-description: Request stakeholder feedback in Azure DevOps using the Exploratory Testing browser extension
+description: Request stakeholder feedback in Azure DevOps using the Test & Feedback extension
 ms.assetid: 6AE1D62D-43EE-4C0B-92CD-F11BC10A9CA8
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
+ai-usage: ai-assisted
 ms.topic: conceptual
 ms.author: jeom
 author: rohit-batra
-ms.date: 12/07/2018
+ms.date: 09/30/2025
 ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
 
-# Request stakeholder feedback using the Test & Feedback extension
+# Request stakeholder feedback in Azure DevOps using the Test & Feedback extension
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
+[!INCLUDE [feedback-header-text](includes/feedback-header-text.md)]
+
+[!INCLUDE [important-note-request-feedback-unavailable](includes/important-note-request-feedback-unavailable.md)]
+
+Use the Test & Feedback extension in Azure DevOps to collect stakeholder feedback quickly.
 
 ## Prerequisites
 
 | Category | Requirement |
-|--------------|-------------|
-| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
-| **Access levels** | To request or provide feedback: At least **Stakeholder** access. |
-| **Extensions** |[Test & Feedback extension](perform-exploratory-tests.md).|
+|----------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md) |
+| **To request feedback** | On Azure DevOps Server the work-item **Request feedback** action lets users with **Basic** access send requests. In Azure DevOps Services (cloud) this menu action isn't available — use email/chat or the Test & Feedback extension. |
+| **To provide feedback** | Stakeholders respond using the Test & Feedback extension. |
+| **Extensions** | [Test & Feedback extension](perform-exploratory-tests.md) |
 
 <a name="request"></a>
 
 ## Request feedback from stakeholders
 
-[!INCLUDE [important-note-request-feedback-unavailable](includes/important-note-request-feedback-unavailable.md)]
+Follow these steps to send a feedback request from a work item:
 
-Request feedback from stakeholders directly from an Azure DevOps work item. 
+1. Open the work item form for the user story or feature you want feedback on.
+2. Try to open the shortcut menu (ellipsis …) and select **Request feedback**.
 
-1. Open the work item form for the user story or feature for which
-   you want to request feedback.
+   - If the **Request feedback** action is visible, continue with the workflow.
+   - If you don't see **Request feedback** (this is expected in Azure DevOps Services/cloud), use [one of the alternatives](#feedback-shortcut-unavailable).
 
-2. Open the shortcut menu from the ellipses (**...**) and select **Request feedback**.
+3. Enter or select one or more stakeholder names, and optionally add instructions or notes to help them provide meaningful feedback.
 
-   ![Screenshot shows choosing the Request feedback option.](media/request-stakeholder-feedback/request-stakeholder-feedback-01.png)
-   
-3. Enter or select the names of the stakeholder(s) you want to send the request to, and optionally add any instructions or notes that help them provide meaningful feedback. 
- 
    ![Screenshot shows selecting users and entering instructions.](media/request-stakeholder-feedback/request-stakeholder-feedback-02.png)
 
-4. Select **Send** to generate emails to the selected stakeholders.
+4. Select **Send**. Azure DevOps sends a Request feedback email to the selected stakeholders.
 
-Teams can request feedback from other team members, such as users having Basic access. Just add their names in the feedback request form so that a **Request feedback** email gets sent to them. Also see [Can users with Basic access respond to feedback requests](provide-stakeholder-feedback.md#non-stakeholder-feedback).
+Teams can request feedback from other team members, including users with Basic access. Add their names to the request form so a Request feedback email gets sent to them. For more information about Basic user responses, see [Can users with Basic access respond to feedback requests](provide-stakeholder-feedback.md#non-stakeholder-feedback).
 
 ## Related content
 
-* [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
-* [Voluntary stakeholder feedback using the Test &amp; Feedback extension](voluntary-stakeholder-feedback.md#voluntary)
-* [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md#track)
-* [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
-* [Overview of manual and exploratory testing](index.yml)
+- [Provide stakeholder feedback using the Test & Feedback extension](provide-stakeholder-feedback.md#provide)
+- [Voluntary stakeholder feedback using the Test & Feedback extension](voluntary-stakeholder-feedback.md#voluntary)
+- [Track stakeholder feedback using the Test & Feedback extension](track-stakeholder-feedback.md#track)
+- [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
+- [Overview of manual and exploratory testing](index.yml)
