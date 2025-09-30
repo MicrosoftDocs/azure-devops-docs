@@ -20,7 +20,7 @@ The resource view provides traceability from a Kubernetes object to the pipeline
 > [!NOTE]
 > To use a private AKS cluster for an environment resource, you must connect to the cluster's virtual network, because the API server endpoint isn't exposed through a public IP address. The best method is to set up a self-hosted agent in a virtual network that can access the cluster's virtual network. For more information, see [Options for connecting to a private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster).
 
-## Kubernetes resource views features
+## Kubernetes resource views
 
 Using Kubernetes resources and resource views in environments provides the following benefits:
 
@@ -36,14 +36,12 @@ Using Kubernetes resources and resource views in environments provides the follo
 
    :::image type="content" source="media/kubernetes-github-app.png" alt-text="Screenshot that shows the Review app comment in GitHub.":::
 
+<a name="use-azure-kubernetes-service"></a>
 ## AKS resources
-
-AKS maps the Kubernetes resources in your environment to the specified namespace. For information about setting up a Kubernetes service connection outside of an environment, see the [Kubernetes service connection](../library/service-endpoints.md#common-service-connection-types) section in [Service connections](../library/service-endpoints.md).
 
 When you use AKS, a [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) is created in your chosen cluster and namespace. For a [Kubernetes role-based access control (RBAC)](/azure/aks/azure-ad-rbac)-enabled cluster, [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding) is also created to limit the scope of the service account to the chosen namespace. For a Kubernetes RBAC-disabled cluster, the created service account has cluster-wide privileges across namespaces.
 
-<a name="use-azure-kubernetes-service"></a>
-### Add an AKS Kubernetes resource to an environment
+AKS maps the Kubernetes resources in your environment to the specified namespace. For information about setting up a Kubernetes service connection outside of an environment, see the [Kubernetes service connection](../library/service-endpoints.md#common-service-connection-types) section in [Service connections](../library/service-endpoints.md).
 
 To add an AKS resource to an Azure Pipelines environment:
 
@@ -58,7 +56,7 @@ The new resource appears on the environment's **Resources** tab with the text **
    :::image type="content" source="media/kubernetes-environment-cluster.png" alt-text="Screenshot that shows an added Kubernetes resource.":::
 
 <a name="use-an-existing-service-account"></a>
-### Add a non-AKS Kubernetes resource
+## Non-AKS Kubernetes resources
 
 To map a Kubernetes resource to a namespace from a non-AKS cluster, you need an existing service account for the non-AKS provider.
 
@@ -76,7 +74,7 @@ To map a Kubernetes resource to a namespace from a non-AKS cluster, you need an 
 
 1. Select **Validate and create**.
 
-## Kubernetes environment resources in pipelines
+## Kubernetes resources in pipelines
 
 The easiest way to create a YAML pipeline to deploy to AKS is to use the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template. The template builds and pushes an image to Azure Container Registry and deploys to AKS, or sets up a review app for PRs. You don't have to write YAML code or manually create explicit role bindings.
 
