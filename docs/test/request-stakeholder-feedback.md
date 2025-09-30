@@ -54,8 +54,8 @@ Teams can request feedback from other team members, including users with Basic a
 
 ## Related content
 
-- [Provide stakeholder feedback using the Test & Feedback extension](provide-stakeholder-feedback.md#provide)
-- [Voluntary stakeholder feedback using the Test & Feedback extension](voluntary-stakeholder-feedback.md#voluntary)
-- [Track stakeholder feedback using the Test & Feedback extension](track-stakeholder-feedback.md#track)
+- [Provide stakeholder feedback using the Test & Feedback extension](provide-stakeholder-feedback.md)
+- [Voluntary stakeholder feedback using the Test & Feedback extension](voluntary-stakeholder-feedback.md)
+- [Track stakeholder feedback using the Test & Feedback extension](track-stakeholder-feedback.md)
 - [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 - [Overview of manual and exploratory testing](index.yml)
