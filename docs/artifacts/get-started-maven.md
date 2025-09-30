@@ -38,7 +38,7 @@ If you already have a feed, you can skip to the next section. Otherwise, create 
 
 Now that you have a feed, you need to set up your configuration file to authenticate with your feed, you'll also need to create a personal access token to authenticate with Azure DevOps. Follow the steps below to authenticate and connect to your feed:
 
-1. Generate a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scope. Copy your PAT and save it in a secure location as you'll need in the next steps.
+1. Generate a [Personal Access Token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scope. Copy your PAT and save it in a secure location as you'll need in the next steps.
 
 1. Sign in to Azure DevOps, and then navigate to your project.
 
