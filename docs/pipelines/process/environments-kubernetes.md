@@ -85,9 +85,9 @@ The easiest way to create a YAML pipeline to deploy to AKS is to use the [Deploy
 
 In the following example pipeline based on the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template, the first deployment job runs for non-PR branches and deploys against a regular Kubernetes resource in the environment.
 
-The second job runs only for PR branches and deploys against review app resources. The pipeline generates these review namespaces inside the Kubernetes cluster on demand. The resources are labeled **Review** in the environment resource listing.
+The second job runs only for PR branches and deploys against review app resources. The pipeline generates review namespaces inside the Kubernetes cluster on demand. These resources are labeled **Review** in the environment resource listing.
 
-:::image type="content" source="media/kubernetes-yaml-comments.png" alt-text="Screenshot that shows the Review environment in the pipeline environment listing.":::
+:::image type="content" source="media/kubernetes-yaml-templates.png" alt-text="Screenshot that shows the Review environment in the pipeline environment listing.":::
 
 > [!NOTE]
 > To use this job in an existing pipeline, make sure the service connection backing the regular Kubernetes environment resource is set to **Use cluster admin credentials**. Otherwise, role bindings must be created for the underlying service account to the review app namespace.
