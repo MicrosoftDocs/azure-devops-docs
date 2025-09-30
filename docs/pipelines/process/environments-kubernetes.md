@@ -1,97 +1,102 @@
 ---
 title: Kubernetes resources in environments
-description: Learn about using Kubernetes resources and resource views in environments to target Kubernetes clusters with Azure Pipelines.
+description: Learn about using Kubernetes resources in environments to target Kubernetes clusters with Azure Pipelines.
 ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.date: 09/29/2025
+ms.date: 09/30/2025
 monikerRange: '>= azure-devops-2020'
+#customer intent: As a Kubernetes developer, I want to understand how Kubernetes resources are used in Azure Pipelines environments, so I can deploy apps to my Kubernetes clusters and see review environments for PRs.
 ---
 
 # Kubernetes resources in environments
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-This article explains how you can use Kubernetes [environment](environments.md) resources to deploy to Kubernetes clusters in Azure Pipelines. You can use Kubernetes resources with public or private clusters from Azure Kubernetes Service (AKS) or other cloud providers.
+This article describes using Kubernetes resources in Azure Pipelines [environments](environments.md) to target public or private Kubernetes clusters from Azure Kubernetes Service (AKS) or other cloud providers. The environment resource view shows the status of objects in the Kubernetes namespace that are mapped to the resource.
 
-The Kubernetes resource view shows the status of objects in the namespace that are mapped to the resource. The resource view provides pipeline traceability from a Kubernetes object to the pipeline, and then back to the commit.
-
-For more information about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
+The resource view provides traceability from a Kubernetes object to the pipeline and back to the triggering commit. You can also create dynamic Kubernetes environment resources for reviewing pull requests before merge. For more information about environment resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
 
 > [!NOTE]
-> If you use a private AKS cluster, make sure to connect to the cluster's virtual network, because the API server endpoint isn't exposed through a public IP address. It's best to set up a self-hosted agent within a virtual network that has access to the cluster's virtual network. For more information, see [Options for connecting to a private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster).
+> To use a private AKS cluster for an environment resource, you must connect to the cluster's virtual network, because the API server endpoint isn't exposed through a public IP address. The best method is to set up a self-hosted agent in a virtual network that can access the cluster's virtual network. For more information, see [Options for connecting to a private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster).
 
 ## Kubernetes resource views features
 
-Using Kubernetes resource views within environments provides the following benefits:
+Using Kubernetes resources and resource views in environments provides the following benefits:
 
-- **Pipeline traceability** - The [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0), used for deployments, adds more annotations to show pipeline traceability in resource views. Pipeline traceability helps to identify the originating Azure DevOps organization, project, and pipeline responsible for updates that were made to an object within the namespace.
+- **Pipeline traceability**. The [Kubernetes manifest](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1) deployment task adds annotations that support pipeline traceability. Pipeline traceability lets you see the Azure DevOps organization, project, and pipeline responsible for updates to objects within the namespace.
 
-  > [!div class="mx-imgBorder"]
-  > ![Pipeline traceability](media/k8s-pipeline-traceability.png)
+   :::image type="content" source="media/k8s-pipeline-traceability.png" alt-text="Screenshot that shows pipeline traceability for a Kubernetes cluster.":::
 
-- **Resource health diagnostics** - Workload status can be useful for quickly debugging mistakes or regressions introduced by a new deployment. For example, for unconfigured *imagePullSecrets* resulting in ImagePullBackOff errors, pod status information can help you identify the root cause for the issue.
-  > [!div class="mx-imgBorder"]
-  > ![ImagePullBackOff](media/k8s-imagepullbackoff.png)
+- **Resource health diagnostics**. You can use the workload status view to quickly debug mistakes or regressions introduced by a new deployment. For example, pod status information can help you identify the cause of issues like unconfigured `imagePullSecrets` that result in `ImagePullBackOff` errors.
 
-- **Review App** - Review App works by deploying every pull request from your Git repository to a dynamic Kubernetes resource under the environment. Reviewers can see how those changes look and work with other dependent services before they're merged into the target branch and deployed to production.
+   :::image type="content" source="media/k8s-imagepullbackoff.png" alt-text="Screenshot that shows the workload status view for a Kubernetes deployment.":::
+
+- **Review app**. The Review app deploys every pull request from your Git repository to a dynamic Kubernetes resource in the environment, and posts a GitHub comment linking to the review environment. Reviewers can see how the PR changes look and work with other dependent services before the changes are merged into the target branch and deployed to production.
+
+   :::image type="content" source="media/k8s-github-app.png" alt-text="Screenshot that shows the Review app comment in GitHub.":::
 
 ## AKS resources
 
-If you use Azure Kubernetes Service (AKS), AKS maps a Kubernetes resource within your environment to a namespace. Azure Pipelines creates a [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) for your cluster and namespace.
+If you use Azure Kubernetes Service (AKS), Azure Pipelines maps Kubernetes resources in your environment to the specified namespace and creates a [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) for the cluster and namespace. 
 
-[RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) is also created for a [Kubernetes RBAC](/azure/aks/azure-ad-rbac)-enabled cluster to limit the scope of the service account to the chosen namespace. For a Kubernetes RBAC-disabled cluster, the created ServiceAccount has cluster-wide privileges across namespaces.
+For [Kubernetes RBAC](/azure/aks/azure-ad-rbac)-enabled clusters, [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) is also created to limit the scope of the service account to the chosen namespace. For a Kubernetes RBAC-disabled cluster, the created service account has cluster-wide privileges across namespaces.
 
-For more information about setting up a Kubernetes service connection outside of an environment, see the [Kubernetes service connection](../library/service-endpoints.md#common-service-connection-types) section in [Service connections](../library/service-endpoints.md).
+For information about setting up a Kubernetes service connection outside of an environment, see the [Kubernetes service connection](../library/service-endpoints.md#common-service-connection-types) section in [Service connections](../library/service-endpoints.md).
 
 ### Add an AKS Kubernetes resource
 
-1. In the environment details page, select **Add resource** and choose **Kubernetes**.
-1. Select **Azure Kubernetes Service** in the Provider dropdown.
-1. Choose the Azure subscription, cluster, and namespace (new/existing).
-1. Select **Validate and create** to create the Kubernetes resource.
-1. Verify that you see a cluster for your environment. You'll see the text "Never deployed" if you haven't yet deployed code to your cluster. 
+To add an AKS resource to an Azure Pipelines environment:
 
-   :::image type="content" source="media/kubernetes-environment-cluster.png" alt-text="Add a Kubernetes cluster.":::
+1. On the environment's page under **Pipelines** > **Environments**, select **Add resource** and then select **Kubernetes**.
+1. On the next screen, select **Azure Kubernetes Service** for the **Provider**, and then select your **Azure subscription**, AKS **Cluster**, and new or existing **Namespace**. For a new namespace, enter the namespace name.
+1. Select **Validate and create**.
+
+The new resource appears on the environment's **Resource** tab, with the text **Never deployed** if you haven't yet deployed to your cluster.
+
+   :::image type="content" source="media/kubernetes-environment-cluster.png" alt-text="Screenshot that shows an added Kubernetes resource.":::
 
 ### Add a non-AKS Kubernetes resource
 
-Use the generic provider existing service account to map a Kubernetes resource to a namespace from a non-AKS cluster.
+To map a Kubernetes resource to a namespace from a non-AKS cluster, you need an existing service account for the non-AKS provider.
 
-1. In the environment details page, select **Add resource** and choose **Kubernetes**.
-1. Select **Generic provider (existing service account)** for your provider.
-1. Add the cluster name and namespace values.
-1. Add the server URL. You can get the URL by running the following command: `kubectl config view --minify -o 'jsonpath={.clusters[0].cluster.server}'`.
-1. Get the secret object by running the following steps:
-   1. Run the following command, replacing `service-account-name` with your account name.
-   ```
-   kubectl get secret -n <namespace>  -o jsonpath='{.items[?(@.metadata.annotations.kubernetes\.io/service-account\.name==\"service-account-name\")]}'
-   ```
-   If you get no results, see [Manually create a long-lived API token for a ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#manually-create-a-long-lived-api-token-for-a-serviceaccount).
+1. On the environment's page under **Pipelines** > **Environments**, select **Add resource** and then select **Kubernetes**.
+1. On the next screen, select **Generic provider (existing service account)** for the **Provider**.
+1. Under **Cluster credentials**, enter the **Cluster name**, **Namespace**, **Server URL**, and **Secret**.
 
-   1. Run the following command, replacing `<service-account-secret-name>` with the output from the previous step.
+   - To get the server URL, run `kubectl config view --minify -o jsonpath={.clusters[0].cluster.server}` in your local shell.
+   - To get the secret:
+     1. Get service account secret names by running `kubectl get serviceAccounts <service-account-name> -n <namespace> -o=jsonpath={.secrets[*].name}`.
+     1. Use the output in `kubectl get secret <service-account-secret-name> -n <namespace> -o json`.
 
-   ```
-   kubectl get secret <service-account-secret-name> -n <namespace> -o json
-   ```
+     > [!NOTE]
+     > If you get no results from the `get ServiceAccounts` command, see [Manually create a long-lived API token for a ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#manually-create-a-long-lived-api-token-for-a-serviceaccount).
 
-1. Paste the secret object into the **Secret** field.
-1. Select **Validate and create** to create the Kubernetes resource.
+1. Select **Validate and create**.
 
-## Kubernetes resources in a pipeline
+## Kubernetes environment resources in pipelines
 
-If you're using AKS, the easiest way to build a YAML pipeline is to use the [Deploy to Azure Kubernetes Services template](../ecosystems/kubernetes/aks-template.md). The template builds and pushes an image to Azure Container Registry, deploys to AKS, and lets you set up a review app. You don't have to write YAML code or manually create explicit role bindings.
+The easiest way to build a YAML pipeline to deploy to AKS is to use the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template. The template builds and pushes an image to Azure Container Registry, deploys to AKS, and lets you set up a review app. You don't have to write YAML code or manually create explicit role bindings.
 
-:::image type="content" source="media/kubernetes-yaml-templates.png" alt-text="Kubernetes template options.":::
+### Pipeline example
 
-### Set up Review App
+In the following example pipeline based on the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template, the first deployment job runs for non-PR branches and deploys against a regular Kubernetes resource in the environment.
 
-In the following example, the first deployment job is run for non-PR branches and does deployments against a regular Kubernetes resource under environments. The second job runs only for PR branches and deploys against Review App resources (namespaces inside Kubernetes cluster) generated on demand. Resources get labeled with "Review" in the resource listing view of the environment.
-Define variables to use in the pipeline. If you use the [Deploy to Azure Kubernetes Services template](../ecosystems/kubernetes/aks-template.md), these variables get defined for you.
+The second job runs only for PR branches and deploys against review app resources, which are namespaces inside the Kubernetes cluster that are generated on demand. These resources are labeled **Review** in the environment resource listing view.
 
-```YAML
+
+
+> [!NOTE]
+> To use this job in an existing pipeline, make sure the service connection backing the regular Kubernetes environment resource is set to **Use cluster admin credentials**. Otherwise, role bindings must be created for the underlying service account to the review app namespace.
+
+This example defines and uses variables in the pipeline. If you use the [Deploy to Azure Kubernetes Services ](../ecosystems/kubernetes/aks-template.md) template, the generated pipeline defines these variables for you.
+
+```yaml
 # Build and push image to Azure Container Registry; Deploy to Azure Kubernetes Service
 trigger:
+- main
+
+pr:
 - main
 
 resources:
@@ -231,20 +236,14 @@ stages:
               message="Your review app has been deployed"
               if [ ! -z "$url" -a "$url" != "http://:" ]
               then
-                message="${message} and is available at $url.<br><br>[Learn More](https://aka.ms/testwithreviewapps) about how to test and provide feedback for the app."
+                message="${message} and is available at $url."
               fi
               echo "##vso[task.setvariable variable=GITHUB_COMMENT]$message"
 ```
 
-To use this job in an **existing** pipeline, the service connection backing the regular Kubernetes environment resource must be modified to "Use cluster admin credentials". Otherwise, role bindings must be created for the underlying service account to the Review App namespace.
+## Related content
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Build and deploy to Azure Kubernetes Service](../ecosystems/kubernetes/aks-template.md)
-
-## Related articles
-
-* [Deploy](../ecosystems/kubernetes/deploy.md) 
-* [Deploy ASP.NET Core apps to Azure Kubernetes Service with Azure DevOps Starter](/azure/devops-project/azure-devops-project-aks)
-* [REST API: Kubernetes with Azure DevOps](/rest/api/azure/devops/distributedtask/kubernetes/add)
+- [Build and deploy to Azure Kubernetes Service](../ecosystems/kubernetes/aks-template.md)
+- [Deploy](../ecosystems/kubernetes/deploy.md) 
+- [Deploy ASP.NET Core apps to Azure Kubernetes Service with Azure DevOps Starter](/azure/devops-project/azure-devops-project-aks)
+- [REST API: Kubernetes with Azure DevOps](/rest/api/azure/devops/distributedtask/kubernetes/add)
