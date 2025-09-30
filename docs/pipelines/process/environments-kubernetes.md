@@ -13,22 +13,22 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-This article describes using Kubernetes resources in Azure Pipelines [environments](environments.md) to target public or private Kubernetes clusters from Azure Kubernetes Service (AKS) or other cloud providers. The environment resource view shows the status of objects in the Kubernetes namespace that are mapped to the resource.
-
-The resource view provides traceability from a Kubernetes object to the pipeline and back to the triggering commit. You can also create dynamic Kubernetes environment resources for reviewing pull requests before merge. For more information about environment resources work, see [Resources in YAML pipelines](resources.md) and [Resource security](../security/resources.md).
+This article describes using Kubernetes resources in Azure Pipelines [environments](environments.md) that you can target with deployments. You can connect to public or private Kubernetes clusters in Azure Kubernetes Service (AKS) or other cloud providers.
+ 
+Environment resource views show Kubernetes resource status and provide traceability to the pipeline and back to the triggering commit. You can also create dynamic Kubernetes environment resources to review pull request effects before merge. For more information about environment resources, see [Resources in YAML pipelines](resources.md) and [Resource security](../security/resources.md).
 
 > [!NOTE]
-> To use a private AKS cluster for an environment resource, you must connect to the cluster's virtual network, because the API server endpoint isn't exposed through a public IP address. The best method is to set up a self-hosted agent in a virtual network that can access the cluster's virtual network. For more information, see [Options for connecting to a private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster).
+> To use a private AKS cluster as an environment resource, you must connect to the cluster's virtual network, because the API server endpoint isn't exposed through a public IP address. The best method is to set up a self-hosted agent within a virtual network that can access the cluster's virtual network. For more information, see [Options for connecting to a private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster).
 
-## Kubernetes resource views
+## Kubernetes environment resource advantages
 
-Using Kubernetes resources and resource views in environments provides the following benefits:
+Kubernetes environment resources and resource views in environments provide the following benefits:
 
-- **Pipeline traceability**. The [Kubernetes manifest](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1) deployment task adds annotations that support pipeline traceability. Pipeline traceability lets you see the Azure DevOps organization, project, and pipeline responsible for updates to objects within the namespace.
+- **Pipeline traceability**. The [Kubernetes manifest](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1) deployment task adds annotations that support pipeline traceability. You can see the Azure DevOps organization, project, and pipeline responsible for updates to objects within the namespace.
 
    :::image type="content" source="media/k8s-pipeline-traceability.png" alt-text="Screenshot that shows pipeline traceability for a Kubernetes cluster.":::
 
-- **Resource health diagnostics**. You can use the workload status view to quickly debug mistakes or regressions introduced by a new deployment. For example, pod status information can help you identify the cause of issues like unconfigured `imagePullSecrets` that result in `ImagePullBackOff` errors.
+- **Resource health diagnostics**. The workload status view is a quick way to debug mistakes or regressions introduced by new deployments. For example, pod status information can help you identify the cause of issues like unconfigured `imagePullSecrets` that result in `ImagePullBackOff` errors.
 
    :::image type="content" source="media/k8s-imagepullbackoff.png" alt-text="Screenshot that shows the workload status view for a Kubernetes deployment.":::
 
