@@ -9,36 +9,37 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 04/01/2022
+  ms.date: 09/29/2025
 
 title: FAQs about queries in Azure Boards and Azure DevOps
 
 summary: | 
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-  The Query Editor supports finding work items by specifying query clauses based on fields, operators, and values. You can save and share these queries with others in your team. Here are some answers to frequently asked questions about work item queries. 
- 
+  The Query Editor finds work items by using clauses that combine fields, operators, and values. Save queries and share them with teammates. The following answers cover common questions about work item queries. 
+   
 sections:
   - name: General
     questions: 
       - question: Can I use a wildcard in my query?
         answer: |
-           Yes. The wildcard character is an asterisk (*). For samples, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md#keyword-or-phrase-query-with-wildcards).
+           Yes. Use an asterisk (*) as a wildcard. For examples, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md#keyword-or-phrase-query-with-wildcards).
 
-      - question: What's the difference between a query and a semantic search? 
+      - question: What's the difference between a managed query and a semantic search?
         answer: |
-          While both query and semantic searches find and list work items, the filter features and results presentation are different. For more information, see [Functional work item search, Semantic search vs. managed work item queries](../../project/search/functional-work-item-search.md).  
+          Managed queries and semantic search both return lists of work items, but they use different filter capabilities and present results differently. For details and examples, see [Functional work item search, Semantic search vs. managed work item queries](../../project/search/functional-work-item-search.md).  
 
-      - question: Can I export a query and import to another project?  
+      - question: Can I export a query and import it into another project?
         answer: |
-          **Yes**. You can save a query as a `.wiq` file, update the syntax, and then import it to another project, organization, or collection.    
+          Yes. Save the query as a `.wiq` file, adjust the syntax if needed, and import it into another project, organization, or collection.    
 
-      - question: What are all the query filter functions? 
+      - question: What filter functions are available in the Query Editor?
         answer: |
-          From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. In addition to the query filters, you can [interactively apply filters to query results](../backlogs/filter-backlogs-boards-plans.md).  
+          Use the Query Editor's filter functions to build powerful queries. The list below links to articles with samples. You can also apply interactive filters to query results; see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
+
           ::: moniker range="<=azure-devops"
           > [!NOTE] 
-          > Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. For more information, see [Advanced work items search](../../project/search/advanced-work-item-search-syntax.md).
+          > Managed queries don't support proximity searches; semantic searches do. Semantic search supports both `*` and `?` as wildcard characters and allows multiple wildcards. For more, see [Advanced work items search](../../project/search/advanced-work-item-search-syntax.md).
           ::: moniker-end
 
           ---
@@ -92,110 +93,104 @@ sections:
           :::row-end:::
           ---
 
-      - question: Can I filter the Query Results?
+      - question: Can I filter query results interactively?
         answer: |
-          **Yes**. See [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md). 
+          Yes. Use the interactive filters described in [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
       - question: Can I run several queries at the same time?
         answer: |
-          **Yes**. Open a query in a new browser tab to run several queries at the same time.  
+          Yes. Open each query in a new browser tab to run multiple queries concurrently.  
 
-      - question: What query macros are only supported from the web portal?
+      - question: Which query macros work only in the web portal?
         answer: |
-          The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+          The following macros run only in the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, and **@TeamAreas**. Queries that use these macros don't run correctly in Visual Studio/Team Explorer, Excel, or Project.
 
   - name: Navigate 
     questions: 
-      - question: How do I quickly navigate to queries I view frequently? 
+      - question: How do I quickly access queries I view frequently?
         answer: |
-          - Favorite those queries and other artifacts that you view frequently. Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a query. 
-          - Favorited queries (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
+          Favorite queries and artifacts you access often. Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a query. Favorited queries (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear in **Queries > Favorites** and in the queries selector.
 
           > [!div class="mx-imgBorder"]  
           > ![Screenshot of favorited queries breadcrumb selector.](media/example-queries/queries-selector.png)  
-          Or, you can select from any of your favorited items by choosing the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon and choose **Favorites**.  
 
-          ![Screenshot of your favorites listing queries.](media/example-queries/favorites-selector.png)  
-
-      - question: How do I quickly navigate to queries within the same query folder? 
+      - question: How do I navigate quickly within a query folder?
         answer: |
-          When viewing a query, you can use the queries breadcrumb selector (:::image type="icon" source="../../media/icons/breadcrumb-selector.png" border="false"::: the breadcrumb icon changes to :::image type="icon" source="../../media/icons/context-menu-selector.png" border="false"::: a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
+          Use the queries breadcrumb selector. When viewing a query, open the breadcrumb (or the folder name) to list and open other queries in the same folder.
 
           > [!div class="mx-imgBorder"]  
           > ![Screenshot of queries breadcrumb selector.](media/view-run-queries/folder-selector.png)  
-           
+
   - name: Find work items
     questions:
-      - question: Where can I find work assigned to me or work that I'm following?
+      - question: Where can I find work assigned to me or work I'm following?
         answer: | 
-          Open **Queries>All**. Under the **My Queries** section are two fully customizable queries: **Assigned to me** and **Followed work items**. 
+          Open **Queries > All**. Under **My Queries** there are two customizable queries by default: **Assigned to me** and **Followed work items**.
 
       - question: Where can I find recent work item activity?
         answer: | 
-          - Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
+          - Open **Boards > Work Items** and choose the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
+          - Or build queries that use macros such as **@Me**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, or **@RecentProjectActivity**. See [Query macros and variables](query-operators-variables.md#macros).
 
-          - You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries. These queries can filter for work items assigned to you, that you're following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
-
-      - question: How do I sort on the Parent field?  
+      - question: Can I sort on the Parent field?
         answer: | 
-          You can't. Sorting a query on the **Parent** field isn't a supported feature. 
+          No. Sorting a query by the **Parent** field isn't supported.
 
   - name: Linked work item queries 
     questions: 
 
-      - question: How do I query for a list of related work items?   
-        answer:  |
-          You can't query for work items that contain links solely based on the **Related** link type. You can query for work items that have links by specifying `Related Link Count > 0`. However, the results contain all work items containing links to other work items, including **Parent-Child**, **Predecessor-Successor**, and other link types. 
+      - question: How do I query for a list of related work items?
+        answer: |
+          You can't filter only by the **Related** link type. To find items that contain links, use `Related Link Count > 0`. That returns all work items that have any link type (Parent-Child, Predecessor-Successor, Related, etc.).
 
-      - question: Can I query for work items linked across projects? 
-        answer:  |
-          **No**. There's a prohibitive performance cost for trying to execute such a query, so it isn't supported. 
+      - question: Can I query for work items linked across projects?
+        answer: |
+          No. Cross-project linked queries aren't supported due to performance constraints.
 
       - question: Can I link work items across organizations or collections?
         answer: |
           ::: moniker range="azure-devops"
-          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../backlogs/add-link.md). However, you can't run a search for work items linked from other projects than the current project you're connected to. 
+          Yes—you can link across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../backlogs/add-link.md). However, you can't run a search that returns items linked from other projects outside the current project context.
           ::: moniker-end
           ::: moniker range="< azure-devops"
-          **No** across collections. This feature isn't supported. 
+          No—linking across collections isn't supported.
           ::: moniker-end
 
   - name: Bulk add and update work items using queries
     questions: 
-      - question: Can I export a cross-project query to Excel? 
+      - question: Can I export a cross-project query to Excel?
         answer: |
           ::: moniker range="<=azure-devops"
-          **No**. Cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards. For more information, see [Bulk import or update work items using CSV files](import-work-items-from-csv.md). 
+          No. Cross-project queries don't open directly in Excel. Export a cross-project query to CSV, open it in Excel, and then import the data into Azure Boards. See [Bulk import or update work items using CSV files](import-work-items-from-csv.md).
           ::: moniker-end
-          
 
-      - question: How do I manage dependencies across projects?  
+      - question: How do I manage dependencies across projects?
         answer: |
-          To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. To learn how, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md).  
+          Use Predecessor/Successor link types to model dependencies between work items. For details, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md).
 
   - name: Query folders
     questions:
-      - question: Can I change the owner of a query or folder? 
+      - question: Can I change the owner of a query or folder?
         answer: |
-          **No**. You can only enable permissions for users and groups from the permissions window for the query or folder.
- 
+          No. You can't change the owner. You can grant folder or query permissions to users and groups from the folder's permissions window.
+
       - question: Can I move a query or a folder?
         answer: |
-          **Yes**. In the web portal, choose **Rename** from the context menu. In Team Explorer for Visual Studio, drag the folder to the new location. In Team Explorer Everywhere or Eclipse, choose **Move** from the context menu and select the folder to which you want to move the item.
+          Yes. In the web portal, choose **Rename** from the context menu to move or rename a folder. In Visual Studio Team Explorer, drag the folder to the new location. In Team Explorer Everywhere or Eclipse, choose **Move** and select the destination folder.
 
       - question: Can I add folders to My Favorites or Team Favorites?
         answer: |
-          **No**. This feature isn't supported. 
+          No. Favoriting folders isn't supported.
 
-      - question: Are the queries and folders I create from the web portal the same as in Team Explorer?
+      - question: Are queries and folders created in the web portal the same as in Team Explorer?
         answer: |
-          **Yes**. You may have to refresh your browser or client to see changes you make in another client. For Visual Studio 2019, you must [choose the legacy experience](../work-items/set-work-item-experience-vs.md) to see work item queries and folders. 
+          Yes. They share the same structure; you might need to refresh the other client to see updates. In Visual Studio 2019, enable the legacy experience to view work item queries and folders: see [Set work item experience in Visual Studio](../work-items/set-work-item-experience-vs.md).
 
   - name: Monitor progress with queries 
     questions:
-      - question: How can I best use queries to monitor progress on a project or team?
+      - question: How can I use queries to monitor progress on a project or team?
         answer: |
-          - [Define a chart for a query](../../report/dashboards/charts.md) and add it to a dashboard, or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard. Each time you open the dashboard, the query automatically runs and refreshes.   
+          Create charts for queries and add them to dashboards. Or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard so the query runs and refreshes automatically each time you open the dashboard.
 
 additionalContent: |
   ## Related content

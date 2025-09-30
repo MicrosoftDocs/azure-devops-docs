@@ -158,7 +158,7 @@ The test case results section allows you to:
 - Link test results to Azure DevOps work items
 
 > [!TIP]
-> The default Outcome filter is set to _Failed_ or _Aborted_ to streamline deeper analysis.
+> The default _Outcome_ filter for _Automated_ test runs is set to _Failed or Aborted_ to accelerate the analysis. For _Manual_ test runs, which typically have lower volume, results remain unfiltered by default.
 
 :::image type="content" source="media/test-runs/test-case-results.png" alt-text="Screenshot of the test case results section showing individual test outcomes.":::
 
