@@ -21,16 +21,16 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [important-note-request-feedback-unavailable](includes/important-note-request-feedback-unavailable.md)]
 
-Use the Test & Feedback extension in Azure DevOps to collect stakeholder feedback. Recipients have two response options:
+Use the Test & Feedback extension in Azure DevOps for collecting stakeholder feedback. Recipients have two response options:
 - From the link in the Request feedback email (quick for one-off responses).
-- From the Test & Feedback extension — useful when you want to manage multiple requests or when you're using Azure DevOps Services (cloud).
+- From the Test & Feedback extension—useful when you want to manage multiple requests or when you're using Azure DevOps Services (cloud).
 
 ## Prerequisites
 
 | Category | Requirement |
 |----------|-------------|
 | **Project access** | [Project member](../organizations/security/add-users-team-project.md) |
-| **To request feedback** | On Azure DevOps Server the work-item **Request feedback** action lets users with **Basic** access send requests. In Azure DevOps Services (cloud) this menu action isn't available — use email/chat or the Test & Feedback extension. |
+| **To request feedback** | On Azure DevOps Server, the work-item **Request feedback** action lets users with **Basic** access send requests. In Azure DevOps Services (cloud) this menu action isn't available—use email/chat or the Test & Feedback extension. |
 | **To provide feedback** | Stakeholders respond using the Test & Feedback extension. |
 | **Extensions** | [Test & Feedback extension](perform-exploratory-tests.md) |
 
@@ -44,9 +44,9 @@ Follow these steps to send a feedback request from a work item:
 2. Try to open the shortcut menu (ellipsis …) and select **Request feedback**.
 
    - If the **Request feedback** action is visible, continue with the workflow.
-   - If you don't see **Request feedback** (this is expected in Azure DevOps Services/cloud), use [one of the alternatives](#feedback-shortcut-unavailable).
+   - If you don't see **Request feedback** (expected in Azure DevOps Services/cloud), use [one of the alternatives](#feedback-shortcut-unavailable).
 
-3. Enter or select one or more stakeholder names, and optionally add instructions or notes to help them provide meaningful feedback.
+3. Enter or select one or more stakeholder names, and optionally add instructions or notes for meaningful feedback.
 
    ![Screenshot shows selecting users and entering instructions.](media/request-stakeholder-feedback/request-stakeholder-feedback-02.png)
 

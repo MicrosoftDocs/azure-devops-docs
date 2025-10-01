@@ -19,16 +19,16 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [important-note-request-feedback-unavailable](includes/important-note-request-feedback-unavailable.md)]
 
-Use the Test & Feedback extension in Azure DevOps to collect stakeholder feedback. Recipients can respond in two ways:
+Use the Test & Feedback extension in Azure DevOps for collecting stakeholder feedback. Recipients can respond in two ways:
 - From the link in the Request feedback email (quick for one-off responses).
-- From the Test & Feedback extension — useful when you want to manage multiple requests or when you're using Azure DevOps Services (cloud).
+- From the Test & Feedback extension—useful when you want to manage multiple requests or when you're using Azure DevOps Services (cloud).
 
 ## Prerequisites
 
 | Category | Requirement |
 |---|---|
 | **Project access** | [Project member](../organizations/security/add-users-team-project.md) |
-| **Access levels** | Stakeholders should use the Test & Feedback extension. Basic users can provide feedback using the non‑stakeholder flow described in this article. |
+| **Access levels** | Stakeholders should use the Test & Feedback extension. Basic users can provide feedback using the nonstakeholder flow described in this article. |
 | **Extensions** | [Test & Feedback extension](perform-exploratory-tests.md) installed in your browser. |
 
 <a name="email"></a>
@@ -47,14 +47,14 @@ Follow these steps when you receive a Request feedback email.
 
    ![Screenshot shows confirmation that the extension has been automatically configured.](media/provide-stakeholder-feedback/provide-stakeholder-feedback-05.png)
 
-   - If the extension doesn't open or isn't configured automatically, open the extension, sign in, and connect to the organization/project that sent the request.
+   - If the extension doesn't open or configure automatically, open the extension, sign in, and connect to the organization or project that sent the request.
 
 4. Read the instructions in the feedback form to learn what to test and any special notes from the requestor.
 
    ![Screenshot shows the feedback form containing the instructions.](media/provide-stakeholder-feedback/provide-stakeholder-feedback-06.png)
 
 5. Depending on your access level:
-   - Stakeholders: open the **Feedback requests** page in the extension to view and manage pending requests.
+   - Stakeholders: open the **Feedback requests** page in the extension to view and manage any pending requests.
    - Basic users: the extension opens the **Explore work item** traceability page that shows the user story, acceptance criteria, and context.
 
    ![Screenshot shows the traceability page showing the user story and user acceptance criteria.](media/provide-stakeholder-feedback/provide-stakeholder-feedback-18.png)
@@ -69,12 +69,12 @@ Follow these steps when you receive a Request feedback email.
 
 7. Submit your feedback:
    - Stakeholders: choose **Provide feedback** in the extension. Optionally create bugs or tasks when you submit.
-   - Basic users: create a bug or a task from the captured information (non‑stakeholder flow).
+   - Basic users: create a bug or a task from the captured information (nonstakeholder flow).
 
    ![Screenshot shows submitting your feedback.](media/shared/provide-stakeholder-feedback-08.png)
    ![Screenshot shows creating a bug or a task from the captured information.](media/connected-mode-exploratory-testing/create-bugs-02.png)
 
-8. Review the feedback, enter a meaningful title, optionally choose a star rating, then save. The extension creates a work item that contains your feedback and attachments.
+8. Review the feedback and enter a meaningful title. Optionally choose a star rating, and then save. The extension creates a work item that contains your feedback and attachments.
 
    ![Screenshot shows entering a title and star rating.](media/shared/provide-stakeholder-feedback-09.png)
 
