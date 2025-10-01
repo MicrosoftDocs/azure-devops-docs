@@ -218,6 +218,9 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
 
 ## Create a Docker registry service connection
 
+> [!IMPORTANT]
+> To create a service connection, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. See [Add an admin role to a resource](../../library/add-resource-protection.md#service-connections) for more details.
+
 ### [Managed Service Identity](#tab/msi)
 
 1. From your Azure DevOps project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
