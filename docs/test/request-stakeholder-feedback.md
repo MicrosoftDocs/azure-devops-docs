@@ -5,7 +5,7 @@ ms.assetid: 6AE1D62D-43EE-4C0B-92CD-F11BC10A9CA8
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ai-usage: ai-assisted
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 ms.date: 09/30/2025
@@ -21,7 +21,9 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [important-note-request-feedback-unavailable](includes/important-note-request-feedback-unavailable.md)]
 
-Use the Test & Feedback extension in Azure DevOps to collect stakeholder feedback quickly.
+Use the Test & Feedback extension in Azure DevOps to collect stakeholder feedback. Recipients have two response options:
+- From the link in the Request feedback email (quick for one-off responses).
+- From the Test & Feedback extension — useful when you want to manage multiple requests or when you're using Azure DevOps Services (cloud).
 
 ## Prerequisites
 
