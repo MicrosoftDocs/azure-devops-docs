@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-This article describes using Kubernetes resources in Azure Pipelines [environments](environments.md) that you can target with deployments. You can connect to public or private Kubernetes clusters in Azure Kubernetes Service (AKS) or other cloud providers.
+This article describes using Kubernetes resources in Azure Pipelines [environments](environments.md) that you can target with deployments. You can connect to Azure Kubernetes Service (AKS) or other cloud providers public or private Kubernetes clusters.
  
 Environment resource views show Kubernetes resource status and provide traceability to the pipeline and back to the triggering commit. You can also create dynamic Kubernetes environment resources to review pull request effects before merge. For more information about environment resources, see [Resources in YAML pipelines](resources.md) and [Resource security](../security/resources.md).
 
@@ -51,7 +51,7 @@ To add an AKS resource to an Azure Pipelines environment:
 
 1. Select **Validate and create**.
 
-The new resource appears on the environment's **Resources** tab with the text **Never deployed** if you didn't yet deploy it to your cluster.
+The new resource appears on the environment's **Resources** tab with the text **Never deployed** if you didn't deploy it to your cluster yet.
 
    :::image type="content" source="media/kubernetes-environment-cluster.png" alt-text="Screenshot that shows an added Kubernetes resource.":::
 
@@ -67,7 +67,7 @@ To map a Kubernetes resource to a namespace from a non-AKS cluster, you need an 
    - To get the server URL, run `kubectl config view --minify -o jsonpath={.clusters[0].cluster.server}` in your local shell.
    - To get the secret:
      1. Get service account secret names by running `kubectl get serviceAccounts <service-account-name> -n <namespace> -o=jsonpath={.secrets[*].name}`.
-     1. Use the output in `kubectl get secret <service-account-secret-name> -n <namespace> -o json`.
+     1. Run `kubectl get secret <service-account-secret-name> -n <namespace> -o json` using the output of the preceding command.
 
      > [!NOTE]
      > If you get no results from the `get ServiceAccounts` command, see [Manually create a long-lived API token for a ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#manually-create-a-long-lived-api-token-for-a-serviceaccount).
@@ -76,21 +76,25 @@ To map a Kubernetes resource to a namespace from a non-AKS cluster, you need an 
 
 ## Kubernetes resources in pipelines
 
-The easiest way to create a YAML pipeline to deploy to AKS is to use the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template. The template builds and pushes an image to Azure Container Registry and deploys to AKS, or sets up a review app for PRs. You don't have to write YAML code or manually create explicit role bindings.
+The easiest way to create a YAML pipeline to deploy to AKS is to start with the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template. You don't have to write YAML code or manually create explicit role bindings. The generated pipeline defines and uses variables based on your configuration settings.
 
 <a name="set-up-review-app"></a>
-### Pipeline example
+### Use the review app
 
-In the following example pipeline based on the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template, the first deployment job runs for non-PR branches and deploys against a regular Kubernetes resource in the environment.
+The `DeployPullRequest` job deploys every pull request from your Git repository to a dynamic Kubernetes resource under the environment. To use this job in the pipeline, select the check box for **Enable Review App flow for Pull Requests** in the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) configuration form.
 
-The second job runs only for PR branches and deploys against review app resources. The pipeline generates review namespaces inside the Kubernetes cluster on demand. These resources are labeled **Review** in the environment resource listing.
+> [!NOTE]
+> To use the job in an existing pipeline, make sure the service connection backing the regular Kubernetes environment resource is set to **Use cluster admin credentials**. Otherwise, role bindings must be created for the underlying service account to the review app namespace.
+
+After creation, review app resources are labeled **Review** in the environment resource listing. Once the PR is merged or closed, the dynamic resource disappears.
 
 :::image type="content" source="media/kubernetes-yaml-templates.png" alt-text="Screenshot that shows the Review environment in the pipeline environment listing.":::
 
-> [!NOTE]
-> To use this job in an existing pipeline, make sure the service connection backing the regular Kubernetes environment resource is set to **Use cluster admin credentials**. Otherwise, role bindings must be created for the underlying service account to the review app namespace.
+### Example deploy to AKS pipeline
 
-This example defines and uses variables in the pipeline. If you use the [Deploy to Azure Kubernetes Services ](../ecosystems/kubernetes/aks-template.md) template, the generated pipeline defines these variables for you.
+The following example pipeline based on the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template first builds and pushes an image to Azure Container Registry. The first deployment job then runs for commits to non-PR branches and deploys against a regular Kubernetes resource in the environment.
+
+The second job runs only for PR branches and deploys against review app resources that it creates inside the Kubernetes cluster on demand. The job runs whenever a PR to `main` is created or updated.
 
 ```yaml
 # Build and push image to Azure Container Registry; Deploy to Azure Kubernetes Service
