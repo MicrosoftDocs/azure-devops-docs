@@ -6,19 +6,19 @@ ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.date: 09/30/2025
 monikerRange: '>= azure-devops-2020'
-#customer intent: As a Kubernetes developer, I want to understand how Kubernetes resources are used in Azure Pipelines environments, so I can deploy apps to my Kubernetes clusters and see review environments for PRs.
+#customer intent: As a Kubernetes developer, I want to understand how Kubernetes resources are used in Azure Pipelines environments, so I can deploy apps to my Kubernetes clusters and create review environments for PRs.
 ---
 
 # Kubernetes resources in environments
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-This article describes using Kubernetes resources in Azure Pipelines [environments](environments.md) that you can target with deployments. You can connect to Azure Kubernetes Service (AKS) or other cloud providers public or private Kubernetes clusters.
+This article describes using Kubernetes resources in Azure Pipelines [environments](environments.md) that you can target with deployments. You can connect to public or private Kubernetes clusters in Azure Kubernetes Service (AKS) or other cloud providers.
  
 Environment resource views show Kubernetes resource status and provide traceability to the pipeline and back to the triggering commit. You can also create dynamic Kubernetes environment resources to review pull request effects before merge. For more information about environment resources, see [Resources in YAML pipelines](resources.md) and [Resource security](../security/resources.md).
 
 > [!NOTE]
-> To use a private AKS cluster as an environment resource, you must connect to the cluster's virtual network, because the API server endpoint isn't exposed through a public IP address. The best method is to set up a self-hosted agent within a virtual network that can access the cluster's virtual network. For more information, see [Options for connecting to a private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster).
+> A private AKS cluster doesn't expose its API server endpoint through a public IP address, so you must connect to the cluster's virtual network. The best method is to set up a self-hosted agent within a virtual network that can access the cluster's virtual network. For more information, see [Options for connecting to a private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster).
 
 ## Kubernetes environment resource advantages
 
@@ -32,7 +32,7 @@ Kubernetes environment resources and resource views in environments provide the 
 
    :::image type="content" source="media/k8s-imagepullbackoff.png" alt-text="Screenshot that shows the workload status view for a Kubernetes deployment.":::
 
-- **Review app**. The Review app deploys every pull request from your Git repository to a dynamic Kubernetes resource in the environment, and posts a GitHub comment linking to the review environment. Reviewers can see how the PR changes look and work with other dependent services before the changes are merged into the target branch and deployed to production.
+- **Review app**. The review app deploys every pull request from your Git repository to a dynamic Kubernetes resource in the environment, and posts a GitHub comment linking to the review app. Reviewers can see how the PR changes look and work with other dependent services before the changes are merged into the target branch and deployed to production.
 
    :::image type="content" source="media/kubernetes-github-app.png" alt-text="Screenshot that shows the Review app comment in GitHub.":::
 
@@ -76,7 +76,7 @@ To map a Kubernetes resource to a namespace from a non-AKS cluster, you need an 
 
 ## Kubernetes resources in pipelines
 
-The easiest way to create a YAML pipeline to deploy to AKS is to start with the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template. You don't have to write YAML code or manually create explicit role bindings. The generated pipeline defines and uses variables based on your configuration settings.
+The easiest way to create a YAML pipeline to deploy to AKS is to start with the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template. You don't have to write YAML code or manually create explicit role bindings. The generated pipeline sets and uses variables and other values based on your configuration settings.
 
 <a name="set-up-review-app"></a>
 ### Use the review app
@@ -97,7 +97,10 @@ The following example pipeline based on the [Deploy to Azure Kubernetes Services
 The second job runs only for PR branches and deploys against review app resources that it creates inside the Kubernetes cluster on demand. The job runs whenever a PR to `main` is created or updated.
 
 ```yaml
+# Deploy to Azure Kubernetes Service
 # Build and push image to Azure Container Registry; Deploy to Azure Kubernetes Service
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
 trigger:
 - main
 
@@ -111,7 +114,6 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '12345' # Docker service connection identifier
-  envName: 'myEnv' # name of your environment
   imageRepository: 'name-of-image-repository' # name of image repository
   containerRegistry: 'mycontainer.azurecr.io' # path to container registry
   dockerfilePath: '**/Dockerfile'
@@ -156,9 +158,7 @@ stages:
     displayName: Production
     pool:
       vmImage: $(vmImageName)
-    environment: 
-      name: $(envName).$(resourceName)
-      resourceType: Kubernetes 
+    environment: 'myenvironmentname.myresourcename'
     strategy:
       runOnce:
         deploy:
@@ -188,9 +188,7 @@ stages:
     pool:
       vmImage: $(vmImageName)
 
-    environment: 
-      name: $(envName).$(resourceName)
-      resourceType: Kubernetes
+    environment: 'myenvironmentname.$(k8sNamespaceForPR)'
     strategy:
       runOnce:
         deploy:
