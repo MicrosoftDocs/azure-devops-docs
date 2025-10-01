@@ -1,13 +1,11 @@
 ---
 title: Define variables
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, copilot-scenario-highlight
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 10/03/2024
+ms.date: 10/01/2025
 ai-usage: ai-assisted
-ms.collection: 
-  - ce-skilling-ai-copilot
 ---
 
 # Define variables
@@ -164,8 +162,7 @@ What stages and jobs will the variables be available for?
 
 Customize your prompt to add specifics as needed. 
 
-> [!TIP]  
-> Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs). 
+Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs). 
 
 ## Set variables in pipeline
 
