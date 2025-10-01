@@ -81,12 +81,12 @@ The easiest way to create a YAML pipeline to deploy to AKS is to start with the 
 <a name="set-up-review-app"></a>
 ### Use the review app
 
-The `DeployPullRequest` job deploys every pull request from your Git repository to a dynamic Kubernetes resource under the environment. To add this job to the pipeline, select the check box for **Enable Review App flow for Pull Requests** in the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) configuration form.
+The `DeployPullRequest` job deploys every pull request from your Git repository to a dynamic Kubernetes resource in the environment. To add this job to the pipeline, select the check box for **Enable Review App flow for Pull Requests** in the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) configuration form.
 
 > [!NOTE]
-> To add this to an existing pipeline, make sure the service connection backing the regular Kubernetes environment resource is set to **Use cluster admin credentials**. Otherwise, role bindings must be created for the underlying service account to the review app namespace.
+> To add this job to an existing pipeline, make sure the service connection backing the regular Kubernetes environment resource is set to **Use cluster admin credentials**. Otherwise, role bindings must be created for the underlying service account to the review app namespace.
 
-Review app resources are labeled **Review** in the environment's **Resource** listing. Once the PR is merged or closed, the dynamic resource disappears.
+Review app resources are labeled **Review** in the environment's **Resource** listing.
 
 :::image type="content" source="media/kubernetes-yaml-templates.png" alt-text="Screenshot that shows the Review environment in the pipeline environment listing.":::
 
@@ -96,7 +96,7 @@ The following example pipeline is based on the [Deploy to Azure Kubernetes Servi
 
 The first deployment job then runs for any commits to the `main` branch, and deploys against a regular Kubernetes resource in the environment.
 
-The second job runs when a PR is created or updated to the `main` branch, and deploys against a review app resource it creates in the cluster on demand.
+The second job runs when a PR is created or updated to the `main` branch, and deploys against a dynamic review app resource it creates in the cluster on demand.
 
 ```yaml
 # Deploy to Azure Kubernetes Service
