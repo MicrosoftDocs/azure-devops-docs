@@ -4,7 +4,7 @@ description: Learn about using Kubernetes resources in environments to target Ku
 ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.date: 09/30/2025
+ms.date: 10/01/2025
 monikerRange: '>= azure-devops-2020'
 #customer intent: As a Kubernetes developer, I want to understand how Kubernetes resources are used in Azure Pipelines environments, so I can deploy apps to my Kubernetes clusters and create review environments for PRs.
 ---
@@ -15,7 +15,7 @@ monikerRange: '>= azure-devops-2020'
 
 This article describes using Kubernetes resources in Azure Pipelines [environments](environments.md) that you can target with deployments. You can connect to public or private Kubernetes clusters in Azure Kubernetes Service (AKS) or other cloud providers.
  
-Environment resource views show Kubernetes resource status and provide traceability to the pipeline and back to the triggering commit. You can also create dynamic Kubernetes environment resources to review pull request effects before merge. For more information about environment resources, see [Resources in YAML pipelines](resources.md) and [Resource security](../security/resources.md).
+Environment resource views show Kubernetes resource status and provide traceability to the pipeline and back to the triggering commit. You can also create dynamic Kubernetes environment resources to review pull requests before merge. For more information about environment resources, see [Resources in YAML pipelines](resources.md) and [Resource security](../security/resources.md).
 
 > [!NOTE]
 > A private AKS cluster doesn't expose its API server endpoint through a public IP address, so you must connect to the cluster's virtual network. The best method is to set up a self-hosted agent within a virtual network that can access the cluster's virtual network. For more information, see [Options for connecting to a private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster).
@@ -39,9 +39,9 @@ Kubernetes environment resources and resource views in environments provide the 
 <a name="use-azure-kubernetes-service"></a>
 ## AKS resources
 
-When you use AKS, a [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) is created in your chosen cluster and namespace. For a [Kubernetes role-based access control (RBAC)](/azure/aks/azure-ad-rbac)-enabled cluster, [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding) is also created to limit the scope of the service account to the chosen namespace. For a Kubernetes RBAC-disabled cluster, the created service account has cluster-wide privileges across namespaces.
+AKS creates a [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) in your chosen cluster and namespace, and maps Kubernetes resources in your environment to the specified namespace. For information about setting up a Kubernetes service connection outside of an environment, see [Kubernetes service connection](../library/service-endpoints.md#kubernetes-service-connection).
 
-AKS maps the Kubernetes resources in your environment to the specified namespace. For information about setting up a Kubernetes service connection outside of an environment, see the [Kubernetes service connection](../library/service-endpoints.md#common-service-connection-types) section in [Service connections](../library/service-endpoints.md).
+For a [Kubernetes role-based access control (RBAC)](/azure/aks/azure-ad-rbac)-enabled cluster, [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding) is also created to limit the scope of the service account to the chosen namespace. For a Kubernetes RBAC-disabled cluster, the created service account has cluster-wide privileges across namespaces.
 
 To add an AKS resource to an Azure Pipelines environment:
 
@@ -49,16 +49,16 @@ To add an AKS resource to an Azure Pipelines environment:
 
 1. On the next screen, select **Azure Kubernetes Service** for the **Provider**, and then select your **Azure subscription**, AKS **Cluster**, and new or existing **Namespace**. For a new namespace, enter the namespace name.
 
-1. Select **Validate and create**.
-
-The new resource appears on the environment's **Resources** tab with the text **Never deployed** if you didn't deploy it to your cluster yet.
+1. Select **Validate and create**. The new resource appears on the environment's **Resources** tab with the text **Never deployed**.
 
    :::image type="content" source="media/kubernetes-environment-cluster.png" alt-text="Screenshot that shows an added Kubernetes resource.":::
 
 <a name="use-an-existing-service-account"></a>
 ## Non-AKS Kubernetes resources
 
-To map a Kubernetes resource to a namespace from a non-AKS cluster, you need an existing service account for the non-AKS provider.
+To map a Kubernetes resource from a non-AKS cluster to a namespace, you need to have an existing service account for the non-AKS provider.
+
+To add a non-AKS Kubernetes resource to an Azure Pipelines environment:
 
 1. On the environment's page under **Pipelines** > **Environments**, select **Add resource** and then select **Kubernetes**.
 1. On the next screen, select **Generic provider (existing service account)** for the **Provider**.
@@ -81,20 +81,22 @@ The easiest way to create a YAML pipeline to deploy to AKS is to start with the 
 <a name="set-up-review-app"></a>
 ### Use the review app
 
-The `DeployPullRequest` job deploys every pull request from your Git repository to a dynamic Kubernetes resource under the environment. To use this job in the pipeline, select the check box for **Enable Review App flow for Pull Requests** in the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) configuration form.
+The `DeployPullRequest` job deploys every pull request from your Git repository to a dynamic Kubernetes resource under the environment. To add this job to the pipeline, select the check box for **Enable Review App flow for Pull Requests** in the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) configuration form.
 
 > [!NOTE]
-> To use the job in an existing pipeline, make sure the service connection backing the regular Kubernetes environment resource is set to **Use cluster admin credentials**. Otherwise, role bindings must be created for the underlying service account to the review app namespace.
+> To add this to an existing pipeline, make sure the service connection backing the regular Kubernetes environment resource is set to **Use cluster admin credentials**. Otherwise, role bindings must be created for the underlying service account to the review app namespace.
 
-After creation, review app resources are labeled **Review** in the environment resource listing. Once the PR is merged or closed, the dynamic resource disappears.
+Review app resources are labeled **Review** in the environment's **Resource** listing. Once the PR is merged or closed, the dynamic resource disappears.
 
 :::image type="content" source="media/kubernetes-yaml-templates.png" alt-text="Screenshot that shows the Review environment in the pipeline environment listing.":::
 
-### Example deploy to AKS pipeline
+### Example pipeline
 
-The following example pipeline based on the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template first builds and pushes an image to Azure Container Registry. The first deployment job then runs for commits to non-PR branches and deploys against a regular Kubernetes resource in the environment.
+The following example pipeline is based on the [Deploy to Azure Kubernetes Services](../ecosystems/kubernetes/aks-template.md) template. The pipeline first builds and pushes an image to Azure Container Registry.
 
-The second job runs only for PR branches and deploys against review app resources that it creates inside the Kubernetes cluster on demand. The job runs whenever a PR to `main` is created or updated.
+The first deployment job then runs for any commits to the `main` branch, and deploys against a regular Kubernetes resource in the environment.
+
+The second job runs when a PR is created or updated to the `main` branch, and deploys against a review app resource it creates in the cluster on demand.
 
 ```yaml
 # Deploy to Azure Kubernetes Service
@@ -102,9 +104,6 @@ The second job runs only for PR branches and deploys against review app resource
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- main
-
-pr:
 - main
 
 resources:
@@ -233,7 +232,7 @@ stages:
               arguments: svc
               outputFormat: jsonpath='http://{.items[0].status.loadBalancer.ingress[0].ip}:{.items[0].spec.ports[0].port}'
 
-          # Getting the IP of the deployed service and writing it to a variable for posting comment
+          # Get the IP of the deployed service and writing it to a variable for posting comment
           - script: |
               url="$(get.KubectlOutput)"
               message="Your review app has been deployed"
