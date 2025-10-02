@@ -1,49 +1,40 @@
 ---
 title: Consume Cargo packages from Crates.io
-description: How to consume Crates from Crates.io with Azure Artifacts
+description: Learn how to consume Crates from Crates.io with Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.topic: quickstart
-ms.date: 12/13/2023
+ms.date: 10/01/2025
 monikerRange: '>= azure-devops-2022'
 "recommendations": "true"
 ---
 
-# Use packages from Crates.io
+# Use Cargo packages from Crates.io
 
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 Azure Artifacts upstream sources enable developers to consume packages from public registries like Crates.io and nuget.org. This article will guide you through setting up your project and using the command line to consume Crates from Crates.io. 
 
-This article will guide you through how to:
-
-> [!div class="checklist"]  
-> * Create an Azure Artifacts feed 
-> * Connect to your feed
-> * Consume crates from upstream
-
 ## Prerequisites
 
-- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md) if you haven't already.
-
-- An Azure DevOps project. [Create a project](../../organizations/projects/create-project.md#create-a-project) if you don't have one.
-
-- Download and install [rustup](https://rustup.rs/).
+|     **Product**    |  **Requirements**  |
+|--------------------|--------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [rustup](https://rustup.rs/). You'll need Cargo version 1.74.0 or later. |
 
 ## Create a feed
 
-Azure Artifacts recommends having a dedicated feed for consuming crates from crates.io and a separate feed exclusively for publishing internal crates. 
+Azure Artifacts recommends having a dedicated feed for consuming crates from crates.io and a separate feed exclusively for publishing internal crates. If you already have an Azure Artifacts feed, skip to the next section. Otherwise, create a new one as follows:
  
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, then navigate to your project.
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-1. Enter a **Name** for your feed, define its **Visibility**, and then select your **Scope**. Make sure to check the **Upstream sources** checkbox to include packages from public registries. 
+1. Provide a **Name** for your feed, select the **Visibility** to define who can view your packages, and choose the feed **Scope**. Check the **Include packages from common public sources** checkbox to enable upstream sources on your feed.
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="media/create-cargo-upstream-feed.png" alt-text="A screenshot showing how to create a feed for cargo upstream.":::
+    :::image type="content" source="media/cargo-crates-feed.png" alt-text="A screenshot displaying how to create a feed to consume crates from Crates.io upstream.":::
 
 ## Connect to your feed
 
