@@ -1,11 +1,11 @@
 ---
 title: Build and test PHP apps
-description: Build and test PHP apps with Azure Pipelines.
+description: Learn how to build and test PHP apps with Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.author: jukullam
 ms.custom: freshness-fy22q2
-ms.date: 05/20/2024
+ms.date: 10/02/2025
 monikerRange: "<=azure-devops"
 ---
 
@@ -13,38 +13,35 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Use Azure Pipelines continuous integration and continuous delivery (CI/CD) to build, deploy, and test your PHP projects. 
-
-Learn how to create a PHP pipeline, deploy a pipeline with a sample project to Azure App Service, and how to configure your environment. 
-
-To learn more about Azure App Service, see [Create a PHP web app in Azure App Service](/azure/app-service/quickstart-php). 
+This article shows how to create an Azure Pipelines PHP pipeline that deploys a sample PHP project to Azure App Service. The pipeline uses continuous integration and continuous delivery (CI/CD) to build, test, and deploy the PHP app. You can also use the pipeline to configure your environment.
 
 ## Prerequisites
 
+- Your own fork of the sample GitHub PHP project at [https://github.com/Azure-Samples/basic-php-composer](https://github.com/Azure-Samples/basic-php-composer).
+- A PHP web app created for the project in Azure App Service. To quickly create a sample PHP web app, see [Create a PHP web app in Azure App Service](/azure/app-service/quickstart-php). Alternatively, you can use your own PHP project and web app.
+
+You also need the following prerequisites:
+
 [!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
 
-If you're going to deploy to Azure App Service, you need to have a webapp created.
+>[!NOTE]
+>[GitHub](https://github.com) might require authentication, authorization, or sign in to GitHub organizations or specific repositories. Follow instructions to complete the required processes. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
-## Get the code
+## Create the pipeline
 
-If you already have an app at GitHub that you want to deploy, you can create a pipeline for that code. But, if you're a new user, you might get a better start by using our sample code. In that case, fork the following repo at GitHub:
+1. In your Azure DevOps project, select **Pipelines** from the left navigation menu, and then select **New pipeline** or **Create pipeline** if this pipeline is the first in the project.
+1. On the **Where is your code** page, select **GitHub**.
+1. On the **Select a repository** page, select your forked **basic-php-composer** repository.
+1. Azure Pipelines recognizes the code as a PHP app, and suggests several pipeline [templates](../process/templates.md) on the **Configure your pipeline** page. Select **PHP as Linux Web App on Azure**.
+1. On the next screen, select your Azure subscription and select **Continue**. This action creates a service connection to your Azure resources.
+1. On the next screen, select your Azure web app and select **Validate and configure**. Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAML pipeline editor.
+1. On the **Review your pipeline YAML** screen, review the code for your pipeline.
 
-```
-https://github.com/Azure-Samples/basic-php-composer
-```
-## Create a pipeline
-
-1. Sign in to your Azure DevOps organization and go to your project.
-
-1. Go to pipelines, and then select **New pipeline**.
-1. Select your source location (GitHub, Azure Repos Git, Bitbucket Cloud, or other Git repositories).
-1. Select the repository where your code is located. 
-1. Select **PHP** in the **Configure** tab.
+   The pipeline takes the following actions:
 1. Ensure the PHP version is 8.3.
 1. Examine your new pipeline. When you're ready, select **Save and run**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+[Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
 1. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. Select **Save and run** again.
 
