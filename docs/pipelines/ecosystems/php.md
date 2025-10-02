@@ -33,7 +33,7 @@ You also need the following prerequisites:
 
 ## Create the pipeline
 
-To create and run the example pipeline, do the following steps:
+To create and run the example pipeline, take the following steps:
 
 1. In your Azure DevOps project, select **Pipelines** from the left navigation menu, and then select **New pipeline** or **Create pipeline** if this pipeline is the first in the project.
 1. On the **Where is your code** page, select **GitHub**.
@@ -43,7 +43,7 @@ To create and run the example pipeline, do the following steps:
 1. On the next screen, select your Azure web app and select **Validate and configure**. Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAML pipeline editor.
 1. On the **Review your pipeline YAML** screen, review the code for your pipeline. When you're ready, select **Save and run**.
 
-   [Screenshot that shows the Save and run button in a new YAML pipeline.](media/save-and-run-button-new-yaml-pipeline.png)
+   ![Screenshot that shows the Save and run button in a new YAML pipeline.](media/save-and-run-button-new-yaml-pipeline.png)
 
 1. On the next screen, select **Save and run** again to commit the new *azure-pipelines.yml* file to your repository and kick off a CI/CD build.
 
@@ -56,7 +56,7 @@ After the run completes, you can edit the pipeline by selecting the **More actio
 
 ## Example pipeline
 
-The following example YAML *azure-pipelines.yml* file has two stages, `Build` and `Deploy`. The `Build` stage installs PHP 8.3 along with Composer, and then runs tasks to archive your project files and publish a ZIP build artifact to a package named `drop`.
+The following example *azure-pipelines.yml* file has two stages, `Build` and `Deploy`. The `Build` stage installs PHP 8.3 along with Composer, and then runs tasks to archive your project files and publish a ZIP build artifact to a package named `drop`.
 
 The `Deploy` stage runs if the `Build` stage succeeds, and deploys the `drop` package to App Service by using the [Azure Web App](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task. When you use the **PHP as Linux Web App on Azure** template to create your pipeline, the generated pipeline sets and uses variables and other values based on your configuration settings.
 
@@ -134,9 +134,9 @@ stages:
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
 ```
 
-## Customize the pipeline
+## Customize the YAML pipeline
 
-You can customize the pipeline in several ways:
+You can customize the pipeline in several ways.
 
 ### Use a specific PHP version
 
@@ -169,7 +169,7 @@ To use Composer to install dependencies, include the following snippet in your *
   displayName: 'composer install'
 ```
 
-If your *composer.json* file is in a subfolder instead of the root directory, you can use the `--working-dir` argument to specify what directory to use. For example, if *composer.json* is in the subfolder *pkgs*, use `composer install --no-interaction --working-dir=pkgs`. You can also specify an absolute path using the built-in system variable: `--working-dir='$(System.DefaultWorkingDirectory)/pkgs'`.
+If your *composer.json* file is in a subfolder instead of the root directory, you can use the `--working-dir` argument to specify what directory to use. For example, if *composer.json* is in the subfolder */pkgs*, use `composer install --no-interaction --working-dir=pkgs`. You can also specify an absolute path using the built-in system variable: `--working-dir='$(System.DefaultWorkingDirectory)/pkgs'`.
 
 ### Test with PHPUnit
 
@@ -182,7 +182,7 @@ To run tests with PHPUnit, add the following snippet to your *azure-pipelines.ym
 
 ### Retain the PHP artifacts with the build record
 
-To save the artifacts of the build with the build record, include the [Archive Files](/azure/devops/pipelines/tasks/reference/archive-files-v2) task in your pipeline, and optionally customize the value of `rootFolderOrFile` to change what's included in the archive.
+To save the artifacts of the build with the build record, include the [Archive Files](/azure/devops/pipelines/tasks/reference/archive-files-v2) task in your pipeline, and optionally customize the value of `rootFolderOrFile` to change what the archive includes.
 
 ```yaml
 - task: ArchiveFiles@2
@@ -196,4 +196,4 @@ To save the artifacts of the build with the build record, include the [Archive F
 
 - [Deploy to App Service using Azure Pipelines](/azure/app-service/deploy-azure-pipelines)
 - [Deployment jobs](../process/deployment-jobs.md)
-- [Pipeline templates](../process/templates.md)
+- [YAML templates in pipelines](../process/templates.md)
