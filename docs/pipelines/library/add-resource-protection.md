@@ -1,5 +1,5 @@
 ---
-title: Add an administrator for a protected resource
+title: Add an Administrator for a Protected Resource
 description: Learn how to add administrators to service connections, secure files, agent pools, secret variables, and environments in Azure Pipelines.
 ms.topic: how-to 
 ms.date: 10/02/2025
