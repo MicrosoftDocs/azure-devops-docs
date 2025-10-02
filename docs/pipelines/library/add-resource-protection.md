@@ -17,7 +17,7 @@ To manage [protected resources](../process/about-resources.md), Azure Pipelines 
 - [Service connections](../library/service-endpoints.md)
 - [Environments](../process/environments.md)
 
-For information about protecting repository resources, see [Securely access repositories from pipelines](secure-access-to-repos.md) and [Protect a repository resource](../process/repository-resource.md).
+For information about protecting repository resources, see [Securely access repositories from pipelines](../security/secure-access-to-repos.md) and [Protect a repository resource](../process/repository-resource.md).
 
 ## Prerequisites
 
@@ -53,7 +53,8 @@ To create a library resource, you must have or be a member of a group that has e
 To assign the **Administrator** role to users and groups at the project level:
 
 1. Go to **Pipelines** > **Library**, and select **Security**.
-1. Select **Add**, and then select a user or group to assign the **Administrator** role, and select **Add**.
+1. Select **Add**.
+1. Select a user or group to assign the **Administrator** role, and select **Add**.
 1. Select **Save**.
 
 ### Variable groups
@@ -117,6 +118,6 @@ To assign the **Administrator** role to a user or group for an individual enviro
 
 ## Related content
 
-- [About permissions and security groups](../../organizations/security/about-permissions.md). 
-- [About resources for Azure Pipelines](../process/about-resources.md)
+- [Permissions and security groups](../../organizations/security/about-permissions.md)
+- [Resources for Azure Pipelines](../process/about-resources.md)
 - [Resource security](../security/resources.md)
