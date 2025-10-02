@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 #customer intent: As a PHP developer, I want to learn how to create pipelines to build and deploy my PHP apps, so I can use continuous integration and deployment to automatically update my web apps.
 ---
 
-# Build and test PHP apps
+# Build, test, and deploy PHP apps
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
