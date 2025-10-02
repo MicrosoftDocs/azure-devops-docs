@@ -16,7 +16,7 @@ Azure Pipelines can access open or protected resources during pipeline runs. Thi
 
 Artifacts, pipelines, test plans, and work items are *open resources*. Pipelines can freely access these resources, and you can fully automate workflows by subscribing to their trigger events. For more information about protecting open resources, see [Protect projects](misc.md#protect-projects).
 
-*Protected resources* such as repositories and environments have more access restrictions. To help keep protected resources safe, you can set permissions, checks, and approvals required for pipelines to access protected resources.
+*Protected resources* such as repositories and environments have more access restrictions. To help keep protected resources safe, you can require permissions, checks, and approvals for pipelines to access protected resources.
 
 [!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
@@ -59,12 +59,12 @@ To more completely secure protected resources in pipelines, add *checks* that mu
 <a name="manual-approval-check"></a>
 ### Approvals
 
-You can block pipeline requests for protected resources pending manual approval by specified users or groups. This check provides an extra layer of security by allowing review of the code before proceeding with a pipeline run.
+You can block pipeline requests for protected resources pending manual approval by specified users or groups. This check provides an extra layer of security by allowing review of the code before a pipeline run can proceed.
 
 <a name="protected-branch-check"></a>
 ### Branch control
 
-Branch control ensures that only authorized branches can access protected resources. A protected branch check for a resource prevents pipelines from automatically running on unauthorized branches. You can extend your manual code review requirements for specific branches to your pipelines.
+Branch control ensures that only authorized branches can access protected resources. A protected branch check for a resource prevents pipelines from automatically running on unauthorized branches. You can extend your manual code review requirements for specific branches.
 
 ### Business Hours
 
