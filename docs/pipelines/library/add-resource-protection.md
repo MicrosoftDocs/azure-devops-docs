@@ -2,14 +2,14 @@
 title: Add an administrator for a protected resource
 description: Learn how to add administrators to service connections, secure files, agent pools, secret variables, and environments in Azure Pipelines.
 ms.topic: how-to 
-ms.date: 10/01/2025
+ms.date: 10/02/2025
 ms.custom: template-how-to-pattern
 #customer intent: As an Azure DevOps administrator, I want to learn how to assign the administrator role to users and groups so I can grant project members permission to manage protected resources.
 ---
 
 # Add an administrator for a protected resource
 
-To manage [protected resources](../process/about-resources.md), Azure Pipelines requires a user to have or be a member of a group that has the **Administrator** role for the resource. This article shows you how to assign the **Administrator** role to users and groups for the following Azure Pipelines protected resources:
+To manage [protected resources](../process/about-resources.md), Azure Pipelines requires a user to have the **Administrator** role or be a member of a group that has the **Administrator** role for the resource. This article shows you how to assign the **Administrator** role to users and groups for the following Azure Pipelines protected resources:
 
 - [Agent pools](../agents/agents.md)
 - [Variable groups](../library/variable-groups.md)
@@ -48,7 +48,7 @@ To add the **Administrator** role to a user or group for a specific agent pool:
 
 Library resources include variable groups and secure files. You can manage security for all library resources at the project level or for individual variable groups and files.
 
-To create a library resource, you must have or be a member of a group that has either the **Administrator** or **Creator** role. A resource creator is automatically assigned the **Administrator** role for that resource.
+To create a library resource, you must have either the **Administrator** or **Creator** role, or be a member of a group that has one of these roles. A resource creator is automatically assigned the **Administrator** role for that resource.
 
 To assign the **Administrator** role to users and groups at the project level:
 
@@ -79,7 +79,7 @@ To assign the **Administrator** role to a user or group for a secure file:
 
 ## Service connections
 
-You can manage security for all service connections at the project level or for individual service connections. To create a service connection, you must have or be a member of a group that has either the **Administrator** or **Creator** role. A service connection creator is automatically assigned the **Administrator** role for that service connection.
+You can manage security for all service connections at the project level or for individual service connections. To create a service connection, you must have either the **Administrator** or **Creator** role, or be a member of a group that has one of these roles. A service connection creator is automatically assigned the **Administrator** role for that service connection.
 
 To assign the **Administrator** role to a user or group at the project level:
 
@@ -98,7 +98,7 @@ To assign the **Administrator** role to a user or group for a specific service c
 
 ## Environments
 
-You can manage security for all environments at the project level or for individual environments. To create an environment, you must have or be a member of a group that has either the **Administrator** or **Creator** role. An environment creator is automatically assigned the **Administrator** role for that environment.
+You can manage security for all environments at the project level or for individual environments. To create an environment, you must have either the **Administrator** or **Creator** role, or be a member of a group that has one of these roles. An environment creator is automatically assigned the **Administrator** role for that environment.
 
 To assign the **Administrator** role to a user or group at the project level:
 
