@@ -34,7 +34,7 @@ The following section describes new features in development for Managed DevOps P
 
 ## August 2025
 
-* [Ubuntu 20.04 LTS Standard Support ended May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare). We've removed the Ubuntu 20.04 images from [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Pipelines images](./configure-images.md#azure-pipelines-images), and starting August 30, 2025, pipelines that are configured to use these deprecated images will be unsupported. For more information, see [Managed DevOps Pools image lifecycle](./configure-images.md#image-lifecycle).
+* [Ubuntu 20.04 LTS Standard Support ended May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare). We've removed the Ubuntu 20.04 images from [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Pipelines images](./configure-images.md#azure-pipelines-images), and starting August 30, 2025, pipelines that are configured to use these deprecated images are unsupported. For more information, see [Managed DevOps Pools image lifecycle](./configure-images.md#image-lifecycle).
 
 ## July 2025
 
