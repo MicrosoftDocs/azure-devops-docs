@@ -12,8 +12,6 @@ ms.topic: overview
 
 The following section describes new features in development for Managed DevOps Pools.
 
-* [Ubuntu 20.04 LTS Standard Support ended May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare). We've removed the Ubuntu 20.04 images from [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Pipelines images](./configure-images.md#azure-pipelines-images), and starting August 30, 2025, pipelines that are configured to use these deprecated images will fail to start. For more information, see [Managed DevOps Pools image lifecycle](./configure-images.md#image-lifecycle). **Planned for August 30, 2025.**
-
 * **Service Tag and new IPs**: Managed DevOps Pools control plane is going to add new IP outgoing addresses and is going to publish a service tag to provide a convenient mechanism to allow outbound traffic from Managed DevOps Pools. **Planned for October 2025.**
 
 * **Log analytics**: Managed DevOps Pools is adding support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode). **Planned for October 2025.**
@@ -33,6 +31,10 @@ The following section describes new features in development for Managed DevOps P
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for early 2026.**
 
 * **Custom Startup Script**: We are adding the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they are assigned to an agent, to enable scenarios such as installing Trusted root CAs, setting environment, etc. **Planned for early 2026**.
+
+## August 2025
+
+* [Ubuntu 20.04 LTS Standard Support ended May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare). We've removed the Ubuntu 20.04 images from [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Pipelines images](./configure-images.md#azure-pipelines-images), and starting August 30, 2025, pipelines that are configured to use these deprecated images will be unsupported. For more information, see [Managed DevOps Pools image lifecycle](./configure-images.md#image-lifecycle).
 
 ## July 2025
 
