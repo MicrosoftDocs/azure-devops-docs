@@ -5,7 +5,7 @@ ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
 ms.date: 10/01/2025
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-#customer intent: As an Azure Pipelines user, I want to understand protected resources so I can take steps to secure my protected repositories, branches, and other resources.
+#customer intent: As an Azure Pipelines user, I want to understand protected resources so I can take steps to secure protected repositories, branches, and other resources in my pipelines.
 ---
 
 # Resource security
@@ -16,7 +16,7 @@ Azure Pipelines can access open or protected resources during pipeline runs. Thi
 
 Artifacts, pipelines, test plans, and work items are *open resources*. Pipelines can freely access these resources, and you can fully automate workflows by subscribing to their trigger events. For more information about protecting open resources, see [Protect projects](misc.md#protect-projects).
 
-*Protected resources* such as repositories and environments have greater access restrictions. To help keep protected resources safe, you can set required permissions, checks, and approvals for pipelines to access protected resources.
+*Protected resources* such as repositories and environments have more access restrictions. To help keep protected resources safe, you can set permissions, checks, and approvals required for pipelines to access protected resources.
 
 [!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
@@ -31,8 +31,9 @@ Azure Pipelines protected resources include the following items:
 - [Secure files](../library/secure-files.md)
 - [Secret variables in variable groups](../library/variable-groups.md)
 
-You can set permissions for only specific users and pipelines within a project to access protected resources. You can also define checks and approvals that must succeed before a pipeline stage that uses the resource can start. For example, you can require manual approval before a pipeline stage can use an environment. Failed checks can suspend or fail the pipeline run.
+You can set permissions so only specific users and pipelines within a project can access protected resources. You can also define checks and approvals that must succeed before a pipeline stage that uses the resource can start. For example, you can require manual approval before a pipeline stage can use an environment. Failed checks can suspend or fail the pipeline run.
 
+<a name="repository-protection"></a>
 ### Repository resources
 
 Adding a repository to a pipeline requires authorization from a user with **Contribute** access to the repository. You can also protect repository resources by limiting the scope of the Azure Pipelines access token to only repositories explicitly listed in the pipeline's `resources` section. For more information, see [Securely access repositories from pipelines](secure-access-to-repos.md) and [Protect a repository resource](../process/repository-resource.md).
@@ -55,21 +56,23 @@ To more completely secure protected resources in pipelines, add *checks* that mu
 
 ![Screenshot of configuring checks.](media/configure-checks.png)
 
-### Approval
+<a name="manual-approval-check"></a>
+### Approvals
 
 You can block pipeline requests for protected resources pending manual approval by specified users or groups. This check provides an extra layer of security by allowing review of the code before proceeding with a pipeline run.
 
+<a name="protected-branch-check"></a>
 ### Branch control
 
-Branch control ensures that only authorized branches can access protected resources. A protected branch check for a resource prevents pipelines from automatically running on unauthorized branches. You can extend manual code review processes for specific branches to your pipelines.
+Branch control ensures that only authorized branches can access protected resources. A protected branch check for a resource prevents pipelines from automatically running on unauthorized branches. You can extend your manual code review requirements for specific branches to your pipelines.
 
 ### Business Hours
 
-Use the **Business Hours** check to ensure that a pipeline deployment starts within a specified day and time window.
+Use this check to ensure that a pipeline deployment starts within a specified day and time window.
 
-### Other checks
+### View all checks
 
-Select **View all checks** on the **Approvals and checks** page to see and configure other checks that you can apply.
+Select **View all checks** to see and apply other checks such as [required templates](../process/approvals.md#required-template).
 
 ## Related content
 
