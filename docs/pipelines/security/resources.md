@@ -2,7 +2,7 @@
 title: Pipeline resource security
 description: Learn about protected Azure Pipelines resources, and how to use permissions, checks, and approvals to help secure them in pipeline runs.
 ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
-ms.date: 10/01/2025
+ms.date: 10/02/2025
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
 #customer intent: As an Azure Pipelines user, I want to understand protected resources so I can take steps to secure protected repositories, branches, and other resources in my pipelines.
@@ -12,11 +12,11 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Azure Pipelines can access open or protected resources during pipeline runs. This article describes security features that help safeguard protected resources.
+This article describes security features that help safeguard *protected resources* in Azure Pipelines. Pipelines might need to access open or protected resources during runs.
 
-Artifacts, pipelines, test plans, and work items are *open resources*. Pipelines can freely access these resources, and you can fully automate workflows by subscribing to their trigger events. For more information about protecting open resources, see [Protect projects](misc.md#protect-projects).
+Artifacts, pipelines, test plans, and work items are *open resources*. Pipelines can freely access these resources, and you can fully automate workflows by subscribing to resource trigger events. For more information about protecting open resources, see [Protect projects](misc.md#protect-projects).
 
-*Protected resources* such as repositories and environments have more access restrictions. To help keep protected resources safe, you can require permissions, checks, and approvals for pipelines to access protected resources.
+*Protected resources* such as repositories and environments need more access restrictions. To help keep protected resources safe, you can require permissions, checks, and approvals for pipelines to access protected resources.
 
 [!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
@@ -31,7 +31,7 @@ Azure Pipelines protected resources include the following items:
 - [Secure files](../library/secure-files.md)
 - [Secret variables in variable groups](../library/variable-groups.md)
 
-You can set permissions so only specific users and pipelines within a project can access protected resources. You can also define checks and approvals that must succeed before a pipeline stage that uses the resource can start. For example, you can require manual approval before a pipeline stage can use an environment. Failed checks can suspend or fail the pipeline run.
+You can set permissions so that only specific users and pipelines in a project can access protected resources. You can also define checks and approvals that must succeed before a pipeline stage that uses the resource can start. For example, you can require manual approval before a pipeline stage can use an environment. Failed checks can suspend or fail the pipeline run.
 
 <a name="repository-protection"></a>
 ### Repository resources
@@ -52,7 +52,7 @@ You must have the **Project Administrator** role to enable access to a protected
 
 ## Checks
 
-To more completely secure protected resources in pipelines, add *checks* that must be satisfied before pipelines can consume protected resources. You can require specific approvals or other criteria. For more information, see [Define approvals and checks](../process/approvals.md).
+To more completely secure protected resources in pipelines, add checks that must be satisfied before pipelines can consume protected resources. You can require specific approvals or other criteria. For more information, see [Define approvals and checks](../process/approvals.md).
 
 ![Screenshot of configuring checks.](media/configure-checks.png)
 
@@ -64,7 +64,7 @@ You can block pipeline requests for protected resources pending manual approval 
 <a name="protected-branch-check"></a>
 ### Branch control
 
-Branch control ensures that only authorized branches can access protected resources. A protected branch check for a resource prevents pipelines from automatically running on unauthorized branches. You can extend your manual code review requirements for specific branches.
+Branch control ensures that only authorized branches can access protected resources. A protected branch check for a resource prevents pipelines from automatically running on unauthorized branches. By using branch control, you can extend your branch-specific manual code review requirements.
 
 ### Business Hours
 
