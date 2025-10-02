@@ -1,140 +1,122 @@
 ---
-title: Add an admin role to a protected resource
-description: Administer service connections, secure files, repositories, agent pools, secret variables, and Environments. 
+title: Add an administrator for a protected resource
+description: Learn how to add administrators to service connections, secure files, agent pools, secret variables, and environments in Azure Pipelines.
 ms.topic: how-to 
-ms.date: 06/18/2023
+ms.date: 10/01/2025
 ms.custom: template-how-to-pattern
+#customer intent: As an Azure DevOps administrator, I want to learn how to assign the administrator role to users and groups so I can grant project members permission to manage protected resources.
 ---
 
-# Add an admin role to a protected resource
+# Add an administrator for a protected resource
 
-To manage [protected resources](../process/about-resources.md), Azure Pipelines requires a user be assigned or to be a member of a group that is assigned the **Administrator** role for the resource. You can manage security for resources at the project level or for individual resources. To manage security at the project level and for project level administrator groups at the individual resource level, you must be a member of the **Project Administrators** group.  
+To manage [protected resources](../process/about-resources.md), Azure Pipelines requires a user to have or be a member of a group that has the **Administrator** role for the resource. This article shows you how to assign the **Administrator** role to users and groups for the following Azure Pipelines protected resources:
 
-This article shows you how to assign the **Administrator** role to users and groups for protected resources.
+- [Agent pools](../agents/agents.md)
+- [Variable groups](../library/variable-groups.md)
+- [Secure files](../library/secure-files.md)
+- [Service connections](../library/service-endpoints.md)
+- [Environments](../process/environments.md)
 
-Protected resources include:
-
-* Agent pools
-* Secret variables in variable groups
-* Secure files
-* Service connections
-* Environments
-* Repositories
-
-For repository resources, see [protect a repository resource](../process/repository-resource.md). 
-
+For information about protecting repository resources, see [Securely access repositories from pipelines](secure-access-to-repos.md) and [Protect a repository resource](../process/repository-resource.md).
 
 ## Prerequisites
 
-You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md) to update project-level resource permissions or to grant access to all pipelines in the project for an individual resource. Some individual resources also require **Project Administrators** group membership to change permissions for project administrator groups.
+You can manage security for resources at the project level or individual resource level. To manage security for projects, or manage project-level administrator groups for individual resources, you must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).
+
+**Project Administrators** can update project-level resource permissions or grant access to all project pipelines for individual resources. Some individual resources also require **Project Administrators** group membership to change permissions for project administrator groups.
 
 ## Agent pools
 
-You can add the **Administrator** role to users and groups for a specific agent pool and for all agent pools. 
+You can assign the **Administrator** role to users and groups for a specific agent pool or for all agent pools.
 
 To add the **Administrator** role to a user or group for all agent pools:
 
-1. Go to **Project Settings** > **Pipelines** > **Agent pools**. 
-
-1. Select **Security**. 
-
-1. Assign the **Administrator** role in the **Role** column for a user or group. 
-1. Select :::image type="icon" source="../../media/icons/save-icon.png" border="false"::: to save the settings.
+1. In **Project Settings**, select **Pipelines** > **Agent pools**, and then select **Security** at upper right.
+1. On the **User permissions** screen, select **Add**.
+1. Select a user or group to assign the **Administrator** role, and select **Add**.
+1. Select **Save**.
 
 To add the **Administrator** role to a user or group for a specific agent pool:
 
-1. Go to **Project Settings** > **Pipelines** > **Agent pools**. 
+1. In **Project Settings**, select **Pipelines** > **Agent pools**, and then select a specific agent pool.
+1. Select the **Security** tab.
+1. Under **User permissions**, select **Add**.
+1. Select a user or group to assign the **Administrator** role, and select **Add**.
+1. Select **Save**.
 
-1. Select a specific agent pool. 
+## Library resources
 
-1. Select **Security**. 
+Library resources include variable groups and secure files. You can manage security for all library resources at the project level or for individual variable groups and files.
 
-1. In **User permissions**, assign the **Administrator** role in the **Role** column for a user or group.
-1. Select :::image type="icon" source="../../media/icons/save-icon.png" border="false"::: to save the settings.
-
-## Library resources (variable groups and secure files)
-
-You can manage security for all library resources at the project level or for individual variable groups and files. To create a library resource, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. The creator of a resource is automatically assigned the **Administrator** role for that individual resource.
+To create a library resource, you must have or be a member of a group that has either the **Administrator** or **Creator** role. A resource creator is automatically assigned the **Administrator** role for that resource.
 
 To assign the **Administrator** role to users and groups at the project level:
 
+1. Go to **Pipelines** > **Library**, and select **Security**.
+1. Select **Add**, and then select a user or group to assign the **Administrator** role, and select **Add**.
+1. Select **Save**.
+
+### Variable groups
+
+To assign the **Administrator** role to a user or group for a variable group:
+
 1. Go to **Pipelines** > **Library**. 
+1. On the **Variable groups** tab, select the variable group.
+1. On the variable group page, select **Security**.
+1. Select **Add**, and then select a user or group to assign the **Administrator** role, and select **Add**.
+1. Select **Save**.
 
-1. Select **Security**.
+### Secure files
 
-1. Assign the **Administrator** role in the **Role** column for a user or group.
-1. Select :::image type="icon" source="../../media/icons/save-icon.png" border="false"::: to save the settings.
-
-To assign the **Administrator** role to users and groups for a variable group:
+To assign the **Administrator** role to a user or group for a secure file:
 
 1. Go to **Pipelines** > **Library**. 
-
-1. Select the variable group.
-1. Select **Security**.
-1. Select :::image type="icon" source="../../media/icons/save-icon.png" border="false"::: to save the settings.
-
-To assign the **Administrator** role to users and groups for a secure file:
-
-1. Go to **Pipelines** > **Library**.
-
-1. Select **Secure files** and select a file from the list.
-1. Select **Security**.
-1. Assign the **Administrator** role in the **Role** column for a user or group.
-1. Select :::image type="icon" source="../../media/icons/save-icon.png" border="false"::: to save the settings.
-
+1. Select the **Secure files** tab, and then select the secure file.
+1. On the secure file page, select **Security**.
+1. Select **Add**, and then select a user or group to assign the **Administrator** role, and select **Add**.
+1. Select **Save**.
 
 ## Service connections
 
-You can manage security for all service connections at the project level or for individual service connections. To create a service connection, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. The creator of a service connection is automatically assigned the **Administrator** role for that individual service connection. 
+You can manage security for all service connections at the project level or for individual service connections. To create a service connection, you must have or be a member of a group that has either the **Administrator** or **Creator** role. A service connection creator is automatically assigned the **Administrator** role for that service connection.
 
-To assign the **Administrator** role to users and groups at the project level:
+To assign the **Administrator** role to a user or group at the project level:
 
-1. Go to **Project Settings** > **Service connections**. 
+1. In **Project Settings**, select **Pipelines** > **Service connections**, and then select **Security** at upper right.
+1. On the **User permissions** screen, select **Add**.
+1. Select a user or group to assign the **Administrator** role, and select **Add**.
+1. Select **Save**.
 
-1. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Security**.  
-1. Assign the **Administrator** role in the **Role** column for a user or group.
-1. To save the settings, select **Save**.
+To assign the **Administrator** role to a user or group for a specific service connection:
 
-To assign the **Administrator** role to users and groups for a service connection:
-
-1. Go to **Project Settings** > **Service connections**. 
-
-1. Select a service connection. 
-
-1. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Security**.  
-
-1. Assign the **Administrator** role in the **Role** column for a user or group.
-1. To save the settings, select **Save**.
+1. In **Project Settings**, select **Pipelines** > **Service connections**, and then select a service connection.
+1. On the service connection page, select the **More actions** icon at upper right, and then select **Security**.
+1. Under **User permissions**, select **Add**.
+1. Select a user or group to assign the **Administrator** role, and select **Add**.
+1. Select **Save**.
 
 ## Environments
 
-You can manage security for all environments at the project level or for individual environments. To create an environment, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. The creator of an environment is automatically assigned the **Administrator** role for that individual environment.
+You can manage security for all environments at the project level or for individual environments. To create an environment, you must have or be a member of a group that has either the **Administrator** or **Creator** role. An environment creator is automatically assigned the **Administrator** role for that environment.
 
-To assign the **Administrator** role to users and  groups at the project level:
+To assign the **Administrator** role to a user or group at the project level:
 
 1. Go to **Pipelines** > **Environments**. 
-
-1. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Security**.  
-
-1. Assign the **Administrator** role in the **Role** column for a user or group.
-1. To save the settings, select **Save**.
+1. Select the **More actions** icon at upper right, and then select **Security**.
+1. Under **User permissions**, select **Add**.
+1. Select a user or group to assign the **Administrator** role, and select **Add**.
+1. Select **Save**.
 
 To assign the **Administrator** role to a user or group for an individual environment:
 
-1. Go to **Pipelines** > **Environments**. 
+1. Go to **Pipelines** > **Environments**, and select an environment. 
+1. On the environment page, select the **More actions** icon at upper right, and then select **Security**.
+1. Under **User permissions**, select **Add**.
+1. Select a user or group to assign the **Administrator** role, and select **Add**.
+1. Select **Save**.
 
-1. Select an environment. 
+## Related content
 
-1. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Security**. 
-
-1. Assign the **Administrator** role in the **Role** column for a user or group.
-
-    :::image type="content" source="media/resources-admin-role.png" alt-text="Screenshot of assign the admin role. ":::
-
-1. To save the settings, select **Save**.
-
-## Next steps
-
-Learn more about [permissions in Azure DevOps](../../organizations/security/about-permissions.md). 
-
-
+- [About permissions and security groups](../../organizations/security/about-permissions.md). 
+- [About resources for Azure Pipelines](../process/about-resources.md)
+- [Resource security](../security/resources.md)
