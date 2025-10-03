@@ -117,7 +117,7 @@ To create and run the example pipeline, take the following steps:
 
 1. In your Azure DevOps project, select **Pipelines** from the left navigation menu, and then select **New pipeline** or **Create pipeline** if this pipeline is the first in the project.
 1. On the **Where is your code** page, select **GitHub**.
-1. On the **Select a repository** page, select your forked **basic-php-composer** repository.
+1. On the **Select a repository** page, select your forked **php-docs-hello-world** repository.
 1. Azure Pipelines recognizes the code as a PHP app, and suggests several pipeline [templates](../process/templates.md) on the **Configure your pipeline** page. For this example, select **PHP as Linux Web App on Azure**.
 1. On the next screen, select your Azure subscription and select **Continue**. This action creates a service connection to your Azure resources.
 1. On the next screen, select your Azure web app and select **Validate and configure**. Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAML pipeline editor.
