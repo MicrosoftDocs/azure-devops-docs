@@ -37,6 +37,13 @@ The following example *azure-pipelines.yml* file based on the **PHP as Linux Web
 
 The `Deploy` stage runs if the `Build` stage succeeds, and deploys the `drop` package to App Service by using the [Azure Web App](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task. When you use the **PHP as Linux Web App on Azure** template to create your pipeline, the generated pipeline sets and uses variables and other values based on your configuration settings.
 
+>[!NOTE]
+>If you create your pipeline from the **PHP as Linux Web App on Azure** [template](../process/templates.md), and your PHP app doesn't use Composer, remove the following lines from the generated pipeline before you save and run it. The template pipeline fails as is unless *composer.json* is present in the repo.
+>
+>`     - script: composer install --no-interaction --prefer-dist`
+>`      workingDirectory: $(rootFolder)`
+>`      displayName: 'Composer install'`
+
 ```yaml
 trigger:
 - main
@@ -72,10 +79,6 @@ stages:
         php -version
       workingDirectory: $(rootFolder)
       displayName: 'Use PHP version $(phpVersion)'
-
-    - script: composer install --no-interaction --prefer-dist
-      workingDirectory: $(rootFolder)
-      displayName: 'Composer install'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
