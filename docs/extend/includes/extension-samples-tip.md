@@ -11,7 +11,7 @@ ms.date: 10/03/2025
 >
 >- Azure DevOps extension sample (GitHub)—a compact starter sample that demonstrates common extension patterns: https://github.com/microsoft/azure-devops-extension-sample
 >- Azure DevOps extension samples (legacy collection and contributions guide)—install to inspect UI targets, or view the source: https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide and https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide
->- Microsoft Learn samples (browse Azure DevOps samples)—curated, up-to-date samples across Microsoft docs: https://learn.microsoft.com/samples/browse/?terms=azure%20devops%20extension
+>- Microsoft Learn samples (browse Azure DevOps samples)—curated, up-to-date samples across Microsoft docs: /samples/browse/?terms=azure%20devops%20extension
 >
 >If a sample doesn't work in your organization, install it into a personal or test organization and compare the extension manifest's target IDs and API versions with the current docs. For reference and APIs, see:
 >- [azure-devops-extension-api](/javascript/api/azure-devops-extension-api/)

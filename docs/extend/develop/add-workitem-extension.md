@@ -130,7 +130,7 @@ SDK.register(SDK.getContributionId(), function () {
 
 A new page is rendered as a tab on the work item form. New pages appear next to the **Details** tab.
 
-:::image type="content" source="media/add-workitem-extension-page.png" alt-text="Screenshot that shows the new page as a tab on the work item form.">
+:::image type="content" source="media/add-workitem-extension-page.png" alt-text="Screenshot that shows the new page as a tab on the work item form.":::
 
 To add a page to the work item form, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-page` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -174,7 +174,7 @@ In Azure DevOps Services, by default, the group extensions appear in the end of 
 
 ## Add menu action
 
-:::image type="content" source="media/add-workitem-extension-toolbar.png" alt-text="Screenshot that shows how to add an item to the work item toolbar.">
+:::image type="content" source="media/add-workitem-extension-toolbar.png" alt-text="Screenshot that shows how to add an item to the work item toolbar.":::
 
 To add an item to the work item toolbar, add this contribution to your extension manifest. Select the vertical ellipsis in the work item form to see the dropdown menu.
 

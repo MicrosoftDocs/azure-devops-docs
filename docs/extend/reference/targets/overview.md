@@ -20,7 +20,7 @@ ms.custom:
 
 Extensions add capabilities to the Azure DevOps UI and REST surface. This article lists the most common extensibility points you can target and shows the IDs you use in your extension manifest. For an overview of the extension model and contribution patterns, see the [Contribution model](../../develop/contributions-overview.md).
 
-> [!INCLUDE [extension-samples-tip](../includes/extension-samples-tip.md)]
+[!INCLUDE [extension-samples-tip](../../includes/extension-samples-tip.md)]
 
 <a name="hubs"></a>
 
