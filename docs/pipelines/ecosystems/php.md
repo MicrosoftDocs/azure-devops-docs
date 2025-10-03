@@ -193,7 +193,6 @@ To save the artifacts of the build with the build record, include the [Archive F
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
-- task: PublishBuildArtifacts@1
 ```
 
 ## Related content
