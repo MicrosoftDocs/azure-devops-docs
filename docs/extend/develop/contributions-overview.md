@@ -1,70 +1,73 @@
 ---
 ms.subservice: azure-devops-ecosystem
 title: Contribution model
-description: Overview of the contribution model, including an overview of contributions, types, and targeting other contributions for Azure DevOps.
+description: Overview of the contribution model, including contribution types and how to target other contributions for Azure DevOps.
 ms.assetid: 96509f47-bac2-4319-9085-2621ff8f814a
 ms.custom: engagement-fy23
+ai-usage: ai-assisted
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/14/2022
+ms.date: 10/03/2025
 ---
 
 # Contribution model
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Extensions add new capabilities into the system by providing contributions and by defining ways for other extensions to plug in to them. A contribution type defines something that can be added to the system. A contribution is a specific instance of a contribution type. For example, `hub` is a contribution type defined by a core Microsoft-provided extension. The `Explorer` hub under the Build hub group is a specific contribution of type `hub`.
+Extensions add capabilities to Azure DevOps by declaring contribution types and contribution instances. A contribution type defines a contract (the properties and behavior) that contributions of that type must implement. A contribution is a concrete instance of a contribution type (for example, a hub or a build task).
 
-For more information, see the following references:
-- [Extensibility points](../reference/targets/overview.md) 
-- [azure-devops-extension-api](/javascript/api/azure-devops-extension-api/?source=recommendations) 
+[!INCLUDE [extension-samples-tip](../includes/extension-samples-tip.md)]
+
+For more information, see:
+- [Extensibility points](../reference/targets/overview.md)
+- [azure-devops-extension-api](/javascript/api/azure-devops-extension-api/?source=recommendations)
 - [azure-devops-extension-sdk](/javascript/api/azure-devops-extension-sdk/)
 
 ## Contribution types
 
-A **contribution type** defines a contract that all contributions to the system of that type must adhere to. A contribution type can also extend from another contribution type. The following examples of contribution types define the properties set by instances of that type:
+A contribution type defines the properties and rules that contributions of that type must follow. A contribution type can extend another contribution type, inheriting its properties.
+
+Common contribution types include:
 - `hub`
 - `action`
 - `build-task`
 
-Each property definition specifies the following aspects:
-- Property type, for example string, boolean, and so on.
-- Whether the property is required
-- Default value, if not specified by a contribution (optional). 
+Each property definition includes:
+- property type (for example, string or boolean)
+- whether the property is required
+- an optional default value
 
 ### Example
 
-Here's an example of a contribution type declaration in an extension manifest:
-  
-```js
+A contribution type declaration in a manifest looks like this:
+
+```json
 {
-    ...
-    "contributionTypes": [
-        {
-            "id": "hub",
-            "name": "Web Access Hub",
-            "description": "A hub that appears in the hubs menu at the top of web pages.",
-            "properties": {
-                "name": {
-                    "description": "The text to display for the hub",
-                    "type": "string",
-                    "required": true
-                },
-                "uri": {
-                    "description": "URI of the contents of the hub page",
-                    "type": "string",
-                    "required": true
-                },
-                "order": {
-                    "description": "An optional ordering value which can indicate in which position to place the hub within the hub group",
-                    "type": "integer"
-                }
-				...
-            }
+  "contributionTypes": [
+    {
+      "id": "hub",
+      "name": "Web Access Hub",
+      "description": "A hub that appears in the hubs menu at the top of web pages.",
+      "properties": {
+        "name": {
+          "description": "The text to display for the hub",
+          "type": "string",
+          "required": true
+        },
+        "uri": {
+          "description": "URI of the contents of the hub page",
+          "type": "string",
+          "required": true
+        },
+        "order": {
+          "description": "Optional ordering value indicating the hub's position within the hub group",
+          "type": "integer"
         }
-    ]
+      }
+    }
+  ]
 }
 ```
 
@@ -126,4 +129,4 @@ For example: `ms.vss-web.hub` is the full identifier for the following contribut
 - Extension ID: `vss-web`
 - Contribution/type ID: `hub`
 
-You can use *relative* contribution references within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension IDs aren't included, and the ID is a dot `.` followed by the contribution ID. For example, `.hub` may be used within the `vss-web` extension mentioned previously as a shortcut for `ms.vss-web.hub`.
+You can use *relative* contribution references within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension IDs aren't included, and the ID is a dot `.` followed by the contribution ID. For example, `.hub` might be used within the `vss-web` extension mentioned previously as a shortcut for `ms.vss-web.hub`.
