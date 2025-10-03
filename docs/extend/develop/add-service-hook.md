@@ -158,7 +158,7 @@ Actions for your consumer have the following properties:
 | supportedEventTypes | Array of trigger types for which this action can be used. For more information, see [List of event types](../../service-hooks/events.md). |
 | publishEvent.url    | The endpoint URL that receives the HTTP message. You can template this value with tokens from the `inputDescriptors`; users provide the actual values when they create the subscription. |
 
-1. Deploy your extension to your Azure DevOps organization and test it.
+3. Deploy your extension to your Azure DevOps organization and test it.
 
 ## Next steps
 
