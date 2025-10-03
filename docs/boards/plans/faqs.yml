@@ -9,14 +9,14 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '>= azure-devops-2022'
-  ms.date: 08/09/2022
+  ms.date: 09/29/2025
 
 title: Delivery Plans FAQs 
 
 summary: | 
   **Azure Boards**  
 
-  Delivery Plans provides a calendar view of multiple backlogs, teams, and team backlogs from different projects. It replaces the Delivery Plans marketplace extension and is available for Azure DevOps Services and Azure DevOps Server 2022 and later versions. Here are some answers to frequently asked questions about Delivery Plans. 
+  Delivery Plans provides a calendar view of multiple backlogs, teams, and team backlogs from different projects. It replaces the Delivery Plans marketplace extension and is available for Azure DevOps Services and Azure DevOps Server 2022 and later. The following answers address common questions about Delivery Plans. 
 
 sections:
   - name: Single section - ignored
@@ -63,7 +63,7 @@ sections:
                 Timeframes
              :::column-end::: 
              :::column span="2":::
-                Start Date/Target Date and Iterations
+                Start Date / Target Date and Iterations
              :::column-end:::
              :::column span="2":::
                 Iterations only
@@ -85,11 +85,10 @@ sections:
                 Card data
              :::column-end::: 
              :::column span="2":::
-                Condensed and expanded views  
-                Variable based on zoom-level  
+                Condensed and expanded views; variable by zoom level
              :::column-end:::
              :::column span="2":::
-                Full card/TItle only 
+                Full card / Title only
              :::column-end:::
           :::row-end:::
           :::row:::
@@ -97,7 +96,7 @@ sections:
                 Rollup
              :::column-end::: 
              :::column span="2":::
-                % done of child and linked work items
+                Percentage done of child and linked work items
              :::column-end:::
              :::column span="2":::
                 Not supported
@@ -139,27 +138,26 @@ sections:
 
       - question: Can I use Delivery Plans 2.0 with Azure DevOps Server 2020?
         answer: |
-          No. Delivery Plans 2.0 is available with Azure DevOps Server 2022 RC1. 
+          No. Delivery Plans 2.0 requires Azure DevOps Server 2022 or later (RC1 and later for preview releases).
 
       - question: Why don't my work items show on the plan?
         answer: |
-          Make sure your work items are assigned to an **Iteration Path**, or a **Start Date** and **Target Date**. Also, verify that the **Iteration Paths** have been selected for the teams whose backlog levels are chosen for the Delivery Plans. If the **Iteration Paths** aren't selected, work items associated with those iterations won't display.    
+          Check that each work item has either an Iteration Path or a Start Date and Target Date. Also verify that the teams selected in the plan include the Iteration Paths you expect. If the plan doesn't include those iteration selections, items in those iterations don't appear.
 
-      - question: How do I get dependency lines to show?
+      - question: How do I show dependency lines?
         answer: |
-          Select the bottom of the card to show the dependency lines of the work item. To turn them off, select the bottom of the card or anywhere else in the plan. Clicking the bottom of the card is a toggle for the display of the dependency lines. 
+          Select the bottom area of a card to toggle dependency lines for that work item on and off. Clicking the bottom of the card shows the dependency lines; select it again (or select elsewhere) to hide them.
 
-      - question: Why can't I see all the fields and tags I've configured?
+      - question: Why can't I see all fields and tags I configured on cards?
         answer: |
-          In the settings under the **Fields** section, you can add  fields display on the cards. However, depending on the number of fields and the zoom level, not all fields are displayed. Selective field display based on zoom level is a design decision that was made to avoid card clutter. To see all the fields and tags on a card, continue to increase (+) the zoom level until they fully display.
+          Delivery Plans selectively displays fields based on zoom level to avoid card clutter. In the plan settings (Fields), add the fields you want on cards. Increase the zoom level (+) to reveal more fields and tags.
 
-      - question: Can I view custom work item types on Delivery Plans?  
+      - question: Can I view custom work item types on Delivery Plans?
         answer: |
-          **Yes**. Add your custom work item type to a backlog level as described in [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). 
- 
+          Yes. Add a custom work item type to an appropriate backlog level as described in [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). Delivery Plans include items from backlog levels that you configure.
 
 additionalContent: |
   ## Related content
   -  [Azure Boards FAQs](../faqs.yml) 
   -  [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
- 
+

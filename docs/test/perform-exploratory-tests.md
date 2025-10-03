@@ -1,14 +1,15 @@
 ---
-title: Exploratory test your web app
-description: Test tools - Exploratory test your web app in Azure DevOps from your web browser with the Microsoft Test & Feedback extension.
+title: Install The Test And Feedback Extension
+description: Install and set up the Test & Feedback browser extension to run exploratory tests on web apps, capture screenshots and recordings, and submit feedback to Azure DevOps.
 ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
+ai-usage: ai-assisted
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: quickstart
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 09/16/2024
+ms.date: 09/30/2025
 ms.update-cycle: 1095-days
 ---
 
@@ -16,8 +17,7 @@ ms.update-cycle: 1095-days
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-The **Test & Feedback extension** helps teams perform exploratory testing and provide feedback. 
-Everyone on your team can use the Test & Feedback extension to submit bugs or provide feedback and contribute to the quality of your product.
+The Test & Feedback extension helps teams run exploratory tests and collect feedback. Team members use it to submit bugs, capture screenshots and recordings, and contribute to product quality.
 
 ## Prerequisites
 
@@ -27,74 +27,67 @@ Everyone on your team can use the Test & Feedback extension to submit bugs or pr
 
 ## Supported web browsers for the extension
 
-The Test & Feedback extension is currently available for [Google Chrome](https://www.google.com/chrome/), [Microsoft Edge (Chromium Only)](https://www.microsoft.com/edge/), and [Mozilla Firefox version 50.0 and higher](https://www.mozilla.org/).
+You can install the Test & Feedback extension in Google Chrome, Microsoft Edge (Chromium), or Mozilla Firefox (version 50.0 and later).
 
-Some browser versions don't support all the features of the Test & Feedback extension.
+Some features vary by browser version.
 
 | Feature | Chrome | Microsoft Edge | Firefox |
-| --- | --- | --- | --- |
-| Capture screenshots with inline annotations | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture notes | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture screen recordings | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
-| Capture page load data | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
-| Capture user actions log | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture system information | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
-| Create bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| End-to-end traceability for work items | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Simplified bug and task tracking and triage | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Test app on devices using cloud providers such as Perfecto | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
-| Manage feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| --- | ---: | ---: | ---: |
+| Capture screenshots with inline annotations | ✔️ | ✔️ | ✔️ |
+| Capture notes | ✔️ | ✔️ | ✔️ |
+| Capture screen recordings | ✔️ | ✔️ | ❌ |
+| Capture page load data | ✔️ | ✔️ | ❌ |
+| Capture user actions log | ✔️ | ✔️ | ✔️ |
+| Capture system information | ✔️ | ✔️ | ❌ |
+| Create bugs | ✔️ | ✔️ | ✔️ |
+| Create tasks and test cases | ✔️ | ✔️ | ✔️ |
+| Create feedback requests | ✔️ | ✔️ | ✔️ |
+| Export session report for sharing | ✔️ | ✔️ | ✔️ |
+| End-to-end traceability for work items | ✔️ | ✔️ | ✔️ |
+| Simplified bug and task tracking and triage | ✔️ | ✔️ | ✔️ |
+| View and get insights from sessions | ✔️ | ✔️ | ✔️ |
+| View similar existing bugs | ✔️ | ✔️ | ✔️ |
+| Test app on devices using cloud providers such as Perfecto | ✔️ | ✔️ | ❌ |
+| Manage feedback requests | ✔️ | ✔️ | ✔️ |
 
 
-For more information, see [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web).
+For for information, see the extension listing on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web).
 
 <a name="installext"></a>
 
 ## Install the extension
 
-1. Check the list of [supported browsers](#browser-support) and decide which you want to use.
-
-2. Download and install your chosen browser, if you haven't already, and then open it.
-
-3. Go to [Visual Studio Marketplace > Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web)
-   and select **Install**.
+1. Review the [supported browsers](#browser-support) and pick one.
+2. Install the browser if you don't already have it, then open the browser.
+3. Go to [Visual Studio Marketplace > Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) and select **Install**.
 
    ![Screenshot showing Visual Studio Marketplace, Test & Feedback extension, Install.](media/perform-exploratory-tests/get-started-01.png)
 
-4. Follow the instructions shown to install the Test & Feedback extension in your browser.
-
-   You only need to install the extension or add-on once. Afterwards your browser updates the extension automatically.
+4. Follow the marketplace instructions to add the extension to your browser. You only need to install it once; the browser updates the extension automatically.
 
 <a name="selectmode"></a>
 
-##  Select an exploratory testing mode
+## Choose an exploratory testing mode
 
-1. Open the extension you installed in your browser by choosing the
-   ![Test and Feedback](media/shared/exp-test-icon.png) icon.
+1. Open the extension by selecting the Test & Feedback icon (![Test & Feedback](media/shared/exp-test-icon.png)) in your browser toolbar.
 
    ![Screenshot showing opening the extension.](media/perform-exploratory-tests/open-extension.png)
- 
-1. Decide if you want to use the extension in Connected or Standalone mode.
+
+2. Choose Connected or Standalone mode.
 
    ![Screenshot showing choosing connected mode.](media/perform-exploratory-tests/getstarted-06.png)
 
-   **[Connected mode](connected-mode-exploratory-testing.md)**  
-   Available to all users of Azure DevOps:
+   **Connected mode** (use when you want integrated tracking and traceability)
+   - Sign in to Azure DevOps and connect to the project or team that needs feedback.
+   - Users with **Basic** access get full capture and create capabilities to submit bugs, tasks, and test cases.
+   - Users with **Stakeholder** access can capture feedback and create most work items (test cases are restricted).
+   - Connected mode provides end-to-end traceability, session insights, and streamlined triage.
 
-   - Users with at least **Basic** access: Full capture and create capabilities
-     to submit bugs, tasks, and test cases. Includes collaboration capabilities, such as end-to-end traceability, rich insights across completed exploratory sessions, simplified tracking, and triage for bugs and tasks, and more.
-   - Users with **Stakeholder** access: Full capture and create capabilities, except for test cases, to submit feedback and respond to feedback requests from the team. 
-   - Feedback experience is available only in Azure DevOps.<p />
- 
-   **[Standalone mode](standalone-mode-exploratory-testing.md)**  
-   Available to everyone. No connection to Azure DevOps is required. Take notes and screenshots with inline annotations and capture issues. Create bugs and export a session report to share findings.
- 
-If you have any issues connecting to Azure DevOps, see [Troubleshoot connection](../user-guide/troubleshoot-connection.md).
+   **Standalone mode** (use when you don't need Azure DevOps integration)
+   - Capture screenshots, notes, and recordings locally.
+   - Create bugs and export a session report for sharing without signing in.
+
+If you have trouble connecting, see [Troubleshoot connection](../user-guide/troubleshoot-connection.md).
 
 ## Next steps
 
@@ -103,4 +96,4 @@ If you have any issues connecting to Azure DevOps, see [Troubleshoot connection]
 
 ## Related content
 
-*  [FAQs for manual testing](reference-qa.yml#tandfext)
+* [FAQs for manual testing](reference-qa.yml#tandfext)

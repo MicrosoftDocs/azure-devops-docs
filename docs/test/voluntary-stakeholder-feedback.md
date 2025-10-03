@@ -78,8 +78,8 @@ Use the Test & Feedback extension to provide voluntary feedback, even if you don
 
 ## Related content
 
-* [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md#request)
-* [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
-* [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md#track)
+* [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md)
+* [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md)
+* [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)

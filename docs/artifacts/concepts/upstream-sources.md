@@ -152,4 +152,4 @@ If a feed has a failing upstream source, metadata for packages using the same pr
 
 - [Use upstream sources in a public feed](../how-to/public-feeds-upstream-sources.md)
 
-- [Manage permissions](../feeds/feed-permissions.md)
+- [Restore packages from upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)

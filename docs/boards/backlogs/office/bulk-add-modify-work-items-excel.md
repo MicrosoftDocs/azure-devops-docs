@@ -317,7 +317,7 @@ Excel uses the data in the **Title** columns to determine the pattern of links b
 - Multiple **Title** columns contain data within a row. Enter text in only one of the **Title \<Number>** columns per row.
 - The list was sorted. Avoid sorting a tree list, as it can change the hierarchical link relationships. If you do sort a tree list, recover the original list by immediately refreshing.
 
-To resolve an error, see [FAQ - Resolve invalid links in tree lists](./faqs.yml#how-do-i-resolve-invalid-links-tree-list-in-excel).
+To resolve an error, see the [FAQs](./faqs.yml#how-do-i-resolve-invalid-links-in-a-tree-list).
 
 Additionally, a parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, define distinct work item tasks.
 
@@ -644,7 +644,7 @@ The following articles provide troubleshooting guidance for resolve publishing e
 
 - [Resolve data validation errors](tfs-office-integration-issues.md#resolve-data-validation-errors-that-occur-when-you-publish-from-excel): A data validation error occurs when a field value violates the rules for that field and work item type.
 
-- [Resolve invalid links in a tree hierarchy](faqs.yml#how-do-i-resolve-invalid-links-tree-list-in-excel): An invalid link happens when a work item in a hierarchy or tree list is moved or sorted, which causes the dependencies between work items to break. To resolve the error, review the error message and reposition the work items to restore the correct structure.
+- [Resolve invalid links in a tree hierarchy](faqs.yml#how-do-i-resolve-invalid-links-in-a-tree-list): An invalid link happens when a work item in a hierarchy or tree list is moved or sorted, which causes the dependencies between work items to break. To resolve the error, review the error message and reposition the work items to restore the correct structure.
 
 - [Address Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104): If you receive error TF208104, your changes to the fields are published, but changes to the link hierarchy aren't published. This error occurs because another process locks at least one of the link relationships for the work item, such as Project Server integration.
 
