@@ -18,7 +18,7 @@ ms.date: 10/03/2025
 
 Extensions add capabilities to Azure DevOps by declaring contribution types and contribution instances. A contribution type defines a contract (the properties and behavior) that contributions of that type must implement. A contribution is a concrete instance of a contribution type (for example, a hub or a build task).
 
-> [!INCLUDE [extension-samples-tip](../includes/extension-samples-tip.md)]
+[!INCLUDE [extension-samples-tip](../includes/extension-samples-tip.md)]
 
 For more information, see:
 - [Extensibility points](../reference/targets/overview.md)
