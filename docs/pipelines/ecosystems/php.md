@@ -5,24 +5,24 @@ ms.topic: conceptual
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.author: jukullam
 ms.custom: freshness-fy22q2
-ms.date: 10/02/2025
+ms.date: 10/03/2025
 monikerRange: "<=azure-devops"
-#customer intent: As a PHP developer, I want to learn how to create pipelines to build and deploy my PHP apps, so I can use continuous integration and deployment to automatically update my web apps.
+#customer intent: As a PHP developer, I want to learn how to create pipelines to build and deploy PHP apps so I can use continuous integration and deployment to automatically update my web apps.
 ---
 
 # Build, test, and deploy PHP apps
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This article shows how to create an Azure Pipelines PHP pipeline that builds a sample PHP web app and deploys it to Azure App Service. App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can use continuous integration and continuous delivery (CI/CD) in Azure Pipelines to automatically build, test, and deploy your PHP apps.
+This article shows how to create a pipeline in Azure Pipelines that builds a PHP web app and deploys it to Azure App Service. App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. The pipeline uses continuous integration from GitHub source and continuous delivery to App Service to automatically build, test, and deploy PHP apps.
 
 Azure Pipelines builds your PHP projects without you having to set up any infrastructure. PHP is preinstalled on [Microsoft-hosted agents](../agents/hosted.md), along with many common libraries for PHP versions. You can use Linux, macOS, or Windows agents to run your builds. For more information about which PHP versions are preinstalled, see [Software](../agents/hosted.md#software).
 
 ## Prerequisites
 
-- Your own fork of the sample GitHub PHP project at [https://github.com/Azure-Samples/basic-php-composer](https://github.com/Azure-Samples/basic-php-composer).
+- Your own fork of the sample GitHub PHP project at [https://github.com/Azure-Samples/php-docs-hello-world](https://github.com/Azure-Samples/php-docs-hello-world).
 
-- A PHP web app created for the project in Azure App Service. To quickly create a sample PHP web app, see [Create a PHP web app in Azure App Service](/azure/app-service/quickstart-php). Alternatively, you can use your own PHP GitHub project and web app.
+- A PHP web app created for the project in Azure App Service. To quickly create a PHP web app, see [Create a PHP web app in Azure App Service](/azure/app-service/quickstart-php). You can also use your own PHP GitHub project and web app.
 
 You also need the following prerequisites:
 
@@ -31,32 +31,9 @@ You also need the following prerequisites:
 >[!NOTE]
 >[GitHub](https://github.com) might require authentication, authorization, or sign in to GitHub organizations or specific repositories. Follow instructions to complete the required processes. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
-## Create the pipeline
-
-To create and run the example pipeline, take the following steps:
-
-1. In your Azure DevOps project, select **Pipelines** from the left navigation menu, and then select **New pipeline** or **Create pipeline** if this pipeline is the first in the project.
-1. On the **Where is your code** page, select **GitHub**.
-1. On the **Select a repository** page, select your forked **basic-php-composer** repository.
-1. Azure Pipelines recognizes the code as a PHP app, and suggests several pipeline [templates](../process/templates.md) on the **Configure your pipeline** page. For this example, select **PHP as Linux Web App on Azure**.
-1. On the next screen, select your Azure subscription and select **Continue**. This action creates a service connection to your Azure resources.
-1. On the next screen, select your Azure web app and select **Validate and configure**. Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAML pipeline editor.
-1. On the **Review your pipeline YAML** screen, review the code for your pipeline. When you're ready, select **Save and run**.
-
-   ![Screenshot that shows the Save and run button in a new YAML pipeline.](media/save-and-run-button-new-yaml-pipeline.png)
-
-1. On the next screen, select **Save and run** again to commit the new *azure-pipelines.yml* file to your repository and kick off a CI/CD build.
-
-   >[!NOTE]
-   >The first time the pipeline runs, it asks for permission to access the environment it creates. Select **Permit** to grant permission for the pipeline to access the environment.
-
-1. To watch your pipeline in action, select the job on the run **Summary** page.
-
-After the run completes, you can edit the pipeline by selecting the **More actions** icon at upper right on the run **Summary** page and then selecting **Edit pipeline**. You can also select **Edit** at upper right on the pipeline's page. Each edit that you commit to the repository kicks off a new CI/CD pipeline run.
-
 ## Example pipeline
 
-The following example *azure-pipelines.yml* file has two stages, `Build` and `Deploy`. The `Build` stage installs PHP 8.3 along with Composer, and then runs tasks to archive your project files and publish a ZIP build artifact to a package named `drop`.
+The following example *azure-pipelines.yml* file based on the **PHP as Linux Web App on Azure** pipeline [template](../process/templates.md) has two stages, `Build` and `Deploy`. The `Build` stage installs PHP 8.2, and then runs tasks to archive your project files and publish a ZIP build artifact to a package named `drop`.
 
 The `Deploy` stage runs if the `Build` stage succeeds, and deploys the `drop` package to App Service by using the [Azure Web App](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task. When you use the **PHP as Linux Web App on Azure** template to create your pipeline, the generated pipeline sets and uses variables and other values based on your configuration settings.
 
@@ -65,7 +42,7 @@ trigger:
 - main
 
 variables:
-  # Azure Resource Manager connection created during pipeline creation
+  # Azure Resource Manager service connection
   azureSubscription: 'service-connection-based-on-subscription-id'
   # Web app name
   webAppName: 'my-php-web-app'
@@ -80,7 +57,7 @@ stages:
 - stage: Build
   displayName: Build stage
   variables:
-    phpVersion: '8.3'
+    phpVersion: '8.2'
   jobs:
   - job: BuildJob
     pool:
@@ -134,20 +111,43 @@ stages:
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
 ```
 
-## Customize the YAML pipeline
+## Create the YAML pipeline
 
-You can customize the pipeline in several ways.
+To create and run the example pipeline, take the following steps:
+
+1. In your Azure DevOps project, select **Pipelines** from the left navigation menu, and then select **New pipeline** or **Create pipeline** if this pipeline is the first in the project.
+1. On the **Where is your code** page, select **GitHub**.
+1. On the **Select a repository** page, select your forked **basic-php-composer** repository.
+1. Azure Pipelines recognizes the code as a PHP app, and suggests several pipeline [templates](../process/templates.md) on the **Configure your pipeline** page. For this example, select **PHP as Linux Web App on Azure**.
+1. On the next screen, select your Azure subscription and select **Continue**. This action creates a service connection to your Azure resources.
+1. On the next screen, select your Azure web app and select **Validate and configure**. Azure Pipelines creates an *azure-pipelines.yml* file and displays it in the YAML pipeline editor.
+1. On the **Review your pipeline YAML** screen, review the code for your pipeline. When you're ready, select **Save and run**.
+
+   ![Screenshot that shows the Save and run button in a new YAML pipeline.](media/save-and-run-button-new-yaml-pipeline.png)
+
+1. On the next screen, select **Save and run** again to commit the new *azure-pipelines.yml* file to your repository and start a CI/CD build.
+
+   >[!NOTE]
+   >The first time the pipeline runs, it asks for permission to access the environment it creates. Select **Permit** to grant permission for the pipeline to access the environment.
+
+1. To watch your pipeline in action, select the job on the run **Summary** page. When the run completes, select the **App Service Application URL** link in the **Deploy Azure Web App** step to see the deployed web app.
+
+## Customize the pipeline
+
+You can edit the pipeline by selecting the **More actions** icon at upper right on the run **Summary** page and then selecting **Edit pipeline**, or by selecting **Edit** at upper right on the pipeline's page. Each edit that you commit to the repository kicks off a new CI/CD pipeline run.
+
+You can customize the pipeline in several ways:
 
 ### Use a specific PHP version
 
 Multiple PHP versions are installed on Microsoft-hosted Ubuntu agents. A symlink at */usr/bin/php* points to the current PHP version, so when you run `php`, the set version executes.
 
-To use a PHP version other than the default, you can point the symlink to the desired version using the `update-alternatives` command. In your YAML pipeline, change the value of the `phpVersion` variable to the version you want, and add the following snippet:
+To use a PHP version other than the default, you can point the symlink to the desired version using the `update-alternatives` command. In your YAML pipeline, change the value of the `phpVersion` variable to the version you want, and use the following snippet:
 
 ```yaml
 
 variables:
-  phpVersion: 8.2
+  phpVersion: 8.3
 
 steps:
 - script: |
@@ -169,7 +169,7 @@ To use Composer to install dependencies, include the following snippet in your *
   displayName: 'composer install'
 ```
 
-If your *composer.json* file is in a subfolder instead of the root directory, you can use the `--working-dir` argument to specify what directory to use. For example, if *composer.json* is in the subfolder */pkgs*, use `composer install --no-interaction --working-dir=pkgs`. You can also specify an absolute path using the built-in system variable: `--working-dir='$(System.DefaultWorkingDirectory)/pkgs'`.
+If your *composer.json* file isn't in the root directory, you can use the `--working-dir` argument to specify what directory to use. For example, if *composer.json* is in the subfolder */pkgs*, use `composer install --no-interaction --working-dir=pkgs`. You can also specify an absolute path using the built-in system variable: `--working-dir='$(System.DefaultWorkingDirectory)/pkgs'`.
 
 ### Test with PHPUnit
 
