@@ -8,14 +8,16 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 12/27/2022
+ms.date: 10/03/2025
 ---
 
 # Create a custom consumer for service hooks
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With service hooks, you can notify third-party systems about events that occur in your project. You can use a custom consumer to send an HTTP message to the endpoint that’s defined in the extension's manifest.
+Use service hooks to notify non-Microsoft systems about events that occur in your project. A custom consumer sends an HTTP message to the endpoint defined in your extension's manifest.
+
+[!INCLUDE [extension-samples-tip](../includes/extension-samples-tip.md)]
 
 This article walks through developing an extension that implements a **sample consumer service**, which includes the following events and actions.
 
@@ -24,12 +26,12 @@ This article walks through developing an extension that implements a **sample co
   - Pull request created
   - Pull request updated
 - Supported actions to take when events occur:
-  - Do action (Send HTTP message)
+  - Send an HTTP message
 
 > [!NOTE]
-> In this article, we refer to the home directory for your project as "home".
+> This article refers to the home directory for your project as *home*.
 
-:::image type="content" source="media/consumer-service.png" alt-text="Sample consumer service":::
+:::image type="content" source="media/consumer-service.png" alt-text="Diagram that shows a sample consumer service sending HTTP messages for code push and pull request events.":::
 
 For more information, see the [Extension example GitHub repo](https://github.com/microsoft/azure-devops-extension-sample).
 For a list of all supported events you can use as triggers for your custom consumer extension, see [List of event types](../../service-hooks/events.md).
@@ -38,17 +40,17 @@ For a list of all supported events you can use as triggers for your custom consu
 
 ## How service hooks work
 
-Service hook **publishers** define a set of *events*. **Subscriptions** listen and wait for the *events* and define **actions** for when the event is triggered.
+Service hook **publishers** define a set of *events*. **Subscriptions** listen for the *events* and define **actions** that run when an event triggers.
 
-:::image type="content" source="media/service-hooks.png" alt-text="Service hooks diagram":::
+:::image type="content" source="media/service-hooks.png" alt-text="Diagram that shows the service hook flow: publishers emit events, subscriptions match events, and actions run when an event matches a subscription.":::
 
-This is a general description of how all our service hook implementations work. For our case, we specify our consumer defined by an extension, as well as the specified action for when an event occurs.
+This diagram shows the general service hook flow: publishers emit events, subscriptions match events, and actions run when a match occurs. In this article's example, an extension implements the consumer. When a supported event occurs, the consumer's configured action sends an HTTP message to the endpoint you specify in the extension manifest.
 
 ## Create the extension
 
 1. [See how to create your extension from scratch](../get-started/node.md).
 
-2. Add the specific contribution for custom consumer implementation to your basic [manifest file](./manifest.md). See the following example of how your manifest should look after you add the contribution.
+1. Add the specific contribution for custom consumer implementation to your basic [manifest file](./manifest.md). See the following example of how your manifest should look after you add the contribution.
 
 ```json
 {
@@ -130,11 +132,10 @@ This is a general description of how all our service hook implementations work. 
 > [!NOTE]
 > Remember to update the `publisher` property.
 
-
 For each contribution in your extension, the manifest defines the following items.
-- Type of contribution - consumer service (ms.vss-servicehooks.consumer) in this case
-- Contribution target - consumer services (ms.vss-servicehooks.consumers) in this case
-- Properties that are specific to each type of contribution
+- Type of contribution - consumer service (ms.vss-servicehooks.consumer) in this case.
+- Contribution target - consumer services (ms.vss-servicehooks.consumers) in this case.
+- Properties that are specific to each type of contribution.
 
 Consumers have the following properties.
 
@@ -155,7 +156,7 @@ Actions for your consumer have the following properties:
 | name                | Name of the action.                                                                                                                                                               |
 | description         | Detailed description of the action.                                                                                                                                              |
 | supportedEventTypes | Array of trigger types for which this action can be used. For more information, see [List of event types](../../service-hooks/events.md). |
-| publishEvent.url    | URL where HTTP message gets sent to. It can be templated by values provided by inputDescriptors. Their actual values get defined by the user when the subscription gets created.    |
+| publishEvent.url    | The endpoint URL that receives the HTTP message. You can template this value with tokens from the `inputDescriptors`; users provide the actual values when they create the subscription. |
 
 3. Deploy your extension to your Azure DevOps organization and test it.
 
@@ -169,6 +170,6 @@ Actions for your consumer have the following properties:
 - [Service hook consumers](../../service-hooks/consumers.md)
 - [Available services for service hooks](../../service-hooks/overview.md#available-services)
 - [Create a service hook subscription programmatically](../../service-hooks/create-subscription.md)
-- [Test and debug extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
-- [Extension example GitHub repo](https://github.com/microsoft/azure-devops-extension-sample)
+- [Test and debug extensions in the browser](/previous-versions/azure/devops/extend/test/debug-in-browser)
+- [Extension example GitHub repository](https://github.com/microsoft/azure-devops-extension-sample)
 - [List of event types](../../service-hooks/events.md)
