@@ -8,14 +8,16 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 12/27/2022
+ms.date: 10/03/2025
 ---
 
 # Create a custom consumer for service hooks
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With service hooks, you can notify third-party systems about events that occur in your project. You can use a custom consumer to send an HTTP message to the endpoint that’s defined in the extension's manifest.
+Use service hooks to notify third-party systems about events that occur in your project. A custom consumer sends an HTTP message to the endpoint defined in your extension's manifest.
+
+[!INCLUDE [extension-samples-tip](../includes/extension-samples-tip.md)]
 
 This article walks through developing an extension that implements a **sample consumer service**, which includes the following events and actions.
 
@@ -129,7 +131,6 @@ This is a general description of how all our service hook implementations work. 
 
 > [!NOTE]
 > Remember to update the `publisher` property.
-
 
 For each contribution in your extension, the manifest defines the following items.
 - Type of contribution - consumer service (ms.vss-servicehooks.consumer) in this case

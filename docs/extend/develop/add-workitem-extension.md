@@ -2,19 +2,22 @@
 title: Extend the Work Item Form | Azure DevOps Extensions
 description: Learn how to extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
+ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/11/2025
+ms.date: 10/03/2025
 ---
 
 # Extend the work item form
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how to use extensions to customize how the work item form gets presented to users. You can extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps.
+This article explains how to use extensions to customize the work item form. You can add an action, an observer, a group, or a page to the work item form in Azure DevOps.
+
+[!INCLUDE [extension-samples-tip](../includes/extension-samples-tip.md)]
 
 * [Add a group to the main page](#addagroup)
 * [Add a page (tab)](#addapage) 
@@ -127,7 +130,7 @@ SDK.register(SDK.getContributionId(), function () {
 
 A new page is rendered as a tab on the work item form. New pages appear next to the **Details** tab.
 
-:::image type="content" source="media/add-workitem-extension-page.png" alt-text="Screenshot that shows the new page as a tab on the work item form.":::
+:::image type="content" source="media/add-workitem-extension-page.png" alt-text="Screenshot that shows the new page as a tab on the work item form.">
 
 To add a page to the work item form, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-page` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -171,7 +174,7 @@ In Azure DevOps Services, by default, the group extensions appear in the end of 
 
 ## Add menu action
 
-:::image type="content" source="media/add-workitem-extension-toolbar.png" alt-text="Screenshot that shows how to add an item to the work item toolbar.":::
+:::image type="content" source="media/add-workitem-extension-toolbar.png" alt-text="Screenshot that shows how to add an item to the work item toolbar.">
 
 To add an item to the work item toolbar, add this contribution to your extension manifest. Select the vertical ellipsis in the work item form to see the dropdown menu.
 
