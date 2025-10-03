@@ -150,7 +150,6 @@ Multiple PHP versions are installed on Microsoft-hosted Ubuntu agents. A symlink
 To use a PHP version other than the default, you can point the symlink to the desired version using the `update-alternatives` command. In your YAML pipeline, change the value of the `phpVersion` variable to the version you want, and use the following snippet:
 
 ```yaml
-
 variables:
   phpVersion: 8.3
 
