@@ -133,6 +133,9 @@ jobs:
      echo $(setOutput.myOutputJobVar)
 ```
 
+> [!NOTE]
+> If the variable comes from a deployment job (`MyDeploymentJob`) then you should explicitly use the job name in outputs (e.g. `$[ dependencies.MyDeploymentJob.outputs['MyDeploymentJob.passOutput.myOutputVar'] ] `.
+
 # [PowerShell](#tab/powershell)
 
 This script sets the same-job output variable `myJobVar` without specifying `isOutput` and sets `myOutputJobVar` with `isOutput=true`. 
@@ -164,6 +167,9 @@ jobs:
   - powershell: |
      Write-Host $(setOutput.myOutputJobVar)
 ```
+
+> [!NOTE]
+> If the variable comes from a deployment job (`MyDeploymentJob`) then you should explicitly use the job name in outputs (e.g. `$[ dependencies.MyDeploymentJob.outputs['MyDeploymentJob.passOutput.myOutputVar'] ] `.
 
 ---
 ## Set an output variable for use in future jobs
