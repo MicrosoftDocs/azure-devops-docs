@@ -59,7 +59,7 @@ Also, for Java Spring Boot and Spring Cloud based apps:
 
 In your Azure Pipelines project, create an environment and add your Linux VMs as environment resources. Follow the instructions at [Create an environment and add a VM](../process/environments-virtual-machines.md?tabs=linux#create-an-environment-and-add-a-vm).
 
-Connect to each VM and run the copied agent registration script to register the VM in the environment. You can also assign tags to the individual VM as part of installing the Azure Pipelines agent.
+Connect to each VM and run the copied agent registration script to register the VM in the environment. You can also assign tags to the individual VMs as part of installing the Azure Pipelines agent.
 
 ## Create and run the build pipeline
 
@@ -70,11 +70,11 @@ Create a continuous integration (CI) and continuous deployment (CD) pipeline tha
 1. In your Azure DevOps project, select **Pipelines** > **New pipeline** or **Create Pipeline**, and then select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select your forked sample repository.
 1. On the **Configure your pipeline** screen, select **Starter pipeline**.
-1. On the **Review your pipeline YAML** screen, replace the generated starter code with the following build code, depending on your runtime.
+1. On the **Review your pipeline YAML** screen, replace the generated starter code with the following code, depending on your runtime.
 
 ### Add the build job
 
-The `Build` job runs tasks to build and test your project, and uploads the build output to a `drop` location. This job runs on build agents specified in the agent `pool`, not on your Linux environment resources.
+The `Build` job runs tasks to build and test your project, and uploads the build output to a `drop` location. This job runs on the build agents specified in the agent `pool`, not on your Linux environment resources.
 
 #### [JavaScript](#tab/javascript)
 
@@ -155,7 +155,7 @@ When the pipeline finishes, view the job **Summary** page to verify that the bui
 
 ## Add the deployment job
 
-Add the `deployment` job to your pipeline. The [deployment job](../process/deployment-jobs.md) starts when the `Build` job completes successfully, and runs on the Linux resources you registered in the environment.
+Add the `deployment` job to your pipeline. The [deployment job](../process/deployment-jobs.md) starts when the `Build` job completes successfully, and deploys to the Linux resources you registered in the environment.
 
 1. Select the **More actions** icon at upper right on the **Summary** page, select **Edit pipeline**, and add the following code to the end of your pipeline. Replace `<environment-name>` with the name of the environment you created.
 
@@ -172,7 +172,7 @@ Add the `deployment` job to your pipeline. The [deployment job](../process/deplo
        tags: <VMtag> # VMs to deploy to
    ```
 
-1. Add a `strategy` to the `deployment` job. The [runOnce deployment strategy](../process/deployment-jobs.md#runonce-deployment-strategy) is the simplest strategy. The `runOnce` strategy executes the `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks one time, and then executes either `on: success` or `on: failure`.
+1. Add a `strategy` to the `deployment` job. The [runOnce deployment strategy](../process/deployment-jobs.md#runonce-deployment-strategy) is the simplest strategy. The `runOnce` strategy executes `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks one time, and then executes either `on: success` or `on: failure`.
 
    - 
 
@@ -191,96 +191,96 @@ Add the `deployment` job to your pipeline. The [deployment job](../process/deplo
 
 ### Rolling deployment strategy
 
-You can use a `rolling` instead of `runOnce` deployment strategy. A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) updates the application on a fixed set of up to five target VMs in each iteration. In a `runOnce` deployment, all eligible VMs get the deployment at the same time, but a `rolling` deployment may run on multiple agents in parallel. VMs get the deployment one-by-one or in batches defined by the `maxParallel` setting. 
+You can use a `rolling` instead of `runOnce` deployment strategy. A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) updates the application on a fixed set of up to five target VMs in each iteration. In a `runOnce` deployment, all eligible VMs get the deployment at the same time, but a `rolling` deployment may run on multiple agents in parallel. The VMs get the deployment in batches defined by the `maxParallel` setting. 
 
 The `maxParallel` parameter controls how many VMs to deploy to in parallel by setting the number or percentage of VMs that must remain available, excluding the VMs that are being deployed to. This setting ensures that the app is running and is capable of handling requests on these VMs while the deployment occurs on the rest of the VMs, reducing overall downtime. This parameter also determines success and failure conditions during deployment. 
 
 The rolling deployment strategy creates lifecycle hook jobs that run on each target VM to manage parallelism, health checks, and traffic routing. The `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` execute once per batch size. Then, either `on: success` or `on: failure` executes.
 
-In the `rolling` strategy, the `deploy`, `routeTraffic`, `postRouteTraffic`, and `on` steps run on the environment resource VMs, but the `preDeploy` steps run on the pipeline agent VMs. You can use the `preDeploy` step to prepare artifacts or do orchestration.
+In the `rolling` strategy, the `deploy`, `routeTraffic`, `postRouteTraffic`, and `on` steps run on the environment resource VMs. The `preDeploy` steps run on the pipeline agent VMs. You can use the `preDeploy` step to prepare artifacts or do orchestration.
 
-The `rolling` strategy is easier to implement for Java apps because they're self-contained. JVM is often preinstalled on VM agents, and you don't need to worry about app dependencies, permissions, or package management, but just run the JAR file with `java -jar`.
+The `rolling` strategy is easier to implement for Java apps because they're self-contained. The Java Virtual Machine (JVM) is often preinstalled on VM agents, and you don't need to worry about app dependencies, permissions, or package management, but just run the JAR file with `java -jar`.
 
-For Node.js, rolling deployment is possible, but requires preprovisioned VMs with all required apps, dependencies, and permissions set up. For example, Node.js apps require Node, possibly npm dependencies, and often a service manager like systemd or pm2 to be present on each VM. The pipeline script for deployment must be fully automated, noninteractive, and able to restart and manage the app's service.
+For Node.js, rolling deployment is possible, but requires preprovisioned VMs with all required apps, dependencies, and permissions set up. For example, Node.js apps require Node, possibly npm dependencies, and often a service manager like systemd or pm2 to be present on each VM. The pipeline deployment script must be fully automated, noninteractive, and able to restart and manage the app's service.
 
-The following code shows a complete Java pipeline that uses the `rolling` deployment strategy.
+The following code shows a complete pipeline for the Java app that uses the `rolling` deployment strategy.
 
-     ```yaml
-     trigger:
-     - main
-     
-     pool:
-       vmImage: ubuntu-latest
-     
-     jobs:  
-     - job: Build
-       displayName: Build Maven Project
-       steps:
-       - task: Maven@4
-         displayName: 'Maven Package'
-         inputs:
-           mavenPomFile: 'pom.xml'
-       - task: CopyFiles@2
-         displayName: 'Copy Files to artifact staging directory'
-         inputs:
-           SourceFolder: '$(System.DefaultWorkingDirectory)'
-           Contents: '**/target/*.?(war|jar)'
-           TargetFolder: $(Build.ArtifactStagingDirectory)
-       - upload: $(Build.ArtifactStagingDirectory)
-         artifact: drop
-     - deployment: VMDeploy
-       displayName: web
-       dependsOn: Build
-       condition: succeeded()
-       environment:
-         name: <environment name>
-         resourceType: VirtualMachine
-       strategy:
-           rolling:
-             maxParallel: 2  #for percentages, mention as x%
-             preDeploy:
-               steps:
-               - download: current
-                 artifact: drop
-               - script: echo initialize, cleanup, backup, install certs
-             deploy:
-               steps:
-               - task: Bash@3
-                 displayName: Start Java app, check health, and stop
-                 inputs:
-                   targetType: 'inline'
-                   script: |
-                     JAR=$(ls $(Pipeline.Workspace)/drop/target/*.jar | head -n 1)
-                     java -jar "$JAR" --server.port=8081 &
-                     PID=$!
-                     # Health check loop
-                     for i in {1..10}; do
-                       if curl -sf http://localhost:8081/actuator/health; then
-                         echo "App is up!"
-                         break
-                       else
-                         echo "Waiting for app to be healthy... ($i/10)"
-                         sleep 3
-                       fi
-                     done
-                     # Stop the app manually
-                     kill $PID 2>/dev/null || echo "Process already exited" 
-             routeTraffic:
-               steps:
-               - script: echo routing traffic
-             postRouteTraffic:
-               steps:
-               - script: echo health check post-route traffic
-             on:
-               failure:
-                 steps:
-                 - script: echo Restore from backup! This is on failure
-               success:
-                 steps:
-                 - script: echo Notify! This is on success
-     ```
+```yaml
+trigger:
+- main
 
-For more information about the rolling deployment strategy, see [jobs.deployment.strategy.rolling](/azure/devops/pipelines/yaml-schema/jobs-deployment-strategy-rolling) schema definition.
+pool:
+  vmImage: ubuntu-latest
+
+jobs:  
+- job: Build
+  displayName: Build Maven Project
+  steps:
+  - task: Maven@4
+    displayName: 'Maven Package'
+    inputs:
+      mavenPomFile: 'pom.xml'
+  - task: CopyFiles@2
+    displayName: 'Copy Files to artifact staging directory'
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)'
+      Contents: '**/target/*.?(war|jar)'
+      TargetFolder: $(Build.ArtifactStagingDirectory)
+  - upload: $(Build.ArtifactStagingDirectory)
+    artifact: drop
+- deployment: VMDeploy
+  displayName: web
+  dependsOn: Build
+  condition: succeeded()
+  environment:
+    name: <environment name>
+    resourceType: VirtualMachine
+  strategy:
+      rolling:
+        maxParallel: 2  #for percentages, mention as x%
+        preDeploy:
+          steps:
+          - download: current
+            artifact: drop
+          - script: echo initialize, cleanup, backup, install certs
+        deploy:
+          steps:
+          - task: Bash@3
+            displayName: Start Java app, check health, and stop
+            inputs:
+              targetType: 'inline'
+              script: |
+                JAR=$(ls $(Pipeline.Workspace)/drop/target/*.jar | head -n 1)
+                java -jar "$JAR" --server.port=8081 &
+                PID=$!
+                # Health check loop
+                for i in {1..10}; do
+                  if curl -sf http://localhost:8081/actuator/health; then
+                    echo "App is up!"
+                    break
+                  else
+                    echo "Waiting for app to be healthy... ($i/10)"
+                    sleep 3
+                  fi
+                done
+                # Stop the app manually
+                kill $PID 2>/dev/null || echo "Process already exited" 
+        routeTraffic:
+          steps:
+          - script: echo routing traffic
+        postRouteTraffic:
+          steps:
+          - script: echo health check post-route traffic
+        on:
+          failure:
+            steps:
+            - script: echo Restore from backup! This is on failure
+          success:
+            steps:
+            - script: echo Notify! This is on success
+```
+
+For more information about the rolling deployment strategy, see the [jobs.deployment.strategy.rolling](/azure/devops/pipelines/yaml-schema/jobs-deployment-strategy-rolling) schema definition.
 
 ## Access pipeline traceability in environment
 
