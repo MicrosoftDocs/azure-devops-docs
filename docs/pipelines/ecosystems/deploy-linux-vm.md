@@ -4,7 +4,7 @@ description: Use Azure Pipelines to deploy a Java or JavaScript web application 
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: freshness-fy22q2, linux-related-content
-ms.date: 09/19/2025
+ms.date: 10/03/2025
 monikerRange: 'azure-devops'
 #customer intent: As an Azure Pipelines user, I want to set up environments with Linux VMs so I can easily deploy my Java or JavaScript web apps to prebuilt targets with complete traceability.
 ---
@@ -13,7 +13,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-gt-eq-2020.md)]
 
-In this quickstart, you learn how to set up an Azure DevOps pipeline for deployment to multiple Linux [virtual machine (VM) resources](../process/environments-virtual-machines.md) in an [environment](../process/environments.md). These instructions build and deploy either a JavaScript or Java app, but you can adapt them for any app that publishes a web deployment package.
+You can add virtual machines as resources within [Azure Pipelines environments](../process/environments.md) and target them for deployments. For a continuous integration (CI) workflow, the environment's deployment history provides traceability for each VM back to the commit.
+
+This article shows you how to set up an Azure DevOps pipeline for deployments to multiple Linux [virtual machine (VM) resources](../process/environments-virtual-machines.md) in an environment. These instructions build and deploy either a JavaScript or Java app, but you can adapt them for any app that publishes a web deployment package.
+
+For more information about environments and resources targeted by a deployment job, see the [jobs.deployment.environment](/azure/devops/pipelines/yaml-schema/jobs-deployment-environment) schema definition. For more information about deployment jobs, see the [jobs.deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment) definition.
 
 ## Prerequisites
 
@@ -53,20 +57,24 @@ Also, for Java Spring Boot and Spring Cloud based apps:
 
 ## Create an environment and add Linux VMs
 
-You can [add VMs as resources within environments](../process/environments-virtual-machines.md) and target them for deployments. The environment's deployment history then provides traceability from each machine to the commit.
+In your Azure Pipelines project, create an environment and add your Linux VMs as environment resources. Follow the instructions at [Create an environment and add a VM](../process/environments-virtual-machines.md?tabs=linux#create-an-environment-and-add-a-vm).
 
-In your Azure Pipelines project, create an environment and add the VMs by following the procedure at [Create an environment and add a VM](../process/environments-virtual-machines.md?tabs=linux#create-an-environment-and-add-a-vm). Install the copied script on each VM you want to add to the environment.
+Connect to each VM and run the copied agent registration script to register the VM in the environment. You can also assign tags to the individual VM as part of installing the Azure Pipelines agent.
 
-## Define and run a CI build pipeline
+## Create and run the build pipeline
 
-Create a continuous integration (CI) build pipeline that publishes your web app.
+Create a continuous integration (CI) and continuous deployment (CD) pipeline that builds and deploys your app whenever there's a commit to the `main` branch of your code repo.
+
+### Create the YAML pipeline
 
 1. In your Azure DevOps project, select **Pipelines** > **New pipeline** or **Create Pipeline**, and then select **GitHub** as the location of your source code.
 1. On the **Select a repository** screen, select your forked sample repository.
 1. On the **Configure your pipeline** screen, select **Starter pipeline**.
-1. On the **Review your pipeline YAML** screen, replace the generated starter *azure-pipelines.yml* with the following code, based on your runtime.
+1. On the **Review your pipeline YAML** screen, replace the generated starter code with the following build code, depending on your runtime.
 
-### Replace the code
+### Add the build job
+
+The `Build` job runs tasks to build and test your project, and uploads the build output to a `drop` location. This job runs on build agents specified in the agent `pool`, not on your Linux environment resources.
 
 #### [JavaScript](#tab/javascript)
 
@@ -139,19 +147,19 @@ For more information, review the steps for creating a build in [Build your Java 
 
 ---
 
-### Run your pipeline
+### Run the pipeline
 
-Select **Save and run**, and then select **Save and run** again.
+To save your *azure-pipelines.yml* file to your repo and kick off the CI/CD pipeline, select **Save and run**, and then select **Save and run** again.
 
-After your pipeline runs, view the build **Summary** page to verify that the job ran successfully and that you see **1 published** artifact under **Related**.
+When the pipeline finishes, view the job **Summary** page to verify that the build job ran successfully and that **1 published** artifact appears under **Related**.
 
-## Deploy to the Linux VMs
+## Add the deployment job
 
-Add a `deployment` job to your pipeline that starts when the `Build` job completes successfully. The [deployment job](../process/deployment-jobs.md) runs on the Linux servers.
+Add the `deployment` job to your pipeline. The [deployment job](../process/deployment-jobs.md) starts when the `Build` job completes successfully, and runs on the Linux resources you registered in the environment.
 
-1. To add the deployment job, select the **More actions** icon at upper right on the **Summary** page, select **Edit pipeline**, and add the following code to the end of your pipeline. Replace `<environment name>` with the name of the environment you created.
+1. Select the **More actions** icon at upper right on the **Summary** page, select **Edit pipeline**, and add the following code to the end of your pipeline. Replace `<environment-name>` with the name of the environment you created.
 
-   Optionally, you can select specific VMs from the environment to receive the deployment by using the `tags` parameter and specifying the `<VM tag>` you defined for the VM.
+   Optionally, you can select specific VMs from the environment to receive the deployment by using the `tags` parameter and specifying the `<VMtag>` you defined for the VM.
 
    ```yaml
    - deployment: VMDeploy
@@ -159,14 +167,14 @@ Add a `deployment` job to your pipeline that starts when the `Build` job complet
      dependsOn: Build
      condition: succeeded()
      environment:
-       name: <environment name>
+       name: <environment-name>
        resourceType: VirtualMachine
-       tags: <VM tag> # VMs to deploy to
+       tags: <VMtag> # VMs to deploy to
    ```
 
-1. Specify the deployment `strategy` by adding the following code to the `deployment` job. You can specify a `runOnce` or `rolling` deployment strategy.
+1. Add a `strategy` to the `deployment` job. The [runOnce deployment strategy](../process/deployment-jobs.md#runonce-deployment-strategy) is the simplest strategy. The `runOnce` strategy executes the `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks one time, and then executes either `on: success` or `on: failure`.
 
-   - `runOnce` is the simplest deployment strategy, as shown in the following code. The `preDeploy`> `deploy` > `routeTraffic` > `postRouteTraffic` lifecycle hooks each execute once, and then either `on: success` or `on: failure` executes.
+   - 
 
      ```yaml
        strategy:
@@ -176,11 +184,26 @@ Add a `deployment` job to your pipeline that starts when the `Build` job complet
                - script: echo my first deployment
      ```
 
-   - A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) updates the application on a fixed set of VMs in each iteration. You can update up to five targets in each iteration.
+1. After you add the deployment job, select **Validate and save**, then select **Save**, select **Run**, and select **Run** again. With each run of this job, deployment history records against the environment.
 
-     The `maxParallel` parameter accounts for the number or percentage of VMs that must remain available at any time, excluding the VMs that are being deployed to, and also determines success and failure conditions during deployment.
+   >[!NOTE]
+   >The first time you run the pipeline that uses the environment, you must grant permission for all runs of the pipeline to access the agent pool and the environment. Select the **Waiting** symbol next to the job on the pipeline run **Summary** screen, and then select **Permit** to grant the necessary permissions.
 
-     The following code shows a complete Java pipeline that uses the `rolling` deployment strategy.
+### Rolling deployment strategy
+
+You can use a `rolling` instead of `runOnce` deployment strategy. A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) updates the application on a fixed set of up to five target VMs in each iteration. In a `runOnce` deployment, all eligible VMs get the deployment at the same time, but a `rolling` deployment may run on multiple agents in parallel. VMs get the deployment one-by-one or in batches defined by the `maxParallel` setting. 
+
+The `maxParallel` parameter controls how many VMs to deploy to in parallel by setting the number or percentage of VMs that must remain available, excluding the VMs that are being deployed to. This setting ensures that the app is running and is capable of handling requests on these VMs while the deployment occurs on the rest of the VMs, reducing overall downtime. This parameter also determines success and failure conditions during deployment. 
+
+The rolling deployment strategy creates lifecycle hook jobs that run on each target VM to manage parallelism, health checks, and traffic routing. The `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` execute once per batch size. Then, either `on: success` or `on: failure` executes.
+
+In the `rolling` strategy, the `deploy`, `routeTraffic`, `postRouteTraffic`, and `on` steps run on the environment resource VMs, but the `preDeploy` steps run on the pipeline agent VMs. You can use the `preDeploy` step to prepare artifacts or do orchestration.
+
+The `rolling` strategy is easier to implement for Java apps because they're self-contained. JVM is often preinstalled on VM agents, and you don't need to worry about app dependencies, permissions, or package management, but just run the JAR file with `java -jar`.
+
+For Node.js, rolling deployment is possible, but requires preprovisioned VMs with all required apps, dependencies, and permissions set up. For example, Node.js apps require Node, possibly npm dependencies, and often a service manager like systemd or pm2 to be present on each VM. The pipeline script for deployment must be fully automated, noninteractive, and able to restart and manage the app's service.
+
+The following code shows a complete Java pipeline that uses the `rolling` deployment strategy.
 
      ```yaml
      trigger:
@@ -223,14 +246,25 @@ Add a `deployment` job to your pipeline that starts when the `Build` job complet
              deploy:
                steps:
                - task: Bash@3
+                 displayName: Start Java app, check health, and stop
                  inputs:
                    targetType: 'inline'
                    script: |
                      JAR=$(ls $(Pipeline.Workspace)/drop/target/*.jar | head -n 1)
                      java -jar "$JAR" --server.port=8081 &
                      PID=$!
-                     sleep 15
-                     kill $PID 2>/dev/null || echo "Process already exited"
+                     # Health check loop
+                     for i in {1..10}; do
+                       if curl -sf http://localhost:8081/actuator/health; then
+                         echo "App is up!"
+                         break
+                       else
+                         echo "Waiting for app to be healthy... ($i/10)"
+                         sleep 3
+                       fi
+                     done
+                     # Stop the app manually
+                     kill $PID 2>/dev/null || echo "Process already exited" 
              routeTraffic:
                steps:
                - script: echo routing traffic
@@ -246,14 +280,7 @@ Add a `deployment` job to your pipeline that starts when the `Build` job complet
                  - script: echo Notify! This is on success
      ```
 
-1. After you add the deployment job, select **Validate and save**, then select **Save**, select **Run**, and select **Run** again. With each run of this job, deployment history records against the environment the VMs are registered in.
-
-   >[!NOTE]
-   >The first time you run the pipeline that uses the environment, you must grant permission for all runs of the pipeline to access the agent pool and the environment. Select the **Waiting** symbol next to the job on the pipeline run **Summary** screen, and then select **Permit** to grant the necessary permissions.
-
-- For more information about the rolling deployment strategy, see the [jobs.deployment.strategy.rolling](/azure/devops/pipelines/yaml-schema/jobs-deployment-strategy-rolling) definition.
-- For more information about deployment jobs, see the [jobs.deployment](/azure/devops/pipelines/yaml-schema/jobs-deployment) definition.
-- For more information about the `environment` keyword and resources targeted by a deployment job, see the [jobs.deployment.environment](/azure/devops/pipelines/yaml-schema/jobs-deployment-environment) definition.
+For more information about the rolling deployment strategy, see [jobs.deployment.strategy.rolling](/azure/devops/pipelines/yaml-schema/jobs-deployment-strategy-rolling) schema definition.
 
 ## Access pipeline traceability in environment
 
