@@ -4,7 +4,7 @@ description: Use Azure Pipelines to deploy a Java or JavaScript web application 
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: freshness-fy22q2, linux-related-content
-ms.date: 10/06/2025
+ms.date: 10/07/2025
 monikerRange: 'azure-devops'
 #customer intent: As an Azure Pipelines user, I want to set up environments with Linux VMs so I can easily deploy my Java or JavaScript web apps to prebuilt targets with complete traceability.
 ---
@@ -53,10 +53,8 @@ Also, for Java Spring Boot and Spring Cloud based apps:
 ---
 
 >[!IMPORTANT]
->To deploy apps, target environment VM resources must have all necessary software, dependencies, permissions, and logins installed and configured.
-
->[!IMPORTANT]
->To use GitHub source code, you need a [GitHub service connection](../library/service-endpoints.md#github-service-connection). GitHub might also prompt you to sign in, install the Azure Pipelines GitHub app, or authorize Azure Pipelines. To complete each process, follow the onscreen instructions. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+>- To deploy apps, target environment VM resources must have all necessary software, dependencies, permissions, and logins installed and configured.
+>- To use GitHub source code, you need a [GitHub service connection](../library/service-endpoints.md#github-service-connection). GitHub might also prompt you to sign in, install the Azure Pipelines GitHub app, or authorize Azure Pipelines. To complete each process, follow the onscreen instructions. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 ## Create an environment and add Linux VMs
 
@@ -161,12 +159,13 @@ When the pipeline finishes, view the job **Summary** page to verify that the bui
 
 A [deployment job](../process/deployment-jobs.md) executes `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks once, and then executes either `on: success` or `on: failure`. If you deploy to environment VMs, the `preDeploy` phase runs on the build agent, not on the environment VMs. All the other steps run on registered VMs in the environment.
 
-1. The `preDeploy` step runs before deployment. You can use this step for orchestration, VM and artifact preparation, and health checks.
+1. The optional `preDeploy` step runs before deployment. You can use this step for orchestration, VM and artifact preparation, and health checks.
 1. The `deploy` step deploys the deployment object to the target environment VMs.
-1. The optional `routeTraffic` step can apply traffic switching, and `postRouteTraffic` can do health checks or notifications.
+1. The optional `routeTraffic` step can apply traffic switching.
+1. The optional `postRouteTraffic` step can do health checks and notifications.
 1. The custom `on.failure` and `on.success` steps can provide notifications or recovery.
 
-A deployment job with `resourceType: VirtualMachine` requires the registered agent VMs to be capable of running all pipeline tasks, such as Bash or Azure CLI. You can use the `preDeploy` step to install necessary software and permissions on target VMs.
+A deployment job to an environment with `resourceType: VirtualMachine` requires the environment VMs to be able to run all pipeline tasks, such as Bash or Azure CLI. You can use the `preDeploy` step to install necessary software and permissions on target VMs.
 
 For example, if a deployment step uses Azure CLI, the agent VMs must have Azure CLI installed and available on the PATH for the agent user. The agent user must have permission to run the CLI and must authenticate to Azure. You might need to add the agent user to sudoers, or set up environment variables to automate installation.
 
@@ -218,9 +217,9 @@ For more information about the rolling deployment strategy, see the [jobs.deploy
 
 Deployments to VM resources require the VMs to have all required apps, dependencies, and permissions installed and configured. You must manually preinstall these requirements, or the pipeline must install or implement them.
 
-The Java app deployment to VM resources is easier to implement because it's self-contained. The Java Virtual Machine (JVM) is often preinstalled on VM agents, and you don't need to worry about app dependencies, permissions, or package management. You can just run the JAR file with `java -jar`.
+The Java app deployment to VM resources is easier to implement because it's self-contained. The Java Virtual Machine (JVM) is often preinstalled on VM agents, and you don't need to worry about app dependencies, permissions, or package management. You can just download the JAR file and then run it with `java -jar`.
 
-Node.js apps require Node, possibly npm dependencies, and often a service manager like systemd or pm2 to be present on each agent VM. To be fully automated, the pipeline deployment script must be noninteractive and able to restart and manage the app's service.
+The Node.js app requires Node, possibly npm dependencies, and a service manager like systemd to be present and configured on each agent VM. To be automated, the pipeline deployment script must be noninteractive and able to restart and manage the app's service.
 
 #### [JavaScript](#tab/javascript)
 
@@ -232,7 +231,7 @@ The following YAML `rolling` deployment job for the JavaScript app depends on su
 - Write permissions for the agent user to */opt/pipelines-javascript* or other deployment target.
 
 >[!TIP]
->For most Node.js apps, consider deploying to [Azure App Service](/azure/app-service/) or using regular pipeline jobs with Microsoft-hosted agents, instead of using deployment jobs. This approach is simpler and avoids the operational overhead of managing VM environments. Deployments to specific VM resources are best suited for scenarios requiring direct control of the VM servers, advanced orchestration, or legacy infrastructure.
+>For most Node.js apps, consider deploying to [Azure App Service](/azure/app-service/) or using regular pipeline jobs with Microsoft-hosted agents, instead of using deployment jobs. This approach is simpler and avoids the operational overhead of managing VM environments. Deployment to specific VM resources is best suited for scenarios requiring direct control of the VM servers, advanced orchestration, or legacy infrastructure.
 
 ```yaml
 - stage: Deploy
