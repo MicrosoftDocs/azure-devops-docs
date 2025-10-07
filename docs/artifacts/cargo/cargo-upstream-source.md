@@ -1,65 +1,58 @@
 ---
 title: Consume Cargo packages from Crates.io
-description: How to consume Crates from Crates.io with Azure Artifacts
+description: Learn how to consume Crates from Crates.io with Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.topic: quickstart
-ms.date: 12/13/2023
+ms.date: 10/01/2025
 monikerRange: '>= azure-devops-2022'
 "recommendations": "true"
 ---
 
-# Use packages from Crates.io
+# Use Cargo packages from Crates.io
 
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 Azure Artifacts upstream sources enable developers to consume packages from public registries like Crates.io and nuget.org. This article will guide you through setting up your project and using the command line to consume Crates from Crates.io. 
 
-This article will guide you through how to:
-
-> [!div class="checklist"]  
-> * Create an Azure Artifacts feed 
-> * Connect to your feed
-> * Consume crates from upstream
-
 ## Prerequisites
 
-- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md) if you haven't already.
-
-- An Azure DevOps project. [Create a project](../../organizations/projects/create-project.md#create-a-project) if you don't have one.
-
-- Download and install [rustup](https://rustup.rs/).
+|     **Product**    |  **Requirements**  |
+|--------------------|--------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [rustup](https://rustup.rs/). You'll need Cargo version 1.74.0 or later. |
 
 ## Create a feed
 
-Azure Artifacts recommends having a dedicated feed for consuming crates from crates.io and a separate feed exclusively for publishing internal crates. 
+Azure Artifacts recommends having a dedicated feed for consuming crates from crates.io and a separate feed exclusively for publishing internal crates. If you already have an Azure Artifacts feed, skip to the next section. Otherwise, create a new one as follows:
  
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, then navigate to your project.
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-1. Enter a **Name** for your feed, define its **Visibility**, and then select your **Scope**. Make sure to check the **Upstream sources** checkbox to include packages from public registries. 
+1. Provide a **Name** for your feed, select the **Visibility** to define who can view your packages, and choose the feed **Scope**. Check the **Include packages from common public sources** checkbox to enable upstream sources on your feed.
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="media/create-cargo-upstream-feed.png" alt-text="A screenshot showing how to create a feed for cargo upstream.":::
+    :::image type="content" source="media/cargo-crates-feed.png" alt-text="A screenshot displaying how to create a feed to consume crates from Crates.io upstream.":::
 
 ## Connect to your feed
+
+Now that you have a feed, you need to set up your *config.toml* file, configure a credential provider, then log in to the registry to authenticate with your feed. 
+
+#### Project setup
 
 ::: moniker range="azure-devops"
 
 #### [Private feed](#tab/privatefeed/)
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
+1. Select **Connect to feed**, then select **Cargo** from the left navigation pane.
 
-1. If this is the first time using Cargo with Azure Artifacts, make sure you have installed [rustup](https://rustup.rs/).
-
-1. Add the provided snippet from the **Project setup** section to your *.cargo/config.toml* file in your source repository:
+1. Copy the snippet from the **Project setup** section and paste it into your *.cargo/config.toml* file in your source repository. It should look similar to the following:
 
     - **Project-scoped feed**:
     
@@ -83,15 +76,15 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
 #### [Public feed](#tab/publicfeed/)
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
+1. Select **Connect to feed**, then select **Cargo** from the left navigation pane.
 
-1. If this is the first time using Cargo with Azure Artifacts, make sure you have installed [rustup](https://rustup.rs/).
+1. If this is the first time using Cargo with Azure Artifacts, select **Get the tools** and install [rustup](https://rustup.rs/).
 
-1. Add the provided snippet from the **Project setup** section to your *.cargo/config.toml* file in your source repository depending on your scenario. See [Feed roles and permissions](../feeds/feed-permissions.md#feed-roles-and-permissions) to learn more about the different roles and their permissions:
+1. Copy the following snippet and paste it into your *.cargo/config.toml* file in your source repository, depending on your role. See [Feed roles and permissions](../feeds/feed-permissions.md#feed-roles-and-permissions) to learn more about the different roles and their permissions:
 
     - **Feed Readers and anonymous users**:
     
@@ -103,7 +96,7 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
         replace-with = "<FEED_NAME>"
         ```
 
-    - **Feed and Upstream Readers, Feed Publishers, and Feed Owners**: Be sure to include the additional flag (*~force-auth*) for proper authentication with your feed, as shown below:
+    - **Feed and Upstream Readers, Feed Publishers, and Feed Owners**: Be sure to include the additional flag `~force-auth` for proper authentication with your feed, as shown below:
     
         ```
         [registries]
@@ -117,15 +110,13 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
 ::: moniker range="azure-devops-2022"
 
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
+1. Sign in to your Azure DevOps collection, then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Select **Connect to feed**, and then select **Cargo** from the left navigation pane.
+1. Select **Connect to feed**, then select **Cargo** from the left navigation pane.
 
-1. If this is the first time using Cargo with Azure Artifacts, make sure you have installed [rustup](https://rustup.rs/).
-
-1. Add the provided snippet from the **Project setup** section to your *.cargo/config.toml* file in your source repository:
+1. Copy the snippet from the **Project setup** section and paste it into your *.cargo/config.toml* file in your source repository. It should look similar to:
 
     - **Project-scoped feed**:
     
@@ -149,13 +140,13 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
 ::: moniker-end
 
-## Configure a credential provider
+#### Configure a credential provider
 
-To use Cargo with Azure Artifacts, you need to set up a credential provider. The provided settings will configure a default credential helper for the current user:
+To use Cargo with Azure Artifacts, you need to set up a [credential provider](https://doc.rust-lang.org/nightly/cargo/reference/credential-provider-protocol.html#credential-provider-protocol). The following settings will set a default credential helper for the user:
 
 #### [Windows](#tab/Windows/)
 
-Paste the following snippet in your %USERPROFILE%\.cargo\config.toml:
+Paste the following snippet in your *%USERPROFILE%\.cargo\config.toml*:
 
 ```
 [registry]
@@ -164,7 +155,7 @@ global-credential-providers = ["cargo:token", "cargo:wincred"]
 
 #### [Linux](#tab/Linux/)
 
-Paste the following snippet in your ~/.cargo/config.toml:
+Paste the following snippet in your *~/.cargo/config.toml*:
 
 ```
 [registry]
@@ -173,7 +164,7 @@ global-credential-providers = ["cargo:token", "cargo:libsecret"]
 
 #### [macOS](#tab/macOS/)
 
-Paste the following snippet in your ~/.cargo/config.toml:
+Paste the following snippet in your *~/.cargo/config.toml*:
 
 ```
 [registry]
@@ -182,11 +173,11 @@ global-credential-providers = ["cargo:token", "cargo:macos-keychain"]
 
 * * *
 
-## Log in to your registry
+#### Log in to your registry
 
 1. Create a [Personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes to authenticate with your feed.
 
-1. Run the following command to log in to your registry. Replace the placeholder with your feed's name, and paste the personal access token you created in the previous step when prompted:
+1. Run the following command to log in to your registry. Replace *<FEED_NAME>* with your feed name, and when promoted, paste the personal access token you created earlier.
 
     #### [PowerShell ](#tab/PowerShell/)
     
@@ -211,16 +202,14 @@ global-credential-providers = ["cargo:token", "cargo:macos-keychain"]
 
 ## Save packages from Crates.io
 
-[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
+Now that your project is set up, the credential provider is configured, and you're authenticated with your feed, you can begin consuming packages from upstream sources. Azure Artifacts automatically saves a copy of any package you install from upstream to your feed.
 
-Now that we have set up our project, configured a credential provider, and logged into our feed, we can begin consuming packages from upstream. Azure Artifacts saves a copy of any package you install from upstream to your feed.
+The following example demonstrates how to consume the `reqwest` crate, an HTTP client library used for making HTTP requests:
 
-In this example, we consume the `serde` crate, a serialization/deserialization framework:
-
-1. Run the following command in your project directory to add the crate to your *cargo.toml*:
+1. Add the crate to your *Cargo.toml* by running the following command in your project directory:
 
     ```
-    cargo add serde
+    cargo add reqwest
     ``` 
 
 1. Run the following command to build your project and consume your crate:
@@ -229,12 +218,16 @@ In this example, we consume the `serde` crate, a serialization/deserialization f
     cargo build
     ```
 
-Once your package is installed, a copy will be saved to your feed. Navigate to your feed to verify its presence. Your package should be available in your feed, as shown below:
+Once the package is installed, a copy will be saved to your feed. You can verify this by navigating to your feed in Azure DevOps. The package should be available in your feed, as shown below:
 
-:::image type="content" source="media/crate-from-upstream.png" alt-text="A screenshot showing the *serde* crate consumed from upstream.":::
+:::image type="content" source="media/consume-crate-from-cargo-upstream.png" alt-text="A screenshot displaying the reqwest crate listed in an Azure Artifacts feed after being saved from Crates.io." lightbox="media/consume-crate-from-cargo-upstream.png":::
 
-## Related articles
+[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
-- [Publish Cargo packages with Azure Pipelines](../../pipelines/artifacts/cargo-pipelines.md)
-- [Delete and recover packages](../how-to/delete-and-recover-packages.md)
+## Related content
+
+- [Publish Cargo packages from the command line](cargo-publish.md)
+
+- [Publish Cargo packages with Azure Pipelines YAML/Classic](../../pipelines/artifacts/cargo-pipelines.md)
+
 - [Configure permissions](../feeds/feed-permissions.md)
