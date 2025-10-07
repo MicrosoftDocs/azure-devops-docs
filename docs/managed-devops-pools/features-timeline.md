@@ -1,7 +1,7 @@
 ---
 title: Features timeline and roadmap
 description: Learn about new features in Managed DevOps Pools.
-ms.date: 08/12/2025
+ms.date: 10/02/2025
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the new features in Managed DevOps Pools.
 ---
@@ -12,19 +12,17 @@ ms.topic: overview
 
 The following section describes new features in development for Managed DevOps Pools.
 
-* [Ubuntu 20.04 LTS Standard Support ended May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare). We've removed the Ubuntu 20.04 images from [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Pipelines images](./configure-images.md#azure-pipelines-images), and starting August 30, 2025, pipelines that are configured to use these deprecated images will fail to start. For more information, see [Managed DevOps Pools image lifecycle](./configure-images.md#image-lifecycle). **Planned for August 30, 2025.**
+* **Service Tag and new IPs**: Managed DevOps Pools control plane is going to add new IP outgoing addresses and is going to publish a service tag to provide a convenient mechanism to allow outbound traffic from Managed DevOps Pools. **Planned for October 2025.**
 
-* **Service Tag and new IPs**: Managed DevOps Pools control plane is going to add new IP outgoing addresses and is going to publish a service tag to provide a convenient mechanism to allow outbound traffic from Managed DevOps Pools. **Planned for September 2025.**
+* **Log analytics**: Managed DevOps Pools is adding support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode). **Planned for October 2025.**
 
-* **Log analytics**: Managed DevOps Pools is adding support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode). **Planned for September 2025.**
+* **Public Static IP**: We're adding support for public static IP addresses in Managed DevOps Pools to enable access to external resources once [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). This change with Azure will affect Managed DevOps Pools, Azure Virtual Machine Scale Set agent pools, and self-hosted pools that will create a new virtual network and they will not be able to access anything outside the agent without infrastructure like a NAT gateway. New Managed DevOps Pools instances created after September 30, 2025 will be created with a NAT gateway by default and it will incur Azure costs associated. You can model how much it will cost by using the Azure cost calculator. **Planned for October 2025**. 
 
-* **Public Static IP**: We're adding support for public static IP addresses in Managed DevOps Pools to enable access to external resources once [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). This change with Azure will affect Managed DevOps Pools, Azure Virtual Machine Scale Set agent pools, and self-hosted pools that will create a new virtual network and they will not be able to access anything outside the agent without infrastructure like a NAT gateway. New Managed DevOps Pools instances created after September 30, 2025 will be created with a NAT gateway by default and it will incur Azure costs associated. You can model how much it will cost by using the Azure cost calculator. **Planned for September 2025**. 
+* **Pool creation at the Azure DevOps project level using project level permissions**: To create a Managed DevOps Pool, you must currently be an [Organization-level Agent pools administrator and a Project-level Agent pools Administrator or Creator in Azure DevOps](./prerequisites.md#verify-azure-devops-permissions). We're enabling a new mode of Managed DevOps Pools creation, requiring only Project-level Agent pools administrator. Managed DevOps Pools created using Project-level Agent pools administrator will be created and enabled only for use in the designated Azure DevOps project. **Planned for October 2025.**
 
-* **Pool creation at the Azure DevOps project level using project level permissions**: To create a Managed DevOps Pool, you must currently be an [Organization-level Agent pools administrator and a Project-level Agent pools Administrator or Creator in Azure DevOps](./prerequisites.md#verify-azure-devops-permissions). We're enabling a new mode of Managed DevOps Pools creation, requiring only Project-level Agent pools administrator. Managed DevOps Pools created using Project-level Agent pools administrator will be created and enabled only for use in the designated Azure DevOps project. **Planned for September 2025.**
+* **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for October 2025.**
 
-* **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for September 2025.**
-
-* **Pool Alias**: We're adding the ability to add an Azure DevOps Pool name in addition to the Azure resource name to address [this ask from our community](https://developercommunity.visualstudio.com/t/Managed-Devops-Pools-Custom-agent-pool/10834336). **Planned for September 2025**.
+* **Pool Alias**: We're adding the ability to add an Azure DevOps Pool name in addition to the Azure resource name to address [this ask from our community](https://developercommunity.visualstudio.com/t/Managed-Devops-Pools-Custom-agent-pool/10834336). **Planned for October 2025**.
 
 * **Azure Pipelines image versions**: When a new image version breaks your pipeline, you can configure an [image version override demand](./demands.md#imageversionoverride) in every pipeline to [revert to the version used by the last successful pipeline run](./troubleshooting.md#check-to-see-if-there-has-been-an-image-update). With the proposed feature, you can select the image version of an Azure Pipelines image in the Managed DevOps Pools user interface, and pin your pool's image to a specific image version. **Planned for October 2025**.
 
@@ -33,6 +31,10 @@ The following section describes new features in development for Managed DevOps P
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for early 2026.**
 
 * **Custom Startup Script**: We are adding the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they are assigned to an agent, to enable scenarios such as installing Trusted root CAs, setting environment, etc. **Planned for early 2026**.
+
+## August 2025
+
+* [Ubuntu 20.04 LTS Standard Support ended May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare). We've removed the Ubuntu 20.04 images from [Selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Pipelines images](./configure-images.md#azure-pipelines-images), and starting August 30, 2025, pipelines that are configured to use these deprecated images are unsupported. For more information, see [Managed DevOps Pools image lifecycle](./configure-images.md#image-lifecycle).
 
 ## July 2025
 
