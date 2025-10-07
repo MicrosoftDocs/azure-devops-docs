@@ -4,13 +4,13 @@ description: Learn how to publish NuGet packages to internal and external feeds 
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.topic: tutorial
 ms.date: 09/11/2024
-monikerRange: '>= azure-devops-2020'
+monikerRange: '>= azure-devops-2022'
 "recommendations": "true"
 ---
 
 # Publish NuGet packages with Azure Pipelines (YAML/Classic) 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts feeds in your organization, in other organizations, and to public registries such as *nuget.org*, using either Classic or YAML pipelines. In this article, you'll learn how to: 
 
