@@ -6,6 +6,7 @@ ms.topic: quickstart
 ms.custom: freshness-fy22q2, linux-related-content
 ms.date: 10/07/2025
 monikerRange: 'azure-devops'
+ai-usage: ai-assisted
 #customer intent: As an Azure Pipelines user, I want to set up environments with Linux VMs so I can easily deploy my Java or JavaScript web apps to prebuilt targets with complete traceability.
 ---
 
