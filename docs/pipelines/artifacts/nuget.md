@@ -33,7 +33,7 @@ Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts fe
 
 ## Publish NuGet packages to a feed in the same organization
 
-::: moniker range="azure-devops-2020"
+::: moniker range="azure-devops-2022"
 
 #### [YAML](#tab/yaml/)
 
@@ -185,7 +185,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range="azure-devops-2022"
 
 #### [YAML](#tab/yaml/)
 
