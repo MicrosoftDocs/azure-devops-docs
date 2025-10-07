@@ -31,9 +31,6 @@ Also, for JavaScript or Node.js apps:
 - [At least two Linux VMs set up with Nginx on Azure](/azure/virtual-machines/linux/quick-create-cli).
 - Your own fork of the GitHub sample code repo at [https://github.com/MicrosoftDocs/pipelines-javascript](https://github.com/MicrosoftDocs/pipelines-javascript). If you already have an app in GitHub that you want to deploy, you can use your code instead.
 
->[!NOTE]
->To deploy Node.js apps, the target resource VMs must have all required software, dependencies, and permissions preinstalled.
-
 #### [Java](#tab/java)
 
 Also, for Java Spring Boot and Spring Cloud based apps:
@@ -56,7 +53,10 @@ Also, for Java Spring Boot and Spring Cloud based apps:
 ---
 
 >[!IMPORTANT]
->For GitHub procedures, you need a [GitHub service connection](../library/service-endpoints.md#github-service-connection). You might also be prompted to sign in to GitHub, install the Azure Pipelines GitHub app, or authorize Azure Pipelines. To complete each process, follow the onscreen instructions. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
+>To deploy apps, target environment VM resources must have all necessary software, dependencies, permissions, and logins installed and configured.
+
+>[!IMPORTANT]
+>To use GitHub source code, you need a [GitHub service connection](../library/service-endpoints.md#github-service-connection). GitHub might also prompt you to sign in, install the Azure Pipelines GitHub app, or authorize Azure Pipelines. To complete each process, follow the onscreen instructions. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 ## Create an environment and add Linux VMs
 
@@ -120,7 +120,7 @@ For more information, review the steps for creating a build in [Build your Node.
 
 #### [Java](#tab/java)
 
-The following pipeline builds your Java project and runs tests with Apache Maven, then packages the output and uploads it to a drop location..
+The following pipeline builds your Java project and runs tests with Apache Maven, then packages the output and uploads it to a drop location.
 
 ```yaml
 trigger:
@@ -157,11 +157,24 @@ To save your *azure-pipelines.yml* file to your repo and kick off the CI/CD pipe
 
 When the pipeline finishes, view the job **Summary** page to verify that the build job ran successfully and that **1 published** artifact appears under **Related**.
 
-## Add the deployment job
+## Add and run the deployment job
 
-Add the `deployment` job to your pipeline. The [deployment job](../process/deployment-jobs.md) starts when the `Build` job completes successfully.
+A [deployment job](../process/deployment-jobs.md) executes `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks once, and then executes either `on: success` or `on: failure`. If you deploy to environment VMs, the `preDeploy` phase runs on the build agent, not on the environment VMs. All the other steps run on registered VMs in the environment.
 
-Deployment jobs execute `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks one time, and then execute either `on: success` or `on: failure`. If you define environment VMs, the `preDeploy` phase runs on the build agent, not on the environment VMs. All the other jobs run on the Linux VMs you registered in the environment.
+1. The `preDeploy` step runs before deployment. You can use this step for orchestration, VM and artifact preparation, and health checks.
+1. The `deploy` step deploys the deployment object to the target environment VMs.
+1. The optional `routeTraffic` step can apply traffic switching, and `postRouteTraffic` can do health checks or notifications.
+1. The custom `on.failure` and `on.success` steps can provide notifications or recovery.
+
+A deployment job with `resourceType: VirtualMachine` requires the registered agent VMs to be capable of running all pipeline tasks, such as Bash or Azure CLI. You can use the `preDeploy` step to install necessary software and permissions on target VMs.
+
+For example, if a deployment step uses Azure CLI, the agent VMs must have Azure CLI installed and available on the PATH for the agent user. The agent user must have permission to run the CLI and must authenticate to Azure. You might need to add the agent user to sudoers, or set up environment variables to automate installation.
+
+You could use a `preDeploy` script to install Azure CLI on the target VMs. To authenticate to Azure, you can run `az login`, or for automation, define a service principal and run `az login --service-principal` in a `preDeploy` step.
+
+### Add the deployment job
+
+The following example deployment job starts when the `Build` job completes successfully. To add the job to your pipeline:
 
 1. Select the **More actions** icon at upper right on the **Summary** page, select **Edit pipeline**, and add the following code to the end of your pipeline. Replace `<environment-name>` with the name of the environment you created.
 
@@ -178,7 +191,7 @@ Deployment jobs execute `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTra
        tags: <VMtag> # VMs to deploy to
    ```
 
-1. Add a `strategy` to the `deployment` job. The [runOnce deployment strategy](../process/deployment-jobs.md#runonce-deployment-strategy) is the simplest and runs by default if you don't specify a strategy. This strategy executes the deploy steps once on each VM in the environment, without any parallelism or traffic management.
+1. Add a `strategy` to the `deployment` job. The [runOnce deployment strategy](../process/deployment-jobs.md#runonce-deployment-strategy) is the simplest and runs by default if you don't specify `strategy`. This strategy executes the deploy steps once on each VM in the environment, without any parallelism or traffic management.
 
    ```yaml
      strategy:
@@ -193,46 +206,33 @@ Deployment jobs execute `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTra
    >[!NOTE]
    >The first time you run the pipeline that uses the environment, you must grant permission for all runs of the pipeline to access the agent pool and the environment. Select the **Waiting** symbol next to the job on the pipeline run **Summary** screen, and then select **Permit** to grant the necessary permissions.
 
-## Rolling deployment strategy
+### Rolling deployment strategy
 
-You can use a `rolling` instead of `runOnce` deployment strategy. A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) provides orchestration that can manage parallelism, health checks, and traffic routing. While the `runOnce` strategy executes on a single VM at a time, a rolling deployment can run on the target VMs sequentially or in parallel, depending on the number of VMs and the `maxParallel` property setting.
+You can use a `rolling` instead of `runOnce` deployment strategy. A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) can orchestrate parallelism, health checks, and traffic routing. While the `runOnce` strategy executes on a single VM at a time, a rolling deployment can run in parallel on *rolling sets* of up to five target VMs, depending on `maxParallel` setting.
 
-The `maxParallel` parameter determines the size of the *rolling set* to deploy to. This parameter sets the number or percentage of VMs that must remain available, ensuring that the app can handle requests during the deployment and reducing overall downtime. The parameter also determines success and failure conditions during deployment.
-
-A rolling deployment creates the following lifecycle hook jobs. In the `rolling` strategy, the `preDeploy` step runs on the pipeline build agents. The `deploy`, `routeTraffic`, `postRouteTraffic`, and `on` steps run on the environment resource VMs.
-
-1. The `preDeploy` step runs before deployment. You can use this step for orchestration, VM and artifact preparation, and health checks.
-1. The `deploy` step deploys the deployment object to the target environment VMs.
-1. The optional `routeTraffic` step can apply traffic switching, and `postRouteTraffic` can do health checks or notifications.
-1. The custom `on.failure` and `on.success` steps can provide notifications or recovery.
-
-A deployment job with `resourceType: VirtualMachine` requires the registered agent VMs to be capable of running all pipeline tasks, such as Bash or Azure CLI. You can use the `preDeploy` step to install necessary software and permissions on the target VMs.
-
-For example, if a pipeline step uses Azure CLI, the agent VMs must have Azure CLI installed and available on the PATH for the agent user. The agent user must have permission to run the CLI and must authenticate to Azure. You might need to add the agent user to sudoers, or set up environment variables to automate installation.
-
-You could use a `preDeploy` script to install Azure CLI on the target VMs. To authenticate to Azure, you can run `az login`, or for automation, define a service principal and run `az login --service-principal` in a `preDeploy` step.
-
-### Rolling deployment example
-
-The `rolling` strategy is easier to implement for Java apps because they're self-contained. The Java Virtual Machine (JVM) is often preinstalled on VM agents, and you don't need to worry about app dependencies, permissions, or package management, just run the JAR file with `java -jar`.
-
-For Node.js, rolling deployment is possible, but requires VMs to be have all required apps, dependencies, and permissions. You must manually preinstall these requirements, or the pipeline must install or implement them.
-
-For example, Node.js apps require Node, possibly npm dependencies, and often a service manager like systemd or pm2 to be present on each agent VM. To be fully automated, the pipeline deployment script must be noninteractive and able to restart and manage the app's service.
+The `maxParallel` parameter sets the number or percentage of VMs that must remain available, ensuring that the app can handle requests and reducing overall downtime during deployments. This parameter also determines success and failure conditions for the deployment.
 
 For more information about the rolling deployment strategy, see the [jobs.deployment.strategy.rolling](/azure/devops/pipelines/yaml-schema/jobs-deployment-strategy-rolling) schema definition.
 
+### Deployment job example
+
+Deployments to VM resources require the VMs to have all required apps, dependencies, and permissions installed and configured. You must manually preinstall these requirements, or the pipeline must install or implement them.
+
+The Java app deployment to VM resources is easier to implement because it's self-contained. The Java Virtual Machine (JVM) is often preinstalled on VM agents, and you don't need to worry about app dependencies, permissions, or package management. You can just run the JAR file with `java -jar`.
+
+Node.js apps require Node, possibly npm dependencies, and often a service manager like systemd or pm2 to be present on each agent VM. To be fully automated, the pipeline deployment script must be noninteractive and able to restart and manage the app's service.
+
 #### [JavaScript](#tab/javascript)
 
-The following YAML `rolling` deployment job for the JavaScript app follows the preceding `Build` stage. The deployment job assumes that the following requirements are already preinstalled or preconfigured on each agent VM. For full automation, you can install and configure apps and services on the VMs as part of the pipeline.
+The following YAML `rolling` deployment job for the JavaScript app depends on successful `Build` stage completion. The deployment job assumes that the following requirements are already preinstalled or preconfigured on each agent VM. For full automation, you can install and configure these apps and services on the VMs as part of the pipeline.
 
-- Node.js 16.x or same version as build, and npm available on the build agent's PATH.
+- Node.js 16.x installed, and npm available on the build agent's PATH.
 - Systemd with a systemd service file configured for the service that starts the Node.js app, such as */etc/systemd/system/pipelines-javascript.service*.
 - Passwordless sudo for the agent user for necessary commands, set with `NOPASSWD:` in */etc/sudoers*.
-- Write permissions for the agent user to */opt/pipelines-javascript* or other deploy target.
+- Write permissions for the agent user to */opt/pipelines-javascript* or other deployment target.
 
 >[!TIP]
->For most Node.js apps, consider deploying to [Azure App Service](/azure/app-service/) or using regular pipeline jobs with Microsoft-hosted agents, instead of using deployment jobs. This approach is simpler and avoids the operational overhead of managing VM environments. Rolling deployments to VMs are best suited for scenarios requiring direct control of the VM servers, advanced orchestration, or legacy infrastructure.
+>For most Node.js apps, consider deploying to [Azure App Service](/azure/app-service/) or using regular pipeline jobs with Microsoft-hosted agents, instead of using deployment jobs. This approach is simpler and avoids the operational overhead of managing VM environments. Deployments to specific VM resources are best suited for scenarios requiring direct control of the VM servers, advanced orchestration, or legacy infrastructure.
 
 ```yaml
 - stage: Deploy
@@ -247,7 +247,7 @@ The following YAML `rolling` deployment job for the JavaScript app follows the p
       resourceType: VirtualMachine
     strategy:
       rolling:
-        maxParallel: 1  # or 2 for parallel
+        maxParallel: 1   #or 2 for parallel. For percentages, use x%
         preDeploy:
           steps:
           - download: current
@@ -282,7 +282,7 @@ The following YAML `rolling` deployment job for the JavaScript app follows the p
 
 #### [Java](#tab/java)
 
-The following YAML `rolling` deployment job for the Java app follows the preceding `Build` stage.
+The following YAML `rolling` deployment job for the Java app depends on successful `Build` stage completion. 
 
 ```yaml
 - deployment: VMDeploy
@@ -294,7 +294,7 @@ The following YAML `rolling` deployment job for the Java app follows the precedi
     resourceType: VirtualMachine
   strategy:
       rolling:
-        maxParallel: 2  #for percentages, mention as x%
+        maxParallel: 1   #or 2 for parallel. For percentages, use x%
         preDeploy:
           steps:
           - download: current
