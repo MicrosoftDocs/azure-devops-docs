@@ -3,23 +3,24 @@ title: Restore a deleted wiki
 titleSuffix: Azure DevOps
 description: Restore or revert a provisioned or published wiki that was accidentally deleted from Azure DevOps using REST API.
 ms.subservice: azure-devops-wiki
+ai-usage: ai-assisted
 ms.custom:
 ms.topic: how-to
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/21/2023
+ms.date: 10/07/2025
 ---
 
 # Restore a deleted wiki
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-If a user accidentally deleted a provisioned (project) or published (code) wiki, you can restore it. Although there are no options in the UI to delete a wiki, a user might have used the REST API to delete the repository associated with the wiki.
+If a user accidentally deleted a provisioned (project) or published (code) wiki, you can restore it. Although there are no options in the UI to delete a wiki, users might use the REST API to delete the Git repository associated with the wiki.
 
 > [!NOTE]
-> Deleted repositories remain in the recycle bin for 30 days, after which they are permanently deleted and can't be restored.
+> Deleted repositories remain in the recycle bin for 30 days, after which they're permanently deleted and can't be restored.
 
 ## Prerequisites
 
@@ -28,7 +29,7 @@ If a user accidentally deleted a provisioned (project) or published (code) wiki,
 ## Restore a complete wiki
 
 Wikis, both project and code, are stored as repositories in your project in Azure DevOps. Complete the following steps to restore a complete wiki with REST API.
- 
+
 1. Retrieve git repositories: [List repositories](/rest/api/azure/devops/git/repositories/list?view=azure-devops-rest-7.1&tabs=HTTP&preserve-view=true).
  
    Use THE `includeHidden=true` parameter to see the wiki repositories.
@@ -117,29 +118,29 @@ PATCH https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/recycleBin/re
 }
 ```
  
-The wiki is restored.
+The repository contents restore. If the wiki UI doesn't reappear automatically, publish the restored repo as a wiki or create a wiki via the Wiki REST API to [re-register it with the project.](#reassociate-a-restored-wiki)
 
 ## Restore a wiki page
 
 1. Go to the URL for your repo: `https://dev.azure.com/<OrgName>/<ProjectName>/_git/classicreleaseoption.wiki`.
 
 2. Search for the history for the main branch, `wikiMain`.
- 
+
 3. Find and select the commit that has the deleted files.
- 
+
 4. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and then **Revert**.
- 
+
 5. Create and complete a pull request.
 
-Your wiki page is restored.
+Your wiki page restores.
 
 ### Restore a wiki page with CLI
 
 If you prefer command line options, do the following steps.
  
 1. Clone the wiki to your local machine.
-1. Search for the commit which has the deleted the page.
-1. Checkout that commit.
+1. Search for the commit, which has the deleted the page.
+1. Checkout the commit.
 1. Copy the page to make a new commit.
 
 Your wiki page is restored.
@@ -150,7 +151,20 @@ Your wiki page is restored.
 DELETE https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/repositories/052a83ac-af70-4194-b53f-df073e5f1786?api-version=7.1-preview.1
 ```
 
-## Next steps
+## Reassociate a restored wiki
+
+The recycle-bin restore recovers the Git repository (wiki pages and history) but doesn't always re-create the wiki registration or the file name association in the UI.
+
+If the wiki doesn't appear after you restore the repo, do these steps:
+
+1. Confirm that the repo and branches exist in your project in **Repos**.
+2. Republish the repo as a wiki via the UI or recreate the wiki registration with the Wiki REST API to point to the restored repo.
+3. Verify the wiki appears in your project under **Overview** > **Wiki**, then check permissions, links, and any widgets that referenced the old wiki.
+
+> [!NOTE]
+> The recycle-bin and some wiki-registration APIs are preview and can change—test in a nonproduction organization and use the api-version documented for your environment.
+
+## Next step
 
 > [!div class="nextstepaction"]
 > [Add and edit wiki pages](add-edit-wiki.md)
