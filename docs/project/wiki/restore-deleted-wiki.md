@@ -34,90 +34,90 @@ Wikis, both project and code, are stored as repositories in your project in Azur
  
    Use THE `includeHidden=true` parameter to see the wiki repositories.
 
-```HTTP
-GET https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/repositories?includeHidden=true&api-version=7.1-preview.1
-```
-
-```REST API
-        {
-            "id": "978e3886-64a8-4b6f-96da-6afc2936b04b",
-            "name": "fabrikamfiber.wiki",
-            "url": https://dev.azure.com/christiechurch/052a83ac-af70-4194-b53f-df073e5f1786/_apis/git/repositories/978e3886-64a8-4b6f-96da-6afc2936b04b,
-            "project": {
-                "id": "052a83ac-af70-4194-b53f-df073e5f1786",
-                "name": "fabrikamfiber",
-                "url": https://dev.azure.com/christiechurch/_apis/projects/052a83ac-af70-4194-b53f-df073e5f1786,
-                "state": "wellFormed",
-                "revision": 421800049,
-                "visibility": "organization",
-                "lastUpdateTime": "2023-07-18T12:25:29.3Z"
-            },
-            "defaultBranch": "refs/heads/wikiMaster",
-            "size": 193,
-            "remoteUrl": https://christiechurch@dev.azure.com/christiechurch/fabrikamfiber/_git/fabrikamfiber.wiki,
-            "sshUrl": git@ssh.dev.azure.com:v3/christiechurch/fabrikamfiber/fabrikamfiber.wiki,
-            "webUrl": https://dev.azure.com/christiechurch/fabrikamfiber/_git/fabrikamfiber.wiki,
-            "isDisabled": false,
-            "isInMaintenance": false
-        }
-```
-
+    ```HTTP
+    GET https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/repositories?includeHidden=true&api-version=7.1-preview.1
+    ```
+    
+    ```REST API
+            {
+                "id": "978e3886-64a8-4b6f-96da-6afc2936b04b",
+                "name": "fabrikamfiber.wiki",
+                "url": https://dev.azure.com/christiechurch/052a83ac-af70-4194-b53f-df073e5f1786/_apis/git/repositories/978e3886-64a8-4b6f-96da-6afc2936b04b,
+                "project": {
+                    "id": "052a83ac-af70-4194-b53f-df073e5f1786",
+                    "name": "fabrikamfiber",
+                    "url": https://dev.azure.com/christiechurch/_apis/projects/052a83ac-af70-4194-b53f-df073e5f1786,
+                    "state": "wellFormed",
+                    "revision": 421800049,
+                    "visibility": "organization",
+                    "lastUpdateTime": "2023-07-18T12:25:29.3Z"
+                },
+                "defaultBranch": "refs/heads/wikiMaster",
+                "size": 193,
+                "remoteUrl": https://christiechurch@dev.azure.com/christiechurch/fabrikamfiber/_git/fabrikamfiber.wiki,
+                "sshUrl": git@ssh.dev.azure.com:v3/christiechurch/fabrikamfiber/fabrikamfiber.wiki,
+                "webUrl": https://dev.azure.com/christiechurch/fabrikamfiber/_git/fabrikamfiber.wiki,
+                "isDisabled": false,
+                "isInMaintenance": false
+            }
+    ```
+    
 2. [Search the recycle bin](/rest/api/azure/devops/git/repositories/get-recycle-bin-repositories?view=azure-devops-rest-7.1&preserve-view=true) for your repository.
 
-```HTTP
-GET https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/recycleBin/repositories?api-version=7.1-preview.1
-```
-
+    ```HTTP
+    GET https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/recycleBin/repositories?api-version=7.1-preview.1
+    ```
+    
    When you find your repository, often named as `.wiki`, take note of the repo ID.
 
-```REST API
-{
-    "value": [
-        {
-            "id": "978e3886-64a8-4b6f-96da-6afc2936b04b",
-            "name": "fabrikamfiber.wiki",
-            "project": {
-                "id": "052a83ac-af70-4194-b53f-df073e5f1786",
-                "name": "fabrikamfiber",
-                "url": https://dev.azure.com/christiechurch/_apis/projects/052a83ac-af70-4194-b53f-df073e5f1786,
-                "state": "wellFormed",
-                "revision": 421800049,
-                "visibility": "organization",
-                "lastUpdateTime": "2023-07-18T12:25:29.3Z"
-            },
-            "deletedBy": {
-                "displayName": "Christie Church",
-                "url": https://spsprodeus23.vssps.visualstudio.com/A1df9d653-bdfb-459b-a0c7-725052b2f944/_apis/Identities/0a0a4b55-9671-440d-87bf-26644f200d8a,
-                "_links": {
-                    "avatar": {
-                        "href": https://dev.azure.com/christiechurch/_apis/GraphProfile/MemberAvatars/aad.MDY4MDk2OGQtYWU5OS03Y2M5LTgxZTEtNTBjMDk4ZTllZTlh
-                    }
+    ```REST API
+    {
+        "value": [
+            {
+                "id": "978e3886-64a8-4b6f-96da-6afc2936b04b",
+                "name": "fabrikamfiber.wiki",
+                "project": {
+                    "id": "052a83ac-af70-4194-b53f-df073e5f1786",
+                    "name": "fabrikamfiber",
+                    "url": https://dev.azure.com/christiechurch/_apis/projects/052a83ac-af70-4194-b53f-df073e5f1786,
+                    "state": "wellFormed",
+                    "revision": 421800049,
+                    "visibility": "organization",
+                    "lastUpdateTime": "2023-07-18T12:25:29.3Z"
                 },
-                "id": "0a0a4b55-9671-440d-87bf-26644f200d8a",
-                "uniqueName": christiechurch@fabrikam.com,
-                "imageUrl": https://dev.azure.com/christiechurch/_api/_common/identityImage?id=0a0a4b55-9671-440d-87bf-26644f200d8a,
-                "descriptor": "aad.MDY4MDk2OGQtYWU5OS03Y2M5LTgxZTEtNTBjMDk4ZTllZTlh"
-            },
-            "createdDate": "2023-07-18T12:23:55.64Z",
-            "deletedDate": "2023-07-18T12:41:38.737Z"
-        }
-    ],
-    "count": 1
-}
-```
- 
+                "deletedBy": {
+                    "displayName": "Christie Church",
+                    "url": https://spsprodeus23.vssps.visualstudio.com/A1df9d653-bdfb-459b-a0c7-725052b2f944/_apis/Identities/0a0a4b55-9671-440d-87bf-26644f200d8a,
+                    "_links": {
+                        "avatar": {
+                            "href": https://dev.azure.com/christiechurch/_apis/GraphProfile/MemberAvatars/aad.MDY4MDk2OGQtYWU5OS03Y2M5LTgxZTEtNTBjMDk4ZTllZTlh
+                        }
+                    },
+                    "id": "0a0a4b55-9671-440d-87bf-26644f200d8a",
+                    "uniqueName": christiechurch@fabrikam.com,
+                    "imageUrl": https://dev.azure.com/christiechurch/_api/_common/identityImage?id=0a0a4b55-9671-440d-87bf-26644f200d8a,
+                    "descriptor": "aad.MDY4MDk2OGQtYWU5OS03Y2M5LTgxZTEtNTBjMDk4ZTllZTlh"
+                },
+                "createdDate": "2023-07-18T12:23:55.64Z",
+                "deletedDate": "2023-07-18T12:41:38.737Z"
+            }
+        ],
+        "count": 1
+    }
+    ```
+
 3. [Restore the wiki](/rest/api/azure/devops/git/repositories/restore-repository-from-recycle-bin?view=azure-devops-rest-7.1&preserve-view=true) from the repository recycle bin.
  
-```HTTP
-PATCH https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/recycleBin/repositories/978e3886-64a8-4b6f-96da-6afc2936b04b?api-version=7.1-preview.1
-```
+    ```HTTP
+    PATCH https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/recycleBin/repositories/978e3886-64a8-4b6f-96da-6afc2936b04b?api-version=7.1-preview.1
+    ```
+    
+    ```REST API
+    {
+        "deleted": false
+    }
+    ```
 
-```REST API
-{
-    "deleted": false
-}
-```
- 
 The repository contents restore. If the wiki UI doesn't reappear automatically, publish the restored repo as a wiki or create a wiki via the Wiki REST API to [re-register it with the project.](#reassociate-a-restored-wiki)
 
 ## Restore a wiki page
@@ -151,7 +151,7 @@ Your wiki page is restored.
 DELETE https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/repositories/052a83ac-af70-4194-b53f-df073e5f1786?api-version=7.1-preview.1
 ```
 
-## Reassociate a restored wiki
+### Reassociate a restored wiki
 
 The recycle-bin restore recovers the Git repository (wiki pages and history) but doesn't always re-create the wiki registration or the file name association in the UI.
 
