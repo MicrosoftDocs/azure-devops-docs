@@ -77,8 +77,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    - [Modify a predefined pick list](add-modify-field.md#picklist)  
    - [State or Reason fields (customize workflow)](xml/change-workflow-wit.md)  
    - [Person-name field (add users)](../organizations/security/add-users-team-project.md)   
-   - [Resolution State & Failure Type](customize-work.md#test-experience)  
-   - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)   
+   - [Resolution State & Failure Type](customize-work.md#test-experience)
    :::column-end:::
 :::row-end:::
 
