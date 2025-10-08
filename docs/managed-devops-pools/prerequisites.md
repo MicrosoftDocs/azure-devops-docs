@@ -298,7 +298,7 @@ In addition to the project membership requirement described in the previous step
 
 Managed DevOps Pools has two different modes for adding a Managed DevOps Pool to the projects in your Azure DevOps organization.
 
-  * If you create your Managed DevOps Pool with **Add pool to all projects** set to **Yes**, Managed DevOps Pools configures the pool to be available in all projects for which you have the **Administrator** or **Creator** permission. You can manually add the pool to additional projects after the **Administrator** permission or **Creator** permission is assigned to your account for those projects.
+  * If you create your Managed DevOps Pool with **Add pool to all projects** set to **Yes**, Managed DevOps Pools configures the pool to be available in all projects for which you have the **Administrator** or **Creator** permission, and skips any projects where you lack these permissions. You can manually add the pool to additional projects after the **Administrator** permission or **Creator** permission is assigned to your account for those projects.
   * If you provide a list of projects when creating your Managed DevOps Pool, you must have the **Administrator** or **Creator** permission for every listed project or else pool creation fails.
 
 To check your agent pools permissions at the project level:
