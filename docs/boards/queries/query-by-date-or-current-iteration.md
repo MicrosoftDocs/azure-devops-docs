@@ -56,22 +56,32 @@ Use the following operators and macros for DateTime and Iteration Path fields in
 - Items whose status changed within the last week:
   :::image type="content" source="media/q-by-state-changed-within-last-week.png" alt-text="Screenshot that shows the Query Editor clause for items whose status was updated within the last week.":::
 
+<a id="current-iteration"></a>
+
 ## Using the @CurrentIteration macros (short guide)
 
 Use `@CurrentIteration` to target the team's current sprint and `@CurrentIteration +/- n` to create a sliding window of sprints (for example, last two, current, and next two sprints). Important points:
+
+<a id="current-iteration-plus-minus-n"></a>
 
 - `@CurrentIteration` returns items assigned to the current sprint for the team context used when running the query.
 - `@CurrentIteration +/- n` shifts that window of sprints by n; useful for trend or carry-over analyses.
 - Because macro behavior and client support vary, consult [Query by area or iteration path](query-by-area-iteration-path.md) for details about team parameters, which clients evaluate macros, and how macros are stored/expanded when saving queries.
 
+<a id="create-queries-for-your-teams-current-iteration"></a>
+
 Example images (web portal Query Editor):
 
 :::image type="content" source="media/query-date-iteration/at-current-with-team-parameter.png" alt-text="Screenshot that shows the Query Editor filter using the CurrentIteration macro with a team parameter.":::
+
+<a id="list-work-items-moved-out-sprint"></a>
 
 :::image type="content" source="media//query-date-iteration/sliding-window-iterations.png" alt-text="Screenshot that shows CurrentIteration plus and minus clauses for a sliding window of sprints.":::
 
 > [!TIP]
 > If `@CurrentIteration` doesn't return expected results, confirm the team's selected iteration and the iteration date ranges in Team settings.
+
+<a id="list-work-items-added-to-a-sprint-after-the-start-date"></a>
 
 ## Date macros: start of day/week/month/year
 
@@ -85,6 +95,8 @@ Example queries:
 :::image type="content" source="media/example-queries/changed-date-last-10-days.png" alt-text="Screenshot that shows the Query Editor clauses for finding items changed in the last 10 days.":::
 
 :::image type="content" source="media/example-queries/start-month-target-date-3.png" alt-text="Screenshot that shows the Query Editor clauses for features scheduled to be completed in the next three months.":::
+
+<a id="fields"></a>
 
 ## When to use WIQL directly
 
