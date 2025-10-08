@@ -212,8 +212,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Add rules to a field](add-modify-field.md#add-rules)  
       - [Change a field label](add-modify-field.md#change-label)  
       - [Add a custom control field](add-modify-field.md#custom-control)  
-      - [Remove a field](add-modify-field.md#change-label)  
-      - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)  
+      - [Remove a field](add-modify-field.md#change-label)
             
             
       **Work item types**
