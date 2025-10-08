@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 10/10/2025
+ms.date: 10/08/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
