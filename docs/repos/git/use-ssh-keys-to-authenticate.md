@@ -137,13 +137,16 @@ Associate the public key generated in the previous step with your user ID.
    ![Screenshot showing configuring a Public Key in Azure DevOps.](media/use-ssh-authentication/ssh_key_input.png)
 
 1. Give the key a useful description (this description is displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key.
-   Once saved, you can't change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile. Also note that SSH keys stored in Azure DevOps expire after one year. If your key expires, you may upload a new key or the same one to continue accessing Azure DevOps via SSH.
+   Once saved, you can't change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile. 
+   
+>[!NOTE]
+> SSH keys stored in Azure DevOps expire after one year, unless the PCA has toggled off the key validation. [Learn more]()
 
 1. On the **SSH Public Keys** overview page, the server fingerprints are displayed. Make note of the SHA256 fingerprint to use when you first connect to Azure DevOps via SSH.
 
    ![Screenshot of accessing security configuration in Azure DevOps Services.](media/use-ssh-authentication/ssh_accessing_security_key.png)
 
-1. Test the connection by running the following command:
+2. Test the connection by running the following command:
 
    ```powershell
    ssh -T git@ssh.dev.azure.com
@@ -422,11 +425,17 @@ Host devops_contoso
 
 Afterwards, instead of using the real URLs, tell Git you want to use these URLs for each repository as remote by replacing the hostname in the existing remotes with `devops_fabrikam` and `devops_contoso` respectively. For example, `git@ssh.dev.azure.com:v3/Fabrikam/Project1/fab_repo` would become `git@devops_fabrikam:v3/Fabrikam/Project1/fab_repo`.
 
-### Q: What notifications may I receive about my SSH keys?
+### Q: What notifications may I receive about my SSH key(s)?
 
-**A:** Whenever you register a new SSH Key with Azure DevOps Services, you receive an email notification informing you when a new SSH key is added to your account.
+**A:** There are a few notifications you may receive regarding your SSH key(s).
+1. A new SSH key was added to your organization
+2. An SSH key associated with your account will expire in 7 days and will not be valid for authentication. 
+3. An SSH key associated with your account has expired and is no longer valid for authentication.
 
-![SSH notification example](media/use-ssh-authentication/ssh_notification.png)
+   > **<u>Example notification</u>**
+   > 
+   >![Screenshot showing SSH key email notification](media/use-ssh-authentication/SSH-Key-Added-Email.png)
+
 
 ### Q: What do I do if I believe that someone other than me is adding SSH keys on my account?
 
