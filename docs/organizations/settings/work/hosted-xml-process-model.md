@@ -66,7 +66,6 @@ You can perform the following tasks with the Hosted XML process model.
    - [Add a custom pick list](../../../reference/add-modify-field.md#picklist)
    - [Predefined field](../../../reference/add-modify-field.md#picklist)
    - [Resolution State or Failure Type](../../../reference/customize-work.md)
-   - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)    
    :::column-end:::
 :::row-end:::
 
@@ -78,7 +77,6 @@ You can perform the following tasks with the Hosted XML process model.
    
    - [Add or modify a work item type](../../../reference/add-modify-wit.md)
    - [Change the workflow (States, Reasons, Transitions)](../../../reference/xml/change-workflow-wit.md)
-   - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
    - [Specify the WIT color](../../../reference/xml/process-configuration-xml-element.md#wit-colors)
    - [Specify the WIT icon](../../../reference/xml/process-configuration-xml-element.md)
    - [Specify the workflow state color](../../../reference/xml/process-configuration-xml-element.md#state-colors)     
@@ -99,8 +97,7 @@ You can perform the following tasks with the Hosted XML process model.
    - [Set default weekend days (Scrum)](../../../reference/xml/process-configuration-xml-element.md#weekend_days) 
    - [Set default bug management behavior](../../../reference/xml/process-configuration-xml-element.md#behaviors)
    - [Set default hidden backlogs](../../../reference/xml/process-configuration-xml-element.md#behaviors)
-   - [Process configuration](../../../reference/xml/process-configuration-xml-element.md)
-   - [Categories](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)     
+   - [Process configuration](../../../reference/xml/process-configuration-xml-element.md)    
    :::column-end:::
 :::row-end:::
 
@@ -144,7 +141,7 @@ This syntax is added to the following work item type definitions of the default 
 
 Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
 
-[![Export process](media/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](media/cust-wit-form-edit-def-file.png)](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)[![Import process](media/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
+[![Export process](media/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Import process](media/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 
 
