@@ -6,242 +6,186 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2021
+ms.date: 10/08/2025
 ---
 
-
-# How SAFe&reg; concepts map to Azure Boards artifacts 
+# How SAFe&reg; concepts map to Azure Boards artifacts
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If you're interested in using Scaled Agile Framework (SAFe®), you can configure your Azure Boards project to track SAFe® deliverables. Just as Azure Boards supports Scrum and Agile practices, it can support SAFe® and large numbers of teams to work together on Epics that span releases. 
+Configure Azure Boards to track SAFe® deliverables and support many teams working together on Epics that span releases. This article maps common SAFe® artifacts to Azure Boards artifacts and shows configuration patterns you can apply to any process (Agile, Scrum, Basic, or CMMI).
 
-This tutorial illustrates how the following SAFe® artifacts map to specific Azure Boards artifacts. 
-
->[!div class="checklist"]  
-> * SAFe® Agile, program, and portfolio teams  
-> * SAFe® deliverables such as epics, features, and stories  
-> * SAFe® Product, program, and portfolio views  
-> * SAFe® Release trains, sprints, and other timeboxes  
-> * SAFe® Iteration goals and objectives 
-> * SAFe® Value streams and budgets  
-> * SAFe® Portfolio Vision and Strategic Themes  
-> * SAFe® Roadmaps  
-> * SAFe® Milestones and events  
-> * SAFe® Retrospectives and reviews  
+> [!div class="checklist"]
+> * SAFe® Agile, program, and portfolio teams
+> * SAFe® deliverables such as epics, features, and stories
+> * SAFe® Product, program, and portfolio views
+> * SAFe® Release trains, sprints, and other timeboxes
+> * SAFe® Iteration goals and objectives
+> * SAFe® Value streams and budgets
+> * SAFe® Portfolio Vision and Strategic Themes
+> * SAFe® Roadmaps
+> * SAFe® Milestones and events
+> * SAFe® Retrospectives and reviews
 
 For an overview of how Azure Boards implements Scrum and Kanban, see [About Sprints, Scrum, and project management](../sprints/scrum-overview.md) and [About Boards and Kanban](../boards/kanban-overview.md).
 
-
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
-The following image illustrates how you can configure Azure Boards to support a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project and process hosted on Azure Boards.
+The following diagram shows a three-level team hierarchy mapped to area and iteration paths. The examples use the Agile process as a base, but you can apply these patterns to any supported process.
 
-![Agile tool structure to support SAFe®](media/safe-objects-map-to-vso-objects.png)  
+![Screenshot that shows an Agile tool structure to support SAFe®](media/safe-objects-map-to-vso-objects.png)
 
-Examples provided below illustrate how a three-level team hierarchy is configured using hierarchical area paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, you can apply these changes to any project hosted on Azure Boards.
+<a id="teams"></a>
 
-<a id="teams"></a>    
+## Agile feature, program, and portfolio teams
 
+Azure Boards gives each team its own view of work. Configure a hierarchical team structure so each team focuses on its work and roll-up occurs to higher levels.
 
-## Agile feature, program, and portfolio teams 
+![Screenshot that shows SAFe® roles mapped to a hierarchy of teams](media/safe/portfolio-programs-teams-area-paths-mapping.png)
 
-Azure Boards supports each team to have its own view their work. By configuring a hierarchical team structure, each team can focus on their work, and have their work roll up to the next level within the team hierarchy.   
-
-![SAFe® roles map to a hierarchy of teams](media/safe/portfolio-programs-teams-area-paths-mapping.png)
-
-To support SAFe® teams, you reconfigure the default team as the Portfolio team to manage your epics. You then create subteams for program-level work and team-level work. Work can be tracked across teams and throughout each of the levels.
-
-
+To support SAFe® teams, promote the default team to act as the Portfolio team for Epics, then create program and team subteams. Track work across teams by assigning area paths and iteration paths appropriately.
 
 <a id="work-items"></a>
 
-## Stories, Features, Epics, Enablers, and Capabilities  
+## Stories, Features, Epics, Enablers, and Capabilities
 
-All work and deliverables are captured in work items. Each work item is associated with a specific work item type with a predefined workflow. Each Azure Boards process provides support for specific work item types that you can use to track any of the SAFe® deliverables. 
-
-The work item types available to you're based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images.  
+Capture all deliverables in work items. Each work item uses a specific work item type and workflow. The available work item types depend on the process chosen when you created the project—Agile, Basic, Scrum, or CMMI.
 
 [!INCLUDE [temp](../includes/work-item-types.md)]
 
-The items in your backlog may be called *User Stories* (Agile) *Issues* (Basic), *Product backlog items* (Scrum), or *Requirements* (CMMI). All four are similar: they describe the customer value to be delivered and the work to be completed.   
+Backlog items might be called *User Stories* (Agile), *Issues* (Basic), *Product backlog items* (Scrum), or *Requirements* (CMMI). They all describe customer value and the work to deliver it.
 
-You can track Enablers using User Stories or Features, and Capabilities using Features or Epics. Or, you if you have specific tracking and reporting needs, you can add custom work item types to track these types of deliverables. For more information, see [Customize Azure Boards, Add custom work item types](safe-customize.md#customize-wits).  
+- Track Enablers using User Stories or Features, and track Capabilities using Features or Epics.
+- Add custom work item types if you need specialized tracking. For details, see [Customize Azure Boards, Add custom work item types](safe-customize.md#customize-wits).
 
-Work items provide support for the following tasks: 
-- Add description and acceptance criteria
-- Assign to a team or area path and to a project member
-- Update status and assign to an iteration or sprint
-- Link work items, attach files, add tags 
-- Add comments and view a discussion thread
+Work items support:
+- descriptions and acceptance criteria
+- assignment to a team (area path) and an owner
+- state updates and iteration assignment
+- linking, attachments, and tags
+- comments and discussion threads
 
-Product and portfolio backlogs enable teams to quickly add and prioritize their User Stories, Features, and Epics. For more information about work items and work item types, see [Track work with user stories, issues, bugs, features, and epics](../work-items/about-work-items.md).  
+For more about work items, see [Track work with user stories, issues, bugs, features, and epics](../work-items/about-work-items.md).
 
 <a id="backlogs-boards"></a>
 
 ## Team backlogs and boards
 
-SAFe® backlogs map to team, program, and portfolio backlogs. Out of the box, the Agile process supports User Story, Feature, and Epic backlog levels. The hierarchical backlog structure shows work done to support Features and User Stories in the progress of an Epic.  
+Map SAFe® backlogs to team, program, and portfolio backlogs. The Agile process provides User Story, Feature, and Epic backlog levels out of the box. Use hierarchical backlogs to show the work that supports Features and the progress of Epics.
 
-![Hierarchical backlog: epics, features, and stories](media/safe/epic-feature-story-mapping.png)
+![Screenshot that shows a hierarchical backlog with epics, features, and stories](media/safe/epic-feature-story-mapping.png)
 
-You can customize your backlog and boards, even adding portfolio backlogs, as described in [Customize Azure Boards, Customize backlogs](safe-customize.md#custom-backlog).  
-
-The board view of each backlog is configurable by each team. 
+Customize backlogs and boards (including adding portfolio backlog levels) as described in [Customize Azure Boards, Customize backlogs](safe-customize.md#custom-backlog). Each team can configure their board view independently.
 
 <a id="iterations"></a>
 
-## Program Increments, releases, and sprints  
+## Program increments, releases, and sprints
 
-SAFe® Release Trains, Releases, Iterations, Program Increments (PIs), and Sprints map easily to your iteration paths. By sharing iterations across the team hierarchy, you manage the releases in a cohesive manner. 
+Map SAFe® Release Trains, Program Increments (PIs), Releases, and Sprints to iteration paths. Share iterations across the team hierarchy so teams align on release schedules.
 
-![SAFe® release trains map to iterations](media/safe/iteration-mapping.png)  
+![Screenshot that shows how SAFe® release trains map to iterations](media/safe/iteration-mapping.png)
 
-Because epics can span several release trains, the Portfolio team isn't associated with any specific iterations. Program teams track their Feature deliverables, which ship with a PI. And Feature teams work in Sprints to complete several stories. Each team chooses which iterations support them to track their focused set of deliverables.
+Because Epics can span multiple release trains, the Portfolio team typically doesn't bind to specific iterations. Program teams track Features by PI; Feature teams use Sprints to complete Stories.
 
-![Teams track deliverables using iterations](media/safe/program-iterations.png) 
-
+![Screenshot that shows teams tracking deliverables using iterations](media/safe/program-iterations.png)
 
 <a id="misc-artifacts"></a>
 
-## Iteration goals and objectives 
+## Iteration goals and objectives
 
-SAFe® practices include Agile release teams defining their iteration goals and objectives. We recommend using the project wiki or team dashboards to capture team information. The project wiki and team dashboards both support Markdown to add and format information. 
-
-For more information, see [Share information](#share-information) later in this article. 
-
+Capture iteration goals and objectives in the project wiki or on team dashboards. Both the wiki and dashboards support Markdown and let teams store goals, objectives, and guidance.
 
 <a id="tags"></a>
 
-## Value streams and budgets 
- 
-You can use tags for a quick and easy way to map Features and Epics to their Value Streams, Strategic Themes, and associated Budgets. You can add custom fields to capture budget estimates for Features that can then roll up to Epics. 
+## Value streams and budgets
 
-![Tags can track value streams or associated budgets](media/safe/epic-value-area-tags.png)  
+Use tags or custom fields to map Features and Epics to Value Streams, Strategic Themes, and budgets. Define rollup fields or use queries and charts to aggregate budget estimates from child Features up to Epics.
 
-With tags that you add to work items, you can:
+![Screenshot that shows tags used to track value streams or associated budgets](media/safe/epic-value-area-tags.png)
 
-- Filter any backlog or board
-- Create queries based on tags, and filter query results by tags
-- Create progress and trend charts or reports based on tags 
+With tags and queries you can:
+- filter backlogs and boards
+- build queries and filter results by tag
+- create charts and reports based on tags
 
-For a more robust mapping of work to architecture or business features, you can specify the Value Area for each Epic, Feature, or Story.  
-
-![Value Area tracks Business or Architectural work](media/safe/value-area-mapping.png)  
-
-With rollup, you can get Budget Estimates for Epics from a rollup of the estimates defined to their child Features, as shown in the following image. 
+For robust mappings, add a Value Area custom field on Epics, Features, or Stories and use rollup to gather estimates into portfolio views.
 
 > [!div class="mx-imgBorder"]
-> ![Budget estimate rollup](media/safe/budget-estimate-rollup.png)
+> ![Screenshot that shows a budget estimate rollup](media/safe/budget-estimate-rollup.png)
 
-To add custom fields, see [Customize Azure Boards, Add a custom field](safe-customize.md#add-custom-field). 
+To add custom fields, see [Customize Azure Boards, Add a custom field](safe-customize.md#add-custom-field).
 
 <a id="wiki"></a>
 
-## Use the project wiki to support your portfolio vision and strategic themes
+## Use the project wiki to support portfolio vision and strategic themes
 
-Information can be widely shared with an organization using the Azure DevOps project wiki. The wiki is a similar to a git repository that supports adding and editing pages using Markdown and a WYSIWYG editor. It versions each page so that it's easy to track who made changes and recover past versions.   
+Use the project wiki to share Portfolio Vision, Strategic Themes, taxonomy, goals, and objectives. The wiki versions pages and supports Markdown, so you can track edits and recover previous versions.
 
-Use your project wiki to support sharing the following SAFe® artifacts: 
-
-- Portfolio Vision
-- Strategic Themes 
-- Taxonomy 
-- Goals
-- Objectives
-- Customer-centric practices 
-
-For more information about the project wiki, see [Share information](#share-information) later in this article. 
-
+For details, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md).
 
 <a id="milestones"></a>
 
-## Milestones and key events  
+## Milestones and key events
 
-The end of each Program Increment, Sprint, Release Train, or Innovation and Planning (IP) Iteration represent natural SAFe® milestones. Many milestones are associated with specific ceremonies or practices, such as conducting retrospectives or demonstrating working software. 
+Represent SAFe® milestones (end of PIs, Sprints, Release Train events, or IP iterations) using:
+- a custom Milestone or Release work item field (picklist)
+- a tag on work items
+- a work item that represents the milestone with a target date
+- a one-day iteration path for an event date
 
-In Azure Boards, you can track other types of milestones or key events in the following ways. 
-
-- Custom field, such as Milestone or Release field with predefined picklist 
-- As a tag added to work items 
-- As a work item that specifies a target date 
-- As a one-day Iteration Path 
-
-With custom fields and tags, you can quickly filter backlogs, boards, and queries based on a specific milestone. 
+Use queries, dashboards, and charts to track milestone progress.
 
 <a id="shared-services"></a>
 
 ## Shared services team structure
 
-Resources that are shared across teams can be represented through their own Agile feature team, such as a UX Design team or a Security Compliance team. They can manage their backlog while having their work also appear in the backlogs of the teams they support. 
-
-Here we show how area paths are assigned to the UX Design team, and then selective subarea paths to other Agile teams. Work items that appear on shared area paths appear on the backlogs and boards of the associated teams. 
+Model shared services (for example, UX or Security) as their own teams and area paths. Shared-area work items appear on the backlogs and boards of the teams they support.
 
 > [!div class="mx-imgBorder"]
-> ![Shared services area path and team structure](media/safe/shared-services-team-structure.png)
-
+> ![Screenshot that shows the shared services area path and team structure](media/safe/shared-services-team-structure.png)
 
 <a id="retrospectives"></a>
 
 ## Retrospectives and reviews
 
-To support teams doing retrospectives and reviews, we recommend using the [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives). 
+Use the [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) to run retrospectives, capture feedback, and create follow-up work.
 
 > [!div class="mx-imgBorder"]
-> ![Retrospective board](media/safe/retrospective-board.png)
+> ![Screenshot that shows a retrospective board](media/safe/retrospective-board.png)
 
+The extension helps teams:
+- collect feedback on milestones
+- organize and prioritize feedback
+- create and track action items
 
-This extension allows teams to create their own retrospective boards and capture the following tasks: 
-- Collect feedback on project milestones
-- Organize and prioritize that feedback
-- Create and track actionable tasks to help each team in their improvement processes.
- 
 <a id="share-information"></a>
 
-## Share information   
+## Share information
 
-Azure Boards provides many ways to share information. 
+Share information across teams with:
+- rich work item fields and attachments
+- project and team dashboards (use Markdown widgets)—see [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
+- the project wiki for versioned, shareable documentation—see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
 
-- Work item forms provide rich-text fields to capture descriptions, acceptance criteria and more. File attachments can be added to work items or links to network file shares. 
-- Project and team dashboards can be used to share information along with status and progress charts and widgets. For more information, see [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md). 
-- The Project wiki provides a central repository with versioning control built-in to share information with all project members. Other wikis can be created as needed. For more information, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md). 
-
-For details on supported Markdown features, see the following articles.  
+For Markdown syntax guidance, see:
 - [Syntax guidance for Markdown usage in Wiki](../../project/wiki/markdown-guidance.md)
 - [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md)
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Configure Azure Boards to support SAFe®](safe-configure-boards.md)
 
-<a id="related-articles"></a> 
-
+<a id="related-articles"></a>
 
 ## Related content
 
 - [Agile process](../work-items/guidance/agile-process.md)
 - [Scrum process](../work-items/guidance/scrum-process.md)
-- [CMMI](../work-items/guidance/cmmi-process.md) 
+- [CMMI process](../work-items/guidance/cmmi-process.md)
 - [View SAFe® progress, roadmaps, and metrics](safe-review-roadmaps-progress.md)
-
-### Culture and scale
-
-- [Agile culture](agile-culture.md)  
-- [Practices that scale](practices-that-scale.md)  
+- [Agile culture](agile-culture.md)
+- [Practices that scale](practices-that-scale.md)
 - [Scale Agile to Large Teams](/devops/plan/scaling-agile)
-
-
-
-<!---
-
-
-
-
-
-
-
-
-
--->
