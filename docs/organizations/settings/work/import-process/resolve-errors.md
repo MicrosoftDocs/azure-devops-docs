@@ -161,7 +161,7 @@ are imported to add or update a process. This file contains all of the plug-ins 
 when creating a project. Each task group references a subordinate XML file (often in a subfolder) where 
 the specific tasks are defined. In general, you specify one task group for each plug-in.
 
-The ProcessTemplate.xml definition file must conform to the syntax and rules described in [ProcessTemplate XML element reference](/previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference).   
+The ProcessTemplate.xml definition file must conform to the syntax and rules.   
 
 <a id="VS412457"></a>
 
@@ -426,7 +426,7 @@ The `Microsoft.ProjectCreationWizard.WorkItemTracking` plug-in is missing from t
 
 ## Categories
 
-The Categories.xml definition file must conform to the syntax and rules described in [Categories XML element reference](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference).     
+The Categories.xml definition file must conform to the syntax and rules.     
 
 <a id="TF402546"></a>
 
@@ -541,14 +541,13 @@ Add `PortfolioBacklog` to ProcessConfiguration to reference Microsoft.EpicCatego
 ```
 Reference articles: 
 *   [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md)
-*   [Categories XML element reference](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)
 
 
 <a id="classification"></a>
 
 ## Classification plug-in errors
 
-The Classification.xml definition file must conform to the syntax and rules described in [Classification plug-in](/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in).     
+The Classification.xml definition file must conform to the syntax and rules.     
 
 <a id="TF402511"></a>
 
@@ -825,17 +824,14 @@ The following `LINKTYPE` element statements within the WorkItems.xml plug-in fil
 ### TF402564: You defined *[n]* global lists. Only *[nn]* are allowed.
 
 One or more WITs defined in the custom process template contain a `GLOBALLIST` element. 
-Search through your WIT definition files and replace any `GLOBALLIST` elements with `ALLOWEDVALUES` or `SUGGESTEDVALUES` elements. 
-For reference syntax, see [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).  
+Search through your WIT definition files and replace any `GLOBALLIST` elements with `ALLOWEDVALUES` or `SUGGESTEDVALUES` elements.
 
 <a id="TF402565"></a>
 
 ### TF402565: You defined *[n]* items in global list *[globalListName]*. A maximum of *[nn]* is allowed.
 
 The named `GLOBALLIST` element contains more items than allowed. Either reduce the number of list items contained in the `GLOBALLIST` element, 
-or segment the global list into two or more elements so that neither list exceeds the maximum number of allowed items. 
-
-For reference syntax, see [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).  
+or segment the global list into two or more elements so that neither list exceeds the maximum number of allowed items.
 
 <a id="process-configuration"></a>
 
@@ -1239,7 +1235,7 @@ For more information, see [ProcessConfiguration XML element reference](../../../
 
 ### TF400572: The Project Process Settings must be configured for this feature to be used.
 
-This error stems from old templates, before the Project Process Settings existed. Try running [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) to resolve, or add the [ProcessConfiguration XML file](../../../../reference/xml/process-configuration-xml-element.md) to the process template. 
+This error stems from old templates, before the Project Process Settings existed. Try to add the [ProcessConfiguration XML file](../../../../reference/xml/process-configuration-xml-element.md) to the process template. 
 
 
 <a id="wit-definitions"></a>
@@ -1258,8 +1254,6 @@ You defined more WITs that are allowed in the process. Review your WorkItems.xml
 
 Work item types (Bug, User Story, Task, etc.) require the `refname` attribute. The refname value must be unique and can't contain any reserved namespaces.
 The namespaces-System.*XXX* and Microsoft.AzureDevOps.*XXX*-are reserved by Azure DevOps. 
-
-For more information, see [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference) for more information.
 
 #### Error example
 
@@ -1347,7 +1341,6 @@ Most system fields don't allow specifying rules.
 Global lists aren't supported in Azure DevOps. 
 Replace all instances of `GLOBALLIST` elements with 
 `ALLOWEDVALUES` and `LISTITEM` elements in all WIT definition files.
-Reference:  [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).
 
 #### Error example
 
@@ -1379,7 +1372,6 @@ Reference:  [Define pick lists](/previous-versions/azure/devops/reference/xml/de
 
 Global lists aren't supported in Azure DevOps. Replace all instances of `GLOBALLIST` elements with 
 `ALLOWEDVALUES` and `LISTITEM` elements in all WIT definition files.
-Reference: [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).
 
 #### Error example
 
@@ -1848,7 +1840,7 @@ Change the field name of Custom.NewField.ExternalID
 
 ### VS403104: Work item type *[witName]* references the required field *[refName]* which isn't included in all layouts.
 
-This warning is generated if you have a required field in a work item type that is referenced in the `<Layout>` node but not the `<WebLayout>`. The `<WebLayout>` is used to modify the layout of the new form. See [WebLayout xml reference](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements) for details.
+This warning is generated if you have a required field in a work item type that is referenced in the `<Layout>` node but not the `<WebLayout>`. The `<WebLayout>` is used to modify the layout of the new form.
 
 <a id="VS403073"></a>
 
@@ -2061,7 +2053,7 @@ Custom controls aren't supported in Azure DevOps Services. Review the `FORM` sec
 ## Test management plug-in errors
 
 The TestManagement.xml file, located in the Test Management folder, 
-must conform to the syntax and rules described in [Define the initial configuration of Test Manager](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-test-manager). 
+must conform to the syntax and rules.
 
 
 <a id="TF402533"></a>
