@@ -96,7 +96,6 @@ You can apply the following customizations to your process:
 * [Add, remove, or modify a WIT](../../../../reference/add-modify-wit.md)
 * [Add or modify a field](../../../../reference/add-modify-wit.md)
 * [Add up to five portfolio backlogs](../../../../reference/add-portfolio-backlogs.md)
-* [Add categories](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types) that you use in your process configuration
 * [Modify process configuration](../../../../reference/xml/process-configuration-xml-element.md)
 * Add global lists
 
@@ -158,7 +157,7 @@ When customizing a process template for import, limit the number of the objects 
 
 ### Process template
 
-Your ProcessTemplate.xml file must conform to the syntax and rules described in [ProcessTemplate XML element reference](/previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference). Also, it must meet the following conditions:
+Your ProcessTemplate.xml file must conform to the syntax and rules meet the following conditions:
 
 * Limits the number of defined WITs to 64
 * Contains only one Categories.xml definition file
