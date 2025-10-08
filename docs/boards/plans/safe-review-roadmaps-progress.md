@@ -121,7 +121,7 @@ Portfolio teams review Features under development by program teams. The followin
 Feature Timeline provides another roadmap view. The following example shows Epics in the Feature Timeline tool. Configure progress bars to reflect completed stories or effort.
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot that shows Feature Timeline view of portfolio feature deliverables](media/safe-metrics/feature-timeline-fabrikam-team.png) 
+> ![Screenshot showing the Feature Timeline view of portfolio feature deliverables](media/safe-metrics/feature-timeline-fabrikam-team.png) 
 
 <!--- 
 
