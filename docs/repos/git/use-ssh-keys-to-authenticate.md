@@ -148,7 +148,7 @@ Associate the public key generated in the previous step with your user ID.
    Once saved, you can't change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile. 
    
    >[!NOTE]
-   > SSH keys stored in Azure DevOps expire after one year, unless the organization level policy has been set. To learn more about organization level policies, see [Change application connection & security policies for your organization](../organizations/accounts/change-application-access-policies.md)
+   > SSH keys stored in Azure DevOps expire after one year, unless the organization level policy has been set. To learn more about organization level policies, see [Change application connection & security policies for your organization](/docs/organizations/accounts/change-application-access-policies.md)
 
 1. On the **SSH Public Keys** overview page, the server fingerprints are displayed. Make note of the SHA256 fingerprint to use when you first connect to Azure DevOps via SSH.
 
