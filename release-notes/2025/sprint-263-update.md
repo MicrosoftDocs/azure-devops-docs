@@ -1,14 +1,14 @@
 ---
-title: TBD
+title: Secret expiration detection in Azure service connection
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/13/2025
-description: TBD
+description: Secret expiration detection in Azure service connection
 ---
 
-# TBD
+# Secret expiration detection in Azure service connection
 
-Placeholder 
+Service connections that use a service principal with a secret have always supported secret rotation via connection updates. However, this capability was not clearly surfaced in the configuration experience. We've now enhanced the Azure service connection workflow to automatically detect when a secret is nearing expiration and prompt users to rotate it, streamlining credential management and reducing the risk of service disruptions. 
 
 Check out the release notes for details.
 

@@ -5,7 +5,7 @@ ms.date: 10/13/2025
 ms.topic: include
 ---
 
-### Improved secret rotation support for Azure Service Connection  
+### Improved secret rotation support for Azure service connection  
 
 For service connections that use a service principal with a secret, we already let you rotate the secret by updating the service connection. This was not explicitly conveyed in the configuration experience though.
 We have updated the experience of the Azure service connection to detect secret expiration and offer to rotate the secret:
