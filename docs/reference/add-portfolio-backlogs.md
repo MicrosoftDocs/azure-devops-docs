@@ -261,8 +261,7 @@ If you want to add another WIT to your backlogs or boards, see [work item types 
 
 For more information about the syntax for a definition file or command line tool, see these topics:  
 
-- [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference)  
-- [Categories XML element reference](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)  
+- [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference)
 - [Process configuration XML element reference](xml/process-configuration-xml-element.md)  
 - [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md)  
 - [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories)  

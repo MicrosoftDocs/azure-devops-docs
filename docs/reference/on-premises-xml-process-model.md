@@ -77,8 +77,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    - [Modify a predefined pick list](add-modify-field.md#picklist)  
    - [State or Reason fields (customize workflow)](xml/change-workflow-wit.md)  
    - [Person-name field (add users)](../organizations/security/add-users-team-project.md)   
-   - [Resolution State & Failure Type](customize-work.md#test-experience)  
-   - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)   
+   - [Resolution State & Failure Type](customize-work.md#test-experience)
    :::column-end:::
 :::row-end:::
 
@@ -89,7 +88,6 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="2":::
    - [Add or modify a work item type](add-modify-wit.md)  
    - [Change the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
-   - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)  
    - [Specify the WIT color](xml/process-configuration-xml-element.md#wit-colors)  
    - [Specify the WIT icon](xml/process-configuration-xml-element.md)  
    - [Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors)   
@@ -109,8 +107,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    - [Set default weekend days (Scrum)](xml/process-configuration-xml-element.md#weekend_days)   
    - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)   
    - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)   
-   - [Process configuration](xml/process-configuration-xml-element.md)  
-   - [Categories](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)  
+   - [Process configuration](xml/process-configuration-xml-element.md)
    :::column-end:::
 :::row-end:::
 
