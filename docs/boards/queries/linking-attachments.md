@@ -17,10 +17,16 @@ ms.date: 10/09/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Link work items to track related work and dependencies and attach files to share information with your team. Then list work items by one or more of the following fields:
+Link work items to track related work and dependencies, and attach files to share information with your team. Query work items using the following fields:
 
-::: moniker range="azure-devops"  
-Attached File Count | (Discussion) Comment Count | External Link Count | Hyperlink Count | Link Comment | Related Link Count | Remote Link Count
+::: moniker range="azure-devops"
+- Attached File Count
+- (Discussion) Comment Count
+- External Link Count  
+- Hyperlink Count
+- Link Comment
+- Related Link Count
+- Remote Link Count
 ::: moniker-end 
 
 ::: moniker range="< azure-devops" 
@@ -32,7 +38,7 @@ Attached File Count | (Discussion) Comment Count | External Link Count | Hyperli
 - Related Link Count
 ::: moniker-end 
 
-For more information about these fields, see the [table provided later in this article](#table-field). 
+For detailed field descriptions, see [Fields associated with links and attachments](#fields).
 
 ## Prerequisites
 
@@ -177,7 +183,7 @@ The following table describes fields associated with links and attachments. Most
    :::column-end:::
    :::column span="3":::
    The number of files attached to the work item and stored in the work item tracking database.  
-   Reference Name=System.AttachedFileCount, Data type=Integer  
+   **Reference Name**=`System.AttachedFileCount`, **Data type**=Integer  
    > [!NOTE]
    > For Azure Boards (cloud service), you can add up to 100 attachments to a work item. Attempts to add more results in an error message when you save the work item.
    :::column-end:::
@@ -188,7 +194,7 @@ The following table describes fields associated with links and attachments. Most
    :::column-end:::
    :::column span="3":::
    The number of comments added to the **Discussion** section of the work item.  
-   Reference Name=System.CommentCount, Data type=Integer  
+   **Reference Name**=`System.CommentCount`, **Data type**=Integer  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -200,7 +206,7 @@ The following table describes fields associated with links and attachments. Most
    :::column-end:::
    :::column span="3":::
    The number of links from the work item to artifacts that aren't work items, such as pull requests, commits, changesets, or other link types.  
-   Reference Name=System.ExternalLinkCount, Data type=Integer
+   **Reference Name**=`System.ExternalLinkCount`, **Data type**=Integer
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -213,7 +219,7 @@ The following table describes fields associated with links and attachments. Most
    :::column span="3":::
    The number of hyperlinks that the work item contains.
 
-   Reference Name=System.HyperLinkCount, Data type=Integer
+   **Reference Name**=`System.HyperLinkCount`, **Data type**=Integer
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -223,7 +229,7 @@ The following table describes fields associated with links and attachments. Most
    :::column span="3":::
    Contains comments from the team member who created the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in the Query Editor.)  
 
-   Reference Name=System.Links.Comment, Data type=PlainText
+   **Reference Name**=`System.Links.Comment`, **Data type**=PlainText
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -235,7 +241,7 @@ The following table describes fields associated with links and attachments. Most
    :::column span="3":::
    Contains the work item type, ID, and title of the work item that is the target of the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in the Query Editor.) 
 
-   Reference Name=System.Links.Description, Data type=PlainText
+   **Reference Name**=`System.Links.Description`, **Data type**=PlainText
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= azure-devops-2022" 
@@ -250,7 +256,7 @@ The following table describes fields associated with links and attachments. Most
    When included as a column option in a backlog or query results list, the **Title** of the parent work item is displayed. Internally, the system stores the **ID** of the work item in an Integer field. 
    > [!NOTE]
    > You can add the **Parent** field as a column or specify it within a query clause by specifying the parent work item ID.   
-   Reference Name=System.Parent, Data type=Integer
+   **Reference Name**=`System.Parent`, **Data type**=Integer
    :::column-end:::
 :::row-end:::
 ::: moniker-end 
@@ -266,7 +272,7 @@ The following table describes fields associated with links and attachments. Most
    When included as a column option in a backlog or query results list, the **Title** of the parent work item is displayed. Internally, the system stores the **ID** of the work item in an Integer field. 
    > [!NOTE]
    > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause.   
-   Reference Name=System.Parent, Data type=Integer
+   **Reference Name**=`System.Parent`, **Data type**=Integer
    :::column-end:::
 :::row-end:::
 ::: moniker-end 
@@ -279,7 +285,7 @@ The following table describes fields associated with links and attachments. Most
    :::column-end:::
    :::column span="3":::
    The number of links defined for a work item that use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md).  
-   Reference Name=System.RelatedLinkCount, Data type=Integer
+   **Reference Name**=`System.RelatedLinkCount`, **Data type**=Integer
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -291,7 +297,7 @@ The following table describes fields associated with links and attachments. Most
    :::column-end:::
    :::column span="3":::
    Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. The same Microsoft Entra ID must manage the organizations. Supported link types include Consumes From, Produced For, and Remote Related. For more information, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).  
-   Reference Name=System.RemoteLinkCount, Data type=Integer
+   **Reference Name**=`System.RemoteLinkCount`, **Data type**=Integer
    :::column-end:::
 :::row-end:::
 
