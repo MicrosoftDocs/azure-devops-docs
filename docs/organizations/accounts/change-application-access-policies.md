@@ -43,6 +43,20 @@ When you deny access to an authentication method, no application can access your
 
 [Conditional Access (CA) in Azure DevOps](conditional-access-policies.md) is enforced through Microsoft Entra ID and supports both interactive (web) and non-interactive (client credential) flows, validating policies like MFA, IP restrictions, and device compliance during sign-in and periodically via token checks. 
 
+## SSH key policies
+
+#### SSH authentication
+
+The **SSH authentication** policy controls whether or not an organization will allow the use of SSH keys.
+
+#### Validate SSH key expiration
+
+> Best practice is to create and upload a new key before it expires. To help prevent the loss of access due to key expiration, there is a notification 7 days before the expiration and again once the key has expired. To learn more, see [create and upload a new SSH key](/docs/repos/git/use-ssh-keys-to-authenticate.md#step-1-Create-your-SSH-keys).
+
+**Enabled** by default, the **Validate SSH key expiration** policy controls the validation of the SSH key expiration date. This means the expiration date set will always be honored and the key will no longer be valid once that date has been met. 
+
+Once **disabled**, the **Validate SSH key expiration** policy will no longer check to see if the SSH key has expired and will allow the key to still be used.
+ 
 
 ## Policies by Level
 
@@ -50,6 +64,7 @@ When you deny access to an authentication method, no application can access your
 |--------------|-------------|
 | [**Third-party application access via OAuth**](#restrict-authentication-methods) | ✅ | |
 | [**SSH authentication**](#restrict-authentication-methods) | ✅ |  |
+| [**Validate SSH key expiration**](#validate-ssh-key-expiration) | ✅ |  |
 | [**Log audit events**](../audit/azure-devops-auditing.md) | ✅ |  |
 | [**Restrict personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-personal-access-token-creation-organization-policy) | ✅ |  |
 | [**Allow public projects**](../projects/make-project-public.md) | ✅ |  |

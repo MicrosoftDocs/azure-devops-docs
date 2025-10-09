@@ -28,6 +28,14 @@ You can connect to your Git repos through SSH on macOS, Linux, or Windows to sec
 > - Select **SSH** and copy the new SSH URL.
 > - In your shell run `git remote set-url <remote name> <new SSH URL>` for each remote of a repository you wish to update. Alternatively, use a GUI client to update the remote URLs.
 
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| [Access to clone the repository](set-git-repository-permissions.md#default-repository-permissions)|
+|**Policies**| [SSH authentication enabled](/docs/organizations/accounts/change-application-access-policies.md#manage-a-policy)|
+
+
 ## How SSH key authentication works
 
 SSH public key authentication works with an asymmetric pair of generated encryption keys. The _public_ key is shared with Azure DevOps and used to verify the initial ssh connection. The _private_ key is kept safe and secure on your system.
@@ -139,8 +147,8 @@ Associate the public key generated in the previous step with your user ID.
 1. Give the key a useful description (this description is displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key.
    Once saved, you can't change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile. 
    
->[!NOTE]
-> SSH keys stored in Azure DevOps expire after one year, unless the PCA has toggled off the key validation. [Learn more]()
+   >[!NOTE]
+   > SSH keys stored in Azure DevOps expire after one year, unless the organization level policy has been set. To learn more about organization level policies, see [Change application connection & security policies for your organization](../organizations/accounts/change-application-access-policies.md)
 
 1. On the **SSH Public Keys** overview page, the server fingerprints are displayed. Make note of the SHA256 fingerprint to use when you first connect to Azure DevOps via SSH.
 
@@ -209,6 +217,22 @@ Proceed only if they match!
 > To make the most of SSH it is common to use an SSH Agent to manage your SSH key(s). Setting up an agent is beyond the scope of this article, though.
 
 ## Questions and troubleshooting
+
+### Q: My SSH key has expired, what should I do?
+
+**A:** The **recommended course of action** is to follow the steps above to [create and upload a new SSH key](use-ssh-keys-to-authenticate.md#step-1-Create-your-SSH-keys). 
+
+**As an alternative option**, a Project Collection Admin can disable the policy that validates the SSH key expiration date. **By default, the Validate SSH key expiration policy is enabled.** For more information about SSH policies, see [SSH key policies](/docs/organizations/accounts/change-application-access-policies.md#ssh-key-policies)
+
+You will automatically receive a notification 7 days prior and when your key has expired. 
+Along with these notifications you may also see the messaging below:
+
+```
+remote: Authentication failed: your SSH key has expired. To restore access, visit https://aka.ms/ado-ssh-public-key-expired for guidance.
+remote: Public key authentication failed.
+fatal:  Could not read from remote repository.
+```
+
 
 ### Q: I see ssh-rsa related warnings. What should I do?
 
