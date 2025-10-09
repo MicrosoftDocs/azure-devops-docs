@@ -32,7 +32,7 @@ The following section describes new features in development for Managed DevOps P
 
 ## October 2025
 
-* **Pool creation at the Azure DevOps project level using project level permissions**: We enabled a new mode of Managed DevOps Pools creation that removes the requirement for organization-level agent pools permissions. Creating a pool now requires only project-level permissions for each project where you want to create Managed DevOps Pools. For more information, see [Prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions).
+* **Pool creation at the Azure DevOps project level using project level permissions**: We enabled a new mode of Managed DevOps Pools creation that removes the requirement for organization-level agent pools permissions. Creating a pool now requires only project-level permissions for each project where you want to create a Managed DevOps Pool. For more information, see [Prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions).
 
 ## August 2025
 
