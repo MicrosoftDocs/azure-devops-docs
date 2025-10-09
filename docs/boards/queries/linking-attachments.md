@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: example-scenario
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2025
+ms.date: 10/09/2025
 ---
 
 # Query work items by link or attachment count  
