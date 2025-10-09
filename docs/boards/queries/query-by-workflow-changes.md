@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2025
+ms.date: 10/09/2025
 ---
 
 # Query by assignment or workflow changes
@@ -704,7 +704,7 @@ For more information about field attributes, see [Work item fields and attribute
 > [!NOTE]  
 > 1. See [Date and Identity fields](#date-identity).  
 > 2. By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Microsoft Entra ID. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups defined in AD/Microsoft Entra ID or by adding accounts to project or collection security groups. See set up [Active Directory or Microsoft Entra ID](../../organizations/security/about-permissions.md#active-directory-and-microsoft-entra-security-groups). 
-> 3. See [Activated By/Date and Resolved By/Date fields](#activated-by-and-activated-date-transition-assignments).   
+> 3. See Activated By/Date and Resolved By/Date fields.   
 > 4. The Requirement Category applies to all work item types that appear on the product backlog and board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md).
 
 ::: moniker-end
