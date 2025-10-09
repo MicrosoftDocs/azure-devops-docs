@@ -10,22 +10,22 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/16/2024
+ms.date: 10/08/2025
 ---
 
 # Query by titles, IDs, and rich-text fields
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, see [Create a query, Best practices](using-queries.md#best-practices).  
+Filter work items by keywords, IDs, or empty text fields by using single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If queries take too long to return, see [Create a query, Best practices](using-queries.md#best-practices).
 
 ## Prerequisites
 
 [!INCLUDE [prerequisites-queries](../includes/prerequisites-queries.md)]
 
-## Supported operators and macros 
+## Supported operators and macros
 
-Query clauses that specify a text or rich-text field can use the operators and macros listed in the following table.
+Use the operators and macros listed for text and rich-text fields.
 
 ---
 :::row:::
@@ -46,14 +46,14 @@ Query clauses that specify a text or rich-text field can use the operators and m
       `Contains Words`, `Does Not Contain Words`, `Is Empty`<sup>1</sup>, `Is Not Empty`<sup>1</sup>
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **Single text (String)**
    :::column-end::: 
    :::column span="3":::
-      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
-      **Macros**: `[Any]`, valid with the **Work Item Type** field and `@Project`<sup>2</sup>, valid with the **Team Project** field. 
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`  
+      **Macros**: `[Any]` valid with the **Work Item Type** field and `@Project`<sup>2</sup>, valid with the **Team Project** field. 
    :::column-end:::
 :::row-end:::
 ---
@@ -62,9 +62,9 @@ Query clauses that specify a text or rich-text field can use the operators and m
       **ID**
    :::column-end::: 
    :::column span="3":::
-      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`
-      **Macros**: `@Follows`, `@MyRecentActivity`, `@RecentMentions`, `@RecentProjectActivity` valid with the **ID** field and `In` and `Not In` operators 
-     `@Project`<sup>2</sup>, valid with the **Team Project** field. 
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`  
+      **Macros**: `@Follows`, `@MyRecentActivity`, `@RecentMentions`, `@RecentProjectActivity` valid with the **ID** field and `In` and `Not In` operators.  
+      `@Project`<sup>2</sup>, valid with the **Team Project** field.
    :::column-end:::
 :::row-end:::
 ---
@@ -73,48 +73,46 @@ Query clauses that specify a text or rich-text field can use the operators and m
       **State** and **Work Item Type** fields
    :::column-end::: 
    :::column span="3":::
-      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], `Contains`, `Does Not Contain`, `In`, `Not In`, `In Group`, `Not In Group`, `Was Ever`   
-      **Macros**: `[Any]` valid with both fields. 
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`  
+      **Macros**: `[Any]` valid with both fields.
    :::column-end:::
 :::row-end:::
 ---
- 
 
 > [!NOTE]  
-> 1. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2020 and later versions
-> 2. The system automatically defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#query-across-or-within-projects).
+> 1. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2020 and later versions.  
+> 2. The system defaults to filtering based on the current project. For more information, see [Query across projects](using-queries.md#query-across-or-within-projects).
 
+## Use `Contains Words` for string matches
 
-## Use `Contains words` for string matches
- 
-When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator runs a full-text search on the specified field, which is faster in most cases. Text string is limited to 100 characters. 
+When you want to filter on a string match, prefer the `Contains Words` operator over `Contains`. `Contains Words` uses the full-text index and is typically faster. Text strings are limited to 100 characters.
 
-While the `Contains` operator runs a table scan, which isn't only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
+The `Contains` operator runs a table scan; it's slower and consumes more CPU resources, which can affect your rate limits.
 
 > [!NOTE]
-> The `Contains Words` operator makes use of SQL's [full-text search indexing](./query-operators-variables.md#full-text). When a new value is saved to a long-text field, SQL Server will:
+> The `Contains Words` operator uses SQL full-text search indexing. When a new value is saved to a long-text field, SQL Server:
 >
-> - Split the phrase into individual words
-> - Remove any common words that don't really add value to a search (like "a" or "is" in English)
-> - Convert words to their common stem (e.g. running, ran, and runner would get converted into "run", as they are all variations on that word)
-> - Store these unique keywords in an index.
+> - Splits the phrase into words
+> - Removes common stop words (for example, "a" or "is")
+> - Converts words to their common stem (for example, running → run)
+> - Stores the resulting keywords in an index
 >
-> When a user then runs a query on this field using the `Contains Words` operator, the search will be run against the unique keywords stored in the index. For long-text fields, this makes searching much more efficient and quicker than doing a substring search. By default, SQL defines a "word" as a set of characters between punctuation. For example, periods signify the end of a word, but the period is not considered to be part of the word. Because the full-text search index contains keywords instead of exact phrases, you'll end up getting all the results that contain the same keywords, as determined by the indexing.
+> Queries that use `Contains Words` search the index, giving faster results for long-text fields. For more information and server/collation requirements, see [Query fields, operators, values, and variables - Full-text and partial word searches](query-operators-variables.md#full-text).
 
 <a id="keyword"></a>
 
 ## Keyword or phrase query with wildcards
 
-Use **Contains** or **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
+Use `Contains` or `Contains Words` to find items that partially or exactly match words or phrases.
 
-![Editor for flat list query for filtering key words.](media/example-work-item-queries/IC675039.png)   
+![Screenshot that shows the editor for a flat-list query used to filter keywords.](media/example-work-item-queries/IC675039.png)
 
-Choose **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Choose **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, *. These operators use the full-text search index.
+Choose `Contains` or `Does Not Contain` to search exact or partial matches. Choose `Contains Words` or `Does Not Contain Words` to use the full-text index and wildcard character `*`.
 
-For example, specify **Contains Words** and **inform&#42;** to filter on a text field that contains *inform* or *information* or *informational*. 
+For example, `Contains Words` with `inform*` matches `inform`, `information`, and `informational`.
 
-> [!div class="mx-imgBorder"] 
-> ![Use wild card with Contains Words.](media/text-queries/contains-word-wildcard.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows using a wildcard with the Contains Words operator.](media/text-queries/contains-word-wildcard.png)
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
@@ -122,115 +120,102 @@ For example, specify **Contains Words** and **inform&#42;** to filter on a text 
 
 ## Query for specific words and not others
 
-Use **Contains Words** and **Does Not Contain Words** operators to list items that exactly match the words or phrase that you enter, and exclude other words or phrases. You can use these operators in combination and with the wildcard character (*).
+Use `Contains Words` and `Does Not Contain Words` to include exact words or phrases and exclude others. Combine these operators and use `*` for wildcard matching.
 
-In the following example, these operators filter work items for those items that contain the work *Phase* but not the word *Phasor*. 
+The following example shows a filter that includes the work "Phase" but excludes "Phasor."
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Query Editor to include and exclude exact words.](media/text-queries/contains-words-exact-query.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows the Query Editor including and excluding exact words.](media/text-queries/contains-words-exact-query.png)
 
 > [!NOTE]
-> Certain reserved words in SQL, such as `WHERE`, `THEN`, and `AND`, do not return results when used as standalone search terms with the `Contains Words` or `Does Not Contain Words` filters.
+> Certain reserved SQL words, such as `WHERE`, `THEN`, and `AND`, don't return results when used as standalone search terms with `Contains Words` or `Does Not Contain Words`.
 
 ## Undefined field value queries
 
-You can find work items that have an undefined field value by using the equals operator `=` and leaving the Value for the field blank. For example, the following filters list all work items of type Task whose Activity field is blank.  
+Find work items with an undefined (blank) field value by using the "equals" operator `=` and leaving the Value blank. For example, the following filters list all tasks whose Activity field is blank.
 
-![Filter based on blank entries](media/example-work-item-queries/IC736440.png)
+![Screenshot that shows a filter where the Activity value is blank.](media/example-work-item-queries/IC736440.png)
 
-To list work items based on a field that isn't blank, use the *not* operator `<>` and leave the Value blank.
+To find items where a field isn't blank, use the "not" operator `<>` and leave the Value blank.
 
 <a id="empty"></a>
 <a id="empty-or-not-empty-html-field-queries"></a>
 
 ## Empty or not empty HTML field queries
 
-You can find work items with empty **Description**s. Using the **Is Empty** or **Is Not Empty** with an HTML field supports listing work items with empty or not empty rich text fields. You don't specify a value with this operator.  
+Use `Is Empty` or `Is Not Empty` with an HTML field to list work items with empty or nonempty rich-text fields. You don't specify a value for these operators.
 
-For example, the following query filters list all work items with some **Description** field entries.   
-
-> [!div class="mx-imgBorder"] 
-> ![Filter based non-empty HTML fields](media/example-queries/is-not-empty-query.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows filtering by non-empty HTML fields.](media/example-queries/is-not-empty-query.png)
 
 ## Filter for special characters
 
-To filter for a URL or a phrase that contains special characters like `/` or `-`, use a backslash to escape these characters. The following examples show how to filter for a URL and for a phrase with a dash:
+Escape special characters like `/` or `-` with a backslash when filtering URLs or phrases.
 
-- **Filter for a URL**: Search for a work item title that includes the phrase `https://example.com/path-to-resource`.
+- Filter for a URL:
   - Query: `Title ~ "https:\/\/example.com\/path-to-resource"`
-  - Results: Returns all work items with the exact URL in the specified field.
+  - Results: Returns work items with the exact URL.
 
-- **Filter for a phrase with a dash**: Search for a work item title that includes `"your-phrase-with-dash"`.
+- Filter for a phrase with a dash:
   - Query: `Title ~ "feature-update\-2023"`
-  - Results: Returns all work items that contain the exact phrase with dashes in the specified field.
-
-<a id="no-tags"></a>
+  - Results: Returns work items that contain the exact phrase with dashes.
 
 > [!NOTE]
-> You can't query for work items that don't have any tags attached to them. To up vote this feature request, do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
-
+> You can't query for work items that don't have any tags attached. To upvote this feature request, visit Developer Community: [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425).
 
 <a id="category"></a>
 
 ## Category-based queries
 
-To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
+To filter by category, use the `In Group` operator. The example below returns items in the current project assigned to the team member and in the Bug category.
 
-![Query clause to find work items by category](media/example-work-item-queries/IC720125.png)
+![Screenshot that shows a clause that finds work items by category.](media/example-work-item-queries/IC720125.png)
 
 <a id="category"></a>
 
-### What items appear in the Requirement or Task categories? 
+### What items appear in the Requirement or Task categories?
 
-The default assignments of work item types to each category are listed as follows for each process.  
+Default work item type assignments for each process:
 
 | Process | Requirement category | Task category |
-|---------|---------|---------|
-| Basic | Issue | Task |
-| Agile | User Story | Task |
-| Scrum | Product Backlog Item, Bug | Task |
-| CMMI | Requirement | Task |
+|---------|----------------------|---------------|
+| Basic   | Issue                | Task          |
+| Agile   | User Story           | Task          |
+| Scrum   | Product Backlog Item, Bug | Task     |
+| CMMI    | Requirement          | Task          |
 
-Each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). You can add custom work item types to a backlog. For more information, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
+Teams can choose whether the Bug work item type appears in the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). To add custom work item types to a backlog, see [Add or modify a work item type](../../reference/add-modify-wit.md).
 
 <a id="following"></a>
 
 ## Query for work items that you're following
 
-You can use the **@Follows** macro to filter a list based on work items you're following along with other query filters. 
+Use the `@Follows` macro with the ID field and the `In` operator to list work items you follow, across projects if needed.
 
-For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **@Follows** macro.  
-
-
-:::image type="content" source="../work-items/media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
-
+:::image type="content" source="../work-items/media/follow-work/query-follows.png" alt-text="Screenshot that shows the Query Editor with ID In @Follows query clause":::
 
 <a id="recent-macros"></a>
 
-
 ## Query for recent work item activity
 
-You can use the following macros to list work items based on recent activity: 
+Use these macros to list items based on recent activity:
 
-- **@MyRecentActivity**: List items you recently viewed or modified.
-- **@RecentMentions**: List items you were added to via an **@mention** in the last 30 days.
-- **@RecentProjectActivity**: List items recently created or modified in your project.
+- `@MyRecentActivity`: Items you recently viewed or modified.
+- `@RecentMentions`: Items with an `@mention` for you in the last 30 days.
+- `@RecentProjectActivity`: Items recently created or modified in your project.
 
-Specify the **ID** field and either the **In** or **Not In** operators.  
+Use the ID field with `In` or `Not In`.
 
-For example, the following query shows how to query for work items that you recently viewed or modified. 
-
-:::image type="content" source="media/titles-ids/my-recent-activity-macro-query.png" alt-text="Query Editor, with ID In @MyRecentActivity query clause":::
-
+:::image type="content" source="media/titles-ids/my-recent-activity-macro-query.png" alt-text="Screenshot that shows the Query Editor with ID In @MyRecentActivity macro query":::
 
 <a id="fields"></a>
 
-## Common fields for most work item types 
+## Common fields for most work item types
 
-The following table describes common fields used to filter queries. The **ID** fields uniquely identify work items in a list. Use the **Title** field to distinguish the work item from all others of the same type. The **Description** and other rich-text (data type=HTML) fields provide additional information that is needed to implement work and track changes. After a work item is created, you can modify all fields except for the **ID**. When you add and save a work item, the ID gets assigned by the system and can't be changed. 
+This table describes common fields used in queries. The ID uniquely identifies a work item. Use Title to distinguish items of the same type. Description and other rich-text fields provide detailed implementation info. After creation, you can modify all fields except ID; the system assigns the ID when the work item is created.
 
 > [!NOTE]   
-> The system automatically indexes all long-text fields with a data type of **PlainText** and **HTML** fields for full-text search. This includes the **Title**, **Description**, and **Steps to Repro** fields. For more information and  server and collation requirements applicable to on-premises Azure DevOps, see [Query fields, operators, values, and variables - Full-text and partial word searches](query-operators-variables.md#full-text).
+> The system indexes long-text fields of type `PlainText` and `HTML` for full-text search, including `Title`, `Description`, and `Steps to Repro`. For details and server/collation requirements applicable to on-premises Azure DevOps, see [Query fields, operators, values, and variables - Full-text and partial word searches](query-operators-variables.md#full-text).
 
 :::row:::
      :::column span="1":::
@@ -249,23 +234,21 @@ The following table describes common fields used to filter queries. The **ID** f
    Acceptance Criteria  <sup>1</sup>
    :::column-end:::
    :::column span="2":::
-   A description of the criteria to be met before the bug or product backlog item can be closed.
+   A description of the criteria that must be met before the bug or product backlog item can be closed.
 
-   Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria helps ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item is satisfactorily completed.
- 
+   Before work begins, record clear acceptance criteria so the team and customers share expectations. Acceptance criteria help define acceptance tests and confirm whether the item is complete.
+
    Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML
-   :::column-end:::     
+   :::column-end:::
    :::column span="1":::
    Bug, Epic, Feature, Product backlog item (Scrum)
-
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    Description <sup>1, 2</sup>
    :::column-end:::
-     :::column span="2":::
-   
+   :::column span="2":::
    Use this field to provide in-depth information about a work item.
 
    Reference name=System.Description, Data type=HTML
@@ -279,8 +262,7 @@ The following table describes common fields used to filter queries. The **ID** f
    ID
    :::column-end:::
    :::column span="2":::
-   
-   The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.  
+   The unique identifier assigned to a work item. IDs are unique across projects within a project collection.
 
    Reference name=System.Id, Data type=Integer
    :::column-end:::
@@ -289,11 +271,12 @@ The following table describes common fields used to filter queries. The **ID** f
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
-   Repro Steps (or Steps to reproduce) <sup>1</sup> 
+   :::column span="1":::
+   Repro Steps (or Steps to reproduce) <sup>1</sup>
    :::column-end:::
-     :::column span="2":::
-   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full effect of the problem and whether they fixed the bug. This entry includes actions taken to find or reproduce the bug and expected behavior.   
+   :::column span="2":::
+   Steps required to reproduce unexpected behavior. Capture enough detail so others can reproduce and validate fixes.
+
    Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
    :::column-end:::
    :::column span="1":::
@@ -308,22 +291,22 @@ The following table describes common fields used to filter queries. The **ID** f
    Describes how an impediment was resolved.
 
    Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML
-   :::column-end:::     
+   :::column-end:::
    :::column span="1":::
    Impediment (Scrum)
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
-   System Info<sup>1</sup> 
+   :::column span="1":::
+   System Info<sup>1</sup>
    :::column-end:::
-     :::column span="2":::
-   Information about the software and system configuration that is relevant to the bug, code review, or feedback. 
+   :::column span="2":::
+   Information about software and system configuration relevant to the bug or feedback.
 
    Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML
    :::column-end:::
-     :::column span="1":::
-   Bug, Code Review Request, Feedback Request    
+   :::column span="1":::
+   Bug, Code Review Request, Feedback Request
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -331,7 +314,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Team Project
    :::column-end:::
    :::column span="2":::
-   The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. For more information, see [Example queries, query across projects](using-queries.md#query-across-or-within-projects).   
+   The project that owns the work item. Add this field to a query to filter by one or more projects. For details, see [Query across projects](using-queries.md#query-across-or-within-projects).
 
    Reference name=System.TeamProject, Data type=String
    :::column-end:::
@@ -340,11 +323,11 @@ The following table describes common fields used to filter queries. The **ID** f
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    Title
    :::column-end:::
-     :::column span="2":::
-   A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.
+   :::column span="2":::
+   A short description that summarizes the work item and helps team members distinguish it from others.
 
    Reference name=System.Title, Data type=String
    :::column-end:::
@@ -353,13 +336,13 @@ The following table describes common fields used to filter queries. The **ID** f
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    Work Item Type
    :::column-end:::
-     :::column span="2":::
-   The name of the work item type. Work item types are defined based on the process used when you created your project. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) and [Add or modify a work item type](../../reference/add-modify-wit.md). 
+   :::column span="2":::
+   The work item type name, defined by the process used when the project was created. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) and [Add or modify a work item type](../../reference/add-modify-wit.md).
 
-   To filter work items based on their [category assignment](#category), you can use the **In Group** and **Not In Group** operators and select a category from the drop-down list.  
+   To filter by category assignment, use the `In Group` and `Not In Group` operators and select a category from the drop-down.
 
    Reference name=System.WorkItemType, Data type=String
    :::column-end:::
@@ -368,17 +351,12 @@ The following table describes common fields used to filter queries. The **ID** f
    :::column-end:::
 :::row-end:::
 
-> [!NOTE]  
-> Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
-
-
 ## Related content
 
 - [Query editor](using-queries.md)   
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [About managed queries](about-managed-queries.md)   
-
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
