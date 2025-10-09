@@ -239,16 +239,16 @@ This table describes common fields used in queries. The ID uniquely identifies a
    Before work begins, record clear acceptance criteria so the team and customers share expectations. Acceptance criteria help define acceptance tests and confirm whether the item is complete.
 
    Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML
-   :::column-end:::     
+   :::column-end:::
    :::column span="1":::
    Bug, Epic, Feature, Product backlog item (Scrum)
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    Description <sup>1, 2</sup>
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    Use this field to provide in-depth information about a work item.
 
    Reference name=System.Description, Data type=HTML
@@ -271,10 +271,10 @@ This table describes common fields used in queries. The ID uniquely identifies a
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
-   Repro Steps (or Steps to reproduce) <sup>1</sup> 
+   :::column span="1":::
+   Repro Steps (or Steps to reproduce) <sup>1</sup>
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    Steps required to reproduce unexpected behavior. Capture enough detail so others can reproduce and validate fixes.
 
    Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
@@ -291,22 +291,22 @@ This table describes common fields used in queries. The ID uniquely identifies a
    Describes how an impediment was resolved.
 
    Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML
-   :::column-end:::     
+   :::column-end:::
    :::column span="1":::
    Impediment (Scrum)
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
-   System Info<sup>1</sup> 
+   :::column span="1":::
+   System Info<sup>1</sup>
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    Information about software and system configuration relevant to the bug or feedback.
 
    Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML
    :::column-end:::
-     :::column span="1":::
-   Bug, Code Review Request, Feedback Request    
+   :::column span="1":::
+   Bug, Code Review Request, Feedback Request
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -322,10 +322,11 @@ This table describes common fields used in queries. The ID uniquely identifies a
    All
    :::column-end:::
 :::row-end:::
-     :::column span="1":::
+:::row:::
+   :::column span="1":::
    Title
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    A short description that summarizes the work item and helps team members distinguish it from others.
 
    Reference name=System.Title, Data type=String
@@ -334,10 +335,11 @@ This table describes common fields used in queries. The ID uniquely identifies a
    All
    :::column-end:::
 :::row-end:::
-     :::column span="1":::
+:::row:::
+   :::column span="1":::
    Work Item Type
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    The work item type name, defined by the process used when the project was created. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) and [Add or modify a work item type](../../reference/add-modify-wit.md).
 
    To filter by category assignment, use the `In Group` and `Not In Group` operators and select a category from the drop-down.
