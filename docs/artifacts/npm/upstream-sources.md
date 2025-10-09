@@ -1,56 +1,55 @@
 ---
-title: Use packages from npmjs.com
-description: How to consume packages from npmjs.com upstream source
+title: Use packages from the npm registry
+description: Learn how to consume packages from the npm registry with Azure Artifacts upstream sources.
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
-ms.date: 11/29/2023
+ms.topic: quickstart
+ms.date: 10/08/2025
 monikerRange: '>= azure-devops-2020'
 "recommendations": "true"
 ---
 
-# Use packages from npmjs.com
+# Use packages from the npm registry
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-The npm client is designed to work with one main registry (known as a feed in Azure Artifacts) at a time. However, it does support additional scoped registries. If you plan to use both private packages and public packages from npmjs.com, it's recommended to use upstream sources.
-Once you enable upstream sources in your feed, Azure Artifacts automatically saves a copy of any installed package to your feed. This offers the greatest flexibility, allowing you to use a mix of scoped and non-scoped packages in your feed, including both scoped and non-scoped packages from npmjs.com.
+Azure Artifacts upstream sources enable developers to consume packages from public registries like *npmjs.com*. Once upstream sources are enabled in your feed, Azure Artifacts automatically saves a copy of any package installed from an upstream source to your feed. This setup offers the greatest flexibility, allowing you to use a mix of scoped and non-scoped packages, including those from public registries, all within a single feed. This setup also ensures continued access to those packages even if the upstream source becomes temporarily unavailable.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+| **Product**        | **Requirements**   |
+|--------------------|--------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).|
 
-- An Azure Artifacts feed.
+## Create a feed
 
-- Download [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+If you already have an Azure Artifacts feed, skip to the next section. Otherwise, create a new one as follows:
+ 
+1. Sign in to Azure DevOps, then navigate to your project.
 
-## Enable upstream sources
+1. Select **Artifacts**, then select **Create Feed**.
 
-If you haven't created a feed yet, follow these steps to create a new one and make sure to check the upstream sources checkbox to enable them. If you already have a feed, proceed to the [next step](#add-npmjs-upstream) to add npmjs as an upstream source.
-
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **Create Feed**.
-
-1. Provide a descriptive **Name** for your feed, set its **Visibility** and **Scope**. Check the **Upstream sources** checkbox to include packages from public registries.
+1. Enter a **Name** for your feed, set the **Visibility** to define who can view your packages, and choose the feed **Scope**. Be sure to check the **Include packages from common public sources** box to enable upstream sources and allow consumption of packages from public registries.
 
 1. Select **Create** when you're done.
 
 ## Add npmjs upstream
 
-If you checked the upstream sources checkbox during the creation of your feed, npmjs should have been added automatically. If not, you can add it manually as follows:
+If you've checked the upstream sources checkbox during the creation of your feed, npmjs will be added automatically to the list of upstream sources in your feed. If not, you can add it manually as follows:
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to Azure DevOps, then navigate to your project.
 
-1. Select **Artifacts**, and then select your feed.
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
+1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to open **Feed settings**.
 
-1. Select **Upstream sources**, and then select **Add Upstream**.
+1. Select **Upstream sources**, then select **Add Upstream**.
 
-1. Select **Public source**, and then select **npmjs (https://registry.npmjs.org/)** from the dropdown menu.
+1. Select **Public source**, then select **npmjs (https://registry.npmjs.org/)** from the dropdown menu.
 
-1. Select **Add** when you're done, and then select **Save** at the top right corner to save your changes.
+1. Select **Add** when you're done.
+
+1. Select **Save** in the top-right corner to apply your changes.
 
 ## Install packages from npmjs
 
