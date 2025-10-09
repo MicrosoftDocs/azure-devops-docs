@@ -670,7 +670,7 @@ For more information about field attributes, see [Work item fields and attribute
       ::: moniker range="azure-devops"
       To modify the workflow states, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). 
       ::: moniker-end 
-      ::: moniker range="<azure-devops"
+      ::: moniker range="< azure-devops"
       To modify the workflow states, see the following articles:  
       - For Inherited process model: see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md) 
       - For On-premises XML process models: see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
@@ -700,14 +700,12 @@ For more information about field attributes, see [Work item fields and attribute
 
 <a id="sync">  </a>
 ::: moniker range="azure-devops"
+
 > [!NOTE]  
 > 1. See [Date and Identity fields](#date-identity).  
 > 2. By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Microsoft Entra ID. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups defined in AD/Microsoft Entra ID or by adding accounts to project or collection security groups. See set up [Active Directory or Microsoft Entra ID](../../organizations/security/about-permissions.md#active-directory-and-microsoft-entra-security-groups). 
 > 3. See [Activated By/Date and Resolved By/Date fields](#activated-by-and-activated-date-transition-assignments).   
-> 4. The Requirement Category applies to all work item types that appear on the product backlog and board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types).  
-
-> [!NOTE]  
-> Even if you add a board-related field, such as **Board Column** or **Board Lane**, to a work item form, you can't modify the field from the form.  
+> 4. The Requirement Category applies to all work item types that appear on the product backlog and board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md).
 
 ::: moniker-end
 
@@ -720,12 +718,12 @@ For more information about field attributes, see [Work item fields and attribute
    For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](/previous-versions/azure/devops/reference/xml/field-definition-element-reference).  
 3. Reportable field with attribute set to Dimension. Only valid when the collection is configured to support the On-premises XML model. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
 4. Indexed field. Enabling indexing for a field might increase the performance of finding work items whose queries specify that field. For on-premises Azure DevOps, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
-5. The Requirement Category applies to all work item types that appear on the product backlog and board. The category includes those items added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types). 
+5. The Requirement Category applies to all work item types that appear on the product backlog and board. The category includes those items added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). 
+
+::: moniker-end
 
 > [!NOTE]  
 > Even if you add a board-related field, such as **Board Column** or **Board Lane**, to a work item form, you can't modify the field from the form.
-
-::: moniker-end
 
 ### People picker 
 

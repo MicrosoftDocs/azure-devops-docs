@@ -252,9 +252,6 @@ The following table describes fields associated with links and attachments. Most
    > You can add the **Parent** field as a column or specify it within a query clause by specifying the parent work item ID.   
    Reference Name=System.Parent, Data type=Integer
    :::column-end:::
-   :::column span="1":::
-   All
-   :::column-end:::
 :::row-end:::
 ::: moniker-end 
 ::: moniker range="azure-devops-2020" 
