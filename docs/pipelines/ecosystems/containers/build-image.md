@@ -20,7 +20,7 @@ In this quickstart, you learn to build a container image for app deployment usin
 |--------------|-------------|
 | **Azure DevOps** | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; To create a pipeline, users need to be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Build Administrators and Project Administrators groups](../../../organizations/security/permissions.md#pipeline-or-build-object-level) can also manage pipelines. |
 | **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../../library/service-endpoints.md) to authorize Azure Pipelines.|
-| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/). |
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
 
 
 ## Fork the sample repository

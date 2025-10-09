@@ -22,7 +22,7 @@ For more information about environments and resources targeted by a deployment j
 
 ## Prerequisites
 
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - An Azure DevOps organization and project. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
 
 #### [JavaScript](#tab/javascript)
@@ -54,7 +54,7 @@ Also, for Java Spring Boot and Spring Cloud based apps:
 ---
 
 >[!IMPORTANT]
->- To deploy apps, target environment VM resources must have all necessary software, dependencies, permissions, and logins installed and configured.
+>- To deploy apps, target environment VM resources must have all necessary software, dependencies, permissions, and sign-ins installed and configured.
 >- To use GitHub source code, you need a [GitHub service connection](../library/service-endpoints.md#github-service-connection). GitHub might also prompt you to sign in, install the Azure Pipelines GitHub app, or authorize Azure Pipelines. To complete each process, follow the onscreen instructions. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
 
 ## Create an environment and add Linux VMs
@@ -115,7 +115,7 @@ jobs:
     artifact: drop
 ```
 
-For more information, review the steps for creating a build in [Build your Node.js app with gulp](javascript.md).
+For more information, see the steps for creating a build in [Build your Node.js app with gulp](javascript.md).
 
 #### [Java](#tab/java)
 
@@ -146,13 +146,13 @@ jobs:
     artifact: drop
 ```
 
-For more information, review the steps for creating a build in [Build your Java app with Maven](java.md).
+For more information, see the steps for creating a build in [Build your Java app with Maven](java.md).
 
 ---
 
 ### Run the pipeline
 
-To save your *azure-pipelines.yml* file to your repo and kick off the CI/CD pipeline, select **Save and run**, and then select **Save and run** again.
+To save your *azure-pipelines.yml* file to your repo and start the CI/CD pipeline, select **Save and run**, then select **Save and run** again.
 
 When the pipeline finishes, view the job **Summary** page to verify that the build job ran successfully and that **1 published** artifact appears under **Related**.
 
@@ -204,11 +204,11 @@ The following example deployment job starts when the `Build` job completes succe
 1. After you add the deployment job, select **Validate and save**, then select **Save**, select **Run**, and select **Run** again. With each run of this job, deployment history records against the environment.
 
    >[!NOTE]
-   >The first time you run the pipeline that uses the environment, you must grant permission for all runs of the pipeline to access the agent pool and the environment. Select the **Waiting** symbol next to the job on the pipeline run **Summary** screen, and then select **Permit** to grant the necessary permissions.
+   >The first time you run the pipeline that uses the environment, you must grant permission for all runs of the pipeline to access the agent pool and the environment. Select the **Waiting** symbol next to the job on the pipeline run **Summary** screen, then select **Permit** to grant the necessary permissions.
 
 ### Rolling deployment strategy
 
-You can use a `rolling` instead of `runOnce` deployment strategy. A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) can orchestrate parallelism, health checks, and traffic routing. While the `runOnce` strategy executes on a single VM at a time, a rolling deployment can run in parallel on *rolling sets* of up to five target VMs, depending on `maxParallel` setting.
+You can use a `rolling` deployment strategy instead of `runOnce`. A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) can orchestrate parallelism, health checks, and traffic routing. While the `runOnce` strategy executes on a single VM at a time, a rolling deployment can run in parallel on *rolling sets* of up to five target VMs, depending on the `maxParallel` setting.
 
 The `maxParallel` parameter sets the number or percentage of VMs that must remain available, ensuring that the app can handle requests and reducing overall downtime during deployments. This parameter also determines success and failure conditions for the deployment.
 

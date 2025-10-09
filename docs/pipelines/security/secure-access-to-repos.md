@@ -17,7 +17,7 @@ To protect the code that runs their operations, organizations must carefully con
 
 ## Project-based identities for pipelines
 
-A pipeline uses an identity to access resources such as repositories, service connections, and variable groups during execution. Pipelines can utilize two types of identities: collection-level or project-level.
+A pipeline uses an identity to access resources such as repositories, service connections, and variable groups during execution. Pipelines can use two types of identities: collection-level or project-level.
 
 Collection-level identity is easy to set up and use, but project-level identities prioritize security. To enhance security, use project-level identities to run pipelines. A project-level identity can access resources only within its project, minimizing the impact of any unauthorized access by malicious actors. For more information, see [Scoped build identities](../process/access-tokens.md#scoped-build-identities) and [Job authorization scope](../process/access-tokens.md#job-authorization-scope).
 
@@ -149,7 +149,7 @@ To configure the pipeline to use a project-level identity, enable the **Limit jo
 
 When this toggle is on, the example **FabrikamFiberDocRelease** pipeline can only access resources in the **FabrikamFiberDocRelease** project, so the **FabrikamFiber** repository is inaccessible.
 
-To fix the issue, grant the pipeline project access to the **FabrikamFiber** project, and the pipeline identity **Read** access to the **FabrikamFiber** and **FabrikamFiberLib** repositories. Also explicitly check out the **FabrikamFiberLib** submodule repository before checking out the **FabrikamFiber** repository. The example pipeline now succeeds.
+To fix the issue, grant the pipeline project access to the **FabrikamFiber** project, and grant the pipeline identity **Read** access to the **FabrikamFiber** and **FabrikamFiberLib** repositories. Also explicitly check out the **FabrikamFiberLib** submodule repository before checking out the **FabrikamFiber** repository. The example pipeline now succeeds.
 
 ---
 
