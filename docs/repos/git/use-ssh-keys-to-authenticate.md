@@ -220,7 +220,7 @@ Proceed only if they match!
 
 ### Q: My SSH key has expired, what should I do?
 
-**A:** The **recommended course of action** is to follow the steps above to [create and upload a new SSH key](use-ssh-keys-to-authenticate.md#step-1-Create-your-SSH-keys). 
+**A:** The **recommended course of action** is to follow the steps above to [create and upload a new SSH key](use-ssh-keys-to-authenticate.md#step-1-create-your-ssh-keys). 
 
 **As an alternative option**, a Project Collection Admin can disable the policy that validates the SSH key expiration date. **By default, the Validate SSH key expiration policy is enabled.** For more information about SSH policies, see [SSH key policies](/docs/organizations/accounts/change-application-access-policies.md#ssh-key-policies)
 
