@@ -45,11 +45,11 @@ When you deny access to an authentication method, no application can access your
 
 ## SSH key policies
 
-#### SSH authentication
+### SSH authentication
 
 The **SSH authentication** policy controls whether or not an organization allows the use of SSH keys.
 
-#### Validate SSH key expiration
+### Validate SSH key expiration
 
 To avoid losing access due to an expired SSH key, create and upload a new key *before* the current one expires. The system sends automated notifications **7 days before expiration** and **again after expiration** to help you stay ahead. For more information, see [create and upload a new SSH key](/docs/repos/git/use-ssh-keys-to-authenticate.md#step-1-Create-your-SSH-keys).
 
