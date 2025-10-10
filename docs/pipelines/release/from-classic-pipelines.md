@@ -23,7 +23,7 @@ When you convert a Classic pipeline, you’ll end up with two pipelines: a new Y
 
 | **Product**        | **Requirements**   |
 |--------------------|--------------------|
-| **Azure**   | - An Azure account with an active [subscription](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). |
+| **Azure**   | - An Azure account with an active [subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
 | **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.<br> - A working Classic pipeline.  |
 
 ## Create a sample YAML pipeline

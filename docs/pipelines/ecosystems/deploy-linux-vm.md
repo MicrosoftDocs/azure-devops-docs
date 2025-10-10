@@ -22,7 +22,7 @@ For more information about environments and resources targeted by a deployment j
 
 ## Prerequisites
 
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - An Azure DevOps organization and project. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
 
 #### [JavaScript](#tab/javascript)
@@ -208,7 +208,7 @@ The following example deployment job starts when the `Build` job completes succe
 
 ### Rolling deployment strategy
 
-You can use a `rolling` instead of `runOnce` deployment strategy. A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) can orchestrate parallelism, health checks, and traffic routing. While the `runOnce` strategy executes on a single VM at a time, a rolling deployment can run in parallel on *rolling sets* of up to five target VMs, depending on `maxParallel` setting.
+You can use a `rolling` instead of `runOnce` deployment strategy . A [rolling deployment strategy](../process/deployment-jobs.md#rolling-deployment-strategy) can orchestrate parallelism, health checks, and traffic routing. While the `runOnce` strategy executes on a single VM at a time, a rolling deployment can run in parallel on *rolling sets* of up to five target VMs, depending on the `maxParallel` setting.
 
 The `maxParallel` parameter sets the number or percentage of VMs that must remain available, ensuring that the app can handle requests and reducing overall downtime during deployments. This parameter also determines success and failure conditions for the deployment.
 

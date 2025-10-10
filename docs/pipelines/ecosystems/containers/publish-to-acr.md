@@ -33,7 +33,7 @@ Using Azure Pipelines, you can set up a pipeline workflow to build and publish y
 
 - The [**Administrator** role for service connections](../../library/add-resource-protection.md) in your Azure DevOps project. 
 
-- An Azure account with an active subscription. [Sign up for free](https://azure.microsoft.com/free/) if you don't have one already.
+- An Azure account with an active subscription. [Sign up for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) if you don't have one already.
 
 ## Get the code
 
