@@ -112,6 +112,8 @@ Now that you've installed a package from the npm registry, you can see how Azure
 
 1. The *mongoose* package you installed in the previous step should now appear in your feed. Azure Artifacts saved a copy automatically when you ran the install command.
 
+    :::image type="content" source="media/npm-package-saved-from-upstream.png" alt-text="A screenshot displaying the new Mongoose package that was saved from the public npm registry.":::
+
 ## Related content
 
 - [Publish npm packages (CLI)](publish.md)
