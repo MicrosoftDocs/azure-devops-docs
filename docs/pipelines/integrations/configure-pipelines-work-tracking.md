@@ -4,8 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to configure pipelines to support integration with Azure Boards and work tracking
 ms.subservice: azure-devops-pipelines-integrations
 ms.topic: how-to
-ms.author: chcomley
-author: chcomley
+ms.author: jukullam
 monikerRange: '<= azure-devops'
 ms.date: 09/09/2024
 ms.custom:
