@@ -28,7 +28,7 @@ events in their Slack channel. Conversations in the Slack channel can be used to
 ![Pic: Notification](./media/integrations-slack/notifications.png)
 
 > [!NOTE]
-> - Notifications are sent to channels—they don't appear in direct messages.
+> Notifications are sent to channels—they don't appear in direct messages.
 
 ## Prerequisites
 
@@ -192,13 +192,6 @@ The Azure Boards app for Slack can help you create work items and monitor the wo
 If you're experiencing the following errors when using the [Azure Boards App for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp), follow the procedures in this section. 
 
 [!INCLUDE [troubleshooting](includes/boards-troubleshoot-authentication.md)]
-
-In the **same browser**, start a new tab, go to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azboards signout` command followed by the `/azboards signin` command. 
-
-Select the `Sign in` button and you get redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
-
-> [!div class="mx-imgBorder"]
-> ![Consent to the requested app permissions](media/troubleshooting/boards-consent-page-slack.png)
 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
