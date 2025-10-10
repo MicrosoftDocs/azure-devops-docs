@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Improved secret rotation support for Azure service connection  
 
-For service connections that use a service principal with a secret, we already let you rotate the secret by updating the service connection. This was not explicitly conveyed in the configuration experience though.
+For service connections that use a service principal and Azure DevOps creates a secret, we already let you rotate the secret by updating the service connection. This was not explicitly conveyed in the configuration experience though.
 We have updated the experience of the Azure service connection to detect secret expiration and offer to rotate the secret:
 
 > [!div class="mx-imgBorder"]
@@ -20,7 +20,7 @@ Examples: `MyExtension@1.2.3, OtherExtension@latest, LegacyExtension`.
 
 ### Ability to disable release pipelines
 
-Release pipelines can now be disabled. This can be useful if a pipeline is no longer used or not expected to be used again. Disabled release pipelines can be re-enabled.
+Release pipelines can now be disabled. This can be useful if a pipeline is no longer used or not expected to be used again. When a release pipeline is disabled, you can still browse releases and deployments. Disabled release pipelines can be re-enabled.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot to show the option to disable release pipelines.](../../media/263-pipelines-02.png "Screenshot to show the option to disable release pipelines.")](../../media/263-pipelines-02.png#lightbox)
