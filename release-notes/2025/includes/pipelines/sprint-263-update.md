@@ -13,10 +13,12 @@ We have updated the experience of the Azure service connection to detect secret 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Service connection type to show secret has expired.](../../media/263-pipelines-01.png "Screenshot of Service connection type to show secret has expired.")](../../media/263-pipelines-01.png#lightbox)
 
-### AzureAppServiceManageV0 Versioned Extension Support (preview) 
+### AzureAppServiceManage@0 Versioned Extension Support (preview) 
 
 You can now specify App Service extensions as `name@version` (e.g., `PythonExtension@3.9.0`). If a version is specified, that exact version will be installed. If you specify `latest` as the version, the latest available version will be installed (in case it already has the latest version, installation will be skipped). If no version is specified, the extension will only be installed if it is not already present.  
-Examples: `MyExtension@1.2.3, OtherExtension@latest, LegacyExtension`.
+Examples: `ExtensionsList: MyExtension@1.2.3, OtherExtension@latest, LegacyExtension`.
+
+See AzureAppServiceManage@0 [documentation](/azure/devops/pipelines/tasks/reference/azure-app-service-manage-v0).
 
 ### Ability to disable release pipelines
 
