@@ -33,7 +33,7 @@ You can connect to your Git repos through SSH on macOS, Linux, or Windows to sec
 | Category | Requirements |
 |--------------|-------------|
 |**Permissions**| [Access to clone the repository](set-git-repository-permissions.md#default-repository-permissions)|
-|**Policies**| [SSH authentication enabled](/docs/organizations/accounts/change-application-access-policies.md#manage-a-policy)|
+|**Policies**| [SSH authentication enabled](/docs/includes/manage-policies.md#manage-a-policy)|
 
 
 ## How SSH key authentication works
@@ -190,7 +190,7 @@ Proceed only if they match!
 
 1. Copy the SSH clone URL from the web portal. In this example, the SSH clone URL is for a repo in an organization named **fabrikam-fiber**, as indicated by the first part of the URL after `dev.azure.com`.
 
-   ![Screenshot showing Azure Repos SSH cloned URL](media/use-ssh-authentication/ssh-clone-url.png)
+   ![Screenshot showing Azure Repos SSH cloned URL.](media/use-ssh-authentication/ssh-clone-url.png)
 
    [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
@@ -452,9 +452,9 @@ Afterwards, instead of using the real URLs, tell Git you want to use these URLs 
 ### Q: What notifications may I receive about my SSH key(s)?
 
 **A:** There are a few notifications you may receive regarding your SSH key(s).
-1. A new SSH key was added to your organization
-2. An SSH key associated with your account will expire in 7 days and will not be valid for authentication. 
-3. An SSH key associated with your account has expired and is no longer valid for authentication.
+- A new SSH key was added to your organization
+- An SSH key associated with your account will expire in 7 days and will not be valid for authentication. 
+- An SSH key associated with your account has expired and is no longer valid for authentication.
 
    > **<u>Example notification</u>**
    > 
