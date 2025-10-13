@@ -135,14 +135,14 @@ Associate the public key generated in the previous step with your user ID.
 
 1. Select **+ New Key**.
 
-   ![Screenshot showing access to Security Configuration in Azure DevOps.](media/use-ssh-authentication/ssh_accessing_security_key.png)
+   ![Screenshot showing access to Security Configuration in Azure DevOps.](media/use-ssh-authentication/ssh-accessing-security-key.png)
 
 1. Copy the contents of the public key (for example, `id_rsa.pub`) that you generated into the **Public Key Data** field.
 
    > [!IMPORTANT]
    > Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
 
-   ![Screenshot showing configuring a Public Key in Azure DevOps.](media/use-ssh-authentication/ssh_key_input.png)
+   ![Screenshot showing configuring a Public Key in Azure DevOps.](media/use-ssh-authentication/ssh-key-input.png)
 
 1. Give the key a useful description (this description is displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key.
    Once saved, you can't change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile. 
@@ -152,7 +152,7 @@ Associate the public key generated in the previous step with your user ID.
 
 1. On the **SSH Public Keys** overview page, the server fingerprints are displayed. Make note of the SHA256 fingerprint to use when you first connect to Azure DevOps via SSH.
 
-   ![Screenshot of accessing security configuration in Azure DevOps Services.](media/use-ssh-authentication/ssh_accessing_security_key.png)
+   ![Screenshot of accessing security configuration in Azure DevOps Services.](media/use-ssh-authentication/ssh-accessing-security-key.png)
 
 2. Test the connection by running the following command:
 
@@ -190,7 +190,7 @@ Proceed only if they match!
 
 1. Copy the SSH clone URL from the web portal. In this example, the SSH clone URL is for a repo in an organization named **fabrikam-fiber**, as indicated by the first part of the URL after `dev.azure.com`.
 
-   ![Screenshot showing Azure Repos SSH cloned URL](media/use-ssh-authentication/ssh_clone_URL.png)
+   ![Screenshot showing Azure Repos SSH cloned URL](media/use-ssh-authentication/ssh-clone-url.png)
 
    [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
