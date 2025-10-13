@@ -456,9 +456,9 @@ Afterwards, instead of using the real URLs, tell Git you want to use these URLs 
 - An SSH key associated with your account will expire in 7 days and will not be valid for authentication. 
 - An SSH key associated with your account has expired and is no longer valid for authentication.
 
-   > **<u>Example notification</u>**
-   > 
-   >![Screenshot showing SSH key email notification](media/use-ssh-authentication/ssh-key-added-email.png)
+   **<u>Example notification</u>**
+    
+   ![Screenshot showing SSH key email notification.](media/use-ssh-authentication/ssh-key-added-email.png)
 
 
 ### Q: What do I do if I believe that someone other than me is adding SSH keys on my account?
