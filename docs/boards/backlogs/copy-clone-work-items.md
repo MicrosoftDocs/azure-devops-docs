@@ -18,7 +18,7 @@ ms.date: 10/14/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-This article describes how to create copies of Azure Boards work items or their details, and add lists of work items to emails or other apps.
+This article describes how to create copies of Azure Boards work items or their details, and how to copy and add lists of work items to emails or other apps.
 
 - To duplicate a single work item, use **Create copy of work item**.
 - To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then paste the list into Excel or other apps, or send it in email.
@@ -85,7 +85,7 @@ Optionally, you can select any or all of the following options in the **Copy Wor
   ::: moniker-end
 
 <a id="copy-url">  </a>
-## Copy the title, ID, type, or URL of a work item
+## Copy the work item URL or information
 
 #### [Browser](#tab/browser/)
 
@@ -105,7 +105,7 @@ To copy the work item type, ID, and title, hover over or select the title in the
 
 #### [Visual Studio](#tab/visual-studio/)
 
-In Visual Studio, you can view a list of connected work items in the **Team Explorer** pane. Select or hover over a work item to display information about it in a flyout panel.
+In Visual Studio, you can view a list of work items in the **Team Explorer** pane. Selecting or hovering over a work item displays information about it in a flyout panel.
 
 You can double-click a listed work item, right-click it and select **Open**, or select **View in Browser** to open the item in the Azure Boards web browser.
 
@@ -116,9 +116,9 @@ You can double-click a listed work item, right-click it and select **Open**, or 
 <a name="copy-a-list-of-work-items"></a>
 ## Copy or email a list of work items
 
-You can copy an HTML formatted table of selected items from a backlog page or query results list, and paste the list into a Word document, Excel spreadsheet, email, or other application. You can also email the list of selected items directly to team or project members using your default email client.
+You can copy an HTML formatted table of selected items from a backlog page or query results list, and paste the list into a Word document, Excel spreadsheet, or other application. You can also email the list of selected items directly to team or project members using your default email client.
 
-1. From the web portal, open a backlog or query results page and [multiselect the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard.
+1. From the web portal, open a backlog or query results page and multiselect the work items you want to copy by using **Shift**+**Select** or **Ctrl**+**Select**.
 
 1. Select the **More actions** icon next to one of the selected work items, and then select either **Copy as HTML** or **Email**.
 
@@ -128,7 +128,7 @@ You can copy an HTML formatted table of selected items from a backlog page or qu
 
 Selecting **Copy as HTML** produces an HTML-formatted table that contains links and details for the work items in your selected results list. You can paste the table into an Excel spreadsheet, Word doc, or other application.
 
-You can also email the work item list to desired recipients using your choice of email client. To open linked work items, recipients need read access to the project or area node for those work items.
+You can also email the work item list using your chosen email client and recipients. To open linked work items, recipients need read access to the project or area node for those work items.
 
 ### Send email to project or team members
 
