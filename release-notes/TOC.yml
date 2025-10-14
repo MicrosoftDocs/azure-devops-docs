@@ -10,7 +10,7 @@
       items:
         - name: "2025"
           items:
-          - name: October 13
+          - name: October 14
             href: 2025/sprint-263-update.md
           - name: September 25
             href: 2025/sprint-262-update.md
@@ -574,7 +574,7 @@
         items:
         - name: "2025"
           items:
-          - name: October 13
+          - name: October 14
             href: 2025/pipelines/sprint-263-update.md
           - name: September 25
             href: 2025/pipelines/sprint-262-update.md
@@ -808,7 +808,7 @@
         items:
         - name: "2025"
           items:
-          - name: October 13
+          - name: October 14
             href: 2025/testplans/sprint-263-update.md
           - name: September 4
             href: 2025/testplans/sprint-261-update.md
