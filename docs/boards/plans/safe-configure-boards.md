@@ -546,7 +546,7 @@ Add these extensions for enhanced SAFe® functionality:
 > [!NOTE]
 > Before customizing your project, read [Configure and customize Azure Boards](../configure-customize.md) for detailed information on administrating projects for multiple teams and business objectives.
 
-<a id="monitor-progress"></a>
+<a id="monitor-metrics"></a>
 
 ## Monitor progress and metrics
 
