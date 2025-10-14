@@ -31,6 +31,9 @@ Whether your software project is large, small, or brand new, it's best to use ve
 | **Permissions** | - **Read**: To view the repository and its contents.<br>- **Check In**: To check in changes to the repository.<br>- **Check Out**: To check out files for editing.<br>- **Manage Workspaces**: To create and manage workspaces. |
 | **Tools** | [Visual Studio](https://visualstudio.microsoft.com/downloads). |
 
+> [!NOTE]
+> TFVC is not supported on ARM versions of Visual Studio.
+
 ## Connect to your project
 
 1. In Visual Studio, from the **Home** page of **Team Explorer**, select the **Manage Connections** icon.

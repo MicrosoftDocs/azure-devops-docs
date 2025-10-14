@@ -76,6 +76,7 @@ Scheduled pipelines in YAML have the following constraints.
 - If you specify an `exclude` clause without an `include` clause for `branches`, it's equivalent to specifying `*` in the `include` clause.
 - You can't use pipeline variables when specifying schedules.
 - If you use [templates in your YAML file](templates.md), then the schedules must be specified in the main YAML file and not in the template files.
+- If a pipeline is disabled, updates made to its YAML file won't automatically refresh the schedule triggers.
 
 ### Branch considerations for scheduled triggers
 
