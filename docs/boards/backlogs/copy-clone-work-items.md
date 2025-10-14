@@ -55,30 +55,28 @@ To copy a work item:
 
    :::image type="content" source="media/copy/choose-copy-work-item-s171.png" alt-text="Screenshot shows open context menu with Create copy of work item highlighted.":::
 
-1. On the **Copy Work Item** screen, choose the project and work item type for the new work item if it's different from the copied work item. Optionally, select any or all of the following options:
-
-   - **Include existing links** includes all **Related** and external links from the copied work item. A **Related** link to the copied work item is always created and included in the new work item's **Discussion** section, whether you select this item or not.
-   - **Include existing attachments** includes attachments from the copied work item.
-   - **Include child work items** includes existing links to child work items in the copied work item. This feature isn't recursive. Only direct child links of the original work item are included. This option appears even if there are no child items linked to the work item.
-
-     > [!NOTE]
-     > - If you copy a work item and choose to **Include child work items**, a copy of each child work item is created and linked to the copied work item through a parent-child link.
-     > - If you copy the work item to a different project or work item type, **Include child work items** is disabled.
-
-::: moniker range="<azure-devops"
-
-     > [!NOTE]
-     > For Azure DevOps Server, the **Include child work items** feature requires installing the Azure DevOps Server 2020.1 update.
-
-::: moniker-end
-
-1. Select **Copy**.
+1. On the **Copy Work Item** screen, choose the project and work item type for the new work item if it's different from the copied work item, and then select **Copy**
 
    :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Screenshot shows copy work item dialog.":::
 
-1. In the new work item that opens, change the **Title**, update other fields, and add details as needed.
+1. In the new work item that opens, change the **Title**, update other fields, and add details as needed, and then select **Save** or **Save and Close**.
 
-1. Select **Save** or **Save and Close**.
+Optionally, you can select any or all of the following options in the **Copy Work Item** form:
+
+- **Include existing links** includes all **Related** and external links from the copied work item. A **Related** link to the copied work item is always created and included in the new work item's **Discussion** section, whether you select this item or not.
+- **Include existing attachments** includes attachments from the copied work item.
+- **Include child work items** includes existing links to child work items in the copied work item. This feature isn't recursive. Only direct child links of the original work item are included. This option appears even if there are no child items linked to the work item.
+
+  > [!NOTE]
+  > - If you copy a work item and choose to **Include child work items**, a copy of each child work item is created and linked to the copied work item through a parent-child link.
+  > - If you copy the work item to a different project or work item type, **Include child work items** is disabled.
+  
+  ::: moniker range="<azure-devops"
+  
+  > [!NOTE]
+  > For Azure DevOps Server, **Include child work items** requires installing the Azure DevOps Server 2020.1 update.
+  
+  ::: moniker-end
 
 <a id="copy-url">  </a>
 ### Copy the title, ID, type, or URL of a work item
