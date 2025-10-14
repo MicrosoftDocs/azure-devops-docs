@@ -21,7 +21,7 @@ ms.date: 10/14/2025
 This article describes how to create copies of Azure Boards work items or their details, and how to copy and add lists of work items to emails or other apps.
 
 - To duplicate a single work item, use **Create copy of work item**.
-- To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then paste the list into Excel or other apps, or send it in email.
+- To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then paste the list into Excel, other apps, or an email.
 - To email a list of work items to project members, you can multiselect the work items and select **Email**.
 
 ::: moniker range="<azure-devops"
@@ -128,7 +128,7 @@ You can copy an HTML formatted table of selected items from a backlog page or qu
 
 Selecting **Copy as HTML** produces an HTML-formatted table that contains links and details for the work items in your selected results list. You can paste the table into an Excel spreadsheet, Word doc, or other application.
 
-You can also email the work item list using your chosen email client and recipients. To open linked work items, recipients need read access to the project or area node for those work items.
+You can email the work item list using your chosen email client and recipients. To open linked work items, recipients need read access to the project or area node for those work items.
 
 ### Send email to project or team members
 
@@ -136,7 +136,7 @@ Selecting **Email** opens a **Send work items in email** screen that includes th
 
 :::image type="content" source="media/copy/send-email.png" alt-text="Screenshot shows the Send work items in email form with work item list table.":::
 
-The email sends through your default mail client, and includes a link to a query that opens only the selected work items.
+The email sends through your default mail client, and includes a link to a query that returns only the selected work items.
 
 ## Change work item types
 
