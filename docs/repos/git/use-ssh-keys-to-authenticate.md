@@ -33,7 +33,7 @@ You can connect to your Git repos through SSH on macOS, Linux, or Windows to sec
 | Category | Requirements |
 |--------------|-------------|
 |**Permissions**| [Access to clone the repository](set-git-repository-permissions.md#default-repository-permissions)|
-|**Policies**| [SSH authentication enabled](../../includes/manage-policies.md#manage-a-policy)|
+|**Policies**| [SSH authentication enabled](../../organizations/accounts/change-application-access-policies.md)|
 
 
 ## How SSH key authentication works
