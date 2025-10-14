@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/13/2025
+ms.date: 10/14/2025
 ---
 
 # Copy or clone work items
@@ -19,17 +19,17 @@ ms.date: 10/13/2025
 This article describes how to create copies of Azure Boards work items and add lists of work items to emails or other apps.
 
 - To duplicate a single work item, use **Create copy of work item**.
-- To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then import the list into Excel or other apps.
-- To email a list of work items, multiselect the work items and select **Email**.
+- To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then paste the list into Excel or other apps, or send it in email.
+- To email a list of work items to project members, you can multiselect the work items and select **Email**.
 
 ::: moniker range="<azure-devops"
 
-In Azure DevOps Server, you can also *clone* an exact copy of an existing work item, including all fields and attachments, but with a new ID. Depending on the options you choose, you can use **Create copy of work item** to create either a copy or a clone.
+In Azure DevOps Server, you can also *clone* an exact copy of an existing work item, including all fields and attachments, but with a new ID. Depending on the options you choose, you use **Create copy of work item** to create either a copy or a clone.
 
 You *copy* a work item to adjust prepopulated values, and *clone* a work item to create an exact duplicate. Cloning is useful when no field modifications are needed.
 
 > [!NOTE]
-> Some fields might get copied depending on your on-premises version and customizations. If the work item type you clone lacks a state transition rule to clear the **Closed By** field when the **State** is **New** or **Active**, that field gets copied. Current system out-of-box templates include this rule.
+> Some fields might get copied depending on your on-premises version and customizations. If the work item type you clone lacks a state transition rule to clear the **Closed By** field when the **State** is **New** or **Active**, that field gets copied. Current system out-of-box work item templates include this rule.
 
 ::: moniker-end
 
@@ -47,7 +47,9 @@ You *copy* a work item to adjust prepopulated values, and *clone* a work item to
 <a id="copy-clone"></a>
 ## Create a copy of a work item
 
-Copy a work item to create a new work item with a new ID and prepopulated fields from the original. You can modify the fields as needed. Related links to the original work item and its parent links are copied over.
+Copy a work item to create a new work item with a new ID and prepopulated fields from the original. You can modify the fields as needed.
+
+Related links to the original work item and any parents, and a discussion comment, are automatically created in the copy. You can copy other links and attachments depending on the options you select. History isn't copied over.
 
 To copy a work item:
 
@@ -55,17 +57,19 @@ To copy a work item:
 
    :::image type="content" source="media/copy/choose-copy-work-item-s171.png" alt-text="Screenshot shows open context menu with Create copy of work item highlighted.":::
 
-1. On the **Copy Work Item** screen, choose the project and work item type for the new work item if it's different from the copied work item, and then select **Copy**
+1. On the **Copy Work Item** screen, choose a different project and work item type for the new work item if desired, and then select **Copy**
 
    :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Screenshot shows copy work item dialog.":::
 
-1. In the new work item that opens, change the **Title**, update other fields, and add details as needed, and then select **Save** or **Save and Close**.
+1. In the new work item, change the **Title**, update other fields, and add details as needed, and then select **Save** or **Save and Close**.
+
+### Copy options
 
 Optionally, you can select any or all of the following options in the **Copy Work Item** form:
 
-- **Include existing links** includes all **Related** and external links from the copied work item. A **Related** link to the copied work item is always created and included in the new work item's **Discussion** section, whether you select this item or not.
-- **Include existing attachments** includes attachments from the copied work item.
-- **Include child work items** includes existing links to child work items in the copied work item. This feature isn't recursive. Only direct child links of the original work item are included. This option appears even if there are no child items linked to the work item.
+- **Include existing links** includes all **Related** and external links from the copied work item. A **Related** link to the original work item and a comment in the **Discussion** section are always created, whether you select this item or not.
+- **Include existing attachments** includes attachments from the original work item in the new work item.
+- **Include child work items** includes existing links to child work items in the copied work item. This feature isn't recursive. Only direct child links of the original work item are included. This option appears even if there are no child items in the original work item.
 
   > [!NOTE]
   > - If you copy a work item and choose to **Include child work items**, a copy of each child work item is created and linked to the copied work item through a parent-child link.
@@ -79,22 +83,23 @@ Optionally, you can select any or all of the following options in the **Copy Wor
   ::: moniker-end
 
 <a id="copy-url">  </a>
-### Copy the title, ID, type, or URL of a work item
+## Copy the title, ID, type, or URL of a work item
 
 #### [Browser](#tab/browser/)
 
-To copy the work item type, ID, and title, open the work item, hover over or select the title, and then select the **Copy** icon next to the title bar.
-
-To copy the work item URL, you can:
+To copy a work item URL, you can:
 
 - Copy the URL from the web browser address bar.
+  :::image type="content" source="media/copy/copy-url.png" alt-text="Screenshot shows URL for a work item in the address bar.":::
+
 - Right-click the link at upper left in the work item and select **Copy link address** from the context menu.
-
   :::image type="content" source="media/add-work-item-copy-URL.png" alt-text="Screenshot shows copy hyperlink for a work item from web portal.":::
-  
-- Select the work item's **More action** icon and then select **Copy link** from the context menu.
 
+- Select the work item's **More action** icon and then select **Copy link** from the context menu.
   :::image type="content" source="media/copy/copy-link.png" alt-text="Screenshot shows Copy link context menu item.":::
+
+To copy the work item type, ID, and title, hover over or select the title in the open work item and then select the **Copy** icon next to the title bar.
+  :::image type="content" source="media/copy/add-work-item-copy-title.png" alt-text="Screenshot shows copy work item type, title, and ID.":::
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -107,7 +112,7 @@ In Visual Studio, right-select the work item tab to copy the URL. The URL opens 
 <a name="copy-a-list-of-work-items"></a>
 ## Copy or email a list of work items
 
-You can copy an HTML formatted table of selected items from a backlog page or query results list, and paste the list into a Word document, Excel spreadsheet, or other application. You can also email the work item list using your choice of email client.
+You can copy an HTML formatted table of selected items from a backlog page or query results list, and paste the list into a Word document, Excel spreadsheet, email, or other application. You can also email the list of selected items directly to team or project members using your default email client.
 
 1. From the web portal, open a backlog or query results page and [multiselect the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard.
 
@@ -115,13 +120,19 @@ You can copy an HTML formatted table of selected items from a backlog page or qu
 
    :::image type="content" source="media/copy/html-or-email.png" alt-text="Screenshot shows multiselect items, open context menu, Copy as HTML or Email.":::
 
+### Copy as HTML
+
 Selecting **Copy as HTML** produces an HTML-formatted table that contains links and details for the work items in your selected results list. You can paste the table into an Excel spreadsheet, Word doc, or other application.
 
-Selecting **Email** opens a **Send work items in email** screen that includes the HTML-formatted table of work item links. In the form, select people in the **To** field, complete the **Subject** and optional **Note** fields, and then select **Send**.
+You can also email the work item list to desired recipients using your choice of email client. To open linked work items, recipients need read access to the project or area node for those work items.
+
+### Send email to project or team members
+
+Selecting **Email** opens a **Send work items in email** screen that includes the HTML-formatted table of work item links. In the form, select team or project members in the **To** field, complete the **Subject** and optional **Note** fields, and then select **Send**.
 
 :::image type="content" source="media/copy/send-email.png" alt-text="Screenshot shows the Send work items in email form with work item list table.":::
 
-The email sends through your default mail client. To open linked work items, recipients need read access to the project or area node for those work items.
+The email sends through your default mail client, and includes a link to a query that opens only the selected work items.
 
 ## Change work item types
 
