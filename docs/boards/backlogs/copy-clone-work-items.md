@@ -10,13 +10,15 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 10/14/2025
+#customer intent: As an Azure Boards user, I want to duplicate work items, copy work item details or URLs, or copy lists of selected work items so I can distribute them to my teammates and stakeholders.
+
 ---
 
 # Copy or clone work items
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-This article describes how to create copies of Azure Boards work items and add lists of work items to emails or other apps.
+This article describes how to create copies of Azure Boards work items or their details, and add lists of work items to emails or other apps.
 
 - To duplicate a single work item, use **Create copy of work item**.
 - To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then paste the list into Excel or other apps, or send it in email.
@@ -103,9 +105,11 @@ To copy the work item type, ID, and title, hover over or select the title in the
 
 #### [Visual Studio](#tab/visual-studio/)
 
-In Visual Studio, right-select the work item tab to copy the URL. The URL opens the work item in the web portal.
+In Visual Studio, you can view a list of connected work items in the **Team Explorer** pane. Select or hover over a work item to display information about it in a flyout panel.
 
-:::image type="content" source="media/add-work-items-copy-url-for-a-work-item.png" alt-text="Screenshot shows copy full path hyperlink for a work item from Visual Studio.":::
+You can double-click a listed work item, right-click it and select **Open**, or select **View in Browser** to open the item in the Azure Boards web browser.
+
+:::image type="content" source="media/copy/visual-studio.png" alt-text="Screenshot shows information for a work item from Visual Studio.":::
 
 ---
 
