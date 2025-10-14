@@ -16,13 +16,15 @@ ms.date: 10/13/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-This article describes how to create copies of Azure Boards work items, and add lists of work items to emails or other apps.
+This article describes how to create copies of Azure Boards work items and add lists of work items to emails or other apps.
 
-To duplicate a single work item, use **Create a copy of a work item**. To copy a list of work items, multiselect a list of work items and use **Copy as HTML** or **Copy to clipboard**. You can then import the list into email or other apps.
+- To duplicate a single work item, use **Create copy of work item**.
+- To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then import the list into Excel or other apps.
+- To email a list of work items, multiselect the work items and select **Email**.
 
 ::: moniker range="<azure-devops"
 
-In Azure DevOps Server, you can also *clone* an exact copy of an existing work item, including all fields and attachments, but with a new ID. Depending on the options you choose, you can use **Create a copy of a work item** to create either a copy or a clone.
+In Azure DevOps Server, you can also *clone* an exact copy of an existing work item, including all fields and attachments, but with a new ID. Depending on the options you choose, you can use **Create copy of work item** to create either a copy or a clone.
 
 You *copy* a work item to adjust prepopulated values, and *clone* a work item to create an exact duplicate. Cloning is useful when no field modifications are needed.
 
@@ -47,7 +49,7 @@ You *copy* a work item to adjust prepopulated values, and *clone* a work item to
 
 Copy a work item to create a new work item with a new ID and prepopulated fields from the original. You can modify the fields as needed. Related links to the original work item and its parent links are copied over.
 
-To oopy a work item:
+To copy a work item:
 
 1. Open the work item you want to copy in the web portal, select the **More actions** icon at upper right, and then select **Create copy of work item**.
 
@@ -63,9 +65,12 @@ To oopy a work item:
      > - If you copy a work item and choose to **Include child work items**, a copy of each child work item is created and linked to the copied work item through a parent-child link.
      > - If you copy the work item to a different project or work item type, **Include child work items** is disabled.
 
+::: moniker range="<azure-devops"
 
      > [!NOTE]
-     > For Azure DevOps Server, the **Include child work items** feature requires the Azure DevOps Server 2020.1 update.
+     > For Azure DevOps Server, the **Include child work items** feature requires installing the Azure DevOps Server 2020.1 update.
+
+::: moniker-end
 
 1. Select **Copy**.
 
@@ -87,10 +92,11 @@ To copy the work item URL, you can:
 - Copy the URL from the web browser address bar.
 - Right-click the link at upper left in the work item and select **Copy link address** from the context menu.
 
-  :::image type="content" source="media/media/add-work-item-copy-URL.png" alt-text="Screenshot shows copy hyperlink for a work item from web portal.":::
+  :::image type="content" source="media/add-work-item-copy-URL.png" alt-text="Screenshot shows copy hyperlink for a work item from web portal.":::
   
 - Select the work item's **More action** icon and then select **Copy link** from the context menu.
 
+  :::image type="content" source="media/copy/copy-link.png" alt-text="Screenshot shows Copy link context menu item.":::
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -98,6 +104,9 @@ In Visual Studio, right-select the work item tab to copy the URL. The URL opens 
 
 :::image type="content" source="media/add-work-items-copy-url-for-a-work-item.png" alt-text="Screenshot shows copy full path hyperlink for a work item from Visual Studio.":::
 
+---
+
+<a name="copy-a-list-of-work-items"></a>
 ## Copy or email a list of work items
 
 You can copy an HTML formatted table of selected items from a backlog page or query results list, and paste the list into a Word document, Excel spreadsheet, or other application. You can also email the work item list using your choice of email client.
@@ -116,11 +125,11 @@ Selecting **Email** opens a **Send work items in email** screen that includes th
 
 The email sends through your default mail client. To open linked work items, recipients need read access to the project or area node for those work items.
 
-### Change work item types
+## Change work item types
 
 To change a large number of work item types, select **Change type** from the context menu for the multiselected list. For more information, see [Change work item type](move-change-type.md).
 
-If the **Change type** option isn't available, you can export a set of work items to Excel or CSV, copy them to a new list, and reimport them specifying a different work item type. See [Bulk add or modify work items with Excel](office/bulk-add-modify-work-items-excel.md) or [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md).
+If the **Change type** option isn't available, you can export a set of work items to Excel or CSV, copy them to a new list, and reimport them specifying a different work item type. For more information, see [Bulk add or modify work items with Excel](office/bulk-add-modify-work-items-excel.md) or [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md).
 
 ## Related content
 
