@@ -223,6 +223,19 @@ Tag names must conform to the following restrictions.
 |Special characters    |- Must not contain separator characters: `,` or `;`.<br>- Must not contain Unicode control or format characters, such as a line feed, paragraph separator, carriage return, or other mismatched surrogate characters.|
 |Scope   | Since global lists are available among all projects, they must not contain elements defined at the project level, such as project-specific group account definitions.
 
+::: moniker range="> azure-devops-2022"
+
+### Work Item Queries 
+
+[Work Item Queries](../../boards/queries/about-managed-queries.md) are used to list work items based on the field criteria you specify. 
+
+|Restriction type |Restriction |
+|-----------------|------------|
+|Length    | Must not contain more than 255 Unicode characters.    |
+|Uniqueness|- Query names cannot be empty.<br/>- Must not contain any one of the following characters: `/ \ < > * ? " + | :`.<br/>- Must be contained in a folder.<br/>- Must be named uniquely within the folder.<br/> |
+
+::: moniker-end
+
 ## Azure Pipelines
 
 Azure Pipeline definitions must conform to the following restrictions.
