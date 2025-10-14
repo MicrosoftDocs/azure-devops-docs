@@ -225,14 +225,14 @@ Tag names must conform to the following restrictions.
 
 ::: moniker range="> azure-devops-2022"
 
-### Work Item Queries 
+### Work item queries 
 
-[Work Item Queries](../../boards/queries/about-managed-queries.md) are used to list work items based on the field criteria you specify. 
+Work item queries are used to list work items based on the field criteria you specify for details, see [About managed queries](../../boards/queries/about-managed-queries.md). 
 
 |Restriction type |Restriction |
 |-----------------|------------|
 |Length    | Must not contain more than 255 Unicode characters.    |
-|Uniqueness|- Query names cannot be empty.<br/>- Must not contain any one of the following characters: `/ \ < > * ? " + | :`.<br/>- Must be contained in a folder.<br/>- Must be named uniquely within the folder.<br/> |
+|Uniqueness|- Query names cannot be empty.<br/>- Must not contain any one of the following characters: `/ \ < > * ? " + | :`.<br/>- Must be contained in a folder.<br/>- Must be named uniquely within the folder.|
 
 ::: moniker-end
 
