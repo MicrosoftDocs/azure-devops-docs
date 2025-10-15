@@ -103,7 +103,7 @@ Now that you've installed a package from Maven Central, you can see how Azure Ar
 
 1. The *Apache HttpClient** package that you saved in the previous step is now available in your feed.
  
-    :::image type="content" source="media/apache-httpclient-saved-from-maven-central.png" alt-text="A screenshot displaying the Apache HttpClient package that was saved from Maven Central.":::
+    :::image type="content" source="media/apache-http-client-saved-from-maven-central.png" alt-text="A screenshot displaying the Apache HttpClient package that was saved from Maven Central.":::
 
 > [!TIP]
 > If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project files:
