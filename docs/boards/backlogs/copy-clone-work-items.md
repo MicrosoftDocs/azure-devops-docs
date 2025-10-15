@@ -7,9 +7,9 @@ ms.service: azure-devops-boards
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2025
+ms.date: 10/15/2025
 #customer intent: As an Azure Boards user, I want to duplicate work items, copy work item details or URLs, or copy lists of selected work items so I can distribute them to my teammates and stakeholders.
 
 ---
@@ -87,8 +87,6 @@ Optionally, you can select any or all of the following options in the **Copy Wor
 <a id="copy-url">  </a>
 ## Copy the work item URL or information
 
-#### [Browser](#tab/browser/)
-
 To copy a work item URL, you can:
 
 - Copy the URL from the web browser address bar.
@@ -97,28 +95,18 @@ To copy a work item URL, you can:
 - Right-click the link at upper left in the work item and select **Copy link address** from the context menu.
   :::image type="content" source="media/add-work-item-copy-URL.png" alt-text="Screenshot shows copy hyperlink for a work item from web portal.":::
 
-- Select the work item's **More action** icon and then select **Copy link** from the context menu.
+- Select the work item's **More actions** icon and then select **Copy link** from the context menu.
   :::image type="content" source="media/copy/copy-link.png" alt-text="Screenshot shows Copy link context menu item.":::
 
 To copy the work item type, ID, and title, hover over or select the title in the open work item and then select the **Copy** icon next to the title bar.
   :::image type="content" source="media/copy/add-work-item-copy-title.png" alt-text="Screenshot shows copy work item type, title, and ID.":::
-
-#### [Visual Studio](#tab/visual-studio/)
-
-In Visual Studio, you can view a list of work items in the **Team Explorer** pane. Selecting or hovering over a work item displays information about it in a flyout panel.
-
-You can double-click a listed work item, right-click it and select **Open**, or select **View in Browser** to open the item in the Azure Boards UI.
-
-:::image type="content" source="media/copy/visual-studio.png" alt-text="Screenshot shows information for a work item from Visual Studio.":::
-
----
 
 <a name="copy-a-list-of-work-items"></a>
 ## Copy or email a list of work items
 
 You can copy an HTML formatted table of selected items from a backlog page or query results list, and paste the list into a Word document, Excel spreadsheet, or other application. You can also email the list of selected items directly to team or project members using your default email client.
 
-1. From the web portal, open a backlog or query results page and multiselect the work items you want to copy by using **Shift**+**Select** or **Ctrl**+**Select**.
+1. In Azure Boards, open a backlog or query results page and multiselect the work items you want to copy by using **Shift**+**Select** or **Ctrl**+**Select**.
 
 1. Select the **More actions** icon next to one of the selected work items, and then select either **Copy as HTML** or **Email**.
 
@@ -126,17 +114,20 @@ You can copy an HTML formatted table of selected items from a backlog page or qu
 
 ### Copy as HTML
 
-Selecting **Copy as HTML** produces an HTML-formatted table that contains links and details for the work items in your selected results list. You can paste the table into an Excel spreadsheet, Word doc, or other application.
+Selecting **Copy as HTML** produces an HTML-formatted table that contains links and details for your selected work items. You can paste the table into an Excel spreadsheet, Word doc, or other application.
 
-You can email the work item list using your chosen email client and recipients. To open linked work items, recipients need read access to the project or area node for those work items.
+You can email the work item list using your chosen email client and recipients. To open linked work items, viewers need read access to the project or area node for those work items.
 
 ### Send email to project or team members
 
-Selecting **Email** opens a **Send work items in email** screen that includes the HTML-formatted table of work item links. In the form, select team or project members in the **To** field, complete the **Subject** and optional **Note** fields, and then select **Send**.
+Selecting **Email** opens a **Send work items in email** screen that includes the HTML-formatted table of work item links. To send email, select team or project members in the **To** field, complete the **Subject** and optional **Note** fields, and then select **Send**.
 
 :::image type="content" source="media/copy/send-email.png" alt-text="Screenshot shows the Send work items in email form with work item list table.":::
 
 The email sends through your default mail client, and includes a link to a query that returns only the selected work items.
+
+> [!NOTE]
+> **Send work items in email** is a built-in Azure Boards function that behaves as if a default subscription with **Skip initiator** enabled triggers the email. Therefore, you don't receive emails you send to yourself using this feature. To send a list of work items to yourself, paste the HTML-formatted list into an email and send that to yourself manually.
 
 ## Change work item types
 
