@@ -37,52 +37,59 @@ If you already have an Azure Artifacts feed, skip to the next section. Otherwise
 
 ## Add Maven Central upstream
 
-If you checked the *upstream sources* checkbox when creating your feed, Maven Central should already be added as an upstream source. If not, you can add it manually using the following steps:
+If you selected the *upstream sources* checkbox when setting up your feed, Maven Central should already be added as an upstream source. Otherwise, you can manually add it by following these steps:
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps, and navigate to your project.
 
-1. Select **Artifacts**, and then select the ![gear icon](../../media/icons/gear-icon.png) in the top right corner to navigate to your **Feed Settings**.
+1. Select **Artifacts**, then select the ![gear icon](../../media/icons/gear-icon.png) button in the top right corner to navigate to your **Feed Settings**.
 
-1. Select **Upstream sources**, and then select **Add Upstream**.
+1. Select **Upstream sources**, then select **Add Upstream**.
 
 1. Select **Public source**, select **Maven Central (https://repo.maven.apache.org/maven2/)** from the dropdown menu, and then select **Add** when you're done.
-
-    :::image type="content" source="../media/maven-add-upstream.png" alt-text="A screenshot showing how to add Maven central upstream source.":::
 
 1. Select **Save** in the top right corner to save your changes.
 
     :::image type="content" source="media/save-upstream-sources.png" alt-text="A screenshot showing how to save upstream sources.":::
 
-## Save package from Maven Central
+## Connect to your feed
 
-Before saving packages from Maven Central, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](project-setup-maven.md) to set up your Maven project and connect to your feed. The following example illustrates how to save the Kotlin Datetime Library from Maven Central using the command line.
+Before you can start saving packages from upstream sources, you must first set up your project and connect to your feed.
 
-If you want to save/restore your packages using Azure Pipelines instead, follow the steps in the [Restore Maven packages with Azure Pipelines (YAML/Classic)](../../pipelines/packages/maven-restore.md) tutorial. 
+1. Sign in to Azure DevOps, then navigate to your project.
 
-1. Navigate to Maven Central at `https://mvnrepository.com/`.
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Search for the Kotlin Datetime Library. Select the **Kotlinx Datetime** package, and then select the version you wish to install.
+1. Select **Connect to Feed**, then select **Maven** from the left panel.
 
-1. Copy the `<dependency>` snippet from the **Maven** tab. 
+1. Make sure you've installed the prerequisites, then follow the steps in the **Project setup** section to set up your *pom.xml* and *settings.xml* files and connect to your feed. See [Project setup - Maven](project-setup-maven.md) for more details.
+
+## Use packages from Maven Central
+
+The following example illustrates how to consume the *Apache HttpClient* package from Maven Central using the command line.
+
+[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
+
+1. Navigate to Maven Central `https://mvnrepository.com/`.
+
+1. Search for *Apache HttpClient*. Select the package, then select the version you wish to install.
+
+1. Under the **Maven** tab, copy the `<dependency>` snippet:
 
     ```xml
     <dependency>
-        <groupId>org.jetbrains.kotlinx</groupId>
-        <artifactId>kotlinx-datetime-jvm</artifactId>
-        <version>0.4.1</version>
-        <scope>runtime</scope>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>4.5.14</version>
     </dependency>
     ```
 
-1. Open your *pom.xml* file and paste the snippet inside your `<dependencies>` tag, and then save your file.
+1. Open your *pom.xml* file and paste the snippet inside the `<dependencies>` tag, then save your file.
 
-1. Run the following command from the same path as your *pom.xml* file to install your dependencies:
+1. Run the following command from the same directory as your *pom.xml* file to install your dependencies:
 
-    ```command
+    ```
     mvn install
     ```
-
-[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
 ## View saved packages
 
