@@ -322,11 +322,11 @@ The following table shows how the default inherited states map to category state
 Know where each work item type appears so you can manage work effectively.
 
 |Work item type category |Work items appear here |
-|---------|---------|
-|Requirement    |  Only on the product board.       | 
-|Feature   | Only on the Feature portfolio board.        |         
-|Epic     | Only on the Epic portfolio board.        | 
-|Custom|    Only on a custom portfolio board. |         |
+|------------------------|-----------------------|
+|Requirement    |  Only on the product board.    | 
+|Feature   | Only on the Feature portfolio board.|         
+|Epic     | Only on the Epic portfolio board.    | 
+|Custom|    Only on a custom portfolio board.    |         
 
 > [!TIP]   
 > Map each workflow state to a board column. If a state isn't mapped, it doesn't appear on the board.
