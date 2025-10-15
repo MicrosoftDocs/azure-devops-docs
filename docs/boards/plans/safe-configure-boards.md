@@ -56,7 +56,7 @@ SAFe® organizes work into three levels that map directly to Azure Boards:
 | Program | Features | Program teams | Program Increments (8-12 weeks) |
 | Team | User Stories, Tasks, Bugs | Agile feature teams | Sprints (2-3 weeks) |
 
-![Screenshot that shows an Agile tool structure to support SAFe®](media/safe-objects-map-to-vso-objects.png)
+![Screenshot that shows an Agile tool structure to support SAFe®.](media/safe-objects-map-to-vso-objects.png)
 
 **Key concepts:**
 - **Program Increments (PIs)**: 8-12 week iterations containing 4-5 sprints plus IP sprint
@@ -134,13 +134,13 @@ See these related articles for how Azure Boards supports business agility:
 
 The following diagram shows a three-level team hierarchy mapped to area and iteration paths. The examples use the Agile process as a base, but you can apply these patterns to any supported process.
 
-![Screenshot that shows an Agile tool structure to support SAFe®](media/safe-objects-map-to-vso-objects.png)
+![Screenshot that shows an Agile tool structure to support SAFe®.](media/safe-objects-map-to-vso-objects.png)
 
 ### Agile feature, program, and portfolio teams
 
 Azure Boards gives each team its own view of work. Configure a hierarchical team structure so each team focuses on its work and roll-up occurs to higher levels.
 
-![Screenshot that shows SAFe® roles mapped to a hierarchy of teams](media/safe/portfolio-programs-teams-area-paths-mapping.png)
+![Screenshot that shows SAFe® roles mapped to a hierarchy of teams.](media/safe/portfolio-programs-teams-area-paths-mapping.png)
 
 To support SAFe® teams, promote the default team to act as the Portfolio team for Epics, then create program and team subteams. Track work across teams by assigning area paths and iteration paths appropriately.
 
@@ -170,7 +170,7 @@ For more about work items, see [Track work with user stories, issues, bugs, feat
 
 Map SAFe® backlogs to team, program, and portfolio backlogs. The Agile process provides User Story, Feature, and Epic backlog levels out of the box. Use hierarchical backlogs to show the work that supports Features and the progress of Epics.
 
-![Screenshot that shows a hierarchical backlog with epics, features, and stories](media/safe/epic-feature-story-mapping.png)
+![Screenshot that shows a hierarchical backlog with epics, features, and stories.](media/safe/epic-feature-story-mapping.png)
 
 Each team can configure their board view independently to support their specific SAFe® role and responsibilities.
 
@@ -178,17 +178,17 @@ Each team can configure their board view independently to support their specific
 
 Map SAFe® Release Trains, Program Increments (PIs), Releases, and Sprints to iteration paths. Share iterations across the team hierarchy so teams align on release schedules.
 
-![Screenshot that shows how SAFe® release trains map to iterations](media/safe/iteration-mapping.png)
+![Screenshot that shows how SAFe® release trains map to iterations.](media/safe/iteration-mapping.png)
 
 Because Epics can span multiple release trains, the Portfolio team typically isn't bound to specific iterations. Program teams track Features by PI; Feature teams use Sprints to complete Stories.
 
-![Screenshot that shows teams tracking deliverables using iterations](media/safe/program-iterations.png)
+![Screenshot that shows teams tracking deliverables using iterations.](media/safe/program-iterations.png)
 
 ### Value streams and budgets
 
 Use tags or custom fields to map Features and Epics to Value Streams, Strategic Themes, and budgets. Define rollup fields or use queries and charts to aggregate budget estimates from child Features up to Epics.
 
-![Screenshot that shows tags used to track value streams or associated budgets](media/safe/epic-value-area-tags.png)
+![Screenshot that shows tags used to track value streams or associated budgets.](media/safe/epic-value-area-tags.png)
 
 With tags and queries, you can:
 - Filter backlogs and boards
@@ -198,7 +198,7 @@ With tags and queries, you can:
 For robust mappings, add a Value Area custom field on Epics, Features, or Stories and use rollup to gather estimates into portfolio views.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot that shows a budget estimate rollup](media/safe/budget-estimate-rollup.png)
+> ![Screenshot that shows a budget estimate rollup.](media/safe/budget-estimate-rollup.png)
 
 **Value Area assignment guidelines:**
 - Set **Value Area** = *Architectural* for Features mapped to architecture epics
@@ -245,7 +245,7 @@ Use queries, dashboards, and charts to track milestone progress and ensure align
 Model shared services (for example, UX or Security) as their own teams and area paths. Shared-area work items appear on the backlogs and boards of the teams they support.
 
 > [!div class="mx_imgBorder"]
-> ![Screenshot that shows the shared services area path and team structure](media/safe/shared-services-team-structure.png)
+> ![Screenshot that shows the shared services area path and team structure.](media/safe/shared-services-team-structure.png)
 
 This structure allows shared services teams to:
 - Maintain their own backlog and sprint planning
@@ -257,7 +257,7 @@ This structure allows shared services teams to:
 Use the [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) to run retrospectives, capture feedback, and create follow-up work.
 
 > [!div class="mx_imgBorder"]
-> ![Screenshot that shows a retrospective board](media/safe/retrospective-board.png)
+> ![Screenshot that shows a retrospective board.](media/safe/retrospective-board.png)
 
 The extension helps teams:
 - Collect feedback on milestones and PI events
@@ -624,12 +624,12 @@ Both widgets display as scatter-plot control charts with interactive elements. F
 #### Example Lead Time widget
 
 > [!div class="mx_imgBorder"]  
-> ![Screenshot that shows an example Lead Time widget](../../report/dashboards/media/lead-time-control-chart.png) 
+> ![Screenshot that shows an example Lead Time widget.](../../report/dashboards/media/lead-time-control-chart.png) 
 
 #### Example Cycle Time widget
 
 > [!div class="mx_imgBorder"]  
-> ![Screenshot that shows an example Cycle Time widget](../../report/dashboards/media/cycle-time-planning.png) 
+> ![Screenshot that shows an example Cycle Time widget.](../../report/dashboards/media/cycle-time-planning.png) 
 
 <a id="roadmaps"></a>
 
@@ -642,26 +642,26 @@ Use Delivery Plans, Feature Timeline, and Epic Roadmap tools to review SAFe® de
 Program teams review story and feature roadmaps for their Agile Release Teams. The following example shows the Fiber Suite teams' story deliverables.
 
 > [!div class="mx_imgBorder"]  
-> ![Screenshot that shows Plans view of Fiber Suite teams' deliverables](media/safe-metrics/plan-fiber-suite-stories.png) 
+> ![Screenshot that shows Plans view of Fiber Suite teams' deliverables.](media/safe-metrics/plan-fiber-suite-stories.png) 
 
 Expand a feature team to view details. Delivery Plans let you drag and drop work items to update sprint assignments, or open work items to update fields and add comments.
 
 > [!div class="mx_imgBorder"]
-> ![Screenshot that shows Plans view with Fiber Suite App team deliverables expanded](media/safe-metrics/plan-fiber-suite-stories-expand-app-team.png) 
+> ![Screenshot that shows Plans view with Fiber Suite App team deliverables expanded.](media/safe-metrics/plan-fiber-suite-stories-expand-app-team.png) 
 
 #### Review the portfolio features deliverable 
 
 Portfolio teams review Features under development by program teams. The following example shows Features mapped to Program Increment timeboxes.
 
 > [!div class="mx_imgBorder"]
-> ![Screenshot that shows Feature Timeline view of portfolio feature deliverables](media/safe-metrics/plan-portfolio-fiber-suite.png) 
+> ![Screenshot that shows Feature Timeline view of portfolio feature deliverables.](media/safe-metrics/plan-portfolio-fiber-suite.png) 
 
 #### Review feature timeline roadmaps 
 
 Feature Timeline provides another roadmap view. The following example shows Epics in the Feature Timeline tool. Configure progress bars to reflect completed stories or effort.
 
 > [!div class="mx_imgBorder"]
-> ![Screenshot showing the Feature Timeline view of portfolio feature deliverables](media/safe-metrics/feature-timeline-fabrikam-team.png)
+> ![Screenshot showing the Feature Timeline view of portfolio feature deliverables.](media/safe-metrics/feature-timeline-fabrikam-team.png)
 
 <a id="review-validate"></a>
 

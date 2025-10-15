@@ -7218,22 +7218,22 @@
     },
     {
       "source_path": "docs/boards/plans/safe-customize.md",
-      "redirect_url": "/azure/devops/safe-configure-boards#customization",
+      "redirect_url": "/azure/devops/boards/plans/safe-configure-boards#customization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/boards/plans/safe-plan-track-boards.md",
-      "redirect_url": "/azure/devops/safe-configure-boards#plan-track",
+      "redirect_url": "/azure/devops/boards/plans/safe-configure-boards#plan-track",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/boards/plans/safe-review-roadmaps-progress.md",
-      "redirect_url": "/azure/devops/safe-configure-boards#roadmaps",
+      "redirect_url": "/azure/devops/boards/plans/safe-configure-boards#roadmaps",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/boards/plans/scaled-agile-framework-.md",
-      "redirect_url": "/azure/devops/safe-configure-boards",
+      "redirect_url": "/azure/devops/boards/plans/safe-configure-boards",
       "redirect_document_id": false
     }
   ]
