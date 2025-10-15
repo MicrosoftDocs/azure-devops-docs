@@ -7,7 +7,7 @@ ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/06/2025
+ms.date: 10/10/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -43,6 +43,19 @@ When you deny access to an authentication method, no application can access your
 
 [Conditional Access (CA) in Azure DevOps](conditional-access-policies.md) is enforced through Microsoft Entra ID and supports both interactive (web) and non-interactive (client credential) flows, validating policies like MFA, IP restrictions, and device compliance during sign-in and periodically via token checks. 
 
+## SSH key policies
+
+### SSH authentication
+
+The **SSH authentication** policy controls whether or not an organization allows the use of SSH keys.
+
+### Validate SSH key expiration
+
+To avoid losing access due to an expired SSH key, create and upload a new key *before* the current one expires. The system sends automated notifications **7 days before expiration** and **again after expiration** to help you stay ahead. For more information, see [Step 1: Create your SSH keys](../../repos/git/use-ssh-keys-to-authenticate.md#step-1-create-your-ssh-keys).
+
+The **Validate SSH key expiration** policy is enabled by default. When active, it enforces the expiration date—expired keys immediately become invalid.
+
+If you disable the policy, the system no longer checks expiration dates, and expired keys remain usable. 
 
 ## Policies by Level
 
@@ -50,6 +63,7 @@ When you deny access to an authentication method, no application can access your
 |--------------|-------------|
 | [**Third-party application access via OAuth**](#restrict-authentication-methods) | ✅ | |
 | [**SSH authentication**](#restrict-authentication-methods) | ✅ |  |
+| [**Validate SSH key expiration**](#validate-ssh-key-expiration) | ✅ |  |
 | [**Log audit events**](../audit/azure-devops-auditing.md) | ✅ |  |
 | [**Restrict personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-personal-access-token-creation-organization-policy) | ✅ |  |
 | [**Allow public projects**](../projects/make-project-public.md) | ✅ |  |

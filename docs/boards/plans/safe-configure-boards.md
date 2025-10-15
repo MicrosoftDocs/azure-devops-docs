@@ -1,413 +1,752 @@
 ---
-title: Configure Azure Boards to support SAFe®
+title: Implement SAFe® with Azure Boards - Complete guide
 titleSuffix: Azure Boards
-description: Learn how to configure Azure Boards to support epics, release trains, and multiple backlogs to support SAFe® practices.
+description: Complete guide to implementing Scaled Agile Framework (SAFe®) with Azure Boards. Configure teams, customize processes, plan and track work, monitor progress, and validate your SAFe® implementation.
 ms.service: azure-devops-boards
-ms.assetid:  
+ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2021
+ms.date: 10/14/2025
+ai-usage: ai-assisted
 ---
 
-# Configure Azure Boards to support SAFe® programs and portfolios
+# Implement SAFe® with Azure Boards - Complete guide
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This tutorial walks you through the steps to convert a new project with a single team to one that is configured to support Scaled Agile Framework (SAFe®) programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by completing the following tasks: 
+This guide walks you through implementing the Scaled Agile Framework (SAFe®) with Azure Boards. Learn to configure teams, customize processes, plan and track work, monitor progress, and validate your implementation across portfolio, program, and team levels.
 
->[!div class="checklist"]      
-> * Define Agile, program, and portfolio teams  
-> * Configure a hierarchy of Area Paths to support your teams  
-> * Define Iteration Paths to support SAFe® release trains, PIs, sprints, and IPs  
-> * Configure each team to support SAFe® 
+Azure Boards supports SAFe® practices through teams, backlogs, boards, reports, and metrics. This article explains how Azure Boards artifacts support SAFe practices and artifacts.
 
-You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.  
+## What you accomplish
 
-Once you've completed these core configurations, you can then consider customizing your project to support specific business needs. Customization options are addressed in [Customize Azure Boards to support SAFe&reg; ](safe-customize.md). 
+>[!div class="checklist"]
+> - **[Understand SAFe® concepts](#safe-concepts)** and Azure Boards mapping.
+> - **[Configure basic SAFe® structure](#basic-configuration)** with team hierarchies.
+> - **[Apply advanced customization](#advanced-customization)** for SAFe® artifacts.
+> - **[Monitor progress and metrics](#monitor-metrics)** with dashboards and reports.
+> - **[Review and validate configuration](#review-validate)** with testing checklists.
+> - **[Plan and track SAFe® programs](#plan-track)** across all levels.
+> - **[Automate management](#automation-tools)** with command-line tools.
 
-> [!TIP]   
-> If you plan to add custom work item types, portfolio backlogs, or workflows; you may want to make those customizations first and then define and configure your teams. 
- 
-If you're new to Azure Boards, we recommend that you review [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md) before adding and configuring your teams. Also, two excellent articles to review around team structure and Agile culture are [Introduction to planning efficient workloads with DevOps](/devops/plan/planning-efficient-workloads-with-devops) and [Building productive, customer focused teams](/devops/plan/building-productive-teams). 
-
-[!INCLUDE [temp](../includes/note-safe-articles.md)]
+This approach works with any Azure DevOps process template and scales from small to large enterprise deployments.
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-project-admin](../includes/prerequisites-project-admin.md)]
+Complete these requirements before implementing SAFe® with Azure Boards.
 
-## Understand team hierarchy 
+| Category | Requirement | Details |
+|----------|-------------|---------|
+| **SAFe® Knowledge** | Review SAFe® framework fundamentals | If you're new to SAFe®, start with [SAFe® framework fundamentals](https://www.scaledagileframework.com/). |
+| **Permissions** | Project Administrator access | Ensure you have [Project Administrator permissions](../../organizations/security/change-project-level-permissions.md) to configure teams, areas, and iterations. |
+| **Organization Planning** | Understand your SAFe® structure | Document your organization's portfolio themes, value streams, and Agile Release Trains (ARTs). |
+| **Stakeholder Alignment** | Identify key stakeholders | Engage Portfolio Managers, Program Managers, and Scrum Masters early in the planning process. |
 
-In this article, we'll go from having one project and one team, both named "Fabrikam", to the following set of nine teams. 
+<a id="safe-concepts"></a>
 
-> [!div class="mx-imgBorder"]  
+## SAFe® concepts and Azure Boards mapping
+
+SAFe® organizes work into three levels that map directly to Azure Boards:
+
+| SAFe® Level | Azure Boards work items | Azure Boards teams | Iterations |
+|-------------|-------------------------|-------------------|------------|
+| Portfolio | Epics | Portfolio teams | No specific iterations |
+| Program | Features | Program teams | Program Increments (8-12 weeks) |
+| Team | User Stories, Tasks, Bugs | Agile feature teams | Sprints (2-3 weeks) |
+
+![Screenshot that shows an Agile tool structure to support SAFe®.](media/safe-objects-map-to-vso-objects.png)
+
+**Key concepts:**
+- **Program Increments (PIs)**: 8-12 week iterations containing 4-5 sprints plus IP sprint
+- **Agile Release Trains (ARTs)**: Program teams managing features
+- **Innovation and Planning (IP) Sprints**: Dedicated sprints for innovation work
+- **Value Streams**: Track using tags or custom fields with rollup capabilities
+
+For Scrum and Kanban implementation details, see [About Sprints, Scrum, and project management](../sprints/scrum-overview.md) and [About Boards and Kanban](../boards/kanban-overview.md).
+
+## SAFe® Framework configurations
+
+SAFe® provides four configurations to support different organizational needs:
+
+### Essential SAFe®
+The foundational level supporting Agile Release Trains (ARTs) with:
+- Team and Program levels
+- Program Increments and iterations
+- Features and Stories
+- Basic PI planning and execution
+
+### Large Solution SAFe®
+Adds solution-level coordination for complex systems:
+- Solution Trains
+- Capabilities work items
+- Solution backlogs
+- Cross-ART coordination
+
+### Portfolio SAFe®
+Adds portfolio management capabilities:
+- Epic work items and portfolio backlogs
+- Lean portfolio management
+- Strategic themes and portfolio vision
+- Value stream alignment
+
+### Full SAFe®
+Combines all levels for enterprise-scale implementations including Essential, Large Solution, and Portfolio levels.
+
+### SAFe® architectural overview
+
+> [!div class="mx_imgBorder"]  
+> ![Screenshot that shows the SAFe architectural overview poster version 5.0.](media/safe/safe-concepts-poster-v5.0-a.png)  
+
+*Reproduced with permission from © 2011-2020 [Scaled Agile Inc.](https://www.scaledagile.com/). All rights reserved.*
+
+## How SAFe® artifacts map to Azure Boards
+
+| SAFe® term or artifact | Azure Boards term or artifact |
+|------------------------|-------------------------------|
+| Agile teams | [Teams](safe-concepts.md#teams) - Define hierarchy of teams |
+| Agile Release Train (ART) | [Teams](safe-concepts.md#teams) - Agile teams managing Features |
+| Budgets | [Tags, Value Area](safe-concepts.md#tags) - Track budget/value stream work |
+| Capabilities | [Work item](safe-concepts.md#work-items) - Plan and track like Epics/Features |
+| Enablers | [Work item](safe-concepts.md#work-items) - Track as work items in backlogs |
+| Innovation and Planning (IP) Iteration | [Iteration Path](safe-concepts.md#iterations) - Define IP iteration paths |
+| Portfolio Backlog | [Portfolio backlog](safe-concepts.md#backlogs-boards) - List Epics with child expansion |
+| Portfolio Kanban | [Portfolio Epics board](safe-plan-track-boards.md#portfolio-team-board) |
+| Program Backlog | [Feature backlog](safe-concepts.md#backlogs-boards) - List program Features |
+| Program Kanban | [Program Features board](safe-plan-track-boards.md#program-team-board) |
+| Solution Backlog | [Solution portfolio backlog](safe-customize.md#custom-backlog) - Custom work item type |
+| Strategic Themes | [Wiki](safe-concepts.md#wiki) - Capture in project wiki |
+| Team Backlog | [Stories backlog](safe-concepts.md#backlogs-boards) - List team User Stories |
+| Team Kanban | [Stories board](safe-plan-track-boards.md#agile-team-board) |
+
+### SAFe® 5.0 Business Agility
+
+SAFe® practices help organizations build a culture of agility, alignment, and autonomy while remaining customer-centric.
+
+See these related articles for how Azure Boards supports business agility:
+- [Agile culture](agile-culture.md)
+- [Practices that scale](practices-that-scale.md)
+
+<a id="team-structure-artifacts"></a>
+
+### SAFe® team structure and artifacts
+
+The following diagram shows a three-level team hierarchy mapped to area and iteration paths. The examples use the Agile process as a base, but you can apply these patterns to any supported process.
+
+![Screenshot that shows an Agile tool structure to support SAFe®.](media/safe-objects-map-to-vso-objects.png)
+
+### Agile feature, program, and portfolio teams
+
+Azure Boards gives each team its own view of work. Configure a hierarchical team structure so each team focuses on its work and roll-up occurs to higher levels.
+
+![Screenshot that shows SAFe® roles mapped to a hierarchy of teams.](media/safe/portfolio-programs-teams-area-paths-mapping.png)
+
+To support SAFe® teams, promote the default team to act as the Portfolio team for Epics, then create program and team subteams. Track work across teams by assigning area paths and iteration paths appropriately.
+
+For detailed configuration steps, see [Configure basic SAFe® structure](#basic-configuration).
+
+### Stories, Features, Epics, Enablers, and Capabilities
+
+Capture all deliverables in work items. Each work item uses a specific work item type and workflow. The available work item types depend on the process chosen when you created the project—Agile, Basic, Scrum, or CMMI.
+
+[!INCLUDE [temp](../includes/work-item-types.md)]
+
+Backlog items can be called *User Stories* (Agile), *Issues* (Basic), *Product backlog items* (Scrum), or *Requirements* (CMMI). They all describe customer value and the work to deliver it.
+
+- Track Enablers using User Stories or Features, and track Capabilities using Features or Epics
+- Add custom work item types if you need specialized tracking
+
+Work items support:
+- Descriptions and acceptance criteria
+- Assignment to a team (area path) and an owner
+- State updates and iteration assignment
+- Linking, attachments, and tags
+- Comments and discussion threads
+
+For more about work items, see [Track work with user stories, issues, bugs, features, and epics](../work-items/about-work-items.md).
+
+### Team backlogs and boards
+
+Map SAFe® backlogs to team, program, and portfolio backlogs. The Agile process provides User Story, Feature, and Epic backlog levels out of the box. Use hierarchical backlogs to show the work that supports Features and the progress of Epics.
+
+![Screenshot that shows a hierarchical backlog with epics, features, and stories.](media/safe/epic-feature-story-mapping.png)
+
+Each team can configure their board view independently to support their specific SAFe® role and responsibilities.
+
+### Program increments, releases, and sprints
+
+Map SAFe® Release Trains, Program Increments (PIs), Releases, and Sprints to iteration paths. Share iterations across the team hierarchy so teams align on release schedules.
+
+![Screenshot that shows how SAFe® release trains map to iterations.](media/safe/iteration-mapping.png)
+
+Because Epics can span multiple release trains, the Portfolio team typically isn't bound to specific iterations. Program teams track Features by PI; Feature teams use Sprints to complete Stories.
+
+![Screenshot that shows teams tracking deliverables using iterations.](media/safe/program-iterations.png)
+
+### Value streams and budgets
+
+Use tags or custom fields to map Features and Epics to Value Streams, Strategic Themes, and budgets. Define rollup fields or use queries and charts to aggregate budget estimates from child Features up to Epics.
+
+![Screenshot that shows tags used to track value streams or associated budgets.](media/safe/epic-value-area-tags.png)
+
+With tags and queries, you can:
+- Filter backlogs and boards
+- Build queries and filter results by tag
+- Create charts and reports based on tags
+
+For robust mappings, add a Value Area custom field on Epics, Features, or Stories and use rollup to gather estimates into portfolio views.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows a budget estimate rollup.](media/safe/budget-estimate-rollup.png)
+
+**Value Area assignment guidelines:**
+- Set **Value Area** = *Architectural* for Features mapped to architecture epics
+- Default *Business* value applies to features supporting business epics
+- Apply the same principles to Stories that support architectural vs. business features
+- Use tags to track other investment themes
+
+For advanced value stream tracking options, see [Add custom fields for SAFe® tracking](#add-custom-field).
+
+### Portfolio Vision and Strategic Themes
+
+Use the project wiki to share Portfolio Vision, Strategic Themes, taxonomy, goals, and objectives. The wiki versions pages and supports Markdown, so you can track edits and recover previous versions.
+
+Consider documenting:
+- How to use tags or custom fields to specify value streams
+- Taxonomy terms for your organization
+- How release trains and sprints get used
+- Key milestones and events
+- Customer-centric programs
+
+For details, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md).
+
+### Iteration goals and objectives
+
+Capture iteration goals and objectives in:
+- Project wiki for versioned documentation
+- Team dashboards using Markdown widgets
+- Work item descriptions for PI or sprint objectives
+
+Both the wiki and dashboards support Markdown and let teams store goals, objectives, and guidance that you can easily share and update.
+
+### Milestones and key events
+
+Represent SAFe® milestones (end of PIs, Sprints, Release Train events, or IP iterations) using:
+- A custom Milestone or Release work item field (picklist)
+- Tags on work items to mark milestone association
+- Work items that represent the milestone with target dates
+- One-day iteration paths for specific event dates
+
+Use queries, dashboards, and charts to track milestone progress and ensure alignment across teams.
+
+### Shared services team structure
+
+Model shared services (for example, UX or Security) as their own teams and area paths. Shared-area work items appear on the backlogs and boards of the teams they support.
+
+> [!div class="mx_imgBorder"]
+> ![Screenshot that shows the shared services area path and team structure.](media/safe/shared-services-team-structure.png)
+
+This structure allows shared services teams to:
+- Maintain their own backlog and sprint planning
+- Support multiple program teams simultaneously
+- Track their contribution to various SAFe® deliverables
+
+### Retrospectives and reviews
+
+Use the [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) to run retrospectives, capture feedback, and create follow-up work.
+
+> [!div class="mx_imgBorder"]
+> ![Screenshot that shows a retrospective board.](media/safe/retrospective-board.png)
+
+The extension helps teams:
+- Collect feedback on milestones and PI events
+- Organize and prioritize feedback
+- Create and track action items for continuous improvement
+
+### Share information across teams
+
+Share information across SAFe® teams with:
+- Rich work item fields and attachments for detailed specifications
+- Project and team dashboards using Markdown widgets—see [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
+- The project wiki for versioned, shareable documentation—see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
+
+For Markdown syntax guidance, see:
+- [Syntax guidance for Markdown usage in Wiki](../../project/wiki/markdown-guidance.md)
+- [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md)
+
+<a id="basic-configuration"></a>
+
+## Configure basic SAFe® structure
+
+This section walks you through converting a single-team project to support SAFe® programs and portfolios.
+
+### Target team structure
+
+Create the following team hierarchy:
+
+> [!div class="mx_imgBorder"]  
 > ![Teams, list](media/safe-configure/teams-list.png)
 
 > [!NOTE]   
-> Azure Boards doesn't support a hierarchy of teams. However, by configuring the Area Paths as indicated in this article, you effectively create a type of team hierarchy. The hierarchy is defined through the structure of Area Paths.  
+> Azure Boards doesn't support a hierarchy of teams. However, by configuring the Area Paths as shown, you effectively create a team hierarchy through the Area Path structure.
 
-We'll then configure the area path to the following hierarchy and configuring each team's area path. This configuration supports each team's backlog view and rollup of views within the hierarchy.  
+The final area path configuration looks like this:
 
-> [!div class="mx-imgBorder"]  
+> [!div class="mx_imgBorder"]  
 > ![Area path and team configuration](media/safe-configure/area-path-structure-corrected.png)
 
-> [!TIP]    
-> If you have a large number of teams, area paths, and iterations that you need to add, you may want to use command line or programmatic tools. See the [Command line and  programmatic tools](#command-line-and-programmatic-tools) provided later in this article. 
+### Step 1: Define your teams
 
-All teams can manage their own workload and priorities while clearly understanding how their work supports those epics managed in the portfolio team's backlog. At the same time, the portfolio team can monitor progress of its backlog on their own board, prioritize the items on their backlog, and view progress across release trains.
-
-While the above may sound complicated, it actually takes little configuration to set up the teams and get started.
-To go from one project with one default team, first define each team while automatically creating a default area path for that team. Then reconfigure the flat set of area paths to a hierarchical structure. Next, define the iteration paths to support the release structure you want and the program and Agile teams to use. Lastly, configure each team and populate the membership of teams.  
-
-<a id="define-teams"></a>
-
-## Define your teams 
-
-To start, we'll add each team, creating a default area path for each. Later in this article, we'll configure those area paths into the necessary hierarchy. This structure maps the following SAFe® teams to Azure Boards teams:  
-- Portfolio team -> default top-level team, the Fabrikam team (already defined) 
-- Program teams -> secondary-level teams, Fiber Suite, and Service Suite  
-- Agile teams -> tertiary-level teams defined under Fiber Suite and Service Suite.
-
-Add each team, one by one.
+Start by adding each team, which automatically creates a default area path for each.
 
 > [!NOTE]   
-> The following procedure uses the **New Teams Page** user interface that is in preview. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+> The following procedure uses the **New Teams Page** user interface. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
 
-1. From the web portal, choose **Project settings** and open **Teams**. 
+1. From the web portal, choose **Project settings** > **Teams**.
 
-	> [!div class="mx-imgBorder"]
-	> ![Open Project settings, and then Teams](media/safe-configure/open-project-settings-teams.png)
+2. Select **New team**.
 
-1. Choose **New team**. 
+3. Configure each team:
+   - Give the team a name and optional description
+   - Assign a team administrator (Scrum Master, Program Manager, or Portfolio Manager)
+   - Check **Create an area path with the name of the team**
+   - Optionally add team members
 
-	> [!div class="mx-imgBorder"]
-	> ![Create a subteam with its own area path](media/safe-configure/new-team.png)
+4. Repeat for all teams in your SAFe® structure:
+   - Portfolio team (use existing default team)
+   - Program teams (for example, Fiber Suite, Service Suite)
+   - Agile feature teams (for example, App, Mobile, Web, and so on.)
 
-1. Give the team a name, and optionally a description. 
+### Step 2: Configure Area Paths hierarchy
 
-	Here we add the *App* team. Choose the team administrator and ensure the **Create an area path with the name of the team** checkbox is checked. Optionally add team members.  
+Transform the flat area path structure into a hierarchy that supports your team relationships.
 
-	> [!div class="mx-imgBorder"]
-	> ![Add the App team.](media/safe-configure/add-team.png)
+1. From **Project Settings**, choose **Project configuration** > **Areas**.
 
-	Assign the team's Scrum Master, Program Manager, or Portfolio Manager as the team administrator. As team administrators, they can configure their team's tools to support their Agile practices and business needs. 
+2. Drag and drop each feature team's area path under their parent program team's area path.
 
-1. Repeat steps 2 and 3 to define all teams.  
+   > [!div class="mx_imgBorder"]
+   > ![Area Paths, drag-and-drop to parent node](media/safe-configure/area-paths-drag-drop.png)
 
-1. Optional. If you have two or more Portfolio teams, create a team for each of them.   
+3. Continue until your area path structure matches your team hierarchy.
 
-<a id="configure-area-paths"></a> 
+### Step 3: Define Iteration Paths for SAFe®
 
-## Configure Area Paths 
+Create an iteration structure that supports Program Increments, sprints, and IP sprints.
 
-To support your team hierarchy, you'll now configure the area paths created in the first step of defining teams into a hierarchy. 
+1. From **Project Settings**, choose **Project configuration** > **Iterations**.
 
-1. From the **Project Settings** page, choose **Project configuration** and then **Areas**. You should see a flat list of Area Paths. 
+2. Create Program Increment iterations:
+   - Add child iterations under the root for each PI (for example, "PI 1," "PI 2")
+   - Set start and end dates for 8-12 week periods
 
-	> [!div class="mx-imgBorder"]
-	> ![Flat list of area paths](media/safe-configure/area-paths-flat-list.png)
+3. Create sprint iterations under each PI:
+   - Add 4-5 sprint iterations per PI
+   - Set two-week sprint durations
+   - Include one IP (Innovation and Planning) sprint per PI
 
-2. You'll want to choose each feature team's Area Path under the top Area Path and move it under the Area Path hierarchy to which it belongs. 
+   > [!div class="mx_imgBorder"]
+   > ![Iterations page, list of iterations](media/safe-configure/list-iterations.png)
 
-    You can drag and drop each area path under the parent node where it belongs. For example, here we drag the Migrate node to the Fiber Suite node. 
+### Step 4: Configure team settings
 
-	> [!div class="mx-imgBorder"]
-	> ![Area Paths, drag-and-drop to parent node](media/safe-configure/area-paths-drag-drop.png)
+Configure each team according to their level in the SAFe® hierarchy.
 
-	Instead, you can open the context menu for the Area Path, choose Edit, and select the node where you want to move it.  
+#### Portfolio Team Configuration
 
-3. Repeat step 2 and 3 for the remaining Agile team area paths. 
+1. From **Project Settings** > **Team configuration**, select your portfolio team.
 
-	If you've defined two or more portfolio teams, you'll need to change the move each program team's area path under their corresponding portfolio team's area path. 
+2. **General tab**:
+   - Check only **Epics** for backlog navigation
+   - Set **Working with bugs** to "Bugs don't appear on backlogs and boards"
 
-3. When finished, your area path structure should appear similar to the following image.  
+   > [!div class="mx_imgBorder"]
+   > ![Team configuration, General, Backlog navigation levels, Epics only](media/safe-configure/backlog-navigation-levels-epics-only.png)
 
-	> [!IMPORTANT]  
-	> This structure shows that area paths are owned by Agile teams, program teams, and the portfolio team. We'll correct this structure later in this article when we configure each team to be the sole owner of its area path.   
+3. **Iterations tab**:
+   - Set **Default iteration** to @CurrentIteration
+   - Set **Backlog iteration** to root (project name)
+   - Don't select any specific iterations
 
-	> [!div class="mx-imgBorder"]
-	> ![Hierarchical area path](media/safe-configure/team-area-path-mapping.png)
+4. **Areas tab**:
+   - Set to **Exclude sub areas**
 
-## Define Iteration Paths  
+#### Program Team Configuration
 
-To track progress towards Releases, create your iteration path structure. Unlike area paths, multiple teams can share the same iteration path structure. Sharing the iteration structure lets multiple teams work in the same sprint cadence towards the same release trains.  
+1. **General tab**:
+   - Check **Features** and **Stories**, uncheck **Epics**
+   - Set **Working with bugs** to "Bugs don't appear on backlogs and boards"
 
-> [!IMPORTANT]  
-> Deleting, renaming, or moving iteration paths causes a loss of associated historical data.   
+2. **Iterations tab**:
+   - Select only PI iterations (not individual sprints)
 
-If you already have iterations for your default team, you can rename them. You'll want to create an iteration structure that supports your entire team structure, not just one team.  
+3. **Areas tab**:
+   - Set to **Exclude sub areas**
 
-1. From the **Project Settings** page, choose **Project configuration** and then **Iterations**.  
+#### Agile Feature Team Configuration
 
-2. Under the default iteration, which shares the same name as the project, create a child iteration that represents your first program increment (PI). Optionally, add a start and end date for the PI, but keep in mind that the iteration gets broken down further into sprints.
+1. **General tab**:
+   - Check **Features** and **Stories**, uncheck **Epics**
+   - Set **Working with bugs** to "Bugs are managed with requirements"
 
-	> [!div class="mx-imgBorder"]
-	> ![Create a child iteration.](media/safe-configure/define-pi1-iteration.png) 
+2. **Iterations tab**:
+   - Select sprint iterations (including IP sprints)
 
-3. Next, create a child iteration for each Sprint within the PI. Set dates for these sprints to correspond your Agile teams' cadences.  
+3. **Areas tab**:
+   - Keep default **Include sub areas** setting
 
-	> [!div class="mx-imgBorder"]
-	> ![Iterations page, create IP Sprint iteration](media/safe-configure/define-sprint1-iteration.png)
+<a id="customization"></a>
 
-4. Continue to add as many iterations as needed to meet the time box cadence structure for all your teams. 
+## Advanced customization
 
-	When finished, you should have a structure similar to the following image. 
+The main reason to customize your process is to support progress tracking and monitoring, report key metrics, and meet specific business needs. This section covers process customizations you can implement to complement your SAFe® practices. Most of these customizations are optional.
 
-	> [!div class="mx-imgBorder"]
-	> ![Iterations page, list of iterations](media/safe-configure/list-iterations.png)
+### About customization and the inherited process
 
-	> [!TIP]
-	> You can drag and drop Iteration Paths to structure your iterations, similar to as shown in Step 2 under Configure Area Paths. Azure Boards always lists the iteration paths in order of their dates under each parent node. 
+Azure Boards provides a graphical user interface to support customization of your projects through the Inherited process. All projects that use an inherited process automatically update when customizations get made to that process.
 
-<a id="configure-your-teams"></a> 
+For an overview of all customizations you can make, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md).
 
-## Configure your teams 
+<a id="customize-work-items"></a>
 
-Now that your teams, Area Paths, and Iteration Paths are defined, the next step is to configure each team. You'll want to configure the following settings for each team. 
-- Active backlogs
-- Working with bugs  
-- Set default Iteration Path
-- Select team Iteration Paths 
+### Customize work item types
 
-The following table lists the recommended settings to make based on the team level.
+Each work item type defines the fields that capture and store information. You can customize existing work item types in the following ways to support specific SAFe® tracking requirements:
 
-***
-:::row:::
-   :::column span="":::
-     **Configure**
-   :::column-end:::
-   :::column span="":::
-      **Agile feature team**
-   :::column-end:::
-   :::column span="":::
-      **Program team**
-   :::column-end:::
-   :::column span="":::
-      **Portfolio team**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Backlog navigation levels
-   :::column-end:::
-   :::column span="":::
-      Features, Stories  
-   :::column-end:::
-   :::column span="":::
-      Features, Stories  
-   :::column-end:::
-   :::column span="":::
-      Epics
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Working with bugs
-   :::column-end:::
-   :::column span=""::: 
-      Bugs are managed with requirements
-   :::column-end:::
-   :::column span=""::: 
-      Bugs are not managed on backlogs and boards
-   :::column-end:::
-   :::column span="":::
-      Bugs are not managed on backlogs and boards 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Default Iteration
-   :::column-end:::
-   :::column span=""::: 
-      @CurrentIteration 
-   :::column-end:::
-   :::column span=""::: 
-      @CurrentIteration 
-   :::column-end:::
-   :::column span="":::
-      @CurrentIteration  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Backlog Iteration
-   :::column-end:::
-   :::column span=""::: 
-      Fabrikam
-   :::column-end:::
-   :::column span=""::: 
-      Fabrikam 
-   :::column-end:::
-   :::column span="":::
-      Fabrikam 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Selected iterations 
-   :::column-end:::
-   :::column span="":::
-      Sprint 1 thru Sprint 4, IP Sprint
-   :::column-end:::
-   :::column span="":::
-      PI 1, PI 2, PI 3
-   :::column-end:::
-   :::column span="":::
-      None
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Areas
-   :::column-end:::
-   :::column span="":::
-      Include sub areas
-   :::column-end:::
-   :::column span="":::
-      Exclude sub areas
-   :::column-end:::
-   :::column span="":::
-      Exclude sub areas
-   :::column-end:::
-:::row-end:::
+- [Add custom fields](#add-custom-field) to support tracking budget costs, value streams, or customer-centric information
+- [Customize existing fields](#customize-fields), such as modifying picklists or changing field labels
+- [Add custom rules](#custom-rules) to make fields required or specify actions under select conditions
+- [Change the workflow](#custom-workflow) to reflect your team's workflow process
+- [Add custom controls or extensions](#custom-control) to support custom functions such as calculated fields
 
-   
-   
+For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 
-***
+<a id="add-custom-field"></a>
+
+### Add custom fields for SAFe® tracking
+
+Add custom fields to support tracking data requirements not met by existing fields. Consider adding these fields to support SAFe® practices:
+
+| Field name | Work Item Types | Notes |
+|------------|-----------------|-------|
+| Budget cost | Feature, Epic | Capture estimated costs. Use rollup to capture total estimated cost of Epic's Features. |
+| Category or Group | Feature, Epic, User Story | Specify picklist for SAFe® categories: *Feature*, *Capability*, *Enabler*, or *Solution*. |
+| Milestone | Feature, Epic, User Story | Specify picklist of milestone events that work items should meet. |
+| Value Stream | Feature, Epic, User Story | Specify picklist to support taxonomy of value streams. |
+
+For more information, see [Add a custom field to a work item type](../../organizations/settings/work/add-custom-field.md).
+
+#### Field versus tags usage
+
+You can capture value streams using fields or tags. Consider these factors:
+
+- **Fields**: More formal, can require through rules, support query charts
+- **Tags**: Informal, adhoc method, anyone can add new tags
+- **Filtering**: Both support filtering of backlogs, boards, and queries
+- **Growth**: Tag numbers can grow quickly without governance
+
+<a id="customize-fields"></a>
+
+### Customize existing fields
+
+Customize existing fields to support:
+
+- Relabel field names
+- Change field placement or remove from forms
+- Add or change picklists (for example, expand *Value Area* beyond *Business* and *Architectural*)
+- Change default field assignments
+- Make fields required
+- [Add field rules](#custom-rules)
+
+For field reference, see [Work item field index](../work-items/guidance/work-item-field.md). For customization details, see [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md).
+
+<a id="custom-rules"></a>
+
+### Add custom rules
+
+Field rules support business use cases by specifying actions based on conditions. For example, make fields required based on other field values.
+
+> [!div class="mx-tdBreakAll"]
+> |Supported conditions |Supported actions |
+> |-------------|----------|
+> |![Screenshot showing list of conditions.](../../organizations/settings/work/media/rules/when-condition-2.png) | ![Screenshot showing list of actions.](../../organizations/settings/work/media/rules/rule-actions-cloud.png)
+
+For more information, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md).
+
+<a id="custom-workflow"></a>
+
+### Customize workflows for SAFe®
+
+Customize workflows for User Stories, Features, and Epics to match your SAFe® process. Early customization minimizes board configuration for teams.
+
+The default Agile process includes *New*, *Active*, *Resolved*, and *Closed* states. Consider adding workflow states like *Backlog*, *Analyze*, *Develop*, *Test*, and *Done* to match your process flow.
+
+> [!div class="mx_imgBorder"]
+> ![Conceptual image of board columns to visualize flow and limit WIP.](../boards/media/alm_kb_board2.png)
+
+For more information, see:
+- [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md)
+- [Add columns to your board](../boards/add-columns.md)
+- [Definition of Done](../boards/add-columns.md#definition-of-done)
+
+<a id="custom-control"></a>
+
+### Add custom controls and extensions
+
+Custom controls add rich functionality to work item forms. Controls are extensions from the [Marketplace Extensions for Azure DevOps](https://marketplace.visualstudio.com/).
+
+**SAFe®-relevant extensions:**
+- [WorkBoard OKRs](https://marketplace.visualstudio.com/items?itemName=wobo-okrs.workboard-ado-extension): Align and measure Objectives and Key Results (OKRs) across the business
+
+<a id="custom-work-item-types"></a>
+
+### Add custom work item types
+
+While User Story, Feature, and Epic support most SAFe® scenarios, consider adding work item types for:
+- Customer feedback capture
+- Customer requests
+- Solution-level tracking
+
+When you define new work item types, consider:
+- Information to capture, track, and report
+- How work gets captured
+- Workflow to support tracking
+
+Minimize customizations when possible - use existing work item types with custom fields if suitable.
+
+<a id="customize-backlogs"></a>
+
+### Customize backlogs for SAFe® hierarchy
+
+Each team's backlog supports specific work item types:
+- **Agile Release Teams**: User Stories and Bugs (optional)
+- **Program Teams**: Features  
+- **Portfolio Teams**: Epics
+
+You can add up to three more portfolio backlogs to support SAFe® hierarchy:
+
+> [!div class="mx_imgBorder"]
+> ![Screenshot of backlog picklist showing five levels of portfolio backlogs.](../../organizations/settings/work/media/process/portfolio-backlogs-modified.png)
+
+> [!TIP]
+> For a Solution (Capabilities) Backlog parent to Program (Features) Backlog, disable the inherited Epic work item type and recreate as custom. See [Customize process backlogs and boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
+
+For more information, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md).
+
+### SAFe® marketplace extensions
+
+Add these extensions for enhanced SAFe® functionality:
+
+- [Delivery Plans](../plans/review-team-plans.md)
+- [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
+- [Dependency Tracker](../extensions/dependency-tracker.md)
+- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 
 > [!NOTE]
-> By setting the Default Iteration to **\@CurrentIteration**, all work items created from the team's backlog or board are assigned to the current iteration based on the current date. By setting the Backlog Iteration to the root, **Fabrikam**, indicates that only the Area Path acts as a filter for work items to appear on the team backlogs and boards. 
+> Before customizing your project, read [Configure and customize Azure Boards](../configure-customize.md) for detailed information on administrating projects for multiple teams and business objectives.
 
-1. From the **Project Settings** page, choose **Team configuration**.  
+<a id="monitor-metrics"></a>
 
-	Choose the team you want to configure from the Team selector. 
+## Monitor progress and metrics
 
-	> [!div class="mx-imgBorder"]
-	> ![Team profile, choose Iterations and areas link](media/safe-configure/team-configuration.png)
+Azure Boards provides built-in SAFe® metrics through:
 
-1. On the **General** page, uncheck backlogs you don't want to be active. 
+- **Rollup columns**: Aggregate progress across work item hierarchy
+- **Velocity reports**: Track team completion rates
+- **Cumulative Flow Diagrams**: Monitor flow and identify bottlenecks
+- **Lead/Cycle time**: Measure delivery performance
+- **Delivery Plans**: Cross-team roadmap views
 
-	For example, for the Portfolio team, only check the **Epics** checkbox. 
+![Screenshot that shows rollup progress bars.](../backlogs/media/rollup/progress-by-work-items.png)
 
-	> [!div class="mx-imgBorder"]
-	> ![Team configuration, General, Backlog navigation levels, Epics only](media/safe-configure/backlog-navigation-levels-epics-only.png)
+### Key SAFe® dashboards
 
-	For program and Agile teams, uncheck the **Epics** checkbox. 
+Configure dashboards with:
+- Team velocity widgets
+- CFD charts for each level
+- Feature timeline roadmaps
+- Epic progress rollup
 
-	> [!div class="mx-imgBorder"]
-	> ![Team configuration, General, Backlog navigation levels, Features and Stories](media/safe-configure/backlog-navigation-levels.png)
+For dashboard setup details, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md).
 
-1. For program and portfolio teams, choose the **Working with bugs** radio button as shown. 
+### View progress rollup
 
-	> [!div class="mx-imgBorder"]
-	> ![Team configuration, General, Working with bugs, don't track](media/safe-configure/working-with-bugs-none.png)
+Use rollup columns in each team's backlog to view and monitor progress. The following example shows progress aggregated from child work items.
 
-	And, for Agile teams, choose the  **Working with bugs** option to track bugs along with requirements.  
+> [!div class="mx_imgBorder"]  
+> ![Screenshot that shows rollup progress bars.](../backlogs/media/rollup/progress-by-work-items.png) 
 
-	> [!div class="mx-imgBorder"]
-	> ![Agile Team configuration, General, Working with bugs, don't track](media/safe-configure/working-with-bugs-requirements.png)
+Other rollup options include:
 
-1. Choose the **Iterations** tab to configure the team's iterations. 
+- Progress by specific work item types.
+- Progress by story points (completed vs. planned).
+- Count of work items completed in a time period.
+- Sum of a numeric field to aggregate numerical data.
 
-	For Agile teams, configure the settings as shown. 
+For details on configuring and displaying rollup progress or totals, see [Display Rollup Progress or Totals](../backlogs/display-rollup.md).
 
-	> [!div class="mx-imgBorder"]
-	> ![Team configuration, Iterations, select sprints](media/safe-configure/iterations-feature-teams.png)
+### View team velocity 
 
-	For program teams, choose only the PI iterations. 
+Each team can view velocity through the in-context velocity report. The report presents a bar chart of planned, completed, completed late, and incomplete work items for the last six (or more) iterations. The chart shows the average velocity for the displayed iterations.
 
-	> [!div class="mx-imgBorder"]
-	> ![Team configuration, Iterations, select PIs](media/safe-configure/iterations-program-teams.png)
+> [!div class="mx_imgBorder"]  
+> ![Screenshot that shows velocity story points.](media/safe/velocity-story-points.png)  
 
-1. For program and portfolio teams, choose the **Areas** tab to change the default setting from **Include sub areas** to **Exclude sub areas**. 
+Use the average to help forecast how much work a team can take on.
 
-	Open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu, and choose **Exclude sub areas**.   
+### Use the Forecast tool 
 
-	> [!div class="mx-imgBorder"]
-	> ![Team configuration, Areas, Exclude sub areas](media/safe-configure/exclude-sub-areas.png)  
+Teams can assign Story Points to User Stories and then use Forecast to estimate how much they can complete. For details, see [Forecast your product backlog](../sprints/forecast.md).
 
-	> [!NOTE]
-	> Because we created each team with the **Create an area path with the name of the team** checked, each team is already preconfigured with their default area path. This Area Path acts as the main filter for work items that appear on each team's backlogs and boards. 
+> [!div class="mx_imgBorder"]  
+> ![Screenshot that shows the Forecast tool.](../sprints/media/forecast-s125.png)
 
-1. Repeat steps 2 through 5 as needed for each team you need to configure. 
+### View the Cumulative Flow Diagram (CFD) 
 
-1. After you've completed step 5 for all teams, verify the Area Path-Team structure. Choose **Project configuration** and **Areas**. The Area Path and team structure should now appear as shown, where each team owns their Area Path and doesn't share it with any other team. 
+Each backlog and board offer configurable CFD views so teams at every SAFe® level can monitor flow and identify bottlenecks.
 
-	> [!div class="mx-imgBorder"]
-	> ![Project configuration, Areas](media/safe-configure/area-path-structure-corrected.png) 
+> [!div class="mx_imgBorder"]  
+> ![Screenshot that shows a CFD chart.](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
 
-## Configure teams to support Shared Services 
+Use CFD charts from the backlog or board view, and add them to dashboards as needed. For more, see [View/configure a Cumulative Flow Diagram](../../report/dashboards/cumulative-flow.md).  
 
-For teams that support several other teams, such as a UX Design team, configure your teams as described in the following steps. 
+### View Lead Time and Cycle Time charts
 
-1. Add a team for each Shared Services team. Refer to [Define your teams](#define-teams) for details.  
+Add Lead time and Cycle time widgets to a team dashboard to learn:
 
-1. Return to the **Project configuration>Area Paths** page and under each shared services area path, add sub area paths for each Agile team supported by the shared services. For more information, see [Configure Area Paths](#configure-area-paths) provided earlier in this article. 
+- Lead time: average days to complete deliverables from creation date.
+- Cycle time: average days to complete deliverables from the work-start date.
+- Number of outliers for deeper analysis.
 
-    For example, here we add four sub area paths under the UX Design area path, one for each Agile team supported by the UX Design team. 
+Both widgets display as scatter-plot control charts with interactive elements. For guidance, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). 
 
-	> [!div class="mx-imgBorder"]
-	> ![Shared services sub area paths](media/safe-configure/shared-services-sub-area-paths.png)
+#### Example Lead Time widget
 
-1. Configure each Shared Services team as an Agile feature team as described in [Configure your teams](#configure-your-teams). 
+> [!div class="mx_imgBorder"]  
+> ![Screenshot that shows an example Lead Time widget.](../../report/dashboards/media/lead-time-control-chart.png) 
 
-1. For each Agile team, open the **Team configuration>Areas** page as shown in Step 5 of [Configure your teams](#configure-your-teams). Choose **Select areas** and add the sub area path for that team.   
+#### Example Cycle Time widget
 
-    Here we add the **UX Design\App** sub area path to the App feature team.  
+> [!div class="mx_imgBorder"]  
+> ![Screenshot that shows an example Cycle Time widget.](../../report/dashboards/media/cycle-time-planning.png) 
 
-	> [!div class="mx-imgBorder"]
-	> ![Budget estimate rollup](media/safe-configure/add-area-path-app-team-shared-services.png)
+<a id="roadmaps"></a>
 
-1. Return to the **Project configuration>Area Paths** page and verify that the Area Path structure appears as expected for each Shared Services area path. 
+### View and update roadmaps    
 
-    For the UX Design team, the structure should appear as shown.  
+Use Delivery Plans, Feature Timeline, and Epic Roadmap tools to review SAFe® deliverables and roadmaps. Delivery Plans show teams and work item types you specify and allow interactive planning.
 
-	> [!div class="mx-imgBorder"]
-	> ![Shared services area path and team structure](media/safe/shared-services-team-structure.png)
+#### Review feature team Delivery Plans  
 
-    Work items that appear on shared area paths appear on the backlogs and boards of the associated teams. 
+Program teams review story and feature roadmaps for their Agile Release Teams. The following example shows the Fiber Suite teams' story deliverables.
 
-<a id="programmatic-tools"></a> 
-<a id="command-line-and-programmatic-tools"></a> 
+> [!div class="mx_imgBorder"]  
+> ![Screenshot that shows Plans view of Fiber Suite teams' deliverables.](media/safe-metrics/plan-fiber-suite-stories.png) 
 
-::: moniker range=">= azure-devops-2020"
+Expand a feature team to view details. Delivery Plans let you drag and drop work items to update sprint assignments, or open work items to update fields and add comments.
+
+> [!div class="mx_imgBorder"]
+> ![Screenshot that shows Plans view with Fiber Suite App team deliverables expanded.](media/safe-metrics/plan-fiber-suite-stories-expand-app-team.png) 
+
+#### Review the portfolio features deliverable 
+
+Portfolio teams review Features under development by program teams. The following example shows Features mapped to Program Increment timeboxes.
+
+> [!div class="mx_imgBorder"]
+> ![Screenshot that shows Feature Timeline view of portfolio feature deliverables.](media/safe-metrics/plan-portfolio-fiber-suite.png) 
+
+#### Review feature timeline roadmaps 
+
+Feature Timeline provides another roadmap view. The following example shows Epics in the Feature Timeline tool. Configure progress bars to reflect completed stories or effort.
+
+> [!div class="mx_imgBorder"]
+> ![Screenshot showing the Feature Timeline view of portfolio feature deliverables.](media/safe-metrics/feature-timeline-fabrikam-team.png)
+
+<a id="review-validate"></a>
+
+## Review and validate your configuration
+
+Use this comprehensive checklist to ensure your SAFe® configuration is properly set up before teams start using the system.
+
+### Validation checklist
+
+Verify these key areas before teams begin using the system:
+
+**Team Structure**
+- [ ] Portfolio team shows only Epics
+- [ ] Program teams show Features and Stories (no Epics)
+- [ ] Area paths create proper hierarchy
+
+**Iterations**
+- [ ] PI iterations span 8-12 weeks
+- [ ] Sprint iterations are 2-3 weeks within PIs
+- [ ] IP sprints are included
+
+**Work Items**
+- [ ] Hierarchy links function (Epic → Feature → Story)
+- [ ] Team backlogs show correct work items
+- [ ] Rollup columns display properly
+
+### Quick test
+
+1. Create sample Epic → Feature → Story hierarchy
+2. Verify each team sees appropriate work items
+3. Test sprint planning with correct iterations
+4. Confirm reporting works at each level
+
+> [!IMPORTANT]
+> Complete validation before the first Program Increment.
+
+<a id="plan-track"></a>
+
+## Plan and track SAFe® programs and portfolios
+
+### Define work hierarchy
+
+Create work items and establish Epic → Feature → Story relationships using the mapping tool:
+
+1. **Portfolio level**: Create Epics with business/architectural value area designation
+2. **Program level**: Create Features and map to parent Epics
+3. **Team level**: Create Stories and map to parent Features
+
+For bulk import, use Excel with area path assignments to establish hierarchy automatically.
+
+#### Map work items using the mapping tool
+
+1. From any backlog, choose :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: > **Mapping**
+2. Select parent backlog (Epics for Features, Features for Stories)
+3. Drag child items onto parent items
+4. Enable **Parents** view to verify relationships
+
+![Screenshot that shows dragging and dropping a feature onto an epic.](media/safe-plan-track/map-feature-to-epic.png)
+
+### Manage boards and planning
+
+Each team uses boards for visual management and planning tools:
+
+- **Portfolio boards**: Track Epic progress with child item rollup
+- **Program boards**: Manage Feature development across PIs
+- **Team boards**: Plan sprints and track story completion
+
+For detailed board customization, see [Customize your boards](../configure-customize.md).
+
+<a id="automation-tools"></a>
 
 ## Command-line and programmatic tools
 
-You can use Azure DevOps command-line tools to add or update the following artifacts:
+Automate large-scale SAFe® setup with:
 
-- **Teams**: [Azure DevOps team create](/cli/azure/boards/iteration/team#az-boards-iteration-team-add) 
-- **Area Paths**: [Azure DevOps area project create](/cli/azure/boards/area/project#az-boards-area-project-create)
-- **Iteration Paths**: [Azure DevOps iteration project create](/cli/azure/boards/iteration/project#az-boards-iteration-project-create) 
+### Azure DevOps CLI
+```bash
+# Create teams and configure iterations
+az boards team create --name "Portfolio Team"
+az boards iteration create --name "PI 1" --start-date "2025-01-01"
+```
 
-::: moniker-end
+### Bulk operations
+- **Excel import**: Work item hierarchy with area path assignment
+- **PowerShell scripts**: Team configuration automation  
+- **REST APIs**: Custom integration and bulk updates
 
-::: moniker range="<=azure-devops"
-
-You can use Azure DevOps REST APIs to add or update the following artifacts:
-
-- **Teams**: [Teams (REST API)](/rest/api/azure/devops/core/teams)  
-- **Area Paths**: [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
-- **Iteration Paths**: [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) 
-
-::: moniker-end
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Customize Azure Boards to support SAFe®](safe-customize.md)  
-
-## Related content
-
-- [Add teams](../../organizations/settings/add-teams.md)
-- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
-- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
-- [Azure DevOps CLI](/cli/azure//)  
-- [Teams (REST API)](/rest/api/azure/devops/core/teams)  
-
- 
-
+For complete CLI reference, see [Azure DevOps CLI documentation](../../cli/index.md).

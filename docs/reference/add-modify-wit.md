@@ -92,7 +92,7 @@ If you want to completely remove the fields from the data store, use [`witadmin 
 
     An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
 
-3. Edit the file. For details, see [Index to XML element definitions](/previous-versions/azure/devops/reference/xml/xml-element-reference).  
+3. Edit the file.
 
 4. Import the definition file.  
 

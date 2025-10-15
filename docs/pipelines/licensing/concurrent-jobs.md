@@ -37,7 +37,7 @@ Learn how to estimate how many parallel jobs you need and buy more parallel jobs
 | Category | Requirements |
 |--------------|-------------|
 | **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md). <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; Member of the [**Project Collection Administrators** security group](../../organizations/security/look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. <br> - **Billing:** <br>  &nbsp;&nbsp;&nbsp;&nbsp; Billing must be [set up for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md).|
-| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/). |
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
 
 ::: moniker range="azure-devops"
 
