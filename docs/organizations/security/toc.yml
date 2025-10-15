@@ -1,4 +1,8 @@
-- name: Security, Permissions, & Access
+- name: Security automation scripts
+  displayName: automation, PowerShell, audit, scripts, security management, user access, service connections
+  href: security-scripts.md  - name: Security automation scripts
+    displayName: automation, PowerShell, audit, scripts, security management, user access, service connections
+    href: security-scripts.md- name: Security, Permissions, & Access
   href: index.yml
 - name: Security Best Practices
   href: security-overview.md
@@ -90,6 +94,9 @@
     href: look-up-project-collection-administrators.md
   - name: Look up Azure DevOps administrator
     href: look-up-azure-devops-administrator.md
+  - name: Use security automation scripts
+    displayName: automation, PowerShell, audit, scripts, security management
+    href: security-scripts.md
   - name: Change permissions at the organization or collection-level
     displayName: Project Collection Administrators, project collection build service, add, remove, administrators, collection
     href: change-organization-collection-level-permissions.md

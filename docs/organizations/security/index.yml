@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 09/05/2025
+  ms.date: 10/16/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,7 +21,28 @@ landingContent:
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: concept
+      - linkListType: concept      - title: Secure organizations and projects  
+        linkLists:
+          - linkListType: overview
+            links:
+              - text: Grant or restrict permissions to select tasks
+                url: restrict-access.md 
+              - text: Use security automation scripts
+                url: security-scripts.md
+          - linkListType: quickstart
+            links:
+              - text: Look up a project collection administrator
+                url: look-up-project-collection-administrators.md
+              - text: Change permissions at the organization or collection-level
+                url: change-organization-collection-level-permissions.md 
+              - text: Look up a project administrator 
+                url: look-up-project-administrators.md
+              - text: Change project-level permissions 
+                url: change-project-level-permissions.md 
+          - linkListType: how-to-guide
+            links:
+              - text: Set object-level permissions
+                url: set-object-level-permissions.md 
         links:
           - text: About permissions, access, and security groups
             url: about-permissions.md
@@ -124,6 +145,8 @@ landingContent:
         links:
           - text: Grant or restrict permissions to select tasks
             url: restrict-access.md 
+          - text: Use security automation scripts
+            url: security-scripts.md
       - linkListType: quickstart
         links:
           - text: Look up a project collection administrator
