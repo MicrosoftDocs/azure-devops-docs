@@ -1,7 +1,7 @@
 ---
-title: Use scripts to update global security settings
+title: Automate security auditing and administration
 titleSuffix: Azure DevOps
-description: Use PowerShell scripts to automate security configuration and scanning across Azure DevOps organizations, projects, and repositories.
+description: Use PowerShell scripts to audit security across your Azure DevOps organization and automate common security administration tasks.
 ms.topic: how-to
 ms.subservice: azure-devops-security
 ms.author: chcomley
@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 ms.date: 10/16/2025
 ---
 
-# Use scripts to update global security settings
+# Automate security auditing and administration
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -31,6 +31,32 @@ These scripts are examples provided for convenience. Review them, test in a nonp
 | **Tools** | - Azure CLI (`az`) and PowerShell (`pwsh`) required<br>- Scripts written for PowerShell 7+; adapt for Windows PowerShell<br>- Azure PowerShell module (`Install-Module -Name Az`) for some scripts |
 | **Safety** | - Test in nonproduction organization first<br>- Reassign or close active work before removing users<br>- Review project visibility prerequisites before making projects public<br>- Keep audit trail of automated changes |
 | **Security** | - Store credentials and tokens securely (Key Vault or pipeline secret variables)<br>- Revoke tokens/service principals after bulk operations if credential rotation needed |
+
+## Get started
+
+### Which script should I use?
+
+| Your goal | Recommended script | Frequency |
+|-----------|-------------------|-----------|
+| Find security risks | [User access audit](#audit-user-access-and-permissions) | Monthly |
+| Clean up permissions | [Remove group members](#remove-group-members) | As needed |
+| Prepare for user departure | [Reassign Work Items](#reassign-work-items) → [Remove Group Members](#remove-group-members) | As needed |
+| Audit connections | [Service connection audit](#audit-service-connections-and-credentials) | Quarterly |
+| Check dependencies | [Dependency scanner](#check-for-vulnerable-dependencies) | Weekly |
+
+### Quick start: Example implementation schedule
+
+**Initial assessment phase**
+- Run [User Access Audit](#audit-user-access-and-permissions) to identify security risks
+- Run [Service Connection Audit](#audit-service-connections-and-credentials) to check connection security
+
+**Follow-up remediation phase**
+- Review audit findings and prioritize high-risk items
+- Use administrative scripts to remediate identified issues
+
+**Ongoing maintenance**
+- Schedule regular audits based on frequency recommendations
+- Integrate findings into your change management process
 
 ## Audit security and access across your organization
 
@@ -419,9 +445,9 @@ if ($hasIssues) {
 
 | Action | Quick Usage | Purpose |
 |---|---|---|
-| **[Change project visibility](./scripts/change-project-visibility-using-entra-id.ps1)**: Switch project visibility (public ↔ private) | `az login`<br>`pwsh .\scripts\change-project-visibility-using-entra-id.ps1 -Organization "myorg" -ProjectId "myprojectid" -Visibility "private"` | Automation/bulk updates when changing many projects' visibility settings |
-| **[Remove group members](./scripts/remove-azdevops-group-member.ps1)**: Remove member from Azure DevOps group | `az login`<br>`pwsh .\scripts\remove-azdevops-group-member.ps1 -Organization "myorg" -GroupId "<group-guid>" -MemberId "<member-descriptor>"` | Remove specific member from group entitlement (use with caution; keep audit trail) |
-| **[Reassign work items](./scripts/reassign-workitems.ps1)**: Bulk reassign work items to new assignee | `az login`<br>`pwsh .\scripts\reassign-workitems.ps1 -Organization "myorg" -Project "myproject" -WorkItemIds 123,456 -NewAssignee "Jane Doe <jane@contoso.com>"` | Reassign active work items before removing/disabling user to avoid workflow disruption |
+| **[Change project visibility](#change-project-visibility-public--private-using-microsoft-entra-id)**: Switch project visibility (public ↔ private) | `az login`<br>`pwsh` (see script in this article) `-Organization "myorg" -ProjectId "myprojectid" -Visibility "private"` | Automation/bulk updates when changing many projects' visibility settings |
+| **[Remove group members](#remove-group-members)**: Remove member from Azure DevOps group | `az login`<br>`pwsh` (see script in this article) `-Organization "myorg" -GroupId "<group-guid>" -MemberId "<member-descriptor>"` | Remove specific member from group entitlement (use with caution; keep audit trail) |
+| **[Reassign work items](#reassign-work-items)**: Bulk reassign work items to new assignee | `az login`<br>`pwsh` (see script in this article) `-Organization "myorg" -Project "myproject" -WorkItemIds 123,456 -NewAssignee "Jane Doe <jane@contoso.com>"` | Reassign active work items before removing/disabling user to avoid workflow disruption |
 
 ### Change project visibility (public ↔ private) using Microsoft Entra ID
 
@@ -608,6 +634,370 @@ catch {
 }
 
 Write-Host "`nProject visibility change completed." -ForegroundColor Cyan
+```
+
+### Remove group members
+
+This script removes a member from an Azure DevOps group:
+
+```powershell
+# Remove Azure DevOps Group Member Script
+param(
+    [Parameter(Mandatory=$true)]
+    [string]$organization,
+    [Parameter(Mandatory=$true)]
+    [string]$groupId,
+    [Parameter(Mandatory=$true)]
+    [string]$memberId,
+    [string]$apiVersion = "7.1",
+    [switch]$WhatIf
+)
+
+# Authenticate and get Microsoft Entra ID token
+Write-Host "Authenticating to Azure..." -ForegroundColor Cyan
+
+try {
+    $resourceUrl = "499b84ac-1321-427f-aa17-267ca6975798"
+    $tokenResponse = az account get-access-token --resource $resourceUrl --output json
+    
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to get access token. Make sure you're logged in with 'az login'"
+        exit 1
+    }
+    
+    $tokenInfo = $tokenResponse | ConvertFrom-Json
+    $accessToken = $tokenInfo.accessToken
+    
+    Write-Host "Successfully obtained Microsoft Entra ID access token" -ForegroundColor Green
+}
+catch {
+    Write-Error "Failed to authenticate with Microsoft Entra ID: $($_.Exception.Message)"
+    exit 1
+}
+
+# Setup headers
+$headers = @{
+    Authorization = "Bearer $accessToken"
+    "Content-Type" = "application/json"
+}
+
+Write-Host "Starting group member removal process..." -ForegroundColor Cyan
+
+try {
+    # Get group information
+    $groupUrl = "https://vssps.dev.azure.com/$organization/_apis/graph/groups/$groupId" + "?api-version=$apiVersion"
+    $group = Invoke-RestMethod -Uri $groupUrl -Method Get -Headers $headers
+    
+    Write-Host "Target group: $($group.displayName) ($($group.principalName))" -ForegroundColor Yellow
+    
+    # Get member information
+    $memberUrl = "https://vssps.dev.azure.com/$organization/_apis/graph/users/$memberId" + "?api-version=$apiVersion"
+    try {
+        $member = Invoke-RestMethod -Uri $memberUrl -Method Get -Headers $headers
+        Write-Host "Target member: $($member.displayName) ($($member.mailAddress))" -ForegroundColor Yellow
+    }
+    catch {
+        # Try as a group instead of user
+        $memberUrl = "https://vssps.dev.azure.com/$organization/_apis/graph/groups/$memberId" + "?api-version=$apiVersion"
+        $member = Invoke-RestMethod -Uri $memberUrl -Method Get -Headers $headers
+        Write-Host "Target member (group): $($member.displayName) ($($member.principalName))" -ForegroundColor Yellow
+    }
+    
+    # Check if member is actually in the group
+    $membershipsUrl = "https://vssps.dev.azure.com/$organization/_apis/graph/memberships/$memberId" + "?direction=up&api-version=$apiVersion"
+    $memberships = Invoke-RestMethod -Uri $membershipsUrl -Method Get -Headers $headers
+    
+    $isMember = $false
+    foreach ($membership in $memberships.value) {
+        if ($membership.containerDescriptor -eq $group.descriptor) {
+            $isMember = $true
+            break
+        }
+    }
+    
+    if (-not $isMember) {
+        Write-Host "Member is not currently in the specified group. No action needed." -ForegroundColor Green
+        exit 0
+    }
+    
+    # Show what will be done
+    Write-Host "`nOperation Summary:" -ForegroundColor Cyan
+    Write-Host "  Action: Remove member from group" -ForegroundColor White
+    Write-Host "  Group: $($group.displayName)" -ForegroundColor White
+    Write-Host "  Member: $($member.displayName)" -ForegroundColor White
+    Write-Host "  Organization: $organization" -ForegroundColor White
+    
+    if ($WhatIf) {
+        Write-Host "`n[WHAT-IF] Would remove member from group (no actual changes made)" -ForegroundColor Yellow
+        exit 0
+    }
+    
+    # Confirm before proceeding
+    Write-Host "`nWARNING: This action will remove the member from the group and may affect their access to projects and resources." -ForegroundColor Red
+    $confirmation = Read-Host "Are you sure you want to proceed? (y/N)"
+    
+    if ($confirmation -notmatch '^[Yy]') {
+        Write-Host "Operation cancelled by user." -ForegroundColor Yellow
+        exit 0
+    }
+    
+    # Remove member from group
+    Write-Host "`nRemoving member from group..." -ForegroundColor Cyan
+    
+    $removeUrl = "https://vssps.dev.azure.com/$organization/_apis/graph/memberships/$memberId/$($group.descriptor)" + "?api-version=$apiVersion"
+    
+    try {
+        Invoke-RestMethod -Uri $removeUrl -Method Delete -Headers $headers
+        Write-Host "Successfully removed member from group" -ForegroundColor Green
+        
+        # Verify removal
+        Start-Sleep -Seconds 2
+        $verifyMemberships = Invoke-RestMethod -Uri $membershipsUrl -Method Get -Headers $headers
+        
+        $stillMember = $false
+        foreach ($membership in $verifyMemberships.value) {
+            if ($membership.containerDescriptor -eq $group.descriptor) {
+                $stillMember = $true
+                break
+            }
+        }
+        
+        if (-not $stillMember) {
+            Write-Host "Verification successful: Member has been removed from the group" -ForegroundColor Green
+        }
+        else {
+            Write-Warning "Verification failed: Member may still be in the group"
+        }
+        
+        # Log the action for audit trail
+        $auditEntry = [PSCustomObject]@{
+            Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+            Action = "Remove Group Member"
+            Organization = $organization
+            GroupName = $group.displayName
+            GroupId = $groupId
+            MemberName = $member.displayName
+            MemberId = $memberId
+            ExecutedBy = (az account show --query user.name -o tsv)
+            Status = "Success"
+        }
+        
+        $auditPath = "C:\AzureDevOps\GroupMemberRemoval_$(Get-Date -Format 'yyyyMMdd_HHmmss').json"
+        $auditEntry | ConvertTo-Json | Out-File $auditPath
+        Write-Host "Audit log saved to: $auditPath" -ForegroundColor Green
+        
+    }
+    catch {
+        $errorMessage = $_.Exception.Message
+        
+        if ($errorMessage -like "*403*" -or $errorMessage -like "*Forbidden*") {
+            Write-Error "Access denied. You need appropriate permissions to manage group memberships."
+        }
+        elseif ($errorMessage -like "*404*" -or $errorMessage -like "*Not Found*") {
+            Write-Error "Group or member not found. Please verify the IDs are correct."
+        }
+        else {
+            Write-Error "Failed to remove member from group: $errorMessage"
+        }
+        
+        exit 1
+    }
+}
+catch {
+    Write-Error "Failed to process group member removal: $($_.Exception.Message)"
+    exit 1
+}
+
+Write-Host "`nGroup member removal completed." -ForegroundColor Cyan
+```
+
+### Reassign work items
+
+This script reassigns work items to a new assignee:
+
+```powershell
+# Reassign Work Items Script
+param(
+    [Parameter(Mandatory=$true)]
+    [string]$organization,
+    [Parameter(Mandatory=$true)]
+    [string]$project,
+    [Parameter(Mandatory=$true)]
+    [int[]]$workItemIds,
+    [Parameter(Mandatory=$true)]
+    [string]$newAssignee,
+    [string]$apiVersion = "7.1",
+    [switch]$WhatIf
+)
+
+# Authenticate and get Microsoft Entra ID token
+Write-Host "Authenticating to Azure..." -ForegroundColor Cyan
+
+try {
+    $resourceUrl = "499b84ac-1321-427f-aa17-267ca6975798"
+    $tokenResponse = az account get-access-token --resource $resourceUrl --output json
+    
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to get access token. Make sure you're logged in with 'az login'"
+        exit 1
+    }
+    
+    $tokenInfo = $tokenResponse | ConvertFrom-Json
+    $accessToken = $tokenInfo.accessToken
+    
+    Write-Host "Successfully obtained Microsoft Entra ID access token" -ForegroundColor Green
+}
+catch {
+    Write-Error "Failed to authenticate with Microsoft Entra ID: $($_.Exception.Message)"
+    exit 1
+}
+
+# Setup headers
+$headers = @{
+    Authorization = "Bearer $accessToken"
+    "Content-Type" = "application/json-patch+json"
+}
+
+Write-Host "Starting work item reassignment process..." -ForegroundColor Cyan
+
+$successfulUpdates = @()
+$failedUpdates = @()
+
+foreach ($workItemId in $workItemIds) {
+    try {
+        # Get current work item details
+        $workItemUrl = "https://dev.azure.com/$organization/$project/_apis/wit/workitems/$workItemId" + "?api-version=$apiVersion"
+        $workItem = Invoke-RestMethod -Uri $workItemUrl -Method Get -Headers $headers
+        
+        $currentAssignee = if ($workItem.fields.'System.AssignedTo') { 
+            $workItem.fields.'System.AssignedTo'.displayName 
+        } else { 
+            "Unassigned" 
+        }
+        
+        Write-Host "`nWork Item $workItemId ($($workItem.fields.'System.Title'))" -ForegroundColor Yellow
+        Write-Host "  Current Assignee: $currentAssignee" -ForegroundColor White
+        Write-Host "  New Assignee: $newAssignee" -ForegroundColor White
+        Write-Host "  State: $($workItem.fields.'System.State')" -ForegroundColor White
+        Write-Host "  Work Item Type: $($workItem.fields.'System.WorkItemType')" -ForegroundColor White
+        
+        if ($WhatIf) {
+            Write-Host "  [WHAT-IF] Would reassign to $newAssignee" -ForegroundColor Yellow
+            continue
+        }
+        
+        # Skip if already assigned to the target user
+        if ($workItem.fields.'System.AssignedTo' -and $workItem.fields.'System.AssignedTo'.displayName -eq $newAssignee) {
+            Write-Host "  Already assigned to $newAssignee - skipping" -ForegroundColor Green
+            continue
+        }
+        
+        # Prepare update payload
+        $updatePayload = @(
+            @{
+                op = "replace"
+                path = "/fields/System.AssignedTo"
+                value = $newAssignee
+            }
+        )
+        
+        # Add a comment about the reassignment
+        $comment = "Work item reassigned from '$currentAssignee' to '$newAssignee' via automation on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+        $updatePayload += @{
+            op = "add"
+            path = "/fields/System.History"
+            value = $comment
+        }
+        
+        $updateBody = $updatePayload | ConvertTo-Json -Depth 3
+        
+        # Update the work item
+        $updateResponse = Invoke-RestMethod -Uri $workItemUrl -Method Patch -Headers $headers -Body $updateBody
+        
+        Write-Host "  ✓ Successfully reassigned" -ForegroundColor Green
+        
+        $successfulUpdates += [PSCustomObject]@{
+            WorkItemId = $workItemId
+            Title = $workItem.fields.'System.Title'
+            PreviousAssignee = $currentAssignee
+            NewAssignee = $newAssignee
+            WorkItemType = $workItem.fields.'System.WorkItemType'
+            State = $workItem.fields.'System.State'
+            UpdatedAt = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+        }
+        
+    }
+    catch {
+        $errorMessage = $_.Exception.Message
+        Write-Host "  ✗ Failed to reassign: $errorMessage" -ForegroundColor Red
+        
+        $failedUpdates += [PSCustomObject]@{
+            WorkItemId = $workItemId
+            Error = $errorMessage
+            AttemptedAt = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+        }
+    }
+}
+
+# Generate summary report
+Write-Host "`n" + "="*50 -ForegroundColor Cyan
+Write-Host "REASSIGNMENT SUMMARY" -ForegroundColor Cyan
+Write-Host "="*50 -ForegroundColor Cyan
+
+Write-Host "Total work items processed: $($workItemIds.Count)" -ForegroundColor White
+Write-Host "Successful reassignments: $($successfulUpdates.Count)" -ForegroundColor Green
+Write-Host "Failed reassignments: $($failedUpdates.Count)" -ForegroundColor Red
+
+if ($successfulUpdates.Count -gt 0) {
+    Write-Host "`nSuccessful Updates:" -ForegroundColor Green
+    $successfulUpdates | Format-Table -AutoSize
+    
+    # Export successful updates
+    $successPath = "C:\AzureDevOps\WorkItemReassignment_Success_$(Get-Date -Format 'yyyyMMdd_HHmmss').csv"
+    $successfulUpdates | Export-Csv -Path $successPath -NoTypeInformation
+    Write-Host "Successful updates exported to: $successPath" -ForegroundColor Green
+}
+
+if ($failedUpdates.Count -gt 0) {
+    Write-Host "`nFailed Updates:" -ForegroundColor Red
+    $failedUpdates | Format-Table -AutoSize
+    
+    # Export failed updates
+    $failedPath = "C:\AzureDevOps\WorkItemReassignment_Failed_$(Get-Date -Format 'yyyyMMdd_HHmmss').csv"
+    $failedUpdates | Export-Csv -Path $failedPath -NoTypeInformation
+    Write-Host "Failed updates exported to: $failedPath" -ForegroundColor Yellow
+}
+
+# Create audit log
+$auditEntry = [PSCustomObject]@{
+    Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    Action = "Bulk Work Item Reassignment"
+    Organization = $organization
+    Project = $project
+    NewAssignee = $newAssignee
+    TotalWorkItems = $workItemIds.Count
+    SuccessfulUpdates = $successfulUpdates.Count
+    FailedUpdates = $failedUpdates.Count
+    ExecutedBy = (az account show --query user.name -o tsv)
+    WorkItemIds = ($workItemIds -join ", ")
+}
+
+$auditPath = "C:\AzureDevOps\WorkItemReassignment_Audit_$(Get-Date -Format 'yyyyMMdd_HHmmss').json"
+$auditEntry | ConvertTo-Json -Depth 3 | Out-File $auditPath
+Write-Host "`nAudit log saved to: $auditPath" -ForegroundColor Green
+
+if ($WhatIf) {
+    Write-Host "`n[WHAT-IF MODE] No actual changes were made" -ForegroundColor Yellow
+}
+
+Write-Host "`nWork item reassignment process completed." -ForegroundColor Cyan
+
+# Exit with appropriate code
+if ($failedUpdates.Count -gt 0) {
+    exit 1
+} else {
+    exit 0
+}
 ```
 
 ## Support & audit

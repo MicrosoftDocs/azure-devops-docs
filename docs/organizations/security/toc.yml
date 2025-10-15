@@ -1,11 +1,10 @@
-- name: Security automation scripts
-  displayName: automation, PowerShell, audit, scripts, security management, user access, service connections
-  href: security-scripts.md  - name: Security automation scripts
-    displayName: automation, PowerShell, audit, scripts, security management, user access, service connections
-    href: security-scripts.md- name: Security, Permissions, & Access
+- name: Security, Permissions, & Access
   href: index.yml
 - name: Security Best Practices
   href: security-overview.md
+- name: Security automation scripts
+  displayName: automation, PowerShell, audit, scripts, security management, user access, service connections
+  href: security-scripts.md
 - name: Get started
   items:
   - name: About permissions, access, & security groups

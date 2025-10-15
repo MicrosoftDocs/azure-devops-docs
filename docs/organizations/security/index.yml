@@ -21,28 +21,7 @@ landingContent:
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: concept      - title: Secure organizations and projects  
-        linkLists:
-          - linkListType: overview
-            links:
-              - text: Grant or restrict permissions to select tasks
-                url: restrict-access.md 
-              - text: Use security automation scripts
-                url: security-scripts.md
-          - linkListType: quickstart
-            links:
-              - text: Look up a project collection administrator
-                url: look-up-project-collection-administrators.md
-              - text: Change permissions at the organization or collection-level
-                url: change-organization-collection-level-permissions.md 
-              - text: Look up a project administrator 
-                url: look-up-project-administrators.md
-              - text: Change project-level permissions 
-                url: change-project-level-permissions.md 
-          - linkListType: how-to-guide
-            links:
-              - text: Set object-level permissions
-                url: set-object-level-permissions.md 
+      - linkListType: concept
         links:
           - text: About permissions, access, and security groups
             url: about-permissions.md
@@ -91,22 +70,6 @@ landingContent:
           - text: Connect your organization to Microsoft Entra ID
             url: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/security/toc.json  
   
-  - title: Secure Azure Boards
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Secure your Azure Boards
-            url: ../../boards/secure-your-azure-boards.md
-          - text: Default permissions and access to Azure Boards
-            url: ../../boards/get-started/permissions-access-boards.md
-      - linkListType: how-to-guide
-        links:
-          - text: Buy Basic access
-            url: ../billing/buy-basic-access-add-users.md
-          - text: Set up billing for your organization
-            url: ../billing/set-up-billing-for-your-organization-vs.md#set-up-billing
-          - text: Try Azure Test Plans for free
-            url: ../billing/try-additional-features-vs.md
   - title: Secure Azure Boards
     linkLists:
       - linkListType: overview
