@@ -21,7 +21,7 @@ ms.date: 10/14/2025
 This article describes how to create copies of Azure Boards work items or their details, and how to copy and add lists of work items to emails or other apps.
 
 - To duplicate a single work item, use **Create copy of work item**.
-- To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then paste the list into Excel, other apps, or an email.
+- To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then paste the list into Excel, other apps, or email.
 - To email a list of work items to project members, you can multiselect the work items and select **Email**.
 
 ::: moniker range="<azure-devops"
@@ -59,11 +59,11 @@ To copy a work item:
 
    :::image type="content" source="media/copy/choose-copy-work-item-s171.png" alt-text="Screenshot shows open context menu with Create copy of work item highlighted.":::
 
-1. On the **Copy Work Item** screen, choose a different project and work item type for the new work item if desired, and then select **Copy**
+1. On the **Copy Work Item** screen, choose a different project and work item type for the new work item if desired, select any of the copy options, and then select **Copy**.
 
    :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Screenshot shows copy work item dialog.":::
 
-1. In the new work item, change the **Title**, update other fields, and add details as needed, and then select **Save** or **Save and Close**.
+1. In the new work item, change the **Title**, update other fields and add details as needed, and then select **Save** or **Save and Close**.
 
 ### Copy options
 
@@ -107,7 +107,7 @@ To copy the work item type, ID, and title, hover over or select the title in the
 
 In Visual Studio, you can view a list of work items in the **Team Explorer** pane. Selecting or hovering over a work item displays information about it in a flyout panel.
 
-You can double-click a listed work item, right-click it and select **Open**, or select **View in Browser** to open the item in the Azure Boards web browser.
+You can double-click a listed work item, right-click it and select **Open**, or select **View in Browser** to open the item in the Azure Boards UI.
 
 :::image type="content" source="media/copy/visual-studio.png" alt-text="Screenshot shows information for a work item from Visual Studio.":::
 
