@@ -93,24 +93,26 @@ The following example illustrates how to consume the *Apache HttpClient* package
 
 ## View saved packages
 
-You can view the packages you saved from upstreams by selecting the **Maven Central** source from the dropdown menu.
+Now that you've installed a package from Maven Central, you can see how Azure Artifacts automatically saved a copy of that package to your feed. You can filter your feed view to see packages saved from different upstream sources.
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to Azure DevOps, and navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Select **Maven Central** from the source dropdown menu to filter for packages from this upstream.
+1. From the source dropdown, select **Maven Central** to filter for packages from this upstream.
 
-1. The *Kotlinx Datetime* package that we saved in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to our feed when we executed the mvn install command.
+1. The *Apache HttpClient** package that you saved in the previous step is now available in your feed.
  
-:::image type="content" source="media/saved-kotlin-package-from-upstream.png" alt-text="A screenshot showing a package that was saved from Maven Central.":::
+    :::image type="content" source="media/apache-httpclient-saved-from-maven-central.png" alt-text="A screenshot displaying the Apache HttpClient package that was saved from Maven Central.":::
 
 > [!TIP]
-> If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project's files:
+> If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project files:
 > `mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=true`
 
-## Related articles
+## Related content
+
+- [Publish Maven packages to an Azure Artifacts feed](publish-packages-maven.md)
 
 - [Search for packages in upstream sources](../how-to/search-upstream.md)
-- [Promote packages and manage feed views](../feeds/views.md)
-- [Configure permissions](../feeds/feed-permissions.md)
+
+- [Publish Maven artifacts with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/publish-maven-artifacts.md)
