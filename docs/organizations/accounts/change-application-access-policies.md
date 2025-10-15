@@ -51,7 +51,7 @@ The **SSH authentication** policy controls whether or not an organization allows
 
 ### Validate SSH key expiration
 
-To avoid losing access due to an expired SSH key, create and upload a new key *before* the current one expires. The system sends automated notifications **7 days before expiration** and **again after expiration** to help you stay ahead. For more information, see [create and upload a new SSH key](/docs/repos/git/use-ssh-keys-to-authenticate.md#step-1-Create-your-SSH-keys).
+To avoid losing access due to an expired SSH key, create and upload a new key *before* the current one expires. The system sends automated notifications **7 days before expiration** and **again after expiration** to help you stay ahead. For more information, see [Step 1: Create your SSH keys](../../repos/git/use-ssh-keys-to-authenticate.md#step-1-create-your-ssh-keys).
 
 The **Validate SSH key expiration** policy is enabled by default. When active, it enforces the expiration date—expired keys immediately become invalid.
 
