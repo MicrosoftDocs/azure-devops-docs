@@ -1,7 +1,7 @@
 ---
-title: Add, run, and update inline tests
-titleSuffix: Azure Boards  
-description: Add, run, and update manual test cases on your board for lightweight tracking in Azure Boards and Azure DevOps.   
+title: Manage tests inline
+titleSuffix: Azure Boards
+description: Learn how to add, run, update, and track manual test cases on your board for lightweight management in Azure Boards.
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
@@ -9,127 +9,113 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/10/2024
+ms.date: 10/15/2025
 ---
 
-# Add, run, and update inline tests
+# Manage tests inline from boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests cases, for a backlog item from your board. Not only can you add tests, you can run them and update their status. If you're new to working with the board, see [Kanban board overview](kanban-overview.md). If you're new to testing, see [Exploratory and manual testing scenarios and capabilities](../../test/overview.md).
+This article describes how to quickly create, run, update, and track inline tests from work items on your board in Azure Boards. Tests you create from work items on your board are automatically linked to the work item.
 
-<img src="media/i-test-board-intro.png" alt="Screenshot showing Web portal, board with several inline tests defined." /> 
+:::image type="content" source="media/i-test-board-intro.png" alt-text="Screenshot showing a Kanban board with an inline tests defined.":::
 
-Tests that you create from the board automatically get linked to the user story or backlog item.  
+The UI and processes for managing inline tests are similar to those for managing tasks. For more information, see [Tutorial: Add tasks or child items as checklist items](add-task-checklists.md).
+
+For an overview of Kanban boards, see [What is a Kanban board?](kanban-overview.md) For more information about testing scenarios and capabilities, see [What is Azure Test Plans?](../../test/overview.md)
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-
 | Category | Requirements |
 |--------------|-------------|
 | **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Access levels** |To add work items, view or run tests, and use all boards features: At least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or run tests.|
-|**Permissions**|- To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).|
+| **Access levels** |To add work items, view or run tests, and use all boards features, at least **Basic** [access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or run tests.|
+|**Permissions**|To view or modify work items, **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).|
 
-::: moniker-end
+## Open boards in Azure Boards
 
-::: moniker range="< azure-devops"
+To view your team's boards, open your project and select **Boards** > **Boards** from the left navigation menu. On the **Boards** page, select the board you want from the list.
 
-| Category | Requirements |
-|--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Access levels** |To add work items, view or run tests, and use all boards features: At least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or run tests.|
-|**Permissions**|- To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).|
+:::image type="content" source="media/quickstart/open-kanban-board-agile.png" alt-text="Screenshot showing opening your board.":::
 
-::: moniker-end
+To see another team's boards, select the board from **All team boards** on the **Boards** page. You can also select the dropdown arrow next to the title on your board page and then select the other board or **View boards directory**.
 
-## Open your board from the web portal
+:::image type="content" source="media/quickstart/select-kanban-team-board.png" alt-text="Screenshot showing selecting another team's board.":::
 
-1. To view your board, open your project from a web browser and choose (1) **Work**, (2) **Boards**, and then (3) select the team's board from the selector. 
+> [!TIP]
+> Select the star icon next to a board name to favorite the board. Favorited boards appear at the top of the board selector list.
 
-	![Screenshot showing Opening your board action.](media/quickstart/open-kanban-board-agile.png)  
+## Expand and view inline tests
 
-	To choose another team's board, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+When you first open a board, you see an unexpanded view of the task and test checklists in work items.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing selecting another team's board.](media/quickstart/select-kanban-team-board.png)  
+:::image type="content" source="media/i-test-open-board-collapsed-tests.png" alt-text="Screenshot showing Inline tests collapsed.":::
 
-	> [!TIP]    
-	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team board. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list.
-
-## Add inline tests   
-
-1. To start adding tests, open the menu for the work item.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Open context menu of a backlog item to add inline test case.](media/i-test-add-test.png)   
-
-	Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite automatically get created under which the manual test cases are grouped.
-
-	For example, a test suite is created for each user story, and all inline tests get added to that suite. In the following example, test suite 152 is highlighted which has three manual tests defined with IDs of 280, 281, and 282.  
-
-	![Screenshot showing  Inline test cases get added to test suites and test plans.](media/i-test-plan-suite.png) 
-
-	For more information, see [Plan your tests](../../test/create-a-test-plan.md).  
-
-2. If you have many tests to add, keep entering each title and select **Enter**. 
-
-	<img src="media/i-test-story-with-3-inline-tests.png" alt="Screenshot showing Work item with several test cases added." />   
-
-	To add details to the test case, open it. You can select the title, double-click the inline item, or open the context menu and choose Open. 
-
-	<img src="media/i-test-case-form.png" alt="Screenshot showing opening a test case form from board." /> 
-
-See [Create manual tests](../../test/create-test-cases.md) to learn more about defining tests. 
-
-Before running the test, you must add details. 
-
-## Run the inline test 
-
-Run the test by selecting ![Run icon](../media/icons/run_query.png) Run test from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu for the inline test.  
-
-<img src="media/i-test-run-test.png" alt="Screenshot showing running a test." />  
-
-Microsoft Test Runner starts in a new browser instance. For more information, see [Run manual tests](../../test/run-manual-tests.md).
-
-## Update the status of an inline test from the action menu 
-
-You can update the status of the test from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu. 
-
-<img src="media/i-test-update-status.png" alt="Screenshot showing completed tasks." /> 
- 
-Updating the status of tests lets you <a href="../../test/track-test-status.md" data-raw-source="[track test results](../../test/track-test-status.md)">track test results</a>.  
-
-## Expand or collapse inline tests  
-
-When you first open a board, you're presented with an unexpanded view of checklists.
-
-![Screenshot showing Inline tests collapsed.](media/i-test-open-board-collapsed-tests.png)
-
-Hover over the inline test summary to show a test summary.
+Hover over an inline test icon to show a test summary.
 
 :::image type="content" source="media/hover-test-summary.png" alt-text="Screenshot showing test summary upon hover.":::
 
-Select the inline test summary to expand a collapsed set of tests. Select the same summary to collapse an expanded list. 
+Select the test icon to expand the list of tests and other controls, and select the icon again to collapse it.
 
-![Screenshot showing Inline tests expanded.](media/i-test-expanded-test-list.png)
+In the expanded panel, select the **Open test suite** icon to open the test suite in a new browser page.
+
+:::image type="content" source="media/i-test-expanded-test-list.png" alt-text="Screenshot showing inline tests expanded.":::
+
+Select a test to open and edit its test case page.
+
+:::image type="content" source="media/i-test-case-form.png" alt-text="Screenshot showing a test case page.":::
+
+Select the **Work item actions** icon next to a test to show more test options.
+
+:::image type="content" source="media/inline-test-options.png" alt-text="Screenshot showing test case context menu options.":::
+
+The following example shows test suite **285** created for bug **38**, with all inline tests added to that suite. The test suite has three manual tests defined with IDs **284**, **286**, and **287**.
+
+:::image type="content" source="media/i-test-plan-suite.png" alt-text="Screenshot showing inline test cases get added to test suites and test plans.":::
+
+## Add tests inline
+
+You can add test cases to a work item inline. A default test plan and test suite are automatically created for the work item with the manual test cases grouped under them.
+
+To start adding tests, open the **Work item actions** menu for a work item on your board, and select **Add test** from the context menu.
+
+:::image type="content" source="media/i-test-add-test.png" alt-text="Screenshot showing Add test in the context menu of a backlog item.":::
+
+Type the test title and press Enter. You can enter several tests by pressing Enter after adding each test.
+
+:::image type="content" source="media/i-test-story-with-3-inline-tests.png" alt-text="Screenshot showing work item with several test cases added.":::
+
+Before running the test, you must add details. To add details to a test case, open the test case by selecting it in the expanded inline test case list, or by opening its context menu and selecting **Open**.
+
+For more information, see [Plan your tests](../../test/create-a-test-plan.md) and [Create manual tests](../../test/create-test-cases.md).
+
+## Run an inline test 
+
+Run a test by selecting **Run test** from the **Work item actions** menu for the test.
+
+:::image type="content" source="media/i-test-run-test.png" alt-text="Screenshot showing running a test.":::
+
+Microsoft Test Runner starts in a new browser instance. For more information, see [Run manual tests](../../test/run-manual-tests.md).
+
+## Update the test status
+
+To [track test results](../../test/track-test-status.md), you can update the status of an inline test from its **More actions** menu.
+
+:::image type="content" source="media/i-test-update-status.png" alt-text="Screenshot showing completed tasks.":::
+
 
 ## Copy or reparent a test 
 
-To reparent a test, drag and drop the test to a different user story.    
+To reparent a test, drag and drop the test to a different work item. This action automatically changes the linked relationship of the test and points to the new work item.
 
-![Screenshot showing Drag tests to reassign them to a different user story.](media/i-test-drag-reparent.png)  
+:::image type="content" source="media/i-test-drag-reparent.png" alt-text="Screenshot showing dragging a test to reassign it to a different work item.":::
 
-This action automatically changes the linked relationship of the test and points to the new user story. 
+To add a copy of a test to a different work item, hold down the **Ctrl** key while you drag and drop the test to the other work item.
 
-To create a copy of a test to add to a different user story, select the test, select the CTRL key, and then drag and drop the test onto the user story card.
+>[NOTE!]
+>When you link a test case to a work item by using the **Tested By** link type, the board reflects the test status of the linked test case. However, if a requirement-based suite has multiple configurations, the board only shows the test outcome for the default configuration. To ensure that test cases appear properly on the board, it's best to use **Add test** on the work item or create a requirement-based test suite from the Test Plans hub.
 
-## Link a test case to a work item
-
-When you link a test case to a work item using the "Tested By" link type, the board reflects the test status of the linked test case. However, if the requirement-based suite has multiple configurations, the board only shows the test outcome for the default configuration.
-
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md)
