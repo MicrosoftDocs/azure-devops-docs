@@ -15,7 +15,7 @@ monikerRange: '>= azure-devops-2020'
 Using Azure Artifacts upstream sources allows you to use a single feed to host both your own packages and packages from public registries such as Maven Central. When upstream sources are enabled, Azure Artifacts automatically saves a copy of any package installed from an upstream source. This ensures your development process can continue seamlessly even if a public registry experiences an outage.
 
 > [!NOTE]
-> Maven snapshots are not supported with Maven upstream sources.
+> Maven snapshots are not supported in Maven upstream sources.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ If you selected the *upstream sources* checkbox when setting up your feed, Maven
 
 1. Select **Save** in the top right corner to save your changes.
 
-    :::image type="content" source="media/save-upstream-sources.png" alt-text="A screenshot showing how to save upstream sources.":::
+    :::image type="content" source="media/save-upstream-sources.png" alt-text="A screenshot showing how to save upstream sources." lightbox="media/save-upstream-sources.png":::
 
 ## Connect to your feed
 
@@ -103,7 +103,7 @@ Now that you've installed a package from Maven Central, you can see how Azure Ar
 
 1. The *Apache HttpClient** package that you saved in the previous step is now available in your feed.
  
-    :::image type="content" source="media/apache-http-client-saved-from-maven-central.png" alt-text="A screenshot displaying the Apache HttpClient package that was saved from Maven Central.":::
+    :::image type="content" source="media/apache-http-client-saved-from-maven-central.png" alt-text="A screenshot displaying the Apache HttpClient package that was saved from Maven Central." lightbox="media/apache-http-client-saved-from-maven-central.png":::
 
 > [!TIP]
 > If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project files:
