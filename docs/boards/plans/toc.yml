@@ -22,22 +22,8 @@
   displayname: custom work item types
 - name: Scaled Agile Framework®
   items:
-  - name: Implement Scaled Agile Framework®
-    href: scaled-agile-framework.md
-    displayname: Essential, Portfolio, Large Solution, release train, capabilities, enablers, epics, features, milestones, portfolio, program, roadmap, solution
-  - name: SAFe® concepts & Azure Boards
-    href: safe-concepts.md
-    displayname: release train, timeboxes, goals, objectives, value streams, budgets,  epics, features, milestones, stories, portfolio, program, roadmap, solution, retrospective, review
-  - name: Configure Azure Boards
-    href: safe-configure-boards.md
-    displayname: hierarchy, team, area paths
-  - name: Customize Azure Boards
-    href: safe-customize.md
-  - name: Manage SAFe® programs and portfolios
-    href: safe-plan-track-boards.md
-  - name: View roadmaps and monitor progress
-    href: safe-review-roadmaps-progress.md
-    displayname: widgets, in-context reports, rollup, Analytic Views
+  - name: Implement SAFe® with Azure Boards
+    href: safe-configure-boards.md  
 - name: Best practices, monitoring, & reports
   items:
   - name: Agile culture

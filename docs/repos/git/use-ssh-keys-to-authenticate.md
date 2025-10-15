@@ -33,7 +33,7 @@ You can connect to your Git repos through SSH on macOS, Linux, or Windows to sec
 | Category | Requirements |
 |--------------|-------------|
 |**Permissions**| [Access to clone the repository](set-git-repository-permissions.md#default-repository-permissions)|
-|**Policies**| [SSH authentication enabled](/docs/includes/manage-policies.md#manage-a-policy)|
+|**Policies**| [SSH authentication enabled](../../organizations/accounts/change-application-access-policies.md)|
 
 
 ## How SSH key authentication works
@@ -148,7 +148,7 @@ Associate the public key generated in the previous step with your user ID.
    Once saved, you can't change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile. 
    
    >[!NOTE]
-   > SSH keys stored in Azure DevOps expire after one year, unless the organization level policy has been set. To learn more about organization level policies, see [Change application connection & security policies for your organization](/docs/organizations/accounts/change-application-access-policies.md)
+   > SSH keys stored in Azure DevOps expire after one year, unless the organization level policy has been set. For more information, see [Change application connection & security policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
 1. On the **SSH Public Keys** overview page, the server fingerprints are displayed. Make note of the SHA256 fingerprint to use when you first connect to Azure DevOps via SSH.
 
@@ -222,10 +222,10 @@ Proceed only if they match!
 
 **A:** The **recommended course of action** is to follow the steps above to [create and upload a new SSH key](use-ssh-keys-to-authenticate.md#step-1-create-your-ssh-keys). 
 
-**As an alternative option**, a Project Collection Admin can disable the policy that validates the SSH key expiration date. **By default, the Validate SSH key expiration policy is enabled.** For more information about SSH policies, see [SSH key policies](/docs/organizations/accounts/change-application-access-policies.md#ssh-key-policies)
+**As an alternative option**, a Project Collection Admin can disable the policy that validates the SSH key expiration date. **By default, the Validate SSH key expiration policy is enabled.** For more information, see [SSH key policies](../../organizations/accounts/change-application-access-policies.md#ssh-key-policies).
 
-You will automatically receive a notification 7 days prior and when your key has expired. 
-Along with these notifications you may also see the messaging below:
+You automatically receive a notification 7 days prior and when your key expires. 
+Along with these notifications you might also see the messaging below:
 
 ```
 remote: Authentication failed: your SSH key has expired. To restore access, visit https://aka.ms/ado-ssh-public-key-expired for guidance.
