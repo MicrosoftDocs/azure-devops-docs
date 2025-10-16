@@ -44,7 +44,7 @@ These scripts are examples provided for convenience. Review them, test in a nonp
 | Audit connections | [Service connection audit](#audit-service-connections-and-credentials) | Quarterly |
 | Check dependencies | [Dependency scanner](#check-for-vulnerable-dependencies) | Weekly |
 
-### Quick start: Example implementation schedule
+### Example implementation schedule
 
 **Initial assessment phase**
 - Run [User Access Audit](#audit-user-access-and-permissions) to identify security risks
