@@ -162,6 +162,7 @@ The following tables describe the type of events (or actions) that are available
 | `Library.ServiceConnectionCreatedForMultipleProjects` | Created Service Connection "{ConnectionName}" of type {ConnectionType} for multiple projects. |
 | `Library.ServiceConnectionDeleted` | Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionDeletedFromMultipleProjects` | Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from multiple projects. |
+| `Library.ServiceConnectionExecuted` | Service Connection "{ConnectionName}" of type {ConnectionType} executed in project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionForProjectModified` | Modified Service Connection "{ConnectionName}" in project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionModified` | Modified Service Connection "{ConnectionName}" of type {ConnectionType}. |
 | `Library.ServiceConnectionPropertyChanged` | One or more properties of Service Connection "{ConnectionName}" of type {ConnectionType} were changed: IsDisabled = {IsDisabled}. |
