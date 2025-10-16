@@ -36,27 +36,13 @@ These scripts are examples provided for convenience. Review them, test in a nonp
 
 ### Which script should I use?
 
-| Your goal | Recommended script | Frequency |
+| Your goal | Recommended script | Example frequency |
 |-----------|-------------------|-----------|
 | Find security risks | [User access audit](#audit-user-access-and-permissions) | Monthly |
 | Clean up permissions | [Remove group members](#remove-group-members) | As needed |
 | Prepare for user departure | [Reassign Work Items](#reassign-work-items) → [Remove Group Members](#remove-group-members) | As needed |
 | Audit connections | [Service connection audit](#audit-service-connections-and-credentials) | Quarterly |
 | Check dependencies | [Dependency scanner](#check-for-vulnerable-dependencies) | Weekly |
-
-### Example implementation schedule
-
-**Initial assessment phase**
-- Run [User Access Audit](#audit-user-access-and-permissions) to identify security risks
-- Run [Service Connection Audit](#audit-service-connections-and-credentials) to check connection security
-
-**Follow-up remediation phase**
-- Review audit findings and prioritize high-risk items
-- Use administrative scripts to remediate identified issues
-
-**Ongoing maintenance**
-- Schedule regular audits based on frequency recommendations
-- Integrate findings into your change management process
 
 ## Audit security and access across your organization
 
