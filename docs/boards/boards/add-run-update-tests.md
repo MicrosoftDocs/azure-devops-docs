@@ -16,11 +16,11 @@ ms.date: 10/15/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-This article describes how to quickly create, run, update, and track inline tests from work items on your board in Azure Boards. Tests you create from work items on your board are automatically linked to the work item.
+This article describes how to quickly create, run, update, and track inline tests from work items on your board in Azure Boards. Tests you create from work items on your board are automatically linked to the work items.
 
 :::image type="content" source="media/i-test-board-intro.png" alt-text="Screenshot showing a Kanban board with an inline tests defined.":::
 
-The UI and processes for managing inline tests are similar to those for managing tasks. For more information, see [Tutorial: Add tasks or child items as checklist items](add-task-checklists.md).
+Managing inline tests in boards is similar to managing tasks inline. For more information, see [Tutorial: Add tasks or child items as checklist items](add-task-checklists.md).
 
 For an overview of Kanban boards, see [What is a Kanban board?](kanban-overview.md) For more information about testing scenarios and capabilities, see [What is Azure Test Plans?](../../test/overview.md)
 
@@ -61,7 +61,7 @@ In the expanded panel, select the **Open test suite** icon to open the test suit
 
 :::image type="content" source="media/i-test-expanded-test-list.png" alt-text="Screenshot showing inline tests expanded.":::
 
-Select a test to open and edit its test case page.
+Select a test from the list to open and edit its test case page.
 
 :::image type="content" source="media/i-test-case-form.png" alt-text="Screenshot showing a test case page.":::
 
@@ -69,7 +69,7 @@ Select the **Work item actions** icon next to a test to show more test options.
 
 :::image type="content" source="media/inline-test-options.png" alt-text="Screenshot showing test case context menu options.":::
 
-The following example shows test suite **285** created for bug **38**, with all inline tests added to that suite. The test suite has three manual tests defined with IDs **284**, **286**, and **287**.
+The following example shows test suite **285** created for bug **38**, with inline tests added to that suite. The test suite has three manual tests defined with IDs **284**, **286**, and **287**.
 
 :::image type="content" source="media/i-test-plan-suite.png" alt-text="Screenshot showing inline test cases get added to test suites and test plans.":::
 
@@ -77,7 +77,7 @@ The following example shows test suite **285** created for bug **38**, with all 
 
 You can add test cases to a work item inline. A default test plan and test suite are automatically created for the work item with the manual test cases grouped under them.
 
-To start adding tests, open the **Work item actions** menu for a work item on your board, and select **Add test** from the context menu.
+To add tests, open the **Work item actions** menu for a work item on your board, and select **Add test** from the context menu.
 
 :::image type="content" source="media/i-test-add-test.png" alt-text="Screenshot showing Add test in the context menu of a backlog item.":::
 
