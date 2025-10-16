@@ -8,6 +8,9 @@ ms.topic: include
 
 ### Azure Boards integration with GitHub Copilot (private preview)
 
+> [!IMPORTANT]
+> As of October 16, 2025, we are no longer accepting organization signups for the private preview. Our focus is now on completing the feature and preparing it for general availability in the coming weeks.
+
 We’re excited to announce a new capability in our Azure Boards and GitHub integration: the ability to connect Azure Boards work items with the GitHub Copilot coding agent (private preview). This feature allows Azure DevOps customers to create a work item, provide instructions in the description, and send it directly to Copilot. The coding agent can then take on a variety of tasks such as fixing bugs, implementing incremental features, improving test coverage, updating documentation, or addressing technical debt.
 
 To use the feature, simply open a work item and select the option to “Create a pull request with GitHub Copilot.” Copilot receives the work item content, including large text fields and recent comments, then generates a branch and draft pull request linked back to the work item for full traceability. Once the work is complete, the pull request status is updated on the work item and a comment is added to notify you that it is ready for review.
