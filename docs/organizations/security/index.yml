@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 09/05/2025
+  ms.date: 10/16/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -80,22 +80,6 @@ landingContent:
             url: ../../boards/get-started/permissions-access-boards.md
       - linkListType: how-to-guide
         links:
-          - text: Buy Basic access
-            url: ../billing/buy-basic-access-add-users.md
-          - text: Set up billing for your organization
-            url: ../billing/set-up-billing-for-your-organization-vs.md#set-up-billing
-          - text: Try Azure Test Plans for free
-            url: ../billing/try-additional-features-vs.md
-  - title: Secure Azure Boards
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Secure your Azure Boards
-            url: ../../boards/secure-your-azure-boards.md
-          - text: Default permissions and access to Azure Boards
-            url: ../../boards/get-started/permissions-access-boards.md
-      - linkListType: how-to-guide
-        links:
           - text: Set work tracking & plan permissions
             url: set-permissions-access-work-tracking.md
           - text: Add members to a team administrator role
@@ -124,6 +108,8 @@ landingContent:
         links:
           - text: Grant or restrict permissions to select tasks
             url: restrict-access.md 
+          - text: Use security automation scripts
+            url: security-scripts.md
       - linkListType: quickstart
         links:
           - text: Look up a project collection administrator
