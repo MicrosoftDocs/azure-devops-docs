@@ -1,36 +1,44 @@
 ---
-title: Copy or clone work items and more
+title: Copy or clone work items
 titleSuffix: Azure Boards
-description: Learn how to copy work items and lists of stories or issues in Azure Boards.
+description: Learn how to copy or clone single or multiple Azure Boards work items, and add lists of work items to emails or other apps.
 ms.custom: cross-project
 ms.service: azure-devops-boards
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/09/2024
+ms.date: 10/15/2025
+#customer intent: As an Azure Boards user, I want to duplicate work items, copy work item details or URLs, or copy lists of selected work items so I can distribute them to my teammates and stakeholders.
+
 ---
 
-# Copy or clone work items and more
+# Copy or clone work items
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
-	
+
+This article describes how to create copies of Azure Boards work items or their details, and how to copy and add lists of work items to emails or other apps.
+
+- To duplicate a single work item, use **Create copy of work item**.
+- To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then paste the list into Excel, other apps, or email.
+- To email a list of work items to project members, you can multiselect the work items and select **Email**.
+
 ::: moniker range="<azure-devops"
 
-There are two types of copy functions you can use:
+In Azure DevOps Server, you can also *clone* an exact copy of an existing work item, including all fields and attachments, but with a new ID. Depending on the options you choose, you use **Create copy of work item** to create either a copy or a clone.
 
-- **Copy or clone a single work item:** To duplicate a single work item, use the "Create copy of a work item" feature. Depending on the options you choose, this process can be considered either a [copy or a clone](#copy-or-clone-a-work-item).
-- **Copy a list of work items:** To copy a list of work items, multi-select a list of work items and use the "Copy as HTML" or "Copy to clipboard" feature.
+You *copy* a work item to adjust prepopulated values, and *clone* a work item to create an exact duplicate. Cloning is useful when no field modifications are needed.
+
+> [!NOTE]
+> Some fields might get copied depending on your on-premises version and customizations. If the work item type you clone lacks a state transition rule to clear the **Closed By** field when the **State** is **New** or **Active**, that field gets copied. Current system out-of-box work item templates include this rule.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops"
 
-There are two types of copy functions you can use:
-
-- **Copy a single work item:** To duplicate a single work item, use the "Create copy of a work item" feature.
-- **Copy a list of work items:** To copy a list of work items, multi-select a list of work items and use the "Copy as HTML" or "Copy to clipboard" feature.
+> [!IMPORTANT]
+> The option to clone a work item isn't available in Azure DevOps Services. You can use copy options instead.
 
 ::: moniker-end
 
@@ -39,93 +47,93 @@ There are two types of copy functions you can use:
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 <a id="copy-clone"></a>
+## Create a copy of a work item
 
-## Copy or clone a work item
+Copy a work item to create a new work item with a new ID and prepopulated fields from the original. You can modify the fields as needed.
 
-::: moniker range="azure-devops"
+Related links to the original work item and any parents, and a discussion comment, are automatically created in the copy. You can copy other links and attachments depending on the options you select. History isn't copied over.
 
-> [!IMPORTANT]
-> The option to clone a work item is not longer available in the Azure DevOps Service. You can use the Copy option instead.
+To copy a work item:
 
-::: moniker-end
-
-**Copy** a work item to create a new work item with a new ID and prepopulated fields from the original. You can modify the fields as needed. A related link to the original work item and any parent link are copied over, but history and attachments are not.
-
-::: moniker range="<azure-devops"
-
-**Clone** a work item to create an exact copy of an existing work item, including all fields and attachments, but with a new ID. Cloning is useful when no field modifications are needed.
-
-In summary, **copy** a work item to adjust prepopulated values, and **clone** a work item to create an exact duplicate.
-
-> [!NOTE]
-> Some fields might get copied depending on your on-premises version and customizations. If the work item type you clone lacks a state transition rule to clear the *Closed By* field when the *State* is **New** or **Active**, that field gets copied. Current system out-of-box templates include this rule.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
-
-1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.
+1. Open the work item you want to copy in the web portal, select the **More actions** icon at upper right, and then select **Create copy of work item**.
 
    :::image type="content" source="media/copy/choose-copy-work-item-s171.png" alt-text="Screenshot shows open context menu with Create copy of work item highlighted.":::
 
-2. Choose the project and work item type if different from the copied work item. Optionally change the Title and provide more details.
+1. On the **Copy Work Item** screen, choose a different project and work item type for the new work item if desired, select any of the copy options, and then select **Copy**.
 
-    :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Screenshot shows copy work item dialog.":::
+   :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Screenshot shows copy work item dialog.":::
 
-	**Choose options:**
- 
-	- **Include existing links**: To include all **Related** and external links in the copied work item. A **Related** link gets created automatically for the work item copied, and included in the **Discussion** section. There's no method for disabling this feature.  
-	- **Include existing attachments**: To include attachments in the copied work item
-	- **Include child work items**: To include existing links to child work items in the copied work item. This feature isn't recursive. Only those work items directly linked as children to the work item being copied are included. This option appears even if there are no child items linked to the work item.
+1. In the new work item, change the **Title**, update other fields and add details as needed, and then select **Save** or **Save and Close**.
 
-	> [!NOTE]
-	> - When you copy the work item to a different project, **Include child work items** is disabled. 
-	> - When you copy a work item and choose to **Include child work items**, a copy gets made of each child work item and linked to the copied work item through a parent-child link. 
-	> - The **Include child work items** feature requires installation of Azure DevOps Server 2020.1 update.
+### Copy options
 
-3. In the work item form that opens, update other fields as needed. Select **OK**. All work items start in the "New" state.
+Optionally, you can select any or all of the following options in the **Copy Work Item** form:
 
-::: moniker-end
+- **Include existing links** includes all **Related** and external links from the copied work item. A **Related** link to the original work item and a comment in the **Discussion** section are always created, whether you select this item or not.
+- **Include existing attachments** includes attachments from the original work item in the new work item.
+- **Include child work items** includes existing links to child work items in the copied work item. This feature isn't recursive. Only direct child links of the original work item are included. This option appears even if there are no child items in the original work item.
 
-## Change the work item type
-
-If you have a large number of work items whose type you want to change, use [Change work item type](move-change-type.md). If the **Change work item type** option isn't available to you, you can export a set of work items using Excel or CSV, copy them to a new list, and reimport them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md).
-
-## Copy a list of work items
-
-You can copy an HTML formatted table of selected items from either a backlog page or query results list. Then, you can send an email of this list using your choice of email client, or paste the list into a Word document, Excel spreadsheet, or other application. 
-
-1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
-
-2. Open the &hellip; context menu of one of the selected work items, and then choose **Copy to clipboard** or **Copy as HTML**.
-
-    ![Screenshot shows backlog page, multi-select items, open context menu, Copy as HTML.](media/copy-work-item-copy-to-clipboard-ts-1.png) 
-
-## Paste the contents into your email client
-
-Paste the contents of the clipboard into your email client or other application. To open a linked work item, users need read access to the project or area node for those work items.
-
-The formatted table contains a link to each work item included in your selected results list. A link to a query that opens only those work items selected is also provided.
-
-![Screenshot shows copy as HTML paste results.](media/bulk-modify-copy-as-html-table-results.png)  
+  > [!NOTE]
+  > - If you copy a work item and choose to **Include child work items**, a copy of each child work item is created and linked to the copied work item through a parent-child link.
+  > - If you copy the work item to a different project or work item type, **Include child work items** is disabled.
+  
+  ::: moniker range="<azure-devops"
+  
+  > [!NOTE]
+  > For Azure DevOps Server, **Include child work items** requires installing the Azure DevOps Server 2020.1 update.
+  
+  ::: moniker-end
 
 <a id="copy-url">  </a>
+## Copy the work item URL or information
 
-## Copy the URL
+To copy a work item URL, you can:
 
-### [Browser](#tab/browser/)
+- Copy the URL from the web browser address bar.
+  :::image type="content" source="media/copy/copy-url.png" alt-text="Screenshot shows URL for a work item in the address bar.":::
 
-Copy the URL from the web browser address or hover over the title and then select the ![Copy to clipboard icon](media/icon-copy-to-clipboard.png) copy-to-clipboard icon.
+- Right-click the link at upper left in the work item and select **Copy link address** from the context menu.
+  :::image type="content" source="media/add-work-item-copy-URL.png" alt-text="Screenshot shows copy hyperlink for a work item from web portal.":::
 
-<img src="media/add-work-item-copy-URL.png" alt="Screenshot shows copy hyperlink for a work item from web portal." />
+- Select the work item's **More actions** icon and then select **Copy link** from the context menu.
+  :::image type="content" source="media/copy/copy-link.png" alt-text="Screenshot shows Copy link context menu item.":::
 
-### [Visual Studio](#tab/visual-studio/)
+To copy the work item type, ID, and title, hover over or select the title in the open work item and then select the **Copy** icon next to the title bar.
+  :::image type="content" source="media/copy/add-work-item-copy-title.png" alt-text="Screenshot shows copy work item type, title, and ID.":::
 
-In Visual Studio, right-select the work item tab to copy the URL. The URL opens the work item in the web portal.
+<a name="copy-a-list-of-work-items"></a>
+## Copy or email a list of work items
 
-![Screenshot shows copy full path hyperlink for a work item from Visual Studio.](media/add-work-items-copy-url-for-a-work-item.png)
+You can copy an HTML formatted table of selected items from a backlog page or query results list, and paste the list into a Word document, Excel spreadsheet, or other application. You can also email the list of selected items directly to team or project members using your default email client.
 
-* * *
+1. In Azure Boards, open a backlog or query results page and multiselect the work items you want to copy by using **Shift**+**Select** or **Ctrl**+**Select**.
+
+1. Select the **More actions** icon next to one of the selected work items, and then select either **Copy as HTML** or **Email**.
+
+   :::image type="content" source="media/copy/html-or-email.png" alt-text="Screenshot shows multiselect items, open context menu, Copy as HTML or Email.":::
+
+### Copy as HTML
+
+Selecting **Copy as HTML** produces an HTML-formatted table that contains links and details for your selected work items. You can paste the table into an Excel spreadsheet, Word doc, or other application.
+
+You can email the work item list using your chosen email client and recipients. To open linked work items, viewers need read access to the project or area node for those work items.
+
+### Send email to project or team members
+
+Selecting **Email** opens a **Send work items in email** screen that includes the HTML-formatted table of work item links. To send email, select team or project members in the **To** field, complete the **Subject** and optional **Note** fields, and then select **Send**.
+
+:::image type="content" source="media/copy/send-email.png" alt-text="Screenshot shows the Send work items in email form with work item list table.":::
+
+The email sends through your default mail client, and includes a link to a query that returns only the selected work items.
+
+> [!NOTE]
+> **Send work items in email** is a built-in Azure Boards function that behaves as if a default subscription with **Skip initiator** enabled triggers the email. Therefore, you don't receive emails you send to yourself using this feature. To send a list of work items to yourself, paste the HTML-formatted list into an email and send that to yourself manually.
+
+## Change work item types
+
+To change a large number of work item types, select **Change type** from the context menu for the multiselected list. For more information, see [Change work item type](move-change-type.md).
+
+If the **Change type** option isn't available, you can export a set of work items to Excel or CSV, copy them to a new list, and reimport them specifying a different work item type. For more information, see [Bulk add or modify work items with Excel](office/bulk-add-modify-work-items-excel.md) or [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md).
 
 ## Related content
 
