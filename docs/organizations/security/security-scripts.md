@@ -1012,5 +1012,4 @@ if ($failedUpdates.Count -gt 0) {
 - [Secure Azure DevOps](security-overview.md)
 - [Security best practices](security-best-practices.md)
 - [Azure DevOps REST API reference](/rest/api/azure/devops/)
-- [Organization security policies](../settings/policy-settings.md)
 - [Project security and permissions](permissions.md)
