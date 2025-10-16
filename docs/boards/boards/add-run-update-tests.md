@@ -7,16 +7,17 @@ ms.service: azure-devops-boards
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 10/15/2025
+#customer intent: As an Azure Boards user, I want to add, run, update, and track test cases inline in board work items, so I can quickly and easily manage and track tests for backlog items.
 ---
 
-# Manage tests inline on boards
+# Manage tests inline
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-This article describes how to quickly create, run, update, and track inline tests from work items on your board in Azure Boards. Tests you create from work items on your board are automatically linked to the work items.
+This article describes how to quickly create, run, update, and track inline tests from work items on your boards in Azure Boards. Tests you create from work items on your board are automatically linked to the work items.
 
 Managing inline tests in board work items is similar to managing inline task checklists. For more information, see [Tutorial: Add tasks or child items as checklist items](add-task-checklists.md).
 
@@ -77,11 +78,10 @@ When you first open a board, the task and test checklists in work items are coll
 
 When you add test cases to a board work item inline, a default test plan and test suite are automatically created for the work item with the test cases grouped under them.
 
-1. To start adding tests to a work item on your board, open the **Work item actions** menu for the work item and select **Add test** from the context menu.
+1. To start adding tests to a work item on your board, open the **Work item actions** menu for the work item and select **Add test** from the context menu. You can also select an existing inline test icon in a work item, and then select **Add test** in the expanded panel.
 
    :::image type="content" source="media/i-test-add-test.png" alt-text="Screenshot showing Add test in the context menu of a backlog item.":::
 
-   To add more tests to an existing test suite, you can also select the test icon in the work item and then select **Add test**.
    
 1. Enter the test title and press Enter. You can add multiple tests by pressing Enter after adding each test.
 
