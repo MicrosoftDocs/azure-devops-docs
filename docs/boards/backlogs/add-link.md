@@ -258,7 +258,7 @@ Do the following steps to link work items to objects defined in other Azure DevO
 
    :::image type="content" source="media/add-link/add-remote-related-link.png" alt-text="Screenshot of removing a work item link.":::
 
-   The link tab maintains a count of all links to the work item. The **Remote Link Count** [field](../queries/linking-attachments.md) maintains a count of the number of links added to a work item that link to a work item defined in another project or organization.
+   The link tab maintains a count of all links to the work item. The **Remote Link Count** [field](../queries/linking-attachments.md) maintains a count of the number of links added to a work item that links to a work item defined in another project or organization.
 
    The following example shows two remote links, indicated by the :::image type="icon" source="../../media/icons/cloud-link.png" border="false"::: cloud icon, added to a user story.
 
@@ -293,7 +293,7 @@ Alternatively, you can also link to a work item from an Advanced Security alert.
 :::image type="content" source="media/add-link/advsec-boards-security-alert-link.png" alt-text="Screenshot of Advanced Security alert to link related work items.":::
 
 > [!IMPORTANT]  
-> You can only link work items to repositories that have Advanced Security enabled and the ability to view security alertes. For more information, see [Configure Advanced Security](../../repos/security/configure-github-advanced-security-features.md), and [Advanced Security permissions](../../repos/security/github-advanced-security-permissions.md).
+> You can only link work items to repositories that have Advanced Security enabled and the ability to view security alerts. For more information, see [Configure Advanced Security](../../repos/security/configure-github-advanced-security-features.md), and [Advanced Security permissions](../../repos/security/github-advanced-security-permissions.md).
 
 ## Link several work items to new git branches
 
