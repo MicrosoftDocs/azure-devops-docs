@@ -50,6 +50,7 @@ The following types of links help you manage the relationships between work item
 
 | Link type category | Description |
 |:----------|:------------|
+| **Advanced Security** | Connects a work item to an Advanced Security alert. |
 | **Build** | Connects a work item to a build number, found in build, or integrated in build. |
 | **Code** | Connects a work item to a branch, changeset, commit, pull request, tag, or versioned item. |
 | **GitHub** | Connects a work item to a GitHub repository branch, commit, issue, or pull request. |
@@ -275,7 +276,24 @@ When you connect Azure Boards with GitHub repositories, you can link work items 
 > [!IMPORTANT]  
 > You can only link work items to GitHub objects that have repositories connected to Azure Boards. For more information, see [Connect Azure Boards to GitHub](../github/connect-to-github.md), and [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
 
-For more information, see [Link GitHub commits, pull requests, branches, and issues to work items](../github/link-to-from-github.md) and [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
+For more information, see [Link GitHub commits, pull requests, branches, and issues to work items](../github/link-to-from-github.md) and [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md). 
+
+## Link work items to Advanced Security alerts 
+
+Advanced Security alerts can be linked to work items from a work item or from an Advanced Security alert itself. 
+
+1. From your work item, select **Links** > **Add link** > **Existing item**.
+
+2. Select a repository, which must have Advanced Security enabled, and select a security alert from the dropdown. You also must have Advanced Security: view alerts permission for this repository.
+
+:::image type="content" source="media/add-link/advsec-boards-security-alert-link-type.png" alt-text="Screenshot of work item selection with security alert link type."::: 
+
+Alternatively, you can also link to a work item from an Advanced Security alert. Navigate to a specific Advanced Security alert and select **Add** from the Related Work section.
+
+:::image type="content" source="media/add-link/advsec-boards-security-alert-link.png" alt-text="Screenshot of Advanced Security alert to link related work items.":::
+
+> [!IMPORTANT]  
+> You can only link work items to repositories that have Advanced Security enabled and the ability to view security alertes. For more information, see [Configure Advanced Security](../../repos/security/configure-github-advanced-security-features.md), and [Advanced Security permissions](../../repos/security/github-advanced-security-permissions.md).
 
 ## Link several work items to new git branches
 
