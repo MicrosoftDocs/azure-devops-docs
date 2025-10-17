@@ -9,7 +9,7 @@ ms.reviewer: karrg
 ms.author: karrg
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/13/2024
+ms.date: 10/17/2025
 ms.custom:
   - cross-service
   - sfi-image-nochange
@@ -68,8 +68,8 @@ You can use the following `@azure boards` commands to interact with the Azure Bo
 
 | Command        | Functionality  |
 | -------------------- |----------------|
-|@azure boards sign in | Sign in to your Azure Boards organization.|
-|@azure boards sign out | Sign out from your Azure Boards organization.|
+|@azure boards signin | Sign in to your Azure Boards organization.|
+|@azure boards signout | Sign out from your Azure Boards organization.|
 |@azure boards link \<project url> |Link a project to this channel to create work items and receive notifications.|
 |@azure boards unlink| Unlink a project from this channel.|
 |@azure boards subscriptions | Add or remove subscriptions for this channel.|
