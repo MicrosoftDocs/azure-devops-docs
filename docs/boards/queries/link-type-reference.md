@@ -324,6 +324,20 @@ The following table describes the external link types you can choose when adding
 --- 
 :::row:::
    :::column span="":::
+      Security Alert
+   :::column-end:::
+   :::column span="":::
+      Advanced Security
+   :::column-end:::
+   :::column span="":::
+      Advanced Security
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to an Advanced Security alert.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
       Branch
    :::column-end:::
    :::column span="":::
