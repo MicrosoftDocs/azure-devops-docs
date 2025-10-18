@@ -113,7 +113,7 @@ stages:
 
 ::: moniker range="<=azure-devops"
 
-If you specify a `pool` at the stage level, all jobs in that stage use that pool unless the stage is specified at the job level.
+If you specify a `pool` at the stage level, all jobs in the stage use that pool unless a pool is specified at the job level.
 
 
 ```yaml
