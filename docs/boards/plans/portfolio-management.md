@@ -9,23 +9,23 @@ author: chcomley
 ms.topic: conceptual
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/16/2025
-#customer intent: As a product owner or manager, I want to understand how to manage portfolio backlogs in Azure Boards, so I can assign and track work and let teams manage their own backlogs.
+ms.date: 10/20/2025
+#customer intent: As a portfolio manager, I want to understand how to manage backlogs in Azure Boards so I can assign and track work and let teams manage their own backlogs.
 ---
 
 # Manage product and portfolio backlogs 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Portfolio or product owners create their vision, roadmap, and goals for each release, and define high-level goals as Epics or Features. Feature teams break down the Epics or Features into User stories for prioritization and development. This structure provides each feature team with its own backlog to plan, prioritize, and track its work.
+Portfolio backlogs let product owners track the work of multiple agile feature teams, monitor progress across projects, and manage risks and dependencies. Product owners create their vision and roadmap for each release and define high-level goals as Epics or Features. Feature teams break down the Epics or Features into User stories for prioritization and development. This structure gives each feature team its own backlog for planning, prioritizing, and tracking its work.
 
 :::image type="content" source="media/pm-team-structure.png" alt-text="Diagram showing each team has its own view of the work." border="false":::
 
-Portfolio backlogs let product owners track the work of multiple agile feature teams, monitor progress across projects, and manage risks and dependencies. [Set up a hierarchical team and backlog structure](configure-hierarchical-teams.md) to:
+A [hierarchical team and backlog structure](configure-hierarchical-teams.md)
 
-- Let autonomous feature teams organize and manage their own backlogs.
-- Use portfolio management views to plan Epics and Features and monitor the progress of feature teams.
-- Assign backlog items to feature teams from a common backlog.
+- Lets autonomous feature teams organize and manage their own backlogs.
+- Uses portfolio management views to plan Epics and Features and monitor the progress of feature teams.
+- Allows assigning backlog items to feature teams from a common backlog.
 
 [!INCLUDE [note-configure-customize](../includes/note-configure-customize.md)]
 
@@ -35,19 +35,19 @@ Portfolio backlogs let product owners track the work of multiple agile feature t
 
 [!INCLUDE [image differences](../includes/image-differences.md)]
 
-## Management portfolio view
+## View management portfolio
 
-The following example shows the **Epics** portfolio backlog for the **Management** team. The backlog shows all items and features for the **Customer Service**, **Phone**, and **Web** feature teams.
+The following example shows the **Epics** portfolio backlog for a **Management** team. The backlog shows all items for the **Customer Service**, **Phone**, and **Web** feature teams.
 
 :::image type="content" source="../backlogs/media/multi-ownership/management-team-backlog-epics.png" alt-text="Screenshot shows backlog parents and multiteam ownership.":::
 
 > [!NOTE]
-> You can establish child links with work items from different projects, but if the processes differ between projects, the backlog for the child item doesn't show the hierarchy. You can still view all associated child items on each work item form.
+> You can establish child links with work items from different projects, but if the processes differ between projects, the child item's backlog doesn't show the hierarchy. You can still view all associated child items on each work item's form.
 
 <a id="feature-team-backlog"> </a>
-## Team backlog ownership and progress
+## View team backlog ownership and progress
 
-Each feature team has its own home page or dashboards, product and portfolio backlogs, and boards. These pages show work relevant only to that team, based on assignments made to the work item area and iteration paths. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+The hierarchical team and backlog structure lets autonomous teams take ownership of their backlogs. Each feature team has its own home page or dashboards, product and portfolio backlogs, and boards. These pages show work relevant only to that team, based on assignments made to the work item area and iteration paths. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 To visualize ownership and progress involving other feature teams:
 
@@ -56,7 +56,7 @@ To visualize ownership and progress involving other feature teams:
 - [Use the Delivery Plans feature](review-team-plans.md) in Azure Boards to get cross-team visibility into work items across multiple teams. You can see all backlog items and features, even if they belong to different teams.
 
 > [!TIP]
-> Add **Node Name** to the **Column options** to show the team name assigned to each work item.
+> **Node Name** in the **Column options** shows the team name assigned to each work item.
 
 For example, the Fabrikam Fiber Team's backlog view includes work items assigned to their area path, **Fabrikam Fiber**, and the parent Epic, which is assigned to the **Fabrikam** team. Items assigned to other teams appear with an information icon you can hover over to see more details.
 
@@ -64,15 +64,15 @@ For example, the Fabrikam Fiber Team's backlog view includes work items assigned
 
 ## Assign work from a common backlog
 
-The hierarchical team and backlog structure lets autonomous teams take ownership of their backlogs and allows assigning work to teams from a common backlog. During sprint or product planning meetings, product owners and development leads can review the backlog and assign specific items to various teams by setting the feature team **Area** path.
+The hierarchical team and backlog structure allows assigning work to teams from a common backlog. During sprint or product planning meetings, product owners and development leads can review the backlog and assign specific items to various teams by setting the feature team **Area** path.
 
-In the following view of the Account Management backlog, most items are assigned to **Account Management**.
+In the following view of the **Production Planning** backlog, all items are assigned to the **Production Planning** team.
 
-:::image type="content" source="media/portfolio/account-management-backlog.png" alt-text="Screenshot showing Management team common backlog.":::
+:::image type="content" source="media/portfolio/account-management-backlog.png" alt-text="Screenshot showing Production Planning team common backlog.":::
 
-During the planning meeting, open each item, make notes, and assign the item to the appropriate team for action. You can select multiple work items and [bulk modify the area path](../backlogs/bulk-modify-work-items.md).
+During the planning meeting, participants open each item, make notes, and assign the item to the appropriate team for action. They can select multiple work items and [bulk modify the area path](../backlogs/bulk-modify-work-items.md).
 
-In the following example, all backlog User stories are assigned to feature teams, while all Features and Epics remain assigned to **Account Management**.
+In the following example, all backlog User stories and Bugs are assigned to feature teams, while the Features remain assigned to **Production Planning**.
 
 :::image type="content" source="media/portfolio/account-management-backlog-assigned.png" alt-text="Screenshot shows all backlog items assigned to feature teams.":::
 
