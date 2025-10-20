@@ -18,7 +18,7 @@ This article describes using Kubernetes resources in Azure Pipelines [environmen
 Environment resource views show Kubernetes resource status and provide traceability to the pipeline and back to the triggering commit. You can also create dynamic Kubernetes environment resources to review pull requests before merge. For more information about environment resources, see [Resources in YAML pipelines](resources.md) and [Resource security](../security/resources.md).
 
 > [!NOTE]
-> A private AKS cluster doesn't expose its API server endpoint through a public IP address, so you must connect to the cluster's virtual network. The best method is to set up a self-hosted agent within a virtual network that can access the cluster's virtual network. For more information, see [Options for connecting to a private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster).
+> A private AKS cluster doesn't expose its API server endpoint through a public IP address, so you must connect to the cluster's virtual network. You can set up a self-hosted agent within a virtual network that can access the cluster's virtual network or use [Managed DevOps Pools](/azure/devops/managed-devops-pools/overview). For more information, see [Options for connecting to a private cluster](/azure/aks/private-clusters#options-for-connecting-to-the-private-cluster).
 
 ## Kubernetes environment resource advantages
 

@@ -488,6 +488,9 @@ Use the following parameters when you define a connection to a Kubernetes cluste
 * Service account
 * Azure subscription
 
+> [!NOTE]
+> The Kubernetes service connection option does not work if your cluster is private or hidden from the network. In these cases, you need to use an [Azure Resource Manager-based service connection](#azure-resource-manager-service-connection) and ensure your pipeline runs on an agent with direct network access to the cluster, such as one in a [Managed DevOps pool](/azure/devops/managed-devops-pools/overview).
+
 #### Kubeconfig option
 
 | Parameter | Description |
