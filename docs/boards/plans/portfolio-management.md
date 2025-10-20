@@ -17,7 +17,7 @@ ms.date: 10/20/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Portfolio backlogs let product owners track the work of multiple agile feature teams, monitor progress across projects, and manage risks and dependencies. Product owners create their vision and roadmap for each release and define high-level goals as Epics or Features. Feature teams break down the Epics or Features into User stories for prioritization and development. This structure gives each feature team its own backlog for planning, prioritizing, and tracking its work.
+Portfolio backlogs let product owners track the work of multiple agile feature teams, monitor progress across projects, and manage risks and dependencies. Product owners create their vision and roadmap for each release and define high-level goals as Epics or Features. Feature teams break down the Epics or Features into Stories for prioritization and development. This structure gives each feature team its own backlog for planning, prioritizing, and tracking its work.
 
 :::image type="content" source="media/pm-team-structure.png" alt-text="Diagram showing each team has its own view of the work." border="false":::
 
@@ -58,13 +58,13 @@ To visualize ownership and progress involving other feature teams:
 > [!TIP]
 > **Node Name** in the **Column options** shows the team name assigned to each work item.
 
-For example, the Fabrikam Fiber Team's backlog view includes work items assigned to their area path, **Fabrikam Fiber**, and the parent Epic, which is assigned to the **Fabrikam** team. Items assigned to other teams appear with an information icon you can hover over to see more details.
+For example, the **Fabrikam Fiber Team** backlog view includes work items assigned to their area path, **Fabrikam Fiber**, and the parent Epic, which is assigned to the **Fabrikam** team. Items assigned to other teams appear with an information icon you can hover over to see more details.
 
 :::image type="content" source="../backlogs/media/multi-ownership/backlog-parents-on.png" alt-text="Screenshot of backlog that shows parents and multiteam ownership.":::
 
 ## Assign work from a common backlog
 
-The hierarchical team and backlog structure allows assigning work to teams from a common backlog. During sprint or product planning meetings, product owners and development leads can review the backlog and assign specific items to various teams by setting the feature team **Area** path.
+The hierarchical team and backlog structure allows assigning work to teams from a common backlog. During sprint or product planning meetings, product owners and development leads can review the backlog and assign specific items to various teams by setting the feature team **Area path**.
 
 In the following view of the **Production Planning** backlog, all items are assigned to the **Production Planning** team.
 
@@ -72,7 +72,7 @@ In the following view of the **Production Planning** backlog, all items are assi
 
 During the planning meeting, participants open each item, make notes, and assign the item to the appropriate team for action. They can select multiple work items and [bulk modify the area path](../backlogs/bulk-modify-work-items.md).
 
-In the following example, all backlog User stories and Bugs are assigned to feature teams, while the Features remain assigned to **Production Planning**.
+In the following example, all backlog Stories, Tasks, and Bugs are now assigned to feature teams, while the Features remain assigned to **Production Planning**.
 
 :::image type="content" source="media/portfolio/account-management-backlog-assigned.png" alt-text="Screenshot shows all backlog items assigned to feature teams.":::
 
