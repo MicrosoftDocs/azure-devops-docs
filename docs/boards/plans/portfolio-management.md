@@ -21,7 +21,7 @@ Portfolio backlogs let product owners track the work of multiple agile feature t
 
 :::image type="content" source="media/pm-team-structure.png" alt-text="Diagram showing each team has its own view of the work." border="false":::
 
-A [hierarchical team and backlog structure](configure-hierarchical-teams.md)
+A [hierarchical team and backlog structure](configure-hierarchical-teams.md):
 
 - Lets autonomous feature teams organize and manage their own backlogs.
 - Uses portfolio management views to plan Epics and Features and monitor the progress of feature teams.
@@ -37,9 +37,9 @@ A [hierarchical team and backlog structure](configure-hierarchical-teams.md)
 
 ## View management portfolio
 
-The following example shows the **Epics** portfolio backlog for a **Management** team. The backlog shows all items for the **Customer Service**, **Phone**, and **Web** feature teams.
+The following example shows the **Stories** portfolio backlog for a **Management** team. The backlog shows all items for the **Web**, **Test**, and **Production Planning** feature teams.
 
-:::image type="content" source="../backlogs/media/multi-ownership/management-team-backlog-epics.png" alt-text="Screenshot shows backlog parents and multiteam ownership.":::
+:::image type="content" source="media/portfolio/management-team-backlog.png" alt-text="Screenshot shows backlog parents and multiteam ownership.":::
 
 > [!NOTE]
 > You can establish child links with work items from different projects, but if the processes differ between projects, the child item's backlog doesn't show the hierarchy. You can still view all associated child items on each work item's form.
@@ -85,7 +85,7 @@ If you need more than three backlog levels, add them. For more information, see 
 The simplest way to track dependencies across teams is to link work items using the **Related** link type. For time-based dependencies, use the **Predecessor** or **Successor** link types. You can then create queries to find work items with these relationships. For more information, see [Link work items to objects](../backlogs/add-link.md).
  
 ::: moniker range="azure-devops"
-You can use Delivery Plans to track dependencies across projects within an organization. For more information, see [Track dependencies using Delivery Plans](../plans/track-dependencies.md). 
+You can use Delivery Plans to track dependencies across projects within an organization. For more information, see [Track dependencies in Delivery Plans](../plans/track-dependencies.md). 
 ::: moniker-end
 
 ## View portfolio feature progress
