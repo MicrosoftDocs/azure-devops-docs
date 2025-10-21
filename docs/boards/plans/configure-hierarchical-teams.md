@@ -39,11 +39,11 @@ To start setting up a hierarchical team structure, add a team for each feature a
 
 1. In your Azure DevOps project, select **Project settings** > **Teams** from the left navigation menu, and then select **New Team**.
 
-   :::image type="content" source="media/config-teams/open-project-settings-team-new.png" alt-text="Screenshot that shows Project settings, Teams, New Team."
+   :::image type="content" source="media/config-teams/open-project-settings-team-new.png" alt-text="Screenshot that shows Project settings, Teams, New Team.":::
 
 1. On the **Create a new team** form, give the team a name, optionally add a description, members, and administrators, and then select **Create**. 
 
-   :::image type="content" source="media/config-teams/create-new-team.png" alt-text="Screenshot that shows creating a team."
+   :::image type="content" source="media/config-teams/create-new-team.png" alt-text="Screenshot that shows creating a team.":::
 
 Select **New Team** for each team you want to add. You can also rename existing teams. Select the team in the **Teams** list, select the **Settings** tab, enter a new name under **Team Details** > **Team name**, and select **Save**.
 
@@ -56,19 +56,19 @@ Next, move the areas paths associated with feature teams into a hierarchical str
 
 | Flat area structure | Hierarchical area structure |
 |---------------------|-----------------------------|
-|:::image type="content" source="media/config-teams/team-list-flat-structure.png" alt-text="Image showing flat area paths. | :::image type="content" source="media/config-teams/team-list-hierarchy-structure.png" alt-text="Image showing hierarchical area paths." |
+| :::image type="content" source="media/config-teams/team-list-flat-structure.png" alt-text="Image showing flat area paths."::: | :::image type="content" source="media/config-teams/team-list-hierarchy-structure.png" alt-text="Image showing hierarchical area paths."::: |
 
 1. In **Project Settings**, select **Boards** > **Project configuration** and then select the **Areas** tab.
 
-   :::image type="content" source="media/config-teams/open-project-work-areas-settings.png" alt-text="Screenshot that shows selecting Project Settings, Project configuration, Areas."
+   :::image type="content" source="media/config-teams/open-project-work-areas-settings.png" alt-text="Screenshot that shows selecting Project Settings, Project configuration, Areas.":::
 
 1. Select the **More actions** icon next to one of the area paths associated with a feature team, and select **Edit**.
 
-   :::image type="content" source="media/config-teams/select-area.png" alt-text="Screenshot that shows selecting an area to edit."
+   :::image type="content" source="media/config-teams/select-area.png" alt-text="Screenshot that shows selecting an area to edit.":::
 
 1. On the **Edit area** screen under **Location**, select a management team area path, and then select **Save and close**.
 
-   :::image type="content" source="media/config-teams/edit-area-path.png" alt-text="Screenshot that shows the edit area path dialog."
+   :::image type="content" source="media/config-teams/edit-area-path.png" alt-text="Screenshot that shows editing the area path.":::
 
 Repeat this process for all feature team area paths.
 
@@ -87,15 +87,15 @@ To define area paths:
 
 1. On the team's page, select **Iterations and Area Paths**.
 
-   :::image type="content" source="media/config-teams/open-iterations-areas.png" alt-text="Screenshot that shows Team Profile, choose Iterations and area.":::
+   :::image type="content" source="media/config-teams/open-iterations-areas.png" alt-text="Screenshot that shows Iterations and Area Paths.":::
 
 1. The **Team Configuration** > **Boards** page opens. Select the **Areas** tab, and then select **Select area(s)**.
 
-   :::image type="content" source="media/config-teams/choose-management-team.png" alt-text="Screenshot that shows Teams, choose a team."
+   :::image type="content" source="media/config-teams/choose-management-team.png" alt-text="Screenshot that shows Teams, choose a team.":::
 
 1. On the **Select area(s)** screen, select the area path for the team name you want to include, select the **Include sub areas** checkbox, and then select **Save and close**.
 
-   :::image type="content" source="media/config-teams/include-sub-area-paths.png" alt-text="Screenshot that shows the Select area(s) screen.":::
+   :::image type="content" source="media/config-teams/include-sub-area-paths.png" alt-text="Screenshot that shows selecting an area.":::
 
 1. On the **Areas** page, verify that only this area path is selected for the team and is the default area path. Remove any other area paths.
 
