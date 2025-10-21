@@ -58,7 +58,9 @@ Next, move the areas paths into a hierarchical structure with the feature teams 
 |---------------------|-----------------------------|
 | :::image type="content" source="media/config-teams/team-list-flat-structure.png" alt-text="Image showing flat area paths." border="false"::: | :::image type="content" source="media/config-teams/team-list-hierarchy-structure.png" alt-text="Image showing hierarchical area paths." border="false"::: |
 
-To create the hierarchical structure1. In **Project Settings**, select **Boards** > **Project configuration** and then select the **Areas** tab.
+To create the hierarchical structure:
+
+1. In **Project Settings**, select **Boards** > **Project configuration** and then select the **Areas** tab.
 
    :::image type="content" source="media/config-teams/open-project-work-areas-settings.png" alt-text="Screenshot that shows selecting Project Settings, Project configuration, Areas.":::
 
@@ -72,14 +74,14 @@ To create the hierarchical structure1. In **Project Settings**, select **Boards*
 
 Repeat this process for all feature team area paths.
 
-You can review the **Area Paths** assigned to each team and change the assignments if necessary from **Project Settings** > **Project configuration** > **Areas**.
+You can use **Project Settings** > **Project configuration** > **Areas** to review the **Area Paths** assigned to each team and change the assignments if necessary.
 
 ## Include subarea paths for management teams
 
 The default setting for team backlogs is to exclude subarea paths. For management teams, you can include subarea paths so that backlog items from feature teams are automatically included in the management team backlogs.
 
 > [!NOTE]
-> Including subarea paths might hinder a team's ability to reorder or reparent items on their backlog. Subarea paths can also introduce uncertainties in assignments in the backlog's **Column**, **Done**, and **Lane** fields. For more information, see [Understand issues with shared area paths](#op-issues).
+> Including subarea paths might hinder a team's ability to reorder or reparent items on their backlog. Including subarea paths can also introduce uncertainties in assignments in the backlog's **Column**, **Done**, and **Lane** fields. For more information, see [Understand issues with shared area paths](#op-issues).
 
 To define area paths for management teams:
 
@@ -107,7 +109,7 @@ If you want to enable rollup across all feature teams and management areas to th
 
 ## Define a single sprint cadence for all teams 
 
-If your feature teams use Scrum or use sprints to assign work, you can set up a series of sprints for all teams to use. On the **Project Settings** > **Boards** > **Project configuration** page, you see a set of predefined sprints by default. You can add more sprints and set their dates from **Project Settings** as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). You can also rename and edit the default sprints as needed.
+If your feature teams use Scrum or use sprints to assign work, you can set up a series of sprints for all teams to use. The **Project Settings** > **Boards** > **Project configuration** page shows a set of predefined sprints by default. You can add more sprints and set their dates from **Project Settings** as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). You can also rename and edit the default sprints as needed.
 
 Maintaining a single sprint cadence simplifies project administration, but you can create different cadences as needed. For example, some teams may follow a monthly cadence while others follow a three-week cadence.
 
