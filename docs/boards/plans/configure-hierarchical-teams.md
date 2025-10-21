@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2025
+ms.date: 10/21/2025
 ms.custom: sfi-image-nochange
 ##customer intent: As a project administrator, I want to understand how to create a hierarchy of teams in Azure Boards so feature teams can manage their own backlogs while management teams track and manage overall work.
 
@@ -17,23 +17,23 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how to configure a hierarchy of teams that supports tailored backlog views for management and feature teams. Teams can use customized backlog views to prioritize and manage their own work based on their specific goals and responsibilities. Management teams can maintain visibility into feature team backlogs and overall project tracking.
+This article explains how to configure a hierarchy of teams that supports tailored backlog views for management and feature teams. A hierarchical team structure helps ensure that your organization remains agile, focused, and aligned with its strategic objectives.
 
-A hierarchical team structure ensures that your organization remains agile, focused, and aligned with its strategic objectives. Such a structure has the following advantages:
+Teams can use customized backlog views to prioritize and manage their own work based on their specific goals and responsibilities. Management teams can maintain visibility into feature team backlogs and overall project progress. This structure has the following advantages:
 
 - Enhances collaboration, communication, and teamwork across different functions.
 - Streamlines workflow management to simplify processes and reduce bottlenecks, leading to faster decision-making and project execution.
 - Supports accountability, efficiency, and productivity across projects by increasing visibility into each team's workload.
 - Helps aligns with organizational goals, ensuring that all teams work towards common objectives.
 
-Effective team configuration gives teams a clear and focused view of their responsibilities and priorities. Teams can concentrate on their critical tasks without getting overwhelmed by unrelated work items. Customized backlogs provide improved visibility and clear insights into workloads and progress. For more information about how teams can use their backlogs to prioritize and focus on their most critical work items, see [Manage product and portfolio backlogs](portfolio-management.md).
+Effective team configuration gives each team a clear and focused view of its responsibilities and priorities. Feature teams can concentrate on their critical tasks without getting overwhelmed by unrelated work items. Customized backlogs provide improved visibility and clear insight into workloads and progress. For more information about how teams can use their backlogs to prioritize and focus on their most critical work items, see [Manage product and portfolio backlogs](portfolio-management.md).
 
 ## Prerequisites 
 
 [!INCLUDE [prerequisites-project-admin](../includes/prerequisites-project-admin.md)]
 
 <a id="set_up"></a>
-## Add a team for each management area
+## Add a team for each area
 
 To start setting up a hierarchical team structure, add a team for each feature and management area, or rename teams that already exist. To add a team:
 
@@ -43,26 +43,26 @@ To start setting up a hierarchical team structure, add a team for each feature a
 
 1. On the **Create a new team** form, give the team a name, optionally add a description, members, and administrators, and then select **Create**. 
 
+   >[!NOTE]
+   >For teams to be well defined, add other team administrators to verify or configure other team settings. For more information, see [Manage and configure team tools](../../organizations/settings/manage-teams.md).
+
    :::image type="content" source="media/config-teams/create-new-team.png" alt-text="Screenshot that shows creating a team.":::
 
 Select **New Team** for each team you want to add. You can also rename existing teams. Select the team in the **Teams** list, select the **Settings** tab, enter a new name under **Team Details** > **Team name**, and select **Save**.
 
->[!NOTE]
->For teams to be well defined, add other team administrators to verify or configure other team settings. For more information, see [Manage and configure team tools](../../organizations/settings/manage-teams.md).
-
 ## Move area paths into a hierarchical structure
 
-Next, move the areas paths associated with feature teams into a hierarchical structure. The following example shows a flat list of area paths moved into a hierarchical area structure.
+Next, move the areas paths into a hierarchical structure with the feature teams under management teams. The following example shows a flat list of area paths compared to a hierarchical area path structure.
 
 | Flat area structure | Hierarchical area structure |
 |---------------------|-----------------------------|
-| :::image type="content" source="media/config-teams/team-list-flat-structure.png" alt-text="Image showing flat area paths."::: | :::image type="content" source="media/config-teams/team-list-hierarchy-structure.png" alt-text="Image showing hierarchical area paths."::: |
+| :::image type="content" source="media/config-teams/team-list-flat-structure.png" alt-text="Image showing flat area paths." border="false"::: | :::image type="content" source="media/config-teams/team-list-hierarchy-structure.png" alt-text="Image showing hierarchical area paths." border="false"::: |
 
-1. In **Project Settings**, select **Boards** > **Project configuration** and then select the **Areas** tab.
+To create the hierarchical structure1. In **Project Settings**, select **Boards** > **Project configuration** and then select the **Areas** tab.
 
    :::image type="content" source="media/config-teams/open-project-work-areas-settings.png" alt-text="Screenshot that shows selecting Project Settings, Project configuration, Areas.":::
 
-1. Select the **More actions** icon next to one of the area paths associated with a feature team, and select **Edit**.
+1. Select the **More actions** icon next to an area path associated with one of the feature teams, and select **Edit**.
 
    :::image type="content" source="media/config-teams/select-area.png" alt-text="Screenshot that shows selecting an area to edit.":::
 
@@ -81,7 +81,7 @@ The default setting for team backlogs is to exclude subarea paths. For managemen
 > [!NOTE]
 > Including subarea paths might hinder a team's ability to reorder or reparent items on their backlog. Subarea paths can also introduce uncertainties in assignments in the backlog's **Column**, **Done**, and **Lane** fields. For more information, see [Understand issues with shared area paths](#op-issues).
 
-To define area paths:
+To define area paths for management teams:
 
 1. In **Project settings** > **Teams**, select the management team whose settings you want to modify.
 
