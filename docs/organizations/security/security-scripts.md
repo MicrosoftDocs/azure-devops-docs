@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/16/2025
+ms.date: 10/21/2025
 ---
 
 # Automate security auditing and administration
@@ -56,7 +56,7 @@ param(
     [Parameter(Mandatory=$true)]
     [string]$organization,
     [string]$outputPath = "C:\AzureDevOps\UserAccessAudit.csv",
-    [string]$apiVersion = "7.1"
+    [string]$apiVersion = "7.1-preview"
 )
 
 # Authenticate and setup
@@ -195,7 +195,7 @@ param(
     [Parameter(Mandatory=$true)]
     [string]$organization,
     [string]$outputPath = "C:\AzureDevOps\ServiceConnectionAudit.csv",
-    [string]$apiVersion = "7.1"
+    [string]$apiVersion = "7.1-preview"
 )
 
 # Authenticate and setup
@@ -635,7 +635,7 @@ param(
     [string]$groupId,
     [Parameter(Mandatory=$true)]
     [string]$memberId,
-    [string]$apiVersion = "7.1",
+    [string]$apiVersion = "7.1-preview",
     [switch]$WhatIf
 )
 
@@ -812,7 +812,7 @@ param(
     [int[]]$workItemIds,
     [Parameter(Mandatory=$true)]
     [string]$newAssignee,
-    [string]$apiVersion = "7.1",
+    [string]$apiVersion = "7.1-preview",
     [switch]$WhatIf
 )
 
