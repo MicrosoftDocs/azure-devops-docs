@@ -37,7 +37,6 @@ events in their Slack channel. Conversations in the Slack channel can be used to
 | Platform | Azure Boards and the Azure Boards Slack app work only with Azure DevOps Services (cloud); they're not supported on Azure DevOps Server. |
 | Access levels | **Contributor** for the project. |
 | Permissions | To create subscriptions in a Slack channel for work item events: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) or [Team Administrators](../../organizations/settings/add-team-administrator.md) group. |
-| Organization policies | To receive notifications, the organization must have the [**Third party application access via OAuth** policy](../../organizations/accounts/change-application-access-policies.md) enabled. |
 | Microsoft Entra account | If your organization is connected to a Microsoft Entra ID tenant, sign in with an account that's a native member of that tenant; guest or external accounts can experience authentication errors when signing in through Slack. |
 
 ## Add the Azure Boards app to your Slack workspace
@@ -194,13 +193,6 @@ If you're experiencing the following errors when using the [Azure Boards App for
 [!INCLUDE [troubleshooting](includes/boards-troubleshoot-authentication.md)]
 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
-
-
-## Conditions and limitations
-
-- The Azure Boards app for Slack works only with Azure DevOps Services (cloud); it isn't supported on Azure DevOps Server.
-- Notifications go to channels only (they don't appear in direct messages).
-- To create channel subscriptions, be a Project or Team Administrator (see the [Prerequisites](#prerequisites) section).
 
 ## Related content
 
