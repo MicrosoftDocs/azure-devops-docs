@@ -56,7 +56,7 @@ Next, move the areas paths into a hierarchical structure with the feature teams 
 
 | Flat area structure | Hierarchical area structure |
 |---------------------|-----------------------------|
-| :::image type="content" source="media/config-teams/team-list-flat-structure.png" alt-text="Image showing flat area paths." border="false"::: | :::image type="content" source="media/config-teams/team-list-hierarchy-structure.png" alt-text="Image showing hierarchical area paths." border="false"::: |
+| :::image type="content" source="media/config-teams/team-list-flat-structure.png" alt-text="Screenshot showing flat area paths." border="false"::: | :::image type="content" source="media/config-teams/team-list-hierarchy-structure.png" alt-text="Screenshot showing hierarchical area paths." border="false"::: |
 
 To create the hierarchical structure:
 
