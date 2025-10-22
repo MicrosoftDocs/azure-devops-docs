@@ -2,11 +2,12 @@
 title: What is Azure Artifacts?
 description: Learn how to get started with Azure Artifacts.
 ms.service: azure-devops-artifacts
-ms.topic: quickstart
+ms.topic: overview
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 01/09/2025
+ms.date: 08/22/2025
+ms.custom: peer-review-program
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -14,64 +15,39 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
-Azure Artifacts provides developers with a streamlined way to manage all their dependencies from a single feed. These feeds serve as repositories for storing, managing, and sharing packages, whether within your team, across organizations, or publicly online.
-
-Azure Artifacts supports multiple package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
+Azure Artifacts provides developers with a streamlined way to manage all their dependencies from a single feed. These feeds serve as repositories for storing, managing, and sharing packages, whether within your team, across organizations, or publicly online. Azure Artifacts supports multiple package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
 > [!NOTE]
-> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, [increase the storage limit for Azure Artifacts](#increase-artifacts-storage-limit) to ensure you have the appropriate resources.
-
-## Prerequisites
-
-| **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - Allow [Azure Artifacts Domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server. |
+> Azure Artifacts provides 2 GiB of free storage for each organization. This free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization begins handling more critical tasks, [increase artifacts storage limit](artifact-storage.md#increase-artifacts-storage-limit) to ensure you have the appropriate resources.
 
 ## Create a new feed
 
-Azure Artifacts feeds are organizational constructs that enable you to store, manage, and share your packages while maintaining access control. Feeds are not limited to specific package types; you can store a variety of packages, such as npm, NuGet, Maven, Python, Cargo, and Universal Packages in a single feed. See [What are feeds](concepts/feeds.md) for more details.
+Azure Artifacts feeds are organizational constructs that let you store, manage, and control access to packages. Azure Artifacts feeds support multiple package types such as npm, NuGet, Maven, Python, Cargo, and Universal Packages. See [What are feeds](concepts/feeds.md) for more details. If you don’t have a feed yet, here’s how to create one:
 
-Follow the instructions below to create a new feed:
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-[!INCLUDE [](includes/create-feed.md)]
+1. Select **Artifacts**, and then select **Create Feed**.
+
+1. Enter a descriptive **Name** for your feed and define its **Visibility** (who can use your feed). Specify the **Scope** of your feed, and if you wish to include packages from public sources, check the **Upstream sources** checkbox.
+
+1. Select **Create** when you're done.
 
 ## Get started
 
-With Azure Artifacts, you can publish and install various package types from feeds and public registries such as nuget.org, npmjs.com, Maven Central, etc. Select your package type to get started:
+Azure Artifacts enables teams to seamlessly store, manage, and share packages from a centralized feed. You can publish your packages to a feed, consume packages from internal or external feeds, and install packages from public registries such as *nuget.org*, *npmjs.com*, *Maven Central*, etc. Select the technology relevant to your scenario to get started:
 
 ::: moniker range="azure-devops"
 
-# [NuGet](#tab/nuget)
-
-- **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
-
-# [dotnet](#tab/dotnet)
-
-- **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](nuget/dotnet-exe.md)
-
-# [Npm](#tab/npm)
-
-- **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
-
-# [Maven](#tab/maven)
-
-- **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
-
-# [Gradle](#tab/gradle)
-
-- **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
-
-# [Python](#tab/python)
-
-- **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
-
-# [Cargo](#tab/cargo)
-
-- **Quickstart:** [Get started with Cargo packages in Azure Artifacts](./get-started-cargo.md)
-
-# [Universal Packages](#tab/universalpackages)
-
-- **Quickstart:**  [Get started with Universal Packages in Azure Artifacts](./quickstarts/universal-packages.md)
+| Package Type           | Articles                                                                         |
+|------------------------|----------------------------------------------------------------------------------|
+| **NuGet**              | - [Publish NuGet packages - (NuGet.exe)](nuget/publish.md)                       |
+| **Dotnet**             | - [Publish NuGet packages - (dotnet)](nuget/dotnet-exe.md)                       |
+| **Npm**                | - [Publish npm packages](npm/publish.md)                                         |
+| **Maven**              | - [Publish Maven Artifacts](maven/publish-packages-maven.md)                     |  
+| **Gradle**             | - [Publish packages - Gradle](maven/publish-with-gradle.md)                      |
+| **Python**             | - [Publish Python packages](quickstarts/python-cli.md)                           |
+| **Cargo**              | - [Publish Cargo packages](get-started-cargo.md)                                 |
+| **Universal Packages** | - [Publish Universal Packages](quickstarts/universal-packages.md)                |
 
 ---
 
@@ -79,33 +55,15 @@ With Azure Artifacts, you can publish and install various package types from fee
 
 ::: moniker range="azure-devops-2022"
 
-# [NuGet](#tab/nugetserver22)
-
-- **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
-
-# [dotnet](#tab/dotnetserver22)
-
-- **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](nuget/dotnet-exe.md)
-
-# [Npm](#tab/npmserver22)
-
-- **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
-
-# [Maven](#tab/mavenserver22)
-
-- **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
-
-# [Gradle](#tab/gradleserver22)
-
-- **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
-
-# [Python](#tab/pythonserver22)
-
-- **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
-
-# [Cargo](#tab/cargoserver22)
-
-- **Quickstart:** [Get started with Cargo packages in Azure Artifacts](./get-started-cargo.md)
+| Package Type           | Articles                                                                         |
+|------------------------|----------------------------------------------------------------------------------|
+| **NuGet**              | - [Publish NuGet packages - (NuGet.exe)](nuget/publish.md)                       |
+| **Dotnet**             | - [Publish NuGet packages - (dotnet)](nuget/dotnet-exe.md)                       |
+| **Npm**                | - [Publish npm packages](npm/publish.md)                                         |
+| **Maven**              | - [Publish Maven Artifacts](maven/publish-packages-maven.md)                     |  
+| **Gradle**             | - [Publish packages - Gradle](maven/publish-with-gradle.md)                      |
+| **Python**             | - [Publish Python packages](quickstarts/python-cli.md)                           |
+| **Cargo**              | - [Publish Cargo packages](get-started-cargo.md)                                 |
 
 ---
 
@@ -113,29 +71,14 @@ With Azure Artifacts, you can publish and install various package types from fee
 
 ::: moniker range="azure-devops-2020"
 
-# [NuGet](#tab/nugetserver20)
-
-- **Quickstart:** [Get started with NuGet packages in Azure Artifacts](./get-started-nuget.md)
-
-# [dotnet](#tab/dotnetserver20)
-
-- **Quickstart:** [Publish and restore NuGet packages from the command line (dotnet)](nuget/dotnet-exe.md)
-
-# [Npm](#tab/npmserver20)
-
-- **Quickstart:** [Get started with npm packages in Azure Artifacts](./get-started-npm.md)
-
-# [Maven](#tab/mavenserver20)
-
-- **Quickstart:** [Get started with Maven packages in Azure Artifacts](./get-started-maven.md)
-
-# [Gradle](#tab/gradleserver20)
-
-- **Quickstart:** [Get started with Gradle packages in Azure Artifacts](./maven/publish-with-gradle.md)
-
-# [Python](#tab/pythonserver20)
-
-- **Quickstart:** [Get started with Python packages in Azure Artifacts](./quickstarts/python-packages.md)
+| Package Type           | Articles                                                                         |
+|------------------------|----------------------------------------------------------------------------------|
+| **NuGet**              | - [Publish NuGet packages - (NuGet.exe)](nuget/publish.md)                       |
+| **Dotnet**             | - [Publish NuGet packages - (dotnet)](nuget/dotnet-exe.md)                       |
+| **Npm**                | - [Publish npm packages](npm/publish.md)                                         |
+| **Maven**              | - [Publish Maven Artifacts](maven/publish-packages-maven.md)                     |  
+| **Gradle**             | - [Publish packages - Gradle](maven/publish-with-gradle.md)                      |
+| **Python**             | - [Publish Python packages](quickstarts/python-cli.md)                           |
 
 ---
 
@@ -157,59 +100,24 @@ With Azure Artifacts, you can publish and install various package types from fee
 
 ::: moniker range="azure-devops"
 
-## View Artifacts storage consumption
+## Monitor storage usage
 
-The artifact storage UI, accessible through your organization or project settings, lets you monitor storage usage at both the organization and project levels:
+You can track artifact storage consumption through the UI available in your organization or project settings. It provides visibility into usage at both the organization and project levels:
 
-- [Project-level storage](./artifact-storage.md#project-level-storage): Provides an overview of total storage usage and consumption by artifact type.
+- [Project-level storage](./artifact-storage.md#project-level-storage): Displays total storage usage and breakdown by artifact type.
 
-- [Organization-level storage](./artifact-storage.md#organization-level-storage): Provides an overview of total storage usage including consumption by project and artifact type.
+- [Organization-level storage](./artifact-storage.md#organization-level-storage): Provides an overview of total storage usage including consumption details by project and artifact type.
 
-::: moniker-end
-
-## Increase Artifacts storage limit 
-
-[!INCLUDE [](includes/increase-storage-limit.md)]
-
-## FAQs
-
-::: moniker range=" azure-devops"
-
-#### Q: Which artifacts contribute to my total billed storage?
-
-A: You are charged for all package types (npm, NuGet, Python, Maven, Cargo, and Universal Packages), including packages stored from upstream sources. However, there are no charges for Pipeline Artifacts and Pipeline Caching.
-
-> [!IMPORTANT]
-> Packages in the recycle bin contribute to your overall storage consumption. These packages are permanently deleted after 30 days. To remove them sooner, go to your recycle bin and delete them manually.
-
-#### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
-
-A: Removing your Azure Subscription from your Azure DevOps organization limits your access to the free tier. If your storage usage exceeds 2 GiB, you will have read-only access to packages. To publish new packages, you must reduce your storage usage below 2 GiB. Alternatively, you can reconnect an Azure subscription to your organization and set up billing to [upgrade your storage tier](#increase-artifacts-storage-limit).
-
-#### Q: Why does my storage consumption show as 0 GiB even though I'm storing Artifacts?
-
-A: The smallest unit of measurement for storage is currently 1 GiB. It's likely that your storage usage hasn't yet surpassed the 1-GiB threshold.
-
-#### Q: How long does it typically take for the removal of Artifacts to be reflected in the billed storage amount?
-
-A: Deleting artifacts may not be immediately reflected in the system. Storage consumption typically updates within 24 hours, but in some cases, it may take up to 48 hours. If you're unable to upload artifacts, a temporary workaround is to increase your usage level and then decrease it once the storage metrics are updated.
-
-The **Used** column on your organization's billing page is updated once a day, so changes may not be reflected right away. However, the **Artifact Storage** page is updated more frequently, which could result in a slight discrepancy between the two pages.  
-
-:::image type="content" source="media/settings-vs-storage.png" alt-text="A screenshot showing Artifacts storage consumption.":::
+If you have questions about your artifact storage or consumption, see the [Storage FAQs](artifact-storage.md#faqs) for more details.
 
 ::: moniker-end
-
-#### Q: How can I manage the retention duration of old packages?
-
-A: You can set up the retention policies to automatically delete old packages. However, that are promoted to a view are not affected by retention policies and will not be deleted. See [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) for more details.
-
-#### Q: How do I delete specific packages manually?
-
-A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for details.
 
 ## Related content
 
-- [Package sizes and count limits](./reference/limits.md)
-- [Manage permissions](./feeds/feed-permissions.md)
-- [Set up upstream sources](./how-to/set-up-upstream-sources.md)
+- [Azure Artifacts best practices](concepts/best-practices.md) 
+
+- [Limits on package sizes and counts](reference/limits.md)
+
+- [Manage permissions](feeds/feed-permissions.md)
+
+- [Set up upstream sources](how-to/set-up-upstream-sources.md)

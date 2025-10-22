@@ -7,69 +7,70 @@ ms.service: azure-devops-boards
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 02/11/2025
+ms.date: 10/08/2025
 ---
 
-# About migrating and integrating work tracking data 
+# About migrating and integrating work tracking data
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-There are various tools available to help you migrate your work tracking data to the Azure DevOps platform. This article provides an overview of these tools and links to resources that support the migration of work tracking data and processes. You can also integrate Azure Boards with numerous non-Microsoft tools and extensions.
+You can migrate work tracking data into Azure Boards and integrate Azure Boards with many non-Microsoft tools. This article gives an overview of migration options, common scenarios, and extensions that help with migration and integration.
 
-> [!NOTE]
-> With [Azure DevOps Marketplace extensions for Azure Boards](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Installs), you can customize and enhance the default experience. For more information, see the [list of recommended extensions for Azure Boards](#extensions-for-azure-boards), further in this article. 
+> [!TIP]
+> Browse Azure Boards extensions in the Visual Studio Marketplace to customize and extend your boards experience. See the "Extensions for Azure Boards" section later in this article.
 
 ## Migrate from Azure DevOps Server
 
-The Data Migration Tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. For more information, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md).
+Use the Data Migration Tool for Azure DevOps to migrate collection databases from Azure DevOps Server to Azure DevOps Services with high fidelity. For details and guidance, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md).
 
 ## Migrate data between projects
 
-You can search for extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) that allow you to bulk edit and migrate data between project on both on-premises and the cloud. Such tools generally support the following tasks:  
-- Migrate work items from one project to another project and synchronize changes after a migration
-- Merge many projects into a single project
-- Split one project into many projects
-- Assist changing process templates
-- Edit work items in bulk
-- Migrate test suites and test plans
+Search the Visual Studio Marketplace for extensions that help you bulk edit, migrate, or synchronize work items between projects. These tools typically support these tasks:
 
-### Migrate data between projects without downtime  
+- Migrate work items (including custom fields and history) from one project to another and synchronize changes after migration.
+- Merge multiple projects into a single project, or split a project into multiple projects.
+- Assist with process template changes and mapping fields between processes.
+- Bulk edit work items.
+- Migrate test plans, test suites, test cases, and test results.
 
-There are non-Microsoft tools available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) that enable seamless migration without downtime or disruption, even when the target environment isn't empty or when templates differ. These tools generally support:
+### Migrate data between projects without downtime
 
-- Version control information and history, including original dates and users added to comments.
-- Work items, both standard and custom, along with their history, retaining the original dates and users.
+Some non-Microsoft tools enable migration with minimal disruption, even when the target environment contains data or uses a different process template. These tools commonly preserve:
+
+- Version control history, including original dates and authors for commits and comments.
+- Work items and their history (standard and custom), preserving original dates and authors.
 - Test plans, test suites, test cases, and test results.
-- Iteration, area path, group, team, and user data.
-- Dashboards, queries, widgets, and pipelines.
-- Compatibility with Azure DevOps Server versions 2010 and later.
-- Support for Azure DevOps Services.
+- Area and iteration paths, teams, and user mappings.
+- Dashboards, queries, widgets, and pipeline references (where supported).
+- Compatibility with Azure DevOps Server (2010+) and Azure DevOps Services (cloud), depending on the tool.
+
+Before you migrate, test the tool in a staging environment, confirm support for your Server or Services versions, and back up your data.
 
 ## Migrate process models between Azure DevOps organizations
 
-For constraints on process template definitions that you can import, see [Resolve validation errors for process import](../../organizations/settings/work/import-process/resolve-errors.md).
-  
+When you import process templates, you might hit validation constraints. For troubleshooting process import errors, see [Resolve validation errors for process import](../../organizations/settings/work/import-process/resolve-errors.md).
+
 ## Export and import work tracking data
 
-The main tool you can use to import work tracking data you exported from elsewhere is Microsoft Excel. Excel supports publishing a flat list of work items or a hierarchical tree of parent-child linked work items. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+Use Microsoft Excel to export and import work item lists or hierarchical work item trees. Excel supports publishing flat lists or parent-child hierarchies. For step-by-step instructions, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
 ## Integrate with GitHub
 
-Azure Boards (cloud) and Azure DevOps Server integrate with GitHub. Connect Azure Boards with GitHub repositories to link between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.
+You can connect Azure Boards with GitHub to link commits, pull requests, and issues to Azure Boards work items. This integration lets you use GitHub for development while tracking work in Azure Boards. See [Connect Azure Boards to GitHub](../github/connect-to-github.md) for setup steps.
 
-For more information, see [Connect Azure Boards to GitHub](../github/connect-to-github.md).
- 
-## Integrate with non-Microsoft tools using service hooks
+## Integrate with non‑Microsoft tools using service hooks
 
-You can integrate Azure Boards with other non-Microsoft tools such as Jenkins and Trello. Using service hooks you can generate actions based on Azure DevOps events. For more information, see the following articles: 
--  [Create a service hook for Azure DevOps with Jenkins](../../service-hooks/services/jenkins.md) 
--  [Create a service hook for Azure DevOps with Trello](../../service-hooks/services/trello.md)
--  [Integrate with service hooks](../../service-hooks/overview.md)
+Use service hooks to trigger actions in external services (for example, Jenkins or Trello) when Azure DevOps events occur. For examples and service-specific guidance, see:
+
+- [Create a service hook for Azure DevOps with Jenkins](../../service-hooks/services/jenkins.md)  
+- [Create a service hook for Azure DevOps with Trello](../../service-hooks/services/trello.md)  
+- [Integrate with service hooks overview](../../service-hooks/overview.md)
 
 ## Extensions for Azure Boards
 
-The following table contains some Microsoft extensions. You can search for other non-Microsoft extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
+The table below lists representative Microsoft extensions and useful categories. Search the Visual Studio Marketplace for more Microsoft and non-Microsoft extensions that match your scenario.
 
 | Category | Extensions |
 |--------------|-------------|
@@ -77,10 +78,18 @@ The following table contains some Microsoft extensions. You can search for other
 | **Command-line interface** | [Azure DevOps CLI](../../cli/index.md) |
 | **Customizing work item types** | - [Cascading Lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension)<br>- [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)<br>- [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control)<br>- [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)<br>- [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) |
 | **Dashboard widgets** | - [Azure Application Insights widget](https://marketplace.visualstudio.com/items?itemName=ms-appinsights.ApplicationInsightsWidgets)<br>- [Work Item Details widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemDetails)<br>- [Roll-up Board widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard) |
-| **Product planning** | - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)<br>- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/epic-roadmap)<br>- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/feature-timeline)<br>- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)<br>- [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work&ssr=false#overview)<br>- [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)<br>- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview) |
+| **Product planning** | - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)<br>- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) |
 | **Querying and reporting** | [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) |
+
+> [!TIP]
+> When you evaluate extensions for migration or integration, verify compatibility with your Azure DevOps Server or Services version and test in a nonproduction environment.
+
+## Next step
+
+- [Bulk add or modify work items with Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
 ## Related content
 
-- [Bulk add or modify work items with Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Use the Azure DevOps REST API](/rest/api/azure/devops/)
+- [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md)  
+- [Integrate with service hooks](../../service-hooks/overview.md)

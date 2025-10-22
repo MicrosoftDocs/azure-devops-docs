@@ -162,6 +162,7 @@ The following tables describe the type of events (or actions) that are available
 | `Library.ServiceConnectionCreatedForMultipleProjects` | Created Service Connection "{ConnectionName}" of type {ConnectionType} for multiple projects. |
 | `Library.ServiceConnectionDeleted` | Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionDeletedFromMultipleProjects` | Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from multiple projects. |
+| `Library.ServiceConnectionExecuted` | Service Connection "{ConnectionName}" of type {ConnectionType} executed in project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionForProjectModified` | Modified Service Connection "{ConnectionName}" in project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionModified` | Modified Service Connection "{ConnectionName}" of type {ConnectionType}. |
 | `Library.ServiceConnectionPropertyChanged` | One or more properties of Service Connection "{ConnectionName}" of type {ConnectionType} were changed: IsDisabled = {IsDisabled}. |
@@ -189,8 +190,8 @@ The following tables describe the type of events (or actions) that are available
 
 | Action | Description |
 |--------|-------------|
-| `Organization.Create` | Organization {OrganizationName} was created in {PreferredRegion} region. |
-| `Organization.LinkToAAD` | Organization {OrganizationName} was linked to Microsoft Entra tenant {AADTenant}. |
+| `Organization.Create` | Organization {OrganizationName} was created in {PreferredGeography} geography. |
+| `Organization.LinkToAAD` | Organization {OrganizationName} was linked to Microsoft Entra tenant {EntraTenant}. |
 | `Organization.UnlinkFromAAD` | Organization {OrganizationName} was unlinked from Microsoft Entra tenant. |
 | `Organization.Update.Delete` | Organization {OrganizationName} was deleted. |
 | `Organization.Update.ForceUpdateOwner` | Organization owner was changed from {OldOwnerName} to {NewOwnerName}. Reason specified by actor "{ForceUpdateReason}". |

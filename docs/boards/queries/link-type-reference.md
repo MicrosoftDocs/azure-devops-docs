@@ -9,8 +9,9 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 07/31/2025
+ms.date: 10/08/2025
 #customer intent: As a team member with organizational responsibilities, I want to understand the link types available in Azure DevOps and Azure Boards.
+ai-usage: ai-assisted
 ---
 
 # Reference guide for link types
@@ -19,7 +20,7 @@ ms.date: 07/31/2025
 
 <a id="link-type-guidance"></a>
 
-You can use different link types to manage the various relationships between work items and other artifacts, like builds, commits, and pull requests. This article describes the following link types.
+Use different link types to manage relationships between work items and other artifacts, such as builds, commits, and pull requests. This article describes the following link types.
 
 ::: moniker range="azure-devops"
 
@@ -44,17 +45,17 @@ A specific field maintains a count of links for the first three link types, such
 
 ::: moniker-end 
 
-Link types are subject to restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you want to create. To learn more about the different topologies, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
+Link types have topological restrictions. Use the guidance in the following tables to choose a link type based on the queries and reports you plan to create. To learn more about topologies, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
 
 ## Work link type
 
-Work link types are system-defined, process-defined, or user-defined (custom). The links listed in the following table are system-defined. 
+Work link types are system-defined, process-defined, or user-defined (custom). The links listed in the following table are system-defined.
 
-Each work link type defines the link labels, topology type, and restrictions that are used when links between work items are constructed. For example, the parent-child link type defines two labels: Parent and Child. The link type also supports a hierarchical or tree topology, and prevents circular references from being created between work items. 
+Each work link type defines labels, topology, and restrictions used when you construct links between work items. For example, the parent-child link type defines two labels: Parent and Child. The link type uses a tree topology and prevents circular references between work items.
 
-:::image type="content" source="media/link-type-reference/linkscontrol-work-item-link-types.png" alt-text="Diagram is a conceptual image of a Work item link type.":::
+:::image type="content" source="media/link-type-reference/linkscontrol-work-item-link-types.png" alt-text="Screenshot that shows a conceptual diagram of a work item link type.":::
 
-A work item's *Related Link Count* corresponds to the sum of all links defined with a work link type.
+A work item's *Related Link Count* equals the sum of all links defined with a work link type.
 
 ::: moniker range="< azure-devops"  
 
@@ -76,8 +77,8 @@ The following table describes the work item link types you can specify to scope 
 ---
 :::row:::
    :::column span="1":::
-   **Affects-Affected by**  (CMMI only)    :::image type="content" source="media/link-work-items-support-traceability/affects-cmmi.png" alt-text="Diagram is a conceptual image of Affects link type."::: 
-   :::image type="content" source="media/link-work-items-support-traceability/affected-by-cmmi.png" alt-text="Diagram is a conceptual image of Affected by link type."::: 
+   **Affects-Affected by**  (CMMI only)    :::image type="content" source="media/link-work-items-support-traceability/affects-cmmi.png" alt-text="Screenshot that shows a conceptual diagram of the Affects link type."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/affected-by-cmmi.png" alt-text="Screenshot that shows a conceptual diagram of the Affected by link type.":::
    :::column-end:::
    :::column span="3":::
    Microsoft.VSTS.Common.Affects-Forward  
@@ -87,20 +88,20 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Use this directional link to create links between any set of work items, but not ones that would create closed loops. Typically used to track change requests made to requirements.
+   Use this directional link to create links between work items without creating closed loops. People typically use it to track change requests linked to requirements.
 
    Restrictions and recommendations:
 
-   - You can link a change request to only one requirement using Affects. You can link requirements to as many child change requests as needed using Affected by.
-   - Only use Affects-Affected by links to link work items in the same project. We recommend this action if you plan to use Excel to modify or update work item data.
+   - Link a change request to only one requirement using Affects. Link requirements to as many child change requests as needed using Affected by.
+   - Only use Affects-Affected by links to link work items in the same project. We recommend this when you plan to use Excel to modify or update work item data.
 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Child-Parent**  
-   :::image type="content" source="media/link-work-items-support-traceability/child-tree-forward.png" alt-text="Diagram is a conceptual image of a Child link type.":::  
-   :::image type="content" source="media/link-work-items-support-traceability/parent-tree-reverse.png" alt-text="Diagram is a conceptual image of a Parent link type."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/child-tree-forward.png" alt-text="Screenshot that shows a conceptual diagram of the Child link type.":::  
+   :::image type="content" source="media/link-work-items-support-traceability/parent-tree-reverse.png" alt-text="Screenshot that shows a conceptual diagram of the Parent link type.":::
    :::column-end:::
    :::column span="3":::
    System.LinkTypes.Hierarchy-Forward  
@@ -110,26 +111,26 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the [mapping function](../backlogs/organize-backlog.md) or among backlog items and tasks using the [sprint backlog](../sprints/assign-work-sprint.md) or [Taskboard](../sprints/task-board.md).
+   Use this directional link to create one-to-many relationships between a single parent and one or more child items. Use it to organize work items within a hierarchy. You can create this hierarchy among backlog items using the [mapping function](../backlogs/organize-backlog.md) or among backlog items and tasks using the [sprint backlog](../sprints/assign-work-sprint.md) or [Taskboard](../sprints/task-board.md).
 
    Typical uses include:
  
-   - Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.
+   - Maintain task-summary relationships. Parent-child links represent summary tasks and their subordinate tasks.
    - Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.
 
    Restrictions and recommendations:
 
    - Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
    - A work item can have only one Parent. A parent work item can have many children.
-   - Only use parent-child links to link work items in the same project. We recommend this action if you plan to use Excel to modify or update work item data.
+   - Only use parent-child links to link work items in the same project. We recommend this when you plan to use Excel to modify or update work item data.
  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Duplicate-Duplicate of** 
-   :::image type="content" source="media/link-work-items-support-traceability/duplicate-tree-forward.png" alt-text="Diagram is a conceptual image of Duplicate of tree forward."::: 
-   :::image type="content" source="media/link-work-items-support-traceability/duplicate-of-tree-reverse.png" alt-text="Diagram is a conceptual image of Duplicate of tree reverse."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/duplicate-tree-forward.png" alt-text="Screenshot that shows a conceptual diagram of the Duplicate link type."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/duplicate-of-tree-reverse.png" alt-text="Screenshot that shows a conceptual diagram of the Duplicate Of link type.":::
    :::column-end:::
    :::column span="3":::
    System.LinkTypes.Duplicate-Forward  
@@ -139,20 +140,20 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to track tasks, bugs, or other work items that are duplicates of one another.  
+   Use this directional link to create one-to-many relationships to track tasks, bugs, or other work items that duplicate one another.  
 
    Restrictions and recommendations:
 
    - A work item can have only one Duplicate. 
-   - Only use Duplicate or Duplicate Of links to link work items in the same project. We recommend this action if you plan to use Excel to modify or update work item data.
+   - Only use Duplicate or Duplicate Of links to link work items in the same project. We recommend this when you plan to use Excel to modify or update work item data.
  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Referenced By-References**  
-   :::image type="content" source="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt-text="Diagram is a conceptual image of Tested by link type."::: 
-   :::image type="content" source="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt-text="Diagram is a conceptual image of Tests link type."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt-text="Screenshot that shows a conceptual diagram of the Referenced By link type."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt-text="Screenshot that shows a conceptual diagram of the References link type.":::
    :::column-end:::
    :::column span="3":::
    Microsoft.VSTS.TestCase.  
@@ -162,14 +163,14 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../test/repeat-test-with-different-data.md). In general, you wouldn't add this link type to a scoped links control.
+   Use this to link test cases to shared parameters and to support repeating a test with different data. Generally, you don't add this link type to a scoped links control.
    :::column-end:::
 
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Related**  
-   :::image type="content" source="media/link-work-items-support-traceability/related-network.png" alt-text="Diagram is a conceptual image of Related link type."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/related-network.png" alt-text="Screenshot that shows a conceptual diagram of the Related link type."::: 
    :::column-end:::
    :::column span="3":::
    System.LinkTypes.Related  
@@ -177,10 +178,10 @@ The following table describes the work item link types you can specify to scope 
    Link category: System-defined  
    :::column-end:::
    :::column span="3":::
-   Use this nondirectional link to create links between any set of work items. Use to link work items that are at the same level, such as two user stories that define features that overlap one another. The Related link type creates simple relationships with few restrictions.
+   Use this nondirectional link to create relationships between work items. Use it to link work items at the same level (for example, two user stories that overlap). The Related link type creates simple relationships with few restrictions.
 
-   - Relate work items that are at the same level, such as two user stories that define features that overlap one another.
-   - Link work items that are defined in different projects and managed by different teams.
+   - Relate work items that are at the same level.
+   - Link work items defined in different projects and managed by different teams.
    - Find and view work items and their related work items in a two-tiered view.
    - Create simple relationships with few restrictions.
 
@@ -189,37 +190,35 @@ The following table describes the work item link types you can specify to scope 
 :::row:::
    :::column span="1":::
    **Successor-Predecessor**  
-   :::image type="content" source="media/link-work-items-support-traceability/successor-dependency-forward.png" alt-text="Diagram is a conceptual image of Successor dependency, forward."::: 
-   :::image type="content" source="media/link-work-items-support-traceability/predecessor-dependency-reverse.png" alt-text="Diagram is a conceptual image of Predecessor dependency, reverse."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/successor-dependency-forward.png" alt-text="Screenshot that shows a conceptual diagram of the Successor dependency."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/predecessor-dependency-reverse.png" alt-text="Screenshot that shows a conceptual diagram of the Predecessor dependency.":::
    :::column-end:::
    :::column span="3":::
    System.LinkTypes.Dependency  
-
    Topology type: Dependency  
    Link category: System-defined  
-   Choose **Predecessor** link type when linking to a work item that should be completed before the work item you're linking from. Choose **Successor** link type when linking to a work item that should be completed *after* to the work item you're linking from.
+   Choose **Predecessor** when linking to a work item that should complete before the current item. Choose **Successor** when linking to a work item that should complete after the current item.
 
    :::column-end:::
    :::column span="3":::
-   Use this directional link to create links between any set of work items, but not ones that would create closed loops. Use to track tasks that must be completed before others can be started. Linked tasks are represented as predecessor-successor links in Azure Boards. 
+   Use this directional link to track tasks that must finish before others start. Linked tasks appear as predecessor-successor links in Azure Boards. 
 
-   - Track tasks that must be completed before others can be started.
-   - Supports one-to-many relationships.
-   - Find and view predecessor work items and their successor work items in a two-tiered, direct links query view.
+   - Track tasks that must be completed before others can begin.
+   - Support one-to-many relationships.
+   - Find predecessor and successor work items in a two-tiered direct-links query view.
 
    Restrictions and recommendations:
 
-   - An error appears when you attempt to create links that define circular relationships.
-   - Create predecessor-successor links only to work items that are within the same project. 
-     You can create predecessor-successor links between work items that are defined in different projects. But, if you export a query to Excel, only those work items defined for the project for which the query is defined get imported.
+   - An error appears when you attempt to create circular relationships.
+   - Create predecessor-successor links only for work items within the same project when you plan to export to Excel. You can create predecessor-successor links across projects, but Excel export/import will only include items for the project that defines the query.
 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Tested by-Tests**   
-   :::image type="content" source="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt-text="Diagram is a conceptual image of Tested by link type."::: 
-   :::image type="content" source="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt-text="Diagram is a conceptual image of Tests link type."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt-text="Screenshot that shows a conceptual diagram of the Tested by link type."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt-text="Screenshot that shows a conceptual diagram of the Tests link type.":::
    :::column-end:::
    :::column span="3":::
    Microsoft.VSTS.Common.TestedBy-Forward  
@@ -229,15 +228,15 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises Azure DevOps, there are several SQL reports that depend on these links. See [Review team activities to support useful reports](/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports#monitor-progress).
+   Link test cases to work items such as bugs, user stories, requirements, and PBIs. Use this to track test cases that validate user stories (Agile), PBIs (Scrum), or requirements (CMMI). For on-premises Azure DevOps, several SQL reports depend on these links. See [Review team activities to support useful reports](/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports#monitor-progress).
 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Test Case-Shared Steps**  
-   :::image type="content" source="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt-text="Diagram is a conceptual image of Tested by link type."::: 
-   :::image type="content" source="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt-text="Diagram is a conceptual image of Tests link type."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt-text="Screenshot that shows a conceptual diagram of Test Case to Shared Steps link."::: 
+   :::image type="content" source="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt-text="Screenshot that shows a conceptual diagram of Shared Steps to Test Case link.":::
    :::column-end:::
    :::column span="3":::
    Microsoft.VSTS.TestCase.  
@@ -247,7 +246,7 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Use to link test cases with shared steps. [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases) to avoid having to create multiple entries of the same sequence of steps.
+   Use this to link test cases with shared steps. [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases) to avoid duplicating the same sequence of steps.
 
    :::column-end:::
 :::row-end:::
@@ -256,9 +255,9 @@ The following table describes the work item link types you can specify to scope 
 
 ## Hyperlink
 
-A hyperlink can link a work item to any URL. The *Hyperlink Count* tracks the number of hyperlinks to a work item. 
+A hyperlink links a work item to any URL. The *Hyperlink Count* tracks the number of hyperlinks on a work item.
 
-:::image type="content" source="media/link-type-reference/hyperlink.png" alt-text="Diagram is a conceptual image of a Hyperlink."::: 
+:::image type="content" source="media/link-type-reference/hyperlink.png" alt-text="Screenshot that shows a conceptual diagram of a Hyperlink.":::
 
 :::row:::
    :::column span="1":::
@@ -286,26 +285,26 @@ A hyperlink can link a work item to any URL. The *Hyperlink Count* tracks the nu
    Hyperlink
    :::column-end:::
    :::column span="1":::
-   Used to link a work item to a URL. **Work item Hyperlink** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list). 
+   Use this to link a work item to a URL. **Work item Hyperlink** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list).
    :::column-end:::
 :::row-end:::
 
 ## External link type
 
-External link types are system-defined link types that support linking work items to other objects stored within Azure DevOps as shown in the following image. A work item's *External Link Count* corresponds to the sum of all links defined with an external link type. 
+External link types are system-defined and link work items to other objects stored within Azure DevOps. A work item's *External Link Count* equals the sum of all links defined with external link types.
 
 > [!div class="mx-imgBorder"]  
-> :::image type="content" source="media/link-type-reference/linkscontrol-external-link-types.png" alt-text="Diagram is a conceptual image of External link type."::: 
+> :::image type="content" source="media/link-type-reference/linkscontrol-external-link-types.png" alt-text="Screenshot that shows a conceptual diagram of external link types.":::
 
 > [!NOTE]   
-> You can only use an external link type to link to an Azure DevOps object. To link work items to other objects outside of Azure DevOps, use a [hyperlink](#hyperlink). 
+> Use an external link type only to link to an Azure DevOps object. To link work items to objects outside Azure DevOps, use a [hyperlink](#hyperlink). 
 
 ::: moniker range="azure-devops"  
-The following table describes the external link types you can choose when you add a link type from a work item or test case. 
+The following table describes the external link types you can choose when you add a link from a work item or test case. 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
-The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true). 
+The following table describes the external link types you can choose when adding a link from a work item or test case. You can also specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true). 
 ::: moniker-end  
 
 :::row:::
@@ -322,7 +321,21 @@ The following table describes the external link types you can choose when adding
       **Usage**
    :::column-end:::
 :::row-end:::
----
+--- 
+:::row:::
+   :::column span="":::
+      Security Alert
+   :::column-end:::
+   :::column span="":::
+      Advanced Security
+   :::column-end:::
+   :::column span="":::
+      Advanced Security
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to an Advanced Security alert.
+   :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="":::
       Branch
@@ -334,7 +347,7 @@ The following table describes the external link types you can choose when adding
       Branch
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a branch.
+      Use to link a work item to a branch.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -348,7 +361,7 @@ The following table describes the external link types you can choose when adding
       Build
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a build.
+      Use to link a work item to a build.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -362,7 +375,7 @@ The following table describes the external link types you can choose when adding
       Changeset
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a changeset. 
+      Use to link a work item to a changeset. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -376,7 +389,7 @@ The following table describes the external link types you can choose when adding
       Commit
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a commit.
+      Use to link a work item to a commit.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -390,7 +403,7 @@ The following table describes the external link types you can choose when adding
       Build
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a build.
+      Use to link a work item to a build.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -404,7 +417,7 @@ The following table describes the external link types you can choose when adding
       Build pipeline
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a build.
+      Use to link a work item to a build.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -418,7 +431,7 @@ The following table describes the external link types you can choose when adding
       Release pipeline
    :::column-end:::
    :::column span="":::
-      Used to link a release to a work item. The system creates a link of this type when a user enables the **Report deployment status to Work** option for a release definition.
+      Use to link a release to a work item. The system creates this type when a user enables **Report deployment status to Work** for a release definition.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -432,7 +445,7 @@ The following table describes the external link types you can choose when adding
       PullRequestId
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a pull request. 
+      Use to link a work item to a pull request. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -446,12 +459,12 @@ The following table describes the external link types you can choose when adding
       TcmResultAttachment
    :::column-end:::
    :::column span="":::
-      Used to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from **Test** or Microsoft Test Manager. 
+      Use to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from **Test** or Microsoft Test Manager. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Source Code File<
+      Source Code File
    :::column-end:::
    :::column span="":::
       VersionControl 
@@ -460,7 +473,7 @@ The following table describes the external link types you can choose when adding
       LatestItemVersion
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a file under Team Foundation version control (TFVC).   
+      Use to link a work item to a file under Team Foundation version control (TFVC).   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -474,7 +487,7 @@ The following table describes the external link types you can choose when adding
       Storyboard
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a PowerPoint file or other file that contains story boarding information on a network. 
+      Use to link a work item to a PowerPoint file or other file that contains storyboarding information on a network. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -488,7 +501,7 @@ The following table describes the external link types you can choose when adding
       Tag
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a tag defined for a git commit or git repository. For more information, see [Work from the Git command prompt](../../repos/git/command-prompt.md).
+      Use to link a work item to a tag defined for a git commit or repository. For more, see [Work from the Git command prompt](../../repos/git/command-prompt.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -502,7 +515,7 @@ The following table describes the external link types you can choose when adding
       TcmResult
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a test result. These links appear when you associate a work item with a test result from **Test** or Microsoft Test Manager.  
+      Use to link a work item to a test result. These links appear when you associate a work item with a test result from **Test** or Microsoft Test Manager.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -516,7 +529,7 @@ The following table describes the external link types you can choose when adding
       LatestItemVersion
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a file or changeset defined within a TFVC repository. **Source Code File** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list).   
+      Use to link a work item to a file or changeset defined within a TFVC repository. **Source Code File** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list).   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -530,7 +543,7 @@ The following table describes the external link types you can choose when adding
       Wiki
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a wiki page. Supported for TFS 2018.2 and later versions.
+      Use to link a work item to a wiki page. Supported for TFS 2018.2 and later versions.
    :::column-end:::
 :::row-end:::
 
@@ -538,22 +551,22 @@ The following table describes the external link types you can choose when adding
 
 ## GitHub link type
 
-GitHub link types are system-defined and support linking work items to GitHub objects as shown in the following image.  
+GitHub link types are system-defined and link work items to GitHub objects as shown here.
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
-:::image type="content" source="media/link-type-reference/linkscontrol-github-link-types.png" alt-text="Diagram is a conceptual image of GitHub link type.":::  
+:::image type="content" source="media/link-type-reference/linkscontrol-github-link-types.png" alt-text="Screenshot that shows a conceptual diagram of GitHub link types.":::
 
 ::: moniker-end
 
 ::: moniker range="<=azure-devops"
 
 > [!IMPORTANT]  
-> You can only link to GitHub artifacts with repositories connected to Azure Boards.
+> You can only link to GitHub artifacts for repositories connected to Azure Boards.
 
-The following table describes the GitHub link types you can choose when adding a link type from a work item. 
+The following table describes the GitHub link types you can choose when adding a link from a work item. 
 
 :::row:::
    :::column span="1":::
@@ -575,7 +588,7 @@ The following table describes the GitHub link types you can choose when adding a
       GitHub repository commit
    :::column-end:::
    :::column span="2":::
-      Used to link a work item to a GitHub commit.
+      Use to link a work item to a GitHub commit.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -588,7 +601,7 @@ The following table describes the GitHub link types you can choose when adding a
       GitHub repository issue
    :::column-end:::
    :::column span="2":::
-      Used to link a work item to a GitHub issue.
+      Use to link a work item to a GitHub issue.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -601,7 +614,7 @@ The following table describes the GitHub link types you can choose when adding a
       GitHub repository pull request
    :::column-end:::
    :::column span="2":::
-      Used to link a work item to a GitHub pull request.
+      Use to link a work item to a GitHub pull request.
    :::column-end:::
 :::row-end:::
  
@@ -611,9 +624,9 @@ The following table describes the GitHub link types you can choose when adding a
 
 ## Remote work link type
 
-Remote work link types are system-defined link types that support linking work items defined in different organizations, as long as the same Microsoft Entra ID manages them as described in [Connect your organization to Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md). 
+Remote work link types support linking work items defined in different organizations, as long as the same Microsoft Entra ID manages those organizations (see [Connect your organization to Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md)). 
 
-A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) corresponds to the sum of all links defined with a remote work link type. 
+A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) equals the sum of all links defined with a remote work link type. 
 
 :::row:::
    :::column span="":::
@@ -626,13 +639,13 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       **Usage**
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="":::
       **Consumes From-Produced For**  
       (Dependency topology)
-      :::image type="content" source="media/link-work-items-support-traceability/affected-by-cmmi.png" alt-text="Diagram is a conceptual image of Consumes From topology.":::
-      :::image type="content" source="media/link-work-items-support-traceability/affects-cmmi.png" alt-text="Diagram is a conceptual image of Produced For topology.":::
+      :::image type="content" source="media/link-work-items-support-traceability/affected-by-cmmi.png" alt-text="Screenshot that shows a conceptual diagram of Consumes From topology.":::
+      :::image type="content" source="media/link-work-items-support-traceability/affects-cmmi.png" alt-text="Screenshot that shows a conceptual diagram of Produced For topology.":::
    :::column-end:::
    :::column span="":::
       System.LinkTypes.Remote.Dependency-Forward  
@@ -641,13 +654,13 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       Link category: System-defined  
    :::column-end:::
    :::column span="":::
-      Use this directional link to create links between work items that have dependencies and are defined in different organizations, as long as the same Microsoft Entra ID manages them. Typically used to track change requests made to requirements.
+      Use this directional link to create dependencies between work items defined in different organizations, as long as the same Microsoft Entra ID manages them. People typically use this to track change requests linked to requirements across org boundaries.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       **Remote Related**  
-      :::image type="content" source="media/link-work-items-support-traceability/related-network.png" alt-text="Diagram is a conceptual image of Remote Related topology.":::
+      :::image type="content" source="media/link-work-items-support-traceability/related-network.png" alt-text="Screenshot that shows a conceptual diagram of Remote Related topology.":::
    :::column-end:::
    :::column span="":::
       System.LinkTypes.Remote.Related  
@@ -655,7 +668,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       Link category: System-defined  
    :::column-end:::
    :::column span="":::
-      Use this nondirectional link to create links between work items defined in different organizations, as long as the same Microsoft Entra ID manages them.
+      Use this nondirectional link to relate work items defined in different organizations, as long as the same Microsoft Entra ID manages them.
    :::column-end:::
 :::row-end:::
 
@@ -665,7 +678,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 
 ## Custom link type
 
-You can create a custom link type, export and import definitions of link types, and delete, activate, deactivate, and reactivate types of links. See the following articles:
+Create custom link types, export and import link-type definitions, and delete, activate, deactivate, or reactivate custom link types. See:
 
 - [Link type element reference](/previous-versions/azure/devops/reference/xml/link-type-element-reference) 
 - [Manage link types (`witadmin`)](/previous-versions/azure/devops/reference/witadmin/manage-link-types). 
@@ -674,13 +687,13 @@ You can create a custom link type, export and import definitions of link types, 
 
 ## List link types
 
-To get a list of link types, you can use one of the supported command-line tools. 
+You can list link types using supported command-line tools.
 
 ::: moniker range="azure-devops" 
 
 ### az boards work-item relation list-type  
 
-You can list link types supported by your organization with the [az boards work-item relation list-type](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
+List link types supported by your organization with the [az boards work-item relation list-type](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API. For details, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az boards work-item relation list-type [--org]

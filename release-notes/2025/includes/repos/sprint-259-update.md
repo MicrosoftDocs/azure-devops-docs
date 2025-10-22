@@ -16,4 +16,4 @@ You can now create a work item directly from a comment in your pull request. Sim
 
 We brought expanded support for a variety of Mermaid diagram types and visualizations, enhancing your documentation and project planning capabilities. The newly supported diagram types that we have included this sprint are: Entity relationship and Timeline diagram.
 
-You can find more information about Mermaid support in the [work with Mermaid diagrams documentation](/azure/devops/project/wiki/markdown-guidance?view=azure-devops#work-with-mermaid-diagrams).
+You can find more information about Mermaid support in the [work with Mermaid diagrams documentation](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true#work-with-mermaid-diagrams).

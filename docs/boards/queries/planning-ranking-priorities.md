@@ -8,8 +8,9 @@ ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 05/24/2022
+ms.date: 10/08/2025
 ---
 
 # Query by rank and picklist value
@@ -38,6 +39,8 @@ Query clauses that specify a string or integer field can use the following opera
 Most of the planning fields described in the next section are either an integer or string field. For example queries of numeric or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).   
 
 To use the **In** and **Not In** operators, enter the names or labels of items that correspond to the selected field separated by a comma. For example, to filter for **Work Item Types** that are either user stories or bugs, add the clause: `Work Item Types In User Story,Bug`.  
+
+Picklist values vary by process and by organization; the examples shown are illustrative — confirm the allowed values for your process before publishing queries.
 
 :::row:::
    :::column span="1":::
@@ -272,7 +275,7 @@ The following table describes the fields that you can use to plan and prioritize
 
 ## More about Backlog Priority or Stack Rank fields
 
-The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](https://devblogs.microsoft.com/devops/where-is-the-field-on-the-work-item-form-to-order-the-backlog).
+The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](https://devblogs.microsoft.com/devops/where-is-the-field-on-the-work-item-form-to-order-the-backlog).)
 
 To add the field to the form:
 
@@ -294,5 +297,4 @@ To add the field to the form:
 
 - [Query by a numeric field](query-numeric.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)  
-- [Work item fields and attributes](../work-items/work-item-fields.md).  
-
+- [Work item fields and attributes](../work-items/work-item-fields.md).

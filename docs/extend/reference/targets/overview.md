@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: overview
-ms.date: 04/11/2025
+ms.date: 10/02/2025
 ms.custom:
   - engagement-fy23
   - sfi-image-nochange
@@ -18,23 +18,17 @@ ms.custom:
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Extensions enhance the Azure DevOps user experience by contributing new capabilities. This article highlights the most common extensibility points that your extension can target. Extensibility points allow packages to add functionality in a manner defined by the operating system. For more information about the Azure DevOps extensibility model, see the [Contribution model](../../develop/contributions-overview.md).
+Extensions add capabilities to the Azure DevOps UI and REST surface. This article lists the most common extensibility points you can target and shows the IDs you use in your extension manifest. For an overview of the extension model and contribution patterns, see the [Contribution model](../../develop/contributions-overview.md).
 
-The [Contributions Guide extension](https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide) is a sample extension. Install this extension into your organization. Once it's installed, you see the extensibility points that are available. We recommend you install this extension into a personal or test organization. The [source code for this extension](https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide) is also available. 
-
-For more information, see the following references:
-- [azure-devops-extension-api](/javascript/api/azure-devops-extension-api/)
-- [azure-devops-extension-sdk](/javascript/api/azure-devops-extension-sdk/)
-- [azure-devops-extension-sample](https://github.com/microsoft/azure-devops-extension-sample)
-- [installed extension API](/rest/api/azure/devops/extensionmanagement/installed-extensions?view=azure-devops-rest-6.0&preserve-view=true)
+[!INCLUDE [extension-samples-tip](../../includes/extension-samples-tip.md)]
 
 <a name="hubs"></a>
 
 ## Hubs and hub groups
 
-Hubs and hub groups are the primary navigation elements in Azure DevOps. **Files**, **Releases**, **Backlogs**, and **Queries** are examples of hubs. A hub belongs to a hub group. The **Files** hub, for example, belongs to the project-level **Azure Repos** hub group. Hub groups can exist at the organization or collection level or at the project level. Most extensions contribute to the project level.
+Hubs and hub groups provide primary navigation in Azure DevOps (for example, **Files**, **Releases**, **Backlogs**, **Queries**). A hub belongs to a hub group; for example, the **Files** hub belongs to the project-level **Azure Repos** hub group. Hub groups can exist at the organization/collection level or at the project level. Most extensions contribute at the project level.
 
-The following table describes the most common hub groups in Azure DevOps where you can contribute hubs.
+The following table lists common hub groups and their contribution IDs.
 
 ::: moniker range="<=azure-devops"
 
@@ -45,30 +39,29 @@ The following table describes the most common hub groups in Azure DevOps where y
 | Azure Pipelines     | `ms.vss-build-web.build-release-hub-group` | Project/team             | :::image type="content" source="media/build/azure-pipelines.png" alt-text="Screenshot of custom hub added to Azure Pipelines."::: |
 | Azure Test Plans    | `ms.vss-test-web.test-hub-group`           | Project/team             | :::image type="content" source="media/test/azure-test-plans.png" alt-text="Screenshot of custom hub added to Azure Test Plans."::: |
 | Project settings    | `ms.vss-web.project-admin-hub-group`       | Project                  | :::image type="content" source="media/test/project-settings.png" alt-text="Screenshot of custom project admin hub."::: |
-| Organization settings  | `ms.vss-web.collection-admin-hub-group` | Organization or collection  | :::image type="content" source="media/test/organization-settings.png" alt-text="Screenshot of custom organization admin hub."::: |
+| Organization settings | `ms.vss-web.collection-admin-hub-group`  | Organization/collection  | :::image type="content" source="media/test/organization-settings.png" alt-text="Screenshot of custom organization admin hub."::: |
 ::: moniker-end
 
-### Example
+### Example: contribute a hub
 
-The following example shows how to contribute a hub to the Code hub group:
+This example shows a hub contribution that targets the Code hub group:
 
 ```json
 {
-    ...
-    "contributions": [
-        {
-            "id": "my-custom-hub",
-            "type": "ms.vss-web.hub",
-            "targets": [
-                "ms.vss-code-web.code-hub-group"
-            ],
-            "properties": {
-                "name": "Code Hub",
-                "order": 30,
-                "uri": "/views/code/custom.html"
-            }
-        }
-    ]
+  "contributions": [
+    {
+      "id": "my-custom-hub",
+      "type": "ms.vss-web.hub",
+      "targets": [
+        "ms.vss-code-web.code-hub-group"
+      ],
+      "properties": {
+        "name": "Code Hub",
+        "order": 30,
+        "uri": "/views/code/custom.html"
+      }
+    }
+  ]
 }
 ```
 

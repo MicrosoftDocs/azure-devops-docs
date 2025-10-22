@@ -65,5 +65,5 @@ To create a feedback query, do the following steps.
 - [What is Azure Test Plans?](overview.md)
 - [Request feedback using the Test & Feedback extension](request-stakeholder-feedback.md)
 - [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback)
-- [Provide feedback using the Test & Feedback extension](provide-stakeholder-feedback.md#provide)
+- [Provide feedback using the Test & Feedback extension](provide-stakeholder-feedback.md)
 - [Define a work item query](../boards/queries/using-queries.md)

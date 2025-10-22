@@ -118,14 +118,6 @@ The Azure Pipelines app for Slack supports the following commands:
 
 The Azure Pipelines app can also help you monitor pipelines activity in your private channels. You need to invite the bot to your private channel by using `/invite @azpipelines`. Once you add the bot, you can configure and control your notifications the same way as for a public channel.
 
-## Conditions and limitations
-
-- You can use the Azure Pipelines app for Slack only with Azure DevOps Services.
-- To set up the subscriptions, you must be an admin of the project containing the pipeline.
-- Notifications aren't supported inside direct messages.
-- Deployment approvals that have the **Revalidate identity of approver before completing the approval** policy applied aren't supported.
-- To use the app, **Third party application access via OAuth** must be enabled in Azure DevOps **Organization settings** > **Security** > **Policies**.
-
 ## Troubleshooting
 
 [!INCLUDE [troubleshooting](includes/troubleshoot-authentication.md)]

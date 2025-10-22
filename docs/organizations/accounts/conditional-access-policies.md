@@ -13,27 +13,39 @@ monikerRange: 'azure-devops'
 
 # Set up Conditional Access policies on Azure DevOps
 
-Microsoft Entra ID lets tenant admins control which users can access Microsoft resources using [Conditional Access policies](/azure/active-directory/conditional-access/overview). Admins set specific conditions users must meet to gain access, such as:
+Microsoft Entra ID lets tenant admins control which users can access Microsoft resources using [Conditional Access policies](/entra/identity/conditional-access/overview). Admins set specific conditions users must meet to gain access, such as:
 
 - Membership in a specific Microsoft Entra security group
 - Location or network requirements
 - Use of a particular operating system
 - Use of a managed and enabled device
 
-Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. Learn more about [Conditional Access policies](/azure/active-directory/active-directory-conditional-access) in the Microsoft Entra documentation.
+Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. Learn more about [Conditional Access policies](/entra/identity/conditional-access/concept-conditional-access-policies) in the Microsoft Entra documentation.
 
 ## Create a Conditional Access policy for Azure DevOps
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| You must be at least a **Conditional Access Administrator** to set up a Conditional Access policy in your tenant. Learn more in the ["Create a Conditional Access policy" Entra docs](/entra/identity/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy). |
+|**Permissions**| You must be at least a **Conditional Access Administrator** to set up a Conditional Access policy in your tenant. Learn more in the ["Create a Conditional Access policy" Entra docs](/entra/identity/conditional-access/policy-all-users-mfa-strength). |
 
-1. Go to the [Azure portal](https://portal.azure.com) and find the **"Microsoft Entra Conditional Access"** service.
-2. Select **"Policies"** on the right sidebar.
-3. Select the **"+ New policy"** button. Provide the policy a name. 
-5. For the **"Target resources"** assignments, toggle **"Select resources"** and add the _"Azure DevOps"_ or _"Microsoft Visual Studio Team Services"_ resource (resource id: 499b84ac-1321-427f-aa17-267ca6975798) to the list of target resources.
-6. Configure other settings as desired.
-7. Select **Save** to apply this new policy.
+> [!WARNING]
+> [External authentication methods](/entra/identity/authentication/how-to-authentication-external-method-manage) are currently incompatible with authentication strength. You should use the **[Require multifactor authentication](/entra/identity/conditional-access/concept-conditional-access-grant#require-multifactor-authentication)** grant control. This example uses the [built-in multifactor authentication strength](/entra/identity/authentication/concept-authentication-strengths), some organizations may choose to use a stronger authentication strength like passwordless or phishing-resistant.
+
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator).
+1. Browse to **Entra ID** > **Conditional Access** > **Policies**.
+1. Select **New policy**.
+1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+1. Under **Assignments**, select **Users or workload identities**.
+   1. Under **Include**, select **All users**
+   1. Under **Exclude**: 
+      - Select **Users and groups** 
+         - Choose your organization's emergency access or break-glass accounts.
+1. Under **Target resources** > **Resources (formerly cloud apps)** > **Include**, **Select resources**, select _"Azure DevOps"_ or _"Microsoft Visual Studio Team Services"_ resource (resource id: 499b84ac-1321-427f-aa17-267ca6975798) to the list of target resources.
+1. Under **Access controls** > **Grant**, select **Grant access**, **Require authentication strength**, select **Multifactor authentication**, then select **Select**.
+1. Confirm your settings and set **Enable policy** to **Report-only**.
+1. Select **Create** to create to enable your policy.
+
+After confirming your settings using [policy impact or report-only mode](/entra/identity/conditional-access/concept-conditional-access-report-only#reviewing-results), move the **Enable policy** toggle from **Report-only** to **On**.
 
  :::image type="content" source="./media/setup-ado-cap.png" alt-text="Screenshot showing how to add Azure DevOps as a target resource on a new Conditional Access policy in Microsoft Entra portal.":::
 

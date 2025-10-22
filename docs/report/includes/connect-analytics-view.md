@@ -40,7 +40,7 @@ Follow these steps to connect to an Analytics view:
    > [!IMPORTANT]
    > Don't confuse the team name with the project name, which is a common mistake. For example, if the URL you use is `https://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber-Git/Device`, *Fabrikam-Fiber-Git* is the project name, and *Device* is the team name.
 
-   After you successfully sign in, Power BI verifies that your credentials have the permissions that are needed to access the specified project. If any errors arise, see the [FAQs](../powerbi/data-connector-connect.md#q-a) for solutions to common problems.
+   After you successfully sign in, Power BI verifies that your credentials have the permissions that are needed to access the specified project. For solutions to common issues, see [Troubleshooting](../powerbi/data-connector-connect.md#q-a).
 
 ## Select the Analytics view
 
@@ -63,7 +63,7 @@ Follow these steps to select the Analytics view:
    > - The preview shown for any selected view in the navigator can be truncated depending on the number of fields selected and the size of the dataset. The data gets truncated only for the preview and doesn't affect the full data refresh.
    > - [Analytics views](../powerbi/what-are-analytics-views.md) don't apply filters defined by using Power BI on the server. Any filters applied in Power BI limit the data shown to end users but don't reduce the amount of data retrieved from Analytics. If the filter is intended to reduce the size of the dataset, apply it by [customizing the view](../powerbi/analytics-views-create.md).
 
-1. Select the checkbox next to the **Stories - Last 30 days** view, and then select **Load**. Wait for the data to load. Monitor its progress through the status messages displayed under the table name. If any errors occur, refer to the [FAQs](../powerbi/data-connector-connect.md#q-a) section for solutions to common issues.
+1. Select the checkbox next to the **Stories - Last 30 days** view, and then select **Load**. Wait for the data to load. Monitor its progress through the status messages displayed under the table name. For solutions to common issues, see [Troubleshooting](../powerbi/data-connector-connect.md#q-a).
 
    :::image type="content" source="../powerbi/media/power-bi-data-loading-on-premises.png" alt-text="Screenshot of the Load window for the Stories - Last 30 Days view. A partial progress ring and an Evaluating message are visible.":::
 

@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 09/06/2024
+ms.date: 10/08/2025
+ai-usage: ai-assisted
 ---
 
 
@@ -17,9 +18,9 @@ ms.date: 09/06/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-This article provides descriptions of each field data type, query operator, and query macro. Some data types, operators, and macros are only valid for the indicated Azure DevOps version. 
+This article describes field data types, query operators, and query macros you use in the Query Editor. Some types, operators, and macros apply only to specific Azure DevOps versions.
 
-For more information, see [Query quick reference](query-index-quick-ref.md) and [Manage and organize queries](organize-queries.md).
+For quick examples and editor tasks, see [Query quick reference](query-index-quick-ref.md) and [Manage and organize queries](organize-queries.md).
 
 ## Prerequisites
 
@@ -29,10 +30,10 @@ For more information, see [Query quick reference](query-index-quick-ref.md) and 
 
 ## Query field data types and values
 
-The value you specify for a field must conform to the data type for that field. The following table lists the supported data types:
+You must specify a value that matches the data type for a field. The table below lists supported data types:
 
 > [!NOTE]   
-> For Azure Boards cloud service, the data type corresponds to that listed for the field on the [Process>Fields page](../work-items/work-item-fields.md#review-fields). For on-premises deployments, the data type corresponds to the `type` attribute assigned to a [`FIELD` definition](/previous-versions/azure/devops/reference/xml/field-definition-element-reference). For more information, see [Work item fields and field attributes](../work-items/work-item-fields.md). 
+> For Azure Boards (cloud), the data type matches the field shown on the [Process > Fields page](../work-items/work-item-fields.md#review-fields). For on-premises deployments, the data type corresponds to the `type` attribute on a [`FIELD` definition](/previous-versions/azure/devops/reference/xml/field-definition-element-reference). See [Work item fields and field attributes](../work-items/work-item-fields.md) for details. 
 
 :::row:::
    :::column span="1":::
@@ -47,7 +48,7 @@ The value you specify for a field must conform to the data type for that field. 
    **Boolean** 
    :::column-end:::
    :::column span="3":::
-   Specifies a field that takes on a True/False value. 
+   Stores a True/False value. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -55,9 +56,8 @@ The value you specify for a field must conform to the data type for that field. 
    **DateTime** or  **Date/Time**
    :::column-end:::
    :::column span="3":::
-   A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as `01/01/2025`. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) For query examples, see [Query by date or @CurrentIteration](query-by-date-or-current-iteration.md).  
-
-   For WIQL queries, you can also specify the date in the Coordinated Universal Time (UTC) pattern. For more information, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md). 
+   Use a date variable (for example, **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**) or an explicit date like `01/01/2025`. Enter dates in the pattern set in your profile. For query examples, see [Query by date or @CurrentIteration](query-by-date-or-current-iteration.md).  
+   For WIQL queries, you can also specify dates in UTC. See [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -65,7 +65,7 @@ The value you specify for a field must conform to the data type for that field. 
    **Double** or **Decimal**
    :::column-end:::
    :::column span="3":::
-   A real number, such as 0.2 or 3.5. For query examples, see [Query by numeric fields](query-numeric.md). 
+   Stores a real number, such as 0.2 or 3.5. See [Query by numeric fields](query-numeric.md) for examples.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -73,7 +73,7 @@ The value you specify for a field must conform to the data type for that field. 
    **GUID** 
    :::column-end:::
    :::column span="3":::
-   A character string that represents a unique ID.
+   Stores a unique identifier string.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -81,7 +81,7 @@ The value you specify for a field must conform to the data type for that field. 
    **History** 
    :::column-end:::
    :::column span="3":::
-   Custom formatted field used to track historical information. This data type is only used to support the **History** field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. For query examples, see [History and auditing](history-and-auditing.md). 
+   Custom formatted field used for historical information (the **History** field). When full-text search is available, this field is indexed for full-text queries. See [History and auditing](history-and-auditing.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -89,7 +89,7 @@ The value you specify for a field must conform to the data type for that field. 
     **HTML** 
    :::column-end:::
    :::column span="3":::
-   Text strings that support formatted descriptions, such as the **Description** or **Repro Steps** fields. These fields are automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. To query rich-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). 
+   Stores formatted text (for example, **Description** or **Repro Steps**). When full-text search is available, these fields are indexed. To query rich-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -97,7 +97,7 @@ The value you specify for a field must conform to the data type for that field. 
     **Identity** 
    :::column-end:::
    :::column span="3":::
-   Short text string that identifies a user identity. 
+   Stores a short text string that identifies a user identity.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -105,7 +105,7 @@ The value you specify for a field must conform to the data type for that field. 
     **Integer** 
    :::column-end:::
    :::column span="3":::
-   A 32-bit integer that is signed, such as 0, 1, 2, 34.
+   Stores a signed 32-bit integer (for example, 0, 1, 2, 34).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -113,7 +113,7 @@ The value you specify for a field must conform to the data type for that field. 
     **PlainText** or  **Text field (multi-line)**
    :::column-end:::
    :::column span="3":::
-   Text strings that support long descriptions, such as the **Application Start Information** field. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. To query plain-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
+   Stores long text values (for example, **Application Start Information**). These fields index for full-text search when supported. See [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -121,7 +121,7 @@ The value you specify for a field must conform to the data type for that field. 
     **picklistDouble**
    :::column-end:::
    :::column span="3":::
-   Custom field defined to contain a pick list of Decimal values.
+   Custom field that holds a pick list of Decimal values.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -129,7 +129,7 @@ The value you specify for a field must conform to the data type for that field. 
     **picklistInteger**
    :::column-end:::
    :::column span="3":::
-   Custom field defined to contain a pick list of Integer values.
+   Custom field that holds a pick list of Integer values.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -137,7 +137,7 @@ The value you specify for a field must conform to the data type for that field. 
     **picklistString**
    :::column-end:::
    :::column span="3":::
-   Custom field defined to contain a pick list of short text string (255 characters or less) values.
+   Custom field that holds a pick list of short text values (255 characters or less).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -145,7 +145,7 @@ The value you specify for a field must conform to the data type for that field. 
     **String** or  **Text field (single line)**
    :::column-end:::
    :::column span="3":::
-   Short text string that can contain up to 255 Unicode characters. String text fields are often used to support picklists or drop-down menus.  
+   Stores short text up to 255 Unicode characters. Teams often use these fields for picklists or drop-down menus.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -153,15 +153,13 @@ The value you specify for a field must conform to the data type for that field. 
     **TreePath** 
    :::column-end:::
    :::column span="3":::
-   A branching tree structure, such as an Area Path or Iteration path. Choose an item from a list of valid values. Find work items that are equal to, not equal to, under, or not under a tree structure. You can also use the `In` or `Not In` operators to specify multiple values. Define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team.
- 
-   For more information on constructing queries, see [Query by area or iteration path](query-by-area-iteration-path.md) or [Query by date or current iteration](query-by-area-iteration-path.md).
-
+   Represents a branching tree (for example, Area Path or Iteration Path). Choose a valid node value. You can filter for equality, inequality, "Under" / "Not Under," or use the `In` / `Not In` operators to specify multiple values. Define tree structures for a project—[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)—and select the nodes to associate with teams.
+   For query examples, see [Query by area or iteration path](query-by-area-iteration-path.md) and [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 
 > [!NOTE]
-> The **picklist...** data types are only assigned to custom fields defined for an inherited process.
+> The `picklist...` types only apply to custom fields defined for an inherited process.
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
@@ -169,16 +167,14 @@ The value you specify for a field must conform to the data type for that field. 
 
 ## Query operators
 
-Use query operators in the following table to specify how each value in a clause must relate to the corresponding value in a work item. For information about the data type that is assigned to work item fields, see [Work item field reference](../work-items/guidance/work-item-field.md). 
-
-For more information, see [Define a query](using-queries.md).
+Use operators to define how a clause value must relate to a work item's field value. For field data types, see [Work item field reference](../work-items/guidance/work-item-field.md). For help building queries, see [Define a query](using-queries.md).
 
 :::row:::
    :::column span="1":::
    **Query operator**
    :::column-end:::
    :::column span="3":::
-   **Returns work items if the value in the work item matches the criteria listed**
+   **When the operator returns matching work items**
    :::column-end:::
    :::column span="3":::
    **Applicable data types**
@@ -187,386 +183,298 @@ For more information, see [Define a query](using-queries.md).
 :::row:::
    :::column span="1":::
    **=**
-
    :::column-end:::
    :::column span="3":::
-   Matches the value in the clause.
+   Matches the clause value.
    :::column-end:::
    :::column span="3":::
-   **Number**&mdash;which includes **Double**, **GUID**, **Integer**&mdash;and **String**, **DateTime**, and **TreePath**
+   Number (Double/Decimal/GUID/Integer), String, DateTime, TreePath
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **<>**
-
    :::column-end:::
    :::column span="3":::
-   Doesn't match the value in the clause.
-
+   Doesn't match the clause value.
    :::column-end:::
    :::column span="3":::
-   **Number**, **String**, **DateTime**, and **TreePath**
-
+   Number, String, DateTime, TreePath
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **>**
-
    :::column-end:::
    :::column span="3":::
-   Is larger than the value in the clause.
-
+   Is greater than the clause value.
    :::column-end:::
    :::column span="3":::
-   **Number**, **String**, and **DateTime**
-
+   Number, String, DateTime
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **<**
-
    :::column-end:::
    :::column span="3":::
-   Is less than the value in the clause.
-
+   Is less than the clause value.
    :::column-end:::
    :::column span="3":::
-   **Number**, **String**, and **DateTime**
-
+   Number, String, DateTime
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **>=**
-
    :::column-end:::
    :::column span="3":::
-   Is larger than or equal to the value in the clause.
-
+   Is greater than or equal to the clause value.
    :::column-end:::
    :::column span="3":::
-   **Number**, **String**, and **DateTime**
-
+   Number, String, DateTime
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **<=**
-
    :::column-end:::
    :::column span="3":::
-   Is less than or equal to the value in the clause.
-
+   Is less than or equal to the clause value.
    :::column-end:::
    :::column span="3":::
-   **Number**, **String**, and **DateTime**
-
+   Number, String, DateTime
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **=[Field]**
-
    :::column-end:::
    :::column span="3":::
-   Matches the value that is contained in the specified field.
-
+   Matches the value in another specified field (must be the same data type).
    :::column-end:::
    :::column span="3":::
-   Name of a field that is of the same data type as the specified field<br>
-   Checks if the Boolean field is equal to another field
-
+   Name of a field of the same data type (Boolean fields compare equality to other fields).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **<>[Field]**
-
    :::column-end:::
    :::column span="3":::
-   Doesn't match the value that is contained in the specified field.
-
+   Doesn't match the value in another specified field.
    :::column-end:::
    :::column span="3":::
-   Name of a field that is of the same data type as the specified field<br>
-   Checks if the Boolean field isn't equal to another field
-
+   Name of a field of the same data type.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **>[Field]**
-
    :::column-end:::
    :::column span="3":::
-   Is larger than the value that is contained in the specified field.
-
+   Is greater than the value in another specified field.
    :::column-end:::
    :::column span="3":::
-   Name of a field that is of the same data type as the specified field
-
+   Name of a field of the same data type.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **<[Field]**
-
    :::column-end:::
    :::column span="3":::
-   Is less than the value that is contained in the specified field.
-
+   Is less than the value in another specified field.
    :::column-end:::
    :::column span="3":::
-   Name of a field that is of the same data type as the specified field
-
+   Name of a field of the same data type.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **>=[Field]**
-
    :::column-end:::
    :::column span="3":::
-   Is larger than or equal to the value that is contained in the specified field.
-
+   Is greater than or equal to the value in another specified field.
    :::column-end:::
    :::column span="3":::
-   Name of a field that is of the same data type as the specified field
-
+   Name of a field of the same data type.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **<=[Field]**
-
    :::column-end:::
    :::column span="3":::
-   Is less than or equal to the value that is contained in the specified field.
-
+   Is less than or equal to the value in another specified field.
    :::column-end:::
    :::column span="3":::
-   Name of a field that is of the same data type as the specified field
-
+   Name of a field of the same data type.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Contains**
-
    :::column-end:::
    :::column span="3":::
-   Contains an exact or partial match of the text string within the field you selected for filtering.
-
+   Contains an exact or partial text match.
    :::column-end:::
    :::column span="3":::
-    **String** 
-
+   String
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Does Not Contain**
-
    :::column-end:::
    :::column span="3":::
-   Doesn't contain an exact or partial match of the text string within the field you selected for filtering.
-
+   Doesn't contain an exact or partial text match.
    :::column-end:::
    :::column span="3":::
-    **String** 
-
+   String
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Contains Words**
-
    :::column-end:::
    :::column span="3":::
-   Contains the exact text string or words within the field you selected for filtering. You can also enter partial words or phrases that contain the wildcard character, *. Text string is limited to 100 characters. For restrictions, see [Full-text searches](#full-text) for server and collation requirements.
-
+   Matches an exact phrase or words (supports trailing wildcard `*`). Limit: 100 characters. This operator uses full-text indexing; see the Full-text section in this article for server and collation requirements.
    :::column-end:::
    :::column span="3":::
-   Long-text fields that are indexed for full-text search, which correspond to all **PlainText** and **HTML** fields, and the **History** and **Title** fields.
-
+   Long-text fields indexed for full-text search (PlainText, HTML, History, and Title).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Does Not Contain Words**
-
    :::column-end:::
    :::column span="3":::
-   Doesn't contain the exact text string or words within the field you selected for filtering. Text string is limited to 100 characters. 
-
-   Use this operator in combination with a clause with the `Contains Words` operator to include and exclude specific keywords.
-
+   Excludes items that contain the specified phrase or words. Limit: 100 characters. Use with `Contains Words` in companion clauses to include or exclude keywords.
    :::column-end:::
    :::column span="3":::
-   Text fields that are indexed for full text search.
-
+   Text fields indexed for full-text search.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **In**
-
    :::column-end:::
    :::column span="3":::
-   Matches any value in a delimited set. For example, you can find work items whose IDs are 100, 101, and 102 if you specify those values for the ID field. Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma `,`.
-
+   Matches any value in a delimited set (use your OS regional list separator, typically a comma).
    :::column-end:::
    :::column span="3":::
-   **Number**, **String**, **DateTime**, **TreePath**
-
+   Number, String, DateTime, TreePath
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Is Empty**
-
    :::column-end:::
    :::column span="3":::
-   Lists work items that contain an empty HTML field. You don&#39;t specify a value with this operator. This operator is supported for Azure Boards and Azure DevOps Server.
-
+   Matches items where an HTML field contains no content (no value specified). Supported for Azure Boards and Azure DevOps Server.
    :::column-end:::
    :::column span="3":::
-   **HTML** 
+   HTML
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Is Not Empty**
-
    :::column-end:::
    :::column span="3":::
-   Lists work items that contain some content in the HTML field. You don&#39;t specify a value with this operator. This operator is supported for Azure Boards and Azure DevOps Server.
-
+   Matches items where an HTML field contains content. Supported for Azure Boards and Azure DevOps Server.
    :::column-end:::
    :::column span="3":::
-   **HTML** 
+   HTML
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Not In**
-
    :::column-end:::
    :::column span="3":::
-   Doesn't match any value in a delimited set. You can exclude work items whose states aren't Resolved, Completed, or Closed from query results if you specify those values for the State field. Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma `,`.
-
-   
-   > The **Not In** operator is supported for Azure Boards and Azure DevOps Server.
-
-
+   Excludes values in a delimited set (use the regional list separator). Supported for Azure Boards and Azure DevOps Server.
    :::column-end:::
    :::column span="3":::
-   **Number**, **String**, **DateTime**, **TreePath**
-
+   Number, String, DateTime, TreePath
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **In Group**
-
    :::column-end:::
    :::column span="3":::
-   Matches a value that is a member of the group in the clause. Groups correspond to the name of a team, security group, or work tracking category. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. Team groups are created when you create a team. The name of team groups follows the pattern [*Team Project Name*]&#92;*Team Name*.
-
-   For example queries, see [Query by assignment or workflow changes](query-by-workflow-changes.md).
-
+   Matches values that are members of a named group (team, security group, or category). For example, use the Contributors group or a team group named in the pattern `[Project Name]\Team Name`. See [Query by assignment or workflow changes](query-by-workflow-changes.md) for examples.
    :::column-end:::
    :::column span="3":::
-    **String** that matches the name of a team, security group, or category defined in the system.
-
+   String (matches group or team name) or Work Item Type
+   :::column-end:::
    > [!NOTE]
-   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Microsoft Entra ID when your Azure Boards account is backed by Microsoft Entra ID, or Active Directory when your on-premises server instance is backed by Active Directory.  
-
-   For information, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types).
-
+   > Use **In Group** only with String-type fields or Work Item Type. You can use Microsoft Entra ID groups when your account uses Microsoft Entra ID, or Active Directory groups for on-premises.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Not in Group**
-
    :::column-end:::
    :::column span="3":::
-   Doesn't match a value that is a member of the group in the clause.
-
+   Excludes members of a named group.
    :::column-end:::
    :::column span="3":::
-    **String**  that matches the name of a user group in Azure DevOps Server or a category group defined for a project.
-
-   > [!NOTE]
-   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Microsoft Entra ID when your Azure Boards account is backed by Microsoft Entra ID, or Active Directory when your on-premises server instance is backed by Active Directory.     
-
+   String that matches a user group or project category.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Not Under**
-
    :::column-end:::
    :::column span="3":::
-   Doesn't match the value in the clause and isn't contained under the node in the clause.
-
+   Excludes items equal to or contained under the specified tree node.
    :::column-end:::
    :::column span="3":::
-   **TreePath** 
-
+   TreePath
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Under**
-
    :::column-end:::
    :::column span="3":::
-   Matches the value in the clause or is contained under the node in the clause.
-
+   Matches items equal to or contained under the specified tree node.
    :::column-end:::
    :::column span="3":::
-    **TreePath** 
-
+   TreePath
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **Was Ever**
-
    :::column-end:::
    :::column span="3":::
-   Matches the value in the clause at any previous point.
-
+   Matches a value that a field held at any previous time.
    :::column-end:::
    :::column span="3":::
-   **String** , **DateTime**
-
+   String, DateTime
+   :::column-end:::
    > [!NOTE]
-   > **Was Ever** on date fields isn't currently supported when using the Query Editor. They're only supported when doing a direct WIQL.
-
+   > The Query Editor doesn't currently support `Was Ever` on date fields; use direct WIQL for those cases.
    :::column-end:::
 :::row-end:::
 
-
 > [!TIP] 
-> It's possible to construct a query using WIQL syntax that uses an operator, such as **Was Ever**, for other data type fields than those listed. For example, you can use **Was Ever** within a clause using the **Iteration Path**. For an example, see [Query by date or current iteration, List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
+> You can construct WIQL queries that use operators (for example, `Was Ever`) against other data types such as Iteration Path. See [List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint) for an example.
 
 <a id="variables"></a> 
 <a id="macros"></a> 
 
-## Query macros or variables
+## Query macros and variables
 
-You can use the macros described in the following table to filter your queries based on specific fields. 
+Use the following macros to filter queries dynamically.
 
 [!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
----
+--- 
 :::row:::
    :::column span="1":::
       **Macro** 
@@ -575,165 +483,160 @@ You can use the macros described in the following table to filter your queries b
       **Description**
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **[Any]** 
    :::column-end:::
    :::column span="3":::
-      Use with the **Work Item Type** or **State** fields to search across all work item types or across all states. For example, `Work Item Type=[Any]` doesn't place any filters based on the work item type.
+      Use with **Work Item Type** or **State** to search across all types or states. For example, `Work Item Type=[Any]` removes type-based filtering.
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@CurrentIteration**  
    :::column-end:::
    :::column span="3":::
-      Use with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../project/navigation/go-to-project-repo.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
-      The **@CurrentIteration** macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../organizations/notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
+      Use with **Iteration Path** to filter for work items in the current sprint based on the current team context. See [Query by date or current iteration](query-by-date-or-current-iteration.md) for examples. **@CurrentIteration** works only when run from the web portal (not in REST APIs or some copy/clone operations).
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@CurrentIteration +/- n**   
    :::column-end:::
    :::column span="3":::
-      Use with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- *n* sprints based on the [current team focus or context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/toc.json&amp;bc=/azure/devops/boards/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
-      The **@CurrentIteration +/- n** macro is supported for Azure Boards, Azure DevOps Server when run from the web portal.
+      Use with **Iteration Path** to include sprints relative to the current iteration (for example, `@CurrentIteration-1` or `@CurrentIteration+2`). Supported in the web portal for Azure Boards and Azure DevOps Server.
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@Follows**  
    :::column-end:::
    :::column span="3":::
-      Use with the **ID** field and **In** operator to list all work items that you're following in the project. For more information, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md).  
-      The **@Follows** macro is supported only when run from the web portal.
+      Use with **ID** and the `In` operator to list work items you follow in the project. See [Follow a work item or pull request](../work-items/follow-work-items.md). This macro works only from the web portal.
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@Me** 
    :::column-end:::
    :::column span="3":::
-      Use with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause `Created By=@Me`. For more examples, see [Query by assignment, workflow, or board changes](query-by-workflow-changes.md).
+      Use with identity fields to filter for items linked to your account (for example, `Created By=@Me`). See [Query by assignment, workflow, or board changes](query-by-workflow-changes.md).
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@MyRecentActivity**
    :::column-end:::
    :::column span="3":::
-      Use with the **ID** field and **In** operator to list work items you viewed or updated in the project within the last 30 days. You can view this same list from the [Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md).
+      Use with **ID** and `In` to list work items you viewed or updated in the last ~30 days. See the Work Items page **My activity** pivot for the same list.
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@Project** 
    :::column-end:::
    :::column span="3":::
-      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause `Team Project=@Project`. The system automatically defaults to filtering based on the current project. For more information, see [Define a query, Query across projects](using-queries.md#query-across-or-within-projects). 
+      Use with **Team Project** to filter for work items in the current project (for example, `Team Project=@Project`). See [Query across projects](using-queries.md#query-across-or-within-projects).
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@RecentMentions**
    :::column-end:::
    :::column span="3":::
-      Use with the **ID** field and **In** operator to list work items where you're mentioned in the Discussion section. You can view this same list from the [Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md).
+      Use with **ID** and `In` to list work items where you're mentioned in Discussions. See the Work Items page **Mentioned** pivot.
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@RecentProjectActivity**
    :::column-end:::
    :::column span="3":::
-      Use with the **ID** field and **In** operator to list work items recently updated. The number of work items listed depends on the work tracking activity of the project. For highly active projects, the macro lists work items updated in the project within the last 30 days or so. For less active projects, however, this list could include work items older than 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). The number of work items returned is capped at 5000. 
+      Use with **ID** and `In` to list recently updated work items across the project. The macro returns up to 5,000 items; the actual window depends on project activity.
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@StartOfDay**
    :::column-end:::
    :::column span="3":::
-      Use with a `DateTime` field to filter for work items that relate to the current date or with a plus/minus offset. For example, you can find all items closed in the last week with the clause `Closed Date&gt;=@StartOfDay-7`. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with DateTime fields to filter relative to today (for example, `Closed Date&gt;=@StartOfDay-7`).
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@StartOfMonth**
    :::column-end:::
    :::column span="3":::
-      Use with a `DateTime` field to filter for work items that relate to the current month or with a plus/minus offset. For example, you can find all items created in the last three months with the clause `Created Date&gt;=@StartOfMonth-3`. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with DateTime fields to filter relative to the start of the month (for example, `Created Date&gt;=@StartOfMonth-3`).
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@StartOfWeek**
    :::column-end:::
    :::column span="3":::
-      Use with a `DateTime` field to filter for work items that relate to the current week or with a plus/minus offset. For example, you can find all items changed in the last two weeks with the clause `Changed Date&gt;=@StartOfWeek-2`. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with DateTime fields to filter relative to the start of the week (for example, `Changed Date&gt;=@StartOfWeek-2`).
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@StartOfYear**
    :::column-end:::
    :::column span="3":::
-      Use with a `DateTime` field to filter for work items that relate to the current year or with a plus/minus offset. For example, you can find all features that have a Target Date scheduled within the current year with the clause `Target Date&gt;=@StartOfYear`. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with DateTime fields to filter relative to the year's start (for example, `Target Date&gt;=@StartOfYear`).
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@TeamAreas**  
    :::column-end:::
    :::column span="3":::
-      Only use with the **Area Path** field to filter for work items whose area path corresponds to one assigned to a specific team. Requires you use the **=** operator. For example, you can find all items assigned to the area paths assigned to the Web team with the clause `Area Path=@TeamAreas [Fabrikam Fiber]\Web`. For more examples, see [Query by area or iteration path](query-by-area-iteration-path.md).  
-      The **@TeamAreas** macro is supported for Azure DevOps Server only when run from the web portal.
+      Use only with **Area Path** and the `=` operator to find items assigned to a team's area paths (for example, `Area Path=@TeamAreas [Fabrikam Fiber]\Web`). Supported in the web portal for Azure DevOps Server.
    :::column-end:::
 :::row-end:::
----
+--- 
 :::row:::
    :::column span="1":::
       **@Today**
    :::column-end:::
    :::column span="3":::
-      Use with a `DateTime` field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause `Created Date&gt;=@Today-7`. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with DateTime fields to filter relative to today (for example, `Created Date&gt;=@Today-7`). See [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
----
+--- 
 
 <a id="full-text"></a> 
 
-## Full-text and partial word searches
+## Full-text and partial-word searches
 
-Specify **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. These operators filter items based on the full-text search index created for long-text fields. Specify **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, **&#42;**. These operators use the full-text search index. You can only use the wildcard character at the end of a partial word or phrase.
+Use **Contains** or **Does Not Contain** to search exact or partial matches against long-text fields (these operators use the query index). Use **Contains Words** or **Does Not Contain Words** to search exact phrases or use a trailing wildcard (`*`); these operators require the full-text index.
 
-For examples, see [Example work item queries](query-index-quick-ref.md) and [Query for work items using the History field](history-and-auditing.md).
+You can use the wildcard only at the end of a partial word or phrase. For examples, see [Example work item queries](query-index-quick-ref.md) and [Query for work items using the History field](history-and-auditing.md).
 
 > [!NOTE]    
-> Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support the cloud service, do not support full-text search. In these instances, you only see the **Contains** and **Does not Contain** operators.
+> Not all deployments support full-text search. For example, SQL Express and some cloud SQL configurations don't support full-text search. In those deployments, only the **Contains** and **Does Not Contain** operators are visible.
 
 ::: moniker range="< azure-devops"
-Azure DevOps Server automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Azure DevOps Server supports full-text search.
+Azure DevOps Server indexes long-text fields (PlainText and HTML) and the Title field for full-text search when the underlying SQL Server supports full-text indexing.
 
-Full-text searches require a SQL collation that corresponds to a language that has a word breaker registered with SQL Server. If the collation settings for the project collection database used for your Azure DevOps Server instance don't correspond to a supported language, your search results might not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
+Full-text search also requires a SQL collation with a registered word breaker for the language you use. If the collection database collation doesn't match a supported language, results might not match expectations; in those cases use **Contains** or **Does Not Contain** instead.
 
 For more information, see [Full-Text Search Queries and Collation Settings](/azure/devops/server/install/sql-server/collation-requirements).
-
 ::: moniker-end
 
 ## Related content 
@@ -741,9 +644,9 @@ For more information, see [Full-Text Search Queries and Collation Settings](/azu
 - [Use the query quick reference](query-index-quick-ref.md)
 - [Learn about managed queries](about-managed-queries.md)
 - [Access the work item field index](../work-items/guidance/work-item-field.md)
-- [Understand the syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
+- [Understand WIQL syntax](wiql-syntax.md)
 
-[!INCLUDE [temp](../includes/rest-apis-queries.md)] 
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
 
 <!---

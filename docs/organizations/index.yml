@@ -57,7 +57,9 @@ landingContent:
           - text: Add users to your organization 
             url: ./accounts/add-organization-users.md?toc=/azure/devops/organizations/toc.json 
           - text: Connect your organization to Microsoft Entra ID
-            url: ./accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/security/toc.json  
+            url: ./accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/security/toc.json
+          - text: Use security automation scripts
+            url: ./security/security-scripts.md
   - title: Add & manage projects
     linkLists:
       - linkListType: concept

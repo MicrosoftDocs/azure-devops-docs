@@ -8,7 +8,7 @@ ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2024
+ms.date: 10/14/2025
 ---
 
 # Complete post migration tasks
@@ -17,19 +17,27 @@ When migration completes, an email gets sent to the organization owner and at th
 
 :::image type="content" source="media/post-migration-stage-migration-highres.png" alt-text="Diagram of highlighted post-migration stage of the seven stages of migration.":::
 
-## Spot check 
+## Validate migrated content
 
-Immediately after the organization becomes available, take a small team and do spot checks on the organization. We recommend that this team consists of the project collection administrators. This check shouldn't be in-depth, but rather making sure that major pieces from your collection were brought over.
+Immediately after the organization becomes available, verify the migrated content and configuration to ensure all critical components successfully migrated. Your project collection administrators should lead this process and cover all major areas of your collection.
+We recommend validating the following:
 
-- **Source code:** Verify that your source code repositories migrated correctly. 
-- **Build history:** Ensure your build history made it over. 
-- **Area paths:** Confirm that all area paths are still present. 
+- **Source code**: Confirm that all repositories migrated correctly and are accessible.
+- **Build history**: Verify that the complete build history is intact and matches expectations.
+- **Area paths**: Ensure all area paths are present and correctly structured.
+- **Work items**: Review a representative sample of work items to confirm data integrity and relationships.
+- **Permissions & security**: Validate that user permissions, groups, and access controls are correctly configured. Depending on how users are set up in your Azure DevOps Server, they might not appear in the Users hub of your new organization until after they sign in for the first time. If any users are missing post-migration, have them sign in and then recheck their status.
+- **Service connections & pipelines**: Check that service connections and pipeline configurations are functional.
+- **Dashboards & widgets**: Confirm that dashboards render correctly and widgets display expected data.
 
-These quick checks help you catch any missing or incomplete data before opening the organization to your entire user base. 
+This validation helps identify any missing, incomplete, or misconfigured data before opening the organization to your broader user base, ensuring a smooth transition and minimizing disruption.
+
+> [!IMPORTANT]
+> Don't remove or destroy your on-premises data or decommission systems until you confirm that all expected data and functionality exist in the migrated organization.
 
 ## Rename organization (optional) 
 
-In the [Get started phase](migration-get-started.md), you might have already created organizations with the final Azure DevOps Services organization names that you want to use. If this is your final migration, you can rename your newly migrated Azure DevOps Services organization to that desired name. For more information, see [Rename your organization](../organizations/accounts/rename-organization.md). 
+If you created a placeholder organization with your desired name during the [Get started phase](migration-get-started.md), you can now rename your migrated organization to replace it. This step is only necessary if this is your final migration and you want to use a specific organization name. For more information, see [Rename your organization](../organizations/accounts/rename-organization.md). 
 
 ## Set up billing 
 
@@ -69,11 +77,9 @@ Your organization includes five free users with [Basic](https://visualstudio.mic
 
 After your builds are running and license subscription is configured, we recommend that you open the organization to all users for validation. Then individual users can ensure that all the content is in place, has the right access level, and they can pull code.  
 
-Users of TFVC with local workspaces must remap their workspaces against the new organization, and Git users must reconfigure their remotes to pull code.  
+Users of TFVC with local workspaces must remap their workspaces against the new organization, and Git users must reconfigure their remotes to pull code.
 
-If anything is missing from the migrated organization, [contact Support](https://visualstudio.microsoft.com/support/).  
-
-## Next steps 
+## Next step  
 
 > [!div class="nextstepaction"]
 > [Get Azure DevOps Services extensions (optional)](https://marketplace.visualstudio.com/azuredevops?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide)

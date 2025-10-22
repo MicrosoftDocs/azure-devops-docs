@@ -1,24 +1,20 @@
 ### YamlMime:Landing
 
 title: Azure Boards documentation
-summary: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Scrum, Kanban, and Agile tools. 
+summary: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, and other work with customizable Scrum, Kanban, and Agile tools.
 
 metadata:
   title: Azure Boards documentation
-  description: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Kanban, Scrum, and Agile tools. 
+  description: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, and other work with customizable Kanban, Scrum, and Agile tools.
   ms.service: azure-devops-boards
-  ms.topic: landing-page 
-  author: chcomley 
-  ms.author: chcomley 
-  ms.date: 04/24/2024 
-
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  ms.topic: landing-page
+  author: chcomley
+  ms.author: chcomley
+  ms.date: 09/29/2025
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: About Azure Boards
+  # Card 1 - Start here (onboarding)
+  - title: Get started with Azure Boards
     linkLists:
       - linkListType: overview
         links:
@@ -26,30 +22,38 @@ landingContent:
             url: ./get-started/what-is-azure-boards.md
           - text: About work items
             url: ./work-items/about-work-items.md
-      - linkListType: concept
-        links:
-          - text: About default processes
-            url: ./work-items/guidance/choose-process.md
-          - text: Agile process workflow
-            url: ./work-items/guidance/agile-process-workflow.md
-          - text: Best practices for Agile project management
-            url: best-practices-agile-project-management.md
-  - title: Get started
-    linkLists:
       - linkListType: quickstart
         links:
-          - text: Sign up for Azure Boards
+          - text: Sign up and invite teammates
             url: ./get-started/sign-up-invite-teammates.md
-          - text: Plan & track work
+          - text: 'Quick start: Plan & track work'
             url: ./get-started/plan-track-work.md
           - text: Get started as a Stakeholder
             url: ../organizations/security/get-started-stakeholder.md
-  - title: Plan your project
+
+  # Card 2 - Choose methodology
+  - title: Choose a methodology (Kanban vs Scrum)
     linkLists:
-      - linkListType: overview
+      - linkListType: tutorial
         links:
-          - text: About Backlogs & Agile project management
-            url: ./backlogs/backlogs-overview.md
+          - text: Implement Kanban boards
+            url: ./boards/kanban-quickstart.md
+          - text: Kanban board overview
+            url: ./boards/kanban-overview.md
+          - text: About Sprints & Scrum
+            url: ./sprints/scrum-overview.md
+          - text: Assign work to sprints
+            url: ./sprints/assign-work-sprint.md
+      - linkListType: how-to-guide
+        links:
+          - text: Add board columns
+            url: ./boards/add-columns.md
+          - text: Set sprint capacity
+            url: ./sprints/set-capacity.md
+
+  # Card 3 - Plan & organize your work
+  - title: Plan and organize your work
+    linkLists:
       - linkListType: quickstart
         links:
           - text: Create your backlog
@@ -60,91 +64,85 @@ landingContent:
             url: ./backlogs/organize-backlog.md
       - linkListType: tutorial
         links:
-          - text: Bulk add or modify work items (Excel)
-            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
-          - text: Bulk add or modify work items (Web)
-            url: ./backlogs/bulk-modify-work-items.md
-  - title: Implement Kanban
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Board quickstart
-            url: ./boards/kanban-quickstart.md
-      - linkListType: tutorial
-        links:
-          - text: Board overview
-            url: ./boards/kanban-overview.md
-          - text: Add columns
-            url: ./boards/add-columns.md
-          - text: Customize your board
-            url: ./configure-customize.md
-  - title: Implement Scrum
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: About Sprints & Scrum 
-            url: ./sprints/scrum-overview.md
-      - linkListType: tutorial
-        links:
-          - text: Assign work to sprints
-            url: ./sprints/assign-work-sprint.md
-          - text: Set capacity
-            url: ./sprints/set-capacity.md
-          - text: Monitor sprint burndown
-            url: ../report/dashboards/configure-sprint-burndown.md
-  - title: List & manage work items
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Create managed queries
-            url: ./queries/using-queries.md
-          - text: Do ad hoc searches
-            url: ./queries/search-box-queries.md
-          - text: Define, triage, & manage bugs
-            url: ./backlogs/manage-bugs.md
-          - text: Remove, delete, or restore work items  
-            url: ./backlogs/remove-delete-work-items.md
-  - title: Collaborate 
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Connect Azure Boards to GitHub
-            url: ./github/connect-to-github.md
-          - text: Link GitHub commits, pull requests, & branches to work items
-            url: ./github/link-to-from-github.md
-      - linkListType: concept
-        links:
-          - text: Link work items to objects
-            url: ./backlogs/add-link.md
-      - linkListType: tutorial
-        links:
           - text: Use work item templates
             url: ./backlogs/work-item-template.md
           - text: Add tags to work items
             url: ./queries/add-tags-to-work-items.md
-          - text: Azure Boards with Microsoft Teams
-            url: ./integrations/boards-teams.md
-  - title: Configure & customize
+
+  # Card 4 - Daily operations: track & manage
+  - title: Track and manage work items
     linkLists:
-      - linkListType: concept
-        links:
-          - text: About teams & Agile tools
-            url: ../organizations/settings/about-teams-and-settings.md
-          - text: Configure & customize Boards 
-            url: configure-customize.md
       - linkListType: tutorial
         links:
-          - text: Set area paths
-            url: ../organizations/settings/set-area-paths.md
-          - text: Set iteration (sprint) paths
-            url: ../organizations/settings/set-iteration-paths-sprints.md
+          - text: Create and use queries
+            url: ./queries/using-queries.md
+          - text: Search for work items
+            url: ./queries/search-box-queries.md
+          - text: Define, triage, & manage bugs
+            url: ./backlogs/manage-bugs.md
+          - text: Remove, delete, or restore work items
+            url: ./backlogs/remove-delete-work-items.md
+      - linkListType: how-to-guide
+        links:
+          - text: Bulk modify work items (Web)
+            url: ./backlogs/bulk-modify-work-items.md
+          - text: Bulk modify work items (Excel)
+            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
+
+  # Card 5 - Monitor progress & report
+  - title: Monitor progress and performance
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Monitor sprint burndown
+            url: ../report/dashboards/configure-sprint-burndown.md
+          - text: Link work items to objects
+            url: ./backlogs/add-link.md
+      - linkListType: reference
+        links:
+          - text: Work items quick reference
+            url: ./work-items/quick-ref.md
+          - text: Query quick reference
+            url: ./queries/query-index-quick-ref.md
+
+  # Card 6 - Secure and govern
+  - title: Secure and govern your projects
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Secure your Azure Boards
+            url: ./secure-your-azure-boards.md
+          - text: Default permissions and access
+            url: ./get-started/permissions-access-boards.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set work-tracking permissions
+            url: ../organizations/security/set-permissions-access-work-tracking.md
+          - text: Add external users
+            url: ../organizations/accounts/add-external-user.md
+          - text: Manage conditional access
+            url: ../organizations/accounts/change-application-access-policies.md
+
+  # Card 7 - Customize & extend
+  - title: Customize and extend Azure Boards
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Customize cards
+            url: ./boards/customize-cards.md
+          - text: Manage columns
+            url: ./backlogs/set-column-options.md
+          - text: Expedite work with swimlanes
+            url: ./boards/expedite-work.md
+      - linkListType: concept
+        links:
+          - text: Configure & customize Boards
+            url: ./configure-customize.md
           - text: Add a custom field
             url: ../organizations/settings/work/add-custom-field.md
-          - text: Customize the workflow
-            url: ../organizations/settings/work/customize-process-workflow.md
-          - text: See more...
-            url: ../reference/index.yml
-  - title: Agile at scale
+
+  # Card 8 - Scale for enterprise
+  - title: Scale for larger organizations
     linkLists:
       - linkListType: tutorial
         links:
@@ -154,29 +152,41 @@ landingContent:
             url: ./plans/review-team-plans.md
           - text: Implement Scaled Agile Framework®
             url: ./plans/scaled-agile-framework.md
-  - title: Troubleshoot
+      - linkListType: concept
+        links:
+          - text: About teams & Agile tools
+            url: ../organizations/settings/about-teams-and-settings.md
+
+  # Card 9 - Collaborate & integrate
+  - title: Integrate with developer tools and chat
     linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Connect Azure Boards to GitHub
+            url: ./github/connect-to-github.md
+          - text: Link GitHub commits & pull requests
+            url: ./github/link-to-from-github.md
+      - linkListType: tutorial
+        links:
+          - text: Azure Boards with Microsoft Teams
+            url: ./integrations/boards-teams.md
+          - text: Azure Boards with Slack
+            url: ./integrations/boards-slack.md
+
+  # Card 10 - Reference & troubleshooting
+  - title: Reference and troubleshooting
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Work item field index
+            url: ./work-items/guidance/work-item-field.md
+          - text: Azure DevOps CLI (Boards)
+            url: /cli/azure/boards
+          - text: REST API (Boards)
+            url: /rest/api/azure/devops/work
       - linkListType: how-to-guide
         links:
           - text: Fix reordering & nesting issues
             url: ./backlogs/resolve-backlog-reorder-issues.md
-          - text: FAQs 
+          - text: FAQs
             url: faqs.yml
-  - title: Quick reference
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Work items quick reference
-            url: ./work-items/quick-ref.md
-          - text: Query quick reference
-            url: ./queries/query-index-quick-ref.md
-          - text: Work item field index
-            url: ./work-items/guidance/work-item-field.md
-  - title: Developer resources
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Azure DevOps CLI
-            url: /cli/azure/boards
-          - text: REST API
-            url: /rest/api/azure/devops/work

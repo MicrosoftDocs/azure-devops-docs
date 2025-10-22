@@ -2,7 +2,7 @@
 title: Azure DevOps Release Notes - Azure Boards Sprint 216 Update
 description: See the Sprint 216 feature updates for Azure Boards, including next steps.
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 2/7/2023
 ---
 
