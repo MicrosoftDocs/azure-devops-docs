@@ -37,7 +37,7 @@ If you're using ExpressRoute, you need to allow writes by temporarily dropping o
 > [!IMPORTANT]
 > The Managed DevOps pool and virtual network must be in the same region. Otherwise, you get an error similar to the following when you try to create the pool or update the network configuration: "Virtual network MDPVN is in region eastus, but pool mdpnonprodsub is in region australiaeast. These must be in the same region."
 
-### Grant Reader and Network Contributor access to the DevOpsInfrastructure service principal
+### <a name = "grant-reader-and-network-contributor-access-to-devopsinfrastructure-service-principal"></a> Grant Reader and Network Contributor access to the DevOpsInfrastructure service principal
 
 Ensure the `DevOpsInfrastructure` principal has `Reader` and `Network Contributor` access on the virtual network.
 
@@ -165,7 +165,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 >
 > For more information, see [Things to consider before you apply locks to your Azure resources](/azure/azure-resource-manager/management/lock-resources#considerations-before-applying-your-locks).
 
-## Restrict outbound connectivity
+## <a name = "restricting-outbound-connectivity"></a> Restrict outbound connectivity
 
 If you have systems in place on your network (network security group, firewalls, etc.) that restrict outbound connectivity, you need to allowlist certain endpoints to fully support Managed DevOps pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints that are required for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
 

@@ -23,7 +23,7 @@ Be default, Managed DevOps Pools are configured for a single organization. Acces
 >
 > To see the permissions required to configure Managed DevOps Pools in your organization and projects, see [Prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions).
 
-### Use a pool with a single organization
+### <a name = "use-pool-with-a-single-organization"></a> Use a pool with a single organization
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -146,7 +146,7 @@ The `organizationProfile` section has the following properties.
 
 * * *
 
-### Use a pool in multiple organizations
+### <a name = "use-pool-in-multiple-organizations"></a> Use a pool in multiple organizations
 
 #### [Azure portal](#tab/azure-portal/)
 

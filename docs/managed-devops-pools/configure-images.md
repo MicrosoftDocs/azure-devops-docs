@@ -13,7 +13,7 @@ Managed DevOps Pools provides you with several options for virtual machine (VM) 
 
 You can configure a Managed DevOps pool with a single image or multiple images. When your pool has multiple images, your pipelines specify the image they want to run on by using [aliases](#use-multiple-images-per-pool-with-aliases).
 
-## Select your pool's image
+### <a name = "choose-your-pools-image"></a> Select your pool's image
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -321,7 +321,7 @@ Each image includes the following installed software:
 > [!IMPORTANT]
 > [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
 
-## Selected Azure Marketplace images
+## <a name = "selected-marketplace-images"></a> Selected Azure Marketplace images
 
 Managed DevOps Pools provides a curated set of Microsoft-published Azure Marketplace VM images to use in your pools.
 
