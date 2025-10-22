@@ -36,11 +36,9 @@ To enable consuming external versions for a specific package, follow these steps
 
 1. Select your package, select the ellipsis button for more options, then select **Allow externally-sourced versions**.
 
-    :::image type="content" source="media\allow-external-versions.png" alt-text="A screenshot displaying how to allow externally sourced versions from your feed user interface.":::
-
 1. Toggle **Allow External Versions** to enable the feature, then select **Close** when you're done.
 
-    :::image type="content" source="media\enable-external-versions.png" alt-text="A screenshot displaying how to enable external versions for a specific package in Azure Artifacts.":::
+    :::image type="content" source="media\allow-externally-sourced-versions.png" alt-text="A screenshot displaying how to enable external versions for a specific package in Azure Artifacts.":::
 
 ## Applicable scenarios
 
