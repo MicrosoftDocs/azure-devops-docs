@@ -4,6 +4,8 @@ titleSuffix: Azure DevOps
 description: Use PowerShell scripts to audit security across your Azure DevOps organization and automate common security administration tasks.
 ms.topic: how-to
 ms.subservice: azure-devops-security
+ai-usage: ai-generated
+ms.update-cycle: 180-days
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
