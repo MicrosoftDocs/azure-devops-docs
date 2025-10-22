@@ -3,7 +3,7 @@ title: Safeguard against malicious public packages
 description: Learn how to control access to public registries and protect your environment from malicious public packages.
 ms.service: azure-devops-artifacts
 ms.topic: overview
-ms.date: 08/22/2023
+ms.date: 10/21/2025
 ms.author: rabououn
 author: ramiMSFT
 monikerRange: 'azure-devops'
@@ -13,24 +13,43 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-With Azure Artifacts upstream sources, developers gain the convenience of using a unified feed to both publish and consume packages from Artifact feeds and popular public registries like NuGet.org or npmjs.com.
+Azure Artifacts upstream sources enable developers to centralize package management by using a single feed to store both published packages and those consumed from public registries such as NuGet.org.
+
+Upstream sources offer several advantages for managing dependencies, including simplicity, reliability, and package integrity. See [What are upstream sources?]() for more details.
 
 ## Allow externally sourced versions
 
 This feature enables developers to control whether they want to consume package versions from public registries such as NuGet.org or npmjs.com. 
 
-Once the **Allow External Versions** toggle is enabled for a specific package, versions from the public registry become available for download. By default, this option is disabled, adding an extra layer of security by preventing exposure to potentially malicious packages from public registries. You must be a **Feed Owner** to enable the *allow externally sourced versions* feature.
+Once the **Allow External Versions** toggle is enabled for a specific package, versions from the public registry become available to be saved to the feed. By default, this option is disabled, adding an extra layer of security by reducing exposure to potentially malicious packages from public registries. Changing this setting does not affect package versions already saved to the feed. Those versions remain accessible regardless of this setting. You must be a *Feed Owner* to enable the *allow externally sourced versions* feature.
+
+## Allow external versions for a package
+
+To enable consuming external versions for a specific package, follow these steps:
 
 > [!NOTE]
-> Changing this setting does not affect package versions already saved to the feed. Those versions will remain accessible regardless of this setting.
+> You must be a **Feed Owner** to allow externally sourced versions.
+
+1. Sign in to Azure DevOps, then navigate to your project.
+
+1. Select **Artifacts**, then select your feed from the dropdown menu.
+
+1. Select your package, select the ellipsis button for more options, then select **Allow externally-sourced versions**.
+
+    :::image type="content" source="media\allow-external-versions.png" alt-text="A screenshot displaying how to allow externally sourced versions from your feed user interface.":::
+
+1. Toggle **Allow External Versions** to enable the feature, then select **Close** when you're done.
+
+    :::image type="content" source="media\enable-external-versions.png" alt-text="A screenshot displaying how to enable external versions for a specific package in Azure Artifacts.":::
 
 ## Applicable scenarios
 
-The following section outlines common scenarios where external versions (packages from public registries) are either blocked or allowed from being saved to the feed. In the rest of this article, we refer to packages from public registries as public packages and packages in an Azure Artifacts feed as private packages.
+The following section outlines common scenarios where external versions (packages from public registries) are either blocked or allowed from being saved to the feed. In the rest of this article, we refer to packages from public registries as *public packages* and packages stored in an Azure Artifacts feed as *private packages*.
 
 ### Scenario 1: public versions are blocked
 
 * [Private package version made public](#private-package-version-made-public)
+
 * [Having both private and public packages](#having-both-private-and-public-packages)
 
 #### Private package version made public
@@ -68,23 +87,6 @@ In this scenario, if the team exclusively consumes public packages, whether from
 In this situation, when a public package is converted to a private package, the external versions setting doesn't affect the team's workflow in any way.
 
 :::image type="content" source="media\public-to-internal.svg" alt-text="An illustration showing a package converted from public to private.":::
-
-## Allow external versions
-
-> [!NOTE]
-> You must be a **Feed Owner** to allow externally sourced versions. For more information, see [Feed permissions](../feeds/feed-permissions.md).
-
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
-
-1. Select your package, and then select the ellipsis button for more options. Select **Allow externally-sourced versions**.
-
-    :::image type="content" source="media\allow-external-versions.png" alt-text="A screenshot showing how to allow externally sourced versions.":::
-
-1. Select the toggle button to allow external versions. Select **Close** when you're done.
-
-    :::image type="content" source="media\enable-external-versions.png" alt-text="A screenshot showing how to enable external versions.":::
 
 ## Allow external versions using the REST API
 
