@@ -1,7 +1,7 @@
 ---
 title: Use team delivery plans
 titleSuffix: Azure Boards
-description: Learn how to plan, review, and use delivery plans in Azure Boards to track multiple team deliverables, rollups, and dependencies.
+description: Learn how to review and use delivery plans in Azure Boards to track and interact with multiple team deliverables, schedules, and dependencies.
 ms.service: azure-devops-boards
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.author: chcomley
@@ -11,6 +11,7 @@ ms.custom: cross-project
 ai-usage: ai-assisted
 monikerRange: '>= azure-devops-2022'
 ms.date: 10/22/2025
+#customer intent: As a product and portfolio owner, I want to understand delivery plans so I can use them to interact with multiple deliverables and schedules and review them with my teams.
 ---
 
 # Use team delivery plans in Azure Boards
@@ -38,22 +39,22 @@ Delivery Plans supports the following tasks:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Configuration** | An existing delivery plan that conforms to the following requirements:<br>Plan views are limited to a maximum of 20 teams or backlogs. <br>- Work items belong to the team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work item types selected for viewing on a team's backlog appear on the plan. Eliminate cross-team ownership of area paths to avoid undesirable edge cases.<br>- [Team product or portfolio backlog is enabled](../../organizations/settings/select-backlog-navigation-levels.md).<br> - [Sprints or iterations are selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.<br>- [Iteration paths](../sprints/assign-work-sprint.md) are assigned to each work item, and [start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) are defined for each iteration.<br>- For dependency icons and lines to show, [work items are linked](../backlogs/add-link.md) via the **Predecessor**, **Successor**, or other custom dependency link type. Remote link types aren't supported. You can add custom link types only for on-premises environments. |
+| **Configuration** | An existing delivery plan that conforms to the following requirements:<br>- Plan views are limited to a maximum of 20 teams or backlogs. <br>- Work items belong to the team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work item types selected for viewing on a team's backlog appear on the plan. Eliminate cross-team ownership of area paths to avoid undesirable edge cases.<br>- [Team product or portfolio backlog is enabled](../../organizations/settings/select-backlog-navigation-levels.md).<br> - [Sprints or iterations are selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.<br>- [Iteration paths](../sprints/assign-work-sprint.md) are assigned to each work item, and [start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) are defined for each iteration.<br>- For dependency icons and lines to show, [work items are linked](../backlogs/add-link.md) via the **Predecessor**, **Successor**, or other custom dependency link type. Remote link types aren't supported. You can add custom link types only for on-premises environments. |
 | **Access levels** | To view a delivery plan: Member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. |
-| **Permissions** | To open or modify a work item or add work items to a plan: **Edit work items in this node** permission set to **Allow** for the area paths assigned to the work item. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path). |
+| **Permissions** | To open or modify a work item, or add work items to a plan: **Edit work items in this node** permission set to **Allow** for the area paths assigned to the work item. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path). |
 
 To create a delivery plan, see [Add or edit a delivery plan](add-edit-delivery-plan.md).
 
 > [!NOTE]   
-> This article describes how to add or edit Delivery Plans 2.0, which is available for Azure DevOps Services and Azure DevOps Server 2022 and later versions. For information on the Delivery Plans Marketplace extension which supports Azure DevOps Server 2020 and earlier versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md).
+> Delivery Plans is now part of the Azure Boards core product and is supported in Azure DevOps Server 2022 and later versions. For Azure DevOps Server 2020 and earlier, the [Delivery Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans) extension is available in the Visual Studio Marketplace.
 > 
-> Any plan that you created with the original Delivery Plans extension works with the Delivery Plans feature. You don't have to migrate any data or reconfigure plan settings. For more information, see [Add or edit a delivery plan](add-edit-delivery-plan.md). 
+> Any plan you created with the original Delivery Plans extension works with the Delivery Plans feature. You don't have to migrate any data or reconfigure plan settings. For more information, see [Add or edit a delivery plan](add-edit-delivery-plan.md).
 
 ## View a plan
 
 Delivery plans for your project appear on the **Boards** > **Delivery Plans** page, showing the title, description, and creator. To open an existing plan, select the plan from the list.
 
-You can search for plans by keyword and sort by the **Name**, **Created By**, **Description**, **Last configured**, **Last accessed**, or **Favorites** columns. Use the **Favorite** icon to favorite a plan for quick access.
+You can search for plans by keyword and sort by the **Name**, **Created By**, **Description**, **Last configured**, **Last accessed**, or **Favorites** columns.
 
 :::image type="content" source="media/plans/open-plans.png" alt-text="Screenshot of the Delivery Plans area in Azure Boards.":::
 
@@ -62,6 +63,10 @@ You can search for plans by keyword and sort by the **Name**, **Created By**, **
 During large software development projects, multiple autonomous teams manage their own backlog and priorities to contribute to a unified direction for the project. For a discussion of autonomous teams and organizational alignment, see [Agile culture](agile-culture.md). 
 
 Delivery plans provide a necessary multiple-team view of your project. By seeing the work that many teams plan for the next few sprints, you can identify dependencies and verify appropriate priorities.
+
+The delivery plan drives alignment while letting each team remain autonomous. Individual teams can work to different sprint cadences if necessary, and can manage different work item types like stories, features, or epics. All work is visible in the same plan view.
+
+Teams can even be part of different projects if they use different processes. You can customize card fields to see only the data fields that interest you and that apply to each work item type.
 
 You can use delivery plans internally to share the schedule of features. Regular reviews of the project scope and schedule help ensure that teams are working toward common goals.
 
@@ -76,10 +81,6 @@ The review can address questions like:
 - Teams' confidence about meeting scheduled sprint deliverables.
 - How well the planning of deliverables addresses dependencies across teams.
 - Whether there are gaps with no deliverables in the schedule, and how to mitigate them.
-
-The delivery plan drives alignment while letting each team remain autonomous. Individual teams can work to different sprint cadences if necessary, and can manage different work item types like stories, features, or epics. All work is visible in the same plan view.
-
-Teams can even be part of different projects if they use different processes. You can customize card fields to see only the data fields that interest you and that apply to each work item type.
 
 ## Use the plan
 
@@ -122,9 +123,9 @@ Each team's backlog specified in the delivery plan appears as a row in the plan 
 
 ## Specify iterations or target dates
 
-Plan views display the months corresponding to the iteration paths for the team backlogs in the plan. Use a consistent sprint schedule across your project teams and organization if possible.
+Plan views display the months corresponding to the iteration paths for the team backlogs in the plan. Use a consistent sprint schedule across your project teams and organization if possible. A delivery plan can accommodate various sprint schedules, but they add to visual clutter.
 
-A delivery plan can accommodate various sprint schedules, but they add to visual clutter. Use the same sprints for backlogs, Features, and Epics. Avoid creating specific sprints for Epics or other portfolio backlogs.
+Use the same sprints for backlogs, Features, and Epics. Avoid creating specific sprints for Epics or other portfolio backlogs.
 
 Work items can use **Start Date** and **Iteration** or **Start Date** and **Target Date** to specify time frame. Don't use both **Iteration** and **Target Date**. **Target Date** always overrides the **Iteration** end date on the plan.
 
@@ -138,11 +139,11 @@ Keep your work items up to date. If the schedule changes, update the target date
 
 ## See multiple teams and iterations
 
-One benefit of Delivery Plans is the ability to view multiple teams and iterations across projects. There are several ways to maximize the teams, work items, and iterations included in the plan view.
+One benefit of Delivery Plans is the ability to view multiple teams and iterations across projects. There are several ways to maximize the teams, work items, and iterations shown in the plan view.
 
 - Collapse all teams or certain teams.
 - Collapse work item cards to view only titles, or reduce the number of fields displayed on cards.
-- Zoom out to view more iterations or show work that spans more than one iteration.
+- Zoom out to view more iterations or to show work that spans more than one iteration.
 
 ### Collapse teams for summary information
 
@@ -150,7 +151,7 @@ To focus on a summary view of scheduled work, collapse all teams by selecting th
 
 ### Collapse cards to view titles only
 
-Use the **Expand or collapse cards** icon to toggle between showing only titles in cards or displaying all fields configured for the plan.
+Use the **Expand or collapse cards** icon to toggle between showing only titles in cards or displaying all the fields configured for the plan.
 
 :::image type="content" source="media/plans/collapse-card-fields.png" alt-text="Screenshot that shows the location of feature icons for collapsing and expanding card fields.":::
 
@@ -162,13 +163,13 @@ Using the **Zoom out** button lets you see more iterations and teams in the view
 
 A rollup provides a comprehensive view of child work item progress on a parent card in your delivery plan. Rollup views are available for Feature, Epic, or portfolio backlogs you add to your project.
 
-To display rollups, select **Settings** > **Fields**, and then select **Show child rollup data**. Rollups aren't supported for child work items that belong to a different project than the originating parent work item.
+To display rollups, select **Settings** > **Fields**, and then select **Show child rollup data**. Rollups aren't supported for child work items that belong to different projects than the originating parent work item.
 
 The following example shows a progress rollup of child Features, Stories, and Bugs for a team.
 
 :::image type="content" source="media/plans/rollup-view.png" alt-text="Screenshot that shows a rollup view of four scenarios."::: 
 
-You can also view rollups from a backlog view. For more information, see [Display rollup progress or totals](../backlogs/display-rollup.md).
+You can also view rollups from the backlog view. For more information, see [Display rollup progress or totals](../backlogs/display-rollup.md).
 
 ## Print a delivery plan 
 
