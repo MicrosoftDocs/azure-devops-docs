@@ -486,7 +486,7 @@ As part of the Managed DevOps Pool creation process, an agent pool is created at
 * **Inherit permissions from project**: This setting adds the user who created the Managed DevOps Pool as an administrator of the Azure DevOps agent pool, and sets **Inheritance** to **On** in the agent pool security settings.
 * **Specific accounts**: You can use this setting to specify the accounts that you want to add as administrators of the agent pool in Azure DevOps. By default, the pool creator is included.
 
-You can configure the **Pool administration permissions** setting on the **Security** tab when you create the pool. It's not displayed in the **Security** settings after the pool is created. To view and manage the Azure DevOps agent pool permissions after you create the pool, see [Create and manage agent pools - Security of agent pools](/azure/devops/pipelines/agents/pools-queues#security).
+You can configure the **Pool administration permissions** setting on the **Security** tab when you create the pool. It isn't displayed in the **Security** settings after the pool is created. To view and manage the Azure DevOps agent pool permissions after you create the pool, see [Create and manage agent pools - Security of agent pools](/azure/devops/pipelines/agents/pools-queues#security).
 
 #### [ARM template](#tab/arm/)
 

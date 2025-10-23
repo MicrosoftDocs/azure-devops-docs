@@ -171,7 +171,7 @@ If you have systems in place on your network (network security group, firewalls,
 
 ### Endpoints you need to start up Managed DevOps Pools
 
-If you don't allowlist these endpoints, machines fail to come online as part of the Managed DevOps Pools service and you can't run pipelines on the pool:
+If you don't allowlist these endpoints, machines fail to come online as part of the Managed DevOps Pools service, and you can't run pipelines on the pool:
 
 - `*.prod.manageddevops.microsoft.com`: Managed DevOps Pools endpoint used to communicate with the Managed DevOps Pools service.
 - `rmprodbuilds.azureedge.net`: Used to download the Managed DevOps Pools worker binaries and startup scripts. (The agent portion of the worker binaries is downloaded from `rm-agent.prod.manageddevops.microsoft.com` (formerly downloaded from `agent.prod.manageddevops.microsoft.com`) which is covered by the previous required `*.prod.manageddevops.microsoft.com` entry.)
