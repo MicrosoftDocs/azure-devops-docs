@@ -22,7 +22,7 @@ Delivery plans in Azure Boards let you visualize and review the work items that 
 
 You can use Delivery Plans to review multiple backlogs and teams across your Azure DevOps organization. The delivery plan drives alignment with organizational goals while letting each team remain autonomous.
 
-You can interact directly with delivery plans by changing the schedule, adding and editing work items, expanding or collapsing cards and teams, and changing views.
+You can interact directly with delivery plans by changing the schedule, adding and editing work items, and customizing views.
 
 Delivery Plans supports the following tasks:
 
@@ -39,7 +39,7 @@ Delivery Plans supports the following tasks:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Configuration** | An existing delivery plan that conforms to the following requirements:<br>- Plan views are limited to a maximum of 20 teams or backlogs. <br>- Work items belong to the team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work item types selected for viewing on a team's backlog appear on the plan. Eliminate cross-team ownership of area paths to avoid undesirable edge cases.<br>- [Team product or portfolio backlog is enabled](../../organizations/settings/select-backlog-navigation-levels.md).<br> - [Sprints or iterations are selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.<br>- [Iteration paths](../sprints/assign-work-sprint.md) are assigned to each work item, and [start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) are defined for each iteration.<br>- For dependency icons and lines to show, [work items are linked](../backlogs/add-link.md) via the **Predecessor**, **Successor**, or other custom dependency link type. Remote link types aren't supported. You can add custom link types only for on-premises environments. |
+| **Configuration** | An [existing delivery plan](add-edit-delivery-plan.md) that conforms to the following requirements:<br>- Plan views are limited to a maximum of 20 teams or backlogs. <br>- Work items belong to the team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work item types selected for viewing on a team's backlog appear on the plan. Eliminate cross-team ownership of area paths to avoid undesirable edge cases.<br>- [Team product or portfolio backlog is enabled](../../organizations/settings/select-backlog-navigation-levels.md).<br> - [Sprints or iterations are selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.<br>- [Iteration paths](../sprints/assign-work-sprint.md) are assigned to each work item, and [start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) are defined for each iteration.<br>- For dependency icons and lines to show, [work items are linked](../backlogs/add-link.md) via the **Predecessor**, **Successor**, or other custom dependency link type. [Remote link types](../queries/link-type-reference.md#remote-work-link-type) aren't supported, and you can use custom link types only in on-premises environments. |
 | **Access levels** | To view a delivery plan: Member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. |
 | **Permissions** | To open or modify a work item, or add work items to a plan: **Edit work items in this node** permission set to **Allow** for the area paths assigned to the work item. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path). |
 
@@ -50,7 +50,7 @@ To create a delivery plan, see [Add or edit a delivery plan](add-edit-delivery-p
 > 
 > Any plan you created with the original Delivery Plans extension works with the Delivery Plans feature. You don't have to migrate any data or reconfigure plan settings. For more information, see [Add or edit a delivery plan](add-edit-delivery-plan.md).
 
-## View a plan
+## View a delivery plan
 
 Delivery plans for your project appear on the **Boards** > **Delivery Plans** page, showing the title, description, and creator. To open an existing plan, select the plan from the list.
 
