@@ -18,7 +18,7 @@ ms.date: 10/22/2025
 
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
-Delivery Plans in Azure Boards let you visualize and review the work items that your teams plan to deliver. A delivery plan shows selected teams' scheduled work items by sprint or iteration path in a calendar view.
+Delivery Plans in Azure Boards lets you visualize and review the work items that your teams plan to deliver. A delivery plan shows selected teams' scheduled work items by sprint or iteration path in a calendar view.
 
 You can use Delivery Plans to review multiple backlogs and teams across your Azure DevOps organization. The delivery plan drives alignment with organizational goals while letting each team remain autonomous.
 
@@ -62,13 +62,11 @@ You can search for plans by keyword and sort by the **Name**, **Created By**, **
 
 During large software development projects, multiple autonomous teams manage their own backlog and priorities to contribute to a unified direction for the project. For a discussion of autonomous teams and organizational alignment, see [Agile culture](agile-culture.md). 
 
-Delivery plans provide a necessary multiple-team view of your project. By seeing the work that many teams plan for the next few sprints, you can identify dependencies and verify appropriate priorities.
+The delivery plan drives alignment while letting each team remain autonomous. Individual teams can work to different sprint cadences if necessary, and can manage different work item types like Stories, Features, or Epics. All work is visible in the same plan view. Teams can even be part of different projects if they use different processes.
 
-The delivery plan drives alignment while letting each team remain autonomous. Individual teams can work to different sprint cadences if necessary, and can manage different work item types like stories, features, or epics. All work is visible in the same plan view.
+Delivery plans provide a necessary multiple-team view of your project. By seeing the work that many teams plan for the next few sprints, you can identify dependencies and verify appropriate priorities. You can customize card fields for each work item type to see only those that interest you.
 
-Teams can even be part of different projects if they use different processes. You can customize card fields to see only the data fields that interest you and that apply to each work item type.
-
-You can use delivery plans internally to share the schedule of features. Regular reviews of the project scope and schedule help ensure that teams are working toward common goals.
+You can use delivery plans internally to share the schedule and deliverables. Regular reviews of the project scope and schedule help ensure that teams are working toward common goals.
 
 Determine how you want to use the delivery plan review, such as:
 
@@ -76,56 +74,55 @@ Determine how you want to use the delivery plan review, such as:
 - Reviewing cross-project deliverables and identifying dependencies.
 - Syncing monthly with several teams that have dependencies.
 
-The review can address questions like:
+The review can address issues like:
 
 - Teams' confidence about meeting scheduled sprint deliverables.
 - How well the planning of deliverables addresses dependencies across teams.
-- Whether there are gaps with no deliverables in the schedule, and how to mitigate them.
+- Whether the schedule has gaps with no deliverables, and how to mitigate that.
 
 ## Use the plan
 
 In a delivery plan, the plan title appears at the top of the page. To change the title or configure other plan settings, select **Settings** at upper right.
 
-The **Favorite**, **Fullscreen**, and **Filter** icons appear next to the **Settings** button. Select the **Favorite** icon to favorite the delivery plan for quick access. Select the **Fullscreen** icon to display the delivery plan in fullscreen view.
+The **Favorite**, **Filter**, and **Fullscreen** icons appear next to the **Settings** button. Select the **Favorite** icon to favorite the delivery plan for quick access. Select the **Fullscreen** icon to display the delivery plan in fullscreen view.
 
 Select the **Filter** icon to display the filter toolbar and filter the plan view. You can filter on any field included in the plan, or by keyword or text filter. For more information, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 :::image type="content" source="media/plans/settings.png" alt-text="Screenshot that shows the Settings button and Filter controls.":::
 
-The buttons at upper right in the plan view:
+The buttons above the plan view:
 
 - Show and hide dependencies between work items.
 - Expand or collapse the work item cards.
 - Zoom the plan view smaller or larger.
 
-You can scroll the timeline left or right by holding down the corresponding arrows on the calendar bar. You can also scroll through the timeline by dragging the page horizontally.
-
-The **today** marker always appears on the calendar bar, and you can add custom markers by selecting **Settings** > **Markers**.
+You can scroll the timeline left or right by holding down the corresponding arrows on the calendar bar or by dragging the page horizontally. The **today** marker always appears on the calendar bar, and you can add custom markers by selecting **Settings** > **Markers**.
 
 :::image type="content" source="media/plans/overview.png" alt-text="Screenshot that shows the dependencies, expand/collapse, and zoom buttons, and the calendar bar with markers.":::
 
 ### Interact with work items
 
-Each team's backlog specified in the delivery plan appears as a row in the plan view, organized by assigned sprints or iterations. A collapsed row shows a rollup of backlog items. An expanded row shows cards for each backlog item.
+Each team backlog specified in the delivery plan appears as a row in the plan view, organized by assigned sprints or iterations. A collapsed row shows a summary of backlog items. An expanded row shows cards for each backlog item.
+
+To expand or collapse all team backlog rows, select the arrow next to **Teams** on the top bar. To expand or collapse individual rows, select the arrow next to each team name.
 
 > [!TIP]
-> Work items appear in [priority order](../backlogs/create-your-backlog.md#reorder-your-backlog), inheriting the priority from the sprint backlog listing.
+> Work item cards appear in [priority order](../backlogs/create-your-backlog.md#reorder-your-backlog), inheriting the priority from the sprint backlog listing.
 
-- To expand or collapse all team backlogs, select the arrow next to **Teams** on the top bar. To expand or collapse individual team backlogs, select the arrow next to each team name.
-- To see and edit the backlog for each team, select the link under the team name, such as **Epics** or **Stories**.
-- To see and edit individual work items, select the title in the work item card. To change the fields displayed on the cards, select **Settings** > **Fields**.
-- To add a work item, select the **+** icon in the sprint and team card you want to add the item to.
+- To see and edit the team backlog, select the backlog link under the team name, such as **Epics** or **Stories**.
+- To see and edit individual work items, select the title in the work item card. To change the fields displayed on cards, select **Settings** > **Fields**.
+- To add a work item, select the **+** icon on the sprint and team card you want to add the item to.
 
 :::image type="content" source="media/plans/overview-with-callouts.png" border="false" alt-text="Screenshot of callouts of delivery plans and collapsed teams.":::
 
 > [!TIP]
-> If you edit a plan and your changes don't appear immediately, refresh your browser. A browser refresh is sometimes needed to trigger updates.
+> If your changes don't appear immediately when you edit a plan, refresh your browser. A browser refresh is sometimes needed to trigger updates.
 
 ## Specify iterations or target dates
 
-Plan views display the months corresponding to the iteration paths for the team backlogs in the plan. Use a consistent sprint schedule across your project teams and organization if possible. A delivery plan can accommodate various sprint schedules, but they add to visual clutter.
+Plan views display the months corresponding to the iteration paths for the team backlogs in the plan. Use a consistent sprint schedule across your project teams and organization if possible. A delivery plan can accommodate various sprint schedules, but they add visual clutter.
 
-Use the same sprints for backlogs, Features, and Epics. Avoid creating specific sprints for Epics or other portfolio backlogs.
+Use the same sprints for Stories, Features, and Epics. Avoid creating specific sprints for Epics or other portfolio backlogs.
 
 Work items can use **Start Date** and **Iteration** or **Start Date** and **Target Date** to specify time frame. Don't use both **Iteration** and **Target Date**. **Target Date** always overrides the **Iteration** end date on the plan.
 
