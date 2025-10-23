@@ -99,9 +99,11 @@ To enable external versions for a specific package using PowerShell, follow thes
 
 ## Applicable scenarios
 
-The following section outlines common scenarios where external versions (packages from public registries) are either blocked or allowed from being saved to the feed. In the rest of this article, we refer to packages from public registries as *public packages* and packages stored in an Azure Artifacts feed as *private packages*.
+This section describes common scenarios where external versions (packages from public registries) are either **blocked** or **allowed** from being saved to the feed. For the rest of this article, we refer to packages from public registries as *public packages* and packages stored in an Azure Artifacts feed as *private packages*.
 
-### Scenario 1: public versions are blocked
+## Scenario 1: Public versions are blocked
+
+Public versions are blocked from being saved to the feed when the **Allow External Versions** feature is enabled in the following two cases:
 
 * [Private package version made public](#private-package-version-made-public)
 
@@ -109,42 +111,48 @@ The following section outlines common scenarios where external versions (package
 
 #### Private package version made public
 
-In this scenario, a team has a private package that was made public. The external versions setting in this case will cause the feed to block consumption of any new versions with that package name from a public source.
+If a private package is later made public, the feed blocks any new versions with the same package name from public sources.
 
 :::image type="content" source="media\internal-to-public.svg" alt-text="An illustration showing an internal package version made public.":::
 
 #### Having both private and public packages 
 
-In this scenario, if a team uses a combination of private and public packages, disallowing externally sourced packages blocks any new package versions from the public registry.
+When a team uses both private and public packages, the feed blocks any new package versions from the public registry when the allow external version is enabled.
 
 :::image type="content" source="media\private-and-public-packages.svg" alt-text="An illustration showing available private and public packages.":::
 
-### Scenario 2: public versions won't be blocked
+## Scenario 2: public versions are allowed
+
+Public versions are allowed to be saved to the feed when the **Allow External Versions** feature is enabled in the following three cases:
 
 * [All packages are private](#all-packages-are-private)
+
 * [All packages are public](#all-packages-are-public)
+
 * [Public package made private](#public-package-made-private)
 
-#### All packages are private*
+#### All packages are private
 
-If all existing packages are private, and the team has no plans to use any public packages, the external versions setting has no effect on the team's workflow in this scenario.
+If all packages are private and the team doesn’t plan to use public packages, enabling this setting has no impact on the team's workflow.
 
 :::image type="content" source="media\only-private-packages.svg" alt-text="An illustration showing feed with only private packages.":::
 
 #### All packages are public
 
-In this scenario, if the team exclusively consumes public packages, whether from the public registry or other open-source repositories, the setting doesn't affect their workflow in any way.
+If the team exclusively consumes public packages from registries or open-source repositories, enabling the setting doesn't affect their workflow.
 
 :::image type="content" source="media\public-packages-only.svg" alt-text="An illustration showing feed with only public packages.":::
 
 #### Public package made private
 
-In this situation, when a public package is converted to a private package, the external versions setting doesn't affect the team's workflow in any way.
+When a public package is later converted to private, enabling the allow external versions setting doesn't affect the team's workflow.
 
 :::image type="content" source="media\public-to-internal.svg" alt-text="An illustration showing a package converted from public to private.":::
 
-## Related articles
+## Related content
 
 - [Understand upstream sources](upstream-sources.md)
-- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
-- [Best practices](best-practices.md)
+
+- [Package graphs in Azure Artifacts](package-graph.md)
+
+- [How to restore packages from upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
