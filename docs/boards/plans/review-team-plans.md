@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.custom: cross-project  
 ai-usage: ai-assisted
 monikerRange: '>= azure-devops-2022'
-ms.date: 10/22/2025
+ms.date: 10/23/2025
 #customer intent: As a product and portfolio owner, I want to understand delivery plans so I can use them to interact with multiple deliverables and schedules and review them with my teams.
 ---
 
@@ -18,11 +18,11 @@ ms.date: 10/22/2025
 
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
-Delivery Plans in Azure Boards lets you visualize and review the work items that your teams plan to deliver. A delivery plan shows selected teams' scheduled work items by sprint or iteration path in a calendar view.
+Delivery plans in Azure Boards let you visualize and review the work items that your teams plan to deliver. A delivery plan shows selected teams' scheduled work items by sprint or iteration path in a calendar view.
 
 You can use Delivery Plans to review multiple backlogs and teams across your Azure DevOps organization. The delivery plan drives alignment with organizational goals while letting each team remain autonomous.
 
-You can interact directly with delivery plans by updating or modifying the schedule, adding and editing work items, expanding or collapsing cards and teams, and changing views.
+You can interact directly with delivery plans by changing the schedule, adding and editing work items, expanding or collapsing cards and teams, and changing views.
 
 Delivery Plans supports the following tasks:
 
@@ -57,28 +57,6 @@ Delivery plans for your project appear on the **Boards** > **Delivery Plans** pa
 You can search for plans by keyword and sort by the **Name**, **Created By**, **Description**, **Last configured**, **Last accessed**, or **Favorites** columns.
 
 :::image type="content" source="media/plans/open-plans.png" alt-text="Screenshot of the Delivery Plans area in Azure Boards.":::
-
-## Review the plan with your teams
-
-During large software development projects, multiple autonomous teams manage their own backlog and priorities to contribute to a unified direction for the project. For a discussion of autonomous teams and organizational alignment, see [Agile culture](agile-culture.md). 
-
-The delivery plan drives alignment while letting each team remain autonomous. Individual teams can work to different sprint cadences if necessary, and can manage different work item types like Stories, Features, or Epics. All work is visible in the same plan view. Teams can even be part of different projects if they use different processes.
-
-Delivery plans provide a necessary multiple-team view of your project. By seeing the work that many teams plan for the next few sprints, you can identify dependencies and verify appropriate priorities. You can customize card fields for each work item type to see only those that interest you.
-
-You can use delivery plans internally to share the schedule and deliverables. Regular reviews of the project scope and schedule help ensure that teams are working toward common goals.
-
-Determine how you want to use the delivery plan review, such as:
-
-- Developing quarterly plans for features to deliver.
-- Reviewing cross-project deliverables and identifying dependencies.
-- Syncing monthly with several teams that have dependencies.
-
-The review can address issues like:
-
-- Teams' confidence about meeting scheduled sprint deliverables.
-- How well the planning of deliverables addresses dependencies across teams.
-- Whether the schedule has gaps with no deliverables, and how to mitigate that.
 
 ## Use the plan
 
@@ -118,7 +96,7 @@ To expand or collapse all team backlog rows, select the arrow next to **Teams** 
 > [!TIP]
 > If your changes don't appear immediately when you edit a plan, refresh your browser. A browser refresh is sometimes needed to trigger updates.
 
-## Specify iterations or target dates
+### Specify iterations or target dates
 
 Plan views display the months corresponding to the iteration paths for the team backlogs in the plan. Use a consistent sprint schedule across your project teams and organization if possible. A delivery plan can accommodate various sprint schedules, but they add visual clutter.
 
@@ -134,7 +112,7 @@ If **Start Date** or **Target Date** are missing from the work item form, you ca
 
 Keep your work items up to date. If the schedule changes, update the target dates or iteration paths. You can also change the iteration for a backlog item by dragging the card to a different iteration. These adjustments help maintain alignment across your organization.
 
-## See multiple teams and iterations
+### See multiple teams and iterations
 
 One benefit of Delivery Plans is the ability to view multiple teams and iterations across projects. There are several ways to maximize the teams, work items, and iterations shown in the plan view.
 
@@ -142,21 +120,21 @@ One benefit of Delivery Plans is the ability to view multiple teams and iteratio
 - Collapse work item cards to view only titles, or reduce the number of fields displayed on cards.
 - Zoom out to view more iterations or to show work that spans more than one iteration.
 
-### Collapse teams for summary information
+#### Collapse teams for summary information
 
 To focus on a summary view of scheduled work, collapse all teams by selecting the expand/collapse icon next to **Teams** on the top bar. This view makes it easier to identify gaps in the forecast. You can also expand or collapse each team row by selecting the expand/collapse icon next to the team name.
 
-### Collapse cards to view titles only
+#### Collapse cards to view titles only
 
 Use the **Expand or collapse cards** icon to toggle between showing only titles in cards or displaying all the fields configured for the plan.
 
 :::image type="content" source="media/plans/collapse-card-fields.png" alt-text="Screenshot that shows the location of feature icons for collapsing and expanding card fields.":::
 
-### Zoom out to show more iterations or teams
+#### Zoom out to show more iterations or teams
 
 Using the **Zoom out** button lets you see more iterations and teams in the view. However, the farther you zoom out, the fewer items can fit on a card. Zooming out can cause fields and tags to disappear from cards, depending on the zoom level.
 
-## View rollups of features and epics
+### View rollups of features and epics
 
 A rollup provides a comprehensive view of child work item progress on a parent card in your delivery plan. Rollup views are available for Feature, Epic, or portfolio backlogs you add to your project.
 
@@ -168,14 +146,36 @@ The following example shows a progress rollup of child Features, Stories, and Bu
 
 You can also view rollups from the backlog view. For more information, see [Display rollup progress or totals](../backlogs/display-rollup.md).
 
-## Print a delivery plan 
+## Review the plan with your teams
+
+ 
+During large software development projects, multiple autonomous teams manage their own backlog and priorities to contribute to a unified direction for the project. For a discussion of autonomous teams and organizational alignment, see [Agile culture](agile-culture.md). 
+
+Delivery plans provide a necessary multiple-team view of your project. Seeing the planned work for many teams over the next few sprints helps you identify dependencies and verify appropriate priorities. You can customize card fields for each work item type to see only the ones that interest you.
+
+The delivery plan drives alignment while letting each team remain autonomous. Individual teams can work to different sprint cadences if necessary, and can manage different work item types like Stories, Features, or Epics. All work is visible in the same plan view. Teams can even be part of different projects if they use different processes.
+
+You can review delivery plans internally to share the schedule and deliverables. Regular reviews of the project scope and schedule help ensure that teams are working toward common goals.
+
+Determine how you want to use the delivery plan review, such as:
+
+- Developing quarterly plans for features to deliver.
+- Reviewing cross-project deliverables and identifying dependencies.
+- Syncing monthly with several teams that have dependencies.
+
+The review can address issues like:
+
+- Teams' confidence about meeting scheduled sprint deliverables.
+- How well the planning of deliverables addresses dependencies across teams.
+- Whether the schedule has gaps with no deliverables, and how to mitigate that.
+
+## Print or share a delivery plan 
 
 You can print all or part of your delivery plan. Depending on the view you want to capture and share, you can take a screenshot or use your browser's **Print** feature to print one page at a time.
 
 To print a portion of a plan, select the **Fullscreen** icon on the delivery plan's top bar, and then expand or collapse teams and zoom in or out to get the desired view. Take a screenshot of the view or use your browser's **Print** function.
 
-> [!TIP]
-> To share a delivery plan with a team member, copy the URL and send the copied URL to your team member.
+To share a delivery plan with team members, copy the URL and send the copied URL to your team members.
 
 ## Related content  
  
