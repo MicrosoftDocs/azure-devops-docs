@@ -22,7 +22,7 @@ You can add your pool's agents to your virtual network by using the following st
 
 1. [Create or bring your virtual network and subnet](#create-or-bring-your-virtual-network-and-subnet).
 1. [Delegate the subnet to `Microsoft.DevOpsInfrastructure/pools`](#delegate-the-subnet-to-microsoftdevopsinfrastructurepools).
-1. [Associate the subnet with your pool](#associate-the-subnet-with-your-managed-devops-pool).
+1. [Associate the subnet with your pool](#associate-the-subnet-with-your-pool).
 
 The previous steps delegate the subnet for exclusive access by the pool. Other pools or resources can't use the subnet.
 
