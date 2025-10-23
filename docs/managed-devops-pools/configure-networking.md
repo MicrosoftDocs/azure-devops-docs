@@ -1,15 +1,15 @@
 ---
-title: Configure Networking
-description: Learn how to configure networking for Managed DevOps Pools.
+title: Configure networking
+description: Learn how to configure networking for Azure Managed DevOps Pools.
 ms.date: 07/29/2025
 ms.custom: sfi-image-nochange
 ---
 
 # Configure Managed DevOps Pools networking
 
-You can configure Azure Managed DevOps Pools agents to run in an isolated virtual network, or in an existing virtual network. This article describes how to configure your Managed DevOps pool to run agents in your virtual network.
+You can configure Azure Managed DevOps Pools agents to run in an isolated virtual network, or in an existing virtual network. This article describes how to configure your pool to run agents in your virtual network.
 
-## Adding agents to your own virtual network
+## Add agents to your own virtual network
 
 You might want to add agents from Managed DevOps Pools to your own virtual network for scenarios such as:
 
@@ -18,15 +18,15 @@ You might want to add agents from Managed DevOps Pools to your own virtual netwo
 - You want to network isolate your CI/CD infrastructure by bringing your own virtual network with company-specific firewall rules.
 - Any other unique use cases that can't be achieved by out-of-the-box Managed DevOps Pools networking features.
 
-You can add your pool's agents to your virtual network by using the following steps.
+You can add your pool's agents to your virtual network by using the following steps:
 
 1. [Create or bring your virtual network and subnet](#create-or-bring-your-virtual-network-and-subnet).
 1. [Delegate the subnet to `Microsoft.DevOpsInfrastructure/pools`](#delegate-the-subnet-to-microsoftdevopsinfrastructurepools).
-1. [Associate the subnet with your Managed DevOps pool](#associate-the-subnet-with-your-managed-devops-pool).
+1. [Associate the subnet with your pool](#associate-the-subnet-with-your-managed-devops-pool).
 
 The previous steps delegate the subnet for exclusive access by the pool. Other pools or resources can't use the subnet.
 
-In order to connect multiple pools to the same virtual network, multiple subnets can be used, each delegated and associated with their own pool.
+To connect multiple pools to the same virtual network, multiple subnets can be used, each delegated and associated with their own pool.
 
 ## Create or bring your virtual network and subnet
 
@@ -35,7 +35,7 @@ The subnet must have enough address space to accommodate the max pool size of th
 If you're using ExpressRoute, you need to allow writes by temporarily dropping or changing the management lock on the resource group.
 
 > [!IMPORTANT]
-> The Managed DevOps pool and virtual network must be in the same region. Otherwise, you get an error similar to the following when you try to create the pool or update the network configuration: "Virtual network MDPVN is in region eastus, but pool mdpnonprodsub is in region australiaeast. These must be in the same region."
+> The pool and virtual network must be in the same region. Otherwise, you get an error similar to the following when you try to create the pool or update the network configuration: "Virtual network MDPVN is in region eastus, but pool mdpnonprodsub is in region australiaeast. These must be in the same region."
 
 ### <a name = "grant-reader-and-network-contributor-access-to-devopsinfrastructure-service-principal"></a> Grant Reader and Network Contributor access to the DevOpsInfrastructure service principal
 
@@ -79,7 +79,7 @@ This process delegates the subnet for exclusive access for the pool. Other pools
 
 After you delegate the subnet to `Microsoft.DevOpsInfrastructure/pools`, you can update the pool to use the subnet.
 
-## Associate the subnet with your Managed DevOps pool
+## Associate the subnet with your pool
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -91,7 +91,7 @@ After you delegate the subnet to `Microsoft.DevOpsInfrastructure/pools`, you can
 
    :::image type="content" source="./media/configure-networking/subnet-resource.png" alt-text="Screenshot that shows how to associate the subnet to the pool.":::
 
-After the network update finishes, the newly created resource in the pool will use the delegated subnet.
+   After the network update finishes, the newly created resource in the pool will use the delegated subnet.
 
 #### [ARM template](#tab/arm/)
 
@@ -161,30 +161,30 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 * * *
 
 > [!IMPORTANT]
-> Don't put a **Delete** lock on the virtual network when you update your pools. During a pool update operation, Managed DevOps Pools creates a [service association link](/rest/api/virtualnetwork/service-association-links/list) on the subnet. If an update fails, Managed DevOps Pools attempts to clean the service association link, but if there's a **Delete** lock, you get an `InUseSubnetCannotBeDeleted` error. Managed DevOps Pools isn't able to delete the service association link, which leaves the subnet in a locked state (undeletable). To resolve the issue, remove the **Delete** lock, and retry the update operation.
+> Don't put a **Delete** lock on the virtual network when you update your pools. During a pool update operation, Managed DevOps Pools creates a [service association link](/rest/api/virtualnetwork/service-association-links/list) on the subnet. If an update fails, Managed DevOps Pools attempts to clean the service association link, but if there's a **Delete** lock, you get an `InUseSubnetCannotBeDeleted` error. Managed DevOps Pools isn't able to delete the service association link, which leaves the subnet in a locked state (unable to be deleted). To resolve the issue, remove the **Delete** lock, and retry the update operation.
 >
 > For more information, see [Things to consider before you apply locks to your Azure resources](/azure/azure-resource-manager/management/lock-resources#considerations-before-applying-your-locks).
 
 ## <a name = "restricting-outbound-connectivity"></a> Restrict outbound connectivity
 
-If you have systems in place on your network (network security group, firewalls, etc.) that restrict outbound connectivity, you need to allowlist certain endpoints to fully support Managed DevOps pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints that are required for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
+If you have systems in place on your network (network security group, firewalls, etc.) that restrict outbound connectivity, you need to allowlist certain endpoints to fully support Managed DevOps Pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints you need for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
 
-### Endpoints that are required to start up Managed DevOps Pool
+### Endpoints you need to start up Managed DevOps Pools
 
-If you don't allowlist these endpoints, machines fail to come online as part of the Managed DevOps Pools service and you can't run pipelines on the Managed DevOps pool:
+If you don't allowlist these endpoints, machines fail to come online as part of the Managed DevOps Pools service and you can't run pipelines on the pool:
 
 - `*.prod.manageddevops.microsoft.com`: Managed DevOps Pools endpoint used to communicate with the Managed DevOps Pools service.
 - `rmprodbuilds.azureedge.net`: Used to download the Managed DevOps Pools worker binaries and startup scripts. (The agent portion of the worker binaries is downloaded from `rm-agent.prod.manageddevops.microsoft.com` (formerly downloaded from `agent.prod.manageddevops.microsoft.com`) which is covered by the previous required `*.prod.manageddevops.microsoft.com` entry.)
-- `*.queue.core.windows.net`: Worker queue for communicating with Managed DevOps Pools service.
+- `*.queue.core.windows.net`: Worker queue for communicating with the Managed DevOps Pools service.
 
-### Endpoints that are required to connect to Azure DevOps
+### Endpoints you need to connect to Azure DevOps
 
-If you don't allowlist these endpoints, machines might come online and might even go to an *allocated* state, but fail to communicate with the ActiveX Data Objects (ADO) instance, because the Visual Studio Team Services (VSTS) task agent either can't connect or can't start.
+If you don't allowlist these endpoints, machines might come online and might even go to an *allocated* state, but fail to communicate with Azure DevOps, because the Azure DevOps Services task agent either can't connect or can't start.
 
 - `download.agent.dev.azure.com`: The Azure DevOps agent's content delivery network (CDN) location, used to download the Azure DevOps agent (formerly `vstsagentpackage.azureedge.net` - for more information, see [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/)).
 - `dev.azure.com`: Required to handle communication with Azure DevOps.
 
-### Prepare Linux machines
+### Endpoints you need to prepare Linux machines
 
 These endpoints are required to spin up Ubuntu machines, but aren't necessary if a pool is only using Windows. When you set up the Azure DevOps task agent, required packages are added and an `apt-get` command is run. This process fails if the following endpoints aren't allowlisted.
 
@@ -195,13 +195,13 @@ These endpoints are required to spin up Ubuntu machines, but aren't necessary if
 - `ppa.launchpad.net`: Provisioning some specific Linux distributions.
 - `dl.fedoraproject.org`: Provisioning certain Linux distributions.
 
-### Required for some Azure DevOps features
+### Endpoints you need for some Azure DevOps features
 
 These optional endpoints are required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization that hosts your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`.
 
 - `*.services.visualstudio.com`
 - `*.vsblob.visualstudio.com`: Used for both uploading and consuming artifacts.
-- `*.vssps.visualstudio.com` - Used for authentication with Azure DevOps for certain features.
+- `*.vssps.visualstudio.com`: Used for authentication with Azure DevOps for certain features.
 - `*.visualstudio.com`
 
 > [!NOTE]
@@ -211,29 +211,29 @@ These optional endpoints are required for specific Azure DevOps features to work
 
 Azure virtual machines (VMs) might route traffic to certain Azure features through your subnet. For these requests, you can route requests directly through Azure, or enable access through your network.
 
-1. [Configure Azure traffic to run through Service Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview):
+1. [Configure Azure traffic to run through service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview):
 
    You can route traffic directly through Azure to avoid adding throughput to your network security groups or firewalls. You don't need to allowlist the domains listed in the following option.
 
    For example, you can use the [data disk](./configure-storage.md) feature to involve network calls to Azure Storage. When you enable **Microsoft.Storage** service endpoint on your network, traffic routes directly through Azure, which avoids your network rules and reduces load.
 
-1. To avoid routing traffic through service endpoints, allowlist this domain for a specific purpose.
+1. To avoid routing traffic through service endpoints, allowlist this domain for a specific purpose:
 
-   - `md-*.blob.storage.azure.net`: Required to [configure a data disk](./configure-storage.md)
+   - `md-*.blob.storage.azure.net`: Required to [configure a data disk](./configure-storage.md).
 
-### Akamai CDN Delivery IPs
+### Akamai CDN delivery IPs
 
 On May 1, 2025, Azure DevOps CDN assets transitioned to a solution served by Akamai and Azure Front Door. Ensure your network has outbound access to Akamai IP ranges. For more information, see:
 
-- [CDN Domain URL change for Agents in Pipelines](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/)
+- [CDN domain URL change for agents in pipelines](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/)
 - [Azure CDN from Edgio retirement FAQ](/previous-versions/azure/cdn/edgio-retirement-faq)
-- [Akamai TechDocs - Origin IP Access Control List](https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server)
+- [Akamai TechDocs: Origin IP access control list](https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server)
 
-If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image, in Docker or Azure Container Registry (ACR).
+If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image, in Docker or Azure Container Registry.
 
-## Configure the Azure DevOps Agent to run behind a Proxy
+## Configure the Azure DevOps agent to run behind a proxy
 
-If you configured a proxy service on your image and want the workloads that run on your Managed DevOps pool to run behind this proxy, you must add the following environment variables on your image.
+If you configured a proxy service on your image and want the workloads that run on your pool to run behind this proxy, you must add the following environment variables on your image.
 
 - `VSTS_AGENT_INPUT_PROXYURL`: The URL of the configured proxy to run behind.
 - `VSTS_AGENT_INPUT_PROXYUSERNAME`: The username needed to use the proxy.
@@ -241,7 +241,7 @@ If you configured a proxy service on your image and want the workloads that run 
 
 For Windows, these environment variables should be system environment variables. For Linux, these variables should be in the `/etc/environment` file. If you set these system variables incorrectly or without a configured proxy service on the image, provisioning of new agents fails with network connectivity issues.
 
-If you're migrating from Azure Virtual Machine Scale Set agents and are already using the proxy environment variables on your image, you shouldn't need to make any changes. This process is described in [Azure Virtual Machine Scale Set agents- Customizing Pipeline Agent Configuration](/azure/devops/pipelines/agents/scale-set-agents#customizing-pipeline-agent-configuration).
+If you're migrating from Azure Virtual Machine Scale Set agents and are already using the proxy environment variables on your image, you shouldn't need to make any changes. This process is described in [Azure Virtual Machine Scale Set agents: Customize pipeline agent configuration](/azure/devops/pipelines/agents/scale-set-agents#customizing-pipeline-agent-configuration).
 
 ## See also
 

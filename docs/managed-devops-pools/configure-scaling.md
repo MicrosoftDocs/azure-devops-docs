@@ -1,12 +1,12 @@
 ---
-title: Configure Scaling
-description: Learn the different performance options for Managed DevOps Pools and their impact on agent performance.
+title: Configure scaling
+description: Learn about performance options for Azure Managed DevOps Pools.
 ms.date: 07/29/2025
 ---
 
 # Configure scaling
 
-You can manage the performance and cost of your Managed DevOps pool by configuring scaling settings. For information on pricing and performance, see [Manage cost and performance](manage-costs.md).
+You can manage the performance and cost of your Azure Managed DevOps Pools instance by configuring scaling settings. For information on pricing and performance, see [Manage cost and performance](manage-costs.md).
 
 ## Agent state
 
@@ -15,10 +15,10 @@ Managed DevOps Pools can be configured as stateless or stateful.
 * [Stateless pools](#stateless-pools): Provide a fresh agent for every job.
 * [Stateful pools](#stateful-pools): Allow sharing of agents between multiple jobs.
 
-The default setting for a Managed DevOps pool is stateless, which you can achieve by using the setting **Fresh agent every time**. In some cases, teams might want to reuse agents in order to reuse the packages or files created during the previous pipeline run. Build workload is a common scenario where teams want to preserve state and reuse agents. You can achieve stateful pools through Managed DevOps Pools while balancing it with security best practices. By default an agent can be reused for a maximum of seven days but you can configure it to be recycled sooner.
+The default setting for a pool is stateless, which you can achieve by using the **Fresh agent every time** setting. In some cases, teams might want to reuse agents to reuse the packages or files created during the previous pipeline run. Build workload is a common scenario where teams want to preserve state and reuse agents. You can achieve stateful pools through Managed DevOps Pools while balancing it with security best practices. By default an agent can be reused for a maximum of seven days but you can configure it to be recycled sooner.
 
 > [!NOTE]
-> Security agents recommend that users use stateless pools by using the agent state setting **Fresh agent every time** as a defense against supply chain attacks.
+> Security agents recommend that users use stateless pools as a defense against supply chain attacks. Use the agent state setting **Fresh agent every time**.
 
 ### Stateless pools
 
@@ -170,13 +170,13 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 * * *
 
-When you enable the **Same agent can be used by multiple builds** (the `"kind": "stateful"` in resources templates or `{ "stateful": {...} }` setting in the Azure CLI), agents in the pool are stateful. You can configure stateful pools by using the following settings.
+When you enable the **Same agent can be used by multiple builds** (the `"kind": "stateful"` setting in resources templates or the `{ "stateful": {...} }` setting in the Azure CLI), agents in the pool are stateful. You can configure stateful pools by using the following settings.
 
 * **Max time to live for standby agents** (`maxAgentLifetime`) configures the maximum duration an agent in a stateful pool can run before it's shut down and discarded. The format for **Max time to live for standby agents** is `dd.hh:mm:ss`. The default value of **Max time to live for standby agents** is set to the maximum allowed duration of seven days (`7.00:00:00`).
-* **Grace Period** (`gracePeriodTimeSpan`) configures the amount of time an agent in a stateful pool waits for new jobs before shutting down after all current and queued jobs are complete. The format for **Grace Period** is `dd.hh:mm:ss` and the default is no grace period.
+* **Grace Period** (`gracePeriodTimeSpan`) configures the amount of time an agent in a stateful pool waits for new jobs before shutting down after all current and queued jobs have finished. The format for **Grace Period** is `dd.hh:mm:ss` and the default is no grace period.
 
-> [!IMPORTANT]
-> If a job is running when the **Max time to live for standby agents** interval expires, the agent won't shut down until the job finishes, unless the job takes longer than two days to run. Individual jobs in Managed DevOps Pools can run for a maximum of two days, even if they're running on a standby agent with more than two days configured for **Max time to live for standby agents**. Contact support if your workflow requires that you run a single job that takes more than two days to complete.
+  > [!IMPORTANT]
+  > If a job is running when the **Max time to live for standby agents** interval expires, the agent won't shut down until the job finishes, unless the job takes longer than two days to run. Individual jobs in Managed DevOps Pools can run for a maximum of two days, even if they're running on a standby agent with more than two days configured for **Max time to live for standby agents**. Contact support if your workflow requires that you run a single job that takes more than two days to finish.
 
 Agents in stateless pools are shut down and discarded after every job. Agents in stateful pools continue running if any of the following conditions are met:
 
@@ -187,7 +187,7 @@ Agents in stateless pools are shut down and discarded after every job. Agents in
 Agents that are running in stateful pools are shut down and discarded if they run continuously for the duration specified by **Max time to live for standby agents**, even if the previous conditions are true. For example, if **Max time to live for standby agents** is configured for three days, and **Standby agent mode** is set to **Manual, All Week Scheme (Machines available 24/7)**, the agents restart after three continuous days of uptime.
 
 > [!IMPORTANT]
-> Agents in stateful pools can still be shut down and discarded after a job finishes if there's no grace period, no active provisioning period for standby agents, and no queued jobs matching the agent. When an agent is discarded, any state is lost.
+> Agents in stateful pools can still be shut down and discarded after a job finishes if there's no grace period, no active provisioning period for standby agents, and no queued jobs that match the agent. When an agent is discarded, any state is lost.
 
 Grace periods enable the most cost-effective way of running stateful pools for pipelines with consistent load. Grace periods don't require the use of standby agent mode to keep agents online and ready to accept jobs.
 
@@ -195,7 +195,7 @@ Grace periods enable the most cost-effective way of running stateful pools for p
 
 When you create a pool, **Standby agent mode** is off by default. When **Standby agent mode** is off, there are no standby agents to immediately assign to your pipelines. Your pipelines might have to wait anywhere from a few moments to 15 minutes for an agent to be provisioned on demand. For better performance, enable **Standby agent mode** and configure a standby agent schedule that provides capacity for your workload.
 
-When you configure a standby agent schedule, Managed DevOps Pools periodically compares the count of provisioned agents with the standby agent count that you specify in the current provisioning scheme. It starts new agents as required to maintain the standby agent count. You can view the current status and count of the agents in your pool using the [Agents](./view-agents.md) pane.
+When you configure a standby agent schedule, Managed DevOps Pools periodically compares the count of provisioned agents with the standby agent count that you specify in the current provisioning scheme. It starts new agents as required to maintain the standby agent count. You can view the current status and count of the agents in your pool by using the [Agents](./view-agents.md) pane.
 
 > [!IMPORTANT]
 > The provisioning count in a scheme can't be greater than the **Maximum agents** that you configure in [Pool settings](configure-pool-settings.md#maximum-agents).
@@ -203,8 +203,8 @@ When you configure a standby agent schedule, Managed DevOps Pools periodically c
 You can configure standby agent mode by using the following settings:
 
 * **Off**: Standby agent mode is off and agents are provisioned on demand when jobs are queued.
-* [Manual](#manual): Configure a manual standby schedule.
-* [Automatic](#automatic): Use an automatic standby schedule based on agent usage history. You can configure it for cost and performance.
+* **[Manual](#manual)**: Configure a manual standby schedule.
+* **[Automatic](#automatic)**: Use an automatic standby schedule based on agent usage history. You can configure it for cost and performance.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -288,7 +288,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 ## Manual
 
-Manual mode is best for teams who know their CI/CD pipelines usage patterns. When you use the manual option, you need to define your pre-provisioning scheme. You define your scheme based on your understanding of what agents in the pool are most likely to be used and how many agents are likely to be used. You specify a provisioning count of agents that meet the projected demand.
+Manual mode is best for teams who know their continuous integration and continuous delivery (CI/CD) pipeline usage patterns. When you use the manual option, you need to define your pre-provisioning scheme. You define your scheme based on your understanding of what agents in the pool are most likely to be used and how many agents are likely to be used. You specify a provisioning count of agents that meet the projected demand.
 
 You can create your own provisioning schedule or choose from one of the predefined schedules. You can configure the time zone to use to specify the schedules. The default value for **Pre-provisioning TimeZone** is **(UTC) Coordinated Universal Time**.
 
@@ -768,7 +768,7 @@ To schedule a standby agent to be available starting at `09:00:00` on the specif
 
 * * *
 
-### Start From scratch
+### Start from scratch
 
 If you choose to start from scratch, you can add a list of provisioning periods as your provisioning scheme. Each provisioning period consists of a start day, end day, time zone, start time, end time, and a count. Provisioning periods can't overlap each other.
 
@@ -1216,16 +1216,16 @@ When you enable standby agents by using a [stateless](#stateless-pools) scheme, 
 
 When Managed DevOps Pools provisions new agents, it attempts to download the latest [Azure Pipelines agent](https://github.com/microsoft/azure-pipelines-agent/releases) so that it's already downloaded on standby agents before they transition into ready status. Startup, connection, and beginning the job can take anywhere from 10 seconds to a minute depending on the pool's SKU speed, the image used, and the networking load. Additionally, when you specify certain settings in a pipeline job, it can cause a redownload and running of a different agent. Regressions and rollbacks of the agent can also cause a redownload of the agent. 
 
-[Ready agents](./view-agents.md#status) always have a potential delay, as Managed DevOps Pools uses this agent in an "ephemeral" manner, meaning we start and run the task agent one time per job. If you see delays in ready agents picking up jobs from Azure DevOps, consider the questions in the following sections.
+[Ready agents](./view-agents.md#status) always have a potential delay, as Managed DevOps Pools uses this agent in an "ephemeral" manner, meaning we start and run the task agent one time per job. If you see delays in ready agents picking up jobs from Azure DevOps, consider the following questions:
 
 * Do you have ready agents? The most common issue is a misunderstanding of when agents should be pre-provisioned. Machines must be spun up from scratch when the following conditions are met:
-  * The number of jobs queued is greater than the standby agent count on a pool
+  * The number of jobs queued is greater than the standby agent count on a pool.
   * Jobs are queued outside of the pre-provisioning schedule.
   * The standby agent count is set to be empty.
 * Are you properly configuring standby agents that have multiple images? If you aren't specifying which image to use in your pipeline by using the [ImageOverride](./demands.md#imageoverride) demand, jobs target the first image. Depending on your scaling settings, you might not have as many agents available as you expect, because some are allocated to other images.
 * Are you using the [`ImageVersionOverride`](./demands.md#imageversionoverride) demand in your pipelines? When you use the `ImageVersionOverride` demand to specify a different image version than what's configured in your [pool settings](./configure-images.md), each agent starts on demand by using the specified image version. Standby agents are provisioned by using the image versions specified in your [pool's configuration](./configure-images.md). If you use `ImageVersionOverride`, any standby agents won't match that version and a fresh agent starts.
 * Are proxy, virtual network, or firewall settings slowing down your pool? Potential slowness from any network setting results in agents taking longer to start the agent and connect it to Azure DevOps.
-* Are you overriding the agent version? By default, Managed DevOps Pools runs on the most recent Azure DevOps task agent version. Settings in the pipeline YAML (such as the [`Agent.Version`](/azure/devops/pipelines/yaml-schema/pool-demands#agent-variables-as-system-capabilities) demand) and Azure DevOps organization settings can force pipelines to use older versions of the task agent, which requires a redownload after a machine has been allocated.
+* Are you overriding the agent version? By default, Managed DevOps Pools runs on the most recent Azure DevOps task agent version. Settings in the pipeline YAML (such as the [`Agent.Version`](/azure/devops/pipelines/yaml-schema/pool-demands#agent-variables-as-system-capabilities) demand) and Azure DevOps organization settings can force pipelines to use older versions of the task agent, which requires a redownload after a machine is allocated.
 
 ## See also
 

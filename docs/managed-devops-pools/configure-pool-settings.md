@@ -1,13 +1,13 @@
 ---
-title: Configure Pool Settings
-description: Learn how to configure Managed DevOps Pools settings.
+title: Configure pool settings
+description: Learn how to configure settings in Azure Managed DevOps Pools.
 ms.date: 08/27/2025
 ms.custom: sfi-image-nochange
 ---
 
 # Configure pool settings
 
-This article describes how to configure the basic settings of your Managed DevOps pool.
+This article describes how to configure the basic settings of your Azure Managed DevOps Pools instance.
 
 ## Overview
 
@@ -29,7 +29,7 @@ To configure your pool, go to **Settings** > **Pool**.
 
 :::image type="content" source="media/pool-settings/pool-settings-menu.png" alt-text="Screenshot that shows the Pool settings menu.":::
 
-To configure your Managed DevOps pool, use the following settings:
+To configure your pool, use the following settings:
 
 * [Dev Center project](#dev-center-project)
 * [Azure DevOps organization](#azure-devops-organization)
@@ -42,7 +42,7 @@ To configure your Managed DevOps pool, use the following settings:
 
 #### [Azure portal](#tab/azure-portal/)
 
-Select the **Dev Center project** for your Managed DevOps pool. (If you don't have one, you can create a **Dev Center** and **Dev Center project** when you create your pool.)
+Select the **Dev Center project** for your pool. (If you don't have one, you can create a **Dev Center** and **Dev Center project** when you create your pool.)
 
 :::image type="content" source="media/pool-settings/dev-center.png" alt-text="Screenshot that shows Dev Center settings.":::
 
@@ -124,7 +124,7 @@ In the following example, the `devCenterProjectResourceId` is retrieved from a D
 
 #### [Azure portal](#tab/azure-portal/)
 
-If you configured your Managed DevOps pool for a single Azure DevOps organization, you can specify the organization in pool settings.
+If you configured your pool for a single Azure DevOps organization, you can specify the organization in pool settings.
 
 :::image type="content" source="media/pool-settings/single-organization.png" alt-text="Screenshot that shows how to configure a single organization.":::
 
@@ -134,7 +134,7 @@ If you configured your pool for multiple organizations, the **Azure DevOps organ
 
 You can configure the **Azure DevOps organization** value by using the `organizations` list in the `organizationProfile` section.
 
-In the following example, a Managed DevOps pool is configured for all projects in a single organization, with a parallelism of 4. For an example that shows how to configure multiple organizations, see [Use pool in multiple organizations](./configure-security.md#use-pool-in-multiple-organizations).
+In the following example, a pool is configured for all projects in a single organization, with a parallelism of 4. For an example that shows how to configure multiple organizations, see [Use pool in multiple organizations](./configure-security.md#use-pool-in-multiple-organizations).
 
 ```json
 {
@@ -167,7 +167,7 @@ In the following example, a Managed DevOps pool is configured for all projects i
 
 You can configure the **Azure DevOps organization** value by using the `organizations` list in the `organization-profile` parameter.
 
-In the following example, a Managed DevOps pool is configured for all projects in a single organization, with a parallelism of 4. For an example that shows how to configure multiple organizations, see [Use pool in multiple organizations](./configure-security.md#use-pool-in-multiple-organizations).
+In the following example, a pool is configured for all projects in a single organization, with a parallelism of 4. For an example that shows how to configure multiple organizations, see [Use pool in multiple organizations](./configure-security.md#use-pool-in-multiple-organizations).
 
 ```azurecli
 az mdp pool create \
@@ -196,7 +196,7 @@ The following example shows the `organizations` list in the **organization-profi
 
 You can configure the **Azure DevOps organization** value by using the `organizations` list in the `organizationProfile` section.
 
-In the following example, a Managed DevOps pool is configured for all projects in a single organization, with a parallelism of 4. 
+In the following example, a pool is configured for all projects in a single organization, with a parallelism of 4. 
 
 For an example that shows how to configure multiple organizations, see [Use pool in multiple organizations](./configure-security.md#use-pool-in-multiple-organizations).
 
@@ -221,23 +221,23 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 * * *
 
-By default, your Managed DevOps pool is available to all projects in your specified organizations. To limit your pool to specific projects, see [Security settings - configure organization access](configure-security.md#configure-organization-access).
+By default, your pool is available to all projects in your specified organizations. To limit your pool to specific projects, see [Security settings: Configure organization access](configure-security.md#configure-organization-access).
 
 ## Maximum agents
 
 Specify the maximum number of agents that can be provisioned at the same time in your pool. For example, if you specify a **Maximum agents** value of **2**, you can run a maximum of two agents at the same time. If more than two jobs are queued, only two agents run jobs, while the other jobs wait.
 
-You can view the current status and count of the provisioned agents in your pool using the [Agents](./view-agents.md) pane. All of the agents in the **Agents** view (except agents with a **Returned** status) are running on a virtual machine resource, and count towards the **Maximum agents** count.
+You can view the current status and count of the provisioned agents in your pool by using the [Agents](./view-agents.md) pane. All of the agents in the **Agents** view (except agents with a **Returned** status) run on a virtual machine resource, and count towards the **Maximum agents** count.
 
 #### [Azure portal](#tab/azure-portal/)
 
-**Maximum agents** is configured in **Pool** settings for an existing pool, and on the **Basics** tab when creating a pool.
+You can configure **Maximum agents** in **Pool** settings for an existing pool, and on the **Basics** tab when you create a pool.
 
-:::image type="content" source="./media/pool-settings/maximum-agents.png" alt-text="Screenshot of Maximum agents setting.":::
+:::image type="content" source="./media/pool-settings/maximum-agents.png" alt-text="Screenshot that shows the Maximum agents setting.":::
 
 #### [ARM template](#tab/arm/)
 
-You can configure **Maximum agents** by using the `maximumConcurrency` property. 
+You can configure **Maximum agents** by using the `maximumConcurrency` property.
 
 In the following example, the **Maximum agents** value is `4`.
 
@@ -388,7 +388,7 @@ Not all SKUs are supported for all Azure regions. If you receive an error like `
 
 ## OS disk type
 
-Managed DevOps Pools provides the following disk types for the OS disk.
+Managed DevOps Pools provides the following disk types for the OS disk:
 
 * Standard
 * Standard SSD
