@@ -40,6 +40,63 @@ To enable consuming external versions for a specific package, follow these steps
 
     :::image type="content" source="media\allow-externally-sourced-versions.png" alt-text="A screenshot displaying how to enable external versions for a specific package in Azure Artifacts.":::
 
+## Allow external versions using the REST API
+
+To enable external versions for a specific package using the REST API, use the following endpoints:
+
+| Package Type | API Endpoints |
+|-------------|---------------|
+| **NuGet**   | - [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/set-upstreaming-behavior)<br>- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get-upstreaming-behavior) |
+| **npm**     | - [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-upstreaming-behavior)<br>- [Set scoped upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-scoped-upstreaming-behavior)<br>- [Get package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-package-upstreaming-behavior)<br>- [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-scoped-package-upstreaming-behavior) |
+| **Python**  | - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/get-upstreaming-behavior)<br>- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/set-upstreaming-behavior) |
+| **Maven**   | - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/get-upstreaming-behavior)<br>- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/set-upstreaming-behavior) |
+
+## Allow external versions using PowerShell
+
+To enable external versions for a specific package using PowerShell, follow these steps:
+
+1. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read, write, & manage** permissions.
+
+1. Create an environment variable for your personal access token.
+
+    ```PowerShell
+    $env:PATVAR = "YOUR_PERSONAL_ACCESS_TOKEN"
+    ```
+
+1. Convert your personal access token to a Base64-encoded string and construct the HTTP request header.
+
+    ```PowerShell
+    $token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$env:PatVar")))
+    $headers = @{
+        Authorization = "Basic $token"
+    }
+    ```
+
+1. Construct the endpoint URL based on your feed type:
+
+    - **Project-scoped feed**:
+
+        ```PowerShell
+        $url = "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_apis/packaging/feeds/<FEED_NAME>/<PROTOCOL>/packages/<PACKAGE_NAME>/upstreaming?api-version=7.1"
+        ```
+
+    - **Organization-scoped feed**:
+
+        ```PowerShell
+        $url = "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_apis/packaging/feeds/<FEED_NAME>/<PROTOCOL>/packages/<PACKAGE_NAME>/upstreaming?api-version=7.1"
+        ```
+
+1. Run the command from the table based on your scenario:
+
+    | Action | Description | Command |
+    |--------|-------------|---------|
+    | **Get Upstreaming Behavior** | Retrieve the upstream behavior state of your package. Uses `$url` and `$headers` from previous steps. | ```powershell<br>Invoke-RestMethod -Uri $url -Headers $headers<br>``` |
+    | **Set Upstreaming Behavior** | Allow externally sourced versions for your package by setting `versionsFromExternalUpstreams` to `AllowExternalVersions`. | ```powershell<br>$body = '{"versionsFromExternalUpstreams": "AllowExternalVersions"}'<br><br>Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"<br>``` |
+    | **Clear Upstreaming Behavior** | Reset upstream behavior by setting `versionsFromExternalUpstreams` to `Auto`. | ```powershell<br>$body = '{"versionsFromExternalUpstreams": "Auto"}'<br><br>Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"<br>``` |
+
+> [!NOTE]
+> Changes to upstream behavior may take time to propagate across the service. If your package is not available after updating the settings, allow up to 3 hours for the changes to take effect.
+
 ## Applicable scenarios
 
 The following section outlines common scenarios where external versions (packages from public registries) are either blocked or allowed from being saved to the feed. In the rest of this article, we refer to packages from public registries as *public packages* and packages stored in an Azure Artifacts feed as *private packages*.
@@ -85,100 +142,6 @@ In this scenario, if the team exclusively consumes public packages, whether from
 In this situation, when a public package is converted to a private package, the external versions setting doesn't affect the team's workflow in any way.
 
 :::image type="content" source="media\public-to-internal.svg" alt-text="An illustration showing a package converted from public to private.":::
-
-## Allow external versions using the REST API
-
-#### [NuGet](#tab/nuget/)
-
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/set-upstreaming-behavior)
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get-upstreaming-behavior)
-
-#### [npm](#tab/npm/)
-
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-upstreaming-behavior)
-- [Set scoped upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-scoped-upstreaming-behavior)
-- [Get package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-package-upstreaming-behavior)
-- [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-scoped-package-upstreaming-behavior)
-
-#### [Python](#tab/python/)
-
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/get-upstreaming-behavior)
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/set-upstreaming-behavior)
-
-#### [Maven](#tab/maven/)
-
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/get-upstreaming-behavior)
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/set-upstreaming-behavior)
-
-* * *
-
-## Allow external versions using PowerShell
-
-1. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read, write, & manage** permissions.
-
-    :::image type="content" source="media\packaging-permissions.png" alt-text="Screenshot showing how to select packaging permissions.":::
-
-1. Create an environment variable for your personal access token.
-
-    ```PowerShell
-    $env:PATVAR = "YOUR_PERSONAL_ACCESS_TOKEN"
-    ```
-
-1. Convert your personal access token to baser64 encoded string and construct the HTTP request header.
-
-    ```PowerShell
-    $token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$env:PatVar")))
-    $headers = @{
-        Authorization = "Basic $token"
-    }
-    ```
-
-1. Construct your endpoint url. Example: //pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/pkg1.0.0.nupkg/upstreaming?api-version=6.1-preview.1
-
-    - **Project-scoped feed**:
-
-        ```PowerShell
-        $url = "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_apis/packaging/feeds/<FEED_NAME>/<PROTOCOL>/packages/<PACKAGE_NAME>/upstreaming?api-version=6.1-preview.1"
-        ```
-
-    - **Organization-scoped feed**:
-
-        ```PowerShell
-        $url = "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_apis/packaging/feeds/<FEED_NAME>/<PROTOCOL>/packages/<PACKAGE_NAME>/upstreaming?api-version=6.1-preview.1"
-        ```
-
-#### [Get upstreaming behavior](#tab/get/)
-
-Run the following command to retrieve the upstream behavior state of your package. `$url` and `$headers` are the same variables we used in the previous section.
-
- ```PowerShell
- Invoke-RestMethod -Uri $url -Headers $headers
- ```
-
-#### [Set upstreaming behavior](#tab/set/)
-
-Run the following commands to allow externally sourced versions for your package. This sets `versionsFromExternalUpstreams` to `AllowExternalVersions`, and uses the `$url` and `$headers` variables to query the REST API.
-
-```PowerShell
-$body = '{"versionsFromExternalUpstreams": "AllowExternalVersions"}'
-
-Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"
-```
-
-> [!NOTE]
-> Changes to upstream behavior may take time to propagate across the service. If your package is not available after updating the settings, allow up to 3 hours for the changes to take effect.
-
-#### [Clear upstreaming behavior](#tab/clear/)
-
-To clear the upstream behavior for your package, run the following commands to set `versionsFromExternalUpstreams` to `Auto` and query the REST API.
-
-```PowerShell
-$body = '{"versionsFromExternalUpstreams": "Auto"}'
-
-Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"
-```
-
-* * *
 
 ## Related articles
 
