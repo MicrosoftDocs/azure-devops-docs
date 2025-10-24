@@ -96,7 +96,7 @@ This design gives clients the opportunity to proactively slow down their rate of
       `Retry-After`
    :::column-end:::
    :::column span="2":::
-       The [RFC 6585](https://tools.ietf.org/html/rfc6585#section-4")-specified header sent to tell you how long to wait before you send your next request to fall under the detection threshold. Units: seconds.
+       The [RFC 6585](https://tools.ietf.org/html/rfc6585#section-4)-specified header sent to tell you how long to wait before you send your next request to fall under the detection threshold. Units: seconds.
    :::column-end:::
 :::row-end:::
 ---
