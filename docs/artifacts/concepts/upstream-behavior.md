@@ -90,9 +90,9 @@ To enable external versions for a specific package using PowerShell, follow thes
 
     | Action | Description | Command |
     |--------|-------------|---------|
-    | **Get Upstreaming Behavior** | Retrieve the upstream behavior state of your package. Uses `$url` and `$headers` from previous steps. | ```powershell<br>Invoke-RestMethod -Uri $url -Headers $headers<br>``` |
-    | **Set Upstreaming Behavior** | Allow externally sourced versions for your package by setting `versionsFromExternalUpstreams` to `AllowExternalVersions`. | ```powershell<br>$body = '{"versionsFromExternalUpstreams": "AllowExternalVersions"}'<br><br>Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"<br>``` |
-    | **Clear Upstreaming Behavior** | Reset upstream behavior by setting `versionsFromExternalUpstreams` to `Auto`. | ```powershell<br>$body = '{"versionsFromExternalUpstreams": "Auto"}'<br><br>Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"<br>``` |
+    | **Get Upstreaming Behavior** | Retrieve the upstream behavior state of your package. Uses `$url` and `$headers` from previous steps. | `Invoke-RestMethod -Uri $url -Headers $headers` |
+    | **Set Upstreaming Behavior** | Allow externally sourced versions for your package by setting `versionsFromExternalUpstreams` to `AllowExternalVersions`. | `$body = '{"versionsFromExternalUpstreams": "AllowExternalVersions"}'` <br> `Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"` |
+    | **Clear Upstreaming Behavior** | Reset upstream behavior by setting `versionsFromExternalUpstreams` to `Auto`. | `$body = '{"versionsFromExternalUpstreams": "Auto"}'` <br> `Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"` |
 
 > [!NOTE]
 > Changes to upstream behavior may take time to propagate across the service. If your package is not available after updating the settings, allow up to 3 hours for the changes to take effect.
