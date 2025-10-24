@@ -54,9 +54,25 @@ On the **All** tab of the **Queries** page, the **My Queries** folder contains t
 - **Assigned to me** uses the `@Me`  macro to list all work items assigned to you in the current project.
 - **Followed work items** uses the **@Follows**  macro, `ID` in `@Follows`, to list all work items you're following. For more information, see [Follow a work item or pull request](../work-items/follow-work-items.md).
 
-### Filter the list of queries 
+### All and Favorites tab supported tasks
 
-Enter a keyword into the filter box on either the **Favorites** or **All** tabs of the **Queries** page to filter the queries displayed. For more information, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
+You can do most tasks for viewing and running queries from either the **All** or **Favorites** tab of the **Queries** page, as indicated in the following table. 
+
+|<br/>Task |Favorites |All |
+|-------------|----------|
+|List all favorited queries, yours or a team you belong to | ✔️ |  |
+|List all your queries or shared queries for the current project |  | ✔️ |
+|Favorite a query |  |✔️ |
+|Unfavorite a query |✔️ |✔️ |
+|Filter the list of queries |✔️ |✔️ |
+|Expand or collapse folders |✔️ |✔️|
+|Run a query or open the context menu for a query |✔️ |✔️|
+
+Only the built-in queries and queries you save under **My Queries** appear under **My Queries**. Only queries you favorite appear in **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team.
+
+## Filter the list of queries 
+
+Enter a keyword into the filter box on either the **Favorites** or **All** tabs of the **Queries** page to filter the queries displayed. For more information, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 ::: moniker range="< azure-devops"
 
@@ -66,7 +82,7 @@ Enter a keyword into the filter box on either the **Favorites** or **All** tabs 
 
 ::: moniker range="azure-devops"
 
-:::image type="content" source="media/view-run-queries/filter-queries-new-boards-hubs.png" alt-text="Screenshot showing all queries in the project filtered by a keyword criteria." :::
+:::image type="content" source="media/view-run-queries/filter-queries-new-boards-hubs.png" alt-text="Screenshot showing all queries in the project filtered by a keyword criteria.":::
 
 ::: moniker-end
 
@@ -94,7 +110,7 @@ You can select a folder within the breadcrumb to open the folder.
 
 :::image type="content" source="media/example-queries/queries-breadcrumb-example.png" alt-text="Screenshot of queries breadcrumb example." :::
 
-You can also select a favorite query or return to the **All** queries page from the drop-down menu of an open query.
+You can also open a favorite query or return to the **All** queries page from the dropdown menu of an open query.
 
 ::: moniker range="< azure-devops"
 
@@ -213,22 +229,6 @@ For listed individual work items, you can:
 :::image type="content" source="media/view-run-queries/visual-studio.png" alt-text="Screenshot of options for work items on the Team Explorer Work Items page.":::
 
 You can also create work items by selecting **New Work Item** and entering a work item title. Changes you make through Visual Studio are reflected in Azure Boards.
-
-## All and Favorites supported tasks  
-
-You can do most tasks for viewing and running queries from either the **All** or **Favorites** tab of the **Queries** page, as indicated in the following table. 
-
-|<br/>Task |Favorites |All |
-|-------------|----------|
-|View all favorited queries, yours or a team you belong to | ✔️ |  |
-|View all your queries or shared queries for the current project |  | ✔️ |
-|Run a query, open the context menu for a query |✔️ |✔️|
-|Expand or collapse container folders or query folders |✔️ |✔️|
-|Filter the list of queries |✔️ |✔️ |
-|Favorite a query |  |✔️ |
-|Unfavorite a query |✔️ |✔️ |
-
-Only the built-in queries and queries you save under **My Queries** appear under **My Queries**. Only queries you favorite appear in **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team.
 
 ## Next step
 
