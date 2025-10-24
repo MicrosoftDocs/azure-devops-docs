@@ -26,7 +26,7 @@ You can add your pool's agents to your virtual network by using the following st
 
 The previous steps delegate the subnet for exclusive access by the pool. Other pools or resources can't use the subnet.
 
-To connect multiple pools to the same virtual network, multiple subnets can be used, each delegated and associated with their own pool.
+A pool can use multiple subnets to connect multiple pools to the same virtual network. Each subnet is delegated and associated with its own pool.
 
 ## Create or bring your virtual network and subnet
 

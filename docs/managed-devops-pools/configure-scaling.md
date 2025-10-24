@@ -1052,7 +1052,7 @@ If you choose the all week scheme, you can specify the number of agents you want
 
 #### [Azure portal](#tab/azure-portal/)
 
-:::image type="content" source="media/agent-performance/manual-scaling-all-week-scheme.png" alt-text="Screenshot that shows an all week scheme.":::
+:::image type="content" source="media/agent-performance/manual-scaling-all-week-scheme.png" alt-text="Screenshot that shows an all-week scheme.":::
 
 #### [ARM template](#tab/arm/)
 
