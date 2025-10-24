@@ -148,7 +148,7 @@ Anyone with contributor permissions for a repository can view a summary of all a
 
 To display results, code scanning tasks need to run first. Once the first scan finishes, any detected vulnerabilities are displayed in the Advanced Security tab. 
 
-By default, the alerts page shows code scanning scanning results for the default branch of the repository. 
+By default, the alerts page shows code scanning results for the default branch of the repository. 
 
 The status of a given alert reflects the state for the default branch and latest run pipeline, even if the alert exists on other branches and pipelines. 
 
