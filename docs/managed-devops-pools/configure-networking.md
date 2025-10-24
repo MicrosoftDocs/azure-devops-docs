@@ -206,6 +206,18 @@ If you have systems in place on your network (NSG, Firewall, etc.) that restrict
 
 If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image (Docker or ACR).
 
+## Validating Endpoint connectivity
+
+To confirm that you can use a given subnet with Managed DevOps Pools, you can run the following script on a resource on that subnet to validate that the network flow is configured to reach all these available endpoints, and additionally the Managed DevOps control plane.
+
+[ValidateMDPEndpoints.ps1](./scripts/ValidateMDPEndpoints.ps1)
+
+To run the script, with Powershell Core, Powershell 5 or greater you can run 
+
+```powershell
+.\ValidateMDPEndpoints.ps1 -organization "<your-organization>"
+```
+
 ## Configure the Azure DevOps Agent to run behind a Proxy
 
 If you configured a proxy service on your image and want your workloads running on your Managed DevOps pool to run behind this proxy, you must add the following environment variables on your image.
