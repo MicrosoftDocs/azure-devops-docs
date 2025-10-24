@@ -16,7 +16,6 @@ ms.date: 10/24/2025
 # View, run, or email a work item query
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-eq-2022.md](../../includes/version-vs-gt-eq-2022.md)]
 
 To locate Azure Boards work items assigned to you or your team, or that meet other criteria, you can run a query. You can access and run predefined queries, or easily create new queries by modifying existing query definitions.
 
@@ -109,6 +108,7 @@ You can also select a favorite query or return to the **All** queries page from 
 
 ::: moniker-end
 
+<a name="run-a-query-in-azure-boards"></a>
 ## Run a query
 
 To run a query from either the **Favorites** or **All** tabs of the **Queries** page, expand its folder if necessary and select the query. The query **Results** page opens.
@@ -119,6 +119,7 @@ You can also select the **More actions** icon next to the query on the **Queries
 
 :::image type="content" source="media/view-run-queries/run-query.png" alt-text="Screenshot of the context menu for a query on the Queries page.":::
 
+<a name="run-a-query-from-the-command-line"></a>
 ### Run a query from the Azure DevOps CLI
 
 You can also run an Azure Boards query by using the [az boards query](/cli/azure/boards#az-boards-query) command in the Azure DevOps command line interface. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
