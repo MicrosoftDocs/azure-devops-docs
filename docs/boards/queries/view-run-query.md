@@ -54,6 +54,7 @@ On the **All** tab of the **Queries** page, the **My Queries** folder contains t
 - **Assigned to me** uses the `@Me`  macro to list all work items assigned to you in the current project.
 - **Followed work items** uses the **@Follows**  macro, `ID` in `@Follows`, to list all work items you're following. For more information, see [Follow a work item or pull request](../work-items/follow-work-items.md).
 
+<a name="all-and-favorites-supported-tasks"></a>
 ### All and Favorites tab supported tasks
 
 You can do most tasks for viewing and running queries from either the **All** or **Favorites** tab of the **Queries** page, as indicated in the following table. 
@@ -211,7 +212,7 @@ The email sends through your default mail client, and includes a link to the que
 
 ## View work items in Visual Studio
 
-On the **Work Items** page of the Visual Studio **Team Explorer**, you can list work items for connected Azure DevOps projects. Query creation and management must be done in the Azure Boards web interface.
+On the **Work Items** page of the Visual Studio **Team Explorer**, you can list work items for connected projects. Query creation and management must be done in the Azure Boards web interface.
 
 In the **Work Items** Search pane, you can apply filters to view listed work items by **Assigned to**, **Created by**, **State**, or **Work Item Type**.
 
