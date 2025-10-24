@@ -14,7 +14,7 @@ ms.custom:
   - cross-service
   - sfi-image-nochange
 ---
- 
+
 # Use Azure Boards in Microsoft Teams
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
