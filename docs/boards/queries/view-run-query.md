@@ -17,7 +17,7 @@ ms.date: 10/24/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To locate Azure Boards work items assigned to you or your team, or that meet other criteria, you can run a query. You can access and run predefined queries, or easily create new queries by modifying existing query definitions.
+This article describes how to locate and interact with Azure Boards work items by running queries. You can access and run built-in or shared predefined queries to locate work items assigned to you or that meet other criteria.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ To locate Azure Boards work items assigned to you or your team, or that meet oth
 
 ## Open the Queries page
 
-To open the **Queries** page for your project, select **Boards** > **Queries**. The **Queries** page opens to the **Favorites** tab, showing queries you or your team choose as favorites. For more information, see [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query).
+To open the **Queries** page for your project, select **Boards** > **Queries**. The **Queries** page opens to the **Favorites** tab, showing queries you or your team chose as favorites. For more information, see [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query).
 
 ::: moniker range="azure-devops"
 
@@ -37,11 +37,6 @@ The **Favorites** tab also shows the last queries you opened under **Continue wh
 
 To see all personal and shared queries in your project, select the **All** tab. The **All** tab shows built-in queries, queries that you defined, and queries that are shared in your project. Expand the **My Queries**, **Shared Queries**, and other folders to access their queries.
 
-On the **All** tab of the **Queries** page, the **My Queries** folder contains the following built-in queries in addition to the ones you define:
-
-- **Assigned to me** uses the `@Me`  macro to list all work items assigned to you in the current project.
-- **Followed work items** uses the **@Follows**  macro, `ID` in `@Follows`, to list all work items you're following. For more information, see [Follow a work item or pull request](../work-items/follow-work-items.md).
-
 ::: moniker range="< azure-devops"
 
 :::image type="content" source="media/view-run-queries/open-queries-vert.png" alt-text="Screenshot of the Queries page All tab.":::
@@ -50,11 +45,16 @@ On the **All** tab of the **Queries** page, the **My Queries** folder contains t
 
 ::: moniker range="azure-devops"
 
-:::image type="content" source="media/view-run-queries/open-queries-new-boards-hubs.png" alt-text="Screenshot of the All tab on the Queries page.":::
+:::image type="content" source="media/view-run-queries/query-navigation-new-boards-hubs.png" alt-text="Screenshot of the All tab on the Queries page.":::
 
 ::: moniker-end
 
-## Filter the list of queries 
+On the **All** tab of the **Queries** page, the **My Queries** folder contains the following built-in queries in addition to the ones you define:
+
+- **Assigned to me** uses the `@Me`  macro to list all work items assigned to you in the current project.
+- **Followed work items** uses the **@Follows**  macro, `ID` in `@Follows`, to list all work items you're following. For more information, see [Follow a work item or pull request](../work-items/follow-work-items.md).
+
+### Filter the list of queries 
 
 Enter a keyword into the filter box on either the **Favorites** or **All** tabs of the **Queries** page to filter the queries displayed. For more information, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
@@ -122,7 +122,7 @@ You can also select the **More actions** icon next to the query on the **Queries
 <a name="run-a-query-from-the-command-line"></a>
 ### Run a query from the Azure DevOps CLI
 
-You can also run an Azure Boards query by using the [az boards query](/cli/azure/boards#az-boards-query) command in the Azure DevOps command line interface. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can run an Azure Boards query by using the [az boards query](/cli/azure/boards#az-boards-query) command in the Azure DevOps command line interface. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards query [--id] [--org] [--path] [--project] [--wiql] 
@@ -130,10 +130,10 @@ az boards query [--id] [--org] [--path] [--project] [--wiql]
 
 #### Parameters
 
-- **id**: The ID of an existing query. Required unless `--path` or `--wiql` is specified.
-- **wiql**: The query in Work Item Query Language (WIQL) format. Ignored if `--id` or `--path` is specified.
-- **path**: The path of an existing query. Ignored if `--id` is specified.
-- **org**: Azure DevOps organization URL, such as `--org https://dev.azure.com/MyOrganizationName/`. Required unless configured as default or picked up using `git config`. Configure the default organization using `az devops configure -d organization=ORG_URL`.
+- `id`: The ID of an existing query. Required unless `--path` or `--wiql` is specified.
+- `wiql`: The query in Work Item Query Language (WIQL) format. Ignored if `--id` or `--path` is specified.
+- `path`: The path of an existing query. Ignored if `--id` is specified.
+- `org`: Azure DevOps organization URL, such as `--org https://dev.azure.com/MyOrganizationName/`. Required unless configured as default or picked up using `git config`. Configure the default organization using `az devops configure -d organization=ORG_URL`.
 - **project**: Project name or ID. Required if not configured as default or picked up using `git config`. Configure the default project using `az devops configure -d project=NAME_OR_ID`.
 
 #### Examples
@@ -181,6 +181,8 @@ Select the **More actions** icon at upper right and select **Email query** or **
 
 You can send email only to individual project members that the system recognizes. Sending to a team group or security group isn't supported. Recipients must have permissions to read the mailed work items.
 
+The email sends through your default mail client, and includes a link to the query that returns only the listed work items. For more information, see [Copy or clone work items](../backlogs/copy-clone-work-items.md).
+
 > [!NOTE]
 > To email a formatted list to people who aren't project members, see [Copy or email a list of work items](../backlogs/copy-clone-work-items.md#copy-or-email-a-list-of-work-items).
 
@@ -226,7 +228,9 @@ You can do most tasks for viewing and running queries from either the **All** or
 |Favorite a query |  |✔️ |
 |Unfavorite a query |✔️ |✔️ |
 
-Only the built-in queries and queries you save under **My Queries** appear under **My Queries**. Only queries you favorite appear in **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team.## Next step
+Only the built-in queries and queries you save under **My Queries** appear under **My Queries**. Only queries you favorite appear in **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team.
+
+## Next step
 
 > [!div class="nextstepaction"]
 > [Define a work item query](using-queries.md)
