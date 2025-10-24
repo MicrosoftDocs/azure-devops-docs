@@ -50,6 +50,7 @@ To enable external versions for a specific package using the REST API, use the f
 | **npm**     | - [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-upstreaming-behavior)<br>- [Set scoped upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-scoped-upstreaming-behavior)<br>- [Get package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-package-upstreaming-behavior)<br>- [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-scoped-package-upstreaming-behavior) |
 | **Python**  | - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/get-upstreaming-behavior)<br>- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/set-upstreaming-behavior) |
 | **Maven**   | - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/get-upstreaming-behavior)<br>- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/set-upstreaming-behavior) |
+| **Cargo**   | - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/cargo/get-upstreaming-behavior)<br>- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/cargo/set-upstreaming-behavior) |
 
 ## Allow external versions using PowerShell
 
