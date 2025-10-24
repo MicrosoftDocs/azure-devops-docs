@@ -5,18 +5,11 @@ title: Azure Pipelines with Slack
 ms.manager: bijuv
 ms.author: atinb
 author: atinb
-ms.date: 7/22/2024
+ms.date: 10/24/2025
 ---
 
-If you get the following errors when using the Azure Pipelines App for Slack, try the procedures in this section.
+If you get the following errors when using the Azure Pipelines App for Slack, try the following procedure.
 
-### Sorry, something went wrong. Please try again.
+### Configuration failed. Make sure that the organization exists and that you have sufficient permissions.
 
-The Azure Pipelines app uses the OAuth authentication protocol, and requires [Third-party application access via OAuth](../../../organizations/accounts/change-application-access-policies.md) to be enabled. To enable this setting, navigate to **Organization Settings** > **Security** > **Policies**, and enable **Third-party application access via OAuth**.
-
-:::image type="content" source="../media/troubleshooting/third-party-app-consent.png" alt-text="A screenshot showing how to enable third party access via OAuth.":::
-
-### Configuration failed. Please make sure that the organization exists and that you have sufficient permissions.
-
-If you're seeing this error, you're most likely a Guest user in the Entra tenant connected to your Azure DevOps organization. You'll need to have an Entra Member go through the configuration steps.
-
+If you're seeing this error, you're most likely a Guest user in the Microsoft Entra tenant connected to your Azure DevOps organization. You need to have an Microsoft Entra member go through the configuration steps.
