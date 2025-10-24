@@ -17,9 +17,11 @@ ms.date: 10/24/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes how to locate and interact with Azure Boards work items by running queries. You can access and run built-in or shared predefined queries to locate work items assigned to you or that meet other criteria.
+This article describes how to access and interact with Azure Boards work items by running and sharing queries. You can view and run built-in or shared queries to identify work items assigned to you or that meet other criteria.
 
 ## Prerequisites
+
+An Azure DevOps project that has work items assigned to you or queries defined by or shared with you. To define a query, see [Define a work item query](using-queries.md).
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
@@ -89,7 +91,7 @@ Enter a keyword into the filter box on either the **Favorites** or **All** tabs 
 
 ## Navigate to queries and folders
 
-From either the **Favorites** or **All** tab of the **Queries** page, you can navigate and filter to find and open specific queries.
+From either the **Favorites** or **All** tab of the **Queries** page, you can navigate to find and open specific queries.
 
 On the **All** tab, query pages can appear directly or be in folders or subfolders. You can navigate to a folder, subfolder, or query page.
 
@@ -166,10 +168,10 @@ Priority    Node Name         Work Item Type    Title                           
 2           CMMI              Bug               Slow response on form
 ``` 
 
-The following command runs a query with the specified WIQL and shows the result in table format.
+The following command runs a WIQL query and shows the result in table format.
 
 ```azurecli 
-az boards query --wiql "SELECT [Microsoft.VSTS.Common.Priority], [System.NodeName], [System.WorkItemType], [System.Title], [Microsoft.VSTS.Scheduling.RemainingWork], [System.AssignedTo], [System.State], [System.Tags], [System.AreaPath] FROM workitems WHERE [System.WorkItemType] = 'Bug' AND [System.AreaPath] = 'Fabrikam Fiber' ORDER BY [System.WorkItemType]" --output table
+az boards query --wiql "SELECT [Microsoft.VSTS.Common.Priority], [System.NodeName], [System.WorkItemType], [System.Title], [Microsoft.VSTS.Scheduling.RemainingWork] FROM workitems WHERE [System.WorkItemType] = 'Bug' AND [System.AreaPath] = 'Fabrikam Fiber' ORDER BY [System.WorkItemType]" --output table
 
 Priority    Node Name       Work Item Type    Title                  Remaining Work
 ----------  --------------  ----------------  ----------------       ----------------
@@ -178,11 +180,11 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 ``` 
 ::: moniker-end
 
-## Email query items or share a query URL
+## Email or share a query
 
-From the query **Editor** or **Results** view, you can email a formatted list of query items to project members or copy the query URL.
+From the query **Editor** or **Results** view, you can email a formatted list of query items to project members or copy the query URL to share.
 
-Select the **More actions** icon at upper right and select **Email query** or **Copy query URL** from the context menu.
+Select the **More actions** icon at upper right and then select **Email query** or **Copy query URL** from the context menu.
 
 ::: moniker range="< azure-devops"
 
