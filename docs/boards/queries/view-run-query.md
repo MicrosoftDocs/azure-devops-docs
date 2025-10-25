@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/24/2025
+ms.date: 10/27/2025
 ##customer intent: As an Azure Boards user, I want to learn how to use Azure Boards queries so I can easily access, run, and share queries for my team's work items.
 
 ---
@@ -21,7 +21,7 @@ This article describes how to access and interact with Azure Boards work items b
 
 ## Prerequisites
 
-An Azure DevOps project that has work items assigned to you or queries defined by or shared with you. To define a query, see [Define a work item query](using-queries.md).
+- An Azure DevOps project that has work items assigned to or followed by you, or queries defined by or shared with you. To define a query, see [Define a work item query](using-queries.md).
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
@@ -37,7 +37,7 @@ The **Favorites** tab also shows the last queries you opened under **Continue wh
 
 ::: moniker-end
 
-To see all personal and shared queries in your project, select the **All** tab. The **All** tab shows built-in queries, queries that you defined, and queries that are shared in your project. Expand the **My Queries**, **Shared Queries**, and other folders to access their queries.
+To see all personal and shared queries in your project, select the **All** tab on the **Queries** page. The **All** tab shows built-in queries, queries that you defined, and queries that are shared in your project. Expand the **My Queries**, **Shared Queries**, and other folders to access their queries.
 
 ::: moniker range="< azure-devops"
 
@@ -180,6 +180,7 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 ``` 
 ::: moniker-end
 
+<a name="email-query-items-or-share-a-query-url"></a>
 ## Email or share a query
 
 From the query **Editor** or **Results** view, you can email a formatted list of query items to project members or copy the query URL to share.
