@@ -2,7 +2,7 @@
 title: Artifact sources in Classic release pipelines
 description: Learn about the list of artifact sources that can be used in a Classic release pipeline.
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: sandrica
 author: silviuandrica
 ms.date: 07/31/2024

@@ -1,7 +1,7 @@
 ---
 title: Set a Resource Manager workload identity service connection
 description: Learn how to manually set an Azure Resource Manager workload identity service connection in Azure Pipelines, one of the services in Azure DevOps.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jukullam
 author: juliakm
 ms.date: 10/16/2024

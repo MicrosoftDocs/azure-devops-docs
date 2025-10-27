@@ -1,7 +1,7 @@
 ---
 title: Use runtime and type-safe parameters
 description: Learn how to use runtime parameters to customize pipeline behavior, control data types, and dynamically pass values.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/15/2025
 monikerRange: '>=azure-devops-2020'
 ai-usage: ai-assisted

@@ -1,7 +1,7 @@
 ---
 title: Build, test, and deploy PHP apps
 description: Learn how to use Azure Pipelines to build, test, and deploy PHP apps to Azure App Service.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.author: jukullam
 ms.custom: freshness-fy22q2

@@ -2,7 +2,7 @@
 title: Stages in Azure Pipelines
 description: Learn how to organize your jobs into stages, define dependencies, and set conditions. Understand how to implement deployment strategies and use YAML or a Classic pipeline to define stages.
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/28/2025
 monikerRange: '<= azure-devops'
 ---

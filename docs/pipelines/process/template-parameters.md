@@ -1,7 +1,7 @@
 ---
 title: Parameters and templateContext
 description: How to use parameters in templates
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/16/2025
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted

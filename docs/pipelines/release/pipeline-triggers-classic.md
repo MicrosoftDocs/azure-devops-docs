@@ -1,7 +1,7 @@
 ---
 title: Configure build completion triggers (classic)
 description: Configure build completion triggers (classic)
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: sdanie
 author: steved0x
 ms.date: 01/25/2023

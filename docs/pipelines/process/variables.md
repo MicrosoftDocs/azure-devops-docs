@@ -2,7 +2,7 @@
 title: Define variables
 ms.custom: devx-track-azurecli, copilot-scenario-highlight
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.date: 10/01/2025
 ai-usage: ai-assisted

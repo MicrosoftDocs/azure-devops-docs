@@ -1,7 +1,7 @@
 ---
 title: Azure Resource Manager service connection special cases
 description: Connect Azure Pipelines to Azure using an Azure Resource Manager service connection with either an agent-assigned managed identity or a publish profile.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jukullam
 author: juliakm
 ms.date: 10/18/2024

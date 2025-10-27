@@ -1,7 +1,7 @@
 ---
 title: Pipeline conditions
 description: Learn about conditions that Azure Pipelines stages, jobs, or steps can run under, and ways to specify those conditions.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.date: 08/01/2025
 monikerRange: '<= azure-devops'
