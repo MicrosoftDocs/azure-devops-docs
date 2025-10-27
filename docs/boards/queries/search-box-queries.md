@@ -1,15 +1,15 @@
 ---
-title: Use semantic searches in Azure Boards and Azure DevOps
+title: Use Semantic Work Item Searches
 titleSuffix: Azure Boards
-description: Learn how to use the search box to quickly filter for assigned to, created by, state, or work item type in Azure Boards and Azure DevOps.  
+description: Learn how to use the search box to quickly filter for assigned to, created by, state, or work item type in Azure Boards.  
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 10/27/2025
 ---
 
 # Run a semantic work item search
@@ -18,7 +18,7 @@ ms.date: 04/01/2022
 
 <a id="search-box"></a>
 
-You can find work items by using shortcut filters or by specifying keywords or phrases. You can also use specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators. Searching isn't case-sensitive. Use semantic searches when you want to do the following tasks:
+You can find work items by using shortcut filters or by specifying keywords or phrases. You can also use specific fields/field values, assignment or date modifications, or Equals, Contains, and Not operators. Searching isn't case-sensitive. Use semantic searches to perform these tasks:
 
 - Find a specific work item using its ID or a keyword
 - Find one or more work items across all projects in a fast, flexible manner
@@ -29,16 +29,16 @@ You can find work items by using shortcut filters or by specifying keywords or p
  
 ## Prerequisites
 
-- **Access levels**: **All project members**: Every project member can use the search functions, including users with Stakeholder, Basic, and higher levels of access.
+- **Access levels**: **All project members**: Every project member can use the search functions, including users with Stakeholder, Basic, and higher access levels.
 - Search results:
-  - **Access-based results**: When you're searching across the organization or collection, only results for which a project member has access are listed.
+  - **Access-based results**: When you search across the organization or collection, the system lists only results that a project member can access.
   - **Stakeholder limitations**:
-    - **Wiki search**: Stakeholder wiki search results are limited to provisioned wikis. Published wiki results don’t appear because they require access to regular repositories, which Stakeholders don’t have.
-    - **Code search**: Code search results don’t appear for Stakeholders.
+    - **Wiki search**: Stakeholder wiki search results are limited to provisioned wikis. Published wiki results don't appear because they require access to regular repositories, which stakeholders don't have.
+    - **Code search**: Code search results don't appear for stakeholders.
 
 ::: moniker range="< azure-devops"
 > [!TIP]   
-> If semantic search is configured, you'll notice that the search box moves into the blue bar as shown in the following image.  
+> If you configure semantic search, you notice that the search box moves into the blue bar as shown in the following image.  
 > 
 >![Search Work Items Text Box](media/search-box/search-box-vsts.png)  
 ::: moniker-end     
@@ -47,24 +47,24 @@ You can find work items by using shortcut filters or by specifying keywords or p
 
 ## Start a semantic search for work items
 
-With semantic search you can search: 
+With semantic search, you can search: 
 - Across one or more projects  
 - Across all work item fields using free text  
 - Against specific work item fields  
 
-Free text search easily searches across all work item fields, including custom fields, resulting in more natural searches. Search results are displayed in a snippet view where the search matches found are highlighted. Semantic search also integrates with work item tracking, providing familiar controls to view, edit, comment, and share information within a work item form. 
+Free text search searches across all work item fields, including custom fields, resulting in more natural searches. The system displays search results in a snippet view where the search matches are highlighted. Semantic search integrates with work item tracking, providing familiar controls to view, edit, comment, and share information within a work item form. 
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon. 
+1. Select any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or select the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon. 
 
    :::image type="content" source="../../project/search/media/get-started/work-item-search-vert.png" alt-text="Work Item Search box":::
 
-2. Search results are displayed in a snippet view where the matches found are shown in bold.
+2. The system displays search results in a snippet view where the matches found appear in bold.
 
    ![Search results](../../project/search/media/work-item-search-get-started/results-matching.png)
 
    This search is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
-   "updating" also finds instances of the word "updated" and "update". Searches _aren't_ case-sensitive.
+   "updating" finds instances of the word "updated" and "update." Searches aren't case-sensitive.
 
 3. Select a snippet of a work item and display it in the right window. 
 
@@ -76,7 +76,7 @@ Free text search easily searches across all work item fields, including custom f
 
 ### Fine-tune semantic search results 
 
-1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
+1. Fine-tune your search by specifying the fields to search. Enter `a:` and a username to search for all items assigned to that user.
 
    :::image type="content" source="../../project/search/media/get-started/search-work-vert.png" alt-text="Search from the title bar":::   
 
@@ -85,20 +85,20 @@ Free text search easily searches across all work item fields, including custom f
    * `a:` for **Assigned to:** 
    * `c:` for **Created by:** 
    * `s:` for **State** 
-   * `t:` for **Work item type**<p />
+   * `t:` for **Work item type**
 
 2. Start entering the name of a field in your work items; for example, type `ta`.
 
    ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
-   that match user input and help the user to complete the search faster. For example, a search such as 
-   `tags:Critical` finds all work items tagged "Critical". 
+   that match user input and help the user complete the search faster. For example, a search such as 
+   `tags:Critical` finds all work items tagged "Critical." 
 
 3. Add more filters to further narrow your search, and use Boolean operators
    to combine terms if necessary. For example, 
    `a: Chris t: Bug s: Active` finds all active bugs assigned
-   to a user named "Chris".
+   to a user named "Chris."
 
 4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
@@ -110,7 +110,7 @@ Free text search easily searches across all work item fields, including custom f
 ### From the web portal 
 
 ::: moniker range="azure-devops"
-Improvised search isn't available from Azure DevOps Services. Only [semantic search](#start-search). 
+Improvised search isn't available from Azure DevOps Services. Only [semantic search](#start-search) is available. 
 
 ::: moniker-end
 
@@ -127,7 +127,7 @@ Finding work items using the search box (Team Explorer)
 
 You can combine shortcuts and use search operators within the search box.
 
-Use the ![Search box clear icon (Team Explorer)](media/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, enter **Ctrl+'**.
+Use the ![Search box clear icon (Team Explorer)](media/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, press **Ctrl+'**.
 
 <a id="keywords"></a> 
 
@@ -166,7 +166,7 @@ To find work items based on a keyword or phrase contained within other text stri
 |Created yesterday as a test activity.|`"Created Date"=@Today-1 Activity=Test`|  
 
 > [!NOTE]     
-> Some fields, such as **History** and **Description**, do not support partial word text searches. For example, if the **History** field contains the phrase `reproducible behavior` and you search for `History:repro` the work item isn't found. However, if you search for the complete string `History:reproducible` the work item is found.
+> Some fields, such as **History** and **Description**, don't support partial word text searches. For example, if the **History** field contains the phrase `reproducible behavior` and you search for `History:repro`, the work item isn't found. However, if you search for the complete string `History:reproducible`, the work item is found.
 
 ## Use @Me or @Today macros
 
@@ -246,16 +246,15 @@ The following examples show how to use operators when you create a search string
 |Contain the keyword `triage` in the title or description, aren't assigned to you, and aren't closed.|`triage -A=@me -S=Closed`|
 |Active bugs that are assigned to you that don't contain the keyword `bugbash` in the title.|`S=Active T=bug A=@Me -Title:bugbash`
 
+## FAQ
+
+### Q: Does the search box support less than/greater than operators?
+
+**A:** No. The search box doesn't recognize comparison operators such as greater than (>) or less than (<). It translates queries with these operators into a search phrase.
+
 ## Related content
 
 - [About managed queries](about-managed-queries.md)  
 - [Define a query](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)
-
-## Q & A
-
-### Q: Does the search box support less than/greater than operators?
-
-**A:** No. The search box doesn't recognize comparison operators such as greater than (>) or less than (<). It translates queries with these operators into a search phrase.
-

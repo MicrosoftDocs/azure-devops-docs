@@ -1,17 +1,18 @@
 ---
-title: Change the Work Items page experience
+title: Change the Work Items Page Experience
 titleSuffix: Azure Boards
 description: Learn how to change the Work Items page setting from legacy to default.
 ms.custom: work-items
 ms.service: azure-devops-boards
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
+ai-usage: ai-assisted
 ms.author: chcomley
-ms.topic: quickstart
+ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 11/21/2024
+ms.date: 10/27/2025
 ---
 
-# Set the work items experience
+# Change the Work Items page experience
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
@@ -47,13 +48,13 @@ Visual Studio 2019 provides flexibility in how you interact with work items by o
 
 ## Switch work item views
 
-To switch between the default and legacy views of the Work Items page in Visual Studio 2019, do the following steps:
+To switch between the default and legacy views of the Work Items page in Visual Studio 2019:
 
 1. Select **View** > **Team Explorer** in the Visual Studio menu.
 
 2. In Team Explorer, select **Work Items** to open the Work Items page.
 
-3. Look for a toggle or option labeled **Switch to Legacy View** or **Use Default View** and move the toggle to switch between the default and legacy views based on your preference.
+3. Select the toggle labeled **Switch to Legacy View** or **Use Default View** to switch between views.
 
 ## More resources
 
