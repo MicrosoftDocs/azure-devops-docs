@@ -410,8 +410,7 @@ Choose your process model based on your organization's needs:
     ::: moniker range="azure-devops"
     Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification-nodes/create-or-update) or the [Azure DevOps CLI command tool](../cli/quick-reference.md). 
     ::: moniker-end
-4. Support for Office Project integration with Azure DevOps is deprecated and the `TFSFieldMapping` command isn't supported.
-5. Use the REST API to [import and export process templates](/rest/api/azure/devops/processadmin/processes/import%20process%20template).
+4. Use the REST API to [import and export process templates](/rest/api/azure/devops/processadmin/processes/import%20process%20template).
 
 <a id="choose-process-model"></a>
 

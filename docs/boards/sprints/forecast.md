@@ -105,58 +105,44 @@ Here's what you need to have in place before you attempt to forecast your team's
 
 Use the forecast tool to get an idea of how many items you can complete within a sprint. By plugging in a velocity, you can see which items are within scope for the set of sprints the team activated. 
 
-To forecast your product backlog, complete the following actions.
+To forecast your product backlog, complete the following actions:
 
-::: moniker range=">= azure-devops-2020"
+1. Select **Boards** > **Backlogs** > select the correct team from the team selector menu. 
 
-### Step 1: Go to your team's backlog
-
-1. (1) Check that you selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot of Open Work and Backlogs for a team.](../sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
 
     To select another backlog, open the selector and then choose a different team or select the **View Backlog directory** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Choose another team](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot shows choosing another team.](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png)
 
-### Step 2: Select the appropriate backlog level
-
-1. Check that you selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
+2. Check that you selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
+    > ![Screenshot shows Choose product backlog level, Backlog items, Stories, or Requirements dropdown menu.](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-### Step 3: Configure backlog display (Optional)
-
-2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md). 
+3. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. For more information, see [Change column options](../backlogs/set-column-options.md). 
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
+    > ![Screenshot shows selecting Column Options.](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
 
-### Step 4: Enable forecasting
-
-3. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
+4. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Boards>Backlog, view options menu, Forecast on](media/forecast/turn-forecasting-on-agile.png)
+    > ![Screenshot shows Boards, Backlog, view options menu, Forecast on sequence.](media/forecast/turn-forecasting-on-agile.png)
 
     Set **In Progress Items** to **Off** to hide those items that aren't counted in the forecast. The forecast tool ignores Scrum items set to *Committed* or *Done* and Agile and CMMI items set to *Active*, *Resolved*, or *Completed*. 
 
-### Step 5: Set your team's velocity
-
-4. Enter your team's predicted velocity. 
+5. Enter your team's predicted velocity. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Boards>Backlog, Set Forecast velocity](media/forecast/set-forecast-velocity.png)
+    > ![Screenshot shows Boards, Backlog, Set Forecast velocity sequence.](media/forecast/set-forecast-velocity.png)
 
     > [!TIP]    
     > If your team has been working for several sprints, you can gain an idea of your team's velocity from the [Velocity widget](../../report/dashboards/team-velocity.md). Use your average velocity over the last 3-6 sprints for the most accurate forecast.
 
     The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team can complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.
-
-::: moniker-end
 
 ## Understanding forecast results 
 
@@ -171,7 +157,7 @@ The forecast tool displays your backlog with visual indicators that help you und
 
 ### Interpreting forecast data
 
-When reviewing forecast results, consider these factors:
+When you review forecast results, consider these factors:
 
 *	**Manual verification**: Check the results manually to understand discrepancies between what you expect and what the forecast tool displays.  
 *	**Sprint capacity**: Check the amount of effort (Effort, Story Points, or Size) forecasted per sprint. 
@@ -191,7 +177,7 @@ The forecast tool shows between two and four items can be worked on during Itera
 - **Iteration 6**: 23 Story points, items 13 through 16 can be completed; 3 (=20+6-23) velocity points carry over to the next sprint   
 
     > [!div class="mx-imgBorder"]  
-    > ![Boards>Backlog, Forecast results for 6 sprints](media/forecast-s125.png)
+    > ![Screenshot shows Boards, Backlog, Forecast results for 6 sprints.](media/forecast-s125.png)
 
 ## Advanced forecasting scenarios
 
@@ -304,4 +290,3 @@ When team composition changes during a project:
 *	Monitor the [sprint burndown chart](task-board.md) to determine if your team is on track to complete the sprint plan
 *	[Configure and customize Azure Boards](../configure-customize.md)
 *	[Agile process guidance](../work-items/guidance/agile-process.md)
-
