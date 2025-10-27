@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/22/2025
+ms.date: 10/27/2025
 ---
 
 # Follow work items and pull requests  
@@ -60,20 +60,20 @@ Select the :::image type="icon" source="../media/icons/gear_icon.png" border="fa
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing the Work item form notification settings dialog for follow.](media/follow-work/notification-settings-for-follow.png)
 
-| Option | When you're notified | Best for |
+| Option | When you receive notifications | Best for |
 |--------|------------------------|----------|
 | **Subscribed** (default) | Any change to the work item | Items you actively work on |
-| **Not Subscribed** | Only when you're @mentioned | Items you want to watch passively |
+| **Not Subscribed** | Only when someone @mentions you | Items you want to watch passively |
 | **Custom** | When specific fields change | Critical updates only |
 
 **Custom notification triggers:**
 - **State changes**: When status updates, for example, New → Active → Resolved
-- **Assignment changes**: When someone new is assigned
-- **Iteration changes**: When moved to different sprint
+- **Assignment changes**: When someone new gets assigned
+- **Iteration changes**: When the system moves items to different sprints
 
 ### What triggers notifications
 
-You receive email notifications when team members make the following actions:
+You receive email notifications when team members perform the following actions:
 
 | Action | Example | 
 |--------|---------|
@@ -112,7 +112,7 @@ You receive email notifications when team members make the following actions:
 
 **To stop following**: Open **More actions** → select :::image type="icon" source="../media/icons/following-icon.png" border="false"::: **Following**. 
 
-## View and manage items you're following
+## View and manage items you follow
 
 ### Option 1: Quick access via Queries
 
@@ -134,11 +134,11 @@ You receive email notifications when team members make the following actions:
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Boards>Work Items and pivot to Following.](media/follow-work/open-work-items-vert.png)
 
-**Best for**: Streamlined view focused only on items you're following.   
+**Best for**: Streamlined view focused only on items you follow.   
 
 ## Create custom queries with @Follows
 
-Use the **@Follows** macro to build powerful queries that combine items you're following with other criteria.
+Use the **@Follows** macro to build powerful queries that combine items you follow with other criteria.
 
 <a id="query-work-items-that-youre-following">  </a>
 
@@ -157,7 +157,7 @@ Use the **@Follows** macro to build powerful queries that combine items you're f
 
 | Query purpose | Query clauses | Why it's helpful |
 |---------------|---------------|------------------|
-| **High-priority items I'm following** | ID In @Follows<br/>AND Priority = 1 | Focus on critical items |
+| **High-priority items I follow** | ID In @Follows<br/>AND Priority = 1 | Focus on critical items |
 | **My team's followed items** | ID In @Follows<br/>AND Assigned To In Group [Team] | Team collaboration |
 | **Recently updated** | ID In @Follows<br/>AND Changed Date >= @Today - 7 | See recent activity |
 | **Blocked items I follow** | ID In @Follows<br/>AND State = Blocked | Track impediments |
