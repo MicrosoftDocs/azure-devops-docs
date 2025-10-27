@@ -9,17 +9,18 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 10/27/2025
 ---
 
 # Manage sprint timelines 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. You define Iteration Paths, also referred to as *sprints*, to support the assignment of work items to time-box intervals. Iteration paths are a shared resource used by all teams that select them. Many teams choose a two or three week cadence. You can, however, specify shorter or longer sprint cycles. Or, you can create a release schedule that encompasses several sprints.  
+This article describes how to change the iteration dates for *sprints*. In the Scrum framework, teams plan and track work item assignments in regular time intervals called the sprint cadence.
 
-> [!TIP]
-> If all you need is to change the iteration dates, you can do that by following the guidance provided in this article.  However, if you need to define the iteration paths and tree structure, or assign team sprints, then follow the guidance provided in [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+Iteration paths and sprints are shared resources by all the teams that select them. Many teams choose a two or three-week cadence, but you can specify shorter or longer sprint cycles or create a release schedule that encompasses several sprints.
+
+You can change sprint dates by following the guidance in this article. To define the iteration paths and tree structure, or assign team sprints, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
  
 
 ## Prerequisites
@@ -34,34 +35,25 @@ With Scrum, teams plan and track work at regular time intervals, referred to as 
 
 To quickly get started, you can use the default sprints. Default sprints are also referred to as iterations and were added when your project was created. Note, be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md) to add sprints and schedule sprint dates. If you created the project, you're a member. 
 
-::: moniker range=">= azure-devops-2020"
-
 1. From your web browser, open your team's sprint backlog. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
-    > [!div class="mx-imgBorder"]  
-    > ![Open Work, Sprints, for a team](media/add-tasks/open-sprint-backlog-s155-co.png)
+   ![Open Work, Sprints, for a team](media/add-tasks/open-sprint-backlog-s155-co.png)
 
 1. To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](media/add-tasks/team-selector-sprints-agile.png) 
+   ![Choose another team](media/add-tasks/team-selector-sprints-agile.png) 
 
-2. Choose **Set sprint dates**.  
+1. Choose **Set sprint dates**.  
 
-	> [!div class="mx-imgBorder"]
-	> ![Boards>Sprints>set dates](media/define-sprints/set-sprint-dates-scrum-agile.png)
+   ![Boards>Sprints>set dates](media/define-sprints/set-sprint-dates-scrum-agile.png)
 
-3. Choose the calendar icon to select the start date, and then the end date of the sprint. 
+1. Choose the calendar icon to select the start date, and then the end date of the sprint. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Edit iteration dialog, Set dates](media/define-sprints/edit-iteration-set-sprint-dates.png) 
+   ![Edit iteration dialog, Set dates](media/define-sprints/edit-iteration-set-sprint-dates.png) 
 
-4. Choose **Save and close**. You'll see the date listed. 
+1. Choose **Save and close**. You'll see the date listed. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Boards>Sprints>Sprint dates set ](media/define-sprints/sprint-dates-set-scrum-agile.png)
-
-::: moniker-end
+   ![Boards>Sprints>Sprint dates set ](media/define-sprints/sprint-dates-set-scrum-agile.png)
 
 That's it! You can now start [planning your first sprint](assign-work-sprint.md). 
 
@@ -70,12 +62,11 @@ If you have several teams, more complex release and sprint cadences to schedule,
 > [!NOTE]
 > **Terminology note:** Your set of Agile tools uses the Iteration Path field to track sprints and releases. When you define sprints, you define the picklist of values available for the [Iteration Path](../../organizations/settings/set-area-paths.md) field. You use iterations to group work into sprints, milestones, or releases in which they'll be worked on or shipped. 
 
-<a id="schedule">   </a>
-
+<a id="schedule"></a>
 ## Schedule new sprints for different teams and release cadences 
  
-> [!NOTE]    
-> Your sprint backlog and taskboard are designed to support your Scrum processes. In addition, you have access to product and portfolio backlogs and boards. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).  
+> [!NOTE]
+> Your sprint backlog and taskboard are designed to support your Scrum processes. In addition, you have access to product and portfolio backlogs and boards. For an overview of the features supported on each backlog and board, see .  
 
 Your project comes with several sprints predefined. However, they aren't associated with any dates. For Scrum and sprint planning, assign start and end dates for your team's sprints.
 
@@ -96,8 +87,12 @@ For example, by selecting Sprints 1 through 6, the Fabrikam Fiber team gets acce
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Assign work to a sprint](assign-work-sprint.md) or [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+> [Assign work to a sprint](assign-work-sprint.md)
 
 ## Related content 
 
-If you work with several teams, and each team wants their own backlog view, you can [create more teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items. These items only include those assigned values under the team's default area path and iteration path.
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Create more teams](../../organizations/settings/add-teams.md)
+- [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)
+
+If you work with several teams, and each team wants their own backlog view, you can . Each team then gets access to their own set of Agile tools. Each Agile tool filters work items. These items only include those assigned values under the team's default area path and iteration path.
