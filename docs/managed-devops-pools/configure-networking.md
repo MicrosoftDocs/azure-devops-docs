@@ -206,14 +206,14 @@ If you have systems in place on your network (NSG, Firewall, etc.) that restrict
 
 If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image (Docker or ACR).
 
-## Validating Endpoint connectivity
+## Validating endpoint connectivity
 
 To confirm that you can use a given subnet with Managed DevOps Pools, you can run the following script on a resource on that subnet to validate that the network flow is configured to reach all these available endpoints, and additionally the Managed DevOps control plane.
 
 > [!IMPORTANT]
 > You must run this script on a resource that is in your subnet, such as a VM or container, to validate that the network path is open from that subnet to the required endpoints.
 
-To run the script with Powershell Core, or Powershell 5 or greater, save the following script as `ValidateMDPEndpoints.ps1` and run the following PowerShell command: `.\ValidateMDPEndpoints.ps1 -organization "<your-organization>"`
+To run the script with PowerShell Core, or PowerShell 5 or greater, save the following script as `ValidateMDPEndpoints.ps1` and run the following PowerShell command: `.\ValidateMDPEndpoints.ps1 -organization "<your-organization>"`
 
 ```powershell
 # ValidateMDPEndpoints.ps1
