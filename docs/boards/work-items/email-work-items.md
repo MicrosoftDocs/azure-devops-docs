@@ -18,14 +18,14 @@ ms.date: 10/27/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)] 
 
-Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file. 
+Using work items to track your work provides many benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file. 
 
 ## Supported tasks 
 
-Emailing lists of work items is a common way to share work tracking information. The following table indicates which tasks or features have support from the web portal and Visual Studio.   
+Emailing lists of work items is a common way to share work tracking information. The following table shows which tasks or features have support from the web portal and Visual Studio.   
 
 > [!NOTE]   
-> The tasks/features listed in the following table aren't available when you connect to a GitHub or non-Microsoft Git repository. Also, they aren't available from Visual Studio under the following conditions:   
+> The tasks and features listed in the following table aren't available when you connect to a GitHub or non-Microsoft Git repository. Also, they aren't available from Visual Studio under the following conditions:   
 > 
 > * If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).   
 
@@ -128,7 +128,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 #### [Web portal](#tab/browser/)
 
-**From the web portal**, open the work item, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list appear in a formatted table. 
+From the web portal, open the work item, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list appear in a formatted table. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of work item form, context menu, Email work items option.](media/email/email-work-item.png)   
@@ -161,11 +161,11 @@ From Visual Studio or Team Explorer, select ![Send work item to Microsoft Outloo
 
 Another way to share items is by emailing summary lists, such as a sprint summary plan or active bugs list. You can share items from a backlog or query results list.  
 
-Depending on the option and client you choose, summary lists may or may not include a hyperlink to the work item ID.  
+Depending on the option and client you choose, summary lists might or might not include a hyperlink to the work item ID.  
 
 #### [Web portal](#tab/browser/)
 
-**To email items from the web portal**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.   
+To email items from the web portal, open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.   
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of backlog, context menu, Email... options.](media/email/bulk-email-backlog-items.png)   
@@ -182,7 +182,7 @@ If you want to mail a list of all items in the backlog or query, select the  :::
 > [!IMPORTANT]
 > We strongly recommend that everyone uses the [default view](view-add-work-items.md?view=azure-devops&preserve-view=true&tabs=visual-studio#view-work-items) instead of this legacy view. This view helps you quickly access a list of work items based on your assignment, following, mentioned, or recent updates. We no longer enhance the legacy view and expect to remove it in a future release of Visual Studio.
 
-**To email items from Visual Studio**: Open a query, highlight the items from the list, select the context menu, and select **Send selection to Microsoft Outlook** from the menu. This option requires that you configure Office Outlook on your client computer.  
+To email items from Visual Studio, open a query, highlight the items from the list, select the context menu, and select **Send selection to Microsoft Outlook** from the menu. This option requires that you configure Office Outlook on your client computer.  
 
 ![Screenshot of Email selected items from Visual Studio query result list.](../queries/media/share-plans-email-work-item-list.png)   
 
@@ -219,7 +219,7 @@ Open a query in Visual Studio that contains a work item that you want to print, 
 
 ## Print work items as cards
 
-Some teams want to work with physical cards when planning or updating their physical Kanban or Scrum task boards. There's no native support for printing work items as cards. However, you may find a solution from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/search?term=card&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance).   
+Some teams want to work with physical cards when planning or updating their physical Kanban or Scrum task boards. There's no native support for printing work items as cards. However, you might find a solution from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/search?term=card&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance).   
 
 <a id="copy-url">  </a>
 <a id="team-explorer-copy-url"></a>
@@ -233,7 +233,7 @@ Some teams want to work with physical cards when planning or updating their phys
 
 <a id="team-services-copy-url"></a>
 
-**From the web portal**, copy the URL from the web browser address or hover over the title and then select the ![Copy to clipboard icon](../backlogs/media/icon-copy-to-clipboard.png) copy-to-clipboard icon.
+From the web portal, copy the URL from the web browser address or hover over the title and then select the ![Copy to clipboard icon](../backlogs/media/icon-copy-to-clipboard.png) copy-to-clipboard icon.
 
 ![Screenshot for Copy hyperlink for a work item from web portal.](../backlogs/media/add-work-item-copy-URL.png)
 
@@ -242,7 +242,7 @@ Some teams want to work with physical cards when planning or updating their phys
 > [!IMPORTANT]
 > We strongly recommend that everyone uses the [default view](view-add-work-items.md?view=azure-devops&preserve-view=true&tabs=visual-studio#view-work-items) instead of this legacy view. This view helps you quickly access a list of work items based on your assignment, following, mentioned, or recent updates. We no longer enhance the legacy view and expect to remove it in a future release of Visual Studio.
 
-**From Visual Studio**, right-click the work item tab to copy the URL. The URL opens the work item in the web portal. 
+From Visual Studio, right-click the work item tab to copy the URL. The URL opens the work item in the web portal. 
 
 ![Screenshot that shows how to copy full path hyperlink for a work item from Visual Studio.](../backlogs/media/add-work-items-copy-url-for-a-work-item.png)  
 
@@ -265,23 +265,44 @@ From any query, you can export a list of work items as a comma-delimited list. O
 
 ::: moniker-end  
 
+## Best practices for emailing work items
+
+Consider these best practices when sharing work items via email:
+
+- **Verify recipients have access**: Ensure all email recipients have the appropriate permissions to view the work items you're sharing.
+- **Use descriptive subject lines**: Include relevant context in your email subject line to help recipients understand the content.
+- **Consider security**: Be mindful of sensitive information when emailing work items outside your organization.
+- **Keep emails current**: Work item states and information can change quickly, so send emails close to when the information is needed.
+- **Use queries for regular sharing**: For recurring reports, create and save queries that you can easily re-run and share.
+
+## Troubleshooting email issues
+
+If you encounter problems when emailing work items:
+
+- **Permission errors**: Verify that all recipients have access to the project and work items you're trying to share.
+- **Email not sending**: For on-premises installations, confirm that your administrator has configured the SMTP server properly.
+- **Formatting issues**: Some email clients might not display HTML formatting correctly. Consider using plain text alternatives for better compatibility.
+- **Missing work items**: Ensure the work items you're trying to email haven't been deleted or moved to areas where recipients don't have access.
+
 ## Marketplace extensions  
 
-You may find other ways to share information by exporting work items to other applications such as Microsoft Word. For more information, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+You might find other ways to share information by exporting work items to other applications such as Microsoft Word. For more information, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
 
 ## Related content  
 
 ::: moniker range="azure-devops"
 
 - [Use templates to add and update work items](../backlogs/work-item-template.md) 
-- [Send email with work item](../work-items/email-work-items.md)
+- [Follow a work item or pull request](follow-work-items.md)
+- [Bulk modify work items](../backlogs/bulk-modify-work-items.md)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
 - [Use templates to add and update work items](../backlogs/work-item-template.md) 
-- [Send email with work item](../work-items/email-work-items.md)
+- [Follow a work item or pull request](follow-work-items.md)
+- [Bulk modify work items](../backlogs/bulk-modify-work-items.md)
 - [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)
 
 ::: moniker-end

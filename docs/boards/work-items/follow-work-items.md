@@ -165,6 +165,52 @@ Use the **@Follows** macro to build powerful queries that combine items you foll
 > [!TIP]
 > **Share query structures**: While @Follows is personal to you, you can share query templates with teammates to create consistent follow-up workflows.
 
+## Best practices for following items
+
+Consider these strategies to make the most of the Follow feature:
+
+### When to follow work items
+- **Items you create**: Automatically follow bugs you report or features you request
+- **Cross-team dependencies**: Follow items that impact your work but aren't assigned to you
+- **Critical bugs**: Follow high-priority issues that affect your area
+- **Learning opportunities**: Follow items to understand how your team resolves similar problems
+
+### Managing notification volume
+- **Use custom settings**: Set specific field triggers instead of following all changes
+- **Review regularly**: Unfollow completed items that no longer need monitoring
+- **Batch review**: Check the Following tab weekly instead of responding to every email
+- **Team coordination**: Agree on following strategies to avoid duplicate monitoring
+
+### Query strategies
+- **Create personal dashboards**: Build widgets using @Follows queries for quick status checks
+- **Set up alerts**: Use queries with @Follows to create additional notification rules
+- **Track patterns**: Monitor followed items to identify common issues or bottlenecks
+
+## Troubleshooting common issues
+
+### Not receiving notifications
+
+**Check these settings:**
+1. **Personal notifications**: Verify your email address in [notification settings](../../organizations/notifications/manage-your-personal-notifications.md)
+2. **Follow status**: Confirm the item shows the "Following" icon (not just "Follow")
+3. **Notification preferences**: Check if you selected "Not Subscribed" by mistake
+4. **Email filters**: Look for Azure DevOps emails in spam or filtered folders
+
+### Too many notifications
+
+**Reduce notification volume:**
+- Switch high-volume items to "Custom" settings with specific field triggers
+- Use "Not Subscribed" for items you want to track but don't need immediate alerts
+- Create daily digest queries instead of real-time notifications
+- Unfollow completed or irrelevant items
+
+### Following not available
+
+**Possible causes:**
+- **Permissions**: You need at least Stakeholder access to follow items
+- **Project access**: Verify you can view the work item or pull request
+- **Feature availability**: Following requires Azure DevOps Services or TFS 2017 or later
+
 ## Frequently asked questions
 
 ### Q: Can I add someone else to follow a work item or PR?
@@ -187,6 +233,14 @@ For team-wide notifications, see [Manage team notifications](../../organizations
 
 **A:** Yes! The Follow feature works across all projects in your organization. Use the **Followed work items** query to see everything in one place.
 
+### Q: Do I automatically follow items I create or get assigned?
+
+**A:** No, following is always a manual action. You need to explicitly select the Follow icon on each item you want to track.
+
+### Q: Can I export a list of items I'm following?
+
+**A:** Yes, use the "Followed work items" query and export the results to CSV, or create a custom query with @Follows and export that.
+
 ## Next step
 
 > [!div class="nextstepaction"]
@@ -198,3 +252,4 @@ For team-wide notifications, see [Manage team notifications](../../organizations
 - [View and configure notifications](../../organizations/notifications/about-notifications.md)
 - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
 - [View work item history](../queries/history-and-auditing.md)
+- [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md)
