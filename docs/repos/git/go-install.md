@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to use the Go install command with Azure Repos Git repositories using SSH keys, Microsoft Entra ID tokens, or personal access tokens for authentication.
 ai-usage: ai-assisted
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

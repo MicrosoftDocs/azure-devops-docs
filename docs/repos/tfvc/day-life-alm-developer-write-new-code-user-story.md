@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: A day in the life of a devops developer. Write new code for a user story.
 ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 10/24/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

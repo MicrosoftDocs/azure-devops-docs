@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: reference
 monikerRange: "<= azure-devops"
 ms.date: 09/10/2024
 ---

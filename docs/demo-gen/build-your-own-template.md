@@ -4,7 +4,7 @@ description: Learn how to build a custom template for the Azure DevOps Demo Gene
 ms.subservice: azure-devops-new-user
 ms.author: sdanie
 author: hsachinraj
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 05/24/2023
 ms.custom: sfi-image-nochange

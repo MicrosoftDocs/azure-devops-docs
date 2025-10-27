@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Delete or remove a project from your organization in Azure DevOps. Restore a recently deleted project.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.subservice: azure-devops-projects
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"

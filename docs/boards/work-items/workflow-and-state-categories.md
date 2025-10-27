@@ -7,7 +7,7 @@ ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 10/08/2025
 ---

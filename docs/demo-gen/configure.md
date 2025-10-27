@@ -4,7 +4,7 @@ description: Learn how to create an Azure DevOps project using the Azure DevOps 
 ms.subservice: azure-devops-new-user
 ms.author: glmorale
 author: gloridelmorales
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: 'azure-devops'
 ms.date: 02/28/2025
 ---

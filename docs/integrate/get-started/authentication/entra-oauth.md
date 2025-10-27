@@ -3,7 +3,7 @@ title: Building Azure DevOps integrations with Microsoft Entra OAuth apps
 description: Use Microsoft Entra authentication to integrate with Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.subservice: azure-devops-security
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley

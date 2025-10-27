@@ -5,7 +5,7 @@ description: Understand the permissions and prerequisites to meet to access and 
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 09/30/2022
 ---

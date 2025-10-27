@@ -7,7 +7,7 @@ ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57
 ms.reviewer: desalg
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 09/30/2020
 ---

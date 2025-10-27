@@ -5,7 +5,7 @@ description: Cloud Solution Provider (CSP) partners can enable their customers t
 ms.subservice: azure-devops-billing
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
 ms.custom: freshness-fy22q1, engagement-fy23
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 01/20/2023

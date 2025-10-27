@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid:
 ms.author: dahellem
 author: danhellem
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "azure-devops"
 ms.date: 4/01/2020
 ---

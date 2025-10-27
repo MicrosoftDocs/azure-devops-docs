@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Utilize security overview for GitHub Advanced Security for Azure DevOps
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
-ms.topic: conceptual 
+ms.topic: overview
 ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang

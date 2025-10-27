@@ -3,7 +3,7 @@ title: Get started with the REST APIs for Azure DevOps
 description: Learn the fundamental concepts and patterns for Azure DevOps REST APIs, including URL structure, authentication methods, HTTP operations, and response handling.
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
+ms.topic: quickstart
 ms.custom: 
 monikerRange: '<= azure-devops'
 ms.author: chcomley

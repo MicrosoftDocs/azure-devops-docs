@@ -5,7 +5,7 @@ description: Learn how Analytics for Azure DevOps manages changes to the OData A
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
 ms.date: 09/12/2024

@@ -2,7 +2,7 @@
 title: Complete post migration tasks
 titleSuffix: Azure DevOps
 description: Guidance on how to configure an organization after it migrates to Azure DevOps Services.
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: azure-devops-migrate
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.author: chcomley

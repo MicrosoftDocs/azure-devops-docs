@@ -5,7 +5,7 @@ description:  Properties, enumerated types, and members metadata reference for t
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: reference
 monikerRange: '>= azure-devops-2020'
 ms.date: 11/07/2022
 ---

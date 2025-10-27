@@ -3,7 +3,7 @@ title: What is the Azure DevOps Services Demo Generator?
 description: About the Azure DevOps Services Demo Generator V2
 ms.subservice: azure-devops-new-user
 ms.author: sdanie
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: 'azure-devops'
 ms.date: 03/03/2025
 ---

@@ -7,7 +7,7 @@ ms.custom: cross-project
 ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 10/08/2025
 ai-usage: ai-assisted

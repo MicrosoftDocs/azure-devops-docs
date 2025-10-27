@@ -4,7 +4,7 @@ description: Learn how to use the Test Plans Progress report
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 monikerRange: '>= azure-devops-2020'
@@ -12,7 +12,7 @@ ms.date: 09/14/2021
 ms.update-cycle: 1095-days
 ---
 
-# Progress Report
+# Use the Progress Report
 
 [!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]  
   

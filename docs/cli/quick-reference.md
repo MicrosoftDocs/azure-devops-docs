@@ -2,7 +2,7 @@
 title: Index to Azure DevOps CLI examples
 titleSuffix: Azure DevOps
 description: Find examples that showcase use of Azure DevOps CLI. This article contains an organized list of resources with examples.
-ms.topic: conceptual
+ms.topic: overview
 ms.subservice: azure-devops-reference
 ms.custom: devx-track-azurecli
 ms.manager: mijacobs 

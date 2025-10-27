@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to specify a list of branches as potential pull request targets.
 ms.assetid: 1D70C33E-FFBB-44B2-82A6-CE9BF8169BE7
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: dstolee
 author: dstolee
 ms.date: 08/19/2024

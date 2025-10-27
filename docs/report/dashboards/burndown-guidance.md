@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to choose and use burndown/burnup charts to review sprints and releases in Azure DevOps.
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"

@@ -5,7 +5,7 @@ ms.custom: work-items, engagement-fy23
 description: Learn how to use the CMMI process work item types and workflow to track work in Azure Boards and Azure DevOps.  
 ms.service: azure-devops-boards
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
