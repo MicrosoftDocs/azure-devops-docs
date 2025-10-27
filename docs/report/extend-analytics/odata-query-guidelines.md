@@ -5,7 +5,7 @@ description: Learn how to write good OData queries that access Analytics for Azu
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 07/21/2023
 ---

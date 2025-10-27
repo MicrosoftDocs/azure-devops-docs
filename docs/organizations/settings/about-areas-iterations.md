@@ -6,7 +6,7 @@ ms.subservice: azure-devops-settings
 ms.custom: teams, linked-from-support
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ms.date: 10/17/2024

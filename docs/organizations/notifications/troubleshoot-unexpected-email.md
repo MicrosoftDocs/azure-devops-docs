@@ -6,7 +6,7 @@ ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley 
 author: chcomley
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/30/2019  
 monikerRange: '<= azure-devops'
 ---

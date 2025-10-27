@@ -6,7 +6,7 @@ ms.subservice: azure-devops-new-user
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 06/28/2021
 monikerRange: '<= azure-devops'
 ---

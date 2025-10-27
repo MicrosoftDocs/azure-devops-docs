@@ -5,7 +5,7 @@ ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.subservice: azure-devops-ecosystem
 ai-usage: ai-assisted
 ms.custom: devx-track-dotnet
-ms.topic: conceptual
+ms.topic: sample
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

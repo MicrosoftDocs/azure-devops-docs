@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: "Learn how to use cumulative flow diagrams (CFDs), cycle times, and lead times to monitor your work process and identify issues. Discover actionable insights to improve workflow efficiency."
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
-ms.topic: conceptual 
+ms.topic: overview 
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

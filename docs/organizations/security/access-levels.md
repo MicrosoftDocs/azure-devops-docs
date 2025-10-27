@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Understand how access levels control the features and functions of Azure DevOps. Learn about assigning and changing access levels for users and groups.
 ms.subservice: azure-devops-security
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

@@ -5,7 +5,7 @@ ms.custom:
 description: Learn how to change the time zone for your organization or user profile.
 ms.subservice: azure-devops-organizations
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 10/22/2024

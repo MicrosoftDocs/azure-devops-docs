@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/19/2025  
 monikerRange: '<= azure-devops'
 ---

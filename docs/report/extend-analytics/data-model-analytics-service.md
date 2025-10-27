@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177   
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 09/19/2022
 ---

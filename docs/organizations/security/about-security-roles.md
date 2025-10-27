@@ -5,7 +5,7 @@ description: Discover how security roles are utilized to manage specific pipelin
 ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ms.date: 08/21/2024

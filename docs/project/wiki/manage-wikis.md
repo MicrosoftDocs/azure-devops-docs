@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to manage wikis with the command-line interface (CLI) in Azure DevOps.
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devx-track-azurecli
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 
 ms.author: chcomley
 author: chcomley

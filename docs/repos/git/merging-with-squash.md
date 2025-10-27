@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Squash merge pull requests to keep a linear Git history. Learn about multiple merge base issues and prevention.
 ms.assetid: 2ec21de7-92fc-4d60-a5e1-7e179627b2bb
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 09/08/2023
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

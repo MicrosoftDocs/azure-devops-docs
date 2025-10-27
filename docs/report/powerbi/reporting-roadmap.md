@@ -5,7 +5,7 @@ description: Learn about the reporting roadmap for Azure DevOps and how to migra
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 07/07/2025
 ---

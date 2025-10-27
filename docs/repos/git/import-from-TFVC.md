@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Import and migrate your repositories from TFVC to Git repositories within the same account.
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/14/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

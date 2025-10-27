@@ -1,6 +1,6 @@
 ---
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
+ms.topic: overview
 title: Build secure applications and services with Azure DevOps
 description: Learn how to build secure, scalable applications that integrate with Azure DevOps using modern authentication and best practices.
 ms.assetid: c9b97ad7-ffd8-4657-8322-74f764eec5c9

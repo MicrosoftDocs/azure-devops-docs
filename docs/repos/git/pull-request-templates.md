@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description:  Learn how to standardize pull request descriptions using pull request templates
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/10/2018
 monikerRange: "<=azure-devops"
 ms.subservice: azure-devops-repos-git

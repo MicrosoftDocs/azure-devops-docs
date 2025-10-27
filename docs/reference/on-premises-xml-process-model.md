@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.custom: engagement-fy23
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '< azure-devops'
 ms.date: 01/17/2023 
 ---

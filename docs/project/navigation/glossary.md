@@ -6,7 +6,7 @@ ms.custom: Navigation
 ms.subservice: azure-devops-projects 
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: reference
 monikerRange: '<= azure-devops'
 ms.date: 04/22/2024
 ---

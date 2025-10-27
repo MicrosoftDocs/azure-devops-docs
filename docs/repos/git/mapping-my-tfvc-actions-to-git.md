@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn to map Team Foundation Version Control (TFVC) commands and workflows to Git version control
 ms.service: azure-devops-repos
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 11/03/2022
 ms.subservice: azure-devops-repos-git

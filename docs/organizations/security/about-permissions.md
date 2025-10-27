@@ -5,7 +5,7 @@ description: Learn about permissions and access levels in Azure DevOps via inher
 ms.subservice: azure-devops-security
 ms.assetid: 
 toc: show
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

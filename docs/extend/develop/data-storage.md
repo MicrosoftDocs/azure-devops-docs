@@ -3,7 +3,7 @@ ms.subservice: azure-devops-ecosystem
 title: Data and Setting Storage | Extensions for Azure DevOps
 description: DevOps extensions can store user preferences and complex data structures just like other project data. Use REST APIs or a Microsoft client service to do so.
 ms.assetid: 4662d1cf-ddb6-4079-8eb4-6f553861c1b4
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

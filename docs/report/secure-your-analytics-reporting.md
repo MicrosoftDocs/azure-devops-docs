@@ -6,7 +6,7 @@ ms.subservice: azure-devops-security
 ms.custom: horz-security
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 09/05/2025
 ---

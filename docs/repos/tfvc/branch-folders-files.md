@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Branch folders and files
 ms.assetid: 437854e0-3f64-4d68-8e18-748ea7f889aa
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 10/11/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
