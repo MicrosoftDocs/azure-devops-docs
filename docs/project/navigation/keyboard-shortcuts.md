@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn about keyboard shortcuts for the web portal for Azure DevOps and Team Explorer, including wikis.
 ms.custom: Navigation
 ms.subservice: azure-devops-projects
-ms.topic: conceptual 
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

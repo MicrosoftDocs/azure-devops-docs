@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Delete or remove a project from your organization in Azure DevOps. Restore a recently deleted project.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.subservice: azure-devops-projects
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
@@ -32,7 +32,7 @@ If a project becomes obsolete, you can [delete it](#delete-project) from your or
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**|- Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- **Delete team project** permission set to **Allow**. For more information, see [View project-level permissions](../security/view-permissions.md#view-project-level-permissions).|
+|**Permissions**|- Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- **Delete team project** permission set to **Allow**. For more information, see [View project-level permissions](../security/view-permissions.md#where-to-view-permissions).|
 |**Optional**| [Save project data](#save-project-data) before deleting a project if you want to access project data without restoring it.|
 
 ::: moniker-end

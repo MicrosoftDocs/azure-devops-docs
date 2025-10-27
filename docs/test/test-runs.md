@@ -65,6 +65,7 @@ The Test Run Hub provides several ways to find specific test runs:
 > [!TIP]
 > - Filter selections and column widths persist across sessions until you clear them manually.
 > - Search filters work additively. For example, selecting "Past 7d" in the timeline filter shows only runs from the last seven days.
+> - A maximum of 5,000 results can appear in the Test Run Hub UI.
 > - Use the Azure DevOps REST APIs to search for runs older than 180 days.
 
 ### Customize columns
@@ -156,27 +157,34 @@ The test case results section allows you to:
 - Customize column display (similar to the main runs page)
 - Link test results to Azure DevOps work items
 
+> [!TIP]
+> The default _Outcome_ filter for _Automated_ test runs is set to _Failed or Aborted_ to accelerate the analysis. For _Manual_ test runs, which typically have lower volume, results remain unfiltered by default.
+
 :::image type="content" source="media/test-runs/test-case-results.png" alt-text="Screenshot of the test case results section showing individual test outcomes.":::
 
 ### Link to work items
 
 To associate test results with bugs or other work items:
 
-1. Select the checkboxes for the test cases you want to link.
+1. Select the checkboxes for the test cases you want to link
+   
+:::image type="content" source="media/test-runs/marked-case-item-relation.png" alt-text="Screenshot showing test cases marked for linking to work items.":::
+
 2. Choose to create a new bug or link to an existing work item.
 3. Complete the linking process.
-
-:::image type="content" source="media/test-runs/marked-case-item-relation.png" alt-text="Screenshot showing test cases marked for linking to work items.":::
 
 ## Analyze detailed test results
 
 Select any test case to view detailed results including:
 
 - **Test result summary**: Overview of the test execution
-- **Linked work items**: Associated bugs and other work items  
+- **Linked work items**: Associated bugs and other work items; click the "+ Add" button of the section to relate anything needed!  
 - **Test steps**: Detailed step-by-step results with outcomes and comments
 - **Analysis information**: Post-execution analysis and next actions
 - **Attachments**: All test result-specific attachments
+
+> [!TIP]
+> The default Test Case Result filter is as well set to _Failed_ or _Aborted_ to streamline deeper analysis.
 
 :::image type="content" source="media/test-runs/detailed-test-case-results.png" alt-text="Screenshot of the detailed test case results page showing comprehensive test information.":::
 

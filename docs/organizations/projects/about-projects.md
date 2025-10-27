@@ -7,7 +7,7 @@ ms.subservice: azure-devops-projects
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley 
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 03/12/2025
 --- 

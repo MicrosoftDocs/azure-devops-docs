@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: How to migrate custom obsolete check-in policy
 ms.assetid:
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/27/2025
 monikerRange: 'azure-devops'
 ms.subservice: azure-devops-repos-tfvc

@@ -1,5 +1,5 @@
 ---
-title: Use the Azure Boards app with Slack
+title: Use Azure Boards with Slack
 titleSuffix: Azure Boards
 description: Learn how to create work items and monitor work item activity in an Azure Boards project from within Slack.
 ms.service: azure-devops
@@ -9,13 +9,13 @@ ms.reviewer: karrg
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 10/20/2021
+ms.date: 10/24/2025
 ms.custom:
   - cross-service
   - sfi-image-nochange
 ---
  
-# Use the Azure Boards app with Slack to manage work items
+# Use Azure Boards with Slack
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
@@ -28,16 +28,16 @@ events in their Slack channel. Conversations in the Slack channel can be used to
 ![Pic: Notification](./media/integrations-slack/notifications.png)
 
 > [!NOTE]
-> * Azure Boards and Slack integration is only supported for Azure DevOps Services.  
-> * Notifications are currently not supported inside direct messages.
+> Notifications are sent to channels—they don't appear in direct messages.
 
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
-| **Access levels** | **Contributor** for the project. |
-| **Permissions** | To create subscriptions in a Slack channel for work item events: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) or [Team Administrators](../../organizations/settings/add-team-administrator.md) group. |
-| **Policies** | To receive notifications: [**Third party application access via OAuth** policy enabled for the organization](../../organizations/accounts/change-application-access-policies.md). |
+| Platform | Azure Boards and the Azure Boards Slack app work only with Azure DevOps Services (cloud); they're not supported on Azure DevOps Server. |
+| Access levels | **Contributor** for the project. |
+| Permissions | To create subscriptions in a Slack channel for work item events: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) or [Team Administrators](../../organizations/settings/add-team-administrator.md) group. |
+| Microsoft Entra account | If your organization is connected to a Microsoft Entra ID tenant, sign in with an account that's a native member of that tenant; guest or external accounts can experience authentication errors when signing in through Slack. |
 
 ## Add the Azure Boards app to your Slack workspace
 
@@ -45,7 +45,7 @@ events in their Slack channel. Conversations in the Slack channel can be used to
 
 2. Once added, a welcome message displays from the app as shown in the following image. 
 
-	![Pic: Welcome message](./media/integrations-slack/welcome-message.png)
+    ![Pic: Welcome message](./media/integrations-slack/welcome-message.png)
 
 3. Use the `/azboards` Slack handle to interact with the app. A list of commands is provided later in this article, [Command reference](#command-reference).
 
@@ -55,19 +55,19 @@ To use the app, you must first link your Azure Boards project to your Slack chan
 
 1. Once the app gets installed in your Slack workspace, connect and authenticate yourself to Azure Boards. 
 
-	![screenshot of sign-in](./media/integrations-slack/signin.png)
+    ![screenshot of sign-in](./media/integrations-slack/signin.png)
 
 1. After signing in, use the following slash command inside a Slack channel to link to the Azure Boards project that you specify with the URL:
 
-	```
-	/azboards link [project url]
-	```
+    ```
+    /azboards link [project url]
+    ```
 
-	For example:
+    For example:
 
-	```
-	/azboards link https://dev.azure.com/myorg/myproject
-	```
+    ```
+    /azboards link https://dev.azure.com/myorg/myproject
+    ```
 
 Once the project is linked, you can create work items using `/azboards create` command or use message actions. 
 
@@ -83,27 +83,25 @@ filters to customize your Slack channel. To easily set up subscriptions, your re
 
    In case your team's area path doesn't appear in the Area path dropdown menu, follow the instructions mentioned in the next section, [Add area paths](#add-area-paths). Area paths added using the `/azboards addAreapath` command and area paths for which subscriptions are created in the Slack channel always appear in the Area path dropdown along with recently accessed area paths.
 
-
 ## Add area paths
 
 You can add areas that your team works on to the channel so that they're always available for creating work items and subscriptions. This action is important mainly for the teams with more than 100 area paths.
 
 - Use the following command to add area paths from your project to the Slack channel.
 
-	```
-	/azboards addAreapath [area path]
-	```
+    ```
+    /azboards addAreapath [area path]
+    ```
 
-	For example:
+    For example:
 
-	```
-	/azboards addAreapath myproject\fabrikam
-	```
+    ```
+    /azboards addAreapath myproject\fabrikam
+    ```
 
-	![add areapath success message](./media/integrations-slack/add-areapath.png)
+    ![add areapath success message](./media/integrations-slack/add-areapath.png)
 
 - If you choose project name as your area path, then you receive notifications for all the area paths in the project. It's logically equivalent to choosing 'Any' area path.
-
 
 ## Create a work item with a command
 
@@ -111,20 +109,20 @@ You can add areas that your team works on to the channel so that they're always 
 
 - To create a work item, use `/azboards create`. 
 
-	![Create work item using command](./media/integrations-slack/create-work-item-command.png)
-	
+    ![Create work item using command](./media/integrations-slack/create-work-item-command.png)
+    
 2. You can create work items directly from a command by passing work item type and title as parameters. Work items get created only if they don't have any fields to be mandatorily filled.
 
-	```
-	/azboards create [work item type] [work item title]
-	```
+    ```
+    /azboards create [work item type] [work item title]
+    ```
 
-	For example:
+    For example:
 
-	```
-	/azboards create 'user story' Push cloud monitoring alerts to mobile devices
-	```
-	
+    ```
+    /azboards create 'user story' Push cloud monitoring alerts to mobile devices
+    ```
+
 
 ## Create a work item from message actions
 
@@ -133,19 +131,18 @@ access to the discussion that led to the creation of the work item.
 
 - To create work items using message actions
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create work item using message action](./media/integrations-slack/message-action-collated.png)
-
+    > [!div class="mx-imgBorder"]  
+    > ![Create work item using message action](./media/integrations-slack/message-action-collated.png)
 
 ## Manage Azure Boards subscriptions
 
 1. To view, add and remove subscriptions for a channel, use the `/azboards subscriptions` command:
 
-	```
-	/azboards subscriptions
-	```
+    ```
+    /azboards subscriptions
+    ```
 
-	This command lists all the current subscriptions for the channel and allows you to add new subscriptions and remove existing ones. As part of adding subscriptions, you can also customize what you get notified on by using various filters.
+    This command lists all the current subscriptions for the channel and allows you to add new subscriptions and remove existing ones. As part of adding subscriptions, you can also customize what you get notified on by using various filters.
 
 > [!NOTE]
 > Team administrators can't remove or modify subscriptions created by Project administrators.
@@ -182,12 +179,12 @@ The following table lists all the `/azboards` commands you can use in your Slack
 |/azboards signout	| Sign out from your Azure Boards organization|
 |/azboards unlink	| Unlink a project from this channel|
 |/azboards feedback	| Report a problem or suggest a feature |
+|/azboards help	| Get help on the commands |
 
 ### Manage work in private channels
 
 The Azure Boards app for Slack can help you create work items and monitor the work item activity in your private channels as well. To invite the bot to your private channel, enter 
  `/invite @azboards`. After you post that, you can create work items and manage your notifications in the same way as you would for a public channel.
-
 
 ## Troubleshoot errors 
 
@@ -195,15 +192,7 @@ If you're experiencing the following errors when using the [Azure Boards App for
 
 [!INCLUDE [troubleshooting](includes/boards-troubleshoot-authentication.md)]
 
-In the **same browser**, start a new tab, go to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azboards signout` command followed by the `/azboards signin` command. 
-
-Select the `Sign in` button and you get redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
-
-> [!div class="mx-imgBorder"]
-> ![Consent to the requested app permissions](media/troubleshooting/boards-consent-page-slack.png)
-
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
-
 
 ## Related content
 

@@ -2,7 +2,7 @@
 title: Perform UI tests with Selenium
 description: UI Testing with Selenium in a continuous deployment pipeline in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: continuous-test
 ms.author: jeom
 author: raviLiftr
@@ -61,7 +61,7 @@ from Visual Studio Test Explorer.
 
 3. Create your tests. For example, the following code creates a default class named **MySeleniumTests**
    that performs a simple test on the Bing.com website. Replace the contents of the **TheBingSearchTest** function
-   with the [Selenium code](https://www.seleniumhq.org/docs/)
+   with the Selenium code
    required to test your web app or website. Change the **browser** assignment in the **SetupTest**
    function to the browser you want to use for the test.
 

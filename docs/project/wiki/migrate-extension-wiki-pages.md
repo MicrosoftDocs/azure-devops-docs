@@ -7,7 +7,7 @@ ms.subservice: azure-devops-wiki
 ms.assetid: 535245F2-6227-410C-B91D-559FA509D81B
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
 ms.date: 03/27/2025 

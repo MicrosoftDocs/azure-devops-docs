@@ -225,12 +225,12 @@ Starting from an organization's URL, you can use the Resource Areas REST API to 
 
 If you aren't using a Microsoft-provided client library:
 
-1. Use the [following table](#reference-resource-area-ids) to find the resource area ID for the REST API you need to call. The resource area name usually appears after `/_apis/` in the REST API route. For example, the `/_apis/release/definitions` REST API belongs to the `release` resource area, which has an ID of `efc2f575-36ef-48e9-b672-0c6fb4a48ac5`.
+1. Use the [following table](#reference-resource-area-ids) to find the resource area ID for the REST API you need to call. The resource area name usually appears after `/_apis/` in the REST API route. For example, the `/_apis/release/definitions` REST API belongs to the `release` resource area, which has an ID of `aaaabbbb-0000-cccc-1111-dddd2222eeee`.
 
 1. Call the organization-level Resource Areas REST API (`{organizationUrl}/_apis/resourceAreas/{resourceAreaId}?api-version=5.0-preview.1`) and pass the resource area ID. For example:
 
     ```http
-    GET https://dev.azure.com/Fabrikam/_apis/resourceAreas/efc2f575-36ef-48e9-b672-0c6fb4a48ac5?api-version=5.0-preview.1
+    GET https://dev.azure.com/Fabrikam/_apis/resourceAreas/aaaabbbb-0000-cccc-1111-dddd2222eeee?api-version=5.0-preview.1
     ```
 
 1. Use the `locationUrl` field from the JSON response as the base URL for calling other REST APIs for this area. In this example, the base URL for Release Management REST APIs is `https://vsrm.dev.azure.com/Fabrikam`.
@@ -246,7 +246,7 @@ In this example, a build task needs to call the Azure Pipelines releases REST AP
 
 ```powershell
 $orgUrl = $env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI
-$releaseManagementAreaId = "efc2f575-36ef-48e9-b672-0c6fb4a48ac5"
+$releaseManagementAreaId = "aaaabbbb-0000-cccc-1111-dddd2222eeee"
 
 # Build the URL for calling the org-level Resource Areas REST API for the RM APIs
 $orgResourceAreasUrl = [string]::Format("{0}/_apis/resourceAreas/{1}?api-preview=5.0-preview.1", $orgUrl, $releaseManagementAreaId)
@@ -291,7 +291,7 @@ This table shows the IDs for common resource areas. See the previous section for
 |2e0bf237-8973-4ec9-a581-9c3d679d1776|pipelines|
 |fb13a388-40dd-4a04-b530-013a739c72ef|policy|
 |8ccfef3d-2b87-4e99-8ccb-66e343d2daa8|profile|
-|efc2f575-36ef-48e9-b672-0c6fb4a48ac5|release|
+|aaaabbbb-0000-cccc-1111-dddd2222eeee|release|
 |57731fdf-7d72-4678-83de-f8b31266e429|reporting|
 |ea48a0a1-269c-42d8-b8ad-ddc8fcdcf578|search|
 |3b95fb80-fdda-4218-b60e-1052d070ae6b|test|

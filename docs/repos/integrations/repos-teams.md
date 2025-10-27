@@ -5,10 +5,8 @@ description: Monitor Azure Repos from Microsoft Teams.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
-ms.author: vijayma
-author: vijayma
 monikerRange: 'azure-devops'
-ms.date: 05/22/2023
+ms.date: 10/24/2025
 ms.custom:
   - cross-service
   - sfi-image-nochange
@@ -35,7 +33,7 @@ In this article, learn how to do the following tasks:
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**|- To create subscriptions for repo-related events: Member of the **Project Administrators** group or team administrator. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md).<br>- To receive notifications: **Third-party application access via OAuth** setting enabled for the Azure DevOps organization. For more information, see [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).|
+|**Permissions**|- To create subscriptions for repo-related events: Member of the **Project Administrators** group or team administrator. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md).|
 
 > [!NOTE]
 > * You can only link the Azure Repos app for Microsoft Teams to a project hosted on Azure DevOps Services.
@@ -147,14 +145,14 @@ The following table lists all the `azure repos` commands you can use in your Tea
 |`@azure repos feedback`	| Report a problem or suggest a feature |
 | `@azure repos unsubscribe all [project url]` | Remove all repos (belonging to a project) and their associated subscriptions from a channel |
 
- ## Multi-tenant support
+ ## Multitenant support
 
 If you're using a different email or tenant for Microsoft Teams and Azure DevOps, do the following steps to sign in, based on your use case. 
 
 |Use case |Email ID + Microsoft Teams tenant|Email ID + Azure DevOps tenant|Steps |
 |---------|---------|---------|---------|
 |1  |email1@abc.com (tenant 1) | email1@abc.com (tenant 1)        | Select **Sign in**.        |
-|2  |email1@abc.com (tenant 1) | email1@abc.com (tenant 2)        |Sign in to Azure DevOps. In the same browser, start a new tab and go to https://teams.microsoft.com/. Run the signin command and select **Sign in**.  |
+|2  |email1@abc.com (tenant 1) | email1@abc.com (tenant 2)        |Sign in to Azure DevOps. In the same browser, start a new tab and go to https://teams.microsoft.com/. Run the sign-in command and select **Sign in**.  |
 |3  |email1@abc.com (tenant 1) | email2@pqr.com (tenant 2)        | Select **Sign in with different email address**, and then in the email ID picker use the email2 to sign in to Azure DevOps.        |
 |4  |email1@abc.com (tenant 1) | email2@pqr.com (non default tenant 3)        |  This scenario isn't supported.     |
 
@@ -165,11 +163,6 @@ If you're experiencing the following errors when using the Azure Repos App, foll
 [!INCLUDE [troubleshooting](./includes/repos-troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Repos signout` command and then run the `@Azure Repos signin` command in the channel where the Azure Repos app for Microsoft Teams is installed.
-
-Select the `Sign in` button and you're redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
-
-> [!div class="mx-imgBorder"]
-> ![Consent to the requested app permissions](media/troubleshooting/repos-consent-page-teams.png)
 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 

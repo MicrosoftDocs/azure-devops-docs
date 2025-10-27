@@ -2,6 +2,9 @@
   href: index.yml
 - name: Security Best Practices
   href: security-overview.md
+- name: Security automation scripts
+  displayName: automation, PowerShell, audit, scripts, security management, user access, service connections
+  href: security-scripts.md
 - name: Get started
   items:
   - name: About permissions, access, & security groups
@@ -90,6 +93,9 @@
     href: look-up-project-collection-administrators.md
   - name: Look up Azure DevOps administrator
     href: look-up-azure-devops-administrator.md
+  - name: Use security automation scripts
+    displayName: automation, PowerShell, audit, scripts, security management
+    href: security-scripts.md
   - name: Change permissions at the organization or collection-level
     displayName: Project Collection Administrators, project collection build service, add, remove, administrators, collection
     href: change-organization-collection-level-permissions.md
@@ -158,6 +164,9 @@
     href: ../../artifacts/feeds/feed-permissions.md?toc=/azure/devops/organizations/security/toc.json
 - name: Secure Azure Boards
   items:
+  - name: Secure your Azure Boards
+    displayName: security, overview, permissions, access control, governance, compliance, best practices
+    href: ../../boards/secure-your-azure-boards.md
   - name: Set work tracking & plan permissions
     displayName: area paths, iteration paths, test, process
     href: set-permissions-access-work-tracking.md

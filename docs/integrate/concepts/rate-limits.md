@@ -3,11 +3,11 @@ title: Rate and usage limits
 titleSuffix: Azure DevOps 
 description: Description of limits on rates and the resources used in Azure DevOps. 
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: chcomley
 author: chcomley
-ms.date: 03/20/2025
+ms.date: 09/15/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -17,70 +17,75 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure DevOps Services uses multi-tenancy to reduce costs and improve performance. This design leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. So, Azure DevOps limits the resources individuals can consume, and the amount of requests they can make to certain commands. When these limits are exceeded, future requests might be either delayed or blocked.
+Azure DevOps Services uses multi-tenancy to reduce costs and improve performance. This design can cause performance issues or outages when other users of shared resources have spikes in consumption. To help prevent this, Azure DevOps limits the resources each user can consume, and the number of requests they can make to certain commands. If you exceed these limits, future requests can be delayed or blocked.
 
-For more information, see [Git limits](../../repos/git/limits.md) and [Best practices to avoid hitting rate limits](integration-bestpractices.md).
+Learn more in [Git limits](../../repos/git/limits.md) and [Best practices to avoid hitting rate limits](integration-bestpractices.md).
 
 ## Global consumption limit
 
-Azure DevOps currently has a global consumption limit, which delays requests from individual users beyond a threshold when shared resources are in danger of being overwhelmed. This limit is focused exclusively on avoiding outages when shared resources are close to being overwhelmed.
-Individual users typically only get delayed requests when one of the following incidents occurs:
+Azure DevOps has a global consumption limit that delays requests from individual users when shared resources are at risk of being overwhelmed. This limit helps avoid outages when shared resources are close to being overwhelmed.
+Individual users typically experience delayed requests only when one of the following incidents occurs:
 
-- One of their shared resources is at risk of being overwhelmed
-- Their personal usage exceeds 200 times the consumption of a typical user within a (sliding) five-minute window
+- One of their shared resources is at risk of being overwhelmed.
+- Their personal usage exceeds 200 times the consumption of a typical user within a sliding five-minute window.
 
-The amount of the delay depends on the user's sustained level of consumption. Delays range from a few milliseconds per request up to 30 seconds. Once consumption goes to zero or the resource is no longer overwhelmed, the delays stop within five minutes. If consumption remains high, delays might continue indefinitely to protect the resource.
+The delay depends on the user's sustained level of consumption. Delays range from a few milliseconds per request up to 30 seconds. When consumption drops to zero or the resource isn't overwhelmed, the delays stop within five minutes. If consumption stays high, delays can continue indefinitely to protect the resource.
 
-When a user request gets delayed by a significant amount, that user receives an email and a warning banner in the web.
-For the build service account and others without an email address, members of the Project Collection Administrators group get the email.
+When a user request is delayed by a significant amount, the user receives an email and a warning banner in the web.
+For the build service account and others without an email address, members of the Project Collection Administrators group receive the email.
 For more information, see [Usage monitoring](../../organizations/accounts/usage-monitoring.md).
 
-When an individual user's requests get blocked, responses with HTTP code 429 (too many requests) are received, with a message similar to the following message:
+When an individual user's requests are blocked, the user receives responses with HTTP code 429 (too many requests) and a message similar to the following:
 
-```TF400733: The request has been canceled: Request was blocked due to exceeding usage of resource <resource name> in namespace <namespace ID>.```
+```text
+TF400733: The request has been canceled: Request was blocked due to exceeding usage of resource <resource name> in namespace <namespace ID>.
+```
 
 ### Azure DevOps throughput units 
 
-Azure DevOps users consume many shared resources, and consumption depends on the following factors: 
+Azure DevOps users consume many shared resources, and the level of consumption depends on factors like:
+* Uploading a large number of files to version control, which puts load on databases and storage accounts.
+* Running complex work item queries, which increases database load based on the number of work items being searched.
+* Running builds, which download files from version control and produce log output.
+* General operations, which consume CPU and memory across different parts of the service.
 
-- Uploading a large number of files to version control creates a large amount of load on databases and storage accounts
-- Complex work item tracking queries create database load based on the number of work items they search through
-- Builds drive load by downloading files from version control, producing log output
-- All operations consume CPU and memory on various parts of the service
-
-To accommodate, Azure DevOps resource consumption is expressed in abstract units called Azure DevOps throughput units (TSTUs). TSTUs eventually incorporate a blend of the following items:
-
-- [Azure SQL Database DTUs](/azure/azure-sql/database/purchasing-models) as a measure of database consumption
-- Application tier and job agent CPU, memory, and I/O as a measure of compute consumption
-- Azure Storage bandwidth as a measure of storage consumption  
-
-For now, TSTUs are primarily focused on Azure SQL Database DTUs, since Azure SQL Databases are the shared resources most commonly overwhelmed by excessive consumption. A single TSTU is the average load we expect a typical user of Azure DevOps to generate per five minutes. Typical users also generate spikes in load. These spikes are typically 10 or fewer TSTUs per five minutes. Less frequently, spikes go as high as 100 TSTUs.
-
-The global consumption limit is 200 TSTUs within a sliding five-minute window.
-
-We recommend that you at least respond to the `Retry-After` header. If you detect a `Retry-After` header in any response, wait until some time passes before you send another request. Doing so helps your client application experience fewer enforced delays. Keep in mind that the response is 200, so you don't need to apply retry logic to the request.
-
-If possible, we further recommend that you monitor `X-RateLimit-Remaining` and `X-RateLimit-Limit` headers. Doing so allows you to approximate how quickly you're approaching the delay threshold. Your client can intelligently react and spread out its requests over time.
+To measure this activity, Azure DevOps expresses resource consumption in **Azure DevOps throughput units (TSTUs)**. A TSTU is an abstract unit of load that represents a blend of different resources, including:
+*   Database usage—measured primarily through Azure SQL Database DTUs.
+*   Compute usage—CPU, memory, and I/O from application tiers and job agents.
+*   Storage usage—Azure Storage bandwidth.
 
 > [!NOTE]
-> Identities used by tools and applications to integrate with Azure DevOps might occasionally need higher rate and usage limits beyond the allowed consumption limit. You can increase these limits by assigning the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level to the desired identities used by your application. Once the need for higher rate limits is fulfilled, you can revert to the previous access level. You get charged for the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level only for the duration assigned to the identity.
->
-> Identities already assigned a Visual Studio Enterprise subscription can't get assigned the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level until they get removed.
+> TSTUs are intentionally abstract. They aggregate resource consumption across compute, storage, and database layers within a distributed infrastructure. The underlying metrics (CPU, memory, I/O, DTUs) aren't directly exposed or meaningful on their own. TSTUs provide a unified way to represent load, making it easier to manage and monitor usage without exposing the full complexity of individual resource components. You can't calculate usage in TSTUs for an action with a formula, but you can see how many TSTUs an operation consumes on the [usage monitoring](../../organizations/accounts/usage-monitoring.md) page. Some operations, like work item queries, vary in consumption as your organization grows and changes, so you might need to benchmark periodically to stay accurate.
+
+Currently, TSTUs focus primarily on Azure SQL Database DTUs because databases are the shared resource most likely to be overwhelmed by excessive consumption.
+* One TSTU represents the average load generated by a typical Azure DevOps user over five minutes.
+* Normal user activity can generate spikes of 10 TSTUs or fewer per five minutes.
+* Larger but less frequent spikes can reach up to 100 TSTUs.
+* The global limit is 200 TSTUs within any sliding five-minute window.
+
+### Best practices
+
+* Honor the Retry-After header: If you receive it in a response, wait the specified time before sending another request. The response still returns HTTP 200, so retry logic isn't required.
+* Monitor X-RateLimit headers: If available, track `X-RateLimit-Remaining` and `X-RateLimit-Limit` to approximate how quickly you're approaching the threshold. This lets your client smooth out request bursts and avoid enforced delays.
+
+> [!NOTE]
+> Identities used by tools and applications to integrate with Azure DevOps can occasionally need higher rate and usage limits beyond the allowed consumption limit. Increase these limits by assigning the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level to the identities your application uses. After you no longer need higher rate limits, revert to the previous access level. You're charged for the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level only for the duration assigned to the identity.
+Identities already assigned a Visual Studio Enterprise subscription can't be assigned the [Basic + Test Plans](../../organizations/billing/buy-basic-access-add-users.md#assign-basic-or-basic--test-plans) access level until you remove the subscription.
 
 ## Pipelines
 
-Rate limiting is similar for Azure Pipelines. Each pipeline gets treated as an individual entity with its own resource consumption tracked. Even if build agents are self-hosted, they generate load in the form of cloning and sending logs.
+Rate limiting works the same way for Azure Pipelines. Each pipeline is an individual entity, and its resource consumption is tracked separately. Even if build agents are self-hosted, they generate load by cloning and sending logs.
 
-We apply a 200 TSTU limit for an individual pipeline in a sliding 5-minute window. This limit is the same as the global consumption limit for users.
-If a pipeline gets delayed or blocked by rate limiting, a message appears in the attached logs.
+There's a 200 TSTU limit for each pipeline in a sliding 5-minute window. This limit matches the global consumption limit for users.
+If rate limiting delays or blocks a pipeline, you see a message in the attached logs.
 
 ## API client experience
 
-When requests get delayed or blocked, Azure DevOps returns response headers to help API clients react. While not fully standardized, these headers are [broadly in line with other popular services](https://stackoverflow.com/questions/16022624/examples-of-http-api-rate-limiting-http-response-headers).
+When requests are delayed or blocked, Azure DevOps returns response headers to help API clients react. While not fully standardized, these headers are [broadly in line with other popular services](https://stackoverflow.com/questions/16022624/examples-of-http-api-rate-limiting-http-response-headers).
 
-The following table lists the headers available and what they mean.
-Except for `X-RateLimit-Delay`, all of these headers get sent before requests start getting delayed.
-This design gives clients the opportunity to proactively slow down their rate of requests.
+The following table lists the available headers and what they mean.
+Except for `X-RateLimit-Delay`, all these headers are sent before requests start getting delayed.
+This design lets clients proactively slow down their rate of requests.
 
 :::row:::
    :::column span="1":::
@@ -114,7 +119,8 @@ This design gives clients the opportunity to proactively slow down their rate of
       `X-RateLimit-Delay`
    :::column-end:::
    :::column span="2":::
-       How long the request was delayed. Units: seconds with up to three decimal places (milliseconds). 
+              How long the request is delayed. Units: seconds with up to three decimal places (milliseconds).
+ 
    :::column-end:::
 :::row-end:::
 ---
@@ -132,7 +138,8 @@ This design gives clients the opportunity to proactively slow down their rate of
       `X-RateLimit-Remaining`
    :::column-end:::
    :::column span="2":::
-       Number of TSTUs remaining before being delayed. If requests are already being delayed or blocked, it's 0.
+              Number of TSTUs remaining before delays start. If requests are already delayed or blocked, it's 0.
+
    :::column-end:::
 :::row-end:::
 ---
@@ -141,22 +148,23 @@ This design gives clients the opportunity to proactively slow down their rate of
        `X-RateLimit-Reset`
    :::column-end:::
    :::column span="2":::
-       Time at which, if all resource consumption stopped immediately, tracked usage would return to 0 TSTUs. Expressed in Unix epoch time.
+              Time when, if all resource consumption stops immediately, tracked usage returns to 0 TSTUs. Expressed in Unix epoch time.
+
    :::column-end:::
 :::row-end:::
 ---
 
 ## Work tracking, process, & project limits
 
-Azure DevOps imposes limits for the number of projects you can have in an organization and the number of teams you can have within each project. Also be aware of limits for work items, queries, backlogs, boards, dashboards, and more. For more information, see [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md).
+Azure DevOps limits the number of projects you can have in an organization and the number of teams you can have in each project. There are also limits for work items, queries, backlogs, boards, dashboards, and more. For more information, see [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md).
 
 ## Wiki
 
-In addition to the usual [repository limits](../../repos/git/limits.md#repository-size), wikis defined for a project are limited to 25 MB per single file. 
+In addition to the usual [repository limits](../../repos/git/limits.md#repository-size), a wiki file in a project can be up to 25 MB.
 
 ## Service connections
 
-There are no per-project limits placed on creating service connections. However, there might be limits, which are imposed through Microsoft Entra ID. For additional information, review the following articles:
+There aren't any per-project limits on creating service connections. However, limits might be imposed through Microsoft Entra ID. For more information, see the following articles:
 
 - [Microsoft Entra service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions)
 - [Azure subscription and service limits, quotas, and constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits)

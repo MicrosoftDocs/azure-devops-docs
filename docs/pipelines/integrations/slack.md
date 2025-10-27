@@ -21,7 +21,7 @@ This article shows you how to use the [Azure Pipelines app for Slack](https://sl
 
 - A Slack account with permission to install an app to your Slack workspace.
 - An Azure DevOps project with **Project Collection Administrators** or **Project Administrators** permissions.
-- Must not be an external user in Entra.
+- Must not be an external user in Microsoft Entra.
 
 ## Install the Azure Pipelines app
 
@@ -36,7 +36,7 @@ Once the app is installed in your Slack workspace, you can connect the app to an
 :::image type="content" source="media/integrations-slack/sign-in.png" alt-text="A screenshot showing the sign-in prompt message.":::
 
 > [!NOTE]
-> If your Azure DevOps organization is connected to an Entra ID tenant, you must sign in with a native member of that tenant. External users will see the following error if they try to sign in to the Azure Pipelines app: `Configuration failed. Please make sure that the organization exists and that you have sufficient permissions.`
+> If your Azure DevOps organization is connected to a Microsoft Entra ID tenant, you must sign in with a native member of that tenant. External users receive the following error if they try to sign in to the Azure Pipelines app: `Configuration failed. Please make sure that the organization exists and that you have sufficient permissions.`
 
 ## Subscribe to pipelines
 
@@ -117,14 +117,6 @@ The Azure Pipelines app for Slack supports the following commands:
 ## Notifications in private channels
 
 The Azure Pipelines app can also help you monitor pipelines activity in your private channels. You need to invite the bot to your private channel by using `/invite @azpipelines`. Once you add the bot, you can configure and control your notifications the same way as for a public channel.
-
-## Conditions and limitations
-
-- You can use the Azure Pipelines app for Slack only with Azure DevOps Services.
-- To set up the subscriptions, you must be an admin of the project containing the pipeline.
-- Notifications aren't supported inside direct messages.
-- Deployment approvals that have the **Revalidate identity of approver before completing the approval** policy applied aren't supported.
-- To use the app, **Third party application access via OAuth** must be enabled in Azure DevOps **Organization settings** > **Security** > **Policies**.
 
 ## Troubleshooting
 

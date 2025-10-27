@@ -3,7 +3,7 @@ ms.subservice: azure-devops-ecosystem
 title: Publishing and packaging an extension from the Command Line
 description: How to package and publish your Azure DevOps or Team Foundation Server (TFS) extension from the command line.
 ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

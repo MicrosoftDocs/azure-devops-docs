@@ -5,7 +5,7 @@ description: CalendarDate, Project, and User properties and enumerated members m
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: reference
 monikerRange: "<=azure-devops"
 ms.date: 11/07/2022
 ---

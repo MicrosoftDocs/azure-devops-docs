@@ -4,7 +4,7 @@ description: Voluntarily provide stakeholder feedback in Azure DevOps using the 
 ms.assetid: 4E467527-62C6-4321-BA56-FF82F0FFFD69
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 ms.date: 12/07/2018
@@ -78,8 +78,8 @@ Use the Test & Feedback extension to provide voluntary feedback, even if you don
 
 ## Related content
 
-* [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md#request)
-* [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
-* [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md#track)
+* [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md)
+* [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md)
+* [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to choose and use burndown/burnup charts to review sprints and releases in Azure DevOps.
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
@@ -99,7 +99,6 @@ Teams should meet immediately to course correct and either reassign work, recrui
 
 - [View and configure velocity](team-velocity.md)
 - [Implement Scrum practices for your team in Azure Boards](../../boards/sprints/scrum-overview.md)
-- [Query by date or current iteration, List work items moved out of a sprint](../../boards/queries/query-by-date-or-current-iteration.md#list-work-items-moved-out-of-a-sprint)
-- [Query by date or current iteration, List work items added to a sprint after the start date](../../boards/queries/query-by-date-or-current-iteration.md#list-work-items-added-to-a-sprint-after-the-start-date)
+- [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)
 - [Manage priorities and gain visibility across teams](../../boards/plans/visibility-across-teams.md)
 - [Understand the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)  

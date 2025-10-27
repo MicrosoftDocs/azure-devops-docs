@@ -28,7 +28,7 @@ The following sections provide steps to implement each method.
 
 - An Azure DevOps organization and project. To create an organization or project, see [Create a new organization](../../../organizations/accounts/create-organization.md) or [Create a project in Azure DevOps](../../../organizations/projects/create-project.md).
 - Access to at least one Windows or Linux deployment target machine with the [appropriate permissions](../../agents/windows-agent.md#permissions).
-- For the Azure Pipelines Agent installation methods, an Azure account and subscription with permissions to create and manage Azure VMs. If you don't have an Azure account, [sign up for a free account](https://azure.microsoft.com/free/).
+- For the Azure Pipelines Agent installation methods, an Azure account and subscription with permissions to create and manage Azure VMs. If you don't have an Azure account, [sign up for a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Run the installation script on the target servers
 

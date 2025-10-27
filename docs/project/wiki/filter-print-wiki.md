@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Filter the contents of a wiki table of content or print a wiki page.
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach

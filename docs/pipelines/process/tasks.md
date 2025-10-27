@@ -1,7 +1,7 @@
 ---
 title: Task types and usage
 description: Learn about tasks in Azure Pipelines pipeline jobs, including setting inputs and controlling run conditions.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.date: 08/18/2025
 monikerRange: '<= azure-devops'
@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 Azure Pipelines jobs consist of steps, which can be tasks or scripts. A task is a prepackaged script or procedure that performs an action or uses a set of inputs to define pipeline automation. This article describes pipeline tasks and how to use them. For schema information, see the [steps.task](/azure/devops/pipelines/yaml-schema/steps-task) definition.
 
-Azure Pipelines includes many built-in tasks that enable fundamental build and deployment scenarios. For a list of available built-in Azure Pipelines tasks, see the [Azure Pipelines task reference](https://github.com/MicrosoftDocs/azure-devops-yaml-schema-pr/blob/live/task-reference/index.md). You can also install tasks from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) or create [custom tasks](../../extend/develop/add-build-task.md).
+Azure Pipelines includes many built-in tasks that enable fundamental build and deployment scenarios. For a list of available built-in Azure Pipelines tasks, see the [Azure Pipelines task reference](/azure/devops/pipelines/tasks/reference/). You can also install tasks from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) or create [custom tasks](../../extend/develop/add-build-task.md).
 
 By default, all steps in a job run in sequence in the same context, whether on the host or in a [job container](container-phases.md). You can optionally use [step targets](#target) to control context for individual tasks. To run some tasks in parallel on multiple agents, or without using an agent, see [Specify jobs in your pipeline](phases.md).
 
@@ -250,7 +250,7 @@ Build tool installer tasks enable your build pipeline to install and control dep
 - Install a tool or runtime for a build, including on [Microsoft-hosted agents](../agents/hosted.md).
 - Validate your app or library against multiple versions of a dependency such as Node.js.
 
-For a list of tool installer tasks, see [Tool tasks](https://github.com/MicrosoftDocs/azure-devops-yaml-schema-pr/blob/live/task-reference/index.md#tool-tasks).
+For a list of tool installer tasks, see [Tool tasks](/azure/devops/pipelines/tasks/reference/#tool-tasks).
 
 ### Example: Test and validate an app on multiple versions of Node.js
 
@@ -317,6 +317,6 @@ The job runs twice, one for each version of Node.js you specified in the `nodeVe
 
 - [Jobs](phases.md)
 - [Task groups](../library/task-groups.md)
-- [Azure Pipelines task reference](https://github.com/MicrosoftDocs/azure-devops-yaml-schema-pr/blob/live/task-reference/index.md)
+- [Azure Pipelines task reference](/azure/devops/pipelines/tasks/reference/)
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

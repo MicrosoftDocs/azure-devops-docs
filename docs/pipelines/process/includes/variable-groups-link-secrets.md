@@ -16,15 +16,12 @@ Any changes made to existing secrets in the key vault are automatically availabl
 
 Although Key Vault supports storing and managing cryptographic keys and certificates in Azure, Azure Pipelines variable group integration only supports mapping key vault secrets. Cryptographic keys and certificates aren't supported.
 
-> [!NOTE]
-> Key vaults that use Azure role-based access control (Azure RBAC) aren't supported.
-
 ### Prerequisites
 
 | Product | Requirements|
 |---------|-------------|
 | Azure DevOps | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br> - An [Azure Resource Manager service connection](../../library/connect-to-azure.md) for your project.<br>  - **Permissions:**<br>     &nbsp;&nbsp;&nbsp;&nbsp;- To use service connections: Have at least the *User* role for the [service connection](../../policies/permissions.md#set-service-connection-security-in-azure-pipelines).<br>    &nbsp;&nbsp;&nbsp;&nbsp;- To create a variable group: Have at least *Creator* [library permission](../../policies/permissions.md#set-library-security-in-azure-pipelines).  |
-| Azure | - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/).<br> - **Permissions:**<br>     &nbsp;&nbsp;&nbsp;&nbsp;To create a key vault: Have at least the *Owner* role for the subscription.|
+| Azure | - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).<br> - **Permissions:**<br>     &nbsp;&nbsp;&nbsp;&nbsp;To create a key vault: Have at least the *Owner* role for the subscription.|
 
 
 ### Create a key vault
@@ -53,8 +50,8 @@ Create an Azure key vault.
 1. Select **+ Add** and on the **Choose secrets** screen, select the secrets from your vault for mapping to this variable group, then select **OK**.
 1. Select **Save** to save the secret variable group.
 
-:::image type="content" source="../../library/media/link-azure-key-vault-variable-group.png" alt-text="Screenshot of variable group with Azure key vault integration.":::
-
+    :::image type="content" source="../../library/media/link-azure-key-vault-variable-group.png" alt-text="Screenshot of variable group with Azure key vault integration.":::
+    
 >[!NOTE]
 >Your service connection must have at least **Get** and **List** permissions on the key vault, which you can authorize in the preceding steps. You can also provide these permissions from the Azure portal by following these steps:
 >

@@ -3,7 +3,7 @@ title: Service connections
 ms.custom: pipelinesresourcesrefresh, arm2024
 description: Learn how to manage Azure Pipelines service connections and get a reference to service connection types.
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
 ms.date: 10/16/2024
@@ -487,6 +487,9 @@ Use the following parameters when you define a connection to a Kubernetes cluste
 * Kubeconfig
 * Service account
 * Azure subscription
+
+> [!NOTE]
+> The Kubernetes service connection option does not work if your cluster is private or hidden from the network. In these cases, you need to use an [Azure Resource Manager-based service connection](#azure-resource-manager-service-connection) and ensure your pipeline runs on an agent with direct network access to the cluster, such as one in a [Managed DevOps pool](/azure/devops/managed-devops-pools/overview).
 
 #### Kubeconfig option
 

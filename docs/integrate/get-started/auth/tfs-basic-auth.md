@@ -1,6 +1,6 @@
 ---
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
+ms.topic: overview
 title: Cross-platform CLI authentication for Azure DevOps
 description: Learn authentication options for the cross-platform CLI for Azure DevOps, including Microsoft Entra ID tokens and personal access tokens.
 ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8

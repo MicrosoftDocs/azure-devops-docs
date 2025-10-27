@@ -6,7 +6,7 @@ ms.subservice: azure-devops-audit
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '= azure-devops'
 ms.date: 11/22/2024
 ---
@@ -190,8 +190,8 @@ The following tables describe the type of events (or actions) that are available
 
 | Action | Description |
 |--------|-------------|
-| `Organization.Create` | Organization {OrganizationName} was created in {PreferredRegion} region. |
-| `Organization.LinkToAAD` | Organization {OrganizationName} was linked to Microsoft Entra tenant {AADTenant}. |
+| `Organization.Create` | Organization {OrganizationName} was created in {PreferredGeography} geography. |
+| `Organization.LinkToAAD` | Organization {OrganizationName} was linked to Microsoft Entra tenant {EntraTenant}. |
 | `Organization.UnlinkFromAAD` | Organization {OrganizationName} was unlinked from Microsoft Entra tenant. |
 | `Organization.Update.Delete` | Organization {OrganizationName} was deleted. |
 | `Organization.Update.ForceUpdateOwner` | Organization owner was changed from {OldOwnerName} to {NewOwnerName}. Reason specified by actor "{ForceUpdateReason}". |

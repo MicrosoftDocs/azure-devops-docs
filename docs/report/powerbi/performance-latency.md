@@ -5,7 +5,7 @@ description: Learn about how data is updated and time requirements associated wi
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 10/05/2021
 ---

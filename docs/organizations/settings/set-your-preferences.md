@@ -75,7 +75,7 @@ User profile settings get updated.
 
 ::: moniker range="azure-devops"
 
-We're previewing the option to use your profile picture, display name, contact email address, and region from Microsoft Entra in Azure DevOps.
+We're previewing the option to use your profile picture, display name, contact email address, and geography from Microsoft Entra in Azure DevOps.
 
 To enable this feature, go to the Azure DevOps home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, then choose **Profile**.
 

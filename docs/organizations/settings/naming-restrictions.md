@@ -3,7 +3,7 @@ title: Restrictions and conventions for naming objects
 titleSuffix: Azure DevOps
 description: Requirements for consistency in labeling objects like organizations, projects, tags, templates, and more, by length, uniqueness, and special characters.
 ms.subservice: azure-devops-settings
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.author: chcomley
 author: chcomley
@@ -222,6 +222,19 @@ Tag names must conform to the following restrictions.
 |Length    | - Must not contain more than 400 Unicode characters.<br>- Must not be null or empty.    |
 |Special characters    |- Must not contain separator characters: `,` or `;`.<br>- Must not contain Unicode control or format characters, such as a line feed, paragraph separator, carriage return, or other mismatched surrogate characters.|
 |Scope   | Since global lists are available among all projects, they must not contain elements defined at the project level, such as project-specific group account definitions.
+
+::: moniker range="> azure-devops-2022"
+
+### Work item queries 
+
+Work item queries are used to list work items based on the field criteria you specify for details, see [About managed queries](../../boards/queries/about-managed-queries.md). 
+
+|Restriction type |Restriction |
+|-----------------|------------|
+|Length    | Must not contain more than 255 Unicode characters.    |
+|Uniqueness|- Query names cannot be empty.<br/>- Must not contain any one of the following characters: `/ \ < > * ? " + | :`.<br/>- Must be contained in a folder.<br/>- Must be named uniquely within the folder.|
+
+::: moniker-end
 
 ## Azure Pipelines
 

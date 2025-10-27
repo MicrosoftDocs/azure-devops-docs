@@ -1,7 +1,7 @@
 ---
 title: Customize cards on a board
 titleSuffix: Azure Boards
-description: Learn how to customize cards to provide at-a-glance information of interest to your team in Azure Boards and Azure DevOps.
+description: Learn how to customize cards to show relevant information and highlight important work items on your team's board in Azure Boards.
 ms.custom: boards-kanban, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
@@ -9,285 +9,206 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/05/2023
+ms.date: 09/03/2025
 ---
  
 # Customize cards on a board  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-A board presents work items in the form of cards, where each card represents a work item that facilitates information sharing, progress tracking, and task assignment. These cards provide quick insights for you and your team. You can update a field on a card without having to open the corresponding work item. You can also apply style rules to highlight specific cards and tasks based on your set criteria.
+Customize board cards to display the information your team needs most. Cards show work items as visual elements that facilitate quick updates, progress tracking, and at-a-glance status assessment. You can update fields directly on cards without opening work items, and apply visual styling to highlight important items.
 
 > [!NOTE] 
-> This article addresses customization of a board. For information on customizing a Taskboard, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
+> This article covers board card customization. For Taskboard card customization, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
 
 ## Prerequisites
 
-| Category | Requirements |
-|--------------|-------------|
-|**Access levels** | At least [**Basic**](../../organizations/security/access-levels.md) access.|
-|**Permissions** | To configure team settings: Member of the **Project Administrators** security group or [**Team Administrator** role](../../organizations/settings/add-team-administrator.md). For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).|
-|**Tasks (optional)**| See the section, [Card customization sequence](#card-customization-sequence)|
+| Requirement | Description |
+|-------------|-------------|
+| **Access** | [**Basic**](../../organizations/security/access-levels.md) access or higher |
+| **Permissions** | Member of **Project Administrators** security group or [**Team Administrator** role](../../organizations/settings/add-team-administrator.md) |
 
-## Card customization options  
+For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 
-You can show fields on cards based on what your team frequently refers to or updates when using the board. You can also add fields with information that you can use to filter the board. 
+## Customization options  
 
-> [!NOTE]  
-> You can customize a work item type which is different than customizing the card displayed on the board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
+Each team can independently customize their board cards. Customizations aren't inherited from other teams, even when sharing area paths.
 
-Within the [Settings dialog for a board](#open-your-board-settings), you have the following customization options. 
+You can customize the following aspects of board cards:
 
 ::: moniker range=">= azure-devops-2020"
-|Setting |Customization action  |
+| Setting | Purpose |
 |---------|---------|
-|**[Fields](#fields)**  | Add or remove fields from cards. Includes adding the **Parent** field to cards.        |
-|**[Styles](#style-rule)**   | Add styling rules to change card color and title style based on field criteria.        |
-|**[Tag colors](#assign-tag-colors)**      | Specify a tag color and enable or disable a tag color.        |
-|**[Annotations](#enable-or-disable-annotations)**   | Enable or disable annotations to appear on cards.        |
-|**[Tests](#configure-inline-tests)**    |Configure how you want tests to appear and behave on the cards.         |
-|**[Card reordering](#reorder-cards)**    | Choose expected behavior when reordering cards on the board.        |
+| **[Fields](#add-fields-to-cards)** | Control which fields appear on cards, including parent work item information |
+| **[Styles](#apply-style-rules)** | Change card colors and text styling based on field criteria |
+| **[Tag colors](#set-tag-colors)** | Assign specific colors to tags for visual categorization |
+| **[Annotations](#manage-annotations)** | Enable or disable icons showing related items (tasks, tests, GitHub) |
+| **[Tests](#configure-tests)** | Configure how inline tests appear and behave |
+| **[Card reordering](#configure-card-reordering)** | Control behavior when reordering cards |
 ::: moniker-end
 
-> [!NOTE]   
-> Each team can customize the cards for their board. Board settings are not inherited from other teams that they may share portions of area paths. 
+## Access board settings
 
-## Card customization sequence 
+1. Open your board and select the backlog level you want to customize (Product backlog, Features, Epics).
 
-Before you configure the cards, ensure the following tasks are complete, or you might need to revisit your configuration.  
+2. Select :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: **Settings**.
 
-**Process Administrator**: 
-1. Add custom work item types that you want to appear on your backlog or board. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
-2. Customize your product and portfolio backlogs to ensure all the work item types you want to have appear on the backlogs and boards. For details see [Customize backlogs & boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-3. Customize each work item type to have any custom fields you want to show. For more information, see [Customize a workflow](../../organizations/settings/work/add-custom-field.md).
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot showing how to open board settings.](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
-**Team Administrator**:
-1. Meet with your team and determine how the team wants to manage bugs, similar to requirements or tasks.  
-1. [Add any tags](../queries/add-tags-to-work-items.md) you want to customize on cards to work items. 
-1. Meet with your team and determine which annotations should appear on cards and how they want to configure inline tests.  
- 
-## Open your board settings
+<a id="fields">  </a>
 
-If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the board.
+## Add fields to cards
 
-You can customize cards that appear on the board for your product backlog or portfolio backlog such as features and epics. You follow similar steps, however you start from the [corresponding portfolio backlog](../../boards/backlogs/define-features-epics.md).  
+Display relevant fields on cards to enable quick viewing and editing without opening work items.
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. [Open your board](kanban-quickstart.md). 
-3. Choose the backlog level that you want to customize. 
+1. In your board settings, select **Fields** and choose the work item type to configure.
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot showing Open backlog level to customize.](media/features-epics/select-portfolio-level.png)  
+   :::image type="content" source="media/customize-cards/settings-fields-142.png" alt-text="Screenshot of Fields settings for User Story work item type.":::
 
-4. Choose the :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board and set general team settings.  
+2. Check the boxes for fields you want to display on cards:
+   - **Show Effort**: Displays Story Points, Effort, or Size depending on your process
+   - **Parent**: Shows parent work item title (enables filtering by parent)
+   - Custom fields you added to your process
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot showing Open board settings for a team, vert nav.](../../organizations/settings/media/configure-team/open-board-settings.png)  
+3. To add a field:
+   - Select :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: **Add field**
+   - Enter the field name
+   - Select **Save**
 
-<a id="kanban-board" > </a>
-<a id="fields"></a>
+4. To remove a field, select :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: next to the field name.
 
-## Choose which fields appear on cards 
- 
-You can edit a card field from the board, except for read-only fields like the *Change By* and  *Changed Date*. This quick update feature is useful when you need to update many work items at once.
+> [!TIP]
+> You can edit most fields directly on cards. Read-only fields like *Changed By* and *Changed Date* display for reference only.
 
-::: moniker range="<=azure-devops"
-Do the following steps to update fields. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
-::: moniker-end  
+## Apply style rules
 
-1. From the board settings page, choose **Fields** and then choose a work item type to see all the settings that you can modify. Your initial column settings appear similar to the following image. 
+Use style rules to highlight cards based on field values. Cards change color automatically when work items meet your specified criteria.
 
-	Your choices vary based on the [process](../../boards/work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).     
+### Common styling scenarios
 
-   :::image type="content" source="media/customize-cards/settings-fields-142.png" alt-text="Screenshot showing Settings,Fields, User Story tab (Agile process).":::
+| Scenario | Criteria Example |
+|----------|-----------------|
+| High priority items | `Priority = 1` |
+| Large work items | `Story Points >= 20` |
+| Stale items | `Changed Date <= @Today-5` |
+| Critical bugs | `Severity = 1 - Critical AND Work Item Type = Bug` |
+| Blocked work | `Blocked = Yes` |
+| Feature area focus | `Area Path Under Fabrikam\Mobile` |
 
-2. Add check mark in the box next to the fields that you want to appear on the board. 
+<a id="define-style-rules-to-highlight-cards">  </a>
+<a id="style-rule">  </a>
 
-	If you want work estimates to show, check **Show Effort**, which corresponds to the following fields: Effort ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../boards/work-items/guidance/agile-process.md)), and Size ([CMMI](../../boards/work-items/guidance/cmmi-process.md)).
+### Create style rules
 
-3. To add a field, select the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of a field  you want to add. 
+1. In your board settings, select **Styles** > **Add styling rule**.
 
-4. To remove a field, select the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
+   :::image type="content" source="../sprints/media/customize/taskboard-styles-priority.png" alt-text="Screenshot of style rule configuration dialog.":::
 
-5. When you're done, select **Save**.
+2. Choose a card color and define the criteria:
+   Set up criteria using query-like syntax:
+   - All clauses use AND logic
+   - Rules apply in the order listed
+   - Higher rules take precedence
 
-::: moniker range=">= azure-devops-2020"
-> [!NOTE]  
-> To show the **Title** of the parent work item, choose the **Parent** field. Choosing the **Parent** title from a card opens the parent work item. To change the parent work item, open the child work item and remove the link and add a different parent work item. You can filter your board based on parent work items, whether the **Parent** field is added to cards or not.
-::: moniker-end
+3. Use the actions menu (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) to **Clone** or **Delete** rules.
 
-<a id="styles" > </a>
+4. Select **Save**.
 
-<a id="style-rule" > </a>  
+<a id="assign-tag-colors">  </a>
 
-## Define style rules to highlight cards 
- 
-With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight severity 1 bugs by having the cards display as yellow. 
+## Set tag colors
 
-::: moniker range="<=azure-devops"
-![Screenshot showing styling rule applied to bugs with Severity=1.](media/customize-cards/card-style-s155-solo.png)
-::: moniker-end
+Assign colors to specific tags for visual categorization.
 
-### Examples of styling rules 
+1. In your board settings, select **Tag colors** > **Add tag color**.
 
-Which rules should you apply to highlight work items? Here are a few examples and their associated criteria.
+2. Choose the tag and its display color:
 
-> [!div class="mx-tdCol2BreakAll"]
-> | Work items | Criteria |
-> |------------|------------|
-> | High priority items | `Priority = 1` |
-> | High effort items | `Effort 20` or `Story Points 20` |
-> | Stale items unchanged in the last 5 days | `Changed Date @Today-5` |
-> |Title contains a key word | `Title Contains Yes` |
-> |Severity 1 bugs | `Severity = 1 - Critical   AND   Work Item Type = Bug` |
-> |High value business items | `Business Value 50` |
-> |Items assigned to specific feature area  | `Area Path Under Fabrikam Fiber\Phone` |
-> |Contains specific tag   | `Tags Contain RTM` |
-> |Blocked tasks (Scrum process only) | `Blocked = Yes` |
+   :::image type="content" source="media/customize-cards/settings-tag-colors.png" alt-text="Screenshot of tag color configuration.":::
 
-You can apply style rules to change the color of cards on boards and Taskboards.  
+3. Select **Save**.
 
-::: moniker range="<=azure-devops"
+> [!TIP]
+> Ensure **Show Tags** is enabled in **Fields** settings for tag colors to appear.
 
-1. From the board settings page, select **Styles** to specify a style rule. 
-2. Select + **Add styling rule**. Select the color to apply to the card and define the criteria for the style rule. 
+## Manage annotations
 
-	In the following example, we show the **Styles** page for the Dashboard. 
+Annotations display icons on cards showing related items like tasks, tests, or GitHub commits.
 
-   :::image type="content" source="../sprints/media/customize/taskboard-styles-priority.png" alt-text="Screenshot of the Settings, Styles dialog.":::
+1. In your board settings, select **Annotations**.
+2. Check the box next to the annotations that you want to use.
 
-   > [!TIP]
-   > Note the following information about style rules:
-   >- The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md). 
-   >- All clauses are considered AND clauses, grouping clauses isn't supported. 
-   >- Card rules apply to all work items that meet the rule criteria. 
-   >- Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied. 
-   >- You can quickly enable and disable a style rule.
+   :::image type="content" source="media/customize-cards/annotate-settings-154.png" alt-text="Screenshot of annotation settings showing available options.":::
 
-   In the following example, we add a *Stale tasks* rule, which highlights tasks that haven't changed in the last five days.
+3. Select **Save**.
 
-   :::image type="content" source="../sprints/media/customize/task-board-card-style-rule-stale-tasks.png" alt-text="Screenshot showing Taskboard, Style dialog, and example style rule."::: 
+Enabled annotations appear as numbered icons on cards:
 
-3. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**.
+| Annotation Type | Example |
+|----------------|---------|
+| Tasks | ![Screenshot of task annotations enabled.](media/annotate-task.png) |
+| Tests | ![Screenshot of test annotations enabled.](media/annotate-test.png) |
 
-4. When you're done, select **Save**.
-::: moniker-end  
+> [!NOTE]
+> Disabling an annotation also disables the ability to add those items directly from the board.
 
-## Assign tag colors  
+<a id="configure-inline-tests">  </a>
 
-Before you set tag colors, [add tags to backlog items](../../boards/queries/add-tags-to-work-items.md) that you want to highlight with color.   
+## Configure tests
 
-1. From the Settings dialog, select **Tag colors**, and then **+ Add tag color**. Then, select the tag and the color you want to appear on the cards.  
+Control how inline tests are organized when created from boards.
 
-   :::image type="content" source="media/customize-cards/settings-tag-colors.png" alt-text="Screenshot showing Settings, Tag colors dialog.":::
+1. In your board settings, select **Tests** (requires Test annotation to be enabled).
 
-   > [!TIP]
-   > If tags don't display on the cards, select **Fields** and make sure that you've checked **Show Tags**. 
+2. Choose test organization options:
+   - Create new test plan for each test
+   - Add all tests to a selected test plan
+   - Enable shared test outcomes across suites
 
-2. When you're done, select **Save**.
+    > [!div class="mx-imgBorder"]  
+    > ![Screenshot of test configuration options.](media/customize-cards/settings-tests.png)  
 
-## Enable or disable annotations
+3. Select **Save**.
 
-All applicable annotations for the selected board are enabled by default. These annotations include all work item types added to the next level backlog, GitHub, and Tests. Disable any unused annotations or ones that you want to restrict for a specific backlog level. 
+<a id="reorder-cards">  </a>
 
-When you disable an annotation, you also disable the feature to add the associated object from the  board. For example, if you disable the Tests annotation, you disable the ability to add tests from the currently selected board.
+## Configure card reordering
 
-Complete the following steps to manage annotations.
+Control how card order is maintained when moving cards between columns.
 
-::: moniker range="<=azure-devops"
+1. In your board settings, select **Card reordering**.
 
-1. From your board settings page, select **Annotations**.
-2. Check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
+2. Choose the reordering behavior:
+   - **Maintain backlog priority order**
+   - **Allow free reordering within columns**
 
-   :::image type="content" source="media/customize-cards/annotate-settings-154.png" alt-text="Screenshot showing a board, Settings dialog, Annotations tab.":::
+    > [!div class="mx-imgBorder"]  
+    > ![Screenshot of card reordering options.](../../boards/boards/media/kanban-card-reordering-up1.png) 
 
-	> [!NOTE]   
-	> GitHub annotations requires Azure DevOps Server 2020 or later version. For more information, see [Link GitHub commits, pull requests, branches, and issues to work items](../github/link-to-from-github.md).
-
-3. When you're done, select **Save**.
-
-::: moniker-end
-
-As shown in the following examples, the **Task** and **Test** annotations indicate that two each of tasks and tests are defined for the work item.
-
-> [!div class="mx-tdBreakAll"]  
-> | Task annotations  |Test annotations  |No annotations |
-> |-------------|----------|----------|    
-> |![Task annotations enabled.](media/annotate-task.png) | ![Test annotations enabled.](media/annotate-test.png) | ![Annotations disabled.](media/annotate-none.png) | 
-
-For more information, see [Add tasks or child items as checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
-
-## Configure inline tests 
-
-You can control the test plan where you create inline tests through your board. Choose to create a new test plan for each new test that you add or add all new tests to a selected test plan. 
-
-1. From the board settings page (product backlog only), choose **Annotations**. [Make sure that **Test** annotation is enabled](#enable-or-disable-annotations), a requirement to configure inline tests.
-
-2. Select **Tests**, and then choose the options you want. Choose an existing test plan from the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon results.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing configuring inline tests.](media/customize-cards/settings-tests.png)  
-
-    > [!TIP]
-    > In a test plan, a test case can exist in multiple test suites. For example, you may define several test suites for each product feature and the test cases test scenarios across features. The test case might exist in both feature's test suite with the same configurations and test steps. Because of this setup, the tester might run the same test case multiple times for the same product version. 
-    > To avoid the redundancies that can occur under this scenario, you should choose **Show same outcome of the tests in multiple suites under the same plan** checkbox. When checked, the Test Points of the same Test Case and configuration, shows the same latest outcome. When the tester runs any one test, the output is synced with all other test points (which are of the same Test Case work item and same configuration) in the Test Plans. The tester can use the outcome and choose not to run the test again.
-
-3. Select **Save**. 
-
-### Open the test plan, test suite from a card
-
-From a card on the board, you can go to the underlying test plan and test suite under which the tests are created. Choose the :::image type="icon" source="../../media/icons/open-icon.png" border="false"::: open icon to open another browser tab showing **Test** and associated test plan and test suite that controls the inline tests.
-
-:::image type="content" source="media/c-cards-navigate-to-test-suite.png" alt-text="Screenshot showing Test selection from card on board.":::
-
-## Reorder cards
-
-You can drag any work item to any column or swimlane on a board. You can even change the order of items as you move a card to a new column. 
-
-![GIF Screenshot showing reordering cards while changing columns.](media/8_7_02.gif)
+3. Select **Save**.
 
 ::: moniker range=">= azure-devops-2022"
-In addition to the dynamic card reordering, you can also move a card to a specific column position.  
+### Move cards to specific positions
+
+1. Select **···** (More actions) on a work item card.
+2. Choose **Move to position**.
+3. Enter the target position number.
+
+:::image type="content" source="media/reorder/move-to-position.png" alt-text="Screenshot of Move to position dialog.":::
 ::: moniker-end
 
-> [!NOTE]   
-> The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they're reordered based on the Card reordering setting selected.
+## Best practices
 
-::: moniker range=">= azure-devops-2022"
-### Move a card to a specific column position
-
-You can reorder the work items within a board column by choosing &hellip;**Work items action menu**, selecting **Move to position**, and then specifying a value in the dialog.  
-
-> [!NOTE]   
-> The **Move to column position** feature requires the **New Boards Hub** feature, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
- 
-Specify a value within the range listed, which corresponds to the number of items currently in the column. 
-
-:::image type="content" source="media/reorder/move-to-position.png" alt-text="Screenshot of Boards, Move to column position dialog.":::
-::: moniker-end
-
-### Set the team preference for reordering cards
-
-If you want to preserve the backlog priority when you move a card to a new column, you can change the board card reordering setting for your team. 
-
-1. [Open your board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the board.
-
-2. Select the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of open board settings for a team, vert nav.](../../organizations/settings/media/configure-team/open-board-settings.png)  
-
-3. Select **Card reordering** and select from the two reordering  behaviors listed.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Settings, Card reordering dialog.](../../boards/boards/media/kanban-card-reordering-up1.png) 
-
-	The setting you choose applies to all active boards for your team.  
-
-4. When you're done with your changes, select **Save**.
+- **Start simple**: Begin with essential fields and add more as needed
+- **Use consistent styling**: Apply style rules that support your team's workflow
+- **Regular review**: Periodically assess which customizations provide value
+- **Team alignment**: Ensure all team members understand the visual conventions
 
 ## Related content
 
-- [Manage and configure team tools](../../organizations/settings/manage-teams.md)
-- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
+- [Customize sprint Taskboards](../sprints/customize-taskboard.md)
+- [Add tasks or child items as checklists](add-task-checklists.md)
+- [Add, run, and update inline tests](add-run-update-tests.md)
 - [Set up swimlanes](expedite-work.md)
+- [Manage and configure team tools](../../organizations/settings/manage-teams.md)

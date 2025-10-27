@@ -4,10 +4,11 @@ titleSuffix: Azure DevOps
 description: An overview of actions to ensure the security of your Azure DevOps environment, data, and users.
 ms.topic: overview
 ms.subservice: azure-devops-security
+ms.custom: horz-security
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/28/2025
+ms.date: 10/16/2025
 --- 
 
 # Make your Azure DevOps secure
@@ -57,7 +58,8 @@ Ensure your Azure DevOps environment complies with industry standards and regula
 
 Review through all the security policies available to administrators to restrict and control who has access to the organization. Maintain control of the organization by preventing unnecessary project creation.
 
-- **Disable *“Allow public projects”*:** Disable the option to [create public projects](../projects/make-project-public.md). Switch project visibility from public to private as needed. Users who never signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes.
+- **Disable *"Allow public projects"*:** Disable the option to [create public projects](../projects/make-project-public.md). Switch project visibility from public to private as needed. Users who never signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes.
+  - Automate switching project visibility with the [Change project visibility script](security-scripts.md#change-project-visibility-public--private-using-microsoft-entra-id), which requires a Microsoft Entra token. 
 - **[Restrict unnecessary authentication mechanisms](../accounts/change-application-access-policies.md)** and limit who has access to allowed authentication.
 - **Limit access with Conditional Access Policies**: Protect your organization by [defining Conditional Access policies (CAPs)](/entra/identity/conditional-access/overview) on Microsoft Entra that react to sign-in events and request other actions before a user is granted access.
   - Turn on the organization policy to [enable IP CAP validation on non-interactive flows](../accounts/change-application-access-policies.md#cap-support-on-azure-devops).
@@ -182,13 +184,28 @@ To ensure the security and integrity of your services in Azure DevOps, implement
 
 ## Automate security scanning
 
-Monitor for code and secret vulnerabilities with the following automated security tools built by our partner teams:
+Monitor for code and secret vulnerabilities with the following automated security tools:
 
-- **Use code scanning and analysis:** Utilize tools like [Microsoft Defender](https://apps.microsoft.com/detail/9p6pmztm93lr?hl=en-US&gl=US) to scan your code for vulnerabilities, secrets, and misconfigurations. This action helps identify and remediate security issues early in the development process.
-- **Use GitHub Advanced Security for Azure DevOps:** When using a managed identity isn't an option, ensure that credentials get stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files. Use GitHub Advanced Security for Azure DevOps to identify credentials within the code. For more information, see [Configure GitHub Advanced Security for Azure DevOps](../../repos/security/configure-github-advanced-security-features.md).
-- **Use native secret scanning for GitHub:** When using a managed identity isn't an option, ensure that secrets get stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files. Use the native secret scanning feature to identify secrets within the code. For more information, see [About secret scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning).
+- **Use code scanning and analysis:** Utilize tools like [Microsoft Defender](https://apps.microsoft.com/detail/9p6pmztm93lr?hl=en-US&gl=US) to scan your code for vulnerabilities, secrets, and misconfigurations.
+- **Use GitHub Advanced Security for Azure DevOps:** Identify credentials and vulnerabilities within your code. For more information, see [Configure GitHub Advanced Security for Azure DevOps](../../repos/security/configure-github-advanced-security-features.md).
+- **Use native secret scanning for GitHub:** Identify secrets within code using GitHub's native scanning features. For more information, see [About secret scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning).
 
 For more information, see the [GitHub advanced security overview](../../repos/security/github-advanced-security-security-overview.md).
+
+## Automate security administration with PowerShell scripts
+
+Streamline administrative security tasks by using PowerShell scripts to automate user management, auditing, and policy enforcement across your Azure DevOps organization.
+
+- **[Use scripts to update global security settings](security-scripts.md):** Access PowerShell scripts designed to automate security administration tasks including user auditing, service connection management, and project visibility control.
+
+### Available administrative automation scripts
+
+- **User access auditing:** Audit user permissions and identify security risks
+- **Service connection security audit:** Scan for connection security issues  
+- **Project visibility management:** Automate public/private project settings
+- **User and group management:** Streamline user lifecycle processes
+
+For detailed implementation guidance, see [Use scripts to update global security settings](security-scripts.md).
 
 ## Related content
 

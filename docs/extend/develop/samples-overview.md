@@ -4,7 +4,7 @@ title: Samples overview | Extensions for Azure DevOps
 description: Overview of the available extension samples for Azure DevOps, including a description, the link to the repo and the contributions they touch.
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.custom: engagement-fy23
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

@@ -4,9 +4,7 @@ titleSuffix: Azure Repos
 description: Respond to comments and complete pull requests in Azure Repos. Learn about completion options, auto-completion, and abandoning or reverting pull requests.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
-ms.topic: conceptual
-ms.author: vijayma
-author: vijayma
+ms.topic: how-to
 ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

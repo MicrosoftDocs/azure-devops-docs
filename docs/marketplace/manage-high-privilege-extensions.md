@@ -1,7 +1,7 @@
 ---
 title: Manage high privilege scopes, pipeline decorators, and unpublished extensions
 description: Learn why certain extensions are marked as high privilege and unpublished and how to best manage them in your Azure DevOps organization.
-ms.topic: conceptual
+ms.topic: overview
 ms.subservice: azure-devops-marketplace
 ms.author: pliaros
 author: chcomley

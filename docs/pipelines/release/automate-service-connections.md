@@ -24,7 +24,7 @@ Using scripts as part of an automation process helps enforce security policies a
 | **Product** | **Requirements**   |
 |---|---|
 | **Azure DevOps** | - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
-| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/).<br> **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a role assignment in Azure: you must have *User Access Administrator* or *Role Based Access Control Administrator* permissions, or higher. These roles allow you to manage access and assign roles necessary for creating identities. For more information, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles).|
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).<br> **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a role assignment in Azure: you must have *User Access Administrator* or *Role Based Access Control Administrator* permissions, or higher. These roles allow you to manage access and assign roles necessary for creating identities. For more information, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles).|
 | **Entra** | **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create an app registration in Microsoft Entra: [App registration delegation](/entra/identity/role-based-access-control/delegate-app-roles#restrict-who-can-create-applications) should be enabled or you should have the *Application Developer* role. For more information, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference#application-developer).<br/>Instead of creating an app registration in Entra, you can also create a managed identity in Azure.|
 
 ## Process
@@ -127,7 +127,7 @@ The first code snippet is a configuration file, `ServiceConnectionGeneric.json`.
   "authorization": {
     "parameters": {
       "tenantid": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
-      "serviceprincipalid": "00001111-aaaa-2222-bbbb-3333cccc4444"
+      "serviceprincipalid": "aaaaaaaa-bbbb-cccc-1111-222222222222"
     },
     "scheme": "WorkloadIdentityFederation"
   },
@@ -155,7 +155,7 @@ Example output:
 
 ```json
 {
-  "serviceprincipalid": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "serviceprincipalid": "aaaaaaaa-bbbb-cccc-1111-222222222222",
   "tenantid": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
   "workloadIdentityFederationIssuer": "https://login.microsoftonline.com/aaaabbbb-0000-cccc-1111-dddd2222eeee/v2.0",
   "workloadIdentityFederationIssuerType": "EntraID",

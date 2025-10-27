@@ -1,6 +1,6 @@
 ---
 title: Azure DevOps Release Notes - GitHub Advanced Security for Azure DevOps Sprint 228 Update
-description: See the Sprint 228 feature updates for Azure DevOps, including next steps.
+description: See the Sprint 228 feature updates for Azure DevOps, and next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/4/2023

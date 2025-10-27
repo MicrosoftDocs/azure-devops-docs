@@ -27,7 +27,7 @@ In this tutorial, you build a Java app and deploy it to a virtual machine scale 
 ## Prerequisites
 
 Before you begin, you need:
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
 - The [Azure VM Image Builder DevOps task](https://marketplace.visualstudio.com/items?itemName=AzureImageBuilder.devOps-task-for-azure-image-builder) installed for your DevOps organization. 
 - A forked GitHub repo with the example project. Fork the [pipelines-vmss repository](https://github.com/microsoftdocs/pipelines-vmss).

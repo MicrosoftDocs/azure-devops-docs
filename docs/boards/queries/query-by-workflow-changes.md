@@ -1,5 +1,5 @@
 ---
-title: Query by account, user, workflow, or board changes in Azure Boards
+title: Query by account, user, workflow, or board changes
 titleSuffix: Azure Boards
 description: Learn how to list work items based on changes made to their assignment, state, or board column or swimlane in Azure Boards. 
 ms.custom: boards-queries
@@ -10,14 +10,14 @@ ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 11/26/2024
+ms.date: 10/09/2025
 ---
 
 # Query by assignment or workflow changes
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Efficiently tracking assignment and workflow changes in your work items is essential for maintaining project visibility and ensuring smooth progress. This article guides shows how to create queries that monitor these changes, enabling better management and oversight of your team's work.
+Efficiently tracking assignment and workflow changes in your work items is essential for maintaining project visibility and ensuring smooth progress. This article shows how to create queries that monitor these changes, enabling better management and oversight of your team's work.
 
 ## Track work status in workflows
 
@@ -30,7 +30,7 @@ Efficiently tracking assignment and workflow changes in your work items is essen
 
 - **State transitions and reassignments:**
   - Work items can be reassigned during state transitions.
-  - **Example:** A tester creates a bug and assigns it to a team member for triage. Once resolved, the bug is reassigned back to the tester.
+  - **Example:** A tester creates a bug and assigns it to a team member for triage. Once resolved, the bug can be reassigned back to the tester.
 
 <a id="reactivated"></a>
 
@@ -41,15 +41,15 @@ Identify work items that were closed but later reactivated by using the **Change
 - Yesterday
 - In the last week
 
-![Query Editor filter for reactivated items.](media/query-reactivated-items.png)  
+:::image type="content" source="media/query-reactivated-items.png" alt-text="Screenshot that shows a Query Editor filter for reactivated items.":::
 
-You can also utilize the following fields:
+You can also use the following fields:
 - **Activated By**
 - **Activated Date**
 - Other workflow-related fields
 
 > [!TIP]  
-> Not all fields are valid for every work item type. Refer to [Workflow and query fields](#workflow-fields) to see which fields are applicable to your queries and work item types.
+> Not all fields are valid for every work item type. Refer to [Workflow and query fields](#workflow-fields) to see which fields apply to your work item types.
 
 If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
@@ -59,7 +59,7 @@ If you're new to creating queries, see [Use the query editor to list and manage 
 
 ## Supported operators and macros 
 
-Query clauses that specify an identity or workflow-associated field can use the operators and macros listed in the following table. To learn about the field data type, see [Workflow and board fields](#workflow-fields) provided later in this article. 
+Query clauses that specify an identity or workflow-associated field can use the operators and macros listed in the following table. To learn about the field data type, see [Workflow and board fields](#workflow-fields) later in this article. 
 
 ---
 :::row:::
@@ -110,7 +110,7 @@ Query clauses that specify an identity or workflow-associated field can use the 
 :::row-end:::
 ---
 
-Use the `In` and `Not In` operators to filter for or exclude two or more pick list entries or a delimited set of items. Use the `In Group` or `Not In Group` operators to filter for items that belong or don't belong within a category group or security group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
+Use the `In` and `Not In` operators to filter for or exclude two or more picklist entries or a delimited set of items. Use the `In Group` or `Not In Group` operators to filter for items that belong to (or don't belong to) a security or category group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
@@ -136,13 +136,13 @@ Use `=` to find current assignments, `Was Ever` to list items based on past assi
    Active items assigned to me
    :::column-end:::
      :::column span="1":::
-     `Assigned To @Me`   
+     `Assigned To = @Me`   
      `And State = Active`  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Closed items that at some point was assigned to me
+   Closed items that at some point were assigned to me
    :::column-end:::
    :::column span="1":::
    `Assigned To Was Ever @Me`  
@@ -161,11 +161,11 @@ Use `=` to find current assignments, `Was Ever` to list items based on past assi
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Items I've modified in the last 30 days
+   Items I modified in the last 30 days
    :::column-end:::
    :::column span="1":::
    `Changed By = @Me`
-   `And Changed Date >= @Today-30`
+   `And Changed Date >= @Today - 30`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -177,7 +177,6 @@ Use `=` to find current assignments, `Was Ever` to list items based on past assi
    :::column-end:::
 :::row-end:::
 ---
- 
 
 <a id="group"></a> 
 
@@ -185,9 +184,9 @@ Use `=` to find current assignments, `Was Ever` to list items based on past assi
 
 To filter on items assigned to someone who belongs to a team or security group, use the **In Group** operator.
 
-![Screenshot of Query Editor, Filter based on assignment to a security group.](media/example-work-item-queries/IC675038.png)  
+:::image type="content" source="media/example-work-item-queries/IC675038.png" alt-text="Screenshot that shows Query Editor filtering based on assignment to a security group.":::
 
-You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that aren't members of a group. Examples of groups you can specify include the following items: 
+You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that aren't members of a group. Examples of groups you can specify include:
 - Teams
 - Built-in and custom security groups
 - Microsoft Entra ID and Active Directory security groups
@@ -197,7 +196,7 @@ You can use the **In Group** or **Not In Group** operators to filter a query bas
 
 ## Queries based on workflow changes
 
-You use the State, Reason, and Resolved Reason fields to query for items based on workflow changes. 
+Use the State, Reason, and Resolved Reason fields to query for items based on workflow changes. 
 
 :::row:::
      :::column span="1":::
@@ -213,7 +212,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
       Resolved stories
    :::column-end:::
    :::column span="1":::
-      `Work Item Type  = User Story`   
+      `Work Item Type = User Story`   
       `And State = Resolved`
    :::column-end:::
 :::row-end:::
@@ -228,10 +227,10 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Items removed as they&#39;re duplicate  
+      Items removed as they're duplicate  
    :::column-end:::
    :::column span="1":::
-      `State= Removed`   
+      `State = Removed`   
       `And Reason = Duplicate`
    :::column-end:::
 :::row-end:::
@@ -249,7 +248,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
    :::column-end:::
    :::column span="1":::
       `State = Closed`  
-      `And Closed Date  > @Today-15`
+      `And Closed Date  > @Today - 15`
    :::column-end:::
 :::row-end:::
 ---
@@ -258,7 +257,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 
 ## Workflow changes and identity-based queries
 
-You can quickly find items that you changed, resolved, or closed. You can also find items that were changed by other team members. Several fields&mdash;such as the Created By, Changed By, Resolved By, and Closed By&mdash;are populated based on changes to the workflow.  
+You can quickly find items that you changed, resolved, or closed. You can also find items changed by other team members. Several fields—such as **Created By**, **Changed By**, **Resolved By**, and **Closed By**—are populated based on workflow transitions.  
 
 :::row:::
      :::column span="1":::
@@ -284,17 +283,17 @@ You can quickly find items that you changed, resolved, or closed. You can also f
    :::column-end:::
    :::column span="1":::
       `Resolved By = @Me`   
-      `And Resolved Date >= Today-7`  
+      `And Resolved Date >= @Today - 7`  
    :::column-end:::
 :::row-end:::
 ---
 
 ## Query changes in work item state 
 
-To list work items that changed state within a specific date range, you can use the **State Change Date** field to narrow the search and then add clauses for changes to the **State** field. An example is shown in the following image.  
+To list work items that changed state within a specific date range, use the **State Change Date** field to narrow the search and then add clauses for changes to the **State** field. An example is shown in the following image.  
  
 > [!div class="mx-imgBorder"] 
-> ![Screenshot of Query Editor, filter State Change Date and State fields.](media/workflow/query-state-change-date.png)
+> ![Screenshot that shows the Query Editor filter for State Change Date and State fields.](media/workflow/query-state-change-date.png)
 
 <a id="query-changes-to-a-kanban-board"></a>
 <a id="kanban-query-fields"></a>
@@ -302,14 +301,14 @@ To list work items that changed state within a specific date range, you can use 
 
 ## Query changes to a board 
 
-Using the query fields—**Board Column**, **Board Column Done**, and **Board Lane**—you can list work items based on their flow status on the board. Additionally, you can create [status or trend charts](../../report/dashboards/charts.md) from these queries.
+You can list work items based on their flow status on the board, by using the query fields **Board Column**, **Board Column Done**, and **Board Lane**. You can also create [status or trend charts](../../report/dashboards/charts.md) from these queries.
 
 You can filter items by team area path, specific custom columns, and swimlanes. If you rename a column or swimlane, update the query filters accordingly. For more ideas, see this blog post: [New Fields Bring Goodness to Queries, and More](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)
 
-![Screenshot of Query Editor, filter on board Column and Board Lane fields.](media/query-kanban-fields.png)  
+:::image type="content" source="media/query-kanban-fields.png" alt-text="Screenshot that shows Query Editor filtering on Board Column and Board Lane fields.":::
 
 > [!NOTE]    
-> Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
+> Queries are scoped to the current project by default. Use **Query across projects** to include work items from other projects in the collection when appropriate.  
  
 :::row:::
    :::column span="2":::
@@ -325,9 +324,9 @@ You can filter items by team area path, specific custom columns, and swimlanes. 
       User Stories in the **Code/Doing** column
    :::column-end:::
    :::column span="2":::
-      `      Work Item Type = User Story`  
-      `And` `Board Column = Code`   
-      `And` `Board Column Done  = False`  
+      `Work Item Type = User Story`  
+      `And Board Column = Code`   
+      `And Board Column Done = False`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -368,7 +367,7 @@ You can filter items by team area path, specific custom columns, and swimlanes. 
 
 ## Workflow and board fields
 
-The following fields are useful to filter queries. Some of these fields get updated as a work item progresses from one state to another. Or they're updated as you  move a work item in the [board](../boards/kanban-overview.md) to a different column or swimlane. Several of these fields don't appear on the work item form, but they're tracked for those work item types listed in the following table.
+The following fields are useful to filter queries. Some of these fields get updated as a work item progresses from one state to another, or when you move a work item on a board to a different column or swimlane. Several of these fields don't appear on the work item form, but they're tracked for those work item types listed in the following table.
 
 For more information about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
@@ -445,7 +444,7 @@ For more information about field attributes, see [Work item fields and attribute
    :::column-end:::
    :::column span="2":::
       The current board column assignment of the work item, for example: Active, Closed, Committed, Done, or other custom column assignment. 
-        
+      
       Reference name=`System.BoardColumn`  
       Data type=String  
    :::column-end:::
@@ -463,7 +462,7 @@ For more information about field attributes, see [Work item fields and attribute
       Board Column Done 
    :::column-end:::
    :::column span="2":::
-      The current assignment of the work item to Doing (False) or Done (True) column. Only assigned when [split-columns](../boards/split-columns.md) is enabled for a board column.  
+      The current assignment of the work item to Doing (False) or Done (True) column. Only set when [split-columns](../boards/split-columns.md) is enabled for a board column.  
       
       Reference name=`System.BoardColumnDone`  
       Data type=Boolean  
@@ -540,7 +539,7 @@ For more information about field attributes, see [Work item fields and attribute
    :::column span="2":::
       The name of the team member who created the work item.  
       
-      Reference name=`System.CreatedBy  
+      Reference name=`System.CreatedBy`  
       Data type=String (Identity)
    :::column-end:::
    :::column span="1":::
@@ -671,12 +670,12 @@ For more information about field attributes, see [Work item fields and attribute
       ::: moniker range="azure-devops"
       To modify the workflow states, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). 
       ::: moniker-end 
-      ::: moniker range="<azure-devops"
+      ::: moniker range="< azure-devops"
       To modify the workflow states, see the following articles:  
       - For Inherited process model: see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md) 
       - For On-premises XML process models: see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
       ::: moniker-end 
-        
+      
       Reference name=`System.State`  
       Data type=String
    :::column-end:::
@@ -701,14 +700,12 @@ For more information about field attributes, see [Work item fields and attribute
 
 <a id="sync">  </a>
 ::: moniker range="azure-devops"
-> [!NOTE]  
-> 1. See [Date and Identity fields](#date-identity).  
-> 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Microsoft Entra ID. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in Active Directory or Microsoft Entra ID or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Microsoft Entra ID](../../organizations/security/about-permissions.md#active-directory-and-microsoft-entra-security-groups). 
-> 3. See [Activated By/Date and Resolved By/Date fields](#activated-by-and-activated-date-transition-assignments).   
-> 4. The Requirement Category applies to all work item types that appear on the product backlog and board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types).  
 
 > [!NOTE]  
-> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
+> 1. See [Date and Identity fields](#date-identity).  
+> 2. By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Microsoft Entra ID. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups defined in AD/Microsoft Entra ID or by adding accounts to project or collection security groups. See set up [Active Directory or Microsoft Entra ID](../../organizations/security/about-permissions.md#active-directory-and-microsoft-entra-security-groups). 
+> 3. See Activated By/Date and Resolved By/Date fields.   
+> 4. The Requirement Category applies to all work item types that appear on the product backlog and board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md).
 
 ::: moniker-end
 
@@ -716,30 +713,30 @@ For more information about field attributes, see [Work item fields and attribute
 
 1. See [Date and Identity fields](#date-identity).
 
-2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Microsoft Entra ID. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in Active Directory or Microsoft Entra ID or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Microsoft Entra ID](../../organizations/security/about-permissions.md#active-directory-and-microsoft-entra-security-groups).
+2. By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Microsoft Entra ID. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant project access by adding Microsoft Entra ID security groups or by adding users to the project's or collection's security groups. For more information, see [Set up Active Directory or Microsoft Entra ID](../../organizations/security/about-permissions.md#active-directory-and-microsoft-entra-security-groups).
 
-    For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](/previous-versions/azure/devops/reference/xml/field-definition-element-reference).  
-3.  Reportable field with attribute set to Dimension. Only valid when the collection is configured to support the On-premises XML model. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
-4.  Indexed field. Enabling indexing for a field might increase the performance of finding work items whose queries specify that field. For on-premises Azure DevOps, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
-5. The Requirement Category applies to all work item types that appear on the product backlog and board. The category includes those items added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types). 
+   For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](/previous-versions/azure/devops/reference/xml/field-definition-element-reference).  
+3. Reportable field with attribute set to Dimension. Only valid when the collection is configured to support the On-premises XML model. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
+4. Indexed field. Enabling indexing for a field might increase the performance of finding work items whose queries specify that field. For on-premises Azure DevOps, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
+5. The Requirement Category applies to all work item types that appear on the product backlog and board. The category includes those items added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). 
+
+::: moniker-end
 
 > [!NOTE]  
 > Even if you add a board-related field, such as **Board Column** or **Board Lane**, to a work item form, you can't modify the field from the form.
 
-::: moniker-end
-
 ### People picker 
 
-The **Assigned To** field is supported by the people picker feature. For example, when you choose the **Assigned To** field from within a work item form, the people picker is activated. As shown in the following image, you simply start entering the name of the user you want to select, and search until you find a match. Users that you've previously selected appear in the list automatically. To select users that you didn't previously select, enter their entire name or search against the full directory.  
+The **Assigned To** field is supported by the people picker feature. For example, when you choose the **Assigned To** field from within a work item form, the people picker is activated. As shown in the following image, you simply start entering the name of the user you want to select, and search until you find a match. Users that you previously selected appear in the list automatically. To select users that you didn't previously select, enter their entire name or search against the full directory.  
  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of the @mention tool in Discussion showing people picker.](../../organizations/notifications/media/at-mention/identity-selector.png)  
+> ![Screenshot that shows the people picker in the Discussion @mention tool.](../../organizations/notifications/media/at-mention/identity-selector.png)  
 
-For organizations that manage their users and groups using Microsoft Entra ID or Active Directory, people pickers provide support for searching all users and groups added to the AD, not just those users and groups added to the project. 
+For organizations that manage their users and groups using Microsoft Entra ID or Active Directory, people pickers provide support for searching all users and groups added to the directory, not just users added to the project. 
 
 ::: moniker range="azure-devops"
 
-To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. For more information, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more). 
+To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. For more information, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more). 
  
 
 ::: moniker-end

@@ -7,7 +7,7 @@ ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 08/26/2025
+ms.date: 09/19/2025
 ---
 
 # Resolve Azure DevOps and Office integration issues
@@ -19,6 +19,9 @@ Azure DevOps integrates with Microsoft Office applications, primarily Excel and 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Excel and Azure DevOps/Office integration Team ribbon.](media/excel-team-ribbon.png)
 
+> [!IMPORTANT]
+> The Azure DevOps Office integration add-in is no longer supported and might not function with current versions of Office or browsers. Microsoft doesn't provide updates or fixes for this add-in. For bulk work item operations, use the [CSV import/export functionality](../../queries/import-work-items-from-csv.md), which is the recommended and supported approach.
+
 Common scenarios where you might encounter integration issues include:
 
 - **Missing Team ribbon**: The Azure DevOps Team ribbon doesn't appear in Excel or other Office applications
@@ -28,9 +31,6 @@ Common scenarios where you might encounter integration issues include:
 - **Installation conflicts**: Issues arising from installing Office and Visual Studio in different orders
 
 This article provides step-by-step solutions for the most common Azure DevOps Office integration problems. Before troubleshooting, ensure you have the necessary prerequisites and understand the current state of Office integration support.
-
-> [!IMPORTANT]
-> The Azure DevOps Office integration is feature complete with no plans for updates or improvements. Microsoft recommends using [CSV import/export functionality](../../queries/import-work-items-from-csv.md) for bulk work item operations as the preferred modern approach.
 
 [!INCLUDE [temp](../../includes/deprecate-project.md)]
 
@@ -284,11 +284,26 @@ Resolve this issue by creating a configuration file that redirects assembly bind
    </configuration>
    ```
 
-4. Save the file and ensure it is named exactly `excel.exe.config` (not `excel.exe.config.txt`).
+4. Save the file and ensure it's named exactly `excel.exe.config` (not `excel.exe.config.txt`).
 
 5. Close all Excel instances and restart Excel.
 
 6. Test the connection by attempting to connect to Azure DevOps from Excel again.
+
+If the problem persists after completing the previous troubleshooting steps, consider repairing the user's profile and checking for corrupted system files.
+
+1. Open the Command Prompt or PowerShell as the Administrator.
+2. Run the DISM tool to repair the Windows image:
+
+   ```cmd
+   DISM.exe /Online /Cleanup-Image /RestoreHealth
+   ```
+
+3. After DISM completes, run the System File Checker:
+
+   ```cmd
+   sfc /scannow
+   ```
 
 ## Related content
 
@@ -296,3 +311,4 @@ Resolve this issue by creating a configuration file that redirects assembly bind
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml)
 - [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)
+

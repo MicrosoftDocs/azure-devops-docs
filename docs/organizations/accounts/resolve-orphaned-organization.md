@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Learn how to assign a new owner to an organization when the current owner's inactive.
 ms.subservice: azure-devops-organizations
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

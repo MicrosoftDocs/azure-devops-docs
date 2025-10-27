@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Learn how to restore your organization and data up to 90 days after being deleted, done with organization owner permissions.
 ms.subservice: azure-devops-organizations
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 10/24/2024
@@ -55,6 +55,6 @@ After you delete an organization, it's disabled but available for 28 days. If yo
 * [Delete an organization](delete-your-organization.md)
 * [Create a new organization](create-organization.md)
 * [Change organization owner](change-organization-ownership.md)
-* [Change organization data region](change-organization-location.md)
+* [Change your organization geography](change-organization-location.md)
 * [Learn about FAQs for configuring and customizing your organization](faq-configure-customize-organization.yml)
 * [Assign an owner to an orphaned organization](resolve-orphaned-organization.md)
