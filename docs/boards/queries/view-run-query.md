@@ -17,6 +17,8 @@ ms.date: 10/27/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+**Visual Studio 2022**
+
 This article describes how to access and interact with Azure Boards work items by running and sharing queries. You can view and run built-in or shared queries to identify work items assigned to you or that meet other criteria.
 
 ## Prerequisites
