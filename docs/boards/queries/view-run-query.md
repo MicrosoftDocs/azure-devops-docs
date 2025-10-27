@@ -153,7 +153,7 @@ az boards query [--id] [--org] [--path] [--project] [--wiql]
 - `wiql`: The query in Work Item Query Language (WIQL) format. Ignored if `--id` or `--path` is specified.
 - `path`: The path of an existing query. Ignored if `--id` is specified.
 - `org`: Azure DevOps organization URL, such as `--org https://dev.azure.com/MyOrganizationName/`. Required unless configured as default or picked up using `git config`. Configure the default organization using `az devops configure -d organization=ORG_URL`.
-- **project**: Project name or ID. Required if not configured as default or picked up using `git config`. Configure the default project using `az devops configure -d project=NAME_OR_ID`.
+- `project`: Project name or ID. Required if not configured as default or picked up using `git config`. Configure the default project using `az devops configure -d project=NAME_OR_ID`.
 
 #### Examples
 
