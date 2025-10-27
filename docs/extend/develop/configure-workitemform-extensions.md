@@ -4,7 +4,7 @@ description: Describes how to add and configure work item form extensions in Azu
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
 ms.subservice: azure-devops-ecosystem
 ms.custom: freshness-fy22q3
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

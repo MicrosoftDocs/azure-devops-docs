@@ -1,7 +1,7 @@
 ---
 title: Run an Agent with a Self-Signed Certificate
 description: Learn how to run the build and release an agent with a self-signed certificate for Azure Pipelines and Azure DevOps Server.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 09E36E4D-D94B-4F5B-BE4D-9E7B4E7B68E2
 ms.reviewer: chrispat
 ms.date: 08/05/2025

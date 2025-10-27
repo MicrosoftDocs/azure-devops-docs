@@ -1,7 +1,7 @@
 ---
 title: Configure schedules to run pipelines
 description: Configure schedules to run pipelines
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: copilot-scenario-highlight
 ms.author: sdanie
 author: steved0x

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use the branches page to restore a deleted Git branch in Azure DevOps.
 ms.assetid:
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/17/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

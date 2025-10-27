@@ -5,7 +5,7 @@ description: Find information about events in Azure DevOps projects that service
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-service-hooks
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

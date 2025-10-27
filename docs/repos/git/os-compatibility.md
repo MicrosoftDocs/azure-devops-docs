@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how Git interacts with multiple platform file systems.
 ms.assetid: 7e02f9e9-ebb1-4d7a-aeb2-37445a6cf8c7
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 08/14/2020
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

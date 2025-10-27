@@ -4,7 +4,7 @@ description: Run automated tests on-demand against Team Foundation builds from t
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual 
+ms.topic: how-to 
 ms.author: jeom
 author: wisdeom
 ms.date: 09/14/2021

@@ -5,7 +5,7 @@ description: Learn about the widgets based on Analytics data that you can add to
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 09/27/2021
 ---

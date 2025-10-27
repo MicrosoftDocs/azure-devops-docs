@@ -1,7 +1,7 @@
 ---
 title: Mobile app signing
 description: See how to sign a mobile app during continuous integration (CI) builds with Azure Pipelines.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 1b9de1a8-0749-40af-87e8-857fb86cf0ae
 ms.reviewer: dastahel
 ms.date: 09/17/2025

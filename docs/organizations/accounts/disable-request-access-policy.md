@@ -5,7 +5,7 @@ ms.custom:
 description: Learn how to stop your users from requesting access to your organization or project within your organization by disabling the Request Access policy.
 ms.subservice: azure-devops-organizations
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 06/05/2025

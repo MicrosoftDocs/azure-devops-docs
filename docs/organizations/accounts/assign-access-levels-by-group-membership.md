@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 ms.custom: engagement-fy23
 description: Learn how to assign access levels with group rules in Microsoft Entra ID and Azure DevOps.
 ms.subservice: azure-devops-organizations
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 07/02/2025

@@ -8,7 +8,7 @@ toc: show
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 01/06/2025
 ---

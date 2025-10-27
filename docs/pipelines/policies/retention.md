@@ -1,6 +1,6 @@
 ---
 title: Retention policies for builds, releases, and test
-ms.topic: conceptual
+ms.topic: concept-article
 description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn

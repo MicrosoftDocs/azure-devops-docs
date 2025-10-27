@@ -7,7 +7,7 @@ ms.custom: teams
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.date: 12/23/2024

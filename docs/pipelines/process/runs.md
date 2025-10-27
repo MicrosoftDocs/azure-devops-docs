@@ -1,7 +1,7 @@
 ---
 title: Pipeline runs
 description: Learn how Azure Pipelines runs jobs, tasks, and scripts.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: devx-track-azurecli, ai-assisted
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
 ms.date: 06/09/2025

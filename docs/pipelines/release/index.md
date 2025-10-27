@@ -2,7 +2,7 @@
 title: Classic release pipelines
 description: Overview of classic release pipelines
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: engagement-fy23
 ms.author: ronai
 author: RoopeshNair

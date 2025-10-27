@@ -2,7 +2,7 @@
 title: Kubernetes resources in environments
 description: Learn about using Kubernetes resources in environments to target Kubernetes clusters with Azure Pipelines.
 ms.custom: pipelinesresourcesrefresh
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.date: 10/01/2025
 monikerRange: '>= azure-devops-2020'

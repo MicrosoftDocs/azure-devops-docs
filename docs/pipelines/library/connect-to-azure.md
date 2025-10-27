@@ -1,7 +1,7 @@
 ---
 title: Use an Azure Resource Manager service connection
 description: Learn how to use an Azure Resource Manager service connection to connect Azure Pipelines to Azure services.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jukullam
 author: juliakm
 ms.date: 10/25/2024

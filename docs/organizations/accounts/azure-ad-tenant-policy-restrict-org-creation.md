@@ -5,7 +5,7 @@ description: Learn how Azure DevOps Administrators can prevent users from creati
 ms.subservice: azure-devops-organizations
 ms.assetid:
 ai-usage: ai-assisted
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 10/24/2025

@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid:  
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 10/08/2025
 ai-usage: ai-assisted

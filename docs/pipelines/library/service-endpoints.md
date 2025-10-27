@@ -3,7 +3,7 @@ title: Service connections
 ms.custom: pipelinesresourcesrefresh, arm2024
 description: Learn how to manage Azure Pipelines service connections and get a reference to service connection types.
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
 ms.date: 10/16/2024

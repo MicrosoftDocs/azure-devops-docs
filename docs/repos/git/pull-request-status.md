@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Pull request workflow extensibility using status and policy
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2018
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

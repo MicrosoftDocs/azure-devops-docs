@@ -4,7 +4,7 @@ description: Create and run user acceptance tests in Azure Test Plans. Test to v
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 ms.date: 12/06/2021

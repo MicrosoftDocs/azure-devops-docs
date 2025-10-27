@@ -9,7 +9,7 @@ ms.manager: bijuv
 ms.author: Divais
 author: Divais
 monikerRange: 'azure-devops'
-ms.date: 09/22/2025
+ms.date: 10/24/2025
 ms.custom:
   - cross-service
   - sfi-image-nochange
@@ -26,7 +26,7 @@ If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slac
 | Category | Requirements |
 |--------------|-------------|
 | Platform | Azure Repos Slack app works only with Azure DevOps Services (cloud); it isn't supported on Azure DevOps Server. |
-| Permissions | To create subscriptions in a Slack channel for repository-related events: Member of the **Project Administrators** group or team administrator. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). To receive notifications: **Third-party application access via OAuth** setting enabled for the organization. For more information, see [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md). |
+| Permissions | To create subscriptions in a Slack channel for repository-related events: Member of the **Project Administrators** group or team administrator. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). |
 | Microsoft Entra account | If your organization is connected to a Microsoft Entra ID tenant, sign in with an account that is a native member of that tenant; guest or external accounts can experience authentication errors when signing in through Slack. |
 
 ## Add the Azure Repos app to your Slack workspace
@@ -200,12 +200,7 @@ If you're experiencing the following errors when using the [Azure Repos App for 
 
 [!INCLUDE [troubleshooting](./includes/repos-troubleshoot-authentication.md)]
 
-In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azrepos signout` command followed by the `/azrepos signin` command. 
-
-Select the `Sign in` button and you're redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign in process.
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows Consent to the requested app permissions.](media/troubleshooting/repos-consent-page-slack.png)
+In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azrepos signout` command followed by the `/azrepos signin` command.
 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 

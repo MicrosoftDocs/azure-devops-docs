@@ -1,6 +1,6 @@
 ---
 ms.subservice: azure-devops-service-hooks
-ms.topic: conceptual
+ms.topic: how-to
 title: Azure DevOps integration with Microsoft Teams
 description: See how to set up Azure DevOps notifications and approvals in your Microsoft Teams channels.
 monikerRange: '<= azure-devops'

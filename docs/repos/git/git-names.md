@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how Git stores author names.
 ms.assetid: 09e60acb-fa48-4843-9f5d-5dfed981f467
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 03/14/2018
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

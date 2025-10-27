@@ -4,7 +4,7 @@ description: Voluntarily provide stakeholder feedback in Azure DevOps using the 
 ms.assetid: 4E467527-62C6-4321-BA56-FF82F0FFFD69
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 ms.date: 12/07/2018
