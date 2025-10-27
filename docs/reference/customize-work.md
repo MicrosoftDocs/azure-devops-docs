@@ -331,7 +331,7 @@ The following table summarizes the differences between the three supported proce
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="3":::
-      Use the [**`tcm fieldmapping`** command-line tool](witladmin/tcm-customize-manage-test-experience.md) to list and export test case management mapping for resolution types, bug filing, and failure types. 
+      Use the **`tcm fieldmapping`** command-line tool to list and export test case management mapping for resolution types, bug filing, and failure types. 
    :::column-end:::
    :::column span="1":::
        

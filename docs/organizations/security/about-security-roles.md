@@ -192,5 +192,3 @@ When your organization uses Microsoft Entra ID integration:
 - [Add or delete users with Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Manage pipeline security](../../pipelines/security/overview.md)
 - [Set pipeline permissions](../../pipelines/policies/permissions.md)
-- [Secure Azure Pipelines](../../pipelines/security/secure-development.md)
-
