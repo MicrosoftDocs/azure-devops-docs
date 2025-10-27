@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/05/2022
+ms.date: 10/27/2025
 ---
 
 # Use an index to query quick reference data
@@ -194,7 +194,7 @@ You can list work items based on the following criteria...
 
 ## Operators and macros supported for each data type
 
-The following table indicates the operators and macros available for the different field data types. Each field is associated with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the [Work item field index](../work-items/guidance/work-item-field.md). Operators available for defining a query clause depend on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see [Query fields, operators, and macros](query-operators-variables.md).
+The following table indicates the operators and macros available for the different field data types. Each field associates with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the [Work item field index](../work-items/guidance/work-item-field.md). Operators available for defining a query clause depend on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see [Query fields, operators, and macros](query-operators-variables.md).
 
 [!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
@@ -281,7 +281,7 @@ The following table indicates the operators and macros available for the differe
     **HTML** 
    :::column-end:::
    :::column span="3":::
-   Text strings that support formatted descriptions, such as the **Description** or **Repro Steps** fields. These fields are automatically indexed for full-text search when full-text search is available. Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). 
+   Text strings that support formatted descriptions, such as the **Description** or **Repro Steps** fields. These fields automatically index for full-text search when full-text search is available. Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). 
    :::column-end:::
    :::column span="3":::
    `Contains Words`, `Does Not Contain Words`, `Is Empty`<sup>2</sup>, `Is Not Empty`<sup>2</sup>
@@ -292,7 +292,7 @@ The following table indicates the operators and macros available for the differe
    **Identity**
    :::column-end:::
    :::column span="3":::
-   A String field that is used to hold a user identity. Query samples: [Query by assignment or workflow changes](query-by-workflow-changes.md).
+   A String field that holds a user identity. Query samples: [Query by assignment or workflow changes](query-by-workflow-changes.md).
    :::column-end:::
    :::column span="3":::
    `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
@@ -320,7 +320,7 @@ The following table indicates the operators and macros available for the differe
    **PlainText** 
    :::column-end:::
    :::column span="3":::
-   Multi-line text strings that support long descriptions and are automatically indexed for full-text search, when full-text search is available.  
+   Multi-line text strings that support long descriptions and automatically index for full-text search, when full-text search is available.  
    Query examples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
 
    :::column-end:::
@@ -362,10 +362,10 @@ The following table indicates the operators and macros available for the differe
 :::row-end:::
 
 > [!NOTE]  
-> 1. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is supported for Azure DevOps Services and Azure DevOps Server 2020 and later versions. 
-> 2. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Services and Azure DevOps Server 2020 and later versions.   
-> 3. The `@TeamAreas` macro is supported for Azure DevOps Services and Azure DevOps Server 2020 and later versions. 
-> 4. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Services and Azure DevOps Server 2020 and later versions, and only when run from the web portal.
+> 1. The system assigns the **picklist...** data types only to custom fields defined for an inherited process. The Inherited process model supports Azure DevOps Services and Azure DevOps Server 2020 and later versions. 
+> 2. Azure DevOps Services and Azure DevOps Server 2020 and later versions support the `Is Empty` and `Is Not Empty` operators.   
+> 3. Azure DevOps Services and Azure DevOps Server 2020 and later versions support the `@TeamAreas` macro. 
+> 4. Azure DevOps Services and Azure DevOps Server 2020 and later versions support the `@CurrentIteration +/- n` macro, and only when you run it from the web portal.
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
@@ -471,4 +471,4 @@ The following table lists common query fields and their data type for which samp
 - [Query by field value comparisons](query-field-value.md)
 - [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)  
 - [Define a managed query](using-queries.md) 
-- [Work item field index](../work-items/guidance/work-item-field.md) 
+- [Work item field index](../work-items/guidance/work-item-field.md)

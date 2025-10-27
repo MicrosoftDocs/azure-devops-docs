@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2025
+ms.date: 10/27/2025
 ai-usage: ai-assisted
 ---
 
@@ -33,7 +33,7 @@ You can create queries and query folders from the web portal or Visual Studio Te
 If you're getting started, read [View, run, or email a work item query](view-run-query.md). For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md).
 
 - To find work items assigned to you, use the **@Me** macro as the value for the **Assigned To** field in a clause.
-- All valid users with standard access can create queries and folders under **My Queries**. To create queries or folders under **Shared Queries**, set the Contribute permission. See [Set permissions on queries](../queries/set-query-permissions.md).
+- All valid users with standard access can create queries and folders under **My Queries**. To create queries or folders under **Shared Queries**, you must have the Contribute permission. See [Set permissions on queries](../queries/set-query-permissions.md).
 - Modify any query by adding criteria to focus on a product area, an iteration, or another field. To modify a query, [open the query editor](using-queries.md).
 - Open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to update fields and publish changes to the database.
 - Visualize status or progress by creating a pie, column, or trend chart for flat-list queries. For details, see [Charts](../../report/dashboards/charts.md).
@@ -56,7 +56,7 @@ The following sections summarize functions you use to define and manage work ite
 
 ### Unsupported features
 
-Queries only support work items and work items linked to other work items. Managed queries do not support:
+Queries only support work items and work items linked to other work items. Managed queries don't support:
 
 - Hierarchical views of Test Plans, Test Suites, and Test Cases (these items don't use parent-child links). Instead, view the hierarchy through the Test > Test Plans page.
 - Views that show linked objects such as builds, releases, code, or other non-work-item objects.
@@ -104,7 +104,7 @@ Azure Boards supports three query types; the icon next to a query indicates its 
       - Triage linked work items, including test-related links
       - Find orphaned backlog items (items with no parent)
         > [!NOTE]
-        > **Work items and direct links** queries export to Excel as a flat list. Excel imports them as a flat list because modifying multiple link types in Excel isn't supported.
+        > **Work items and direct links** queries export to Excel as a flat list. Excel imports them as a flat list because Excel doesn't support modifying multiple link types.
    :::column-end:::
 :::row-end:::
 --- 
@@ -125,7 +125,7 @@ To learn more about link types, see [Link type reference](link-type-reference.md
 
 ## My Queries, Shared Queries, and Favorites
 
-You alone can view and run queries saved under **My Queries**. Favorite a query to have it appear in your query selector.
+Only you can view and run queries saved under **My Queries**. Favorite a query to have it appear in your query selector.
 
 Queries saved under **Shared Queries** are visible to everyone with project access. Organize shared queries in folders and favorite them for quick access. You can set permissions on folders and queries to prevent others from moving or editing them.
 
@@ -196,7 +196,7 @@ If taskboard contents differ from a created query's results, see [Taskboard item
 
 ## Full-text search queries and collation settings
 
-If you use full-text search queries with the **Contains** or **Contains Words** operators, ensure SQL Server collation corresponds to a language with a registered word breaker. Unsupported languages can yield unexpected results.
+If you use full-text search queries with the **Contains** or **Contains Words** operators, ensure that SQL Server collation corresponds to a language with a registered word breaker. Unsupported languages can yield unexpected results.
 
 For more information, see:
 - [sys.fulltext\_languages (Transact-SQL)](/sql/relational-databases/system-catalog-views/sys-fulltext-languages-transact-sql)
