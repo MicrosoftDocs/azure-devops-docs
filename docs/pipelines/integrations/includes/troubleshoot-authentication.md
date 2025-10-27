@@ -12,4 +12,4 @@ If you get the following errors when using the Azure Pipelines App for Slack, tr
 
 ### Configuration failed. Make sure that the organization exists and that you have sufficient permissions.
 
-If you're seeing this error, you're most likely a Guest user in the Microsoft Entra tenant connected to your Azure DevOps organization. You need to have an Microsoft Entra member go through the configuration steps.
+If you're seeing this error, you're most likely a Guest user in the Microsoft Entra tenant connected to your Azure DevOps organization. You need to have a Microsoft Entra member go through the configuration steps.
