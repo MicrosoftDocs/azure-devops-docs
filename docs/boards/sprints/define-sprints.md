@@ -19,7 +19,7 @@ ms.date: 10/27/2025
 
 In the Scrum framework, teams plan and track work item assignments in regular time intervals called *sprints*. To use the Scrum and sprint planning cadence, you assign start and end dates for your team's sprints. This article describes how to set the iteration dates for sprints.
 
-Agile tools use the **Iteration path** field to track sprints and releases. Iteration paths and sprints are shared resources by all the teams that use them. Teams can choose a two or three-week cadence, but you can also specify shorter or longer sprint cycles or create a release schedule that encompasses several sprints.
+Agile tools use the **Iteration path** field to track sprints and releases. Iteration paths and sprints are shared resources by all the teams that use them. Teams can choose two or three-week cadences, but you can also specify shorter or longer sprint cycles or create a release schedule that encompasses several sprints.
 
 Use the guidance in this article to set or change sprint dates. To define iteration paths and tree structure or associate teams with sprints, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
 
@@ -32,7 +32,7 @@ Use the guidance in this article to set or change sprint dates. To define iterat
 <a id="quick-start-schedule">   </a>
 ## Start scheduling sprints
 
-Projects come with several predefined sprints that aren't associated with any dates. To quickly get started scheduling sprints, you can use these default sprints to assign start and end dates for your team's sprints.
+Projects come with several predefined sprints that aren't associated with any dates. To quickly get started scheduling sprints, you can use the default sprints and assign start and end dates for your team's sprints.
 
 1. In your Azure DevOps project, select **Boards** > **Sprints** from the left navigation menu. The **Sprints** page opens to your team's **Taskboard** view. Select the **Backlogs** tab.
 
@@ -67,7 +67,7 @@ The following screenshot shows the list of iterations for a project in **Project
 
 If you work with several teams and each team wants their own backlog view, you can [create more teams](../../organizations/settings/add-teams.md). Each team gets access to their own set of Agile tools filtered to work items for that team's default area path and iteration path.
 
-Each sprint selected for a team provides a backlog, taskboard, and other planning and tracking tools for the team to use for that sprint. In the following example, the **Management** team has access to a sprint backlog, capacity planning tool, and taskboard for several sprints. For more information, see [Implement Scrum practices for your team in Azure Boards](scrum-overview.md).
+Each sprint selected for a team provides a backlog, board, and other planning and tracking tools for the team to use for that sprint. In the following example, the **Management** team has access to a sprint backlog, capacity planning tool, and board for several sprints. For more information, see [Implement Scrum practices for your team in Azure Boards](scrum-overview.md).
 
 :::image type="content" source="media/define-sprints/selected-team-iterations-agile.png" alt-text="Screenshot that shows selected sprints for a team in Backlogs.":::
 
