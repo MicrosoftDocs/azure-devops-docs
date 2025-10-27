@@ -1,7 +1,7 @@
 ---
 title: Customize Python pipelines
 description:  See how to use Azure Pipelines to customize, build, test, package, and deliver Python apps and code.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: devx-track-python
 ms.date: 06/09/2025
 monikerRange: '<= azure-devops'

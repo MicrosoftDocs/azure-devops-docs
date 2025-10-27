@@ -2,7 +2,7 @@
 
 title: Set variables in scripts
 description: Learn how to define variables in Bash and PowerShell scripts and use them in your pipeline.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/08/2025
 monikerRange: '<= azure-devops'
 ---

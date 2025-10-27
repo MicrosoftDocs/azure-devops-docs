@@ -1,7 +1,7 @@
 ---
 title: Register an agent using a personal access token (PAT)
 description: Learn how to register a self-hosted agent using a personal access token (PAT)
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/22/2023
 monikerRange: '<= azure-devops'
 ms.custom: sfi-image-nochange

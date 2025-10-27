@@ -1,7 +1,7 @@
 ---
 title: Deployment jobs
 description: Deploy to resources within an environment
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
 ms.date: 07/17/2025
 monikerRange: '>= azure-devops-2020'

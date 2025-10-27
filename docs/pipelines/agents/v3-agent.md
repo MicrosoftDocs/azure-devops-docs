@@ -2,7 +2,7 @@
 title: Agent software version 3
 description: Learn how to run pipelines using the version 3 agent software.
 monikerRange: '>= azure-devops-2022'
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/30/2025
 ---
 

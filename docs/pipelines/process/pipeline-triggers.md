@@ -1,7 +1,7 @@
 ---
 title: Configure pipeline triggers
 description: Configure pipeline triggers
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: sdanie
 author: steved0x
 ms.date: 04/05/2024

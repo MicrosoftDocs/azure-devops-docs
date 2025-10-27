@@ -2,7 +2,7 @@
 title: Requirements traceability
 description: Link requirements, tests, and bugs to enable requirements traceability
 ms.assetid: 41F15A66-D8C2-43AA-9E38-BCED9A8D3F55
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jeom
 author: raviLiftr
 ms.date: 07/01/2020
