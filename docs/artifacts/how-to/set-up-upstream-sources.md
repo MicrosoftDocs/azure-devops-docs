@@ -2,7 +2,7 @@
 title: Set up upstream sources for your feed
 description: How to set up external feeds and public registries as upstream sources for your feed
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2024
 monikerRange: "<=azure-devops"
 ---
