@@ -2,7 +2,7 @@
 title: Enhance project security with npm audit
 description: Use npm audit to scan and fix package vulnerabilities
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/18/2023
 monikerRange: 'azure-devops'
 "recommendations": "true"

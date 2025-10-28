@@ -2,7 +2,7 @@
 title: Monitor Artifacts storage consumption
 description: How to monitor Azure Artifacts storage usage at Organization and Project levels.
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 05/13/2024
 ms.author: rabououn
 ms.custom: engagement-fy23
