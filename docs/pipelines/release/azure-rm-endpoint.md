@@ -257,7 +257,7 @@ To learn about managed identities for virtual machines, see [Assigning roles](/a
 
 ## Use AI to troubleshoot an Azure DevOps service connection error
 
-This is an example prompt for Copilot Chat that helps Copilot troubleshoot your error code and message. Copy and paste this prompt into Copilot Chat, replacing the placeholder with your specific error message. Add any additional context or remove the Additional context section. 
+This is an example prompt for Copilot Chat that helps Copilot troubleshoot your error code and message. Copy and paste this prompt into Copilot Chat, replacing the placeholder with your specific error message. Add any additional context or remove the additional context section. 
 
 ```copilot-prompt
 I'm getting this Azure DevOps service connection error: [PASTE YOUR ERROR MESSAGE HERE]
