@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/24/2025
+ms.date: 10/28/2025
 monikerRange: 'azure-devops'
 ms.custom:
   - sfi-image-nochange
@@ -49,7 +49,7 @@ After you enable the policy, you can customize its behavior by creating an allow
 > [!WARNING]
 > We recommend using groups with your tenant policy allowlist. If you use a named user, a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
-When the policy is enabled, only users on the allowlist can create new organizations. To grant exceptions, add users to an allowlist. Users on the allowlist can create new organizations but can't manage the policy.
+When the policy is enabled, only users on the allowlist can create new organizations.
 
 Select **Add Microsoft Entra user or group**.
 
