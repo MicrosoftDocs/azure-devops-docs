@@ -257,7 +257,7 @@ To learn about managed identities for virtual machines, see [Assigning roles](/a
 
 ## Use AI to troubleshoot an Azure DevOps service connection error
 
-This is an example prompt for Copilot Chat that helps Copilot troubleshoot your error code and message. Copy and paste this prompt into Copilot Chat, replacing the placeholder with your specific error message. Add any additional context or remove the additional context section. 
+This is an example prompt for Copilot Chat that helps Copilot troubleshoot your error code and message. Copy and paste this prompt into Copilot Chat, replacing the placeholder with your specific error message. 
 
 ```copilot-prompt
 I'm getting this Azure DevOps service connection error: [PASTE YOUR ERROR MESSAGE HERE]
@@ -268,7 +268,6 @@ Can you help me troubleshoot this issue? Please provide step-by-step instruction
 3. Verify the solution works
 
 Context: This is for an Azure Resource Manager service connection in Azure DevOps.
-Additional context (optional): [Include service principal ID, subscription details, or when the error started occurring]
 ```
 
 ::: moniker-end
