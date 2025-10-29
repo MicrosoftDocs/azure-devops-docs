@@ -10,6 +10,8 @@
       items:
         - name: "2025"
           items:
+          - name: November 4
+            href: 2025/sprint-264-update.md
           - name: October 14
             href: 2025/sprint-263-update.md
           - name: September 25
@@ -302,6 +304,8 @@
         items:
         - name: "2025"
           items:
+          - name: November 4
+            href: 2025/boards/sprint-264-update.md
           - name: September 25
             href: 2025/boards/sprint-262-update.md
           - name: September 4
@@ -574,6 +578,8 @@
         items:
         - name: "2025"
           items:
+          - name: November 4
+            href: 2025/pipelines/sprint-264-update.md
           - name: October 14
             href: 2025/pipelines/sprint-263-update.md
           - name: September 25
@@ -808,6 +814,8 @@
         items:
         - name: "2025"
           items:
+          - name: November 4
+            href: 2025/testplans/sprint-264-update.md
           - name: October 14
             href: 2025/testplans/sprint-263-update.md
           - name: September 4
@@ -936,6 +944,8 @@
         items:
         - name: "2025"
           items:
+          - name: November 4
+            href: 2025/ghazdo/sprint-264-update.md
           - name: September 25
             href: 2025/ghazdo/sprint-262-update.md
           - name: September 4
