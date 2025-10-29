@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to authenticate to Azure Repos Git repositories with SSH keys.
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/20/2024
 ms.author: sdanie
 monikerRange: '<= azure-devops'

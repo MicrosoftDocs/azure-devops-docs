@@ -6,7 +6,7 @@ ms.assetid: F1DE1F34-50BD-49A6-BF67-D27F884944F4
 ms.subservice: azure-devops-repos-git
 ms.service: azure-devops-repos
 ms.custom: archive-candidate
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 09/10/2018 
 ---

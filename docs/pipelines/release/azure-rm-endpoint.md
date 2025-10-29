@@ -1,12 +1,12 @@
 ---
 title: Troubleshoot Azure Resource Manager service connections
-ms.custom: devx-track-arm-template, arm2024
+ms.custom: devx-track-arm-template, arm2024, copilot-scenario-highlight
 description: How to troubleshoot Azure Resource Manager service connections in Azure Pipelines
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: troubleshooting
 ms.author: jukullam
 author: juliakm
-ms.date: 11/05/2024
+ms.date: 10/28/2025
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 "recommendations": "true"
@@ -18,6 +18,8 @@ monikerRange: '<= azure-devops'
 
 This article presents the common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
 
+> [!TIP]
+> You can ask [Copilot](/copilot/) for help troubleshooting error messages. To learn more, see [Use AI to troubleshoot an Azure DevOps service connection error](#use-ai-to-troubleshoot-an-azure-devops-service-connection-error).
 
 ## What happens when you create an Azure Resource Manager service connection
 
@@ -55,7 +57,7 @@ The following issues might occur when you create service connections:
 - [Failed to assign Contributor role](#failed-to-assign-contributor-role)
 - [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-when-creating-a-service-connection)
 - [Some subscriptions are missing from the list of subscriptions](#some-subscriptions-are-missing-from-the-list-of-subscriptions)
-- [Service principal's token expired](#service-principals-token-expired)
+- [Service principal's token expired](#service-principal-or-secret-expired)
 - [Failed to obtain the JSON web token (JWT) by using the service principal client ID](#failed-to-obtain-the-jwt-by-using-the-service-principal-client-id)
 - [Azure subscription isn't passed from the previous task output](#azure-subscription-isnt-passed-from-the-previous-task-output)
 - [What authentication mechanisms are supported? How do managed identities work?](#what-authentication-mechanisms-are-supported-how-do-managed-identities-work)
@@ -185,7 +187,7 @@ To resolve this issue, ask the subscription administrator to [assign you the app
   1. Clear your browser cache and cookies to ensure that any old tokens are removed.
   1. From the Azure DevOps portal, go to the service connections, and reauthorize the connection to Azure. This step prompts Azure DevOps to use a new token.
 
-### Service principal's token expired
+### Service principal or secret expired
 
 An issue that often arises with service principals or secrets that are automatically created is that the token expires and needs to be renewed. If you have an issue with refreshing the token, see [Failed to obtain an access token or a valid refresh token wasn't found](#failed-to-obtain-an-access-token-or-a-valid-refresh-token-wasnt-found).
 
@@ -197,11 +199,11 @@ If your token expired, you could see one of the error messages:
 
 To renew the access token for an automatically created service principal or secret:
 
-1. Go to **Project settings** > **Service connections**, and then select the service connection you want to modify.
+1. Go to **Project settings** > **Service connections**, and then select the service connection you want to refresh.
 
-1. Select **Edit** in the upper-right corner. 
+1. Select **Rotate secret**.
 
-1. Select **Save**.
+     :::image type="content" source="media/azure-rm-endpoint/rotate-secret.png" alt-text="Screenshot of option to rotate an ARM secret. ":::
 
 The token for your service principal or secret is now renewed for three more months.
 
@@ -252,6 +254,21 @@ To learn about managed identities for virtual machines, see [Assigning roles](/a
 
 > [!NOTE]
 > Managed identities aren't supported in Microsoft-hosted agents. In this scenario, you must [set up a self-hosted agent](../agents/agents.md#install) on an Azure VM and configure a managed identity for that VM.
+
+## Use AI to troubleshoot an Azure DevOps service connection error
+
+This is an example prompt for Copilot Chat that helps Copilot troubleshoot your error code and message. Copy and paste this prompt into Copilot Chat, replacing the placeholder with your specific error message. 
+
+```copilot-prompt
+I'm getting this Azure DevOps service connection error: [PASTE YOUR ERROR MESSAGE HERE]
+
+Can you help me troubleshoot this issue? Please provide step-by-step instructions to:
+1. Identify the root cause
+2. Fix the configuration in Azure or Entra ID
+3. Verify the solution works
+
+Context: This is for an Azure Resource Manager service connection in Azure DevOps.
+```
 
 ::: moniker-end
 

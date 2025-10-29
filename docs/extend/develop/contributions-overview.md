@@ -5,7 +5,7 @@ description: Overview of the contribution model, including contribution types an
 ms.assetid: 96509f47-bac2-4319-9085-2621ff8f814a
 ms.custom: engagement-fy23
 ai-usage: ai-assisted
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

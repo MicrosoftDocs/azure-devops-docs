@@ -3,7 +3,7 @@ title: Rate and usage limits
 titleSuffix: Azure DevOps 
 description: Description of limits on rates and the resources used in Azure DevOps. 
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: chcomley
 author: chcomley
@@ -98,8 +98,19 @@ This design lets clients proactively slow down their rate of requests.
 ---
 :::row:::
    :::column span="1":::
-      `Retry-       A custom header that shows the service and type of threshold reached. Threshold types and service names can vary over time and without warning. Display this string to a human, but don't rely on it for computation.
-
+      `Retry-After`
+   :::column-end:::
+   :::column span="2":::
+       The [RFC 6585](https://tools.ietf.org/html/rfc6585#section-4)-specified header sent to tell you how long to wait before you send your next request to fall under the detection threshold. Units: seconds.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      `X-RateLimit-Resource`
+   :::column-end:::
+   :::column span="2":::
+       A custom header indicating the service and type of threshold that was reached. Threshold types and service names might vary over time and without warning. We recommend displaying this string to a human, but not relying on it for computation.
    :::column-end:::
 :::row-end:::
 ---

@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 monikerRange: "<= azure-devops"
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 01/17/2023
 
 

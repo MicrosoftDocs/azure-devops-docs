@@ -4,7 +4,7 @@ description: Learn how to extend work item tracking, including adding an action,
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

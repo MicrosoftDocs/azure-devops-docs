@@ -3,7 +3,7 @@ ms.subservice: azure-devops-ecosystem
 title: Extensions overview
 description: Learn about extensions for Azure DevOps, including how to develop, package, publish, and manage them.
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
-ms.topic: conceptual
+ms.topic: overview
 ms.custom: engagement-fy23
 monikerRange: '<= azure-devops'
 ms.author: chcomley

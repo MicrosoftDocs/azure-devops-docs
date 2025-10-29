@@ -5,7 +5,7 @@ description: Review the data available for reporting purposes using Analytics fo
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 08/12/2022
 ---

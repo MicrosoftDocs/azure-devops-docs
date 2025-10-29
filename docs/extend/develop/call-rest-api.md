@@ -4,7 +4,7 @@ ms.custom: devx-track-js
 title: How to Call a REST API | Extensions for Azure DevOps 
 description: How to call a REST API in your extension for Azure DevOps.
 ms.assetid: 99794e1e-0127-4e65-83fb-93a71f496d93
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -25,10 +25,10 @@ You can find the [full list of available REST clients and their references here]
 
 ## Call an API
 
-> You'll have to add the scope `"scopes": ["vso.work"],` to your `vss-extension.json` to use the work item tracking client.
+Add the scope `"scopes": ["vso.work"],` to your `vss-extension.json` to use the work item tracking client.
 
 [!INCLUDE [REST](../includes/procedures/call-rest-api-js.md)]
 
-## Next steps
+## Next step
 
 Display the results of your REST API call [in a Grid](/previous-versions/azure/devops/extend/develop/ui-controls/grido).

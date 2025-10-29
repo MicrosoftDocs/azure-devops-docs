@@ -2,7 +2,7 @@
 title: Agent software version 4
 description: Learn how to run pipelines using the version 4 agent software.
 monikerRange: 'azure-devops'
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/30/2025
 ---
 

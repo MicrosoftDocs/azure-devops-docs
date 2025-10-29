@@ -1,6 +1,6 @@
 ---
 ms.subservice: azure-devops-service-hooks
-ms.topic: conceptual
+ms.topic: overview
 title: Webhooks with Azure DevOps
 description: Set up a webhook subscription that sends JSON representations of Azure DevOps events to any service that has a public endpoint.
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77

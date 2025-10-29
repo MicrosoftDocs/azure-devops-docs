@@ -1,7 +1,7 @@
 ---
 title: Template expressions
 description: How to use expressions in templates
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/25/2024
 monikerRange: '>=azure-devops-2020'
 ---

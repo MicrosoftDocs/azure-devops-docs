@@ -2,7 +2,7 @@
 title: Service containers
 description: Learn about running containerized services in Azure Pipelines single or multiple container jobs or noncontainer jobs.
 ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/12/2025
 monikerRange: azure-devops
 #customer intent: As an Azure Pipelines user, I want to understand service containers so I can use them to automatically manage services that my pipelines require.

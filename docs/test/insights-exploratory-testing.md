@@ -4,7 +4,7 @@ description: Manual and exploratory testing - get insights with exploratory test
 ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 ms.date: 12/07/2018

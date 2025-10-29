@@ -5,7 +5,7 @@ description: Learn how historical data is stored in Analytics and filters are ap
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 11/08/2022
 ---

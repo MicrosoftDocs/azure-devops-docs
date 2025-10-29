@@ -1,7 +1,7 @@
 ---
 title: Set secret variables
 description: Learn how to set secret variables.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/19/2024
 monikerRange: "<=azure-devops"
 ---

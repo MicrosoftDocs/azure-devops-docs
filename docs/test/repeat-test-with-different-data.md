@@ -3,7 +3,7 @@ title: Repeat a test with different data
 description: Learn about manual and exploratory testing. Repeat a test with different data in Azure Test Plans.
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.service: azure-devops-test-plans
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'

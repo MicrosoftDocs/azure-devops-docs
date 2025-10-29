@@ -3,7 +3,7 @@ title: Migrate from file shares
 description: How to migrate from file shares to Azure Artifacts
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/16/2023
 monikerRange: '>= azure-devops-2020'
 "recommendations": "true"

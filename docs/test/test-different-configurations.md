@@ -3,7 +3,7 @@ title: Test different configurations
 description: Learn about manual and exploratory testing. You can test different configurations with Azure Test Plans and Team Foundation Server.
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
 ms.service: azure-devops-test-plans
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'

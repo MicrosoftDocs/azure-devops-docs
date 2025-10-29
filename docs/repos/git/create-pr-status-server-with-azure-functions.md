@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Create a serverless function to listen to pull request events and post status on the PR status API.
 ms.assetid: 
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

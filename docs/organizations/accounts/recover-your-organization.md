@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Learn how to restore your organization and data up to 90 days after being deleted, done with organization owner permissions.
 ms.subservice: azure-devops-organizations
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 10/24/2024

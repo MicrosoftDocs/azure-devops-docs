@@ -5,7 +5,7 @@ ms.custom: work-items
 description: Learn about Capability Maturity Model Integration (CMMI) process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards and Azure DevOps. 
 ms.service: azure-devops-boards
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

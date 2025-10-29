@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Guidance for developing Azure DevOps Services extensions that support non-member and public users.
 ms.subservice: azure-devops-ecosystem
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley

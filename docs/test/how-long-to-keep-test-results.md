@@ -4,7 +4,7 @@ description: Manage how long Azure DevOps keeps your manual test results by clea
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'

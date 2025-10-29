@@ -9,7 +9,7 @@ ms.reviewer: karrg
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/22/2025
+ms.date: 10/24/2025
 ms.custom:
   - cross-service
   - sfi-image-nochange

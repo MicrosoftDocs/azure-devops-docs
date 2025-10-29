@@ -1,7 +1,12 @@
 ---
 title: Configure networking
+<<<<<<< HEAD
 description: Learn how to configure networking for Azure Managed DevOps Pools.
 ms.date: 07/29/2025
+=======
+description: Learn how to configure networking for Managed DevOps Pools.
+ms.date: 10/27/2025
+>>>>>>> a9952d96fabac6242664cc9699d632c99d324164
 ms.custom: sfi-image-nochange
 ---
 
@@ -184,7 +189,107 @@ If you don't allowlist these endpoints, machines might come online and might eve
 - `download.agent.dev.azure.com`: The Azure DevOps agent's content delivery network (CDN) location, used to download the Azure DevOps agent (formerly `vstsagentpackage.azureedge.net` - for more information, see [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/)).
 - `dev.azure.com`: Required to handle communication with Azure DevOps.
 
-### Endpoints you need to prepare Linux machines
+## Validate endpoint connectivity
+
+Confirm that you can use a subnet with Managed DevOps Pools by running the following script on a resource on that subnet. This step will help you validate that the network flow is configured to reach all of these available endpoints and the Managed DevOps control plane.
+
+> [!IMPORTANT]
+> You must run this script on a resource in your subnet (like a VM or container) to validate that the network path is open from that subnet to the required endpoints.
+
+To run the script with PowerShell Core, or PowerShell 5 or greater, save the following script as `ValidateMDPEndpoints.ps1`. Run the following PowerShell command: `.\ValidateMDPEndpoints.ps1 -organization "<your-organization>"`.
+
+```powershell
+# ValidateMDPEndpoints.ps1
+param (
+    [string]$organization
+)
+$azureDevOpsUris = @(
+    "https://dev.azure.com",
+    "https://vssps.dev.azure.com",
+    "https://vsrm.dev.azure.com",
+    "https://management.azure.com",
+    "https://login.microsoftonline.com",
+    "https://graph.microsoft.com",
+    "https://aadcdn.msftauth.net",
+    "https://${organization}.visualstudio.com",
+    "https://${organization}.vsrm.visualstudio.com",
+    "https://${organization}.vstmr.visualstudio.com",
+    "https://${organization}.pkgs.visualstudio.com",
+    "https://${organization}.vssps.visualstudio.com",
+    "https://download.agent.dev.azure.com",
+    "download.agent.dev.azure.com"
+)
+$managedDevOpsPoolsControlPlaneUris = @(
+    # List of agent queue endpoints - maps to *.queue.core.windows.net
+    "https://rmprodaedefaultcq.queue.core.windows.net",
+    "https://rmprodbrsdefaultcq.queue.core.windows.net",
+    "https://rmprodcncdefaultcq.queue.core.windows.net",
+    "https://rmprodcusdefaultcq.queue.core.windows.net",
+    "https://rmprodeus2defaultcq.queue.core.windows.net",
+    "https://rmprodgwcdefaultcq.queue.core.windows.net",
+    "https://rmprodincdefaultcq.queue.core.windows.net",
+    "https://rmprodneudefaultcq.queue.core.windows.net",
+    "https://rmprodseadefaultcq.queue.core.windows.net",
+    "https://rmprodszndefaultcq.queue.core.windows.net",
+    "https://rmproduksdefaultcq.queue.core.windows.net",
+    "https://rmprodwcusdefaultcq.queue.core.windows.net",
+    "https://rmprodwus3defaultcq.queue.core.windows.net",
+    # CDN for downloading the Managed DevOps Pools agent - maps to *.prod.managedevops.microsoft.com
+    "rm-agent.prod.manageddevops.microsoft.com"
+    # List of control plane endpoints - maps to *.manageddevops.microsoft.com
+    "default.ae.prod.manageddevops.microsoft.com",
+    "default.brs.prod.manageddevops.microsoft.com",
+    "default.cnc.prod.manageddevops.microsoft.com",
+    "default.cus.prod.manageddevops.microsoft.com",
+    "default.eus2.prod.manageddevops.microsoft.com",
+    "default.gwc.prod.manageddevops.microsoft.com",
+    "default.inc.prod.manageddevops.microsoft.com",
+    "default.neu.prod.manageddevops.microsoft.com",
+    "default.sea.prod.manageddevops.microsoft.com",
+    "default.szn.prod.manageddevops.microsoft.com",
+    "default.uks.prod.manageddevops.microsoft.com",
+    "default.wcus.prod.manageddevops.microsoft.com",
+    "default.wus3.prod.manageddevops.microsoft.com"
+)
+$unreachableUris = @()
+foreach ($uri in $azureDevOpsUris) {
+    try {
+        $hostName = ($uri -replace "^https?://", "") -replace "/.*", ""
+        $connection = Test-NetConnection -ComputerName $hostName -Port 443 -WarningAction SilentlyContinue
+        if (-not $connection.TcpTestSucceeded) {
+            $unreachableUris += $uri
+        }
+    } catch {
+        $unreachableUris += $uri
+    }
+}
+if ($unreachableUris.Count -eq 0) {
+    Write-Output "All Azure DevOps endpoints are reachable."
+} else {
+    Write-Output "The following Azure DevOps endpoints could not be reached:"
+    $unreachableUris | ForEach-Object { Write-Output $_ }
+}
+foreach ($uri in $managedDevOpsPoolsControlPlaneUris) {
+    try {
+        $hostName = ($uri -replace "^https?://", "") -replace "/.*", ""
+        $connection = Test-NetConnection -ComputerName $hostName -Port 443 -WarningAction SilentlyContinue
+
+        if (-not $connection.TcpTestSucceeded) {
+            $unreachableUris += $uri
+        }
+    } catch {
+        $unreachableUris += $uri
+    }
+}
+if ($unreachableUris.Count -eq 0) {
+    Write-Output "All Azure Managed DevOps Pools endpoints are reachable."
+} else {
+    Write-Output "The following Managed DevOps Pools endpoints could not be reached:"
+    $unreachableUris | ForEach-Object { Write-Output $_ }
+}
+```
+
+### Required endpoints for Linux machines
 
 These endpoints are required to spin up Ubuntu machines, but aren't necessary if a pool is only using Windows. When you set up the Azure DevOps task agent, required packages are added and an `apt-get` command is run. This process fails if the following endpoints aren't allowlisted.
 
@@ -195,7 +300,7 @@ These endpoints are required to spin up Ubuntu machines, but aren't necessary if
 - `ppa.launchpad.net`: Provisioning some specific Linux distributions.
 - `dl.fedoraproject.org`: Provisioning certain Linux distributions.
 
-### Endpoints you need for some Azure DevOps features
+### Required endpoints for some Azure DevOps features
 
 These optional endpoints are required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization that hosts your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`.
 

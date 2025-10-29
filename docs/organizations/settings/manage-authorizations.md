@@ -1,5 +1,5 @@
 ---
-ms.topic: conceptual
+ms.topic: how-to
 title: Authorize other services to access Azure DevOps
 description: Learn how to authorize other services to work with Azure DevOps Services.
 ms.subservice: azure-devops-security

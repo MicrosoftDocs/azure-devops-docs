@@ -7,7 +7,7 @@ ms.custom: work-items, cross-project, cross-service, engagement-fy23
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: reference
 monikerRange: '<= azure-devops'
 ms.date: 10/08/2025
 #customer intent: As a team member with organizational responsibilities, I want to understand the link types available in Azure DevOps and Azure Boards.
