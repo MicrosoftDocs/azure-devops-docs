@@ -120,7 +120,7 @@ Your [task board](task-board.md) provides an interactive progress record for wor
 
 ### Burndown chart
 
-The [sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md) reflects progress by your team in completing the work they estimated during planning. Use the burndown chart throughout the sprint cycle to help mitigate risk and check for scope creep.
+The [sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md) reflects progress by your team in completing the work they estimated during planning. Use the burndown chart to help mitigate risk and check for scope creep throughout the sprint cycle.
 
 On the burndown chart, the ideal trend line always indicates a steady burndown, while the blue area represents what's actually occurring. This area shows the buildup of work as team members add tasks and the reduction of work as team members complete their tasks.
 
@@ -135,7 +135,7 @@ After several sprints, you can use the [Velocity chart](../../report/dashboards/
 
 Velocity is a useful metric for gaining insight into how much work your team completes during a sprint cycle. Each team is associated with one velocity chart.
 
-Select the **Velocity** chart on the **Analytics** tab of the team **Backlog** page. In the chart, the light blue area shows the total amount of planned effort, based on story points or work item size, for the given sprint. The green area indicates the total estimated effort for completed work items, and the dark blue area corresponds to the estimated effort for items not yet completed.
+Select the **Velocity** chart on the **Analytics** tab of the team **Backlog** page. In the chart, light blue bars show the total amount of planned effort, based on story points or work item size, for a given sprint. The green areas indicate the total estimated effort for completed work items. The dark blue areas correspond to the estimated effort for items not yet completed.
 
 :::image type="content" source="media/velocity-chart.png" alt-text="Screenshot of Velocity chart.":::
 
@@ -198,5 +198,5 @@ For more information, see [Query fields, operators, and macros in Azure Boards](
 
 - [Sprints and Scrum key concepts in Azure Boards](scrum-key-concepts.md)
 - [Use backlogs to manage projects](../backlogs/backlogs-overview.md)
-- [About work items and work item typess](../work-items/about-work-items.md)
+- [About work items and work item types](../work-items/about-work-items.md)
 - [Define sprints](define-sprints.md)
