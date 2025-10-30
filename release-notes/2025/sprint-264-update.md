@@ -1,14 +1,16 @@
 ---
-title: Placeholder
+title: Expanded GitHub Advanced Security features now generally available
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/4/2025
-description: Placeholder
+description: Expanded GitHub Advanced Security features now generally available
 ---
 
-# Placeholder
+# Expanded GitHub Advanced Security features now generally available
 
-TBD 
+This release brings several GitHub Advanced Security features to general availability, including one-click enablement for dependency scanning and work item linking for security alerts. These enhancements simplify vulnerability detection and streamline issue tracking, helping teams strengthen security while maintaining development velocity.
+
+In addition, the local MCP Server for Azure DevOps is now generally available, providing a secure bridge between AI assistants and DevOps workflows. This release introduces improved login and authorization, new tools, and domain-based scoping for better control and security, enabling teams to integrate AI capabilities confidently.
 
 Check out the release notes for details.
 
