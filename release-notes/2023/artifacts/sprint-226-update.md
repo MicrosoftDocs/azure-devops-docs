@@ -4,6 +4,7 @@ description: See the Sprint 226 feature updates for Azure Artifacts, including n
 author: ckanyika
 ms.author: glmorale
 ms.date: 8/23/2023
+ms.topic: release-notes
 ---
 
 # Azure Artifacts - Sprint 226 Update

@@ -3,6 +3,7 @@ title: Configure identity
 description: Learn how to configure a managed identity for Managed DevOps Pools.
 ms.date: 11/18/2024
 ms.custom: sfi-image-nochange
+ms.topic: how-to
 ---
 
 # Configure Managed DevOps Pools identity

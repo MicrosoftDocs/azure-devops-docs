@@ -6,6 +6,7 @@ ms.date: 06/24/2025
 monikerRange: '>= azure-devops-2020'
 ms.custom: sfi-image-nochange
 "recommendations": "true"
+ms.topic: tutorial
 ---
 
 # Tutorial: How to restore packages from upstream sources

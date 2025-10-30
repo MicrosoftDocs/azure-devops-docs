@@ -4,6 +4,7 @@ description: See the Sprint 178 feature updates for Azure Test Plans, including 
 author: sid-ah
 ms.author: simerzou
 ms.date: 11/12/2020
+ms.topic: release-notes
 ---
 
 # Azure Test Plans - Sprint 178 Update
