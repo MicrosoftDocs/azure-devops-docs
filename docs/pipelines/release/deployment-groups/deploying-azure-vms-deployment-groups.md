@@ -23,7 +23,6 @@ A deployment group installs a deployment agent on each target server in the grou
 | **Product**        | **Requirements**  |
 |--------------------|-------------------|
 | **Azure DevOps**   | - An Azure DevOps [organization](../../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../../organizations/projects/create-project.md). |
-| **Azure DevOps Demo Generator**   | - [Set up the Demo Generator](/azure/devops/demo-gen/configure).<br>- Create a [new Azure DevOps project](/azure/devops/demo-gen/use-demo-generator-v2) and make sure to choose the **DeploymentGroups** template (number 15 in the list).  |
 | **Azure**   | - An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
 
 ## Set up resources in Azure
@@ -50,13 +49,13 @@ This section guides you through setting up your Azure resources using an ARM tem
 
 A deployment group is a collection of machines, each with a deployment agent installed. These machines communicate with Azure Pipelines to coordinate application deployments.
 
-1. Navigate to the Azure DevOps project you created earlier using the demo generator.
+1. Go to your Azure DevOps project.
 
-1. Select **Pipelines** > **Deployment groups**.
+2. Select **Pipelines** > **Deployment groups**.
 
-1. Select **Add a deployment group**.
+3. Select **Add a deployment group**.
 
-1. Enter **Release** as the **Deployment group name**, then select **Create**. A registration script will be generated. You can use this script to register target servers and install the deployment agent manually. However, in this tutorial, the target servers are automatically registered as part of the release pipeline.
+4. Enter **Release** as the **Deployment group name**, then select **Create**. A registration script will be generated. You can use this script to register target servers and install the deployment agent manually. However, in this tutorial, the target servers are automatically registered as part of the release pipeline.
 
 ## Create a personal access token
 

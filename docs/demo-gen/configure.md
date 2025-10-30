@@ -11,6 +11,8 @@ ms.date: 02/28/2025
 
 # Overview of Demo Generator
 
+[!INCLUDE [demo-generator-discontinued-note](includes/demo-generator-discontinued-note.md)]
+
 To run the Azure DevOps Demo Generator project as a console application or executable, follow these steps:
 
 Ensure you have the following installed on your machine:

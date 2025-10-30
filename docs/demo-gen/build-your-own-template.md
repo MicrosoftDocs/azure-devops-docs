@@ -14,6 +14,8 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
+[!INCLUDE [demo-generator-discontinued-note](includes/demo-generator-discontinued-note.md)]
+
 Azure DevOps Generator provides many out-of-the-box templates that support a wide variety of scenarios. The generator also allows users to make their own templates. You can convert your existing projects into templates and then create new projects using those templates. Custom templates can be useful in many scenarios, such as for building custom training materials, provisioning only certain artifacts, and so on.
 
 ## Prerequisites
