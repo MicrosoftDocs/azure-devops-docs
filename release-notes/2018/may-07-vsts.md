@@ -6,6 +6,7 @@ ms.custom:
   - devx-track-extended-java
   - devx-track-python
   - sfi-image-nochange
+ms.topic: install-set-up-deploy
 ---
 
 # Deploy to Azure Kubernetes Service (AKS) using DevOps Projects – VSTS Sprint 134 Update

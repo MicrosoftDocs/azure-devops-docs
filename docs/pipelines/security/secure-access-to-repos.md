@@ -5,6 +5,7 @@ ms.author: sandrica
 ms.date: 09/26/2025
 monikerRange: '>= azure-devops-2020'
 #customer intent: As a developer, I want to know about how Azure Pipelines can securely access repositories so I can help protect my source code from security threats.
+ms.topic: how-to
 ---
 
 # Securely access repositories from pipelines

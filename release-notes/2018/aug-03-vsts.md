@@ -2,6 +2,7 @@
 title: Review summarized test results – VSTS Sprint 138 Update
 ms.date: 08/03/2018
 description: In the Sprint 138 Update of Visual Studio Team Services (VSTS), the results pages for Build and release pipelines has been enhanced with a summarized view of test results that organizes related outcomes into a hierarchy.
+ms.topic: how-to
 ---
 
 # Review summarized test results – VSTS Sprint 138 Update

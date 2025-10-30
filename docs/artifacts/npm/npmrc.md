@@ -4,7 +4,7 @@ description: Learn how to set up your npm project and connect to an Azure Artifa
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/08/2025
 monikerRange: '>= azure-devops-2020'
 "recommendations": "true"

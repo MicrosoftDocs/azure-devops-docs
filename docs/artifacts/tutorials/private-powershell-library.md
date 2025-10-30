@@ -8,6 +8,7 @@ ms.date: 07/03/2024
 monikerRange: 'azure-devops'
 "recommendations": "true"
 zone_pivot_groups: powershell-versions
+ms.topic: how-to
 ---
 
 # Use an Azure Artifacts feed as a private PowerShell repository

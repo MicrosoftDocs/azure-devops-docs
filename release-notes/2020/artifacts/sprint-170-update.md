@@ -4,6 +4,7 @@ description: See the Sprint 170 feature updates for Azure Artifacts, including n
 author: sid-ah
 ms.author: simerzou
 ms.date: 05/28/2020
+ms.topic: release-notes
 ---
 
 # Azure Artifacts - Sprint 170 Update

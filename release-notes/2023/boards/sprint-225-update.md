@@ -4,6 +4,7 @@ description: See the Sprint 225 feature updates for Azure Boards, including next
 author: ckanyika
 ms.author: glmorale
 ms.date: 8/2/2023
+ms.topic: release-notes
 ---
 
 # Azure Boards - Sprint 225 Update

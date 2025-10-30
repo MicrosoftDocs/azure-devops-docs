@@ -2,6 +2,7 @@
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
 ms.date: 10/02/2025
+ms.topic: how-to
 ---
 
 # Configure Managed DevOps Pools images

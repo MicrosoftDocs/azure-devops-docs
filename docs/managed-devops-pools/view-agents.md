@@ -2,6 +2,7 @@
 title: View agents
 description: View the status of agents in the pool.
 ms.date: 11/13/2024
+ms.topic: article
 ---
 
 # View agents
