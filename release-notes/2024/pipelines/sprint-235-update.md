@@ -4,6 +4,7 @@ description: See the Sprint 235 feature updates for Azure Pipelines, including n
 author: ckanyika
 ms.author: glmorale
 ms.date: 2/29/2024
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 235 Update

@@ -4,6 +4,7 @@ description: See the Sprint 256 feature updates for Azure Pipelines, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 5/16/2024
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 256 Update

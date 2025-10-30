@@ -3,7 +3,7 @@ title: Organization-level alerts view in security overview
 author: laurajjiang
 ms.author: laurajiang
 ms.date: 10/08/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Organization-level alerts view in security overview

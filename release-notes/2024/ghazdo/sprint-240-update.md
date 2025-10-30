@@ -4,6 +4,7 @@ description: See the Sprint 240 feature updates for GitHub Advanced Security for
 author: ckanyika
 ms.author: glmorale
 ms.date: 6/14/2024
+ms.topic: release-notes
 ---
 
 # GitHub Advanced Security for Azure DevOps - Sprint 240 Update

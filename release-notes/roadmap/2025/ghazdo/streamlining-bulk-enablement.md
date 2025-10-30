@@ -3,7 +3,7 @@ title: Streamlining bulk enablement scenarios
 author: laurajjiang
 ms.author: laurajiang
 ms.date: 10/08/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Streamlining bulk enablement scenarios

@@ -4,6 +4,7 @@ description: See the Sprint 259 feature updates for Azure Repos, including next 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 7/17/2025
+ms.topic: release-notes
 ---
 
 # Azure Repos - Sprint 259 Update

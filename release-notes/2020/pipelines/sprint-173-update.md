@@ -4,6 +4,7 @@ description: See the Sprint 173 feature updates for Azure Pipelines, including n
 author: sid-ah
 ms.author: simerzou
 ms.date: 07/09/2020
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 173 Update

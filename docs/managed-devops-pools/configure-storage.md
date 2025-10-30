@@ -2,6 +2,7 @@
 title: Configure storage
 description: Learn how to add an empty data disk to your Managed DevOps Pools agents.
 ms.date: 07/29/2025
+ms.topic: how-to
 ---
 
 # Configure storage

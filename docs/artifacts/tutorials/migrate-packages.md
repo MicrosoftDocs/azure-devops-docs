@@ -6,6 +6,7 @@ ms.reviewer: elbatk
 ms.date: 06/22/2023
 monikerRange: 'azure-devops'
 "recommendations": "true"
+ms.topic: upgrade-and-migration-article
 ---
 
 # Migrate your NuGet packages from MyGet to Azure Artifacts

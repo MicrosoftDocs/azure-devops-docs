@@ -4,6 +4,7 @@ description: See the Sprint 171 feature updates for General, including next step
 author: sid-ah
 ms.author: simerzou
 ms.date: 06/18/2020
+ms.topic: release-notes
 ---
 
 # General - Sprint 171 Update

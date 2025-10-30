@@ -2,6 +2,7 @@
 title: Diagnostic logs
 description: Learn how to troubleshoot using diagnostic logs.
 ms.date: 11/13/2024
+ms.topic: how-to
 ---
 
 # Diagnostics logs

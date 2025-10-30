@@ -4,6 +4,7 @@ description: See the Sprint 211 feature updates for Reporting, including next st
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/11/2022
+ms.topic: release-notes
 ---
 
 # Reporting - Sprint 211 Update

@@ -4,6 +4,7 @@ description: See the Sprint 183 feature updates for Azure Pipelines, including n
 author: sid-ah
 ms.author: simerzou
 ms.date: 03/03/2021
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 183 Update

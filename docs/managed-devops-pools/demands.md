@@ -2,6 +2,7 @@
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
 ms.date: 05/21/2025
+ms.topic: how-to
 ---
 
 # Demands

@@ -3,7 +3,7 @@ title: Dependabot on Azure DevOps
 author: ncouraud
 ms.author: nicour
 ms.date: 04/22/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Dependabot Security Updates are available on Azure DevOps as a part of Advanced Security

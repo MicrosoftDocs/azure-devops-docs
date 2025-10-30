@@ -4,6 +4,7 @@ author: erindormier
 ms.author: egeaney
 ms.date: 2/13/2018
 description: In the Sprint 143 Update of Azure DevOps, we introduce draft pull requests and a new work item text editor
+ms.topic: how-to
 ---
 
 # Draft pull requests and new work item text editor - Sprint 143 Update
