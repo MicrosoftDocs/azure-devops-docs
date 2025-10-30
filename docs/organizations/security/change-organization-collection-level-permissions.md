@@ -56,7 +56,7 @@ For more information, see [Use security groups to manage users and groups](add-r
 
 [!INCLUDE [hidden-security-groups](includes/hidden-security-groups.md)]
 
-<a name-"add-members-to-the-project-administrators-group"></a>
+<a name="add-members-to-the-project-administrators-group"></a>
 <a id="add-user-group"></a>
 ## Add members to the Project Collection Administrators group 
 
