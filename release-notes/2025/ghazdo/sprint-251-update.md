@@ -4,6 +4,7 @@ description: See the Sprint 251 feature updates for GitHub Advanced Security for
 author: ckanyika
 ms.author: glmorale
 ms.date: 2/12/2025
+ms.topic: release-notes
 ---
 
 # GitHub Advanced Security for Azure DevOps - Sprint 251 Update

@@ -4,6 +4,7 @@ description: See the Sprint 252 feature updates for GitHub Advanced Security for
 author: ckanyika
 ms.author: glmorale
 ms.date: 2/24/2025
+ms.topic: release-notes
 ---
 
 # GitHub Advanced Security for Azure DevOps - Sprint 252 Update

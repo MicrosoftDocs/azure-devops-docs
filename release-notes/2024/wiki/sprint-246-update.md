@@ -4,6 +4,7 @@ description: See the Sprint 246 feature updates for Wiki, including next steps.
 author: ckanyika
 ms.author: glmorale
 ms.date: 10/15/2024
+ms.topic: release-notes
 ---
 
 # Wiki - Sprint 246 Update
