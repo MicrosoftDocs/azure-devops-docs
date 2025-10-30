@@ -10,6 +10,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ms.date: 10/29/2025
+#customer intent: As an Azure DevOps Project Collection Administrator, I want to learn how to add and change organization or collection-level roles and permissions so I can manage roles and permissions for my organization or project collection.
 ---
 
 # Manage organization or collection-level permissions
@@ -26,7 +27,7 @@ This article shows you as a member of the **Project Collection Administrators** 
 
 ## Organization or collection-level permissions
 
-[!INCLUDE [collection-level-permissions](./includes/collection-level-permissions.md)]
+[!INCLUDE [collection-level-permissions](includes/collection-level-permissions.md)]
 
 > [!NOTE]
 > **Project Collection Administrators** can manage organization or collection-level security groups and group membership, and edit permission access control lists (ACLs). This permission isn't controlled through the Azure DevOps user interface.
@@ -70,7 +71,7 @@ The user interface and process differ depending on whether you have the **Organi
 
 1. In the left navigation menu of your Azure DevOps organization, select **Organization settings** > **Permissions**.
 
-   :::image type="content" source="media/permissions/open-settings-permissions-preview.png" alt-text="Screenshot showing Organization settings and Permissions selections.":::
+   :::image type="content" source="media/project-collection/open-settings-permissions-preview.png" alt-text="Screenshot showing Organization settings and Permissions selections.":::
 
 1. Select the **Project Collection Administrators** group, and on the **Members** tab, select **Add**.  
 
@@ -110,11 +111,11 @@ The user interface and process differ depending on whether you have the **Organi
 
 1. Select **Project Collection Administrators** > **Members** > **Add**.  
 
-1. Enter single or multiple user account or custom security group names into the **User or group** text box. The system automatically searches for matches. Select the appropriate results.
+1. Enter single or multiple user account or custom security group names into the **User or group** text box. The system automatically searches for matches.
+
+1. Select the appropriate results, and then select **Save changes**.
 
    :::image type="content" source="media/project-level-permissions-add-a-user.png" alt-text="Screenshot of Add users and group dialog, on-premises.":::
-
-1. Select **Save changes**.
 
 ::: moniker-end 
 
