@@ -4,6 +4,7 @@ description: See the Sprint 255 feature updates for Azure DevOps, including next
 author: ckanyika
 ms.author: glmorale
 ms.date: 4/23/2025
+ms.topic: release-notes
 ---
 
 # Azure DevOps - Sprint 255 Update

@@ -4,6 +4,7 @@ description: See the Sprint 223 feature updates for Reporting, including next st
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/21/2023
+ms.topic: release-notes
 ---
 
 # Reporting - Sprint 223 Update

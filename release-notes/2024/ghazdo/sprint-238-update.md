@@ -4,6 +4,7 @@ description: See the Sprint 238 feature updates for GitHub Advanced Security for
 author: ckanyika
 ms.author: glmorale
 ms.date: 5/2/2024
+ms.topic: release-notes
 ---
 
 # GitHub Advanced Security for Azure DevOps - Sprint 238 Update
