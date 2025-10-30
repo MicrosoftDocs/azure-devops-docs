@@ -23,7 +23,7 @@ This article describes the naming rules, conventions, and restrictions for Azure
 
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
 
-- Length restrictions are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters, which count against the length restriction as two characters. For more information, see [About Unicode and character sets](/windows/win32/intl/about-unicode-and-character-sets).
+- Length restrictions count the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters, which count against the length restriction as two characters. For more information, see [About Unicode and character sets](/windows/win32/intl/about-unicode-and-character-sets).
 
 - As with other operating system files, ASCII control characters 1-31 and surrogate combinations aren't allowed. For general information about the operating system restrictions applied to file names, see [Naming files, paths, and namespaces](/windows/win32/fileio/naming-a-file).
 
@@ -51,18 +51,13 @@ For more information about reserved names, see [File names, paths, and namespace
 
 ## Azure Artifacts
 
-Universal packages must conform to the following restrictions:
+Azure Artifacts universal packages and feeds must conform to the following restrictions:
 
 |  Restriction type  |  Restriction  |
 |--------------------|---------------|
-|Package name        |- Must be lowercase.<br/>- Must start and end with letters or numbers.<br/>- Can contain only letters, numbers, and nonconsecutive dashes, underscore, or periods.  |
+|Package name        |- Must be lowercase.<br/>- Must start and end with alphanumeric characters.<br/>- Can contain only alphanumeric characters and nonconsecutive hyphens `-`, underscores `_`, or periods `.`.  |
 |Package version     |- Must be lowercase without build metadata. |
-
-Feeds must conform to the following restrictions:
-
-| Restriction type | Restriction |
-|------------------|-------------|
-| Feed name        |- Not case sensitive, but can't differ only by capitalization from another feed name.<br/>- Must start and end with a letter or number.<br>- Can't start with `.` or `_`, or end with`.`.<br/>- Can't include any of the following characters: `@` `~` `;` `{` `}` `'` `+` `=` `,` `<` `>` `|` `/` `\` `?` `:` `&` `$` `*` `"` `#` `[` `]` `%`. |
+|Feed name        |- Must start and end with alphanumeric characters.<br>- Not case sensitive, but can't differ from another feed name only by capitalization.<br/>- Can't start with period `.` or underscore `_` or end with period `.`.<br/>- Can't include any of the following characters: `@` `~` `;` `{` `}` `'` `+` `=` `,` `<` `>` `|` `/` `\` `?` `:` `&` `$` `*` `"` `#` `[` `]` `%`. |
 
 ## Azure Boards 
 
@@ -91,11 +86,12 @@ Files attached to work items must conform to the following restrictions.
 
 |Restriction type  |Restriction  |
 |---------|---------|
-|File size   | Must not exceed the maximum size:<br/>- Default maximum size: 4,096 kilobytes.<br/>- Absolute maximum size: 2 gigabytes.   |
-::: moniker-end
+|File size|Must not exceed the maximum size:<br/>- Default maximum size: 4,096 kilobytes.<br/>- Absolute maximum size: 2 gigabytes.|
 
 ::: moniker range="< azure-devops"
+
 For more information, see [Change the maximum attachment size for work items](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).
+
 ::: moniker-end
 
 <a id="Kanban"></a>
@@ -136,7 +132,7 @@ The following fields are defined in a work item type definition of the process t
 
 - The **System** namespace is used only to define all core system fields that are mandatory for Team Foundation system functions. You can't create your own `System.X` field, because it might impede functionality.  
 
-- The **Microsoft** namespace is used to define work item tracking fields. Although you can create your own `Microsoft.X` field, it's not recommended because it might impede functionality or the ability to successfully update a project after an upgrade.
+- The **Microsoft** namespace is used to define work item tracking fields. Although you can create your own `Microsoft.X` field, it isn't recommended because it might impede functionality or the ability to successfully update a project after an upgrade.
 
 Customers and partners can create their own field namespaces for custom work item types. For descriptions of system fields and fields defined in the default process templates, see the [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).
 
@@ -167,7 +163,7 @@ Help text that you add must conform to the following restrictions.
 
 ### Global lists 
 
-As you define work item types, you might find that some work item fields share the same set of allowed or suggested values. A global list is a set of list item values that you can define one time and use globally across all project collections within an instance of an on-premises Azure DevOps Server.
+As you define work item types, you might find that some work item fields share the same set of allowed or suggested values. A global list is a set of list item values that you can define one time and use globally across all project collections within an instance of on-premises Azure DevOps Server.
 
 A global list defined using the `GLOBALLIST` element contains one or more list items specified using the `LISTITEM` element. For details, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).
 
@@ -258,7 +254,7 @@ Git repository names must conform to the following restrictions.
 |---------|---------|
 |Length     | Must not contain more than 64 Unicode characters.        |
 |Uniqueness    | Must not be identical to any other Git repo name in the project.        |
-|Special characters   | - Must not contain any Unicode control characters or surrogate characters.<br/>- Must not contain the following printable characters: `\` `/` `:` `*` `?` `"` `<` `>` `;` `#` `$` `*` `{` `}` `,` `+` `=` `[` `]` `|`.<br/>- Must not start with an underscore `_`.<br/>- Must not start or end with a period `.`.<br/>- Must not be a [system reserved name](#reserved).<br>- **Important**: Although you can include spaces within repo names, it's not recommended.|
+|Special characters   | - Must not contain any Unicode control characters or surrogate characters.<br/>- Must not contain the following printable characters: `\` `/` `:` `*` `?` `"` `<` `>` `;` `#` `$` `*` `{` `}` `,` `+` `=` `[` `]` `|`.<br/>- Must not start with an underscore `_`.<br/>- Must not start or end with a period `.`.<br/>- Must not be a [system reserved name](#reserved).<br>- **Important**: Although you can include spaces within repo names, it isn't recommended.|
 
 For information on naming restrictions for other Git items such as branches and tags, see [git check-ref-format](https://git-scm.com/docs/git-check-ref-format).
  
@@ -319,16 +315,16 @@ Workspace names must conform to the following restrictions.
 |Length    |Must not contain more than 64 Unicode characters.  |
 |Special characters | - Must not end with a space ` `.<br/>- Must not contain the following printable characters: `\` `/` `:` `*` `?` `"` `<` `>` `;` `|`. |
 
-::: moniker range="< azure-devops"
-
 ---
+
+::: moniker range="< azure-devops"
 
 ## Computer names 
 
 The computer name where you install Azure DevOps is associated with the name of the server. Both the operating system and Active Directory impose certain restrictions on computer names, as described in the following articles:
 
 - [Rename a computer that hosts a standalone instance of SQL Server](/sql/database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server)  
-- [Naming conventions in Active Directory for computers, domains, sites, and OUs](https://support.microsoft.com/help/909264/naming-conventions-in-active-directory-for-computers-domains-sites-and)
+- [Naming conventions in Active Directory for computers, domains, sites, and organizational units](https://support.microsoft.com/help/909264/naming-conventions-in-active-directory-for-computers-domains-sites-and)
 
 ::: moniker-end
 
@@ -433,7 +429,7 @@ Build type names must conform to the following restrictions.
 
 ### Build quality 
 
-The build quality lets you attach a quality level or completion state to a completed build. For a list of the default build quality values, see [Rate the quality of a completed build](/previous-versions/ms181734(v%3dvs.140)). Team Foundation Build also lets you create new values for the [build quality type](../../pipelines/create-first-pipeline.md)..
+The build quality lets you attach a quality level or completion state to a completed build. For a list of the default build quality values, see [Rate the quality of a completed build](/previous-versions/ms181734(v%3dvs.140)). Team Foundation Build also lets you create new values for the [build quality type](../../pipelines/create-first-pipeline.md).
 
 Build quality names must conform to the following restrictions.  
 
