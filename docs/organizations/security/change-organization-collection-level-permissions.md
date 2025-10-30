@@ -17,11 +17,11 @@ ms.date: 10/29/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
-This article shows you how to manage permissions that are set at the organization level if you are a member of the **Project Collection Administrators** group. An organization is a container for multiple projects that share resources. For more information, see [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
+This article shows you as a member of the **Project Collection Administrators** group how to manage permissions that are set at the organization level. An organization is a container for multiple projects that share resources. For more information, see [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-This article shows you how to manage permissions that are set at the project collection level if you are a member of the **Project Collection Administrators** group. A project collection is a container for multiple projects that share resources. For more information, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
+This article shows you as a member of the **Project Collection Administrators** group how to manage permissions that are set at the project collection level. A project collection is a container for multiple projects that share resources. For more information, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
 ::: moniker-end
 
 ## Organization or collection-level permissions
@@ -39,7 +39,7 @@ This article shows you how to manage permissions that are set at the project col
 | **Directory services** | Security groups defined in Microsoft Entra ID or Active Directory before being added to Azure DevOps. For more information, see [Add an Active Directory / Microsoft Entra group to a built-in security group](add-ad-aad-built-in-security-groups.md). |
 
 > [!NOTE]
-> Users with **Stakeholder** access can't access some features even if they have permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
+> Users with **Stakeholder** access can't access certain features even if they have permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).
 
 ::: moniker range="azure-devops"
 
@@ -56,10 +56,11 @@ For more information, see [Use security groups to manage users and groups](add-r
 
 [!INCLUDE [hidden-security-groups](includes/hidden-security-groups.md)]
 
+<a name-"add-members-to-the-project-administrators-group"></a>
 <a id="add-user-group"></a>
 ## Add members to the Project Collection Administrators group 
 
-The following process adds users to the **Project Collection Administrators** group or any other organization- or collection-level group.
+The following process adds users to the **Project Collection Administrators** group or any other organization-level or collection-level group.
 
 ::: moniker range="azure-devops"
 
@@ -69,33 +70,33 @@ The user interface and process differ depending on whether you have the **Organi
 
 1. In the left navigation menu of your Azure DevOps organization, select **Organization settings** > **Permissions**.
 
-   :::image type="content" source="media/permissions/open-project-settings-permissions-preview.png" alt-text="Screenshot showing Organization settings and Permissions selections.":::
+   :::image type="content" source="media/permissions/open-settings-permissions-preview.png" alt-text="Screenshot showing Organization settings and Permissions selections.":::
 
 1. Select the **Project Collection Administrators** group, and on the **Members** tab, select **Add**.  
 
    :::image type="content" source="media/project-collection/project-admin-members-add.png" alt-text="Screenshot showing Add member.":::
 
-1. Enter single or multiple user account or custom security group names into the **Add users, groups, service principals, and managed identities** text box. The system automatically searches for matches. Select the appropriate results.
+1. Enter single or multiple user account or custom security group names into the **Add users, groups, service principals, and managed identities** text box. The system automatically searches for matches.
+
+1. Select the appropriate results, and then select **Save**.
 
    :::image type="content" source="media/project-collection/add-member-project-admin.png" alt-text="Screenshot showing Add users and group dialog.":::
-
-1. Select **Save**. 
 
 #### [Current page](#tab/current-page) 
 
 1. In the left navigation menu of your Azure DevOps organization, select **Organization settings** > **Security**.
 
-   :::image type="content" source="media/view-permissions/open-security-project-level-vert.png" alt-text="Screenshot showing selections, Project Settings and Security.":::
+   :::image type="content" source="media/project-collection/open-security.png" alt-text="Screenshot showing Security organization settings.":::
 
 1. Select the **Project Collection Administrators** group, and on the **Members** tab, select **Add**.  
 
    :::image type="content" source="media/project-collection/admin-members-add.png"  alt-text="Screenshot of Project Settings, Security, Add member selections.":::
 
-1. Enter single or multiple user account or custom security group names into the **User or group** text box. The system automatically searches for matches. Select the appropriate results.
+1. Enter single or multiple user account or custom security group names into the **User or group** text box. The system automatically searches for matches.
+
+1. Select the appropriate results, and then select **Save changes**.
 
    :::image type="content" source="media/project-collection/add-user.png" alt-text="Screenshot showing Add users and group dialog, current page.":::
-
-1. Select **Save changes**.
 
 ---
 
@@ -123,6 +124,8 @@ You can change the permissions for any organization or collection-level group ex
 
 ::: moniker range="azure-devops"
 
+The user interface and process differ depending on whether you have the **Organization Permissions Settings Page v2** preview page enabled. To enable this feature, see [Enable preview features](../../project/navigation/preview-features.md).
+
 #### [Preview page](#tab/preview-page) 
 
 1. In the left navigation menu of your Azure DevOps organization, select **Organization settings** > **Permissions**.
@@ -137,13 +140,14 @@ You can change the permissions for any organization or collection-level group ex
 
 1. In the left navigation menu of your Azure DevOps organization, select **Organization settings** > **Security**.
 
-1. Select the group whose permissions you want to change. 
+1. Select the group whose permissions you want to change.
 
-   Toggle through the settings next to each permission to select the new setting. The following example changes several permissions for the **Stakeholders Limited** group.
+1. Cycle through the settings next to each permission you want to change to select the new setting. After making all changes, select **Save changes**.
+
+   The following example changes several permissions for the **Stakeholders Limited** group.
 
    :::image type="content" source="media/change-project-collection-level/change-project-collection-level-permission-for-groups-current-page.png" alt-text="Screenshot of Collection-level Permissions for a selected group, current page.":::  
 
-1. After making all changes, select **Save changes**.
 
 ---
 
@@ -169,13 +173,15 @@ You can change the collection-level permissions for a specific user. For more in
 
 ::: moniker range="azure-devops"
 
+The user interface and process differ depending on whether you have the **Organization Permissions Settings Page v2** preview page enabled. To enable this feature, see [Enable preview features](../../project/navigation/preview-features.md).
+
 #### [Preview page](#tab/preview-page) 
 
 1. In the left navigation menu of your Azure DevOps organization, select **Organization settings** > **Permissions**.
 
 1. Select the **Users** tab, and then search for and select the user whose permissions you want to change.
 
-   :::image type="content" source="media/change-project-level/choose-users-select-user.png" alt-text="Screenshot of Users tab, choose a user.":::
+   :::image type="content" source="media/change-project-collection-level/choose-users-select-user.png" alt-text="Screenshot of Users tab, choose a user.":::
 
 1. Change the setting for one or more permissions by selecting from the dropdown list next to the permission. Changes automatically save as you set them. The following example changes several permissions for user **fabrikamfiber1@hotmail.com**.
 
@@ -187,11 +193,11 @@ You can change the collection-level permissions for a specific user. For more in
 
 1. In the **Filter users and groups** text box, search for and select the name of the user whose permissions you want to change.
 
-1. Change the assignment for one or more permissions. The following example changes several permissions for the user **fabrikamfiber1@hotmail.com**. 
+1. Change the assignment for one or more permissions, and then select **Save changes**.
+
+   The following example changes several permissions for the user **fabrikamfiber1@hotmail.com**. 
 
    :::image type="content" source="media/change-project-collection-level/change-project-level-permission-for-user-current-page.png" alt-text="Screenshot of selected user, change Edit project-level information permission level.":::   
-
-1. Select **Save changes**.
 
 ---
 
