@@ -1,6 +1,6 @@
 ---
 title: Configure scaling
-description: Learn about performance options for Azure Managed DevOps Pools.
+description: Learn about performance options for Azure Managed DevOps Pools
 ms.date: 07/29/2025
 ---
 
