@@ -10,6 +10,9 @@ ms.date: 06/06/2025
 
 # Get started creating and populating demo Azure DevOps Services projects
 
+> [!IMPORTANT]
+> We have made the decision to discontinue further investment in the Azure DevOps Demo Generator. While the tool has served as a valuable resource for creating preconfigured Azure DevOps projects, we recognize that evolving customer needs and platform priorities require us to focus our efforts elsewhere.
+
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 This article explains how to use the **Azure DevOps Demo Generator** application to quickly create a new Azure DevOps project prepopulated with sample content, such as work items, repositories, and other resources needed for labs and demonstrations. 
