@@ -6,4 +6,4 @@ ms.topic: include
 ---
 
 - [Reduce authorization timeout](#reduce-authorization-timeout)
-- [Pipelines parameters](#pipelines-parameters)
+- [Pipeline parameters](#pipeline-parameters)
