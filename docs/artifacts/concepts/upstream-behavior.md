@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 Azure Artifacts upstream sources enable developers to centralize package management by using a single feed to store both published packages and those consumed from public registries such as NuGet.org.
 
-Upstream sources offer several advantages for managing dependencies, including simplicity, reliability, and package integrity. See [What are upstream sources?]() for more details.
+Upstream sources offer several advantages for managing dependencies, including simplicity, reliability, and package integrity. See [What are upstream sources?](upstream-sources.md) for more details.
 
 ## Allow externally sourced versions
 
@@ -38,7 +38,7 @@ To enable consuming external versions for a specific package, follow these steps
 
 1. Toggle **Allow External Versions** to enable the feature, then select **Close** when you're done.
 
-    :::image type="content" source="media\allow-externally-sourced-versions.png" alt-text="A screenshot displaying how to enable external versions for a specific package in Azure Artifacts.":::
+    :::image type="content" source="media\allow-externally-sourced-versions.png" alt-text="A screenshot displaying how to enable external versions for a specific package in Azure Artifacts." lightbox="media\allow-externally-sourced-versions.png":::
 
 ## Allow external versions using the REST API
 
@@ -102,7 +102,7 @@ To enable external versions for a specific package using PowerShell, follow thes
 
 This section describes common scenarios where external versions (packages from public registries) are either **blocked** or **allowed** from being saved to the feed. For the rest of this article, we refer to packages from public registries as *public packages* and packages stored in an Azure Artifacts feed as *private packages*.
 
-## Scenario 1: Public versions are blocked
+### Scenario 1: Public versions are blocked
 
 Public versions are blocked from being saved to the feed when the **Allow External Versions** feature is enabled in the following two cases:
 
@@ -122,7 +122,7 @@ When a team uses both private and public packages, the feed blocks any new packa
 
 :::image type="content" source="media\private-and-public-packages.svg" alt-text="An illustration showing available private and public packages.":::
 
-## Scenario 2: public versions are allowed
+### Scenario 2: Public versions are allowed
 
 Public versions are allowed to be saved to the feed when the **Allow External Versions** feature is enabled in the following three cases:
 
