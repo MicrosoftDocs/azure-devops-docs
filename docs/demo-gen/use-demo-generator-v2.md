@@ -10,7 +10,7 @@ ms.date: 06/06/2025
 
 # Get started creating and populating demo Azure DevOps Services projects
 
-> [!NOTE]
+> [!IMPORTANT]
 > We have made the decision to discontinue further investment in the Azure DevOps Demo Generator. While the tool has served as a valuable resource for creating preconfigured Azure DevOps projects, we recognize that evolving customer needs and platform priorities require us to focus our efforts elsewhere.
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
