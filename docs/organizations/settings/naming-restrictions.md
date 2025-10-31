@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/30/2025
-#customer intent: As an Azure DevOps administrator, I need to know the naming restrictions and conventions for Azure DevOps components so I can correctly and effectively manage my Azure DevOps organization or collection.
+#customer intent: As an Azure DevOps user, I need to know the naming restrictions and conventions for Azure DevOps components so I can correctly and effectively use my Azure DevOps resources and processes.
 ---
 
 # Naming restrictions and conventions  
@@ -23,14 +23,14 @@ This article describes the naming rules, conventions, and restrictions for Azure
 
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
 
-- Length restrictions count the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters, which count against the length restriction as two characters. For more information, see [About Unicode and character sets](/windows/win32/intl/about-unicode-and-character-sets).
+- Length restrictions count the number of Unicode characters. Surrogate characters are composed of two Unicode characters, which count against the length restriction as two characters. For more information, see [About Unicode and character sets](/windows/win32/intl/about-unicode-and-character-sets).
 
 - As with other operating system files, ASCII control characters 1-31 and surrogate combinations aren't allowed. For general information about the operating system restrictions applied to file names, see [Naming files, paths, and namespaces](/windows/win32/fileio/naming-a-file).
 
 - For limits on the number of items you can define, see [Work tracking, process, and project limits](work/object-limits.md).
 
 > [!IMPORTANT]   
-> When you use the API rather than the user interface (UI), you can directly specify a name that might include characters restricted in the UI. To maintain consistency and prevent unintended issues, follow the UI restrictions. Validate names programmatically and handle special characters appropriately.
+> When you use the Azure DevOps APIs rather than the user interface (UI), you can directly specify a name that might include characters restricted in the UI. To maintain consistency and prevent unintended issues, follow the UI restrictions. Validate names programmatically and handle special characters appropriately.
 
 <a id="reserved"></a>
 ### System reserved names 
@@ -326,77 +326,6 @@ The computer name where you install Azure DevOps is associated with the name of 
 - [Rename a computer that hosts a standalone instance of SQL Server](/sql/database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server)  
 - [Naming conventions in Active Directory for computers, domains, sites, and organizational units](https://support.microsoft.com/help/909264/naming-conventions-in-active-directory-for-computers-domains-sites-and)
 
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-## Organization names
-
-[!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
-
-::: moniker-end
-
-<a id="ProjectCollectionNames">   </a>
-## Project collection names 
-
-The project collection is the organizing structure you use to define and control a group of projects for Azure DevOps Server. The project collection identifies a group of projects and their resources. The project collection name is also part of the connection string used to connect team members to projects.
-
-The default collection name assigned to a project collection corresponds to *DefaultCollection*. For more information, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
-
-Project collection names must conform to the following restrictions.  
-
-|Restriction type  |Restriction |
-|---------|---------|
-|Length    |  Must not contain more than 64 Unicode characters.       |
-|Uniqueness    | - Must not be identical to any other collection name in your on-premises deployment.<br>- If your deployment includes SharePoint Products or SQL Server Reporting Services, their names can't be identical to the name and full path of an existing SharePoint site, report server, or Reporting Services website.  |
-|Special characters | - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\` `/` `:` `*` `?` `"` `<` `>` `;` `#` `$` `*` `{` `}` `,` `+` `=` `[` `]` `|`. <br>- Must not contain an ellipsis `...` or a double period `..`.<br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.<br>  Must not be a [system reserved name](#reserved).  |
-
-::: moniker-end
-
-<a id="ProcessTemplates"></a>
-## Process and process templates 
-
-A process defines the building blocks of the work item tracking system and other subsystems that you can access after connecting to a project. Both *process* and *process template* refer to an interdependent set of files used to create a project. For information about the default processes, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md).
-
-Processes that you define or customize must conform to the following restrictions.  
-
-|Restriction type  |Restriction  |
-|---------|---------|
-|Length     | Must not contain more than 256 Unicode characters.        |
-|Uniqueness   |  - Must be unique across Azure DevOps. If you upload a template with the same name as an existing template, the existing template is overwritten. |
-|Process template file size    | Must not exceed 2 gigabytes. |
-
-::: moniker range="< azure-devops"
-
-<a id="ProjectNames">   </a>
-
-## Project names
-
-A project establishes a repository for source code and a place for teams to plan, track progress, and collaborate. The name of the  project is part of the connection string used to connect team members to projects.
-
-Names you assign to projects that you create must conform to the following restrictions.  
-
-|Restriction type  |Restriction |
-|---------|---------|
-|Length    |  Must not contain more than 64 Unicode characters.       |
-|Uniqueness    | Must not be identical to any other name in the project collection, the SharePoint Web application that supports the collection, or the instance of SQL Server Reporting Services that supports the collection. |
-|Reserved names    | - Must not be a [system reserved name](#reserved). <br>- Must not be one of the hidden segments used for IIS request filtering like `App_Browsers`, `App_code`, `App_Data`, `App_GlobalResources`, `App_LocalResources`, `App_Themes`, `App_WebResources`, `bin`, or `web.config`.  |
-| Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\` `/` `:` `*` `?` `"` `'` `<` `>` `;` `#` `$` `*` `{` `}` `,` `+` `=` `[` `]` `|`. <br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.   |
-
-<a id="GroupAccountNames">   </a>
-## Security groups
-
-You can use Azure DevOps security groups to apply certain rights or permissions to a group of users. On-premises groups might consist of Active Directory group accounts, Azure DevOps security groups, Windows user accounts, Windows group accounts, or any mixture of these types. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md).  
-
-Security groups must conform to the following restrictions.  
-
-|Restriction type  |Restriction |
-|---------|---------|
-|Security group account name length  |  Must not contain more than 256 Unicode characters.       |
-|Uniqueness    | - Project-level group accounts must not match any other group name in the same project.<br>- Collection-level group accounts must not match any other name of a group account in the project collection.  |
-|Reserved group names    |Must not be named with a `$NAMESPACE` at either the project or the server level.    |
-| Special characters |- Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `,` `/` `\` `[` `]` `:` `<` `>` `+` `=` `;` `?` `*` `|`. <br>- Must not include nonprintable characters in the ASCII value range of 1-31.<br>- Must not end in a period `.`. |
-
 ## Team Foundation Build
 
 Team Foundation Build lets you manage all the aspects of the build process on a single computer. By using Team Foundation Build, you can synchronize sources, compile the application, run associated unit tests, perform code analysis, release builds on a file server, and publish build reports.
@@ -438,7 +367,71 @@ Build quality names must conform to the following restrictions.
 |Length   | Must not contain more than 256 Unicode characters.        |
 |Uniqueness  |Must not be the same as any other build quality name on the Team Foundation Build computer.  |
 
+<a id="ProjectCollectionNames">   </a>
+## Project collection names 
+
+The project collection is the organizing structure you use to define and control a group of projects for Azure DevOps Server. The project collection identifies a group of projects and their resources. The project collection name is also part of the connection string used to connect team members to projects.
+
+The default collection name assigned to a project collection corresponds to *DefaultCollection*. For more information, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
+
+Project collection names must conform to the following restrictions.  
+
+|Restriction type  |Restriction |
+|---------|---------|
+|Length    |  Must not contain more than 64 Unicode characters.       |
+|Uniqueness    | - Must not be identical to any other collection name in your on-premises deployment.<br>- If your deployment includes SharePoint Products or SQL Server Reporting Services, their names can't be identical to the name and full path of an existing SharePoint site, report server, or Reporting Services website.  |
+|Special characters | - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\` `/` `:` `*` `?` `"` `<` `>` `;` `#` `$` `*` `{` `}` `,` `+` `=` `[` `]` `|`. <br>- Must not contain an ellipsis `...` or a double period `..`.<br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.<br>  Must not be a [system reserved name](#reserved).  |
+
 ::: moniker-end
+
+::: moniker range="azure-devops"
+
+## Organization names
+
+[!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
+
+::: moniker-end
+
+<a id="ProcessTemplates"></a>
+## Process and process templates 
+
+A process defines the building blocks of the work item tracking system and other subsystems that you can access after connecting to a project. Both *process* and *process template* refer to an interdependent set of files used to create a project. For information about the default processes, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md).
+
+Processes that you define or customize must conform to the following restrictions.  
+
+|Restriction type  |Restriction  |
+|---------|---------|
+|Length     | Must not contain more than 256 Unicode characters.        |
+|Uniqueness   |  - Must be unique across Azure DevOps. If you upload a template with the same name as an existing template, the existing template is overwritten. |
+|Process template file size    | Must not exceed 2 gigabytes. |
+
+<a id="ProjectNames">   </a>
+## Project names
+
+A project establishes a repository for source code and a place for teams to plan, track progress, and collaborate. The name of the  project is part of the connection string used to connect team members to projects.
+
+Names you assign to projects that you create must conform to the following restrictions.  
+
+|Restriction type  |Restriction |
+|---------|---------|
+|Length    |  Must not contain more than 64 Unicode characters.       |
+|Uniqueness    | Must not be identical to any other name in the organization, project collection, or SharePoint Web application or SQL Server report for the collection. |
+|Reserved names    | - Must not be a [system reserved name](#reserved). <br>- Must not be one of the hidden segments used for IIS request filtering like `App_Browsers`, `App_code`, `App_Data`, `App_GlobalResources`, `App_LocalResources`, `App_Themes`, `App_WebResources`, `bin`, or `web.config`.  |
+| Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\` `/` `:` `*` `?` `"` `'` `<` `>` `;` `#` `$` `*` `{` `}` `,` `+` `=` `[` `]` `|`. <br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.   |
+
+<a id="GroupAccountNames">   </a>
+## Security groups
+
+You can use Azure DevOps security groups to apply certain rights or permissions to a group of users. Groups might consist of Microsoft Entra ID or Active Directory accounts, Azure DevOps security groups, Windows user or group accounts, or a combination. For more information, see [Add Active Directory / Microsoft Entra users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md).  
+
+Security groups must conform to the following restrictions.  
+
+|Restriction type  |Restriction |
+|---------|---------|
+|Security group account name length  |  Must not contain more than 256 Unicode characters.       |
+|Uniqueness    | - Project-level group accounts must not match any other group name in the same project.<br>- Collection-level group accounts must not match any other name of a group account in the project collection.  |
+|Reserved group names    |Must not be named with a `$NAMESPACE` at either the project or the server level.    |
+|Special characters |- Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `,` `/` `\` `[` `]` `:` `<` `>` `+` `=` `;` `?` `*` `|`. <br>- Must not include nonprintable characters in the ASCII value range of 1-31.<br>- Must not end in a period `.`. |
 
 ## Team names 
 
