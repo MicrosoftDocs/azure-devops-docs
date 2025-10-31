@@ -388,6 +388,8 @@ Project collection names must conform to the following restrictions.
 
 ## Organization names
 
+The organization is the organizing structure you use to define and control a group of projects for Azure DevOps Services. The organization identifies a group of projects and their resources. 
+
 [!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
 
 ::: moniker-end
@@ -429,7 +431,7 @@ Security groups must conform to the following restrictions.
 |Restriction type  |Restriction |
 |---------|---------|
 |Security group account name length  |  Must not contain more than 256 Unicode characters.       |
-|Uniqueness    | - Project-level group accounts must not match any other group name in the same project.<br>- Collection-level group accounts must not match any other name of a group account in the project collection.  |
+|Uniqueness    | - Project-level group accounts must not match any other group name in the same project.<br>- Organization or collection-level group accounts must not match any other name of a group account in the organization or project collection.  |
 |Reserved group names    |Must not be named with a `$NAMESPACE` at either the project or the server level.    |
 |Special characters |- Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `,` `/` `\` `[` `]` `:` `<` `>` `+` `=` `;` `?` `*` `|`. <br>- Must not include nonprintable characters in the ASCII value range of 1-31.<br>- Must not end in a period `.`. |
 
@@ -437,7 +439,7 @@ Security groups must conform to the following restrictions.
 
 Team names identify a group of individuals or groups that work together as a team in a project. Team members use this name to connect to the team or to query against members defined for a team. Team names must conform to conventions that allow them to be rendered as part of a valid URL.
 
-Each team name must be unique within a single project, but there aren't any restrictions on using the same team name in different projects within an organization or project collection. For more information, see [Add another team or a hierarchy of teams](../../organizations/settings/add-teams.md).
+Each team name must be unique within a single project, but there are no restrictions on using the same team name in different projects within an organization or project collection. For more information, see [Add another team or a hierarchy of teams](../../organizations/settings/add-teams.md).
 
 Team names must conform to the following restrictions.   
 
