@@ -4,6 +4,7 @@ description: See the Sprint 238 feature updates for Azure Pipelines, including n
 author: ckanyika
 ms.author: glmorale
 ms.date: 5/2/2024
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 238 Update

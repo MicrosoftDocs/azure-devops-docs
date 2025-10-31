@@ -4,6 +4,7 @@ description: See the Sprint 247 feature updates for Azure Repos, including next 
 author: ckanyika
 ms.author: glmorale
 ms.date: 11/4/2024
+ms.topic: release-notes
 ---
 
 # Azure Repos - Sprint 247 Update

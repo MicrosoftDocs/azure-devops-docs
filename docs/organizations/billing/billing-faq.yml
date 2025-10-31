@@ -12,7 +12,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 03/05/2025
+  ms.date: 10/30/2025
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -48,7 +48,7 @@ sections:
       - question: |
           Q: Do I get charged for users even if they never sign in?
         answer: |
-          A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. When you create a [group rule](../accounts/assign-access-levels-by-group-membership.md), applied to users without direct assignments, you don't start paying until they sign in and receive an access level.
+          A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. When you create a [group rule](../accounts/assign-access-levels-by-group-membership.md) using a Microsoft Entra group, you don't start paying until they sign in and receive an access level.
           
       - question: |
           Q: What happens when a user is deleted in Microsoft Entra ID?

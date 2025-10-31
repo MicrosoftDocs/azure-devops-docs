@@ -4,6 +4,7 @@ description: See the Sprint 229 feature updates for Azure DevOps, including next
 author: ckanyika
 ms.author: glmorale
 ms.date: 10/26/2023
+ms.topic: release-notes
 ---
 
 # GitHub Advanced Security for Azure DevOps - Sprint 229 Update

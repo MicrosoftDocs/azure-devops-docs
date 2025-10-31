@@ -4,6 +4,7 @@ description: See the Sprint 222 feature updates for Azure DevOps, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/6/2023
+ms.topic: release-notes
 ---
 
 # GitHub Advanced Security for Azure DevOps - Sprint 222 Update

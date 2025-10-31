@@ -4,6 +4,7 @@ description: See the Sprint 248 feature updates for Azure Test Plans, including 
 author: ckanyika
 ms.author: glmorale
 ms.date: 1/15/2025
+ms.topic: release-notes
 ---
 
 # Azure Test Plans - Sprint 248 Update

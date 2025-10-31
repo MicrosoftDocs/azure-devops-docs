@@ -4,6 +4,7 @@ description: See the Sprint 229 feature updates for Reporting, including next st
 author: ckanyika
 ms.author: glmorale
 ms.date: 10/26/2023
+ms.topic: release-notes
 ---
 
 # Reporting - Sprint 229 Update

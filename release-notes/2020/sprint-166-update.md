@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 03/16/2020
 description: In the **Sprint 166 Update** of Azure DevOps, you can now pay for users once across multiple organizations.
+ms.topic: release-notes
 ---
 
 

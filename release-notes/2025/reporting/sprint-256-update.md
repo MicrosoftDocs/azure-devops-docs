@@ -4,6 +4,7 @@ description: See the Sprint 256 feature updates for Reporting, including next st
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 5/19/2025
+ms.topic: release-notes
 ---
 
 # Reporting - Sprint 256 Update

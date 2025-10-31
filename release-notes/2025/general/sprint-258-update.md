@@ -4,6 +4,7 @@ description: See the Sprint 258 feature updates for Azure DevOps, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/30/2025
+ms.topic: release-notes
 ---
 
 # Azure DevOps - Sprint 258 Update

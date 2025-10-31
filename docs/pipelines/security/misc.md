@@ -4,6 +4,7 @@ description: Other tips for securing your pipelines, including protecting shared
 ms.assetid: 95fe319a-60bd-4b1b-9111-5fd8852f7839
 ms.date: 06/11/2024
 monikerRange: '>= azure-devops-2020'
+ms.topic: article
 ---
 
 # Secure agents, projects, and containers

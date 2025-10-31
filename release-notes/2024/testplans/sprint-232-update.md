@@ -6,6 +6,7 @@ description: See the Sprint 232 feature updates for Azure Test Plans, including 
 author: ckanyika
 ms.author: glmorale
 ms.date: 1/11/2024
+ms.topic: release-notes
 ---
 
 # Azure Test Plans - Sprint 232 Update
