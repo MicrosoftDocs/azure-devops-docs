@@ -182,8 +182,6 @@ Global lists must conform to the following restrictions.
 |Special characters    |- Must not contain leading or trailing white space.<br>- Must not contain two consecutive spaces.<br>- Must not contain the backslash `\` character.  |
 |Scope   |   Since global lists are available among all projects, they must not contain elements defined at the project level, such as project-specific group account definitions. |
 
-::: moniker-end
-
 ### Link type or category reference names
 
 Define a reference name when you add or create a link type or category.
@@ -194,16 +192,7 @@ Define a reference name when you add or create a link type or category.
 |Uniqueness     | - Must not be the same as any other field reference name within the project collection.<br>- Must not be identical to any other field reference name after the system processes the names to replace all periods `.` with underscores `_`. For example, the field reference names `My._Field` and `My..Field` would both process as the same name: `My__Field`. |
 |Special characters    |- Can use alphanumeric characters, underscores, hyphens, and periods.<br>- Can't contain consecutive hyphens `--`.<br>- Must contain at least one period `.`, but can't start or end with a period.<br>- Can't start with a numeral or underscore `_`. |
 
-### Work item tag names
-
-Work item tags consist of one or two keywords that filter or define work tracking tools such as backlogs, boards, and queries. For more information, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
-
-Tag names must conform to the following restrictions.
-
-|Restriction type |Restriction |
-|---------|---------|
-|Length    | - Must not contain more than 400 Unicode characters.<br>- Must not be null or empty. |
-|Special characters    |- Must not contain separator characters `,` or `;`.<br>- Must not contain Unicode control or format characters such as line feeds, paragraph separators, carriage returns, or other mismatched surrogate characters.|
+::: moniker-end
 
 ::: moniker range="> azure-devops-2022"
 
@@ -218,6 +207,17 @@ You can use work item queries to list work items based on field criteria you spe
 |Uniqueness|- Must be contained in a folder and be named uniquely within the folder.|
 
 ::: moniker-end
+
+### Work item tag names
+
+Work item tags consist of one or two keywords that filter or define work tracking tools such as backlogs, boards, and queries. For more information, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
+
+Tag names must conform to the following restrictions.
+
+|Restriction type |Restriction |
+|---------|---------|
+|Length    | - Must not contain more than 400 Unicode characters.<br>- Must not be null or empty. |
+|Special characters    |- Must not contain separator characters `,` or `;`.<br>- Must not contain Unicode control or format characters such as line feeds, paragraph separators, carriage returns, or other mismatched surrogate characters.|
 
 ## Azure Pipelines
 
