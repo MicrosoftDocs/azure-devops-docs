@@ -38,7 +38,7 @@ monikerRange: '<= azure-devops'
 | Administer build permissions| | |✔️|✔️| 
 | Create build pipeline| |✔️|✔️|✔️|
 | Delete or edit build pipeline| |✔️|✔️|✔️| 
-| Delete or destroy builds | | |✔️|✔️| 
+| Delete or destroy builds | |✔️|✔️|✔️| 
 |Edit build quality        | |✔️|✔️|✔️| 
 |Manage build qualities    | | |✔️|✔️| 
 |Manage build queue        | | |✔️|✔️| 
