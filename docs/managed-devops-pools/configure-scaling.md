@@ -1,13 +1,13 @@
 ---
 title: Configure scaling
-description: Learn about performance options for Azure Managed DevOps Pools.
+description: Learn about performance options for Managed DevOps Pools.
 ms.date: 07/29/2025
 ms.topic: how-to
 ---
 
 # Configure scaling
 
-You can manage the performance and cost of your Azure Managed DevOps Pools instance by configuring scaling settings. For information on pricing and performance, see [Manage cost and performance](manage-costs.md).
+You can manage the performance and cost of your Managed DevOps Pools instance by configuring scaling settings. For information on pricing and performance, see [Manage cost and performance](manage-costs.md).
 
 ## Agent state
 
@@ -181,7 +181,7 @@ When you enable the **Same agent can be used by multiple builds** (the `"kind": 
 
 Agents in stateless pools are shut down and discarded after every job. Agents in stateful pools continue running if any of the following conditions are met:
 
-* If another job is queued when the first job finishes, Managed DevOps Pools sends that job to the agent that ran the first job instead of shutting it down.
+* If another job is queued when the first job finishes, Managed DevOps Pools sends the queued job to the agent that ran the first job instead of shutting it down.
 * If there's a grace period configured for the pool, agents wait for new jobs for the duration specified by the grace period before shutting down.
 * If [standby agents are enabled](#standby-agent-mode), and the agent image meets the criteria of the active provisioning period, the agent continues to run and wait for jobs.
 
@@ -1215,7 +1215,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 When you enable standby agents by using a [stateless](#stateless-pools) scheme, you need to install and configure the Azure Pipelines agent before you transition from the [ready](./view-agents.md#status) state to the [allocated](./view-agents.md#status) state and run a pipeline.
 
-When Managed DevOps Pools provisions new agents, it attempts to download the latest [Azure Pipelines agent](https://github.com/microsoft/azure-pipelines-agent/releases) so that it's already downloaded on standby agents before they transition into ready status. Startup, connection, and beginning the job can take anywhere from 10 seconds to a minute depending on the pool's SKU speed, the image used, and the networking load. Additionally, when you specify certain settings in a pipeline job, it can cause a redownload and running of a different agent. Regressions and rollbacks of the agent can also cause a redownload of the agent. 
+When Managed DevOps Pools provisions new agents, it attempts to download the latest [Azure Pipelines agent](https://github.com/microsoft/azure-pipelines-agent/releases) so that it's already downloaded on standby agents before they transition into ready status. Startup, connection, and beginning the job can take anywhere from 10 seconds to a minute depending on the pool's SKU speed, the image used, and the networking load. Additionally, when you specify certain settings in a pipeline job, it can cause a redownload and running of a different agent. Regressions and rollbacks of the agent can also cause a redownload of the agent.
 
 [Ready agents](./view-agents.md#status) always have a potential delay, as Managed DevOps Pools uses this agent in an "ephemeral" manner, meaning we start and run the task agent one time per job. If you see delays in ready agents picking up jobs from Azure DevOps, consider the following questions:
 

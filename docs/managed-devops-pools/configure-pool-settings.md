@@ -1,6 +1,6 @@
 ---
 title: Configure pool settings
-description: Learn how to configure settings in Azure Managed DevOps Pools.
+description: Learn how to configure settings in Managed DevOps Pools.
 ms.date: 08/27/2025
 ms.custom: sfi-image-nochange
 ms.topic: how-to
@@ -8,7 +8,7 @@ ms.topic: how-to
 
 # Configure pool settings
 
-This article describes how to configure the basic settings of your Azure Managed DevOps Pools instance.
+This article describes how to configure the basic settings of your Managed DevOps Pools instance.
 
 ## Overview
 
@@ -381,7 +381,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 If your subscription doesn't have the capacity to configure your pool with the Azure VM SKU and maximum agents count that you specify, you receive an error message like this:
 
-"Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Choose a different region if possible, or request more quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription_id_placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97."
+`Cores needed to complete this request is 8, which exceeds the current limit of 0 for SKU family standardDDSv4Family in region eastus. Please choose a different region if possible, or request additional quota at https://portal.azure.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/issueType/quota/subscriptionId/subscription_id_placeholder/topicId/3eadc5d3-b59a-3658-d8c6-9c729ba35b97`
 
 To resolve the issue, see [Review Managed DevOps Pools quotas](./prerequisites.md#review-managed-devops-pools-quotas).
 
@@ -483,7 +483,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 ## Images
 
-Managed DevOps Pools provides you with several VM image options to use to run pipelines in your pool. You can create your pool by using selected Azure Marketplace VM images, your own custom images in an Azure Compute Gallery instance, or the same Windows and Linux images that are used by Azure Pipelines Microsoft-hosted agents.
+Managed DevOps Pools provides you with several VM image options to use to run pipelines in your pool. You can create your pool by using selected marketplace VM images, your own custom images in an Azure Compute Gallery instance, or the same Windows and Linux images that are used by Azure Pipelines Microsoft-hosted agents.
 
 > [!IMPORTANT]
 > [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]

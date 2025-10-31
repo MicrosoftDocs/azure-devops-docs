@@ -1,13 +1,13 @@
 ---
 title: View agents
-description: View the status of agents in Azure Managed DevOps Pools.
+description: View the status of agents in Managed DevOps Pools.
 ms.date: 11/13/2024
 ms.topic: article
 ---
 
 # View agents
 
-You can view the status of the agents in your pools on the **Agents** pane. You can use this information to find out how many agents are running jobs and to see how many standby agents are online.
+You can view the status of the agents in your pool on the **Agents** pane. You can use this information to find out how many agents are running jobs and to see how many standby agents are online.
 
 ## Agents list
 

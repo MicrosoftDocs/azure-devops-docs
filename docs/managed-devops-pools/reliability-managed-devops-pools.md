@@ -1,6 +1,6 @@
 ---
-title: Reliability in Azure Managed DevOps Pools
-description: Learn about reliability and disaster recovery options with Azure Managed DevOps Pools.
+title: Reliability in Managed DevOps Pools
+description: Learn about reliability and disaster recovery options with Managed DevOps Pools.
 ms.date: 07/29/2025
 ms.topic: reliability-article
 #Customer intent: As a developer, I want to understand reliability support for Managed DevOps Pools so that I can respond to and avoid failures to minimize downtime and data loss.
@@ -8,7 +8,7 @@ ms.topic: reliability-article
 
 # Reliability in Managed DevOps Pools
 
-This article describes reliability support in Azure Managed DevOps Pools, and covers [cross-region disaster recovery](#cross-region-disaster-recovery).
+This article describes reliability support in Managed DevOps Pools, and covers [cross-region disaster recovery](#cross-region-disaster-recovery).
 
 ## Availability zones
 

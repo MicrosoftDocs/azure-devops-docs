@@ -1,15 +1,15 @@
 ---
 title: Configure demands
-description: Learn how to configure demands for Azure Managed DevOps Pools.
+description: Learn how to configure demands for Managed DevOps Pools.
 ms.date: 05/21/2025
 ms.topic: how-to
 ---
 
-# Demands
+# Configure demands for Managed DevOps Pools
 
-Pipelines use [demands](/azure/devops/pipelines/yaml-schema/pool-demands) to specify what capabilities an agent needs for Azure DevOps to send a job from the pipeline to the agent. 
+Pipelines use [demands](/azure/devops/pipelines/yaml-schema/pool-demands) to specify what capabilities an agent needs for Azure DevOps to send a pipeline job to the agent.
 
-In Azure Managed DevOps Pools, demands like [`ImageOverride`](#imageoverride) work just like demands in Azure Pipelines. A pipeline job is routed to a specific agent that has attributes that match the demand. You can use some demands, like [`WorkFolder`](#workfolder) and [`Priority`](#priority), to configure attributes on the agent.
+In Managed DevOps Pools, demands like [`ImageOverride`](#imageoverride) work just like demands in Azure Pipelines. A pipeline job is routed to a specific agent that has attributes that match the demand. You can use some demands, like [`WorkFolder`](#workfolder) and [`Priority`](#priority), to configure attributes on the agent.
 
 This article describes the demands available in Managed DevOps Pools and how to use them.
 
@@ -17,7 +17,7 @@ This article describes the demands available in Managed DevOps Pools and how to 
 
 The default work folder for agents is typically on the **D:\\** drive for Windows or **/mnt** for Linux, and your pipeline can reference it by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables). You can override this location to change both the drive and directory name used when the agent starts by specifying the `WorkFolder` demand in your pipeline.
 
-If you have a stateful pool with a running agent with a `WorkFolder` that matches your demand, your pipeline is sent to that agent. If you aren't using stateful pools, or there's no agent running with that `WorkFolder`, a new agent is started and configured to use the designated `WorkFolder`. The directory specified is created if not present. If the path name for the `WorkFolder` is invalid, the default agent working folder is used.
+If you have a stateful pool with a running agent with a `WorkFolder` that matches your demand, your pipeline job is sent to that agent. If you aren't using stateful pools, or there's no agent running with that `WorkFolder`, a new agent is started and configured to use the designated `WorkFolder`. The directory specified is created if not present. If the path name for the `WorkFolder` is invalid, the default agent working folder is used.
 
 Set your agent work folder by configuring the `WorkFolder` demand in the `demands` section of your pipeline. If you're using an [attached data disk](configure-storage.md) and want your agent work folder on that disk, use `WorkFolder` and [specify a folder on the data disk as your agent working directory](configure-storage.md#use-the-data-disk-for-your-agent-working-directory).
 
@@ -77,7 +77,7 @@ If you have multiple images in your pool, you can configure your pipelines to us
 
 If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run by using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?&tabs=arm#choose-your-pools-image)). You can also order the [images in the images list](./configure-pool-settings.md#images) in the Azure portal by using drag and drop.
 
-In the following example, a pipeline is configured to run by using an image configured with an `ubuntu-24.04-gen2` alias.
+In the following example, a pipeline is configured to run on an image that's configured with an `ubuntu-24.04-gen2` alias.
 
 ```yml
 pool: 

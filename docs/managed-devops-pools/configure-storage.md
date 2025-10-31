@@ -1,13 +1,13 @@
 ---
 title: Configure storage
-description: Learn how to add an empty data disk to your agents in Azure Managed DevOps Pools.
+description: Learn how to add an empty data disk to your agents in Managed DevOps Pools.
 ms.date: 07/29/2025
 ms.topic: how-to
 ---
 
 # Configure storage
 
-Do you want more disk space for your agents? Azure Managed DevOps Pools supports attaching an empty data disk to the agents in your pool. When you attach a data disk, you can get more storage space without incurring the potentially greater cost of moving your virtual machine (VM) size to a more expensive size that has more built-in storage.
+Do you want more disk space for your agents? Managed DevOps Pools supports attaching an empty data disk to the agents in your pool. When you attach a data disk, you can get more storage space without incurring the potentially greater cost of moving your virtual machine (VM) size to a more expensive size that has more built-in storage.
 
 ## Attach an empty data disk
 
@@ -141,7 +141,7 @@ Configure the following properties for your attached data disk.
 
 | Property | Description |
 |----------|-------------|
-| Size (GiB) | Specify the size of your data disk. The maximum size depends on the storage type. For more information, see [Disk type comparison](/azure/virtual-machines/disks-types#disk-type-comparison).|
+| Size (GiB) or `diskSizeGiB` | Specify the size of your data disk. The maximum size depends on the storage type. For more information, see [Disk type comparison](/azure/virtual-machines/disks-types#disk-type-comparison).|
 | Caching type | Specify the caching type for your disk. Select from **Default**, **None**, **ReadOnly**, or **ReadWrite**. The default for data disks that support caching is **ReadOnly**. For more information, see [Virtual machine and disk performance](/azure/virtual-machines/disks-performance). |
 | Storage type | Select from the following storage types: **Standard_LRS** (default), **Premium_LRS**, **StandardSSD_LRS**, **Premium_ZRS**, or **StandardSSD_ZRS**. For more information about these types, see [SKU types](/rest/api/storagerp/srp_sku_types) and [Azure managed disk types](/azure/virtual-machines/disks-types). |
 | Drive letter | If you have any Windows agent images in your pool, choose a drive letter for your disk. If you don't specify a drive letter, `F` is used for VM sizes with a temporary disk. Otherwise, `E` is used. The drive letter must be a single letter except `A`, `C`, `D`, or `E`. If you're using a VM size without a temporary disk and want `E` as your drive letter, leave the **Drive Letter** field empty to get the default value of `E`. If you're configuring your storage by using an ARM template or an Azure CLI script, omit the drive letter parameter if you don't want a drive letter. |
@@ -152,7 +152,7 @@ To configure your agents to use a working directory on the data disk, specify a 
 
 #### [Windows](#tab/windows/)
 
-In the following example, the agent working directory on a Windows agent is configured to use a folder on an attached data disk that with the drive letter `F`.
+In the following example, the agent working directory on a Windows agent is configured to use a folder on an attached data disk with the drive letter `F`.
 
 ```yml
 pool:

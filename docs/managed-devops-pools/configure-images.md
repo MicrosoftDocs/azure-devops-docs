@@ -1,20 +1,21 @@
 ---
 title: Configure images
-description: Learn how to configure agent images for Azure Managed DevOps Pools.
+description: Learn how to configure agent images for Managed DevOps Pools.
 ms.date: 10/02/2025
 ms.topic: how-to
 ---
 
 # Configure Managed DevOps Pools images
 
-Azure Managed DevOps Pools provides you with several options for virtual machine (VM) images for running pipelines in your pool. You can create your pool by using selected Azure Marketplace VM images, use your own custom Azure Compute Gallery images, or use the same images as Azure Pipelines Microsoft-hosted agents.
+Managed DevOps Pools provides you with several options for virtual machine (VM) images for running pipelines in your pool. You can create your pool by using selected marketplace VM images, use your own custom Azure Compute Gallery images, or use the same images as Azure Pipelines Microsoft-hosted agents.
 
 > [!IMPORTANT]
 > [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
 
 You can configure a pool with a single image or multiple images. When your pool has multiple images, your pipelines specify the image they want to run on by using [aliases](#use-multiple-images-per-pool-with-aliases).
 
-### <a name = "choose-your-pools-image"></a> Select your pool's image
+<a name = "choose-your-pools-image"></a>
+## Select your pool's image
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -68,7 +69,7 @@ Each image can have the following properties:
 | Property | Description |
 |----------|-------------|
 | `aliases` | An optional list of aliases. You can refer to the image by using the aliases instead of the full resource ID of the image. |
-| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected Azure Marketplace images](#selected-marketplace-images). |
+| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
 | `wellKnownImageName` | The alias of the Azure Pipelines image. Required when using [Azure Pipelines images](#azure-pipelines-images). |
 | `buffer` | When you enable [standby agents](./configure-scaling.md#standby-agent-mode), the `buffer` value designates which percentage of standby agents to allocate to this image. The total of all image `buffer` values must equal 100. |
 
@@ -138,7 +139,7 @@ Each image can have the following properties:
 | Property | Description |
 |----------|-------------|
 | `aliases` | An optional list of aliases. You can refer to the image by using the aliases instead of the full resource ID of the image. |
-| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected Azure Marketplace images](#selected-marketplace-images). |
+| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
 | `wellKnownImageName` | The alias of the Azure Pipelines image. Required when using [Azure Pipelines images](#azure-pipelines-images). |
 | `buffer` | When you enable [standby agents](./configure-scaling.md#standby-agent-mode), the `buffer` value designates which percentage of standby agents to allocate to this image. The total of all image `buffer` values must equal 100. |
 
@@ -209,7 +210,7 @@ Each image can have the following properties:
 | Property | Description |
 |----------|-------------|
 | `aliases` | An optional list of aliases. You can refer to the image by using the aliases instead of the full resource ID of the image. |
-| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected Azure Marketplace images](#selected-marketplace-images). |
+| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
 | `wellKnownImageName` | The alias of the Azure Pipelines image. Required when using [Azure Pipelines images](#azure-pipelines-images). |
 | `buffer` | When you enable [standby agents](./configure-scaling.md#standby-agent-mode), the `buffer` value designates which percentage of standby agents to allocate to this image. The total of all image `buffer` values must equal 100. |
 
@@ -247,7 +248,7 @@ If you have multiple images in your pool, and don't use demands in your pipeline
 You can select from the following types of images:
 
 * [Azure Pipelines images](#azure-pipelines-images): Select from the same images that Microsoft-hosted agents use.
-* [Selected Azure Marketplace images](#selected-marketplace-images): Select from a curated set of Microsoft-published Azure Marketplace VM images.
+* [Selected marketplace images](#selected-marketplace-images): Select from a curated set of Microsoft-published marketplace VM images.
 * [Azure Compute Gallery images](#azure-compute-gallery-images): Select from your own Azure Compute Gallery images. You must assign the **Reader** role to the `DevOpsInfrastructure` service principal for the Azure Compute Gallery images you want to use. For more information, see [Grant Reader role access to the `DevOpsInfrastructure` service principal](#grant-reader-role-access-to-the-devopsinfrastructure-service-principal).
 
 ## Azure Pipelines images
@@ -321,18 +322,18 @@ Each image includes the following installed software:
 > [!IMPORTANT]
 > [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
 
-## <a name = "selected-marketplace-images"></a> Selected Azure Marketplace images
+## Selected marketplace images
 
-Managed DevOps Pools provides a curated set of Microsoft-published Azure Marketplace VM images to use in your pools.
+Managed DevOps Pools provides a curated set of Microsoft-published marketplace VM images to use in your pools.
 
-:::image type="content" source="./media/configure-images/image-library-marketplace-images.png" alt-text="Screenshot that shows selected Azure Marketplace images.":::
+:::image type="content" source="./media/configure-images/image-library-marketplace-images.png" alt-text="Screenshot that shows selected marketplace images.":::
 
 #### [Azure portal](#tab/azure-portal/)
 
 Choose **Selected marketplace images**. Select the desired image, and then select the desired version. To always use the latest version of an image, select **latest**.
 #### [ARM template](#tab/arm/)
 
-To specify a selected Azure Marketplace image, provide the resource ID of the image by using the `resourceId` property.
+To specify a selected marketplace image, provide the resource ID of the image by using the `resourceId` property.
 
 ```json
 "images": [
@@ -344,7 +345,7 @@ To specify a selected Azure Marketplace image, provide the resource ID of the im
 
 #### [Azure CLI](#tab/azure-cli/)
 
-To specify a selected Azure Marketplace image, provide the resource ID of the image by using the `resourceId` property.
+To specify a selected marketplace image, provide the resource ID of the image by using the `resourceId` property.
 
 ```json
 "images": [
@@ -356,7 +357,7 @@ To specify a selected Azure Marketplace image, provide the resource ID of the im
 
 #### [Bicep](#tab/bicep/)
 
-To specify a selected Azure Marketplace image, provide the resource ID of the image by using the `resourceId` property.
+To specify a selected marketplace image, provide the resource ID of the image by using the `resourceId` property.
 
 ```bicep
 images: [
@@ -386,7 +387,7 @@ Select **Azure Compute Gallery images** to specify an image from any gallery ava
 > [!IMPORTANT]
 > Managed DevOps Pools supports only [generalized](/azure/virtual-machines/generalize) Azure Compute Gallery images.
 >
-> Managed DevOps Pools doesn't support Azure Compute Gallery images that you create by using a paid base image. If you receive an error like, "Image Base isn't supported, because it's a paid image. Provide a different image that's free," select a different Azure Compute Gallery image based on a VM that you create by using a [free pricing plan](/marketplace/purchase-vm-in-azure-portal#purchase-a-vm-using-the-marketplace-experience) for the base image.
+> Managed DevOps Pools doesn't support Azure Compute Gallery images that you create by using a paid base image. If you receive an error like, "Image Base is not supported, since it's a paid image. Please provide a different image that is free," select a different Azure Compute Gallery image based on a VM that you create by using a [free pricing plan](/marketplace/purchase-vm-in-azure-portal#purchase-a-vm-using-the-marketplace-experience) for the base image.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -471,7 +472,7 @@ Add any desired aliases to the **Alias** list, and then select **Save**.
 
 :::image type="content" source="./media/configure-images/add-alias-pane.png" alt-text="Screenshot that shows the Alias pane."
 
-The following example shows a pool with two Azure Pipelines images and one selected Azure Marketplace image. The Azure Pipeline images show their default aliases, and the selected Azure Marketplace image shows a single configured alias named `ubuntu-24.04-gen2`.
+The following example shows a pool with two Azure Pipelines images and one selected marketplace image. The Azure Pipeline images show their default aliases, and the selected marketplace image shows a single configured alias named `ubuntu-24.04-gen2`.
 
 :::image type="content" source="./media/configure-images/multiple-images-with-aliases.png" alt-text="Screenshot that shows a pool with multiple images with aliases."
 
@@ -564,7 +565,7 @@ pool:
 Managed DevOps Pools agent images are retired when the image's operating system reaches the end of its support lifecycle. Images based on older versions of operating systems might be retired when images based on new versions of the operating systems are released.
 
 - [Azure Pipelines images](#azure-pipelines-images) offers the same images and follows a similar deprecation schedule as [Microsoft-hosted agents](../pipelines/agents/hosted.md#software).
-- [Selected Azure Marketplace images](#selected-marketplace-images) are typically retired when the image's operating system reaches the end of its support lifecycle.
+- [Selected marketplace images](#selected-marketplace-images) are typically retired when the image's operating system reaches the end of its support lifecycle.
 
 ### Image deprecation schedule
 
@@ -578,13 +579,13 @@ Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019**
 - Creation of new pools that use the **Azure Pipelines – Windows Server 2019** image will be disabled starting November 1, 2025, but existing pools on these images will continue to run until December 31, 2025.
 - On December 31, 2025, use of the **Azure Pipelines – Windows Server 2019** image will be disabled. Agents that use this image don't provision and pipelines don't run.
 
-To keep your pools running if you use the **Azure Pipelines – Windows Server 2019** image, update to the **Azure Pipelines - Windows Server 2022** image. You can also use the Windows Server 2019 image from [selected Azure Marketplace images](./configure-images.md#selected-marketplace-images) or your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. The Azure Marketplace image doesn't include the preinstalled software from the Azure Pipelines image.
+To keep your pools running if you use the **Azure Pipelines – Windows Server 2019** image, update to the **Azure Pipelines - Windows Server 2022** image. You can also use the Windows Server 2019 image from [selected marketplace images](./configure-images.md#selected-marketplace-images) or your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. The marketplace image doesn't include the preinstalled software from the Azure Pipelines image.
 
 #### Ubuntu 20.04 image deprecation schedule
 
-[Ubuntu 20.04 LTS Standard Support ended May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare), and Managed DevOps Pools removed the Ubuntu 20.04 images from [selected Azure Marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Pipelines images](./configure-images.md#azure-pipelines-images).
+[Ubuntu 20.04 LTS Standard Support ended May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare), and Managed DevOps Pools removed the Ubuntu 20.04 images from [selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Pipelines images](./configure-images.md#azure-pipelines-images).
 
-The creation of new pools by using Ubuntu 20.04 selected Azure Marketplace images or Azure Pipelines images was disabled starting July 15, 2025. Starting August 30, 2025, pipelines that were previously configured to use these images are unsupported.
+The creation of new pools by using Ubuntu 20.04 selected marketplace images or Azure Pipelines images was disabled starting July 15, 2025. Starting August 30, 2025, pipelines that were previously configured to use these images are unsupported.
 
 To keep your pools that currently use Ubuntu 20.04 running, update your Ubuntu 20.04 images to Ubuntu 22.04 or 24.04 (recommended). For more information, see [Select your pool's image](./configure-images.md#choose-your-pools-image). If you have [multiple images](./configure-images.md#use-multiple-images-per-pool-with-aliases) in your pool, [update your aliases](./configure-images.md#configure-image-aliases) for your Ubuntu images so that your pipelines that require Ubuntu run by using the desired image.
 

@@ -8,14 +8,14 @@ ms.topic: how-to
 
 # Configure Managed DevOps Pools security settings
 
-Learn how to configure security settings for Azure Managed DevOps Pools. There are two ways to configure security settings:
+Learn how to configure security settings for Managed DevOps Pools. There are two ways to configure security settings:
 
 * When you create a pool by using the **Security** tab
 * After you create a pool by using the **Security** settings pane
 
 ## Configure organization access
 
-Be default, Managed DevOps Pools are configured for a single organization. Access to the pool is granted to all projects in the organization. You can optionally limit access to specific projects in the organization, and you can also grant access to other organizations.
+By default, pools that you create with Managed DevOps Pools are configured for all projects in a single organization. You can optionally limit access to specific projects in the organization, and you can also grant access to other organizations.
 
 * [Use pool with a single organization](#use-pool-with-a-single-organization)
 * [Use pool in multiple organizations](#use-pool-in-multiple-organizations)
@@ -24,11 +24,12 @@ If you configure your pool and grant access to all projects, the pool is added t
 
 To see the permissions required to configure Managed DevOps Pools in your organization and projects, see [Prerequisites: Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions).
 
-### <a name = "use-pool-with-a-single-organization"></a> Use a pool with a single organization
+<a name = "use-pool-with-a-single-organization"></a>
+### Use a pool with a single organization
 
 #### [Azure portal](#tab/azure-portal/)
 
-By default, Managed DevOps Pools is configured to use with a single Azure DevOps organization that you specify when you create the pool. When your pool is configured for a single organization, the organization name is displayed and configured in **Pool** settings.
+By default, Managed DevOps Pools is configured with a single Azure DevOps organization that you specify when you create the pool. When your pool is configured for a single organization, the organization name is displayed and configured in **Pool** settings.
 
 By default, the **Add pool to all projects** setting is set to **Yes**, and access to the Managed DevOps Pool is granted to all projects in the organization. To limit which projects in your organization can use the pool, select **No**, and then specify which projects should have access.
 
@@ -72,7 +73,7 @@ The `organizationProfile` section has the following properties.
 
 | Property | Description |
 |------|-------------|
-| `organizations` | A list of the organizations that can use your pool. The `url` entry specifies the URL of the organization. The `projects` entry is a list of project names that can use the pool (an empty list supports all projects in the organization). The `parallelism` entry specifies the number of agents that the organization can use. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
+| `organizations` | A list of the organizations that can use your pool. The `url` property specifies the URL of the organization. The `projects` property is a list of project names that can use the pool (an empty list supports all projects in the organization). The `parallelism` property specifies the number of agents that the organization can use. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
 | `permissionProfile` | This value specifies the permission you grant to the Azure DevOps pool when you create it. You can only set this value when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If you specify `specificAccounts`, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
 | `kind` | This value specifies the type of organization for the pool, and must be set to `Azure DevOps`. |
 
@@ -108,8 +109,8 @@ The `organizationProfile` section has the following properties.
 | Property | Description |
 |------|-------------|
 | `AzureDevOps` | This value is the name of the object defined in `organization-profile` and must be set to `Azure DevOps`. |
-| `organizations` | A list of the organizations that can use your pool. `openAccess` specifies whether Managed DevOps Pools configures [open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) for the pool during pool creation. The `url` entry specifies the URL of the organization. The `projects` entry is a list of project names that can use the pool (an empty list supports all projects in the organization). The `parallelism` entry specifies the number of agents that this organization can use. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
-| `permissionProfile` | This entry specifies the permission you grant to the Azure DevOps pool when you create it. You can only set this value when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If you specify `specificAccounts`, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
+| `organizations` | A list of the organizations that can use your pool. `openAccess` specifies whether Managed DevOps Pools configures [open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) for the pool during pool creation. The `url` property specifies the URL of the organization. The `projects` property is a list of project names that can use the pool (an empty list supports all projects in the organization). The `parallelism` property specifies the number of agents that this organization can use. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
+| `permissionProfile` | This property specifies the permission you grant to the Azure DevOps pool when you create it. You can only set this value when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If you specify `specificAccounts`, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
 
 #### [Bicep](#tab/bicep/)
 
@@ -141,13 +142,14 @@ The `organizationProfile` section has the following properties.
 
 | Property | Description |
 |------|-------------|
-| `organizations` | A list of the organizations that can use your pool. The `url` entry specifies the URL of the organization. The `projects` entry is a list of project names that can use the pool (an empty list supports all projects in the organization). The `parallelism` entry specifies the number of agents that this organization can use. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
-| `permissionProfile` | This entry specifies the permission you grant to the Azure DevOps pool when you create it. You can only set this value when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If `specificAccounts` is specified, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
+| `organizations` | A list of the organizations that can use your pool. The `url` property specifies the URL of the organization. The `projects` property is a list of project names that can use the pool (an empty list supports all projects in the organization). The `parallelism` property specifies the number of agents that this organization can use. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
+| `permissionProfile` | This property specifies the permission you grant to the Azure DevOps pool when you create it. You can only set this value when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If `specificAccounts` is specified, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
 | `kind` | This value specifies the type of organization for the pool, and must be set to `Azure DevOps`. |
 
 * * *
 
-### <a name = "use-pool-in-multiple-organizations"></a> Use a pool in multiple organizations
+<a name = "use-pool-in-multiple-organizations"></a>
+### Use a pool in multiple organizations
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -157,11 +159,11 @@ In the following example, the pool is configured to be available for the **Fabri
 
 :::image type="content" source="./media/configure-security/use-pool-multiple-organizations.png" alt-text="Screenshot that shows how to configure multiple organizations.":::
 
-If you receive an error like, "The sum of parallelism for all organizations must equal the max concurrency," ensure that the [Maximum agents](./configure-pool-settings.md#maximum-agents) count for the pool matches the sum of the **Parallelism** column.
+If you receive an error like `The sum of parallelism for all organizations must equal the max concurrency.`, ensure that the [Maximum agents](./configure-pool-settings.md#maximum-agents) count for the pool matches the sum of the **Parallelism** column.
 
 #### [ARM template](#tab/arm/)
 
-To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can only use it for two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can only use it with two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
 
 ```json
 "organizationProfile": {
@@ -194,7 +196,7 @@ az mdp pool create \
    # other parameters omitted for space
 ```
 
-To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can only use it for two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can only use it with two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
 
 ```json
 {
@@ -218,7 +220,7 @@ To configure your pool so that multiple organizations can use it, add more organ
 
 #### [Bicep](#tab/bicep/)
 
-To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can only use it for two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can only use it with two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
 
 ```bicep
 organizationProfile: {
@@ -248,7 +250,7 @@ organizationProfile: {
 To configure open access for pipelines, you must have the following permissions in addition to the permissions described in [Prerequisites - Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions):
 
 * If you're a [Project collection administrator](../organizations/security/look-up-project-collection-administrators.md), you don't need any additional permissions to configure open access.
-* If you're an [organization level pools administrator](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level), you must also be a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group) for each project that can access the pool.
+* If you're an [organization level pools administrator](../organizations/security/about-security-roles.md#agent-pool-security-roles-organization-or-collection-level), you must also be a [Project administrator](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group) on each project for which you want to grant open access.
 
 By default, you must explicitly authorize each pipeline definition to run in a self-hosted agent pool (like a pool created by using Managed DevOps Pools) before it runs for the first time in that pool.
 

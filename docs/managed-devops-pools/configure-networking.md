@@ -1,6 +1,6 @@
 ---
 title: Configure networking
-description: Learn how to configure networking for Azure Managed DevOps Pools.
+description: Learn how to configure networking for Managed DevOps Pools.
 ms.date: 10/27/2025
 ms.custom: sfi-image-nochange
 ms.topic: how-to
@@ -8,7 +8,7 @@ ms.topic: how-to
 
 # Configure Managed DevOps Pools networking
 
-You can configure Azure Managed DevOps Pools agents to run in an isolated virtual network, or in an existing virtual network. This article describes how to configure your pool to run agents in your virtual network.
+You can configure Managed DevOps Pools agents to run in an isolated virtual network, or in an existing virtual network. This article describes how to configure your pool to run agents in your virtual network.
 
 ## Add agents to your own virtual network
 
@@ -38,11 +38,12 @@ If you're using ExpressRoute, you need to allow writes by temporarily dropping o
 > [!IMPORTANT]
 > The pool and virtual network must be in the same region. Otherwise, you get an error similar to the following when you try to create the pool or update the network configuration: "Virtual network MDPVN is in region eastus, but pool mdpnonprodsub is in region australiaeast. These must be in the same region."
 
-### <a name = "grant-reader-and-network-contributor-access-to-devopsinfrastructure-service-principal"></a> Grant Reader and Network Contributor access to the DevOpsInfrastructure service principal
+<a name = "grant-reader-and-network-contributor-access-to-devopsinfrastructure-service-principal"></a>
+### Grant Reader and Network Contributor access to the DevOpsInfrastructure service principal
 
 Ensure the `DevOpsInfrastructure` principal has `Reader` and `Network Contributor` access on the virtual network.
 
-You can also add the following permission to a custom role:
+Instead of using built-in roles, you can create a custom role that has the following permissions:
 
 - `Microsoft.Network/virtualNetworks/*/read`
 - `Microsoft.Network/virtualNetworks/subnets/join/action`
@@ -166,7 +167,8 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 >
 > For more information, see [Things to consider before you apply locks to your Azure resources](/azure/azure-resource-manager/management/lock-resources#considerations-before-applying-your-locks).
 
-## <a name = "restricting-outbound-connectivity"></a> Restrict outbound connectivity
+<a name = "restricting-outbound-connectivity"></a>
+## Restrict outbound connectivity
 
 If you have systems in place on your network (network security group, firewalls, etc.) that restrict outbound connectivity, you need to allowlist certain endpoints to fully support Managed DevOps Pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints you need for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
 
