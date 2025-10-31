@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 08/12/2025
+ms.date: 10/30/2025
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -627,7 +627,7 @@ To use this feature, you must:
     | southeastasia       | 135.171.33.48/28        |
     | switzerlandnorth    | 74.161.82.192/28        |
     | uksouth             | 131.145.107.64/28       |
-    | westcentralus       | 128.24.189.20           |
+    | westus3             | 57.154.125.208/28       |
 
 > [!NOTE]
 > As of `api-version 2025-01-21`, if you use this feature you can only use a single identity on the pool. Support for multiple identities will be added soon.
