@@ -4,6 +4,7 @@ description: See Sprint 229 feature updates for Azure DevOps, including next ste
 author: ckanyika
 ms.author: glmorale
 ms.date: 10/26/2023
+ms.topic: release-notes
 ---
 
 # Azure DevOps - Sprint 229 Update

@@ -3,7 +3,7 @@ title: Using device bound Entra tokens in Azure DevOps
 author: ramrajesh
 ms.author: rajr
 ms.date: 04/07/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description:  Using device bound Entra tokens in Azure DevOps

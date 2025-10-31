@@ -4,6 +4,7 @@ description: See the Sprint 175 feature updates for Azure Boards, including next
 author: sid-ah
 ms.author: simerzou
 ms.date: 09/10/2020
+ms.topic: release-notes
 ---
 
 # Azure Boards - Sprint 175 Update

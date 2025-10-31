@@ -3,7 +3,7 @@ title: Security Overview
 author: ncouraud
 ms.author: nicour
 ms.date: 11/8/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Provide a Security Overview dashboard for Advanced Security

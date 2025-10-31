@@ -4,6 +4,7 @@ description: See the Sprint 256 feature updates for Azure Boards, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 5/19/2025
+ms.topic: release-notes
 ---
 
 # Azure Boards - Sprint 256 Update

@@ -4,6 +4,7 @@ description: See the Sprint 241 feature updates for Azure Pipelines, including n
 author: ckanyika
 ms.author: glmorale
 ms.date: 7/3/2024
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 241 Update

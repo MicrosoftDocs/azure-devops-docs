@@ -3,7 +3,7 @@ title: Azure DevOps Future Features
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/11/2022
-ms.topic: article
+ms.topic: how-to
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Azure DevOps Future Features

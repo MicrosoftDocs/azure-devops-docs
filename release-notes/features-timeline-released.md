@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 09/25/2025
+ms.date: 10/31/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="4"><a href="2025/sprint-263-update.md" data-raw-source="[14 October 2025](2025/sprint-263-update.md)"> October 14 2025</a></td>
+    <td>Improved secret rotation support for Azure service connection</td><td>Pipelines</td><td>Future</td></tr>
+    <td>AzureAppServiceManageV0 versioned extension support (preview)</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Ability to disable release pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Tester column renamed in test points to Current Tester</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="6"><a href="2025/sprint-262-update.md" data-raw-source="[25 September 2025](2025/sprint-262-update.md)"> September 25 2025</a></td>
     <td>New state filter available for Coverage in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>

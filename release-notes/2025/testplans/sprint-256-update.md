@@ -4,6 +4,7 @@ description: See the Sprint 256 feature updates for Azure Test Plans, including 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 5/19/2025
+ms.topic: release-notes
 ---
 
 # Azure Test Plans - Sprint 256 Update

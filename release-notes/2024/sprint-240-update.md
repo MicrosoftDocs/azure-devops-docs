@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 6/14/2024
 description: Setting to disable creation of TFVC repositories
+ms.topic: concept-article
 ---
 # Setting to disable creation of TFVC repositories
 

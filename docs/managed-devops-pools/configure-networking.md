@@ -3,6 +3,7 @@ title: Configure networking
 description: Learn how to configure networking for Azure Managed DevOps Pools.
 ms.date: 10/27/2025
 ms.custom: sfi-image-nochange
+ms.topic: how-to
 ---
 
 # Configure Managed DevOps Pools networking
