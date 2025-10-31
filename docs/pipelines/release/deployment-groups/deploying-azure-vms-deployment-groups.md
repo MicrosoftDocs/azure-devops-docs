@@ -11,12 +11,12 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-In earlier versions of Azure Pipelines, deploying applications to multiple servers required significant planning and maintenance. Windows PowerShell remoting had to be enabled manually, specific ports needed to be opened, and deployment agents had to be installed on each server. Managing roll-out deployments also required manual intervention. These challenges have been greatly simplified with the introduction of  [Deployment Groups](/vsts/build-release/concepts/definitions/release/deployment-groups/).
+In earlier versions of Azure Pipelines, deploying applications to multiple servers required significant planning and maintenance. Windows PowerShell remoting had to be enabled manually, specific ports needed to be opened, and deployment agents had to be installed on each server. Managing roll-out deployments also required manual intervention. These challenges are simplified with the introduction of  [Deployment Groups](/vsts/build-release/concepts/definitions/release/deployment-groups/).
 
 A deployment group installs a deployment agent on each target server in the group and enables the release pipeline to gradually deploy the application across those servers. You can create multiple pipelines for roll-out deployments, allowing phased delivery of application updates to different user groups.
 
 > [!NOTE]
-> Deployment groups are used in Classic pipelines. If you are using YAML pipelines, see [Environments](../../process/environments.md).
+> Deployment groups are used in Classic pipelines. If you're using YAML pipelines, see [Environments](../../process/environments.md).
 
 ## Prerequisites
 
@@ -31,17 +31,17 @@ This section guides you through setting up your Azure resources using an ARM tem
 
 1. Select the [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FramiMSFT%2FDeploymentTemplate%2Fmain%2Fazurewebdeploy.json) button to initiate the deployment of your resources in Azure.
 
-1. Fill in the required information, then select **Review + create**. You can use any allowed combination of usernames and passwords, as they won’t be used again in this tutorial. The **Env Prefix Name** is added to all resource names to ensure global uniqueness. Use something personal or random. If you encounter a naming conflict during validation or creation, try changing this value and redeploying. Provisioning typically takes 10–15 minutes.
+2. Fill in the required information, then select **Review + create**. You can use any allowed combination of usernames and passwords, as they aren't used again in this tutorial. The **Env Prefix Name** is added to all resource names to ensure global uniqueness. Use something personal or random. If you encounter a naming conflict during validation or creation, try changing this value and redeploying. Provisioning typically takes 10–15 minutes.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/provision-resources-arm-azure.png" alt-text="A screenshot showing how to set up your Azure resources in Azure.":::
 
 1. After validation completes, select **Create** to deploy your resources.
 
-1. Once deployment finishes, go to your resource group in the Azure portal to review the generated resources. Select the DB server VM with **sqlSrv** in its name to view its details.
+2. Once deployment finishes, go to your resource group in the Azure portal to review the generated resources. Select the DB server VM with **sqlSrv** in its name to view its details.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/arm-deployment-view-resources.png" alt-text="A screenshot displaying the newly created resources in Azure.":::
 
-1. Copy the **DNS name** as you’ll need it in a later step.
+3. Copy the **DNS name** as you need it in a later step.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/arm-vm-overview.png" alt-text="A screenshot displaying the DB server VM in Azure.":::
 
@@ -55,7 +55,7 @@ A deployment group is a collection of machines, each with a deployment agent ins
 
 3. Select **Add a deployment group**.
 
-4. Enter **Release** as the **Deployment group name**, then select **Create**. A registration script will be generated. You can use this script to register target servers and install the deployment agent manually. However, in this tutorial, the target servers are automatically registered as part of the release pipeline.
+4. Enter **Release** as the **Deployment group name**, then select **Create**. A registration script is generated. You can use this script to register target servers and install the deployment agent manually. However, in this tutorial, the target servers are automatically registered as part of the release pipeline.
 
 ## Create a personal access token
 
@@ -68,7 +68,7 @@ A deployment group is a collection of machines, each with a deployment agent ins
     1. **Agent Pools** -> **Read & manage**
     1. **Deployment Groups** -> **Read & manage**.
 
-1. Select **Create** when you're done, and copy your PAT as you'll need it in the following section.
+1. Select **Create** when you're done, and copy your PAT as you need it in the following section.
 
 ## Configure the release pipeline
 
@@ -78,7 +78,7 @@ The Classic release pipeline template includes one agent job, the **Agent phase*
 
 1. Navigate to your Azure DevOps project and select **Pipelines** > **Releases**. 
 
-1. Select the **Deployment Groups** release definiton, then select **Edit**.
+1. Select the **Deployment Groups** release definition, then select **Edit**.
 
 1. Select the **Tasks** tab to view the deployment tasks in your pipeline.
 
@@ -86,11 +86,11 @@ The Classic release pipeline template includes one agent job, the **Agent phase*
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-agent-phase.png" alt-text="A screenshot displaying the agent phase in the Classic release pipeline.":::
 
-1. Select the **Azure Resource Group Deployment** task, select the **Azure subscription** you used earlier to create your resources, then select **Authorize** to authorize the connection. Once authorized, select the **Resource group** you created for this tutorial.
+1. Select the **Azure Resource Group Deployment** task. Select the **Azure subscription** you used earlier to create your resources, then select **Authorize** to authorize the connection. Once authorized, select the **Resource group** you created for this tutorial.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-resource-group-deployment-task.png" alt-text="A screenshot displaying how to configure the resource group in the deployment task.":::
 
-1. This task will run on virtual machines in Azure and must be able to connect back to the pipeline to complete the deployment group requirements. To secure the connection, a service connection must be set up using the Personal Access Token (PAT) you created earlier. Scroll down within the same task, and select **New** under **Azure Pipelines service connection**.
+1. This task runs on virtual machines in Azure and must be able to connect back to the pipeline to complete the deployment group requirements. To secure the connection, a service connection must be set up using the Personal Access Token (PAT) you created earlier. Scroll down within the same task, and select **New** under **Azure Pipelines service connection**.
 
 1. In the **New service connection** panel, enter the **Connection URL** of your Azure DevOps organization `https://dev.azure.com/organizationName`. Paste in the **Personal Access Token** you created earlier, specify a **Service connection name**, and check the **Grant access permission to all pipelines** box. Select **Verify and save** when you're done.
 
@@ -130,27 +130,27 @@ The Classic release pipeline template includes one agent job, the **Agent phase*
 
 ## Create a release and deploy application
 
-Now that the release definition is configured and saved, you can proceed to create a release to deploy your web app to Azure. However, before starting the release, you have to make sure the build pipeline has run at least once. This generates the pipeline artifact required for deployment. If you try to run the release pipeline before the build pipeline, the *Artifacts* section in the release panel will be empty. Follow the steps below to run your pipeline, generate a pipeline artifact then create a new release:
+Now that the release definition is configured and saved, you can proceed to create a release to deploy your web app to Azure. However, before starting the release, ensure the build pipeline runs at least once. This generates the pipeline artifact required for deployment. If you try to run the release pipeline before the build pipeline, the *Artifacts* section in the release panel is empty. Follow these steps to run your pipeline, generate a pipeline artifact then create a new release:
 
 1. From your Azure DevOps project, select **Pipeline**, and then select the **Deployment Groups** build pipeline.
 
-1. Select **Run pipeline**. In the pipeline run panel, select your **Agent specification**, then select **Run**.
+2. Select **Run pipeline**. In the pipeline run panel, select your **Agent specification**, then select **Run**.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-agent-specification-run.png" alt-text="A screenshot displaying how to configure the pipeline run.":::
 
-1. After the pipeline completes successfully, it will generate a pipeline artifact. You can view it from the pipeline summary window:
+3. After the pipeline completes successfully, it will generate a pipeline artifact. You can view it from the pipeline summary window:
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-pipeline-artifact.png" alt-text="A screenshot displaying the generated pipeline artifact.":::
 
-1. Now go to **Pipelines** > **Release**, select your release definition, and then select **Create release** to start the deployment pipeline.
+4. Now go to **Pipelines** > **Release**, select your release definition, and then select **Create release** to start the deployment pipeline.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-create-release.png" alt-text="A screenshot displaying how to create a new release.":::
 
-1. Select **Create** when you're done then select the pipeline run to open the overview. You should see your pipeline *In progress*. Click on the stage to view the detailed deployment logs.
+5. Select **Create** when you're done then select the pipeline run to open the overview. You should see your pipeline *In progress*. Select on the stage to view the detailed deployment logs.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-release-overview.png" alt-text="A screenshot displaying the release pipeline overview.":::
 
-1. In the summary window, you can see the status of each phase of the deployment:
+6. In the summary window, you can see the status of each phase of the deployment:
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-release-summary.png" alt-text="A screenshot displaying the release summary.":::
 
@@ -168,7 +168,7 @@ Make sure that the database was successfully created during the resource deploym
 sqlcmd -S <server-name> -U <username> -P <password> -Q "SELECT name FROM sys.databases"
 ```
 
-If your database is not present in the list, you can create a new one using the following command:
+If your database isn't present in the list, you can create a new one using the following command:
 
 ```
 sqlcmd -S <server-name> -U <username> -P <password> -Q "CREATE DATABASE [YourDatabaseName]"
@@ -176,7 +176,7 @@ sqlcmd -S <server-name> -U <username> -P <password> -Q "CREATE DATABASE [YourDat
 
 2. Verify your SQL Server Authentication:
 
-Make sure the SQL Server Authentication is enabled, your SQL Server must be configured to allow both SQL and Windows Authentication (Mixed Mode). To enable this:
+Make sure the SQL Server Authentication is enabled. Your SQL Server must be configured to allow both SQL and Windows Authentication (Mixed Mode). To enable this:
 
 a. Connect using SSMS or sqlcmd
     
@@ -200,7 +200,7 @@ net start MSSQLSERVER
 
 - **Some of my agents are offline even though the agent is running on my VM**
 
-If one or more of your agents are showing as offline, you can try a couple of things. First, log in to the VM where the agent is running and run the following command to check if your VM is resolving to the same set of IPs.
+If one or more of your agents are showing as offline, you can try a couple of things. First, sign in to the VM where the agent is running and run the following command to check if your VM is resolving to the same set of IPs.
 
 ```
 nslookup dev.azure.com
@@ -222,7 +222,7 @@ This tutorial created an Azure DevOps project and deployed resources in Azure. I
 Navigate to your **Project settings** > **Overview** > **Delete**.
 
 1. Delete the Azure Resource Group
-All Azure resources created during this tutorial were placed in the same resource group. Deleting the resource group will remove all associated resources. You can do this via the Azure portal or CLI:
+All Azure resources created during this tutorial were placed in the same resource group. Deleting the resource group removes all associated resources. You can do this via the Azure portal or CLI:
 
 - **Azure CLI**
 
