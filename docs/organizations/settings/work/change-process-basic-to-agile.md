@@ -20,7 +20,7 @@ When you create a new project in Azure DevOps, you choose a process to tailor it
 The Agile process has several advantages.
 
 - **More work item types.** In the Agile process, you can create work items specifically for tracking code defects or *bugs*. The separate work item type lets you manage bugs independently from other work items like user stories and tasks.
-- **More workflow states.** Agile has more and different workflow states than Basic, such as **Active** and **Resolved**. These states help you align with Agile principles and manage work items more effectively.
+- **More workflow states.** Agile has more and different workflow states, such as **Active** and **Resolved**. These states help you align with Agile principles and manage work items more effectively.
 - **More portfolio backlogs.** Agile provides access to both **Epic** and **Feature** portfolio backlogs. Portfolio backlogs let you organize and prioritize work items at a higher level, making it easier to plan and manage your overall project.
 - **Customizable inherited process.** You can customize and adopt an inherited process based on Agile principles. If your organization requires Agile, an customized Agile process lets you tailor the process to your team's needs while ensuring compliance with Agile practices.
 
@@ -30,11 +30,11 @@ You can switch between processes for existing projects. This article describes h
 
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
-## Learn about the processes
+## Learn about the Agile process
 
-Before you change your process, you should learn about the new process you're switching to. The Basic and Agile processes have the same **Task** and **Epic** work item types, but most of the values for the **State** and **Reason** fields are different. The following chart shows the different work item types and workflows between the Basic and Agile processes.
+Before you change your process, you should learn about the new process you're switching to. The Basic and Agile processes have some of the same work item types, like **Task** and **Epic**, but most values for the **State** and **Reason** fields are different. The following chart shows the different work item types and workflows between the Basic and Agile processes.
 
-|  Process | Work item types | Workflow |
+| Process | Work item types | Workflow |
 |------|---------|---------|
 |**Basic** | ![Basic work item types](../../../boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)|![basic workflow](../../../boards/get-started/media/track-issues/basic-process-workflow.png)|
 |**Agile** | ![Agile work item types](media/scrum-to-agile/agile-process-plan-wits.png)|![Agile workflow](../../../boards/get-started/media/about-boards/agile-process-workflow.png)|
@@ -55,11 +55,11 @@ To change your project process, select **Organization settings** from the left n
 
 To change your project process, select **Collection settings** from the left navigation menu of your Azure DevOps organization, and then select **Process** under **Boards**.
 
+:::image type="content" source="../../../media/settings/open-process-page-basic-server.png" alt-text="Screenshot of highlighted Process tab.":::
+
 ::: moniker-end
 
 1. On the **All processes** page, select **Basic**.
-
-   :::image type="content" source="../../../media/settings/open-process-page-basic.png" alt-text="Screenshot of highlighted Process tab.":::
 
 1. On the **Basic** page, select the **Projects** tab.
 
@@ -92,13 +92,16 @@ To update the board column-to-state mapping, follow these steps. For more inform
 
    :::image type="content" source="media/change-process/kanban-stories-column-settings-to-correct.png" alt-text="Screenshot of Column dialog with settings to correct.":::
 
-1. Rename each of the flagged columns and choose the correct column-to-state mapping. Add columns as needed. When you finish, select **Save**. For more information, see [Manage columns on your board](../../../boards/boards/add-columns.md).
+1. Rename each of the columns to a valid Agile state name under **Column name**, and choose the correct column-to-state mapping under **State mapping**. For example, rename **To Do** to **New** and change the state mapping to **New**.
 
-You can customize boards to display intermediate columns. For each column added, you must choose a valid workflow state for the work item types displayed on the board. For more information, see [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md).
+   After you correct all columns, select **Save**. For more information, see [Manage columns on your board](../../../boards/boards/add-columns.md).
+
+>[!NOTE]
+>You can customize boards to add intermediate columns or rearrange columns as needed. For each column added, you must choose a valid workflow state for the work item type to display on the board. For more information, see [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md).
 
 ## Update work items
 
-Update existing work items to use the new work item types and states. For more information, see [Bulk add and modify work items in Excel](../../../boards/boards/add-columns.md).
+Update existing backlog work items to use the new work item types and states. For more information about bulk editing work items, see [Bulk edit work items](../../../boards/backlogs/bulk-modify-work-items.md) and [Bulk add and modify work items in Excel](../../../boards/boards/add-columns.md).
 
 1. [Create a query](../../../boards/queries/using-queries.md) to get a list of all work items in the project.
 
@@ -116,13 +119,13 @@ Update existing work items to use the new work item types and states. For more i
 
    :::image type="content" source="media/change-process/change-type-to-user-story.png" alt-text="Screenshot of the Change type dialog.":::
 
-   The new work item type **User story** doesn't include the states **To Do** or **Doing**. When the work item type and state are mismatched, errors appear on the list and you can't save your changes.
+   The work item type **User story** doesn't include the states **To Do** or **Doing**. When the work item type and state are mismatched, errors appear on the list and you can't save your changes.
 
    :::image type="content" source="media/change-process/error-mismatch-type-state.png" alt-text="Screenshot showing error state of changed work item type.":::
 
 1. Shift-select to highlight all erroring work items of the same state, such as **Doing**, select the **More actions** icon next to one of the items, and select **Edit** from the context menu.
 
-1. On the **Edit work items** screen, select the **State** field, select **Active** for the value, and then select **OK**. For more information, see [Bulk edit work items](../../../boards/backlogs/bulk-modify-work-items.md).
+1. On the **Edit work items** screen, select the **State** field, select a valid state such as **Active** for the value, and then select **OK**.
 
    :::image type="content" source="media/change-process/edit-doing-work-item-state.png" alt-text="Screenshot of editing a work item state.":::
 
@@ -134,15 +137,15 @@ Update existing work items to use the new work item types and states. For more i
 
 1. Go to your team backlog and review the user stories.
 
-1. If you want to change any user stories to bugs, select the **More actions** icon next to the item, select **Change type**, select **Bug**, and then select **OK**.
+1. If you want to change any user stories to bugs, select the **More actions** icon next to the user story, select **Change type**, select **Bug**, and then select **OK**.
 
    :::image type="content" source="media/change-process/backlog-basic-to-agile.png" alt-text="Screenshot of team backlog.":::
 
-1. If you want to show and manage bugs on backlogs and boards along with user stories, select the **Settings** icon, scroll down to the **Working with bugs** section, select **Bugs are managed with requirements**, and select **Save**. Bugs now appear along with user stories on your team backlog and board. For more information, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
+1. If you want to show and manage bugs along with user stories on backlogs and boards, select the **Settings** icon, scroll down to the **Working with bugs** section, select **Bugs are managed with requirements**, and select **Save**. Bugs now appear along with user stories on your team backlog and board. For more information, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
 
 1. Select **View as Board** to go to your team board and verify that the column settings are valid and all user stories and bugs appear correctly.
 
-    :::image type="content" source="media/change-process/board-user-story.png" alt-text="Screenshot of board columns.":::
+   :::image type="content" source="media/change-process/board-user-story.png" alt-text="Screenshot of board columns.":::
 
 ## Related content
 
