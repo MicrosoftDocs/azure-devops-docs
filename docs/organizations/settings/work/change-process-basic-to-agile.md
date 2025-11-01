@@ -32,7 +32,7 @@ You can switch between processes for existing projects. This article describes h
 
 ## Learn about the processes
 
-Before you change your process, you should learn about the new process you're switching to. The Basic and Agile processes have the same **Task** and **Epic** work item types, but most of the values for the **State** and **Reason** fields are different. The following chart shows the different work item types and workflows in the Basic and Agile processes.
+Before you change your process, you should learn about the new process you're switching to. The Basic and Agile processes have the same **Task** and **Epic** work item types, but most of the values for the **State** and **Reason** fields are different. The following chart shows the different work item types and workflows between the Basic and Agile processes.
 
 |  Process | Work item types | Workflow |
 |------|---------|---------|
@@ -98,7 +98,7 @@ You can customize boards to display intermediate columns. For each column added,
 
 ## Update work items
 
-Next, update existing work items to use the new work item types and states. For more information, see [Bulk add and modify work items in Excel](../../../boards/boards/add-columns.md).
+Update existing work items to use the new work item types and states. For more information, see [Bulk add and modify work items in Excel](../../../boards/boards/add-columns.md).
 
 1. [Create a query](../../../boards/queries/using-queries.md) to get a list of all work items in the project.
 
