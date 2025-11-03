@@ -187,6 +187,53 @@ If you don't allowlist these endpoints, machines might come online and might eve
 - `download.agent.dev.azure.com`: The Azure DevOps agent's content delivery network (CDN) location, used to download the Azure DevOps agent (formerly `vstsagentpackage.azureedge.net` - for more information, see [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/)).
 - `dev.azure.com`: Required to handle communication with Azure DevOps.
 
+### Required endpoints for Linux machines
+
+These endpoints are required to spin up Ubuntu machines, but aren't necessary if a pool is only using Windows. When you set up the Azure DevOps task agent, required packages are added and an `apt-get` command is run. This process fails if the following endpoints aren't allowlisted.
+
+- `azure.archive.ubuntu.com`: Provisioning Linux machines. This endpoint is HTTP (port 80), not HTTPS (port 443).
+- `www.microsoft.com`: Provisioning Linux machines.
+- `security.ubuntu.com`: Provisioning Linux machines.
+- `packages.microsoft.com`: Provisioning Linux machines.
+- `ppa.launchpad.net`: Provisioning some specific Linux distributions.
+- `dl.fedoraproject.org`: Provisioning certain Linux distributions.
+
+### Required endpoints for some Azure DevOps features
+
+These optional endpoints are required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization that hosts your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`.
+
+- `*.services.visualstudio.com`
+- `*.vsblob.visualstudio.com`: Used for both uploading and consuming artifacts.
+- `*.vssps.visualstudio.com`: Used for authentication with Azure DevOps for certain features.
+- `*.visualstudio.com`
+
+> [!NOTE]
+> The previous entries are the minimum domains required. If you have any issues, see the full list of required domains at [Azure DevOps allowed IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md).
+
+### Azure-related endpoints
+
+Azure virtual machines (VMs) might route traffic to certain Azure features through your subnet. For these requests, you can route requests directly through Azure, or enable access through your network.
+
+1. [Configure Azure traffic to run through service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview):
+
+   You can route traffic directly through Azure to avoid adding throughput to your network security groups or firewalls. You don't need to allowlist the domains listed in the following option.
+
+   For example, you can use the [data disk](./configure-storage.md) feature to involve network calls to Azure Storage. When you enable **Microsoft.Storage** service endpoint on your network, traffic routes directly through Azure, which avoids your network rules and reduces load.
+
+1. To avoid routing traffic through service endpoints, allowlist this domain for a specific purpose:
+
+   - `md-*.blob.storage.azure.net`: Required to [configure a data disk](./configure-storage.md).
+
+### Akamai CDN delivery IPs
+
+On May 1, 2025, Azure DevOps CDN assets transitioned to a solution served by Akamai and Azure Front Door. Ensure your network has outbound access to Akamai IP ranges. For more information, see:
+
+- [CDN domain URL change for agents in pipelines](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/)
+- [Azure CDN from Edgio retirement FAQ](/previous-versions/azure/cdn/edgio-retirement-faq)
+- [Akamai TechDocs: Origin IP access control list](https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server)
+
+If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image, in Docker or Azure Container Registry.
+
 ## Validate endpoint connectivity
 
 Confirm that you can use a subnet with Managed DevOps Pools by running the following script on a resource on that subnet. This step will help you validate that the network flow is configured to reach all of these available endpoints and the Managed DevOps control plane.
@@ -286,53 +333,6 @@ if ($unreachableUris.Count -eq 0) {
     $unreachableUris | ForEach-Object { Write-Output $_ }
 }
 ```
-
-### Required endpoints for Linux machines
-
-These endpoints are required to spin up Ubuntu machines, but aren't necessary if a pool is only using Windows. When you set up the Azure DevOps task agent, required packages are added and an `apt-get` command is run. This process fails if the following endpoints aren't allowlisted.
-
-- `azure.archive.ubuntu.com`: Provisioning Linux machines. This endpoint is HTTP (port 80), not HTTPS (port 443).
-- `www.microsoft.com`: Provisioning Linux machines.
-- `security.ubuntu.com`: Provisioning Linux machines.
-- `packages.microsoft.com`: Provisioning Linux machines.
-- `ppa.launchpad.net`: Provisioning some specific Linux distributions.
-- `dl.fedoraproject.org`: Provisioning certain Linux distributions.
-
-### Required endpoints for some Azure DevOps features
-
-These optional endpoints are required for specific Azure DevOps features to work on your pipelines. In the following set, the wildcard can be replaced with the specific Azure DevOps organization that hosts your pipeline. For example, if your organization is named `contoso`, you can use `contoso.services.visualstudio.com` instead of `*.services.visualstudio.com`.
-
-- `*.services.visualstudio.com`
-- `*.vsblob.visualstudio.com`: Used for both uploading and consuming artifacts.
-- `*.vssps.visualstudio.com`: Used for authentication with Azure DevOps for certain features.
-- `*.visualstudio.com`
-
-> [!NOTE]
-> The previous entries are the minimum domains required. If you have any issues, see the full list of required domains at [Azure DevOps allowed IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md).
-
-### Azure-related endpoints
-
-Azure virtual machines (VMs) might route traffic to certain Azure features through your subnet. For these requests, you can route requests directly through Azure, or enable access through your network.
-
-1. [Configure Azure traffic to run through service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview):
-
-   You can route traffic directly through Azure to avoid adding throughput to your network security groups or firewalls. You don't need to allowlist the domains listed in the following option.
-
-   For example, you can use the [data disk](./configure-storage.md) feature to involve network calls to Azure Storage. When you enable **Microsoft.Storage** service endpoint on your network, traffic routes directly through Azure, which avoids your network rules and reduces load.
-
-1. To avoid routing traffic through service endpoints, allowlist this domain for a specific purpose:
-
-   - `md-*.blob.storage.azure.net`: Required to [configure a data disk](./configure-storage.md).
-
-### Akamai CDN delivery IPs
-
-On May 1, 2025, Azure DevOps CDN assets transitioned to a solution served by Akamai and Azure Front Door. Ensure your network has outbound access to Akamai IP ranges. For more information, see:
-
-- [CDN domain URL change for agents in pipelines](https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/)
-- [Azure CDN from Edgio retirement FAQ](/previous-versions/azure/cdn/edgio-retirement-faq)
-- [Akamai TechDocs: Origin IP access control list](https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server)
-
-If you configure your Azure DevOps Pipeline to run inside of a container, you need to also allowlist the source of the container image, in Docker or Azure Container Registry.
 
 ## Configure the Azure DevOps agent to run behind a proxy
 
