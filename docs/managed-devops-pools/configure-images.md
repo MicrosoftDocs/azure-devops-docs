@@ -69,11 +69,11 @@ Each image can have the following properties:
 | Property | Description |
 |----------|-------------|
 | `aliases` | An optional list of aliases. You can refer to the image by using the aliases instead of the full resource ID of the image. |
-| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
-| `wellKnownImageName` | The alias of the Azure Pipelines image. Required when using [Azure Pipelines images](#azure-pipelines-images). |
+| `resourceID` | The resource ID of the image to use. Required when you use [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
+| `wellKnownImageName` | The alias of the Azure Pipelines image. Required when you use [Azure Pipelines images](#azure-pipelines-images). |
 | `buffer` | When you enable [standby agents](./configure-scaling.md#standby-agent-mode), the `buffer` value designates which percentage of standby agents to allocate to this image. The total of all image `buffer` values must equal 100. |
 
-The following example defines three images. Standby agents are enabled and 100% of the standby agents are allocated to the `windows-2022` image.
+The following example defines three images. Standby agents are enabled, and 100% of the standby agents are allocated to the `windows-2022` image.
 
 ```json
 "images": [
@@ -139,8 +139,8 @@ Each image can have the following properties:
 | Property | Description |
 |----------|-------------|
 | `aliases` | An optional list of aliases. You can refer to the image by using the aliases instead of the full resource ID of the image. |
-| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
-| `wellKnownImageName` | The alias of the Azure Pipelines image. Required when using [Azure Pipelines images](#azure-pipelines-images). |
+| `resourceID` | The resource ID of the image to use. Required when you use [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
+| `wellKnownImageName` | The alias of the Azure Pipelines image. Required when you use [Azure Pipelines images](#azure-pipelines-images). |
 | `buffer` | When you enable [standby agents](./configure-scaling.md#standby-agent-mode), the `buffer` value designates which percentage of standby agents to allocate to this image. The total of all image `buffer` values must equal 100. |
 
 The following example defines three images. Standby agents are enabled and 100% of the standby agents are allocated to the `windows-2022` image.
@@ -210,8 +210,8 @@ Each image can have the following properties:
 | Property | Description |
 |----------|-------------|
 | `aliases` | An optional list of aliases. You can refer to the image by using the aliases instead of the full resource ID of the image. |
-| `resourceID` | The resource ID of the image to use. Required when using [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
-| `wellKnownImageName` | The alias of the Azure Pipelines image. Required when using [Azure Pipelines images](#azure-pipelines-images). |
+| `resourceID` | The resource ID of the image to use. Required when you use [Azure Compute Gallery images](#azure-compute-gallery-images) or [selected marketplace images](#selected-marketplace-images). |
+| `wellKnownImageName` | The alias of the Azure Pipelines image. Required when you use [Azure Pipelines images](#azure-pipelines-images). |
 | `buffer` | When you enable [standby agents](./configure-scaling.md#standby-agent-mode), the `buffer` value designates which percentage of standby agents to allocate to this image. The total of all image `buffer` values must equal 100. |
 
 The following example defines three images. Standby agents are enabled and 100% of the standby agents are allocated to the `windows-2022` image.
@@ -242,14 +242,14 @@ If you select a single image, all pipelines in your pool run by using that image
 
 If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run by using the first listed image in your pool. You can change the order of the images in your pool in the following two ways:
 
-- Using [templates](./configure-images.md?tabs=arm#choose-your-pools-image): Change the order of the images in the `images` list in the `fabricProfile` section.
-- Drag and drop: Order the [images in the images list](./configure-pool-settings.md#images) in the Azure portal.
+- Use [templates](./configure-images.md?tabs=arm#choose-your-pools-image): Change the order of the images in the `images` list in the `fabricProfile` section.
+- Use dragging: Order the [images in the images list](./configure-pool-settings.md#images) in the Azure portal.
 
 You can select from the following types of images:
 
 * [Azure Pipelines images](#azure-pipelines-images): Select from the same images that Microsoft-hosted agents use.
 * [Selected marketplace images](#selected-marketplace-images): Select from a curated set of Microsoft-published marketplace VM images.
-* [Azure Compute Gallery images](#azure-compute-gallery-images): Select from your own Azure Compute Gallery images. You must assign the **Reader** role to the `DevOpsInfrastructure` service principal for the Azure Compute Gallery images you want to use. For more information, see [Grant Reader role access to the `DevOpsInfrastructure` service principal](#grant-reader-role-access-to-the-devopsinfrastructure-service-principal).
+* [Azure Compute Gallery images](#azure-compute-gallery-images): Select from your own Azure Compute Gallery images. You must assign the **Reader** role to the `DevOpsInfrastructure` service principal for the Azure Compute Gallery images that you want to use. For more information, see [Grant Reader role access to the `DevOpsInfrastructure` service principal](#grant-reader-role-access-to-the-devopsinfrastructure-service-principal).
 
 ## Azure Pipelines images
 
@@ -387,7 +387,7 @@ Select **Azure Compute Gallery images** to specify an image from any gallery ava
 > [!IMPORTANT]
 > Managed DevOps Pools supports only [generalized](/azure/virtual-machines/generalize) Azure Compute Gallery images.
 >
-> Managed DevOps Pools doesn't support Azure Compute Gallery images that you create by using a paid base image. If you receive an error like, "Image Base is not supported, since it's a paid image. Please provide a different image that is free," select a different Azure Compute Gallery image based on a VM that you create by using a [free pricing plan](/marketplace/purchase-vm-in-azure-portal#purchase-a-vm-using-the-marketplace-experience) for the base image.
+> Managed DevOps Pools doesn't support Azure Compute Gallery images that you create by using a paid base image. If you receive an error like "Image Base is not supported, since it's a paid image. Please provide a different image that is free," select a different Azure Compute Gallery image based on a VM that you create by using a [free pricing plan](/marketplace/purchase-vm-in-azure-portal#purchase-a-vm-using-the-marketplace-experience) for the base image.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -434,7 +434,7 @@ images: [
 ### Grant Reader role access to the DevOpsInfrastructure service principal
 
 > [!IMPORTANT]
-> Assign the **Reader** role to the `DevOpsInfrastructure` service principal for the Azure Compute Gallery images you want to use. If you select an Azure Compute Gallery image that doesn't have this access configured, pool creation fails. You can assign the **Reader** role individually at the image level, or at the image gallery level for all images in the gallery.
+> Assign the **Reader** role to the `DevOpsInfrastructure` service principal for the Azure Compute Gallery images that you want to use. If you select an Azure Compute Gallery image that doesn't have this access configured, pool creation fails. You can assign the **Reader** role individually at the image level, or at the image gallery level for all images in the gallery.
 
 1. Go to the desired resource in the Azure portal. To use all images in a gallery, go to **Azure Compute Gallery** in the Azure portal. To only use a specific image, go to that image.
 1. Select **Access control (IAM)**.
@@ -455,8 +455,8 @@ If you have multiple images in your pool, you can configure your Azure DevOps pi
 
 If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run by using the first listed image in your pool. You can change the order of the images in your pool in the following ways:
 
-- Using [templates](./configure-images.md?tabs=arm#choose-your-pools-image): Change the order of the images in the `images` list in the `fabricProfile` section.
-- Using drag and drop: Order the [images in the images list](./configure-pool-settings.md#images) in the Azure portal.
+- Use [templates](./configure-images.md?tabs=arm#choose-your-pools-image): Change the order of the images in the `images` list in the `fabricProfile` section.
+- Use dragging: Order the [images in the images list](./configure-pool-settings.md#images) in the Azure portal.
 
 If your pipelines experience problems after adding a new image to your pool, check the ordering of the images in the list. Consider using demands and aliases to explicitly designate which image each pipeline should use.
 
@@ -549,7 +549,7 @@ pool:
 ```
 
 > [!IMPORTANT]
-> Don't put quotes around the alias name in the `ImageOverride` demand, even if it has spaces in the name.
+> Don't put quotation marks around the alias name in the `ImageOverride` demand, even if it has spaces in the name.
 
 To run a pipeline by using an Azure Pipelines image in your pool, use the alias in the previous table. To run a pipeline on the Azure Pipelines Windows Server 2022 image from the previous example, specify the following demand in the `pool` section of your pipeline:
 
@@ -576,7 +576,7 @@ Managed DevOps Pools agent images are retired when the image's operating system 
 
 Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019** image.
 
-- Creation of new pools that use the **Azure Pipelines – Windows Server 2019** image will be disabled starting November 1, 2025, but existing pools on these images will continue to run until December 31, 2025.
+- Creation of new pools that use the **Azure Pipelines – Windows Server 2019** image is disabled as of November 1, 2025, but existing pools on these images will continue to run until December 31, 2025.
 - On December 31, 2025, use of the **Azure Pipelines – Windows Server 2019** image will be disabled. Agents that use this image don't provision and pipelines don't run.
 
 To keep your pools running if you use the **Azure Pipelines – Windows Server 2019** image, update to the **Azure Pipelines - Windows Server 2022** image. You can also use the Windows Server 2019 image from [selected marketplace images](./configure-images.md#selected-marketplace-images) or your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. The marketplace image doesn't include the preinstalled software from the Azure Pipelines image.
@@ -585,10 +585,10 @@ To keep your pools running if you use the **Azure Pipelines – Windows Server 2
 
 [Ubuntu 20.04 LTS Standard Support ended May 31, 2025](https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare), and Managed DevOps Pools removed the Ubuntu 20.04 images from [selected marketplace images](./configure-images.md#selected-marketplace-images) and [Azure Pipelines images](./configure-images.md#azure-pipelines-images).
 
-The creation of new pools by using Ubuntu 20.04 selected marketplace images or Azure Pipelines images was disabled starting July 15, 2025. Starting August 30, 2025, pipelines that were previously configured to use these images are unsupported.
+The creation of new pools by using Ubuntu 20.04 selected marketplace images or Azure Pipelines images was disabled on July 15, 2025. As of August 30, 2025, pipelines that were previously configured to use these images are unsupported.
 
 To keep your pools that currently use Ubuntu 20.04 running, update your Ubuntu 20.04 images to Ubuntu 22.04 or 24.04 (recommended). For more information, see [Select your pool's image](./configure-images.md#choose-your-pools-image). If you have [multiple images](./configure-images.md#use-multiple-images-per-pool-with-aliases) in your pool, [update your aliases](./configure-images.md#configure-image-aliases) for your Ubuntu images so that your pipelines that require Ubuntu run by using the desired image.
 
-## See also
+## Related content
 
 - [Configure pool settings](./configure-pool-settings.md)
