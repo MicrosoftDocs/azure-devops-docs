@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
-ms.date: 10/16/2024
+ms.date: 11/03/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -467,7 +467,7 @@ Use the following parameters to define a connection to the Jenkins service.
 
 You can select **Verify** to verify your credentials before entering the rest of the parameters.
 
-For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources - Jenkins](../release/artifacts.md#jenkins).
+For more information, see [Artifact sources - Jenkins](../release/artifacts.md#jenkins).
 
 ### Jira service connection
 
