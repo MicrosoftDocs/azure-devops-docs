@@ -179,7 +179,6 @@ To enable the new Git tool, see [Git experience in Visual Studio](/visualstudio/
 
 For additional information on managing work items and customizing your experience:
 
-- [Manage work item fields using witadmin](../../reference/witladmin/manage-work-item-fields.md)
 - [Naming restrictions and conventions](../../organizations/settings/naming-restrictions.md#work-items-work-item-types-and-customizations)
 - [Azure DevOps CLI for work items](../../cli/quick-reference.md)
 - [REST API for work items](/rest/api/azure/devops/wit/)
