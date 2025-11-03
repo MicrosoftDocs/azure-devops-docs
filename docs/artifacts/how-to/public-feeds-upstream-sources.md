@@ -27,7 +27,7 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 
 1. Select **Artifacts**, then select **Create Feed**.
 
-1. Provide a **Name** for your feed, then choose *Project: <YourProjectName> (Recommended)* as the **Scope**.
+1. Provide a **Name** for your feed, then choose *Project: YourProjectName (Recommended)* as the **Scope**.
 
 1. Select **Create** when you're done.
     
