@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 This article covers service connections in Azure Pipelines. Service connections are authenticated connections between Azure Pipelines and external or remote services that you use to execute tasks in a job.
 
-For example, your pipelines might use the following categories of service connections:
+For example, your pipelines might use the following categories of service connections: 
 
 - Azure subscriptions, to use for Azure Web Site Deployment tasks.
 - Different build servers or file servers, such as a standard GitHub Enterprise Server service connection to a GitHub repository.
