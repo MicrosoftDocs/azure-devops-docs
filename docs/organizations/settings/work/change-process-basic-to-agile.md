@@ -46,7 +46,7 @@ Before you change your process, you should learn about the new process you're sw
 
 :::moniker range="azure-devops"
 
-To change your project process, select **Organization settings** from the left navigation menu of your Azure DevOps organization, and then select **Process** under **Boards**.
+To access project processes, select **Organization settings** from the left navigation menu of your Azure DevOps organization, and then select **Process** under **Boards**.
 
 :::image type="content" source="../../../media/settings/open-process-page-basic.png" alt-text="Screenshot of highlighted Process tab.":::
 
@@ -54,11 +54,13 @@ To change your project process, select **Organization settings** from the left n
 
 :::moniker range="< azure-devops"
 
-To change your project process, select **Collection settings** from the left navigation menu of your Azure DevOps organization, and then select **Process** under **Boards**.
+To access project processes, select **Collection settings** from the left navigation menu of your Azure DevOps organization, and then select **Process** under **Boards**.
 
 :::image type="content" source="media/change-process/open-process-page-basic-server.png" alt-text="Screenshot of highlighted Process tab.":::
 
 ::: moniker-end
+
+To change the process for your Basic project to Agile:
 
 1. On the **All processes** page, select **Basic**.
 
@@ -116,7 +118,7 @@ Update existing backlog work items to use the new work item types and states. Fo
 
    :::image type="content" source="media/change-process/query-column-sort.png" alt-text="Screenshot of column options dialog, sort tab.":::
 
-1. Agile doesn't include the **Issues** work item type. On the query **Results** tab, shift-select to highlight all **Issues**. Select the **More actions** icon next to one of the highlighted items, and select **Change type**.
+1. To change work items to types supported in Agile, on the query **Results** tab, shift-select to highlight all **Issues**. Select the **More actions** icon next to one of the highlighted items, and select **Change type**.
 
    :::image type="content" source="media/change-process/choose-change-type.png" alt-text="Screenshot of choosing Change type from the context menu.":::
 
@@ -124,17 +126,17 @@ Update existing backlog work items to use the new work item types and states. Fo
 
    :::image type="content" source="media/change-process/change-type-to-user-story.png" alt-text="Screenshot of the Change type dialog.":::
 
-   The work item type **User story** doesn't include the states **To Do** or **Doing**. Because the work item type and state are now mismatched, errors appear on the list and you can't save your changes.
+   Because the **User story** work item type and states like **To Do** or **Doing** are mismatched, errors appear on the list and you can't save your changes.
 
    :::image type="content" source="media/change-process/error-mismatch-type-state.png" alt-text="Screenshot showing error state of changed work item type.":::
 
-1. Shift-select to highlight all work items of the state that has errors, such as **Doing**, select the **More actions** icon next to one of the items, and select **Edit** from the context menu.
+1. Shift-select to highlight all work items with a mismatched state such as **Doing**, select the **More actions** icon next to one of the items, and select **Edit** from the context menu.
 
 1. On the **Edit work items** screen, select the **State** field, select a valid state such as **Active** for the value, and then select **OK**.
 
    :::image type="content" source="media/change-process/edit-doing-work-item-state.png" alt-text="Screenshot of editing a work item state.":::
 
-1. Repeat these steps to change the **Done** state to **Closed** and the **To Do** state to **New**.
+1. Repeat these steps to change items with the **Done** state to **Closed** and items with the **To Do** state to **New**.
 
 1.  Select **Save items** to save your changes.
 
