@@ -116,7 +116,7 @@ Update existing backlog work items to use the new work item types and states. Fo
 
    :::image type="content" source="media/change-process/query-column-sort.png" alt-text="Screenshot of column options dialog, sort tab.":::
 
-1. On the query **Results** tab, shift-select to highlight all **Issues**. Select the **More actions** icon next to one of the highlighted items, and select **Change type**.
+1. Agile doesn't include the **Issues** work item type. On the query **Results** tab, shift-select to highlight all **Issues**. Select the **More actions** icon next to one of the highlighted items, and select **Change type**.
 
    :::image type="content" source="media/change-process/choose-change-type.png" alt-text="Screenshot of choosing Change type from the context menu.":::
 
@@ -146,7 +146,7 @@ Update existing backlog work items to use the new work item types and states. Fo
 
    :::image type="content" source="media/change-process/backlog-basic-to-agile.png" alt-text="Screenshot of team backlog.":::
 
-1. If you want to show and manage bugs along with user stories on backlogs and boards, select the **Settings** icon, scroll down to the **Working with bugs** section, select **Bugs are managed with requirements**, and select **Save**.
+1. If you want to show and manage bugs along with user stories on backlogs and boards, select the **Backlog** page **Settings** icon, scroll down to the **Working with bugs** section, select **Bugs are managed with requirements**, and select **Save**.
 
    Bugs now appear along with user stories on your team backlog and board. For more information, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
 
