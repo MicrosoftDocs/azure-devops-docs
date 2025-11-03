@@ -1,9 +1,9 @@
 ---
-title: Enable and add upstream sources to a public feed
-description: How to enable and add upstream sources to a public feed in Azure Artifacts
+title: Use upstream sources in a public feed
+description: Learn how to enable and add upstream sources to a public feed in Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
-ms.date: 03/02/2023
+ms.date: 10/31/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -11,54 +11,44 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to manage their dependencies from a single feed. Using upstream sources, you can consume packages from feeds and public registries such as NuGet.org, and npmjs.com. In this article, you'll learn how to:
-
-> [!div class="checklist"]
->
-> - Create a public feed 
-> - Enable upstream sources
-> - Add a new upstream source
+Azure Artifacts helps you to manage all your dependencies from a single feed. By setting up upstream sources, you can consume packages from feeds and public registries such as *NuGet.org*, and *npmjs.com*. This article walks you through setting up upstream sources in a public feed and restoring your packages.
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
-
-- An Azure DevOps project. [Create a new project](../../organizations/projects/create-project.md) if you don't have one already.
-
-- Set your project visibility to [public](../../organizations/projects/make-project-public.md).
+| **Product**        | **Requirements**                       |
+|--------------------|----------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Set your project visibility to [public](../../organizations/projects/make-project-public.md). |
 
 ## Create a public feed
 
-A public feed is a project-scoped feed in a public project. Public feeds inherit the visibility settings of the hosting project.
+A public feed is a project-scoped feed in a public project. Public feeds inherit the visibility settings of the hosting project. If you already have a public feed you can skip to the next section, otherwise create one as follows:
 
-1. Sign in to your Azure DevOps organization, and then select your public project.
+1. Sign in to Azure DevOps, then navigate to your public project.
 
-1. Select **Artifacts**, and then select **Create Feed**.
+1. Select **Artifacts**, then select **Create Feed**.
 
-    :::image type="content" source="../media/new-feed-devops.png" alt-text="A screenshot showing the create feed button in Azure Artifacts.":::
-
-1. Give your feed a **Name**, and then select **Project: PublicProject (Recommended)** for its scope.
-
-    :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot showing how to create a new public feed.":::
+1. Provide a **Name** for your feed, then choose *Project: <YourProjectName> (Recommended)* as the **Scope**.
 
 1. Select **Create** when you're done.
+    
+    :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot displaying how to create a new public feed in Azure Artifacts.":::
 
 > [!IMPORTANT]
-> Public feeds do not support upstreaming to a private Artifacts feed. If you are using a public Azure Artifacts feed, you can only upstream to public registries (NuGet.org, npmjs) or other **Public** Azure Artifacts feeds.
+> Public feeds do not support upstreaming to private Artifacts feeds. You can only upstream to public registries or other **Public** Azure Artifacts feeds.
 
 ## Add an upstream source
 
-1. Sign in to your Azure DevOps organization, and then select your public project.
+Now that your public feed is set up, you can start adding upstream sources. For public feeds, you can only configure public registries or other public Azure Artifacts feeds as upstream sources. Follow these steps to add an upstream source:
 
-1. Select **Artifacts**, and then select your public feed.
+1. Sign in to Azure DevOps, then navigate to your public project.
 
-1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed Settings**.
+1. Select **Artifacts**, select your public feed from the dropdown menu.
 
-1. Select **Upstream Sources**, and then select **Add Upstream**.
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to open your **Feed Settings**.
 
-    :::image type="content" source="../media/public-feed-add-upstream.png" alt-text="A screenshot showing how to add an upstream source in a public feed.":::
+1. Select **Upstream Sources**, then select **Add Upstream**.
 
-1. Select your upstream source **Type**. In this example, we'll be adding NuGet.org as an upstream source.
+1. Select your upstream source **Type**. In this example, you'll be adding *NuGet.org* as an upstream source. Select **Public source** for the type.
 
     :::image type="content" source="../media/public-feed-upstream-types.png" alt-text="A screenshot showing the different types of upstream sources.":::
 
