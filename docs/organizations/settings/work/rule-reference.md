@@ -96,7 +96,10 @@ Note the following:
 
 # [Inheritance process](#tab/inheritance)
 
-For an inherited process, each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. For most rules, you can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run. 
+For an inherited process, each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. 
+- You cannot have multiple rules using the same conditions and actions on the same work item type.
+- For most rules, you can specify a maximum of two conditions and 10 actions per rule.
+- All custom rules require all conditions to be met in order to be run. 
 
 As an example, you can make a field required based on the value assigned to the state and another field. For example:
 
@@ -123,15 +126,15 @@ The following table summaries the Actions that are available with the selected C
       **Set field value or make required or read-only**
    :::column-end:::
 :::row-end:::
-:::row:::  
-   :::column span="2":::
-      > [!div class="mx-imgBorder"]  
-      > ![Conditions, work item is created](media/customize-workflow/conditions-basic.png)
-   :::column-end:::
-   :::column span="2":::
-      > [!div class="mx-imgBorder"]  
-      > ![Actions, work item is created](media/customize-workflow/actions-basic.png)
-   :::column-end:::
+:::row:::
+  :::column span="2":::
+    > [!div class="mx-imgBorder"]  
+  > ![Conditions, work item is created](media/customize-workflow/conditions-basic.png)
+  :::column-end:::
+  :::column span="2":::
+    > [!div class="mx-imgBorder"]  
+  > ![Actions, work item is created](media/customize-workflow/actions-basic.png)
+  :::column-end:::
 :::row-end:::
 ::: moniker range=">= azure-devops-2020"
 :::row:::  
@@ -139,14 +142,11 @@ The following table summaries the Actions that are available with the selected C
       **Restrict a transition based on State**
    :::column-end:::
 :::row-end:::
-:::row:::  
-   :::column span="2":::
-      > [!div class="mx-imgBorder"]  
-      > ![Condition, work item is moved](media/customize-workflow/condition-work-item-moved.png)
-   :::column-end:::
-   :::column span="2":::
-      > [!div class="mx-imgBorder"]  
-      > ![Actions, restrict a transaction based on State.](media/customize-workflow/actions-restrict-transition-to-state.png)
+:::row:::
+  :::column span="2":::
+    > [!div class="mx-imgBorder"]  
+  > ![Condition, work item is moved](media/customize-workflow/condition-work-item-moved.png)
+  :::column-end:::
 :::row-end:::
 ::: moniker-end
 ::: moniker range="azure-devops-2020"
@@ -155,15 +155,15 @@ The following table summaries the Actions that are available with the selected C
       **Hide field or make field read-only or required based on State and user or group membership**
    :::column-end:::
 :::row-end:::
-:::row:::  
-   :::column span="2":::
-      > [!div class="mx-imgBorder"]  
-      > ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
-   :::column-end:::
-   :::column span="2":::
-      > [!div class="mx-imgBorder"]  
-      > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership-2020.png)
-   :::column-end:::
+:::row:::
+  :::column span="2":::
+    > [!div class="mx-imgBorder"]  
+  > ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
+  :::column-end:::
+  :::column span="2":::
+    > [!div class="mx-imgBorder"]  
+  > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership-2020.png)
+  :::column-end:::
 :::row-end:::
 ::: moniker-end
 ::: moniker range="azure-devops"
@@ -172,15 +172,15 @@ The following table summaries the Actions that are available with the selected C
       **Based on and user or group membership, set field attribute or restrict a State transition**
    :::column-end:::
 :::row-end:::
-:::row:::  
-   :::column span="2":::
-      > [!div class="mx-imgBorder"]  
-      > ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
-   :::column-end:::
-   :::column span="2":::
-      > [!div class="mx-imgBorder"]  
-      > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership.png)
-   :::column-end:::
+:::row:::
+  :::column span="2":::
+    > [!div class="mx-imgBorder"]  
+  > ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
+  :::column-end:::
+  :::column span="2":::
+    > [!div class="mx-imgBorder"]  
+  > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership-2020.png)
+  :::column-end:::
 :::row-end:::
 ::: moniker-end
 
@@ -822,8 +822,6 @@ For syntax structure and examples, see [Assign conditional-based values and rule
 :::row-end:::  
 
 
- 
-
 ---  
 
 
@@ -930,8 +928,6 @@ To restrict a rule based on the current user's membership, you specify either th
       ```
    :::column-end:::
 :::row-end::: 
- 
-
 ---  
 
 
