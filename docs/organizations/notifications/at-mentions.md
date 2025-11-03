@@ -10,7 +10,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/30/2025
+ms.date: 11/03/2025
 ---
  
 # Use @mentions in work items and pull requests
