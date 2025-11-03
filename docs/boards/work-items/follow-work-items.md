@@ -191,10 +191,10 @@ Consider these strategies to make the most of the Follow feature:
 ### Not receiving notifications
 
 **Check these settings:**
-1. **Personal notifications**: Verify your email address in [notification settings](../../organizations/notifications/manage-your-personal-notifications.md)
-2. **Follow status**: Confirm the item shows the "Following" icon (not just "Follow")
-3. **Notification preferences**: Check if you selected "Not Subscribed" by mistake
-4. **Email filters**: Look for Azure DevOps emails in spam or filtered folders
+- **Personal notifications**: Verify your email address in [notification settings](../../organizations/notifications/manage-your-personal-notifications.md)
+- **Follow status**: Confirm the item shows the "Following" icon (not just "Follow")
+- **Notification preferences**: Check if you selected "Not Subscribed" by mistake
+- **Email filters**: Look for Azure DevOps emails in spam or filtered folders
 
 ### Too many notifications
 
