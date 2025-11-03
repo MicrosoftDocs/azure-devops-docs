@@ -42,23 +42,17 @@ Now that your public feed is set up, you can start adding upstream sources. For 
 
 1. Sign in to Azure DevOps, then navigate to your public project.
 
-1. Select **Artifacts**, select your public feed from the dropdown menu.
+1. Select **Artifacts**, then select your public feed from the dropdown menu.
 
 1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to open your **Feed Settings**.
 
 1. Select **Upstream Sources**, then select **Add Upstream**.
 
-1. Select your upstream source **Type**. In this example, you'll be adding *NuGet.org* as an upstream source. Select **Public source** for the type.
+1. Select the upstream source **Type**. In this example, you'll add *NuGet.org* as an upstream source, so select **Public source**.
 
-    :::image type="content" source="../media/public-feed-upstream-types.png" alt-text="A screenshot showing the different types of upstream sources.":::
+1. Select the **NuGet Gallery** from the dropdown menu, then select **Add**. 
 
-1. Configure your source, and then select **Add** when you're done.
-
-    :::image type="content" source="../media/public-feed-configure-upstream.png" alt-text="A screenshot showing how to configure your upstream source.":::
-
-1. Select **Save** to save your new upstream source.
-
-    :::image type="content" source="../media/save-upstream.png" alt-text="A screenshot showing how to save the newly added upstream source.":::
+1. Select **Save** on the right to save your new upstream source.
 
 > [!IMPORTANT]
 > [Package lock files](https://devblogs.microsoft.com/nuget/enable-repeatable-package-restores-using-a-lock-file/) are required to save NuGet and Dotnet packages from upstream sources to a public feed.
@@ -67,72 +61,74 @@ Now that your public feed is set up, you can start adding upstream sources. For 
 
 Run the following command in your project directory to restore your packages:
 
+> [!NOTE]
+> You must have **Feed and Upstream Reader (Collaborator)** or higher permissions to install new package versions from upstream sources. Anonymous users can only install packages that already exist in the feed.
+
 #### [NuGet](#tab/nuget)
 
-```Command
+```
 nuget.exe restore
 ```
 
 #### [Dotnet](#tab/dotnet)
 
-```Command
+```
 dotnet restore --interactive
 ```
 
 #### [Npm](#tab/npm)
 
-```Command
+```
 npm install
 ```
 
 #### [Maven](#tab/maven)
 
-```Command
+```
 mvn install
 ```
 
 #### [Gradle](#tab/gradle)
 
-```Command
+```
 gradle build
 ```
 
 #### [Python](#tab/python)
 
-```Command
+```
 pip install
 ```
 
 #### [Cargo](#tab/cargo)
 
-Feed and Upstream Reader (Collaborator) roles or higher must use an additional flag to authenticate with their public feed in order to install packages. Be sure to follow the instructions in [Cargo - Connect to a feed](../cargo/cargo-upstream-source.md#connect-to-your-feed) to properly authenticate with your feed, and then run the following command in your project directory to restore your packages. 
+Users with the **Feed and Upstream Reader (Collaborator)** role or higher must include an additional flag to authenticate with their public feed when installing packages. If you haven’t authenticated yet, follow the steps in [Cargo - Connect to your feed](../cargo/cargo-upstream-source.md#connect-to-your-feed), then run the following command in your project directory to restore your packages: 
 
-```Command
+```
 cargo build
 ```
 
 - - -
 
-> [!NOTE]
-> You must be a **Feed and Upstream Reader (Collaborator)** or higher to install new package versions from upstream. Anonymous users can only install packages that exist in their feed.
-
 ## Q&A
 
-#### Q: I'm trying to restore my packages but I keep getting a 401 unauthorized error?
+#### Q: I'm trying to restore my packages but I keep getting a 401 unauthorized error. Why?
 
-The contents of a feed can only be changed by an authenticated and authorized identity who has appropriate permissions on the feed. This includes saving packages into the feed from an upstream source. Unauthenticated (anonymous) users can *download packages already saved* into a feed, but cannot save new packages from an upstream into the feed.
+The contents of a feed can only be changed by an authenticated and authorized identity with the appropriate permissions. This includes saving packages from an upstream source.
+
+- **Anonymous users** can download packages already saved in a feed, but cannot save new packages from upstream sources.
 	
-Maintainers of a project should save all needed versions of packages into the public feed. This can be done by restoring a project using an identity that *can* supply credentials to the feed when prompted, **and** ensuring that the identity used has **Feed and Upstream Reader (Collaborator)** or higher permissions on the public feed.
+- **Project maintainers** should ensure all required package versions are saved in the public feed. This can be done by restoring the project using an identity that can provide credentials when prompted and has *Feed and Upstream Reader (Collaborator)* or higher permissions.
 	
-If anonymous users who are restoring packages for a project are repeatedly being blocked by requests for credentials (401 response), the following approaches will reduce or eliminate the issue:
+If anonymous users repeatedly encounter credential prompts (401 errors), try these approaches:
 	
 1. Avoid using package version ranges in your project configuration. Explicit package versions will ensure that packaging clients only request the exact version needed.
 	
-1. Where supported, utilize lock files for your packaging ecosystem so that the packaging clients only request the specific versions needed for the project during a restore/install operation.
+1. Use lock files (where supported) so package clients only request the exact versions needed during restore or install operations.
 
-#### Q: I'm trying to restore my packages using Visual Studio, but I'm noticing that they're getting pulled from a different source?
+#### Q: I'm restoring packages in Visual Studio, but they're coming from a different source. Why?
 
-A: Make sure that Visual Studio is using the source referenced in your *nuget.config* file and not from the local NuGet package manager. See [Package sources](/nuget/consume-packages/install-use-packages-visual-studio#package-sources) for more details. 
+A: Ensure Visual Studio uses the source specified in your nuget.config file, not the local NuGet package manager. See [Package sources](/nuget/consume-packages/install-use-packages-visual-studio#package-sources) for more details. 
 
 You can also use the NuGet CLI to force NuGet to use the source in your config file by running the following command:
 
@@ -143,5 +139,7 @@ nuget restore -config <PATH_TO_NUGET_CONFIG_FILE>
 ## Related content
 
 - [Search for packages in upstream sources](search-upstream.md)
+
 - [Set up upstream sources](set-up-upstream-sources.md)
+
 - [Configure upstream behavior](../concepts/upstream-behavior.md)
