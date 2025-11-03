@@ -124,7 +124,7 @@ Update existing backlog work items to use the new work item types and states. Fo
 
    :::image type="content" source="media/change-process/change-type-to-user-story.png" alt-text="Screenshot of the Change type dialog.":::
 
-   The work item type **User story** doesn't include the states **To Do** or **Doing**. Because the work item type and state are mismatched, errors appear on the list and you can't save your changes.
+   The work item type **User story** doesn't include the states **To Do** or **Doing**. Because the work item type and state are now mismatched, errors appear on the list and you can't save your changes.
 
    :::image type="content" source="media/change-process/error-mismatch-type-state.png" alt-text="Screenshot showing error state of changed work item type.":::
 
