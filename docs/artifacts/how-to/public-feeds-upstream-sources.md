@@ -48,7 +48,7 @@ Now that your public feed is set up, you can start adding upstream sources. For 
 
 1. Select **Upstream Sources**, then select **Add Upstream**.
 
-1. Select the upstream source **Type**. In this example, you'll add *NuGet.org* as an upstream source, so select **Public source**.
+1. Select the upstream source **Type**. In this example, you add *NuGet.org* as an upstream source, so select **Public source**.
 
 1. Select the **NuGet Gallery** from the dropdown menu, then select **Add**. 
 
@@ -122,7 +122,7 @@ The contents of a feed can only be changed by an authenticated and authorized id
 	
 If anonymous users repeatedly encounter credential prompts (401 errors), try these approaches:
 	
-1. Avoid using package version ranges in your project configuration. Explicit package versions will ensure that packaging clients only request the exact version needed.
+1. Avoid using package version ranges in your project configuration. Specify explicit package versions to ensure that clients only request the exact version required.
 	
 1. Use lock files (where supported) so package clients only request the exact versions needed during restore or install operations.
 
