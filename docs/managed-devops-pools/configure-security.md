@@ -606,22 +606,22 @@ To use this feature, you must:
 
 * Configure an [identity on your pool](configure-identity.md). You must give this identity **Key Vault Secrets User** permission to fetch the secret from your key vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to key vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
 * The principal that configures key vault integration settings (your account if you're configuring key vault settings) must have the **Key Vault Certificate User** role assignment on the key vault where the certificates are stored.
-* *Coming soon*: If you're enforcing network isolation for your Azure Key Vault instance to only permit authorized resources access, you must add the following IP addresses to your [Azure Key Vault allowlist](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips). The following IP address ranges and any new IP address ranges will be added to an upcoming [Azure service tag](/azure/virtual-network/service-tags-overview) named **DevOpsInfrastructure**.
+* To enforce network isolation for your Azure Key Vault instance to only permit authorized resources access, you must add the following IP addresses to your [Azure Key Vault allowlist](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips). The following IP address ranges are in an [Azure service tag](/azure/virtual-network/service-tags-overview) named **DevOpsInfrastructure**.
 
-    | Location            | IP address range        |
-    |---------------------|-------------------------|
-    | australiaeast       | 4.198.194.192/28        |
-    | brazilsouth         | 74.163.143.32/28        |
-    | canadacentral       | 130.107.66.0/28         |
-    | centralindia        | 98.70.255.112/28        |
-    | centralus           | 72.152.33.16/28         |
-    | eastus2             | 72.153.21.192/28        |
-    | germanywestcentral  | 131.189.121.128/28      |
-    | northeurope         | 72.145.24.48/28         |
-    | southeastasia       | 135.171.33.48/28        |
-    | switzerlandnorth    | 74.161.82.192/28        |
-    | uksouth             | 131.145.107.64/28       |
-    | westus3             | 57.154.125.208/28       |
+  | Location            | IP address range        |
+  |---------------------|-------------------------|
+  | australiaeast       | 4.198.194.192/28        |
+  | brazilsouth         | 74.163.143.32/28        |
+  | canadacentral       | 130.107.66.0/28         |
+  | centralindia        | 98.70.255.112/28        |
+  | centralus           | 72.152.33.16/28         |
+  | eastus2             | 72.153.21.192/28        |
+  | germanywestcentral  | 131.189.121.128/28      |
+  | northeurope         | 72.145.24.48/28         |
+  | southeastasia       | 135.171.33.48/28        |
+  | switzerlandnorth    | 74.161.82.192/28        |
+  | uksouth             | 131.145.107.64/28       |
+  | westus3             | 57.154.125.208/28       |
 
 > [!NOTE]
 > As of `api-version 2025-01-21`, if you use this feature, you can only use a single identity on the pool.
