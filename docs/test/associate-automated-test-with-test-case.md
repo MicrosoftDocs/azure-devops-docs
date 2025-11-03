@@ -7,7 +7,7 @@ ms.custom: UpdateFrequency3
 ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
-ms.date: 01/28/2025
+ms.date: 11/03/2025
 ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
@@ -84,6 +84,16 @@ For more information, see the following articles:
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing the process of associating an automated test to a test case within a CI/CD pipeline interface.](media/associate-automated-test-with-test-case/associate-automated-test-to-test-case-pipelines.png)
+
+### Associate your test from a work item 
+
+1.  Open any test case and go to the **Associated Automation** tab. 
+2.  Select **Browse**. 
+3.  From the side panel, choose the pipeline and the specific run where the test was previously executed.
+4.  Choose the test you want to associate to the work item and select **Associate test**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the process of associating an automated test to a test case within a CI/CD pipeline interface.](media/associate-automated-test-with-test-case/associate-automated-test-to-test-case-work-item.png)
 
 After you associate your automated tests with their corresponding test cases, you can utilize the [Azure Test Plan task](/azure/devops/pipelines/tasks/reference/azure-test-plan-v0) to execute them as part of a pipeline.
 
