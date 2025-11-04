@@ -172,7 +172,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 If you have systems in place on your network (for example, network security groups or firewalls) that restrict outbound connectivity, you need to add certain endpoints to an allow list to fully support Managed DevOps Pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints that you need for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
 
-### Endpoints you need to start up Managed DevOps Pools
+### Required endpoints for starting Managed DevOps Pools
 
 If you don't add these endpoints to an allow list, machines fail to come online as part of the Managed DevOps Pools service, and you can't run pipelines on the pool:
 
@@ -180,7 +180,7 @@ If you don't add these endpoints to an allow list, machines fail to come online 
 - `rmprodbuilds.azureedge.net`: Used to download the Managed DevOps Pools worker binaries and startup scripts. The agent portion of the worker binaries is downloaded from `rm-agent.prod.manageddevops.microsoft.com` (formerly downloaded from `agent.prod.manageddevops.microsoft.com`), which is covered by the previous required `*.prod.manageddevops.microsoft.com` entry.
 - `*.queue.core.windows.net`: Worker queue for communicating with the Managed DevOps Pools service.
 
-### Endpoints you need to connect to Azure DevOps
+### Required endpoints for connecting to Azure DevOps
 
 If you don't add these endpoints to an allow list, machines might come online and might even go to an *allocated* state but fail to communicate with Azure DevOps, because the Azure DevOps Services task agent either can't connect or can't start.
 
