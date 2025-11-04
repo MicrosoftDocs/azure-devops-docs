@@ -19,7 +19,7 @@ To view an overview of pool settings, go to **Overview**.
 From the **Overview** page, you can:
 
 * View your resource group and subscription details, and [move Azure resources to a new resource group or subscription](/azure/azure-resource-manager/management/move-resource-group-and-subscription).
-* View the location of your pool. To view the supported locations, follow the procedure in [Register the Managed DevOps Pools resource provider in your Azure Subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
+* View the location of your pool. To view the supported locations, follow the procedure in [Register the Managed DevOps Pools resource provider in your Azure subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
 * Configure [tags](/azure/azure-resource-manager/management/tag-resources). Managed DevOps Pools passes up to 20 tags to the virtual machine (VM), and the rest are ignored.
 * View configuration information for your pool, like **Name**, **Azure DevOps organization**, **Agent state**, and **Maximum agents**.
 * View [predefined metrics charts](./monitor-pool.md#view-metrics-on-the-managed-devops-pool-overview).
@@ -39,7 +39,7 @@ To configure your pool, use the following settings:
 * [Agent size](#agent-size)
 * [OS disk type](#os-disk-type)
 
-## Dev Center project
+### Dev Center project
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -121,7 +121,7 @@ In the following example, the `devCenterProjectResourceId` is retrieved from a D
 
 * * *
 
-## Azure DevOps organization
+### Azure DevOps organization
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -224,7 +224,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 By default, your pool is available to all projects in your specified organizations. To limit your pool to specific projects, see [Security settings: Configure organization access](configure-security.md#configure-organization-access).
 
-## Maximum agents
+### Maximum agents
 
 Specify the maximum number of agents that can be provisioned at the same time in your pool. For example, if you specify a **Maximum agents** value of **2**, you can run a maximum of two agents at the same time. If more than two jobs are queued, only two agents run jobs, while the other jobs wait.
 
@@ -296,7 +296,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 > [!NOTE]
 > The **Maximum agents** value configures the maximum number of agents that can be provisioned at the same time, but your organization's self-hosted parallel jobs count specifies the number of jobs that can run concurrently. Ensure that you have enough self-hosted parallel jobs available in your organization to enable your agents to run jobs. For more information, see [Azure DevOps Services parallel job pricing](./pricing.md#azure-devops-services-parallel-job-pricing).
 
-## Agent size
+### Agent size
 
 The **Agent size** setting specifies the [Azure virtual machine size](/azure/virtual-machines/sizes) to use to host your Managed DevOps Pools agents.
 
@@ -387,7 +387,7 @@ To resolve the issue, see [Review Managed DevOps Pools quotas](./prerequisites.m
 
 Not all SKUs are supported for all Azure regions. If you receive an error like `SKU family <sku-family> is not available in location <region>`, ensure your SKU size is supported for your region. For more information, see [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes) and [Products available by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/).
 
-## OS disk type
+### OS disk type
 
 Managed DevOps Pools provides the following disk types for the OS disk:
 
@@ -498,6 +498,6 @@ You can configure your pool to use a single image or multiple images. You can al
 >* Using [templates](./configure-images.md?tabs=arm#choose-your-pools-image): Change the order of the images in the `images` list in the `fabricProfile` section.
 >* Using drag and drop: Order the images in the images list in the Azure portal.
 
-## See also
+## Related content
 
 * [Configure images](./configure-images.md)
