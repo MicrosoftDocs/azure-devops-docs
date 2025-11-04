@@ -8,7 +8,7 @@ ms.topic: reliability-article
 
 # Reliability in Managed DevOps Pools
 
-This article describes reliability support in Managed DevOps Pools, and covers [cross-region disaster recovery](#cross-region-disaster-recovery).
+This article describes reliability support in Managed DevOps Pools, and it covers cross-region disaster recovery (DR).
 
 ## Availability zones
 
@@ -16,11 +16,11 @@ Managed DevOps Pools doesn't support availability zones at this time.
 
 ## Cross-region disaster recovery
 
-The concept of disaster recovery (DR) is about recovering from high-impact events (like natural disasters) that result in downtime and data loss. Regardless of the cause, the best remedy for a disaster is a well-defined and tested DR plan and an application design that actively supports DR. Before you begin to think about creating your disaster recovery plan, see [Recommendations for designing a disaster recovery strategy](/azure/well-architected/reliability/disaster-recovery).
+The concept of disaster recovery is about recovering from high-impact events (like natural disasters) that result in downtime and data loss. Regardless of the cause, the best remedy for a disaster is a well-defined and tested DR plan and an application design that actively supports DR. Before you begin to think about creating your disaster recovery plan, see [Recommendations for designing a disaster recovery strategy](/azure/well-architected/reliability/disaster-recovery).
 
-When it comes to DR, Microsoft uses the [shared responsibility model](/azure/reliability/business-continuity-management-program#shared-responsibility-model). In a shared responsibility model, Microsoft ensures that the baseline infrastructure and platform services are available. At the same time, many Azure services don't automatically replicate data or fall back from a failed region to cross-replicate to another enabled region. For those services, you're responsible for setting up a disaster recovery plan that works for your workload.
+For DR, Microsoft uses the [shared responsibility model](/azure/reliability/business-continuity-management-program#shared-responsibility-model). In a shared responsibility model, Microsoft ensures that the baseline infrastructure and platform services are available. At the same time, many Azure services don't automatically replicate data or fall back from a failed region to cross-replicate to another enabled region. For those services, you're responsible for setting up a disaster recovery plan that works for your workload.
 
-Managed DevOps Pools instances don't automatically replicate or switch from a failed region to another enabled region. If there's a complete outage of the Azure region that hosts your pool, you need to create a new pool in a different region, and manually update your pipelines to reference the new pool.
+Managed DevOps Pools instances don't automatically replicate or switch from a failed region to another enabled region. If there's a complete outage of the Azure region that hosts your pool, you need to create a new pool in a different region, and then manually update your pipelines to reference the new pool.
 
 ### Plan for disaster recovery
 
@@ -30,7 +30,7 @@ Document the configuration of your pools so that you can re-create them if there
 - The **Dev Center** and **Dev Center project** for the replacement pool
 - The Azure Compute Gallery images (if your pool uses them)
 
-You can save the configuration of your existing pool and create [Azure Resource Manager templates (ARM templates)](./quickstart-arm-template.md), [Bicep templates](./quickstart-bicep.md), or [Azure CLI scripts](./quickstart-azure-cli.md) to re-create your pool. You can use the same settings (except for name and location), and manually update your pipelines to use the new pool. When normal operations resume in the Azure region of your original pool, you can update your pipelines to use the original pool, and delete the new pool and its associated resources.
+You can save the configuration of your existing pool and create [Azure Resource Manager templates (ARM templates)](./quickstart-arm-template.md), [Bicep templates](./quickstart-bicep.md), or [Azure CLI scripts](./quickstart-azure-cli.md) to re-create your pool. You can use the same settings (except for name and location) and manually update your pipelines to use the new pool. When normal operations resume in the Azure region of your original pool, you can update your pipelines to use the original pool, and then delete the new pool and its associated resources.
 
 ## Related content
 
