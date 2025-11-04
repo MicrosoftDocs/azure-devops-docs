@@ -287,7 +287,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 * * *
 
-## Manual
+### Manual
 
 Manual mode is best for teams who know their continuous integration and continuous delivery (CI/CD) pipeline usage patterns. When you use the manual option, you need to define your pre-provisioning scheme. You define your scheme based on your understanding of what agents in the pool are most likely to be used and how many agents are likely to be used. You specify a provisioning count of agents that meet the projected demand.
 
@@ -769,7 +769,7 @@ To schedule a standby agent to be available starting at `09:00:00` on the specif
 
 * * *
 
-### Start from scratch
+#### Start from scratch
 
 If you choose to start from scratch, you can add a list of provisioning periods as your provisioning scheme. Each provisioning period consists of a start day, end day, time zone, start time, end time, and count. Provisioning periods can't overlap each other.
 
@@ -893,7 +893,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 * * *
 
-### Weekday scheme
+#### Weekday scheme
 
 If you select the weekday scheme, you can specify a start time and end time, between which the specified number of standby agents are on standby each weekday.
 
@@ -1047,7 +1047,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 * * *
 
-### All-week scheme
+#### All-week scheme
 
 If you choose the all-week scheme, you can specify the number of agents that you want available all the time.
 
@@ -1136,7 +1136,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 * * *
 
-## Automatic
+### Automatic
 
 If you don't know your usage patterns and want to rely on automatic forecasting based on past data, select **Automatic**. You can balance between cost and agent performance by using a slider with the following five options. Managed DevOps Pools runs a query over your past three weeks of historical data (if available). It organizes queued sessions of the pool into five-minute periods and assigns the specified percentile (to avoid spikes) to each hour.
 
