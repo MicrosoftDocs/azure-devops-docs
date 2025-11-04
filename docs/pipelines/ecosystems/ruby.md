@@ -15,13 +15,6 @@ monikerRange: "<=azure-devops"
 
 Learn how to use Azure Pipelines to automatically build, test, and deploy your Ruby applications. 
 
-This guide covers:
-- Setting up a basic Ruby pipeline
-- Configuring different Ruby versions
-- Installing dependencies with Bundler
-- Running tests and publishing results
-- Collecting code coverage metrics
-
 ## Prerequisites
 
 ::: moniker range=">=azure-devops"
@@ -204,8 +197,3 @@ steps:
     failIfCoverageEmpty: true
   displayName: 'Publish code coverage'
 ```
-
-
-## Build an image and push to container registry
-
-For your Ruby app, you can [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
