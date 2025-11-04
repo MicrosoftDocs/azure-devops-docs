@@ -108,7 +108,6 @@ You can delete a field and later restore it. Deleting a field deletes all data a
 
 Instead of deleting a field, you can hide or remove the field from a work item form. For details, see [Show, hide, or remove a field](customize-process-field.md#show-hide-remove-field).
 
-
 <a id="field-customizations"></a>
 ## Field customizations 
 
@@ -267,8 +266,6 @@ As the display width decreases, the columns resize proportionally as follows:
 ## Backlog and board customizations 
 
 [!INCLUDE [temp](../includes/process-customize-backlogs.md)]
-
-[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
 
 Changing the default WIT for a backlog level causes the WIT to appear by default in the quick add panel. For example, **Customer Ticket** appears by default in the following quick add panel for the product backlog.
 
