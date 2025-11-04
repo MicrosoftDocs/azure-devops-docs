@@ -251,7 +251,7 @@ You can select from the following types of images:
 * [Selected marketplace images](#selected-marketplace-images): Select from a curated set of Microsoft-published marketplace VM images.
 * [Azure Compute Gallery images](#azure-compute-gallery-images): Select from your own Azure Compute Gallery images. You must assign the **Reader** role to the `DevOpsInfrastructure` service principal for the Azure Compute Gallery images that you want to use. For more information, see [Grant Reader role access to the `DevOpsInfrastructure` service principal](#grant-reader-role-access-to-the-devopsinfrastructure-service-principal).
 
-## Azure Pipelines images
+### Azure Pipelines images
 
 Managed DevOps Pools provides several preconfigured images that have the same software as selected Microsoft-hosted agents for Azure Pipelines.
 
@@ -322,7 +322,7 @@ Each image includes the following installed software:
 > [!IMPORTANT]
 > [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
 
-## Selected marketplace images
+### Selected marketplace images
 
 Managed DevOps Pools provides a curated set of Microsoft-published marketplace VM images to use in your pools.
 
@@ -369,7 +369,7 @@ images: [
 
 * * *
 
-## Azure Compute Gallery images
+### Azure Compute Gallery images
 
 Select **Azure Compute Gallery images** to specify an image from any gallery available in your subscriptions. [Generalized](/azure/virtual-machines/generalize) images with the following operating systems are supported:
 
