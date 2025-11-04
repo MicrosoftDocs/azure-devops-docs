@@ -31,9 +31,9 @@ Agents in the **Agents** list can have the following statuses.
 | Status | Description |
 |--------|-------------|
 | **Ready**  | The agent is online and ready to accept jobs. You see this status if you have standby agents configured or stateful pools with a grace period. |
-| **NotReady** | A stateful agent job has finished, but the agent isn't ready to accept a new job. |
+| **NotReady** | A stateful agent job finished, but the agent isn't ready to accept a new job. |
 | **Allocated** | The agent is running a job. |
-| **PendingReimage** | The agent job has finished and the agent is ready to be reimaged. This status is typical for stateless agents with **Standby agent mode** enabled. |
+| **PendingReimage** | The agent job finished, and the agent is ready to be reimaged. This status is typical for stateless agents with **Standby agent mode** enabled. |
 | **Reimaging** | The agent is being prepared with a fresh image. This status is typical for stateless agents with **Standby agent mode** enabled. |
 | **Starting** | The agent is starting up and should be ready to accept jobs when it finishes starting. |
 | **PendingReturn** | The agent is preparing to shut down. This status is typical for stateless agents with **Standby agent mode** disabled. |
