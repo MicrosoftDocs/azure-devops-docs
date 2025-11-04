@@ -474,7 +474,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 * * *
 
-## Pool administration permissions
+## Configure pool administration permissions
 
 As part of the Managed DevOps Pool creation process, an agent pool is created at the Azure DevOps organization level, and a project level agent pool is created in each designated project. The **Pool administration permissions** setting specifies which users are granted the administrator permission on the newly created agent pools in Azure DevOps. To view and manage the Azure DevOps agent pool permissions after the Managed DevOps Pool is created, see [Create and manage agent pools: Security of agent pools](/azure/devops/pipelines/agents/pools-queues#security).
 
@@ -595,7 +595,7 @@ organizationProfile: {
 
 * * *
 
-## Key vault configuration
+## Configure a key vault
 
 Managed DevOps Pools offers the ability to fetch certificates from an Azure key vault during provisioning. The certificates already exist on the machine by the time it runs your pipelines.
 
