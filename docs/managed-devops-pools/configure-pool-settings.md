@@ -228,7 +228,7 @@ By default, your pool is available to all projects in your specified organizatio
 
 Specify the maximum number of agents that can be provisioned at the same time in your pool. For example, if you specify a **Maximum agents** value of **2**, you can run a maximum of two agents at the same time. If more than two jobs are queued, only two agents run jobs, while the other jobs wait.
 
-You can view the current status and count of the provisioned agents in your pool by using the [Agents](./view-agents.md) pane. All of the agents in the **Agents** view (except agents with a **Returned** status) run on a virtual machine resource, and count towards the **Maximum agents** count.
+You can view the current status and count of the provisioned agents in your pool by using the [Agents](./view-agents.md) pane. All of the agents in the **Agents** view (except agents with a **Returned** status) run on a virtual machine resource, and count toward the **Maximum agents** count.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -385,7 +385,7 @@ If your subscription doesn't have the capacity to configure your pool with the A
 
 To resolve the issue, see [Review Managed DevOps Pools quotas](./prerequisites.md#review-managed-devops-pools-quotas).
 
-Not all SKUs are supported for all Azure regions. If you receive an error like `SKU family <sku-family> is not available in location <region>`, ensure your SKU size is supported for your region. For more information, see [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes) and [Products available by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/).
+Not all SKUs are supported for all Azure regions. If you receive an error like `SKU family <sku-family> is not available in location <region>`, ensure that your SKU size is supported for your region. For more information, see [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes) and [Products available by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/).
 
 ### OS disk type
 
@@ -493,10 +493,10 @@ Managed DevOps Pools provides you with several VM image options to use to run pi
 You can configure your pool to use a single image or multiple images. You can also use aliases to configure your pipelines to use a specific image. For more information, see [Configure Managed DevOps Pools images](./configure-images.md).
 
 > [!IMPORTANT]
-> If you have multiple images in your pool, and don't use [demands in your pipelines to designate an image](./configure-images.md#use-multiple-images-per-pool-with-aliases), the pipelines run by using the first listed image in your pool. You can change the order of the images in your pool in the following ways:
+> If you have multiple images in your pool, and you don't use [demands in your pipelines to designate an image](./configure-images.md#use-multiple-images-per-pool-with-aliases), the pipelines run by using the first listed image in your pool. You can change the order of the images in your pool in the following ways:
 >
->* Using [templates](./configure-images.md?tabs=arm#choose-your-pools-image): Change the order of the images in the `images` list in the `fabricProfile` section.
->* Using drag and drop: Order the images in the images list in the Azure portal.
+>* Use [templates](./configure-images.md?tabs=arm#choose-your-pools-image): Change the order of the images in the `images` list in the `fabricProfile` section.
+>* Use dragging: Order the images in the images list in the Azure portal.
 
 ## Related content
 
