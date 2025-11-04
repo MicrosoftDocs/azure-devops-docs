@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 # Build and test Ruby apps
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Learn how to use Azure Pipelines to automatically build, test, and deploy your Ruby applications. 
 
