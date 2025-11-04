@@ -17,9 +17,6 @@ Learn how to configure security settings for Managed DevOps Pools. There are two
 
 By default, pools that you create with Managed DevOps Pools are configured for all projects in a single organization. You can optionally limit access to specific projects in the organization, and you can also grant access to other organizations.
 
-* [Use pool with a single organization](#use-pool-with-a-single-organization)
-* [Use pool in multiple organizations](#use-pool-in-multiple-organizations)
-
 If you configure your pool and grant access to all projects, the pool is added to the projects for which you have the appropriate permissions. If you configure your pool and grant access to specific projects, you must have permission to add the pool in all of the designated projects, or the pool creation fails.
 
 To see the permissions required to configure Managed DevOps Pools in your organization and projects, see [Prerequisites: Verify Azure DevOps permissions](./prerequisites.md#verify-azure-devops-permissions).
@@ -74,7 +71,7 @@ The `organizationProfile` section has the following properties.
 | Property | Description |
 |------|-------------|
 | `organizations` | A list of the organizations that can use your pool. The `url` property specifies the URL of the organization. The `projects` property is a list of project names that can use the pool (an empty list supports all projects in the organization). The `parallelism` property specifies the number of agents that the organization can use. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
-| `permissionProfile` | This value specifies the permission you grant to the Azure DevOps pool when you create it. You can only set this value when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If you specify `specificAccounts`, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
+| `permissionProfile` | This value specifies the permission you grant to the Azure DevOps pool when you create it. You can set this value only when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If you specify `specificAccounts`, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
 | `kind` | This value specifies the type of organization for the pool, and must be set to `Azure DevOps`. |
 
 #### [Azure CLI](#tab/azure-cli/)
@@ -110,7 +107,7 @@ The `organizationProfile` section has the following properties.
 |------|-------------|
 | `AzureDevOps` | This value is the name of the object defined in `organization-profile` and must be set to `Azure DevOps`. |
 | `organizations` | A list of the organizations that can use your pool. `openAccess` specifies whether Managed DevOps Pools configures [open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) for the pool during pool creation. The `url` property specifies the URL of the organization. The `projects` property is a list of project names that can use the pool (an empty list supports all projects in the organization). The `parallelism` property specifies the number of agents that this organization can use. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
-| `permissionProfile` | This property specifies the permission you grant to the Azure DevOps pool when you create it. You can only set this value when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If you specify `specificAccounts`, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
+| `permissionProfile` | This property specifies the permission you grant to the Azure DevOps pool when you create it. You can set this value only when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If you specify `specificAccounts`, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
 
 #### [Bicep](#tab/bicep/)
 
@@ -143,7 +140,7 @@ The `organizationProfile` section has the following properties.
 | Property | Description |
 |------|-------------|
 | `organizations` | A list of the organizations that can use your pool. The `url` property specifies the URL of the organization. The `projects` property is a list of project names that can use the pool (an empty list supports all projects in the organization). The `parallelism` property specifies the number of agents that this organization can use. The sum of the parallelism for the organizations must match the maximum agents setting for the pool. |
-| `permissionProfile` | This property specifies the permission you grant to the Azure DevOps pool when you create it. You can only set this value when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If `specificAccounts` is specified, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
+| `permissionProfile` | This property specifies the permission you grant to the Azure DevOps pool when you create it. You can set this value only when you create a pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`. If `specificAccounts` is specified, provide a single email address or a list of email addresses for the `users` property. Otherwise, omit `users`. For more information, see [Pool administration permissions](./configure-security.md#pool-administration-permissions). |
 | `kind` | This value specifies the type of organization for the pool, and must be set to `Azure DevOps`. |
 
 * * *
@@ -153,17 +150,17 @@ The `organizationProfile` section has the following properties.
 
 #### [Azure portal](#tab/azure-portal/)
 
-To use your pool with multiple Azure DevOps organizations, enable **Use pool in multiple organizations**. For each organization, specify the projects that are permitted to use the pool, or leave this field blank to allow all projects. Configure the **Parallelism** for each organization by specifying what portions of the concurrency, as specified by **Maximum agents** value for the pool, to allocate to each organization. The sum of the parallelism for all organizations must equal the maximum concurrency of the pool. For example, if **Maximum agents** is set to five, the sum of the parallelism for the specified organizations must be five. If the **Maximum agents** value is set to one, you can only use the pool with one organization.
+To use your pool with multiple Azure DevOps organizations, enable **Use pool in multiple organizations**. For each organization, specify the projects that are permitted to use the pool, or leave this field blank to allow all projects. Configure the **Parallelism** for each organization by specifying what portions of the concurrency, as specified by **Maximum agents** value for the pool, to allocate to each organization. The sum of the parallelism for all organizations must equal the maximum concurrency of the pool. For example, if **Maximum agents** is set to five, the sum of the parallelism for the specified organizations must be five. If the **Maximum agents** value is set to one, you can use the pool with only one organization.
 
 In the following example, the pool is configured to be available for the **FabrikamResearch** and **FabrikamTest** projects in the **fabrikam-tailspin** organization, and to all projects in the **fabrikam-blue** organization.
 
 :::image type="content" source="./media/configure-security/use-pool-multiple-organizations.png" alt-text="Screenshot that shows how to configure multiple organizations.":::
 
-If you receive an error like `The sum of parallelism for all organizations must equal the max concurrency.`, ensure that the [Maximum agents](./configure-pool-settings.md#maximum-agents) count for the pool matches the sum of the **Parallelism** column.
+If you receive an error like `The sum of parallelism for all organizations must equal the max concurrency`, ensure that the [Maximum agents](./configure-pool-settings.md#maximum-agents) count for the pool matches the sum of the **Parallelism** column.
 
 #### [ARM template](#tab/arm/)
 
-To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can only use it with two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can use it with only two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
 
 ```json
 "organizationProfile": {
@@ -196,7 +193,7 @@ az mdp pool create \
    # other parameters omitted for space
 ```
 
-To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can only use it with two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can use it with only two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
 
 ```json
 {
@@ -220,7 +217,7 @@ To configure your pool so that multiple organizations can use it, add more organ
 
 #### [Bicep](#tab/bicep/)
 
-To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can only use it with two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
+To configure your pool so that multiple organizations can use it, add more organizations to the organizations list. The following example has two organizations configured. The first organization is configured to use Managed DevOps Pools for all projects, and the second organization can use it with only two projects. In this example, the maximum agents setting for the pool is four, and each organization can use two of these four agents.
 
 ```bicep
 organizationProfile: {
@@ -261,7 +258,7 @@ Azure DevOps provides the following modes to authorize pipelines to run in an ag
 
 Enable **Allow all pipelines to run on the pool without an approval (open access)** to configure the **Open access** agent pool setting in Azure DevOps when you create the pool.
 
-You can only configure the **Allow all pipelines to run on the pool without an approval (open access)** setting in Managed DevOps Pools when you create the pool. After the pool is created, you can view and configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
+You can configure the **Allow all pipelines to run on the pool without an approval (open access)** setting in Managed DevOps Pools only when you create the pool. After the pool is created, you can view and configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -309,7 +306,7 @@ You can configure organizations in the `organizationProfile` property of the Man
 }
 ```
 
-You can only configure **Open access** when you create a pool. To change the [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) setting after you create a pool (including adding or removing projects from your Managed DevOps Pools configuration), you must manually configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
+You can configure **Open access** only when you create a pool. To change the [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) setting after you create a pool (including adding or removing projects from your Managed DevOps Pools configuration), you must manually configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
 
 #### [Azure CLI](#tab/azure-cli/)
 
@@ -346,7 +343,7 @@ The following `orgaization-profile` example has two organizations configured:
 }
 ```
 
-You can only configure **Open access** when you create a pool. To change the Open access setting after you create a pool (including adding or removing projects from your Managed DevOps Pools configuration), you must manually configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
+You can configure **Open access** only when you create a pool. To change the Open access setting after you create a pool (including adding or removing projects from your Managed DevOps Pools configuration), you must manually configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
 
 #### [Bicep](#tab/bicep/)
 
@@ -381,11 +378,11 @@ organizationProfile: {
 }
 ```
 
-You can only configure **Open access** when you create a pool. To change the [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) setting after you create a pool (including adding or removing projects from your Managed DevOps Pools configuration), you must manually configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
+You can configure **Open access** only when you create a pool. To change the [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) setting after you create a pool (including adding or removing projects from your Managed DevOps Pools configuration), you must manually configure [Open access](../pipelines/policies/permissions.md#set-pipeline-permissions-for-an-individual-agent-pool) on the corresponding [agent pool](../pipelines/agents/pools-queues.md) in Azure DevOps for each project that uses the pool.
 
 * * *
 
-If you try to run a pipeline that isn't authorized to access your agent pool, you receive an error like, "This pipeline needs permission to access a resource before this run can continue." You can resolve this issue by configuring open access, as described in the previous section, or by [explicitly authorizing the pipeline to run in the agent pool](../pipelines/troubleshooting/troubleshooting.md#this-pipeline-needs-permission-to-access-a-resource-before-this-run-can-continue).
+If you try to run a pipeline that isn't authorized to access your agent pool, you receive an error like "This pipeline needs permission to access a resource before this run can continue." You can resolve this issue by configuring open access, as described in the previous section, or by [explicitly authorizing the pipeline to run in the agent pool](../pipelines/troubleshooting/troubleshooting.md#this-pipeline-needs-permission-to-access-a-resource-before-this-run-can-continue).
 
 ## Configure interactive mode
 
@@ -506,7 +503,7 @@ You can configure pool administration permissions in the `permissionsProfile` pr
 }
 ```
 
-You can only set the `permissionProfile` when you create the pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`.
+You can set the `permissionProfile` property only when you create the pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`.
 
 * `CreatorOnly`: This setting adds the user who created the Managed DevOps Pool as an administrator of the Azure DevOps agent pool, and sets **Inheritance** to **Off** in the agent pool security settings. **Creator only** is the default setting.
 * `Inherit`: This setting adds the user who created the Managed DevOps Pool as an administrator of the Azure DevOps agent pool, and sets **Inheritance** to **On** in the agent pool security settings.
@@ -545,7 +542,7 @@ az mdp pool create \
 }
 ```
 
-You can only set the `permissionProfile` property when you create the pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`.
+You can set the `permissionProfile` property only when you create the pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`.
 
 * `CreatorOnly`: This setting adds the user who created the Managed DevOps Pool as an administrator of the Azure DevOps agent pool, and sets **Inheritance** to **Off** in the agent pool security settings. **Creator only** is the default setting.
 * `Inherit`: This setting adds the user who created the Managed DevOps Pool as an administrator of the Azure DevOps agent pool, and sets **Inheritance** to **On** in the agent pool security settings.
@@ -579,7 +576,7 @@ organizationProfile: {
 }
 ```
 
-You can only set the `permissionProfile` property when you create the pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`.
+You can set the `permissionProfile` property only when you create the pool. Allowed values are `Inherit`, `CreatorOnly`, and `SpecificAccounts`.
 
 * `CreatorOnly`: This setting adds the user who created the Managed DevOps Pool as an administrator of the Azure DevOps agent pool, and sets **Inheritance** to **Off** in the agent pool security settings. **Creator only** is the default setting.
 * `Inherit`: This setting adds the user who created the Managed DevOps Pool as an administrator of the Azure DevOps agent pool, and sets **Inheritance** to **On** in the agent pool security settings.
@@ -600,13 +597,13 @@ organizationProfile: {
 
 ## Key vault configuration
 
-Managed DevOps Pools offers the ability to fetch certificates from an Azure Key Vault during provisioning. The certificates already exist on the machine by the time it runs your pipelines.
+Managed DevOps Pools offers the ability to fetch certificates from an Azure key vault during provisioning. The certificates already exist on the machine by the time it runs your pipelines.
 
 To use this feature, you must:
 
 * Configure an [identity on your pool](configure-identity.md). You must give this identity **Key Vault Secrets User** permission to fetch the secret from your key vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to key vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
 * The principal that configures key vault integration settings (your account if you're configuring key vault settings) must have the **Key Vault Certificate User** role assignment on the key vault where the certificates are stored.
-* To enforce network isolation for your Azure Key Vault instance to only permit authorized resources access, you must add the following IP addresses to your [Azure Key Vault allowlist](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips). The following IP address ranges are in an [Azure service tag](/azure/virtual-network/service-tags-overview) named **DevOpsInfrastructure**.
+* To enforce network isolation for your Azure Key Vault instance to only permit authorized resources access, you must add the following IP addresses to your [Azure Key Vault allow list](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips). The following IP address ranges are in an [Azure service tag](/azure/virtual-network/service-tags-overview) named **DevOpsInfrastructure**.
 
   | Location            | IP address range        |
   |---------------------|-------------------------|
@@ -624,19 +621,19 @@ To use this feature, you must:
   | westus3             | 57.154.125.208/28       |
 
 > [!NOTE]
-> As of `api-version 2025-01-21`, if you use this feature, you can only use a single identity on the pool.
+> As of `api-version 2025-01-21`, if you use this feature, you can use only a single identity on the pool.
 >
-> You can only use one identity to fetch secrets from the key vault.
+> You can use only one identity to fetch secrets from the key vault.
 >
 > You set Managed DevOps Pools certificate settings at the pool level, and some of the settings are specific for Windows or Linux. If your workflow requires both Linux and Windows images, you might have to divide them into multiple pools if you can't find a common set of certificate settings that work for both Windows and Linux.
 
-The following settings configure the certificates fetched from your key vault.
+The following settings configure the certificates fetched from your key vault:
 
 * **Certificates** (`observedCertificates`): This setting specifies the certificates to be fetched from your key vault and installed on all machines in your pool.
 * **Certificate store location** (`certificateStoreLocation`): This setting specifies the location to install the certificates on your agent.
   * **Windows agents**: Specify `LocalMachine` or `CurrentUser`.
-  * **Linux agents**: The setting **Certificate store location** is only supported on Ubuntu distributions. Specify the disk path to store the certificates (for example `/var/lib/waagent/Microsoft.Azure.KeyVault/app1`).
-     For Ubuntu distributions, if you specify the trusted store location (for example `/usr/local/share/ca-certificates`), the certificate is added to that certificate store as root. For more information, see [Install a root CA certificate in the trust store](https://documentation.ubuntu.com/server/how-to/security/install-a-root-ca-certificate-in-the-trust-store/index.html).
+  * **Linux agents**: The setting **Certificate store location** is only supported on Ubuntu distributions. Specify the disk path to store the certificates (for example, `/var/lib/waagent/Microsoft.Azure.KeyVault/app1`).
+     For Ubuntu distributions, if you specify the trusted store location (for example, `/usr/local/share/ca-certificates`), the certificate is added to that certificate store as root. For more information, see [Install a root CA certificate in the trust store](https://documentation.ubuntu.com/server/how-to/security/install-a-root-ca-certificate-in-the-trust-store/index.html).
 * **Certificate store name** (`certificateStoreName`)
   * **Windows agents**: This setting specifies the name of the certificate store. It's either `My` (local certificate store, which is the default if no name is specified) or `Root` (trusted root location).
   * **Linux agents**: This setting isn't used on Linux agents.
@@ -648,14 +645,14 @@ You can configure key vault integration in **Settings** > **Security**.
 
 :::image type="content" source="./media/configure-security/configure-keyvault.png" alt-text="Screenshot that shows how to configure key vault certificates.":::
 
-You can only configure key vault integration settings after you create the pool. You can't configure key vault integration settings when you create the pool. They're not displayed in the **Security** tab during pool creation.
+You can configure key vault integration settings only after you create the pool. You can't configure key vault integration settings when you create the pool. They're not displayed on the **Security** tab during pool creation.
 
 #### [ARM template](#tab/arm/)
 
-You can configure Azure Key Vault in the `osProfile` section of the `fabricProfile` property. Set the `secretManagementSettings` to be able to access the desired certificate.
+You can configure Azure Key Vault in the `osProfile` section of the `fabricProfile` property. Set `secretManagementSettings` to be able to access the desired certificate.
 
 > [!NOTE]
-> The `osProfile.certificateStoreName` property is only available in `apiVersion 2025-01-21` and later.
+> The `osProfile.certificateStoreName` property is available only in `apiVersion 2025-01-21` and later.
 
 ```json
 {
@@ -700,7 +697,7 @@ az mdp pool create \
    # other parameters omitted for space
 ```
 
-The following example shows the `osProfile` section of the **fabric-profile.json** file with `secretsManagementSettings`configured.
+The following example shows the `osProfile` section of the **fabric-profile.json** file with `secretsManagementSettings` configured.
 
 ```json
 {
@@ -724,10 +721,10 @@ The following example shows the `osProfile` section of the **fabric-profile.json
 
 #### [Bicep](#tab/bicep/)
 
-You can configure Azure Key Vault in the `osProfile` section of the `fabricProfile` property. Set the `secretManagementSettings` to be able to access the desired certificate.
+You can configure Azure Key Vault in the `osProfile` section of the `fabricProfile` property. Set `secretManagementSettings` to be able to access the desired certificate.
 
 > [!NOTE]
-> The `osProfile.certificateStoreName` property is only available in `apiVersion 2025-01-21` and later.
+> The `osProfile.certificateStoreName` property is available only in `apiVersion 2025-01-21` and later.
 
 ```bicep
 resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
@@ -770,6 +767,6 @@ For Linux, you can set the **Certificate Store Location** value to any directory
 
 * * *
 
-## See also
+## Related content
 
 * [Configure pool settings](./configure-pool-settings.md)
