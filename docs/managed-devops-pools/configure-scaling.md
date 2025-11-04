@@ -33,7 +33,7 @@ To learn more about the lifecycle of stateless agents and how they're used in Az
 
 #### [ARM template](#tab/arm/)
 
-You can configure agents by using the `agentProfile` property in the Managed DevOps Pools resource. The following example specifies a **Stateless** agent.
+You can configure agents by using the `agentProfile` property in the Managed DevOps Pools resource. The following example specifies a `Stateless` agent.
 
 ```json
 {
@@ -60,7 +60,7 @@ You can configure agents by using the `agentProfile` property in the Managed Dev
 
 You can configure agents by using the `agent-profile` parameter when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
-The following example specifies a **Stateless** agent with no standby agents.
+The following example specifies a `Stateless` agent with no standby agents.
 
 ```azurecli
 az mdp pool create \
@@ -78,7 +78,7 @@ The following example shows the contents of the **agent-profile.json** file.
 
 #### [Bicep](#tab/bicep/)
 
-You can configure agents by using the `agentProfile` property in the Managed DevOps Pools resource. The following example specifies a **Stateless** agent.
+You can configure agents by using the `agentProfile` property in the Managed DevOps Pools resource. The following example specifies a `Stateless` agent.
 
 ```bicep
 resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
@@ -132,7 +132,7 @@ When you set **Agent state** to **Fresh agent every time**, a new agent is procu
 
 You can configure agents by using the `agent-profile` parameter when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
-The following example specifies a **Stateful** agent with a seven-day maximum lifetime and a thirty-minute grace period.
+The following example specifies a `Stateful` agent with a seven-day maximum lifetime and a thirty-minute grace period.
 
 ```azurecli
 az mdp pool create \
@@ -140,7 +140,7 @@ az mdp pool create \
    # other parameters omitted for space
 ```
 
-The following example shows the contents of the **agent-profile.json** file.
+The following example shows the contents of the `agent-profile.json` file.
 
 ```json
 {
@@ -171,7 +171,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 * * *
 
-When you enable the **Same agent can be used by multiple builds** (the `"kind": "stateful"` setting in resources templates or the `{ "stateful": {...} }` setting in the Azure CLI), agents in the pool are stateful. You can configure stateful pools by using the following settings.
+When you enable **Same agent can be used by multiple builds** (the `"kind": "stateful"` setting in resources templates or the `{ "stateful": {...} }` setting in the Azure CLI), agents in the pool are stateful. You can configure stateful pools by using the following settings.
 
 * **Max time to live for standby agents** (`maxAgentLifetime`) configures the maximum duration an agent in a stateful pool can run before it's shut down and discarded. The format for **Max time to live for standby agents** is `dd.hh:mm:ss`. The default value of **Max time to live for standby agents** is set to the maximum allowed duration of seven days (`7.00:00:00`).
 * **Grace Period** (`gracePeriodTimeSpan`) configures the amount of time an agent in a stateful pool waits for new jobs before shutting down after all current and queued jobs finish. The format for **Grace Period** is `dd.hh:mm:ss` and the default is no grace period.
@@ -199,7 +199,7 @@ When you create a pool, **Standby agent mode** is off by default. When **Standby
 When you configure a standby agent schedule, Managed DevOps Pools periodically compares the count of provisioned agents with the standby agent count that you specify in the current provisioning scheme. It starts new agents as required to maintain the standby agent count. You can view the current status and count of the agents in your pool by using the [Agents](./view-agents.md) pane.
 
 > [!IMPORTANT]
-> The provisioning count in a scheme can't be greater than the **Maximum agents** that you configure in [Pool settings](configure-pool-settings.md#maximum-agents).
+> The provisioning count in a scheme can't be greater than the **Maximum agents** value that you configure in [Pool settings](configure-pool-settings.md#maximum-agents).
 
 You can configure standby agent mode by using the following settings:
 
@@ -252,7 +252,7 @@ az mdp pool create \
    # other parameters omitted for space
 ```
 
-The following example shows the contents of the **agent-profile.json** file:
+The following example shows the contents of the `agent-profile.json` file:
 
 ```json
 {
@@ -775,12 +775,12 @@ If you choose to start from scratch, you can add a list of provisioning periods 
 
 | Property | Description |
 |----------|-------------|
-| **Multi-Day** | When you select this option, you can configure both a **Start Day** and an **End Day** for your provisioning scheme. |
-| **Until next period** | When you select this option, the provisioning period runs from the **Start Time** until the start of the next provisioning period. |
+| **Multi-Day** | When you select this option, you can configure both **Start Day** and **End Day** for your provisioning scheme. |
+| **Until next period** | When you select this option, the provisioning period runs from the **Start Time** value until the start of the next provisioning period. |
 | **Start Day** | The day that the provisioning period starts. |
-| **End Day** | The day the provisioning period ends. You need to specify an **End Day** if **Multi-Day** is checked. |
+| **End Day** | The day the provisioning period ends. You need to specify **End Day** if **Multi-Day** is checked. |
 | **Start Time** | The time the provisioning period starts. |
-| **End Time** | The time the provisioning period ends. You need to specify an **End Time** unless **Until next period** is checked. |
+| **End Time** | The time the provisioning period ends. You need to specify **End Time** unless **Until next period** is checked. |
 | **Count** | The number of standby agents to provision. This number must be greater than zero, and must not be greater than the **Maximum agents** value in **Pool settings**. |
 
 After you create a provisioning period, you can delete or edit the period from the **Pre-provisioning scheme** list.
