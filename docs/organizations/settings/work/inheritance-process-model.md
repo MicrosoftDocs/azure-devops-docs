@@ -9,23 +9,22 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview 
 monikerRange: "<=azure-devops"
-ms.date: 11/03/2025
+ms.date: 11/04/2025
+#customer intent: As an Azure DevOps administrator, I want to understand process inheritance and customization so I can customize processes to better meet my organization's needs.
 ---
 
 # Process customization and inheritance
 
 [!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-To customize the Azure DevOps work tracking system, you can *customize* an inherited process through organization settings. All projects that use an inherited process get the customizations made to that process. You can then configure your project [backlogs, sprints, and boards](../about-teams-and-settings.md) for each project team.
+To tailor the Azure DevOps work tracking system to your organization's needs, you can customize an inherited process through organization settings. All projects in an organization that use an inherited process get the customizations you make to that process. You can then configure your project [backlogs, sprints, and boards](../about-teams-and-settings.md) for each project team.
 
 > [!IMPORTANT]  
 > This article applies to Azure DevOps Services only. To customize an on-premises project or update XML definition files to support customization, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md).
 
-You can make several customizations to processes. The most important ones are creating custom work item types (WITs) or modifying existing WITs to add custom fields, modify layouts, or change workflows.
+You can make several customizations to processes. The most important ones are creating custom work item types (WITs) or modifying existing WITs to add custom fields, modify layouts, or change workflows. Some options of inherited elements are locked and can't be customized.
 
-This article provides an overview of ways to customize inherited processes. Some options of inherited elements are locked and can't be customized.
-
-For information about limits on the number of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md).
+This article provides an overview of ways to customize inherited processes. For information about limits on the numbers of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md).
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
@@ -35,18 +34,18 @@ For information about limits on the number of fields, WITs, backlog levels, and 
 
 There are two types of processes:
 
-- The system processes [Agile, Basic, Scrum, and Capability Maturity Model Integration (CMMI)](../../../boards/work-items/guidance/choose-process.md) are locked and can't be changed by users. Microsoft owns the system processes and updates them periodically.
-- Inherited processes are customized and inherit definitions from the system processes they're based on. Any updates Microsoft makes to system processes automatically update in inherited processes and their child inherited processes.
+- The *system processes* [Agile, Basic, Scrum, and Capability Maturity Model Integration (CMMI)](../../../boards/work-items/guidance/choose-process.md) are locked and can't be changed by users. Microsoft owns the system processes and updates them periodically.
+- *Inherited processes* are customized and inherit definitions from the system processes they're based on. Any updates Microsoft makes to system processes automatically update in inherited processes and their child inherited processes.
 
 All processes can be shared by all projects in an organization. You customize the process instead of customizing a single project. Changes you make to the inherited process automatically update all projects in the organization that use that process.
 
-Once you create an inherited process, you can customize it, copy it, create projects based on it, and change existing projects to use it.
+Once you create an inherited process, you can customize it, copy it, create projects based on it, and change existing projects to use it. Consider maintaining single ownership of work items by team area path or by formalizing columns with custom states that share across teams.
 
-For example, the following image shows a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyScrum* process, which inherits from the *Scrum* system process.
+The following example shows a list of projects in the **fabrikamprime** organization and the process each project uses. To change the customizations of the **Fabrikam Fiber** project, you need to modify its **My Agile** process, which inherits from the **Agile** system process.
 
-Any changes you make to the *MyScrum* process also update other projects that use that process. You can't customize the *Query test* project unless you change it to a process that inherits from *Agile*.
+Any changes you make to the **My Agile** process also update other projects that use that process, such as **Agile by design**. To customize the **Fabrikam** project, you would need to change it to a process that inherits from **Scrum**.
 
-![Screenshot of Admin context, Organization settings, Project list and the process they use.](media/process/projects-list.png)
+:::image type="content" source="media/process/projects-list.png" alt-text="Screenshot of projects and the processes they use.":::
 
 ### Change the process of an existing project 
 
@@ -58,22 +57,26 @@ You can switch the process a project uses from one system process to another. Fo
 
 By following the general guidance in the listed articles, you can make other changes such as from CMMI to Agile or Agile to CMMI. Before you change a project process, familiarize yourself with the process you're changing to. For more information, see [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
-[!INCLUDE [temp](../includes/fields-become-invalid-after-customization.md)] 
-
-### Change an inherited process
-
-Making changes to an inherited process is straightforward, but it's best to test the changes before applying them to an active project. You can [copy a process](./manage-process.md#copy-a-process) and make your changes to the copied process first to avoid affecting existing projects and help you surface any negative effects of the process changes.
+When you transition a project to a different process, some existing tools or work items might become invalid. For example, work items that lack a field required in the new process might display errors, or board column configurations might need updating. For more information, see the preceding listed articles about changing each process.
 
 <a id="process-naming"></a>
-### Rename an inherited process
+### Change or rename an inherited process
 
-To rename an inherited process, select the **More actions** icon next to the process name in **Organization Settings** > **Boards** > **Processes** > **All processes**. Select **Edit** on the context menu and then enter a new process name.
+Changing an inherited process is straightforward, but it's best to test the changes before applying them to an active project. You can [copy a process](./manage-process.md#copy-a-process) and make your changes to the copied process first to avoid affecting existing projects and help you surface any negative effects of the process changes.
 
-Process names must be unique in the organization, 128 Unicode characters or less, and can't contain the following characters: `.` `,` `;` `'` `:` `~` `\` `/` `*` `|` `?` `"` `&` `%` `$` `!` `+` `=` `(` `)` `[` `]` `{` `}` `<` `>`.
+You can rename an inherited process in **Organization Settings** > **Boards** > **Processes** > **All processes**. Select the **More actions** icon next to the process name and select **Edit** on the context menu.
+
+### Process names
+
+Process names have the following limitations:
+
+- Must be unique in the organization
+- Must have 128 Unicode characters or less
+- Can't contain any of the following characters: `.` `,` `;` `'` `:` `~` `\` `/` `*` `|` `?` `"` `&` `%` `$` `!` `+` `=` `(` `)` `[` `]` `{` `}` `<` `>`.
 
 ## Inherited objects and custom objects 
 
-Each inherited process you create inherits the WITs defined in the underlying Basic, Agile, Scrum, or CMMI system process. For example, the Agile process provides *Bug*, *Task*, *User story*, *Feature*, *Epic*, *Issue*, and test-related WITs.
+Each inherited process you create inherits the WITs defined in the underlying Basic, Agile, Scrum, or CMMI system process. For example, processes that inherit from Agile provide *Bug*, *Task*, *User story*, *Feature*, *Epic*, *Issue*, and test-related WITs.
 
 #### [Agile process](#tab/agile-process) 
 
@@ -106,7 +109,7 @@ This section describes WIT fields.
 <a id="delete-restore"></a>
 ### Delete or restore deleted fields
 
-You can delete a field and later restore it. Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update).
+You can delete a field and later restore it. Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update](/rest/api/azure/devops/wit/fields/update) REST API.
 
 Instead of deleting a field, you can hide or remove the field from a work item form. For details, see [Show, hide, or remove a field](customize-process-field.md#show-hide-remove-field).
 
@@ -115,11 +118,11 @@ Instead of deleting a field, you can hide or remove the field from a work item f
 
 Fields are defined for all projects and processes in an organization. Fields defined in system processes appear with an inherited icon, indicating that you can make limited modifications to them in your inherited processes.
 
-You can add any custom field you define for a WIT in one process to any WIT defined for another process. You can also [add an existing field](customize-process-field.md#add-existing-field) to another WIT within the same process. For example, you can add **Due Date** to the User story or Bug WITs.
+You can add any custom field you define for a WIT in one process to any WIT defined for another process. You can also [add an existing field](customize-process-field.md#add-existing-field) to another WIT within the same process. For example, you can add **Due Date** to the **User story** or **Bug** WITs.
 
 ### Customize fields and controls
 
-The following resources describe how to implement various customizations for inherited field, custom fields, or custom controls.
+The following resources describe how to implement various customizations for inherited fields, custom fields, or custom controls.
 
 **Inherited fields**
 - [Change the field label](customize-process-field.md#rename-field)  
@@ -165,7 +168,7 @@ Each WIT has several system rules defined, like requiring the **Title** field or
 
 For example, several rules copy the current user identity to the **Changed By** field when a work item is modified or to the **Closed By** field when the workflow state changes to **Closed** or **Done**. Predefined system rules take precedence over any custom rules that would overwrite them.
 
-Custom rules provide support for several business use cases, letting you go beyond setting a default value for a field or make it required. Custom rules allow you to clear the value of a field, copy a value into a field, or apply values based on dependencies between different field values.
+Custom rules provide support for several business use cases, letting you go beyond setting a default value for a field or making it required. Custom rules allow you to clear the value of a field, copy a value into a field, or apply values based on dependencies between different field values.
 
 With custom rules, you can define various actions based on specific conditions. For example, you can apply rules to support the following scenarios:
 
@@ -177,7 +180,8 @@ With custom rules, you can define various actions based on specific conditions. 
 
 For more information about defining custom rules, see [Rules and rule evaluation](../../../organizations/settings/work/custom-rules.md). 
 
-[!INCLUDE [temp](../includes/tip-formula-rule.md)]
+> [!TIP]
+> You can't define a formula by using a rule. However, you might find a solution that fits your needs with [Power Automate](/connectors/visualstudioteamservices/). For more information, see [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
 
 ### Restrict modification of select fields for select user groups
 
@@ -185,7 +189,7 @@ By using the conditions `current user is a member of a group...` or `current use
 
 ### Restrict modification of work items based on Area Path 
 
-You can disallow users from modifying selected work items by setting permissions on an Area path. This setting isn't a rule, but a permission setting. For more information, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
+You can disallow users from modifying selected work items by setting permissions on an Area path. This setting isn't a rule, but a permission setting. For more information, see [Create child nodes, modify work items under an area or iteration path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 ## Work item type customizations
 
@@ -215,10 +219,10 @@ The following resources describe customization options for inherited and custom 
 
 - You can't add or remove an inherited WIT to or from a backlog.
 - You can't change the position of an inherited field within the form layout. However, you can hide the field in one area of the form and add it elsewhere in the form.
-- You can't remove the inherited portfolio level from the product, but you can rename it.
+- You can't remove an inherited portfolio level from a product, but you can rename it.
 - You can't change the name of a custom WIT.
 
-### Work item form customizations 
+## Work item form customizations 
 
 You can make the following customizations to a WIT form: 
 
@@ -245,9 +249,9 @@ You can make the following customizations to a WIT form:
 <a id="resizing">  </a>  
 ### Layout and resizing
 
-The web form layout is organized into three columns, as shown in the following image. 
+The web form layout for a work item is organized into three columns, as shown in the following image. 
 
-![Illustration of 3-column page layout for work item form.](media/process/cpform-3-column-layout.png)
+:::image type="content" source="media/process/media/process/cpform-3-column-layout.png" alt-text="Illustration of 3-column page layout for work item form." border="false":::
 
 If you only add groups and fields to the first two columns, the layout shows two columns. If you only add groups and fields to the first column, the layout shows one column.
 
@@ -267,14 +271,14 @@ As the display width decreases, the columns resize proportionally as follows:
 
 [!INCLUDE [temp](../includes/process-customize-backlogs.md)]
 
-Changing the default WIT for a backlog level causes the WIT to appear by default in the quick add panel. For example, **Customer Ticket** appears by default in the following quick add panel for the product backlog.
+Changing the default WIT for a backlog level causes the WIT to appear by default in the quick add panel. For example, **Custom Story** appears by default in the following quick add panel for the product backlog.
 
-![Screenshot of Product backlog, Quick Add Panel, Displays Default WIT for a backlog level](media/process/process-backlog-boards-quick-add-panel.png)
+:::image type="content" source="media/process/process-backlog-boards-quick-add-panel.png" alt-text="Screenshot of the quick add panel with a default custom work item type.":::
 
 ## Related content
 
-- [Use backlogs to manage projects](../backlogs/backlogs-overview.md)
-- [Configure and customize Azure Boards](../configure-customize.md)
-- [Create a project using the process of your choice](../../organizations/projects/create-project.md)
-- [Customize your work tracking experience](../../reference/customize-work.md)
-- [Create and manage inherited processes](../../organizations/settings/work/manage-process.md)
+- [Use backlogs to manage projects](../../../boards/backlogs/backlogs-overview.md)
+- [Configure and customize Azure Boards](../../../boards/configure-customize.md)
+- [Create a project using the process of your choice](../../projects/create-project.md)
+- [Customize your work tracking experience](../../../reference/customize-work.md)
+- [Create and manage inherited processes](manage-process.md)
