@@ -37,8 +37,8 @@ Before you change your process, you should learn about the new process you're sw
 
 | Process | Work item types | Workflow |
 |------|---------|---------|
-|**Basic** | ![Basic work item types](../../../boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)|![basic workflow](../../../boards/get-started/media/track-issues/basic-process-workflow.png)|
-|**Agile** | ![Agile work item types](media/scrum-to-agile/agile-process-plan-wits.png)|![Agile workflow](../../../boards/get-started/media/about-boards/agile-process-workflow.png)|
+|**Basic** | ![Diagram that shows Basic work item types.](../../../boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)|![Diagram that shows basic workflow.](../../../boards/get-started/media/track-issues/basic-process-workflow.png)|
+|**Agile** | ![Diagram that shows Agile work item types.](media/scrum-to-agile/agile-process-plan-wits.png)|![Diagram that shows Agile workflow.](../../../boards/get-started/media/about-boards/agile-process-workflow.png)|
 
 <!--- QUESTION: What happens to Analytics data when you do this change?  -->
 
