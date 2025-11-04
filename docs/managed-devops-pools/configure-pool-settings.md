@@ -16,7 +16,7 @@ To view an overview of pool settings, go to **Overview**.
 
 :::image type="content" source="media/pool-settings/essentials.png" alt-text="Screenshot that shows pool overview essentials." lightbox="media/pool-settings/essentials-expanded.png":::
 
-From the **Overview** page, you can:
+From **Overview**, you can:
 
 * View your resource group and subscription details, and [move Azure resources to a new resource group or subscription](/azure/azure-resource-manager/management/move-resource-group-and-subscription).
 * View the location of your pool. To view the supported locations, follow the procedure in [Register the Managed DevOps Pools resource provider in your Azure subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
@@ -43,13 +43,13 @@ To configure your pool, use the following settings:
 
 #### [Azure portal](#tab/azure-portal/)
 
-Select the **Dev Center project** for your pool. (If you don't have one, you can create a **Dev Center** and **Dev Center project** when you create your pool.)
+Select the **Dev Center project** instance for your pool. (If you don't have one, you can create a **Dev Center** instance and **Dev Center project** instance when you create your pool.)
 
 :::image type="content" source="media/pool-settings/dev-center.png" alt-text="Screenshot that shows Dev Center settings.":::
 
 #### [ARM template](#tab/arm/)
 
-The `devCenterProjectResourceId` property specifies the **Dev Center project**.
+The `devCenterProjectResourceId` property specifies the **Dev Center project** instance.
 
 ```json
 {
@@ -70,9 +70,9 @@ The `devCenterProjectResourceId` property specifies the **Dev Center project**.
 }
 ```
 
-You can retrieve the `devCenterProjectResourceId` value for your **Dev Center project** in the Azure portal by using the **JSON View** from the overview page of your Dev Center project. You can also retrieve it by using the Azure CLI to query the project for its `id` property. 
+You can retrieve the `devCenterProjectResourceId` value for a **Dev Center project** instance in the Azure portal by using **JSON View** from the overview page of your **Dev Center project** instance. You can also retrieve it by using the Azure CLI to query the project for its `id` property. 
 
-In the following example, the `devCenterProjectResourceId` value is retrieved from a **Dev Center project** named `fabrikam-dev-center-project` in the `fabrikam-managed-devops-pools` resource group.
+In the following example, the `devCenterProjectResourceId` value is retrieved from a **Dev Center project** instance named `fabrikam-dev-center-project` in the `fabrikam-managed-devops-pools` resource group.
 
 ```azurecli
  az devcenter admin project show --name fabrikam-dev-center-project --resource-group fabrikam-managed-devops-pools --query "id"
@@ -80,7 +80,7 @@ In the following example, the `devCenterProjectResourceId` value is retrieved fr
 
 #### [Azure CLI](#tab/azure-cli/)
 
-The `devcenter-project-id` parameter specifies the **Dev Center project** when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
+The `devcenter-project-id` parameter specifies the **Dev Center project** instance when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
 ```azurecli
 az mdp pool create \
@@ -88,9 +88,9 @@ az mdp pool create \
    # other parameters omitted for space
 ```
 
-You can retrieve the `devcenter-project-id` for your **Dev Center project** in the Azure portal by using the **JSON View** from the **Overview** page of your **Dev Center project**. You can also retrieve it by using the Azure CLI to query the project for its `id` property. 
+You can retrieve the `devcenter-project-id` for your **Dev Center project** instance in the Azure portal by using **JSON View** from the **Overview** page of your **Dev Center project** instance. You can also retrieve it by using the Azure CLI to query the project for its `id` property. 
 
-In the following example, the `devcenter-project-id` is retrieved from a **Dev Center project** named `fabrikam-dev-center-project` in the `fabrikam-managed-devops-pools` resource group.
+In the following example, the `devcenter-project-id` is retrieved from a **Dev Center project** instance named `fabrikam-dev-center-project` in the `fabrikam-managed-devops-pools` resource group.
 
 ```azurecli
  az devcenter admin project show --name fabrikam-dev-center-project --resource-group fabrikam-managed-devops-pools --query "id"
@@ -98,7 +98,7 @@ In the following example, the `devcenter-project-id` is retrieved from a **Dev C
 
 #### [Bicep](#tab/bicep/)
 
-The `devCenterProjectResourceId` property specifies the **Dev Center project**.
+The `devCenterProjectResourceId` property specifies the **Dev Center project** instance.
 
 ```bicep
 resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
@@ -111,9 +111,9 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 }
 ```
 
-You can retrieve the `devCenterProjectResourceId` for your **Dev Center project** in the Azure portal by using the **JSON View** from the **Overview** page of your **Dev Center project**. You can also retrieve it by using the Azure CLI to query the project for its `id` property.
+You can retrieve the `devCenterProjectResourceId` for your **Dev Center project** instance in the Azure portal by using **JSON View** from the **Overview** page of your **Dev Center project** instance. You can also retrieve it by using the Azure CLI to query the project for its `id` property.
 
-In the following example, the `devCenterProjectResourceId` is retrieved from a Dev Center project named `fabrikam-dev-center-project` in the `fabrikam-managed-devops-pools` resource group.
+In the following example, the `devCenterProjectResourceId` is retrieved from a **Dev Center project** instance named `fabrikam-dev-center-project` in the `fabrikam-managed-devops-pools` resource group.
 
 ```azurecli
  az devcenter admin project show --name fabrikam-dev-center-project --resource-group fabrikam-managed-devops-pools --query "id"
@@ -232,13 +232,13 @@ You can view the current status and count of the provisioned agents in your pool
 
 #### [Azure portal](#tab/azure-portal/)
 
-You can configure **Maximum agents** in **Pool** settings for an existing pool, and on the **Basics** tab when you create a pool.
+You can configure the **Maximum agents** value in **Pool** settings for an existing pool, and on the **Basics** tab when you create a pool.
 
 :::image type="content" source="./media/pool-settings/maximum-agents.png" alt-text="Screenshot that shows the Maximum agents setting.":::
 
 #### [ARM template](#tab/arm/)
 
-You can configure **Maximum agents** by using the `maximumConcurrency` property.
+You can configure the **Maximum agents** value by using the `maximumConcurrency` property.
 
 In the following example, the **Maximum agents** value is `4`.
 
@@ -263,7 +263,7 @@ In the following example, the **Maximum agents** value is `4`.
 
 #### [Azure CLI](#tab/azure-cli/)
 
-You can configure **Maximum agents** by using the `maximum-concurrency` parameter when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
+You can configure the **Maximum agents** value by using the `maximum-concurrency` parameter when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
 
 In the following example, the **Maximum agents** value is `4`.
 
@@ -275,7 +275,7 @@ az mdp pool create \
 
 #### [Bicep](#tab/bicep/)
 
-You can configure **Maximum agents** by using the `maximumConcurrency` property.
+You can configure the **Maximum agents** value by using the `maximumConcurrency` property.
 
 In the following example, the **Maximum agents** value is `4`.
 
@@ -304,7 +304,7 @@ The **Agent size** setting specifies the [Azure virtual machine size](/azure/vir
 
 :::image type="content" source="./media/pool-settings/agent-size.png" alt-text="Screenshot that shows the Agent size setting.":::
 
-To view and select an Azure virtual machine size that's available in your Azure region, select **Change size**. Agent sizes (SKUs) with available Managed DevOps Pools quotas are marked as **Available**. You can request more quota for SKUs that are marked **Not Available**. After a quota request for a **Not Available** SKU is approved, it's listed as **Available**. Learn more about [Managed DevOps Pools quotas](./prerequisites.md#view-your-quotas).
+To view and select an Azure virtual machine size that's available in your Azure region, select **Change size**. Agent sizes (SKUs) with available Managed DevOps Pools quotas are marked **Available**. You can request more quota for SKUs that are marked **Not Available**. After a quota request for a **Not Available** SKU is approved, it's marked **Available**. Learn more about [Managed DevOps Pools quotas](./prerequisites.md#view-your-quotas).
 
 #### [ARM template](#tab/arm/)
 
@@ -405,7 +405,7 @@ You can configure **OS disk type** in **Pool** settings for an existing pool. Yo
 
 #### [ARM template](#tab/arm/)
 
-You can configure the **OS disk type** by using the `osDiskStorageAccountType` property in the `storageProfile` section. Select **Standard**, **StandardSSD**, or **Premium**.
+You can configure **OS disk type** by using the `osDiskStorageAccountType` property in the `storageProfile` section. Select **Standard**, **StandardSSD**, or **Premium**.
 
 In the following example, a **Standard** OS disk type is specified:
 
@@ -460,7 +460,7 @@ The following example shows the `storageProfile` section of the `fabric-profile.
 
 #### [Bicep](#tab/bicep/)
 
-You can configure the **OS disk type** by using the `osDiskStorageAccountType` property in the `storageProfile` section.
+You can configure **OS disk type** by using the `osDiskStorageAccountType` property in the `storageProfile` section.
 
 Select **Standard**, **StandardSSD**, or **Premium**. In the following example, a **Standard** OS disk type is specified.
 
