@@ -15,7 +15,7 @@ This article describes the demands available in Managed DevOps Pools and how to 
 
 ## WorkFolder
 
-The default work folder for agents is typically on the **D:\\** drive for Windows or **/mnt** for Linux, and your pipeline can reference it by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables). You can override this location to change both the drive and directory name used when the agent starts by specifying the `WorkFolder` demand in your pipeline.
+The default work folder for agents is typically on drive `D` for Windows or in `/mnt` for Linux, and your pipeline can reference it by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables). You can override this location to change both the drive and directory name used when the agent starts by specifying the `WorkFolder` demand in your pipeline.
 
 If you have a stateful pool with a running agent with a `WorkFolder` that matches your demand, your pipeline job is sent to that agent. If you aren't using stateful pools, or there's no agent running with that `WorkFolder`, a new agent is started and configured to use the designated `WorkFolder`. The directory specified is created if not present. If the path name for the `WorkFolder` is invalid, the default agent working folder is used.
 
@@ -23,7 +23,7 @@ Set your agent work folder by configuring the `WorkFolder` demand in the `demand
 
 #### [Windows](#tab/windows/)
 
-The default work folder for Windows agents is typically on the `D:\\` drive. You can reference it in your pipeline by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables).
+The default work folder for Windows agents is typically on drive `D`. You can reference it in your pipeline by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables).
 
 In the following example, `WorkFolder` is set to an [attached data disk](./configure-storage.md?tabs=windows#use-the-data-disk-for-your-agent-working-directory) with the letter `F`.
 
@@ -62,9 +62,9 @@ pool:
   - Priority -equals Low
 ```
 
-Jobs are selected to run from the queue in order of priority. For example, you have a pool that has a maximum agents setting of `10` and you configured a pipeline to use this pool. The pool is already running 10 pipelines and 20 more are queued. If you want to run a priority pipeline, for example to push out a hot fix, it would normally run after the 10 running pipelines and the 20 queued pipelines finish. If you set priority to `High` when you queue your urgent pipeline, it gets an agent and runs before the 20 previously queued pipelines.
+Jobs are selected to run from the queue in order of priority. For example, you have a pool that has a maximum agents setting of `10` and you configured a pipeline to use this pool. The pool is already running 10 pipelines and 20 more are queued. If you want to run a priority pipeline, for example to push out a hotfix, it would normally run after the 10 running pipelines and the 20 queued pipelines finish. If you set priority to `High` when you queue your urgent pipeline, it gets an agent and runs before the 20 previously queued pipelines.
 
-If multiple jobs are queued at the same time, a lower priority job might run before a higher priority job.
+If multiple jobs are queued at the same time, a lower-priority job might run before a higher-priority job.
 
 For the case of a single pipeline with multiple jobs:
 
@@ -75,7 +75,7 @@ For the case of a single pipeline with multiple jobs:
 
 If you have multiple images in your pool, you can configure your pipelines to use a specific image. Use the `ImageOverride` demand and provide the image's [alias](configure-images.md#use-multiple-images-per-pool-with-aliases). To use an Azure Pipelines image, use its [predefined alias](configure-images.md#azure-pipelines-image-predefined-aliases). For all other images, you must [configure your own aliases](configure-images.md#configure-image-aliases).
 
-If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run by using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if using [templates](./configure-images.md?&tabs=arm#choose-your-pools-image)). You can also order the [images in the images list](./configure-pool-settings.md#images) in the Azure portal by using drag and drop.
+If you have multiple images in your pool, and don't use demands in your pipelines to designate an image, the pipelines run by using the first listed image in your pool. You can change the order of the images in your pool by changing the order of the images in the `images` list in the `fabricProfile` section (if you're using [templates](./configure-images.md?&tabs=arm#choose-your-pools-image)). You can also order the [images in the images list](./configure-pool-settings.md#images) in the Azure portal by dragging them.
 
 In the following example, a pipeline is configured to run on an image that's configured with an `ubuntu-24.04-gen2` alias.
 
@@ -129,6 +129,6 @@ pool:
 
 For example, if you have a large repository that takes a long time to clone, and you have multiple pipelines that run from this repository, you can use the same `CustomCapabilities` demand in the pipelines. This demand helps the second pipeline run more quickly by using an agent that already has a clone of the repository.
 
-## See also
+## Related content
 
 * [Configure images](./configure-images.md)
