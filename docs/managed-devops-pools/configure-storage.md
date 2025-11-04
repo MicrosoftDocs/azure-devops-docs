@@ -17,12 +17,12 @@ Configure the storage settings when you create your pool on the **Storage** tab.
 
 :::image type="content" source="media/configure-storage/empty-data-disk-pool-creation.png" alt-text="Screenshot that shows how to configure a data disk when you create a pool.":::
 
-To configure more storage for an existing pool, go to the pool in the Azure portal as described in the following steps.
+To configure more storage for an existing pool, go to the pool in the Azure portal as described in the following steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Search for **Managed DevOps Pools** and select it from the available options.
 1. Select your pool from the list.
-1. Go to **Settings** > **Storage** to configure the *empty data disk* settings for your pool.
+1. Go to **Settings** > **Storage** to configure the **Empty data disk** settings for your pool.
 
 :::image type="content" source="media/configure-storage/empty-data-disk-menu.png" alt-text="Screenshot that shows an empty data disk menu.":::
 
@@ -78,9 +78,7 @@ az mdp pool create \
    # other parameters omitted for space
 ```
 
-In the following example, a 10-GB `Standard_LRS` disk is configured with  the drive letter `Q` and no caching.
-
-The following example shows the `storageProfile` section of the **fabric-profile.json** file.
+In the following example, a 10-GB `Standard_LRS` disk is configured with  the drive letter `Q` and no caching. The example shows the `storageProfile` section of the **fabric-profile.json** file.
 
 ```json
 {
@@ -176,7 +174,7 @@ pool:
 
 For more information about how to configure the agent work directory, see [Demands: WorkFolder](demands.md#workfolder).
 
-## See also
+## Related content
 
 * [Configure pool settings](./configure-pool-settings.md)
 * [Allowlist Azure Storage](./configure-networking.md)
