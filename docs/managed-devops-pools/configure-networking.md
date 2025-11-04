@@ -230,7 +230,7 @@ On May 1, 2025, Azure DevOps CDN assets transitioned to a solution served by Aka
 - [Azure CDN from Edgio retirement FAQ](/previous-versions/azure/cdn/edgio-retirement-faq)
 - [Akamai TechDocs: Origin IP access control list](https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server)
 
-If you configure Azure DevOps Pipeline to run inside a container, you need to also add the source of the container image (Docker or Azure Container Registry) to an allow list.
+If you configure your Azure DevOps pipeline to run inside a container, you need to also add the source of the container image (Docker or Azure Container Registry) to an allow list.
 
 ## Validate endpoint connectivity
 
