@@ -5,7 +5,7 @@ ms.topic: how-to
 ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
 ms.custom: freshness-fy22q2, kr2b-contr-experiment
 ms.date: 11/04/2025
-monikerRange: azure-devops
+monikerRange: "<=azure-devops"
 # Customer intent: As a Ruby developer, I want to set up a CI/CD pipeline so that I can automate building, testing, and deploying my Ruby applications.
 ---
 
