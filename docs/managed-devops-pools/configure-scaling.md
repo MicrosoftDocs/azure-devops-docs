@@ -11,12 +11,12 @@ You can manage the performance and cost of your Managed DevOps Pools instance by
 
 ## Agent state
 
-Managed DevOps Pools can be configured as stateless or stateful.
+You can configure pools as:
 
-* [Stateless pools](#stateless-pools): Provide a fresh agent for every job.
-* [Stateful pools](#stateful-pools): Allow sharing of agents between multiple jobs.
+* [Stateless](#stateless-pools): Provide a fresh agent for every job.
+* [Stateful](#stateful-pools): Allow sharing of agents between multiple jobs.
 
-The default setting for a pool is stateless, which you can achieve by using the **Fresh agent every time** setting. In some cases, teams might want to reuse agents to reuse the packages or files created during the previous pipeline run. Build workload is a common scenario where teams want to preserve state and reuse agents. You can achieve stateful pools through Managed DevOps Pools while balancing it with security best practices. By default an agent can be reused for a maximum of seven days but you can configure it to be recycled sooner.
+The default setting for a pool is stateless, which you can achieve by using the **Fresh agent every time** setting. In some cases, teams might want to reuse agents to reuse the packages or files created during the previous pipeline run. Build workload is a common scenario where teams want to preserve state and reuse agents. You can achieve stateful pools through Managed DevOps Pools while balancing it with security best practices. An agent can be reused for a maximum of seven days by default, but you can configure it to be recycled sooner.
 
 > [!NOTE]
 > Security agents recommend that users use stateless pools as a defense against supply chain attacks. Use the agent state setting **Fresh agent every time**.
@@ -171,7 +171,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 * * *
 
-When you enable **Same agent can be used by multiple builds** (the `"kind": "stateful"` setting in resources templates or the `{ "stateful": {...} }` setting in the Azure CLI), agents in the pool are stateful. You can configure stateful pools by using the following settings.
+When you enable **Same agent can be used by multiple builds** (the `"kind": "stateful"` setting in resources templates or the `{ "stateful": {...} }` setting in the Azure CLI), agents in the pool are stateful. You can configure stateful pools by using the following settings:
 
 * **Max time to live for standby agents** (`maxAgentLifetime`) configures the maximum duration an agent in a stateful pool can run before it's shut down and discarded. The format for **Max time to live for standby agents** is `dd.hh:mm:ss`. The default value of **Max time to live for standby agents** is set to the maximum allowed duration of seven days (`7.00:00:00`).
 * **Grace Period** (`gracePeriodTimeSpan`) configures the amount of time an agent in a stateful pool waits for new jobs before shutting down after all current and queued jobs finish. The format for **Grace Period** is `dd.hh:mm:ss` and the default is no grace period.
@@ -213,7 +213,7 @@ You can configure standby agent mode by using the following settings:
 
 #### [ARM template](#tab/arm/)
 
-You can configure standby agents by using the `resourcePredictionsProfile` section of the `agentProfile` property. Set `"kind": "Manual"` to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. To configure automatic standby agents, set `"kind": "Automatic"`. Disable standby agents by omitting the `ResourcePredictionsProfile` section. See the following sections for details on how to configure each scaling type.
+You can configure standby agents by using the `resourcePredictionsProfile` section of the `agentProfile` property. Set `"kind": "Manual"` to configure a start from scratch, weekday scheme, or all-week scheme, and specify the details of the scheme in the `resourcePredictions` section. To configure automatic standby agents, set `"kind": "Automatic"`. Disable standby agents by omitting the `ResourcePredictionsProfile` section. See the following sections for details on how to configure each scaling type.
 
 ```json
 {
@@ -266,7 +266,7 @@ The following example shows the contents of the `agent-profile.json` file:
 
 #### [Bicep](#tab/bicep/)
 
-You can configure standby agents by using the `resourcePredictionsProfile` section of the `agentProfile` property. Use the `"kind": "Manual"` setting to configure a start from scratch, weekday scheme, or all week scheme, and specify the details of the scheme in the `resourcePredictions` section. To configure automatic standby agents, use the `kind: 'Automatic'` setting. Disable standby agents by omitting the `ResourcePredictionsProfile` section. See the following sections for details on how to configure each scaling type.
+You can configure standby agents by using the `resourcePredictionsProfile` section of the `agentProfile` property. Use the `"kind": "Manual"` setting to configure a start from scratch, weekday scheme, or all-week scheme, and specify the details of the scheme in the `resourcePredictions` section. To configure automatic standby agents, use the `kind: 'Automatic'` setting. Disable standby agents by omitting the `ResourcePredictionsProfile` section. See the following sections for details on how to configure each scaling type.
 
 ```bicep
 resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
@@ -299,7 +299,7 @@ You can configure manual standby agents in one of the following three ways:
 * [Weekday scheme (machines available during a specific time period every weekday)](#weekday-scheme): Configure a start and end time for standby agents to be available each weekday.
 * [All-week scheme (machines available all the time)](#all-week-scheme): Configure a fixed number of standby agents to be continuously available.
 
-Each of the pre-provisioning quickstarts has the following common settings (in addition to the settings that are specific to that quickstart).
+Each of the pre-provisioning quickstarts has the following common settings (in addition to the settings that are specific to that quickstart):
 
 * **Pre-provisioning TimeZone**: Allows you to configure the time zone for the time periods in your pre-provisioning scheme. The default value for **Pre-provisioning TimeZone** is **(UTC) Coordinated Universal Time**.
 * **Standby agent percentage**: Configures the percentage of standby agents that you want for each image. You can enter `*` to ensure all images are provisioned equally, or you can specify an integer from 0 to 100 to represent a percentage. If you specify a percentage, the total for all images must equal 100. If you have a single image, specify `*` or 100. When you use Azure Resource Manager templates (ARM templates), you can configure the **Standby agent percentage** setting in the `images` section. For more information, see [Configure images](./configure-images.md).
@@ -355,7 +355,7 @@ Specify the desired time zone for your scheme by using the `timeZone` property. 
 
 You can define the schedule for standby agents by using the `daysData` list. The `daysData` list can have either one or seven items.
 
-A `daysData` list with seven items maps to the days of the week, starting with Sunday. Each of these seven items can have zero or more `"time": count` entries, specifying a time in 24-hour format, and a standby agent count. The specified count of standby agents is maintained until the next `"time": count` entry, which can be on the same day, or on a following day.
+A `daysData` list with seven items maps to the days of the week, starting with Sunday. Each of these seven items can have zero or more `"time": count` entries, specifying a time in 24-hour format, and a standby agent count. The specified count of standby agents is maintained until the next `"time": count` entry, which can be on the same day or on a following day.
 
 A `daysData` list with a single item defines an [All-week scheme](#all-week-scheme), where the single `"time": count` entry corresponds to the standby agent count for the entire week.
 
@@ -506,9 +506,9 @@ Specify the time zone for your scheme by using the `timeZone` property. The defa
 
 The `daysData` list defines the schedule for the standby agents. The `daysData` list can have either one or seven items.
 
-A `daysData` list with seven items maps to the days of the week, starting with Sunday. Each of these seven items can have zero or more `"time": count` entries, specifying a time in 24-hour format, and a standby agent count. The specified count of standby agents is maintained until the next `"time": count` entry, which can be on the same day, or on a following day.
+A `daysData` list with seven items maps to the days of the week, starting with Sunday. Each of these seven items can have zero or more `"time": count` entries, specifying a time in 24-hour format, and a standby agent count. The specified count of standby agents is maintained until the next `"time": count` entry, which can be on the same day or on a following day.
 
-A `daysData` list with a single item defines an [All week scheme](#all-week-scheme), where the single `"time": count` entry corresponds to the standby agent count for the entire week.
+A `daysData` list with a single item defines an [all-week scheme](#all-week-scheme), where the single `"time": count` entry corresponds to the standby agent count for the entire week.
 
 The following example is a manual standby agent scheme. The scheme uses the value `Eastern Standard Time` with a single agent provisioned Monday through Friday, from 9:00 AM (standby agent count `1`) through 5:00 PM (standby agent count `0`):
 
@@ -656,9 +656,9 @@ Specify the desired time zone for your scheme by using the `timeZone` property. 
 
 The `daysData` list defines the schedule for the standby agents. The `daysData` list can have either one or seven items.
 
-A `daysData` list with seven items maps to the days of the week, starting with Sunday. Each of these seven items can have zero or more `'time': count` entries, specifying a time in 24-hour format, and a standby agent count. The specified count of standby agents is maintained until the next `'time': count` entry, which can be on the same day, or on a following day.
+A `daysData` list with seven items maps to the days of the week, starting with Sunday. Each of these seven items can have zero or more `'time': count` entries, specifying a time in 24-hour format, and a standby agent count. The specified count of standby agents is maintained until the next `'time': count` entry, which can be on the same day or on a following day.
 
-A `daysData` list with a single item defines an [All week scheme](#all-week-scheme), where the single `'time': count` entry corresponds to the standby agent count for the entire week.
+A `daysData` list with a single item defines an [all-week scheme](#all-week-scheme), where the single `'time': count` entry corresponds to the standby agent count for the entire week.
 
 The following example is a manual standby agent scheme that uses the value `Eastern Standard Time`, with a single agent provisioned Monday through Friday, from 9:00 AM (standby agent count `1`) through 5:00 PM (standby agent count `0`):
 
@@ -771,16 +771,16 @@ To schedule a standby agent to be available starting at `09:00:00` on the specif
 
 ### Start from scratch
 
-If you choose to start from scratch, you can add a list of provisioning periods as your provisioning scheme. Each provisioning period consists of a start day, end day, time zone, start time, end time, and a count. Provisioning periods can't overlap each other.
+If you choose to start from scratch, you can add a list of provisioning periods as your provisioning scheme. Each provisioning period consists of a start day, end day, time zone, start time, end time, and count. Provisioning periods can't overlap each other.
 
 | Property | Description |
 |----------|-------------|
 | **Multi-Day** | When you select this option, you can configure both **Start Day** and **End Day** for your provisioning scheme. |
 | **Until next period** | When you select this option, the provisioning period runs from the **Start Time** value until the start of the next provisioning period. |
 | **Start Day** | The day that the provisioning period starts. |
-| **End Day** | The day the provisioning period ends. You need to specify **End Day** if **Multi-Day** is checked. |
-| **Start Time** | The time the provisioning period starts. |
-| **End Time** | The time the provisioning period ends. You need to specify **End Time** unless **Until next period** is checked. |
+| **End Day** | The day that the provisioning period ends. Required if **Multi-Day** is selected. |
+| **Start Time** | The time when the provisioning period starts. |
+| **End Time** | The time when the provisioning period ends. Required unless **Until next period** is selected. |
 | **Count** | The number of standby agents to provision. This number must be greater than zero, and must not be greater than the **Maximum agents** value in **Pool settings**. |
 
 After you create a provisioning period, you can delete or edit the period from the **Pre-provisioning scheme** list.
@@ -899,8 +899,8 @@ If you select the weekday scheme, you can specify a start time and end time, bet
 
 | Property | Description |
 |----------|-------------|
-| **Start Time** | The time the provisioning period starts. |
-| **End Time** | The time the provisioning period ends. |
+| **Start Time** | The time when the provisioning period starts. |
+| **End Time** | The time when the provisioning period ends. |
 | **Provisioning Count** | The number of standby agents to provision. This number must be greater than zero, and must not be greater than the **Maximum agents** value configured in **Pool settings**. |
 
 The following example configures four agents to be used during working hours, and no agents during nonworking hours and weekends, using Eastern Time (UTC-5).
@@ -1047,9 +1047,9 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 * * *
 
-### All week scheme
+### All-week scheme
 
-If you choose the all week scheme, you can specify the number of agents you want available all the time.
+If you choose the all-week scheme, you can specify the number of agents that you want available all the time.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -1140,11 +1140,11 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 
 If you don't know your usage patterns and want to rely on automatic forecasting based on past data, select **Automatic**. You can balance between cost and agent performance by using a slider with the following five options. Managed DevOps Pools runs a query over your past three weeks of historical data (if available). It organizes queued sessions of the pool into five-minute periods and assigns the specified percentile (to avoid spikes) to each hour.
 
-* **Most cost effective** (`MostCostEffective`): 10th percentile
-* **More cost effective** (`MoreCostEffective`): 25th percentile
-* **Balanced** (default) (`Balanced`): 50th percentile
-* **More performance** (`MorePerformance`): 75th percentile
-* **Best performance** (`BestPerformance`): 90th percentile
+* **Most cost effective** (`MostCostEffective`): 10th percentile.
+* **More cost effective** (`MoreCostEffective`): 25th percentile.
+* **Balanced** (default) (`Balanced`): 50th percentile.
+* **More performance** (`MorePerformance`): 75th percentile.
+* **Best performance** (`BestPerformance`): 90th percentile.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -1217,7 +1217,7 @@ When you enable standby agents by using a [stateless](#stateless-pools) scheme, 
 
 When Managed DevOps Pools provisions new agents, it attempts to download the latest [Azure Pipelines agent](https://github.com/microsoft/azure-pipelines-agent/releases) so that it's already downloaded on standby agents before they transition into ready status. Startup, connection, and beginning the job can take anywhere from 10 seconds to a minute depending on the pool's SKU speed, the image used, and the networking load. Additionally, when you specify certain settings in a pipeline job, it can cause a redownload and running of a different agent. Regressions and rollbacks of the agent can also cause a redownload of the agent.
 
-[Ready agents](./view-agents.md#status) always have a potential delay, as Managed DevOps Pools uses this agent in an "ephemeral" manner, meaning we start and run the task agent one time per job. If you see delays in ready agents picking up jobs from Azure DevOps, consider the following questions:
+[Ready agents](./view-agents.md#status) always have a potential delay because Managed DevOps Pools uses this agent in an "ephemeral" manner, which means we start and run the task agent one time per job. If you see delays in ready agents picking up jobs from Azure DevOps, consider the following questions:
 
 * Do you have ready agents? The most common issue is a misunderstanding of when agents should be pre-provisioned. Machines must be spun up from scratch when the following conditions are met:
   * The number of jobs queued is greater than the standby agent count on a pool.
@@ -1228,7 +1228,7 @@ When Managed DevOps Pools provisions new agents, it attempts to download the lat
 * Are proxy, virtual network, or firewall settings slowing down your pool? Potential slowness from any network setting results in agents taking longer to start the agent and connect it to Azure DevOps.
 * Are you overriding the agent version? By default, Managed DevOps Pools runs on the most recent Azure DevOps task agent version. Settings in the pipeline YAML (such as the [`Agent.Version`](/azure/devops/pipelines/yaml-schema/pool-demands#agent-variables-as-system-capabilities) demand) and Azure DevOps organization settings can force pipelines to use older versions of the task agent, which requires a redownload after a machine is allocated.
 
-## See also
+## Related content
 
 * [Configure pool settings](./configure-pool-settings.md)
 * [Manage cost and performance](./manage-costs.md)
