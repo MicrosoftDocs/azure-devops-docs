@@ -23,7 +23,9 @@ To customize the Azure DevOps work tracking system, you can *customize* an inher
 
 You can make several customizations to processes. The most important ones are creating custom work item types (WITs) or modifying existing WITs to add custom fields, modify layouts, or change workflows.
 
-This article provides an overview of tasks you can do to customize an inherited process. Some options of inherited elements are locked and can't be customized.
+This article provides an overview of ways to customize inherited processes. Some options of inherited elements are locked and can't be customized.
+
+For information about limits on the number of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md).
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
@@ -33,16 +35,16 @@ This article provides an overview of tasks you can do to customize an inherited 
 
 There are two types of processes:
 
-- The system processes [Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md) are locked from being changed by users. System processes are owned and updated periodically by Microsoft.
-- Inherited processes are customized and inherit definitions from the system processes they're based on. Any updates Microsoft makes to system processes automatically update your inherited processes and their child inherited processes.
+- The system processes [Agile, Basic, Scrum, and Capability Maturity Model Integration (CMMI)](../../../boards/work-items/guidance/choose-process.md) are locked and can't be changed by users. Microsoft owns the system processes and updates them periodically.
+- Inherited processes are customized and inherit definitions from the system processes they're based on. Any updates Microsoft makes to system processes automatically update in inherited processes and their child inherited processes.
 
-All processes can be shared by one or more projects in an organization. You customize the process instead of customizing a single project. Changes you make to the inherited process automatically update all projects in the organization that use that process.
+All processes can be shared by all projects in an organization. You customize the process instead of customizing a single project. Changes you make to the inherited process automatically update all projects in the organization that use that process.
 
 Once you create an inherited process, you can customize it, copy it, create projects based on it, and change existing projects to use it.
 
 For example, the following image shows a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyScrum* process, which inherits from the *Scrum* system process.
 
-Any changes you make to the *MyScrum* process also update other projects that use that process. You can't customize the *Query test* project unless you change it to a process which inherits from *Agile*.
+Any changes you make to the *MyScrum* process also update other projects that use that process. You can't customize the *Query test* project unless you change it to a process that inherits from *Agile*.
 
 ![Screenshot of Admin context, Organization settings, Project list and the process they use.](media/process/projects-list.png)
 
@@ -115,8 +117,6 @@ Fields are defined for all projects and processes in an organization. Fields def
 
 You can add any custom field you define for a WIT in one process to any WIT defined for another process. You can also [add an existing field](customize-process-field.md#add-existing-field) to another WIT within the same process. For example, you can add **Due Date** to the User story or Bug WITs.
 
-When adding custom fields, note that a maximum of 64 fields can be defined for each WIT and a maximum of 512 fields can be defined per process.
-
 ### Customize fields and controls
 
 The following resources describe how to implement various customizations for inherited field, custom fields, or custom controls.
@@ -152,12 +152,12 @@ The following resources describe how to implement various customizations for inh
 <a id="rename-field"></a>
 ### Limitations
 
-- You can't change a field name or data type once you've defined it. However, you can change the label that appears for a field on the work item form from the **Layout** tab. When you select the field in a query you must use the field name and not the field label.
+- You can't change a field name or data type once you define it. However, you can change the label that appears for a field on the work item form from the **Layout** tab. When you select the field in a query, you must use the field name and not the field label.
 - You can't modify the gray area on the form that contains the **State**, **Reason**, **Area path**, and **Iteration path** fields.
 - The [Area paths](../../../organizations/settings/set-area-paths.md) and [Iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md) picklists are configured for each project and aren't customizable through an inherited process.
 - Picklists associated with user identity fields, such as **Assigned To** and **Changed By**, are populated based on the [users added to the project or team](../../security/add-users-team-project.md).
+- A maximum of 64 fields can be defined for each WIT and a maximum of 512 fields can be defined per process.
 - You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. For more information, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).
-
 <a id="system-rules"></a>
 ## Custom rules and system rules
 
@@ -181,11 +181,11 @@ For more information about defining custom rules, see [Rules and rule evaluation
 
 ### Restrict modification of select fields for select user groups
 
-By using the conditions `current user is a member of a group...` or `current user is not a member of a group...`, you can make selected fields required for users who are members or nonmembers of a security group. For example, you can make the **Title** or the **State** field read-only for selected users or groups.
+By using the conditions `current user is a member of a group...` or `current user is not a member of a group...`, you can require or configure selected fields for users who are members or nonmembers of a security group. For example, you can make the **Title** or the **State** field read-only for selected users or groups.
 
 ### Restrict modification of work items based on Area Path 
 
-You can disallow users from modifying selected work items by setting permissions on an Area path. This setting is not a rule setting, but a permission setting. For more information, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
+You can disallow users from modifying selected work items by setting permissions on an Area path. This setting isn't a rule, but a permission setting. For more information, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 ## Work item type customizations
 
@@ -228,7 +228,7 @@ You can make the following customizations to a WIT form:
 - [Show/hide fields](customize-process-field.md#remove-field)  
 
 **Custom groups**
-- [Add, modify, re-sequence, delete](customize-process-form.md#groups)  
+- [Add, modify, resequence, delete](customize-process-form.md#groups)  
 - [Add/remove custom fields](customize-process-field.md)  
 - [Add/Hide a group extension](custom-controls-process.md) 
 
@@ -238,7 +238,7 @@ You can make the following customizations to a WIT form:
 - [Add/remove a custom group](customize-process-form.md#groups)   
 
 **Custom pages**
-- [Add, modify, re-sequence, delete](customize-process-form.md#pages) 
+- [Add, modify, resequence, delete](customize-process-form.md#pages) 
 - [Add/delete custom fields](customize-process-field.md) 
 - [Add/hide a page extension](custom-controls-process.md) 
 
@@ -251,7 +251,7 @@ The web form layout is organized into three columns, as shown in the following i
 
 If you only add groups and fields to the first two columns, the layout shows two columns. If you only add groups and fields to the first column, the layout shows one column.
 
-The web form resizes depending on the width available and the number of columns in the layout. At maximum width, in most web browsers, each column within a page displays in its own column. When the display width won't accommodate all columns, columns appear stacked within the column to the left.
+The web form resizes depending on the width available and the number of columns in the layout. At maximum width, in most web browsers, each column within a page displays in its own column. When the display width doesn't accommodate all columns, columns appear stacked within the column to the left.
 
 As the display width decreases, the columns resize proportionally as follows: 
 
@@ -270,10 +270,6 @@ As the display width decreases, the columns resize proportionally as follows:
 Changing the default WIT for a backlog level causes the WIT to appear by default in the quick add panel. For example, **Customer Ticket** appears by default in the following quick add panel for the product backlog.
 
 ![Screenshot of Product backlog, Quick Add Panel, Displays Default WIT for a backlog level](media/process/process-backlog-boards-quick-add-panel.png)
-
-## Object limits
-
-For a list of limits placed on the number of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md). 
 
 ## Related content
 
