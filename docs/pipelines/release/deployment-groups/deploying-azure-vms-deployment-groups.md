@@ -24,7 +24,7 @@ A deployment group installs a deployment agent on each target server in the grou
 |--------------------|-------------------|
 | **Azure DevOps**   | - An Azure DevOps [organization](../../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../../organizations/projects/create-project.md). |
 | **Azure DevOps Demo Generator**   | - [Set up the Demo Generator](/azure/devops/demo-gen/configure).<br>- Create a [new Azure DevOps project](/azure/devops/demo-gen/use-demo-generator-v2) and make sure to choose the **DeploymentGroups** template (number 15 in the list).  |
-| **Azure**   | - An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
+| **Azure**   | - An [Azure subscription](https://azure.microsoft.com/free/). |
 
 ## Set up resources in Azure
 

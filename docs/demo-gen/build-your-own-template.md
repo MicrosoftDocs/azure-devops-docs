@@ -6,13 +6,15 @@ ms.author: sdanie
 author: hsachinraj
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 05/24/2023
+ms.date: 10/31/2025
 ms.custom: sfi-image-nochange
 ---
 
 # Build a custom template
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
+
+[!INCLUDE [demo-generator-discontinued-note](includes/demo-generator-discontinued-note.md)]
 
 Azure DevOps Generator provides many out-of-the-box templates that support a wide variety of scenarios. The generator also allows users to make their own templates. You can convert your existing projects into templates and then create new projects using those templates. Custom templates can be useful in many scenarios, such as for building custom training materials, provisioning only certain artifacts, and so on.
 
@@ -34,7 +36,7 @@ An [Azure DevOps project](../organizations/projects/create-project.md) that's re
 
    :::image type="content" source="media/new-template-analyze.png" alt-text="Screenshot showing selections for new template and blue Analyze button.":::
 
-   The Demo Generator validates whether the project is a supported type, Agile, Scrum, or Basic, and that all of the contents can be read. At the end of the analysis, a list of artifacts and count of items gets presented, so you can confirm the analysis.
+   The Azure DevOps Demo Generator validates whether the project is a supported type, Agile, Scrum, or Basic, and that all of the contents can be read. At the end of the analysis, a list of artifacts and count of items gets presented, so you can confirm the analysis.
 
 4. If you wish to proceed, select **Generate Artifacts**. All project items get saved as JSON data. After all the items are extracted, the folder gets archived into a zip file.
 
@@ -71,5 +73,5 @@ Now you can create a project using your own template!
 
 ## Related articles
 
-- [Get started using the Generator](use-demo-generator-v2.md)
-- [About Demo Generator](index.md) 
+- [Get started using the Azure DevOps Demo Generator](use-demo-generator-v2.md)
+- [About Azure DevOps Demo Generator](index.md)

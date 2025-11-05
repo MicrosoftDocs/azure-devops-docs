@@ -5,6 +5,7 @@ description: Sign up and get started using Azure Repos
 ms.subservice: azure-devops-new-user
 monikerRange: '<= azure-devops'
 ms.date: 01/02/2024
+ms.topic: get-started
 ---
 
 # Start using Azure Repos

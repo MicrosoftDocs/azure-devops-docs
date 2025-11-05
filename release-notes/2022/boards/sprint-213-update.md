@@ -4,6 +4,7 @@ description: See the Sprint 213 feature updates for Azure Boards, including next
 author: ckanyika
 ms.author: glmorale
 ms.date: 12/08/2022
+ms.topic: release-notes
 ---
 
 # Azure Boards - Sprint 213 Update

@@ -3,7 +3,7 @@ title: CodeQL default setup (one-click enablement)
 author: ncouraud
 ms.author: nicour
 ms.date: 02/06/2025
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: CodeQL default setup (one-click enablement)

@@ -4,7 +4,7 @@ description: Understand the differences between project-scoped and organization-
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.custom: peer-review-program
 ms.service: azure-devops-artifacts
-ms.topic: overview
+ms.topic: article
 ms.date: 06/03/2024
 monikerRange: '>= azure-devops-2020'
 ---

@@ -4,6 +4,7 @@ description: Learn how to use PowerShell scripts to automate Azure DevOps pipeli
 ms.date: 08/12/2025
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted
+ms.topic: how-to
 ---
 
 # Use a script to update security settings

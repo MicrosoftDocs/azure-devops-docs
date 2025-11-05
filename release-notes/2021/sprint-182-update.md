@@ -5,6 +5,7 @@ ms.author: simerzou
 ms.date: 02/04/2021
 ms.custom: devx-track-dotnet
 description: .NET Core 3.0 support for Linux and macOS will sunset March 1, 2021.
+ms.topic: concept-article
 ---
 
 # Ending .NET Core 3.0 support for Linux and macOS hosted agents

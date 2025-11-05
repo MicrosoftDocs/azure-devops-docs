@@ -2,6 +2,7 @@
 title: "Azure DevOps docs: What's new for August 1, 2025 - August 31, 2025"
 description: "What's new in the Azure DevOps docs for August 1, 2025 - August 31, 2025."
 ms.date: 09/08/2025
+ms.topic: whats-new
 ---
 
 # Azure DevOps docs: What's new for August 1, 2025 - August 31, 2025

@@ -15,6 +15,8 @@ monikerRange: '>= azure-devops'
 
 Get help debugging common issues with workload identity service connections. You also learn how to manually create a service connection if you need to.
 
+To learn how to automate creating workload identity service connections, go to [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md). 
+
 ## Troubleshooting checklist
 
 Use the following checklist to troubleshoot issues with workload identity service connections:

@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 3/20/2025
 description: Strengthening Security and Multi-Repository Integration in Azure DevOps
+ms.topic: concept-article
 ---
 # Strengthening security and repository integration
 
