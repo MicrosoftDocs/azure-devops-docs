@@ -122,9 +122,9 @@ The contents of a feed can only be changed by an authenticated and authorized id
 	
 If anonymous users repeatedly encounter credential prompts (401 errors), try these approaches:
 	
-1. Avoid using package version ranges in your project configuration. Specify explicit package versions to ensure that clients only request the exact version required.
+- Avoid using package version ranges in your project configuration. Specify explicit package versions to ensure that clients only request the exact version required.
 	
-1. Use lock files (where supported) so package clients only request the exact versions needed during restore or install operations.
+- Use lock files (where supported) so package clients only request the exact versions needed during restore or install operations.
 
 #### Q: I'm restoring packages in Visual Studio, but they're coming from a different source. Why?
 
