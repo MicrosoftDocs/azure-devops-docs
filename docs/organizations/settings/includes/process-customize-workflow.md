@@ -23,7 +23,7 @@ Inherited and custom workflows must conform to the following rules:
 > [!NOTE]
 > Before you add a custom workflow state, see [About workflow states in backlogs and boards](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states map to categories.
 
-For customizations you can make to inherited and custom workflow states, see the following resources:
+For customizations to inherited and custom workflow states, see the following resources:
 
 **Inherited states**
 - [Hide or unhide a state](../work/customize-process-workflow.md#hide-state)

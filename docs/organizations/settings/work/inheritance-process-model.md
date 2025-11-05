@@ -20,11 +20,11 @@ ms.date: 11/04/2025
 To tailor the Azure DevOps work tracking system to your organization's needs, you can customize an inherited process through organization settings. All projects in an organization that use the inherited process get the customizations you make to that process. You can then configure project [backlogs, sprints, and boards](../about-teams-and-settings.md) for each project team.
 
 > [!IMPORTANT]  
-> This article applies to Azure DevOps Services only. To customize an on-premises project or update XML definition files to support customization, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md).
+> This article applies to the Azure DevOps Services inheritance process model only. To customize an on-premises project or update XML definition files to support customization, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md).
 
 You can make several customizations to processes. The most important ones are creating custom work item types (WITs) or modifying existing WITs to add custom fields, modify layouts, or change workflows. Some options of inherited elements are locked and can't be customized.
 
-This article provides an overview of ways to customize inherited processes. For information about limits on the numbers of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md).
+This article provides an overview of ways to customize inherited processes. For information about limits on the numbers of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking, process, and project limits](object-limits.md).
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
@@ -35,6 +35,7 @@ This article provides an overview of ways to customize inherited processes. For 
 There are two types of processes:
 
 - The *system processes* [Agile, Basic, Scrum, and Capability Maturity Model Integration (CMMI)](../../../boards/work-items/guidance/choose-process.md) are locked and users can't change them. Microsoft owns the system processes and updates them periodically.
+
 - *Inherited processes* are customized and inherit definitions from the system processes they're based on. Any updates Microsoft makes to system processes automatically update in inherited processes and their child inherited processes.
 
 All projects in an organization can share all organization processes. You customize the process instead of customizing a single project.
@@ -49,7 +50,7 @@ Any changes you make to the **My Agile** process also update other projects that
 
 ### Change the process of an existing project 
 
-You can switch the process a project uses from one system process to another. For more information and instructions, see the following articles:
+You can switch the process a project uses from one process to another. For more information and instructions, see the following articles:
 
 - [Change a project from Basic to Agile](change-process-basic-to-agile.md)
 - [Change a project from Scrum to Agile](change-process-scrum-to-agile.md)
@@ -70,7 +71,7 @@ You can rename an inherited process in **Organization Settings** by selecting th
 
 ### Process names
 
-Process names have the following limitations:
+Process names have the following requirements:
 
 - Must be unique in the organization
 - Must have 128 Unicode characters or less
@@ -200,23 +201,23 @@ The following resources describe customization options for inherited and custom 
 
 **Inherited work item types** 
 - [Add rules to a WIT](custom-rules.md)  
-- [Add/remove custom fields](customize-process-field.md)  
-- [Add/remove custom groups](customize-process-form.md#add-custom-groups)  
-- [Add/remove custom pages](customize-process-form.md#pages) 
-- [Add/remove a custom control](custom-controls-process.md)  
-- [Enable/disable a WIT](customize-process-work-item-type.md#enable-disable)  
+- [Add/remove custom fields](customize-process-field.md)
+- [Add/remove custom groups](customize-process-form.md#add-a-custom-group)
+- [Add/remove custom pages](customize-process-form.md#pages)
+- [Add/remove a custom control](custom-controls-process.md)
+- [Enable/disable a WIT](customize-process-work-item-type.md#enable-disable)
 
 **Custom work item types**
 - [Add custom WIT](customize-process-work-item-type.md#add-wit)  
-- [Change color or description](customize-process-work-item-type.md#overview)  
-- [Add/remove custom fields](customize-process-field.md)  
-- [Add/remove custom groups](customize-process-form.md#groups)  
-- [Add/remove custom pages](customize-process-form.md#pages)  
-- [Add/remove a custom control](custom-controls-process.md)  
-- [Add custom rules to a WIT](custom-rules.md)  
-- [Add, edit, or remove a workflow state](customize-process-workflow.md#states)  
-- [Enable/disable a WIT](customize-process-work-item-type.md#enable-disable)  
-- [Delete a custom WIT](customize-process-work-item-type.md#destroy)  
+- [Change color or description](customize-process-work-item-type.md#overview)
+- [Add/remove custom fields](customize-process-field.md)
+- [Add/remove custom groups](customize-process-form.md#groups)
+- [Add/remove custom pages](customize-process-form.md#pages)
+- [Add/remove a custom control](custom-controls-process.md)
+- [Add custom rules to a WIT](custom-rules.md)
+- [Add, edit, or remove a workflow state](customize-process-workflow.md#states)
+- [Enable/disable a WIT](customize-process-work-item-type.md#enable-disable)
+- [Delete a custom WIT](customize-process-work-item-type.md#destroy)
 
 ### Limitations
 
@@ -242,7 +243,7 @@ You can make the following customizations to a WIT form:
 **Inherited pages** 
 - [Relabel a field](customize-process-field.md#relabel-a-field)
 - [Add/remove custom fields](customize-process-field.md)
-- [Add/remove a custom group](customize-process-form.md#groups)
+- [Reorder pages](customize-process-form.md#reorder-pages)
 
 **Custom pages**
 - [Add, modify, resequence, or delete pages](customize-process-form.md#add-a-custom-page)
