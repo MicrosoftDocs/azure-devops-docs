@@ -21,9 +21,9 @@ Inherited and custom workflows must conform to the following rules:
 - Define a maximum of 32 workflow states per work item type.
 
 > [!NOTE]
-> Before you add a custom workflow state, see [About workflow states in backlogs and boards](../../../boards/work-items/workflow-and-state-categories.md) to see how workflow states map to categories.
+> Before you add a custom workflow state, see [About workflow states in backlogs and boards](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states map to categories.
 
-For more information about inherited and custom workflow states, see the following articles:
+For customizations you can make to inherited and custom workflow states, see the following resources:
 
 **Inherited states**
 - [Hide or unhide a state](../work/customize-process-workflow.md#hide-state)
@@ -31,7 +31,7 @@ For more information about inherited and custom workflow states, see the followi
 
 **Custom states**
 - [Add a workflow state](../work/customize-process-workflow.md#add-states)
-- [Edit a workflow state (change color or category)](../work/customize-process-workflow.md#edit-state)
+- [Edit a workflow state](../work/customize-process-workflow.md#edit-state)
 - [Remove a workflow state](../work/customize-process-workflow.md#remove-state)
 - [Add rules when changing a workflow state](../work/custom-rules.md) 
 
