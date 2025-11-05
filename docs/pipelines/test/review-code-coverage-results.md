@@ -38,10 +38,16 @@ Visual Studio Test, .NET Core, Ant, Maven, Gulp, Grunt, and Gradle v3 include op
 
 You can view the code coverage artifacts published during the build under the **Summary** tab on the pipeline run summary.
 
+:::image type="content" source="media/review-code-coverage-results/summary-tab-pipeline-summary.png" alt-text="Screenshot shows Summary tab with a manual run and 2 published items.":::
+
 Additionally, you can review the results from the code coverage report in the **Code Coverage** tab:
 
+:::image type="content" source="media/review-code-coverage-results/code-coverage-tab-summary.png" alt-text="Screenshot shows Code Coverage tab contents with summary, metrics, and coverage.":::
+
 - **Visual Studio Test** can collect coverage for .NET and .NET Core apps. It produces `.coverage` files that you can download and use for further analysis in Visual Studio.
+  :::image type="content" source="media/review-code-coverage-results/view-dot-coverage-report.png" alt-text="Screenshot show code coverage results.":::
 - If you publish code coverage using Cobertura or JaCoCo coverage formats, the code coverage artifact contains an `.html` file that you can view offline for further analysis.
+  :::image type="content" source="media/review-code-coverage-results/view-html-report.png" alt-text="Screenshot show HTML report summary.":::
 - For .NET and .NET Core, you can access the link to download the artifact by choosing the code coverage milestone in the build summary.
 
 ### Docker considerations
@@ -65,7 +71,9 @@ Coverage indicators appear in the changed files view regardless of whether pull 
 
 To change the default settings of the code coverage experience for pull requests, include a configuration YAML file named `azurepipelines-coverage.yml` at the root of your repository. Set the desired values in this file, and Azure DevOps uses them automatically the next time the pipeline runs.
 
-You can change these settings:
+You can change the following settings:
+
+:::image type="content" source="media/review-code-coverage-results/configurable-settings.png" alt-text="Screenshot shows the settings you can configure.":::
 
 ### Example configuration
 
@@ -83,9 +91,15 @@ You can find more examples with details in the [code coverage YAML samples repos
 
 When you set up a pipeline to collect and publish code coverage, it posts a code coverage status when you create a pull request. By default, the server checks that tests cover at least 70% of changed lines. You can change the diff coverage threshold target to a value you choose by modifying the target parameter mentioned earlier.
 
+:::image type="content" source="media/codecoverage-for-pullrequests/coveragestatuscheck.PNG" alt-text="Screenshot shows Coverage status check failed.":::
+
 The status check calculates diff coverage for all files in the pull request. To see the percentage for each file, enable Details as described in the previous section. When enabled, the system posts the details as a comment on the pull request.
 
+:::image type="content" source="media/codecoverage-for-pullrequests/coverageDetailsComments.png" alt-text="Screenshot shows Diff coverage check failed result.":::
+
 In the changed files view of a pull request, changed lines are also annotated with coverage indicators to show whether those lines are covered.
+
+:::image type="content" source="media/review-code-coverage-results/pull-request-line-change-coverage-indicators.png" alt-text="Screenshot shows pull request line change coverage indicators.":::
 
 ## Enforce branch protection with a code coverage policy
 
@@ -94,9 +108,8 @@ By default, the code coverage status check on pull requests is advisory - it doe
 Code coverage status posted from a pipeline follows the naming convention `{name-of-your-pipeline/codecoverage}`.
 
 > [!NOTE]
-> Branch policies in Azure Repos (even optional policies) prevent pull requests from completing automatically if they fail. This behavior isn't specific to code coverage policy.
-> 
-> Starting September 2023, the code coverage policy isn't overridden to Failed if the build fails. This feature is enabled for all customers.
+> - Branch policies in Azure Repos (even optional policies) prevent pull requests from completing automatically if they fail. This behavior isn't specific to code coverage policy.
+> - The code coverage policy isn't overridden to Failed if the build fails.
 
 ## Troubleshooting guide
 
@@ -164,6 +177,7 @@ The data displayed on the tab comes from the coverage file. If you're using cust
 Several factors can cause this issue:
 
 - **Incorrect branch policy name format**: Verify the pipeline name matches the branch policy name and has no extra characters.
+  :::image type="content" source="media/review-code-coverage-results/confirm-pipeline-name-match.png" alt-text="Screenshot shows Policies tab and highlighted branch policy name, to confirm it matches the pipeline name.":::
 - **Using PublishCodeCoverage V1**: The code coverage policy gets stuck and comments aren't generated. Use the PublishCodeCoverage V2 task instead.
 - **Too many files in PR**: If the PR has more than 100 files, the coverage policy gets stuck.
 - **Multiple coverage policies**: If you configure multiple coverage policies, one of them gets stuck. Configure only one policy and delete the other stuck policy.
@@ -186,6 +200,8 @@ Several factors can cause this issue:
 ### In the Code Coverage tab, I don't see the right HTML report
 
 When there are problems generating the `.html` report, the system falls back to a simplified view.
+
+:::image type="content" source="media/review-code-coverage-results/code-coverage-modules.png" alt-text="Screenshot shows Code Coverage tab and list of modules and visual indicator of coverage chart, which is the fallback simplified view.":::
 
 ## Frequently asked questions
 
