@@ -15,12 +15,12 @@ ms.date: 11/05/2025
 
 # Process customization and inheritance
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 To tailor the Azure DevOps work tracking system to your organization's needs, you can customize an inherited process through organization settings. All projects in an organization that use the inherited process get the customizations you make to that process. You can then configure project [backlogs, sprints, and boards](../about-teams-and-settings.md) for each project team.
 
 > [!IMPORTANT]  
-> This article applies only to the inheritance process model in Azure DevOps Services. To customize on-premises projects or update XML definition files, see [Hosted XML process model](hosted-xml-process-model.md) and [Customize a Hosted XML process](import-process.md).
+> This article applies only to the inheritance process model in Azure DevOps Services. To customize on-premises projects or update XML definition files, see [Hosted XML process model](hosted-xml-process-model.md) and [Customize a Hosted XML process](import-process/customize-process.md).
 
 You can make several customizations to inherited processes. The most important ones are creating custom work item types (WITs) or modifying existing WITs to add custom fields, modify layouts, or change workflows. Some options of inherited elements are locked and can't be customized.
 
@@ -40,7 +40,7 @@ All projects in an organization can share all of its processes. You customize th
 
 Once you create an inherited process, you can customize it, copy it, create projects based on it, and change existing projects to use it. Changes you make to the inherited process automatically update all projects in the organization that use that process.
 
-The following example shows a list of projects in the **fabrikamprime** organization and the process each project uses. To change customizations for the **Fabrikam Fiber** project, you modify its **My Agile** process, which inherits from the **Agile** system process. Changes you make to the **My Agile** process also update the **Agile by design** project that uses that process. To customize the **Fabrikam** project, you would need to change it to use a process that inherits from **Scrum**.
+The following example shows a list of projects in the **fabrikamprime** organization and the process each project uses. To change customizations for the **Fabrikam Fiber** project, you modify the **My Agile** process, which inherits from the **Agile** system process. Changes you make to the **My Agile** process also update the **Agile by design** project that uses that process. To customize the other projects, you would need to change them to use inherited processes.
 
 :::image type="content" source="media/process/projects-list.png" alt-text="Screenshot of projects and the processes they use.":::
 
@@ -54,9 +54,7 @@ You can switch the process a project uses from one process to another. For more 
 
 By following the general guidance in the listed articles, you can make other changes such as from CMMI to Agile or Agile to CMMI. Before you change a project process, familiarize yourself with the process you're changing to. For more information, see [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
-When you transition a project to a different process, some existing tools or work items might become invalid. For example, work items that lack a field required in the new process might display errors. To proceed with changes and save the work items, you must resolve these errors.
-
-If the process change adds, removes, or hides workflow states for a WIT that appears on a board, make sure to update the board column configurations for all teams defined in the project. Also consider maintaining single ownership of work items by team area path, or formalizing columns with custom states that teams share.
+When you transition a project to a different process, some existing tools or work items might become invalid. For example, work items that lack a field required in the new process might display errors. To proceed with changes and save the work items, you must resolve these errors. If the process change adds, removes, or hides workflow states for a WIT that appears on a board, make sure to update the board column configurations for all teams defined in the project.
 
 <a id="process-naming"></a>
 ### Change or rename an inherited process
@@ -108,7 +106,7 @@ This section describes work item fields.
 <a id="field-customizations"></a>
 ## Field customizations 
 
-Fields are defined for all projects and processes in an organization. Fields defined in system processes appear with an inherited icon, indicating that you can make limited modifications to them in your inherited processes.
+Fields are defined for all projects and processes in an organization. Fields defined in system processes are inherited by inherited processes, but you can make only limited modifications to them. You can create and modify custom fields in inherited processes.
 
 You can add any custom field you define for a WIT in one process to any WIT defined for another process. You can also [add an existing field to another WIT](customize-process-field.md#add-existing-field) within the same process. For example, you can add **Due Date** to the **User story** or **Bug** WITs.
 
