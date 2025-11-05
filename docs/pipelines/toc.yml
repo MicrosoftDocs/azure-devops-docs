@@ -609,8 +609,6 @@
       href: test/test-analytics.md
     - name: Review code coverage
       href: test/review-code-coverage-results.md
-    - name: Review pull request code coverage
-      href: test/codecoverage-for-pullrequests.md
 - name: Monitor & Troubleshoot
   items:
   - name: Troubleshoot pipeline runs
