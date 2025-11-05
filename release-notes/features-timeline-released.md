@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 10/31/2025
+ms.date: 11/4/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,15 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="7"><a href="2025/sprint-264-update.md" data-raw-source="[4 November 2025](2025/sprint-264-update.md)">November 4 2025</a></td>
+    <td>Work item linking for Advanced Security alerts generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>One-click enablement for dependency scanning generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Resolving throttling for automatic installation of CodeQL toolchain</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Azure DevOps local MCP Server generally available</td><td>Boards</td><td>N/A</td></tr>
+    <td>Reduce authorization timeout</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline parameters</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Focused test point history panel</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
     <td rowspan="4"><a href="2025/sprint-263-update.md" data-raw-source="[14 October 2025](2025/sprint-263-update.md)"> October 14 2025</a></td>
     <td>Improved secret rotation support for Azure service connection</td><td>Pipelines</td><td>Future</td></tr>
