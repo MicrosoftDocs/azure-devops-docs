@@ -21,7 +21,7 @@ This guide helps product managers get started with Azure Boards. It summarizes p
 > [!NOTE]
 > If your team follows Kanban or Scrum specifically, see [About Boards and Kanban](boards/kanban-overview.md) or the [Scrum tutorials](./sprints/scrum-overview.md).
 
-Most recommendations apply to both Azure DevOps Services (cloud) and Azure DevOps Server (on-premises). Some features—such as Rollup, Analytics, and some portfolio planning tools - are available only in the cloud.
+Most recommendations apply to both Azure DevOps Services (cloud) and Azure DevOps Server (on-premises). Some features, including Rollup, Analytics, and some portfolio planning tools, are available only in the cloud.
 
 ## Configure teams
 
@@ -172,13 +172,13 @@ More information:
 
 ## Optimize work flow
 
-Control work in progress to improve delivery predictability and reduce cycle time. Whether using iterations or continuous flow, limiting WIP helps teams focus and deliver value faster.
+Control WIP to improve delivery predictability and reduce cycle time. Whether your teams use iterations or continuous flow, limiting WIP helps teams focus and deliver value faster.
 
 Recommendations:
-- Set WIP limits on board columns to prevent overcommitment
-- Monitor cycle time from start to delivery for each work item type
-- Use cumulative flow diagrams to visualize bottlenecks
-- Focus on completing work before starting new work
+- Set WIP limits on board columns to prevent overcommitment.
+- Monitor cycle time from start to delivery for each work item type.
+- Use cumulative flow diagrams to visualize bottlenecks.
+- Focus on completing work before starting new work.
 
 More information:
 - [Configure WIP limits](boards/wip-limits.md)
