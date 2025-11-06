@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: "<=azure-devops"
 ms.date: 11/06/2025
-#customer intent: As an Azure DevOps user, I want to be able to run Analytics OData queries against my projects so I can monitor, analyze, and report results.
+#customer intent: As an Azure DevOps user, I want to be able to run Analytics OData queries against my projects so I can monitor, analyze, and report progress results.
 ---
 
 # Construct OData queries for Analytics in Azure DevOps
@@ -19,7 +19,7 @@ ms.date: 11/06/2025
 Analytics, the Azure DevOps reporting platform, can answer quantitative questions about the past or present state of your projects. Analytics supports OData queries of its metadata and entity set data. You can learn about the data model and query process by running simple queries from your web browser.
 
 > [!NOTE]
-> OData, an application-level protocol for interacting with data via Representational State Transfer (REST)-ful interfaces, supports the description, editing, and querying of data models. The Entity Data Model (EDM) or metadata describes the information available from Analytics, including the entities, entity types, properties, relationships, and enumerations you use to query the data to build reports. For an overview of OData, see [Welcome to OData](/odata/overview).
+> OData, an application-level protocol for interacting with data via Representational State Transfer (REST) interfaces, supports the description, editing, and querying of data models. The Entity Data Model (EDM) or metadata describes the information available from Analytics, including the entities, entity types, properties, relationships, and enumerations you use to query the data to build reports. For an overview of OData, see [Welcome to OData](/odata/overview).
 
 This article explains how to:
 
@@ -36,6 +36,7 @@ You can query Analytics from any [supported web browser](/azure/devops/server/co
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
+<a id="url-components-to-query-the-metadata"></a>
 <a id="query-metadata"></a>
 ## Query the metadata
 
@@ -69,9 +70,11 @@ https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata
 
 In the query string, `analytics.dev.azure.com` is the Analytics service root URL, followed by the organization name, project name, OData version, and `$metadata` designation.
 
+::: moniker-end
+
 ::: moniker range="< azure-devops"
 
-To query the metadata for a server, enter the following URL syntax in a web browser.  Replace `<ServerName>`, `<CollectionName>` and `<ProjectName>` with the names of the server, collection, and project you want to query. To return all metadata for a collection, don't specify a project name. 
+To query the metadata for a server, enter the following URL syntax in a web browser. Replace `<ServerName>`, `<CollectionName>` and `<ProjectName>` with the names of the server, collection, and project you want to query. To return all metadata for a collection, don't specify a project name. 
 
 ```OData
 https://<ServerName>/<CollectionName>/<ProjectName>/_odata/version/$metadata 
@@ -242,7 +245,7 @@ The example query returns the following results of `1399` work items.
 ::: moniker-end
 
 > [!NOTE] 
-> To avoid running into usage limits, always include a `$select` or `$apply` clause in your query. If you don't include a `$select` or `$apply` clause, you receive a warning such as `VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060.
+> To avoid running into usage limits, always include a `$select` or `$apply` clause in your query. If you don't include a `$select` or `$apply` clause, you receive a warning such as `VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060.`.
 >
 >Omitting a `$select` or `$apply` clause is equivalent to performing a select statement on the entity set that returns all columns and all rows. If you have a large number of records, the query may take several seconds. If you have more than 10,000 items, [server-driven paging](../extend-analytics/odata-query-guidelines.md#perf-paging) is enforced.
 > 
@@ -266,7 +269,7 @@ Analytics returns the names of the projects in the *fabrikam* organization.
 
 ```OData
 {
-@odata.context	"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Projects(ProjectName)",
+@odata.context": "https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Projects(ProjectName)",
 
 "value": [
    {
@@ -319,13 +322,14 @@ The example returns the following three project names.
 
 ::: moniker-end
 
+<a name="query-options"></a>
 ## Use query options
 
 Query options are query string parameters that help control the amount of data being returned for a resource. Specify query options in the order listed in the following table.
 
 | Query option|Description|
 |------------------|-------------------|  
-|`$apply`| Set of transformations you can apply to a query, such as `filter`, `groupby`, `aggregate`, `compute`, `expand,` or `concat`. For examples, see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|
+|`$apply`| Set of transformations you can apply to a query, such as `filter`, `groupby`, `aggregate`, `compute`, `expand`, or `concat`. For examples, see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|
 |`$compute`| A supported OData function you can use in a `$select`,`$filter`, or `$orderby` expression to define computed properties. |
 |`$filter`| Filters the list of resources returned. The query evaluates the expression specified with `$filter` for each resource in the query scope, and includes only items where the expression evaluates to `true` in the response. Resources where the expression evaluates to `false` or `null`, or where reference properties are unavailable due to permissions, are omitted from the response. For examples, see [Query work tracking data using Analytics](../extend-analytics/wit-analytics.md).|
 |`$orderby`| Specifies the sequence in which to return records. For examples, see [Query work tracking data using Analytics](../extend-analytics/wit-analytics.md).|
