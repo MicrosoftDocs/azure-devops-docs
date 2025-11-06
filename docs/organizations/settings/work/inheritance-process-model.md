@@ -106,7 +106,7 @@ This section describes work item fields.
 <a id="field-customizations"></a>
 ## Field customizations 
 
-Fields are defined for all projects and processes in an organization. Fields defined in system processes are inherited by inherited processes, but you can make only limited modifications to them. You can create and modify custom fields in inherited processes.
+Fields are defined for all projects and processes in an organization. Inherited processes inherit the fields defined in system processes, and you can make limited modifications to them. You can create and modify custom fields in inherited processes.
 
 You can add any custom field you define for a WIT in one process to any WIT defined for another process. You can also [add an existing field to another WIT](customize-process-field.md#add-existing-field) within the same process. For example, you can add **Due Date** to the **User story** or **Bug** WITs.
 
