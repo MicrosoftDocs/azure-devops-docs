@@ -104,8 +104,6 @@ Analytics metadata defines the following main schemas.
 - `Microsoft.VisualStudio.Services.Analytics.Model` defines the entity types and enumerated types and their members.
 - The `Default` schema defines the entity containers and entity sets and supported OData filter, transformation, and custom aggregation functions.
 
-For more information, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
@@ -120,9 +118,11 @@ For more information, see [Analytics OData metadata](../extend-analytics/analyti
 </edmx:Edmx>
 ```
 
+For more information, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
+
 ### Get related entities and navigation properties
 
-All entity types have properties and navigation properties that you can use to filter your queries. These properties are listed in the metadata as `Property` or `NavigationalProperty` under each `EntityType`. You can use related entities to specify more filters, such as iteration paths, area paths, or teams.
+All entity types have properties and navigation properties that you can use to filter your queries. These properties are listed in the metadata as `Property` or `NavigationProperty` under each `EntityType`. You can use related entities to specify more filters, such as iteration paths, area paths, or teams.
 
 The following code snippet shows a partial view of the metadata for the `WorkItem` entity. Properties correspond to work item fields and specific data captured by Analytics, such as `LeadTimeDays` and `CycleTimeDays`. Navigation properties correspond to other entity sets and specific Analytics data captured for the entity type, such as `Revisions`, `Links`, `Children`, and `Parent`.
 
@@ -200,7 +200,7 @@ The following example queries for the count of work items in the `Fabrikam Fiber
 https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?%20$apply=aggregate($count%20as%20Count)
 ```
 
-The example query returns the following results of `1399` work items.
+The example query returns results showing a count of `1399` work items.
 
 ```OData
 {
@@ -245,9 +245,9 @@ The example query returns the following results of `1399` work items.
 ::: moniker-end
 
 > [!NOTE] 
-> To avoid running into usage limits, always include a `$select` or `$apply` clause in your query. If you don't include a `$select` or `$apply` clause, you receive a warning such as `VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060.`.
+> To avoid running into usage limits, always include a `$select` or `$apply` clause in your query. If you don't include a `$select` or `$apply` clause, you receive a warning such as `VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060`.
 >
->Omitting a `$select` or `$apply` clause is equivalent to performing a select statement on the entity set that returns all columns and all rows. If you have a large number of records, the query may take several seconds. If you have more than 10,000 items, [server-driven paging](../extend-analytics/odata-query-guidelines.md#perf-paging) is enforced.
+>Omitting a `$select` or `$apply` clause is equivalent to performing a `select` statement on the entity set that returns all columns and all rows. If you have a large number of records, the query may take several seconds. If you have more than 10,000 items, [server-side paging](../extend-analytics/odata-query-guidelines.md#perf-paging) is enforced.
 > 
 
 <a id="query-entity-set"></a>
@@ -255,11 +255,9 @@ The example query returns the following results of `1399` work items.
 
 To query a specific entity set, such as `WorkItems`, `Areas`, or `Projects`, add the name of the entity set to the query. For a full list of entity sets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
 
-For example, you can get a list of projects defined for your organization by querying `Projects` and selecting to return the `ProjectName` property. 
-
 ::: moniker range="azure-devops"
 
-The following example shows the query URL for the `fabrikam` organization.
+For example, you can get a list of projects defined for your organization by querying `Projects` and selecting to return the `ProjectName` property. The following example shows the query URL for the `fabrikam` organization.
 
 ```OData
 https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/Projects?$select=ProjectName
@@ -295,7 +293,7 @@ Analytics returns the names of the projects in the *fabrikam* organization.
 
 ::: moniker range="< azure-devops"
 
-The following example shows the query URL for the `DefaultCollection` on the `fabrikam` server.
+For example, you can get a list of projects defined for your server and collection by querying `Projects` and selecting to return the `ProjectName` property. The following example shows the query URL for the `DefaultCollection` on the `fabrikam` server.
 
 ```OData
 https://fabrikam/DefaultCollection/_odata/v4.0-preview/Projects?$select=ProjectName
@@ -329,18 +327,18 @@ Query options are query string parameters that help control the amount of data b
 
 | Query option|Description|
 |------------------|-------------------|  
-|`$apply`| Set of transformations you can apply to a query, such as `filter`, `groupby`, `aggregate`, `compute`, `expand`, or `concat`. For examples, see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|
-|`$compute`| A supported OData function you can use in a `$select`,`$filter`, or `$orderby` expression to define computed properties. |
-|`$filter`| Filters the list of resources returned. The query evaluates the expression specified with `$filter` for each resource in the query scope, and includes only items where the expression evaluates to `true` in the response. Resources where the expression evaluates to `false` or `null`, or where reference properties are unavailable due to permissions, are omitted from the response. For examples, see [Query work tracking data using Analytics](../extend-analytics/wit-analytics.md).|
+|`$apply`| Applies a transformation to a query, such as `filter`, `groupby`, `aggregate`, `compute`, `expand`, or `concat`. For examples, see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|
+|`$compute`| Defines computed properties in a `$select`, `$filter`, or `$orderby` expression. |
+|`$filter`| Filters the list of resources returned. The query evaluates the expression specified with `$filter` for each resource in the query scope, and includes only items where the expression evaluates to `true` in the response.<br><br>Resources where the expression evaluates to `false` or `null`, or where reference properties are unavailable due to permissions, are omitted from the response. For examples, see [Query work tracking data using Analytics](../extend-analytics/wit-analytics.md).|
 |`$orderby`| Specifies the sequence in which to return records. For examples, see [Query work tracking data using Analytics](../extend-analytics/wit-analytics.md).|
 |`$top`/`$skip`| Limits the number of records returned. For examples, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md).|
 |`$select`|Specifies the columns you need.|
-|`$expand`|Nests other query options. Each `expandItem` is evaluated relative to the entity containing the navigation or stream property being expanded. Comma-separated list of query options, enclosed in parentheses, to the navigation property name. Allowed system query options are `$filter`, `$select`, `$orderby`, `$skip`, `$top`, `$count`, `$search`, and `$expand`. For examples, see [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md).|
+|`$expand`|Nests other query options. Each `expandItem` is evaluated relative to the entity containing the navigation or stream property being expanded.<br><br>Provide a comma-separated list of query options, enclosed in parentheses, to the navigation property name. Allowed system query options are `$filter`, `$select`, `$orderby`, `$skip`, `$top`, `$count`, `$search`, and `$expand`. For examples, see [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md).|
 |`$skiptoken`| Skips a specified number of records.|
 |`$count` or `$count=true`|  Returns only the number of records. Enter `$count=true`to return both a count of the record and the queried data. For examples, see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|
  
 > [!TIP]
-> Avoid mixing `$apply` and `$filter` clauses in a single query. To filter your query, you can either use a `$filter` clause or use a `$apply=filter()` combination clause. Combining these options in a single query might lead to unexpected results.
+> Avoid mixing `$apply` and `$filter` clauses in a single query. To filter your query, you can either use a `$filter` clause or use a `$apply=filter()` combination clause. Both options work, but combining them in a single query might lead to unexpected results.
 
 <a id="server-force-paging"></a>
 ## Understand server-side paging
@@ -351,11 +349,11 @@ You can find the `@odata.nextLink` link at the end of the JSON output. The link 
 
 ```json
 {
-  "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems",
+  "@odata.context":"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#WorkItems",
   "value":[
    // 10000 values here
   ],
-  "@odata.nextLink":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$skiptoken=10000"
+  "@odata.nextLink":"https://https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/WorkItems?$skiptoken=10000"
 }
 ``` 
 
@@ -365,7 +363,7 @@ You can find the `@odata.nextLink` link at the end of the JSON output. The link 
 
 ## Related content
 
-- [What is the Analytics service?](../powerbi/what-is-analytics.md)
+- [What is Analytics?](../powerbi/what-is-analytics.md)
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Permissions and prerequisites to access Analytics in Azure DevOps](analytics-permissions-prerequisites.md)
 
