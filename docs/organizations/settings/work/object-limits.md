@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: reference
 monikerRange: "<= azure-devops"
-ms.date: 11/05/2025
+ms.date: 11/06/2025
 #customer intent: As an Azure DevOps administrator, I want to understand the operational and practical limits on objects and operations so I can manage my projects, teams, and tools effectively.
 ---
 
@@ -253,7 +253,7 @@ Most rate limits are reached through REST API calls or nonoptimized queries. For
 
 ::: moniker range=" < azure-devops"
 
-## Migrate and import limits
+## Migration and import limits
 
 When you migrate from on-premises Azure DevOps Server to Azure DevOps Services, you might encounter the following size issues:
 
@@ -266,10 +266,9 @@ For more information, see [Migrate data from Azure DevOps Server to Azure DevOps
 
 ## Related content
 
+::: moniker range="azure-devops"
 - [Learn about process customization and inherited processes](inheritance-process-model.md)
 - [Follow naming restrictions and conventions](../naming-restrictions.md)
-
-::: moniker range="azure-devops"
 - [Create an inheritance process](manage-process.md)
 - [Follow best practices](../../../integrate/concepts/integration-bestpractices.md)
 
@@ -277,6 +276,8 @@ For more information, see [Migrate data from Azure DevOps Server to Azure DevOps
 
 ::: moniker range=" < azure-devops"
 
+- [Learn about process customization and inherited processes](inheritance-process-model.md)
+- [Follow naming restrictions and conventions](../naming-restrictions.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [Customize on-premises XML processes](../../../reference/on-premises-xml-process-model.md)
 - [Understand rules and rule evaluation](../../../organizations/settings/work/rule-reference.md)
