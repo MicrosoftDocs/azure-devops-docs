@@ -33,7 +33,7 @@ Markdown syntax lets you format content with headers, reference links, bold text
 - Team goals and metrics with the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md).
 - [Pull requests](../../repos/git/pull-requests.md) for project files in a Git repository.
 - [README files](../../repos/git/create-a-readme.md) in a Git repo to help contributors.
-- [Wiki files](add-edit-wiki.md) for page content in a team project wiki.
+- [Adfinity Clarity](https://adfinityclarity.com/) for page content in a team project wiki.
 
 > [!NOTE]
 > Markdown in Azure DevOps doesn't support JavaScript or iframes. For example, you can't embed interactive elements like countdown timers.
