@@ -16,7 +16,7 @@ ms.date: 09/29/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-This guide helps product managers get started with Azure Boards. It summarizes practical recommendations for configuring teams, planning work, and using Boards, Backlogs, Sprints, and Delivery Plans to deliver value predictably.
+This guide helps product managers get started with Azure Boards. It summarizes practical recommendations for configuring teams, planning work, and using Boards, Backlogs, Iterations, and Delivery Plans to deliver value predictably.
 
 > [!NOTE]
 > If your team follows Kanban or Scrum specifically, see [About Boards and Kanban](boards/kanban-overview.md) or the [Scrum tutorials](./sprints/scrum-overview.md).
@@ -44,6 +44,8 @@ Recommendations:
 - Choose a common cadence for teams that deliver together (1–4 weeks typical).
 - Create at least six iterations to support planning for the next 3–6 months.
 - Use iterations consistently for forecasting and iteration planning.
+- Consider continuous flow approaches for teams that can deliver incrementally without fixed time boundaries.
+- For flow-based teams, focus on Work in Progress (WIP) limits rather than iteration capacity.
 
 More information:
 - [Define and assign iteration paths](../organizations/settings/about-areas-iterations.md#define-and-assign-iteration-paths)
@@ -167,6 +169,20 @@ Recommendations:
 More information:
 - [View and configure team velocity](../report/dashboards/team-velocity.md)
 - [Add and manage dashboards](../report/dashboards/dashboards.md)
+
+## Optimize work flow
+
+Control work in progress to improve delivery predictability and reduce cycle time. Whether using iterations or continuous flow, limiting WIP helps teams focus and deliver value faster.
+
+Recommendations:
+- Set WIP limits on board columns to prevent overcommitment
+- Monitor cycle time from start to delivery for each work item type
+- Use cumulative flow diagrams to visualize bottlenecks
+- Focus on completing work before starting new work
+
+More information:
+- [Configure WIP limits](boards/wip-limits.md)
+- [Cumulative flow diagram](../report/dashboards/cumulative-flow.md)
 
 ## Next step
 
