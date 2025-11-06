@@ -56,7 +56,7 @@ You can query the metadata to look up any of the following data elements:
 
 ::: moniker range="azure-devops"
 
-To query the metadata for an organization or project hosted in the cloud, enter the following URL syntax in a web browser. Replace `<OrganizationName>}` and `<ProjectName>` with the names of the organization and project you want to query. To return all metadata for an organization, don't specify a project name.
+To query the metadata for an organization or project hosted in the cloud, enter the following URL syntax in a web browser. Replace `<OrganizationName>` and `<ProjectName>` with the names of the organization and project you want to query. To return all metadata for an organization, don't specify a project name.
 
 ```OData
 https://analytics.dev.azure.com/<OrganizationName>/<ProjectName>/_odata/version/$metadata 
