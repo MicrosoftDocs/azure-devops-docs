@@ -7,7 +7,7 @@ ms.custom: continuous-test, cross-service
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 11/05/2025
+ms.date: 11/06/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,7 +15,8 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Code coverage helps you determine the proportion of your project's code that tests such as unit tests actually test. To increase your confidence in code changes and guard effectively against bugs, your tests should exercise—or cover—a large proportion of your code.
+Code coverage helps you determine the proportion of your project's code that is actually being tested, such as by unit tests. To increase your confidence of the code changes and guard effectively against bugs, your tests should
+exercise or cover a large proportion of your code.
 
 When you review code coverage results, you can identify code paths that tests don't cover. This information helps you improve test coverage over time by reducing test debt.
 
@@ -28,11 +29,10 @@ This article shows you how to view, configure, and troubleshoot code coverage in
 
 ### Supported formats
 
-Azure Pipelines can publish coverage in Cobertura and JaCoCo formats through the Publish Code Coverage Results task. The task supports all kinds of coverage formats such as: `.coverage`, `.covx`, `.covb`, `.cjson`, `.xml`, `.lcov`, `.pycov`, and others.
+Azure Pipelines can publish coverage results, through the Publish Code Coverage Results v2 task. The task can display the results in 2 different views:
 
-### Built-in tasks
-
-Visual Studio Test, .NET Core, Ant, Maven, Gulp, Grunt, and Gradle v3 include options to collect and publish coverage outputs that Pipelines can render.
+1. For cobertura, jacoco, clover, gcov, pcov, and other xml formats, an HTML view generates, containing more details of the code coverage report, and is preferred by most of the customers.
+2. For `.coverage`/`.cjson`/`.covx` – a tabular view generates, containing less details than the HTML view.
 
 ### Artifacts and results
 
@@ -44,20 +44,26 @@ Additionally, you can review the results from the code coverage report in the **
 
 :::image type="content" source="media/review-code-coverage-results/code-coverage-tab-summary.png" alt-text="Screenshot shows Code Coverage tab contents with summary, metrics, and coverage.":::
 
-- **Visual Studio Test** can collect coverage for .NET and .NET Core apps. It produces `.coverage` files that you can download and use for further analysis in Visual Studio.
-  :::image type="content" source="media/review-code-coverage-results/view-dot-coverage-report.png" alt-text="Screenshot show code coverage results.":::
 - If you publish code coverage using Cobertura or JaCoCo coverage formats, the code coverage artifact contains an `.html` file that you can view offline for further analysis.
   :::image type="content" source="media/review-code-coverage-results/view-html-report.png" alt-text="Screenshot show HTML report summary.":::
 - For .NET and .NET Core, you can access the link to download the artifact by choosing the code coverage milestone in the build summary.
+- **Visual Studio Test** can collect coverage for .NET and .NET Core apps. It produces `.coverage` files that you can download and use for further analysis in Visual Studio.
+  :::image type="content" source="media/review-code-coverage-results/view-dot-coverage-report.png" alt-text="Screenshot show code coverage results.":::
+
+### Tasks
+
+[Publish Code Coverage Results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2?view=azure-pipelines) publishes code coverage results to Azure Pipelines, which were produced by a build in [Cobertura](https://cobertura.github.io/cobertura/) or [JaCoCo](https://www.eclemma.org/jacoco/) format.
+
+Built-in tasks such as [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2?view=azure-pipelines), [.NET Core](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines), [Ant](/azure/devops/pipelines/tasks/reference/ant-v1?view=azure-pipelines), [Maven](/azure/devops/pipelines/tasks/reference/maven-v3?view=azure-pipelines), [Gulp](/azure/devops/pipelines/tasks/reference/gulp-v1?view=azure-pipelines), [Grunt](/azure/devops/pipelines/tasks/reference/grunt-v0?view=azure-pipelines), and [Gradle](/azure/devops/pipelines/tasks/reference/gradle-v3?view=azure-pipelines) provide the option to publish code coverage data to the pipeline.
 
 ### Docker considerations
 
-For apps that use Docker, you can run builds and tests inside the container and generate code coverage results within the container. To publish the results to the pipeline, you need to make the resulting artifacts available to the **Publish Code Coverage Results** task. For reference, see a similar example for publishing test results under the **Build, test, and publish results with a Docker file** section for Docker.
+For apps that use Docker, you can run builds and tests inside the container and generate code coverage results within the container. To publish the results to the pipeline, make the resulting artifacts available to the **Publish Code Coverage Results** task. For reference, see a similar example for publishing test results under the [Build, test, and publish results with a Docker file](/azure/devops/pipelines/tasks/reference/publish-test-results-v2?view=azure-pipelines&tabs=trx%2Ctrxattachments%2Cyaml) section for Docker.
 
 ### Important considerations
 
 - In a multistage YAML pipeline, code coverage results are only available after the entire pipeline completes. You might need to separate the build stage into its own pipeline if you want to review code coverage results before deploying to production.
-- Merging code coverage results from multiple test runs currently works only for .NET and .NET Core. Support for other formats will be added in a future release.
+- Merging code coverage results from multiple test runs currently works only for .NET and .NET Core. There are no plans to support other formats.
 
 ## Full coverage vs diff coverage
 
@@ -85,7 +91,7 @@ coverage:
       target: 60%            # Set this to a desired percentage. Default is 70 percent 
 ```
 
-You can find more examples with details in the [code coverage YAML samples repository](https://github.com/microsoft/azure-pipelines-coverage-yaml-samples).
+You can find more examples with details in the [code coverage YAML samples repository](https://github.com/MicrosoftDocs/codecoverage-yaml-samples).
 
 ## Coverage status, details, and indicators
 
@@ -203,8 +209,6 @@ When there are problems generating the `.html` report, the system falls back to 
 
 :::image type="content" source="media/review-code-coverage-results/code-coverage-modules.png" alt-text="Screenshot shows Code Coverage tab and list of modules and visual indicator of coverage chart, which is the fallback simplified view.":::
 
-## Frequently asked questions
-
 ### Which coverage tools and result formats can be used for validating code coverage in pull requests?
 
 Currently, you can only use Visual Studio Code coverage (`.coverage`) formats to validate code coverage for pull requests. Use this format if you publish code coverage by using the Visual Studio Test task, the test verb of the .NET Core task, and the TRX option of the Publish Test Results task. Support for other coverage tools and result formats will be added in future milestones.
@@ -218,4 +222,3 @@ If multiple pipelines are triggered when a pull request is raised, code coverage
 - [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2)
 - [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2)
 - [Build quality checks](https://marketplace.visualstudio.com/items?itemName=mspremier.BuildQualityChecks)
-- [Report Generator task](https://marketplace.visualstudio.com/items?itemName=Palmmedia.reportgenerator)

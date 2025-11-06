@@ -607,7 +607,7 @@
       href: test/review-continuous-test-results-after-build.md
     - name: Review test Analytics
       href: test/test-analytics.md
-    - name: Review code coverage
+    - name: Review & configure code coverage
       href: test/review-code-coverage-results.md
 - name: Monitor & Troubleshoot
   items:
