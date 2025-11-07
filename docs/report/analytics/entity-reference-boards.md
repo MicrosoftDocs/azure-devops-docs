@@ -17,18 +17,18 @@ ms.date: 11/07/2022
 
 The Analytics service collects all Azure Boards work tracking definition and update activity. You can run Analytics queries directly in your browser and use a combination of properties to filter a query, aggregate data, or build a report. For more information, see [Define basic queries using OData Analytics](../extend-analytics/wit-analytics.md).
 
-This article describes most of the properties you can use to generate a work tracking Analytics report. Analytics stores all work tracking fields as properties except for HTML/rich-text and History fields. Custom fields are automatically added to Analytics as custom properties.
+This article describes most of the properties you can use to generate a work tracking Analytics report. Analytics stores all work tracking fields as properties except for HTML/rich-text and history fields. Custom fields are automatically added to Analytics as custom properties.
 
 [!INCLUDE [note-analytics-early-draft](../includes/note-analytics-data-model.md)]
 
 ## Entity sets overview
 
-When you query Analytics for work tracking data, query the `WorkItems` entity set to generate status and rollup reports. Use the `WorkItemSnapshot` entity set to generate trend, burndown, and burnup reports.
+When you query Analytics for work tracking data, query the **WorkItems** entity set to generate status and rollup reports. Use the **WorkItemSnapshot** entity set to generate trend, burndown, and burn up reports.
 
 Use other entity types, such as **Area**, **Iteration**, **Project**, or **Team** to filter data or select properties to report on. For example reports, see [Sample reports and quick reference index](../extend-analytics/quick-ref.md).
 
 > [!NOTE]  
-> To generate status and trend reports on test runs, test results, or other test data, query the **WorkItems** and **WorkItemSnapshot** entity types and filter based on the **TestRuns**, **TestPoints**, **TestResultsDaily**, **TestSuite** or **TestPointHistorySnapshot** entity types. For more information, see [Test metadata reference for Azure DevOps](entity-reference-test-plans.md).
+> To generate status and trend reports on test runs, test results, or other test data, query the **WorkItems** and **WorkItemSnapshot** entity types and filter based on the **TestRuns**, **TestPoints**, **TestResultsDaily**, **TestSuite**, or **TestPointHistorySnapshot** entity types. For more information, see [Test metadata reference for Azure DevOps](entity-reference-test-plans.md).
 
 |Entity set  | Entity type  | Description |
 |------------|-------------|-------------|  
@@ -50,7 +50,7 @@ Use other entity types, such as **Area**, **Iteration**, **Project**, or **Team*
 
 ### Snapshots
 
-The work tracking snapshot entity sets are `WorkItemSnapshot` and `WorkItemBoardSnapshot`. A snapshot writes to Analytics at the same time each day and provides a record of the values defined for a work item for that day. You can use snapshots to generate trend reports.
+The work tracking snapshot entity sets are **WorkItemSnapshot** and **WorkItemBoardSnapshot**. A snapshot writes to Analytics at the same time each day and provides a record of the values defined for a work item for that day. You can use snapshots to generate trend reports.
 
 By default, all snapshot tables are modeled as daily snapshot fact tables. A query for a time range gets a value for each day, and long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or monthly snapshots. For more information, see [Use weekly or monthly snapshots for trend queries that span a long time period](../extend-analytics/odata-query-guidelines.md#-do-use-weekly-or-monthly-snapshots-for-trend-queries-that-span-a-long-time-period). 
 
@@ -58,14 +58,14 @@ By default, all snapshot tables are modeled as daily snapshot fact tables. A que
 
 Each time you update a work item, the system creates a new revision and records it in the `System.RevisedDate` field, which is useful for specifying a history filter. You can represent the revised date by the `RevisedDate (DateTime)` and `RevisedDateSK (Int32)` properties.
 
-For best performance, use the latter date surrogate key property. This key shows the date a revision was created, or shows the OData datetime null value `"9999-01-01T00:00:00Z"` for active or incomplete revisions. If you want all the dates since the `{startDate}`, inclusive, add the following filter to your query: `RevisedDateSK eq null or RevisedDateSK gt {startDateSK}`.
+Use the latter date surrogate key property for best performance. This key shows the date a revision was created, or shows the OData datetime null value `"9999-01-01T00:00:00Z"` for active or incomplete revisions. If you want all the dates since the `{startDate}`, inclusive, add the following filter to your query: `RevisedDateSK eq null or RevisedDateSK gt {startDateSK}`.
 
-You use the `WorkItemRevisions` entity set to load all the revisions for a given work item. The query returns all historic work item revisions, including the current revision, for the work items you filter on, not including deleted work items. 
+You use the **WorkItemRevisions** entity set to load all the revisions for a given work item. The query returns all historic work item revisions, including the current revision, for the work items you filter on, not including deleted work items. 
 
 <a id="property-names-fields"></a> 
 ## Shared properties across entity types 
 
-The properties you can select in an Analytics view correspond to regular work tracking fields and selected Analytics properties, such as **Cycle Time Days** and **Lead Time Days**. These properties are defined for the following entity types, unless otherwise specified.
+The properties you can select in an Analytics view correspond to regular work tracking fields and selected Analytics properties, such as **Cycle Time Days** and **Lead Time Days**. These properties are defined for the following entity types, unless otherwise specified:
 
 - **WorkItem**  
 - **WorkItemRevision**  
@@ -75,9 +75,9 @@ The properties you can select in an Analytics view correspond to regular work tr
 >[!NOTE]
 >- The Analytics service doesn't store data for long text fields assigned the HTML or rich text data type, such as `Description` and `History` fields, and doesn't store link or attached file counts. For a complete list of fields defined in the default process templates, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). For data type descriptions, see [Query fields, operators, and macros](../../boards/queries/query-operators-variables.md).
 >
->- The following table doesn't include all properties associated with Scrum and CMMI process-specific fields. For a list of these fields, see [Fields used to track CMMI work items](../../boards/work-items/guidance/work-item-field.md#fields-used-to-track-cmmi-work-items).
+>- The following table doesn't include all properties associated with Scrum and Capability Maturity Model Integration (CMMI) process-specific fields. For a list of these fields, see [Fields used to track CMMI work items](../../boards/work-items/guidance/work-item-field.md#fields-used-to-track-cmmi-work-items).
 >
->- Date-based or user-based properties are associated with the `CalendarDate` and `User` entity sets described in [Calendar date, Project, and User metadata reference](entity-reference-general.md).
+>- Date-based or user-based properties are associated with the **CalendarDate** and **User** entity sets described in [Calendar date, Project, and User metadata reference](entity-reference-general.md).
 
 The following table lists and describes most of the properties you can select in an Analytics view, including regular work tracking fields and other Analytics properties.
 
@@ -85,11 +85,11 @@ The following table lists and describes most of the properties you can select in
 |--------------|-----------------------|---------------|------------------|--------------------|
 |**Accepted By**|`Microsoft_VSTS_CodeReview_AcceptedBy` | UserSK | Name of the person who responded to a code review. (CMMI process)|`Microsoft.VSTS.CodeReview.AcceptedBy` |
 |**Accepted Date**| `AcceptedDate` | DateTime | Date and time when the person responded to the code review. (CMMI process)|`Microsoft.VSTS.CodeReview.AcceptedDate`  |
-| **Activated By**|`ActivatedBy`|`ActivatedByUserSK` | UserSK | Name of the team member who activated or reactivated the work item.|`Microsoft.VSTS.Common.ActivatedBy`   |
+| **Activated By**|`ActivatedBy`, `ActivatedByUserSK` | UserSK | Name of the team member who activated or reactivated the work item.|`Microsoft.VSTS.Common.ActivatedBy`   |
 |**Activated Date**| `ActivatedDate` | DateTime | Date and time when a team member activated or reactivated a bug or work item.|`Microsoft.VSTS.CodeReview.ActivatedDate` |
 |**Activity**|`Activity` | String | Type of activity or discipline assigned to perform a task. Allowed values are: **Deployment**, **Design**, **Development**, **Documentation**, **Requirements**, and **Testing**. (Agile, Scrum, and Basic processes) |`Microsoft.VSTS.Common.Activity`  |
 | |`AnalyticsUpdatedDate` | DateTimeOffset | Data and time the entity was last updated. |
-|**Application Type**  | String | Type of application that stakeholders provide feedback on. Default values are **Web Application**, **Remote Machine**, and **Client Application**. Valid types are specified in the process configuration file for projects that use an On-premises XML process. |`Microsoft_VSTS_Feedback_ApplicationType`  |
+|**Application Type**  | | String | Type of application that stakeholders provide feedback on. Default values are **Web Application**, **Remote Machine**, and **Client Application**. Valid types are specified in the process configuration file for projects that use an On-premises XML process. |`Microsoft_VSTS_Feedback_ApplicationType`  |
 |**Area Path**|`AreaPath`, `AreaSK`  | String  | Product feature or team area work items group into. Must be a valid node in the project hierarchy.|`System.AreaPath`     |
 |**Assigned To** |`AssignedTo`, `AssignedToUserSK` | UserSK | Name of the team member who currently owns the work item.|`System.AssignedTo`    |
 |**Automated Test Id** |`AutomatedTestId` | String | ID of the test that automates the test case.|`Microsoft.VSTS.TCM.AutomatedTestId`   |
@@ -118,7 +118,7 @@ The following table lists and describes most of the properties you can select in
 |**Cycle Time Days**|`CycleTimeDays` | Double | Cycle time calculated from first entering an **In Progress** or **Resolved** state category to entering a **Completed** state category. For more information, see [Lead Time and Cycle Time widgets](../dashboards/cycle-time-and-lead-time.md). |
 |**Discipline**|`Discipline` | String | Type of activity or discipline assigned to a task. Allowed values are: **Analysis**, **Development**, **Test**, **User Education**, and **User Experience**. (CMMI process) |`Microsoft.VSTS.Common.Activity`   |
 |**Due Date**|`DueDate` | DateTime | Forecasted due date for an issue or work item to be resolved. (Agile process)|`Microsoft.VSTS.Scheduling.DueDate`    |
-| **Effort**|`Effort` | Double | Estimated amount of work that a product backlog item (Scrum process) or issue (Basic process) will require to implement. |`Microsoft.VSTS.Scheduling.Effort`  |
+| **Effort**|`Effort` | Double | Estimated amount of work that a product backlog item (Scrum process) or issue (Basic process) requires to implement. |`Microsoft.VSTS.Scheduling.Effort`  |
 |**Finish Date**|`FinishDate` | DateTime | Date and time the schedule indicates a work item is to be completed.|`Microsoft.VSTS.Scheduling.FinishDate`  |
 |**Found In**|`FoundIn` | String | Product build number, also known as revision, in which a bug was found.|`Microsoft.VSTS.Build.FoundIn`  |
 |**InProgress Date** |`InProgressDate`  | DateTime | Analytics stored date that captures the date-time when a work item was moved into a state that belongs to the **In Progress** state category.  |
@@ -155,17 +155,17 @@ The following table lists and describes most of the properties you can select in
 |**State Category** |`StateCategory`   | String | How Azure Boards and select dashboard widgets treat each workflow state. The state categories include  **Proposed**, **In Progress**, **Resolved**, **Removed**, and **Completed**. For more information, see [How to use workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md). Valid only for the `WorkItemRevision` entity type. |
 |**State Change Date** |`StateChangeDate` | DateTime | Date and time the value of the **State** field changed. |`Microsoft.VSTS.Common.StateChangeDate` |
 | |`StateChangeSK`| Int32 | Date the work item state changed, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities.  |
-|`StateChangeOn` | Navigation | Navigation property to the `Date` entity for the date a work item state changed, in the time zone defined for the organization. Commonly used to reference properties from the `Date` entity in `groupby` statements. |
+| |`StateChangeOn` | Navigation | Navigation property to the `Date` entity for the date a work item state changed, in the time zone defined for the organization. Commonly used to reference properties from the `Date` entity in `groupby` statements. |
 |**Story Points** |`StoryPoints`| Double | Estimate of the amount of work a user story requires to implement, commonly aggregated as a sum. (Agile process) |`Microsoft.VSTS.Scheduling.StoryPoints` |
 |**Tags**|`TagNames`  | String | Semicolon-delimited list of tags assigned to one or more work items for filtering or querying purposes.|`System.Tags` |
 |**Target Date** |`TargetDate`   | DateTime | Forecasted due date for an issue or other work item to be resolved or completed.|`Microsoft.VSTS.Scheduling.TargetDate`  |
-|**Test Suite Type** | String | Type of test suite. Valid values include **Query Based**, **Requirement Based**, and **Static**.|`Microsoft_VSTS_TCM_TestSuiteType`  |
-|**Test Suite Type Id** | Int64 | System-assigned number corresponding to the test suite category. Only applicable to test suites. Assigned values are **1 (Static)**, **2 (Query-based)**, and **3 (Requirement-based)**.|`Microsoft_VSTS_TCM_TestSuiteTypeId`  |
+|**Test Suite Type** | | String | Type of test suite. Valid values include **Query Based**, **Requirement Based**, and **Static**.|`Microsoft_VSTS_TCM_TestSuiteType`  |
+|**Test Suite Type Id** | | Int64 | System-assigned number corresponding to the test suite category. Only applicable to test suites. Assigned values are **1 (Static)**, **2 (Query-based)**, and **3 (Requirement-based)**.|`Microsoft_VSTS_TCM_TestSuiteTypeId`  |
 |**Time Criticality** |`TimeCriticality` | Double | Subjective unit of measure that captures how the business value lessens over time. Higher values indicate an epic or feature is inherently more time critical than items with lower values. |`Microsoft.VSTS.Common.TimeCriticality`  |
 |**Title** |`Title`  | String | Short description summarizing the work item that helps team members distinguish it from other work items in a list. |`System.Title`  |
 | **Value Area** |`ValueArea`   | String | Area of customer value addressed by the epic, feature, or backlog item. Values include **Architectural** or **Business**.|`Microsoft.VSTS.Common.ValueArea`  |
 |**Watermark**|`Watermark` | String | System-managed field that increments with changes made to a work item. Valid for the **WorkItemRevision** and **WorkItem** entity types.|`System.Watermark` |
-|**Work Item Id**|`WorkItemId` | Int32 | Unique identifier assigned to a work item. Work item IDs are unique across all projects within an organization or project collection.|`System.Id` |
+|**Work Item Id**|`WorkItemId` | Int32 | Unique identifier assigned to a work item. A work item ID is unique across all projects within an organization or project collection.|`System.Id` |
 | |`WorkItemRevisionSK`  | Int32 | Analytics unique key for the work item revision, used by external tools to join related entities.  |
 |**Work Item Type** |`WorkItemType` | String | Name of the work item type. Available work item types are based on the process the project uses. For more information, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md).|` System.WorkItemType` |
 
@@ -174,35 +174,35 @@ The following table lists and describes most of the properties you can select in
 OData navigation properties are the reference attributes of an entity that points to another entity. The following table provides a summary of the navigational properties, their referential constraints, and the entity types they're valid for. 
  
 | Display name | Name |Referential constraint | Property | Valid entity types |
-|--------------|-----------------------------------------------|-------------------------|
-|                 | `ChangedOn`|`ChangedDateSK`|`DateSK` |   `WorkItemRevision`, `WorkItemSnapshot`, `WorkItemBoardSnapshot` |
-|                 | `ClosedOn` | `ClosedDateSK`|`DateSK` |   `WorkItemRevision`, `WorkItemSnapshot`, `WorkItemBoardSnapshot` |
-|                 | `CreatedOn`| `CreatedDateSK`|`DateSK` |  `WorkItemRevision`, `WorkItemSnapshot`, `WorkItemBoardSnapshot` |
-|                 | `ResolvedOn`|`ResolvedDateSK`|`DateSK` |  `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`  |
-|                 | `StateChangeOn`|`StateChangeDateSK`|`DateSK` | `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`  |
-|                 | `InProgressOn`|`InProgressDateSK`|`DateSK` |  `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`|
-|                 | `CompletedOn`|`CompletedDateSK`|`DateSK` | `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`|
-|                 | `ChangedOn`| `ChangedDateSK`|`DateSK` | `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot` 
-|                 | `RevisedOn`|`RevisedDateSK`|`DateSK` |    `WorkItemRevision`, `WorkItemSnapshot`  |
-|                 | `Date`     | ` DateSK`|`DateSK`    |   `WorkItemRevision`, `WorkItemSnapshot`, `WorkItemBoardSnapshot` |
-| **Areas**       | `Area` | `AreaSK`       |  |    `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`  |
-| **BoardLocation** |                       |                |  `WorkItemRevision`, `WorkItem`, `WorkItemBoardSnapshot` |
-| **Iterations**  | `Iteration`  | `IterationSK`  | |   `WorkItemRevision`,  `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot` |
-| **Assigned To**  | `AssignedTo`  | `AssignedToUserSK`|`UserSK` |    `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`|
-| **Changed By**  | `ChangedBy`  | `ChangedByUserSK`|`UserSK` |    `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`|
-| **Created By**  | `CreatedBy`  | `CreatedByUserSK`|`UserSK` |  `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot` |
-| **Activated By**  | `ActivatedBy`  | `ActivatedByUserSK`|`UserSK` |    `WorkItemRevision`,`WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`  |
-| **Closed By**  | `ClosedBy`  | `ClosedBySK`|`UserSK` |   `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`  |
-| **ResolvedBy**  | `ResolvedBy`  | `ResolvedByUserSK`|`UserSK` |  `WorkItemRevision`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`|
-| **Teams**      |  | | | `Area`, `BoardLocation`, `Iteration`, `WorkItemRevision`, `WorkItemSnapshot`, `WorkItemBoardSnapshot`|
-| **Tags**       |  | | |      | `WorkItem`, `WorkItemRevision`, `WorkItemBoardSnapshot`  |
-| **Project**   | `Project`  | `ProjectSK`|`ProjectSK` |    `Tag`, `WorkItemBoardSnapshot`, `WorkItemLink`, `WorkItemRevision`, `WorkItemSnapshot`, `WorkItemTypeField`,  |
-| **Processes** |   | | |       | `WorkItemRevision`, `WorkItem`, `WorkItemSnapshot` |
-| **Revisions** |   | | |      | `WorkItem`  |
-| **Links**     |   | | |     | `WorkItem`  |
-| **Children**    |  | | |      |  `WorkItem`  |
-| **Parent**      |   | | |      |  `WorkItem`  |
-| **Descendants** |   | | |       |   `WorkItem`  |
+|--------------|------------------|-------------|----------------|-------------------------|
+|                 | `ChangedOn`|`ChangedDateSK`|`DateSK` |   `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+|                 | `ClosedOn` | `ClosedDateSK`|`DateSK` |   `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+|                 | `CreatedOn`| `CreatedDateSK`|`DateSK` |  `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+|                 | `ResolvedOn`|`ResolvedDateSK`|`DateSK` |  `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
+|                 | `StateChangeOn`|`StateChangeDateSK`|`DateSK` | `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
+|                 | `InProgressOn`|`InProgressDateSK`|`DateSK` |  `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+|                 | `CompletedOn`|`CompletedDateSK`|`DateSK` | `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+|                 | `ChangedOn`| `ChangedDateSK`|`DateSK` | `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** 
+|                 | `RevisedOn`|`RevisedDateSK`|`DateSK` |    `WorkItemRevision`, **WorkItemSnapshot**  |
+|                 | `Date`     | ` DateSK`|`DateSK`    |   `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+| **Areas**       | `Area` | `AreaSK`       |  |    `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
+| **BoardLocation** |            |           |                |  `WorkItemRevision`, `WorkItem`, **WorkItemBoardSnapshot** |
+| **Iterations**  | `Iteration`  | `IterationSK`  | |   `WorkItemRevision`,  `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+| **Assigned To**  | `AssignedTo`  | `AssignedToUserSK`|`UserSK` |    `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **Changed By**  | `ChangedBy`  | `ChangedByUserSK`|`UserSK` |    `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **Created By**  | `CreatedBy`  | `CreatedByUserSK`|`UserSK` |  `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+| **Activated By**  | `ActivatedBy`  | `ActivatedByUserSK`|`UserSK` |    `WorkItemRevision`,`WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
+| **Closed By**  | `ClosedBy`  | `ClosedBySK`|`UserSK` |   `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
+| **ResolvedBy**  | `ResolvedBy`  | `ResolvedByUserSK`|`UserSK` |  `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **Teams**      |  | | | `Area`, `BoardLocation`, `Iteration`, `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **Tags**       |  | | |       `WorkItem`, `WorkItemRevision`, **WorkItemBoardSnapshot**  |
+| **Project**   | `Project`  | `ProjectSK`|`ProjectSK` |    `Tag`, **WorkItemBoardSnapshot**, `WorkItemLink`, `WorkItemRevision`, **WorkItemSnapshot**, `WorkItemTypeField`,  |
+| **Processes** |   | |        | `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot** |
+| **Revisions** |   | |       | `WorkItem`  |
+| **Links**     |   | |      | `WorkItem`  |
+| **Children**    |  | |       |  `WorkItem`  |
+| **Parent**      |   | |       |  `WorkItem`  |
+| **Descendants** |   | |        |   `WorkItem`  |
 | **WorkItem**\*    | `WorkItemId`     | | | `WorkItemRevision`   |
 
 <a name="predictive-functions"></a>
@@ -212,7 +212,7 @@ OData navigation properties are the reference attributes of an entity that point
 <a id="kanban-board-properties-fields"></a> 
 ## BoardLocation and WorkItemBoardSnapshot
 
-The following table lists and describes properties defined for the **BoardLocation** and **WorkItemBoardSnapshot** entity types, unless specifically noted. You can use these fields to filter work item data based on the status of a work item within a team's board column, swimlane, or backlog level. For an example that queries the `WorkItemBoardSnapshot` entity set, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md).
+The following table lists and describes properties defined for the **BoardLocation** and **WorkItemBoardSnapshot** entity types, unless noted. You can use these fields to filter work item data based on the status of a work item within a team's board column, swimlane, or backlog level. For an example that queries the **WorkItemBoardSnapshot** entity set, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md).
 
 |Display name|Property name | Data type | Description |
 |-------------------------------------|---------------|--------------------------------------|
@@ -226,13 +226,13 @@ The following table lists and describes properties defined for the **BoardLocati
 |**Done** |`Done` | Enumerated | Indicator of the split-column location.\* |
 |**Column Item Limit**|`ColumnItemLimit` | Int32 | Number assigned to the board column in terms of its sequence.  |
 |**Is Board Visible** |`IsBoardVisible` | Boolean | Indication of whether the team elected to make a board visible.  |
-|**Is Column Split**|`IsColumnSplit`  | Boolean | Indication of whether a column has been split into **Doing** and **Done** columns as described in [Split columns on your board to show work in progress](../../boards/boards/split-columns.md).  |
+|**Is Column Split**|`IsColumnSplit`  | Boolean | Indication of whether a column is split into **Doing** and **Done** columns as described in [Split columns on your board to show work in progress](../../boards/boards/split-columns.md).  |
 |**Is Current** |`IsCurrent`  | Boolean | Property that supports filtering the data to view the most recent snapshot of the filtered work items when set to `True`. |
 |**Is Default Lane** |`IsDefaultLane` | Boolean | Indication that the work item is assigned to the default swimlane when set to `True`.  |
 |**Is Done** |`IsDone` | Boolean | Current assignment of the work item within a column to **Doing** if `False` or **Done** when `True`. Only valid when [split-columns](../../boards/boards/split-columns.md) is enabled for a board column. Reference name: `System.BoardColumnDone`   |
 |**Lane Id** |`LaneId` | Guid | Unique GUID assigned to a board swimlane. Each team can add one or more swimlanes to a board. For more information about swimlanes, see [Speed up your team's work by using swimlanes in your board](../../boards/boards/expedite-work.md). |
-|**Lane Name**|`LaneName` | String | The name assigned to the board swimlane. Reference name: `System.BoardLane`   |
-|**Lane Order**|`LaneOrder` | Int32 | The number assigned to the board swimlane in terms of its sequence. |
+|**Lane Name**|`LaneName` | String | Name assigned to the board swimlane. Reference name: `System.BoardLane`   |
+|**Lane Order**|`LaneOrder` | Int32 | Number assigned to the board swimlane in terms of its sequence. |
  
 \*The following table lists the member names for the `BoardColumnSplit` enumerated type, which you can use to filter on work items in the **Doing** or **Done** board columns.
  
@@ -249,7 +249,7 @@ For more information about board columns for a team, see the following articles:
 
 ## Areas 
 
-The following properties are valid for the `Areas` entity set, which is associated with the **Area Path** field. Surrogate keys associated with **Area** include `AreaSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on area path assignments. 
+The following properties are valid for the **Areas** entity set, which is associated with the **Area Path** field. Surrogate keys associated with **Area** include `AreaSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on area path assignments. 
  
 |Display name | Name           | Data type | Description |
 |-----------------|--------------------|---------------|--------------------------------------|
@@ -257,13 +257,13 @@ The following properties are valid for the `Areas` entity set, which is associat
 |    | `Number` | Int32 | Integer value assigned to an area path node at creation. |
 |**Depth** | `Depth` | Int32 | Level of the area path based on its depth from the root level.   |
 |**Area Id** | `AreaId` | GUID | Unique identifier assigned to an area path at creation.  |
-|**Area Level 1** through|**Area Level 14** | `AreaLevel1` through|`AreaLevel14`  | String | Name associated with the node level of an area path, up to 14 nested levels. Area Level 1 always corresponds to the root node and the project name.    |
+|**Area Level 1** through **Area Level 14** | `AreaLevel1` through `AreaLevel14`  | String | Node level of an area path up to 14 nested levels. Area Level 1 always corresponds to the root node and the project name.    |
 |**Area Name** | `AreaName` | String | Name defined for the area path at creation.  |
 |**Area Path** | `AreaPath` | String | Full path of the area path starting with the root node.   |
 
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
-Navigation properties for the **Area** entity type and `Areas` entity set include **Project** and **Teams**.  
+Navigation properties for the **Area** entity type and **Areas** entity set include **Project** and **Teams**.  
 
 For more information about **Area Path**, see the following articles:  
 - [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md)
@@ -271,7 +271,7 @@ For more information about **Area Path**, see the following articles:
 
 ## Iterations
 
-The following properties are valid for the `Iterations` entity set, which is associated with the **Iteration Path** field. Surrogate keys associated with **Iteration** include `IterationSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on iteration path assignments. 
+The following properties are valid for the **Iterations** entity set, which is associated with the **Iteration Path** field. Surrogate keys associated with **Iteration** include `IterationSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on iteration path assignments. 
 
 |Display name | Name           | Data type | Description |
 |-----------------|--------------------|---------------|--------------------------------------|
@@ -281,14 +281,14 @@ The following properties are valid for the `Iterations` entity set, which is ass
 |**End Date** | `EndDate` | DateTime | End date defined for the iteration path.   |
 |**IsEnded** | `IsEnded` | Boolean | Indication that the iteration path end date is in the past when set to `True`.   |
 |**Iteration Id** | `IterationId` | GUID | Unique identifier assigned to an iteration path at creation.  |
-|**Iteration Level 1** through|**Iteration Level 14** | `IterationLevel1` through|`IterationLevel14`  | String | Name associated with the node level of an iteration path, up to 14 nested levels. Iteration Level 1 always corresponds to the root node and the project name.   |
+|**Iteration Level 1** through **Iteration Level 14** | `IterationLevel1` through `IterationLevel14`  | String | Node level of an iteration path up to 14 nested levels. Iteration Level 1 always corresponds to the root node and the project name.   |
 |**Iteration Name** | `IterationName` | String | Name defined for an iteration path at creation.  |
 |**Iteration Path** | `IterationPath` | String |  Full iteration path starting with the root node. The iteration must be a valid node in the project hierarchy. Reference name: `System.IterationPath`    |
 |**Start Date** | `StartDate` | DateTime | Start date defined for the iteration path.   |
 
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
-Navigation properties for the **Iteration** entity type and `Iterations` entity set include **Project** and **Teams**.  
+Navigation properties for the **Iteration** entity type and **Iterations** entity set include **Project** and **Teams**.  
 
 For more information about **Iteration Paths**, see the following articles:  
 - [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md)
@@ -296,10 +296,10 @@ For more information about **Iteration Paths**, see the following articles:
 
 ## Processes
 
-The following properties are valid for the **Process** entity type and `Processes` entity set. Surrogate keys associated with **Process** include `ProcessSK`, `ProjectSK`, and `TeamSK`. You can use these properties to filter or report on work tracking data based on work item types used by a project or team. 
+The following properties are valid for the **Process** entity type and **Processes** entity set. Surrogate keys associated with **Process** include `ProcessSK`, `ProjectSK`, and `TeamSK`. Use these properties to filter or report work tracking data on work item types for a project or team. 
 
 > [!NOTE]   
-> The **v-2.0**, **v3.0-preview** and **v4.0-preview** Analytics versions support the **Process** entity type and `Processes` entity set.  
+> The **v-2.0**, **v3.0-preview**, and **v4.0-preview** Analytics versions support the **Process** entity type and **Processes** entity set.  
 
 You can use these properties to filter on work tracking data based on a backlog level.
 
@@ -311,7 +311,7 @@ You can use these properties to filter on work tracking data based on a backlog 
 |**Backlog Category Reference Name** | `BacklogCategoryReferenceName` | String | Category reference name assigned to the backlog associated with the work item type. Examples include `Microsoft.EpicCategory`, `Microsoft.FeatureCategory`, `Microsoft.RequirementCategory`, and `Microsoft.TaskCategory`.     |
 |**Backlog Name** | `BacklogName` | Boolean | Reference name assigned to the backlog associated with the work item type  |
 |**Backlog Type** | `BacklogType` | GUID | Unique identifier assigned to a backlog at creation.  |
-|**Backlog Level** | `BacklogLevel`  | String | Backlog level associated with the work item type<!---, where 1 corresponds to the top-level portfolio backlog-->. If the work item type isn't associated with a backlog level, the `null` value returns.  |
+|**Backlog Level** | `BacklogLevel`  | String | Backlog level associated with the work item type<!---, where 1 corresponds to the top-level portfolio backlog-->. The `null` value returns if the work item type isn't associated with a backlog level. |
 |**Work Item Type** | `WorkItemType` | String | Name defined for a work item type.  |
 |**Has Backlog** | `HasBacklog` | String |  Indication whether the work item type belongs to a backlog.      |
 |**Is Hidden Type** | `IsHiddenType` | Boolean | Indication whether the work item type is disabled.   |
@@ -325,18 +325,18 @@ For more information about process backlogs and work item types, see the followi
 
 ## Tags
 
-The following properties are valid for the `Tags` entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [Project](entity-reference-general.md#projects) and its referential constraint `ProjectSK`. For more information about using tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
+The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [Project](entity-reference-general.md#projects) and its referential constraint `ProjectSK`. For more information about using tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
 
 You can use these properties to filter or report on work tracking data. 
 
 |Display name | Name           | Data type | Description |
 |-----------------|--------------------|---------------|--------------------------------------|
-|**Tag Id** | `TagId` | GUID | Unique ID assigned to the tag when it's created.    |
+|**Tag Id** | `TagId` | GUID | Unique ID assigned to the tag at creation.    |
 |**Tag Name** | `TagName` | String | Tag name.  |
 
 ## Teams
 
-The following properties are valid for the **Team** entity type and `Teams` entity set.  Surrogate keys associated with **Team** include `TeamSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on team assignments. For information on using and adding teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [Create or add a team](../../organizations/settings/add-teams.md).
+The following properties are valid for the **Team** entity type and **Teams** entity set. Surrogate keys associated with **Team** include `TeamSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on team assignments. For information on using and adding teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [Create or add a team](../../organizations/settings/add-teams.md).
 
 |Display name | Name           | Data type | Description |
 |-----------------|--------------------|---------------|--------------------------------------|
@@ -344,11 +344,11 @@ The following properties are valid for the **Team** entity type and `Teams` enti
 |**Team Id** | `TeamId` | GUID | Unique ID assigned to the team at creation.    |
 |**Team Name** | `TeamName` | String | Team name.  |
 
-Navigation properties for the `Teams` entity set include **Projects**, **Areas**, and **Iterations**.
+Navigation properties for the **Teams** entity set include **Projects**, **Areas**, and **Iterations**.
 
 ## WorkItemLinks
 
-The following properties are valid for the `WorkItemLinks` entity set. The property reference surrogate key is `WorkItemLinkSK`. Query `WorkItemLinks` to report on parent/child, related, predecessor/successor or other link types. 
+The following properties are valid for the **WorkItemLinks** entity set. The property reference surrogate key is `WorkItemLinkSK`. Query `WorkItemLinks` to report on parent/child, related, predecessor/successor, or other link types. 
 
 |Display name | Name           | Data type | Description |
 |-----------------|--------------------|---------------|--------------------------------------|
@@ -374,7 +374,7 @@ For more information about links and link types, see the following articles:
 <a id="work-item-type-field-properties"></a> 
 ## WorkItemTypeFields
  
-The following properties are valid for the `WorkItemTypeFields` entity set. The property reference keys are `FieldName`, `ProjectSK`, and `WorkItemType`. 
+The following properties are valid for the **WorkItemTypeFields** entity set. The property reference keys are `FieldName`, `ProjectSK`, and `WorkItemType`. 
 
 |Display name | Name           | Data type | Description |
 |-----------------|--------------------|---------------|--------------------------------------|
@@ -387,7 +387,7 @@ Navigation properties include **Project**. For an index of all fields defined fo
 - [Work item fields and attributes](../../boards/work-items/work-item-fields.md)
 - [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md) 
 
-## Custom properties 
+## Custom properties
 
 Custom fields are automatically added to the Analytics service as custom properties. `Custom_` or `Custom.` is prepended to the property name. Check your collection's metadata as described in [Query the metadata](analytics-query-parts.md#url-components-to-query-the-metadata). The following example shows metadata syntax for the custom field **Risk Opportunity**. 
 
@@ -401,13 +401,13 @@ Custom fields are automatically added to the Analytics service as custom propert
 
 ### Custom work item types and backlog categories
 
-Data for custom work item types is automatically added to the Analytics service. A custom category is created when a custom work item type and backlog level are defined, with `Custom_` or `Custom.` prepended to the category GUID. For example, the **Portfolio** custom work item type in a Portfolios backlog is assigned a custom category such as `Custom.49b81c4e-9c4f-4c04-94fd-d660cbf3a000`.
+Data for custom work item types is automatically added to the Analytics service. A custom category is created when a custom work item type and backlog level are defined, with `Custom_` or `Custom.` prepended to the category GUID. For example, a custom category such as `Custom.49b81c4e-9c4f-4c04-94fd-d660cbf3a000` might be assigned to the **Portfolio** custom work item type in a Portfolios backlog.
 
 ## Related content
 
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 - [Track user stories, issues, bugs, and other work items in Azure Boards](../../boards/work-items/about-work-items.md)   
-- [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
+- [Work item fields and attributes](../../boards/work-items/work-item-fields.md)
 - [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) 
 - [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md) 
 - [Historical data representation in Analytics](analytics-historical-filtering.md)

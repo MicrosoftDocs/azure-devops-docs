@@ -10,7 +10,7 @@ ms.date: 04/29/2025
  
 > [!IMPORTANT]
 > Deleting **Area Path** values or reconfiguring **Iteration Path** values causes irreversible data loss in the following charts:
-> - Burndown and burnup widget charts
+> - Burndown and burn up widget charts
 > - Sprint burndown charts
 > - Velocity charts for teams with changed area paths
 > - Historical trend charts that reference the **Area Path** and **Iteration Path** values as defined at the time for each work item
