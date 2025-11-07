@@ -290,7 +290,6 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "default.sea.prod.manageddevops.microsoft.com",
     "default.szn.prod.manageddevops.microsoft.com",
     "default.uks.prod.manageddevops.microsoft.com",
-    "default.wcus.prod.manageddevops.microsoft.com",
     "default.wus3.prod.manageddevops.microsoft.com"
 )
 $unreachableUris = @()
