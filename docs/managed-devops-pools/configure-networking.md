@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 10/27/2025
+ms.date: 11/07/2025
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -274,8 +274,7 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "https://rmprodneudefaultcq.queue.core.windows.net",
     "https://rmprodseadefaultcq.queue.core.windows.net",
     "https://rmprodszndefaultcq.queue.core.windows.net",
-    "https://rmproduksdefaultcq.queue.core.windows.net",
-    "https://rmprodwcusdefaultcq.queue.core.windows.net",
+    "https://rmproduksdefaultcq.queue.core.windows.net"
     "https://rmprodwus3defaultcq.queue.core.windows.net",
     # CDN for downloading the Managed DevOps Pools agent - maps to *.prod.managedevops.microsoft.com
     "rm-agent.prod.manageddevops.microsoft.com"
