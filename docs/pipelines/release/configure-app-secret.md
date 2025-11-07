@@ -10,19 +10,19 @@ ms.custom:
 "recommendations": "true"
 ---
 
-# Manually set an Azure Resource Manager with a secret
+# Manually set a Azure Resource Manager (ARM) with a secret
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article guides you through manually setting up an app registration with a secret in Azure portal, creating a service connection for service principal authentication in Azure DevOps, and granting the necessary permissions.
 
-Use this approach when you for cannot use Microsoft Entra due to organizational limitations. For example, you should use a secret when workload identity federation is not supported for your Microsoft Entra tenant or when you have a multitenant app registrations.
+Use this approach when you can't use Microsoft Entra due to organizational limitations. For example, use a secret when workload identity federation isn't supported for your Microsoft Entra tenant or when you have multitenant app registrations.
 
-For other scenarios, the recommended approach is to instead use [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity. Workload identity federation eliminates the need for secrets and secret management. To learn more, see [Connect to Azure with an Azure Resource Manager service connection](../library/connect-to-azure.md).  
+For other scenarios, use [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity. Workload identity federation eliminates the need for secrets and secret management. To learn more, see [Connect to Azure with an ARM service connection](../library/connect-to-azure.md).  
 
 ### Prerequisites for app registration authentication
 
-- To create a service connection, your Azure account needs to be able to create app registrations. 
+- To create a service connection, your Azure account needs permission to create app registrations. 
     - If [creating app registrations is disabled in your tenant](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications), then you need to have the [Application Developer role](/entra/identity/role-based-access-control/permissions-reference#application-developer) to create application registrations. 
 
 
@@ -34,7 +34,7 @@ For other scenarios, the recommended approach is to instead use [workload identi
 
     :::image type="content" source="approvals/media/new-app-registration.png" alt-text="Screenshot that shows a new app registration.":::
 
-1. For **Name**, enter a name for your app registration, and then select **Who can use this application or access this API**. 
+1. For **Name**, enter a name for your app registration, then select **Who can use this application or access this API**. 
 
 1. Select **Register**. 
 
@@ -42,7 +42,7 @@ For other scenarios, the recommended approach is to instead use [workload identi
 
 1. Within your app registration, select **Certificates & secrets**.
 
-1. Select **Client secrets**, and then select **New client secret**. Provide a description of the secret, and a duration. Once you've saved the client secret, the value of the client secret is displayed. This is only displayed once, so copy this value and store it. You'll use the secret value in your Azure Resource Manager connection.
+1. Select **Client secrets**, then select **New client secret**. Provide a description of the secret and a duration. After you save the client secret, the value of the client secret is displayed. This value is only displayed once, so copy and store it. You'll use the secret value in your ARM connection.
 
 1. Select **Add**.
 
@@ -101,7 +101,7 @@ For other scenarios, the recommended approach is to instead use [workload identi
         | **Application (client) ID** | Required. Enter the Application (client) ID for your app registration. |
         | **Directory (tenant) ID** | Required. Enter the Directory (tenant) ID for your app registration. |
 
-1. For **Credential**, select `Service principal key`. Enter the secret value in the **Client secret** field.    
+1. For **Credential**, select **Service principal key**. Enter the secret value in the **Client secret** field.    
     
 1. In the **Security** section, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
  
