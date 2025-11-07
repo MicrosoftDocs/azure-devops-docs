@@ -25,10 +25,6 @@ Use the following checklist to troubleshoot issues with workload identity servic
 
 The following sections describe the issues and how to resolve them.
 
-### How do I create a workload identity federation service connection in automation? 
-
-Workload identity federation defines a bi-directional relationship between the identity and service connection. As a result, objects need to be created in a certain order and the federated credential can only be created after the service connection is created. To learn how to automate creating workload identity service connections, go to [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md). 
-
 ### Review pipeline tasks
 
 Almost all pipelines tasks that authenticate with Microsoft Entra support workload identity. The table below lists workload identity federation support for [tasks included with Azure DevOps](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true). For tasks installed from the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&visibilityQuery=all&sortBy=Installs), contact the extension publisher for support.
@@ -136,6 +132,10 @@ You have two options to resolve the issue:
 
 - [Solution 1: Manually configure workload identity by using managed identity authentication](configure-workload-identity.md#set-a-workload-identity-service-connection-to-use-managed-identity-authentication)
 - [Solution 2: Manually configure workload identity by using app registration authentication](configure-workload-identity.md#app-registration-workload-identity)
+
+### How do I create a workload identity federation service connection in automation? 
+
+Workload identity federation defines a bi-directional relationship between the identity and service connection. As a result, objects need to be created in a certain order and the federated credential can only be created after the service connection is created. To learn how to automate creating workload identity service connections, go to [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md). 
 
 ## Error messages
 
