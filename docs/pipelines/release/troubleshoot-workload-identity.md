@@ -15,8 +15,6 @@ monikerRange: '>= azure-devops'
 
 Get help debugging common issues with workload identity service connections. You also learn how to manually create a service connection if you need to.
 
-To learn how to automate creating workload identity service connections, go to [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md). 
-
 ## Troubleshooting checklist
 
 Use the following checklist to troubleshoot issues with workload identity service connections:
@@ -26,6 +24,10 @@ Use the following checklist to troubleshoot issues with workload identity servic
 - Check the issuer URL and federation subject identifier for accuracy.
 
 The following sections describe the issues and how to resolve them.
+
+### How do I create a workload identity federation service connection in automation? 
+
+Workload identity federation defines a bi-directional relationship between the identity and service connection. As a result, objects need to be created in a certain order and the federated credential can only be created after the service connection is created. To learn how to automate creating workload identity service connections, go to [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md). 
 
 ### Review pipeline tasks
 
@@ -113,7 +115,7 @@ If you see a message that indicates **no matching federated identity record foun
 
 | &nbsp;  | Azure DevOps issuer                                                 | Microsoft Entra issuer (new service connections)                        |
 |---------|---------------------------------------------------------------------|-------------------------------------------------------------------------|
-| Issuer  | `https://vstoken.dev.azure.com/<organization id>`                   | `https://login.microsoftonline.com/<Entra tenant id>/v2.0`              |
+| Issuer  | `https://vstoken.dev.azure.com/<organization id>`                   | `https://login.microsoftonline.com/<microsoft entra tenant id>/v2.0`    |
 | Subject | `sc://<organization name>/<project name>/<service connection name>` | `<microsoft entra prefix>/sc/<organization id>/<service connection id>` |
 
 You can fix the issuer URL by editing and saving the service connection to update the issuer URL. If Azure DevOps didn't create the identity, the issuer URL must be updated manually. For Azure identities, the issuer URL automatically updates.  
