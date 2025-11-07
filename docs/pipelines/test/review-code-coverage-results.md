@@ -7,7 +7,7 @@ ms.custom: continuous-test, cross-service
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 11/06/2025
+ms.date: 11/07/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -31,8 +31,8 @@ This article shows you how to view, configure, and troubleshoot code coverage in
 
 Azure Pipelines can publish coverage results, through the Publish Code Coverage Results v2 task. The task can display the results in 2 different views:
 
-1. For cobertura, jacoco, clover, gcov, pcov, and other xml formats, an HTML view generates, containing more details of the code coverage report, and is preferred by most of the customers.
-2. For `.coverage`/`.cjson`/`.covx` – a tabular view generates, containing less details than the HTML view.
+- For cobertura, jacoco, clover, gcov, pcov, and other xml formats, an HTML view generates, containing more details of the code coverage report, and is preferred by most of the customers.
+- For `.coverage`/`.cjson`/`.covx` – a tabular view generates, containing less details than the HTML view.
 
 ### Artifacts and results
 
@@ -183,6 +183,7 @@ The data displayed on the tab comes from the coverage file. If you're using cust
 Several factors can cause this issue:
 
 - **Incorrect branch policy name format**: Verify the pipeline name matches the branch policy name and has no extra characters.
+
   :::image type="content" source="media/review-code-coverage-results/confirm-pipeline-name-match.png" alt-text="Screenshot shows Policies tab and highlighted branch policy name, to confirm it matches the pipeline name.":::
 - **Using PublishCodeCoverage V1**: The code coverage policy gets stuck and comments aren't generated. Use the PublishCodeCoverage V2 task instead.
 - **Too many files in PR**: If the PR has more than 100 files, the coverage policy gets stuck.
@@ -211,7 +212,7 @@ When there are problems generating the `.html` report, the system falls back to 
 
 ### Which coverage tools and result formats can be used for validating code coverage in pull requests?
 
-Currently, you can only use Visual Studio Code coverage (`.coverage`) formats to validate code coverage for pull requests. Use this format if you publish code coverage by using the Visual Studio Test task, the test verb of the .NET Core task, and the TRX option of the Publish Test Results task. Support for other coverage tools and result formats will be added in future milestones.
+Currently, you can only use Visual Studio Code coverage (`.coverage`) formats to validate code coverage for pull requests. Use this format if you publish code coverage by using the Visual Studio Test task, the test verb of the .NET Core task, and the TRX option of the Publish Test Results task.
 
 ### If multiple pipelines are triggered when a pull request is raised, will coverage get merged across the pipelines?
 
