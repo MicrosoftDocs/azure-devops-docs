@@ -38,7 +38,7 @@ To build and deploy Xcode apps, you need at least one macOS agent. This agent ca
 :::moniker range=">=azure-devops-server"
 
 * Supported operating systems
-    [!INCLUDE [v4-osx-os](./includes/v4-osx-os.md)]
+    [!INCLUDE [v4-osx-os](./includes/v4-macos-os.md)]
 
 - **Git** - Git 2.9.0 or higher (latest version recommended - you can easily install with [Homebrew](https://brew.sh/))
 * **.NET** - The [4.x agent](./v4-agent.md) software runs on .NET 8, but installs its own version of .NET so there is no .NET prerequisite.

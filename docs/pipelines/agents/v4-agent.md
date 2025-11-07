@@ -22,16 +22,12 @@ The following operating systems are supported by the 4.x agent.
 > See [.NET 8 - Supported OS versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions) for the full list of operating systems.
 
 #### Linux
-
-[!INCLUDE [v4-linux-os](./includes/v4-linux-os.md)] 
-
-#### macOS
-
-[!INCLUDE [v4-osx-os](./includes/v4-osx-os.md)]
-
-#### Windows
-
-[!INCLUDE [v4-windows-os](./includes/v4-windows-os.md)]
+* **Linux**
+  [!INCLUDE [v4-linux-os](./includes/v4-linux-os.md)] 
+* **macOS**
+  [!INCLUDE [v4-macos-os](./includes/v4-macos-os.md)]
+* **Windows**
+  [!INCLUDE [v4-windows-os](./includes/v4-windows-os.md)]
 
 ## Upgrade to 4.x agent on unsupported operating systems
 
@@ -105,13 +101,15 @@ The version of .NET used to run the 4.x agent is self-contained in the agent ins
 
 ### I use Azure DevOps Server and not Azure DevOps Services. Does this change impact me?
 
-At this time, the current versions of Azure DevOps Server still use the 3.x agent software, so there is no immediate impact.
+The latest version of [Azure DevOps Server](/azure/devops/server/release-notes/azuredevopsserver) uses the 4.x agent software, and previous versions use the 3.x agent software.
 
 The pipelines team recommends that you update your agent machines to newer operating systems that are supported by .NET 8 starting now, if you plan to keep up with the Azure DevOps Server releases in the future.
 
 ### Does Azure DevOps Server support the 4.x agent
 
-Azure DevOps Server versions support the version of the agent that is deployed with that version. Currently, the latest Azure DevOps Server versions support the 3.x agent software versions. For more information, see [Does Azure DevOps Server support the 3.x agent](./v3-agent.md#does-azure-devops-server-support-the-3x-agent).
+Azure DevOps Server versions support the version of the agent that is deployed with that version. The latest version of [Azure DevOps Server](/azure/devops/server/release-notes/azuredevopsserver) uses the 4.x agent software, and previous versions use the 3.x agent software.
+
+[!INCLUDE [ado-server-agent-versions](./includes/ado-server-agent-versions.md)]
 
 > [!NOTE]
 > Azure DevOps Server 2020 and higher will support the 4.x agent software through updates. When those updates are released, this article will be updated with the corresponding agent version.

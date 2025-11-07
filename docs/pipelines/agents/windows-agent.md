@@ -40,14 +40,13 @@ Make sure your machine has these prerequisites:
 
 * Operating system version
   [!INCLUDE [v4-windows-os](./includes/v4-windows-os.md)]
-
 * The agent software installs its own version of .NET so there's no .NET prerequisite.
 * [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
 * **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
 * Recommended - [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) (2015 or higher)
 
 :::moniker-end
-* 
+
 :::moniker range="<azure-devops-server"
 
 * Operating system version
