@@ -100,7 +100,7 @@ The following table lists and describes most of the properties you can select in
 |**Backlog Priority**|`BacklogPriority` | Double | Number assigned by a system background process used to stack rank or track the sequence of items on a backlog or board. (Scrum process) |`Microsoft.VSTS.Common.BacklogPriority`|
 |**Blocked**|`Blocked`  | String | Indication that no further work can be performed on the work item. Valid values are **Yes** or **No**. (CMMI process)|`Microsoft.VSTS.CMMI.Blocked` |
 |**Business Value**|`BusinessValue` | Double | Subjective unit of measure that captures the relative business value of a product backlog item or feature compared to other items of the same type. Item assigned higher numbers are considered to have more business value than items assigned lower numbers. |`Microsoft.VSTS.Common.BusinessValue`   |
-|**Changed By**|`ChangedBy`|`ChangedByUserSK` | UserSK | Name of the person who modified the work item most recently.|`System.ChangedBy`   |
+|**Changed By**|`ChangedBy`, `ChangedByUserSK` | UserSK | Name of the person who modified the work item most recently.|`System.ChangedBy`   |
 |**Changed Date**|`ChangedDate`  | DateTime | Date and time when the work item was modified.|`System.ChangedDate`  |
 | |`ChangedDateSK` | Int32 | Date the work item was modified, expressed as `YYYYMMDD` in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Used by external tools to join related entities.  |
 | |`ChangedOn`  | Navigation | Navigational property to the `Date` entity for the date the work item was modified, in the time zone defined for the organization. Commonly used to reference properties from the `Date` entity in `groupby` statements. |
@@ -137,7 +137,7 @@ The following table lists and describes most of the properties you can select in
 |**Rating** |`Reason` | String | Number of stars an item receives from a reviewer in a star-based ranking system (Feedback Response). The number is stored in the system and written as **0 - Not Rated**, **1 - Poor**, **2 - Fair**, **3 - Good**, **4 - Very Good**, or **5 - Excellent**. Valid for the **WorkItemRevision** and **WorkItem** entity types.|`Microsoft.VSTS.Common.Rating`  |
 | **Reason** |`Reason` | String | Reason why the work item is in the current state. Each transition from one workflow state to another is associated with a corresponding reason. |`System.Reason`  |
 |**Remaining Work** |`RemainingWork` | Double | Measure of the amount of work that remains to finish a task.|`Microsoft.VSTS.Scheduling.RemainingWork` |
-|**Resolved By** |`ResolvedBy` |`ResolvedByUserSK` | UserSK | Name of the team member who resolved the bug or user story.|`Microsoft.VSTS.Common.ResolvedBy` |
+|**Resolved By** |`ResolvedBy`, `ResolvedByUserSK` | UserSK | Name of the team member who resolved the bug or user story.|`Microsoft.VSTS.Common.ResolvedBy` |
 |**Resolved Date** |`ResolvedDate` | DateTime | Date and time when the bug or user story was resolved. |`Microsoft.VSTS.Common.ResolvedDate` |
 | |`ResolvedDateSK`| Int32 | Date the work item was resolved, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities. |
 | |`ResolvedOn` | Navigation | Navigation property to the `Date` entity for the date the work item was resolved, in the time zone defined for the organization. Commonly used to reference properties from the `Date` entity in `groupby` statements. |
@@ -175,35 +175,35 @@ OData navigation properties are the reference attributes of an entity that point
  
 | Display name | Name |Referential constraint | Property | Valid entity types |
 |--------------|------------------|-------------|----------------|-------------------------|
-|                 | `ChangedOn`|`ChangedDateSK`|`DateSK` |   `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
-|                 | `ClosedOn` | `ClosedDateSK`|`DateSK` |   `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
-|                 | `CreatedOn`| `CreatedDateSK`|`DateSK` |  `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
-|                 | `ResolvedOn`|`ResolvedDateSK`|`DateSK` |  `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
-|                 | `StateChangeOn`|`StateChangeDateSK`|`DateSK` | `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
-|                 | `InProgressOn`|`InProgressDateSK`|`DateSK` |  `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
-|                 | `CompletedOn`|`CompletedDateSK`|`DateSK` | `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
-|                 | `ChangedOn`| `ChangedDateSK`|`DateSK` | `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** 
-|                 | `RevisedOn`|`RevisedDateSK`|`DateSK` |    `WorkItemRevision`, **WorkItemSnapshot**  |
-|                 | `Date`     | ` DateSK`|`DateSK`    |   `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
-| **Areas**       | `Area` | `AreaSK`       |  |    `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
-| **BoardLocation** |            |           |                |  `WorkItemRevision`, `WorkItem`, **WorkItemBoardSnapshot** |
-| **Iterations**  | `Iteration`  | `IterationSK`  | |   `WorkItemRevision`,  `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
-| **Assigned To**  | `AssignedTo`  | `AssignedToUserSK`|`UserSK` |    `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
-| **Changed By**  | `ChangedBy`  | `ChangedByUserSK`|`UserSK` |    `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
-| **Created By**  | `CreatedBy`  | `CreatedByUserSK`|`UserSK` |  `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
-| **Activated By**  | `ActivatedBy`  | `ActivatedByUserSK`|`UserSK` |    `WorkItemRevision`,`WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
-| **Closed By**  | `ClosedBy`  | `ClosedBySK`|`UserSK` |   `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
-| **ResolvedBy**  | `ResolvedBy`, `ResolvedByUserSK`|`UserSK` |  `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
-| **Teams**      |  | | | `Area`, `BoardLocation`, `Iteration`, `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
-| **Tags**       |  | | |       `WorkItem`, `WorkItemRevision`, **WorkItemBoardSnapshot**  |
-| **Project**   | `Project`  | `ProjectSK`|`ProjectSK` |    `Tag`, **WorkItemBoardSnapshot**, `WorkItemLink`, `WorkItemRevision`, **WorkItemSnapshot**, `WorkItemTypeField`,  |
-| **Processes** |   | |        | `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot** |
-| **Revisions** |   | |       | `WorkItem`  |
-| **Links**     |   | |      | `WorkItem`  |
-| **Children**    |  | |       |  `WorkItem`  |
-| **Parent**      |   | |       |  `WorkItem`  |
-| **Descendants** |   | |        |   `WorkItem`  |
-| **WorkItem**\*    | `WorkItemId`     | | | `WorkItemRevision`   |
+|                 | `ChangedOn`|`ChangedDateSK`|`DateSK` |   **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+|                 | `ClosedOn` | `ClosedDateSK`|`DateSK` |   **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+|                 | `CreatedOn`| `CreatedDateSK`|`DateSK` |  **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+|                 | `ResolvedOn`|`ResolvedDateSK`|`DateSK` |  **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
+|                 | `StateChangeOn`|`StateChangeDateSK`|`DateSK` | **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
+|                 | `InProgressOn`|`InProgressDateSK`|`DateSK` |  **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+|                 | `CompletedOn`|`CompletedDateSK`|`DateSK` | **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+|                 | `ChangedOn`| `ChangedDateSK`|`DateSK` | **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot** 
+|                 | `RevisedOn`|`RevisedDateSK`|`DateSK` |    **WorkItemRevision**, **WorkItemSnapshot**  |
+|                 | `Date`     | ` DateSK`|`DateSK`    |   **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+| **Areas**       | `Area` | `AreaSK`       |  |    **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
+| **BoardLocation** |            |           |                |  **WorkItemRevision**, **WorkItem**, **WorkItemBoardSnapshot** |
+| **Iterations**  | `Iteration`  | `IterationSK`  | |   **WorkItemRevision**,  **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+| **Assigned To**  | `AssignedTo`  | `AssignedToUserSK`|`UserSK` |    **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **Changed By**  | `ChangedBy`  | `ChangedByUserSK`|`UserSK` |    **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **Created By**  | `CreatedBy`  | `CreatedByUserSK`|`UserSK` |  **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
+| **Activated By**  | `ActivatedBy`  | `ActivatedByUserSK`|`UserSK` |    **WorkItemRevision**,**WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
+| **Closed By**  | `ClosedBy`  | `ClosedBySK`|`UserSK` |   **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
+| **ResolvedBy**  | `ResolvedBy`, `ResolvedByUserSK`|`UserSK` |  **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **Teams**      |  | | | `Area`, `BoardLocation`, `Iteration`, **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **Tags**       |  | | |       **WorkItem**, **WorkItemRevision**, **WorkItemBoardSnapshot**  |
+| **Project**   | `Project`  | `ProjectSK`|`ProjectSK` |    **Tag**, **WorkItemBoardSnapshot**, **WorkItemLink**, **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemTypeField**  |
+| **Processes** |   | |        | **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot** |
+| **Revisions** |   | |       | **WorkItem**  |
+| **Links**     |   | |      | **WorkItem**  |
+| **Children**    |  | |       |  **WorkItem**  |
+| **Parent**      |   | |       |  **WorkItem**  |
+| **Descendants** |   | |        |   **WorkItem**  |
+| **WorkItem**\*    | `WorkItemId`     | | | **WorkItemRevision**   |
 
 <a name="predictive-functions"></a>
 
