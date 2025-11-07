@@ -46,7 +46,7 @@ We support the following subset of .NET 8 supported distributions:
   [!INCLUDE [v4-linux-os](./includes/v4-linux-os.md)]
 * **Git** - Regardless of your platform, you need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
-* **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
+* **.NET** - The agent software runs on .NET 8, but installs its own version of .NET so there is no .NET prerequisite.
 * **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
 * **TFVC** - If you're building from a TFVC repo, see [TFVC prerequisites](#tfvc-prerequisites).
 
