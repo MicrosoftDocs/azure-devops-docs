@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 03/11/2025
+ms.date: 11/07/2025
 ---
 
 # Create a project in Azure DevOps
@@ -44,13 +44,6 @@ Create an Azure DevOps project to set up a source code repository and organize y
 |**Permissions** |Be a member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group or have the collection-level "Create new projects" permission set to *Allow*. Organization owners are automatically members of this group.|
 
 ::: moniker-end  
-
-::: moniker range="azure-devops"
-
-> [!IMPORTANT]  
-> To create a public project or [make a private project public](../projects/make-project-public.md), enable other policy settings to work with public projects, and then return to this article to create your project.
-
-::: moniker-end
 
 ## Create a project
 
@@ -87,9 +80,7 @@ There isn't a limit on the number of projects that you can create within a proje
      For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav-2.png)  
-
-   When you choose public visibility, anyone on the internet can view your project. With private visibility, only users you give access to can view your project. For more information about features and access levels for public projects, see [Make a private project public](make-project-public.md). If the **Public** option isn't available, you need to change the policy.
+   > ![Screenshot of create new project form.](media/create-project/create-new-project-form.png)
 
 4. Select **Create**. Azure DevOps displays the project welcome page.
 
