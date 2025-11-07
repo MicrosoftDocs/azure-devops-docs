@@ -26,7 +26,7 @@ Although Key Vault supports storing and managing cryptographic keys and certific
 
 ### Create a key vault
 
-Create an Azure key vault.  
+If you don't have a key vault already, you can create one as follows: 
 
 1. In the Azure portal, select **Create a resource**.
 1. Search for and select **Key Vault**, then select **Create**.
@@ -39,7 +39,6 @@ Create an Azure key vault.
 1. Select your account as the principal.
 1. Select **Review + create** and then **Create**.
 
-
 ### Create the variable group linked to the key vault
 
 1. In your Azure DevOps project, select **Pipelines** > **Library** > **+ Variable group**.
@@ -47,6 +46,10 @@ Create an Azure key vault.
 1. Enable the **Link secrets from an Azure key vault as variables** toggle.
 1. Select your service connection and select **Authorize**.
 1. Select your key vault name and enable Azure DevOps to access the key vault by selecting **Authorize** next to the vault name.
+
+    > [!NOTE]
+    > Key vaults with role-based access control (RBAC) permissions are not supported. Your key vault permission model must be set to **Vault access policy**.
+
 1. Select **+ Add** and on the **Choose secrets** screen, select the secrets from your vault for mapping to this variable group, then select **OK**.
 1. Select **Save** to save the secret variable group.
 
