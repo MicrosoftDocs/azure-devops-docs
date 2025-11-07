@@ -173,7 +173,7 @@ The following table lists and describes most of the properties you can select in
 
 OData navigation properties are the reference attributes of an entity that points to another entity. The following table provides a summary of the navigational properties, their referential constraints, and the entity types they're valid for. 
  
-| Display name | Name |Referential constraint | Property | Valid entity types |
+| Display name | Name |Referential constraint | Referential property | Valid entity types |
 |--------------|------------------|-------------|----------------|-------------------------|
 |                 | `ChangedOn`|`ChangedDateSK`|`DateSK` |   **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
 |                 | `ClosedOn` | `ClosedDateSK`|`DateSK` |   **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
