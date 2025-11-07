@@ -4,7 +4,7 @@ description: Learn how you can easily deploy a self-hosted agent on Linux for Az
 ms.topic: concept-article
 ms.custom: linux-related-content
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 07/21/2025
+ms.date: 11/07/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -12,18 +12,18 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-:::moniker range="=azure-devops"
+:::moniker range=">=azure-devops-server"
 
-This article provides guidance for using the [4.x agent software](v4-agent.md) with Azure DevOps Services.
+This article provides guidance for using the [4.x agent software](v4-agent.md) with Azure DevOps Services and Azure DevOps Server.
 
 :::moniker-end
 
-:::moniker range="<azure-devops"
+:::moniker range="<azure-devops-server"
 
-This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
+This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server 2022 and Azure DevOps Server 2020. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
 > [!IMPORTANT]
-> If you're using Azure DevOps Services, you should be using the [4.x agent software](v4-agent.md).
+> If you're using Azure DevOps Services or Azure DevOps Server, you should be using the [4.x agent software](v4-agent.md).
 
 :::moniker-end
 
@@ -36,9 +36,35 @@ To run your jobs, you need at least one agent. A Linux agent can build and deplo
 
 ## Check prerequisites
 
-::: moniker range="<=azure-devops"
+::: moniker range=">=azure-devops-server"
 
-The agent is based on .NET 6.
+The [4.x agent](./v4-agent.md) is based on .NET 8.
+You can run this agent on several Linux distributions.
+We support the following subset of .NET 8 supported distributions:
+
+* Supported distributions
+  [!INCLUDE [v4-linux-os](./includes/v4-linux-os.md)]
+* **Git** - Regardless of your platform, you need to install Git 2.9.0 or higher.
+We strongly recommend installing the latest version of Git.
+* **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
+* **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
+* **TFVC** - If you're building from a TFVC repo, see [TFVC prerequisites](#tfvc-prerequisites).
+
+> [!NOTE]
+> The agent installer knows how to check for other dependencies.
+You can install those dependencies on supported Linux platforms by running `./bin/installdependencies.sh` in the agent directory.
+>
+> Be aware that some of these dependencies required by .NET are fetched from third party sites, like `packages.efficios.com`. Review the `installdependencies.sh` script and ensure any referenced third party sites are accessible from your Linux machine before running the script.
+>
+> Please also make sure that all required repositories are connected to the relevant package manager used in `installdependencies.sh` (like `apt` or `zypper`).
+> 
+> For issues with dependencies installation (like 'dependency was not found in repository' or 'problem retrieving the repository index file') - you can reach out to distribution owner for further support.
+
+::: moniker-end
+
+::: moniker range="<azure-devops-server"
+
+The 3.x agent is based on .NET 6.
 You can run this agent on several Linux distributions.
 We support the following subset of .NET 6 supported distributions:
 

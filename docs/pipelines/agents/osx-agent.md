@@ -3,7 +3,7 @@ title: Deploy a build and release agent on macOS
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: concept-article
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.date: 07/21/2025
+ms.date: 11/07/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -11,18 +11,18 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-:::moniker range="=azure-devops"
+:::moniker range=">=azure-devops-server"
 
-This article provides guidance for using the [4.x agent software](v4-agent.md) with Azure DevOps Services.
+This article provides guidance for using the [4.x agent software](v4-agent.md) with Azure DevOps Services and Azure DevOps Server.
 
 :::moniker-end
 
-:::moniker range="<azure-devops"
+:::moniker range="<azure-devops-server"
 
-This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
+This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server 2022 and Azure DevOps Server 2020. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
 > [!IMPORTANT]
-> If you're using Azure DevOps Services, you should be using the [4.x agent software](v4-agent.md).
+> If you're using Azure DevOps Services or Azure DevOps Server, you should be using the [4.x agent software](v4-agent.md).
 
 :::moniker-end
 
@@ -34,6 +34,18 @@ To build and deploy Xcode apps, you need at least one macOS agent. This agent ca
 [!INCLUDE [include](includes/concepts.md)]
 
 ## Check prerequisites
+
+:::moniker range=">=azure-devops-server"
+
+* Supported operating systems
+    [!INCLUDE [v4-osx-os](./includes/v4-osx-os.md)]
+
+- **Git** - Git 2.9.0 or higher (latest version recommended - you can easily install with [Homebrew](https://brew.sh/))
+* **.NET** - The [4.x agent](./v4-agent.md) software runs on .NET 8, but installs its own version of .NET so there is no .NET prerequisite.
+* **TFVC** - If you're building from a TFVC repo, see [TFVC prerequisites](#tfvc-prerequisites).
+:::moniker-end
+
+:::moniker range="<azure-devops-server"
 
 * Supported operating systems
   * x64
@@ -48,11 +60,12 @@ To build and deploy Xcode apps, you need at least one macOS agent. This agent ca
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * macOS 14.0 "Sonoma"
-    * macOS 15.0 "Sequoia" (only supported when using [4.x agent software](v4-agent.md))
 
 - **Git** - Git 2.9.0 or higher (latest version recommended - you can easily install with [Homebrew](https://brew.sh/))
-* **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
+* **.NET** - The [3.x agent](./v3-agent.md) software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
 * **TFVC** - If you're building from a TFVC repo, see [TFVC prerequisites](#tfvc-prerequisites).
+
+:::moniker-end
 
 <h2 id="permissions">Prepare permissions</h2>
 

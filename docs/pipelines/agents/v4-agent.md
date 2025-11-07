@@ -8,7 +8,6 @@ ms.date: 06/30/2025
 
 # Agent software version 4
 
-
 The pipelines team is upgrading the agent software from version 3.x to version 4.x (using .NET 8).
 
 ## Upgrade to 4.x agent on supported operating systems
@@ -22,37 +21,17 @@ The following operating systems are supported by the 4.x agent.
 > [!NOTE]
 > See [.NET 8 - Supported OS versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions) for the full list of operating systems.
 
-* **Linux**
-  * x64
-    * Debian 12
-    * Fedora 39 & 40
-    * openSUSE 15.5 & 15.6
-    * Red Hat Enterprise Linux 8 & 9
-    * SUSE Enterprise Linux 15.5
-    * Ubuntu 24.04, 22.04, 20.04
-    * Azure Linux 2.0
-    * Oracle Linux 8 & 9
-  * ARM64
-    * Debian 11 & 12
-    * Ubuntu 24.04, 22.04, 20.04
-  * Alpine x64
-    * [Alpine Linux](https://alpinelinux.org/) 3.17 to 3/20
-* **macOS**
-  * x64
-    * macOS 13.0 "Ventura"
-    * macOS 14.0 "Sonoma"
-    * macOS 15.0 "Sequoia"
-  * ARM64
-    * macOS 13.0 "Ventura"
-    * macOS 14.0 "Sonoma"
-    * macOS 15.0 "Sequoia"
-* **Windows**
-    * Windows 10
-      * 21H2, 1809, 1607
-    * Windows 11
-      * 23H2, 22H2, 21H2
-  * Server OS
-    * Windows Server 2012 or higher
+#### Linux
+
+[!INCLUDE [v4-linux-os](./includes/v4-linux-os.md)] 
+
+#### macOS
+
+[!INCLUDE [v4-osx-os](./includes/v4-osx-os.md)]
+
+#### Windows
+
+[!INCLUDE [v4-windows-os](./includes/v4-windows-os.md)]
 
 ## Upgrade to 4.x agent on unsupported operating systems
 
