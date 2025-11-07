@@ -193,7 +193,7 @@ OData navigation properties are the reference attributes of an entity that point
 | **Created By**  | `CreatedBy`  | `CreatedByUserSK`|`UserSK` |  **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
 | **Activated By**  | `ActivatedBy`  | `ActivatedByUserSK`|`UserSK` |    **WorkItemRevision**,**WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
 | **Closed By**  | `ClosedBy`  | `ClosedBySK`|`UserSK` |   **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
-| **ResolvedBy**  | `ResolvedBy`, `ResolvedByUserSK`|`UserSK` |  **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **ResolvedBy**  | `ResolvedBy` | `ResolvedByUserSK`|`UserSK` |  **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
 | **Teams**      |  | | | `Area`, `BoardLocation`, `Iteration`, **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
 | **Tags**       |  | | |       **WorkItem**, **WorkItemRevision**, **WorkItemBoardSnapshot**  |
 | **Project**   | `Project`  | `ProjectSK`|`ProjectSK` |    **Tag**, **WorkItemBoardSnapshot**, **WorkItemLink**, **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemTypeField**  |
@@ -348,7 +348,7 @@ Navigation properties for the **Teams** entity set include **Projects**, **Areas
 
 ## WorkItemLinks
 
-The following properties are valid for the **WorkItemLinks** entity set. The property reference surrogate key is `WorkItemLinkSK`. Query `WorkItemLinks` to report on parent/child, related, predecessor/successor, or other link types. 
+The following properties are valid for the **WorkItemLinks** entity set. The property reference surrogate key is `WorkItemLinkSK`. Query **WorkItemLinks** to report on parent/child, related, predecessor/successor, or other link types. 
 
 |Display name | Name           | Data type | Description |
 |-----------------|--------------------|---------------|--------------------------------------|
