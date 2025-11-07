@@ -193,7 +193,7 @@ OData navigation properties are the reference attributes of an entity that point
 | **Created By**  | `CreatedBy`  | `CreatedByUserSK`|`UserSK` |  `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot** |
 | **Activated By**  | `ActivatedBy`  | `ActivatedByUserSK`|`UserSK` |    `WorkItemRevision`,`WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
 | **Closed By**  | `ClosedBy`  | `ClosedBySK`|`UserSK` |   `WorkItemRevision`, `WorkItem`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
-| **ResolvedBy**  | `ResolvedBy`  | `ResolvedByUserSK`|`UserSK` |  `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **ResolvedBy**  | `ResolvedBy`, `ResolvedByUserSK`|`UserSK` |  `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
 | **Teams**      |  | | | `Area`, `BoardLocation`, `Iteration`, `WorkItemRevision`, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
 | **Tags**       |  | | |       `WorkItem`, `WorkItemRevision`, **WorkItemBoardSnapshot**  |
 | **Project**   | `Project`  | `ProjectSK`|`ProjectSK` |    `Tag`, **WorkItemBoardSnapshot**, `WorkItemLink`, `WorkItemRevision`, **WorkItemSnapshot**, `WorkItemTypeField`,  |
@@ -221,7 +221,7 @@ The following table lists and describes properties defined for the **BoardLocati
 |**Board Name** |`BoardName` | String | Name assigned to the board, for example **Stories**, **Backlog Items**, **Features**, or **Epics**.  |
 |**Board Level**|`BoardLevel` | Int32 | Number assigned to the board based on where it sits within the hierarchy of boards.  |
 |**Backlog Type** |`BacklogType` | String | Name of the type of backlog, for example Iteration, Requirement, or Portfolio.   |
-|**Column Name**|`ColumnName` | String | Name of the board column a work item is currently assigned to, such as **Active**, **Closed**, **Committed**, **Done**, or a custom column label.  Reference name: `System.BoardColumn`   |
+|**Column Name**|`ColumnName` | String | Name of the board column a work item is currently assigned to, such as **Active**, **Closed**, **Committed**, **Done**, or a custom column label. Reference name: `System.BoardColumn`   |
 |**Column Order**|`ColumnOrder` | Int32 | Number assigned to the board column in terms of its sequence within the board.   |
 |**Done** |`Done` | Enumerated | Indicator of the split-column location.\* |
 |**Column Item Limit**|`ColumnItemLimit` | Int32 | Number assigned to the board column in terms of its sequence.  |
@@ -244,7 +244,7 @@ The following table lists and describes properties defined for the **BoardLocati
 
 For more information about board columns for a team, see the following articles:
 
-- [Add columns to your board to manage your workflow](../../boards/boards/add-columns.md)
+- [Add columns to your board](../../boards/boards/add-columns.md)
 - [Split columns on your board to show work in progress](../../boards/boards/split-columns.md) 
 
 ## Areas 
