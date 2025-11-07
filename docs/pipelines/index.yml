@@ -159,7 +159,7 @@ landingContent:
             url: ./test/ui-testing-considerations.md
           - text: UI testing using Selenium
             url: ./test/continuous-test-selenium.md
-          - text: Review code coverage results
+          - text: Review & configure code coverage results
             url: ./test/review-code-coverage-results.md
           - text: Review test results
             url: ./test/review-continuous-test-results-after-build.md
