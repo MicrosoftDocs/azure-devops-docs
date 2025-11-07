@@ -274,7 +274,7 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "https://rmprodneudefaultcq.queue.core.windows.net",
     "https://rmprodseadefaultcq.queue.core.windows.net",
     "https://rmprodszndefaultcq.queue.core.windows.net",
-    "https://rmproduksdefaultcq.queue.core.windows.net"
+    "https://rmproduksdefaultcq.queue.core.windows.net",
     "https://rmprodwus3defaultcq.queue.core.windows.net",
     # CDN for downloading the Managed DevOps Pools agent - maps to *.prod.managedevops.microsoft.com
     "rm-agent.prod.manageddevops.microsoft.com"
