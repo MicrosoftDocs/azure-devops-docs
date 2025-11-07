@@ -31,7 +31,7 @@ Workload identity federation defines a bi-directional relationship between the i
 
 ### Review pipeline tasks
 
-Almost all pipelines tasks support workload identity. The table below lists workload identity federation support for [tasks included with Azure DevOps](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true). For tasks installed from the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&visibilityQuery=all&sortBy=Installs), contact the extension publisher for support.
+Almost all pipelines tasks that authenticate with Microsoft Entra support workload identity. The table below lists workload identity federation support for [tasks included with Azure DevOps](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true). For tasks installed from the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&visibilityQuery=all&sortBy=Installs), contact the extension publisher for support.
 
 | Task                                     | Workload identity federation support                                                                                            |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------|
