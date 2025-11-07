@@ -1,5 +1,5 @@
 ---
-title: Manually create a Resource Manager with a secret
+title: Manually create an Azure Resource Manager with a secret
 description: Learn how to manually set an Azure Resource Manager service connection with a secret in Azure Pipelines, one of the services in Azure DevOps.
 ms.topic: concept-article
 ms.author: jukullam
@@ -10,19 +10,15 @@ ms.custom:
 "recommendations": "true"
 ---
 
-# Manually set a Resource Manager with a secret
+# Manually set an Azure Resource Manager with a secret
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This section guides you through setting up an app registration with a secret in Azure portal, creating a service connection for service principal authentication in Azure DevOps, and granting the necessary permissions. The app registration uses service principal authentication. You'll need to complete these steps in the following order:
+This article guides you through manually setting up an app registration with a secret in Azure portal, creating a service connection for service principal authentication in Azure DevOps, and granting the necessary permissions.
 
-1. Create the app registration with service principal authentication in Azure portal. 
-1. Create the service connection in Azure DevOps and save as a draft. 
-1. Add a secret to your app registration in Azure portal.
-1. Grant permissions to the app registration in Azure portal.
-1. Save your service connection in Azure DevOps.
+Use this approach when you for cannot use Microsoft Entra due to organizational limitations. For example, you should use a secret when workload identity federation is not supported for your Microsoft Entra tenant or when you have a multitenant app registrations.
 
-You can also use the REST API for this process.
+For other scenarios, the recommended approach is to instead use [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity. Workload identity federation eliminates the need for secrets and secret management. To learn more, see [Connect to Azure with an Azure Resource Manager service connection](../library/connect-to-azure.md).  
 
 ### Prerequisites for app registration authentication
 
@@ -44,8 +40,6 @@ You can also use the REST API for this process.
 
 1. When your new app registration loads, copy the values for **Application (client) ID** and **Directory (tenant) ID**  to use later.
 
-    :::image type="content" source="approvals/media/app-registration-client-tenant.png" alt-text="Screenshot that shows the app registration client ID and tenant ID.":::
-
 1. Within your app registration, select **Certificates & secrets**.
 
 1. Select **Client secrets**, and then select **New client secret**. Provide a description of the secret, and a duration. Once you've saved the client secret, the value of the client secret is displayed. This is only displayed once, so copy this value and store it. You'll use the secret value in your Azure Resource Manager connection.
@@ -57,8 +51,6 @@ You can also use the REST API for this process.
 1. In the Azure portal, go to the Azure subscription, management group, or machine learning workspace that you want to grant permissions for.
 
 1. Select **Access control (IAM)**.
-
-    :::image type="content" source="approvals/media/access-control-resource-group.png" alt-text="Screenshot that shows selecting Access control in the resource menu.":::
 
 1. Select **Add role assignment**. Assign the Reader role to the app registration.
 
