@@ -10,11 +10,11 @@ ms.custom:
 "recommendations": "true"
 ---
 
-# Manually set a Azure Resource Manager (ARM) with a secret
+# Manually set a Azure Resource Manager with a secret
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article guides you through manually setting up an app registration with a secret in Azure portal, creating a service connection for service principal authentication in Azure DevOps, and granting the necessary permissions.
+This article guides you through manually setting up an app registration with a secret in Azure portal, creating a Azure Resource Manager (ARM) service connection for service principal authentication in Azure DevOps, and granting the necessary permissions.
 
 Use this approach when you can't use Microsoft Entra due to organizational limitations. For example, use a secret when workload identity federation isn't supported for your Microsoft Entra tenant or when you have multitenant app registrations.
 
