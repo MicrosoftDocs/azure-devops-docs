@@ -7235,6 +7235,11 @@
       "source_path": "docs/boards/plans/scaled-agile-framework-.md",
       "redirect_url": "/azure/devops/boards/plans/safe-configure-boards",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/test/codecoverage-for-pullrequests.md",
+      "redirect_url": "/azure/devops/pipelines/test/review-code-coverage-results",
+      "redirect_document_id": false
     }
   ]
 }
