@@ -65,7 +65,7 @@ There are multiple entry points to using a dynamic target branch.
   DevOps, branches specified in the pull request targets will appear 
   in a section called "Targets" between the "Mine" and "All" sections.
 
-  ![Screenshot of the New pull request button.](media\pull-request-targets\target-branch-dropdown.png)
+  ![Screenshot of the branch dropdowns with the Targets section.](media\pull-request-targets\target-branch-dropdown.png)
 
 There's a capability for client tools to create pull requests using this
 dynamic choice, but those clients need to add an optional signal that the
