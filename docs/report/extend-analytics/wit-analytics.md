@@ -9,30 +9,26 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: "<=azure-devops"
-ms.date: 01/19/2023
+ms.date: 11/07/2025
 ---
 
 # Define basic queries using OData Analytics
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Using Analytics for Azure DevOps, you can construct basic and filtered queries to return data of interest. You can run these queries directly in your browser or within Power BI. 
+You can use Analytics for Azure DevOps to construct basic and filtered OData queries to return data you're interested in. You can run these queries in your browser or in Power BI.
 
-This article builds off information provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). Also, the queries in this article are focused on retrieving work tracking entity sets, however, the principles apply for querying other entity sets.
+This article focuses on queries for retrieving work tracking entity sets, but the principles apply to querying other entity sets. For more information, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md).
 
-In this article you'll learn how to define queries that return the following data:  
+This article shows you how to:
 
 > [!div class="checklist"]  
-> - Count of items (no other data)
-> - Count of items and data
-> - Properties defined for Areas or Iteration Paths
-> - Selected columns or fields
-> - Filtered data  
-> - Return data for Identity, Area Path, and Iteration Path fields
-> - Filter by a navigation property
-> - Query a date range
-> - Nest expand statements
-> - Sort results, orderby option
+> - Define a query that returns the count of items, with or without their data.
+> - Find properties and return data for **Identity**, **Area Path**, and **Iteration Path** fields.
+> - Query date ranges.
+> - Filter data, and filter by a navigation property.
+> - Use and nest `expand` statements.
+> - Use the `orderby` option to sort results.
  
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
@@ -41,247 +37,165 @@ In this article you'll learn how to define queries that return the following dat
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
+> [!NOTE] 
+> Cross-project queries fail when the user running the query doesn't have access to all projects. For more information about requirements, see [Project and organization-scoped queries](account-scoped-queries.md).
+
 > [!NOTE]  
-> In this article, the OData query URL is defined for Azure DevOps Services. To construct a similar query for an on-premises server, see the guidance provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md). We encourage you to adjust the queries provided for your organization and project to get familiar with querying OData using your browser. 
+> The OData queries in this article use the query URL defined for Azure DevOps Services, `https://analytics.dev.azure.com/`. Substitute your own organization and project names in the provided queries to get familiar with querying OData.
+> 
+> For an on-premises server, you can construct similar queries with a URL based on your server name, `https://<servername/`, project collection, and projects. For more information, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md). 
 
 <a id="return-count-items"></a>
+## Return a count of items
 
-## Return a count of items (no other data)  
+To return only a count of items or entities defined in an organization or project without including other information, specify the `$apply=aggregate($count as Count)` query option. For example, the following queries return the number of projects, work items, area paths, and users in an organization. 
 
-To learn about the number of items or entities defined in an organization or project, specify `$apply=aggregate($count as Count)` query option. For example, the following queries return the number of projects, work items, Area Paths, and users defined for an organization. 
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/Projects?$apply=aggregate($count as Count)
-> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/WorkItems?$apply=aggregate($count as Count)
-> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/Areas?$apply=aggregate($count as Count)
-> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/Users?$apply=aggregate($count as Count)
-> ```
+```OData
+https://analytics.dev.azure.com/<OrganizationName>/_odata/v4.0-preview/Projects?$apply=aggregate($count as Count)
+https://analytics.dev.azure.com/<OrganizationName>/_odata/v4.0-preview/WorkItems?$apply=aggregate($count as Count)
+https://analytics.dev.azure.com/<OrganizationName>/_odata/v4.0-preview/Areas?$apply=aggregate($count as Count)
+https://analytics.dev.azure.com/<OrganizationName>/_odata/v4.0-preview/Users?$apply=aggregate($count as Count)
+```
  
-> [!TIP] 
-> Cross-project queries fail when the user running the query doesn't have access to all the projects. Read more about requirements in [Project and organization-scoped queries](account-scoped-queries.md).
+The preceding queries return results like the following example for projects in the `fabrikam` organization:
 
-### Project count
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> @odata.context	"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Projects(Count)"
-> value	
->    0	
->      @odata.id	null
->      Count	    28
-> ```
-
-### Work item count
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> @odata.context	"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#WorkItems(Count)"
-> value	
->   0	
->      @odata.id	null
->      Count	    1166
-> ```
-
-### Area count
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> @odata.context	"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Areas(Count)"
-> value	
->   0	
->      @odata.id	null
->      Count	    70
-> ```
-
-### User count
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> @odata.context	"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Areas(Count)"
-> value	
->   0	
->      @odata.id	null
->      Count	    16
-> ```
+```odata
+{
+  "@odata.context": "https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Projects(Count)",
+  "value": [
+    {
+      "@odata.id": null,
+      "Count": 16
+    }
+  ]
+}
+```
 
 <a id="return-count-items-with-data"></a>
-
 ## Return a count of items and data 
 
-To return a count of items along with select data for the items, specify the `$count=true` query option. For example, the following queries return a count of work items, Area Paths, and users defined for a project along with the specified properties. For valid properties, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) and [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](../analytics/entity-reference-general.md).
+To return a count of items along with `select` data for the items, specify the `$count=true` query option. For example, the following queries return a count of work items, area paths, and users defined for a project along with specified properties. For valid properties, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) and [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](../analytics/entity-reference-general.md).
 
-> [!TIP]  
-> If you don't specify the properties to return, Analytics will return all properties defined for the specified entity type. 
+To return all properties defined for a specified entity type, don't specify `select` properties to return.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData 
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v4.0-preview/WorkItems?$count=true&$select=WorkItemId,Title,WorkItemType 
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v4.0-preview/Areas?$count=true&$select=AreaName,AreaPath 
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v4.0-preview/Users?$count=true&$select=UserName,UserEmail
+> https://analytics.dev.azure.com/<OrganizationName>/<ProjectName>/_odata/v4.0-preview/WorkItems?$count=true&$select=WorkItemId,Title,WorkItemType 
+> https://analytics.dev.azure.com/<OrganizationName>/<ProjectName>/_odata/v4.0-preview/Areas?$count=true&$select=AreaName,AreaPath 
+> https://analytics.dev.azure.com/<OrganizationName>/<ProjectName>/_odata/v4.0-preview/Users?$count=true&$select=UserName,UserEmail
 > ```
-  
- 
-## Areas or Iterations properties
 
-To look up the `AreaSK` or `IterationSK`, or other property of an **Area Path** or **Iteration Path**, use the following queries. 
+## Return Area Path or Iteration Path properties
+
+To look up the `AreaSK`, `IterationSK`, or other properties for specific area paths or iteration paths, use the following queries.
 
 <a id="areask"></a>
+### Return the AreaSK for a specific area path 
 
-### Return the AreaSK for a specific Area Path 
+The following query returns the `AreaSK` property defined for the `Fabrikam Fiber\Production Planning\Web` area path. To see other defined properties for the **Areas** entity set, see [Metadata reference for Azure Boards Analytics, Areas](../analytics/entity-reference-boards.md#areas).
 
-The following query specifies to return the `AreaSK` property defined for the *Fabrikam Fiber\Service Delivery\Internet* **Area Path**. To specify other properties defined for the `Areas` entity set, see [Metadata reference for Azure Boards Analytics, Areas](../analytics/entity-reference-boards.md#areas).
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Areas?$filter=AreaPath eq 'Fabrikam Fiber\Service Delivery\Internet' &$select=AreaSK
-> ```
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Areas?$filter=AreaPath eq 'Fabrikam Fiber\Production Planning\Web' &$select=AreaSK
+```
 
 The query returns the following data.  
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> {
->   "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#Areas(AreaSK)",
->   "value": [
->     {
->       "AreaSK": "637dc203-0549-4415-9663-b6358ac27d21"
->     }
->   ]
-> }
-> ```
+```OData
+{
+  "@odata.context": "https://analytics.dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#Areas(AreaSK)",
+  "value": [
+    {
+      "AreaSK": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+    }
+  ]
+}
+```
 
 <a id="iterationsk"></a>
+### Return the IterationSK for a specific iteration path 
 
-### Return the IterationSK for a specific Iteration Path 
+The following query returns the `IterationSK` property defined for the `Fabrikam Fiber\3Week Sprints\Sprint 3` area path. To see other defined properties for the **Areas** entity set, see [Metadata reference for Azure Boards Analytics, Iterations](../analytics/entity-reference-boards.md#iterations).
 
-The following query specifies to return the `IterationSK` property defined for the *Fabrikam Fiber\Release 1\Sprint 3* **Iteration Path**. To specify other properties defined for the `Iterations` entity set, see [Metadata reference for Azure Boards Analytics, Iterations](../analytics/entity-reference-boards.md#iterations).
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Iterations?$filter=IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 3' &$select=IterationSK
+```
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
->https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Iterations?$filter=IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 3' &$select=IterationSK
-> ```
 
-The query returns the following data.  
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> {
->   "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#Iterations(IterationSK)",
->   "value": [
->     {
->       "IterationSK": "862e961a-ac7a-4fcc-9ebc-8afd0c12fed5"
->     }
->   ]
-> }
-> ```
- 
 <a id="select-columns"></a>
+## Select specific properties or fields 
 
-## Return specific properties or fields 
+To return specific properties or work item fields, add a `$select` clause that specifies the property names. For example, to return the **Work Item ID**, **Work Item Type**, **Title**, and **State** of work items, add the `$select=WorkItemId,WorkItemType,Title,State` clause to your query.
 
-To return specific properties or work item fields, add a `$select` clause that specifies the property names. 
+This clause specifies the property names that correspond to the named fields. OData queries require attention to both spacing and casing. Although property display names like **Work Item ID** can contain spaces, formal property names don't contain spaces. For more information about property names and labels, see [Metadata reference for Azure Boards](../analytics/entity-reference-boards.md#custom-properties). To understand how custom field properties are labeled, see [Custom properties](../analytics/entity-reference-boards.md#custom-properties).
 
-For example, to return the **Work Item ID**, **Work Item Type**, **Title**, and **State** of work items, add the following clause to your query. This clause specifies the properties that correspond to the named fields.  
+The following example query specifies to return the work item IDs, titles, and states for the top three work items in the Fabrikam Fiber project.
 
-> [!NOTE]  
-> Property names don't contain any spaces. Your query will fail if you add spaces. OData queries require attention is paid to both spacing and casing. To understand how custom field properties are labeled, see [Metadata reference for Azure Boards, Custom properties](../analytics/entity-reference-boards.md#custom-properties).
-
-Here we specify to return the top three work items. 
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$top=3
-> ```
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$top=3
+```
 
 Analytics returns the following data. 
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> @odata.context	"https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State)"
-> value	
->    0	
->       WorkItemId    462
->       Title         "Test case"
->       WorkItemType  "Test Case"
->       State         "Design"
->    1	
->       WorkItemId	   491
->       Title          "Change color settings"
->       WorkItemType   "Shared Steps"
->       State          "Active"
->    2	
->       WorkItemId	   461
->       Title          "Test impediment"
->       WorkItemType   "Impediment"
->       State          "Open"
-> ```
-.  
+```OData
+{
+  "@odata.context": "https://analytics.dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State)",
+  "value": [
+    {
+      "WorkItemId": 31,
+      "Title": "About screen",
+      "WorkItemType": "Task",
+      "State": "New"
+    },
+    {
+      "WorkItemId": 30,
+      "Title": "Change background color",
+      "WorkItemType": "Task",
+      "State": "Active"
+    },
+    {
+      "WorkItemId": 32,
+      "Title": "Standardize on form factors",
+      "WorkItemType": "Task",
+      "State": "Active"
+    }
+  ]
+}
+```
 
 <a id="filter-data"></a>
+## Filter data 
 
-## Filter your data 
+To filter an entity set to return selected items, add a `$filter` clause that specifies the criteria the items must meet. The following filter clause returns only **Feature** work item types that are in the **In Progress** state.
 
-To filter an entity set to return select items, specify a `$filter` clause that specifies the criteria the items must meet. Building on the last query, here we add a filter clause to only return *Feature* work item types that are in the  *In Progress* state.
+`/WorkItems?$filter=WorkItemType eq 'Feature' and State eq 'In Progress'`
 
-`/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=State eq 'In Progress'`
+The following example query specifies to return **Work Item ID**, **Work Item Type**, **Title**, and **State** only of **Feature** work items that are in the  **In Progress** state.
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemType eq 'Feature' and State eq 'In Progress'&$select=WorkItemId,Title,AssignedTo,State
-> ```
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,AssignedTo,State&$filter=WorkItemType eq 'Feature' and State eq 'In Progress'
+```
 
-Analytics returns the following data. 
+### Specify several filter clauses
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> 	
-> @odata.context	"https://analytics.dev.azure.com/kelliott/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,State)"
-> value	
->   0	
->       WorkItemId	380
->       Title	"Refresh web look, feel, performance factors"
->       State	"In Progress"
->   1	
->       WorkItemId	480
->       Title	"Customer Phone - Phase 1"
->       State	"In Progress"
->   2	
->       WorkItemId	493
->       Title	"Change initial view"
->       State	"In Progress"
->   3	
->       WorkItemId	479
->       Title	"Customer Web - Phase 1"
->       State	"In Progress"
->   4	
->       WorkItemId	551
->       Title	"Mobile feedback"
->       State	"In Progress"
-> ```
+You can use `AND` and `OR` to specify several filter clauses. For example, you can specify to return work items of types **User Story**, **Bug**, or custom type **Backlog Work** that are in the **New**, **Committed**, or **Active** states. Use parenthesis to group filter clauses as needed.
 
-## Specify several filter clauses
-
-You can use `AND` and `OR` to specify several filter clauses. 
-
-For example, the following query specifies to return work items of type *User Story*, *Bug*, and *Backlog Work* (a custom work item type) that are in the *New*, *Committed*, or *Active* states. Use parenthesis to group filter clauses as needed. 
-
-Additionally, you can apply various functions such as `contains`, `startswith`, `endswith` and more. See the [Supported OData features and clauses, Supported functions](odata-supported-features.md#supported-functions). 
+You can also apply various functions such as `contains`, `startswith`, and `endswith`. See the [Supported functions](odata-supported-features.md#supported-functions). 
 
 <a id="filter-navigation-field"></a>
-
 ## Return data for Identity, Area Path, and Iteration Path fields
  
-Select properties are associated with navigational properties and aren't directly accessible using the `$select` statement. You must use an `$expand` statement to return the data of interest. These properties are often associated with several properties of their own. For example, with Identity fields, you can specify to return the user name or the user email. 
+Certain properties associated with navigational properties aren't directly accessible by using `$select` statements. You must use an `$expand` statement to return the data you want. These properties are often associated with their own properties. For example, you can specify to return the user name or user email for **Identity** fields. 
 
 The following table provides examples of how to expand several of these properties. 
 
-| Type fields | Referenced property | Example clauses to include |
+| Type field | Referenced property | Example clauses |
 |-------------|-------------------|-------------------|
 | DateTime  | `DateSK`      | `$expand=CreatedDate($select=Date)` or<br/>`$expand=CreatedDate($select=WeekStartingDate)`  | 
 | Identity  | `UserSK`      | `$expand=AssignedTo($select=UserName)` or<br/>`$expand=AssignedTo($select=UserEmail)` | 
 | Area      | `AreaSK`      | `$expand=Area($select=AreaName)` or<br/>`$expand=Area($select=AreaPath)` | 
 | Iteration | `IterationSK` | `$expand=Iteration($select=IterationName)` or<br/>`$expand=Iteration($select=IterationPath)` or<br/>`$expand=Iteration($select=StartDate)`| 
-| Project	| `ProjectSK`   | `$expand=Project($select=ProjectName)` | 
-| Team 	    | `TeamSK`      | `$expand=Teams($select=TeamName)` | 
+| Project| `ProjectSK`   | `$expand=Project($select=ProjectName)` | 
+| Team     | `TeamSK`      | `$expand=Teams($select=TeamName)` | 
 
 To specify several properties that need to be expanded, you specify them in a single expand clause within a comma-delimited list. 
 
