@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: reference
 monikerRange: "<=azure-devops"
-ms.date: 11/07/2022
+ms.date: 11/09/2025
 #customer intent: As an Azure Boards user, I want to understand the entity types and properties Azure Analytics uses for work tracking, so I can run queries and create reports to track and communicate progress.
 ---
 
@@ -194,7 +194,7 @@ OData navigation properties are the reference attributes of an entity that point
 | **Activated By**  | `ActivatedBy`  | `ActivatedByUserSK`|`UserSK` |    **WorkItemRevision**,**WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
 | **Closed By**  | `ClosedBy`  | `ClosedBySK`|`UserSK` |   **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**  |
 | **ResolvedBy**  | `ResolvedBy` | `ResolvedByUserSK`|`UserSK` |  **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
-| **Teams**      |  | | | `Area`, `BoardLocation`, `Iteration`, **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
+| **Teams**      |  | | | **Area**, **BoardLocation**, **Iteration**, **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemBoardSnapshot**|
 | **Tags**       |  | | |       **WorkItem**, **WorkItemRevision**, **WorkItemBoardSnapshot**  |
 | **Project**   | `Project`  | `ProjectSK`|`ProjectSK` |    **Tag**, **WorkItemBoardSnapshot**, **WorkItemLink**, **WorkItemRevision**, **WorkItemSnapshot**, **WorkItemTypeField**  |
 | **Processes** |   | |        | **WorkItemRevision**, **WorkItem**, **WorkItemSnapshot** |
