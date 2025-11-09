@@ -263,7 +263,7 @@ For example, you can get a list of projects defined for your organization by que
 https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/Projects?$select=ProjectName
 ```
 
-Analytics returns the names of the projects in the *fabrikam* organization.
+Analytics returns the names of the projects in the `fabrikam` organization.
 
 ```OData
 {
@@ -300,7 +300,6 @@ https://fabrikam/DefaultCollection/_odata/v4.0-preview/Projects?$select=ProjectN
 ```
 The example returns the following three project names. 
 
-[!div class="tabbedCodeSnippets"]
 ```OData
 {
 "@odata.context": "http://fabrikam/DefaultCollection/_odata/v4.0-preview/$metadata#Projects(ProjectName)",
