@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 04/10/2025
+ms.date: 11/10/2025
 ---
 
 # Add organization users and manage access
@@ -35,7 +35,7 @@ The following types of users can join your organization for free:
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. Or, if [invitation restrictions are enabled](../security/restrict-invitations.md), the Project Administrator can add users. The Project Collection Administrator role can't select the license for new users or remove users from the organization.|
+|**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. Or, if [invitation restrictions are enabled](../security/restrict-invitations.md), the Project Administrator can add users. The Project Administrator role can't select the license for new users or remove users from the organization.|
 |**Organization** | An [organization](create-organization.md).|
 
 For an overview of the methods supported for adding users to an organization, see [Add and manage user access](organization-management.md#add-users).
