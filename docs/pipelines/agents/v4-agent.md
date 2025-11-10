@@ -21,7 +21,6 @@ The following operating systems are supported by the 4.x agent.
 > [!NOTE]
 > See [.NET 8 - Supported OS versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions) for the full list of operating systems.
 
-#### Linux
 * **Linux**
   [!INCLUDE [v4-linux-os](./includes/v4-linux-os.md)] 
 * **macOS**
