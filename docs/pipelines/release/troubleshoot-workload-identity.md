@@ -135,7 +135,7 @@ You have two options to resolve the issue:
 
 ### How do I create a workload identity federation service connection in automation? 
 
-Workload identity federation defines a bi-directional relationship between the identity and service connection. As a result, objects need to be created in a certain order and the federated credential can only be created after the service connection is created. To learn how to automate creating workload identity service connections, go to [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md). 
+Workload identity federation defines a bidirectional relationship between the identity and service connection. As a result, objects need to be created in a certain order and the federated credential can only be created after the service connection is created. To learn how to automate creating workload identity service connections, go to [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md). 
 
 ## Error messages
 
