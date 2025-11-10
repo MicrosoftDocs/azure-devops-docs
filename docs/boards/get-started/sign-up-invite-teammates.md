@@ -60,14 +60,13 @@ You can sign up using either a Microsoft account (personal or Microsoft Entra) o
 
 ## Create a project
 
-After you sign in, you're prompted to create a project. Projects can be public or private and are the containers where your teams do work.
+After you sign in, you're prompted to create a project.
 
 1. Enter a project name and optional description.
-2. Choose **Visibility**: **Public** (open-source) or **Private** (restricted access).
-3. (Optional) Expand **Advanced** to choose version control (Git or TFVC) and the work item process (Basic, Agile, Scrum, or CMMI).
-4. Select **Create project** — your project's board appears automatically.
+2. (Optional) Expand **Advanced** to choose version control (Git or TFVC) and the work item process (Basic, Agile, Scrum, or CMMI).
+3. Select **Create project** — your project's board appears automatically.
 
-For more on project options, see [Create a project using advanced settings](#advanced-project-options) and [What is a public project?](../../organizations/projects/about-projects.md).
+For more information, see [Create a project using advanced settings](#advanced-project-options).
 
 ## Invite teammates
 
