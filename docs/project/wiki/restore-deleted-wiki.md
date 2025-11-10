@@ -10,7 +10,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/07/2025
+ms.date: 11/10/2025
 ---
 
 # Restore a deleted wiki
@@ -140,7 +140,7 @@ If you prefer command line options, do the following steps.
  
 1. Clone the wiki to your local machine.
 1. Search for the commit, which has the deleted the page.
-1. Checkout the commit.
+1. Check out the commit.
 1. Copy the page to make a new commit.
 
 Your wiki page is restored.
@@ -155,14 +155,66 @@ DELETE https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/repositories
 
 The recycle-bin restore recovers the Git repository (wiki pages and history) but doesn't always re-create the wiki registration or the file name association in the UI.
 
-If the wiki doesn't appear after you restore the repo, do these steps:
+If the wiki doesn't appear after you restore the repo, you have two options:
+
+#### Option 1: Republish via UI
+
+1. Go to **Overview** > **Wiki** in your project.
+2. If no wiki appears, select **Publish code as wiki**.
+3. Select the restored repository and branch (usually `wikiMaster`).
+4. Provide a wiki name and folder path if needed.
+5. Select **Publish**.
+
+For detailed steps, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md).
+
+#### Option 2: Recreate wiki registration with REST API
+
+1. **Create a new wiki** using the [Wikis - Create](/rest/api/azure/devops/wiki/wikis/create?view=azure-devops-rest-7.1&preserve-view=true) REST API:
+
+    ```HTTP
+    POST https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=7.1-preview.2
+    ```
+
+    **Request body:**
+    ```json
+    {
+        "type": "codeWiki",
+        "name": "Fabrikam Fiber Wiki",
+        "projectId": "052a83ac-af70-4194-b53f-df073e5f1786",
+        "repositoryId": "978e3886-64a8-4b6f-96da-6afc2936b04b",
+        "mappedPath": "/",
+        "version": {
+            "version": "wikiMaster"
+        }
+    }
+    ```
+
+    Replace the following values:
+    - `{organization}`: Your Azure DevOps organization name
+    - `{project}`: Your project name or ID
+    - `name`: Display name for the wiki
+    - `projectId`: Project ID from step 2
+    - `repositoryId`: Repository ID from step 2
+    - `mappedPath`: Root folder path (usually `/`)
+    - `version`: Branch name (usually `wikiMaster`)
+
+2. **Verify the wiki registration** by listing wikis using the [Wikis - List](/rest/api/azure/devops/wiki/wikis/list?view=azure-devops-rest-7.1&preserve-view=true) REST API:
+
+    ```HTTP
+    GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=7.1-preview.2
+    ```
+
+#### Post-restoration verification
+
+After using either option:
 
 1. Confirm that the repo and branches exist in your project in **Repos**.
-2. Republish the repo as a wiki via the UI or recreate the wiki registration with the Wiki REST API to point to the restored repo.
-3. Verify the wiki appears in your project under **Overview** > **Wiki**, then check permissions, links, and any widgets that referenced the old wiki.
+2. Verify the wiki appears in your project under **Overview** > **Wiki**.
+3. Check permissions, links, and any widgets that referenced the old wiki.
 
 > [!NOTE]
-> The recycle-bin and some wiki-registration APIs are preview and can change—test in a nonproduction organization and use the api-version documented for your environment.
+> - The recycle-bin and some wiki-registration APIs are preview and can change—test in a nonproduction organization and use the api-version documented for your environment.
+> - For project wikis (provisioned wikis), use `type: "projectWiki"` instead of `"codeWiki"` in the REST API call and omit the `repositoryId` and `mappedPath` properties.
 
 ## Next step
 

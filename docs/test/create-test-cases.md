@@ -9,7 +9,8 @@ ms.topic: quickstart
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 11/04/2021
+ms.date: 11/10/2025
+ai-usage: ai-assisted
 ms.update-cycle: 1095-days
 ---
 
@@ -150,7 +151,7 @@ Copying doesn't copy test step formatting, other than multiline, into the worksh
 You can reassign test cases so that a different tester can run them.
 You can assign all the test cases in a test suite to multiple testers, which is useful for acceptance testing.
 
-Testers need [Basic access](../organizations/security/access-levels.md) to run tests from Azure Test Plans.
+Testers need [Basic + Test Plans access](../organizations/security/access-levels.md) to run tests from Azure Test Plans.
 
 1. In the context menu for a test suite, select **Assign testers to run all tests**.
 
