@@ -60,7 +60,7 @@ You can sign up using either a Microsoft account (personal or Microsoft Entra) o
 
 ## Create a project
 
-After you sign in, you'll be prompted to create a project. Projects can be public or private and are the containers where your teams do work.
+After you sign in, you're prompted to create a project. Projects can be public or private and are the containers where your teams do work.
 
 1. Enter a project name and optional description.
 2. Choose **Visibility**: **Public** (open-source) or **Private** (restricted access).

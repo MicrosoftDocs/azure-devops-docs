@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 11/07/2025
+ms.date: 11/10/2025
 ---
 
 # Create a project in Azure DevOps
@@ -76,7 +76,7 @@ There isn't a limit on the number of projects that you can create within a proje
 3. Enter information into the form provided. 
    - Provide a name for your project. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters. 
    - Enter an optional description. 
-   - Choose the visibility, initial source control type, and work item process. 
+   - Choose the initial source control type, and work item process. 
      For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
    > [!div class="mx-imgBorder"]  
@@ -111,13 +111,11 @@ There isn't a limit on the number of projects that you can create within a proje
 3. Enter information into the form provided. 
    - Provide a name for your project. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters. 
    - Enter an optional description. 
-   - Choose the visibility, initial source control type, and work item process. 
+   - Choose the initial source control type, and work item process. 
      For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [About processes and process templates](../../boards/work-items/guidance/choose-process.md).
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav-2.png)  
-
-   When you choose public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project. For more information about public projects, see [Create a public project in your organization](../projects/create-project.md). If the **Public** option isn't available, you need to change the policy.
+   > ![Screenshot of create new project form.](media/create-project/create-new-project-form.png)
 
 4. Select **Create**. Azure DevOps displays the welcome page.
 
