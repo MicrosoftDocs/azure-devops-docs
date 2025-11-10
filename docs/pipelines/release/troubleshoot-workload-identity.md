@@ -15,8 +15,6 @@ monikerRange: '>= azure-devops'
 
 Get help debugging common issues with workload identity service connections. You also learn how to manually create a service connection if you need to.
 
-To learn how to automate creating workload identity service connections, go to [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md). 
-
 ## Troubleshooting checklist
 
 Use the following checklist to troubleshoot issues with workload identity service connections:
@@ -29,7 +27,7 @@ The following sections describe the issues and how to resolve them.
 
 ### Review pipeline tasks
 
-Not all pipelines tasks support workload identity. Specifically, only Azure Resource Manager service connection properties on tasks use workload identity federation. The table below lists workload identity federation support for [tasks included with Azure DevOps](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true). For tasks installed from the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&visibilityQuery=all&sortBy=Installs), contact the extension publisher for support.
+Almost all pipelines tasks that authenticate with Microsoft Entra support workload identity. The table below lists workload identity federation support for [tasks included with Azure DevOps](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&preserve-view=true). For tasks installed from the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&visibilityQuery=all&sortBy=Installs), contact the extension publisher for support.
 
 | Task                                     | Workload identity federation support                                                                                            |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -109,7 +107,12 @@ Verify that there are no Microsoft Entra policies in place that block federated 
 
 ### Check the issuer URL for accuracy
 
-If you see a message that indicates **no matching federated identity record found**, either the issuer URL or the federation subject doesn't match. The correct issuer URL starts with `https://login.microsoftonline.com`.
+If you see a message that indicates **no matching federated identity record found**, either the issuer URL or the federation subject doesn't match. For new service connections, the correct issuer URL starts with `https://login.microsoftonline.com`:
+
+| &nbsp;  | Azure DevOps issuer                                                 | Microsoft Entra issuer (new service connections)                        |
+|---------|---------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Issuer  | `https://vstoken.dev.azure.com/<organization id>`                   | `https://login.microsoftonline.com/<microsoft entra tenant id>/v2.0`    |
+| Subject | `sc://<organization name>/<project name>/<service connection name>` | `<microsoft entra prefix>/sc/<organization id>/<service connection id>` |
 
 You can fix the issuer URL by editing and saving the service connection to update the issuer URL. If Azure DevOps didn't create the identity, the issuer URL must be updated manually. For Azure identities, the issuer URL automatically updates.  
 
@@ -130,6 +133,10 @@ You have two options to resolve the issue:
 - [Solution 1: Manually configure workload identity by using managed identity authentication](configure-workload-identity.md#set-a-workload-identity-service-connection-to-use-managed-identity-authentication)
 - [Solution 2: Manually configure workload identity by using app registration authentication](configure-workload-identity.md#app-registration-workload-identity)
 
+### How do I create a workload identity federation service connection in automation? 
+
+Workload identity federation defines a bidirectional relationship between the identity and service connection. As a result, objects need to be created in a certain order and the federated credential can only be created after the service connection is created. To learn how to automate creating workload identity service connections, go to [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md). 
+
 ## Error messages
 
 The following table identifies common error messages and issues that might generate them:
@@ -148,7 +155,8 @@ The following table identifies common error messages and issues that might gener
 | **AADSTS700213: No matching federated identity record found for presented assertion subject** | No federated credential was created or the subject is not correct. |
 | **AADSTS700223** | Workload identity federation is constrained or disabled on the Microsoft Entra tenant. In this scenario, it may be possible to use a managed identity for the federation instead. For more information, see [Workload identity with managed identity](https://aka.ms/azdo-rm-workload-identity-manual). |
 | **AADSTS70025: Client application has no configured federated identity credentials** | Make sure federated credentials are configured on the App registration or Managed Identity. |
-| **Microsoft Entra rejected the token issued by Azure DevOps with error code AADSTS700238** | Workload identity federation has been constrained on the Microsoft Entra tenant. The issuer for your organization (`https://login.microsoftonline.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`) isn't allowed to use workload identity federation. Ask your Microsoft Entra tenant administrator or administration team to allow workload identity federation for your Azure DevOps organization. |
+| **Microsoft Entra rejected the token issued by Azure DevOps with error code AADSTS700238** | Workload identity federation has been constrained on the Microsoft Entra tenant. The issuer for your organization (`https://login.microsoftonline.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`) isn't allowed to use workload identity federation with the workload identity type (App registration and/or Managed identity) you're using. Ask your Microsoft Entra tenant administrator or administration team to allow workload identity federation for your Azure DevOps organization. |
+| **AADSTS70052: The identity must be a managed identity, a single tenant app, or a service account** | Multitenant app registrations that have `signInAudience: AzureADMultipleOrgs` are currently not supported by the Microsoft Entra issuer. Use `signInAudience: AzureADMyOrg` and break up access to multiple tenants to use different service connections for each tenant instead. If you are dependent on ARM operations that [access multiple tenants in a single request](/azure/azure-resource-manager/management/authenticate-multi-tenant) (for example, [Cross-tenant peering of Virtual Networks](/azure/virtual-network/create-peering-different-subscriptions-service-principal)) you can [contact support](https://azure.microsoft.com/support/create-ticket/) to have your Azure DevOps organization use the Azure DevOps issuer instead. |
 | **AADSTS900382: Confidential Client is not supported in Cross Cloud** | Some sovereign clouds block Workload identity federation. |
 | **Failed to obtain the JSON Web Token (JWT) using service principal client ID** | Your federation identity credentials are misconfigured or the Microsoft Entra tenant blocks OpenID Connect (OIDC). |
 | **Script failed with error: UnrecognizedArgumentError: unrecognized arguments: --federated-token** | You're using an AzureCLI task on an agent that has an earlier version of the Azure CLI installed. Workload identity federation requires Azure CLI 2.30 or later. |
