@@ -21,6 +21,8 @@ Azure Artifacts helps you to manage all your dependencies from a single feed. By
 
 ## Create a public feed
 
+[!INCLUDE [allow-public-project-policy](../../organizations/projects/includes/allow-public-project-policy.md)]
+
 A public feed is a project-scoped feed in a public project. Public feeds inherit the visibility settings of the hosting project. If you already have a public feed you can skip to the next section, otherwise create one as follows:
 
 1. Sign in to Azure DevOps, then navigate to your public project.
