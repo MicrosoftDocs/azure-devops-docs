@@ -16,17 +16,17 @@ ms.date: 11/07/2025
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-You can use Analytics for Azure DevOps to construct basic and filtered OData queries to return data you're interested in. You can run these queries in your browser or in Power BI.
+You can use Analytics for Azure DevOps to construct basic and filtered OData queries to return data you're interested in. You can run these queries in your browser or in client software like Excel or Power BI.
 
 This article focuses on queries for retrieving work tracking entity sets, but the principles apply to querying other entity sets. For more information, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md).
 
 This article shows you how to:
 
 > [!div class="checklist"]  
-> - Define a query that returns the count of items, with or without their data.
+> - Define queries that return item counts, with or without their data.
 > - Find properties and return data for **Identity**, **Area Path**, and **Iteration Path** fields.
 > - Query date ranges.
-> - Filter data, and filter by a navigation property.
+> - Filter data by properties and navigation properties.
 > - Use and nest `expand` statements.
 > - Use the `orderby` option to sort results.
  
@@ -46,7 +46,7 @@ This article shows you how to:
 > For an on-premises server, you can construct similar queries with a URL based on your server name, `https://<servername/`, project collection, and projects. For more information, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md). 
 
 <a id="return-count-items"></a>
-## Return a count of items
+## Get a count of items
 
 To return only a count of items or entities defined in an organization or project without including other information, specify the `$apply=aggregate($count as Count)` query option. For example, the following queries return the number of projects, work items, area paths, and users in an organization. 
 
@@ -72,7 +72,7 @@ The preceding queries return results like the following example for projects in 
 ```
 
 <a id="return-count-items-with-data"></a>
-## Return a count of items and data 
+## Return a count of items and their data 
 
 To return a count of items along with `select` data for the items, specify the `$count=true` query option. For example, the following queries return a count of work items, area paths, and users defined for a project along with specified properties. For valid properties, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) and [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](../analytics/entity-reference-general.md).
 
@@ -85,7 +85,7 @@ To return all properties defined for a specified entity type, don't specify `sel
 > https://analytics.dev.azure.com/<OrganizationName>/<ProjectName>/_odata/v4.0-preview/Users?$count=true&$select=UserName,UserEmail
 > ```
 
-## Return Area Path or Iteration Path properties
+## Look up area path or iteration path properties
 
 To look up the `AreaSK`, `IterationSK`, or other properties for specific area paths or iteration paths, use the following queries.
 
@@ -120,13 +120,14 @@ The following query returns the `IterationSK` property defined for the `Fabrikam
 https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Iterations?$filter=IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 3' &$select=IterationSK
 ```
 
-
 <a id="select-columns"></a>
 ## Select specific properties or fields 
 
 To return specific properties or work item fields, add a `$select` clause that specifies the property names. For example, to return the **Work Item ID**, **Work Item Type**, **Title**, and **State** of work items, add the `$select=WorkItemId,WorkItemType,Title,State` clause to your query.
 
-This clause specifies the property names that correspond to the named fields. OData queries require attention to both spacing and casing. Although property display names like **Work Item ID** can contain spaces, formal property names don't contain spaces. For more information about property names and labels, see [Metadata reference for Azure Boards](../analytics/entity-reference-boards.md#custom-properties). To understand how custom field properties are labeled, see [Custom properties](../analytics/entity-reference-boards.md#custom-properties).
+This clause specifies the property names that correspond to the named fields. Property names in OData queries require attention to both spacing and casing. Although property display names like **Work Item ID** can contain spaces, formal property names can't contain spaces.
+
+For more information about property names and labels, see [Metadata reference for Azure Boards](../analytics/entity-reference-boards.md#custom-properties). To understand how custom field properties are labeled, see [Custom properties](../analytics/entity-reference-boards.md#custom-properties).
 
 The following example query specifies to return the work item IDs, titles, and states for the top three work items in the Fabrikam Fiber project.
 
@@ -165,28 +166,157 @@ Analytics returns the following data.
 <a id="filter-data"></a>
 ## Filter data 
 
-To filter an entity set to return selected items, add a `$filter` clause that specifies the criteria the items must meet. The following filter clause returns only **Feature** work item types that are in the **In Progress** state.
+To filter an entity set to return specific items, add a `$filter` clause that specifies the criteria the items must meet. The following filter clause returns only **Feature** work item types that are in the **In Progress** state.
 
-`/WorkItems?$filter=WorkItemType eq 'Feature' and State eq 'In Progress'`
+`WorkItems?$filter=WorkItemType eq 'Feature' and State eq 'In Progress'`
 
 The following example query specifies to return **Work Item ID**, **Work Item Type**, **Title**, and **State** only of **Feature** work items that are in the  **In Progress** state.
 
 ```OData
-https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,AssignedTo,State&$filter=WorkItemType eq 'Feature' and State eq 'In Progress'
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,AssignedTo,State&$filter=WorkItemType eq 'Feature' and State eq 'In Progress'
 ```
 
 ### Specify several filter clauses
 
-You can use `AND` and `OR` to specify several filter clauses. For example, you can specify to return work items of types **User Story**, **Bug**, or custom type **Backlog Work** that are in the **New**, **Committed**, or **Active** states. Use parenthesis to group filter clauses as needed.
+You can use `AND` and `OR` to specify several filter clauses. For example, the following query specifies to return several fields from work items of types **User Story**, **Bug**, or custom type **Backlog Work** that are in the **New**, **Committed**, or **Active** states. Use parenthesis to group filter clauses as needed.
 
-You can also apply various functions such as `contains`, `startswith`, and `endswith`. See the [Supported functions](odata-supported-features.md#supported-functions). 
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,AssignedTo,State&$filter=(WorkItemType eq 'User Story' or WorkItemType eq 'Bug' or WorkItemType eq 'Backlog Work') and (State eq 'New' or State eq 'Committed' or State eq 'Active')
+```
 
+The query returns data like the following results:
+
+```OData
+
+{
+  "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,AssignedTo,State)",
+  "value": [
+    {
+      "WorkItemId": 210,
+      "Title": "Slow response on form",
+      "State": "Active"
+    },
+...
+    {
+      "WorkItemId": 160,
+      "Title": "Game store testing",
+      "State": "New"
+    }
+  ]
+}
+```
+
+You can also apply various functions such as `contains`, `startswith`, and `endswith`. See [Supported functions](odata-supported-features.md#supported-functions). 
+
+<a id="filter-navigation"></a>
 <a id="filter-navigation-field"></a>
-## Return data for Identity, Area Path, and Iteration Path fields
- 
-Certain properties associated with navigational properties aren't directly accessible by using `$select` statements. You must use an `$expand` statement to return the data you want. These properties are often associated with their own properties. For example, you can specify to return the user name or user email for **Identity** fields. 
+## Filter by navigation properties
 
-The following table provides examples of how to expand several of these properties. 
+Navigation properties represent relationships between entity types. When you specify a navigation property as part of your filter criteria, you must specify the full path for the navigation property. For example, the following clause filters work items based on a specified **Iteration Path** for the `Iteration` navigation property.
+
+`WorkItems?$filter=Iteration/IterationPath eq 'Project Name\Iteration 1'`
+
+In the following query, `Iteration` is the navigation property and `IterationPath` is the field of interest. `Iteration/IterationPath` is the full path for the `IterationPath` property.
+
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=Iteration/IterationPath eq 'Project Name\Iteration 1'
+```
+
+The following example query requests data from the top five work items under the `Fabrikam Fiber\3Week Sprints\Sprint 3` area path by specifying the full path for `Iteration/IterationPath`.
+
+``` OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$top=5&$filter=Iteration/IterationPath eq 'Fabrikam Fiber\3Week Sprints\Sprint 3'&$select=WorkItemId, WorkItemType, Title, State&$orderby=WorkItemId asc
+```
+
+<a id="return-related"></a>
+## Return data from related entities
+
+The preceding example doesn't return all `Iteration` data because `Iteration` is a related entity. Properties of navigation properties like `Identity`, `Area`, and `Iteration` aren't directly accessible by using `$select` statements. You must use `$expand` statements to return data from related entities.
+
+`WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 00000&$expand=Iteration`
+
+The following example query requests information associated with work item ID `480`, including expanded `Iteration` data. 
+
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId%20eq%20480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration
+```
+
+The query returns the following data, which includes all the fields from the expanded `Iteration` property.
+
+```OData
+{
+  "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)",
+  "value": [
+    {
+      "WorkItemId": 480,
+      "Title": "Add animated emoticons",
+      "WorkItemType": "User Story",
+      "State": "New",
+      "Iteration": {
+        "ProjectSK": "bbbbbbbb-1111-2222-3333-cccccccccccc",
+        "IterationSK": "cccccccc-2222-3333-4444-dddddddddddd",
+        "IterationId": "cccccccc-2222-3333-4444-dddddddddddd",
+        "IterationName": "Sprint 3",
+        "Number": 276,
+        "IterationPath": "Fabrikam Fiber\\3Week Sprints\\Sprint 3",
+        "StartDate": "2025-12-04T00:00:00-12:00",
+        "EndDate": "2025-12-25T23:59:59.999-12:00",
+        "IterationLevel1": "Fabrikam Fiber",
+        "IterationLevel2": "3Week Sprints",
+        "IterationLevel3": "Sprint 3",
+        "IterationLevel4": null,
+        "IterationLevel5": null,
+        "IterationLevel6": null,
+        "IterationLevel7": null,
+        "IterationLevel8": null,
+        "IterationLevel9": null,
+        "IterationLevel10": null,
+        "IterationLevel11": null,
+        "IterationLevel12": null,
+        "IterationLevel13": null,
+        "IterationLevel14": null,
+        "Depth": 2,
+        "IsEnded": false,
+        "AnalyticsUpdatedDate": "2025-10-22T17:28:14.7166667Z"
+      }
+    }
+  ]
+}
+```
+
+## Use select in expand statements
+
+If an expanded property returns more data than you want, add a `$select` statement against the property.
+
+`WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 00000&$expand=Iteration($select=Name,IterationPath)`
+
+For example, the following example query selects to return only the `IterationName` and `IterationPath` data from the expanded `Iteration` property.
+
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId%20eq%20480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration($select=IterationName,IterationPath)
+```
+
+The query returns the following data.
+
+```OData
+{
+  "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration(IterationName,IterationPath))",
+  "value": [
+    {
+      "WorkItemId": 480,
+      "Title": "Add animated emoticons",
+      "WorkItemType": "User Story",
+      "State": "New",
+      "Iteration": {
+        "IterationName": "Sprint 3",
+        "IterationPath": "Fabrikam Fiber\\3Week Sprints\\Sprint 3"
+      }
+    }
+  ]
+}
+```
+
+The following table shows how to use `$expand` and `$select` clauses to select several fields in navigation properties. For example, use `$expand=AssignedTo($select=UserName)` to return the **Assigned to** property of the **User Name** field in the `Identity` navigational property.
 
 | Type field | Referenced property | Example clauses |
 |-------------|-------------------|-------------------|
@@ -197,269 +327,136 @@ The following table provides examples of how to expand several of these properti
 | Project| `ProjectSK`   | `$expand=Project($select=ProjectName)` | 
 | Team     | `TeamSK`      | `$expand=Teams($select=TeamName)` | 
 
-To specify several properties that need to be expanded, you specify them in a single expand clause within a comma-delimited list. 
+To specify several properties that need to be expanded, you can use a single `$expand` clause with a comma-delimited list.
 
 `$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)`
 
-<a id="filter-navigation"></a>
-
-## Filter by a navigation property
-
-When you specify a navigation property as part of your filter criteria, you must specify it in the required format.  
-
-For example, the following clause specifies to filter work items based on *Iteration 1* defined for the project. 
-
-`/WorkItems?$filter=Iteration/IterationPath eq 'Project Name\Iteration 1'`
-
-In this example, `Iteration` is the navigation property name and `IterationPath` corresponds to the full path for the iteration. To use another entity as a filter, put the navigation property followed by a slash followed by the name of the field to filter on.  
-
-And, here's the full OData query:
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=Iteration/IterationPath eq 'Project Name\Iteration 1'
-> ```
-
-Here's another example that requests the top five work items under the *Fabrikam Fiber\Service Delivery\Voice* Area Path are returned. 
-
-> [!div class="tabbedCodeSnippets"]
-> ``` OData
-> https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$top=5&$filter=Area/AreaPath eq 'Fabrikam Fiber\Service Delivery\Voice'&$select=WorkItemId, WorkItemType, Title, State&$orderby=WorkItemId asc
-> 
-> @odata.context	"https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State)"
-> value	
->   0	
->      WorkItemId	361
->      Title        "Hello World Web Site"
->      WorkItemType	"Product Backlog Item"
->      State        "Removed"
->   1	
->      WorkItemId	362
->      Title        "Resume"
->      WorkItemType	"Product Backlog Item"
->      State        "New"
->   2	
->      WorkItemId	363
->      Title        "Welcome back page"
->      WorkItemType	"Product Backlog Item"
->      State        "Done"
->   3	
->      WorkItemId	365
->      Title        "Pause"
->      WorkItemType	"Feature"
->      State        "New"
->   4	
->      WorkItemId	374
->      Title        "Fix performance issues"
->      WorkItemType	"Task"
->      State        "To Do"
->```
-
-<a id="return-related"></a>
-
-> [!TIP]  
-> You can't use the navigation property directly in a `$select` statement. Instead, you need to use `$expand`.  
-
-The previous filtering example for the Iteration Path doesn't return the iteration path because it's contained in a related entity. To return data in a related entity, add an `$expand` statement:
-
-`/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration`
-
-And here's an example that returns information assigned to work item ID *480*. 
-
-> [!div class="tabbedCodeSnippets"]
-> ``` OData
-> https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId eq 480&$select=WorkItemId,WorkItemType,Title,State&&$expand=Iteration
->	
-> @odata.context	"https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)"
-> value	
->   0	
->       WorkItemId           480
->       Title                "Customer Phone - Phase 1"
->       WorkItemType	       "Feature"
->       State	               "In Progress"
->       Iteration	
->           ProjectSK	       "56af920d-393b-4236-9a07-24439ccaa85c"
->           IterationSK	       "c7063041-ff3a-4d7f-bb46-c433c7030d59"
->           IterationId	       "c7063041-ff3a-4d7f-bb46-c433c7030d59"
->           IterationName	   "Sprint 1"
->           Number	            55297
->           IterationPath	    "Fabrikam Fiber\\Release 1\\Sprint 1"
->           StartDate	        "2022-01-17T00:00:00-08:00"
->           EndDate	            "2022-02-04T23:59:59.999-08:00"
->           IterationLevel1	    "Fabrikam Fiber"
->           IterationLevel2	    "Release 1"
->           IterationLevel3	    "Sprint 1"
->           IterationLevel4	    null
->           IterationLevel5	    null
->           IterationLevel6	    null
->           IterationLevel7	    null
->           IterationLevel8	    null
->           IterationLevel9	    null
->           IterationLevel10	null
->           IterationLevel11	null
->           IterationLevel12	null
->           IterationLevel13	null
->           IterationLevel14	null
->           Depth	            2
->           IsEnded	        	true
->       AnalyticsUpdatedDate	"2022-01-18T22:18:58.17Z"
-> ```
-
-As you can see, the Iteration Path is expanded in the result and all of the iteration data is returned. It's probably more data than you want.  
-
-To return less data, add a `$select` statement against the iteration as well:
-
-`/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration($select=Name,IterationPath)`
-
-It then returns the following data.
-
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> {
->   "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))",
->   "value":[
->     {
->       "WorkItemId":10000,
->       "WorkItemType":"Task",
->       "Title":"Some title",
->       "State":"Completed",
->       "Iteration":{
->         "Name":"Sprint 55",
->         "IterationPath":"Fabrikam\\Sprints\\Sprint 55"
->       }
->     }
->   ]
-> }
-> ```
-
-<a id="date-range-queries"></a> 
-
-## Query a date range
-
-The following example returns work items whose **Changed Date** is greater than equal to January 1, 2021. 
-
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-01-01Z
-> ```
-
-The following example returns work items whose **Changed Date** occurs during the week of April 26 through April 30, 2021.  
-
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> https://analytics.dev.azure.com{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-04-26Z&ChangedDate le 2021-04-30Z
-> ```
- 
-
 ## Nest expand statements
 
-In OData, you can nest `$expand` statements. For example, you can write the previous query statement to display the project the iteration is part of:
+You can nest `$expand` statements in OData. For example, the following query uses nested `$expand` statements to display the project an iteration is in.
 
-`/WorkItems?$filter=WorkItemId eq 10000&$expand=Iteration($expand=Project)`
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId%20eq%20480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration($expand=Project)
+```
 
-It returns the following JSON:
+The query returns the following data:
 
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> {
->   "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems",
->   "value":[
->     {
->       "WorkItemId":10000,
->       "Revision":3,
->       "Watermark":283397,
->       "Title":"Production deployment and testing for Entitlement API v2 and Subscriber database",
->       "WorkItemType":"Task",
->       "ChangedDate":"2014-07-10T19:29:58.41Z",
->       "CreatedDate":"2014-04-19T22:44:58.31Z",
->       "State":"Completed",
->       "Reason":"Completed",
->       "Priority":2,
->       "CompletedWork":10.0,
->       "OriginalEstimate":20.0,
->       "Count":1,
->       "Iteration":{
->         "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46",
->         "Name":"Sprint 55",
->         "Number":13021,
->         "IterationPath":"Fabrikam\\Sprints\\Sprint 55",
->         "StartDate":"2013-09-23T00:00:00Z",
->         "EndDate":"2013-10-11T00:00:00Z",
->         "IterationLevel1":"Fabrikam",
->         "IterationLevel2":" Sprints",
->         "IterationLevel3":"Sprint 55",
->         "Level":2,
->         "IsDeleted":false,
->         "Project":{
->           "ProjectId":"b924d696-3eae-4116-8443-9a18392d8544",
->           "ProjectName":"Fabrikam",
->           "IsDeleted":false
->         }
->       }
->     }
->   ]
-> }
-> ```
+```OData
+{
+  "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)",
+  "value": [
+    {
+      "WorkItemId": 480,
+      "Title": "Add animated emoticons",
+      "WorkItemType": "User Story",
+      "State": "New",
+      "Iteration": {
+        "ProjectSK": "bbbbbbbb-1111-2222-3333-cccccccccccc",
+        "IterationSK": "cccccccc-2222-3333-4444-dddddddddddd",
+        "IterationId": "cccccccc-2222-3333-4444-dddddddddddd",
+        "IterationName": "Sprint 3",
+        "Number": 276,
+        "IterationPath": "Fabrikam Fiber\\3Week Sprints\\Sprint 3",
+        "StartDate": "2025-12-04T00:00:00-12:00",
+        "EndDate": "2025-12-25T23:59:59.999-12:00",
+        "IterationLevel1": "Fabrikam Fiber",
+        "IterationLevel2": "3Week Sprints",
+        "IterationLevel3": "Sprint 3",
+        "IterationLevel4": null,
+        "IterationLevel5": null,
+        "IterationLevel6": null,
+        "IterationLevel7": null,
+        "IterationLevel8": null,
+        "IterationLevel9": null,
+        "IterationLevel10": null,
+        "IterationLevel11": null,
+        "IterationLevel12": null,
+        "IterationLevel13": null,
+        "IterationLevel14": null,
+        "Depth": 2,
+        "IsEnded": false,
+        "AnalyticsUpdatedDate": "2025-10-22T17:28:14.7166667Z",
+        "Project": {
+          "ProjectSK": "bbbbbbbb-1111-2222-3333-cccccccccccc",
+          "ProjectId": "bbbbbbbb-1111-2222-3333-cccccccccccc",
+          "ProjectName": "Fabrikam Fiber",
+          "AnalyticsUpdatedDate": "2025-10-28T20:27:13.5833333Z",
+          "ProjectVisibility": "Private"
+        }
+      }
+    }
+  ]
+}
+```
 
-You can also combine `$expand` and `$select` statements. For example, you can change the previous query to only return the Iteration Name and Iteration Path:
+You can add `$select` statements, for example to return only the `IterationName` and `IterationPath` from `Iteration`:
 
-`/WorkItems?$filter=WorkItemId eq 10000&$expand=Iteration($select=IterationId,IterationPath;$expand=Project)`
+`https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId%20eq%20480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration($select=IterationName,IterationPath;$expand=Project)`
 
-It returns the following JSON:
+The example query returns the following data:
 
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> {
->   "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))",
->   "value":[
->     {
->       "WorkItemId":10000,
->       "Revision":3,
->       "Watermark":283397,
->       "Title":"Production deployment and testing for Entitlement API v2 and Subscriber database","WorkItemType":"Task",
->       "ChangedDate":"2014-07-10T19:29:58.41Z",
->       "CreatedDate":"2014-04-19T22:44:58.31Z",
->       "State":"Completed",
->       "Reason":"Completed",
->       "Priority":2,
->       "CompletedWork":10.0,
->       "OriginalEstimate":20.0,
->       "Count":1,
->       "Iteration":{
->         "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46","IterationPath":"Fabrikam\\Sprints\\Sprint 55",
->         "Project":{
->           "ProjectId":"b924d696-3eae-4116-8443-9a18392d8544",
->           "ProjectName":"Fabrikam",
->           "IsDeleted":false
->         }
->       }
->     }
->   ]
-> }
-> ```
+```OData
+{
+  "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration(IterationName,IterationPath,Project))",
+  "value": [
+    {
+      "WorkItemId": 480,
+      "Title": "Add animated emoticons",
+      "WorkItemType": "User Story",
+      "State": "New",
+      "Iteration": {
+        "IterationName": "Sprint 3",
+        "IterationPath": "Fabrikam Fiber\\3Week Sprints\\Sprint 3",
+        "Project": {
+          "ProjectId": "bbbbbbbb-1111-2222-3333-cccccccccccc",
+          "ProjectId": "bbbbbbbb-1111-2222-3333-cccccccccccc",
+          "ProjectName": "Fabrikam Fiber",
+          "AnalyticsUpdatedDate": "2025-10-28T20:27:13.5833333Z",
+          "ProjectVisibility": "Private"
+        }
+      }
+    }
+  ]
+}
+```
 
-Notice that the result here shows only the IterationId and IterationPath and that the Project is a nested object within the JSON result. Another key item to note is the URL itself. When using a `$select` statement and an `$expand` clause, you must use a semi-colon (;) before the `$expand`. Anything else will result in an error.
+These results show only the `IterationName` and `IterationPath`from `Iteration`, and `Project` is a nested object within the JSON result.
+
+>[!NOTE]
+>When you nest an `$expand` clause inside a `$select` statement, you must use a semi-colon `;` before the `$expand` to avoid an error.
+
+<a id="date-range-queries"></a> 
+## Query a date range
+The following example query returns work items whose last **Changed Date** is greater than or equal to January 1, 2025. 
+
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2025-01-01Z
+```
+
+The following example query returns work items whose last **Changed Date** occurred during the week of October 31 through November 7, 2025.
+
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2025-10-31Z&ChangedDate le 2025-11-07Z
+```
 
 <a id="sort-results"></a>
+## Sort results
 
-## Sort results, `orderby` option
+Specify the `$orderby` option to sort your results or specify the sequence to return results. You can sort in ascending or descending order using keywords `asc` or `desc`. The following table shows some examples.
 
-Specify the `$orderby` option to sort your results or specify the sequence in which results are returned. You can sort in ascending or descending order using keywords `asc` or `desc`, respectively. Some examples are shown  
-
-| Sort by | Clause to include |
+| Sort by | Clause |
 |---------|-------------------|
 | Work item ID |`/WorkItems?$orderby=WorkItemId` | 
 | Work item ID descending |`/WorkItems?$orderby=WorkItemId desc` |  
 | Work item type and State | `/WorkItems?$orderby=WorkItemType,State` |
  
 
-## Next steps
+## Next step
 
-> [!div class="nextstepaction"]
-> [Project & organization-scoped queries](account-scoped-queries.md)
+[Project & organization-scoped queries](account-scoped-queries.md)
 
  
-## Related articles
+## Related content
 
 - [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
 - [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md)
