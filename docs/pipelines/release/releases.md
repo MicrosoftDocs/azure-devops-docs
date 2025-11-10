@@ -1,25 +1,25 @@
 ---
-title: Create Classic releases
-description: Learn how to create Classic release definition in Azure pipelines.
+title: Create Classic release pipelines
+description: Learn how to create Classic release definitions in Azure pipelines.
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.topic: tutorial
-ms.author: ronai
+ms.author: rabououn
 author: RoopeshNair
-ms.date: 10/31/2024
+ms.date: 11/09/2025
 monikerRange: '<= azure-devops'
 ---
 
-# Create Classic releases
+# Create Classic release pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines offers developers a structured framework for deploying applications across multiple environments efficiently and securely using classic release pipelines. In this article you learn how to create release definitions in Azure Pipelines.
+Azure Pipelines enables you to deploy applications efficiently and securely across multiple environments using Classic release pipelines. This guide walks you through the steps to create a Classic release definition in Azure Pipelines.
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create one for free](../../organizations/accounts/create-organization.md).
-
-- An Azure DevOps project. Create a new [project](../../organizations/projects/create-project.md#create-a-project) if you don't have one already.
+| **Product**        | **Requirements**  |
+|--------------------|-------------------|
+| **Azure DevOps**   | - An [Azure DevOps organization](../../organizations/accounts/create-organization.md).<br> - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project, you must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md). |
 
 ## Create a release definition
 
