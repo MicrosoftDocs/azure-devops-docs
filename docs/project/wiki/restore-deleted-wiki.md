@@ -224,6 +224,5 @@ After using either option:
 ## Related content
 
 - [Publish repo to wiki](publish-repo-to-wiki.md)
-- [Wiki REST API](/rest/api/azure/devops/wiki/?view=azure-devops-rest-7.1&preserve-view=true)
 - [Wiki markdown guidance](markdown-guidance.md)
 - [Get notifications for wiki pages](follow-notifications-wiki-pages.md)
