@@ -10,23 +10,24 @@ ms.custom:
 "recommendations": "true"
 ---
 
-# Manually set a Azure Resource Manager with a secret
+# Manually set an Azure Resource Manager with a secret
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article guides you through manually setting up an app registration with a secret in Azure portal, creating a Azure Resource Manager (ARM) service connection for service principal authentication in Azure DevOps, and granting the necessary permissions.
+> [!WARNING]
+> Using a secret that requires manual rotation and management and is not recommended. Workload identity federation is the preferred credential type. If you don't need to use a secret because of organizational limitations, use [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity.
 
-Use this approach when you can't use Microsoft Entra due to organizational limitations. For example, use a secret when workload identity federation isn't supported for your Microsoft Entra tenant or when you have multitenant app registrations.
+This article guides you through manually creating an Azure Resource Manager (ARM) service connection for service principal authentication with a secret in Azure DevOps. Use this approach when you can't use Microsoft Entra ID due to organizational limitations. For example, use a secret when workload identity federation isn't supported for your Microsoft Entra ID tenant or when you have multitenant app registrations.
 
 For other scenarios, use [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity. Workload identity federation eliminates the need for secrets and secret management. To learn more, see [Connect to Azure with an ARM service connection](../library/connect-to-azure.md).  
 
-### Prerequisites for app registration authentication
+## Prerequisites for app registration authentication
 
 - To create a service connection, your Azure account needs permission to create app registrations. 
     - If [creating app registrations is disabled in your tenant](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications), then you need to have the [Application Developer role](/entra/identity/role-based-access-control/permissions-reference#application-developer) to create application registrations. 
 
 
-### Create an app registration in Azure portal
+## Create an app registration in Azure portal
 
 1. In the Azure portal, search for [app registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps).
 
@@ -46,7 +47,7 @@ For other scenarios, use [workload identity federation](/azure/active-directory/
 
 1. Select **Add**.
 
-### Grant permissions to the app registration in Azure portal
+## Grant permissions to the app registration in Azure portal
 
 1. In the Azure portal, go to the Azure subscription, management group, or machine learning workspace that you want to grant permissions for.
 
@@ -56,7 +57,7 @@ For other scenarios, use [workload identity federation](/azure/active-directory/
 
 1. Select **Review and assign**.
  
-### Create a service connection for app registration authentication in Azure DevOps
+## Create a service connection for app registration authentication in Azure DevOps
 
 1. In Azure DevOps, open your project and go to :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: > **Pipelines** > **Service connections**.
 
