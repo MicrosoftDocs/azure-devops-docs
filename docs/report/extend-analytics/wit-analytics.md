@@ -27,9 +27,9 @@ This tutorial shows you how to:
 > [!div class="checklist"]  
 > - Define queries that return item counts, with or without their data.
 > - Find properties and return data for navigation properties like **Identity**, **Area Path**, and **Iteration Path**.
-> - Query date ranges.
 > - Filter data by properties and navigation properties.
 > - Use `expand` clauses and nested `expand` statements.
+> - Query date ranges.
 > - Use the `orderby` option to sort results.
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
@@ -85,7 +85,8 @@ https://analytics.dev.azure.com/<OrganizationName>/<ProjectName>/_odata/v4.0-pre
 https://analytics.dev.azure.com/<OrganizationName>/<ProjectName>/_odata/v4.0-preview/Users?$count=true&$select=UserName,UserEmail
 ```
 
->[!NOTE] To return all properties defined for a specified entity type, you can use `$count=true` with no `select` clause. However, if you don't include a `$select` or `$apply` clause, you receive a warning such as `VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060`. To avoid running into usage limits, always include a `$select` or `$apply` clause in queries.
+>[!NOTE]
+>To return all properties defined for a specified entity type, you can use `$count=true` with no `select` clause. However, if you don't include a `$select` or `$apply` clause, you receive a warning such as `VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060`. To avoid running into usage limits, always include a `$select` or `$apply` clause in your queries.
 
 For example, the following query requests the count and **User Names** of users in the **Fabrikam Fiber** project:
 
@@ -169,7 +170,7 @@ To look up the `AreaSK`, `IterationSK`, or other properties for specific area pa
 <a id="areask"></a>
 ### Return the AreaSK for a specific area path 
 
-The following query returns the `AreaSK` property defined for the `Fabrikam Fiber\Production Planning\Web` area path. To see other defined properties for the **Areas** entity set, see [Metadata reference for Azure Boards Analytics, Areas](../analytics/entity-reference-boards.md#areas).
+The following query requests the `AreaSK` property defined for the `Fabrikam Fiber\Production Planning\Web` area path. To see other defined properties for the **Areas** entity set, see [Metadata reference for Azure Boards Analytics, Areas](../analytics/entity-reference-boards.md#areas).
 
 ```OData
 https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Areas?$filter=AreaPath eq 'Fabrikam Fiber\Production Planning\Web' &$select=AreaSK
@@ -191,7 +192,7 @@ The query returns the following data.
 <a id="iterationsk"></a>
 ### Return the IterationSK for a specific iteration path 
 
-The following query returns the `IterationSK` property defined for the `Fabrikam Fiber\3Week Sprints\Sprint 3` area path. To see other defined properties for the **Iterations** entity set, see [Metadata reference for Azure Boards Analytics, Iterations](../analytics/entity-reference-boards.md#iterations).
+The following query returns the `IterationSK` property defined for the `Fabrikam Fiber\3Week Sprints\Sprint 3` iteration path. To see other defined properties for the **Iterations** entity set, see [Metadata reference for Azure Boards Analytics, Iterations](../analytics/entity-reference-boards.md#iterations).
 
 ```OData
 https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Iterations?$filter=IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 3' &$select=IterationSK
@@ -212,7 +213,7 @@ https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Wo
 
 ### Specify several filter clauses
 
-You can use `and` and `or` to specify several filter clauses. For example, the following query specifies to return several fields from work items of types **User Story**, **Bug**, or custom type **Backlog Work** that are in the **New**, **Committed**, or **Active** states. Use parenthesis to group filter clauses as needed.
+You can use `and` and `or` to specify several filters in a single `$select` clause. For example, the following query specifies several fields from work items of types **User Story**, **Bug**, or custom type **Backlog Work** that are in the **New**, **Committed**, or **Active** states. Use parenthesis to group filter clauses as needed.
 
 ```OData
 https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,Title,AssignedTo,State&$filter=(WorkItemType eq 'User Story' or WorkItemType eq 'Bug' or WorkItemType eq 'Backlog Work') and (State eq 'New' or State eq 'Committed' or State eq 'Active')
@@ -240,7 +241,7 @@ The query returns data like the following results:
 }
 ```
 
-You can also apply various functions such as `contains`, `startswith`, and `endswith`. See [Supported functions](odata-supported-features.md#supported-functions). 
+You can also apply various functions such as `contains`, `startswith`, and `endswith` in `$select` clauses. See [Supported functions](odata-supported-features.md#supported-functions). 
 
 <a id="filter-navigation"></a>
 <a id="filter-navigation-field"></a>
@@ -259,7 +260,7 @@ https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Wo
 ```
 
 <a id="return-related"></a>
-## Return data from related entities
+## Query data from related entities
 
 The preceding example query doesn't return `Iteration` data, because `Iteration` is a related entity. Properties of navigation properties like `Identity`, `Area`, and `Iteration` aren't directly accessible by using `$select` statements. You must use `$expand` statements to return data from related entities.
 
@@ -268,7 +269,7 @@ The preceding example query doesn't return `Iteration` data, because `Iteration`
 The following example query requests information associated with work item ID `480`, including expanded `Iteration` data. 
 
 ```OData
-https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId%20eq%20480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId eq 480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration
 ```
 
 The query returns the following data, which includes all the fields from the expanded `Iteration` property.
@@ -323,7 +324,7 @@ If an expanded property returns more data than you want, add a `$select` stateme
 For example, the following example query selects only the `IterationName` and `IterationPath` data from the expanded `Iteration` property.
 
 ```OData
-https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId%20eq%20480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration($select=IterationName,IterationPath)
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId eq 480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration($select=IterationName,IterationPath)
 ```
 
 The query returns the following data.
@@ -346,7 +347,7 @@ The query returns the following data.
 }
 ```
 
-The following table shows how to use `$expand` and `$select` clauses to select several fields in navigation properties. For example, use `$expand=AssignedTo($select=UserName)` to return the **Assigned to** property of the **User Name** field in the `Identity` navigation property.
+The following table shows how to use `$expand` and `$select` clauses to select several fields in navigation properties. For example, you use `$expand=AssignedTo($select=UserName)` to return the **Assigned to** property of the **User Name** field in the `Identity` navigation property.
 
 | Type field | Referenced property | Example clauses |
 |-------------|-------------------|-------------------|
@@ -357,7 +358,7 @@ The following table shows how to use `$expand` and `$select` clauses to select s
 | Project| `ProjectSK`   | `$expand=Project($select=ProjectName)` | 
 | Team     | `TeamSK`      | `$expand=Teams($select=TeamName)` | 
 
-To specify several properties to expand, you can use a single `$expand` clause with a comma-delimited list.
+You can specify several properties to expand in a single `$expand` clause by using a comma-delimited list.
 
 `$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)`
 
@@ -366,7 +367,7 @@ To specify several properties to expand, you can use a single `$expand` clause w
 You can use nested OData `$expand` statements. For example, the following query uses nested `$expand` statements to display the project an iteration is in.
 
 ```OData
-https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId%20eq%20480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration($expand=Project)
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId eq 480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration($expand=Project)
 ```
 
 The query returns the following data:
@@ -422,7 +423,7 @@ The query returns the following data:
 You can add `$select` statements, for example to return only the `IterationName` and `IterationPath` from `Iteration`:
 
 ```OData
-https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId%20eq%20480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration($select=IterationName,IterationPath;$expand=Project)
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId eq 480&$select=WorkItemId,WorkItemType,Title,State&$expand=Iteration($select=IterationName,IterationPath;$expand=Project)
 ```
 
 This query returns the following data:
