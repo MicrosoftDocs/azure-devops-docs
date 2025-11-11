@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: "<=azure-devops"
-ms.date: 11/10/2025
+ms.date: 11/11/2025
 #customer intent: As an Azure DevOps user, I want to learn how to construct OData queries to return work tracking data so I can monitor and report on the progress of my projects.
 
 ---
@@ -26,8 +26,9 @@ This tutorial shows you how to:
 
 > [!div class="checklist"]  
 > - Define queries that return item counts, with or without their data.
-> - Find properties and return data for navigation properties like **Identity**, **Area Path**, and **Iteration Path**.
-> - Filter data by properties and navigation properties.
+> - Select to return data for specific properties.
+> - Filter data by specific properties.
+> - Return data for navigation properties like **Identity**, **Area Path**, and **Iteration Path**.
 > - Use `expand` clauses and nested `expand` statements.
 > - Query date ranges.
 > - Use the `orderby` option to sort results.
@@ -50,7 +51,7 @@ This tutorial shows you how to:
 <a id="return-a-count-of-items-no-other-data"></a>
 ## Get a count of items
 
-To return only a count of items or entities defined in an organization or project without including other information, specify the `$apply=aggregate($count as Count)` query option. The following queries return the number of projects, work items, area paths, and users in an organization. 
+To return only a count of items or entities defined in an organization or project without including other information, apply the `$apply=aggregate($count as Count)` query option. The following queries return the number of projects, work items, area paths, and users in an organization. 
 
 ```OData
 https://analytics.dev.azure.com/<OrganizationName>/_odata/v4.0-preview/Projects?$apply=aggregate($count as Count)
@@ -77,7 +78,7 @@ The preceding queries return results like the following example for projects in 
 <a id="return-a-count-of-items-and-data"></a>
 ## Get a count of items and their data 
 
-To return a count of items along with `select` data for the items, specify the `$count=true` query option. The following queries return a count of work items, area paths, and users defined for a project along with specified properties. For valid properties, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) and [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](../analytics/entity-reference-general.md).
+To return a count of items along with selected data for the items, specify the `$count=true` query option in a `select` statement. The following queries return a count of work items, area paths, and users defined for a project along with specified properties. For valid properties, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) and [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](../analytics/entity-reference-general.md).
 
 ```OData 
 https://analytics.dev.azure.com/<OrganizationName>/<ProjectName>/_odata/v4.0-preview/WorkItems?$count=true&$select=WorkItemId,Title,WorkItemType 
@@ -163,41 +164,6 @@ Analytics returns the following data.
 }
 ```
 
-## Query Area Path or Iteration Path properties
-
-To look up the `AreaSK`, `IterationSK`, or other properties for specific area paths or iteration paths, use the following queries.
-
-<a id="areask"></a>
-### Return the AreaSK for a specific area path 
-
-The following query requests the `AreaSK` property defined for the `Fabrikam Fiber\Production Planning\Web` area path. To see other defined properties for the **Areas** entity set, see [Metadata reference for Azure Boards Analytics, Areas](../analytics/entity-reference-boards.md#areas).
-
-```OData
-https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Areas?$filter=AreaPath eq 'Fabrikam Fiber\Production Planning\Web' &$select=AreaSK
-```
-
-The query returns the following data.  
-
-```OData
-{
-  "@odata.context": "https://analytics.dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#Areas(AreaSK)",
-  "value": [
-    {
-      "AreaSK": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
-    }
-  ]
-}
-```
-
-<a id="iterationsk"></a>
-### Return the IterationSK for a specific iteration path 
-
-The following query returns the `IterationSK` property defined for the `Fabrikam Fiber\3Week Sprints\Sprint 3` iteration path. To see other defined properties for the **Iterations** entity set, see [Metadata reference for Azure Boards Analytics, Iterations](../analytics/entity-reference-boards.md#iterations).
-
-```OData
-https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Iterations?$filter=IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 3' &$select=IterationSK
-```
-
 <a id="filter-data"></a>
 ## Filter data 
 
@@ -242,6 +208,41 @@ The query returns data like the following results:
 ```
 
 You can also apply various functions such as `contains`, `startswith`, and `endswith` in `$select` clauses. See [Supported functions](odata-supported-features.md#supported-functions). 
+
+## Query Area Path or Iteration Path properties
+
+To look up the `AreaSK`, `IterationSK`, or other properties for a specific area path or iteration path, use the following queries.
+
+<a id="areask"></a>
+### Return the AreaSK for a specific area path 
+
+The following query requests the `AreaSK` property defined for the `Fabrikam Fiber\Production Planning\Web` area path. To see other defined properties for the **Areas** entity set, see [Areas](../analytics/entity-reference-boards.md#areas).
+
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Areas?$filter=Area/AreaPath eq 'Fabrikam Fiber\Production Planning\Web' &$select=AreaSK
+```
+
+The query returns the following data.  
+
+```OData
+{
+  "@odata.context": "https://analytics.dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#Areas(AreaSK)",
+  "value": [
+    {
+      "AreaSK": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+    }
+  ]
+}
+```
+
+<a id="iterationsk"></a>
+### Return the IterationSK for a specific iteration path 
+
+The following query returns the `IterationSK` property defined for the `Fabrikam Fiber\3Week Sprints\Sprint 3` iteration path. To see other defined properties for the **Iterations** entity set, see [Iterations](../analytics/entity-reference-boards.md#iterations).
+
+```OData
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Iterations?$filter=Iteration/IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 3' &$select=IterationSK
+```
 
 <a id="filter-navigation"></a>
 <a id="filter-navigation-field"></a>
