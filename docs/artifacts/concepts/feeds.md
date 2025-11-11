@@ -78,6 +78,8 @@ Public feeds are **project-scoped** and inherit the visibility settings of the h
 
 ## Create a public feed
 
+[!INCLUDE [allow-public-project-policy](../../organizations/projects/includes/allow-public-project-policy.md)]
+
 Public feeds are project-scoped feeds in a public project. Follow the instructions below to create a new public feed:
 
 1. Navigate to your Azure DevOps project. Make sure that your project is **Public** in order to create a public feed. Once there, select **Artifacts** > **Create Feed**.

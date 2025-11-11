@@ -125,6 +125,8 @@ You can have both private and public projects. You can also [change the visibili
 
 For more information, see [Resources granted to project members](resources-granted-to-project-members.md).
 
+[!INCLUDE [allow-public-project-policy](includes/allow-public-project-policy.md)]
+
 **Public projects**:
 - Don't require users to sign in for read-only access to many services.
 - Support sharing code with others.
