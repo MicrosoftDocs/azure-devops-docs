@@ -260,7 +260,7 @@ https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Wo
 ```
 
 <a id="return-related"></a>
-## Query data from related entities
+## Expand data from related entities
 
 The preceding example query doesn't return `Iteration` data, because `Iteration` is a related entity. Properties of navigation properties like `Identity`, `Area`, and `Iteration` aren't directly accessible by using `$select` statements. You must use `$expand` statements to return data from related entities.
 
