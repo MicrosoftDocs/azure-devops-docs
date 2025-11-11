@@ -36,7 +36,7 @@ Unlike cloud-based solutions that require sending your data externally, the Azur
 
 The Azure DevOps MCP Server is compatible with multiple AI coding environments. Choose your preferred development environment:
 
-### Visual Studio 2022/2025
+### Visual Studio 2022
 - **GitHub Copilot**: Enhanced with Azure DevOps context through MCP integration
 - **Installation**: Requires GitHub Copilot extension and MCP Server configuration
 - **Features**: Full IntelliSense integration with Azure DevOps data
@@ -55,20 +55,11 @@ The Azure DevOps MCP Server is compatible with multiple AI coding environments. 
 
 Ready to enhance your AI assistant with Azure DevOps context? Follow the installation guide for your preferred development environment:
 
-### For Visual Studio users
+- **Visual Studio users**: For detailed Visual Studio installation instructions, including step-by-step configuration for Visual Studio 2022, see [Install Azure DevOps MCP Server for Visual Studio](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#%EF%B8%8F-visual-studio-2022--github-copilot)
 
-For detailed Visual Studio installation instructions, including step-by-step configuration for Visual Studio 2022 and Visual Studio 2025, see:
-- [Install Azure DevOps MCP Server for Visual Studio](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/VISUALSTUDIO.md)
+- **VS Code users**: For Visual Studio Code installation with GitHub Copilot or Claude Dev, see [Install Azure DevOps MCP Server for VS Code](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#%EF%B8%8F-visual-studio-code--github-copilot)
 
-### For VS Code users
-
-For Visual Studio Code installation with GitHub Copilot or Claude Dev, see:
-- [Install Azure DevOps MCP Server for VS Code](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/VSCODE.md)
-
-### General installation guide
-
-For all supported environments and troubleshooting, see:
-- [Complete Installation Guide](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md)
+- **All environments**: For all supported environments and troubleshooting, see [Complete Installation Guide](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md)
 
 > [!TIP]
 > Having installation issues? Check the [troubleshooting section](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/TROUBLESHOOTING.md) or report issues on the [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp/issues).
