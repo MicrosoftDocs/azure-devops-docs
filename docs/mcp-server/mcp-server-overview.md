@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/11/2025
+ms.date: 11/11/2025
 #customer intent: As a project member, I want to understand what the Azure DevOps MCP Server is and how it can enhance my AI assistant with real-time Azure DevOps context to improve my productivity and decision-making.
 ---
 
@@ -30,13 +30,39 @@ Unlike cloud-based solutions that require sending your data externally, the Azur
 |-------------|-------------|----------------------|
 | **Node.js** | Version 18.0 or higher required for running the MCP Server | [Download Node.js](https://nodejs.org/) |
 | **Azure DevOps organization** | Active Azure DevOps Services organization with project access | [Create organization](../organizations/accounts/create-organization.md) |
-| **AI coding environment** | Compatible AI assistant with agent-mode support (GitHub Copilot, Claude, etc.) | See [installation section](#install-mcp-server)  |
+| **AI coding environment** | Compatible AI assistant with agent-mode support | See [supported environments](#supported-ai-environments)  |
+
+## Supported AI environments
+
+The Azure DevOps MCP Server is compatible with multiple AI coding environments. Choose your preferred development environment:
+
+### Visual Studio 2022
+- **GitHub Copilot**: Enhanced with Azure DevOps context through MCP integration
+- **Installation**: Requires GitHub Copilot extension and MCP Server configuration
+- **Features**: Full IntelliSense integration with Azure DevOps data
+
+### Visual Studio Code
+- **GitHub Copilot**: Popular choice with extensive MCP support
+- **Claude Dev**: Alternative AI assistant with Azure DevOps integration
+- **Installation**: Extension-based setup with JSON configuration
+
+### Other Supported Environments
+- **Cursor**: AI-first code editor with built-in MCP support
+- **Claude Desktop**: Standalone application with MCP capabilities
+- **JetBrains IDEs**: IntelliJ IDEA, WebStorm, and other JetBrains products (via plugins)
 
 ## Install MCP Server
 
-Ready to enhance your AI assistant with Azure DevOps context? The Azure DevOps MCP Server works with popular AI coding environments like Visual Studio Code with GitHub Copilot, Visual Studio 2022, Cursor, and Claude Code.
+Ready to enhance your AI assistant with Azure DevOps context? Follow the installation guide for your preferred development environment:
 
-For detailed installation instructions and setup for your preferred environment, see [Install Azure DevOps MCP Server](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md).
+- **Visual Studio users**: For detailed Visual Studio installation instructions, including step-by-step configuration for Visual Studio 2022, see [Install Azure DevOps MCP Server for Visual Studio](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#%EF%B8%8F-visual-studio-2022--github-copilot)
+
+- **VS Code users**: For Visual Studio Code installation with GitHub Copilot or Claude Dev, see [Install Azure DevOps MCP Server for VS Code](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#%EF%B8%8F-visual-studio-code--github-copilot)
+
+- **All environments**: For all supported environments and troubleshooting, see [Complete Installation Guide](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md)
+
+> [!TIP]
+> Having installation issues? Check the [troubleshooting section](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/TROUBLESHOOTING.md) or report issues on the [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp/issues).
 
 ## Why use Azure DevOps MCP Server?
 
