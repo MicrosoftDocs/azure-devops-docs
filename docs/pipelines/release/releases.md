@@ -43,10 +43,10 @@ A Classic release definition lets you configure stages, artifacts, and tasks for
 
 1. Now you're ready to create your first release. Select **Create release** and follow the prompts to start your release. 
 
-    :::image type="content" source="media/create-release-definition-manually.png" alt-text="A screenshot displaying how to manually create a Classic release definition in Azure Pipelines.":::
+    :::image type="content" source="media/create-classic-release-pipelines.png" alt-text="A screenshot displaying how to manually create a Classic release definition in Azure Pipelines.":::
 
 > [!TIP]
-> You can also create release definitions using the [REST API](/rest/api/azure/devops/release).
+> Release definitions can also be created using the [REST API](/rest/api/azure/devops/release).
 
 ## Related content
 
