@@ -39,20 +39,17 @@ Welcome to what's new in the Azure DevOps docs from October 1, 2025 through Octo
 - [Manage sprint timelines](/azure/devops/boards/sprints/define-sprints)
 - [Forecast your product backlog](/azure/devops/boards/sprints/forecast)
 - [Send an email with work items](/azure/devops/boards/work-items/email-work-items)
-- [Follow work items and pull requests](/azure/devops/boards/work-items/follow-work-items)
 - [Move work items from one team to another team](/azure/devops/boards/work-items/move-work-items)
 - [List work item fields and attributes](/azure/devops/boards/work-items/work-item-fields)
 - [Query work items by link or attachment count](/azure/devops/boards/queries/linking-attachments)
 - [Manage and organize queries in Azure Boards and Azure DevOps](/azure/devops/boards/queries/organize-queries)
 - [Query by rank and picklist value](/azure/devops/boards/queries/planning-ranking-priorities)
 - [Query by area or iteration path](/azure/devops/boards/queries/query-by-area-iteration-path)
-- [Use an index to query quick reference data](/azure/devops/boards/queries/query-index-quick-ref)
 - [Run a semantic work item search](/azure/devops/boards/queries/search-box-queries)
 - [View, run, or email a work item query](/azure/devops/boards/queries/view-run-query)
 - [Use team delivery plans in Azure Boards](/azure/devops/boards/plans/review-team-plans)
 - [Configure a hierarchy of teams](/azure/devops/boards/plans/configure-hierarchical-teams)
 - [Link work items to objects](/azure/devops/boards/backlogs/add-link)
-- [Reference guide for link types](/azure/devops/boards/queries/link-type-reference)
 - [Manage product and portfolio backlogs](/azure/devops/boards/plans/portfolio-management)
 - [Manage tests inline](/azure/devops/boards/boards/add-run-update-tests)
 - [Implement SAFe® with Azure Boards - Complete guide](/azure/devops/boards/plans/safe-configure-boards)
@@ -66,7 +63,6 @@ Welcome to what's new in the Azure DevOps docs from October 1, 2025 through Octo
 - [Query by titles, IDs, and rich-text fields](/azure/devops/boards/queries/titles-ids-descriptions)
 - [View sample work item templates in Azure Boards](/azure/devops/boards/work-items/work-item-template-examples)
 - [Terms and concepts used when tracking work items in Azure Boards](/azure/devops/boards/work-items/agile-glossary)
-- [Agile process work item types](/azure/devops/boards/work-items/guidance/agile-process)
 - [CMMI process work item types and workflow in Azure Boards](/azure/devops/boards/work-items/guidance/cmmi-process-workflow)
 - [Understand CMMI process template artifacts](/azure/devops/boards/work-items/guidance/cmmi-process)
 - [Background to Capability Maturity Model Integration (CMMI)](/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi)
@@ -78,6 +74,7 @@ Welcome to what's new in the Azure DevOps docs from October 1, 2025 through Octo
 - [About migrating and integrating work tracking data](/azure/devops/boards/extensions/migrate-integrate)
 - [Manage priorities and gain visibility across teams](/azure/devops/boards/plans/visibility-across-teams)
 - [Track your work by using managed queries in Azure Boards](/azure/devops/boards/queries/about-managed-queries)
+- [Reference guide for link types](/azure/devops/boards/queries/link-type-reference)
 - [Query fields, operators, and macros](/azure/devops/boards/queries/query-operators-variables)
 - [Sprints and Scrum key concepts in Azure Boards](/azure/devops/boards/sprints/scrum-key-concepts)
 - [About work items and work item types](/azure/devops/boards/work-items/about-work-items)
@@ -132,18 +129,11 @@ Welcome to what's new in the Azure DevOps docs from October 1, 2025 through Octo
 - [Contribution model](/azure/devops/extend/develop/contributions-overview)
 - [Extensibility points](/azure/devops/extend/reference/targets/overview)
 
-## Integrate
-
-### Updated articles
-
-- [Rate and usage limits](/azure/devops/integrate/concepts/rate-limits)
-
 ## Managed DevOps Pools
 
 ### Updated articles
 
 - [Configure Managed DevOps Pools networking](/azure/devops/managed-devops-pools/configure-networking)
-- [Managed DevOps Pools features timeline and roadmap](/azure/devops/managed-devops-pools/features-timeline)
 - [Prerequisites for Managed DevOps Pools](/azure/devops/managed-devops-pools/prerequisites)
 
 ## Project
