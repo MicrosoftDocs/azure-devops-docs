@@ -219,7 +219,7 @@ To look up the `AreaSK`, `IterationSK`, or other properties for a specific area 
 The following query requests the `AreaSK` property defined for the `Fabrikam Fiber\Production Planning\Web` area path. To see other defined properties for the **Areas** entity set, see [Areas](../analytics/entity-reference-boards.md#areas).
 
 ```OData
-https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Areas?$filter=Area/AreaPath eq 'Fabrikam Fiber\Production Planning\Web' &$select=AreaSK
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Areas?$filter=AreaPath eq 'Fabrikam Fiber\Production Planning\Web' &$select=AreaSK
 ```
 
 The query returns the following data.  
@@ -241,7 +241,7 @@ The query returns the following data.
 The following query returns the `IterationSK` property defined for the `Fabrikam Fiber\3Week Sprints\Sprint 3` iteration path. To see other defined properties for the **Iterations** entity set, see [Iterations](../analytics/entity-reference-boards.md#iterations).
 
 ```OData
-https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Iterations?$filter=Iteration/IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 3' &$select=IterationSK
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Iterations?$filter=IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 3' &$select=IterationSK
 ```
 
 <a id="filter-navigation"></a>
