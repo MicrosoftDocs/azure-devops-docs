@@ -108,7 +108,7 @@ Azure Test Plans remembers your field mappings for subsequent imports with the s
 - Create and save mapping templates for different file structures you use regularly
 - Import the appropriate template along with your data to avoid reconfiguring mappings each time
 
-   :::image type="content" source="media/bulk-import-test-case/mapping-downlod-template.png" alt-text="Screenshot shows no template selected and link to download current mapping as template.":::
+   :::image type="content" source="media/bulk-import-test-case/mapping-download-template.png" alt-text="Screenshot shows no template selected and link to download current mapping as template.":::
 
 **Template change notifications:**
 The system alerts you when you modify mappings after importing a template, helping prevent accidental changes to established team standards.
