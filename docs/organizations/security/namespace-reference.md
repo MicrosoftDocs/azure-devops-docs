@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/23/2025  
+ms.date: 11/12/2025  
 ---
 
 # Security namespace and permission reference for Azure DevOps 
@@ -741,7 +741,7 @@ The following table describes the security namespaces and permissions used to ma
    :::column span="2":::
       Manages permissions to create and manage Environments. By default, the following permissions are assigned: 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group 
-      - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
+      - **User** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Project Administrators group 
       - **Administrator** role (all permissions) to the user who created a specific Environment.<br/><br/>
       **ID:** `83d4c2e6-e57d-4d6e-892b-b87222b7ad20`  
@@ -779,7 +779,7 @@ The following table describes the security namespaces and permissions used to ma
    :::column span="2":::
       Manages permissions to create and manage library items, which include secure files and variable groups. Role memberships for individual items are automatically inherited from the Library. By default, the following permissions are assigned: 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
-      - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
+      - **User** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
       - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
       For more information, see [Library asset security roles](../../pipelines/library/index.md).<br/><br/>
