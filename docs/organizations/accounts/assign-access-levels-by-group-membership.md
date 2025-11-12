@@ -79,7 +79,7 @@ Verify that the resources apply to each group and individual user:
 2. Highlight a user.
 3. Select **Summary**.
 
-:::image type="content" source="media/assign-access-levels/verify-user-summary.png" alt-text="Screenshot showing verification of user summary for group rule.":::
+   :::image type="content" source="media/assign-access-levels/verify-user-summary.png" alt-text="Screenshot showing verification of user summary for group rule.":::
 
 ## Remove direct assignments
 

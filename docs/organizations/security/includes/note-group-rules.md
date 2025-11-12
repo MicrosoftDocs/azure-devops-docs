@@ -8,7 +8,7 @@ ms.date: 11/12/2025
  
 
 > [!NOTE]
-> - zure DevOps applies resources granted by group rules to all members of the configured group. However, access and permissions take effect only after the user signs in to the organization for the first time.  
+> - Azure DevOps applies resources granted by group rules to all members of the configured group. However, access and permissions take effect only after the user signs in to the organization for the first time.  
 > - Changes made to **project readers** through group rules don't persist. To adjust project readers, consider alternative methods such as [direct assignment](../change-access-levels.md) or [custom security groups](../add-remove-manage-user-group-security-group.md).
 > - Regularly review the rules listed on the **Group rules** tab of the **Users** page. Changes to Microsoft Entra ID group membership appear during the next group rule re-evaluation, which occurs:
 >     - On-demand when you trigger it manually
