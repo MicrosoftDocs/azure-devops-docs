@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/23/2025  
+ms.date: 11/12/2025  
 ---
 
 # Security namespace and permission reference for Azure DevOps 
@@ -26,7 +26,7 @@ This article describes the valid security namespaces, lists the associated permi
 Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more ACLs. An ACL includes a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE consists of an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
 
 > [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. For more information, see [Security namespaces query](/rest/api/azure/devops/security/security-namespaces/query)
+> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces are deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. For more information, see [Security namespaces query](/rest/api/azure/devops/security/security-namespaces/query)
 
 ## Permission management tools 
 
@@ -57,7 +57,7 @@ A security namespace can be either hierarchical or flat. In a hierarchical names
 Tokens in a hierarchical namespace either have a fixed length for each path part, or variable length.
 If the tokens have variable-length path parts, then a separator character is used to distinguish where one path part ends and another begins.
 
-Security tokens are case-insensitive. Example of tokens for different namespaces are provided in the following sections. 
+Security tokens are case-insensitive. Examples of tokens for different namespaces are provided in the following sections. 
 
 ## Object-level namespaces and permissions
 
@@ -264,7 +264,7 @@ The following table describes the namespaces that manage object-level permission
       <br/>
       **Token format for metaTask-level permissions**: `PROJECT_ID/METATASK_ID`
       <br/><br/>
-      If MetaTask has parentTaskId, then the Security token looks like the following example: 
+      If MetaTask has `parentTaskId`, then the Security token looks like the following example: 
       <br/>
       **Token Format**: `PROJECT_ID/PARENT_TASK_ID/METATASK_ID`
       <br/><br/>
@@ -353,7 +353,7 @@ The following table describes the namespaces that manage object-level permission
 
 ## Project-level namespaces and permissions
 
-The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions, while other project-level groups have specific permission assignments.
+The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](change-project-level-permissions.md). Project Administrators have all project-level permissions, while other project-level groups have specific permission assignments.
 
 ---
 :::row:::
@@ -741,7 +741,7 @@ The following table describes the security namespaces and permissions used to ma
    :::column span="2":::
       Manages permissions to create and manage Environments. By default, the following permissions are assigned: 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group 
-      - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
+      - **User** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Project Administrators group 
       - **Administrator** role (all permissions) to the user who created a specific Environment.<br/><br/>
       **ID:** `83d4c2e6-e57d-4d6e-892b-b87222b7ad20`  
@@ -779,7 +779,7 @@ The following table describes the security namespaces and permissions used to ma
    :::column span="2":::
       Manages permissions to create and manage library items, which include secure files and variable groups. Role memberships for individual items are automatically inherited from the Library. By default, the following permissions are assigned: 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
-      - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
+      - **User** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
       - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
       For more information, see [Library asset security roles](../../pipelines/library/index.md).<br/><br/>
