@@ -145,7 +145,7 @@ Use the following procedure to create a work item template through the web porta
    :::image type="content" source="media/wi-templates-new-template.png" alt-text="Screenshot showing how to add a new template for the Bug work item type.":::
 
    > [!NOTE]
-   > If you plan to use markdown in a large text field, you can add <br> tags to manage line breaks and ensure the markdown renders correctly.
+   > If you plan to use markdown in a large text field, you can add `<br>` tags to manage line breaks and ensure the markdown renders correctly.
 
 1. In the **New Template** dialog, enter a **Name** for the template (required) and optionally add fields with any necessary values.
 
