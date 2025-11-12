@@ -26,7 +26,7 @@ This article describes the valid security namespaces, lists the associated permi
 Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more ACLs. An ACL includes a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE consists of an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
 
 > [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. For more information, see [Security namespaces query](/rest/api/azure/devops/security/security-namespaces/query)
+> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces are deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. For more information, see [Security namespaces query](/rest/api/azure/devops/security/security-namespaces/query)
 
 ## Permission management tools 
 
@@ -57,7 +57,7 @@ A security namespace can be either hierarchical or flat. In a hierarchical names
 Tokens in a hierarchical namespace either have a fixed length for each path part, or variable length.
 If the tokens have variable-length path parts, then a separator character is used to distinguish where one path part ends and another begins.
 
-Security tokens are case-insensitive. Example of tokens for different namespaces are provided in the following sections. 
+Security tokens are case-insensitive. Examples of tokens for different namespaces are provided in the following sections. 
 
 ## Object-level namespaces and permissions
 
@@ -264,7 +264,7 @@ The following table describes the namespaces that manage object-level permission
       <br/>
       **Token format for metaTask-level permissions**: `PROJECT_ID/METATASK_ID`
       <br/><br/>
-      If MetaTask has parentTaskId, then the Security token looks like the following example: 
+      If MetaTask has `parentTaskId`, then the Security token looks like the following example: 
       <br/>
       **Token Format**: `PROJECT_ID/PARENT_TASK_ID/METATASK_ID`
       <br/><br/>
@@ -353,7 +353,7 @@ The following table describes the namespaces that manage object-level permission
 
 ## Project-level namespaces and permissions
 
-The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions, while other project-level groups have specific permission assignments.
+The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](change-project-level-permissions.md). Project Administrators have all project-level permissions, while other project-level groups have specific permission assignments.
 
 ---
 :::row:::
