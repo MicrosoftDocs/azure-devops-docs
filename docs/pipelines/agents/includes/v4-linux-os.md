@@ -16,4 +16,4 @@ ms.date: 11/07/2025
   * Debian 11 & 12
   * Ubuntu 24.04, 22.04, 20.04
 * Alpine x64
-  * [Alpine Linux](https://alpinelinux.org/) 3.17 to 3/20
+  * [Alpine Linux](https://alpinelinux.org/) 3.17 to 3.20
