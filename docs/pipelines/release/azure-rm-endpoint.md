@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article presents common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager (ARM) service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
+This article presents common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager (ARM) service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections. See [Troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md) to learn how to fix workload-identity related issues. 
 
 This article uses the terms "tenant" and "directory" in ways that might overlap. A tenant is a dedicated, isolated instance of Microsoft Entra ID that your organization receives and manages all identities and access control for your cloud services. A directory is a container within that tenant that holds objects like users, groups, and applications used to manage access to resources. 
 
@@ -265,6 +265,6 @@ Context: This is for an Azure Resource Manager service connection in Azure DevOp
 
 ## Related articles
 
+- [Troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md)
 - [Troubleshoot pipeline runs](../troubleshooting/troubleshooting.md)
-- [Review pipeline logs](../troubleshooting/review-logs.md)
-- [Define variables](../process/variables.md)
+- [Review logs to diagnose pipeline issues](../troubleshooting/review-logs.md)
