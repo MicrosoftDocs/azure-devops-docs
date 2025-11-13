@@ -6,7 +6,7 @@ ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: troubleshooting
 ms.author: jukullam
 author: juliakm
-ms.date: 10/28/2025
+ms.date: 11/13/2025
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 "recommendations": "true"
@@ -16,53 +16,34 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article presents common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
+This article presents common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager (ARM) service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
+
+This article uses the terms "tenant" and "directory" in ways that might overlap. A **tenant** is a dedicated, isolated instance of Microsoft Entra ID that your organization receives and manages all identities and access control for your cloud services. A **directory** is a container within that tenant that holds objects like users, groups, and applications used to manage access to resources. In many contexts, these terms are used interchangeably when referring to your Microsoft Entra ID instance.
 
 > [!TIP]
 > You can ask [Copilot](/copilot/) for help troubleshooting error messages. To learn more, see [Use AI to troubleshoot an Azure DevOps service connection error](#use-ai-to-troubleshoot-an-azure-devops-service-connection-error).
 
 ## What happens when you create an Azure Resource Manager service connection
 
-If you don't have a service connection, create one as follows:
+When the service connection creation process succeeds, Azure DevOps automatically performs these steps in your Microsoft Entra tenant. If you encounter errors during this process, see the [troubleshooting scenarios below](#the-user-has-only-guest-permission-in-the-directory).
 
-1. From within your project, select **Project settings**, then select **Service connections**.
+You have [multiple authentication options for connecting to Azure with an Azure Resource Manager service connection](../library/connect-to-azure.md). We recommend using [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an [app registration](../library/connect-to-azure.com#create-an-app-registration-with-workload-identity-federation-automatic) or [managed identity](../library/connect-to-azure.md#create-a-service-connection-for-an-existing-user-assigned-managed-identity). 
 
-    :::image type="content" source="media/service-connections.png" alt-text="Screenshot showing how to access service connections from project settings":::
-
-1. Select **New service connection** to add a new service connection, then select **Azure Resource Manager**. Select **Next** when you're done.
-
-    :::image type="content" source="media/arm-service-connection.png" alt-text="Screenshot showing the service connections types.":::
-
-1. Select **App registration (automatic)** as the Identity type and **Workload identity federation** as the credential.
-
-1. Select **Subscription**, then select your subscription from the drop-down list. Fill out the rest of the form and then select **Save** when you're done.
-
-When you save your new Azure Resource Manager service connection, Azure DevOps does the following actions:
+When you save your new Azure Resource Manager service connection, Azure DevOps takes the following actions:
 
 1. Connects to the Microsoft Entra tenant for the selected subscription.
-1. Creates an application in Microsoft Entra ID on behalf of the user.
+1. Creates an application in Entra ID on behalf of the user.
 1. Assigns the application as a contributor to the selected subscription.
 1. Creates an Azure Resource Manager service connection by using this application's details.
 
 > [!NOTE]
 > To create service connections, you need to be assigned the Creator or Administrator role for the Endpoint Creator group in your project settings: **Project settings** > **Service connections** > **More Actions** > **Security**. Project Contributors are added to this group by default.
 
-## Troubleshooting scenarios
+## The user has only guest permission in the directory
 
-The following issues might occur when you create service connections:
+This error occurs during the automatic service connection creation process when Azure DevOps attempts to create an application and assign permissions in Microsoft Entra ID (steps 2-3 in [What happens when you create an Azure Resource Manager service connection](#what-happens-when-you-create-an-azure-resource-manager-service-connection)). It happens when a user with only guest permissions in a Microsoft Entra ID directory tries to create an Azure Resource Manager service connection in Azure DevOps but has insufficient permissions.
 
-- [The user has only guest permission in the directory](#the-user-has-only-guest-permission-in-the-directory)
-- [The user isn't authorized to add applications in the directory](#the-user-isnt-authorized-to-add-applications-in-the-directory)
-- [Failed to obtain an access token or a valid refresh token wasn't found](#failed-to-obtain-an-access-token-or-a-valid-refresh-token-wasnt-found)
-- [Failed to assign Contributor role](#failed-to-assign-contributor-role)
-- [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-when-creating-a-service-connection)
-- [Some subscriptions are missing from the list of subscriptions](#some-subscriptions-are-missing-from-the-list-of-subscriptions)
-- [Service principal's token expired](#service-principal-or-secret-expired)
-- [Failed to obtain the JSON web token (JWT) by using the service principal client ID](#failed-to-obtain-the-jwt-by-using-the-service-principal-client-id)
-- [Azure subscription isn't passed from the previous task output](#azure-subscription-isnt-passed-from-the-previous-task-output)
-- [What authentication mechanisms are supported? How do managed identities work?](#what-authentication-mechanisms-are-supported-how-do-managed-identities-work)
-
-### The user has only guest permission in the directory
+To resolve this issue:
 
 1. Sign in to the Azure portal with an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner) or [user account administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator).
 
@@ -98,9 +79,11 @@ Alternatively, if you're ready to give the user administrator-level permissions,
 It typically takes 15 to 20 minutes to apply the changes globally. The user can then try recreating the service connection.
 
 
-### The user isn't authorized to add applications in the directory
+## The user isn't authorized to add applications in the directory
 
-You must have permissions to add integrated applications in the directory. The directory administrator has permissions to change this setting.
+This error occurs during the automatic service connection creation process when Azure DevOps attempts to create an application in Microsoft Entra ID on your behalf (step 2 in [What happens when you create an Azure Resource Manager service connection](#what-happens-when-you-create-an-azure-resource-manager-service-connection)). You don't have permission to add integrated applications in the directory. The directory administrator has permissions to change this setting. 
+
+To resolve this issue:
 
 1. Select **Microsoft Entra ID** in the left navigation pane.
 
@@ -112,26 +95,33 @@ You must have permissions to add integrated applications in the directory. The d
 
 ::: moniker range="<= azure-devops-2022"
 
-You can also create the service principal with an existing user who already has the required permissions in Microsoft Entra ID. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-a-service-connection-that-uses-an-existing-service-principal).
+You can also create the service principal with an existing user who already has the required permissions in Entra ID. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-a-service-connection-that-uses-an-existing-service-principal).
 
 ::: moniker-end
 
-### Failed to obtain an access token or a valid refresh token wasn't found
+## Failed to obtain an access token or a valid refresh token wasn't found
 
-These errors typically occur when your session expires. To resolve these issues:
+These errors typically occur when your session expires. 
+
+To resolve these issues:
 
 1. Sign out of Azure DevOps.
+
 1. Open an InPrivate or incognito browser window and go to [Azure DevOps](https://azure.microsoft.com/services/devops/).
+
 1. Sign in with the appropriate credentials.
+
 1. Select your organization and your project.
-1. [Create your service connection](../library/service-endpoints.md).
 
-### Error: You don't appear to have an active Azure subscription when attempting to edit or create a new service connection
+1. Try to create your service connection again. For detailed steps, see [Manage service connections](../library/service-endpoints.md).
 
-This error typically occurs when you're part of multiple Microsoft Entra ID tenants.
-Follow the steps in the following section to verify and resolve the issue.
+## You don't appear to have an active Azure subscription when attempting to edit or create a new service connection
 
-1. Go to [VS profile](https://app.vsaex.visualstudio.com/).
+This error typically occurs when you're part of multiple Entra ID tenants. 
+
+To resolve this issue:
+
+1. Go to [VS profile](https://app.vsaex.visualstudio.com/).
 
 1. Check whether you have multiple tenants.
 
@@ -141,19 +131,26 @@ Follow the steps in the following section to verify and resolve the issue.
 
 <a name="contributorrole"></a>
 
-### Failed to assign Contributor role
+## Failed to assign Contributor role
 
-This error typically occurs when you don't have **Write** permission for the selected Azure subscription.
+This error occurs during the automatic service connection creation process when Azure DevOps attempts to assign the application as a contributor to your subscription (step 3 in [What happens when you create an Azure Resource Manager service connection](#what-happens-when-you-create-an-azure-resource-manager-service-connection)). This error typically happens when you don't have **Write** permission for the selected Azure subscription.
 
 To resolve this issue, ask the subscription administrator to [assign you the appropriate role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) in Microsoft Entra ID.
 
-### Subscription isn't listed when creating a service connection
+## Subscription isn't listed when creating a service connection
+
+This issue arises when you have more than 50 Azure subscriptions or when there's cached data.
+
+To resolve this issue:
 
 - **Maximum of 50 Azure subscriptions listed in the various Azure subscription drop-down menus** (billing, service connection, and so on): If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions aren't listed. In this scenario, complete the following steps:
 
   1. Create a new, native Microsoft Entra user in the Microsoft Entra instance of your Azure subscription. 
+  
   1. Set up the Microsoft Entra user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/set-up-billing-for-your-organization-vs.md#give-a-user-access-to-manage-billing). 
+  
   1. Add the Microsoft Entra user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
+  
   1. Sign in to Azure DevOps with the new user credentials, and set up billing. You only see one Azure subscription in the list.
 
 - **Old user token cached in Azure DevOps Services:** If your Azure subscription doesn't appear when you create an Azure Resource Manager (ARM) service connection, it might be due to an old user token cached in Azure DevOps Services. This scenario isn't immediately obvious as the list screen of Azure subscriptions doesn't display any errors or warning messages indicating that the user token is outdated. To resolve this issue, manually update the cached user token in Azure DevOps Services by doing the following steps:
@@ -161,8 +158,6 @@ To resolve this issue, ask the subscription administrator to [assign you the app
   1. Sign out of Azure DevOps Services and sign back in. This action can refresh the user token.
   1. Clear your browser cache and cookies to ensure that any old tokens are removed.
   1. From the Azure DevOps portal, go to the service connections, and reauthorize the connection to Azure. This step prompts Azure DevOps to use a new token.
-
-### Some subscriptions are missing from the list of subscriptions
 
 - **Change support account types settings:** Fix this issue by changing the **supported account types** settings and defining who can use your application. Follow these steps:
 
@@ -172,26 +167,24 @@ To resolve this issue, ask the subscription administrator to [assign you the app
      :::image type="content" source="media/directory-and-subscriptions.png" alt-text="Screenshot showing the directory and subscriptions icon in Azure portal.":::
 
   1. Select **Microsoft Entra ID** from the left pane.
+ 
   1. Select **App registrations**.
+
   1. Select your application from the list of registered applications.
+
   1. Under **Authentication**, select **Supported account types**.
+ 
   1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
 
      :::image type="content" source="media/supported-account-types.png" alt-text="Screenshot showing the supported account types.":::
 
   1. Select **Save** when you're done.
 
-- **Old user token cached in Azure DevOps Services:** If your Azure subscription doesn't appear when you create an Azure Resource Manager (ARM) service connection, it might be due to an old user token cached in Azure DevOps Services. This scenario isn't immediately obvious as the list screen of Azure subscriptions doesn't display any errors or warning messages indicating that the user token is outdated. To resolve this issue, manually update the cached user token in Azure DevOps Services by doing the following steps:
+## Service principal or secret expired
 
-  1. Sign out of Azure DevOps Services and sign back in. This action can refresh the user token.
-  1. Clear your browser cache and cookies to ensure that any old tokens are removed.
-  1. From the Azure DevOps portal, go to the service connections, and reauthorize the connection to Azure. This step prompts Azure DevOps to use a new token.
+Service principals or secrets that Azure DevOps automatically creates expire and require renewal. If you encounter issues refreshing the token, see [Failed to obtain an access token or a valid refresh token wasn't found](#failed-to-obtain-an-access-token-or-a-valid-refresh-token-wasnt-found). To avoid needing to renew secrets, [use workload identity federation with Azure Resource Manager](../library/connect-to-azure.md#create-an-app-registration-with-workload-identity-federation-automatic). 
 
-### Service principal or secret expired
-
-An issue that often arises with service principals or secrets that are automatically created is that the token expires and needs to be renewed. If you have an issue with refreshing the token, see [Failed to obtain an access token or a valid refresh token wasn't found](#failed-to-obtain-an-access-token-or-a-valid-refresh-token-wasnt-found).
-
-If your token expired, you might see one of the error messages:
+If your token expires, you might see one of these error messages:
 
 * `AADSTS7000215: Invalid client secret is provided`
 * `AADSTS7000222: The provided client secret keys for app '***' are expired`
@@ -211,7 +204,7 @@ The token for your service principal or secret is now renewed for three more mon
    > This operation is available even if the service principal's token hasn't expired.
    > Make sure that the user performing the operation has proper permissions on the subscription and Microsoft Entra ID, because it updates the secret for the app registered for the service principal. For more information, see [Create an app registration with a secret](../library/azure-resource-manager-alternate-approaches.md#create-an-app-registration-with-a-secret-automatic) and [What happens when you create a Resource Manager service connection?](/azure/devops/pipelines/release/azure-rm-endpoint#what-happens-when-you-create-an-azure-resource-manager-service-connection)
 
-### Failed to obtain the JWT by using the service principal client ID
+## Failed to obtain the JWT by using the service principal client ID
 
 This issue occurs when you try to save a service connection that has an expired secret or other issues at the Microsoft Entra ID level.
 
@@ -226,13 +219,13 @@ To resolve this issue:
 > [!NOTE]
 > If you get an error like `Failed to obtain the Json Web Token(JWT) using service principal client ID. Exception message: AADSTS7000112: Application is disabled.`, work with your Microsoft Entra ID team to confirm that the option [Enabled for users to sign-in](/troubleshoot/entra/entra-id/app-integration/error-code-aadsts7000112-application-is-disabled) in the enterprise application linked with your service principal isn't disabled. 
 
-### Azure subscription isn't passed from the previous task output
+## Azure subscription isn't passed from the previous task output
 
 When you set your Azure subscription dynamically for your release pipeline and want to consume the output variable from a preceding task, you might encounter this issue. 
 
 To resolve the issue, ensure that the values are defined within the variables section of your pipeline. You can then pass this variable between your pipeline's tasks.
 
-### What authentication mechanisms are supported? How do managed identities work?
+## What authentication mechanisms are supported? How do managed identities work?
 
 ::: moniker range="<= azure-devops-2022"
 
