@@ -27,7 +27,7 @@ This article uses the terms "tenant" and "directory" in ways that might overlap.
 
 When the service connection creation process succeeds, Azure DevOps automatically performs these steps in your Microsoft Entra tenant. If you encounter errors during this process, see the [troubleshooting scenarios below](#the-user-has-only-guest-permission-in-the-directory).
 
-You have [multiple authentication options for connecting to Azure with an Azure Resource Manager service connection](../library/connect-to-azure.md). We recommend using [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an [app registration](../library/connect-to-azure.com#create-an-app-registration-with-workload-identity-federation-automatic) or [managed identity](../library/connect-to-azure.md#create-a-service-connection-for-an-existing-user-assigned-managed-identity). 
+You have multiple authentication options for [connecting to Azure with an Azure Resource Manager service connection](../library/connect-to-azure.md). We recommend using [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an [app registration](../library/connect-to-azure.com#create-an-app-registration-with-workload-identity-federation-automatic) or [managed identity](../library/connect-to-azure.md#create-a-service-connection-for-an-existing-user-assigned-managed-identity). 
 
 When you save your new Azure Resource Manager service connection, Azure DevOps takes the following actions:
 
