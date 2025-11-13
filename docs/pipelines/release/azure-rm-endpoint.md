@@ -18,16 +18,16 @@ monikerRange: '<= azure-devops'
 
 This article presents common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager (ARM) service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
 
-This article uses the terms "tenant" and "directory" in ways that might overlap. A **tenant** is a dedicated, isolated instance of Microsoft Entra ID that your organization receives and manages all identities and access control for your cloud services. A **directory** is a container within that tenant that holds objects like users, groups, and applications used to manage access to resources. In many contexts, these terms are used interchangeably when referring to your Microsoft Entra ID instance.
+This article uses the terms "tenant" and "directory" in ways that might overlap. A tenant is a dedicated, isolated instance of Microsoft Entra ID that your organization receives and manages all identities and access control for your cloud services. A directory is a container within that tenant that holds objects like users, groups, and applications used to manage access to resources. 
 
 > [!TIP]
 > You can ask [Copilot](/copilot/) for help troubleshooting error messages. To learn more, see [Use AI to troubleshoot an Azure DevOps service connection error](#use-ai-to-troubleshoot-an-azure-devops-service-connection-error).
 
 ## What happens when you create an Azure Resource Manager service connection
 
-When the service connection creation process succeeds, Azure DevOps automatically performs these steps in your Microsoft Entra tenant. If you encounter errors during this process, see the [troubleshooting scenarios below](#the-user-has-only-guest-permission-in-the-directory).
-
 You have multiple authentication options for [connecting to Azure with an Azure Resource Manager service connection](../library/connect-to-azure.md). We recommend using [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an [app registration](../library/connect-to-azure.md#create-an-app-registration-with-workload-identity-federation-automatic) or [managed identity](../library/connect-to-azure.md#create-a-service-connection-for-an-existing-user-assigned-managed-identity). 
+
+When the service connection creation process succeeds, Azure DevOps automatically performs these steps in your Microsoft Entra tenant. If you encounter errors during this process, see the [troubleshooting scenarios below](#the-user-has-only-guest-permission-in-the-directory).
 
 When you save your new Azure Resource Manager service connection, Azure DevOps takes the following actions:
 
@@ -139,11 +139,9 @@ To resolve this issue, ask the subscription administrator to [assign you the app
 
 ## Subscription isn't listed when creating a service connection
 
-This issue arises when you have more than 50 Azure subscriptions or when there's cached data.
+There are multiple possible causes of this problem. 
 
-To resolve this issue:
-
-- **Maximum of 50 Azure subscriptions listed in the various Azure subscription drop-down menus** (billing, service connection, and so on): If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions aren't listed. In this scenario, complete the following steps:
+- **Exceeded maximum of 50 Azure subscriptions listed in the various Azure subscription drop-down menus** (billing, service connection, and so on): If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions aren't listed. In this scenario, complete the following steps:
 
   1. Create a new, native Microsoft Entra user in the Microsoft Entra instance of your Azure subscription. 
   
@@ -159,7 +157,7 @@ To resolve this issue:
   1. Clear your browser cache and cookies to ensure that any old tokens are removed.
   1. From the Azure DevOps portal, go to the service connections, and reauthorize the connection to Azure. This step prompts Azure DevOps to use a new token.
 
-- **Change support account types settings:** Fix this issue by changing the **supported account types** settings and defining who can use your application. Follow these steps:
+- **Incorrect support account types settings:** Fix this issue by changing the **supported account types** settings and defining who can use your application. Follow these steps:
 
   1. Sign in to the Azure portal.
   1. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant in which you want to register an application.
