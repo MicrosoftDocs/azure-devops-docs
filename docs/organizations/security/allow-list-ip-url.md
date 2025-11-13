@@ -285,6 +285,11 @@ https://live.com
 https://login.live.com 
 ```
 
+The following URL is required when configuring billing for an Azure DevOps organization.
+```
+https://*.vscommerce.visualstudio.com
+```
+
 The following URL is required if you're migrating from Azure DevOps Server to the cloud service using our data migration tool.
 ```
 https://dataimport.dev.azure.com
