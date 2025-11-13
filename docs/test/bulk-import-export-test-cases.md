@@ -9,7 +9,7 @@ ms.author: jeom
 author: wisdeom
 ms.topic: how-to
 monikerRange: '= azure-devops'
-ms.date: 11/12/2025
+ms.date: 11/13/2025
 ms.update-cycle: 1095-days
 ---
 
@@ -80,11 +80,11 @@ For an overview of test objects and terminology, see [Test objects and terms](te
    :::image type="content" source="media/bulk-import-test-case/import-wizard-mapping.png" alt-text="Screenshot of the import wizard showing field mapping interface.":::
 
 5. (Optional) To change a field mapping:
-   - Select the dropdown for the field you want to update and choose the correct Azure DevOps field from the list (use search if needed)
+   - Select the dropdown for the field you want to update and choose the correct Azure DevOps field from the list (use search if needed).
 
    :::image type="content" source="media/bulk-import-test-case/update-field-mapping.png" alt-text="Screenshot shows dropdown menu for optional field mapping updates.":::
 
-   - To skip a field entirely, deselect the current mapping to show "Select field..." option
+   - To skip a field entirely, deselect (uncheck) the current mapping in the dropdown for the field to show "Select field..." option.
 
    :::image type="content" source="media/bulk-import-test-case/skip-mapping.png" alt-text="Screenshot shows empty field selection for skipping mapping.":::
 
@@ -92,9 +92,11 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 
 7. (Optional) If you're importing an XLSX file with multiple sheets, select which sheet to import. You can only import one sheet at a time.
 
+   :::image type="content" source="media/bulk-import-test-case/multiple-sheets-selection.png" alt-text="Screenshot showing worksheet selection dialog for XLSX files with multiple sheets.":::
+
 8. Choose **Import** to complete the process. For existing test cases with IDs provided, some elements might get overwritten during import.
 
-### Mapping templates and system memory
+## Use mapping templates and system memory
 
 When you first import a file with a specific column structure, review the field mappings to ensure all fields map correctly to Azure DevOps test case fields.
 
@@ -114,11 +116,6 @@ Azure Test Plans remembers your field mappings for subsequent imports with the s
 The system alerts you when you modify mappings after importing a template, helping prevent accidental changes to established team standards.
 
 :::image type="content" source="media/bulk-import-test-case/mapping-no-longer-based-on-template.png" alt-text="Screenshot shows message stating that changes made means mapping is no longer based on the uploaded template.":::
-
-**Multiple worksheets:**
-When importing an XLSX file with multiple sheets, select the specific sheet to import. You can import only one sheet at a time, so repeat the process for more sheets if needed.
-
-:::image type="content" source="media/bulk-import-test-case/multiple-sheets-selection.png" alt-text="Screenshot showing worksheet selection dialog for XLSX files with multiple sheets.":::
 
 > [!TIP]
 > Mapping templates are optional productivity features. Use them when they help streamline your import workflow or maintain consistency across your team.
@@ -154,7 +151,7 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 |**/maxpriority**:`priority`|Optional. Specifies which tests to import based on the maximum priority of the test method. For example, if the parameter is `/maxpriority:1`, only tests with a priority attribute for the test method less than or equal to 1 are imported as test cases from the assembly.| 
 |**/minpriority**:`priority`|Optional. Specifies which tests to import based on the minimum priority of the test method. For example, if the parameter is `/minpriority:2`, only tests with a priority attribute for the test method equal or greater than 2 are imported as test cases from the assembly.| 
 |**/category**:`filter`|Optional. Specifies which tests to import based on the category of each test method in the test assembly. You can use this parameter together with `/syncsuite` to import tests with a certain category into a specific test suite.<br/> For more information about test categories, see [Run unit tests with Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).| 
-|**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite can't be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests, the unsupported tests get removed from the test suite but not from the test plan itself. |
+|**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite can't be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests, the unsupported tests get removed from the test suite but not from the test plan itself.|
 
 ## Frequently asked questions
 
@@ -165,17 +162,37 @@ A: Yes! Use a single CSV/XLSX file for both operations:
 - **New test cases**: Leave the ID field empty
 - **Existing test cases**: Include the test case ID and work item type
 
-### Q: How do I identify errors in my import file?
+### Q: How do I identify and resolve errors in my import file?
 
-A: The import wizard displays formatting and validation errors before processing your file. You must resolve all errors before the import can proceed.
+A: The import wizard validates your file and displays errors at multiple stages:
+
+**During file upload:**
+- The wizard immediately detects file format issues, unsupported file types, or corrupted files
+
+**During field mapping:**
+- Missing mandatory headers are highlighted in red
+- Invalid field mappings show warning indicators
+- Unmapped required fields prevent import from proceeding
+
+**Before import completion:**
+- A final validation check identifies data format issues, invalid characters, or constraint violations
+- All errors must be resolved before the import can proceed
 
 :::image type="content" source="media/bulk-import-test-case/import-errors.png" alt-text="Screenshot of Import Test Cases error dialog.":::
 
-Common errors include:
-- Missing mandatory headers
-- Invalid data formats
-- Incorrect field mappings
-- Unsupported characters in field values
+**Common errors and solutions:**
+- **Missing mandatory headers**: Add the required column headers with exact spelling
+- **Invalid data formats**: Check date formats, numeric values, and text length limits
+- **Incorrect field mappings**: Verify that columns map to the correct Azure DevOps fields
+- **Unsupported characters**: Remove special characters that aren't supported in field values
+- **Empty required fields**: Ensure all mandatory fields contain valid data
+
+**To resolve errors:**
+1. Note the specific error messages displayed in the wizard
+2. Cancel the current import if needed
+3. Fix the issues in your CSV/XLSX file
+4. Re-upload the corrected file and review the field mappings
+5. Complete the import once all validation checks pass
 
 ### Q: What work item types does the import operation support?
 
