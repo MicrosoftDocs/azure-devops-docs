@@ -103,7 +103,7 @@ To define the branch control check:
 
 2. Navigate to **Approvals and Checks** for the resource.
 
-3. Choose the **Branch control** check and provide a comma-separated list of allowed branches. You can mandate that the branch should have protection enabled. You can also define the behavior of the check if the protection status for one of the branches isn't known. A branch is considered protected if at least one policy has been applied including policies applied at the repository level, such as enabling push protection from [GitHub Advanced Security for Azure DevOps](../../repos/security/configure-github-advanced-security.md)."
+3. Choose the **Branch control** check and provide a comma-separated list of allowed branches. You can mandate that the branch should have protection enabled. You can also define the behavior of the check if the protection status for one of the branches isn't known. A branch is considered protected if at least one policy has been applied including policies applied at the repository level, such as enabling push protection from [GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security.md)."
 
     :::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 
