@@ -183,11 +183,11 @@ A: The import wizard validates your file and displays errors at multiple stages:
 - **Empty required fields**: Ensure all mandatory fields contain valid data
 
 **To resolve errors:**
-1. Note the specific error messages displayed in the wizard
-2. Cancel the current import if needed
-3. Fix the issues in your CSV/XLSX file
-4. Reupload the corrected file and review the field mappings
-5. Complete the import once all validation checks pass
+1. Note the specific error messages displayed in the wizard.
+2. Cancel the current import if needed.
+3. Fix the issues in your CSV/XLSX file.
+4. Reupload the corrected file and review the field mappings.
+5. Complete the import once all validation checks pass.
 
 ### Q: What work item types does the import operation support?
 
@@ -197,9 +197,9 @@ A: The test case import feature supports only **Test Case** work items.
 
 - **Existing shared steps**: You can reference existing shared steps by including their ID in your CSV/XLSX file
 - **New shared steps**: The import doesn't create new shared steps. You must create them first using the web interface:
-  1. Open a test case in the UI
-  2. Select **Create shared steps** 
-  3. Once created, reference the shared step ID in your import file
+  1. Open a test case in the UI.
+  2. Select **Create shared steps**.
+  3. Once created, reference the shared step ID in your import file.
 
    :::image type="content" source="media/bulk-import-test-case/shared-steps-reference-in-csv.png" alt-text="Screenshot of shared step reference in CSV.":::
 
