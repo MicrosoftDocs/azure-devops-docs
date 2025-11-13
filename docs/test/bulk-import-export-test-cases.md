@@ -46,7 +46,7 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 
    :::image type="content" source="media/bulk-import-test-case/export-select-test-cases-test-suite.png" alt-text="Screenshot of selected test cases, export test cases to CSV.":::
 
-5. The exported CSV file appears in your **Downloads** folder. 
+   The exported CSV file appears in your **Downloads** folder. 
 
 ## Import test cases 
 
@@ -59,12 +59,7 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 
    :::image type="content" source="media/bulk-import-test-case/choose-import-test-cases.png" alt-text="Screenshot of Import test cases to the selected test suite.":::
 
-   The new import wizard opens on the side of your screen.
-
-   > [!div class="mx-imgBorder"]  
-   :::image type="content" source="media/bulk-import-test-case/import-wizard-screen.png" alt-text="Screenshot shows import wizard screen with Browse button for uploading a csv or xlsx file or drag and drop option.":::
-
-3. To review automapping and mandatory fields, select the file to import. The wizard automatically processes the data and maps detected fields using fuzzy matching against your Azure DevOps test case fields.
+3. To review automapping and mandatory fields, drag and drop a file, or select **Browse** and choose the file to import. The wizard automatically processes the data and maps detected fields using fuzzy matching against your Azure DevOps test case fields.
 
 4. Review the proposed field mappings. The import requires nine mandatory fields to proceed:
    - **ID** - Leave empty for new test cases, provide existing ID to update test cases
@@ -191,7 +186,7 @@ A: The import wizard validates your file and displays errors at multiple stages:
 1. Note the specific error messages displayed in the wizard
 2. Cancel the current import if needed
 3. Fix the issues in your CSV/XLSX file
-4. Re-upload the corrected file and review the field mappings
+4. Reupload the corrected file and review the field mappings
 5. Complete the import once all validation checks pass
 
 ### Q: What work item types does the import operation support?
