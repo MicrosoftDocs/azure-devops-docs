@@ -32,7 +32,11 @@ By default, all pools use a Microsoft-provided virtual network, which restricts 
 >[!IMPORTANT]
 > If you modify the static IP address count after the pool is created, the IP addresses are subject to change, and you'll need to obtain the new IP addresses and update your allowlist on external services after the update operation completes.
 
-#### ARM template
+#### [Azure portal](#tab/azure-portal/)
+
+This feature is in preview and isn't yet available to configure in the Azure portal.
+
+#### [ARM template](#tab/arm/)
 
 You can configure the static IP address count by specifying a `staticIpAddressCount` in the [networkProfile](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template#networkprofile-1) section under `fabricProfile` when you create or update a pool. To use default outbound access, omit the `networkProfile` property when you create or update a pool.
 
@@ -73,6 +77,57 @@ After you create or update your pool with static IP addresses configured, you ca
 > There is a known issue: if your pool is configured with a [managed identity](./configure-identity.md), API calls won't return the `ipAddresses` property unless the DevOpsInfrastructure service principal is assigned the [Managed Identity Operator](/azure/role-based-access-control/built-in-roles/identity#managed-identity-operator) role on the managed identity. For detailed steps, see [Assign Azure roles by using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 >
 > Granting this role is not required for the static IP addresses to be functional. Without this role assignment, you can still find the assigned IP addresses by running a pipeline in the pool and checking the **IP Addresses** value in the Managed DevOps Pool section of the **Initialize job** logs. For more information, see [View and download logs](../pipelines//troubleshooting/review-logs.md#view-and-download-logs).
+
+#### [Azure CLI](#tab/azure-cli/)
+
+You can configure the `staticIpAddressCount` in the `networkProfile` property in the `fabricProfile` section when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. For an isolated network, omit the `networkProfile` property when you create a pool.
+
+```azurecli
+az mdp pool create \
+   --fabric-profile fabric-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the `networkProfile` section of the **fabric-profile.json** file with one static IP address configured.
+
+```json
+{
+  "vmss": {
+    "sku": {...},
+    "images": [...],
+    "osProfile": {...},
+    "storageProfile": {...},
+    "networkProfile": {
+        "staticIpAddressCount": 1
+    }
+  }
+}
+```
+
+#### [Bicep](#tab/bicep/)
+
+To use Bicep, add a [networkProfile](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep#networkprofile) property in the `fabricProfile` section. Add a `staticIpAddressCount` property under `networkProfile` the desired count. In the following example, the pool is configured to use a single static outbound IP address.
+
+> [!NOTE]
+> The `staticIpAddressCount` property is available starting with API version `2025-09-20`.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
+  name: 'MyManagedDevOpsPool'
+  ...
+  properties: {
+    ...
+    fabricProfile: {
+      networkProfile: {
+        staticIpAddressCount: 1
+      }
+  }
+}
+```
+
+* * *
+
+#### ARM template
 
 <a name="add-agents-to-your-own-virtual-network"></a>
 
