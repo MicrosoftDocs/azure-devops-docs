@@ -25,7 +25,7 @@ The following table lists the Node.js versions that are supported in Azure Pipel
 | 10 | April 2021 | November 2026 |
 | 6  | April 2019 | November 2026 |
 
-- **End of support in Azure Pipelines** - when the end-of-support date is reached, Node.js versions will not be updated in the Azure Pipelines Agent. Pipelines will emit warnings to inform users of the approaching end-of-support date. The end-of-support date is based on the official [Node.js support schedule](https://nodejs.org/en/about/releases/)
+- **End of support in Azure Pipelines** - when the end-of-support date is reached, the Node.js version will not be updated in the Azure Pipelines Agent. Pipelines will emit warnings to inform users of any pending end-of-support dates. The end-of-support date is based on the official [Node.js support schedule](https://nodejs.org/en/about/releases/).
 - **Removal date in Azure Pipelines** - when the removal date is reached, the Node.js version will be removed from new agent versions, and tasks that require these Node.js versions may fail to run. The removal date will always be at least six months after the end-of-support date.
 
 The Azure Pipelines Agent will include alternate long term support (LTS) versions of Node.js starting with the upcoming release of Azure Pipeline Agent with Node.js 24. Newer alternate versions of Node.js starting with Node.js 28 will be added to the agent as they become LTS.
