@@ -27,7 +27,7 @@ By default, all pools use a Microsoft-provided virtual network, which restricts 
 
 1. Default outbound access connectivity is the current default, which allows all outbound traffic using a Microsoft-provided IP address. [Default outbound access for VMs in Azure is scheduled to be retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). When default outbound access is retired, pools will be configured with one static IP address by default.
 1. Instead of using default outbound access, you can configure your pool to use up to four static outbound IP addresses. Managed DevOps Pools will create a NAT gateway in the same region as your pool to provide the IP addresses. This configuration enables you to allowlist specific IP addresses on external services that your pipelines need to access.
-  - The NAT gateway incurs additional Azure costs. You can model how much it will cost by using the Azure cost calculator. For more information, see [Azure NAT Gateway pricing](https://azure.microsoft.com/pricing/details/azure-nat-gateway/).
+   - The NAT gateway incurs additional Azure costs. You can model how much it will cost by using the Azure cost calculator. For more information, see [Azure NAT Gateway pricing](https://azure.microsoft.com/pricing/details/azure-nat-gateway/).
 
 >[!IMPORTANT]
 > If you modify the static IP address count after the pool is created, the IP addresses are subject to change, and you'll need to obtain the new IP addresses and update your allowlist on external services after the update operation completes.
