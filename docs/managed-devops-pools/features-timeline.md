@@ -32,7 +32,7 @@ The following section describes new features in development for Managed DevOps P
 
 * **Public Static IP**: We've added support for public static IP addresses in Managed DevOps Pools to enable access to external resources, to prepare for when [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). This change with Azure will affect Managed DevOps Pools, Azure Virtual Machine Scale Set agent pools, and self-hosted pools that will create a new virtual network and they will not be able to access anything outside the agent without infrastructure like a NAT gateway. 
 
-When [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access), all Managed DevOps Pools using a private isolated network will have one static IP address assigned by default. This will incur additional Azure costs for the NAT gateway. For more information, see [Configure Managed DevOps Pools networking: 
+   When [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access), all Managed DevOps Pools using a private isolated network will have one static IP address assigned by default. This will incur additional Azure costs for the NAT gateway. For more information, see [Configure Managed DevOps Pools networking: 
 Isolated virtual network](./configure.md#isolated-virtual-network).
 
 ## October 2025
