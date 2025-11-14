@@ -27,12 +27,7 @@ By default, all pools use a Microsoft-provided virtual network, which restricts 
 
 1. Default outbound access connectivity is the current default, which allows all outbound traffic using a Microsoft-provided IP address. [Default outbound access for VMs in Azure is scheduled to be retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access).
 1. Instead of using default outbound access, you can configure your pool to use up to 16 static outbound IP addresses. Managed DevOps Pools will create a NAT gateway in the same region as your pool to provide the IP addresses. This configuration enables you to allowlist specific IP addresses on external services that your pipelines need to access.
-  - The NAT gateway incurs additional Azure costs. You can model how much it will cost by using the Azure cost calculator. For more information, see [Azure NAT Gateway pricing](https://azure.microsoft.com/en-us/pricing/details/azure-nat-gateway/).
-
-
-
->[!IMPORTANT]
-> If you change the static IP address count after the pool is created, the IP addresses are subject to change during the update operation. You need to update your allow list on external services after the update operation completes.
+  - The NAT gateway incurs additional Azure costs. You can model how much it will cost by using the Azure cost calculator. For more information, see [Azure NAT Gateway pricing](https://azure.microsoft.com/pricing/details/azure-nat-gateway/).
 
 #### ARM template
 
@@ -82,25 +77,14 @@ After you create or update your pool with static IP addresses configured, you ca
 }
 ```
 
-
-
-> [!IMPORTANT]
-> Once [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access)
-
-* **Public Static IP**: We're adding support for public static IP addresses in Managed DevOps Pools to enable access to external resources once [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). This change with Azure will affect Managed DevOps Pools, Azure Virtual Machine Scale Set agent pools, and self-hosted pools that will create a new virtual network and they will not be able to access anything outside the agent without infrastructure like a NAT gateway. New Managed DevOps Pools instances created after September 30, 2025 will be created with a NAT gateway by default and it will incur Azure costs associated. You can model how much it will cost by using the Azure cost calculator. **Planned for October 2025**. 
+>[!IMPORTANT]
+> If you change the static IP address count after the pool is created, the IP addresses are subject to change during the update operation. You need to update your allow list on external services after the update operation completes.
 
 <a name="add-agents-to-your-own-virtual-network"></a>
 
 ## Agents injected into existing virtual network
 
-You might want to add agents from Managed DevOps Pools to your own virtual network for scenarios such as:
-
-- Your continuous integration and continuous delivery (CI/CD) agents need to access resources that are only available in your company network through a service like Azure ExpressRoute.
-- Your CI/CD agents need to access resources that are isolated to private endpoints.
-- You want to network isolate your CI/CD infrastructure by bringing your own virtual network with company-specific firewall rules.
-- Any other unique use cases that can't be achieved by out-of-the-box Managed DevOps Pools networking features.
-
-You can add your pool's agents to your virtual network by using the following steps:
+You can configure your pool's agents to use your virtual network by using the following steps:
 
 1. [Create or bring your virtual network and subnet](#create-or-bring-your-virtual-network-and-subnet).
 1. [Delegate the subnet to `Microsoft.DevOpsInfrastructure/pools`](#delegate-the-subnet-to-microsoftdevopsinfrastructurepools).
