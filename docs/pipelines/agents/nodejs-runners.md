@@ -1,7 +1,7 @@
 ---
 title: Node.js runners in Azure Pipelines Agent
 ms.topic: concept-article
-description: Learn about node.js task runners in Azure Pipelines.
+description: Learn about Node.js task runners in Azure Pipelines.
 ms.date: 11/14/2025
 monikerRange: '<= azure-devops'
 ---
@@ -21,14 +21,17 @@ The following table lists the Node.js versions that are supported in Azure Pipel
 
 | Node.js version | End of support in Azure Pipelines | Removal date in Azure Pipelines |
 |-----------------|-----------------------------------|---------------------------------|
-| 24 (Available in agent January 2026) | April 2028<sup>1</sup> | October 2028<sup>1</sup>|
+| 24 (Available in agent January 2026) | April 2028[<sup>1</sup>](#note1) | October 2028[<sup>1</sup>](#note1)|
 | 20 | April 2026 | April 2027 |
 | 16 | September 2021 | November 2026 |
 | 10 | April 2021 | November 2026 |
 | 6  | April 2019 | November 2026 |
 
 - **End of support in Azure Pipelines** - when the end-of-support date is reached, Node.js versions will not be updated in Agents. Pipelines would emit warnings long before the end of support dates to inform on the same.
-- **Removal date in Azure Pipelines** - when the removal date is reached, the node.js version will be removed from new agent versions, and tasks that require these node.js versions may fail to run. The **removal date** will always be at least six months after the **end of support** date.
+- **Removal date in Azure Pipelines** - when the removal date is reached, the Node.js version will be removed from new agent versions, and tasks that require these Node.js versions may fail to run. The **removal date** will always be at least six months after the **end of support** date.
+
+<a name="note1"></a>
+<sup>1</sup>The end-of-support and removal dates for Node.js 24 are aligned with the official [Node.js support schedule](https://nodejs.org/en/about/releases/) as of November 2025. These dates are subject to change based on future announcements from the Node.js team.
 
 ## Removal date for Node.js 6, 10, and 16
 
