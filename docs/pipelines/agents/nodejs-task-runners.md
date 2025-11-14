@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 The Azure Pipelines agent ships with several versions of Node.js libraries to support target tasks that may use different Node.js handlers. 
 
-**Agent will be updated with Node.js 24 by January'2026** . Extension/Custom task authors should update/test their tasks with Node.js 24. 
+**Agent will be shipped with Node.js 24 by January'2026** . Extension/Custom task authors should update/test their tasks with Node.js 24. 
 
 ## Node.js version support
 
@@ -34,7 +34,7 @@ The following table lists the Node.js versions that are supported in Azure Pipel
 
 Node.js 6, 10, and 16 have been unsupported in pipelines since their respective end-of-support dates, and pipelines with tasks dependent on these Node.js versions emit warnings when they are run. However, to provide customers with sufficient time to migrate their custom tasks to a supported Node.js version, we have extended the removal date to November 2026.
 
-Please refer the [steps](https://aka.ms/node-runner-guidance) to update/test your tasks to the latest version of Node.js.
+Please refer the [steps](https://aka.ms/node-runner-guidance) to update/test your custom tasks to the latest version of Node.js.
 
 ## How to run tasks on unsupported Node.js versions
 
