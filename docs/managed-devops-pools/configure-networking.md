@@ -29,6 +29,9 @@ By default, all pools use a Microsoft-provided virtual network, which restricts 
 1. Instead of using default outbound access, you can configure your pool to use up to 16 static outbound IP addresses. Managed DevOps Pools will create a NAT gateway in the same region as your pool to provide the IP addresses. This configuration enables you to allowlist specific IP addresses on external services that your pipelines need to access.
   - The NAT gateway incurs additional Azure costs. You can model how much it will cost by using the Azure cost calculator. For more information, see [Azure NAT Gateway pricing](https://azure.microsoft.com/pricing/details/azure-nat-gateway/).
 
+>[!IMPORTANT]
+> If you modify the static IP address count after the pool is created, the IP addresses are subject to change during the update operation. You need to update your allow list on external services after the update operation completes.
+
 #### ARM template
 
 You can configure the static IP address count by specifying a `staticIpAddressCount` in the [networkProfile](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template#networkprofile-1) section under `fabricProfile` when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. To use default outbound access, omit the `networkProfile` property when you create or update a pool.
@@ -36,7 +39,7 @@ You can configure the static IP address count by specifying a `staticIpAddressCo
 > [!NOTE]
 > The `staticIpAddressCount` property is available starting with API version `2025-09-20`.
 
-The following example shows the `networkProfile` section of the **fabric-profile.json** file with one static IP address configured.
+The following example shows the `networkProfile` section with one static IP address configured.
 
 ```json
 {
@@ -48,49 +51,28 @@ The following example shows the `networkProfile` section of the **fabric-profile
         ...
         "fabricProfile": {
             "networkProfile": {
-              "subnetId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet",
+              "staticIpAddressCount": 1
             }
         }
     }
 }
 ```
 
-
-```json
-{
-  "vmss": {
-    "sku": {...},
-    "images": [...],
-    "osProfile": {...},
-    "storageProfile": {...},
-    "networkProfile": {
-        "staticIpAddressCount": 1
-    }
-  }
-}
-```
-
 After you create or update your pool with static IP addresses configured, you can find the assigned IP addresses in the payload of the response.
 
 ```json
-{
-  "vmss": {
-    "sku": {...},
-    "images": [...],
-    "osProfile": {...},
-    "storageProfile": {...},
-    "networkProfile": {
-       "ipAddresses": [
-          "203.0.113.254"
-        ],
-        "staticIpAddressCount": 1
-    }
-  }
+"networkProfile": {
+   "ipAddresses": [
+      "203.0.113.254"
+    ],
+    "staticIpAddressCount": 1
 }
 ```
 
->[!IMPORTANT]
-> If you change the static IP address count after the pool is created, the IP addresses are subject to change during the update operation. You need to update your allow list on external services after the update operation completes.
+> [!NOTE]
+> There is a known issue: if your pool is configured with a [managed identity](./configure-identity.md), API calls won't return the `ipAddresses` property unless the DevOpsInfrastructure service principal is assigned the [Managed Identity Operator](/azure/role-based-access-control/built-in-roles/identity#managed-identity-operator) role on the managed identity. For detailed steps, see [Assign Azure roles by using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+>
+> Granting this role is not required for the static IP addresses to be functional. Without this role assignment, you can still find the assigned IP addresses by running a pipeline in the pool and checking the **IP Addresses** value in the Managed DevOps Pool section of the **Initialize job** logs. For more information, see [View and download logs](../pipelines//troubleshooting/review-logs.md#view-and-download-logs).
 
 <a name="add-agents-to-your-own-virtual-network"></a>
 
