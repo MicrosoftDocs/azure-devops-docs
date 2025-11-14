@@ -46,15 +46,17 @@ If you don't have a key vault already, you can create one as follows:
 1. Enable the **Link secrets from an Azure key vault as variables** toggle.
 1. Select your service connection and select **Authorize**.
 1. Select your key vault name and enable Azure DevOps to access the key vault by selecting **Authorize** next to the vault name.
-
-    > [!NOTE]
-    > Key vaults with role-based access control (RBAC) permissions are not supported. Your key vault permission model must be set to **Vault access policy**.
-
 1. Select **+ Add** and on the **Choose secrets** screen, select the secrets from your vault for mapping to this variable group, then select **OK**.
 1. Select **Save** to save the secret variable group.
 
     :::image type="content" source="../../library/media/link-azure-key-vault-variable-group.png" alt-text="Screenshot of variable group with Azure key vault integration.":::
-    
+
+Key vaults with role-based access control (RBAC) permissions are not supported. Your key vault permission model must be set to **Vault access policy**. If you're using a key vault with RBAC permissions, you can use the following work around to link your key vault to your variable group:
+
+- Create an ARM service connection first
+- In Azure, grant the service connection the appropriate RBAC role (Key Vault Secrets Officer or Key Vault Secrets User based on your scenario)
+- Create your variable group and link your key vault
+
 >[!NOTE]
 >Your service connection must have at least **Get** and **List** permissions on the key vault, which you can authorize in the preceding steps. You can also provide these permissions from the Azure portal by following these steps:
 >
