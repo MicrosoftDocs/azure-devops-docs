@@ -15,8 +15,6 @@ The Azure Pipelines agent ships with several versions of Node.js libraries to su
 
 ## Node.js version support
 
-The Azure Pipelines Agent will include alternate long term support (LTS) versions of Node.js starting from the upcoming release of Azure Pipeline Agent with Node.js 24. Newer aternate versions of Node.js starting with Node.js 28 will be added to the agent as they become LTS, and older versions will be deprecated and removed based on the official [Node.js support schedule](https://nodejs.org/en/about/releases/).
-
 The following table lists the Node.js versions that are supported in Azure Pipelines, along with their end-of-support dates and removal dates.
 
 | Node.js version | End of support in Azure Pipelines | Removal date in Azure Pipelines |
@@ -29,6 +27,8 @@ The following table lists the Node.js versions that are supported in Azure Pipel
 
 - **End of support in Azure Pipelines** - when the end-of-support date is reached, Node.js versions will not be updated in Agents. Pipelines would emit warnings long before the end of support dates to inform on the same.
 - **Removal date in Azure Pipelines** - when the removal date is reached, the Node.js version will be removed from new agent versions, and tasks that require these Node.js versions may fail to run. The **removal date** will always be at least six months after the **end of support** date.
+
+The Azure Pipelines Agent will include alternate long term support (LTS) versions of Node.js starting with the upcoming release of Azure Pipeline Agent with Node.js 24. Newer aternate versions of Node.js starting with Node.js 28 will be added to the agent as they become LTS, and older versions will be deprecated and removed based on the official [Node.js support schedule](https://nodejs.org/en/about/releases/).
 
 <a name="note1"></a>
 <sup>1</sup>The end-of-support and removal dates for Node.js 24 are aligned with the official [Node.js support schedule](https://nodejs.org/en/about/releases/) as of November 2025. These dates are subject to change based on future announcements from the Node.js team.
