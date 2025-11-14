@@ -26,7 +26,7 @@ Managed DevOps Pools supports two types of networking configurations:
 By default, all pools use a Microsoft-provided virtual network, which restricts all inbound traffic and has the following outbound traffic configuration options.
 
 1. Default outbound access connectivity is the current default, which allows all outbound traffic using a Microsoft-provided IP address. [Default outbound access for VMs in Azure is scheduled to be retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). When default outbound access is retired, pools will be configured with one static IP address by default.
-1. Instead of using default outbound access, you can configure your pool to use up to 16 static outbound IP addresses. Managed DevOps Pools will create a NAT gateway in the same region as your pool to provide the IP addresses. This configuration enables you to allowlist specific IP addresses on external services that your pipelines need to access.
+1. Instead of using default outbound access, you can configure your pool to use up to four static outbound IP addresses. Managed DevOps Pools will create a NAT gateway in the same region as your pool to provide the IP addresses. This configuration enables you to allowlist specific IP addresses on external services that your pipelines need to access.
   - The NAT gateway incurs additional Azure costs. You can model how much it will cost by using the Azure cost calculator. For more information, see [Azure NAT Gateway pricing](https://azure.microsoft.com/pricing/details/azure-nat-gateway/).
 
 >[!IMPORTANT]
@@ -34,7 +34,11 @@ By default, all pools use a Microsoft-provided virtual network, which restricts 
 
 #### [Azure portal](#tab/azure-portal/)
 
-This feature is in preview and isn't yet available to configure in the Azure portal.
+> [!NOTE]
+> The static public IP addresses feature has been deployed and is available when using ARM templates, Azure CLI, and Bicep, and is deploying out to the Azure portal. If you don't see the option in the portal yet, you can use one of the other methods described below.
+
+:::image type="content" source="./media/configure-networking/ip-address-settings.png" alt-text="Screenshot of IP address settings.":::
+
 
 #### [ARM template](#tab/arm/)
 
