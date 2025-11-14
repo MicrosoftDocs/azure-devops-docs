@@ -145,7 +145,7 @@ In the following example, a pool is configured for all projects in a single orga
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
+            "apiVersion": "2025-09-20",
             "location": "eastus",
             "properties": {
                 ...
@@ -250,7 +250,7 @@ In the following example, the **Maximum agents** value is `4`.
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
+            "apiVersion": "2025-09-20",
             "location": "eastus",
             "properties": {
                 ...
@@ -318,7 +318,7 @@ You can configure agent size by using the `sku` property in the `fabricProfile` 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
+            "apiVersion": "2025-09-20",
             "location": "eastus",
             "properties": {
                 ...
@@ -417,7 +417,7 @@ In the following example, a **Standard** OS disk type is specified:
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
+            "apiVersion": "2025-09-20",
             "location": "eastus",
             "properties": {
                 ...

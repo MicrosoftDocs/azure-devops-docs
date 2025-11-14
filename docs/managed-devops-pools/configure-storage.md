@@ -42,7 +42,7 @@ You can configure additional disk storage in an Azure Resource Manager template 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
+            "apiVersion": "2025-09-20",
             "location": "eastus",
             "properties": {
                 ...

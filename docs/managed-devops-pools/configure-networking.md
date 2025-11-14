@@ -31,18 +31,30 @@ By default, all pools use a Microsoft-provided virtual network, which restricts 
 
 #### ARM template
 
-You can configure the static IP address count by specifying a `staticIpAddressCount` in the `networkProfile` section under `fabricProfile` when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. To use default outbound access, omit the `networkProfile` property when you create or update a pool.
+You can configure the static IP address count by specifying a `staticIpAddressCount` in the [networkProfile](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template#networkprofile-1) section under `fabricProfile` when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. To use default outbound access, omit the `networkProfile` property when you create or update a pool.
 
 > [!NOTE]
 > The `staticIpAddressCount` property is available starting with API version `2025-09-20`.
 
-```azurecli
-az mdp pool create \
-   --fabric-profile fabric-profile.json
-   # other parameters omitted for space
+The following example shows the `networkProfile` section of the **fabric-profile.json** file with one static IP address configured.
+
+```json
+{
+    "name": "MyManagedDevOpsPool",
+    "type": "Microsoft.DevOpsInfrastructure/pools",
+    "apiVersion": "2025-09-20",
+    "location": "eastus",
+    "properties": {
+        ...
+        "fabricProfile": {
+            "networkProfile": {
+              "subnetId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet",
+            }
+        }
+    }
+}
 ```
 
-The following example shows the `networkProfile` section of the **fabric-profile.json** file with one static IP address configured.
 
 ```json
 {
@@ -168,7 +180,7 @@ If you're using Azure Resource Manager templates (ARM templates), add a `network
 {
     "name": "MyManagedDevOpsPool",
     "type": "Microsoft.DevOpsInfrastructure/pools",
-    "apiVersion": "2025-01-21",
+    "apiVersion": "2025-09-20",
     "location": "eastus",
     "properties": {
         ...

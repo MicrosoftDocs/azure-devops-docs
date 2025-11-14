@@ -44,7 +44,7 @@ You can configure organizations in the `organizationProfile` property of the Man
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
+            "apiVersion": "2025-09-20",
             "location": "eastus",
             "properties": {
             ...
@@ -404,7 +404,7 @@ You can configure interactive mode in the `osProfile` section of the `fabricProf
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
+            "apiVersion": "2025-09-20",
             "location": "eastus",
             "properties": {
             ...
@@ -664,7 +664,7 @@ You can configure Azure Key Vault in the `osProfile` section of the `fabricProfi
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
+            "apiVersion": "2025-09-20",
             "location": "eastus",
             "properties": {
             ...
