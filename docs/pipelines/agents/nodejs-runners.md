@@ -15,7 +15,7 @@ The Azure Pipelines agent ships with several versions of Node.js libraries to su
 
 ## Node.js version support
 
-Azure Pipelines will support alternate long term support (LTS) versions of Node.js starting from the upcoming release of Node.js 24. It will be only be supported untill the official support date by Node.js.
+The Azure Pipelines Agent will include alternate long term support (LTS) versions of Node.js starting from the upcoming release of Azure Pipeline Agent with Node.js 24. Newer aternate versions of Node.js starting with Node.js 28 will be added to the agent as they become LTS, and older versions will be deprecated and removed based on the official [Node.js support schedule](https://nodejs.org/en/about/releases/).
 
 The following table lists the Node.js versions that are supported in Azure Pipelines, along with their end-of-support dates and removal dates.
 
