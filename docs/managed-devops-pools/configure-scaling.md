@@ -81,7 +81,7 @@ The following example shows the contents of the **agent-profile.json** file.
 You can configure agents by using the `agentProfile` property in the Managed DevOps Pools resource. The following example specifies a `Stateless` agent.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -155,7 +155,7 @@ The following example shows the contents of the `agent-profile.json` file.
 #### [Bicep](#tab/bicep/)
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -269,7 +269,7 @@ The following example shows the contents of the `agent-profile.json` file:
 You can configure standby agents by using the `resourcePredictionsProfile` section of the `agentProfile` property. Use the `"kind": "Manual"` setting to configure a start from scratch, weekday scheme, or all-week scheme, and specify the details of the scheme in the `resourcePredictions` section. To configure automatic standby agents, use the `kind: 'Automatic'` setting. Disable standby agents by omitting the `ResourcePredictionsProfile` section. See the following sections for details on how to configure each scaling type.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -622,7 +622,7 @@ To schedule a standby agent to be available starting at `09:00:00` on the specif
 You can specify manual standby agent provisioning in the `resourcePredictionsProfile` section of `agentProfile`. You can configure the details in the `resourcePredictions` section:
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -861,7 +861,7 @@ The following example shows how to configure a manual scheme with one agent prov
 #### [Bicep](#tab/bicep/)
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -1003,7 +1003,7 @@ The following example configures four agents to be used during working hours, an
 #### [Bicep](#tab/bicep/)
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -1111,7 +1111,7 @@ If you choose the all-week scheme, you can specify the number of agents that you
 #### [Bicep](#tab/bicep/)
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -1193,7 +1193,7 @@ If you don't know your usage patterns and want to rely on automatic forecasting 
 #### [Bicep](#tab/bicep/)
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {

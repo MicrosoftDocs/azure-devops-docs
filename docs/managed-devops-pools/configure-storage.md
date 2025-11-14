@@ -108,7 +108,7 @@ To delete the data disk configuration for an existing pool, specify an empty lis
 You can configure additional disk storage in a Bicep template in the property `dataDisks` section under `storageProfile`. In the following example, a 10-GB `Standard_LRS` disk is configured with the drive letter `Q` and no caching.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {

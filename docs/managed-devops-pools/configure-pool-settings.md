@@ -101,7 +101,7 @@ In the following example, the `devcenter-project-id` is retrieved from a **Dev C
 The `devCenterProjectResourceId` property specifies the **Dev Center project** instance.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -202,7 +202,7 @@ In the following example, a pool is configured for all projects in a single orga
 For an example that shows how to configure multiple organizations, see [Use pool in multiple organizations](./configure-security.md#use-pool-in-multiple-organizations).
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -280,7 +280,7 @@ You can configure the **Maximum agents** value by using the `maximumConcurrency`
 In the following example, the **Maximum agents** value is `4`.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -363,7 +363,7 @@ The following example shows the `sku` section of the `fabric-profile.json` file.
 You can configure the agent size by using the `sku` property in the `fabricProfile` section. In the following example, a `Standard_D2ads_v5` VM size is specified.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
@@ -465,7 +465,7 @@ You can configure **OS disk type** by using the `osDiskStorageAccountType` prope
 Select **Standard**, **StandardSSD**, or **Premium**. In the following example, a **Standard** OS disk type is specified.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {

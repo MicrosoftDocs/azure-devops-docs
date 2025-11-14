@@ -179,7 +179,7 @@ You can configure images in the `fabricProfile` section of the Managed DevOps Po
 The following example specifies three images. For more information on the schema for images, see the following sections in this article.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {

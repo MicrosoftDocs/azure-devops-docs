@@ -224,7 +224,7 @@ The following example shows the `networkProfile` section of the **fabric-profile
 To use Bicep, add a `networkProfile` property in the `fabricProfile` section. Add a `subnetId` property under `networkProfile` with the resource ID of your subnet.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'MyManagedDevOpsPool'
   location: 'eastus'
   properties: {
