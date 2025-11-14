@@ -1,16 +1,17 @@
 ---
-title: Node.js runners in Agent
+title: Node.js runners in Azure Pipelines Agent
 ms.topic: concept-article
 description: Learn about node.js task runners in Azure Pipelines.
-ms.date: 11/12/2025
+ms.date: 11/14/2025
 monikerRange: '<= azure-devops'
 ---
 
-# Node.js runners in Agent
+# Node.js runners in Azure Pipelines Agent
 
 The Azure Pipelines agent ships with several versions of Node.js libraries to support target tasks that may use different Node.js handlers. 
 
-**Agent will be shipped with Node.js 24 by January'2026** . Extension/Custom task authors should update/test their tasks with Node.js 24. 
+> [!NOTE]
+> The Azure Pipelines Agent will be shipped with Node.js 24 starting January 2026. Extension/custom task authors should [update/test their tasks with Node.js 24](../../extend/develop/add-build-task.md#q-how-can-i-upgrade-my-task-to-the-latest-nodejs-version). 
 
 ## Node.js version support
 
@@ -18,23 +19,22 @@ Azure Pipelines will support alternate long term support (LTS) versions of Node.
 
 The following table lists the Node.js versions that are supported in Azure Pipelines, along with their end-of-support dates and removal dates.
 
-- **End of support** - when the end-of-support date is reached, Node.js versions will not be updated in Agents. Pipelines would emit warnings long before the end of support dates to inform on the same.
-- **Removal date** - when the removal date is reached, the node.js version will be removed from new agent versions, and tasks that require these node.js versions may fail to run. The **removal date** will always be at least six months after the **end of support** date.
-
 | Node.js version | End of support in Azure Pipelines | Removal date in Azure Pipelines |
 |-----------------|-----------------------------------|---------------------------------|
-| 24 | April 2028* | October 2028*|
+| 24 (Available in agent January 2026) | April 2028<sup>1</sup> | October 2028<sup>1</sup>|
 | 20 | April 2026 | April 2027 |
 | 16 | September 2021 | November 2026 |
 | 10 | April 2021 | November 2026 |
 | 6  | April 2019 | November 2026 |
 
+- **End of support in Azure Pipelines** - when the end-of-support date is reached, Node.js versions will not be updated in Agents. Pipelines would emit warnings long before the end of support dates to inform on the same.
+- **Removal date in Azure Pipelines** - when the removal date is reached, the node.js version will be removed from new agent versions, and tasks that require these node.js versions may fail to run. The **removal date** will always be at least six months after the **end of support** date.
 
 ## Removal date for Node.js 6, 10, and 16
 
 Node.js 6, 10, and 16 have been unsupported in pipelines since their respective end-of-support dates, and pipelines with tasks dependent on these Node.js versions emit warnings when they are run. However, to provide customers with sufficient time to migrate their custom tasks to a supported Node.js version, we have extended the removal date to November 2026.
 
-Please refer the [steps](https://aka.ms/node-runner-guidance) to update/test your custom tasks to the latest version of Node.js.
+For information on updating and testing your custom tasks to the current version of Node.js, see [How can I upgrade my task to the latest Node.js version](../../extend/develop/add-build-task.md#q-how-can-i-upgrade-my-task-to-the-latest-nodejs-version).
 
 ## How to run tasks on unsupported Node.js versions
 
