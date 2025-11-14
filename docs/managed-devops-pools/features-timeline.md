@@ -16,8 +16,6 @@ The following section describes new features in development for Managed DevOps P
 
 * **Log analytics**: Managed DevOps Pools is adding support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode). **Planned for October 2025.**
 
-* **Public Static IP**: We're adding support for public static IP addresses in Managed DevOps Pools to enable access to external resources once [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). This change with Azure will affect Managed DevOps Pools, Azure Virtual Machine Scale Set agent pools, and self-hosted pools that will create a new virtual network and they will not be able to access anything outside the agent without infrastructure like a NAT gateway. New Managed DevOps Pools instances created after September 30, 2025 will be created with a NAT gateway by default and it will incur Azure costs associated. You can model how much it will cost by using the Azure cost calculator. **Planned for October 2025**. 
-
 * **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for October 2025.**
 
 * **Pool Alias**: We're adding the ability to add an Azure DevOps Pool name in addition to the Azure resource name to address [this ask from our community](https://developercommunity.visualstudio.com/t/Managed-Devops-Pools-Custom-agent-pool/10834336). **Planned for October 2025**.
@@ -29,6 +27,13 @@ The following section describes new features in development for Managed DevOps P
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for early 2026.**
 
 * **Custom Startup Script**: We are adding the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they are assigned to an agent, to enable scenarios such as installing Trusted root CAs, setting environment, etc. **Planned for early 2026**.
+
+## November 2025
+
+* **Public Static IP**: We've added support for public static IP addresses in Managed DevOps Pools to enable access to external resources, to prepare for when [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). This change with Azure will affect Managed DevOps Pools, Azure Virtual Machine Scale Set agent pools, and self-hosted pools that will create a new virtual network and they will not be able to access anything outside the agent without infrastructure like a NAT gateway. 
+
+When [Default outbound access for VMs in Azure is retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access), all Managed DevOps Pools using a private isolated network will have one static IP address assigned by default. This will incur additional Azure costs for the NAT gateway. For more information, see [Configure Managed DevOps Pools networking: 
+Isolated virtual network](./configure.md#isolated-virtual-network).
 
 ## October 2025
 
