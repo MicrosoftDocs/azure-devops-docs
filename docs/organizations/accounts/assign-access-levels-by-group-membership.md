@@ -7,7 +7,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 11/12/2025
+ms.date: 11/14/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -15,9 +15,9 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure DevOps provides group-based access levels for Microsoft Entra groups and Azure DevOps groups, allowing you to manage permissions efficiently by assigning access levels to entire groups of users. This article explains how to add a group rule to assign an access level to a group of users. Azure DevOps resources are assigned to all members of a group.
+Azure DevOps provides group-based access levels for Microsoft Entra groups and Azure DevOps groups, allowing you to manage permissions efficiently by assigning access levels to entire groups of users. This article explains how to add a group rule to assign an access level to a group of users.
 
-Assign a group rule to manage both access levels and project memberships. Assign a group rule to manage both access levels and project memberships. When a user belongs to multiple rules or Microsoft Entra groups with different access levels, they receive the highest level. 
+Assign a group rule to manage both access levels and project memberships. When a user belongs to multiple rules or Microsoft Entra groups with different access levels, they receive the highest level. 
 
 **Example:** If a user belongs to two Microsoft Entra groups—one assigning Stakeholder and the other Basic—the user receives Basic access. 
 
