@@ -37,6 +37,10 @@ By default, all pools use a Microsoft-provided virtual network, which restricts 
 > [!NOTE]
 > The static public IP addresses feature has been deployed and is available when using ARM templates, Azure CLI, and Bicep, and is deploying out to the Azure portal. If you don't see the option in the portal yet, you can configure this setting using ARM templates, Azure CLI, or Bicep.
 
+To configure IP Address Settings when creating a pool, go to the **Networking** tab. To update an existing pool, go to **Settings** > **Networking**.
+
+Choose **None** for **Route through public IP addresses** to use default outbound access. Choose **Microsoft Provided IPs** to configure static outbound IP addresses and specify the number of static IP addresses you want to use. Managed DevOps Pools creates a NAT gateway for you and manages the IP addresses.
+
 :::image type="content" source="./media/configure-networking/ip-address-settings.png" alt-text="Screenshot of IP address settings.":::
 
 
