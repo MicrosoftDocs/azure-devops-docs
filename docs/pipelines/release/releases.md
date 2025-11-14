@@ -1,6 +1,6 @@
 ---
 title: Create Classic release pipelines
-description: Learn how to create Classic release definitions in Azure pipelines.
+description: Learn how to create Classic release definitions in Azure Pipelines.
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.topic: tutorial
 ms.author: rabououn
