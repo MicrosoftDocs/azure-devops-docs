@@ -84,18 +84,9 @@ After you install the agent on a machine, you can install any other software on 
 
 The agent ships with several versions of Node.js libraries to support target tasks that use different Node.js handlers.
 
-All official Azure DevOps tasks use Node.js 20 library as a universal handler. However, customers might still use custom tasks that use the end-of-support Node.js 6, Node.js 10, or Node.js 16 library. To support backward compatibility with a node that reached end of support, we provide the following self-service methods so that you can manually install the designated Node.js runner:
+All official Azure DevOps tasks use Node.js 20 library as a universal handler. However, customers might still use custom tasks that use the end-of-support Node.js versions. Extension/custom task authors should [update/test their tasks with current Node.js versions](../../extend/develop/add-build-task.md#q-how-can-i-upgrade-my-task-to-the-latest-nodejs-version).
 
-* Manually install the Node.js 6 or Node.js 10 runner. For more information, see [Node.js runner support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md).
-* Use the [`NodeTaskRunnerInstaller@0`](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0) task in your pipelines that require the outdated Node.js 6 or Node.js 10 library.
-* Install an agent package that includes Node.js 6 and Node.js 10 libraries.
-  
-  Azure Pipelines provides two versions of agent packages:
-
-  * `vsts-agent-\`: Packages that support Node.js 6 and Node.js 10 libraries.
-  * `pipelines-agent-\`: Packages that don't support Node.js 6 and Node.js 10 libraries. In the future, this version of the package becomes the default agent package.
-
-  If your tasks don't require the Node.js 6 or Node.js 10 library, and you don't want to install the Node.js 6 or Node.js 10 library on your agent machine, you can install the agent from [this documentation, under Alternate Agent Downloads](https://github.com/microsoft/azure-pipelines-agent/releases).
+For more information on the Node.js runner lifecycle in Azure Pipelines, see [Node.js runners in Azure Pipelines Agent](nodejs-runners.md). 
 
 ## <a name = "azure-virtual-machine-scale-set-agents"></a> Azure Virtual Machine Scale Sets agents
 
