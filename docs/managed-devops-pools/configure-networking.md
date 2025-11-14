@@ -30,11 +30,11 @@ By default, all pools use a Microsoft-provided virtual network, which restricts 
   - The NAT gateway incurs additional Azure costs. You can model how much it will cost by using the Azure cost calculator. For more information, see [Azure NAT Gateway pricing](https://azure.microsoft.com/pricing/details/azure-nat-gateway/).
 
 >[!IMPORTANT]
-> If you modify the static IP address count after the pool is created, the IP addresses are subject to change during the update operation. You need to update your allow list on external services after the update operation completes.
+> If you modify the static IP address count after the pool is created, the IP addresses are subject to change, and you'll need to obtain the new IP addresses and update your allowlist on external services after the update operation completes.
 
 #### ARM template
 
-You can configure the static IP address count by specifying a `staticIpAddressCount` in the [networkProfile](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template#networkprofile-1) section under `fabricProfile` when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool. To use default outbound access, omit the `networkProfile` property when you create or update a pool.
+You can configure the static IP address count by specifying a `staticIpAddressCount` in the [networkProfile](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template#networkprofile-1) section under `fabricProfile` when you create or update a pool. To use default outbound access, omit the `networkProfile` property when you create or update a pool.
 
 > [!NOTE]
 > The `staticIpAddressCount` property is available starting with API version `2025-09-20`.
@@ -46,7 +46,7 @@ The following example shows the `networkProfile` section with one static IP addr
     "name": "MyManagedDevOpsPool",
     "type": "Microsoft.DevOpsInfrastructure/pools",
     "apiVersion": "2025-09-20",
-    "location": "eastus",
+    ...
     "properties": {
         ...
         "fabricProfile": {
