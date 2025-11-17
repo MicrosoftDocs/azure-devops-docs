@@ -7,7 +7,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2025
+ms.date: 11/17/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -111,7 +111,7 @@ When a user has a direct assignment and a group rule grants a higher access leve
 
 #### Q: How do Visual Studio Subscriptions work with group rules?
 
-A: Visual Studio Subscribers are always directly assigned via the [Visual Studio Admin Portal](https://manage.visualstudio.com/) and take precedence in Azure DevOps over access levels assigned directly or via group rules. When you view these users from the Users Hub, the License Source always shows as Direct. The only exception is Visual Studio Professional subscribers who are assigned Basic + Test Plans. Since Basic + Test Plans provides more access in Azure DevOps, it takes precedence over a Visual Studio Professional subscription. You can't configure a group rule to assign GitHub Enterprise access because GitHub assigns that license directly through its portal. 
+A: Visual Studio Subscribers are always directly assigned via the [Visual Studio Admin Portal](https://manage.visualstudio.com/) and take precedence in Azure DevOps over access levels assigned directly or via group rules. When you view these users from the Users Hub, the License Source always shows as Direct. The only exception is Visual Studio Professional subscribers who are assigned Basic + Test Plans. Since Basic + Test Plans provides more access in Azure DevOps, it takes precedence over a Visual Studio Professional subscription. You can't configure a group rule to assign Visual Studio subscription access because Visual Studio assigns that license directly through its portal. 
 
 #### Q: How do GitHub Enterprise licenses work with group rules? 
 
