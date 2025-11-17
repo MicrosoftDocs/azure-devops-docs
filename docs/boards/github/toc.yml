@@ -6,6 +6,8 @@
   href: connect-to-github.md
 - name: Connect Azure Boards (on-premises)
   href: connect-on-premises-to-github.md
+- name: Integrate work items with GitHub Copilot
+  href: work-item-integration-github-coding-agent.md
 - name: Link GitHub commits, pull requests, & branches
   href: link-to-from-github.md
 - name: Add status badges
