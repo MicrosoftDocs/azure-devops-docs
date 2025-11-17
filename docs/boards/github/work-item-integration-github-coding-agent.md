@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 11/14/2025
+ms.date: 11/17/2025
 ---
 
 # Integrate work items with GitHub Copilot
@@ -37,6 +37,7 @@ This integration allows you to:
 | **Repository** | GitHub repository (not Azure Repos) with appropriate permissions |
 | **Authentication** | GitHub App authentication configured between Azure DevOps and GitHub (personal access tokens not supported) |
 | **Permissions** | **Contribute** access in Azure DevOps to work items and ability to link artifacts |
+| Azure Boards connection | [Connect Azure Boards to GitHub](connect-to-github.md)
 
 ## Supported work item types
 
@@ -45,7 +46,7 @@ The GitHub Copilot integration supports the following work item types:
 - **Bug**
 - **Task** 
 - **Feature**
-- **Epic** (with appropriate breakdown)
+- **Epic**
 
 Other work item types might work but aren't officially supported for delegation to GitHub Copilot.
 
