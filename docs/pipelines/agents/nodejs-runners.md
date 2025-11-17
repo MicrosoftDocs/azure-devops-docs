@@ -55,6 +55,6 @@ To maintain backward compatibility for custom tasks using a Node.js version that
   * `pipelines-agent-\`: Packages that don't support Node.js 6 and Node.js 10 libraries. In the future, this version of the package becomes the default agent package.
  
   > [!NOTE]
-> pipelines-agent will not be shipped with Node.js 16 starting January 2026. Extension/custom task authors should [update/test their tasks with Node.js 24](../../extend/develop/add-build-task.md#q-how-can-i-upgrade-my-task-to-the-latest-nodejs-version).
+  > pipelines-agent will not be shipped with Node.js 16 starting January 2026. Extension/custom task authors should [update/test their tasks with Node.js 24](../../extend/develop/add-build-task.md#q-how-can-i-upgrade-my-task-to-the-latest-nodejs-version).
 
   If your tasks don't require the Node.js 6 or Node.js 10 library, and you don't want to install the Node.js 6 or Node.js 10 library on your agent machine, you can install the agent from [this documentation, under Alternate Agent Downloads](https://github.com/microsoft/azure-pipelines-agent/releases).
