@@ -28,14 +28,14 @@ The following table lists the Node.js versions that are supported in Azure Pipel
 - **End of support in Azure Pipelines** - when the end-of-support date is reached, the Node.js version will not be updated in the Azure Pipelines Agent. Pipelines will emit warnings to inform users of any pending end-of-support dates. The end-of-support date is based on the official [Node.js support schedule](https://nodejs.org/en/about/releases/).
 - **Removal date in Azure Pipelines** - when the removal date is reached, the Node.js version will be removed from new agent versions, and tasks that require these Node.js versions may fail to run. The removal date will always be at least six months after the end-of-support date.
 
-The Azure Pipelines Agent will include alternate long term support (LTS) versions of Node.js starting with the upcoming release of Azure Pipeline Agent with Node.js 24. Newer alternate versions of Node.js starting with Node.js 28 will be added to the agent as they become LTS.
+The Azure Pipelines Agent will include only alternate long term support (LTS) versions of Node.js starting with the upcoming release of Azure Pipeline Agent with Node.js 24.
 
 <a name="note1"></a>
-<sup>1</sup>The end-of-support and removal dates for Node.js 24 are aligned with the official [Node.js support schedule](https://nodejs.org/en/about/releases/) as of November 2025. These dates are subject to change based on future announcements from the Node.js team.
+<sup>1</sup>The end-of-support for Node.js 24 are aligned with the official [Node.js support schedule](https://nodejs.org/en/about/releases/) as of November 2025. These dates are subject to change based on future announcements from the Node.js team.
 
 ## Removal date for Node.js 6, 10, and 16
 
-Node.js 6, 10, and 16 have been unsupported in pipelines since their respective end-of-support dates, and pipelines with tasks dependent on these Node.js versions emit warnings when they are run. However, to provide customers with sufficient time to migrate their custom tasks to a supported Node.js version, we have extended the removal date to November 2026.
+Node.js 6, 10, and 16 have been unsupported in pipelines since their respective end-of-support dates, and pipelines with tasks dependent on these Node.js versions currently emit warnings when they are run. However, to provide customers with sufficient time to migrate their custom tasks to a supported Node.js version, we have extended the removal date to **November 2026**.
 
 For information on updating and testing your custom tasks to the current version of Node.js, see [How can I upgrade my task to the latest Node.js version](../../extend/develop/add-build-task.md#q-how-can-i-upgrade-my-task-to-the-latest-nodejs-version).
 
@@ -51,5 +51,8 @@ To support backward compatibility for custom tasks with a Node.js version that h
 
   * `vsts-agent-\`: Packages that support Node.js 6 and Node.js 10 libraries.
   * `pipelines-agent-\`: Packages that don't support Node.js 6 and Node.js 10 libraries. In the future, this version of the package becomes the default agent package.
+ 
+  > [!NOTE]
+> pipelines-agent will not be shipped with Node.js 16 starting January 2026. Extension/custom task authors should [update/test their tasks with Node.js 24](../../extend/develop/add-build-task.md#q-how-can-i-upgrade-my-task-to-the-latest-nodejs-version).
 
   If your tasks don't require the Node.js 6 or Node.js 10 library, and you don't want to install the Node.js 6 or Node.js 10 library on your agent machine, you can install the agent from [this documentation, under Alternate Agent Downloads](https://github.com/microsoft/azure-pipelines-agent/releases).
