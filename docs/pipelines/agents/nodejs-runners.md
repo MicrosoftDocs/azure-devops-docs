@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 The Azure Pipelines agent ships with several versions of Node.js libraries to support target tasks that may use different Node.js handlers. 
 
-> [NOTE]
+> [!NOTE]
 > The Azure Pipelines Agent will be shipped with Node.js 24 starting January 2026. Extension/custom task authors should [update/test their tasks with Node.js 24](../../extend/develop/add-build-task.md#q-how-can-i-upgrade-my-task-to-the-latest-nodejs-version). 
 
 ## Node.js version support
