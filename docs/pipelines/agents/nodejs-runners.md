@@ -25,8 +25,10 @@ The following table lists the Node.js versions that are supported in Azure Pipel
 | 10 | April 2021 | November 2026 |
 | 6  | April 2019 | November 2026 |
 
-- **End of support in Azure Pipelines** - when the end-of-support date is reached, the Node.js version will not be updated in the Azure Pipelines Agent. Pipelines will emit warnings to inform users of any pending end-of-support dates. The end-of-support date is based on the official [Node.js support schedule](https://nodejs.org/en/about/releases/).
+- **End of support in Azure Pipelines** - when the end-of-support date is reached, the Node.js version will not be updated in the Azure Pipelines Agent. The end-of-support date is based on the official [Node.js support schedule](https://nodejs.org/en/about/releases/).
 - **Removal date in Azure Pipelines** - when the removal date is reached, the Node.js version will be removed from new agent versions, and tasks that require these Node.js versions may fail to run. The removal date will always be at least six months after the end-of-support date.
+
+ Pipelines will emit warnings to inform users of any upcoming end-of-support or removal dates.
 
 The Azure Pipelines Agent will include only alternate long term support (LTS) versions of Node.js starting with the upcoming release of Azure Pipeline Agent with Node.js 24.
 
@@ -41,7 +43,7 @@ For information on updating and testing your custom tasks to the current version
 
 ## How to run tasks on unsupported Node.js versions
 
-To support backward compatibility for custom tasks with a Node.js version that has reached the end-of-support date, we provide the following self-service methods so that you can manually install the designated Node.js runner:
+To maintain backward compatibility for custom tasks using a Node.js version that is no longer supported or has been removed, we offer these self-service options so you can install the required Node.js runner:
 
 * Manually install the desired Node.js runner. For more information, see [Node.js runner support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md).
 * Use the [`NodeTaskRunnerInstaller@0`](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0) task in your pipelines that require an outdated Node.js library.
