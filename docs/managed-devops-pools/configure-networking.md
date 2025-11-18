@@ -34,9 +34,6 @@ By default, all pools use a Microsoft-provided virtual network, which restricts 
 
 #### [Azure portal](#tab/azure-portal/)
 
-> [!NOTE]
-> The static public IP addresses feature has been deployed and is available when using ARM templates, Azure CLI, and Bicep, and is deploying out to the Azure portal. If you don't see the option in the portal yet, you can configure this setting using ARM templates, Azure CLI, or Bicep.
-
 To configure IP Address Settings when creating a pool, go to the **Networking** tab. To update an existing pool, go to **Settings** > **Networking**.
 
 Choose **None** for **Route through public IP addresses** to use default outbound access.
