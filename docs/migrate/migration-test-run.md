@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2025
+ms.date: 11/17/2025
 ms.custom: sfi-image-nochange
 ---
 
@@ -185,7 +185,7 @@ Azure DevOps Services is available in several [Azure geographical locations](htt
 | United Kingdom | United Kingdom South | UKS| 
 | Australia | Australia East | EAU |
 | South America | Brazil South | SBR |
-| Asia Pacific | South India | MA |
+| Asia Pacific | Central India | MA |
 | Asia Pacific | Southeast Asia (Singapore) | SEA |
 | Canada | Central Canada | CC |
 
@@ -258,7 +258,7 @@ If Microsoft Entra Connect isn't configured, all users in the identity map log f
 
 Running a migration with all historical identities has consequences that need to be considered carefully. Only teams with a few users and for which the cost of setting up Microsoft Entra Connect is deemed too high should consider. 
 
-To migration all identities as historical, follow the steps outlined in later sections. When you queue a migration, the identity used to queue the migration is bootstrapped into the organization as the organization owner. All other users are imported as historical. Organization owners can then [add the users back in](../organizations/accounts/add-organization-users.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) by using their Microsoft Entra identity. The added users are treated as new users. They don't* own any of their history, and there's no way to reparent this history to the Microsoft Entra identity. However, users can still look up their premigration history by searching for their `\<domain>\<Active Directory username>`.
+To migration all identities as historical, follow the steps outlined in later sections. When you queue a migration, the identity used to queue the migration is bootstrapped into the organization as the organization owner. All other users are imported as historical. Organization owners can then [add the users back in](../organizations/accounts/add-organization-users.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) by using their Microsoft Entra identity. The added users are treated as new users. They don't own any of their history, and there's no way to reparent this history to the Microsoft Entra identity. However, users can still look up their premigration history by searching for their `\<domain>\<Active Directory username>`.
 
 The Data Migration Tool displays a warning if it detects the complete historical identities scenario. If you decide to go down this migration path, you need to consent in the tool to the limitations. 
 
@@ -439,7 +439,7 @@ Azure DevOps Services is available in multiple [geographical locations](https://
 | United Kingdom | United Kingdom South | 
 | Australia East | Australia East |
 | Brazil South | Brazil South |
-| India South | India South |
+| India Central | India Central |
 | Canada Central | Canada Central |
 | Asia Pacific (Singapore) | Asia Pacific (Singapore) |
 
@@ -513,7 +513,7 @@ Your team is now ready to begin the process of running a migration. We recommend
 
 > [!NOTE]
 > - If you need to repeat a completed production-run migration for a collection, such as due to a rollback, contact Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before you queue another migration.
-- Azure administrators can prevent users from creating new Azure DevOps organizations. If the Microsoft Entra tenant policy is turned on, your migration fails to finish. Before you begin, verify that the policy isn't set or that there's an exception for the user that is performing the migration. For more information, see [Restrict organization creation via Microsoft Entra tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+- Azure administrators can prevent users from creating new Azure DevOps organizations. If the Microsoft Entra tenant policy is turned on, your migration fails to finish. Before you begin, verify that the policy isn't set or that there's an exception for the user that's performing the migration. For more information, see [Restrict organization creation via Microsoft Entra tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md).
 - Azure DevOps Services doesn't support per-pipeline retention policies, and they aren't carried over to the hosted version.
 
 ### Considerations for rollback plans
