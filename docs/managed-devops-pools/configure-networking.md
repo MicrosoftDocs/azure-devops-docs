@@ -138,7 +138,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
 > [!NOTE]
 > There is a known issue: if your pool is configured with a [managed identity](./configure-identity.md), API calls won't return the `ipAddresses` property unless the DevOpsInfrastructure service principal is assigned the [Managed Identity Operator](/azure/role-based-access-control/built-in-roles/identity#managed-identity-operator) role on the managed identity. For detailed steps, see [Assign Azure roles by using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 >
-> Granting this role is not required for the static IP addresses to be functional. Without this role assignment, you can still find the assigned IP addresses by viewing them on the **Networking** page in the Azure portal, or by running a pipeline in the pool and checking the **IP Addresses** value in the Managed DevOps Pool section of the **Initialize job** logs. For more information, see [View and download logs](../pipelines//troubleshooting/review-logs.md#view-and-download-logs).
+> Granting this role is not required for the static IP addresses to be functional. Without this role assignment, you can still find the assigned IP addresses by viewing them on the **Networking** page in the Azure portal.
 
 <a name="add-agents-to-your-own-virtual-network"></a>
 
