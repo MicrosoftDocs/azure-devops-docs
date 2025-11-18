@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 11/14/2025
+ms.date: 11/18/2025
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---

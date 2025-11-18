@@ -1,7 +1,7 @@
 ---
 title: Configure pool settings
 description: Learn how to configure settings in Managed DevOps Pools.
-ms.date: 08/27/2025
+ms.date: 11/18/2025
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
