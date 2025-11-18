@@ -78,16 +78,21 @@ You can use [general functions](expressions.md#functions) in your templates. You
 
 ```yaml
 parameters:
-- name: 'restoreProjects'
-  default: ''
+- name: 'customVersion'
   type: string
-- name: 'buildProjects'
   default: ''
+- name: 'defaultVersion'
   type: string
+  default: '1.0.0'
 
 steps:
-- script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
+- script: echo Version is ${{ coalesce(parameters.customVersion, parameters.defaultVersion) }}
 ```
+
+> [!NOTE]
+> String parameters with `default: ''` (empty string) behave differently depending on how you trigger the pipeline:
+> * **In the pipeline editor**: You can run the pipeline directly and the empty string default is respected, allowing `coalesce` to fall back to the next value.
+> * **In the Run Pipeline pane**: Azure DevOps requires you to provide a non-empty value for parameters with empty string defaults, preventing `coalesce` from falling back. 
 
 ### Insertion
 
