@@ -295,11 +295,11 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
 <a name = "restricting-outbound-connectivity"></a>
 ## Restrict outbound connectivity
 
-If you have systems in place on your network (for example, network security groups or firewalls) that restrict outbound connectivity, you need to add certain endpoints to an allow list to fully support Managed DevOps Pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints that you need for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
+If you have systems in place on your network (for example, network security groups or firewalls) that restrict outbound connectivity, you need to add certain endpoints to an allowlist to fully support Managed DevOps Pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints that you need for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
 
 ### Required endpoints for starting Managed DevOps Pools
 
-If you don't add these endpoints to an allow list, machines fail to come online as part of the Managed DevOps Pools service, and you can't run pipelines on the pool:
+If you don't add these endpoints to an allowlist, machines fail to come online as part of the Managed DevOps Pools service, and you can't run pipelines on the pool:
 
 - `*.prod.manageddevops.microsoft.com`: Managed DevOps Pools endpoint used to communicate with the Managed DevOps Pools service.
 - `rmprodbuilds.azureedge.net`: Used to download the Managed DevOps Pools worker binaries and startup scripts. The agent portion of the worker binaries is downloaded from `rm-agent.prod.manageddevops.microsoft.com` (formerly downloaded from `agent.prod.manageddevops.microsoft.com`), which is covered by the previous required `*.prod.manageddevops.microsoft.com` entry.
@@ -307,14 +307,14 @@ If you don't add these endpoints to an allow list, machines fail to come online 
 
 ### Required endpoints for connecting to Azure DevOps
 
-If you don't add these endpoints to an allow list, machines might come online and might even go to an *allocated* state but fail to communicate with Azure DevOps, because the Azure DevOps Services task agent either can't connect or can't start.
+If you don't add these endpoints to an allowlist, machines might come online and might even go to an *allocated* state but fail to communicate with Azure DevOps, because the Azure DevOps Services task agent either can't connect or can't start.
 
 - `download.agent.dev.azure.com`: The Azure DevOps agent's content delivery network (CDN) location, used to download the Azure DevOps agent (formerly `vstsagentpackage.azureedge.net`; for more information, see [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/)).
 - `dev.azure.com`: Required to handle communication with Azure DevOps.
 
 ### Required endpoints for Linux machines
 
-These endpoints are required to spin up Ubuntu machines, but aren't necessary if a pool is only using Windows. When you set up the Azure DevOps task agent, required packages are added and an `apt-get` command is run. This process fails if the following endpoints aren't added to an allow list.
+These endpoints are required to spin up Ubuntu machines, but aren't necessary if a pool is only using Windows. When you set up the Azure DevOps task agent, required packages are added and an `apt-get` command is run. This process fails if the following endpoints aren't added to an allowlist.
 
 - `azure.archive.ubuntu.com`: Provisioning Linux machines. This endpoint is HTTP (port 80), not HTTPS (port 443).
 - `www.microsoft.com`: Provisioning Linux machines.
@@ -341,11 +341,11 @@ Azure virtual machines (VMs) might route traffic to certain Azure features throu
 
 1. [Configure Azure traffic to run through service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview):
 
-   You can route traffic directly through Azure to avoid adding throughput to your network security groups or firewalls. You don't need to add the domains listed in the following option to an allow list.
+   You can route traffic directly through Azure to avoid adding throughput to your network security groups or firewalls. You don't need to add the domains listed in the following option to an allowlist.
 
    For example, you can use the [data disk](./configure-storage.md) feature to involve network calls to Azure Storage. When you enable **Microsoft.Storage** service endpoint on your network, traffic routes directly through Azure, which avoids your network rules and reduces load.
 
-1. To avoid routing traffic through service endpoints, add the `md-*.blob.storage.azure.net` domain to your allow list. This domain is required for [configuring a data disk](./configure-storage.md).
+1. To avoid routing traffic through service endpoints, add the `md-*.blob.storage.azure.net` domain to your allowlist. This domain is required for [configuring a data disk](./configure-storage.md).
 
 ### Akamai CDN delivery IPs
 
@@ -355,7 +355,7 @@ On May 1, 2025, Azure DevOps CDN assets transitioned to a solution served by Aka
 - [Azure CDN from Edgio retirement FAQ](/previous-versions/azure/cdn/edgio-retirement-faq)
 - [Akamai TechDocs: Origin IP access control list](https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server)
 
-If you configure your Azure DevOps pipeline to run inside a container, you need to also add the source of the container image (Docker or Azure Container Registry) to an allow list.
+If you configure your Azure DevOps pipeline to run inside a container, you need to also add the source of the container image (Docker or Azure Container Registry) to an allowlist.
 
 ## Validate endpoint connectivity
 

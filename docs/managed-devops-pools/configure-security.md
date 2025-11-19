@@ -386,7 +386,7 @@ If you try to run a pipeline that isn't authorized to access your agent pool, yo
 
 ## Configure interactive mode
 
-If your tests need an interactive login for UI testing, enable interactive login by enabling the **EnableInteractiveMode** setting.
+If your tests need an interactive sign-in for UI testing, enable interactive sign-in by enabling the **EnableInteractiveMode** setting.
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -605,7 +605,7 @@ To use this feature, you must:
 
 * Configure an [identity on your pool](configure-identity.md). You must give this identity **Key Vault Secrets User** permission to fetch the secret from your key vault. To assign your identity to the **Key Vault Secrets User** role, see [Provide access to key vault keys, certificates, and secrets with an Azure role-based access control](/azure/key-vault/general/rbac-guide).
 * The principal that configures key vault integration settings (your account if you're configuring key vault settings) must have the **Key Vault Certificate User** role assignment on the key vault where the certificates are stored.
-* To enforce network isolation for your Azure Key Vault instance to only permit authorized resources access, you must add the following IP addresses to your [Azure Key Vault allow list](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips). The following IP address ranges are in an [Azure service tag](/azure/virtual-network/service-tags-overview) named **DevOpsInfrastructure**.
+* To enforce network isolation for your Azure Key Vault instance to only permit authorized resources access, you must add the following IP addresses to your [Azure Key Vault allowlist](/azure/key-vault/general/network-security#key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips). The following IP address ranges are in an [Azure service tag](/azure/virtual-network/service-tags-overview) named **DevOpsInfrastructure**.
 
   | Location            | IP address range        |
   |---------------------|-------------------------|
