@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 11/07/2025
+ms.date: 11/18/2025
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -10,16 +10,141 @@ ms.topic: how-to
 
 You can configure Managed DevOps Pools agents to run in an isolated virtual network or in an existing virtual network. This article describes how to configure your pool to run agents in your virtual network.
 
-## Add agents to your own virtual network
+## Choose your network type
 
-You might want to add agents from Managed DevOps Pools to your own virtual network for scenarios such as:
+Managed DevOps Pools supports two types of networking configurations:
 
-- Your continuous integration and continuous delivery (CI/CD) agents need to access resources that are only available in your company network through a service like Azure ExpressRoute.
-- Your CI/CD agents need to access resources that are isolated to private endpoints.
-- You want to network isolate your CI/CD infrastructure by bringing your own virtual network with company-specific firewall rules.
-- Any other unique use cases that can't be achieved by out-of-the-box Managed DevOps Pools networking features.
+- [Isolated virtual network](#isolated-virtual-network): Each pool gets its own isolated virtual network that's created and managed by the Managed DevOps Pools service.
+- [Agents injected into existing virtual network](#agents-injected-into-existing-virtual-network): You can bring your own virtual network and subnet. All virtual machines created for the pool will use that subnet, and no other resources will be able to use the subnet. You might want to add agents from Managed DevOps Pools to your own virtual network for scenarios such as:
+  - Your continuous integration and continuous delivery (CI/CD) agents need to access resources that are only available in your company network through a service like Azure ExpressRoute.
+  - Your CI/CD agents need to access resources that are isolated to private endpoints.
+  - You want to network isolate your CI/CD infrastructure by bringing your own virtual network with company-specific firewall rules.
+  - Any other unique use cases that can't be achieved by out-of-the-box Managed DevOps Pools networking features.
 
-You can add your pool's agents to your virtual network by using the following steps:
+## Isolated virtual network
+
+By default, all pools use a Microsoft-provided virtual network, which restricts all inbound traffic and has the following outbound traffic configuration options.
+
+1. Default outbound access connectivity is the current default, which allows all outbound traffic using a Microsoft-provided IP address. [Default outbound access for VMs in Azure is scheduled to be retired](https://azure.microsoft.com/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access). When default outbound access is retired, pools will be configured with one static IP address by default.
+1. Instead of using default outbound access, you can configure your pool to use up to 16 static outbound IP addresses. Managed DevOps Pools will create a NAT gateway in the same region as your pool to provide the IP addresses. This configuration enables you to allowlist specific IP addresses on external services that your pipelines need to access.
+   - The NAT gateway incurs additional Azure costs. You can model how much it will cost by using the Azure cost calculator. For more information, see [Azure NAT Gateway pricing](https://azure.microsoft.com/pricing/details/azure-nat-gateway/).
+
+>[!IMPORTANT]
+> If you modify the static IP address count after the pool is created, the IP addresses are subject to change, and you'll need to obtain the new IP addresses and update your allowlist on external services after the update operation completes.
+
+#### [Azure portal](#tab/azure-portal/)
+
+To configure IP Address Settings when creating a pool, go to the **Networking** tab. To update an existing pool, go to **Settings** > **Networking**.
+
+Choose **None** for **Route through public IP addresses** to use default outbound access.
+
+Choose **Microsoft Provided IPs** to configure static outbound IP addresses and specify the number of static IP addresses you want to use. Managed DevOps Pools creates a NAT gateway for you and manages the IP addresses.
+
+:::image type="content" source="./media/configure-networking/ip-address-settings.png" alt-text="Screenshot of IP address settings.":::
+
+
+#### [ARM template](#tab/arm/)
+
+You can configure the static IP address count by specifying a `staticIpAddressCount` in the [networkProfile](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-arm-template#networkprofile-1) section under `fabricProfile` when you create or update a pool.
+
+To use default outbound access, omit the `networkProfile` property when you create or update a pool.
+
+> [!NOTE]
+> The `staticIpAddressCount` property is available starting with API version `2025-09-20`.
+
+The following example shows the `networkProfile` section with one static IP address configured.
+
+```json
+{
+    "name": "MyManagedDevOpsPool",
+    "type": "Microsoft.DevOpsInfrastructure/pools",
+    "apiVersion": "2025-09-20",
+    ...
+    "properties": {
+        ...
+        "fabricProfile": {
+            "networkProfile": {
+              "staticIpAddressCount": 1
+            }
+        }
+    }
+}
+```
+
+After you create or update your pool with static IP addresses configured, you can find the assigned IP addresses in the payload of the response.
+
+```json
+"networkProfile": {
+   "ipAddresses": [
+      "203.0.113.254"
+    ],
+    "staticIpAddressCount": 1
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+You can configure the `staticIpAddressCount` in the `networkProfile` property in the `fabricProfile` section when you [create](/cli/azure/mdp/pool#az-mdp-pool-create) or [update](/cli/azure/mdp/pool#az-mdp-pool-update) a pool.
+
+To use default outbound access, omit the `networkProfile` property when you create or update a pool.
+
+```azurecli
+az mdp pool create \
+   --fabric-profile fabric-profile.json
+   # other parameters omitted for space
+```
+
+The following example shows the `networkProfile` section of the **fabric-profile.json** file with one static IP address configured.
+
+```json
+{
+  "vmss": {
+    "sku": {...},
+    "images": [...],
+    "osProfile": {...},
+    "storageProfile": {...},
+    "networkProfile": {
+        "staticIpAddressCount": 1
+    }
+  }
+}
+```
+
+#### [Bicep](#tab/bicep/)
+
+To use Bicep, add a [networkProfile](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep#networkprofile) property in the `fabricProfile` section. Add a `staticIpAddressCount` property under `networkProfile` the desired count. In the following example, the pool is configured to use a single static outbound IP address.
+
+To use default outbound access, omit the `networkProfile` property when you create or update a pool.
+
+> [!NOTE]
+> The `staticIpAddressCount` property is available starting with API version `2025-09-20`.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
+  name: 'MyManagedDevOpsPool'
+  ...
+  properties: {
+    ...
+    fabricProfile: {
+      networkProfile: {
+        staticIpAddressCount: 1
+      }
+  }
+}
+```
+
+* * *
+
+> [!NOTE]
+> There is a known issue: if your pool is configured with a [managed identity](./configure-identity.md), API calls won't return the `ipAddresses` property unless the DevOpsInfrastructure service principal is assigned the [Managed Identity Operator](/azure/role-based-access-control/built-in-roles/identity#managed-identity-operator) role on the managed identity. For detailed steps, see [Assign Azure roles by using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+>
+> Granting this role is not required for the static IP addresses to be functional. Without this role assignment, you can still find the assigned IP addresses by viewing them on the **Networking** page in the Azure portal.
+
+<a name="add-agents-to-your-own-virtual-network"></a>
+
+## Agents injected into existing virtual network
+
+You can configure your pool's agents to use your virtual network by using the following steps:
 
 1. [Create or bring your virtual network and subnet](#create-or-bring-your-virtual-network-and-subnet).
 1. [Delegate the subnet to `Microsoft.DevOpsInfrastructure/pools`](#delegate-the-subnet-to-microsoftdevopsinfrastructurepools).
@@ -103,7 +228,7 @@ If you're using Azure Resource Manager templates (ARM templates), add a `network
 {
     "name": "MyManagedDevOpsPool",
     "type": "Microsoft.DevOpsInfrastructure/pools",
-    "apiVersion": "2025-01-21",
+    "apiVersion": "2025-09-20",
     "location": "eastus",
     "properties": {
         ...
@@ -147,7 +272,7 @@ The following example shows the `networkProfile` section of the **fabric-profile
 To use Bicep, add a `networkProfile` property in the `fabricProfile` section. Add a `subnetId` property under `networkProfile` with the resource ID of your subnet.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'MyManagedDevOpsPool'
   location: 'eastus'
   properties: {
@@ -170,11 +295,11 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = 
 <a name = "restricting-outbound-connectivity"></a>
 ## Restrict outbound connectivity
 
-If you have systems in place on your network (for example, network security groups or firewalls) that restrict outbound connectivity, you need to add certain endpoints to an allow list to fully support Managed DevOps Pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints that you need for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
+If you have systems in place on your network (for example, network security groups or firewalls) that restrict outbound connectivity, you need to add certain endpoints to an allowlist to fully support Managed DevOps Pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints that you need for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
 
 ### Required endpoints for starting Managed DevOps Pools
 
-If you don't add these endpoints to an allow list, machines fail to come online as part of the Managed DevOps Pools service, and you can't run pipelines on the pool:
+If you don't add these endpoints to an allowlist, machines fail to come online as part of the Managed DevOps Pools service, and you can't run pipelines on the pool:
 
 - `*.prod.manageddevops.microsoft.com`: Managed DevOps Pools endpoint used to communicate with the Managed DevOps Pools service.
 - `rmprodbuilds.azureedge.net`: Used to download the Managed DevOps Pools worker binaries and startup scripts. The agent portion of the worker binaries is downloaded from `rm-agent.prod.manageddevops.microsoft.com` (formerly downloaded from `agent.prod.manageddevops.microsoft.com`), which is covered by the previous required `*.prod.manageddevops.microsoft.com` entry.
@@ -182,14 +307,14 @@ If you don't add these endpoints to an allow list, machines fail to come online 
 
 ### Required endpoints for connecting to Azure DevOps
 
-If you don't add these endpoints to an allow list, machines might come online and might even go to an *allocated* state but fail to communicate with Azure DevOps, because the Azure DevOps Services task agent either can't connect or can't start.
+If you don't add these endpoints to an allowlist, machines might come online and might even go to an *allocated* state but fail to communicate with Azure DevOps, because the Azure DevOps Services task agent either can't connect or can't start.
 
 - `download.agent.dev.azure.com`: The Azure DevOps agent's content delivery network (CDN) location, used to download the Azure DevOps agent (formerly `vstsagentpackage.azureedge.net`; for more information, see [Edgio CDN for Azure DevOps is being retired](https://devblogs.microsoft.com/devops/important-switching-cdn-providers/)).
 - `dev.azure.com`: Required to handle communication with Azure DevOps.
 
 ### Required endpoints for Linux machines
 
-These endpoints are required to spin up Ubuntu machines, but aren't necessary if a pool is only using Windows. When you set up the Azure DevOps task agent, required packages are added and an `apt-get` command is run. This process fails if the following endpoints aren't added to an allow list.
+These endpoints are required to spin up Ubuntu machines, but aren't necessary if a pool is only using Windows. When you set up the Azure DevOps task agent, required packages are added and an `apt-get` command is run. This process fails if the following endpoints aren't added to an allowlist.
 
 - `azure.archive.ubuntu.com`: Provisioning Linux machines. This endpoint is HTTP (port 80), not HTTPS (port 443).
 - `www.microsoft.com`: Provisioning Linux machines.
@@ -216,11 +341,11 @@ Azure virtual machines (VMs) might route traffic to certain Azure features throu
 
 1. [Configure Azure traffic to run through service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview):
 
-   You can route traffic directly through Azure to avoid adding throughput to your network security groups or firewalls. You don't need to add the domains listed in the following option to an allow list.
+   You can route traffic directly through Azure to avoid adding throughput to your network security groups or firewalls. You don't need to add the domains listed in the following option to an allowlist.
 
    For example, you can use the [data disk](./configure-storage.md) feature to involve network calls to Azure Storage. When you enable **Microsoft.Storage** service endpoint on your network, traffic routes directly through Azure, which avoids your network rules and reduces load.
 
-1. To avoid routing traffic through service endpoints, add the `md-*.blob.storage.azure.net` domain to your allow list. This domain is required for [configuring a data disk](./configure-storage.md).
+1. To avoid routing traffic through service endpoints, add the `md-*.blob.storage.azure.net` domain to your allowlist. This domain is required for [configuring a data disk](./configure-storage.md).
 
 ### Akamai CDN delivery IPs
 
@@ -230,7 +355,7 @@ On May 1, 2025, Azure DevOps CDN assets transitioned to a solution served by Aka
 - [Azure CDN from Edgio retirement FAQ](/previous-versions/azure/cdn/edgio-retirement-faq)
 - [Akamai TechDocs: Origin IP access control list](https://techdocs.akamai.com/origin-ip-acl/docs/update-your-origin-server)
 
-If you configure your Azure DevOps pipeline to run inside a container, you need to also add the source of the container image (Docker or Azure Container Registry) to an allow list.
+If you configure your Azure DevOps pipeline to run inside a container, you need to also add the source of the container image (Docker or Azure Container Registry) to an allowlist.
 
 ## Validate endpoint connectivity
 

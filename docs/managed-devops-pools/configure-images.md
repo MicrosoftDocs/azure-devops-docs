@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 10/02/2025
+ms.date: 11/18/2025
 ms.topic: how-to
 ---
 
@@ -37,7 +37,7 @@ The following example specifies three images. For more information on the schema
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
+            "apiVersion": "2025-09-20",
             "location": "eastus",
             "properties": {
                 ...
@@ -179,7 +179,7 @@ You can configure images in the `fabricProfile` section of the Managed DevOps Po
 The following example specifies three images. For more information on the schema for images, see the following sections in this article.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
