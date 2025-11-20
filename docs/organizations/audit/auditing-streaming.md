@@ -117,7 +117,7 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
    ```
   - Using Azure CLI
    ```Azure CLI
-   az monitor log-analytics workspace create -g <Resource group> -n <Workspace name>
+   az monitor log-analytics workspace get-shared-keys --resource-group <Resource group> --workspace-name <Workspace name>
    ```
   - Using the [Get Shared Keys API](https://learn.microsoft.com/en-us/rest/api/loganalytics/shared-keys/get-shared-keys)
  
