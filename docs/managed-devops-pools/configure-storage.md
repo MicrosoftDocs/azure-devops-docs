@@ -1,7 +1,7 @@
 ---
 title: Configure storage
 description: Learn how to add an empty data disk to your agents in Managed DevOps Pools.
-ms.date: 07/29/2025
+ms.date: 11/18/2025
 ms.topic: how-to
 ---
 
@@ -42,7 +42,7 @@ You can configure additional disk storage in an Azure Resource Manager template 
         {
             "name": "fabrikam-managed-pool",
             "type": "microsoft.devopsinfrastructure/pools",
-            "apiVersion": "2025-01-21",
+            "apiVersion": "2025-09-20",
             "location": "eastus",
             "properties": {
                 ...
@@ -108,7 +108,7 @@ To delete the data disk configuration for an existing pool, specify an empty lis
 You can configure additional disk storage in a Bicep template in the property `dataDisks` section under `storageProfile`. In the following example, a 10-GB `Standard_LRS` disk is configured with the drive letter `Q` and no caching.
 
 ```bicep
-resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-01-21' = {
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
   name: 'fabrikam-managed-pool'
   location: 'eastus'
   properties: {
