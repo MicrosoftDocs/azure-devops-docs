@@ -1,6 +1,5 @@
 ---
 title: Pipeline runs
-ms.author: juliakm
 description: Understand how Azure Pipelines handles jobs, stages, and agents during pipeline runs. Learn to resolve issues and improve your pipelines.
 ms.topic: concept-article
 ms.custom: devx-track-azurecli, ai-assisted
