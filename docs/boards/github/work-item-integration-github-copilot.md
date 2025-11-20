@@ -41,11 +41,12 @@ This integration allows you to:
 
 ## Supported work item types
 
-The GitHub Copilot integration supports any work item type, including custom types, under the requirements and task category. We also specifically support:
-- **Bug**
-- **Issue**
+The GitHub Copilot integration supports any work item type under the requirements and task category, including:
 
-This includes standard work item types such as User Story, Product Backlog Item, Task, Epic, Feature, and any custom work item types you created in your process template.
+- Standard work item types: User Story, Product Backlog Item, Task, Epic, Feature, Bug, Issue
+- Custom work item types you created in your process template
+
+This broad support means you can use GitHub Copilot with work items from any process template (Agile, Scrum, CMMI, or custom) in your Azure DevOps project.
 
 ## Start GitHub Copilot from work items
 
@@ -66,7 +67,7 @@ This includes standard work item types such as User Story, Product Backlog Item,
    > [!NOTE]
    > Only GitHub repositories connected via GitHub App authentication appear in the repository list. Azure Repos aren't supported.
 
-5. (Optional) Add special instructions to guide Copilot's implementation approach.
+5. (Optional) Add special instructions to guide Copilot's implementation approach. For example, you could add, "Create README with setup instructions".
 
 6. Select **Create** to begin the automated coding process.
 
@@ -104,7 +105,7 @@ Azure DevOps displays Copilot status directly on your work item with three possi
 
 When you view work items on your board, you can identify the GitHub Copilot status directly on the work item card. A GitHub Copilot icon appears on the card and indicates that Copilot is working on or completed work for that item.
 
-:::image type="content" source="media/github-coding-agent/board-card-copilot-status.png" alt-text="Screenshot showing work item card on board with GitHub Copilot status icon indicating progress.":::
+:::image type="content" source="media/github-coding-agent/board-card-github-icon-in-prgress.png" alt-text="Screenshot showing work item card on board with GitHub Copilot status icon indicating progress.":::
 
 This visual indicator helps you quickly identify which work items have active Copilot operations without opening each individual work item.
 
