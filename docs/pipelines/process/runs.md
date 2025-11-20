@@ -1,13 +1,15 @@
 ---
 title: Pipeline runs
-description: Learn how Azure Pipelines runs jobs, tasks, and scripts.
+ms.author: juliakm
+description: Understand how Azure Pipelines handles jobs, stages, and agents during pipeline runs. Learn to resolve issues and improve your pipelines.
 ms.topic: concept-article
 ms.custom: devx-track-azurecli, ai-assisted
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
-ms.date: 06/09/2025
+ms.date: 11/20/2025
+ms.update-cycle: 180-days
 monikerRange: "<=azure-devops"
-ms.collection: 
-  - ce-skilling-ai-copilot
+ms.collection: ce-skilling-ai-copilot
+#customer intent: As a developer, I want to understand how Azure Pipelines processes pipeline runs so that I can troubleshoot and optimize my CI/CD workflows.
 ---
 
 # Pipeline runs
