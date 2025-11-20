@@ -111,15 +111,15 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
 2. Open the workspace and select **Overview**.
 3. Make note of the workspace ID, Resource group, and Workspace name.
 4. Get the shared key in one of the following ways:
-  -  using PowerShell and the Az.OperationalInsights module
-   ```PowerShell
-   Get-AzOperationalInsightsWorkspaceSharedKey -ResourceGroupName <Resource group> -Name <Workspace name>
-   ```
-  - Using Azure CLI
-   ```Azure CLI
-   az monitor log-analytics workspace get-shared-keys --resource-group <Resource group> --workspace-name <Workspace name>
-   ```
-  - Using the [Get Shared Keys API](https://learn.microsoft.com/en-us/rest/api/loganalytics/shared-keys/get-shared-keys)
+  - using PowerShell and the Az.OperationalInsights module
+    ```PowerShell
+    Get-AzOperationalInsightsWorkspaceSharedKey -ResourceGroupName <Resource group> -Name <Workspace name>
+    ```
+  - using az cli
+    ```Azure CLI
+    az monitor log-analytics workspace create -g <Resource group> -n <Workspace name>
+    ```
+  - using the [Get Shared Keys API](https://learn.microsoft.com/en-us/rest/api/loganalytics/shared-keys/get-shared-keys)
  
 5. Set up your Azure Monitor log stream by proceeding through the same initial steps to create a stream.
 6. For target options, select **Azure Monitor Logs**.
