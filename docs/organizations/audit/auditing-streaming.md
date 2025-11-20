@@ -115,7 +115,7 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
    ```PowerShell
    Get-AzOperationalInsightsWorkspaceSharedKey -ResourceGroupName <Resource group> -Name <Workspace name>
    ```
-  - Using az cli
+  - Using Azure CLI
    ```Azure CLI
    az monitor log-analytics workspace create -g <Resource group> -n <Workspace name>
    ```
