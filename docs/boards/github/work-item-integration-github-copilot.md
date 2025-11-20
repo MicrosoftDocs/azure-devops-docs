@@ -22,7 +22,7 @@ Azure Boards integrates with GitHub Copilot to streamline your development workf
 
 This integration allows you to:
 - Initiate automated coding from work items
-- Track Copilot's progress directly in Azure DevOps
+- Track GitHub Copilot's progress directly in Azure DevOps
 - Automatically link generated pull requests and branches to work items
 - Monitor when draft pull requests are ready for review
 
@@ -88,7 +88,7 @@ When you start Copilot from a work item, the following automated processes occur
    - Branch and pull request links are automatically added.
 - **Progress tracking**: Real-time status updates show Copilot's progress.
 
-## Monitor Copilot progress
+## Monitor GitHub Copilot progress
 
 ### Status indicators
 
@@ -105,7 +105,7 @@ Azure DevOps displays Copilot status directly on your work item with three possi
 
 When you view work items on your board, you can identify the GitHub Copilot status directly on the work item card. A GitHub Copilot icon appears on the card and indicates that Copilot is working on or completed work for that item.
 
-:::image type="content" source="media/github-coding-agent/board-card-github-icon-in-prgress.png" alt-text="Screenshot showing work item card on board with GitHub Copilot status icon indicating progress.":::
+:::image type="content" source="media/github-coding-agent/board-card-github-icon-in-progress.png" alt-text="Screenshot showing work item card on board with GitHub Copilot status icon indicating progress.":::
 
 This visual indicator helps you quickly identify which work items have active Copilot operations without opening each individual work item.
 
