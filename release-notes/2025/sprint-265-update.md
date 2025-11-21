@@ -15,7 +15,7 @@ Check out the release notes for details.
 [!INCLUDE [sprint-265-update-links](includes/general/sprint-265-update-links.md)]
 
 ### Repos
-[!INCLUDE [sprint-265-update-links](includes/repors/sprint-265-update-links.md)]
+[!INCLUDE [sprint-265-update-links](includes/repos/sprint-265-update-links.md)]
 
 ### Pipelines
 [!INCLUDE [sprint-265-update-links](includes/pipelines/sprint-265-update-links.md)]
