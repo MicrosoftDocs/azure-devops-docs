@@ -105,6 +105,15 @@ Additionally, you can map your GitHub repositories to one or more projects in Az
 
 ::: moniker-end
 
+## Key GitHub integration features
+
+Azure DevOps provides several ways to integrate with GitHub:
+
+- **[Use GitHub Copilot with Azure Boards](../boards/github/work-item-integration-github-copilot.md)**: Delegate work items to GitHub Copilot for automated code generation and pull request creation
+- **Link work items to commits and pull requests**: Automatically link development artifacts
+- **Status badges**: Display build and deployment status in your GitHub repository
+- **Azure Boards app**: Install the Azure Boards app in GitHub for enhanced integration
+
 ## Related content
 
 - [Azure Boards-GitHub integration](../boards/github/index.md)  

@@ -431,3 +431,11 @@ A: For more information, see [User and permissions management FAQs/GitHub Enterp
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub repositories](../../pipelines/repos/github.md) 
 - [Change GitHub repository access](install-github-app.md#change-repository-access)
+
+## What you can do with GitHub integration
+
+Once connected, you can:
+
+- **Use GitHub Copilot**: [Use GitHub Copilot with work items](work-item-integration-github-copilot.md) for automated code generation
+- **Link work items**: Automatically link commits, branches, and pull requests to work items
+- **Track development**: Monitor progress directly from Azure Boards

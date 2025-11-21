@@ -73,3 +73,9 @@
     displayname: rich text, tags
 - name: Go mobile
   href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json
+- name: Integrate with development tools
+  items:
+  - name: Use GitHub Copilot
+    href: ../github/work-item-integration-github-copilot.md
+  - name: Link to GitHub artifacts
+    href: ../github/link-to-from-github.md

@@ -66,6 +66,14 @@
         href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json
       - name: Configure or redirect process guidance
         href: /previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true
+  - name: GitHub integration
+    items:
+    - name: Connect to GitHub
+      href: github/connect-to-github.md
+    - name: Use GitHub Copilot
+      href: github/work-item-integration-github-copilot.md
+    - name: Link commits and pull requests
+      href: github/link-to-from-github.md
 - name: Troubleshooting
   items:
   - name: FAQs
