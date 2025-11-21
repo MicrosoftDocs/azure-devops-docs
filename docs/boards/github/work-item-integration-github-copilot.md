@@ -43,7 +43,7 @@ This integration allows you to:
 
 The GitHub Copilot integration supports any work item type under the requirements and task category, including:
 
-- Standard work item types: User Story, Product Backlog Item, Task, Epic, Feature, Bug, Issue
+- Standard work item types: User Story, Product Backlog Item, Requirement, Task, Bug, Issue
 - Custom work item types you created in your process template
 
 This broad support means you can use GitHub Copilot with work items from any process template (Agile, Scrum, CMMI, or custom) in your Azure DevOps project.
