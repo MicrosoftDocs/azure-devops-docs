@@ -1,13 +1,14 @@
 ---
-title: TBD
+title: Azure Repos improvements
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/25/2025
-description: TBD
+description: Azure Repos improvements
 ---
 
-# Placeholder
+# Azure Repos improvements
 
+We're excited to share improvements to the Azure Repos experience in Sprint 265. This release enhances pull request navigation with better comment handling for large discussions, and introduces a new target branches section in the pull request branch dropdown for easier access to your configured PR targets. 
 
 Check out the release notes for details.
 
