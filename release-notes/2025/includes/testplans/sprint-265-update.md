@@ -11,4 +11,4 @@ ms.topic: include
 Hyperlink of the tester assignment email directs the assigned tester to the test execution page. (Used to redirect to the test definition tab).
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of focused test point history panel.](../../media/265-testplans-02.png "Screenshot of focused test point history panel.")](../../media/265-testplans-02.png#lightbox)
+> [![Screenshot of focused test point history panel.](../../media/265-testplans-01.png "Screenshot of focused test point history panel.")](../../media/265-testplans-01.png#lightbox)

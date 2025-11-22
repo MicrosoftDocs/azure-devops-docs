@@ -6,4 +6,4 @@ ms.date: 11/25/2025
 ms.topic: include
 ---
 
-- [Group Rules Apply to Existing Users](#group-rules-apply-to-existing-users)
+- [Group rules now apply to existing users](#group-rules-now-apply-to-existing-users)
