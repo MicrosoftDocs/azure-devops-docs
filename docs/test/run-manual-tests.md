@@ -43,6 +43,8 @@ Include test steps, screenshots, and comments in the bug.
 In addition to running tests for a specific build, run options support various test scenarios.
 To see the options, in the **Execute** tab, select a test, and then select **Run with options**.
 
+[!INCLUDE [retirement-test-runner-client-windows](includes/retirement-test-runner-client-windows.md)]
+
 **Select test type and runner** offers these options:
 
 - **Manual tests using Web Browser based runner**
