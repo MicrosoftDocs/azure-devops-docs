@@ -3,7 +3,7 @@ ms.service: azure-devops-test-plans
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 11/24/2025
+ms.date: 11/25/2025
 ---
 
 > [!IMPORTANT]
@@ -15,6 +15,4 @@ ms.date: 11/24/2025
 >
 > **Impact if you don't migrate:** Test execution workflows that rely on the Test Runner Client will be interrupted after the retirement date. No data loss is expected, but you can't execute tests through the desktop client.
 >
-> For migration guidance, see [Run manual tests in the web portal](../run-manual-tests.md).
-
 
