@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 09/30/2025
+ms.date: 11/24/2025
 ms.update-cycle: 1095-days
 ---
 
@@ -28,6 +28,8 @@ The Test & Feedback extension helps teams run exploratory tests and collect feed
 ## Supported web browsers for the extension
 
 You can install the Test & Feedback extension in Google Chrome, Microsoft Edge (Chromium), or Mozilla Firefox (version 50.0 and later).
+
+[!INCLUDE [retirement-firefox-test-feedback-extension](includes/retirement-firefox-test-feedback-extension.md)]
 
 Some features vary by browser version.
 
