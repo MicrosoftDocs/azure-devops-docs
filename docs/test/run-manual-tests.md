@@ -153,7 +153,7 @@ Instead of creating a bug, you can update an existing bug with information about
 
 After you complete testing, save your results, close the session, and review test results.
 
-1. When all your test are run, select **Save and close**.
+1. When all your tests run, select **Save and close**.
    All the test results are stored in Azure Test Plans.
 
 2. View the testing status for your test suite.
@@ -592,7 +592,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Some of the attachments for the test run aren't showing the preview option?
 
-**A:** You can only preview files with txt and log extensions. Select on the preview option for txt or log extension files, and another UI opens with the drop-down field showing all the attachments for the test run. If you select a file with an extension type other than txt or log, the following message displays: "You can only preview files with txt and log extensions, click here to download the attachment"
+**A:** You can only preview files with txt and log extensions. Select the preview option for txt or log extension files, and another UI opens with the drop-down field showing all the attachments for the test run. If you select a file with an extension type other than txt or log, the following message displays: "You can only preview files with txt and log extensions, click here to download the attachment"
 
 ### Q: How do I control how long I keep my test data?
 
