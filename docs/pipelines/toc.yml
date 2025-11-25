@@ -264,6 +264,8 @@
     href: agents/osx-agent.md
   - name: Self-hosted Windows agents
     href: agents/windows-agent.md
+  - name: Node.js runners
+    href: agents/nodejs-runners.md
   - name: Scale set agents
     displayName: byos, elastic agents, VMSS, autoscale
     href: agents/scale-set-agents.md
