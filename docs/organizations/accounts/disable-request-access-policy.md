@@ -32,16 +32,13 @@ This article explains how to disable the 'Request Access' policy in Azure DevOps
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
-1. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-
+2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
    ![Screenshot shows Choose the gear icon and Organization settings button.](../../media/settings/open-admin-settings-vert.png)
    
-1. Select **Policies**, find the 'Request Access' policy, and switch it to **Off**.
-
+3. Select **Policies**, find the 'Request Access' policy, and switch it to **Off**.
    ![Screenshot shows Disable the Request Access policy in Organization settings.](media/request-access-policy-settings.png)
    
-1. Provide the URL to your internal process for gaining access.
-
+4. Provide the URL to your internal process for gaining access.
    ![Screenshot shows prompt for entering the URL to your organization's internal process for gaining access.](media/disable-request-access-provide-url.png)
    
 **Result:**
