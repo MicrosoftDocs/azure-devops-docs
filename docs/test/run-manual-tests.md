@@ -76,8 +76,6 @@ To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visual
 
 ## Run tests for web apps
 
-[!INCLUDE [retirement-test-runner-client-windows](includes/retirement-test-runner-client-windows.md)]
-
 Follow these steps to run tests for web applications.
 
 1. From the web portal, open your project and select **Test Plans** > **Test plans**.
@@ -174,6 +172,8 @@ You can run tests offline and then import the results. For more information, see
 <a name="run-desktop"></a>
 
 ## Run tests for desktop apps
+
+[!INCLUDE [retirement-test-runner-client-windows](includes/retirement-test-runner-client-windows.md)]
 
 If you want to collect more diagnostic data for your desktop application, run your tests using Test Runner client.
 
