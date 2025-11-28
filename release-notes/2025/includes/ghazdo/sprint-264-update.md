@@ -23,7 +23,7 @@ This integration eliminates manual tracking steps, keeping your security and pro
 Advanced Security customers can now enable dependency scanning directly from repository settings without editing their pipeline. Simply opt in to **Scan default branch for vulnerable dependencies** at the repository level or enable **Dependency alerts default setup** at the project or organization level, and the dependency scanning task will automatically run on any pipeline targeting your default branch and pull requests. 
 
 > [!div class="mx-imgBorder"]
-> [![Image to show enabled selected features.](../../media/264-ghazdo-03.png "Image to show enabled selected features")](../../media/264-ghazdo-03.png#lightbox)
+> [![Image to show dependency alerts default setup.](../../media/264-ghazdo-03.png "Image to show dependency alerts default setup")](../../media/264-ghazdo-03.png#lightbox)
 
 The task intelligently detects if it already exists in your pipeline to prevent duplicate scans.  
 
