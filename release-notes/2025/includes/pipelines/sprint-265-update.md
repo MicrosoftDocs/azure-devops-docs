@@ -5,7 +5,7 @@ ms.date: 11/25/2025
 ms.topic: include
 ---
 
-### New Run Pipeline Panel  
+### New run pipeline panel  
 
 In this sprint, we've improved the security and experience of using YAML pipelines for continuous deployment (CD) scenarios. Previously, managing the pipeline artifact to deploy was tedious and error prone. It wasn't clear which run you were going to deploy by default. If you wanted to change the artifact, you couldn't select by run branch.  
 

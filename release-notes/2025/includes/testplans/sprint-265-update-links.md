@@ -6,4 +6,4 @@ ms.date: 11/25/2025
 ms.topic: include
 ---
 
-- [Focused test point history panel](#focused-test-point-history-panel)
+- [UX improvement](#ux-improvement)
