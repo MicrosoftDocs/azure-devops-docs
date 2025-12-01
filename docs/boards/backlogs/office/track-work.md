@@ -48,7 +48,7 @@ macOS isn't supported. Even if you installed Visual Studio for Mac, connection t
 
 | Category | Requirements |
 |----------|-------------|
-| **Software** | - Office Excel 2010 or later version, including Office Excel 365<br>- Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019), scroll to All Downloads, select **Other Tools, Frameworks, and Redistributables**, and then **Download** next to Azure DevOps Office Integration 2019<br>- Azure DevOps Office Integration plug-in (installed with Visual Studio or Azure DevOps Office Integration) |
+| **Software** | - Office Excel 2010 or later version, including Office Excel 365<br>- Visual Studio or the free Azure DevOps Office Integration 2019 (see the following installation note)<br>- Azure DevOps Office Integration plug-in (installed with Visual Studio or Azure DevOps Office Integration) |
 | **Permissions** | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project |
 | **Project** | - If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md) |
 
@@ -58,11 +58,20 @@ macOS isn't supported. Even if you installed Visual Studio for Mac, connection t
 
 | Category | Requirements |
 |----------|-------------|
-| **Software** | - Office Excel 2010 or later version, including Microsoft 365<br>- Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019), scroll to All Downloads, select **Other Tools, Frameworks, and Redistributables**, and then **Download** next to Azure DevOps Office Integration 2019<br>- Team Foundation plug-in (installed with Visual Studio or Azure DevOps Office Integration 2019) |
+| **Software** | - Office Excel 2010 or later version, including Microsoft 365<br>- Visual Studio or the free Azure DevOps Office Integration 2019 (see the following installation note)<br>- Team Foundation plug-in (installed with Visual Studio or Azure DevOps Office Integration 2019) |
 | **Permissions** | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project |
 | **Project** | - If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md) |
 
 ::: moniker-end
+
+> [!NOTE]
+> **To download Azure DevOps Office Integration 2019:**
+> 1. Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/)
+> 2. Scroll down to **All Downloads**
+> 3. Expand **Other Tools, Frameworks, and Redistributables**
+> 4. Look for **Azure DevOps Office Integration 2019** and select **Download**
+> 
+> If you can't locate the download or don't have access, you might need to sign in with a Microsoft account or contact your administrator for access permissions.
 
 For information about compatibility requirements, see [Azure DevOps client compatibility](/azure/devops/server/compatibility).
 
