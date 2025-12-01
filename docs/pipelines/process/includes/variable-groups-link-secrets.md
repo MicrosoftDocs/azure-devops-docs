@@ -67,6 +67,8 @@ Key vaults with role-based access control (RBAC) permissions are not supported. 
 1. Select **+ Add**, choose your secret, then select **Ok**.
 1. Select **Save** when you're done.
 
+    :::image type="content" source="../../library/media/link-rbac-key-vault-secret-to-variable-group.png" alt-text="A screenshot displaying how to link an RBAC key vault secret to a variable group.":::
+
 >[!NOTE]
 >Your service connection must have at least **Get** and **List** permissions on the key vault, which you can authorize in the preceding steps. You can also provide these permissions from the Azure portal by following these steps:
 >
