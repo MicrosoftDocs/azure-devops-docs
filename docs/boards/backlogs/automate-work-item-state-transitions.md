@@ -24,21 +24,9 @@ Rules are established at the team backlog level and are applicable to all work i
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-
 | Category | Requirements |
 |:-------------|:------------|
 |**Permissions**| To configure work item automation rules for your team: [Team Administrator](../../organizations/settings/add-team-administrator.md) role or member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group.|
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-| Category | Requirements |
-|:-------------|:------------|
-|**Permissions**| To configure team settings: [Team Administrator](../../organizations/settings/add-team-administrator.md) role or member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group.|
-
-::: moniker-end
 
 ## Set rules
 
