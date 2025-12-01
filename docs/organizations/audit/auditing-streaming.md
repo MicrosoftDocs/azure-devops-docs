@@ -119,14 +119,14 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
     ```Azure CLI
     az monitor log-analytics workspace get-shared-keys --resource-group <Resource group> --workspace-name <Workspace name>
     ```
-  - **Using the REST API:** Call the [Get Shared Keys API](https://learn.microsoft.com/rest/api/loganalytics/shared-keys/get-shared-keys)
+  - **Using the REST API:** Call the [Get Shared Keys API](/rest/api/loganalytics/shared-keys/get-shared-keys?view=rest-loganalytics-2025-07-01&tabs=HTTP)
 
 > [!NOTE]
 > Direct access to workspace keys through the Azure portal is deprecated. Use PowerShell, Azure CLI, or REST API methods to retrieve shared keys programmatically.
  
-1. Set up your Azure Monitor log stream by proceeding through the same initial steps to create a stream.
-2. For target options, select **Azure Monitor Logs**.
-3. Enter the workspace ID and primary key, and then select **Set up**. The primary key is stored securely within Azure DevOps and never displayed again in the UI. Rotate the key regularly, which you can do by getting a new key from Azure Monitor Log and editing the stream.
+5. Set up your Azure Monitor log stream by proceeding through the same initial steps to create a stream.
+6. For target options, select **Azure Monitor Logs**.
+7. Enter the workspace ID and primary key, and then select **Set up**. The primary key is stored securely within Azure DevOps and never displayed again in the UI. Rotate the key regularly, which you can do by getting a new key from Azure Monitor Log and editing the stream.
 
    :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Enter workspace ID and primary key and then select Set up.":::
 
