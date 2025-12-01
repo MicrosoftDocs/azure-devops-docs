@@ -9,7 +9,7 @@ ms.topic: tutorial
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 08/29/2025
+ms.date: 12/01/2025
 ---
 
 # View and configure team velocity
@@ -34,6 +34,24 @@ Velocity metrics provide valuable insights that help teams plan and [forecast](.
 
 For example, if your team completed user stories worth 25 story points in Sprint 1, 30 story points in Sprint 2, and 28 story points in Sprint 3, your average velocity is approximately 28 story points per sprint. This average helps you plan how much work to commit to in future sprints.
 
+## How Azure DevOps handles velocity calculation
+
+Azure DevOps follows agile best practices for velocity calculation:
+
+> [!IMPORTANT]
+> **Velocity is always counted in the sprint when work is completed**, regardless of which sprint the work item was originally planned for or its current iteration path assignment. This approach aligns with standard agile practices that emphasize measuring actual delivery over planned commitments.
+
+### Work item movement scenarios
+
+- **Moving incomplete work between sprints**: When you move an incomplete work item from one sprint to another (by changing its iteration path), the work item continues to appear as **Incomplete** in its new sprint until completed.
+- **Completing work in a different sprint**: If you complete a work item in Sprint 3 even though it was originally planned for Sprint 1, the velocity credit goes to Sprint 3, when the work was completed.
+- **Iteration path vs. completion date**: The completion date determines which sprint gets velocity credit, not the current iteration path assignment.
+
+This calculation method ensures that:
+- Teams get accurate velocity measurements based on actual delivery capacity
+- Sprint velocity reflects work genuinely completed during that time period
+- Future sprint planning uses realistic capacity data rather than planned commitments
+
 ## Velocity chart types
 
 You can choose between two Velocity charts: the in-context Velocity chart from the Backlogs page and the Velocity widget for dashboards. Both charts help you quickly understand the workflow state categories described in the following table.
@@ -47,11 +65,11 @@ Items in the *Proposed* or *Resolved* states are excluded from the **Completed**
 
 |Workflow state|Description|
 |---------|---------|
-|**Planned**|Work items assigned to a sprint by end of day 1, regardless of their current state. Once counted as planned, items remain in this category for the original sprint even if moved later. A work item can be counted as planned in multiple sprints if it meets the day 1 assignment rule for each sprint.|
+|**Planned**|Work items assigned to a sprint by end of day 1, regardless of their current state or final completion location. Once counted as planned, items remain in this category for the original sprint even if moved later. A work item can be counted as planned in multiple sprints if it meets the day 1 assignment rule for each sprint.|
 |**Incomplete**|Work items currently assigned to the sprint with **In Progress** state. Excludes items in Proposed, Resolved, or Completed states.|
 |**Resolved**|Work items in **Resolved** state. Not plotted unless configured to treat Resolved items as Completed.|
-|**Completed**|Work items in **Completed** state with a completion date on or before the sprint end date.|
-|**Completed Late**|Work items in **Completed** state with a completion date after the sprint end date.|
+|**Completed**|Work items in **Completed** state with a completion date on or before the sprint end date. Velocity credit goes to the sprint when the item was completed, regardless of its original planned sprint or current iteration path.|
+|**Completed Late**|Work items in **Completed** state with a completion date after the sprint end date. These items contribute velocity to the sprint when they were completed.|
 
 > [!NOTE]
 > When configured to treat Resolved items as Completed, moving a Resolved item to Completed state after the sprint end date changes its classification from Completed to Completed Late.
@@ -110,7 +128,7 @@ Velocity reports are available for both product and portfolio backlogs. Each rep
 
 You can only configure your Velocity widget for a single team. If you want to view the velocity for several teams, then you must configure a portfolio management team that rolls up from several teams. For more information, see [Add teams](../../organizations/settings/add-teams.md).   
 
-If you haven't yet, [Add the Velocity widget to your dashboard](./add-widget-to-dashboard.md). For Azure DevOps Server 2019, [Enable or install Analytics](analytics-extension.md).
+If you haven't yet, [Add the Velocity widget to your dashboard](./add-widget-to-dashboard.md).
 
 Complete the following steps to configure the Velocity widget.
 
@@ -120,7 +138,7 @@ Complete the following steps to configure the Velocity widget.
 
 	Modify the title, select the team, and then select either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 
-      :::image type="content" source="media/team-velocity-config-dialog.png" alt-text="Screenshot showing Configure dialog, Velocity widget.":::
+   :::image type="content" source="media/team-velocity-config-dialog.png" alt-text="Screenshot showing Configure dialog, Velocity widget.":::
 
 2. Specify the number of sprints you want to view. The default is 6 and the maximum is 15.    
 
@@ -153,6 +171,7 @@ For your team to gain the greatest utility from the Velocity charts, follow thes
 - **Decide how your team [treats bugs](../../organizations/settings/show-bugs-on-backlog.md)**. If treated like requirements, bugs appear on the backlog and are included in the Velocity chart and forecasting.
 - **[Set your team's area path](../../organizations/settings/set-area-paths.md)**. The forecast tool uses these settings to include or exclude items in area paths under the team's default.
 - **Avoid creating a hierarchy of backlog items and bugs**. The board, Taskboards, and sprint backlog only show the last node in a hierarchy. Instead, maintain a flat list with parent-child links one level deep. Use **[Features to group requirements or user stories](../../boards/backlogs/organize-backlog.md)**.
+- **Complete backlog items within their planned sprint when possible**. While Azure DevOps correctly handles cross-sprint completion, frequently moving work between sprints can affect team focus and sprint planning accuracy.
 - **Update the status of completed backlog items at the end of the sprint**. Move incomplete items back to the product backlog for future sprint planning.
 - **Minimize the size variability of backlog items for improved estimation accuracy**. Reducing variability increases the reliability of velocity metrics and forecast results. Estimates are best guesses by the team regarding the effort required to complete an item relative to others on the backlog.
 
