@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: overview
-ms.date: 10/02/2025
+ms.date: 12/01/2025
 ms.custom:
   - engagement-fy23
   - sfi-image-nochange
@@ -42,7 +42,7 @@ The following table lists common hub groups and their contribution IDs.
 | Organization settings | `ms.vss-web.collection-admin-hub-group`  | Organization/collection  | :::image type="content" source="media/test/organization-settings.png" alt-text="Screenshot of custom organization admin hub."::: |
 ::: moniker-end
 
-### Example: contribute a hub
+### Contribute a hub
 
 This example shows a hub contribution that targets the Code hub group:
 
@@ -65,15 +65,15 @@ This example shows a hub contribution that targets the Code hub group:
 }
 ```
 
-* `ms.vss-web.hub` is the type of contribution. This type is defined in the `vss-web` extension published under the `ms` publisher. This type declares optional and required properties that are required by contributions of this type (for example, name, order, and so on).
-* `ms.vss-code-web.code-hub-group` is the full ID of the hub group contribution that this hub targets. This contribution is declared in the `vss-code-web` extension published under the `ms` publisher.
+* `ms.vss-web.hub` is the type of contribution. The `vss-web` extension published under the `ms` publisher defines this type. This type defines the optional and required properties for contributions of this type (for example, name, order).
+* `ms.vss-code-web.code-hub-group` is the full ID of the hub group contribution that this hub targets. The `vss-code-web` extension published under the `ms` publisher declares this contribution.
 * `my-custom-hub` is the short ID of this contribution; `{publisherId}.{extensionId}.my-custom-hub` is the full ID.
 
 <a name="menus"></a>
 
 ## Add an icon to your menu or toolbar
 
-Add an icon property, so it can be used directly by name.
+Add an icon property so you can reference it directly by name.
 
 We recommend providing your own icon.
 Using your own icon example:
@@ -95,6 +95,9 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
             "uri": "/views/code/custom.html"
         }
 ```
+
+> [!NOTE]
+> Icons, `icon` and `iconName` properties, don't support tab contributions. They only work for hubs, menus, and toolbars.
 
 ## Settings for menus and toolbars
 
@@ -207,16 +210,6 @@ Tasks perform work in a build or release. For more information, see [Add a custo
 
 ## Other extensibility points
 
-- **Dashboard widget**: An extension can contribute a new type of widget that can be added by users to a [dashboard](../../../report/dashboards/overview.md). Learn how to [contribute a dashboard widget](../../develop/add-dashboard-widget.md).
-- **Work item form**: The work item form is enhanced by extensions with new sections, tabs, actions, and custom field renderers. For more information, learn how to [extend the work item form](../../develop/add-workitem-extension.md).
-- **Service hooks**: A *consumer* is the service that events are sent to in Service Hooks. An extension can contribute consumer services. These services get configured by a user (or programmatically), to send events to that service. For more information, see [Create a custom consumer for service hooks](../../develop/add-service-hook.md).
-::: moniker range="azure-devops"
-- **Features**:
-    **Name:** Preview feature (hosted only)  
-    **Target ID:** ms.vss-web.managed-features  
-::: moniker-end
-::: moniker range="< azure-devops"
-- **Features**:
-    **Name:** Feature (on-premises only)  
-    **Target ID:** ms.vss-web.managed-features-onprem  
-::: moniker-end
+- **Dashboard widget**: An extension can contribute a new type of widget that users can add to a [dashboard](../../../report/dashboards/overview.md). Learn how to [contribute a dashboard widget](../../develop/add-dashboard-widget.md).
+- **Work item form**: Extensions enhance the work item form with new sections, tabs, actions, and custom field renderers. For more information, learn how to [extend the work item form](../../develop/add-workitem-extension.md).
+- **Service hooks**: A *consumer* is the service that Service Hooks sends events to. An extension can contribute consumer services. A user (or programmatically) configures these services to send events to that service. For more information, see [Create a custom consumer for service hooks](../../develop/add-service-hook.md).
