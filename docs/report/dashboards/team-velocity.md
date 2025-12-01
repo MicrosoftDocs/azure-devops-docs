@@ -47,6 +47,27 @@ Azure DevOps follows agile best practices for velocity calculation:
 - **Completing work in a different sprint**: If you complete a work item in Sprint 3 even though it was originally planned for Sprint 1, the velocity credit goes to Sprint 3, when the work was completed.
 - **Iteration path vs. completion date**: The completion date determines which sprint gets velocity credit, not the current iteration path assignment.
 
+### Impact of changing iteration paths
+
+When you change the iteration path of a work-in-progress (WIP) work item:
+
+**Velocity metrics:**
+- Moving a WIP item doesn't affect velocity until completed
+- Velocity credit goes to the sprint where the item is completed
+- The item remains counted as "Planned" for its original sprint
+
+**Completed Late metrics:**
+- Late calculation compares completion date to the **current** iteration's end date
+- Moving an item to a later sprint can change its late classification
+
+**Example:** Work item planned for Sprint 1 (ends March 15), moved to Sprint 2 (ends March 30), completed March 25:
+- **Planned**: Sprint 1 (original)
+- **Velocity**: Sprint 2 (where completed)  
+- **Late status**: Not late (completed before Sprint 2 end date)
+
+> [!TIP]
+> Establish team practices for moving work items between sprints to minimize confusion in velocity tracking.
+
 This calculation method ensures that:
 - Teams get accurate velocity measurements based on actual delivery capacity
 - Sprint velocity reflects work genuinely completed during that time period
