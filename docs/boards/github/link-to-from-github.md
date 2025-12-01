@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: "<=azure-devops"
-ms.date: 06/24/2025
+ms.date: 12/01/2025
 ---
 
 # Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards
@@ -33,7 +33,7 @@ In this article, learn how to link work items to GitHub commits, pull requests, 
 
 ## Use `AB#` to link from GitHub to Azure Boards work items
 
-From a GitHub commit, pull request or issue, use the following syntax to create a link to your Azure Boards work item. Enter the `AB#ID` within the text of a commit message. Or, for a pull request or issue, enter the `AB#ID` within the title or description. Using `AB#ID` in a comment doesn't create a link on the work item.
+From a GitHub commit, pull request or issue, use the following syntax to create a link to your Azure Boards work item. Enter the `AB#ID` within the text of a commit message. Or, for a pull request or issue, enter the `AB#ID` within the description. Using `AB#ID` in a comment or pull request title doesn't create a link on the work item.
 
 ```
 AB#{ID}
@@ -43,7 +43,7 @@ For example, `AB#125` links to work item ID 125.
 
 You can also enter a commit or pull request message to transition the work item. The system recognizes `{state}` or `{state category}`, along with `fix`, `fixes`, `fixed`, and applies it to the #-mention item that follows. 
 
-When a pull request description includes a valid state name, for example, ``Closed AB#1234``, the system updates the referenced work item to that specific state. If the state name isn’t recognized directly, Azure Boards tries to match it to a workflow category like ``Resolved`` or ``Completed``. If a match is found, the work item transitions to the first available state defined under that category.
+When a pull request description includes a valid state name, for example, ``Closed AB#1234``, the system updates the referenced work item to that specific state. If the state name isn't recognized directly, Azure Boards tries to match it to a workflow category like ``Resolved`` or ``Completed``. If a match is found, the work item transitions to the first available state defined under that category.
 
 By default, work items referenced with ``fix``, ``fixes``, or ``fixed`` transitions to the first state associated with the **Resolved** category. If no such state exists in the current process, the system instead transitions the work item to the first state in the **Completed** category.
 
