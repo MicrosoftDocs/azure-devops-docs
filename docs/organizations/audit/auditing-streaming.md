@@ -119,7 +119,7 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
     ```Azure CLI
     az monitor log-analytics workspace get-shared-keys --resource-group <Resource group> --workspace-name <Workspace name>
     ```
-  - **Using the REST API:** Call the [Get Shared Keys API](/rest/api/loganalytics/shared-keys/get-shared-keys?view=rest-loganalytics-2025-07-01&tabs=HTTP)
+  - **Using the REST API:** Call the [Get Shared Keys API](/rest/api/loganalytics/shared-keys/get-shared-keys?view=rest-loganalytics-2025-07-01&tabs=HTTP&preserve-view=true )
 
 > [!NOTE]
 > Direct access to workspace keys through the Azure portal is deprecated. Use PowerShell, Azure CLI, or REST API methods to retrieve shared keys programmatically.
