@@ -9,7 +9,7 @@ ms.topic: tutorial
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 08/29/2025
+ms.date: 12/01/2025
 ---
 
 # View and configure team velocity
