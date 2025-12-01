@@ -6,14 +6,14 @@ ms.service: azure-devops-boards
 ms.custom: cross-service
 ms.author: chcomley
 ms.topic: how-to
-monikerRange: '<= azure-devops'
+monikerRange: 'azure-devops'
 ms.date: 07/15/2025
 ---
 
 
 # Automate work item state transitions
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Automatically update the state of a work item according to the state of its child tasks. For example, if one task is changed to `Doing`, then the parent gets set to `Doing`. And if all tasks are in `Closed` state, then the parent gets `Closed`.
 
