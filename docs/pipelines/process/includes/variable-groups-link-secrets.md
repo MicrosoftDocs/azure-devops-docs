@@ -61,7 +61,7 @@ Key vaults with role-based access control (RBAC) permissions are not supported. 
 
 1. Navigate back to your Azure DevOps project, select **Pipelines** > **Library**.
 1. Select **+ Variable group**, then enter a name for your variable group.
-1. selct the **Link secrets from an Azure key vault as variables** toggle to enable it.
+1. Select the **Link secrets from an Azure key vault as variables** toggle to enable it.
 1. Select your service connection and select **Authorize**.
 1. Select your key vault name from the dropdown menu.
 1. Select **+ Add**, choose your secret, then select **Ok**.
