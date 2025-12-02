@@ -1,14 +1,14 @@
 ---
 ms.subservice: azure-devops-ecosystem
 title: Create modal dialogs in Azure DevOps extensions
-description: Learn how to implement modal dialogs using HostDialogService in Azure DevOps extensions with the azure-devops-extension-sdk package. Build interactive dialogs with custom content, validation, and user interactions.
+description: Learn how to implement modal dialogs in Azure DevOps extensions with the azure-devops-extension-sdk package. Build interactive dialogs with custom content, validation, and user interactions.
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
 ms.topic: how-to
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2025
+ms.date: 12/01/2025
 # customer-intent: As an Azure DevOps extension developer, I want to create modal dialogs that block user interaction with the entire page so I can collect user input, display forms, and provide focused user experiences in my extensions.
 ---
 
@@ -16,7 +16,7 @@ ms.date: 11/14/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Modal dialogs provide a powerful way to create focused user experiences in Azure DevOps extensions. The HostDialogService lets you present a modal dialog that blocks user interaction with the entire Azure DevOps interface until the dialog gets dismissed. This action ensures that users complete important tasks or provide required information.
+Modal dialogs provide a powerful way to create focused user experiences in Azure DevOps extensions. The dialog service lets you present a modal dialog that blocks user interaction with the entire Azure DevOps interface until the dialog gets dismissed. This action ensures that users complete important tasks or provide required information.
 
 Use modal dialogs in your extensions to:
 - Collect user input through forms
@@ -25,7 +25,7 @@ Use modal dialogs in your extensions to:
 - Guide users through multi-step processes
 
 > [!IMPORTANT]
-> When you create modal dialogs with `HostDialogService`, they block interaction with the entire Azure DevOps page, not just your extension. This approach provides a true modal experience but you should use it thoughtfully to avoid disrupting the user workflow.
+> When you create modal dialogs, they block interaction with the entire Azure DevOps page, not just your extension. This approach provides a true modal experience but you should use it thoughtfully to avoid disrupting the user workflow.
 
 ## Prerequisites 
 
@@ -138,12 +138,12 @@ The `uri` property references a page that is rendered within the content area of
 
 ## Show the dialog
 
-To show the dialog (for example, when a user selects an action on a toolbar or menu), call the `openDialog` function on an instance of the HostDialogService:
+To show the dialog (for example, when a user selects an action on a toolbar or menu), call the `openDialog` function on an instance of the dialog service:
 
 ```javascript
 import * as SDK from "azure-devops-extension-sdk";
 
-SDK.getService(SDK.CommonServiceIds.HostDialogService).then((dialogService) => {
+SDK.getService(SDK.CommonServiceIds.Dialog).then((dialogService) => {
     const extensionCtx = SDK.getExtensionContext();
     // Build absolute contribution ID for dialogContent
     const contributionId = `${extensionCtx.publisherId}.${extensionCtx.extensionId}.registration-form`;
@@ -170,7 +170,7 @@ In this example, the `attachFormChanged` callback gets called when inputs on the
 ```javascript
 import * as SDK from "azure-devops-extension-sdk";
 
-SDK.getService(SDK.CommonServiceIds.HostDialogService).then((dialogService) => {
+SDK.getService(SDK.CommonServiceIds.Dialog).then((dialogService) => {
     let registrationForm;
     const extensionCtx = SDK.getExtensionContext();
     const contributionId = `${extensionCtx.publisherId}.${extensionCtx.extensionId}.registration-form`;
@@ -190,7 +190,7 @@ SDK.getService(SDK.CommonServiceIds.HostDialogService).then((dialogService) => {
     };
 
     dialogService.openDialog(contributionId, dialogOptions).then((dialog) => {
-        // Get registrationForm instance which is registered in registrationFormContent.html
+        // Get registrationForm instance which is registered in registration-form.html
         dialog.getContributionInstance("registration-form").then((registrationFormInstance) => {
         
             // Keep a reference of registration form instance (to be used previously in dialog options)
