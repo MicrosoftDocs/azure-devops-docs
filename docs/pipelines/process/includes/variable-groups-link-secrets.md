@@ -26,7 +26,7 @@ Although Key Vault supports storing and managing cryptographic keys and certific
 
 ### Create a key vault
 
-Create an Azure key vault.  
+If you don't have a key vault already, you can create one as follows: 
 
 1. In the Azure portal, select **Create a resource**.
 1. Search for and select **Key Vault**, then select **Create**.
@@ -39,7 +39,6 @@ Create an Azure key vault.
 1. Select your account as the principal.
 1. Select **Review + create** and then **Create**.
 
-
 ### Create the variable group linked to the key vault
 
 1. In your Azure DevOps project, select **Pipelines** > **Library** > **+ Variable group**.
@@ -51,7 +50,25 @@ Create an Azure key vault.
 1. Select **Save** to save the secret variable group.
 
     :::image type="content" source="../../library/media/link-azure-key-vault-variable-group.png" alt-text="Screenshot of variable group with Azure key vault integration.":::
-    
+
+Key vaults with role-based access control (RBAC) permissions are not supported. Your key vault permission model must be set to **Vault access policy**. If you're using a key vault with RBAC permissions, you can use the following workaround to link your key vault to your variable group:
+
+1. [Create an ARM service connection](../../library/service-endpoints.md#create-a-service-connection)
+1. Navigate to Azure portal, find your key vault > **Access control (IAM)**, then grant the service connection the appropriate RBAC role (*Key Vault Secrets User* or *Key Vault Secrets Officer* or based on your scenario).
+
+    > [!NOTE]
+    > Make sure you have the **Key Vault Administrator** role to create secrets.
+
+1. Navigate back to your Azure DevOps project, select **Pipelines** > **Library**.
+1. Select **+ Variable group**, then enter a name for your variable group.
+1. Select the **Link secrets from an Azure key vault as variables** toggle to enable it.
+1. Select your service connection and select **Authorize**.
+1. Select your key vault name from the dropdown menu.
+1. Select **+ Add**, choose your secret, then select **Ok**.
+1. Select **Save** when you're done.
+
+    :::image type="content" source="../../library/media/link-rbac-key-vault-secret-to-variable-group.png" alt-text="A screenshot displaying how to link an RBAC key vault secret to a variable group.":::
+
 >[!NOTE]
 >Your service connection must have at least **Get** and **List** permissions on the key vault, which you can authorize in the preceding steps. You can also provide these permissions from the Azure portal by following these steps:
 >
