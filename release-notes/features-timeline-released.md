@@ -38,8 +38,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="6"><a href="2025/sprint-265-update.md" data-raw-source="[25 November 2025](2025/sprint-265-update.md)">November 25 2025</a></td>
+    <td rowspan="7"><a href="2025/sprint-265-update.md" data-raw-source="[25 November 2025](2025/sprint-265-update.md)">November 25 2025</a></td>
     <td>Group rules now apply to existing users</td><td>General</td><td>N/A</td></tr>
+    <td>Azure subscription required for new organizations</td><td>General</td><td>N/A</td></tr>
     <td>Required upgrade of TFVC Proxy when used with hosted (cloud) TFVC repositories</td><td>Repos</td><td>Future</td></tr>
     <td>Improved comment navigation by the link in pull requests</td><td>Repos</td><td>Future</td></tr>
     <td>Target branches now available in pull request branch dropdown</td><td>Repos</td><td>Future</td></tr>
@@ -47,7 +48,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>UX improvements</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
-    <td rowspan="7"><a href="2025/sprint-264-update.md" data-raw-source="[4 November 2025](2025/sprint-264-update.md)">November 4 2025</a></td>
+    <td rowspan="8"><a href="2025/sprint-264-update.md" data-raw-source="[4 November 2025](2025/sprint-264-update.md)">November 4 2025</a></td>
     <td>Work item linking for Advanced Security alerts generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>One-click enablement for dependency scanning generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Resolving throttling for automatic installation of CodeQL toolchain</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
@@ -55,12 +56,15 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Reduce authorization timeout</td><td>Pipelines</td><td>Future</td></tr>
     <td>Pipeline parameters</td><td>Pipelines</td><td>Future</td></tr>
     <td>Focused test point history panel</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Fixed Back Button navigation in Test Plans</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
-    <td rowspan="4"><a href="2025/sprint-263-update.md" data-raw-source="[14 October 2025](2025/sprint-263-update.md)"> October 14 2025</a></td>
+    <td rowspan="6"><a href="2025/sprint-263-update.md" data-raw-source="[14 October 2025](2025/sprint-263-update.md)"> October 14 2025</a></td>
     <td>Improved secret rotation support for Azure service connection</td><td>Pipelines</td><td>Future</td></tr>
     <td>AzureAppServiceManageV0 versioned extension support (preview)</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Ability to disable release pipelines</td><td>Pipelines</td><td>Future</td></tr>
     <td>Tester column renamed in test points to Current Tester</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Fixed query results pane resizing issue</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Fixed missing screenshots for individual steps</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="6"><a href="2025/sprint-262-update.md" data-raw-source="[25 September 2025](2025/sprint-262-update.md)"> September 25 2025</a></td>
@@ -71,14 +75,15 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Deprecating clone work item</td><td>Boards</td><td>Future</td></tr>
     <td>AzureAppServiceManageV0 Versioned Extension Support (public preview)</td><td>Boards</td><td>Future</td></tr>
 <tr>
-    <td rowspan="5"><a href="2025/sprint-261-update.md" data-raw-source="[4 September 2025](2025/sprint-261-update.md)"> September 4 2025</a></td>
+    <td rowspan="6"><a href="2025/sprint-261-update.md" data-raw-source="[4 September 2025](2025/sprint-261-update.md)"> September 4 2025</a></td>
     <td>New SARIF processing completed service hook event</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>OAuth client secrets now shown only once</td><td>General</td><td>N/A</td></tr>
     <td>Dynamic checklist support in work item Markdown fields</td><td>Boards</td><td>Future</td></tr>
     <td>Improved navigation for pull request threads and discussions</td><td>Repos</td><td>Future</td></tr>
     <td>Associate automated tests to test cases</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Fixed missing link cleanup when deleting shared steps</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
-    <td rowspan="9"><a href="2025/sprint-260-update.md" data-raw-source="[11 August 2025](2025/sprint-260-update.md)"> August 11 2025</a></td>
+    <td rowspan="10"><a href="2025/sprint-260-update.md" data-raw-source="[11 August 2025](2025/sprint-260-update.md)"> August 11 2025</a></td>
     <td>Only organizations with existing public projects can create new ones</td><td>General</td><td>N/A</td></tr>
     <td>Azure DevOps login flow no longer relies on Azure Resource Manager audience</td><td>General</td><td>N/A</td></tr>
     <td>Continuous Access Evaluation on Azure DevOps</td><td>General</td><td>N/A</td></tr>
@@ -88,6 +93,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Validity checking for secrets now generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Azure Boards and Pipelines integration for GitHub Enterprise Cloud with Data Residency</td><td>Boards</td><td>Future</td></tr>
     <td>Improved screen reader support for pull request experience</td><td>Repos</td><td>Future</td></tr>
+    <td>Resolved multiple issues</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="6"><a href="2025/sprint-259-update.md" data-raw-source="[30 June 2025](2025/sprint-259-update.md)"> July 17 2025</a></td>
@@ -99,13 +105,14 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Enhanced diagram support in wiki pages and file preview</td><td>Repos</td><td>Future</td></tr>
 <tr>
 <tr>
-    <td rowspan="6"><a href="2025/sprint-258-update.md" data-raw-source="[30 June 2025](2025/sprint-258-update.md)"> June 30 2025</a></td>
+    <td rowspan="7"><a href="2025/sprint-258-update.md" data-raw-source="[30 June 2025](2025/sprint-258-update.md)"> June 30 2025</a></td>
     <td>Azure DevOps MCP Server public preview</td><td>General</td><td>N/A</td></tr>
     <td>New organizations won't offer public projects</td><td>General</td><td>N/A</td></tr>
     <td>One click enablement for dependency scanning now in public preview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Service hooks for GitHub Advanced Security for Azure DevOps alerts generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Syntax highlighting support for Kusto Query Language</td><td>Repos</td><td>Future</td></tr>
     <td>Ability to associate Java, JavaScript and Python tests to manual test cases</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Improved tester assignment and configuration changes messaging</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="13"><a href="2025/sprint-257-update.md" data-raw-source="[16 June 2025](2025/sprint-257-update.md)"> June 16 2025</a></td>
