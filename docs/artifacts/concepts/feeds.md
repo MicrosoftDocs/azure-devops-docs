@@ -1,11 +1,11 @@
 ---
 title: What are Azure Artifacts feeds?
-description: Understand the differences between project-scoped and organization-scoped Azure Artifacts feeds. Learn the steps to create, delete, and restore feeds. 
+description: Learn what Azure Artifacts feeds are, explore the different feed types and how to manage them in Azure Artifacts.  
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.custom: peer-review-program
 ms.service: azure-devops-artifacts
-ms.topic: article
-ms.date: 06/03/2024
+ms.topic: overview
+ms.date: 12/02/2025
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -13,53 +13,54 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Azure Artifacts feeds are organizational constructs that allow you to store, manage, and share your packages while controlling access. Feeds are not limited to specific package types; you can store various types, such as npm, NuGet, Maven, and Python packages, in a single feed.
+Azure Artifacts feeds are organizational constructs that allow you to store, manage, and share your packages while controlling access. A single feed can host multiple package types, including npm, NuGet, Maven, Python, Cargo and Universal Packages packages.
+Azure Artifacts feeds also support saving packages from public registries like *nuget.org* through upstream sources, ensuring continued access to your packages even if the public source becomes temporarily unavailable.
 
-## Project-scoped vs Organization-scoped feeds
+## Feed types
 
-Organization-scoped feeds are accessible and viewable from any project within the organization. Project-scoped feeds on the other hand, are restricted to being viewed solely within the hosting project.
+Azure Artifacts feeds can be scoped to an organization or a project. A feed can also be public if it's scoped to a public project:
 
-It's important to note that organization-scoped feeds cannot be converted into project-scoped feeds. Furthermore, only project-scoped feeds have the capability to be designated as [public feeds](#public-feeds). For a detailed comparison between project-scoped and organization-scoped feeds, refer to [Feeds scope](../feeds/project-scoped-feeds.md).
+**Project-scoped feeds**: Feeds scoped to a project. They’re only viewable within the hosting project, and only project-scoped feeds can be designated as[public feeds](#public-feeds) by switching the project's visibility to **Public** in Project Settings.
 
-> [!NOTE]
-> To access a feed in a different organization, a user must be granted access to the project hosting that feed.
+**Organization-scoped feeds**: Feeds scoped to an organization. They’re viewable from any project within the organization. Organization-scoped feeds **cannot** be converted into project-scoped feeds.
+
+**Private feeds**: Can be either project-scoped (private project) or organization-scoped. Packages in a private feed are available only to authenticated users with at least **Feed Reader** permission.
+
+**Public feeds**: Feeds scoped to a **public** project. Packages in a public feed are available to both authenticated and anonymous users.
+
+See [Feed scoped](../feeds/project-scoped-feeds.md) to learn more about the differences between project-scoped feeds and organization scoped feeds.
 
 ## Create a new feed
 
+Follow these steps and choose the appropriate scope to create a project-scoped or organization-scoped feed:
+
 ::: moniker range="azure-devops"
 
-Follow the instructions below and choose the appropriate scope to create a new project-scoped or organization-scoped feed:
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Select **Artifacts**, then select **Create Feed**.
 
-1. Select **Artifacts**, and then select **Create Feed**.
-
-1. Enter a descriptive **Name** for your feed and define its **Visibility** (who can use your feed). Specify the **Scope** of your feed, and if you wish to include packages from public sources, mark the **Upstream sources** checkbox.
+1. Provide a **Name** for your feed, define its **Visibility** (who can view packages in your feed), and specify the **Scope** of your feed (project-scoped or organization-scoped). To enable upstream sources and include packages from public sources, check the **Upstream sources** checkbox.
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="A screenshot that shows how to create a new feed in Azure DevOps Services.":::
+    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022 || azure-devops-2020"
 
-Follow the instructions below and choose the appropriate scope to create a new project-scoped or organization-scoped feed:
-
-1. Sign in to your Azure DevOps server, and then navigate to your project.
+1. Sign in to your Azure DevOps collection, then navigate to your project.
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-1. Enter a descriptive **Name** for your feed and define its **Visibility** (who can use your feed). Specify the **Scope** of your feed, and if you wish to include packages from public sources, mark the **Upstream sources** checkbox.
+1. Provide a **Name** for your feed, define its **Visibility** (who can view packages in your feed), and specify the **Scope** of your feed (project-scoped or organization-scoped). To enable upstream sources and include packages from public sources, check the **Upstream sources** checkbox.
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="A screenshot that shows how to create a new feed in Azure DevOps Server 2022 and Server 2020.":::
+    :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Server 2022 and Server 2020.":::
 
 ::: moniker-end
-
-> [!NOTE]
-> Public feeds are only available in Azure DevOps Services.
 
 ::: moniker range="azure-devops"
 
