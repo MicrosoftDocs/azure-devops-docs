@@ -12,3 +12,7 @@ Previously, you had no easy way to see point-specific history from the Test Plan
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of focused test point history panel.](../../media/264-testplans-02.png "Screenshot of focused test point history panel.")](../../media/264-testplans-02.png#lightbox)
+
+### Fixed Back Button navigation in Test Plans
+
+Resolved navigation issues by fixing the Back button functionality, enabling accurate transitions from Test Case view to Test Plan view.
