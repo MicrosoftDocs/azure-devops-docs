@@ -44,7 +44,7 @@ Follow these steps and choose the appropriate scope to create a project-scoped o
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Services.":::
+    :::image type="content" source="../media/create-new-feed-devops-services.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
