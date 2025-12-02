@@ -7,3 +7,4 @@ ms.topic: include
 ---
 
 - [Focused test point history panel](#focused-test-point-history-panel)
+- [Fixed Back Button navigation in Test Plans](#fixed-back-button-navigation-in-test-plans)
