@@ -1,18 +1,18 @@
 ---
-title: Azure DevOps Release Notes - Azure Test Plans Sprint 257 Update
-description: See the Sprint 257 feature updates for Azure Test Plans, including next steps.
+title: Azure DevOps Release Notes - Azure Test Plans Sprint 258 Update
+description: See the Sprint 258 feature updates for Azure Test Plans, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/30/2025
 ms.topic: release-notes
 ---
 
-# Azure Test Plans - Sprint 257 Update
+# Azure Test Plans - Sprint 258 Update
 
 ## Features
 
-[!INCLUDE [sprint-257-update-links](../includes/testplans/sprint-257-update-links.md)]
+[!INCLUDE [sprint-258-update-links](../includes/testplans/sprint-258-update-links.md)]
 
-[!INCLUDE [sprint-257-update](../includes/testplans/sprint-257-update.md)]
+[!INCLUDE [sprint-258-update](../includes/testplans/sprint-258-update.md)]
 
 [!INCLUDE [nextsteps](../includes/nextsteps.md)]
