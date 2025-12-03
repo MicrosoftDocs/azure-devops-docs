@@ -12,7 +12,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/30/2025
+  ms.date: 12/02/2025
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -86,6 +86,18 @@ sections:
           Q: How did paid extensions change in the Azure DevOps Marketplace in July 2019?
         answer: |
           A: Microsoft ended support for purchasing non-Microsoft paid Azure DevOps extensions through your Azure bill on July 1, 2019. We're encouraging our publishers to offer paid access to their services directly.
+
+      - question: |
+          Q: What happens when free tier limits are reached?
+        answer: |
+          A: If you exceed the free tier resources included with Azure DevOps, your linked Azure subscription will be billed for additional usage. This can occur when you: 
+
+          * Add more than 5 Basic users 
+          * Assign Basic + Test Plans access 
+          * Purchase paid parallel jobs for Pipelines 
+          * Use more than 2 GB of Artifacts storage 
+
+          If your organization was created using an Azure Free Trial or Visual Studio subscriber benefit subscription and you exceed the free tier limits, the subscription will enter a disabled state. This prevents further charges and stops additional resource consumption. [Learn more about Azure subscription states](/azure/cost-management-billing/manage/subscription-disabled).
 
       - question: |
           Q: How do I pay for Azure DevOps Server through Azure?

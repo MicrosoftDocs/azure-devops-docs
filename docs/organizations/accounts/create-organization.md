@@ -7,7 +7,7 @@ ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/23/2024
+ms.date: 12/03/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -39,21 +39,25 @@ Use an organization to connect groups of related projects and help scale up your
 
    :::image type="content" source="../../media/select-new-organization.png" alt-text="Screenshot shows New organization button for selection.":::
 
-1. Enter the name for your organization, select its hosting geography, and then select **Continue**.
+1. Enter the name for your organization, select its hosting geography, select an Azure subscription for billing, and then select **Continue**.
 
    [!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
 
-   :::image type="content" source="../../media/name-your-organization.png" alt-text="Screenshot shows Creating an organization in Azure DevOps, highlighted Continue button.":::
+   :::image type="content" source="media/select-subscription-create-organization.png" alt-text="Screenshot shows creating organization popup with dropdown menu for selecting Azure subscription.":::
 
    :::image type="content" source="../../media/taking-you-to-your-azure-devops-organization.png" alt-text="Screenshot shows temporary screen taking you to your organization notification.":::
 
    Congratulations, you're an organization owner!
 
-Sign in to your organization at any time, `https://dev.azure.com/{yourorganization}`.
+   Sign in to your organization at any time, `https://dev.azure.com/{YourOrganization}`.
 
-With your organization, the following aspects are included in the free tier:
+### Free tier benefits
+
+Your new organization includes the following free tier benefits:
 
 [!INCLUDE [free-tier](../../includes/free-tier.md)]
+
+If you exceed these free tier limits, your linked Azure subscription gets billed for additional usage. For more information, see [What happens when free tier limits are reached?](../billing/billing-faq.yml#q--what-happens-when-free-tier-limits-are-reached-).
 
 ## Next steps
 
