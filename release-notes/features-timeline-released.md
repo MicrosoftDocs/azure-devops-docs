@@ -5009,6 +5009,61 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-release-date-december-9-2025&preserve-view=true" data-raw-source="[Azure DevOps Server](/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-release-date-december-9-2025)">Azure DevOps Server</a></td>
+          <td>December 9, 2025</td>
+          <td>20.0.36719.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-rc-release-date-october-7-2025&preserve-view=true" data-raw-source="[Azure DevOps Server RC](/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-rc-release-date-october-7-2025)">Azure DevOps Server RC</a></td>
+          <td>October 7, 2025</td>
+          <td>20.0.36503.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-rc-release-date-october-7-2025&preserve-view=true" data-raw-source="[Azure DevOps Server RC](/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-20222-rtw-release-date-july-9-2024)">Azure DevOps Server RC</a></td>
+          <td>October 7, 2025</td>
+          <td>20.0.36503.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-20222-rtw-release-date-july-9-2024&preserve-view=true" data-raw-source="[2022.2 re-release](/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-20222-rtw-release-date-july-9-2024)">2022.2 re-release</a></td>
+          <td>August 13, 2024</td>
+          <td>19.235.35206.7</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-2022-update-2-rc-release-date-may-7-2024&preserve-view=true" data-raw-source="[2022.2 RTW](/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-2022-update-2-rc-release-date-may-7-2024)">2022.2 RTW</a></td>
+          <td>July 9, 2024</td>
+          <td>19.235.35102.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-2022-update-2-rc-release-date-may-7-2024&preserve-view=true" data-raw-source="[2022.2 RC](/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-2022-update-2-rc-release-date-may-7-2024)">2022.2 RC</a></td>
+          <td>May 7, 2024</td>
+          <td>19.235.34823.2</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-release-date-november-28-2023&preserve-view=true" data-raw-source="[2022.1 RTW](/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-release-date-november-28-2023)">2022.1 RTW</a></td>
+          <td>November 28, 2023</td>
+          <td>19.225.34309.2</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-rc2-release-date-october-31-2023&preserve-view=true" data-raw-source="[2022.1 RC2](/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-rc2-release-date-october-31-2023)">2022.1 RC2</a></td>
+          <td>October 31, 2023</td>
+          <td>19.225.34212.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-rc1-release-date-september-19-2023&preserve-view=true" data-raw-source="[2022.1 RC1](/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-rc1-release-date-september-19-2023)">2022.1 RC1</a></td>
+          <td>September 19, 2023</td>
+          <td>19.225.34108.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022)">2022 RTW</a></td>
+          <td>December 6, 2022</td>
+          <td>19.205.33122.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops&preserve-view=true" data-raw-source="[Azure DevOps Server RC](/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-rc-release-date-october-7-2025)">Azure DevOps Server RC</a></td>
+          <td>October 7, 2025</td>
+          <td>19.205.33011.1</td>
+        </tr>
+        <tr>
           <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022)">2022 RTW</a></td>
           <td>December 6, 2022</td>
           <td>19.205.33122.1</td>
