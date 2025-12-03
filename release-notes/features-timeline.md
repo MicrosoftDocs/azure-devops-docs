@@ -256,9 +256,9 @@ These investments include:
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q3</td>
       </tr>
          <tr>
-         <td><a href="/azure/devops/release-notes/2025/sprint-258-update#azure-devops-mcp-server-public-preview" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/2025/sprint-258-update#azure-devops-mcp-server-public-preview)">MCP Server for Azure DevOps</a></td>
+         <td><a href="/azure/devops/release-notes/2025/sprint-264-update#azure-devops-local-mcp-server-generally-available" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/2025/sprint-264-update#azure-devops-local-mcp-server-generally-available)">MCP Server for Azure DevOps</a></td>
          <td>General</td>
-         <td>2025 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr> 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent" data-raw-source="[Work item integration wth GitHub coding agent](/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent)">Support work item integration with the <br/>GitHub Copilot coding agent</a></td>
@@ -268,7 +268,7 @@ These investments include:
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-github-integration-scale-improvements" data-raw-source="[Scale improvements for connecting with GitHub repositories]()">Scale improvements for connecting with GitHub repositories</a></td>
          <td>Boards</td>
-         <td>2025 Q4</td>
+         <td>2026 Q1</td>
       </tr>           
     </tbody>
 </table>
@@ -468,7 +468,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="20"><strong>2025 Q4</strong></td>
+      <td rowspan="18"><strong>2025 Q4</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -486,15 +486,7 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>     
          <td><a href="/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent" data-raw-source="[Work item integration wth GitHub coding agent](/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent)">Support work item integration with the <br/>GitHub Copilot coding agent (GA)</a></td>      
          <td>Boards</td>
-      </tr>
-      <tr>          
-        <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-github-integration-scale-improvements" data-raw-source="[Scale improvements for connecting to GitHub repositories]()">Scale improvements for connecting with GitHub repositories</a></td>
-        <td>Boards</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved filter experience for boards and backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved filter experience for boards and backlogs</a></td>
-         <td>Boards</td>
-      </tr>
+      </tr>     
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>
@@ -551,10 +543,18 @@ Below, you will find several investments that we plan to deliver as part of this
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement" data-raw-source="[Streamlining bulk enablement scenarios](/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement)">Streamlining bulk enablement scenarios</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="1"><strong>2026 Q1</strong></td>
+      <td rowspan="3"><strong>2026 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts" data-raw-source="[Organization-level alerts view in security overview](/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts)">Organization-level alerts view in security overview</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr> 
+       <tr>          
+        <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-github-integration-scale-improvements" data-raw-source="[Scale improvements for connecting to GitHub repositories]()">Scale improvements for connecting with GitHub repositories</a></td>
+        <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved filter experience for boards and backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved filter experience for boards and backlogs</a></td>
+         <td>Boards</td>
+      </tr>
       <td rowspan="19"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
