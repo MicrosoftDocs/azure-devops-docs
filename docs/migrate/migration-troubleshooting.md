@@ -7,10 +7,11 @@ ms.subservice: azure-devops-migrate
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ai-usage: ai-assisted
+ms.collection: ce-skilling-ai-copilot metadata
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/26/2024
+ms.date: 12/03/2025
 ---
 
 # Resolve migration errors
@@ -253,7 +254,7 @@ Connect-MgGraph  -Scopes 'User.Read.All'
 Get-MgUser -Filter "UserPrincipalName eq 'someone@somecompany.com'"
 ```
 
-If the steps fail or you can’t find the user, check the connection between the **prepare** machine and Microsoft Entra ID. Run a network trace with **prepare** to see if the network blocks calls. If not, contact Azure support. Check the log file for the user information.
+If the steps fail or you can't find the user, check the connection between the **prepare** machine and Microsoft Entra ID. Run a network trace with **prepare** to see if the network blocks calls. If not, contact Azure support. Check the log file for the user information.
 
 ```cmdline
 Number of active users is {Number of Users}.
@@ -486,6 +487,32 @@ Verify the collection against which you're running the Data Migration Tool has p
 Migration failures mean that the migration queued, but didn't complete. The individual who queued the migration receives a failure email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your migration. 
 
 If the error is more complex, then the email you receive provides instructions on how to file a [customer support case](https://aka.ms/AzureDevOpsImportSupport). After you submit a customer support case, your team must roll back by bringing your Azure DevOps Server instance back online and reattach your collection. Your team members can then continue working. We recommended that you don't try the migration again until the failure causing the issue gets resolved.
+
+## Use AI to troubleshoot migration issues
+
+The following example prompt for Copilot Chat helps you troubleshoot Azure DevOps Data Migration Tool errors and migration problems. Copy and paste this prompt into Copilot Chat, replacing the placeholders with your specific information.
+
+For the best AI assistance, include specific details like the exact error code, migration phase where the error occurred, database size information, and any related configuration details.
+
+```copilot-prompt
+I'm encountering this Azure DevOps migration error: [PASTE YOUR ERROR MESSAGE HERE]
+
+Migration details:
+- Error code: [ERROR CODE like VS403###, ISVError:###]
+- Migration phase: [VALIDATION/PREPARATION/MIGRATION phase]
+- Collection database size: [SIZE IN GB if known]
+- Migration method: [DACPAC/SQL Azure VM]
+- Azure DevOps Server version: [VERSION like 2019, 2020, 2022]
+- Target Azure region: [REGION like East US, West Europe]
+- Collation: [DATABASE COLLATION if known]
+
+Can you help me troubleshoot this issue? Please provide step-by-step instructions to:
+1. Identify the root cause of the migration error
+2. Fix the database, configuration, or migration settings issue
+3. Verify the solution allows migration to proceed
+
+Context: This is for migrating from Azure DevOps Server to Azure DevOps Services using the Data Migration Tool. The error might be related to database size, collation, identity permissions, field conflicts, process templates, or connection string issues.
+```
 
 ## FAQs
 

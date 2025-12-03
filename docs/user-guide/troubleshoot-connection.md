@@ -1,12 +1,14 @@
 ---
 title: Troubleshoot Azure DevOps connection and access issues
 titleSuffix: Azure DevOps
-description: Learn how to resolve common connection problems, authentication errors, and permission issues when accessing Azure DevOps projects and organizations.
+description: Learn how to resolve common connection problems, authentication errors, and permission issues when you access projects and organizations.
 ms.subservice: azure-devops-new-user
+ai-usage: ai-assisted
+ms.collection: ce-skilling-ai-copilot metadata
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 08/26/2025
+ms.date: 12/03/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -14,82 +16,177 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-If you're experiencing issues connecting to a project in Azure DevOps, follow these troubleshooting steps to resolve common connectivity problems.
+If you're experiencing issues connecting to a project in Azure DevOps, this article provides step-by-step troubleshooting guidance to resolve common connectivity and authentication problems.
 
 ## Prerequisites
 
 [!INCLUDE [prerequisites-project-member-only](../includes/prerequisites-project-member-only.md)]
 
-## Troubleshoot sign in
+## Quick resolution steps
 
-Azure DevOps supports two types of identities for sign in: Microsoft Personal accounts and Microsoft Entra accounts. If the organization you're trying to access is connected to a Microsoft Entra tenant, you can only sign in with a Microsoft Entra account – either a member or a B2B guest. 
+If you're experiencing connection issues, try these quick steps first:
 
-### 401 - Not Authorized
+1. Clear your browser completely: Sign out using [https://aka.ms/VsSignout](https://aka.ms/VsSignout), then clear all cookies (**Ctrl**+**Shift**+**Delete**).
+2. Use a private browser session: Open an incognito or InPrivate window and test access.
+3. Verify organization URL: Ensure you're using the correct URL format: `https://dev.azure.com/{organizationName}`.
+4. Check your account type: Verify you're signing in with the correct account type (Microsoft Entra ID vs. personal Microsoft account).
+
+If these steps don't resolve the issue, continue with the following detailed troubleshooting sections.
+
+## Troubleshoot authentication errors
+
+Azure DevOps supports Microsoft Entra accounts and Microsoft personal accounts for authentication. Organizations connected to Microsoft Entra ID require Microsoft Entra authentication (member or B2B guest accounts).
+
+### 401 - Not Authorized errors
 
 [ ![Screenshot shows Azure DevOps connection 401 error.](media/troubleshoot-connection/401_notauthorized.png)](media/troubleshoot-connection/401_notauthorized.png#lightbox)
 
-The most common sign in error is *401 Not Authorized*, which occurs when your identity doesn't have permissions to access the organization or a resource within the organization. The following list outlines the most common causes for the 401 error:
+The **401 Not Authorized** error is the most common sign-in issue. This error occurs when your identity lacks permissions to access the organization or specific resources. Common causes include:
 
-* Your identity isn't a member of the organization.
-* You're trying to sign in with an alias, rather than your user principal name (UPN).
-* Your identity doesn't have Read permissions on the project or resource you're trying to access.
-* Your identity is a B2B guest in the Microsoft Entra tenant linked to the organization, and you never accepted the Microsoft Entra tenant invitation yet.
-* You have a personal Microsoft account with a sign-in address that matches a Microsoft Entra account, and you're signing in with the wrong account.
+- **Identity not added to organization**: Your account isn't listed in the organization's user directory.
+- **Alias vs. UPN confusion**: Attempting to sign in with an alias instead of your User Principal Name (UPN).
+- **Insufficient project permissions**: Lacking Read permissions on the target project or resource.
+- **Pending B2B guest invitation**: Microsoft Entra B2B guest invitation isn't accepted.
+- **Account type mismatch**: Attempting to sign in with the wrong account type when multiple accounts share the same email address.
 
-### Your identity isn't a member of the organization
+### Identity not in organization
 
-If you're getting a 401 error when trying to access your Azure DevOps organization, the first thing you should do is reach out to your Azure DevOps administrator to confirm that your identity shows up in the User list.
+**Resolution steps:**
 
-If you're authenticating with a Microsoft Entra ID account, the identity that shows up in the Users list must match your user principal name (UPN) in the Microsoft Entra tenant. If you're authenticating with a personal Microsoft account, the identity in the Users list must match the primary account.
-
-If you're a B2B guest in the Microsoft Entra tenant connected to your Azure DevOps organization, ensure that your UPN in the guest tenant exactly matches the UPN in your home tenant, including casing.
+1. Contact your Azure DevOps administrator to verify your identity appears in the organization's **Users** list.
+2. For **Microsoft Entra accounts**: Ensure the identity in the Users list exactly matches your UPN in the Microsoft Entra tenant.
+3. For **personal Microsoft accounts**: Confirm the identity matches your primary account email.
+4. For **B2B guests**: Verify your UPN in the guest tenant matches your home tenant UPN, including exact casing.
 
 > [!NOTE]
-> B2B guests show up in the Microsoft Entra ID portal as having a UPN in the format `{username}_{homeDomain}#EXT#@{guestDomain}`. The `{username}_{homeDomain}` is what needs to match the UPN in the home tenant, replacing the `_` with `@`.
+> B2B guests appear in Microsoft Entra ID with UPNs formatted as `{username}_{homeDomain}#EXT#@{guestDomain}`. The `{username}_{homeDomain}` portion must match your home tenant UPN, replacing the `_` with `@`.
 
-### You're trying to sign in with an alias, rather than your user principal name (UPN)
+### UPN vs. alias sign-in issues
 
-Azure DevOps doesn't support sign in aliases. You must sign in with your User Principal Name (UPN), if you're authenticating with a Microsoft Entra account, and the primary account if you're authenticating with a Personal Account.
+Azure DevOps doesn't support sign-in aliases. You must use your exact User Principal Name (UPN) for Microsoft Entra accounts or primary account for personal Microsoft accounts.
 
-For example, if your UPN is `12345@mycompany.com` and you configured a sign-in alias of `MyName@mycompany.com`, your administrator should add `12345@mycompany.com` to the org, and you should use `12345@mycompany.com` when going through the sign-in process. You can't use `MyName@mycompany.com` to sign in to Azure DevOps.
+**Example:** If your UPN is `john.doe@contoso.com` but you have an alias `jdoe@contoso.com`, you must sign in using `john.doe@contoso.com`.
 
-### Your identity doesn't have Read permissions on the project or resource you're trying to access
+**Resolution:** Ask your administrator to add your actual UPN (`john.doe@contoso.com`) to the organization and always use this UPN for sign-in.
 
-You might have access to the Azure DevOps organization but not have permission on the specific project or resource you're trying to access. Permissions typically get controlled by membership in built-in or custom groups, such as the Project Contributors or Project Readers group. If you're able to sign in to the root of your organization (`https://dev.azure.com/{orgName}`) but can't access a more specific link (like `https://dev.azure.com/{orgName}/{projectName}`), reach out to your Azure DevOps administrator to ensure you're assigned at least the Read permission on the asset you're trying to access.
+### Insufficient permissions
 
-### Your identity is a B2B guest in the Microsoft Entra tenant linked to the organization, and you haven't accepted the Microsoft Entra tenant invitation yet
+You might have organization access but lack permissions for specific projects or resources.
 
-To sign in to Azure DevOps as a B2B guest, accept the Microsoft Entra tenant invitation that gets sent to your email.
+**Symptoms:**
+- Can access `https://dev.azure.com/{orgName}` but not `https://dev.azure.com/{orgName}/{projectName}`.
+- Receive 401 errors when accessing specific work items, repositories, or pipelines.
 
-Microsoft Entra tenant admins can view whether you accepted the invitation from the Azure portal, and trigger a new notification to be sent, if needed:
+**Resolution:** Contact your Azure DevOps administrator to verify you have at least **Read** permissions for the target resource.
 
-1. Go to https://portal.azure.com.
-2. Go to the Microsoft Entra ID portal.
-3. Select **Manage** > **Users**.
-4. Select the guest user.
-5. On the **Overview** page, look for the B2B invitation tile.
-6. If the state is still "Pending acceptance," there's a "Resend invitation" link that you can use to trigger a new email to be sent.
+### B2B guest invitation issues
 
-### You have a personal Microsoft account with a sign-in address that matches a Microsoft Entra account, and you're signing in with the wrong account
+B2B guests must accept their Microsoft Entra tenant invitation before accessing Azure DevOps.
 
-For organizations that aren't connected to a Microsoft Entra tenant, you can sign in with either a Microsoft personal account or a Microsoft Entra account. The account you choose when you first sign into the Azure DevOps organization determines the account you need to use going forward. Azure DevOps treats these accounts as separate identities, so you can't interchange which one you sign in with.
+**Resolution steps for guests:**
+1. Check your email for the Microsoft Entra invitation.
+2. Select the invitation link and complete the acceptance process.
+3. Attempt to sign in to Azure DevOps again.
 
-If you want to change which identity you use to access the organization, have your administrator remove and readd you from the organization. This action puts your identity back into the state where it's waiting to see if you use the Microsoft personal account or the Microsoft Entra version of the account.
+**Resolution steps for tenant administrators:**
+1. Go to [https://portal.azure.com](https://portal.azure.com).
+2. Select **Microsoft Entra ID** > **Users**.
+3. Find the guest user and check their **Overview** page.
+4. If the B2B invitation status shows "Pending acceptance," use **Resend invitation**.
 
-We generally recommend against having matching personal and Microsoft Entra accounts, as it can cause unnecessary confusion. You can rename your personal account to no longer match your Microsoft Entra account by following the instructions here: [Change the email address or phone number for your Microsoft account - Microsoft Support](https://support.microsoft.com/help/12407/microsoft-account-change-email-phone-number).
+### Account type conflicts
 
-If you think you're a member of the organization, but get this error page, [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
+Organizations not connected to Microsoft Entra ID support both personal Microsoft accounts and Microsoft Entra accounts. The first account type you use establishes your identity permanently.
 
-## Troubleshoot connectivity
+**Resolution:** If you need to change account types:
+1. Have your administrator remove and readd you to the organization.
+2. Sign in with your preferred account type when prompted.
 
-To resolve connectivity issues, complete the following steps:
+> [!TIP]
+> Avoid having matching personal and Microsoft Entra accounts. Consider [renaming your personal account](https://support.microsoft.com/help/12407/microsoft-account-change-email-phone-number) to prevent confusion.
 
-1. Sign out of your browser. To do so, select the [Visual Studio sign out](https://aka.ms/VsSignout) link.
-2. Delete the cookies in your browser. To delete cookies in most browsers, select **Ctrl**+**Shift**+**Delete**.
-3. Open Microsoft Edge and delete the browser cookies. The Visual Studio IDE uses Microsoft Edge cookies.
-4. Close all browsers and close the Visual Studio IDE.
-5. Use a private browser session to retry the connection. If the issue is with the Visual Studio IDE, remove the connection and then readd it in Team Explorer.
+## Troubleshoot connectivity issues
 
-## I still need help
+### Browser-related problems
 
-If you’re still blocked after going through this guide, [contact Microsoft Support](provide-feedback.md). Support asks you to provide a browser trace of your sign-in attempt to troubleshoot. Follow the instructions at [Capture a browser trace for troubleshooting](capture-browser-trace.md) to ensure the trace contains the information Support needs to investigate the issue.
+**Complete sign-out and cleanup:**
+
+1. Sign out completely: Go to [https://aka.ms/VsSignout](https://aka.ms/VsSignout).
+2. Clear all browser data: Select **Ctrl**+**Shift**+**Delete** and remove:
+   - Cookies and site data.
+   - Cached images and files.
+   - Autofill form data.
+3. Clear Microsoft Edge data: Visual Studio IDE uses Microsoft Edge cookies, so clear Microsoft Edge data even if you use a different browser.
+4. Close all applications: Exit all browsers and Visual Studio IDE instances.
+5. Test with private browsing: Use an incognito or InPrivate window to test access.
+
+### Visual Studio IDE connection issues
+
+If you're experiencing connection issues within Visual Studio:
+
+1. Remove existing connections: In Team Explorer, remove all Azure DevOps connections.
+2. Clear credential cache: Delete cached credentials from Windows Credential Manager.
+3. Restart Visual Studio: Close and reopen Visual Studio completely.
+4. Readd connections: Add your Azure DevOps connection again using current credentials.
+
+### Network and proxy issues
+
+**Corporate network troubleshooting:**
+
+1. Test from different network: Try accessing Azure DevOps from a personal device/network.
+2. Check proxy settings: Verify corporate proxy allows `*.visualstudio.com` and `*.azure.com` domains.
+3. Firewall configuration: Ensure firewall permits HTTPS traffic to Azure DevOps endpoints.
+4. VPN interference: Test with VPN disabled if applicable.
+
+## Advanced troubleshooting
+
+### Modern authentication migration
+
+If you're using legacy authentication methods, consider migrating to modern alternatives:
+
+- **Personal Access Tokens (PATs)**: Migrate to [Microsoft Entra OAuth applications](../integrate/get-started/authentication/entra-oauth.md).
+- **Username/password**: Switch to [service principals or managed identities](../integrate/get-started/authentication/service-principal-managed-identity.md).
+- **Legacy tokens**: Implement [Microsoft Entra authentication](../integrate/get-started/authentication/entra.md) for better security.
+
+### Service connection authentication
+
+For Azure DevOps service connections experiencing authentication issues:
+
+1. **Refresh service principal secrets**: Update expired client secrets or certificates.
+2. **Verify permissions**: Ensure service principals have appropriate Azure DevOps permissions.
+3. **Check token expiration**: Validate that authentication tokens aren't expired.
+4. **Review audit logs**: Check Microsoft Entra audit logs for authentication failures.
+
+## Use AI to troubleshoot connection issues
+
+The following example prompt for Copilot Chat helps Copilot troubleshoot your connection and authentication errors. Copy and paste this prompt into Copilot Chat, replacing the placeholder with your specific error message or issue description.
+
+```copilot-prompt
+I'm getting this Azure DevOps connection/authentication error: [PASTE YOUR ERROR MESSAGE HERE]
+
+Can you help me troubleshoot this issue? Please provide step-by-step instructions to:
+1. Identify the root cause of the connection problem
+2. Fix the authentication or access issue
+3. Verify I can successfully connect to my Azure DevOps project
+
+Context: This is for connecting to an Azure DevOps organization and project. I've already tried basic troubleshooting like clearing browser cache and using a private browser session.
+```
+
+## Get other help
+
+When you complete all troubleshooting steps and still can't connect:
+
+1. **Collect diagnostic information**: Create a [browser trace](capture-browser-trace.md) of your failed sign-in attempt.
+2. **Contact Microsoft Support**: [Create a support request](https://azure.microsoft.com/support/create-ticket/) and include:
+   - Detailed description of the issue.
+   - Steps you already attempted.
+   - Browser trace files.
+   - Screenshots of error messages.
+3. **Community support**: Search or post questions on the [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/AzureDevOps).
+
+## Related content
+
+- [Azure DevOps authentication guidance](../integrate/get-started/authentication/authentication-guidance.md)
+- [Microsoft Entra authentication for Azure DevOps](../integrate/get-started/authentication/entra.md)
+- [Troubleshoot access and permission issues](../organizations/security/troubleshoot-permissions.md)
+- [Capture browser traces for troubleshooting](capture-browser-trace.md)

@@ -4,11 +4,13 @@ titleSuffix: Azure DevOps
 description: Find helpful troubleshooting information for resolving access and permission issues in Azure DevOps.  
 ms.assetid: 
 ms.subservice: azure-devops-security
+ai-usage: ai-assisted
+ms.collection: ce-skilling-ai-copilot metadata
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/28/2025
+ms.date: 12/03/2025
 ms.custom: sfi-image-nochange
 --- 
 
@@ -251,6 +253,33 @@ You might be signed into Azure DevOps with an incorrect identity. Do the followi
 4. Sign in to [Azure DevOps](https://dev.azure.com/VSTS-Catapult) again and choose a different identity.
 
 ::: moniker-end
+
+## Use AI to troubleshoot permissions and access issues
+
+The following example prompt for Copilot Chat helps you troubleshoot Azure DevOps permissions, access levels, and security group issues. Copy and paste this prompt into Copilot Chat, replacing the placeholders with your specific information.
+
+> [!TIP]
+> For the best AI assistance, include specific details like the user's access level, security groups they belong to, specific features they can't access, and any error messages they're receiving.
+
+```copilot-prompt
+I'm having this Azure DevOps permissions/access issue: [PASTE YOUR ERROR MESSAGE OR DESCRIBE THE PROBLEM]
+
+User and permission details:
+- User's access level: [Stakeholder/Basic/Basic + Test Plans/Visual Studio subscription]
+- Security groups: [LIST GROUPS like Project Contributors, Project Readers, etc.]
+- Feature they can't access: [SPECIFIC FEATURE like work items, repos, pipelines, etc.]
+- Project name: [PROJECT NAME if applicable]
+- Organization name: [ORGANIZATION NAME if applicable]
+- Error message: [EXACT ERROR MESSAGE if any]
+
+Can you help me troubleshoot this issue? Please provide step-by-step instructions to:
+1. Identify the root cause of the permissions problem
+2. Fix the access level, security group membership, or permission settings
+3. Verify the user can successfully access the feature
+
+Context: This is for troubleshooting user access and permissions in Azure DevOps. The issue might be related to access levels, security group memberships, project-level permissions, organization settings, or feature-specific restrictions.
+```
+
 
 ## Other areas where permissions might be applied
 

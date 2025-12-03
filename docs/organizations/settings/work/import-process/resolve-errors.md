@@ -4,12 +4,14 @@ titleSuffix: Azure DevOps Services
 description: Fix errors reported upon importing a process to support customization of tracking work in Azure DevOps Services.  
 ms.service: azure-devops-boards
 ms.custom: engagement-fy23
-ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
+ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43 
+ai-usage: ai-assisted 
+ms.collection: ce-skilling-ai-copilot metadata
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 02/10/2025
+ms.date: 12/03/2025
 ---
 
 # Resolve validation errors for process import
@@ -37,6 +39,30 @@ If you're just starting your customization, [review the validation rules provide
 ## Prerequisites
 
 [!INCLUDE [process-prerequisites](../../includes/process-prerequisites.md)]
+
+## Use AI to troubleshoot process import errors
+
+The following example prompt for Copilot Chat helps you troubleshoot process import validation errors and XML configuration issues. Copy and paste this prompt into Copilot Chat, replacing the placeholders with your specific information.
+
+For the best AI assistance, include specific details like the error code (TF######), affected file names, work item type names, and field reference names mentioned in the validation error.
+
+```copilot-prompt
+I'm getting this Azure DevOps process import error: [PASTE YOUR ERROR MESSAGE HERE]
+
+Process import details:
+- Error code: [ERROR CODE like TF402###]
+- Affected file: [XML FILE NAME like Bug.xml, ProcessConfiguration.xml]
+- Work item type: [WIT NAME if applicable]
+- Field reference name: [FIELD REFNAME if applicable]
+- Custom namespace: [YOUR CUSTOM NAMESPACE if applicable]
+
+Can you help me troubleshoot this issue? Please provide step-by-step instructions to:
+1. Identify the root cause of the validation error
+2. Fix the XML configuration or process definition
+3. Verify the changes resolve the validation issue
+
+Context: This is for importing a custom process template to Azure DevOps Services using the Hosted XML process model. The error might be related to work item type definitions, field configurations, process configuration, categories, or XML schema violations.
+```
 
 <a id="info-only"></a>
 
@@ -1192,7 +1218,7 @@ Only one portfolio backlog, the top backlog, might be unparented. All other back
   <PortfolioBacklog category="Microsoft.FeatureCategory" parent="Microsoft.EpicCategory" pluralName="Features" singularName="Feature">
 ```
 
-<a id="402595"></a>
+<a id="TF402595"></a>
 
 ### 402595: Too many portfolio backlogs are defined. A maximum of 5 are allowed.
 
@@ -1476,7 +1502,7 @@ You should also include a `Control` element within the `FORM` section of the nam
 
 #### Error example
 
-ProcessConfiguration.xml specifies two custom fields. However, these fields aren't defined in the UserStory.xml file. 
+ProcessConfiguration specifies two custom fields. However, these fields aren't defined in the UserStory.xml file. 
 
 ```xml
 <AddPanel>
@@ -1609,50 +1635,14 @@ UserStory.xml
 
 <a id="TF402558"></a>
 
-### TF402558: The definition of field *[refName]* is inconsistent with the existing definition of the field in the following templates: *[templateNames]*.
-
-Define fields consistently across processes you're importing to Azure DevOps Services. 
-The system doesn't allow you to import a process that contains a `FIELD` element which is defined 
-one way in Process A and another way in Process B. All `FIELD` element attributes must match.
-
-#### Example
-
-Process A, Bug.xml
-
-```xml
-  <FIELDS>  
-    ...   
-    <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
-    ...
-  </FIELDS>
-```
-
-Process B, Bug.xml
-
-```xml
-  <FIELDS>  
-    ...   
-    <FIELD name="Bar" refname="MyCompany.CustomFields.Foo" type="Double" reportable="dimension" />
-    ...
-  </FIELDS>
-```
-
-Notice how different values are specified for `name` and `type` attributes. 
-
-### Resolution
-
-Ensure that fields of the same `refname` are defined the same across all processes imported or that you plan to import to Azure DevOps Services.
-
-<a id="TF402559"></a>
-
-### TF402559: The definition for field *[refName]* is inconsistent with an existing field. The `type` is *[typeName]* but should be *[typeName]*.
+### TF402558: The definition of field *[refName]* is inconsistent with an existing field. The `type` is *[typeName]* but should be *[typeName]*.
 Edit the WIT file that contains the named field to ensure the specified `type` attribute value is consistent across all WITs.  
 
 <a id="TF402562"></a>
 
 ### TF402562: You defined *[n]* fields for work item type *[witName]*. Only *[fieldLimit]* are allowed.
 
-You defined *[n]* fields for work item type *[witName]*. Only *[fieldLimit]* are allowed. Within a single WIT, you can specify only the specified number of fields.  
+You defined *[n]* fields for the named WIT which exceeds the allowed number of fields for any one WIT.  
 
 Edit the named WIT and remove the extra custom fields to reduce the total number of fields to be within the allowed limit.
 
@@ -1741,7 +1731,7 @@ Review the `FIELDS` and `WORKFLOW` sections for the presence of `"for"` and `"no
 Most System and Microsoft.AzureDevOps fields don't support rules. 
 For more information, see [Rules and rule evaluation](../rule-reference.md).
 
-Edit the definition files for work item types that contain the named field and remove the field rules specified for it. 
+Edit the definition files for work item types that contain the named field to remove the field rules specified for it. 
 
 <a id="TF402602"></a>
 
@@ -1864,6 +1854,7 @@ To resolve this error, create two separate groups that contain one control each.
 #### Resolution example
 
 ```xml
+
 <Section>
     <Group Label="Reason for Request">
         <Control Label="Reason For Request:" Type="HtmlFieldControl" FieldName="System.Description" />       
@@ -1924,7 +1915,7 @@ Field names must be unique within the work item type.
   <FIELD name="Foo" refname="MyCompany.CustomFields.Bar" type="String" reportable="dimension" />
 ```
 
-Notice there are two fields with the name `<FIELD name="Foo"`
+Notice there are two fields with the name `<FIELD name="Foo"`.
 
 #### Resolution example
 
@@ -1990,6 +1981,7 @@ My Work Item B.xml
   <WORKITEMTYPE name="My Work Item B" refname="My.MyWorkItemB">
 ```
 
+
 <a id="TF402581"></a>
 
 ### TF402581: You can only use the refname *[refName]* for a single work item type.
@@ -2045,48 +2037,5 @@ Custom controls aren't supported in Azure DevOps Services. Review the `FORM` sec
             <Control FieldName="Fabrikam.Content.Technology" Type="FabrikamMultiValueControl" Label="Technology" LabelPosition="Left" />
         </Column>
     </Group>
-``` 
-
-
-<a id="test-management"></a>
-
-## Test management plug-in errors
-
-The TestManagement.xml file, located in the Test Management folder, 
-must conform to the syntax and rules.
-
-
-<a id="TF402533"></a>
-
-### TF402533: Element '*[elementName]*' in TestManagement plug-in is missing the  `'fileName'` attribute.  
-
-Add the missing attribute to the named element in the TestManagement.xml file. 
-
-<a id="TF402534"></a>
-
-### TF402534: TestManagement plug-in contains an unsupported task '*[taskName]*'  
-
-Correct the named tasked in your TestManagement.xml file.
-
-#### Error example 
-
-The `TestResolutionStates` element is misspelled.   
-```xml
-    <taskXml>
-      <TestResolutionStates fileName="Test Management\TestResolutionState.xml" />
-    </taskXml>
 ```
 
-#### Resolution example 
-
-Corrected misspellings.  
-```xml
-    <taskXml>
-      <TestResolutionStates fileName="Test Management\TestResolutionState.xml" />
-    </taskXml>
-```
-
-## Related content
-
-- [Validate and import processes](../../../../migrate/migration-import.md)
-- [Azure DevOps Data Import Service](../../../../migrate/migration-overview.md)
