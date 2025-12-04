@@ -5,7 +5,7 @@ title: Troubleshoot Service Hook Integrations
 description: Find out how to access the history of service hook subscriptions in Azure DevOps. Get information about HTTP response failures that affect subscription states.
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 ms.custom: engagement-fy23
-ms.collection: ce-skilling-ai-copilot metadata
+ms.collection: ce-skilling-ai-copilot
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
