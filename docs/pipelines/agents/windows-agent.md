@@ -2,7 +2,7 @@
 title: Deploy an Azure Pipelines agent on Windows
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines
 ms.topic: concept-article
-ms.date: 07/21/2025
+ms.date: 11/07/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -12,18 +12,18 @@ monikerRange: '<= azure-devops'
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
-:::moniker range="=azure-devops"
+:::moniker range=">=azure-devops-server"
 
-This article provides guidance for using the [4.x agent software](v4-agent.md) with Azure DevOps Services.
+This article provides guidance for using the [4.x agent software](v4-agent.md) with Azure DevOps Services and Azure DevOps Server.
 
 :::moniker-end
 
-:::moniker range="<azure-devops"
+:::moniker range="<azure-devops-server"
 
-This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
+This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server 2022 and Azure DevOps Server 2020. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
 > [!IMPORTANT]
-> If you're using Azure DevOps Services, you should be using the [4.x agent software](v4-agent.md).
+> If you're using Azure DevOps Services or Azure DevOps Server, you should be using the [4.x agent software](v4-agent.md).
 
 :::moniker-end
 
@@ -35,6 +35,19 @@ This article provides guidance for using the [3.x agent software](v3-agent.md) w
 ## Check prerequisites
 
 Make sure your machine has these prerequisites:
+
+:::moniker range=">=azure-devops-server"
+
+* Operating system version
+  [!INCLUDE [v4-windows-os](./includes/v4-windows-os.md)]
+* The agent software installs its own version of .NET so there's no .NET prerequisite.
+* [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
+* **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
+* Recommended - [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) (2015 or higher)
+
+:::moniker-end
+
+:::moniker range="<azure-devops-server"
 
 * Operating system version
   * Client OS
@@ -49,6 +62,7 @@ Make sure your machine has these prerequisites:
 * **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
 * Recommended - [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) (2015 or higher)
 
+:::moniker-end
 
 You should run agent setup manually the first time.
 After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
@@ -159,7 +173,7 @@ If you choose to run as a service (which we recommend), the username you run as 
 
 ### Run interactively
 
-If you configured the agent to run interactively, run the following the command to start the agent.
+If you configured the agent to run interactively, run the following command to start the agent.
 
  ```ps
  .\run.cmd
