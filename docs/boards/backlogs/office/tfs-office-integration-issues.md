@@ -4,10 +4,12 @@ titleSuffix: Azure Boards
 description: Learn how to resolve common integration issues that occur with Azure DevOps Office integrations. 
 ms.service: azure-devops-boards
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
+ai-usage: ai-assisted
+ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 09/19/2025
+ms.date: 12/03/2025
 ---
 
 # Resolve Azure DevOps and Office integration issues
@@ -142,7 +144,7 @@ If the previous steps don't help, try the next steps:
 
 ## User can't sign in to Azure DevOps from Excel after password change
 
-If you changed your network password and start receiving authentication errors with the new account info, you might be experiencing a known issue. The token stored in Visual Studio is no longer valid, but the system doesn’t recognize the need to refresh it. You don't need to take any action; the token expires eventually, and authentication begins working again, though the delay is unpredictable. Use the following workaround to manually remove the token.
+If you changed your network password and start receiving authentication errors with the new account info, you might be experiencing a known issue. The token stored in Visual Studio is no longer valid, but the system doesn't recognize the need to refresh it. You don't need to take any action; the token expires eventually, and authentication begins working again, though the delay is unpredictable. Use the following workaround to manually remove the token.
 
 ### Remove the token from the registry
 
@@ -304,6 +306,35 @@ If the problem persists after completing the previous troubleshooting steps, con
    ```cmd
    sfc /scannow
    ```
+
+## Use AI to troubleshoot Office integration issues
+
+The following example prompt for Copilot Chat helps you troubleshoot Azure DevOps and Office integration problems. Copy and paste this prompt into Copilot Chat, replacing the placeholders with your specific information.
+
+For the best AI assistance, include specific details like the exact error message, Office version, Azure DevOps add-in status, and whether the Team ribbon is visible in your Office applications.
+
+```copilot-prompt
+I'm having this Azure DevOps Office integration issue: [PASTE YOUR ERROR MESSAGE OR DESCRIBE THE PROBLEM]
+
+Office integration details:
+- Office version: [Microsoft 365/Office 2021/2019/2016/2013]
+- Excel/Project version: [SPECIFIC VERSION NUMBER if known]
+- Azure DevOps add-in status: [Enabled/Disabled/Missing/Not visible]
+- Team ribbon visibility: [Visible/Missing/Grayed out]
+- Error code: [ERROR CODE like TF86001, TF80070, TF31003 if applicable]
+- Visual Studio version: [VERSION if installed]
+- Installation order: [Office first or Visual Studio first]
+- Recent changes: [Password change, Office update, etc.]
+
+Can you help me troubleshoot this issue? Please provide step-by-step instructions to:
+1. Identify the root cause of the Office integration problem
+2. Fix the add-in installation, registry settings, or authentication issue
+3. Verify the Azure DevOps Team ribbon appears and functions correctly
+
+Context: This is for Azure DevOps Office integration with Excel or Project. The issue might be related to add-in loading, COM registration, authentication, assembly conflicts, or installation problems.
+```
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 ## Related content
 
