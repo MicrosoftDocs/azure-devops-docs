@@ -389,7 +389,7 @@ If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.
 (The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
 
 [TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
-It has an EULA, which you must to accept during configuration if you plan to work with TFVC.
+It has an EULA, which you must accept during configuration if you plan to work with TFVC.
 
 Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin is downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin is removed after the job execution.
 
