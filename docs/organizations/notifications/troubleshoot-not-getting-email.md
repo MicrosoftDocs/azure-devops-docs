@@ -5,7 +5,7 @@ description: Discover why you aren't receiving emails from your Azure DevOps not
 ms.subservice: azure-devops-notifications
 ms.custom: quarterly-update, copilot-scenario-highlight
 ms.reviewer: wismythe
-ai-usage: ai-assistance
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting-general
