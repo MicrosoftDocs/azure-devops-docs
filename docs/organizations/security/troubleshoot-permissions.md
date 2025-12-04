@@ -5,13 +5,12 @@ description: Find helpful troubleshooting information for resolving access and p
 ms.assetid: 
 ms.subservice: azure-devops-security
 ai-usage: ai-assisted
-ms.collection: ce-skilling-ai-copilot metadata
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 12/03/2025
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, copilot-scenario-highlight
 --- 
 
 # Troubleshoot access and permission issues
@@ -258,8 +257,7 @@ You might be signed into Azure DevOps with an incorrect identity. Do the followi
 
 The following example prompt for Copilot Chat helps you troubleshoot Azure DevOps permissions, access levels, and security group issues. Copy and paste this prompt into Copilot Chat, replacing the placeholders with your specific information.
 
-> [!TIP]
-> For the best AI assistance, include specific details like the user's access level, security groups they belong to, specific features they can't access, and any error messages they're receiving.
+For the best AI assistance, include specific details like the user's access level, security groups they belong to, specific features they can't access, and any error messages they're receiving.
 
 ```copilot-prompt
 I'm having this Azure DevOps permissions/access issue: [PASTE YOUR ERROR MESSAGE OR DESCRIBE THE PROBLEM]
@@ -280,6 +278,7 @@ Can you help me troubleshoot this issue? Please provide step-by-step instruction
 Context: This is for troubleshooting user access and permissions in Azure DevOps. The issue might be related to access levels, security group memberships, project-level permissions, organization settings, or feature-specific restrictions.
 ```
 
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 ## Other areas where permissions might be applied
 

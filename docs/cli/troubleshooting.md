@@ -4,11 +4,13 @@ titleSuffix: Azure DevOps
 description: Azure DevOps extension command line interface troubleshooting 
 ms.topic: troubleshooting 
 ms.subservice: azure-devops-reference
+ms.collection: ce-skilling-ai-copilot
+ai-usage: ai-assisted
 ms.manager: mijacobs 
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/17/2020
+ms.date: 12/03/2025
 ---
 
 # Troubleshoot common errors in Azure DevOps CLI
@@ -54,10 +56,35 @@ You can only add child iterations of a backlog iteration to your team. Create ch
 `az boards iteration project create --name "child_iteration_name" --path <BacklogIterationPath>`
 
 Get the identifier of the iteration and add it to your team using `az boards iteration team add -h` command.
- 
 
+## Use AI to troubleshoot Azure DevOps CLI issues
+
+The following example prompt for Copilot Chat helps you troubleshoot Azure DevOps CLI commands and error messages. Copy and paste this prompt into Copilot Chat, replacing the placeholders with your specific information.
+
+For the best AI assistance, include specific details like the exact command you ran, the complete error message, your project and team names, and the Azure CLI extension version you're using.
+
+```copilot-prompt
+I'm getting this error when running an Azure DevOps CLI command: [PASTE YOUR ERROR MESSAGE HERE]
+
+CLI command details:
+- Full command: [COMPLETE COMMAND like "az boards area team add --name MyArea --team MyTeam"]
+- Azure CLI version: [VERSION like 2.x.x]
+- Azure DevOps extension version: [VERSION like 0.x.x]
+- Organization: [ORGANIZATION NAME]
+- Project: [PROJECT NAME]
+- Team: [TEAM NAME if applicable]
+- Operating system: [Windows/macOS/Linux]
+
+Can you help me troubleshoot this issue? Please provide step-by-step instructions to:
+1. Identify the root cause of the CLI command error
+2. Fix the command syntax, authentication, or configuration issue
+3. Verify the command executes successfully
+
+Context: This is for Azure DevOps CLI commands. The error might be related to authentication, command syntax, missing parameters, project/team configuration, area paths, iteration paths, or permission issues.
+```
+ 
 ## Related content
 - [az boards area](/cli/azure/boards/area)
 - [az boards iteration](/cli/azure/boards/iteration)
 - [Define area paths and assign to a team](../organizations/settings/set-area-paths.md)
-- [Define Iteration Paths and configure team iterations](../organizations/settings/set-iteration-paths-sprints.md) 
+- [Define Iteration Paths and configure team iterations](../organizations/settings/set-iteration-paths-sprints.md)

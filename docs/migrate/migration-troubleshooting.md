@@ -4,10 +4,9 @@ titleSuffix: Azure DevOps
 description: Troubleshoot and resolve common Data Migration Tool validation errors. 
 ms.topic: troubleshooting
 ms.subservice: azure-devops-migrate
-ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done, copilot-scenario-highlight
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ai-usage: ai-assisted
-ms.collection: ce-skilling-ai-copilot metadata
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
@@ -513,6 +512,8 @@ Can you help me troubleshoot this issue? Please provide step-by-step instruction
 
 Context: This is for migrating from Azure DevOps Server to Azure DevOps Services using the Data Migration Tool. The error might be related to database size, collation, identity permissions, field conflicts, process templates, or connection string issues.
 ```
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 ## FAQs
 

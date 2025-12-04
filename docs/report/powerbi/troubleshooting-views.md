@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
 ai-usage: ai-assisted
-ms.collection: ce-skilling-ai-copilot metadata
+ms.custom: copilot-scenario-highlight
 monikerRange: "<=azure-devops"
 ms.date: 12/03/2025
 ---
@@ -153,6 +153,8 @@ Can you help me troubleshoot this issue? Please provide step-by-step instruction
 
 Context: This is for an Analytics view in Azure DevOps that I'm trying to connect to Power BI. The error might be related to view verification, field conflicts, data size limits, or Power BI refresh issues.
 ```
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 ## Advanced troubleshooting
 

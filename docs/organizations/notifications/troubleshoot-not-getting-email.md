@@ -3,9 +3,8 @@ title: Troubleshoot Not Receiving Notification Emails
 titleSuffix: Azure DevOps
 description: Discover why you aren't receiving emails from your Azure DevOps notification subscriptions and fix the problem.
 ms.subservice: azure-devops-notifications
-ms.custom: quarterly-update
+ms.custom: quarterly-update, copilot-scenario-highlight
 ms.reviewer: wismythe
-ms.collection: ce-skilling-ai-copilot metadata
 ai-usage: ai-assistance
 ms.author: chcomley
 author: chcomley
@@ -124,3 +123,5 @@ Here are the details:
 
 Can you help me identify potential issues and solutions?
 ```
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to resolve common connection problems, authentication errors, and permission issues when you access projects and organizations.
 ms.subservice: azure-devops-new-user
 ai-usage: ai-assisted
-ms.collection: ce-skilling-ai-copilot metadata
+ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
@@ -171,6 +171,8 @@ Can you help me troubleshoot this issue? Please provide step-by-step instruction
 
 Context: This is for connecting to an Azure DevOps organization and project. I've already tried basic troubleshooting like clearing browser cache and using a private browser session.
 ```
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 ## Get other help
 
