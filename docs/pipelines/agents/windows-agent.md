@@ -173,7 +173,7 @@ If you choose to run as a service (which we recommend), the username you run as 
 
 ### Run interactively
 
-If you configured the agent to run interactively, run the following the command to start the agent.
+If you configured the agent to run interactively, run the following command to start the agent.
 
  ```ps
  .\run.cmd
