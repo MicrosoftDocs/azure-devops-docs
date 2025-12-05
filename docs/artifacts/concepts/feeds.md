@@ -20,7 +20,7 @@ Azure Artifacts feeds also support saving packages from public registries like *
 
 Azure Artifacts feeds can be scoped to an organization or a project. A feed can also be public if it's scoped to a public project:
 
-**Project-scoped feeds**: Feeds scoped to a project. They’re only viewable within the hosting project, and only project-scoped feeds can be designated as[public feeds](#public-feeds) by switching the project's visibility to **Public** in Project Settings.
+**Project-scoped feeds**: Feeds scoped to a project. They’re only viewable within the hosting project, and only project-scoped feeds can be designated as [public feeds](#public-feeds) by switching the project's visibility to **Public** in Project Settings.
 
 **Organization-scoped feeds**: Feeds scoped to an organization. They’re viewable from any project within the organization. Organization-scoped feeds **cannot** be converted into project-scoped feeds.
 
