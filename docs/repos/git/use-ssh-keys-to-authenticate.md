@@ -225,7 +225,7 @@ Proceed only if they match!
 **As an alternative option**, a Project Collection Admin can disable the policy that validates the SSH key expiration date. **By default, the Validate SSH key expiration policy is enabled.** For more information, see [SSH key policies](../../organizations/accounts/change-application-access-policies.md#ssh-key-policies).
 
 You automatically receive a notification 7 days prior and when your key expires. 
-Along with these notifications you might also see the messaging below:
+Along with these notifications, you will also see the messaging below:
 
 ```
 remote: Authentication failed: your SSH key has expired. To restore access, visit https://aka.ms/ado-ssh-public-key-expired for guidance.
