@@ -61,7 +61,7 @@ Welcome to what's new in the Azure DevOps docs from November 1, 2025 through Nov
 ### New articles
 
 - [Node.js runners in Azure Pipelines Agent](/azure/devops/pipelines/agents/nodejs-runners)
-- [Manually set an Azure Resource Manager with a secret](/azure/devops/pipelines/release/configure-app-secret)
+- [Manually set an Azure Resource Manager connection with a secret](/azure/devops/pipelines/release/configure-app-secret)
 
 ### Updated articles
 
