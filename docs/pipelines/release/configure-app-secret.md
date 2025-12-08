@@ -1,5 +1,5 @@
 ---
-title: Manually create an Azure Resource Manager with a secret
+title: Manually create an Azure Resource Manager service connection with a secret
 description: Learn how to manually set an Azure Resource Manager service connection with a secret in Azure Pipelines, one of the services in Azure DevOps.
 ms.topic: concept-article
 ms.author: jukullam
@@ -10,7 +10,7 @@ ms.custom:
 "recommendations": "true"
 ---
 
-# Manually set an Azure Resource Manager with a secret
+# Manually set an Azure Resource Manager service connection with a secret
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
