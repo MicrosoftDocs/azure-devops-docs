@@ -5,7 +5,7 @@ ms.topic: tutorial
 ms.custom: devx-track-azurecli, devx-track-extended-java, linux-related-content
 ms.author: jukullam
 author: JuliaKM
-ms.date: 10/03/2022
+ms.date: 12/09/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -135,15 +135,61 @@ You'll need a resource group, storage account, and shared image gallery for your
     ```azurecli-interactive
     az identity create -g myVMSSResourceGroup -n myVMSSIdentity
     ```
+
 2. From the output, copy the `id`.  The `id` will look like `/subscriptions/<SUBSCRIPTION ID>/resourcegroups/<RESOURCE GROUP>/providers/Microsoft.ManagedIdentity/userAssignedIdentities/<USER ASSIGNED IDENTITY NAME>`. 
 
-3. Open your image gallery in the gallery and assign `myVMSSIdentity` the Contributor role. Follow [these steps to add a role assignment](/azure/role-based-access-control/role-assignments-portal).  
+3. Assign the managed identity the minimum required permissions for image building and deployment. Instead of using the broad **Contributor** role, assign these specific roles:
+
+   - **Azure Image Builder Service Image Creation Role** - Required for Image Builder to create and distribute images
+   - **Storage Account Contributor** - Limited to the specific storage account used for build artifacts
+   - **Shared Image Gallery Contributor** - Limited to the specific gallery
+
+   To assign these roles using the Azure CLI:
+
+   ```azurecli-interactive
+   # Assign Image Builder Service Image Creation Role (built-in role)
+   az role assignment create --assignee-object-id <MANAGED_IDENTITY_OBJECT_ID> \
+     --role "Azure Image Builder Service Image Creation Role" \
+     --scope /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/myVMSSResourceGroup
+
+   # Assign Storage Account Contributor to the specific storage account
+   az role assignment create --assignee-object-id <MANAGED_IDENTITY_OBJECT_ID> \
+     --role "Storage Account Contributor" \
+     --scope /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/myVMSSResourceGroup/providers/Microsoft.Storage/storageAccounts/vmssstorageaccount
+
+   # Assign Shared Image Gallery Contributor to the specific gallery
+   az role assignment create --assignee-object-id <MANAGED_IDENTITY_OBJECT_ID> \
+     --role "Shared Image Gallery Contributor" \
+     --scope /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/myVMSSResourceGroup/providers/Microsoft.Compute/galleries/myVMSSGallery
+   ```
+
+   To get the object ID of your managed identity:
+
+   ```azurecli-interactive
+   az identity show -g myVMSSResourceGroup -n myVMSSIdentity --query principalId -o tsv
+   ```
 
 ### Create the custom image
 
 To create a custom image, you can use the [Azure VM Image Builder DevOps Task](https://marketplace.visualstudio.com/items?itemName=AzureImageBuilder.devOps-task-for-azure-image-builder). 
 
-1. Add the `AzureImageBuilderTask@1` task to your YAML file. Replace the values for `<SUBSCRIPTION ID>`, `<RESOURCE GROUP>`, `<USER ASSIGNED IDENTITY NAME>` with your own. Make sure to verify that the `galleryImageId`, `managedIdentity` and `storageAccountName` values are accurate. 
+> [!WARNING]
+> **Supply Chain Security**: The inline script executes with elevated privileges (sudo). Follow these best practices:
+> - **Verify artifact integrity** before execution. Use checksums or digital signatures to confirm build artifacts haven't been tampered with.
+> - **Review the install script** before committing to the repository. Ensure it only performs necessary operations.
+> - **Minimize sudo usage** to only operations that require elevated privileges.
+> - **Avoid downloading and executing** scripts from external sources without integrity verification.
+
+1. Before adding the image builder task, create a checksummed version of your installation script. Add this to your repository:
+
+   ```bash
+   # Generate SHA256 checksum for your install.sh script
+   sha256sum install.sh > install.sh.sha256
+   ```
+
+   Commit both `install.sh` and `install.sh.sha256` to your repository.
+
+2. Add the `AzureImageBuilderTask@1` task to your YAML file with **integrity verification**. Replace the values for `<SUBSCRIPTION ID>`, `<RESOURCE GROUP>`, `<USER ASSIGNED IDENTITY NAME>` with your own:
 
     ```yaml
     - task: AzureImageBuilderTask@1
@@ -153,12 +199,31 @@ To create a custom image, you can use the [Azure VM Image Builder DevOps Task](h
         imageSource: 'marketplace'
         packagePath: '$(System.DefaultWorkingDirectory)/pipeline-artifacts'
         inlineScript: |
-          sudo mkdir /lib/buildArtifacts
-          sudo cp  "/tmp/pipeline-artifacts.tar.gz" /lib/buildArtifacts/.
-          cd /lib/buildArtifacts/.
-          sudo tar -zxvf pipeline-artifacts.tar.gz
-          sudo sh install.sh
-        storageAccountName: 'vmssstorageaccount2'
+          set -e  # Exit on error
+          
+          # Verify artifact integrity
+          echo "Verifying artifact integrity..."
+          cd /tmp
+          tar -zxvf pipeline-artifacts.tar.gz
+          
+          # Verify install.sh checksum
+          if [ -f install.sh.sha256 ]; then
+            sha256sum -c install.sh.sha256
+            if [ $? -ne 0 ]; then
+              echo "ERROR: install.sh checksum verification failed. Aborting."
+              exit 1
+            fi
+          else
+            echo "WARNING: Checksum file not found. Skipping integrity verification."
+          fi
+          
+          # Create build artifacts directory and copy verified artifacts
+          sudo mkdir -p /lib/buildArtifacts
+          sudo cp install.sh /lib/buildArtifacts/.
+          
+          # Execute with minimal sudo - only the install script, not general commands
+          sudo /lib/buildArtifacts/install.sh
+        storageAccountName: 'vmssstorageaccount'
         distributeType: 'sig'
         galleryImageId: '/subscriptions/<SUBSCRIPTION ID>/resourceGroups/<RESOURCE GROUP>/providers/Microsoft.Compute/galleries/myVMSSGallery/images/MyImage/versions/0.0.$(Build.BuildId)'
         replicationRegions: 'eastus2'
@@ -167,9 +232,23 @@ To create a custom image, you can use the [Azure VM Image Builder DevOps Task](h
         ibLocation: 'eastus2'
     ```
 
-2. Run the pipeline to generate your first image. You may need to [authorize resources](../../../process/resources.md#authorize-a-yaml-pipeline) during the pipeline run.
+3. Ensure your `install.sh` script follows these security practices:
+
+   ```bash
+   #!/bin/bash
+   set -e  # Exit on any error
+   set -o pipefail  # Exit if any command in pipeline fails
+   
+   # Only run operations necessary for application setup
+   # Avoid unnecessary sudo where possible
+   
+   echo "Installing application dependencies..."
+   # Add your installation commands here
+   ```
+
+4. Run the pipeline to generate your first image. You may need to [authorize resources](../../../process/resources.md#authorize-a-yaml-pipeline) during the pipeline run.
  
-3. Go to the new image in the Azure portal and open **Overview**. Select **Create VMSS** to create a new virtual machine scale set from the new image. Set **Virtual machine scale set name** to `vmssScaleSet`. See [Create a virtual machine scale set in the Azure portal](/azure/virtual-machine-scale-sets/quick-create-portal) to learn more about creating virtual machine scale sets in the Azure portal. 
+5. Go to the new image in the Azure portal and open **Overview**. Select **Create VMSS** to create a new virtual machine scale set from the new image. Set **Virtual machine scale set name** to `vmssScaleSet`. See [Create a virtual machine scale set in the Azure portal](/azure/virtual-machine-scale-sets/quick-create-portal) to learn more about creating virtual machine scale sets in the Azure portal. 
 
 
 ## Deploy updates to the virtual machine scale set 
