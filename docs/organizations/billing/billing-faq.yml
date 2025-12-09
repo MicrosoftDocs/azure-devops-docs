@@ -42,7 +42,6 @@ sections:
           * Purchase paid parallel jobs for Pipelines 
           * Use more than 2 GB of Artifacts storage
           * Enable GitHub Advanced Security 
-
   - name: General billing
     questions:
       - question: |
