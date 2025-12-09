@@ -253,9 +253,6 @@ The Bicep template used in this quickstart deploys the same resources as the JSO
 You can also use an ARM template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. You can also remove the inputs for `templateLocation`, `csmFile`, `csmParametersFile`, `overrideParameters`, and `deploymentMode`.
 
 ```yaml
-variables:
-  - group: KeyVaultSecrets
-
 trigger:
   - none
 
