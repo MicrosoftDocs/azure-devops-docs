@@ -4,7 +4,7 @@ description: Use an Azure Resource Manager template to deploy a Linux web app to
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
-ms.date: 02/22/2022
+ms.date: 12/09/2025
 monikerRange: '=azure-devops'
 ms.custom: subject-armqs, devx-track-arm-template, arm2024, linux-related-content
 ---
@@ -25,38 +25,6 @@ Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
 - (For Bicep deployments) An existing resource group. Create a resource group with [Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups), [Azure CLI](/azure/azure-resource-manager/management/manage-resource-groups-cli#create-resource-groups), or [Azure PowerShell](/azure/azure-resource-manager/management/manage-resource-groups-powershell#create-resource-groups).
-
-## Security best practices
-
-Before creating your pipeline, understand these security best practices for deploying ARM templates:
-
-### Service connection setup with least privilege
-
-When creating an Azure Resource Manager service connection, follow the principle of least privilege:
-
-- **Use Managed Identity or OpenID Connect (OIDC)** instead of service principal secrets when possible. These methods eliminate the need to manage credentials. For setup instructions, see [Use OIDC with Azure Pipelines](/azure/devops/pipelines/library/connect-to-azure#create-a-service-connection-using-service-principal-secret).
-- **Scope the service connection** to the specific subscription or resource group where you're deploying, not to your entire organization or subscription.
-- **Create a dedicated service principal** for your pipeline with only the permissions needed for this deployment (typically Contributor role on the target resource group, not the subscription).
-- **Avoid using service principal secrets** in pipelines. If you must use secrets, rotate them regularly.
-
-### Secure credential and secret management
-
-Do not store sensitive information like passwords directly as pipeline variables:
-
-- **Use Azure Key Vault** to store sensitive values like database passwords, API keys, and connection strings.
-- **Link Key Vault secrets to your pipeline** using the [Azure Key Vault task](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) to retrieve secrets at runtime.
-- **Enable secret masking** in pipeline logs to prevent accidental exposure.
-- **Implement secret rotation** policies for all credentials used in deployments.
-- **Never hardcode secrets** in YAML files or check them into source control.
-
-### Safe task execution
-
-Ensure that your pipeline executes only trusted code:
-
-- **Pin task versions** to specific major versions (e.g., `AzureResourceManagerTemplateDeployment@3`) rather than using `latest`. This prevents unexpected behavior from task updates.
-- **Validate template and parameter files** before deployment. Use the `Validate` deployment mode to test templates without creating resources.
-- **Review ARM template sources** carefully, especially when using templates from external repositories. Ensure templates come from trusted sources.
-- **Use artifact signing and verification** when pulling templates from external sources to ensure they haven't been tampered with.
 
 ## Get the code
 
@@ -118,7 +86,12 @@ The Bicep template used in this quickstart deploys the same resources as the JSO
      vmImage: 'ubuntu-latest'
    ```
 
-1. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project.
+1. Create pipeline variables for `siteName`, `administratorLogin`, and `administratorLoginPassword`. The password variable should be marked as secret.
+   - Select **Variables** on the pipeline page.
+   - Use the **+** button to add variables.
+   - For `administratorLoginPassword`, select **Keep this value secret**.
+
+1. Add the Copy Files task to the YAML file:
 
    ```yaml
    trigger:
@@ -135,12 +108,9 @@ The Bicep template used in this quickstart deploys the same resources as the JSO
          TargetFolder: '$(Build.ArtifactStagingDirectory)'
    ```
 
-1. Add and configure the **Azure Resource Group Deployment** task with secure practices:
+1. Add and configure the **Azure Resource Group Deployment** task:
 
    ```yaml
-   variables:
-     - group: KeyVaultSecrets
-
    trigger:
      - none
 
@@ -165,11 +135,9 @@ The Bicep template used in this quickstart deploys the same resources as the JSO
          templateLocation: 'Linked artifact'
          csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
          csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
-         overrideParameters: '-siteName $(siteName) -administratorLogin $(administratorLogin) -administratorLoginPassword $(dbAdminPassword)'
-         deploymentMode: 'Validation'
+         overrideParameters: '-siteName $(siteName) -administratorLogin $(administratorLogin) -administratorLoginPassword $(administratorLoginPassword)'
+         deploymentMode: 'Incremental'
    ```
-
-1. Set up Azure Key Vault for secure secret management (recommended). See [Use Azure Key Vault for secure credential management](#use-azure-key-vault-for-secure-credential-management-recommended) below for detailed instructions.
 
 1. Click **Save and run** to deploy your template. The pipeline job will be launched and after a few minutes, depending on your agent, the job status should indicate `Success`.
 
@@ -201,11 +169,15 @@ The Bicep template used in this quickstart deploys the same resources as the JSO
      vmImage: 'ubuntu-latest'
    ```
 
+1. Create pipeline variables for `siteName`, `administratorLogin`, and `administratorLoginPassword`. The password variable should be marked as secret.
+   - Select **Variables** on the pipeline page.
+   - Use the **+** button to add variables.
+   - For `administratorLoginPassword`, select **Keep this value secret**.
+
 1. At the top of your YAML file, map values for `location` and `resourceGroupName`. Your location should be the location of the resource group. Your resource group needs to already exist.
 
    ```yaml
    variables:
-     - group: KeyVaultSecrets
      vmImageName: 'ubuntu-latest'
      resourceGroupName: '<resource-group-name>'
      location: '<your-closest-location>'
@@ -213,13 +185,12 @@ The Bicep template used in this quickstart deploys the same resources as the JSO
      sourceFolder: 'quickstarts/microsoft.web/webapp-linux-managed-mysql/'
    ```
 
-1. If you do not already have an Azure Resource Manager service connection, [create a service connection](../../../library/service-endpoints.md#create-a-service-connection) using OIDC or Managed Identity. See [Security best practices](#security-best-practices) for detailed guidance.
+1. If you do not already have an Azure Resource Manager service connection, [create a service connection](../../../library/service-endpoints.md#create-a-service-connection). Learn more about [connecting to Azure](../../../library/connect-to-azure.md).
 
 1. Add the Azure CLI task to deploy with Bicep:
 
    ```yaml
    variables:
-     - group: KeyVaultSecrets
      vmImageName: 'ubuntu-latest'
      resourceGroupName: '<resource-group-name>'
      location: '<your-closest-location>'
@@ -240,34 +211,10 @@ The Bicep template used in this quickstart deploys the same resources as the JSO
          scriptLocation: inlineScript
          inlineScript: |
            az deployment group create --resource-group $(resourceGroupName) --template-file $(sourceFolder)$(templateFile) \
-           --parameters administratorLogin=$(administratorLogin) administratorLoginPassword=$(dbAdminPassword)
+           --parameters administratorLogin=$(administratorLogin) administratorLoginPassword=$(administratorLoginPassword)
    ```
 
-1. Set up Azure Key Vault for secure secret management (recommended). See [Use Azure Key Vault for secure credential management](#use-azure-key-vault-for-secure-credential-management-recommended) below for detailed instructions.
-
 ---
-
-## Use Azure Key Vault for secure credential management (recommended)
-
-Instead of storing sensitive values as pipeline variables, use Azure Key Vault to manage secrets securely:
-
-1. [Create an Azure Key Vault](/azure/key-vault/general/quick-create-portal) in your subscription.
-
-1. [Add your secrets to Key Vault](/azure/key-vault/secrets/quick-create-portal) (for example, `dbAdminPassword`).
-
-1. Link the Key Vault to your Azure DevOps project by creating a variable group:
-   - Go to **Pipelines** > **Library** > **Variable groups**.
-   - Select **+ Variable group**.
-   - Name the group (for example, `KeyVaultSecrets`).
-   - Toggle **Link secrets from an Azure key vault as variables**.
-   - Select your Azure subscription and Key Vault.
-   - Click **Add** to select the secrets you want to use.
-
-This approach provides better security because:
-- Secrets are stored centrally in Key Vault, not in pipelines
-- Access is controlled by Azure RBAC
-- Secrets can be rotated without updating pipelines
-- Audit logs track secret access
 
 ## Review deployed resources
 
