@@ -77,7 +77,7 @@ The **quality** of the change isn't generally known until the validation process
 
  While workarounds exist to prevalidate (for example, consuming the build's DLLs directly before they're packaged and publishing the packages to a "debug" or "CI" environment, then validating and republishing those packages to a "release" environment), they don’t guarantee the final package meets quality standards.
 
-:::image type="content" source="media/release-views-flow.png" A diagram representing the workflow for publishing packages.":::
+:::image type="content" source="media/release-views-flow.png" alt-text="A diagram representing the workflow for publishing packages.":::
 
 Instead, you can use feed views to communicate quality. Using the `@Release` view, you can share only packages that have passed validation and met your quality bar. This allows your consumers to see only the subset of package versions that were tested, validated, and are ready to be consumed. This approach ensures consumers access stable, production-ready packages. See [Promote packages and manage feed views](../feeds/views.md) for more details.
 
