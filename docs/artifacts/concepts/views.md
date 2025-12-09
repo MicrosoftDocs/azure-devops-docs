@@ -75,7 +75,7 @@ Most teams use [Semantic Versioning](https://semver.org) (SemVer) to convey this
 
 The **quality** of the change isn't generally known until the validation process is complete. This is determined after validation, once the package is built and tested. Because of this, it's not feasible to communicate the quality of the change in the numerical segment of the version number (e.g 1.2.3). 
 
- While workarounds exist to pre-validate (e.g., consuming the build's DLLs directly before they're packaged and publishing the packages to a "debug" or "CI" environment, then validating and republishing those packages to a "release" environment), they don’t guarantee the final package meets quality standards.
+ While workarounds exist to prevalidate (for example, consuming the build's DLLs directly before they're packaged and publishing the packages to a "debug" or "CI" environment, then validating and republishing those packages to a "release" environment), they don’t guarantee the final package meets quality standards.
 
 :::image type="content" source="media/release-views-flow.png" A diagram representing the workflow for publishing packages.":::
 
