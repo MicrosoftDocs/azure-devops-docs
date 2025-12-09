@@ -13,4 +13,6 @@ ms.topic: release-notes
 
 [!INCLUDE [sprint-258-update-links](../includes/testplans/sprint-258-update-links.md)]
 
+[!INCLUDE [sprint-258-update](../includes/testplans/sprint-258-update.md)]
+
 [!INCLUDE [nextsteps](../includes/nextsteps.md)]
