@@ -93,7 +93,7 @@ For more information, see the following articles:
 4.  Choose the test you want to associate to the work item and select **Associate test**.
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot showing the process of associating an automated test to a test case within a CI/CD pipeline interface.](media/associate-automated-test-with-test-case/associate-automated-test-to-test-case-work-item.png)
+   > ![Screenshot showing associating an automated test to a test case within a CI/CD pipeline interface.](media/associate-automated-test-with-test-case/associate-automated-test-to-test-case-work-item.png)
 
 After you associate your automated tests with their corresponding test cases, you can utilize the [Azure Test Plan task](/azure/devops/pipelines/tasks/reference/azure-test-plan-v0) to execute them as part of a pipeline.
 

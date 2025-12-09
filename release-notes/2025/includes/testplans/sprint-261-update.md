@@ -12,3 +12,7 @@ Previously, support was introduced for [associating automated tests](https://dev
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of associate test from pipeline run.](../../media/261-testplans-01.png "Screenshot of associate test from pipeline run.")](../../media/261-testplans-01.png#lightbox)
+
+### Fixed missing link cleanup when deleting shared steps
+
+Resolved a defect that prevented the Related Work link from being removed when a shared step was deleted from a test case.

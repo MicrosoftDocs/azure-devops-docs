@@ -3,12 +3,13 @@ title: Troubleshoot Not Receiving Notification Emails
 titleSuffix: Azure DevOps
 description: Discover why you aren't receiving emails from your Azure DevOps notification subscriptions and fix the problem.
 ms.subservice: azure-devops-notifications
-ms.custom: quarterly-update
+ms.custom: quarterly-update, copilot-scenario-highlight
 ms.reviewer: wismythe
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting-general
-ms.date: 05/07/2025
+ms.date: 12/03/2025
 #customer intent: As a developer, I want to troubleshoot why I'm not receiving emails from my notifications or subscriptions so I can fix the problem.
 ---
 
@@ -105,6 +106,22 @@ When the creator or the last modifying user lose permissions to the project, the
 
 Check the details for the subscription, and verify the permissions for all users with subscription-level access.
 
-## Related content
+## Use AI to troubleshoot notification issues
 
-- Contact [customer support](../../user-guide/provide-feedback.md)
+The following example prompt for Copilot Chat helps you troubleshoot Azure DevOps email notification and subscription issues. Copy and paste this prompt into Copilot Chat, replacing the placeholders with your specific information.
+
+For the best AI assistance, include specific details like the subscription name, event type, filter conditions, and delivery settings that might be affecting your notifications.
+
+```copilot-chat
+# Example prompt for troubleshooting notification issues
+I'm having trouble receiving email notifications for my Azure DevOps subscription. 
+Here are the details:
+- Subscription Name: [Your Subscription Name]
+- Event Type: [for example, Work Item Updated]
+- Filter Conditions: [for example, State = Resolved]
+- Delivery Settings: [for example, Deliver to individual members]
+
+Can you help me identify potential issues and solutions?
+```
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*

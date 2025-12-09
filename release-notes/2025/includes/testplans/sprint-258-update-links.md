@@ -6,3 +6,4 @@ ms.topic: include
 ---
 
 - [Ability to associate Java, JavaScript and Python tests to manual test cases](#ability-to-associate-java-javascript-and-python-tests-to-manual-test-cases)
+- [Improved tester assignment and configuration changes messaging](#improved-tester-assignment-and-configuration-changes-messaging)

@@ -7,3 +7,4 @@ ms.topic: include
 ---
 
 - [Group rules now apply to existing users](#group-rules-now-apply-to-existing-users)
+- [Azure subscription required for new organizations](#azure-subscription-required-for-new-organizations)

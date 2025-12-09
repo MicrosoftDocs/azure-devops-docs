@@ -330,7 +330,7 @@
         - name: Azure Resource Manager special cases
           displayName: agent-assigned identity, publish profile
           href: library/azure-resource-manager-alternate-approaches.md
-        - name: Manually configure secret service connections
+        - name: Manually configure an ARM service connection with a secret
           href: release/configure-app-secret.md
         - name: Manually configure workload identity service connections
           href: release/configure-workload-identity.md
