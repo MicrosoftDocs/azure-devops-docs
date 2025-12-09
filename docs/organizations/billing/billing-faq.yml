@@ -23,7 +23,7 @@ summary: |
   [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 sections:
-- name: Creating an organization
+  - name: Creating an organization
     questions:
       - question: |
           Q: What types of Azure subscriptions can be used to create an Azure DevOps organization?
