@@ -33,7 +33,7 @@ Specify a folder to use for your agent work folder in the **Work folder** settin
 The `workfolder` property in the `runtimeConfiguration` section specifies the **Work folder** setting.
 
 > [!NOTE]
-> The `runtimeConfiguration` section and `workFolder` property is available starting with API version `2025-09-20`.
+> The `runtimeConfiguration` section and `workFolder` property are available starting with API version `2025-09-20`.
 
 ```json
 {
@@ -61,14 +61,12 @@ The `workfolder` property in the `runtimeConfiguration` section specifies the **
 
 #### [Bicep](#tab/bicep/)
 
-The `workfolder` property in the `runtimeConfiguration` section specifies the **Work folder** setting.
-
-To configure `workFolder` using Bicep, add a `workFolder` proeprty in the [runtimeConfiguration](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep#runtimeconfiguration) section. In the following example, agents in the pool are configured to use `D:\MyWorkFolder`.
+To configure the **Work folder** setting using Bicep, add a `workFolder` property in the [runtimeConfiguration](/azure/templates/microsoft.devopsinfrastructure/pools?pivots=deployment-language-bicep#runtimeconfiguration) section. In the following example, agents in the pool are configured to use `D:\MyWorkFolder`.
 
 To use the default agent work folder, omit the `runtimeConfiguration` section or specify an empty value for `workFolder` when you create or update a pool.
 
 > [!NOTE]
-> The `runtimeConfiguration` section and `workFolder` property is available starting with API version `2025-09-20`.
+> The `runtimeConfiguration` section and `workFolder` property are available starting with API version `2025-09-20`.
 
 ```bicep
 resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
