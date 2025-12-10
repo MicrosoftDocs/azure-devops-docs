@@ -38,6 +38,8 @@
     href: configure-identity.md
   - name: View agent status
     href: view-agents.md
+  - name: Configure advanced settings
+    href: configure-advanced-settings.md
   - name: Demands
     href: demands.md
   - name: Reliability
