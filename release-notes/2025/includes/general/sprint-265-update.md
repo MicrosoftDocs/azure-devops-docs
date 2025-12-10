@@ -12,4 +12,4 @@ Group rules now automatically apply to both new and existing users without requi
 
 ### Azure subscription required for new organizations
 
-New Azure DevOps organizations now require an active Azure subscription. No changes to existing organizations or free tier limits. Learn more at https://aka.ms/createorgwithsubscription.
+New Azure DevOps organizations now require an active Azure subscription. No changes to existing organizations or free tier limits. [Learn more about creating an organization](https://aka.ms/createorgwithsubscription).
