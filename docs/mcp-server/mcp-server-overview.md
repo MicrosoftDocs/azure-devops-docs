@@ -24,48 +24,22 @@ Unlike cloud-based solutions that require sending your data externally, the Azur
 > - The Azure DevOps MCP Server is free to use. However, standard Azure DevOps pricing applies to your organization and any data access through the service. AI assistant usage might have separate costs depending on your chosen AI platform.
 > - The Azure DevOps MCP Server requires your AI assistant to operate in agent-mode to access Azure DevOps data and perform operations.
 
-## Prerequisites and installation
+## Prerequisites
 
 **System requirements:** [Node.js 18.0+](https://nodejs.org/) and an active [Azure DevOps organization](../organizations/accounts/create-organization.md)
 
-Choose your development environment for installation:
+## Install Azure DevOps MCP Server
 
-### Quick installation (recommended for all environments)
-- **One-click installer**: [Download installer](https://github.com/microsoft/azure-devops-mcp/releases/latest) - Automatically detects and configures for your system
-- **Compatible with**: All supported AI assistants and the following development environments
+The Azure DevOps MCP Server integrates with various development environments and AI assistants. Choose your preferred environment for instructions. The prerequisites listed in the table are environment-specific requirements in addition to the system requirements previously listed.
 
-### Visual Studio (2022 and later)
-- **Prerequisites**: [GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) installed
-- **AI assistant**: GitHub Copilot with Azure DevOps context integration
-- **Installation guide**: [Visual Studio setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#%EF%B8%8F-visual-studio-2022--github-copilot)
-- **Features**: Full IntelliSense integration with Azure DevOps data
-
-### Visual Studio Code
-- **Prerequisites**: [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) or [Claude Dev](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) extension
-- **AI assistants**: GitHub Copilot or Claude Dev
-- **Installation guide**: [Visual Studio Code setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#%EF%B8%8F-visual-studio-code--github-copilot)
-- **Features**: Extensive MCP support with multiple AI assistant options
-
-### Cursor
-- **Prerequisites**: Built-in AI assistant (no other extensions needed)
-- **AI assistant**: Built-in AI with MCP support
-- **Installation guide**: [Cursor setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#cursor)
-- **Features**: Native MCP integration
-
-### Claude Desktop
-- **Prerequisites**: Claude Desktop application installed
-- **AI assistant**: Claude with MCP capabilities
-- **Installation guide**: [Claude Desktop setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#claude-desktop)
-- **Features**: Standalone application with full Azure DevOps integration
-
-### JetBrains IDEs (IntelliJ IDEA, WebStorm, and more)
-- **Prerequisites**: Compatible AI assistant plugin (varies by IDE)
-- **AI assistants**: Depends on available plugins for your specific IDE
-- **Installation guide**: [JetBrains setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#jetbrains-ides)
-- **Features**: IDE-specific integration via plugins
-
-### Other environments
-- **Complete guide**: [All supported environments](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md)
+| Environment | Prerequisites | Installation | Features |
+|-------------|---------------|--------------|----------|
+| **Visual Studio Code (recommended)** | [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) or [Claude Dev](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) extension | [**One-click install**](https://insiders.vscode.dev/redirect/mcp/install?name=ado&config=%7B%20%22type%22%3A%20%22stdio%22%2C%20%22command%22%3A%20%22npx%22%2C%20%22args%22%3A%20%5B%22-y%22%2C%20%22%40azure-devops%2Fmcp%22%2C%20%22%24%7Binput%3Aado_org%7D%22%5D%7D&inputs=%5B%7B%22id%22%3A%20%22ado_org%22%2C%20%22type%22%3A%20%22promptString%22%2C%20%22description%22%3A%20%22Azure%20DevOps%20organization%20name%20%20%28e.g.%20%27contoso%27%29%22%7D%5D) | Extensive MCP support with multiple AI assistant options |
+| **Visual Studio (2022 and later)** | [GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) | [Visual Studio setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#visual-studio) | Full IntelliSense integration with Azure DevOps data |
+| **Cursor** | Built-in AI assistant (no extensions needed) | [Cursor setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#cursor) | Native MCP integration |
+| **Claude Desktop** | Claude Desktop application | [Claude Desktop setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#claude-desktop) | Standalone application with full Azure DevOps integration |
+| **JetBrains IDEs** | Compatible AI assistant plugin | [JetBrains setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#jetbrains) | IDE-specific integration via plugins |
+| **Other environments** | Varies by environment | [Azure DevOps MCP Server docs repository](https://github.com/microsoft/azure-devops-mcp) | See repository for all options |
 
 > [!TIP]
 > Having installation issues? Check the [troubleshooting section](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/TROUBLESHOOTING.md) or report issues on the [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp/issues).
@@ -111,6 +85,9 @@ Your AI assistant processes this data to provide:
 ## Common use cases and examples
 
 For more examples, see [Example usage](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/EXAMPLES.md).
+
+> [!TIP]
+> To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
 
 ### Daily standup preparation
 
