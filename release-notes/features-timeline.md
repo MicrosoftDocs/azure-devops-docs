@@ -172,7 +172,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 
 The existing Azure Boards + GitHub integration has been in place for several years now. The integration is a great starting point, but it does not offer the level of traceability that our customers have grown accustomed to. Based on customer feedback, we have put together set of investments to enhance this integration. Our goal is to improve upon it so that Azure Boards customers who choose to use GitHub repositories can maintain an equivalent level of traceability to having repositories in Azure DevOps.
 
-These investments include:
+These recent investments include:
 
 <table>
     <thead>
@@ -182,32 +182,7 @@ These investments include:
             <th>Quarter</th>
          </tr>
     </thead>
-    <tbody>      
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview" data-raw-source="[Add link to GitHub Commit or Pull Request from work item](/azure/devops/release-notes/2024/sprint-234-update#add-link-to-github-commit-or-pull-request-preview)">Add link to GitHub commit or pull request from work item</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
-      </tr>   
-    <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-242-update#connect-to-github-repository-search-improvements" data-raw-source="[Show more details about a GitHub Pull Request](/azure/devops/release-notes/2024/sprint-242-update#connect-to-github-repository-search-improvements)">Show more details about a GitHub pull request</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q1</td>
-      </tr>   
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/scale-github-repos" data-raw-source="[Improve scalability when searching and linking GitHub repos to an Azure DevOps project](/azure/devops/release-notes/roadmap/2024/scale-github-repos)">Improve scalability when searching and linking GitHub<br/>repos to an Azure DevOps project</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview" data-raw-source="[AB# links on GitHub pull request](/azure/devops/release-notes/2024/sprint-237-update#ab-links-on-github-pull-requests-preview)">AB# links on GitHub pull request</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q2</td>
-      </tr>       
-      <tr>
-         <td><a href="/azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item" data-raw-source="[Create branch on GitHub repository from work item](azure/devops/release-notes/2024/sprint-242-update#create-github-branch-from-work-item)">Create branch on GitHub repository from work item</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2024 Q3</td>
-      </tr>      
+    <tbody>          
       <tr>
          <td>
             <a href="/azure/devops/release-notes/2025/sprint-252-update#github-integration-linking-the-merge-commit" data-raw-source="[Auto link the merge commit](/azure/devops/release-notes/2025/sprint-252-update#github-integration-linking-the-merge-commit)">Auto link the merge commit</a>
@@ -266,7 +241,7 @@ These investments include:
          <td>2025 Q4</td>
       </tr>    
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-github-integration-scale-improvements" data-raw-source="[Scale improvements for connecting with GitHub repositories]()">Scale improvements for connecting with GitHub repositories</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-gh-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-gh-repo-limit)">Increase limit of connected GitHub repositories</a></td>
          <td>Boards</td>
          <td>2026 Q1</td>
       </tr>           
@@ -548,7 +523,7 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr> 
        <tr>          
-        <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-github-integration-scale-improvements" data-raw-source="[Scale improvements for connecting to GitHub repositories]()">Scale improvements for connecting with GitHub repositories</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-gh-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-gh-repo-limit)">Increase limit of connected GitHub repositories</a></td>
         <td>Boards</td>
       </tr>
       <tr>
