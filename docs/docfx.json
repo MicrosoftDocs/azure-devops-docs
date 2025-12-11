@@ -4,7 +4,8 @@
       {
         "files": [
           "breadcrumb/toc.yml"
-        ]
+        ],
+        "exclude": []
       },
       {
         "files": [
@@ -472,7 +473,8 @@
           "tfs-2013",
           "tfs-2015",
           "tfs-2017",
-          "tfs-2018"
+          "tfs-2018",
+          "azure-devops-2020"
         ],
         "artifacts/**/*.md": [
           "tfs-2017",
@@ -909,6 +911,90 @@
         ],
         "**/*.md": [
           "azure-devops-2019"
+        ],
+        "artifacts/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "boards/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "breadcrumb/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "cli/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "cross-service/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "demo-gen/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "dev-resources/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "extend/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "get-started/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "includes/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "integrate/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "legacy/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "managed-devops-pools/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "marketplace/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "marketplace-extensibility/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "mcp-server/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "media/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "migrate/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "organizations/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "pipelines/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "project/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "reference/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "report/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "repos/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "service-hooks/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "test/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "user-guide/**/*.{md,yml,yaml}": [
+          "azure-devops-2020"
+        ],
+        "zone-pivot-groups.yml": [
+          "azure-devops-2020"
         ]
       }
     },
