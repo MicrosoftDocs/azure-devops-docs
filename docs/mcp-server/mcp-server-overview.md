@@ -1,5 +1,5 @@
 ---
-title: Enable AI Assistance with the Azure DevOps MCP Server
+title: Enable AI assistance with the Azure DevOps MCP Server
 titleSuffix: Azure Boards
 description: Learn about the Azure DevOps Model Context Protocol (MCP) Server, which enhances your AI assistant with real-time Azure DevOps context for smarter, more accurate project insights and decision-making capabilities.
 ms.service: azure-devops-boards
@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 11/11/2025
+ms.date: 12/11/2025
 #customer intent: As a project member, I want to understand what the Azure DevOps MCP Server is and how it can enhance my AI assistant with real-time Azure DevOps context to improve my productivity and decision-making.
 ---
 
@@ -24,42 +24,48 @@ Unlike cloud-based solutions that require sending your data externally, the Azur
 > - The Azure DevOps MCP Server is free to use. However, standard Azure DevOps pricing applies to your organization and any data access through the service. AI assistant usage might have separate costs depending on your chosen AI platform.
 > - The Azure DevOps MCP Server requires your AI assistant to operate in agent-mode to access Azure DevOps data and perform operations.
 
-## Prerequisites
+## Prerequisites and installation
 
-| Requirement | Description | Download/Installation |
-|-------------|-------------|----------------------|
-| **Node.js** | Version 18.0 or higher required for running the MCP Server | [Download Node.js](https://nodejs.org/) |
-| **Azure DevOps organization** | Active Azure DevOps Services organization with project access | [Create organization](../organizations/accounts/create-organization.md) |
-| **AI coding environment** | Compatible AI assistant with agent-mode support | See [supported environments](#supported-ai-environments)  |
+**System requirements:** [Node.js 18.0+](https://nodejs.org/) and an active [Azure DevOps organization](../organizations/accounts/create-organization.md)
 
-## Supported AI environments
+Choose your development environment for installation:
 
-The Azure DevOps MCP Server is compatible with multiple AI coding environments. Choose your preferred development environment:
+### Quick installation (recommended for all environments)
+- **One-click installer**: [Download installer](https://github.com/microsoft/azure-devops-mcp/releases/latest) - Automatically detects and configures for your system
+- **Compatible with**: All supported AI assistants and the following development environments
 
-### Visual Studio 2022
-- **GitHub Copilot**: Enhanced with Azure DevOps context through MCP integration
-- **Installation**: Requires GitHub Copilot extension and MCP Server configuration
+### Visual Studio (2022 and later)
+- **Prerequisites**: [GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) installed
+- **AI assistant**: GitHub Copilot with Azure DevOps context integration
+- **Installation guide**: [Visual Studio setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#%EF%B8%8F-visual-studio-2022--github-copilot)
 - **Features**: Full IntelliSense integration with Azure DevOps data
 
 ### Visual Studio Code
-- **GitHub Copilot**: Popular choice with extensive MCP support
-- **Claude Dev**: Alternative AI assistant with Azure DevOps integration
-- **Installation**: Extension-based setup with JSON configuration
+- **Prerequisites**: [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) or [Claude Dev](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) extension
+- **AI assistants**: GitHub Copilot or Claude Dev
+- **Installation guide**: [Visual Studio Code setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#%EF%B8%8F-visual-studio-code--github-copilot)
+- **Features**: Extensive MCP support with multiple AI assistant options
 
-### Other Supported Environments
-- **Cursor**: AI-first code editor with built-in MCP support
-- **Claude Desktop**: Standalone application with MCP capabilities
-- **JetBrains IDEs**: IntelliJ IDEA, WebStorm, and other JetBrains products (via plugins)
+### Cursor
+- **Prerequisites**: Built-in AI assistant (no other extensions needed)
+- **AI assistant**: Built-in AI with MCP support
+- **Installation guide**: [Cursor setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#cursor)
+- **Features**: Native MCP integration
 
-## Install MCP Server
+### Claude Desktop
+- **Prerequisites**: Claude Desktop application installed
+- **AI assistant**: Claude with MCP capabilities
+- **Installation guide**: [Claude Desktop setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#claude-desktop)
+- **Features**: Standalone application with full Azure DevOps integration
 
-Ready to enhance your AI assistant with Azure DevOps context? Follow the installation guide for your preferred development environment:
+### JetBrains IDEs (IntelliJ IDEA, WebStorm, and so on)
+- **Prerequisites**: Compatible AI assistant plugin (varies by IDE)
+- **AI assistants**: Depends on available plugins for your specific IDE
+- **Installation guide**: [JetBrains setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#jetbrains-ides)
+- **Features**: IDE-specific integration via plugins
 
-- **Visual Studio users**: For detailed Visual Studio installation instructions, including step-by-step configuration for Visual Studio 2022, see [Install Azure DevOps MCP Server for Visual Studio](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#%EF%B8%8F-visual-studio-2022--github-copilot)
-
-- **VS Code users**: For Visual Studio Code installation with GitHub Copilot or Claude Dev, see [Install Azure DevOps MCP Server for VS Code](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#%EF%B8%8F-visual-studio-code--github-copilot)
-
-- **All environments**: For all supported environments and troubleshooting, see [Complete Installation Guide](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md)
+### Other environments
+- **Complete guide**: [All supported environments](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md)
 
 > [!TIP]
 > Having installation issues? Check the [troubleshooting section](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/TROUBLESHOOTING.md) or report issues on the [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp/issues).
@@ -310,7 +316,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        :::column span="2":::
         | Component | Details |
         |-----------|---------|
-        | **Pull Request** | PR #67: "Implement caching layer for user preferences"<br>Author: Sarah Chen, Status: Active (awaiting review)<br>Files: 8 changed (+156, -42 lines), Created: Two days ago |
+        | **Pull Request** | PR #67: "Implement caching layer for user preferences"<br>Author: Christie Church, Status: Active (awaiting review)<br>Files: 8 changed (+156, -42 lines), Created: Two days ago |
         | **Linked Work Items** | 🎯 User Story #2847: "Improve app performance for returning users" (High priority)<br>└── Target: Page load time < 2 seconds for logged-in users<br><br>🐛 Bug #2901: "Settings page loads slowly for users with many preferences" (Medium severity)<br>└── Impact: Affects 15% of premium users, causing support tickets |
         |**Business impact summary**| - 💼 **Strategic Alignment**: Supports Q3 user retention goal (20% improvement)<br>Addresses premium user experience issues affecting revenue<br>Enables future personalization features<br>- 📊 **Expected Outcomes**: Performance: 60% reduction in preference loading time (2.5s → 1.0s)<br>User Experience: Eliminates loading delays in settings and profile pages<br>Support Impact: Expected 40% reduction in performance-related tickets<br>- 🔍 **Review Focus Areas**: Cache invalidation logic (data consistency)<br>Error handling for cache unavailability<br>Performance monitoring implementation<br>Security considerations for cached user data |
        :::column-end:::
