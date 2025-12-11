@@ -241,7 +241,7 @@ These recent investments include:
          <td>2025 Q4</td>
       </tr>    
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-gh-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-gh-repo-limit)">Increase limit of connected GitHub repositories</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
          <td>Boards</td>
          <td>2026 Q1</td>
       </tr>           
@@ -523,7 +523,7 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr> 
        <tr>          
-        <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-gh-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-gh-repo-limit)">Increase limit of connected GitHub repositories</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
         <td>Boards</td>
       </tr>
       <tr>
