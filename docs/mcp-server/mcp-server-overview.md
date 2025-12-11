@@ -58,7 +58,7 @@ Choose your development environment for installation:
 - **Installation guide**: [Claude Desktop setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#claude-desktop)
 - **Features**: Standalone application with full Azure DevOps integration
 
-### JetBrains IDEs (IntelliJ IDEA, WebStorm, and so on)
+### JetBrains IDEs (IntelliJ IDEA, WebStorm, and more)
 - **Prerequisites**: Compatible AI assistant plugin (varies by IDE)
 - **AI assistants**: Depends on available plugins for your specific IDE
 - **Installation guide**: [JetBrains setup instructions](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md#jetbrains-ides)
