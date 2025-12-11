@@ -178,6 +178,8 @@ The following table lists the maximum number of objects you can define for the I
 | Picklist items per list                   |        2048 |       2048 |
 | Picklist item character length                      |         256 |          - |
 | Workflow states per work item type        |          32 |         16 |
+| Pages (tabs) per work item type        |          16 |         16 |
+| Groups per page        |          32 |         32 |
 | Rules per work item type                  |        1024 |       1024 |
 | Actions per work item type                |        1024 |       1024 |
 | Actions per rule                          |          10 |         10 |
