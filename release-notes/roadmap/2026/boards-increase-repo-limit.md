@@ -12,4 +12,4 @@ hide_comments: true
 
 # Increase limit of connected GitHub repositories
 
-The current limit of GitHub repositories that you can connect to an Azure Boards project is one thousand. We're are going to increase the maximum limit to two thousand repositories per project.
+The current limit for GitHub repositories that you can connect to an Azure Boards project is one thousand. We are increasing this limit to two thousand repositories per project.
