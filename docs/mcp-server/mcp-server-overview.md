@@ -225,7 +225,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         |----------|------------|--------|
         | ✅ **Recommended** | Epic #3401: "User Profile Enhancement" - High business value, no dependencies<br>Bug #3456: "Search results time out on large datasets" - Critical user impact<br>Feature #3378: "Export dashboard to PDF" - Frequently requested<br>Story #3489: "Implement password reset flow" - Security priority<br>Task #3512: "Upgrade React components to v18" - Technical debt<br>Story #3467: "Add dark mode toggle" - Quick win | **60 total**<br>(13 + 8 + 13 + 8 + 13 + 5) |
         | ⏳ **Deferred** | Epic #3234: "Mobile app rewrite" - Too large for single sprint<br>Feature #3445: "AI-powered recommendations" - Waiting for data science team<br>Story #3523: "Integration with external CRM" - Blocked by vendor API | 34, 21, 13 |
-        **Planning recommendations**|- **Balance**: Mix of features (3), bugs (1), technical debt (1), quick wins (1)<br>- **Risk level**: Low-medium risk items for predictable delivery<br>- **Dependencies**: All selected items have resolved dependencies<br>- **Skills**: Work distribution matches current team expertise<br>- **Business value**: Prioritized customer-facing features and critical fixes|
+        |**Planning recommendations**|- **Balance**: Mix of features (3), bugs (1), technical debt (1), quick wins (1)<br>- **Risk level**: Low-medium risk items for predictable delivery<br>- **Dependencies**: All selected items have resolved dependencies<br>- **Skills**: Work distribution matches current team expertise<br>- **Business value**: Prioritized customer-facing features and critical fixes|
        :::column-end:::
 :::row-end:::
 ---
