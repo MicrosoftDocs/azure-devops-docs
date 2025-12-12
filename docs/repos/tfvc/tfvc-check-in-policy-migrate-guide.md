@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 1.	To migrate your custom policies, you should first create a new class with the same methods but inheriting `CheckinPolicyBase` class (`IPolicyCompatibilityJson` for `IPolicyCompatibility`) instead of `PolicyBase`.
       Examples:
       
-Obsolete
+Obsolete:
 ```
     [Serializable]
     public class Simple : PolicyBase
@@ -26,7 +26,7 @@ Obsolete
     }
 ```
 
-Updated
+Updated:
 ```
     [Serializable]
     public class SimpleNew : CheckinPolicyBase
@@ -35,10 +35,10 @@ Updated
         ...
     }
 ```
-2.	If `GetBinaryFormatter` was overridden, then also implement `GetJsonSerializerSettings` with same logic for serialization.
+2.	If `GetBinaryFormatter` was overridden, then also implement `GetJsonSerializerSettings` with same logic for serialization. It is also important for your JsonSerializerSettings to have `TypeNameHandling` equal to `Object`.
       Example:
 
-Obsolete
+Obsolete:
 ```
     [Serializable]
     public class Simple : PolicyBase
@@ -52,7 +52,7 @@ Obsolete
         ...
     }
 ```
-Updated
+Updated:
 ```
     [Serializable]
     public class SimpleNew : CheckinPolicyBase
@@ -68,16 +68,63 @@ Updated
         ...
     }
 ```
-3.	Instead of the old methods like `GetCheckinPoliciesForServerPaths`/`GetCheckinPolicies`/`SetCheckinPolicies` new ones were introduced: `GetCheckinClientPoliciesForServerPaths`/`GetCheckinClientPolicies`/`SetCheckinClientPolicies` accordingly.
+
+For extensions for Visual Studio of version 16 and below you will require further code even if BinaryFormatter was not overwritten before.
+
+JsonSerializerSettings for extensions of older versions of Visual Studio:
+```
+    public class CheckinSerializationBinder : ISerializationBinder
+    {
+        public void BindToName(Type serializedType, out string assemblyName, out string typeName)
+        {
+            Assembly assembly = serializedType.Assembly;
+            assemblyName = assembly.FullName;
+            typeName = serializedType.FullName;
+        }
+
+        public Type BindToType(string assemblyName, string typeName)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    [Serializable]
+    public class SimpleNew : CheckinPolicyBase
+    {
+        public override JsonSerializerSettings GetJsonSerializerSettings()
+        {
+            return new JsonSerializerSettings()
+            {
+                SerializationBinder = new CheckinSerializationBinder(),
+                TypeNameHandling = TypeNameHandling.Objects
+            };
+        }
+        ...
+    }
+```
+3. Be aware that private properties that were serialized before will be skipped in new policies type. Be sure to add `[JsonProperty]` for them to be saved into database.
+Example:
+``` 
+    [Serializable]
+    public class SimpleNew : CheckinPolicyBase
+    {
+        [JsonProperty]
+        private List<String> pathFilters;
+        ...
+    }
+```
+
+4. Instead of the old methods like `GetCheckinPoliciesForServerPaths`/`GetCheckinPolicies`/`SetCheckinPolicies` new ones were introduced: `GetCheckinClientPoliciesForServerPaths`/`GetCheckinClientPolicies`/`SetCheckinClientPolicies` accordingly.
 For example, default behavior right now for the `LoadPolicies` method in the package is to use new policies if they are created/available and obsolete ones in case they are absent.
 > [!NOTE]
+> Further auto-migration can be used only for your custom policies since standard Visual Studio policies do not support it.
 > If you are not planning to use the migration method provided by NuGet package, further instructions can be omitted and obsolete policies can be removed, you are done, congratulations!
 
-4.	For your obsolete policy add `IPolicyMigration` (This interface marked as deprecated only to show that it will be removed as unnecessary together with `PolicyBase` and `IPolicyCompatibility`).
+5. For your obsolete policy add `IPolicyMigration` (This interface marked as deprecated only to show that it will be removed as unnecessary together with `PolicyBase` and `IPolicyCompatibility`).
 > [!WARNING]
 > Obsolete policies that don’t inherit this interface will be **skipped** during migration and **not** saved as new policies.
 
-5.	Implement `ToNewPolicyType` from the mentioned interface. It should return the instance of the newly created policy class that is based on currently modified policy.
+6.	Implement `ToNewPolicyType` from the mentioned interface. It should return the instance of the newly created policy class that is based on currently modified policy.
       Example:
 ```
     [Serializable]
@@ -90,7 +137,7 @@ For example, default behavior right now for the `LoadPolicies` method in the pac
         }
     }
 ```
-6.	Call `MigrateFromOldPolicies` method.
+7.	Call `MigrateFromOldPolicies` method.
 
 
 You are done, congratulations!
