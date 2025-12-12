@@ -5,8 +5,7 @@ description: Learn how to create work items and monitor work item activity in an
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to
-ms.reviewer: karrg
-ms.author: karrg
+ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 10/17/2025
