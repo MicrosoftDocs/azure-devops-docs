@@ -32,7 +32,7 @@ Within those categories, settings can be:
 
   - Global Git configuration file settings apply to all repos for the current user. Global settings take precedence over system settings.
 
-  - Local Git configuration file settings apply to the local repo that contains the local Git configuration file. System settings take precedence over global settings.
+  - Local Git configuration file settings apply to the local repo that contains the local Git configuration file. Local settings take precedence over global settings.
 
 - [Visual Studio Git-related settings](#modify-visual-studio-git-related-settings), which are Visual Studio settings that relate to Git but aren't stored in any Git configuration file. You can only view and modify these settings in Visual Studio. An example of one of these settings is the default folder path where Visual Studio clones repos.
 
