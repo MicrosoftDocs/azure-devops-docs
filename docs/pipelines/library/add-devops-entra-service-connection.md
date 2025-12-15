@@ -192,28 +192,26 @@ Use the service connection with artifact authentication tasks:
 
 - **Minimal permissions**: Assign the service principal only the permissions it needs for your specific pipeline tasks.
 - **Audit access**: Regularly review audit logs to monitor service connection usage.
-- **Rotate identities**: Consider rotating service principals periodically as part of your security practice.
-- **Scope usage**: Use separate service connections for different projects or organizations to limit the blast radius if a connection is compromised.
-- **Avoid PAT storage**: Never store PATs as pipeline variables when you can use a service connection instead.
+- **Scope usage**: Use separate service connections for different projects or organizations to limit the prevent sharing permissions unnecessarily.
 
 ## Troubleshooting
 
 ### Service connection creation fails
 
-- Verify that you added the service principal as a user to your organization.
+- Verify that you added the service principal [as a user](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#step-2-add-the-identity-to-azure-devops) to your organization.
 - Check that you have the appropriate permissions to create service connections.
-- Ensure the service principal has the required access level in the organization.
+- Ensure the service principal has the [required access level](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#step-3-configure-permissions) in the organization.
 
 ### Pipeline fails to authenticate
 
 - Verify that the service connection name in your pipeline YAML matches the name you created.
 - Confirm that the service principal has appropriate permissions for the resources you're accessing.
-- Check ADO audit logs for authentication failures.
+- Check Azure DevOps audit logs for authentication failures.
 - For Entra AADSTS status codes, review the list of [error messages](/azure/devops/pipelines/release/troubleshoot-workload-identity#error-messages)
 
 ### Cross-organization access not working
 
-- Ensure the service principal is added as a user in both organizations.
+- Ensure the service principal is added [as a user](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#step-2-add-the-identity-to-azure-devops) in both organizations.
 - Verify that the target organization name is correctly spelled in the service connection configuration.
 - Confirm that the service principal has the required permissions in the target organization.
 
