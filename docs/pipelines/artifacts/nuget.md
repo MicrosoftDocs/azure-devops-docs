@@ -120,10 +120,21 @@ If you don't have a feed yet, you can create a [new one](../../artifacts/get-sta
 
 ## Publish NuGet packages to a feed in another organization
 
-To publish your NuGet packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization. Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope. 
-Once the PAT is created, copy and store it in a secure location, as you'll need it in the following section to set up a service connection.
+To publish your NuGet packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization, then create a service connection in the organization where your pipeline runs. You can then use the service connection in your YAML or Classic pipeline to authenticate and publish your packages.
 
-1. Sign in to the Azure DevOps organization where your pipeline will run, and then navigate to your project.
+### 1. Create a personal access token
+
+1. Sign in to the Azure DevOps organization that hosts your target feed.
+
+1. Navigate to **User Settings** >  **Personal access tokens**.
+
+1. Select **New Token**, provide a descriptive name, then under **Scopes**, select **Packaging** > **Read & write**.
+
+1. Select **Create** when you're done, then copy and store your PAT in a secure location, as you'll need it to set up the service connection next.
+
+### 2. Create a service connection
+
+1. Sign in to the Azure DevOps organization where your pipeline will run, then navigate to your project.
 
 1. Navigate to your **Project settings** > **Service connections**. 
 
@@ -135,15 +146,17 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
     :::image type="content" source="media/nuget/nuget-service-connection-external-devops-server.png" alt-text="A screenshot displaying how to set up a NuGet service connection to authenticate with an external feed in a different organization." lightbox="media/nuget/nuget-service-connection-external-devops-server.png":::
 
+### 3. Publish your package
+
 ::: moniker range=">= azure-devops-2022"
 
 #### [YAML](#tab/yaml/)
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, then navigate to your project.
 
 1. Select **Pipelines**, and then select your pipeline definition.
 
-1. Select **Edit**, and then add the following snippet to your YAML pipeline.
+1. Select **Edit**, and then add the following snippet to your YAML pipeline to authenticate and publish your package:
 
     ```yaml
     - task: NuGetToolInstaller@1                                # Minimum required NuGet version: 4.8.0.5385+.
@@ -160,11 +173,11 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 #### [Classic](#tab/classic/)
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, then navigate to your project.
 
 1. Select **Pipelines**, and then select your pipeline definition. 
 
-1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *NuGet tool installer* with its default settings and configure the other tasks as follows:
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the **NuGet tool installer**, **NuGet Authenticate** and **Command line** tasks to your pipeline definition. You can leave the *NuGet tool installer* with its default settings and configure the other tasks as follows:
 
     :::image type="content" source="media/nuget/nuget-push-cli-task.png" alt-text="A screenshot displaying how to configure the publish task to a feed in another organization." lightbox="media/nuget/nuget-push-cli-task.png":::
 
@@ -210,7 +223,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 1. Select **Pipelines**, and then select your pipeline definition. 
 
-1. Select **Edit**, and then select the `+` sign to add a new task. Add the *NuGet tool installer*, *NuGet Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *NuGet tool installer* with its default settings and configure the other tasks as follows:
+1. Select **Edit**, and then select the `+` sign to add a new task. Add the **NuGet tool installer**, **NuGet Authenticate** and **Command line** tasks to your pipeline definition. You can leave the *NuGet tool installer* with its default settings and configure the other tasks as follows:
 
     :::image type="content" source="media/nuget/nuget-push-cli-task.png" alt-text="A screenshot displaying how to configure the CLI publish task to a feed in another organization." lightbox="media/nuget/nuget-push-cli-task.png":::
 
@@ -229,68 +242,10 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 :::image type="content" source="media/nuget/package-published-to-external-feed.png" alt-text="A screenshot displaying the package successfully published to a feed in a different organization." lightbox="media/nuget/package-published-to-external-feed.png":::
 
-## NuGet task package versioning
-
-Azure Pipelines supports [Semantic Versioning](https://semver.org/) and provides the following configuration options for NuGet tasks:
-
-- **Use the date and time** (Classic) | **byPrereleaseNumber** (YAML):
-    Your package version will follow the format: *Major.Minor.Patch-ci-datetime* where you have the flexibility to customize the Major, Minor, and Patch values.
-
-- **Use an environment variable** (Classic) | **byEnvVar** (YAML): 
-    Your package version is set to the value of the specified environment variable. 
-
-- **Use the build number** (Classic) | **byBuildNumber** (YAML): 
-    Your package version is set to the build number. Make sure you define the build number format in your pipeline **Options** as `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`. To specify the format in YAML, add a `name:` property at the root of your pipeline and define your format.
-
-The following is an example demonstrating how to use the date and time versioning to generate a SemVer-compliant package formatted as: *Major.Minor.Patch-ci-datetime*.
-
-#### [YAML](#tab/yaml/)
-
-```yaml
-variables:
-  Major: '1'
-  Minor: '0'
-  Patch: '0'
-
-steps:
-- task: NuGetCommand@2
-  inputs:
-    command: pack
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '$(Major)'
-    minorVersion: '$(Minor)'
-    patchVersion: '$(Patch)'
-```
-
-> [!NOTE]
-> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See the [.NET Core CLI](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task for more details.
-
-```yaml
-task: DotNetCoreCLI@2
-inputs:
-    command: pack
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '$(Major)'
-    minorVersion: '$(Minor)'
-    patchVersion: '$(Patch)'
-```
-
-#### [Classic](#tab/classic/)
-
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Pipelines**, and then select your pipeline definition. 
-
-1. Select **Edit**, and then select your NuGet task.
-
-1. Make sure the command is set to **Pack**, then under **Pack options**, select **Use the date and time** from the dropdown menu.
-
-    :::image type="content" source="media/package-versioning-classic.png" alt-text="A screenshot displaying how to enable package versioning in a classic pipeline.":::
-
-- - -
-
 ## Related content
 
-- [Publish NuGet packages to NuGet.org](publish-public-registry.md)
-- [Use packages from the NuGet.org upstream](../../artifacts/nuget/upstream-sources.md)
-- [Publish and download Universal Packages](./universal-packages.md)
+- [Restore NuGet Packages (YAML/Classic)](../packages/nuget-restore.md)
+
+- [Publish NuGet packages to NuGet.org using Azure Pipelines](publish-public-registry.md)
+
+- [Publish and download pipeline artifacts](pipeline-artifacts.md)
