@@ -35,7 +35,7 @@ Updated:
         ...
     }
 ```
-2.	If `GetBinaryFormatter` was overridden, then also implement `GetJsonSerializerSettings` with same logic for serialization. It is also important for your JsonSerializerSettings to have `TypeNameHandling` equal to `Object`.
+2.	If GetBinaryFormatter was overridden, also implement GetJsonSerializerSettings using the same serialization logic. Additionally, the `JsonSerializerSettings` must be configured with `TypeNameHandling` set to `Object`.
       Example:
 
 Obsolete:
@@ -69,9 +69,9 @@ Updated:
     }
 ```
 
-For extensions for Visual Studio of version 16 and below you will require further code even if BinaryFormatter was not overwritten before.
+For extensions targeting Visual Studio version 16 and earlier, additional code is required even if BinaryFormatter was not previously overridden.
 
-JsonSerializerSettings for extensions of older versions of Visual Studio:
+JsonSerializerSettings for extensions targeting older versions of Visual Studio:
 ```
     public class CheckinSerializationBinder : ISerializationBinder
     {
@@ -117,7 +117,7 @@ Example:
 4. Instead of the old methods like `GetCheckinPoliciesForServerPaths`/`GetCheckinPolicies`/`SetCheckinPolicies` new ones were introduced: `GetCheckinClientPoliciesForServerPaths`/`GetCheckinClientPolicies`/`SetCheckinClientPolicies` accordingly.
 For example, default behavior right now for the `LoadPolicies` method in the package is to use new policies if they are created/available and obsolete ones in case they are absent.
 > [!NOTE]
-> Further auto-migration can be used only for your custom policies since standard Visual Studio policies do not support it.
+> Further auto-migration is available only for custom policies, as standard Visual Studio policies do not support this capability.
 > If you are not planning to use the migration method provided by NuGet package, further instructions can be omitted and obsolete policies can be removed, you are done, congratulations!
 
 5. For your obsolete policy add `IPolicyMigration` (This interface marked as deprecated only to show that it will be removed as unnecessary together with `PolicyBase` and `IPolicyCompatibility`).
