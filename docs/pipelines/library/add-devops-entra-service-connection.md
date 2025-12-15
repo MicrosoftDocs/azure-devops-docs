@@ -207,6 +207,7 @@ Use the service connection with artifact authentication tasks:
 - Verify that the service connection name in your pipeline YAML matches the name you created.
 - Confirm that the service principal has appropriate permissions for the resources you're accessing.
 - Check Azure DevOps audit logs for authentication failures.
+- Refer to [frequently asked questions for service principals and managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#frequently-asked-questions)
 - For Entra AADSTS status codes, review the list of [error messages](/azure/devops/pipelines/release/troubleshoot-workload-identity#error-messages)
 
 ### Cross-organization access not working
