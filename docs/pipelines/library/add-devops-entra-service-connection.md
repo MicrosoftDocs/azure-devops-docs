@@ -106,7 +106,7 @@ steps:
 - checkout: external-repo
 ```
 
-### Reference template from different organizations
+### Reference template from different organization
 
 ```yaml
 resources:
@@ -209,6 +209,7 @@ Use the service connection with artifact authentication tasks:
 - Verify that the service connection name in your pipeline YAML matches the name you created.
 - Confirm that the service principal has appropriate permissions for the resources you're accessing.
 - Check ADO audit logs for authentication failures.
+- For Entra AADSTS status codes, review the list of [error messages](/azure/devops/pipelines/release/troubleshoot-workload-identity#error-messages)
 
 ### Cross-organization access not working
 
