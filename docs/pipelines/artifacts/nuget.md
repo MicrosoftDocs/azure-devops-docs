@@ -16,11 +16,10 @@ Azure Pipelines enables developers to publish packages to Azure Artifacts feeds 
 
 ## Prerequisites
 
-| **Product**        | **Requirements** |
-|--------------------|----------------------------------------------------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md).
-<br> - If you're using a self-hosted agent, make sure that it has the [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download) and [NuGet (4.8.0.5385+)](https://www.nuget.org/downloads) installed.<br> - Create a [new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already.<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project, you must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections, you must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md). |
-| **NuGet.org**      | - A [NuGet](/nuget/nuget-org/individual-accounts#add-a-new-individual-account) account. |
+| **Product**        | **Requirements**   |
+|--------------------|--------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../../artifacts/start-using-azure-artifacts.md#create-a-new-feed).<br> - If you're using a self-hosted agent, make sure that it has the [.NET Core SDK](https://dotnet.microsoft.com/en-us/download) and [NuGet](https://www.nuget.org/downloads) installed.<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project, you must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections, you must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md). |
+
 
 > [!NOTE]
 > If you're using Ubuntu 24.04 or later, you must use the `NuGetAuthenticate` task with the *.NET CLI* instead of *nuget.exe*. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
