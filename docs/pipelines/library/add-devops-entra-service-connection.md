@@ -18,7 +18,8 @@ The Azure DevOps service connection uses [workload identity federation](/entra/w
 
 ### Benefits
 
-- **PAT-free authentication**: Eliminate the need to create, store, and rotate Personal Access Tokens
+- **PAT-free authentication**: Eliminate the need to create, store, and rotate [Personal Access Tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)
+- **Least privilege**: Use per-pipeline permissions instead of shared [build service account permissions](/azure/devops/pipelines/process/access-tokens)
 - **Improved security**: Use Entra federated credentials with automatic token rotation
 - **Cross-organization access**: Access Azure DevOps resources in different organizations using a single service connection
 - **Audit trail**: All authentication attempts are logged in Azure DevOps audit logs
@@ -105,6 +106,21 @@ steps:
 - checkout: external-repo
 ```
 
+### Reference template from different organizations
+
+```yaml
+resources:
+  repositories:
+    - repository: templates 
+      type: git
+      endpoint: my-azdo-connection
+      name: 'external-org/external-project/external-repo'
+      ref: "refs/heads/main"    
+      
+steps:
+- template: azdosc-template.yml@templates
+```
+
 ### Access artifact feeds
 
 Use the service connection with artifact authentication tasks:
@@ -120,10 +136,32 @@ Use the service connection with artifact authentication tasks:
     projects: '**/*.csproj'
 ```
 
-### Call Azure DevOps REST APIs
+### Call Azure DevOps from script
 
 ```yaml
 - task: AzureCLI@3
+  displayName: Secret-less
+  inputs:
+    azureDevOpsServiceConnection: 'my-azdo-connection'
+    scriptType: 'pscore'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az rest --method get `
+              --url "https://status.dev.azure.com/_apis/status/health?api-version=7.1-preview.1" `
+              --resource 499b84ac-1321-427f-aa17-267ca6975798 `
+              --query "sort_by(services[?id=='Pipelines'].geographies | [], &name)" `
+              -o table
+
+      az devops configure -l
+
+      az devops project list --query "value[].{Name:name, Id:id}" `
+                            -o table
+
+      az pipelines pool list --query "[].{Id:id, Name:name}" `
+                            -o table
+
+- task: AzureCLI@3
+  displayName: Use Entra access token
   inputs:
     azureDevOpsServiceConnection: 'my-azdo-connection'
     scriptType: 'pscore'
