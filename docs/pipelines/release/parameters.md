@@ -58,23 +58,35 @@ Follow these steps to configure existing process parameters in your Classic pipe
 
 ## Unlink process parameters
 
-- **Unlink all process parameters**:
-    1. Navigate to **Tasks** > **Pipeline** > **Parameters** in your pipeline definition.
-    1. Select **Unlink all**.
+Follow these steps to unlink signle or all existing process parameters in your Classic pipeline:
 
-        :::image type="content" source="../artifacts/media/classic-pipeline-process-parameters-unlink-all.png" alt-text="A screenshot showing how to unlink all parameters in a classic pipeline.":::
+#### Unlink a single parameter
 
-- **Unlink a single parameter**:
-    1. In your pipeline definition, select the task you want to unlink.
-    1. Select **Link settings** from the right panel, and then select **Unlink**.
+1. Sign in to your Azure DevOps organization, then navigate to your project.
+
+1. Select your Classic pipeline, then select **Edit**. 
+
+1. Select the task that you want to unlink, select the link icon next to the parameter, and then select **Unlink** in the pop‑up message.
+
+#### Unlink all process parameters
+
+1. Sign in to your Azure DevOps organization, then navigate to your project.
+
+1. Select your Classic pipeline, then select **Edit**. 
+
+1. Select **Tasks** > **Pipeline**, then scroll down to **Parameters**.
     
-        :::image type="content" source="../artifacts/media/classic-pipeline-process-parameters-unlink.png" alt-text="A screenshot showing how to unlink a single parameter in a classic pipeline.":::
+1. Select **Unlink all**, then select **Confirm** to confirm your choice.
 
-## Related articles
 
-- [Build multiple branches](../build/ci-build-git.md)
-- [Pipeline completion triggers (Classic)](../process/pipeline-triggers-classic.md)
-- [Pipeline caching](../release/caching.md)
+## Related content
+
+- [Create Classic release pipelines](releases.md)
+
+- [Classic release triggers](triggers.md)
+
+- [View Classic pipeline history](history.md)
+
 
 
 
