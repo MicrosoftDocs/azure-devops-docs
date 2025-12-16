@@ -40,10 +40,14 @@ Follow these steps to add new process parameters to your Classic pipeline:
 
 1. Select the *i* icon next to the setting you want to include, then select **Link** in the pop‑up message. 
 
+    :::image type="content" source="../artifacts/media/new-process-parameter.png" alt-text="A screenshot displaying the info and link window to link a new process parameter in a classic pipeline.":::
+
 1. Configure your settings as needed, then select **Link** to add it to your process parameters. Your view may differ depending on the task and the setting you're configuring.
 
 1. Once linked, you can find the parameter under  **Tasks** > **Pipeline** > **Parameters**.
 
+    :::image type="content" source="../artifacts/media/link-new-parameter.png" alt-text="A screenshot displaying how to link a new parameter in a classic pipeline.":::
+    
 ## Configure existing process parameters
 
 Follow these steps to configure existing process parameters in your Classic pipeline:
@@ -54,19 +58,21 @@ Follow these steps to configure existing process parameters in your Classic pipe
 
 1. Select **Tasks** > **Pipeline**, then scroll down to **Parameters**. Your view may differ depending on your project type and the parameters defined for your tasks. Select the parameter you want to modify and configure it as needed.
 
-    :::image type="content" source="../artifacts/media/modify-existing-process-parameters-classic-pipeline.png" alt-text="A screenshot of existing process parameters shown in a Classic pipeline.":::
+    :::image type="content" source="../artifacts/media/modify-existing-process-parameters-classic-pipeline.png" alt-text="A screenshot displaying how to configure existing process parameters in a Classic pipeline.":::
 
 ## Unlink process parameters
 
 Follow these steps to unlink signle or all existing process parameters in your Classic pipeline:
 
-#### Unlink a single parameter
+#### Unlink a single process parameter
 
 1. Sign in to your Azure DevOps organization, then navigate to your project.
 
 1. Select your Classic pipeline, then select **Edit**. 
 
 1. Select the task that you want to unlink, select the link icon next to the parameter, and then select **Unlink** in the pop‑up message.
+
+    :::image type="content" source="../artifacts/media/unlink-single-parameter.png" alt-text="A screenshot displaying how to unlink a single process paramater in a Classic pipeline.":::
 
 #### Unlink all process parameters
 
@@ -78,6 +84,7 @@ Follow these steps to unlink signle or all existing process parameters in your C
     
 1. Select **Unlink all**, then select **Confirm** to confirm your choice.
 
+    :::image type="content" source="../artifacts/media/unlink-all-parameters.png" alt-text="A screenshot displaying how to unlink all process paramaters in a Classic pipeline.":::
 
 ## Related content
 
