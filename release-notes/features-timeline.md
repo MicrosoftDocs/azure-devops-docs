@@ -518,7 +518,7 @@ Below, you will find several investments that we plan to deliver as part of this
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement" data-raw-source="[Streamlining bulk enablement scenarios](/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement)">Streamlining bulk enablement scenarios</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="3"><strong>2026 Q1</strong></td>
+      <td rowspan="4"><strong>2026 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts" data-raw-source="[Organization-level alerts view in security overview](/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts)">Organization-level alerts view in security overview</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr> 
@@ -529,6 +529,10 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved filter experience for boards and backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved filter experience for boards and backlogs</a></td>
          <td>Boards</td>
+      </tr>
+       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
+         <td>Wiki</td>
       </tr>
       <td rowspan="19"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
