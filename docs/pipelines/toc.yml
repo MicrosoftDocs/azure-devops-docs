@@ -695,7 +695,7 @@
       href: security/overview.md
     - name: Use a script to update project security settings
       displayName: security, project, script
-      href: security/project-security-script.md     
+      href: security/project-security-script.md
     - name: Approach to securing YAML pipelines
       displayName: template permissions, repositories
       href: security/approach.md
@@ -725,7 +725,7 @@
     href: release/approvals/servicenow.md
 - name: Migrate
   items:
-  - name: Migrate Classic pipelines to YAML 
+  - name: Migrate Classic pipelines to YAML
     href: release/from-classic-pipelines.md
   - name: Migrate from Jenkins
     href: migrate/from-jenkins.md

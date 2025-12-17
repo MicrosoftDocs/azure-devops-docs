@@ -331,7 +331,7 @@ To filter comments and updates, select the **Show everything (n)** button above 
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
+::: moniker range=">=azure-devops-2020"
 
 ### Address comments
 
