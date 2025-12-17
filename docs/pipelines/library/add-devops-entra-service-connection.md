@@ -1,12 +1,12 @@
 ---
-title: Access Azure DevOps with Entra federated credentials
+title: Access Azure DevOps with Entra workload identity
 description: Learn how to create an Azure DevOps service connection using Entra federated credentials to enable PAT-free pipelines.
 ms.topic: how-to 
 ms.date: 12/12/2025
 #customer intent: As an Azure DevOps administrator, I want to create an Azure DevOps service connection using federated credentials so that my pipelines can access Azure DevOps resources without using Personal Access Tokens (PATs).
 ---
 
-# Access Azure DevOps with Entra federated credentials
+# Access Azure DevOps with Entra workload identity
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 

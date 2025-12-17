@@ -652,7 +652,7 @@
   - name: Manage service connections
     displayName: service connection, project-level permissions, docker, GitHub, npm, Nuget, Azure Repos
     href: library/service-endpoints.md
-  - name: Access Azure DevOps with Entra federated credentials
+  - name: Access Azure DevOps with Entra workload identity
     displayName: service connection, Azure Repos
     href: library/add-devops-entra-service-connection.md
   - name: Add an admin role to a resource
