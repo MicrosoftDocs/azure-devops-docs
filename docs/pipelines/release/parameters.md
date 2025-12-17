@@ -44,9 +44,9 @@ Follow these steps to add new process parameters to your Classic pipeline:
 
 1. Configure your settings as needed, then select **Link** to add it to your process parameters. Your view may differ depending on the task and the setting you're configuring.
 
-1. Once linked, you can find the parameter under  **Tasks** > **Pipeline** > **Parameters**.
-
     :::image type="content" source="../artifacts/media/link-new-parameter.png" alt-text="A screenshot displaying how to link a new parameter in a classic pipeline.":::
+
+1. Once linked, you can find the parameter under  **Tasks** > **Pipeline** > **Parameters**.
     
 ## Configure existing process parameters
 
