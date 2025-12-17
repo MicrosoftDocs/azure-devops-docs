@@ -1,7 +1,7 @@
 ---
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.date: 12/14/2025
+ms.date: 12/17/2025
 ms.topic: how-to
 ---
 
@@ -15,7 +15,7 @@ This article describes the demands available in Managed DevOps Pools and how to 
 
 ## WorkFolder
 
-The default work folder for agents is typically  `C:\a\_work` for Windows agents or `/mnt/vss/_work` for Linux agents, and your pipeline can reference it by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables). You can override this location to change both the drive and directory name used when the agent starts by specifying the `WorkFolder` demand in your pipeline.
+The default work folder for agents is typically `D:\a\_work` (or `C:\a\_work` if the pool's VM size doesn't have a `D` drive) for Windows agents or `/mnt/vss/_work` for Linux agents, and your pipeline can reference it by using the `Agent.WorkFolder` [predefined variable](/azure/devops/pipelines/build/variables). You can override this location to change both the drive and directory name used when the agent starts by specifying the `WorkFolder` demand in your pipeline.
 
 > [!TIP]
 > The `WorkFolder` demand configures a custom agent working folder at the pipeline level. To configure your agents to use a custom working directory for every agent in the pool, configure the [Work folder](configure-advanced-settings.md#work-folder) setting.
