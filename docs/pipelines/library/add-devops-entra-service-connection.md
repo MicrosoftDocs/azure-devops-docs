@@ -10,11 +10,7 @@ ms.date: 12/12/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-An **Azure DevOps service connection** allows your pipelines to authenticate to Azure DevOps itself using [Entra federated credentials](/entra/workload-id/workload-identities-overview) instead of Personal Access Tokens (PATs). This provides a more secure, PAT-free way to access repositories, artifacts, and other Azure DevOps resources across organizations.
-
-## Overview
-
-The Azure DevOps service connection uses [workload identity federation](/entra/workload-id/workload-identities-overview) to authenticate pipeline jobs. Workload identity federation is a zero-secret authentication method that eliminates the need to manage and rotate secrets like PATs.
+An **Azure DevOps service connection** allows your pipelines to authenticate to Azure DevOps itself using [Entra workload identities](/entra/workload-id/workload-identities-overview). Workload identities such as service principals and managed identities [are used to access Azure DevOps](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity) instead of Personal Access Tokens (PATs). The Azure DevOps service connection uses [workload identity federation](/entra/workload-id/workload-identity-federation) to authenticate pipeline jobs. Workload identity federation is a zero-secret authentication method that eliminates the need to manage and rotate secrets like PATs.
 
 ### Benefits
 
