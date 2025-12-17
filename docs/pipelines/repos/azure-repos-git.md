@@ -278,7 +278,17 @@ Follow each of these steps to troubleshoot your failing checkout:
 
 * Does the repository still exist? First, make sure it does by opening it in the **Repos** page.
 
+:::moniker range="=azure-devops-2020"
+
 * Are you accessing the repository using a script? If so, check the [Limit job authorization scope to referenced Azure DevOps repositories](#limit-job-authorization-scope-to-referenced-azure-devops-repositories) setting. When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, you won't be able to check out Azure Repos Git repositories using a script unless they are explicitly referenced first in the pipeline.
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2020"
+
+* Are you accessing the repository using a script? If so, check the [Protect access to repositories in YAML pipelines](#protect-access-to-repositories-in-yaml-pipelines) setting. When **Protect access to repositories in YAML pipelines** is enabled, you won't be able to check out Azure Repos Git repositories using a script unless they are explicitly referenced first in the pipeline.
+
+:::moniker-end
 
 * What is the [job authorization scope](../process/access-tokens.md#q-a) of the pipeline?
 

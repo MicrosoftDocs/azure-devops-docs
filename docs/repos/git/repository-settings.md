@@ -860,7 +860,7 @@ Enabling this setting disables access to the repository, including builds and pu
 :::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Disable Repository setting.":::
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">=azure-devops-2020"
 
 ## Searchable branches setting
 

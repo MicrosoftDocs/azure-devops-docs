@@ -217,7 +217,7 @@ The **default retention policy** sets the default retention values for all the r
 
 The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release pipelines.
 
-::: moniker range="=azure-devops-2020"
+::: moniker range=">=azure-devops-2020"
 
 ## Set collection-level retention policies
 

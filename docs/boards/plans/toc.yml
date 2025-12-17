@@ -23,7 +23,7 @@
 - name: Scaled Agile Framework®
   items:
   - name: Implement SAFe® with Azure Boards
-    href: safe-configure-boards.md  
+    href: safe-configure-boards.md
 - name: Best practices, monitoring, & reports
   items:
   - name: Agile culture

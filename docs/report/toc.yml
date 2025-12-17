@@ -8,8 +8,8 @@
   - name: Dashboards quick reference
     href: dashboards/quick-ref.md
   - name: Secure your analytics & reporting
-    displayname: security, permissions, access control, governance, compliance, best practices, audit
     href: secure-your-analytics-reporting.md
+    displayname: security, permissions, access control, governance, compliance, best practices, audit
   - name: Define your dashboard focus
     href: dashboards/dashboard-focus.md
     displayname: project, team, example
