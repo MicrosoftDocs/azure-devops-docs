@@ -70,15 +70,15 @@ The following table lists the Azure regions that support the Azure DevOps Data M
 | Region | Shorthand code |
 |--------|----------------|
 | Central US | CUS |
-| East US 2 | EUS2 |
 | West Europe | WE |
+| United Kingdom South | UKS |
 | Australia East | AE |
 | Brazil South | BS |
-| South India | SI |
-| Asia Pacific (Hong Kong) | APE |
+| Central India | MA |
+| Southeast Asia (Singapore) | SEA |
 | Canada Central | CC |
 
-For the complete migration process and detailed region considerations, see [Supported Azure regions for migration](migration-test-run.md#supported-azure-regions-for-migration).
+For the complete migration process and most up to date region considerations, see [Supported Azure regions for migration](migration-test-run.md#supported-azure-regions-for-migration).
 
 ## Understand pricing 
 
