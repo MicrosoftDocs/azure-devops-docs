@@ -42,13 +42,13 @@ The **windows-2019** image is the default image for classic build pipelines. For
 #### Windows image updates
 
 * [[Windows & Ubuntu] .NET 6 was removed from the images on 2025-08-01.](https://github.com/actions/runner-images/issues/12241)
-* [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
+
 
 ##### Windows Server 2019 hosted image deprecation schedule
 
 The Windows Server 2019 image is scheduled to be deprecated:
 * Deprecation start date: June 1, 2025
-* Brownout period: June 3, 2025 to June 24, 2025
+* Brownout period: 3rd June 2025 to 24th June 2025, 2nd December 2025 to 9th December 2025
 * Scheduled removal date for Windows Server 2019 hosted image: December 31, 2025
 
 For more information, see [Upcoming Updates for Azure Pipelines Agents Images - Windows](https://aka.ms/azdo-windows)
