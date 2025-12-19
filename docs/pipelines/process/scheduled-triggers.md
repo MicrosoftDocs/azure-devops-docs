@@ -40,20 +40,6 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 
 Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
 
-::: moniker range="<azure-devops-2022"
-
-```yaml
-schedules:
-- cron: string # cron syntax defining a schedule
-  displayName: string # friendly name given to a specific schedule
-  branches:
-    include: [ string ] # which branches the schedule applies to
-    exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code or pipeline settings changes since the last successful scheduled run. The default is false.
-```
-
-::: moniker-end
-
 ::: moniker range="> azure-devops-2022"
 
 ```yaml
@@ -604,5 +590,4 @@ schedules:
 ```
 
 For more information, see [Branch considerations for scheduled triggers](#branch-considerations-for-scheduled-triggers).
-
 

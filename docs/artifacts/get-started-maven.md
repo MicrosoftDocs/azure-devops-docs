@@ -5,12 +5,12 @@ ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.date: 09/29/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Get started with Maven packages in Azure Artifacts
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Maven packages are Java binaries built using the [Apache Maven build tool](https://maven.apache.org/). With Azure Artifacts feeds, you can store multiple package types in a single feed. Stored packages can then be restored to build your project or shared with your team and customers. Azure Artifacts feeds also support consuming packages from public registries such as Maven Central, Google Maven Repository, Gradle Plugins, and JitPack through upstream sources.
 

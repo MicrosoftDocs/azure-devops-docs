@@ -12,9 +12,9 @@ ms.date: 10/25/2024
 
 # Install or enable the Analytics service
 
-[!INCLUDE [version-gt-eq-2019-lt-azure-devops](../../includes/version-gt-eq-2019-lt-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 For Azure DevOps Server 2020 and later versions, the Analytics service is generally available and automatically enabled for all new project collections added to your server. For project collections upgraded from a previous version, you might need to [manually enable it](#enable-analytics). You enable Analytics for each project collection for which you want to generate Analytics reports. 
 

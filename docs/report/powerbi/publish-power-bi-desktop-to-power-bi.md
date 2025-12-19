@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Publish a Power BI Desktop file to Power BI 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article explains how to share your Power BI Desktop file, along with its datasets, measures, and charts, by creating a dashboard in Power BI.  
 

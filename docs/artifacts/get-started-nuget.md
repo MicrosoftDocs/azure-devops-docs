@@ -7,13 +7,13 @@ ms.author: rabououn
 author: ramiMSFT
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.date: 06/20/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Publish and download NuGet packages with Azure Artifacts
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts enables developers to publish and download NuGet packages from feeds or public registries. Feeds can be either private, allowing you to share packages with specific users, or public, making your packages accessible to anyone on the internet.
 
@@ -45,7 +45,7 @@ This article guides you through creating a feed, configuring your project, and p
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then go to your project.
 

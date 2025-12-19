@@ -6,15 +6,14 @@ ms.custom: UpdateFrequency3
 ms.topic: overview
 ms.author: jeom
 author: raviLiftr
-monikerRange: '>=azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 09/14/2021
 ms.update-cycle: 1095-days
 ---
 
-
 # Navigate Test Plans 
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Learn how to navigate Test Plans to support your test goals and operations. Use the following sections of the Test Plans page to accomplish the corresponding tasks.
 - **Mine**: View list of test plans that you created or are of interest to you. 
@@ -78,7 +77,6 @@ Use the Test Plan header, to do one of the following tasks:
 - Navigate to the Test Progress report via the **View report** link
 - Navigate back to the **All/Mine** Test Plans page by choosing :::image type="icon" source="media/navigate/all-test-plans-icon.png" border="false"::: **All test plans**.
 
-
 ### Test plan context menu options 
 
 Choose the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options** to open the context menu for the Test Plan to perform one of the following actions: 
@@ -101,8 +99,6 @@ We recommend creating a new Test Plan per sprint/release. When doing so, general
 
 :::image type="content" source="media/navigate/copy-test-plan.png" alt-text="copy test plan page":::
 
-
-
 <a name="testsuitestree"></a>
 
 ## Test suites header and tree
@@ -116,7 +112,6 @@ The Test suite header allows you to perform the following tasks:
 - **Expand/collapse**: Choose the :::image type="icon" source="media/navigate/expand-collapse-icons.png" border="false"::: **Expand All/Collapse All** toolbar options  to expand or collapse the suite hierarchy tree.
 - **Show test points from child suites**: Choose the :::image type="icon" source="media/navigate/show-test-points-from-child-nodes-icon.png" border="false":::  **Show test points from child suites** toolbar option, which is only visible when you are in the **Execute** tab, to view all the test points for the given suite and its children in one view for easier management of test points without having to navigate to individual suites one at a time. 
 - **Order suites**: Drag/drop suites to either reorder the hierarchy of suites or move them from one suite hierarchy to another within the test plan. 
-
 
 ###  Test suites context menu options 
 
@@ -203,7 +198,6 @@ Choose **Copy test case** to copy or clone a test case. Specify the destination 
 
 :::image type="content" source="media/navigate/copy-test-cases.png" alt-text="Define tab copy test cases menu option and dialog.":::
 
-
 ### View linked item 
 
 Use **View linked items** option, to review objects linked to the test case. Choose each tab to view the links listed under the linked object type: 
@@ -236,7 +230,6 @@ For example, if you have a test case named *Test sign in functionality* and you 
 
 Test cases are reusable entities. By including them in a test plan or suite, test points are generated. By executing test points, you determine the quality of the product or service under development.
 
-
 ### Execute tasks 
 
 From the **Execute** tab, you can do the following tasks.
@@ -254,7 +247,6 @@ Choose :::image type="icon" source="media/navigate/column-options-icon.png" bord
 
 :::image type="content" source="media/navigate/column-options.png" alt-text="Column options dialog.":::
 
-
 ### Test Points context menu options 
 
 :::image type="content" source="media/navigate/test-point-node-context-menu.png" alt-text="Execute tab, test point node More options menu.":::
@@ -269,7 +261,6 @@ Choose the :::image type="icon" source="../media/icons/more-actions.png" border=
 - **Assign tester**: Assign the test points to a tester for test execution.
 
 For more information about executing tests, see [Run manual tests](run-manual-tests.md) and [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
-
 
 ## Chart test cases and test results 
 

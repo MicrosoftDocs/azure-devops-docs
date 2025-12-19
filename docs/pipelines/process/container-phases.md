@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Container jobs in YAML pipelines
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article explains container jobs in Azure Pipelines. Containers are lightweight abstractions from the host operating system that provide all the necessary elements to run a job in a specific environment.
 

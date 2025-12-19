@@ -16,7 +16,7 @@ ms.date: 06/16/2025
 
 # Service hook events
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-lt-eq-azure-devops.md)]
 
 You can use service hooks to run tasks on other services when events happen in your Azure DevOps project. This article provides information about the Azure DevOps events that a service hook can trigger on.
 
@@ -35,7 +35,7 @@ The following types of events are available for use in service hooks. For a list
   * [Release deployment completed](#ms.azure-devops-release.deployment-completed-event)
   * [Release deployment started](#ms.azure-devops-release.deployment-started-event)
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 * **Pipeline**
   * [Run state changed](#run.statechanged)

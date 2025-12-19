@@ -73,15 +73,6 @@ This article shows how to add requirements, child tasks, and work item details o
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
-
-| Category | Requirements |
-|--------------|-------------|
-| **Access levels** | - Add work items and use board features: at least [**Basic** access](../../organizations/security/access-levels.md). <br> - View boards, open and modify work items, and add child tasks: at least **Stakeholder** access (Stakeholders can't reorder or reparent backlog items or update fields on cards). |
-| **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
-
-::: moniker-end
-
 For more information, see [Default permissions and access for Azure Boards](permissions-access-boards.md).
 
 <a id="define-new-work">  </a>

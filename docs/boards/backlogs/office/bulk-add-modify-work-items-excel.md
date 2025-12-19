@@ -176,16 +176,6 @@ The following tasks aren't supported when you work in an Excel worksheet:
 - Link to a remote work item
 
 ::: moniker-end  
-::: moniker range="azure-devops-2020" 
-
-- Delete work items
-- Change the work item type of an existing work item
-- Move work items to another project
-- Import or update test case steps or other test artifacts
-- Add work items in any other State than the new State
-- Add to a work item discussion thread
-
-::: moniker-end
 
 ## Import work items as a flat list 
 

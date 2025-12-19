@@ -51,7 +51,7 @@ From your web browser, open your product backlog.
 
 [!INCLUDE [links to backlog information](../includes/setup-backlogs-boards.md)]
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Select your project, choose **Boards** > **Backlogs**, and then select the team. 
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Use Azure Key Vault secrets in Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Key Vault allows developers to securely store and manage sensitive information like API keys, credentials, or certificates. 
 Azure Key Vault service supports two types of containers: vaults and managed HSM (Hardware Security Module) pools. Vaults can store both software and HSM-backed keys, secrets, and certificates, while managed HSM pools exclusively support HSM-backed keys.

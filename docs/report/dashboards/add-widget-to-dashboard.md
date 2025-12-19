@@ -87,7 +87,7 @@ To configure a widget, add the widget to a dashboard, select open the ![actions 
 
 :::image type="content" source="media/add-widgets/configure-widget.png" alt-text="Screenshot of opened dashboard dialog.":::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 For more information about configuring widgets, see the following articles: 
 - [Burndown/burnup](configure-burndown-burnup-widgets.md)

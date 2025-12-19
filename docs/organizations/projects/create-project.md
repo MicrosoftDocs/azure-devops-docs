@@ -14,7 +14,7 @@ ms.date: 11/10/2025
 
 # Create a project in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Create an Azure DevOps project to set up a source code repository and organize your work. You can tailor and manage your project to meet your business requirements. Each project isolates its data from other projects. For more information, see [About projects and scaling your organization](about-projects.md).
 
@@ -190,7 +190,7 @@ be87c31a-fbb3-4377-b207-57a8caf65e31  MyFirstProject1  Private       Agile      
 
 #### [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 View a list of projects from your web browser.
 

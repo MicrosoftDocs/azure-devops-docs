@@ -27,16 +27,6 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 ::: moniker-end
 
-::: moniker range="<azure-devops-2022"
-
-* [UI settings override YAML trigger setting](#ui-settings-override-yaml-trigger-setting)
-* [Pull request triggers not supported with Azure Repos](#pull-request-triggers-not-supported-with-azure-repos)
-* [Branch filters misconfigured in CI and PR triggers](#branch-filters-misconfigured-in-ci-and-pr-triggers)
-* [Scheduled trigger time zone conversions](#scheduled-trigger-time-zone-conversions)
-* [UI settings override YAML scheduled triggers](#ui-settings-override-yaml-scheduled-triggers)
-
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 > [!NOTE]

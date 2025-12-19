@@ -6,9 +6,7 @@ ms.date: 01/13/2025
 ms.topic: include
 ---
 
-
 ## Prerequisites
-
 
 ::: moniker range="azure-devops"
 
@@ -21,7 +19,7 @@ ms.topic: include
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 | Category | Requirements |
 |--------------|-------------|

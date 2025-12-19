@@ -8,25 +8,23 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'     
+monikerRange: "<=azure-devops"
 ms.date: 12/15/2022
 ---
 
 # Pipeline task duration trend sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 To visualize the time it takes tasks to complete for a specific pipeline, you can create a trend report. For example, the following image shows the 80th percentile in seconds for all tasks completed for a specific pipeline from September 1 to December 15, 2022.  
 
 :::image type="content" source="media/pipeline-reports/task-duration-line-chart-report.png" alt-text="Screenshot of Power BI Pipelines task duration trend report."::: 
-
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
 
 ## Sample queries
 
@@ -35,7 +33,6 @@ You can use the following queries of the `PipelineRunActivityResults?` entity se
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
 ### Task duration trend for specified pipeline name
-
 
 ### [Power BI query](#tab/powerbi/)
 
@@ -88,7 +85,6 @@ $apply=filter(
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 [!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
-
 
 ### Query breakdown
 
@@ -200,16 +196,13 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end::: 
 
-
 ### Task duration trend for a pipeline, specify pipeline ID  
-
 
 Pipelines can be renamed. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID from the URL of the pipelines runs page.
 
 ```
 https://dev.azure.com/{organization}/{project}/_build?definitionId={pipelineid}
 ```
-
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -255,7 +248,6 @@ $apply=filter(
 ```
 
 ***
-
 
 ### 50th, 80th, and 90th percentile task duration trend for a pipeline  
 
@@ -318,7 +310,6 @@ To view the duration trend of a task for a particular **branch**, use the follow
 - [Create the Line chart report](#create-the-line-chart-report) 
 - Select **Slicer** from the **Visualizations** pane and add the `Branch.BranchName` to the slicer's **Field** 
 - Select the branch from the slicer for which you need to see the task duration trend.
-
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -417,10 +408,7 @@ $apply=filter(
 
 ***
 
-
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand columns in Power Query Editor
 

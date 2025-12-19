@@ -9,7 +9,7 @@ monikerRange: "<=azure-devops"
 
 # Expressions
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
@@ -537,13 +537,6 @@ You can use the following status check functions as expressions in conditions, b
 You can use `if`, `elseif`, and `else` clauses to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met.
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met.
-
-The `elseif` and `else` clauses are available starting with Azure DevOps 2022 and aren't available for Azure DevOps Server 2020 and earlier versions of Azure DevOps.
-
-::: moniker-end
-
 Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax).
 
 For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md).
@@ -602,7 +595,7 @@ steps:
 ```
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Each keyword
 
@@ -850,7 +843,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Job to job dependencies across stages
 
@@ -904,7 +897,7 @@ stages:
 ```
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 If a job depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the job `run_tests` runs if the `build_job` deployment job set `runTests` to `true`. Notice that the key used for the `outputs` dictionary is `build_job.setRunTests.runTests`.
 
@@ -941,7 +934,7 @@ stages:
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Deployment job output variables
 

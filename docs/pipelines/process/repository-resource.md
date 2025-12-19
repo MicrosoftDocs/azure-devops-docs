@@ -9,7 +9,7 @@ monikerRange: "<=azure-devops"
 
 # Protect a repository resource
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can add protection to your [repository resource](resources.md#define-a-repositories-resource) with checks and pipeline permissions. When you add protection, you're better able to restrict repository ownership and editing privileges.
 

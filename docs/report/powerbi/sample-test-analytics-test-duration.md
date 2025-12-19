@@ -9,13 +9,13 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 09/09/2024
 ---
 
 # Test duration sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Test duration reports, similar to the one shown in the following image, provide insight into the number of times a test is run and the average time it takes for a particular test to execute during a pipeline run.
 

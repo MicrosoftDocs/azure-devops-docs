@@ -9,13 +9,13 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: anian
 ms.topic: how-to
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/05/2024
 ---
 
 # Create and embed a work item from wiki
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Create and embed work items in your wiki page content. This feature gives you an easy way to promote text to a link to a feature, task, or user story.
 

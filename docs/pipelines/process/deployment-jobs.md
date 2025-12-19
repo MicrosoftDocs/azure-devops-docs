@@ -4,12 +4,12 @@ description: Deploy to resources within an environment
 ms.topic: concept-article
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
 ms.date: 07/17/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Deployment jobs
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!IMPORTANT]
 > - Job and stage names must not conflict with reserved keywords (such as `deployment` for job type)
@@ -192,8 +192,6 @@ The following variables are available in this strategy:
 `strategy.name`: Name of the strategy. For example, canary.
 <br>`strategy.action`: The action to be performed on the Kubernetes cluster. For example, deploy, promote, or reject.
 <br>`strategy.increment`: The increment value used in the current interaction. This variable is available only in `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks.
-
-
 
 ## Examples
 

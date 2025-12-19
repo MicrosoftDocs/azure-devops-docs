@@ -82,7 +82,7 @@ Update your board frequently to keep the team in sync and to make the value stre
 
 To add a work item, select the plus sign (the add icon), type a title, and press **Enter**. The system saves the work item automatically.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/quickstart/add-new-item-agile-s155.png" alt-text="Screenshot showing adding a new item on a board, new nav.":::
 ::: moniker-end
 
@@ -98,11 +98,6 @@ As work progresses, update the status of an item by dragging it to a downstream 
 
 [!INCLUDE [note-closed-items](../includes/note-closed-items.md)]
 
-::: moniker range="< azure-devops-2022"
-> [!NOTE]   
-> Users assigned Stakeholder access can't use the drag-and-drop feature to update status. 
-::: moniker-end
-
 :::image type="content" source="media/alm-cc-move-card.png" alt-text="Screenshot showing update status of work item with arrow showing movement of card.":::
 
 ## Update card fields
@@ -117,7 +112,7 @@ Apply interactive filters to focus on a subset of work. For example, filter the 
 
 In the following example image, we filtered items assigned to Jamal and Raisa.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::image type="content" source="../backlogs/media/filter-boards/filter-kb-filters-chosen-services.png" alt-text="Screenshot showing filtering on assignment field.":::
 ::: moniker-end
 
@@ -125,7 +120,7 @@ In the following example image, we filtered items assigned to Jamal and Raisa.
 
 All members of a project can view and contribute to your board. To invite users to contribute, copy the URL of your board and send it to them.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/quickstart/kanban-board-url-s155.png" alt-text="Screenshot showing red square surrounding the URL for the board.":::
 ::: moniker-end
 
@@ -135,7 +130,7 @@ To add users to your project, see [Add users to a project](../../organizations/s
 
 After your team uses the board for several weeks, review key metrics like the Cumulative Flow Diagram (CFD) to optimize your process.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 Choose the **Analytics** tab, and then choose **View full report** for the CFD as shown in the following image. 
 
 :::image type="content" source="media/quickstart/open-analytics.png" alt-text="Screenshot showing highlighted Analytics tab.":::

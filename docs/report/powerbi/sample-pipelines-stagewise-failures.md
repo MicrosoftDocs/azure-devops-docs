@@ -8,13 +8,13 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 12/15/2022
 ---
 
 # Pipeline stage wise failures sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
 
@@ -22,7 +22,6 @@ The following image shows an example of stagewise failures report for a specific
 
 :::image type="content" source="media/pipeline-reports/stagewise-stacked-bar-report.png" alt-text="Screenshot of Power BI Pipelines stagewise failures stacked column report."::: 
  
-
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -34,10 +33,7 @@ The following image shows an example of stagewise failures report for a specific
 
 Stage, task, or job failure trend reports can be created by querying the `PipelineRunActivityResults` entity set.
 
-
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
-
-
 
 ### Stagewise failure trend 
 
@@ -97,7 +93,6 @@ $apply=filter(
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 [!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
-
 
 ### Query breakdown
 
@@ -217,7 +212,6 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
 ### Task wise failure trend 
 
 To view the task wise failure trend, use the following queries.
@@ -311,7 +305,6 @@ $apply=filter(
 ```
 
 ***
-
 
 [!INCLUDE [temp](includes/rename-query.md)]
 

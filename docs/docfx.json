@@ -1003,7 +1003,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-devops || >= azure-devops-2020 <= azure-devops-server"
+        "moniker_range": "azure-devops || >= azure-devops-2022 <= azure-devops-server"
       }
     },
     "dest": "team-services"

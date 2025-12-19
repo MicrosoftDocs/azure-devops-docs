@@ -8,7 +8,7 @@ monikerRange: "<=azure-devops"
 
 # Check out multiple repositories in your pipeline
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Pipelines often rely on multiple repositories that contain source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 
@@ -256,7 +256,7 @@ steps:
 - checkout: MyGitHubRepo
 ```
 
-:::moniker range=">azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 ## Triggers
 

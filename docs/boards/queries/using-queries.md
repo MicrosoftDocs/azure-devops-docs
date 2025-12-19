@@ -20,7 +20,7 @@ ms.date: 05/06/2025
 
 Work item queries in Azure Boards generate lists of work items based on the filter criteria provided by you. You can save and share these managed queries with others.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
 ::: moniker-end
 

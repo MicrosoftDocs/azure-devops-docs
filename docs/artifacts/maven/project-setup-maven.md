@@ -5,13 +5,13 @@ ms.service: azure-devops-artifacts
 ms.assetid: 944f45ee-baa3-45ba-8467-5e7ab2bc47cf
 ms.topic: how-to
 ms.date: 05/05/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Connect to an Azure Artifacts feed - Maven
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts enables developers to publish and restore Maven packages from feeds and public registries such as Maven Central and Google Maven Repository. This article walks you through setting up your Maven project and connecting to an Azure Artifacts feed.
 
@@ -76,7 +76,7 @@ Azure Artifacts enables developers to publish and restore Maven packages from fe
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 

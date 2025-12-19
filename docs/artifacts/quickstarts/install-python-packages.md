@@ -9,7 +9,7 @@ monikerRange: "<=azure-devops"
 
 # Install Python packages (CLI)
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article guides you through installing Python packages from an Azure Artifacts feed using the NuGet command-line interface.
 

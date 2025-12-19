@@ -5,7 +5,7 @@ ms.service: azure-devops-test-plans
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 07/28/2025
+ms.date: 12/19/2025
 monikers: 'azure-devops'
 ---
 
@@ -56,17 +56,14 @@ The Test Run Hub provides several ways to find specific test runs:
 
 ### Search capabilities
 
-- Search by test run ID (partial matches supported)
+- Search by test run ID (exact match only) - *this search capability overwrites all other filters*
 - Filter by timeline, run type, and other attributes
 - Use the dropdown filters in the search bar
 
-:::image type="content" source="media/test-runs/search-bar.png" alt-text="Screenshot showing the search bar with dropdown filters for test runs.":::
-
 > [!TIP]
 > - Filter selections and column widths persist across sessions until you clear them manually.
-> - Search filters work additively. For example, selecting "Past 7d" in the timeline filter shows only runs from the last seven days.
+> - Search filters work additively.
 > - A maximum of 5,000 results can appear in the Test Run Hub UI.
-> - Use the Azure DevOps REST APIs to search for runs older than 180 days.
 
 ### Customize columns
 
@@ -82,7 +79,7 @@ To configure which columns display, do the following steps:
    :::image type="content" source="media/test-runs/column-options.png" alt-text="Screenshot showing the column options configuration dialog for test runs.":::
 
 > [!TIP]
-> Pipeline Run and Pipeline Run Tested columns apply to automated runs only, and relate to both Build and Release Pipelines.
+> The Pipeline Run column applies to automated runs only, and relates to both Build and Release Pipelines.
 
 ## Test run states
 
@@ -179,12 +176,12 @@ Select any test case to view detailed results including:
 
 - **Test result summary**: Overview of the test execution
 - **Linked work items**: Associated bugs and other work items; click the "+ Add" button of the section to relate anything needed!  
-- **Test steps**: Detailed step-by-step results with outcomes and comments
+- **Test steps**: Provides detailed step-by-step results, including outcomes and comments. Enable the "Show images" option to preview the captured screenshots inline.
 - **Analysis information**: Post-execution analysis and next actions
 - **Attachments**: All test result-specific attachments
 
 > [!TIP]
-> The default Test Case Result filter is as well set to _Failed_ or _Aborted_ to streamline deeper analysis.
+> For Automated runs, the default Test Case Result filter is set to _Failed_ or _Aborted_ to accelarate the analysis.
 
 :::image type="content" source="media/test-runs/detailed-test-case-results.png" alt-text="Screenshot of the detailed test case results page showing comprehensive test information.":::
 

@@ -8,7 +8,7 @@ ms.date: 07/09/2020
 
 ## Velocity
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 When you assign your backlog items to sprints, you gain access to an in-context velocity report for both product and portfolio backlogs. Velocity helps teams determine how much work they can perform sprint-over-sprint.
 

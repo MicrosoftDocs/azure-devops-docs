@@ -8,13 +8,13 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 12/14/2022
 ---
 
 # Pipeline outcome summary for all pipelines sample reports 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 You can use the information provided in this article to query pipeline metrics--such as pass rate, number of failures, duration, and so on--for all pipelines and create a single report. Additional queries are provided to get other metrics, such as pipeline duration and number of failures for all project pipelines. 
 
@@ -26,19 +26,15 @@ As shown in the following image, you can select any pipeline from the **Pipeline
 
 :::image type="content" source="media/pipeline-reports/all-pipelines-outcome-summary-report-select-pipeline.png" alt-text="Screenshot of report that shows the outcome summary for the selected pipeline only.":::
 
-
 [!INCLUDE [temp](includes/preview-note.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-
 ## Sample queries
 
-
 You can use the following queries of the `PipelineRuns` entity set to create different but similar pipeline outcome summary reports. 
-
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
@@ -207,9 +203,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand Pipeline column in Power Query Editor
 

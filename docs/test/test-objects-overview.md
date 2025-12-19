@@ -343,7 +343,7 @@ For more information about setting these permissions, see [Set permissions and a
 
 As with other work items, you can bulk edit test-specific work items. For more information, see the following articles:  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 - [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md). 
 - [Navigate Test Plans, Test suites context menu options](navigate-test-plans.md#test-suites-context-menu-options)
 ::: moniker-end

@@ -4,13 +4,13 @@ description: Learn how to create, target, secure, and view deployment history fo
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
 ms.date: 04/09/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 keywords: Azure DevOps environments, CI/CD pipelines, Kubernetes, virtual machines, deployment history, secure environments
 ---
 
 # Create and target Azure DevOps environments
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article explains how to create and target Azure Pipelines environments. An environment is a group of [resources](about-resources.md) that you can target with deployments from a pipeline.
 
@@ -38,7 +38,6 @@ If a YAML pipeline refers to an environment that doesn't exist:
 - When Azure Pipelines doesn't have information about the user performing the operation, for example in a YAML update from an external code editor, the pipeline fails.
 
 ## Prerequisites
-
 
 | Category | Requirements |
 |--------------|-------------|

@@ -8,13 +8,13 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 12/15/2022
 ---
 
 # Pipeline duration sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article shows you how to get pipeline duration, or the time taken to run a pipeline. This report is similar to the duration summary metric in the 'Pipeline duration' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
 
@@ -28,7 +28,6 @@ The following image shows an example of a duration report for a specific pipelin
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-
 ## Sample queries
 
 You can use the following queries of the `PipelineRuns` entity set to create different but similar pipeline duration reports. 
@@ -37,7 +36,6 @@ You can use the following queries of the `PipelineRuns` entity set to create dif
  
 
 ### Return percentile durations for a specified pipeline  
-
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -88,7 +86,6 @@ $apply=filter(
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 [!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
-
 
 ### Query breakdown
 
@@ -326,7 +323,6 @@ in
     Source
 ```
 
-
 #### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
@@ -346,7 +342,6 @@ $apply=filter(
 ```
 
 *** 
-
 
 ## Change column data type
 
@@ -377,7 +372,6 @@ You can rename column fields. For example, you can rename the column `Pipeline.P
 Your report should appear similar to the following image.  
  
 :::image type="content" source="media/pipeline-reports/duration-clustered-column-report.png" alt-text="Screenshot of Power BI Sample Pipelines Duration clustered column report.":::
-
 
 ## Related articles
 

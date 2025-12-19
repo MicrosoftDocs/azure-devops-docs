@@ -15,7 +15,7 @@ After you verify your customizations, you can now apply the process to your exis
 > [!TIP]    
 > As you customize a WIT, all projects that reference the inherited process automatically update to reflect the custom WITs you added. To view your customizations, refresh your web browser.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. For the process currently used by the project, choose the number of the project.
 

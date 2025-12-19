@@ -5,12 +5,12 @@ ms.topic: concept-article
 ms.author: sandrica
 author: silviuandrica
 ms.date: 08/06/2024
-monikerRange: 'azure-devops || >= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Pipeline default branch
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article describes how to view and edit a pipeline's default branch. A pipeline's default branch defines the pipeline version used for manual builds, scheduled builds, retention policies, and in pipeline resource triggers. By default, a pipeline's default branch is the default branch of the repository.
 

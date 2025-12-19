@@ -14,7 +14,7 @@ ms.date: 03/12/2025
 
 # About projects and scaling your organization
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 A project in Azure DevOps provides a space for users to plan, track progress, and collaborate on building software solutions. It serves as a fundamental container for storing data and source code.
 

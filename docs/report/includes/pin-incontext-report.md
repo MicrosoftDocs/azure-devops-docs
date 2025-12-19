@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 07/14/2020
 ---
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Pin in-context report to a dashboard
 

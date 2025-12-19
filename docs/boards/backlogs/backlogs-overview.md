@@ -27,7 +27,7 @@ An Azure Boards backlog is a prioritized list of work items that guides your dev
 
 Use backlogs to do the following tasks:
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 - [Define user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#reorder-your-backlog)
@@ -123,7 +123,7 @@ When you have many initiatives your teams are working on, you might want to grou
 
 For example, here the Customer Service team organized several backlog items under two features and one epic.
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/overview/customer-service-backlog-parents-on.png" alt-text="Screenshot of Backlog that shows parents and multi-team ownership.":::  
 
@@ -145,7 +145,7 @@ When you have several teams, your hierarchical views can show items that belong 
 
 Your team's product backlog lists only those items whose area path matches items assigned to your team. If you show parents, you see the parent epic of the features and backlog items, even if another team owns the epic or feature.
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 Other team-owned items appear with an information icon :::image type="icon" source="../../media/icons/info.png" border="false":::.
 
@@ -164,7 +164,7 @@ For more information, see [Define area paths and assign to a team](../../organiz
 
 Here's another example that shows the **Epics** backlog for the **Management** team. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.  
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/multi-ownership/management-team-backlog-epics-s155.png" alt-text="Screenshot of view Epics and child items owned by other teams.":::
 
@@ -233,7 +233,7 @@ For more information about using each of these controls, see [Configure your bac
       [Switch to backlog view](create-your-backlog.md)
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="":::
       **Analytics**  
@@ -256,7 +256,7 @@ For more information about using each of these controls, see [Configure your bac
    :::column span="2":::
       [Switch backlog view](create-your-backlog.md)
 :::row-end:::
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="":::
       :::image type="icon" source="../../media/icons/view-options-icon.png" border="false":::  

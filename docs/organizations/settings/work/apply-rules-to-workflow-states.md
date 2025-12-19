@@ -13,7 +13,7 @@ ms.date: 09/11/2024
 
 # Apply rules to workflow states (Inheritance process)   
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 After you add or modify your workflow states for a work item type, define rules that apply based on the workflow state change. Adding rules to workflow states supports the following scenarios: 
 
@@ -27,7 +27,7 @@ After you add or modify your workflow states for a work item type, define rules 
 - Automate closure of parent work items
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 - Support an approval process 
 - Prevent unauthorized users from setting an invalid state 
 - Make a field required or read-only or another value based on State changes
@@ -63,7 +63,7 @@ The following table outlines the three groups of workflow rules you can define:
    - Define actions to restrict transitions from that state to other states.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 The following table outlines the two groups of workflow rules you can define:
 
 1. **Standard actions:**
@@ -104,7 +104,7 @@ The following table outlines the two groups of workflow rules you can define:
    :::column-end:::
 :::row-end:::
 ---  
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 :::row:::  
    :::column span="4":::
       **Restrict a transition based on State**
@@ -121,7 +121,7 @@ The following table outlines the two groups of workflow rules you can define:
 :::row-end:::
 ---  
 ::: moniker-end
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 :::row:::  
    :::column span="4":::
       **Hide field or make field read-only or required based on State and user or group membership**
@@ -277,18 +277,14 @@ The rule requirements translate to the following four rule definitions.
 
 ---
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Restrict state transitions 
 
 When you specify the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.  
 ::: moniker-end
-::: moniker range="azure-devops-2020"
-> [!NOTE]   
-> This feature requires Azure DevOps Server 2020.1 update or later version.
-::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 #### Example of restricting state transitions and Approved state
 
@@ -523,7 +519,7 @@ When you specify one of the two conditions based on user or group membership, `C
 To automate State transitions for parent work items that are based on the State assignments of their child work items, see [Automate work item state transitions](../../../boards/backlogs/automate-work-item-state-transitions.md).
 <a id="reassign"></a>
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Automate reassignment based on state change 
 

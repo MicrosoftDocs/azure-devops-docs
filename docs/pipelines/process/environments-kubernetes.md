@@ -5,13 +5,13 @@ ms.custom: pipelinesresourcesrefresh
 ms.topic: concept-article
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.date: 10/01/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 #customer intent: As a Kubernetes developer, I want to understand how Kubernetes resources are used in Azure Pipelines environments, so I can deploy apps to my Kubernetes clusters and create review environments for PRs.
 ---
 
 # Kubernetes resources in environments
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article describes using Kubernetes resources in Azure Pipelines [environments](environments.md) that you can target with deployments. You can connect to public or private Kubernetes clusters in Azure Kubernetes Service (AKS) or other cloud providers.
  

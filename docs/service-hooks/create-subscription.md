@@ -14,7 +14,7 @@ ms.date: 06/25/2025
 
 # Create a service hook subscription programmatically
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-lt-eq-azure-devops.md)]
 
 You can use a subscription to perform an action on an external or consumer service when a specific event occurs in an Azure DevOps project. For example, a subscription can notify your service when a build fails.
 

@@ -12,7 +12,7 @@ ms.date: 11/04/2022
 
 # Aggregate work tracking data using Analytics
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can get a sum of your work tracking data in one of two ways using Analytics with OData. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query that exercises the OData Aggregation Extension.   
 

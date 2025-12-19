@@ -7,14 +7,14 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.reviewer: dahellem
-monikerRange: ">= azure-devops-2020"
+monikerRange: "<=azure-devops"
 ms.date: 11/03/2025
 #customer intent: As an Azure DevOps administrator, I want to learn how to change my projects from Basic to Agile process so I can take advantage of Agile work item types, states, and practices.
 ---
 
 # Change a project process from Basic to Agile
 
-[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 When you create a new project in Azure DevOps, you choose a process to tailor its components such as work item types and states to your team's specific needs. Built-in processes include Basic, Agile, Scrum, and CMMI. For more information, see [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 

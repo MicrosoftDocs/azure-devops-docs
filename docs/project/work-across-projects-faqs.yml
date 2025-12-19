@@ -48,7 +48,7 @@ sections:
     questions:
       - question: Can I create a dashboard with information that spans two or more projects? 
         answer: | 
-          ::: moniker range=">= azure-devops-2020"
+          ::: moniker range="<=azure-devops"
           There's limited support for widgets that you add to a dashboard from different projects. Specifically, you can add [Burndown and Burnup charts](../report/dashboards/configure-burndown-burnup-widgets.md) from different projects to a dashboard. Query-based widgets reference queries that you define, which can [reference other projects](../boards/queries/using-queries.md). You can also use an [Embedded Webpage widget](../report/dashboards/widget-catalog.md#embedded-webpage-widget) to display data from a URL, such as a backlog, board, or an **Analytics** chart from for a team. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
           ::: moniker-end
           
@@ -126,9 +126,7 @@ sections:
           ::: moniker range="azure-devops"
           **Yes**. Cross-repository policies apply to all or a selection of the repositories in the projects. Do so from **Project settings** > **Repositories** > **Policies**. Add a custom policy and specify if it's for all repositories or choose to which repositories it should apply. For more information about branch policies, see [Improve code quality with branch policies](../repos/git/branch-policies.md).
           ::: moniker-end
-          ::: moniker range="azure-devops-2020"
-          **Yes**. Cross-repository policies apply to all or a selection of the repositories in the projects. Do so from **Project settings** > **Cross-repo policies**. Add branch protection and specify if it's for all repositories or choose to which repositories it should apply. For more information, see [Cross-repo branch policy administration](/azure/devops/release-notes/2019/sprint-160-update#cross-repo-branch-policy-administration) and [Improve code quality with branch policies](../repos/git/branch-policies.md).
-          ::: moniker-end
+          
 
       - question: How can I find all completed pull requests across projects? 
         answer: |

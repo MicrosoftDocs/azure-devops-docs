@@ -13,7 +13,7 @@ ms.date: 05/07/2025
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 <= azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 |Category  | Requirements |
 |-------------|-------------|

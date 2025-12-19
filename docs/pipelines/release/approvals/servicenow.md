@@ -197,10 +197,6 @@ The Azure Pipelines ServiceNow extension supports the Kingston, London, New York
 The Azure Pipelines ServiceNow extension supports the Kingston, London, New York, Paris, Quebec, San Diego, Tokyo, and Utah releases.
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-The Azure Pipelines ServiceNow extension supports the Kingston, London, New York, Paris, and Quebec releases.
-::: moniker-end
-
 ### What types of change request are supported?
 
 Azure Pipelines ServiceNow integration supports normal, standard, and emergency change requests.

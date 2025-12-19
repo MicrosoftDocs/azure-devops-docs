@@ -96,7 +96,7 @@ To set permissions on a new query folder, do the following steps:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 <= azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Choose **All**. Expand **Shared Queries**. 
  

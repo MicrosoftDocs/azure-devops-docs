@@ -14,7 +14,7 @@ ms.date: 06/30/2025
 
 # Service hook consumers
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-lt-eq-azure-devops.md)]
 
 You can use a service hook to perform an action on a consumer service when an event occurs in an Azure DevOps project. For example, a service hook can notify a consumer when a build fails. 
 

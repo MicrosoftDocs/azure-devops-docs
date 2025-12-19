@@ -19,7 +19,7 @@ ms.date: 09/18/2025
 
 # View and add work items
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
 This article shows how to view, filter, and create work items (user stories, issues, bugs, tasks). It covers the most common ways to add work items: the web portal, Boards/Backlogs/Sprints pages, Visual Studio, and the Azure DevOps CLI.
@@ -83,7 +83,7 @@ Use the pivot menu to select a focus (for example, "Assigned to me") and then ap
 
 :::row:::
    :::column span="1":::
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       ![Screenshot of web portal, Boards, Work Items, Menu options.](media/view-add/view-menu-cloud-version.png)  
       ::: moniker-end
    :::column-end:::
@@ -95,13 +95,7 @@ Use the pivot menu to select a focus (for example, "Assigned to me") and then ap
       - **My activity**: Items you recently viewed or updated.  
       - **My team(s)**: Items your team members recently viewed or updated.  
       ::: moniker-end
-      ::: moniker range="azure-devops-2020" 
-      - **Assigned to me**: Items assigned to you (sorted by last update).  
-      - **Following**: Items you're following.  
-      - **Mentioned**: Items mentioning you (last 30 days).  
-      - **My activity**: Items you recently viewed or updated.  
-      - **My team(s)**: Items your team members recently viewed or updated.  
-      ::: moniker-end
+      
    :::column-end:::
 :::row-end:::
 

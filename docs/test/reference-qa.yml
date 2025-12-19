@@ -93,7 +93,7 @@ sections:
 
       - question: How can I find out if a test case was added to other test suites?
         answer: |
-            ::: moniker range=">=azure-devops-2020"
+            ::: moniker range="<=azure-devops"
             Select a test case in the **Define** tab. Right-click or select **More options** to open the context menu, and then select **View linked items**.
 
             ![Screenshot shows the Linked Items dialog box with Test Suites selected.](media/create-test-cases/view-linked-items.png)

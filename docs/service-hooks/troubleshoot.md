@@ -15,7 +15,7 @@ ms.date: 12/03/2025
 
 # Troubleshoot service hooks
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-lt-eq-azure-devops.md)]
 
 This article offers general troubleshooting guidance for Azure DevOps service hooks. It also provides answers to frequently asked questions (FAQs).
 

@@ -9,7 +9,7 @@ monikerRange: "<=azure-devops"
 
 # Deploy to different stages from multiple branches using Classic release pipelines
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Classic release pipelines provide a convenient graphical user interface for setting up a continuous delivery solution for your application. Classic releases can be configured to trigger deployments automatically whenever a new artifact is available. Artifact filters can be used with release triggers to deploy from multiple branches. By applying artifact filters to specific branches, you can control deployment to particular stages based on your needs.
 

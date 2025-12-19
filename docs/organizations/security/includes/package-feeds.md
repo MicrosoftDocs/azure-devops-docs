@@ -3,7 +3,7 @@ ms.topic: include
 ms.date: 04/04/2022
 ---
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Feeds have four permission roles: **Feed Reader**, **Feed and Upstream Reader (Collaborator)**, **Feed Publisher (Contributor)**, and **Feed Owner**. Feed Owners can add user accounts or security groups to any role.
 

@@ -10,12 +10,10 @@ monikerRange: "<= azure-devops"
 ms.topic: reference
 ms.date: 01/17/2023
 
-
 #Customer intent: As a process designer, I need to understand how rules work and the limits to defining rules for a work item type or process, so I can add the right rules to support my business processes.
 ---
 
 # Rules and rule evaluation    
-
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
@@ -37,11 +35,9 @@ Prior to defining custom rules, read [Configure and customize Azure Boards](../.
 > [!TIP]    
 > Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.
 
-
 ## Auto-generated rules 
 
 Auto-generated rules minimize the need to add custom rules for areas that should work in a standard way. 
-
 
 ### State transition rules
 
@@ -77,8 +73,6 @@ These rules are technically a lot simpler than Closed By/Closed Date rules becau
 
 ## Custom rules
 
-
-
 All custom rules are optional. For an inherited process, you specify a rule which consists of a condition plus action. For an On-premises XML process, you specify rules for a field or within the workflow. 
 
 There isn't a one-to-one mapping between the two processes. In some cases, the XML element rule is defined within the **Edit field** dialog for the inherited process and not as a rule. Other XML elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the inherited process.  
@@ -88,7 +82,6 @@ Note the following:
 - Inherited process entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions.  
 - Field rules don't support assigning values that are the sum of two other fields or performing other- mathematical calculations. However, you may find a solution that fits your needs via the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
 - You may find additional solutions to applying custom rules to fields using a Marketplace extensions, such as the [Work item form control library extension](https://marketplace.visualstudio.com/items?itemName=mohitbagra.vsts-wit-control-library&ssr=false#overview). 
-
 
 ### Rule composition
 
@@ -106,7 +99,6 @@ As an example, you can make a field required based on the value assigned to the 
 &nbsp;&nbsp;&nbsp;```(Condition) When a work item State is``` *Active*  
 &nbsp;&nbsp;&nbsp;```(Condition) And when the value of``` *Value Area* = *Business*  
 &nbsp;&nbsp;&nbsp;```(Action) Then make required``` *Story Points*  
-
 
 > [!NOTE]  
 > Currently, only one condition is supported for state-transition rules. If you're applying rules based on State, see [Apply rules to workflow states](apply-rules-to-workflow-states.md). 
@@ -136,7 +128,7 @@ The following table summaries the Actions that are available with the selected C
   > ![Actions, work item is created](media/customize-workflow/actions-basic.png)
   :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::  
    :::column span="4":::
       **Restrict a transition based on State**
@@ -149,23 +141,7 @@ The following table summaries the Actions that are available with the selected C
   :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="azure-devops-2020"
-:::row:::  
-   :::column span="4":::
-      **Hide field or make field read-only or required based on State and user or group membership**
-   :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="2":::
-    > [!div class="mx-imgBorder"]  
-  > ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
-  :::column-end:::
-  :::column span="2":::
-    > [!div class="mx-imgBorder"]  
-  > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership-2020.png)
-  :::column-end:::
-:::row-end:::
-::: moniker-end
+
 ::: moniker range="azure-devops"
 :::row:::  
    :::column span="4":::
@@ -183,7 +159,6 @@ The following table summaries the Actions that are available with the selected C
   :::column-end:::
 :::row-end:::
 ::: moniker-end
-
 
 # [On-premises XML process](#tab/on-premises)
 
@@ -240,7 +215,6 @@ The following example restricts modification of the customer severity field when
 
 --- 
 
-
 ## What happens if too many rules are defined
 
 A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an `IF` statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error.
@@ -249,13 +223,11 @@ You can specify values for a pick list (drop-down menu), set default values, cle
 
 Work item rules do not exist as a single collection. The rules are actually dynamically generated and merged from different data sources. The merge logic is a simple one, consolidate identical rules, but don't trim conflicting rules.  
 
-
 ## Bypass rules
 
 In general, all work items are validated by the rule engine when users modify the work item. However, to support certain scenarios, users assigned the **Bypass rules on work item updates** project-level permission can save work items without rules being evaluated. 
 
 Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).
-
 
 <a name="system"></a>
 
@@ -279,7 +251,7 @@ If you don't see a field listed in the drop-down menu of the rule user interface
 
 Default and copy rules modify the values of work item fields. They define run-time behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
 
-::: moniker range="=azure-devops-2020 || =azure-devops"
+::: moniker range="=azure-devops"
 You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
 
@@ -319,7 +291,6 @@ Most of these rule actions can be applied with the selection of any condition.
       Sets the time for a field based on the current user's time setting. <!--- TBD --> 
    :::column-end:::
 :::row-end:::  
-
 
 # [On-premises XML process](#tab/on-premises)
 
@@ -400,10 +371,7 @@ These rules support setting defaults, copying values from one field to another, 
    :::column-end:::
 :::row-end:::  
 
-
-
 ---  
-
 
 <a id="require"></a> 
 
@@ -411,7 +379,7 @@ These rules support setting defaults, copying values from one field to another, 
 
 Constraint rules restrict changing the value of a field. They define the valid states for a work item. Each constraint operates on a single field. Constraints are evaluated on the server on work item save, and if any constraint is violated the save operation is rejected.  
  
-::: moniker range="=azure-devops-2020 || =azure-devops"
+::: moniker range="=azure-devops"
 You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
  
@@ -426,7 +394,7 @@ Most of these rule actions can be applied with the selection of any condition.
       **Description**
    :::column-end:::
 :::row-end:::  
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
        `Hide the field...`   
@@ -455,7 +423,6 @@ Most of these rule actions can be applied with the selection of any condition.
       To specify the field default is required, specify in Edit field dialog, **Options** tab. 
    :::column-end:::
 :::row-end:::  
-
 
 # [On-premises XML process](#tab/on-premises)
 
@@ -587,7 +554,6 @@ Most of these rule actions can be applied with the selection of any condition.
 :::row-end:::  
 ---  
 
-
 <a id="pick-list"></a> 
 
 ## Pick lists 
@@ -597,7 +563,6 @@ Pick lists define the values that a user can or can't choose for a String or Int
 # [Inheritance process](#tab/inheritance)
 
 For an Inherited process, pick lists are defined through the Edit field dialog. 
-
 
 :::row:::
    :::column span="2":::
@@ -623,7 +588,6 @@ For an Inherited process, pick lists are defined through the Edit field dialog.
       Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.
    :::column-end:::
 :::row-end:::  
-
 
 # [On-premises XML process](#tab/on-premises)
 
@@ -672,7 +636,6 @@ You can combine lists, and expand or contract lists. Also, you can restrict appl
    :::column-end:::
 :::row-end:::  
 
-
 **Identity fields and validation errors**
 
 To avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors, include the **ALLOWEXISTINGVALUE** element for the **Assigned To** field.
@@ -692,8 +655,6 @@ To avoid validation errors that would otherwise occur when members leave the tea
 > ```
 
 ---  
-
-
 
 <a id="conditional-rules"></a>
 
@@ -771,7 +732,6 @@ You can specify multiple conditional rules per field. However, you can only spec
    :::column-end:::
 :::row-end:::  
 
-
 # [On-premises XML process](#tab/on-premises)
 
 The following XML elements are used to set conditions for when other rules are evaluated. You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table.  
@@ -821,9 +781,7 @@ For syntax structure and examples, see [Assign conditional-based values and rule
    :::column-end:::
 :::row-end:::  
 
-
 ---  
-
 
 <a id="apply-ignore"></a> 
 <a id="membership"></a> 
@@ -833,9 +791,7 @@ For syntax structure and examples, see [Assign conditional-based values and rule
 
 You can restrict application of a rule based on the current user's membership. We recommend you scope the rule to an Azure DevOps security group, and not a single user, although you can specify the latter. To have the rule scoped to multiple groups, you must create a parent Azure DevOps group that includes the set of groups that you want to use.  
 
-
 ### Process implementation 
-
 
 > [!TIP]    
 > To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. For more information, see [Default rules and the rule engine](rule-reference.md). 
@@ -844,7 +800,7 @@ You can restrict application of a rule based on the current user's membership. W
 
 As indicated in the following table, to restrict a rule based on the current user's membership, you specify one of two conditions for an Inherited process. These rules are active for Azure DevOps 2020 and later versions. 
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **Applies to**
@@ -873,7 +829,6 @@ As indicated in the following table, to restrict a rule based on the current use
    :::column-end:::
 :::row-end::: 
 ::: moniker-end
-
 
 # [On-premises XML process](#tab/on-premises)
 
@@ -930,8 +885,6 @@ To restrict a rule based on the current user's membership, you specify either th
 :::row-end::: 
 ---  
 
-
-
 <a id="tokens"></a> 
 
 ### Use tokens to reference users or groups
@@ -945,7 +898,6 @@ Examples of tokens include the following:
 - [*ProjectName*], such as [Fabrikam], [FabrikamFiber], [MyProject]  
 - [*OrganizationName*], such as [fabrikam], [myorganization] 
 - [*CollectionName*], such as [fabrikam], [myorganization] 
-
 
 To learn about the scopes available for your project or organization, go to the **Project Settings>Permissions>Groups** or **Organization Settings>Permissions>Groups** page, you can filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. For more information, see [Change project-level permissions](../../security/change-project-level-permissions.md) or 
 [Change project collection-level permissions](../../security/change-organization-collection-level-permissions.md). 
@@ -995,7 +947,6 @@ All users and groups must be qualified by one of these tokens. For example, the 
 </FIELD>
 ```
 
-
 ---  
 
 To learn more about default security groups, see [Permissions and groups](../../security/permissions.md) 
@@ -1018,18 +969,13 @@ To avoid problems with users updating work items from various clients, specify A
 > [!NOTE] 
 > The WIT Client OM is deprecated. As of January 1, 2020, it no longer is supported when working against Azure DevOps Services and Azure DevOps Server 2020.  
 
-
 ## Order in which rules are evaluated 
-
 
 Rules are typically processed in the sequence in which they are listed. However, the complete sequence for evaluation of all rules isn't fully deterministic. 
 
 This section describes the expected behavior and interactions when you apply conditional, copy, and default rules. 
 
-
-
 # [Inheritance process](#tab/inheritance)
-
 
 The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
@@ -1113,7 +1059,6 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 > ```
 
 --- 
-
 
 ## Related content
 

@@ -14,7 +14,7 @@ monikerRange: "<=azure-devops"
 
 # Add a dashboard widget
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Widgets are implemented as [contributions](./contributions-overview.md) in the [extension framework](../overview.md). A single extension can include multiple widget contributions. This article shows how to create an extension that provides one or more widgets.
 

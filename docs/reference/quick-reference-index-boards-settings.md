@@ -86,7 +86,7 @@ You customize Azure Boards work tracking using either the Inheritance process mo
 With the Inheritance process, you apply a process to a project. 
  
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 - [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
 - [Customize a project using an inherited process](../organizations/settings/work/customize-process.md)
 - [Change the reference process from Agile to Scrum](../organizations/settings/work/change-process-agile-to-scrum.md)  

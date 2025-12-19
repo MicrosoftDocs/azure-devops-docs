@@ -15,7 +15,7 @@ ms.date: 08/04/2025
 
 # Quickstart: Add a custom work item type (Inheritance process)
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 In this quickstart, you create a custom work item type (WIT). In Azure Boards, You use different work item types to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases. Or, you can customize an existing WIT. Your project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 
@@ -97,7 +97,7 @@ We recommend that you create a test project and apply your customized inherited 
 	::: moniker range="azure-devops"
 	:::image type="content" source="media/process/new-team-project-from-inherited-process-menu.png" alt-text="Screenshot shows the Create a project option for a selected process."::: 
 	::: moniker-end
-	::: moniker range=">= azure-devops-2020 < azure-devops"
+	::: moniker range="<azure-devops"
 	:::image type="content" source="media/add-custom-field/choose-new-team-project.png" alt-text="Screenshot shows the Create a project option for your modified process."::: 
 	::: moniker-end
 
@@ -106,7 +106,7 @@ We recommend that you create a test project and apply your customized inherited 
 	::: moniker range="azure-devops"
 	:::image type="content" source="media/process/create-test-project-sprint166.png" alt-text="Screenshot shows the Create new project form."::: 
 	::: moniker-end
-	::: moniker range=">= azure-devops-2020 < azure-devops"
+	::: moniker range="<azure-devops"
 	:::image type="content" source="media/add-custom-field/create-new-project-2020.png" alt-text="Screenshot shows the Create new project page."::: 
 	::: moniker-end
 

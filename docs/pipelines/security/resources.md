@@ -4,13 +4,13 @@ description: Learn about protected Azure Pipelines resources, and how to use per
 ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
 ms.date: 10/02/2025
 ms.topic: concept-article
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines user, I want to understand protected resources so I can take steps to secure protected repositories, branches, and other resources in my pipelines.
 ---
 
 # Resource security
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article describes security features that help safeguard *protected resources* in Azure Pipelines. Pipelines might need to access open or protected resources during runs.
 

@@ -6,12 +6,12 @@ ms.custom: peer-review-program
 ms.service: azure-devops-artifacts
 ms.topic: overview
 ms.date: 12/02/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # What are Azure Artifacts feeds?
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts feeds are organizational constructs that allow you to store, manage, and share your packages while controlling access. A single feed can host multiple package types, including npm, NuGet, Maven, Python, Cargo, and Universal Packages packages.
 Azure Artifacts feeds also support saving packages from public registries like *nuget.org* through upstream sources, ensuring continued access to your packages even if the public source becomes temporarily unavailable.
@@ -48,7 +48,7 @@ Follow these steps and choose the appropriate scope to create a project-scoped o
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2022 || azure-devops-2020"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, then navigate to your project.
 

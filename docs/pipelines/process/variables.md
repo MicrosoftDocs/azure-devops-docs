@@ -19,7 +19,7 @@ To learn more how to work with variables defined at the job, stage, and root lev
 
 You can use variables with [expressions](expressions.md) to conditionally assign values and further customize pipelines.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 Variables are different from [runtime parameters](runtime-parameters.md). Runtime parameters are typed and available during template parsing. 
 ::: moniker-end
 
@@ -583,7 +583,7 @@ To share variables across multiple pipelines in your project, use the web interf
 
 ## Use output variables from tasks
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 Some tasks define output variables, which you can consume in downstream steps, jobs, and stages.
 In YAML, you can access variables across jobs and stages by using [dependencies](expressions.md#dependencies). 
 
@@ -632,7 +632,7 @@ jobs:
   steps:
   - script: echo $(varFromA) # this step uses the mapped-in variable
 ```
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Use outputs in a different stage
 
@@ -889,7 +889,7 @@ this is the value
 ```
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 If you're setting a variable from one stage to another, use `stageDependencies`. 
 

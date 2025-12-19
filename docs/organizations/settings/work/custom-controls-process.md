@@ -14,7 +14,7 @@ ms.date: 08/20/2025
 
 # Add extensions and custom controls to a work item type (Inheritance process)
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This article explains how to add rich functionality to your work item forms by using extensions. An extension comes in four flavors, or contribution types. The following controls appear on the web form layout for all inherited and customizable work item types (WITs):
 

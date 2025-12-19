@@ -120,12 +120,6 @@ Global notifications apply to all **projects** defined for an organization or co
 > Azure DevOps doesn't support organization-wide notifications. An alternate approach is to specify an email distribution list that sends messages to your entire organization. You can also generate a banner with the [**az devops banner command**](../../organizations/settings/manage-banners.md) visible to all users when they sign in. For more information, see [Add and manage information banners in Azure DevOps](../../organizations/settings/manage-banners.md).
 
 ::: moniker-end
-::: moniker range="azure-devops-2020"
-
-> [!TIP]
-> You can send an email to all collections in an application tier. For more information, see [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). You can also generate a banner to communicate with users without sending out mass emails. For more information, see [Add and manage information banners in Azure DevOps](../../organizations/settings/manage-banners.md).
-
-::: moniker-end
 
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
 

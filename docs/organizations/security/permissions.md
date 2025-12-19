@@ -255,10 +255,7 @@ So the full name of the administrator group for the default collection is
    for the server where the application-tier services are installed.
    Contains the members of the *CollectionName*/**Service Accounts** group.
    Limit this group to the fewest users who require full administrative control over the collection.  
-   ::: moniker range="< azure-devops-2022"
-   > [!NOTE]
-   > If your deployment uses Reporting Services, consider adding the members of this group to the [Team Foundation Content Managers groups in Reporting Services](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
-   ::: moniker-end
+   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2916,10 +2913,6 @@ Use task groups to encapsulate a sequence of tasks already defined in a build or
 <a id="alerts">  </a>
 
 ## Notifications or alerts 
-
-::: moniker range="=azure-devops-2020"
-There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, you can manage them using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tool.
-::: moniker-end
 
 - By default, members of the project level **Contributors** group can subscribe to alerts for themselves.
 - Members of the **Project Collection Administrators** group,

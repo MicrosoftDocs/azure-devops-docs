@@ -57,7 +57,7 @@ jobs:
   - bash: echo "B"
 ```
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Your pipeline can have multiple stages, each with multiple jobs. In that case, use the `stages` keyword.
 
@@ -139,7 +139,7 @@ The full syntax to specify a job is:
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 If the primary intent of your job is to deploy your app (as opposed to build or test your app), then you can use a special type of job called **deployment job**.
 
@@ -178,7 +178,7 @@ To add jobs to your release pipeline, edit the pipeline from **Pipelines** > **R
 
 Jobs can be of different types, depending on where they run.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 # [YAML](#tab/yaml)
 

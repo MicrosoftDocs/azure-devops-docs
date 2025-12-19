@@ -16,7 +16,7 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Sprint Taskboards are similar to boards because they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-Taskboards). Similar to boards, you can customize cards and add columns.  
 
@@ -55,7 +55,7 @@ To add or remove columns, choose **Column Options**. You customize all other opt
       Manage bugs on Taskboard similar to tasks.  
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **[Customize columns](#add-columns)** 
@@ -65,7 +65,7 @@ To add or remove columns, choose **Column Options**. You customize all other opt
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **[Fields](#choose-fields)** 
@@ -119,7 +119,7 @@ If you want bugs to appear on your taskboard, change your team settings for [sho
 
 <a id="add-columns" > </a>
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Add columns
 
@@ -307,7 +307,7 @@ You can apply style rules to change the color of Taskboard cards based on specif
 
 ::: moniker-end  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Changes cause automatic taskboard updates 
 
