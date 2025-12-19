@@ -13,7 +13,7 @@ Placeholder
 Check out the release notes for details.
 
 ### GitHub Advanced Security for Azure DevOps
-[!INCLUDE [sprint-266-update-links](includes/gazdo/sprint-266-update-links.md)]
+[!INCLUDE [sprint-266-update-links](includes/ghazdo/sprint-266-update-links.md)]
 
 ### Repos
 [!INCLUDE [sprint-266-update-links](includes/repos/sprint-266-update-links.md)]
@@ -25,7 +25,7 @@ Check out the release notes for details.
 [!INCLUDE [sprint-266-update-links](includes/testplans/sprint-266-update-links.md)]
 
 ## GitHub Advanced Security for Azure DevOps
-[!INCLUDE [sprint-266-update](includes/gazdo/sprint-266-update.md)]
+[!INCLUDE [sprint-266-update](includes/ghazdo/sprint-266-update.md)]
 
 ## Repos
 [!INCLUDE [sprint-266-update](includes/repos/sprint-266-update.md)]
