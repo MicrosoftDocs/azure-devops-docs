@@ -15,7 +15,7 @@ ms.date: 09/09/2024
 
 # Test summary sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 When you execute a pipeline run and include test tasks within the pipeline definition, you can create a report that indicates the  number of test runs for different test outcomes: **Passed**, **Failed**, **Not executed**, **Not impacted**.
 

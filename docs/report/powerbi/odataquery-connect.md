@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Connect with data by using Power BI and OData queries
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To pull data into Power BI, we recommend that you use Open Data Protocol (OData) queries. OData is a standard that's established by the Organization for the Advancement of Structured Information Standards (OASIS) and approved by the International Organization for Standardization and the International Electrotechnical Commission (ISO/IEC). OData defines best practices for building and consuming REST APIs. For more information, see the [OData documentation](/odata/).
 

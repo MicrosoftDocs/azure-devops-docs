@@ -14,7 +14,7 @@ ms.date: 11/06/2025
 
 # Construct OData queries for Analytics in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Analytics, the Azure DevOps reporting platform, can answer quantitative questions about the past or present state of your projects. Analytics supports OData queries of its metadata and entity set data. You can learn about the data model and query process by running simple queries from your web browser.
 

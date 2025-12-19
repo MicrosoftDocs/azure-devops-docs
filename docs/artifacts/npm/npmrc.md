@@ -12,7 +12,7 @@ monikerRange: "<=azure-devops"
 
 # Connect to an Azure Artifacts feed - npm
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts enables developers to manage packages from various sources, including public registries like *npmjs.com* and private feeds. To authenticate with Azure Artifacts, you need to configure your *npmrc* config file. This file stores feed URLs and credentials used by npm, and it allows you to customize client behavior such as setting up proxies, defining default package locations, or configuring access to private feeds. The *npmrc* file is typically located in the user's home directory, but can also be created at the project level to override default settings.
 

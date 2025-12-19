@@ -10,7 +10,7 @@ keywords: Azure DevOps environments, CI/CD pipelines, Kubernetes, virtual machin
 
 # Create and target Azure DevOps environments
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article explains how to create and target Azure Pipelines environments. An environment is a group of [resources](about-resources.md) that you can target with deployments from a pipeline.
 

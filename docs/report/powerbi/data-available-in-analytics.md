@@ -12,7 +12,7 @@ ms.date: 08/12/2022
 
 # Data available from Analytics
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The data available to you from Analytics depends on the Azure DevOps platform and version you're using and the Analytics version you query.
 

@@ -15,7 +15,7 @@ ms.date: 08/05/2024
 
 # Add comments to wiki pages
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to add comments to wiki pages to enhance collaboration among team members.
 

@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Templates for security
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Pipelines [templates](../process/templates.md) let you define reusable content, logic, and parameters in YAML pipelines. This article describes how templates can help enhance pipeline security by:
 

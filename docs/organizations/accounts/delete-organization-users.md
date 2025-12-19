@@ -13,7 +13,7 @@ monikerRange: "<=azure-devops"
 
 # Remove users from Azure DevOps  
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If users no longer require access to a team, project, or organization, you can remove their access. Removing access ensures that only authorized users can view and interact with your organization's data and resources. This article provides step-by-step instructions on how to remove user access from a team, project, or organization in Azure DevOps. By following these guidelines, you can ensure that your organization's security and resource management practices remain robust and up-to-date. 
 

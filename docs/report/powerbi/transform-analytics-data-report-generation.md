@@ -13,7 +13,7 @@ ms.date: 12/09/2022
 
 # Transform Analytics data to generate Power BI reports
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Once you've imported your Analytics data into Power BI, you may need to transform select column data prior to creating a report. This article shows you how to perform some of these basic tasks, such as: 
 

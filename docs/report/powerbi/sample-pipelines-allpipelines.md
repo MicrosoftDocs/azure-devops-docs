@@ -14,7 +14,7 @@ ms.date: 12/14/2022
 
 # Pipeline outcome summary for all pipelines sample reports 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 You can use the information provided in this article to query pipeline metrics--such as pass rate, number of failures, duration, and so on--for all pipelines and create a single report. Additional queries are provided to get other metrics, such as pipeline duration and number of failures for all project pipelines. 
 

@@ -12,7 +12,7 @@ ms.date: 11/04/2022
 
 # Metadata reference for Azure Pipelines Analytics  
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 The Analytics service collects pipeline and test activity generated via Azure Pipelines.  This article describes the properties that you can use to generate an Analytics report for pipelines. You use a combination of properties to filter a query, aggregate data, or build a report.  
  

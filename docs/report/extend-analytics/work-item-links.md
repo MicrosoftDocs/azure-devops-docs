@@ -14,7 +14,7 @@ ms.date: 05/09/2025
 
 # Tutorial: Query for linked work items 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you run Open Data Protocol (OData) queries against Analytics for Azure DevOps, you can retrieve information about work items. You can also query linked work items. Work items can be linked hierarchically, such as in parent or child relationships. Work items can also be linked nonhierarchically, such as when work items are related or are duplicates.
 

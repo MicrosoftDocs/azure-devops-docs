@@ -13,7 +13,7 @@ ms.date: 12/08/2022
 
 # Lead time and Cycle time sample report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 You can create lead time and cycle charts using the queries provided in this article. Lead time and cycle time indicate how long it takes for work to flow through a team's development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for a team to complete work items once they begin actively working on them.
 

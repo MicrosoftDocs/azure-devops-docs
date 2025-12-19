@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # Securely access repositories from pipelines
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To protect the code that runs their operations, organizations must carefully control access to their source code repositories. This article describes how Azure Pipelines build and release pipelines can securely access repositories to minimize the risk of unauthorized access.
 

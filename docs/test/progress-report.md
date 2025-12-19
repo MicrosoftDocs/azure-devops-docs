@@ -14,7 +14,7 @@ ms.update-cycle: 1095-days
 
 # Use the Progress Report
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
   
 To track the progress of more than one test plan or test suite, use the Progress Report. The Progress Reports helps you track status of passed, failed, or blocked tests, estimations, rate of execution, progress, and more for your team.
 

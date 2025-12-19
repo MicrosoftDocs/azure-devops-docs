@@ -9,7 +9,7 @@ monikerRange: "<=azure-devops"
 
 # About resources for Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 A [resource](resources.md) is anything used by a pipeline that lives outside the pipeline.
 

@@ -16,7 +16,7 @@ ms.date: 11/11/2025
 
 # Define basic queries using OData Analytics
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can use Analytics for Azure DevOps to construct OData queries to return data you're interested in. You can run these queries in your browser or in client software like Excel or Power BI.
 

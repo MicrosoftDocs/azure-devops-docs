@@ -9,7 +9,7 @@ monikerRange: "<=azure-devops"
 
 # Deployment jobs
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!IMPORTANT]
 > - Job and stage names must not conflict with reserved keywords (such as `deployment` for job type)

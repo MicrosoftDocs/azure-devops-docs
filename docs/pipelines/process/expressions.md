@@ -9,7 +9,7 @@ monikerRange: "<=azure-devops"
 
 # Expressions
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 

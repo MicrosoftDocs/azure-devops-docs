@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 # Use packages from the npm registry
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts upstream sources enable developers to consume packages from public registries like *npmjs.com*. Once upstream sources are enabled in your feed, Azure Artifacts automatically saves a copy of any package installed from an upstream source to your feed. This setup offers the greatest flexibility, allowing you to use a mix of scoped and non-scoped packages, including those from public registries, all within a single feed. This setup also ensures continued access to those packages even if the upstream source becomes temporarily unavailable.
 

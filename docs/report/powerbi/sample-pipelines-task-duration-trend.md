@@ -14,7 +14,7 @@ ms.date: 12/15/2022
 
 # Pipeline task duration trend sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 To visualize the time it takes tasks to complete for a specific pipeline, you can create a trend report. For example, the following image shows the 80th percentile in seconds for all tasks completed for a specific pipeline from September 1 to December 15, 2022.  
 

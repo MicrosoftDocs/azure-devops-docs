@@ -14,7 +14,7 @@ ms.date: 10/13/2021
 
 # Failed tests sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
 You can create a report that lists failed tests, similar to the following image, for pipeline runs that include test tasks. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
  

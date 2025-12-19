@@ -14,7 +14,7 @@ ms.date: 12/14/2022
 
 # Pipeline outcome summary sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 A pipeline run represents a single execution of a pipeline. During a run, the pipeline is processed, and agents process one or more jobs. Outcomes include *Succeeded*, *Failed*, *Canceled*, and *Partially Succeeded*. To create reports that show the outcomes of pipeline runs, you query the [``PipelineRuns` entity set`](../analytics/entity-reference-pipelines.md#pipelineruns). 
 

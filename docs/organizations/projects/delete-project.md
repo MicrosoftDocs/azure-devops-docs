@@ -16,7 +16,7 @@ ms.custom:
 
 # Delete a project
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 If a project becomes obsolete, you can [delete it](#delete-project) from your organization or collection in Azure DevOps. If you're migrating from an on-premises Azure DevOps Server to Azure DevOps Services, you might also need to delete the project. Removing unused projects can enhance navigation by limiting it to only those projects that are currently in use.
 

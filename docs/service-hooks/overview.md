@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Integrate with service hooks
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-lt-eq-azure-devops.md)]
 
 You can use service hooks to run tasks on other services when events happen in your Azure DevOps project.
 

@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Trigger one pipeline after another
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 > [!div class="op_single_selector"]
 > - [YAML pipelines](pipeline-triggers.md)

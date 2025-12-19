@@ -9,7 +9,7 @@ ms.topic: article
 
 # Secure agents, projects, and containers
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When it comes to securing Azure Pipelines, there are several other considerations to keep in mind, like protecting [shared infrastructure](#protect-shared-infrastructure), [repositories](#protect-repositories), [projects](#protect-projects), and [more](#other-security-considerations).
 

@@ -15,7 +15,7 @@ ms.date: 08/04/2025
 
 # Quickstart: Add a custom work item type (Inheritance process)
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 In this quickstart, you create a custom work item type (WIT). In Azure Boards, You use different work item types to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases. Or, you can customize an existing WIT. Your project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 

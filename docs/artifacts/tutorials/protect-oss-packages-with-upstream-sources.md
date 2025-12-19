@@ -11,7 +11,7 @@ ms.topic: tutorial
 
 # Tutorial: How to restore packages from upstream sources
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Using upstream sources in Azure Artifacts enables you to manage all your application dependencies from a single feed. It simplifies consuming packages from public registries like *NuGet.org* or *npmjs.com*, while also providing protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
 

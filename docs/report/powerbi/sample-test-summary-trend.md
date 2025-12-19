@@ -15,7 +15,7 @@ ms.date: 01/24/2023
 
 # Test summary trend sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
 Pipelines that include test tasks can be queried to build a test summary trend report. For example, the following report displays the number of failed test runs in each column over a period of 24 days, along with the line chart showing the trend of test pass rate. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 

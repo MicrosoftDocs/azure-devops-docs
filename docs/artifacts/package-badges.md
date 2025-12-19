@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Share packages using package badges in Azure Artifacts
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts enables developers to host various types of packages in a single feed and share them based on visibility settings, within a team, across an organization, or with external users.
 
