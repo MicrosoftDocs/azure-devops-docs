@@ -128,7 +128,7 @@ The following table summarizes the settings you can enable or configure for each
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       [Commit mention work item resolution](#work-item-linking)
@@ -226,7 +226,7 @@ The following table summarizes the policies or options you can set for either al
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       [Commit author email validation](#commit-author-email)
@@ -714,7 +714,7 @@ ID    Name                         Is Blocking    Is Enabled    Branch
 
 ***
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 <a id="default-branch-name"></a>
 
@@ -742,11 +742,6 @@ To set a default branch name at the project level:
 1. On the **Settings** tab of the **All Repositories** page, set **Default branch name for new repositories** to **On**, and then enter a default branch name.
 
 :::image type="content" source="media/repository-settings/project-settings-change-default-branch-name.png" alt-text="Screenshot that shows the project-level setting for Default branch name for new repositories.":::
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-> [!NOTE]  
-> The **Default branch name for new repositories** setting requires Azure DevOps Server 2020.1 or later version. 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2022"
@@ -785,7 +780,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 :::image type="content" source="media/repository-settings/organization-settings-gravatar.png" alt-text="Screenshot that shows the organization-level setting for Gravatar images.":::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 **Gravatar images** is a project-level setting for **All Repositories**.
 
 1. On your Azure DevOps project page, select **Project settings** at lower left, and then select **Repositories** in the left navigation.
@@ -824,7 +819,7 @@ These repository settings manage work item linking.
 
 When enabled, commit messages containing `#` followed by a valid work item ID automatically link the commit to that work item. Disable this setting if the repository previously used a different account or service. Those repositories might have commit messages with `#` mentions that don't match the work item IDs in the current account.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Commit mention work item resolution
 
@@ -860,7 +855,7 @@ Enabling this setting disables access to the repository, including builds and pu
 :::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Disable Repository setting.":::
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Searchable branches setting
 

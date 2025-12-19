@@ -8,12 +8,11 @@ ms.author: chcomley
 ms.custom: powerbisample
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 10/13/2021
 ---
 
 # Failed tests sample report
-
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
  
@@ -36,13 +35,11 @@ Use the queries provided in this article to generate the following reports:
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-
 ## Sample queries
 
 You can use the following queries of the `TestResultsDaily` entity set to create different but similar pipeline failed test reports. The `TestResultsDaily` entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by Test.  
 
 [!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
-
 
 ### Failed tests for a Build workflow  
 
@@ -103,7 +100,6 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 ```
 
 ***
-
 
 ### Failed tests for Release workflow
 
@@ -341,7 +337,6 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 ## Substitution strings and query breakdown
 
-
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - `{organization}` - Your organization name
 - `{project}` - Your team project name
@@ -547,7 +542,6 @@ Your report should look similar to the following image.
  
 
 [!INCLUDE [temp](includes/pipeline-test-task-resources.md)]
-
 
 ## Related articles
 

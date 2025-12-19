@@ -189,7 +189,7 @@ ms.date: 10/19/2022
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 :::row:::
    :::column span="2":::
    <a id="manage-enterprise-policies-permission"></a> Manage enterprise policies  

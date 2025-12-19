@@ -16,7 +16,7 @@ ms.date: 06/03/2024
 
 [!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[**Agile**](../../../boards/work-items/guidance/agile-process.md), [**Basic**](../../../boards/get-started/plan-track-work.md), [**Scrum**](../../../boards/work-items/guidance/scrum-process.md), or [**CMMI**](../../../boards/work-items/guidance/cmmi-process.md). 
 
@@ -188,7 +188,7 @@ We recommend that you create a test project and apply your customized inherited 
 
 1. From the **Process** page, select the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="<=azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
 	::: moniker-end

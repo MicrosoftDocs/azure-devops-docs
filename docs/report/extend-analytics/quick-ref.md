@@ -55,7 +55,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
    :::column-end:::
 :::row-end:::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Azure Pipelines sample widgets and reports 
 
@@ -212,7 +212,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 
 ## Metadata reference
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 - [Calendar date, Project, and User](../analytics/entity-reference-general.md) 
 - [Azure Boards](../analytics/entity-reference-boards.md) 

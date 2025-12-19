@@ -8,7 +8,7 @@ ms.author: shdalv
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
 ---
 
@@ -35,7 +35,6 @@ This report displays the following information for each requirement that it list
 > [!NOTE] 
 > Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
 
-
 [!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)] 
 
 [!INCLUDE [temp](includes/preview-note.md)]
@@ -45,7 +44,6 @@ This report displays the following information for each requirement that it list
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]  
-
 
 ## Sample queries
 
@@ -378,8 +376,6 @@ The following table describes each part of the query.
    Calculate the percent of completed wor.
    :::column-end:::
 :::row-end:::
-
-
 
 ## Create the Table report
 

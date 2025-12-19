@@ -4,7 +4,7 @@ description: Learn how to create, target, secure, and view deployment history fo
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
 ms.date: 04/09/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 keywords: Azure DevOps environments, CI/CD pipelines, Kubernetes, virtual machines, deployment history, secure environments
 ---
 
@@ -38,7 +38,6 @@ If a YAML pipeline refers to an environment that doesn't exist:
 - When Azure Pipelines doesn't have information about the user performing the operation, for example in a YAML update from an external code editor, the pipeline fails.
 
 ## Prerequisites
-
 
 | Category | Requirements |
 |--------------|-------------|

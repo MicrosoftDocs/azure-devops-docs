@@ -31,7 +31,7 @@ Azure Boards and Azure Pipelines offer multiple integration points with GitHub a
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 | **Feature** | **Description** |
 |-------------|-----------------|

@@ -110,30 +110,7 @@ Most of these team settings can be easily configured from the common configurati
 
 ::: moniker-end
 
-::: moniker range="<azure-devops-2022"
-
-1. Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu.
-
-	> [!div class="mx-imgBorder"]
-	> ![Open board, versions Azure DevOps Server 2019 and on.](../../boards/boards/media/quickstart/open-kanban-board-agile.png)
-
-2. Make sure that you select the team backlog or board that you want to configure using the team selector. For more information, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
-
-3. Choose the product or portfolio backlog from the board-selection menu. 
-	> [!div class="mx-imgBorder"]
-	> ![Choose board level, vert nav](media/configure-team/choose-board-level-vert.png)
-
-4. Choose **Team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
-
-	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
-
-5. Choose a tab under any of the sections&mdash;**Cards, Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
-
-	> [!div class="mx-imgBorder"]
-	> ![Common configuration dialog team settings](media/configure-team/common-configuration-dialog.png)
-
-::: moniker-end  
+  
 
 Team administrators have complete control over customizing their team's boards for both the product and portfolio backlogs. To set up a board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. For more information, see [Board overview](../../boards/boards/kanban-overview.md) and [Board quickstart](../../boards/boards/kanban-quickstart.md).
 
@@ -148,7 +125,7 @@ For detailed information on each configuration option, see the following article
 
 ## Configure sprint taskboards 
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 Similar to boards, you can customize each sprint Taskboard to support information-rich color-coded cards and columns. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
 
@@ -168,7 +145,7 @@ By default, all team members can add and edit team dashboards. In addition, team
 
 ## Update team name, description, and image
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB and 2560 x 1,024 px, and then we resize to 200 x 200.
 

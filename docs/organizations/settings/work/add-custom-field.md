@@ -95,7 +95,7 @@ We recommend that you create a test project and apply your customized inherited 
 	::: moniker range="azure-devops"
 	:::image type="content" source="media/process/new-team-project-from-inherited-process-menu.png" alt-text="Screenshot shows the create a project option for a selected process."::: 
 	::: moniker-end
-	::: moniker range=">= azure-devops-2020 < azure-devops"
+	::: moniker range="<azure-devops"
 	:::image type="content" source="media/add-custom-field/choose-new-team-project.png" alt-text="Screenshot shows the create a project option for your modified process."::: 
 	::: moniker-end
 
@@ -104,7 +104,7 @@ We recommend that you create a test project and apply your customized inherited 
 	::: moniker range="azure-devops"
 	:::image type="content" source="media/process/create-test-project-sprint166.png" alt-text="Screenshot shows the Create new project form."::: 
 	::: moniker-end
-	::: moniker range=">= azure-devops-2020 < azure-devops"
+	::: moniker range="<azure-devops"
 	:::image type="content" source="media/add-custom-field/create-new-project-2020.png" alt-text="Screenshot shows the Create new project page."::: 
 	::: moniker-end
 

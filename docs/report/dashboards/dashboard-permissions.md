@@ -17,7 +17,7 @@ ms.date: 10/25/2024
 
 <a id="set-permissions">  </a>
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Dashboards are viewable by all members of the Project Valid Users group. Permissions to edit, delete, or manage dashboards can be configured for both team and project dashboards.
 
@@ -36,7 +36,7 @@ For more information about adding and viewing dashboards, see [Add, rename, and 
 
 ## Prerequisites
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 | Category | Requirements |
 |-------------|-------------|
@@ -63,7 +63,7 @@ By default, all team members have permissions to create and edit dashboards for 
 > [!NOTE]
 > The dashboard permissions dialog currently doesn't support granting permissions to other users or groups. You can only modify the default settings for the team.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Open the [Dashboards directory](dashboards.md), select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and then select the **Security** menu option. 
 
@@ -81,7 +81,7 @@ By default, all team members have permissions to create and edit dashboards for 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Set permissions for a project dashboard 
 

@@ -1360,7 +1360,7 @@ When you edit pages directly in code, use the following pattern, `@<{identity-gu
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Page visit count for a wiki page
 

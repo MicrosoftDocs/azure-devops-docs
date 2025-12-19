@@ -18,7 +18,7 @@ ms.update-cycle: 1095-days
 
 View the status of planned tests or monitor testing progress by defining test case or test result charts. For more information about test planning, see [Create test plans and test suites](create-a-test-plan.md). For information about test result terms, see [Test objects and terms](test-objects-overview.md#test-terms).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 To track the progress of more than one test plan or test suite, open the [Progress Report](progress-report.md).
 ::: moniker-end
 
@@ -36,7 +36,7 @@ Choose from a fixed set of prepopulated fields related to results.
 Add your own charts for test results to visualize what's important for your team.
 If you already know how to add a chart, jump to the [examples](#TestResultsExamples) that you can create.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 To add a chart, follow these steps:
 
 1. Select **Test Plans** to open the **Test Plans** page. Open a test plan and then select the **Charts** tab.
@@ -73,7 +73,7 @@ Do the following steps to check the test status for a specific test suite.
 2. Select **New** > **New test result chart** to create a test results pie chart.
 3. Group by **Outcome**.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 ![Screenshot shows the Configure chart dialog box with Pie and Outcome selected.](media/track-test-status/configure-pie-chart.png)
 ::: moniker-end
 
@@ -86,7 +86,7 @@ If you created requirement-based test suites in your test plan for your user sto
 3. Add a test results stacked bar chart.
 4. Select **Suite** as the **Y-axis** and **Outcome** as **Group by**.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 ![Screenshot shows a stacked bar chart for a user story with Suite and Outcome selected.](media/track-test-status/user-story-stacked-bar-chart.png)
 ::: moniker-end
 
@@ -97,7 +97,7 @@ You can check how many tests that each tester left to run.
 1. Select your test plan in the **Test Plans** page and add a test results pivot table chart.
 2. Choose **Tester** as **Rows** and **Outcome** as **Columns** pivot.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 ![Screenshot shows a pivot table with Tester and Outcome selected.](media/track-test-status/tester-tests-left.png)
 ::: moniker-end
 
@@ -134,7 +134,7 @@ By default, test case fields aren't added to the view in the tests page.
 
 If you already know how to add a chart, jump to the [examples](#ExamplesTestCase) that you can create for test cases.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From the **Define** or **Execute** tabs, add any fields you want to use for your test case chart by using  **Column Options**.
    Those fields appear as choices in the lists for grouping for your test case charts.
@@ -167,7 +167,7 @@ These examples show common ways to interact with test case results.
 
 You can view the recent test results for an individual test case.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 1. Select the **Execute** tab in a test suite and then select a test case. 
 2. Select **More options** or right-select to open the context menu. 
 3. Select **View test result**.
@@ -178,7 +178,7 @@ You can view the recent test results for an individual test case.
 
 1. View the recent test results for this test case.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 ![Screenshot shows the Test Runs pane with information about individual test run.](media/track-test-status/test-case-results.png)
 ::: moniker-end
 
@@ -189,7 +189,7 @@ You can track burn down for test case creation.
 1. Create a stacked area trend chart to view the burn down for how many test cases are ready to be run.
 2. Select **State** for the stack by field and **Ascending** for the sort field.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 ![Screenshot shows a stacked area chart with State and ascending value selected.](media/track-test-status/burn-down-stacked-area-chart.png)
 ::: moniker-end
 
@@ -222,7 +222,7 @@ You can track test creation status for team members by creating a chart that inc
 Pin a chart to your team's dashboard for all the team to view.
 Use the chart's context menu.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 ![Screenshot shows the chart context menu with Add to dashboard selected.](media/track-test-status/add-dashboard-chart.png)
 ::: moniker-end
 

@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 08/01/2023
 ---
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 ## Display rollup progress counts, or totals 
 

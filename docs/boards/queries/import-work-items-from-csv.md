@@ -27,7 +27,7 @@ Import and export work items in bulk using CSV-formatted files in Azure Boards. 
 - Export work items: Member of the **Project Administrators** group or **View project-level information** permission set to **Allow**.
 - Import work items: Member of the **Project Administrators** or **Team Foundation Administrators** security group.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Import new work items
 
@@ -172,7 +172,7 @@ From any query, you can export a list of work items as a comma-delimited list. [
 
 :::image type="content" source="../work-items/media/email/export.png" alt-text="Screenshot showing Export a query as CSV.":::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Export and import work items to a different project
 
@@ -214,7 +214,7 @@ When you work with HTML fields across different Microsoft products, you might en
 
 For more information on managing HTML content and ensuring compatibility, see [Provide help text, hyperlinks, or web content on a work item form](../../reference/xml/provide-help-text-hyperlinks-web-content-form.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Unsupported work item types
 
@@ -235,7 +235,7 @@ For more information, see [Bulk import or export test cases](../../test/copy-clo
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## FAQs
 

@@ -4,7 +4,7 @@ description: Learn how to authenticate with your Azure Artifacts feed and restor
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 02/21/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Restore npm packages from the command line

@@ -339,26 +339,9 @@ From the **More actions** :::image type="icon" source="../media/icons/more-actio
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-::: moniker-end
-
 ::: moniker range="<azure-devops"
 
 We'll show you how to use the classic editor in Azure DevOps Server 2019 to create a build and release that prints "Hello world".
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-## Prerequisites
-
-* A [self-hosted Windows agent](agents/windows-agent.md).
-
-<a name="initialize-repo"></a>
-## Initialize your repository
-
-> If you already have a repository in your project, you can skip to the next step: [Skip to adding a script to your repo](#add-a-script-to-your-repository)
 
 ::: moniker-end
 
@@ -371,16 +354,6 @@ We'll show you how to use the classic editor in Azure DevOps Server 2019 to crea
 2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
 
    ![Initialize repository](media/initialize-repo.png)
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-<a name="add-script"></a>
-
-## Add a script to your repository
-
-Create a PowerShell script that prints `Hello world`.
 
 ::: moniker-end
 
@@ -409,18 +382,6 @@ Create a PowerShell script that prints `Hello world`.
 ::: moniker-end
 
    
-
-::: moniker range="=azure-devops-2020"
-
-> In this tutorial, our focus is on CI/CD, so we're keeping the code part simple. We're working in an Azure Repos Git repository directly in your web browser.
->
-> When you're ready to begin building and deploying a real app, you can use a wide range of version control clients and services with Azure Pipelines CI builds. [Learn more](#version-control).
-
-## Create a build pipeline
-
-Create a build pipeline that prints "Hello world."
-
-::: moniker-end
 
 ::: moniker range="<azure-devops"
 
@@ -466,16 +427,6 @@ Create a build pipeline that prints "Hello world."
 
    
 
-::: moniker range="=azure-devops-2020"
-
-> A build pipeline is the entity through which you define your automated build pipeline. In the build pipeline, you compose a set of tasks, each of which perform a step in your build. The task catalog provides a rich set of tasks for you to get started. You can also add PowerShell or shell scripts to your build pipeline.
-
-## Publish an artifact from your build
-
-A typical build produces an artifact that can then be deployed to various stages in a release. Here to demonstrate the capability in a simple way, we'll simply publish the script as the artifact.
-
-::: moniker-end
-
 ::: moniker range="<azure-devops"
 
 1. On the **Tasks** tab, select the plus sign **( + )** to add a task to **Job 1**.
@@ -489,26 +440,6 @@ A typical build produces an artifact that can then be deployed to various stages
    **Artifact name**: Enter `drop`.
 
    **Artifact publish location**: Select **Azure Artifacts/TFS**.
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-> Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
->
-> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Azure Pipelines](artifacts/artifacts-overview.md).
-
-## Enable continuous integration (CI)
-
-1. Select the **Triggers** tab.
-
-1. Enable **Continuous integration**.
-
->  A continuous integration trigger on a build pipeline indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](build/triggers.md).
-
-## Save and queue the build
-
-Save and queue a build manually and test your build pipeline.
 
 ::: moniker-end
 
@@ -537,20 +468,6 @@ Save and queue a build manually and test your build pipeline.
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-## Add some variables and commit a change to your script
-
-We'll pass some build variables to the script to make our pipeline a bit more interesting. Then we'll commit a change to a script and watch the CI pipeline run automatically to validate the change.  
-
-1. Edit your build pipeline.
-
-2. On the **Tasks** tab, select the PowerShell script task.
-
-3. Add these arguments.
-
-   ::: moniker-end
-
    ::: moniker range="<azure-devops"
 
    > [!div class="mx-imgBorder"] 
@@ -560,50 +477,13 @@ We'll pass some build variables to the script to make our pipeline a bit more in
 
    
 
-   ::: moniker range="=azure-devops-2020"
-
-   **Arguments**
-
-   ```
-   -greeter "$(Build.RequestedFor)" -trigger "$(Build.Reason)"
-   ```
-
-Finally, save the build pipeline. 
-
-Next you'll add the arguments to your script.
-
-1. Go to your **Files** in **Azure Repos** (the **Code** hub in the previous navigation and TFS).
-
-2. Select the **HelloWorld.ps1** file, and then **Edit** the file.
-
-3. Change the script as follows:
-
-   ```ps
-   Param(
-   [string]$greeter,
-   [string]$trigger
-   )
-   Write-Host "Hello world" from $greeter
-   Write-Host Trigger: $trigger
-   ```
-
-4. **Commit** (save) the script.
-
-::: moniker-end
+   
 
 ::: moniker range="<azure-devops"
 
 Now you can see the results of your changes. Go to **Azure Pipelines** and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 
 ::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-1. Select the new build that was created and view its log.
-
-2. Notice that the person who changed the code has their name printed in the greeting message. You also see printed that this was a CI build.
-
-   ::: moniker-end
 
    ::: moniker range="<azure-devops"
 
@@ -613,20 +493,6 @@ Now you can see the results of your changes. Go to **Azure Pipelines** and selec
    ::: moniker-end
 
    
-
-::: moniker range="=azure-devops-2020"
-
-> We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](build/variables.md).
-
-## You've got a build pipeline. What's next?
-
-You've created a build pipeline that automatically builds and validates whatever code is checked in by your team. At this point, you can continue to the next section to learn about release pipelines. Or, if you prefer, you can [skip ahead](#next-steps) to create a build pipeline for your app.
-
-## Create a release pipeline
-
-Define the process for running the script in two stages.
-
-::: moniker-end
 
 ::: moniker range="<azure-devops"
 
@@ -680,18 +546,6 @@ Define the process for running the script in two stages.
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-> A release pipeline is a collection of stages to which the application build artifacts are deployed. It also defines the actual deployment pipeline for each stage, as well as how the artifacts are promoted from one stage to another.
->
-> Also, notice that we used some variables in our script arguments. In this case, we used [release variables](release/variables.md) instead of the build variables we used for the build pipeline.
-
-## Deploy a release
-
-Run the script in each stage.
-
-::: moniker-end
-
  ::: moniker range="<azure-devops"
 
 1. Create a new release.
@@ -717,48 +571,11 @@ Run the script in each stage.
 
    
 
-::: moniker range="=azure-devops-2020"
-
-> You can track the progress of each release to see if it has been deployed to all the stages. You can track the commits that are part of each release, the associated work items, and the results of any test runs that you've added to the release pipeline.
-
-## Change your code and watch it automatically deploy to production
-
-We'll make one more change to the script. This time it will automatically build and then get deployed all the way to the production stage.
-
-1. Go to the **Code** hub, **Files** tab, edit the **HelloWorld.ps1** file, and change it as follows:
-
-   ```ps
-   Param(
-   [string]$greeter,
-   [string]$trigger
-   )
-   Write-Host "Hello world" from $greeter
-   Write-Host Trigger: $trigger
-   Write-Host "Now that you've got CI/CD, you can automatically deploy your app every time your team checks in code."
-   ```
-
-2. **Commit** (save) the script.
-
-3. Select the **Builds** tab to see the build queued and run.
-
-4. After the build is completed, select the **Releases** tab, open the new release, and then go to the **Logs**.
-
-Your new code automatically is deployed in the **QA** stage, and then in the **Production** stage.
-
-::: moniker-end
-
 ::: moniker range="<azure-devops"
 
 > [!div class="mx-imgBorder"] 
 > ![release script step final log - DevOps 2019 and 2020](media/get-started-designer/release-script-step-final-log-azure-devops-newnavon.png)
 >
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-> In many cases, you probably would want to edit the release pipeline so that the production deployment happens
-  only after some testing and approvals are in place. See [Approvals and gates overview](release/approvals/index.md).
 
 ::: moniker-end
 
@@ -771,24 +588,6 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 [!INCLUDE [include](includes/create-first-pipeline-next-steps.md)]
 
 :::moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-You've learned the basics of creating and running a pipeline.
-Now you're ready to configure your build pipeline for the programming language you're using.
-Go ahead and create a new build pipeline, and this time, use one of the following templates.
-
-| Language | Template to use | 
-|-|-|
-| [.NET](apps/aspnet/build-aspnet-4.md) | ASP.NET |
-| [.NET Core](ecosystems/dotnet-core.md) | ASP.NET Core |
-| [C++](apps/windows/cpp.md) | .NET Desktop | 
-| [Go](./ecosystems/go.md) | Go |
-| [Java](ecosystems/java.md) | Gradle |
-| [JavaScript](ecosystems/javascript.md) | Node.js |
-| [Xcode](ecosystems/xcode.md) | Xcode |
-
-::: moniker-end
 
 ## FAQ
 
@@ -822,25 +621,6 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 * Services
   * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
   * Git service providers such as Azure Repos Git, GitHub, and Bitbucket Cloud
-  * Subversion
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-* Clients
-
-  * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
-  * [Visual Studio with Git for Windows](../repos/git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
-  * [Visual Studio with TFVC](../repos/tfvc/share-your-code-in-tfvc-vs.md)
-  * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
-  * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
-  * [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
-  * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
-
-* Services
-  * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
-  * Git service providers such as GitHub and Bitbucket Cloud
   * Subversion
 
 ::: moniker-end
@@ -883,23 +663,11 @@ If you're editing a build pipeline and you want to test some changes that are no
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-You can edit and test your draft as needed.
-
-::: moniker-end
-
 ::: moniker range="<azure-devops"
 
 > [!div class="mx-imgBorder"] 
 > ![edit draft - DevOps 2019 and 2020](media/get-started-designer/edit-draft-newnav.png)
 >
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-When you're ready, you can publish the draft to merge the changes into your build pipeline.
 
 ::: moniker-end
 
@@ -911,11 +679,6 @@ When you're ready, you can publish the draft to merge the changes into your buil
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-Or, if you decide to discard the draft, you can delete it from the **All Pipeline** tab shown above.
-
-::: moniker-end
 ### How can I delete a pipeline?
 
 To delete a pipeline, navigate to the summary page for that pipeline, and choose **Delete** from the **...** menu in the top-right of the page. Type the name of the pipeline to confirm, and choose **Delete**.
@@ -925,32 +688,6 @@ To delete a pipeline, navigate to the summary page for that pipeline, and choose
 <a name="queueabuild"></a>
 
 ### What else can I do when I queue a build?
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-You can queue builds [automatically](build/triggers.md) or manually.
-
-When you manually queue a build, you can, for a single run of the build:
-
-* Specify the [pool](agents/pools-queues.md) into which the build goes.
-
-* Add and modify some [variables](build/variables.md).
-
-* Add [demands](/azure/devops/pipelines/yaml-schema/pool-demands).
-
-* In a Git repository
-
-  - Build a [branch](../repos/git/create-branch.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
-
-  - Build a [commit](../repos/git/commits.md).
-
-* In a TFVC repository
-
-  - Specify the source version as a [label](../repos/tfvc/use-labels-take-snapshot-your-files.md?viewFallbackFrom=vsts) or [changeset](../repos/tfvc/find-view-changesets.md?viewFallbackFrom=vsts).
-
-  - Run a private build of a [shelveset](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md?viewFallbackFrom=vsts). (You can use this option on either a [Microsoft-hosted agent](agents/hosted.md) or a [self-hosted agent](agents/agents.md).)
 
 ::: moniker-end
 

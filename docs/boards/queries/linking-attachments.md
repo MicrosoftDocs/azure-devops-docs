@@ -137,7 +137,6 @@ The following query finds work items in all projects that link to work items und
 - Add the **Area Path Under Fabrikam** clause to filter for work items that link to items defined under the Fabrikam project.   
 - Select **Only return items that have matching links**, and then select **Return selected link types** to return only work items linked as **Predecessor** or **Successor**.
 
-
 #### [Visual Studio 2015](#tab/visual-studio/)
 
 Use this query to list dependent work items that link to active Product Backlog Items or Bugs that aren't removed, closed, or completed. Only dependent work items that are under a product area other than **Phone Save\Phone Customers** are returned.
@@ -260,22 +259,7 @@ The following table describes fields associated with links and attachments. Most
    :::column-end:::
 :::row-end:::
 ::: moniker-end 
-::: moniker range="azure-devops-2020" 
-:::row:::
-   :::column span="1":::
-   <a id="parent"></a>
-
-   **Parent**
-
-   :::column-end:::
-   :::column span="3":::
-   When included as a column option in a backlog or query results list, the system displays the **Title** of the parent work item. Internally, the system stores the **ID** of the work item in an Integer field. 
-   > [!NOTE]
-   > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause.   
-   **Reference Name**=`System.Parent`, **Data type**=Integer
-   :::column-end:::
-:::row-end:::
-::: moniker-end 
+ 
 :::row:::
    :::column span="1":::
    <a id="related-link-count"></a>

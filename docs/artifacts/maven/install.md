@@ -7,7 +7,7 @@ ms.manager: mijacobs
 ms.topic: how-to
 ms.custom: engagement-fy23
 ms.date: 06/11/2024
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -86,7 +86,7 @@ With Azure Artifacts, you can publish and restore Maven packages from Azure Arti
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 

@@ -302,7 +302,7 @@ The default area path determines the default area path assigned to work items th
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 You can select existing area paths or create new or child area paths from the team settings. 
 

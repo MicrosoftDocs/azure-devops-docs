@@ -18,15 +18,6 @@ You can create events and metrics in Datadog in response to events in Azure DevO
 
 This article shows you how to use service hooks to send Azure DevOps events to Datadog.
 
-::: moniker range="<= azure-devops-2020"
-
-> [!IMPORTANT]
-> The Datadog feature might not be turned on by default in Azure DevOps Server 2020 and 2019, which is a known issue. Until it's resolved, you can use the following SQL command in your **Tfs_Configuration** database to turn on the feature:
->
-> `exec prc_SetRegistryValue 1, '#\FeatureAvailability\Entries\ServiceHooks.Consumers.datadog\AvailabilityState\', 1`
-
-::: moniker-end
-
 ## Prerequisites
 
 | Category | Requirements |

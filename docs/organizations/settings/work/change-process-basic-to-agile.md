@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.reviewer: dahellem
-monikerRange: ">= azure-devops-2020"
+monikerRange: "<=azure-devops"
 ms.date: 11/03/2025
 #customer intent: As an Azure DevOps administrator, I want to learn how to change my projects from Basic to Agile process so I can take advantage of Agile work item types, states, and practices.
 ---

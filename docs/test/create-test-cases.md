@@ -37,7 +37,7 @@ Organize your test cases by adding them to test plans and test suites, and then 
 
 ## Create test cases
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 1. If you haven't already, [create a test plan and requirement-based test suites](create-a-test-plan.md).
 
 2. Select a requirement-based test suite and select **New Test Case**.
@@ -99,7 +99,7 @@ Add existing test cases to a test suite with the following actions.
 > You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the board. For more information, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md).
 
 ## Use the Grid view to edit test cases
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Do the following steps to copy and paste test cases into the **Grid** view.
 
@@ -126,7 +126,7 @@ Do the following steps to copy and paste test cases into the **Grid** view.
 ::: moniker-end
 
 ### Use Excel to copy information into a Grid view
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 You can copy test cases and test steps from an existing Excel worksheet.
 Copy the columns from Excel that you want to use for the title, action, and expected results fields.
 Copying doesn't copy column formatting, other than multiline, from the worksheet.
@@ -147,7 +147,7 @@ Copying doesn't copy test step formatting, other than multiline, into the worksh
 
 ## Assign testers
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 You can reassign test cases so that a different tester can run them.
 You can assign all the test cases in a test suite to multiple testers, which is useful for acceptance testing.
 
@@ -177,7 +177,7 @@ You can assign an individual test case to a tester.
 ::: moniker-end
 
 ## Manage test cases
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can open a test case to view it or edit it.
 

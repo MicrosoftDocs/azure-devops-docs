@@ -3,7 +3,7 @@ title: Template expressions
 description: How to use expressions in templates
 ms.topic: concept-article
 ms.date: 10/25/2024
-monikerRange: '>=azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Template expressions
@@ -60,7 +60,6 @@ Additionally, you have access to the `variables` context that contains all the v
 many of the [predefined variables](../build/variables.md) (noted on each variable in that article). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
 Template expansion happens [early in the run](runs.md#process-the-pipeline), so those variables aren't available.
-
 
 ### Template expression functions
 
@@ -254,7 +253,6 @@ steps:
 
 You can also set variables based on the values of other variables. In the following pipeline, `myVar` is used to set the value of `conditionalVar`. 
 
-
 ```yaml
 trigger:
 - main
@@ -281,7 +279,6 @@ steps:
 - ${{ if eq(variables.conditionalVar, 'qux') }}:
   - script: echo "the value of myVar is set in the elseif condition" # runs when myVar=baz
 ```
-
 
 ### Iterative insertion
 
@@ -327,7 +324,6 @@ You can also use `stringList` to define and interate over parameters that contai
 > [!NOTE]
 > The `stringList` data type isn't available in templates. Use the `object` data type in templates instead.
 
-
 ```yaml
 parameters:
 - name: regions
@@ -350,7 +346,6 @@ stages:
       steps:
       - script: ./deploy ${{stage}}
 ```
-
 
 You can also manipulate the properties of whatever you're iterating over.
 For example, to add more dependencies:

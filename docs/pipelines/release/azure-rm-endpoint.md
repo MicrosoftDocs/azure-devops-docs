@@ -78,7 +78,6 @@ Alternatively, if you're ready to give the user administrator-level permissions,
 
 It typically takes 15 to 20 minutes to apply the changes globally. The user can then try recreating the service connection.
 
-
 ## The user isn't authorized to add applications in the directory
 
 This error occurs during the automatic service connection creation process when Azure DevOps attempts to create an application in Microsoft Entra ID on your behalf (step 2 in [What happens when you create an Azure Resource Manager service connection](#what-happens-when-you-create-an-azure-resource-manager-service-connection)). You don't have permission to add integrated applications in the directory. The directory administrator has permissions to change this setting. 
@@ -93,7 +92,7 @@ To resolve this issue:
 
 1. Under **App registrations**, change the **Users can register applications** option to **Yes**.
 
-::: moniker range="<= azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 You can also create the service principal with an existing user who already has the required permissions in Entra ID. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-a-service-connection-that-uses-an-existing-service-principal).
 
@@ -225,7 +224,7 @@ To resolve the issue, ensure that the values are defined within the variables se
 
 ## What authentication mechanisms are supported? How do managed identities work?
 
-::: moniker range="<= azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 An Azure Resource Manager service connection can connect to an Azure subscription by using Service Principal Authentication (SPA) or managed identity authentication.
 
@@ -239,7 +238,6 @@ The Azure Resource Manager service connection can connect to an Azure subscripti
 - Managed identity: Managed identities for Azure resources provide Azure services with an automatically managed identity in Microsoft Entra ID. You can also use an agent-assigned managed identity.
 
 > When you set up the service connection with a managed identity as the authentication method, the process doesn't create a new managed identity. It simply establishes the service connection. For this authentication method to function correctly, certain conditions must be met. Specifically, because managed identity is the chosen authentication method, the virtual machine you're using should have a system-assigned identity. Additionally, this virtual machine needs to act as a self-hosted agent within the pipelines for the workflow to fully execute, allowing the pipeline to deploy changes through the service connection. The system-assigned identity on the VM identifies that the same VM is serving as the agent in the pipeline, enabling authentication. This setup allows you to leverage the existing managed identity.
-
 
 To learn about managed identities for virtual machines, see [Assigning roles](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm).  
 

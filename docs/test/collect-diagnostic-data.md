@@ -104,7 +104,7 @@ Do the following steps to capture screen recordings from your apps.
 
 1. Choose the entire screen, or choose an app to start recording.
 
-   ::: moniker range=">=azure-devops-2020"
+   ::: moniker range="<=azure-devops"
    ![Screenshot showing selection of the screen or app to share.](media/collect-diagnostic-data/choose-test-feedback-share.png)
    ::: moniker-end
    

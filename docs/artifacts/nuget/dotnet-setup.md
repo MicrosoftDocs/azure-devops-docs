@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.custom: devx-track-dotnet
 ms.topic: how-to
 ms.date: 04/09/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -57,7 +57,7 @@ Azure Artifacts enables developers to seamlessly publish packages to feeds and s
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
@@ -117,5 +117,4 @@ export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
 - [Restore NuGet packages (dotnet)](restore-nuget-packages-dotnet.md)
 
 - [Publish NuGet packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
-
 

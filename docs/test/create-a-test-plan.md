@@ -46,7 +46,7 @@ In the next version of the product, you can reuse the existing test cases. Howev
 
 ## Create a test plan
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 In general, you create test plans to test requirements. Before you create a test plan, [define your backlog of requirements](../boards/backlogs/create-your-backlog.md).
 
 1. Sign in to your Azure DevOps project and select **Test Plans** > **Test Plans**.
@@ -93,7 +93,7 @@ To delete a test plan, do the following steps.
 
 ## Add a requirement-based test suite
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 Now add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based your project.
 
 > [!NOTE]
@@ -123,7 +123,7 @@ Now add test suites for the backlog items that need manual tests. These tests co
 
 You can create a static test suite that can contain any type of test suites. Use these test suites like folders. Drag test suites to group them in a static test plan. Drag and drop tests to reorder them.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 ![Screenshot shows using drag and drop to move a test.](media/create-a-test-plan/drag-drop-test.png)
 
 ::: moniker-end
@@ -134,7 +134,7 @@ For test suites, other actions are tracked in the **Test Suite Audit** field. Fo
 
 Export test plans, test suites, and test cases.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 Select **Export test cases to CSV**.
 
 ![Screenshot shows a test plan selected and the Export test cases to CSV option.](media/create-a-test-plan/export-test-cases.png)
@@ -150,7 +150,7 @@ Change the test case fields in the report by adding or removing columns from the
 
 ## Find a test case in a test plan
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon to show the search and filter list. It can help find the tests you want.
 
   ![Screenshot shows finding a test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/filter-select-test-plan.png)

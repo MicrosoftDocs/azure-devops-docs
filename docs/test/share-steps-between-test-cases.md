@@ -27,7 +27,7 @@ This article describes how to define and use **Shared Steps**. To learn how to d
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)]
  
 ## Create shared steps
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Do the following steps to create shared steps.
 
@@ -58,7 +58,7 @@ Provide values for the parameters in the test cases that use the shared steps. Y
 These values get used when you create an action recording of a standalone shared step.
 
 ## Insert shared steps into other test cases
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can add shared steps to other test cases.
 
@@ -75,7 +75,7 @@ You can add shared steps to other test cases.
 ::: moniker-end
 
 ## Mark shared steps when you run a test
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 When you [run a test](run-manual-tests.md), you can either mark the whole shared sequence as passed or failed, or mark each step separately:  
   

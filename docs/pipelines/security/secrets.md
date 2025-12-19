@@ -2,7 +2,7 @@
 title: Secrets in pipelines
 description: Learn about best practices for protecting secrets in Azure Pipelines.
 ms.date: 09/10/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines user, I want to understand best practices for using secrets in Azure Pipelines so I can limit and control access to secrets in pipelines.
 
 ms.topic: article

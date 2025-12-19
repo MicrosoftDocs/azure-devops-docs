@@ -3,7 +3,7 @@ title: Secure agents, projects, and containers
 description: Other tips for securing your pipelines, including protecting shared infrastructure, repositories, and projects.
 ms.assetid: 95fe319a-60bd-4b1b-9111-5fd8852f7839
 ms.date: 06/11/2024
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.topic: article
 ---
 
@@ -86,22 +86,13 @@ When you're working with public repositories from GitHub, it’s essential to ca
 
 By default, your pipelines are configured to build forks, but secrets and protected resources aren't automatically exposed to the jobs in those pipelines. It's essential not to disable this protection to maintain security.
 
-:::moniker range="> azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 :::image type="content" source="media/fork-build-protection.png" alt-text="Screenshot of fork build protection UI.":::
 
 > [!NOTE]
 > When you enable fork builds to access secrets, Azure Pipelines restricts the access token used by default. This token has limited access to open resources compared to a regular access token.
 > To grant fork builds the same permissions as regular builds, enable the **Make fork builds have the same permissions as regular builds** setting.
-
-:::moniker-end
-
-:::moniker range="=azure-devops-2020"
-
-:::image type="content" source="media/fork-build-protection-2020.png" alt-text="Screenshot of fork build protection UI in Azure DevOps Server 2020 and lower.":::
-
-> [!NOTE]
-> When you enable fork builds to access secrets, Azure Pipelines restricts the access token used by default. It has more limited access to open resources than a normal access token. You can't disable this protection.
 
 :::moniker-end
 
@@ -163,7 +154,7 @@ resources:
 Typically, most people should set the first three directories as read-only and leave `work` as read-write.
 If you don't write to the `work` directory in a specific job or step, feel free to make `work` read-only as well. But, if your pipeline tasks involve self-modification, you might need to keep `tasks` as read-write.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Control available tasks
 

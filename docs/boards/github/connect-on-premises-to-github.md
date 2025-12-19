@@ -48,11 +48,7 @@ The following authentication options are supported:
 
 You can connect up to 250 GitHub repositories to an Azure Boards project. 
 
-::: moniker range="azure-devops-2020"
-> [!NOTE]   
-> - Connection to more than 100 GitHub repositories requires Azure DevOps Server 2020.1 update or later version.  
-> - Connection to GitHub.com repositories requires Azure DevOps Server 2020.1.1 Patch 2 or later version.
-::: moniker-end 
+ 
 
 1. Open the web portal for your Azure DevOps Server.   
 

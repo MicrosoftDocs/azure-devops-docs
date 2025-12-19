@@ -4,7 +4,7 @@ description: Learn about protected Azure Pipelines resources, and how to use per
 ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
 ms.date: 10/02/2025
 ms.topic: concept-article
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines user, I want to understand protected resources so I can take steps to secure protected repositories, branches, and other resources in my pipelines.
 ---
 

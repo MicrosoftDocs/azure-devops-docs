@@ -35,7 +35,7 @@ If users no longer require access to a team, project, or organization, you can r
 
 #### [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 

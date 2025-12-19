@@ -6,7 +6,7 @@ ms.custom: peer-review-program
 ms.service: azure-devops-artifacts
 ms.topic: overview
 ms.date: 12/02/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # What are Azure Artifacts feeds?
@@ -48,7 +48,7 @@ Follow these steps and choose the appropriate scope to create a project-scoped o
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2022 || azure-devops-2020"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, then navigate to your project.
 

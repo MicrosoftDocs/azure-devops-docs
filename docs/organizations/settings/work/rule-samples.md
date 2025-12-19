@@ -327,7 +327,7 @@ For on-premises deployments, you can add rules to a work item type to prevent re
 
 ---
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Hide or restrict modification of a field based on a user or group 
 

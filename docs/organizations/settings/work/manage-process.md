@@ -136,7 +136,7 @@ Follow these steps to create a project from a process:
 
 1. Select **Boards** > **Process**. In the **Processes** list, highlight the process to update and select :::image type="icon" source="../../../media/icons/actions-icon.png"::: **More actions** > **New team project**. 
 
-   ::: moniker range=">= azure-devops-2020"
+   ::: moniker range="<=azure-devops"
 
    :::image type="content" source="media/process/new-team-project-from-inherited-process-menu.png" alt-text="Screenshot that shows how to select the new team project option for a selected process.":::
 
@@ -144,7 +144,7 @@ Follow these steps to create a project from a process:
 
 1. In the **Create new project** dialog, enter your project information, and then select **Create**. For more information, see [Create a project](../../projects/create-project.md).
 
-   ::: moniker range=">= azure-devops-2020"
+   ::: moniker range="<=azure-devops"
 
    :::image type="content" source="media/process/create-test-project-sprint166.png" alt-text="Screenshot of the Create new project dialog.":::
 	

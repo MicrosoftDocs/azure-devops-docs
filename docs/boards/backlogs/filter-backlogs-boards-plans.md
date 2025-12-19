@@ -141,7 +141,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1.5":::
      [**Sprints** (Backlogs  
@@ -212,29 +212,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range="< azure-devops-2022"
-:::row:::
-   :::column span="1.5":::
-     [**Plans**](../plans/review-team-plans.md)
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="2":::
-      - Work Item Types
-      - Assigned To
-      - States
-      - Tags
-   :::column-end:::
-   :::column span="1.5":::
-        
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end  
+  
 ::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1.5":::
@@ -265,7 +243,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
 1. While the **Parent Work Item** isn't a filter function for **Backlogs** or **Query Results**, you can add the **Parent** field as a column and then do a keyword/phrase search on the Parent title to effectively filter on parent work items. The Parent field is supported for Azure DevOps Server 2020 and later versions. See also the [Parent field and Parent Work Item](#parent-filter) section later in this article. 
 2. The **Parent Work Item** filter is supported for **Sprint Backlogs** and **Taskboards** for Azure DevOps Server 2020 and later versions. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### More filter, sort, group, reorder, and rollup functions 
 
@@ -274,7 +252,7 @@ Along with the standard filter functions summarized in the previous table, the f
 <br/>
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 ---
 :::row:::
    :::column span="2":::
@@ -451,7 +429,7 @@ Along with the standard filter functions summarized in the previous table, the f
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
      [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
@@ -484,26 +462,7 @@ Along with the standard filter functions summarized in the previous table, the f
  
  
  
-::: moniker range="< azure-devops-2022"
-:::row:::
-   :::column span="2":::
-     [**Plans**](../plans/review-team-plans.md)
-   :::column-end:::
-   :::column span="2":::
-
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
-      ✔️ (Note 5)  
-   :::column-end:::
-   :::column span="1":::
-        
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end  
+  
   
 
 **Notes**
@@ -514,7 +473,7 @@ Along with the standard filter functions summarized in the previous table, the f
 5. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
 6. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 For more information about these other functions, see the following articles: 
 - [Reorder cards (boards)](../boards/customize-cards.md#reorder-cards)  
 - [Display rollup progress or totals](display-rollup.md) 
@@ -545,7 +504,7 @@ All filter configurations are user-specific and remain active until you clear th
 
 To add columns or fields, see the following articles: 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 - For Backlogs and Queries, see [Change column options](set-column-options.md)
 - For Boards, see [Customize cards](../boards/customize-cards.md)
 - For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
@@ -673,7 +632,7 @@ You can filter by select field values using the board for your product backlog (
 
 For example, here we filter for all items assigned to Jamal and Raisa.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of enable board, Filter on assignment field](media/filter-boards/filter-kb-filters-chosen-services.png)
 ::: moniker-end
@@ -716,7 +675,7 @@ To start filtering, choose **Filter** :::image type="icon" source="../media/icon
 
 Here, we choose two features on which to filter the board:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of board, Filter on Parent field.](media/filter-boards/filter-kb-parent-filters-services.png)
 ::: moniker-end

@@ -325,12 +325,6 @@ When you're ready to have your changes reviewed, select **Create** to create the
 
 :::moniker-end
 
-:::moniker range="=azure-devops-2020"
-
-:::image type="content" source="media/pull-requests/add-detail-to-pr.png" alt-text="Adding details to a new P R.":::
-
-:::moniker-end
-
 Don't worry if you don't have all of the work items, reviewers, or details ready when you create your PR. You can add or update these items after you create the PR.
 
 ### Edit PR title and description
@@ -491,7 +485,7 @@ az repos pr reviewer add --id
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 To link work items to a new PR, do the following steps:
 
@@ -576,7 +570,7 @@ To add a tag when creating a PR, type a tag name in the **Tags** section. After 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Add attachments to pull requests
 

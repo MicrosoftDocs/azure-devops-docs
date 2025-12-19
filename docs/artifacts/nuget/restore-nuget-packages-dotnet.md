@@ -4,7 +4,7 @@ description: Learn how to connect to a feed and use the dotnet CLI to restore Nu
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 01/13/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Restore NuGet packages from the command line (dotnet)
@@ -56,7 +56,7 @@ This guide walks you through configuring your project and restoring your NuGet p
     ```
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 

@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.assetid: 944f45ee-baa3-45ba-8467-5e7ab2bc47cf
 ms.topic: how-to
 ms.date: 05/05/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -76,7 +76,7 @@ Azure Artifacts enables developers to publish and restore Maven packages from fe
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 

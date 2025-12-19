@@ -205,8 +205,6 @@ Use these essential fields to estimate effort and define requirements for sprint
 | [Acceptance Criteria](../queries/titles-ids-descriptions.md) | **Define "Done"** - Describe specific criteria for completion. Establish shared understanding between team and customers for acceptance testing. |
 | [Impact Assessment](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi) | **Assess risk (CMMI only)** - Document customer impact of not implementing the requirement. |
 
-
-
 <a id="show-hide-in-progress"></a>  
 
 ## Show or hide In Progress Items
@@ -264,7 +262,7 @@ The following settings can influence the type and number of work items that appe
 
 - If you've turned off the **In Progress** view, then those work items where work has started won't appear in the backlog list.  
 
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="<=azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress-s155.png)  
 	::: moniker-end

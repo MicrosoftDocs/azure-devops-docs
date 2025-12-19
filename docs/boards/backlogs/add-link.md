@@ -33,7 +33,7 @@ Work item links are associations between two work items or a work item and anoth
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 | Category | Requirements |
 |:-------------|:------------|
@@ -173,7 +173,7 @@ To view the information for the linked work items, enter one of the URLs listed 
 
 ---
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Link work items to pull requests
 
@@ -269,7 +269,7 @@ Do the following steps to link work items to objects defined in other Azure DevO
 
 ## Link work items to GitHub objects
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Branch**, **GitHub Commit**, **GitHub Issue**, and **GitHub Pull Request**. You can use GitHub for software development while you use Azure Boards to plan and track your work.
 ::: moniker-end
 
@@ -306,12 +306,7 @@ Alternatively, you can also link to a work item from an Advanced Security alert.
 
 Do the following steps to link work items to existing builds. These builds can be in your project or to other projects in your organization or collection.
 
-::: moniker range="azure-devops-2020"
-> [!NOTE]
-> This feature requires installation of Azure DevOps Server 2020.1 update. For more information, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#customize-work-item-state-when-pull-request-is-merged).  
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your work item, select **Links** > **Add link** > **Existing item**.
 

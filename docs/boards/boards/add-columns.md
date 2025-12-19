@@ -19,7 +19,7 @@ ms.date: 11/08/2024
 
 Managing columns on your board is essential for visualizing your team's workflow. Each column corresponds to a stage of work, such as "To do," "In progress," and "Done." You can customize these columns to match your specific process, while each card on the board represents a work item, such as a user story, bug, or task.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 > [!NOTE]    
 > - To manage columns on a sprint Taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). 

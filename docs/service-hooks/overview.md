@@ -68,7 +68,7 @@ The following services are available as targets of service hooks. For more infor
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 |Service  |Supported events  | Supported actions | Subscription management |
 |---------|---------|---------|---------|

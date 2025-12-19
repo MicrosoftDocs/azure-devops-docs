@@ -87,7 +87,7 @@ To view the set of defined teams, open **Project settings**, and choose **Overvi
 
 ## Add a dashboard 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 Dashboards are associated with a team or a project. Each team can create and configure a number of dashboards. And, any team member can create one or more project dashboards. To learn how, see [Add a dashboard](../../report/dashboards/dashboards.md).
 ::: moniker-end
 

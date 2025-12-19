@@ -5,7 +5,7 @@ ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.service: azure-devops-artifacts
 ms.topic: overview
 ms.date: 12/09/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
