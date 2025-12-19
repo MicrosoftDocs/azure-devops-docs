@@ -4,6 +4,7 @@ author: sid-ah
 ms.author: simerzou
 ms.date: 4/13/2020
 description: In **Sprint 167**, we are including enhancements to pull request actionability, pipeline security and compliance, and npm API performance.
+ms.topic: release-notes
 ---
 
 # Increase productivity & reduce latency

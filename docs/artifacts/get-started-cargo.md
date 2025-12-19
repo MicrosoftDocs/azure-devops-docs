@@ -79,6 +79,33 @@ To publish your Cargo package, run the following command in your project directo
 cargo publish
 ```
 
+If you encounter `GLib-GObject-CRITICAL - libsecret-CRITICAL` error, make sure you follow these steps:
+
+1. Verify *libsecret* is installed: 
+
+    ```
+    sudo apt update && sudo apt install libsecret-1-0
+    ```
+    
+1. Make sure *gnome-keyring* is running: 
+
+    ```
+    gnome-keyring-daemon --start --components=secrets
+    ```
+
+1. Update Rust to the latest stable version and set stable as the default toolchain:
+
+    ```
+    rustup update  
+    rustup default stable  
+    ```
+
+1. You should also run cargo publish with verbose logging to get more details:
+ 
+    ```
+    RUST_LOG=debug cargo publish --registry <REGISTRY_NAME>
+    ```
+
 ## Related articles
 
 - [Feed permissions](feeds/feed-permissions.md)

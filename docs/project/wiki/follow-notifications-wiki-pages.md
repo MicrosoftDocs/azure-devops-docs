@@ -22,6 +22,10 @@ Follow a Wiki page to receive email notifications whenever the page is edited, d
 
 You receive immediate notifications for renames and deletions. For edits, you receive a 30-minute digest email that includes all edits made within that period. This digest helps prevent your inbox from being spammed with individual edit notifications.
 
+## Prerequisites
+
+[!INCLUDE [wiki-prerequisites](includes/wiki-prerequisites.md)]
+
 ## Follow a wiki page
 
 To follow a Wiki page, select the **Follow** button on the page you want to track. You can manage your notification settings in your user profile to ensure you receive updates as needed.
@@ -45,7 +49,7 @@ You can unfollow a wiki page in the following ways:
 > [!NOTE]
 > When a user deletes a page, all followers get removed.
 
-## Related articles
+## Related content
 
 - [Create a wiki for your team project](wiki-create-repo.md)
 - [Learn about wiki Git repository files and file structure](wiki-file-structure.md)

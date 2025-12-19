@@ -21,7 +21,7 @@ A typical starting point is to review the logs in your completed build or releas
 
  To assist with troubleshooting, you can configure your logs to be more verbose.
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 * To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** and selecting **Enable system diagnostics**, **Run**.
 
@@ -29,19 +29,6 @@ A typical starting point is to review the logs in your completed build or releas
 
 * To configure verbose logs for all runs, you can add a variable named `system.debug` and set its value to `true`. 
 
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-* To configure verbose logs for a single run, you can start a new build by choosing **Queue build**, and setting the value for the `system.debug` variable to `true`.
-* To configure verbose logs for all runs, edit the build, navigate to the **Variables** tab, and add a variable named `system.debug`, set its value to `true`, and select to **Allow at Queue Time**.
-* To configure verbose logs for a YAML pipeline, add the `system.debug` variable in the `variables` section:
-
-  ```YAML
-  variables:
-    system.debug: true
-  ```
-  
 ::: moniker-end
 
 ::: moniker range="> azure-devops-2022"
@@ -56,7 +43,6 @@ To view the captured resource utilization metrics, [search the logs](#view-and-d
 
 ::: moniker-end
 
-
 ## View and download logs
 
 ::: moniker range="azure-devops"
@@ -68,12 +54,6 @@ To view individual logs for each step, navigate to the build results for the run
 To download all logs, navigate to the build results for the run, select **...**, and choose **Download logs**.
 
 ![Download logs](../media/troubleshooting/download-logs.png)
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-To download all logs, navigate to the build results for the run, choose **Download all logs as zip**.
 
 ::: moniker-end
 
@@ -130,7 +110,6 @@ For more information, see [agent troubleshooting](https://github.com/microsoft/a
 
 :::moniker-end
 
-
 ## Other logs
 
 Inside the diagnostic logs you will find `environment.txt` and `capabilities.txt`.
@@ -178,7 +157,6 @@ macOS/Linux:
 5. Run the agent interactively. If you're running as a service, you can set as the environment variable in control panel for the account the service is running as.
 
 6. Restart the agent.
-
 
 ### Use full HTTP tracing - macOS and Linux
 
@@ -234,7 +212,6 @@ To upload a custom log as a pipeline artifact, use the [PublishPipelineArtifact@
 ```
 
 For more information, see [Publish Pipeline Artifacts](../publish-pipeline-artifact.md).
-
 
 ### Capture resource utilization details
 

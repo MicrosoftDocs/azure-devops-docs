@@ -35,7 +35,7 @@ In this article you learn how to:
 >* Create and complete a PR
 >* Sync your fork
 
-## Prerequisites for access to Azure Repos
+## Prerequisites
 
 [!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 

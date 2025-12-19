@@ -4,10 +4,11 @@ description: Voluntarily provide stakeholder feedback in Azure DevOps using the 
 ms.assetid: 4E467527-62C6-4321-BA56-FF82F0FFFD69
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 ms.date: 12/07/2018
+ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,6 +17,14 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
+
+## Prerequisites
+
+| Category | Requirement |
+|--------------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
+| **Access levels** | To request or provide feedback: At least **Stakeholder** access. |
+| **Extensions** |[Test & Feedback extension](perform-exploratory-tests.md).|
 
 <a name="voluntary"></a>
 
@@ -67,10 +76,10 @@ Use the Test & Feedback extension to provide voluntary feedback, even if you don
      
    ![Screenshot showing highlighted square icon to stop your feedback session.](media/shared/provide-stakeholder-feedback-12.png)
 
-## Related articles
+## Related content
 
-* [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md#request)
-* [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
-* [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md#track)
+* [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md)
+* [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md)
+* [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)

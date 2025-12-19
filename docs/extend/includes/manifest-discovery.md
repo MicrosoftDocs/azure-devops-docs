@@ -1,4 +1,4 @@
-These optional properties help users discover and learn about your extension:
+The following optional properties help users discover and learn about your extension:
 
 
 |    Property     |                                                                  Description                                                                   |                                                                                                                                                                                                                                                     Notes                                                                                                                                                                                                                                                     |

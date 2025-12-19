@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 09/18/2020
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

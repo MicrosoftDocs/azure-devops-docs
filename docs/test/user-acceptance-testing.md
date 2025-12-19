@@ -4,10 +4,11 @@ description: Create and run user acceptance tests in Azure Test Plans. Test to v
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 ms.date: 12/06/2021
+ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
 
@@ -21,10 +22,14 @@ on business requirements, and the high quality software demanded by customers. T
 Typically you create a Test Suite using a formal requirement work item type. However, today's 
 agile teams often prefer to work from User Stories or Product Backlog items as their requirements.
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)]
-- Have work items and a test plan. If you don't, do the steps in the following articles: 
-   - [Create your backlog](../boards/backlogs/create-your-backlog.md)
-   - [Create a test plan](create-a-test-plan.md)
+## Prerequisites
+
+| Category | Requirement |
+|--------------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
+| **Access levels** | To request or provide feedback: At least **Stakeholder** access. |
+| **Permissions** | - To add or modify bugs or other work item types: **Edit work items in this node** permission set to **Allow** under the corresponding **Area Path**. <br> - To add new tags: **Create tag definition** permission set to **Allow**. <br> For more information, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md). |
+|**Configuration**  |Work items and a test plan. If you don't have these, [create your backlog](../boards/backlogs/create-your-backlog.md) and [create a test plan](create-a-test-plan.md).|
 
 <a name="search-assign"></a>
 
@@ -75,7 +80,7 @@ The example dashboard is also used for other types of testing, such as continuou
 
 If you don't see the data or information you expect in the dashboard charts, verify that the columns in your data are added to the Tests view. For more information, see [this blog post](https://devblogs.microsoft.com/devops/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
 
-## Related articles
+## Related content
 
 - [Test objects and terms](test-objects-overview.md)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)

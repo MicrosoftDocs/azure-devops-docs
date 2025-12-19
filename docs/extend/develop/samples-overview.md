@@ -4,11 +4,11 @@ title: Samples overview | Extensions for Azure DevOps
 description: Overview of the available extension samples for Azure DevOps, including a description, the link to the repo and the contributions they touch.
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.custom: engagement-fy23
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/09/2024
+ms.date: 03/21/2025
 ---
 
 # Extension samples
@@ -55,7 +55,7 @@ Other open source examples that you might be interested in.
 
 To get started as quickly as possible, use the [seed project](https://github.com/cschleiden/vsts-extension-ts-seed-simple) that contains the files required to build an extension using TypeScript. There's a grunt script to automate building, packaging, and publishing the extension.
 
-## Related articles
+## Related content
 
 - [Develop a web extension](../get-started/node.md)
 - [Use the Developer Formula Design System](https://developer.microsoft.com/azure-devops/)

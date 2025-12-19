@@ -1,11 +1,11 @@
 ---
 title: Configure pipeline triggers
 description: Configure pipeline triggers
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: sdanie
 author: steved0x
 ms.date: 04/05/2024
-monikerRange: ">=azure-devops-2020"
+monikerRange: "<=azure-devops"
 ---
 
 # Trigger one pipeline after another
@@ -23,6 +23,8 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
+>
+> Triggers defined using the pipeline settings UI take precedence over YAML triggers. To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-scheduled-triggers).
 
 ## Configure pipeline resource triggers
 
@@ -141,7 +143,7 @@ resources:
 
 :::moniker-end
 
-You can trigger your pipeline when one or more stages of the triggering pipeline complete by using the `stages` filter. If you provide multiple stages, the triggered pipeline runs when all of the listed stages complete.
+By default your target pipeline is triggered only when the source pipeline completes. If your source pipeline has stages, you can use stage filters to trigger your pipeline to run when one or more stages of the source pipeline complete (instead of the entire pipeline) by configuring a `stages` filter with one or more stages. If you provide multiple stages, the triggered pipeline runs when all of the listed stages complete.
 
 ```yml
 resources:
@@ -170,7 +172,6 @@ A typical scenario in which the pipeline completion trigger doesn't fire is when
 - Update the branch filters in the pipeline in the `Default branch for manual and scheduled builds` branch so that they match the new branch.
 - Update the [Default branch for manual and scheduled builds](pipeline-default-branch.md) setting to a branch that has a version of the pipeline with the branch filters that match the new branch.
 
-
 ## Combining trigger types
 
 When you specify both CI triggers and pipeline triggers in your pipeline, you can expect new runs to be started every time a push is made that matches the filters of the CI trigger, and a run of the source pipeline is completed that matches the filters of the pipeline completion trigger. 
@@ -182,3 +183,11 @@ For example, consider two pipelines named `A` and `B` that are in the same repos
 - When `A` completes, it triggers another run of `B`, based on the pipeline completion trigger in `B`.
 
 To prevent triggering two runs of `B` in this example, you must disable its CI trigger (`trigger: none`) or pipeline trigger (`pr: none`).
+
+## Related content
+
+- [Scheduled triggers](scheduled-triggers.md)
+
+- [Classic pipeline triggers](../release/pipeline-triggers-classic.md)
+
+- [Classic release triggers](../release/triggers.md)

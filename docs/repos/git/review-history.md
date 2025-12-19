@@ -19,14 +19,11 @@ Git uses [commit metadata](commits.md#whats-in-a-commit) like parent links, auth
 
 When people create and merge feature [branches](./create-branch.md) into a target branch using [pull requests](pull-requests.md), the development history of the target branch might not be a straight chronological line. So, when you review the history of changes to a file on the target branch, keep in mind that the order of commits is influenced by [merge strategy](pulling.md#update-branches-with-merge-or-rebase) and merge date, not just the original date of the changes. For example, the most recent commit on the `main` branch may introduce a change that was made weeks ago in a feature branch that was only just merged into the `main` branch using a three-way merge.
 
-In this article you learn how to:
-
->[!div class="checklist"]
->* Compare file versions
->* Restore files
->* Compare branches
-
 To learn how to use Visual Studio 2022 with Git, see [How Visual Studio makes version control easy with Git](/visualstudio/version-control/git-with-visual-studio).
+
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## Compare file versions
 

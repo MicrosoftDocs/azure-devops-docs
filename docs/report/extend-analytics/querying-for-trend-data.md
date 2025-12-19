@@ -7,8 +7,8 @@ ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2020
+monikerRange: "<=azure-devops"
+ms.date: 02/12/2025
 ---
 
 # Query trend data
@@ -21,20 +21,14 @@ Examining trends in data and making period-over-period comparisons are important
 
 Trend data is exposed in the WorkItemSnapshot and WorkItemBoardSnapshot entity sets. They're constructed so every work item, from the day it was created until today, exists for each day. For an organization with only one work item that was created a year ago, there are 365 rows in this entity. For large projects, these entities would be impractical to use with client tools.
 
-What is the solution? Use the [Aggregation Extensions](aggregated-data-analytics.md). 
-
-In this article you'll learn: 
-
-> [!div class="checklist"]
-> * How to construct a basic query for trend data       
+What is the solution? Use the [Aggregation extensions](aggregated-data-analytics.md).      
 
 Using the OData Aggregation Extensions, you can return aggregated data from Azure DevOps that is conducive to reporting. For example, you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put it to good use immediately.
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
 > [!NOTE]
-> The examples shown in this document are based on an Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
-
+> The examples shown in this document are based on an Azure DevOps Services URL. Substitute your Azure DevOps Server URL as needed.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -43,15 +37,17 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 
 ::: moniker-end
 
+## Prerequisites
 
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 <a id="trend-data"></a>
 
 ## Construct a basic query for trend data   
  
-There are some basic requirements you need to effectively query the WorkItemSnapshot table:  
+To effectively query the WorkItemSnapshot table, follow these basic requirements:
 * Filter the data by date.
-* The aggregation should group by, at the least, date. If not, response will have warning.
+* Group the aggregation by at least the date. If not, the response includes a warning.
 
 The query to create a bug trend report looks like the following example:
 
@@ -65,7 +61,6 @@ The query to create a bug trend report looks like the following example:
 > ```
 
 It returns a result similar to the following example:
-
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -88,12 +83,12 @@ It returns a result similar to the following example:
 > }
 > ```
 
-This query will produce at most `31 * (number of bug states)`. The default bug has three states:
+This query produces at most `31 * (number of bug states)`. The default bug has three states:
 - Active
 - Resolved
 - Closed
 
- At most, this query will return 93 rows no matter how many thousands of records actually exist. It provides a much more compact form of returning data.
+ At most, this query returns 93 rows no matter how many thousands of records actually exist. It provides a much more compact form of returning data.
 
 Let's look at a variation on this example. You want to see the bug trend for an iteration or a release that starts with one iteration and ends with another.  
 
@@ -135,8 +130,8 @@ It returns a result similar to the following example:
 
 In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard-coded date.  
  
-> [!NOTE]  
-> If aggregation is not used in your query on snapshot tables, you will see the warning "The specified query does not include a $select or $apply clause which is recommended for all queries." in the response. 
+> [!NOTE]
+> If your query on snapshot tables doesn't use aggregation, the response displays the warning: "The specified query doesn't include a `$select` or `$apply` clause which is recommended for all queries." 
 
 ## Related articles
 

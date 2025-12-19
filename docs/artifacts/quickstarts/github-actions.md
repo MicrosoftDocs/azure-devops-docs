@@ -16,6 +16,8 @@ zone_pivot_groups: github-actions-auth
 
 Get started using [GitHub Actions](https://docs.github.com/en/actions) and Azure Artifacts together. GitHub Actions help you automate your software development workflows from within GitHub. You can use GitHub Actions to deploy to an Azure Artifacts feed. 
 
+You can authenticate using either a managed identity or a [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). A PAT is user-generated token that grants access to Azure DevOps resources. A [managed identity](../../integrate/get-started/authentication/service-principal-managed-identity.md) is a type of service principal that Azure manages automatically to allow for passwordless authentication between Azure services and Azure DevOps. Managed identity is the more secure authentication option.
+
 ::: zone pivot="managed-identity"  
 
 ## Prerequisites
@@ -281,7 +283,8 @@ To assign your managed identity to the **Contributor** team, follow these steps:
               
           # Publish the package to Azure Artifacts
           - name: 'dotnet publish'
-            run: dotnet nuget push --api-key AzureArtifacts bin/Release/*.nupkg 
+            run: dotnet nuget push bin/Release/*.nupkg --api-key AzureDevOps --source ${{ env.AZURE_ARTIFACTS_FEED_URL }}    
+
     ```
 3. Go to your Azure Artifacts feed to verify that you see the package you pushed.
     
@@ -292,6 +295,7 @@ To assign your managed identity to the **Contributor** team, follow these steps:
 ## Clean up resources
 
 If you're not going to continue to use your GitHub workflow, [disable the workflow](https://docs.github.com/actions/managing-workflow-runs/disabling-and-enabling-a-workflow).
+
 ## Next steps
 
 > [!div class="nextstepaction"]

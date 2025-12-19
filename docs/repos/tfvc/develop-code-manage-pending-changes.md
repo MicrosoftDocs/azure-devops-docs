@@ -11,7 +11,7 @@ f1_keywords:
 - vs.tfs.teamexplorer.MyWorkPageMain
 - vs.tfc.sourcecontrol.DialogPromoteCandidates
 - vs.tfc.sourcecontrol.DialogUndoPendingChanges
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/01/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

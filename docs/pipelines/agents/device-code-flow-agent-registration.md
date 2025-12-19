@@ -1,7 +1,7 @@
 ---
 title: Register an agent using device code flow
 description: Learn how to register a self-hosted agent using device code flow
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/09/2023
 monikerRange: '> azure-devops-2022'
 ---

@@ -1,34 +1,31 @@
 ---
 ms.service: azure-devops-repos
 ms.topic: include
-ms.date: 02/03/2022
+ms.date: 02/14/2025
 ms.subservice: azure-devops-repos-git
 ---
 
 ::: moniker range="azure-devops"
 
-- **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../../organizations/settings/set-services.md) to reenable **Repos**.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of a [project](../../../organizations/projects/create-project.md). |
+| **Permissions** | - View code in private projects: At least **Basic** access.<br>- Clone or contribute to code in private projects: Member of the **Contributors** security group or corresponding permissions in the project.<br>- Set branch or repository permissions: **Manage permissions** permissions for the branch or repository.<br>- Change default branch: **Edit policies** permissions for the repository.<br>- Import a repository: Member of the **Project Administrators** security group or Git project-level **Create repository** permission set to **Allow**. For more information, see [Set Git repository permissions](../set-git-repository-permissions.md). |
+| **Services** | [Repos enabled](../../../organizations/settings/set-services.md). |
+| **Tools** | Optional. Use **az repos** commands: [Azure DevOps CLI](../../../cli/index.md).|
 
-- To view code in private projects, be a member of an Azure DevOps project with at least **Basic** access. For public projects, everyone can view the code.
-
-  - If you don't have a project, create one or [sign up for free](../../../user-guide/sign-up-invite-teammates.md).
-  
-  - If you aren't a project member, [get added](../../../organizations/accounts/add-organization-users.md).
-
-- To clone or contribute to code for a private project, be a member of the **Contributors** security group or have the corresponding permissions set. For public projects, anyone can clone and contribute code. For more information, see [What is a public project?](/azure/devops/organizations/projects/about-projects)
-
-  > [!NOTE]
-  > For public projects, users granted **Stakeholder** access have full access to **Azure Repos**.
+> [!NOTE]
+> In public projects, users with **Stakeholder** access have full access to Azure Repos, including viewing, cloning, and contributing to code.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=" < azure-devops"
 
-- **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../../organizations/settings/set-services.md) to reenable **Repos**.
-
-- To view code, be a member of the Azure DevOps project with at least **Basic** access. If you aren't a project member, [get added](../../../organizations/security/add-users-team-project.md).
-
-- To clone or contribute to code, be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of a [project](../../../organizations/projects/create-project.md). |
+| **Permissions** | - View code: At least **Basic** access.<br>- Clone or contribute to code: Member of the **Contributors** security group or corresponding permissions in the project. |
+| **Services** | [Repos enabled](../../../organizations/settings/set-services.md). |
 
 ::: moniker-end
 

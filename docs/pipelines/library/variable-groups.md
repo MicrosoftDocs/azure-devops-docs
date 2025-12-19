@@ -1,6 +1,5 @@
 ---
 title: Manage variable groups
-ms.custom: devx-track-azurecli, pipelinesresourcesrefresh
 description: Share common variables across pipelines using variable groups.
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.topic: tutorial
@@ -8,6 +7,10 @@ ms.author: ronai
 author: RoopeshNair
 ms.date: 08/15/2024
 monikerRange: '<= azure-devops'
+ms.custom:
+  - devx-track-azurecli
+  - pipelinesresourcesrefresh
+  - sfi-image-nochange
 ---
 
 # Manage variable groups
@@ -62,7 +65,7 @@ If you're using the Azure DevOps CLI, you need to set up the CLI to work with yo
 1. In Azure DevOps CLI commands, you can set the default organization and project by using:
 
     ```azurecli
-    az devops configure --defaults organization=<YourOrganizationURL> project=<Project Name or ID>`
+    az devops configure --defaults organization=<YourOrganizationURL> project=<Project Name or ID>
     ```
 
     If you haven't set the default organization and project, you can use the `detect=true` parameter in your commands to automatically detect the organization and project context based on your current directory. If the defaults aren't configured or detected, you need to explicitly specify the `org` and `project` parameters in your commands.

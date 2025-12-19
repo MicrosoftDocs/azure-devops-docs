@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: In Team Foundation Version Control, view the branch hierarchy of a project. See properties of branches, and take actions like merging or comparing branches.
 ms.assetid: 7ecab78e-f9f5-43d1-982f-b300ee1c4c16
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/22/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -24,6 +24,14 @@ As a project grows, its branch structure typically also grows and becomes more c
 - If changes are needed from a feature team, which branches do those changes have to go through to get to your branch?
 
 The following procedures explain how to use Team Foundation Version Control (TFVC) to answer these types of questions.
+
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## View and work with your branches
 

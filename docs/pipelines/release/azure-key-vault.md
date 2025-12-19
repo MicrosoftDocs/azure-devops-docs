@@ -3,8 +3,11 @@ title: Use Azure Key Vault secrets in Azure Pipelines
 description: How to create Azure Key vaults, store secrets, and use them in your Azure Pipelines.
 ms.topic: tutorial
 ms.date: 04/23/2024
-ms.custom: devx-track-azurecli, arm2024
 monikerRange: '>= azure-devops'
+ms.custom:
+  - devx-track-azurecli
+  - arm2024
+  - sfi-image-nochange
 "recommendations": "true"
 ---
 
@@ -27,7 +30,7 @@ In this tutorial, you will learn how to:
 
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) if you don't have one already.
+- An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) if you don't have one already.
 
 ## Get the sample code
 
@@ -149,7 +152,7 @@ If you already have your own repository, proceed to the next step. Otherwise, im
     
     - **Description**: (Optional) Add a description.
 
-1. In **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+1. In **Security**, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
 
 1. Select **Save** to validate and create the service connection.
 
@@ -213,7 +216,7 @@ The following steps outline how to grant *Read* access at the subscription level
 
 1. For **Authentication**, paste your service principal's **Application (client) ID** and **Directory (tenant) ID**
 
-1. Under **Security**, select the **Grant access permission to all pipelines** checkbox to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+1. In **Security**, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
 
 1. Leave this window open, you'll return to verify and save your service connection once you've created the federated credential in Azure.
 

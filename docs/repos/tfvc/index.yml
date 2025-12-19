@@ -45,6 +45,8 @@ landingContent:
             url: ./create-work-workspaces.md
           - text: Branch folders and files
             url: ./branch-folders-files.md
+          - text: Migration of custom check-in policies
+            url: ./tfvc-check-in-policy-migrate-guide.md
   - title: Reference
     linkLists:
       - linkListType: reference

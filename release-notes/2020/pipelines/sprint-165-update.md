@@ -4,6 +4,7 @@ description: See the Sprint 165 pipelines updates for Azure DevOps, including ne
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 02/17/2020
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 165 Update

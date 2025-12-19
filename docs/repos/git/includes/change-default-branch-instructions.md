@@ -9,7 +9,7 @@ To change your repo's default branch for merging new pull requests, you need at 
 >[!NOTE]
 >Changing the default branch requires you to have **Edit policies** permission. For more information, see [Set Git repository permissions](../set-git-repository-permissions.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Under your [project repo](../../../project/navigation/go-to-project-repo.md), select **Branches**.
 
@@ -20,23 +20,4 @@ To change your repo's default branch for merging new pull requests, you need at 
 1. After you set the new default branch, you can delete the previous default if you want.
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Select the settings button in your project bottom-left corner to open the project administration page.
-
-   ![Open the administrative area of the web portal for your project](/azure/devops/repos/git/media/pull-requests/gear-icon-settings-2019.png)
-
-1. Select **Repositories**.
-
-1. Select your Git repository. Your branches are displayed under your repo.
-
-1. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.
-
-   ![Set a default branch for a Git repo](/azure/devops/repos/git/media/pull-requests/set-default-branch-2019.png)
-
-1. Once you've set the new default branch, you may delete the previous one if you want.
-
-::: moniker-end
-
 

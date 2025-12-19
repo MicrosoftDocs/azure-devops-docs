@@ -3,12 +3,14 @@ title: Manage teams, configure team tools
 titleSuffix: Azure DevOps
 description: Administrators learn how access team tools, add users, configure backlogs, iteration paths, boards, and more in Azure DevOps. 
 ms.subservice: azure-devops-settings
-ms.custom: teams
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/12/2024
+ms.custom:
+  - teams
+  - sfi-image-nochange
 ---
 
 # Manage and configure team tools
@@ -27,9 +29,9 @@ Team administrators perform the following tasks for team tools:
 
 ## Prerequisites
 
-**Permissions:** 
-- To manage teams, be a [team administrator](add-team-administrator.md) or be a member of the [Project Administrators](../security/change-project-level-permissions.md) group.
-- To add a team, be a member of the [Project Administrators](../security/change-project-level-permissions.md) group. For more information, see [Add teams](add-teams.md).
+|Category | Requirements |
+|--------------|-------------|
+|**Permissions** |- To manage teams: [Team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group.<br>- To add a team: Member of the [Project Administrators](../security/change-project-level-permissions.md) group. For more information, see [Add teams](add-teams.md).|
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 
@@ -37,12 +39,10 @@ Team administrators perform the following tasks for team tools:
 
 Open your team profile to quickly access items defined for your team.
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```), and then open your project.
-2. Select **Project settings** > **Teams** > your team name.
+1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
+2. Select **Project settings** > **Teams** > your team.
 
    :::image type="content" source="media/open-project-settings-teams-cloud.png" alt-text="Screenshot of sequence to open a team.":::
-
-::: moniker-end
 
 ## Add users to a team
  
@@ -97,6 +97,7 @@ Most of these team settings can be easily configured from the common configurati
 ::: moniker range=">= azure-devops-2022"
 
 1. Check that you selected the correct project, and then choose **Boards** > **Boards**, and select the correct team from the team selector dropdown menu. For more information, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md).
+   
    :::image type="content" source="media/open-kanban-board-cloud.png" alt-text="Screenshot of steps to open the board.":::
 
 2. Choose **Team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
@@ -109,76 +110,24 @@ Most of these team settings can be easily configured from the common configurati
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops-2022"
-
-1. Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu.
-
-	> [!div class="mx-imgBorder"]
-	> ![Open board, versions Azure DevOps Server 2019 and on.](../../boards/boards/media/quickstart/open-kanban-board-agile.png)
-
-2. Make sure that you select the team backlog or board that you want to configure using the team selector. For more information, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
-
-3. Choose the product or portfolio backlog from the board-selection menu. 
-	> [!div class="mx-imgBorder"]
-	> ![Choose board level, vert nav](media/configure-team/choose-board-level-vert.png)
-
-4. Choose **Team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
-
-	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
-
-5. Choose a tab under any of the sections&mdash;**Cards, Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
-
-	> [!div class="mx-imgBorder"]
-	> ![Common configuration dialog team settings](media/configure-team/common-configuration-dialog.png)
-
-::: moniker-end  
+  
 
 Team administrators have complete control over customizing their team's boards for both the product and portfolio backlogs. To set up a board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. For more information, see [Board overview](../../boards/boards/kanban-overview.md) and [Board quickstart](../../boards/boards/kanban-quickstart.md).
 
-For detailed information on each configuration option, you can explore the following articles:
+For detailed information on each configuration option, see the following articles:
 
----
-:::row:::
-   :::column span="1":::
-      **General**
-      - [Backlogs](select-backlog-navigation-levels.md)
-      - [Working with bugs](show-bugs-on-backlog.md)            
-      **Cards**
-      - [Add fields](../../boards/boards/customize-cards.md)
-      - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
-      - [Add tag colors](../../boards/boards/customize-cards.md)
-      - [Enable annotations](../../boards/boards/customize-cards.md)
-      - [Configure inline tests](../../boards/boards/customize-cards.md#configure-inline-tests)
-   :::column-end:::
-   :::column span="1":::
-      **Boards**
-      ::: moniker range=">= azure-devops-2019"
-      - [Add columns](../../boards/boards/add-columns.md)  
-      - [Split columns](../../boards/boards/split-columns.md)    
-      - [WIP limits](../../boards/boards/wip-limits.md)    
-      - [Definition of Done](../../boards/boards/add-columns.md#definition-of-done)   
-      - [Add swimlanes](../../boards/boards/expedite-work.md)
-      - [Card reordering](../../boards/boards/customize-cards.md#reorder-cards)
-      - [Configure status badges](../../boards/github/configure-status-badges.md)
-      ::: moniker-end
-      **Chart**
-      - [Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md)
-   :::column-end:::
-:::row-end:::
----
+|Category |Articles |
+|---------|---------|
+|General   |- [Backlogs](select-backlog-navigation-levels.md)<br>- [Working with bugs](show-bugs-on-backlog.md)         |
+|Cards    | - [Add fields](../../boards/boards/customize-cards.md)<br>- [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)<br>- [Add tag colors](../../boards/boards/customize-cards.md)<br>- [Enable annotations](../../boards/boards/customize-cards.md)<br>- [Configure inline tests](../../boards/boards/customize-cards.md#configure-inline-tests)        |
+|Chart    | - [Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md)        |
+|Boards     | - [Add columns](../../boards/boards/add-columns.md)<br>- [Split columns](../../boards/boards/split-columns.md)<br>- [WIP limits](../../boards/boards/wip-limits.md)<br>- [Definition of Done](../../boards/boards/add-columns.md#definition-of-done)<br>- [Add swimlanes](../../boards/boards/expedite-work.md)<br>- [Card reordering](../../boards/boards/customize-cards.md#reorder-cards)<br>- [Configure status badges](../../boards/github/configure-status-badges.md)        |
 
 ## Configure sprint taskboards 
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 Similar to boards, you can customize each sprint Taskboard to support information-rich color-coded cards and columns. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2020" 
-
-Similar to boards, each sprint Taskboard can be customized to support information-rich, color-coded cards. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
 
 ::: moniker-end
 
@@ -188,9 +137,7 @@ Similar to boards, each sprint Taskboard can be customized to support informatio
 
 ## Add and manage team dashboards   
 
-::: moniker range=">= azure-devops-2019"
 By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For more information, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).  
-::: moniker-end
 
 :::image type="content" source="media/manage-team-dashboards.png" alt-text="Screenshot of dashboard button surrounded by red square.":::
 
@@ -198,18 +145,11 @@ By default, all team members can add and edit team dashboards. In addition, team
 
 ## Update team name, description, and image
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB and 2560 x 1,024 px, and then we resize to 200 x 200.
 
-
 ![Screenshot to Update team profile picture.](media/team-defaults/update-team-profile-pic-preview.png)
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-Team settings also include the team name, description, and team profile image. To add a team picture. Open the Team Profile and choose the picture icon. The maximum file size is 4 MB.
 
 ::: moniker-end
 
@@ -219,7 +159,7 @@ Team administrators have the ability to add and edit alerts, allowing the team t
 
 :::image type="content" source="media/manage-notifications.png" alt-text="Screenshot of highlighted Notifications button.":::
 
-## Related articles
+## Related content
 
 - [About projects and scaling your organization](../projects/about-projects.md)
 - [About teams and Agile tools](about-teams-and-settings.md)  

@@ -24,6 +24,8 @@ If you need more portfolio backlogs, see the following articles based on the pro
 
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).
 
+## Prerequisites
+
 [!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
 <a id="activate-backlogs"></a>
@@ -48,10 +50,9 @@ This setting affects the backlog and board views for all team members, ensuring 
 
 6. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
 
-::: moniker-end
    Your customized backlog and board view reflect the selected backlog levels.
 
-## Related articles
+## Related content
 
 - [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md)
 - [Understand backlogs, boards, and plans](../../boards/backlogs/backlogs-boards-plans.md)

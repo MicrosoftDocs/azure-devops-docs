@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Remove access to files that are under version control in Team Foundation Version Control (TFVC).
 ms.assetid: 4264ddaf-ef39-430a-a388-770e2d06b319
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/29/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -24,7 +24,11 @@ As a Team Foundation Version Control (TFVC) administrator, you might have to rem
 
 ## Prerequisites
 
-To remove access to Team Foundation version control files, belong to the **Azure DevOps Administrators** group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|Member of the **Azure DevOps Administrators** group. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Remove access to a file under version control
 

@@ -2,7 +2,6 @@
 title: View and update work items via mobile browser 
 titleSuffix: Azure DevOps
 description: View and update work items from your mobile client using Azure DevOps.
-ms.custom: Navigation
 ms.subservice: azure-devops-projects
 ms.topic: how-to
 ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
@@ -10,7 +9,10 @@ ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/03/2024
+ms.date: 01/27/2025
+ms.custom:
+  - Navigation
+  - sfi-image-nochange
 ---
 
 # View and update work items via mobile browser
@@ -24,16 +26,24 @@ Use the mobile browser to stay updated on work tracking in Azure DevOps. When yo
 ::: moniker range="azure-devops"
 
 > [!NOTE]  
-> The mobile browser supports Azure DevOps work tracking. To sign up for free, go to [Azure DevOps Services](https://www.visualstudio.com/team-services/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by selecting a link from a work item you receive in your mobile email application.      
+> The mobile browser supports Azure DevOps work tracking. To sign up for free, go to [Azure DevOps Services](https://www.visualstudio.com/team-services/). The mobile browser isn't an app, but a mobile view into select features. There's nothing to download. You access the mobile browser by selecting a link from a work item you receive in your mobile email application.      
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
 > [!NOTE]
-> The mobile browser is available for Azure DevOps Server 2019 and later versions. For downloads, see [Downloads](https://visualstudio.microsoft.com/downloads/). The mobile browser is not an app but a mobile view of select features. There is nothing to download. Access the mobile browser by selecting a link from a work item in your mobile email application.
+> The mobile browser is available for Azure DevOps Server 2019 and later versions. For downloads, see [Downloads](https://visualstudio.microsoft.com/downloads/). The mobile browser isn't an app but a mobile view of select features. There's nothing to download. Access the mobile browser by selecting a link from a work item in your mobile email application.
 
 ::: moniker-end
+
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+| **Azure DevOps Server** | The mobile browser is available for Azure DevOps Server 2019 and later versions. |
+| **Email notifications** | [Enable email notifications](../../organizations/notifications/manage-your-personal-notifications.md) for work item changes, @mentions, or other alerts. |
+| **Mobile device** | Access the mobile work item form from a mobile device with an email application that can open links. |
 
 ## Open the mobile work item form  
 
@@ -67,7 +77,7 @@ Actions not available in the mobile work item form:
 Mobile form controls operate as follows:
 
 - Select any field to edit it, and the form changes to a full-screen experience. Common actions include:
-  - Change the state of an item: Select the desired state from the dropdown menu to update the work item's status.
+  - Change the state of an item: To update the work item status, select the desired state from the dropdown menu.
   - Move to a different area path: Choose a new area path to reassign the work item within the project.
   - Add an attachment: Upload files to the work item to provide more context or resources.
   - Create or remove tags: Enter the text you want in the tag field and press **Enter** to add a tag. To remove a tag, select the "x" next to the tag name.
@@ -117,7 +127,7 @@ When you open the browser, it defaults to the **Assigned to me** page. From ther
 > 
 >:::image type="content" source="../media/mobile-azure-devops-hubs.png" alt-text="Screenshot showing Azure DevOps hubs accessible via mobile browser.":::
 
-## Related articles  
+## Related content  
 
 - [View blog post, The mobile work item form (preview)](https://devblogs.microsoft.com/devops/the-mobile-work-item-form/).
 - [Set personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  

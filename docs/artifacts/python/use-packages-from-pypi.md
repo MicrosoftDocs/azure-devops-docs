@@ -4,8 +4,9 @@ description: How to consume packages from Python package index with Azure Artifa
 ms.service: azure-devops-artifacts
 ms.custom: devx-track-python
 ms.date: 11/17/2023
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
+ms.topic: how-to
 ---
 
 # Use packages from Python package index (PyPI)

@@ -28,7 +28,7 @@ The following sections provide steps to implement each method.
 
 - An Azure DevOps organization and project. To create an organization or project, see [Create a new organization](../../../organizations/accounts/create-organization.md) or [Create a project in Azure DevOps](../../../organizations/projects/create-project.md).
 - Access to at least one Windows or Linux deployment target machine with the [appropriate permissions](../../agents/windows-agent.md#permissions).
-- For the Azure Pipelines Agent installation methods, an Azure account and subscription with permissions to create and manage Azure VMs. If you don't have an Azure account, [sign up for a free account](https://azure.microsoft.com/free/).
+- For the Azure Pipelines Agent installation methods, an Azure account and subscription with permissions to create and manage Azure VMs. If you don't have an Azure account, [sign up for a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Run the installation script on the target servers
 
@@ -153,41 +153,6 @@ To register and install the deployment agent by using an ARM template, add a res
 > [!NOTE]
 > In Azure DevOps Server 2022.1 and higher, the allowable values for `AgentMajorVersion` are `auto|2|3`. In Azure DevOps Server 2022.0 and earlier, the allowable values for `AgentMajorVersion` are `auto|N`.
 
-:::moniker-end
-
-:::moniker range="< azure-devops-2022"
-
-```json
-"resources": [
-  {
-    "name": "[concat(parameters('vmNamePrefix'),copyIndex(),'/TeamServicesAgent')]",
-    "type": "Microsoft.Compute/virtualMachines/extensions",
-    "location": "[parameters('location')]",
-    "apiVersion": "2015-06-15",
-    "dependsOn": [
-        "[resourceId('Microsoft.Compute/virtualMachines/',
-                      concat(parameters('vmNamePrefix'),copyindex()))]"
-    ],
-    "properties": {
-      "publisher": "Microsoft.VisualStudio.Services",
-      "type": "TeamServicesAgent",
-      "typeHandlerVersion": "1.0",
-      "autoUpgradeMinorVersion": true,
-      "settings": {
-        "VSTSAccountName": "[parameters('VSTSAccountName')]",
-        "TeamProject": "[parameters('TeamProject')]",
-        "DeploymentGroup": "[parameters('DeploymentGroup')]",
-        "AgentName": "[parameters('AgentName')]",
-        "AgentMajorVersion": "auto|N",
-        "Tags": "[parameters('Tags')]"
-      },
-      "protectedSettings": {
-      "PATToken": "[parameters('PATToken')]"
-     }
-   }
-  }
-]
-```
 :::moniker-end
 
 In the preceding code:

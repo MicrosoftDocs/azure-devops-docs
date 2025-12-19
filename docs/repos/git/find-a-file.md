@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Search your Git repo in Azure DevOps Services or TFS for a specific file or folder
 ms.assetid: 228495b9-f3cb-484a-a798-d026d650fa26
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/02/2018
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
@@ -26,12 +26,9 @@ While browsing your Git repository, start typing in the path control box to sear
 
 ### Hotkey navigation
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 Launch the Find a File experience from the keyboard with the `t` shortcut from the **Files** or **Commits** pages in the **Repos** view. Use the up and down arrows to cycle through the results, and click or press Enter to open a result. Press `Esc` to close the Find a File experience.
 
 ::: moniker-end
-
-
-
 

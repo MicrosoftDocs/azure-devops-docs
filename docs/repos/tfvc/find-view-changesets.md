@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: See how to find and view changesets in Team Foundation Version Control (TFVC).
 ms.assetid: bf36f78e-231a-46a1-94e4-4b44852f30b0
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/08/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -23,7 +23,7 @@ You can view a changeset to see what the exact file changes were, discover the o
 
 ## Prerequisites
 
-Be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+[!INCLUDE [contributor-only-prerequisites](includes/contributor-only-prerequisites.md)]
 
 ## Find a changeset by ID
 

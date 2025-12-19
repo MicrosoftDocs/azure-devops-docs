@@ -1,9 +1,9 @@
 ---
 title: Template expressions
 description: How to use expressions in templates
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/25/2024
-monikerRange: '>=azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Template expressions
@@ -24,7 +24,7 @@ in an expression. Only predefined variables can be used in template expressions.
 For example, you define a template:
 
 ```yaml
-# File: steps/msbuild.yml
+# File: steps/vsbuild.yml
 
 parameters:
 - name: 'solution'
@@ -32,12 +32,14 @@ parameters:
   type: string
 
 steps:
-- task: msbuild@1
+- task: VSBuild@1
   inputs:
     solution: ${{ parameters['solution'] }}  # index syntax
-- task: vstest@2
+- task: VSTest@3
   inputs:
-    solution: ${{ parameters.solution }}  # property dereference syntax
+    testSelector: 'testAssemblies' 
+    testAssemblyVer2: ${{ parameters.solution }} # property dereference syntax
+    searchFolder: '$(System.DefaultWorkingDirectory)' 
 ```
 
 Then you reference the template and pass it the optional `solution` parameter:
@@ -46,7 +48,7 @@ Then you reference the template and pass it the optional `solution` parameter:
 # File: azure-pipelines.yml
 
 steps:
-- template: steps/msbuild.yml
+- template: steps/vsbuild.yml
   parameters:
     solution: my.sln
 ```
@@ -58,7 +60,6 @@ Additionally, you have access to the `variables` context that contains all the v
 many of the [predefined variables](../build/variables.md) (noted on each variable in that article). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
 Template expansion happens [early in the run](runs.md#process-the-pipeline), so those variables aren't available.
-
 
 ### Template expression functions
 
@@ -76,16 +77,21 @@ You can use [general functions](expressions.md#functions) in your templates. You
 
 ```yaml
 parameters:
-- name: 'restoreProjects'
-  default: ''
+- name: 'customVersion'
   type: string
-- name: 'buildProjects'
   default: ''
+- name: 'defaultVersion'
   type: string
+  default: '1.0.0'
 
 steps:
-- script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
+- script: echo Version is ${{ coalesce(parameters.customVersion, parameters.defaultVersion) }}
 ```
+
+> [!NOTE]
+> String parameters with `default: ''` (empty string) behave differently depending on how you trigger the pipeline:
+> * **In the pipeline editor**: You can run the pipeline directly and the empty string default is respected, allowing `coalesce` to fall back to the next value.
+> * **In the Run Pipeline pane**: Azure DevOps requires you to provide a non-empty value for parameters with empty string defaults, preventing `coalesce` from falling back. 
 
 ### Insertion
 
@@ -113,9 +119,9 @@ jobs:
   steps:
   - script: cred-scan
   - ${{ parameters.preBuild }}
-  - task: msbuild@1
+  - task: VSBuild@1
   - ${{ parameters.preTest }}
-  - task: vstest@2
+  - task: VSTest@3
   - ${{ parameters.preSign }}
   - script: sign
 ```
@@ -150,8 +156,8 @@ jobs:
     arch: x86
     ${{ insert }}: ${{ parameters.additionalVariables }}
   steps:
-  - task: msbuild@1
-  - task: vstest@2
+  - task: VSBuild@1
+  - task: VSTest@3
 ```
 
 ```yaml
@@ -173,24 +179,24 @@ For example, to insert into a sequence in a template:
 
 parameters:
 - name: 'toolset'
-  default: msbuild
+  default: vsbuild
   type: string
   values:
-  - msbuild
+  - vsbuild
   - dotnet
 
 steps:
 # msbuild
 - ${{ if eq(parameters.toolset, 'msbuild') }}:
-  - task: msbuild@1
-  - task: vstest@2
+  - task: VSBuild@1
+  - task: VSTest@3
 
 # dotnet
 - ${{ if eq(parameters.toolset, 'dotnet') }}:
-  - task: dotnet@1
+  - task: UseDotNet@2
     inputs:
       command: build
-  - task: dotnet@1
+  - task: UseDotNet@2
     inputs:
       command: test
 ```
@@ -247,7 +253,6 @@ steps:
 
 You can also set variables based on the values of other variables. In the following pipeline, `myVar` is used to set the value of `conditionalVar`. 
 
-
 ```yaml
 trigger:
 - main
@@ -274,7 +279,6 @@ steps:
 - ${{ if eq(variables.conditionalVar, 'qux') }}:
   - script: echo "the value of myVar is set in the elseif condition" # runs when myVar=baz
 ```
-
 
 ### Iterative insertion
 
@@ -313,6 +317,34 @@ jobs:
     - job: B
       steps:
       - script: echo So will this!
+```
+
+You can also use `stringList` to define and interate over parameters that contain a list of items. 
+
+> [!NOTE]
+> The `stringList` data type isn't available in templates. Use the `object` data type in templates instead.
+
+```yaml
+parameters:
+- name: regions
+  type: stringList
+  displayName: Regions
+  values:
+    - WUS
+    - CUS
+    - EUS
+  default: 
+    - WUS
+    - EUS 
+
+stages:
+- ${{ each stage in parameters.regions}}:
+  - stage: ${{stage}}
+    displayName: Deploy to ${{stage}}
+    jobs:
+    - job:
+      steps:
+      - script: ./deploy ${{stage}}
 ```
 
 You can also manipulate the properties of whatever you're iterating over.

@@ -4,10 +4,11 @@ description: Manual and exploratory testing - get insights with exploratory test
 ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 ms.date: 12/07/2018
+ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
 
@@ -18,7 +19,11 @@ monikerRange: '<= azure-devops'
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
+## Prerequisites
+
+[!INCLUDE [prerequisites-run](includes/prerequisites-run.md)] 
+
+## Open recent exploratory sessions
 
 1. Open the **Recent exploratory sessions** page, with either of the following actions:
 
@@ -108,7 +113,7 @@ Use a query to discover unexplored work items.
 
    ![Screenshot showing view of the unexplored work items.](media/insights-exploratory-testing/insights-exploratory-testing-13.png)
 
-## Related articles
+## Related content
 
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)

@@ -9,6 +9,7 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
+ms.update-cycle: 1095-days
 ---
 
 # Add findings to existing bugs with exploratory testing
@@ -18,7 +19,9 @@ ms.date: 09/14/2021
 To help avoid duplication, the Test &amp; Feedback extension automatically 
 searches for and displays existing bugs, based on the keywords in the title as you file a new bug. You can choose to continue creating a new bug or add your findings to an existing bug.
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
+## Prerequisites
+
+[!INCLUDE [prerequisites](includes/prerequisites.md)] 
 
 ## Add your findings to a bug
 
@@ -59,7 +62,7 @@ After you file bugs, create tasks, or create test cases, they show up in the "Re
 
 See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
-## Related articles
+## Related content
 
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)

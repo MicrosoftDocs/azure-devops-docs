@@ -13,6 +13,7 @@ metadata:
   author: chcomley 
   ms.author: chcomley 
   ms.date: 09/17/2024 
+  ms.update-cycle: 1095-days
   manager: jillfra
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -36,7 +37,7 @@ landingContent:
           - text: What is Azure Test Plans?
             url: ../test/overview.md
           - text: Get started as a Stakeholder
-            url: ../organizations/security/get-started-stakeholder.md 
+            url: ../organizations/security/get-started-stakeholder.md
   - title: Sign up for free
     linkLists:
       - linkListType: quickstart
@@ -75,14 +76,14 @@ landingContent:
             url: ../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing
       - linkListType: concept
         links:
+          - text: Security overview
+            url: ../organizations/security/security-overview.md?toc=/azure/devops/get-started/toc.json
           - text: Default permissions and access
             url: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json
           - text: Permission lookup guide
             url: ../organizations/security/permissions-lookup-guide.md?toc=/azure/devops/get-started/toc.json
           - text: About settings
             url: ../organizations/settings/about-settings.md?toc=/azure/devops/get-started/toc.json
-          - text: Security best practices
-            url: ../organizations/security/security-best-practices.md?toc=/azure/devops/get-started/toc.json
   - title: Plan and track work
     linkLists:
       - linkListType: quickstart

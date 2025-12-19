@@ -1,6 +1,8 @@
 - name: About Demo Generator
-  href: index.md?toc=/azure/devops/demo-gen/toc.json 
+  href: index.md?toc=/azure/devops/demo-gen/toc.json
+- name: Configure
+  href: configure.md?toc=/azure/devops/demo-gen/toc.json
 - name: Get started
-  href: use-demo-generator-v2.md?toc=/azure/devops/demo-gen/toc.json 
+  href: use-demo-generator-v2.md?toc=/azure/devops/demo-gen/toc.json
 - name: Build a custom template
-  href: build-your-own-template.md?toc=/azure/devops/demo-gen/toc.json 
+  href: build-your-own-template.md?toc=/azure/devops/demo-gen/toc.json

@@ -18,7 +18,7 @@ The Docker container template pipeline uses Microsoft-hosted agents and creates 
 
 ## Prerequisites
 
-- An Azure account where you have permission to create and configure resources. If you don't have an Azure account, [sign up for a free account](https://azure.microsoft.com/free/).
+- An Azure account where you have permission to create and configure resources. If you don't have an Azure account, [sign up for a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - An Azure DevOps organization and project where you have permission to create pipelines and deploy apps. To create an organization or project, see [Create a new organization](../../../organizations/accounts/create-organization.md) or [Create a project in Azure DevOps](../../../organizations/projects/create-project.md).
 - A GitHub account.
 

@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps Services
 description: Learn how to stop using your organization's Microsoft Entra ID and sign in with a Microsoft account by disconnecting your organization from your directory
 ms.subservice: azure-devops-organizations
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 10/23/2024
 monikerRange: 'azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Disconnect your organization from Microsoft Entra ID
@@ -23,9 +24,10 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
 
 ## Prerequisites
 
-* **Permissions:** Add your Microsoft account to the Project Collection Administrator group in the Organization settings.
-* **Organization owner:** Change the organization owner to a Microsoft account instead of a school or work account. Ensure that your work or school account has the same email address as your Microsoft account; otherwise, you can't sign in to your organization.
-
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- Change the organization owner to a Microsoft account instead of a school or work account. Ensure that your work or school account has the same email address as your Microsoft account; otherwise, you can't sign in to your organization.|
+|**Access levels**| At least **Basic** access.|
 
 **What happens to current users?**  Users can migrate everything except work history. They can reconnect Visual Studio subscriptions and have their access levels reassigned to their new identities.
 
@@ -54,10 +56,10 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
 
 Your organization is disconnected from Microsoft Entra ID. Only users with Microsoft accounts can sign in.
 
-## Related articles
+## Related content
 
 * [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
 * [Learn about access with Microsoft Entra ID](access-with-azure-ad.md)
-* [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
+* [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 * [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Microsoft Entra ID](./faq-azure-access.yml)

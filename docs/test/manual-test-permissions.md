@@ -9,16 +9,24 @@ ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
+ms.update-cycle: 1095-days
 ---
 
 # Manual test access and permissions 
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Access levels and permissions control access to Azure Test Plans features. To access the Test Plans web portal, have a **Basic** access level or greater. To define and manage test plans, test suites, and test cases, you need **Basic + Test Plans**, which is available from Azure DevOps.
- 
+Access levels and permissions control access to Azure Test Plans features. 
+
+## Prerequisites
+
+| Category | Requirement |
+|--------------|-------------|
+| **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
+| **Access levels** |- To access the Test Plans web portal: At least **Basic** access.<br>- To define and manage test plans, test suites, and test cases: **Basic + Test Plans** access.|
+
 > [!NOTE]  
-> Users granted **Stakeholder** access have no access to features or functions supported through the Test Plans or Test web portal. However, they are able to provide feedback through the **Test & Feedback** extension. For more information, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md).
+> Users granted **Stakeholder** access have no access to features or functions supported through the Test Plans or Test web portal. However, they can provide feedback through the **Test & Feedback** extension. For more information, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md).
 
 ## Access and licensing 
 
@@ -60,7 +68,7 @@ The following table provides the default permissions assigned to the built-in se
 
 For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../organizations/security/permissions-access.md).  
  
-## Related articles
+## Related content
 
 - [Test objects and terms](test-objects-overview.md)  
 - [Set permissions and access for manual testing](../organizations/security/set-permissions-access-test.md)  

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control Tracking Changeset window to see which code branches received which changes and to see when the changes were merged.
 ms.assetid: 457567ff-7da3-4098-b047-bd169bad5a38
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/22/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -26,8 +26,9 @@ In Team Foundation Version Control (TFVC), you can use the **Tracking Changeset*
 
 ## Prerequisites
 
-- To view changesets, your **Read** permission must be set to **Allow** for the branches that you're working with.
-- To display the timeline view of a changeset, your **Manage branch object** permission must be set to **Allow**. 
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|- To view changesets: **Read** permission set to **Allow** for the branches that you're working with.<br>- To display the timeline view of a changeset: **Manage branch object** permission must be set to **Allow**. |
 
 For more information about permissions, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 

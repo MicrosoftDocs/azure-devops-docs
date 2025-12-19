@@ -6,7 +6,7 @@ ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley 
 author: chcomley
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/30/2019  
 monikerRange: '<= azure-devops'
 ---
@@ -19,6 +19,10 @@ If you get a notification email that you didn't expect, it could be for one of t
 
 * The email is sent to a group of which you're a member
 * An unexpected subscription triggered the email
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
 
 Do the following tasks to determine if any resolve the issue:
 

@@ -543,6 +543,10 @@
     {
       "source_path_from_root": "/docs/pipelines/release/publish-pipeline-artifact.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/pipeline-artifacts"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/artifacts/pull-package-gradle.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/build-publish-artifacts-gradle"
     }
   ]
 }

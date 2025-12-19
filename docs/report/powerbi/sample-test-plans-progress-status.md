@@ -8,7 +8,7 @@ ms.author: shdalv
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
 ---
 
@@ -17,7 +17,6 @@ ms.date: 01/19/2023
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 You can report on the execution state of one or more Test Plans in Power BI. The report you create using the information in this article is similar to the following image and the summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
-
 
 :::image type="content" source="media/reports-test-plans/test-plan-progress-donut-reports.png" alt-text="Screenshot of Power BI Test Plan Progress Donut reports.":::
 
@@ -59,7 +58,6 @@ For the report to generate useful data, the team must carry out the following ac
 You can use the following queries of the `TestPoints` entity set to create different but similar test plan progress reports.
 
 [!INCLUDE [temp](includes/query-filters-test.md)] 
-
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -117,7 +115,6 @@ $apply=filter(TestSuite/TestPlanTitle eq '{testPlanTitle}')
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{testPlanTitle}` - Title of the test plan whose data you want to return.
 
-
 ### Query breakdown
 
 The following table describes each part of the query.
@@ -164,9 +161,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Change column data type 
 

@@ -8,7 +8,7 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 12/14/2022
 ---
 
@@ -19,7 +19,6 @@ ms.date: 12/14/2022
 How long does it take different tasks to complete? This article provides the queries from which you can generate a report for a specific pipeline and its tasks. For example, the following image lists the 50th, 80th, and 95th percentile in seconds for all tasks completed for a specific pipeline from September 1 to December 15, 2022.   
 
 :::image type="content" source="media/pipeline-reports/task-duration-table-report.png" alt-text="Screenshot of Power BI Pipelines task duration table trend report."::: 
-
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -205,9 +204,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ### Change column data type
  
@@ -230,7 +227,6 @@ To learn how, see [Rename column fields](transform-analytics-data-report-generat
 | `TaskDuration80thPercentileInSeconds`| 80th Percentile   |
 | `TaskDuration95thPercentileInSeconds`| 95th Percentile  |
 
-
 [!INCLUDE [temp](includes/close-apply.md)]
 
 ## Create the Table report 
@@ -250,7 +246,6 @@ To learn how, see [Rename column fields](transform-analytics-data-report-generat
 The following image shows a portion of the resulting report.  
 
 :::image type="content" source="media/pipeline-reports/task-duration-table-report.png" alt-text="Screenshot of Power BI Pipelines sample task duration table trend report."::: 
-
 
 ## Related articles
 

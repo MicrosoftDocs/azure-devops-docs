@@ -1,11 +1,16 @@
 - name: Azure Boards Documentation
   href: index.yml
+- name: Azure DevOps MCP Server
+  href: ../mcp-server/mcp-server-overview.md
 - name: What is Azure Boards?
   displayName: scrum, kanban, basics, agile, CMMI, backlog
   href: get-started/what-is-azure-boards.md
 - name: Best practices for Agile project management
   displayName: agile, kanban, scrum, rollup, filtering, waterfall, deliverables, cadence, sprint cadence, work types, CMMI, product plan, product backlog
   href: best-practices-agile-project-management.md
+- name: Secure your Azure Boards
+  displayName: security, permissions, access control, governance, compliance, audit, authentication
+  href: secure-your-azure-boards.md
 - name: Quick reference - concepts and tasks
   displayName: agile, charts, inheritance, work item, scrum, state categories, bulk modify, WIT
   href: ./work-items/quick-ref.md
@@ -55,25 +60,32 @@
       items:
       - name: Office integration issues
         href: backlogs/office/tfs-office-integration-issues.md
-      - name: Resolve Excel data conflicts
-        displayName: conflicts, Excel, conflicting work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
-        href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md
-      - name: Resolve Excel data validation errors
-        displayName: error checking in Excel, error checking, invalid links
-        href: backlogs/office/resolve-excel-data-validation-errors.md
     - name: Project portal & process guidance (Deprecated)
       items:
       - name: Configure or add a project portal
         href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json
       - name: Configure or redirect process guidance
         href: /previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true
+  - name: GitHub integration
+    items:
+    - name: Connect to GitHub
+      href: github/connect-to-github.md
+    - name: Use GitHub Copilot
+      href: github/work-item-integration-github-copilot.md
+    - name: Link commits and pull requests
+      href: github/link-to-from-github.md
 - name: Troubleshooting
   items:
   - name: FAQs
-    href: faqs.yml
+    href: faqs.yml?toc=/azure/devops/reference/toc.json
   - name: Fix reordering and nesting issues
-    href: backlogs/resolve-backlog-reorder-issues.md
-    displayname: reorder, disable, nest, natural hierarchy, in progress
+    href: backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/reference/toc.json
+  - name: Azure Boards customization FAQs
+    href: ../organizations/settings/work/faqs.yml?toc=/azure/devops/reference/toc.json
+  - name: Set up your backlogs & boards
+    href: ../boards/backlogs/set-up-your-backlog.md?toc=/azure/devops/reference/toc.json
+  - name: Work item form caching
+    href: ../boards/faqs.yml#caching
 - name: Field reference
   items:
   - name: Work item field index
@@ -85,12 +97,6 @@
     href: work-items/guidance/guidance-code-review-feedback-field-reference.md
   - name: Bugs, issues, & risks fields
     href: work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md
-  - name: Change request fields
-    href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi
-  - name: Requirements fields
-    href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi
-  - name: Review meeting fields
-    href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi
   - name: CMMI process-specific fields (archived)
     items:
     - name: Change request fields

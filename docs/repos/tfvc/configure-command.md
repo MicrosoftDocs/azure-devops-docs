@@ -25,7 +25,11 @@ Enables an administrator to view and change the following configuration settings
 
 ## Prerequisites
 
-To use the `configure` command, have the **Edit server-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Edit server-level information** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

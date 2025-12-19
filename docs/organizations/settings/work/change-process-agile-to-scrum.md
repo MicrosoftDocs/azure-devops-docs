@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.reviewer: dahellem
-monikerRange: ">= azure-devops-2020"
+monikerRange: "<=azure-devops"
 ms.date: 07/17/2020
 ---
 
@@ -18,7 +18,6 @@ ms.date: 07/17/2020
 You can change a project based on the Agile process to use an inherited Scrum process.  This article provides the steps needed to make this change. 
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
-
 
 |  Process | Work item types | Workflow |
 |------|---------|---------|
@@ -35,6 +34,8 @@ Reasons you might want to change your process from Agile to Scrum:
 <!--- QUESTION: What happens to Analytics data when you do this change?  -->
 
 [!INCLUDE [temp](../includes/change-process-manual-steps.md)]
+
+## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
@@ -111,7 +112,6 @@ You can customize boards to display intermediate columns. For each column added,
    > [!div class="mx-imgBorder"]  
    > ![Board fixed.](media/agile-to-scrum/board-column-settings-fixed.png)
 
-
 ## Update work items
 
 Your next step is to bulk update work items. The recommended sequence is:
@@ -185,7 +185,7 @@ After changing the process, you may want to make additional updates as follows:
 - [Update your project summary or vision](../../../organizations/projects/project-vision-status.md)
 - Disable or delete the work item types that won't be used going forward. See [Customize a work item type for an inherited process](customize-process-work-item-type.md#enable-disable)
 
-## Related articles
+## Related content
 
 - [Bulk modify work items](../../../boards/backlogs/bulk-modify-work-items.md)
 - [Change the process used by a project](./manage-process.md#migrate)

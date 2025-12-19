@@ -2,8 +2,9 @@
 title: Azure DevOps Release Notes - Reporting Sprint 220 Update
 description: See the Sprint 220 feature updates for Reporting, including next steps.
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 4/20/2023
+ms.topic: release-notes
 ---
 
 # Reporting - Sprint 220 Update

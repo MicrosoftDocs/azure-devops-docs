@@ -20,7 +20,11 @@ The Team Foundation Version Control (TFVC) `tf labels` command displays the list
 
 ## Prerequisites
 
-To use the `labels` command, have the **Read** permission set to **Allow** for all files or folders to which the specified label is attached. If you have permission to some, but not all the files referenced in the label, partial results are displayed. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| **Read** permission set to **Allow** for all files or folders to which the specified label is attached. If you have permission to some, but not all the files referenced in the label, only partial results display.|
+
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

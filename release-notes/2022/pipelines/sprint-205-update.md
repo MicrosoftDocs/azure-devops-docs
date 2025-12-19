@@ -4,6 +4,7 @@ description: See the Sprint 205 feature updates for Azure Pipelines, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/27/2022
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 205 Update

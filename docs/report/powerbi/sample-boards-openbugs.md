@@ -7,7 +7,7 @@ ms.custom: powerbisample, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/05/2022
 ---
 
@@ -22,7 +22,6 @@ To generate a report that lists open bugs or user stories, select the Matrix rep
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
-
 
 ## Sample queries
 
@@ -71,7 +70,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
-
 
 ### Query breakdown
 
@@ -126,7 +124,6 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
 ### User stories filtered by teams 
 
 You can query for open bugs by one or more teams rather than Area Path.  
@@ -140,7 +137,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'Bug' "
             &"and StateCategory ne 'Completed'' "
-            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') "
+            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')) "
         &"&$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK "
         &"&$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
@@ -156,7 +153,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'Bug'
             and StateCategory ne 'Completed'
-            and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')
+            and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}'))
         &$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK
         &$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)
 ```
@@ -199,9 +196,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand columns in Power Query Editor
 
@@ -219,7 +214,6 @@ Once you've expanded the columns, you may want to rename one or more fields. For
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
-
 ## Create the Matrix report
 
 1. In Power BI, choose the **Matrix** report under **Visualizations**. 
@@ -233,7 +227,6 @@ Once you've expanded the columns, you may want to rename one or more fields. For
 The example report displays. 
  
 :::image type="content" source="media/reports-boards/open-bugs-report.png" alt-text="Screenshot of Sample Open Bugs matrix report.":::
-
 
 ## Related articles
 

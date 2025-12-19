@@ -1,11 +1,11 @@
 ---
 title: Using Tasks to Retain Runs in Azure Pipelines
 description: Example scenarios of when you might want to retain pipeline runs from within the pipeline.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: maoswald
 author: moswald
 ms.date: 06/14/2023
-monikerRange: ">= azure-devops-2020"
+monikerRange: "<=azure-devops"
 ---
 
 # Pipeline Run Retention

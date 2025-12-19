@@ -41,6 +41,8 @@
     href: security/github-advanced-security-permissions.md
   - name: Billing for GitHub Advanced Security
     href: security/github-advanced-security-billing.md
+  - name: Security Overview for GitHub Advanced Security
+    href: security/github-advanced-security-security-overview.md
   - name: Secret Scanning for GitHub Advanced Security
     items:
     - name: Configure secret scanning
@@ -67,8 +69,6 @@
       href: security/github-advanced-security-code-scanning-third-party.md
     - name: Troubleshoot code scanning
       href: security/github-advanced-security-code-scanning-troubleshoot.md
-  - name: Security Overview on GitHub Advanced Security
-    href: security/github-advanced-security-security-overview.md
 - name: Integrations
   items:
   - name: Azure Repos with Slack

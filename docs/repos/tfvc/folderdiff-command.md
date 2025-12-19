@@ -21,7 +21,11 @@ Use the TFVC `folderdiff` command to display and compare a visual representation
 
 ## Prerequisites
 
-To use the `folderdiff` command, have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

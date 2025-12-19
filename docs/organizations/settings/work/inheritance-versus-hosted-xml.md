@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid:
 ms.author: dahellem
 author: danhellem
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "azure-devops"
 ms.date: 4/01/2020
 ---
@@ -43,7 +43,7 @@ If you are currently on Hosted XML and looking to move your process to Inherited
 | Steps (for other than Test Case)     | Not supported                                                        | Supported                     | 
 
 
-## Related articles
+## Related content
 
 - [About process customization and inherited processes](./inheritance-process-model.md)
 

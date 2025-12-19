@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: See how to require and configure check-in notes for TFVC in Visual Studio.
 ms.assetid: c7829273-4d53-412c-99d6-4944780ebc74
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/12/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -20,7 +20,11 @@ Team Foundation Version Control administrators can add, configure, and remove ch
 
 ## Prerequisites  
 
-Have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Edit project-level information** permission set to **Allow**.|
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ### To add check-in notes
 

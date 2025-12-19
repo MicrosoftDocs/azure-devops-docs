@@ -1,11 +1,12 @@
 ---
 ms.subservice: azure-devops-service-hooks
-ms.topic: conceptual
+ms.topic: overview
 title: Webhooks with Azure DevOps
 description: Set up a webhook subscription that sends JSON representations of Azure DevOps events to any service that has a public endpoint.
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 monikerRange: '<= azure-devops'
 ms.date: 08/13/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Webhooks
@@ -19,14 +20,14 @@ This article describes webhooks and how to set them up for your Azure DevOps pro
 
 ## Prerequisites
 
-You need the following prerequisites to manage webhooks for an Azure DevOps organization:
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - Member of the [Project Collection Administrators group](../../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
+|**Project and service**|- A project in the organization<br>- A service with a public HTTPS endpoint to which you want to send Azure DevOps events.|
 
-- **Owner** or **Project Collection Administrator** role in the organization.
-- A project in the organization, and a service with a public HTTP or HTTPS endpoint that you want to send Azure DevOps events to.
-
-  >[!IMPORTANT]
-  >It's recommended to use only HTTPS endpoints. HTTP has the potential to send private data, including authentication headers, unencrypted in the event payload. You must use HTTPS for basic authentication on a webhook.
-- If connecting to a service behind a virtual private network, ensure that Azure DevOps IP addresses are allowed for inbound connections. See [Inbound Connections](../../organizations/security/allow-list-ip-url.md).
+  > [!IMPORTANT]
+  > - Use only HTTPS endpoints. HTTP has the potential to send private data, including authentication headers, unencrypted in the event payload. You must use HTTPS for basic authentication on a webhook. 
+  > - If you're connecting to a service behind a virtual private network, ensure that Azure DevOps IP addresses are allowed for inbound connections. See [Inbound Connections](../../organizations/security/allow-list-ip-url.md).
   
 ## Send JSON representation to a service
 

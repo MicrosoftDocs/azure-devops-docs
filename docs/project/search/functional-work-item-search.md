@@ -5,7 +5,7 @@ ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ai-usage: ai-assisted
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 ms.date: 10/17/2024
@@ -194,7 +194,7 @@ You can use APIs to extend or supplement the capabilities listed in this article
 > [!div class="nextstepaction"]
 > [Supported filter functions and more for work items](../../boards/backlogs/filter-backlogs-boards-plans.md#supported-filter-functions)
 
-## Related articles
+## Related content
 
 - [Get started with Search](get-started-search.md)
 - [Search code](functional-code-search.md)

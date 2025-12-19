@@ -3,7 +3,7 @@ ms.subservice: azure-devops-ecosystem
 title: Add a Hub Group | Extensions for Azure DevOps
 description: Add a hub group in Azure DevOps for your extension.
 ms.assetid: 8186f578-27a0-4130-ace0-0279c863b1a5
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

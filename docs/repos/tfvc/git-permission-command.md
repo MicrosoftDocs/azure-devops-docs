@@ -19,9 +19,9 @@ The `tf git permission` command modifies the user access control list (ACL) and 
 
 ## Prerequisites
 
-- To view permissions, be able to view the artifact for the type of information you're requesting: **View collection-level information** for project collections, **View project-level information** for projects, and **Read** for repository and branch if you're viewing branch permissions.
-
-- To manage permissions, have **Manage permissions** for the desired artifact.  
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - To view project collection permissions: **View collection-level information**  permissions set to **Allow**.<Br>- To view project permissions: **View project-level information** set to **Allow**.<br>- To view repository and branch permissions: **Read** permissions set to **Allow**.<br>- To manage permissions: **Manage permissions** for the desired artifact set to **Allow**.|
 
 For more information, see [Default Git permissions](../../organizations/security/default-git-permissions.md).
 

@@ -7,7 +7,7 @@ ms.subservice: azure-devops-projects
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/11/2024
 ---
 
@@ -60,14 +60,9 @@ Use the project summary page to also perform more specific tasks:
 
 ## Prerequisites
 
-- **Permissions**: Be a member of the [Project Administrators](../security/change-project-level-permissions.md) group or have your **Edit project-level information** permission set to *Allow* to do the following tasks:
-  - Edit information on the project page
-  - Change the repository that you use to share project information
-  - Manage project membership
-- **Specific tasks:**
-  - To edit a project page, be a contributor to the repository or branch or have the **Contribute** permissions set to *Allow*.  
-  - To view the project summary, be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../security/about-permissions.md#valid-user-groups).
-  - To add or edit project tags, have the project-level **Manage properties** permission set to *Allow*. This permission controls the project properties REST API.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|Member of the [Project Administrators](../security/change-project-level-permissions.md) group or **Edit project-level information** permission set to **Allow** to do the following tasks:<br>- Edit information on the project page.<br>- Change the repository that you use to share project information.<br>- Manage project membership.<br>**Specific tasks:**<br>- To edit a project page: **Contributor** to the repository or branch or **Contribute** permissions set to **Allow**.<br>- To view the project summary: [Valid member of the project](../security/about-permissions.md#valid-user-groups).<br>- To add or edit project tags: Project-level **Manage properties** permission set to **Allow**. This permission controls the project properties REST API.|
 
 > [!TIP]    
 > If you don't have the necessary permissions to edit a page or use a feature, the corresponding icons and links aren't visible to you.
@@ -83,7 +78,7 @@ If your project summary isn't set up yet, a welcome page displays:
 
 Select one of the following tasks to get started:
 
-- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). You can only invite users who are [added to your organization](../security/add-users-team-project.md#add-users-to-a-project).
+- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). You can only invite users who are [added to your organization](../security/add-users-team-project.md#add-project-users).
 - **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 - **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
 - **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
@@ -246,12 +241,12 @@ For projects that selected TFVC for version control, the README.md file needs to
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Project summary page with the README file displayed.](media/share-project/tfvc-project-summary-with-readme.png)
 
-## Related articles
+## Related content
 
 - [Learn about Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Navigate the web portal](../../project/navigation/index.md)
-- [Discover what you get with a project](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Features and services included with Azure DevOps](../../user-guide/what-is-azure-devops.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
  
 **REST APIs**
 

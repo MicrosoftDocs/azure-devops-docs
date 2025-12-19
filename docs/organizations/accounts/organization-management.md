@@ -83,8 +83,8 @@ If you don't manage your user base with Microsoft Entra ID, as described in the 
 For more information about adding users to your organization, see the following articles:
 
 * [Add users to your organization](add-organization-users.md)
-* [Add users to a team](../security/add-users-team-project.md#add-users-to-a-team)
-* [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project)
+* [Add users to a team](../security/add-users-team-project.md#add-team-members)
+* [Add users to a project](../security/add-users-team-project.md#add-project-users)
 
 <a id="access-azure-ad"></a>
 
@@ -144,7 +144,7 @@ A best practice for managing users is to use security groups. You can utilize de
    - [Rename organization](rename-organization.md)
    - [Delete an organization](delete-your-organization.md)
    - [Recover a deleted organization](recover-your-organization.md)
-   - [Change location (region)](change-organization-location.md)
+   - [Change your organization geography](change-organization-location.md)
    - [Add privacy policy URL](add-privacy-policy-url.md)
    - [Change time zone](change-time-zone.md)
    
@@ -168,7 +168,7 @@ A best practice for managing users is to use security groups. You can utilize de
    :::column-end:::
 :::row-end:::
 
-## Related articles
+## Related content
 
 * [Learn about access levels](../security/access-levels.md)
 * [Understand default permissions and access](../security/permissions-access.md)

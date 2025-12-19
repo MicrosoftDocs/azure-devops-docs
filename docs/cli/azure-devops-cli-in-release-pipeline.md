@@ -1,14 +1,15 @@
 ---
 title: Azure DevOps CLI in a release pipeline
 titleSuffix: Azure DevOps 
-description: Learn how to create a release pipeline using Azure DevOps CLI 
+description: Learn how to create a release pipeline using Azure DevOps CLI. This article includes a sample script.
 ms.topic: how-to
 ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/17/2020
+ms.date: 06/05/2025
+#customer intent: As a developer, I want to create a release pipeline in Azure DevOps by using the Azure DevOps CLI.
 ---
 
 
@@ -18,39 +19,35 @@ ms.date: 08/17/2020
 
 <!--- QUESTION: Are there any prerequisites or Features that need to be enabled for this flow to be valid? --> 
 
-To use the Azure DevOps CLI in a hosted agent using a Release Pipeline, execute the following steps:
+To use the Azure DevOps CLI in a hosted agent using a Release Pipeline, do the following steps:
 
 1. Create a release pipeline.
 
-	> [!div class="mx-imgBorder"]  
-	> ![new release pipeline](media/new-pipeline.png)
+   :::image type="content" source="media/new-pipeline.png" alt-text="Screenshot shows the Pipeline page with the option to create a new release pipeline.":::
 
-2. Choose **Empty job**.
+1. Select **Empty job**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![select template](media/select-template.png)
+   :::image type="content" source="media/select-template.png" alt-text="Screenshot shows the Select a template page with the Empty job link highlighted.":::
 
-3. Choose Stage 1 to configure the stage.
+1. Select Stage 1 to configure the stage.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Stage 1](media/stage-1.png)
+   :::image type="content" source="media/stage-1.png" alt-text="Screenshot shows the New release pipeline page with Stage 1 highlighted." lightbox="media/stage-1.png":::
 
-4. Choose the **Tasks** page, and configure the job to use Hosted macOS in Agent Pools.
+1. Select the **Tasks** page, and configure the job to use Hosted macOS in Agent Pools.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Agent Job Configuration](media/job-config.png)
+   :::image type="content" source="media/job-config.png" alt-text="Screenshot shows the Tasks tab for Stage 1, which displays Agent job configuration." lightbox="media/job-config.png":::
 
-5. Choose the :::image type="icon" source="../media/icons/blue-add.png" border="false"::: plus icon to add another task and configure it as a PowerShell task. Enter *Power* into the search box to filter the list.
+1. Select the :::image type="icon" source="../media/icons/blue-add.png" border="false"::: plus icon to add another task and configure it as a PowerShell task. To filter the list, enter *Power* into the search box.
 
-	> [!div class="mx-imgBorder"]  
-	> ![PowerShell](media/power-shell.png)
+   :::image type="content" source="media/power-shell.png" alt-text="Screenshot shows the Tasks tab for Agent job with the Add tasks option." lightbox="media/power-shell.png":::
 
-6. Add the script, either via file or inline. For the example, the script has been included inline.
+1. Add the script, either by using file or inline. For this example, the script is included inline.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Add script](media/script-1.png)
+   :::image type="content" source="media/script-1.png" alt-text="Screenshot shows an Azure PowerShell script included for the task." lightbox="media/script-1.png":::
 
-For reference, here is the inline script:
+1. There might be more configuration steps for your pipeline. When you finish all steps, select **Save**.
+
+Here's the inline script for this example:
 
 ```powershell
 $extensions = az extension list -o json | ConvertFrom-Json
@@ -67,4 +64,3 @@ if ($devopsFound -eq $False){
     az extension add -n azure-devops
 }
 ```
-

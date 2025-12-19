@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps
 description: Learn how to configure pipelines to support integration with Azure Boards and work tracking
 ms.subservice: azure-devops-pipelines-integrations
 ms.topic: how-to
-ms.author: chcomley
-author: chcomley
-ms.custom: cross-service
+ms.author: jukullam
 monikerRange: '<= azure-devops'
 ms.date: 09/09/2024
+ms.custom:
+  - cross-service
+  - sfi-image-nochange
 ---
 
 # Configure pipelines to support work tracking
@@ -73,7 +74,7 @@ The following table summarizes the integration points between Azure Boards and A
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       Automatically link work items to releases and report deployment status to a work item (Classic only)
@@ -111,7 +112,7 @@ The following table summarizes the integration points between Azure Boards and A
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       Query Work Items task, ensure the number of matching work items returned from a query is within a threshold.
@@ -140,7 +141,7 @@ The following table summarizes the integration points between Azure Boards and A
 
 **Open Pipeline settings**
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 For YAML-defined release pipelines, you configure the integration through the **Pipeline settings** dialog.  
 
@@ -154,9 +155,6 @@ For YAML-defined release pipelines, you configure the integration through the **
 
 	 
 ::: moniker-end
-::: moniker range="< azure-devops-2020"
-This setting isn't available for Azure DevOps Server 2019 or earlier versions. 
-::: moniker-end
 
 # [Classic Build](#tab/classic-build)
 
@@ -168,14 +166,14 @@ This setting isn't available for Azure DevOps Server 2019 or earlier versions.
 
 Open the build pipeline, choose to edit the pipeline, and then choose the **Options** tab. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/pipelines-integration/open-classic-build-properties-options.png" alt-text="Screenshot of Classic Build pipeline, Options tab.":::
 ::: moniker-end 
  
 
 The Build properties page appears. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/pipelines-integration/classic-build-options.png" alt-text="Build properties dialog.":::
 
 For more information on each setting, use one of the following links:  
@@ -188,7 +186,6 @@ For more information on each setting, use one of the following links:
 
  
 
-
 # [Classic Release](#tab/classic-release)
 
 <a id="classic-release-options"></a> 
@@ -197,11 +194,9 @@ For more information on each setting, use one of the following links:
 
 For Classic release pipelines, open **Pipelines>Releases**, choose to edit your pipeline, then choose **Options** and then **Integrations**.
 
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Integrations options for Classic pipelines](media/pipelines-integration/integration-options-classic.png)
-
 
 For more information on each setting, use one of the following links: 
 - [Report deployment status to the repository host](#report-deployment-status-to-the-repository-host-classic)
@@ -211,26 +206,14 @@ For more information on each setting, use one of the following links:
 - [Enable the deployment status badge](#enable-status-badge)
 ::: moniker-end 
 
-::: moniker range="=azure-devops-2019"
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Integrations options for Classic pipelines, Azure DevOps 2019 and earlier versions](../release/media/what-is-release-management/report-options.png)
-
-For more information on each setting, use one of the following links: 
-- [Report deployment status to the repository host](#report-deployment-status-to-the-repository-host-classic)
-- [Report deployment status to Work](#auto-link-work-items-builds)
-- [Enable the deployment status badge](#status-badge)
-::: moniker-end 
+ 
 
  
 ***
 
-
-
-
 <a id="auto-link-work-items-builds"></a>
 
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Automatically link work items to builds or releases 
 
@@ -238,20 +221,13 @@ By enabling automatic linking, you can track the builds or releases that incorpo
 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2020"
-
-## Automatically link work items to builds
-
-By enabling automatic linking, you can track the builds that incorporated work without having to manually search through a large set of builds. Every successful build associated with the work item automatically appears in the **Development** control of the work item form.  
-
-::: moniker-end 
+ 
 
 <a id="yaml-auto-link"></a> 
 
-
 # [YAML](#tab/yaml)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Open **Pipeline settings** as described in [Open Pipeline settings](#yaml-open-settings).
 
@@ -262,10 +238,6 @@ By enabling automatic linking, you can track the builds that incorporated work w
 	Once enabled, **Integrated in build** links are generated for all work items linked to the selected pull request with each release run. 
 ::: moniker-end
 	
-::: moniker range="< azure-devops-2020"
-This feature isn't supported for YAML pipelines in Azure DevOps Server 2019. 
-::: moniker-end
-
 
 # [Classic Build](#tab/classic-build)
 
@@ -286,7 +258,7 @@ This feature isn't supported for YAML pipelines in Azure DevOps Server 2019.
  
 <a id="classic-report-boards"></a>
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
  
 Before you choose integration options, set up the release stages as described in [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md).
 
@@ -318,8 +290,6 @@ To verify the integration is working, perform the following steps:
  
 ::: moniker-end
  
-
-
 
 *** 
  
@@ -379,7 +349,6 @@ To learn the reference name for a field, look it up from the [Work item field in
 
 	:::image type="content" source="media/pipelines-integration/status-badge-yaml.png" alt-text="Screenshot of YAML pipeline status badge.":::
 
-
 <a id="status-badge"></a> 
 
 # [Classic Build](#tab/classic-build)
@@ -411,7 +380,7 @@ Select this option if you want to display the latest outcome of a stage deployme
 <a id="report-release-status"></a>
 <a id="classic-report-git"></a>
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
  
 ## Report deployment status to the repository host (Classic)
 
@@ -430,7 +399,7 @@ If a commit gets deployed to multiple release pipelines, with multiple stages, e
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 <a id="classic-report-jira"></a>
 
@@ -452,8 +421,6 @@ To support integration with Jira issue tracking, install [Azure DevOps for Jira]
 
 > [!div class="mx-imgBorder"]
 > ![GitHub comments trigger optimizations.](/azure/devops/release-notes/2019/media/149_07.png)
-
-
 
 ## Enable Test Impact Analysis 
 

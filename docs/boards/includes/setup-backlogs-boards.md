@@ -3,4 +3,4 @@ ms.topic: include
 ---
 
 > [!NOTE]
-> For more information, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). In case you don't see the desired work items on your backlog or board, see [Set up your backlogs and boards](../backlogs/set-up-your-backlog.md).
+> If you don't see the desired work items on your backlog or board, see [Create and manage your backlog](../backlogs/create-your-backlog.md). For more information, see [What is Azure Boards?](../backlogs/backlogs-boards-plans.md)

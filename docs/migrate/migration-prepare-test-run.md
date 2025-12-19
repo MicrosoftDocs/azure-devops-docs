@@ -8,6 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 05/20/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Prepare for test run migration
@@ -277,7 +278,7 @@ We remind you again in the Post-migration phase(link) for when you need to do th
 > [!div class="nextstepaction"]
 > [Do test run migration](migration-test-run.md)
 
-## Related articles 
+## Related content 
 
 - [Migrate to Azure DevOps Services](migration-migrate.md) 
 - [Complete post-migration tasks](migration-post-migration.md)

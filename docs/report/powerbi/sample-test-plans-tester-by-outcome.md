@@ -5,11 +5,14 @@ description: Learn about sample Power BI queries that generate a tester by outco
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.author: shdalv
-ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
+ms.custom:
+  - powerbisample
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Tester by outcome matrix sample report
@@ -19,7 +22,6 @@ ms.date: 01/19/2023
 When multiple testers are executing test cases, it may be possible that few have completed the execution of tests assigned to them while others still have remaining tests to execute. You can see the distribution of test point outcomes across testers to figure out how the tests can be load-balanced. The report generated is similar to following image.
 
 :::image type="content" source="media/odatapowerbi-testerbyoutcome.png" alt-text="Screenshot of Power BI Tester by Outcome matrix report.":::
-
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -142,13 +144,11 @@ The following table describes each part of the query.
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
 
-
 ## Change the data type of select columns  
 
 From the Power Query Editor, select the columns containing a number, such as *Blocked*, *Failed*, and *NotApplicable*; select **Data Type** from the **Transform** menu; and then choose **Whole Number**. For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
-
 
 ## Create the Matrix report
 
@@ -158,12 +158,9 @@ From the Power Query Editor, select the columns containing a number, such as *Bl
 1. Add `LastResultOutcome` to **Columns**.
 1. Add `Count` to **Values** and right-click the field and select  **Sum**
 
-
 Your report should look similar to the following image.
 
-
 :::image type="content" source="media/odatapowerbi-testerbyoutcome.png" alt-text="Screenshot of Power BI Sample Tester by Outcome matrix report.":::
-
 
 ## Related articles
 

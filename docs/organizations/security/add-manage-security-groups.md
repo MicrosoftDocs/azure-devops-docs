@@ -29,8 +29,10 @@ Azure DevOps is pre-configured with default security groups. You can add and man
 
 ## Prerequisites 
 
-- **Permissions**: Be a member of the **Project Collection Administrators** security group. For more information on tokens, see [Security namespace and permission reference](namespace-reference.md).  
-- **Tools**: Install the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md). Sign in to Azure DevOps using `az login`.  
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. For more information on tokens, see [Security namespace and permission reference](namespace-reference.md).  |
+|**Tools**| [Azure DevOps CLI extension](../../cli/index.md). Sign in using `az login`. |
 
 ## Security group commands
 
@@ -320,7 +322,7 @@ The following command removes the user contoso@contoso.com from the specified se
 az devops security group membership remove --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3MTY5NTAtOTkzNjA1MTg2LTI1ODQxNTkyOTktMjYzMDUyNzA2OC0xLTQxNDY0Mzc4MzktMzgxMDM2MDM5MS0yNjE0MjU5MzI3LTI5MjI2MTc3OTA --member-id contoso@contoso.com --yes
 ```
 
-## Related articles
+## Related content
 
 - [Manage tokens and namespaces](manage-tokens-namespaces.md)
 - [Security REST API](/rest/api/azure/devops/security/)

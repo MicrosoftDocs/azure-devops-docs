@@ -7,8 +7,8 @@ ms.custom: analytics-views, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-monikerRange: '>= azure-devops-2019'
-ms.date: 09/10/2024
+monikerRange: "<=azure-devops"
+ms.date: 03/12/2025
 #customer intent: As a team member using Azure Boards, I want to understand how to visualize work items from Azure DevOps by using Power BI.
 ---
 
@@ -24,9 +24,11 @@ An *Analytics view* provides a simplified way to specify the filter criteria for
 
 You can use a default Analytics view or [create a custom view](analytics-views-create.md). Create custom views in the web portal for Azure DevOps. After you define a view that supports the data of interest, you can then open the view using [Power BI Data Connector](data-connector-connect.md) to create a report. 
 
+## Prerequisites
+
 [!INCLUDE [prerequisites simple](../includes/analytics-prerequisites-simple.md)]
 
-Users with Stakeholder access have no access to view or edit Analytics views.
+Users with Stakeholder access don't have access to view or edit Analytics views.
 
 [!INCLUDE [boards disabled note](../includes/boards-disabled.md)]
 
@@ -58,7 +60,7 @@ When you use the Power BI Data Connector, these same default views appear in the
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Select **Azure DevOps Server** as your data connector.
 
@@ -125,7 +127,7 @@ For example, the following fields are included when filtered for bugs and work i
 - Iteration Path
 - State
 - Title
-- Work Item Id
+- Work Item ID
 - Work Item Type
 
 Two fields that are reported on are only available from Analytics data: *Cycle Time Days* and *Lead Time Days*. For more information about how these days are calculated, see [Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to manage wikis with the command-line interface (CLI) in Azure DevOps.
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devx-track-azurecli
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
@@ -22,6 +22,10 @@ Learn the following CLI commands for managing wikis.
 > [!NOTE]
 > You can't delete project wikis with the CLI.
 
+## Prerequisites
+
+[!INCLUDE [wiki-prerequisites](includes/wiki-prerequisites.md)]
+
 ## Commands
 
 |Commands  |description  |
@@ -33,7 +37,7 @@ Learn the following CLI commands for managing wikis.
 |[az devops wiki page create](#create-a-wiki-page)     | Add a new page.        |
 |[az devops wiki page delete](add-edit-wiki.md#delete-wiki-page)   | Delete a page.        |
 |[az devops wiki page show](add-edit-wiki.md#view-a-wiki-page)    | Get the content of a page or open a page.        |
-|[az devops wiki page update](add-edit-wiki.md#edit-wiki-page)   |  Edit a page.       |
+|[az devops wiki page update](add-edit-wiki.md#edit-and-delete-wiki-pages)   |  Edit a page.       |
 |[az devops wiki show](#show-wiki)    |  Show the details of a wiki.       |
 
 ## Create a wiki

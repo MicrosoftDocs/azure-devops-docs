@@ -33,6 +33,8 @@ This article provides procedures for the following tasks:
 > * Update branches with _merge_ or _rebase_
 > * Download changes and update branches with _pull_
 
+
+
 ## Download changes with fetch
 
 Git fetch downloads remote branch commits and referenced file objects that don't exist in your local repo and updates the [remote-tracking](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) branches in local repo cache. Remote-tracking branches are locally cached read-only copies of remote branches and aren't your local branches. Git fetch doesn't update your local branches. For example, if a remote repo designated by `origin` has a `bugfix3` branch, Git fetch will update the remote-tracking branch named `origin/bugfix3` and not your local `bugfix3` branch. You can use remote-tracking branches to:

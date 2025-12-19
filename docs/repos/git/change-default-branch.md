@@ -2,7 +2,7 @@
 title: Change the default branch
 description: Learn how to change your default branch name
 ms.assetid: cd71e039-6e11-44f9-80fd-66c3bc146b46
-ms.topic: article
+ms.topic: how-to
 ms.service: azure-devops-repos
 ms.date: 10/07/2020
 monikerRange: '<= azure-devops'
@@ -19,6 +19,10 @@ Also, [pull requests](pull-requests.md) target this branch by default.
 We'll walk through the process of changing the default branch.
 We'll also cover other things you must consider and update when making this change.
 Finally, we'll look at a tool for easing the transition.
+
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## Set a new default branch
 

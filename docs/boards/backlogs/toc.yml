@@ -23,8 +23,6 @@
     displayname: backlog level, view options, rollup, parents, forecasting, mapping, completed, expand, collapse, filter
   - name: Automate work item state transitions
     href: automate-work-item-state-transitions.md
-  - name: Set up your backlogs & boards
-    href: set-up-your-backlog.md
   - name: Change column options
     href: set-column-options.md
   - name: Display rollup progress bars or totals
@@ -36,9 +34,6 @@
     href: ../../organizations/settings/show-bugs-on-backlog.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
 - name: Best practices, monitoring, & reports
   items:
-  - name: Refine your backlog
-    href: best-practices-product-backlog.md
-    displayname: product owner, role, acceptance criteria, spikes
   - name: Rollup of work & other fields
     href: ../../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/boards/toc.json
     displayname: native, Planning pane, tools, query charts, Excel

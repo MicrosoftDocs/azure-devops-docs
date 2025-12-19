@@ -12,23 +12,20 @@ monikerRange: '<= azure-devops'
 ms.date: 01/05/2023
 ---
 
-
 # Upload or download a process template
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)] 
 
 When you create a project, a process is used to specify the work item types to configure and other settings. Each process template primarily defines the building blocks of the work item tracking system for Azure Boards. For the Hosted XML and On-premises XML process models, you can upload a process template to either update an existing project or create a project. For the Inheritance process model, you customize work tracking through the web portal. For more information about these different processes, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 You can upload and export process templates only for those project collections configured to use the On-premises XML processes. Also, you can mark a template to appear as the default when you add projects.
  
 ::: moniker-end
 
  
 
-
 [!INCLUDE [version-all](../../../includes/version-selector.md)]
-
 
 [!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
@@ -36,14 +33,13 @@ You can upload and export process templates only for those project collections c
  
 To manage process templates, be a member of the **Project Collection Administrators** group, To get added to this group, see [Change project collection-level permissions](../../../organizations/security/change-organization-collection-level-permissions.md). 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!IMPORTANT]  
 > Uploading and downloading Inherited processes isn't supported. To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). 
 
 [!INCLUDE [temp](../../../organizations/settings/includes/open-process-admin-context-ts.md)]
 ::: moniker-end 
-
 
 ::: moniker range="azure-devops"
 
@@ -89,7 +85,7 @@ For other Hosted XML process management tasks, see [Import and export a Hosted X
 
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 ## Manage a process template (On-premises XML process)  
 
@@ -115,27 +111,19 @@ For other Hosted XML process management tasks, see [Import and export a Hosted X
 
 ::: moniker-end
 
-
-
-
-
-
 <a id="wit_correlation"> </a>
 
 ## Correlate a process template with an existing project
 
 To determine the type of process template that was used to create your project, review the work item types that appear in the <b>New Work Item</b> menu for Team Explorer and then compare them with the work item types in the following chart. If your work item types differ from those items shown, then a custom process template might have been used.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 | **Agile**| **Basic**| **CMMI**| **Scrum**| 
 |-----------|-----------|-----------|-----------|
 | ![Agile work item types](media/ALM_MPT_WIT_Agile.png) | ![Basic work item types](media/process-template/basic-work-items.png) | ![CMMI work item types](media/ALM_MPT_WIT_CMMI.png) | ![Scrum work item types](media/ALM_MPT_WIT_Scrum.png) | 
 
 ::: moniker-end
-
-
-
 
 <a id="restrictions"> </a>
 
@@ -161,7 +149,7 @@ Also, names can't contain the following characters: . , ; ' ` : / \ * | ? " &amp
 > The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. See also [Process template plug-ins: Index to XML element definitions](../../../reference/process-templates/process-template-plug-ins-xml-elements-index.md).
  
 
-## Related articles  
+## Related content  
 
 Periodically, updates are made to the process templates to support new features. For more information, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).  
 

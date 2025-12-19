@@ -2,7 +2,6 @@
 ms.topic: include
 ---
 
-
  
 ::: moniker range="azure-devops"
 
@@ -22,8 +21,7 @@ Organization settings configure resources for all projects or the entire organiz
 
 ::: moniker-end
 
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 ### Open Admin settings
 
@@ -35,5 +33,4 @@ Admin settings configure resources for all projects in a project collection. For
 	> ![Open Admin settings](../media/settings/open-admin-settings-server.png)  
 
 ::: moniker-end
-
 

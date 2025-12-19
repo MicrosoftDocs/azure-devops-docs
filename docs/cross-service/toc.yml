@@ -15,7 +15,7 @@
     href: end-to-end-traceability.md
   - name: Drive Git development
     href: ../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/cross-service/toc.json
-  - name: Link work items to other objects
+  - name: Link work items to objects
     href: ../boards/backlogs/add-link.md?toc=/azure/devops/cross-service/toc.json
   - name: Manage requirements
     href: manage-requirements.md

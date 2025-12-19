@@ -25,9 +25,14 @@ Whether your software project is large, small, or brand new, it's best to use ve
 
 ## Prerequisites
 
-- [Sign up for Azure DevOps and create a project](../../organizations/accounts/create-organization.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | Member of the Azure DevOps project where the TFVC repository is located. |
+| **Permissions** | - **Read**: To view the repository and its contents.<br>- **Check In**: To check in changes to the repository.<br>- **Check Out**: To check out files for editing.<br>- **Manage Workspaces**: To create and manage workspaces. |
+| **Tools** | [Visual Studio](https://visualstudio.microsoft.com/downloads). |
 
-- Install [Visual Studio](https://visualstudio.microsoft.com/downloads).
+> [!NOTE]
+> TFVC is not supported on ARM versions of Visual Studio.
 
 ## Connect to your project
 

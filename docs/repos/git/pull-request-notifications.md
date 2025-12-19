@@ -4,9 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to view, edit, and subscribe to pull request update notifications.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
-ms.topic: conceptual
-ms.author: vijayma
-author: vijayma
+ms.topic: overview
 ms.date: 10/07/2021
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
@@ -19,7 +17,7 @@ You can subscribe to email alerts to be notified of changes in pull requests (PR
 
 To view or set your personal notifications, see [Manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 - To view project notification settings, [go to the project](../../project/navigation/go-to-project-repo.md) and select **Project settings** > **Notifications**.
 
@@ -38,6 +36,4 @@ To view or set your personal notifications, see [Manage your personal notificati
   ![Screenshot that shows Opt out of emails.](media/pull-request-notifications/opt-out-notifications.png)
 
 ::: moniker-end
-
-
 

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Configure a branch policy to require status from a 3rd party pull request status server
 ms.assetid: 11f567b2-e45f-434c-88eb-d5f43398b451
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/11/2020
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
@@ -21,8 +21,7 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
 
 ## Prerequisites
 
-* An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
-* A service that posts status to PRs. See [Create a pull request status server](./create-pr-status-server.md).
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## Configure the branch policy 
 

@@ -1,5 +1,5 @@
 ---
-ms.topic: conceptual
+ms.topic: how-to
 title: Authorize other services to access Azure DevOps
 description: Learn how to authorize other services to work with Azure DevOps Services.
 ms.subservice: azure-devops-security
@@ -8,6 +8,7 @@ monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/21/2024
+ms.custom: sfi-image-nochange
 ---
 
 #  Authorize other services to access Azure DevOps
@@ -21,10 +22,10 @@ You can grant other services access to Azure DevOps using the OAuth 2.0 framewor
 
 ## Prerequisites
 
-- **Permissions**: 
-  - Be a member of the [Project Administrators](../security/change-project-level-permissions.md) group.
-  - The service has the Contributor role, or a custom role with similar permissions, on the resources it needs to access.
-- **Service compatibility**: The service you intend to authorize supports OAuth 2.0 integration with Azure DevOps.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - Member of the **Project Administrators** security group.<br>- The service has the **Contributor** role or a custom role with similar permissions on the resources it needs to access.|
+|**Service compatibility**| The service you intend to authorize supports OAuth 2.0 integration with Azure DevOps.|
 
 ## Authorize a service
 
@@ -72,7 +73,7 @@ Review the services that you granted authorization to access your organization.
 > [!div class="nextstepaction"]
 > [Set user preferences](set-your-preferences.md)
 
-## Related articles
+## Related content
 
 - [Change application access policies](../accounts/change-application-access-policies.md)
 - [Manage service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)

@@ -16,3 +16,5 @@ Today, Azure DevOps supports all [conditional access policies](/azure/active-dir
 
 > [!NOTE]
 > Non-interactive flows - for example, requests made programmatically using Personal Access Tokens - will continue to only support IP-fencing conditional access policies.
+
+Updated web session authentication is now available on all Azure DevOps Services web pages for most modern browsers.

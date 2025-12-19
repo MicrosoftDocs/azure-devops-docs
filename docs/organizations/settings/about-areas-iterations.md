@@ -6,7 +6,7 @@ ms.subservice: azure-devops-settings
 ms.custom: teams, linked-from-support
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ms.date: 10/17/2024
@@ -109,7 +109,6 @@ You can do the following actions at any time:
 
 ## How many iterations should a team define?
 
-Define as many child iterations as needed to reflect your project lifecycle. These paths represent a series of events, such as sprints, prebeta and beta results, and other release milestones. Teams usually leave work items assigned to the team's default iteration if they aren't yet scheduled for work or release.
 Define as many child iterations as needed to reflect your project lifecycle. These iterations can represent various events, such as sprints, prebeta and beta phases, and other release milestones. Teams typically leave work items assigned to the team's default iteration if they aren't yet scheduled for work or release.
 
 Add iterations to support the following requirements:
@@ -140,7 +139,7 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 [!INCLUDE [area-iteration-paths](includes/name-restrictions/area-iteration-paths.md)] 
 
 
-## Related articles 
+## Related content 
  
 - [Define area paths and assign to a team](set-area-paths.md)
 - [Define iteration paths and configure team iterations](set-iteration-paths-sprints.md)

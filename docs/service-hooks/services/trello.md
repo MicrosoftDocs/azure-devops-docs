@@ -1,6 +1,6 @@
 ---
 ms.subservice: azure-devops-service-hooks
-ms.topic: conceptual
+ms.topic: how-to
 title: Create a service hook with Trello
 description: Use Trello with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
@@ -14,6 +14,13 @@ ms.date: 07/27/2020
 
 Create cards and lists in Trello in response to events from Azure DevOps.
 For example, when code is pushed, or a build occurs.
+
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| - Member of the [Project Collection Administrators group](../../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.<br>- **Edit subscriptions** and **View subscriptions** permissions set to **Allow**. By default, only project administrators have these permissions. To grant the permissions to other users, you can use the command-line tool or the [Security](/rest/api/azure/devops/security/?view=azure-devops-rest-6.0&preserve-view=true) REST API.|
+|**Tools**|Trello  |
 
 ## Get a Trello authorization token
 
@@ -31,7 +38,7 @@ For example, when code is pushed, or a build occurs.
 
 Create a Trello card or list from an Azure DevOps Services event.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Go to your project Service Hooks page: 
 
@@ -50,7 +57,6 @@ we're going to have the subscription respond when a work item is created.
 
    ![Trigger configuration page](./media/trello/trigger.png)
 
-
 1. Set up the action that Trello will take in response to the trigger -
 either create a card or a list.
 
@@ -67,8 +73,6 @@ either create a card or a list.
    ![Test notification](./media/trello/test.png) 
 
 ::: moniker-end
-
-
 
 Now it's set up. Go to Trello and see the cards appear.
 

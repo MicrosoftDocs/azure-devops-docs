@@ -23,7 +23,6 @@ Branch policies are an important part of the Git workflow and enable you to:
 * Automatically include the right reviewers for every code change
 * Enforce best practices with required code reviewers
 
-
 The following table summarizes the policies you can define to customize a branch. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md). 
 
 :::row:::
@@ -74,7 +73,7 @@ The following table summarizes the policies you can define to customize a branch
    :::column-end:::
 :::row-end:::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       [**Limit merge types**](branch-policies.md#limit-merge-types)
@@ -161,7 +160,6 @@ The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing 
 
 Isolating work in branches makes it simple to change what you are working on by changing your current branch.
 
-
 ## How are Git branches created?
 
 You create branches by using the `branch` command. `Branch` creates a reference in Git for the new branch and a pointer back to the parent commit so Git can keep a history of changes as you add commits to the branch. 
@@ -209,7 +207,6 @@ Learn how to complete common tasks when working with branches.
 - [How to delete a branch](delete-branch.md)
 - [Restore a deleted branch](restore-deleted-branch.md)
 - [How to lock branches](lock-branches.md)
-
 
 ## Related articles
 

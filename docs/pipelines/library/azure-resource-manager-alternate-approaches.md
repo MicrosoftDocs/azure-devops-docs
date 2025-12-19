@@ -1,12 +1,13 @@
 ---
 title: Azure Resource Manager service connection special cases
 description: Connect Azure Pipelines to Azure using an Azure Resource Manager service connection with either an agent-assigned managed identity or a publish profile.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jukullam
 author: juliakm
 ms.date: 10/18/2024
 ai-usage: ai-assisted 
 monikerRange: '<= azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Azure Resource Manager service connection special cases
@@ -66,7 +67,7 @@ You can use this approach if all the following items are true for your scenario:
 
 1. Enter a **Service connection name**.
 1. Optionally, enter a description for the service connection.
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+1. Selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](service-endpoints.md#authorize-pipelines).
 1. Select **Save**.
 
 <a name="use-msi"></a>
@@ -120,7 +121,7 @@ You can configure self-hosted agents on Azure VMs to use an [Azure managed ident
 1. Enter the **Tenant Id**.
 1. Enter the **Service connection name**.
 1. Optionally, enter a description for the service connection.
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+1. Selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](service-endpoints.md#authorize-pipelines).
 1. Select **Save**.
 
 1. After the new service connection is created:
@@ -162,7 +163,7 @@ You can create a service connection by using a publish profile. You can use a pu
    | **Service connection Name** | Required. The name that you use to refer to this service connection in task properties. Not the name of your Azure subscription. |
    | **Description** | Optional. The description of the service connection.|
 
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this service connection. If you don't select this option, you must manually grant access to each pipeline that uses this service connection.
+1. Selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](service-endpoints.md#authorize-pipelines).
 1. Select **Save**.
 
 After the new service connection is created:

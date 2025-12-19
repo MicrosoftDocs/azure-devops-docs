@@ -1,9 +1,12 @@
 ---
 title: Publish NuGet packages to NuGet.org (Classic/YAML)
 description: Learn how to publish NuGet packages to NuGet.org using Azure Pipelines.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/23/2024
-monikerRange: '<= azure-devops'
+monikerRange: "<=azure-devops"
+ms.custom:
+  - peer-review-program
+  - sfi-image-nochange
 "recommendations": "true"
 ---
 
@@ -45,6 +48,9 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 1. Select the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done.
 
 ## Publish packages
+
+> [!NOTE]
+> If you're using Ubuntu 24.04 or higher, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the `NuGetCommand@2` task. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
 
 #### [YAML](#tab/yaml/)
 

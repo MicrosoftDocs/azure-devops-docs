@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: anian
 ms.topic: how-to
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/05/2024
 ---
 
@@ -18,6 +18,10 @@ ms.date: 01/05/2024
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Create and embed work items in your wiki page content. This feature gives you an easy way to promote text to a link to a feature, task, or user story.
+
+## Prerequisites
+
+[!INCLUDE [wiki-prerequisites](includes/wiki-prerequisites.md)]
 
 ## Create and embed work item 
 
@@ -34,7 +38,7 @@ Create and embed work items in your wiki page content. This feature gives you an
 The selected content in the wiki page is replaced with the embedded work item.
 
 > [!NOTE]
-> Only Markdown plain text, including bold and italics, get replaced in the wiki page. For the rest of the content like images, code blocks, and videos, the work item gets created, but the embed must be done manually. This process is to prevent the page from breaking due to the replaced work item. For more information, see [Link to work items from a Wiki page](markdown-guidance.md#link-to-work-items-from-a-wiki-page).
+> Only Markdown plain text, including bold and italics, get replaced in the wiki page. For the rest of the content like images, code blocks, and videos, the work item gets created, but the embed must be done manually. This process is to prevent the page from breaking due to the replaced work item. For more information, see [Link to work items from a Wiki page](markdown-guidance.md#link-work-items).
 
 ## Show work item status
 
@@ -42,7 +46,7 @@ The status, ID, and title of an embedded work item is shown in the wiki page. Wo
 
 ![Screenshot of Work item status shown on wiki page.](media/wiki/show-work-item-status-wiki.png)
 
-## Related articles
+## Related content
 
 - [Add and edit wiki pages](add-edit-wiki.md)  
 - [View wiki page history and revert](wiki-view-history.md)

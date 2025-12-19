@@ -27,16 +27,6 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 ::: moniker-end
 
-::: moniker range="<azure-devops-2022"
-
-* [UI settings override YAML trigger setting](#ui-settings-override-yaml-trigger-setting)
-* [Pull request triggers not supported with Azure Repos](#pull-request-triggers-not-supported-with-azure-repos)
-* [Branch filters misconfigured in CI and PR triggers](#branch-filters-misconfigured-in-ci-and-pr-triggers)
-* [Scheduled trigger time zone conversions](#scheduled-trigger-time-zone-conversions)
-* [UI settings override YAML scheduled triggers](#ui-settings-override-yaml-scheduled-triggers)
-
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 > [!NOTE]
@@ -88,16 +78,7 @@ If your pipelines use the default implicit CI trigger, and they stop working, ch
 
 ## Branch filters misconfigured in CI and PR triggers
 
-::: moniker range="azure-devops-2019"
-
-When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them.
-
-> [!IMPORTANT]
-> When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [pr](/azure/devops/pipelines/yaml-schema/pr) and [trigger](/azure/devops/pipelines/yaml-schema/trigger).
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches, tags, and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them. For more information, see [pr](/azure/devops/pipelines/yaml-schema/pr) and [trigger](/azure/devops/pipelines/yaml-schema/trigger).
 

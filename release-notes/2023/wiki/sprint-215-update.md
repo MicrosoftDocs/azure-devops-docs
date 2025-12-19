@@ -4,6 +4,7 @@ description: See the Sprint 215 feature updates for Wiki, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 1/17/2023
+ms.topic: release-notes
 ---
 
 # Wiki - Sprint 215 Update

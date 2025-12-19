@@ -28,6 +28,10 @@ This article provides procedures for the following tasks:
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## How Git tracks changes
 
 As you work in your repo, Git tracks changes to all _tracked_ files. Tracked files are files that are currently staged or are included in the previous commit. Git separates tracked files into three categories:

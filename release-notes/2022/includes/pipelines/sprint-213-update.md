@@ -1,8 +1,9 @@
 ---
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 12/16/2022
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 ### Container Registry service connections can now use Azure Managed Identities
 
@@ -75,7 +76,7 @@ To prevent PRs from forked GitHub repositories from making undesired changes to 
 The macos-12 Monterey image is ready to be the default version for the “macos-latest" label in Azure Pipelines Microsoft-hosted agents. Until now, this label pointed to macos-11 Big Sur agents. 
 
 
-For a full list of differences between macos-12 and macos-11, visit the [GitHub issue](https://github.com/actions/runner-images/issues/6384). For a full list of software installed on the image, check [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md).
+For a full list of differences between macos-12 and macos-11, visit the [GitHub issue](https://github.com/actions/runner-images/issues/6384). For a full list of software installed on the image, check [here](https://github.com/actions/runner-images/blob/main/images/macos/).
 
 ### Ubuntu-latest label will point to ubuntu-22.04 image
 

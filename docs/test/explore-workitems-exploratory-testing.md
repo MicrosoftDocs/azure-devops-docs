@@ -4,11 +4,12 @@ description: Test tools - Manual and exploratory testing - explore work items fr
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra 
 monikerRange: '<= azure-devops'
-ms.date: 01/03/2025
+ms.date: 02/13/2025
+ms.update-cycle: 1095-days
 ---
 
 # Explore work items with the Test & Feedback extension
@@ -22,8 +23,13 @@ Explore the following items:
 - A work item from the [board](#kanban) or the [extension](#extension)
 - [Multiple work items in the same session](#multipleitems)
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
-- **Extensions**: [Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) extension. If the extension isn't installed, the option to explore work items from the board isn't visible.
+## Prerequisites
+
+| Category | Requirements |
+|--------------|-------------|
+| **Access levels** | - At least **Basic** access, with permissions to view work items under the corresponding Area Path.<br>- To add test plans and test suites, delete test artifacts, and define test configurations: [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access.<br>Or, one of the following **Visual Studio subscriptions**:<br> - [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)<br>- [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)<br>  - [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/) |
+| **Permissions** | - To add or modify test plans, test suites, test cases, or other test-based work item types: **Edit work items in this node** permission set to **Allow** under the corresponding **Area Path**.<br>- To modify test plan properties such as build and test settings: **Manage test plans** permission set to **Allow** under the corresponding **Area Path**.<br>- to create and delete test suites, add and remove test cases from test suites, change test configurations associated with test suites, and modify a test suite hierarchy (move a test suite): **Manage test suites** permission set to **Allow** under the corresponding **Area Path**. |
+|**Extensions**| [Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) extension. If the extension isn't installed, the option to explore work items from the board isn't visible.|
 
 <a name="kanban"></a>
 
@@ -32,10 +38,6 @@ Explore the following items:
 1. On the board, open the shortcut menu for the work item you want to explore and select **Do exploratory testing**.
 
    ![Screenshot showing opening the Do exploratory testing menu item.](media/explore-workitems-exploratory-testing/explore-workitems-01.png)
-   
-   A banner in the Work hub displays the work item associated with your session.
-
-   ![Screenshot showing the banner with the work item for your session.](media/explore-workitems-exploratory-testing/explore-workitems-02.png)
 
 2. Launch the Test & Feedback extension. Any acceptance criteria for the work item are shown.
 
@@ -49,13 +51,16 @@ Explore the following items:
 
 <a name="extension"></a>
 
-## Explore work items from the Test- Feedback extension
+## Explore work items from the Test & Feedback extension
 
 1. Open the **Explore work item** page in the extension and search for the work item you want to explore.
 
    ![Screenshot showing search for a work item.](media/explore-workitems-exploratory-testing/explore-workitems-05.png)
 
    You can search using the work item identifier or keywords in the work item title. The work item types available for search in the extension are: Epic, Feature, Test Case, and Requirement. For more information, see [About work items and work item types](../boards/work-items/about-work-items.md).
+
+   > [!IMPORTANT]
+   > The Test & Feedback extension only searches and returns results for work items created in the past 180 days if you search using work item title. If you search using work item ID, there is no 180 day limitation.
   
 2. In the search results, select the work item and choose **Explore selected work item**.
 
@@ -87,7 +92,7 @@ After you file bugs, create tasks, or create test cases, they appear on the "Rec
 
 For more information, see [View your sessions and gain insights](insights-exploratory-testing.md).
 
-## Related articles
+## Related content
 
 * [Find answers to FAQs for manual testing](reference-qa.yml#tandfext)
 * [Use the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)

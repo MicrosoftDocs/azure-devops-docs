@@ -4,11 +4,12 @@ description: Learn about collecting diagnostic data while testing web and deskto
 ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/06/2021
+ms.update-cycle: 1095-days
 ---
 
 # Collect diagnostic data while testing
@@ -18,7 +19,9 @@ ms.date: 12/06/2021
 Collect diagnostic data while you test your apps. This data is included in the bugs you file 
 during the test. You can collect diagnostic data from web apps and from desktop apps, and view it in Azure Test Plans.
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
+## Prerequisites
+
+[!INCLUDE [prerequisites-stakeholder](includes/prerequisites-stakeholder.md)] 
 
 <a name="collect-web"></a>
 
@@ -101,12 +104,10 @@ Do the following steps to capture screen recordings from your apps.
 
 1. Choose the entire screen, or choose an app to start recording.
 
-   ::: moniker range=">=azure-devops-2020"
+   ::: moniker range="<=azure-devops"
    ![Screenshot showing selection of the screen or app to share.](media/collect-diagnostic-data/choose-test-feedback-share.png)
    ::: moniker-end
-   ::: moniker range="=azure-devops-2019"
-   ![Screenshot showing choosing the screen or app to record.](media/collect-diagnostic-data/collect-diagnostic-data-12.png) 
-   ::: moniker-end
+   
 
    If you create a bug while recording your screen, the 
    recording automatically stops and is added to the bug. 
@@ -146,7 +147,7 @@ To collect advanced diagnostic data such as code coverage, IntelliTrace, and Tes
 > You must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) and other run settings in Microsoft Test Manager and specify these as the default settings for the test plan.
 > For more information, see [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
 
-## Related articles
+## Related content
 
 - [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 - [Overview of manual and exploratory testing](index.yml)

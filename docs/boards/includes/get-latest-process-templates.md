@@ -3,7 +3,7 @@ ms.topic: include
 ms.date: 10/11/2024
 ---
 
-::: moniker range=">= azure-devops-2019 < azure-devops" 
+::: moniker range="<azure-devops"
 
 > [!TIP]
 > With Azure DevOps Server, you can choose between using the *Inherited process model* or the *On-premises XML process model*. For more information, see [Choose the process model for your project collection](../../reference/customize-work.md#choose-the-process-model-for-your-project-collection). To access the latest versions of the default processes or process templates:

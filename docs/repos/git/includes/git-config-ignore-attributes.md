@@ -1,6 +1,4 @@
 ---
-author: vijayma
-ms.author: vijayma
 ms.date: 10/19/2022
 ms.topic: include
 msservice: azure-devops-repos

@@ -3,15 +3,15 @@ title: Debug with symbols in Visual Studio
 description: Use symbols to debug your application with Visual Studio.
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/20/2021
-monikerRange: '<= azure-devops'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Debug with Visual Studio
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. These files contain useful information for the debugger and generally have the *PDB* extension. You can use Visual Studio to consume your symbols from Azure Artifacts symbol server or other external sources to step into your code and debug your application.
 

@@ -3,16 +3,16 @@ title: Dependabot on Azure DevOps
 author: ncouraud
 ms.author: nicour
 ms.date: 04/22/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Dependabot Security Updates are available on Azure DevOps as a part of Advanced Security
 hide_comments: true
 ---
 
-# Dependabot Security Updates are available on Azure DevOps as a part of Advanced Security
+# Bringing Dependabot security updates to Advanced Security dependency alerts
 
-We are bringing the power of Dependabot Security Updates to GitHub Advanced Security in Azure DevOps. This will allow Advanced Security users to enable the automatic creation of pull requests for dependency vulnerability detections.
+We are bringing the power of Dependabot security updates to GitHub Advanced Security in Azure DevOps. This will allow Advanced Security users to enable the automatic creation of pull requests for dependency vulnerability detections.
 
 Dependabot security updates will make it easier for you to fix vulnerable dependencies in your repository. Once you enable this feature, when a Dependabot alert is raised for a vulnerable dependency in your repository, Dependabot automatically tries to fix it.
 

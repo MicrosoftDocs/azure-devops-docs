@@ -7,11 +7,10 @@ ms.custom: process, archive-candidate
 ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 09/16/2024
 ---
-
 
 # Rollup of work and other fields
 
@@ -24,7 +23,7 @@ Rollup provides summed values of selected fields for all child work items of a p
 
 ## Native support of rollup within the web portal 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Azure Boards supports rollup columns on product and portfolio backlogs, rollup within the sprint Planning pane, as well as rollup on sprint backlogs and taskboards. 
 
@@ -51,28 +50,16 @@ In addition, you can view rollup of Remaining Work from a sprint backlog or task
 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2020"
-
-You can view rollup of Remaining Work from a sprint backlog or task board.  
-
-::: moniker-end 
+ 
 
 From the sprint backlog, the sum of all **Remaining Work** defined for all tasks is displayed for the parent work item. This value also displays on the parent work item card when you view the task board.  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Sprint backlog displays rollup of Remaining Work](media/rollup/remaining-work-rollup-s155.png )
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!div class="mx-imgBorder"]  
-> ![Sprint backlog displays rollup of Remaining Work.](media/rollup/remaining-work-rollup-2019.png )
-
-::: moniker-end
-
 
   
 From a sprint task board, there are three types of rollup: 
@@ -80,21 +67,12 @@ From a sprint task board, there are three types of rollup:
 - The sum of all Remaining Work defined for all tasks within a column displays at the top of each column
 - The sum of all Remaining Work defined for all tasks for a backlog item displays within each row, grouped by column.      
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Sprint Taskboard displays rollup of Remaining Work](media/rollup/taskboard-remaining-work-s155.png )
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!div class="mx-imgBorder"]  
-> ![Sprint backlog displays rollup of Remaining Work](media/rollup/taskboard-remaining-work-2019.png )
-
-::: moniker-end
-
-
 
 When you update the status of a task as Completed, the system automatically zeros out the Remaining Work for that task. For more information, see [Task board](../../boards/sprints//task-board.md).
 
@@ -102,7 +80,7 @@ When you update the status of a task as Completed, the system automatically zero
 
 You can obtain rollup of additional data fields in Azure DevOps work tracking data by using one of the following methods:  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 |Method|Azure DevOps Services|On-premises Azure DevOps|  
 |------------|----------|----------------------|  
@@ -113,10 +91,6 @@ You can obtain rollup of additional data fields in Azure DevOps work tracking da
 |SQL Server Reporting Services report|![Not supported](media/icon_witerror.png "Icon_WITerror")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 
 ::: moniker-end
-
-
-
-
 
 <a name="charts"></a>
 
@@ -138,9 +112,6 @@ For more information about Excel macros, see [Automate tasks with the Macro Reco
 > [!TIP]
 > To provide support for opening work items and query results in Excel from the web portal, add the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension to your organization or collection.
 
-
-
-
 <a name="marketplace"></a>
 
 ## Marketplace extensions and custom controls   
@@ -152,7 +123,7 @@ There are several extensions available from the [Marketplace](https://marketplac
 
 Or, you can write an extension using the [REST API for work tracking](/rest/api/azure/devops/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregator](https://tfsaggregator.github.io/).  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Analytics service
 

@@ -21,7 +21,7 @@ Learn how to grab data from a CSV (comma-separated values) file and save the dat
 ## Prerequisites
 
 Before you begin, you need:
-- An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
     - The **Administrator** role for service connections in your Azure DevOps project. Learn how to [add the Administrator role](../../../library/add-resource-protection.md).  
 - Data from [sample.csv](https://github.com/MicrosoftDocs/azure-devops-docs-samples/raw/main/azure-data-pipeline/data/sample.csv).

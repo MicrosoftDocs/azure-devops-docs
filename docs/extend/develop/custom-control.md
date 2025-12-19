@@ -4,7 +4,7 @@ description: Learn how to extend the work item form by adding a custom control i
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
 ms.subservice: azure-devops-ecosystem
 ms.custom: engagement-fy23, devx-track-js
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

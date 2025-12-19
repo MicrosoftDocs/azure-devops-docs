@@ -7,7 +7,7 @@ ms.custom: powerbisample, engagement-fy23, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/08/2022
 ---
 
@@ -92,9 +92,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 * `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`. 
 
-
 ### Query breakdown
-
 
 The following table describes each part of the query.
 
@@ -213,9 +211,6 @@ The following table describes each part of the query.
    Close groupby()
    :::column-end:::
 :::row-end:::
-
-
-
 
 ### Burndown User Stories for a team and the current iteration
 
@@ -372,10 +367,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand columns in Power Query Editor
 
@@ -401,7 +393,6 @@ To learn how to expand work items, see [Transform Analytics data to generate Pow
 1. Add `State` to **Y-Axis**. 
 
 The example report, which displays burndown on both Story Points and Count of Stories.
-
 
 :::image type="content" source="media/reports-boards/sprint-burndown-clustered-column-chart.png" alt-text="Screenshot of Sample Power BI Sprint burndown clustered column chart report.":::
 

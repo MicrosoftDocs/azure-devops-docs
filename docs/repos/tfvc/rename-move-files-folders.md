@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Rename or move files and folders using Team Foundation Version Control (TFVC) in Visual Studio.
 ms.assetid: 90839209-cb51-4c00-ae19-08e7343093ea
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/29/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -27,7 +27,7 @@ You can also use the `tf` command-line utility to move or rename files or folder
 
 ## Prerequisites
 
-Be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+[!INCLUDE [contributor-only-prerequisites](includes/contributor-only-prerequisites.md)]
 
 ## Move an item
 

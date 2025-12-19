@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps Services
 description: Learn how to rename your organization and what to do before and after you rename it.
 ms.subservice: azure-devops-organizations
 ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 10/24/2024
 monikerRange: 'azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Rename your organization in Azure DevOps
@@ -22,11 +23,11 @@ You can change your organization name (URL) at any time in Azure DevOps. This ac
 
 ## Prerequisites
 
-- **Permissions:** Be an owner of your organization. For more information, see [Change the organization owner](change-organization-ownership.md).
-- **Access levels:** Have at least Basic access.
-- **Preparation:**
-  - Save your work.
-  - Ensure other members aren't using the service.
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions** |[Organization owner](change-organization-ownership.md).|
+|**Access levels**| At least **Basic** access.|
+|**Tasks**|- Save your work.<br>- Ensure other members aren't using the service.|
 
 > [!NOTE]
 > Wait at least one hour after the most recent rename operation before renaming an organization again.
@@ -57,7 +58,7 @@ Your organization is renamed.
 
 A: The organization URL setting is two-way toggle. You can turn on the new domain name URL. You can also turn off the new URL - then, you go back to using old URL format.  
 
-## Related articles
+## Related content
 
 - [Resolve orphaned organization](resolve-orphaned-organization.md)
 - [Delete an organization](delete-your-organization.md)

@@ -3,13 +3,15 @@ title: Install, configure Search
 titleSuffix: Azure DevOps 
 description: Find installation and setup instructions for Code, Wiki & Work Item Search in Azure DevOps Server.
 ms.assetid: 
-ms.custom: engagement-fy23
 ms.subservice: azure-devops-search
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '< azure-devops'
-ms.date: 03/04/2024
+ms.date: 01/22/2025
+ms.custom:
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Install and configure Search
@@ -19,12 +21,11 @@ ms.date: 03/04/2024
 In this article, learn how to install, [configure](#configure-search), and [uninstall](#uninstall-search) a secure search engine for Azure DevOps Server that runs on your own hardware. For more information, see the following articles:
 - [Manage Search and indexing](manage-search.md)
 - [Software dependencies](#software-dependencies), further in this article
-- [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/)
 
 ## Prerequisites
 
-- To install the Search extension, be a Project Collection Administrator (PCA) for the organization. Non-administrative users can also request to have the extension added to their PCA.
-- For more information, see [Install and configure Azure DevOps Server](/azure/devops/server/install/get-started) and [Requirements and compatibility](/azure/devops/server/requirements).
+**Permissions:** Member of the **Project Collection Administrators** group for the organization. Non-administrative users can also request to have the extension added to their PCA.
+For more information, see [Install and configure Azure DevOps Server](/azure/devops/server/install/get-started) and [Requirements and compatibility](/azure/devops/server/requirements).
 
 ### Hardware recommendations
 
@@ -61,7 +62,7 @@ The amount of disk space used by Search depends mainly on the type and size of f
 
 Search has the following dependencies, which get installed automatically as part of the configuration:
 
-* [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch.
+* [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elastic.
   * Search uses a modified version of Elasticsearch. It works only with this modified version.
   * A newer version of Elasticsearch ships with TFS 2018 Update 2 and onward, and Azure DevOps Server. All content is reindexed after installation when you upgrade from an older version of Search results. Depending on the volume of content (code files, work items, and wiki pages), reindexing can take some time to complete.
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html). 
@@ -78,7 +79,7 @@ Search has the following dependencies, which get installed automatically as part
 #### Java installation notes
 
 - If the Search configuration wizard doesn't detect a working installation of a Java Runtime Environment (JRE), it provides an option to download and install the latest supported version. Internet connectivity is required to download. If the target server doesn't have Internet connectivity, you must download and install a JRE manually before attempting to install Search.
-- Versions of Search before Azure DevOps Server used the [Oracle Server Java Runtime Environment](https://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html). In Azure DevOps Server, the default JRE is [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/).
+- Versions of Search before Azure DevOps Server used the [Oracle Server Java Runtime Environment](https://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html). Azure DevOps Server uses Elasticsearch version 7.17.0, which has a bundled version of OpenJDK. 
 - During installation, the wizard sets the **JAVA\_HOME** environment variable to point to the JRE installation folder. The configuration wizard might not detect an existing JRE installation if it wasn't correctly configured, or if the **JAVA\_HOME** setting points to an earlier version than required by Search. 
 
    > [!NOTE]   
@@ -212,7 +213,7 @@ There might be cases where you no longer want to use Search or you want to do a 
 1. Uninstall the Search extension for each collection.
    Go to the **Manage Extensions** page of each collection in your Azure DevOps Server instance:
 
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    ![Screenshot of checking that the extension is installed.](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
@@ -243,7 +244,7 @@ Do the following steps to unconfigure Search, like for Code, Work item, or Wiki,
 
 1. Go to the **Manage Extensions** page for each collection in your Azure DevOps Server instance.
 
-   ::: moniker range=">= azure-devops-2019"
+   ::: moniker range="<=azure-devops"
    ![Screenshot Checking that the extension is installed.](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
@@ -271,7 +272,7 @@ Search for Azure DevOps Server has the following limitation:
 * [Reindex all your collections](manage-search.md#reindex-a-repository-or-collection) if you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database.
 * Search isn't extensible, but you can submit a new feature request on the [Developer Community](https://developercommunity.visualstudio.com/home).
 
-## Related articles
+## Related content
 
 - [Manage indexing for Search](manage-search.md)
 - [Get started with Search](get-started-search.md)

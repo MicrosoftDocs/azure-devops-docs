@@ -44,12 +44,8 @@ The following image shows the Bug work item type for the Scrum process. The Bug 
 
 [!INCLUDE [image differences](../includes/image-differences-with-wits.md)]
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/manage-bugs/bug-work-item-type.png" alt-text="Screenshot shows a Bug work item type form for Scrum process in Azure DevOps Server 2020 and cloud service." lightbox="media/manage-bugs/bug-work-item-type.png":::
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-:::image type="content" source="media/manage-bugs-scrum-bug-from-ts.png" alt-text="Screenshot shows a Bug work item type form for Scrum process in Azure DevOps Server 2019.":::
 ::: moniker-end
 
 ## Fields specific to bugs
@@ -133,7 +129,7 @@ The Bug work item type uses some bug-specific fields. To capture both the initia
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       [Deployment](#deployment-control)
@@ -189,7 +185,7 @@ Before you customize your process, we recommend that you review [About configuri
 To customize your particular process, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 To customize your particular process, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md) or [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 ::: moniker-end
 
@@ -255,7 +251,7 @@ As with all other work item types, the Bug work item type has a well-defined wor
 
 For Scrum bugs, you change the **State** from *Committed* (similar to *Active*) to *Done*. For Agile and CMMI, you first resolve the bug and select a reason that indicates the bug is fixed. Typically, the person who created the bug then verifies the fix and updates the **State** from *Resolved* to *Closed*. If you find more work after you resolve or close a bug, reactivate it by setting the **State** to *Committed* or *Active*.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 > [!NOTE]
 > The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been removed from the default system process. You can reinstate this automation by adding a rule. For an Inheritance process, see [Automate reassignment based on state change](../../organizations/settings/work/apply-rules-to-workflow-states.md#reassign).
 
@@ -302,7 +298,7 @@ You close a bug when a team member verifies it as fixed. However, you might also
 
 It's always a good idea to describe any more details for closing a bug in the **Discussion** field to avoid future confusion as to why the bug was closed.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Automate bug closure when merging pull requests
 
@@ -381,17 +377,10 @@ You can update the bug status by dragging and dropping bugs to a new column on a
 
 You can add intermediate columns to track your bug status on the board. You can also define queries that filter based on the status of a Board Column. For more information, see the following articles:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 - [Add columns to your board](../boards/add-columns.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-- [Query changes to a board](../queries/query-by-workflow-changes.md#kanban-query-fields)
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-
-- [Add columns to your board](../boards/add-columns.md)
 - [Query changes to a board](../queries/query-by-workflow-changes.md#kanban-query-fields)
 
 ::: moniker-end
@@ -406,7 +395,7 @@ To automate select actions, add custom rules to your Bug work item type. For exa
 
 ### Set work item state in pull request
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 When you create a pull request, you can set the *state* value of the linked work items in the description. Follow the syntax: `{state value}: #ID`.
 
@@ -414,11 +403,6 @@ When you merge the pull request, the system reads the description and updates th
 
 :::image type="content" source="/azure/devops/organizations/notifications/media/pr-set-state-of-work-items.png" alt-text="Screenshot of setting work item state within a pull request." lightbox="/azure/devops/organizations/notifications/media/pr-set-state-of-work-items.png":::
 
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-> [!NOTE]
-> This feature requires installation of Azure DevOps Server 2020.1 update. For more information, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#customize-work-item-state-when-pull-request-is-merged).
 ::: moniker-end
 
 ## Integration across Azure DevOps
@@ -463,7 +447,7 @@ You can track the bug status, assignments, and trends using queries that you can
 
 For more information about queries, charts, and dashboards see [managed queries](../queries/about-managed-queries.md), [charts](../../report/dashboards/charts.md), and [dashboards](../../report/dashboards/dashboards.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ### Use Analytics views and the Analytics service to create bug reports
 
@@ -482,20 +466,6 @@ You can use Power BI to create more complex reports than a query. For more infor
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-
-### Predefined SQL Server bug reports
-
-The following reports are supported for Agile and CMMI processes.
-
-- [Bug Status](/previous-versions/azure/devops/report/sql-reports/bug-status-report)
-- [Bug Trends](/previous-versions/azure/devops/report/sql-reports/bug-trends-report)
-- [Reactivations](/previous-versions/azure/devops/report/sql-reports/reactivations-report)
-
-These reports require that you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project. To learn how to add SQL Server reports for a project, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
-
-::: moniker-end
-
 ### Marketplace extensions
 
 There are multiple bug-related Marketplace extensions. See [Marketplace for Azure DevOps](https://marketplace.visualstudio.com/search?term=bug&target=AzureDevOps&category=All%20categories&sortBy=Installs).
@@ -507,7 +477,7 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 > [!div class="nextstepaction"]
 > [Use templates to add and update work items](work-item-template.md)
 
-## Related articles
+## Related content
 
 - [Remove, delete, or restore work items](remove-delete-work-items.md)
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)

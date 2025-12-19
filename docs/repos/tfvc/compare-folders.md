@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: See how to compare two TFVC folders by using the Folder Differences window in Visual Studio.
 ms.assetid: 9c894c51-c34c-4c03-a840-5e485dbbc55d
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/22/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -20,7 +20,11 @@ You can compare the differences between two server folders, two local folders, o
 
 ## Prerequisites  
 
-To do these procedures, have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**| **Read** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 > [!NOTE]
 > To compare two local folders, you don't need any Azure DevOps permissions.

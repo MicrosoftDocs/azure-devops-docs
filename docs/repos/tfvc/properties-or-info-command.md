@@ -20,7 +20,11 @@ The `tf info` command displays information about items that are under Team Found
 
 ## Prerequisites
 
-To use the `info` command, have the **Read** permission set to **Allow** for all specified files and folders.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission set to **Allow** for all specified files and folders.|
+
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

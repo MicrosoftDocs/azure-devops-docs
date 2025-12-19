@@ -2,9 +2,9 @@
 title: About pipeline resources
 ms.custom: pipelinesresourcesrefresh
 description: What are resources?
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/06/2023
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # About resources for Azure Pipelines

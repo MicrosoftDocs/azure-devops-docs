@@ -1,7 +1,7 @@
 ---
 title:  Swimlane rules is generally available
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 5/9/2023
 description: Swimlane rules is generally available
 ---

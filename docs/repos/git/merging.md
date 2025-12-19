@@ -21,11 +21,9 @@ You can resolve merge conflicts in Visual Studio, or by using the command line a
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
-This article provides procedures for the following tasks:
+## Prerequisites
 
-> [!div class="checklist"]
-> * Understand merge conflicts
-> * Resolve merge conflicts
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## Understand merge conflicts
 

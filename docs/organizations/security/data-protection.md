@@ -2,14 +2,16 @@
 title: Data protection overview
 titleSuffix: Azure DevOps Services
 description: Learn how Microsoft helps protect your projects and data in Azure DevOps. 
-ms.custom: freshness-fy22
-ms.topic: article
+ms.topic: concept-article
 ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 09/13/2024
+ms.date: 06/20/2025
 monikerRange: 'azure-devops'
+ms.custom:
+  - freshness-fy22
+  - sfi-ropc-nochange
 ---
 # Data protection overview
 
@@ -30,7 +32,7 @@ The threats that you face are in four basic categories: data availability, servi
 
 Data protection requires the active engagement of administrators and users who know what steps to take to protect your assets from unauthorized disclosure and tampering. Be explicit when you grant permissions to user access points, so only the right people access data within Azure DevOps.
 
-You should consider all data to be potentially at risk, no matter where it is or how it's being used. This statement is true for both data stored in the cloud and data stored in a private datacenter. It's important to classify your data, its sensitivity and risk, and the damage that it might do if it becomes compromised. Also, categorize your data relative to an overall policy for managing information security.
+You should consider all data to be potentially at risk, no matter where it's located or how it's being used. This statement is true for both data stored in the cloud and data stored in a private datacenter. It's important to classify your data, its sensitivity and risk, and the damage that it might do if it becomes compromised. Also, categorize your data relative to an overall policy for managing information security.
 
 ## Built on Azure
 
@@ -259,6 +261,10 @@ Microsoft occasionally wants to contact customers to let them know about more fe
 
 Microsoft never uses customer data to target specific offers for specific users or organizations. Instead, we use organization data and aggregate usage statistics at the organization level to determine groups that should receive specific offers.
 
+### Managing privacy policies for admins to control user feedback collection
+
+The feedback toggle feature allows Azure DevOps organization owners to control whether users are prompted to provide feedback and submit it. This feature is essential for ensuring that feedback practices align with your organization’s privacy and governance policies.
+
 ## Building confidence
 
 You can be confident in other efforts that Microsoft makes on behalf of Azure DevOps. These efforts include internal adoption policies at Microsoft, the level of transparency into the state of our service, and progress toward receiving certification of our systems for managing information security.
@@ -275,7 +281,7 @@ More requirements for internal projects include associating the organization wit
 
 You might be interested in understanding third-party evaluation of our procedures for data security. Azure DevOps achieved the following certifications:
 
-- ISO 27001:2013
+- ISO 27001:2022
 - ISO 27018:2019
 - ISO 26262:2023
 - Health Insurance Portability and Accountability Act (HIPAA)
@@ -350,6 +356,6 @@ Azure DevOps supports enforcing certain types of conditional access policies (fo
 - [Data locations for Azure DevOps](data-location.md)
 - [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement)
 - [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html)
-- [Features and services included with Azure DevOps](../../user-guide/services.md)
+- [Features and services included with Azure DevOps](../../user-guide/what-is-azure-devops.md)
 - [Azure Trust Center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)

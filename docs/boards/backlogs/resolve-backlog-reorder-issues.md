@@ -2,14 +2,15 @@
 title: Resolve nest, display, and reorder issues for work items
 titleSuffix: Azure Boards
 description: Learn how to fix reordering and nesting issues for work items in Azure Boards. Resolve error messages and maintain a natural hierarchy for your backlog.
-ms.custom: boards-backlogs
+ms.custom: boards-backlogs, copilot-scenario-highlight
+ai-usage: ai-assisted
 ms.service: azure-devops-boards
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2024
+ms.date: 12/03/2025
 #customer intent: as a team member or lead, I want to address warnings or errors that occur in Azure Boards regarding reordering or nesting work items.
 ---
 
@@ -21,6 +22,10 @@ ms.date: 10/14/2024
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
 When you reorder, nest, and display work items, Azure Boards expects a [natural hierarchy](#natural-hierarchy-for-work-item-types). The natural hierarchy breaks when you create same-category or same-type links between work items. For example, parent to child links that are bug to bug or user story to user story or *requirements* category to *task* category. Use this article to address error messages when you add links that aren't in the natural hierarchy.
+
+## Prerequisites
+
+[!INCLUDE [temp](../includes/prerequisites.md)]
 
 ## You cannot reorder work items and some work items might not be shown
 
@@ -72,20 +77,12 @@ This message indicates that the **In Progress** filter for the backlog is turned
 
 When you refresh your browser, the work items display based on your selected filters. To reset the filters, do the following steps.
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 1. Open your backlog.
 1. From the **View options** selector, choose to show or hide **In Progress items**.
 
    :::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="Screenshot of View options selector, In progress control, version 2020 and later.":::
-
-::: moniker-end
-::: moniker range="azure-devops-2019"
-
-1. Open your backlog.
-1. From the **View options** selector, choose to show or hide **In Progress items**.
-
-   :::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="Screenshot of View options selector, In progress control, version 2019.":::
 
 ::: moniker-end
 
@@ -97,7 +94,7 @@ Hide **In Progress items** when you want to forecast work. For more information,
 >
 > - For more information, see [Configure your backlog view](configure-your-backlog-view.md) and [Add custom work item types](../../organizations/settings/work/add-custom-wit.md).
 > - For issues that might occur with multi-team ownership, see [Exercising select features with shared area paths](../plans/configure-hierarchical-teams.md#op-issues).
-> - To reorder work items on your backlog, have at least Basic access. If you have Stakeholder access, you can't reorder work items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> - To reorder work items on your backlog, have at least [**Basic** access](../../organizations/security/access-levels.md). If you have Stakeholder access, you can't reorder work items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ## Natural hierarchy for work item types
 
@@ -152,13 +149,43 @@ When tasks and bugs link to their parent requirements, they group them correctly
 
 :::image type="content" source="media/resolve/bugs-appear-on-taskboard.png" alt-text="Screenshot of Sprint board with leaf node task.":::
 
+## Use AI to troubleshoot backlog reordering issues
+
+The following example prompt for Copilot Chat helps you troubleshoot Azure Boards backlog reordering and hierarchy problems. Copy and paste this prompt into Copilot Chat, replacing the placeholders with your specific information.
+
+For the best AI assistance, include specific details like the exact error message, work item IDs mentioned in errors, your process template, and team configuration settings.
+
+```copilot-prompt
+I'm having this Azure Boards backlog reordering issue: [PASTE YOUR ERROR MESSAGE OR DESCRIBE THE PROBLEM]
+
+Backlog configuration details:
+- Process template: [Agile/Scrum/CMMI/Custom]
+- Error message: [EXACT ERROR TEXT if applicable]
+- Work item IDs mentioned: [SPECIFIC WORK ITEM IDs from error messages]
+- Work item types involved: [User Story/Bug/Task/Feature/Epic/etc.]
+- Bug tracking setting: [Track bugs as Requirements/Tasks/Neither]
+- Link relationships: [Parent-Child/Related links between which work items]
+- Backlog level: [Product/Features/Epics backlog where issue occurs]
+- View filters applied: [In Progress items shown/hidden, other filters]
+- Recent changes: [New links created, work items moved, team settings changed]
+
+Can you help me troubleshoot this issue? Please provide step-by-step instructions to:
+1. Identify why the work item hierarchy is preventing reordering
+2. Fix the problematic parent-child links or category conflicts
+3. Restore proper backlog ordering functionality while maintaining valid relationships
+
+Context: This is for Azure Boards backlog management. The issue might be related to same-category hierarchies, natural hierarchy violations, filter settings, or work item link conflicts.
+```
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
+
 ## Frequently asked questions (FAQs)
 
 ### Q: Is there a workaround to display intermediate nodes within a hierarchy?
 
 A: No, not at this time. You can always check the entire list of items assigned to a sprint when you select **Create query**.
 
-## Related articles
+## Related content
 
-- [Set up your backlogs and boards](set-up-your-backlog.md)  
-- [Learn about Kanban boards](../boards/kanban-overview.md)  
+- [Create and manage your backlog](create-your-backlog.md)  
+- [Learn about Kanban boards](../boards/kanban-overview.md)

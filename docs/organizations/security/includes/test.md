@@ -7,7 +7,6 @@ ms.date: 09/15/2021
 ---
  
 
-
 :::row:::
    :::column span="2":::
       **Permission** 
@@ -151,8 +150,7 @@ ms.date: 09/15/2021
    :::column-end:::
 :::row-end:::
 
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 > [!NOTE]   
 > The **Change work item type** permission doesn't apply to test-specific work items. Even if you choose this feature from the work item form, changing the work item type is disallowed. 
 ::: moniker-end

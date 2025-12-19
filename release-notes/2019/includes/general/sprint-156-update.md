@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 
 ### New UI to request access to an organization

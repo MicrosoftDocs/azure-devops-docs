@@ -4,16 +4,12 @@ titleSuffix: Azure Repos
 description: Steps for how to grant or restrict access to a Git repository feature. 
 ms.service: azure-devops-repos
 ms.topic: quickstart
-ms.author: vijayma
-author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 04/14/2021
 ms.subservice: azure-devops-repos-git
 ---
 
-
 # Set Git repository permissions 
-
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -24,11 +20,9 @@ Manage access to repositories to lock down who can contribute to your source cod
  
 For guidance on who to provide greater permission levels, see [Manage access using permissions](../../organizations/security/restrict-access.md).
 
-
 ## Prerequisites
 
-- A project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises Azure DevOps](../../organizations/projects/create-project.md).
-- Be a member of the [**Project Administrators** Group](../../organizations/security/change-project-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories.  
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ::: moniker range="azure-devops"
 
@@ -40,7 +34,6 @@ To contribute to the source code, have **Basic** access level or greater. Users 
 
 To contribute to the source code, have **Basic** access level or greater. Users granted **Stakeholder** access have no access to source code. For more information, see [About access levels](../../organizations/security/access-levels.md).
 ::: moniker-end
-
 
 ## Default repository permissions  
 
@@ -56,13 +49,11 @@ Starting with [Azure DevOps sprint 224](/azure/devops/release-notes/2023/sprint-
 
 <a id="git-repository">  </a>
 
-
 ::: moniker range="azure-devops"
 
 ## Open Security for a repository
 
 You set Git repository permissions from **Project Settings>Repositories**. 
-
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -88,7 +79,7 @@ You can manage access to a repository by setting the permission state to **Allow
 
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -111,10 +102,6 @@ You can manage access to a repository by setting the permission state to **Allow
 
 ::: moniker-end
 
-
-
-
-
 ::: moniker range="azure-devops"
 
 ## Change permissions for a security group
@@ -130,7 +117,6 @@ To set permissions for a custom security group, have defined that group previous
 	:::image type="content" source="media/git-permissions/change-permissions.png" alt-text="Screenshot showing three permissions changed for the Contributors group.":::
 
 1. When done, navigate away from the page. The permission changes are automatically saved for the selected group. 
-
 
 ## Set permissions for a specific user
 
@@ -160,9 +146,6 @@ To set permissions for a custom security group, have defined that group previous
 
 ::: moniker-end
 
-
-
-
 ## Exempt from policy enforcement and bypass policy permissions
 
 There are many scenarios where you have the occasional need to bypass a branch policy. For example, when reverting a change that caused a build break or applying a hotfix in the middle of the night. Previously, the **Exempt from policy enforcement** permission helped teams manage which users were granted the ability to bypass branch policies when completing a pull request. However, that permission also granted the ability to push directly to the branch, bypassing the PR process entirely. 
@@ -176,7 +159,6 @@ By granting the first permission and denying the second, a user can use the bypa
  
 > [!NOTE]
 > This change does not introduce any behavior changes. Users that were formerly granted **Allow** for **Exempt from policy enforcement** are granted **Allow** for both new permissions, so they'll be able to both override completion on PRs and push directly to branches with policies.
-
 
 ## Related articles
 

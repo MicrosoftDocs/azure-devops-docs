@@ -4,6 +4,7 @@ description: See the Sprint 186 feature updates for Azure Artifacts, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 05/04/2021
+ms.topic: release-notes
 ---
 
 # Azure Artifacts - Sprint 186 Update

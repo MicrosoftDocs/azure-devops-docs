@@ -6,29 +6,26 @@ ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 07/12/2023
 ---
 
 # Add status badges for your GitHub repo 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
  
 You can add Markdown syntax to a GitHub repo `README.md` file to display your board status in that repo. Show the status by adding the syntax you choose from your board settings.  
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]   
-> Requires Azure DevOps Server 2019 Update 1 or later version. 
-::: moniker-end
 
 The syntax shown works whether you [connected your project to a GitHub.com or your GitHub Enterprise Server repository](connect-to-github.md). For GitHub Enterprise Server, your server must be network accessible to Azure DevOps Services. 
 
 ## Prerequisites 
 
-* **Permissions**: Be a [team administrator](../../organizations/settings/add-team-administrator.md) for the team's settings you want to modify or be a member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group.
-* **Integration with GitHub**: [Connect your project to the GitHub repository](index.md) where the commits and pull requests you want to link to/from exist. 
-* **Board configuration**: Have a board you want to configure. When you add a team, you add a board for that team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
-* **Repository access**: To add the status badge to the GitHub.com repository, be a contributor of the repository.  
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | [Team administrator](../../organizations/settings/add-team-administrator.md) for the team's settings you want to modify or  member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group. |
+| **Integration with GitHub** | [Connect your project to the GitHub repository](index.md) where the commits and pull requests you want to link to or from exist. |
+| **Board configuration** | A board you want to configure. When you add a team, you add a board for that team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). |
+| **Repository access** | To add the status badge to the GitHub.com repository: Contributor to the repository. |
 
 ## Add a status badge
 
@@ -40,12 +37,10 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
 3. Select **Status badge** and then check or uncheck the **Allow anonymous users to access the status badge**. When it's unchecked, users who aren't signed in can still view the status badge.
 
-   ::: moniker range=">= azure-devops-2020"
+   ::: moniker range="<=azure-devops"
    :::image type="content" source="media/badges/status-badge-s188.png" alt-text="Screenshot of board Settings dialog, Status badge tab.":::
    ::: moniker-end
-   ::: moniker range="azure-devops-2019"
-   :::image type="content" source="media/badges/status-badge.png" alt-text="Screenshot of board Settings dialog, Status badge tab, Azure DevOps Server 2019.":::
-   ::: moniker-end
+   
 
 4. Choose the badge type you want and choose the :::image type="icon" source="../../media/icons/copy.png" border="false"::: copy icon to copy the Markdown syntax for the badge. 
 
@@ -69,7 +64,7 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
 	You should see the same preview image that you selected with values that correspond to your board. 
 
-## Related articles
+## Related content
 
 - [Add columns to your board](../boards/add-columns.md)
 - [Customize cards](../boards/customize-cards.md)

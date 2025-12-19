@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use annotate to a see changes in earlier versions of a file in Team Foundation Version Control using Visual Studio.
 ms.assetid: 34e29de4-0972-4e32-9d3d-26dc09f00713
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/30/2024
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -20,13 +20,13 @@ In Team Foundation Version Control (TFVC), you can use annotate in Visual Studio
 
 ## Prerequisites
 
-- Install [Visual Studio](https://visualstudio.microsoft.com/downloads).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission set to **Allow** for the repository.     |
+|**Project** |An Azure DevOps [project with a TFVC repository](./share-your-code-in-tfvc-vs.md#connect-to-your-project).   |  
+| **Tools** |[Visual Studio](https://visualstudio.microsoft.com/downloads).|
 
-- An Azure DevOps project with a TFVC repository. If you don't have a project, create one. For more information, see [Create a project](../../organizations/projects/create-project.md).
-
-- Have the **Read** permission set to **Allow** for the repository. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
-
-- Connect to the team project. For more information, see [Connect to a your project](./share-your-code-in-tfvc-vs.md#connect-to-your-project).
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ### To annotate a file
 

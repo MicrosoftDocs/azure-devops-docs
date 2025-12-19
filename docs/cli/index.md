@@ -1,55 +1,81 @@
 ---
-title: Learn about Azure DevOps command line interface extension
+title: Get Started with Azure DevOps CLI
 titleSuffix: Azure DevOps 
-description: Use Azure DevOps extension command line interface 
+description: Install the Azure DevOps extension for the Azure CLI. Learn how to sign on, configure defaults, access help, and open Azure DevOps Services in a browser.
 ms.topic: quickstart
 ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/17/2020
+ms.update: 90-days
+ms.date: 09/18/2025
+#customer intent: As a project team member, I want to set up Azure DevOps CLI and understand how to access pipelines, boards, repos, and artifacts. 
 ---
 
-# Get started with Azure DevOps CLI
+# Quickstart: Get started with Azure DevOps CLI
 
-[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-With the Azure DevOps extension for Azure Command Line Interface (CLI),  you can manage many Azure DevOps Services from the command line. CLI commands enable you to streamline your tasks with faster and flexible interactive canvas, bypassing user interface workflows.
+This quickstart shows how to install and start using the Azure DevOps extension for the Azure Command Line Interface (CLI). The extension adds commands for managing Azure DevOps Services from the command line so you can script and automate common tasks.
 
-> [!NOTE]  
-> The Azure DevOps Command Line Interface (CLI) is only available for use with Azure DevOps Services. The Azure DevOps extension for the Azure CLI does not support any version of Azure DevOps Server. 
+What you'll learn:
+- How to install the Azure DevOps extension for Azure CLI.
+- How to sign in, configure defaults, and get help for commands.
+- How to open Azure DevOps in a browser from the CLI.
 
-To start using the Azure DevOps extension for Azure CLI, perform the following steps:
-
-1. Install Azure CLI: Follow the instructions provided in [Install the Azure CLI](/cli/azure/install-azure-cli) to set up your Azure CLI environment. At a minimum, your Azure CLI version must be 2.10.1. You can use `az --version` to validate.
-
-2. Add the Azure DevOps extension:
-
-    ```
-	az extension add --name azure-devops
-    ```
-
-	You can use `az extension list` or `az extension show --name azure-devops` to confirm the installation.
-
-3. Sign in: Run `az login` to sign in. Note that we support only interactive or log in using user name and password with `az login`. To sign in using a Personal Access Token (PAT), see [Sign in via Azure DevOps Personal Access Token (PAT)](log-in-via-pat.md). 
+Quick steps:
+1. Install Azure CLI (if not already installed).
+2. Add or update the Azure DevOps extension.
+3. Sign in and set default organization/project.
+4. Run `az devops --help` or open an artifact with `--open`.
 
 > [!NOTE]  
-> The Azure DevOps extension does not currently support authenticating with [Managed Identities](../integrate/get-started/authentication/service-principal-managed-identity.md).
+> The Azure DevOps CLI extension works only with Azure DevOps Services (cloud). It doesn't support Azure DevOps Server (on-premises).
 
-4. Configure defaults: We recommend you set the default configuration for your organization and project. Otherwise, you can set these within the individual commands themselves.  
+## Install and update
 
-    ```
-	az devops configure --defaults organization=https://dev.azure.com/contoso project=ContosoWebApp
-    ```
-
-## Command usage
-
-Adding the Azure DevOps Extension adds `devops`, `pipelines`, `artifacts`, `boards`, and `repos` groups.
-For usage and help content for any command, enter the **-h** parameter, for example:
+1. Install Azure CLI. Follow the steps in [Install the Azure CLI](/cli/azure/install-azure-cli). After installation, verify your version:
 
 ```azurecli
-az devops -h
+az --version
+```
+
+1. Add the Azure DevOps extension.
+
+   ```azurecli
+   az extension add --name azure-devops
+   ```
+
+   If you already have the extension installed, and want to make sure you have the latest version, run the update command:
+
+   ```azurecli
+   az extension update --name azure-devops
+   ```
+
+1. To confirm the installation, run the command `az extension list` or `az extension show --name azure-devops`.
+
+1. To sign in, run the `az login` command. Azure CLI supports only interactive sign-in using user name and password with `az login`. To sign in using a Personal Access Token (PAT), see [Sign in via Azure DevOps PAT](log-in-via-pat.md).
+
+   > [!NOTE]  
+   > The Azure DevOps extension doesn't currently support authenticating by using [Managed Identities](../integrate/get-started/authentication/service-principal-managed-identity.md).
+
+1. We recommend that you set the default configuration for your organization and project. Otherwise, you can specify the values in the individual commands themselves.  
+
+   ```azurecli
+   az devops configure --defaults organization=https://dev.azure.com/contoso project=ContosoWebApp
+   ```
+
+[!INCLUDE [enable-mcp-server](../boards/includes/enable-mcp-server.md)]
+
+## Use commands
+
+Adding the Azure DevOps Extension adds `devops`, `pipelines`, `artifacts`, `boards`, and `repos` groups.
+
+For usage and help content for any command, specify the `--help` parameter, for example:
+
+```azurecli
+az devops --help
 ```
 
 ```output
@@ -83,19 +109,17 @@ Commands:
 
 ## Open items in browser
 
-You can use `--open` switch to open any artifact in Azure DevOps portal in your default browser.
-
-For example :
+You can use `--open` parameter to open any artifact in Azure DevOps portal in your default browser.
 
 ```azurecli
 az pipelines build show --id 1 --open
 ```
 
-This command shows the details of build with `id 1` on the command-line and also opens it in the default browser.
+This command shows the details of the build with `--id 1` in the Command Prompt window and also opens it in the default browser.
 
-## Related articles
+## Related content
 
-- [Sign in via Azure DevOps Personal Access Token (PAT)](log-in-via-pat.md)
-- [Output formats](/cli/azure/format-output-azure-cli)
-- [Index to az devops examples](quick-reference.md)
+- [Sign in via Azure DevOps personal access token](log-in-via-pat.md)
+- [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
+- [Index to az devops CLI examples](quick-reference.md)
 - [Azure DevOps CLI Extension GitHub Repo](https://github.com/Azure/azure-devops-cli-extension)

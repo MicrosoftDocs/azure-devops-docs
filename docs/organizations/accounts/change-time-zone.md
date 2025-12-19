@@ -5,7 +5,7 @@ ms.custom:
 description: Learn how to change the time zone for your organization or user profile.
 ms.subservice: azure-devops-organizations
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 10/22/2024
@@ -74,7 +74,7 @@ To change your user profile time zone, do the following steps:
 
 Your user profile time zone is updated.
 
-## Related articles
+## Related content
 
 - [Learn about time zone settings and usage](../settings/timezone-settings-usage.md)
 - [Set user preferences](../settings/set-your-preferences.md)

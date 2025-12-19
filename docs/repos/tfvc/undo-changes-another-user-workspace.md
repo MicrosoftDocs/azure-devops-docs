@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use Team Foundation Version Control commands to remove a lock that another user has placed on a file or to delete the workspace of another user.
 ms.assetid: 038a4364-0a70-436e-95cc-24735d0ad9e7
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/06/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -24,7 +24,11 @@ Occasionally a team member is blocked from checking in a file that someone else 
 
 ## Prerequisites
 
-To undo pending changes in another user's workspace, have the **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Administer workspaces** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Undo the changes in another user's workspace
 

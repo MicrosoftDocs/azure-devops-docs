@@ -8,7 +8,7 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'   
+monikerRange: "<=azure-devops"
 ms.date: 12/14/2022
 ---
 
@@ -17,7 +17,6 @@ ms.date: 12/14/2022
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to create a report that shows how long your pipeline typically takes to complete successfully. The daily trend of pipeline duration report is similar to the **Pipeline rate trend** chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
-
 
 The following image shows an example of a duration trend report.
 
@@ -29,7 +28,6 @@ The following image shows an example of a duration trend report.
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
 
 ## Sample queries
 
@@ -184,7 +182,6 @@ The following table describes each part of the query.
  
  
 
-
 ### Filter by pipeline ID, rather than Pipeline Name
 
 Pipelines can be renamed. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
@@ -192,7 +189,6 @@ Pipelines can be renamed. To ensure that the Power BI reports don't break when t
 ```
 https://dev.azure.com/{organization}/{project}/_build?definitionId= `{pipelineid}`
 ```
-
 
 #### [Power BI query](#tab/powerbi/)
 

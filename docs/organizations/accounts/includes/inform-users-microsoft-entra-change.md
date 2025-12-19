@@ -11,7 +11,7 @@ When you inform your users of the completed change, provide them with the follow
 
 1. Sign out of Azure DevOps.
 2. Clear browser cache.
-    If you use Visual Studio or the Git command-line too, clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory). Delete the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine.
+    If you use Visual Studio or the Git command-line too, clear the cache for the [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager/). Delete the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine.
 3. Sign in to Azure DevOps using Microsoft Entra ID or work credentials.
 4. Reconfigure any personal access tokens (PATs) or SSH keys, if necessary.
 

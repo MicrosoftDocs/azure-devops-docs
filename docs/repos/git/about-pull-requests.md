@@ -4,9 +4,7 @@ titleSuffix: Azure Repos
 description: Learn about pull request guidelines, management, and considerations when working in an Azure Repos Git repository.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
-ms.topic: conceptual
-ms.author: vijayma
-author: vijayma
+ms.topic: overview
 ms.date: 11/05/2021
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
@@ -47,14 +45,12 @@ This article describes pull request guidelines and management considerations. Fo
 > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
 - To view or review PRs, be a member of an Azure DevOps project with at least **Basic** access. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, be a member of the **Readers** security group or have the corresponding permissions.
 - To create and complete a PR, be a member of the **Contributors** security group or have the corresponding permissions.
 ::: moniker-end
-
-
 
 For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
@@ -135,7 +131,6 @@ The following table summarizes the policies you can define to customize a branch
    :::column-end:::
 :::row-end:::
 
-
 :::row:::
    :::column span="2":::
       [**Check for comment resolution**](branch-policies.md#check-comment-resolution)
@@ -148,7 +143,7 @@ The following table summarizes the policies you can define to customize a branch
    :::column-end:::
 :::row-end:::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       [**Limit merge types**](branch-policies.md#limit-merge-types)

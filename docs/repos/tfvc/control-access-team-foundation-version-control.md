@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: See how to control access and permissions for Team Foundation Version Control.
 ms.assetid: cccf50be-5503-4155-974b-c75b57888603
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/12/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -23,7 +23,11 @@ Permission settings are in the form of either **Allow** or **Deny**. **Deny** al
 
 ## Prerequisites
 
-To complete this task, have your **Manage permissions** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Manage permissions** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ### To set permissions for users or groups
 

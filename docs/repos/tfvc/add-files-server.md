@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: See how to use Visual Studio to add files to Team Foundation Version Control.
 ms.assetid: 9b457eb0-9cdf-438d-935d-ceac7ce2201a
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/06/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -17,9 +17,9 @@ ms.subservice: azure-devops-repos-tfvc
 
 Adding files to version control is often automatic when you use Visual Studio **Solution Explorer** and your project is under version control. However, in some cases, you have to take extra steps to add files and projects to version control.
 
-## Prerequisite
+## Prerequisites
 
-Before you can add files to version control in Visual Studio, [set up the workspace on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).
+[!INCLUDE [contributor-only-prerequisites](includes/contributor-only-prerequisites.md)]
 
 > [!IMPORTANT]
 > These procedures apply only when you use a [local workspace](decide-between-using-local-server-workspace.md). When you use a local workspace, new files are automatically detected as pending changes. Conversely, files you save in a server workspace add and check in without showing as pending changes.

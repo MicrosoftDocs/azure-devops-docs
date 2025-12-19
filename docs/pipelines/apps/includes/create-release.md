@@ -13,13 +13,13 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 1. Do one of the following to start creating a release pipeline:
 
-   * If you've just completed a CI build (see above), choose the link (for example, _Build 20170815.1_)
+   * If you've completed a CI build, choose the link (for example, _Build 20170815.1_)
      to open the build summary. Then choose **Release** to start a new release pipeline that's automatically linked to the build pipeline.
 
-   * Open the **Releases** tab in **Azure Pipelines**, open the **+** drop-down
+   * Open the **Releases** tab in **Azure Pipelines**, open the **+** drop down
      in the list of release pipelines, and choose **Create release pipeline**.
 
-1. The easiest way to create a release pipeline is to use a template. If you are deploying a Node.js app, select the **Deploy Node.js App to Azure App Service** template.
+1. The easiest way to create a release pipeline is to use a template. If you're deploying a Node.js app, select the **Deploy Node.js App to Azure App Service** template.
    Otherwise, select the **Azure App Service Deployment** template. Then choose **Apply**.
 
    > The only difference between these templates is that Node.js template configures the task to generate a **web.config** file containing a parameter that starts the **iisnode** service.
@@ -36,8 +36,8 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 1. Open the **Tasks** tab and, with **Stage 1** selected, configure the task property variables as follows:
 
    * **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
-     If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see
-     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
+     If you're using Azure Pipelines and if you see an **Authorize** button next to the input, select it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you don't see
+     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/azure-resource-manager-alternate-approaches.md) to manually set up the connection.
 
    * **App Service Name**: Select the name of the web app from your subscription.
 
@@ -47,7 +47,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 <h2 id="deploy">Create a release to deploy your app</h2>
 
-You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
+You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This results in deploying the build:
 
 1. Choose **+ Release** and select **Create a release**.
 

@@ -35,12 +35,12 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 ## Prerequisites
 
-- **Project access**: Be a [project member](../../organizations/security/add-users-team-project.md)
-* **Permissions**: 
-  * Be a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
-  * To view or modify work items, have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-* **Access levels**: To add work items and exercise all board features, have at least **Basic** access.
-* **Sprint backlog**: If you haven't yet, [add tasks to your sprint backlog](add-tasks.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
+| **Permissions** | - Member of the **Contributors** or **Project Administrators** security group. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
+| **Access levels** | To add work items and exercise all board features: At least [**Basic** access](../../organizations/security/access-levels.md). |
+| **Sprint backlog** | [Tasks on your sprint backlog](add-tasks.md). |
 
 ::: moniker range=">= azure-devops-2022"
 
@@ -49,16 +49,9 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-
-> [!NOTE]  
-> Users with **Stakeholder** access can't add tasks, update fields displayed on cards, drag-and-drop tasks to update status, or use the **Planning** pane to change the sprint assignment.   
-
-::: moniker-end
-
 ## Open the sprint Taskboard for your team
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your project, open the sprint backlog for your team.
 
@@ -83,32 +76,11 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. From your project, open the sprint backlog for your team. (1) Check that you selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows how to Open the sprint Taskboard for a team, Azure DevOps 2019.](media/taskboard/open-taskboard-agile.png)
-
-	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows the sprint backlog team selector options, Azure DevOps 2019.](media/add-tasks/team-selector-sprints-agile.png)
-
-2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want.
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot that shows how to Choose another sprint, Azure DevOps 2019.](media/add-tasks/select-specific-sprint-agile.png)
-
-	The system lists only those sprints selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md).
-
-::: moniker-end
-
 ## Customize the Taskboard
 
 Each team can customize their **Taskboard** in the following ways: 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 - [Add or rename columns](customize-taskboard.md#add-columns).
 - [Customize cards](customize-taskboard.md#choose-fields) to show another fields or change card color based on specified field criteria.
@@ -116,32 +88,9 @@ Each team can customize their **Taskboard** in the following ways:
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
-
-- [Customize cards](../../boards/boards/customize-cards.md) that appear on the **Taskboard** to show other fields.
-- [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md). Your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they show up on your sprint backlogs and **Taskboards** at the same level as tasks.
-
-Unlike the board for a product backlog, you can't add another columns to the **Taskboard** via a team configuration setting. Instead, you need to modify the workflow definitions for the task work item type used by the project. Workflow customizations update the columns for the **Taskboard** for all teams within the project.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 An administrator can customize the **Taskboard** for all teams in the following ways:  
-- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
-- [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-An administrator can customize the **Taskboard** for all teams in the following ways based on the process model selected for the project:
-
-**Inherited process model:**
-- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
-- [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
-
-**On-prem XML process model:** 
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
 - [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
 
@@ -171,7 +120,7 @@ During your daily Scrum, you can filter your **Taskboard** to help focus on item
 *	Group by Backlog items or Group by stories to monitor progress of your product backlog items, stories, requirements, or bugs.
 *	Group by People when you want to monitor progress of individual team members.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 > [!NOTE]
 > Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the background.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
 ::: moniker-end
@@ -277,7 +226,6 @@ You can reduce the number of items on the Taskboard by moving them to the backlo
 
 ![Screenshot that shows multi-select items from the sprint backlog. ](media/sprint-backlog-multi-select-non-sequential-items.png)
 
-
 ::: moniker range="< azure-devops"
 Or, if your project uses an On-premises XML process, you can [increase the maximum number of allowed items](../../reference/customize-work.md#limits).
 ::: moniker-end
@@ -287,7 +235,7 @@ Or, if your project uses an On-premises XML process, you can [increase the maxim
 > [!div class="nextstepaction"]
 > [End of sprint activities](end-sprint-activities.md) 
 
-## Related articles
+## Related content
 
 - Assign backlog items to a sprint using [Assign backlog items to a sprint](assign-work-sprint.md)
 - Interactively filter backlogs, boards, queries, and plans with [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)

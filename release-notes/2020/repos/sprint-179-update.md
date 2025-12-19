@@ -4,6 +4,7 @@ description: See the Sprint 179 feature updates for Azure Repos, including next 
 author: sid-ah
 ms.author: simerzou
 ms.date: 10/21/2020
+ms.topic: release-notes
 ---
 
 # Azure Repos - Sprint 179 Update

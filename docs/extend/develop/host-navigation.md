@@ -3,7 +3,7 @@ ms.subservice: azure-devops-ecosystem
 title: Host Page Navigation | Extensions for Azure DevOps
 description: Use host navigation to modify host URL hash or reload page for Azure DevOps.
 ms.assetid: 9B188838-55FD-98A6-9062-2652C06BF381
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: See how TFVC administrators can enable and disable check-in policies in Team Foundation Version Control (TFVC).
 ms.assetid: 629bf67c-22c5-4047-92b8-aa8f7c201cc9
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/01/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -22,7 +22,11 @@ Prior to enabling or disabling check-in policies, you must first create the chec
 
 ## Prerequisites
 
-To complete this procedure, have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Edit project-level information** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 
 ## Enable or disable a check-in policy

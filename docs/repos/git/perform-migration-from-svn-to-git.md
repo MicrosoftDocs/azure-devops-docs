@@ -1,11 +1,12 @@
 ---
 title: Migrate from Subversion (SVN) to Git
 description: Learn how to migrate from Subversion (SVN) to Git, including history
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: azure-devops-repos
 monikerRange: '<= azure-devops'
 ms.date: 02/24/2022
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 # Learn how to migrate from Subversion (SVN) to Git, including history
@@ -27,8 +28,11 @@ It's likely going to be complex if:
 
 There are several ways to migrate from SVN to Git. The approach outlined in this article is based on using [git-svn](https://git-scm.com/docs/git-svn), a Git extension, which can be used to check out a Subversion repository to a local Git repository and then push changes from the local Git repository back to the Subversion repository. These steps give a detailed overview of the process for migrating from SVN to Git in a Windows environment, without synchronizing back to the original SVN repository. The result will be a bare Git repository for sharing with the rest of your team.
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 > [!NOTE]
->
 > Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and [plan your team's migration](/devops/develop/git/centralized-to-git). After you've prepared, you can begin the migration.
 
 The high-level workflow for migrating from SVN to Git is as follows:

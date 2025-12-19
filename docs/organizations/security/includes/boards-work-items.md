@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 02/02/2023
 ---
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 > [!NOTE]   
 > You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you can use the [Analytics Service](../../../report/powerbi/what-is-analytics.md) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](/previous-versions/azure/devops/report/admin/disable-data-warehouse).
@@ -89,7 +89,7 @@ ms.date: 02/02/2023
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       **Change work item type**

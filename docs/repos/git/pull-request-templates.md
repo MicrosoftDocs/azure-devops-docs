@@ -4,11 +4,9 @@ titleSuffix: Azure Repos
 description:  Learn how to standardize pull request descriptions using pull request templates
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
-ms.topic: conceptual
-ms.author: vijayma
-author: vijayma
+ms.topic: how-to
 ms.date: 12/10/2018
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.subservice: azure-devops-repos-git
 ---
 
@@ -22,6 +20,10 @@ This article shows you how to get started with pull request templates.
 
 >[!NOTE]
 >Pull request templates can provide guidance, but are advisory only. Use branch policies to enforce best practices such as requiring pull requests for key branches like main, requiring a successful build, and enforcing required reviewers. For more information, see [branch policies](branch-policies-overview.md).
+
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## What is a pull request template?
 

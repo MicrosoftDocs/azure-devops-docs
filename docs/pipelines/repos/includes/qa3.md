@@ -2,8 +2,6 @@
 ms.topic: include
 ms.service: azure-devops-pipelines
 ms.manager: mijacobs
-ms.author: vijayma
-author: vijayma
 ms.date: 07/07/2020
 ---
 

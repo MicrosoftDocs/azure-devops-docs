@@ -9,7 +9,6 @@ ms.subservice: azure-devops-repos-git
 
 <a name="pcbs-has-read-by-default"></a>
 
-
 :::row:::
    :::column span="2":::
       **Permission** 
@@ -97,8 +96,7 @@ ms.subservice: azure-devops-repos-git
    :::column-end:::
 :::row-end:::
 
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       **Bypass policies when completing pull requests**, **Bypass policies when pushing**, **Force push** (rewrite history, delete branches and tags)    
@@ -121,5 +119,4 @@ ms.subservice: azure-devops-repos-git
 ---
 
  
-
 

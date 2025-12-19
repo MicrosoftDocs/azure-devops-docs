@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: tutorial
 ms.date: 06/03/2024
 ---
@@ -16,15 +16,9 @@ ms.date: 06/03/2024
 
 [!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[**Agile**](../../../boards/work-items/guidance/agile-process.md), [**Basic**](../../../boards/get-started/plan-track-work.md), [**Scrum**](../../../boards/work-items/guidance/scrum-process.md), or [**CMMI**](../../../boards/work-items/guidance/cmmi-process.md). 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[**Agile**](../../../boards/work-items/guidance/agile-process.md), [**Scrum**](../../../boards/work-items/guidance/scrum-process.md), or [**CMMI**](../../../boards/work-items/guidance/cmmi-process.md). 
 
 ::: moniker-end
 
@@ -39,8 +33,9 @@ You can only customize inherited processes. Any changes you make to the inherite
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)]
-- **Project requirement:** Ensure that you have a [project that uses an inherited process](../work/manage-process.md). For more information, see [Create an inherited process](manage-process.md#create-an-inherited-process).
 
 [!INCLUDE [temp](../includes/automatic-update-project.md)]
 
@@ -193,14 +188,11 @@ We recommend that you create a test project and apply your customized inherited 
 
 1. From the **Process** page, select the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="<=azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2019"
-	> [!div class="mx-imgBorder"]  
-	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
-	::: moniker-end
+	
 
 2. Enter information into the form, and then select **Create**. For more information, see [Create a project](../../projects/create-project.md).
 
@@ -229,7 +221,7 @@ For more information, see [Change a project's process](manage-process.md#migrate
 
 <a id="process-rest-api">  </a>
 
-## Related articles
+## Related content
 
 - [Use the REST API to manage processes](/rest/api/azure/devops/processes/processes/list)
 - [Create an inherited process and change the project to use that process](manage-process.md). 

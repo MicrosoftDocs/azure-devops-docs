@@ -4,6 +4,7 @@ description: See the Sprint 200 feature updates for Azure Artifacts, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 02/28/2022
+ms.topic: release-notes
 ---
 
 # Azure Artifacts - Sprint 200 Update

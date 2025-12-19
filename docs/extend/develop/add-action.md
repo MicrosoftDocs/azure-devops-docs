@@ -4,7 +4,7 @@ ms.custom: devx-track-js
 title: Add an Action | Extensions for Azure DevOps
 description: Add an action for your extension that extends Azure DevOps.
 ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -19,10 +19,10 @@ In this example, we add an action to the query context menu in the work item que
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-## Prerequisites for this article
+## Prerequisites
 
-- You need to create a web app for your action, which can be found in the [hub example](./add-hub.md).
-- If you haven't, take a look at the [write your first extension tutorial](../get-started/node.md) to learn about the basics.
+- [Develop a web extension](../get-started/node.md).
+- [Create a web app for your action](./add-hub.md).
 
 ## Update extension manifest file
 

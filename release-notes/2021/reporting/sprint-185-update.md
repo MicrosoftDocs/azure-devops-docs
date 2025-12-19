@@ -4,6 +4,7 @@ description: See the Sprint 185 feature updates for Azure reporting, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 04/13/2021
+ms.topic: release-notes
 ---
 
 # Reporting - Sprint 185 Update

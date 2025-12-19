@@ -4,11 +4,12 @@ description: Learn about managing failure type in Azure Test Plans. You can add,
 ms.assetid: 
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: overview
 ms.author: jeom
 author: raviLiftr
 monikerRange: 'azure-devops'
 ms.date: 08/25/2023
+ms.update-cycle: 1095-days
 ---
 
 # Manage test failure type
@@ -16,6 +17,10 @@ ms.date: 08/25/2023
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 Azure Test Plans provides the functionality to customize the failure types of any test case beyond the default values. A **failure type** is an artifact that helps to mark test case failures into defined categories such as **regression issue** or **known issue**. While this categorization of failure types is helpful, users might want to add their own custom failure type beyond the default values, which creates a more customized experience for specific user needs in the Azure DevOps project. This article walks through the steps of defining a custom failure type using the new REST API provided. 
+
+## Prerequisites
+
+[!INCLUDE [prerequisites](includes/prerequisites.md)] 
 
 ## How to view the default failure types
 

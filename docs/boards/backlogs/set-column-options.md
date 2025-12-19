@@ -56,7 +56,7 @@ Specifically, you can do the following actions from the following list views:
       Yes
    :::column-end:::
 :::row-end::: 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       Add or remove the Parent field
@@ -112,7 +112,6 @@ Specifically, you can do the following actions from the following list views:
 
 > [!TIP]    
 > Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose from the **Sorting** tab of the Column options dialog. While you may be able to add a field to sort on, not all fields are supported. For example, selection of the **Parent**, **History**, **Description**, or other rich-text field results in the display of an error message as you can't sort on these fields. 
-
 
 ::: moniker range="azure-devops"
 You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project. You can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../work-items/work-item-fields.md#review-fields)
@@ -187,7 +186,7 @@ To change the fields use to sort the query results, choose the **Sorting** tab. 
 
 * * *
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Add or remove rollup columns
 
@@ -215,9 +214,9 @@ You can change the column order, column size, or sort options by using the follo
 
 For other keyboard shortcuts, enter **?** to display available shortcuts based on the page you're on. 
 
-## Related articles
+## Related content
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 - [Display rollup progress or totals](display-rollup.md)
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 
@@ -227,9 +226,3 @@ For other keyboard shortcuts, enter **?** to display available shortcuts based o
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-- [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 
-- [Work item field index](../work-items/guidance/work-item-field.md)  
-- [Create managed queries](../queries/using-queries.md)
-
-::: moniker-end

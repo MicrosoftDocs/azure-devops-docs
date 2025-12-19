@@ -23,8 +23,10 @@ You can manage your search extension and indexing status, which include the foll
 
 ## Prerequisites
 
-- [Install and configure Search](install-configure-search.md).
-- Be assigned to the [Project Collection Administrator (PCA)](../../user-guide/project-admin-tutorial.md) role for the organization to manage Search and indexing.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | Member of the [Project Collection Administrators](../../user-guide/project-admin-tutorial.md) group. |
+| **Tasks** | Complete [Install and configure Search](install-configure-search.md). |
 
 ## Manage indexing
 
@@ -33,14 +35,6 @@ Search gets managed by running PowerShell and SQL scripts. All of these scripts 
 The PowerShell scripts require the SQL script files, so ensure the **SqlScripts** folder and its contents are present, along with the PowerShell scripts.
 
 ![Screenshot showing download script files for administration.](media/administration/script-filesv2.png)
-
-> [!NOTE]
-> When you execute scripts, ensure that you run the appropriate script for your version:
-> 
-> * [TFS 2018 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018RTW)
-> * [TFS 2018 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018Update1)
-> * [TFS 2018 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018Update2)
-> * [Azure DevOps Server and TFS 2018 Update 3](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018Update3)
 
 ### Check indexing status
 
@@ -69,28 +63,6 @@ To check the indexing status after Search is configured, or after the extension 
    - **Repositories completed continuous indexing:**  Shows the number of commits processed in the specified time interval. The number might not exactly match the total number of pushes to the repository because merges are committed as they're indexed.
    - **Count of repositories with continuous indexing in progress:** Shows the number of repositories for which the commits are still being processed. These repositories show incomplete results until indexing is completed.
    - **Count of indexing job failures:**  Shows the number of indexing jobs that failed. Repositories associated with these indexing jobs could potentially show incomplete results until later indexing jobs for the same repositories patched the failed indexing.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2022"
-
-1. Execute the `CheckIndexingStatus.ps1` script with **administrative privileges** and enter the following information: 
-
-   - The **SQL server instance name** where the **TFS configuration database** is located.
-   - The name of the **TFS collection database**.
-   - The name of the **TFS configuration database**.
-   - The name of the **collection**.
-   - The number of previous days to check indexing status.
-
-2. Review the following outputs:
-   - **Collection indexing was triggered successfully:** Indicates that indexing is in progress.
-   - **Repositories Indexing Completed:** Lists repositories whose indexing completed and is searchable.
-   - **Repositories in File Discovery Phase:** Repositories where files are yet to be discovered. These files are indexed after this stage.
-   - **Repositories Indexing In Progress:** Repositories that are partially indexed and should be searchable, even if the results are only partial. It might take some time for indexing to complete.
-
-3. Monitor progress:
-   1. Execute the `CheckIndexingStatus.ps1` script at intervals for indexing progress.
-   2. If indexing isn’t working or if the number of pending files doesn't change for some time, execute the `TriggerCollectionIndexing.ps1` script with administrative permission. 
 
 ::: moniker-end
 
@@ -133,6 +105,6 @@ You're prompted to enter the following information.
 
 If you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database, [reindex all your collections](manage-search.md#reindex-a-repository-or-collection).
 
-## Related articles
+## Related content
 
 - [Install and configure Search](install-configure-search.md)

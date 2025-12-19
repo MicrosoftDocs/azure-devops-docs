@@ -1,7 +1,7 @@
 ---
 title: Artifact policy checks
 description: Ensure artifacts adhere to custom policies
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: C7E2BE58-2B01-414D-9A3A-67FA68637B51
 ms.manager: shashban
 ms.author: sandrica

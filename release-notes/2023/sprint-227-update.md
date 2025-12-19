@@ -1,7 +1,7 @@
 ---
 title:  Workload identity federation for Azure Pipelines public preview (public preview)
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 9/14/2023
 description: Workload identity federation for Azure Pipelines is now in public preview
 ---

@@ -2,7 +2,7 @@
 title: Add users to Azure Pipelines
 description: Add users to Azure Pipelines and set permissions.
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/03/2021
 monikerRange: '<= azure-devops'
 ---

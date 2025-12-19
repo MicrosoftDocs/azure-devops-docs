@@ -6,14 +6,14 @@ ms.service: azure-devops-boards
 ms.custom: cross-service
 ms.author: chcomley
 ms.topic: how-to
-monikerRange: '<= azure-devops'
-ms.date: 01/05/2024
+monikerRange: 'azure-devops'
+ms.date: 07/15/2025
 ---
 
 
 # Automate work item state transitions
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Automatically update the state of a work item according to the state of its child tasks. For example, if one task is changed to `Doing`, then the parent gets set to `Doing`. And if all tasks are in `Closed` state, then the parent gets `Closed`.
 
@@ -24,24 +24,17 @@ Rules are established at the team backlog level and are applicable to all work i
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-
-**Permissions:** To configure work item automation rules for your team, be a [Team Administrator](../../organizations/settings/add-team-administrator.md)  or member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group.
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-**Permissions:** To configure team settings, be a [Team Administrator](../../organizations/settings/add-team-administrator.md) or member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group.
-
-::: moniker-end
+| Category | Requirements |
+|:-------------|:------------|
+|**Permissions**| To configure work item automation rules for your team: [Team Administrator](../../organizations/settings/add-team-administrator.md) role or member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group.|
 
 ## Set rules
 
 Do the following steps to set team rules for each backlog level. 
 
 > [!NOTE]
-> Work items must belong to the same team; when you close a task in a different team or project, it doesn't trigger the closure of the parent item.
+> - **Team scope requirement**: Work items must belong to the same team for automation rules to trigger. Closing a task in a different team or project doesn't automatically update the parent item's state.
+> - **Interface limitation**: Work item state automation rules only function when you update items through Boards, Backlogs, or Sprint views. These rules don't trigger when updating work item states from query results or work item forms.
 
 1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
@@ -83,7 +76,7 @@ For answers to the following frequently asked questions, see the [FAQs](../faqs.
 - Can I set up automation rules for user stories but not for features or epics?
 - Why are automation rules not working if the child or parent items belongs to a different team or project?
 
-## Related articles
+## Related content
 
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 - [Configure team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)

@@ -29,6 +29,10 @@ In this article you learn how to:
 > * Revert a branch to a prior state
 > * Undo the changes made by a shared commit
 
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
 ## Discard uncommitted changes to a file
 
 If you've made changes to a file but haven't committed those changes, you can use Git [checkout](https://git-scm.com/docs/git-checkout) to quickly discard the changes and revert the file to its last committed version.

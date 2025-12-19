@@ -4,13 +4,13 @@ description: Learn how to publish NuGet packages to internal and external feeds 
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.topic: tutorial
 ms.date: 09/11/2024
-monikerRange: '>= azure-devops-2020'
+monikerRange: '>= azure-devops-2022'
 "recommendations": "true"
 ---
 
 # Publish NuGet packages with Azure Pipelines (YAML/Classic) 
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts feeds in your organization, in other organizations, and to public registries such as *nuget.org*, using either Classic or YAML pipelines. In this article, you'll learn how to: 
 
@@ -24,16 +24,16 @@ Using Azure Pipelines, you can publish your NuGet packages to Azure Artifacts fe
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
+- Create a [new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - If you're using a self-hosted agent, make sure that it has the [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download) and [NuGet (4.8.0.5385+)](https://www.nuget.org/downloads) installed.
 
+> [!NOTE]
+> If you're using Ubuntu 24.04 or higher, you must use the `NuGetAuthenticate` task with the .NET CLI instead of the *nuget.exe*. See [Support for newer Ubuntu hosted images](/azure/devops/pipelines/tasks/reference/nuget-command-v2#support-for-newer-ubuntu-hosted-images) for more details.
+
 ## Publish NuGet packages to a feed in the same organization
 
-> [!NOTE]
-> To publish your packages to a feed using Azure Pipelines, make sure that both the **Project Collection Build Service** and your project's **Build Service** identities are granted the **Feed Publisher (Contributor)** role assigned in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md) for more details.
-
-::: moniker range="azure-devops-2020"
+::: moniker range="azure-devops-2022"
 
 #### [YAML](#tab/yaml/)
 
@@ -48,7 +48,7 @@ steps:
 - task: NuGetToolInstaller@1                            # Minimum required NuGet version: 4.8.0.5385+.
   displayName: 'NuGet Tool Installer'
 
-- task: NuGetAuthenticate@0
+- task: NuGetAuthenticate@1                            # Authenticate with Azure Artifacts and other NuGet registries.
   displayName: 'NuGet Authenticate'
 
 - script: |
@@ -119,6 +119,9 @@ steps:
 
 ::: moniker-end
 
+> [!NOTE]
+> To publish your packages to a feed using Azure Pipelines, make sure that both the **Project Collection Build Service** and your project's **Build Service** identities are granted the **Feed Publisher (Contributor)** role assigned in your feed settings. See [Manage permissions](../../artifacts/feeds/feed-permissions.md) for more details.
+
 ## Publish NuGet packages to a feed in another organization
 
 To publish your NuGet packages to a feed in a different Azure DevOps organization, you must first create a personal access token (PAT) in the target organization. Navigate to the organization hosting your target feed and [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging** > **Read & write** scope. 
@@ -182,7 +185,7 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range="azure-devops-2022"
 
 #### [YAML](#tab/yaml/)
 
@@ -196,10 +199,10 @@ Once the PAT is created, copy and store it in a secure location, as you'll need 
     - task: NuGetToolInstaller@1                            # Minimum required NuGet version: 4.8.0.5385+.
       displayName: 'NuGet Tool Installer'
 
-    - task: NuGetAuthenticate@0
+    - task: NuGetAuthenticate@1                            # Authenticate with Azure Artifacts and other NuGet registries.
       inputs:
-        nuGetServiceConnections: <SERVICE_CONNECTION_NAME>
-        
+        nuGetServiceConnections: <SERVICE_CONNECTION_NAME>        # Name of the service connection used to authenticate with feeds across organizations or public registries.
+      
     - script: |
         nuget.exe push -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -ApiKey az $(Build.ArtifactStagingDirectory)\*.nupkg
       displayName: Push          

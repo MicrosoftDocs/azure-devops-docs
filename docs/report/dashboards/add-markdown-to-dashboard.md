@@ -29,6 +29,8 @@ By using the Markdown widget, you can ensure that essential information is easil
 The following example shows team information and links: 
 :::image type="content" source="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt-text="Screenshot of sample Markdown widget.":::
 
+## Prerequisites
+
 [!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
 ## Supported Markdown syntax

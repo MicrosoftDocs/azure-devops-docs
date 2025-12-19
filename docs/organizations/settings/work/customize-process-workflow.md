@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: how-to
 ms.date: 10/21/2024
 #customer intent: As a team lead or administrator, I want to learn how to customize states in a work item type to optimize our team's workflow.
@@ -58,6 +58,8 @@ Teams should update their board configuration when making the following customiz
 - Add states to the task WIT, which adds columns to the Taskboard.
 - [Track bugs along with tasks](../show-bugs-on-backlog.md), adding states to the bug WIT, which also adds columns to the Taskboard.
 - Add the same states to both task and bug work item types, which updates the status consistently and minimize the number of columns added.
+
+## Prerequisites
 
 [!INCLUDE [prerequisites](../includes/process-prerequisites.md)] 
 
@@ -169,7 +171,7 @@ You can zoom in and zoom out of the view. Also, you can move the state nodes aro
 > [!div class="nextstepaction"]
 > [Review changes made to an inherited process through the audit log](../../audit/azure-devops-auditing.md)
 
-## Related articles
+## Related content
 
 - [Learn about workflow states in backlogs and boards](../../../boards/work-items/workflow-and-state-categories.md)
 - [Add and manage work item types](customize-process-work-item-type.md)

@@ -4,7 +4,7 @@ title: Create service endpoints | Extensions for Azure DevOps
 description: Browse through the places where your extension can extend GitHub Codespaces for Azure DevOps.
 ms.custom: engagment-fy23
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -64,7 +64,7 @@ In this article, the manifest file creation is separated into the following thre
     - [task.json components](#taskjson-components)
   - [Authentication](#authentication)
   - [Next steps](#next-steps)
-  - [Related articles](#related-articles)
+  - [Related content](#related-content)
 
 ### Create basic manifest file
 
@@ -307,7 +307,7 @@ The authentication scheme in a service endpoint determines the credentials that 
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)
 
-## Related articles
+## Related content
 
 - [Test and debug extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
 - [Develop a web extension](../get-started/node.md)

@@ -1,7 +1,12 @@
 ### YamlMime:FAQ
 metadata:
   title: Access via Microsoft Entra FAQs
-  ms.custom: fasttrack-edit, engagement-fy23, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+  ms.custom:
+    - fasttrack-edit
+    - engagement-fy23
+    - has-azure-ad-ps-ref
+    - azure-ad-ref-level-one-done
+    - sfi-image-nochange
   description: Learn the answers to frequently asked questions (FAQs), like how to understand Microsoft Entra groups, add users, connect to, disconnect from, or switch your directory.
   ms.subservice: azure-devops-organizations
   ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
@@ -231,7 +236,7 @@ sections:
       - question: |
           How can I protect access to built-in administrator groups?
         answer: |
-          Require just-in-time access using a Microsoft Entra Privileged Identity Management (PIM) group. For more information, see [Just-in-time access for admin groups](../security/security-best-practices.md#just-in-time-access-for-admin-groups).
+          Require just-in-time access using a Microsoft Entra Privileged Identity Management (PIM) group.
       
       - question: |
           Why doesn't the Security tab show all members when I select a Microsoft Entra group?
@@ -351,13 +356,13 @@ sections:
           - [Connect your organization to Microsoft Entra ID](./connect-organization-to-azure-ad.md)
           - [Disconnect your organization from your directory](./disconnect-organization-from-azure-ad.md)
           - [Change the directory connected to Azure DevOps](change-azure-ad-connection.md)
-          - [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
+          - [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md)
           - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
       - question: |
           How can I manage multiple organizations that are connected to Microsoft Entra ID?
         answer: |
-          You can download a complete list of organizations backed by a Microsoft Entra tenant. For more information, see [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md).
+          You can download a complete list of organizations backed by a Microsoft Entra tenant. For more information, see [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md).
           
           <a name="connect-o365-azure-ad"></a>
           
@@ -473,7 +478,7 @@ sections:
           
 additionalContent: |
 
-  ## Related articles
+  ## Related content
   
   - [Configure and customize organization FAQs](faq-configure-customize-organization.yml)
   - [Learn about user and permissions management FAQs](faq-user-and-permissions-management.yml)

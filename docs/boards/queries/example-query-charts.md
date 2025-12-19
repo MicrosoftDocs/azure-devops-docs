@@ -239,7 +239,7 @@ In addition to the query charts provided earlier in this article, the following 
 - [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
 - [Lead time and Cycle time](../../report/dashboards/cycle-time-and-lead-time.md) 
 
-## Related articles
+## Related content
 
 - [Query editor](using-queries.md)
 - [Query fields, operators, and macros](query-operators-variables.md)   

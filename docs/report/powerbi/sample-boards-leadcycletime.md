@@ -7,7 +7,7 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/08/2022
 ---
 
@@ -23,7 +23,6 @@ The following image shows an example for average lead time broken down by priori
 
 For more information about lead and cycle time, see [Lead Time and Cycle Time widgets](../dashboards/cycle-time-and-lead-time.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
 
-
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
@@ -31,7 +30,6 @@ For more information about lead and cycle time, see [Lead Time and Cycle Time wi
 ## Sample queries
 
 Queries in this section support returning lead and cycle time data for completed User Stories. You can query by area path or team name(s). All of these queries specify the `WorkItems` entity set as they return data calculated for each work item by the Analytics service.  
-
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
@@ -81,7 +79,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
 - `{startdate}` - Start your report for items completed on or after a given date with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
-
 
 ### Query breakdown
 
@@ -154,7 +151,6 @@ The following table describes each part of the query.
    Expand the properties for `AssignedTo`, `Iteration`, and `Area` entities and select entity fields for them. 
    :::column-end:::
 :::row-end:::
-
 
 ### Return Lead Time and Cycle Time for User Stories and teams
 
@@ -237,8 +233,6 @@ The example report displays. Note that as you hover over any area in the report,
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]
 
-
-
 <!--- 
 To pivot the report by Area Path (representing teams), add the field "Area.AreaPath" to **Legend**, replacing "Priority"
 
@@ -246,5 +240,4 @@ To pivot the report by Area Path (representing teams), add the field "Area.AreaP
 > ![Power BI + OData - Lead Cycle Report by Teams](media/odatapowerbi-leadcycle-report2.png)
  
 --> 
-
 

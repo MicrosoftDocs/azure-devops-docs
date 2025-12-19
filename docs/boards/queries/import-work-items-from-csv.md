@@ -8,30 +8,26 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: ">= azure-devops-2019"
-ms.date: 11/26/2024
+monikerRange: "<=azure-devops"
+ms.date: 11/14/2025
 #customer intent: As a team member, I want to import and export work items in CSV format to create or update them in bulk by using Excel.
 ---
 
 # Import, update, and export bulk work items with CSV files in Azure Boards
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 Import and export work items in bulk using CSV-formatted files in Azure Boards. While you can continue to use Excel for bulk imports and updates, the native import/export feature allows you to manage work items without requiring Excel. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 ::: moniker-end 
-
-::: moniker range="azure-devops-2019"
-Export work items in bulk using CSV-formatted files. Although Excel can still be used for bulk imports and updates, the native export feature from Queries enables you to manage work items without relying on Excel. For more information, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
-::: moniker-end
 
 ## Prerequisites
 
 **Permissions**:
-- Export work items: Be a member of the **Project Administrators** security group or have **View project-level information** set to **Allow**.
-- Import work items: Be a member of the **Project Administrators** security group or the **Team Foundation Administrators** security group.
+- Export work items: Member of the **Project Administrators** group or **View project-level information** permission set to **Allow**.
+- Import work items: Member of the **Project Administrators** or **Team Foundation Administrators** security group.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Import new work items
 
@@ -47,15 +43,29 @@ To import work items in bulk, your CSV file must include the **Work Item Type** 
   - Verify that all fields in the CSV file match the fields for the work item types in the target project.
 - **Handle invalid values:** If the imported CSV file contains work items with invalid values, you must edit and correct these work items after import before they can be saved.
 
+> [!TIP]
+> Work item fields vary between different process templates (Agile, Scrum, CMMI) and Azure DevOps versions. Before importing, verify the available fields for your work item types by:
+> 1. Creating a sample work item of the desired type in your project
+> 2. Viewing the available fields in the work item form
+> 3. Or exporting existing work items to see the current field structure
+> 
+> Field names and availability might differ from the examples shown in this article based on your process template and Azure DevOps version.
+
 Do the following steps to import new work items.
 
 > [!NOTE]  
 > You can import up to 1,000 work items at a time. If you have more than 1,000 work items to import, break them into multiple files and import them separately.
 
 1. Create a local *import.csv* file and open it in Visual Studio Code or Excel.
-2. The file must contain the **Work Item Type** and the **Title** fields. You can include other fields as needed. For a list of default fields, see [Work item field index](../work-items/guidance/work-item-field.md).  
+2. The file must contain the **Work Item Type** and the **Title** fields. You can include other fields as needed. 
 
-   The following example includes the **Priority** field.
+   > [!TIP]
+   > To determine the correct field names for your Azure DevOps instance:
+   > - Export a few existing work items from your project to view the exact field names
+   > - Create a new work item and review the available fields
+   > - Check the [Work item field index](../work-items/guidance/work-item-field.md) for standard field references
+
+   The following example includes the **Priority** field. Your available fields might differ based on your process template:
 
    ```csv
    Work Item Type,Title,Priority
@@ -88,6 +98,13 @@ Do the following steps to import new work items.
    :::image type="content" source="media/import-csv/imported-file-error.png" alt-text="Screenshot showing work items with data issues to fix.":::
 
 ### Tips
+
+- **Field compatibility:** Different Azure DevOps versions and process templates (Agile, Scrum, CMMI, or custom) have different available fields. Always verify field names by exporting existing work items from your project before importing new ones.
+- **Process template differences:** 
+  - **Agile process**: Uses User Story, Task, Bug, Epic, Feature, Test Case
+  - **Scrum process**: Uses Product Backlog Item, Task, Bug, Epic, Feature, Test Case  
+  - **CMMI process**: Uses Requirement, Task, Bug, Epic, Feature, Test Case
+  - Your field names and available options might vary based on which process your project uses.
 
 - **Parent-child links:** You can add parent-child links between work items you import by indenting the title columns, as shown in [Can I import a CSV file that have parent-child links?](#tree-items). However, you can't specify any other link types when you import or update work items.
 - **Default State field:** When you import new work items, the **State** field is set to *New* by default. You can't specify a different state during the import process. If you need to change the state of imported work items, use the following workaround:
@@ -124,7 +141,7 @@ Do the following steps to import new work items.
 1. Make the edits to your work items. Your CSV file must contain the **ID**, **Work Item Type**, and **Title** fields. Any other fields you want to include are optional.
 
    > [!NOTE]
-   > When you import identity fields, enter the name and email in the following format `"Display Name <email>"`. For example, to assign work to Jamal Hartnett, specify `"Jamal Hartnett <fabrikamfiber4@hotmail.com>"`. If you specify a value that isn't recognized as a valid user to the system, you may encounter problems with the import.
+   > When you import identity fields, enter the name and email in the following format `"Display Name <email>"`. For example, to assign work to Jamal Hartnett, specify `"Jamal Hartnett <fabrikamfiber4@hotmail.com>"`. If you specify a value that isn't recognized as a valid user to the system, you might encounter problems with the import.
 
    In the following example, we change values on existing working items.
 
@@ -153,14 +170,9 @@ Do the following steps to import new work items.
 
 From any query, you can export a list of work items as a comma-delimited list. [Open the query](view-run-query.md), select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then select **Export to CSV**.
 
-::: moniker range="azure-devops-2019"
-> [!NOTE]
-> Requires Azure DevOps Server 2019 Update 1 or later version.
-::: moniker-end
-
 :::image type="content" source="../work-items/media/email/export.png" alt-text="Screenshot showing Export a query as CSV.":::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Export and import work items to a different project
 
@@ -202,7 +214,7 @@ When you work with HTML fields across different Microsoft products, you might en
 
 For more information on managing HTML content and ensuring compatibility, see [Provide help text, hyperlinks, or web content on a work item form](../../reference/xml/provide-help-text-hyperlinks-web-content-form.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Unsupported work item types
 
@@ -217,11 +229,13 @@ The CSV import doesn't support the following work item types:
 - Test Suite
 - Shared Parameter
 
+- Shared Step
+
 For more information, see [Bulk import or export test cases](../../test/copy-clone-test-items.md).
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## FAQs
 
@@ -271,7 +285,7 @@ When you import from CSV, for performance reasons, the identity picker doesn't g
 
 ::: moniker-end 
 
-## Related articles
+## Related content
 
 - [Access the Work Item Field Index](../work-items/guidance/work-item-field.md)
 - [Bulk Add or Modify Work Items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)

@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/04/2022
 ---
 
@@ -15,7 +15,6 @@ ms.date: 11/04/2022
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 You can get a sum of your work tracking data in one of two ways using Analytics with OData. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query that exercises the OData Aggregation Extension.   
-
 
 This article builds off information provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md) and [Define basic queries using OData Analytics](wit-analytics.md). Also, the queries is this article are focused on retrieving work item data, however, the principles apply for querying other entity sets. 
 
@@ -29,14 +28,15 @@ In this article you'll learn:
 
 To learn how to generate simple counts, see [Return a count of items (no other data)](wit-analytics.md#return-a-count-of-items-no-other-data) and [Return a count of items and data](wit-analytics.md#return-a-count-of-items-and-data).
 
-
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
+## Prerequisites
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## What is the Aggregation Extension for OData?
 
 Analytics relies on OData to author queries over your work tracking data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
-
 
 <a id="aggregation-extension"></a>
 
@@ -57,7 +57,6 @@ Where:
 ## Aggregated data using the apply extension 
 
 Using the `$apply` extension, you can obtain counts, sums, and additional information when you query your work tracking data. 
-
 
 **Return the sum of all remaining work**
 
@@ -209,7 +208,6 @@ It will return a result that looks like this example:
 > }
 > ```
 
-
 <a id="calculated-properties"></a>
 
 ## Generate calculated properties for use within a single call
@@ -275,14 +273,12 @@ When refreshing Power BI or Excel, the fewer rows required, the faster the refre
 > [!div class="nextstepaction"]
 > [Query trend data](querying-for-trend-data.md)
 
-
 ## Related articles 
 
 - [Define basic queries using OData Analytics](wit-analytics.md)  
 - [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
 <!--- REMOVING THIS CONTENT AS IT IS NOW DUPLICATED 
-
 
 ## Basic root URL
 
@@ -297,7 +293,7 @@ Use this basic root URL as a prefix for all the examples provided in this articl
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData

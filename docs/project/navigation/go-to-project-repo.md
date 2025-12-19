@@ -15,14 +15,13 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-
 Several features depend on the project, repository, or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the project and team you select.
 
 Also, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
 ## Prerequisites 
  
-* Be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+[!INCLUDE [prerequisites-contributor-only](../../includes/prerequisites-contributor-only.md)]
  
 ::: moniker range="azure-devops"  
 
@@ -37,7 +36,7 @@ Also, when you add a work item, the system references the default area and itera
 
 From the **Projects** page you can quickly navigate to a project that you have permissions to view. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.  
 
@@ -63,12 +62,9 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 ::: moniker-end
 
-
-
-
 ## View and open a repository 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Choose **Repos>Files**.
 
@@ -81,16 +77,14 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 ::: moniker-end
 
-
   
-
 
 <a id="switch-to-a-different-team">  </a>
 <a id="switch-team-context">  </a>
 
 ## Switch to a different team 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 From a user page, one under&mdash;**Boards**, **Repos**, **Pipelines**, or **Test Plans**&mdash;you can't switch to a different team, you can [only select team artifacts](use-breadcrumbs-selectors.md). 
 
@@ -101,9 +95,6 @@ From a **Project Settings>Work>Team configuration** page, you select a team from
 
 ::: moniker-end
 
-
-
-
-## Related articles
+## Related content
 - [Work across projects](work-across-projects.md)
 - [Add teams](../../organizations/settings/add-teams.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json)

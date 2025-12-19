@@ -4,6 +4,7 @@ author: sid-ah
 ms.author: simerzou
 ms.date: 05/11/2020
 description: With this **sprint 169**, we are excited to announce the general availability of Azure Pipelines YAML CD features.
+ms.topic: release-notes
 ---
 
 # Enhancements to YAML Pipelines

@@ -19,7 +19,11 @@ The `dir` command displays all or some of the contents of the server for Team Fo
 
 ## Prerequisites
 
-To use the `dir` command, have **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission set to **Allow**. |
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

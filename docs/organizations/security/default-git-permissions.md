@@ -24,7 +24,7 @@ To change permissions or set policies for Git repositories or branches, see the 
 - [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md). 
 - [Set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md). 
 
-## Related articles
+## Related content
 
 - [Default permissions and access](permissions-access.md) 
 - [Permissions and groups reference](permissions.md) 

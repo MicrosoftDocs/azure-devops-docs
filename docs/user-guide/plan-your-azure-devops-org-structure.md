@@ -22,7 +22,7 @@ Consider the following structures for your business and collaborative work in Az
 * [Number of organizations](#how-many-organizations-do-you-need)
 * [Number of projects under an organization](#how-many-projects-do-you-need)
 
-You also may want to plan for the following scenarios:
+Also, plan for the following scenarios:
 
 * [Map your organizations and projects](#mapping-guidance-table) in Azure DevOps to your enterprise, business unit, and team structure
 * [Structure your repositories (repos)](#structure-repos-and-version-control-within-a-project)
@@ -31,7 +31,7 @@ You also may want to plan for the following scenarios:
 * [Reporting needs](#mapping-guidance-table)
 * Promote common practices - [use foundational elements to create an agile mindset and culture](../boards/plans/agile-culture.md)
 
-Have at least one organization, which may represent your company, your larger collection of code projects, or even multiple related business units.
+Have at least one organization, which might represent your company, your larger collection of code projects, or even multiple related business units.
 
 ## What's an organization?
 
@@ -123,7 +123,7 @@ You may want to add another project due to the following scenarios:
 
 When you're considering many projects, keep in mind that Git repo portability makes it easy to migrate  repos (including full history) between projects. Other history can't be migrated between projects. Examples are push and pull request history.
 
-When you map projects to business units, your company gets a single organization and sets up many projects with one or more projects representing a business unit. All Azure DevOps assets of the company are contained within this organization and located within a given region (for example, Western Europe). Consider the following guidance for mapping your projects to business units:
+When you map projects to business units, your company gets a single organization and sets up many projects with one or more projects representing a business unit. All Azure DevOps assets of the company are contained within this organization and located within a given geography (for example, Europe). Consider the following guidance for mapping your projects to business units:
 
 <a id="mapping-guidance-table" >  </a>
 
@@ -265,7 +265,7 @@ The organizations are for the same company, but are mostly isolated from each ot
 > [!TIP]
 > You can more easily partition an existing organization with projects, than combine different organizations.
 
-## Related articles  
+## Related content  
 
 - [Create an organization](../organizations/accounts/create-organization.md)
 - [Create a project](../organizations/projects/create-project.md)

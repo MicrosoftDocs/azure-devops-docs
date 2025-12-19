@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 
 ### Updated multi-stage pipelines UI

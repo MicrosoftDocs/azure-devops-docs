@@ -3,7 +3,7 @@ title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
 ms.date: 01/25/2023
-monikerRange: "> azure-devops-2019"
+monikerRange: "<=azure-devops"
 ---
 
 # Check out multiple repositories in your pipeline
@@ -164,7 +164,6 @@ steps:
 
 If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitbucketRepo  MyGitHubRepo`. In this example, the names of the repositories (as specified by the `name` property in the repository resource) are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
 
-
 ## Inline syntax checkout
 
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
@@ -257,7 +256,7 @@ steps:
 - checkout: MyGitHubRepo
 ```
 
-:::moniker range=">azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 ## Triggers
 

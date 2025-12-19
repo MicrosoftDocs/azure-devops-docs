@@ -59,3 +59,10 @@ Without a package restore, dependency scanning doesn't resolve any specific pack
 Use `pip v22.2.0` or higher to enable use of `pip report` scanning, which provides more accurate detection.
 
 The environment variable `PIP_INDEX_URL` is used to determine what package feed should be used for `pip install --report detection`. The default value uses the PyPi index unless pip defaults are configured globally.
+
+## Related articles
+
+- [Set up code scanning](github-advanced-security-code-scanning.md)
+- [Set up dependency scanning](github-advanced-security-dependency-scanning.md)
+- [Set up secret scanning](github-advanced-security-secret-scanning.md)
+- [Learn about GitHub Advanced Security for Azure DevOps](github-advanced-security-security-overview.md)

@@ -3,9 +3,8 @@ title: Monitor your pipelines with dashboard widgets
 titleSuffix: Azure DevOps
 description: Monitor your pipeline with widgets on your team dashboard in Azure DevOps.
 ms.custom: pipelines
-ms.author: v-catherbund
-author: cebundy
-ms.topic: conceptual
+ms.author: chcomley
+ms.topic: concept-article
 monikerRange: '<= azure-devops'
 ms.date: 08/11/2024
 ---

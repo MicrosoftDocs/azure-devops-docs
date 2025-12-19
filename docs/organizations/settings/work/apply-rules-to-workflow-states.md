@@ -6,11 +6,10 @@ ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: tutorial
 ms.date: 09/11/2024 
 ---
-
 
 # Apply rules to workflow states (Inheritance process)   
 
@@ -28,7 +27,7 @@ After you add or modify your workflow states for a work item type, define rules 
 - Automate closure of parent work items
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 - Support an approval process 
 - Prevent unauthorized users from setting an invalid state 
 - Make a field required or read-only or another value based on State changes
@@ -36,24 +35,14 @@ After you add or modify your workflow states for a work item type, define rules 
 - Automate closure of parent work items 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-- Support an approval process 
-- Make a field required or read-only or another value based on State changes
-- Automate closure of parent work items
-::: moniker-end
-
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 ## Prerequisites
 
-To apply rules to workflow states in Azure DevOps, you need specific permissions and access levels:
-
-- **Permissions:**
-  - Be a **Project Administrator** to manage security groups and permissions at the project level, which includes setting rules for workflow states.
-  - Have **Work Item Tracking permission**, which allows you to manage the work tracking area, which can be granted to members of the Project Administrators group or through specific permissions.
-
-- **Access levels:**
-  - Have **Basic** access, which is typically sufficient for most users who need to manage work items and apply rules to workflow states.
+| Category | Requirements |
+|--------------|-------------|
+| **Permissions** | - To manage security groups and permissions at the project level, which includes setting rules for workflow states: **Project Administrator**.<br>- To manage the work tracking area: **Project Administrator** or specifically assigned the **Work Item Tracking** permission. |
+| **Access levels** | **Basic** access, which is typically sufficient for most users who need to manage work items and apply rules to workflow states. |
 
 ## Understand workflow rules 
 
@@ -74,7 +63,7 @@ The following table outlines the three groups of workflow rules you can define:
    - Define actions to restrict transitions from that state to other states.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 The following table outlines the two groups of workflow rules you can define:
 
 1. **Standard actions:**
@@ -88,10 +77,6 @@ The following table outlines the two groups of workflow rules you can define:
 ::: moniker-end
 
 [!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
-
-::: moniker range="azure-devops-2019"
-Workflow conditions and actions you can set are illustrated in the following images. You can apply standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions set the value of a field or make a field read-only or required. For this set of rules, you can specify one or two conditions and several actions. 
-::: moniker-end
 
 ---
 :::row:::
@@ -119,7 +104,7 @@ Workflow conditions and actions you can set are illustrated in the following ima
    :::column-end:::
 :::row-end:::
 ---  
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 :::row:::  
    :::column span="4":::
       **Restrict a transition based on State**
@@ -136,7 +121,7 @@ Workflow conditions and actions you can set are illustrated in the following ima
 :::row-end:::
 ---  
 ::: moniker-end
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 :::row:::  
    :::column span="4":::
       **Hide field or make field read-only or required based on State and user or group membership**
@@ -292,18 +277,14 @@ The rule requirements translate to the following four rule definitions.
 
 ---
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Restrict state transitions 
 
 When you specify the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.  
 ::: moniker-end
-::: moniker range="azure-devops-2020"
-> [!NOTE]   
-> This feature requires Azure DevOps Server 2020.1 update or later version.
-::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 #### Example of restricting state transitions and Approved state
 
@@ -317,7 +298,6 @@ Without any restrictions, users can move from one State to any other State, both
 #### Rule requirements 
 
 To support a more controlled workflow, the business group decided to institute rules that support the following forward and reverse state transitions on the User Story work item type.
-
 
 |State |Transition rule |
 |---------|---------|
@@ -539,7 +519,7 @@ When you specify one of the two conditions based on user or group membership, `C
 To automate State transitions for parent work items that are based on the State assignments of their child work items, see [Automate work item state transitions](../../../boards/backlogs/automate-work-item-state-transitions.md).
 <a id="reassign"></a>
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Automate reassignment based on state change 
 
@@ -549,7 +529,7 @@ The Agile process bug work item type previously had a rule that reassigned the b
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Add a custom rule](custom-rules.md)  
 - [Work item form caching](troubleshoot-work-item-form-caching-issues.md)  

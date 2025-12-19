@@ -44,7 +44,9 @@ For more detailed information on using filters, see [Filter Backlogs, Boards, an
 
 ## Prerequisites
 
-**Project access**: Be a [project member](../../organizations/security/add-users-team-project.md).
+| Category | Requirements |
+|--------------|-------------|
+| **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
 
 ## Supported filter functions 
 
@@ -52,7 +54,7 @@ Filter functions are available from all Azure Boards tools: Work items, Boards, 
 
 The following table indicates the supported options based on the tool indicated with a ✔️ or is listed. 
 
-Backlogs and boards are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). Other tools have predefined filters based on the view, query filter clauses, or settings you select.
+Backlogs and boards are subject to filters defined for the team as described in [Create and manage your backlog](create-your-backlog.md). Other tools have predefined filters based on the view, query filter clauses, or settings you select.
 
 :::row:::
    :::column span="1.5":::
@@ -72,7 +74,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1.5":::
       [**Work items**](../work-items/view-add-work-items.md) 
@@ -139,7 +141,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1.5":::
      [**Sprints** (Backlogs  
@@ -163,30 +165,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="1.5":::
-     [**Sprints** (Backlogs  
-     & Taskboards)](../sprints/scrum-overview.md)  
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="2":::
-      - Assigned To
-      - Work Item Type
-      - States  
-      - Area Path  
-   :::column-end:::
-   :::column span="1.5":::
-           
-   :::column-end:::
-   :::column span="1":::
-      ✔️  
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
+ 
 :::row:::
    :::column span="1.5":::
      [**Query Results**](../queries/view-run-query.md)
@@ -233,30 +212,8 @@ Backlogs and boards are subject to filters defined for the team as described in 
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range="< azure-devops-2022"
-:::row:::
-   :::column span="1.5":::
-     [**Plans**](../plans/review-team-plans.md)
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="2":::
-      - Work Item Types
-      - Assigned To
-      - States
-      - Tags
-   :::column-end:::
-   :::column span="1.5":::
-        
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end  
-::: moniker range=">= azure-devops-2019"
+  
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1.5":::
      [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
@@ -286,8 +243,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
 1. While the **Parent Work Item** isn't a filter function for **Backlogs** or **Query Results**, you can add the **Parent** field as a column and then do a keyword/phrase search on the Parent title to effectively filter on parent work items. The Parent field is supported for Azure DevOps Server 2020 and later versions. See also the [Parent field and Parent Work Item](#parent-filter) section later in this article. 
 2. The **Parent Work Item** filter is supported for **Sprint Backlogs** and **Taskboards** for Azure DevOps Server 2020 and later versions. 
 
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### More filter, sort, group, reorder, and rollup functions 
 
@@ -296,7 +252,7 @@ Along with the standard filter functions summarized in the previous table, the f
 <br/>
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 ---
 :::row:::
    :::column span="2":::
@@ -462,7 +418,7 @@ Along with the standard filter functions summarized in the previous table, the f
         
    :::column-end:::
    :::column span="1":::
-      ✔️ (Note 6)  
+      ✔️ (Note 5)  
    :::column-end:::
    :::column span="1":::
             
@@ -473,193 +429,13 @@ Along with the standard filter functions summarized in the previous table, the f
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
      [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
    :::column-end:::
    :::column span="2":::
         
-   :::column-end:::
-   :::column span="1":::
-      ✔️ (Note 7)  
-   :::column-end:::
-   :::column span="1":::
-        
-   :::column-end:::
-   :::column span="1":::
-         
-   :::column-end:::
-   :::column span="1":::
-         
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
-
-::: moniker range="< azure-devops-2020"
-
-### Other filter, sort, group, and reorder functions 
-
-Along with the standard filter functions summarized in the previous table, the following table indicates which tools have other filters you can apply, sort, group, and reorder functions. Some functions, such as reorder, don't work when the filter function is enabled. 
-
-::: moniker-end 
-
-::: moniker range="< azure-devops-2020"
----
-:::row:::
-   :::column span="2":::
-      **Tool** 
-   :::column-end:::
-   :::column span="2":::
-      **Filter settings**
-   :::column-end:::
-   :::column span="1":::
-      **Sort**
-   :::column-end:::
-   :::column span="1":::  
-      **Group**
-   :::column-end:::
-   :::column span="1":::
-      **Reorder**
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
-::: moniker range="azure-devops-2019"
-:::row:::
-   :::column span="2":::
-      [**Work items**](../work-items/view-add-work-items.md) 
-   :::column-end:::
-   :::column span="2":::
-      ✔️ (Note 1)  
-      Completed Work Items
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="2":::
-      [**Boards**](../boards/kanban-overview.md)   
-   :::column-end:::
-   :::column span="2":::
-      ✔️ (Note 1)  
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
-      ✔️ 
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="2":::
-      [**Backlogs**](backlogs-overview.md) 
-   :::column-end:::
-   :::column span="2":::
-      ✔️ (Note 1)  
-      In Progress items  
-      Completed Child items 
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
-      ✔️ (Note 2)   
-   :::column-end:::
-   :::column span="1":::
-      ✔️ (Note 3)   
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="2":::
-     [**Sprints**, **Backlogs** ](../sprints/scrum-overview.md)  
-   :::column-end:::
-   :::column span="2":::
-      ✔️ (Note 1)  
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
-      ✔️ (Note 2)  
-   :::column-end:::
-   :::column span="1":::
-      ✔️ (Note 3)   
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="2":::
-     [**Sprints**, **Taskboards**](../sprints/scrum-overview.md)  
-   :::column-end:::
-   :::column span="2":::
-      ✔️ (Note 1)  
-      Person  
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
-      ✔️ (Note 4)   
-   :::column-end:::
-   :::column span="1":::
-      ✔️    
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="2":::
-     [**Query Results**](../queries/view-run-query.md)
-   :::column-end:::
-   :::column span="2":::
-
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️ (Note 2)  
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
-::: moniker range="< azure-devops-2022"
-:::row:::
-   :::column span="2":::
-     [**Plans**](../plans/review-team-plans.md)
-   :::column-end:::
-   :::column span="2":::
-
-   :::column-end:::
-   :::column span="1":::
-
    :::column-end:::
    :::column span="1":::
       ✔️ (Note 6)  
@@ -667,43 +443,37 @@ Along with the standard filter functions summarized in the previous table, the f
    :::column span="1":::
         
    :::column-end:::
-:::row-end:::
----
-::: moniker-end  
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="2":::
-     [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
-   :::column-end:::
-   :::column span="2":::
-
+   :::column span="1":::
+         
    :::column-end:::
    :::column span="1":::
-      ✔️ (Note 7)  
-   :::column-end:::
-   :::column span="1":::
-        
-   :::column-end:::
-   :::column span="1":::
-        
+         
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end  
+::: moniker-end 
 
+ 
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
 
 **Notes**
-1. The **Work items** page is subject to filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). **Boards** and **Backlogs** are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). Completed and In Progress work items get determined based on the state categories assigned to the workflow state as described in [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md#category-states). 
+1. The **Work items** page is subject to filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). **Boards** and **Backlogs** are subject to filters defined for the team. Completed and In Progress work items get determined based on the state categories assigned to the workflow state as described in [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md#category-states). 
 2. Grouping is supported through portfolio backlogs and boards, parent-child links, and tree hierarchy. Tree hierarchies are flattened when filtering is applied and reinstated when filtering is cleared.  
 3. **Backlogs** and **Sprint Backlogs** support reordering. However, when filtering is enabled, reordering isn't supported.
 4. **Taskboards** provides a **Group by** function based on **People** or **Stories**.  
-5. **Query Results** supports [multi-column sort](set-column-options.md#sort-on-a-column).
-6. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
-7. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
+5. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
+6. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
 
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 For more information about these other functions, see the following articles: 
 - [Reorder cards (boards)](../boards/customize-cards.md#reorder-cards)  
 - [Display rollup progress or totals](display-rollup.md) 
@@ -711,22 +481,15 @@ For more information about these other functions, see the following articles:
  
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2020"
-For more information about these other functions, see the following articles: 
-- [Reorder cards (boards)](../boards/customize-cards.md#reorder-cards)  
-- [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
  
-::: moniker-end 
-
 
 <a id="parent-filter"></a> 
 
 ### Parent Work Item filter and Parent field
 
-The **Parent Work Item** filter enables you to focus on one or more select features or epics. This filter function was added in July 2016 and made available in Azure DevOps Server 2017 and later versions.    
+The **Parent Work Item** filter enables you to focus on one or more select features or epics, providing better visibility into related work items within a hierarchy.
 
-The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020. You can add the **Parent** field to a list through the **Column Options** dialog, except for the **Work items** tool. 
-You can also add the **Parent** field to cards on the boards and Taskboards. 
+The **Parent** field can be added to work item lists through the **Column Options** dialog (except for the **Work items** tool) and to cards on boards and Taskboards. This field displays the title of the parent work item, making it easier to understand relationships and dependencies between work items. 
 
 ## Persistence and saving filter options
 
@@ -741,15 +504,11 @@ All filter configurations are user-specific and remain active until you clear th
 
 To add columns or fields, see the following articles: 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 - For Backlogs and Queries, see [Change column options](set-column-options.md)
 - For Boards, see [Customize cards](../boards/customize-cards.md)
 - For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
 - For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
-::: moniker-end
-::: moniker range="< azure-devops-2020"
-- For Backlogs and Queries, see [Change column options](set-column-options.md)
-- For Boards, see [Customize cards](../boards/customize-cards.md).
 ::: moniker-end
 
 ## Open and clear filter functions  
@@ -773,7 +532,6 @@ To add columns or fields, see the following articles:
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of choosing Filter function.](media/filter-boards/filter-kb-choose-filter-services.png)
-	::: moniker-end
 
 5. Choose your filters of interest. 
 
@@ -874,14 +632,9 @@ You can filter by select field values using the board for your product backlog (
 
 For example, here we filter for all items assigned to Jamal and Raisa.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of enable board, Filter on assignment field](media/filter-boards/filter-kb-filters-chosen-services.png)
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-
-![Screenshot of board, Filter on assignment field, Azure DevOps Server 2019.](media/filter-boards/filter-kb-filters-chosen.png)
 ::: moniker-end
 
 <a id="filter-logic"></a>
@@ -899,7 +652,6 @@ Cards are filtered based on the assignments made in the following order and logi
 4.	**Tags**: Show all cards that have tag 1 ```AND``` or ```OR``` tags 2, based on your selection of ```AND | OR```.
 	```AND```
 5.	**Parent Work Items**: Show all cards that have Parent Work Item 1 ```OR``` Parent Work Item 2.
-
 
 ### Filter a backlog by using fields
 
@@ -923,13 +675,9 @@ To start filtering, choose **Filter** :::image type="icon" source="../media/icon
 
 Here, we choose two features on which to filter the board:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of board, Filter on Parent field.](media/filter-boards/filter-kb-parent-filters-services.png)
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-![Screenshot of board, Filter on parent work items.](media/filter-boards/filter-kb-choose-parent-work-items.png)
 ::: moniker-end
 
 The final board displays just those stories linked as child work items to the selected features.
@@ -943,7 +691,7 @@ If you added tags to your work items, you can filter your work using one or more
 Check the boxes of those tags that you want to filter on. Keep the **OR** selection to do a logical OR for all the tags  you selected. Or, choose the **AND** option to do a logical AND on all the selected tags. 
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of filtering board based on tags, 2019 and later versions. ](media/filter/filter-boards-tags.png) 
+> ![Screenshot of filtering board based on tags.](media/filter/filter-boards-tags.png) 
 
 For more information about tags, see [Add tags to work items to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).
   
@@ -961,9 +709,9 @@ For more information, see [Query work item history and discussion fields](../que
 
 ::: moniker-end
 
-## Related articles  
+## Related content  
 
-- [Set up your Backlogs and Boards](set-up-your-backlog.md)
+- [Create and manage you backlog](create-your-backlog.md)
 - [About backlogs](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items)
 - [Change column options](set-column-options.md)
 - [Display rollup progress or totals](display-rollup.md) 

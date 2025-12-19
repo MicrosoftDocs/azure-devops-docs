@@ -3,7 +3,7 @@ title: Add a Hub | Extensions for Azure DevOps Services
 description: Extend Azure DevOps Services with your own hub.
 ms.assetid: 0d06c2d8-402f-4373-a2d3-2513ae278443
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -172,7 +172,7 @@ Set `addressable` to `true` unless you include other files that don't need to be
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)
 
-## Related articles
+## Related content
 
 - [Testing and debugging extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
 - [Extension manifest reference](../develop/manifest.md)

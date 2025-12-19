@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Download or get files from the server in Team Foundation Version Control (TFVC).
 ms.assetid: 33798544-9e9e-4200-b7d8-127fb088c735
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/01/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -20,7 +20,7 @@ In general, you should get the latest files from the server on a regular basis s
 
 ## Prerequisites
 
-Be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+[!INCLUDE [contributor-only-prerequisites](includes/contributor-only-prerequisites.md)]
 
 ## Get the latest version of files
 

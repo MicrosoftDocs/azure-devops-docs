@@ -1,7 +1,7 @@
 ---
 title: General availability of Team automation rules and improved AB#ID validation
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 1/19/2024
 description: General availability of Team automation rules and improved AB# validation
 ---

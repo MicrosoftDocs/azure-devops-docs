@@ -8,7 +8,7 @@ ms.topic: include
 ms.date: 11/02/2023
 ---
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!NOTE]
 > For more information, see the following articles:

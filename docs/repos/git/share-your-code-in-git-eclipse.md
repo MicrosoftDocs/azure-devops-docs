@@ -4,11 +4,13 @@ titleSuffix: Azure Repos
 description: Share code in Git using Eclipse
 ms.assetid: a00b91da-9f74-44f2-8c48-04bfd50a74c3
 ms.service: azure-devops-repos
-ms.custom: archive-candidate
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.date: 05/13/2019
+ms.custom:
+  - archive-candidate
+  - sfi-image-nochange
 ---
 
 
@@ -20,8 +22,7 @@ Share your Eclipse project with your team in an Azure DevOps Services/TFS Git re
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
-* A local Eclipse project. If your code is already in version control in Azure Repos or TFS and you want to clone it, see [Clone an Azure DevOps Services Git repo using Eclipse](/previous-versions/azure/devops/all/java/labs/eclipsegit/).
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 <a name="git"></a>
 

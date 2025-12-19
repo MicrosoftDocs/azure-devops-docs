@@ -13,7 +13,6 @@ monikerRange: '<= azure-devops'
 ms.date: 10/08/2024
 ---
 
-
 # Customize a process template
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
@@ -79,11 +78,6 @@ Process templates consist of nine plug-ins. Each plug-in defines a set of tasks 
   
 ![Conceptual image of Process Template Plugins.](media/azure-devops-plugins.png)  
   
-::: moniker range="< azure-devops-2022"
-
-> [!IMPORTANT]  
-> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. To support reporting for a project collection, see [Add reports to a team project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).   
-::: moniker-end
 
 To customize a process template, you customize one or more files associated with a functional area. While customizing any one object is fairly simple, make sure that you don't break any inter-dependencies when you customize. The [ProcessTemplate.xml plug-in file](/previous-versions/azure/devops/reference/process-templates/define-root-tasks-process-template-plug-in) defines which plug-ins to include in the template. This file contains all the task groups that you want to run to create a project. Each task group references a subordinate XML plug-in file where the specific tasks for that plug-in are defined.     
   
@@ -118,12 +112,9 @@ When you add objects to a process template, make sure that you label them correc
   
 - Each work item field has an associated field reference name that uniquely identifies each field. The reference name can't be changed after it's assigned.  
  
-	::: moniker range="< azure-devops-2022"
-     In addition, if you're using SQL Server Reporting Services for your project collection, the reporting name assigned to a work item field must match across all work item types that are defined for the project collection. If they don't, validation errors might occur when you upload the process template, or conflicts might occur in the data warehouse databases.  
-	::: moniker-end
+	
      Work item field names, link type names, and global lists are scoped to a project collection. If you customize any of these objects, the change is reflected in all projects that are defined in the collection and in the work item types that contain that work item field.  
 - The maximum size of a process template is two gigabytes. When you customize a process template, make sure that your changes don't increase its size beyond that value.  
-
 
 <a name="pt_workflow"></a> 
 

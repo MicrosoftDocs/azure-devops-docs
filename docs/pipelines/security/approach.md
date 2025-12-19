@@ -2,9 +2,9 @@
 title: Determine your approach for securing YAML pipelines
 description: Apply security recommendations incrementally in your YAML pipelines because incremental improvements add up.
 ms.assetid: a506a55a-2379-4d14-a52c-f4c28abae0ec
-ms.reviewer: vijayma
 ms.date: 06/10/2024
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
+ms.topic: article
 ---
 
 # Determine your approach for securing YAML pipelines
@@ -12,6 +12,8 @@ monikerRange: '>= azure-devops-2020'
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Consider adopting an incremental approach to enhance the security of your pipelines. While it’s ideal to implement all the guidance we provide, don’t get overwhelmed by the number of recommendations. Start by making some improvements, even if you can’t address everything immediately.
+
+[!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
 ## Security interdependence
 

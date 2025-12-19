@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use shelvesets in Team Foundation Version Control to set aside in-progress work. Use Team Explorer to suspend and resume work and to manage shelvesets.
 ms.assetid: 91b026a7-a590-45d1-81cf-97dfa7acba1d
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/06/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -28,7 +28,7 @@ In these scenarios and others, you can move your [pending changes](develop-code-
 
 ## Prerequisites
 
-Be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+[!INCLUDE [contributor-only-prerequisites](includes/contributor-only-prerequisites.md)]
 
 [!INCLUDE [Visual Studio versions with My Work and Code Review features](includes/note-my-work-code-review-support.md)]
  

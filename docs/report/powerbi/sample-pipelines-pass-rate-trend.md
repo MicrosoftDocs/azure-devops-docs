@@ -8,7 +8,7 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020' 
+monikerRange: "<=azure-devops"
 ms.date: 12/15/2022
 ---
 
@@ -27,7 +27,6 @@ The following image shows an example of such a trend.
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
 
 ## Sample queries
 
@@ -101,7 +100,6 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 [!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
-
 
 ### Query breakdown
 
@@ -262,7 +260,6 @@ Pipelines can be renamed. To ensure that the Power BI reports don't break when t
 https://dev.azure.com/{organization}/{project}/_build?definitionId={pipelineid}
 ```
 
-
 The following queries return the pipeline runs for a specific pipeline ID from a specified start date.  
 
 #### [Power BI query](#tab/powerbi/)
@@ -327,7 +324,6 @@ You may want to view the pass rate trend of a pipeline for a particular **branch
 - Expand `Branch` into `Branch.BranchName`.
 - Select Power BI Visualization **Slicer** and add `Branch.BranchName` to the slicer's **Field**.
 - Select the branch from the slicer for which you need to see the pass rate trend.
-
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -421,7 +417,6 @@ in
 ```
 #### [OData query](#tab/odata/)
 
-
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
@@ -508,9 +503,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ***
 
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand columns in Power Query Editor
 

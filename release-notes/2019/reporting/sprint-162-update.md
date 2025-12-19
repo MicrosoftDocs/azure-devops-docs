@@ -4,6 +4,7 @@ description: See the Sprint 162 feature updates for Azure reporting, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 12/16/2019
+ms.topic: concept-article
 ---
 
 # Reporting - Sprint 162 Update

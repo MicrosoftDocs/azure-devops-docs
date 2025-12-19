@@ -8,7 +8,7 @@ ms.author: shdalv
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
 ---
 
@@ -53,7 +53,6 @@ For the report to generate useful data, the team must carry out the following ac
 
 	> [!NOTE]  
 	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.   
-
 
 ## Sample queries
 
@@ -118,7 +117,6 @@ $apply=filter(
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{testPlanTitle}` - Title of your test plan. Example: `Fabrikam test plan`.
 - `{startDate}` and `{endDate}` - Date range of interest. You can enter the dates in YYYYMMDD format. For example, `20220815` for 15 August 2022.
-
 
 ### Query breakdown
 
@@ -186,7 +184,6 @@ From the Power Query Editor, select the `TotalCount` column and all other column
 You can rename column fields. For example, you can rename the column `NotApplicable` to `Not Applicable`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
-
 
 ## Create the stacked area chart report 
 

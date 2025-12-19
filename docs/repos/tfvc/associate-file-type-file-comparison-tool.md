@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: See how to associate a file type with a file-comparison tool, and how to specify arguments for the tool.
 ms.assetid: 3cda923d-7bd8-4ff7-a071-03d8cf60d509
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/07/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -20,7 +20,11 @@ You can compare text files by using the [Diff window](compare-files.md), the def
 
 ## Prerequisites
 
-Be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|Member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. |
+
+For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
 ## Associate a file type with a file-comparison tool
 

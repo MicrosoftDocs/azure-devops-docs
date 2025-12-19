@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
 ---
 
 # Git preferences and settings in Visual Studio
@@ -41,6 +42,10 @@ In this article you learn how to:
 >* Explore Git settings
 >* Modify Git configuration file settings
 >* Modify Visual Studio Git-related settings
+
+## Prerequisites
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 ## Explore Git settings
 

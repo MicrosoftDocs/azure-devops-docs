@@ -6,6 +6,7 @@ description: Use Slack with your Azure DevOps organization to create a service h
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 monikerRange: '<= azure-devops'
 ms.date: 11/21/2023
+ms.custom: sfi-image-nochange
 ---
 
 # Create a service hook for Azure DevOps with Slack
@@ -64,7 +65,7 @@ Refer to the [Slack documentation, Sending messages using Incoming Webhooks](htt
 ## Create a service hook subscription in your organization
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Go to your project **Service Hooks** page. 
 
@@ -86,8 +87,6 @@ Refer to the [Slack documentation, Sending messages using Incoming Webhooks](htt
    When the event occurs in your project, a notification appears in your team's Slack channel.
 
 ::: moniker-end
-
-
 
 ## FAQs
 

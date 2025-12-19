@@ -25,7 +25,11 @@ The TFVC `branch` command copies an item or set of items, including metadata and
 
 ## Prerequisites
 
-To use the `branch` command, have the **Read** permission for the source item, and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Read** permission for the source item and **Check out** and **Merge** permissions for the target folder set to **Allow**. |
+
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 

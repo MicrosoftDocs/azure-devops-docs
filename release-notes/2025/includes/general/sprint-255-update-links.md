@@ -1,0 +1,10 @@
+---
+author: ckanyika
+ms.author: glmorale
+ms.service: azure-devops
+ms.date: 4/23/2025
+ms.topic: include
+---
+
+- [Manage high privilege scopes, pipeline decorators, and unpublished extensions](#manage-high-privilege-scopes-pipeline-decorators-and-unpublished-extensions)
+- [Overlapping Secrets for OAuth apps](#overlapping-secrets-for-oauth-apps)

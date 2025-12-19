@@ -22,7 +22,7 @@ This tutorial uses Docker Registry and Azure Resource Manager service connection
 ## Prerequisites
 
 - An Azure DevOps project with at least **User** permissions.
-- An Azure account. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- An Azure account. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - An [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) instance with push privileges.
 - An [Azure Kubernetes Service (AKS) cluster](/azure/aks/tutorial-kubernetes-deploy-cluster) deployed. You can attach the AKS cluster to your Azure Container registry cluster when you deploy the AKS cluster or afterwards.
 - A GitHub account. [Create a free GitHub account](https://github.com/join).

@@ -19,7 +19,10 @@ The `tf permission` command modifies the user access control list (ACL) and disp
 
 ## Prerequisites
 
-To use the `permission` command, have the **Manipulate security settings** permission set to **Allow** for the folders being modified, be a member of the **Azure DevOps Administrators** security group, or be a system administrator on the local computer (Windows Administrator security group). 
+| Category | Requirements |
+|--------------|-------------|
+|**Permissions**|**Manipulate security settings** permission set to **Allow** for the folders being modified, member of the **Azure DevOps Administrators** security group, or system administrator on the local computer (Windows Administrator security group). |
+
 For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax

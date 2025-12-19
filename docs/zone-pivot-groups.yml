@@ -48,3 +48,19 @@ groups:
     title: ACR registry
   - id: docker-registry
     title: Docker registry
+- id: configure-ghazdo-bundled-individual-products
+  title: Configure GitHub Advanced Security for Azure DevOps
+  prompt: Choose your product experience
+  pivots:
+  - id: standalone-ghazdo
+    title: Standalone
+  - id: bundled-ghazdo
+    title: Bundled
+- id: configure-cli
+  title: Configure Azure CLI
+  prompt: Choose your Azure CLI authentication method
+  pivots:
+  - id: pat
+    title: PAT
+  - id: service-connection
+    title: Service Connection

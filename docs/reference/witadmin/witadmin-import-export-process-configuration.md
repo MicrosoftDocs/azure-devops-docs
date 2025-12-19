@@ -419,8 +419,7 @@ If you modify the test suite workflow, then you have to make a similar update if
 
 ## Related articles
 - [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) 
-- [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)  
-- [Change the work item form layout](../xml/change-work-item-form-layout.md)   
+- [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)   
 - [Edit a work item type definition to add web content to a work item form](..//xml/edit-wit-definition-add-web-content-form.md)
 - [Customizing your work tracking experience](../customize-work.md)   
 - [Work item field index](../../boards/work-items/guidance/work-item-field.md)   

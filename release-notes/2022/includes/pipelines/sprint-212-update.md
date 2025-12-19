@@ -3,6 +3,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/2/2022
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 ### Template Expressions in Repository Resource Definition
 

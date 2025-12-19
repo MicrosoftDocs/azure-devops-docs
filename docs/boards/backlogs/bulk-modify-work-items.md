@@ -32,7 +32,7 @@ With bulk modify, you can edit fields and add or remove tags. You can also reass
 
 Team members who belong to the Contributors group can complete the following tasks. Members provided with Stakeholder access can run multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For more information, see [Get started as a Stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::row:::
    :::column span="1":::
@@ -131,7 +131,7 @@ To open the context menu, select (:::image type="icon" source="../media/icons/ac
 
 This example uses the context menu to move several nonsequential items to the current sprint.
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/bulk-modify/move-iteration.png" alt-text="Screenshot of Product backlog context menu, where you can move several backlog items to a different iteration.":::
 
@@ -157,7 +157,7 @@ For more information about the *Assign To* and *Iteration Path* fields, see [Wor
 
 To assign or modify several fields, choose **Edit** from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. For audit purposes, you can add a description for your bulk update task. For more information about each field, see the [Work item field index](../work-items/guidance/work-item-field.md).
 
@@ -191,7 +191,7 @@ This example adds the *Service* tag to the selected work items.
 
 :::image type="content" source="media/bulk-modify/edit-tags-dialog.png" alt-text="Screenshot of Edit work items dialog where you can add tags.":::
 
-## Related articles
+## Related content
 
 To add fields or customize a work item form, see [Customize your work tracking experience](../../reference/customize-work.md). The method you use depends on the process model that supports your project.  
 

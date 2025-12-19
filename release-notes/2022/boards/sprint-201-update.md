@@ -4,6 +4,7 @@ description: See the Sprint 201 feature updates for Azure Boards, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 3/16/2022
+ms.topic: release-notes
 ---
 
 # Azure Boards - Sprint 201 Update
