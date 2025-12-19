@@ -43,26 +43,6 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 :::image type="content" source="../organizations/projects/media/te-home-page-git-repo-visual-studio-2022.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control in Visual Studio 2022.":::
 
 ::: moniker-end
-::: moniker range="azure-devops-2020"
-
-:::row:::
-:::column span="":::
-
-**Home page with Git in Visual Studio 2019**
-
-:::image type="content" source="../organizations/projects/media/te-home-page-git-repo.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control." lightbox="../organizations/projects/media/te-home-page-git-repo.png":::
-
-:::column-end:::
-:::column span="":::
-
-**Home page with TFVC in Visual Studio 2019**
-
-:::image type="content" source="../organizations/projects/media/te-home-page-tfvc-repo.png" border="false" alt-text="Screenshot of the Team Explorer home page showing TFVC as the form of source control." lightbox="../organizations/projects/media/te-home-page-tfvc-repo.png":::
-
-:::column-end:::
-:::row-end:::
-
-::: moniker-end
 
 ### Visual Studio Git experience 
 
@@ -75,11 +55,6 @@ Visual Studio 2019 and later provides the **Git** menu with quick access to sour
 Visual Studio 2022 also provides the **Git Changes** and **Git Repository** windows:
 
 :::image type="content" source="media/tools/visual-studio-git-changes-repository-2022.png" border="false" alt-text="Screenshot of the Git Changes and Git Repository windows in Visual Studio 2022." lightbox="media/tools/visual-studio-git-changes-repository-2022.png":::
-
-::: moniker-end
-::: moniker range="azure-devops-2020"
-
-:::image type="content" source="media/tools/visual-studio-git-menu.png" border="false" alt-text="Screenshot of the Git menu in Visual Studio." lightbox="media/tools/visual-studio-git-menu.png":::
 
 ::: moniker-end
 

@@ -99,7 +99,7 @@ Each process can define up to 1,024 fields, including system and inherited field
 
 [Work tracking, process, and project limits](object-limits.md)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can add a new field and define a pick list or customize the pick list of an inherited field. 
 
@@ -113,7 +113,7 @@ Each organization or collection can define up to 2,048 picklists. Each picklist 
 
 	To delete an item in the list, highlight the item and then select the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.  
 
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="<=azure-devops"
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
 	> [!div class="mx-imgBorder"]  
@@ -201,7 +201,7 @@ In the following example, we relabel the *Customer Ticket* field to *Ticket Numb
 
 ## Modify Description help text  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Description help text appears when users hover over a field in the work item form. You can customize help text for both custom and inherited fields, but the behavior differs by field type:  
 - **Inherited fields**: Help text can be customized for each work item type and process.  
@@ -213,7 +213,7 @@ Description help text appears when users hover over a field in the work item for
 
 To modify the **Description** help text, choose the work item type you want to modify, choose **Edit** for the field and choose the **Definition** tab. The modified value only affects that field in the process and for that work item type. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Here we modify the Story Points field for User Story. 
 
@@ -226,7 +226,7 @@ Here we modify the Story Points field for User Story.
 
 ## Show, hide, or remove a field   
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can choose to show or hide any field or custom control from appearing on a form. If you want to reinstate a field onto the form later, you can unhide These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
 
@@ -239,7 +239,7 @@ You can choose to show or hide any field or custom control from appearing on a f
 
 <a id="show-hide-field">  </a>
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 ### Hide a field or custom control
 ::: moniker-end
 

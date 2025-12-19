@@ -177,7 +177,7 @@ To change the parameters of the customized views, select the **Customize** butto
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 On a PR **Files** tab, you can use several filters to select files and comments for faster reviews. Select **Filter**, and then select among the options.
 

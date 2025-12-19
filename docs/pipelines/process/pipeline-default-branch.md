@@ -5,7 +5,7 @@ ms.topic: concept-article
 ms.author: sandrica
 author: silviuandrica
 ms.date: 08/06/2024
-monikerRange: 'azure-devops || >= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Pipeline default branch

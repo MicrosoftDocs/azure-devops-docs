@@ -6,10 +6,7 @@ ms.topic: include
 ms.date: 07/09/2020
 ---
 
-
-
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 For the Inheritance process model, you can customize work item types to restrict who can modify a specific field for a work item type. You restrict modification by adding a custom rule to the work item type. 
 
@@ -17,7 +14,6 @@ Using one of the following two conditions, you can make select fields required f
 
 - `current user is a member of a group...`
 - `current user is not a member of a group...`
-
 
 > [!TIP]    
 > To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. For more information, see [Default rules and the rule engine](../organizations/settings/work/rule-reference.md).

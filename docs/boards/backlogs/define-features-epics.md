@@ -53,7 +53,7 @@ When you define features and epics, consider the time required to complete them.
 
 To focus on one level of a backlog at a time, select the name of the backlog. You should see three backlog levels: **Epics**, **Features**, and **Backlog items**. If you don't have these values, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
 1. Select **Boards** > **Backlogs**.

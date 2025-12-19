@@ -72,7 +72,7 @@ For instructions, see [build](../build/ci-build-git.md) and [deploy](../release/
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 |                   Feature                             |                                              Description                                       |      YAML        | Classic Pipeline | Classic Release | 
 |-------------------------------------------------------|------------------------------------------------------------------------------------------------|------------------|------------------|-----------------|

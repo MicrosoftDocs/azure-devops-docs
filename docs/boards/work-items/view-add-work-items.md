@@ -83,7 +83,7 @@ Use the pivot menu to select a focus (for example, "Assigned to me") and then ap
 
 :::row:::
    :::column span="1":::
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       ![Screenshot of web portal, Boards, Work Items, Menu options.](media/view-add/view-menu-cloud-version.png)  
       ::: moniker-end
    :::column-end:::
@@ -95,13 +95,7 @@ Use the pivot menu to select a focus (for example, "Assigned to me") and then ap
       - **My activity**: Items you recently viewed or updated.  
       - **My team(s)**: Items your team members recently viewed or updated.  
       ::: moniker-end
-      ::: moniker range="azure-devops-2020" 
-      - **Assigned to me**: Items assigned to you (sorted by last update).  
-      - **Following**: Items you're following.  
-      - **Mentioned**: Items mentioning you (last 30 days).  
-      - **My activity**: Items you recently viewed or updated.  
-      - **My team(s)**: Items your team members recently viewed or updated.  
-      ::: moniker-end
+      
    :::column-end:::
 :::row-end:::
 

@@ -6,7 +6,7 @@ ms.custom: pipelinesresourcesrefresh
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: mijacobs
 ms.date: 09/08/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines user, I want to learn how to create and add VM resources to environments so I can deploy pipeline jobs to different targets like Test or Production.
 
 ---

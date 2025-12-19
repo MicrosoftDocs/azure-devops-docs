@@ -6,7 +6,7 @@ ms.service: azure-devops-artifacts
 ms.custom: devx-track-dotnet
 ms.topic: tutorial
 ms.date: 09/18/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Publish NuGet packages from the command line (dotnet)
@@ -61,7 +61,7 @@ Before you can publish packages to your feed, you must authenticate with Azure A
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 
@@ -99,7 +99,7 @@ Before you can publish packages to your feed, you must authenticate with Azure A
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 

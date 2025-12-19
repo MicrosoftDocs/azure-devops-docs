@@ -16,7 +16,7 @@ ms.date: 03/12/2025
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Throughout your sprint, you can monitor the sprint burndown report to determine if your team is on track to complete its [sprint plan](../../boards/sprints/assign-work-sprint.md). There are two accessible burndown charts: the in-context Burndown Trend report viewable from a team sprint backlog and the Sprint Burndown widget that you can add to a dashboard.
 
@@ -35,7 +35,7 @@ For an overview of all burndown and burnup charts available to you, see [Burndow
 
 ## The in-context Burndown Trend report
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 The Burndown Trend report is based on either a count of tasks or remaining work estimates, or other numeric fields that you define and update throughout the sprint cycle. For details, see [Sprint planning](../../boards/sprints/assign-work-sprint.md). To open this report, see [Open a Sprint backlog](#open-chart).
 
@@ -61,7 +61,7 @@ Because individual team members might only update their work items once a week o
 
 ## The Sprint Burndown widget
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 In the widget catalog, you find two versions of the Sprint Burndown widget: the Analytics-based **Sprint Burndown** and **Sprint Burndown (Legacy)**, which is built from the work tracking data store.  
 
@@ -105,7 +105,7 @@ If your dashboard already has a legacy version available, you can easily upgrade
 
 ## Team activities to track tasks and Remaining Work
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 To monitor sprint burndown, your team must [schedule sprints](../../boards/sprints/define-sprints.md) and [assign work to those sprints](../../boards/sprints/assign-work-sprint.md).
 
@@ -140,7 +140,7 @@ If your sprint burndown chart appears empty, check these points:
 
 You view the in-context sprint burndown report from a team's Sprint backlog.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your web portal, open your team's sprint backlog.
 
@@ -166,7 +166,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 
 ## View the in-context Burndown Trend report
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. To open the Sprint burndown report, select **Analytics**.
 
@@ -214,7 +214,7 @@ The selections you make are only set for you, and persist across sessions until 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Add the report to a dashboard
 
@@ -228,7 +228,7 @@ The selections you make are only set for you, and persist across sessions until 
 
 ## Add the Sprint Burndown widget to a dashboard
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can add the Sprint Burndown widget to a dashboard and select the team whose progress you want to monitor. You configure these widgets for one or more teams.
 
@@ -243,7 +243,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
    :::image type="content" source="media/add-widgets/configure-widget.png" alt-text="Screenshot shows the Configure menu item.":::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Configure the Analytics-based Sprint Burndown widget
 
@@ -269,7 +269,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Configure the Sprint Burndown (Legacy) widget
 
@@ -293,7 +293,7 @@ To view a past sprint and its burndown chart, select the sprint from the Sprint 
 
 You can review sprint burndown in-context reports to show the team patterns in execution. The burndown charts maintain a record of the team's ability to plan and estimate.  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 #### [May](#tab/may)
 

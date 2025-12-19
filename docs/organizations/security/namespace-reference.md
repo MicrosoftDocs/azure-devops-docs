@@ -903,7 +903,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="":::
       BoardsExternalIntegration
@@ -920,7 +920,7 @@ The following table describes the security namespaces and permissions that aren'
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="":::
       Chat

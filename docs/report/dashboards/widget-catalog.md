@@ -207,7 +207,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
    :::column-end:::
 :::row-end:::  
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       ### Sprint Burndown (Analytics)  
@@ -222,7 +222,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       ### Sprint Burndown (Legacy)

@@ -15,7 +15,7 @@ monikerRange: "<=azure-devops"
 
 This article describes how to use Azure Pipelines to work with .NET Core projects. The article walks you through the following tasks:
 
-::: moniker range="<=azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 - Create a .NET Core web app and upload it to a GitHub repository.
 - Create an Azure DevOps project and an Azure Pipelines pipeline to build the project.
@@ -115,7 +115,6 @@ If you have a pipeline you want to use, you can skip this section. Otherwise, yo
 8. Examine the new YAML pipeline code. You can customize the YAML file for your requirements. For example, you could add a [task to install a different .NET SDK](#build-environment) or to test and publish your project.
 
 ::: moniker-end
-<!--::: moniker range=">= azure-devops-2020 <= azure-devops-2022"-->
 
 9. When you're ready, select **Save and run**.
 
@@ -178,16 +177,6 @@ If you have a pipeline you want to use, you can skip this section. Otherwise, yo
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-
-11. From the **Save & queue** dropdown list at the top of the page, select **Save and queue**.
-
-12. On the **Save build pipeline and queue** screen, select **Save and queue**.
-
-13. When the **Build #nnnnnnnn.n has been queued** message appears, select the link to see your pipeline in action.
-
-::: moniker-end
-
 ::: moniker range="azure-devops-2022"
 
 11. From the **Save & queue** dropdown list at the top of the page, select **Save and queue**.
@@ -207,7 +196,7 @@ You now have a working pipeline that's ready to customize.
 <a name="build-environment"></a>
 ## Set up your build environment
 
-::: moniker range="<=azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 Azure Pipelines uses [self-hosted agents](../agents/agents.md#install) to build your .NET Core project. You can use the .NET Core SDK and runtime on [Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), [macOS](../agents/osx-agent.md), or [Docker](../agents/docker.md) agents. Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agents.
 
@@ -810,7 +799,6 @@ You can publish your NuGet packages to your Azure Artifacts feed by using the [N
 ### Publish a ZIP file archive to a web app
 
 To create a ZIP file archive that's ready to publish to a web app, add the following snippet to *azure-pipelines.yml*. Run this task after you build your app, near the end of your pipeline in most cases. For example, run this task before you deploy to an Azure web app on Windows.
-
 
 ```yaml
 steps:

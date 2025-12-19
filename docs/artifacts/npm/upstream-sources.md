@@ -5,7 +5,7 @@ ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 10/08/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -20,7 +20,6 @@ Azure Artifacts upstream sources enable developers to consume packages from publ
 | **Product**        | **Requirements**   |
 |--------------------|--------------------|
 | **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).|
-
 
 ## Get the tools
 

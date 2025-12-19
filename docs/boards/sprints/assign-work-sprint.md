@@ -58,7 +58,7 @@ Your sprint backlogs are one of three classes of backlogs available to you. For 
 
 For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 From your web browser, open your product backlog. 
 

@@ -30,7 +30,7 @@ For Azure DevOps Services, Analytics is always on. You can't disable it or pause
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops" 
+::: moniker range="<azure-devops"
 For Azure DevOps Server 2020 and later on-premises versions, Analytics is automatically installed with each project collection you create. 
 ::: moniker-end
 
@@ -72,7 +72,7 @@ The following table summarizes the permissions available to be set and the defau
 
 To capture meaningful data, software teams must perform meaningful actions. The following sections provide general recommendations based on the type of data you want to report on. 
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 > [!NOTE]   
 > Branch, Pipeline, and Test entity sets are supported with Analytics **v3.0-preview** and later versions. Snapshot entity sets to support pipeline jobs, task agent requests, and task agent pool size were added with Analytics **v4.0-preview** version. Make sure you specify the Analytics version that supports the entity set of interest. 
 
@@ -96,7 +96,7 @@ Define test cases and link test cases to their parent PBIs using the Tested By l
 > [!NOTE]   
 > All custom fields added to a work item type are available for use in reports. Custom fields are labeled with *Custom_DisplayNameOfField*, where all spaces have been removed from the display name. 
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 ### Test plans 
 

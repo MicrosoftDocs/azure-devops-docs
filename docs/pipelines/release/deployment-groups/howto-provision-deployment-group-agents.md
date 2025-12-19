@@ -155,41 +155,6 @@ To register and install the deployment agent by using an ARM template, add a res
 
 :::moniker-end
 
-:::moniker range="< azure-devops-2022"
-
-```json
-"resources": [
-  {
-    "name": "[concat(parameters('vmNamePrefix'),copyIndex(),'/TeamServicesAgent')]",
-    "type": "Microsoft.Compute/virtualMachines/extensions",
-    "location": "[parameters('location')]",
-    "apiVersion": "2015-06-15",
-    "dependsOn": [
-        "[resourceId('Microsoft.Compute/virtualMachines/',
-                      concat(parameters('vmNamePrefix'),copyindex()))]"
-    ],
-    "properties": {
-      "publisher": "Microsoft.VisualStudio.Services",
-      "type": "TeamServicesAgent",
-      "typeHandlerVersion": "1.0",
-      "autoUpgradeMinorVersion": true,
-      "settings": {
-        "VSTSAccountName": "[parameters('VSTSAccountName')]",
-        "TeamProject": "[parameters('TeamProject')]",
-        "DeploymentGroup": "[parameters('DeploymentGroup')]",
-        "AgentName": "[parameters('AgentName')]",
-        "AgentMajorVersion": "auto|N",
-        "Tags": "[parameters('Tags')]"
-      },
-      "protectedSettings": {
-      "PATToken": "[parameters('PATToken')]"
-     }
-   }
-  }
-]
-```
-:::moniker-end
-
 In the preceding code:
 
 - `VSTSAccountName` is the required Azure Pipelines organization to use. For example, if your Azure DevOps URL is `https://dev.azure.com/contoso`, just specify `contoso`

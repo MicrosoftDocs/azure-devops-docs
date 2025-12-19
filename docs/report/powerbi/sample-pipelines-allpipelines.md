@@ -8,7 +8,7 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 12/14/2022
 ---
 
@@ -26,19 +26,15 @@ As shown in the following image, you can select any pipeline from the **Pipeline
 
 :::image type="content" source="media/pipeline-reports/all-pipelines-outcome-summary-report-select-pipeline.png" alt-text="Screenshot of report that shows the outcome summary for the selected pipeline only.":::
 
-
 [!INCLUDE [temp](includes/preview-note.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-
 ## Sample queries
 
-
 You can use the following queries of the `PipelineRuns` entity set to create different but similar pipeline outcome summary reports. 
-
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
@@ -207,9 +203,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand Pipeline column in Power Query Editor
 

@@ -54,7 +54,7 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **Web portal** <sup>1</sup>  
@@ -71,7 +71,7 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **Web portal (Grid)**  
@@ -135,7 +135,7 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
 ::: moniker-end
 
 > [!NOTE]   
-> ::: moniker range=">= azure-devops-2020"
+> ::: moniker range="<=azure-devops"
 > 1. With the release of Azure DevOps Server 2020, the web portal for Azure Test Plans was significantly updated. Many new features were added to support copy, clone, import, and export. For an overview, see [Navigate Test Plans](navigate-test-plans.md).
 > 1. The Test Case Management (TCM) command-line tool is installed when you install Visual Studio 2017 or earlier versions. Examples provided in this article reflect the options available with the Visual Studio 2017 version. Earlier versions may support fewer options. For details, see [Work with the TCM command-line tool](#work-tcm-cli). 
 > 1. REST API commands to support cloning of test plans and test suites were added with version 5.0, corresponding with Azure DevOps 2019. 
@@ -252,7 +252,7 @@ Cloning proves especially useful when you need to branch your application into t
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Select **Test Plans** > **Test plans**, from your project.
 2. Choose the test plan you want to copy from the **Mine** or **All** page.  
@@ -364,7 +364,7 @@ When you're creating the test plan for a new sprint, you often want to repeat so
 >- Shared steps referenced by the test cases are also cloned and created in the destination project.
 >- You can't clone test cases from and to the same test plan, even into a different suite. To accomplish this scenario, you must first move the test cases to a different, temporary test plan. Then, use the temporary test plan as the source plan and clone the test cases back to the source test plan by putting the ID into the destination test plan place. Shared steps present in the test cases are also duplicated in this process. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 When you're working with Azure Test Plans, you can import a test suite from one test plan into another test plan within the current project. It doesn't matter whether the test plans are within the same project. This process involves copying or cloning the test suite, resulting in the creation of a new test suite. Additionally, any subtest suites also get duplicated. The test cases referenced by the test suites don't duplicate; instead, they get referenced by the cloned test suites.
 ::: moniker-end
@@ -375,7 +375,7 @@ To use the same test cases in different suites and plans, copy and paste test ca
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Select **Test Plans** > **Test plans**.
 2. Choose the test plan where you want to import a test suite from the **Mine** or **All** page.
@@ -519,7 +519,7 @@ Completed on:         10-Nov-21 5:00:30 PM
 
 ***
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 <a id="copy-test-case"></a> 
 
@@ -581,7 +581,7 @@ From the Internet Explorer, Microsoft Edge, or Chrome browsers, you can copy tes
 
 <a id="bulk-import-export"></a> 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Bulk import or export test cases 
 

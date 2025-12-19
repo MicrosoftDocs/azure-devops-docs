@@ -256,7 +256,7 @@ steps:
 - checkout: MyGitHubRepo
 ```
 
-:::moniker range=">azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 ## Triggers
 

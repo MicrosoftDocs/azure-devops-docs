@@ -138,7 +138,7 @@ You can configure other Azure Boards/Azure DevOps Projects, GitHub.com repositor
 
 If you encounter a problem with a connection, we recommend that you remove the connection and start over with a new connection.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your project in Azure DevOps, go to **Project settings** > **GitHub connections**.
 

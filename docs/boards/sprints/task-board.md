@@ -49,16 +49,9 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-
-> [!NOTE]  
-> Users with **Stakeholder** access can't add tasks, update fields displayed on cards, drag-and-drop tasks to update status, or use the **Planning** pane to change the sprint assignment.   
-
-::: moniker-end
-
 ## Open the sprint Taskboard for your team
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your project, open the sprint backlog for your team.
 
@@ -87,7 +80,7 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 Each team can customize their **Taskboard** in the following ways: 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 - [Add or rename columns](customize-taskboard.md#add-columns).
 - [Customize cards](customize-taskboard.md#choose-fields) to show another fields or change card color based on specified field criteria.
@@ -95,7 +88,7 @@ Each team can customize their **Taskboard** in the following ways:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 An administrator can customize the **Taskboard** for all teams in the following ways:  
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
@@ -127,7 +120,7 @@ During your daily Scrum, you can filter your **Taskboard** to help focus on item
 *	Group by Backlog items or Group by stories to monitor progress of your product backlog items, stories, requirements, or bugs.
 *	Group by People when you want to monitor progress of individual team members.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 > [!NOTE]
 > Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the background.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
 ::: moniker-end

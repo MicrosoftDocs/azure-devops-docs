@@ -32,7 +32,7 @@ For more information, see [Create, view, and manage pull requests](../../repos/g
 
 To enable automatic completion of linked work items when you merge a pull request, select the checkbox **Complete linked work items after merging**, as shown in the following image. The system saves your selection as the default for future PRs. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/automate-state-transition/complete-pull-request-dialog.png" alt-text="Complete pull request dialog, Complete linked work items after merging":::
 ::: moniker-end 
 
@@ -47,19 +47,16 @@ The system doesn't automatically update the work item state to **Done**, **Close
 
 For more information about customizing workflows, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Specify the workflow state of linked work items 
 
 You can transition a work item to a specific workflow state by entering the information in the pull request description. Prefix the **#ID** with a valid workflow state for the mentioned work item. This approach gives you precise control over how work items transition when you merge code changes.
 ::: moniker-end 
 
-::: moniker range="azure-devops-2020"
-> [!NOTE]   
-> This feature requires Azure DevOps Server 2020.1 update or later version.
-::: moniker-end 
+ 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 The following example shows user stories that transition—one to the **Resolved** state and the other to the **Review** state. The system also marks two tasks as **Done**. 
 

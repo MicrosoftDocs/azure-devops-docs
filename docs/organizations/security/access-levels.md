@@ -153,7 +153,7 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 :::row:::
    :::column span="3":::

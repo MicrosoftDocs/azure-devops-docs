@@ -50,7 +50,7 @@ Individual contributors can customize their experience in Azure DevOps by settin
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **General**
@@ -235,13 +235,6 @@ From the administrative **Project settings** page, you can configure settings av
 From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
 
 ![Screenshot of Project settings page, Azure DevOps Server 2022.](media/about/project-settings-server-2022.png)  
-::: moniker-end
-
-::: moniker range="<azure-devops-2022"
-**Project-level settings**  
-From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
-
-![Screenshot of Project settings page, Azure DevOps Server versions.](media/about/project-settings-server-2020.png)  
 ::: moniker-end
 
 :::row:::
@@ -524,15 +517,6 @@ From the administrative page for a collection, you can configure the settings sh
 
 ::: moniker-end
 
-::: moniker range="<azure-devops-2022"
-**Collection-level settings**  
-
-From the administrative page for a collection, you can configure the settings shown in the following image. 
-
-![Screenshot of Collection settings options, Azure DevOps Server 2019-2020 versions.](media/about/collection-settings-options-server-versions.png) 
-
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).
@@ -555,7 +539,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **Preview features**

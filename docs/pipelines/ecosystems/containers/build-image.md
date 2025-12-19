@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.custom: linux-related-content
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
 ms.date: 05/13/2025
-monikerRange: '>=azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Quickstart: Build a container image to deploy apps using Azure Pipelines
@@ -21,7 +21,6 @@ In this quickstart, you learn to build a container image for app deployment usin
 | **Azure DevOps** | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; To create a pipeline, users need to be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Build Administrators and Project Administrators groups](../../../organizations/security/permissions.md#pipeline-or-build-object-level) can also manage pipelines. |
 | **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../../library/service-endpoints.md) to authorize Azure Pipelines.|
 | **Azure** | An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
-
 
 ## Fork the sample repository
 
@@ -171,7 +170,6 @@ steps:
 ### How can I use a self-hosted agent?
 
 Docker must be installed and the engine or daemon running on the agent's host. If Docker isn't installed, add the [Docker installer task](/azure/devops/pipelines/tasks/reference/docker-installer-v0) to your pipeline. Add the **Docker Installer Task** before the **Docker Task**.
-
 
 ### How can I create a script-based Docker build instead of using the Docker task?
 

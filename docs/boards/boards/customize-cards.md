@@ -36,7 +36,7 @@ Each team can independently customize their board cards. Customizations aren't i
 
 You can customize the following aspects of board cards:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 | Setting | Purpose |
 |---------|---------|
 | **[Fields](#add-fields-to-cards)** | Control which fields appear on cards, including parent work item information |

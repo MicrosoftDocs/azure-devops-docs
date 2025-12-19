@@ -5,7 +5,7 @@ ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 09/11/2023
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Use Npm scopes in Azure Artifacts
@@ -59,7 +59,6 @@ Make sure to include both the scope and package names in your package.json file 
     ```
 
 - **Example**:
-
 
     ```.npmrc file
     @local:registry=https://pkgs.dev.azure.com/FabrikamOrg/NpmDemo/_packaging/FabrikamFeed/npm/registry/

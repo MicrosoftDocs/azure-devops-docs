@@ -6,7 +6,7 @@ ms.author: rabououn
 author: ramiMSFT
 ms.topic: tutorial
 ms.date: 4/01/2021
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 

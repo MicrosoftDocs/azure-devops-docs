@@ -4,7 +4,7 @@ description: Learn about using template features to help improve pipeline securi
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.date: 09/12/2025
 ms.topic: concept-article
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 #customer intent: As an Azure DevOps user, I want to understand how pipeline templates can help increase security, so I can use templates to do security tasks and help prevent malicious code infiltration and execution.
 ---
 

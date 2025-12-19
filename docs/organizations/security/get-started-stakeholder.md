@@ -141,7 +141,7 @@ From the board, you can't add work items, but you can open them and annotate the
 
 For more information, see [View and add work items](../../boards/work-items/view-add-work-items.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Update work items
 
@@ -154,10 +154,6 @@ Drag a work item downstream as you finish work.
 :::image type="content" source="../../boards/boards/media/alm-cc-move-card.png" alt-text="Screenshot that shows a board that uses an Agile template to update the status of a work item.":::
 
 ::: moniker-end  
-::: moniker range="azure-devops-2020"
-> [!NOTE]
-> Stakeholders can only use the drag-and-drop method to move cards to different columns with the Azure DevOps Server 2020.1 update. For more information, see the [Release Notes](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).
-::: moniker-end
 
 ### Add details
 

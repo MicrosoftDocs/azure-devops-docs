@@ -7,7 +7,7 @@ ms.custom: template-how-to-pattern
 ai-usage: ai-assisted
 ms.author: jukullam
 author: juliakm
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Add, remove, and use build tags
@@ -62,7 +62,6 @@ Output:
 ```
 
 ---
-
 
 ## Remove a build tag
 

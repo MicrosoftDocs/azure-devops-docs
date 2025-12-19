@@ -57,7 +57,7 @@ For more information, see [Cumulative flow, lead time, and cycle time guidance](
 
 The configuration dialog is the same for the Cycle Time and Lead Time widgets. Set up these widgets for a team. For more information, see [Create or add a team](../../organizations/settings/add-teams.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu icon, and then select **Configure** to open the configuration dialog.
 1. Modify the title, and then select the values you want to monitor:

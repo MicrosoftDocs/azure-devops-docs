@@ -35,7 +35,7 @@ The following types of events are available for use in service hooks. For a list
   * [Release deployment completed](#ms.azure-devops-release.deployment-completed-event)
   * [Release deployment started](#ms.azure-devops-release.deployment-started-event)
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 * **Pipeline**
   * [Run state changed](#run.statechanged)

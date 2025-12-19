@@ -9,7 +9,7 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 01/24/2023
 ---
 
@@ -36,13 +36,11 @@ Specifically, this article provides sample queries for generating the following 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-
 ## Sample queries
 
 You can use the following queries of the `TestRuns` entity set to create different but similar pipeline test summary trend reports. The `TestRuns` entity set for the following queries are available only when you include test tasks within a pipeline definition.  
 
 [!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
-
 
 ### Test summary trend for Build workflow  
 
@@ -101,7 +99,6 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 ```
 
 ***
-
 
 ### Test summary trend for Release workflow
 
@@ -527,7 +524,6 @@ Your report should look similar to the following image.
  
 
 [!INCLUDE [temp](includes/pipeline-test-task-resources.md)]
-
 
 ## Related articles
 

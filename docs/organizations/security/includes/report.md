@@ -24,7 +24,7 @@ ms.date: 01/26/2022
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       View team and project dashboards  
@@ -46,7 +46,7 @@ ms.date: 01/26/2022
 
   
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       Add and configure project dashboards

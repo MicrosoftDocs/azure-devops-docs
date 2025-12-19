@@ -5,7 +5,7 @@ ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 02/19/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
  
 # Promote packages and manage feed views
@@ -190,44 +190,6 @@ See [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/npm/update
     ```
 
 See [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/maven/update-package-version#request-body) and [Maven - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/maven/update-package-version) for more details.
-
----
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-### [NuGet](#tab/nugetserver)
-
-- **Collection scoped feed**:
-
-    ```HTTP
-    https://{instance}/{collection}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=6.0-preview.1
-    ```
-
-- **Project scoped feed**:
-   
-    ```HTTP
-    https://{instance}/{collection}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=6.0-preview.1
-    ```
-
-See [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/nuget/update-package-version#request-body) and [NuGet - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/nuget/update-package-version) for more details.
-
-### [Npm](#tab/npmserver)
-  
-- **Collection scoped feed**:
-
-    ```HTTP
-    https://{instance}/{collection}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=6.0-preview.1
-    ```
-
-- **Project scoped feed**:
-    
-    ```HTTP
-    https://{instance}/{collection}/{project}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=6.0-preview.1
-    ```
-
-See [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/npm/update-package#request-body) and [Npm - Update Package](/rest/api/azure/devops/artifactspackagetypes/npm/update-package) for more details.
 
 ---
 

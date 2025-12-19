@@ -54,7 +54,7 @@ Install an extension to your organization by doing the following steps.
 
 #### [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 2. Select the shopping bag icon, and then select **Browse Marketplace**.
@@ -160,7 +160,7 @@ version: 5.0.1.34507
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 **Manual installation:**
 

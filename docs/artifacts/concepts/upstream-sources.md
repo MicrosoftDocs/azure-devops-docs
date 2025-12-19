@@ -5,7 +5,7 @@ ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.service: azure-devops-artifacts
 ms.topic: overview
 ms.date: 09/11/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 

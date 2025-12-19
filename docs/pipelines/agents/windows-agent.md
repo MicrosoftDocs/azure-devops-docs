@@ -113,7 +113,6 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 > [!IMPORTANT]
 > For security reasons we strongly recommend making sure the agents folder (`C:\agents`) is only editable by admins.
 
-
 > [!Note]
 > Please avoid using mintty based shells, such as git-bash, for agent configuration. Mintty is not fully compatible with native Input/Output Windows API ([here](https://github.com/mintty/mintty/wiki/Tips#inputoutput-interaction-with-alien-programs) is some info about it) and we can't guarantee the setup script will work correctly in this case.
 
@@ -149,7 +148,7 @@ When you register an agent, choose from the following authentication types, and 
 
 [!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
-:::moniker range="<= azure-devops-2022"
+:::moniker range="=azure-devops-2022"
 
 Windows agents have the following two additional authentication options on Azure DevOps Server and TFS.
 
@@ -312,7 +311,7 @@ The help provides information on authentication alternatives and unattended conf
 
 If you're running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you're running the agent as a service, restart the agent by following the steps in [Run as a service](#run-as-a-service).
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 ### How do I set different environment variables for each individual agent?
 
 Create a `.env` file under agent's root directory and put the environment variables you want to set into the file in the following format, and then restart the agent.

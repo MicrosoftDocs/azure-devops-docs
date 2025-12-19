@@ -88,7 +88,7 @@ Several sample reports show how to generate reports from either an Analytics vie
 
 To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md). For specific examples, see the following articles:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 |Service  |Sample reports  |
 |------------------|---------------------|

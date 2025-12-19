@@ -143,7 +143,7 @@ The following table summarizes the policies you can define to customize a branch
    :::column-end:::
 :::row-end:::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       [**Limit merge types**](branch-policies.md#limit-merge-types)
