@@ -55,11 +55,6 @@ To see the configurable widgets for a single team or multiple teams, review the 
 After you determine the dashboard type, [create the dashboard](dashboards.md). You can also streamline the process by [copying another team's dashboard](copy-dashboard.md) and modifying the widgets for the needs of your team.
 
 ::: moniker-end 
-::: moniker range="azure-devops-2020"
-
-After you determine the dashboard type, [create the dashboard](dashboards.md).
-
-::: moniker-end
 
 ## Share the dashboard with your team and stakeholders
 

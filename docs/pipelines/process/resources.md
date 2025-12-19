@@ -146,7 +146,6 @@ resources:
     - PreProduction
 ```
 
-
 <a name="triggers"></a>
 #### Pipeline resource triggers
 
@@ -273,7 +272,7 @@ The optional `patterns` property defines patterns that represent files to downlo
 
 Artifacts from the `pipeline` resource download to the *$(PIPELINE.WORKSPACE)/\<pipeline-identifier>/\<artifact-identifier>* folder. For more information, see [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md). For an alternative way to download pipeline artifacts, see [Download artifacts](../artifacts/pipeline-artifacts.md#download-artifacts).
 
-:::moniker range=">=azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 #### Pipeline resource variables
 
@@ -388,7 +387,7 @@ The following table describes the `repository` resource types:
 
 #### Repository resource variables
 
-:::moniker range=">=azure-devops-2020 <azure-devops"
+:::moniker range="<azure-devops"
 
 The metadata for a repository resource is available to all jobs in every run as runtime variables. The `<alias>` is the `repository` identifier from your `repository` resource definition.
 
@@ -555,7 +554,7 @@ steps:
 
 ```
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 <a name="define-a-packages-resource"></a>
 ### Packages resource

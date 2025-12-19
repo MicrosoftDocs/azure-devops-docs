@@ -190,7 +190,7 @@ be87c31a-fbb3-4377-b207-57a8caf65e31  MyFirstProject1  Private       Agile      
 
 #### [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 View a list of projects from your web browser.
 

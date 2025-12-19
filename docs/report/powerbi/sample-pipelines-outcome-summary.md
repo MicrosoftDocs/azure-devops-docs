@@ -8,7 +8,7 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020' 
+monikerRange: "<=azure-devops"
 ms.date: 12/14/2022
 ---
 
@@ -30,10 +30,7 @@ The following image shows an example of an outcome summary report.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-
-
 ## Sample queries
-
 
 You can use the following queries of the `PipelineRuns` entity set to create different but similar pipeline outcome summary reports. 
 
@@ -93,7 +90,6 @@ $apply=filter(
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 [!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
-
 
 ### Query breakdown
 
@@ -318,7 +314,6 @@ You may want to view the outcome summary of a pipeline for only specific **Build
 - Select **Slicer** from the **Visualizations** pane and add the `Pipeline.PipelineName` to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary.  
 
-
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
@@ -424,7 +419,6 @@ aggregate(
 
 *** 
 
-
 [!INCLUDE [temp](includes/rename-query.md)]
 
 ## Change column data type 
@@ -456,7 +450,6 @@ You can rename column fields. For example, you can rename the column `Pipeline.P
 	The following image shows the resulting report.  
 
 	:::image type="content" source="media/pipeline-reports/single-pipeline-run-split-by-outcome-report.png" alt-text="Screenshot of Power BI sample Pipelines Outcome Summary report.":::
-
 
 ## Related articles
 

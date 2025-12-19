@@ -133,23 +133,6 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-## Azure Pipelines menu and toolbar
-
-| Name                                   | Target ID                                                               | Preview                  |
-| -------------------------------------- | ----------------------------------------------------------------------- | ------------------------ |
-| Completed build menu                   | `ms.vss-build-web.completed-build-menu`                                 | :::image type="content" source="media/build/completed-build-actions.png" alt-text="Screenshot of completed build actions.":::              |
-| Build definitions menu                 | `ms.vss-build-web.build-definition-menu`                                | :::image type="content" source="media/build/build-definition-actions.png" alt-text="Screenshot of build definition actions.":::            |
-| Test results toolbar action            | `ms.vss-test-web.test-results-actions-menu`                             | :::image type="content" source="../../media/extension-test-custom-action.png" alt-text="Screenshot of test results toolbar action.":::     |
-| Test result details tab                | `ms.vss-test-web.test-result-details-tab-items`                         | :::image type="content" source="../../media/extension-test-custom-tab.png" alt-text="Screenshot of test result details tab.":::            |
-| Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | :::image type="content" source="media/release/definition-explorer-context-menu.png" alt-text="Screenshot of definition explorer context menu."::: |
-| Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | :::image type="content" source="media/release/definition-explorer-toolbar-menu.png" alt-text="Screenshot of definition explorer toolbar menu."::: |
-| Release summary toolbar menu           | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`             | :::image type="content" source="media/release/release-summary-toolbar-menu.png" alt-text="Screenshot of release summary toolbar menu.":::  |
-| Release summary tab                    | `ms.vss-releaseManagement-web.release-details-view`                     | :::image type="content" source="media/release/release-summary-tab.png" alt-text="Screenshot of release summary tab.":::                    |
-| Release summary section                | `ms.vss-releaseManagement-web.release-details-summary-tab`              | :::image type="content" source="media/release/release-summary-section.png" alt-text="Screenshot of release summary section.":::            |
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 ## Azure Pipelines menu and toolbar

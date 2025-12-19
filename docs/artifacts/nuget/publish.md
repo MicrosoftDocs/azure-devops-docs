@@ -5,7 +5,7 @@ ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 01/14/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Publish NuGet packages from the command line (NuGet.exe)
@@ -58,7 +58,7 @@ This article guides you through setting up your project and publishing your NuGe
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 
@@ -122,5 +122,4 @@ nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
 - [Publish packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
 
 - [Restore NuGet packages (NuGet.exe)](restore-nuget-packages-nuget-exe.md)
-
 

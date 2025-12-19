@@ -48,7 +48,7 @@ After you update the comment, select **Update**. To delete the comment, confirm 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Add a reaction to a comment
 

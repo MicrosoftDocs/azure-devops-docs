@@ -4,7 +4,7 @@ description: Learn how to connect to your feed and restore NuGet packages using 
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 01/14/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Restore NuGet packages from the command line (NuGet.exe)
@@ -57,7 +57,7 @@ This article guides you through setting up your project and restoring NuGet pack
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 

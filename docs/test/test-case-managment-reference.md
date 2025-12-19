@@ -12,8 +12,6 @@ ms.date: 01/18/2022
 ms.update-cycle: 1095-days
 ---
 
-
-
 # Test case management commands (tcm.exe)  
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
@@ -43,8 +41,6 @@ To exercise the TCM command-line tool, have the following in place:
 
 The following table provides links to articles that describe how to exercise the corresponding **tcm.exe** command. Most commands are supported on both Azure DevOps Server, all versions, and Azure DevOps Services.  
 
-
-
 ---
 :::row:::
    :::column span="2":::
@@ -72,7 +68,7 @@ The following table provides links to articles that describe how to exercise the
 :::row:::
    :::column span="2":::
    [`tcm fieldmapping`](/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience): Imports or exports an XML file for defining the resolution types, bug type, and failure types.   
-   ::: moniker range=">= azure-devops-2020"
+   ::: moniker range="<=azure-devops"
    > [!NOTE]  
    > You can only exercise this command on collections that use the Online XML process model. For Azure DevOps Server 2020 and later versions that use the Inherited process model, import of XML files aren't supported. 
    ::: moniker-end

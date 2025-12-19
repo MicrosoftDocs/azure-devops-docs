@@ -7,7 +7,7 @@ ms.author: rabououn
 author: ramiMSFT
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.date: 06/20/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -45,7 +45,7 @@ This article guides you through creating a feed, configuring your project, and p
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then go to your project.
 

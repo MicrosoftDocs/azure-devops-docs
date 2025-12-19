@@ -5,7 +5,7 @@ ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.service: azure-devops-artifacts
 ms.topic: upgrade-and-migration-article
 ms.date: 06/16/2023
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -40,7 +40,6 @@ If you're currently utilizing Active Directory-backed file shares, it's probable
   - **nuget.exe**: Credential acquisition happens automatically after you install the [Azure Artifacts Credential Provider](../nuget/nuget-exe.md).
 
 - **Authorization:** Make sure that any user, service, organization, or group requiring access to your packages has the necessary permissions in place. See the [permissions](#plan-your-access-control-strategy) section for more details.
-
 
 Migrating your packages is a 4-step process:
 

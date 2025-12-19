@@ -245,7 +245,7 @@ Quickly link work items to parent portfolio items by dragging them within your b
 
 6. (Optional) Within an expanded hierarchical view, drag a work item to a different parent to reparent it.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 > [!TIP]  
 > To view unparented work items, add the **Parent** field as a column. The parent item's **Title** appears for linked work items.

@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: anian
 ms.topic: how-to
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/05/2024
 ---
 

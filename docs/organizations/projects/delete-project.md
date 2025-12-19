@@ -65,7 +65,7 @@ Use the following procedures to save data that users most care about, such as so
 
 For more information, see our [Data Protection Overview](../../organizations/security/data-protection.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Delete project
 

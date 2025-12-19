@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Templates let you define reusable content, logic, and parameters in YAML pipelines. To work with templates effectively, you need to have a basic understanding of [Azure Pipelines key concepts](../get-started/key-pipelines-concepts.md) such as stages, steps, and jobs. 
 
@@ -36,7 +36,6 @@ To take full advantage of templates, you should also use [template expressions](
 | **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../library/service-endpoints.md) to authorize Azure Pipelines.|
 | **Azure** | An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
 
-
 ## Imposed limits on template updates
 
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
@@ -52,7 +51,7 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 
 ## Extend from a template
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 To increase security, you can enforce that a pipeline extends from a particular template. The file `start-extends-template.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. 
 In `start-extends-template.yml`, if a `buildStep` gets passed with a script step, then it's rejected and the pipeline build fails. 
@@ -141,7 +140,7 @@ steps:
 
 ## Insert a template
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can insert content from one YAML and reuse it in a different YAML. Inserting content from one YAML to another saves you from having to manually include the same logic in multiple places. The `insert-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 

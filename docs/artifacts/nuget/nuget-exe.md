@@ -5,7 +5,7 @@ ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 04/08/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -59,7 +59,7 @@ Azure Artifacts enables developers to download NuGet packages from various sourc
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
@@ -164,5 +164,4 @@ export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
 - [Publish NuGet packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
 
 - [Restore NuGet packages (NuGet.exe)](restore-nuget-packages-nuget-exe.md)
-
 

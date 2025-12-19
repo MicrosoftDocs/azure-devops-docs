@@ -8,7 +8,7 @@ ms.author: shdalv
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
 ---
 
@@ -19,7 +19,6 @@ ms.date: 01/19/2023
 When you've multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. An example of the configuration by outcome matrix report is shown in the following image.
 
 :::image type="content" source="media/odatapowerbi-configurationbyoutcome.png" alt-text="Screenshot of Power BI Configuration by Outcome matrix report.":::
-
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -35,7 +34,6 @@ For the report to generate useful data, the team must carry out the following ac
 
 	> [!NOTE]  
 	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.   
-
 
 ## Sample queries
 
@@ -84,7 +82,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 ### Query breakdown
 
 The following table describes each part of the query.
-
 
 :::row:::
    :::column span="1":::
@@ -144,8 +141,6 @@ The following table describes each part of the query.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
-
-
 
 ## Change the data type of select columns  
 

@@ -120,7 +120,7 @@ The `retryCountOnTaskFailure` property specifies the number of times to retry th
 >[!NOTE]
 >The `retryCountOnTaskFailure` property requires agent version 2.194.0 or later. On Azure DevOps Server 2022, retries aren't supported for [agentless tasks](./phases.md#agentless-jobs-supported-tasks). For more information, see [Azure DevOps service update November 16, 2021 - Automatic retries for a task](/azure/devops/release-notes/2021/sprint-195-update#automatic-retries-for-a-task) and [Azure DevOps service update June 14, 2025 - Retries for server tasks](/azure/devops/release-notes/2024/sprint-240-update#retries-for-server-tasks).
 
-:::moniker range="> azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 <a name="step-target"></a>
 ### Target

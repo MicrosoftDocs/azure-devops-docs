@@ -9,7 +9,7 @@ ms.date: 04/04/2022
 You can use the following keyboard shortcuts when you work on a page under **Repos**. To view the valid shortcuts, select **?** to access  global and service-specific shortcuts.  
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Git repositories
 

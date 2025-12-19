@@ -106,7 +106,7 @@ To create a GitHub branch directly from a work item, do these steps:
 
    Azure Boards completes a check to ensure that you entered a valid link. The linked-to GitHub repository [must be connected to the Azure Boards project](connect-to-github.md) or the validation fails.
 
-::: moniker range="<= azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 > [!NOTE]   
 > There's a delay when completing the AB# links if you are using Azure DevOps Server and GitHub Enterprise Server. We have a 'push-and-pull' design to pull from the GitHub events every hour on the incremental changes on Commit, PR, and Issue.

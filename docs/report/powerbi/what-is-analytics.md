@@ -27,7 +27,7 @@ Analytics transforms raw Azure DevOps data into meaningful insights that help te
 
 Analytics provides comprehensive insights about your projects through multiple access methods: 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 > [!div class="checklist"]  
 > - **Analytics widgets** that you can add to your dashboards for immediate insights
@@ -74,12 +74,6 @@ Analytics automatically enables for all Azure DevOps Services projects and popul
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
-
-Analytics enables for all projects on new project collections and automatically populates itself with all available Azure DevOps data. Once populated, it continuously updates itself as data changes occur. For more information, read [Data available in Analytics](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
-
-::: moniker-end
-
 ## Dashboard widgets
 
 You can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). We provide several [widgets based on Analytics](../dashboards/analytics-widgets.md). These widgets take advantage of Analytics' power and provide the easiest way to get insights from your data. 
@@ -108,7 +102,7 @@ Check out [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-d
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## In-context reports and rollup columns 
 

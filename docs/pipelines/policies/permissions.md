@@ -123,30 +123,6 @@ To delete a user from the permissions list, do the following steps:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
-
-To manage project-level permissions for users and groups across all build pipelines in your project, do the following steps:
-
-1. From your project, select **Pipelines**.
-    
-    :::image type="content" source="media/pipelines-navigation-from-project.png" alt-text="Screenshot showing Pipelines menu selections.":::
-    
-1. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**.
-1. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
-1. Select a user or group and set the permissions.
-
-    :::image type="content" source="media/pipelines-project-level-permissions-2020.png" alt-text="Screenshot showing project-level pipeline security dialog.":::
-
-1. Repeat the previous step to change the permissions for more groups and users.
-1. Select **Save changes** or you can select **Undo changes** to undo the changes.
-
-1. To remove a user or group from the list, select the user or group and select **Remove**.
-1. Select **Close**.
-
-Your project-level pipelines permissions are set.
-
-::: moniker-end
-
 ### Set object-level pipeline permissions
 
 ::: moniker range=">= azure-devops-2022"
@@ -195,34 +171,7 @@ Inherited users and groups can't be removed unless inheritance is disabled. To r
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2020"
-
-By default, object-level permissions for individual pipelines inherit the project-level permissions. You can override the inherited permissions. 
-
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
-
-To set permissions for an individual pipeline, do the following steps:
-
-1. From your project, select **Pipelines** .
-   
-   :::image type="content" source="media/pipelines-navigation-from-project.png" alt-text="Screenshot showing Pipelines ordered menu selections.":::
-
-2. Select a pipeline, then select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Manage security**. 
-    
-    :::image type="content" source="media/individual-pipeline-more-actions-menu.png" alt-text="Screenshot showing selected Manage security option from a pipeline's more actions menu.":::
-
-3. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
-4. Select users and groups and set the permissions.
-5. Select **Save changes** or **Undo changes*, if necessary.
-
-    :::image type="content" source="media/individual-pipeline-permissions-dialog-2020.png" alt-text="Screenshot of pipeline security add user or group selection.":::
-
-6. To remove a user or group, select the user or group and select **Remove**. You can't remove inherited users or groups unless inheritance is disabled.
-7. Select **Close** when you're finished.
-
-When you explicitly set an inherited user or group permission, inheritance is disabled for that specific permission. To restore inheritance, set the permission to **Not set**. Select **Clear explicit permissions** to reset all explicitly set permissions to their inherited settings. To disable inheritance for all user and group permissions, turn off the **Inheritance** setting. Upon re-enabling inheritance, the permissions for all users and groups revert to their project-level settings.
-
-::: moniker-end 
+ 
 
 <a id="deployment-group-permissions">  </a>
 
@@ -427,7 +376,7 @@ For individual library assets, the creator is automatically assigned the *Admini
 
 ### Set project-level library security roles
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 To manage access for all library assets, such as [variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md), do the following steps:
 
@@ -534,7 +483,7 @@ For permission descriptions, see [Permissions and groups](../../organizations/se
 
 ### Set project-level release pipeline permissions
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 To update permissions for all releases, do the following steps: 
 
@@ -587,7 +536,7 @@ By default, the object-level permissions for individual release pipelines are in
 
 To override permissions for a release, do the following steps:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your project, select **Pipelines** > **Releases**.
 1. Select the file view icon:::image type="icon" source="media/folder-icon.png":::.
@@ -663,7 +612,7 @@ When you explicitly set an inherited user or group permission, inheritance is di
 
 Service connections are used to connect to external and remote services. You can set service connection security for:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 * Projects: Permissions are set at the object level.
 * Pipelines: Permissions are set at the object level.
@@ -689,7 +638,7 @@ The user who creates the service connection is automatically assigned the Admini
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 For more information, see [Service connections](../library/service-endpoints.md).
 
@@ -719,7 +668,7 @@ To add project users or groups that aren't listed in the security dialog, do the
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Set object-level service connection security
 
@@ -812,7 +761,7 @@ The creator of a task group has all permissions to the task group.
 
 ### Set project-level task group permissions
 
-::: moniker range="> azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 To set permissions for project-level task groups, do the following steps:
 
@@ -853,78 +802,9 @@ To remove a user from the permissions list, do the following steps:
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-To set permissions for project-level task groups, do the following steps:
-
-1. From your project, select **Pipelines** > **Task groups**. 
-
-    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of task group selection.":::
-
-2. Select **Security**.
-
-    :::image type="content" source="media/task-group-security-project.png" alt-text="Screenshot of task groups security selection.":::
-
-3. To add users or groups that aren't listed in the permissions dialog, select **Add**, enter the user or group, and select **Save changes**. 
-
-4. Select a user or group to set the permissions to **Allow**, **Deny** or **Not set**.
-
-    :::image type="content" source="media/task-group-project-level-permissions-2019.png" alt-text="Screenshot of pipeline task groups security dialog.":::
-
-5. Select **Save changes** or you can select **Undo changes** to undo the changes. You must save the changes to apply the permissions before selecting another user or group.
-6. You can select more users and groups to change their permissions.
-7. Select **Close** when you're finished.
-
-::: moniker-end
-
 ### Set object-level task group permissions
 
 ::: moniker range=">=azure-devops-2022"
-
-To set permissions for individual task groups, do the following steps:
-
-1. From your project, select **Pipelines** > **Task groups**. 
-
-    :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
-
-2.  Select a task group. 
-
-3. Select **More commands** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: and select **Security**. 
-
-4. Select users and groups to set their permissions to **Allow**, **Deny**, or **Not set**.
-
-    :::image type="content" source="media\task-group-individual-permission.png" alt-text="Screenshot of object-level task group security dialog.":::
-
-5. When you're done, close the dialog to save your changes.
-
-When a permission for an inherited user or group is explicitly set, inheritance is disabled for that specific permission. Change the permission to **Not set** to restore inheritance. To disable inheritance for all user and group permissions, turn off the **Inheritance** setting. Upon re-enabling inheritance, the settings for all permissions revert to the project level.
-
-#### Add users or groups to the permissions dialog
- 
-To add users and groups that aren't listed in the permissions dialog, do the following steps:
-
-1. Enter the user or group in the search bar, then select the user or group from the search result.
-1. Set the permissions.
-1. Close the dialog.
-
-When you open the security dialog again, the user or group is listed. 
-
-#### Remove users or groups from the permissions dialog
-
-Users and groups can be removed from the task group. Inherited users and groups can't be removed unless inheritance is disabled.
-
-1. Select the user or group.
-1. Select **Remove and clear explicit permissions**.
-
-    :::image type="content" source="media\delete-user-in-security-dialog.png" alt-text="Screenshot of remove user or group selection.":::
-
-1. When you're done, close the dialog to save your changes.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-You can set the permissions to **Allow**, **Deny**, or to **Not set** if the permission isn't inherited. If inheritance is enabled, you can change an explicitly set permission back to the inherited value.
 
 To set permissions for individual task groups, do the following steps:
 
@@ -983,7 +863,7 @@ From the organization settings, you can manage the organization-level security s
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 You can create agent pools with either collection scope or project scope. Collection scoped agent pools are accessible to all existing or new projects in the collection, and by default, each collection has two agent pools: **Azure Pipelines** and **Default**. These default pools are accessible by all projects in the collection.
 
@@ -1235,40 +1115,6 @@ To add project users or groups that aren't listed in the security dialog, do the
 1. Enter the user or group in the search bar, then select the user or group from the search result. You can add multiple users and groups.
 1. Select the **Role**.
 1. Select **Add** to save the changes.
-
-    :::image type="content" source="media/agent-pool-add-user.png" alt-text="Screenshot of add user dialog.":::
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-To set pipeline and user security roles and pipeline permissions for an individual agent pool, do the following steps. 
-
-1. Go to your agent pool and select **Security**.
-
-1. Use the **Grant access permissions to all pipelines** switch to enable or disable permissions to all pipelines in the project:
-
-   :::image type="content" source="media/agent-pool-grant-permissions.png" alt-text="Screenshot of agent Grant access permissions to all pipelines switch.":::
-
-To set object-level user and group roles for an agent pool:
-
-1. From the **User permissions** section of the security dialog:
-
-1. Select a user or group and set the role to **Reader**, **User**, or **Administrator**.
-
-   :::image type="content" source="media/agent-pool-individual-pool-user-permissions.png" alt-text="Screenshot of object-level user permissions dialog for an agent pool.":::
-
-1. To remove a user or group, select the user or group and select **Delete** :::image type="icon" source="../../media/icons/delete-icon.png" border="false":::. Inherited users and groups can't be removed unless inheritance is disabled.
-2. Select **Save changes** :::image type="icon" source="media/save-icon.png" border="false"::: to save your changes or **Reset changes** :::image type="icon" source="media/reset-icon.png" border="false"::: to revert unsaved changes.
-
-When you explicitly set a role, the inheritance for that user or group is turned off. To disable inheritance for all users and groups, turn off the **Inheritance** setting. When you re-enable inheritance, the roles for all users and groups revert to their project-level assignments.
-
-To add project users or groups that aren't listed in the security dialog, do the following steps:
-
-1. Select **Add**.
-2. Enter the user or group in the search bar, then select the user or group from the search result. You can add multiple users and groups.
-3. Select the **Role**.
-4. Select **Add** to save the changes.
 
     :::image type="content" source="media/agent-pool-add-user.png" alt-text="Screenshot of add user dialog.":::
 

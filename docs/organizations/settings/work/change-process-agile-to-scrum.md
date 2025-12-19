@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.reviewer: dahellem
-monikerRange: ">= azure-devops-2020"
+monikerRange: "<=azure-devops"
 ms.date: 07/17/2020
 ---
 
@@ -18,7 +18,6 @@ ms.date: 07/17/2020
 You can change a project based on the Agile process to use an inherited Scrum process.  This article provides the steps needed to make this change. 
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
-
 
 |  Process | Work item types | Workflow |
 |------|---------|---------|
@@ -112,7 +111,6 @@ You can customize boards to display intermediate columns. For each column added,
 
    > [!div class="mx-imgBorder"]  
    > ![Board fixed.](media/agile-to-scrum/board-column-settings-fixed.png)
-
 
 ## Update work items
 

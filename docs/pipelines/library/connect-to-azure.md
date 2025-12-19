@@ -297,7 +297,7 @@ To revert a service connection:
 
 <a name="create-an-azure-resource-manager-service-connection-with-an-existing-service-principal"></a>
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 ## Create a service connection that uses an existing service principal
 

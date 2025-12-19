@@ -3,7 +3,7 @@ title: Publish Maven artifacts with Azure Pipelines
 description: Learn how to publish Maven artifacts to internal and external feed using Azure Pipelines.
 ms.topic: how-to
 ms.date: 06/30/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Publish Maven artifacts with Azure Pipelines (YAML/Classic)

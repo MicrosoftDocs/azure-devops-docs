@@ -244,7 +244,7 @@ steps:
 
 Publish your build output to your pipeline. Package and publish your app in a Maven package or a _.war/jar_ file to deploy it to a web application.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Learn more about creating a CI/CD pipeline for your deployment target:
 

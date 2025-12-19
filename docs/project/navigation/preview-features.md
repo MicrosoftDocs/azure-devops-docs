@@ -107,17 +107,6 @@ The following table lists the preview features that you can turn on or off based
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
-
-The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. 
-
-|**Feature**|**User**|**Project** | **Collection**|
-|--------------------|--------------|-----------------||-----------------|
-|[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ |   |  ✔️ |     
-|[Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)|   | ✔️ |  ✔️ |   
-
-::: moniker-end
-
 ::: moniker range="azure-devops-2022"
 
 You can turn on or off the [Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files) feature on a per-user basis.

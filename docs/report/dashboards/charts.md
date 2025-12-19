@@ -39,7 +39,7 @@ The following image shows two charts created from the same flat-list query.
 
 ## Prerequisites
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 | Category | Requirements |
 |-------------|-------------|
@@ -83,15 +83,6 @@ When creating a query to support your chart, follow these guidelines.
 > You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard as described in [Configure a chart for work items widget](configure-chart-work-items-widget.md).  
 
 ::: moniker-end
-::: moniker range="< azure-devops-2022"
-- You can't group charts by the following field data types:
-
-  - ID
-  - Date-time, such as **Created Date**, **Changed Date**
-  - Plain text, such as **Title**
-  - Rich-text, such as **Description**, **Repro Steps**
-  - Tags (You can filter a query using tags, but you can't use tags to configure your chart)
-::: moniker-end
 
 #### Display of areas and iterations
 
@@ -101,7 +92,7 @@ Select the **Node Name** field, the area path leaf node, to see if that improves
 
 Charts display in browsers that support Scalable Vector Graphics (SVG). Supported browsers include Microsoft Edge, Internet Explorer 9 and later versions, Chrome, Firefox and Safari on Mac. Charts aren't optimized for mobile or touch displays.  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 > [!NOTE]
 > Internet Explorer is no longer supported for Azure DevOps Services or for Azure DevOps Server 2020.1.
 
@@ -225,14 +216,6 @@ To add a chart to a dashboard, do the following steps:
    :::image type="content" source="media/charts/select-dashboard-dialog.png" alt-text="Screenshot shows the Select a dashboard dialog.":::
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md).
-
-::: moniker range="< azure-devops-2022"
-
-## Query-based charts versus Excel-generated PivotCharts
-
-Query-based charts generate data from the work item tracking data store. The charts display the most recent data. [Excel PivotCharts](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) access data published to the Analysis Services cube, which is refreshed every two hours by default. Excel charts require that your project's project collection is configured with SQL Server Reporting Services and Analysis Services.
-
-::: moniker-end
 
 ## Related articles
 

@@ -615,38 +615,7 @@ Attributes assigned to a field depend on the platform and version you use. For e
 
 <a id="reportable-attributes"> </a>
 
-::: moniker range="< azure-devops-2022"
-
-## Reportable attributes
-
-All reporting attributes are valid only for on-premises deployments where you configure projects to support SQL Server Reporting and SQL Server Analysis Services. For more information, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
-
-For descriptions of each reportable attribute, refer to [Add or modify work item fields to support reporting](/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting).
-
-To see a list of fields with reportable attributes defined by default, see [Reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference).
-
-::: moniker-end
-
 <a id="index-fields"></a>
-
-::: moniker range="< azure-devops-2022"
-
-## Indexed fields
-
-Use the **witadmin indexfield** command to enable or disable indexing for a work item field. Enabling indexing for a field can improve the performance of queries that specify that field. By default, the system indexes the following fields:
-
-- Assigned To
-- Created Date
-- Changed By
-- State
-- Reason
-- Area ID
-- Iteration ID
-- Work Item Type
-
-If you add a custom field used frequently in your work item queries, consider enabling indexing for that field. For more information, see [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
-
-::: moniker-end
 
 <a id="list-attributes"></a>
 

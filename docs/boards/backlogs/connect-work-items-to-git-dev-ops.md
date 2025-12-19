@@ -31,7 +31,7 @@ This article covers how to create new branches, add links to commits, and manage
 
 The **Development** control tracks all Git development activities that contribute to the completion of a work item. It provides your team with the necessary information to take the next development steps, minimizing the need for multiple navigational actions to accomplish common tasks. Additionally, it enhances traceability by displaying all related branches, commits, pull requests, and builds associated with the work item, ensuring comprehensive visibility into the development process.   
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
 ::: moniker-end
 

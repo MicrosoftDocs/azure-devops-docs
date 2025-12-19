@@ -108,7 +108,7 @@ When building reports, consider these primary entity sets:
 - **Detailed change tracking**: Use `WorkItemRevisions` for comprehensive history
 - **Board-specific reports**: Use `WorkItemBoardSnapshot` for Kanban board analysis
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Pipelines entity types and entity sets
 
@@ -138,7 +138,7 @@ Different pipeline entities serve specific reporting scenarios:
  
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Test entity types and entity sets
 

@@ -11,8 +11,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-
 [Deployment groups](../release/deployment-groups/index.md) in Classic pipelines make it easy to define groups of target servers for deployment. Tasks that you define in a deployment group job run on some or all of the target servers, depending on the arguments you specify for the tasks and the job itself.
 
 You can select specific sets of servers from a deployment group to receive the deployment by specifying the machine tags that you've defined for each server in the deployment group. You can also specify the proportion of the target servers that the pipeline should deploy to at the same time. This ensures that the app running on these servers is capable of handling requests while the deployment is taking place.
@@ -20,7 +18,7 @@ You can select specific sets of servers from a deployment group to receive the d
 If you're using a YAML pipeline, you should use [Environments](../process/environments.md) with [virtual machines](../process/environments-virtual-machines.md) instead. 
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 > [!NOTE]
 > Deployment group jobs are not supported in YAML. You can use [Virtual machine resources in Environments](../process/environments-virtual-machines.md) to do a rolling deployment to VMs in YAML pipelines. 

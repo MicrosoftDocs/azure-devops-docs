@@ -6,10 +6,9 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 11/07/2022
 ---
-
 
 # Metadata reference for Test Plans Analytics
 

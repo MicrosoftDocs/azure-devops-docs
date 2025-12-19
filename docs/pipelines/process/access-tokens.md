@@ -27,32 +27,13 @@ You can set the job authorization scope to be **collection** or **project**. By 
 
 # [YAML](#tab/yaml/)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Job authorization scope can be set for the entire Azure DevOps organization or for a specific project. 
 
 ::: moniker-end
 
-:::moniker range="azure-devops-2020"
-
-> [!NOTE]
-> In Azure DevOps Server 2020, **Limit job authorization scope to current project** applies only to YAML pipelines and classic build pipelines. It does not apply to classic release pipelines. Classic release pipelines always run with project collection scope.
-
-To set job authorization scope for the organization:
-
-- Navigate to your organization settings page in the Azure DevOps user interface.
-- Select **Settings** under **Pipelines**.
-- Enable **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
-
-To set job authorization scope for a specific project:
-
-- Navigate to your project settings page in the Azure DevOps user interface.
-- Select **Settings** under **Pipelines**.
-- Enable **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 - To set job authorization scope at the organization level for all projects, choose **Organization settings** > **Pipelines** > **Settings**.
 - To set job authorization scope for a specific project, choose **Project settings** > **Pipelines** > **Settings**.
@@ -63,7 +44,7 @@ Enable one or more of the following settings. Enabling these settings are recomm
 
 :::moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 >[!NOTE]
 >If the scope is set to **project** at the organization level, you cannot change the scope in each project.
@@ -75,32 +56,13 @@ Enable one or more of the following settings. Enabling these settings are recomm
 
 # [Classic](#tab/classic/)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Job authorization scope can be set for the entire Azure DevOps organization, for a specific project, or for a specific pipeline. 
 
 ::: moniker-end
 
-:::moniker range="azure-devops-2020"
-
-> [!NOTE]
-> In Azure DevOps Server 2020, **Limit job authorization scope to current project** applies only to YAML pipelines and classic build pipelines. It does not apply to classic release pipelines. Classic release pipelines always run with project collection scope.
-
-To set job authorization scope for the organization:
-
-- Navigate to your organization settings page in the Azure DevOps user interface.
-- Select **Settings** under **Pipelines**.
-- Enable **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
-
-To set job authorization scope for a specific project:
-
-- Navigate to your project settings page in the Azure DevOps user interface.
-- Select **Settings** under **Pipelines**.
-- Enable **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 - To set job authorization scope at the organization level for all projects, choose **Organization settings** > **Pipelines** > **Settings**.
 - To set job authorization scope for a specific project, choose **Project settings** > **Pipelines** > **Settings**.
@@ -111,14 +73,14 @@ Enable one or more of the following settings. Enabling these settings are recomm
 
 :::moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 >[!NOTE]
 >If the scope is set to **project** at the organization level, you cannot change the scope in each project.
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 To set job authorization scope for a specific pipeline:
 
@@ -137,19 +99,7 @@ To set job authorization scope for a specific pipeline:
 >[!NOTE]
 > If your pipeline is in a **public project**, then the job authorization scope is automatically restricted to **project** no matter what you configure in any setting. Jobs in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the organization.
 
-:::moniker range="azure-devops-2020"
-
-### Limit job authorization scope to referenced Azure DevOps repositories
-
-In addition to the job authorization scope settings described in the previous section, Azure Pipelines provides a **Limit job authorization scope to referenced Azure DevOps repositories** setting.
-
-Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
-
-For more information, see [Azure Repos Git repositories - Limit job authorization scope to referenced Azure DevOps repositories](../repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 ### Protect access to repositories in YAML pipelines
 
@@ -254,13 +204,7 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 :::moniker-end
 
-:::moniker range="=azure-devops-2020"
-3.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
-
-    ![Add user for repository access.](media/access-tokens/add-build-service-user.png)
-:::moniker-end
-
-:::moniker range=">azure-devops-2020"
+:::moniker range="<=azure-devops"
 3.  Start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
     ![Screenshot of how to add a user for repository access.](media/access-tokens/search-for-user.png)
@@ -299,17 +243,7 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 :::moniker-end
 
-:::moniker range="azure-devops-2020"
-
-* Check the Pipeline settings under your Azure DevOps **Organization settings**:
-  * If **Limit job authorization scope to current project** is enabled, then the scope is **project**.
-  * If **Limit job authorization scope to current project** is not enabled, then check the Pipeline settings under your **Project settings** in Azure DevOps:
-    * If **Limit job authorization scope to current project** is enabled, then the scope is **project**.
-    * Otherwise, the scope is **collection**.
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 * If the pipeline is in a private project, check the Pipeline settings under your Azure DevOps **Organization settings**:
   * If **Limit job authorization scope to current project for non-release pipelines** is enabled, then the scope is **project**.
@@ -327,19 +261,7 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 :::moniker-end
 
-:::moniker range="azure-devops-2020"
-
-* Check the Pipeline settings under your Azure DevOps **Organization settings**:
-  * If **Limit job authorization scope to current project** is enabled, then the scope is **project**.
-  * If **Limit job authorization scope to current project** is not enabled, then check the Pipeline settings under your **Project settings** in Azure DevOps:
-    * If **Limit job authorization scope to current project** is enabled, then the scope is **project**.
-    * If **Limit job authorization scope to current project** is not enabled, open the editor for the pipeline, and navigate to the **Options** tab.
-      * If the **Build job authorization scope** is **Current project**, then scope is **project**.
-      * Otherwise, scope is **collection**.
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 * If the pipeline is in a private project, check the Pipeline settings under your Azure DevOps **Organization settings**:
   * If **Limit job authorization scope to current project for non-release pipelines** is enabled, then the scope is **project**.
@@ -359,19 +281,13 @@ When creating a new classic pipeline, the *job authorization scope* is set to **
 
 ### How do I determine the job authorization scope of my classic release pipeline?
 
-:::moniker range="=azure-devops-2020"
-
-Classic release pipelines in Azure DevOps Server 2020 and below run with **collection** scope.
-
-:::moniker-end
-
 :::moniker range="azure-devops"
 
 * If the pipeline is in a public project, then the job authorization scope is **project** regardless of any other settings.
 
 :::moniker-end
 
-:::moniker range=">azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 * If the pipeline is in a private project, check the Pipeline settings under your Azure DevOps **Organization settings**:
   * If **Limit job authorization scope to current project for release pipelines** is enabled, then the scope is **project**.

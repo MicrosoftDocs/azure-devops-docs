@@ -37,7 +37,7 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
 3. Select **Status badge** and then check or uncheck the **Allow anonymous users to access the status badge**. When it's unchecked, users who aren't signed in can still view the status badge.
 
-   ::: moniker range=">= azure-devops-2020"
+   ::: moniker range="<=azure-devops"
    :::image type="content" source="media/badges/status-badge-s188.png" alt-text="Screenshot of board Settings dialog, Status badge tab.":::
    ::: moniker-end
    

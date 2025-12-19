@@ -14,7 +14,7 @@ ms.date: 09/27/2021
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 Analytics supports several dashboard widgets that take advantage of the power of the service. Using these widgets, you and your team can gain valuable insights into the health and status of your work. 
 ::: moniker-end
 

@@ -9,7 +9,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 08/05/2024
 ---
 

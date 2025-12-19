@@ -70,7 +70,7 @@ To list project iterations, do the following steps:
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 1. Sign in to your project `https://dev.azure.com/{Your_Organization/Your_Project}`. 
 
 1. Select (1) **Project settings** > (2) **Project configuration** > (3) **Iterations**.   
@@ -136,7 +136,7 @@ ID     Identifier                            Name            Path               
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 1. Add and modify iterations from **Project settings** > **Project configuration** > **Iterations**.   
 

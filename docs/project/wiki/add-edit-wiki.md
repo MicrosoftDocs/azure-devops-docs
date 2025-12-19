@@ -174,7 +174,7 @@ There are several ways to edit an existing wiki page in the browser:
 
 For more information about specific editing functions, see [Use Markdown guidance](markdown-guidance.md).
 
-::: moniker range="> azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 #### Edit in Repos for code wikis
 
