@@ -14,7 +14,7 @@ ms.date: 08/07/2025
 
 # What is the Azure Boards-GitHub integration?
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Stay aligned and coordinated with Azure Boards and link your code activity and issues from GitHub. This article provides an overview of the integration between Azure Boards and GitHub.
 

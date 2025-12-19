@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 # Connect to an Azure Artifacts feed (dotnet)
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts enables developers to seamlessly publish packages to feeds and share them privately or publicly, depending on the feed’s visibility settings. This guide walks you through setting up your project and authenticating with your Azure Artifacts feed.
 

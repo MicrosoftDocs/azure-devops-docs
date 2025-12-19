@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 # Use YAML templates in pipelines for reusable and secure processes
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="<=azure-devops"
 

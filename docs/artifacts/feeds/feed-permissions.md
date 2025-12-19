@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 # Manage permissions
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts enables developers to efficiently manage dependencies by hosting various types of packages in a single feed. With flexible permission settings, you can fine-tune access to your packages, control who can create or administer feeds, and manage how packages are accessed from Azure Pipelines.
 

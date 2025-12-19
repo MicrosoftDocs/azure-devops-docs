@@ -15,7 +15,7 @@ ms.date: 03/12/2025
 
 # Out Of Box widget catalog
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Widgets display information and charts on dashboards. Many widgets are configurable or scoped to a team or the logged-in user account. They display information from one or more data stores or charts maintained within the system. You can add a widget to a dashboard or copy a widget from one dashboard to another. For more information, see [Add a widget to a dashboard](add-widget-to-dashboard.md).
 

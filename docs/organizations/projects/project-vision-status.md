@@ -13,7 +13,7 @@ ms.date: 11/11/2024
 
 # View and update project summary page
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Each project provides a summary or home page to share information and showcase the latest project activity. This page serves as a central hub for team members to stay informed and up-to-date on the project's progress. Use this page for the following tasks:
 

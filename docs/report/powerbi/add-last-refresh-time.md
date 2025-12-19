@@ -15,7 +15,7 @@ ms.date: 05/06/2025
 
 # Show last refresh date to Power BI report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you add a last refresh date to a report, it helps users understand how current the data is. You can display the date and time of the last data update using a card in the report. Regularly refreshing the data models in Power BI ensures that all information remains up-to-date.
 

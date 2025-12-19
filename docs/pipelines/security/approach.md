@@ -9,7 +9,7 @@ ms.topic: article
 
 # Determine your approach for securing YAML pipelines
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Consider adopting an incremental approach to enhance the security of your pipelines. While it’s ideal to implement all the guidance we provide, don’t get overwhelmed by the number of recommendations. Start by making some improvements, even if you can’t address everything immediately.
 

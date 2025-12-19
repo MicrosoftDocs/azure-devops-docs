@@ -13,7 +13,7 @@ ms.date: 07/17/2020
 
 # Change a project process from Scrum to Agile
 
-[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 You can change a project based on the Scrum process to use an inherited Agile process. This article provides the steps needed to make this change. 
 

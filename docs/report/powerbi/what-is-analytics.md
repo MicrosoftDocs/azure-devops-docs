@@ -13,7 +13,7 @@ ms.date: 10/27/2025
 
 # What is Analytics?
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Analytics is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built specifically for reporting, Analytics is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects and gain actionable insights from your development data.
 

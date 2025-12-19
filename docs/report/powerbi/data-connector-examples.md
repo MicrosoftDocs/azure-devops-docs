@@ -14,7 +14,7 @@ ms date: 12/13/2022
 
 # Example reports based on Analytics views
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to generate the following example reports in Power BI based on an Analytics view.  
 

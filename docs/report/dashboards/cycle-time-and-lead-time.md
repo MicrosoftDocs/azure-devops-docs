@@ -15,7 +15,7 @@ ms.date: 09/18/2025
 
 # Lead time and cycle time widgets
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The lead time and cycle time widgets show how long it takes for work to flow through your development pipeline. Lead time is the total time from when a work item is created to when it's finished. Cycle time is the time it takes your team to finish work items after they start working on them.
 

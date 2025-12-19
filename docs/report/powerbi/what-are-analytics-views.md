@@ -14,7 +14,7 @@ ms.date: 03/12/2025
 
 # About Analytics views
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=865481  --> 
 

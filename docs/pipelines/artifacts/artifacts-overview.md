@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Artifacts in Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts enables developers to store multiple types of packages in a single feed. With Azure Pipelines, you can publish packages to both private and public Azure Artifacts feeds or registries such as NuGet.org and npmjs.com. Azure Pipelines also allows you to integrate files across different stages of your workflow; building, testing, and deploying artifacts to multiple environments.
 

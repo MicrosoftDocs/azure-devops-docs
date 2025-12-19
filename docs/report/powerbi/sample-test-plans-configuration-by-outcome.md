@@ -14,7 +14,7 @@ ms.date: 01/19/2023
 
 # Configuration by outcome matrix sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 When you've multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. An example of the configuration by outcome matrix report is shown in the following image.
 

@@ -14,7 +14,7 @@ ms.date: 12/14/2022
 
 # Pipeline task duration sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 How long does it take different tasks to complete? This article provides the queries from which you can generate a report for a specific pipeline and its tasks. For example, the following image lists the 50th, 80th, and 95th percentile in seconds for all tasks completed for a specific pipeline from September 1 to December 15, 2022.   
 

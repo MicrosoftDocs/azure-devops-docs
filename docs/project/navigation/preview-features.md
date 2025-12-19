@@ -15,7 +15,7 @@ ms.date: 01/27/2025
 
 # Manage preview features 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 

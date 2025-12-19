@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 # Cache NuGet packages
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Pipeline caching helps reduce build time by storing dependencies for reuse in future runs. In this article, you learn how to use the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) to cache and restore your NuGet packages.
 

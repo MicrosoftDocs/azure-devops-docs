@@ -14,7 +14,7 @@ ms.date: 01/19/2023
 
 # Progress status sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 You can report on the execution state of one or more Test Plans in Power BI. The report you create using the information in this article is similar to the following image and the summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
 

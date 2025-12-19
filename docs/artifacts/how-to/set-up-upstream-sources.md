@@ -9,7 +9,7 @@ monikerRange: "<=azure-devops"
 
 # Set up upstream sources
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts upstream sources, you can streamline your package management by using a single feed to store both the packages you publish and those you consume from external feeds and public registries such as npmjs.com, NuGet.org. When an upstream source is enabled on your feed, Azure Artifacts will automatically save a copy of any package installed by a collaborator or higher from upstream.
 

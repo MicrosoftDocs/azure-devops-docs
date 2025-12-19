@@ -13,7 +13,7 @@ ms date: 09/16/2024
 
 # Add a time-in-state measure to your Power BI report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The time a work item spends in a specific workflow state or series of states is an important aspect for understanding efficiency. The [Cycle Time and Lead Time](../dashboards/cycle-time-and-lead-time.md) Analytics widgets provide some measures of time-in-state. However, these widgets might not have the level of detail that you want. 
 

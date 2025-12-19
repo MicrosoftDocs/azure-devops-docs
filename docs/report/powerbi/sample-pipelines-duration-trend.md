@@ -14,7 +14,7 @@ ms.date: 12/14/2022
 
 # Pipeline duration trend sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows how long your pipeline typically takes to complete successfully. The daily trend of pipeline duration report is similar to the **Pipeline rate trend** chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
 

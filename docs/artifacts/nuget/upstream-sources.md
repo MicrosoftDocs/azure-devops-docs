@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 # Use packages from the NuGet Gallery
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts upstream sources make it easy for developers to pull packages from public registries like *nuget.org* and *npmjs.com*. In this article, you learn how to set up your project and use the command line to consume NuGet packages from the NuGet Gallery.
 

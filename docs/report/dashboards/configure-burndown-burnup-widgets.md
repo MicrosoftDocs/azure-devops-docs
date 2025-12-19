@@ -14,7 +14,7 @@ ms.date: 10/02/2025
 
 # Configure a burndown or burnup widget
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In Azure DevOps dashboards, burndown and burnup widgets give you flexibility to create charts for any type of scope or number of teams in specified time periods. *Burndown charts* focus on remaining work. *Burnup charts* focus on completed work. Both chart types help your team determine whether you're on track to complete your work by the end date. For an overview of all burndown and burnup charts available to you, see [Burndown and burnup guidance](burndown-guidance.md).
 

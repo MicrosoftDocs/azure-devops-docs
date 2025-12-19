@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Resource security
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article describes security features that help safeguard *protected resources* in Azure Pipelines. Pipelines might need to access open or protected resources during runs.
 

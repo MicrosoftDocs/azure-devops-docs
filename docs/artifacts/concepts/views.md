@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 # What are feed views?
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Feed views allow developers to share a specific subset of package versions with consumers. This is useful when you want to provide access to packages that have been tested and validated, while withholding those still under development or that don’t meet your quality standards.
 

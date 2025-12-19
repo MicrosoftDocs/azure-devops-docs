@@ -13,7 +13,7 @@ ms.date: 12/08/2022
 
 # Cumulative Flow Diagram (CFD) sample report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article shows you how to display the Stories CFD for a specified team. This data is also available through the built-in chart and dashboard widget. For more information about these options, see [View and configure a Cumulative Flow Diagram](../dashboards/cumulative-flow.md). 
 

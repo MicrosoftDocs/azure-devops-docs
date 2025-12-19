@@ -10,7 +10,7 @@ ms.topic: article
 
 # Secrets in Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article provides best practices for protecting secrets in Azure Pipelines. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic keys. Azure Pipelines doesn't generate secret values, but you might need to add secrets to pipelines to store sensitive data like API keys.
 

@@ -15,7 +15,7 @@ ms.date: 10/21/2024
 
 # Customize the workflow (Inheritance process)
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Each work item type (WIT) has an associated workflow that tracks the status of work from creation to completion. To align with your business and team processes, you can add custom states to most work item types. For example, you might add a *Triaged* state for bugs or a *Design* state for features or user stories.
 

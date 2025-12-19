@@ -11,7 +11,7 @@ ms.custom: devx-track-python, py-fresh-zinc, engagement-fy23
 
 # Publish and download Python packages with Azure Artifacts
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Using Azure Artifacts, you can publish and download packages from feeds and public registries such as PyPi. This quickstart guides you through creating a feed, configuring your project, and managing Python packages in your Azure Artifacts feed.
 

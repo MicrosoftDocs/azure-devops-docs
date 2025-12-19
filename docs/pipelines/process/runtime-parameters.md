@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 # Runtime parameters
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Runtime parameters give you more control over the values you pass to a pipeline. With runtime parameters, you can:
 - Supply different values to scripts and tasks at runtime

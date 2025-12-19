@@ -12,7 +12,7 @@ monikerRange: "<=azure-devops"
 
 # Publish npm packages from the command line
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article guides you through authenticating with your Azure Artifacts feed and publishing npm packages from the command line.
 

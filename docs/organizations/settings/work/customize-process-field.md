@@ -14,7 +14,7 @@ ms.date: 05/08/2025
 
 # Add and manage fields (Inheritance process)   
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 You can customize your work tracking system by adding custom fields or modifying specific attributes of an ![inherited icon](media/process/inherited-icon.png) inherited field. For example, you can add a custom field to capture other data or change the label displayed in the work item form for an inherited field.
 

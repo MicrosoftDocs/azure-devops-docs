@@ -15,7 +15,7 @@ ms.date: 01/25/2023
 
 # Test duration trend sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Test duration trend reports, similar to the one shown in the following image, provide insight into the day-wise trend of the average time taken to execute a test for a selected time range. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 

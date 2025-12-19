@@ -15,7 +15,7 @@ ms.date: 01/25/2023
 
 # Pass rate trend of a test sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Pass rate trend reports provide insight into average time it takes for a particular test to execute during a pipeline run.  
 

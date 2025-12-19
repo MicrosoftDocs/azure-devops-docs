@@ -14,7 +14,7 @@ ms.date: 01/19/2023
 
 # Manual test execution trend sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 This article shows you how to get the execution state of one or more Test Plans in Power BI. The report generated is similar to following image and the Outcome trend chart of the [Progress report](../../test/progress-report.md).
 

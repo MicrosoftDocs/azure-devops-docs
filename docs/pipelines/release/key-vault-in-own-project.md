@@ -12,7 +12,7 @@ ms.custom:
 
 # Use Azure Key Vault secrets in your Pipeline
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Key Vaults enable developers to securely store and manage sensitive information such as passwords, API keys, and certificates. This article walks you through how to query and use secrets from an Azure Key Vault in your pipeline.
 

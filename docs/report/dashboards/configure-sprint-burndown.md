@@ -14,7 +14,7 @@ ms.date: 03/12/2025
 
 # Configure and monitor sprint burndown
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="<=azure-devops"
 

@@ -13,7 +13,7 @@ ms.date: 05/06/2025
 
 # Quickstart: Create a Power BI report from a default Analytics view
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In this quickstart, you connect to an Analytics view to create Power BI reports for your Azure DevOps project. An Analytics view provides a basic way to specify the filter criteria for a Power BI report that's based on Analytics data. 
 

@@ -13,7 +13,7 @@ monikerRange: "<=azure-devops"
 
 # Manage VM resources in environments
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 An Azure Pipelines [environment](environments.md) is a group of [resources](about-resources.md) that you can target with deployments from a pipeline. Typical environments include Development, Test, or Production.
 

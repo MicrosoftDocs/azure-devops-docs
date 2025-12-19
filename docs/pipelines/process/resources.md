@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Resources in YAML pipelines
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article discusses resources for YAML pipelines. A resource is anything a pipeline uses that exists outside that pipeline. Resources in YAML pipelines can be other pipelines, builds, containers, packages, repositories, or webhooks.
 

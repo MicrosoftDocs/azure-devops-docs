@@ -12,7 +12,7 @@ ms.date: 06/26/2025
 ---
 # Create a service hook for Azure DevOps with Datadog
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../../includes/version-lt-eq-azure-devops.md)]
 
 You can create events and metrics in Datadog in response to events in Azure DevOps. In Datadog, you can use these metrics and events to create dashboards, troubleshoot issues, and create monitors to alert you to critical issues. Datadog accepts all Azure DevOps event types.
 

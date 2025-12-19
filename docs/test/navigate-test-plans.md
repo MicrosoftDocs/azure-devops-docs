@@ -13,7 +13,7 @@ ms.update-cycle: 1095-days
 
 # Navigate Test Plans 
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Learn how to navigate Test Plans to support your test goals and operations. Use the following sections of the Test Plans page to accomplish the corresponding tasks.
 - **Mine**: View list of test plans that you created or are of interest to you. 

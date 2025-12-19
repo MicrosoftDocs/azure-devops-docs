@@ -9,7 +9,7 @@ monikerRange: "<=azure-devops"
 
 # Connect your Python project to an Azure Artifacts feed
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article guides you through setting up your Python project and connecting to an Azure Artifacts feed.
 

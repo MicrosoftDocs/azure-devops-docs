@@ -15,7 +15,7 @@ ms.date: 01/25/2023
 
 # Flaky tests sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
 You can create a report, as shown in the following image, that lists the flaky tests occurring in pipeline runs that include test tasks. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. For more information about enabling flaky tests, see [Manage flaky tests](../../pipelines/test/flaky-test-management.md). For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 

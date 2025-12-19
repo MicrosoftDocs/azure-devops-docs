@@ -12,7 +12,7 @@ ms.date: 09/30/2022
 
 # Permissions and prerequisites to access Analytics in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 To work with Analytics and create reports, several prerequisites must be met as summarized in this article. 
 

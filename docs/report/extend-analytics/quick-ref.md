@@ -13,7 +13,7 @@ ms.date: 08/12/2022
 
 # Sample reports and quick reference index 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this quick reference to access information and sample queries using OData and Analytics.  
 Using OData, you can directly query Analytics for Azure DevOps from a supported browser. Use the returned JSON data as you like. Enterprise organizations can generate queries that span multiple projects or an entire organization or project collection.   

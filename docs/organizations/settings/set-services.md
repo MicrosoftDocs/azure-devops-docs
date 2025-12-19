@@ -12,7 +12,7 @@ ms.date: 11/12/2024
 
 # Turn a service on or off
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Manage the availability of Azure DevOps services through the web portal by enabling or disabling them as needed. Disabling a service hides it from all project members, helping to streamline the user interface and focus on the tools that are currently in use. This customization allows you to tailor the portal to your team's specific needs and workflows. If you choose to re-enable a service later, all existing data associated with that service remain intact and accessible.
 

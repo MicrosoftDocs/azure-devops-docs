@@ -19,7 +19,7 @@ ms.date: 09/18/2025
 
 # View and add work items
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
 This article shows how to view, filter, and create work items (user stories, issues, bugs, tasks). It covers the most common ways to add work items: the web portal, Boards/Backlogs/Sprints pages, Visual Studio, and the Azure DevOps CLI.
