@@ -14,7 +14,7 @@ Below is a snapshot of a pipeline run, that shows the few attempts to execute th
 > [!div class="mx-imgBorder"]
 > [![Screenshot of a pipeline run showing attempts to execute the same test.](../../media/266-testplans-01.png "Screenshot of a pipeline run showing attempts to execute the same test.")](../../media/266-testplans-01.png#lightbox)
 
-Read more about this feature [here](/azure/devops/pipelines/tasks/reference/vstest-v3?view=azure-pipelines).
+Read more about this feature [here](/azure/devops/pipelines/tasks/reference/vstest-v3?view=azure-pipelines&preserve-view=true).
 
 ### Associate test cases from work item is now generally available
 
