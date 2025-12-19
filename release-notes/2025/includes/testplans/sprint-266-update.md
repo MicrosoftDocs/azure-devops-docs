@@ -27,10 +27,11 @@ You can now achieve the same association directly from the test case itself, mak
 ### Bug fixes and accessibility improvements
 
 **Bug fixes**
-    * Improved “Search for existing bug” ID search logic to make it easier to relate existing bugs during test runs.
-    * Fixed the developer community–reported bugs: 10556292 and 10655819.
+
+   * Improved “Search for existing bug” ID search logic to make it easier to relate existing bugs during test runs.
+   * Fixed the developer community–reported bugs: 10556292 and 10655819.
 
 **Accessibility improvements**
 
-    * Narrator now announces the correct number of rows and columns in the grid within the “New test case” pane.
-    * Added visual label “Description” to the "description" textbox in the “New task” pane for better screen reader support.
+   * Narrator now announces the correct number of rows and columns in the grid within the “New test case” pane.
+   * Added visual label “Description” to the "description" textbox in the “New task” pane for better screen reader support.

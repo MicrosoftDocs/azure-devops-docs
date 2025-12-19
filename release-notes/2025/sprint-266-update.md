@@ -1,14 +1,16 @@
 ---
-title: TBD
+title: Strengthening Test Planning and Advancing Security Coverage
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 12/18/2025
-description: TBD
+description: Strengthening Test Planning and Advancing Security Coverage
 ---
 
-# TBD
+# Strengthening Test Planning and Advancing Security Coverage
 
-Placeholder
+Sprint 266 focused on improving the consistency and reliability of our Test Plans to better support release readiness and validation workflows. Updates in this sprint clarify test coverage expectations, improve alignment between requirements and validation steps, and help teams create more structured, reusable test plans across features.
+
+In addition, we continued progress with GitHub Advanced Security by expanding visibility into code security signals and reinforcing secure development practices. These enhancements support earlier detection of vulnerabilities and improve overall confidence in code quality before release.
 
 Check out the release notes for details.
 

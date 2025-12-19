@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Secret asset metadata generally available via API
 
-This feature provides additional context and classification for detected secrets, helping teams better understand and prioritize remediation efforts. You can see additional metadata through the [Alerts API](azure/devops/advancedsecurity/alerts/get?view=azure-devops-rest-7.2), with additional UI updates to surface this information coming soon.
+This feature provides additional context and classification for detected secrets, helping teams better understand and prioritize remediation efforts. You can see additional metadata through the [Alerts API](/azure/devops/advancedsecurity/alerts/get?view=azure-devops-rest-7.2), with additional UI updates to surface this information coming soon.
 
 ### Expanded CodeQL buildless support for C/C++
 
