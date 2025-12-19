@@ -26,7 +26,7 @@ Azure Pipelines enables developers to publish packages to Azure Artifacts feeds 
 
 ## Publish NuGet packages to a feed in the same organization
 
-If you don't have a feed yet, you can create a [new one](../../artifacts/get-started-nuget.md#create-a-feed), otherweise follow these steps to publish your NuGet package to a feed within the same organization:
+If you don't have a feed yet, you can create a [new one](../../artifacts/get-started-nuget.md#create-a-feed), otherwise follow these steps to publish your NuGet package to a feed within the same organization:
 
 ::: moniker range="azure-devops-2022"
 
