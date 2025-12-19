@@ -5,7 +5,7 @@ ms.service: azure-devops-test-plans
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 07/28/2025
+ms.date: 12/19/2025
 monikers: 'azure-devops'
 ---
 
@@ -79,7 +79,7 @@ To configure which columns display, do the following steps:
    :::image type="content" source="media/test-runs/column-options.png" alt-text="Screenshot showing the column options configuration dialog for test runs.":::
 
 > [!TIP]
-> The Pipeline Run column apply to automated runs only, and relate to both Build and Release Pipelines.
+> The Pipeline Run column applies to automated runs only, and relates to both Build and Release Pipelines.
 
 ## Test run states
 
