@@ -20,7 +20,7 @@ summary: |
 
   If you experience connection issues, confirm you meet the prerequisites in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md). For more information, see [Azure Boards and Office integration](track-work.md).
 
-  ::: moniker range=">= azure-devops-2020" 
+  ::: moniker range="<=azure-devops"
    > [!TIP]  
    > For bulk imports or updates, we recommend using the [web portal](../bulk-modify-work-items.md) or the [CSV import](../../queries/import-work-items-from-csv.md).
   ::: moniker-end 
@@ -57,7 +57,7 @@ sections:
 
       - question: Can I import or update work items without using Excel?  
         answer: | 
-          ::: moniker range=">= azure-devops-2020" 
+          ::: moniker range="<=azure-devops"
           Yes. Use the web portal for bulk imports/updates ([Import work items](../../queries/import-work-items-from-csv.md)).
           ::: moniker-end  
 
@@ -104,7 +104,7 @@ sections:
       - question: Can I bulk-edit link types other than hierarchical links? 
         answer: |
           No. Excel supports adding and modifying hierarchical (parent-child) links only. To edit other link types in bulk, use:
-          ::: moniker range="<= azure-devops-2022" 
+          ::: moniker range="=azure-devops-2022"
           - The web portal to map backlog items to portfolio items ([Organize your backlog](../../backlogs/organize-backlog.md))
           - The web portal or Team Explorer to modify parent-child links by dragging items in a hierarchical backlog or tree query ([Reparent items](../../backlogs/organize-backlog.md#reparent))
           ::: moniker-end
