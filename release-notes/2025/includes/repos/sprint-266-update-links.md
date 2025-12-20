@@ -6,4 +6,4 @@ ms.date: 12/19/2025
 ms.topic: include
 ---
 
-- [Disabling the Save Operation for Obsolete TFVC Policies](#disabling-the-save-operation-for-obsolete-tfvc-policies)
+- [Disabling the save operation for obsolete TFVC policies](#disabling-the-save-operation-for-obsolete-tfvc-policies)
