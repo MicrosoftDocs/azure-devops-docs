@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/25/2025
+ms.date: 12/19/2025
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="8"><a href="2025/sprint-266-update.md" data-raw-source="[19 December 2025](2025/sprint-266-update.md)">December 19 2025</a></td>
+    <td>Secret asset metadata generally available via API</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Code scanning now supports Rust</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Expanded CodeQL buildless scanning for C/C++</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Disabling the save operation for obsolete TFVC policies</td><td>Repos</td><td>Future</td></tr>
+    <td>Clearer artifact selection for YAML CD deployments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Associate test cases from work item is now generally available</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Support for data-driven tests with VSTest task</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Bug fixes and accessibility improvements</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="7"><a href="2025/sprint-265-update.md" data-raw-source="[25 November 2025](2025/sprint-265-update.md)">November 25 2025</a></td>
     <td>Group rules now apply to existing users</td><td>General</td><td>N/A</td></tr>
