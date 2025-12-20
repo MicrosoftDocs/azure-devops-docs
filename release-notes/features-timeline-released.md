@@ -39,14 +39,14 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     </thead>
 <tr>
     <td rowspan="8"><a href="2025/sprint-266-update.md" data-raw-source="[19 December 2025](2025/sprint-266-update.md)">December 19 2025</a></td>
-    <td>Group rules now apply to existing users</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>Azure subscription required for new organizations</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>Required upgrade of TFVC Proxy when used with hosted (cloud) TFVC repositories</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>Improved comment navigation by the link in pull requests</td><td>Repos</td><td>Future</td></tr>
-    <td>Target branches now available in pull request branch dropdown</td><td>Pipelines</td><td>Future</td></tr>
-    <td>New run pipeline panel</td><td>Test Plans</td><td>Future</td></tr>
-    <td>UX improvements</td><td>Test Plans</td><td>Future</td></tr>
-    <td>UX improvements</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Secret asset metadata generally available via API</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Code scanning now supports Rust</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Expanded CodeQL buildless scanning for C/C++</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Disabling the save operation for obsolete TFVC policies</td><td>Repos</td><td>Future</td></tr>
+    <td>Clearer artifact selection for YAML CD deployments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Associate test cases from work item is now generally available</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Support for data-driven tests with VSTest task</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Bug fixes and accessibility improvements</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="7"><a href="2025/sprint-265-update.md" data-raw-source="[25 November 2025](2025/sprint-265-update.md)">November 25 2025</a></td>

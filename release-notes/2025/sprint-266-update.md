@@ -8,9 +8,7 @@ description: Strengthening Test Planning and Advancing Security Coverage
 
 # Strengthening Test Planning and Advancing Security Coverage
 
-Sprint 266 focused on improving the consistency and reliability of our Test Plans to better support release readiness and validation workflows. Updates in this sprint clarify test coverage expectations, improve alignment between requirements and validation steps, and help teams create more structured, reusable test plans across features.
-
-In addition, we continued progress with GitHub Advanced Security by expanding visibility into code security signals and reinforcing secure development practices. These enhancements support earlier detection of vulnerabilities and improve overall confidence in code quality before release.
+Sprint 266 delivers focused improvements to security, reliability, and usability across Azure DevOps. This update includes refinements to Azure Test Plans that improve testing workflows and reporting, along with enhancements to GitHub Advanced Security for Azure DevOps to help teams better identify and manage code vulnerabilities. Bug fixes and platform optimizations—driven by customer feedback—help ensure a more stable and secure experience. Changes roll out automatically through the standard deployment process.
 
 Check out the release notes for details.
 
