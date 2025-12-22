@@ -181,7 +181,7 @@ Select any test case to view detailed results including:
 - **Attachments**: All test result-specific attachments
 
 > [!TIP]
-> For Automated runs, the default Test Case Result filter is set to _Failed_ or _Aborted_ to accelarate the analysis.
+> For Automated runs, the default Test Case Result filter is set to _Failed_ or _Aborted_ to accelerate the analysis.
 
 :::image type="content" source="media/test-runs/detailed-test-case-results.png" alt-text="Screenshot of the detailed test case results page showing comprehensive test information.":::
 
