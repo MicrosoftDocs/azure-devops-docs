@@ -9,14 +9,14 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/12/2024
+ms.date: 12/22/2025
 ---
 
 # Define iteration paths (sprints) and configure team iterations 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Iteration Paths, also known as *sprints*, assign work items to specific time-box intervals. Define iteration paths at the project level and have each team select the paths they use. Iteration paths are shared among all selected teams. You can create a flat or hierarchical structure of iteration paths to support releases, subreleases, and sprints. If your team doesn't use sprints for planning and tracking work, retain the default team assignments and utilize product and portfolio backlogs and boards, though sprint planning tools won’t be applicable.
+Iteration Paths, also known as *sprints*, assign work items to specific time-boxed intervals. Define iteration paths at the project level and have each team select the paths they use. Iteration paths are shared among all teams that select them. You can create a flat or hierarchical structure of iteration paths to support releases, subreleases, and sprints. If your team doesn't use sprints for planning and tracking work, retain the default team assignments and utilize product and portfolio backlogs and boards, though sprint planning tools aren't available.
 
 [!INCLUDE [temp](../../boards/includes/list-sprint-dependent-tools.md)] 
 
@@ -60,7 +60,7 @@ As needed, you can do the following tasks at any time:
 
 Each team has access to various Agile tools, as detailed in [About teams and Agile tools](about-teams-and-settings.md). These tools reference the team's default area paths and selected iteration paths or sprints. Typically, teams use one area path and multiple iteration paths for work tracking, but you can use multiple area paths on backlogs and boards to support different scenarios.
 
-Teams can set a default iteration separate from the backlog iteration. The backlog iteration determines which items appear on the team's backlogs and boards, while the default iteration assigns values to newly created work items.
+Teams can set a default iteration separate from the backlog iteration. The backlog iteration determines which items appear on the team's backlogs and boards, while the default iteration assigns values to newly created work items when you work from the team context.
 
 All work items created within the team context are automatically assigned the team's default area path and default iteration path.
 
@@ -178,7 +178,7 @@ az boards iteration project create --name
 #### Parameters
 
 - **name**: Required. Enter the name of the iteration path.
-- **finish-date**: Optional. Finish date of the iteration. Example: "--finish-date 2019-06-21".
+- **finish-date**: Optional. Finish date of the iteration. Example: "--finish-date 2019-06-21."
 - **path**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, adds an iteration at the root level.
 - **project**: Optional. Name or ID of the project. Example:` --project "Fabrikam Fiber"`. 
 - **start-date**: Optional. Enter the start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
@@ -296,7 +296,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	![Screenshot of Iterations page for team, set team backlog iteration for backlogs and boards.](media/team-defaults/stdefaults-team-backlog-iteration.png)
 
-	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
+	Also, all work items added through a team's backlog or board are assigned to the backlog iteration. 
 
 3. **Default iteration**. The default iteration defines the iteration to use when you create a work item from the team backlog or board. specify any iteration defined under the **Backlog iteration** path. To assign new work items to the current iteration, specify **@CurrentIteration**. The same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration) is used.  
 
@@ -305,7 +305,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 	![Screenshot of Work, Iterations page for team, set team default for new work items.](media/team-defaults/stdefaults-team-default-iteration-vert.png)
 
 	> [!NOTE]   
-	> New work items added through the **Work Items** page or the **New Work Items** widget on a team dashboard don't reference the **Default Iteration Path** assigned to the team. Instead, new work items are assigned the last **Iteration Path** selected by the user. New work items added through a team's **Sprints** backlog or taskboard are always assigned the **Iteration Path** associated with the selected sprint. 
+	> New work items added through the **Work Items** page or the **New Work Items** widget on a team dashboard don't reference the **Default Iteration Path** assigned to the team. Instead, new work items are assigned to the last **Iteration Path** selected by the user. New work items added through a team's **Sprints** backlog or taskboard are always assigned the **Iteration Path** associated with the selected sprint. 
 
 4. **Active sprints**. Add an iteration for each sprint backlog you want active for the team. Add each sprint, one by one, by selecting it from the menu.  
 
@@ -346,7 +346,7 @@ az boards iteration team set-backlog-iteration --id --team
 - **team**: Required. Name or ID of the team.
 - **default-iteration-macro**: Optional. Default iteration macro, the only valid entry is @CurrentIteration.  
 - **id**: Optional. Enter the ID of an iteration path. To determine the ID, list the iteration paths using [az boards iteration project list](#list-project-iterations).  
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber."
 
 #### Example 
 
@@ -423,7 +423,7 @@ az boards iteration project update --path
 - **path**: Required. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName.  
 - **child-id**: Optional. Moves an existing iteration path and adds it as a child node for the specified path name or path ID.  
 - **name**: Optional. New name of the iteration path.  
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber." 
 - **finish-date**: Optional. Finish date of the iteration. Example: "2019-06-21".
 - **start-date**: Optional. Start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
 - **yes**: Optional. Don't prompt for confirmation.
@@ -479,7 +479,7 @@ az boards iteration project delete --path
 #### Parameters
  
 - **path**: Required. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName.   
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".   
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber."   
 - **yes**: Optional. Don't prompt for confirmation.
 
 ::: moniker-end
@@ -506,7 +506,7 @@ You can use the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/cla
 
 ## Archive iteration paths 
 
-After a while, you might want to archive iteration paths that were used for sprints that are a year or more out of date. You can do so by moving the iteration path under a node that you label "Archive". All work items are updated with the moved iteration path. Also, teams can de-select those sprints that have past. All data is maintained in the data store with the new iteration path assignments. 
+After a while, you might want to archive iteration paths that were used for sprints that are a year or more out of date. You can do so by moving the iteration path under a node that you label "Archive." All work items are updated with the moved iteration path. Also, teams can deselect those sprints that have past. All data is maintained in the data store with the new iteration path assignments. 
 
 <!--- Implications for reporting --> 
 Before you archive the iterations, consider if you captured all the reports that you want. 

@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/11/2024
+ms.date: 12/22/2025
 #customer intent: As a team leader, I want to understand the processes that Azure Boards uses to manage work items for my project.
 ---
 
@@ -29,7 +29,7 @@ The default process types are *Basic*, *Agile*, *Capability Maturity Model Integ
 
 The default processes differ mainly in the work item types they provide for planning and tracking work. The default processes are:
 
-- **Basic**: Is the most lightweight and is in a selective preview.
+- **Basic**: Is the most lightweight.
 - **Scrum**: Is the next most lightweight.
 - **Agile**: Supports many Agile method terms.
 - **CMMI**: Provides the most support for formal processes and change management.
@@ -110,7 +110,7 @@ If you need more than two or three backlog levels, add more based on the process
 
 <a id="main-distinctions"></a>
 
-## Main distinctions among the default processes
+## Main distinctions among the default process
 
 The default processes are designed to meet the needs of most teams. If your team has unusual needs and connects to an on-premises server, customize a process and then create the project. You can also create a project from a process and then customize the project.
 
@@ -328,7 +328,7 @@ Notes:
 Workflow states support tracking the status of work as it moves from a `New` state to a `Closed` or a `Done` state. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.
 
 > [!IMPORTANT]
-> **Workflow transitions:** The default workflow transitions support any state to any state transition for Azure DevOps Services and Azure DevOps Server 2020 and later versions. You can customize these workflows to restrict specific transitions based on your team's requirements. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
+> **Workflow transitions:** The default workflow transitions support any state to any state transition for Azure DevOps. You can customize these workflows to restrict specific transitions based on your team's requirements. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
 >
 > **Visualizing workflows:** To view the supported workflow transitions for each work item type, install the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a **State Visualizer** hub under **Boards** where you can select a work item type and view its complete workflow state model.
 
@@ -374,7 +374,7 @@ Each image shows only the default reason associated with the transition.
 #### [Basic process](#tab/basic-process)
 
 > [!NOTE]
-> The Basic process is available with Azure DevOps Services and Azure DevOps Server 2020 and later versions. For earlier on-premises deployments, use the Agile, Scrum, or CMMI process instead.
+> The Basic process is available with Azure DevOps Services and Azure DevOps Server 2020 and later versions. For earlier on-premises deployments, use the Agile, Scrum, or CMMI process.
 
 :::row:::
    :::column span="1":::
@@ -474,10 +474,10 @@ Change the workflow to support other states, transitions, and reasons. For more 
 
 When you change the state of a work item to `Removed`, `Closed`, or `Done`, the system responds as follows:
 
-- `Closed` or `Done`: Work items in this state don't appear on the portfolio backlog and backlog pages. They do appear on the sprint backlog pages, board, and taskboard. When you change the portfolio backlog view to **Show backlog items**, for example, to view features to product backlog items, work items in the `Closed` and `Done` state appear.
+- `Closed` or `Done`: Work items in this state don't appear on the portfolio backlog and backlog pages. However, they do appear on the sprint backlog pages, board, and taskboard. When you change the portfolio backlog view to **Show backlog items**, for example, to view features to product backlog items, work items in the `Closed` and `Done` state appear.
 - `Removed`: Work items in this state don't appear on any backlog or board.
 
-Your project maintains work items as long as the project is active. Even if you set work items to `Closed`, `Done`, or `Removed`, the data store keeps a record. Use a record to create queries or reports.
+Your project maintains work items as long as the project is active. Even if you set work items to `Closed`, `Done`, or `Removed`, the data store keeps a record. You can use this record to create queries or reports.
 
 [!INCLUDE [closed items](../../includes/note-closed-items.md)]
 
@@ -489,7 +489,7 @@ If you need to permanently delete work items, see [Remove or delete work items](
 
 The following work item types are added to all processes except the Basic process.
 
-:::image type="content" source="media/ALM_PT_WITS_shared.png" alt-text="Diagram that shows work item types used by Test Plans, Microsoft Test Managers, My Work, and Feedback.":::
+:::image type="content" source="media/ALM_PT_WITS_shared.png" alt-text="Diagram that shows work item types used by Test Plans, Microsoft Test Manager, My Work, and Feedback.":::
 
 Your team can create and work with these types by using the corresponding tool.
 

@@ -10,14 +10,14 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/08/2024
+ms.date: 12/22/2024
 ---
 
 # Manage columns on your board
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Managing columns on your board is essential for visualizing your team's workflow. Each column corresponds to a stage of work, such as "To do," "In progress," and "Done." You can customize these columns to match your specific process, while each card on the board represents a work item, such as a user story, bug, or task.
+Managing columns on your board is essential for visualizing your team's workflow. Each column corresponds to a stage of work, such as "To do," "In progress," and "Done." You can customize these columns to match your specific process. Each card on the board represents a work item, such as a user story, bug, or task.
 
 ::: moniker range="<=azure-devops"
 
@@ -33,39 +33,39 @@ Managing columns on your board is essential for visualizing your team's workflow
 |--------------|-------------|
 |**Access levels** | At least [**Basic**](../../organizations/security/access-levels.md) access.|
 |**Permissions** | To configure team settings: Member of the **Project Administrators** security group or [**Team Administrator** role](../../organizations/settings/add-team-administrator.md). For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).|
-| **Tasks (optional)**| To avoid revisiting your configuration, we recommend doing the following tasks before you begin to manage your board columns: <br>- [Add custom work item types](../../organizations/settings/work/customize-process-work-item-type.md)<br> - [Customize your product and portfolio backlogs](../../organizations/settings/work/customize-process-backlogs-boards.md)<br> - [Customize workflow states](../../organizations/settings/work/customize-process-workflow.md)<br> - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)<br> - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)|
+| **Tasks (optional)**| To avoid revisiting your configuration, complete the following tasks before you begin to manage your board columns: <br>- [Add custom work item types](../../organizations/settings/work/customize-process-work-item-type.md)<br> - [Customize your product and portfolio backlogs](../../organizations/settings/work/customize-process-backlogs-boards.md)<br> - [Customize workflow states](../../organizations/settings/work/customize-process-workflow.md)<br> - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)<br> - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)|
 
-<a id="state-mappings" >   </a>
+<a id="state-mappings"></a>
 <a id="when-to-update-the-kanban-column-to-state-mappings"></a>
-<a id="add-or-rename-columns"> </a>
+<a id="add-or-rename-columns"></a>
 
 ## Add and edit columns
 
-Column titles and options vary based on the [process](../work-items/guidance/choose-process.md) used to create your project and your team's decision to [treat bugs as requirements or tasks](../../organizations/settings/show-bugs-on-backlog.md).
+Column titles and options vary based on the [process](../work-items/guidance/choose-process.md) you use to create your project and your team's decision to [treat bugs as requirements or tasks](../../organizations/settings/show-bugs-on-backlog.md).
 
-Do the following steps to add and edit your columns:
+Add and edit your columns by using the following steps:
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select **Boards** > **Boards** > **Configure board settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: .
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
+1. Select **Boards** > **Boards** > **Configure board settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: .
 
    :::image type="content" source="media/sequence-boards-boards-configure-board-settings.png" alt-text="Screenshot shows selection sequence buttons, Boards, Boards, and Configure board settings.":::
 
-3. Select **Columns**.
+1. Select **Columns**.
    - To add a column, select **+ Add column**.
    
    :::image type="content" source="media/add-columns-settings-dialog-add-test-ts.png" alt-text="Screenshot shows highlighted Add column button.":::
    
-   - To edit a column, select the column tab. For example, in the following image, we choose to edit the Active column. 
+   - To edit a column, select the column tab. For example, in the following image, choose to edit the Active column. 
    
    :::image type="content" source="media/columns/kanban-settings-columns-active-column.png" alt-text="Screenshot that shows the Settings dialog and selection of an Active column.":::
 
-4. Do any of the following tasks for your columns. These tasks link to sections further in this article:
+1. Perform any of the following tasks for your columns. These tasks link to sections further in this article:
    - [Map workflow states to columns](#map-workflow-states-to-columns)
    - [Rename a column](#rename-a-column)
    - [Split columns](#split-columns)
    - [Add Definition of Done](#add-definition-of-done-to-a-column)
 
-5. Select **Save**.
+1. Select **Save**.
 
 <a id="map-the-flow-of-work">  </a>
 <a id="map-workflow-states"> </a>
@@ -75,7 +75,7 @@ Do the following steps to add and edit your columns:
 Mapping workflow state categories to columns in boards is essential for visualizing the progress of work items. It ensures that each state of a work item is represented on the board, providing a clear and organized view of the workflow. This mapping helps teams quickly [identify the current status of work items](#update-status), [track their progress](#track-column-status), and [spot any bottlenecks](#identify-bottlenecks) or issues. By aligning workflow states with board columns, teams can maintain a shared understanding of the workflow and improve their ability to manage and complete tasks efficiently.
 
 > [!TIP]   
-> We recommend that you map each workflow **state** to a **column**. If it’s not mapped, it doesn’t appear on the board.
+> We recommend that you map each workflow **state** to a **column**. If it's not mapped, it doesn't appear on the board.
 
 The following table describes default user story state categories.
 
@@ -94,28 +94,28 @@ Do this task whenever you add columns, workflow states, or work item types (WITs
 
 > [!NOTE]
 > When you add bugs or other work items to a board, it might create new workflow states that require adjustments to column-to-state mappings in the following situations:
->- When a team administrator [shows bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
->- When a project administrator [adds work item types to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md).
->- When a project collection or project administrator customizes the workflow for a work item type in the Requirement category using [inherited process](../../organizations/settings/work/customize-process-workflow.md) or [on-premises XML process](../../reference/xml/change-workflow-wit.md).
+> - When a team administrator [shows bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
+> - When a project administrator [adds work item types to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md).
+> - When a project collection or project administrator customizes the workflow for a work item type in the Requirement category using [inherited process](../../organizations/settings/work/customize-process-workflow.md) or [on-premises XML process](../../reference/xml/change-workflow-wit.md).
 
 ## Rename a column
 
-Renaming your column titles to map to your workflow stages helps ensure clarity and alignment within your team. It allows everyone to understand the current status of work items at a glance and ensures that the board accurately reflects your team's workflow.
+Renaming your column titles to match your workflow stages helps ensure clarity and alignment within your team. It allows everyone to understand the current status of work items at a glance and ensures that the board accurately reflects your team's workflow.
 
-Rename a column directly from the board by selecting the column name, shown in the following image. You can also rename a column from the [column edit screen](#add-and-edit-columns).
+Rename a column directly from the board by selecting the column name, as shown in the following image. You can also rename a column from the [column edit screen](#add-and-edit-columns).
 
 :::image type="content" source="media/rename-kanban-columns-direct-ts.png" alt-text="Screenshot showing renaming a column directly on a board.":::
 
 ## Split columns
 
-Each column represents a work stage, showing the number of items in progress. But, there’s often a lag between moving work into a column and starting it. To address this lag, enable split columns, which divide each column into "Doing" and "Done."
+Each column represents a work stage, showing the number of items in progress. But, there’s often a lag between moving work into a column and starting it. To address this lag, enable split columns, which divide each column into **Doing** and **Done**.
 
 :::image type="content" source="media/kanban-board-split-columns-example-chart.png" alt-text="Screenshot showing with split columns.":::
 
 Split columns help your team implement a pull mechanism, providing visibility into idle items and improving workflow transparency.
 
 > [!NOTE]
-> - Before you split columns, ensure that [each stage is mapped to a column](#map-workflow-states). Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage.
+> - Before you split columns, ensure that each stage is mapped to a column. Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage.
 > - There are different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team chose to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md). 
 
 Choose the column tab that you want to split and add a check mark in the box to cause the column to split.  
@@ -143,7 +143,7 @@ Review the frequency and location of pile-ups, so your team can adjust processes
 
 ### List work items in a *Doing* or *Done* column 
 
-You can query for work items in a split column using the **Board Column Done** field. This field takes of a value of False when in the *Doing* column and True when in the *Done* column. 
+You can query for work items in a split column by using the **Board Column Done** field. This field takes a value of `False` when in the *Doing* column and `True` when in the *Done* column. 
 
 For examples on querying Board columns, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields).
 
@@ -153,7 +153,7 @@ For examples on querying Board columns, see [Query by assignment or workflow cha
 
 When your team advances from one stage to the next, it's crucial they share a clear understanding of "Done." Define the criteria for the Definition of Done in each column. This action helps the team identify necessary tasks before advancing an item to the next stage, implementing the core tenet of making processes and policies explicit.
 
-Choose a column tab to configure the Definition of Done for that column. 
+Select a column tab to configure the Definition of Done for that column. 
 
 :::image type="content" source="media/columns/definition-of-done-defined.png" alt-text="Screenshot showing the columns management screen, entering plain text for Definition of Done.":::
 
@@ -168,7 +168,7 @@ Removing or moving a column can help streamline your board and better reflect yo
 ### Remove a column
 
 1. Ensure the column doesn't contain any work items. If it does, move the items to another column.
-2. On the [Configure board settings](#add-and-edit-columns) page, select **Columns** > **Column options menu** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: > **X Remove**.
+1. On the [Configure board settings](#add-and-edit-columns) page, select **Columns** > **Column options menu** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: > **X Remove**.
 
    :::image type="content" source="media/columns/remove-column.png" alt-text="Screenshot that shows the selections for deleting a column in the Settings dialog.":::
 
@@ -196,7 +196,7 @@ Users who receive the handoff can [set alerts](../../organizations/notifications
 
 Use the [query tool](../queries/using-queries.md) to list a subset of work items for review, triage, update, or chart generation. For example, you can create a query to list all active user stories (specify two clauses: `Work Item Type=User Story` and `State=Active`). 
 
-Specify [work in progress (WIP) limits](wip-limits.md), [split columns](#split-columns), and [definition of done](#definition-of-done).
+Specify [work in progress (WIP) limits](wip-limits.md), split columns, and definition of done.
 
 <a id="change-priorities"> </a>
 
@@ -208,7 +208,7 @@ Drag an item up or down within a column.
 
 ## Do more tasks
 
-In the following table, we list tasks and their associated articles, so you can do more with your board. 
+The following table lists tasks and their associated articles so you can do more with your board.
 
 |Article |Task |
 |---------|---------|
@@ -223,5 +223,5 @@ In the following table, we list tasks and their associated articles, so you can 
 
 - [Accelerate work with swimlanes](expedite-work.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
-- [Explore Azure Boards FAQs](../faqs.yml)
-- [Explore the REST API Boards reference](/rest/api/azure/devops/work/boards)
+- [Azure Boards FAQs](../faqs.yml)
+- [REST API Boards reference](/rest/api/azure/devops/work/boards)
