@@ -62,7 +62,7 @@ Follow these steps to configure existing process parameters in your Classic pipe
 
 ## Unlink process parameters
 
-Follow these steps to unlink signle or all existing process parameters in your Classic pipeline:
+Follow these steps to unlink single or all existing process parameters in your Classic pipeline:
 
 #### Unlink a single process parameter
 
@@ -72,7 +72,7 @@ Follow these steps to unlink signle or all existing process parameters in your C
 
 1. Select the task that you want to unlink, select the link icon next to the parameter, and then select **Unlink** in the pop‑up message.
 
-    :::image type="content" source="../artifacts/media/unlink-single-parameter.png" alt-text="A screenshot displaying how to unlink a single process paramater in a Classic pipeline.":::
+    :::image type="content" source="../artifacts/media/unlink-single-parameter.png" alt-text="A screenshot displaying how to unlink a single process parameter in a Classic pipeline.":::
 
 #### Unlink all process parameters
 
@@ -84,7 +84,7 @@ Follow these steps to unlink signle or all existing process parameters in your C
     
 1. Select **Unlink all**, then select **Confirm** to confirm your choice.
 
-    :::image type="content" source="../artifacts/media/unlink-all-parameters.png" alt-text="A screenshot displaying how to unlink all process paramaters in a Classic pipeline.":::
+    :::image type="content" source="../artifacts/media/unlink-all-parameters.png" alt-text="A screenshot displaying how to unlink all process parameters in a Classic pipeline.":::
 
 ## Related content
 
