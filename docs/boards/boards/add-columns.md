@@ -94,9 +94,9 @@ Do this task whenever you add columns, workflow states, or work item types (WITs
 
 > [!NOTE]
 > When you add bugs or other work items to a board, it might create new workflow states that require adjustments to column-to-state mappings in the following situations:
->1. When a team administrator [shows bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
->2. When a project administrator [adds work item types to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md).
->3. When a project collection or project administrator customizes the workflow for a work item type in the Requirement category using [inherited process](../../organizations/settings/work/customize-process-workflow.md) or [on-premises XML process](../../reference/xml/change-workflow-wit.md).
+> - When a team administrator [shows bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
+> - When a project administrator [adds work item types to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md).
+> - When a project collection or project administrator customizes the workflow for a work item type in the Requirement category using [inherited process](../../organizations/settings/work/customize-process-workflow.md) or [on-premises XML process](../../reference/xml/change-workflow-wit.md).
 
 ## Rename a column
 
@@ -115,8 +115,8 @@ Each column represents a work stage, showing the number of items in progress. Bu
 Split columns help your team implement a pull mechanism, providing visibility into idle items and improving workflow transparency.
 
 > [!NOTE]
-> 1. Before you split columns, ensure that each stage is mapped to a column. Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage.
-> 2. There are different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team chose to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md). 
+> - Before you split columns, ensure that each stage is mapped to a column. Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage.
+> - There are different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team chose to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md). 
 
 Choose the column tab that you want to split and add a check mark in the box to cause the column to split.  
 
