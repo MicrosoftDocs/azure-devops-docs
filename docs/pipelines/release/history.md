@@ -43,7 +43,7 @@ Follow these steps to view your Classic pipeline history:
 
 3. Select the **History** tab to view all changes, including who made each change and when it occurred.
 
-    :::image type="content" source="media/classic-pipeline-history.png" alt-text="A screenshot displaying how to view Classic pipeline history.":::
+    :::image type="content" source="media/classic-pipeline-history-devops-services.png" alt-text="A screenshot displaying how to view Classic pipeline history.":::
 
 ::: moniker-end
 
