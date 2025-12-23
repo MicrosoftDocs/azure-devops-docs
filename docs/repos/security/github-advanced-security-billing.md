@@ -94,6 +94,7 @@ Use the following table for an example of how active committers and your potenti
 | March 19 | A PCA disables Secret Protection for the Fabrikam repository. The active committers from Fabrikam don't get counted.| 30 - 30 = **0** |
 | July 15 | A PCA re-enables Secret Protection for Fabrikam. Fabrikam has 20 active committers over the past 90 days. | **20** |
 | August 1 | A PCA enables Secret Protection for a second repository, AdventureWorks. In the last 90 days, 30 developers committed to that repository. 10 of those developers also committed to Fabrikam and don't consume more licenses, so AdventureWorks only contributes 20 additional unique committers. | 20 + 20 = **40** |
+
 :::zone-end
 
 ## Related articles
