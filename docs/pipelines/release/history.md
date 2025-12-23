@@ -1,9 +1,9 @@
 ---
 title: View Classic pipeline history
-description: Learn how to determine what changed, when it happened, and who made the changes using the build history in your classic pipelines.
+description: Learn how to check your Classic pipeline history to find previous changes.
 ms.topic: how-to
 ms.assetid: AB81E23E-DD84-4BDB-ACD9-AE03D783A303
-ms.date: 09/06/2024
+ms.date: 12/23/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -11,23 +11,25 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Pipelines, you can set up a classic pipeline to build your project. This article will guide you through checking the history of your classic pipeline to see what changed, when it happened, and who made the changes.
+With Azure Pipelines, you can create a Classic pipeline to build your project. This article walks you through viewing your Classic pipeline’s history so you can see what changed, when the change occurred, and who made it.
 
 ## Prerequisites
 
-- Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
-
-- A working Classic pipeline. 
+| **Product**        | **Requirements**   |
+|--------------------|--------------------|
+| **Azure DevOps**   | - An [Azure DevOps organization](../../organizations/accounts/create-organization.md).<br> - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - A [Classic pipeline](../ecosystems/dotnet-core.md#create-a-pipeline). |
 
 ## View pipeline history
 
+Follow these steps to view your Classic pipeline history:
+
 ::: moniker range=" azure-devops"   
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, then navigate to your project.
 
-1. Select **Pipelines**, select your Classic pipeline, and then select **Edit**.
+2. Select **Pipelines**, select your Classic pipeline, and then select **Edit**.
 
-1. Select the **History** tab to view a list of changes, including who made the changes and when they occurred.
+3. Select the **History** tab to view all changes, including who made each change and when it occurred.
 
     :::image type="content" source="media/classic-pipeline-history-devops.png" alt-text="A screenshot displaying how to view Classic pipeline history in Azure DevOps Services.":::
 
@@ -35,28 +37,28 @@ With Azure Pipelines, you can set up a classic pipeline to build your project. T
 
 ::: moniker range="< azure-devops"
 
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
+1. Sign in to your Azure DevOps collection, then navigate to your project.
 
-1. Select **Pipelines**, select your Classic pipeline, and then select **Edit**.
+2. Select **Pipelines**, select your Classic pipeline, and then select **Edit**.
 
-1. Select the **History** tab to view a list of changes, including who made the changes and when they occurred.
+3. Select the **History** tab to view all changes, including who made each change and when it occurred.
 
     :::image type="content" source="media/classic-pipeline-history.png" alt-text="A screenshot displaying how to view Classic pipeline history.":::
 
 ::: moniker-end
 
-4. To take action on a change, select it, select the ellipsis button **...**, and then choose either **Compare Difference** or **Revert Pipeline**.
+4. To take action on a specific change, select it, select the ellipsis **...**, and then select **Compare Difference** or **Revert Pipeline**.
     
     :::image type="content" source="media/pipeline-history-compare-difference.png" alt-text="A screenshot displaying the Classic pipeline history difference.":::
 
 > [!NOTE]
-> When viewing the compare difference in Classic pipeline history, the JSON files are read-only and cannot be edited directly.
+> When viewing **Compare difference** in Classic pipeline history, the JSON files shown are read‑only and cannot be edited directly.
 
 ## Related content
 
-- [Build multiple branches in Azure Pipelines](../build/ci-build-git.md)
+- [Classic pipelines configuration](options.md)
 
-- [Configure build run numbers](../process/run-number.md)
+- [Publish and download pipeline artifacts](../artifacts/pipeline-artifact.md)
 
-- [Pipeline caching](../release/caching.md)
+- [Pipeline Caching](caching.md)
 
