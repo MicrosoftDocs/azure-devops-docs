@@ -58,7 +58,7 @@ Follow these steps to view your Classic pipeline history:
 
 - [Classic pipelines configuration](options.md)
 
-- [Publish and download pipeline artifacts](../artifacts/pipeline-artifact.md)
+- [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md)
 
 - [Pipeline Caching](caching.md)
 
