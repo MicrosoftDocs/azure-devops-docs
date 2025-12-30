@@ -60,7 +60,7 @@ If this is your first time using Azure Artifacts with npm on your machine, follo
 
 If you're experiencing any of the following errors, follow the steps in this section to troubleshoot and resolve the issue:
 
-#### vsts-npm-auth is not recognized
+#### Vsts-npm-auth is not recognized
 
 This error indicates that the npm modules folder hasn't been added to your path. Rerun the *Node.js* setup and make sure to select the **Add to PATH** option. Alternatively, you can manually add the npm modules folder to your path by modifying the PATH variable to `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell).
  
