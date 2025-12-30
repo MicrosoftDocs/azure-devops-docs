@@ -54,6 +54,54 @@ If this is your first time using Azure Artifacts with npm on your machine, follo
     npm publish
     ```
 
+::: moniker range="azure-devops"   
+
+## Troubleshooting
+
+If you're experiencing any of the following errors, follow the steps in this section to troubleshoot and resolve the issue:
+
+- **vsts-npm-auth is not recognized**:
+
+This error indicates that the npm modules folder hasn't been added to your path. Rerun the *Node.js* setup and make sure to select the **Add to PATH** option. Alternatively, you can manually add the npm modules folder to your path by modifying the PATH variable to `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell).
+ 
+- **Unable to authenticate**:
+
+If you encounter an authentication error such as *code E401 npm ERR! Unable to authenticate*, run the *vsts-npm-auth* command with *-F* flag to reauthenticate:
+
+```
+vsts-npm-auth -config .npmrc -F
+```
+
+- **Reset vsts-npm-auth**:
+
+If authentication continues to fail, follow these steps to reset your *vsts-npm-auth* configuration:
+
+1. Uninstall vsts-npm-auth:
+   
+     ```
+    npm uninstall -g vsts-npm-auth
+    ```
+
+1. Clear your npm cache:
+
+    ```
+    npm cache clean --force
+    ```
+
+1. Delete your *.npmrc* file.
+
+1. Reinstall vsts-npm-auth:
+    
+    ```
+    npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+    ```
+
+- **Unable to publish**:
+
+If you get a 403 error when publishing, it may be due to a version conflict. Azure Artifacts packages are immutable; once a version is published to your feed, its version number is permanently reserved, even if you delete it. To address this issue, update the version number in your *package.json* and publish again.
+
+::: moniker-end
+
 ## Related content
 
 - [Restore npm packages (CLI)](restore-npm-packages.md)
