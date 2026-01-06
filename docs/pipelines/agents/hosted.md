@@ -69,6 +69,25 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
+##### Ubuntu 22.04 hosted image deprecation schedule
+
+The Ubuntu 22.04 hosted image deprecation affects Azure DevOps customers using the Ubuntu 22.04 agent image in their Microsoft-hosted pipelines. This deprecation does not impact customers using Ubtuntu 22.04 agents in self-hosted agents, including scale set agents or Managed DevOps Pools.
+
+The Ubuntu 22.04 image deprecation schedule:
+* Deprecation start date: TBD
+* Brownout period: TBD
+  * TBD date: 21:00 - 5:00 UTC
+  * TBD data: 5:00 - 13:00 UTC
+* Scheduled removal date: TBD
+
+Starting from TBD, organizations using the Ubuntu 22.04 image will begin to see a banner indicating the upcoming deprecation. To raise awareness about the upcoming deprecation we will temporarily fail jobs (brownout) using Ubuntu 22.04 from TBD to TBD. From TBD, the Ubuntu 22.04 image will be fully removed from our hosted agents, and any pipelines still using this image will fail to run.
+
+###### Recommended action
+
+To avoid disruptions, we recommend updating your pipelines to use the Ubuntu 24.04 image. The updated Ubuntu images offer improved performance, security, and support for the latest tools and libraries.
+
+To indentify your pipelines that are using the Ubuntu 22.04 image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
+
 #### [macOS images](#tab/macos-images/)
 
 You can see the installed software for each macOS hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
