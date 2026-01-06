@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 12/16/2025
+ms.date: 01/06/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -166,7 +166,7 @@ layout of the hosted agents is subject to change without warning.
 
 Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines with a 2 core CPU, 7 GB of RAM, and 14 GB of SSD disk space. These virtual machines are colocated in the same geography as your Azure DevOps organization.
 
-Agents that run macOS images are provisioned on Mac pros with a 3 core CPU, 14 GB of RAM, and 14 GB of SSD disk space. These agents always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization isn't in the US, then you shouldn't use macOS images. [Learn more](../../organizations/security/data-location.md).
+Agents that run macOS images are provisioned on Mac pros with a 3 core CPU, 14 GB of RAM, and 14 GB of SSD disk space, except the macOS 15 Sequoia ARM64 image which runs on Apple Silicon hardware with 3 cores, 7 GB of RAM, and 14 GB of SSD disk space. These agents always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization isn't in the US, then you shouldn't use macOS images. [Learn more](../../organizations/security/data-location.md).
 
 All of these machines have at least 10 GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
 
@@ -393,15 +393,15 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
 #### Xcode
 
-  If you use the [Xcode task](/azure/devops/pipelines/tasks/reference/xcode-v5) included with Azure Pipelines and Azure DevOps Server, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
+  If you use the [Xcode task](/azure/devops/pipelines/tasks/reference/xcode-v5) included with Azure Pipelines and Azure DevOps Server, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on macOS images, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_13.2.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/).
+  Xcode versions on macOS images can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/).
 
 #### Mono
 
-  To manually select a Mono version to use on the **Hosted macOS** agent pool, execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version:
+  To manually select a Mono version to use on macOS images (except the ARM64 image which doesn't support mono), execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version:
 
   ```bash
   SYMLINK=<symlink>
