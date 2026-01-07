@@ -4,7 +4,7 @@ description: Use Azure Pipelines to build and push container images to Docker Hu
 ms.topic: tutorial
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
 ms.author: jukullam
-ms.date: 12/20/2024
+ms.date: 01/07/2026
 monikerRange: 'azure-devops'
 zone_pivot_groups: pipelines-docker-acr
 
@@ -14,7 +14,7 @@ zone_pivot_groups: pipelines-docker-acr
 
 [!INCLUDE [version-eq-2022](../../../includes/version-eq-azure-devops.md)] 
 
-This article guides you through the creation of a pipeline to build and push a Docker image to an Azure Container Registry or Docker Hub. 
+This article guides you through the creation of a pipeline to build and push a Docker image to an Azure Container Registry or Docker Hub. By the end of this tutorial, you'll have a working CI/CD pipeline that automatically builds your Docker image and pushes it to your chosen container registry. 
 
 ## Prerequisites
 
@@ -38,16 +38,16 @@ This article guides you through the creation of a pipeline to build and push a D
 
 ## Create a Docker registry service connection
 
-Before pushing container images to a registry, you need to create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the container registry. For more information, see [Docker Registry service connections](../../library/service-endpoints.md#docker-registry-service-connection).
+Before you push container images to a registry, create a service connection in Azure DevOps. This service connection stores the credentials required to securely authenticate with the Azure Container Registry. For more information, see [Docker Registry service connections](../../library/service-endpoints.md#docker-registry-service-connection).
 
 
 1. In your Azure DevOps project, select **Project settings** > **Service connections**.
 
-    :::image type="content" source="../media/project-settings-selection.png" alt-text="Screenshot of Project settings selection.":::
+    :::image type="content" source="../media/project-settings-selection.png" alt-text="Screenshot showing how to navigate to Project settings and Service connections in Azure DevOps.":::
 
 1. Select **New service connection** and **Docker Registry**.
 
-    :::image type="content" source="../media/docker-registry-selection.png" alt-text="Screenshot of Docker Registry selection.":::
+    :::image type="content" source="../media/docker-registry-selection.png" alt-text="Screenshot showing the New service connection menu with Docker Registry option selected.":::
 
 1. Select **Docker Hub** and enter the following information:
 
@@ -58,7 +58,7 @@ Before pushing container images to a registry, you need to create a service conn
     | **Service connection name** | Enter a name for the service connection. |
     | **Grant access permission to all pipelines** | Select this option to grant access to all pipelines. |
 
-    :::image type="content" source="../media/docker-hub-service-connection-dialog.png" alt-text="Screenshot of Docker Hub service connection dialog.":::
+    :::image type="content" source="../media/docker-hub-service-connection-dialog.png" alt-text="Screenshot of the Docker Hub service connection dialog showing fields for Docker ID, password, and service connection name.":::
 
 1. Select **Verify and save**.
 
@@ -71,12 +71,12 @@ Before pushing container images to a registry, you need to create a service conn
 # [YAML](#tab/yaml)
 
 The Docker@2 task is used to build and push the image to the container registry.
-The [Docker@2 task](/azure/devops/pipelines/tasks/build/docker) is designed to streamline the process of building, pushing, and managing Docker images within your Azure Pipelines. This task supports a wide range of Docker commands, including build, push, login, logout, start, stop, and run.
+The [Docker@2 task](/azure/devops/pipelines/tasks/build/docker) streamlines the process of building, pushing, and managing Docker images within your Azure Pipelines. This task supports a wide range of Docker commands, including `build`, `push`, `login`, `logout`, `start`, `stop`, and `run`.
 
 Use the following steps to create a YAML pipeline that uses the Docker@2 task to build and push the image.  
 
 
-1. In to your Azure DevOps project, select **Pipelines** and **New pipeline**.
+1. In your Azure DevOps project, select **Pipelines** and **New pipeline**.
 
 1. Select **GitHub** as the location of your source code and select your repository.
     - If you're redirected to GitHub to sign in, enter your GitHub credentials.
@@ -94,12 +94,14 @@ Use the following steps to create a YAML pipeline that uses the Docker@2 task to
       vmImage: 'ubuntu-latest' 
     
     variables:
-      repositoryName: '<target repository name>' 
+      # Replace with the name of your target Docker Hub or Azure Container Registry repository
+      repositoryName: '<image-repository-name>' 
     
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: '<docker registry service connection>'
+        # Replace with the service connection name created in previous steps
+        containerRegistry: '<docker-registry-service-connection-name>'
         repository: $(repositoryName)
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
@@ -116,7 +118,7 @@ Use the following steps to create a YAML pipeline that uses the Docker@2 task to
 
 # [Classic](#tab/classic)
 
-### Create a pipeline using the classic editor
+### Create a pipeline by using the classic editor
 
 1. From your Azure DevOps project, select **Pipelines** and **New pipeline**
 1. Select **Use the classic editor** from the **Where is your code?** page.
@@ -125,7 +127,7 @@ Use the following steps to create a YAML pipeline that uses the Docker@2 task to
 1. On the **Select a template** page, select **Empty pipeline** and **Apply**.
 1. Select **ubuntu latest** for the **Agent Specification**.
 
-    :::image type="content" source="../media/classic-docker-pipeline-dialog.png" alt-text="Screenshot of classic Docker pipeline.":::
+    :::image type="content" source="../media/classic-docker-pipeline-dialog.png" alt-text="Screenshot of Azure DevOps classic pipeline editor with ubuntu latest agent specification selected.":::
 
 ### Add the Docker@2 task to the pipeline
 
@@ -135,11 +137,11 @@ To build and push the image to the container registry, add the Docker@2 task to 
   
     :::image type="content" source="../media/classic-pipeline-add-task.png" alt-text="Screenshot of add task icon.":::
 
-1. Select the **Docker** task, and **Add**.
+1. Select the **Docker** task, and select **Add**.
 1. Select the **buildAndPush** task.
 1. For **Container Registry**, select the service connection you created earlier. If you don't have one, select ***+New*** to create a new Docker Hub service connection.
 
-    :::image type="content" source="../media/classic-pipeline-docker-2-build-and-push-task.png" alt-text="Screenshot of task to build and push image to Docker Hub.":::
+    :::image type="content" source="../media/classic-pipeline-docker-2-build-and-push-task.png" alt-text="Screenshot of Docker@2 task configured to build and push image to Docker Hub, showing container registry and service connection options.":::
 
 ### Run the pipeline
 
@@ -181,9 +183,9 @@ To build and push the image to the container registry, add the Docker@2 task to 
     
     variables:
       # Container registry service connection established during pipeline creation
-      dockerRegistryServiceConnection: '7f9dc28e-5551-43ee-891f-33bf61a995de'
-      imageRepository: 'usernamepipelinesjavascriptdocker'
-      containerRegistry: 'repoistoryname.azurecr.io'
+      dockerRegistryServiceConnection: '<docker-registry-service-connection-id>'
+      imageRepository: '<image-repository-name>'
+      containerRegistry: '<container-registry-name>.azurecr.io'
       dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
       tag: '$(Build.BuildId)'
     
@@ -220,7 +222,7 @@ The [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) is design
 
 # [Classic](#tab/classic)
 
-### Create a pipeline using the classic editor
+### Create a pipeline by using the classic editor
 
 1. From your Azure DevOps project, select **Pipelines** and **New pipeline**.
 1. Select **Use the classic editor** from the **Where is your code?** page.
@@ -239,11 +241,11 @@ Add a **Docker@2** task to the pipeline to build and push the image to the conta
 
     :::image type="content" source="../media/classic-pipeline-add-task.png" alt-text="Screenshot of add task icon.":::
 
-1. Select the **Docker** task, and **Add**.
+1. Select the **Docker** task, and select **Add**.
 1. Select the **buildAndPush** task.
-1. Create a service connection select **+New**.
+1. Create a service connection by selecting **+New**.
 
-    :::image type="content" source="../media/classic-pipeline-new-service-connection-selection.png" alt-text="Screenshot of new service connection selection."::: 
+    :::image type="content" source="../media/classic-pipeline-new-service-connection-selection.png" alt-text="Screenshot showing the +New button to create a new Azure Container Registry service connection in the Docker@2 task.":::
 
 1. Fill in the following fields:
 
@@ -254,7 +256,7 @@ Add a **Docker@2** task to the pipeline to build and push the image to the conta
     | **Service connection name** | Enter a name for the service connection. |
     | **Grant access permission to all pipelines** | Select this option to grant access to all pipelines. |
 
-    :::image type="content" source="../media/classic-pipeline-new-azure-container-registry-service-connection-dialog.png" alt-text="Screenshot of new Azure Container Registry service connection.":::
+    :::image type="content" source="../media/classic-pipeline-new-azure-container-registry-service-connection-dialog.png" alt-text="Screenshot of the new Azure Container Registry service connection dialog showing fields for subscription, container registry, and service connection name.":::
 
 1. Select **Save**.
 
@@ -268,9 +270,10 @@ Add a **Docker@2** task to the pipeline to build and push the image to the conta
 
 :::zone-end
 
-When using self-hosted agents, be sure that Docker is installed on the agent's host, and the Docker engine/daemon is running with elevated privileges.  
+When using self-hosted agents, be sure that Docker is installed on the agent's host, and the Docker engine/daemon is running with administrative permissions.  
 
 ## Related articles
 
 - [Build a container image](build-image.md)
 - [Docker content trust](content-trust.md)
+- [Container registries overview](/azure/container-registry/container-registry-intro)
