@@ -14,7 +14,7 @@ zone_pivot_groups: pipelines-docker-acr
 
 [!INCLUDE [version-eq-2022](../../../includes/version-eq-azure-devops.md)] 
 
-This article guides you through the creation of a pipeline to build and push a Docker image to an Azure Container Registry or Docker Hub. By the end of this tutorial, you'll have a working CI/CD pipeline that automatically builds your Docker image and pushes it to your chosen container registry. 
+This article guides you through creating a pipeline to build and push a Docker image to an Azure Container Registry or Docker Hub. By the end of this tutorial, you'll have a working CI/CD pipeline that automatically builds your Docker image and pushes it to your chosen container registry. 
 
 ## Prerequisites
 
@@ -165,7 +165,7 @@ To build and push the image to the container registry, add the Docker@2 task to 
     - If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
 1. Select the **Docker -  Build and push an image to Azure Container Registry** template.
 1. Select your Azure subscription and **Continue**.
-1. Select your Container Registry, and then select **Validate and configure**.
+1. Select your container registry, and then select **Validate and configure**.
 
     Example YAML pipeline:
 
@@ -215,7 +215,7 @@ To build and push the image to the container registry, add the Docker@2 task to 
 1. Select **Save and run** and **Save and run** again.
 1. Select **Job** to view the logs and verify the pipeline ran successfully.
 
-The Docker template creates the service connection to your Azure Container Registry and uses the Docker@2 task to build and push the Docker image to the registry. 
+The Docker template creates the service connection to your Azure Container Registry and uses the [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) to build and push the Docker image to the registry. 
 
 The [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) is designed to streamline the process of building, pushing, and managing Docker images within your Azure Pipelines. This task supports a wide range of Docker commands, including build, push, login, logout, start, stop, and run.
 
