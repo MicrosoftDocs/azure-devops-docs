@@ -257,6 +257,6 @@ The sample in this article uses the following Azure CLI commands:
 
 - [Manage variable groups](../../library/variable-groups.md)
 
-- [Link a variable group to secrets in Azure Key Vault](link-variable-groups-to-key-vaults.md)
+- [Link a variable group to secrets in Azure Key Vault](../../library/link-variable-groups-to-key-vaults.md)
 
 - [Use predefined variables](../../build/variables.md)
