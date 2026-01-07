@@ -328,104 +328,217 @@ $summary.GetEnumerator() | ForEach-Object {
 
 ### Check for vulnerable dependencies
 
-This script checks for outdated or vulnerable dependencies using NuGet and npm:
+This script scans all NuGet and npm projects inside your repository and reports both outdated and vulnerable packages.
+
+Save the script in your repo and run it from the project root to scan your dependencies. It will display a highlighted console summary of all findings and generate a full JSON dependency report saved as *dependency-results.json*.
+
+PowerShell command: (Replace *SCRIPT_PATH\SCRIPT_FILENAME.ps1* with the actual script path and filename) 
+
+`powershell -ExecutionPolicy Bypass -File SCRIPT_PATH\SCRIPT_FILENAME.ps1 -projectPath (Get-Location).Path -outputPath .\dependency-results.json`
 
 ```powershell
-# Dependency checker script
+
 param(
-    [string]$projectPath = "C:\AzureDevOps\Repo",
-    [string]$outputPath = "C:\AzureDevOps\DependencyResults.json"
+  [string]$projectPath = (Resolve-Path ".").Path,
+  [string]$outputPath  = (Join-Path (Resolve-Path ".").Path "dependency-results.json")
 )
 
-$results = @{
-    NuGet = @()
-    Npm = @()
-    Vulnerabilities = @()
+# ---------------------------
+# Helpers
+# ---------------------------
+function Write-Severity {
+  param(
+    [Parameter(Mandatory)] [string] $severity,
+    [Parameter(Mandatory)] [string] $text
+  )
+  $sev = $severity.ToLower()
+  switch ($sev) {
+    "critical" { Write-Host $text -ForegroundColor Red }
+    "high"     { Write-Host $text -ForegroundColor Red }
+    "medium"   { Write-Host $text -ForegroundColor Yellow }
+    "moderate" { Write-Host $text -ForegroundColor Yellow }
+    "low"      { Write-Host $text -ForegroundColor DarkGray }
+    "info"     { Write-Host $text -ForegroundColor Green }
+    default    { Write-Host $text -ForegroundColor Green }
+  }
+}
+
+function To-Severity {
+  param([object]$s)
+  if (-not $s) { return "info" }
+  $t = "$s".ToLower()
+  if ($t -eq "moderate") { return "medium" }
+  return $t
+}
+
+# ---------------------------
+# Data containers
+# ---------------------------
+$results = [ordered]@{
+  NuGet          = @() 
+  Npm            = @()
+  Vulnerabilities= @()
 }
 
 Write-Host "Starting dependency check in: $projectPath"
 
-# NuGet dependency check
-$nugetFiles = Get-ChildItem -Path $projectPath -Recurse -Name "*.csproj", "packages.config"
-if ($nugetFiles.Count -gt 0) {
-    Write-Host "Checking NuGet dependencies..."
-    try {
-        $nugetOutput = dotnet list package --outdated --include-transitive 2>&1
-        if ($LASTEXITCODE -eq 0) {
-            $results.NuGet = $nugetOutput
-        }
-        
-        # Check for known vulnerabilities
-        $vulnOutput = dotnet list package --vulnerable 2>&1
-        if ($vulnOutput -like "*vulnerable*") {
-            $results.Vulnerabilities += $vulnOutput
-        }
-    }
-    catch {
-        Write-Warning "NuGet check failed: $($_.Exception.Message)"
-    }
-}
+# ---------------------------
+# NuGet (.NET)
+# ---------------------------
+$nugetProjects = Get-ChildItem -Path $projectPath -Recurse -Filter "*.csproj" -File
+foreach ($proj in $nugetProjects) {
+  $projDir = Split-Path $proj.FullName -Parent
+  Write-Host "Checking NuGet in project: $($proj.Name)"
+  Push-Location $projDir
+  try {
+    # Ensure restore done (quiet)
+    dotnet restore $proj.FullName | Out-Null
 
-# npm dependency check
-$packageJsonFiles = Get-ChildItem -Path $projectPath -Recurse -Name "package.json"
-if ($packageJsonFiles.Count -gt 0) {
-    Write-Host "Checking npm dependencies..."
-    Push-Location $projectPath
-    try {
-        $npmOutdated = npm outdated --json 2>$null
-        if ($npmOutdated) {
-            $results.Npm = $npmOutdated | ConvertFrom-Json
+    # Outdated (JSON)
+    $outJson = dotnet list $proj.FullName package --outdated --include-transitive --format json 2>$null
+    if ($outJson) {
+      $outObj = $outJson | ConvertFrom-Json
+      $results.NuGet += [ordered]@{
+        Project  = $proj.FullName
+        Outdated = $outObj.outdatedPackages
+      }
+      # Print concise summary w/ "info" severity color (outdated isn't a vulnerability)
+      if ($outObj.outdatedPackages) {
+        Write-Host "  Outdated packages:"
+        foreach ($p in $outObj.outdatedPackages) {
+          $line = "    - {0} requested:{1} current:{2} latest:{3}" -f `
+            $p.name, $p.requestedVersion, $p.resolvedVersion, $p.latestVersion
+          Write-Severity -severity "info" -text $line
         }
-        
-        # Check for vulnerabilities
-        $npmAudit = npm audit --json 2>$null
-        if ($npmAudit) {
-            $auditResults = $npmAudit | ConvertFrom-Json
-            if ($auditResults.vulnerabilities) {
-                $results.Vulnerabilities += $auditResults.vulnerabilities
+      }
+    }
+
+    # Vulnerable (JSON)
+    $vulnJson = dotnet list $proj.FullName package --vulnerable --format json 2>$null
+    if ($vulnJson) {
+      $vulnObj = $vulnJson | ConvertFrom-Json
+      if ($vulnObj.vulnerablePackages) {
+        $results.Vulnerabilities += [ordered]@{
+          Project = $proj.FullName
+          NuGet   = $vulnObj.vulnerablePackages
+        }
+        Write-Host "  Vulnerable packages:"
+        foreach ($vp in $vulnObj.vulnerablePackages) {
+          $sev = To-Severity $vp.severity
+          $line = "    - {0} {1} (severity:{2})" -f $vp.name, $vp.resolvedVersion, $sev
+          Write-Severity -severity $sev -text $line
+          if ($vp.advisories) {
+            foreach ($adv in $vp.advisories) {
+              $aline = "        advisory: {0} ({1})" -f $adv.url, (To-Severity $adv.severity)
+              Write-Severity -severity (To-Severity $adv.severity) -text $aline
             }
+          }
         }
+      }
     }
-    catch {
-        Write-Warning "npm check failed: $($_.Exception.Message)"
+  } catch {
+    Write-Host ("  NuGet check failed for {0}: {1}" -f $proj.Name, $_.Exception.Message) -ForegroundColor Yellow
+  } finally {
+    Pop-Location
+  }
+}
+
+# ---------------------------
+# npm (Node.js)
+# ---------------------------
+$packageJsons = Get-ChildItem -Path $projectPath -Recurse -Filter "package.json" -File | Where-Object { $_.FullName -notmatch "node_modules" }
+foreach ($pkg in $packageJsons) {
+  $pkgDir = Split-Path $pkg.FullName -Parent
+  Write-Host "Checking npm folder: $pkgDir"
+  Push-Location $pkgDir
+  try {
+    # Deterministic install; suppress lifecycle scripts
+    if (Test-Path package-lock.json) {
+      $null = npm ci --ignore-scripts --no-progress 2>$null
+    } else {
+      $null = npm install --ignore-scripts --no-progress 2>$null
     }
-    finally {
-        Pop-Location
+
+    # Outdated (JSON)
+    $npmOutdated = npm outdated --json 2>$null
+    if ($npmOutdated) {
+      $outObj = $npmOutdated | ConvertFrom-Json
+      $results.Npm += [ordered]@{
+        Path    = $pkgDir
+        Outdated= $outObj
+      }
+      Write-Host "  Outdated packages:"
+      $props = $outObj.PSObject.Properties
+      foreach ($prop in $props) {
+        $pkgName = $prop.Name
+        $val     = $prop.Value
+        $line = "    - {0} current:{1} wanted:{2} latest:{3}" -f `
+          $pkgName, $val.current, $val.wanted, $val.latest
+        Write-Severity -severity "info" -text $line
+      }
     }
+
+    # Audit (JSON) — supports modern and legacy shapes
+    $npmAudit = npm audit --json 2>$null
+    if ($npmAudit) {
+      $audit = $npmAudit | ConvertFrom-Json
+      $vulnBlock =
+        if ($audit.vulnerabilities) { $audit.vulnerabilities }
+        elseif ($audit.advisories) { $audit.advisories.Values }
+        else { $null }
+
+      if ($vulnBlock) {
+        $results.Vulnerabilities += [ordered]@{
+          Path = $pkgDir
+          Npm  = $vulnBlock
+        }
+
+        
+        if ($audit.vulnerabilities) {
+          # Modern shape: PSCustomObject whose properties are package names
+          $props = $audit.vulnerabilities.PSObject.Properties
+          foreach ($prop in $props) {
+            $name = $prop.Name
+            $info = $prop.Value
+            $sev  = To-Severity $info.severity
+            $via  = $info.via
+            if ($via -is [System.Collections.IEnumerable]) {
+              $viaText = ($via -join ", ")
+            } else {
+              $viaText = "$via"
+            }
+            $line = "    - {0} severity:{1} via:{2}" -f $name, $sev, $viaText
+            Write-Severity -severity $sev -text $line
+          }
+        } elseif ($audit.advisories) {
+          # Legacy
+          foreach ($adv in $audit.advisories.Values) {
+            $sev  = To-Severity $adv.severity
+            $line = "    - {0} {1} severity:{2} url:{3}" -f $adv.module_name, $adv.findings[0].version, $sev, $adv.url
+            Write-Severity -severity $sev -text $line
+          }
+        }
+      }
+    }
+  } catch {
+    # NOTE: using $() around variables to avoid ':' parsing issues
+    Write-Host ("  npm check failed for {0}: {1}" -f $pkgDir, $_.Exception.Message) -ForegroundColor Yellow
+  } finally {
+    Pop-Location
+  }
 }
 
-# Validation Logic
-$hasIssues = $false
-if ($results.NuGet.Count -gt 0) {
-    Write-Host "Outdated NuGet packages detected:" -ForegroundColor Yellow
-    $results.NuGet | ForEach-Object { Write-Host "  $_" }
-    $hasIssues = $true
-}
-
-if ($results.Npm.Count -gt 0) {
-    Write-Host "Outdated npm packages detected:" -ForegroundColor Yellow
-    $results.Npm | ConvertTo-Json | Write-Host
-    $hasIssues = $true
-}
-
-if ($results.Vulnerabilities.Count -gt 0) {
-    Write-Host "Security vulnerabilities detected:" -ForegroundColor Red
-    $results.Vulnerabilities | ConvertTo-Json | Write-Host
-    $hasIssues = $true
-}
-
-# Export results
-$results | ConvertTo-Json -Depth 5 | Out-File $outputPath
+# ---------------------------
+# Summary & Exit (always 0)
+# ---------------------------
+$results | ConvertTo-Json -Depth 8 | Out-File -Encoding utf8 $outputPath
 Write-Host "Results exported to: $outputPath"
 
+$hasIssues = ($results.NuGet.Count -gt 0) -or ($results.Npm.Count -gt 0) -or ($results.Vulnerabilities.Count -gt 0)
 if ($hasIssues) {
-    Write-Host "Issues detected. Review the output above." -ForegroundColor Red
-    # Remediation Hook: Create work items or PRs
-    # Example: Create a GitHub issue or Azure DevOps task
-    exit 1
+  Write-Host "Issues detected." -ForegroundColor Yellow
 } else {
-    Write-Host "No dependency issues found." -ForegroundColor Green
-    exit 0
+  Write-Host "No dependency issues found." -ForegroundColor
 }
 ```
 

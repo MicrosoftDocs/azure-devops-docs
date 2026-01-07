@@ -5,7 +5,7 @@ ms.service: azure-devops-test-plans
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 12/19/2025
+ms.date: 01/07/2026
 monikers: 'azure-devops'
 ---
 
@@ -16,9 +16,9 @@ monikers: 'azure-devops'
 Azure DevOps Test Plans provides a new Test Run Hub experience for managing test execution. This enhanced interface helps teams track test progress, analyze results, and maintain quality across development cycles.
 
 > [!NOTE]
-> The new **Test Run Hub** experience is a public **Preview feature** that's automatically enabled for all organizations. This feature can change at any time during the preview period.
+> The new **Test Run Hub** experience is a public **Preview feature** automatically enabled for all organizations. This feature can change at any time during the preview period.
 >
-> And starting mid‑January 2026, the experience will begin transitioning to [General Availability (GA)](https://devblogs.microsoft.com/devops/the-new-test-run-hub-is-going-generally-available/). The rollout will happen gradually, so it may take some time before the GA experience reaches all Azure DevOps organizations.
+> And starting early 2026, the experience begins transitioning to [General Availability (GA)](https://devblogs.microsoft.com/devops/the-new-test-run-hub-is-going-generally-available/). The rollout happens gradually, so it might take some time before the GA experience reaches all Azure DevOps organizations.
 
 ## What is a test run?
 
@@ -69,12 +69,13 @@ To configure which columns display, do the following steps:
 
 1. Select **Column options** in the top right.
 
-   :::image type="content" source="media/test-runs/column-options-open.png" alt-text="Screenshot showing how to open the column options menu.":::
+   :::image type="content" source="media/test-runs/column-options-open.png" alt-text="Screenshot showing the Column options button location in the test runs interface.":::
 
-2. Choose the columns you want to see.
+2. In the **Column options** dialog, choose the columns you want to see.
+
 3. Select **Apply**.
 
-   :::image type="content" source="media/test-runs/column-options.png" alt-text="Screenshot showing the column options configuration dialog for test runs.":::
+   :::image type="content" source="media/test-runs/column-options.png" alt-text="Screenshot showing the Column options dialog with available column selections.":::
 
 > [!TIP]
 > The Pipeline Run column applies to automated runs only, and relates to both Build and Release Pipelines.
@@ -173,7 +174,7 @@ To associate test results with bugs or other work items:
 Select any test case to view detailed results including:
 
 - **Test result summary**: Overview of the test execution
-- **Linked work items**: Associated bugs and other work items; click the "+ Add" button of the section to relate anything needed!  
+- **Linked work items**: Associated bugs and other work items; select the "+ Add" button of the section to relate anything needed!  
 - **Test steps**: Provides detailed step-by-step results, including outcomes and comments. Enable the "Show images" option to preview the captured screenshots inline.
 - **Analysis information**: Post-execution analysis and next actions
 - **Attachments**: All test result-specific attachments
