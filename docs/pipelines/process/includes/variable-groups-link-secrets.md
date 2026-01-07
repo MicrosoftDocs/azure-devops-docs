@@ -51,7 +51,9 @@ If you don't have a key vault already, you can create one as follows:
 
     :::image type="content" source="../../library/media/link-azure-key-vault-variable-group.png" alt-text="Screenshot of variable group with Azure key vault integration.":::
 
-Key vaults with role-based access control (RBAC) permissions are not supported. Your key vault permission model must be set to **Vault access policy**. If you're using a key vault with RBAC permissions, you can use the following workaround to link your key vault to your variable group:
+### RBAC key vaults
+
+Key vaults with role-based access control (RBAC) permissions are not supported. We recommend setting your key vault permission model to **Vault access policy**. If you're using a key vault with RBAC permissions, you can use the following workaround to link your key vault to your variable group:
 
 1. [Create an ARM service connection](../../library/service-endpoints.md#create-a-service-connection)
 1. Navigate to Azure portal, find your key vault > **Access control (IAM)**, then grant the service connection the appropriate RBAC role (*Key Vault Secrets User* or *Key Vault Secrets Officer* or based on your scenario).
