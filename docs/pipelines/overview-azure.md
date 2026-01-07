@@ -17,7 +17,7 @@ monikerRange: '<= azure-devops'
 
 ## Overview
 
-Azure Pipelines enables continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. By integrating Azure Pipelines with Azure services, you can automate testing, building, and deployment processes—ensuring faster delivery, reduced manual effort, and better utilization of Azure's capabilities.
+Azure Pipelines enables continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. By integrating Azure Pipelines with Azure services, you can automate testing, building, and deployment processes.
 
 This article provides links to detailed guides for integrating Azure Pipelines with specific Azure services. Use the sections below to find the service you're working with, or see [Build and release tasks](tasks/index.md) for a comprehensive list of available tasks.
 
@@ -68,4 +68,4 @@ This article provides links to detailed guides for integrating Azure Pipelines w
 - [Deploy to Azure VMs using deployment groups in Azure Pipelines](release/deployment-groups/deploying-azure-vms-deployment-groups.md)
 - [Tutorial: Deploy a Java app to a virtual machine scale set](apps/cd/azure/deploy-virtual-scale-set-java.md) 
 
-For a complete list of Azure Pipelines tasks, see [Build and release tasks](tasks/index.md) and the [Azure Pipelines task reference](/azure/devops/pipelines/tasks/reference).
+For a complete list of Azure Pipelines tasks, see the [Azure Pipelines task reference](/azure/devops/pipelines/tasks/reference).

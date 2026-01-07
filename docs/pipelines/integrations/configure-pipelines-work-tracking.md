@@ -108,7 +108,7 @@ The following table summarizes the integration points between Azure Boards and A
       Automatically create a work item when a build fails, and optionally set values for work item fields. For more information, see [Create work item on failure](#create-work-item-on-failure) later in this article.  
    :::column-end:::
    :::column span="1":::
-      2018 and later versions 
+      All versions 
    :::column-end:::
 :::row-end:::
 ---
@@ -154,37 +154,7 @@ For YAML-defined release pipelines, you configure the integration through the **
 	:::image type="content" source="media/pipelines-integration/pipeline-settings-enable-link-work-items.png" alt-text="Screenshot of YAML Pipeline settings dialog with Automatically link new work items in this build option.":::
 
 	 
-::: moniker-end
-
-# [Classic Build](#tab/classic-build)
-
-<a id="classic-open-settings"></a> 
-
-<a id="classic-build-properties"></a>
-
-**Build properties**
-
-Open the build pipeline, choose to edit the pipeline, and then select the **Options** tab. 
-
-::: moniker range="<=azure-devops"
-:::image type="content" source="media/pipelines-integration/open-classic-build-properties-options.png" alt-text="Screenshot of Classic Build pipeline Options tab.":::
 ::: moniker-end 
- 
-
-The Build properties page appears. 
-
-::: moniker range="<=azure-devops"
-:::image type="content" source="media/pipelines-integration/classic-build-options.png" alt-text="Screenshot of Build properties dialog with build configuration options.":::
-
-For more information on each setting, see:  
-- [Build number format](../release/index.md#q-how-do-i-manage-the-naming-of-new-releases)
-- [Automatically link work items](#auto-link-work-items-builds)
-- [Create work item on failure](#create-work-item-on-failure)
-- [Get or enable a status badge](#enable-status-badge)
-
-::: moniker-end 
-
- 
 
 # [Classic Release](#tab/classic-release)
 
@@ -236,22 +206,6 @@ By enabling automatic linking, you can track the builds or releases that incorpo
 
 	Once enabled, **Integrated in build** links are generated for all work items linked to the selected pull request with each release run. 
 ::: moniker-end
-	
-
-# [Classic Build](#tab/classic-build)
-
-1. Open pipeline **Build properties** as described in [Build properties](#classic-build-properties).
-
-1. Enable **Automatically link work items included in this run**. Add the branches to include or exclude.   
-	:::image type="content" source="media/pipelines-integration/auto-link-work-items-classic-build-pipeline.png" alt-text="Screenshot of Automatically link work items included in this run property settings with branch filtering options.":::
-
-	Once enabled, **Integrated in build** links are generated for all work items linked to the selected branches in each run.  
- 
-	To view a list of work items linked to the build, choose the Related link on the Summary page.  
-
-	:::image type="content" source="media/pipelines-integration/build-view-work-items.png" alt-text="Screenshot of build summary page with Related link to view work items linked to the build.":::
-
-1.	Save your pipeline.
 
 # [Classic Release](#tab/classic-release) 
  
@@ -347,18 +301,6 @@ To learn the reference name for a field, look it up from the [Work item field in
 1. Choose the branch and scope of interest, and then choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
 	:::image type="content" source="media/pipelines-integration/status-badge-yaml.png" alt-text="Screenshot of YAML pipeline status badge dialog showing branch and scope selection options.":::
-
-<a id="status-badge"></a> 
-
-# [Classic Build](#tab/classic-build)
-
-1. Open pipeline **Build properties** as described in [Build properties](#classic-build-properties).
-
-1. Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
-
-	:::image type="content" source="media/pipelines-integration/classic-build-status-badge.png" alt-text="Screenshot of Classic build properties status badge section with Copy to clipboard option.":::
-
-3.	Save your pipeline.
 
 # [Classic Release](#tab/classic-release)
 
