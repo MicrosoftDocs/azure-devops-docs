@@ -18,9 +18,7 @@ Azure DevOps Test Plans provides a new Test Run Hub experience for managing test
 > [!NOTE]
 > The new **Test Run Hub** experience is a public **Preview feature** that's automatically enabled for all organizations. This feature can change at any time during the preview period.
 >
-> To disable it, go to **Preview features** and look for the feature flag named **New Test Run Hub** and set the toggle to **Off**. If you [disable this feature](../project/navigation/preview-features.md), share your feedback to help us improve it.
->  
-> If you don't see the new experience in your organization yet, it's normal as the rollout is gradual.
+> And starting mid‑January 2026, the experience will begin transitioning to [General Availability (GA)](https://devblogs.microsoft.com/devops/the-new-test-run-hub-is-going-generally-available/). The rollout will happen gradually, so it may take some time before the GA experience reaches all Azure DevOps organizations.
 
 ## What is a test run?
 
