@@ -9,7 +9,7 @@ ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 12/03/2025
+ms.date: 01/07/2026
 ---
 
 # Resolve Azure DevOps and Office integration issues
@@ -20,9 +20,6 @@ Azure DevOps integrates with Microsoft Office applications, primarily Excel and 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Excel and Azure DevOps/Office integration Team ribbon.](media/excel-team-ribbon.png)
-
-> [!IMPORTANT]
-> The Azure DevOps Office integration add-in is no longer supported and might not function with current versions of Office or browsers. Microsoft doesn't provide updates or fixes for this add-in. For bulk work item operations, use the [CSV import/export functionality](../../queries/import-work-items-from-csv.md), which is the recommended and supported approach.
 
 Common scenarios where you might encounter integration issues include:
 
@@ -286,7 +283,7 @@ Resolve this issue by creating a configuration file that redirects assembly bind
    </configuration>
    ```
 
-4. Save the file and ensure it's named exactly `excel.exe.config` (not `excel.exe.config.txt`).
+4. Save the file and ensure the name is exactly `excel.exe.config` (not `excel.exe.config.txt`).
 
 5. Close all Excel instances and restart Excel.
 
