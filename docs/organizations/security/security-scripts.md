@@ -328,7 +328,13 @@ $summary.GetEnumerator() | ForEach-Object {
 
 ### Check for vulnerable dependencies
 
-This script checks for outdated or vulnerable dependencies using NuGet and npm:
+This script scans all NuGet and npm projects inside your repository and reports both outdated and vulnerable packages.
+
+Save the script in your repo and run it from the project root to scan your dependencies. It will display a highlighted console summary of all findings and generate a full JSON dependency report saved as *dependency-results.json*.
+
+PowerShell command: (Replace *SCRIPT_PATH\SCRIPT_FILENAME.ps1* with the actual script path and filename) 
+
+`powershell -ExecutionPolicy Bypass -File SCRIPT_PATH\SCRIPT_FILENAME.ps1 -projectPath (Get-Location).Path -outputPath .\dependency-results.json`
 
 ```powershell
 
