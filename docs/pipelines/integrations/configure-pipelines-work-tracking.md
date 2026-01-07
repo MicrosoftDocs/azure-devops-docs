@@ -278,7 +278,7 @@ If a build pipeline fails, you can automatically create a work item to track get
 
 <a id="classic-options-integrations"></a> 
 
-1. Open pipeline build options as described in [Build properties](#build-properties).
+1. Open pipeline build options as described in [Build properties](#classic-release-options).
 
 2. Enable **Create work item on failure** and choose the type of work item to create. Optionally check the  **Assign to requestor** checkbox to set the **Assign To** field and add fields to set within the work item to create. 
 
