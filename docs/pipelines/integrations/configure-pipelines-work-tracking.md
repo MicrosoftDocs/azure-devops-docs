@@ -6,7 +6,7 @@ ms.subservice: azure-devops-pipelines-integrations
 ms.topic: how-to
 ms.author: jukullam
 monikerRange: '<= azure-devops'
-ms.date: 09/09/2024
+ms.date: 01/07/2026
 ms.custom:
   - cross-service
   - sfi-image-nochange
@@ -20,9 +20,9 @@ To support integration and traceability across Azure DevOps Services with pipeli
 
 ## Supported pipeline and work tracking integration features 
 
-Several features provide support for end-to-end traceability as user stories and features move through the development cycle. As with Azure Repos, you can link work items to pipeline objects with the following link types: *Build, Integrated in build*, and *Integrated in release*. The *Integrated in release environment* link can only be created by enabling the **Report release status to Boards** option in Classic release pipelines. 
+Several features provide support for end-to-end traceability as user stories and features move through the development cycle. As with Azure Repos, you can link work items to pipeline objects with the following link types: *Build, Integrated in build*, and *Integrated in release*. You can create the *Integrated in release environment* link by enabling the **Report release status to Boards** option in Classic release pipelines. 
 
-:::image type="content" source="media/pipelines-integration/concept-link-types-pipelines.png" alt-text="Conceptual image of link types that link work items to Azure Pipelines objects.":::
+:::image type="content" source="media/pipelines-integration/concept-link-types-pipelines.png" alt-text="Screenshot of conceptual diagram showing link types that connect work items to Azure Pipelines objects.":::
 
 The following table summarizes the integration points between Azure Boards and Azure Pipelines. Options and configuration steps differ depending on whether you're configuring a YAML or Classic pipeline, and your Azure DevOps version. Most options are supported for pipelines run against an Azure Repos Git repository unless otherwise noted. 
  
@@ -80,7 +80,7 @@ The following table summarizes the integration points between Azure Boards and A
       Automatically link work items to releases and report deployment status to a work item (Classic only)
    :::column-end:::
    :::column span="2":::
-      Required to populate **Deployment** control in work item form with *Integrated in release stage* links. For more information, see [Report deployment status to Boards](#classic-report-boards) later in this article.
+      You need this task to populate the **Deployment** control in the work item form with *Integrated in release stage* links. For more information, see [Report deployment status to Boards](#classic-report-boards) later in this article.
    :::column-end:::
    :::column span="1":::
       Azure DevOps Server 2020 and later  
@@ -130,8 +130,8 @@ The following table summarizes the integration points between Azure Boards and A
 ## Prerequisites
 
 - To configure the integration options for a Classic release pipeline, you must have permissions to edit the release. 
-- To link work items to commits and pull requests, you must have your **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission set.  
-- To view work items, you must have your **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item.  
+- To link work items to commits and pull requests, you must set your **Edit work items in this node** permission to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission set.  
+- To view work items, you must set your **View work items in this node** permission to **Allow** for the Area Path assigned to the work item.  
  
 ## Open pipeline settings, build options, or integration options 
  
@@ -147,11 +147,11 @@ For YAML-defined release pipelines, you configure the integration through the **
 
 1. Open the pipeline, choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and then choose **Settings**.
 
-	:::image type="content" source="media/pipelines-integration/open-pipeline-settings.png " alt-text="Open Pipeline settings.":::
+	:::image type="content" source="media/pipelines-integration/open-pipeline-settings.png" alt-text="Screenshot of YAML pipeline with More actions menu open showing the Settings option.":::
 
-	The Pipeline Settings dialog appears. For more information on automatic linking, see [Automatically link work items](#auto-link-work-items-builds) later in this article.
+	The Pipeline Settings dialog appears. For more information on automatic linking, see [Automatically link work items](#auto-link-work-items-builds).
 
-	:::image type="content" source="media/pipelines-integration/pipeline-settings-enable-link-work-items.png" alt-text="YAML Pipeline settings dialog.":::
+	:::image type="content" source="media/pipelines-integration/pipeline-settings-enable-link-work-items.png" alt-text="Screenshot of YAML Pipeline settings dialog with Automatically link new work items in this build option.":::
 
 	 
 ::: moniker-end
@@ -164,23 +164,23 @@ For YAML-defined release pipelines, you configure the integration through the **
 
 **Build properties**
 
-Open the build pipeline, choose to edit the pipeline, and then choose the **Options** tab. 
+Open the build pipeline, choose to edit the pipeline, and then select the **Options** tab. 
 
 ::: moniker range="<=azure-devops"
-:::image type="content" source="media/pipelines-integration/open-classic-build-properties-options.png" alt-text="Screenshot of Classic Build pipeline, Options tab.":::
+:::image type="content" source="media/pipelines-integration/open-classic-build-properties-options.png" alt-text="Screenshot of Classic Build pipeline Options tab.":::
 ::: moniker-end 
  
 
 The Build properties page appears. 
 
 ::: moniker range="<=azure-devops"
-:::image type="content" source="media/pipelines-integration/classic-build-options.png" alt-text="Build properties dialog.":::
+:::image type="content" source="media/pipelines-integration/classic-build-options.png" alt-text="Screenshot of Build properties dialog with build configuration options.":::
 
-For more information on each setting, use one of the following links:  
+For more information on each setting, see:  
 - [Build number format](../release/index.md#q-how-do-i-manage-the-naming-of-new-releases)
 - [Automatically link work items](#auto-link-work-items-builds)
 - [Create work item on failure](#create-work-item-on-failure)
-- [Status badge](#status-badge)
+- [Get or enable a status badge](#enable-status-badge)
 
 ::: moniker-end 
 
@@ -192,18 +192,17 @@ For more information on each setting, use one of the following links:
 
 **Release integration options**
 
-For Classic release pipelines, open **Pipelines>Releases**, choose to edit your pipeline, then choose **Options** and then **Integrations**.
+For Classic release pipelines, open **Pipelines > Releases**, select your pipeline to edit it, and then choose **Options**. Select **Integrations**.
 
 ::: moniker range="<=azure-devops"
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Integrations options for Classic pipelines](media/pipelines-integration/integration-options-classic.png)
+:::image type="content" source="media/pipelines-integration/integration-options-classic.png" alt-text="Screenshot of Integrations options for Classic pipelines showing deployment status configuration settings.":::
 
-For more information on each setting, use one of the following links: 
+For more information on each setting, see: 
 - [Report deployment status to the repository host](#report-deployment-status-to-the-repository-host-classic)
-- [Report deployment status to Work](#auto-link-work-items-builds)
+- [Automatically link work items to builds or releases](#auto-link-work-items-builds)
 - [Report deployment status to Boards](#classic-report-boards)
 - [Report deployment status to Jira](#report-deployment-status-to-jira-classic)
-- [Enable the deployment status badge](#enable-status-badge)
+- [Get or enable a status badge](#enable-status-badge)
 ::: moniker-end 
 
  
@@ -244,13 +243,13 @@ By enabling automatic linking, you can track the builds or releases that incorpo
 1. Open pipeline **Build properties** as described in [Build properties](#classic-build-properties).
 
 1. Enable **Automatically link work items included in this run**. Add the branches to include or exclude.   
-	:::image type="content" source="media/pipelines-integration/auto-link-work-items-classic-build-pipeline.png" alt-text="Screenshot of Automatically link work items in this build property settings.":::
+	:::image type="content" source="media/pipelines-integration/auto-link-work-items-classic-build-pipeline.png" alt-text="Screenshot of Automatically link work items included in this run property settings with branch filtering options.":::
 
-	Once enabled, **Integrated in build** are generated for all work items linked to the selected branches in each run.  
+	Once enabled, **Integrated in build** links are generated for all work items linked to the selected branches in each run.  
  
 	To view a list of work items linked to the build, choose the Related link on the Summary page.  
 
-	:::image type="content" source="media/pipelines-integration/build-view-work-items.png" alt-text="Screenshot of link to view work items linked to build.":::
+	:::image type="content" source="media/pipelines-integration/build-view-work-items.png" alt-text="Screenshot of build summary page with Related link to view work items linked to the build.":::
 
 1.	Save your pipeline.
 
@@ -266,11 +265,11 @@ Before you choose integration options, set up the release stages as described in
 
 2. Check the **Report deployment status to Boards** checkbox. Map the **Deployment type** to each stage, or leave **Unmapped**. Select this option if you want to create links to all work items that represent associated changes to the source, when a release is complete. This option must be enabled in order for the work item form [**Deployment**](../../boards/backlogs/add-link.md#link-work-items-to-deployments) control to work.
 
-	:::image type="content" source="media/pipelines-integration/release-settings-stages-1.png" alt-text="Screenshot of Report deployment status to Boards, Classic release, five stages.":::
+	:::image type="content" source="media/pipelines-integration/release-settings-stages-1.png" alt-text="Screenshot of Report deployment status to Boards option in Classic release with five stages selected.":::
  
 	To view a list of work items linked to the release, choose **Release (old view)** from :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More commands**, and then choose the **Work Items** tab.   
 
-	:::image type="content" source="media/pipelines-integration/release-pipeline-view-work-items.png" alt-text="Screenshot of link to view work items linked to a release.":::
+	:::image type="content" source="media/pipelines-integration/release-pipeline-view-work-items.png" alt-text="Screenshot of release pipeline Work Items tab displaying work items linked to the release.":::
 
 1.	Save your pipeline.
 
@@ -284,9 +283,9 @@ To verify the integration is working, perform the following steps:
 
 1.  Run the pipeline. 
 
-2. Open one of the linked work items and view the [**Deployment**](../../boards/backlogs/add-link.md#link-work-items-to-deployments) control. As shown in the following image, the  **Deployment** control shows release information for two release stages those work items that linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.  
+2. Open one of the linked work items and view the [**Deployment**](../../boards/backlogs/add-link.md#link-work-items-to-deployments) control. As shown in the following image, the **Deployment** control shows release information for two release stages for work items that linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.  
 
-:::image type="content" source="../../boards/work-items/media/deployments-control/deployment-control-intro.png " alt-text="Screenshot of Work item form, Deployment control.":::
+:::image type="content" source="../../boards/work-items/media/deployments-control/deployment-control-intro.png" alt-text="Screenshot of Work item form showing the Deployment control with deployment stage information.":::
  
 ::: moniker-end
  
@@ -297,7 +296,7 @@ To verify the integration is working, perform the following steps:
 
 When developing your software, you can link work items when you create a branch, commit, or pull request. Or, you can initiate a branch, commit, or pull request from a work item, automatically linking these objects as described in [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md). For example, here we create a new branch from the Cancel order form user story.
 
-:::image type="content" source="media/pipelines-integration/create-branch-link-work-item.png" alt-text="Create branch dialog from work item form.":::
+:::image type="content" source="media/pipelines-integration/create-branch-link-work-item.png" alt-text="Screenshot of Create branch dialog showing work item link options.":::
 
 When you automatically link work items to builds, the following computations are made: 
 
@@ -329,7 +328,7 @@ If a build pipeline fails, you can automatically create a work item to track get
 
 	For example, here we choose the Bug work item type and specify the Priority and Tags fields and their values. 
 
-	:::image type="content" source="media/pipelines-integration/create-work-item-failure-yaml.png" alt-text="Screenshot of Create work item on failure in build options.":::
+	:::image type="content" source="media/pipelines-integration/create-work-item-failure-yaml.png" alt-text="Screenshot of Create work item on failure option in build options with Bug work item type selected.":::
 
 3.	Save your pipeline.
 
@@ -343,11 +342,11 @@ To learn the reference name for a field, look it up from the [Work item field in
 
 1. Open pipeline :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More Actions** and choose **Status badge**.
 
-	:::image type="content" source="media/pipelines-integration/yaml-pipeline-more-actions-menu-options.png" alt-text="Screenshot of YAML pipeline More Actions menu options.":::
+	:::image type="content" source="media/pipelines-integration/yaml-pipeline-more-actions-menu-options.png" alt-text="Screenshot of YAML pipeline More Actions menu with Status badge option.":::
 
 1. Choose the branch and scope of interest, and then choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
-	:::image type="content" source="media/pipelines-integration/status-badge-yaml.png" alt-text="Screenshot of YAML pipeline status badge.":::
+	:::image type="content" source="media/pipelines-integration/status-badge-yaml.png" alt-text="Screenshot of YAML pipeline status badge dialog showing branch and scope selection options.":::
 
 <a id="status-badge"></a> 
 
@@ -357,7 +356,7 @@ To learn the reference name for a field, look it up from the [Work item field in
 
 1. Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
-	:::image type="content" source="media/pipelines-integration/classic-build-status-badge.png" alt-text="Screenshot of classic build properties, status badge section.":::
+	:::image type="content" source="media/pipelines-integration/classic-build-status-badge.png" alt-text="Screenshot of Classic build properties status badge section with Copy to clipboard option.":::
 
 3.	Save your pipeline.
 
@@ -367,11 +366,11 @@ Select this option if you want to display the latest outcome of a stage deployme
 
 1.	Check the **Enable the deployment status badge** checkbox. And then, select the stages for which you want to display the outcome. By default, all the stages defined for the release are selected.
 
-	:::image type="content" source="media/pipelines-integration/enable-status-badge-3-stages.png" alt-text="Screenshot of Classic release enable deployment status badge with three stages selected.":::
+	:::image type="content" source="media/pipelines-integration/enable-status-badge-3-stages.png" alt-text="Screenshot of Enable the deployment status badge option with three stages selected.":::
 
 1.	Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
-	:::image type="content" source="media/pipelines-integration/classic-release-status-badge-3-stages.png" alt-text="Screenshot of Classic release enable deployment status badge with three stages that you can copy.":::
+	:::image type="content" source="media/pipelines-integration/classic-release-status-badge-3-stages.png" alt-text="Screenshot of Classic release status badge dialog showing three stages with copyable badge markup.":::
 	
 3.	Save your pipeline.
 
@@ -386,16 +385,15 @@ Select this option if you want to display the latest outcome of a stage deployme
 
 When your code is stored in an Azure Repos Git repository, you can configure your release pipeline to display a badge on the Azure Repos pages. The badge indicates where the specific commit got deployed and whether the deployment is passing or failing. This option improves the traceability from code commit to deployment.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Integrations options for Classic pipelines, report deployment status to the repository host](media/pipelines-integration/classic-report-deployment-status.png)
+:::image type="content" source="media/pipelines-integration/classic-report-deployment-status.png" alt-text="Screenshot of Integrations options for Classic pipelines showing Report deployment status to the repository host settings.":::
 
-The deployment status is displayed in the following sections of Azure Repos:
+Azure Repos displays the deployment status in the following sections:
 
 * **Files**: Indicates the status of the latest deployment for the selected branch.
 * **Commits**: Indicates the deployment status for each commit (requires the continuous integration (CD) trigger to be enabled for your release).
 * **Branches**: Indicates the status of the latest deployment for each branch.
  
-If a commit gets deployed to multiple release pipelines, with multiple stages, each has an entry in the badge with status shown for each stage. By default, when you create a release pipeline, deployment status is posted for all stages. However, you can selectively choose the stages for which deployment status should be displayed in the status badge (for example, show only the production stage). Your team members can select the status badge to view the latest deployment status for each of the selected stages of the release pipelines.
+If you deploy a commit to multiple release pipelines with multiple stages, each stage appears in the badge with its status. By default, when you create a release pipeline, it posts deployment status for all stages. However, you can selectively choose the stages for which deployment status should be displayed in the status badge (for example, show only the production stage). Your team members can select the status badge to view the latest deployment status for each of the selected stages of the release pipelines.
 
 ::: moniker-end
 
@@ -407,7 +405,7 @@ If a commit gets deployed to multiple release pipelines, with multiple stages, e
 
 Include Jira issues in work items and create links to all issues on stage completion. Install Azure Pipelines for Jira app in Jira Software cloud and add organization to create a connection.
 
-:::image type="content" source="media/pipelines-integration/integration-options-classic-jira.png" alt-text="Screenshot of Integrations options for Classic pipelines, Report deployment status to Jira":::
+:::image type="content" source="media/pipelines-integration/integration-options-classic-jira.png" alt-text="Screenshot of Integrations options for Classic pipelines showing Report deployment status to Jira settings.":::
 
 To support integration with Jira issue tracking, install [Azure DevOps for Jira](https://marketplace.atlassian.com/apps/1232793/azure-devops-for-jira-official?tab=overview&clickid=wZpQbS3IRxyKRK1xlHSsJQF1UkC3gaVNRWqmxY0&irgwc=1&utm_medium=paid-affiliate&utm_source=impact&ircid=17715&irpid=390418&irmpname=Wildfire%20Systems&irmptype=mediapartner&irshareid=A56&irmpgroupname=%22Non-Tech%22&iraid=2022041&utm_content=Wildfire%20-%20Atlassian%20Tracking--TEXT_LINK--&irclkid=wZpQbS3IRxyKRK1xlHSsJQF1UkC3gaVNRWqmxY0&hosting=cloud) and connect your Azure DevOps organizations with your Jira Software instance. You can connect multiple organizations with one instance and get data for all your teams and related projects. For more information, see [Connect Azure DevOps to Jira](https://support.atlassian.com/jira-cloud-administration/docs/integrate-azure-devops-with-jira/). 
 
@@ -419,17 +417,16 @@ To support integration with Jira issue tracking, install [Azure DevOps for Jira]
 
  Usually for security, teams may not want to automatically build pull requests. Instead, they want a team member to review the pull request and once it's deemed safe, trigger the build with a [pull request comment](../pipelines/repos/github.md?view=azure-devops&preserve-view=true#comment-triggers). The following setting provides flexibility, keeps this option while still allowing automatic pull request builds _only_ for team members.
 
-> [!div class="mx-imgBorder"]
-> ![GitHub comments trigger optimizations.](/azure/devops/release-notes/2019/media/149_07.png)
+:::image type="content" source="/azure/devops/release-notes/2019/media/149_07.png" alt-text="Screenshot of GitHub comments trigger optimization settings.":::
 
 ## Enable Test Impact Analysis 
 
-See [Speed up testing by using Test Impact Analysis (TIA), Enable Test Impact Analysis](../pipelines/test/test-impact-analysis.md#enable-test-impact-analysis). 
+For more information, see [Speed up testing by using Test Impact Analysis (TIA), Enable Test Impact Analysis](../pipelines/test/test-impact-analysis.md#enable-test-impact-analysis). 
  
 
 :::row:::
    :::column span="1":::
-      [Enable status badge](#enable-status-badge)  
+      [Get or enable a status badge](#enable-status-badge)  
       [All supported repositories](../pipelines/repos/index.md)
    :::column-end:::
    :::column span="1":::
