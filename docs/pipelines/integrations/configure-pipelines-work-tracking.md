@@ -145,7 +145,7 @@ The following table summarizes the integration points between Azure Boards and A
 
 For YAML-defined release pipelines, you configure the integration through the **Pipeline settings** dialog.  
 
-1. Open the pipeline, choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and then choose **Settings**.
+- Open the pipeline, choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and then choose **Settings**.
 
 	:::image type="content" source="media/pipelines-integration/open-pipeline-settings.png" alt-text="Screenshot of YAML pipeline with More actions menu open showing the Settings option.":::
 
