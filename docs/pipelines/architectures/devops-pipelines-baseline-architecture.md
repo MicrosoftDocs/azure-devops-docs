@@ -4,9 +4,6 @@ description: This architecture illustrates building a continuous integration and
 ms.date: 01/24/2025
 ms.topic: example-scenario
 ms.custom: devops, app-development, internal-intro
-    - devops
-    - app-development
-    - internal-intro
 name: CI/CD baseline architecture with Azure Pipelines
 azureCategories:
   - developer-tools
