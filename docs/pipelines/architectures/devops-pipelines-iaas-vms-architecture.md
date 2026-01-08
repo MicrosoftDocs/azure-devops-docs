@@ -4,15 +4,6 @@ description: High-level DevOps workflow for deploying application changes to VMs
 ms.date: 05/08/2023
 ms.topic: solution-idea
 ms.custom: acom-architecture, devops, continuous integration, continuous delivery, CI/CD, continuous deployment, interactive-diagram, https://azure.microsoft.com/solutions/architecture/cicd-for-azure-vms, internal-intro
-    - acom-architecture
-    - devops
-    - continuous integration
-    - continuous delivery
-    - CI/CD
-    - continuous deployment
-    - interactive-diagram
-    - "https://azure.microsoft.com/solutions/architecture/cicd-for-azure-vms"
-    - internal-intro
 name: DevTest and DevOps for IaaS solutions
 azureCategories:
   - devops
