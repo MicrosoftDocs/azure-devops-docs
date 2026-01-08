@@ -1,39 +1,46 @@
 ---
-title: Receive package notifications
-description: How to follow a package and get notified every time a new version is published
+title: Package notifications
+description: Learn how to follow a package and get notified every time a new version is published with Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: how-to
-ms.date: 06/14/2022
+ms.date: 01/08/2025
 monikerRange: "<=azure-devops"
 ---
 
-# Package notification
+# Package notifications
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Notifications are a great tool to stay informed about specific changes within your project. In Azure Artifacts, when you follow a package you’ll be notified every time a new version of that package is published. A notification will be sent to your preferred email address with details about the new published version. The preferred email address is usually the email address you signed into Azure DevOps with, but you can change it from your profile page.
+Notifications are a great way to stay informed about changes in your project. In Azure Artifacts, when you follow a package, you’ll be notified every time a new version of that package is published. A notification will be sent to your preferred email address with details about the newly published version. Your preferred email is usually the one you use to sign into Azure DevOps, but you can change it from your profile page.
+
+## Prerequisites
+
+| **Product**        | **Requirements**   |
+|--------------------|--------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../../artifacts/start-using-azure-artifacts.md#create-a-new-feed). |
 
 ## Follow a package
 
-1. Select **Artifacts**, and then select your feed.
+Follow these steps to follow a package and get notified whenever a new version is published:
 
-1. Select the package you want to follow, and then select **Follow** to start getting notified whenever a new version is published.
+1. Sign in to your Azure DevOps, then navigate to your project.
 
-    :::image type="content" source="../media/follow-package-notifications.png" alt-text="A screenshot showing how to follow a package.":::
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-## Views notifications
+1. Select the package you want to follow, then select **Follow** to start getting notifications when a new version is published.
 
-Aside from getting notifications when a new package version is published, you can also set up alerts to be notified when a package is promoted to a view. This can be helpful to filter alerts and only receive specific notifications especially in a busy development cycle when numerous packages are being published.
+## Follow promoted packages
 
-1. Select **Artifacts**, and then select your feed.
+In addition to getting notifications when a new package version is published, you can also set up alerts to be notified when a package is promoted to a view.
+This can be helpful for filtering alerts so you only receive the notifications you care about, especially during busy development cycles when many packages are being published.
 
-1. Filter to a specific view (for example, @Prerelease, @Release)
+1. Sign in to your Azure DevOps, then navigate to your project.
 
-    :::image type="content" source="../media/notifications-filter-view.png" alt-text="A screenshot showing how to filter packages by a specific view.":::
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Select the package you want to follow, and then select **Follow**.
+1. Select the **View** dropdown from the left, then select a view to filter (for example, @Prerelease, @Release).
 
-    :::image type="content" source="../media/follow-package-notifications.png" alt-text="A screenshot showing how to follow a package from a specific view.":::
+1. Select the package you want to follow, then select **Follow**.
 
 ## Follow a package with personal notifications
 
