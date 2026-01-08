@@ -10,8 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 10/28/2025
 monikerRange: 'azure-devops'
-ms.custom:
-  - sfi-image-nochange
+ms.custom: sfi-image-nochange
 ---
 
 # Restrict organization creation

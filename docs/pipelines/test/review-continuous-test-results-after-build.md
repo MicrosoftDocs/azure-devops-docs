@@ -7,10 +7,7 @@ ms.author: jeom
 author: raviLiftr
 ms.date: 10/06/2021
 monikerRange: '<= azure-devops'
-ms.custom:
-  - continuous-test
-  - cross-service
-  - sfi-image-nochange
+ms.custom: continuous-test, cross-service, sfi-image-nochange
 ---
 
 # Review test results

@@ -9,9 +9,7 @@ author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: overview
 ms.date: 12/01/2025
-ms.custom:
-  - engagement-fy23
-  - sfi-image-nochange
+ms.custom: engagement-fy23, sfi-image-nochange
 ---
 
 # Extensibility points
