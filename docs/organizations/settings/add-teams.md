@@ -9,10 +9,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 11/12/2024
-ms.custom:
-  - teams
-  - devx-track-azurecli
-  - sfi-image-nochange
+ms.custom: teams, devx-track-azurecli, sfi-image-nochange
 ---
 
 # Create or add a team 

@@ -8,10 +8,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 10/08/2021
-ms.custom:
-  - powerbisample
-  - engagement-fy23
-  - sfi-image-nochange
+ms.custom: powerbisample, engagement-fy23, sfi-image-nochange
 ---
 
 # List linked work items sample queries and reports

@@ -9,9 +9,7 @@ author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/20/2021
 ms.update-cycle: 1095-days
-ms.custom:
-  - UpdateFrequency3
-  - sfi-image-nochange
+ms.custom: UpdateFrequency3, sfi-image-nochange
 ---
 
 # Test different configurations

@@ -9,11 +9,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 12/22/2025
-ms.custom:
-  - teams
-  - engagement-fy23
-  - devx-track-azurecli
-  - sfi-image-nochange
+ms.custom: teams, engagement-fy23, devx-track-azurecli, sfi-image-nochange
 ---
 
 # Define area paths and assign to a team

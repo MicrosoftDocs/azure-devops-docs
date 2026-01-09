@@ -5,9 +5,7 @@ ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 monikerRange: '<= azure-devops'
 ms.date: 07/31/2024
 ms.topic: how-to
-ms.custom:
-  - pipelinesresourcesrefresh
-  - sfi-image-nochange
+ms.custom: pipelinesresourcesrefresh, sfi-image-nochange
 ---
 
 # Use secure files

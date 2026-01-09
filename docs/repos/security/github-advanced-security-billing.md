@@ -10,9 +10,7 @@ author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 08/11/2025
 zone_pivot_groups: configure-ghazdo-bundled-individual-products
-ms.custom:
-  - cross-service
-  - sfi-image-nochange
+ms.custom: cross-service, sfi-image-nochange
 ---
 
 #  Advanced Security billing

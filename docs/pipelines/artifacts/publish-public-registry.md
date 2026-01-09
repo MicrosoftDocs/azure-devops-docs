@@ -4,9 +4,7 @@ description: Learn how to publish NuGet packages to NuGet.org using Azure Pipeli
 ms.topic: concept-article
 ms.date: 12/23/2024
 monikerRange: "<=azure-devops"
-ms.custom:
-  - peer-review-program
-  - sfi-image-nochange
+ms.custom: peer-review-program, sfi-image-nochange
 "recommendations": "true"
 ---
 

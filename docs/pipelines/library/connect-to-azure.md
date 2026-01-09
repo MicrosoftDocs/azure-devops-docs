@@ -7,10 +7,7 @@ author: juliakm
 ms.date: 10/25/2024
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.custom:
-  - devx-track-arm-template
-  - arm2024
-  - sfi-image-nochange
+ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
 ---
 
 # Connect to Azure with an Azure Resource Manager service connection

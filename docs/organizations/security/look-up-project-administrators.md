@@ -8,10 +8,8 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 07/12/2024
-ms.custom:
-  - security-refresh
-  - sfi-image-nochange
---- 
+ms.custom: security-refresh, sfi-image-nochange
+---
 
 # Look up a project administrator 
 

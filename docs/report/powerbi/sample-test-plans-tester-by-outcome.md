@@ -9,10 +9,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
-ms.custom:
-  - powerbisample
-  - engagement-fy23
-  - sfi-image-nochange
+ms.custom: powerbisample, engagement-fy23, sfi-image-nochange
 ---
 
 # Tester by outcome matrix sample report

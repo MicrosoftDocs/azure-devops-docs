@@ -9,10 +9,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.date: 04/21/2025
 monikerRange: '<= azure-devops'
-ms.custom:
-  - engagement-fy23
-  - devx-track-azurecli
-  - sfi-image-nochange
+ms.custom: engagement-fy23, devx-track-azurecli, sfi-image-nochange
 ---
 
 # Install extensions

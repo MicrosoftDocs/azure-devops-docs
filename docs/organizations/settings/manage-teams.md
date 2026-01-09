@@ -8,9 +8,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
 ms.date: 11/12/2024
-ms.custom:
-  - teams
-  - sfi-image-nochange
+ms.custom: teams, sfi-image-nochange
 ---
 
 # Manage and configure team tools
