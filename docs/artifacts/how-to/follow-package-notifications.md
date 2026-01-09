@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Notifications are a great way to stay informed about changes in your project. In Azure Artifacts, when you follow a package, you’ll be notified every time a new version of that package is published. A notification will be sent to your preferred email address with details about the newly published version. Your preferred email is usually the one you use to sign into Azure DevOps, but you can change it from your profile page.
+Notifications are a great way to stay informed about changes in your project. In Azure Artifacts, when you follow a package, you are notified every time a new version of that package is published. A notification is sent to your preferred email address with details about the newly published version. Your preferred email is usually the one you use to sign into Azure DevOps, but you can change it from your profile page.
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ This can be helpful for filtering alerts so you only receive the notifications y
 
     :::image type="content" source="../media/promoted-package-notifications.png" alt-text="A screenshot displaying how to follow promoted packages in Azure Artifacts.":::
 
-## Follow a package with personal notifications
+## Follow packages with personal notifications
 
 > [!Note]
 > You must be a member of the *Project Administrators group* or the *Project Collection Administrators group* to create project notifications.
@@ -63,7 +63,7 @@ In addition to following a package directly from the *Feeds* page, you can also 
 
     :::image type="content" source="../media/personal-notifications-artifacts.png" alt-text="A screenshot displaying how to create a new notification subscription.":::
 
-1. Add a **Description**, then select an email address for the notifications. By default, your preferred email address is used. You can also add filters to only receive notifications when specific criteria are met. In the example below, two clauses have been added: a notification will be triggered when the the feed is *Fabrikam_Feed*, **and** the type of change is *Delete*.
+1. Add a **Description**, then select an email address for the notifications. By default, your preferred email address is used. You can also add filters to only receive notifications when specific criteria are met. In the example below, two clauses have been added: a notification is triggered when the the feed is *Fabrikam_Feed*, **and** the type of change is *Delete*.
 
     :::image type="content" source="../media/filter-notifications.png" alt-text="A screenshot displaying how to configure a notification subscription and add filters.":::
 
