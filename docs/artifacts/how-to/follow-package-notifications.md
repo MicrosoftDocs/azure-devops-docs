@@ -29,6 +29,8 @@ Follow these steps to follow a package and get notified whenever a new version i
 
 1. Select the package you want to follow, then select **Follow** to start getting notifications when a new version is published.
 
+    :::image type="content" source="../media/follow-package-notifications.png" alt-text="A screenshot displaying how to follow a package in an Azure Artifacts feed.":::
+
 ## Follow promoted packages
 
 In addition to getting notifications when a new package version is published, you can also set up alerts to be notified when a package is promoted to a view.
@@ -40,7 +42,11 @@ This can be helpful for filtering alerts so you only receive the notifications y
 
 1. Select the **View** dropdown from the left, then select a view to filter (for example, @Prerelease, @Release).
 
+    :::image type="content" source="../media/notifications-filter-view.png" alt-text="A screenshot displaying how to filter packages by a specific view.":::
+
 1. Select the package you want to follow, then select **Follow**.
+
+    :::image type="content" source="../media/promoted-package-notifications.png" alt-text="A screenshot displaying how to follow promoted packages in Azure Artifacts.":::
 
 ## Follow a package with personal notifications
 
