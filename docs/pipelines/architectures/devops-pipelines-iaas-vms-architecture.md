@@ -3,7 +3,7 @@ title: DevOps for IaaS solutions architecture
 description: High-level DevOps workflow for deploying application changes to VMs using continuous integration (CI) and continuous deployment (CD) practices using Azure Pipelines.
 ms.date: 05/08/2023
 ms.topic: solution-idea
-ms.custom: acom-architecture, devops, continuous integration, continuous delivery, CI/CD, continuous deployment, interactive-diagram, https://azure.microsoft.com/solutions/architecture/cicd-for-azure-vms, internal-intro
+ms.custom: acom-architecture, devops, continuous integration, continuous delivery, CI/CD, continuous deployment, interactive-diagram, internal-intro
 name: DevTest and DevOps for IaaS solutions
 azureCategories:
   - devops
