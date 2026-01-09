@@ -44,29 +44,29 @@ This can be helpful for filtering alerts so you only receive the notifications y
 
 ## Follow a package with personal notifications
 
- In addition to following a package from the _Feeds_ page, you can also [manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md) and set up alerts to be notified about a specific package or set of packages from the _Notification Settings_ page.
-
-1. Navigate to your Azure DevOps organization: `https://dev.azure.com/<YOUR_ORGANIZATION>`.
-
-1. Select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications**.
-
-1. Select **New subscription**, and then select **Artifacts** > **A package is changed**. Select **Next** when you are done.
-
-    :::image type="content" source="../media/personal-notifications-artifacts.png" alt-text="A screenshot showing how to add a new notification subscription.":::
-
-1. Add a **Description** and then select an email address for the notifications to be delivered to. By default, your preferred email address is used. You can also add filters to only receive notifications when a set of criteria are met.
-
-    :::image type="content" source="../media/filter-notifications.png" alt-text="A screenshot showing how to set up a new notification subscription and add filters.":::
-
-1. Select **Finish** when you are done.
-
 > [!Note]
-> You must be a member of the *Project Administrators group* or the *Project Collection Administrators group* if you want to create project notifications.
+> You must be a member of the *Project Administrators group* or the *Project Collection Administrators group* to create project notifications.
 
-## Related articles
+In addition to following a package directly from the *Feeds* page, you can also [manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md) and create alerts for a specific package or group of packages from the *Notification Settings* page.
 
-- [Share your Artifacts with package badges](../package-badges.md)
-- [Limits on package sizes and counts](../reference/limits.md)
-- [Delete and recover packages](../how-to/delete-and-recover-packages.md)
-- [Get started with notifications in Azure DevOps](../../organizations/notifications/about-notifications.md)
+1. Sign in to your Azure DevOps organization.
+
+1. Select the :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::  **User settings** icon in the top right corner next to your profile picture, then select **Notifications**.
+
+1. Select **New subscription**, then select **Artifacts**. Select the **A package is changed** template, then select **Next**.
+
+    :::image type="content" source="../media/personal-notifications-artifacts.png" alt-text="A screenshot displaying how to create a new notification subscription.":::
+
+1. Add a **Description**, then select an email address for the notifications. By default, your preferred email address is used. You can also add filters to only receive notifications when specific criteria are met. In the example below, two clauses have been added: a notification will be triggered when the the feed is *Fabrikam_Feed*, **and** the type of change is *Delete*.
+
+    :::image type="content" source="../media/filter-notifications.png" alt-text="A screenshot displaying how to configure a notification subscription and add filters.":::
+
+1. Select **Finish** when you're done.
+
+## Related content
+
+- [Share packages with package badges](../package-badges.md)
+
+- [Package sizes and count limits](../reference/limits.md)
+
 - [Manage team, group, and global notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
