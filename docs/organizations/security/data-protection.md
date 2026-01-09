@@ -9,9 +9,7 @@ author: chcomley
 ms.reviewer: jominana
 ms.date: 06/20/2025
 monikerRange: 'azure-devops'
-ms.custom:
-  - freshness-fy22
-  - sfi-ropc-nochange
+ms.custom: freshness-fy22, sfi-ropc-nochange
 ---
 # Data protection overview
 

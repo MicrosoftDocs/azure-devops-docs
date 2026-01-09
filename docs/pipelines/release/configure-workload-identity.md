@@ -6,10 +6,7 @@ ms.author: jukullam
 author: juliakm
 ms.date: 10/16/2024
 monikerRange: '>= azure-devops'
-ms.custom:
-  - devx-track-arm-template
-  - arm2024
-  - sfi-image-nochange
+ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
 "recommendations": "true"
 ---
 

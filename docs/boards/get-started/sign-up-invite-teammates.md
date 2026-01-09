@@ -10,9 +10,7 @@ monikerRange: 'azure-devops'
 ai-usage: ai-assisted
 ms.update: 90-days
 ms.date: 09/18/2025
-ms.custom:
-  - boards-get-started
-  - sfi-image-nochange
+ms.custom: boards-get-started, sfi-image-nochange
 ---
 
 # Sign up for Azure Boards
