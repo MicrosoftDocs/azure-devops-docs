@@ -4,7 +4,7 @@ description: Learn how to use an Azure Resource Manager service connection to co
 ms.topic: concept-article
 ms.author: jukullam
 author: juliakm
-ms.date: 10/25/2024
+ms.date: 01/09/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
@@ -13,9 +13,6 @@ ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
 # Connect to Azure with an Azure Resource Manager service connection
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-> [!NOTE]
->We are rolling out the new Azure service connection creation experience. Receiving it in your organization depends on various factors, and you may still see the older user experience.
 
 An Azure Resource Manager service connection allows you to connect to Azure resources like Azure Key Vault from your pipeline. This connection lets you use a pipeline to deploy to Azure resources, such as an Azure App Service app, without needing to authenticate each time.
 
@@ -56,11 +53,11 @@ With this selection, Azure DevOps automatically queries for the subscription, ma
 
 1. Select **New service connection**,  then select **Azure Resource Manager** and **Next**.
 
-   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows choosing Azure Resource Manager selection.":::
+   :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot of New service connection dialog with Azure Resource Manager option selected and Azure Service Bus option below." lightbox="media/new-service-connection-azure-resource-manager.png":::
 
 1. Select **App registration (automatic)** with the credential **Workload identity federation**.
 
-   :::image type="content" source="media/select-app-registration-workload-identity-service.png" alt-text="Screenshot of app registration (automatic) authentication method selection with workload identity selected.":::
+   :::image type="content" source="media/select-app-registration-workload-identity-service.png" alt-text="Screenshot of app registration (automatic) authentication method selection with workload identity selected." lightbox="media/select-app-registration-workload-identity-service.png":::
 
 1. Select a **Scope level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
 
@@ -95,18 +92,18 @@ Use this option to automatically create a workload identity credential for an ex
 
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
 
-1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
+1. Select **New service connection**, select **Resource Manager**, and select **Next**.
 
     :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows choosing Azure Resource Manager selection.":::
    
 1. Select **Managed identity**.
 
-    :::image type="content" source="media/azure-resource-manager-options-managed-identity.png" alt-text="Screenshot that shows choosing Azure Resource Manager selection of managed identity with user assigned identity.":::
+    :::image type="content" source="media/azure-resource-manager-options-managed-identity.png" alt-text="Screenshot that shows choosing Azure Resource Manager selection of managed identity with user assigned identity." lightbox="media/azure-resource-manager-options-managed-identity.png":::
 
 1. In **Step 1: Managed identity details**:
     1. Select **Subscription for Managed Identity**. This is the Azure subscription that contains your managed identity. 
     1. Select **Resource group for Managed Identity**. This is the resource group that contains your managed identity. 
-    1. Select **Managed Identity**. This is the managed identity within your resource group that you'll use to access resources. 
+    1. Select **Managed Identity**. This is the managed identity within your resource group that you use to access resources. 
     
 1. In **Step 2: Azure Scope**:
 
@@ -116,7 +113,7 @@ Use this option to automatically create a workload identity credential for an ex
 
             | Parameter | Description |
             | --------- | ----------- |
-            | **Subscription for service connection** | Required. Select the Azure subscription name your managed identity will access. |
+            | **Subscription for service connection** | Required. Select the Azure subscription name your managed identity accesses. |
             | **Resource group for service connection** | Optional. Enter to limit managed identity access to one resource group. |
         
         * For the **Management Group** scope, enter the following parameters:
@@ -286,7 +283,7 @@ To revert a service connection:
 
 1. Select **Revert conversion to the original scheme**.
 
-   :::image type="content" source="media/federated-revert-credential.png" alt-text="Screenshot that shows selecting revert for a federated credential.":::
+   :::image type="content" source="media/federated-revert-credential.png" alt-text="Screenshot that shows selecting revert for a federated credential." lightbox="media/federated-revert-credential.png":::
 
 1. Select **Revert** again to confirm your choice.
 
@@ -309,7 +306,7 @@ To create a service connection that uses an existing service principal:
 
    For more information, see [Open project settings](../../project/navigation/go-to-service-page.md#open-project-settings).
 
-1. Select **New service connection**, then select **Azure Resource Manager** and **Next**.
+1. Select **New service connection**, select **Resource Manager**, and select **Next**.
 
    :::image type="content" source="media/new-service-connection-azure-resource-manager.png" alt-text="Screenshot that shows the Azure Resource Manager selection.":::
 
