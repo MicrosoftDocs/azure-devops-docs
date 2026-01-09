@@ -4,9 +4,8 @@ description: Discover how to use expressions in Azure Pipelines. Define conditio
 ms.topic: concept-article
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.date: 01/09/2026
-author: jukullam_microsoft
-ms.author: juliakm
-ms.reviewer: juliakm
+ms.author: jukullam
+author: juliakm
 monikerRange: "<=azure-devops"
 ---
 
@@ -111,17 +110,17 @@ For example: `1.2.3.4`.
 
 As part of an expression, you can access variables by using one of two syntaxes:
 
-* Index syntax: `variables['MyVar']`
-* Property dereference syntax: `variables.MyVar`
+1. Index syntax: `variables['MyVar']`
+1. Property dereference syntax: `variables.MyVar`
 
 To use property dereference syntax, the property name must:
-- Start with `a-Z` or `_`
-- Be followed by `a-Z`, `0-9`, or `_`
+1. Start with `a-Z` or `_`
+1. Be followed by `a-Z`, `0-9`, or `_`
 
 Different variables are available depending on the execution context.
-- If you create pipelines using YAML, then [pipeline variables](../build/variables.md) are available.
-- If you create build pipelines using classic editor, then [build variables](../build/variables.md) are available.
-- If you create release pipelines using classic editor, then [release variables](../release/variables.md) are available.
+1. If you create pipelines using YAML, then [pipeline variables](../build/variables.md) are available.
+1. If you create build pipelines using classic editor, then [build variables](../build/variables.md) are available.
+1. If you create release pipelines using classic editor, then [release variables](../release/variables.md) are available.
 
 Variables are always strings. If you want to use typed values, use [parameters](runtime-parameters.md).
 
@@ -135,11 +134,11 @@ Variables are always strings. If you want to use typed values, use [parameters](
 You can use the following built-in functions in expressions.
 
 ### and
-* Evaluates to `True` if all parameters are `True`.
-* Minimum parameters: 2. Maximum parameters: N.
-* Casts parameters to Boolean for evaluation.
-* Short-circuits after first `False`.
-* Example: `and(eq(variables.letters, 'ABC'), eq(variables.numbers, 123))`
+1. Evaluates to `True` if all parameters are `True`.
+1. Minimum parameters: 2. Maximum parameters: N.
+1. Casts parameters to Boolean for evaluation.
+1. Short-circuits after first `False`.
+1. Example: `and(eq(variables.letters, 'ABC'), eq(variables.numbers, 123))`
 
 ::: moniker range="<=azure-devops"
 
