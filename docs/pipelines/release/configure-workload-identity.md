@@ -4,7 +4,7 @@ description: Learn how to manually set an Azure Resource Manager workload identi
 ms.topic: concept-article
 ms.author: jukullam
 author: juliakm
-ms.date: 10/16/2024
+ms.date: 01/12/2026
 monikerRange: '>= azure-devops'
 ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
 "recommendations": "true"
@@ -14,14 +14,28 @@ ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-> [!NOTE]
->We are rolling out the new Azure service connection creation experience. Receiving it in your organization depends on various factors, and you may still see the older user experience.
-
 When you [troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md#i-dont-have-permissions-to-create-a-service-principal-in-the-microsoft-entra-tenant), you might need to manually configure the connection instead of using the automated tool that's available in Azure DevOps.
 
-We recommend that you [try the automated approach](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) before you begin a manual configuration.
+Before you begin a manual configuration, [try the automated approach](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation).
 
-There are two options for authentication: use a managed identity or use an app registration. The advantage of the managed identity option is that you can use it if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
+For authentication, you can use either a managed identity or an app registration. The managed identity option is useful if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
+
+## Setup process overview
+
+The following diagram illustrates the high-level steps to configure a workload identity service connection:
+
+```mermaid
+graph TD
+    A["Choose Authentication Method"] --> B{"Managed Identity<br/>or<br/>App Registration?"}
+    B -->|Managed Identity| C["1. Create Managed Identity<br/>in Azure Portal"]
+    B -->|App Registration| D["1. Create App Registration<br/>in Azure Portal"]
+    C --> E["2. Create Service Connection<br/>in Azure DevOps<br/>Save as Draft"]
+    D --> E
+    E --> F["3. Add Federated Credential<br/>in Azure Portal"]
+    F --> G["4. Grant Required Permissions<br/>in Azure Portal"]
+    G --> H["5. Save Service Connection<br/>in Azure DevOps"]
+    H --> I["✓ Setup Complete<br/>Ready to Use in Pipelines"]
+```
 
 ## Set a workload identity service connection 
 
@@ -29,7 +43,7 @@ There are two options for authentication: use a managed identity or use an app r
 
 <a name="set-a-workload-identity-service-connection-to-use-managed-identity-authentication"></a>
 
-To manually set up managed identity authentication for your Azure Pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. You'll need to follow these steps in this order:
+To manually set up managed identity authentication for your Azure Pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. Follow these steps in this order:
 
 1. Create the managed identity in Azure portal. 
 1. Create the service connection in Azure DevOps and save as a draft. 
@@ -76,7 +90,7 @@ You can also use the REST API for this process.
 
 1. Select **Azure Resource Manager**.
 
-1. Select identity type **App registration or Managed identity (manual)** the **Workload identity federation** credential.
+1. Select the identity type **App registration or Managed identity (manual)** and then select the **Workload identity federation** credential.
 
     :::image type="content" source="media/workload-identity-manual-app-workload.png" alt-text="Screenshot that shows selecting the Workload Identity service connection for managed identity.":::
 
@@ -86,7 +100,7 @@ You can also use the REST API for this process.
 
 1. In **Step 2: App registration details**:
 
-    **Step 2: App registration details** contains the following parameters. You can enter or select the following parameters:
+    **Step 2: App registration details** contains the following parameters. Enter or select the following parameters:
 
    | Parameter | Description |
    | --------- | ----------- |
@@ -129,7 +143,7 @@ You can also use the REST API for this process.
         | **Directory (tenant) ID** | Required. Enter the Tenant ID from your managed identity. |
     
     
-    1. In the **Security** section, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
+    1. In the **Security** section, if you select **Grant access permission to all pipelines**, all pipelines can use this connection. Don't use this option. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
 
 1. In Azure DevOps, copy the generated values for **Issuer** and **Subject identifier**.
 
@@ -166,17 +180,17 @@ You can also use the REST API for this process.
 
 ### Save your Azure DevOps service connection 
 
-1. In Azure DevOps, return to your draft service connection. 
+1. In Azure DevOps, go back to your draft service connection. 
 
 1. Select **Finish setup**. 
 
-1. Select **Verify and save**. Once this step successfully completes, your managed identity is fully configured. 
+1. Select **Verify and save**. When this step completes successfully, your managed identity is fully configured. 
 
 #### [App registration](#tab/app-registration)
 
 <a name="app-registration-workload-identity"></a>
 
-This section guides you through setting up an app registration and federated credentials in the Azure portal, creating a service connection for service principal authentication in Azure DevOps, adding federated credentials to your app registration, and granting the necessary permissions. The app registration uses service principal authentication. You'll need to complete these steps in the following order:
+This section guides you through setting up an app registration and federated credentials in the Azure portal, creating a service connection for service principal authentication in Azure DevOps, adding federated credentials to your app registration, and granting the necessary permissions. The app registration uses service principal authentication. Complete these steps in the following order:
 
 1. Create the app registration with service principal authentication in Azure portal. 
 1. Create the service connection in Azure DevOps and save as a draft. 
@@ -193,7 +207,7 @@ You can also use the REST API for this process.
     - If [creating app registrations is disabled in your tenant](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications), then you need to have the [Application Developer role](/entra/identity/role-based-access-control/permissions-reference#application-developer) to create application registrations. 
 
 
-### Create an app registration and federated credentials in Azure portal
+### Create an app registration and federated credentials in the Azure portal
 
 1. In the Azure portal, search for [app registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps).
 
@@ -201,11 +215,11 @@ You can also use the REST API for this process.
 
     :::image type="content" source="approvals/media/new-app-registration.png" alt-text="Screenshot that shows a new app registration.":::
 
-1. For **Name**, enter a name for your app registration, and then select **Who can use this application or access this API**. 
+1. For **Name**, enter a name for your app registration. Then select **Who can use this application or access this API**. 
 
 1. Select **Register**. 
 
-1. When your new app registration loads, copy the values for **Application (client) ID** and **Directory (tenant) ID**  to use later.
+1. When your new app registration opens, copy the values for **Application (client) ID** and **Directory (tenant) ID** to use later.
 
     :::image type="content" source="approvals/media/app-registration-client-tenant.png" alt-text="Screenshot that shows the app registration client ID and tenant ID.":::
 
@@ -218,7 +232,7 @@ You can also use the REST API for this process.
 
 1. Select **Azure Resource Manager**.
 
-1. Select identity type **App registration or Managed identity (manual)** the **Workload identity federation** credential.
+1. Select the identity type **App registration or Managed identity (manual)** and then select the **Workload identity federation** credential.
 
     :::image type="content" source="media/workload-identity-manual-app-workload.png" alt-text="Screenshot that shows selecting the Workload Identity service connection.":::
 
@@ -228,7 +242,7 @@ You can also use the REST API for this process.
 
 1. In **Step 2: App registration details**:
 
-    **Step 2: App registration details** contains the following parameters. You can enter or select the following parameters:
+    **Step 2: App registration details** contains the following parameters. Enter or select the following parameters:
 
    | Parameter | Description |
    | --------- | ----------- |
@@ -271,7 +285,7 @@ You can also use the REST API for this process.
         | **Directory (tenant) ID** | Required. Enter the Directory (tenant) ID for your app registration. |
     
     
-    1. In the **Security** section, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
+    1. In the **Security** section, if you select **Grant access permission to all pipelines**, all pipelines can use this connection. Don't use this option. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
 
 1. In Azure DevOps, copy the generated values for **Issuer** and **Subject identifier**.
 
@@ -312,7 +326,7 @@ You can also use the REST API for this process.
 
 ###  Save your app registration Azure DevOps service connection
 
-1. In Azure DevOps, return to your draft service connection. 
+1. In Azure DevOps, go back to your draft service connection. 
 
 1. Select **Finish setup**. 
 
