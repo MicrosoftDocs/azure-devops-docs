@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.update: 90-days
-ms.date: 09/18/2025
+ms.date: 01/09/2026
 ---
 
 # View permissions and effective access
@@ -20,15 +20,15 @@ ms.date: 09/18/2025
 This article shows how to view permissions and check effective access for users and groups at the organization, project, and repository (or other object) levels. It explains permission states (Allow, Deny, Inherit), how inheritance and group membership affect effective permissions, and steps to troubleshoot common access issues.
 
 What you'll learn:
-- Where to view permission assignments in the web portal.
-- How to check effective permissions for a user or group.
-- Common reasons permissions don't have the expected effect (inheritance, denies, Stakeholder access, Microsoft Entra ID group mapping).
+- Where to view permission assignments in the web portal
+- How to check effective permissions for users and groups
+- Common reasons permissions don't have expected effects (inheritance, denies, Stakeholder access, Microsoft Entra ID group mapping)
 
 Quick steps:
-1. Open **Organization settings** or **Project settings** > **Security** (or **Permissions**).
-2. Select the object (project, repository, or group) and view assigned permissions.
-3. Use the Users/Groups or Effective Permissions UI to inspect effective access.
-4. If needed, examine group memberships and deny rules that override allows.
+1. Open **Organization settings** or **Project settings** > **Security** (or **Permissions**)
+2. Select the object (project, repository, or group) and view assigned permissions
+3. Use the Users/Groups or Effective Permissions UI to inspect effective access
+4. If needed, examine group memberships and deny rules that override allows
 
 > [!NOTE]
 > Permission management features and UI vary slightly between Azure DevOps Services (cloud) and on-premises Azure DevOps Server. The following guidance calls out UI differences where applicable.
@@ -36,9 +36,9 @@ Quick steps:
 ## Permission model basics
 
 Permissions in Azure DevOps use three assignment states:
-- Allow—explicitly grants a permission.
-- Deny—explicitly denies a permission and overrides Allow.
-- Inherit — no explicit assignment at this level; the permission is inherited from parent scopes or group membership.
+- **Allow** — explicitly grants a permission
+- **Deny** — explicitly denies a permission and overrides Allow
+- **Inherit** — no explicit assignment at this level; the permission is inherited from parent scopes or group membership
 
 Effective permissions are computed by evaluating assignments across:
 - The object itself (project, repo, area path, etc.)

@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.update: 90-days
-ms.date: 09/18/2025
+ms.date: 01/09/2026
 ---
 
 # Use your board
@@ -20,9 +20,10 @@ ms.date: 09/18/2025
 Boards provide an intuitive, visual way to manage your projects, track work items, and collaborate with your team. If you have a project, you already have a board. This quickstart shows the most common board tasks so you can get productive fast.
 
 What you'll learn:
-- How to add and update work items on your board.
-- How to map your team's workflow to columns and set WIP limits.
-- How to filter, invite teammates, and monitor basic analytics.
+- How to add and update work items on your board
+- How to customize board columns to match your team's workflow and set WIP limits
+- How to use filters to focus on specific work and collaborate with teammates
+- How to monitor progress with analytics and metrics
 
 Quick steps:
 1. Open your team's board.
@@ -36,6 +37,8 @@ Quick steps:
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
+
+[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
 
 [!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)]
 
@@ -83,7 +86,7 @@ Update your board frequently to keep the team in sync and to make the value stre
 To add a work item, select the plus sign (the add icon), type a title, and press **Enter**. The system saves the work item automatically.
 
 ::: moniker range="<=azure-devops"
-:::image type="content" source="media/quickstart/add-new-item-agile-s155.png" alt-text="Screenshot showing adding a new item on a board, new nav.":::
+:::image type="content" source="media/quickstart/add-new-item-agile-s155.png" alt-text="Screenshot showing adding a new item on a board.":::
 ::: moniker-end
 
 You can add as many work items as you want using this method. To add or edit details for any work item, select the title. You can also directly modify any field that appears on the card (for example, change **Assigned To**). For a description of each field, see [Create your backlog, Add details, and estimates](../backlogs/create-your-backlog.md#estimates). You can also [add tasks or child items as checklists on your cards](add-task-checklists.md).
@@ -148,7 +151,7 @@ The following example shows that on July 3, 101 items were in a *Researching* st
 
 By monitoring these metrics, you can find opportunities to reduce lead time. For more information, see [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md). 
 
-You can also add Analytics widgets to your dashboard. The Analytics Service is in preview and provides access to several widgets. For more information, see:
+You can also add Analytics widgets to your dashboard. The Analytics Service provides access to several widgets. For more information, see:
 - [Widgets based on the Analytics Service](../../report/dashboards/analytics-widgets.md)
 - [Add a widget to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)
 - [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md)

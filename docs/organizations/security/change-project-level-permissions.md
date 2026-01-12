@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.update: 90-days
-ms.date: 09/18/2025
+ms.date: 01/09/2026
 --- 
 
 # Change project-level permissions
@@ -22,9 +22,9 @@ Many permissions are managed at the project level. You can grant project-level c
 Consider adding users to **Project Administrators** when they need to add or manage teams, area and iteration paths, repositories, service hooks, or service connections.
 
 What you'll learn:
-- How to add members to the Project Administrators group.
-- How to change project-level permissions for a group or user.
-- Notes about tagging permissions, Microsoft Entra groups, and Stakeholder access limits.
+- How to add members to the Project Administrators group
+- How to change project-level permissions for groups or users
+- Key considerations for tagging permissions, Microsoft Entra groups, and Stakeholder access
 
 ## Project-level permissions
 
@@ -42,7 +42,7 @@ By default, the **Contributors** group is granted the **Create tag definition** 
 | Category | Requirements |
 |----------|--------------|
 | **Permissions** | Member of the [**Project Administrators**](look-up-project-administrators.md) group. If you created the organization or collection, you're automatically a member. |
-| **Directory services** | If you plan to add directory groups, ensure Microsoft Entra ID (Azure AD) groups are available and synced to Azure DevOps. See [Add AD/Azure AD built-in security groups](add-ad-aad-built-in-security-groups.md). |
+| **Directory services** | If you plan to add directory groups, ensure Microsoft Entra ID groups are available and synced to Azure DevOps. For more information, see [Add built-in security groups](add-ad-aad-built-in-security-groups.md). |
 
 > [!NOTE]
 > Users with **Stakeholder** access have limited feature access even if specific permissions are granted. See [Stakeholder access quick reference](stakeholder-access.md).

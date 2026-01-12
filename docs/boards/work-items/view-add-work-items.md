@@ -3,9 +3,7 @@ title: View and add work items
 titleSuffix: Azure Boards
 description: Learn how to view and filter work items like user stories, issues, and bugs, as well as create them.
 ms.custom: boards-work-items, devx-track-azurecli, engagement-fy23
-f1_keywords: 
-- vs.tfc.teamexplorer.workitems
-- vs.tfc.teamexplorer.TeamExplorer
+f1_keywords: vs.tfc.teamexplorer.workitems, vs.tfc.teamexplorer.TeamExplorer
 ms.service: azure-devops-boards
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ai-usage: ai-assisted
@@ -14,7 +12,7 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: "<=azure-devops"
 ms.update: 90-days
-ms.date: 09/18/2025
+ms.date: 01/09/2026
 ---
 
 # View and add work items
@@ -31,11 +29,13 @@ What you'll learn:
 
 To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
 
-[!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)]
-
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
+
+[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
+
+[!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)] 
 
 ## Open the Work items page
 
@@ -48,9 +48,9 @@ From your project, choose **Boards** > **Work items**.
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of web portal, Open Boards, Work Items hub.](media/view-add/open-work-items-agile.png)
 
-# [Visual Studio 2019](#tab/visual-studio)
+# [Visual Studio](#tab/visual-studio)
 
-Open Visual Studio 2019, Team Explorer, and choose **Work Items**. To switch between the modern and legacy Work Items experience in Visual Studio, see [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).
+Open Visual Studio, Team Explorer, and choose **Work Items**. To switch between the modern and legacy Work Items experience, see [Set the Work Items experience in Visual Studio](set-work-item-experience-vs.md).
 
 [!INCLUDE [temp](../includes/note-git-vs-github-connect.md)]
 
@@ -106,13 +106,13 @@ Other pivots:
 
 You can sort by any column (use Column Options). For more, see [Change column options](../backlogs/set-column-options.md).
 
-# [Visual Studio 2019](#tab/visual-studio)
+# [Visual Studio](#tab/visual-studio)
 
 Double-click the work item title or open the context menu and choose **Open**. The work item opens in a browser with the full form.
 
 :::row:::
    :::column span="2":::
-      ![Screenshot of Visual Studio 2019, Team Explorer, Work Items, context menu of options.](media/view-add/work-item-menu-options-vs.png)  
+      ![Screenshot of Visual Studio, Team Explorer, Work Items, context menu of options.](media/view-add/work-item-menu-options-vs.png)  
    :::column-end:::
    :::column span="2":::
       - **Assign to me**: Set **Assigned To** to your account.  
@@ -147,10 +147,10 @@ Filter each work item pivot view by entering a keyword or using fields like work
 > [!div class="mx-imgBorder"]
 > ![Screenshot of web portal, Work Items page, Filter options, choose to show Bugs.](media/view-add/work-items-filter-bug.png)
 
-# [Visual Studio 2019](#tab/visual-studio)
+# [Visual Studio](#tab/visual-studio)
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Visual Studio 2019, Team Explorer, Work Items page, Filter based on a key word.](media/view-add/filter-list-vs-te.png)
+> ![Screenshot of Visual Studio, Team Explorer, Work Items page, Filter based on a key word.](media/view-add/filter-list-vs-te.png)
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -180,12 +180,12 @@ For example, here we choose User Story.
 
 ![Screenshot of Agile process, User story work item form.](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
-# [Visual Studio 2019](#tab/visual-studio)
+# [Visual Studio](#tab/visual-studio)
 
 1. Select **New Work Item** and choose the work item type you want. For example, we choose User Story.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Screenshot of Visual Studio 2019, Work Items hub, New Work Item, choose User Story.](media/view-add/add-user-story-vs-te.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of Visual Studio, Work Items hub, New Work Item, choose User Story.](media/view-add/add-user-story-vs-te.png)
 
    A browser window opens, displaying the work item form for you to complete.
  
@@ -229,12 +229,12 @@ Added work items are automatically scoped to your team's default area path and i
 
 Create as many work items as you need of the type you need to track the work you want to manage.  
 
-### [Visual Studio 2019](#tab/visual-studio/)
+### [Visual Studio](#tab/visual-studio/)
 
-1. Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
+1. Open Visual Studio, Team Explorer, and then choose **Work Items**. 
 
-   > [!div class="mx-imgBorder"]  
-   > ![Visual Studio, Team Explorer, Choose Work Items](../work-items/media/view-add/open-work-items-vs-te-complete.png) 
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio, Team Explorer, Choose Work Items](../work-items/media/view-add/open-work-items-vs-te-complete.png)
    If you don't see the **Work Items** option, you need to connect to a project and not just a repository. From the Connect to a Project dialog. Use **CTRL-Shift** to select your options and then choose **Connect**.
 
    > [!div class="mx-imgBorder"]  

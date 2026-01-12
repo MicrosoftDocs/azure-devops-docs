@@ -9,7 +9,7 @@ author: chcomley
 monikerRange: 'azure-devops'
 ai-usage: ai-assisted
 ms.update: 90-days
-ms.date: 09/18/2025
+ms.date: 01/09/2026
 ms.custom: boards-get-started, sfi-image-nochange
 ---
 
@@ -54,6 +54,8 @@ You can sign up using either a Microsoft account (personal or Microsoft Entra) o
 > [!IMPORTANT]  
 > If your GitHub email address is associated with an Azure DevOps organization that uses Microsoft Entra ID, you can't sign in with GitHub for that organization. Use your Microsoft Entra account instead.
 
+[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
+
 [!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)]
 
 ## Create a project
@@ -75,10 +77,11 @@ Add people to your organization and project so they can view and contribute to w
 3. Enter email addresses (Microsoft accounts) or GitHub IDs, choose an **Access level** (Basic or Stakeholder), and add users to your project and groups (Readers, Contributors, or Administrators).  
 4. Select **Add** to send invitations.
 
-Notes:
-- Basic access grants full Boards features (a limited number of free Basic licenses might be available). Stakeholder access provides limited access for viewing and light editing of work items.
-- If you use Microsoft Entra to manage your organization, invite users by their Microsoft Entra accounts or follow your organization's provisioning process.
-- For detailed steps, see [Add users or groups to a team or project](../../organizations/security/add-users-team-project.md) and [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
+> [!NOTE]
+> - **Basic access** grants full Boards features. Users with GitHub Enterprise licenses automatically receive Basic access.
+> - **Stakeholder access** provides limited access for viewing and light editing of work items.
+> - If you use Microsoft Entra to manage your organization, invite users by their Microsoft Entra accounts or follow your organization's provisioning process.
+> - For detailed steps, see [Add users or groups to a team or project](../../organizations/security/add-users-team-project.md) and [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
 
 ## Advanced project options
 
