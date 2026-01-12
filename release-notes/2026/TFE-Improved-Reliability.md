@@ -1,1 +1,0 @@
-We are investing in significant back-end enhancements to the technology stack and frameworks powering the Test and Feedback extension, specifically for Edge and Chrome browsers. These updates are designed to deliver even greater reliability, ensuring a smoother experience for all users. 
