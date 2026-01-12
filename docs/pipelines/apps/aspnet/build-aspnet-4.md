@@ -6,6 +6,7 @@ ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: devx-track-dotnet
 ms.date: 01/12/2026
 monikerRange: '<= azure-devops'
+ai-usage: ai-assisted
 # Customer intent: As an Azure DevOps user, I want to build and deploy ASP.NET apps with the .NET Framework so that I can automate my CI/CD workflows and ensure consistent, reliable deployments.
 ---
 
