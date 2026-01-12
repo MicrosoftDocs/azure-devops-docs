@@ -1,12 +1,12 @@
 graph LR
     A["Choose<br/>authentication"] --> B{"Managed<br/>identity or<br/>App registration?"}
-    B -->|Managed| C["Create<br/>managed<br/>identity"]
-    B -->|App reg| D["Create<br/>app<br/>registration"]
-    C --> E["Create service<br/>connection"]
+    B -->|Managed| C["Portal: Create<br/>managed<br/>identity"]
+    B -->|App reg| D["Portal: Create<br/>app<br/>registration"]
+    C --> E["DevOps: Create draft <br/>service connection"]
     D --> E
-    E --> F["Add federated<br/>credential"]
-    F --> G["Grant<br/>permissions"]
-    G --> H["Save<br/>connection"]
+    E --> F["Portal: Add federated<br/>credential"]
+    F --> G["Portal: Grant<br/>permissions"]
+    G --> H["DevOps: Save<br/>connection"]
     H --> I["✓ Complete"]
     
     style A fill:#ff8c00,color:#fff,stroke:#fff,stroke-width:2px
