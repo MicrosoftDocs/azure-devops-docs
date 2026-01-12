@@ -27,7 +27,7 @@ Sign up for Azure DevOps and start with the [free tier of services](https://azur
 |**Account**| A Microsoft account (work, school, or personal) or a GitHub account. |
 
 > [!NOTE]
-> If your organization uses Microsoft Entra ID, follow your organization's sign-in flow. Some enterprise orgs require SSO or conditional access which can affect how you sign in.
+> If your organization uses Microsoft Entra ID, follow your organization's sign-in flow. Some enterprise orgs require single sign-on (SSO) or conditional access that can affect how you sign in.
 
 ## Sign up
 

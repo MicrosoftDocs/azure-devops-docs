@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.update: 90-days
-ms.date: 01/09/2026
+ms.date: 01/12/2026
 ---
 
 # Use your board
@@ -19,7 +19,7 @@ ms.date: 01/09/2026
 
 Boards provide an intuitive, visual way to manage your projects, track work items, and collaborate with your team. If you have a project, you already have a board. This quickstart shows the most common board tasks so you can get productive fast.
 
-What you'll learn:
+What you learn:
 - How to add and update work items on your board
 - How to customize board columns to match your team's workflow and set WIP limits
 - How to use filters to focus on specific work and collaborate with teammates
@@ -67,7 +67,7 @@ When you first open your board, there's one column for each [workflow state](../
 
 ## Set WIP limits
 
-Set work in progress (WIP) limits for each workflow stage so that when items exceed the limit, the column count displays as red. Teams use that visual signal to immediately address bottlenecks. For more information, see [Set WIP limits](wip-limits.md).
+Set work in progress (WIP) limits for each workflow stage so that when items exceed the limit, the column count displays as red. Teams can use that visual signal to immediately address bottlenecks. For more information, see [Set WIP limits](wip-limits.md).
 
 :::image type="content" source="media/alm-kb-wip-limits.png" alt-text="Screenshot showing WIP limit reached with red numbering.":::
 
@@ -89,7 +89,7 @@ To add a work item, select the plus sign (the add icon), type a title, and press
 :::image type="content" source="media/quickstart/add-new-item-agile-s155.png" alt-text="Screenshot showing adding a new item on a board.":::
 ::: moniker-end
 
-You can add as many work items as you want using this method. To add or edit details for any work item, select the title. You can also directly modify any field that appears on the card (for example, change **Assigned To**). For a description of each field, see [Create your backlog, Add details, and estimates](../backlogs/create-your-backlog.md#estimates). You can also [add tasks or child items as checklists on your cards](add-task-checklists.md).
+You can add as many work items as you want with this method. To add or edit details for any work item, select the title. You can also directly modify any field that appears on the card (for example, change **Assigned To**). For a description of each field, see [Create your backlog, Add details, and estimates](../backlogs/create-your-backlog.md#estimates). You can also [add tasks or child items as checklists on your cards](add-task-checklists.md).
 
 [!INCLUDE [temp](../includes/note-user-assigned.md)]
 

@@ -3,7 +3,9 @@ title: View and add work items
 titleSuffix: Azure Boards
 description: Learn how to view and filter work items like user stories, issues, and bugs, as well as create them.
 ms.custom: boards-work-items, devx-track-azurecli, engagement-fy23
-f1_keywords: vs.tfc.teamexplorer.workitems, vs.tfc.teamexplorer.TeamExplorer
+f1_keywords: 
+- vs.tfc.teamexplorer.workitems
+- vs.tfc.teamexplorer.TeamExplorer
 ms.service: azure-devops-boards
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ai-usage: ai-assisted
@@ -12,7 +14,7 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: "<=azure-devops"
 ms.update: 90-days
-ms.date: 01/09/2026
+ms.date: 01/12/2026
 ---
 
 # View and add work items
@@ -22,7 +24,7 @@ ms.date: 01/09/2026
 
 This article shows how to view, filter, and create work items (user stories, issues, bugs, tasks). It covers the most common ways to add work items: the web portal, Boards/Backlogs/Sprints pages, Visual Studio, and the Azure DevOps CLI.
 
-What you'll learn:
+What you learn:
 - How to open and navigate the Work items page.
 - How to filter and save personal views.
 - How to add work items from different entry points (web, boards, Visual Studio, CLI).
@@ -102,7 +104,7 @@ Use the pivot menu to select a focus (for example, "Assigned to me") and then ap
 Other pivots:
 - **Recently updated—items updated recently in the project.
 - **Recently completed—items completed/closed in the project.
-- **Recently created** — items created in the last 30 days.
+- **Recently created—items created in the last 30 days.
 
 You can sort by any column (use Column Options). For more, see [Change column options](../backlogs/set-column-options.md).
 
@@ -165,7 +167,7 @@ You can add work items from the **Work Items** page or from a **Boards**, **Back
 ## Add a work item from the Work items page
 
 > [!NOTE]   
-> New work items are assigned the last **Area Path** and **Iteration Path** selected by the user. 
+> New work items are assigned to the last **Area Path** and **Iteration Path** selected by the user. 
 
 # [Web portal](#tab/browser)
 

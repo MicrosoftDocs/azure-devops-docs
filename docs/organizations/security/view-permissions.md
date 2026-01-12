@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.update: 90-days
-ms.date: 01/09/2026
+ms.date: 01/12/2026
 ---
 
 # View permissions and effective access
@@ -19,10 +19,10 @@ ms.date: 01/09/2026
 
 This article shows how to view permissions and check effective access for users and groups at the organization, project, and repository (or other object) levels. It explains permission states (Allow, Deny, Inherit), how inheritance and group membership affect effective permissions, and steps to troubleshoot common access issues.
 
-What you'll learn:
+What you learn:
 - Where to view permission assignments in the web portal
 - How to check effective permissions for users and groups
-- Common reasons permissions don't have expected effects (inheritance, denies, Stakeholder access, Microsoft Entra ID group mapping)
+- Common reasons permissions don't work as expected (inheritance, denies, Stakeholder access, Microsoft Entra ID group mapping)
 
 Quick steps:
 1. Open **Organization settings** or **Project settings** > **Security** (or **Permissions**)
@@ -36,9 +36,9 @@ Quick steps:
 ## Permission model basics
 
 Permissions in Azure DevOps use three assignment states:
-- **Allow** — explicitly grants a permission
-- **Deny** — explicitly denies a permission and overrides Allow
-- **Inherit** — no explicit assignment at this level; the permission is inherited from parent scopes or group membership
+- **Allow—explicitly grants a permission
+- **Deny—explicitly denies a permission and overrides Allow
+- **Inherit—no explicit assignment at this level; the permission is inherited from parent scopes or group membership
 
 Effective permissions are computed by evaluating assignments across:
 - The object itself (project, repo, area path, etc.)
@@ -46,7 +46,7 @@ Effective permissions are computed by evaluating assignments across:
 - Group memberships (built-in groups, custom groups, Microsoft Entra ID groups)
 - Explicit Deny assignments (take precedence)
 
-What "effective" permissions means:
+What "effective" permissions mean:
 
 Effective permissions are the net access a user or group actually has on an object after Azure DevOps evaluates every relevant permission assignment. The system combines explicit Allow and Deny assignments across the object, parent scopes, and all group memberships; explicit Deny entries take priority. In practice, "effective permissions" show the final result (what someone can actually do), not every individual assignment that contributed to that result.
 
@@ -90,7 +90,7 @@ If you prefer automation, use the REST API to read ACLs or the Azure DevOps CLI/
 - Membership in multiple groups: Effective permissions combine group assignments; a Deny in any group applies.
 - Inheritance from parent scopes: If a permission is Inherit at the current level, check parent scopes for assignments.
 - Microsoft Entra ID group mapping: If users are added through Microsoft Entra groups, ensure the correct group is synced to Azure DevOps and that the group's membership is what you expect.
-- Stakeholder access limits: Users with Stakeholder access have limited feature availability regardless of permission assignments—verify access level if a user can't perform an action.
+- Stakeholder access limits: Users with Stakeholder access experience limited feature availability regardless of permission assignments—verify access level if a user can't perform an action.
 - Dynamic or temporary access: Some policies (like conditional access) or external provisioning might affect sign-in/access—check Microsoft Entra conditional access policies if sign-in fails.
 
 Quick troubleshooting checklist

@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.update: 90-days
-ms.date: 01/09/2026
+ms.date: 01/12/2026
 --- 
 
 # Change project-level permissions
@@ -21,7 +21,7 @@ Many permissions are managed at the project level. You can grant project-level c
 
 Consider adding users to **Project Administrators** when they need to add or manage teams, area and iteration paths, repositories, service hooks, or service connections.
 
-What you'll learn:
+What you learn:
 - How to add members to the Project Administrators group
 - How to change project-level permissions for groups or users
 - Key considerations for tagging permissions, Microsoft Entra groups, and Stakeholder access
@@ -31,11 +31,11 @@ What you'll learn:
 [!INCLUDE [project-level-permissions](./includes/project-level-permissions.md)]
 
 > [!NOTE]
-> The permission that allows adding or removing project-level security groups (and managing their membership) is granted to all members of the **Project Administrators** group. This capability is not exposed as a separate permission in the user interface.
+> The permission that allows adding or removing project-level security groups (and managing their membership) is granted to all members of the **Project Administrators** group. This capability isn't exposed as a separate permission in the user interface.
 
 ### Tagging permission behavior (Create tag definition)
 
-By default, the **Contributors** group is granted the **Create tag definition** permission. Although this permission appears at the project level in the UI, tagging is implemented as a collection-level capability. When you modify tagging permissions using command-line tools, provide the project GUID to scope the change to a single project; otherwise your change applies to the entire collection. For more information, see [Security groups, service accounts, and permissions — Work item tags](permissions.md#work-item-tags).
+By default, the **Contributors** group is granted the **Create tag definition** permission. Although this permission appears at the project level in the UI, tagging is implemented as a collection-level capability. When you modify tagging permissions using command-line tools, provide the project GUID to scope the change to a single project; otherwise your change applies to the entire collection. For more information, see [Security groups, service accounts, and permissions—Work item tags](permissions.md#work-item-tags).
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ By default, the **Contributors** group is granted the **Create tag definition** 
 | **Directory services** | If you plan to add directory groups, ensure Microsoft Entra ID groups are available and synced to Azure DevOps. For more information, see [Add built-in security groups](add-ad-aad-built-in-security-groups.md). |
 
 > [!NOTE]
-> Users with **Stakeholder** access have limited feature access even if specific permissions are granted. See [Stakeholder access quick reference](stakeholder-access.md).
+> Users with **Stakeholder** access get limited feature access even if specific permissions are granted. See [Stakeholder access quick reference](stakeholder-access.md).
 
 <a id="add-user-group"></a>
 ## Add members to the Project Administrators group
@@ -82,7 +82,7 @@ On-premises / older UI
 
     :::image type="content" source="media/project-level-permissions-add-member.png" alt-text="Project Settings, Security, Add member.":::
 
-4. Enter one or more user or group names, choose matches, and select **Save changes**. Refresh the page to see updates.
+4. Enter one or more user or group names, choose matches, and select **Save changes**. Changes might take a moment to appear.
 
     :::image type="content" source="media/project-level-permissions-add-a-user.png" alt-text="Add users dialog, on-premises.":::
 ::: moniker-end
@@ -103,7 +103,7 @@ Cloud (Azure DevOps Services)
     :::image type="content" source="media/project-collection/delete-restore-work-items-permissions-s154.png" alt-text="Contributors group permissions.":::
 
 > [!TIP]
-> Adding a user to **Contributors** grants the ability to add and modify work items. To limit that capability by area, scope permissions at the Area Path level — see [Modify work items under an area or iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path).
+> Adding a user to **Contributors** grants the ability to add and modify work items. To limit that capability by area, scope permissions at the Area Path level—see [Modify work items under an area or iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path).
 ::: moniker-end
 
 On-premises / older UI
@@ -114,14 +114,14 @@ On-premises / older UI
     :::image type="content" source="media/project-level-permissions-contributors-group.png" alt-text="Contributors group permissions, on-premises.":::
 ::: moniker-end
 
-For a description of each permission, see [Permissions and groups reference — project-level permissions](permissions.md#project-level-permissions).
+For a description of each permission, see [Permissions and groups reference—project-level permissions](permissions.md#project-level-permissions).
 
 > [!NOTE]
-> You cannot change the permission settings for the built-in **Project Administrators** group. This is by design.
+> You can't change the permission settings for the built-in **Project Administrators** group. This is by design.
 
 ## Change permissions for a user
 
-You can change project-level permissions for an individual user. Permission inheritance still applies — check the user's group memberships when evaluating effective permissions.
+You can change project-level permissions for an individual user. Permission inheritance still applies—check the user's group memberships when evaluating effective permissions.
 
 Cloud (Azure DevOps Services)
 ::: moniker range="azure-devops"
