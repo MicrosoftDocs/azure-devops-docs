@@ -4,6 +4,8 @@ description: Discover how to use expressions in Azure Pipelines. Define conditio
 ms.topic: concept-article
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.date: 01/09/2026
+ms.author: jukullam
+author: juliakm
 monikerRange: "<=azure-devops"
 ---
 
