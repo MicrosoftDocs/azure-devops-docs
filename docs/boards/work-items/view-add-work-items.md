@@ -236,7 +236,7 @@ Create as many work items as you need of the type you need to track the work you
 1. Open Visual Studio, Team Explorer, and then choose **Work Items**. 
 
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio, Team Explorer, Choose Work Items](../work-items/media/view-add/open-work-items-vs-te-complete.png)
+   > ![Screenshot shows selection sequence of Visual Studio, Team Explorer, Choose Work Items.](../work-items/media/view-add/open-work-items-vs-te-complete.png)
    If you don't see the **Work Items** option, you need to connect to a project and not just a repository. From the Connect to a Project dialog. Use **CTRL-Shift** to select your options and then choose **Connect**.
 
    > [!div class="mx-imgBorder"]  

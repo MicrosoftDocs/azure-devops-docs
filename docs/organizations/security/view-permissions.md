@@ -36,9 +36,9 @@ Quick steps:
 ## Permission model basics
 
 Permissions in Azure DevOps use three assignment states:
-- **Allow—explicitly grants a permission
-- **Deny—explicitly denies a permission and overrides Allow
-- **Inherit—no explicit assignment at this level; the permission is inherited from parent scopes or group membership
+- **Allow**—explicitly grants a permission
+- **Deny**—explicitly denies a permission and overrides Allow
+- **Inherit**—no explicit assignment at this level; the permission is inherited from parent scopes or group membership
 
 Effective permissions are computed by evaluating assignments across:
 - The object itself (project, repo, area path, etc.)
