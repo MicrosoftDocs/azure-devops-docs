@@ -405,27 +405,42 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/quick-access-to-test-results" data-raw-source="[Quick access to Test Results in Test Case](/azure/devops/release-notes/roadmap/2025/testplans/quick-access-to-test-results)">Quick access to Test Results in Test Case</a></td>
          <td>Test Plans</td>
-         <td>2025 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>  
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result" data-raw-source="[Latest Test Outcome in Requirements](/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result)">Latest Test Outcome in Requirements</a></td>
          <td>Test Plans</td>
-         <td>2025 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience" data-raw-source="[New Test Run experience - Public Preview](/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience)">New Test Run experience - Public Preview</a></td>
          <td>Test Plans</td>
-         <td>2025 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point" data-raw-source="[Enhanced Test Point Result Panel](/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point)">Enhanced Test Point Result Panel</a></td>
          <td>Test Plans</td>
-         <td>2025 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-pytest)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
          <td>Test Plans</td>
          <td>2025 Q4</td>
+      </tr>
+        <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>
+         <td>Test Plans</td>
+         <td>2026 Q2</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point" data-raw-source="[Support Capturing of Actual Test Result](/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point)">Support Capturing of Actual Test Result</a></td>
+         <td>Test Plans</td>
+         <td>2026 Q2</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point" data-raw-source="[Revamp of the Web Runner](/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point)">Revamp of the Web Runner</a></td>
+         <td>Test Plans</td>
+         <td>2026 Q2</td>
       </tr>
    </tbody>
 </table>
