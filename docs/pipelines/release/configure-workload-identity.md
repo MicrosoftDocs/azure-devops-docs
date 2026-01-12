@@ -24,18 +24,7 @@ For authentication, you can use either a managed identity or an app registration
 
 The following diagram illustrates the high-level steps to configure a workload identity service connection:
 
-```mermaid
-graph TD
-    A["Choose Authentication Method"] --> B{"Managed Identity<br/>or<br/>App Registration?"}
-    B -->|Managed Identity| C["1. Create Managed Identity<br/>in Azure Portal"]
-    B -->|App Registration| D["1. Create App Registration<br/>in Azure Portal"]
-    C --> E["2. Create Service Connection<br/>in Azure DevOps<br/>Save as Draft"]
-    D --> E
-    E --> F["3. Add Federated Credential<br/>in Azure Portal"]
-    F --> G["4. Grant Required Permissions<br/>in Azure Portal"]
-    G --> H["5. Save Service Connection<br/>in Azure DevOps"]
-    H --> I["✓ Setup Complete<br/>Ready to Use in Pipelines"]
-```
+:::image type="content" source="media/workload-identity-options.png" alt-text="Diagram displaying the two optional paths when configuring workload identity" lightbox="media/workload-identity-options.png":::
 
 ## Set a workload identity service connection 
 

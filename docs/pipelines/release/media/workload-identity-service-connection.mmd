@@ -1,0 +1,20 @@
+graph LR
+    A["Choose authentication method"] --> B{"Managed identity<br/>or<br/>App registration?"}
+    B -->|Managed identity| C["1. Create managed identity<br/>in Azure portal"]
+    B -->|App registration| D["1. Create app registration<br/>in Azure portal"]
+    C --> E["2. Create service connection<br/>in Azure DevOps<br/>Save as draft"]
+    D --> E
+    E --> F["3. Add federated credential<br/>in Azure portal"]
+    F --> G["4. Grant required permissions<br/>in Azure portal"]
+    G --> H["5. Save service connection<br/>in Azure DevOps"]
+    H --> I["✓ Setup complete<br/>Ready to use in pipelines"]
+    
+    style A fill:#ff8c00,color:#fff
+    style B fill:#0078d4,color:#fff
+    style C fill:#005a9e,color:#fff
+    style D fill:#005a9e,color:#fff
+    style E fill:#005a9e,color:#fff
+    style F fill:#005a9e,color:#fff
+    style G fill:#005a9e,color:#fff
+    style H fill:#005a9e,color:#fff
+    style I fill:#2e7d32,color:#fff
