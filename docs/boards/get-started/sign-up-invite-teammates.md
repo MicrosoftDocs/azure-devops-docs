@@ -9,7 +9,7 @@ author: chcomley
 monikerRange: 'azure-devops'
 ai-usage: ai-assisted
 ms.update: 90-days
-ms.date: 01/09/2026
+ms.date: 01/12/2026
 ms.custom: boards-get-started, sfi-image-nochange
 ---
 
@@ -21,7 +21,7 @@ Sign up for [Azure Boards](https://azure.microsoft.com/services/devops/boards/?n
 
 This quickstart shows the simplest path to get started and invite teammates.
 
-What you'll learn:
+What you learn:
 - How to create an organization and project.
 - How to sign up with a Microsoft or GitHub identity.
 - How to invite team members to your project.
@@ -47,7 +47,7 @@ You can sign up using either a Microsoft account (personal or Microsoft Entra) o
 [!INCLUDE [sign-up-msft-account](../../includes/sign-up-msft-account.md)]
 
 > [!NOTE]  
-> If your organization uses Microsoft Entra ID and your identity is managed by that tenant, sign in with your Microsoft Entra account. External (guest) accounts might not be allowed to create or administer an organization in that tenant—use a native tenant account if you see authentication errors.
+> If your organization uses Microsoft Entra ID and that tenant manages your identity, sign in with your Microsoft Entra account. The tenant might not allow external (guest) accounts to create or administer an organization—use a native tenant account if you see authentication errors.
 
 [!INCLUDE [sign-in-github-account](../../includes/sign-in-github-account.md)]
 
@@ -64,7 +64,7 @@ After you sign in, you're prompted to create a project.
 
 1. Enter a project name and optional description.
 2. (Optional) Expand **Advanced** to choose version control (Git or TFVC) and the work item process (Basic, Agile, Scrum, or CMMI).
-3. Select **Create project** — your project's board appears automatically.
+3. Select **Create project—your project's board appears automatically.
 
 For more information, see [Create a project using advanced settings](#advanced-project-options).
 
@@ -72,13 +72,13 @@ For more information, see [Create a project using advanced settings](#advanced-p
 
 Add people to your organization and project so they can view and contribute to work.
 
-1. From the web portal, open **Organization settings** (click the Azure DevOps logo and the gear icon).  
+1. From the web portal, open **Organization settings**.  
 2. Select **Users** > **Add new users**.  
 3. Enter email addresses (Microsoft accounts) or GitHub IDs, choose an **Access level** (Basic or Stakeholder), and add users to your project and groups (Readers, Contributors, or Administrators).  
 4. Select **Add** to send invitations.
 
 > [!NOTE]
-> - **Basic access** grants full Boards features. Users with GitHub Enterprise licenses automatically receive Basic access.
+> - **Basic access** grants full Boards features. Users with a GitHub Enterprise license automatically receive Basic access.
 > - **Stakeholder access** provides limited access for viewing and light editing of work items.
 > - If you use Microsoft Entra to manage your organization, invite users by their Microsoft Entra accounts or follow your organization's provisioning process.
 > - For detailed steps, see [Add users or groups to a team or project](../../organizations/security/add-users-team-project.md) and [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
