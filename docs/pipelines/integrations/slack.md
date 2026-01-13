@@ -3,10 +3,10 @@ ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to
 title: Integrate with Slack
-description: Connect and monitor your pipelines with the Azure Pipelines app for Slack.
-ms.author: jukullam
-ms.date: 07/22/2024
+description: Discover how to connect Azure Pipelines to Slack for real-time updates on pipeline events.
+ms.date: 01/13/2026
 monikerRange: 'azure-devops'
+#customer intent: As a Slack workspace admin, I want to integrate Azure Pipelines with Slack so that my team can monitor pipeline events directly in Slack channels.
 ---
 
  # Use Azure Pipelines with Slack
@@ -27,13 +27,13 @@ This article shows you how to use the [Azure Pipelines app for Slack](https://sl
 
 [Install the Azure Pipelines Slack app](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installslackapp) to your Slack workspace. Once the app installs, you see the following welcome message. Enter `/azpipelines` to start interacting with the app.
 
-:::image type="content" source="media/integrations-slack/welcome-message.png" alt-text="A screenshot showing the Azure Pipelines app welcome message.":::
+:::image type="content" source="media/integrations-slack/welcome-message.png" alt-text="Screenshot of the Azure Pipelines app welcome message.":::
 
 ## Connect to your pipeline
 
-Once the app is installed in your Slack workspace, you can connect the app to any pipeline you want to monitor. You must authenticate to Azure Pipelines before running any commands.
+After you install the app in your Slack workspace, connect the app to any pipeline you want to monitor. Authenticate to Azure Pipelines before running any commands.
 
-:::image type="content" source="media/integrations-slack/sign-in.png" alt-text="A screenshot showing the sign-in prompt message.":::
+:::image type="content" source="media/integrations-slack/sign-in.png" alt-text="Screenshot of the sign-in prompt message.":::
 
 > [!NOTE]
 > If your Azure DevOps organization is connected to a Microsoft Entra ID tenant, you must sign in with a native member of that tenant. External users receive the following error if they try to sign in to the Azure Pipelines app: `Configuration failed. Please make sure that the organization exists and that you have sufficient permissions.`
@@ -58,20 +58,20 @@ The `subscribe` command subscribes you to the following notifications by default
   - **Release deployment completed**
   - **Release deployment approval pending**
   
-:::image type="content" source="media/integrations-slack/events-subscription.png" alt-text="A screenshot showing notification example." lightbox="media/integrations-slack/events-subscription.png":::
+:::image type="content" source="media/integrations-slack/events-subscription.png" alt-text="Screenshot of notification example." lightbox="media/integrations-slack/events-subscription.png":::
 
 ## Manage subscriptions
 
 To manage the subscriptions for a channel, enter `/azpipelines subscriptions`. This command lists all the current subscriptions for the channel and lets you add or remove subscriptions.
 
-:::image type="content" source="media/integrations-slack/subscriptions-list.png" alt-text="A screenshot showing a list of subscriptions.":::
+:::image type="content" source="media/integrations-slack/subscriptions-list.png" alt-text="Screenshot of a list of subscriptions.":::
 
 > [!NOTE]
 > Team Administrators can't remove or modify subscriptions created by Project Administrators.
 
 ## Customize subscriptions
 
-The default subscriptions don't have any filters applied, but you can customize these subscriptions according to your preferences. For instance, you might want to receive notifications only for failed builds or deployments to production. You can apply filters to customize which messages you receive in your channel.
+The default subscriptions don't have any filters applied, but you can customize these subscriptions according to your preferences. For example, you might want to receive notifications only for failed builds or deployments to production. You can apply filters to customize which messages you receive in your channel.
 
 To customize a subscription:
 
@@ -80,24 +80,25 @@ To customize a subscription:
 1. Select the event you want to subscribe to, and then select your desired configuration.
 1. Select **Save**.
 
-For example, to get notifications only for failed builds, select **Failed** under **Build status**.
+To get notifications only for failed builds, select **Failed** under **Build status**.
 
-:::image type="content" source="media/integrations-slack/custom-build-completed.png" alt-text="A screenshot showing how to customize a subscription.":::
+:::image type="content" source="media/integrations-slack/custom-build-completed.png" alt-text="Screenshot of how to customize a subscription.":::
 
 ## Approve deployments
 
-You can approve deployments from within your Slack channel without going to Azure Pipelines. Subscribe to the **Run stage waiting for approval** notifications for YAML pipelines or the **Release deployment approval pending** notifications for Classic releases. Both of these subscriptions are created by default when you subscribe to a pipeline.
+You can approve deployments from your Slack channel without going to Azure Pipelines. Subscribe to the **Run stage waiting for approval** notifications for YAML pipelines or the **Release deployment approval pending** notifications for Classic releases. Both of these subscriptions are created by default when you subscribe to a pipeline.
 
-:::image type="content" source="media/integrations-slack/approve.png" alt-text="A screenshot showing pipeline approval in Slack.":::
+:::image type="content" source="media/integrations-slack/approve.png" alt-text="Screenshot of pipeline approval in Slack.":::
 
 The Azure Pipelines app for Slack lets you handle all the checks and approval scenarios that are available in the Azure Pipelines portal. These scenarios include single approver, multiple approvers, and team-based approval. You can approve requests either individually or on behalf of a team.
 
-:::image type="content" source="media/integrations-slack/approved.png" alt-text="A screenshot showing a predeployment pipeline approved in Slack.":::
+:::image type="content" source="media/integrations-slack/approved.png" alt-text="Screenshot of a predeployment pipeline approved in Slack.":::
 
 ## Remove all subscriptions
 
-To declutter your channel, you can use the `/azpipelines unsubscribe all <project url>` command to unsubscribe from all pipelines in a project. For example, `/azpipelines unsubscribe all https://dev.azure.com/myorg/myproject`.
-> [!IMPORTANT] 
+To declutter your channel, use the `/azpipelines unsubscribe all <project url>` command to unsubscribe from all pipelines in a project. For example, `/azpipelines unsubscribe all https://dev.azure.com/myorg/myproject`.
+
+> [!IMPORTANT]
 > Only Project Administrators can run this command.
 
 ## Command reference
