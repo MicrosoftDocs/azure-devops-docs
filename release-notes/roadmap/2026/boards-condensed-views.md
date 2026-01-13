@@ -21,4 +21,4 @@ To better align with **Delivery Plans**, we are introducing a new condensed view
 <br/>
 
 > [!div class="mx-imgBorder"]
-> ![animated gif example of a condensed view for sprint board](.\media\boards-condensed-view-kanban.gif)
+> ![animated gif example of a condensed view for sprint board](.\media\boards-condensed-view-sprint.gif)
