@@ -12,7 +12,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-A [resource](resources.md) is anything used by a pipeline that lives outside the pipeline. Resources include repositories, service connections, environments, and agent pools. Your pipeline needs to access or consume resources to complete its work. Resources are fundamental to Azure Pipelines because they enable you to securely connect to external systems, share configurations across pipelines, and maintain audit trails for compliance and troubleshooting.
+A [resource](resources.md) in Azure Pipelines is a managed entity that your pipeline connects to or consumes. Resources include [service connections](../library/service-endpoints.md), [agent pools](../agents/agents.md), [environments](environments.md), [variable groups](../library/variable-groups.md), [secure files](../library/secure-files.md), repositories, and packages. Resources are fundamental to Azure Pipelines because they enable you to securely connect to external systems, share configurations across pipelines, and maintain audit trails for compliance and troubleshooting.
 
 Resources offer the following benefits:
 
