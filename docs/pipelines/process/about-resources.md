@@ -1,13 +1,14 @@
 ---
-title: About pipeline resources
+title: Resources in Azure Pipelines
 ms.custom: pipelinesresourcesrefresh
-description: What are resources?
+description: Discover how Azure Pipelines resources enable secure connections, shared configurations, and compliance-friendly audit trails for your CI/CD workflows.
 ms.topic: concept-article
 ms.date: 01/13/2026
 monikerRange: "<=azure-devops"
+#customer intent: As a DevOps engineer, I want to understand how to use resources in Azure Pipelines so that I can securely connect to external systems and share configurations across pipelines.
 ---
 
-# About resources for Azure Pipelines
+# Resources in Azure Pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
