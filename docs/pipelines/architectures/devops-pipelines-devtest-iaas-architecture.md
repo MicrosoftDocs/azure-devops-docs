@@ -3,8 +3,7 @@ title: DevTest and DevOps solutions architecture
 description: Learn how to configure a DevTest and DevOps infrastructure for development, testing, and deploying IaaS-based software.
 ms.date: 05/08/2023
 ms.topic: solution-idea
-ms.custom:
-    - fcp
+ms.custom: fcp
 name: DevTest and DevOps for IaaS solutions
 azureCategories:
   - devops

@@ -61,6 +61,12 @@ There are multiple entry points to using a dynamic target branch.
    `targetRef` parameter, Azure DevOps selects a target branch based on
    this dynamic choice.
 
+- **Branch Dropdown.** When a user opens the branch dropdown in Azure 
+  DevOps, branches specified in the pull request targets will appear 
+  in a section called "Targets" between the "Mine" and "All" sections.
+
+  ![Screenshot of the branch dropdowns with the Targets section.](media/pull-request-targets/target-branch-dropdown.png)
+
 There's a capability for client tools to create pull requests using this
 dynamic choice, but those clients need to add an optional signal that the
 user didn't specify a target branch. Check your client tool of choice to

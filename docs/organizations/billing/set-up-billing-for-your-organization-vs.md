@@ -9,10 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 07/25/2025
 monikerRange: 'azure-devops'
-ms.custom:
-  - freshness-fy22q1
-  - engagement-fy23
-  - sfi-image-nochange
+ms.custom: freshness-fy22q1, engagement-fy23, sfi-image-nochange
 ---
 
 # Manage billing

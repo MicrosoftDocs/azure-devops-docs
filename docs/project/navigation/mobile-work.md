@@ -10,9 +10,7 @@ author: chcomley
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.date: 01/27/2025
-ms.custom:
-  - Navigation
-  - sfi-image-nochange
+ms.custom: Navigation, sfi-image-nochange
 ---
 
 # View and update work items via mobile browser

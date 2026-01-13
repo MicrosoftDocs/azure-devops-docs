@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: concept-article
 monikerRange: '<= azure-devops'
-ms.date: 11/10/2025
+ms.date: 01/07/2026
 #customer intent: As an Azure DevOps developer, I want to use Markdown to create tables, lists, headings, and more, so I can share my project information in pull requests, README files, dashboards, and wikis.
 ---
 
@@ -104,7 +104,7 @@ This is the second line, which will appear directly below the first.
 This renders as:
 
 This is the first line with two spaces at the end.  
-This is the second line, which will appear directly below the first.
+This is the second line, which appears directly below the first.
 
 If you press **Enter** without two trailing spaces, the lines combine into a single paragraph in the published output.
 
@@ -259,7 +259,7 @@ sudo npm install vsoagent-installer -g
 This example shows how to highlight a portion of text as an inline code segment in the Markdown widget:
 
 ```md
-To install the Microsoft Cross Platform Build and Release Agent, run the following: <!-- ` - Single backtick --> $ sudo npm install vsoagent-installer -g <!-- ` - Single backtick -->
+To install the Microsoft Cross Platform Build and Release Agent, run the following: `$ sudo npm install vsoagent-installer -g`
 ``` 
 
 This image shows the published view of the Markdown for a portion of text highlighted as an inline code segment:

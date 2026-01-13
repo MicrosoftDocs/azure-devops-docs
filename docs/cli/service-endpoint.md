@@ -9,11 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 06/03/2025
-ms.custom:
-  - devx-track-arm-template
-  - devx-track-azurecli
-  - arm2024
-  - sfi-image-nochange
+ms.custom: devx-track-arm-template, devx-track-azurecli, arm2024, sfi-image-nochange
 #customer intent: As a developer, I want to use Azure DevOps CLI to create and manage different types of service connections.
 ---
 

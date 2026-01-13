@@ -7,9 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.custom:
-  - analytics-views
-  - sfi-image-nochange
+ms.custom: analytics-views, sfi-image-nochange
 ms date: 10/04/2021
 ---
 

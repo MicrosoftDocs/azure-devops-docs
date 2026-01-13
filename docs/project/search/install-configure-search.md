@@ -9,9 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '< azure-devops'
 ms.date: 01/22/2025
-ms.custom:
-  - engagement-fy23
-  - sfi-image-nochange
+ms.custom: engagement-fy23, sfi-image-nochange
 ---
 
 # Install and configure Search

@@ -253,3 +253,10 @@ The sample in this article uses the following Azure CLI commands:
 - [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az-pipelines-variable-group-variable-create)
 - [az pipelines variable-group variable update](/cli/azure/pipelines/variable-group/variable#az-pipelines-variable-group-variable-update)
 
+## Related content
+
+- [Manage variable groups](../../library/variable-groups.md)
+
+- [Link a variable group to secrets in Azure Key Vault](../../library/link-variable-groups-to-key-vaults.md)
+
+- [Use predefined variables](../../build/variables.md)
