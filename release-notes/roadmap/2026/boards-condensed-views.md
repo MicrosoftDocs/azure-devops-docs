@@ -12,13 +12,13 @@ hide_comments: true
 
 # Condensed view for Kanban and Sprint Boards
 
-To better align with [Delivery Plans](azure/devops/boards/plans/add-edit-delivery-plan), we are introducing a new condensed view for both Kanban and Sprint boards. This view displays cards in a more compact format by showing only the title, allowing teams to see more work items on the screen at once and quickly understand progress at a glance.
+To better align with [Delivery Plans](../../../docs/boards/plans/add-edit-delivery-plan), we are introducing a new condensed view for both Kanban and Sprint boards. This view displays cards in a more compact format by showing only the title, allowing teams to see more work items on the screen at once and quickly understand progress at a glance.
 
 ### Examples
 > [!div class="mx-imgBorder"]
-> ![animated gif example of a condensed view for kanban board](..\media\boards-condensed-view-kanban.gif)
+> ![animated gif example of a condensed view for kanban board](.\media\boards-condensed-view-kanban.gif)
 
 <br/><br/>
 
 > [!div class="mx-imgBorder"]
-> ![animated gif example of a condensed view for sprint board](..\media\boards-condensed-view-kanban.gif)
+> ![animated gif example of a condensed view for sprint board](.\media\boards-condensed-view-kanban.gif)
