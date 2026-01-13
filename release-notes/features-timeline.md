@@ -244,7 +244,7 @@ These recent investments include:
          <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
          <td>Boards</td>
          <td>2026 Q1</td>
-      </tr>           
+      </tr>         
     </tbody>
 </table>
 
@@ -533,17 +533,25 @@ Below, you will find several investments that we plan to deliver as part of this
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement" data-raw-source="[Streamlining bulk enablement scenarios](/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement)">Streamlining bulk enablement scenarios</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="4"><strong>2026 Q1</strong></td>
+      <td rowspan="6"><strong>2026 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts" data-raw-source="[Organization-level alerts view in security overview](/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts)">Organization-level alerts view in security overview</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr> 
-       <tr>          
+      <tr>          
+        <td><a href="/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Remote Azure DevOps MCP Server</a></td>
+        <td>Boards</td>
+      </tr>
+      <tr>          
         <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
         <td>Boards</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved filter experience for boards and backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved filter experience for boards and backlogs</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-condensed-views" data-raw-source="[Condensed views for kanban and sprint boards](/azure/devops/release-notes/roadmap/2025/boards/boards-condensed-views)">Condensed views for kanban and sprint boards</a></td>
          <td>Boards</td>
+      </tr>
+      <tr>          
+        <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
+        <td>Boards</td>
       </tr>
        <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
