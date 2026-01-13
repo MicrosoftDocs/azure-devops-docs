@@ -538,13 +538,13 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>          
-        <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved Filtering Experience in Boards and Backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved Filtering Experience in Boards and Backlogs</a></td>
-        <td>Boards</td>
-      </tr> 
-      <tr>          
         <td><a href="/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Remote Azure DevOps MCP Server</a></td>
         <td>General</td>
       </tr>
+      <tr>          
+        <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved Filtering Experience in Boards and Backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved Filtering Experience in Boards and Backlogs</a></td>
+        <td>Boards</td>
+      </tr>       
       <tr>          
         <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
         <td>Boards</td>
