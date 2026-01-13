@@ -11,7 +11,7 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.update: 90-days
-ms.date: 09/29/2025
+ms.date: 01/12/2026
 # customer intent: As a team member, I want to learn how to create, edit, and delete Azure DevOps dashboards so that I can view and share information about my projects and teams, such as progress and status updates.
 ---
 
@@ -22,23 +22,23 @@ ms.date: 09/29/2025
 This quickstart shows how to create, edit, rename, and delete dashboards in Azure DevOps. It also covers permissions, adding widgets, and troubleshooting common issues.
 
 Learn how to do the following tasks:
-- Create team and project dashboards.
-- Add, configure, move, resize, and remove widgets.
-- Set dashboard permissions and sharing options.
-- Troubleshoot common dashboard and widget issues.
+- Create team and project dashboards
+- Add, configure, move, resize, and remove widgets
+- Set dashboard permissions and sharing options
+- Troubleshoot common dashboard and widget issues
 
 Quick steps:
-1. In your project, open **Overview** > **Dashboards**.
-2. Select **New dashboard** to create a team or project dashboard.
-3. Select **Edit**, open the widget catalog, drag widgets onto the canvas, then select **Done Editing**.
-4. Open **More options** > **Dashboard settings** to rename or change refresh settings.
-5. Open **More options** > **Security** to set permissions.
-
-[!INCLUDE [enable-mcp-server](../../boards/includes/enable-mcp-server.md)]
+1. In your project, open **Overview** > **Dashboards**
+2. Select **New dashboard** to create a team or project dashboard
+3. Select **Edit**, open the widget catalog, drag widgets onto the canvas, then select **Done Editing**
+4. Open **More options** > **Dashboard settings** to rename or change refresh settings
+5. Open **More options** > **Security** to set permissions
 
 ## Prerequisites
 
 [!INCLUDE [Dashboard prerequisites](../includes/dashboard-prerequisites.md)]
+
+[!INCLUDE [enable-mcp-server](../../boards/includes/enable-mcp-server.md)]
 
 ## Project and team dashboards
 
