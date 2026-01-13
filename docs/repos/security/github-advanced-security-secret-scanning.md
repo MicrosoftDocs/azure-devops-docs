@@ -63,7 +63,7 @@ When you navigate into an alert, a detailed alert view appears and reveals more 
 
 > [!NOTE]
 > The image above contains a value formatted to resemble a personal access token (PAT). This value is not a valid PAT and is used for illustrative purposes only.
-> GitHub Advanced Security for Azure DevOps performs validity checks on detected secrets. If a token does not match the expected format or fails validation (i.e., is not a real PAT), secret scanning will recognize it as invalid and will not trigger a detection alert. This helps reduce false positives and ensures that only actual, valid secrets generate alerts.
+> GitHub Advanced Security for Azure DevOps performs validity checks on detected secrets. While the tool may initially detect values that match the expected format of a PAT, it performs additional validation to verify authenticity. If a token fails this validation check (that is, is not an actual valid PAT), secret scanning will recognize it as invalid and will not trigger a detection alert. This helps reduce false positives and ensures that only actual, valid secrets generate alerts.
 
 
 | Section  | Explanation  |
