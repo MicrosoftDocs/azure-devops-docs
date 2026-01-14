@@ -14,7 +14,7 @@ Secret variables are encrypted variables that you can use in pipelines without e
 
 **Why secret variables matter:** Protecting sensitive credentials in your CI/CD pipelines is critical. By storing secrets securely, you prevent unauthorized access to sensitive resources, reduce the risk of credential exposure in build logs, and maintain compliance with security best practices. Secret variables ensure that only authorized pipelines and tasks can access sensitive data, protecting your organization's security posture.
 
-The recommended ways to [set secret variables are in the UI](#secret-variable-in-the-ui), [in a variable group](#set-a-secret-variable-in-a-variable-group), and [in a variable group from Azure Key Vault](#link-secrets-from-an-key-vault). You can also [set secret variables in a script with a logging command](#set-secret-variable-in-a-script-by-using-logging-commands) but this method isn't recommended since anyone who can access your pipeline can also see the secret.
+The recommended ways to [set secret variables are in the UI](#secret-variable-in-the-ui), [in a variable group](#set-a-secret-variable-in-a-variable-group), and [in a variable group from Azure Key Vault](#link-secrets-from-an-azure-key-vault). You can also [set secret variables in a script with a logging command](#set-secret-variable-in-a-script-by-using-logging-commands) but this method isn't recommended since anyone who can access your pipeline can also see the secret.
 
 Secret variables that you set in the pipeline settings UI for a pipeline are scoped to the pipeline where you set them. Use variable groups to share secret variables across pipelines.
 
