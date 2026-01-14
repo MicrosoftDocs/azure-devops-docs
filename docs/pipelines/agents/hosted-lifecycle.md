@@ -1,6 +1,6 @@
 ---
 title: Microsoft-hosted agent lifecycle for Azure Pipelines
-description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
+description: Learn about the lifecycle of Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
 ms.date: 01/13/2026
 monikerRange: 'azure-devops'
