@@ -55,26 +55,26 @@ Follow these steps to establish the connection between your Azure DevOps organiz
 
 1. **Initiate directory connection**: In the organization settings, select **Microsoft Entra ID** from the left navigation, then select **Connect directory** to begin the connection process.
 
-   :::image type="content" source="media/shared/select-azure-ad-connect-directory.png" alt-text="Select Connect directory to connect your organization to Microsoft Entra ID":::
+   :::image type="content" source="media/shared/select-azure-ad-connect-directory.png" alt-text="Screenshot shows the Connect directory button for connecting your organization to Microsoft Entra ID":::
 
 1. **Configure directory connection**: From the dropdown menu, select your target Microsoft Entra ID directory, then select **Connect** to establish the connection.
 
-   :::image type="content" source="media/shared/select-directory-connect.png" alt-text="Select your Microsoft Entra ID, and then Connect":::
+   :::image type="content" source="media/shared/select-directory-connect.png" alt-text="Screenshot shows your Microsoft Entra ID selection, and then the Connect button.":::
    
    > [!NOTE]
    > If your directory doesn't appear in the dropdown, contact your Microsoft Entra administrator to request membership in the Microsoft Entra ID.
 
 1. **Complete the connection**: When prompted, select **Sign out** to finalize the connection.
 
-   :::image type="content" source="media/shared/connect-success-dialog.png" alt-text="Connect success dialog - select Sign out":::
+   :::image type="content" source="media/shared/connect-success-dialog.png" alt-text="Screenshot shows Connect success dialog - select Sign out.":::
 
    Your organization is now connected to your Microsoft Entra ID.
 
 1. **Resolve user mapping**: Sign back in to Azure DevOps with your Microsoft Entra ID credentials. Navigate to **Organization settings** > **Users** to review user status. For any disconnected members, select **Resolve** to map them to their Microsoft Entra identities or invite them as guests.
 
-   :::image type="content" source="media/shared/azure-ad-select-resolve-for-disconnected-users.png" alt-text="Select Resolve to invite unmapped users":::
+   :::image type="content" source="media/shared/azure-ad-select-resolve-for-disconnected-users.png" alt-text="Screenshot shows selecting the Resolve button to invite unmapped users.":::
 
-   :::image type="content" source="media/shared/resolve-disconnected-users.png" alt-text="Mapping disconnected users":::
+   :::image type="content" source="media/shared/resolve-disconnected-users.png" alt-text="Screenshot show mapping disconnected users.":::
 
 > [!TIP]
 > For detailed guidance on resolving user mapping issues, see the [connection FAQs](./faq-azure-access.yml#faq-connect).
