@@ -23,7 +23,7 @@ A deployment group installs a deployment agent on each target server in the grou
 | Product | Requirements |
 | ------- | ------------ |
 | Azure DevOps | - An Azure DevOps [organization](../../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../../organizations/projects/create-project.md). |
-| Azure DevOps Demo Generator | - [Set up the Demo Generator](/azure/devops/demo-gen/configure).<br>- Create a [new Azure DevOps project](/azure/devops/demo-gen/use-demo-generator-v2) and make sure to choose the **DeploymentGroups** template.  |
+| Azure DevOps Demo Generator | - [Set up the Demo Generator](/azure/devops/demo-gen/configure).<br>- Create a [new Azure DevOps project](/azure/devops/demo-gen/use-demo-generator-v2) and choose the **DeploymentGroups** template. |
 | Azure | - An [Azure subscription](https://azure.microsoft.com/free/). |
 
 ## Set up resources in Azure
@@ -34,7 +34,7 @@ This section guides you through setting up your Azure resources by using an Azur
 
 1. Fill in the required information, and then select **Review + create**.
 
-   You can use any allowed combination of usernames and passwords, because you won't use them again in this article. The **Env Prefix Name** value is added to all resource names to ensure global uniqueness. Use something personal or random. If you encounter a naming conflict during validation or creation, try changing this value and redeploying. Provisioning typically takes 10–15 minutes.
+   You can use any allowed combination of usernames and passwords, because you won't use them again in this article. The **Env Prefix Name** value is added to all resource names to ensure global uniqueness. Use something personal or random. If you encounter a naming conflict during validation or creation, try changing this value and redeploying. Provisioning typically takes 10 to 15 minutes.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/provision-resources-arm-azure.png" alt-text="Screenshot that shows how to set up Azure resources.":::
 
@@ -46,7 +46,7 @@ This section guides you through setting up your Azure resources by using an Azur
 
 1. Copy the **DNS name** value, because you'll need it in a later step.
 
-    :::image type="content" source="media/deploying-azure-vms-deployment-groups/arm-vm-overview.png" alt-text="Screenshot that shows a DB server VM in Azure.":::
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/arm-vm-overview.png" alt-text="Screenshot that shows a database server VM in Azure.":::
 
 ## Create a deployment group
 
@@ -69,17 +69,19 @@ A registration script is generated. You can use this script to register target s
 1. Select **New Token**, enter a name for your personal access token (PAT), and then choose an expiration date.
 
 1. Select **Custom defined** for **Scopes**, select **Show all scopes**, and then check the following scopes:
-    - **Project and Team** > **Read & write**.
+    - **Project and Team** > **Read & write**
     - **Agent Pools** > **Read & manage**
-    - **Deployment Groups** > **Read & manage**.
+    - **Deployment Groups** > **Read & manage**
 
 1. When you finish, select **Create**. Copy your PAT, because you'll need it in the following section.
 
 ## Configure the release pipeline
 
-The template for the classic release pipeline includes one agent job, **Agent phase**, which runs tasks on an agent in an agent pool. It also includes two deployment group jobs: **Deployment group phase** and **IIS Deployment phase**.
+The template for the classic release pipeline includes one agent job, **Agent phase**. This job runs tasks on an agent in an agent pool.
 
-Deployment group jobs run tasks on machines defined in a deployment group. Use the following steps to configure each job.
+The template also includes two deployment group jobs: **Deployment group phase** and **IIS Deployment phase**. Deployment group jobs run tasks on machines defined in a deployment group.
+
+Use the following steps to configure each job.
 
 ### Configure the agent job
 
@@ -99,17 +101,17 @@ Deployment group jobs run tasks on machines defined in a deployment group. Use t
 
 1. This task will run on virtual machines in Azure and must be able to connect back to the pipeline to complete the deployment group requirements. To secure the connection, you need to set up a service connection by using the PAT that you created earlier. Scroll down within the same task, and select **New** under **Azure Pipelines service connection**.
 
-1. In the **New service connection** pane, enter the **Connection URL** value for your Azure DevOps organization: `https://dev.azure.com/organizationName`. Paste in the **Personal Access Token** value that you created earlier, specify a **Service connection name** value, and select the **Grant access permission to all pipelines** checkbox. When you finish, select **Verify and save**.
+1. On the **New service connection** pane, enter the **Connection URL** value for your Azure DevOps organization: `https://dev.azure.com/organizationName`. Paste in the **Personal Access Token** value that you created earlier, specify a **Service connection name** value, and select the **Grant access permission to all pipelines** checkbox. When you finish, select **Verify and save**.
 
-    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-deployment-task-service-connection.png" alt-text="Screenshot that shows how to configure a new service connection for the deployment task.":::
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-deployment-task-service-connection.png" alt-text="Screenshot that shows how to configure a new service connection for a deployment task.":::
 
 1. Scroll down in the **Azure Resource Group Deployment** task. In the dropdown menus, select your **Team project** value and the **Deployment Group** value that you created earlier.
 
-    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-team-deployment-group-setup.png" alt-text="Screenshot that shows how to configure a team project and deployment group for the deployment task.":::
+    :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-team-deployment-group-setup.png" alt-text="Screenshot that shows how to configure a team project and deployment group for a deployment task.":::
 
 ### Configure the deployment group jobs
 
-1. From the **Deployment Groups** release definition, select the **Deployment group phase** job.
+1. In the **Deployment Groups** release definition, select the **Deployment group phase** job.
 
    This job executes tasks on the machines defined in the deployment group. This job uses the **SQL-Svr-DB** tag to deploy to a subset of targets in the deployment group.
 
@@ -119,11 +121,11 @@ Deployment group jobs run tasks on machines defined in a deployment group. Use t
 
 1. Select the **IIS Deployment phase** job. This job uses the **WebSrv** tag to deploy the web application to a subset of the web servers. In the dropdown list, select the **Deployment Group** value that you created earlier.
 
-1. The **Disconnect Azure Network Load Balancer** and **Connect Azure Network Load Balancer** tasks are deprecated. you can disable them for now by right-clicking the task and selecting **Disable select task(s)**.
+1. The **Disconnect Azure Network Load Balancer** and **Connect Azure Network Load Balancer** tasks are deprecated. You can disable them for now by right-clicking the tasks and selecting **Disable select task(s)**.
 
 1. The **IIS Web App Manage** and **IIS Web App Deploy** tasks are prefilled and require no changes.
 
-1. Select the **Variables** tab, select **Pipeline variables**, and provide the following values. Replace the placeholder in the **DefaultConnectionString** variable with the SQL Server DNS name that you copied earlier.
+1. Select the **Variables** tab, select **Pipeline variables**, and provide the following values. Replace the placeholder in the `DefaultConnectionString` variable with the SQL Server DNS name that you copied earlier.
 
     | Variable name | Variable value |
     | ------------- | -------------- |
@@ -133,7 +135,7 @@ Deployment group jobs run tasks on machines defined in a deployment group. Use t
     | `DefaultConnectionString` | `Data Source=[YOUR_DNS_NAME];Initial Catalog=PartsUnlimited-Dev;User ID=xxxxxxxx;Password=xxxxxxxx;MultipleActiveResultSets=False;Connection Timeout=30;` |
     | `ServerName` | `localhost` |
 
-1. Select **Save**, add a comment if you'd like, then select **Ok**.
+1. Select **Save**, add comment if you want, and then select **Ok**.
 
 > [!TIP]
 > If you receive an error that the `DefaultConnectionString` variable must be saved as a secret, select the padlock icon next to its value to protect it.
@@ -142,7 +144,7 @@ Deployment group jobs run tasks on machines defined in a deployment group. Use t
 
 Now that the release definition is configured and saved, you can proceed to create a release to deploy your web app to Azure.
 
-However, before you start the release, you have to make sure that the build pipeline ran at least once. This action generates the pipeline artifact that's required for deployment. If you try to run the release pipeline before the build pipeline, the **Artifacts** section on the **Release pane** will be empty.
+Before you start the release, you have to make sure that the build pipeline ran at least once. This action generates the pipeline artifact that's required for deployment. If you try to run the release pipeline before the build pipeline, the **Artifacts** section on the **Release** pane will be empty.
 
 Use the following steps to run your pipeline, generate a pipeline artifact, and then create a new release:
 
@@ -221,11 +223,11 @@ If one or more of your agents are showing as offline, even though they're runnin
 nslookup dev.azure.com
 ```
 
-If all VMs are resolving to the same set of IPs, make sure the load balancer is configured with the correct outbound rule. You can add a backend pool to your load balancer in Azure, add the NICs of your VMs to the backend pool, and then associate the backend pool with your load balancer's outbound rule. To do this task:
+If all VMs are resolving to the same set of IPs, make sure that the load balancer is configured with the correct outbound rule. You can add a backend pool to your load balancer in Azure, add the NICs of your VMs to the backend pool, and then associate the backend pool with your load balancer's outbound rule. To do this task:
 
 1. Go to Azure and find your load balancer.
 
-1. Select **Backend pools**, and then either choose your existing pool or create a new one. Under **IP configurations**, and add your web servers.
+1. Select **Backend pools**, and then either choose your existing pool or create a new one. Under **IP configurations**, add your web servers.
 
 1. Go to **Load balancing rules** and select your load-balancing rule. In the **Backend pool** dropdown list, select your backend pool.
 
@@ -233,11 +235,11 @@ If all VMs are resolving to the same set of IPs, make sure the load balancer is 
 
 In this article, you created an Azure DevOps project and deployed resources in Azure. If you no longer need them, follow these steps to clean up.
 
-### Delete the Azure DevOps project
+### Step 1: Delete the Azure DevOps project
 
 Go to **Project settings**, and then select **Overview** > **Delete**.
 
-### Delete the Azure resource group
+### Step 2: Delete the Azure resource group
 
 All Azure resources that you created in this article are in the same resource group. Deleting the resource group removes all associated resources.
 
