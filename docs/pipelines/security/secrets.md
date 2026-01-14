@@ -5,7 +5,7 @@ ms.date: 09/10/2025
 monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines user, I want to understand best practices for using secrets in Azure Pipelines so I can limit and control access to secrets in pipelines.
 
-ms.topic: article
+ms.topic: best-practice
 ---
 
 # Secrets in Azure Pipelines

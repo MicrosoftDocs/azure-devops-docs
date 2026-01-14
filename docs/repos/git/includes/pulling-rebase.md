@@ -1,4 +1,6 @@
-
+---
+ms.topic: how-to
+---
 1. Choose **Git > Manage Branches** to open the **Git Repository** window.
 
    :::image type="content" source="../media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2019." lightbox="../media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::

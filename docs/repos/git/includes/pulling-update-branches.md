@@ -1,4 +1,6 @@
-
+---
+ms.topic: how-to
+---
 1. In the **Git Changes** window, choose **Pull**.
 
    :::image type="content" source="../media/pulling/visual-studio-2019/git-experience/pull-git-changes-window.png" border="true" alt-text="Screenshot of the Pull button in the Git Changes window of Visual Studio 2019." lightbox="../media/pulling/visual-studio-2019/git-experience/pull-git-changes-window-lrg.png":::
