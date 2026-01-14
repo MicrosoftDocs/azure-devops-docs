@@ -12,4 +12,4 @@ hide_comments: true
 
 # Large hosted agents
 
-We will gradually introduce large sizes for hosted agents, starting with macOS. Large agents will use a new pricing model as the uniform pricing model across Linux, Windows, and macOS-hosted agents is unable to support them. We are working on a solution.
+We will gradually introduce large sizes for hosted agents, starting with macOS. Large agents will have more resources and use a new pricing model instead of the current uniform pricing model.
