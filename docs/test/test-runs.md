@@ -78,7 +78,9 @@ To configure which columns display, do the following steps:
    :::image type="content" source="media/test-runs/column-options.png" alt-text="Screenshot showing the Column options dialog with available column selections.":::
 
 > [!TIP]
-> The Pipeline Run column applies to automated runs only, and relates to both Build and Release Pipelines.
+> The Pipeline Run column applies to _automated_ runs only, and relates to both Build and Release Pipelines.
+> When the Run is triggered via a Build Pipeline, then the Pipeline Run column refers to the Build name.
+> And when the Run is triggered via a Release Pipeline, then the Pipeline Run column refers to the Release name. 
 
 ## Test run states
 
@@ -168,6 +170,10 @@ To associate test results with bugs or other work items:
 
 2. Choose to create a new bug or link to an existing work item.
 3. Complete the linking process.
+
+> [!TIP]
+> Test results show only the work items directly related to them.
+> And test results do not show the items indirectly related to them via test methods. 
 
 ## Analyze detailed test results
 
