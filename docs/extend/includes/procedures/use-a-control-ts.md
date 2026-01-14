@@ -1,3 +1,7 @@
+---
+ms.topic: how-to
+---
+
 *to be converted to typescript* 
 
 1. In the body of the page, initialize the helper functions.

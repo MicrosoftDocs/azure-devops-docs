@@ -1,3 +1,7 @@
+---
+ms.topic: how-to
+---
+
 Once your extension is packaged, you can upload it to the Marketplace under a publisher. The `publisher` identifier specified in your [extension's manifest file](../../develop/manifest.md) must match the identifier of the publisher the extension is uploaded under.
 
 1. From the [management portal](https://aka.ms/vsmarketplace-manage), select your publisher from the drop-down menu at the top of the page.

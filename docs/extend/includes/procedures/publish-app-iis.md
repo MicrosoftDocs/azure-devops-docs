@@ -1,3 +1,7 @@
+---
+ms.topic: how-to
+---
+
 1. If you haven't already, install IIS.
 
 2. Run Visual Studio as administrator.

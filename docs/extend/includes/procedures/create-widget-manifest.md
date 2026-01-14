@@ -1,3 +1,7 @@
+---
+ms.topic: concept-article
+---
+
 > To take advantage of any new features that are added to the widget sdk after TFS 2015 Update 3,
 > please make sure to include the `ms.vss-dashboards-web.widget-sdk-version-2` demand in your manifest.
 > ```json

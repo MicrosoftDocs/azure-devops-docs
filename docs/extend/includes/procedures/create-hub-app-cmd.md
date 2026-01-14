@@ -1,3 +1,7 @@
+---
+ms.topic: how-to
+---
+
 1. Create a web app that has the page (```hello-world.html```) that you want to display.
 
 	```html

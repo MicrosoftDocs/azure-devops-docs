@@ -1,3 +1,7 @@
+---
+ms.topic: how-to
+---
+
 1. Get the Client SDK `SDK.js` file and add it to your web app. Place it in the `home/sdk/scripts` folder.
 	1. Use the 'npm install' command to retrieve the SDK: `npm install azure-devops-extension-sdk`. 
 	2. To learn more about the SDK, visit the [Client SDK GitHub Page](https://github.com/microsoft/azure-devops-extension-sdk).

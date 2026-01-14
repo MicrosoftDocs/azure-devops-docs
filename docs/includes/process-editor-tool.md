@@ -3,7 +3,8 @@ title: Process Editor Tool
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
-ms.date: 10/08/2024 
+ms.date: 10/08/2024
+ms.topic: concept-article
 ---
  
 - **Visual Studio 2019 & 2022:** As of now, there's no specific Process Template Editor extension available. But, you can still customize process templates using other tools such as any text editor or XML editor. You can also use the Azure DevOps web portal for certain customizations, especially for inherited processes.
