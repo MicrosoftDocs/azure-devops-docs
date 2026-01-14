@@ -249,7 +249,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Configure target branches for pull requests</td><td>Repos</td><td>Azure DevOps Server</td></tr>
     <td>Support mermaid diagrams in markdown file preview</td><td>Repos</td><td>Azure DevOps Server</td></tr>
     <td>Ubuntu 24.04 on Azure Pipelines hosted agents</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Use Workload identity federation in Azure integration tests</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use Workload identity federation in Azure integration tests</td><td>Pipelines</td><td>N/A</td></tr>
     <td>New Azure service connection creation experience with improved Managed identity support</td><td>Pipelines</td><td>Future</td></tr>
     <td>Run children stages when parent stage fails</td><td>Pipelines</td><td>Future</td></tr>
     <td>Authentication to Azure Artifacts using a public feed and Cargo</td><td>Artifacts</td><td>N/A</td></tr>
@@ -300,7 +300,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New authentication format for Azure DevOps personal access tokens available</td><td>General</td><td>Future</td></tr>
     <td>Automated self-hosted agent install for code scanning bits in Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>AzureFileCopy, AzurePowerShell, and SqlAzureDacpacDeployment tasks use Az modules only</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Use Workload identity federation for container jobs, resources, and tasks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use Workload identity federation for container jobs, resources, and tasks</td><td>Pipelines</td><td>N/A</td></tr>
 <tr>
     <td rowspan="9"><a href="2024/sprint-240-update.md" data-raw-source="[14 June 2024](2024/sprint-240-update.md)"> 14 June  2024</a></td>
     <td>Security overview API documentation now available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
@@ -353,7 +353,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Linked Azure subscription required for GitHub Advanced Security for Azure DevOps enablement</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>    
     <td>New Boards Hub Improvements</td><td>Boards</td><td>Future</td></tr>
     <td>Development and Deployment Controls</td><td>Boards</td><td>2022.2</td></tr>
-    <td>Workload identity federation for Azure Resource Manager service connections is now generally available</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload identity federation for Azure Resource Manager service connections is now generally available</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Out-of-band installation of Node 6 task runner</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Deferred approval</td><td>Pipelines</td><td>Future</td></tr>
     <td>Sequencing approvals and checks</td><td>Pipelines</td><td>Future</td></tr>
@@ -416,7 +416,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td rowspan="8"><a href="2023/sprint-227-update.md" data-raw-source="[14 September 2023](2023/sprint-227-update.md)"> 14 September 2023</a></td>
     <td>Limits for area and iteration paths</td><td>Boards</td><td>2022.2</td></tr>
     <td>Pipeline agents can be registered using Azure Active Directory instead of a PAT</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Workload identity federation for Azure Pipelines (public preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload identity federation for Azure Pipelines (public preview)</td><td>Pipelines</td><td>N/A</td></tr>
     <td>REST APIs for Environments</td><td>Pipelines</td><td>Future</td></tr>
     <td>Prevent Unintended Pipeline Runs</td><td>Pipelines</td><td>2022.2</td></tr>
     <td>Build GitHub Repositories Securely by Default</td><td>Pipelines</td><td>Future</td><tr>   
