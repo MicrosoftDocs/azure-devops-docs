@@ -30,7 +30,7 @@ A deployment group installs a deployment agent on each target server in the grou
 
 This section guides you through setting up your Azure resources by using an Azure Resource Manger template. It provisions six virtual machine (VM) web servers with IIS configured, a SQL Server VM (database server), an Azure load balancer, and all necessary network connections.
 
-1. Select the [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FramiMSFT%2FDeploymentTemplate%2Fmain%2Fazurewebdeploy.json) button to initiate the deployment of your resources in Azure.
+1. Select the [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FramiMSFT%2FDeploymentTemplate%2Fmain%2Fazurewebdeploy.json) button to start the deployment of your resources in Azure.
 
 1. Fill in the required information, and then select **Review + create**.
 
@@ -101,7 +101,7 @@ Use the following steps to configure each job.
 
 1. This task will run on virtual machines in Azure and must be able to connect back to the pipeline to complete the deployment group requirements. To secure the connection, you need to set up a service connection by using the PAT that you created earlier. Scroll down within the same task, and select **New** under **Azure Pipelines service connection**.
 
-1. On the **New service connection** pane, enter the **Connection URL** value for your Azure DevOps organization: `https://dev.azure.com/organizationName`. Paste in the **Personal Access Token** value that you created earlier, specify a **Service connection name** value, and select the **Grant access permission to all pipelines** checkbox. When you finish, select **Verify and save**.
+1. On the **New service connection** pane, enter the **Connection URL** value for your Azure DevOps organization: `https://dev.azure.com/organizationName`. Paste in the **Personal Access Token** value that you created earlier, specify a **Service Connection Name** value, and select the **Grant access permission to all pipelines** checkbox. When you finish, select **Verify and save**.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-groups-release-pipeline-deployment-task-service-connection.png" alt-text="Screenshot that shows how to configure a new service connection for a deployment task.":::
 
@@ -115,11 +115,11 @@ Use the following steps to configure each job.
 
    This job executes tasks on the machines defined in the deployment group. This job uses the **SQL-Svr-DB** tag to deploy to a subset of targets in the deployment group.
 
-   In the **Deployment Group** dropdown list, select the **Release** deployment group that you created earlier.
+   In the **Deployment group** dropdown list, select the **Release** deployment group that you created earlier.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-phase-setup.png" alt-text="Screenshot that shows how to configure a job for the deployment group phase.":::
 
-1. Select the **IIS Deployment phase** job. This job uses the **WebSrv** tag to deploy the web application to a subset of the web servers. In the dropdown list, select the **Deployment Group** value that you created earlier.
+1. Select the **IIS Deployment phase** job. This job uses the **WebSrv** tag to deploy the web application to a subset of the web servers. In the dropdown list, select the **Deployment group** value that you created earlier.
 
 1. The **Disconnect Azure Network Load Balancer** and **Connect Azure Network Load Balancer** tasks are deprecated. You can disable them for now by right-clicking the tasks and selecting **Disable select task(s)**.
 
@@ -135,7 +135,7 @@ Use the following steps to configure each job.
     | `DefaultConnectionString` | `Data Source=[YOUR_DNS_NAME];Initial Catalog=PartsUnlimited-Dev;User ID=xxxxxxxx;Password=xxxxxxxx;MultipleActiveResultSets=False;Connection Timeout=30;` |
     | `ServerName` | `localhost` |
 
-1. Select **Save**, add comment if you want, and then select **Ok**.
+1. Select **Save**, add a comment if you want, and then select **Ok**.
 
 > [!TIP]
 > If you receive an error that the `DefaultConnectionString` variable must be saved as a secret, select the padlock icon next to its value to protect it.
@@ -150,7 +150,7 @@ Use the following steps to run your pipeline, generate a pipeline artifact, and 
 
 1. In your Azure DevOps project, select **Pipeline**, and then select the **Deployment Groups** build pipeline.
 
-1. Select **Run pipeline**. On the **Run pipeline** pane, select your **Agent specification** value, and then select **Run**.
+1. Select **Run pipeline**. On the **Run pipeline** pane, select your **Agent Specification** value, and then select **Run**.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-agent-specification-run.png" alt-text="Screenshot that shows how to configure a pipeline run.":::
 
@@ -158,11 +158,13 @@ Use the following steps to run your pipeline, generate a pipeline artifact, and 
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-pipeline-artifact.png" alt-text="Screenshot that shows a generated pipeline artifact.":::
 
-1. Go to **Pipelines** > **Release**, select your release definition, and then select **Create release** to start the deployment pipeline.
+1. Go to **Pipelines** > **Release**, select your release definition. Then select **Create release** to start the deployment pipeline.
+
+1. On the **Create a new release** pane, select **Create**.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-create-release.png" alt-text="Screenshot that shows how to create a new release.":::
 
-1. Select **Create**, and then select the pipeline run to open the overview. Your pipeline should have a status of **In progress**. Select the stage to view the detailed deployment logs.
+1. Select the pipeline run to open the overview. Your pipeline should have a status of **In progress**. Select the stage to view the detailed deployment logs.
 
     :::image type="content" source="media/deploying-azure-vms-deployment-groups/deployment-group-release-overview.png" alt-text="Screenshot that shows a release pipeline overview.":::
 
@@ -187,7 +189,7 @@ If you encounter either of these errors, follow these steps:
     sqlcmd -S <server-name> -U <username> -P <password> -Q "SELECT name FROM sys.databases"
     ```
 
-    If your database is not present in the list, you can create a new one by using the following command:
+    If your database isn't in the list, you can create a new one by using the following command:
 
     ```
     sqlcmd -S <server-name> -U <username> -P <password> -Q "CREATE DATABASE [YourDatabaseName]"

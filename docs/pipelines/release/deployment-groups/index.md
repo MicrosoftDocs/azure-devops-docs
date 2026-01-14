@@ -36,7 +36,7 @@ Deployment groups are available only in classic release pipelines.
 
 1. On the **Deployment groups** pane, select **New**. If this is your first deployment group, select **Add a deployment group**.
 
-1. Enter a **Deployment group name**, and then select **Create**.
+1. Enter a **Deployment group name** value, and then select **Create**.
 
 1. On the pane that appears, select **Windows** or **Linux** for **Type of target to register**. This action generates a registration script.
 

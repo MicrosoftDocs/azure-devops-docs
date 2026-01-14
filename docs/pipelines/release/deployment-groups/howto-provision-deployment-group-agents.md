@@ -36,7 +36,7 @@ When you create a deployment group, a script is generated. You can run the scrip
 
 To install the agent by using the generated registration script:
 
-1. From your Azure DevOps project, select **Pipelines** > **Deployment groups**.
+1. In your Azure DevOps project, select **Pipelines** > **Deployment groups**.
 
 1. On the **Deployment groups** pane, select **New**, or select **Add a deployment group** if this deployment group is the first one in the project.
 
@@ -75,7 +75,7 @@ If you use Azure VMs as your deployment machines, you can install the Azure Pipe
 
 To install the agent by using the extension, first create the deployment group:
 
-1. From your Azure DevOps project, select **Pipelines** > **Deployment groups**.
+1. In your Azure DevOps project, select **Pipelines** > **Deployment groups**.
 
 1. On the **Deployment groups** pane, select **New**, or select **Add a deployment group** if this deployment group is the first one in the project.
 
@@ -112,7 +112,7 @@ Alternatively, you can use the advanced deployment options of the Azure Resource
 
 First, create the deployment group:
 
-1. From your Azure DevOps project, select **Pipelines** > **Deployment groups**.
+1. In your Azure DevOps project, select **Pipelines** > **Deployment groups**.
 
 1. On the **Deployment groups** screen, select **New**, or select **Add a deployment group** if this deployment group is the first one in the project.
 
@@ -172,7 +172,7 @@ To register and install the deployment agent by using an ARM template, add a `re
 
 In the preceding code:
 
-- `VSTSAccountName` is the required Azure Pipelines organization to use. For example, if your Azure DevOps URL is `https://dev.azure.com/contoso`, just specify `contoso`.
+- `VSTSAccountName` is the required Azure Pipelines organization to use. For example, if your Azure DevOps URL is `https://dev.azure.com/contoso`, specify `contoso`.
 - `TeamProject` is the required project that has the deployment group defined in it.
 - `DeploymentGroup` is the required deployment group to register the agent to.
 - `AgentName` is an optional agent name. If it's not specified, the agent name is the VM name with `-DG` appended.
@@ -182,8 +182,6 @@ In the preceding code:
 For more information about ARM templates, see [Define resources in Azure Resource Manager templates](/azure/templates/).
 
 ### Use the template in a release pipeline
-
-Create a release pipeline:
 
 1. Select **Pipelines** > **Releases**, and then select **New** > **New release pipeline**.
 
@@ -195,11 +193,9 @@ Create a release pipeline:
 
 1. Save the release pipeline, and create a release from the pipeline to install the agents.
 
-### Install agents by using the advanced deployment options
+### Install the agent by using advanced deployment options
 
-Alternatively, you can install the agent by using advanced deployment options:
-
-1. Follow the preceding steps, but on the **Azure resource group deployment** settings pane, expand the **Advanced deployment options for virtual machines** section.
+1. Follow the preceding steps for creating a pipeline, but on the **Azure resource group deployment** settings pane, expand the **Advanced deployment options for virtual machines** section.
 
 1. Under **Enable prerequisites**, select **Configure with Deployment Group agent**.
 
