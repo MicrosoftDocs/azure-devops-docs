@@ -3,7 +3,7 @@ title: Remove Node 6 and Node 10 runners from Microsoft-hosted agents
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Remove Node 6 and Node 10 runners from Microsoft-hosted agents
