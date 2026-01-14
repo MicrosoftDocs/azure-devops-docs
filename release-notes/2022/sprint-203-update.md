@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 5/6/2022
 description: Query by Parent Id is now available in private preview.  
+ms.topic: release-notes
 ---
 # Query by Parent Id private preview
 

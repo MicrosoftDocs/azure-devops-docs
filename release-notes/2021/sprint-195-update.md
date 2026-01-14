@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/16/2021
 description: With this update, We are excited to announce improvements to Copy Dashboard.
+ms.topic: release-notes
 ---
 
 # Improvements to Copy Dashboard 

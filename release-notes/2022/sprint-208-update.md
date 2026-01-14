@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 8/12/2022
 description: With this update, we are announcing updates to hosted pipelines images.  
+ms.topic: release-notes
 ---
 # Updates to hosted pipelines images
 
