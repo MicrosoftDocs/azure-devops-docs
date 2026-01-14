@@ -3,7 +3,7 @@ title: Advanced Security events streamed to Azure DevOps audit log
 author: laurajjiang
 ms.author: laurajiang
 ms.date: 02/06/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Advanced Security events streamed to Azure DevOps audit log

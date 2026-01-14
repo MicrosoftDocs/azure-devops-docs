@@ -3,7 +3,7 @@ title: Alert dismissal information displayed in alert detail view
 author: laurajjiang
 ms.author: laurajiang
 ms.date: 07/21/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Alert dismissal information displayed in alert detail view

@@ -3,7 +3,7 @@ title: Work Item integration with GitHub Copilot coding agent
 author: danhellem
 ms.author: dahellem
 ms.date: 07/14/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Work Item integration with GitHub Copilot coding agent

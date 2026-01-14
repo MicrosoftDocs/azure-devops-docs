@@ -3,7 +3,7 @@ title: Spot Virtual Machines instances
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 04/21/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Spot Virtual Machines instances
