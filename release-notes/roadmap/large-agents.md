@@ -1,5 +1,5 @@
 ---
-title: Hosted macOS agents on Apple Silicon
+title: Large hosted agents
 author: geekzter
 ms.author: ericvan
 ms.date: 11/22/2024
