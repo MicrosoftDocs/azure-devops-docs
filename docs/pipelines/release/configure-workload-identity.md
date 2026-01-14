@@ -24,7 +24,7 @@ For authentication, you can use either a managed identity or an app registration
 
 The following diagram illustrates the high-level steps to configure a workload identity service connection:
 
-:::image type="content" source="media/workload-identity-options.png" alt-text="Diagram displaying the two optional paths when configuring workload identity" lightbox="media/workload-identity-options.png":::
+:::image type="content" source="media/workload-identity-options.png" alt-text="Diagram displaying the two optional paths when configuring workload identity." lightbox="media/workload-identity-options.png":::
 
 ## Set a workload identity service connection 
 
