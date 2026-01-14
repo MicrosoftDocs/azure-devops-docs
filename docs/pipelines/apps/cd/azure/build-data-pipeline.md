@@ -200,7 +200,7 @@ Select a default region to make it easier to run commands. After you specify the
 1. Upload the [sample.csv](https://github.com/MicrosoftDocs/azure-devops-docs-samples/raw/main/azure-data-pipeline/data/sample.csv) file.
 
 
-## Set up Key Vault
+## Set up Azure Key Vault
 
 You use Azure Key Vault to store all connection information for your Azure services.
 
@@ -213,14 +213,14 @@ You use Azure Key Vault to store all connection information for your Azure servi
 1. Open **Access keys**. 
 1. Copy the first key and connection string. 
 
-### Save values to Key Vault
+### Save values to key vault
 1. Create three secrets:
     
     * databricks-token: `your-databricks-pat`
     * StorageKey: `your-storage-key`    
     * StorageConnectString: `your-storage-connection`
 
-1. Run the following `az keyvault secret set` command to add secrets to your Key Vault.  
+1. Run the following `az keyvault secret set` command to add secrets to your key vault.  
    
     ```azurecli
     az keyvault secret set --vault-name "$keyVault" --name "databricks-token" --value "your-databricks-pat"
@@ -270,8 +270,8 @@ You use Azure Key Vault to store all connection information for your Azure servi
                                        "STORAGE_CONTAINER_NAME=rawdata"
    ```
 
-1. Create a second variable group named `keys-vg`. This group pulls data variables from Key Vault. 
-1. Select **Link secrets from an Azure key vault as variables**. For more information, see [Link a variable group to secrets in Azure Key Vault](../../../library/link-variable-groups-to-key-vaults.md). 
+1. Create a second variable group named `keys-vg`. This group pulls data variables from key Vvult. 
+1. Select **Link secrets from an Azure Key Vault as variables**. For more information, see [Link a variable group to secrets in Azure Key Vault](../../../library/link-variable-groups-to-key-vaults.md). 
 1. Authorize the Azure subscription. 
 1. Choose all of the available secrets to add as variables (`databricks-token`,`StorageConnectString`,`StorageKey`).
 
@@ -314,9 +314,9 @@ Follow the steps in the next sections to set up Azure Databricks and Azure Data 
 1. Select **Add** to add your access policies.
 1. Repeat these steps to add an access policy for the test Azure Data Factory. 
 
-### Update the Key Vault linked service in Azure Data Factory
+### Update the key vault linked service in Azure Data Factory
 1. Go to **Manage** > **Linked services**.
-1. Update the Key Vault to connect to your subscription. 
+1. Update the key vault to connect to your subscription. 
 
 ### Update the storage linked service in Azure Data Factory
 1. Go to **Manage** > **Linked services**.
