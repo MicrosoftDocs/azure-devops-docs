@@ -183,6 +183,8 @@ For more information about ARM templates, see [Define resources in Azure Resourc
 
 ### Use the template in a release pipeline
 
+Create a release pipeline:
+
 1. Select **Pipelines** > **Releases**, and then select **New** > **New release pipeline**.
 
 1. On the **Releases** tab, create a release pipeline with a stage that contains the **ARM template deployment** task.
@@ -195,7 +197,7 @@ For more information about ARM templates, see [Define resources in Azure Resourc
 
 ### Install the agent by using advanced deployment options
 
-1. Follow the preceding steps for creating a pipeline, but on the **Azure resource group deployment** settings pane, expand the **Advanced deployment options for virtual machines** section.
+Alternatively, you can install the agent by using advanced deployment options. Follow the preceding steps for creating a release pipeline, but on the **Azure resource group deployment** settings pane, expand the **Advanced deployment options for virtual machines** section. Then:
 
 1. Under **Enable prerequisites**, select **Configure with Deployment Group agent**.
 
