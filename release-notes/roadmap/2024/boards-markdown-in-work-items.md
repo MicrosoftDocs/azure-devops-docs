@@ -3,7 +3,7 @@ title: Markdown support in work items
 author: danhellem
 ms.author: dahellem
 ms.date: 09/17/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Markdown support in work items

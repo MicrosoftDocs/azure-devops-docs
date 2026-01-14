@@ -3,7 +3,7 @@ title: Automatically Remove Branch Links from Work Items When GitHub Branches Ar
 author: danhellem
 ms.author: dahellem
 ms.date: 2/4/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Automatically remove branch links when their corresponding GitHub branches are deleted

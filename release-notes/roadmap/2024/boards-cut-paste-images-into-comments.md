@@ -3,7 +3,7 @@ title: Improve the experience of adding images to comments
 author: danhellem
 ms.author: dahellem
 ms.date: 09/4/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Improve the experience of adding images to comments

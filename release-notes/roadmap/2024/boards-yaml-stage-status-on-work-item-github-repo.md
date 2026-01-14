@@ -3,7 +3,7 @@ title: Report stage status to work item when using a YAML release pipeline with 
 author: danhellem
 ms.author: dahellem
 ms.date: 10/31/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Report stage status to work item when using a YAML release pipeline with GitHub repository

@@ -3,7 +3,7 @@ title: Permanently delete work item attachments
 author: danhellem
 ms.author: dahellem
 ms.date: 6/5/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Permanently delete work item attachments

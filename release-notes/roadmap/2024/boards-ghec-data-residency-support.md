@@ -3,7 +3,7 @@ title: Support for GitHub Enterprise Cloud with data residency
 author: danhellem
 ms.author: dahellem
 ms.date: 10/22/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Support for GitHub Enterprise Cloud with data residency
