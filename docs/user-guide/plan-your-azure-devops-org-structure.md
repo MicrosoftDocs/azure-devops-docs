@@ -328,7 +328,7 @@ For more information on managing users, see [Manage users](../organizations/acco
 
 ### Map organizations to business units
 
-Each business unit within your company gets its own organization in Azure DevOps, along with its own Microsoft Entra tenant. You can [set up projects](#whats-a-project) within those individual organizations, as required, based on teams or ongoing work.
+Each business unit within your company gets its own organization in Azure DevOps, along with its own Microsoft Entra tenant. You can [set up projects](#understanding-projects) within those individual organizations, as required, based on teams or ongoing work.
 
 For a larger company, you can create multiple organizations using different user accounts (most likely Microsoft Entra accounts). Consider what groups and users share strategies and work, and group them into specific organizations. 
 

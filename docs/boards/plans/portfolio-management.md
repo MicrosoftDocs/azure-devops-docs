@@ -52,7 +52,7 @@ The hierarchical team and backlog structure lets autonomous teams take ownership
 To visualize ownership and progress involving other feature teams:
 
 - [Configure your backlog to show parent epics or features owned by other teams](../backlogs/backlogs-overview.md#view-backlog-items-and-parent-items-owned-by-other-teams).
-- [Create queries to include work items from other teams](../backlogs/filter-backlogs-boards-plans.md#filter-based-on-a-field). Add these queries to your team's dashboard for better visibility.
+- [Create queries to include work items from other teams](../backlogs/filter-backlogs-boards-plans.md#filter-by-work-item-fields). Add these queries to your team's dashboard for better visibility.
 - [Use the Delivery Plans feature](review-team-plans.md) in Azure Boards to get cross-team visibility into work items across multiple teams. You can see all backlog items and features, even if they belong to different teams.
 
 > [!TIP]
