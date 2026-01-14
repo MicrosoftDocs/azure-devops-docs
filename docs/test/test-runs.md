@@ -171,16 +171,12 @@ To associate test results with bugs or other work items:
 2. Choose to create a new bug or link to an existing work item.
 3. Complete the linking process.
 
-> [!TIP]
-> Test results show only the work items directly related to them.
-> And test results do not show the items indirectly related to them via test methods. 
-
 ## Analyze detailed test results
 
 Select any test case to view detailed results including:
 
 - **Test result summary**: Overview of the test execution
-- **Linked work items**: Associated bugs and other work items; select the "+ Add" button of the section to relate anything needed!  
+- **Linked work items**: Associated bugs and other work items; select the "+ Add" button of the section to relate anything needed! Note that test results show automatically and by default the work items directly related to them, and do not show the items indirectly related to them coming via test methods.
 - **Test steps**: Provides detailed step-by-step results, including outcomes and comments. Enable the "Show images" option to preview the captured screenshots inline.
 - **Analysis information**: Post-execution analysis and next actions
 - **Attachments**: All test result-specific attachments
