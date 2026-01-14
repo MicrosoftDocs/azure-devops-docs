@@ -103,13 +103,13 @@ You can add secrets to a variable group or link secrets from an existing [Azure 
 
 Variable groups follow the [library security model](../library/index.md#library-security).
 
-### Link secrets from a Key Vault
+### Link secrets from an Azure Key Vault
  
 You can create variable groups and link them to an existing Key Vault, so you can map to secrets stored in the key vault. Only the secret names are mapped to the variable group, not the secret values. The pipeline runs that link to the variable group and fetches the latest secret values from the vault. For more information, see [Link a variable group to secrets in Azure Key Vault](../library/link-variable-groups-to-key-vaults.md).
 
-## Use the Key Vault task
+## Use the Azure Key Vault task
 
-Use the Key Vault task to include secrets in your pipeline. By using this task, your pipeline can connect to your Key Vault and retrieve secrets to use as pipeline variables.
+Use the Azure Key Vault task to include secrets in your pipeline. By using this task, your pipeline can connect to your Key Vault and retrieve secrets to use as pipeline variables.
 
 1. In the pipeline editor, select **Show assistant** to expand the assistant panel. 
 
