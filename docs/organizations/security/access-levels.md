@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/10/2025
+ms.date: 01/14/2026
 ---
 
 # About access levels
@@ -498,14 +498,14 @@ Advanced access gives users all the Basic features, plus [web-based test case ma
 
 You can manage access levels programmatically using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType`, `licensingSource`, and `msdnLicenseType` parameters.
 
-| Access level (user interface)<br/>licenseDisplayName  | accountLicenseType | licensingSource | msdnLicenseType | 
-| ------------------------------------------------------|--------------------|----------------|------------------|
-| Basic                                                 | express            | account        | none             | 
-| Basic + Test Plans                                    | advanced           | account        | none             | 
-| Visual Studio Subscriber                              | none               | msdn           | eligible         | 
-| Stakeholder                                           | stakeholder        | account        | none             | 
-| Visual Studio Enterprise subscription                 | none               | msdn           | enterprise|
-| GitHub Enterprise                                     | express   | account                  |enterprise       | 
+| Access level (user interface)<br/>licenseDisplayName  | accountLicenseType | licensingSource | msdnLicenseType | gitHubLicenseType |
+| ------------------------------------------------------|--------------------|----------------|------------------|-------------------|
+| Basic                                                 | express            | account        | none             | none              |
+| Basic + Test Plans                                    | advanced           | account        | none             | none              |
+| Visual Studio Subscriber                              | none               | msdn           | eligible         | none              |
+| Stakeholder                                           | stakeholder        | account        | none             | none              |
+| Visual Studio Enterprise subscription                 | none               | msdn           | enterprise       | none              |
+| GitHub Enterprise                                     | none            | gitHub        | none       | enterprise        | 
 
  > [!NOTE]   
  > The `earlyAdopter` accountLicenseType is an internal value used solely by Microsoft.  
