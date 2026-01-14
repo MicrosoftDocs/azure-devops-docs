@@ -60,6 +60,12 @@ When you navigate into an alert, a detailed alert view appears and reveals more 
 
 ![Screenshot showing details for a secret scanning alert](./media/secret-scanning-detail.png)
 
+
+> [!NOTE]
+> The image above contains a value formatted to resemble a personal access token (PAT). This value is not a valid PAT and is used for illustrative purposes only.
+> GitHub Advanced Security for Azure DevOps performs validity checks on detected secrets. While the tool may initially detect values that match the expected format of a PAT, it performs additional validation to verify authenticity. If a token fails this validation check (that is, is not an actual valid PAT), secret scanning will recognize it as invalid and will not trigger a detection alert. This helps reduce false positives and ensures that only actual, valid secrets generate alerts.
+
+
 | Section  | Explanation  |
 |---|---|
 |  Location | The **Locations** section details the paths where secret scanning discovered the leaked credential. There might be multiple locations or multiple commits in history that contain the leaked credential. All of these locations and commits are displayed under the **Locations** with a direct link to the code snippet and commit it was identified in. |
