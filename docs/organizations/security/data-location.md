@@ -2,7 +2,7 @@
 title: Data locations for Azure DevOps 
 titleSuffix: Azure DevOps Services
 description: Learn where your data is stored for Azure DevOps.
-ms.topic: article
+ms.topic: concept-article
 ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
