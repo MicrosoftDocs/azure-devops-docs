@@ -266,7 +266,8 @@ Choose between Git and Team Foundation Version Control (TFVC):
 **Multiple projects with dedicated repositories:**  
 - **Best for**: Products with independent schedules or distinct requirements
 - **Benefits**: Independent customization, separate governance, clear boundaries
-- **Note**: Git repository portability allows easy migration between projects with full commit history
+> [!NOTE]
+> Git repository portability allows easy migration between projects with full commit history
 
 **Decision factors for repository organization:**
 - **Code dependencies**: Place independently deployable products/services in separate repos

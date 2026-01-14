@@ -195,9 +195,9 @@ When you add a state:
 
 ### Post-implementation validation
 
-1. **Test state transitions**: Verify that work items can move to and from the new state as expected
-1. **Check reporting effects**: Ensure queries, dashboards, and reports function correctly with the new state
-1. **Monitor adoption**: Track how teams use the new state and gather feedback for optimization
+- **Test state transitions**: Verify that work items can move to and from the new state as expected
+- **Check reporting effects**: Ensure queries, dashboards, and reports function correctly with the new state
+- **Monitor adoption**: Track how teams use the new state and gather feedback for optimization
 
 > [!NOTE]
 > Teams using boards must update their column settings when adding states to work item types associated with backlog levels. See the [Effects management section](#manage-effects-of-workflow-changes) for comprehensive change management guidance.
@@ -294,10 +294,10 @@ When you hide or remove a state:
 
 Before hiding or removing a state:
 
-1. **Identify affected items**: Create a query to find all work items currently in the state you plan to hide or remove
-1. **Plan transitions**: Determine which valid state these work items should move to
-1. **Bulk update**: Use [bulk edit](../../../boards/backlogs/bulk-modify-work-items.md) to move all affected work items to a valid state
-1. **Verify changes**: Confirm all work items were successfully updated
+- **Identify affected items**: Create a query to find all work items currently in the state you plan to hide or remove
+- **Plan transitions**: Determine which valid state these work items should move to
+- **Bulk update**: Use [bulk edit](../../../boards/backlogs/bulk-modify-work-items.md) to move all affected work items to a valid state
+- **Verify changes**: Confirm all work items were successfully updated
 
 ### Recovery options
 

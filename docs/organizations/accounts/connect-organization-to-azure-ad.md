@@ -51,30 +51,30 @@ Follow these steps to establish the connection between your Azure DevOps organiz
 
 1. **Access organization settings**: Sign in to your organization at `https://dev.azure.com/{yourorganization}` and select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+    :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing highlighted Organization settings button.":::
 
 1. **Initiate directory connection**: In the organization settings, select **Microsoft Entra ID** from the left navigation, then select **Connect directory** to begin the connection process.
 
-   ![Select Connect directory to connect your organization to Microsoft Entra ID](media/shared/select-azure-ad-connect-directory.png)
+   :::image type="content" source="media/shared/select-azure-ad-connect-directory.png" alt-text="Select Connect directory to connect your organization to Microsoft Entra ID":::
 
 1. **Configure directory connection**: From the dropdown menu, select your target Microsoft Entra ID directory, then select **Connect** to establish the connection.
 
-   ![Select your Microsoft Entra ID, and then Connect](media/shared/select-directory-connect.png)
+   :::image type="content" source="media/shared/select-directory-connect.png" alt-text="Select your Microsoft Entra ID, and then Connect":::
    
    > [!NOTE]
    > If your directory doesn't appear in the dropdown, contact your Microsoft Entra administrator to request membership in the Microsoft Entra ID.
 
 1. **Complete the connection**: When prompted, select **Sign out** to finalize the connection.
 
-   ![Connect success dialog - select Sign out](media/shared/connect-success-dialog.png)
+   :::image type="content" source="media/shared/connect-success-dialog.png" alt-text="Connect success dialog - select Sign out":::
 
    Your organization is now connected to your Microsoft Entra ID.
 
 1. **Resolve user mapping**: Sign back in to Azure DevOps with your Microsoft Entra ID credentials. Navigate to **Organization settings** > **Users** to review user status. For any disconnected members, select **Resolve** to map them to their Microsoft Entra identities or invite them as guests.
 
-   ![Select Resolve to invite unmapped users](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
+   :::image type="content" source="media/shared/azure-ad-select-resolve-for-disconnected-users.png" alt-text="Select Resolve to invite unmapped users":::
 
-   ![Mapping disconnected users](media/shared/resolve-disconnected-users.png)
+   :::image type="content" source="media/shared/resolve-disconnected-users.png" alt-text="Mapping disconnected users":::
 
 > [!TIP]
 > For detailed guidance on resolving user mapping issues, see the [connection FAQs](./faq-azure-access.yml#faq-connect).
@@ -87,23 +87,29 @@ Follow these steps to establish the connection between your Azure DevOps organiz
 After successfully connecting your organization to Microsoft Entra ID, verify these key aspects:
 
 ### Security and access validation
-- [ ] **Authentication testing**: Sign out completely, then open a private browser session and sign in to your organization using your Microsoft Entra ID credentials
-- [ ] **Access verification**: Confirm you can access your organization at `https://dev.azure.com/{yourorganization}` with your work credentials
-- [ ] **Single sign-on functionality**: Users can sign in with their existing work credentials
-- [ ] **User mapping completeness**: All active users are properly mapped to Microsoft Entra identities
-- [ ] **Permissions integrity**: User roles and permissions remain intact after connection
-- [ ] **External user access**: Guest users can still access resources as intended
+
+> [!div class="checklist"]
+> * **Authentication testing**: Sign out completely, then open a private browser session and sign in to your organization using your Microsoft Entra ID credentials
+> * **Access verification**: Confirm you can access your organization at `https://dev.azure.com/{yourorganization}` with your work credentials
+> * **Single sign-on functionality**: Users can sign in with their existing work credentials
+> * **User mapping completeness**: All active users are properly mapped to Microsoft Entra identities
+> * **Permissions integrity**: User roles and permissions remain intact after connection
+> * **External user access**: Guest users can still access resources as intended
 
 ### Operational verification
-- [ ] **Project access**: Teams can access their projects and repositories without issues
-- [ ] **Service connections**: Build and release pipelines function correctly
-- [ ] **Integrations**: Non-microsoft tools and extensions continue working
-- [ ] **SSH access**: Users recreated SSH keys if needed
+
+> [!div class="checklist"]
+> * **Project access**: Teams can access their projects and repositories without issues
+> * **Service connections**: Build and release pipelines function correctly
+> * **Integrations**: Non-microsoft tools and extensions continue working
+> * **SSH access**: Users recreated SSH keys if needed
 
 ### Administrative monitoring
-- [ ] **Audit logs**: Review connection events in Microsoft Entra ID audit log
-- [ ] **User feedback**: Monitor for any authentication or access issues
-- [ ] **Support requests**: Address any user questions or connection problems
+
+> [!div class="checklist"]
+> * **Audit logs**: Review connection events in Microsoft Entra ID audit log
+> * **User feedback**: Monitor for any authentication or access issues
+> * **Support requests**: Address any user questions or connection problems
 
 > [!TIP]
 > Keep communication channels open with your users for the first few days after connection to quickly address any issues.

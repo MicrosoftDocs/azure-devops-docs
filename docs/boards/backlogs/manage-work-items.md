@@ -218,23 +218,23 @@ Tailor work items to your team's specific processes and information requirements
 
 ### Work item template customization approaches
 
-**1. Work item templates (Team-level)**
-- **Purpose**: Create reusable templates with predefined field values
-- **Scope**: Team-specific customizations
-- **Benefits**: Standardize common work patterns, reduce manual entry
-- **Use cases**: Sprint planning templates, bug report templates, user story formats
+- **Work item templates (Team-level)**
+  - **Purpose**: Create reusable templates with predefined field values
+  - **Scope**: Team-specific customizations
+  - **Benefits**: Standardize common work patterns, reduce manual entry
+  - **Use cases**: Sprint planning templates, bug report templates, user story formats
 
-**2. Work item type customization (Project-level)**
-- **Purpose**: Modify work item types with custom fields, rules, and layouts
-- **Scope**: Project-wide customizations
-- **Benefits**: Capture domain-specific information, enforce process compliance
-- **Use cases**: Custom fields for compliance tracking, specialized workflows
+- **Work item type customization (Project-level)**
+  - **Purpose**: Modify work item types with custom fields, rules, and layouts
+  - **Scope**: Project-wide customizations
+  - **Benefits**: Capture domain-specific information, enforce process compliance
+  - **Use cases**: Custom fields for compliance tracking, specialized workflows
 
-**3. Process template inheritance (Organization-level)**
-- **Purpose**: Create organization-wide process standards
-- **Scope**: All projects using the custom process
-- **Benefits**: Consistent practices across teams, centralized governance
-- **Requirements**: Organization-level permissions
+- **Process template inheritance (Organization-level)**
+  - **Purpose**: Create organization-wide process standards
+  - **Scope**: All projects using the custom process
+  - **Benefits**: Consistent practices across teams, centralized governance
+  - **Requirements**: Organization-level permissions
 
 ### Customization resources
 - [Use work item templates](work-item-template.md)

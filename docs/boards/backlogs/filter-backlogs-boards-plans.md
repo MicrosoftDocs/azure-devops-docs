@@ -514,7 +514,7 @@ Filters are automatically saved and user-specific, providing a personalized expe
 - **Automatic saving**: Filter configurations are saved automatically without requiring manual action.
 - **User-specific**: Each team member maintains independent filter settings.
 - **Session persistence**: Settings remain active across browser sessions and refreshes.
-- **Cross-device sync*: Filter preferences synchronize across different devices when signed in.
+- **Cross-device sync**: Filter preferences synchronize across different devices when signed in.
 
 ### Important limitations
 - **No team defaults**: You can't configure default filters for other team members.
@@ -661,7 +661,8 @@ Filter a hierarchical backlog with **Show Parents** enabled to show work items c
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Backlog, Hierarchy, Filter using keyword search.](media/filter/filter-backlog-web-keyword.png)
 
-**Note**: Filtered results always display as a flat list, even with **Show Parents** enabled. 
+> [!NOTE]
+> Filtered results always display as a flat list, even with **Show Parents** enabled. 
 
 <a id="field-filter"></a>
 
@@ -703,7 +704,7 @@ To view work items assigned to specific team members:
 
 :::moniker range="<=azure-devops"
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of enable board, Filter on assignment field](media/filter-boards/filter-kb-filters-chosen-services.png)
+> ![Screenshot of enable board, Filter on assignment field.](media/filter-boards/filter-kb-filters-chosen-services.png)
 :::moniker-end
 
 This example filters for all items assigned to Jamal and Raisa, so you can see both users' work at the same time.
