@@ -5,7 +5,7 @@ ms.service: azure-devops-test-plans
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 01/07/2026
+ms.date: 01/14/2026
 monikers: 'azure-devops'
 ---
 
@@ -176,7 +176,7 @@ To associate test results with bugs or other work items:
 Select any test case to view detailed results including:
 
 - **Test result summary**: Overview of the test execution
-- **Linked work items**: Associated bugs and other work items; select the "+ Add" button of the section to relate anything needed! Note that test results show automatically and by default the work items directly related to them, and do not show the items indirectly related to them coming via test methods.
+- **Linked work items**: Associated bugs and other work items; select the "+ Add" button of the section to relate anything needed! By default, test results automatically display only the work items directly related to them, not those indirectly related via test methods.
 - **Test steps**: Provides detailed step-by-step results, including outcomes and comments. Enable the "Show images" option to preview the captured screenshots inline.
 - **Analysis information**: Post-execution analysis and next actions
 - **Attachments**: All test result-specific attachments
