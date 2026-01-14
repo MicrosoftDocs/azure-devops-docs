@@ -215,7 +215,7 @@ Alternatively, you can install the agent by using advanced deployment options:
 
    - **Copy Azure VM tags to agents**: Select this option to copy any tags already configured on the Azure VM to the corresponding deployment group agent.
 
-     By default, all [Azure tags](/azure/azure-resource-manager/resource-group-using-tags) are copied by using the `Key: Value` format; for example, `Role: Web`.
+     By default, all [Azure tags](/azure/azure-resource-manager/resource-group-using-tags) are copied by using the `Key: Value` format. An example is `Role: Web`.
 
 1. Save the pipeline, and create a release to install the agents.
 
@@ -223,23 +223,23 @@ Alternatively, you can install the agent by using advanced deployment options:
 
 There are some known issues with the Azure Pipelines Agent extension.
 
-### Oversize status file
+### Status file is too large
 
-This issue can occur on Windows VMs. The status file contains a JSON object that describes the current status of the extension. The object is a placeholder to list the operations performed so far.
+On Windows VMs, the status file contains a JSON object that describes the current status of the extension. The object is a placeholder to list the operations performed so far.
 
-Azure reads this status file and passes the status object as response to API requests. The file has a maximum allowed size. If the size exceeds the maximum, Azure can't read it completely and gives an error for the status.
+Azure reads this status file and passes the status object as a response to API requests. The file has a maximum allowed size. If the size exceeds the maximum, Azure can't read it completely and gives an error for the status.
 
-Even though the extension might install initially, every time the machine reboots, the extension performs some operations that append to the status file. If the machine reboots many times, the status file size can exceed the threshold. This situation causes the error `Handler Microsoft.VisualStudio.Services.TeamServicesAgent:1.27.0.2 status file 0.status size xxxxxx bytes is too big. Max Limit allowed: 131072 bytes`. Although extension installation might succeed, this error hides the actual state of the extension.
+Even though the extension might be installed initially, every time the machine restarts, the extension performs some operations that append to the status file. If the machine restarts many times, the size of the status file can exceed the threshold. This situation causes the error `Handler Microsoft.VisualStudio.Services.TeamServicesAgent:1.27.0.2 status file 0.status size xxxxxx bytes is too big. Max Limit allowed: 131072 bytes`. Although extension installation might succeed, this error hides the actual state of the extension.
 
-This machine reboot issue is fixed starting with version `1.27.0.2` for the Windows extension and `1.21.0.1` for the Linux extension. A reboot now adds nothing to the status file. However, if you had this issue with an earlier version of the extension and your extension was autoupdated to the fixed version, the issue can persist. Newer versions of the extension can still work with an earlier status file.
+This machine restart issue is fixed starting with version `1.27.0.2` for the Windows extension and `1.21.0.1` for the Linux extension. A restart now adds nothing to the status file. However, if you had this issue with an earlier version of the extension and your extension was automatically updated to the fixed version, the issue can persist. Newer versions of the extension can still work with an earlier status file.
 
-You could face this issue if you're using an earlier version of the extension with the flag to turn off minor version autoupdates, or if a large status file was carried from an earlier version to a fixed version. If so, you can solve the issue by uninstalling and reinstalling the extension. Uninstalling the extension cleans up the entire extension directory and creates a new status file for a fresh install of the latest version.
+You could face this issue if you're using an earlier version of the extension with the flag to turn off automatic updates for minor versions, or if a large status file was carried from an earlier version to a fixed version. If so, you can solve the issue by uninstalling and reinstalling the extension. Uninstalling the extension cleans up the entire extension directory and creates a new status file for a fresh installation of the latest version.
 
-### Custom data issue
+### Custom data causes problems when you switch OS versions
 
-Python 2 is deprecated, and the Azure Pipelines Agent extension works with Python 3. If you still use OS versions that don't have Python 3 installed by default, to run the extension you should either install Python 3 on the VM or switch to an OS version that has Python 3 installed by default. Otherwise, there can be confusion regarding the [custom data](/azure/virtual-machines/custom-data#linux) location on the VM when you switch OS versions.
+Python 2 is deprecated, and the Azure Pipelines Agent extension works with Python 3. If you still use OS versions that don't have Python 3 installed by default, to run the extension you should either install Python 3 on the VM or switch to an OS version that has Python 3 installed by default. Otherwise, the [custom data](/azure/virtual-machines/custom-data#linux) location on the VM might cause confusion when you switch OS versions.
 
-On Linux VMs, custom data copies to `/var/lib/waagent/ovf-env.xml` for earlier agent versions, and to `/var/lib/waagent/CustomData` for newer versions. If you hardcode only one of these two paths, you might face issues when switching OS versions because one of the paths doesn't exist on the new OS version, although the other path is present. To avoid breaking the VM provisioning, consider using both paths in the template so that if one fails, the other should succeed.
+On Linux VMs, custom data copies to `/var/lib/waagent/ovf-env.xml` for earlier agent versions, and to `/var/lib/waagent/CustomData` for newer versions. If you hard-code only one of these two paths, switching OS versions might cause problems because one of the paths doesn't exist on the new OS version, although the other path is present. To avoid breaking the VM provisioning, consider using both paths in the template so that if one fails, the other should succeed.
 
 [!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
 
