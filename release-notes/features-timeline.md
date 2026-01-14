@@ -453,7 +453,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="18"><strong>2025 Q4</strong></td>
+      <td rowspan="17"><strong>2025 Q4</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -475,10 +475,6 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/macos-agents-apple-silicon" data-raw-source="[Hosted macOS agents on Apple Silicon](/azure/devops/release-notes/roadmap/large-agents)">Large hosted agents</a></td>
-        <td>Pipelines</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/on-demand-execution" data-raw-source="[On-demand out of order execution of stages](/azure/devops/release-notes/roadmap/2025/on-demand-execution)">On-demand out of order execution of stages</a></td>
@@ -528,7 +524,7 @@ Below, you will find several investments that we plan to deliver as part of this
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement" data-raw-source="[Streamlining bulk enablement scenarios](/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement)">Streamlining bulk enablement scenarios</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="7"><strong>2026 Q1</strong></td>
+      <td rowspan="8"><strong>2026 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts" data-raw-source="[Organization-level alerts view in security overview](/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts)">Organization-level alerts view in security overview</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
@@ -554,6 +550,10 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/macos-agents-apple-silicon" data-raw-source="[Hosted macOS agents on Apple Silicon](/azure/devops/release-notes/roadmap/agents-apple-silicon)">Hosted macOS agents on Apple Silicon</a></td>
+        <td>Pipelines</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/macos-agents-apple-silicon" data-raw-source="[Hosted macOS agents on Apple Silicon](/azure/devops/release-notes/roadmap/large-agents)">Large hosted agents</a></td>
         <td>Pipelines</td>
       </tr>
       <td rowspan="19"><strong>Future</strong></td>
