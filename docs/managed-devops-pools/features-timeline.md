@@ -12,12 +12,6 @@ ms.topic: overview
 
 The following section describes new features in development for Managed DevOps Pools.
 
-* **Service Tag and new IPs**: Managed DevOps Pools control plane is going to add new IP outgoing addresses and is going to publish a service tag to provide a convenient mechanism to allow outbound traffic from Managed DevOps Pools. **Planned for November 2025.**
-
-* **Log analytics**: Managed DevOps Pools is adding support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode). **Planned for November 2025.**
-
-* **Azure Pipelines image versions**: When a new image version breaks your pipeline, you can configure an [image version override demand](./demands.md#imageversionoverride) in every pipeline to [revert to the version used by the last successful pipeline run](./troubleshooting.md#check-to-see-if-there-has-been-an-image-update). With the proposed feature, you can select the image version of an Azure Pipelines image in the Managed DevOps Pools user interface, and pin your pool's image to a specific image version. **Planned for November 2025**.
-
 * **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for early 2026.**
 
 * **Pool Alias**: We're adding the ability to add an Azure DevOps Pool name in addition to the Azure resource name to address [this ask from our community](https://developercommunity.visualstudio.com/t/Managed-Devops-Pools-Custom-agent-pool/10834336). **Planned for early 2026.**
@@ -27,6 +21,16 @@ The following section describes new features in development for Managed DevOps P
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for early 2026.**
 
 * **Custom Startup Script**: We are adding the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they are assigned to an agent, to enable scenarios such as installing Trusted root CAs, setting environment, etc. **Planned for early 2026**.
+
+## January 2026
+
+* **Windows Server 2019 Azure Pipelines image removed**: As part of our image lifecycle management, we've removed the Windows Server 2019 image from [Azure Pipelines images](./configure-images.md#azure-pipelines-images). For more information, see [Managed DevOps Pools image lifecycle](./configure-images.md#image-lifecycle).
+
+* **Service Tag and new IPs**: Managed DevOps Pools control plane added new IP outgoing addresses and is going to publish a service tag to provide a convenient mechanism to allow outbound traffic from Managed DevOps Pools.
+
+* **Log analytics**: Managed DevOps Pools added support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode).
+
+* **Azure Pipelines image versions**: When a new image version breaks your pipeline, you can configure an [image version override demand](./demands.md#imageversionoverride) in every pipeline to [revert to the version used by the last successful pipeline run](./troubleshooting.md#check-to-see-if-there-has-been-an-image-update). With this new feature feature, you can select the image version of an Azure Pipelines image in the Managed DevOps Pools user interface, and pin your pool's image to a specific image version.
 
 ## November 2025
 
