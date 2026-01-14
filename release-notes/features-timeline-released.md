@@ -180,7 +180,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Service hooks for GitHub Advanced Security alerts for Azure DevOps (preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>pnpm 9 support comes to GitHub Advanced Security for Azure DevOps dependency scanning </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Hosted image updates</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Workload identity federation uses Entra issuer</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload identity federation uses Entra issuer</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Gradle@4 task</td><td>Pipelines</td><td>Future</td></tr>
     <td>Identity of user who requested a stage to run</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improvements on the Publish code coverage results v2 task</td><td>Test Plans</td><td>Azure DevOps Server</td></tr>

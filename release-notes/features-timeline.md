@@ -145,11 +145,6 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td>General</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2025 Q2</td>
       </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/workload-identity-federation" data-raw-source="[Workload identity federation using Entra-issued tokens](/azure/devops/release-notes/roadmap/2025/workload-identity-federation)">Workload identity federation using Entra-issued tokens</a></td>
-         <td>Pipelines</td>
-         <td>2025 Q4</td>
-      </tr>
         <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/new-service-connection" data-raw-source="[PAT-less authentication from pipeline tasks to Azure DevOps APIs](/azure/devops/release-notes/roadmap/2025/new-service-connection)">PAT-less authentication from pipeline tasks to Azure DevOps APIs</a></td>
          <td>Pipelines</td>
