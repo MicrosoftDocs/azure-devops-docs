@@ -3,6 +3,7 @@ title:  New Azure DevOps CLI preview and feature updates in Pipelines - Sprint 1
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 02/25/2019
+ms.topic: release-notes
 description: In the **Sprint 148 Update** of Azure DevOps, we added a new Azure DevOps command-line interface (CLI) extension which allows you to interact with Azure DevOps Services using command-line - Sprint 148 Update.
 ---
 

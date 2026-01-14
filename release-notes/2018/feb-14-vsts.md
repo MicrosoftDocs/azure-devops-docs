@@ -1,7 +1,7 @@
 ---
 title: Package upstream sources and symbol server generally available – VSTS Sprint 130 Update
 ms.date: 2/14/2018
-ms.topic: article
+ms.topic: release-notes
 ms.manager: jillfra
 description: In the Sprint 130 Update of Visual Studio Team Services (VSTS), we continue to improve our integration with tools and services that help you establish a full DevOps pipeline.
 hide_comments: true
