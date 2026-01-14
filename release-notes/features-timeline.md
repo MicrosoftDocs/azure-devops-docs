@@ -477,10 +477,10 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Pipelines</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/macos-agents-apple-silicon" data-raw-source="[Hosted macOS agents on Apple Silicon](/azure/devops/release-notes/roadmap/agents-apple-silicon)">Hosted macOS agents on Apple Silicon</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/macos-agents-apple-silicon" data-raw-source="[Hosted macOS agents on Apple Silicon](/azure/devops/release-notes/roadmap/large-agents)">Large hosted agents</a></td>
         <td>Pipelines</td>
       </tr>
-            <tr>
+      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/on-demand-execution" data-raw-source="[On-demand out of order execution of stages](/azure/devops/release-notes/roadmap/2025/on-demand-execution)">On-demand out of order execution of stages</a></td>
         <td>Pipelines</td>
       </tr>
@@ -528,7 +528,7 @@ Below, you will find several investments that we plan to deliver as part of this
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement" data-raw-source="[Streamlining bulk enablement scenarios](/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement)">Streamlining bulk enablement scenarios</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="6"><strong>2026 Q1</strong></td>
+      <td rowspan="7"><strong>2026 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts" data-raw-source="[Organization-level alerts view in security overview](/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts)">Organization-level alerts view in security overview</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
@@ -551,6 +551,10 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
          <td>Wiki</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/macos-agents-apple-silicon" data-raw-source="[Hosted macOS agents on Apple Silicon](/azure/devops/release-notes/roadmap/agents-apple-silicon)">Hosted macOS agents on Apple Silicon</a></td>
+        <td>Pipelines</td>
       </tr>
       <td rowspan="19"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
