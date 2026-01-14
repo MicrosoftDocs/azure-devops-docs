@@ -10,7 +10,7 @@ ms.topic: how-to
 monikerRange: '=azure-devops'
 ---
 
-# Build a data pipeline by using Azure Data Factory, DevOps, and Azure Machine Learning
+# Build a data pipeline by using Azure Data Factory, Azure DevOps, and Azure Machine Learning
 
 [!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
@@ -37,13 +37,13 @@ Before you begin, you need:
     :::image type="content" source="media/azure-portal-menu-cloud-shell.png" alt-text="Screenshot showing where to select Cloud Shell from the menu.":::
 
     > [!NOTE]
-    > You need an Azure Storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
+    > You need an Azure Storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. Azure portal automatically uses this setup for all future Cloud Shell sessions.
 
 ## Select an Azure region
 
 A _region_ is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an Azure App Service instance, is assigned a region.
 
-To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
+Select a default region to make it easier to run commands. After you specify the default region, later commands use that region unless you specify a different region.
 
 1. In Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
 
@@ -187,7 +187,7 @@ To make commands easier to run, start by selecting a default region. After you s
         az databricks workspace create \
             --resource-group $rgName \
             --name databricks-cicd-ws  \
-            --location eastus2  \
+            --location $region  \
             --sku trial
         ```
     3. Copy the subscription ID. Your Databricks service uses this ID later. 
@@ -343,7 +343,76 @@ Follow these steps to run the continuous integration and continuous delivery (CI
 1. Select **Azure Repos Git** as the location of your source code.
 1. When the list of repositories appears, select your repository. 
 1. As you set up your pipeline, select **Existing Azure Pipelines YAML file**. Choose the YAML file: **/azure-data-pipeline/data_pipeline_ci_cd.yml**.
-1. Run the pipeline. When running your pipeline for the first time, you might need to give permission to access a resource during the run. 
+1. Run the pipeline. When running your pipeline for the first time, you might need to give permission to access a resource during the run.
+
+### Pipeline YAML file example
+
+The `data_pipeline_ci_cd.yml` file orchestrates the deployment of your data factory and Databricks resources. Here's an example structure of what the pipeline contains:
+
+```yaml
+trigger:
+  - main
+
+variables:
+  - group: datapipeline-vg
+  - group: keys-vg
+
+stages:
+  - stage: Build
+    jobs:
+      - job: BuildDataFactory
+        pool:
+          vmImage: 'ubuntu-latest'
+        steps:
+          - task: AzureResourceManagerTemplateDeployment@3
+            inputs:
+              deploymentScope: 'Resource Group'
+              azureResourceManagerConnection: $(AZURE_RM_CONNECTION)
+              subscriptionId: $(SubscriptionId)
+              action: 'Create Or Update Resource Group'
+              resourceGroupName: $(RESOURCE_GROUP)
+              location: $(LOCATION)
+              templateLocation: 'Linked artifact'
+              cacheArtifacts: true
+
+  - stage: Deploy_Dev
+    dependsOn: Build
+    condition: succeeded()
+    jobs:
+      - deployment: DeployToDevFactory
+        pool:
+          vmImage: 'ubuntu-latest'
+        environment: 'Dev'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AzureDataFactoryPublish@1
+                  inputs:
+                    ConnectedServiceName: $(AZURE_RM_CONNECTION)
+                    DataFactoryName: $(DATA_FACTORY_DEV_NAME)
+                    ResourceGroupName: $(RESOURCE_GROUP)
+
+  - stage: Deploy_Test
+    dependsOn: Deploy_Dev
+    condition: succeeded()
+    jobs:
+      - deployment: DeployToTestFactory
+        pool:
+          vmImage: 'ubuntu-latest'
+        environment: 'Test'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AzureDataFactoryPublish@1
+                  inputs:
+                    ConnectedServiceName: $(AZURE_RM_CONNECTION)
+                    DataFactoryName: $(DATA_FACTORY_TEST_NAME)
+                    ResourceGroupName: $(RESOURCE_GROUP)
+```
+
+For the complete pipeline file, see the [azure-data-pipeline repository](https://github.com/MicrosoftDocs/azure-devops-docs-samples/tree/main/azure-data-pipeline). 
 
 
 ## Clean up resources
