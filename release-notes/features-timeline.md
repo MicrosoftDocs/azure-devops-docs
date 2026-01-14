@@ -553,7 +553,7 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>Pipelines</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/macos-agents-apple-silicon" data-raw-source="[Large hosted agents](/azure/devops/release-notes/roadmap/large-agents)">Large hosted agents</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/large-agents" data-raw-source="[Large hosted agents](/azure/devops/release-notes/roadmap/large-agents)">Large hosted agents</a></td>
         <td>Pipelines</td>
       </tr>
       <td rowspan="19"><strong>Future</strong></td>
