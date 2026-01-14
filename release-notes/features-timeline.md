@@ -160,6 +160,11 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td>General</td>
          <td>Future</td>
       </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/wif-azdo-issuer-retirement" data-raw-source="[Workload identity federation Azure DevOps issuer retirement](/azure/devops/release-notes/roadmap/wif-azdo-issuer-retirement)">Workload identity federation Azure DevOps issuer retirement/a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
+      </tr>
     </tbody>
 </table>
 
