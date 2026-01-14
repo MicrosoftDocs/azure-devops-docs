@@ -3,7 +3,7 @@ title: PAT-less authentication from pipeline tasks to Azure DevOps APIs
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 04/21/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: PAT-less authentication from pipeline tasks to Azure DevOps APIs

@@ -1,7 +1,7 @@
 ---
 title: Removal of TFVC in new projects
 ms.date: 06/04/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Removal of TFVC in new projects

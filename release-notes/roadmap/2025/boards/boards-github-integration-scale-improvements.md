@@ -3,7 +3,7 @@ title: Scalability enhancements for connecting GitHub repositories to Azure DevO
 author: danhellem
 ms.author: dahellem
 ms.date: 09/25/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Upcoming scalability enhancements for connecting GitHub repositories to Azure DevOps

@@ -3,7 +3,7 @@ title: Continuous access evaluation
 author: ramrajesh
 ms.author: rajr
 ms.date: 04/07/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Continuous access evaluation in Azure DevOps

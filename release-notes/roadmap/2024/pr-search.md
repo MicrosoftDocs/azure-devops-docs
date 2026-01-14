@@ -3,7 +3,7 @@ title: PR Search
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 4/24/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: PR Search
