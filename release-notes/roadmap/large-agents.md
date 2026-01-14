@@ -6,7 +6,7 @@ ms.date: 11/22/2024
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Hosted macOS agents on Apple Silicon
+description: Large hosted agents
 hide_comments: true
 ---
 
