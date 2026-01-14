@@ -233,11 +233,21 @@ Even though the extension might be installed initially, every time the machine r
 
 This machine restart issue is fixed starting with version `1.27.0.2` for the Windows extension and `1.21.0.1` for the Linux extension. A restart now adds nothing to the status file. However, if you had this issue with an earlier version of the extension and your extension was automatically updated to the fixed version, the issue can persist. Newer versions of the extension can still work with an earlier status file.
 
-You could face this issue if you're using an earlier version of the extension with the flag to turn off automatic updates for minor versions, or if a large status file was carried from an earlier version to a fixed version. If so, you can solve the issue by uninstalling and reinstalling the extension. Uninstalling the extension cleans up the entire extension directory and creates a new status file for a fresh installation of the latest version.
+You could face this issue if one of these conditions exists:
+
+- You're using an earlier version of the extension with the flag to turn off automatic updates for minor versions.
+- A large status file moved from an earlier version to a fixed version.
+
+If so, you can solve the issue by uninstalling and reinstalling the extension. Uninstalling the extension cleans up the entire extension directory and creates a new status file for a fresh installation of the latest version.
 
 ### Custom data causes problems when you switch OS versions
 
-Python 2 is deprecated, and the Azure Pipelines Agent extension works with Python 3. If you still use OS versions that don't have Python 3 installed by default, to run the extension you should either install Python 3 on the VM or switch to an OS version that has Python 3 installed by default. Otherwise, the [custom data](/azure/virtual-machines/custom-data#linux) location on the VM might cause confusion when you switch OS versions.
+Python 2 is deprecated, and the Azure Pipelines Agent extension works with Python 3. If you still use OS versions that don't have Python 3 installed by default, you should take one of the following actions before you run the extension:
+
+- Install Python 3 on the VM.
+- Switch to an OS version that has Python 3 installed by default.
+
+Otherwise, the [custom data](/azure/virtual-machines/custom-data#linux) location on the VM might cause confusion when you switch OS versions.
 
 On Linux VMs, custom data copies to `/var/lib/waagent/ovf-env.xml` for earlier agent versions, and to `/var/lib/waagent/CustomData` for newer versions. If you hard-code only one of these two paths, switching OS versions might cause problems because one of the paths doesn't exist on the new OS version, although the other path is present. To avoid breaking the VM provisioning, consider using both paths in the template so that if one fails, the other should succeed.
 

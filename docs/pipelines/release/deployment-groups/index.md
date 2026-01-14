@@ -66,9 +66,9 @@ To register each target server in the deployment group:
 
 Every target server in the deployment group requires a deployment agent. The generated registration script for target servers installs an agent. Alternatively, you can install agents by using one of the following methods:
 
-- For Azure VMs, you can set up your servers by [installing the Azure Pipelines agent extension](./howto-provision-deployment-group-agents.md#install-the-azure-pipelines-agent-azure-vm-extension) on each VM.
+- For Azure VMs, you can set up your servers by [installing the Azure Pipelines agent extension](./howto-provision-deployment-group-agents.md#install-the-azure-pipelines-agent-extension) on each VM.
 
-- Use the [AzureResourceGroupDeploymentV2 task](./howto-provision-deployment-group-agents.md#use-the-azureresourcegroupdeploymentv2-task) in a release pipeline to dynamically create and register agents for deployment groups.
+- Use the [AzureResourceGroupDeploymentV2 task](./howto-provision-deployment-group-agents.md#use-the-azure-resource-group-deployment-task) in a release pipeline to dynamically create and register agents for deployment groups.
 
 For more information, see [Provision agents for deployment groups](howto-provision-deployment-group-agents.md).
 
