@@ -4,6 +4,7 @@ description: See the Sprint 160 feature updates for Azure Pipelines, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/13/2019
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 160 Update

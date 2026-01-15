@@ -4,6 +4,7 @@ description: See the Sprint 152 feature updates for Azure Repos, including next 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 05/20/2019
+ms.topic: release-notes
 ---
 
 # Azure Repos - Sprint 152 Update
