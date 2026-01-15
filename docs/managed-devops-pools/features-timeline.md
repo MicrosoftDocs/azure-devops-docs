@@ -30,7 +30,7 @@ The following section describes new features in development for Managed DevOps P
 
 * **Log analytics**: Managed DevOps Pools added support so you can configure your pools to emit logs into Log analytics. The Log Analytics tool in the Azure portal lets you run and edit log queries against data in the Azure Monitor Logs store. Use Log Analytics to analyze and visualize log data using [Kusto Query Language (KQL)](/azure/azure-monitor/logs/get-started-queries) or the point-and-click experience provided in [Log Analytics simple mode](/azure/azure-monitor/logs/log-analytics-simple-mode).
 
-* **Azure Pipelines image versions**: When a new image version breaks your pipeline, you can configure an [image version override demand](./demands.md#imageversionoverride) in every pipeline to [revert to the version used by the last successful pipeline run](./troubleshooting.md#check-to-see-if-there-has-been-an-image-update). With this new feature feature, you can select the image version of an Azure Pipelines image in the Managed DevOps Pools user interface, and pin your pool's image to a specific image version.
+* **Azure Pipelines image versions**: When a new image version breaks your pipeline, you can configure an [image version override demand](./demands.md#imageversionoverride) in every pipeline to [revert to the version used by the last successful pipeline run](./troubleshooting.md#check-to-see-if-there-has-been-an-image-update). With this new feature, you can select the image version of an Azure Pipelines image in the Managed DevOps Pools user interface, and pin your pool's image to a specific image version.
 
 ## November 2025
 
