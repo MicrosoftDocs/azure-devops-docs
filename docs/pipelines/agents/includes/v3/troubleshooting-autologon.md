@@ -1,6 +1,3 @@
----
-ms.topic: troubleshooting-problem-resolution
----
 ### Troubleshooting configuring the agent with the `runAsAutoLogon` option
 
 Configuring the agent with the `runAsAutoLogon` option runs the agent each time after restarting the machine.
