@@ -1,6 +1,4 @@
----
-ms.topic: reference
----
+
 ## Default permissions per task
 
 |Task |Stakeholders  |Readers  |Contributors  |Team Administrators | Organization owner/Project Administrator |
