@@ -3,7 +3,7 @@ title: Auto link the merge commit
 author: danhellem
 ms.author: dahellem
 ms.date: 02/4/2024
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Auto link the merge commit
