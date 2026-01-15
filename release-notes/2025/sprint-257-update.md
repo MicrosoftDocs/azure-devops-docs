@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/16/2025
 description: GitHub Secret Protection and GitHub Code Security available as standalone products in Azure DevOps
+ms.topic: release-notes
 ---
 # GitHub Secret Protection and GitHub Code Security available as standalone products in Azure DevOps
 

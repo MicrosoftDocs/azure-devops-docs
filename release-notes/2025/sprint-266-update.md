@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 12/18/2025
 description: Strengthening Test Planning and Advancing Security Coverage
+ms.topic: release-notes
 ---
 
 # Strengthening Test Planning and Advancing Security Coverage
