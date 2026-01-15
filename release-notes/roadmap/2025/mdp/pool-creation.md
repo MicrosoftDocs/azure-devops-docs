@@ -3,7 +3,7 @@ title: Pool creation at the Azure DevOps project level using project level permi
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 04/21/2025
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Pool creation at the Azure DevOps project level using project level permissions
