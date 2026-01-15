@@ -4,6 +4,7 @@ description: See the Sprint 148 feature update for Azure Artifacts, including ne
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 02/25/2019
+ms.topic: release-notes
 ---
 
 # Azure Artifacts - Sprint 148 Update

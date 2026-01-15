@@ -3,6 +3,7 @@ title: YAML improvements in Azure Pipelines - Sprint 142 Update
 author: erindormier
 ms.author: egeaney
 ms.date: 10/22/2018
+ms.topic: release-notes
 description: In the Sprint 142 Update of Azure DevOps, we have made several improvements to YAML in Azure Pipelines
 ---
 

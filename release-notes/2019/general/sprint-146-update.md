@@ -4,6 +4,7 @@ description: See the Sprint 146 general updates for Azure DevOps, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/14/2019
+ms.topic: release-notes
 ---
 
 # General - Sprint 146 Update

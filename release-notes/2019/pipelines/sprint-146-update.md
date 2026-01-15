@@ -4,6 +4,7 @@ description: See the Sprint 146 feature updates for Azure Pipelines, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/14/2019
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 146 Update

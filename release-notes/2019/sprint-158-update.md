@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 09/23/2019
 description: In the **Sprint 158 Update** of Azure DevOps, we've added user assignment based billing. With this feature, the number of Basic or Basic + Test Plan licenses will change as you add or remove users. 
+ms.topic: release-notes
 ---
 
 #  User assignment based billing, default access level and daily billing - Sprint 158 Update
