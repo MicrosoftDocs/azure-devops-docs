@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/6/2023
 description: GitHub Advanced Security for Azure DevOps in now in public preview.
+ms.topic: release-notes
 ---
 # GitHub Advanced Security for Azure DevOps public preview
 

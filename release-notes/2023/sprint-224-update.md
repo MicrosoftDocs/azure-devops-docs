@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 7/11/2023
 description: Dismiss dependency scanning alerts in Advanced Security.
+ms.topic: release-notes
 ---
 # Dismiss dependency scanning alerts in Advanced Security
 
