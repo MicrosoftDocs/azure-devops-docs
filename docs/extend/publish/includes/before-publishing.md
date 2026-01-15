@@ -1,7 +1,3 @@
----
-ms.topic: concept-article
----
-
 The following list of requirements must be met before you publish to the Marketplace.
 
 | Category                | Requirements             |
