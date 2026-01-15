@@ -3,7 +3,7 @@ title: Manage high privilege scopes, pipeline decorators, and unpublished extens
 author: battle-born
 ms.author: alexpysanets
 ms.date: 04/22/2025
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Manage high privilege scopes, pipeline decorators, and unpublished extensions
