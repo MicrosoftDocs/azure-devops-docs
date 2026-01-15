@@ -54,7 +54,7 @@ For example:
 
 **Jenkinsfile**
 
-```
+```groovy
 pipeline {
     agent none
     stages {
@@ -89,14 +89,6 @@ jobs:
   - script: npm test
 ```
 
-### Visual configuration
-
-If you aren't using a Jenkins declarative pipeline with a Jenkinsfile,
-and are instead using the graphical interface to define your build configuration,
-then you may be more comfortable with the
-classic editor
-in Azure Pipelines.
-
 ## Container-based builds
 
 Using containers in your build pipeline allows you to build and test within
@@ -118,7 +110,7 @@ run tests in an Ubuntu 24.04 ("Noble") container:
 
 **Jenkinsfile**
 
-```
+```groovy
 pipeline {
     agent none
     stages {
@@ -221,7 +213,7 @@ and `PLATFORM=x86`:
 
 **Jenkinsfile**
 
-```
+```groovy
 pipeline {
     agent any
     environment {
@@ -305,7 +297,7 @@ the `failure` section) or always (using the `always` section). For example:
 
 **Jenkinsfile**
 
-```
+```groovy
 post {
     always {
         echo "The build has finished"
@@ -368,7 +360,7 @@ credential types, including secret text, username/password pairs, and secret fil
 
 **Jenkinsfile**
 
-```
+```groovy
 pipeline {
     agent any
     environment {
