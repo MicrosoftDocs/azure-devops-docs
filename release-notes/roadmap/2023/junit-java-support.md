@@ -3,7 +3,7 @@ title: JUnit / Java support in Test Plans
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/6/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: JUnit / Java support in Test Plans

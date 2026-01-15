@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/4/2025
 description: Expanded GitHub Advanced Security features now generally available
+ms.topic: release-notes
 ---
 
 # Expanded GitHub Advanced Security features now generally available

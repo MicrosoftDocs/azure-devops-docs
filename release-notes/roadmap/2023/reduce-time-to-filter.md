@@ -3,7 +3,7 @@ title: Reduce time to filter test plans and test suites in copy & import operati
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/16/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Reduce time to filter test plans and test suites in copy & import operations

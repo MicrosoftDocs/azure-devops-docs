@@ -4,6 +4,7 @@ author: sid-ah
 ms.author: simerzou
 ms.date: 03/03/2021
 description: In this release, we're excited to announce Azure DevOps REST API support for personal access tokens, and it's now available in private preview.
+ms.topic: release-notes
 ---
 
 # Token lifecycle management is now in private preview

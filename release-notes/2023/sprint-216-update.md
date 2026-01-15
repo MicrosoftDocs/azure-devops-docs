@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 2/7/2023
 description: With this update, we improved pipelines security resources and administrator control.
+ms.topic: release-notes
 ---
 # Improved pipeline security and administrator control
 

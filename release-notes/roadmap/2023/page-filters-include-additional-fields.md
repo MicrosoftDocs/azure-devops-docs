@@ -3,7 +3,7 @@ title: Additional fields on page filters
 author: danhellem
 ms.author: dahellem
 ms.date: 01/27/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Additional fields on page filters

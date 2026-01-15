@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 1/12/2023
 description: With this update, we highlight extension updates and performance improvements.
+ms.topic: release-notes
 ---
 # Extension updates and performance improvements 
 

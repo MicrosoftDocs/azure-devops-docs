@@ -3,7 +3,7 @@ title: Hyperlink field type for custom fields
 author: danhellem
 ms.author: dahellem
 ms.date: 01/09/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Hyperlink field type for custom fields

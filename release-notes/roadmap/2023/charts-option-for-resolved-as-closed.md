@@ -3,7 +3,7 @@ title: Burnup, Burndown, and Velocity charts option to include resolved as compl
 author: danhellem
 ms.author: dahellem
 ms.date: 02/03/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Burnup, Burndown, and Velocity charts option to include resolved as completed

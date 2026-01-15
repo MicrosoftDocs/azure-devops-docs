@@ -3,7 +3,7 @@ title: Add link to GitHub Commit or Pull Request from work item
 author: danhellem
 ms.author: dahellem
 ms.date: 10/30/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Add link to GitHub Commit or Pull Request from work item
