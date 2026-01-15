@@ -3,7 +3,7 @@ title: Undo test step in web and desktop runner
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/20/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Undo test step in web and desktop runner

@@ -3,7 +3,7 @@ title: Quick access to Test Results in Test Case
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/20/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Quick access to Test Results in Test Case

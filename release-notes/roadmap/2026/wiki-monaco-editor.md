@@ -3,7 +3,7 @@ title: Replace existing Wiki editor with Monaco Editor
 author: danhellem
 ms.author: dahellem
 ms.date: 12/16/2025
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Replace existing Wiki editor with Monaco Editor

@@ -3,7 +3,7 @@ title: Quick access to test results and Run ID in web runner
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/20/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Quick access to test results and Run ID in web runner
