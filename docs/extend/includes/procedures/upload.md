@@ -1,7 +1,3 @@
----
-ms.topic: how-to
----
-
 Go to the Visual Studio Marketplace (https://marketplace.visualstudio.com/azuredevops), select the Azure DevOps tab, 
 and add your extension.
 
