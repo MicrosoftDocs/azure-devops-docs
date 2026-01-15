@@ -3,7 +3,7 @@ title: Support state transitions when merging a GitHub pull request
 author: danhellem
 ms.author: dahellem
 ms.date: 11/27/2024
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Support state transitions when merging a GitHub pull request
