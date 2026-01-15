@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 1/25/2023
 description: With this update, we've added support for subpages table in wiki.
+ms.topic: release-notes
 ---
 # Support for subpages table in wiki
 
