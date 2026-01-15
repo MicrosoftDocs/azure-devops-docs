@@ -3,7 +3,7 @@ title: Mentions support for GitHub pull requests
 author: danhellem
 ms.author: dahellem
 ms.date: 09/17/2024
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Mentions support for GitHub pull requests
