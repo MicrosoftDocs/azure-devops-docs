@@ -4,7 +4,7 @@ description: May 2019 announcements for Azure Pipelines
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 05/10/2019
-ms.topic: whats-new
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Microsoft Build Announcements
