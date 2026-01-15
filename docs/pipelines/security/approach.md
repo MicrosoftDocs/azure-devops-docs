@@ -2,7 +2,7 @@
 title: Determine your approach for securing YAML pipelines
 description: Apply security recommendations incrementally in your YAML pipelines because incremental improvements add up.
 ms.assetid: a506a55a-2379-4d14-a52c-f4c28abae0ec
-ms.date: 06/10/2024
+ms.date: 01/15/2026
 monikerRange: "<=azure-devops"
 ms.topic: article
 ---
@@ -11,13 +11,13 @@ ms.topic: article
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Consider adopting an incremental approach to enhance the security of your pipelines. While it’s ideal to implement all the guidance we provide, don’t get overwhelmed by the number of recommendations. Start by making some improvements, even if you can’t address everything immediately.
+Consider adopting an incremental approach to enhance the security of your pipelines. While it's ideal to implement all the guidance, don't get overwhelmed by the number of recommendations. Start by making some improvements, even if you can't address everything immediately.
 
 [!INCLUDE [security-prerequisites](includes/security-prerequisites.md)]
 
 ## Security interdependence
 
-Security recommendations are interdependent. Your posture relies on the specific recommendations you implement, which, in turn, align with your DevOps and security teams’ concerns and organizational policies.
+Security recommendations are interdependent. Your posture relies on the specific recommendations you implement, which, in turn, align with your DevOps and security teams' concerns and organizational policies.
 
 Consider prioritizing security in critical areas while accepting some trade-offs for convenience in other aspects. For example, if you use [`extends` templates](templates.md#step-targets) to require all builds to run in containers, then you might not need a [separate agent pool for each project](misc.md#separate-agents-for-each-project).
 
@@ -43,9 +43,9 @@ For more information, see [Templates](templates.md).
 
 Disable the creation of classic build and release pipelines if you exclusively use YAML pipelines. This precaution prevents a security concern arising from YAML and classic pipelines sharing the same resources, such as service connections.
 
-Independently disable the creation of classic build pipelines and classic release pipelines. When both are disabled, no classic build pipeline, classic release pipeline, task groups, or deployment groups can be created via the user interface or the REST API.
+Independently disable the creation of classic build pipelines and classic release pipelines. When both are disabled, users can't create classic build pipelines, classic release pipelines, task groups, or deployment groups through the user interface or the REST API.
 
-To disable the creation of classic pipelines, go to your **Organization settings** or **Project settings**, then under the *Pipelines* section select **Settings**. In the *General* section, toggle on **Disable creation of classic build pipelines** and **Disable creation of classic release pipelines**.
+To disable the creation of classic pipelines, go to your **Organization settings** or **Project settings**. Under the *Pipelines* section, select **Settings**. In the *General* section, toggle on **Disable creation of classic build pipelines** and **Disable creation of classic release pipelines**.
 
 If you enable this feature at the organization level, it applies to all projects within that organization. However, if you leave it disabled, you can selectively enable it for specific projects.
 
@@ -53,7 +53,7 @@ If you enable this feature at the organization level, it applies to all projects
 
 :::moniker range="> azure-devops-2022"
 
-To improve the security of newly created organizations, starting with [Sprint 226](/azure/devops/release-notes/2023/sprint-225-update#disable-creation-of-classic-pipelines-for-new-organizations-pre-announcement), by default we disable creating classic build and release pipelines for new organizations.
+To improve the security of newly created organizations, starting with [Sprint 226](/azure/devops/release-notes/2023/sprint-225-update#disable-creation-of-classic-pipelines-for-new-organizations-pre-announcement), the default setting disables creating classic build and release pipelines for new organizations.
 
 :::moniker-end
 
