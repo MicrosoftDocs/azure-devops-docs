@@ -5,6 +5,7 @@ description: How to migrate from Travis to Azure Pipelines
 ms.topic: how-to
 ms.assetid: F4592A2E-714A-4208-AD46-00D1A6D709C4
 ms.date: 01/15/2026
+ai-usage: ai-assisted
 monikerRange: azure-devops
 ---
 

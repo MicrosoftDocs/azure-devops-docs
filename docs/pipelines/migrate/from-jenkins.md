@@ -5,6 +5,7 @@ description: How to migrate from Jenkins to Azure Pipelines
 ms.topic: upgrade-and-migration-article
 ms.custom: devx-track-jenkins
 ms.date: 01/15/2026
+ai-usage: ai-assisted
 monikerRange: azure-devops
 ---
 
