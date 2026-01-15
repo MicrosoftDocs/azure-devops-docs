@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 09/25/2025
 description: Private preview of Azure Boards integration with GitHub Copilot
+ms.topic: release-notes
 ---
 
 # Private preview of Azure Boards integration with GitHub Copilot
