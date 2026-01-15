@@ -1,7 +1,3 @@
----
-ms.topic: include
----
-
 ## Next steps
 
 > [!NOTE]
