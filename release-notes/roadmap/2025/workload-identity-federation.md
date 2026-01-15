@@ -3,7 +3,7 @@ title: Workload identity federation using Entra-issued tokens
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/20/2025
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Workload identity federation using Entra-issued tokens
