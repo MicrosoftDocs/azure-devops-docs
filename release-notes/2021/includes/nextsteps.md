@@ -1,8 +1,3 @@
----
-ms.date: 2021
-ms.topic: include
----
-
 ## Next steps
 
 > [!NOTE]
