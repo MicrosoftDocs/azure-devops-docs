@@ -1,6 +1,3 @@
----
-ms.topic: article
----
 ## Next steps
 
 > [!NOTE]
