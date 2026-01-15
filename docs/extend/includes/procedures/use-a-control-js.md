@@ -1,7 +1,3 @@
----
-ms.topic: how-to
----
-
 1. Add a div element in the body of the page to contain the grid.
 
 	```html
