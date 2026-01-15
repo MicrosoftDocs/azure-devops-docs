@@ -3,7 +3,7 @@ title: Secret Protection and Code Security plans for Advanced Security
 author: laurajjiang
 ms.author: laurajiang
 ms.date: 04/21/2025
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Secret Protection and Code Security plans for Advanced Security
