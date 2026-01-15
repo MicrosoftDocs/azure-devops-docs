@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 12/22/2024
+ms.date: 01/13/2026
 ---
 
 # Manage columns on your board
@@ -19,13 +19,10 @@ ms.date: 12/22/2024
 
 Managing columns on your board is essential for visualizing your team's workflow. Each column corresponds to a stage of work, such as "To do," "In progress," and "Done." You can customize these columns to match your specific process. Each card on the board represents a work item, such as a user story, bug, or task.
 
-::: moniker range="<=azure-devops"
-
 > [!NOTE]    
 > - To manage columns on a sprint Taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). 
 > - To manage columns on a backlog or in query results, see [Change column options](../backlogs/set-column-options.md).
-> - To view frequently asked questions about Azure Boards, see [FAQs](../faqs.yml).   
-::: moniker-end
+> - To view frequently asked questions about Azure Boards, see [FAQs](../faqs.yml).
 
 ## Prerequisites
 
@@ -75,7 +72,7 @@ Add and edit your columns by using the following steps:
 Mapping workflow state categories to columns in boards is essential for visualizing the progress of work items. It ensures that each state of a work item is represented on the board, providing a clear and organized view of the workflow. This mapping helps teams quickly [identify the current status of work items](#update-status), [track their progress](#track-column-status), and [spot any bottlenecks](#identify-bottlenecks) or issues. By aligning workflow states with board columns, teams can maintain a shared understanding of the workflow and improve their ability to manage and complete tasks efficiently.
 
 > [!TIP]   
-> We recommend that you map each workflow **state** to a **column**. If it's not mapped, it doesn't appear on the board.
+> Map each workflow **state** to a **column**. Unmapped states don't appear on the board.
 
 The following table describes default user story state categories.
 
@@ -90,17 +87,17 @@ For more information, see [About workflow and state categories](../work-items/wo
 
 :::image type="content" source="media/boards-columns-state-mapping.png" alt-text="Screenshot shows State mapping section of Column Edit page.":::
 
-Do this task whenever you add columns, workflow states, or work item types (WITs). This action is typically necessary when you change the [Working with bugs setting](../../organizations/settings/show-bugs-on-backlog.md), add [WITs to the Requirement category](../../reference/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).
+Perform this task whenever you add columns, workflow states, or work item types (WITs). You typically need this action when you change the [Working with bugs setting](../../organizations/settings/show-bugs-on-backlog.md), add [WITs to the Requirement category](../../reference/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).
 
 > [!NOTE]
-> When you add bugs or other work items to a board, it might create new workflow states that require adjustments to column-to-state mappings in the following situations:
-> - When a team administrator [shows bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
-> - When a project administrator [adds work item types to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md).
-> - When a project collection or project administrator customizes the workflow for a work item type in the Requirement category using [inherited process](../../organizations/settings/work/customize-process-workflow.md) or [on-premises XML process](../../reference/xml/change-workflow-wit.md).
+> Adding bugs or other work items to a board creates new workflow states that require adjustments to column-to-state mappings in these situations:
+> - Team administrators [show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+> - Project administrators [add work item types to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md)
+> - Project collection or project administrators customize workflows for work item types in the Requirement category using [inherited process](../../organizations/settings/work/customize-process-workflow.md) or [on-premises XML process](../../reference/xml/change-workflow-wit.md)
 
 ## Rename a column
 
-Renaming your column titles to match your workflow stages helps ensure clarity and alignment within your team. It allows everyone to understand the current status of work items at a glance and ensures that the board accurately reflects your team's workflow.
+Rename your column titles to match your workflow stages. This change ensures clarity and alignment within your team. Everyone can understand the current status of work items at a glance, and the board accurately reflects your team's workflow.
 
 Rename a column directly from the board by selecting the column name, as shown in the following image. You can also rename a column from the [column edit screen](#add-and-edit-columns).
 
@@ -108,26 +105,26 @@ Rename a column directly from the board by selecting the column name, as shown i
 
 ## Split columns
 
-Each column represents a work stage, showing the number of items in progress. But, there’s often a lag between moving work into a column and starting it. To address this lag, enable split columns, which divide each column into **Doing** and **Done**.
+Each column represents a work stage and shows the number of items in progress. But, you often move work into a column before you start it. To address this lag, enable split columns, which divide each column into **Doing** and **Done**.
 
 :::image type="content" source="media/kanban-board-split-columns-example-chart.png" alt-text="Screenshot showing with split columns.":::
 
-Split columns help your team implement a pull mechanism, providing visibility into idle items and improving workflow transparency.
+Split columns help your team implement a pull mechanism. They provide visibility into idle items and improve workflow transparency.
 
 > [!NOTE]
 > - Before you split columns, ensure that each stage is mapped to a column. Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage.
-> - There are different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team chose to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md). 
+> - Different column titles and choices exist based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team chose to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md). 
 
 Choose the column tab that you want to split and add a check mark in the box to cause the column to split.  
 
 :::image type="content" source="media/columns/split-columns.png" alt-text="Screenshot of board settings page, Split columns.":::
 
 > [!TIP]    
-> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields).
+> You can filter queries and create charts by using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields).
 
 ### Move items into the *Doing* and *Done* columns 
 
-With split columns enabled, update item statuses as usual. When you complete work on an item, move it to *Done* instead of a downstream column. The next team member pulls it into *Doing* and reassigns it to themselves when ready.
+When you enable split columns, update item statuses as usual. When you complete work on an item, move it to *Done* instead of a downstream column. The next team member pulls it into *Doing* and reassigns it to themselves when ready.
 
 For example, after finishing a coding task, move it to *Done* under Develop. The tester then pulls it into *Doing* under Test when ready to start testing.
 
@@ -163,7 +160,7 @@ Users can quickly double-check the criteria by choosing the Information tooltip 
 
 ## Remove or move a column
 
-Removing or moving a column can help streamline your board and better reflect your team's workflow and priorities. By adjusting the order of columns or removing unnecessary stages, you can ensure that the most critical stages are prominently displayed and that the workflow is intuitive for all team members.
+Removing or moving a column streamlines your board and better reflects your team's workflow and priorities. By adjusting the order of columns or removing unnecessary stages, you display the most critical stages prominently and make the workflow intuitive for all team members.
 
 ### Remove a column
 
@@ -174,13 +171,13 @@ Removing or moving a column can help streamline your board and better reflect yo
 
 ### Move a column
 
-To move a column, drag the column tab to the desired position on the board or in the **Column options menu**, select **Move left** or **Move right**.
+To move a column, drag the column tab to the desired position on the board. Or, in the **Column options menu**, select **Move left** or **Move right**.
 
 :::image type="content" source="media/columns/column-options-menu.png" alt-text="Screenshot shows the column options menu in Configure board settings.":::
 
 ## Update status
 
-To update status, drag-and-drop your work items. For example, to signal when work can start in a downstream stage, drag items to the next column. You can move an item from one column to any other column on the board, forward and back. 
+To update the status, drag and drop your work items. For example, to signal when work can start in a downstream stage, drag items to the next column. You can move an item from one column to any other column on the board, forward and back. 
 
 :::image type="content" source="media/ALM_AC_DragItem.png" alt-text="Screenshot that shows dragging an item from the Analyze column to the Develop column.":::
 
@@ -194,7 +191,7 @@ Users who receive the handoff can [set alerts](../../organizations/notifications
 
 ## Track column status
 
-Use the [query tool](../queries/using-queries.md) to list a subset of work items for review, triage, update, or chart generation. For example, you can create a query to list all active user stories (specify two clauses: `Work Item Type=User Story` and `State=Active`). 
+Use the [query tool](../queries/using-queries.md) to list a subset of work items for review, triage, update, or chart generation. For example, you can create a query to list all active user stories by specifying two clauses: `Work Item Type=User Story` and `State=Active`. 
 
 Specify [work in progress (WIP) limits](wip-limits.md), split columns, and definition of done.
 
