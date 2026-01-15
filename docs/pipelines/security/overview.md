@@ -5,7 +5,7 @@ ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
 ms.custom: peer-review-program
 ms.date: 03/04/2025
 monikerRange: "<=azure-devops"
-ms.topic: overview
+ms.topic: best-practice
 ---
 
 # Secure your Azure Pipelines
