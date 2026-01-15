@@ -3,7 +3,7 @@ title: Customizable flaky test detection logic
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 04/18/2025
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Customizable flaky test detection logic
