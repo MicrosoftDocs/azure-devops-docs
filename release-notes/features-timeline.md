@@ -592,7 +592,7 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>Pipelines</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/support-pipelines-app" data-raw-source="[Support Pipelines App with GitHub Enterprise](/azure/devops/release-notes/roadmap/support-pipelines-app)">Support Pipelines App with GitHub Enterprise</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/support-pipelines-app" data-raw-source="[Support Pipelines App with GitHub Enterprise Server](/azure/devops/release-notes/roadmap/support-pipelines-app)">Support Pipelines App with GitHub Enterprise Server</a></td>
         <td>Pipelines</td>
       </tr>
       <tr>
