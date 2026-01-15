@@ -1,7 +1,3 @@
----
-ms.topic: how-to
----
-
 1. Create an ASP.NET application.
 
 	![New project dialog with ASP.NET Web Application selected](../../media/create-hub-app-asp5/create-web-app.png)
