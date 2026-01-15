@@ -1,7 +1,3 @@
----
-ms.topic: end-user-help
----
-
 <a id="provide-feedback"></a>
 
 ## Help and support
