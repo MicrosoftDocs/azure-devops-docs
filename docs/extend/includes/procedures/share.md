@@ -1,7 +1,3 @@
----
-ms.topic: how-to
----
-
 Before an extension can be installed into an organization, you must share it with that organization. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
 
 To share an extension so it can be installed, complete the following tasks:
