@@ -3,7 +3,7 @@ title: Show build status when using a YAML build pipeline with GitHub repository
 author: danhellem
 ms.author: dahellem
 ms.date: 10/30/2023
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Show build status when using a YAML build pipeline with GitHub repository
