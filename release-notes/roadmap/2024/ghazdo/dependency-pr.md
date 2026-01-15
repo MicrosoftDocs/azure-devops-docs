@@ -3,7 +3,7 @@ title: Dependency pull request annotations
 author: ncouraud
 ms.author: nicour
 ms.date: 07/11/2024
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Advanced Security displays newly introduced dependencies inline in Pull Requests
