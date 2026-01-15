@@ -3,7 +3,7 @@ title: Improved filtering experience in boards and backlogs
 author: danhellem
 ms.author: dahellem
 ms.date: 09/25/2025
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Enhanced filtering experience in boards and backlogs
