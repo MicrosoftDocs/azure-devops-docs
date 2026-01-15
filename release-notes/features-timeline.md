@@ -145,15 +145,10 @@ Azure DevOps supports many different authentication mechanisms, including basic 
          <td>General</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2025 Q2</td>
       </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/workload-identity-federation" data-raw-source="[Workload identity federation using Entra-issued tokens](/azure/devops/release-notes/roadmap/2025/workload-identity-federation)">Workload identity federation using Entra-issued tokens</a></td>
-         <td>Pipelines</td>
-         <td>2025 Q4</td>
-      </tr>
         <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/new-service-connection" data-raw-source="[PAT-less authentication from pipeline tasks to Azure DevOps APIs](/azure/devops/release-notes/roadmap/2025/new-service-connection)">PAT-less authentication from pipeline tasks to Azure DevOps APIs</a></td>
          <td>Pipelines</td>
-         <td>2025 Q4</td>
+         <td>2026 Q1</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/continuous-access-evaluation" data-raw-source="[Continuous access evaluation](/azure/devops/release-notes/roadmap/2025/continuous-access-evaluation)">Continuous access evaluation</a></td>
@@ -163,6 +158,11 @@ Azure DevOps supports many different authentication mechanisms, including basic 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/proof-of-possession" data-raw-source="[Using device bound Entra tokens in Azure DevOps](/azure/devops/release-notes/roadmap/2025/proof-of-possession)">Using device bound Entra tokens in Azure DevOps</a></td>
          <td>General</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/wif-azdo-issuer-retirement" data-raw-source="[Workload identity federation Azure DevOps issuer retirement](/azure/devops/release-notes/roadmap/wif-azdo-issuer-retirement)">Workload identity federation Azure DevOps issuer retirement</a></td>
+         <td>Pipelines</td>
          <td>Future</td>
       </tr>
     </tbody>
@@ -244,7 +244,7 @@ These recent investments include:
          <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
          <td>Boards</td>
          <td>2026 Q1</td>
-      </tr>           
+      </tr>         
     </tbody>
 </table>
 
@@ -405,27 +405,42 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/quick-access-to-test-results" data-raw-source="[Quick access to Test Results in Test Case](/azure/devops/release-notes/roadmap/2025/testplans/quick-access-to-test-results)">Quick access to Test Results in Test Case</a></td>
          <td>Test Plans</td>
-         <td>2025 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>  
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result" data-raw-source="[Latest Test Outcome in Requirements](/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result)">Latest Test Outcome in Requirements</a></td>
          <td>Test Plans</td>
-         <td>2025 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience" data-raw-source="[New Test Run experience - Public Preview](/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience)">New Test Run experience - Public Preview</a></td>
          <td>Test Plans</td>
-         <td>2025 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point" data-raw-source="[Enhanced Test Point Result Panel](/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point)">Enhanced Test Point Result Panel</a></td>
          <td>Test Plans</td>
-         <td>2025 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-pytest)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
          <td>Test Plans</td>
          <td>2025 Q4</td>
+      </tr>
+        <tr>
+         <td><a href="/azure/devops/release-notes/2026/testplans/TFE-Improved-Reliability" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/2026/testplans/TFE-Improved-Reliability)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>
+         <td>Test Plans</td>
+         <td>2026 Q2</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/2026/testplans/Actual-Test-Result" data-raw-source="[Support Capturing of Actual Test Result](/azure/devops/release-notes/2026/testplans/Actual-Test-Result)">Support Capturing of Actual Test Result</a></td>
+         <td>Test Plans</td>
+         <td>2026 Q2</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/2026/testplans/New-Web-Runner" data-raw-source="[Revamp of the Web Runner](/azure/devops/release-notes/2026/testplans/New-Web-Runner)">Revamp of the Web Runner</a></td>
+         <td>Test Plans</td>
+         <td>2026 Q2</td>
       </tr>
    </tbody>
 </table>
@@ -443,21 +458,108 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="4"><strong>2026 Q1</strong></td>
+      <td rowspan="17"><strong>2025 Q4</strong></td>
+      <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
+        <td>General</td>
+      </tr>
+      <tr>
+          <td><a href="/azure/devops/release-notes/roadmap/2025/manage-high-privilege-scopes" data-raw-source="[Manage high privilege scopes, pipeline decorators, and unpublished extensions](/azure/devops/release-notes/roadmap/2025/manage-high-privilege-scopes)">Manage high privilege scopes, pipeline decorators, and unpublished extensions</a>
+         </td>
+         <td>General</td>      
+      </tr>
+      <tr> 
+         <td>
+            <a href="/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/roadmap/2025/general-mcp-server-for-ado)">MCP Server for Azure DevOps (GA)
+         </td>
+         <td>General</td>
+      </tr>      
+      <tr>     
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent" data-raw-source="[Work item integration wth GitHub coding agent](/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent)">Support work item integration with the <br/>GitHub Copilot coding agent (GA)</a></td>      
+         <td>Boards</td>
+      </tr>     
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
+         <td>Pipelines</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/on-demand-execution" data-raw-source="[On-demand out of order execution of stages](/azure/devops/release-notes/roadmap/2025/on-demand-execution)">On-demand out of order execution of stages</a></td>
+        <td>Pipelines</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines" data-raw-source="[Support YAML pipelines in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines)">Support YAML pipelines in Azure Test Plans</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result" data-raw-source="[Latest Test Outcome in Requirements](/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result)">Latest Test Outcome in Requirements</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience" data-raw-source="[New Test Run experience - Public Preview](/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience)">New Test Run experience - Public Preview</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point" data-raw-source="[Enhanced Test Point Result Panel](/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point)">Enhanced Test Point Result Panel</a></td>
+         <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwrigth)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
+         <td>Test Plans</td>
+      </tr>    
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/audit-logging" data-raw-source="[Advanced Security events streamed to Azure DevOps audit log](/azure/devops/release-notes/roadmap/2025/ghazdo/audit-logging)">Advanced Security events streamed to Azure DevOps audit log</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking" data-raw-source="[Link Boards items to Advanced Security Alerts](/azure/devops/release-notes/roadmap/2025/ghazdo/boards-linking)">Link Boards items to Advanced Security Alerts</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata" data-raw-source="[Adding additional metadata for dependency alerts to improve remediation](/azure/devops/release-notes/roadmap/2025/ghazdo/dependency-metadata)">Adding additional metadata for dependency alerts to improve remediation</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/security-overview-bulk" data-raw-source="[Security overview bulk enablement enhancements](/azure/devops/release-notes/roadmap/2025/ghazdo/security-overview-bulk)">Security overview bulk enablement enhancements</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/alert-dismissal" data-raw-source="[Alert dismissal information displayed in alert detail view](/azure/devops/release-notes/roadmap/2025/ghazdo/alert-dismissal)">Alert dismissal information displayed in alert detail view</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement" data-raw-source="[Streamlining bulk enablement scenarios](/azure/devops/release-notes/roadmap/2025/ghazdo/streamlining-bulk-enablement)">Streamlining bulk enablement scenarios</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <td rowspan="8"><strong>2026 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts" data-raw-source="[Organization-level alerts view in security overview](/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts)">Organization-level alerts view in security overview</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr> 
-       <tr>          
+      </tr>
+      <tr>          
+        <td><a href="/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Remote Azure DevOps MCP Server</a></td>
+        <td>General</td>
+      </tr>
+      <tr>          
+        <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved Filtering Experience in Boards and Backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved Filtering Experience in Boards and Backlogs</a></td>
+        <td>Boards</td>
+      </tr>       
+      <tr>          
         <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
         <td>Boards</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved filter experience for boards and backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved filter experience for boards and backlogs</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-condensed-views" data-raw-source="[Condensed views for kanban and sprint boards](/azure/devops/release-notes/roadmap/2025/boards/boards-condensed-views)">Condensed views for kanban and sprint boards</a></td>
          <td>Boards</td>
-      </tr>
-       <tr>
+      </tr>      
+      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
          <td>Wiki</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/macos-agents-apple-silicon" data-raw-source="[Hosted macOS agents on Apple Silicon](/azure/devops/release-notes/roadmap/agents-apple-silicon)">Hosted macOS agents on Apple Silicon</a></td>
+        <td>Pipelines</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/large-agents" data-raw-source="[Large hosted agents](/azure/devops/release-notes/roadmap/large-agents)">Large hosted agents</a></td>
+        <td>Pipelines</td>
       </tr>
       <td rowspan="19"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>

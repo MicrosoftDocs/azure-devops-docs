@@ -10,6 +10,6 @@ description: Hosted macOS agents on Apple Silicon
 hide_comments: true
 ---
 
-# Hosted macOS agents on Apple Silicon
+# Hosted macOS agents on Apple Silicon (GA)
 
-Customers have been waiting for Apple Silicon (Arm64) support on Microsoft-hosted macOS agents in Azure Pipelines. We can't support this, or provide larger SKUs of macOS agents, because our current uniform billing model across Linux, Windows, and macOS-hosted agents is unable to support them. We are working on a solution.
+Apple Silicon (Arm64) support on Microsoft-hosted macOS agents in Azure Pipelines is currently in [preview](/azure/devops/pipelines/agents/hosted#macos-15-arm64-image-limited-public-preview). We will make this generally available for newly introduced macOS images.
