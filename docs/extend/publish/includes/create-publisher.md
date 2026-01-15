@@ -1,7 +1,3 @@
----
-ms.topic: how-to
----
-
 Every extension or integration, including those from Microsoft, must have a publisher. Anyone can create a publisher and publish extensions under it. You can also share publisher access with other users, such as your development team.
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher?managePageRedirect=true).
