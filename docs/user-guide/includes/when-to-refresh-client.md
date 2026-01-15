@@ -1,6 +1,3 @@
----
-ms.topic: concept-article
----
 To avoid potential errors, you should refresh your client application under the following circumstances:
 
 -   Process changes are made.
