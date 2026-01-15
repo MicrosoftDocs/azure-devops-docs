@@ -1,7 +1,3 @@
----
-ms.topic: how-to
----
-
 1. If you don't have an Azure subscription, create one.
 You can use the [free trial](https://azure.microsoft.com/pricing/free-trial/).
 
