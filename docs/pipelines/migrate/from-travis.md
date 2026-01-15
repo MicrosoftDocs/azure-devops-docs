@@ -62,9 +62,9 @@ steps:
 
 ### Language mappings
 
-The `language` keyword in Travis CI implies both the version
-of language tools to use and that many build steps are implicitly
-performed.  In Azure Pipelines, you need to specify the commands that you want to run.
+The `language` keyword in Travis CI works as both the version
+of language tools to use and an implicit signal that many build steps
+are performed. In Azure Pipelines, you specify the commands that you want to run.
 
 Here's a translation guide from the `language` keyword to the commands
 that are executed automatically for the most commonly used languages:
@@ -388,8 +388,8 @@ steps:
 ## Success and failure handling
 
 Travis allows you to specify steps that run when the build succeeds,
-using the `after_success` phase, or when the build fails, using the
-`after_failure` phase.  With Azure Pipelines you can define success and failure 
+by using the `after_success` phase, or when the build fails, by using the
+`after_failure` phase. By using Azure Pipelines, you can define success and failure 
 conditions based on the result of any step, which enables more flexible
 and powerful pipelines.
 
