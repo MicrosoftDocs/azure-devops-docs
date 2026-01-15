@@ -3,7 +3,7 @@ title: Pull request annotations
 author: ncouraud
 ms.author: nicour
 ms.date: 04/22/2024
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Advanced Security displays newly introduced vulnerabilities inline in Pull Requests
