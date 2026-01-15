@@ -1,7 +1,3 @@
----
-ms.topic: how-to
----
-
 1. Add your contribution - the Hello hub - to your extension manifest.
 
 	> Include the [scopes](../../develop/manifest.md#scopes) that your extension requires.
