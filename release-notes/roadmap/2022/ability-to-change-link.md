@@ -3,7 +3,7 @@ title: Ability to change link type from Web UI
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Ability to change type of link from Web UI
