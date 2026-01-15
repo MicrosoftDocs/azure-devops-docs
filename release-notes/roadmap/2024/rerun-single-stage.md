@@ -3,7 +3,7 @@ title: Rerun single stage
 author: silviuandrica
 ms.author: sandrica
 ms.date: 11/8/2023
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Rerun single stage
