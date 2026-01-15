@@ -1,6 +1,4 @@
----
-ms.topic: reference
----
+
 ::: moniker range="azure-devops"
 > [!div class="mx-tdCol2BreakAll"]  
 > | Role | Description |
