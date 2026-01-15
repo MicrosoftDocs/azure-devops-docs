@@ -3,7 +3,7 @@ title: Private Dashboard
 author: jeom
 ms.author: jeom
 ms.date: 11/13/2023
-ms.topic: concept-article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Private Dashboard
