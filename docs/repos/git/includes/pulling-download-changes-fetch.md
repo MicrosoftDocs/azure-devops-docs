@@ -1,6 +1,3 @@
----
-ms.topic: how-to
----
 1. In the **Git Changes** window, choose **Fetch**. Then select **outgoing/incoming** to open the **Git Repository** window.
 
    :::image type="content" source="../media/pulling/visual-studio-2019/git-experience/fetch-git-changes-window.png" border="true" alt-text="Screenshot of the Fetch buttons and Incoming link in the Git Changes window of Visual Studio 2019." lightbox="../media/pulling/visual-studio-2019/git-experience/fetch-git-changes-window-lrg.png":::
