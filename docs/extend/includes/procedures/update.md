@@ -1,7 +1,3 @@
----
-ms.topic: how-to
----
-
 To update an extension you already published, do the following steps:
 
 > [!TIP]
