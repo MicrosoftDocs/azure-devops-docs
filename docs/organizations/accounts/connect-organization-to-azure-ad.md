@@ -55,7 +55,7 @@ Follow these steps to establish the connection between your Azure DevOps organiz
 
 1. **Initiate directory connection**: In the organization settings, select **Microsoft Entra ID** from the left navigation, then select **Connect directory** to begin the connection process.
 
-   :::image type="content" source="media/shared/select-azure-ad-connect-directory.png" alt-text="Screenshot shows the Connect directory button for connecting your organization to Microsoft Entra ID":::
+   :::image type="content" source="media/shared/select-azure-ad-connect-directory.png" alt-text="Screenshot shows the Connect directory button for connecting your organization to Microsoft Entra ID.":::
 
 1. **Configure directory connection**: From the dropdown menu, select your target Microsoft Entra ID directory, then select **Connect** to establish the connection.
 
@@ -74,7 +74,7 @@ Follow these steps to establish the connection between your Azure DevOps organiz
 
    :::image type="content" source="media/shared/azure-ad-select-resolve-for-disconnected-users.png" alt-text="Screenshot shows selecting the Resolve button to invite unmapped users.":::
 
-   :::image type="content" source="media/shared/resolve-disconnected-users.png" alt-text="Screenshot show mapping disconnected users.":::
+   :::image type="content" source="media/shared/resolve-disconnected-users.png" alt-text="Screenshot shows mapping disconnected users.":::
 
 > [!TIP]
 > For detailed guidance on resolving user mapping issues, see the [connection FAQs](./faq-azure-access.yml#faq-connect).
