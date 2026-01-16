@@ -5,7 +5,7 @@ ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 01/27/2025
-ms.custom: arm2024, sfi-image-nochange
+ms.custom: arm2024, sfi-image-nochange, support-driven
 ---
 
 You can create a variable group that links to existing Azure key vaults and maps selected key vault secrets to the variable group. Only the secret names are mapped to the variable group, not the secret values. When pipelines run, they link to the variable group to fetch the latest secret values from the vault at runtime.
@@ -51,10 +51,17 @@ If you don't have a key vault already, you can create one as follows:
 
 ### RBAC key vaults
 
-Key vaults with role-based access control (RBAC) permissions are not supported. We recommend setting your key vault permission model to **Vault access policy**. If you're using a key vault with RBAC permissions, you can use the following workaround to link your key vault to your variable group:
+> [!IMPORTANT]
+> **Network access requirements for RBAC key vaults:**
+> - **Public endpoint**: Key vaults with role-based access control (RBAC) permissions are supported when the key vault is accessible over a public endpoint.
+> - **Private endpoint**: RBAC key vaults behind private endpoints are not supported with Azure DevOps. Private endpoint access for RBAC key vaults is only available for [Azure trusted services](/azure/key-vault/general/overview-vnet-service-endpoints#trusted-services), and Azure DevOps is not currently a trusted service.
+>
+> If you need to use a key vault behind a private endpoint, we recommend setting your key vault permission model to **Vault access policy** instead of RBAC.
 
-1. [Create an ARM service connection](../../library/service-endpoints.md#create-a-service-connection)
-1. Navigate to Azure portal, find your key vault > **Access control (IAM)**, then grant the service connection the appropriate RBAC role (*Key Vault Secrets User* or *Key Vault Secrets Officer* or based on your scenario).
+To link an RBAC key vault (with public endpoint access) to your variable group:
+
+1. [Create an ARM service connection](../../library/service-endpoints.md#create-a-service-connection).
+1. Navigate to Azure portal, find your key vault > **Access control (IAM)**, then grant the service connection the appropriate RBAC role (*Key Vault Secrets User* or *Key Vault Secrets Officer* based on your scenario).
 
     > [!NOTE]
     > Make sure you have the **Key Vault Administrator** role to create secrets.
