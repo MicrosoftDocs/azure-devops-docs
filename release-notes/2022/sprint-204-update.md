@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/2/2022
 description: Improved Kanban board user experience (UX).  
+ms.topic: release-notes
 ---
 # Improved Kanban board user experience
 

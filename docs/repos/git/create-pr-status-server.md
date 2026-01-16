@@ -8,9 +8,7 @@ ms.topic: tutorial
 ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom:
-  - devx-track-js
-  - sfi-image-nochange
+ms.custom: devx-track-js, sfi-image-nochange
 # customer-intent: As a developer, I want to create a Node.js server that integrates with Azure DevOps pull request events so I can implement custom status checks and automated validation workflows using Microsoft Entra ID authentication.
 ---
 

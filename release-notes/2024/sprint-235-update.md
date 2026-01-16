@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 2/29/2024
 description: Show GitHub pull request details on linked work item (preview)
+ms.topic: release-notes
 ---
 # Show GitHub pull request details on linked work item (preview)
 

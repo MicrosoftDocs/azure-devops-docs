@@ -1,7 +1,7 @@
 ---
-title: Apply filters to backlogs, boards, queries, and plans in Azure Boards
+title: Filter backlogs, boards, and plans for focused work management
 titleSuffix: Azure Boards
-description: Learn how to apply filters to backlogs, boards, queries, and plans in Azure Boards
+description: Streamline your workflow with powerful filtering capabilities across Azure Boards tools. Learn to apply field, keyword, tag, and parent filters effectively.
 ms.custom: boards-backlogs, boards-kanban
 ms.service: azure-devops-boards
 ai-usage: ai-assisted
@@ -9,52 +9,68 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/22/2024
+ms.date: 01/13/2026
 ---
 
-# Interactively filter backlogs, boards, queries, and plans in Azure Boards
+# Filter and focus your work in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-<a id="filter"></a>
+By using interactive filtering in Azure Boards, you can focus your work management. You can narrow down large sets of work items across all board tools. Each Azure Boards tool comes with built-in filters that provide relevant starting points:
 
-Filter functions in Azure Boards empower you to interactively apply one or more filters to streamline your work item management. Each Azure Boards tool—such as **Backlogs**, **Boards**, and **Query results**—comes prefiltered to display a relevant subset of work items based on its specific functionality:
+- **Backlogs and boards**: Display work items based on team-configured **Area Paths** and **Iteration Paths**
+- **Query results**: Show work items matching specific query criteria
+- **Work items pages**: Present personalized views based on assignments and activity
 
-- **Backlogs and boards**: Show work items based on the selected **Area Paths** and **Iteration Paths** for your team.
-- **Query results**: List work items that match the query clauses you defined.
-
-To enhance your filtering capabilities, enable the filter feature by selecting the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** icon.
+To access advanced filtering capabilities, select the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** icon in any Azure Boards tool.
 
 :::image type="content" source="media/filter/filter-backlogs.png" alt-text="Screenshot of choosing Filter function in the latest versions.":::
 
-Even with these initial filters, you might still encounter a large number of work items. Interactive filtering allows you to narrow down your view and focus on a specific subset of work items by applying more filter criteria to each Azure Boards tool.
+By using interactive filtering, you can apply multiple criteria simultaneously to create highly focused views that support specific workflows and team needs.
 
-### Use cases for filters
+## Strategic filtering use cases
 
-Filters can significantly enhance your workflow by helping you accomplish the following tasks:
+Filtering enhances team productivity and workflow efficiency across various scenarios:
 
-- **Daily scrum meetings**: Focus the board on work assigned for a specific sprint to facilitate effective stand-ups.
-- **Sprints Taskboard**: Filter to view a particular team member's completed work, aiding in performance reviews and accountability.
-- **Group work items**: Concentrate on related work items by filtering based on **Parent Work Item**, **Area Path**, or **Tags**, enhancing organization and clarity.
-- **Triage work items**: Create and apply queries to isolate similar work items grouped by **Area Path** or **Tags**, enabling efficient issue resolution and backlog grooming.
+### Daily operations
+- **Sprint planning**: Filter backlogs to view specific iterations and capacity allocation
+- **Daily stand-ups**: Focus boards on current sprint work and blockers
+- **Sprint reviews**: Highlight completed work and user story demonstrations
+- **Retrospectives**: Filter by iteration to analyze team performance patterns
 
-By using these filter functions, your team can maintain focus, improve productivity, and ensure that critical tasks receive the attention they deserve.
+### Team coordination
+- **Individual focus**: Filter by assignee to view personal work items and responsibilities.
+- **Feature tracking**: Use parent work item filters to monitor epic or feature progress.
+- **Cross-team visibility**: Apply area path filters for multiteam coordination.
+- **Skill-based assignment**: Filter by tags to identify work requiring specific expertise.
 
-For more detailed information on using filters, see [Filter Backlogs, Boards, and Plans](filter-backlogs-boards-plans.md).
+### Management and reporting
+- **Portfolio reviews**: Filter by work item types (Epics, Features) for strategic discussions.
+- **Triage activities**: Group similar work items by area path or tags for efficient processing.
+- **Risk management**: Filter by priority or status to identify at-risk work.
+- **Resource planning**: Use assignee and iteration filters for capacity analysis.
+
+### Quality assurance
+- **Bug tracking**: Filter by work item type and state for defect management.
+- **Test coordination**: Use tags to identify testing phases and requirements.
+- **Release planning**: Filter by iteration and parent items for deployment readiness.
+
+By implementing strategic filtering, teams maintain focus, reduce cognitive load, and ensure critical work receives appropriate attention.
 
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
+| **Project membership**|  [Project member](../../organizations/projects/create-project.md)|
 
-## Supported filter functions 
+## Available filtering capabilities by tool
 
-Filter functions are available from all Azure Boards tools: Work items, Boards, Backlogs, Sprint Backlogs and Taskboards, Queries, and Delivery Plans. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
+Filtering capabilities vary across Azure Boards tools based on their specific functionality and Azure DevOps version. Each tool supports different combinations of filter types to optimize your workflow.
 
-The following table indicates the supported options based on the tool indicated with a ✔️ or is listed. 
+> [!NOTE]
+> Use the version selector to view the specific filters available for your Azure DevOps version.
 
-Backlogs and boards are subject to filters defined for the team as described in [Create and manage your backlog](create-your-backlog.md). Other tools have predefined filters based on the view, query filter clauses, or settings you select.
+The following table shows supported filter options for each tool. Backlogs and boards inherit team-level filters as described in [Create and manage your backlog](create-your-backlog.md).
 
 :::row:::
    :::column span="1.5":::
@@ -74,7 +90,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="<=azure-devops"
+:::moniker range="<=azure-devops"
 :::row:::
    :::column span="1.5":::
       [**Work items**](../work-items/view-add-work-items.md) 
@@ -96,7 +112,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
+:::moniker-end 
 :::row:::
    :::column span="1.5":::
       [**Boards**](../boards/kanban-overview.md)   
@@ -141,7 +157,7 @@ Backlogs and boards are subject to filters defined for the team as described in 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="<=azure-devops"
+:::moniker range="<=azure-devops"
 :::row:::
    :::column span="1.5":::
      [**Sprints** (Backlogs  
@@ -157,14 +173,14 @@ Backlogs and boards are subject to filters defined for the team as described in 
       - Area Path 
    :::column-end:::
    :::column span="1.5":::
-      ✔️ (Note 2)   
+      ✔️ 
    :::column-end:::
    :::column span="1":::
       ✔️ 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
+:::moniker-end 
  
 :::row:::
    :::column span="1.5":::
@@ -211,9 +227,9 @@ Backlogs and boards are subject to filters defined for the team as described in 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
+:::moniker-end 
   
-::: moniker range="<=azure-devops"
+:::moniker range="<=azure-devops"
 :::row:::
    :::column span="1.5":::
      [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
@@ -236,23 +252,22 @@ Backlogs and boards are subject to filters defined for the team as described in 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end   
+:::moniker-end   
 
 **Notes**
 
-1. While the **Parent Work Item** isn't a filter function for **Backlogs** or **Query Results**, you can add the **Parent** field as a column and then do a keyword/phrase search on the Parent title to effectively filter on parent work items. The Parent field is supported for Azure DevOps Server 2020 and later versions. See also the [Parent field and Parent Work Item](#parent-filter) section later in this article. 
-2. The **Parent Work Item** filter is supported for **Sprint Backlogs** and **Taskboards** for Azure DevOps Server 2020 and later versions. 
+1. While the **Parent Work Item** filter function isn't available for **Backlogs** or **Query Results**, you can add the **Parent** field as a column and then do a keyword or phrase search on the parent title to effectively filter on parent work items. See also the [Parent field and Parent Work Item](#parent-filter) section later in this article. 
 
-::: moniker range="<=azure-devops"
+:::moniker range="<=azure-devops"
 
 ### More filter, sort, group, reorder, and rollup functions 
 
 Along with the standard filter functions summarized in the previous table, the following table indicates which tools have more filters you can apply, sort, group, reorder, and rollup functions. Some functions, such as reorder, don't work when the filter function is enabled.  
 
 <br/>
-::: moniker-end 
+:::moniker-end 
 
-::: moniker range="<=azure-devops"
+:::moniker range="<=azure-devops"
 ---
 :::row:::
    :::column span="2":::
@@ -405,7 +420,7 @@ Along with the standard filter functions summarized in the previous table, the f
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
+:::moniker-end 
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
@@ -428,8 +443,8 @@ Along with the standard filter functions summarized in the previous table, the f
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
-::: moniker range="<=azure-devops"
+:::moniker-end 
+:::moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
      [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
@@ -451,7 +466,7 @@ Along with the standard filter functions summarized in the previous table, the f
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
+:::moniker-end 
 
  
 
@@ -466,20 +481,20 @@ Along with the standard filter functions summarized in the previous table, the f
   
 
 **Notes**
-1. The **Work items** page is subject to filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). **Boards** and **Backlogs** are subject to filters defined for the team. Completed and In Progress work items get determined based on the state categories assigned to the workflow state as described in [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md#category-states). 
-2. Grouping is supported through portfolio backlogs and boards, parent-child links, and tree hierarchy. Tree hierarchies are flattened when filtering is applied and reinstated when filtering is cleared.  
-3. **Backlogs** and **Sprint Backlogs** support reordering. However, when filtering is enabled, reordering isn't supported.
-4. **Taskboards** provides a **Group by** function based on **People** or **Stories**.  
-5. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
-6. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
+1. The **Work items** page applies filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). The team defines filters for **Boards** and **Backlogs**. The state categories that are assigned to the workflow state determine when work items are completed or in progress, as described in [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md#category-states). 
+1. You can group work items through portfolio backlogs and boards, parent-child links, and tree hierarchy. Tree hierarchies are flattened when you apply filtering and reinstated when you clear filtering.  
+1. **Backlogs** and **Sprint Backlogs** support reordering. However, when you enable filtering, reordering isn't supported.
+1. **Taskboards** provides a **Group by** function based on **People** or **Stories**.  
+1. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
+1. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
 
-::: moniker range="<=azure-devops"
+:::moniker range="<=azure-devops"
 For more information about these other functions, see the following articles: 
 - [Reorder cards (boards)](../boards/customize-cards.md#reorder-cards)  
 - [Display rollup progress or totals](display-rollup.md) 
 - [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
  
-::: moniker-end 
+:::moniker-end 
 
  
 
@@ -487,16 +502,26 @@ For more information about these other functions, see the following articles:
 
 ### Parent Work Item filter and Parent field
 
-The **Parent Work Item** filter enables you to focus on one or more select features or epics, providing better visibility into related work items within a hierarchy.
+By using the **Parent Work Item** filter, you can focus on one or more select features or epics. You get better visibility into related work items within a hierarchy.
 
-The **Parent** field can be added to work item lists through the **Column Options** dialog (except for the **Work items** tool) and to cards on boards and Taskboards. This field displays the title of the parent work item, making it easier to understand relationships and dependencies between work items. 
+You can add the **Parent** field to work item lists through the **Column Options** dialog (except for the **Work items** tool) and to cards on boards and Taskboards. This field displays the title of the parent work item, making it easier to understand relationships and dependencies between work items. 
 
-## Persistence and saving filter options
+## Filter persistence and user experience
 
-Once you set filter options for a specific view, your settings persist until you modify them. There's no need to select a save button or take any other actions.
+Filters are automatically saved and user-specific, providing a personalized experience across Azure Boards tools.
 
-> [!NOTE]
-> You can't set default filter options or configure filters for other team members.
+### How filter settings persist
+- **Automatic saving**: Filter configurations are saved automatically without requiring manual action.
+- **User-specific**: Each team member maintains independent filter settings.
+- **Session persistence**: Settings remain active across browser sessions and refreshes.
+- **Cross-device sync**: Filter preferences synchronize across different devices when signed in.
+
+### Important limitations
+- **No team defaults**: You can't configure default filters for other team members.
+- **No shared configurations**: Users can't share filter settings.
+- **Tool-specific**: Each Azure Boards tool maintains separate filter settings.
+
+**Best practice**: Regularly review and clear filters to ensure you're viewing complete, current information.
 
 To filter work items based on specific fields, first add the field as a column or to the card. For example, to filter by **Assigned To**, **Iteration Path**, **Work Item Type**, or any other field's content, ensure these fields are displayed on the cards, backlog, plan, or list.
 
@@ -504,62 +529,87 @@ All filter configurations are user-specific and remain active until you clear th
 
 To add columns or fields, see the following articles: 
 
-::: moniker range="<=azure-devops"
-- For Backlogs and Queries, see [Change column options](set-column-options.md)
-- For Boards, see [Customize cards](../boards/customize-cards.md)
-- For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
+:::moniker range="<=azure-devops"
+- For Backlogs and Queries, see [Change column options](set-column-options.md).
+- For Boards, see [Customize cards](../boards/customize-cards.md).
+- For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md).
 - For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
-::: moniker-end
+:::moniker-end
 
-## Open and clear filter functions  
+## Enable and configure filtering
 
-1. From the Azure Boards tool, choose the view you want. For example: 
-	- For Work items, select **Assigned to me**, **Following**, **Mentioned**, or other view. 
-	- For Backlogs and Boards, select the backlog level you want, such as **Stories**, **Features**, or **Epics**.  
-	- For sprint Backlogs and Taskboards, choose the iteration 
-	- For queries, define the query filter criteria of interest. 
+Follow these steps to set up effective filters across Azure Boards tools:
 
-2. Choose any other view settings available for your view. For example: 
-	- For Work items, from the **View options** menu, enable/disable **Completed Work Items**. 
-	- For Backlogs, from the **View options** menu, enable/disable **In Progress items** or **Completed Child items**.  
-	- For Taskboards, from the **Person** menu, choose **All**, **Unassigned**, or a specific team member.  
+### Step 1: Select your view
+Choose the view that fits your filtering needs:
 
-3. For list views, add columns to display fields containing text you want to filter on or possibly sort on. For card views, add fields to display on cards containing text you want to filter on. 
+**Work items page:**
+- **Assigned to me**: Items where you're the assignee
+- **Following**: Items you're monitoring for changes  
+- **Mentioned**: Items where you're @mentioned
+- **Recently created/updated**: Items with recent activity
 
-4. Select **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. Or, enter the **Ctrl+Shift+f** keyboard shortcut.  
+**Backlogs and boards:**
+- Select backlog level: **Stories**, **Features**, or **Epics**
+- Choose appropriate team area path and iteration
 
-	For example, here we open the filter toolbar for the board, **Backlog items**. 
+**Sprint tools:**
+- Select specific iteration from sprint selector
+- Choose appropriate sprint backlog or taskboard view
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of choosing Filter function.](media/filter-boards/filter-kb-choose-filter-services.png)
+**Queries:**
+- Define base query criteria before applying more filters
+- Ensure query returns manageable result set
 
-5. Choose your filters of interest. 
+### Step 2: Configure view settings
+Optimize your view before applying filters:
 
-	The filter icon changes to a solid icon, **Filter** :::image type="icon" source="../../media/icons/filtered.png" border="false":::, to indicate filtering is applied. 
+**Work items:** Enable or disable **Completed Work Items** from **View options**
+**Backlogs:** Configure **In Progress items** or **Completed Child items** display
+**Taskboards:** Select **All**, **Unassigned**, or specific team member from **Person** menu
 
-	The page refreshes to show only those work items that meet all the selected filter criteria.
+### Step 3: Add relevant columns or fields
+Make sure you can see the fields you want to filter on:
+- **List views**: Add columns through **Column Options** 
+- **Card views**: Choose which fields show up on cards
+- **Common filter fields**: Assigned To, Work Item Type, State, Area Path, Iteration Path
+
+### Step 4: Open the filter toolbar
+Turn on filtering by using one of these methods:
+- Select **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: icon
+- Use keyboard shortcut: **Ctrl+Shift+F**
+
+Example: Opening filter toolbar for the Backlog items board:
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of choosing Filter function.](media/filter-boards/filter-kb-choose-filter-services.png)
+
+### Step 5: Apply your filters
+Pick the filter criteria you want from the options. The filter icon changes to :::image type="icon" source="../../media/icons/filtered.png" border="false"::: **Filter** (solid) to show that filtering is active.
+
+The page refreshes automatically to show only work items that match all the selected criteria.
 
 ### Inactive functions
  
 ::: moniker range="azure-devops"
-When filtering is applied, the following functions are disabled or altered: 
+When you apply a filter, the following functions are disabled or altered: 
 - For backlogs, the add-a-backlog-item panel, reordering (stack ranking), and forecasting tools are disabled. 
 - For backlogs set to **Show Parents**, the tree hierarchy is flattened, unless you enable the **Keep hierarchy with filters** from the **View Options** menu. See [Filter your backlog and maintain the hierarchy](#keep hierarchy) provided later in this article. 
-::: moniker-end
+:::moniker-end
 
 ::: moniker range="< azure-devops"
-When filtering is applied, the following functions are disabled or altered 
+When you apply a filter, the following functions are disabled or altered: 
 - For backlogs, the add-a-backlog-item panel, reordering (stack ranking), and forecasting tools are disabled. 
 - For backlogs set to **Show Parents**, the tree hierarchy is flattened. 
-::: moniker-end
+:::moniker-end
 
 ### Clear or dismiss filtering
 
 To clear and dismiss filtering, choose **Clear and dismiss filtering** :::image type="icon" source="../../media/icons/close-filter.png" border="false":::.
 
-Filters remain in place until you explicitly clear them. When you refresh your backlog, board, or other tool, or sign in from another browser, filters remain set to your previous values.
+Filters remain in place until you explicitly clear them. When you refresh your backlog, board, or other tool, or sign in from another browser, filters stay set to your previous values.
 
-Once the board is filtered, you can choose the filter icon to hide the drop downs and view the applied filters on the board. The filter icon turns opaque to signify a filtered board.
+After you filter the board, you can choose the filter icon to hide the drop downs and view the applied filters on the board. The filter icon turns opaque to signify a filtered board.
 
 <a id="keep hierarchy"></a> 
 
@@ -571,7 +621,7 @@ You can filter your backlog and maintain the hierarchy of work by choosing show 
 
 :::image type="content" source="media/filter/keep-hierarchy-with-filters.png" alt-text="Screenshot of View options menu, Keep hierarchy with filters selected."::: 
 
-::: moniker-end
+:::moniker-end
 
 ## Filter logic and Boolean operators
 
@@ -579,146 +629,182 @@ Applying Boolean operators to filters is only supported for tags, as described i
 
 <a id="text-filter"></a>
 
-## Apply keyword and ID filters
+## Keyword and ID filtering strategies
 
-The keyword filter allows you to search lists or cards based on the fields configured through **Column Options** or board settings. You can filter by specific values, such as IDs even if the ID field is visible. When using the keyword filter, ensure that the fields containing the desired text or tags are displayed in your view.
+Keyword filtering provides powerful text-based search across visible work item fields.
+
+### How keyword filtering works
+
+- **Field scope**: Searches all fields configured in **Column Options** or visible on cards
+- **Case insensitive**: Search terms ignore capitalization differences
+- **Flexible matching**: Finds partial matches within field content
+- **ID support**: Directly filter by work item IDs even if ID field isn't visible
 
 > [!TIP]
-> Filtering is case-insensitive.
+> Ensure relevant fields (Title, Tags, Description) are displayed before applying keyword filters for best results.
 
-<a id="characters-ignore"></a>  
+### Character filtering behavior
 
-### Ignore characters by keyword filter criteria
+The keyword filter ignores these characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash).
 
-The filter criteria ignore the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
+### Example: Filter board by keyword
 
-### Filter a board using a keyword
-
-Here we filter the board to only show those cards that include 'web' either in the title, tag, or field.
+This example shows filtering a board to display only cards containing "web" in any visible field:
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of board, Filter using keyword search.](media/filter-boards/filter-kb-text-web-services.png)
 
-## Filter a backlog by using a keyword
+### Example: Filter backlog with keyword
 
-Here we filter the Backlog with **Show Parents** enabled, to only show work items that include 'web'. 
+Filter a hierarchical backlog with **Show Parents** enabled to show work items containing "web":
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Backlog, Hierarchy, Filter using keyword search.](media/filter/filter-backlog-web-keyword.png)
 
-The filtered set is always a flat list, even if you selected to show parents. 
+> [!NOTE]
+> Filtered results always display as a flat list, even with **Show Parents** enabled. 
 
 <a id="field-filter"></a>
 
-## Filter based on a field  
+## Filter by work item fields
 
-With filtering turned on, choose one or more values from the multi-select drop-down menu for each field available to you. The values for these fields are populated as follows: 
+Field-based filtering gives you precise control over which work items appear in your view.
 
-- **Area**: The Node Name, which specifies the last node of an Area Path, of valid Area Paths and for which there are work items assigned to that Area Path 
-- **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
-- **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration 
-- **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
-- **Tags**: All tags assigned to work items on the board
-- **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board  
+### How field filter values populate
 
-> [!NOTE]   
-> Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
->
-> The values that populate the filter options are based on the work items that are currently loaded and displayed. For example, if you have a backlog with 2,000 work items, but only 1,000 are displayed on a board, the filter options are based on just the items displayed.
+Filter dropdown options populate based on actual work item data:
 
-### Filter a board by using select field values
+* **Area Path**: Displays the node name (last segment) of all area paths containing work items.
+* **Assigned To**: Shows all users currently assigned to visible work items, plus **Unassigned** option.
+* **Iteration Path**: Lists iterations [configured for the current team](../sprints/define-sprints.md) that contain work items.
+* **Work Item Type**: Shows types from relevant categories (Requirements, Features, Epics) with existing work items.
+* **Tags**: Displays all tags assigned to work items in the current view.
+* **Parent Work Items**: Shows parent items (Features or Epics) defined for the team.
 
-You can filter by select field values using the board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
+> [!IMPORTANT]
+> Filter options depend on currently loaded work items. If you have a large backlog (2,000+ items) but only 1,000 are displayed, filter options reflect only the displayed items.
 
-For example, here we filter for all items assigned to Jamal and Raisa.
+### Multi-select filtering logic
 
-::: moniker range="<=azure-devops"
+Field filters use consistent Boolean logic:
+
+1. **Assigned to**: Shows cards assigned to User1 **OR** User2
+   **AND**
+1. **Iteration**: Shows cards in Iteration1 **OR** Iteration2  
+   **AND**
+1. **Work Item Type**: Shows Type1 **OR** Type2 work items
+   **AND**
+1. **Tags**: Shows cards with Tag1 **AND/OR** Tag2 (based on selection)
+   **AND**
+1. **Parent Work Items**: Shows cards with Parent1 **OR** Parent2
+
+### Example: Filter by assignee
+
+To view work items assigned to specific team members:
+
+:::moniker range="<=azure-devops"
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of enable board, Filter on assignment field](media/filter-boards/filter-kb-filters-chosen-services.png)
-::: moniker-end
+> ![Screenshot of enable board, Filter on assignment field.](media/filter-boards/filter-kb-filters-chosen-services.png)
+:::moniker-end
 
-<a id="filter-logic"></a>
-
-### Board filter logic
-
-Cards are filtered based on the assignments made in the following order and logic:
-
-1. **Assigned to**:  Show all cards that are assigned to user 1 ```OR``` user 2
-	```AND```
-2. **Iteration**: Show all cards that are assigned to Iteration 1 ```OR```  Iteration 2
-	```AND```
-3. **Work Item type**: Show all cards that are work item type 1 ```OR``` work item type 2
-	```AND```
-4.	**Tags**: Show all cards that have tag 1 ```AND``` or ```OR``` tags 2, based on your selection of ```AND | OR```.
-	```AND```
-5.	**Parent Work Items**: Show all cards that have Parent Work Item 1 ```OR``` Parent Work Item 2.
+This example filters for all items assigned to Jamal and Raisa, so you can see both users' work at the same time.
 
 ### Filter a backlog by using fields
 
-Here we show a filtered backlog based on the keyword "issues." Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you selected to show a hierarchical backlog view. 
+This example shows a filtered backlog based on the keyword "issues." Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you selected to show a hierarchical backlog view. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of filtered backlog based on the keyword "issues".](media/filter/filter-issues-keyword.png)   
 
 <a id="parent-filter"></a>
 
-## Filter based on the Parent Work Item 
+## Filter by parent work items for focused feature tracking
 
-You can use the **Filter by parent** feature to filter by select parent work items using the board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features).
+Parent work item filtering enables focused viewing of specific features or epics and their related child items.
 
-Use this feature only when you created features or epics and linked them to user stories or features, respectively. A quick and easy way to create the links is to [map them using drag-and-drop](organize-backlog.md). Mapping creates parent-child links between the work items.
+### When to use parent filtering
 
-> [!NOTE]
-> The **Filter by parent**  feature doesn't support filtering of parent work items of the same work item type. For example, you can't filter the Stories backlog by specifying user stories that are parents of nested user stories.
+**Prerequisites:**
+- Create features or epics and link them to child items.
+- Establish parent-child relationships through [drag-and-drop mapping](organize-backlog.md).
+- Works on product backlogs (Stories, Product Backlog Items, Requirements) and portfolio backlogs (Features).
 
-To start filtering, choose **Filter** :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false":::. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](../boards/kanban-epics-features-stories.md) you defined.
+**Limitations:**
+- Can't filter by parent work items of the same type (for example, user stories with user story parents).
+- Requires existing parent-child link relationships.
 
-Here, we choose two features on which to filter the board:
+### How to apply parent filtering
 
-::: moniker range="<=azure-devops"
+1. Select **Filter** :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false"::: to open filtering options.
+1. Choose one or more values from the **Parent Work Item** dropdown.
+1. Available options come from Features (for story boards) or Epics (for feature boards) that you define for your team.
+
+The following example shows filtering by two specific features:
+
+:::moniker range="<=azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of board, Filter on Parent field.](media/filter-boards/filter-kb-parent-filters-services.png)
-::: moniker-end
+:::moniker-end
 
-The final board displays just those stories linked as child work items to the selected features.
+The filtered board displays only child work items linked to the selected parent features, providing focused feature-level visibility.
 
 <a id="tags"></a>
 
-## Filter based on tags
+## Filter by tags for flexible categorization
 
-If you added tags to your work items, you can filter your work using one or more tags. For backlogs and query results, add **Tags** as a column option before filtering on tags.  
+Tag-based filtering provides flexible work item categorization beyond formal area and iteration paths.
 
-Check the boxes of those tags that you want to filter on. Keep the **OR** selection to do a logical OR for all the tags  you selected. Or, choose the **AND** option to do a logical AND on all the selected tags. 
+### Tag filtering setup
+
+**Prerequisites:**
+- Assign tags to work items.
+- Add **Tags** as a column for backlogs and query results before filtering.
+- Make tags visible on cards for board filtering.
+
+### Boolean tag filtering options
+
+**OR logic (default)**: Select multiple tags to show work items containing any of the selected tags.
+**AND logic**: Choose **AND** option to show work items containing all selected tags simultaneously.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of filtering board based on tags.](media/filter/filter-boards-tags.png) 
 
-For more information about tags, see [Add tags to work items to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).
+### Effective tag filtering strategies
+
+- **Feature grouping**: Use tags like `user-management`, `reporting`, `api-integration`.
+- **Skill identification**: Apply tags such as `frontend`, `backend`, `database`, `design`.
+- **Priority marking**: Tag urgent items with `critical`, `hotfix`, `high-priority`.
+- **Process tracking**: Use workflow tags like `ready-for-review`, `needs-testing`, `blocked`.
+- **Cross-team coordination**: Mark items affecting multiple teams with relevant team tags.
+
+**Best practices:**
+- Establish team tagging conventions for consistency.
+- Use descriptive, searchable tag names.
+- Regularly review and clean up unused tags.
+- Combine tag filtering with other criteria for precise results.
+
+For comprehensive tag management guidance, see [Add tags to work items to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).
   
 ::: moniker range="azure-devops"
 
 ## Filter the history view within a work item form 
 
-In addition to all the filter features described earlier in this article, you can also filter the history view within a work item form. 
+In addition to the filter features described earlier in this article, you can also filter the history view within a work item form. 
 
-To quickly find revisions made that contain a keyword, or made by specific people or to a specific field, enable the filter feature by choosing :::image type="icon" source="../queries/media/history-audit/filter-icon.png" border="false"::: **Toggle filter**.  
+To quickly find revisions that contain a keyword, or revisions made by specific people or to a specific field, enable the filter feature by choosing :::image type="icon" source="../queries/media/history-audit/filter-icon.png" border="false"::: **Toggle filter**.  
 
 :::image type="content" source="../queries/media/history-audit/history-filter.png" alt-text="Screenshot of Work item form, History tab, Web portal, history filter enabled.":::
 
 For more information, see [Query work item history and discussion fields](../queries/history-and-auditing.md#filter-history).
 
-::: moniker-end
+:::moniker-end
 
 ## Related content  
 
 - [Create and manage you backlog](create-your-backlog.md)
-- [About backlogs](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items)
 - [Change column options](set-column-options.md)
 - [Display rollup progress or totals](display-rollup.md) 
 - [Customize cards](../boards/customize-cards.md)
-- [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-- [Tags](../queries/add-tags-to-work-items.md) 
-- [Query work items that you're following](../work-items/follow-work-items.md#query-work-items-that-youre-following)
-- [Reorder cards (boards)](../boards/customize-cards.md#reorder-cards)  
+- [Customize a sprint Taskboard](../sprints/customize-taskboard.md) 
 
 <!--- Other filter features cross-service such as Filter pipelines -->

@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 1/19/2022
 description: The windows-latest image label will be changed to Windows Server 2022. 
+ms.topic: release-notes
 ---
 
 # Microsoft-hosted agents update

@@ -10,9 +10,7 @@ ms.author: Divais
 author: Divais
 monikerRange: 'azure-devops'
 ms.date: 10/24/2025
-ms.custom:
-  - cross-service
-  - sfi-image-nochange
+ms.custom: cross-service, sfi-image-nochange
 ---
 
 # Use Azure Repos with Slack

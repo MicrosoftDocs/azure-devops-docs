@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 8/23/2023
 description: Enhanced security management 
+ms.topic: release-notes
 ---
 # Enhanced security management 
 

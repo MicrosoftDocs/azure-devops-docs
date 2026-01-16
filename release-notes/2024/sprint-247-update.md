@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 11/13/2024
 description: Improved GitHub Advanced Security Scanning
+ms.topic: release-notes
 ---
 # Improved GitHub Advanced Security Scanning
 

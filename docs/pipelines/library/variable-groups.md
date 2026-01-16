@@ -7,10 +7,7 @@ ms.author: ronai
 author: RoopeshNair
 ms.date: 08/15/2024
 monikerRange: '<= azure-devops'
-ms.custom:
-  - devx-track-azurecli
-  - pipelinesresourcesrefresh
-  - sfi-image-nochange
+ms.custom: devx-track-azurecli, pipelinesresourcesrefresh, sfi-image-nochange
 ---
 
 # Manage variable groups

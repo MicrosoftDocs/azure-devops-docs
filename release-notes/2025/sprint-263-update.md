@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/14/2025
 description: Secret expiration detection in Azure service connection
+ms.topic: release-notes
 ---
 
 # Secret expiration detection in Azure service connection

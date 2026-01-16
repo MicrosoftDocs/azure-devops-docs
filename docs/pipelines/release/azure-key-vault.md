@@ -4,10 +4,7 @@ description: How to create Azure Key vaults, store secrets, and use them in your
 ms.topic: tutorial
 ms.date: 04/23/2024
 monikerRange: '>= azure-devops'
-ms.custom:
-  - devx-track-azurecli
-  - arm2024
-  - sfi-image-nochange
+ms.custom: devx-track-azurecli, arm2024, sfi-image-nochange
 "recommendations": "true"
 ---
 

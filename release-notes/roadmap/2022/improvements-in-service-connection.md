@@ -3,7 +3,7 @@ title: Improvements in service connection usage history
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Improvements in service connection usage history

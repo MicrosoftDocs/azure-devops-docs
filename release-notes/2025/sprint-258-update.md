@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/30/2025
 description: Azure DevOps MCP Server in public preview
+ms.topic: release-notes
 ---
 # Azure DevOps MCP Server in public preview
 

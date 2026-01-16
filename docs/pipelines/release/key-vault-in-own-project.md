@@ -4,9 +4,7 @@ description: Lean how to set up Azure Key vaults with your own project and use i
 ms.topic: tutorial
 ms.date: 04/14/2025
 monikerRange: "<=azure-devops"
-ms.custom:
-  - arm2024
-  - sfi-image-nochange
+ms.custom: arm2024, sfi-image-nochange
 "recommendations": "true"
 ---
 

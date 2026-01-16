@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 11/18/2025
+ms.date: 01/14/2026
 ms.topic: how-to
 ---
 
@@ -315,7 +315,6 @@ Each image includes the following installed software:
 |-------|-------------------|
 | Azure Pipelines - Windows Server 2025 | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Azure Pipelines - Windows Server 2022 | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md) |
-| Azure Pipelines - Windows Server 2019 | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2019-Readme.md) |
 | Azure Pipelines - Ubuntu 24.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
 | Azure Pipelines - Ubuntu 22.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md) |
 
@@ -531,7 +530,6 @@ In addition to any aliases that you configure, Azure Pipelines images have the f
 |-----------------------|------------------|
 | Azure Pipelines - Windows Server 2025 | `windows-2025` |
 | Azure Pipelines - Windows Server 2022 | `windows-2022` |
-| Azure Pipelines - Windows Server 2019 | `windows-2019` |
 | Azure Pipelines - Ubuntu 24.04 | `ubuntu-24.04` |
 | Azure Pipelines - Ubuntu 22.04 | `ubuntu-22.04` |
 
@@ -574,10 +572,10 @@ Managed DevOps Pools agent images are retired when the image's operating system 
 
 #### Azure Pipelines - Windows Server 2019 image deprecation schedule
 
-Managed DevOps Pools is removing the **Azure Pipelines – Windows Server 2019** image.
+Managed DevOps Pools has removed the **Azure Pipelines – Windows Server 2019** Azure pipelines image.
 
-- Creation of new pools that use the **Azure Pipelines – Windows Server 2019** image is disabled as of November 1, 2025, but existing pools on these images will continue to run until December 31, 2025.
-- On December 31, 2025, use of the **Azure Pipelines – Windows Server 2019** image will be disabled. Agents that use this image don't provision and pipelines don't run.
+- Creation of new pools that use the **Azure Pipelines – Windows Server 2019** image was disabled as of November 1, 2025, but existing pools on these images will continue to run until December 31, 2025.
+- On December 31, 2025, use of the **Azure Pipelines – Windows Server 2019** image was disabled. Agents that use this image don't provision and pipelines don't run.
 
 To keep your pools running if you use the **Azure Pipelines – Windows Server 2019** image, update to the **Azure Pipelines - Windows Server 2022** image. You can also use the Windows Server 2019 image from [selected marketplace images](./configure-images.md#selected-marketplace-images) or your own [Azure Compute Gallery](./configure-images.md#azure-compute-gallery-images) Windows 2019 image. The marketplace image doesn't include the preinstalled software from the Azure Pipelines image.
 

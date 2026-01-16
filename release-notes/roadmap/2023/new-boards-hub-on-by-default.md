@@ -3,7 +3,7 @@ title: New Boards Hub on by default
 author: danhellem
 ms.author: dahellem
 ms.date: 06/23/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: New Boards Hub on by default

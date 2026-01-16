@@ -3,7 +3,7 @@ title: Support for JavaScript (Playwright) in Azure Test Plans
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 04/17/2025
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Support for JavaScript (Playwright) in Azure Test Plans

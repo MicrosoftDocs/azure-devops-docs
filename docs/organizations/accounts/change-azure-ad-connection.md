@@ -9,9 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 11/08/2024
 monikerRange: 'azure-devops'
-ms.custom:
-  - engagement-fy23
-  - sfi-image-nochange
+ms.custom: engagement-fy23, sfi-image-nochange
 ---
 
 # Change your organization connection to a different Microsoft Entra ID

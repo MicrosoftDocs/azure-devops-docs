@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.update: 90-days
-ms.date: 09/18/2025
+ms.date: 01/09/2026
 #customer intent: As a project team member, I want to set up Azure DevOps CLI and understand how to access pipelines, boards, repos, and artifacts. 
 ---
 
@@ -20,15 +20,15 @@ ms.date: 09/18/2025
 This quickstart shows how to install and start using the Azure DevOps extension for the Azure Command Line Interface (CLI). The extension adds commands for managing Azure DevOps Services from the command line so you can script and automate common tasks.
 
 What you'll learn:
-- How to install the Azure DevOps extension for Azure CLI.
-- How to sign in, configure defaults, and get help for commands.
-- How to open Azure DevOps in a browser from the CLI.
+- How to install the Azure DevOps extension for Azure CLI
+- How to sign in, configure defaults, and access help for commands
+- How to use the CLI to open Azure DevOps items in a browser
 
 Quick steps:
-1. Install Azure CLI (if not already installed).
-2. Add or update the Azure DevOps extension.
-3. Sign in and set default organization/project.
-4. Run `az devops --help` or open an artifact with `--open`.
+1. Install Azure CLI (if not already installed)
+2. Add or update the Azure DevOps extension
+3. Sign in and set default organization/project
+4. Use `az devops --help` or open items with `--open`
 
 > [!NOTE]  
 > The Azure DevOps CLI extension works only with Azure DevOps Services (cloud). It doesn't support Azure DevOps Server (on-premises).
@@ -58,7 +58,7 @@ az --version
 1. To sign in, run the `az login` command. Azure CLI supports only interactive sign-in using user name and password with `az login`. To sign in using a Personal Access Token (PAT), see [Sign in via Azure DevOps PAT](log-in-via-pat.md).
 
    > [!NOTE]  
-   > The Azure DevOps extension doesn't currently support authenticating by using [Managed Identities](../integrate/get-started/authentication/service-principal-managed-identity.md).
+   > The Azure DevOps CLI extension currently supports interactive authentication and PAT authentication. For service principals and managed identities, use the REST APIs directly or client libraries.
 
 1. We recommend that you set the default configuration for your organization and project. Otherwise, you can specify the values in the individual commands themselves.  
 

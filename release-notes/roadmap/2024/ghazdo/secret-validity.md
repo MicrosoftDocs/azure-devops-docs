@@ -3,7 +3,7 @@ title: Secret validity checking
 author: ncouraud
 ms.author: nicour
 ms.date: 11/8/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Advanced Security shows the results of validity checking for supported secret types

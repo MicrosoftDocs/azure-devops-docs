@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 06/17/2021
 description: In this sprint, we added new policies to restrict scope and lifespan of personal access tokens (PAT). 
+ms.topic: release-notes
 ---
 
 # New policies for personal access tokens 

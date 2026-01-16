@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 5/19/2025
 description: Support for YAML in Test Plans and Jupyter Notebook diffing
+ms.topic: release-notes
 ---
 # Support for YAML in Test Plans and Jupyter Notebook diffing
 

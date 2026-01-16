@@ -8,9 +8,7 @@ author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 11/02/2023
-ms.custom:
-  - analytics
-  - sfi-image-nochange
+ms.custom: analytics, sfi-image-nochange
 ---
 
 # Analytics best practices 

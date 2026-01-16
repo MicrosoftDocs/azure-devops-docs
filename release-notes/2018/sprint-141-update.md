@@ -3,6 +3,7 @@ title: Pipeline compliance and security validations - Sprint 141 Update
 author: erindormier
 ms.author: egeaney
 ms.date: 10/1/2018
+ms.topic: release-notes
 description: In the Sprint 141 Update of Azure DevOps Services, you can now include compliance and security validations in your Azure Pipelines.
 ---
 
