@@ -5,6 +5,7 @@ ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 01/27/2025
+ai-usage: ai-assisted
 ms.custom: arm2024, sfi-image-nochange, support-driven
 ---
 
