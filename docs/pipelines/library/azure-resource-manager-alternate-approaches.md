@@ -29,7 +29,7 @@ You can use this approach if all the following items are true for your scenario:
 
 * You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
 * You don't need to further limit permissions for Azure resources that users access through the service connection.
-* You're not connecting to the [Azure Stack](azure-resource-manager-alternate-approaches.md#connect-to-azure-stack) or the [Azure US Government](azure-resource-manager-alternate-approaches.md#connect-to-an-azure-government-cloud) environments.
+* You're not connecting to the [Azure Stack](#connect-to-azure-stack) or the [Azure US Government](#connect-to-an-azure-government) environments.
 * You're not connecting from Azure DevOps Server 2019 or earlier versions of Azure DevOps Server.
 
 
