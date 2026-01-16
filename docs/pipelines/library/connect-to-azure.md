@@ -42,7 +42,7 @@ Recommended options:
 You can use this approach if all the following items are true for your scenario:
 
 * You have the Owner role for your Azure subscription.
-* You're not connecting to the [Azure Stack](azure-resource-manager-alternate-approaches.md#connect-to-azure-stack) or the [Azure US Government](azure-resource-manager-alternate-approaches.md#connect-to-an-azure-government-cloud) environments.
+* You're not connecting to the [Azure Stack](azure-resource-manager-alternate-approaches.md#connect-to-azure-stack) or the [Azure US Government](azure-resource-manager-alternate-approaches.md#connect-to-an-azure-government) environments.
 * Any Marketplace extensions tasks that you use are updated to support workload identity federation.
 
 With this selection, Azure DevOps automatically queries for the subscription, management group, or Machine Learning workspace that you want to connect to and creates a workload identity federation for authentication.
