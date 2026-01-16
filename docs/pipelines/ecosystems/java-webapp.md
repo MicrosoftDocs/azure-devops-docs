@@ -88,6 +88,8 @@ az webapp create -g myapp-rg -p myapp-service-plan -n my-app-name --runtime "JAV
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
+## Configure the pipeline
+
 1. When the **Configure** tab appears, select **Show more**, and then select **Maven package Java project Web App to Linux on Azure**. 
 
 1. You can automatically create an [Azure Resource Manager service connection](../library/connect-to-azure.md) when you create your pipeline. To get started, select your Azure subscription where you created a resource group.
