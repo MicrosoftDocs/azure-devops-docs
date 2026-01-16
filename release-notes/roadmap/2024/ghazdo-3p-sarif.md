@@ -3,7 +3,7 @@ title: Third-party SARIF support
 author: ncouraud
 ms.author: nicour
 ms.date: 11/8/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Advanced Security displays Code Scanning alerts for third-party tools that produce SARIF 
