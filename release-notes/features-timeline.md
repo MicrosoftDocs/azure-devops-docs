@@ -271,11 +271,6 @@ Below, you will find several investments that we plan to deliver as part of this
     </thead>
     <tbody>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines" data-raw-source="[Support YAML pipelines in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines)">Support YAML pipelines in Azure Test Plans</a></td>
-         <td>Test Plans</td>
-         <td>2025 Q4</td>
-      </tr>
-      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/quick-access-to-test-results" data-raw-source="[Quick access to Test Results in Test Case](/azure/devops/release-notes/roadmap/2025/testplans/quick-access-to-test-results)">Quick access to Test Results in Test Case</a></td>
          <td>Test Plans</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
@@ -298,9 +293,19 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-pytest)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
          <td>Test Plans</td>
-         <td>2025 Q4</td>
+         <td>2026 Q1</td>
       </tr>
-        <tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines" data-raw-source="[Support YAML pipelines in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines)">Support YAML pipelines in Azure Test Plans</a></td>
+         <td>Test Plans</td>
+         <td>2026 Q1</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning" data-raw-source="[Support for re-running of data driven tests ](/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning)">Support for re-running of data driven tests </a></td>
+         <td>Test Plans</td>
+         <td>2026 Q1</td>
+      </tr>
+      <tr>
          <td><a href="/azure/devops/release-notes/2026/testplans/TFE-Improved-Reliability" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/2026/testplans/TFE-Improved-Reliability)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>
          <td>Test Plans</td>
          <td>2026 Q2</td>
@@ -331,7 +336,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="19"><strong>2026 Q1</strong></td>
+      <td rowspan="23"><strong>2026 Q1</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -381,6 +386,22 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>Pipelines</td>
       </tr>
       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/agent-packed" data-raw-source="[Agent Packaged with Node 24](/azure/devops/release-notes/roadmap/2026/agent-packed)">Agent Packaged with Node 24</a></td>
+        <td>Pipelines</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ability-to-run-tasks" data-raw-source="[Ability to run tasks on supported Node versions only](/azure/devops/release-notes/roadmap/2026/ability-to-run-tasks)">Ability to run tasks on supported Node versions only</a></td>
+        <td>Pipelines</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/in-the-box-tasks" data-raw-source="[In the Box tasks support Node.js 24](/azure/devops/release-notes/roadmap/2026/in-the-box-tasks)">In the Box tasks support Node.js 24</a></td>
+        <td>Pipelines</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/retire-node-6" data-raw-source="[Retire Node 6, 10 and 16 from the Agent](/azure/devops/release-notes/roadmap/2026/retire-node-6)">Retire Node 6, 10 and 16 from the Agent</a></td>
+        <td>Pipelines</td>
+      </tr>
+      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines" data-raw-source="[Support YAML pipelines in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines)">Support YAML pipelines in Azure Test Plans</a></td>
          <td>Test Plans</td>
       </tr>
@@ -399,10 +420,10 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwrigth)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
          <td>Test Plans</td>
-      </tr>    
       </tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts" data-raw-source="[Organization-level alerts view in security overview](/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts)">Organization-level alerts view in security overview</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning" data-raw-source="[Support for re-running of data driven tests ](/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning)">Support for re-running of data driven tests </a></td>
+         <td>Test Plans</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
