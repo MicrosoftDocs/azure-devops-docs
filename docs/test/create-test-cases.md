@@ -70,6 +70,10 @@ You can specify configurations, such as different operating systems, web browser
 
 For more information, see [Test different configurations](test-different-configurations.md).
 
+> [!WARNING]
+> 1. Changing configurations at a child suite breaks inheritance from its parent suites while still propagating to lower child suites, unless inheritance is already broken.
+> 2. Unassigning configurations will hide the related test points. You can restore them by reassigning the configuration.
+
 ## Reorder test cases
 
 You can reorder manual test cases in static suites, requirement-based suites, and query-based suites.
