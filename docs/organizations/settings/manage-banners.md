@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 ms.date: 09/11/2024
 ---
 
-# Add and manage information banners in Azure Devops
+# Add and manage information banners in Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
