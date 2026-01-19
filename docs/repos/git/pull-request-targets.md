@@ -158,7 +158,7 @@ first parent history still demonstrates a preference for `feature/targets`.
 ### Breaking Ties
 
 If two branches have the same first-parent history intersection, then
-Azure Devops selects the branch that appears earlier in the
+Azure DevOps selects the branch that appears earlier in the
 `pull_request_targets` list. If multiple branches are still tied based on
 the `pull_request_targets` list due to a prefix match, then the earliest
 in alphabetical order wins.

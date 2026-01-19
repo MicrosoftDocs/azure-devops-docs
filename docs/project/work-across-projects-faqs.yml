@@ -99,7 +99,7 @@ sections:
 
       - question: Can I perform capacity planning across projects?
         answer: |
-          **No**. Azure Devops doesn't store capacity planning data in the work tracking data store or Analytics service, as it isn't a supported feature.  
+          **No**. Azure DevOps doesn't store capacity planning data in the work tracking data store or Analytics service, as it isn't a supported feature.  
 
       - question: How do I manage dependencies across projects?
         answer: |

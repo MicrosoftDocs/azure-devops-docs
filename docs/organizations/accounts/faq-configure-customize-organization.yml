@@ -79,7 +79,7 @@ sections:
           For more information, see [Plan your Azure DevOps organization structure](../../user-guide/plan-your-azure-devops-org-structure.md?view=azure-devops).
       
       - question: |
-          Q: Is localization supported in the Azure Devops service?
+          Q: Is localization supported in the Azure DevOps service?
         answer: |
           A: Sorry, we don't support localization in the Azure DevOps service. We do support localization in the on-premises version of Azure DevOps.
 

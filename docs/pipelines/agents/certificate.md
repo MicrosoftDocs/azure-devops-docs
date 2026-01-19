@@ -29,7 +29,7 @@ The agent diagnostic log shows:
 [2017-11-06 20:55:33Z ERR  AgentServer] System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: A security error occurred
 ```
 
-The previous security error might indicate that the build machine doesn't trust the server certificate that you used on your Azure Devops Server host machine. Make sure that you install your self-signed SSL server certificate into the OS certificate store.
+The previous security error might indicate that the build machine doesn't trust the server certificate that you used on your Azure DevOps Server host machine. Make sure that you install your self-signed SSL server certificate into the OS certificate store.
 
 ```
 Windows: Windows certificate store
