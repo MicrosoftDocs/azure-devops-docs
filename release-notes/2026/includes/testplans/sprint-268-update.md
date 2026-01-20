@@ -6,7 +6,8 @@ ms.date: 1/26/2026
 ms.topic: include
 ---
 
-### New Test Case import 
+### New Test Case import
+
 The new and improved Test Case Import Wizard to boost your productivity is now available. It comes with advanced auto-mapping capabilities, mapping templates to share with your team, and more. Check the public documentation for more information [here](/azure/devops/test/bulk-import-export-test-cases?view=azure-devops#import-test-cases).
 
 ### Focused test point history panel
@@ -49,7 +50,7 @@ Get real-time updates on test progress directly within the user story work item.
 * All attachments of automated sub-runs are now appearing in the UI as expected.
 * Enabled linking a Test Run to any work item from any project in the organization.
 
-### Test & Feedback Extension
+### Test and Feedback Extension
 
 Fixed linkage of Test Cases created during exploratory sessions to their original Test Case as expected.
 
