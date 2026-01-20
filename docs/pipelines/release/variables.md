@@ -174,7 +174,7 @@ By using custom variables at the project, release pipeline, and stage levels, yo
 
 - Avoid duplicating values, making it easier to update all occurrences with a single change.
 
-- Secure sensitive values by preventing them from being viewed or modified by users. To mark a variable as secure (secret), select the :::image type="icon" source="media/padlock-icon.png" icon next to the variable.
+- Secure sensitive values by preventing them from being viewed or modified by users. To mark a variable as secure (secret), select the :::image type="icon" source="media/padlock-icon.png" alt-text="padlock icon"::: icon next to the variable.
 
   > [!IMPORTANT]
   > The values of the hidden variables (secret) are securely stored on the server and users can't view them after they're saved. During deployment, Azure Pipelines decrypts these values when tasks reference them and passes them to the agent over a secure HTTPS channel.
