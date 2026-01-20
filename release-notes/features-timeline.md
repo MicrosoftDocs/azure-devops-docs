@@ -405,8 +405,12 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2024/pr-search" data-raw-source="[PR search](/azure/devops/release-notes/roadmap/2024/pr-search)">PR search</a></td>
         <td>General</td>
-      </tr> 
-       <tr>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[DependaBot Security Update Support](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Dependabot Security Update Support</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
          <td>
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Report YAML stage status in deployment control on work items](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Report YAML stage status in deployment control on work items</a>
          </td>
@@ -471,10 +475,6 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts" data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td>
         <td>Artifacts</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[DependaBot Security Update Support](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Dependabot Security Update Support</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
    </tbody>
 </table>
