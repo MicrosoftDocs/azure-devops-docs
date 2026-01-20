@@ -4,6 +4,7 @@ description: See the Sprint 266 feature updates for Azure Test Plans, including 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 12/19/2025
+ms.topic: release-notes
 ---
 
 # Azure Test Plans - Sprint 266 Update

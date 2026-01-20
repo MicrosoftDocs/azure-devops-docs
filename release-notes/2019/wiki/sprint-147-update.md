@@ -4,6 +4,7 @@ description: See the Sprint 147 feature updates for Wiki, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/14/2018
+ms.topic: release-notes
 ---
 
 # Wiki - Sprint 147 Update

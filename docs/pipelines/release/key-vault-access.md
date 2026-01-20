@@ -131,7 +131,7 @@ Start by creating a new service principal, this will enable you to access Azure 
 
 ::: zone pivot="access-from-azure-devops"
 
-## Access a private key vault from Azure Devops
+## Access a private key vault from Azure DevOps
 
 In this section, we'll explore two methods for accessing a private key vault from Azure DevOps. First, we'll use Variable Groups to link and map secrets from our key vault, followed by setting up inbound access by allowing static IP ranges. We establish inbound access because Azure Pipelines uses the posted Azure DevOps Public IP when querying the Azure Key Vault from a Variable Group. Therefore, by adding inbound connections to the Azure Key Vault firewall, we can successfully connect to our Azure Key Vault.
 

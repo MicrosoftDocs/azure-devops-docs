@@ -3,7 +3,7 @@ title: Ability to run tasks on next available Node version, if targeted version 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Ability to run tasks on next available Node version, if targeted version is not available

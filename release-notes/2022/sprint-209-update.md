@@ -3,7 +3,8 @@ title: Addressed multiple requests from the Developer Community.
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 9/12/2022
-description: With this update, we addressed multiple requests from the Developer Community.  
+description: With this update, we addressed multiple requests from the Developer Community.
+ms.topic: release-notes
 ---
 # Addressed multiple requests from the Developer Community
 

@@ -3,7 +3,7 @@ title: Improve GitHub Connection Experience
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/11/2022
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Improve GitHub Connection Experience

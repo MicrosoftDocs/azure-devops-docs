@@ -126,6 +126,15 @@ Tests that use the .NET core framework **can** be associated with a test case
 
 <a name="xaml-build"></a>
 
+### Q: How can I use the "Automation Status" field on the test case?
+The Automation Status field on the test case work item reflects whether the test case is linked to an automated test method. Although the field supports three values: Not Automated, Planned, and Automated - the availability of these values depends on whether the test case has an associated automation method.
+- **Not Automated / Planned:** Shown only when the test case has no associated test method.
+- **Automated:** Shown only when the test case has associated test method.
+
+If the default values don’t match the state of your test cases, you can create a custom [pick-list field](https://www.learn.microsoft.com/en-us/azure/devops/organizations/settings/work/customize-process-field?view=azure-devops#add-a-picklist) on the Test Case work item type and define values that better align with your organization’s needs.
+
+<a name="xaml-build"></a>
+
 ### Q: Can I use tests from my GitHub repositories for association in Azure DevOps?
 
 **A**: As long as you run your automated tests in Azure Pipelines with the VSTest task, or you report the test results with the PublishTestResults task, the automated tests will be available for association to test cases, via the user experience in Azure DevOps. 

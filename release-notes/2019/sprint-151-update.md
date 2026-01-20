@@ -3,6 +3,7 @@ title: New Azure Pipelines App for Teams, improved GitHub and Azure Boards integ
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 04/30/2019
+ms.topic: release-notes
 description: In the **Sprint 151 Update** of Azure DevOps, we improved the GitHub integration with Azure Boards by adding a GitHub Marketplace app to streamline the acquisition and configuration with your GitHub repositories.
 ---
 

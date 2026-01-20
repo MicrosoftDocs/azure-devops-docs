@@ -3,7 +3,7 @@ title: New Test Runs experience
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/16/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: New Test Runs experience

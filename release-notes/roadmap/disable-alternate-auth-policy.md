@@ -3,7 +3,7 @@ title: Policies to disable personal access token creation
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/11/2022
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Policies to disable personal access token creation

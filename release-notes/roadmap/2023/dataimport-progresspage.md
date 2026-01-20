@@ -3,7 +3,7 @@ title: Increased transparency into the progress of an Azure DevOps Server to Azu
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 03/14/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Increased transparency into the progress of an Azure DevOps Server to Azure DevOps Services data migration

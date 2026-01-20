@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 5/2/2024
 description: View third-party providers code scan results in Azure DevOps
+ms.topic: release-notes
 ---
 # View third-party providers code scan results in Azure DevOps
 

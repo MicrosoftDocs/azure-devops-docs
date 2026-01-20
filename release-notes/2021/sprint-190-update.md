@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 08/04/2021
 description: In this sprint, we added support for queuing execution in exclusive lock check. 
+ms.topic: release-notes
 ---
 
 # Support for sequential deployments when using exclusive lock checks

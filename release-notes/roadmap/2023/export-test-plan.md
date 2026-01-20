@@ -3,7 +3,7 @@ title: Export Test Plan in XLSX format
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/16/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Export Test Plan in XLSX format

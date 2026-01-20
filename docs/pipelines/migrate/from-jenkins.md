@@ -4,7 +4,8 @@ titleSuffix: Azure Pipelines
 description: How to migrate from Jenkins to Azure Pipelines
 ms.topic: upgrade-and-migration-article
 ms.custom: devx-track-jenkins
-ms.date: 08/18/2021
+ms.date: 01/15/2026
+ai-usage: ai-assisted
 monikerRange: azure-devops
 ---
 
@@ -12,24 +13,24 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-[Jenkins](https://www.jenkins.io/), an open-source automation server, has traditionally been installed by enterprises in their own data
+[Jenkins](https://www.jenkins.io/), an open-source automation server, is traditionally installed by enterprises in their own data
 centers and managed on-premises. Many providers
 also offer managed Jenkins hosting.
 
 Alternatively, Azure Pipelines is a cloud native continuous integration
-pipeline, providing the management of multi-stage pipelines and build
-agent virtual machines hosted in the cloud.
+pipeline. It provides the management of multistage pipelines and build
+agent Azure Virtual Machines hosted in the cloud.
 
-Azure Pipelines offers a fully on-premises option as well with
-[Azure DevOps Server](https://azure.microsoft.com/services/devops/server/), for those customers who have compliance or
+Azure Pipelines also offers a fully on-premises option with
+[Azure DevOps Server](https://azure.microsoft.com/products/devops/server/), for customers who have compliance or
 security concerns that require them to keep their code and build within
 the enterprise data center.
 
 In addition, Azure Pipelines supports hybrid cloud and on-premises models. Azure Pipelines can manage build and release orchestration and
-enabling build agents, both in the cloud and installed on-premises. 
+enables build agents, both in the cloud and installed on-premises. 
 
-This document provides a guide to translate a Jenkins pipeline configuration
-to Azure Pipelines, information about moving container-based builds and
+This article provides a guide to translate a Jenkins pipeline configuration
+to Azure Pipelines. It includes information about moving container-based builds and
 selecting build agents, mapping environment variables, and how to handle
 success and failures of the build pipeline.
 
@@ -54,7 +55,7 @@ For example:
 
 **Jenkinsfile**
 
-```
+```groovy
 pipeline {
     agent none
     stages {
@@ -89,15 +90,7 @@ jobs:
   - script: npm test
 ```
 
-### Visual Configuration
-
-If you aren't using a Jenkins declarative pipeline with a Jenkinsfile,
-and are instead using the graphical interface to define your build configuration,
-then you may be more comfortable with the
-classic editor
-in Azure Pipelines.
-
-## Container-Based Builds
+## Container-based builds
 
 Using containers in your build pipeline allows you to build and test within
 a docker image that has the exact dependencies that your pipeline needs,
@@ -113,19 +106,19 @@ useful when you use many different technologies in your stack; you may want
 to build your backend using a .NET Core container and your frontend with a
 TypeScript container.
 
-For example, to run a build in an Ubuntu 20.04 ("Focal") container, then
-run tests in an Ubuntu 22.04 ("Jammy") container:
+For example, to run a build in an Ubuntu 22.04 ("Jammy") container, then
+run tests in an Ubuntu 24.04 ("Noble") container:
 
 **Jenkinsfile**
 
-```
+```groovy
 pipeline {
     agent none
     stages {
         stage('Build') {
             agent {
                 docker {
-                    image 'ubuntu:focal'
+                    image 'ubuntu:jammy'
                     args '-v $HOME:/build -w /build'
                 }
             }
@@ -136,7 +129,7 @@ pipeline {
         stage('Test') {
             agent {
                 docker {
-                    image 'ubuntu:jammy'
+                    image 'ubuntu:noble'
                     args '-v $HOME:/build -w /build'
                 }
             }
@@ -157,19 +150,19 @@ to enable you to run your build within a container:
 ``` yaml
 resources:
   containers:
-  - container: focal
-    image: ubuntu:focal
   - container: jammy
     image: ubuntu:jammy
+  - container: noble
+    image: ubuntu:noble
 
 jobs:
 - job: build
-  container: focal
+  container: jammy
   steps:
   - script: make
 - job: test
   dependsOn: build
-  container: jammy
+  container: noble
   steps:
   - script: make test
 ```
@@ -178,13 +171,13 @@ In addition, Azure Pipelines provides a [docker
 task](/azure/devops/pipelines/tasks/reference/docker-v2)
 that allows you to run, build, or push an image.
 
-## Agent Selection
+## Agent selection
 
 Jenkins offers build agent selection using the `agent` option to ensure
 that your build pipeline - or a particular stage of the pipeline - runs
 on a particular build agent machine. Similarly, Azure Pipelines offers many options to configure where your build environment runs.
 
-### Hosted Agent Selection
+### Hosted agent selection
 
 Azure Pipelines offers cloud hosted build agents for Linux, Windows, and
 macOS builds. To select the build environment, you can use the
@@ -199,7 +192,7 @@ pool:
 Additionally, you can specify a `container` and specify a docker image
 for finer grained control over how your build is run.
 
-### On-premises Agent Selection
+### On-premises agent selection
 
 If you host your build agents on-premises, then you can define the
 [build agent "capabilities"](../agents/agents.md#capabilities)
@@ -213,7 +206,7 @@ pool:
   demands: java
 ```
 
-## Environment Variables
+## Environment variables
 
 In Jenkins, you typically define environment variables for the entire
 pipeline. For example, to set two environment variables, `CONFIGURATION=debug`
@@ -221,11 +214,19 @@ and `PLATFORM=x86`:
 
 **Jenkinsfile**
 
-```
+```groovy
 pipeline {
+    agent any
     environment {
         CONFIGURATION = 'debug'
         PLATFORM      = 'x64'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo $CONFIGURATION $PLATFORM'
+            }
+        }
     }
 }
 ```
@@ -261,26 +262,26 @@ jobs:
   - script: ./build.sh $(configuration)
 ```
 
-## Predefined Variables
+## Predefined variables
 
 Both Jenkins and Azure Pipelines set a [number of environment
 variables](../build/variables.md)
-to allow you to inspect and interact with the execution environment of the
+to help you inspect and interact with the execution environment of the
 continuous integration system.
 
 | Description | Jenkins | Azure Pipelines |
 |-------------|---------|-----------------|
 | A unique numeric identifier for the current build invocation. | `BUILD_NUMBER` | `BUILD_BUILDNUMBER` |
 | A unique identifier (not necessarily numeric) for the current build invocation. | `BUILD_ID` | `BUILD_BUILDID` |
-| The URL that displays the build logs. | `BUILD_URL` |  This isn't set as an environment variable in Azure Pipelines but can be derived from other variables.<sup>1</sup> |
-| The name of the machine that the current build is running on. | `NODE_NAME` | `AGENT_NAME` |
+| The URL that displays the build logs. | `BUILD_URL` |  This value isn't set as an environment variable in Azure Pipelines but you can derive it from other variables.<sup>1</sup> |
+| The name of the machine that the current build runs on. | `NODE_NAME` | `AGENT_NAME` |
 | The name of this project or build definition. | `JOB_NAME` | `RELEASE_DEFINITIONNAME` |
 | A string for identification of the build; the build number is a good unique identifier. | `BUILD_TAG` | `BUILD_BUILDNUMBER` |
 | A URL for the host executing the build. | `JENKINS_URL` | `SYSTEM_TEAMFOUNDATIONCOLLECTIONURI` |
-| A unique identifier for the build executor or build agent that is currently running. | `EXECUTOR_NUMBER` | `AGENT_NAME` |
+| A unique identifier for the build executor or build agent that runs currently. | `EXECUTOR_NUMBER` | `AGENT_NAME` |
 | The location of the checked out sources. | `WORKSPACE` | `BUILD_SOURCESDIRECTORY` |
 | The Git Commit ID corresponding to the version of software being built. | `GIT_COMMIT` | `BUILD_SOURCEVERSION` |
-| Path to the Git repository on GitHub, Azure Repos or another repository provider. | `GIT_URL` | `BUILD_REPOSITORY_URI` |
+| Path to the Git repository on GitHub, Azure Repos, or another repository provider. | `GIT_URL` | `BUILD_REPOSITORY_URI` |
 | The Git branch being built. | `GIT_BRANCH` | `BUILD_SOURCEBRANCH` |
 
 <sup>1</sup> To derive the URL that displays the build logs in Azure Pipelines, combine the following environment variables in this format:
@@ -288,7 +289,7 @@ continuous integration system.
 ${SYSTEM_TEAMFOUNDATIONCOLLECTIONURI}/${SYSTEM_TEAMPROJECT}/_build/results?buildId=${BUILD_BUILDID}
 ```
 
-## Success and Failure Handling
+## Success and failure handling
 
 Jenkins allows you to run commands when the build has finished, using the
 `post` section of the pipeline. You can specify commands that run when the
@@ -297,7 +298,7 @@ the `failure` section) or always (using the `always` section). For example:
 
 **Jenkinsfile**
 
-```
+```groovy
 post {
     always {
         echo "The build has finished"
@@ -338,7 +339,76 @@ jobs:
     condition: failed()
 ```
 
+> [!NOTE]
+> Jenkins supports additional `post` conditions beyond `always`, `success`, and `failure`:
+> - `changed`: Runs only if the current Pipeline's run has a different completion status from its previous run.
+> - `fixed`: Runs only if the current run succeeds and the previous run failed or was unstable.
+> - `unstable`: Runs only if the current Pipeline's run has an "unstable" status (typically caused by test failures).
+> - `cleanup`: Runs after all other post conditions have been evaluated, regardless of the Pipeline's status.
+>
+> In Azure Pipelines, you can achieve similar functionality using [conditions](../process/conditions.md) with expressions like `eq(variables['Agent.JobStatus'], 'SucceededWithIssues')` for unstable builds.
+
 In addition, you can combine [other conditions](../process/conditions.md),
 like the ability to run a task based on the success or failure of an individual
 task, environment variables, or the execution environment, to build a rich
 execution pipeline.
+
+## Credentials handling
+
+Jenkins provides a `credentials()` helper within the `environment` directive
+to securely inject credentials into your pipeline. Jenkins supports several
+credential types, including secret text, username/password pairs, and secret files.
+
+**Jenkinsfile**
+
+```groovy
+pipeline {
+    agent any
+    environment {
+        AWS_ACCESS_KEY_ID     = credentials('aws-access-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
+    }
+    stages {
+        stage('Deploy') {
+            steps {
+                sh 'aws s3 ls'
+            }
+        }
+    }
+}
+```
+
+In Azure Pipelines, you can manage secrets using [variable groups](../library/variable-groups.md),
+[Azure Key Vault integration](../release/azure-key-vault.md), or by defining
+secret variables directly in your pipeline:
+
+**azure-pipelines.yml**
+
+``` yaml
+variables:
+- group: my-aws-credentials  # Variable group linked to Azure Key Vault or containing secrets
+
+jobs:
+- job: Deploy
+  steps:
+  - script: aws s3 ls
+    env:
+      AWS_ACCESS_KEY_ID: $(AWS_ACCESS_KEY_ID)
+      AWS_SECRET_ACCESS_KEY: $(AWS_SECRET_ACCESS_KEY)
+```
+
+You can also reference secrets directly from Azure Key Vault by using the
+[AzureKeyVault@2 task](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2):
+
+``` yaml
+steps:
+- task: AzureKeyVault@2
+  inputs:
+    azureSubscription: 'my-azure-subscription'
+    KeyVaultName: 'my-key-vault'
+    SecretsFilter: 'AWS-ACCESS-KEY-ID,AWS-SECRET-ACCESS-KEY'
+- script: aws s3 ls
+  env:
+    AWS_ACCESS_KEY_ID: $(AWS-ACCESS-KEY-ID)
+    AWS_SECRET_ACCESS_KEY: $(AWS-SECRET-ACCESS-KEY)
+```

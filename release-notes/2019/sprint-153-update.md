@@ -3,6 +3,7 @@ title: View linked GitHub activity from the Kanban board - Sprint 153 Update
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 06/13/2019
+ms.topic: release-notes
 description: In the **Sprint 153 Update** of Azure DevOps, we are improving the Azure Boards integration with GitHub. 
 ---
 

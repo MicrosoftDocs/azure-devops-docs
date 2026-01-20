@@ -3,7 +3,7 @@ title: Work Item Chart Filtering
 author: danhellem
 ms.author: dahellem
 ms.date: 11/13/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Work Item Chart Filtering
