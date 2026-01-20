@@ -75,7 +75,7 @@ To update your affected YAML pipelines to a new image, see [](). To update your 
 
 * * *
 
-### How to identify pipelines using a deprecated hosted image
+## How to identify pipelines using a deprecated hosted image
 
 To identify pipelines that are using a deprecated image, browse to the following location in your organization: `https://dev.azure.com/{organization}/{project}/_settings/agentqueues`, and filter on the image name to check. The following example checks the `vs2017-win2016` image.
 
@@ -87,5 +87,66 @@ You can also query job history for deprecated images across projects using the s
 ./QueryJobHistoryForRetiredImages.ps1 -accountUrl https://dev.azure.com/{org} -pat {pat}
 ```
 
+## Update YAML pipelines to use a new image
 
+To update your YAML pipelines to use a new image:
+
+1. [Open your pipeline YAML file](../get-started/yaml-pipeline-editor.md#edit-a-yaml-pipeline).
+2. Locate the `vmImage` property.
+3. Change the value from to the new image. For example, to replace an older version of a Linux agent with the latest, change:
+
+   ```yaml
+   pool:
+     vmImage: 'ubuntu-20.04'
+   ```
+
+   to:
+
+   ```yaml
+   pool:
+     vmImage: 'ubuntu-latest'
+   ```
+
+4. Save and run your pipeline to validate the changes.
+
+## Update classic pipelines to use a new image
+
+To update classic pipelines:
+- Navigate to the pipeline settings in the Azure DevOps portal.
+- Locate the agent specification and update the **Agent Specification** to the newer version.
+- Save and queue a new run to verify the update.
+
+## Alternative methods to use a deprecated image
+
+If you still need to use ImageX after its deprecation, consider the following alternatives:
+- Use a container job to specify the ImageX container independently of the hosted image.
+Example:
+
+```yml
+  jobs:
+  - job: ubuntu20
+    container: ubuntu:20.04
+    displayName: Use Ubuntu 20.04 container image
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - script: printenv
+```
+
+## FAQ
+
+Q: How to know if my Azure DevOps organization or pipelines are impacted?
+A: Use the detection script or check the agent queues as described above.
+
+Q: I am using ImageX in Self Hosted Agents. Is my pipeline impacted?
+A: No, only Microsoft Hosted images are impacted.
+
+Q: I am using ImageX in MDP. Is my pipeline impacted?
+A: No, MDP usage is not impacted.
+
+Q: I am using ImageX in classic pipeline. Is my pipeline impacted?
+A: Yes, classic pipelines using ImageX are impacted.
+
+Q: I am using ImageX container image. Is my pipeline impacted?
+A: No, container images are not impacted by the hosted image deprecation.
 
