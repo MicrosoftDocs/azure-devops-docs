@@ -12,43 +12,20 @@ monikerRange: 'azure-devops'
 
 The Azure Pipelines team supports (at maximum) 2 GA hosted images and 1 hosted beta image at a time. We begin the deprecation process of the oldest image label once the newest OS image label has been released to GA. This article provides the deprecation schedule for the oldest hosted images to allow time for planning and migration to the newer images.
 
+The following hosted agent images are scheduled for deprecation:
+
+* [macOS 14 Sonoma hosted image deprecation schedule](tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)
+
 For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support).
 
 #### [Windows images](#tab/windows-images/)
 
-#### Windows Server 2019 hosted image deprecation schedule
-
-The Windows Server 2019 image deprecation schedule:
-* Deprecation start date: June 1, 2025
-* Brownout period: June 3, 2025 to June 24, 2025
-* Scheduled removal date for Windows Server 2019 hosted image: December 31, 2025
-
-For more information, see [Upcoming Updates for Azure Pipelines Agents Images - Windows](https://aka.ms/azdo-windows)
-
 #### Windows image updates
 
+* Windows 2019 hosted image was retired on December 31, 2025.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 
 #### [Linux images](#tab/linux-images/)
-
-#### Ubuntu 22.04 hosted image deprecation schedule
-
-The Ubuntu 22.04 hosted image deprecation affects Azure DevOps customers using the Ubuntu 22.04 agent image in their Microsoft-hosted pipelines. This deprecation does not impact customers using Ubtuntu 22.04 agents in self-hosted agents, including scale set agents or Managed DevOps Pools.
-
-The Ubuntu 22.04 image deprecation schedule:
-* Deprecation start date: TBD
-* Brownout period: TBD
-  * TBD date: 21:00 - 5:00 UTC
-  * TBD data: 5:00 - 13:00 UTC
-* Scheduled removal date: TBD
-
-Starting from TBD, organizations using the Ubuntu 22.04 image will begin to see a banner indicating the upcoming deprecation. To raise awareness about the upcoming deprecation we will temporarily fail jobs (brownout) using Ubuntu 22.04 from TBD to TBD. From TBD, the Ubuntu 22.04 image will be fully removed from our hosted agents, and any pipelines still using this image will fail to run.
-
-###### Recommended action
-
-To avoid disruptions, we recommend updating your pipelines to use the Ubuntu 24.04 image. The updated Ubuntu images offer improved performance, security, and support for the latest tools and libraries.
-
-To indentify your pipelines that are using the Ubuntu 22.04 image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
 
 #### Linux images updates
 
@@ -63,7 +40,12 @@ The macOS 14 Sonoma hosted image deprecation affects Azure DevOps customers usin
 
 The macOS 14 Sonoma image deprecation schedule:
 * Deprecation start date: July 6, 2026.
+* [Brownout schedule](#macos-brownout-schedule): October 5, 2026 to October 31, 2026.
 * Scheduled removal date: November 2, 2026.
+
+<a name="macos-brownout-schedule"></a>
+
+##### Brownout schedule
 
 To raise awareness of the upcoming removal, we will temporarily fail jobs using the macOS 14 Sonoma hosted image. Builds that are scheduled to run during the brownout periods will fail. The brownouts are scheduled for the following dates and times:
 
@@ -75,6 +57,8 @@ To raise awareness of the upcoming removal, we will temporarily fail jobs using 
 * October 26, 14:00 UTC - October 27, 00:00 UTC
 * October 29, 14:00 UTC - October 30, 00:00 UTC
 * October 30, 14:00 UTC - October 31, 00:00 UTC
+
+##### Recommended action
 
 Workflows using the macOS 14 Sonoma hosted image should be updated to `macos-latest` or `macos-15` prior to the scheduled removal date to avoid disruptions.
 
