@@ -187,7 +187,7 @@ If you have a pipeline you want to use, you can skip this section. Otherwise, yo
 
 ::: moniker-end
 
-Add tasks to **Agent job 1** by selecting **+** on the job and choosing a task from the list. For example, you could add the **Use .NET Core** task as the first task to install the .NET SDK.
+Add tasks to **Agent job 1** by selecting **+** on the job and choosing a task from the list. For example, you can add the **Use .NET Core** task as the first task to install the .NET SDK.
 
 ---
 
@@ -242,7 +242,7 @@ pool:
 
 You can build your .NET Core projects by using the .NET Core SDK and runtime for Windows, Linux, or macOS. By default, your builds run on [Microsoft-hosted agents](../agents/hosted.md), so you don't need to set up infrastructure.
 
-The Azure Pipelines Microsoft-hosted agents include several preinstalled versions of supported .NET Core SDKs. See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of available images and configuration examples.
+Azure Pipelines Microsoft-hosted agents include several preinstalled versions of supported .NET Core SDKs. See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of available images and configuration examples.
 
 The following YAML pipeline snippet sets Ubuntu OS for the agent pool.
 
@@ -292,7 +292,7 @@ For more information, see [Self-hosted agents](../agents/agents.md#self-hosted-a
 
 ## Restore dependencies
 
-NuGet packages are a way for your project to depend on code that you don't build. You can download NuGet packages and project-specific tools by running the `dotnet restore` command, either through the **.NET Core** (`DotNetCoreCLI@2`) task or as a script in your pipeline. The `dotnet restore` command uses the *NuGet.exe* packaged with the .NET Core SDK and can only restore packages specified in the .NET Core project *\*.csproj* files.
+NuGet packages provide a way for your project to depend on code that you don't build. Run the `dotnet restore` command to download NuGet packages and project-specific tools. You can run this command through the **.NET Core** (`DotNetCoreCLI@2`) task or as a script in your pipeline. The `dotnet restore` command uses the *NuGet.exe* packaged with the .NET Core SDK and can only restore packages specified in the .NET Core project *\*.csproj* files.
 
 Use the **.NET Core** (`DotNetCoreCLI@2`) task to download and restore NuGet packages from Azure Artifacts, NuGet.org, or another authenticated external or internal NuGet repository. If the NuGet feed is in the same project as your pipeline, you don't need to authenticate. For more information, see [.NET Core task (DotNetCoreCLI@2)](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 
@@ -422,7 +422,7 @@ To use the task assistant:
 1. Under **Path to NuGet.config**, enter the path to your *NuGet.config* file, relative to the root of your repository. Select the ellipsis **...** to browse to and select the repository location.
 1. Under **Credentials for feeds outside this organization/collection**, select credentials to use for external registries located in the selected *NuGet.config*. For feeds in this organization, leave this field blank because the build’s credentials are used automatically.
 
-   You can select **Manage** to go to your project settings and select the connection. You can also select **New** to create a service connection. Be sure to select the checkbox for **Grant access permission to all pipelines**.
+   Select **Manage** to go to your project settings and select the connection. You can also select **New** to create a service connection. Be sure to select the check box for **Grant access permission to all pipelines**.
 
 ---
 
@@ -671,7 +671,7 @@ You can publish code coverage results to the server with the [Publish Code Cover
 To run tests and publish code coverage with Coverlet:
 
 1. Add a reference to the `coverlet.collector` NuGet package.
-1. Add the following snippet to your *azure-pipelines.yml* file:
+1. Add the following snippet to your *azure-pipelines.yml* file. Don't add extra `DataCollectionRunSettings` arguments because the `XPlat Code Coverage` collector already produces a Cobertura report.
 
   ```yaml
   - task: DotNetCoreCLI@2
@@ -846,7 +846,7 @@ If your project builds successfully on your local machine but not in Azure Pipel
 
   You can include a `dotnet --version` command-line script in your pipeline to print the version of the .NET Core SDK. Either use the [.NET Core Tool Installer](#build-environment) to deploy the same version on the agent, or update your projects and development machine to the pipeline version of the .NET Core SDK.
 
-- Connection issues can cause your builds to fail intermittently when you restore packages from NuGet.org. NuGet.org might be having issues, or there could be networking problems between the Azure data center and NuGet.org. You can explore whether using Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) to cache the packages improves the reliability of your builds.
+- Connection problems can cause your builds to fail intermittently when you restore packages from NuGet.org. NuGet.org might be having problems, or there could be networking problems between the Azure data center and NuGet.org. You can explore whether using Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) to cache the packages improves the reliability of your builds.
 
   The pipeline automatically uses its credentials to connect to Azure Artifacts. These credentials typically come from the **Project Collection Build Service** account. To learn more about using Azure Artifacts to cache your NuGet packages, see [Connect to Azure Artifact feeds](../../artifacts/nuget/nuget-exe.md).
 
