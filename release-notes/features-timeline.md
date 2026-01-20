@@ -101,41 +101,6 @@ Azure DevOps supports many different authentication mechanisms, including basic 
     </thead>
     <tbody>
       <tr>
-         <td><a href="/azure/devops/release-notes/2021/sprint-186-update#pat-lifecycle-management-api-general-availability" data-raw-source="[PAT lifecycle APIs](/azure/devops/release-notes/2021/sprint-186-update#pat-lifecycle-management-api-general-availability)">PAT lifecycle APIs</a></td>
-         <td>General</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes" data-raw-source="[Control plane for personal access tokens (PAT)](/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Control plane for personal access tokens (PAT)</a></td>
-         <td>General</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Managed Identity and Service Principal support](/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support (preview)</a></td>
-         <td>General</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q1</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-azurerm-deployments" data-raw-source="[Workload identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload identity federation for Azure Deployments (preview)</a></td>
-         <td>Pipelines</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q3</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
-         <td>General</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q3</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Managed Identity and Service Principal support](/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support (GA)</a></td>
-         <td>General</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q3</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-azurerm-deployments" data-raw-source="[Workload identity federation for Azure Deployments](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload identity federation for Azure service connection (GA)</a></td>
-         <td>Pipelines</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2024 Q1</td>
-      </tr>
-      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-acr-deployments" data-raw-source="[Workload identity federation for Docker service connection](/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Workload identity federation for Docker service connection</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2024 H2</td>
