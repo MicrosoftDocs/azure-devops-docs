@@ -130,7 +130,7 @@ ms.subservice: azure-devops-repos-tfvc
 ## Using predefined method to migrate policies on server
    > [!NOTE]
    > Further automigration is available only for custom policies, as standard Visual Studio policies don't support this capability.
-   > If you don't plan to use migration method provided by NuGet package, further instructions can be omitted and the obsolete policies can be removed. No more steps are required. You can find removal of obsolete custom policies via code below.
+   > If you don't plan to use migration method provided by NuGet package, further instructions can be omitted and the obsolete policies can be removed. No more steps are required. You can find removal of obsolete custom policies via code further in this guide.
 
 1. Add migration interface to policies
 
@@ -162,13 +162,13 @@ ms.subservice: azure-devops-repos-tfvc
 
  ## Remove existing obsolete policies
   > [!NOTE]
-   > This is a workaround to remove existing obsolete policies when server fully (read and write operations) disables them and before Visual Studio team implements UI for this.
+   > This part of the guide is a workaround to remove existing obsolete policies when server fully (read and write operations) disables them and before Visual Studio team implements UI solution.
 
-1. Create an empry C# project.
+1. Create an empty C# project.
 
 2. Add dependency to [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/latest).
 
-3. Connect to your project using `ExtendedClient` package. You can do it several ways, here is example for one of them.
+3. Connect to your project using `ExtendedClient` package. You can do it several ways. Here's example for one of them.
 
 **Example:**
    ```csharp
