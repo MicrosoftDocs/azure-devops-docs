@@ -64,7 +64,7 @@ Workflows using the macOS 14 Sonoma hosted image should be updated to `macos-lat
 
 To identify your pipelines that are using the macOS 14 Sonoma hosted image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
 
-To update your affected YAML pipelines to a new image, see [](). To update your classic pipelines see []().
+To update your affected YAML pipelines to a new image, see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image). To update your classic pipelines see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image).
 
 #### macOS images updates
 
