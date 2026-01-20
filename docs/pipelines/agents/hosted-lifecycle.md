@@ -2,7 +2,7 @@
 title: Microsoft-hosted agent lifecycle for Azure Pipelines
 description: Learn about the lifecycle of Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 01/13/2026
+ms.date: 01/20/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -56,6 +56,31 @@ To indentify your pipelines that are using the Ubuntu 22.04 image, follow the in
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
 #### [macOS images](#tab/macos-images/)
+
+#### macOS 14 Sonoma hosted image deprecation schedule
+
+The macOS 14 Sonoma hosted image deprecation affects Azure DevOps customers using the macOS 14 Sonoma agent image in their Microsoft-hosted pipelines. This deprecation does not impact customers using macOS 14 Sonoma agents in self-hosted agents.
+
+The macOS 14 Sonoma image deprecation schedule:
+* Deprecation start date: July 6, 2026.
+* Scheduled removal date: November 2, 2026.
+
+To raise awareness of the upcoming removal, we will temporarily fail jobs using the macOS 14 Sonoma hosted image. Builds that are scheduled to run during the brownout periods will fail. The brownouts are scheduled for the following dates and times:
+
+* October 5, 14:00 UTC - October 6, 00:00 UTC
+* October 12, 14:00 UTC - October 13, 00:00 UTC
+* October 16, 14:00 UTC - October 17, 00:00 UTC
+* October 19, 14:00 UTC - October 20, 00:00 UTC
+* October 23, 14:00 UTC - October 24, 00:00 UTC
+* October 26, 14:00 UTC - October 27, 00:00 UTC
+* October 29, 14:00 UTC - October 30, 00:00 UTC
+* October 30, 14:00 UTC - October 31, 00:00 UTC
+
+Workflows using the macOS 14 Sonoma hosted image should be updated to `macos-latest` or `macos-15` prior to the scheduled removal date to avoid disruptions.
+
+To identify your pipelines that are using the macOS 14 Sonoma hosted image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
+
+To update your affected YAML pipelines to a new image, see [](). To update your classic pipelines see []().
 
 #### macOS images updates
 
