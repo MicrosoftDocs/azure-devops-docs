@@ -20,7 +20,7 @@ Azure Artifacts enables developers to manage packages from various sources, incl
 
 | **Product**        | **Requirements**   |
 |--------------------|--------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br>- An Azure Artifacts [feed](../get-started-npm.md#create-a-feed)<br> - [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br>- An Azure Artifacts [feed](../get-started-npm.md#create-a-feed). |
 
 ## Connect to a feed
 
@@ -47,6 +47,8 @@ The following steps guide you through setting up the project-level configuration
 
 1. Select **Connect to Feed** and then select **npm** from the left navigation pane. 
 
+1. If this is your first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites. You’ll first need to download *Node.js* and *npm*, then install *vsts-npm-auth* (Windows users) or set up credentials (non‑Windows users), depending on your operating system.
+
 1. Add a *.npmrc* to your project, in the same directory as your *package.json* and paste the provided snippet from the **Project setup** section into the file.
 
     :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot displaying how to set up your npm project and connect to a feed.":::
@@ -64,6 +66,8 @@ The following steps guide you through setting up the project-level configuration
 1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select **Connect to Feed** and then select **npm** from the left navigation pane. 
+
+1. If this is your first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites. You’ll first need to download *Node.js* and *npm*, then install *vsts-npm-auth* (Windows users) or set up credentials (non‑Windows users), depending on your operating system.
 
 1. Add a *.npmrc* file to your project's directory. This should be the same directory where your *package.json* file is located. 
 
