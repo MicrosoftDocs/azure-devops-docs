@@ -14,6 +14,7 @@ ms.subservice: azure-devops-repos-tfvc
 > [!WARNING]
 > To use the provided migration method do **not** remove the old implementations of the policies prior to following this guide.
 
+## Code updates
 1. To migrate your custom policies, first create a new class with the same methods but inheriting `CheckinPolicyBase` class (`IPolicyCompatibilityJson` for `IPolicyCompatibility`) instead of `PolicyBase`.
    
    **Examples:**
@@ -126,11 +127,12 @@ ms.subservice: azure-devops-repos-tfvc
 
    Automatic policy migration is supported **only for custom policies**. Built-in Visual Studio policies support the new policy model and migration.
 
+## Using predefined method to migrate policies on server
    > [!NOTE]
    > Further automigration is available only for custom policies, as standard Visual Studio policies don't support this capability.
-   > If you don't plan to use migration method provided by NuGet package, further instructions can be omitted and the obsolete policies can be removed. No more steps are required.
+   > If you don't plan to use migration method provided by NuGet package, further instructions can be omitted and the obsolete policies can be removed. No more steps are required. You can find removal of obsolete custom policies via code below.
 
-5. Add migration interface to policies
+1. Add migration interface to policies
 
    Add the `IPolicyMigration` interface for each obsolete custom policy.
    This interface marked as deprecated only to signalize that it also will be removed in future together with `PolicyBase` / `IPolicyCompatibility`.
@@ -138,7 +140,7 @@ ms.subservice: azure-devops-repos-tfvc
     > [!WARNING]
     > Obsolete policies that don’t inherit this interface is **skipped** during migration and **not** saved as new policies.
 
-6. Implement the `ToNewPolicyType` method on the obsolete policy
+2. Implement the `ToNewPolicyType` method on the obsolete policy
 
    This method must:
    - Return an instance of the new policy class
@@ -156,5 +158,34 @@ ms.subservice: azure-devops-repos-tfvc
         }
     }
    ```
-7. Call `MigrateFromOldPolicies` method
+3. Call `MigrateFromOldPolicies` method
 
+ ## Remove existing obsolete policies
+  > [!NOTE]
+   > This is a workaround to remove existing obsolete policies when server fully (read and write operations) disables them and before Visual Studio team implements UI for this.
+
+1. Create an empry C# project.
+
+2. Add dependency to [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/latest).
+
+3. Connect to your project using `ExtendedClient` package. You can do it several ways, here is example for one of them.
+
+**Example:**
+   ```csharp
+    var collectionUri = "{UrlToYourCollection}";
+    var currentProjectName = "{YourProjectName}";
+    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri)))
+    {
+        ... // Further code here
+    }
+   ```
+
+4. Connect to the TFVC service and set obsolete checking policies to null.
+**Example:**
+   ```csharp
+    var versionControlServer = tpc.GetService<VersionControlServer>();
+    TeamProject teamProject = versionControlServer.GetTeamProject(currentProjectName);
+    teamProject.SetCheckinPolicies(null);
+   ```
+
+5. Run the application.
