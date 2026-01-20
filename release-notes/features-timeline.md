@@ -428,6 +428,7 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/2026/testplans/New-Web-Runner" data-raw-source="[Revamp of the Web Runner](/azure/devops/release-notes/2026/testplans/New-Web-Runner)">Revamp of the Web Runner</a></td>
          <td>Test Plans</td>
+      </tr>
       <td rowspan="20"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
