@@ -336,7 +336,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="23"><strong>2026 Q1</strong></td>
+      <td rowspan="19"><strong>2026 Q1</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -386,22 +386,6 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>Pipelines</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2026/agent-packed" data-raw-source="[Agent Packaged with Node 24](/azure/devops/release-notes/roadmap/2026/agent-packed)">Agent Packaged with Node 24</a></td>
-        <td>Pipelines</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2026/ability-to-run-tasks" data-raw-source="[Ability to run tasks on supported Node versions only](/azure/devops/release-notes/roadmap/2026/ability-to-run-tasks)">Ability to run tasks on supported Node versions only</a></td>
-        <td>Pipelines</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2026/in-the-box-tasks" data-raw-source="[In the Box tasks support Node.js 24](/azure/devops/release-notes/roadmap/2026/in-the-box-tasks)">In the Box tasks support Node.js 24</a></td>
-        <td>Pipelines</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2026/retire-node-6" data-raw-source="[Retire Node 6, 10 and 16 from the Agent](/azure/devops/release-notes/roadmap/2026/retire-node-6)">Retire Node 6, 10 and 16 from the Agent</a></td>
-        <td>Pipelines</td>
-      </tr>
-      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines" data-raw-source="[Support YAML pipelines in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines)">Support YAML pipelines in Azure Test Plans</a></td>
          <td>Test Plans</td>
       </tr>
@@ -429,7 +413,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
          <td>Wiki</td>
       </tr>
-      <td rowspan="19"><strong>Future</strong></td>
+      <td rowspan="21"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>     
@@ -455,7 +439,15 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2022/pick-next-runner" data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted<br>version is not available</a></td>
          <td>Pipelines</td>
       </tr>
-    <tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/in-the-box-tasks" data-raw-source="[In the Box tasks support Node.js 24](/azure/devops/release-notes/roadmap/2026/in-the-box-tasks)">In the Box tasks support Node.js 24</a></td>
+        <td>Pipelines</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/retire-node-6" data-raw-source="[Retire Node 6, 10 and 16 from the Agent](/azure/devops/release-notes/roadmap/2026/retire-node-6)">Retire Node 6, 10 and 16 from the Agent</a></td>
+        <td>Pipelines</td>
+      </tr>
+      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/control-access-to-github-repos" data-raw-source="[Control access to GitHub repositories](/azure/devops/release-notes/roadmap/control-access-to-github-repos)">Control access to GitHub repositories</a></td>
         <td>Pipelines</td>
       </tr>
@@ -521,7 +513,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>         
-      <td rowspan="36"><strong>Future</strong></td>
+      <td rowspan="35"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
         <td>General</td>
       </tr>
@@ -553,10 +545,6 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
-        <td>Pipelines</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/node-16-agent" data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
         <td>Pipelines</td>
       </tr>
       <tr>
